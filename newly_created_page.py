@@ -1,9 +1,10 @@
 import requests
 from bs4 import BeautifulSoup
-import wikipediaapi
 import json
 import time
 import random
+import mwparserfromhell
+import re
 
 def get_recent_articles(url, limit=2000):
     headers = {
@@ -47,83 +48,79 @@ def get_recent_articles(url, limit=2000):
 
         time.sleep(random.uniform(1, 3))
 
-    # print(f"Finished collecting {len(articles)} articles.")
     return articles[:limit]
 
-def check_if_new_page(page_title):
+def clean_wikipedia_content(content):
+    wikicode = mwparserfromhell.parse(content)
+    internal_titles = wikicode.filter_wikilinks()
+    internal_links = ["https://en.wikipedia.org/wiki/" + str(link.title).replace(" ", "_") for link in internal_titles]
+    external_links = re.findall(r'http[s]?://[^\s<>"]+', str(wikicode))
 
-    #检查页面是否为新建页面,判断标准是revision的parentid为0,同时获取页面的创建者和创建时间
-    
-    url = f"https://en.wikipedia.org/w/api.php?action=query&titles={page_title}&prop=revisions&rvlimit=1&rvprop=ids|user|timestamp|comment|parentid&format=json"
+    plain_text_content = wikicode.strip_code()
+    word_count = len(plain_text_content.split())
+
+    external_links_per_word = len(external_links) / word_count if word_count > 0 else 0
+    internal_links_per_word = len(internal_links) / word_count if word_count > 0 else 0
+
+    return plain_text_content, external_links, internal_links, external_links_per_word, internal_links_per_word, word_count
+
+def check_if_new_page(page_title):
+    url = f"https://en.wikipedia.org/w/api.php?action=query&titles={page_title}&prop=revisions&rvlimit=1&rvprop=ids|user|timestamp|comment|parentid|content&format=json"
     try:
         response = requests.get(url)
         data = response.json()
-        pages = data.get('query', {}).get('pages', {})
-        for page_id, page_info in pages.items():
-            revisions = page_info.get('revisions', [])
-            if revisions and revisions[0].get('parentid') == 0:
-                creator = revisions[0].get('user', 'Unknown')
-                creation_time = revisions[0].get('timestamp', 'Unknown')
-                return True, creator, creation_time
-            else:
-                return False, None, None
+        page_id = list(data['query']['pages'].keys())[0]
+        revisions = data['query']['pages'][page_id].get('revisions', [])
+
+        if revisions:
+            revision = revisions[0]
+            parent_id = revision.get('parentid', None)
+            creator = revision.get('user', 'Unknown')
+            creation_time = revision.get('timestamp', 'Unknown')
+            
+            # 根据 parent_id 判断
+            is_new_page = parent_id == 0
+            if not is_new_page:
+                return False, None, None, None, 0, [], [], 0, 0
+            
+            content = revision.get('*', 'No content available')
+            cleaned_content, external_links, internal_links, external_links_per_word, internal_links_per_word, word_count = clean_wikipedia_content(content)
+            
+            return True, creator, creation_time, cleaned_content, word_count, external_links, internal_links, external_links_per_word, internal_links_per_word
+
     except requests.RequestException as e:
-        print(f"Error checking revisions for '{page_title}': {e}")
-        return False, None, None
-
-
-def scrape_wikipedia_article(page_title, wiki_wiki, max_retries=3):
-    for attempt in range(max_retries):
-        try:
-            page = wiki_wiki.page(page_title)
-            if not page.exists():
-                print(f"Page '{page_title}' does not exist.")
-                return None
-            return page.text
-        except (requests.RequestException, requests.Timeout) as e:
-            if attempt < max_retries - 1:
-                print(f"Error scraping '{page_title}'. Retrying... (Attempt {attempt + 1}/{max_retries})")
-                time.sleep(random.uniform(2, 5))
-            else:
-                print(f"Failed to scrape '{page_title}' after {max_retries} attempts.")
-                return None
+        print(f"Error fetching revision data for {page_title}: {e}")
+        return False, None, None, None, 0, [], [], 0, 0
 
 def main():
-    # 需要爬取的新建页面数量，修改此变量即可
     new_page_limit = 10
-    
     recent_articles_url = 'https://en.wikipedia.org/w/index.php?title=Special:NewPages&offset=&limit=50'
     print(f"Starting to collect {new_page_limit} new pages...")
-    
-    # 为了确保获取到足够的新建页面，获取 new_page_limit 的 15 倍页面
+
     articles = get_recent_articles(recent_articles_url, limit=new_page_limit * 15)
-    
-    wiki_wiki = wikipediaapi.Wikipedia(
-        user_agent='WikipediaScraper (your_email@example.com)',
-        language='en',
-        timeout=30
-    )
 
     collected_articles = 0
     with open('new_pages.jsonl', 'w', encoding='utf-8') as f:
         for article_title, article_url in articles:
-            is_new_page, creator, creation_time = check_if_new_page(article_title)
+            is_new_page, creator, creation_time, cleaned_content, word_count, external_links, internal_links, external_links_per_word, internal_links_per_word = check_if_new_page(article_title)
             if is_new_page:
-                content = scrape_wikipedia_article(article_title, wiki_wiki)
-                if content:
-                    article_data = {
-                        'title': article_title,
-                        'url': article_url,
-                        'content': content,
-                        'creator': creator,
-                        'creation_time': creation_time
-                    }
-                    f.write(json.dumps(article_data, ensure_ascii=False) + '\n')
-                    collected_articles += 1        
-            if collected_articles >= new_page_limit:  # 达到需要的数量后暂停
+                article_data = {
+                    'title': article_title,
+                    'url': article_url,
+                    'content': cleaned_content,
+                    'creator': creator,
+                    'creation_time': creation_time,
+                    'word_count': word_count,
+                    'external_links': external_links,
+                    'internal_links': internal_links,
+                    'external_links_per_word': external_links_per_word,
+                    'internal_links_per_word': internal_links_per_word
+                }
+                f.write(json.dumps(article_data, ensure_ascii=False) + '\n')
+                collected_articles += 1        
+            if collected_articles >= new_page_limit:
                 print(f"Reached the limit of {new_page_limit} new pages. Stopping...")
                 break
-
             time.sleep(random.uniform(0.5, 1.5))
 
     print(f"Scraped data has been saved to 'new_pages.jsonl'")
