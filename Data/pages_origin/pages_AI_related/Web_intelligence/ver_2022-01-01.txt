@@ -1,0 +1,27 @@
+'''Web intelligence''' is the area of scientific research and development that explores the roles and makes use of [[artificial intelligence]] and [[information technology]] for new products, services and frameworks that are empowered by the [[World Wide Web]].<ref>{{cite book| first1=Ning | last1=Zhong | first2=Jiming | last2=Liu Yao| year=2003| last3=Yao| first3=Yiyu| title=Web Intelligence | isbn=978-3-540-44384-1|url=https://books.google.com/books?id=6LmrCAAAQBAJ&pg=PA0|page=1}}</ref>
+
+The term was coined in a paper written by Ning Zhong, Jiming Liu Yao and Y.Y. Ohsuga in the Computer Software and Applications Conference in 2000.<ref>{{Citation| doi=10.1109/CMPSAC.2000.884768| first1=Ning| last1=Zhong| first2=Jiming| last2=Liu Yao| year=2000| last3=Yao| first3=Y.Y.| last4=Ohsuga| first4=S.| title=Web Intelligence| publisher=Computer Software and Applications Conference, 2000. COMPSAC 2000. The 24th Annual International| pages=[https://archive.org/details/computersoftware0000ieee/page/469 469]| chapter=Web Intelligence (WI)| isbn=0-7695-0792-1| s2cid=37683026| chapter-url-access=registration| chapter-url=https://archive.org/details/computersoftware0000ieee/page/469}}</ref>
+
+== Research ==
+The research about the web intelligence covers<!--spans over--> many fields – including [[data mining]] (in particular [[web mining]]), [[information retrieval]], [[pattern recognition]], [[predictive analytics]], the [[semantic web]], web [[Data warehouse|data warehousing]] – typically with a focus on [[web personalization]] and [[adaptive website]]s.<ref>{{Citation| first1=Juan | last1=Velasquez |  first2=Palade | last2=Vacile |  year=2008| title=Adaptive Web Site: A Knowledge Extraction from Web Data Approach|edition=1st| publisher=IOS Press|isbn=978-1-58603-831-1}}</ref>
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.iospress.nl/journal/web-intelligence Web Intelligence Journal Page]
+* [http://wi-consortium.org/ Web Intelligence Consortium], an international, non-profit organization dedicated to advancing worldwide scientific research and industrial development in the field of Web Intelligence
+* [http://www.dii.uchile.cl/?lang=en Web intelligence Research Group at University of Chile]
+
+== Further reading ==
+* {{cite book| first1=Ning | last1=Zhong | first2=Jiming | last2=Liu Yao| year=2003| last3=Yao| first3=Yiyu| title=Web Intelligence | isbn=978-3-540-44384-1|url=https://books.google.com/books?id=6LmrCAAAQBAJ&pg=PA0}}
+* {{cite book|last1=Shroff|first1=Gautam|title=The Intelligent Web: Search, smart algorithms, and big data|date=January 2014|isbn=978-0-19-964671-5}}
+* {{cite book| first1=Juan | last1=Velasquez | first2=Palade | last2=Vacile | year=2008| title=Adaptive Web Site: A Knowledge Extraction from Web Data Approach|edition=1st| publisher=IOS Press|isbn=978-1-58603-831-1}}
+* {{cite book|last1=Chbeir|first1=Richard|last2=Badr|first2=Youakim|last3=Abraham|first3=Ajith|last4=Hassanien|first4=Aboul-Ella|title=Emergent Web Intelligence: Advanced Information Retrieval (Advanced Information and Knowledge Processing)|date=April 2010|isbn=978-1-84996-073-1|url=http://deca.cuc.edu.cn/Community/cfs-filesystemfile.ashx/__key/CommunityServer.Components.PostAttachments/00.00.00.11.45/Emergent-Web-Intelligence-Advanced-Information-Retrieval.pdf}}
+
+[[Category:Artificial intelligence]]
+[[Category:Crowdsourcing]]
+[[Category:Big data]]
+[[Category:Data mining]]
+[[Category:Collective intelligence]]
+[[Category:Social information processing]]

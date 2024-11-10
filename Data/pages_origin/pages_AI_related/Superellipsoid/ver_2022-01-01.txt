@@ -1,0 +1,71 @@
+{{Short description|Family of geometric shapes}}
+{{more footnotes|date=February 2014}}
+[[File:Superellipsoid collection.png|right|400px|thumb|Superellipsoid collection with exponent parameters, created using [[POV-Ray]]. Here, e = 2/r, and n = 2/t (equivalently, r = 2/e and t = 2/n).<ref>{{Cite web|url=http://www.povray.org/documentation/view/3.6.1/285/|title=POV-Ray: Documentation: 2.4.1.11 Superquadric Ellipsoid}}</ref> The [[cube]], [[cylinder (geometry)|cylinder]], [[sphere]], [[Steinmetz solid]], [[bicone]] and regular [[octahedron]] can all be seen as special cases.]]
+In [[mathematics]], a '''superellipsoid''' or '''super-ellipsoid''' is a solid whose horizontal sections are [[superellipse]]s (Lamé curves) with the same [[exponent]] ''r'', and whose vertical sections through the center are superellipses with the same exponent ''t''.
+
+Superellipsoids as [[computer graphics]] primitives were popularized by [[Alan H. Barr]] (who used the name "[[superquadrics]]" to refer to both superellipsoids and [[supertoroid]]s).<ref name="barr81">Barr, A.H. (January 1981), ''Superquadrics and Angle-Preserving Transformations''. IEEE_CGA vol. 1 no. 1, pp. 11&ndash;23</ref><ref name="barr92">Barr, A.H. (1992), ''Rigid Physically Based Superquadrics''. Chapter III.8 of ''Graphics Gems III'', edited by D. Kirk, pp. 137&ndash;159</ref> However, while some superellipsoids are [[superquadric]]s, neither family is contained in the other.
+
+[[Piet Hein (Denmark)|Piet Hein]]'s [[superegg]]s are special cases of superellipsoids.
+
+==Formulas==
+
+===Basic shape===
+The basic superellipsoid is defined by the [[implicit function|implicit inequality]]
+:<math> \left( \left|x\right|^{r} + \left|y\right|^{r} \right)^{t/r} + \left|z\right|^{t} \leq 1.</math>
+The parameters ''r'' and ''t'' are positive real numbers that control the amount of flattening at the tips and at the equator.  Note that the formula becomes a special case of the superquadric's equation if (and only if) ''t''&nbsp;=&nbsp;''r''.
+
+Any "[[parallel of latitude]]" of the superellipsoid (a horizontal section at any constant ''z'' between -1 and +1) is a Lamé curve with exponent ''r'', scaled by <math> a = (1 - \left|z\right|^{t})^{1/t}</math>:
+
+: <math> \left|\frac{x}{a}\right|^{r} + \left|\frac{y}{a}\right|^{r} \leq 1.</math>
+
+Any "[[meridian of longitude]]" (a section by any vertical plane through the origin) is a Lamé curve with exponent ''t'', stretched horizontally by a factor ''w'' that depends on the sectioning plane.  Namely, if ''x''&nbsp;=&nbsp;''u''&nbsp;cos&nbsp;''&theta;'' and ''y''&nbsp;=&nbsp;''u''&nbsp;sin&nbsp;''&theta;'', for a fixed ''&theta;'', then
+
+: <math> \left|\frac{u}{w}\right|^t + \left|z\right|^t \leq 1,</math>
+
+where
+
+:<math>w = (\left|\cos \theta\right|^r + \left|\sin\theta\right|^r)^{-1/r}.</math>
+
+In particular, if ''r'' is 2, the horizontal cross-sections are circles, and the horizontal stretching ''w'' of the vertical sections is 1 for all planes.  In that case, the superellipsoid is a [[solid of revolution]], obtained by rotating the Lamé curve with exponent ''t'' around the vertical axis.
+
+The basic shape above extends from &minus;1 to +1 along each coordinate axis. The general superellipsoid is obtained by scaling the basic shape along each axis by factors ''A'', ''B'', ''C'', the semi-diameters of the resulting solid.  The implicit inequality is
+
+:<math> \left( \left|\frac{x}{A}\right|^r + \left|\frac{y}{B}\right|^r \right)^{t/r} + \left|\frac{z}{C}\right|^{t} \leq 1.</math>
+
+Setting ''r''&nbsp;=&nbsp;2, ''t''&nbsp;=&nbsp;2.5, ''A''&nbsp;=&nbsp;''B''&nbsp;=&nbsp;3, ''C''&nbsp;=&nbsp;4 one obtains [[Superegg|Piet Hein's superegg]].
+
+The general superellipsoid has a [[parametric representation]] in terms of surface parameters -π/2 < ''v'' < π/2, -π < ''u'' < π.<ref name="barr92"/>
+
+:<math>x(u,v) = A c\left(v,\frac{2}{t}\right) c\left(u,\frac{2}{r}\right)</math>
+:<math>y(u,v) = B c\left(v,\frac{2}{t}\right) s\left(u,\frac{2}{r}\right)</math>
+:<math>z(u,v) = C s\left(v,\frac{2}{t}\right)</math>
+
+where the auxiliary functions are
+
+:<math>c(\omega,m) = \sgn(\cos \omega) |\cos \omega|^m</math>
+:<math>s(\omega,m) = \sgn(\sin \omega) |\sin \omega|^m</math>
+
+and the [[sign function]] sgn(''x'') is 
+:<math> \sgn(x) = \begin{cases}
+ -1, & x < 0 \\
+  0, & x = 0 \\
+ +1, & x > 0 .
+\end{cases}</math>
+
+The volume inside this surface can be expressed in terms of [[beta function]]s (and [[Gamma function]]s, because β(''m'',''n'')&nbsp;=&nbsp;Γ(''m'')Γ(''n'')&nbsp;/&nbsp;Γ(''m''&nbsp;+&nbsp;''n'') ), as:
+
+:<math> V = \frac23 A B C \frac{4}{r t} \beta \left( \frac{1}{r},\frac{1}{r} \right) \beta \left(\frac{2}{t},\frac{1}{t} \right). </math><!--WILL SOMEONE PLEASE CHECK THIS FORMULA?-->
+
+== References ==
+{{Reflist}}
+
+*Aleš Jaklič, Aleš Leonardis, Franc Solina, ''Segmentation and Recovery of Superquadrics''. Kluwer Academic Publishers, Dordrecht, 2000.
+*Aleš Jaklič, Franc Solina (2003) Moments of Superellipsoids and their Application to Range Image Registration. IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS, 33 (4). pp.&nbsp;648–657
+
+==External links==
+* [http://iris.usc.edu/Vision-Notes/bibliography/describe461.html Bibliography: SuperQuadric Representations]
+* [http://www.cs.utah.edu/~gk/papers/vissym04/ Superquadric Tensor Glyphs]
+* [https://www.gamedev.net/articles/programming/graphics/superquadric-ellipsoids-and-toroids-opengl-lig-r1172 SuperQuadric Ellipsoids and Toroids, OpenGL Lighting, and Timing]
+* [http://demonstrations.wolfram.com/Superquadrics/ Superquadratics] by Robert Kragler, [[The Wolfram Demonstrations Project]].
+
+[[Category:Computer graphics]]

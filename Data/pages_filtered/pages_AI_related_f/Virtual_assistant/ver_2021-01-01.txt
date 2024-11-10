@@ -1,0 +1,174 @@
+Google Assistant running on a Pixel XL smartphone 
+Apple TV remote control, with which users can ask Siri the virtual assistant to find content to watch
+100px|Amazon Echo smart speaker running the Alexa virtual assistant
+
+An intelligent virtual assistant (IVA) or intelligent personal assistant (IPA) is a software agent that can perform tasks or services for an individual based on commands or questions. Sometimes the term "chatbot" is used to refer to virtual assistants generally or specifically accessed by online chat. In some cases, online chat programs are exclusively for entertainment purposes. Some virtual assistants are able to interpret human speech and respond via synthesized voices. Users can ask their assistants questions, control home automation devices and media playback via voice, and manage other basic tasks such as email, to-do lists, and calendars with verbal (spoken?) commands. A similar concept, however with differences, lays under the dialogue systems.Klüwer, Tina. "From chatbots to dialog systems." Conversational agents and natural language interaction: Techniques and Effective Practices. IGI Global, 2011. 1–22.
+
+As of 2017, the capabilities and usage of virtual assistants are expanding rapidly, with new products entering the market and a strong emphasis on both email and voice user interfaces. Apple and Google have large installed bases of users on smartphones. Microsoft has a large installed base of Windows-based personal computers, smartphones and smart speakers. Amazon has a large install base for smart speakers. Conversica has over 100 million engagements via its email and sms interface Intelligent Virtual Assistants for business.
+
+History
+Experimental decades: 1910's — 1980's
+Radio Rex was the first voice activated toy released in 1911. It was a dog that would come out of its house when its name is called.
+
+In 1952 Bell Labs presented “Audrey”, the Automatic Digit Recognition machine. It occupied a six- foot-high relay rack, consumed substantial power, had streams of cables and exhibited the myriad maintenance problems associated with complex vacuum-tube circuitry. It could recognize the fundamental units of speech, phonemes. It was limited to accurate recognition of digits spoken by designated talkers. It could therefore be used for voice dialing, but in most cases push-button dialing was cheaper and faster, rather than speaking the consecutive digits.
+
+Another early tool which was enabled to perform digital speech recognition was the IBM Shoebox voice-activated calculator, presented to the general public during the 1962 Seattle World's Fair after its initial market launch in 1961. This early computer, developed almost 20 years before the introduction of the first IBM Personal Computer in 1981, was able to recognize 16 spoken words and the digits 0 to 9.
+
+The first natural language processing computer program or the chatbot ELIZA was developed by MIT professor Joseph Weizenbaum in the 1960s. It was created to "demonstrate that the communication between man and machine was superficial". ELIZA used pattern matching and substitution methodology into scripted responses to simulate conversation, which gave an illusion of understanding on the part of the program.
+
+Weizenbaum's own secretary reportedly asked Weizenbaum to leave the room so that she and ELIZA could have a real conversation. Weizenbaum was surprised by this, later writing: "I had not realized ... that extremely short exposures to a relatively simple computer program could induce powerful delusional thinking in quite normal people.
+
+This gave name to the ELIZA effect, the tendency to unconsciously assume computer behaviors are analogous to human behaviors; that is, anthropomorphisation, a phenomenon present in human interactions with Virtual Assistants.
+
+The next milestone in the development of voice recognition technology was achieved in the 1970s at the Carnegie Mellon University in Pittsburgh, Pennsylvania with substantial support of the United States Department of Defense and its DARPA agency, funded five years of a Speech Understanding Research program, aiming to reach a minimum vocabulary of 1,000 words. Companies and academia including IBM, Carnegie Mellon University (CMU) and Stanford Research Institute took part in the program.
+
+The result was "Harpy", it mastered about 1000 words, the vocabulary of a three-year-old and it could understand sentences. It could process speech that followed pre-programmed vocabulary, pronunciation, and grammar structures to determine which sequences of words made sense together, and thus reducing speech recognition errors.
+
+In 1986 Tangora was an upgrade of the Shoebox, it was a voice recognizing typewriter. Named after the world’s fastest typist at the time, it had a vocabulary of 20,000 words and used prediction to decide the most likely result based on what was said in the past. IBM’s approach was based on a Hidden Markov model, which adds statistics to digital signal processing techniques. The method makes it possible to predict the most likely phonemes to follow a given phoneme. Still each speaker had to individually train the typewriter to recognize his or her voice, and pause between each word.
+
+Birth of smart virtual assistants: 1990's — Present
+The 1990s digital speech recognition technology became a feature of the personal computer with IBM, Philips and Lemout & Hauspie fighting for customers. Much later the market launch of the first smartphone IBM Simon in 1994 laid the foundation for smart virtual assistants as we know them today.
+
+In 1997 Dragon’s Naturally Speaking software could recognize and transcribe natural human speech without pauses between each word into a document at a rate of 100 words per minute. A version of Naturally Speaking is still available for download and it is still used today, for instance, by many doctors in the US and the UK to document their medical records.
+
+In 2001 Colloquis publicly launched  SmarterChild, on platforms like AIM and MSN Messenger. While entirely text-based SmarterChild was able to play games, check the weather, look up facts, and converse with users to an extent.
+
+The first modern digital virtual assistant installed on a smartphone was Siri, which was introduced as a feature of the iPhone 4S on 4 October 2011. Apple Inc. developed Siri following the 2010 acquisition of Siri Inc., a spin-off of SRI International, which is a research institute financed by DARPA and the United States Department of Defense. Its aim was to aid in tasks such as sending a text message, making phone calls, checking the weather or setting up an alarm. Over time, it has developed to provide restaurant recommendations, search the internet, and provide driving directions.
+
+In November 2014, Amazon announced Alexa alongside the Echo.
+
+In April 2017 Amazon released a service for building conversational interfaces for any type of virtual assistant or interface.
+
+Method of interaction
+Virtual assistants work via:
+
+ Text, including: online chat (especially in an instant messaging app or other app), SMS Text, e-mail or other text-based communication channel, for example Conversica's Intelligent Virtual Assistants for business.
+ Voice, for example with Amazon Alexa on the Amazon Echo device, Siri on an iPhone, or Google Assistant on Google-enabled/Android mobile devices
+ By taking and/or uploading images, as in the case of Samsung Bixby on the Samsung Galaxy S8
+
+Some virtual assistants are accessible via multiple methods, such as Google Assistant via chat on the Google Allo and Google Messages app and via voice on Google Home smart speakers.
+
+Virtual assistants use natural language processing (NLP) to match user text or voice input to executable commands.  Many continually learn using artificial intelligence techniques including machine learning. Some of these assistants like Google Assistant(which contains Google Lens) and Samsung Bixby also have the added ability to do image processing to recognize objects in the image to help the users get better results from the clicked images. 
+
+To activate a virtual assistant using the voice, a wake word might be used. This is a word or groups of words such as "Hey Siri", "OK Google" or "Hey Google", "Alexa", and "Hey Microsoft". As virtual assistants become more popular, there are increasing legal risks involved.
+
+Devices and objects where found
+Virtual assistants may be integrated into many types of platforms or, like Amazon Alexa, across several of them:
+
+ Into devices like smart speakers such as Amazon Echo, Google Home and Apple HomePod
+ In instant messaging apps on both smartphones and via the Web, e.g. Facebook's M (virtual assistant) on both Facebook and Facebook Messenger apps or via the Web
+ Built into a mobile operating system (OS), as are Apple's Siri on iOS devices and BlackBerry Assistant on BlackBerry 10 devices, or into a desktop OS such as Cortana on Microsoft Windows OS
+ Built into a smartphone independent of the OS, as is Bixby on the Samsung Galaxy S8 and Note 8. 
+ Within instant messaging platforms, assistants from specific organizations, such as Aeromexico's Aerobot on Facebook Messenger or Wechat Secretary on WeChat
+ Within mobile apps from specific companies and other organizations, such as Dom from Domino's Pizza
+ In appliances, cars, and wearable technology.
+ Previous generations of virtual assistants often worked on websites, such as Alaska Airlines' Ask Jenn, or on interactive voice response (IVR) systems such as American Airlines' IVR by Nuance.
+
+Services
+Virtual assistants can provide a wide variety of services. These include:
+
+ Provide information such as weather, facts from e.g. Wikipedia or IMDb, set an alarm, make to-do lists and shopping lists 
+ Play music from streaming services such as Spotify and Pandora; play radio stations; read audiobooks
+ Play videos, TV shows or movies on televisions, streaming from e.g. Netflix
+ Conversational commerce (see below)
+Assist public interactions with government (see Artificial intelligence in government)
+ Complement and/or replace customer service by humans. One report estimated that an automated online assistant produced a 30% decrease in the work-load for a human-provided call centre.
+
+Conversational commerce
+
+Conversational commerce is e-commerce via various means of messaging, including via voice assistants but also live chat on e-commerce Web sites, live chat on messaging apps such as WeChat, Facebook Messenger and WhatsApp and chatbots on messaging apps or Web sites.
+
+ Customer Support 
+
+Virtual Assistant can work with customer support team of a business to provide 24x7 support to customers. It provides quick responses, which enhances a customer's experience.
+
+Third-party services
+Amazon enables Alexa "Skills" and Google "Actions", essentially apps that run on the assistant platforms.
+
+Virtual assistant privacy
+
+Virtual assistants have a variety of privacy concerns associated with them. Features such as activation by voice pose a threat, as such features requires the device to always be listening. Modes of privacy such as the virtual security button have been proposed to create a multilayer authentication for virtual assistants.
+
+ Privacy policy of prominent Virtual Assistants 
+
+ Google Assistant 
+Google Assistant does not store your data without your permission. To store the audio, you can go to Voice & Audio Activity (VAA) and turn on this feature. Your audio files are sent to cloud and used by Google to improve the performance of Google Assistant, but only if you have turned on the VAA feature.
+
+ Amazon's Alexa 
+Amazon’s Virtual Assistant Alexa only listens to your conversation when you use its wake word (like Alexa, Amazon, Echo). It starts recording the conversation after the call of a wake word. It stops listening after 8 seconds of silence. It sends the recorded conversation to the cloud. You can delete your recording from the cloud by visiting ‘Alexa Privacy’ in ‘Alexa’. You can stop Alexa from listening to your conversations using ‘mute’ feature of Alexa, after muting the device, it cannot listen to you even if you use the wake words (like Alexa).
+
+ Apple's Siri 
+Apple does not record your audio to improve Siri, it uses transcripts instead. It only sends data which is important for analysis, for instance, if you ask Siri to read your message it won’t send the message to the cloud, the machine will directly read the message without server’s interference. Users can opt-out anytime if they don’t want Siri to send the transcripts in the cloud.
+
+ Presumed and observed interest for the consumer 
+
+ Presumed added value as allowing a new way of interactions 
+Added value of the Virtual Assistants can come among others from the following :
+
+ Voice communication can sometimes represent the optimal man-machine communication :
+
+ It is convenient: there are some sectors where voice is the only way of possible communication, and more generally, it allows to free-up both hands and vision potentially for doing another activity in parallel, or helps also disabled people.
+ It is faster: Voice is more efficient than writing on a keyboard: we can speak up to 200 words per minute opposed to 60 in case of writing on a keyboard. It is also more natural thus requiring less effort (reading a text however can reach 700 words per minute).
+
+ Virtual Assistants save a lot of time by automation: they can take appointments, or read the news while the consumer does something else. It is also possible to ask the Virtual Assistant to schedule meetings, hence helping to organize time. The designers of new digital schedulers explained the ambition they had that these calendars schedule lives to make the consumer use his time more efficiently, through machine learning processes, and complete organization of work time and free time.  As an example when the consumer expresses the desire of scheduling a break, the VA will schedule it at an optimal moment for this purpose (for example at a time of the week where they are less productive), with the additional long term objective of being able to schedule and organize the free time of the consumer, to assure them optimal work efficiency.
+
+ Perceived interest 
+Graphical sum up of the study capturing reasons of interest of Virtual assistants for consumers
+
+According to a recent study (2019), the two reasons for using Virtual Assistants for consumers are perceived usefulness and perceived enjoyment. The first result of this study is that both perceived usefulness and perceived enjoyment have an equivalent very strong influence for the consumer willingness to use a Virtual Assistant.
+ The second result of this study is that :
+
+ Provided content quality has a very strong influence on perceived usefulness and a strong influence on perceived enjoyment.
+ Visual attractiveness has a very strong influence on perceived enjoyment.
+ Automation has a strong influence on perceived usefulness.
+
+ Controversies 
+
+ Artificial Intelligence controversies 
+
+ Virtual Assistants spur the filter bubble: As for social media, Virtual Assistants’ algorithms are trained to show pertinent data and discard others based on previous activities of the consumer: The pertinent data is the one which will interest or please the consumer. As a result, they become isolated from data that disagrees with their viewpoints, effectively isolating them into their own intellectual bubble, and reinforcing their opinions. This phenomena was known to reinforce fake news and echo chambers.
+ Virtual Assistants are also sometimes criticized for being overrated. In particular, A. Casilli points out that the AI of Virtual Assistants are neither intelligent nor artificial for two reasons :
+
+ Not intelligent because all they do is being the assistant of the human, and only by doing tasks that a human could do easily, and in a very limited specter of actions: find, class, and present information, offers or documents. Also, Virtual Assistants are neither able to make decisions on their own nor to anticipate things.
+ And not artificial because they would be impossible without human labelization through micro working.
+
+ Ethics implications 
+In 2019 Antonio A. Casilli, a French sociologist, criticized artificial intelligence and virtual assistants in particular in the following way:
+
+At a first level the fact that the consumer provides free data for the training and improvement of the virtual assistant, often without knowing it, is ethically disturbing.
+
+But at a second level, it might be even more ethically disturbing to know how these AIs are trained with this data.
+
+This artificial intelligence is trained via neural networks, which require a huge amount of labelled data. However, this data needs to be labelled through a human process, which explains the rise of microwork in the last decade. That is, remotely using some people worldwide doing some repetitive and very simple tasks for a few cents, such as listening to Virtual Assistant speech data, and writing down what was said. Microwork has been criticized for the job insecurity it causes, and for the total lack of regulation: The average salary was 1,38 dollar/hour in 2010, and it provides neither healthcare nor retirement benefits, sick pay, minimum wage. Hence, Virtual Assistants and their designers are controversial for spurring job insecurity, and the AIs they propose are still human in the way that they would be impossible without the microwork of millions of human workers.
+
+Privacy concerns are raised by the fact that voice commands are available to the providers of virtual assistants in unencrypted form, and can thus be shared with third parties and be processed in an unauthorized or unexpected manner. Additionally to the linguistic content of recorded speech, a user’s manner of expression and voice characteristics can implicitly contain information about his or her biometric identity, personality traits, body shape, physical and mental health condition, sex, gender, moods and emotions, socioeconomic status and geographical origin.
+
+Developer platforms
+Notable developer platforms for virtual assistants include:
+
+ Amazon Lex was opened to developers in April 2017. It involves natural language understanding technology combined with automatic speech recognition and had been introduced in November 2016.
+ Google provides the Actions on Google and Dialogflow platforms for developers to create "Actions" for Google Assistant
+ Apple provides SiriKit for developers to create extensions for Siri
+ IBM's Watson, while sometimes spoken of as a virtual assistant is in fact an entire artificial intelligence platform and community powering some virtual assistants, chatbots. and many other types of solutions.
+
+Previous generations
+In previous generations of text chat-based virtual assistants, the assistant was often represented by an avatar (a.k.a. interactive online character or automated character) — this was known as an embodied agent.
+
+Comparison of notable assistants
+ Intelligent personal assistant Developer Free software Free and open-source hardware HDMI out External I/O IOT Chromecast integration Smart phone app Always on Unit to unit voice channel Skill language Alexa (a.k.a. Echo) Amazon.com         ? ? Alice Yandex          ? AliGenieAlibaba Group          ? Assistant Speaktoit          ? Bixby Samsung Electronics          ? BlackBerry Assistant BlackBerry Limited          ? Braina Brainasoft          ? ClovaNaver Corporation          ? Cortana Microsoft          ? Duer Baidu Evi Amazon.com True Knowledge          ? Google Assistant Google          C++ Google Now Google          ? M (discontinued) Facebook         Mycroft Mycroft AI          Python SILVIA Cognitive Code          ? Siri Apple Inc.          ? Viv Samsung Electronics          ? XiaoweiTencent ?CeliaHuawei?
+
+Economic relevance
+
+ For individuals 
+Digital experiences enabled by virtual assistants are considered to be among the major recent technological advances and most promising consumer trends. Experts claim that digital experiences will achieve a status-weight comparable to ‘real’ experiences, if not become more sought-after and prized. The trend is verified by a high number of frequent users and the substantial growth of worldwide user numbers of virtual digital assistants. In mid-2017, the number of frequent users of digital virtual assistants is estimated to be around 1 bn worldwide. In addition, it can be observed that virtual digital assistant technology is no longer restricted to smartphone applications, but present across many industry sectors (incl. automotive, telecommunications, retail, healthcare and education).
+In response to the significant R&D expenses of firms across all sectors and an increasing implementation of mobile devices, the market for speech recognition technology is predicted to grow at a CAGR of 34.9% globally over the period of 2016 to 2024 and thereby surpass a global market size of US$7.5 billion by 2024. According to an Ovum study, the "native digital assistant installed base" is projected to exceed the world's population by 2021, with 7.5 billion active voice AI–capable devices. According to Ovum, by that time "Google Assistant will dominate the voice AI–capable device market with 23.3% market share, followed by Samsung's Bixby (14.5%), Apple's Siri (13.1%), Amazon's Alexa (3.9%), and Microsoft's Cortana (2.3%)."
+
+Taking into consideration the regional distribution of market leaders, North American companies (e.g. Nuance Communications, IBM, eGain) are expected to dominate the industry over the next years, due to the significant impact of BYOD (Bring Your Own Device) and enterprise mobility business models. Furthermore, the increasing demand for smartphone-assisted platforms are expected to further boost the North American Intelligent Virtual Assistant (IVA) industry growth. Despite its smaller size in comparison to the North American market, the intelligent virtual assistant industry from the Asia-Pacific region, with its main players located in India and China is predicted to grow at an annual growth rate of 40% (above global average) over the 2016–2024 period.
+
+ Economic opportunity for enterprises 
+Virtual assistants should not be only seen as a gadget for individuals, as they could have a real economic utility for enterprises. As an example, a virtual assistant can take the role of an always available assistant with an encyclopedic knowledge. And which can organize meetings, check inventories, verify informations. Virtual Assistants are all the more important that their integration in small and middle-sized enterprises often consists in an easy first step through the more global adaptation and use of Internet of Things (IoT). Indeed IoT technologies are first perceived by small and medium-sized enterprises as technologies of critical importance, but too complicated, risky or costly to be used.
+
+ Security 
+In May 2018, researchers from the University of California, Berkeley, published a paper that showed audio commands undetectable for the human ear could be directly embedded into music or spoken text, thereby manipulating virtual assistants into performing certain actions without the user taking note of it. The researchers made small changes to audio files, which cancelled out the sound patterns that speech recognition systems are meant to detect. These were replaced with sounds that would be interpreted differently by the system and command it to dial phone numbers, open websites or even transfer money. The possibility of this has been known since 2016, and affects devices from Apple, Amazon and Google.
+
+In addition to unintentional actions and voice recording, another security and privacy risk associated with intelligent virtual assistants is malicious voice commands: An attacker who impersonates a user and issues malicious voice commands to, for example, unlock a smart door to gain unauthorized entry to a home or garage or order items online without the user's knowledge. Although some IVAs provide a voice-training feature to prevent such impersonation, it can be difficult for the system to distinguish between similar voices. Thus, a malicious person who is able to access an IVA-enabled device might be able to fool the system into thinking that they are the real owner and carry out criminal or mischievous acts.

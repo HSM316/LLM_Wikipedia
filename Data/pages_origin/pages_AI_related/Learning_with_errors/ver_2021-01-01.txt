@@ -1,0 +1,105 @@
+{{technical|date=October 2018}}
+'''Learning with errors''' ('''LWE''') is the [[computational problem]] of inferring a linear <math>n</math>-ary function <math>f</math> over a finite ring from given samples <math>y_i = f(\mathbf{x}_i)</math> some of which may be erroneous.
+The LWE problem is conjectured to be hard to solve,<ref>{{Cite journal |doi = 10.1145/1568318.1568324|title = On lattices, learning with errors, random linear codes, and cryptography|journal = Journal of the ACM|volume = 56|issue = 6|pages = 1–40|year = 2009|last1 = Regev|first1 = Oded|s2cid = 207156623}}</ref> and thus be useful in [[cryptography]].
+
+More precisely, the LWE problem is defined as follows. Let <math>\mathbb{Z}_q </math> denote the ring of integers [[Modular arithmetic|modulo]] <math>q</math> and let
+<math>\mathbb{Z}_q^n </math> denote the set of <math>n</math>-[[Vector (mathematics and physics)|vectors]] over <math>\mathbb{Z}_q </math>. There exists a certain unknown linear function <math>f:\mathbb{Z}_q^n \rightarrow \mathbb{Z}_q</math>, and the input to the LWE problem is a sample of pairs <math>(\mathbf{x},y)</math>, where <math>\mathbf{x}\in \mathbb{Z}_q^n</math> and <math>y \in \mathbb{Z}_q</math>, so that with high probability <math>y=f(\mathbf{x})</math>. Furthermore, the deviation from the equality is according to some known noise model. The problem calls for finding the function <math>f</math>, or some close approximation thereof, with high probability.
+
+The LWE problem was introduced by [[Oded Regev (computer scientist)|Oded Regev]] in 2005<ref name="regev05"/> (who won the 2018 [[Gödel Prize]] for this work), it is a generalization of the [[parity learning]] problem. Regev showed that the LWE problem is as hard to solve as several worst-case [[lattice problems]]. Subsequently, the LWE problem has been used as a [[Computational hardness assumption|hardness assumption]] to create [[Public-key cryptography|public-key cryptosystems]],<ref name="regev05">Oded Regev, “On lattices, learning with errors, random linear codes, and cryptography,” in Proceedings of the thirty-seventh annual ACM symposium on Theory of computing (Baltimore, MD, USA: ACM, 2005), 84–93, http://portal.acm.org/citation.cfm?id=1060590.1060603.</ref><ref name="peikert09">Chris Peikert, “Public-key cryptosystems from the worst-case shortest vector problem: extended abstract,” in Proceedings of the 41st annual ACM symposium on Theory of computing (Bethesda, MD, USA: ACM, 2009), 333–342, http://portal.acm.org/citation.cfm?id=1536414.1536461.</ref> such as the [[ring learning with errors key exchange]] by Peikert.<ref>{{Cite book|publisher = Springer International Publishing|date = 2014-10-01|isbn = 978-3-319-11658-7|pages = 197–219|series = Lecture Notes in Computer Science|first = Chris|last = Peikert|editor-first = Michele|editor-last = Mosca|doi = 10.1007/978-3-319-11659-4_12|title = Post-Quantum Cryptography|volume = 8772|chapter = Lattice Cryptography for the Internet|citeseerx = 10.1.1.800.4743}}</ref>
+
+== Definition ==
+Denote by <math>\mathbb{T}=\mathbb{R}/\mathbb{Z}</math> the [[Circle_group|additive group on reals modulo one]]. 
+Let <math>\mathbf{s} \in \mathbb{Z}_q^n</math> be a fixed vector.
+Let <math>\phi</math> be a fixed probability distribution over <math>\mathbb{T}</math>.
+Denote by <math>A_{\mathbf{s},\phi}</math> the distribution on <math>\mathbb{Z}_q^n \times \mathbb{T}</math> obtained as follows.
+# Pick a vector <math>\mathbf{a}\in \mathbb{Z}_q^n</math> from the uniforms distribution over <math>\mathbf{a}\in \mathbb{Z}_q^n</math>, 
+# Pick a number <math>e\in\mathbb{T}</math> from the distribution <math>\phi</math>,
+# Evaluate <math>t=\langle \mathbf{a},\mathbf{s} \rangle /q + e</math>, where <math>\textstyle \langle \mathbf{a},\mathbf{s} \rangle = \sum_{i=1}^n a_i s_i</math> is the standard inner product in <math>\mathbb{Z}_q^n</math>, the division is done in the [[field of reals]] (or more formally, this "division by <math>q</math>" is notation for the group homomorphism <math> \mathbb{Z}_q \longrightarrow \mathbb{T}</math> mapping <math> 1 \in \mathbb{Z}_q </math> to <math> 1/q + \mathbb{Z} \in \mathbb{T}</math>), and the final addition is in <math>\mathbb{T}</math>.
+# Output the pair <math>(\mathbf{a},t)</math>.
+
+The '''learning with errors problem''' <math>\mathrm{LWE}_{q,\phi}</math> is to find <math>\mathbf{s} \in \mathbb{Z}_q^n</math>, given access to polynomially many samples of choice from <math>A_{\mathbf{s},\phi}</math>.
+
+For every <math>\alpha > 0</math>, denote by <math>D_\alpha</math> the one-dimensional [[Normal distribution|Gaussian]] with zero mean and variance
+<math>\alpha^2/(2\pi)</math>, that is, the density function is <math>D_\alpha(x)=\rho_\alpha(x)/\alpha</math> where <math>\rho_\alpha(x)=e^{-\pi(|x|/\alpha)^2}</math>, and let <math>\Psi_\alpha</math> be the distribution on <math>\mathbb{T}</math> obtained by considering <math>D_\alpha</math> modulo one.  The version of LWE considered in most of the results would be <math>\mathrm{LWE}_{q,\Psi_\alpha}</math>
+
+== Decision version ==
+
+The '''LWE''' problem described above is the ''search'' version of the problem. In the ''decision'' version ('''DLWE'''), the goal is to distinguish between noisy inner products and uniformly random samples from <math>\mathbb{Z}_q^n \times \mathbb{T}</math> (practically, some discretized version of it). Regev<ref name="regev05" /> showed that the ''decision'' and ''search'' versions are equivalent when <math>q</math> is a prime bounded by some polynomial in <math>n</math>.
+
+=== Solving decision assuming search ===
+Intuitively, if we have a procedure for the search problem, the decision version can be solved easily: just feed the input samples for the decision problem to the solver for the search problem. Denote the given samples by <math>\{(\mathbf{a}_i,\mathbf{b}_i)\} \subset \mathbb{Z}^n_q \times \mathbb{T}</math>. If the solver returns a candidate <math>\mathbf{s}</math>, for all <math>i</math>, calculate <math>\{\langle \mathbf{a}_i, \mathbf{s} \rangle - \mathbf{b}_i \} </math>.  If the samples are from an LWE distribution, then the results of this calculation will be distributed according <math>\chi</math>, but if the samples are uniformly random, these quantities will be distributed uniformly as well.
+
+=== Solving search assuming decision ===
+For the other direction, given a solver for the decision problem, the search version can be solved as follows: Recover <math>\mathbf{s}</math> one coordinate at a time. To obtain the first coordinate, <math>\mathbf{s}_1</math>, make a guess <math>k \in Z_q</math>, and do the following. Choose a number <math>r \in \mathbb{Z}_q</math> uniformly at random. Transform the given samples <math>\{(\mathbf{a}_i,\mathbf{b}_i)\} \subset \mathbb{Z}^n_q \times \mathbb{T}</math> as follows. Calculate <math>\{(\mathbf{a}_i+(r,0,\ldots,0), \mathbf{b}_i + (r k)/q)\}</math>.  Send the transformed samples to the decision solver.
+
+If the guess <math>k</math> was correct, the transformation takes the distribution <math>A_{\mathbf{s},\chi}</math> to itself, and otherwise, since <math>q</math> is prime, it takes it to the uniform distribution. So, given a polynomial-time solver for the decision problem that errs with very small probability, since <math>q</math> is bounded by some polynomial in <math>n</math>, it only takes polynomial time to guess every possible value for <math>k</math> and use the solver to see which one is correct.
+
+After obtaining <math>\mathbf{s}_1</math>, we follow an analogous procedure for each other coordinate <math>\mathbf{s}_j</math>.  Namely, we transform our <math>\mathbf{b}_i</math> samples the same way, and transform our <math>\mathbf{a}_i</math> samples by calculating <math>\mathbf{a}_i + (0, \ldots, r, \ldots, 0)</math>, where the <math>r</math> is in the <math>j^\text{th}</math> coordinate.<ref name="regev05" />
+
+Peikert<ref name="peikert09" /> showed that this reduction, with a small modification, works for any <math>q</math> that is a product of distinct, small (polynomial in <math>n</math>) primes.  The main idea is if <math>q = q_1 q_2 \cdots q_t</math>, for each <math>q_{\ell}</math>, guess and check to see if <math>\mathbf{s}_j</math> is congruent to <math>0 \mod q_{\ell}</math>, and then use the [[Chinese remainder theorem]] to recover <math>\mathbf{s}_j</math>.
+
+=== Average case hardness ===
+Regev<ref name="regev05" /> showed the [[random self-reducibility]] of the '''LWE''' and '''DLWE''' problems for arbitrary <math>q</math> and <math>\chi</math>.  Given samples <math>\{(\mathbf{a}_i,\mathbf{b}_i)\}</math> from <math>A_{\mathbf{s},\chi}</math>, it is easy to see that <math>\{(\mathbf{a}_i,\mathbf{b}_i + \langle \mathbf{a}_i, \mathbf{t} \rangle)/q\}</math> are samples from <math>A_{\mathbf{s} + \mathbf{t},\chi}</math>.
+
+So, suppose there was some set <math>\mathcal{S} \subset \mathbb{Z}_q^n</math> such that <math>|\mathcal{S}|/|\mathbb{Z}_q^n| = 1/\operatorname{poly}(n)</math>, and for distributions <math>A_{\mathbf{s}',\chi}</math>, with <math>\mathbf{s}' \leftarrow \mathcal{S}</math>, '''DLWE''' was easy.
+
+Then there would be some distinguisher <math>\mathcal{A}</math>, who, given samples <math>\{(\mathbf{a}_i,\mathbf{b}_i) \}</math>, could tell whether they were uniformly random or from <math>A_{\mathbf{s}',\chi}</math>.  If we need to distinguish uniformly random samples from <math>A_{\mathbf{s},\chi}</math>, where <math>\mathbf{s}</math> is chosen uniformly at random from <math>\mathbb{Z}_q^n</math>, we could simply try different values <math>\mathbf{t} </math> sampled uniformly at random from <math>\mathbb{Z}_q^n</math>, calculate <math>\{(\mathbf{a}_i,\mathbf{b}_i + \langle \mathbf{a}_i, \mathbf{t} \rangle)/q\}</math> and feed these samples to <math>\mathcal{A}</math>.  Since <math>\mathcal{S}</math> comprises a large fraction of <math>\mathbb{Z}_q^n</math>, with high probability, if we choose a polynomial number of values for <math>\mathbf{t}</math>, we will find one such that <math>\mathbf{s} + \mathbf{t} \in \mathcal{S}</math>, and <math>\mathcal{A}</math> will successfully distinguish the samples.
+
+Thus, no such <math>\mathcal{S}</math> can exist, meaning '''LWE''' and '''DLWE''' are (up to a polynomial factor) as hard in the average case as they are in the worst case.
+
+== Hardness results ==
+
+=== Regev's result ===
+For a ''n''-dimensional lattice <math>L</math>, let ''smoothing parameter'' <math>\eta_\varepsilon(L)</math> denote the smallest <math>s</math> such that <math>\rho_{1/s}(L^*\setminus \{\mathbf{0}\}) \leq \varepsilon </math> where <math>L^*</math> is the dual of <math>L</math> and <math>\rho_\alpha(x)=e^{-\pi(|x|/\alpha)^2}</math> is extended to sets by summing over function values at each element in the set. Let <math>D_{L,r}</math> denote the discrete Gaussian distribution on <math>L</math> of width <math>r</math> for a lattice <math>L</math> and real <math>r>0</math>. The probability of each <math>x \in L</math> is proportional to <math>\rho_r(x)</math>.
+
+The ''discrete Gaussian sampling problem''(DGS) is defined as follows: An instance of <math>DGS_\phi</math> is given by an <math>n</math>-dimensional lattice <math>L</math> and a number <math>r \geq \phi(L)</math>. The goal is to output a sample from <math>D_{L,r}</math>. Regev shows that there is a reduction from <math>\operatorname{GapSVP}_{100\sqrt{n}\gamma(n)}</math> to <math>DGS_{\sqrt{n}\gamma(n)/\lambda(L^*)}</math> for any function <math>\gamma(n)</math>.
+
+Regev then shows that there exists an efficient quantum algorithm for <math>DGS_{\sqrt{2n}\eta_\varepsilon(L)/\alpha}</math> given access to an oracle for <math>\mathrm{LWE}_{q,\Psi_\alpha}</math> for integer <math>q</math> and <math>\alpha \in (0,1)</math> such that <math>\alpha q > 2\sqrt{n}</math>. This implies the hardness for LWE. Although the proof of this assertion works for any <math>q</math>, for creating a cryptosystem, the <math>q</math> has to be polynomial in <math>n</math>.
+
+=== Peikert's result ===
+
+Peikert proves<ref name="peikert09" /> that there is a probabilistic polynomial time reduction from the [[Lattice problems#GapSVP|<math>\operatorname{GapSVP}_{\zeta,\gamma}</math>]] problem in the worst case to solving <math>\mathrm{LWE}_{q,\Psi_\alpha}</math> using <math>\operatorname{poly}(n)</math> samples for parameters <math>\alpha \in (0,1)</math>, <math>\gamma(n)\geq n/(\alpha \sqrt{\log n})</math>, <math>\zeta(n) \geq \gamma(n)</math> and <math>q \geq (\zeta/\sqrt{n}) \omega \sqrt{\log n})</math>.
+
+== Use in cryptography ==
+
+The '''LWE''' problem serves as a versatile problem used in construction of several<ref name="regev05" /><ref name="peikert09" /><ref>Chris Peikert and Brent Waters, “Lossy trapdoor functions and their applications,” in Proceedings of the 40th annual ACM symposium on Theory of computing (Victoria, British Columbia, Canada: ACM, 2008), 187-196, http://portal.acm.org/citation.cfm?id=1374406.</ref><ref>Craig Gentry, Chris Peikert, and Vinod Vaikuntanathan, “Trapdoors for hard lattices and new cryptographic constructions,” in Proceedings of the 40th annual ACM symposium on Theory of computing (Victoria, British Columbia, Canada: ACM, 2008), 197-206, http://portal.acm.org/citation.cfm?id=1374407.</ref> cryptosystems. In 2005, Regev<ref name="regev05" /> showed that the decision version of LWE is hard assuming quantum hardness of the [[lattice problems]] <math>\mathrm{GapSVP}_\gamma</math> (for <math>\gamma</math> as above) and <math>\mathrm{SIVP}_t</math> with <math> t=O(n/\alpha) </math>). In 2009, Peikert<ref name="peikert09" /> proved a similar result assuming only the classical hardness of the related problem [[Lattice problems#GapSVP|<math>\mathrm{GapSVP}_{\zeta,\gamma}</math>]]. The disadvantage of Peikert's result is that it bases itself on a non-standard version of an easier (when compared to SIVP) problem GapSVP.
+
+=== Public-key cryptosystem ===
+Regev<ref name="regev05" /> proposed a [[public-key cryptosystem]] based on the hardness of the '''LWE''' problem. The cryptosystem as well as the proof of security and correctness are completely classical. The system is characterized by <math>m,q</math> and a probability distribution <math>\chi</math> on <math>\mathbb{T}</math>. The setting of the parameters used in proofs of correctness and security is
+* <math>q \geq 2 </math>, usually a prime number between <math>n^2</math> and <math>2n^2</math>.
+* <math>m=(1+\varepsilon)(n+1) \log q</math> for an arbitrary constant <math>\varepsilon</math>
+* <math>\chi=\Psi_{\alpha(n)}</math> for <math>\alpha(n) \in o(1/\sqrt{n}\log n)</math>, where <math>\Psi_\beta</math> is a probability distribution obtained by sampling a normal variable with mean <math>0</math> and standard variation <math>\frac{\beta}{\sqrt{2\pi}}</math> and reducing the result modulo <math>1</math>.
+
+The cryptosystem is then defined by:
+* ''Private key'': Private key is an <math>\mathbf{s}\in \mathbb{Z}^n_q</math> chosen uniformly at random.
+* ''Public key'': Choose <math>m</math> vectors <math>\mathbf{a}_1,\ldots,\mathbf{a}_m \in  \mathbb{Z}^n_q</math> uniformly and independently. Choose error offsets <math>e_1,\ldots,e_m \in \mathbb{T}</math> independently according to <math>\chi</math>. The public key consists of <math>(\mathbf{a}_i,b_i=\langle \mathbf{a}_i,\mathbf{s} \rangle/q + e_i)^m_{i=1}</math>
+* ''Encryption'': The encryption of a bit <math>x \in \{0,1\}</math> is done by choosing a random subset <math>S</math> of <math>[m]</math> and then defining <math>\operatorname{Enc}(x)</math> as
+:: <math>\left(\sum_{i \in S} \mathbf{a}_i, \frac x 2 + \sum_{i \in S} b_i\right)</math>
+* ''Decryption'': The decryption of <math>(\mathbf{a},b)</math> is <math>0</math> if <math>b-\langle \mathbf{a}, \mathbf{s} \rangle/q</math> is closer to <math>0</math> than to <math>\frac{1}{2}</math>, and <math>1</math> otherwise.
+
+The proof of correctness follows from choice of parameters and some probability analysis. The proof of security is by reduction to the decision version of '''LWE''': an algorithm for distinguishing between encryptions (with above parameters) of <math>0</math> and <math>1</math> can be used to distinguish between <math>A_{s,\chi}</math> and the uniform distribution over <math>\mathbb{Z}^n_q \times \mathbb{T}</math>
+
+=== CCA-secure cryptosystem ===
+{{Expand section|date=December 2009}}
+Peikert<ref name="peikert09" /> proposed a system that is secure even against any [[chosen-ciphertext attack]].
+
+=== Key exchange ===
+{{Main|Ring learning with errors key exchange}}
+The idea of using LWE and Ring LWE for key exchange was proposed and filed at the University of Cincinnati in 2011 by Jintai Ding. The idea comes from the associativity of matrix multiplications, and the errors are used to provide the security. The paper<ref>{{Cite journal|last=Lin|first=Jintai Ding, Xiang Xie, Xiaodong|date=2012-01-01|title=A Simple Provably Secure Key Exchange Scheme Based on the Learning with Errors Problem|url=https://eprint.iacr.org/2012/688}}</ref> appeared in 2012 after a provisional patent application was filed in 2012.
+
+The security of the protocol is proven based on the hardness of solving the LWE problem. In 2014, Peikert presented a key-transport scheme<ref>{{Cite journal|last=Peikert|first=Chris|date=2014-01-01|title=Lattice Cryptography for the Internet|url=https://eprint.iacr.org/2014/070}}</ref> following the same basic idea of Ding's, where the new idea of sending an additional 1-bit signal for rounding in Ding's construction is also used. The "new hope" implementation<ref>{{Cite journal|last1=Alkim|first1=Erdem|last2=Ducas|first2=Léo|last3=Pöppelmann|first3=Thomas|last4=Schwabe|first4=Peter|date=2015-01-01|title=Post-quantum key exchange - a new hope|url=https://eprint.iacr.org/2015/1092}}</ref> selected for Google's post-quantum experiment,<ref>{{Cite news|url=https://security.googleblog.com/2016/07/experimenting-with-post-quantum.html|title=Experimenting with Post-Quantum Cryptography|newspaper=Google Online Security Blog|access-date=2017-02-08|language=en-US}}</ref> uses Peikert's scheme with variation in the error distribution.
+
+== See also ==
+*[[Post-quantum cryptography]]
+*[[Lattice-based cryptography]]
+*[[Ring learning with errors key exchange]]
+*[[Short integer solution problem|Short integer solution (SIS) problem]]
+
+==References==
+<references/>
+
+{{Computational hardness assumptions}}
+
+[[Category:Machine learning]]
+[[Category:Cryptography]]
+[[Category:Post-quantum cryptography]]

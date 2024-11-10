@@ -1,0 +1,29 @@
+Eye vein verification is a method of biometric authentication that applies pattern-recognition techniques to video images of the veins in a user's eyes. The complex and random patterns are unique, and modern hardware and software can detect and differentiate those patterns at some distance from the eyes.
+
+ Introduction 
+
+The veins in the sclera—the white part of the eyes—can be imaged when a person glances to either side, providing four regions of patterns: one on each side of each eye. Verification employs digital templates from these patterns, and the templates are then encoded with mathematical and statistical algorithms. These allow confirmation of the identity of the proper user and the rejection of anyone else.
+Advocates of eye vein verification note that one of the technology's strengths is the stability of the pattern of eye blood vessels; the patterns do not change with age, alcohol consumption, allergies, or redness. Eye veins are clear enough that they can be reliably imaged by the cameras on most smartphones. The technology works through contacts and glasses, though not through sunglasses. At least one version of eye vein detection uses infrared illumination as part of the imaging, allowing imaging even in low-light conditions.
+
+ History 
+
+Dr. Reza Derakhshani at University of Missouri, Kansas City, developed the concept of using the veins in the whites of the eyes for identification. He holds several patents on the technology, including a 2008 patent for the concept of using the blood vessels seen in the whites of the eye as a unique identifier.
+
+More recent research has explored using vein patterns in both the iris and the sclera for recognition.
+
+ Uses 
+
+Eye vein verification, like other methods of biometric authentication, can be used in a range of security situations, including mobile banking, government security, and in healthcare environments.
+EyeVerify, a Kansas City, Kansas, company, markets eye vein verification with a system called Eyeprint. In 2012, EyeVerify licensed the technology developed and patented by Derakhshani. And Derakhshani now serves as chief science officer of EyeVerify.
+
+ Advantages 
+
+ Eye vein patterns are unique to each person
+ Patterns do not change over time and are still readable with redness 
+ Works with contacts and glasses
+ Resistant to false matches
+
+ Disadvantages 
+
+ Phone must be held close to face
+ Not supported on devices without cameras or on older smartphones

@@ -1,0 +1,79 @@
+{{Short description|Network application layer protocol}}
+{{Infobox protocol
+| name      = Weave
+| image     = 
+| caption   = 
+| standard  = 
+| developer = [[Google Nest]]
+| introdate = {{Start date|2013}}
+| industry  = Home automation
+| connector = 
+| hardware  = 
+| range     = 
+| newer     = [[Matter (standard)]]
+| website   = {{URL|https://openweave.io/}}
+}}
+'''Weave''' is a network [[application layer]] [[Communication protocol|protocol]] and, in implementation, a comprehensive toolkit for building connected [[Internet of Things]]-class applications, with a primary and current focus on consumer and residential applications.<ref>[https://nest.com/weave/ "Weave"]. [[Nest Labs]]. Retrieved March 28, 2019.</ref>
+
+Weave works across multiple [[IPv6]]-bearing link technologies such as [[Ethernet]], [[Wi-Fi]], [[Cellular network|cellular]], and [[Thread (network protocol)|Thread]] and has adaptations for [[Bluetooth Low Energy]] point-to-point wireless links.
+
+On December 19, 2019, [[Google]] stated that it had "joined [[Amazon (company)|Amazon]], [[Apple Inc.|Apple]], and the [[Connectivity Standards Alliance|Zigbee Alliance]] to form the [[Matter (standard)|Connected Home over IP]] working group... Google is contributing Weave as part of this effort." Due to this, Google has stopped development on Weave, replacing it with the new [[Matter (standard)]].<ref>{{Cite web |date=2019-12-18 |title=Developing a standard for the smart home industry |url=https://blog.google/products/google-nest/developing-standard-smart-home-industry/ |access-date=2023-09-15 |website=Google |language=en-us}}</ref>
+
+==History==
+Weave was originally created by [[Nest Labs]] and launched in and with its Nest Protect (1st Generation) product in 2013.<ref>Brown, Michael (October 1, 2015). [https://www.techhive.com/article/2988285/with-nest-weave-nest-labs-seeks-to-establish-a-de-facto-connected-home-standard.html "With Nest Weave, Nest Labs seeks to establish a de facto connected-home standard"]. TechHive. Retrieved March 28, 2019</ref> It has since been adopted and continued by [[Google]] following the Google acquisition of Nest Labs in 2014.<ref>Constine, Josh (January 13, 2014). [https://techcrunch.com/2014/01/13/nest-investors-strike-it-rich/ "Who Gets Rich From Google Buying Nest? Kleiner Returns 20X On $20M, Shasta Nets ~$200M"]. TechCrunch. Retrieved January 22, 2014.</ref><ref>Oreskovic, Alexei; Gupta, Poornima (January 14, 2014). [http://www.pehub.com/2014/01/kleiner-perkins-shasta-ventures-make-about-20x-their-money-on-nest-labs-reuters/ "Kleiner Perkins, Shasta Ventures make about 20x their money on Nest Labs – Reuters"]. PEHub. Retrieved January 22, 2014.</ref> A second wave of architectural revisions were made to Weave to support the Nest Secure security system, the Nest Connect,<ref>Tofel, Kevin C. (September 20, 2017). [https://staceyoniot.com/nest-debuts-nest-secure-home-system-and-has-a-thread-router-called-nest-connect/ "Nest debuts Nest Secure home system and has a Thread router called Nest Connect"]. Stacey on IoT. Retrieved March 28, 2019.</ref> and the Nest x Yale Lock.<ref>Price, Molly (January 8, 2018). [https://www.cnet.com/news/nest-x-yale-lock-is-a-keyless-deadbolt-for-nest-secure-ces-2018/ "Nest x Yale Lock is a keyless deadbolt for Nest Secure"]. Retrieved March 28, 2019.</ref> Since its acquisition of Nest Labs, Google has planned to integrate Weave with its own [[Android Things]] embedded operating system (codenamed Brillo) in order to create an end-to-end solution for IoT devices.<ref>{{cite web |title=Google reveals Brillo OS and Weave connectivity schema for IoT devices |url=https://www.postscapes.com/google-reveals-brillo-os-and-weave-connectivity-schema-for-iot-devices/ |website=Postscapes |accessdate=19 August 2019}}</ref>
+
+==OpenWeave==
+{{Infobox software
+| name                   = OpenWeave
+| logo                   = 
+| logo alt               = 
+| screenshot             = 
+| caption                = 
+| screenshot alt         = 
+| collapsible            = 
+| author                 = [[Google]]
+| developer              = 
+| released               = {{Start date and age|2017|06|28}}
+| discontinued           = 
+| latest release version = 4.1.0
+| latest release date    = 2019-01-10
+| latest preview version = 
+| latest preview date    = 
+| programming language   = [[C++ (programming language)|C++]]
+| operating system       = [[Android (operating system)|Android]], [[iOS]], [[Linux]], [[Mac OS X]]
+| platform               = 
+| size                   = 
+| language               = 
+| language count         = <!-- Number only -->
+| language footnote      = 
+| genre                  = 
+| license                = [[Apache License|Apache 2.0]]
+| alexa                  = 
+| website                = {{URL|https://openweave.io/}}
+| standard               = 
+| AsOf                   = 
+}}
+
+Google released its implementation of Weave as an open source project, OpenWeave, on [[GitHub]] in June 2017<ref>[https://github.com/openweave/openweave-core/commit/63aab02234fdccc9481370b41116e4a4215bb9eb "Initial import"]. GitHub. Retrieved March 28, 2019</ref> under the [[Apache License#Version 2.0|Apache 2.0 license]].
+
+==See also==
+*[[HomeKit]]
+*[[Internet of things]]
+*[[Z-Wave]]
+*[[Zigbee]]
+*[[Matter (standard)]]
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+== External links ==
+* [https://openweave.io/ OpenWeave]
+* [https://github.com/openweave/openweave-core openweave-core on Github]
+
+{{Google LLC}}
+
+[[Category:Google]]
+[[Category:Internet of things]]
+[[Category:Free network-related software]]
+[[Category:Application layer protocols]]

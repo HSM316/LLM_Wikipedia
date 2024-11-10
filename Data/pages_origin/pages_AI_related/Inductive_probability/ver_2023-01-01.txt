@@ -1,0 +1,591 @@
+{{short description|Determining the probability of future events based on past events}}
+'''Inductive probability''' attempts to give the [[probability]] of future events based on past events. It is the basis for [[inductive reasoning]], and gives the mathematical basis for [[learning]] and the perception of patterns. It is a source of [[knowledge]] about the world.
+
+There are three sources of knowledge: [[inference]], communication, and deduction. Communication relays information found using other methods.  Deduction establishes new facts based on existing facts.  Inference establishes new facts from data. Its basis is [[Bayes' theorem]].
+
+Information describing the world is written in a language. For example, a simple mathematical language of propositions may be chosen. Sentences may be written down in this language as strings of characters.  But in the computer it is possible to encode these sentences as strings of bits (1s and 0s). Then the language may be encoded so that the most commonly used sentences are the shortest. This internal language implicitly represents probabilities of statements.
+
+[[Occam's razor]] says the "simplest theory, consistent with the data is most likely to be  correct". The "simplest theory" is interpreted as the representation of the theory written in this internal language. The theory with the shortest encoding in this internal language is most likely to be correct.
+
+== History ==
+
+Probability and statistics was focused on [[probability distribution]]s and tests of significance.  Probability was formal, well defined, but limited in scope.  In particular its application was limited to situations that could be defined as an experiment or trial, with a well defined population.
+
+[[Bayes's theorem]] is named after Rev. [[Thomas Bayes]] 1701–1761. [[Bayesian inference]] broadened the application of probability to many situations where a population was not well defined.  But Bayes' theorem always depended on prior probabilities, to generate new probabilities. It was unclear where these prior probabilities should come from.
+
+[[Ray Solomonoff]] developed [[algorithmic probability]] which gave an explanation for what randomness is and how patterns in the data may be represented by computer programs, that give shorter representations of the data circa 1964.
+
+[[Chris Wallace (computer scientist)|Chris Wallace]] and D. M. Boulton developed [[minimum message length]] circa 1968. Later [[Jorma Rissanen]] developed the [[minimum description length]] circa 1978. These methods allow [[information theory]] to be related to probability, in a way that can be compared to the application of Bayes' theorem, but which give a source and explanation for the role of prior probabilities.
+
+[[Marcus Hutter]] combined [[decision theory]] with the work of Ray Solomonoff and [[Andrey Kolmogorov]] to give a theory for the [[Pareto efficiency|Pareto optimal]] behavior for an [[Intelligent agent]], circa 1998.
+ 
+===Minimum description/message length===
+
+The program with the shortest length that matches the data is the most likely to predict future data. This is the thesis behind the [[minimum message length]]<ref>{{cite journal|last=Wallace|first=Chris| author2=Boulton |title=An information measure for classification |journal=Computer Journal|year=1968|volume=11|issue=2|pages=185–194|doi=10.1093/comjnl/11.2.185|doi-access=free}}</ref> and [[minimum description length]]<ref>{{Cite journal | last1 = Rissanen | first1 = J. | title = Modeling by shortest data description | doi = 10.1016/0005-1098(78)90005-5 | journal = Automatica | volume = 14 | issue = 5 | pages = 465–658 | year = 1978 }}</ref> methods.
+
+At first sight [[Bayes' theorem]] appears different from the minimimum message/description length principle. At closer inspection it turns out to be the same. Bayes' theorem is about conditional probabilities, and states the probability that event ''B'' happens if firstly event ''A'' happens:
+
+:<math>P(A \land B) = P(B) \cdot P(A |  B) = P(A) \cdot P(B |  A)</math>
+
+becomes in terms of message length ''L'',
+:<math>L(A \land B) = L(B) + L(A |  B) = L(A) + L(B |  A).</math>
+
+This means that if all the information is given describing an event then the length of the information may be used to give the raw probability of the event. So if the information describing the occurrence of ''A'' is given, along with the information describing ''B'' given ''A'', then all the information describing ''A'' and ''B'' has been given.<ref>
+{{cite web
+|last=Allison
+|first=Lloyd
+|title=Minimum Message Length (MML) – LA's MML introduction
+|url=http://www.csse.monash.edu.au/~lloyd/tildeMML
+}}</ref>
+<ref>
+{{cite document
+|last=Oliver
+|first=J. J.
+|last2=Baxter
+|first2=Rohan A.
+|title=MML and Bayesianism: Similarities and Differences (Introduction to Minimum Encoding Inference – Part II)
+|year=1994
+|url=http://citeseerx.ist.psu.edu/viewdoc/similar;jsessionid=65475C44F4C425AFE77BCAE59D49CE92?doi=10.1.1.1.7367&type=ab}}</ref>
+
+====Overfitting====
+
+[[Overfitting]] occurs when the model matches the random noise and not the pattern in the data. For example, take the situation where a curve is fitted to a set of points. If a polynomial with many terms is fitted then it can more closely represent the data. Then the fit will be better, and the information needed to describe the deviations from the fitted curve will be smaller. Smaller information length means higher probability.
+
+However, the information needed to describe the curve must also be considered. The total information for a curve with many terms may be greater than for a curve with fewer terms, that has not as good a fit, but needs less information to describe the polynomial.
+
+===Inference based on program complexity===
+
+[[Solomonoff's theory of inductive inference]] is also inductive inference.  A bit string ''x'' is observed.  Then consider all programs that generate strings starting with ''x''.  Cast in the form of inductive inference, the programs are theories that imply the observation of the bit string ''x''.
+
+The method used here to give probabilities for inductive inference is based on [[Solomonoff's theory of inductive inference]].
+
+====Detecting patterns in the data====
+
+If all the bits are 1, then people infer that there is a bias in the coin and that it is more likely also that the next bit is 1 also. This is described as learning from, or detecting a pattern in the data.
+
+Such a pattern may be represented by a [[computer program]]. A short computer program may be written that produces a series of bits which are all 1. If the length of the program ''K'' is <math>L(K)</math> bits then its prior probability is,
+:<math>P(K) = 2^{-L(K)}</math>
+
+The length of the shortest program that represents the string of bits is called the [[Kolmogorov complexity]].
+
+Kolmogorov complexity is not computable.  This is related to the [[halting problem]].  When searching for the shortest program some programs may go into an infinite loop.
+
+====Considering all theories====
+
+The Greek philosopher [[Epicurus]] is quoted as saying "If more than one theory is consistent with the observations, keep all theories".<ref>Li, M. and Vitanyi, P., ''An Introduction to Kolmogorov Complexity and Its Applications'', 3rd Edition, Springer Science and Business Media, N.Y., 2008, p 347</ref>
+
+As in a crime novel all theories must be considered in determining the likely murderer, so with inductive probability all programs must be considered in determining the likely future bits arising from the stream of bits.
+
+Programs that are already longer than ''n'' have no predictive power. The raw (or prior) probability that the pattern of bits is random (has no pattern) is <math>2^{-n}</math>.
+
+Each program that produces the sequence of bits, but is shorter than the ''n'' is a theory/pattern about the bits with a probability of <math>2^{-k}</math> where ''k'' is the length of the program.
+
+The probability of receiving a sequence of bits ''y'' after receiving a series of bits ''x'' is then the [[conditional probability]] of receiving ''y'' given ''x'', which is the probability of ''x'' with ''y'' appended, divided by the probability of ''x''.<ref>Solomonoff, R., "[http://world.std.com/~rjs/rayfeb60.pdf A Preliminary Report on a General Theory of Inductive Inference]", Report V-131, Zator Co., Cambridge, Ma. Feb 4, 1960, [http://world.std.com/~rjs/z138.pdf revision], Nov., 1960.</ref><ref>Solomonoff, R., "[http://world.std.com/~rjs/1964pt1.pdf A Formal Theory of Inductive Inference, Part I]" ''Information and Control'', Vol 7, No. 1 pp 1–22, March 1964.</ref><ref>Solomonoff, R., "[http://world.std.com/~rjs/1964pt2.pdf A Formal Theory of Inductive Inference, Part II]" ''Information and Control'', Vol 7, No. 2 pp 224–254, June 1964.</ref>
+
+====Universal priors====
+
+The programming language affects the predictions of the next bit in the string.  The language acts as a [[prior probability]].  This is particularly a problem where the programming language codes for numbers and other data types.  Intuitively we think that 0 and 1 are simple numbers, and that prime numbers are somehow more complex than numbers that may be composite.
+
+Using the [[Kolmogorov complexity]] gives an unbiased estimate (a universal prior) of the prior probability of a number.  As a thought experiment an [[intelligent agent]] may be fitted with a data input device giving a series of numbers, after applying some transformation function to the raw numbers.  Another agent might have the same input device with a different transformation function.  The agents do not see or know about these transformation functions.  Then there appears no rational basis for preferring one function over another.  A universal prior insures that although two agents may have different initial probability distributions for the data input, the difference will be bounded by a constant.
+
+So universal priors do not eliminate an initial bias, but they reduce and limit it.  Whenever we describe an event in a language, either using a natural language or other, the language has encoded in it our prior expectations. So some reliance on prior probabilities are inevitable.
+
+A problem arises where an intelligent agent's prior expectations interact with the environment to form a self reinforcing feed back loop. This is the problem of bias or prejudice.  Universal priors reduce but do not eliminate this problem.
+
+===Universal artificial intelligence===
+
+The theory of [[universal artificial intelligence]] applies [[decision theory]]  to inductive probabilities.  The theory shows how the best actions to optimize a reward function may be chosen.  The result is a theoretical model of intelligence.<ref>{{cite book |last=Hutter|first=Marcus |title=Sequential Decisions Based on Algorithmic Probability |year=1998|publisher=Springer |isbn=3-540-22139-5}}</ref>
+
+It is a fundamental theory of intelligence, which optimizes the agents behavior in,
+* Exploring the environment; performing actions to get responses that broaden the agents knowledge.
+* Competing or co-operating with another agent; games.
+* Balancing short and long term rewards.
+
+In general no agent will always provide the best actions in all situations.  A particular choice made by an agent may be wrong, and the environment may provide no way for the agent to recover from an initial bad choice.  However the agent is [[Pareto optimal]] in the sense that no other agent will do better than this agent in this environment, without doing worse in another environment.  No other agent may, in this sense, be said to be better.
+
+At present the theory is limited by incomputability (the [[halting problem]]).  Approximations may be used to avoid this.  Processing speed and [[combinatorial explosion]] remain the primary limiting factors for [[artificial intelligence]].
+
+== Probability ==
+
+Probability is the representation of uncertain or partial knowledge about the truth of statements. Probabilities are subjective and personal estimates of likely outcomes based on past experience and inferences made from the data.
+
+This description of probability may seem strange at first.  In natural language we refer to "the probability" that the sun will rise tomorrow.  We do not refer to "your probability" that the sun will rise.  But in order for inference to be correctly modeled probability must be personal, and the act of inference generates new posterior probabilities from prior probabilities.
+
+Probabilities are personal because they are conditional on the knowledge of the individual.  Probabilities are subjective because they always depend, to some extent, on prior probabilities assigned by the individual. Subjective should not be taken here to mean vague or undefined.
+
+The term [[intelligent agent]] is used to refer to the holder of the probabilities.  The intelligent agent may be a human or a machine. If the intelligent agent does not interact with the environment then the probability will converge over time to the frequency of the event.
+
+If however the agent uses the probability to interact with the environment there may be a feedback, so that two agents in the identical environment starting with only slightly different priors, end up with completely different probabilities. In this case optimal [[decision theory]] as in [[Marcus Hutter|Marcus Hutter's]] Universal Artificial Intelligence will give [[Pareto optimal]] performance for the agent. This means that no other intelligent agent could do better in one environment without doing worse in another environment.
+
+=== Comparison to deductive probability ===
+
+In deductive probability theories, probabilities are absolutes, independent of the individual making the assessment. But deductive probabilities are based on,
+* Shared knowledge.
+* Assumed facts, that should be inferred from the data.
+
+For example, in a trial the participants are aware the outcome of all the previous history of trials. They also assume that each outcome is equally probable.  Together this allows a single unconditional value of probability to be defined.
+
+But in reality each individual does not have the same information. And in general the probability of each outcome is not equal.  The dice may be loaded, and this loading needs to be inferred from the data.
+
+=== Probability as estimation ===
+
+The [[principle of indifference]] has played a key role in probability theory. It says that if N statements are symmetric so that one condition cannot be preferred over another then all statements are equally probable.<ref>{{cite web|last1=Carnap|first1=Rudolf|title=STATISTICAL AND INDUCTIVE PROBABILITY|url=http://fitelson.org/probability/carnap_saip.pdf|author1-link=Carnap}}</ref>
+
+Taken seriously, in evaluating probability this principle leads to contradictions.  Suppose there are 3 bags of gold in the distance and one is asked to select one. Then because of the distance one cannot see the bag sizes. You estimate using the principle of indifference that each bag has equal amounts of gold, and each bag has one third of the gold.
+
+Now, while one of us is not looking, the other takes one of the bags and divide it into 3 bags.  Now there are 5 bags of gold. The principle of indifference now says each bag has one fifth of the gold. A bag that was estimated to have one third of the gold is now estimated to have one fifth of the gold.
+
+Taken as a value associated with the bag the values are different therefore contradictory. But taken as an estimate given under a particular scenario, both values are separate estimates given under different circumstances and there is no reason to believe they are equal.
+
+Estimates of prior probabilities are particularly suspect. Estimates will be constructed that do not follow any consistent frequency distribution. For this reason prior probabilities are considered as estimates of probabilities rather than probabilities.
+
+A full theoretical treatment would associate with each probability,
+* The statement
+* Prior knowledge
+* Prior probabilities
+* The estimation procedure used to give the probability.
+
+===Combining probability approaches===
+
+Inductive probability combines two different approaches to probability.
+* Probability and information
+* Probability and frequency
+
+Each approach gives a slightly different viewpoint.  Information theory is used in relating probabilities to quantities of information.  This approach is often used in giving estimates of prior probabilities.
+
+[[Frequentist probability]] defines probabilities as objective statements about how often an event occurs.  This approach may be stretched by defining the [[Experiment (probability theory)|trials]] to be over [[possible world]]s.  Statements about possible worlds define [[Event (probability theory)|events]].
+
+== Probability and information ==
+
+Whereas logic represents only two values; true and false as the values of statement, probability associates a number in [0,1] to each statement. If the probability of a statement is 0, the statement is false.  If the probability of a statement is 1 the statement is true.
+
+In considering some data as a string of bits the prior probabilities for a sequence of 1s and 0s, the probability of 1 and 0 is equal. Therefore, each extra bit halves the probability of a sequence of bits.
+This leads to the conclusion that,
+:<math>P(x) = 2^{-L(x)}</math>
+Where <math>P(x)</math> is the probability of the string of bits <math>x</math> and <math>L(x)</math> is its length.
+
+The prior probability of any statement is calculated from the number of bits needed to state it.  See also [[information theory]].
+
+=== Combining information ===
+
+Two statements <math>A</math> and <math>B</math> may be represented by two separate encodings. Then the length of the encoding is,
+
+: <math>L(A \land B) = L(A) + L(B)</math>
+
+or in terms of probability,
+
+: <math>P(A \land B) = P(A) P(B)</math>
+
+But this law is not always true because there may be a shorter method of encoding <math>B</math> if we assume <math>A</math>. So the above probability law applies only if <math>A</math> and <math>B</math> are "independent".
+
+===The internal language of information===
+
+The primary use of the information approach to probability is to provide estimates of the complexity of statements. Recall that Occam's razor states that "All things being equal, the simplest theory is the most likely to be correct". In order to apply this rule, first there needs to be a definition of what "simplest" means. Information theory defines simplest to mean having the shortest encoding.
+
+Knowledge is represented as [[Statement (logic)|statements]]. Each statement is a [[Boolean algebra|Boolean]] [[Expression (mathematics)|expression]]. Expressions are encoded by a function that takes a description (as against the value) of the expression and encodes it as a bit string.
+
+The length of the encoding of a statement gives an estimate of the probability of a statement. This probability estimate will often be used as the prior probability of a statement.
+
+Technically this estimate is not a probability because it is not constructed from a frequency distribution. The probability estimates given by it do not always obey [[#The law of total of probability|the law of total of probability]]. Applying the law of total probability to various scenarios will usually give a more accurate probability estimate of the prior probability than the estimate from the length of the statement.
+
+====Encoding expressions====
+
+An expression is constructed from sub expressions,
+* Constants (including function identifier).
+* Application of functions.
+* [[Quantifier (logic)|quantifiers]].
+
+A [[Huffman coding|Huffman code]] must distinguish the 3 cases. The length of each code is based on the frequency of each type of sub expressions.
+
+Initially constants are all assigned the same length/probability. Later constants may be assigned a probability using the Huffman code based on the number of uses of the function id in all expressions recorded so far. In using a Huffman code the goal is to estimate probabilities, not to compress the data.
+
+The length of a function application is the length of the function identifier constant plus the sum of the sizes of the expressions for each parameter.
+
+The length of a quantifier is the length of the expression being quantified over.
+
+====Distribution of numbers====
+
+No explicit representation of natural numbers is given.  However natural numbers may be constructed by applying the successor function to 0, and then applying other arithmetic functions.  A distribution of natural numbers is implied by this, based on the complexity of constructing each number.
+
+Rational numbers are constructed by the division of natural numbers. The simplest representation has no common factors between the numerator and the denominator. This allows the probability distribution of natural numbers may be extended to rational numbers.
+
+== Probability and frequency ==
+
+The probability of an [[Event (probability theory)|event]] may be interpreted as the frequencies of [[Outcome (probability)|outcomes]] where the statement is true divided by the total number of outcomes.  If the outcomes form a continuum the frequency may need to be replaced with a [[Probability measure|measure]].
+
+Events are sets of outcomes. Statements may be related to events. A Boolean statement B about outcomes defines a set of outcomes b,
+: <math> b = \{x : B(x)\} </math>
+ 
+=== Conditional probability ===
+
+Each probability is always associated with the state of knowledge at a particular point in the argument. Probabilities before an inference are known as prior probabilities, and probabilities after are known as posterior probabilities.
+
+Probability depends on the facts known. The truth of a fact limits the domain of outcomes to the outcomes consistent with the fact. Prior probabilities are the probabilities before a fact is known. Posterior probabilities are after a fact is known. The posterior probabilities are said to be conditional on the fact. the probability that <math>B</math> is true given that <math>A</math> is true is written as: <math>P(B  |  A).</math>
+
+All probabilities are in some sense conditional.  The prior probability of <math>B</math> is,
+: <math>P(B) = P(B  | \top)</math>
+
+=== The frequentist approach applied to possible worlds ===
+
+In the [[Frequentist inference|frequentist approach]], probabilities are defined as the ratio of the number of [[Outcome (probability)|outcomes]] within an event to the total number of outcomes. In the [[possible world]] model each possible world is an outcome, and statements about possible worlds define events. The probability of a statement being true is the number of possible worlds where the statement is true divided by the total number of possible worlds. The probability of a statement <math>A</math> being true about possible worlds is then,
+: <math> P(A) = \frac{|\{x : A(x)\}|}{|x : \top|} </math>
+
+For a conditional probability.
+: <math> P(B  |  A) = \frac{|\{x : A(x) \land B(x)\}|}{|x : A(x)|} </math>
+
+then
+
+: <math> \begin{align} P(A \land B) &= \frac{|\{x : A(x) \land B(x)\}|}{|x : \top|} \\[8pt]
+&= \frac{|\{x : A(x) \land B(x)\}|}{|\{x : A(x)\}|} \frac{|\{x : A(x)\}|}{|x : \top|} \\[8pt]
+&= P(A) P(B  |  A) 
+\end{align}</math>
+
+Using symmetry this equation may be written out as Bayes' law.
+: <math> P(A \land B) = P(A) P(B  |  A) = P(B) P(A  |  B)</math>
+
+This law describes the relationship between prior and posterior probabilities when new facts are learnt.
+
+Written as quantities of information [[Bayes' Theorem]] becomes,
+: <math>L(A \land B) = L(A) + L(B  |  A) = L(B) + L(A  |  B)</math>
+
+Two statements A and B are said to be independent if knowing the truth of A does not change the probability of B. Mathematically this is,
+: <math>P(B) = P(B  |  A)</math>
+
+then [[Bayes' Theorem]] reduces to,
+: <math>P(A \land B) = P(A) P(B)</math>
+
+=== The law of total of probability ===
+
+For a set of mutually exclusive possibilities <math>A_i</math>, the sum of the posterior probabilities must be 1.
+: <math>\sum_i{P(A_i  |  B)} = 1</math>
+
+Substituting using Bayes' theorem gives the [[law of total probability]]
+: <math>\sum_i{P(B  |  A_i)P(A_i)} = \sum_i{P(A_i  |  B)P(B)}</math>
+
+: <math>P(B) = \sum_i{P(B  |  A_i) P(A_i)}</math>
+
+This result is used to give the [[Bayes' theorem#Extended form|extended form of Bayes' theorem]],
+: <math>P(A_i  |  B) = \frac{P(B  |  A_i) P(A_i)}{\sum_j{P(B  |  A_j) P(A_j)}}</math>
+
+This is the usual form of Bayes' theorem used in practice, because it guarantees the sum of all the posterior probabilities for <math>A_i</math> is 1.
+
+=== Alternate possibilities ===
+
+For mutually exclusive possibilities, the probabilities add.
+:<math> P(A \lor B) = P(A) + P(B), \qquad \text{if }  P(A \land B) = 0 </math>
+
+Using
+: <math> A \lor B = (A \land \neg (A \land B)) \lor (B \land \neg (A \land B)) \lor (A \land B)</math>
+Then the alternatives
+: <math> A \land \neg (A \land B), \quad  B \land \neg (A \land B), \quad A \land B </math>
+are all mutually exclusive. Also,
+: <math> (A \land \neg (A \land B)) \lor (A \land B) = A </math>
+: <math> P(A \land \neg (A \land B)) + P(A \land B) = P(A) </math>
+: <math> P(A \land \neg (A \land B)) = P(A) - P(A \land B)  </math>
+
+so, putting it all together,
+
+: <math> \begin{align}
+P(A \lor B) &= P((A \land \neg (A \land B)) \lor (B \land \neg (A \land B)) \lor (A \land B))  \\
+& = P(A \land \neg (A \land B) + P(B \land \neg (A \land B)) + P(A \land B) \\
+&= P(A) - P(A \land B) + P(B) - P(A \land B) + P(A \land B) \\
+&= P(A) + P(B) - P(A \land B) 
+\end{align}</math>
+
+=== Negation ===
+
+As,
+: <math> A \lor \neg A = \top </math>
+then
+: <math> P(A) + P(\neg A) = 1</math>
+
+=== Implication and condition probability ===
+
+Implication is related to conditional probability by the following equation,
+:<math>A \to B \iff P(B  |  A) = 1</math>
+
+Derivation,
+
+:<math>\begin{align}
+A \to B & \iff P(A \to B) = 1 \\
+&\iff P(A \land B \lor \neg A) = 1 \\
+&\iff P(A \land B) + P(\neg A) = 1 \\
+&\iff P(A \land B) = P(A) \\
+&\iff P(A) \cdot P(B  |  A) = P(A) \\
+&\iff P(B  |  A) = 1
+\end{align}</math>
+
+== Bayesian hypothesis testing ==
+
+Bayes' theorem may be used to estimate the probability of a hypothesis or theory H, given some facts F. The posterior probability of H is then
+
+: <math>P(H  |  F) = \frac{P(H)P(F  |  H)}{P(F)}</math>
+
+or in terms of information,
+: <math>P(H  |  F) = 2^{-(L(H) + L(F  |  H) - L(F))} </math>
+
+By assuming the hypothesis is true, a simpler representation of the statement F may be given. The length of the encoding of this simpler representation is <math>L(F  |  H).</math>
+
+<math>L(H) + L(F  |  H) </math> represents the amount of information needed to represent the facts F, if H is true. <math>L(F)</math> is the amount of information needed to represent F without the hypothesis H. The difference is how much the representation of the facts has been compressed by assuming that H is true.  This is the evidence that the hypothesis H is true.
+
+If <math>L(F)</math> is estimated from [[#Probability priors from encoding length|encoding length]] then the probability obtained will not be between 0 and 1. The value obtained is proportional to the probability, without being a good probability estimate. The number obtained is sometimes referred to as a relative probability, being how much more probable the theory is than not holding the theory.
+
+If a full set of mutually exclusive hypothesis that provide evidence is known, a proper estimate may be given for the prior probability <math>P(F)</math>.
+
+===Set of hypothesis===
+
+Probabilities may be calculated from the extended form of Bayes' theorem. Given all mutually exclusive hypothesis <math>H_i</math> which give evidence, such that,
+: <math>L(H_i) + L(F  |  H_i) < L(F)</math>
+
+and also the hypothesis R, that none of the hypothesis is true, then,
+: <math> \begin{align}
+P(H_i  |  F) &= \frac{P(H_i) P(F  |  H_i)}{P(F|R) + \sum_j{P(H_j) P(F  |  H_j)}} \\[8pt]
+P(R  |  F) &= \frac{P(F  |  R)}{P(F  |  R) + \sum_j{P(H_j) P(F  |  H_j)}}
+\end{align}</math>
+
+In terms of information,
+
+: <math>\begin{align}
+P(H_i | F) &= \frac{2^{-(L(H_i) + L(F  |  H_i))}}{2^{-L(F  |  R)} + \sum_j 2^{-(L(H_j) + L(F |  H_j)) }} \\[8pt]
+P(R| F) &= \frac{2^{-L(F  |  R)}}{2^{-L(F  |  R)} + \sum_j{2^{-(L(H_j) + L(F  |  H_j))}}}
+\end{align}</math>
+
+In most situations it is a good approximation to assume that <math>F</math> is independent of <math>R</math>, which means <math>P(F  |  R) = P(F)</math> giving,
+
+: <math>\begin{align}
+P(H_i  |  F) &\approx \frac{2^{-(L(H_i) + L(F  |  H_i))}}{2^{-L(F)} + \sum_j{2^{-(L(H_j) + L(F|H_j))}}} \\[8pt]
+P(R  |  F) &\approx \frac{2^{-L(F)}}{2^{-L(F)} + \sum_j{2^{-(L(H_j) + L(F  |  H_j))}}}
+\end{align}</math>
+
+==Boolean inductive inference==
+
+[[Abductive reasoning#Probabilistic abduction|Abductive inference]]<ref>{{cite book |title=Abduction |year=2017 |publisher=Metaphysics Research Lab, Stanford University |url=http://plato.stanford.edu/entries/abduction/ }}</ref><ref>{{cite journal| first1=Niki| last1=Pfeifer|first2=Gernot D.|last2=Kleiter|title=INFERENCE IN CONDITIONAL PROBABILITY LOGIC|journal=Kybernetika |date=2006 |volume=42|issue=4 |pages=391–404}}</ref><ref>{{cite web |title=Conditional Probability |url=http://artint.info/html/ArtInt_142.html |work=Artificial Intelligence - Foundations of computational agents}}</ref><ref>{{cite web |title=Introduction to the theory of Inductive Logic Programming (ILP) |url=http://www.cs.ox.ac.uk/activities/machlearn/ilp_theory.html}}</ref> starts with a set of facts ''F'' which is a statement (Boolean expression).  [[Abductive reasoning]] is of the form,
+
+:''A theory T implies the statement F.  As the theory T is simpler than F, abduction says that there is a probability that the theory T is implied by F''.
+
+The theory ''T'', also called an explanation of the condition ''F'', is an answer to the ubiquitous factual "why" question.  For example, for the condition ''F'' is "Why do apples fall?". The answer is a theory ''T'' that implies that apples fall;
+:<math>F = G \frac{m_1 m_2}{r^2}</math>
+
+Inductive inference is of the form,
+:''All observed objects in a class C have a property P.  Therefore there is a probability that all objects in a class C have a property P''.
+
+In terms of abductive inference, ''all objects in a class C or set have a property P'' is a theory that implies the observed condition, ''All observed objects in a class C have a property P''.
+
+So [[inductive inference]] is a special case of abductive inference.  In common usage the term inductive inference is often used to refer to both abductive and inductive inference.
+
+===Generalization and specialization===
+
+Inductive inference is related to [[generalization]].  Generalizations may be formed from statements by replacing a specific value with membership of a category, or by replacing membership of a category with membership of a broader category.  In deductive logic, generalization is a powerful method of generating new theories that may be true. In inductive inference generalization generates theories that have a probability of being true.
+
+The opposite of generalization is specialization.  Specialization is used in applying a general rule to a specific case.  Specializations are created from generalizations by replacing membership of a category by a specific value, or by replacing a category with a sub category.
+
+The [[Carl Linnaeus|Linnaen]] classification of living things and objects forms the basis for generalization and specification. The ability to identify, recognize and classify is the basis for generalization. Perceiving the world as a collection of objects appears to be a key aspect of human intelligence.  It is the object oriented model, in the non [[computer science]] sense.
+
+The object oriented model is constructed from our [[perception]]. In particularly [[Visual perception|vision]] is based on the ability to compare two images and calculate how much information is needed to morph or map one image into another.  [[Computer vision]] uses this mapping to construct 3D images from [[Stereoscopy|stereo image pairs]].
+
+[[Inductive logic programming]] is a means of constructing theory that implies a condition.  Plotkin's <ref>{{cite journal|first1=Gordon D.|last1=Plotkin|title=A Note on Inductive Generalization|editor1-first=B.|editor1-last=Meltzer|editor2-first=D.|editor2-last=Michie|publisher=Edinburgh University Press|journal=Machine Intelligence|volume=5|pages=153–163|year=1970}}</ref><ref>{{cite journal|first1=Gordon D.|last1=Plotkin|title=A Further Note on Inductive Generalization|editor1-first=B.|editor1-last=Meltzer|editor2-first=D.|editor2-last=Michie|publisher=Edinburgh University Press|journal=Machine Intelligence|volume=6|pages=101–124|year=1971}}</ref> "''relative least general generalization (rlgg)''" approach constructs the simplest generalization consistent with the condition.
+
+===Newton's use of induction===
+
+[[Isaac Newton]] used inductive arguments in constructing his [[Newton's law of universal gravitation|law of universal gravitation]].<ref>Isaac Newton: "In [experimental] philosophy particular propositions are inferred from the phenomena and afterwards rendered general by induction": "[[Philosophiae Naturalis Principia Mathematica|Principia]]", Book 3, General Scholium, at p.392 in Volume 2 of Andrew Motte's English translation published 1729.</ref> Starting with the statement,
+* The center of an apple falls towards the center of the earth.
+
+Generalizing by replacing apple for object, and earth for object gives, in a two body system,
+* The center of an object falls towards the center of another object.
+
+The theory explains all objects falling, so there is strong evidence for it. The second observation,
+* The planets appear to follow an elliptical path.
+
+After some complicated mathematical [[calculus]], it can be seen that if the acceleration follows the inverse square law then objects will follow an ellipse. So induction gives evidence for the inverse square law.
+
+Using [[Galileo Galilei|Galileo's]] observation that all objects drop with the same speed,
+:<math>F_1 = m_1 a_1 = \frac{m_1 k_1}{r^2} i_1</math>
+:<math>F_2 = m_2 a_2 = \frac{m_2 k_2}{r^2} i_2</math>
+
+where <math>i_1</math> and <math>i_2</math> vectors towards the center of the other object. Then using [[Newton's laws of motion#Newton's third law|Newton's third law]] <math>F_1 = -F_2</math>
+:<math>F = G\frac{m_1 m_2}{r^2}</math>
+
+===Probabilities for inductive inference===
+
+[[#Implication and condition probability|Implication determines condition probability]] as,
+:<math>T \to F \iff P(F  |  T) = 1</math>
+
+So,
+: <math>P(F  |  T) = 1</math>
+: <math>L(F  |  T) = 0</math>
+
+This result may be used in the probabilities given for Bayesian hypothesis testing. For a single theory, H = T and,
+: <math>P(T  |  F) = \frac{P(T)}{P(F)}</math>
+
+or in terms of information, the relative probability is,
+: <math>P(T  |  F) = 2^{-(L(T) - L(F))} </math>
+
+Note that this estimate for P(T|F) is not a true probability. If <math>L(T_i) < L(F)</math> then the theory has evidence to support it. Then for a set of theories <math>T_i = H_i</math>, such that <math>L(T_i) < L(F)</math>,
+
+: <math>P(T_i  |  F) = \frac{P(T_i)}{P(F  |  R) + \sum_j{P(T_j)}}</math>
+: <math>P(R  |  F) = \frac{P(F  |  R)}{P(F  |  R) + \sum_j{P(T_j)}}</math>
+
+giving,
+: <math>P(T_i  |  F) \approx \frac{2^{-L(T_i)}}{2^{-L(F)} + \sum_j{2^{-L(T_j)}}}</math>
+: <math>P(R  |  F) \approx \frac{2^{-L(F)}}{2^{-L(F)} + \sum_j{2^{-L(T_j)}}}</math>
+
+==Derivations==
+
+===Derivation of inductive probability===
+
+Make a list of all the shortest programs <math>K_i</math> that each produce a distinct infinite string of bits, and satisfy the relation,
+
+:<math>T_n(R(K_i)) = x</math>
+
+where <math>R(K_i)</math> is the result of running the program <math>K_i</math> and <math>T_n</math> truncates the string after ''n'' bits.
+
+The problem is to calculate the probability that the source is produced by program <math>K_i,</math> given that the truncated source after n bits is ''x''. This is represented by the conditional probability,
+
+:<math>P(s = R(K_i) |  T_n(s) = x)</math>
+
+Using the [[Bayes' theorem#Extended form|extended form of Bayes' theorem]]
+
+:<math>P(s = R(K_i) |T_n(s) = x) = \frac{P(T_n(s) = x|s = R(K_i))P(s = R(K_i))}{\sum_j P(T_n(s) = x|s = R(K_j)) P(s = R(K_j))}.</math>
+
+The extended form relies on the [[law of total probability]]. This means that the <math>s = R(K_i) </math> must be distinct possibilities, which is given by the condition that each <math>K_i</math> produce a different infinite string. Also one of the conditions <math>s = R(K_i) </math> must be true. This must be true, as in the limit as <math>n \to \infty,</math> there is always at least one program that produces <math>T_n(s)</math>.
+
+As <math>K_i</math> are chosen so that <math>T_n(R(K_i)) = x,</math> then,
+:<math>P(T_n(s) = x |  s = R(K_i)) = 1 </math>
+
+The apriori probability of the string being produced from the program, given no information about the string, is based on the size of the program,
+:<math>P(s = R(K_i)) = 2^{-I(K_i)}</math>
+
+giving,
+:<math>P(s = R(K_i) |  T_n(s) = x) = \frac{2^{-I(K_i)}}{\sum_j 2^{-I(K_j)}}.</math>
+
+Programs that are the same or longer than the length of ''x'' provide no predictive power. Separate them out giving,
+:<math>P(s = R(K_i) |  T_n(s) = x) = \frac{2^{-I(K_i)}}{\sum_{j:I(K_j)<n} 2^{-I(K_j)}+\sum_{j:I(K_j)\geqslant n} 2^{-I(K_j)}}.</math>
+
+Then identify the two probabilities as,
+:<math>P(x \text{ has pattern}) = \sum_{j:I(K_j)<n} 2^{-I(K_j)}</math>
+:<math>P(x \text{ is random}) = \sum_{j:I(K_j)\geqslant n} 2^{-I(K_j)}</math>
+
+But the prior probability that ''x'' is a random set of bits is <math>2^{-n}</math>. So,
+:<math>P(s = R(K_i) |  T_n(s) = x) = \frac{2^{-I(K_i)}}{2^{-n} + \sum_{j:I(K_j)<n} 2^{-I(K_j)}}.</math>
+
+The probability that the source is random, or unpredictable is,
+:<math>P(\operatorname{random}(s) |  T_n(s) = x) = \frac{2^{-n}}{2^{-n} + \sum_{j:I(K_j)<n} 2^{-I(K_j)}}.</math>
+
+===A model for inductive inference===
+
+A model of how worlds are constructed is used in determining the probabilities of theories,
+* A random bit string is selected.
+* A condition is constructed from the bit string.
+* A world is constructed that is consistent with the condition.
+
+If ''w'' is the bit string then the world is created such that <math>R(w)</math> is true.  An [[intelligent agent]] has some facts about the word, represented by the bit string ''c'', which gives the condition,
+:<math>C = R(c)</math>
+
+The set of bit strings identical with any condition ''x'' is <math>E(x)</math>.
+:<math>\forall x, E(x) = \{w : R(w) \equiv x \}</math>
+
+A theory is a simpler condition that explains (or implies) ''C''.  The set of all such theories is called ''T'',
+:<math> T(C) = \{t : t \to C \}</math>
+
+====Applying Bayes' theorem====
+
+[[Bayes' theorem#Extended form|extended form of Bayes' theorem]] may be applied
+:<math>P(A_i |  B) = \frac{P(B |  A_i)\,P(A_i)}{\sum_j P(B |  A_j)\,P(A_j)},</math>
+where,
+:<math>B = E(C)</math>
+:<math>A_i = E(t)</math>
+
+To apply Bayes' theorem the following must hold: <math>A_i</math> is a [[partition of a set|partition]] of the event space.
+
+For <math>T(C)</math> to be a partition, no bit string ''n'' may belong to two theories.  To prove this assume they can and derive a contradiction,
+:<math>(N \in T) \land (N \in M) \land (N \ne M) \land (n \in E(N) \land n \in E(M))</math>
+:<math>\implies (N \ne M) \land R(n) \equiv N \land R(n) \equiv M</math>
+:<math>\implies \bot</math>
+
+Secondly prove that ''T'' includes all outcomes consistent with the condition. As all theories consistent with ''C'' are included then <math>R(w)</math> must be in this set.
+
+So Bayes theorem may be applied as specified giving,
+:<math>\forall t \in T(C), P(E(t) | E(C)) = \frac{P(E(t)) \cdot P(E(C) | E(t))}{\sum_{j \in T(C)} P(E(j)) \cdot P(E(C) | E(j))}  </math>
+
+Using the [[#Implication and condition probability|implication and condition probability law]], the definition of <math>T(C)</math> implies,
+:<math>\forall t \in T(C), P(E(C) | E(t)) = 1</math>
+
+The probability of each theory in ''T'' is given by,
+:<math> \forall t \in T(C), P(E(t)) = \sum_{n: R(n) \equiv t} 2^{-L(n)}</math>
+
+so,
+:<math>\forall t \in T(C), P(E(t) | E(C)) = \frac{\sum_{n: R(n) \equiv t} 2^{-L(n)}}{\sum_{j \in T(C)} \sum_{m: R(m) \equiv j} 2^{-L(m)}}  </math>
+
+Finally the probabilities of the events may be identified with the probabilities of the condition which the outcomes in the event satisfy,
+:<math>\forall t \in T(C), P(E(t) | E(C)) = P(t | C)</math>
+
+giving
+:<math>\forall t \in T(C), P(t | C) = \frac{\sum_{n: R(n) \equiv t} 2^{-L(n)}}{\sum_{j \in T(C)} \sum_{m: R(m) \equiv j} 2^{-L(m)}}  </math>
+
+This is the probability of the theory ''t'' after observing that the condition ''C'' holds.
+
+====Removing theories without predictive power====
+
+Theories that are less probable than the condition ''C'' have no predictive power.  Separate them out giving,
+:<math>\forall t \in T(C), P(t | C) = \frac{P(E(t))}{(\sum_{j : j \in T(C) \land P(E(j)) > P(E(C))} P(E(j))) + (\sum_{j : j \in T(C) \land P(E(j)) \le P(E(C))} P(j))}  </math>
+
+The probability of the theories without predictive power on ''C'' is the same as the probability of ''C''.  So,
+:<math>P(E(C)) = \sum_{j : j \in T(C) \land P(E(j)) \le P(E(C))} P(j)</math>
+
+So the probability 
+:<math>\forall t \in T(C), P(t | C) = \frac{P(E(t))}{P(E(C)) + \sum_{j : j \in T(C) \land P(E(j)) > P(E(C))} P(E(j))}  </math>
+
+and the probability of no prediction for C, written as <math>\operatorname{random}(C)</math>,
+:<math>P(\text{random}(C) | C) = \frac{P(E(C))}{P(E(C)) + \sum_{j : j \in T(C) \land P(E(j)) > P(E(C))} P(E(j))}  </math>
+
+The probability of a condition was given as,
+:<math> \forall t, P(E(t)) = \sum_{n: R(n) \equiv t} 2^{-L(n)}</math>
+
+Bit strings for theories that are more complex than the bit string given to the agent as input have no predictive power.  There probabilities are better included in the ''random'' case.  To implement this a new definition is given as ''F'' in,
+
+:<math> \forall t, P(F(t, c)) = \sum_{n: R(n) \equiv t \land L(n) < L(c)} 2^{-L(n)}</math>
+
+Using ''F'', an improved version of the abductive probabilities is,
+:<math>\forall t \in T(C), P(t | C) = \frac{P(F(t, c))}{P(F(C, c)) + \sum_{j : j \in T(C) \land P(F(j, c)) > P(F(C, c))} P(E(j, c))}  </math>
+:<math>P(\operatorname{random}(C) | C) = \frac{P(F(C, c))}{P(F(C, c)) + \sum_{j : j \in T(C) \land P(F(j, c)) > P(F(C, c))} P(F(j, c))}  </math>
+
+==Key people==
+
+* [[William of Ockham]]
+* [[Thomas Bayes]]
+* [[Ray Solomonoff]]
+* [[Andrey Kolmogorov]]
+* [[Chris Wallace (computer scientist)|Chris Wallace]]
+* D. M. Boulton
+* [[Jorma Rissanen]]
+* [[Marcus Hutter]]
+
+==See also==
+
+* [[Abductive reasoning]]
+* [[Algorithmic probability]]
+* [[Algorithmic information theory]]
+* [[Bayesian inference]]
+* [[Information theory]]
+* [[Inductive inference]]
+* [[Inductive logic programming]]
+* [[Inductive reasoning]]
+* [[Learning]]
+* [[Minimum message length]]
+* [[Minimum description length]]
+* [[Occam's razor]]
+* [[Solomonoff's theory of inductive inference]]
+* [[Universal artificial intelligence]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* Rathmanner, S and Hutter, M., "A Philosophical Treatise of Universal Induction" in Entropy 2011, 13, 1076–1136: A very clear philosophical and mathematical analysis of Solomonoff's Theory of Inductive Inference.
+* [[Chris Wallace (computer scientist)|C.S. Wallace]], [http://www.springeronline.com/sgw/cda/frontpage/0,11855,4-10129-22-35893962-0,00.html Statistical and Inductive Inference by Minimum Message Length], Springer-Verlag (Information Science and Statistics), {{ISBN|0-387-23795-X}}, May 2005 – [https://www.springer.com/west/home/statistics/theory?SGWID=4-10129-22-35893962-detailsPage=ppmmedia|toc chapter headings], [https://web.archive.org/web/20150923211609/http://www.csse.monash.edu.au/mml/toc.pdf table of contents] and [https://books.google.com/books?id=3NmFwNHaNbUC&q=wallace+%22statistical+and+inductive+inference+by+minimum+message+length%22 sample pages].
+
+[[Category:Philosophy of statistics]]
+[[Category:Inductive reasoning]]
+[[Category:Inference]]
+[[Category:Machine learning]]
+[[Category:Probability theory]]

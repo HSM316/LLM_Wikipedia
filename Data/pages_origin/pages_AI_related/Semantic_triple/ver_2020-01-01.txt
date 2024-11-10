@@ -1,0 +1,29 @@
+A '''semantic triple''', or simply '''triple''', is the atomic data entity in the [[Resource Description Framework]] (RDF) data model.<ref>http://www.w3.org/TR/PR-rdf-syntax/ "Resource Description Framework (RDF) Model and Syntax Specification"</ref> As its name indicates, a triple is a [[tuple|set of three entities]] that codifies a [[statement (programming)|statement]] about [[Semantic data model|semantic data]] in the form of subject–predicate–object expressions (e.g. "Bob is 35", or "Bob knows John").
+
+This format enables [[Knowledge representation and reasoning|knowledge to be represented]] in a machine-readable way. Particularly, every part of an RDF triple is individually addressable via unique [[Uniform Resource Identifier|URIs]] — for example, the second statement above might be represented in RDF as: 
+
+<code><nowiki>http://example.name#BobSmith12 http://xmlns.com/foaf/0.1/knows http://example.name#JohnDoe34</nowiki></code>.
+
+Given this precise representation, semantic data can be unambiguously [[Semantic query|queried]] and [[Semantic reasoner|reasoned]] about.
+
+[[File:Basic RDF Graph.svg|alt=Image depicting the subject predicate object relation.|thumb|The basic semantic triple model.]]The components of a triple, such as the statement "The sky has the color blue", consist of a [[Subject (grammar)|subject]] ("the sky"), a [[Predicate (grammar)|predicate]] ("has the color"), and an [[Object (grammar)|object]] ("blue"). This is similar to the classical notation of an [[entity–attribute–value model]] within [[object-oriented design]], where this example would be expressed as an entity (sky), an attribute (color) and a value (blue). 
+
+From this basic structure, triples can be composed into [[Semantic network|more complex models]], by using triples as objects or subjects of other triples — for example, <code>Mike → said → (triples → can be → objects)</code>.
+
+Given their particular, consistent structure, a collection of triples is often stored in purpose-built databases called [[Triplestore]]s.
+
+== See also ==
+* [[Named_graph#Named_graphs_and_quads|Named graphs and quads]], an extension to semantic triples to also include a context node as a fourth element.
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{cite web |url = https://www.w3.org/TR/rdf11-primer/#section-triple |title = RDF 1.1 Primer § Triples |publisher = [[World Wide Web Consortium|W3C]] }}
+
+{{Semantic Web}}
+
+[[Category:Semantic Web]]
+[[Category:Data modeling]]
+[[Category:Resource Description Framework]]
+[[Category:Knowledge representation]]

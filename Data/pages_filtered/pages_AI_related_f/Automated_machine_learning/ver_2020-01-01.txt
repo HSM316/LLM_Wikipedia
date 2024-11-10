@@ -1,0 +1,53 @@
+Automated machine learning (AutoML) is the process of automating the process of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the ever-growing challenge of applying machine learning. The high degree of automation in AutoML allows non-experts to make use of machine learning models and techniques without requiring to become an expert in this field first. 
+
+Automating the process of applying machine learning end-to-end additionally offers the advantages of producing simpler solutions, faster creation of those solutions, and models that often outperform hand-designed models. 
+
+ Comparison to the standard machine learning approach 
+In a typical machine learning application, practitioners have a dataset consisting of input data points to train on. The raw data itself may not be in a form such that all algorithms may be applicable to it out of the box. An expert may have to apply appropriate data pre-processing, feature engineering, feature extraction, and feature selection methods that make the dataset amenable for machine learning. Following those preprocessing steps, practitioners must then perform algorithm selection and hyperparameter optimization to maximize the predictive performance of their machine learning model. Clearly all of those steps induce their own challenges, accumulating to a significant hurdle to get started with machine learning.
+
+A downside are the additional parameters of AutoML tools, which may need some expertise to be set themselves. Although those hyperparameters exist, AutoML simplifies the application of machine learning for non-experts dramatically.
+
+Targets of automation
+Automated machine learning can target various stages of the machine learning process. Essentially the targets can be grouped into the fields data preparation, feature engineering, model selection, selection of evaluation metrics, and hyperparameter optimization.
+ Automated data preparation and ingestion (from raw data and miscellaneous formats)
+ Automated column type detection; e.g., boolean, discrete numerical, continuous numerical, or text
+ Automated column intent detection; e.g., target/label, stratification field, numerical feature, categorical text feature, or free text feature
+ Automated task detection; e.g., binary classification, regression, clustering, or ranking
+ Automated feature engineering
+ Feature selection
+ Feature extraction
+ Meta learning and transfer learning
+ Detection and handling of skewed data and/or missing values
+ Automated model selection
+ Hyperparameter optimization of the learning algorithm and featurization
+ Automated pipeline selection under time, memory, and complexity constraints
+ Automated selection of evaluation metrics / validation procedures
+ Automated problem checking
+ Leakage detection
+ Misconfiguration detection
+ Automated analysis of results obtained
+ User interfaces and visualizations for automated machine learning
+
+Examples
+Notable platforms tackling various stages of AutoML:
+
+Hyperparameter optimization and model selection
+ Auto-WEKA is a Bayesian hyperparameter optimization layer on top of WEKA.
+auto-sklearn is a Bayesian hyperparameter optimization layer on top of scikit-learn.
+ATM is an open source software library under the Human Data Interaction project (HDI) at MIT. It is a distributed, scalable AutoML system designed with ease of use in mind.
+ H2O AutoML provides automated data preparation, hyperparameter tuning via random search, and stacked ensembles in a distributed machine learning platform.
+Fast AutoML is a Python library built on top of scikit-learn. It is based on the Nescience Principle (The Mathematics of the Unknown) and supports a hyperparameter-free approach for decision tree construction without overfitting.
+
+Full pipeline optimization
+ TPOT is a Python library that automatically creates and optimizes full machine learning pipelines using genetic programming.
+ H2O Driverless AI is an automated machine learning platform developed by H2O.ai for automated visualization, feature engineering, model training, hyperparameter optimization, and explainability. 
+dotData Enterprise is an automated machine learning platform developed by dotData for automated feature engineering, model training, hyperparameter optimization explainability and operationalization of AI and ML models.
+ TransmogrifAI is a Scala/SparkML library created by Salesforce for automated data cleansing, feature engineering, model selection, and hyperparameter optimization
+RECIPE  is a framework based on grammar-based genetic programming that builds customized scikit-learn classification pipelines.
+GA-Auto-MLC and Auto-MEKAGGP are freely-available methods that perform automated multi-label classification on the MEKA software.
+ML-Plan is an open-source AutoML tool based on Hierarchical Task Network planning, which is implemented to work with WEKA and scikit-learn algorithms. Furthermore it has been extended to support an unlimited number of preprocessing steps using scikit-learn and for the problem domain of multi-label classification based on MEKA.
+RemixAutoML is an open-source package in R for automated machine learning, automated feature engineering, automated time series modeling, automated recommender systems, and automated anomaly detection.
+Pathmind is a cloud based platform that uses automated deep reinforcement learning to develop policies in AnyLogic simulation models.
+
+Deep neural network architecture search
+AutoKeras is an open-source python package for neural architecture search.

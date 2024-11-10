@@ -1,0 +1,63 @@
+{{short description|Software tool}}
+{{Orphan|date=August 2023}}
+
+{{Infobox software
+| name = Deep Learning Studio
+| logo = 
+| screenshot = 
+| caption = 
+| developer = [http://deepcognition.ai Deep Cognition Inc.]
+| released = 
+| latest release version = 
+| latest release date = 
+| programming language = [[Python (programming language)|Python]]
+| operating system = [[Microsoft Windows]], [[Ubuntu Linux]]
+| genre = [[Deep learning]]
+| license = [[Proprietary software]]
+| website = [https://deeplearningstudio.com/ deeplearningstudio.com]
+}}
+
+'''Deep Learning Studio''' is a software tool that aims to simplify the creation of [[deep learning]] models used in [[artificial intelligence]].<ref name=":0">{{Cite web|url=https://www.kdnuggets.com/2017/12/deep-learning-made-easy-deep-cognition.html|title=Deep Learning Made Easy with Deep Cognition|website=www.kdnuggets.com|language=en-US|access-date=2018-03-08}}</ref> It is compatible with a number of [[Open source programming|open-source programming]] frameworks popularly used in [[artificial neural network]]s, including [[MXNet]] and Google's [[TensorFlow]].<ref name=":0" />
+
+Prior to the release of Deep Learning Studio in January 2017, proficiency in [[Python (programming language)|Python]], among other programming languages, was essential in developing effective deep learning models.<ref name=":0" /> Deep Learning Studio sought to simplify the model creation process through a visual, drag-and-drop interface and the application of pre-trained learning models on available data.<ref name=":0" />
+
+Irving, TX-based Deep Cognition Inc. is the developer behind Deep Learning Studio. In 2017, the software allowed Deep Cognition to become a finalist for Best Innovation in Deep Learning in the Alconics Awards, which are given annually to the best artificial intelligence software.<ref>{{Cite news|url=https://dallasinnovates.com/deep-cognition-among-finalists-alconics-award/|title=Deep Cognition Among Finalists for Alconics Award » Dallas Innovates|last=Innovates|first=Dallas|date=2017-09-25|work=Dallas Innovates|access-date=2018-03-08|language=en-US}}</ref>
+
+Deep Cognition launched version 2.0 of Deep Learning Studio at NVIDIA's GTC 2018 Conference in San Jose, CA.<ref>{{Cite web|url=https://wikibon.com/ai-democratization-ibm-deep-cognition-cloudera/|title=AI Democratization: IBM, Deep Cognition, and Cloudera - Wikibon Research|website=wikibon.com|language=en-US|access-date=2018-03-28}}</ref>
+
+Fremont, CA-based computing products supplier Exxact Corp provides desktop computers specifically built to handle Deep Learning Studio workloads.<ref>{{Cite web|url=https://www.exxactcorp.com/Deep-Learning-Studio-Solutions|title=Deep Learning Studio Solutions {{!}} Exxact|website=www.exxactcorp.com|language=en-US|access-date=2018-03-15}}</ref>
+
+== Features ==
+Source:<ref name=":0" />
+
+Deep Learning Studio is available in two versions: Desktop and Cloud, both of which are [[free software]]. The Desktop version is available on [[Microsoft Windows|Windows]] and [[Ubuntu (operating system)|Ubuntu]]. The Cloud version is available in single-user and multi-user configurations.<ref>{{Cite web|url=https://aws.amazon.com/marketplace/seller-profile?id=69746f7d-1813-4e31-ba16-cc79f42fd257|title=AWS Marketplace: Deep Cognition|website=aws.amazon.com|language=en|access-date=2018-03-15}}</ref> A Deep Cognition account is needed to access the Cloud version. Account registration is free.
+
+Deep Learning Studio can import existing [[Keras]] models; it also takes a data set as an input.
+
+Deep Learning Studio's [[AutoML]] feature allows automatic generation of deep learning models. More advanced users may choose to generate their own models using various types of layers and neural networks.
+
+Deep Learning Studio also has a library of loss functions and optimizers for use in [[Hyperparameter (machine learning)|hyperparameter]] tuning, a traditionally complicated area in neural network programming.
+
+Generated models can be trained using either [[CPUs]] or [[Graphics processing unit|GPUs]]. Trained models can then be used for [[predictive analytics]].
+
+Deep Learning Studio has been cited for being a user-friendly deep learning tool.<ref>{{Cite news|url=https://towardsdatascience.com/making-deep-learning-user-friendly-possible-8fe3c1220f9|title=Making Deep Learning User-Friendly, Possible? – Towards Data Science|date=2018-04-04|work=Towards Data Science|access-date=2018-04-11}}</ref>
+
+== See also ==
+* [[Artificial intelligence]]
+* [[Artificial neural network]]
+* [[Data mining]]
+* [[Deep learning]]
+* [[Machine learning]]
+* [[Predictive analytics]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+*[http://deepcognition.ai/ Official website]
+*[http://deepcognition.ai/blog/ Official blog]
+
+[[Category:Deep learning software]]
+
+
+{{compu-ai-stub}}

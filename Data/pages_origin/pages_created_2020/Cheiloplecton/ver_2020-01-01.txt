@@ -1,0 +1,38 @@
+{{Speciesbox
+|image = 
+|image_caption = 
+|taxon = Cheiloplecton rigidum 
+|parent_authority = [[Antoine Laurent Apollinaire Fée|Fée]]<ref name=PPGI/>
+|authority = ([[Olof Swartz|Sw.]]) Fée<ref name=PPGI/>
+|display_parents = 2
+|synonyms =
+  {{Species list
+  |Allosorus cartilagineus|(C.Presl) C.Presl
+  |Allosorus rigidus|(Sw.) C.Presl
+  |Cheilanthes rigida|(Sw.) Moore ex Fée
+  |Doryopteris rigida|(Sw.) Diels
+  |Hemionitis cheiloplecton|Christenh.
+  |Pellaea rigida|(Sw.) Hook.
+  |Pteris acutangula|Nees
+  |Pteris cartilaginea|C.Presl
+  |Pteris rigida|Sw.
+  }}
+|synonyms_ref = <ref name=CFLW/>
+}}
+
+'''''Cheiloplecton''''' is a genus of [[fern]]s in the subfamily [[Cheilanthoideae]] of the family [[Pteridaceae]] with a single species '''''Cheiloplecton rigidum''''',<ref name=PPGI/> native to [[Mexico]], [[Guatemala]], [[El Salvador]] and [[Honduras]].<ref name=CFLW/>
+
+==References==
+{{Reflist|refs=
+<ref name=CFLW>{{Citation |last1=Hassler |first1=Michael |last2=Schmitt |first2=Bernd |date=November 2019 |contribution=''Cheiloplecton'' |title=Checklist of Ferns and Lycophytes of the World |at=8.11 |url=https://worldplants.webarchiv.kit.edu/ferns/ |accessdate=2019-12-30 |lastauthoramp=yes }}</ref>
+
+<ref name=PPGI>{{Citation |author=PPG I |year=2016 |title=A community-derived classification for extant lycophytes and ferns |journal=Journal of Systematics and Evolution |volume=54 |issue=6 |pages=563–603 |doi=10.1111/jse.12229}}</ref>
+}}
+
+{{Taxonbar|from2=Q5765432|from1=Q15611850|from3=Q38242146}}
+
+[[Category:Pteridaceae]]
+[[Category:Monotypic fern genera]]
+
+
+{{fern-stub}}

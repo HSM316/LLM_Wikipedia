@@ -1,0 +1,127 @@
+In the field of [[statistical learning theory]], '''matrix regularization''' generalizes notions of vector regularization to cases where the object to be learned is a matrix. The purpose of regularization is to enforce conditions, for example sparsity or smoothness, that can produce stable predictive functions. For example, in the more common vector framework, [[Tikhonov regularization]] optimizes over
+
+: <math>\min_x \|Ax - y\|^2 + \lambda \|x\|^2</math>
+
+to find a vector <math>x</math> that is a stable solution to the regression problem. When the system is described by a matrix rather than a vector, this problem  can be written as
+
+: <math>\min_X \|AX - Y\|^2 + \lambda \|X\|^2,</math>
+
+where the vector norm enforcing a regularization penalty on <math>x</math> has been extended to a matrix norm on <math>X</math>.
+
+Matrix regularization has applications in [[matrix completion]], [[multivariate regression]], and [[multi-task learning]]. Ideas of feature and group selection can also be extended to matrices, and these can be generalized to the nonparametric case of [[multiple kernel learning]].
+
+== Basic definition ==
+
+Consider a matrix <math>W</math> to be learned from a set of examples, <math>S=(X_i^t,y_i^t)</math>, where <math>i</math> goes from <math>1</math> to <math>n</math>, and <math>t</math> goes from <math>1</math> to <math>T</math>. Let each input matrix <math>X_i</math> be <math>\in \mathbb{R}^{DT}</math>, and let <math>W</math> be of size <math>D \times T</math>. A general model for the output <math>y</math> can be posed as
+
+: <math>y_i^t = \langle W, X_i^t \rangle_F,</math>
+
+where the inner product is the [[Frobenius inner product]]. For different applications the matrices <math>X_i</math> will have different forms,<ref name=Notes>{{cite book |first=Lorenzo |last=Rosasco |first2=Tomaso |last2=Poggio |author-link2=Tomaso Poggio |chapter=A Regularization Tour of Machine Learning |title=MIT-9.520 Lectures Notes |type=Manuscript |date=December 2014 |url=https://www.mit.edu/~9.520/fall15/Classes/learning_problem.html }}</ref> but for each of these the optimization problem to infer <math>W</math> can be written as
+
+: <math>\min_{W \in \mathcal{H}} E(W) + R(W),</math>
+
+where <math>E</math> defines the empirical error for a given <math>W</math>, and <math>R(W)</math> is a matrix regularization penalty. The function <math>R(W)</math> is typically chosen to be convex and is often selected to enforce sparsity (using <math>\ell^1</math>-norms) and/or smoothness (using <math>\ell^2</math>-norms). Finally, <math>W</math> is in the space of matrices <math>\mathcal{H}</math> with Frobenius inner product <math>\langle \dots \rangle_F</math>.
+
+== General applications ==
+
+=== Matrix completion ===
+
+In the problem of [[matrix completion]], the matrix <math>X_i^t</math> takes the form
+
+: <math>X_i^t = e_t \otimes e_i',</math>
+
+where <math>(e_t)_t</math> and <math>(e_i')_i</math> are the canonical basis in <math>\mathbb{R}^T</math> and <math>\mathbb{R}^D</math>. In this case the role of the Frobenius inner product is to select individual elements <math>w_i^t</math> from the matrix <math>W</math>. Thus, the output <math>y</math> is a sampling of entries from the matrix <math>W</math>.
+
+The problem of reconstructing <math>W</math> from a small set of sampled entries is possible only under certain restrictions on the matrix, and these restrictions can be enforced by a regularization function. For example, it might be assumed that <math>W</math> is low-rank, in which case the regularization penalty can take the form of a nuclear norm.<ref name="Candès, Emmanuel J 2009 pp. 717">{{cite journal |title=Exact Matrix Completion via Convex Optimization |last=Candès |first=Emmanuel J. |author-link=Emmanuel Candès |last2=Recht |first2=Benjamin |year=2009 |journal=Foundations of Computational Mathematics |volume=9 |issue=6 |pages=717–772 |doi=10.1007/s10208-009-9045-5 |doi-access=free }}</ref>
+
+: <math>R(W) = \lambda \|W\|_* = \lambda \sum |\sigma_i|,</math>
+
+where <math>\sigma_i</math>, with <math>i</math> from <math>1</math> to <math>\min D, T</math>, are the singular values of <math>W</math>.
+
+=== Multivariate regression ===
+
+Models used in [[multivariate regression]] are parameterized by a matrix of coefficients. In the Frobenius inner product above, each matrix <math>X</math> is
+
+: <math>X_i^t=e_t\otimes x_i \, </math>
+
+such that the output of the inner product is the dot product of one row of the input with one column of the coefficient matrix. The familiar form of such models is
+
+: <math>Y=XW+b \, </math>
+
+Many of the vector norms used in single variable regression can be extended to the multivariate case. One example is the squared Frobenius norm, which can be viewed as an <math>\ell^2</math>-norm acting either entrywise, or on the singular values of the matrix:
+
+: <math>R(W)=\lambda \|W\|_F^2=\lambda \sum\sum |w_{ij}|^2=\lambda \operatorname{Tr}(W^*W)=\lambda \sum \sigma_i^2.</math>
+
+In the multivariate case the effect of regularizing with the Frobenius norm is the same as the vector case; very complex models will have larger norms, and, thus, will be penalized more.
+
+=== Multi-task learning ===
+
+The setup for multi-task learning is almost the same as the setup for multivariate regression. The primary difference is that the input variables are also indexed by task (columns of <math>Y</math>). The representation with the Frobenius inner product is then
+
+: <math>X_i^t=e_t\otimes x_i^t.</math>
+
+The role of matrix regularization in this setting can be the same as in multivariate regression, but matrix norms can also be used to couple learning problems across tasks. In particular, note that for the optimization problem
+
+: <math>\min_W \|XW-Y\|_2^2 + \lambda \|W\|_2^2</math>
+
+the solutions corresponding to each column of <math>Y</math> are decoupled. That is, the same solution can be found by solving the joint problem, or by solving an isolated regression problem for each column. The problems can be coupled by adding an additional regulatization penalty on the covariance of solutions
+
+: <math>\min_{W,\Omega} \|XW-Y\|_2^2 + \lambda_1 \|W\|_2^2 + \lambda_2 \operatorname{Tr}(W^T \Omega^{-1} W)</math>
+
+where <math>\Omega</math> models the relationship between tasks. This scheme can be used to both enforce similarity of solutions across tasks, and to learn the specific structure of task similarity by alternating between optimizations of <math>W</math> and <math>\Omega</math>.<ref>{{cite paper |last=Zhang |last2=Yeung |date=2012 |arxiv=1203.3536 |title=A Convex Formulation for Learning Task Relationships in Multi-Task Learning |work=Proceedings of the Twenty-Sixth Conference on Uncertainty in Artificial Intelligence (UAI2010) |bibcode=2012arXiv1203.3536Z }}</ref> When the relationship between tasks is known to lie on a graph, the [[Laplacian matrix]] of the graph can be used to couple the learning problems.
+
+== Spectral regularization ==
+
+[[Regularization by spectral filtering]] has been used to find stable solutions to problems such as those discussed above by addressing ill-posed matrix inversions (see for example  [[Regularization by spectral filtering#Filter function for Tikhonov regularization|Filter function for Tikhonov regularization]]). In many cases the regularization function acts on the input (or kernel) to ensure a bounded inverse by eliminating small singular values, but it can also be useful to have spectral norms that act on the matrix that is to be learned.
+
+There are a number of matrix norms that act on the singular values of the matrix. Frequently used examples include the [[Schatten norm|Schatten p-norms]], with ''p''&nbsp;=&nbsp;1&nbsp;or&nbsp;2. For example, matrix regularization with a Schatten 1-norm, also called the nuclear norm, can be used to enforce sparsity in the spectrum of a matrix. This has been used in the context of matrix completion when the matrix in question is believed to have a restricted rank.<ref name="Candès, Emmanuel J 2009 pp. 717"/> In this case the optimization problem becomes:
+
+: <math>\min \|W\|_*</math> subject to <math>W_{i,j}=Y_{ij}.</math>
+
+Spectral Regularization is also used to enforce a reduced rank coefficient matrix in multivariate regression.<ref>{{cite journal |first=Alan J. |last=Izenman |title=Reduced Rank Regression for the Multivariate Linear Model |journal=[[Journal of Multivariate Analysis]] |volume=5 |issue=2 |pages=248–264 |year=1975 |doi=10.1016/0047-259X(75)90042-1 }}</ref> In this setting, a reduced rank coefficient matrix can be found by keeping just the top <math>n</math> singular values, but this can be extended to keep any reduced set of singular values and vectors.
+
+== Structured sparsity ==
+
+Sparse optimization has become the focus of much research interest as a way to find solutions that depend on a small number of variables (see e.g. the  [[Lasso (statistics)|Lasso method]]). In principle, entry-wise sparsity can be enforced by penalizing the entry-wise <math>\ell^0</math>-norm of the matrix, but the <math>\ell^0</math>-norm is not convex. In practice this can be implemented by convex relaxation to the <math>\ell^1</math>-norm. While entry-wise regularization with an <math>\ell^1</math>-norm will find solutions with a small number of nonzero elements, applying an <math>\ell^1</math>-norm to different groups of variables can enforce structure in the sparsity of solutions.<ref>{{cite journal |last=Kakade |last2=Shalev-Shwartz |last3=Tewari |title=Regularization Techniques for Learning with Matrices |journal=Journal of Machine Learning Research |volume=13 |year=2012 |pages=1865–1890 |url=http://www.jmlr.org/papers/v13/kakade12a.html }}</ref>
+
+The most straightforward example of structured sparsity uses the <math>\ell_{p,q}</math> norm with <math>p=2</math> and <math>q=1</math>:
+
+: <math>\|W\|_{2,1}=\sum \|w_i\|_2.</math>
+
+For example, the <math>\ell_{2,1}</math> norm is used in multi-task learning to group features across tasks, such that all the elements in a given row of the coefficient matrix can be forced to zero as a group.<ref>{{cite journal |first=A. |last=Argyriou |first2=T. |last2=Evgeniou |first3=M. |last3=Pontil |doi=10.1007/s10994-007-5040-8 |title=Convex multi-task feature learning |journal=[[Machine Learning (journal)|Machine Learning]] |volume=73 |issue=3 |pages=243–272 |year=2008 |doi-access=free }}</ref> The grouping effect is achieved by taking the <math>\ell^2</math>-norm of each row, and then taking the total penalty to be the sum of these row-wise norms. This regularization results in rows that will tend to be all zeros, or dense. The same type of regularization can be used to enforce sparsity column-wise by taking the <math>\ell^2</math>-norms of each column.
+
+More generally, the <math>\ell_{2,1}</math> norm can be applied to arbitrary groups of variables:
+
+: <math>R(W)=\lambda \sum_g^G \sqrt{\sum_j^{|G_g|} |w_g^j|^2}=\lambda \sum_g^G \|w_g\|_g</math>
+
+where the index <math>g</math> is across groups of variables, and <math>|G_g|</math> indicates the cardinality of group <math>g</math>.
+
+Algorithms for solving these group sparsity problems extend the more well-known Lasso and group Lasso methods by allowing overlapping groups, for example, and have been implemented via [[matching pursuit]]:<ref>{{cite journal |last=Huang |last2=Zhang |last3=Metaxas |title=Learning with Structured Sparsity |journal=Journal of Machine Learning Research |volume=12 |year=2011 |pages=3371–3412 |url=http://www.jmlr.org/papers/v12/huang11b.html }}</ref> and [[proximal gradient method]]s.<ref>{{cite journal |last=Chen |first=Xi |first2=Qihang |last2=Lin |first3=Seyoung |last3=Kim |first4=Jaime G. |last4=Carbonell |first5=Eric P. |last5=Xing |display-authors=1 |title=Smoothing Proximal Gradient Method for General Structured Sparse Regression |journal=Annals of Applied Statistics |year=2012 |volume=6 |issue=2 |pages=719–752 |doi=10.1214/11-AOAS514 |doi-access=free }}</ref> By writing the proximal gradient with respect to a given coefficient, <math>w_g^i</math>, it can be seen that this norm enforces a group-wise soft threshold<ref name=Notes />
+
+: <math>\operatorname{prox}_{\lambda,R_g}(w_g)^i=\left(w_g^i-\lambda \frac{w_g^i}{\|w_g\|_g}\right)\mathbf{1}_{\|w_g\|_g\geq \lambda}.</math>
+
+where <math>\mathbf{1}_{\|w_g\|_g\geq \lambda}</math> is the indicator function for group norms <math>\geq \lambda</math>.
+
+Thus, using <math>\ell_{2,1}</math> norms it is straightforward to enforce structure in the sparsity of a matrix either row-wise, column-wise, or in arbitrary blocks. By enforcing group norms on blocks in multivariate or multi-task regression, for example, it is possible to find groups of input and output variables, such that defined subsets of output variables (columns in the matrix <math>Y</math>) will depend on the same sparse set of input variables.
+
+== Multiple kernel selection ==
+
+The ideas of structured sparsity and [[feature selection]] can be extended to the nonparametric case of [[multiple kernel learning]].<ref>{{cite journal |last=Sonnenburg |last2=Ratsch |last3=Schafer |last4=Scholkopf |title=Large Scale Multiple Kernel Learning |journal=Journal of Machine Learning Research |volume=7 |year=2006 |pages=1531–1565 |url=http://www.jmlr.org/papers/v7/sonnenburg06a.html }}</ref> This can be useful when there are multiple types of input data (color and texture, for example) with different appropriate kernels for each, or when the appropriate kernel is unknown. If there are two kernels, for example, with feature maps <math>A</math> and <math>B</math> that lie in corresponding [[reproducing kernel Hilbert space]]s <math>\mathcal{H_A},\mathcal{H_B}</math>, then a larger space, <math>\mathcal{H_D}</math>, can be created as the sum of two spaces:
+
+: <math>\mathcal{H_D}: f=h+h'; h\in \mathcal{H_A}, h'\in \mathcal{H_B}</math>
+
+assuming linear independence in <math>A</math> and <math>B</math>. In this case the <math>\ell_{2,1}</math>-norm is again the sum of norms:
+
+: <math>\|f\|_{\mathcal{H_D},1}=\|h\|_{\mathcal{H_A}}+\|h'\|_{\mathcal{H_B}}</math>
+
+Thus, by choosing a matrix regularization function as this type of norm, it is possible to find a solution that is sparse in terms of which kernels are used, but dense in the coefficient of each used kernel. Multiple kernel learning can also be used as a form of nonlinear variable selection, or as a model aggregation technique (e.g. by taking the sum of squared norms and relaxing sparsity constraints). For example, each kernel can be taken to be the Gaussian kernel with a different width.
+
+== See also ==
+* [[Regularization (mathematics)]]
+
+== References ==
+{{reflist}}
+
+[[Category:Estimation theory]]
+[[Category:Machine learning]]
+[[Category:Matrices]]

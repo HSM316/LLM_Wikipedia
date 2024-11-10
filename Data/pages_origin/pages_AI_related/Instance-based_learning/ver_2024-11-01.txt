@@ -1,0 +1,19 @@
+In [[machine learning]], '''instance-based learning''' (sometimes called '''memory-based learning'''<ref>{{cite book |author1=Walter Daelemans |authorlink1=Walter Daelemans |author2=Antal van den Bosch |authorlink2=Antal van den Bosch |year=2005 |title=Memory-Based Language Processing |publisher=Cambridge University Press}}</ref>) is a family of learning algorithms that, instead of performing explicit generalization, compare new problem instances with instances seen in training, which have been stored in memory. Because computation is postponed until a new instance is observed, these algorithms are sometimes referred to as "lazy."<ref name="mitchell"></ref>
+
+It is called instance-based because it constructs hypotheses directly from the training instances themselves.<ref name='aima733'>[[Stuart J. Russell|Stuart Russell]] and [[Peter Norvig]] (2003). ''[[Artificial Intelligence: A Modern Approach]]'', second edition, p. 733. Prentice Hall. {{ISBN|0-13-080302-2}}</ref>
+This means that the hypothesis complexity can grow with the data:<ref name='aima733'/> in the worst case, a hypothesis is a list of ''n'' training items and the computational complexity of [[Classification (machine learning)|classifying]] a single new instance is [[Big O notation|''O'']](''n''). One advantage that instance-based learning has over other methods of machine learning is its ability to adapt its model to previously unseen data. Instance-based learners may simply store a new instance or throw an old instance away.
+
+Examples of instance-based learning algorithms are the [[k-nearest neighbors algorithm|''k''-nearest neighbors algorithm]], [[kernel method|kernel machines]] and [[Radial basis function network|RBF networks]].<ref name="mitchell">{{cite book |author=Tom Mitchell |title=Machine Learning |year=1997 |publisher=McGraw-Hill}}</ref>{{rp|ch. 8}} These store (a subset of) their training set; when predicting a value/class for a new instance, they compute distances or similarities between this instance and the training instances to make a decision.
+
+To battle the memory complexity of storing all training instances, as well as the risk of [[overfitting]] to noise in the training set, ''instance reduction'' algorithms have been proposed.<ref>{{cite journal |title=Reduction techniques for instance-based learning algorithms |author1=D. Randall Wilson |author2=Tony R. Martinez |journal=[[Machine Learning (journal)|Machine Learning]] |year=2000}}</ref>
+
+
+==See also==
+*[[Analogical modeling]]
+
+==References==
+{{reflist|30em}}
+
+[[Category:Machine learning]]
+
+{{AI-stub}}

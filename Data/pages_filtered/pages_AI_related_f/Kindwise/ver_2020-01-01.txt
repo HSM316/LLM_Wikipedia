@@ -1,0 +1,7 @@
+A Czech company founded in 2014 by three PhD students Ondřej Veselý, Ondřej Vild and Jiří Řihák. The company provides a plant identification service using the mobile application Flowerchecker for Android and iOS.
+
+The application was nominated in 2014 for the Křišťálová lupa, a Czech award for the most exciting project on the internet in the mobile service category.
+
+Plants are identified by specialists in FlowerChecker. It helps internally develop a machine learning system that classifies photos and suggests species names to specialists 
+
+In May 2018, the company launched Plant.id - a fully automatic plant learning service by machine learning .  A year later, Plant.id won Nápad roku (Idea of ​​the Year) award at the AI ​​Awards  The service uses the neural network trained in plant photos designed by specialists for this classification task. The service is offered in the form of an API and is focused (the target client are companies)  on companies, such a B2B business model.

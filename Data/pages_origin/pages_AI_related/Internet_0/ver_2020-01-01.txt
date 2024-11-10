@@ -1,0 +1,82 @@
+{{notability|date=December 2018}}
+{{more footnotes|date=October 2012}}
+'''Internet 0''' is a low-speed [[physical layer]] designed to route 'IP over anything.' It was developed at [[MIT]]'s [[Center for Bits and Atoms]] by [[Neil Gershenfeld]], [[Raffi Krikorian]], and [[Danny_Cohen_(engineer)|Danny Cohen]].  When it was invented, a number of other proposals were being labelled as "internet 2."  The name was chosen to emphasize that this was designed to be a slow, but very inexpensive internetworking system, and forestall "high-performance" comparison questions such as "how fast is it?"
+
+Effectively, it would enable a platform for pervasive computing -- everything in a building could be on the same network to share data gathering and actuation.  A light switch could turn on a light bulb by sending a packet to it, they can be linked together by the user.
+
+==History==
+Internet 0 was originally a minor, expedient bit of engineering support for other MIT projects.  It was intended to network buildings, improve efficiency, and gather data through the control of HVAC systems (heating, ventilation, and air conditioning).  
+
+The protocol works pretty well in a wide variety of media.  The wide utility and multiple media of the protocol interested network theorists.  It awakened a burst of academic papers, and started some commercial interest. 
+
+The simple, inexpensive implementation still appeals to hobbyists and students, where most of the new implementations were found as of 2011. Modern implementations are mostly software on small microcontrollers, usually with a transistor to transmit, and capacitors to isolate the transmitter and receiver.  The connector literally becomes the major expense of the communication system.  Such a simple, inexpensive system can be embedded into many devices to allow data retrieval or control via the Internet -- these small devices can be used to form an [[Internet of Things]].
+
+The current largest deployment of Internet 0 was at the Venice Biennale Architecture Exhibition, in the year 2008, by a group led by the Institute of Advanced Architecture of Catalonia, directed by the architect [[Vicente Guallart]].
+
+==Theory==
+The idea behind Internet 0 is to provide a general-purpose physical layer that operates well in many media.  As such, it is very similar to [[morse code]]: a general-purpose layer 1 for the Internet.  Logically, this is a recursive application of the internet principle (a ubiquitous protocol) to layer 1 of the network.  The pulse-position modulation of Internet 0 operates best over a segregated wire, but it works in many media.  It has been tested over [[radio frequency]] (RF), [[infrared]] (IR), ultrasonics, optical, DC and AC power wiring, and even physical representations such as printed bar codes and engraving on a key.
+
+One of the main advantages of this approach is that routers become very simple.  They are just a sensor, pulse reshaper and a transmitter.
+
+Coupling the reusable physical layer to the internet protocols enables a network with very inexpensive nodes that is also addressable from the global Internet.
+
+==Requirements==
+The design intent is to provide a simple, very inexpensive system that can transmit data slowly over many types of media, and yet still connect devices to the internet.  Connecting to the internet is a crucial part of the design, because much of the value of a networked device is provided by easy, wide access to it.  The higher layers of an Internet 0 network are usually [[Serial Line Internet Protocol]] (SLIP), [[Internet Protocol]] (IP), and above that, usually [[User Datagram Protocol]] (UDP) or more rarely [[Transmission Control Protocol]] (TCP).  
+
+The protocol layers are chosen to need a minimum of code, to keep the expense of the computer low.  Internet 0 has been implemented in small [[Atmel AVR|AVR]] microcontrollers.  In most existing implementations, the layers are not distinct, because small code is more important than elegant design.
+
+A small translation device normally attaches a local network of Internet 0 devices to the serial port of a [[personal computer|PC]] that acts as a [[gateway (telecommunications)|gateway]] and [[Firewall (computing)|firewall]] to the [[Internet]].
+
+Devices can talk directly to each other without requiring a server.  The distributed architecture ensures that there is no central point of failure.  
+
+Address assignment and cryptographic key initialization is sometimes performed by closing a contact on the device while having a master controller broadcast an assignment message.  Security is via a simplified encryption system.
+
+==Implementation==
+Internet 0 is similar to a [[serial port]] running at 9600 [[baud]] except it sends data by [[pulse-position modulation]], and accepts up to 30% timing deviations.  The medium is broadcast, and half duplex.  Software in the receiving devices examines the IP address of each packet, rejecting unwanted packets. 
+
+A zero bit is a one-[[microsecond]] pulse in the center of the first half of a bit time, and a one is a pulse in the second half of a bit time.  Data is sent as 8 bit bytes.  A byte is preceded by a bit time that has two pulses (at both 1 and 0 times), and ends with a bit time that has another two pulses.  In some variations, the stop bit-time is optional, and the dual-pulse bit times are treated as byte separators.  
+
+The dual-pulse start and stop bit times permit a receiver to synchronize with the beginnings of bytes, and also measure the baud rate of a sender.  Synchronizing on 8-bit bytes permits a 9600 baud internet-0 connection to easily translate to a standard, low-speed 19,200 baud TCP/IP serial port.  The baud rate measurement permits senders and receivers to use inexpensive low-precision oscillators such as ceramic resonators or resistor-capacitor oscillators.
+
+The most common interface uses the power supply wiring to the device.  The circuit is a small [[surface mount]]ed [[capacitor]] between an [[AC power|AC]] mains wire or a [[Direct current|DC]] power wire and a single digital pin of a small [[microcontroller]] that switches a high-power transistor briefly on, then off.  The pulses are normally generated by having software toggle a digital I/O pin on the microcontroller.  They are received through another capacitor, by a microcontroller with a pin configured as an interrupt, or as a hardware timer's gate.
+
+==Commercial difficulties==
+{{unreferenced section|date=October 2012}}
+
+While Internet 0 works in many media, for any given transmission medium there are usually competing, preexisting physical layers that are more reliable, higher speed or lower power, such as [[Homeplug]], or [[G.hn]] for power-line networking, or [[Local Interconnect Network | LIN]] for vehicles.  While they are usually not as flexible, and rarely as inexpensive, they are less surprising.
+
+In the early exploration of the concept, [[Sun Microsystems]], [[Cisco Systems]] and [[Schneider Electric]] were interested in commercial deployment. Schneider eventually decided to deploy [[Zigbee]], a low-powered radio protocol.
+
+==See also==
+* [[Neil Gershenfeld]]
+* [[Danny_Cohen (engineer)|Danny Cohen]]
+* [[Internet of Things]]
+
+==References==
+{{reflist}}
+* {{citation
+| first1      = Neil
+| last1       = Gershenfeld
+| first2      = Raffi
+| last2       = Krikorian
+| first3      = Danny
+| last3       = Cohen
+| date        = October 2004
+| title       = The Internet of Things
+| publisher   = [[Scientific American]]
+| url         = http://www.scientificamerican.com/article.cfm?id=the-internet-of-things
+}}
+* Cohen, D; Gershenfeld, N.: "Internet-0: Interdevice Internetworking", ''IEEE Circuits and Devices Magazine'', September/October 2006, Vol:22, Issue:5, pp.&nbsp;48–55
+
+==External links==
+*[http://i0.cba.mit.edu/ Internet 0 at MIT's Center for Bits and Atoms]
+*[https://www.youtube.com/watch?v=w8ubXgXM7kk Programming Bits and Atoms] Google TechTalk by Neil Gershenfeld, 27 October 2008
+*[http://pubs.media.mit.edu/pubs/papers/neilg-0410-sciam.pdf Internet 0: Inter-device Internetworking]
+*[http://www.ldeo.columbia.edu/~dale/projects/Internet-0_info.html Internet 0 info]
+*[http://www.hyperhabitat.net/ Hyperhabitat: Reprogramming the World] - Venice Biennale Architecture Exhibition
+*[http://www.boingboing.net/2003/04/25/internet-0-bringing.html Boing Boing - "Internet 0 -- Bringing IP to the Leaf Node]
+
+{{Ambient intelligence}}
+
+[[Category:Internet protocols]]
+[[Category:Internet of things]]

@@ -1,0 +1,40 @@
+{{short description|Cellular device technology}}
+{{technical|date=February 2019}}
+
+'''LTE-M''' ([[LTE (telecommunication)|LTE]]-MTC [Machine Type Communication]), which includes '''eMTC''' (enhanced Machine Type Communication), is a type of [[LPWAN|low power wide area network]] (LPWAN) [[radio]] technology standard developed by [[3GPP]] to enable a wide range of cellular devices and services (specifically, for [[machine-to-machine]] and [[Internet of Things]] applications).<ref>[https://www.rohde-schwarz.com/us/solutions/test-and-measurement/wireless-communication/iot-m2m/lte-m/lte-m-theme_234034.html LTE-M – the new GSM]</ref><ref>[https://halberdbastion.com/technology/iot/iot-protocols/emtc-lte-cat-m1 eMTC (LTE Cat-M1)]</ref> The specification for eMTC ('''LTE Cat-M1''') was frozen in 3GPP Release 13 ([[LTE Advanced Pro]]), in June 2016.<ref name="3GPP">[http://www.3gpp.org/news-events/3gpp-news/1805-iot_r14 Standards for the IoT]</ref> Other 3GPP [[Internet of things|IoT]] technologies include [[NB-IoT]] and EC-GSM-IoT.<ref>{{cite web |url=http://www.gsma.com/connectedliving/extended-coverage-gsm-internet-of-things-ec-gsm-iot |title=Extended Coverage - GSM - Internet of Things (EC-GSM-IoT) |first= | last= |date=May 11, 2016 |website=gsma.com |publisher=[[GSMA]] |pages=1 |format= |access-date=October 17, 2016 |quote= }}</ref> 
+
+The advantage of LTE-M over NB-IoT is its comparatively higher data rate, mobility, and voice over the network, but it requires more bandwidth, is more costly, and cannot be put into guard band frequency band for now.<ref>[https://accent-systems.com/blog/differences-nb-iot-lte-m/ DIFFERENCES BETWEEN NB-IOT AND LTE-M]</ref>. In March 2019, the [[Global Mobile Suppliers Association]] reported that over 100 operators had deployed/launched either NB-IoT or LTE-M networks.<ref>GSA: [https://gsacom.com/paper/global-narrowband-iot-lte-m-networks-march-2019/ Global Narrowband IoT – LTE-M networks – March 2019] (retrieved 25 March 2019)</ref>
+
+== 3GPP Narrowband Cellular Standards ==
+{{3GPP LPWA IoT}}
+
+== Deployments ==
+As of March 2019 the [[Global Mobile Suppliers Association]] had identified:<ref>GSA: [https://gsacom.com/paper/global-narrowband-iot-lte-m-networks-march-2019/ Global Narrowband IoT – LTE-M networks – March 2019] (retrieved 25 March 2019)</ref>
+* 60 operators in 35 countries investing in LTE-M networks
+* 34 of those operators in 24 countries had deployed/launched their networks
+
+== See also ==
+* [[LPWAN]]
+* [[6LoWPAN]]
+* [[Sigfox]]
+* [[LoRa]] / LoRaWAN
+* [[NB-Fi]]
+* [[Weightless (wireless communications)|Weightless]]
+* [[DASH7]]
+* [[E-UTRA#UE Category|LTE User Equipment Categories]]
+* [[Multefire]]
+* [[LTE sidelink]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.3gpp.org/news-events/3gpp-news/1805-iot_r14 Standards for the IoT]
+
+{{Mobile telecommunications standards}}
+{{Mobile phones}}
+{{network-stub}}
+
+[[Category:Internet of things]]
+[[Category:LTE (telecommunication)]]
+[[Category:Mobile technology]]

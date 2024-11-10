@@ -1,0 +1,25 @@
+'''Never-Ending Language Learning''' system ('''NELL''') is a [[Semantics|semantic]] [[machine learning]] [[Computer system|system]] developed by a research team at [[Carnegie Mellon University]], and supported by grants from [[DARPA]], [[Google]], [[National Science Foundation|NSF]], and [[CNPq]] with portions of the system running on a [[Supercomputer|supercomputing]] [[Computer cluster|cluster]] provided by [[Yahoo!]].<ref name=NYT2010>{{cite news |author= |coauthors= |title=Aiming to Learn as We Do, a Machine Teaches Itself |url=https://www.nytimes.com/2010/10/05/science/05compute.html?hpw=&pagewanted=all |quote=Since the start of the year, a team of researchers at Carnegie Mellon University — supported by grants from the Defense Advanced Research Projects Agency and Google, and tapping into a research supercomputing cluster provided by Yahoo — has been fine-tuning a computer system that is trying to master semantics by learning more like a human.  |work=[[New York Times]] |date=October 4, 2010 |accessdate=2010-10-05 }}</ref>
+
+==Process and goals==
+NELL was programmed by its developers to be able to identify a basic set of fundamental semantic relationships between a few hundred predefined categories of data, such as cities, companies, emotions and sports teams. Since the beginning of 2010, the Carnegie Mellon research team has been running NELL around the clock, sifting through hundreds of millions of web pages looking for connections between the information it already knows and what it finds through its search process &ndash; to make new connections in a manner that is intended to mimic the way humans learn new information.<ref>[http://rtw.ml.cmu.edu/rtw/overview Project Overview], [[Carnegie Mellon University]]. Accessed October 5, 2010.</ref> For example, in encountering the word pair "Pikes Peak", NELL would notice that both words are capitalized and deduce from the second word that it was the name of a mountain, and then build on the relationship of words surrounding those two words to deduce other connections.<ref name=NYT2010/>
+
+The goal of NELL and other semantic learning systems, such as [[IBM]]'s [[Watson (artificial intelligence software)|Watson]] system, is to be able to develop means of answering questions posed by users in natural language with no human intervention in the process.<ref>Trader, Tiffany. [http://www.hpcwire.com/news/Machine-Learns-Language-Starting-with-the-Facts-104384244.html "Machine Learns Language Starting with the Facts"], HPCwire, October 5, 2010. Accessed October 5, 2010.</ref> [[Oren Etzioni]] of the [[University of Washington]] lauded the system's "continuous learning, as if NELL is exercising curiosity on its own, with little human help".<ref name=NYT2010/>
+
+By October 2010, NELL has doubled the number of relationships it has available in its knowledge base and has learned 440,000 new facts, with an accuracy of 87%.<ref>[http://rtw.ml.cmu.edu/rtw/ "NELL: Never-Ending Language Learning"], [[Carnegie Mellon University]]. Accessed October 5, 2010.</ref><ref name=NYT2010/> Team leader [[Tom M. Mitchell]], chairman of the machine learning department at Carnegie Mellon described how NELL "self-corrects when it has more information, as it learns more", though it does sometimes arrive at incorrect conclusions. Accumulated errors, such as the deduction that [[HTTP cookie|Internet cookies]] were a kind of baked good, led NELL to deduce from the phrases "I deleted my Internet cookies" and "I deleted my files" that "[[computer file]]s" also belonged in the baked goods category.<ref>VanHemert, Kyle. [http://www.gizmodo.com.au/2010/10/right-now-a-computer-is-reading-online-teaching-itself-language/ "Right Now A Computer Is Reading Online, Teaching Itself Language"], [[Gizmodo]], October 6, 2010. Accessed October 5, 2010.</ref> Clear errors like these are corrected every few weeks by the members of the research team and the system is allowed to continue its learning process.<ref name=NYT2010/>
+
+==See also ==
+* [[Cognitive architecture]]
+* [[Computational models of language acquisition]]
+* [[Cyc]]
+* [[Darwin among the Machines]]
+* [[The Adolescence of P-1]]
+*[[Never-Ending Image Learner]]<ref>https://www.bbc.com/news/technology-25090534</ref>
+
+==References==
+{{reflist}}
+
+== External links ==
+*[http://rtw.ml.cmu.edu/rtw/ Project homepage]
+
+[[Category:Natural language processing software]]
+[[Category:Data mining and machine learning software]]

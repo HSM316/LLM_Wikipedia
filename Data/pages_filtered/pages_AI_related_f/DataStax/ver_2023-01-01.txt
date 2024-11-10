@@ -1,0 +1,31 @@
+DataStax, Inc. is a real-time data company based in Santa Clara, California. Its product Astra DB is a cloud database-as-a-service based on Apache Cassandra. DataStax also offers DataStax Enterprise (DSE), an on-premises database built on Apache Cassandra, and Astra Streaming, a messaging and event streaming cloud service based on Apache Pulsar. As of June 2022, the company has roughly 800 customers distributed in over 50 countries.
+
+History
+DataStax was built on the open source NoSQL database Apache Cassandra. Cassandra was initially developed internally at Facebook to handle large data sets across multiple servers, and was released as an Apache open source project in 2008. In 2010, Jonathan Ellis and Matt Pfeil left Rackspace, where they had worked with Cassandra, to launch Riptano in Austin, Texas. Ellis and Pfeil later renamed the company DataStax, and moved its headquarters to Santa Clara, California.
+
+The company went on to create its own enterprise version of Cassandra, a NoSQL database called DataStax Enterprise (DSE). Version 1.0, released in October 2011, was the first commercial distribution of the Cassandra database, designed to provide real-time application performance and heavy analytics on the same physical infrastructure. It grew to include advanced security controls, graph database models, operational analytics and advanced search capabilities.
+
+In September 2014, DataStax raised  in a Series E funding round, raising the total investment in the company to . On June 15, 2022, the company announced it had raised an additional , at a  valuation.
+
+In April 2016, the company announced the release of DataStax Enterprise Graph, adding graph data model functionality to DSE.
+
+In March 2017, DataStax announced the release of its DSE platform 5.1, which included improved search capabilities, improved security control, improvements to its Graph data management and improvements to operational analytics performance. DataStax also announced a shift in strategy, with an added focus on customer experience applications. Rather than a new set of technologies, the company started to offer advice on best practice to users of its core DSE platform. 
+
+In April 2018, DataStax released DSE 6, with the new version focused on businesses using a hybrid cloud computing model, with all the benefits of a distributed cloud database on any public cloud or on-premise, twice the responsiveness and ability to handle twice the throughput.
+
+In December 2018, DataStax released DSE 6.7, which offers enterprise customers five key new feature upgrades, including: improved analytics, geospatial search, improved data protection in the cloud, enhanced performance insights and new developer integration tools with our Apache Kafka Connector and certified production Docker images.
+
+In 2019, Chet Kapoor was named the company's new CEO, taking over from Billy Bosworth.
+
+Original logo
+
+In April 2020, DataStax released DSE 6.8, offering enterprises new capabilities for bare-metal performance and to support more workloads, and serving as a Kubernetes operator for Cassandra. In May 2020, DataStax released Astra DB, a DBaaS for Cassandra applications. It is available on cloud services such as Microsoft Azure, Amazon Web Services, and Google Cloud Platform. In February 2021, DataStax announced the serverless version of Astra DB, offering developers pay-as-you-go data.
+
+In November 2020, DataStax released K8ssandra, an open source distribution of Cassandra on Kubernetes. In December 2020, DataStax released Stargate, an open source data API gateway. 
+
+In 2020, Mergermarket reported that DataStax was preparing for an initial public offering that could launch in 2021. However, in June 2022, DataStax CEO Chet Kapoor said that the company would not rush into an IPO.
+
+In March 2022, DataStax introduced new change data capture (CDC) capabilities to its Astra DB cloud service. Astra DB CDC is powered by Apache Pulsar, which allows developers to manage operational and streaming data in one place. DataStax leads the open-source Starlight, 
+which provides a compatibility layer for different protocols on top of Apache Pulsar.
+
+After acquiring streaming event vendor Kesque in January 2021, the company launched Luna Streaming, a data streaming platform for Apache Pulsar. DataStax then rebuilt the Kesque technology into Astra Streaming. The Astra Streaming cloud service moved out of beta on June 29, 2022. With the release, the company added API-level support for messaging tools Apache Kafka, RabbitMQ and Java Message Service, in addition to Apache Pulsar. Astra Streaming can connect to a larger data platform by utilizing DataStax’s Astra DB cloud service.

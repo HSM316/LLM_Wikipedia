@@ -1,0 +1,51 @@
+{{Taxobox
+| fossil_range = {{Geological range|522|510|Lower Cambrian}}
+| image = Weymouthia_nobilis_linedrawing.jpg
+| image_upright = 0.4
+| image_caption = Llinedrawing of ''Weymouthia nobilis''
+| regnum = [[Animal]]ia
+| phylum = [[Arthropod]]a
+| classis = [[Trilobita]]
+| ordo = [[Agnostida]]
+| familia = [[Weymouthiidae]]
+| genus = '''''Weymouthia'''''
+| genus_authority = Raymond, 1913
+| type_species = ''Agnostus nobilis'' 
+| type_species_authority = Ford, 1872
+| subdivision_ranks = [[Species]]
+| subdivision = 
+* ''Weymouthia nobilis'' <small>(Ford, 1872) ([[Synonym (taxonomy)|
+syn.]]''Agnostus nobilis''</small> <!---
+* ''Weymouthia nobilis'' <small>(Cobbold, 1931, non Ford)</small> is mentioned by the Global Names Index --->
+* ''Weymouthia caudata'' <small>(Delgado, 1904) (syn. ''Delgadella souzai caudata'')</small> 
+* ''Weymouthia emerici'' <small>Czarnocki</small>
+* ''Weymouthia minor'' <small>Egorova, 1961</small>
+* ''Weymouthia tchernyshevae'' <small>Egorova, 1961</small>
+}}
+
+'''''Weymouthia''''' is an [[extinct]] [[genus]] of [[Eodiscina|eodiscinid]] [[agnostid]] [[trilobite]]s, which lived at the end of the [[Lower Cambrian]], in what are now the eastern United States, England, Siberia and China.
+
+== Description ==
+Like all Agnostida, ''Weymouthia'' is diminutive and the headshield (or [[Cephalon (arthropod head)#Trilobites|cephalon]]) and tailshield (or [[pygidium]]) are of approximately the same size (or [[Pygidium#Trilobites|isopygous]]) and outline. Like all Weymouthiidae, ''Weymouthia'' lacks eyes and rupture lines (or [[Trilobite#Dorsal sutures|sutures]]). The headshield (or [[Trilobite#Cephalon|cephalon]]) is approximately as long as wide, lacks facial sutures and is eyeless. The tailshield (or [[Trilobite#Pygidium|pygidium]]) is about 1.2× as wide as long. Both are effaced except for a furrow close to their borders. The cephalic border bears lateral tubercles. The thorax consists of three segments.<ref name="Treatise">WHITTINGTON, H. B. ''et al''. Part O, Treatise on Invertebrate Paleontology. Revised, Volume 1 – Trilobita – Introduction, Order Agnostida, Order Redlichiida. 1997</ref>
+
+== Etymology ==
+''Weymouthia'' is named after [[Weymouth, Massachusetts]].<ref>{{cite web|url= http://www.weymouth.ma.us/index.php/history/historic-timeline/|accessdate= 3 December 2012|title= Weymouth, MA, history}}</ref>
+
+== Distribution ==
+* ''W. nobilis'' occurs in the Lower Cambrian of Massachusetts (Hoppin Slate, North Attleboro), and of the United Kingdom (Comley Quarry, Comley, 52.6° N, 2.8° W).<ref>{{cite journal|last= HINZ|first= I.|year= 1987|title= The Lower Cambrian microfauna of Comley and Rushton, Shropshire, England|journal= Palaeontographica Abteilung A|volume= 198|issue=1–3|pages= 41–100}} cited in {{cite web|title= ''Weymouthia nobilis''|author= Paleobiology Database|url=http://paleodb.org/cgi-bin/bridge.pl?a=basicCollectionSearch&collection_no=79928}}</ref>
+
+== Remarks ==
+Fletcher & Theokritoff (2008) <ref>FLETCHER, T. P. & THEOKRITOFF, G., 2008. The Early Cambrian of eastern Massachusetts. Northeastern Geology and Environmental Science, 30, 301-329.</ref> designated Shaw’s (1950, pl. 79, fig. 24) <ref>SHAW, A. B., 1950. A revision of several Early Cambrian trilobites from eastern Massachusetts. ''Journal of Paleontology'', '''24''', 577-590.</ref> specimen of “ ''Weymouthia nobilis'' (Ford, 1872)” <ref>FORD, S. W., 1872. Descriptions of some new species of primordial fossils. ''American Journal of Science, Series 3'', '''3''', pp. 419-422.</ref> as the holotype of a new species, ''Serrodiscus weymouthioides'', and considered ''Runcinodiscus'' Rushton (in Bassett ''et al''., 1976) <ref>BASSETT M. G., OWENS R. M., and RUSHTON A. W. A. 1976. Lower Cambrian fossils from the Hell’s Mouth Grits, ''Journal of the Geological Society'', '''132''' (6): 623 – 644.</ref> [= ?''Weymouthia nobilis'' (Ford, 1872)] to be a junior synonym of ''Serrodiscus''; Rushton (1976) had previously regarded ''Weymouthia'' and ''Runcinodiscus'' as closely allied with ''Serrodiscus''. ''Weymouthia nobilis'' (Ford 1872), first described from the Taconic region of New York State, is also recorded from the ''Protolenus'' Limestone (Ac5) [Protolenid-Strenuellid Zone] at Comley, Shropshire, England (Cobbold 1931),<ref>COBBOLD, E. S. 1931: Additional fossils from the cambrian rocks of Comley, Shropshire. ''Q. J. Geo/. Soc. Lond.'' '''87''', pp. 459 - 511</ref> but Rushton (in Bassett ''et al''., 1976, p.&nbsp;637) showed that the English specimens are specifically distinct from ''W. nobilis'' as described by Ford (1872), and thus erected his new genus and species, ''Runcinodiscus index'' Rushton (in Bassett ''et al''. 1976, p.&nbsp;636-7).
+
+== References ==
+{{Reflist}}
+
+{{Taxonbar|from=Q7990395}}
+
+[[Category:Weymouthiidae]]
+[[Category:Agnostida genera]]
+[[Category:Cambrian trilobites]]
+[[Category:Cambrian trilobites of Europe]]
+
+
+{{agnostida-stub}}

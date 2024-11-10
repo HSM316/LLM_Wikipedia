@@ -1,0 +1,86 @@
+{{Short description|Data science software}}
+{{Infobox software
+| name = KNIME
+| logo = KNIMELogoTM.svg
+| screenshot = 
+| caption = Open for Innovation
+| latest release version = 5.3
+| latest release date = July 10, 2024<ref name="latest-version">{{cite web |url=https://www.knime.com/blog/whats-new-knime-analytics-platform-53 |title=What's New in KNIME Analytics Platform 5.3 |website=knime.com }}</ref>
+| developer = KNIME
+| programming language = [[Java (programming language)|Java]]
+| operating system = [[Linux]], [[macOS]], [[Microsoft Windows|Windows]]
+| language = English
+| genre = [[Guided Analytics]] / [[Financial reporting|Enterprise Reporting]] / [[Business Intelligence]] / [[Data Mining]]/ [[Deep Learning]] / [[Data Analysis]] / [[Text mining|Text Mining]] / [[Big Data]]
+| license = [[GNU General Public License]]
+| website = {{URL|http://www.knime.com/}}
+}}
+
+'''KNIME''' ({{IPAc-en|n|aɪ|m|audio=en-us-KNIME.oga}}), the '''Konstanz Information Miner''',<ref>{{cite journal |last1=Berthold |first1=Michael R. |last2=Cebron |first2=Nicolas |last3=Dill |first3=Fabian |last4=Gabriel |first4=Thomas R. |last5=Kötter |first5=Tobias |last6=Meinl |first6=Thorsten |last7=Ohl |first7=Peter |last8=Thiel |first8=Kilian |last9=Wiswedel |first9=Bernd |title=KNIME - the Konstanz information miner |journal=ACM SIGKDD Explorations Newsletter |date=16 November 2009 |volume=11 |issue=1 |pages=26 |doi=10.1145/1656274.1656280|s2cid=408188 |url=http://centaur.reading.ac.uk/6139/1/2006_DiFatta06-MASS-ISC.pdf }}</ref> is a [[free and open-source software|free and open-source]] [[Analytics|data analytics]], reporting and integration platform. KNIME integrates various components for [[machine learning]] and [[data mining]] through its modular data pipelining "Building Blocks of Analytics" concept. A [[graphical user interface]] and use of [[Java Database Connectivity|JDBC]] allows assembly of nodes blending different data sources, including preprocessing ([[Extract, transform, load|ETL: Extraction, Transformation, Loading]]), for modeling, data analysis and visualization without, or with minimal, programming.{{Citation needed|date=May 2024}}
+
+Since 2006, KNIME has been used in pharmaceutical research,<ref>{{cite journal |first1=Abhishek |last1=Tiwari |first2=Arvind K.T. |last2=Sekhar |title=Workflow based framework for life science informatics |journal=Computational Biology and Chemistry |volume=31 |issue=5–6 |pages=305–319 |date=October 2007 |doi=10.1016/j.compbiolchem.2007.08.009 |pmid=17931570 }}</ref> and in other areas including [[Customer-relationship management|CRM]] customer data analysis, [[business intelligence]], text mining and financial data analysis. Recently, attempts were made to use KNIME as robotic process automation (RPA) tool.<ref>{{cite web |url=https://www.airslate.com/bot/explore/knime-analytics-platform-bot |title=KNIME Analytics Platform Bot}},</ref>{{When|date=May 2024}}
+
+KNIME's headquarters are based in Zurich, with additional offices in Konstanz, Berlin, and Austin (USA).{{Citation needed|date=May 2024}}
+
+==History==
+Development of KNIME began in January 2004, with a team of software engineers at the [[University of Konstanz]], as an open-source platform. The original team, headed by [[Michael Berthold]], came from a Silicon Valley pharmaceutical industry software company. The initial goal was to create a modular, highly scalable and open data processing platform that allowed for the easy integration of different data loading, processing, transformation, analysis and visual exploration modules, without focus on any particular application area. The platform was intended to be a collaboration and research platform and also serve as an integration platform for various other data analysis projects.<ref>{{cite web |url=https://www.knime.com/open-for-innovation |title=Open for Innovation |website=KNIME.com }}</ref>
+
+In 2006, the first version of KNIME was released. Several pharmaceutical companies started using KNIME, and a number of life science software vendors began integrating their tools into the platform.<ref>[http://www.tripos.com/knime Tripos, Inc.] {{webarchive|url=https://web.archive.org/web/20110717104252/http://www.tripos.com/knime/ |date=2011-07-17 }}</ref><ref>[http://www.schrodinger.com/ProductDescription.php?mID=6&sID=33&cID=0 Schrödinger] {{webarchive|url=https://web.archive.org/web/20090925095936/http://www.schrodinger.com/ProductDescription.php?mID=6&sID=33&cID=0 |date=2009-09-25 }}</ref><ref>[http://www.infocom.co.jp/bio/develop/jchemextension_en.html ChemAxon] {{webarchive|url=https://web.archive.org/web/20110717125630/http://www.infocom.co.jp/bio/develop/jchemextension_en.html |date=2011-07-17 }}</ref><ref>[http://enalosplus.novamechanics.com/ NovaMechanics Ltd.]</ref><ref>[http://www.treweren.com/ Treweren Consultants]</ref> Later that year, after an article in the German magazine ''[[c't]]'',<ref>Datenbank-Mosaik Data Mining oder die Kunst, sich aus Millionen Datensätzen ein Bild zu machen, c't 20/2006, S. 164ff, Heise Verlag.</ref> users from a number of other areas<ref>[http://tech.knime.org/forum Forum auf der KNIME Webseite]</ref><ref>{{Cite web |url=http://www.pervasivedatarush.com/products/Pages/DataRushforKnime.aspx |title=Pervasive |access-date=2010-12-07 |archive-url=https://web.archive.org/web/20100829035639/http://www.pervasivedatarush.com/products/Pages/DataRushforKnime.aspx |archive-date=2010-08-29 |url-status=dead }}</ref> joined ship. As of 2012, KNIME is in use by over 15,000 actual users (i.e. not counting downloads, but users regularly retrieving updates) in the life sciences and at banks, publishers, car manufacturer, telcos, consulting firms, and various other industries, and a large number of research groups, worldwide.{{Citation needed|date=May 2024}}{{Update span|date=May 2024}} Latest updates to KNIME Server and KNIME Big Data Extensions, provide support for Apache Spark 2.3, Parquet and HDFS-type storage.{{Citation needed|date=May 2024}}
+
+For the sixth year in a row, KNIME has been placed as a leader for Data Science and Machine Learning Platforms in Gartner's [[Magic Quadrant]].{{Citation needed|date=May 2024}}{{Which year?|date=May 2024}}
+[[File:Knime_5.2_GUI.png|thumb|A screenshot of KNIME|250px|right]]
+
+
+== Design Philosophy and Features ==
+These are the design principles and features that KNIME software follows:<ref>Berthold, Michael R., et al. "KNIME-the Konstanz information miner: version 2.0 and beyond." AcM SIGKDD explorations Newsletter 11.1 (2009): 26-31.</ref>
+
+*''' Visual, Interactive Framework''': KNIME Software prioritizes a [[Usability|user-friendly]] and intuitive approach to data analysis. This is achieved through a [[Visual programming language|visual]] and interactive framework where data flows can be combined using a [[drag-and-drop]] interface. Users can develop customized and interactive applications by creating simple to advanced and highly-automated data [[Pipeline (computing)|pipelines]]. These may include, for example, access to [[database]]s, [[machine learning]] libraries, logic for workflow control (e.g., loops, switches, etc.), abstraction (e.g., interactive [[Widget toolkit|widget]]s), invocation, dynamic data apps, integrated deployment, or error handling.
+*''' Modularity''': processing units and data containers should remain independent of each other. This design choice enables easy distribution of computation and allows for the independent development of different [[algorithm]]s. [[Data type]]s within KNIME are [[Encapsulation (computer programming)|encapsulated]], meaning no types are predefined. This design choice facilitates the addition of new data types and their integration with existing ones, bringing along type-specific renderers and comparators. Additionally, this principle enables the inspection of results at the end of each single data operation.
+*'''Extensibility''': KNIME Software is designed to be [[Extensibility|extensible]]. Adding new processing nodes or views is made simple through a [[Plug-in (computing)|plugin mechanism]]. This mechanism ensures that users can distribute their custom functionalities without the need for complicated install or uninstall procedures. 
+*'''Interleaving No-Code with Code''': the platform supports the integration of both [[visual programming]] ([[no-code]]) and script-based programming (e.g., [[Python (programming language)|Python]], [[R (programming language)|R]], [[JavaScript (programming language)|Javascript]]) approaches to data analysis. This design principle is referred to as [[low-code]].
+* '''Automation and Scalability''': for example, the use of parameterization via flow variables, or the encapsulation of workflow segments in components contribute to reduce manual work and errors in analyses. Additionally, the scheduling of workflow execution (available in KNIME Business Hub and KNIME Community Hub for Teams) reduces dependency on human resources. In terms of scalability, a few examples include the ability to handle large [[dataset]]s (millions of rows), execute multiple processes simultaneously out of the box and reuse workflow segments. 
+
+* '''Full Usability''': due to the [[open source]] nature, KNIME Analytics Platform provides free full usability with no limited trial periods.
+
+==Internals==
+KNIME allows users to visually create data flows (or pipelines), selectively execute some or all analysis steps, and later inspect the results, models, using interactive widgets and views. KNIME is written in Java and based on [[Eclipse (software)|Eclipse]]. It makes use of an extension mechanism to add plugins providing additional functionality. The core version includes hundreds of modules for data integration (file I/O, database nodes supporting all common database management systems through JDBC or native connectors: SQLite, MS-Access, SQL Server, MySQL, Oracle, PostgreSQL, Vertica and H2), data transformation (filter, converter, splitter, combiner, joiner), and the commonly used methods of statistics, data mining, analysis and text analytics. Visualization is supported with the Report Designer extension. KNIME workflows can be used as data sets to create report templates that can be exported to document formats such as doc, ppt, xls, pdf and others. Other capabilities of KNIME are:
+* KNIMEs core-architecture allows processing of large data volumes that are only limited by the available hard disk space (not limited to the available RAM). E.g. KNIME allows analysis of 300 million customer addresses, 20 million cell images and 10 million molecular structures.
+* Additional plugins allow the integration of methods for [[text mining]], image mining, as well as time series analysis and network.
+* KNIME integrates various other open-source projects, e.g., machine learning algorithms from [[Weka (machine learning)|Weka]], [[H2O.ai]], [[Keras]], [[Apache Spark|Spark]], the [[R (programming language)|R project]] and [[LIBSVM]]; as well as [[plotly]], [[JFreeChart]], [[ImageJ]], and the [[Chemistry Development Kit]].<ref>{{Cite journal | last1 = Beisken | first1 = S. | last2 = Meinl | first2 = T. | last3 = Wiswedel | first3 = B. | last4 = De Figueiredo | first4 = L. F. | last5 = Berthold | first5 = M. | last6 = Steinbeck | first6 = C. | doi = 10.1186/1471-2105-14-257 | title = KNIME-CDK: Workflow-driven Cheminformatics | journal = BMC Bioinformatics | volume = 14 | pages = 257 | year = 2013 | pmid   =24103053| pmc = 3765822 | doi-access = free }}</ref>
+
+KNIME is implemented in [[Java (software platform)|Java]], allows for wrappers calling other code, in addition to providing nodes that allow it to run [[Java (programming language)|Java]], [[Python (programming language)|Python]], [[R (programming language)|R]], [[Ruby (programming language)|Ruby]] and other code fragments.{{Citation needed|date=May 2024}}
+
+==License==
+In 2024, KNIME version version 5.3 is released under the same GPLv3 license as previous versions.<ref>
+{{cite web
+	| url = https://www.knime.com/downloads/full-license
+	| title = KNIME 5.3 License Terms and Conditions
+	| date = 2024-08-03
+}}
+</ref> 
+As of version 2.1, KNIME is released under the [[GNU General Public License|GPLv3]] license, with an exception that allows others to use the well-defined node API to add proprietary extensions.<ref>[http://knime.org/blog/knime-210-released KNIME 2.1.0 released] {{webarchive|url=https://web.archive.org/web/20100417223831/http://knime.org/blog/knime-210-released |date=2010-04-17 }}</ref>{{Update span|date=May 2024}} This allows commercial software vendors to add wrappers calling their tools from KNIME.
+
+==KNIME Courses==
+KNIME allows the performance of data analysis without programming skills. Two lines of online courses are provided, based on Data Wrangling and Data Science.<ref>[https://www.knime.com/about/news/navigate-the-new-learning-path-now-also-with-self-paced-courses the new learning path]{{Dead link|date=March 2023|bot=InternetArchiveBot|fix-attempted=yes}}</ref>
+
+== See also ==
+* [[Weka (machine learning)|Weka]] – machine-learning algorithms that can be integrated in KNIME
+* [[ELKI]] – data mining framework with many clustering algorithms
+* [[Keras]] - neural network library
+* [[Orange (software)|Orange]] - an open-source data visualization, machine learning and data mining toolkit with a similar visual programming front-end
+* [[List of free and open-source software packages]]
+
+==References==
+<references />
+
+==External links==
+* [http://www.knime.org KNIME Homepage]
+*[http://hub.knime.com/ KNIME Hub] - Official community platform to search and find nodes, components, workflows and collaborate on new solutions
+* [https://nodepit.com/ Nodepit] - KNIME node collection supporting versioning and node installation
+
+{{DEFAULTSORT:Knime}}
+[[Category:Data mining and machine learning software]]
+[[Category:Extract, transform, load tools]]
+[[Category:Free bioinformatics software]]
+[[Category:Free software programmed in Java (programming language)]]
+[[Category:Free software projects]]
+[[Category:Image processing software]]

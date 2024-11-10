@@ -1,0 +1,28 @@
+{{distinguish|ImageNet}}
+{{Multiple issues|
+{{Orphan|date=September 2022}}
+{{notability|date=November 2012}}
+}}
+
+[[File:ImageNet Designer.png|thumbnail|right|ImageNet Designer]]
+
+'''ImageNets''' is an [[open source]] framework for rapid prototyping of [[machine vision]] algorithms, developed by the Institute of Automation.
+
+== Description ==
+ImageNets is an [[open source]] and platform independent (Windows & Linux) framework for rapid prototyping of [[machine vision]] algorithms. With the [[GUI]] [[ImageNet Designer]], no programming knowledge is required to perform operations on images. A configured ImageNet can be loaded and executed from C++ code without the need for loading the ImageNet Designer GUI to achieve higher execution performance.<ref name=ImageNets_Leer2012 />
+
+== History ==
+ImageNets was developed by the Institute of Automation, [[University of Bremen]], Germany. The software was first publicly released in 2010. Originally, ImageNets was developed for the [[Care-Providing Robot FRIEND]]<ref name=ImageNets_Leer2012>{{cite book|author=Lange, U., Kampe, H. Gräser, A.|title=Fast Development of a Robust Calibration Method for Service Robot FRIEND using ImageNets|year=2012|publisher=Shaker|location=Germany|isbn=978-3-8440-1322-1|pages=25–36|url=http://www.iat.uni-bremen.de/sixcms/media.php/81/ImageNets_4.pdf}}</ref> but it can be used for a wide range of computer vision applications.
+
+== References ==
+{{reflist}}
+
+==External links==
+* [http://imagenets.sourceforge.net/ ImageNets homepage]
+** [http://sourceforge.net/projects/imagenets/files/ Download ImageNets]
+{{Computer vision footer}}
+{{Image_Processing Software}}
+
+{{DEFAULTSORT:ImageNets}}
+[[Category:Computer vision software]]
+[[Category:Learning in computer vision]]

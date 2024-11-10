@@ -1,0 +1,28 @@
+{{Short description|Video game technology by Bethesda Softworks}}
+{{Update|date=January 2024}}
+The '''Radiant AI''' is a technology developed by [[Bethesda Softworks]] for ''[[The Elder Scrolls]]'' video games. It allows [[non-player character]]s (NPCs) to make choices and engage in behaviors more complex than in past titles. The technology was developed for ''[[The Elder Scrolls IV: Oblivion]]'' and expanded in ''[[The Elder Scrolls V: Skyrim]]''; it is also used in ''[[Fallout 3]]'', ''[[Fallout: New Vegas]]'' and ''[[Fallout 4]]'', also published by Bethesda, with ''3'' and ''4'' being developed by them as well.<ref name="gameinformer">{{cite web| url=http://www.gameinformer.com/games/the_elder_scrolls_v_skyrim/b/xbox360/archive/2011/01/17/the-technology-behind-elder-scrolls-v-skyrim.aspx| archive-url=https://web.archive.org/web/20110120063715/http://www.gameinformer.com/games/the_elder_scrolls_v_skyrim/b/xbox360/archive/2011/01/17/the-technology-behind-elder-scrolls-v-skyrim.aspx| url-status=dead| archive-date=January 20, 2011| title=The Technology Behind The Elder Scrolls V: Skyrim| date=2011-01-17| publisher=[[Game Informer]]
+| accessdate=2012-01-29}}</ref><ref>{{cite web| url=http://kotaku.com/5022866/cannabalism-slavery-and-sex-in-fallout-3| title=Cannabalism, Slavery and Sex in Fallout 3| date=2008-07-08| publisher=[[Kotaku]]| quote=''Like Oblivion, we use our Radiant AI system, so most of the NPCs eat, sleep, work, etc''| accessdate=2012-01-29}}</ref>
+
+==Technology==
+The Radiant AI technology, as it evolved in its iteration developed for ''Skyrim'', comprises two parts:<ref name="gameinformer" />
+
+===Radiant AI===
+The Radiant AI system deals with NPC interactions and behavior. It allows non-player characters to dynamically react to and interact with the world around them.<ref name="GCHRON">{{cite web|url=http://www.gamechronicles.com/qa/elderscrolls4/oblivion.htm |title=Developers Corner: The Elder Scrolls IV: Oblivion |first=Mat |last=Houghton |publisher=Game Chronicles |accessdate=2007-08-11}}</ref> General goals, such as "Eat in this location at 2pm" are given to NPCs, and NPCs are left to determine how to achieve them.<ref name="GNEXT">{{cite web|url=http://www.gamingnexus.com/Article/Elder-Scrolls-IV-Oblivion-Interview/Item859.aspx |title=Elder Scrolls IV: Oblivion Interview |first=Charles |last=Husemann |date=2005-06-02 |accessdate=2007-08-11 |publisher=Gaming Nexus}}</ref> The absence of individual scripting for each character allows for the construction of a world on a much larger scale than other games had developed, and aids in the creation of what [[Todd Howard (video game designer)|Todd Howard]] described as an "organic feel" for the game.<ref name="GCHRON"/><ref>{{cite web | url=http://www.brighthub.com/video-games/pc/articles/116302.aspx#secn_3
+| title=What's new in Skyrim: New Radiant AI and Radiant Story | date=2011-04-18 | publisher=[[Bright Hub]] | quote=''"The other thing it does is give the game a more organic feel than scripting could. NPC’s won’t always be standing there doing the exact same thing at the same time. The fact that your experience and what’s going on in the world around you in your game is a bit different than other people is pretty cool. The conversations you’ll overhear and subsequent quests you’ll be able to get as a result will vary. It makes the world feel much more realistic and alive."''
+| accessdate=2012-01-29}}</ref>
+
+===Radiant Story===
+The Radiant Story system deals with how the game itself reacts to the player behavior, such as the creation of new dynamic [[Quest (video gaming)|quests]].<ref name="gameinformer"/> Dynamically generated quests are placed by the game in locations the player hasn't visited yet and are related to earlier adventures.<ref name="VentureBeat">{{cite web | url=https://venturebeat.com/2012/01/27/bethesdas-nesmith-reflects-on-the-difficult-birth-of-skyrims-radiant-story-system/ | title=Bethesda's Nesmith reflects on the difficult birth of Skyrim's 'Radiant Story' system | date=2012-01-27 | publisher=[[VentureBeat]] | accessdate=2012-01-29}}</ref><ref>{{cite web | url=http://uk.xbox360.ign.com/articles/116/1164074p1.html | title=Five Changes from Oblivion to Skyrim | date=2011-04-26 | publisher=[[IGN]] | quote=''"We can use it for miscellaneous quests, you go into town, you want to make friends with somebody, we'll generate a little quest for him that seems simple and that it's ok to go through the radiant story system. For a bigger quest, we want somebody who you're enemies with. We want to use him in that quest in some way. We'll pick the closest person who hates the player. He fills in that role."''
+| accessdate=2012-01-29}}</ref><ref>{{cite web | url=http://uk.pc.gamespy.com/pc/elder-scrolls-v/1217754p1.html | title=Is Skyrim's AI Storytelling the Future of Gaming? | date=2012-02-01 | publisher=[[GameSpy]] | quote=''To add meaning -- and perhaps drama -- the system determines which NPC should be captured by examining your character's history and picking an NPC that you've actually had a relationship with in the past.''
+| accessdate=2012-01-29}}</ref>
+
+==References==
+{{Reflist|2}}
+
+{{The Elder Scrolls}}
+
+[[Category:Game artificial intelligence]]
+[[Category:The Elder Scrolls]]
+[[Category:Fallout (franchise)]]
+
+{{AI-stub}}

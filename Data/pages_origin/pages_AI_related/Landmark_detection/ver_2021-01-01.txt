@@ -1,0 +1,46 @@
+{{Multiple issues|
+{{expert-subject|date=December 2010}}
+{{cleanup|date=December 2010}}
+}}
+
+there are several [[algorithm]]s for locating [[landmark]]s in images such as [[satellite map]]s, [[medical image]]s etc.<br />
+nowadays [[evolutionary algorithm]]s such as [[particle swarm optimization]] are so useful to perform this task. evolutionary algorithms generally have two phase, training and test.
+
+in the training phase, we try to learn the algorithm to locate landmark correctly. this phase performs in some [[iteration]]s and finally in the last iteration we hope to obtain a system that can locate the landmark, correctly. in the particle swarm optimization there are some [[particle]]s that search for the landmark. each particle uses a specific [[formula]] in each iteration to optimizes the landmark detecting.
+
+The fundamental particle swarm optimization algorithm used in training phase generally as follows:
+
+Randomly initialise 100 individuals in the [[Mathematical optimization#Optimization problems|search space]] in the range [-1,1]<br />
+LOOP UNTIL 100 iterations performed OR detection error of gbest is 0%<br />
+FOR each particle p<br />
+Detection errors at x = 0<br />
+FOR each image i in training set<br />
+FOR each pixel coordinate c in i<br />
+Evaluate x of p on visual features at c<br />
+IF evaluation is highest so far for i THEN<br />
+Detected position in i = c<br />
+IF distance between detected position and marked-up position > 2mm THEN<br />
+Detection errors at x = Detection errors at x + 1<br />
+Fitness of p at x = 1- ( Detection errors at x /Total no. of images in training set)<br />
+IF new _tness of p at x > previous _tness of p at pbest THEN<br />
+pbest _tness of p = new _tness of p at x<br />
+pbest position of p = x of p
+
+IF new _tness of p at x > previous gbest _tness THEN<br />
+gbest _tness = new _tness of p at x<br />
+gbest position of p = x of p<br />
+FOR each particle p<br />
+Calculate v of p<br />
+IF magnitude of v > v max THEN<br />
+Magnitude of v = v max<br />
+Move x of p to next position using v<br />
+IF x of p outside [-1,1] range THEN<br />
+x of p = -1 or 1 as appropriate<br />
+REPEAT<br />
+Output gbest of last iteration as trained detector d
+
+== References ==
+<!--- See [[Wikipedia:Footnotes]] on how to create references using <ref></ref> tags which will then appear here automatically -->
+https://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.72.3218
+
+[[Category:Evolutionary algorithms]]

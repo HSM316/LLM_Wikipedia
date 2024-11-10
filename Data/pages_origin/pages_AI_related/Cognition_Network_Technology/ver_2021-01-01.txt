@@ -1,0 +1,41 @@
+{{refimprove|date=January 2015}}
+
+'''Cognition Network Technology''' ('''CNT'''), also known as '''Definiens Cognition Network Technology''',<ref>[http://www.ecognition.com/sites/default/files/technology.pdf Image analysis with Definiens Cognition Network Technology]</ref> is an [[object-based image analysis]] method developed by Nobel laureate [[Gerd Binnig]] together with a team of researchers at Definiens AG in Munich, Germany. 
+It serves for extracting information from images using a hierarchy of image objects (groups of pixels), as opposed to traditional pixel processing methods. 
+
+To emulate the human mind's cognitive powers, Definiens used patented [[image segmentation]] and classification processes, and developed a method to render knowledge in a [[semantic network]]. CNT examines pixels not in isolation, but in context. It builds up a picture iteratively, recognizing groups of pixels as objects. It uses the color, shape, texture and size of objects as well as their context and relationships to draw conclusions and inferences, similar to a human analyst.
+
+== Company {{anchor|Definiens}}==
+In 1994 Professor Gerd Binnig founded ''Definiens''.
+CNT was first available with the launch of the ''eCognition'' software in May 2000.
+In June 2010, [[Trimble Navigation Ltd]] (NASDAQ: TRMB) acquired Definiens business asset in [[earth sciences]] markets, including eCognition software,<ref>Trimble / Definiens Joint Press Release: "Trimble Acquires Definiens’ Earth Sciences Business to Expand its GeoSpatial Portfolio". June 11, 2010. http://www.ecognition.com/sites/default/files/Trimble%20eCognition.pdf</ref> and also licensed Definiens' patented CNT.<ref>[http://www.trimble.com/Corporate/About_History.aspx]</ref>
+In 2014, Definiens was acquired by [[MedImmune]], the global biologics research and development arm of AstraZeneca, for an initial consideration of $150 million.<ref>[https://www.astrazeneca.com/media-centre/press-releases/2014/medimmune-definiens-aquisition-tissue-phenomics-26112014.html]</ref>
+
+== Software ==
+
+=== Definiens Tissue Studio ===
+
+''Definiens Tissue Studio'' is a [[digital pathology]] image analysis software application based on CNT.<ref>{{cite web |url=http://www.definiens.com/technology_41_1_4.html |title=Archived copy |accessdate=2010-02-10 |url-status=dead |archiveurl=https://web.archive.org/web/20100325202459/http://www.definiens.com/technology_41_1_4.html |archivedate=2010-03-25 }}</ref>
+The intended use of Definiens Tissue Studio is for biomarker [[translational research]] in formalin-fixed, paraffin-embedded tissue samples which have been treated with [[Immunohistochemistry|immunohistochemical]] staining assays, or [[H&E stain|hematoxylin and eosin]] (H&E).<ref>{{cite web |url=http://www.definiens.com/tissuestudio |title=Archived copy |accessdate=2010-02-10 |url-status=dead |archiveurl=https://web.archive.org/web/20091004154007/http://www.definiens.com/tissuestudio/ |archivedate=2009-10-04 }}</ref> 
+
+The central concept behind Definiens Tissue Studio is a user interface that facilitates [[machine learning]] from example digital histopathology images in order to derive an image analysis solution suitable for the measurement of [[biomarkers]] and/or histological features within pre-defined regions of interest on a cell-by-cell basis, and within sub-cellular compartments.<ref>{{cite web |url=http://www.definiens.com/tissuestudio |title=Archived copy |accessdate=2010-02-10 |url-status=dead |archiveurl=https://web.archive.org/web/20091004154007/http://www.definiens.com/tissuestudio/ |archivedate=2009-10-04 }}</ref> The derived image analysis solution is then automatically applied to subsequent digital images in order to objectively measure defined sets of multiparametric image features. These data sets are used for further understanding the underlying biological processes that drive [[cancer]] and other diseases.<ref>{{Cite web |url=http://laboratorian.advanceweb.com/Article/The-Image-Analysis-Challenge.aspx |title=Archived copy |access-date=2016-06-28 |archive-url=https://web.archive.org/web/20110707090609/http://laboratorian.advanceweb.com/Article/The-Image-Analysis-Challenge.aspx |archive-date=2011-07-07 |url-status=dead }}</ref> Image processing and data analysis are performed either on a local desktop computer workstation, or on a server grid.<ref>{{cite web |url=http://www.definiens.com/tissuestudio |title=Archived copy |accessdate=2010-02-10 |url-status=dead |archiveurl=https://web.archive.org/web/20091004154007/http://www.definiens.com/tissuestudio/ |archivedate=2009-10-04 }}</ref> 
+
+=== eCognition ===
+The ''eCognition'' suite offers three components which can be used stand-alone or in combination to solve image analysis tasks. eCognition Developer is a development environment for object-based image analysis. It is used in earth sciences to develop rule sets (or applications) for the analysis of remote sensing data. eCognition Architect enables non-technical users to configure, calibrate and execute image analysis workflows created in eCognition Developer. eCognition Server software provides a processing environment for batch execution of image analysis jobs.
+
+eCognition software is utilized in numerous [[remote sensing]] and geospatial application scenarios and environments, using a variety of data types:
+*Generic: Rapid Mapping, Change Detection, Object Recognition
+*By environment: Diverse Landcover Mapping, Urban Analysis (i.e. impervious surface area analysis for taxation, property assessment for insurance, inventory of green infrastructure), Forestry (i.e. biomass measurement, species identification, firescar measurement), Agriculture (i.e. regional planning, precision farming, crisis response), Marine and Riparian (i.e. ecosystem evaluation, disaster management, harbor monitoring).
+*Other: Defense, security, atmosphere and climate
+
+The online eCognition community was launched in July 2009 and had 2813 members as of July 9, 2010. Membership is distributed globally and user conferences are held regularly, the last having taken place in November 2009 in Munich, Germany. The bi-annual GEOBIA ([[Geographic Object-Based Image Analysis]]) conference is heavily attended by eCognition users, with the majority of presentations based on eCognition software.
+
+== References ==
+<references/>
+
+== Further reading ==
+* {{cite journal | last1 = Benz | first1 = U. C. | last2 = Hofmann | first2 = P. | last3 = Willhauck | first3 = G. | last4 = Lingenfelder | first4 = I. | last5 = Heynen | first5 = M. | year = 2004 | title = Multi-resolution, object-oriented fuzzy analysis of remote sensing data for GIS-ready information | journal = ISPRS Journal of Photogrammetry and Remote Sensing | volume = 58 | issue = 3| pages = 239–258 | doi=10.1016/j.isprsjprs.2003.10.002}}
+* {{cite book|last1=Athelogou|first1=Maria|title=Imaging Cellular and Molecular Biological Functions|last2=Schmidt|first2=Günter|last3=Schäpe|first3=Arno|last4=Baatz|first4=Martin|last5=Binnig|first5=Gerd|chapter=Cognition Network Technology – A Novel Multimodal Image Analysis Technique for Automatic Identification and Quantification of Biological Image Contents|year=2007|pages=407–422|issn=1866-914X|doi=10.1007/978-3-540-71331-9_15|series=Principles and Practice|isbn=978-3-540-71330-2}}
+
+[[Category:Computer vision]]
+[[Category:Science and technology in Germany]]

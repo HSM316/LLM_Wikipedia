@@ -1,0 +1,54 @@
+{{short description|Book by Pedro Domingos}}
+{{infobox book|<!-- See Wikipedia:WikiProject_Novels or Wikipedia:WikiProject_Books -->
+| name = The Master Algorithm:<br /> How the Quest for the Ultimate Learning Machine Will Remake Our World
+| image = 'The_Master_Algorithm'_2016_-_book_cover.jpg
+| caption = 
+| border = yes
+| author = [[Pedro Domingos]]
+| country = United States
+| genre = [[Philosophy]], [[popular science]]
+| subject = [[Artificial intelligence]]
+| language = English
+| publisher = [[Basic Books]]
+| release_date = September 22, 2015
+| media_type = Print, e-book, audiobook
+| pages = 352 pp.
+| isbn = 978-0465065707
+| preceded_by = 
+}}
+
+'''''The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World''''' is a book by [[Pedro Domingos]] released in 2015. Domingos wrote the book in order to generate interest from people outside the field.
+
+==Overview==
+The book outlines five tribes of machine learning: [[inductive reasoning]], [[connectionism]], [[evolutionary computation]], [[Bayes' theorem]] and [[Analogical modeling|analogical modelling]]. The author explains these tribes to the reader by referring to more understandable processes of [[logic]], connections made in the [[brain]], [[natural selection]], [[probability]] and [[Similarity (psychology)|similarity]] judgements. Throughout the book, it is suggested that each different tribe has the potential to contribute to a unifying "master algorithm".
+
+Towards the end of the book the author pictures a "master [[algorithm]]" in the near future, where [[machine learning algorithm]]s asymptotically grow to a perfect understanding of how the world and people in it work.<ref name="MyUser_Slate.com_September_26_2015c">{{cite web|url=http://www.slate.com/articles/technology/bitwise/2015/09/pedro_domingos_master_algorithm_how_machine_learning_is_reshaping_how_we.2.html|title=Pedro Domingos' Master Algorithm: How machine learning is reshaping how we live.|access-date=September 26, 2015|newspaper=Slate.com}}</ref> Although the algorithm doesn't yet exist, he briefly reviews his own invention of the [[Markov logic network]].<ref name="Dom2015">{{cite book|title=The Master Algorithm: How machine learning is reshaping how we live.|last=Domingos|first=Pedro|date=2015|pages=246–7}}</ref>
+
+==In the media==
+In 2016 [[Bill Gates]] recommended the book, alongside [[Nick Bostrom]]'s ''[[Superintelligence (book)|Superintelligence]]'', as one of two books everyone should read to understand AI.<ref>{{cite news|last1=Ha|first1=Thu-Huong|title=Bill Gates says these are the two books we should all read to understand AI|url=https://qz.com/698334/bill-gates-says-these-are-the-two-books-we-should-all-read-to-understand-ai/|access-date=4 March 2018|work=Quartz|date=2016}}</ref> In 2018 the book was noted to be on Chinese President [[Xi Jinping]]'s bookshelf.<ref>{{cite news|last1=Huang|first1=Zheping|title=The two books helping China's Xi Jinping understand artificial intelligence|url=https://qz.com/1170185/the-master-algorithm-and-augmented-the-two-books-helping-chinas-xi-jinping-understand-ai/|access-date=4 March 2018|work=Quartz|date=2018}}</ref>
+
+===Reception===
+A computer science educator stated in ''[[Times Higher Education]]'' that the examples are clear and accessible.<ref>{{cite news|title=The Master Algorithm: How the Quest for the Ultimate Learning Machine Will Remake Our World, by Pedro Domingos|url=https://www.timeshighereducation.com/books/review-the-master-algorithm-pedro-domingos-allen-lane|access-date=4 March 2018|work=Times Higher Education (THE)|date=17 September 2015|language=en}}</ref> In contrast, ''[[The Economist]]'' agreed Domingos "does a good job" but complained that he "constantly invents metaphors that grate or confuse".<ref>"Machines for thinking: artificial intelligence." The Economist, 3 Oct. 2015, p. 86(US).</ref> ''[[Kirkus Reviews]]'' praised the book, stating that "Readers unfamiliar with logic and computer theory will have a difficult time, but those who persist will discover fascinating insights."<ref>{{cite news|title=THE MASTER ALGORITHM by Pedro Domingos {{!}} Kirkus Reviews|url=https://www.kirkusreviews.com/book-reviews/pedro-domingos/the-master-algorithm/|access-date=4 March 2018|date=2015|language=en-us}}</ref>
+
+A ''[[New Scientist]]'' review called it "compelling but rather unquestioning".<ref>{{cite news|title=<em>The Master Algorithm</em>: A world remade by machines that learn|url=https://www.newscientist.com/article/mg22830450-900-the-master-algorithm-a-world-remade-by-machines-that-learn/|access-date=4 March 2018|work=New Scientist|date=2015}}</ref>
+
+==References==
+{{Reflist}}
+
+* https://www.wsj.com/articles/the-sum-of-human-knowledge-1442610803
+* http://www.kdnuggets.com/2015/09/book-master-algorithm-pedro-domingos.html
+* http://www.kdnuggets.com/2014/08/interview-pedro-domingos-master-algorithm-new-deep-learning.html (interview)
+
+== External links ==
+* {{official website|https://www.basicbooks.com/titles/pedro-domingos/the-master-algorithm/9780465061921/}}
+
+{{DEFAULTSORT:Master Algorithm}}
+[[Category:Machine learning]]
+[[Category:2015 non-fiction books]]
+
+
+{{tech-book-stub}}
+[[Category:Computer science books]]
+[[Category:Algorithms]]
+[[Category:Philosophy of computer science]]
+[[Category:Philosophy of artificial intelligence]]

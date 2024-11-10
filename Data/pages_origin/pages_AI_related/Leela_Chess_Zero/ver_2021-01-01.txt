@@ -1,0 +1,204 @@
+{{Infobox software
+| name = Leela Chess Zero
+| title = 
+| logo = Leela Chess Zero logo.svg
+| logo caption = 
+| logo_size = 
+| logo_alt = 
+| screenshot = <!-- Image name is enough -->
+| caption = 
+| screenshot_size = 
+| screenshot_alt = 
+| collapsible = 
+| author = [[Gian-Carlo Pascutto]], Gary Linscott
+| developer = Gary Linscott, Alexander Lyashuk, Folkert Huizinga, others
+| released = {{Start date and age|2018|01|09|df=yes}}
+| discontinued = 
+| latest release version = v0.26.3
+| latest release date = {{Start date and age|2020|10|10|df=yes}}
+| latest preview version = 
+| latest preview date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language = C++
+| operating system = Windows, Mac, Linux, Ubuntu, Android
+| platform = 
+| size = 
+| language = 
+| language count = <!-- DO NOT include this parameter unless you know what it does -->
+| language footnote = 
+| genre = [[Chess engine]]
+| license = [[GPL-3.0]]
+| alexa = 
+| website = {{URL|https://lczero.org}}
+| standard = 
+| AsOf = 
+}}
+{{Chess programming series}}
+'''Leela Chess Zero''' (abbreviated as '''LCZero''', '''lc0''') is a [[Free and open-source software|free, open-source]], and [[neural network]]-based [[chess engine]] and [[distributed computing]] project. Development has been spearheaded by programmer [[Gary Linscott]], who is also a developer for the [[Stockfish (chess)|Stockfish chess engine]]. Leela Chess Zero was adapted from the [[Leela Zero]] [[Go (game)|Go]] engine,<ref name="SilverApril2018">{{cite web|url=https://lczero.org/?full_elo=1|title=Leela Chess Zero: Full Elo Graph|date=7 March 2019|website=Lczero.org|accessdate=7 March 2019}}</ref> which in turn was based on [[Google]]'s [[AlphaGo Zero]] project,<ref>{{cite web|url=https://github.com/gcp/leela-zero|title=leela-zero|publisher=[[GitHub]]|date=|accessdate=27 April 2018}}</ref> also to verify the methods in the [[AlphaZero]] paper as applied to the game of chess.
+
+Like Leela Zero and AlphaGo Zero, Leela Chess Zero starts with no intrinsic chess-specific knowledge other than the basic rules of the game.<ref name="SilverApril2018"/> Leela Chess Zero then learns how to play chess by [[reinforcement learning]] from repeated self-play, using a distributed computing network coordinated at the Leela Chess Zero website.
+
+{{As of|2020}}, Leela Chess Zero had played over 300 million games against itself,<ref name=":0">{{Cite web|url=https://training.lczero.org/|title=LCZero|last=|first=|date=|website=lczero.org|access-date=2019-05-28}}</ref> and is capable of play at a level that is comparable with [[Stockfish (chess)|Stockfish]], the leading conventional chess program.<ref>{{Cite web|url=https://www.chess.com/news/view/lc0-wins-computer-chess-championship-makes-history|title=Lc0 Wins Computer Chess Championship, Makes History|website=Chess.com|language=en-US|access-date=2019-05-29}}</ref><ref name=":3">{{Cite web|url=https://www.chess.com/news/view/computer-chess-championship-9-stockfish-lc0|title=Stockfish Strikes Back, Tops Lc0 In Computer Chess Championship|last=Pete (pete)|website=Chess.com|language=en-US|access-date=2019-05-29}}</ref>
+
+==History==
+The Leela Chess Zero project was first announced on TalkChess.com on January 9, 2018.<ref name="SilverApril2018"/><ref>{{cite web |title=Announcing lczero |url=http://www.talkchess.com/forum3/viewtopic.php?t=66280 |website=TalkChess.com |accessdate=11 June 2018 }}</ref> This revealed Leela Chess Zero as the open-source, self-learning chess engine it would come to be known as, with a goal of creating a strong chess engine.<ref>{{Cite web|url=http://www.talkchess.com/forum3/viewtopic.php?t=66280|title=Announcing lczero - TalkChess.com|website=www.talkchess.com|access-date=2019-03-21}}</ref> Within the first few months of training, Leela Chess Zero had already reached the [[Grandmaster (chess)|Grandmaster]] level, surpassing the strength of early releases of [[Rybka]], Stockfish, and [[Komodo (chess)|Komodo]], despite evaluating orders of magnitude fewer positions while using [[Monte Carlo tree search|MCTS]].
+
+In December 2018, the [[AlphaZero]] team published a new paper in ''[[Science (journal)|Science]]'' magazine revealing previously undisclosed details of the architecture and training parameters used for AlphaZero.<ref name="alphazero20181206">{{cite journal |last1=Silver |first1=David |last2=Hubert |first2=Thomas |last3=Schrittwieser |first3=Julian |last4=Antonoglou |first4=Ioannis |last5=Lai |first5=Matthew |last6=Guez |first6=Arthur |last7=Lanctot |first7=Marc |last8=Sifre |first8=Laurent |last9=Kumaran |first9=Dharshan |last10=Graepel |first10=Thore |last11=Lillicrap |first11=Timothy |last12=Simonyan |first12=Karen |last13=Hassabis |first13=Demis |title=A general reinforcement learning algorithm that masters chess, shogi, and Go through self-play |journal=Science |date=6 December 2018 |volume=362 |issue=6419 |pages=1140–1144 |doi=10.1126/science.aar6404 |pmid=30523106 |bibcode=2018Sci...362.1140S |s2cid=54457125 |display-authors=3|url=http://discovery.ucl.ac.uk/10069050/1/alphazero_preprint.pdf }}</ref> These changes were soon incorporated into Leela Chess Zero and increased both its strength and training efficiency.<ref>{{cite web|url=https://blog.lczero.org/2018/12/alphazero-paper-and-lc0-v0191.html|title=AlphaZero paper, and Lc0 v0.19.1|last=|first=|date=7 December 2018|website=|accessdate=14 February 2019}}</ref>
+
+The work on Leela Chess Zero has informed the similar AobaZero project for [[shogi]].<ref>{{Citation|last=Kobayashi|first=Yuki|title=GitHub - kobanium/aobazero: Aoba Zero.|date=2019-09-15|url=https://github.com/kobanium/aobazero|access-date=2019-09-25}}</ref>
+
+The engine has been rewritten and carefully iterated upon since its inception, and now runs on multiple [[Back end (computing)|backends]], allowing it to effectively utilize different types of hardware, both CPU and GPU.<ref name="Lc0Github">{{cite web|url=https://github.com/LeelaChessZero/lc0|title=leela-chess-zero|publisher=[[GitHub]]|date=|accessdate=11 May 2020}}</ref> 
+
+The engine supports the [[Fischer Random Chess]] variant, and a network is being trained to test the viability of such a network as of May 2020.<ref name="Lc0Github"></ref>
+
+== Program and use ==
+The method used by its designers to make Leela Chess Zero self-learn and play chess at above human level is [[reinforcement learning]]. This is a machine-learning algorithm, mirrored from [[AlphaZero]] used by the Leela Chess Zero training binary to maximize reward through self-play.<ref name="SilverApril2018" /><ref name="alphazero20181206" /> As an open-source distributed computing project, volunteer users run Leela Chess Zero to play hundreds of millions of games which are fed to the reinforcement algorithm.<ref name=":0" /> In order to contribute to the advancement of the Leela Chess Zero engine, the latest non-release candidate (non-rc) version of the Engine as well as the Client must be downloaded. The Client is needed to connect to the current server of Leela Chess Zero, where all of the information from the self-play chess games are stored, to obtain the latest network, generate self-play games, and upload the training data back to the server.<ref name=":1">{{Citation|title=The rewritten engine, originally for tensorflow. Now all other backends have been ported here.: LeelaChessZero/lc0|date=2019-03-20|url=https://github.com/LeelaChessZero/lc0|publisher=LCZero|access-date=2019-03-21}}</ref>
+
+In order to play against the Leela Chess Zero engine on a machine, 2 components are needed: the engine binary, and a network (The engine binary is distinct from the client, in that the client is used as a training platform for the engine). The network contains Leela Chess Zero's evaluation function that is needed to evaluate positions.<ref name=":1" /> Older networks can also be downloaded and used by placing those networks in the folder with the lc0 binary. 
+
+==Self-Play Elo==
+{{Unreferenced section|date=August 2020}}
+Self-play [[Elo rating system|Elo]] is used to gauge relative network strength to look for anomalies and general changes in network strength, and can be used as a diagnostic tool when there are significant changes. Through test match games that are played with minimal temperature-based variation, lc0 engine clients test the most recent version against other recent versions of the same network's run, which is then sent the training server to create an overall Elo assessment.
+
+Standard Elo formulae are used to calculate relative Elo strength between the two players. More recent Self-Play Elo calculations use match game results against multiple network versions to calculate a more accurate Elo value.
+
+There are several unintended consequences of the Self-Play approach to gauging strength and are as follows:
+
+*Differing scales of initial Elo inflation in training runs due to periods of lower/higher self-improvement and adversarial play.
+
+*Strength measured this way is not objective and is relative to previous networks, allowing for a false illusion of gained strength since networks are trained to beat and anticipate the actions of their past selves.
+
+*[[Overfitting]] against previous network versions of Lc0 continuously adds small amounts of Self-Play Elo to the cumulative measured Elo. Overfitting in this manner is generally seen more clearly when training smaller networks.
+
+*There is no direct 1-to-1 correlation between self-play elo and the strength against Alpha-Beta engines, and no known correlation to strength against humans.
+
+*Behavioral changes in networks between runs affect inflation.
+
+An example of Self-Play elo inflation is the Test 71.4 run (named as 714xxx nets), a Fischer Random Chess run, which nearly has 4000 cumulative self-play elo 76 nets after the start of its run. Self-Play Elo estimates of this run can be roughly compared with other runs to gauge the impracticality of pure cumulative self-play elo. A pure self-play elo comparison with one of the Test 60 networks 3000 nets into the run reveals that 63000 can consistently beat 714070 in head-to-head matches at most, if not all "fair" time controls. Yet, 63000 nets from the Test 60 run have a self-play elo around 2900, while the Self-Play Elo of early Test 71.4 is already near 4000. This contradiction of self-play Elo strength is enough to credit the claim that self-play Elo is not an objective measure of strength, nor is it one which allows one to easily compare network strength to Human strength.
+
+Self-play rating for the engine could be used as a rough approximation of conventional Human Elo ratings, however no universal conversion formula exists for many reasons. These include but are not limited to the scale of initial inflation of self-play Elo and the late-term self-play Elo inflation between trained runs, differing time controls, differing systems of Elo measurement between chess tournament platforms, allocated resources to the engine, network size and structure, a network's training data set, and the multiple factors of which strength is given by the binary of the engine.
+
+Setting up the engine to play a single node with ``--minibatch-size=1`` and ``go nodes 1`` for each played move creates deterministic play, and Self-Play elo on such settings will always yield the same result between 2 of the same networks on the same start position--always win, always loss, or always draw. Self-play elo is not reliable for determining strength in these deterministic circumstances.
+
+==Variants==
+In season 15 of the [[Top Chess Engine Championship]], the engine AllieStein competed alongside Leela. AllieStein is a combination of two different spinoffs from Leela: Allie, which uses the same evaluation network as Leela, but has a unique search algorithm for exploring different lines of play, and Stein, an evaluation network which has been trained using [[supervised learning]] based on existing game data featuring other engines (as opposed to the [[unsupervised learning]] which Leela uses). While neither of these projects would be admitted to TCEC separately due to their similarity to Leela, the combination of Allie's search algorithm with the Stein network, called AllieStein, is unique enough to warrant it competing alongside mainstream Lc0 (The TCEC rules require that a neural network-based engine has at least 2 unique components out of 3 essential features: The code that evaluates a network, the network itself, and the search algorithm. While AllieStein uses the same code to evaluate its network as Lc0, since the other two components are fresh, AllieStein is considered a distinct engine).<ref>{{cite web |title=Allie+Stein, the new neural network based engine entering TCEC S15 |url=http://www.chessdom.com/alliestein-the-new-neural-network-entering-tcec-s15/}}</ref>
+
+==Competition results==
+In April 2018, Leela Chess Zero became the first neural network engine to enter the [[Top Chess Engine Championship]] (TCEC), during season 12 in the lowest division, division 4.<ref>{{cite web|url=http://www.chessdom.com/breaking-leela-chess-zero-enters-tcec-season-12/|title=Breaking: Leela Chess Zero enters TCEC Season 12|publisher=Chessdom|date=18 April 2018}}</ref> Leela did not perform well: in 28 games, it won one, drew two, and lost the remainder; its sole victory came from a position in which its opponent, Scorpio 2.82, crashed in three moves.<ref>See the season 12 archives at [http://tcec.chessdom.com/archive.php http://tcec.chessdom.com/archive.php] {{Webarchive|url=https://web.archive.org/web/20150503193708/http://tcec.chessdom.com/archive.php |date=2015-05-03 }}</ref> However, it improved quickly. In July 2018, Leela placed seventh out of eight competitors at the 2018 [[World Computer Chess Championship]].<ref>{{cite web|url=http://icga.org/pairing/wccc2018/|title=World Computer Chess Championship 2018|publisher=ICGA|accessdate=19 July 2018}}</ref> In August 2018, it won division 4 of TCEC season 13 with a record of 14 wins, 12 draws, and 2 losses.<ref name="season13">See the season 13 archives at [http://tcec.chessdom.com/archive.php http://tcec.chessdom.com/archive.php] {{Webarchive|url=https://web.archive.org/web/20150503193708/http://tcec.chessdom.com/archive.php |date=2015-05-03 }}</ref><ref>{{Cite web|url=http://www.chessdom.com/leela-chess-zero-wins-the-gold-medal-in-tcec-div-4/|title=Leela Chess Zero wins the gold medal in TCEC Div 4 {{!}} Chessdom|language=en-US|access-date=2019-03-21}}</ref> In Division 3, Leela scored 16/28 points, finishing third behind Ethereal, which scored 22.5/28 points, and Arasan on tiebreak.<ref>{{Cite web|url=http://www.chessdom.com/ethereal-chess-engine-wins-the-gold-at-tcec-div-3/|title=Ethereal chess engine wins the gold at TCEC Div 3 {{!}} Chessdom|language=en-US|access-date=2019-03-21}}</ref><ref name="season13"/> 
+
+By September 2018, Leela had become competitive with the strongest engines in the world. In the 2018 Chess.com Computer Chess Championship (CCCC),<ref>{{cite web|url=https://www.chess.com/computer-chess-championship|title=Chess.com Computer Chess Championship}}</ref> Leela placed fifth out of 24 entrants. The top eight engines advanced to round 2, where Leela placed fourth.<ref>{{cite web |title=CCCC stage 2 ended. Leela 4th with a good performance! Stockfish undefeated! |url=http://blog.lczero.org/2018/09/cccc-stage-2-ended-leela-4th-with-good.html |website=LCZero Blog |accessdate=26 September 2018 |date=26 September 2018}}</ref><ref>{{cite web |last1=Cilento |first1=Pete |title=Stockfish, Houdini Battle For Computer Chess Championship; Komodo vs Lc0 For 3rd |url=https://www.chess.com/news/view/stockfish-houdini-to-battle-for-computer-chess-championship-komodo-vs-lc0-for-3rd |website=Chess.com |accessdate=9 October 2018 |date=26 September 2018}}</ref> Leela then won the 30-game match against [[Komodo (chess)|Komodo]] to secure third place in the tournament.<ref>{{cite web |title=Leela wins the match series against Komodo and wins a Pawn odds game against Stockfish! |url=http://blog.lczero.org/2018/10/leela-wins-match-series-against-komodo.html |website=LCZero Blog |accessdate=9 October 2018 |date=3 October 2018}}</ref><ref>{{cite web |last1=Cilento |first1=Pete |title=Stockfish Wins Computer Chess Championship Rapid; Lc0 Finishes 3rd |url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887 |website=Chess.com |accessdate=9 October 2018 |date=4 October 2018}}</ref> Concurrently, Leela participated in the TCEC cup, a new event in which engines from different TCEC divisions can play matches against one another. Leela defeated higher-division engines Laser, Ethereal and Fire before finally being eliminated by Stockfish in the semi-finals.<ref>See the TCEC Cup 1 archives at [http://tcec.chessdom.com/archive.php http://tcec.chessdom.com/archive.php] {{Webarchive|url=https://web.archive.org/web/20150503193708/http://tcec.chessdom.com/archive.php |date=2015-05-03 }}</ref>
+
+In October and November 2018, Leela participated in the Chess.com Computer Chess Championship Blitz Battle.<ref>{{cite web |last1=Cilento |first1=Pete |title=Computer Chess Championship Returns For Blitz Battle |url=https://www.chess.com/news/view/computer-chess-championship-returns-for-blitz-battle |website=Chess.com |accessdate=22 November 2018 |date=11 October 2018}}</ref> Leela finished third behind Stockfish and Komodo.<ref>{{cite web |last1=Cilento |first1=Pete |title=Stockfish Wins Computer Chess Championship Blitz |url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-blitz |website=Chess.com |accessdate=22 November 2018 |date=19 November 2018}}</ref>
+
+In December 2018, Leela participated in [[TCEC Season 14|season 14 of the Top Chess Engine Championship]]. Leela dominated divisions 3, 2, and 1, easily finishing first in all of them. In the premier division, Stockfish dominated while [[Houdini (chess)|Houdini]], Komodo and Leela competed for second place. It came down to a final-round game where Leela needed to hold Stockfish to a draw with black to finish second ahead of Komodo. It successfully managed this and therefore contested the superfinal against Stockfish. It narrowly lost the superfinal against Stockfish with a 49.5-50.5 final score.<ref name="season14">See the season 14 archives at [http://tcec.chessdom.com/archive.php http://tcec.chessdom.com/archive.php] {{Webarchive|url=https://web.archive.org/web/20150503193708/http://tcec.chessdom.com/archive.php |date=2015-05-03 }}</ref>
+
+In February 2019, Leela scored its first major tournament win when it defeated Houdini in the final of the second TCEC cup. Leela did not lose a game the entire tournament.<ref>See the TCEC Cup 2 archives at http://legacy-tcec.chessdom.com/archive.php</ref><ref>{{cite web |title=Leela won the TCEC CUP! |url=http://blog.lczero.org/2019/02/leela-won-tcec-cup.html |website=LCZero Blog |date=4 February 2019 |accessdate=12 February 2019 }}</ref> In April 2019, Leela won the Chess.com Computer Chess Championship 7: Blitz Bonanza, becoming the first neural-network project to take the title.<ref name="CCC7"/>
+
+In May 2019, Leela defended its TCEC cup title, this time defeating Stockfish in the final 5.5-4.5 (+2 =7 -1) after Stockfish blundered a 7-man [[tablebase]] draw.<ref>See the game score at https://www.tcec-chess.com/archive.html?season=cup3&round=fl&game=9</ref> Leela also won the Superfinal of [[TCEC Season 15|season 15 of the Top Chess Engine Championship]] 53.5-46.5 (+14 -7 =79) versus Stockfish.<ref>{{cite web |title=Lc0 won TCEC 15 |url=https://blog.lczero.org/2019/05/lc0-won-tcec-15.html |website=LCZero Blog |date=28 May 2019 |accessdate=28 May 2019 }}</ref><ref name="Hogy2019">{{cite web |last1=Högy |first1=Kevin |title=A new age in computer chess? Lc0 beats Stockfish! |url=https://chess24.com/en/read/news/a-new-age-in-computer-chess-leela-beats-stockfish |website=chess24 |accessdate=25 June 2019 |date=2 June 2019}}</ref>
+
+[[TCEC Season 16|Season 16 of TCEC]] saw Leela finish in 3rd place in premier division, missing qualification for the superfinal to Stockfish and new neural network engine AllieStein. Leela did not suffer any losses in the Premier division, the only engine to do so, and defeated Stockfish in one of the six games they played. However, Leela only managed to score 9 wins, while AllieStein and Stockfish both scored 14 wins. This inability to defeat weaker engines led to Leela finishing 3rd, half a point behind AllieStein and a point behind Stockfish.<ref>{{cite web|url=https://www.tcec-chess.com/archive.html?season=16&div=p&game=1|title=Season 16, Div P archive|accessdate=30 September 2019}}</ref> In the fourth TCEC cup, Leela was seeded first as the defending champion, which placed it on the opposite half of the brackets as AllieStein and Stockfish. Leela was able to qualify for the finals, where it faced Stockfish. After seven draws, Stockfish won the eighth game to win the match.<ref>{{cite web|url=https://www.tcec-chess.com/archive.html?season=cup4&round=fl&game=1|title=TCEC Cup 4 archive|accessdate=18 November 2019}}</ref>
+
+In [[TCEC Season 17|Season 17 of TCEC]], held in January-April 2020, Leela regained the championship by defeating Stockfish 52.5-47.5.<ref>{{cite web|url=https://lczero.org/blog/2020/04/tcec-s17-super-final-report/|title=TCEC final report}}</ref> It qualified for the superfinal again in [[TCEC Season 18|Season 18]], but this time was defeated by Stockfish 53.5-46.5.<ref>{{cite web|url=https://tcec-chess.com/#div=sf&game=1&season=18|title=TCEC Season 18 archive|accessdate=3 July 2020}}</ref> In the TCEC Cup 6 final, Leela lost to AllieStein, finishing 2nd.<ref>{{cite web |title=TCEC Cup 6 Final |url=https://tcec-chess.com/#game=7&round=fl&season=cup6 |website=TCEC Chess |accessdate=23 July 2020}}</ref>
+
+[[TCEC Season 19|Season 19 of TCEC]] saw Leela qualify for the superfinal again. This time it played against a new Stockfish version with support for [[NNUE]], a neural-network-based evaluation function used primarily for the leaf nodes of the search tree. It defeated Leela with a final score of 54.5-45.5 (+18 -9 =73).<ref>{{cite web|url=https://www.tcec-chess.com/archive.html?season=19&div=sf&game=100|title=Season 19, Div SF archive|accessdate=19 October 2020}}</ref><ref>{{cite web |title=Stockfish 12 |url=https://blog.stockfishchess.org/post/628172810852925440/stockfish-12 |website=Stockfish Blog |accessdate=19 October 2020}}</ref>
+
+===Results summary===
+{| class="wikitable"
+|+Top Chess Engine Championship (TCEC)<ref name="TCEC archive">https://www.tcec-chess.com/archive.html</ref>
+|-
+! Season !! Division 4 !! Division 3 !! Division 2 !! Division 1 !! Division P !! Superfinal
+|-
+| [[TCEC Season 12|12]] (2018) || 8th || – || – || – || – || –
+|-
+| [[TCEC Season 13|13]] (2018) || 1st || 3rd || – || – || – || –
+|-
+| [[TCEC Season 14|14]] (2018) || – || 1st || 1st || 1st || 2nd || 2nd
+|-
+| [[TCEC Season 15|15]] (2019) || – || – || – || – || 2nd || 1st
+|-
+| [[TCEC Season 16|16]] (2019) || – || – || – || – || 3rd || –
+|-
+| [[TCEC Season 17|17]] (2020) || – || – || – || – || 1st || 1st
+|-
+| [[TCEC Season 18|18]] (2020) || – || – || – || – || 2nd || 2nd
+|-
+| [[TCEC Season 19|19]] (2020) || – || – || – || – || 2nd || 2nd
+|}
+
+
+{| class="wikitable"
+|+Top Chess Engine Championship Cup (TCEC Cup)<ref name="TCEC archive">https://www.tcec-chess.com/archive.html</ref>
+|-
+! Event !! Result !! Opponent !! Score  
+|-
+| Cup 1 (2018) || 3rd || Komodo || 0-0  
+|-
+| Cup 2 (2019) || 1st || Houdini || 4.5-3.5 
+|-
+| Cup 3 (2019) || 1st || Stockfish || 5.5-4.5 
+|-
+| Cup 4 (2019) || 2nd || Stockfish || 3.5-4.5 
+|-
+| Cup 5 (2020) || 2nd || Stockfish || 1.5-2.5 
+|-
+| Cup 6 (2020) || 2nd || AllieStein || 1.5-2.5 
+|-
+|-
+| Cup 7 (2020) || 2nd || Stockfish || 1.5-2.5 
+|-
+|}
+
+
+{| class="wikitable"
+|+Chess.com Computer Chess Championship (CCCC)
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+| CCC 1: Rapid Rumble || 2018 || 15+5 || 3rd || <ref name=":2">{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887|title=Stockfish Wins Computer Chess Championship Rapid; Lc0 Finishes 3rd|last=Cilento|first=Pete|website=Chess.com|language=en-US|access-date=2019-06-20}}</ref>
+|-
+| CCC 2: Blitz Battle || 2018 || 5+2 || 3rd || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-blitz|title=Stockfish Wins Computer Chess Championship Blitz|last=Cilento|first=Pete|website=Chess.com|language=en-US|access-date=2019-06-20}}</ref>
+|-
+| CCC 3: Rapid Redux || 2019 || 30+5 || 2nd || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-rapid-computer-championship-over-lc0-bullet-chess-next|title=Stockfish Wins Rapid Computer Championship Over Lc0; Bullet Chess Next|last=Cilento|first=Pete|website=Chess.com|language=en-US|access-date=2019-06-20}}</ref>
+|-
+| CCC 4: Bullet Brawl || 2019 || 1+2 || 2nd || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-bullet-escalation-next|title=Stockfish Wins Computer Chess Championship Bullet; 'Escalation' Next|last=Cilento|first=Pete|website=Chess.com|language=en-US|access-date=2019-06-20}}</ref>
+|-
+| CCC 5: Escalation || 2019 || 10+5 || 2nd || <ref>[https://cccfiles.chess.com/archive/tournament-18208.pgn]</ref>
+|-
+| CCC 6: Winter Classic || 2019 || 10+10 || 2nd || <ref>{{Cite web|url=https://www.chess.com/news/view/computer-chess-championship-playing-blitz-after-stockfish-defends-title|title=Computer Chess Championship Plays Blitz After Stockfish Defends Title|last=Cilento|first=Pete|website=Chess.com|language=en-US|access-date=2019-06-20}}</ref>
+|-
+| CCC 7: Blitz Bonanza || 2019 || 5+2 || 1st || <ref name="CCC7">{{cite web |last1=Cilento |first1=Pete |title=Lc0 Wins Computer Chess Championship, Makes History |url=https://www.chess.com/news/view/lc0-wins-computer-chess-championship-makes-history |website=Chess.com |accessdate=18 April 2019 |date=17 April 2019}}</ref>
+|-
+| CCC 8: Deep Dive || 2019 || 15+5 || 2nd ||<ref name=":3" />
+|-
+| CCC 9: The Gauntlet || 2019 || 5+2, 10+5 || 3rd ||<ref name="CCC9">{{Cite web|url=https://www.chess.com/news/view/computer-chess-championship-9-stockfish-10-lc0|title=Stockfish Wins Computer Chess Championship As Neural Networks Play Catch-Up|last=Cilento|first=Pete|website=Chess.com|language=en-US|date=7 August 2019|access-date=19 September 2019}}</ref>
+|-
+| CCC 10: Double Digits || 2019 || 10+3 || 3rd ||<ref name="CCC10">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc10-semifinals |website=Chess.com |accessdate=19 September 2019}}</ref>
+|-
+| CCC 11 || 2019 || 30+5 || 1st ||<ref name="CCC11">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc11-finals |website=Chess.com |accessdate=23 December 2019}}</ref>
+|-
+| CCC 12: Bullet Madness! || 2020 || 1+1 || 1st ||<ref name="CCC12">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc1217-lc0-vs-leelenstein-finals |website=Chess.com |accessdate=23 January 2020}}</ref>
+|-
+| CCC 13: Shapes || 2020 || 3+2, 5+5, 10+5, 15+5 || 1st ||<ref name="CCC13">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc13-finals |website=Chess.com |accessdate=14 April 2020}}</ref><ref name="Doggers2020">{{cite news |last1=Doggers |first1=Peter |title=Leela Chess Zero Beats Stockfish 106-94 In 13th Chess.com Computer Chess Championship |url=https://www.chess.com/news/view/13th-computer-chess-championship-leela-chess-zero-stockfish |accessdate=24 April 2020 |work=Chess.com |date=18 April 2020}}</ref>
+|-
+| CCC 14 || 2020 || 15+5 || 1st ||<ref>{{cite web |title=CCC14 Results |url=https://docs.google.com/spreadsheets/d/15OO7oyXyliBWa1aWRKWCIBblOP8KN6awsOMdS7yOQs0/edit#gid=390633471 |website=CCC Formats |accessdate=19 August 2020}}</ref>
+|}
+
+==Notable games==
+* [https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887 Leela vs Stockfish, CCCC bonus games, 1-0] Leela beats the world champion Stockfish engine despite a 1-pawn handicap.
+*[https://www.tcec-chess.com/archive.html?season=15&div=sf&game=61 Stockfish vs Leela Chess Zero || TCEC S15 Superfinal - Game 61] Leela completely outplayed Stockfish with black pieces in Trompovsky attack, Leela's eval went from 0.1 to -1.2 in one move, and Stockfish's eval didn't go negative until 15 moves later.
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official|https://lczero.org}}
+*[https://github.com/LeelaChessZero/lc0 Leela Chess Zero] on [[GitHub]]
+*[https://github.com/LeelaChessZero/lczero-client/releases Neural network training client]
+*[https://github.com/LeelaChessZero/lc0/releases Engine]
+*[https://training.lczero.org/networks/?show_all=0 Neural nets]
+*[https://www.chessprogramming.org/Leela_Chess_Zero Chessprogramming wiki on Leela Chess Zero]
+
+[[Category:Chess engines]]
+[[Category:Free and open-source software]]
+[[Category:Distributed computing projects]]
+[[Category:2018 software]]
+[[Category:Applied machine learning]]

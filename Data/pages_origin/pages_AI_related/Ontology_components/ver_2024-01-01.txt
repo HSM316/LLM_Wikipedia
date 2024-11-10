@@ -1,0 +1,67 @@
+{{Short description|Description of aspects of ontology}}
+{{Refimprove|date=June 2009}}
+
+Contemporary [[Ontology (information science)|ontologies]] share many structural similarities, regardless of the [[ontology language]] in which they are expressed. Most ontologies describe individuals (instances), classes (concepts), attributes, and relations.
+
+== List ==
+Common components of ontologies include:
+;Individuals: instances or objects (the basic or "ground level" objects; the [[type–token distinction|tokens]]).
+;[[Class (set theory)|Class]]es<!--This deliberately links to the disambiguation page; see the footnote-->: [[set (computer science)|sets]], collections, concepts, [[type–token distinction|types]] of objects, or kinds of things.<ref>See [[Class (set theory)]], [[Class (computer science)]], and [[Class (philosophy)]], each of which is relevant but not identical to the notion of a "class" here.</ref>
+;[[Attribute (computing)|Attributes]]: aspects, properties, features, characteristics, or parameters that objects (and classes) can have. <ref name="David2006">{{cite book|author=Taniar, David|title=Web Semantics & Ontology|url=https://books.google.com/books?id=uVu9AQAAQBAJ&q=%22attribute%22|date=28 February 2006|publisher=Idea Group Inc (IGI)|isbn=978-1-59140-907-6}}</ref>
+;[[Relation (mathematics)|Relations]]: ways in which classes and individuals can be related to one another.<ref name="Gómez-PérezFernandez-Lopez2006">{{cite book|author1=Asunción Gómez-Pérez|author2=Mariano Fernandez-Lopez|author3=Oscar Corcho|title=Ontological Engineering: with examples from the areas of Knowledge Management, e-Commerce and the Semantic Web. First Edition|url=https://books.google.com/books?id=qR_3BwAAQBAJ&q=relation|date=18 April 2006|publisher=Springer Science & Business Media|isbn=978-1-85233-840-4}}</ref>
+;Function terms: complex structures formed from certain relations that can be used in place of an individual term in a statement.
+;Restrictions: formally stated descriptions of what must be true in order for some assertion to be accepted as input.
+;Rules: statements in the form of an if-then (antecedent-consequent) sentence that describe the logical inferences that can be drawn from an assertion in a particular form.
+;Axioms: assertions (including rules) in a [[logical form]] that together comprise the overall theory that the ontology describes in its domain of application.<ref name="DonnellyGuizzardi2012">{{cite book|author1=Maureen Donnelly|author2=Giancarlo Guizzardi|title=Formal Ontology in Information Systems: Proceedings of the Seventh International Conference (FOIS 2012)|url=https://books.google.com/books?id=1OppC9ilpvwC&q=%22axiom%22|year=2012|publisher=IOS Press|isbn=978-1-61499-083-3}}</ref> This definition differs from that of "axioms" in generative grammar and formal logic. In these disciplines, axioms include only statements asserted as ''a priori'' knowledge. As used here, "axioms" also include the theory derived from axiomatic statements.{{citation needed|date=March 2019}}
+;[[Event (philosophy)|Events]]: <!-- this links to the philosophy sense of 'Events' as that is currently the only article describing the issues around defining events in the ontology community-->the changing of attributes or relations. 
+;Actions: types of events.
+Ontologies are commonly encoded using [[ontology language]]s.
+
+==Individuals==
+Individuals (instances) are the basic, "ground level" components of an ontology. The individuals in an ontology may include concrete objects such as people, animals, tables, automobiles, molecules, and planets, as well as abstract individuals such as numbers and words (although there are differences of opinion as to whether numbers and words are classes or individuals). Strictly speaking, an ontology need not include any individuals, but one of the general purposes of an ontology is to provide a means of classifying individuals, even if those individuals are not explicitly part of the ontology.
+
+In formal extensional ontologies, only the utterances of words and numbers are considered individuals&nbsp;– the numbers and names themselves are classes. In a 4D ontology, an individual is identified by its spatio-temporal extent. Examples of formal extensional ontologies are [[BORO]], [[ISO 15926]] and the model in development by the [[IDEAS Group]].
+
+== Classes ==
+{{excerpt|Class (Knowledge representation)}}
+
+==Attributes==
+Objects in an ontology can be described by relating them to other things, typically ''aspects'' or ''parts''. These related things are often called ''attributes'', although they may be independent things. Each attribute can be a class or an individual. The kind of object and the kind of attribute determine the kind of relation between them. A relation between an object and an attribute express a fact that is specific to the object to which it is related. For example, the [[Ford Explorer]] object has attributes such as:
+* {{angbr|has as name}} Ford Explorer
+* {{angbr|as by definition as part}} ''6-speed transmission''
+* {{angbr|as by definition as part}} ''door'' (with as minimum and maximum cardinality: 4)
+* {{angbr|as by definition as part one of}} ''{4.0L engine, 4.6L engine}''
+
+The value of an attribute can be a complex [[data type]]; in this example, the related engine can only be one of a list of subtypes of engines, not just a single thing.
+
+Ontologies are only true ontologies if concepts are related to other concepts (the concepts do have attributes). If that is not the case, then you would have either a [[Taxonomy (general)|taxonomy]] (if [[hyponym]] relationships exist between concepts) or a [[controlled vocabulary]]. These are useful, but are not considered true ontologies.
+
+== Relations ==
+[[Relations (philosophy)|Relations]] (also known as relationships) between objects in an ontology specify how objects are related to other objects. Typically a relation is of a particular type (or class) that specifies in what sense the object is related to the other object in the ontology. For example, in the ontology that contains the concept Ford Explorer and the concept [[Ford Bronco]] might be related by a relation of type {{angbr|is defined as a successor of}}. The full expression of that fact then becomes:
+* Ford Explorer ''is defined as a successor of '': Ford Bronco
+
+This tells us that the Explorer is the model that replaced the Bronco. This example also illustrates that the relation has a direction of expression. The inverse expression expresses the same fact, but with a reverse phrase in natural language.
+
+Much of the power of ontologies comes from the ability to describe relations. Together, the set of relations describes the [[semantics]] of the domain: that is, its various [[wikt:Wiktionary:Semantic relations|semantic relations]], such as [[synonym]]y, [[hyponymy and hypernymy]], [[wikt:coordinate term|coordinate]] relation, and others. The set of used relation types (classes of relations) and their subsumption hierarchy describe the expression power of the language in which the ontology is expressed.
+
+[[File:OntologyBronco-Plain-SVG.svg|right|Ford Explorer ''is-a-subclass-of'' 4-Wheel Drive Car, which in turn ''is-a-subclass-of'' Car.]]
+An important type of relation is the [[Hierarchy#Subsumptive containment hierarchy|subsumption]] <!--This deliberately links to the disambiguation page. There is no suited specific article yet.--> relation (''is-a-[[Superclass (computer science)|superclass]]-of'', the converse of ''[[is-a]]'', ''is-a-subtype-of'' or ''is-a-[[subclass (computer science)|subclass]]-of''). This defines which objects are classified by which class. For example, we have already seen that the class Ford Explorer ''is-a-subclass-of'' 4-Wheel Drive Car, which in turn ''is-a-subclass-of'' Car.
+
+The addition of the is-a-subclass-of relationships creates a [[Taxonomy (general)|taxonomy]]; a tree-like structure (or, more generally, a [[partially ordered set]]) that clearly depicts how objects relate to one another. In such a structure, each object is the 'child' of a 'parent class' (Some languages restrict the is-a-subclass-of relationship to one parent for all nodes, but many do not).
+
+Another common type of relations is the [[mereology]] relation, written as ''part-of'', that represents how objects combine to form composite objects. For example, if we extended our example ontology to include concepts like Steering Wheel, we would say that a "Steering Wheel is-by-definition-a-part-of-a Ford Explorer" since a steering wheel is always one of the components of a Ford Explorer. If we introduce meronymy relationships to our ontology, the hierarchy that emerges is no longer able to be held in a simple tree-like structure since now members can appear under more than one parent or branch. Instead this new structure that emerges is known as a [[directed acyclic graph]].
+
+{{clear}} As well as the standard is-a-subclass-of and is-by-definition-a-part-of-a relations, ontologies often include additional types of relations that further refine the semantics they model. Ontologies might distinguish between different categories of relation types. For example:
+* relation types for relations between classes
+* relation types for relations between individuals
+* relation types for relations between an individual and a class
+* relation types for relations between a single object and a collection
+* relation types for relations between collections
+Relation types are sometimes domain-specific and are then used to store specific kinds of facts or to answer particular types of questions. If the definitions of the relation types are included in an ontology, then the ontology defines its own ontology definition language. An example of an ontology that defines its own relation types and distinguishes between various categories of relation types is the [[Gellish]] ontology.
+
+For example, in the domain of automobiles, we might need a ''made-in'' type relationship which tells us where each car is built. So the Ford Explorer is ''made-in'' [[Louisville, Kentucky|Louisville]]. The ontology may also know that Louisville is-located-in [[Kentucky]] and Kentucky is-classified-as-a state and is-a-part-of the [[United States|U.S.]] Software using this ontology could now answer a question like "which cars are made in the U.S.?"
+
+== Notes ==
+{{reflist}}
+
+[[Category:Ontology (information science)]]

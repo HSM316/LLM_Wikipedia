@@ -1,0 +1,108 @@
+{{short description|Text processing programming library}}
+{{Undisclosed paid|date=October 2020}}
+{{Infobox software
+| title = Spark NLP
+| name = Spark NLP
+| author = John Snow Labs
+| released = October 2017<ref>{{cite web |last1=Talby |first1=David |title=Introducing the Natural Language Processing Library for Apache Spark |url=https://databricks.com/blog/2017/10/19/introducing-natural-language-processing-library-apache-spark.html |website=databricks.com |publisher=databricks |access-date=29 March 2019}}</ref>
+| latest release version = 2.6
+| latest release date = {{Start date and age|2020|09|df=yes}}
+| repo = {{URL|https://github.com/JohnSnowLabs/spark-nlp}}
+| programming language = [[Python (programming language)|Python]], [[Scala (programming language)|Scala]]
+| operating system = Linux, Windows, macOS, OS X
+| genre = [[Natural language processing]]
+| license = [[Apache licence]]
+| website = {{URL|https://nlp.johnsnowlabs.com/}}
+}}
+
+'''Spark NLP''' is an [[Open-source software|open-source]] text processing library for advanced natural language processing for the [[Python (programming language)|Python]], [[Java (programming language)|Java]] and [[Scala (programming language)|Scala]] programming languages.<ref name=":0">{{Cite web|url=https://insidebigdata.com/2018/09/03/use-nlp-extract-unstructured-medical-data-text/|title=The Use of NLP to Extract Unstructured Medical Data From Text|last=Team|first=Editorial|date=2018-09-04|website=insideBIGDATA|language=en-US|access-date=2019-03-29}}</ref><ref>{{Cite web|url=https://startupbeat.com/john-snow-labs-natural-language-understanding-software-gets-state-of-the-art-recognition-in-three-industry-events/30699/|title=John Snow Labs' Natural Language Understanding Software Gets "State of the Art" Recognition in Three Industry Events|date=2018-07-19|website=StartUp Beat|language=en-US|access-date=2019-03-29}}</ref><ref>{{Cite web|url=https://www.oreilly.com/ideas/comparing-production-grade-nlp-libraries-running-spark-nlp-and-spacy-pipelines|title=Comparing production-grade NLP libraries: Running Spark-NLP and spaCy pipelines|last=Ellafi|first=Saif Addin|date=2018-02-28|website=O'Reilly Media|language=en|access-date=2019-03-29}}</ref><ref name=":1">{{Cite web|url=https://www.oreilly.com/ideas/comparing-production-grade-nlp-libraries-accuracy-performance-and-scalability|title=Comparing production-grade NLP libraries: Accuracy, performance, and scalability|last=Ellafi|first=Saif Addin|date=2018-02-28|website=O'Reilly Media|language=en|access-date=2019-03-29}}</ref><ref>{{Cite web|url=https://www.i-programmer.info/news/80-java/11251-spark-gets-nlp-library.html|title=Spark Gets NLP Library|last=Ewbank|first=Kay|website=www.i-programmer.info}}</ref> The library is built on top of [[Apache Spark]] and its Spark ML library for speed and scalability <ref name=":1" /> and on top of [[TensorFlow]] for deep learning training & inference functionality.<ref name="SparkNLPBook">{{cite book |last1=Thomas |first1=Alex |title=Natural Language Processing with Spark NLP: Learning to Understand Text at Scale |date=July 2020 |publisher=O'Reilly Media |location=United States of America |isbn=978-1492047766 |edition=First }}</ref> Its goal is to provide an [[API]] for [[natural language processing]] pipelines that implement [[State of the art|state-of-the-art]] academic research results as production-grade, scalable, and trainable software. The library offers pre-trained neural network models, pipelines, and embeddings, as well as support for training custom models.<ref name="SparkNLPBook" />
+
+Spark NLP is geared towards production use in software systems that outgrow older libraries such as [[spaCy]], [[Natural Language Toolkit|nltk]], and CoreNLP.<ref>{{Cite web|url=https://startupbeat.com/john-snow-labs-natural-language-understanding-software-gets-state-of-the-art-recognition-in-three-industry-events/30699/|title=John Snow Labs' Natural Language Understanding Software Gets "State of the Art" Recognition in Three Industry Events|date=2018-07-19|website=StartUp Beat|language=en-US|access-date=2019-08-27}}</ref> As of February 2019, the library is in use by 16% of enterprise companies and the most widely used NLP library by such companies.<ref>{{Cite journal|last=Nick|first=Heath|date=February 2019|title=Most popular programming language frameworks and tools for machine learning|url=https://www.techrepublic.com/article/most-popular-programming-language-frameworks-and-tools-for-machine-learning/|journal=TechRepublic}}</ref><ref>{{Cite news|url=https://www.analyticsindiamag.com/5-reasons-why-spark-nlp-is-the-most-widely-used-library-in-enterprises/|title=5 Reasons Why Spark NLP Is The Most Widely Used Library In Enterprises|last=CHOUDHURY|first=Ambika|date=May 29, 2019|work=Analytics India}}</ref> On March 28, 2019, Spark NLP was named a winner of the Strata Data Award in the open source category “for providing state-of-the-art natural language processing in Python, Java & Scala”.<ref>{{Cite news|url=https://www.youtube.com/watch?v=bb4YCb6gnyw&feature=youtu.be|title=Strata Data Awards: Winners Announced|date=May 22, 2019|work=O'Reilly}}</ref>
+
+== Main features ==
+
+The library’s design uses the concept of a pipeline: an ordered set of text annotators.<ref>{{Cite web|url=https://databricks.com/blog/2017/10/19/introducing-natural-language-processing-library-apache-spark.html|title=Introducing the Natural Language Processing Library for Apache Spark - The Databricks Blog|last=Talby|first=David|date=2017-10-19|website=Databricks|language=en-US|access-date=2019-08-27}}</ref> Out of the box annotators include:
+
+* [[Tokenizer]]: Word tokens
+* Normalizer: Text cleaning
+*[[Stemming]]: Hard stems
+* [[Lemmatizer]]: Lemmas
+* [[Regular expression]]: Rule matching
+* TextMatcher: Phrase matching
+* [[Shallow parsing|Chunker]]: Meaningful phrase matching
+* DateMatcher: Date-time parsing
+* SentenceDetector: Sentence Boundary Detector
+* DeepSentenceDetector: Sentence Boundary Detector with Machine Learning
+* [[Part-of-speech tagging|POS tagger]]: Part of speech tagger
+* ViveknSentimentDetector: Sentiment analysis
+* [[Sentiment analysis]]: Sentiment analysis
+* [[Named-entity recognition|Named Entity Recognition]] [[Conditional random field|CRF]] annotator
+* [[Named-entity recognition|Named Entity Recognition]] [[Deep learning|Deep Learning]] annotator
+* [[Spell checker|Spell checking]] & correction: Context Aware,<ref>{{cite web |last1=Andreotti |first1=Alberto |title=Applying Context Aware Spell Checking in Spark NLP |url=https://medium.com/spark-nlp/applying-context-aware-spell-checking-in-spark-nlp-3c29c46963bc |website=Medium |access-date=17 September 2020 }}</ref> Norvig, and Symmetric delete
+* Dependency Parser: Unlabeled grammatical relation
+* Typed Dependency Parser: Labeled grammatical relation
+* [[Document classification|Document Classification]]: Multi-class, Multi-label, and Multi-lingual <ref>{{cite web |last1=Kocaman |first1=Veysel |title=Text Classification in Spark NLP with Bert and Universal Sentence Encoders |url=https://towardsdatascience.com/text-classification-in-spark-nlp-with-bert-and-universal-sentence-encoders-e644d618ca32 |website=Medium |access-date=17 September 2020 }}</ref>
+* [[Language identification|Language detection]]: Automatic language identification.
+
+In addition to the software libraries, Spark NLP also includes free access to over 250 pre-trained models and over 90 pre-trained pipelines via the Models Hub.<ref name="modelhub">{{cite web |title=Models Hub |url=https://nlp.johnsnowlabs.com/modelmain |website=Models Hub |access-date=17 September 2020 }}</ref>
+
+The Models Hub <ref name="modelhub" /> includes:
+* Pre-trained pipelines with tokenization, lemmatization, part-of-speech tagging, and named entity recognition exist for Danish, Dutch, English, Finnish, French, German, Italian, Norwegian, Polish, Portuguese, Russian, Spanish, and Swedish. Some pre-trained models are available for Afrikaans, Arabic, Armenian, Basque, Bengali, Breton, Bulgarian, Catalan, Czech, Esperanto, Galician, Greek, Hausa, Hebrew, Hindi, Hungarian, Indonesian, Irish, Japanese, Latin, Latvian, Marathi, Persian, Romanian, Slovak, Slovenian, Somali, Southern Sotho, Swahili, Tswana, Turkish, Ukrainian and Zulu.
+* Popular word embeddings including [[GloVe (machine learning)|GloVe]], [[ELMo]], [[BERT (language model)|BERT]], ALBERT, XLNet, Small BERT, and ELECTRA.
+* Popular sentence embeddings including Universal Sentence Embeddings (USE)<ref>{{cite arXiv |last1=Cer |first1=Daniel |last2=Yang |first2=Yinfei |last3=Kong |first3=Sheng-yi |last4=Hua |first4=Nan |last5=Limtiaco |first5=Nicole |last6=John |first6=Rhomni St |last7=Constant |first7=Noah |last8=Guajardo-Cespedes |first8=Mario |last9=Yuan |first9=Steve |last10=Tar |first10=Chris |last11=Sung |first11=Yun-Hsuan |last12=Strope |first12=Brian |last13=Kurzweil |first13=Ray |title=Universal Sentence Encoder |date=12 April 2018  |arxiv=1803.11175 }}</ref> and Language Agnostic BERT Sentence Embeddings (LaBSE).<ref>{{cite arxiv |last1=Feng |first1=Fangxiaoyu |last2=Yang |first2=Yinfei |last3=Cer |first3=Daniel |last4=Arivazhagan |first4=Naveen |last5=Wang |first5=Wei |title=Language-agnostic BERT Sentence Embedding |date=3 July 2020 |class=cs.CL |eprint=2007.01852 }}</ref>
+
+The Spark NLP community website <ref>{{cite web |title=John Snow Labs - Spark NLP |url=https://nlp.johnsnowlabs.com/ |website=nlp.johnsnowlabs.com }}</ref> provides free documentation and code examples, using runnable Colab [[Project Jupyter|notebooks]]. Some concrete usage scenarios for the pre-trained models and pipelines are also provided in the form of streamlit applications.<ref>{{cite web |title=Streamlit — The fastest way to create data apps |url=https://www.streamlit.io/ |website=www.streamlit.io}}</ref> They focus on popular NLP tasks such as [[document classification]], [[sentiment analysis]], [[Named-entity recognition|named entity recognition]], and [[Language identification|language detection]].
+
+== Spark NLP for Healthcare ==
+Spark NLP for Healthcare is a commercial extension of Spark NLP for  clinical and biomedical text mining.<ref>{{Cite web|url=https://insidebigdata.com/2018/09/03/use-nlp-extract-unstructured-medical-data-text/|title=The Use of NLP to Extract Unstructured Medical Data From Text|last=Team|first=Editorial|date=2018-09-04|website=insideBIGDATA|language=en-US|access-date=2019-08-27}}</ref> It provides healthcare-specific annotators, pipelines, models, and embeddings for:
+
+* Clinical entity recognition
+* Clinical Entity Linking
+* Entity normalization
+* Assertion Status Detection
+* De-identification
+* Relation Extraction
+* Spell checking & correction
+
+The library offers access to several clinical and biomedical transformers: JSL-BERT-Clinical, BioBERT, ClinicalBERT,<ref>{{cite journal |last1=Alsentzer |first1=Emily |last2=Murphy |first2=John |last3=Boag |first3=William |last4=Weng |first4=Wei-Hung |last5=Jindi |first5=Di |last6=Naumann |first6=Tristan |last7=McDermott |first7=Matthew |title=Publicly Available Clinical BERT Embeddings |journal=Proceedings of the 2nd Clinical Natural Language Processing Workshop |date=June 2019 |pages=72–78 |doi=10.18653/v1/W19-1909 |url=https://www.aclweb.org/anthology/W19-1909/ |publisher=Association for Computational Linguistics|arxiv=1904.03323 |s2cid=102352093 }}</ref> GloVe-Med, GloVe-ICD-O. It also includes over 50 pre-trained healthcare models, that can recognize the following entities:<ref>{{cite web |title=Available Models and Pipelines - Spark NLP |url=https://nlp.johnsnowlabs.com/models |website=nlp.johnsnowlabs.com}}</ref>
+* Clinical - support Signs, Symptoms, Treatments, Procedures, Tests, Labs, Sections
+* Drugs - support Name, Dosage, Strength, Route, Duration, Frequency
+* Risk Factors- support Smoking, Obesity, Diabetes, Hypertension, Substance Abuse
+* Anatomy - support Organ, Subdivision, Cell, Structure Organism, Tissue, Gene, Chemical
+* Demographics - support Age, Gender, Height, Weight, Race, Ethnicity, Marital Status, Vital Signs
+* Sensitive Data- support Patient Name, Address, Phone, Email, Dates, Providers, Identifiers
+
+== Spark OCR ==
+Spark [[Optical character recognition|OCR]] is another commercial extension of Spark NLP for [[optical character recognition]] from images, scanned [[PDF]] documents, and [[DICOM]] files. It is a software library built on top of [[Apache Spark]] and offers the following capabilities:
+* Image pre-processing algorithms to improve text recognition results:
+** Adaptive thresholding & denoising
+** Skew detection & correction
+** Adaptive scaling
+** Layout Analysis & region detection
+** Image cropping
+** Removing background objects
+* Text recognition, by combining [[Natural language processing|NLP]] and [[Optical character recognition|OCR]] pipelines:<ref>{{cite web |title=A Unified CV, OCR & NLP Model Pipeline for Document Understanding at DocuSign |url=https://www.nlpsummit.org/a-unified-cv-ocr-nlp-model-pipeline-for-document-understanding-at-docusign/ |publisher=NLP Summit |access-date=18 September 2020 }}</ref>
+**Extracting text from images ([[optical character recognition]])
+**Extracting data from tables
+**Recognizing and highlighting named entities in [[PDF]] documents
+**[[Data masking|Masking]] sensitive text in order to de-identify images
+* Output generation in different formats:
+** [[PDF]], images, or [[DICOM]] files with annotated or masked entities
+** Digital text for downstream processing in Spark NLP or other libraries
+** Structured data formats ([[JSON]] and [[Comma-separated values|CSV]]), as files or [[Apache Spark|Spark]] data frames
+* Scale out: distribute the [[Optical character recognition|OCR]] jobs across multiple nodes in a [[Apache Spark|Spark]] [[Computer cluster|cluster]].
+* Frictionless unification of [[Optical character recognition|OCR]], [[Natural language processing|NLP]], [[Machine learning|ML]] & [[Deep learning|DL]] [[Pipeline (computing)|pipelines]].
+
+== License and availability ==
+Spark NLP is licensed under the [[Apache License|Apache 2.0]] license. The source code is publicly available on GitHub<ref>{{Citation|title=GitHub - JohnSnowLabs/spark-nlp: State of the Art Natural Language Processing.|date=2019-08-26|url=https://github.com/JohnSnowLabs/spark-nlp|publisher=John Snow Labs|access-date=2019-08-27}}</ref> as well as documentation<ref>{{Cite web|url=https://nlp.johnsnowlabs.com/docs/en/quickstart|title=Quick Start - Spark NLP|website=nlp.johnsnowlabs.com|access-date=2019-08-27}}</ref> and a tutorial.<ref>{{Cite web|url=https://nlp.johnsnowlabs.com/docs/en/examples|title=Examples - Spark NLP|website=nlp.johnsnowlabs.com|access-date=2019-08-27}}</ref> Prebuilt versions of Spark NLP are available in PyPi and Anaconda Repository for Python development, in Maven Central for Java & Scala development, and in Spark Packages for Spark development.
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}
+
+[[Category:2017 software]]
+[[Category:Open-source artificial intelligence]]
+[[Category:Software using the Apache license]]
+[[Category:Free software programmed in Python]]
+[[Category:Free software programmed in Scala]]
+[[Category:Natural language processing toolkits]]

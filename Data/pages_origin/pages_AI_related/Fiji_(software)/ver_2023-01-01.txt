@@ -1,0 +1,71 @@
+{{Use dmy dates|date=April 2021}}
+{{Infobox software
+| name = Fiji
+| logo= FIJI (software) Logo.svg
+| logo size= 200px
+| screenshot =
+| caption = Fiji in action
+| developer = Johannes Schindelin, Ignacio Arganda-Carreras, Albert Cardona, Mark Longair, Benjamin Schmid, and others
+| latest release version = 2.9.0
+| latest release date = {{start date and age|2022|9|14}}<ref>{{cite web|url=https://github.com/fiji/fiji/tags|title=Tags - fiji/fiji|via=[[GitHub]]|access-date=26 November 2022}}</ref>
+| operating_system = any with [[Java platform|Java]] support
+| programming language = [[Java (programming language)|Java]]
+| license = [[GNU General Public License#Version 3|GPL v3]]<ref>{{cite web|url=https://github.com/fiji/fiji/blob/master/LICENSE.txt|title=LICENSE.txt file|via=[[GitHub]]|access-date=25 November 2022}}</ref> (some plugins have different licenses<ref>{{cite web|url=https://github.com/fiji/fiji/blob/master/LICENSES|title=LICENSES file|via=[[GitHub]]|access-date=25 November 2022}}</ref>)
+| genre = [[Image processing]] and [[Image analysis]]
+| repo = {{URL|https://github.com/fiji/fiji}}
+| website = {{URL|https://fiji.sc/}}
+}}
+[[File:20221126 17 58 02-Fiji (software) - Wikipedia.png|thumb|250px|Screenshot of Fiji in Windows 11]]
+'''Fiji''' (''Fiji Is Just ImageJ'')<ref>Primary reference: {{cite journal |author1=Johannes Schindelin |author2=Ignacio Arganda-Carreras |author3=Erwin Frise |author4=Verena Kaynig |author5=Mark Longair |author6=Tobias Pietzsch |author7=Stephan Preibisch |author8=Curtis Rueden |author9=Stephan Saalfeld |author10=Benjamin Schmid |author11=Jean-Yves Tinevez |author12=Daniel James White |author13=Volker Hartenstein |author14=Kevin Eliceiri |author15=Pavel Tomancak |author16=Albert Cardona |title=Fiji: an open-source platform for biological-image analysis |journal=Nature Methods |year=2012 |volume= 9 |pages=676–682 |doi=10.1038/nmeth.2019 |issue=7 |pmid=22743772 |pmc=3855844}}</ref><ref>Fiji was presented publicly for the first time on the ImageJ User and Developer Conference in November 2008.</ref> is an open source image processing package based on [[ImageJ2]].
+
+Fiji's main purpose is to provide a distribution of ImageJ2 with many bundled [[plug-in (computing)|plugins]]. Fiji features an integrated updating system and aims to provide users with a coherent menu structure, extensive documentation in the form of detailed algorithm descriptions and tutorials, and the ability to avoid the need to install multiple components from different sources.
+
+Fiji is also targeted at developers, through the use of a [[Git|version control system]], an issue tracker, dedicated development channels, and a rapid-prototyping infrastructure in the form of a script editor which supports [[BeanShell]], [[Jython]], [[JRuby]], [[Clojure]], [[Groovy]], [[JavaScript]], and other scripting languages, as well as [[just-in-time compilation|just-in-time]] Java development.
+
+==Plugins==
+Many plugins exist for ImageJ, that have a wide range of applications, but also a wide range of quality.<ref>Compare the presentations at the [https://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2008/doku.php?id=archive:imagej-user-and-developer-conference-2008:copy_of_programme:presentations:fiji-is-just-imagej-batteries-included 2nd ImageJ User and Developer Conference] in November 2008 and the [http://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010/doku.php?id=:archive:imagej-user-and-developer-conference-2010:presentations:schindelin:start 3rd ImageJ and User Developer Conference] in October 2010.</ref>
+
+Further, some plugins require specific versions of ImageJ, specific versions of third-party libraries, or additional Java components such as the Java compiler or [[Java 3D]].
+
+One of Fiji's principal aims is to make the installation of ImageJ, Java, Java 3D, the plugins, and further convenient components, as easy as possible. As a consequence, Fiji enjoys more and more active users.<ref>Compare with the [https://fiji.sc/Fiji_Usage Fiji Usage Map]</ref>
+
+==Audience==
+
+While Fiji was originally intended for neuroscientists (and continues to be so<ref>{{cite journal |author1=Longair Mark |author2=Baker DA |author3=Armstrong JD. |title=Simple Neurite Tracer: Open Source software for reconstruction, visualization and analysis of neuronal processes |journal=Bioinformatics |year=2011 |url=https://academic.oup.com/bioinformatics/article/27/17/2453/223685 |doi= 10.1093/bioinformatics/btr390 |volume=27 |issue=17 |pages=2453–4 |pmid=21727141 |doi-access=free}}</ref>), it accumulated enough functionality to attract scientists from a variety of fields, such as cell biology,<ref>{{cite journal |vauthors=Preibisch S, Saalfeld S, Tomancak P |title=Globally Optimal Stitching of Tiled 3D Microscopic Image Acquisitions |journal=Bioinformatics |date=April 2009 |pmid=19346324 |url= |doi=10.1093/bioinformatics/btp184 |volume=25 |issue=11 |pages=1463–5 |pmc=2682522 |url-status=dead}}</ref> parasitology,<ref>{{cite journal |vauthors=Hegge S, Kudryashev M, Smith A, Frischknecht F |title=Automated classification of ''Plasmodium'' sporozoite movement patterns reveals a shift toward productive motility during salivary gland infection |journal=Biotechnology Journal |date=May 2009 |pmid=19455538 |volume=4 |issue=6 |pages=903–13 |doi=10.1002/biot.200900007 |s2cid=7371409 |url-status=dead |url=http://www3.interscience.wiley.com/journal/122393807/abstract |archive-url=https://web.archive.org/web/20090801122924/http://www3.interscience.wiley.com/journal/122393807/abstract |archive-date=2009-08-01}}</ref> genetics, life sciences in general, materials science, etc. As stated on the official website, the primary focus is "life sciences", although Fiji provides many tools helping with scientific image analysis in general.<ref>The [https://fiji.sc/ Fiji Wiki], Retrieved 2012-11-01.</ref>
+
+Fiji is most popular in the [[life sciences]] community, where the 3D Viewer<ref>{{cite journal |doi=10.1186/1471-2105-11-274 |author1=Benjamin Schmid |author2=Johannes Schindelin |author3=Albert Cardona |author4=Mark Longair |author5=Martin Heisenberg |title=A high-level 3D visualization API for Java and ImageJ |journal=BMC Bioinformatics |year=2010 |volume=11 |page=274 |pmid=20492697 |pmc=2896381}}</ref> helps visualizing data obtained through [[optical microscope|light microscopy]], and for which Fiji provides [[image registration|registration]],<ref>{{cite journal |doi=10.1038/nmeth0610-418 |author1=Stephan Preibisch |author2=Stephan Saalfeld |author3=Johannes Schindelin |author4=Pavel Tomancak |year=2010 |title=Software for bead-based registration of selective plane illumination microscopy data |journal=Nature Methods |volume=7 |issue=6 |pages=418–419 |pmid=20508634 |s2cid=39609830}}</ref> [[image segmentation|segmentation]], and other advanced image processing algorithms.
+
+The Fiji component TrakEM2 was successfully used and enhanced to analyze [[neuron]]al lineages in larval [[Drosophila melanogaster|''Drosophila'']] brains.<ref>{{cite journal |author1=Albert Cardona |author2=Stephan Saalfeld |author3=Ignacio Arganda |author4=Wayne Pereanu |author5=Johannes Schindelin |author6=Volker Hartenstein |year=2010 |title=Identifying Neuronal Lineages of Drosophila by Sequence Analysis of Axon Tracts |journal=The Journal of Neuroscience |pmid=20519528 |volume=30 |issue=22 |pmc=2905806 |pages=7538–7553 |doi=10.1523/JNEUROSCI.0186-10.2010 |url=}}</ref>
+
+Fiji was prominently featured in Nature Methods review supplement on visualization.<ref>{{cite journal |doi=10.1038/nmeth.1431 |pmid=20195255 |author1=Thomas Walter |author2=David W Shattuck |author3=Richard Baldock |author4=Mark E Bastin |author5=Anne E Carpenter |author6=Suzanne Duce |author7=Jan Ellenberg |author8=Adam Fraser |author9=Nicholas Hamilton |author10=Steve Pieper |author11=Mark A Ragan |author12=Jurgen E Schneider |author13=Pavel Tomancak |author14=Jean-Karim Hériché |title=Visualization of image data from cells to organisms |journal=Nature Methods |year=2010 |volume= 7 |issue= 3s |pages=S26–S41 |pmc=3650473}}</ref>
+
+==Development==
+Fiji is fully [[open source]]. Its sources live in a public [[Git]] repository.
+
+Fiji was accepted as organization into the [[Google Summer of Code]] 2009, and completed two projects.
+
+The scripting framework, which supports [[JavaScript]], [[Jython]], [[JRuby]], [[Clojure]], [[BeanShell]], and other languages, is an integral part of the development of Fiji; many developers prototype their plugins in one of the mentioned scripting languages, and gradually turn the prototypes into proper [[Java (programming language)|Java]] code. To this end, as one of the aforementioned Google Summer of Code projects, a script editor was added with [[syntax highlighting]] and in-place code execution.
+
+The scripting framework is included in the Fiji releases, so that advanced users can use such scripts in their common workflow.
+
+The development benefits from occasional [[hackathon]]s, where life scientists with computational background meet and improve their respective plugins of interest.
+
+==Script editor==
+The script editor in Fiji supports rapid prototyping of scripts and ImageJ plugins, making Fiji a powerful tool to develop new image processing algorithms and explore new image processing techniques with ImageJ.<ref>''Scripting in Fiji (Fiji Is Just ImageJ)'' at [https://imagejconf.tudor.lu/archive/imagej-user-and-developer-conference-2010/doku.php?id=:archive:imagej-user-and-developer-conference-2010:workshops:schindelin:start 3rd User and Developer Conference] in October 2010</ref><ref>Albert Cardona's crash course [http://www.ini.uzh.ch/~acardona/fiji-tutorial/index.html ''Jython scripting with Fiji''].</ref>
+
+==Supported platforms==
+Fiji runs on Windows, Linux, and Mac OS X, Intel 32-bit or 64-bit, with limited support for MacOSX/PPC.
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|https://fiji.sc/}}
+* {{Github|fiji/fiji}}
+* [https://imagej.net/ImageJ2 ImageJ2], the version of [[ImageJ]] upon which Fiji is built
+
+{{Image processing software}}
+
+[[Category:Computer vision software]]
+[[Category:Neuroimaging software]]
+[[Category:Java (programming language) software]]

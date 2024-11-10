@@ -1,0 +1,103 @@
+In measurements, the measurement obtained can suffer from two types of uncertainties.<ref>{{Cite book|title=An introduction to error analysis : the study of uncertainties in physical measurements|last=Taylor, John R. (John Robert), 1939-|date=1997|publisher=University Science Books|isbn=0935702423|edition= 2nd|location=Sausalito, Calif.|oclc=34150960}}</ref> The first is the random uncertainty which is due to the noise in the process and the measurement. The second contribution is due to the systematic uncertainty which may be present in the measuring instrument. Systematic errors, if detected, can be easily compensated as they are usually constant throughout the measurement process as long as the measuring instrument and the measurement process are not changed. But it can not be accurately known while using the instrument if there is a [[systematic error]] and if there is, how much? Hence, systematic uncertainty could be considered as a contribution of a fuzzy nature.
+
+This systematic error can be approximately modeled based on our past data about the measuring instrument and the process.
+
+Statistical methods can be used to calculate the total uncertainty from both systematic and random contributions in a measurement.<ref>{{Cite journal|last=Pietrosanto|first=A.|last2=Betta|first2=G.|last3=Liguori|first3=C.|date=1999-01-01|title=Structured approach to estimate the measurement uncertainty in digital signal elaboration algorithms|url=https://digital-library.theiet.org/content/journals/10.1049/ip-smt_19990001|journal=IEE Proceedings - Science, Measurement and Technology|language=en|volume=146|issue=1|pages=21–26|doi=10.1049/ip-smt:19990001|issn=1350-2344}}</ref><ref>{{Cite journal|last=Betta|first=Giovanni|last2=Liguori|first2=Consolatina|last3=Pietrosanto|first3=Antonio|date=2000-06-01|title=Propagation of uncertainty in a discrete Fourier transform algorithm|journal=Measurement|volume=27|issue=4|pages=231–239|doi=10.1016/S0263-2241(99)00068-8|issn=0263-2241}}</ref><ref>{{Cite journal|last=Ferrero|first=A.|last2=Lazzaroni|first2=M.|last3=Salicone|first3=S.|date=2002|title=A calibration procedure for a digital instrument for electric power quality measurement|journal=IEEE Transactions on Instrumentation and Measurement|language=en|volume=51|issue=4|pages=716–722|doi=10.1109/TIM.2002.803293|issn=0018-9456}}</ref> But, the computational complexity is very high and hence, are not desirable.
+
+[[Lotfi A. Zadeh|L.A.Zadeh]] introduced the concepts of fuzzy variables and fuzzy sets.<ref name = "zadeh2">{{cite q | Q25938993 |last1=Zadeh |first1=L.A. | author-link1 = Lotfi A. Zadeh | journal = [[Information and Computation|Information and Control]] | doi-access = free }}</ref><ref name = "zadeh3">{{cite q | Q56083455 |last1=Zadeh |first1=L.A. | author-link1 = Lotfi A. Zadeh | journal =  [[IEEE Systems, Man, and Cybernetics Society#Publications|IEEE Transactions on Systems, Man, and Cybernetics]] }}</ref> Fuzzy variables are based on the theory of possibility and hence are possibility distributions. This makes them suitable to handle any type of uncertainty, i.e., both systematic and random contributions to the total uncertainty.<ref>{{Cite journal|last=Mauris|first=G.|last2=Berrah|first2=L.|last3=Foulloy|first3=L.|last4=Haurat|first4=A.|date=2000|title=Fuzzy handling of measurement errors in instrumentation|journal=IEEE Transactions on Instrumentation and Measurement|volume=49|issue=1|pages=89–93|doi=10.1109/19.836316}}</ref><ref>{{Cite journal|last=Urbanski|first=Michał K.|last2=Wa̧sowski|first2=Janusz|date=2003-07-01|title=Fuzzy approach to the theory of measurement inexactness|journal=Measurement|series=Fundamental of Measurement|volume=34|issue=1|pages=67–74|doi=10.1016/S0263-2241(03)00021-6|issn=0263-2241}}</ref><ref>{{Cite journal|last=Ferrero|first=A.|last2=Salicone|first2=S.|date=2003|title=An innovative approach to the determination of uncertainty in measurements based on fuzzy variables|journal=IEEE Transactions on Instrumentation and Measurement|language=en|volume=52|issue=4|pages=1174–1181|doi=10.1109/TIM.2003.815993|issn=0018-9456}}</ref>
+
+'''Random-fuzzy variable (RFV)''' is a [[Type-2 fuzzy sets and systems|type 2 fuzzy variable]],<ref>{{Cite book|last=Castillo|first=Oscar|last2=Melin|first2=Patricia|last3=Kacprzyk|first3=Janusz|last4=Pedrycz|first4=Witold|date=2007|chapter=Type-2 Fuzzy Logic: Theory and Applications|pages=145|doi=10.1109/grc.2007.118|title=2007 IEEE International Conference on Granular Computing (GRC 2007)|isbn=978-0-7695-3032-1}}</ref> defined using the mathematical possibility theory,<ref name = "zadeh2" /><ref name = "zadeh3" /> used to represent the entire information associated to a measurement result. It has an internal possibility distribution and an external possibility distribution called membership functions. The internal distribution is the uncertainty contributions due to the systematic uncertainty and the bounds of the RFV are because of the random contributions. The external distribution gives the uncertainty bounds from all contributions.
+
+==Definition==
+[[File:Random-Fuzzy Variable.png|thumb|right|upright=2.0|{{center|Random-Fuzzy Variable}}]]
+A Random-fuzzy Variable (RFV) is defined as a type 2 fuzzy variable which satisfies the following conditions:<ref name = "saliconebook">{{Cite book|title=Measuring uncertainty within the theory of evidence|last=Salicone, Simona|others=Prioli, Marco|isbn=9783319741390|location=Cham, Switzerland|oclc=1032810109}}</ref>
+* Both the internal and the external functions of the RFV can be identified.
+* Both the internal and the external functions are modeled as possibility distributions(pd).
+* Both the internal and external functions have a unitary value for possibility to the same interval of values.
+
+An RFV can be seen in the figure. The external membership function is the distribution in blue and the internal membership function is the distribution in red. Both the membership functions are possibility distributions. Both the internal and external membership functions have a unitary value of possibility only in the rectangular part of the RFV. So, all three conditions have been satisfied.
+
+If there are only systematic errors in the measurement, then the RFV simply becomes a [[Fuzzy set|fuzzy variable]] which consists of just the internal membership function. Similarly, if there is no systematic error, then the RFV becomes a [[Fuzzy set|fuzzy variable]] with just the random contributions and therefore, is just the possibility distribution of the random contributions.
+
+==Construction==
+
+A Random-fuzzy variable can be constructed using an Internal possibility distribution(''r<sub>internal</sub>'') and a random possibility distribution(''r<sub>random</sub>'').
+
+===The random distribution(''r<sub>random</sub>'')===
+
+''r<sub>random</sub>'' is the possibility distribution of the random contributions to the uncertainty. Any measurement instrument or process suffers from [[random error]] contributions due to intrinsic noise or other effects.
+
+This is completely random in nature and is a normal probability distribution when several random contributions are combined according to the [[Central limit theorem]].<ref>{{Cite book|title=Introduction to Probability and Statistics for Engineers and Scientists.|last=Ross, Sheldon M.|date=2009|publisher=Elsevier Science|isbn=9780080919379|edition= 4th|location=Burlington|oclc=761646775}}</ref>
+
+But, there can also be random contributions from other probability distributions such as a [[Uniform distribution (continuous)|uniform distribution]], [[gamma distribution]] and so on.
+
+The probability distribution can be modeled from the measurement data. Then, the probability distribution can be used to model an equivalent possibility distribution using the maximally specific probability-possibility transformation.<ref>{{Cite journal|last=KLIR†|first=GEORGE J.|last2=PARVIZ|first2=BEHZAD|date=1992-08-01|title=Probability-Possibility Transformations: A Comparison|journal=International Journal of General Systems|volume=21|issue=3|pages=291–310|doi=10.1080/03081079208945083|issn=0308-1079}}</ref>
+
+Some common probability distributions and the corresponding possibility distributions can be seen in the figures.
+[[File:Normal distribution in probability and possibility.png|thumb|left|upright=2.0|{{center|Normal distribution in probability and possibility.}}]]
+[[File:Uniform distribution in probability and possibility.png|thumb|right|upright=2.0|{{center|Uniform distribution in probability and possibility.}}]]
+[[File:Triangular distribution in probability and possibility.png|thumb|center|upright=2.0|{{center|Triangular distribution in probability and possibility.}}]]
+
+===The internal distribution(''r<sub>internal</sub>'')===
+
+''r<sub>internal</sub>'' is the internal distribution in the RFV which is the possibility distribution of the systematic contribution to the total uncertainty. This distribution can be built based on the information that is available about the measuring instrument and the process.
+
+The largest possible distribution is the uniform or rectangular possibility distribution. This means that every value in the specified interval is equally possible. This actually represents the state of total ignorance according to the [[Dempster–Shafer theory|theory of evidence]]<ref>{{Cite book|title=A mathematical theory of evidence|last=Shafer, Glenn, 1946-|date=1976|publisher=Princeton University Press|isbn=0691081751|location=Princeton, N.J.|oclc=1859710|url-access=registration|url=https://archive.org/details/mathematicaltheo0000shaf}}</ref> which means it represents a scenario in which there is maximum lack of information.
+
+This distribution is used for the systematic error when we have absolutely no idea about the systematic error except that it belongs to a particular interval of values. This is quite common in measurements.
+
+But, in certain cases, it may be known that certain values have a higher or lower degrees of belief than certain other values. In this case, depending on the degrees of belief for the values, an appropriate possibility distribution could be constructed.
+
+===The construction of the external distribution(''r<sub>external</sub>'') and the RFV===
+
+After modeling the random and internal possibility distribution, the external membership function, '''''r<sub>external</sub>''''', of the RFV can be constructed by using the following equation:<ref>{{Cite journal|last=Ferrero|first=Alessandro|last2=Prioli|first2=Marco|last3=Salicone|first3=Simona|date=2015|title=Uncertainty propagation through non-linear measurement functions by means of joint Random-Fuzzy Variables|journal=2015 IEEE International Instrumentation and Measurement Technology Conference (I2MTC) Proceedings|location=Pisa, Italy|publisher=IEEE|pages=1723–1728|doi=10.1109/I2MTC.2015.7151540|isbn=9781479961146}}</ref>
+
+<div class="center"> <math>r_{\textit{external}}(x)=\sup_{x^\prime}T_{min}[r_{\textit{random}}(x-x^\prime+x^{*}), r_{\textit{internal}}(x^\prime)] </math></div>
+
+where <math>x^{*}</math> is the mode of <math>r_{\textit{random}}</math>, which is the peak in the membership function of <math>r_{random}</math> and ''T<sub>min</sub>'' is the minimum [[t-norm|triangular norm]].<ref>{{Cite journal|last=Klement|first=Erich Peter|last2=Mesiar|first2=Radko|last3=Pap|first3=Endre|date=2004-04-01|title=Triangular norms. Position paper I: basic analytical and algebraic properties|journal=Fuzzy Sets and Systems|series=Advances in Fuzzy Logic|volume=143|issue=1|pages=5–26|doi=10.1016/j.fss.2003.06.007|issn=0165-0114}}</ref>
+
+RFV can also be built from the internal and random distributions by considering the ''α''-cuts of the two possibility distributions(PDs).
+
+An ''α''-cut of a fuzzy variable F can be defined as <ref name="zadeh1" /><ref name = "kaufman" />
+
+<div class="center"><math>F_{\alpha } = \{a\,\vert\,\mu _{\rm F} (a) \geq \alpha\}\qquad\textit{where}\qquad0\leq\alpha\leq1</math></div>
+
+So, essentially an ''α''-cut is the set of values for which the value of the membership function <math>\mu _{\rm F} (a)</math> of the fuzzy variable is greater than ''α''. So, this gives the upper and lower bounds of the fuzzy variable F for each ''α''-cut.
+
+The ''α''-cut of an RFV, however, has 4 specific bounds and is given by <math>RFV^{\alpha} = [X_{a}^{\alpha}, X_{b}^{\alpha}, X_{c}^{\alpha}, X_{d}^{\alpha}]</math>.<ref name = "saliconebook" /> <math>X_{a}^{\alpha}</math> and <math>X_{d}^{\alpha}</math> are the lower and upper bounds respectively of the external membership function(''r<sub>external</sub>'') which is a fuzzy variable on its own. <math>X_{b}^{\alpha}</math> and <math>X_{c}^{\alpha}</math> are the lower and upper bounds respectively of the internal membership function(''r<sub>internal</sub>'') which is a fuzzy variable on its own.
+
+To build the RFV, let us consider the ''α''-cuts of the two PDs i.e., ''r<sub>random</sub>'' and ''r<sub>internal</sub>'' for the same value of ''α''. This gives the lower and upper bounds for the two ''α''-cuts. Let them be <math>[X_{LR}^{\alpha}, X_{UR}^{\alpha}]</math> and <math>[X_{LI}^{\alpha}, X_{UI}^{\alpha}]</math> for the random and internal distributions respectively. <math>[X_{LR}^{\alpha}, X_{UR}^{\alpha}]</math> can be again divided into two sub-intervals <math>[X_{LR}^{\alpha}, x^{*}]</math> and <math>[x^{*}, X_{UR}^{\alpha}]</math> where <math>x^{*}</math> is the mode of the fuzzy variable. Then, the ''α''-cut for the RFV for the same value of ''α'', <math>RFV^{\alpha} = [X_{a}^{\alpha}, X_{b}^{\alpha}, X_{c}^{\alpha}, X_{d}^{\alpha}]</math> can be defined by <ref name = "saliconebook" />
+
+<div class="center"><math>X_{a}^{\alpha} = X_{LI}^{\alpha}-(x^{*}-X_{LR}^{\alpha})</math></div>
+
+<div class="center"><math>X_{b}^{\alpha} = X_{LI}^{\alpha}</math></div>
+
+<div class="center"><math>X_{c}^{\alpha} = X_{UI}^{\alpha}</math></div>
+
+<div class="center"><math>X_{d}^{\alpha} = X_{UI}^{\alpha}-(X_{UR}^{\alpha}-x^{*})</math></div>
+
+Using the above equations, the ''α''-cuts are calculated for every value of ''α'' which gives us the final plot of the RFV.
+
+A Random-Fuzzy variable is capable of giving a complete picture of the random and systematic contributions to the total uncertainty from the ''α''-cuts for any confidence level as the confidence level is nothing but ''1-α''.<ref name="zadeh1">{{cite q | Q57275767 |last1=Zadeh |first1=L.A. | author-link1 = Lotfi A. Zadeh | publisher = [[Springer Science+Business Media|Springer]] }}</ref><ref name = "kaufman">{{Cite book|title=Introduction to fuzzy arithmetic : theory and applications|last=Kaufmann, A. (Arnold), 1911-|date=1991|publisher=Van Nostrand Reinhold Co|others=Gupta, Madan M.|isbn=0442008996|edition= [New ed.]|location=New York, N.Y.|oclc=24309785}}</ref>
+
+An example for the construction of the corresponding external membership function(''r<sub>external</sub>'') and the RFV from a random PD and an internal PD can be seen in the following figure.
+[[File:Construction of an RFV.png|thumb|center|upright=3.0|{{center|Construction of an external membership function and the RFV from internal and random possibility distributions.}}]]
+
+==See also==
+* [[Fuzzy set]]
+* [[T-norm]]
+* [[Type-2 fuzzy sets and systems]]
+* [[Observational error]]
+* [[Dempster–Shafer theory]]
+* [[Possibility theory]]
+* [[Probability theory]]
+* [[Probability distribution]]
+
+==References==
+{{reflist|30em|refs=
+
+
+}}
+
+[[Category:Fuzzy logic]]
+[[Category:Metrology]]

@@ -1,0 +1,17 @@
+{{Orphan|date=June 2017}}
+{{For|the similar but unrelated term in linguistics|Linguistic variable}}
+In [[artificial intelligence]], [[operations research]], and related fields, a '''linguistic value''' (for some authors '''linguistic variable''') is a [[natural language]] term which is derived using quantitative or qualitative reasoning such as with probability and statistics or [[fuzzy sets and systems]].<ref>''Fuzzy Logic for Business and Industry'' Earl Cox, Charles River Media, pp188,214,302,306,352  1995 {{ISBN|1-886801-01-0}}</ref><ref>''The Fuzzy Systems Handbook, Second Edition'' Earl Cox, Academic Press, 1999 {{ISBN|0-12-194455-7}} Ch 6 Fuzzy Reasoning, § 1 The Role of Linguistic Variables</ref>
+<ref>''On the Modeling of Linguistic Information using Random Sets'' Hung T. Nguyen p. 242 in Readings in Fuzzy Sets for Intelligent Systems. Morgan Kaufmann 1993. Dubois, Prade, and Yager eds.</ref>
+<ref>''Fuzzy Sets And The Social Nature of Truth'' J. Goguen. CS UCLA p. 49-67 in Advances in Fuzzy Sets and Systems, North Holland, 1979. § 2.3 ''Linguistic Truth Values''. {{ISBN|0-444-85372-3}}</ref>
+
+==Example of linguistic value==
+
+For example, if a shuttle heat shield is deemed of having a linguistic value of a "very low" percentage of damage in re-entry, based upon knowledge from experts in the field, that probability would be given a value of say, 5%.  From there on out, if it were to be used in an equation, the variable of percentage of damage will be at 5% if it deemed very low percentage.
+
+==References==
+{{Reflist}}
+
+[[Category:Knowledge representation]]
+
+
+{{AI-stub}}

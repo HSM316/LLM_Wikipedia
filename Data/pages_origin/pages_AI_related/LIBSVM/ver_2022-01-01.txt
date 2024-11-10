@@ -1,0 +1,57 @@
+{{Infobox software
+| name                   = A Library for Support Vector Machines
+| title                  = LIBSVM
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| developer              = Chih-Chung Chang and [[Chih-Jen Lin]]
+| latest release version = 3.25
+| latest release date    = {{Start date and age|2021|04|14}}
+| operating_system       = [[Cross-platform]]
+| platform               = 
+| programming language   = [[Java (programming language)|Java]], [[C++]]
+| genre                  = [[Machine Learning]]
+| license                = [[BSD licenses|BSD]]
+| website                = {{URL|http://www.csie.ntu.edu.tw/~cjlin/libsvm}}
+}}
+
+'''LIBSVM''' and '''LIBLINEAR''' are two popular [[open source software|open source]] [[machine learning]] libraries, both developed at the [[National Taiwan University]] and both written in [[C++]] though with a [[C (programming language)|C]] API. LIBSVM implements the [[Sequential minimal optimization]] (SMO) algorithm for [[kernel trick|kernelized]] [[support vector machine]]s (SVMs), supporting [[statistical classification|classification]] and [[regression analysis|regression]].<ref>{{cite journal
+|last1=Chang |first1=Chih-Chung
+|last2=Lin |first2=Chih-Jen
+|title=LIBSVM: A library for support vector machines
+|journal=ACM Transactions on Intelligent Systems and Technology
+|volume=2 |issue=3 |year=2011
+|doi=10.1145/1961189.1961199
+}}</ref>
+LIBLINEAR implements [[linear classifier|linear]] SVMs and [[logistic regression]] models trained using a [[coordinate descent]] algorithm.<ref>{{cite journal
+|author1=R.-E. Fan
+|author2=K.-W. Chang
+|author3=C.-J. Hsieh
+|author4=X.-R. Wang
+|author5=C.-J. Lin
+|title=LIBLINEAR: A Library for Large Linear Classification
+|journal=[[Journal of Machine Learning Research]]
+|url=http://www.jmlr.org/papers/v9/fan08a.html
+|volume=9 |pages=1871–1874 |year=2008
+}}</ref>
+
+The SVM learning code from both libraries is often reused in other open source machine learning toolkits, including [[General Architecture for Text Engineering|GATE]], [[KNIME]], [[Orange (software)|Orange]]<ref>{{cite journal |author1=Janez Demšar |author2=Tomaž Curk |author3=Aleš Erjavec |author4=Črt Gorup |author5=Tomaž Hočevar |author6=Mitar Milutinovič |author7=Martin Možina |author8=Matija Polajnar |author9=Marko Toplak |author10=Anže Starič |author11=Miha Stajdohar |author12=Lan Umek |author13=Lan Žagar |author14=Jure Žbontar |author15=Marinka Žitnik |author16=Blaž Zupan |title=Orange: data mining toolbox in Python |journal=[[Journal of Machine Learning Research]] |volume=14 |issue=1 |year=2013 |pages=2349–2353 |url=http://eprints.fri.uni-lj.si/2267/1/2013-Demsar-Orange-JMLR.pdf}}</ref> and [[scikit-learn]].
+Bindings and ports exist for programming languages such as [[Java (programming language)|Java]], [[MATLAB]], [[R (programming language)|R]], and [[Python (programming language)|Python]].
+
+Both libraries are [[free software]] released under the 3-clause [[BSD license]].<ref>{{cite web |title=COPYRIGHT |url=http://www.csie.ntu.edu.tw/~cjlin/libsvm/COPYRIGHT |website=LIBSVM |publisher=National Taiwan University}}</ref><ref>{{cite web |title=COPYRIGHT |url=http://www.csie.ntu.edu.tw/~cjlin/liblinear/COPYRIGHT |website=LIBLINEAR |publisher=National Taiwan University}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://www.csie.ntu.edu.tw/~cjlin/libsvm/ LIBSVM homepage]
+* [http://www.csie.ntu.edu.tw/~cjlin/liblinear/ LIBLINEAR homepage]
+* [https://cran.r-project.org/web/packages/LiblineaR/index.html LIBLINEAR in R]
+
+[[Category:C++ libraries]]
+[[Category:Data mining and machine learning software]]
+[[Category:Free statistical software]]
+[[Category:Java (programming language) libraries]]
+[[Category:Software using the BSD license]]
+
+{{software-stub}}

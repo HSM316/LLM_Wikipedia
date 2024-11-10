@@ -1,0 +1,119 @@
+'''Pop music automation''' is a field of study among musicians and computer scientists with a goal of producing successful [[pop music]] algorithmically. It is often based on the premise that pop music is especially formulaic, unchanging, and easy to compose. The idea of automating pop [[music composition]] is related to many ideas in [[algorithmic music]], [[Artificial Intelligence]] (AI) and [[computational creativity]].
+
+==Overview: automation in music==
+[[Algorithm]]s (or, at the very least, formal sets of rules) have been used to compose music for centuries; the procedures used to plot voice-leading in [[counterpoint]], for example, can often be reduced to algorithmic determinacy.  Now the term is usually reserved, however, for the use of formal procedures to make music without human intervention.
+
+Classical music automation software exists that generates music in the style of [[Mozart]] and [[Bach]] and [[jazz]]. Most notably, [[David Cope]]<ref>{{citation|title = Computer Models of Musical Creativity|first = David|last = Cope|year = 2006|publisher = Cambridge, MA: MIT Press}}</ref> has written a software system called "Experiments in Musical Intelligence" (or "EMI") that is capable of analyzing and generalizing from existing music by a human composer to generate novel musical compositions in the same style. EMI's output is convincing enough to persuade human listeners that its music is human-generated to a high level of competence.
+
+Creativity research in jazz has focused on the process of [[Jazz improvisation|improvisation]] and the cognitive demands that this places on a musical agent: reasoning about time, remembering and conceptualizing what has already been played, and planning ahead for what might be played next.
+
+Inevitably associated with Pop music automation is [[musical analysis|Pop music analysis]].
+
+Projects in Pop music automation may include, but are not limited to, ideas in melody creation and song development, vocal generation or improvement, automatic accompaniment and lyric composition.
+
+==Automatic accompaniment==
+Some systems exist that automatically choose chords to accompany a vocal melody in real-time. A user with no musical experience can create a song with instrumental accompaniment just by singing into a microphone.
+An example is a Microsoft Research project called Songsmith,<ref>[http://research.microsoft.com/~dan/mysong/] and [http://dub.washington.edu/djangosite/media/papers/tmpb2x1ZD.pdf]</ref> which trains a [[Hidden Markov model]] using a music database and uses that
+model to select chords for new melodies.
+
+==Melody generation==
+Automatic melody generation is often done with a [[Markov chain]], the states of the system become note or pitch values, and a [[probability vector]] for each note is constructed, completing a transition probability matrix (see below). An algorithm is constructed to produce and output note values based on the transition matrix weightings, which could be [[MIDI]] note values, frequency ([[Hertz|Hz]]), or any other desirable metric.
+
+{| class="wikitable" style="float: left"
+|+ 1st-order matrix
+! Note !! A !! C# !! Eb
+|-
+! A
+| 0.1 || 0.6 || 0.3
+|-
+! C#
+| 0.25 || 0.05 || 0.7
+|-
+! Eb
+| 0.7 || 0.3 || 0
+|}
+
+{| class="wikitable" style="float: left"
+|+ 2nd-order matrix
+! Note !! A !! D !! G
+|-
+! AA
+| 0.18 || 0.6 || 0.22
+|-
+! AD
+| 0.5 || 0.5 || 0
+|-
+! AG
+| 0.15 || 0.75 || 0.1
+|-
+! DD
+| 0 || 0 || 1
+|-
+! DA
+| 0.25 || 0 || 0.75
+|-
+! DG
+| 0.9 || 0.1 || 0
+|-
+! GG
+| 0.4 || 0.4 || 0.2
+|-
+! GA
+| 0.5 || 0.25 || 0.25
+|-
+! GD
+| 1 || 0 || 0
+|-
+|}
+{{clear}}
+
+A second-order Markov chain can be introduced by considering the current state ''and'' also the previous state, as indicated in the second table. Higher, ''n''th-order chains tend to "group" particular notes together, while 'breaking off' into other patterns and sequences occasionally. These higher-order chains tend to generate results with a sense of [[Phrase (music)|phrasal]] structure, rather than the 'aimless wandering' produced by a first-order system.<ref name=Roads>{{Citation|author=Curtis Roads (ed.)|title=The Computer Music Tutorial| year=1996|publisher=MIT Press|isbn= 0-262-18158-4 }}</ref>
+
+==Lyric composition==
+Automated lyric creating software may take forms such as:
+
+*Selecting words according to their rhythm
+The Tra-la-Lyrics system<ref>{{citation|title = Tra-la-lyrics: an approach to generate text based on rhythm|first=Hugo|last=Gonçalo Oliveira|year=2007|publisher=Proceedings of the 4th International Joint Workshop on Computational Creativity, pp. 47–55, London, UK, (June 2007)|display-authors=etal}}</ref> produces song lyrics, in Portuguese, for a given melody. This not only involves matching each word syllable with a note in the melody, but also matching the word's stress with the strong beats of the melody.
+
+*Parsing existing Pop music (for content or word choice e.g.)
+This involves [[natural language processing]].
+Pablo Gervás<ref>{{citation|title = An expert system for the composition of formal Spanish poetry|first=Pablo|last=Gervás|year=2001|publisher=Journal of Knowledge-Based Systems 14(3-4) pp 181&ndash;188}}</ref> has developed a noteworthy system called ASPERA that employs a [[case-based reasoning]] (CBR) approach to generating poetic formulations of a given input text via a composition of poetic fragments that are retrieved from a case-base of existing poems. Each poem fragment in the ASPERA case-base is annotated with a prose string that expresses the meaning of the fragment, and this prose string is used as the retrieval key for each fragment. [[Meter (poetry)|Metrical]] rules are then used to combine these fragments into a well-formed poetic structure.
+
+*[[Artificial Creativity#Metaphor and simile|Automatic analogy]] or [[Artificial Creativity#Story generation|story creation]]
+Programs like [[TALE-SPIN]]
+<ref>{{citation|title=TALE-SPIN|first=James|last=Meehan|year=1981|publisher=Shank, R. C. and Riesbeck, C. K., (eds.), Inside Computer Understanding: Five Programs plus Miniatures. Hillsdale, NJ: Lawrence Erlbaum Associates}}</ref> and The MINSTREL<ref>{{citation|title=The Creative Process: A Computer Model of Storytelling|first = S.R.|last=Turner|year=1994|publisher =Hillsdale, NJ: Lawrence Erlbaum Associates}}</ref> system represent a complex elaboration of this basis approach, distinguishing a range of character-level goals in the story from a range of author-level goals for the story. Systems like Bringsjord's BRUTUS<ref>{{citation|title = Artificial Intelligence and Literary Creativity. Inside the Mind of BRUTUS, a Storytelling Machine.   | first = Ferrucci, D. A.  |last =  Bringsjord, S. | year = 2000 | publisher = Hillsdale NJ: Lawrence Erlbaum Associates }}</ref> can create stories with complex inter-personal themes like betrayal. <br>
+On-line metaphor generation systems like 'Sardonicus' or 'Aristotle'<ref>{{citation|title=Comprehending and Generating Apt Metaphors: A Web-driven, Case-based Approach to Figurative Language|first=Hao, Yanfen|last=Veale, Tony|year=2007|publisher=Proceedings of AAAI 2007, the 22nd AAAI Conference on Artificial Intelligence. Vancouver, Canada}}</ref> can suggest lexical metaphors for a given descriptive goal (e.g., to describe a supermodel as skinny, the source terms “pencil”, “whip”, “whippet”, “rope”, “stick-insect” and “snake” are suggested). <!-- Some of the items in this list had links to their appropriate entries, however they have little relevance to the main article. -->
+
+*Free association of grouped words
+Using a language database (such as [[wordnet]]) one can create musings on a subject that may be weak grammatically but are still sensical. See such projects as the [http://nodebox.net/code/index.php/Flowerewolf Flowerewolf] automatic poetry generator or the 
+[http://dev.null.org/dadaengine/ Dada engine].
+
+==Software==
+===More or less free===
+*[http://www.aisings.com AI Sings - Algorithmic Composition by Learning]
+*[http://www.kvraudio.com/get/1472.html  BreathCube] by xoxos. Simple lyrical vocal content is generated with simple music.
+*[http://www.kvraudio.com/get/1456.html  CubeBreath] by xoxos. Audio input is vocoded in tune with the music.
+*[http://www.mu-tech.co.jp/AcsWebE/setparam.asp Midi Internet Algorithmic Composition ]
+*[http://composerprogrammer.com/infno.html infno] - Infinite generator of electronic dance music and synth pop.
+
+===Commercial===
+*[http://www.pgmusic.com/bandbox.htm Band in a box] generates any element, potentially creates whole new songs from scratch.
+*[http://www.palette-mct.com/ Musical Palette - Melody Composing Tool]
+*[http://research.microsoft.com/en-us/um/redmond/projects/songsmith/ SongSmith]:Automatic Accompaniment for Vocal Melodies
+*[http://www.write-music.com/ Ludwig 3.0] automatic accompaniment, writes arrangements for given instruments, plays its own songs for an infinitely long time.
+*[http://hp.vector.co.jp/authors/VA014815/music/English/autocomp.html Automated Composing System] creates music in many different styles
+
+==See also==
+*[[Algorithmic music]]
+*[[Artificial Creativity]]
+*[[Computer music]]
+
+==References==
+{{Reflist}}
+
+{{Pop music}}
+
+[[Category:Pop music]]
+[[Category:Artificial intelligence applications]]
+[[Category:Markov models]]
+[[Category:Computer music]]

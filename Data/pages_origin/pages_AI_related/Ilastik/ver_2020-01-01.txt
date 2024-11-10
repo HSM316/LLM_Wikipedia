@@ -1,0 +1,45 @@
+{{lowercase title}}
+{{Infobox Software
+| name = ilastik
+| developer = Christoph Sommer, Christoph Straehle, Thorben Kröger, Bernhard X. Kausler, Ullrich Koethe, Fred A. Hamprecht and others
+| released = {{Start date and age|2011}}
+| latest_release_version = 1.3.3
+| latest_release_date = {{Start date and age|2019|10|07}}
+| operating_system = Any ([[Python (programming language)|Python]] based)
+| genre = [[Image processing]] & [[Computer vision]] & [[Machine Learning]]
+| license = [[GPL2]] 
+| website = {{URL|www.ilastik.org}}
+}}
+
+'''ilastik'''<ref>{{cite book|last=Sommer|first=C|author2=Straehle C |author3=Koethe U |author4=Hamprecht FA  |title=ilastik: Interactive Learning and Segmentation Toolkit|journal=IEEE International Symposium on Biomedical Imaging|year=2011|pages=230–33|doi=10.1109/ISBI.2011.5872394|isbn=978-1-4244-4127-3}}</ref>  is a user-friendly free [[Open-source software|open source]] software for [[image classification]] and [[Segmentation (image processing)|segmentation]]. No previous experience in image processing is required to run the software.
+
+==Features==
+ilastik allows user to annotate an arbitrary number of classes in images with a [[Mouse (computing)|mouse]] interface. Using these user annotations and the generic ([[nonlinear]]) image [[Feature (computer vision)|features]], the user can train a [[random forest]] classifier. ilastik has a [[CellProfiler]] module to use ilastik classifiers to process images within a [[CellProfiler]] framework.
+
+==History==
+ilastik was first released in 2011 by scientists at the Heidelberg Collaboratory for Image Processing (HCI), [[University of Heidelberg]].
+
+==Application==
+* The Interactive Learning and Segmentation Toolkit
+* Carving<ref>{{cite journal|last=Straehle|first=C|author2=Köthe U |author3=Briggman K |author4=Denk W |author5=Hamprecht FA |title=Seeded watershed cut uncertainty estimators for guided interactive segmentation|journal=CVPR|year=2012}}</ref><ref>{{cite journal|last=Straehle|first=CN|author2=Köthe U |author3=Knott G |author4=Hamprecht FA |title=Carving: scalable interactive segmentation of neural volume electron microscopy images|journal=MICCAI|year=2011|pmid=22003674|volume=14|issue=Pt 1|pages=653–60 |doi=10.1007/978-3-642-23623-5_82}}</ref>  
+* Cell classification and neuron classification<ref>{{cite journal|last=Kreshuk|first=A|author2=Straehle CN |author3=Sommer C |author4=Koethe U |author5=Cantoni M |year=2011|volume=6|issue=10|doi=10.1371/journal.pone.0024899|pmid=22031814 |pmc=3198725 |pages=e24899|display-authors=etal|title=Automated Detection and Segmentation of Synaptic Contacts in Nearly Isotropic Serial Electron Microscopy Images|journal=PLOS ONE}}</ref> 
+* Synapse detection
+* Cell tracking<ref>{{cite journal |last1=Berg |first1=Stuart |last2=Kutra |first2=Dominik |last3=Kroeger |first3=Thorben |last4=Straehle |first4=Christoph N. |last5=Kausler |first5=Bernhard X. |last6=Haubold |first6=Carsten |last7=Schiegg |first7=Martin |last8=Ales |first8=Janez |last9=Beier |first9=Thorsten |last10=Rudy |first10=Markus |last11=Eren |first11=Kemal |last12=Cervantes |first12=Jaime I |last13=Xu |first13=Buote |last14=Beuttenmueller |first14=Fynn |last15=Wolny |first15=Adrian |last16=Zhang |first16=Chong |last17=Koethe |first17=Ullrich |last18=Hamprecht |first18=Fred A. |last19=Kreshuk |first19=Anna |title=ilastik: interactive machine learning for (bio)image analysis |journal=Nature Methods |volume=16 |issue=12 |pages=1226–1232 |date=30 September 2019 |doi=10.1038/s41592-019-0582-9|pmid=31570887 }}</ref>
+
+==Resources==
+ilastik project is hosted on [[GitHub]]. It is a collaborative project, any contributions such as comments, bug reports, bug fixes or code contributions are welcome.
+
+==References==
+{{reflist}}
+
+==External links==
+{{Portal|Free and open-source software}}
+* {{official website|http://www.ilastik.org}}
+* {{github|Ilastik/ilastik}}
+
+{{Image_Processing_Software}}
+
+[[Category:Image segmentation]]
+[[Category:Computer vision software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Free software programmed in Python]]

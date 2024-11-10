@@ -1,0 +1,15 @@
+[[File:Photon Sieve.png|thumb|right|Photon Sieve]]
+A '''photon sieve''' is a device for [[Focus (optics)|focusing]] [[light]] using [[diffraction]] and [[Interference (wave propagation)|interference]]. It consists of a flat sheet of material full of pinholes that are arranged in a pattern which is similar to the rings in a [[Fresnel zone plate]], but a sieve brings light to much sharper focus than a zone plate. The sieve concept, first developed in 2001,<ref>[http://www.nature.com/nature/journal/v414/n6860/abs/414184a0.html Sharper images by focusing soft X-rays with photon sieves], L. Kipp, M. Skibowski, R. L. Johnson, R. Berndt, R.
+Adelung, S. Harm, and R. Seemann, Nature '''414''', 184
+(2001).</ref> is versatile because the characteristics of the focusing behaviour can be altered to suit the application by manufacturing a sieve containing holes of several different sizes and different arrangement of the pattern of holes.
+
+Photon sieves have applications to [[photolithography]].<ref>[http://www.opticsinfobase.org/abstract.cfm?&id=82425 Photon-sieve lithography], Rajesh Menon and Dario Gil, J. Opt. Soc. Am. A/Vol. 22, No. 2/February 2005</ref> and are an alternative to lenses or mirrors in [[telescope]]s.<ref>[http://spie.org/x8625.xml Photon sieve telescope: imaging with 10 million pinholes], Geoff Andersen, 4 September 2006, SPIE Newsroom. DOI: 10.1117/2.1200608.0358</ref>
+
+
+When the size of sieves is smaller than one wavelength of operating light, the traditional method mentioned above to describe the diffraction patterns is not valid. The vertorial theory must be used to approximate the diffraction of light from nanosieves.<ref>[https://nature.com/articles/ncomms8059 Ultrahigh-capacity non-periodic photon sieves operating in visible light].Kun Huang, et al.Nature Communications 6, 7059(2015). </ref> In this theory, the combination of coupled-mode theory and multiple expansion method is used to give an analytical model, which can facilitate the demonstration of traditional devices such as lens, holograms and etc <ref>[https://onlinelibrary.wiley.com/doi/full/10.1002/lpor.201700025 Photon‐nanosieve for ultrabroadband and large‐angle‐of‐view holograms] Kun Huang,et al. Laser & Photonics Reviews 11,1700025(2017).</ref> .   
+ 
+==References==
+<references/>
+*[http://huainc.com/wsb4082769401/resources/OL_Vol30_Nov05.pdf Large optical photon sieve], Geoff Andersen, OPTICS LETTERS / Vol. 30, No. 22 / November 15, 2005
+
+[[Category:Optical devices]]

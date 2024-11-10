@@ -1,0 +1,121 @@
+{{Infobox astronomical event
+ | name            = SN 1917A
+ | image           = 
+ | image_size      = 
+ | caption         = 
+ | alt             = 
+ | names           = 
+ | event_type      = Supernova
+ | class           = [[Type II supernova|Type II]]<ref name=Barbon_et_al_2008/>
+ | start_time      = 19 July 1917<ref name=seds />
+ | duration        = 
+ | detected_by     = [[George Willis Ritchey|G. W. Ritchey]]<ref name=Barbon_et_al_2008/>
+ | constellation   = [[Cepheus (constellation)|Cepheus]]<ref name=seds />
+ | ra              = {{RA|20|34|46.9}}<ref name=Barbon_et_al_2008/>
+ | dec             = {{DEC|+60|07|29}}<ref name=Barbon_et_al_2008/>
+ | epoch           = 
+ | gal             = 
+ | distance        = {{Convert|6.8|Mpc|Mly|abbr=on|lk=on|order=flip}}<ref name=Williams_et_al_2018/>
+ | redshift        = 
+ | source          = 
+ | remnant         = 
+ | host            = [[NGC 6946]]<ref name=Barbon_et_al_2008/>
+ | progenitor      = 
+ | progenitor_type = 
+ | b-v             = 
+ | notes           = 
+ | peak            = 13.60<ref name=Barbon_et_al_2008/>
+ | energy          = 
+ | website         = 
+ | predecessor     = [[SN 1916A]]<ref name=IAU_CBAT/>
+ | successor       = [[SN 1919A]]<ref name=IAU_CBAT/>
+ | commons         = 
+ | embedded        = 
+}}
+'''SN 1917A''' is a supernova event in the [[Fireworks Galaxy]] (NGC 6946),<ref name=seds /> positioned {{val|37|ul=arcsecond}} west and {{val|105|u=arcsecond}} south of the galactic core.<ref name=Barbon_et_al_2008/> Discovered by American optician [[George Willis Ritchey]] on 19 July 1917, it reached a peak [[visual magnitude]] of 13.6.<ref name=Barbon_et_al_2008/> Based on a poor quality<ref name=Baade1938/> 
+photographic spectrum taken at least a month after peak light by [[Francis G. Pease|F. G. Pease]] and Ritchey, it was identified as a [[type II supernova|type II]] core-collapse supernova.<ref name=Fesen_Weil_2020/><ref name=Schlegel1994/>
+
+A 2018 analysis of the surrounding stellar population by B. F. Williams suggests the progenitor star was most likely 13{{±|13|1}}&nbsp;million years old with 15{{±|1|5}} times the [[mass of the Sun]] ({{solar mass}}).<ref name=Williams_et_al_2018/> B. Koplitz and associates in 2021 inferred a progenitor mass estimate of {{val|9.3|16.7|0.7|u=Solar mass}}.<ref name=Koplitz_et_al_2021/> A 2020 search for light echoes from the supernova was unsuccessful.<ref name=Radica_et_al_2020/>
+
+==References==
+{{reflist|refs=
+
+<ref name=Barbon_et_al_2008>{{Citation
+ | title=Asiago Supernova Catalogue
+ | last1=Barbon | first1=R. | last2=Buondi | first2=V.
+ | last3=Cappellaro | first3=E. | last4=Turatto | first4=M.
+ | display-authors=1 | date=2008 | postscript=.
+ | work=CDS/ADC Collection of Electronic Catalogues
+ | bibcode=2008yCat....1.2024B }}</ref>
+
+<ref name=seds>{{Citation
+ | title=NGC 6946 | date=9 March 2009 | work=[[SEDS]]
+ | last1=Frommert | first1=Hartmut | last2=Kronberg | first2=Christine
+ | url=http://messier.seds.org/xtra/ngc/n6946.html
+ | accessdate=2021-12-02 | postscript=. }}</ref>
+
+<ref name=IAU_CBAT>{{Citation
+ | title=List of Supernovae
+ | website=Central Bureau for Astronomical Telegrams
+ | publisher=International Astronomical Union
+ | url=http://www.cbat.eps.harvard.edu/lists/Supernovae.html
+ | access-date=2021-12-02 | postscript=. }}</ref>
+
+<ref name=Schlegel1994>{{citation
+ | title=X-Ray Emission From the Historical Supernovae in the Spiral Galaxy NGC 6946: SN 1980K and 1968D Recovered
+ | last=Schlegel | first=E. M. | postscript=.
+ | journal=Astronomical Journal
+ | volume=108 | page=1893 | date=November 1994
+ | doi=10.1086/117202 | bibcode=1994AJ....108.1893S }}</ref>
+
+<ref name=Fesen_Weil_2020>{{citation
+ | title=Detection of Late-time Optical Emission from SN 1941C in NGC 4136
+ | last1=Fesen | first1=Robert A. | last2=Weil | first2=Kathryn E.
+ | journal=The Astrophysical Journal
+ | volume=890 | issue=1 | id=15 | pages=6 | date=February 2020
+ | doi=10.3847/1538-4357/ab67b7 | arxiv=1910.07723
+ | bibcode=2020ApJ...890...15F | postscript=. }}</ref>
+
+<ref name=Baade1938>{{citation
+ | title=The Absolute Photographic Magnitude of Supernovae
+ | last=Baade | first=W. | postscript=.
+ | journal=Astrophysical Journal
+ | volume=88 | page=285 | date=October 1938
+ | doi=10.1086/143983 | bibcode=1938ApJ....88..285B }}</ref>
+
+<ref name=Williams_et_al_2018>{{citation
+ | title=Constraints for the Progenitor Masses of Historic Core-collapse Supernovae
+ | last1=Williams | first1=Benjamin F. | last2=Hillis | first2=Tristan J.
+ | last3=Murphy | first3=Jeremiah W. | last4=Gilbert | first4=Karoline
+ | last5=Dalcanton | first5=Julianne J. | last6=Dolphin | first6=Andrew E.
+ | display-authors=1 | journal=The Astrophysical Journal
+ | volume=860 | issue=1 | id=39 | pages=10 | date=June 2018
+ | doi=10.3847/1538-4357/aaba7d | arxiv=1803.08112
+ | bibcode=2018ApJ...860...39W | postscript=. }}</ref>
+
+<ref name=Koplitz_et_al_2021>{{citation
+ | title=The Masses of Supernova Remnant Progenitors in NGC 6946
+ | last1=Koplitz | first1=Brad | last2=Johnson | first2=Jared
+ | last3=Williams | first3=Benjamin F. | last4=Long | first4=Knox S.
+ | last5=Blair | first5=William P. | last6=Murphy | first6=Jeremiah W.
+ | last7=Dolphin | first7=Andrew | last8=Hillis | first8=Tristan
+ | display-authors=1 | journal=The Astrophysical Journal
+ | volume=916 | issue=1 | id=58 | pages=18 | date=July 2021
+ | doi=10.3847/1538-4357/abfb7b | arxiv=2104.11118
+ | bibcode=2021ApJ...916...58K | postscript=. }}</ref>
+
+<ref name=Radica_et_al_2020>{{citation
+ | title=A search for supernova light echoes in NGC 6946 with SITELLE
+ | display-authors=1 | last1=Radica | first1=M. C.
+ | last2=Welch | first2=D. L. | last3=Rousseau-Nepton | first3=L.
+ | journal=Monthly Notices of the Royal Astronomical Society
+ | volume=497 | issue=3 | pages=3297-3305 | date=September 2020
+ | doi=10.1093/mnras/staa2006 | arxiv=2007.02778
+ | bibcode=2020MNRAS.497.3297R | postscript=. }}</ref>
+
+}}
+
+[[Category:Supernovae]]
+[[Category:Astronomical objects discovered in 1917|19170919]]
+
+{{var-star-stub}}

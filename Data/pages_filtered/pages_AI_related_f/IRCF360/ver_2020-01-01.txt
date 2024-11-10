@@ -1,0 +1,9 @@
+Infrared Control Freak 360 (IRCF360) is a 360 degree proximity sensor and a motion sensing devices, developed by ROBOTmaker. The sensor is in BETA developers release as a low cost (software configurable) sensor for use within research, technical and hobby projects.
+
+ Overview 
+The 360 degree sensor was originally designed as a short range micro robot proximity sensor and mainly intended for Swarm robotics, Ant robotics, Swarm intelligence, autonomous Qaudcopter, Drone, UAV, multi-robot simulations e.g. Jasmine Project
+where 360 proximity sensing is required to avoid collision with other robots and for simple IR inter-robot communications.
+
+To overcome certain limitation with Infra-red (IR) proximity sensing (e.g. detection of dark surfaces) the sensing module includes ambient light sensing and basic tactile sensing functionality during forward movement sensing/probing providing photovore and photophobe robot swarm behaviours and characteristics.
+
+A project named Sensorium Project was started aimed at broadening the Sensors audience beyond its typical robot sensor usage. To demonstrate the sensor's functionality,  opensource Java based Integrated Development Environments (IDE) are used, such as Arduino and Processing (programming language).

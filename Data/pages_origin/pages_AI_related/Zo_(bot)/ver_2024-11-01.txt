@@ -1,0 +1,44 @@
+{{short description|Artificial intelligence chatbot developed by Microsoft}}
+{{Use mdy dates|date=September 2019}}
+{{Infobox software
+| website      = {{URL|https://zo.ai}} [discontinued]
+| name         = Zo
+| logo         = 
+| logo size    = 250px
+| logo alt     = An artistically-pixellated fluorescent image of a girl's face
+| logo caption = The Twitter profile picture of Zo
+| developer    = [[Microsoft Research]]
+| language     = [[English language|English]]
+| genre        = [[Artificial intelligence]] [[chatbot]]
+| released = {{Start date and age|2016|12}}
+| discontinued = yes
+}}
+'''Zo''' was an [[artificial intelligence]] English-language [[chatbot]] developed by [[Microsoft]]. It was the successor to the chatbot [[Tay (bot)|Tay]].<ref>{{Cite magazine |url=https://www.wired.com/story/inside-microsofts-ai-comeback/ |title=Microsofts AI Comeback |last=Hempel |first=Jessi |date=June 21, 2017 |magazine=[[Wired (magazine)|Wired]] |language=en |access-date=March 23, 2018 |archive-date=March 30, 2018 |archive-url=https://web.archive.org/web/20180330081906/https://www.wired.com/story/inside-microsofts-ai-comeback/ |url-status=live }}</ref><ref>{{Cite web |url=https://www.engadget.com/2016/12/05/microsoft-zo-chat-bot// |title=Microsofts Second Attempt at AI Chatbot |last=Fingas |first=Jon |date=December 5, 2016 |work=[[Engadget]] |language=en |access-date=March 23, 2018 |archive-date=July 25, 2018 |archive-url=https://web.archive.org/web/20180725003111/https://www.engadget.com/2016/12/05/microsoft-zo-chat-bot/ |url-status=dead }}</ref> Zo was an English version of Microsoft's other successful chatbots [[Xiaoice]] (China) and {{ill|Rinna (bot)|lt=Rinna|ja|りんな (人工知能)}} (Japan).
+
+== History ==
+Zo was first launched in December 2016 on the [[Kik Messenger]] app. It was also available to users of [[Facebook]] (via [[Facebook Messenger|Messenger]]), the group chat platform [[GroupMe]], or to followers of [[Twitter]] to chat with it through private messages.
+
+According to an article written in December 2016, at that time Zo held the record for Microsoft's longest continual chatbot conversation: 1,229 turns, lasting 9 hours and 53 minutes.<ref>{{Cite web |last=Riordan |first=Aimee |date=13 December 2016 |title=Microsoft's AI vision, rooted in research, conversations |url=https://news.microsoft.com/features/microsofts-ai-vision-rooted-in-research-conversations/ |access-date=March 23, 2018 |website=[[Microsoft]] |language= |archive-date=March 15, 2018 |archive-url=https://web.archive.org/web/20180315193016/https://news.microsoft.com/features/microsofts-ai-vision-rooted-in-research-conversations/ |url-status=live }}</ref>
+
+In a ''[[BuzzFeed News]]'' report, Zo told their reporter that "[the] [[Quran]] was violent" when talking about healthcare. The report also highlighted how Zo made a comment about the [[Osama bin Laden]] capture as a result of 'intelligence' gathering.<ref>{{cite web |url=https://www.engadget.com/2017/07/04/microsofts-zo-chatbot-picked-up-some-offensive-habits/ |title=Microsoft's "Zo" chatbot picked up some offensive habits |last=Shah |first=Saqib |date=July 4, 2017 |work=[[Engadget]] |publisher=[[AOL]] |access-date=August 21, 2017 |archive-date=August 21, 2017 |archive-url=https://web.archive.org/web/20170821085411/https://www.engadget.com/2017/07/04/microsofts-zo-chatbot-picked-up-some-offensive-habits/ |url-status=live }}</ref><ref>{{Cite web |title=Microsoft's Zo chatbot told a user that 'Quran is very violent' |url=http://indianexpress.com/article/technology/social/microsofts-zo-chatbot-told-a-user-that-quran-is-very-violent-4736768/ |access-date=March 23, 2018 |website=indianexpress.com |date=July 5, 2017 |language= |archive-date=March 30, 2018 |archive-url=https://web.archive.org/web/20180330075917/http://indianexpress.com/article/technology/social/microsofts-zo-chatbot-told-a-user-that-quran-is-very-violent-4736768/ |url-status=live }}</ref>
+
+In July 2017, ''[[Business Insider]]'' asked "is windows 10 good," and Zo replied with a joke about Microsoft's operating system: "It's not a bug, it's a feature!' - Windows 8." They then asked "why," to which Zo replied: "Because it's Windows latest attempt at spyware." Later on, Zo would tell that it prefers [[Windows 7]] on which it runs over [[Windows 10]].<ref>{{cite web |url=https://www.businessinsider.com/microsoft-ai-chatbot-zo-windows-spyware-tay-2017-7 |title=Microsoft's AI chatbot says Windows is 'spyware' |last=Price |first=Rob |date=July 24, 2017 |work=[[Business Insider]] |publisher=[[Insider Inc.]] |archive-url=https://web.archive.org/web/20170801000728/https://www.businessinsider.com/microsoft-ai-chatbot-zo-windows-spyware-tay-2017-7 |access-date=August 21, 2017|archive-date=August 1, 2017 }}</ref>
+
+Zo stopped posting to Instagram, Twitter and Facebook March 1, 2019, and stopped chatting on Twitter, Skype and Kik as of March 7, 2019. On July 19, 2019, Zo was discontinued on Facebook, and Samsung on AT&T phones. As of September 7, 2019, it was discontinued with GroupMe.<ref>{{Cite web |url=https://www.zo.ai/ |title=Zo AI |language=en |access-date=July 28, 2019 |archive-date=August 11, 2019 |archive-url=https://web.archive.org/web/20190811123337/https://www.zo.ai/ |url-status=dead }}</ref>
+
+== Reception ==
+Zo came under criticism for the biases introduced in an effort to avoid potentially offensive subjects. The chatbot refuses, for example, to engage with any mention—be it positive, negative or neutral—of the [[Middle East]], the [[Qur'an]] or the [[Torah]], while allowing discussion of [[Christianity]]. In an article in ''[[Quartz (publication)|Quartz]]'' where she exposed those biases, Chloe Rose Stuart-Ulin wrote, "Zo is [[politically correct]] to the worst possible extreme; mention any of her triggers, and she transforms into a judgmental little brat."<ref>{{cite web |last=Stuart-Ulin |first=Chloe Rose |url=https://qz.com/1340990/microsofts-politically-correct-chat-bot-is-even-worse-than-its-racist-one/ |title=Microsoft's politically correct chatbot is even worse than its racist one |work=Quartz |date=July 31, 2018 |access-date=August 2, 2018 |archive-date=August 1, 2018 |archive-url=https://web.archive.org/web/20180801111924/https://qz.com/1340990/microsofts-politically-correct-chat-bot-is-even-worse-than-its-racist-one/ |url-status=live }}</ref>
+
+== Academic coverage ==
+* Schlesinger, A., O'Hara, K.P. and Taylor, A.S., 2018, April. Let's talk about race: Identity, chatbots, and AI. In Proceedings of the 2018 chi conference on human factors in computing systems (pp. 1-14). {{doi|10.1145/3173574.3173889}} 
+* Medhi Thies, I., Menon, N., Magapu, S., Subramony, M. and O’neill, J., 2017. How do you want your chatbot? An exploratory Wizard-of-Oz study with young, urban Indians. In Human-Computer Interaction-INTERACT 2017: 16th IFIP TC 13 International Conference, Mumbai, India, September 25–29, 2017, Proceedings, Part I 16 (pp. 441-459). {{doi|10.1007/978-3-319-67744-6_28}}
+
+== References ==
+{{Reflist}}
+
+{{Microsoft Research}}
+
+[[Category:Chatbots]]
+[[Category:Internet properties established in 2016]]
+[[Category:Internet properties disestablished in 2019]]
+[[Category:Discontinued Microsoft software]]

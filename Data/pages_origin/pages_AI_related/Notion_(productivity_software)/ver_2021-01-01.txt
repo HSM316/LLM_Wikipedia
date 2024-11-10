@@ -1,0 +1,66 @@
+{{notability|date=December 2020}}
+
+{{Infobox software
+| name = Notion
+| logo = [[File:Notion_app_logo.png|100px|Image: 100 pixels]]
+| developer = [[Notion Labs Inc.]]
+| released = 2016
+| latest release version = 2.0.11
+| operating system = {{unbulleted list | [[Microsoft Windows]] |  [[macOS]] | [[Android (operating system)|Android]] | [[iOS]] | [[World Wide Web|Web]]}}
+| platform = Web, macOS, Windows, iOS and Android
+| genre = [[Note-taking]], [[Wiki]]
+| website = https://www.notion.so/
+}}
+
+'''Notion''' is an application that provides components such as databases, [[kanban]] boards, wikis, calendars and reminders. Users can connect these components to create their own systems for knowledge management, note taking, data management, project management, among others. These components and systems can be used individually, or in [[Collaborative software|collaboration]] with others.
+
+==History==
+Notion Labs Inc, a [[Startup company|startup]] based in San Francisco, was founded in 2016. The founders declined to meet [[venture capital]]ists or discuss acquiring a higher [[Valuation (finance)|valuation]].<ref>{{Cite web|url=https://www.businessinsider.com/notion-has-vc-knocking-on-its-doors-to-invest-2019-2|title=This enterprise software startup has VCs literally knocking on its doors to invest, but for now, it's not interested|last=Bastone|first=Nick|website=Business Insider|access-date=2020-02-05}}</ref>
+
+The app launched in March 2016 for [[web browser]]s and [[OS X]], May 2017 for [[Microsoft Windows]], and June 2017 for [[iOS]].
+
+In March 2018, the software was upgraded to Notion 2.0, receiving praise on [[Product Hunt]] as #1 Product of the Month,<ref>{{Cite web|url=https://www.producthunt.com/posts/notion-2-0|title=Notion 2.0 - The all-in-one workspace - notes, tasks, wikis, & databases|website=Product Hunt|access-date=2020-02-05}}</ref> and being featured on an article<ref>{{cite web|url=https://www.wsj.com/articles/the-only-app-you-need-for-work-life-productivity-1521640800|title=The Only App You Need for Work-Life Productivity|date=21 March 2018|work=[[The Wall Street Journal]]}}</ref> in [[The Wall Street Journal|WSJ]]. The company had fewer than 10 employees at this point.<ref>{{Cite web|url=https://usefyi.com/notion-history/|title=How Ivan Zhao's Notion Is Going After Atlassian and Why It Just Might Win|last=Shah|first=Hiten|date=2019-05-28|website=FYI|access-date=2020-02-05}}</ref>
+
+In June 2018, an official app for [[Android (operating system)|Android]] was released.<ref>{{cite web |url = https://www.theverge.com/2018/6/7/17434754/notion-android-app-notes-productivity-review |title = Notion brings its powerful note-taking app to Android |date = 7 June 2018 |work = [[The Verge]]}}</ref>
+
+In September 2019, the company announced it hit 1 million users.<ref name=":1">{{Cite web|url=https://www.theverge.com/2019/9/17/20868716/notion-free-version-students-teachers-note-taking-education-school|title=Notion’s powerful note-taking app is now free for students and teachers|last=Newton|first=Casey|date=2019-09-17|website=The Verge|language=en|access-date=2020-02-05}}</ref>
+
+In April 2020, the company raised a round at a $2 billion valuation with 4 million users. <ref>{{cite web |url = https://www.forbes.com/sites/davidjeans/2020/04/01/buzzy-work-app-notion-hits-2-billion-valuation/#1c2a7f4e78ec
+ |title = Buzzy Work App Notion Hits $2 Billion Valuation In New Raise
+ |date = 1 April 2020 |work = [[Forbes]]}}</ref>
+
+== Software ==
+'''Notion''' is a [[Collaborative software|collaboration]] platform with modified [[markdown]] support that integrates [[kanban]] boards, tasks, [[Wiki software|wikis]], and databases. The company claims to be an all-in-one workspace for [[Notetaking software|note-taking]], [[Knowledge management software|knowledge]] and [[Spreadsheet|data]] management, [[Project management software|project and task management]].<ref>{{cite web|url=https://androidcommunity.com/notion-goes-where-evernote-dares-not-what-you-need-to-know-20180608/|title=Notion goes where Evernote dares not: what you need to know|date=8 June 2018|work=[[Android Community]]}}</ref>The software is described as a file management tool offering a unified workspace, allowing users to comment on ongoing projects, to participate in discussions and receive feedback from others. In addition to [[Cross-platform software|cross-platform]] apps, it can be accessed via most [[web browser]]s. It features a web clipper. The company's tool helps users to schedule tasks, manage files, save documents and set a reminder for the weekly agenda, enabling users to organize their work. It allows users to [[wikt:embed|embed]] any online content within Notion pages using Embed.ly.
+
+=== Pricing ===
+Notion has a four-tiered [[Subscription business model|subscription]] model: free, personal, team, and enterprise. The application offers an account credit system, and can earn credit via [[Referral marketing|referrals]]. Users will not be charged if they have a remaining balance in their accounts.{{fact|date=March 2020}} An academic email address allows for a free personal plan.
+As of May 2020, the company upgraded the Personal Plan to allow an unlimited number of blocks as opposed to the cap on the number of blocks till then. This allows all new users the benefit of having unlimited storage.<ref>{{cite web|last=|first=|date=19 June 2019|title=Notion Plans and Pricing|url=https://www.notion.so/pricing|url-status=live|archive-url=|archive-date=|access-date=|website=}}</ref>
+
+=== Integrations ===
+Notion allows users the connection to [[Slack (software)|Slack]], the inclusion of inline [[LaTeX]] and the importation of data from other applications, such as [[Trello]].
+
+== See also ==
+* [[Wiki software]]
+* [[Collaborative software]]
+* [[Collaborative real-time editor]]
+* [[Document collaboration]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|https://www.notion.so/}}
+
+{{Notetaking software}}
+
+[[Category:Note-taking software]]
+[[Category:Project management software]]
+[[Category:Task management software]]
+[[Category:Android (operating system) software]]
+[[Category:IOS software]]
+[[Category:Collaborative software]]
+[[Category:Wiki software]]
+[[Category:Software companies based in California]]
+[[Category:Business software]]
+
+{{software-stub}}

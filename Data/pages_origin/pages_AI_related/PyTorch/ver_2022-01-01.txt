@@ -1,0 +1,107 @@
+{{short description|Open source machine learning library for Python, based on Torch}}
+{{Infobox software
+| name = PyTorch
+| logo = PyTorch logo black.svg
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = {{Unbulleted list|Adam Paszke|Sam Gross|Soumith Chintala|Gregory Chanan}}
+| developer = [[Facebook, Inc.|Facebook]]'s AI Research lab (FAIR)
+| released = {{Start date and age|2016|9|df=yes}}<ref>{{cite web|url=https://github.com/pytorch/pytorch/releases/tag/v0.1.1|title=PyTorch Alpha-1 release|last=Chintala|first=Soumith|date=1 September 2016}}</ref>
+| latest release version = {{wikidata|property|edit|reference|P348}}
+| latest release date    = {{start date and age|{{wikidata|qualifier|P348|P577}}}}
+| repo = {{URL|github.com/pytorch/pytorch}}
+| programming language = {{Unbulleted list|[[Python (programming language)|Python]]|[[C++]]|[[CUDA]]}}
+| operating system = {{Unbulleted list|[[Linux]]|[[macOS]]|[[Windows]]}}
+| platform = [[IA-32]], [[x86-64]]
+| language = English
+| genre = [[Library (computing)|Library]] for [[machine learning]] and [[deep learning]]
+| license = [[BSD licenses|BSD]]
+| website = {{URL|https://pytorch.org/}}
+}}
+'''PyTorch''' is an [[open source]] [[machine learning]] [[Library (computing)|library]] based on the [[Torch (machine learning)|Torch]] library,<ref>{{cite news|url=https://www.infoworld.com/article/3159120/artificial-intelligence/facebook-brings-gpu-powered-machine-learning-to-python.html|title=Facebook brings GPU-powered machine learning to Python|last=Yegulalp|first=Serdar|date=19 January 2017|work=InfoWorld|access-date=11 December 2017}}</ref><ref>{{cite web|url=https://www.oreilly.com/ideas/why-ai-and-machine-learning-researchers-are-beginning-to-embrace-pytorch|title=Why AI and machine learning researchers are beginning to embrace PyTorch|last=Lorica|first=Ben|date=3 August 2017|publisher=O'Reilly Media|access-date=11 December 2017}}</ref><ref>{{Cite book|title=Deep Learning with Python|last=Ketkar|first=Nikhil|date=2017|publisher=Apress, Berkeley, CA|isbn=9781484227657|pages=195–208|language=en|doi=10.1007/978-1-4842-2766-4_12|chapter=Introduction to PyTorch}}</ref> used for applications such as [[computer vision]] and [[natural language processing]],<ref>{{Cite web|url=http://dl4nlp.info/en/latest/|title=Natural Language Processing (NLP) with PyTorch – NLP with PyTorch documentation|website=dl4nlp.info|language=en|access-date=2017-12-18}}</ref> primarily developed by [[Facebook, Inc.|Facebook]]'s AI Research lab (FAIR).<ref>{{Cite news|url=https://www.oreilly.com/ideas/when-two-trends-fuse-pytorch-and-recommender-systems|title=When two trends fuse: PyTorch and recommender systems|last=Patel|first=Mo|date=2017-12-07|work=O'Reilly Media|access-date=2017-12-18|language=en}}</ref><ref>{{Cite news|url=https://techcrunch.com/2017/09/07/facebook-and-microsoft-collaborate-to-simplify-conversions-from-pytorch-to-caffe2/|title=Facebook and Microsoft collaborate to simplify conversions from PyTorch to Caffe2|last=Mannes|first=John|work=[[TechCrunch]]|access-date=2017-12-18|language=en|quote=FAIR is accustomed to working with PyTorch – a deep learning framework optimized for achieving state of the art results in research, regardless of resource constraints. Unfortunately in the real world, most of us are limited by the computational capabilities of our smartphones and computers.}}</ref><ref>{{Cite web|url=https://venturebeat.com/2017/11/29/tech-giants-are-using-open-source-frameworks-to-dominate-the-ai-community/|title=Tech giants are using open source frameworks to dominate the AI community|last=Arakelyan|first=Sophia|date=2017-11-29|website=[[VentureBeat]]|language=en-US|access-date=2017-12-18}}</ref> It is [[free and open-source software]] released under the [[Modified BSD License|Modified BSD license]]. Although the [[Python (programming language)|Python]] interface is more polished and the primary focus of development, PyTorch also has a [[C++]] interface.<ref>{{Cite web|url=https://pytorch.org/cppdocs/frontend.html|title=The C++ Frontend|website=PyTorch Master Documentation|access-date=2019-07-29}}</ref>
+
+A number of pieces of [[Deep learning|deep learning]] software are built on top of PyTorch, including [[Tesla Autopilot]],<ref>{{Cite web|last=Karpathy|first=Andrej|title=PyTorch at Tesla - Andrej Karpathy, Tesla|url=https://www.youtube.com/watch?v=oBklltKXtDE}}</ref> [[Uber]]'s Pyro,<ref>{{Cite news|url=https://eng.uber.com/pyro/|title=Uber AI Labs Open Sources Pyro, a Deep Probabilistic Programming Language|date=2017-11-03|work=Uber Engineering Blog|access-date=2017-12-18|language=en-US}}</ref> [[Hugging Face]]'s Transformers,<ref>{{Citation|title=PYTORCH-TRANSFORMERS: PyTorch implementations of popular NLP Transformers|date=2019-12-01|url=https://pytorch.org/hub/huggingface_pytorch-transformers/|publisher=PyTorch Hub|access-date=2019-12-01}}</ref> [[PyTorch Lightning]],<ref>{{Citation|title=PYTORCH-Lightning: The lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate|date=2020-06-18|url=https://github.com/PyTorchLightning/pytorch-lightning/|publisher=Lightning-Team|access-date=2020-06-18}}</ref><ref>{{Cite web|url=https://pytorch.org/ecosystem/|title=Ecosystem Tools|website=pytorch.org|language=en|access-date=2020-06-18}}</ref> and Catalyst.<ref>{{Citation|title=GitHub - catalyst-team/catalyst: Accelerated DL & RL|date=2019-12-05|url=https://github.com/catalyst-team/catalyst|publisher=Catalyst-Team|access-date=2019-12-05}}</ref><ref>{{Cite web|url=https://pytorch.org/ecosystem/|title= Ecosystem Tools|website=pytorch.org|language=en|access-date=2020-04-04}}</ref>
+
+PyTorch provides two high-level features:<ref>{{cite web |url=https://pytorch.org/about/ |title=PyTorch – About |website=pytorch.org |access-date=2018-06-11 |archive-url=https://web.archive.org/web/20180615190804/https://pytorch.org/about/ |archive-date=2018-06-15 |url-status=dead }}</ref>
+* Tensor computing (like [[NumPy]]) with strong acceleration via [[graphics processing unit]]s (GPU)
+* [[Deep neural networks]] built on a type-based [[automatic differentiation]] system
+
+==History==
+Facebook operates both ''PyTorch'' and ''Convolutional Architecture for Fast Feature Embedding'' ([[Caffe (software)|Caffe2]]), but models defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange ([[Open Neural Network Exchange|ONNX]]) project was created by Facebook and [[Microsoft]] in September 2017 for converting models between frameworks. Caffe2 was merged into PyTorch at the end of March 2018.<ref>{{cite web|url=https://medium.com/@Synced/caffe2-merges-with-pytorch-a89c70ad9eb7|title=Caffe2 Merges With PyTorch|date=2018-04-02}}</ref>
+
+==PyTorch tensors==
+PyTorch defines a class called Tensor (<code>torch.Tensor</code>) to store and operate on homogeneous multidimensional rectangular arrays of numbers. PyTorch Tensors are similar to [[NumPy]] Arrays, but can also be operated on a [[CUDA]]-capable [[Nvidia]] GPU. PyTorch supports various sub-types of Tensors.<ref>{{cite web |url=https://www.analyticsvidhya.com/blog/2018/02/pytorch-tutorial/ |title=An Introduction to PyTorch – A Simple yet Powerful Deep Learning Library |website=analyticsvidhya.com |access-date=2018-06-11|date=2018-02-22 }}</ref>
+
+==Modules==
+===Autograd module===
+PyTorch uses a method called [[automatic differentiation]]. A recorder records what operations have performed, and then it replays it backward to compute the gradients. This method is especially powerful when building neural networks to save time on one epoch by calculating differentiation of the parameters at the forward pass.
+
+===<code>Optim</code> module===
+<code>torch.optim</code> is a module that implements various optimization algorithms used for building neural networks. Most of the commonly used methods are already supported, so there is no need to build them from scratch.
+
+===<code>nn</code> module===
+PyTorch autograd makes it easy to define computational graphs and take gradients, but raw autograd can be a bit too low-level for defining complex neural networks. This is where the <code>nn</code> module can help.
+
+== Example ==
+The following program shows the functionality of the library with a simple example
+
+<syntaxhighlight lang="python" line="1">
+import torch
+dtype = torch.float
+device = torch.device("cpu") # This executes all calculations on the CPU
+# device = torch.device("cuda:0") # This executes all calculations on the GPU
+
+# Creation of a tensor and filling of a tensor with random numbers
+a = torch.randn(2, 3, device=device, dtype=dtype)
+print(a) # Output of tensor A
+# Output: tensor([[-1.1884,  0.8498, -1.7129],
+#                  [-0.8816,  0.1944,  0.5847]])
+
+# Creation of a tensor and filling of a tensor with random numbers
+b = torch.randn(2, 3, device=device, dtype=dtype)
+print(b) # Output of tensor B
+# Output: tensor([[ 0.7178, -0.8453, -1.3403],
+#                  [ 1.3262,  1.1512, -1.7070]])
+
+print(a*b) # Output of a multiplication of the two tensors
+# Output: tensor([[-0.8530, -0.7183,  2.58],
+#                  [-1.1692,  0.2238, -0.9981]])
+
+print(a.sum()) # Output of the sum of all elements in tensor A
+# Output: tensor(-2.1540)
+
+print(a[1,2]) # Output of the element in the third column of the second row
+# Output: tensor(0.5847)
+
+print(a.min()) # Output of the minimum value in tensor A
+# Output: tensor(-1.7129)
+</syntaxhighlight>
+
+==See also==
+{{Portal|Free and open-source software}}
+* [[Comparison of deep learning software]]
+* [[Differentiable programming]]
+* [[DeepSpeed]]
+* [[Torch (machine learning)]]
+* [[Tensor]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|https://pytorch.org}}
+
+{{Deep Learning Software}}
+{{Differentiable computing}}
+
+[[Category:Applied machine learning]]
+[[Category:Data mining and machine learning software]]
+[[Category:Deep learning]]
+[[Category:Facebook software]]
+[[Category:Free science software]]
+[[Category:Free software programmed in C]]
+[[Category:Free software programmed in Python]]
+[[Category:Open-source artificial intelligence]]
+[[Category:Python (programming language) scientific libraries]]
+[[Category:Software using the BSD license]]

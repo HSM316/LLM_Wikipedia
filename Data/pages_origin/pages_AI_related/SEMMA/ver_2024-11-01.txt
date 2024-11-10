@@ -1,0 +1,24 @@
+{{Short description|Data mining process}}
+'''''SEMMA''''' is an  acronym that stands for ''Sample'', ''Explore'', ''Modify'', ''Model'', and ''Assess''. It is a list of sequential steps developed by [[SAS Institute]], one of the largest producers of [[statistics]] and [[business intelligence]] software. It guides the implementation of [[data mining]] applications.<ref name="AzevedoSantos">Azevedo, A. and Santos, M. F. [https://web.archive.org/web/20190210044429/https://pdfs.semanticscholar.org/7dfe/3bc6035da527deaa72007a27cef94047a7f9.pdf KDD, SEMMA and CRISP-DM: a parallel overview]. In Proceedings of the IADIS European Conference on Data Mining 2008, pp 182-185. {{webarchive |url=https://web.archive.org/web/20130109114939/http://www.iadis.net/dl/final_uploads/200812P033.pdf |date=January 9, 2013 }}</ref> Although SEMMA is often considered to be a general data mining methodology, SAS claims that it is "rather a logical organization of the functional tool set of" one of their products, SAS Enterprise Miner, "for carrying out the core tasks of data mining".<ref name="sasweb">[http://www.sas.com/offices/europe/uk/technologies/analytics/datamining/miner/semma.html/ SAS Enterprise Miner website] {{webarchive |url=https://web.archive.org/web/20120308165638/http://www.sas.com/offices/europe/uk/technologies/analytics/datamining/miner/semma.html/ |date=March 8, 2012 }}</ref>
+
+==Background==
+In the expanding field of data mining, there has been a call for a standard methodology or a simple list of [[best practices]] for the diversified and iterative process of data mining that users can apply to their data mining projects regardless of industry. While the [[Cross Industry Standard Process for Data Mining]] or CRISP-DM, founded by the [[European Strategic Program on Research in Information Technology]] initiative, aimed to create a neutral methodology, SAS also offered a pattern to follow in its data mining tools.
+
+==Phases of SEMMA==
+The phases of SEMMA and related tasks are the following:<ref name="sasweb"/>
+* '''Sample'''. The process starts with [[sampling (statistics)|data sampling]], e.g., selecting the data set for modeling. The data set should be large enough to contain sufficient information to retrieve, yet small enough to be used efficiently. This phase also deals with data partitioning.
+* '''Explore'''. This phase covers the understanding of the data by discovering anticipated and unanticipated relationships between the variables, and also abnormalities, with the help of [[data visualization]].
+* '''Modify'''. The Modify phase contains methods to select, create and transform variables in preparation for data modeling.
+* '''Model'''.  In the Model phase the focus is on applying various modeling (data mining) techniques on the prepared variables in order to create models that possibly provide the desired outcome.
+* '''Assess'''. The last phase is Assess. The evaluation of the modeling results shows the reliability and usefulness of the created models.
+
+==Criticism==
+SEMMA mainly focuses on the modeling tasks of data mining projects, leaving the business aspects out (unlike, e.g., CRISP-DM and its Business Understanding phase). Additionally, SEMMA is designed to help the users of the SAS Enterprise Miner software. Therefore, applying it outside Enterprise Miner may be ambiguous.<ref name="RohanizadehMoghadam">Rohanizadeh, S. S. and Moghadam, M. B. [http://www.qjie.ir/?_action=showPDF&article=31&_ob=2e9f779810eaef02d9bcc00959616080&fileName=full_text.pdf A Proposed Data Mining Methodology and its Application to Industrial Procedures] Journal of Industrial Engineering '''4''' (2009) pp 37-50.</ref>  However, in order to complete the "Sampling" phase of SEMMA a deep understanding of the business aspects would have to be a requirement in order to do effective sampling.  So, in effect, a business understanding would be required to effectively complete sampling.<ref>[https://recipp.ipp.pt/bitstream/10400.22/136/3/KDD-CRISP-SEMMA.pdf] KDD, SEMMA AND CRISP-DM: A PARALLEL OVERVIEW, Ana Azevedo and M.F. Santos</ref>
+
+==See also==
+* [[Cross Industry Standard Process for Data Mining]]
+
+==References==
+{{reflist}}
+
+[[Category:Applied data mining]]

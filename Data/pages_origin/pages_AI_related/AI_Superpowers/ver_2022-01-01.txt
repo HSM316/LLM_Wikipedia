@@ -1,0 +1,47 @@
+
+{{Use mdy dates|date=September 2018}}
+{{Use American English|date = February 2019}}
+{{Short description|2018 book portraying artificial intelligence as an arms race}}
+{{Infobox book 
+| name           = AI Superpowers: China, Silicon Valley, and the New World Order
+| image          = AI Superpowers.jpg
+| caption        = First edition
+| author         = [[Kai-Fu Lee]]
+| country        = 
+| language       = English
+| genre          = 
+|location        =Boston
+| publisher      = [[Houghton Mifflin Harcourt]]
+| release_date   = September 25, 2018
+| isbn           = 9781328546395
+| oclc           = 1035622189
+|pages=272
+}}
+
+'''''AI Superpowers: China, Silicon Valley, and the New World Order''''' is a 2018 [[non-fiction]] book by  [[Kai-Fu Lee]], an [[Artificial Intelligence]] (AI) pioneer,  [[China]] expert  and [[venture capital]]ist.  Lee previously held executive positions at [[Apple Inc.|Apple]], then [[Silicon Graphics|SGI]], [[Microsoft]], and [[Google]] before creating his own company, Sinovation Ventures.<ref name="Forbes_Fannin_2017">{{citation |title=AI Superpowers By Kai-Fu Lee Defines A New World Order For Silicon Valley, China |first=Rebecca |last=Fannin |date=July 16, 2017 |work=Forbes}}</ref><ref name="NYT_Friedman_2018">{{cite news |url=https://www.nytimes.com/2018/09/25/opinion/trump-china-trade-economy-tech.html |title=Trump to China: 'I Own You.' Guess Again: The Chinese are catching up to the U.S. in many ways, and the president grasps only part of the reason |author=Thomas L. Friedman |series=Opinion |newspaper=[[The New York Times]] |date=September 25, 2018 |access-date=September 26, 2018|author-link=Thomas L. Friedman }}</ref>
+
+== AI arms race ==
+According to Kai-Fu Lee, "If data is the new oil, then China is the new [[Saudi Arabia]]."<ref>{{cite book| title= AI Superpowers: China, Silicon Valley, and the New World Order| author= Kai-Fu Lee| publisher= [[Houghton Mifflin]]| date= September 25, 2018| isbn= 9781328546395| oclc= 1035622189| location= [[Boston]], Mass| url-access= registration| url= https://archive.org/details/aisuperpowerschi0000leek| author-link= Kai-Fu Lee}}</ref> Lee advances several arguments for why he thinks the [[artificial intelligence industry in China]] will excel in the [[artificial intelligence arms race]]:
+
+# Training [[deep learning]] models requires more of a [[brute force method]] than innovation; well suited to China's supposedly higher quantity but lower quality of [[software engineer]] compared to the US<ref name="Atkinson">{{cite web|url=https://www.nyjournalofbooks.com/book-review/ai-superpowers|title=AI Superpowers: China, Silicon Valley, and the New World Order|first=Robert|last=Atkinson|publisher=New York Journal of Books|accessdate=2019-04-03}}</ref>
+# China has fewer data protection regulations (e.g., the [[General Data Protection Regulation]] in Europe) than other countries, so Chinese software collect more data on users.<ref name="Atkinson"/>
+# Chinese tech startup culture is more "aggressive" than that of other countries', with [[Intellectual property in China|fewer intellectual property restrictions]]<ref name="Atkinson"/> and fewer barriers to [[vertical integration]]<ref name="FA">{{cite journal|url=https://www.foreignaffairs.com/reviews/review-essay/2018-11-16/beyond-ai-arms-race|title=Beyond the AI Arms Race|first=Remco|last=Zwetsloot|first2=Helen|last2=Toner|first3=Jeffrey|last3=Ding|journal=Foreign Affairs|date=2018-11-16}}</ref>
+# The participation of China's central government in funding and raising the status of the AI industry<ref name="Atkinson"/>
+
+==AI threat to employment==
+Lee proposes that knowledge workers are generally under greater threat of unemployment due to advances in AI, in a similar manner to the effect of the [[Industrial Revolution]] on physical laborers. The book includes examples of the most and least threatened jobs both in  mental and physical labor. Least threatened cognitive labor jobs include [[criminal defense attorney]], [[public relations director]], [[concierge]], [[social worker]], [[psychiatrist]], and [[CEO]] because those jobs are highly social and are based on [[creativity]] or [[strategy]]. Cognitive jobs with the greatest threat to being made redundant by AI include: basic [[translator]], [[radiologist]], consumer loan officer, consumer tax prep, [[telemarketer]], and customer service rep because those jobs are asocial and optimization-based.
+Physical jobs at low risk of irrelevance in the AI era include [[elder care]]giver, [[physical therapist]], [[hairstylist]], and [[dog trainer]] because those roles are social and require high [[dexterity]] in an unstructured environment. Physical jobs most likely to suffer job losses or extinction include [[assembly line]] inspector, fruit harvester, [[truck driver]], [[dishwasher]], clothing factory worker, fast food and restaurant cooks and [[cashier]]s because these are asocial jobs in structured environments and don't require dexterity.
+
+== Reception ==
+US Senator [[Mark Warner]] named ''AI Superpowers'' as his recommended book for The 2018 [[POLITICO]] 50 Reading List.<ref name="The POLITICO 50 Reading List">{{cite news |url=https://www.politico.com/interactives/2018/politico-50-book-picks/ |title=The POLITICO 50 Reading List |author=Politico Magazine Staff  |newspaper=[[Politico]] |date=September 4, 2018 |access-date=October 9, 2018}}</ref>  On the other hand, American magazine ''[[Foreign Affairs]]'' criticized the book for promoting [[zero-sum thinking]] and hyping Chinese state investment in tech ventures that often underperform relative to expectations; for focusing on deep learning to the exclusion of other forms of artificial intelligence; and for overgeneralizing the usefulness of Chinese data sets.<ref name="FA"/>
+
+==References==
+{{reflist|30em}}
+
+{{DEFAULTSORT:AI Superpowers}}
+[[Category:Houghton Mifflin books]]
+[[Category:2018 non-fiction books]]
+[[Category:Artificial intelligence]]
+
+
+{{ai-book-stub}}

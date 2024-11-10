@@ -1,0 +1,54 @@
+{{Multiple issues|
+{{Tone|date=November 2009}}
+{{Unreferenced|date=June 2009}}
+}}
+
+'''Artificial intelligence marketing''' ('''AIM''') is a form of [[marketing]] leveraging [[artificial intelligence]]  concept and model such as [[machine learning]] and [[Bayesian Network]] to achieve marketing goals. The main difference resides in the [[Artificial intelligence#Deduction.2C reasoning.2C problem solving|reasoning]] part which suggests it is performed by computer and algorithm instead of human.
+
+==Behavioral targeting==
+Artificial intelligence marketing provides a set of tools and techniques that enable [[behavioral targeting]].
+
+==Collect, reason, act==
+Artificial intelligence marketing principle is based on the [[perception]]-[[reasoning]]-action cycle you find in [[cognitive science]]. In marketing context this cycle is adapted to form the '''collect''', '''reason''' and '''act''' cycle.
+
+===Collect===
+This term relates to all activities which aims at capturing [[customer]] or [[Prospect (marketing)|prospect]] data. Whether taken [[online]] or [[offline]] these data are then saved into customer or prospect databases.
+
+===Reason===
+This is the part where data is transformed into information and eventually [[Intelligence (information gathering)|intelligence]] or [[insight]]. This is the section where artificial intelligence and [[machine learning]] in particular have a key role to play.
+
+===Act===
+With the intelligence gathered from the ''reason'' step above you can then ''act''. In marketing context act would be some sort of communications that would attempt to influence a prospect or customer purchase decision using [[incentive]] driven message
+
+Again artificial intelligence has a role to play in this stage as well. Ultimately in an [[Unsupervised learning|unsupervised]] model the machine would take the decision and act accordingly to the information it receives at the ''collect'' stage.
+
+==Machine learning==
+''[[Machine learning]] is concerned with the design and development of [[algorithm]]s and techniques that allow computers to "learn".''
+
+As defined above machine learning is one of the techniques that can be employed to enable more effective '''behavioral targeting'''
+
+==Concerns==
+As mentioned in the [[behavioral targeting]] article :
+
+<blockquote>
+''"Many online users & advocacy groups are concerned about [[privacy]] issues around doing this type of targeting. This is an area that the behavioral targeting industry is trying to minimize through education, advocacy & product constraints to keep all information non-personally identifiable or to use opt-in and permission from end-users (permission marketing)."''
+</blockquote>
+
+==See also==
+* [[Targeted advertising]]
+* [[Online advertising]]
+* [[Market segmentation#Statistical techniques used in segmentation]]
+
+==References==
+
+{{Empty section|date=September 2019}}
+
+==Further reading==
+
+*[http://www.ai-for-marketing.com/ A.I. for Marketing Navigator]
+*Baesens Bart, Stijn Viaene, Dirk Van den Poel, [[Jan Vanthienen]], and Guido Dedene. (2002), "[http://econpapers.repec.org/paper/rugrugwps/02_2F154.htm Bayesian Neural Network Learning for Repeat Purchase Modelling in Direct Marketing]", ''European Journal of Operational Research'', 138 (1), 191-211.
+*Lou Hirsh (2002), "[https://web.archive.org/web/20080827200554/http://www.crm-daily.com/perl/story/18001.html How Artificial Intelligence Decodes Customer Behavior]", ''CRMDaily.com''.
+*Yahoo Research Center [https://web.archive.org/web/20080509161338/http://research.yahoo.com/Machine_Learning Machine Learning].
+
+[[Category:Artificial intelligence applications|Marketing and artificial intelligence]]
+[[Category:Direct marketing|Artificial intelligence]]

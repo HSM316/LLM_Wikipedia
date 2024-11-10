@@ -1,0 +1,53 @@
+{|{{Infobox aircraft begin
+ | name=Rhaegal
+ | image=
+ | caption=
+}}{{Infobox aircraft type
+ | type= Unmanned [[cargo aircraft]]
+ | national origin=[[United States]]
+ | manufacturer=Sabrewing Aircraft
+ | designer=
+ | first flight=
+ | introduced=
+ | retired=
+ | status=
+ | primary user=
+ | more users= <!--Limited to three in total; separate using <br /> -->
+ | produced= <!--years in production-->
+ | number built=
+ | program cost= <!--Total program cost-->
+ | unit cost= <!--Incremental or flyaway cost for military or retail price for commercial aircraft-->
+ | developed from= 
+ | variants with their own articles=
+}}
+|}
+The '''Sabrewing Rhaegal''' is a proposed American unmanned [[cargo aircraft]] developed by Californian Sabrewing Aircraft.
+
+== Design ==
+The hybrid electric [[vertical takeoff and landing]] Rhaegal is powered by a {{cvt|600|hp}} [[Rolls-Royce Model 250]] turboshaft and has [[ducted fan]]s, a {{cvt|30|ft}} wingspan, a {{cvt|3,000|lb}} gross-weight, a VTOL payload of {{cvt|800 or 1,000|lb}} in [[STOL]] mode, a maximum speed of {{cvt|200|knots|km/h}} and a range of {{cvt|360|nmi|km}} at up to {{cvt|22,000|ft}}.<!--ref name=AvWeek27feb2019-->
+A larger Wyvern could lift a VTOL payload of {{cvt|4,400 or 5,000|lb}} in STOL configuration.<ref name=AvWeek27feb2019/>
+
+== Development ==
+
+By February 2018, Sabrewing was to fly a 65%-scale vehicle in the fall.<ref>{{cite news |url= http://aviationweek.com/future-aerospace/unmanned-cargo-aircraft-head-toward-flight-tests |title= Unmanned Cargo Aircraft Head Toward Flight Tests |date= Feb 2, 2018 |author= Graham Warwick |work= Aviation Week & Space Technology}}</ref>
+By February 2019, a one-eighth-scale model was going to be tested while the first full-size aircraft construction had begun, to fly by the end of 2019 and to enter service in 2023.<!--ref name=AvWeek27feb2019-->
+By then, the [[Aleut]] Community of [[Saint Paul Island, Alaska]], in the [[Bering Sea]] signed its first order for four Rhaegal and six larger Wyvern aircraft, to resupply [[St. George Island (Alaska)|Saint George Island]], {{cvt|47|mi|km}} south.<ref name=AvWeek27feb2019>{{cite news |url= https://aviationweek.com/future-aerospace/sabrewing-s-unmanned-cargo-aircraft-advances |title= Sabrewing’s Unmanned Cargo Aircraft Advances |date= Feb 27, 2019 |author= Graham Warwick |work= Aviation Week & Space Technology}}</ref>
+
+==See also==
+{{aircontent
+|see also=
+* [[Natilus]]
+|similar aircraft=
+* [[Elroy Air Cargo]]
+* [[Boeing Cargo Air Vehicle]]
+|lists=
+}}
+
+==References==
+{{reflist}}
+
+==External links==
+* {{official website|https://www.sabrewingaircraft.com/products/rhaegal/}}
+
+[[Category:United States cargo aircraft]]
+[[Category:Proposed aircraft of the United States]]

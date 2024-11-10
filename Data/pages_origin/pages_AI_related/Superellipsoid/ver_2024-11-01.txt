@@ -1,0 +1,125 @@
+{{Short description|Family of geometric shapes}}
+{{more footnotes needed|date=February 2014}}
+[[File:Superellipsoid collection.png|right|400px|thumb|Superellipsoid collection with exponent parameters, created using [[POV-Ray]]. Here, e = 2/r, and n = 2/t (equivalently, r = 2/e and t = 2/n).<ref>{{cite web |url=http://www.povray.org/documentation/view/3.6.1/285/ |title=POV-Ray: Documentation: 2.4.1.11 Superquadric Ellipsoid}}</ref>]]
+
+In [[mathematics]], a '''superellipsoid''' (or '''super-ellipsoid''') is a [[solid geometry|solid]] whose horizontal sections are [[superellipse]]s (Lamé curves) with the same squareness parameter <math>\epsilon_2</math>, and whose vertical sections through the center are superellipses with the squareness parameter <math>\epsilon_1</math>. It is a generalization of an ellipsoid, which is a special case when <math>\epsilon_1=\epsilon_2=1</math>.<ref name="barr81" />
+
+Superellipsoids as [[computer graphics]] primitives were popularized by [[Alan H. Barr]] (who used the name "[[superquadrics]]" to refer to both superellipsoids and [[supertoroid]]s).<ref name="barr81">{{Cite journal |last=Barr |date=1981 |title=Superquadrics and Angle-Preserving Transformations |url=https://ieeexplore.ieee.org/document/1673799 |journal=IEEE Computer Graphics and Applications |volume=1 |issue=1 |pages=11–23 |doi=10.1109/MCG.1981.1673799 |s2cid=9389947 |issn=1558-1756}}</ref><ref name="barr92">Barr, A.H. (1992), ''Rigid Physically Based Superquadrics''. Chapter III.8 of ''Graphics Gems III'', edited by D. Kirk, pp. 137&ndash;159</ref> In modern [[computer vision]] and [[robotics]] literatures, [[superquadrics]] and superellipsoids are used interchangeably, since superellipsoids are the most representative and widely utilized shape among all the superquadrics.<ref name=":0">{{Cite journal |last1=Ruan |first1=Sipu |last2=Wang |first2=Xiaoli |last3=Chirikjian |first3=Gregory S. |date=2022 |title=Collision Detection for Unions of Convex Bodies With Smooth Boundaries Using Closed-Form Contact Space Parameterization |journal=IEEE Robotics and Automation Letters |volume=7 |issue=4 |pages=9485–9492 |doi=10.1109/LRA.2022.3190629 |s2cid=250543506 |issn=2377-3766|doi-access=free }}</ref><ref name=":1">{{Cite book |last1=Paschalidou |first1=Despoina |last2=Van Gool |first2=Luc |last3=Geiger |first3=Andreas |title=2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=Learning Unsupervised Hierarchical Part Decomposition of 3D Objects from a Single RGB Image |date=2020 |chapter-url=https://ieeexplore.ieee.org/document/9157374 |pages=1057–1067 |doi=10.1109/CVPR42600.2020.00114|isbn=978-1-7281-7168-5 |s2cid=214634317 |url=https://lirias.kuleuven.be/handle/123456789/667702 }}</ref>
+
+Superellipsoids have an rich shape vocabulary, including cuboids, cylinders, ellipsoids, octahedra and their intermediates.<ref name=":2">{{Cite book |last1=Liu |first1=Weixiao |last2=Wu |first2=Yuwei |last3=Ruan |first3=Sipu |last4=Chirikjian |first4=Gregory S. |title=2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=Robust and Accurate Superquadric Recovery: A Probabilistic Approach |date=2022 |chapter-url=https://ieeexplore.ieee.org/document/9878948 |pages=2666–2675 |doi=10.1109/CVPR52688.2022.00270|arxiv=2111.14517 |isbn=978-1-6654-6946-3 |s2cid=244715106 }}</ref> It becomes an important geometric primitive widely used in computer vision,<ref name=":2" /><ref name=":1" /><ref name=":3">{{Cite book |last1=Paschalidou |first1=Despoina |last2=Ulusoy |first2=Ali Osman |last3=Geiger |first3=Andreas |title=2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=Superquadrics Revisited: Learning 3D Shape Parsing Beyond Cuboids |date=2019 |chapter-url=https://ieeexplore.ieee.org/document/8953499 |pages=10336–10345 |doi=10.1109/CVPR.2019.01059|arxiv=1904.09970 |isbn=978-1-7281-3293-8 |s2cid=128265641 }}</ref> robotics,<ref name=":0" /> and physical simulation.<ref name=":4">{{Cite journal |last1=Lu |first1=G. |last2=Third |first2=J. R. |last3=Müller |first3=C. R. |date=2012-08-20 |title=Critical assessment of two approaches for evaluating contacts between super-quadric shaped particles in DEM simulations |url=https://www.sciencedirect.com/science/article/pii/S0009250912003223 |journal=Chemical Engineering Science |language=en |volume=78 |pages=226–235 |doi=10.1016/j.ces.2012.05.041 |bibcode=2012ChEnS..78..226L |issn=0009-2509}}</ref> The main advantage of describing objects and envirionment with superellipsoids is its conciseness and expressiveness in shape.<ref name=":2" /> Furthermore, a closed-form expression of the Minkowski sum between two superellipsoids is available.<ref>{{Cite journal |last1=Ruan |first1=Sipu |last2=Chirikjian |first2=Gregory S. |date=2022-02-01 |title=Closed-form Minkowski sums of convex bodies with smooth positively curved boundaries |url=https://www.sciencedirect.com/science/article/pii/S0010448521001445 |journal=Computer-Aided Design |language=en |volume=143 |pages=103133 |doi=10.1016/j.cad.2021.103133 |arxiv=2012.15461 |s2cid=229923980 |issn=0010-4485}}</ref> This makes it a desirable geometric primitive for robot grasping, collision detection, and motion planning.<ref name=":0" />
+
+== Special cases ==
+A handful of notable mathematical figures can arise as special cases of superellipsoids given the correct set of values, which are depicted in the above graphic:
+
+* [[Cylinder (geometry)|Cylinder]]
+* [[Sphere]]
+* [[Steinmetz solid]]
+* [[Bicone]]
+* Regular [[octahedron]]
+* [[Cube]], as a limiting case where the exponents tend to infinity
+
+[[Piet Hein (Denmark)|Piet Hein]]'s [[superegg]]s are also special cases of superellipsoids.
+
+== Formulas ==
+
+=== Basic (normalized) superellipsoid ===
+The basic superellipsoid is defined by the [[implicit function]]
+:<math> f(x,y,z)=\left(x^{\frac{2}{\epsilon_2}} + y^{\frac{2}{\epsilon_2}} \right)^{\epsilon_2/\epsilon_1} + z^{\frac{2}{\epsilon_1}}</math>
+The parameters <math> \epsilon_1</math> and <math> \epsilon_2</math> are positive real numbers that control the squareness of the shape.
+
+The surface of the superellipsoid is defined by the equation:
+
+<math> f(x,y,z)=1</math>
+
+For any given point <math> (x,y,z)\in\mathbb{R}^3</math>, the point lies inside the superellipsoid if <math> f(x,y,z)<1</math>, and outside if <math> f(x,y,z)>1</math>.
+
+Any "[[parallel of latitude]]" of the superellipsoid (a horizontal section at any constant ''z'' between -1 and +1) is a [[Superellipse|Lamé curve]] with exponent <math> 2/\epsilon_2</math>, scaled by <math> a = (1 - z^{\frac{2}{\epsilon_1}})^{\frac{\epsilon_1}{2}}</math>, which is
+
+: <math> \left(\frac{x}{a}\right)^{\frac{2}{\epsilon_2}} + \left(\frac{y}{a}\right)^{\frac{2}{\epsilon_2}} = 1.</math>
+
+Any "[[meridian of longitude]]" (a section by any vertical plane through the origin) is a Lamé curve with exponent <math> 2/\epsilon_1</math>, stretched horizontally by a factor ''w'' that depends on the sectioning plane. Namely, if <math> x=u\cos\theta</math> and <math> y=u\sin\theta</math>, for a given <math> \theta</math>, then the section is
+
+: <math> \left(\frac{u}{w}\right)^{\frac{2}{\epsilon_1}} + z^{\frac{2}{\epsilon_1}} = 1,</math>
+
+where
+
+:<math>w = (\cos^{\frac{2}{\epsilon_2}}\theta + \sin^{\frac{2}{\epsilon_2}}\theta)^{-\frac{\epsilon_2}{2}}.</math>
+
+In particular, if <math> \epsilon_2</math> is 1, the horizontal cross-sections are circles, and the horizontal stretching <math> w</math> of the vertical sections is 1 for all planes.  In that case, the superellipsoid is a [[solid of revolution]], obtained by rotating the Lamé curve with exponent <math> 2/\epsilon_1</math> around the vertical axis.
+
+=== Superellipsoid ===
+The basic shape above extends from &minus;1 to +1 along each coordinate axis. The general superellipsoid is obtained by scaling the basic shape along each axis by factors <math> a_x</math>, <math> a_y</math>, <math> a_z</math>, the semi-diameters of the resulting solid. The implicit function is <ref name="barr81" />
+
+:<math> F(x,y,z)=\left( \left(\frac{x}{a_x}\right)^{\frac{2}{\epsilon_2}} + \left(\frac{y}{a_y}\right)^{\frac{2}{\epsilon_2}} \right)^{\frac{\epsilon_2}{\epsilon_1}} + \left(\frac{z}{a_z}\right)^{\frac{2}{\epsilon_1}}</math>.
+Similarly, the surface of the superellipsoid is defined by the equation
+
+<math> F(x,y,z)=1</math>
+
+For any given point <math> (x,y,z)\in\mathbb{R}^3</math>, the point lies inside the superellipsoid if <math> f(x,y,z)<1</math>, and outside if <math> f(x,y,z)>1</math>.
+
+Therefore, the implicit function is also called the inside-outside function of the superellipsoid.<ref name="barr81" />
+
+The superellipsoid has a [[parametric representation]] in terms of surface parameters <math> \eta\in[-\pi/2,\pi/2)</math>, <math> \omega\in[-\pi,\pi)</math>.<ref name="barr92" />
+
+:<math>x(\eta,\omega) = a_x \cos^{\epsilon_1}\eta\cos^{\epsilon_2}\omega</math>
+:<math>y(\eta,\omega) = a_y \cos^{\epsilon_1}\eta\sin^{\epsilon_2}\omega</math>
+:<math>z(\eta,\omega) = a_z \sin^{\epsilon_1}\eta</math>
+
+=== General posed superellipsoid ===
+In computer vision and robotic applications, a superellipsoid with a general pose in the 3D Euclidean space is usually of more interest.<ref name=":2" /><ref name=":1" />
+
+For a given Euclidean transformation of the superellipsoid frame <math> g=[\mathbf{R}\in SO(3), \mathbf{t}\in\mathbb{R}^3]\in SE(3)</math> relative to the world frame, the implicit function of a general posed superellipsoid surface defined the world frame is<ref name=":2" />
+
+<math> F\left(g^{-1}\circ(x,y,z)\right)=1</math>
+
+where <math> \circ</math> is the transformation operation that maps the point <math> (x,y,z)\in\mathbb{R}^3</math> in the world frame into the canonical superellipsoid frame.
+
+=== Volume of superellipsoid ===
+The volume encompassed by the superelllipsoid surface can be expressed in terms of the [[beta function]]s <math> \beta(\cdot,\cdot)</math>,<ref>{{Cite web |title=SUPERQUADRICS AND THEIR GEOMETRIC PROPERTIES |url=https://cse.buffalo.edu/~jryde/cse673/files/superquadrics.pdf}}</ref>
+
+<math> V(\epsilon_1,\epsilon_2,a_x,a_y,a_z)=2a_xa_ya_z\epsilon_1\epsilon_2\beta(\frac{\epsilon_1}{2},\epsilon_1+1)\beta(\frac{\epsilon_2}{2},\frac{\epsilon_2+2}{2}) </math>
+
+or equivalently with the [[Gamma function]] <math> \Gamma(\cdot)</math>, since
+
+<math> \beta(m,n)=\frac{\Gamma(m)\Gamma(n)}{\Gamma(m+n)}</math>
+
+== Recovery from data ==
+Recoverying the superellipsoid (or superquadrics) representation from raw data (e.g., point cloud, mesh, images, and voxels) is an important task in computer vision,<ref name=":5">{{Cite journal |last1=Bajcsy |first1=R. |last2=Solina |first2=F. |date=1987 |title=Three dimensional object representation revisited |url=https://www.researchgate.net/publication/33550059 |journal=Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) |pages=231–240}}</ref><ref name=":3" /><ref name=":2" /><ref name=":1" /> robotics,<ref name=":0" /> and physical simulation.<ref name=":4" />
+
+Traditional computational methods model the problem as a least-square problem.<ref name=":5" /> The goal is to find out the optimal set of superellipsoid parameters <math> \theta\doteq[\epsilon_1, \epsilon_2, a_x, a_y, a_z, g]</math> that minimize an objective function. Other than the shape parameters, <math> g\in </math> [[Euclidean group|SE(3)]] is the pose of the superellipsoid frame with respect to the world coordinate.
+
+There are two commonly used objective functions.<ref name=":6">{{Cite journal |last=Zhang |first=Yan |date=2003-10-01 |title=Experimental comparison of superquadric fitting objective functions |url=https://www.sciencedirect.com/science/article/pii/S0167865502004002 |journal=Pattern Recognition Letters |language=en |volume=24 |issue=14 |pages=2185–2193 |doi=10.1016/S0167-8655(02)00400-2 |bibcode=2003PaReL..24.2185Z |issn=0167-8655}}</ref> The first one is constructed directly based on the implicit function<ref name=":5" />
+
+<math> G_1(\theta)=a_xa_ya_z\sum_{i=1}^{N}\left(F^{\epsilon_1}\left(g^{-1}\circ(x_i,y_i,z_i)\right)-1\right)^2</math>
+
+The minimization of the objective function provides a recovered superellipsoid as close as possible to all the input points <math> \{(x_i,y_i,z_i)\in \mathbb{R}^3, i=1,2,...,N\}</math>. At the mean time, the scalar value <math> a_x,a_y,a_z</math> is positively proportional to the volume of the superellipsoid, and thus have the effect of minimizing the volume as well.
+
+The other objective function tries to minimized the radial distance between the points and the superellipsoid. That is<ref>{{Cite book |last1=Gross |first1=A.D. |last2=Boult |first2=T.E. |title=&#91;1988 Proceedings&#93; Second International Conference on Computer Vision |chapter=Error of Fit Measures for Recovering Parametric Solids |date=1988 |chapter-url=https://ieeexplore.ieee.org/document/590052 |pages=690–694 |doi=10.1109/CCV.1988.590052|isbn=0-8186-0883-8 |s2cid=43541446 }}</ref><ref name=":6" />
+
+<math> G_2(\theta)=\sum_{i=1}^{N}\left(\left|r_i\right|\left|1-F^{-\frac{\epsilon_1}{2}}\left(g^{-1}\circ (x_i,y_i,z_i)\right)\right|\right)^2</math>, where <math> r_i=\|(x_i,y_i,z_i)\|_2</math>
+
+A probabilistic method called EMS is designed to deal with noise and [[outlier]]s.<ref name=":2" /> In this method, the superellipsoid recovery is reformulated as a [[maximum likelihood estimation]] problem, and an optimization method is proposed to avoid local minima utilizing geometric similarities of the superellipsoids.
+
+The method is further extended by modeling with nonparametric bayesian techniques to recovery multiple superellipsoids simultaneously.<ref>{{Cite book |last1=Wu |first1=Yuwei |last2=Liu |first2=Weixiao |last3=Ruan |first3=Sipu |last4=Chirikjian |first4=Gregory S. |title=Computer Vision – ECCV 2022 |chapter=Primitive-Based Shape Abstraction via Nonparametric Bayesian Inference |date=2022 |editor-last=Avidan |editor-first=Shai |editor2-last=Brostow |editor2-first=Gabriel |editor3-last=Cissé |editor3-first=Moustapha |editor4-last=Farinella |editor4-first=Giovanni Maria |editor5-last=Hassner |editor5-first=Tal |chapter-url=https://link.springer.com/chapter/10.1007/978-3-031-19812-0_28 |series=Lecture Notes in Computer Science |volume=13687 |language=en |location=Cham |publisher=Springer Nature Switzerland |pages=479–495 |doi=10.1007/978-3-031-19812-0_28 |arxiv=2203.14714 |isbn=978-3-031-19812-0}}</ref>
+
+== References ==
+{{Reflist}}
+
+== Bibliography ==
+* Barr, "Superquadrics and Angle-Preserving Transformations," in ''IEEE Computer Graphics and Applications'', vol. 1, no. 1, pp.&nbsp;11–23, Jan. 1981, doi: 10.1109/MCG.1981.1673799.
+* Aleš Jaklič, Aleš Leonardis, Franc Solina, ''Segmentation and Recovery of Superquadrics''. Kluwer Academic Publishers, Dordrecht, 2000.
+* Aleš Jaklič, Franc Solina (2003) Moments of Superellipsoids and their Application to Range Image Registration. IEEE TRANSACTIONS ON SYSTEMS, MAN, AND CYBERNETICS, 33 (4). pp.&nbsp;648–657
+* W. Liu, Y. Wu, S. Ruan and G. S. Chirikjian, "Robust and Accurate Superquadric Recovery: a Probabilistic Approach," ''2022 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)'', New Orleans, LA, USA, 2022, pp.&nbsp;2666–2675, doi: 10.1109/CVPR52688.2022.00270.
+
+== External links ==
+* [http://iris.usc.edu/Vision-Notes/bibliography/describe461.html Bibliography: SuperQuadric Representations]
+* [http://www.cs.utah.edu/~gk/papers/vissym04/ Superquadric Tensor Glyphs]
+* [https://www.gamedev.net/articles/programming/graphics/superquadric-ellipsoids-and-toroids-opengl-lig-r1172 SuperQuadric Ellipsoids and Toroids, OpenGL Lighting, and Timing]
+* [http://demonstrations.wolfram.com/Superquadrics/ Superquadratics] by Robert Kragler, [[The Wolfram Demonstrations Project]].
+* [https://github.com/bmlklwx/EMS-superquadric_fitting Superquadrics Recovery Algorithm] in Python and MATLAB
+
+[[Category:Computer graphics]]
+[[Category:Computer vision]]
+[[Category:Robotics]]
+[[Category:Geometry]]
+[[Category:Geometry in computer vision]]

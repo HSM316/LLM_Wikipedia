@@ -1,0 +1,41 @@
+
+{{More references|date=July 2008}}
+{{Circular|date=November 2019}}
+
+'''Artificial psychology''' (AP) has had multiple meanings dating back to 19th century, with recent usage related to [[artificial intelligence]] (AI).
+
+In 1999, Zhiliang Wang and Lun Xie presented a theory of artificial psychology based on artificial intelligence. They analyze human psychology using information science research methods and artificial intelligence research to probe deeper into the human mind.<ref>{{Cite journal|last=Wang|first=Zhiliang|date=2007|editor-last=Smith|editor-first=Michael J.|editor2-last=Salvendy|editor2-first=Gavriel|title=Artificial Psychology|journal=Human Interface and the Management of Information. Methods, Techniques and Tools in Information Design|volume=4557|series=Lecture Notes in Computer Science|language=en|publisher=Springer Berlin Heidelberg|pages=208–217|doi=10.1007/978-3-540-73345-4_25|isbn=9783540733454|url=https://semanticscholar.org/paper/a6ec39d217ccee79cda8124f646355210e4edb75}}</ref><ref>{{Cite journal|last=Zhiliang Wang|last2=Lun Xie|date=July 1999|title=Artificial psychology: an attainable scientific research on the human brain|journal=Proceedings of the Second International Conference on Intelligent Processing and Manufacturing of Materials. IPMM'99 (Cat. No.99EX296)|volume=2|pages=1067–1072 vol.2|doi=10.1109/IPMM.1999.791528|isbn=0-7803-5489-3}}</ref>
+
+Dan Curtis (b. 1963) proposed AP is a theoretical discipline.{{cn|date=November 2019}} The theory considers the situation when an artificial intelligence approaches the level of complexity where the intelligence meets two conditions:
+
+'''Condition I'''
+* A: Makes all of its decisions autonomously
+* B: Is capable of making decisions based on information that is
+:# New
+:# [[Abstract object|Abstract]]
+:# Incomplete
+* C: The artificial intelligence is capable of reprogramming itself based on the new data
+* D: And is capable of resolving its own programming conflicts, even in the presence of incomplete data. This means that the intelligence autonomously makes value-based decisions, referring to values that the intelligence has created for itself.
+
+'''Condition II'''
+* All four criteria are met in situations that are not part of the original operating program
+
+When both conditions are met, then, according to this theory, the possibility exists that the intelligence will reach irrational conclusions based on real or created information. At this point, the criteria is met for intervention which will not necessarily be resolved by simple re-coding of processes due to extraordinarily complex nature of the [[codebase]] itself; but rather a discussion with the intelligence in a format which more closely resembles classical (human) [[psychology]].
+
+If the intelligence cannot be reprogrammed by directly inputting new code, but requires the intelligence to reprogram itself through a process of analysis and decision based on information provided by a human, in order for it to overcome behavior which is inconsistent with the machines purpose or ability to function normally, then artificial psychology is by definition, what is required.
+
+The level of complexity that is required before these thresholds are met is currently a subject of extensive debate. The theory of artificial psychology does not address the specifics of what those levels may be, but only that the level is sufficiently complex that the intelligence cannot simply be recoded by a software developer, and therefore dysfunctionality must be addressed through the same processes that humans must go through to address their own dysfunctionalities. Along the same lines, artificial psychology does not address the question of whether or not the intelligence is conscious.
+
+As of 2015, the level of artificial intelligence does not approach any threshold where any of the theories or principles of artificial psychology can even be tested, and therefore, artificial psychology remains a largely theoretical discipline. Even at a theoretical level, artificial psychology an advanced stage of artificial intelligence.
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* {{Cite book|url=https://books.google.com/books?id=ikwTAQAAMAAJ|title=Homo Cyberneticus: Artificial psychology and generative micro-sociology|last=Holstein|first=Hans Jürgen|last2=Stålberg|first2=Lennart|date=1974|publisher=Sociografica|language=en}}
+* {{Cite journal|last=Lu|first=Quan|last2=Chen|first2=Jing|last3=Meng|first3=Bo|date=2006|editor-last=Feng|editor-first=Ling|editor2-last=Wang|editor2-first=Guoren|editor3-last=Zeng|editor3-first=Cheng|editor4-last=Huang|editor4-first=Ruhua|title=Web Personalization Based on Artificial Psychology|journal=Web Information Systems – WISE 2006 Workshops|volume=4256|series=Lecture Notes in Computer Science|language=en|publisher=Springer Berlin Heidelberg|pages=223–229|doi=10.1007/11906070_22|isbn=9783540476641}}
+* {{cite proceedings|citeseerx=10.1.1.368.170|last1=Crowder|first1= James A.|last2=Friess|first2=Shelli|title=Artificial psychology: the psychology of AI|year=2012|work=Proceedings of the 3rd annual international multi-conference on informatics and etics|url=http://www.iiisci.org/journal/CV$/sci/pdfs/iZA532FA.pdf}}
+* Artificial psychology: an attainable scientific research on the human brain. (1999). ''Proceedings of the Second International Conference on Intelligent Processing and Manufacturing of Materials. IPMM’99 (Cat. No.99EX296), Intelligent Processing and Manufacturing of Materials, 1999. IPMM ’99. Proceedings of the Second International Conference On'', 1067. {{doi|10.1109/IPMM.1999.791528}}
+
+
+[[Category:Artificial intelligence]]

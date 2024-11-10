@@ -1,0 +1,234 @@
+{{essay|date=January 2021}}
+{{Artificial intelligence}}
+
+'''Digital cloning''' is an emerging technology, that involves deep-learning algorithms, which allows one to manipulate currently existing [[Sound|audio]], [[Photograph|photos]], and [[video]]s that are hyper-realistic.<ref>{{Cite journal|last=Floridi|first=Luciano|date=2018|title=Artificial Intelligence, Deepfakes and a Future of Ectypes|journal=Philosophy & Technology|volume=31|issue=3|pages=317–321|doi=10.1007/s13347-018-0325-3|doi-access=free}}</ref> One of the impacts of such technology is that hyper-realistic videos and photos makes it difficult for the human eye to distinguish what is real and what is fake.<ref>{{Cite journal|last=Borel|first=Brooke|date=2018|title=Clicks, Lies and Videotape|journal=Scientific American|volume=319|issue=4|pages=38–43|doi=10.1038/scientificamerican1018-38|pmid=30273328|bibcode=2018SciAm.319d..38B|s2cid=52902634}}</ref> Furthermore, with various companies making such technologies available to the public, they can bring various benefits as well as potential legal and ethical concerns.
+
+Digital cloning can be categorized into audio-visual (AV), memory, personality, and consumer behaviour cloning.<ref name="holy grail 2021 p140-168"/> In AV cloning, the creation of a cloned digital version of the digital or non-digital original can be used, for example, to create a fake image, an avatar, or a fake video or [[Audio deepfake|audio]] of a person that cannot be easily differentiated from the real person it is purported to represent. A memory and personality clone like a mindclone is essentially a digital copy of a person’s mind. A consumer behavior clone is a profile or cluster of customers based on demographics.
+
+Truby and Brown coined the term “digital thought clone” to refer to the evolution of digital cloning into a more advanced personalized digital clone that consists of “a replica of all known data and behavior on a specific living person, recording in real-time their choices, preferences, behavioral trends, and decision making processes.”<ref name="holy grail 2021 p140-168">{{Cite journal|last1=Truby|first1=Jon |last2=Brown|first2=Rafael|date=2021|title=Human digital thought clones: the Holy Grail of artificial intelligence for big data|url=https://www.tandfonline.com/doi/full/10.1080/13600834.2020.1850174|journal=Information and Communication Technology Law|volume=30|issue=2|pages=140–168|doi=10.1080/13600834.2020.1850174 |s2cid=229442428 |hdl=10576/17266|hdl-access=free}} [[File:CC-BY icon.svg|50px]]  Text was copied from this source, which is available under a [https://creativecommons.org/licenses/by/4.0/  Creative Commons Attribution 4.0 International License].</ref>
+
+Digital cloning first became popular in the entertainment industry. The idea of digital clones originated from movie companies creating [[virtual actor]]s of actors who have died. When actors diey during a movie production, a digital clone of the actor can be synthesized using past footage, photos, and voice recordings to mimic the real person in order to continue the movie production.<ref name=":82">{{Cite journal|last=Beard|first=Joseph|date=2001|title=CLONES, BONES AND TWILIGHT ZONES: Protecting the Digital Persona of the Quick, the Dead and the Imaginary|journal=Berkeley Technology Law Journal|volume=16|issue=3|pages=1165–1271|jstor=24116971}}</ref>
+
+Modern artificial intelligence, has allowed for the creation of [[deepfake]]s. This involves manipulation of a video to the point where the person depicted in the video is saying or performing actions he or she may not have consented to.<ref name=":02">{{Cite journal|last=Allen|first=Anita|date=2016|title=Protecting One's Own Privacy In a Big Data Economy|url=https://heinonline.org/HOL/Page?handle=hein.journals/forharoc130&id=72&collection=journals&index=|journal=Harvard Law Review|volume=130|issue=2|pages=71–86}}</ref> In April 2018, [[BuzzFeed]] released a deepfake video of [[Jordan Peele]], which was manipulated to depict former President, [[Barack Obama]], making statements he has previously not made in public to warn the public against the potential dangers of deepfakes.<ref name=":22">{{Cite web|url=https://www.buzzfeed.com/craigsilverman/obama-jordan-peele-deepfake-video-debunk-buzzfeed|title=How To Spot A Deepfake Like The Barack Obama–Jordan Peele Video|last=Silverman|first=Craig|date=April 2018|website=Buzzfeed}}</ref>
+
+In addition to deepfakes, companies such as [[Intellitar]] now allows one to easily create a digital clone of themselves by feeding a series of images and voice recordings. This essentially creates [[digital immortality]], allowing loved ones to interact with those who died.<ref name=":12">{{Cite journal|last=Meese|first=James|date=2015|title=Posthumous Personhood and the Affordances of Digital Media|journal=Mortality|volume=20|issue=4|pages=408–420|doi=10.1080/13576275.2015.1083724|hdl=10453/69288|s2cid=147550696|hdl-access=free}}</ref> Digital cloning not only allows one to digitally memorialize their loved ones, but they can also be used to create avatars of historical figures and be used in an educational setting.
+
+With the development of various technology, as mentioned above, there are numerous concerns that arises, including [[identity theft]], [[data breach]]es, and other ethical concerns. One of the issues with digital cloning is that there are little to no legislations to protect potential victims against these possible problems.<ref name=":72">{{Cite journal|last=Nemitz|first=Paul Friedrich|date=2018|title=Constitutional Democracy and Technology in the Age of Artificial Intelligence|journal=Philosophical Transactions of the Royal Society A: Mathematical, Physical and Engineering Sciences|volume=59|issue=9|pages=20180089|doi=10.1098/rsta.2018.0089|pmid=30323003|bibcode=2018RSPTA.37680089N|doi-access=free}}</ref>
+
+== Technology ==
+
+=== Intelligent Avatar Platforms (IAP) ===
+Intelligent Avatar Platform (IAP) can be defined as an online platform supported by [[artificial intelligence]] that allows one to create a [[Clone (computing)|clone]] of themselves.<ref name=":12" /> The individual must train his or her clone to act and speak like themselves by feeding the algorithm numerous voice recordings and videos of themselves.<ref name=":32">{{Cite journal|last=Michalik|first=Lyndsay|date=2013|title='Haunting Fragments': Digital Mourning and Intermedia Performance|journal=Theatre Annual|volume=66|issue=1|pages=41–64|id={{ProQuest|1501743129}}}}</ref> Essentially, this platform becomes a place where one lives eternally, as they are able to interact with other avatars on the same platform. IAP is becoming a platform for one to attain [[digital immortality]], along with maintaining a family tree and legacy for generations following to see.<ref name=":12" />
+
+Some examples of IAP include [[Intellitar]] and Eterni.me. Although most of these companies are still in its developing stages, they all are trying to achieve the same goal of allowing the user to create an exact duplicate of themselves to store every memory they have in their mind into the cyberspace.<ref name=":12" /> Some include a free version, which only allows the user to choose their avatar from a given set of images and audio. However, with the premium setting, these companies will ask the user to upload photos, videos, and audio recordings of one to form a realistic version of themselves.<ref>{{Cite web|url=http://eterni.me/|title=Eternime|last=Ursache|first=Marius}}</ref> Additionally, to ensure that the clone is as close to the original person, companies also encourage interacting with their own clone by chatting and answering questions for them. This allows the algorithm to learn the [[cognition]] of the original person and apply that to the clone. Intellitar closed down in 2012 because of intellectual property battles over the technology it used<ref>{{Cite web |url=http://fusion.net/story/116999/this-start-up-promised-10000-people-eternal-digital-life-then-it-died/ |title=This start-up promised 10,000 people eternal digital life—then it died &#124; Fusion |access-date=2020-05-24 |archive-date=2016-12-30 |archive-url=https://web.archive.org/web/20161230151815/http://fusion.net/story/116999/this-start-up-promised-10000-people-eternal-digital-life-then-it-died/ |url-status=dead }}</ref>
+
+Potential concerns with IAP includes the potential [[data breach]]es and not getting [[consent]] of the deceased. IAP must have a strong foundation and responsibility against data breaches and hacking in order to protect personal information of the dead, which can include voice recording, photos, and messages.<ref name=":32" /> In addition to the risk of [[personal privacy]] being compromised, there is also the risk of violating the [[Post-mortem privacy|privacy of the deceased]]. Although one can give consent to creating a digital clone of themselves before his or her physical death, they are unable to give consent to the actions the digital clone may take.
+
+=== Deepfakes ===
+{{Main|Deepfake}}As described earlier, deepfakes is a form of video manipulation where one can change the people present by feeding various images of a specific person they want. Furthermore, one can also change the voice and words the person in the video says by simply submitting series of voice recordings of the new person lasting about one or two minutes long. In 2018, a new app called FakeApp was released, allowing the public to easily access this technology to create videos. This app was also used to create the [[BuzzFeed|Buzzfeed]] video of former President [[Barack Obama]].<ref name=":22" /><ref>S. Agarwal, H. Farid, Y. Gu, M. He, K. Nagano, and H. Li, “Protecting world leaders against deep fakes,” in The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops, June 2019.</ref> With deepfakes, industries can cut the cost of hiring actors or models for films and advertisements by creating videos and film efficiently at a low cost just by collecting a series of photos and audio recordings with the consent of the individual.<ref name=":42">{{Cite journal|last=Chesney|first=Robert|date=2018|title=Deep Fakes: A Looming Challenge for Privacy, Democracy, and National Security|url=https://www.amic.media/media/files/file_352_1754.pdf|journal=SSRN Electronic Journal|volume=26|issue=1|pages=1–58}}</ref>
+
+Potential concerns with deepfakes is that access is given to virtually anyone who downloads the different apps that offer the same service. With anyone being able to access this tool, some may maliciously use the app to create revenge porn and manipulative videos of public officials making statements they will never say in real life. This not only invades the privacy of the individual in the video but also brings up various ethical concerns.<ref>{{Cite journal|last=Suwajanakorn|first=Supasorn|date=2017|title=Synthesizing Obama|url=https://grail.cs.washington.edu/projects/AudioToObama/siggraph17_obama.pdf|journal=ACM Transactions on Graphics|volume=36|issue=4|pages=1–13|doi=10.1145/3072959.3073640|s2cid=207586187}}</ref>
+
+=== Voice cloning ===
+{{Main|Audio deepfake}}
+
+Voice cloning is a case of the [[audio deepfake]] methods that uses [[artificial intelligence]] to generate a clone of a person's voice. Voice cloning involves [[deep learning]] algorithm that takes in voice recordings of an individual and can [[Speech synthesis|synthesize]] such a voice to the point where it can faithfully replicate a human voice with great accuracy of tone and likeness.<ref name=":14">{{Cite web |date=2021-10-01 |title=Everything You Need To Know About Deepfake Voice |url=https://www.veritone.com/blog/everything-you-need-to-know-about-deepfake-voice/ |access-date=2022-06-30 |website=Veritone |language=en}}</ref>
+
+Cloning a voice requires high-performance computers. Usually, the computations are done using the [[Graphics processing unit|Graphics Processing Unit (GPU)]], and very often resort to the [[cloud computing]], due to the enormous amount of calculation needed.
+
+Audio data for training has to be fed into an artificial intelligence model. These are often original recordings that provide an example of the voice of the person concerned. Artificial intelligence can use this data to create an authentic voice, which can reproduce whatever is typed, called Text-To-Speech, or spoken, called Speech-To-Speech.
+
+This technology worries many because of its impact on various issues, from political discourse to the rule of law. Some of the early warning signs have already appeared in the form of phone scams<ref>{{Cite web |last=David |first=Dominic |title=Council Post: Analyzing The Rise Of Deepfake Voice Technology |url=https://www.forbes.com/sites/forbestechcouncil/2021/05/10/analyzing-the-rise-of-deepfake-voice-technology/ |access-date=2022-06-30 |website=Forbes |language=en}}</ref><ref name=":15">{{Cite web |last=Brewster |first=Thomas |title=Fraudsters Cloned Company Director's Voice In $35 Million Bank Heist, Police Find |url=https://www.forbes.com/sites/thomasbrewster/2021/10/14/huge-bank-fraud-uses-deep-fake-voice-tech-to-steal-millions/ |access-date=2022-06-29 |website=Forbes |language=en}}</ref> and fake videos on social media of people doing things they never did.<ref>{{Cite web |last=Ortutay |first=Matt O'Brien and Barbara |title=Why the Anthony Bourdain voice cloning in documentary 'Roadrunner' creeps people out |url=https://www.usatoday.com/story/entertainment/movies/2021/07/16/anthony-bourdain-voice-cloning-artificial-intelligence/8000861002/ |access-date=2022-06-30 |website=USA TODAY |language=en-US}}</ref>
+
+Protections against these threats can be primarily implemented in two ways. The first is to create a way to analyze or detect the authenticity of a video. This approach will inevitably be an upside game as ever-evolving generators defeat these detectors. The second way could be to embed the creation and modification information in software or hardware.<ref name=":17">{{Cite journal |last1=Rashid |first1=Md Mamunur |last2=Lee |first2=Suk-Hwan |last3=Kwon |first3=Ki-Ryong |date=2021 |title=Blockchain Technology for Combating Deepfake and Protect Video/Image Integrity |url=http://koreascience.or.kr/article/JAKO202125761199587.page |journal=Journal of Korea Multimedia Society |volume=24 |issue=8 |pages=1044–1058 |doi=10.9717/kmms.2021.24.8.1044 |issn=1229-7771}}</ref><ref name=":18">{{cite arXiv |last1=Fraga-Lamas |first1=Paula |last2=Fernández-Caramés |first2=Tiago M. |date=2019-10-20 |title=Fake News, Disinformation, and Deepfakes: Leveraging Distributed Ledger Technologies and Blockchain to Combat Digital Deception and Counterfeit Reality |class=cs.CY |eprint=1904.05386}}</ref> This would work only if the data were not editable, but the idea would be to create an inaudible watermark that would act as a source of truth.<ref name=":19">{{Cite journal |last1=Ki Chan |first1=Christopher Chun |last2=Kumar |first2=Vimal |last3=Delaney |first3=Steven |last4=Gochoo |first4=Munkhjargal |date=September 2020 |title=Combating Deepfakes: Multi-LSTM and Blockchain as Proof of Authenticity for Digital Media |url=https://ieeexplore.ieee.org/document/9311067 |journal=2020 IEEE / ITU International Conference on Artificial Intelligence for Good (AI4G) |pages=55–62 |doi=10.1109/AI4G50087.2020.9311067|isbn=978-1-7281-7031-2 |s2cid=231618774 }}</ref> In other words, we could know if the video is authentic by seeing where it was shot, produced, edited, and so on.<ref name=":14" />
+
+[[15.ai]]&mdash;a non-commercial freeware web application that began as a [[proof of concept]] of the [[democratization of technology|democratization]] of voice acting and dubbing using technology&mdash;gives the public access to such technology.<ref name="thebatch">
+{{cite web
+ |url= https://blog.deeplearning.ai/blog/the-batch-ai-against-coronavirus-datasets-voice-cloning-for-the-masses-finding-unexploded-bombs-seeing-see-through-objects-optimizing-training-parameters
+ |title= Voice Cloning for the Masses
+ |last= Ng
+ |first= Andrew
+ |date= 2020-04-01
+ |website= The Batch
+ |publisher= The Batch
+ |access-date= 2020-04-05
+ |archive-url=https://web.archive.org/web/20200807111844/https://blog.deeplearning.ai/blog/the-batch-ai-against-coronavirus-datasets-voice-cloning-for-the-masses-finding-unexploded-bombs-seeing-see-through-objects-optimizing-training-parameters
+ |archive-date=2020-04-08
+ |url-status= dead
+ |quote= }}
+</ref> Its gratis and non-commercial nature (with the only stipulation being that the project be properly credited when used<ref name="15ai">{{cite web
+ |url= https://15.ai/faq
+ |title= 15.ai - FAQ
+ |last= 
+ |first= 
+ |date= 2021-01-18
+ |website= 15.ai
+ |publisher= 
+ |access-date= 2021-01-18
+ |quote= 
+ }}{{Dead link|date=June 2022 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>), ease of use, and substantial improvements to current text-to-speech implementations have been lauded by users;<ref name="gameinformer">{{cite magazine
+ |url= https://www.gameinformer.com/gamer-culture/2021/01/18/make-portals-glados-and-other-beloved-characters-say-the-weirdest-things
+ |title= Make Portal's GLaDOS And Other Beloved Characters Say The Weirdest Things With This App
+ |last= Ruppert
+ |first= Liana
+ |date= 2021-01-18
+ |magazine= [[Game Informer]]
+ |publisher= [[Game Informer]]
+ |access-date= 2021-01-18
+ |quote= 
+ |archive-date= 2021-01-18
+ |archive-url= https://web.archive.org/web/20210118175543/https://www.gameinformer.com/gamer-culture/2021/01/18/make-portals-glados-and-other-beloved-characters-say-the-weirdest-things
+ |url-status= live
+ }}</ref><ref name="towardds">{{cite web
+ |url= https://towardsdatascience.com/generate-your-favourite-characters-voice-lines-using-machine-learning-c0939270c0c6
+ |title= Generate Your Favourite Characters' Voice Lines using Machine Learning
+ |last= Chandraseta
+ |first= Rionaldi
+ |date= 2021-01-19
+ |website= Towards Data Science
+ |access-date= 2021-01-23
+ |quote= 
+ |archive-date= 2021-01-21
+ |archive-url= https://web.archive.org/web/20210121132456/https://towardsdatascience.com/generate-your-favourite-characters-voice-lines-using-machine-learning-c0939270c0c6
+ |url-status= live
+ }}</ref><ref name="kotaku">{{cite web
+ |url= https://kotaku.com/this-website-lets-you-make-glados-say-whatever-you-want-1846062835
+ |title= Website Lets You Make GLaDOS Say Whatever You Want
+ |last= Zwiezen
+ |first= Zack
+ |date= 2021-01-18
+ |website= [[Kotaku]]
+ |publisher= [[Kotaku]]
+ |access-date= 2021-01-18
+ |quote= 
+ |archive-date= 2021-01-17
+ |archive-url= https://web.archive.org/web/20210117164748/https://kotaku.com/this-website-lets-you-make-glados-say-whatever-you-want-1846062835
+ |url-status= live
+ }}</ref><ref name="pcgamer">{{cite web
+ |url= https://www.pcgamer.com/make-the-cast-of-tf2-recite-old-memes-with-this-ai-text-to-speech-tool
+ |title= Make the cast of TF2 recite old memes with this AI text-to-speech tool
+ |last= Clayton
+ |first= Natalie
+ |date= 2021-01-19
+ |website= [[PC Gamer]]
+ |publisher= [[PC Gamer]]
+ |access-date= 2021-01-19
+ |quote= 
+ |archive-date= 2021-01-19
+ |archive-url= https://web.archive.org/web/20210119133726/https://www.pcgamer.com/make-the-cast-of-tf2-recite-old-memes-with-this-ai-text-to-speech-tool/
+ |url-status= live
+ }}</ref> however, some critics and [[voice actor]]s have questioned the [[15ai#Copyrighted material in deep learning|legality]] and [[Deepfake#Concerns|ethicality]] of leaving such technology publicly available and readily accessible.<ref name="thebatch"/><ref name="batch">{{cite web
+ |url= https://read.deeplearning.ai/the-batch/issue-83/
+ |title= Weekly Newsletter Issue 83
+ |last= Ng
+ |first= Andrew
+ |date= 2021-03-07
+ |website= The Batch
+ |publisher= The Batch
+ |access-date= 2021-03-07
+ |quote= 
+ |archive-date= 2022-02-26
+ |archive-url= https://web.archive.org/web/20220226175907/https://read.deeplearning.ai/the-batch/issue-83/
+ |url-status= live
+ }}</ref><ref name="wccftech">{{cite web
+ |url= https://wccftech.com/voiceverse-nft-service-uses-stolen-technology-from-15ai/
+ |title= Troy Baker-backed NFT firm admits using voice lines taken from another service without permission
+ |last= Lopez
+ |first= Ule
+ |date= 2022-01-16
+ |website= Wccftech
+ |publisher= Wccftech
+ |access-date= 2022-06-07
+ |url-status= live
+ |archive-date= 2022-01-16
+ |archive-url= https://web.archive.org/web/20220116194519/https://wccftech.com/voiceverse-nft-service-uses-stolen-technology-from-15ai/
+ }}</ref><ref name="techtimes">{{cite web
+ |url= https://www.techtimes.com/articles/270688/20220118/troy-bakers-partner-nft-company-voiceverse-reportedly-steals-voice-lines.htm
+ |title= Troy Baker's Partner NFT Company Voiceverse Reportedly Steals Voice Lines From 15.ai
+ |last= Henry
+ |first= Joseph
+ |date= 2022-01-18
+ |website= Tech Times
+ |access-date= 2022-02-14
+ |quote= 
+ |archive-date= 2022-01-26
+ |archive-url= https://web.archive.org/web/20220126204741/https://www.techtimes.com/articles/270688/20220118/troy-bakers-partner-nft-company-voiceverse-reportedly-steals-voice-lines.htm
+ |url-status= live
+ }}</ref>
+
+Although this application is still in the developmental stage, it is rapidly developing as big technology corporations, such as [[Google]] and [[Amazon (company)|Amazon]] are investing vast amounts of money for the development.<ref name=":62">{{Cite journal |last=Brayne |first=Sarah |date=2018 |title=Visual Data and the Law |journal=Law & Social Inquiry |volume=43 |issue=4 |pages=1149–1163 |doi=10.1111/lsi.12373 |s2cid=150076575}}</ref>
+
+Some of the positive uses of voice cloning include the ability to synthesize millions of audiobooks without the use of human labor.<ref name=":10">{{Citation |last1=Chadha |first1=Anupama |title=Deepfake: An Overview |date=2021 |url=https://link.springer.com/10.1007/978-981-16-0733-2_39 |work=Proceedings of Second International Conference on Computing, Communications, and Cyber-Security |volume=203 |pages=557–566 |editor-last=Singh |editor-first=Pradeep Kumar |place=Singapore |publisher=Springer Singapore |language=en |doi=10.1007/978-981-16-0733-2_39 |isbn=978-981-16-0732-5 |access-date=2022-06-29 |last2=Kumar |first2=Vaibhav |last3=Kashyap |first3=Sonu |last4=Gupta |first4=Mayank |s2cid=236666289 |editor2-last=Wierzchoń |editor2-first=Sławomir T. |editor3-last=Tanwar |editor3-first=Sudeep |editor4-last=Ganzha |editor4-first=Maria}}</ref> Also, voice cloning was used to translate podcast content into different languages using the podcaster's voice.<ref>{{Cite web |last=Barletta |first=Bryan |date=2021-10-12 |title=Sounds Profitable en Español! |url=https://soundsprofitable.com/update/sounds-proftable-in-spanish |access-date=2022-06-30 |website=adtech.podnews.net |language=en}}</ref> Another includes those who may have lost their voice can gain back a sense of individuality by creating their voice clone by inputting recordings of them speaking before they lost their voices.<ref name=":16">{{Cite web |date=August 19, 2021 |first=Vanessa |last=Etienne |title=Val Kilmer Gets His Voice Back After Throat Cancer Battle Using AI Technology: Hear the Results |url=https://people.com/movies/val-kilmer-gets-his-voice-back-after-throat-cancer-battle-using-ai-technology-hear-the-results/ |access-date=2022-06-30 |website=PEOPLE.com |language=en}}</ref>
+
+On the other hand, voice cloning is also susceptible to misuse. An example of this is the voices of celebrities and public officials being cloned, and the voice may say something to provoke conflict despite the actual person has no association with what their voice said.<ref>{{Cite journal |last=Fletcher |first=John |date=2018 |title=Deepfakes, Artificial Intelligence, and Some Kind of Dystopia: The New Faces of Online Post-Fact Performance |journal=Theatre Journal |volume=70 |issue=4 |pages=455–71 |doi=10.1353/tj.2018.0097 |s2cid=191988083}}</ref>
+
+In recognition of the threat that voice cloning poses to privacy, civility, and democratic processes, the Institutions, including the [[Federal Trade Commission]], [[United States Department of Justice|U.S. Department of Justice]] and [[DARPA|Defense Advanced Research Projects Agency (DARPA)]] and the Italian [[Ministry of Education, University and Research|Ministry of Education, University and Research (MIUR)]], have weighed in on various audio deepfake use cases and methods that might be used to combat them.<ref>{{Cite web |date=29 January 2020 |title=Voice cloning experts cover crime, positive use cases, and safeguards |url=https://venturebeat.com/2020/01/29/ftc-voice-cloning-seminar-crime-use-cases-safeguards-ai-machine-learning/}}</ref><ref name=":20">{{Cite web |title=PREMIER - Project |url=https://sites.google.com/unitn.it/premier/project |access-date=2022-06-29 |website=sites.google.com |language=en-US}}</ref><ref>{{Cite web |title=DARPA Announces Research Teams Selected to Semantic Forensics Program |url=https://www.darpa.mil/news-events/2021-03-02 |access-date=2022-07-01 |website=www.darpa.mil}}</ref>
+
+== Constructive uses ==
+
+=== Education ===
+Digital cloning can be useful in an educational setting to create a more immersive experience for students. Some students may learn better through a more interactive experience and creating deepfakes can enhance the learning ability of students. One example of this includes creating a digital clone of historical figures, such as [[Abraham Lincoln in popular culture|Abraham Lincoln]], to show what problems he faced during his life and how he was able to overcome them. Another example of using digital clones in an educational setting is having speakers create a digital clone of themselves. Various advocacy groups may have trouble with schedules as they are touring various schools during the year. However, by creating digital clones of themselves, their clones can present the topic at places where the group could not physically make it. These educational benefits can bring students a new way of learning as well as giving access to those who previously were not able to access resources due to environmental conditions.<ref name=":42" />
+
+=== Arts ===
+Although digital cloning has already been in the entertainment and arts industry for a while, artificial intelligence can greatly expand the uses of these technology in the industry. The movie-industry can create even more hyper-realistic actors and actresses who have died. Additionally, movie-industry can also create digital clones in movie scenes that may require extras, which can help cut the cost of production immensely. However, digital cloning and other technology can be beneficial for non-commercial purposes. For example, artists can be more expressive if they are looking to synthesize avatars to be part of their video production. They can also create digital avatars to draft up their work and help formulate their ideas before moving on working on the final work.<ref name=":42" />
+Actor [[Val Kilmer]] lost his voice in 2014 after a [[tracheotomy]] due to his [[throat cancer]].
+However, he partnered with an AI company that produced a synthetic voice based on his previous recordings.
+The voice enabled Kilmer to retake his "Iceman" role from 1986 ''[[Top Gun]]'' in the 2022 sequel film ''[[Top Gun: Maverick]]''.<ref name="Fortune">{{cite news |last1=Taylor |first1=Chloe |title=How AI brought Val Kilmer's 'Ice Man' back into Top Gun: Maverick |url=https://fortune.com/2022/05/27/how-does-val-kilmer-speak-in-top-gun-maverick-sonantic-artificial-intelligence/ |access-date=5 July 2022 |work=Fortune |date=2022-05-27 |language=en}}</ref>
+
+=== Digital immortality ===
+Although [[digital immortality]] has existed for a while as social media accounts of the deceased continue to remain in cyberspace, creating a virtual clone that is immortal takes on a new meaning. With the creation of a digital clone, one can not only capture the visual presence of themselves but also their mannerism, including personality and cognition. With digital immortality, one can continue to interact with their loved ones after they have died, which can possibly end the barrier of physical death. Furthermore, families can connect with multiple generations, forming a family tree, in a sense, to pass on the family legacy to future generations, providing a way for history to be passed down.<ref name=":12" />
+
+== Concerns ==
+
+=== Fake news ===
+{{Main|Fake news}}
+With a lack of regulations for deepfakes, there are several concerns that have arisen. Some concerning deepfake videos that can bring potential harm includes depiction of political officials displaying inappropriate behavior, police officers shown as shooting unarmed black men, and soldiers murdering innocent civilians may begin to appear although it may have never occurred in real life.<ref>{{Cite journal|last=Chesney|first=Robert|date=2019|title=Deepfakes and the New Disinformation War: The Coming Age of Post-Truth Geopolitics|url=https://pustaqa.com/deepfakes-and-new-disinformation-war-coming-age-of-post-truth-geopolitics/|journal=Foreign Affairs|volume=98|issue=1|pages=147–55}}</ref> With such hyper-realistic videos being released on the Internet, it becomes very easy for the public to be misinformed, which could lead people to take actions, thus contributing to this vicious cycle of unnecessary harm. Additionally, with the rise in fake news in recent news, there is also the possibility of combining deepfakes and fake news. This will bring further difficulty to distinguishing what is real and what is fake. Visual information can be very convincing to the human eyes, therefore, the combination of deepfakes and fake news can have a detrimental effect on society.<ref name=":42" /> Strict regulations should be made by social media companies and other platforms for news.<ref>{{Cite journal|last=Hall|first=Kathleen|date=2018|title=Deepfake Videos: When Seeing Isn't Believing|url=https://scholarship.law.edu/cgi/viewcontent.cgi?article=1060&context=jlt|journal=Catholic University Journal of Law and Technology|volume=27|issue=1|pages=51–75}}</ref>
+
+=== Personal use ===
+Another reason deepfakes can be used maliciously is for one to sabotage another on a personal level. With the increased accessibility of technologies to create deepfakes, [[blackmail]]ers and thieves are able to easily extract personal information for financial gains and other reasons by creating videos of loved ones of the victim asking for help.<ref name=":42" /> Furthermore, voice cloning can be used maliciously for criminals to make fake phone calls to victims. The phone calls will have the exact voice and mannerism as the individual, which can trick the victim into giving [[Personal data|private information]] to the criminal without knowing.<ref>{{Cite journal|last=Poudel|first=Sawrpool|date=2016|title=Internet of Things: Underlying Technologies, Interoperability, and Threats to Privacy and Security|url=https://scholarship.law.berkeley.edu/cgi/viewcontent.cgi?article=2131&context=btlj|journal=Berkeley Technology Law Review|volume=31|issue=2|pages=997–1021}}</ref> Alternatively, a bad actor could, for example, create a deepfake of a person superimposed onto a video to extract blackmail payment and/or as an act of [[revenge porn]].
+
+Creating deepfakes and voice clones for personal use can be extremely difficult under the law because there is no commercial harm. Rather, they often come in the form of psychological and emotional damage, making it difficult for the court to provide a remedy for.<ref name=":02" />
+
+=== Ethical implications ===
+Although there are numerous legal problems that arises with the development of such technology, there are also ethical problems that may not be protected under the current legislations. One of the biggest problems that comes with the use of deepfakes and voice cloning is the potential of identity theft. However, identity theft in terms of deepfakes are difficult to prosecute because there are currently no laws that are specific to deepfakes. Furthermore, the damages that malicious use of deepfakes can bring is more of a psychological and emotional one rather than a financial one, which makes it more difficult to provide a remedy for. Allen argues that the way one’s privacy should be treated is similar to [[Categorical imperative|Kant’s categorical imperative]].<ref name=":02" />
+
+Another ethical implication is the use of private and personal information one must give up to use the technology. Because digital cloning, deepfakes, and voice cloning all use a deep-learning algorithm, the more information the algorithm receives, the better the results are.<ref>{{Cite journal|last=Dang|first=L. Ming|date=2018|title=Deep Learning Based Computer Generated Face Identification Using Convolutional Neural Network|journal=Applied Sciences|volume=8|issue=12|page=2610|doi=10.3390/app8122610|doi-access=free}}</ref> However, every platform has a risk of data breach, which could potentially lead to very personal information being accessed by groups that users never consented to. Furthermore, [[post-mortem privacy]] comes into question when family members of a loved one tries to gather as much information as possible to create a digital clone of the deceased without the permission of how much information they are willing to give up.<ref>{{Cite journal|last=Savin-Baden|first=Maggi|date=2018|title=Digital Immortality and Virtual Humans|url=https://link.springer.com/content/pdf/10.1007/s42438-018-0007-6.pdf|journal=Postdigital Science and Education|volume=1|issue=1|pages=87–103|doi=10.1007/s42438-018-0007-6|doi-access=free}}</ref>
+
+== Existing laws in the United States ==
+
+=== Copyright laws ===
+In the United States, copyright laws require some type of originality and creativity in order to protect the author’s individuality. However, creating a digital clone simply means taking personal data, such as photos, voice recordings, and other information in order to create a virtual person that is as close to the actual person. In the decision of Supreme Court case [[Feist Publications, Inc., v. Rural Telephone Service Co.|''Feist Publications Inc. v. Rural Television Services Company, Inc''.]], Justice O’Connor emphasized the importance of originality and some degree of creativity. However, the extent of originality and creativity is not clearly defined, creating a gray area for copyright laws.<ref name=":52">{{Cite journal|last=Newell|first=Bryce Clayton|date=2010|title=Independent Creation and Originality in the Age of Imitated Reality: A Comparative Analysis of Copyright and Database Protection for Digital Models of Real People|url=https://digitalcommons.law.byu.edu/cgi/viewcontent.cgi?referer=&httpsredir=1&article=1078&context=ilmr|journal=Brigham Young University International Law & Management|volume=6|issue=2|pages=93–126}}</ref> Creating digital clones require not only the data of the person but also the creator’s input of how the digital clone should act or move. In ''Meshwerks v. Toyota,'' this question was raised and the court stated that the same copyright laws created for photography should be applied to digital clones.<ref name=":52" />
+
+=== Right of publicity ===
+{{Main|Right of publicity}}
+With the current lack of legislations to protect individuals against potential malicious use of digital cloning, the right of publicity may be the best way to protect one in a legal setting.<ref name=":82" /> The [[Personality rights|right of publicity]], also referred to as personality rights, gives autonomy to the individual when it comes to controlling their own voice, appearance, and other aspects that essentially makes up their personality in a commercial setting.<ref>{{Cite journal|last=Goering|first=Kevin|date=2018|title=New York Right of Publicity: Reimagining Privacy and the First Amendment in the Digital Age - AELJ Spring Symposium 2|url=https://heinonline.org/HOL/Page?lname=&public=false&collection=journals&handle=hein.journals/caelj36&men_hide=false&men_tab=toc&kind=&page=601|journal=SSRN Electronic Journal|volume=36|issue=3|pages=601–635}}</ref> If a deepfake video or digital clone of one arises without their consent, depicting the individual taking actions or making statements that are out of their personality, they can take legal actions by claiming that it is violating their right to publicity. Although the right to publicity specifically states that it is meant to protect the image of an individual in a commercial setting, which requires some type of profit, some state that the legislation may be updated to protect virtually anyone's image and personality.<ref>{{Cite journal|last=Harris|first=Douglas|date=2019|title=Deepfakes: False Pornography Is Here and the Law Cannot Protect You|url=https://scholarship.law.duke.edu/cgi/viewcontent.cgi?article=1333&context=dltr|journal=Duke Law and Technology Review|volume=17|pages=99–127}}</ref> Another important note is that the right of publicity is only implemented in specific states, so some states may have different interpretations of the right compared to other states.
+
+== Preventative measures ==
+
+===Regulation===
+Digital and digital thought clones raise legal issues relating to data privacy, informed consent, anti-discrimination, copyright, and right of publicity. More jurisdictions urgently need to enact legislation similar to the General Data Protection Regulation in Europe to protect people against unscrupulous and harmful uses of their data and the unauthorised development and use of digital thought clones.<ref name="holy grail 2021 p140-168"/>
+
+=== Technology ===
+One way to prevent being a victim to any of the technology mentioned above is to develop artificial intelligence against these algorithms. There are already several companies that have developed artificial intelligence that can detect manipulated images by looking at the patterns in each pixel.<ref>{{Cite journal|last=Bass|first=Harvey|date=1998|title=A Paradigm for the Authentication of Photographic Evidence in the Digital Age|url=https://heinonline.org/HOL/Page?handle=hein.journals/tjeflr20&id=309&collection=journals&index=|journal=Thomas Jefferson Law Review|volume=20|issue=2|pages=303–322}}</ref> By applying a similar logic, they are trying to create a software that takes each frame of a given video and analyze it pixel by pixel in order to find the pattern of the original video and determine whether or not it has been manipulated.<ref>{{Cite journal|last=Wen|first=Jie|date=2012|title=A Malicious Behavior Analysis Based Cyber-I Birth|journal=Journal of Intelligent Manufacturing|volume=25|issue=1|pages=147–55|doi=10.1007/s10845-012-0681-2|s2cid=26225937|id={{ProQuest|1490889853}}}}</ref>
+
+In addition to developing new technology that can detect any video manipulations, many researchers are raising the importance for [[Privately held company|private corporations]] creating stricter guidelines to protect individual privacy.<ref name=":62" /> With the development of artificial intelligence, it is necessary to ask how this impacts society today as it begins to appear in virtually every aspect of society, including [[medicine]], [[education]], [[politics]], and the [[economy]]. Furthermore, artificial intelligence will begin to appear in various aspects of society,  which makes it important to have laws that protect [[Human rights|humans rights]] as technology takes over. As the private sector gains more digital power over the public, it is important to set strict [[regulation]]s and laws to prevent private corporations from using personal data maliciously. Additionally, the past history of various data breaches and violations of [[privacy policy]] should also be a warning for how personal information can be accessed and used without the person’s consent.<ref name=":72" />
+
+=== Digital literacy ===
+Another way to prevent being harmed by these technology is by educating people on the pros and cons of digital cloning. By doing so, it empowers each individual to make a rational decision based on their own circumstances.<ref>{{Cite journal|last=Maras|first=Marie-Helen|date=2018|title=Determining Authenticity of Video Evidence in the Age of Artificial Intelligence and in the Wake of Deepfake Videos|journal=The International Journal of Evidence & Proof|volume=23|issue=1|pages=255–262|doi=10.1177/1365712718807226|s2cid=150336977}}</ref> Furthermore, it is also important to educate people on how to protect the information they put out on the Internet. By increasing the [[digital literacy]] of the public, people have a greater chance of determining whether a given video has been manipulated as they can be more skeptical of the information they find online.<ref name=":62" />
+
+== See also ==
+*[[Artificial intelligence]]
+*[[Deepfake]]
+*[[Deep learning]]
+*[[Digital media]]
+*[[Post-mortem privacy]]
+*[[Virtual actor]]
+
+== References ==
+<references />
+
+[[Category:Applications of artificial intelligence]]
+[[Category:Computer graphics]]
+[[Category:Deep learning]]
+[[Category:Identity theft]]
+[[Category:Special effects]]

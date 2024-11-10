@@ -1,0 +1,64 @@
+{{Short description|Measure of how far into a book people read}}
+The '''Hawking Index''' ('''HI''') is a mock mathematical measure on how far people will, on average, read through a book before giving up. It was invented by American mathematician [[Jordan Ellenberg]], who created it in a blog for the ''[[Wall Street Journal]]'' in 2014.<ref name="WSJ">{{cite news|last=Ellenberg|first=Jordan|authorlink=Jordan Ellenberg|url=https://www.wsj.com/articles/the-summers-most-unread-book-is-1404417569|title=The Summer's Most Unread Book Is…|publisher=[[The Wall Street Journal]]|date=July 3, 2014|accessdate=January 1, 2020}}</ref> The index is named after English physicist [[Stephen Hawking]], whose book ''[[A Brief History of Time]]'' has been dubbed "the most unread book of all time".<ref name="Curiosity">{{cite web|last=Donk|first=Kelsey|url=https://curiosity.com/topics/the-hawking-index-is-a-mathematical-measure-of-when-people-give-up-on-books-curiosity/|title=The Hawking Index Is a Mathematical Measure of When People Give Up on Books|publisher=[[Curiosity (website)|Curiosity]]|date=December 9, 2019|accessdate=January 1, 2020}}</ref>
+==Calculation==
+Ellenberg's method of calculating the index draws on the "popular highlights", the five most highlighted passages marked by [[Amazon Kindle]] readers of each title. A wide spread of highlights throughout the work means that most readers will have read the entire book, resulting in a high on the index. If the spread of highlights occurs only at the beginning of the book, then it means that fewer people will have read the book completely and it will thus score low on the index.<ref>{{cite web|last=Sorokanich|first=Bob|url=https://gizmodo.com/the-books-everyone-starts-and-no-one-finishes-accordin-1600866004|title=The Books Everyone Starts and No One Finishes, According to Amazon|publisher=[[Gizmodo]]|date=July 6, 2014|accessdate=January 1, 2020}}</ref> When the index was created, this information was easier to access, as "popular highlights" were available to everyone, but since then this information has only been made available to people who buy the books on Kindle.<ref name="Curiosity"/>
+
+==Hawking Index scores==
+When Ellenberg first used the index, he used the following books as his examples.<ref name="WSJ"/><ref>{{cite news|last=Dearden|first=Lizzie|url=https://www.independent.co.uk/arts-entertainment/books/news/the-books-many-start-but-few-finish-top-unread-bestsellers-revealed-9590910.html |archive-url=https://ghostarchive.org/archive/20220509/https://www.independent.co.uk/arts-entertainment/books/news/the-books-many-start-but-few-finish-top-unread-bestsellers-revealed-9590910.html |archive-date=2022-05-09 |url-access=subscription |url-status=live|title=The books many start but few finish: Top 'unread' bestsellers revealed|publisher=[[The Independent]]|date=July 8, 2014|accessdate=January 1, 2020}}</ref><ref>{{cite news|url=https://www.telegraph.co.uk/culture/books/booknews/11142901/Top-ten-most-famous-books-we-never-finish.html|title=Top ten most famous books we never finish|publisher=[[Daily Telegraph]]|accessdate=January 1, 2020}}</ref>
+
+{| class="sortable wikitable" style="background:white; text-align:left;"
+|-
+! style="width:50%" |Book title
+! style="width:25%;" |Author
+! style="width:25%;" |Hawking Index
+|-
+|''[[Hard Choices]]''
+|[[Hillary Clinton]]
+|1.9%
+|-
+|''[[Capital in the Twenty-First Century]]''
+|[[Thomas Piketty]]
+|2.4%
+|-
+|''[[Infinite Jest]]''
+|[[David Foster Wallace]]
+|6.4%
+|-
+|''[[A Brief History of Time]]''
+|[[Stephen Hawking]]
+|6.6%
+|-
+|''[[Thinking, Fast and Slow]]''
+|[[Daniel Kahneman]]
+|6.8%
+|-
+|''[[Lean In]]''
+|[[Sheryl Sandberg]]
+|12.3%
+|-
+|''[[Flash Boys]]''
+|[[Michael Lewis]]
+|21.7%
+|-
+|''[[Fifty Shades of Grey]]''
+|[[E. L. James]]
+|25.9%
+|-
+|''[[The Great Gatsby]]''
+|[[F. Scott Fitzgerald]]
+|28.3%
+|-
+|''[[Catching Fire]]''
+|[[Suzanne Collins]]
+|43.4%
+|-
+|''[[The Goldfinch (novel)|The Goldfinch]]''
+|[[Donna Tartt]]
+|98.5%
+|}
+
+==References==
+{{Reflist}}
+
+[[Category:Literature]]
+[[Category:Units of measurement]]

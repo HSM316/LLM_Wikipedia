@@ -1,0 +1,62 @@
+{{short description|none}}
+{{Use dmy dates|date=March 2019}}
+{{Use Indian English|date=April 2019}}
+
+
+The AI market in India is projected to reach $8 billion by 2025, growing at a compound annual growth rate (CAGR) of over 40% from 2020 to 2025.<ref name="trade">{{cite web |url=https://www.trade.gov/market-intelligence/india-artificial-intelligence |title=India Artificial Intelligence |publisher=International Trade Administration |access-date=2024-07-20}}</ref> 
+This growth is part of the broader [[AI boom]], a global period of rapid technological advancements starting in the late 2010s and gaining prominence in the early 2020s. Globally, breakthroughs in [[Protein structure prediction|protein folding]] by [[Google DeepMind]] and the rise of [[Generative artificial intelligence|generative AI]] models from [[OpenAI]] have defined this era. In India, the development of AI has been similarly transformative, with applications in healthcare, finance, and education, bolstered by government initiatives like NITI Aayog's 2018<ref>{{Cite web |title=National Strategy for Artificial Intelligence |url=https://www.niti.gov.in/sites/default/files/2023-03/National-Strategy-for-Artificial-Intelligence.pdf}}</ref> National Strategy for Artificial Intelligence.
+
+While AI presents significant opportunities for economic growth and social development in India, challenges such as data privacy concerns, skill shortages, and ethical considerations need to be addressed for responsible AI deployment.<ref name="carnegie">{{cite web |url=https://carnegieendowment.org/research/2016/08/india-and-the-artificial-intelligence-revolution |title=India and the Artificial Intelligence Revolution |publisher=Carnegie Endowment for International Peace |access-date=2024-07-20}}</ref>
+
+== Legislation ==
+
+India currently does not have specific laws regulating artificial intelligence (AI). However, the Indian government has introduced several initiatives and guidelines aimed at the responsible development and deployment of AI technologies.<ref name="morganlewis">{{cite web |url=https://www.morganlewis.com/blogs/sourcingatmorganlewis/2024/01/ai-regulation-in-india-current-state-and-future-perspectives |title=AI Regulation in India: Current State and Future Perspectives |publisher=Morgan Lewis |access-date=2024-07-20}}</ref><ref name="indiabriefing">{{cite web |url=https://www.india-briefing.com/news/india-regulation-of-ai-and-large-language-models-31680.html/ |title=Regulation of AI and Large Language Models in India |publisher=India Briefing |access-date=2024-07-20}}</ref>
+
+The Indian government has tasked [[NITI Aayog]], its apex public policy think tank, with establishing guidelines and policies for AI. In 2018, NITI Aayog released the National Strategy for Artificial Intelligence, also known as #AIForAll, which focuses on healthcare, agriculture, education, smart cities, and smart mobility.<ref name="niti1">{{cite web |url=https://www.niti.gov.in/sites/default/files/2023-03/National-Strategy-for-Artificial-Intelligence.pdf |title=National Strategy for Artificial Intelligence |publisher=NITI Aayog |access-date=2024-07-20}}</ref>
+
+In 2021, NITI Aayog published the "Principles for Responsible AI," addressing ethical considerations for AI deployment in India. These principles cover system considerations, such as decision-making and accountability, and societal considerations, such as the impact of automation on employment. The second part of this document, "Operationalizing Principles for Responsible AI," released in August 2021, focuses on implementing these ethical principles through regulatory and policy interventions, capacity building, and incentivizing ethical practices.<ref name="morganlewis" /><ref name="indiabriefing" />
+
+In 2023, the Indian government enacted the [[Digital Personal Data Protection Act, 2023|Digital Personal Data Protection Act]], which addresses some privacy concerns related to AI platforms. [[Ministry of Electronics and Information Technology|The Ministry of Electronics and Information Technology (MeitY)]] has also issued advisories requiring platforms to obtain explicit permission before deploying unreliable AI models and to label AI-generated content to prevent misuse.<ref name="morganlewis" /><ref name="indiabriefing" />
+
+India is a member of the [[Global Partnership on Artificial Intelligence|Global Partnership on Artificial Intelligence (GPAI)]], which promotes the responsible use of AI through international collaboration. In 2023, the GPAI Summit was held in New Delhi, where experts discussed responsible AI, data governance, and the future of work.<ref name="morganlewis" />
+
+Other Indian agencies, such as the [[Bureau of Indian Standards|Bureau of Indian Standards (BIS)]], are also working on AI policies. BIS has established a committee to propose draft standards for AI, focusing on safety, reliability, and ethical considerations.<ref name="dataguidance">{{cite web |url=https://www.dataguidance.com/opinion/india-ai-regulation-current-state-and-future |title=India: AI regulation - current state and future perspectives |publisher=Data Guidance |access-date=2024-07-20}}</ref>
+
+India has not yet enacted specific AI regulations. However, the government has introduced measures to promote innovation and address ethical concerns and risks associated with AI. These efforts aim to support the growth of India's AI ecosystem and ensure responsible AI deployment.<ref name="indianexpress">{{cite web |url=https://indianexpress.com/article/business/india-will-regulate-ai-but-not-at-the-cost-of-innovation-govt-official-9335211/ |title=India will regulate AI, but not at the cost of innovation: Govt official |publisher=Indian Express |access-date=2024-07-20}}</ref>
+
+== AI companies of India ==
+
+The following is a list of notable '''AI companies of India''', along with their corporate headquarters location.
+<!--Please note!! We have clear consensus on the talk page for this article as to what constitutes notability for the purposes of this list, and non-notable additions /will be removed/. Please don't add your consultancy/it services firm here for free advertising. Thanks.-->
+
+{|class="wikitable sortable"
+|-
+!Name !!|Headquarters !!|AI Field !! class="unsortable" |Founded year
+|-
+|[[Fractal Analytics]] || [[New York City]], [[United States]] || Data Analytics || 2000 in Mumbai<ref>{{Cite web |last=Nataraj |first=Poornima |date=2022-01-05 |title=Analytics & AI firm Fractal raises $360 million investment, becomes the second unicorn of 2022 |url=https://analyticsindiamag.com/analytics-ai-firm-fractal-raises-360-million-investment-becomes-the-second-unicorn-of-2022/ |access-date=2023-12-14 |website=Analytics India Magazine |language=en-US}}</ref>
+|-
+|[[Glance (company)|Glance]] || [[Bangalore]] || Social media || 2019
+|-
+|[[Haptik]]|| [[Mumbai]], [[India]] || Chatbot, Intelligence Assistant || 2013 in Mumbai<ref>{{Cite web |date=2022-12-27 |title=AI start-up Haptik says company's revenue grew 2.5x, onboarded 5,000 SMBs in 2022 |url=https://www.businesstoday.in/entrepreneurship/story/ai-start-up-haptik-says-companys-revenue-grew-25x-onboarded-5000-smbs-in-2022-357943-2022-12-27 |access-date=2023-12-14 |website=Business Today |language=en}}</ref>
+|-
+|[[Infibeam|Infibeam Avenues Ltd (Phronetic.ai)]] || [[Gandhinagar|GIFT City, Gandhinagar, India]] || Fraud detection and Authentication and Risk identification in financial & commerce sector || 2010<ref>{{cite web |title=Infibeam Avenues Ltd’s AI-Hub at GIFT City christened as ‘Phronetic.ai’ |url=https://www.vccircle.com/infibeamavenuesltd-s-ai-hub-at-gift-city-christened-as-phronetic-ai |website=VCCircle}}</ref>
+|-
+|[[Karvy Corporate|kFin Technologies]] || [[Hyderabad]] || Insurance || 2017
+|-
+|[[Niki.ai]] || [[Bengaluru]], [[India]] || Chatbots || 2015
+|-
+|[[Persistent Systems]] || [[Pune]] || Data Analytics || 1990
+|-
+|[[Tata Technologies]] || [[Pune]], [[India]] || AI/ML based Manufacturing R&D<ref>{{Cite web |title=Tata Technologies’ use of AI/ML reduced power consumption by 18% on shopfloor |url=https://www.autocarpro.in/news/tata-technologies-use-of-aiml-reduced-power-consumption-by-18-on-shopfloor-117039 |access-date=2023-12-14 |website=Autocar Professional |language=en}}</ref>|| 1989
+|-
+|[[Uniphore|Uniphore Software Systems]] || [[Palo Alto]], [[United States]] || Conversational automation || 2008 in Chennai, India
+|-
+|[[Yellow.ai]] || [[San Mateo, California|San Mateo]], [[United States]] || Messenger || 2016 in Bangalore, India
+|-
+|[[Zoho Corporation]] || [[Chennai]] || General AI || 1996 in Chennai, India
+|}
+
+==References==
+{{Reflist}}
+
+[[Category:Artificial intelligence companies]]

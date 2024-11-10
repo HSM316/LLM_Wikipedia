@@ -1,0 +1,29 @@
+{{short description|Unit of time used in audio/video timing cacluations}}
+{{about|the unit of time|the unit of spectral radiance|Flick (physics)}}
+
+A '''flick''' is a [[unit of time]] equal to exactly 1/705,600,000 of a [[second]]. The figure was chosen so that time periods associated with [[Frequency|frequencies]] commonly used for video or screen [[frame rate]] (24, 25, 30, 48, 50, 60, 90, 100 and 120 Hz), as well as audio [[Sampling_(signal_processing)|sampling]] (8, 16, 22.05, 24, 32, 44.1, 48, 88.2, 96, and 192 kHz), can all be represented nicely with [[integer]]s.<ref>{{cite web|url=https://github.com/OculusVR/Flicks|title=OculusVR/Flicks|website=GitHub|access-date=21 October 2018}}</ref> That is useful in programming, because non-integer computing generally involves approximations, and possibly leads to noticeable errors.
+
+A flick is approximately 1.42 × 10<sup>−9</sup> s, which makes it larger than a [[nanosecond]] but much smaller than a [[microsecond]].
+
+The unit was launched in January 2018 by [[Facebook]].<ref name="bbc">{{cite web|url=https://www.bbc.com/news/technology-42787529|title=Facebook invents new unit of time|date=21 October 2018|access-date=21 October 2018|via=www.bbc.co.uk}}</ref> A similar unit for integer representation of temporal points was proposed in 2004 under the name TimeRef, splitting a second into 14,112,000 parts.<ref>{{Cite journal
+ | author =  Raphaël Troncy, Jean Carrive, Steffen Lalande and Jean-Philippe Poli
+ | title = A Motivating Scenario for Designing an Extensible Audio-Visual Description Language
+ | year = 2004
+}}</ref> This makes 1 TimeRef equivalent to 50 flicks.
+
+==Etymology==
+The word ''flick'' is a [[portmanteau]] of ''[[Film frame|frame]]'' (as in e.g. animation frame) and ''[[instruction cycle|tick]]'' (as in computer instruction cycle).<ref name="bbc" />
+
+==References==
+<references/>
+
+==External links==
+* YouTube video: [https://www.youtube.com/watch?v=LmPAcs5RUMM Why Did Facebook Invent A New Unit Of Time? The "Flick" Explained With Math.]  
+
+{{Time measurement and standards}}
+
+[[Category:Units of time]]
+[[Category:Standards]]
+
+
+{{time-stub}}

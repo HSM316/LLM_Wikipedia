@@ -1,0 +1,54 @@
+Robotic process automation (or RPA) is a form of business process automation technology based on metaphorical software robots (bots) or artificial intelligence (AI) workers.
+
+In traditional workflow automation tools, a software developer produces a list of actions to automate a task and interface to the back-end system using internal application programming interfaces (APIs) or dedicated scripting language. In contrast, RPA systems develop the action list by watching the user perform that task in the application's graphical user interface (GUI), and then perform the automation by repeating those tasks directly in the GUI. This can lower the barrier to use of automation in products that might not otherwise feature APIs for this purpose.
+
+RPA tools have strong technical similarities to graphical user interface testing tools. These tools also automate interactions with the GUI, and often do so by repeating a set of demonstration actions performed by a user. RPA tools differ from such systems including features that allow data to be handled in and between multiple applications, for instance, receiving email containing an invoice, extracting the data, and then typing that into a bookkeeping system. 
+
+Historic evolution
+
+As a form of automation, the same concept has been around for a long time in the form of screen scraping but RPA is considered to be a significant technological evolution of this technique in the sense that new software platforms are emerging which are sufficiently mature, resilient, scalable and reliable to make this approach viable for use in large enterprises (who would otherwise be reluctant due to perceived risks to quality and reputation).
+
+By way of illustration of how far the technology has developed since its early form in screen scraping, it is useful to consider the example cited in one academic study. Users of one platform at Xchanging anthropomorphized their robot into a co-worker named "Poppy" and even invited "her" to the Christmas party. Such an illustration perhaps serves to demonstrate the level of intuition, engagement and ease of use of modern RPA technology platforms, that leads their users (or "trainers") to relate to them as beings rather than abstract software services. The "code-free" nature of RPA (described below) is just one of a number of significant differentiating features of RPA vs. screen scraping.
+
+Deployment
+
+The hosting of RPA services also aligns with the metaphor of a software robot, with each robotic instance having its own virtual workstation, much like a human worker. The robot uses keyboard and mouse controls to take actions and execute automations. Normally all of these actions take place in a virtual environment and not on screen; the robot does not need a physical screen to operate, rather it interprets the screen display electronically. The scalability of modern solutions based on architectures such as these owes much to the advent of virtualization technology, without which the scalability of large deployments would be limited by available capacity to manage physical hardware and by the associated costs. The implementation of RPA in business enterprises has shown dramatic cost savings when compared to traditional non-RPA solutions.
+
+There are however several risks with RPA. Criticism include risks of stifling innovation and creating a more complex maintenance environment of existing software that now needs to consider the use of graphical user interfaces in a way they weren't intended to be used.
+
+Impact on employment
+
+According to Harvard Business Review, most operations groups adopting RPA have promised their employees that automation would not result in layoffs. Instead, workers have been redeployed to do more interesting work. One academic study highlighted that knowledge workers did not feel threatened by automation: they embraced it and viewed the robots as team-mates. The same study highlighted that, rather than resulting in a lower "headcount", the technology was deployed in such a way as to achieve more work and greater productivity with the same number of people.
+
+Conversely, however, some analysts proffer that RPA represents a threat to the business process outsourcing (BPO) industry. The thesis behind this notion is that RPA will enable enterprises to "repatriate" processes from offshore locations into local data centers, with the benefit of this new technology. The effect, if true, will be to create high-value jobs for skilled process designers in onshore locations (and within the associated supply chain of IT hardware, data center management, etc.) but to decrease the available opportunity to low skilled workers offshore. On the other hand, this discussion appears to be healthy ground for debate as another academic study was at pains to counter the so-called "myth" that RPA will bring back many jobs from offshore.
+
+Impact on society
+Academic studies project that RPA, among other technological trends, is expected to drive a new wave of productivity and efficiency gains in the global labour market. Although not directly attributable to RPA alone, Oxford University conjectures that up to 35% of all jobs may have been automated by 2035.
+
+In a TEDx talk hosted by University College London (UCL), entrepreneur David Moss explains that digital labour in the form of RPA is not only likely to revolutionize the cost model of the services industry by driving the price of products and services down, but that it is likely to drive up service levels, quality of outcomes and create increased opportunity for the personalization of services. 
+
+In a separate TEDx in 2019 talk, Japanese business executive, and former CIO of Barclays bank, Koichi Hasegawa noted that digital robots can be a positive effect on society if we start using a robot with empathy to help every person. He provides a case study of the Japanese insurance companies – Sompo Japan and Aioi – both of whom deployed bots to speed up the process of insurance pay-outs in past massive disaster incidents. 
+
+Meanwhile, Professor Willcocks, author of the LSE paper cited above, speaks of increased job satisfaction and intellectual stimulation, characterising the technology as having the ability to "take the robot out of the human", a reference to the notion that robots will take over the mundane and repetitive portions of people's daily workload, leaving them to be redeployed into more interpersonal roles or to concentrate on the remaining, more meaningful, portions of their day.
+
+ Robotic process automation 2.0 
+Robotic process automation 2.0, often referred to as "unassisted RPA," is the next generation of RPA related technologies. Technological advancements and improvements around artificial intelligence technologies are making it easier for businesses to take advantage of the benefits of RPA without dedicating a large budget for development work.
+
+While unassisted RPA has a number of benefits, it is not without drawbacks. Utilizing unassisted RPA, a process can be run on a computer without needing input from a user, freeing up that user to do other work. However, in order to be effective, very clear rules need to be established in order for the processes to run smoothly.
+
+ Hyperautomation 
+
+Hyperautomation is the application of advanced technologies like RPA, Artificial Intelligence, machine learning (ML) and Process Mining to augment workers and automate processes in ways that are significantly more impactful than traditional automation capabilities. Hyperautomation is the combination of automation tools to deliver work.
+
+Gartner’s report notes that this trend was kicked off with robotic process automation (RPA). The report notes that, “RPA alone is not hyperautomation. Hyperautomation requires a combination of tools to help support replicating pieces of where the human is involved in a task."
+
+ RPA failures 
+RPA automates a clearly defined process, but most enterprise doesn’t have clearly defined processes, So they start automating, and either automate the wrong thing or get lost in trying to reverse engineer the process. https://airational.com/rpa-pitfalls-and-tips-for-avoiding-rpa-failures/ 
+
+One way to avoid RPA failure begins with identifying, optimizing, and prioritizing processes. Business process experts will play a vital role in helping functions and business units identify, analyze and prioritize the tasks and processes to automate. 
+
+ RPA in business 
+
+Grand View Research, Inc. performed a study in October, 2018, and said that the primary companies in the RPA market included: Automation Anywhere, Inc.; Blue Prism Group PLC; UIPath Inc.; Be Informed B.V.; OpenSpan; and Jacada, Inc. UIPath, Automation Anywhere, Blue Prism, NICE are the Leaders in the industry according to research firm Everest Group.Robotic Process Automation (RPA) – Technology Vendor Landscape with Products PEAK Matrix™ Assessment 2019 A recent report released in 2019 predicts the CAGR of robotic process automation market in India at 20% annually.
+
+In 2019, Gartner released its first 'Magic Quadrant' for RPA. UiPath, Blue Prism, and Automation Anywhere were named in the market, in that order.

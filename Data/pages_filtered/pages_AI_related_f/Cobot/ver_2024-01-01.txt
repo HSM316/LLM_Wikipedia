@@ -1,0 +1,49 @@
+A cobot, or collaborative robot, is a robot intended for direct human-robot interaction within a shared space, or where humans and robots are in close proximity. Cobot applications contrast with traditional industrial robot applications in which robots are isolated from human contact. "I, Cobot: Future collaboration of man and machine" The Manufacturer (2015-11-15). Retrieved on 2016-01-19
+Cobot safety may rely on lightweight construction materials, rounded edges, and inherent limitation of speed and force, or on sensors and software that ensure safe behavior.ISO 10218-1:2011, ISO 10218-2:2011, ISO/TS 15066:2015
+
+Thanks to sensors and other design features such as lightweight materials and rounded edges, collaborative robots (cobots) are able to interact directly and safely with humans.
+
+The International Federation of Robotics (IFR),ifr.org a global industry association of robot manufacturers and national robot associations, recognizes two main groups of robots: industrial robots used in automation and service robots for domestic and professional use. Service robots could be considered to be cobots as they are intended to work alongside humans. Industrial robots have traditionally worked separately from humans behind fences or other protective barriers, but cobots remove that separation.
+
+Cobots can have many uses, from information robots in public spaces (an example of service robots), logistics robots that transport materials within a building, to industrial robots that help automate unergonomic tasks such as helping people moving heavy parts, or machine feeding or assembly operations.
+
+The IFR defines four levels of collaboration between industrial robots and human workers:
+ Coexistence: Human and robot work alongside each other without a fence, but with no shared workspace.
+ Sequential Collaboration: Human and robot are active in shared workspace but their motions are sequential; they do not work on a part at the same time.
+ Cooperation: Robot and human work on the same part at the same time, with both in motion.
+ Responsive Collaboration: The robot responds in real-time to movement of the human worker.
+
+In most industrial applications of cobots today, the cobot and human worker share the same space but complete tasks independently or sequentially (Co-existence or Sequential Collaboration.) Co-operation or Responsive Collaboration are presently less common.
+
+ History 
+Cobots were invented in 1996 by J. Edward Colgate and Michael Peshkin, professors at Northwestern University. Their United States patent entitled, "Cobots""Cobots" US Patent 5,952,796, filed 1997 describes "an apparatus and method for direct physical interaction between a person and a general purpose manipulator controlled by a computer."
+The invention resulted from a 1994 General Motors initiative led by Prasad Akella of the GM Robotics Center and a 1995 General Motors Foundation research grant intended to find a way to make robots or robot-like equipment safe enough to team with people.
+
+The first cobots assured human safety by having no internal source of motive power. Instead, motive power was provided by the human worker.
+The cobot's function was to allow computer control of motion, by redirecting or steering a payload, in a cooperative way with the human worker. 
+Later, cobots provided limited amounts of motive power as well."A History of Collaborative Robots: From Intelligent Lift Assists to Cobots" Engineering.com, October 28, 2016  General Motors and an industry working group used the term Intelligent Assist Device (IAD) as an alternative to cobot, which was viewed as too closely associated with the company Cobotics. At the time, the market demand for Intelligent Assist Devices and the safety standard "T15.1 Intelligent Assist Devices - Personnel Safety Requirements"Published March 2002 by the Robotic Industries Association was to improve industrial material handling and automotive assembly operations. "Cobots for the automobile assembly line" International Conference on Robotics and Automation, Detroit, MI, 1999, pp. 728-733
+
+Cobotics, a company founded in 1997 by Colgate and Peshkin, produced several cobot models used in automobile final assembly  These cobots were of IFR type Responsive Collaboration using what is now called "Hand Guided Control". The company was acquired in 2003 by Stanley Assembly Technologies.
+
+KUKA released its first cobot, LBR 3, in 2004. This computer controlled lightweight robot was the result of a long collaboration with the German Aerospace Center institute. KUKA further refined the technology, releasing the KUKA LBR 4 in 2008 and the KUKA LBR iiwa in 2013.
+
+Universal Robots released its first cobot, the UR5, in 2008."A Brief History of Collaborative Robots" Engineering.com, May 19, 2016 This cobot could safely operate alongside employees, eliminating the need for safety caging or fencing. The new robot helped launch the era of flexible, user-friendly and cost-efficient collaborative robots. In 2012, Universal Robots released the UR10 cobot, and in 2015 they released the smaller, lower payload UR3.
+
+Rethink Robotics released an industrial cobot, Baxter, in 2012"Baxter Kinematic Modeling, Validation and Reconfigurable Representation" SAE Technical Paper 2016-01-0334, 2016 and smaller, faster collaborative robot Sawyer in 2015, designed for high precision tasks.
+
+From 2009 to 2013, four CoBot robots, which were designed, built, and programmed by the CORAL research group at Carnegie Mellon University, logged more than 130 kilometers of autonomous in-building errand travel.
+
+FANUC  released its first collaborative robot in 2015 - the FANUC CR-35iA with a heavy 35 kg payload. Since that time FANUC has released a smaller line of collaborative robots including the FANUC CR-4iA, CR-7iA and the CR-7/L long arm version.
+
+ABB released YuMi in 2015, the first collaborative dual arm robot. In February 2021 they released GoFa, which had a payload of 5 kg.
+
+As of 2019, Universal Robots was the market leader followed by Techman Robot Inc. Techman Robot Inc. is a cobot manufacturer founded by Quanta in 2016. It is based in Taoyuan's Hwa Ya Technology Park.
+
+In 2020, the market for industrial cobots had an annual growth rate of 50 percent.
+
+ Standards and guidelines 
+RIA BSR/T15.1, a draft safety standard for Intelligent Assist Devices, was published by the Robotic Industries Association, an industry working group in March 2002.Robotic Industries Association, BSR/T15.1 March 2020
+
+The robot safety standard (ANSI/RIA R15.06 was first published in 1986, after 4 years of development.  It was updated with newer editions in 1992 and 1999.  In 2011, ANSI/RIA R15.06 was updated again and is now a national adoption of the combined ISO 10218-1 and ISO 10218-2 safety standards.  The ISO standards are based on ANSI/RIA R15.06-1999.  A companion document was developed by ISO TC299 WG3 and published as an ISO Technical Specification, ISO/TS 15066:2016.  This Technical Specification covers collaborative robotics - requirements of robots and the integrated applications.   ISO 10218-1 ISO 10218-1:2011 Robots and robotic devices – Safety requirements for industrial robots – Part 1: Robots. International Organization for Standardization (ISO) contains the requirements for robots - including those with optional capabilities to enable collaborative applications.  ISO 10218-2:2011 ISO 10218-2:2011 Robots and robotic devices – Safety requirements for industrial robots – Part 2: Robot systems and integration. International Organization for Standardization (ISO) and ISO/TS 15066ISO/TS 15066:2016 Robots and robotic devices – Collaborative robots. International Organization for Standardization (ISO) contain the safety requirements for both collaborative and non-collaborative robot applications. Technically, the <collaborative> robot application includes the robot, end-effector (mounted to the robot arm or manipulator to perform tasks which can include manipulating or handling objects) and the workpiece (if an object is handled).
+
+The safety of a collaborative robot application is the issue since there is NO official term of "cobot" (within robot standardization).  Cobot is considered to be a sales or marketing term because "collaborative" is determined by the application. For example, a robot wielding a cutting tool or a sharp workpiece would be hazardous to people. However the same robot sorting foam chips would likely be safe. Consequently, the risk assessment accomplished by the robot integrator addresses the intended application (use). ISO 10218 Parts 1 and 2 rely on risk assessment (according to ISO 12100).  In Europe, the Machinery Directive is applicable, however the robot by itself is a partial machine.  The robot system (robot with end-effector) and the robot application are considered complete machines.Machinery DirectiveGuide to the Machinery Directive

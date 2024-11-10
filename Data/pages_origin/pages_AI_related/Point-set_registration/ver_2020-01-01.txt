@@ -1,0 +1,496 @@
+[[File:Cpd fish affine.gif|thumb|Point set registration is the process of aligning two point sets. Here, the blue fish is being registered to the red fish.]]
+In [[computer vision]] and [[pattern recognition]], '''point set registration''', also known as '''point matching''', is the process of finding a spatial [[mathematical transformation|transformation]] that aligns two [[point cloud|point sets]]. The purpose of finding such a transformation includes merging multiple data sets into a globally consistent model, and mapping a new measurement to a known data set to identify features or to [[pose (computer vision)|estimate its pose]]. A point set may be raw data from [[3D scanner|3D scanning]] or an array of [[rangefinder]]s. For use in image processing and feature-based [[image registration]], a point set may be a set of features obtained by [[feature extraction]] from an image, for example [[corner detection]]. Point set registration is used in [[optical character recognition]],<ref name="tpsrpmchui"/><ref name="lmfitzgibbon">{{cite journal
+|last=Fitzgibbon
+|first=Andrew W.
+|title=Robust registration of 2D and 3D point sets
+|journal=Image and Vision Computing
+|year=2003
+|volume=21
+|issue=13
+|pages=1145–1153
+|doi=10.1016/j.imavis.2003.09.004
+|citeseerx=10.1.1.335.116
+}}</ref> augmented reality<ref>{{Cite book|last=Allan|first=Max|last2=Kapoor|first2=Ankur|last3=Mewes|first3=Philip|last4=Mountney|first4=Peter|date=2015-01-01|title=Non Rigid Registration of 3D Images to Laparoscopic Video for Image Guided Surgery|journal=International Workshop on Computer-Assisted and Robotic Endoscopy|volume=9515|publisher=Springer International Publishing|pages=109–116|doi=10.1007/978-3-319-29965-5_11|series=Lecture Notes in Computer Science|isbn=978-3-319-29964-8}}</ref>
+and aligning data from [[magnetic resonance imaging]] with [[computer aided tomography]] scans.<ref name="mrcthill">{{cite journal
+|last1=Hill
+|first1=Derek LG
+|last2=Hawkes
+|first2=D. J.
+|last3=Crossman
+|first3=J. E.
+|last4=Gleeson
+|first4=M. J.
+|last5=Cox
+|first5=T. C. S.
+|last6=Bracey
+|first6=E. E. C. M. L.
+|last7=Strong
+|first7=A. J.
+|last8=Graves
+|first8=P.
+|title=Registration of MR and CT images for skull base surgery using point-like anatomical features
+|journal=British Journal of Radiology
+|year=1991
+|volume=64
+|number=767
+|pages=1030–1035
+|doi=10.1259/0007-1285-64-767-1030
+|pmid=1742584
+}}</ref><ref name="mrctstudholme">{{cite conference
+|last1=Studholme
+|first1=C.
+|last2=Hill
+|first2=D. L.
+|last3=Hawkes
+|first3=D. J.
+|title=Automated 3D Registration of Truncated MR and CT Images of the Head
+|conference=Proceedings of the Sixth British Machine Vision Conference
+|year=1995
+|pages=27–36
+}}</ref>
+
+== Overview of problem ==
+[[File:Registration outdoor.png|thumb|right|Data from two 3D scans of the same environment need to be aligned using point set registration.]]
+[[File:Registration closeup.png|thumb|right|Data from above, registered successfully using a variant of iterative closest point.]]
+The problem may be summarized as follows:<ref name="gmmjian">{{cite journal
+|last1=Jian
+|first1=Bing
+|last2=Vemuri
+|first2=Baba C.
+|title=Robust Point Set Registration Using Gaussian Mixture Models
+|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence
+|year=2011
+|volume=33
+|number=8
+|pages=1633–1645
+|doi=10.1109/tpami.2010.223
+|pmid=21173443
+}}</ref>
+Let <math>\lbrace\mathcal{M},\mathcal{S}\rbrace</math> be two finite size point sets [[set membership|in]] a finite-dimensional real vector space <math>\mathbb{R}^d</math>, which contain <math>M</math> and <math>N</math> points respectively. The problem is to find a transformation to be applied to the moving "model" point set <math>\mathcal{M}</math> such that the difference between <math>\mathcal{M}</math> and the static "scene" set <math>\mathcal{S}</math> is minimized. In other words, a mapping from <math>\mathbb{R}^d</math> to <math>\mathbb{R}^d</math> is desired which yields the best alignment between the transformed "model" set and the "scene" set. The mapping may consist of a rigid or non-rigid transformation. The transformation model may be written as <math>T</math> where the transformed, registered model point set is:
+
+{{NumBlk|:|<math>T(\mathcal{M})</math>|{{EquationRef|1}}}}
+
+It is useful to define an optimization parameter <math>\theta</math>:
+
+{{NumBlk|:|<math>T(\mathcal{M}, \theta)</math>|{{EquationRef|2}}}}
+
+such that it is clear that the optimizing algorithm adjusts <math>\theta</math>. Depending on the problem and number of dimensions, there may be more such parameters. The output of a point set registration algorithm is therefore the transformation parameter <math>\theta</math> of model <math>T</math> so that <math>\mathcal{M}</math> is optimally aligned to <math>\mathcal{S}</math>.
+
+In convergence, it is desired for the distance between the two point sets to reach a global minimum. This is difficult without exhausting all possible transformations, so a local minimum suffices. The distance function between a transformed model point set <math>T(\mathcal{M})</math> and the scene point set <math>\mathcal{S}</math> is given by some function <math>\operatorname{dist}</math>. A simple approach is to take the square of the [[Euclidean distance]] for every pair of points:
+
+{{NumBlk|:|<math>\operatorname{dist}(T(\mathcal{M}), \mathcal{S}) = \sum_{m \in T(\mathcal{M})} \sum_{s \in \mathcal{S}} (m - s)^2</math>|{{EquationRef|3}}}}
+
+Minimizing such a function in rigid registration is equivalent to solving a [[least squares]] problem. However, this function is sensitive to outlier data and consequently algorithms based on this function tend to be less robust against noisy data. A more robust formulation of the cost function uses some ''robust function'' <math>g</math>:
+
+{{NumBlk|:|<math>\operatorname{dist}_{\operatorname{robust}}(T(\mathcal{M}), \mathcal{S}) = \sum_{m \in T(\mathcal{M})} \sum_{s \in \mathcal{S}} g((m - s)^2)</math>|{{EquationRef|4}}}}
+
+Such a formulation is known as an ''[[M-estimator]]''. The robust function <math>g</math> is chosen such that the local configuration of the point set is insensitive to distant points, hence making it robust against outliers and noise.<ref name="kctsin" />
+
+=== Rigid registration ===
+Given two point sets, rigid registration yields a [[rigid transformation]] which maps one point set to the other. A rigid transformation is defined as a transformation that does not change the distance between any two points. Typically such a transformation consists of [[translation (geometry)|translation]] and [[rotation]].<ref name="lmfitzgibbon" /> In rare cases, the point set may also be mirrored.
+
+=== Non-rigid registration ===
+[[File:Ouster OS1-64 lidar point cloud of intersection of Folsom and Dore St, San Francisco.png|thumb|Registered point cloud from a [[lidar]] mounted on a moving car.]]
+Given two point sets, non-rigid registration yields a non-rigid transformation which maps one point set to the other. Non-rigid transformations include [[affine transformations]] such as [[scaling (geometry)|scaling]] and [[shear mapping]]. However, in the context of point set registration, non-rigid registration typically involves nonlinear transformation. If the [[eigenmode|eigenmodes of variation]] of the point set are known, the nonlinear transformation may be parametrized by the eigenvalues.<ref name="cpdmyronenko2" /> A nonlinear transformation may also be parametrized as a [[thin plate spline]].<ref name="tpsrpmchui" /><ref name="cpdmyronenko2" />
+
+== Point set registration algorithms ==
+Some approaches to point set registration use algorithms that solve the more general [[graph matching]] problem.<ref name="gmmjian"/> However, the computational complexity of such methods tend to be high and they are limited to rigid registrations. Algorithms specific to the point set registration problem are described in the following sections.
+The [[PCL (Point Cloud Library)]] is an open-source framework for n-dimensional point cloud and 3D geometry processing. It includes several point registration algorithms.<ref name=PCL-Tutorial>{{cite journal|last1=Holz|first1=Dirk|last2=Ichim |first2= Alexandru E.|last3=Tombari|first3=Federico| last4=Rusu|first4= Radu B.| last5= Behnke |first5=Sven|title= Registration with the Point Cloud Library: A Modular Framework for Aligning in 3-D | journal=IEEE Robotics Automation Magazine|date=2015|volume=22|issue=4|pages=110–124|doi= 10.1109/MRA.2015.2432331|url= https://www.researchgate.net/publication/283198426 }}</ref>
+
+=== Iterative closest point ===
+{{Main|Iterative closest point}}
+The [[iterative closest point]] (ICP) algorithm was introduced by Besl and McKay.<ref name="icpbesl">{{cite journal
+|last1=Besl
+|first1=Paul
+|last2=McKay
+|first2=Neil
+|title=A Method for Registration of 3-D Shapes
+|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence
+|volume=14
+|number=2
+|year=1992
+|pages=239–256
+|doi=10.1109/34.121791
+|url=https://dspace.mit.edu/bitstream/1721.1/117394/1/SS_Pub10.pdf
+}}</ref>
+The algorithm performs rigid registration in an iterative fashion by assuming that every point in <math>\mathcal{M}</math> corresponds with [[nearest neighbor search|the closest point to it]] in <math>\mathcal{S}</math>, and then finding the [[least squares]] rigid transformation. As such, it works best if the initial pose of <math>\mathcal{M}</math> is sufficiently close to <math>\mathcal{S}</math>. In [[pseudocode]], the basic algorithm is implemented as follows:
+
+ '''algorithm''' {{nowrap|''ICP''(<math>\mathcal{M}, \mathcal{S}</math>)}}
+     {{nowrap|<math>\theta := \theta_0</math>}}
+     '''while not''' registered:
+         {{math|1=''X'' := &empty;}}
+         {{nowrap|'''for''' <math>m_i \in T(\mathcal{M}, \theta)</math>:}}
+             {{nowrap|<math>\hat{s}_j := \text{closest point in } \mathcal{S} \text{ to } m_i</math>}}
+             {{nowrap|<math>X := X + \langle m_i, \hat{s}_j \rangle</math>}}
+         {{mvar|&theta;}} := [[least squares]]({{mvar|X}})
+     '''return''' {{mvar|&theta;}}
+
+Here, the function <code>least_squares</code> performs [[least squares]] regression to minimize the distance in each of the <math>\langle m_i, \hat{s}_j \rangle</math> pairs, i.e. minimizing the distance function in Equation ({{EquationNote|3}}).
+
+Because the [[loss function|cost function]] of registration depends on finding the closest point in <math>\mathcal{S}</math> to every point in <math>\mathcal{M}</math>, it can change as the algorithm is running. As such, it is difficult to prove that ICP will in fact converge exactly to the local optimum.<ref name="kctsin" /> In fact, empirically, ICP and [[EM-ICP]] do not converge to the local minimum of the cost function.<ref name="kctsin" /> Nonetheless, because ICP is intuitive to understand and straightforward to implement, it remains the most commonly used point set registration algorithm.<ref name="kctsin" /> Many variants of ICP have been proposed, affecting all phases of the algorithm from the selection and matching of points to the minimization strategy.<!-- lol this sentence shows up verbatim in at least 5 papers and one book--><ref name="cpdmyronenko2" /><ref name="fasticp">{{cite conference
+|last1=Rusinkiewicz
+|first1=Szymon
+|last2=Levoy
+|first2=Marc
+|title=Efficient variants of the ICP algorithm
+|conference=Proceedings of the Third International Conference on 3-D Digital Imaging and Modeling, 2001.
+|pages=145–152
+|year=2001
+|publisher=IEEE
+|doi=10.1109/IM.2001.924423
+}}</ref>
+For example, the [[expectation maximization]] algorithm is applied to the ICP algorithm to form the EM-ICP method, and the [[Levenberg-Marquardt algorithm]] is applied to the ICP algorithm to form the [[LM-ICP]] method.<ref name="lmfitzgibbon" />
+
+=== Robust point matching ===
+Robust point matching (RPM) was introduced by Gold et al.<ref name="rpmgold">{{cite journal
+|last1=Gold
+|first1=Steven
+|last2=Rangarajan
+|first2=Anand
+|last3=Lu
+|first3=Chien-Ping
+|last4=Suguna
+|first4=Pappu
+|last5=Mjolsness
+|first5=Eric
+|title=New algorithms for 2d and 3d point matching:: pose estimation and correspondence
+|journal=Pattern Recognition
+|volume=38
+|number=8
+|year=1998
+|pages=1019–1031
+|doi=10.1016/S0031-3203(98)80010-1
+}}</ref> The method performs registration using [[deterministic annealing]] and soft assignment of correspondences between point sets. Whereas in ICP the correspondence generated by the nearest-neighbour heuristic is binary, RPM uses a ''soft'' correspondence where the correspondence between any two points can be anywhere from 0 to 1, although it ultimately converges to either 0 or 1. The correspondences found in RPM is always one-to-one, which is not always the case in ICP.<ref name="tpsrpmchui" /> Let <math>m_i</math> be the <math>i</math>th point in <math>\mathcal{M}</math> and <math>s_j</math> be the <math>j</math>th point in <math>\mathcal{S}</math>. The ''match matrix'' <math>\mathbf{\mu}</math> is defined as such:
+
+{{NumBlk|:|<math> \mu_{ij} = \left\lbrace\begin{matrix}
+1 & \text{if point }m_i\text{ corresponds to point }s_j\\
+0 & \text{otherwise}
+\end{matrix}\right. </math>|{{EquationRef|rpm.1}}}}
+
+The problem is then defined as: Given two point sets <math>\mathcal{M}</math> and <math>\mathcal{S}</math> find the [[Affine transformation]] <math>T</math> and the match matrix <math>\mathbf{\mu}</math> that best relates them.<ref name="rpmgold" /> Knowing the optimal transformation makes it easy to determine the match matrix, and vice versa. However, the RPM algorithm determines both simultaneously. The transformation may be decomposed into a translation vector and a transformation matrix:
+
+:<math>T(m) = \mathbf{A}m + \mathbf{t}</math>
+
+The matrix <math>\mathbf{A}</math> in 2D is composed of four separate parameters <math>\lbrace a, \theta, b, c\rbrace</math>, which are scale, rotation, and the vertical and horizontal shear components respectively. The cost function is then:
+
+{{NumBlk|:|<math>
+    \operatorname{cost} = \sum_{j=1}^N \sum_{i=1}^M \mu_{ij} \lVert s_j - \mathbf{t} - \mathbf{A} m_i \rVert^2 + g(\mathbf{A}) - \alpha \sum_{j=1}^N \sum_{i=1}^M \mu_{ij}
+</math>|{{EquationRef|rpm.2}}}}
+
+subject to <math>\forall j~\sum_{i=1}^M \mu_{ij} \leq 1</math>, <math>\forall i~\sum_{j=1}^N \mu_{ij} \leq 1</math>, <math>\forall ij~\mu_{ij} \in \lbrace0, 1\rbrace</math>.  The <math>\alpha</math> term biases the objective towards stronger correlation by decreasing the cost if the match matrix has more ones in it. The function <math>g(\mathbf{A})</math> serves to regularize the Affine transformation by penalizing large values of the scale and shear components:
+
+:<math>g(\mathbf{A}(a,\theta, b, c)) = \gamma(a^2 + b^2 + c^2)</math>
+
+for some regularization parameter <math>\gamma</math>.
+
+The RPM method optimizes the cost function using the [[Softassign]] algorithm. The 1D case will be derived here. Given a set of variables <math>\lbrace Q_j\rbrace</math> where <math>Q_j\in \mathbb{R}^1</math>. A variable <math>\mu_j</math> is associated with each <math>Q_j</math> such that <math>\sum_{j=1}^J \mu_j = 1</math>. The goal is to find <math>\mathbf{\mu}</math> that maximizes <math>\sum_{j=1}^J \mu_j Q_j</math>. This can be formulated as a continuous problem by introducing a control parameter <math>\beta>0</math>. In the [[deterministic annealing]] method, the control parameter <math>\beta</math> is slowly increased as the algorithm runs. Let <math>\mathbf{\mu}</math> be:
+
+{{NumBlk|:|<math>
+    \mu_{\hat{j}} = \frac{\exp{(\beta Q_{\hat{j}})}}{\sum_{j=1}^J \exp{(\beta Q_j)}}
+</math>|{{EquationRef|rpm.3}}}}
+
+this is known as the [[softmax function]]. As <math>\beta</math> increases, it approaches a binary value as desired in Equation ({{EquationNote|rpm.1}}). The problem may now be generalized to the 2D case, where instead of maximizing <math>\sum_{j=1}^J \mu_j Q_j</math>, the following is maximized:
+
+{{NumBlk|:|<math>
+    E(\mu) = \sum_{j=1}^N \sum_{i=0}^M \mu_{ij} Q_{ij}
+</math>|{{EquationRef|rpm.4}}}}
+
+where
+
+:<math>Q_{ij} = -(\lVert s_j - \mathbf{t} - \mathbf{A} m_i \rVert^2 - \alpha) = -\frac{\partial \operatorname{cost}}{\partial \mu_{ij}}</math>
+
+This is straightforward, except that now the constraints on <math>\mu</math> are [[doubly stochastic matrix]] constraints: <math>\forall j~\sum_{i=1}^M \mu_{ij} = 1</math> and <math>\forall i~\sum_{j=1}^N \mu_{ij} = 1</math>. As such the denominator from Equation ({{EquationNote|rpm.3}}) cannot be expressed for the 2D case simply. To satisfy the constraints, it is possible to use a result due to Sinkhorn,<ref name="rpmgold" /> which states that a doubly stochastic matrix is obtained from any square matrix with all positive entries by the iterative process of alternating row and column normalizations. Thus the algorithm is written as such:<ref name="rpmgold" />
+
+ {{nowrap|'''algorithm RPM2D'''<math>(\mathcal{M}, \mathcal{S})</math>}}
+     {{math|1='''t''' := 0}}
+     {{nowrap|<math>a, \theta, b, c := 0</math>}}
+     {{nowrap|<math>\beta := \beta_0</math>}}
+     {{nowrap|<math>\hat{\mu}_{ij} := 1 + \epsilon</math>}}
+     {{nowrap|'''while''' <math>\beta < \beta_f</math>:}}
+         '''while''' {{mvar|&mu;}} has not converged:
+             ''// update correspondence parameters by softassign''
+             {{nowrap|<math>Q_{ij} := -\frac{\partial \operatorname{cost}}{\partial \mu_{ij}}</math>}}
+             {{nowrap|<math>\mu^0_{ij} := \exp(\beta Q_{ij})</math>}}
+             ''// apply Sinkhorn's method''
+             {{nowrap|'''while''' <math>\hat{\mu}</math> has not converged:}}
+                 {{nowrap|''// update <math>\hat{\mu}</math> by normalizing across all rows:''}}
+                 {{nowrap|<math>\hat{\mu}^1_{ij} := \frac{\hat{\mu}^0_{ij}}{\sum_{i=1}^{M+1} \hat{\mu}^0_{ij}}</math>}}
+                 {{nowrap|''// update <math>\hat{\mu}</math> by normalizing across all columns:''}}
+                 {{nowrap|<math>\hat{\mu}^0_{ij} := \frac{\hat{\mu}^1_{ij}}{\sum_{j=1}^{N+1} \hat{\mu}^1_{ij}}</math>}}
+             ''// update pose parameters by coordinate descent''
+             update {{mvar|&theta;}} using analytical solution
+             update {{math|'''t'''}} using analytical solution
+             update {{mvar|a, b, c}} using [[Newton's method]]
+         {{nowrap|<math>\beta := \beta_r \beta</math>}}
+         {{nowrap|<math>\gamma := \frac{\gamma}{\beta_r}</math>}}
+     '''return''' {{mvar|a, b, c, &theta;}} and {{math|'''t'''}}
+
+where the deterministic annealing control parameter <math>\beta</math> is initially set to <math>\beta_0</math> and increases by factor <math>\beta_r</math> until it reaches the maximum value <math>\beta_f</math>. The summations in the normalization steps sum to <math>M+1</math> and <math>N+1</math> instead of just <math>M</math> and <math>N</math> because the constraints on <math>\mu</math> are inequalities. As such the <math>M+1</math>th and <math>N+1</math>th elements are [[slack variable]]s.
+
+The algorithm can also be extended for point sets in 3D or higher dimensions. The constraints on the correspondence matrix <math>\mathbf{\mu}</math> are the same in the 3D case as in the 2D case. Hence the structure of the algorithm remains unchanged, with the main difference being how the rotation and translation matrices are solved.<ref name="rpmgold" />
+
+==== Thin plate spline robust point matching ====
+[[File:TPS RPM example.gif|thumb|right|Animation of 2D non-rigid registration of the green point set <math>\mathcal{M}</math> to the magenta point set <math>\mathcal{S}</math> corrupted with noisy outliers. The size of the blue circles is inversely related to the control parameter <math>\beta</math>. The yellow lines indicate correspondence.]]
+The thin plate spline robust point matching (TPS-RPM) algorithm by Chui and Rangarajan augments the RPM method to perform non-rigid registration by parametrizing the transformation as a [[thin plate spline]].<ref name="tpsrpmchui">{{cite journal
+|last1=Chui
+|first1=Haili
+|last2=Rangarajan
+|first2=Anand
+|title=A new point matching algorithm for non-rigid registration
+|journal=Computer Vision and Image Understanding
+|year=2003
+|volume=89
+|number=2
+|pages=114–141
+|doi=10.1016/S1077-3142(03)00009-2
+|citeseerx=10.1.1.7.4365
+}}</ref>
+However, because the thin plate spline parametrization only exists in three dimensions, the method cannot be extended to problems involving four or more dimensions.
+
+=== Kernel correlation ===
+The kernel correlation (KC) approach of point set registration was introduced by Tsin and Kanade.<ref name="kctsin">{{cite book
+|last1=Tsin
+|first1=Yanghai
+|last2=Kanade
+|first2=Takeo
+|title=A Correlation-Based Approach to Robust Point Set Registration
+|year=2004
+|journal=Computer Vision ECCV
+|volume=3023
+|publisher=Springer Berlin Heidelberg
+|pages=558–569
+|doi=10.1007/978-3-540-24672-5_44
+|series=Lecture Notes in Computer Science
+|isbn=978-3-540-21982-8
+|citeseerx=10.1.1.156.6729
+}}</ref>
+Compared with ICP, the KC algorithm is more robust against noisy data. Unlike ICP, where, for every model point, only the closest scene point is considered, here every scene point affects every model point.<ref name="kctsin" /> As such this is a ''multiply-linked'' registration algorithm. For some [[kernel function]] <math>K</math>, the kernel correlation <math>KC</math> of two points <math>x_i, x_j</math> is defined thus:<ref name="kctsin" />
+
+{{NumBlk|:|<math>KC(x_i, x_j) = \int K(x, x_i) \cdot K(x, x_j) dx</math>|{{EquationRef|kc.1}}}}
+
+The [[Kernel (statistics)#In non-parametric statistics|kernel function]] <math>K</math> chosen for point set registration is typically symmetric and non-negative kernel, similar to the ones used in the [[Parzen window]] density estimation. The [[Gaussian kernel]] typically used for its simplicity, although other ones like the [[Epanechnikov kernel]] and the tricube kernel may be substituted.<ref name="kctsin" /> The kernel correlation of an entire point set <math>\mathcal{\chi}</math> is defined as the sum of the kernel correlations of every point in the set to every other point in the set:<ref name="kctsin" />
+
+{{NumBlk|:|<math>KC(\mathcal{X}) = \sum_{i\neq j}KC(x_i, x_j) = 2\sum_{i<j}KC(x_i, x_j)</math>|{{EquationRef|kc.2}}}}
+
+The logarithm of KC of a point set is proportional, within a constant factor, to the [[entropy (information theory)|information entropy]]. Observe that the KC is a measure of a "compactness" of the point set—trivially, if all points in the point set were at the same location, the KC would evaluate to a large value. The [[loss function|cost function]] of the point set registration algorithm for some transformation parameter <math>\theta</math> is defined thus:
+
+{{NumBlk|:|<math>\operatorname{cost}(\mathcal{S}, \mathcal{M}, \theta) = -\sum_{m \in \mathcal{M}} \sum_{s \in \mathcal{S}} KC(s, T(m, \theta))</math>|{{EquationRef|kc.3}}}}
+
+Some algebraic manipulation yields:
+
+{{NumBlk|:|<math>KC(\mathcal{S} \cup T(\mathcal{M}, \theta)) = KC(\mathcal{S}) + KC(T(\mathcal{M}, \theta)) - 2 \operatorname{cost}(\mathcal{S}, \mathcal{M}, \theta)</math>|{{EquationRef|kc.4}}}}
+
+The expression is simplified by observing that <math>KC(\mathcal{S})</math> is independent of <math>\theta</math>. Furthermore, assuming rigid registration, <math>KC(T(\mathcal{M}, \theta))</math> is invariant when <math>\theta</math> is changed because the Euclidean distance between every pair of points stays the same under [[rigid transformation]]. So the above equation may be rewritten as:
+
+{{NumBlk|:|<math>KC(\mathcal{S} \cup T(\mathcal{M}, \theta)) = C - 2 \operatorname{cost}(\mathcal{S}, \mathcal{M}, \theta)</math>|{{EquationRef|kc.5}}}}
+
+The [[Kernel density estimation|kernel density estimates]] are defined as:
+
+:<math>P_{\mathcal{M}}(x, \theta) = \frac{1}{M} \sum_{m \in \mathcal{M}} K(x, T(m, \theta))</math>
+:<math>P_{\mathcal{S}}(x)         = \frac{1}{N} \sum_{s \in \mathcal{S}} K(x, s)</math>
+
+The cost function can then be shown to be the correlation of the two kernel density estimates:
+
+{{NumBlk|:|<math>\operatorname{cost}(\mathcal{S}, \mathcal{M}, \theta) = -N^2 \int_x P_{\mathcal{M}}\cdot P_{\mathcal{S}} ~ dx</math>|{{EquationRef|kc.6}}}}
+
+Having established the [[loss function|cost function]], the algorithm simply uses [[gradient descent]] to find the optimal transformation. It is computationally expensive to compute the cost function from scratch on every iteration, so a discrete version of the cost function Equation ({{EquationNote|kc.6}}) is used. The kernel density estimates <math>P_{\mathcal{M}}, P_{\mathcal{S}}</math> can be evaluated at grid points and stored in a [[lookup table]]. Unlike the ICP and related methods, it is not necessary to find the nearest neighbour, which allows the KC algorithm to be comparatively simple in implementation.
+
+Compared to ICP and EM-ICP for noisy 2D and 3D point sets, the KC algorithm is less sensitive to noise and results in correct registration more often.<ref name="kctsin" />
+
+==== Gaussian mixture model ====
+
+The kernel density estimates are sums of Gaussians and may therefore be represented as [[Gaussian mixture model]]s (GMM).<ref name="gmmjian2">{{cite conference
+|last1=Jian
+|first1=Bing
+|last2=Vemuri
+|first2=Baba C.
+|title=A robust algorithm for point set registration using mixture of Gaussians
+|conference=Tenth IEEE International Conference on Computer Vision 2005
+|year=2005
+|volume=2
+|pages=1246–1251
+}}</ref> Jian and Vemuri use the GMM version of the KC registration algorithm to perform non-rigid registration parametrized by [[thin plate spline]]s.
+
+=== Coherent point drift ===
+[[File:Cpd fish rigid.gif|thumb|Rigid (with the addition of scaling) registration of a blue point set <math>\mathcal{M}</math> to the red point set <math>\mathcal{S}</math> using the Coherent Point Drift algorithm. Both point sets have been corrupted with removed points and random spurious outlier points.]]
+[[File:Cpd fish affine.gif|thumb|Affine registration of a blue point set <math>\mathcal{M}</math> to the red point set <math>\mathcal{S}</math> using the Coherent Point Drift algorithm.]]
+[[File:Cpd fish nonrigid.gif|thumb|Non-rigid registration of a blue point set <math>\mathcal{M}</math> to the red point set <math>\mathcal{S}</math> using the Coherent Point Drift algorithm. Both point sets have been corrupted with removed points and random spurious outlier points.]]
+Coherent point drift (CPD) was introduced by Myronenko and Song.<ref name="cpdmyronenko2">{{cite journal
+|last1=Myronenko
+|first1=Andriy
+|last2=Song
+|first2=Xubo
+|title=Point set registration: Coherent Point drift
+|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence
+|volume=32
+|number=2
+|year=2010
+|pages=2262–2275
+|doi=10.1109/tpami.2010.46
+|pmid=20975122
+|arxiv=0905.2635
+}}</ref><ref name="cpdmyronenko">{{cite journal
+|last1=Myronenko
+|first1=Andriy
+|last2=Song
+|first2=Xubo
+|last3=Carriera-Perpinán
+|first3=Miguel A.
+|title=Non-rigid point set registration: Coherent point drift
+|journal=Advances in Neural Information Processing Systems
+|year=2006
+|pages=1009–1016
+|volume=19
+|url=http://papers.nips.cc/paper/2962-non-rigid-point-set-registration-coherent-point-drift
+|accessdate=31 May 2014
+}}</ref>
+The algorithm takes a probabilistic approach to aligning point sets, similar to the GMM KC method. Unlike earlier approaches to non-rigid registration which assume a [[thin plate spline]] transformation model, CPD is agnostic with regard to the transformation model used. The point set <math>\mathcal{M}</math> represents the [[Gaussian mixture model]] (GMM) centroids. When the two point sets are optimally aligned, the correspondence is the maximum of the GMM [[posterior probability]] for a given data point. To preserve the topological structure of the point sets, the GMM centroids are forced to move coherently as a group. The [[expectation maximization]] algorithm is used to optimize the cost function.<ref name="cpdmyronenko2" />
+
+Let there be {{mvar|M}} points in <math>\mathcal{M}</math> and {{mvar|N}} points in <math>\mathcal{S}</math>. The GMM [[probability density function]] for a point {{mvar|s}} is:
+
+{{NumBlk|:|<math>
+    p(s) = \sum_{i=1}^{M+1} P(i) p(s|i)
+</math>|{{EquationRef|cpd.1}}}}
+
+where, in {{mvar|D}} dimensions, <math>p(s|i)</math> is the [[Gaussian distribution]] centered on point <math>m_i \in \mathcal{M}</math>.
+
+:<math>p(s|i) = \frac{1}{(2\pi \sigma^2)^{D/2}} \exp{\left(-\frac{\lVert s - m_i \rVert^2}{2\sigma^2}\right)}</math>
+
+The membership probabilities <math>P(i)=\frac{1}{M}</math> is equal for all GMM components. The weight of the uniform distribution is denoted as <math>w\in[0,1]</math>. The mixture model is then:
+
+{{NumBlk|:|<math>
+    p(s) = w \frac{1}{N} + (1-w) \sum_{i=1}^M \frac{1}{M} p(s|i)
+</math>|{{EquationRef|cpd.2}}}}
+
+The GMM centroids are re-parametrized by a set of parameters <math>\theta</math> estimated by maximizing the likelihood. This is equivalent to minimizing the negative [[Likelihood function#Log-likelihood|log-likelihood function]]:
+
+{{NumBlk|:|<math>
+    E(\theta, \sigma^2) = -\sum_{j=1}^N \log \sum_{i=1}^{M+1} P(i)p(s|i)
+</math>|{{EquationRef|cpd.3}}}}
+
+where it is assumed that the data is [[independent and identically distributed]]. The correspondence probability between two points <math>m_i</math> and <math>s_j</math> is defined as the [[posterior probability]] of the GMM centroid given the data point:
+
+:<math>P(i|s_j) = \frac{P(i)p(s_j|i)}{p(s_j)}</math>
+
+The [[expectation maximization]] (EM) algorithm is used to find <math>\theta</math> and <math>\sigma^2</math>. The EM algorithm consists of two steps. First, in the E-step or ''estimation'' step, it guesses the values of parameters ("old" parameter values) and then uses [[Bayes' theorem]] to compute the posterior probability distributions <math>P^{\text{old}}(i,s_j)</math> of mixture components. Second, in the M-step or ''maximization'' step, the "new" parameter values are then found by minimizing the expectation of the complete negative log-likelihood function, i.e. the cost function:
+
+{{NumBlk|:|<math>
+    \operatorname{cost}=-\sum_{j=1}^N \sum_{i=1}^{M+1} P^{\text{old}}(i|s_j) \log(P^{\text{new}}(i) p^{\text{new}}(s_j|i))
+</math>|{{EquationRef|cpd.4}}}}
+
+Ignoring constants independent of <math>\theta</math> and <math>\sigma</math>, Equation ({{EquationNote|cpd.4}}) can be expressed thus:
+
+{{NumBlk|:|<math>
+    \operatorname{cost}(\theta, \sigma^2)=\frac{1}{2\sigma^2} \sum_{j=1}^N \sum_{i=1}^{M+1} P^{\text{old}}(i|s_j) \lVert s_j - T(m_i,\theta) \rVert^2 
+    + \frac{N_\mathbf{P}D}{2}\log{\sigma^2}
+</math>|{{EquationRef|cpd.5}}}}
+
+where
+
+:<math>N_\mathbf{P} = \sum_{j=0}^N \sum_{i=0}^M P^{\text{old}}(i|s_j) \leq N</math>
+
+with <math>N=N_\mathbf{P}</math> only if <math>w=0</math>. The posterior probabilities of GMM components computed using previous parameter values <math>P^{\text{old}}</math> is:
+
+{{NumBlk|:|<math>
+    P^{\text{old}}(i|s_j) = 
+    \frac
+    {\exp
+        \left(
+            -\frac{1}{2\sigma^{\text{old}2}} \lVert s_j - T(m_i, \theta^{\text{old}})\rVert^2 
+        \right) }
+    {\sum_{k=1}^{M} \exp
+        \left(
+            -\frac{1}{2\sigma^{\text{old}2}} \lVert s_j - T(m_k, \theta^{\text{old}})\rVert^2 
+        \right) + (2\pi \sigma^2)^\frac{D}{2} \frac{w}{1-w} \frac{M}{N}}
+</math>|{{EquationRef|cpd.6}}}}
+
+Minimizing the cost function in Equation ({{EquationNote|cpd.5}}) necessarily decreases the negative log-likelihood function {{mvar|E}} in Equation ({{EquationNote|cpd.3}}) unless it is already at a local minimum.<ref name="cpdmyronenko2" /> Thus, the algorithm can be expressed using the following pseudocode, where the point sets <math>\mathcal{M}</math> and <math>\mathcal{S}</math> are represented as <math>M\times D</math> and <math>N\times D</math> matrices <math>\mathbf{M}</math> and <math>\mathbf{S}</math> respectively:<ref name="cpdmyronenko2" />
+
+ {{nowrap|'''algorithm CPD'''<math>(\mathcal{M}, \mathcal{S})</math>}}
+     {{nowrap|<math>\theta := \theta_0</math>}}
+     {{nowrap|initialize <math>0\leq w \leq 1</math>}}
+     {{nowrap|<math>\sigma^2 := \frac{1}{DNM}\sum_{j=1}^N \sum_{i=1}^M \lVert s_j - m_i \rVert^2</math>}}
+     '''while''' not registered:
+         ''// E-step, compute {{math|'''P'''}}''
+         {{nowrap|'''for''' <math>i\in [1,M]</math> and <math>j\in [1,N]</math>:}}
+             {{nowrap|<math>p_{ij} :=
+             \frac
+             {\exp
+                 \left(
+                     -\frac{1}{2\sigma^2} \lVert s_j - T(m_i, \theta)\rVert^2
+                 \right)}
+             {\sum_{k=1}^{M} \exp
+                 \left(
+                     -\frac{1}{2\sigma^2} \lVert s_j - T(m_k, \theta)\rVert^2
+                 \right) + (2\pi \sigma^2)^\frac{D}{2} \frac{w}{1-w} \frac{M}{N}}</math>}}
+         ''// M-step, solve for optimal transformation''
+         {{nowrap|<math>\lbrace \theta,\sigma^2 \rbrace := \mathbf{solve}(\mathbf{S}, \mathbf{M}, \mathbf{P})</math>}}
+     '''return''' {{mvar|&theta;}}
+
+where the vector <math>\mathbf{1}</math> is a column vector of ones. The <code>'''solve'''</code> function differs by the type of registration performed. For example, in rigid registration, the output is a scale {{mvar|a}}, a rotation matrix <math>\mathbf{R}</math>, and a translation vector <math>\mathbf{t}</math>. The parameter <math>\theta</math> can be written as a tuple of these:
+
+:<math>\theta = \lbrace a, \mathbf{R}, \mathbf{t}\rbrace</math>
+
+which is initialized to one, the [[identity matrix]], and a column vector of zeroes:
+
+:<math>\theta_0 = \lbrace 1, \mathbf{I}, \mathbf{0}\rbrace</math>
+
+The aligned point set is:
+
+:<math>T(\mathbf{M}) = a\mathbf{M}\mathbf{R}^T + \mathbf{1}\mathbf{t}^T</math>
+
+The <code>'''solve_rigid'''</code> function for rigid registration can then be written as follows, with derivation of the algebra explained in Myronenko's 2010 paper.<ref name="cpdmyronenko2" />
+
+ {{nowrap|'''solve_rigid'''<math>(\mathbf{S}, \mathbf{M}, \mathbf{P})</math>}}
+     {{nowrap|<math>N_\mathbf{P}:=\mathbf{1}^T\mathbf{P}\mathbf{1}</math>}}
+     {{nowrap|<math>\mu_s:=\frac{1}{N_\mathbf{P}}\mathbf{S}^T\mathbf{P}^T\mathbf{1}</math>}}
+     {{nowrap|<math>\mu_m:=\frac{1}{N_\mathbf{P}}\mathbf{M}^T\mathbf{P}\mathbf{1}</math>}}
+     {{nowrap|<math>\hat{\mathbf{S}}:=\mathbf{S} - \mathbf{1}\mu_s^T</math>}}
+     {{nowrap|<math>\hat{\mathbf{M}}:=\mathbf{M} - \mathbf{1}\mu_m^T</math>}}
+     {{nowrap|<math>\mathbf{A}:=\hat{\mathbf{S}^T}\mathbf{P}^T\hat{\mathbf{M}}</math>}}
+     {{nowrap|<math>\mathbf{U}, \mathbf{V} := \mathbf{svd}(\mathbf{A})</math>}} {{nowrap|''// the [[singular value decomposition]] of <math>\mathbf{A}=\mathbf{U}\Sigma\mathbf{V}^T</math>''}}
+     {{nowrap|<math>\mathbf{C}:=\operatorname{diag}(1, ..., 1, \det(\mathbf{UV}^T))</math>}} ''//'' {{math|diag(&xi;)}} ''is the [[diagonal matrix]] formed from vector {{mvar|&xi;}}''
+     {{nowrap|<math>\mathbf{R}:=\mathbf{UCV}^T</math>}}
+     {{nowrap|<math>a := \frac{\operatorname{tr}(\mathbf{A}^T\mathbf{R})}{\operatorname{tr}(\mathbf{\hat{\mathbf{M}}^T \operatorname{diag}(\mathbf{P}\mathbf{1})\hat{\mathbf{M}}})}</math>}} ''//'' {{math|tr}} ''is the [[trace (linear algebra)|trace]] of a matrix''
+     {{nowrap|<math>\mathbf{t}:=\mu_s - a\mathbf{R}\mu_m</math>}}
+     {{nowrap|<math>\sigma^2:=\frac{1}{N_\mathbf{P} D}(\operatorname{tr}(\mathbf{\hat{\mathbf{S}}^T \operatorname{diag}(\mathbf{P}^T\mathbf{1})\hat{\mathbf{S}}})-a\operatorname{tr}(\mathbf{A}^T\mathbf{R}))</math>}}
+     {{nowrap|'''return''' <math>\lbrace a, \mathbf{R}, \mathbf{t}\rbrace, \sigma^2</math>}}
+
+For affine registration, where the goal is to find an [[affine transformation]] instead of a rigid one, the output is an affine transformation matrix <math>\mathbf{B}</math> and a translation <math>\mathbf{t}</math> such that the aligned point set is:
+
+:<math>T(\mathbf{M}) = \mathbf{M}\mathbf{B}^T + \mathbf{1}\mathbf{t}^T</math>
+
+The <code>'''solve_affine'''</code> function for rigid registration can then be written as follows, with derivation of the algebra explained in Myronenko's 2010 paper.<ref name="cpdmyronenko2" />
+
+ {{nowrap|'''solve_affine'''<math>(\mathbf{S}, \mathbf{M}, \mathbf{P})</math>}}
+     {{nowrap|<math>N_\mathbf{P} := \mathbf{1}^T\mathbf{P}\mathbf{1}</math>}}
+     {{nowrap|<math>\mu_s := \frac{1}{N_\mathbf{P}}\mathbf{S}^T\mathbf{P}^T\mathbf{1}</math>}}
+     {{nowrap|<math>\mu_m := \frac{1}{N_\mathbf{P}}\mathbf{M}^T\mathbf{P}\mathbf{1}</math>}}
+     {{nowrap|<math>\hat{\mathbf{S}} := \mathbf{S} - \mathbf{1}\mu_s^T</math>}}
+     {{nowrap|<math>\hat{\mathbf{M}} := \mathbf{M} - \mathbf{1}\mu_s^T</math>}}
+     {{nowrap|<math>\mathbf{B} := (\hat{\mathbf{S}^T}\mathbf{P}^T\hat{\mathbf{M}})(\hat{\mathbf{M}^T}\operatorname{diag}(\mathbf{P}\mathbf{1})\hat{\mathbf{M}})^{-1}</math>}}
+     {{nowrap|<math>\mathbf{t} := \mu_s - \mathbf{B}\mu_m</math>}}
+     {{nowrap|<math>\sigma^2 := \frac{1}{N_\mathbf{P} D}(\operatorname{tr}(\hat{\mathbf{S}^T} \operatorname{diag}(\mathbf{P}^T\mathbf{1})\hat{\mathbf{S}})-\operatorname{tr}(\hat{\mathbf{S}^T}\mathbf{P}^T\hat{\mathbf{M}}\mathbf{B}^T))</math>}}
+     {{nowrap|'''return''' <math>\{\mathbf{B}, \mathbf{t}\}, \sigma^2</math>}}
+
+It is also possible to use CPD with non-rigid registration using a parametrization derived using [[calculus of variations]].<ref name="cpdmyronenko2" />
+
+Sums of Gaussian distributions can be computed in [[linear time]] using the [[fast Gauss transform]] (FGT).<ref name="cpdmyronenko2" /> Consequently, the [[time complexity]] of CPD is <math>O(M+N)</math>, which is asymptotically much faster than <math>O(MN)</math> methods.<ref name="cpdmyronenko2" />
+
+=== Sorting the Correspondence Space (SCS) ===
+
+This algorithm was introduced in 2013 by H. Assalih to accommodate sonar image registration.<ref>{{cite thesis |type=Ph.D. |last=Assalih |first=Hassan. |date=2013 |title=3D reconstruction and motion estimation using forward looking sonar |chapter=Chapter 6: Sorting the Correspondence Space |publisher=Heriot-Watt University |chapter-url=http://www.ros.hw.ac.uk/bitstream/handle/10399/2647/AssalihH_1013_eps.pdf}}</ref> These kinds of images tend to have high amounts of noise, so it is expected to have lots of outliers in the point sets to match. SCS delivers high robustness against outliers and can surpass ICP and CPD performance in the presence of outliers. SCS doesn't use iterative optimization in high dimensional space and is neither probabilistic nor spectral. SCS can match rigid and non-rigid transformations, and performs best when the target transformation is between three and six [[degrees of freedom]].
+
+== References ==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+*[http://www.cise.ufl.edu/~anand/students/chui/research.html Reference implementation of thin plate spline robust point matching] 
+*[https://www.cs.cmu.edu/~ytsin/KCReg/ Reference implementation of kernel correlation point set registration]
+*[http://sites.google.com/site/myronenko/research/cpd Reference implementation of coherent point drift]
+*[https://github.com/ethz-asl/libpointmatcher Reference implementation of ICP variants]
+
+[[Category:Computer vision]]
+[[Category:Robotics]]
+[[Category:Pattern matching]]

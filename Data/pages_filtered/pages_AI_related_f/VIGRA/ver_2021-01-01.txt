@@ -1,0 +1,13 @@
+VIGRA is the abbreviation for "Vision with Generic Algorithms". It is a free open-source computer vision library which focuses on customizable algorithms and data structures. VIGRA component can be easily adapted to specific needs of target application without compromising execution speed, by using template techniques similar to those in the C++ Standard Template Library.
+
+Features
+VIGRA is cross-platform, with working builds on Microsoft Windows, Mac OS X, Linux, and OpenBSD. Since version 1.7.1, VIGRA provides Python bindings based on numpy framework.
+
+History
+VIGRA was originally designed and implemented by scientists at
+University of Hamburg faculty of computer science; its core maintainers are now working at Heidelberg Collaboratory for Image Processing (HCI) University of Heidelberg. In the meantime, many developers have contributed to the project.
+
+Application
+CellCognition and ilastik uses VIGRA computer vision library.
+
+OpenOffice.org uses VIGRA as part of its headless software rendering backend; LibreOffice does so until version 5.2.

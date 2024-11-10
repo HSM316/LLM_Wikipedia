@@ -1,0 +1,25 @@
+{{one source |date=March 2024}}
+In [[probability theory]] and related fields, the '''life-time of correlation''' measures the timespan over which there is appreciable [[autocorrelation]] or [[cross-correlation]] in [[stochastic process]]es.
+
+==Definition==
+{| class="wikitable" style="float:right;"
+|-
+! Correlation !! Negative !! Positive
+|-
+| Weak || −0.5 to 0.0 || 0.0 to 0.5
+|-
+| Strong || −1.0 to −0.5|| 0.5 to 1.0
+|}
+
+The [[Pearson product-moment correlation coefficient|correlation coefficient]] ''ρ'', expressed as an [[autocorrelation function]] or [[cross-correlation function]], depends on the lag-time between the times being considered. Typically such functions, ''ρ''(''t''), decay to zero with increasing lag-time, but they can assume values across all levels of correlations: strong and weak, and positive and negative as in the table.
+
+The life-time of a correlation is defined as the length of time when the correlation coefficient is at the strong level.<ref name="Buda">Buda, Andrzej; Jarynowski, Andrzej (2010) ''Life-time of correlations and its applications vol.1'', p.9, [Głogów] : Wydawnictwo Niezależne</ref> The durability of correlation is determined by signal (the strong level of correlation is separated from weak and negative levels). The mean life-time of correlation could measure how the durability of correlation depends on the window width size (the window is the length of time series used to calculate correlation).
+
+==References==
+<References/>
+
+[[Category:Stochastic processes]]
+[[Category:Machine learning]]
+
+
+{{probability-stub}}

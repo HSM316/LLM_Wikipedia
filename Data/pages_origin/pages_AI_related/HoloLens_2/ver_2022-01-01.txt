@@ -1,0 +1,102 @@
+{{short description|2019 mixed reality smartglasses}}
+{{Infobox information appliance
+| name = Microsoft HoloLens 2
+| title = Microsoft HoloLens 2
+| aka = 
+| logo = [[File:Microsoft HoloLens logo 2015.png|150px]]
+| image = 
+| caption = HoloLens 2
+| developer = [[Microsoft]]
+| manufacturer = [[Microsoft]]
+| family = [[Windows 10]]
+| type = [[Mixed reality]] [[augmented reality]] [[head-mounted display]] [[smartglasses]]
+| generation = 2
+| release date = {{start date and age|2019|11|7}}
+| retail availability = Enterprise and developers
+| lifespan = 
+| price = $3500 USD, $125 USD per month Enterprise, $99 USD per month Developer
+| discontinued = 
+| units sold = 
+| units shipped = 
+| media = 
+| os = Windows 10 Holographic
+| power = 
+| soc = [[Qualcomm Snapdragon]] 850 Compute Platform
+| cpu = Qualcomm Snapdragon 850
+| memory = 
+| storage = 
+| memory card = 
+| display = See-through holographic lenses 2K 3:2, 1440x936<ref>{{cite web |title=Rendering - Mixed Reality |url=https://docs.microsoft.com/en-us/windows/mixed-reality/develop/platform-capabilities-and-apis/rendering |website=docs.microsoft.com|date=24 February 2019 |publisher=Microsoft |access-date=22 May 2021 |language=en-us}}</ref>
+| graphics = Adreno 630
+| sound = 
+| input = [[Eye tracking]], spatial tracking, [[hand tracking]].
+| controllers = 
+| camera = 8 MP 1080P30 video
+| touchpad = 
+| connectivity = Bluetooth LE 5.0, 802.11 2x2 [[WiFi]]
+| currentfw = 
+| platform = Universal Windows Platform
+| service = Windows Holographic Operating System, Edge, Dynamics 365 Remote Assist, Dynamics 365 Layout, Dynamics 365 Guides, 3D Viewer, OneDrive for Business
+| dimensions = 
+| weight = 566g
+| topgame = 
+| compatibility = 
+| predecessor = [[HoloLens]]
+| successor = 
+| related = 
+| website = {{URL|https://www.microsoft.com/en-us/hololens/}}
+}}
+'''Microsoft HoloLens 2''' is a pair of [[mixed reality]] [[smartglasses]] developed and manufactured by [[Microsoft]]. It is the successor to the pioneering [[Microsoft HoloLens]]. On February 24, 2019 the HoloLens 2 enterprise edition debuted as the first variant of the device, followed by a developer edition that was announced on May 2, 2019. It was subsequently released in limited numbers on November 7, 2019.
+
+== Description ==
+The HoloLens 2 was announced by lead HoloLens developer [[Alex Kipman]] on February&nbsp;24, 2019 at [[Mobile World Congress]] (MWC) in Barcelona, Spain.<ref>{{cite web|url=https://mashable.com/article/microsoft-hololens-2-mwc-2019 |title=Microsoft Hololens 2 ushers in the next generation of augmented reality|publisher=[[mashable.com]]|date=February 24, 2019|access-date=February 25, 2019}}</ref><ref>{{cite web|url=https://edition.cnn.com/2019/02/24/tech/microsoft-hololens-2/index.html|title=Microsoft's new $3,500 HoloLens 2 headset means business|publisher=[[cnn.com]]|date=February 24, 2019|access-date=February 25, 2019}}</ref> On May&nbsp;7, 2019 the HoloLens 2 was shown again at the [[Microsoft Build]] developer conference. There, it showcased an application created with the [[Unreal Engine|Unreal Game Engine]].<ref>{{Citation|title=Apollo 11 HoloLens 2 Demo {{!}} Microsoft Build 2019 {{!}} Unreal Engine|url=https://www.youtube.com/watch?v=r0ubiU3PRHw|language=en|access-date=2019-08-07}}</ref>
+
+The HoloLens 2 are combination [[waveguide]] and [[laser]]-based [[stereoscopic]] & full-color [[mixed reality]] [[smartglasses]] developed and manufactured jointly by [[Microsoft]] and [[MicroVision, Inc.]]<ref name=microvision-hololens-2>{{cite web |url=https://kguttag.com/2020/05/18/teardown-shows-microvision-inside-hololens-2/ |title=Teardown Shows Microvision Inside Hololens 2 |publisher=Karl Guttag |access-date=August 16, 2021 |date=18 May 2020}}</ref> in Redmond, Washington. It is the direct model successor to the pioneering [[Microsoft HoloLens]] and the technical successor to the MicroVision [[stereoscopic]] and [[monochromatic]] [[laser]]-based [[virtual retinal display]] (VRD) & [[helmet mounted display]] (HMD) prototype-in-the-running for the canceled [[RAH-66 Comanche]] stealth helicopter <ref name=microvision-comanche-HMD>{{cite web |url=https://www.davi.ws/avionics/TheAvionicsHandbook_Cap_6.pdf |title=Display Devices: RSD (Retinal Scanning Display) |publisher=CRC Press |access-date=August 16, 2021 |date=20 December 2000}}</ref> and the now-defunct monoscopic and [[monochromatic]] MicroVision [[Nomad Augmented Vision System]].<ref name=microvision-nomad-visual-augmentation-system>{{cite web |url=https://web.phys.ntu.edu.tw/lclab/level2/11-1-LCD%20Application-A1.pdf |title=Nomad - Microvision's Nomad - The How and the Why |website=National Taiwan University - Department of Physics |publisher=SID NW Chapter Meeting Microvision Presentation |access-date=August 16, 2021 |date=11 June 2003}}</ref> On February 24, 2019 the HoloLens 2 enterprise edition debuted as the first variant of the device, followed by a developer edition that was announced on May 2, 2019. It was subsequently released in limited numbers on November 7, 2019.  The US military's [[Integrated Visual Augmentation System]] is a further development of Hololens 2.
+
+On August 20, 2019, at the [[Hot Chips|Hot Chips 31]] symposium Microsoft presented their Holographic Processing Unit (HPU) 2.0 custom design for the HoloLens 2 with the following features:<ref name=":0">{{Cite web|url=https://www.anandtech.com/show/14775/hot-chips-31-live-blogs-microsoft-hololens-20-silicon|title=Hot Chips 31 Live Blogs: Microsoft Hololens 2.0 Silicon|last=Cutress|first=Dr Ian|website=www.anandtech.com|access-date=2019-08-21}}</ref>
+
+* 7x SIMD Fixed Point (SFP) for 2D processing
+* 6x Floating Vector Processor (FVP) for 3D processing
+* >1 TOP of programmable compute
+* 125Mb [[Shadow random access memory|SRAM]]
+* 79mm<sup>2</sup> die size and 2 billion transistors
+* [[TSMC]] 16FF+ process
+* [[PCIe]] 2.0 x1 at 100 MB/s bandwidth to Snapdragon 850
+
+On August 29, 2019, at the World Artificial Intelligence Conference in Shanghai, Microsoft's Executive Vice President, Harry Shum, revealed that HoloLens 2 would go on sale in September 2019.<ref>{{Cite news|url=https://www.reuters.com/article/us-china-tech-microsoft-idUSKCN1VJ07Z|title=Microsoft says new augmented reality headset to go on sale in...|date=2019-08-29|work=Reuters|access-date=2019-08-29|language=en}}</ref> The product started shipping on November&nbsp;7, 2019.<ref>{{Cite web|url=https://www.theverge.com/2019/11/7/20946589/microsoft-hololens-2-mixed-reality-headset-preorder-shipping-price-upgrade|title=The Microsoft HoloLens 2 ships today for $3,500|last=Robertson|first=Adi|date=2019-11-07|website=The Verge|language=en|access-date=2019-11-19}}</ref>
+
+== Improvements over the previous model ==
+Microsoft highlighted three main improvements made to the device: immersiveness, ergonomics and business friendliness.<ref>{{cite web|url=https://www.microsoft.com/en-us/hololens/buy|title=HoloLens 2 pricing and preorder|publisher=[[microsoft.com]]|access-date=February 25, 2019}}</ref><ref>{{cite web |title=New HoloLens 2 gives Microsoft the edge in the next generation of computing |url=https://news.microsoft.com/innovation-stories/hololens-2/ |website=Innovation Stories at Microsoft |date=24 February 2019 |publisher=Microsoft |access-date=25 February 2019}}</ref>
+
+HoloLens 2 has a diagonal [[Field of view (image processing)|field of view]] of 52 degrees, improving over the 34 degree field of view (FOV) of the first edition of HoloLens, although Karl Guttag states that it offers less than 20 pixels per degree of resolution<ref>{{cite web|title=Hololens 2 Display Evaluation (Part 2: Comparison to Hololens 1)|url=https://kguttag.com/2020/07/08/hololens-2-display-evaluation-part-2-comparison-to-hololens-1/|website=KGOnTech|date=8 July 2020|publisher=KGOnTech|access-date=21 May 2021}}</ref> (despite Microsoft's claim that it would keep a resolution of 47 pixels per degree<ref>{{Cite web|url=https://twitter.com/akipman/status/1100069645661495298|title=No secrets... - The first HoloLens had a 34-degree diagonal FOV; the new headset's field of view … 52-degree diagonal field of view. More than 2x is area and most of the growth is vertical (no longer 16:9)|last=Kipman|first=Alex|date=2019-02-25|website=@akipman|language=en|access-date=2019-03-01}}</ref><ref>{{Cite news|url=https://www.wired.com/story/microsoft-hololens-2-headset/|title=The HoloLens 2 Puts a Full-Fledged Computer on Your Face|last=Goode|first=Lauren|date=2019-02-24|work=Wired|access-date=2019-03-01|issn=1059-1028}}</ref>).
+
+Holographic Processing Unit (HPU) 2.0 improvements compared to the HPU 1.0:<ref name=":0" />
+
+* 1.7x compute
+* 2x effective DRAM bandwidth
+* Improved hologram stability
+* New hardware accelerated workloads such as eye tracking, fully articulated hand tracking, semantic labeling, spatial audio and JBL filter
+
+== HoloLens 2 emulation ==
+The HoloLens 2 Emulator was made available to developers on April 17, 2019.<ref>{{Cite web|url=http://dotnetbyexample.blogspot.com/2019/04/first-look-at-hololens-2-emulator.html|title=First look at the HoloLens 2 emulator|last=Schaik|first=Joost Van|date=2019-04-17|website=Dotnet by Example|access-date=2019-08-07}}</ref> This [[emulator]] allows developers to create applications for the HoloLens 2 before the device ships.
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{YouTube|id=uIHPPtPBgHk|title=HoloLens demo at Mobile World Congress}}
+*[https://docs.microsoft.com/en-us/windows/mixed-reality/using-the-hololens-emulator Microsoft Documentation for HoloLens Emulator]
+
+{{Microsoft|state=autocollapse}}
+{{Mixed reality|state=autocollapse}}
+
+[[Category:Augmented reality]]
+[[Category:Computing input devices]]
+[[Category:Gesture recognition]]
+[[Category:Head-mounted displays]]
+[[Category:History of human–computer interaction]]
+[[Category:Microphones]]
+[[Category:Microsoft peripherals]]
+[[Category:Mixed reality]]
+[[Category:Wearable devices]]
+[[Category:Windows 10]]

@@ -1,0 +1,27 @@
+Automated machine learning (AutoML) is the process of automating the tasks of applying machine learning to real-world problems. AutoML covers the complete pipeline from the raw dataset to the deployable machine learning model. AutoML was proposed as an artificial intelligence-based solution to the growing challenge of applying machine learning. The high degree of automation in AutoML aims to allows non-experts to make use of machine learning models and techniques without requiring them to become experts in machine learning. Automating the process of applying machine learning end-to-end additionally offers the advantages of producing simpler solutions, faster creation of those solutions, and models that often outperform hand-designed models.
+
+ Comparison to the standard approach 
+In a typical machine learning application, practitioners have a set of input data points to be used for training. The raw data may not be in a form that all algorithms can be applied to it. To make the data amenable for machine learning, an expert may have to apply appropriate data pre-processing, feature engineering, feature extraction, and feature selection methods. After these steps, practitioners must then perform algorithm selection and hyperparameter optimization to maximize the predictive performance of their model. Each of these steps may be challenging, resulting in significant hurdles to using machine learning.
+
+AutoML wants to simplify these steps for non-experts.
+
+Targets of automation
+Automated machine learning can target various stages of the machine learning process.  Steps to automate are:
+Data preparation and ingestion (from raw data and miscellaneous formats)
+ Column type detection; e.g., boolean, discrete numerical, continuous numerical, or text
+ Column intent detection; e.g., target/label, stratification field, numerical feature, categorical text feature, or free text feature
+ Task detection; e.g., binary classification, regression, clustering, or ranking
+Feature engineering
+Feature selection
+ Feature extraction
+ Meta learning and transfer learning
+ Detection and handling of skewed data and/or missing values
+Model selection
+ Hyperparameter optimization of the learning algorithm and featurization
+ Pipeline selection under time, memory, and complexity constraints
+ Selection of evaluation metrics and validation procedures
+ Problem checking
+ Leakage detection
+ Misconfiguration detection
+ Analysis of obtained results 
+ Creating user interfaces and visualizations 

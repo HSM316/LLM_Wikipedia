@@ -1,0 +1,80 @@
+{{Infobox website
+| name = InciWeb
+| logo = 
+| logo_size = 
+| logo_alt = 
+| logo_caption = 
+| screenshot = 
+| screenshot_size = 
+| screenshot_alt = 
+| collapsible = 
+| collapsetext = 
+| background = 
+| caption = 
+| company_type = all-[[risk]] incident web information management system
+| area_served = [[United States]]
+| industry =  web information management system
+| url = {{URL|inciweb.wildfire.gov}}
+| launch_date = 2004
+}}
+'''InciWeb''' is an interagency all-[[risk]] incident web information management system provided by the [[United States Forest Service]] released in 2004.<ref>[http://www.alexa.com/siteinfo/http%3A%2F%2Finciweb.nwcg.gov] {{Webarchive|url=https://web.archive.org/web/20160305055438/http://www.alexa.com/siteinfo/http:%2F%2Finciweb.nwcg.gov |date=2016-03-05 }}. [[Alexa Internet]].</ref>  It was originally developed for [[wildfire|wildland fire]] emergencies, but can be also used for other [[emergency]] incidents ([[natural disaster]]s, such as [[earthquake]]s, [[flood]]s, [[hurricane]]s, and [[tornado]]es).<ref>[http://gacc.nifc.gov/admin/about_us/about_us.htm About Us], [[National Interagency Fire Center|National Geographic Area Coordination Center]]s (GACC).</ref>
+
+==Introduction==
+[[Image:2015 Cajon Pass wildfire (North Fire).jpeg|300px|thumb|right| InciWeb photo of the 2015 [[North Fire]] in California]]
+It was developed with two primary missions:
+
+* 1. Provide the public a single source of incident related information 
+* 2. Provide a standardized reporting tool for the [[Public relations|Public Affairs]] community<ref>[https://inciweb.wildfire.gov/about/ About this Site]. InciWeb. Retrieved 2009-08-30.</ref>
+
+Official announcements include evacuations, road closures, news releases, maps, photographs, and basic info and current situation about the incident.
+
+Incident information can be accessed by:
+* web browser at https://inciweb.wildfire.gov/
+* [[Twitter]]<ref>[https://twitter.com/inciweb inciweb on Twitter]</ref>
+* [[RSS]] web feed
+
+==Technical ==
+The original [[Application software|application]] was hosted at the [[United States Forest Service]] - Wildland Fire Training and Conference Center, at [[McClellan Airfield]], [[California]], comprising three [[Server (computing)|server]]s:
+*[[Database server]]
+*[[Application server|Administrative server]]
+*[[Load balancing (computing)|Load balancer]] for the public content which routes traffic to a pool of eight servers.
+
+[[Web traffic]] averages 2 million plus [[Hit (internet)|hits]] daily during the fire season with the ability to handle 3.5 million hits.
+
+The servers were moved to the National information Technology Center (NITC),<ref>[http://www.ocio.usda.gov/nitc/index.html Enterprise IT Solutions: About NITC]. Office of the Chief Information Officer, [[United States Department of Agriculture]].</ref> [[Kansas City, Missouri]] on July 16, 2008, along with the release of version 2.0;<ref>[http://www.myfirecommunity.net/Neighborhood.aspx?ID=385 Public home page for InciWeb] {{Webarchive|url=https://web.archive.org/web/20090916064304/http://www.myfirecommunity.net/Neighborhood.aspx?ID=385 |date=2009-09-16 }}. MyFireCommunity.Net - Neighborhood. The professional collaboration site for wildland fire practitioners.</ref> the current version is 2.2.
+
+==Availability issues==
+InciWeb was having technical difficulties due to the high volume of Internet users trying to access the site during the September–October 2006 [[Day Fire]]<ref>[http://www.emergencity.com/case-study.shtml Case Study] {{Webarchive|url=https://web.archive.org/web/20090916054236/http://www.emergencity.com/case-study.shtml |date=2009-09-16 }}, Emergencity.</ref> and the [[Summer 2008 California wildfires]].<ref>[http://westinstenv.org/firetrack/2008/06/28/inciweb-problems-are-bull/ InciWeb Problems Are Bull…]. June–July 2008. W.I.S.E. Fire Tracking, Western Institute for Study of the Environment. Retrieved 2009-09-02.</ref>
+
+==Participating agencies==
+*[[United States Forest Service]]
+*[[Bureau of Land Management]]
+*[[Bureau of Indian Affairs]]
+*[[Fish and Wildlife Service]]
+*[[National Park Service]]
+*[[National Oceanic & Atmospheric Administration]]
+*[[Department of the Interior]] Office of Aircraft Services
+*[[National Association of State Foresters]]
+*[[United States Fire Administration]]
+
+These same agencies are also in the [[National Interagency Fire Center]].
+
+==See also==
+*[[Incident Command System]]
+*[[Incident management]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://inciweb.wildfire.gov/ Inciweb official website]
+* Judith L. Downing, Ronald W. Hodgson, Jonathan G. Taylor, and Shana C. Gillette. Fire Information for Communities at Risk in Interface Wildfires: Lessons Learned From the 2003 Southern California Megafires. pages 135-152 in [http://www.fs.fed.us/psw/publications/documents/psw_gtr209/psw_gtr209.pdf Fire Social Science Research From the Pacific Southwest Research Station: Studies Supported by National Fire Plan Funds]. August 2008. [[United States Forest Service]].  InciWeb is mentioned on page 139, footnote 11.
+
+[[Category:2004 establishments in the United States]]
+[[Category:Wildfires in the United States]]
+[[Category:Web applications]]
+[[Category:Incident management]]
+[[Category:Disaster preparedness in the United States]]
+[[Category:Firefighting in the United States]]
+[[Category:Management systems]]
+[[Category:Emergency management software]]

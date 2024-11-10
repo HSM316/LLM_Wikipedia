@@ -1,0 +1,135 @@
+{{Short description|Statistical model for pairwise comparisons}}
+The '''Bradley–Terry model''' is a [[probability theory|probability model]] for the outcome of pairwise comparisons between individuals, teams, or objects. Given a pair of individuals {{mvar|i}} and {{mvar|j}} drawn from some [[Population (statistics)|population]], it estimates the probability that the [[pairwise comparison]] {{math|''i'' > ''j''}} turns out true, as
+
+{{NumBlk|:|<math>P(i > j) = \frac{p_i}{p_i + p_j}</math>|{{EquationRef|1}}}}
+
+where {{mvar|p<sub>i</sub>}} is a positive [[real number|real-valued]] score assigned to individual {{mvar|i}}. The comparison {{math|''i'' > ''j''}} can be read as "{{mvar|i}} is preferred to {{mvar|j}}", "{{mvar|i}} ranks higher than {{mvar|j}}", or "{{mvar|i}} beats {{mvar|j}}", depending on the application.
+
+For example, {{mvar|p<sub>i</sub>}} might represent the skill of a team in a sports tournament and <math>P(i>j)</math> the probability that {{mvar|i}} wins a game against {{mvar|j}}.<ref name="hunter" /><ref name="agresti" /> Or {{mvar|p<sub>i</sub>}} might represent the quality or desirability of a commercial product and <math>P(i>j)</math> the probability that a consumer will prefer product {{mvar|i}} over product {{mvar|j}}.
+
+The Bradley–Terry model can be used in the forward direction to predict outcomes, as described, but is more commonly used in reverse to infer the scores {{mvar|p<sub>i</sub>}} given an observed set of outcomes.<ref name="agresti" /> In this type of application {{mvar|p<sub>i</sub>}} represents some measure of the strength or quality of <math>i</math> and the model lets us estimate the strengths from a series of pairwise comparisons.  In a survey of wine preferences, for instance, it might be difficult for respondents to give a complete ranking of a large set of wines, but relatively easy for them to compare sample pairs of wines and say which they feel is better.  Based on a set of such pairwise comparisons, the Bradley–Terry model can then be used to derive a full ranking of the wines.
+
+Once the values of the scores {{mvar|p<sub>i</sub>}} have been calculated, the model can then also be used in the forward direction, for instance to predict the likely outcome of comparisons that have not yet actually occurred.  In the wine survey example, for instance, one could calculate the probability that someone will prefer wine <math>i</math> over wine <math>j</math>, even if no one in the survey directly compared that particular pair.
+
+== History and applications ==
+The model is named after [[Ralph A. Bradley]] and Milton E. Terry,<ref>{{cite encyclopedia |author=E.E.M. van Berkum |title=Bradley-Terry model |encyclopedia=Encyclopedia of Mathematics |url=http://www.encyclopediaofmath.org/index.php?title=Bradley-Terry_model&oldid=22181 |accessdate=18 November 2014}}</ref> who presented it in 1952,<ref>{{Cite journal | doi = 10.2307/2334029| jstor = 2334029| title = Rank Analysis of Incomplete Block Designs: I. The Method of Paired Comparisons| journal = Biometrika| volume = 39| issue = 3/4| pages = 324–345| year = 1952| last1 = Bradley | first1 = Ralph Allan | last2 = Terry | first2 = Milton E. }}</ref> although it had already been studied by [[Ernst Zermelo]] in the 1920s.<ref name="hunter">{{Cite journal| first = David R. | last = Hunter| title = MM algorithms for generalized Bradley–Terry models| journal = The Annals of Statistics| volume = 32 | issue = 1| year = 2004| pages = 384–406| jstor = 3448514| url = http://projecteuclid.org/euclid.aos/1079120141| citeseerx = 10.1.1.110.7878| doi=10.1214/aos/1079120141}}</ref><ref name="zermelo">{{cite journal |last=Zermelo |first=Ernst |title=Die Berechnung der Turnier-Ergebnisse als ein Maximumproblem der Wahrscheinlichkeitsrechnung |journal=[[Mathematische Zeitschrift]] |volume=29 |number=1 |year=1929 |pages=436–460|doi=10.1007/BF01180541|s2cid=122877703 }}</ref><ref>{{citation |title=Ernst Zermelo: An Approach to His Life and Work |author=Heinz-Dieter Ebbinghaus |year=2007 |isbn=9783540495536 |pages=268–269|publisher=Springer }}</ref> Applications of the model include the ranking of competitors in sports, chess, and other competitions,<ref>{{cite journal |last1=Shev |first1=A.| last2=Fujii| first2=K. |last3=Hsieh |first3=F. |last4=McCowan |first4=B. |title=Systemic testing on Bradley-Terry model against nonlinear ranking hierarchy |journal=[[PLOS One]] |volume=9 |number=12 |year=2014 |pages=e115367|doi=10.1371/journal.pone.0115367 |pmid=25531899 |pmc=4274013 |doi-access=free }}</ref> the ranking of products in paired comparison surveys of [[Choice modeling|consumer choice]], analysis of [[Dominance hierarchy|dominance hierarchies]] within animal and human communities,<ref>{{cite journal |last1=Boyd |first1=Robert| last2=Silk| first2=Joan B. |author2-link=Joan Silk |title=A method for assigning cardinal dominance ranks |journal=[[Animal Behaviour]] |volume=31 |number=1 |year=1983 |pages=45–58|doi=10.1016/S0003-3472(83)80172-9 |s2cid=53178779 }}</ref> ranking of [[scientific journal|journals]], and estimation of the relevance of documents in [[Learning to rank|machine-learned]] [[search engine]]s.<ref>{{cite conference |last1=Szummer |first1=Martin |first2=Emine |last2=Yilmaz |title=Semi-supervised learning to rank with preference regularization |conference=CIKM |year=2011 |url=http://research.microsoft.com/pubs/154323/SzummerYilmaz-semisupervised-ranking-cikm11.pdf}}</ref>
+
+== Definition ==
+The Bradley–Terry model can be parametrized in various ways. Equation ({{EquationNote|1}}) is perhaps the most common, but there are a number of others.  Bradley and Terry themselves defined exponential score functions <math>p_i = e^{\beta_i}</math>, so that<ref name="agresti">{{cite book |last=Agresti |first=Alan |title=Categorical Data Analysis |publisher=John Wiley & Sons |year=2014 |pages=436–439}}</ref>
+
+:<math>P(i > j) = \frac{e^{\beta_i}}{e^{\beta_i} + e^{\beta_j}}.</math>
+
+Alternatively, one can use a [[logit]], such that<ref name="hunter" />
+
+:<math>\operatorname{logit}(P(i > j)) = \log\left(\frac{P(i > j)}{1 - P(i > j)}\right) = \log\left(\frac{P(i > j)}{P(j > i)}\right) = \beta_i - \beta_j</math>.
+
+This formulation highlights the similarity between the Bradley–Terry model and [[logistic regression]].  Both employ essentially the same model but in different ways.  In logistic regression one typically knows the parameters <math>\beta_i</math> and attempts to infer the functional form of <math>P(i>j)</math>; in ranking under the Bradley–Terry model one knows the functional form and attempts to infer the parameters.
+
+=== Estimating the parameters ===
+The most common application of the Bradley–Terry model is to infer the values of the parameters <math>p_i</math> given an observed set of outcomes <math>i>j</math>, such as wins and losses in a competition.  The simplest way to estimate the parameters is by [[maximum likelihood|maximum likelihood estimation]], i.e., by maximizing the [[likelihood]] of the observed outcomes given the model and parameter values.
+
+Suppose we know the outcomes of a set of pairwise competitions between a certain group of individuals, and let {{mvar|w<sub>ij</sub>}} be the number of times individual {{mvar|i}} beats individual {{mvar|j}}.  Then the likelihood of this set of outcomes within the Bradley–Terry model is <math>\prod_{ij} [P(i>j)]^{w_{ij}}</math> and the [[log-likelihood]] of the parameter vector {{math|'''p''' {{=}} [''p''<sub>1</sub>, ..., ''p<sub>n</sub>'']}} is<ref name="hunter" />
+
+:<math>L(\mathbf{p}) = \ln \prod_{ij} [P(i>j)]^{w_{ij}} = \sum_{i=1}^n \sum_{j=1}^n \ln \left(\frac{p_i}{p_i+p_j}\right)^{w_{ij}} = \sum_{ij} w_{ij} \ln \frac{p_i}{p_i+p_j} = \sum_{ij} [w_{ij} \ln p_i - w_{ij} \ln(p_i + p_j)].</math>
+
+Zermelo<ref name="zermelo"></ref> showed that this expression has only a single maximum, which can be found by differentiating with respect to <math>p_i</math> and setting the result to zero, which leads to
+
+{{NumBlk|:|<math>p_i = \frac{\sum_{j} w_{ij}}{\sum_{j} (w_{ij}+w_{ji})/ (p_i+p_j)}.</math>|{{EquationRef|2}}}}
+
+This equation has no known closed-form solution, but Zermelo suggested solving it by simple iteration.  Starting from any convenient set of (positive) initial values for the <math>p_i</math>, one iteratively performs the update
+
+{{NumBlk|:|<math>p_i' = \frac{\sum_{j} w_{ij}}{\sum_{j} (w_{ij}+w_{ji})/ (p_i+p_j)}</math>|{{EquationRef|3}}}}
+
+for all {{mvar|i}} in turn.  The resulting parameters are arbitrary up to an overall multiplicative constant, so after computing all of the new values they should be normalized by dividing by their geometric mean thus:
+
+{{NumBlk|:|<math>p_i \leftarrow \frac{p'_i}{\left(\prod_{j=1}^n p'_j\right)^{1/n}}.</math>|{{EquationRef|4}}}}
+
+This estimation procedure improves the log-likelihood on every iteration, and is guaranteed to eventually reach the unique maximum.<ref name="zermelo" /><ref>{{cite journal |last=Ford, Jr. |first=L. R. |title=Solution of a ranking problem from binary comparisons |journal=[[American Mathematical Monthly]] |volume=64 |number=8 |year=1957 |pages=28–33 |doi=10.1080/00029890.1957.11989117 }}</ref>  It is, however, slow to converge.<ref name="hunter" /><ref>{{cite journal |last=Dykstra, Jr. |first=Otto |title=A note on the rank analysis of incomplete block designs |journal=[[Biometrics]] |volume=12 |year=1956 |pages=301–306|doi=10.2307/2334029 |jstor=2334029 }}</ref>  More recently it has been pointed out<ref name="newman">{{cite journal |last=Newman |first=M. E. J. |title=Efficient computation of rankings from pairwise comparisons |journal=[[Journal of Machine Learning Research]] |volume=24 |number=238 |year=2023 |pages=1–25 |doi= |url=https://jmlr.org/papers/v24/22-1086.html }}</ref> that equation ({{EquationNote|2}}) can also be rearranged as
+
+:<math>p_i = \frac{\sum_{j} w_{ij} p_j/(p_i+p_j)}{\sum_{j} w_{ji}/(p_i+p_j)},</math>
+
+which can be solved by iterating
+
+{{NumBlk|:|<math>p_i' = \frac{\sum_{j} w_{ij} p_j/(p_i+p_j)}{\sum_{j} w_{ji}/(p_i+p_j)},</math>|{{EquationRef|5}}}}
+
+again normalizing after every round of updates using equation ({{EquationNote|4}}). This iteration gives identical results to the one in ({{EquationNote|3}}) but converges much faster and hence is normally preferred over ({{EquationNote|3}}).<ref name="newman"></ref>
+
+
+==== Worked example of solution procedure ====
+Consider a sporting competition between four teams, who play a total of 22 games among themselves.  Each team's wins are given in the rows of the table below and the opponents are given as the columns:
+{| class="wikitable"
+|+Results
+!
+!A
+!B
+!C
+!D
+|-
+|'''A'''
+| -
+|2
+|0
+|1
+|-
+|'''B'''
+|3
+| -
+|5
+|0
+|-
+|'''C'''
+|0
+|3
+| -
+|1
+|-
+|'''D'''
+|4
+|0
+|3
+| -
+|}
+For example, Team A has beat Team B twice and lost to team B three times; not played team C at all; won once and lost four times against team D. 
+
+We would like to estimate the relative strengths of the teams, which we do by calculating the parameters <math>p_i</math>, with higher parameters indicating greater prowess. To do this, we initialize the four entries in the parameter vector {{math|'''p'''}} arbitrarily, for example assigning the value 1 to each team: {{math|[1, 1, 1, 1]}}.  Then we apply equation ({{EquationNote|5}}) to update <math>p_1</math>, which gives
+
+<math>p_1 = \frac{\sum_{j(\ne 1)} w_{1j} p_j/(p_1+p_j)}{\sum_{j(\ne 1)} w_{j1}/(p_1+p_j)} = 
+\frac{2\frac{1}{1+1} + 0\frac{1}{1+1} + 1\frac{1}{1+1}}{3\frac{1}{1+1}+0\frac{1}{1+1} + 4\frac{1}{1+1}} = 0.429.</math>
+
+Now, we apply ({{EquationNote|5}}) again to update <math>p_2</math>, making sure to use the new value of <math>p_1</math> that we just calculated:
+
+<math>p_2 = \frac{\sum_{j(\ne 2)} w_{2j} p_j/(p_2+p_j)}{\sum_{j(\ne 2)} w_{j2}/(p_2+p_j)} = 
+\frac{3\frac{0.429}{1+0.429} + 5\frac{1}{1+1} + 0\frac{1}{1+1}}{2\frac{1}{1+0.429}+3\frac{1}{1+1} + 0\frac{1}{1+1}} = 1.172</math>
+
+Similarly for <math>p_3</math> and <math>p_4</math> we get
+
+<math>p_3 = \frac{\sum_{j(\ne 3)} w_{3j} p_j/(p_3+p_j)}{\sum_{j(\ne 3)} w_{j3}/(p_3+p_j)} = 
+\frac{0\frac{0.429}{1+0.429} + 3\frac{1.172}{1+1.172} + 1\frac{1}{1+1}}{0\frac{1}{1+0.429}+5\frac{1}{1+1.172} + 3\frac{1}{1+1}} = 0.557</math>
+
+<math>p_4 = \frac{\sum_{j(\ne 4)} w_{4j} p_j/(p_4+p_j)}{\sum_{j(\ne 4)} w_{j4}/(p_4+p_j)} = 
+\frac{4\frac{0.429}{1+0.429} + 0\frac{1.172}{1+1.172} + 3\frac{0.557}{1+0.557}}{1\frac{1}{1+0.429}+0\frac{1}{1+1.172} + 1\frac{1}{1+0.557}} = 1.694</math>
+
+Then we normalize all the parameters by dividing by their geometric mean <math>(0.429\times1.172\times0.557\times1.694)^{1/4} = 0.830</math> to get the estimated parameters {{math|'''p''' {{=}} [0.516, 1.413, 0.672, 2.041]}}.
+
+To improve the estimates further, we repeat the process, using the new {{math|'''p'''}} values.  For example,
+
+<math>p_1 = 
+\frac{2\frac{1.413}{0.516+1.413} + 0\frac{0.672}{0.516+0.672} + 1\frac{2.041}{0.516+2.041}}{3\frac{1}{0.516+1.413}+0\frac{1}{0.516+0.672} + 4\frac{1}{0.516+2.041}} = 0.725</math>.
+
+Repeating this process for the remaining parameters and normalizing, we get {{math|'''p''' {{=}} [0.677, 1.034, 0.624, 2.287]}}.  Repeating a further 10 times gives rapid convergence toward a final solution of {{math|'''p''' {{=}} [0.640, 1.043, 0.660, 2.270]}}.  This indicates that Team D is the strongest and Team B the second strongest, while Teams A and C are nearly equal in strength but below Teams B and D.  In this way the Bradley-Terry model lets us infer the relationship between all four teams, even though not all teams have played each other.
+
+== See also ==
+*[[Ordinal regression]]
+*[[Rasch model]]
+*[[Scale (social sciences)]]
+*[[Elo rating system]]
+*[[Thurstonian model]]
+
+== References ==
+{{reflist|30em}}
+
+{{DEFAULTSORT:Bradley-Terry model}}
+[[Category:Machine learning]]
+[[Category:Statistical models]]
+[[Category:Logistic regression]]
+[[Category:Regression models]]

@@ -1,0 +1,19 @@
+{{Short description|Machine-readable description of an RDF data set}}
+{{Other uses|Void (disambiguation)}}
+{{Technical|date=November 2008}}
+
+The '''Vocabulary of Interlinked Datasets''' ('''VoID''') is an [[Resource Description Framework|RDF]] vocabulary, and a set of instructions, that enables the discovery and usage of [[Linked Data|linked data]] sets.<ref name="Spec2011">{{cite web|title=Describing Linked Datasets with the VoID Vocabulary|url=https://www.w3.org/TR/void/|website=www.w3.org|publisher=W3C|access-date=22 September 2017}}</ref> A linked dataset is a collection of data, published and maintained by a single provider, available as RDF on the Web, where at least some of the resources in the dataset are identified by dereferencable URIs. VoID is used to provide metadata on RDF datasets to facilitate query processing on a [[graph (discrete mathematics)|graph]] of interlinked datasets in the [[semantic web]].<ref name="Akar2012">{{cite web|last1=Akar|first1=Ziya|last2=Halaç|first2=Tayfun Gökmen|last3=Dikenelli|first3=Oguz|last4=Ekinci|first4=Erdem Eser|title=Querying the Web of Interlinked Datasets using VOID Descriptions|url=http://citeseerx.ist.psu.edu/viewdoc/similar?doi=10.1.1.357.4507&type=ab|website=CiteSeer|publisher=Linked Data on the Web (LDOW2012)|access-date=22 September 2017}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://semanticweb.org/wiki/VoID VoID at Semantic Web Wiki]
+
+{{Semantic Web}}
+
+{{DEFAULTSORT:Void}}
+[[Category:Metadata]]
+[[Category:Semantic Web]]
+[[Category:Knowledge representation]]
+[[Category:XML-based standards]]

@@ -1,0 +1,39 @@
+{{Infobox company
+|name             = Matroid
+| logo = Matroid Logo.png
+|founder          = [[Reza Zadeh]]
+|area_served      =
+|industry         = [[Software|Computer software]]
+|num_employees    =
+|location_city    = [[Palo Alto, California]]
+|location_country = 
+|foundation       = {{Start date|2016}}
+|homepage         = {{URL|http://www.matroid.com|matroid.com}}
+}}
+
+'''Matroid''' is a [[Computer vision|Computer Vision]] company that gives typical computer users the ability to scan video. Matroid was founded in 2016 in Palo Alto, California.
+
+== Product ==
+The Matroid Product is a studio for creating and using detectors that scan video for faces, actions, places, and other objects. Example applications include determining when former President Barack Obama appears on TV or how often a man holding a gun is recorded in security footage. Users can create custom detectors to find specific people or objects, or they can pick from a library of pre-programmed detectors designed by other users of the platform.<ref name=":0">{{Cite news|url=https://www.bloomberg.com/news/articles/2017-03-25/this-ai-company-can-tell-you-what-and-who-appears-in-your-videos|title=This AI Company Can Tell You What and Who Appears in Your Videos|date=2017-03-25|work=Bloomberg.com|access-date=2017-04-13}}</ref><ref name=":1">{{Cite news|url=https://www.wsj.com/articles/a-lifes-ambition-matroid-launches-1490614201|title=A Life’s Ambition, Matroid Launches|last=Martin|first=Scott|date=2017-03-27|work=Wall Street Journal|access-date=2017-04-13|issn=0099-9660}}</ref><ref name=":2">{{Cite web|url=https://techcrunch.com/2017/03/25/matroid-can-watch-videos-and-detect-anything-within-them/|title=Matroid can watch videos and detect anything within them|last=Mannes|first=John|website=TechCrunch|access-date=2017-04-13}}</ref><ref>{{Cite news|url=https://www.fastcompany.com/3069264/congress-fbi-face-recognition-real-time-street-lineup|title=The Vast, Secretive Face Database That Could Instantly ID You In A Crowd|date=2017-03-30|work=Fast Company|access-date=2017-04-23|language=en-US}}</ref>
+
+Matroid is initially focused on analyzing television appearances and scanning surveillance video. In the first case, a firm may want to track which political candidates got more TV time or which brand of car appears more often on a particular show or television network.
+
+Product features include a video player with computer at its core, a tight feedback loop for detector iteration, an extensive API, stream monitoring, and work-sharing amongst users in a library of public detectors. [[File:Scaled Machine Learning Conference 2017.jpg|thumb|Microsoft and Google presented at the 2017 Scaled Machine Learning Conference held at Stanford University.]]
+
+== Scaled Machine Learning Conference ==
+Matroid holds the Scaled Machine Learning Conference (ScaledML) every year. The previous two conferences were held on the [[Stanford University]] campus.<ref>{{Cite web|url=http://scaledml.org|title=Scaled Machine Learning|website=scaledml.org|access-date=2017-04-13}}</ref>
+
+At ScaledML 2016, [[Microsoft]] announced "Open Mind", Microsoft's [[Microsoft Visual Studio|Visual Studio]]-like suite for machine learning.<ref>{{Cite news|url=http://www.zdnet.com/article/open-mind-microsofts-visual-studio-like-suite-for-machine-learning/|title=Open Mind: Microsoft's Visual Studio-like suite for machine learning {{!}} ZDNet|last=Foley|first=Mary Jo|work=ZDNet|access-date=2017-04-13|language=en}}</ref><ref>{{Cite news|url=https://www.artificialintelligenceonline.com/16423/microsofts-open-mind-studio-is-the-visual-studio-for-machine-learning/|title=Microsoft's Open Mind Studio is the "Visual Studio" for Machine Learning - Artificial Intelligence Online|date=2016-08-17|work=Artificial Intelligence Online|access-date=2017-04-13|language=en-US}}</ref><ref>{{Cite news|url=https://www.onmsft.com/news/microsofts-qi-lu-reveals-open-mind-visual-studio-machine-learning|title=Microsoft’s Qi Lu reveals Open Mind, the "Visual Studio for Machine Learning" {{!}} On MSFT|date=2016-08-17|work=On MSFT|access-date=2017-04-13|language=en}}</ref> At the 2017 conference, Google announced the Tensor Processor Unit to speed up machine learning operations in Google Cloud Platform.<ref>{{Cite web|url=https://www.matroid.com/scaledml/2017/jeff.pdf|title=Scaling Machine Learning with TensorFlow|last=Dean|first=Jeff|date=|website=|archive-url=|archive-date=|access-date=}}</ref>
+
+== Funding ==
+Matroid raised $3.5 million in funding from [[New Enterprise Associates]] in 2016, and a further $10 million from [[Intel]] in 2017.<ref name=":1"/><ref>{{Cite news|url=https://techcrunch.com/2017/09/18/matroid-picks-up-10m-series-a-to-automate-video-stream-monitoring/|title=Matroid picks up $10M Series A to automate video stream monitoring|last=Mannes|first=John|work=TechCrunch|access-date=2017-09-22|language=en}}</ref><ref>{{Cite news|url=http://www.outlookbusiness.com/specials/silicon-valleys-hottest-innovations_2016/if-you-cant-impose-self-discipline-you-cant-be-better-off-as-a-private-co-3244|title=If you can’t impose self-discipline, you can’t be better off as a private company|archive-url=|archive-date=}}</ref>
+
+== Open Source ==
+Matroid uses [[TensorFlow]] and [[Kubernetes]]. As an active member of the TensorFlow open-source community, Matroid has held TensorFlow tutorials<ref>{{Cite web|url=http://scaledml.org/index2016.html|title=Scaled Machine Learning|website=scaledml.org|access-date=2017-04-13}}</ref> and is currently writing a book on TensorFlow for [[Deep learning|Deep Learning]] with [[O'Reilly Media]].<ref>{{Cite web|url=http://shop.oreilly.com/product/0636920065869.do|title=TensorFlow for Deep Learning|last=Ramsundar|first=Bharath|date=|website=|publisher=O'Reilly Media|archive-url=|archive-date=|access-date=}}</ref> For its contributions to open-source machine learning, Matroid was awarded a best paper award at [[KDD Conference|KDD 2016]].<ref>{{Cite web|url=http://www.kdd.org/awards/view/2016-sigkdd-best-paper-award-winners|title=SIGKDD Awards : 2016 SIGKDD Best Paper Award Winners|last=News|first=SIGKDD|website=www.kdd.org|language=en-US|access-date=2017-04-13}}</ref>
+
+==References==
+
+{{reflist|30em}}
+
+[[Category:Software companies based in California]]
+[[Category:Technology companies established in 2016]]

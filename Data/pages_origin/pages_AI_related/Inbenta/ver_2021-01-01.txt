@@ -1,0 +1,36 @@
+{{More citations needed|date=November 2019}}{{Orphan|date=December 2018}}
+
+{{Infobox company
+| name = Inbenta
+| logo = Inbenta logo.png
+| type = [[Web search engine|AI Chatbots]]
+| industry = [[Natural language processing]], [[artificial intelligence]], [[Internet]], [[information technology]]
+| products= [[Natural language processing]], [[Chatbots]], [[Search engine]], [[enterprise search]], [[knowledge management]], [[software]]
+| foundation = 2005
+| location = [[Foster City, California]], [[United States]]
+| homepage =  [http://www.inbenta.com/ www.inbenta.com]
+}}
+
+'''Inbenta''' is an [[AI]] company that originated in [[Barcelona]], [[Spain]] in 2005. Inbenta is currently headquartered in [[Foster City, California]] with offices in: [[São Paulo|São Paulo, Brazil]]; [[Toulouse|Toulouse, France]]; and [[Tokyo|Tokyo, Japan]]. Inbenta raised $12 Million<ref>{{Cite news|url=https://www.inbenta.com/en/blog/inbenta-announces-12-million-series-b-investment/|title=Inbenta announces $12 million Series B investment - Inbenta|date=2016-09-14|work=Inbenta|access-date=2017-04-21|language=en-US}}</ref> in their Series B funding round to extend the reach of their [[artificial intelligence]] for business solutions.{{Citation needed|date=May 2020}}
+
+Inbenta provides [[natural language processing]] and [[semantic search]] through [[Artificial Intelligence]].{{Citation needed|date=May 2020}}
+
+On 23 June 2018, [[Ticketmaster]] UK identified malicious software on a customer support product hosted by Inbenta Technologies, compromising personal data and payment details for thousands of Ticketmaster customers.<ref>
+{{Citation|url=https://security.ticketmaster.co.uk/?int_cmp_name=Ticketmaster-Marketing&int_cmp_id=UK-Home-601&int_cmp_creative=Home-featured-1&tm_link=tm_ccp_Home_featured_Ticketmaster-Marketing|title=Ticketmaster - Data security incident by third-party supplier}}</ref> On June 26 2018, Inbenta's CEO Issued a message about the incident to convey the full scope of the breach [https://www.inbenta.com/en/inbenta-and-the-ticketmaster-data-breach/]. Also on FAQ section [https://www.inbenta.com/en/inbenta-and-the-ticketmaster-data-breach/], Inbenta claimed that "After a careful analysis of all clues and snapshots from our systems, the technical team at Inbenta discovered that the script had been implemented on the payment page. We were unaware of this, and would have advised against doing so had we known, as it presents a point of vulnerability"November 13, 2020, the Information Commissioner's Office fined Ticketmaster UK Limited £1.25million for failing to protect customers’ payment details. According to the ICO, "It was because of Ticketmaster's business decision to include the [Inbenta] chat bot on its payment page that the chat bot was able to unlawfully process the personal data of customers."<ref>
+https://ico.org.uk/media/action-weve-taken/2618609/ticketmaster-uk-limited-mpn.pdf
+</ref>
+{{Reflist}}
+ 
+
+== External links ==
+* [http://www.inbenta.com Inbenta] website
+
+[[Category:Search engine software]]
+[[Category:Internet search engines]]
+[[Category:Software companies of the United States]]
+[[Category:Software companies established in 2005]]
+[[Category:Companies established in 2005]]
+[[Category:2005 establishments in California]]
+[[Category:2005 establishments in the United States]]
+{{Software-company-stub}}
+{{AI-stub}}

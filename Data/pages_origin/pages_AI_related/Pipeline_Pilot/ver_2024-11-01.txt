@@ -1,0 +1,133 @@
+{{original research|date=February 2013}}
+{{Infobox software
+| name = Pipeline Pilot
+| title = 
+| logo = 
+| logo caption = 
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = 
+| developer = [[Accelrys]]
+| released = {{Start date|1999|||df=yes/no}}
+| discontinued = 
+| latest release version = 18.1
+| latest release date = {{Start date|2018|05||df=yes/no}}
+| latest preview version = 
+| latest preview date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| frequently updated = <!-- DO NOT include this parameter unless you know what it does -->
+| status = 
+| programming language = [[C++]]
+| operating system = [[Windows]] and [[Linux]]
+| platform = 
+| size = 
+| language = 
+| language count = <!-- DO NOT include this parameter unless you know what it does -->
+| language footnote = 
+| genre = [[visual programming|Visual]] and [[dataflow programming|dataflow]] programming language
+| license = [[Proprietary software|Proprietary]]
+| alexa = 
+| website =
+| standard = 
+| AsOf = 
+}}
+
+'''Pipeline Pilot''' is a desktop software application developed by [[Dassault Systèmes]]. Initially focused on extract, transform, and load (ETL) processes and data analytics, the software has evolved to offer broader capabilities in various scientific and industrial applications.
+
+Pipeline Pilot uses a visual and dataflow programming interface, allowing users to design workflows for data processing. The software's functionality spans several domains, including [[cheminformatics]], [[Quantitative structure–activity relationship|QSAR]],<ref name="HassanBrown2007">{{cite journal|last1=Hassan|first1=Moises|last2=Brown|first2=Robert D.|last3=Varma-O'Brien|first3=Shikha|last4=Rogers|first4=David|title=Cheminformatics Analysis and Learning in a Data Pipelining Environment|journal=ChemInform|volume=38|issue=12|year=2007|issn=0931-7597|doi=10.1002/chin.200712278}}</ref><ref name="HuLounkine2009">{{cite journal|last1=Hu|first1=Ye|last2=Lounkine|first2=Eugen|last3=Bajorath|first3=Jürgen|title=Improving the Search Performance of Extended Connectivity Fingerprints through Activity-Oriented Feature Filtering and Application of a Bit-Density-Dependent Similarity Function|journal=ChemMedChem|volume=4|issue=4|year=2009|pages=540–548|issn=1860-7179|doi=10.1002/cmdc.200800408|pmid=19263458|s2cid=35868099}}</ref> [[DNA sequencing|next-generation sequencing]],<ref>{{cite web|url=http://www.businesswire.com/news/home/20110223005584/en/Accelrys-Enters-Generation-Sequencing-Market-NGS-Collection|title=Accelrys Enters Next Generation Sequencing Market with NGS Collection for Pipeline Pilot|publisher=Business Wire|access-date=15 February 2013|date=2011-02-23}}</ref> [[image analysis]],<ref name="RabalLink2010">{{cite journal|last1=Rabal|first1=Obdulia|last2=Link|first2=Wolfgang|last3=G. Serelde|first3=Beatriz|last4=Bischoff|first4=James R.|last5=Oyarzabal|first5=Julen|title=An integrated one-step system to extract, analyze and annotate all relevant information from image-based cell screening of chemical libraries|journal=Molecular BioSystems|volume=6|issue=4|year=2010|pages=711–720|issn=1742-206X|doi=10.1039/b919830j|pmid=20237649}}</ref> and [[text analytics]].<ref name="SimeonovPaveley2012">{{cite journal|last1=Paveley|first1=Ross A.|last2=Mansour|first2=Nuha R.|last3=Hallyburton|first3=Irene|last4=Bleicher|first4=Leo S.|last5=Benn|first5=Alex E.|last6=Mikic|first6=Ivana|last7=Guidi|first7=Alessandra|last8=Gilbert|first8=Ian H.|last9=Hopkins|first9=Andrew L.|last10=Bickle|first10=Quentin D.|title=Whole Organism High-Content Screening by Label-Free, Image-Based Bayesian Classification for Parasitic Diseases|journal=PLOS Neglected Tropical Diseases|volume=6|issue=7|year=2012|pages=e1762|issn=1935-2735|doi=10.1371/journal.pntd.0001762|pmid=22860151|pmc=3409125|doi-access=free}}</ref>
+
+Pipeline Pilot is primarily used in industries that require extensive data processing and analysis, including life sciences, materials science, and engineering. The software allows users to create workflows by dragging and dropping functional components that automate data analysis tasks, integrate with databases, and perform various scientific computations. These workflows are referred to as "protocols" and can be shared and reused within teams or organizations.
+
+The product supports multiple programming languages, including Python, .NET, Matlab, Perl, SQL, Java, VBScript, and R, giving users flexibility in integrating custom code into their workflows. Additionally, Pipeline Pilot offers support for PilotScript, its own scripting language based on PLSQL, which allows users to perform custom data manipulations within their workflows.
+
+Pipeline Pilot has continued to expand its capabilities with additional modules and toolsets for specific scientific tasks, such as next-generation sequencing analysis, cheminformatics, and polymer property prediction.
+
+==History==
+Pipeline Pilot was initially developed by [[SciTegic]], a company that was acquired by [[BIOVIA]] in 2004. In 2014, BIOVIA became part of [[Dassault Systèmes]].
+
+Originally designed for applications in chemistry, Pipeline Pilot's capabilities have since been expanded to support a wider range of data processing tasks, including extract, transform, and load (ETL) processes, as well as general analytical and data processing tasks across various fields. The software is used in domains such as life sciences, materials science, and engineering, providing users with tools for creating automated workflows for data analysis and scientific computation.
+
+==Overview==
+Pipeline Pilot is a software tool designed for data manipulation and analysis. It provides a graphical user interface for users to construct workflows that integrate and process data from multiple sources, including CSV files, text files, and databases. The software is commonly used in extract, transform, and load (ETL) tasks.
+
+The interface, known as the Pipeline Pilot Professional Client, allows users to create workflows by selecting and arranging individual data processing units called "components." These components perform a variety of functions such as loading, filtering, joining, or modifying data. Additional components can carry out more complex tasks, such as constructing regression models, training neural networks, or generating reports in formats like PDF.
+
+Pipeline Pilot follows a component-based architecture where components serve as nodes in a workflow, connected by "pipes" that represent data flow in a [[directed graph]]. This framework enables the processing of data as it moves between the components.
+
+Users have the flexibility to work with pre-installed components or develop custom ones within workflows, referred to as "protocols." Protocols, which consist of linked components, can be saved, reused, and shared, enabling streamlined data processing. The interface visualizes the connections between components, simplifying complex data workflows by presenting them as sequences of operations.
+
+===Component collections===
+
+Pipeline Pilot offers several add-ons called "collections," which are groups of specialized functions aimed at specific domains, such as genetic information processing or polymer analysis. These collections are available to users for an additional licensing fee.
+
+The collections are organized into two main groups: science-specific and generic. The science-specific collections focus on areas like chemistry, biology, and materials modeling, while the generic collections provide tools for reporting, data analysis, and document search. Below is an overview of the available collections:<ref name="Collections">{{cite web|url=http://accelrys.com/products/pipeline-pilot/component-collections.html|title=Pipeline Pilot Component Collections|publisher=Accelrys|access-date=26 January 2013|url-status=dead|archive-url=https://web.archive.org/web/20130115123007/http://accelrys.com/products/pipeline-pilot/component-collections.html|archive-date=January 15, 2013}}</ref>
+
+{| class="wikitable"
+|-
+! Group !! Domain !! Component collection
+|-
+| rowspan="9"|Science-specific|| rowspan="3"|Chemistry|| Chemistry 
+|-
+| ADMET 
+|-
+| Cheminformatics 
+|-
+| rowspan="4"|Biology|| Gene Expression 
+|-
+| Sequence Analysis 
+|-
+| Mass Spectrometry for Proteomics 
+|-
+| Next Generation Sequencing 
+|-
+| rowspan="2"|Materials Modeling & Simulation|| Materials Studio 
+|-
+| Polymer Properties (Synthia)
+|-
+| rowspan="10"|Generic|| Reporting & Visualization|| Reporting 
+|-
+| Database & Application Integration|| Integration 
+|-
+| Imaging|| Imaging 
+|-
+| rowspan="3"|Analysis & Statistics|| Data Modeling 
+|-
+| Advanced Data Modeling 
+|-
+| R Statistics
+|-
+| rowspan="2"|Document Search & Analysis|| Chemical Text Mining
+|-
+| Text Analytics 
+|-
+| rowspan="2"|Laboratory|| Plate Data Analytics 
+|-
+| Analytical Instrumentation 
+|}
+
+===Custom scripts===
+Pipeline Pilot is commonly used for processing large and complex datasets, often exceeding 1TB in size. In its early development, Pipeline Pilot introduced a scripting language called "PilotScript," which allows users to write basic scripts that can be integrated into a protocol. Over time, support for additional programming languages was added, including Python, .NET, Matlab, Perl, SQL, Java, VBScript, and R. These languages can be used through APIs that execute commands without requiring the graphical user interface.<ref name="Integration">{{cite web|url=http://accelrys.com/products/datasheets/integration-collection.pdf|title=Pipeline Pilot Integration Component Collection Datasheet|publisher=Accelrys|access-date=8 February 2013}}</ref>
+
+PilotScript, a language modeled on PLSQL, is used within specific components like the "Custom Manipulator (PilotScript)" or "Custom Filter (PilotScript)." An example of a simple PilotScript command is shown below, where a property named "Hello" is added to each record passing through the component with the value "Hello World!":
+
+<syntaxhighlight lang="plpgsql"> Hello := "Hello World!"; </syntaxhighlight>
+
+==References==
+{{Reflist}}
+
+[[Category:Science software]]
+[[Category:Enterprise application integration]]
+[[Category:Extract, transform, load tools]]
+[[Category:Bioinformatics software]]
+[[Category:Computational chemistry software]]
+[[Category:Computer vision software]]
+[[Category:Data analysis software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Data visualization software]]
+[[Category:Laboratory software]]
+[[Category:Mass spectrometry software]]
+[[Category:Natural language processing software]]
+[[Category:Numerical software]]
+[[Category:Plotting software]]
+[[Category:Proprietary software]]
+[[Category:Visual programming languages]]

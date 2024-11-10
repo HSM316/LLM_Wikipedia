@@ -1,0 +1,34 @@
+{{Evolutionary algorithms}}
+'''The promoter based genetic algorithm''' ('''PBGA''') is a [[genetic algorithm]] for neuroevolution developed by F. Bellas and R.J. Duro in the [[Integrated Group for Engineering Research]] (GII) at the University of Coruña, in Spain. It evolves variable size feedforward [[artificial neural network]]s (ANN) that are encoded into sequences of genes for constructing a basic ANN unit. Each of these blocks is preceded by a gene promoter acting as an on/off switch that determines if that particular unit will be expressed or not.
+
+==PBGA basics==
+
+The basic unit in the PBGA is a [[neuron]] with all of its inbound connections as represented in the following figure:
+
+[[File:pbga2.jpg]]
+
+The [[genotype]] of a basic unit is a set of real valued weights followed by the parameters of the [[neuron]] and proceeded by an integer valued field that determines the promoter gene value and, consequently, the expression of the unit. By concatenating units of this type we can construct the whole network.
+
+With this encoding it is imposed that the information that is not expressed is still carried by the genotype in evolution but it is shielded from direct selective pressure, maintaining this way the diversity in the population, which has been a design premise for this algorithm. Therefore, a clear difference is established between the search space and the solution space, permitting information learned and encoded into the genotypic representation to be preserved by disabling promoter genes.
+
+==Results ==
+
+The PBGA was originally presented<ref name="bellasIASTED">F. Bellas, R. J. Duro, (2002) [http://www.actapress.com/pdfviewer.aspx?paperid=25656 Statistically neutral promoter based GA for evolution with dynamic fitness functions], Proc. of IASTED International Conference Artificial Intelligence and Applications</ref><ref name="bellasICONIP">F. Bellas, R. J. Duro, (2002) [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.706.1897&rep=rep1&type=pdf Modelling the world with statiscally neutral PBGAs]. Enhancement and real applications, Proc. 9th Internacional Conference on Neural Information Processing</ref> within the field of autonomous robotics, in particular in the real time learning of environment models of the robot.
+
+It has been used inside the [[Multilevel Darwinist Brain]] (MDB) cognitive mechanism  developed in the GII for real robots on-line learning. In another paper<ref name="bellas06">F. Bellas, A. Faiña, A. Prieto, and R.J. Duro (2006), [https://link.springer.com/chapter/10.1007/11840541_36 Adaptive Learning Application of the MDB Evolutionary Cognitive Architecture in Physical Agents], Lecture notes on artificial intelligence, vol 4095, 434-445</ref> it is shown how the application of the PBGA together with an external memory that stores the successful obtained world models, is an optimal strategy for adaptation in dynamic environments. 
+
+Recently, the PBGA has provided results that outperform other neuroevolutionary algorithms in non-stationary problems, where the fitness function varies in time.<ref name="bellas09">F. Bellas, J.A. Becerra, R. J. Duro, (2009), [https://www.sciencedirect.com/science/article/pii/S0925231208005481 Using Promoters and Functional Introns in Genetic Algorithms for Neuroevolutionary Learning in Non-Stationary Problems], Neurocomputing 72, 2134-2145</ref>
+
+==References==
+
+<references/>
+
+==External links==
+*[http://www.gii.udc.es Grupo Integrado de Ingeniería]
+*[https://archive.today/20130106140625/http://www.gii.udc.es/francisco_bellas Francisco Bellas’ website]
+*[https://archive.today/20130106133654/http://www.gii.udc.es/richard_duro Richard J. Duro’s website]
+
+[[Category:Artificial neural networks]]
+[[Category:Evolutionary algorithms]]
+[[Category:Evolutionary computation]]
+[[Category:Genetic algorithms]]

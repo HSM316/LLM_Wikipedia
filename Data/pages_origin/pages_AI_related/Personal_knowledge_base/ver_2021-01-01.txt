@@ -1,0 +1,52 @@
+{{short description|Knowledge management software}}
+{{about|knowledge management software|the general concept|Personal knowledge management}}
+{{InfoMaps}}
+A '''personal knowledge base''' ('''PKB''') is an electronic tool used to express, capture, and later retrieve the personal knowledge of an individual. It differs from a traditional [[database]] in that it contains subjective material particular to the owner, that others may not agree with nor care about. Importantly, a PKB consists primarily of knowledge, rather than [[information]]; in other words, it is not a collection of documents or other sources an individual has encountered, but rather an expression of the distilled knowledge the owner has extracted from those sources.<ref name="Davies 2005">{{Cite techreport |last1=Davies |first1=Stephen |last2=Velez-Morales |first2=Javier |last3=King |first3=Roger |date=August 2005 |title=Building the memex sixty years later: trends and directions in personal knowledge bases |number=CU-CS-997-05 |location=Boulder, Colo. |institution=Department of Computer Science, [[University of Colorado at Boulder]] |url=http://scholar.colorado.edu/csci_techreports/931/ |ref=harv}}</ref><ref name="Davies 2011">{{Cite journal |last=Davies |first=Stephen |date=February 2011 |title=Still building the memex |journal=[[Communications of the ACM]] |volume=54 |issue=2 |pages=80–88 |doi=10.1145/1897816.1897840 |ref=harv}}</ref><ref name="Völkel 2010">See also the dissertation of Max Völkel, which examined personal knowledge data models, and proposed a meta-model called "Conceptual Data Structures": {{Cite thesis |last=Völkel |first=Max |title=Personal knowledge models with semantic technologies |date=January 2010 |publisher=Faculty of Economics, [[Karlsruhe Institute of Technology]], University of the State of Baden-Württemberg, and National Laboratory of the Helmholtz Association |url=http://publikationen.bibliothek.kit.edu/1000019641 |doi=10.5445/IR/1000019641 |oclc=837821583 |type=Ph.D. thesis |location=Karlsruhe}}</ref>
+
+The term ''personal knowledge base'' was mentioned as early as the 1980s,<ref name="Brooks 1985">{{Cite journal |last=Brooks |first=Tom |date=April 1985 |title=New technologies and their implications for local area networks |journal=Computer Communications |volume=8 |issue=2 |pages=82–87 |doi=10.1016/0140-3664(85)90218-X |ref=harv}}</ref><ref name="Kruger 1986">{{Cite book |last=Krüger |first=Gerhard |title=Employment and the transfer of technology |date=1986 |publisher=[[Springer-Verlag]] |isbn=3540166394 |editor-last=Henn |editor-first=Rudolf |location=Berlin; New York |pages=39–52 |chapter=Future information technology—motor of the 'information society' |doi=10.1007/978-3-642-71292-0_4 |oclc=14108228 |ref=harv}}</ref><ref name="Forman 1988">{{Cite book |last=Forman |first=George E. |title=Constructivism in the computer age |date=1988 |publisher=[[Lawrence Erlbaum Associates]] |isbn=0805801014 |editor-last=Forman |editor-first=George E. |series=The Jean Piaget Symposium series |location=Hillsdale, NJ |pages=[https://archive.org/details/constructivismin0000unse/page/83 83–101] |chapter=Making intuitive knowledge explicit through future technology |oclc=16922453 |ref=harv |editor-last2=Pufall |editor-first2=Peter B. |chapter-url=https://archive.org/details/constructivismin0000unse/page/83}}</ref><ref name="Smith 1991">{{Cite book |last=Smith |first=Catherine F. |title=Evolving perspectives on computers and composition studies: questions for the 1990s |date=1991 |publisher=[[National Council of Teachers of English]] |isbn=0814111661 |editor-last=Hawisher |editor-first=Gail E. |location=Urbana, IL |pages=[https://archive.org/details/evolvingperspect00gail/page/224 224–252] |chapter=Reconceiving hypertext |oclc=23462809 |ref=harv |editor-last2=Selfe |editor-first2=Cynthia L. |chapter-url=https://archive.org/details/evolvingperspect00gail/page/224}}</ref> but the term came to prominence when it was described at length in publications by computer scientist Stephen Davies and colleagues,<ref name="Davies 2005" /><ref name="Davies 2011" /> who compared PKBs on a number of different dimensions, the most important of which is the [[data model]] that each PKB uses to organize knowledge.<ref name="Davies 2005" />{{rp|18}}<ref name="Völkel 2010" />
+
+Davies and colleagues examined three aspects of the data models of PKBs:
+
+* their {{em|structural framework}}, which prescribes rules about how knowledge elements can be structured and interrelated (as a [[Tree (data structure)|tree]], [[Graph (discrete mathematics)|graph]], tree plus graph, spatially, categorically, or as n-ary links);
+* their {{em|knowledge elements}}, or basic building blocks of information that a user creates and works with, and the level of [[granularity]] of those knowledge elements (such as word/concept, phrase/proposition, free text notes, links to information sources, or composite); and
+* their {{em|schema}}, which involves the level of [[Formal semantics (logic)|formal semantics]] introduced into the data model (such as a [[type system]] and related [[Database schema|schema]]s, keywords, [[attribute–value pair]]s, etc.).<ref name="Davies 2005" />{{rp|19–36}}
+
+Davies and colleagues also differentiated PKBs according to their [[Software architecture|architecture]]: [[Computer file|file]]-based, database-based, or [[client–server]] systems (including Internet-based systems accessed through desktop computers and/or handheld mobile devices).<ref name="Davies 2005" />{{rp|37–41}}
+
+Non-electronic personal knowledge bases have probably existed in some form for centuries: [[Leonardo da Vinci#Journals and notes|Da Vinci's notebooks]] are a famous example. More commonly, files of [[index card]]s (in German, ''[[Zettelkasten]]''), [[edge-notched card]]s and annotated [[private libraries]], have served this function in the pre-electronic age.<ref>For example, two articles that describe the use of [[edge-notched card]]s as a personal knowledge base in health and medicine are: {{cite journal |last=Hoff |first=Wilbur |date=May 1967 |title=A health information retrieval system for personal use |journal=[[Journal of School Health]] |volume=37 |issue=5 |pages=251–254 |doi=10.1111/j.1746-1561.1967.tb00505.x |pmid=5182183 |ref=harv}} And: {{Cite book |last=Manning |first=Phil R. |title=Medicine, preserving the passion |last2=DeBakey |first2=Lois |date=1987 |publisher=[[Springer-Verlag]] |isbn=0387963618 |edition=1st |location=New York |pages=[https://archive.org/details/medicinepreservi00mann/page/57 57–71 (59)] |chapter=The personal information center |doi=10.1007/978-1-4757-1954-3_3 |oclc=13580831 |ref=harv |chapter-url=https://archive.org/details/medicinepreservi00mann/page/57}}</ref> Undoubtedly the most famous early formulation of an electronic PKB was [[Vannevar Bush]]'s description of the "[[memex]]" in 1945.<ref name="Davies 2005" /><ref name="Davies 2011" /><ref name="Bush 1945">{{Cite journal |last=Bush |first=Vannevar |date=July 1945 |title=As we may think |url=https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/ |journal=[[Atlantic Monthly]] |volume=176 |issue=1 |pages=101–108 |ref=harv}}</ref> In a 1962 technical report, [[human–computer interaction]] pioneer [[Douglas Engelbart]] (who would later become famous for his 1968 "[[Mother of All Demos]]" that demonstrated almost all the fundamental elements of modern personal computing) described his use of edge-notched cards to partially model Bush's memex.<ref>{{Cite book |last=Engelbart |first=Douglas C. |url=http://www.dougengelbart.org/pubs/augment-3906.html |title=Augmenting human intellect: a conceptual framework |date=1962 |publisher=[[Stanford Research Institute]] |location=Menlo Park, CA |chapter=Some possibilities with cards and relatively simple equipment |oclc=8671016 |ref=harv |access-date=2018-08-12 |archive-url=https://web.archive.org/web/20110504035147/http://www.dougengelbart.org/pubs/augment-3906.html |archive-date=2011-05-04 |url-status=dead}}</ref>
+
+==Examples==
+Davies and colleagues mentioned the following as examples of [[software application]]s that have been used to build PKBs:<ref name="Davies 2005" />
+;[[Open source]]
+* [[Compendium (software)]]
+* [[Haystack (MIT project)]]
+;Closed source
+* [[MyLifeBits]]
+* [[NoteCards]]
+* [[Personal Knowbase]]
+* [[TheBrain]]
+* [[Tinderbox (application software)]]
+
+==See also==
+{{Div col|colwidth=22em}}
+* [[Commonplace book]]
+* [[Issue-based information system]]
+* [[Lifelog]]
+* [[Notetaking]]
+** [[Comparison of notetaking software]]
+* [[Outliner]]
+* [[Personal knowledge management]]
+* [[Personal wiki]]
+* {{slink|List of wiki software#Personal wiki software}}
+* {{slink|Tag (metadata)#Knowledge tags}}
+{{Div col end}}
+
+==References==
+{{Reflist}}
+
+{{Computable knowledge}}
+[[Category:Knowledge representation]]
+
+__NOTOC__
+
+{{software-stub}}

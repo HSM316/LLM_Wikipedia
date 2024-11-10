@@ -1,0 +1,37 @@
+{{Short description|Simulation terminology}}
+'''Human-in-the-loop'''  or '''HITL''' is defined as a model that requires human interaction.<ref>"DoD Modeling and Simulation (M&S) Glossary", DoD 5000.59-M, [[United States Department of Defense|DoD]], January 1998 {{cite web |url=http://www.dtic.mil/whs/directives/corres/pdf/500059m.pdf |title=Directives Division |accessdate=2009-04-22 |url-status=dead |archiveurl=https://web.archive.org/web/20070710104756/http://www.dtic.mil/whs/directives/corres/pdf/500059m.pdf |archivedate=2007-07-10 }}</ref><ref>Karwowski, Waldemar, ''[https://books.google.com/books?id=3hkbHSV81XMC&pg=PA2407 International encyclopedia of ergonomics and human factors]'', {{ISBN|0-415-30430-X}}, 9780415304306, [[CRC Press]], 2006</ref> HITL is associated with [[modeling and simulation]] (M&S) in the [[live, virtual, and constructive]] [[Taxonomy (general)|taxonomy]]. HITL models may conform to [[human factors]] requirements as in the case of a [[mockup]].  In this type of simulation a human is always part of the simulation and consequently influences the outcome in such a way that is difficult if not impossible to reproduce exactly.  HITL also readily allows for the identification of problems and requirements that may not be easily identified by other means of simulation.
+
+HITL is often referred to as interactive simulation, which is a special kind of physical simulation in which physical simulations include human operators, such as in a [[flight simulator|flight]] or a [[driving simulator]].
+
+==Benefits==
+Human-in-the-loop allows the user to change the outcome of an event or process.  HITL is extremely effective for the purposes of training because it allows the trainee to immerse themselves in the event or process  {{Citation needed|date=June 2013}}.  The immersion effectively contributes to a positive transfer of acquired skills into the real world.  This can be demonstrated by trainees utilizing flight simulators in preparation to become pilots.
+
+HITL also allows for the acquisition of knowledge regarding how a new process may affect a particular event. Utilizing HITL allows participants to interact with realistic models and attempt to perform as they would in an actual scenario. HITL simulations bring to the surface issues that would not otherwise be apparent until after a new process has been deployed.  A real-world example of HITL simulation as an evaluation tool is its usage by the [[Federal Aviation Administration]] (FAA) to allow air traffic controllers to test new automation procedures by directing the activities of simulated air traffic while monitoring the effect of the newly implemented procedures.<ref>Sollenberger, R. (2005). Human-in-the-Loop Simulation Evaluating the Collocation of the User Request Evaluation Tool. U.S. Department of Transportation Federal Aviation Administration, 1. Retrieved July 19, 2010, from http://hf.tc.faa.gov/technotes/dot-faa-ct-tn04-28.pdf {{Webarchive|url=https://web.archive.org/web/20100609162019/http://hf.tc.faa.gov/technotes/dot-faa-ct-tn04-28.pdf |date=2010-06-09 }}</ref>
+
+As with most processes, there is always the possibility of [[human error]], which can only be reproduced using HITL simulation.  Although much can be done to automate systems, humans typically still need to take the information provided by a system to determine the next course of action based on their judgment and experience. Intelligent systems can only go so far in certain circumstances to automate a process; only humans in the simulation can accurately judge the final design.  Tabletop simulation may be useful in the very early stages of project development for the purpose of collecting data to set broad parameters, but the important decisions require human-in-the-loop simulation.<ref>Human-in-the-loop simulation: (2007, Spring). Port Technology International, 32, 1-2. Retrieved July 19, 2010, from http://www.marinesafety.com/research/documents/HumanintheloopSimulationasPublishedinPortTechnologyInternationalIssue32.pdf {{Webarchive|url=https://web.archive.org/web/20110714034605/http://www.marinesafety.com/research/documents/HumanintheloopSimulationasPublishedinPortTechnologyInternationalIssue32.pdf |date=2011-07-14 }}</ref>
+
+== Human-in-the-loop simulation within virtual simulation taxonomy ==
+Virtual simulations inject HITL in a central role by exercising [[motor control]] skills (e.g. flying an airplane), [[decision making]] skills (e.g. committing fire control resources to action), or [[communication skills]] (e.g. as members of a [[C4I]] team).
+
+==Examples of human-in-the-loop simulators==
+*[[Flight simulators]]
+*[[Driving simulators]]
+*Marine simulators
+*Certain [[video games]]
+* Supply chain management simulators<ref>Pinto R, Mettler T, Taisch M (2013), ''[http://www.sciencedirect.com/science/article/pii/S0167923612002886 Managing supplier delivery reliability risk under limited information: Foundations for a human-in-the-loop DSS]'', Decision Support Systems, 54:2, 1076–1084</ref>
+* [[Digital puppetry]]
+
+==Misconceptions==
+Although human-in-the-loop simulation can include a computer simulation in the form of a synthetic environment, computer simulation is not necessarily a form of human-in-the-loop simulation, and is often considered as human-out-of-the loop simulation. In this particular case, a computer model’s behavior is modified according to a set of initial parameters. The results of the model differ from the results stemming from a true human-in-the-loop simulation because the results can easily be replicated time and time again, by simply providing identical parameters.
+
+==See also==
+{{Wiktionary|in the loop}}
+*[[Humanistic Intelligence]] which is intelligence that arises by having the human in the feedback loop of the computational process [Minsky, Kurzweil, Mann, IEEE ISTAS 2013].
+
+==References==
+{{Reflist}}
+
+[[Category:Military technology]]
+[[Category:Military terminology]]
+[[Category:Military simulation]]
+[[Category:Emerging technologies]]

@@ -1,0 +1,31 @@
+{{Orphan|date=September 2020}}
+
+'''Zero-shot learning''' (ZSL) is a problem setup in [[machine learning]], where at test time, a learner observes samples from classes that were not observed during [[Machine learning#Training models|training]], and needs to predict the category they belong to.  This problem is widely studied in [[computer vision]], natural language processing and machine perception.<ref>{{cite journal |last1=Xian |first1=Yongqin |last2=Schiele |first2=Bernt |last3=Akata |first3=Zeynep |title=Zero-shot learning-the good, the bad and the ugly |journal=Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition |date=2017 |pages=4582–4591|bibcode=2017arXiv170304394X |arxiv=1703.04394 }}</ref> Unlike standard [[Generalization error|generalization]] in machine learning, where classifiers are expected to correctly classify new samples to classes they have already observed during training, in ZSL, no samples from the classes have been given during training the classifier. It can therefore be viewed as an extreme case of [[domain adaptation]].
+
+== Prerequisite information for zero-shot classes ==
+Naturally, some form of side information has to be given about these zero-shot classes, and this type of information can be of several types. 
+
+* Learning with attributes: classes are accompanied by pre-defined structured description. For example, for bird descriptions, this could include "red head", "long beak" .<ref>{{cite journal |last1=Lampert |first1=C.H. |title=Learning to detect unseen object classes by between-class attribute transfer |journal=IEEE Conference on Computer Vision and Pattern Recognition |date=2009 |pages=951–958|citeseerx=10.1.1.165.9750 |url=http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.165.9750&rep=rep1&type=pdf}}</ref><ref>{{cite journal |last1=Romera-Paredes |first1=Bernardino |last2=Torr |first2=Phillip |title=An embarrassingly simple approach to zero-shot learning |journal=International Conference on Machine Learning |date=2015 |pages=2152–2161|url=http://www.jmlr.org/proceedings/papers/v37/romera-paredes15.pdf}}</ref> These attributes are often organized in a structured compositional way, and taking that structure into account improves learning <ref>{{cite journal |last1=Atzmon |first1=Yuval |last2=Chechik |first2=Gal |title=Probabilistic AND-OR Attribute Grouping for Zero-Shot Learning |journal=Uncertainty in Artificial Intelligence |date=2018 |url=http://auai.org/uai2018/proceedings/papers/151.pdf|bibcode=2018arXiv180602664A |arxiv=1806.02664 }}</ref>
+* Learning from textual description. Here classes are accompanied by free-text natural-language description. This could include for example a wikipedia description of the class<ref>{{cite journal |last1=Hu |first1=R Lily |last2=Xiong |first2=Caiming |last3=Socher |first3=Richard |title=Zero-Shot Image Classification Guided by Natural Language Descriptions of Classes: A Meta-Learning Approach |journal=NeurIPS |date=2018|url=https://nips2018vigil.github.io/static/papers/accepted/28.pdf}}</ref>  <ref>{{cite journal |last1=Srivastava |first1=Shashank |last2=Labutov |first2=Igor |last3=Mitchelle |first3=Tom |title=Zero-shot Learning of Classifiers from Natural Language Quantification |journal=ACL |date=2018 |volume=Proceedings of the 56th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers) |pages=306–316 |doi=10.18653/v1/P18-1029 |doi-access=free }}</ref>
+* Class-class similarity. Here, classes are embedded in a continuous space. a zero-shot classifier can predict that a samples correspond to some position in that space, and the nearest embedded class is used as a predicted class, even if no such samples were observed during training. <ref>{{cite journal |last1=Frome |first1=Andrea |last2=et |first2=al |title=Devise: A deep visual-semantic embedding model |journal=Advances in Neural Information Processing Systems |date=2013 |pages=2121–2129|url=https://papers.nips.cc/paper/5204-devise-a-deep-visual-semantic-embedding-model.pdf}}</ref>
+
+== Generalized zero-shot learning ==
+The above ZSL setup assumes that at test time, only zero-shot samples are given, namely, samples from new unseen classes. In generalized zero-shot learning, samples from both new and known classes, may appear at test time. This poses new challenges for classifiers at test time, because it is very challenging to estimate if a given sample is new or known. Few approaches to handle this include: 
+
+* A gating approach. Here an additional module is first trained to decide if a given sample comes from a new class or from an old one. The gater could output a hard decision ,<ref>{{cite journal |last1=Socher |first1=R |last2=Ganjoo |first2=M |last3=Manning |first3=C.D. |last4=Ng |first4=A. |title=Zero-shot learning through cross-modal transfer |journal=Neural Information Processing Systems |date=2013|bibcode=2013arXiv1301.3666S |arxiv=1301.3666 }}</ref> but emitting a soft probabilistic decision further improves the accuracy of this line of approaches<ref>{{cite journal |last1=Atzmon |first1=Yuval |title=Adaptive Confidence Smoothing for Generalized Zero-Shot Learning |journal=The IEEE Conference on Computer Vision and Pattern Recognition|pages=11671–11680 |date=2019|bibcode=2018arXiv181209903A |arxiv=1812.09903 }}</ref>
+* Generative approaches. Here, a generative model is trained to generate feature representation of the unseen classes. Then a standard classifier is trained given samples from all classes, seen and unseen. <ref>{{cite journal |last1=Felix |first1=R |last2=et |first2=al |title=Multi-modal cycle-consistent generalized zero-shot learning |journal=Proceedings of the European Conference on Computer Vision |date=2018 |pages=21–37|bibcode=2018arXiv180800136F |arxiv=1808.00136 }}</ref>
+
+= Domains of application =
+Zero shot learning has been applied to the following fields:
+* [[image classification]]
+* [[semantic segmentation]]
+* [[image generation]]
+* [[object detection]]
+* [[natural language processing]]
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{reflist}}<br />
+
+[[Category:Machine learning algorithms]]
+[[Category:Computer vision]]

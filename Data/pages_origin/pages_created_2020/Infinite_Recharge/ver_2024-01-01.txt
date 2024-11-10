@@ -1,0 +1,874 @@
+{{Infobox FIRST Robotics Competition game
+|game_title            = Infinite Recharge
+|logo                  = File:Infinite Recharge Logo.png
+|logo_caption          = 
+|year                  = 2020
+|number_teams          = 3,898<ref>{{Cite web|url=https://www.firstinspires.org/sites/default/files/uploads/resource_library/frc/game-and-season-info/competition-manual/2020/frc20-fr023-season-facts.pdf|title=2020 Season Facts|last=|first=|date=2 January 2020|website=FIRST|archive-url=|archive-date=|access-date=}}</ref>
+|number_regionals      = 17 played, 49 cancelled
+|number_dist           = 35 played, 81 cancelled
+|championship_location = Both championships cancelled
+| chairman_winner       = None (championships cancelled)
+| wf_winner             = Lucien Junkin - Team 118
+| founders_winner       = FIRST Community
+| gp_winner             =
+| champions             = None (championships cancelled)
+|homepage              = {{Official website}}
+|altlogo               = 
+|altlogocaption        = 
+|below                 = 
+|prevseason = [[Destination: Deep Space]]
+|nextseason = [[Infinite Recharge (2021)]]{{efn|Game will be replayed in 2021 due to the cancellation of the season.}}
+}}
+
+'''Infinite Recharge''' (stylized in [[all caps]]) is the [[FIRST Robotics Competition]] (FRC) game for the 2020 season.<ref>{{Cite web|url=https://www.firstinspires.org/robotics/frc/game-and-season|title=FIRST Robotics Competition Game and Season Info|last=|first=|date=2019-04-20|website=FIRSTinspires|language=en|archive-url=|archive-date=|access-date=2019-12-31}}</ref> The season is in partnership with [[Lucasfilm]] as part of its [[Star Wars: Force for Change]] initiative.
+
+The Infinite Recharge game involves two alliances of three teams each, with each team controlling a robot and performing specific tasks on a field to score points. The game centers around a futuristic city theme involving two alliances consisting of three teams each competing to perform various tasks, including shooting foam balls known as Power Cells into high and low goals to activate a Shield Generator, manipulating a Control Panel to activate this shield, and returning to the Shield Generator to park or climb at the end of the match. The objective is to energize and activate the shield before the match ends and asteroids strike FIRST City, a futuristic city modeled after ''[[Star Wars]]''.
+
+The 2020 season was the first season without an enforced six-week build period, with teams able to work on their robot at any time after kickoff.<ref>{{Cite web|url=https://www.firstinspires.org/robotics/frc/blog/2020-sbd-july-dlc|title=Stop Build Day Retirement -- Update and a new DLC pack!|date=2019-07-09|website=FIRST|language=en|access-date=2020-01-01}}</ref> However, teams are in general not permitted to work on their robot outside of pit hours during an event the team in question is competing at.
+
+The 2020 season was suspended on March 12, 2020, and all remaining events were cancelled on May 13, due to the [[COVID-19 pandemic]].<ref name="COVID-19 Impact">{{Cite web|url=https://www.firstinspires.org/covid-19|title=COVID-19 Impact on FIRST Events (Updated March 12, 2020)|date=2020-03-08|website=FIRST|language=en|access-date=2020-03-12}}</ref> On the same day, it was announced that Infinite Recharge would also be played in 2021, with possible "changes" to be revealed at that season's kickoff.
+
+== Kickoff ==
+The season's kickoff event took place on January 4, 2020, at 10:00 AM Eastern Time and was centered around an impending [[asteroid impact]] threatening the FIRST City. The event was broadcast from [[Manchester, New Hampshire]] over [[Twitch (service)|Twitch]].<ref name=":1">{{Cite web|url=https://www.firstinspires.org/robotics/frc/kickoff|title=Kickoff|date=2015-11-25|website=FIRST|language=en|access-date=2019-12-31}}</ref>
+
+== Field ==
+[[File:2020 Infinite Recharge field.jpg|thumb|The Infinite Recharge playing field]]
+Infinite Recharge is played on a 26&nbsp;ft 11 1/4&nbsp;in (~821&nbsp;cm) by 52&nbsp;ft 5 1/4&nbsp;in(~1598&nbsp;cm) field covered in grey low-pile carpet. The field is bounded by short transparent polycarbonate guardrails on the longer sides and the taller Alliance Station walls on the shorter side. The field features two sectors, with each containing one end for each alliance combined with the rendezvous point (center area). The sector contains robots at the start of each match, while drivers control their robots at the alliance station. The rendezvous point contains the Shield Generator and the Trenches.
+
+===Alliance Station===
+Each team has their own Alliance Station that is positioned at one of the ends of the field. The Alliance Station is where drivers control their robots, human players deliver game pieces to robots, and opposing alliance robots shoot game pieces. Alliance Stations contain three driver's stations, one for each participating team in the alliance. The center player station is flanked on one side by the loading bay, and on the other side by the opposing alliance's power port.
+
+===Loading Bay===
+Loading Bays are located in the alliance stations, with one per alliance. The Loading Bays are used by the human player to give game pieces to the robots on the field. There are five places that game pieces can be put into the Loading Bay, with two upper ports, and three ground ports.
+
+===Power Cell===
+Power Cells are the main game piece in Infinite Recharge. The Power Cell is a yellow, 7 in (~18&nbsp;cm) diameter Medium Bounce Dino-Skin foam ball. The FIRST logo is printed in black ink on each Power Cell.
+
+===Shield Generator===
+The Shield Generator is a large box-shaped structure located in the center of the field.  It contains both alliances Rendezvous Points, as well as the two Generator Switches.
+
+===Trench Run===
+The Trench Run is an approximately 4&nbsp;ft by 18&nbsp;ft rectangular area on each side of the field bounded by alliance-colored tape that contains the alliance's Control Panel. It is located in the middle of the field, directly adjacent to the Shield Generator.
+
+===Scoring Areas===
+====Power Port====
+There are two Power Ports on the field, with one at each Alliance Station. An alliance's Power Port is located at the opposing alliance's Alliance Station, requiring robots that intake from the Loading Bays to drive across the field in order to score Power Cells.  There are three levels of scoring on a Power Port. The rectangular Bottom Port is worth two points in autonomous, or one in the teleoperated (or ''teleop'') period. The hexagonal Outer Port is located above the Bottom Port, and is worth four points during the autonomous period, and two points in teleop. The Inner Port is located inside of the Outer Port, and is a much smaller circular hole set in the back of the Outer Port.  It is worth six points in autonomous, and three during teleop.
+
+Scoring Power Cells into the Power Port also contributes towards reaching Capacity, which is a count of the number of power cells scored, regardless of port. Certain levels of Capacity require additional tasks to be completed.  Lights around the Power Cell indicate progression towards reaching a stage's Capacity, lighting up in a chase pattern when Capacity is reached but the extra condition is yet to be fulfilled. Upon reaching Capacity and completing the stage's additional task, the stage is said to be Activated.   
+{| class="wikitable"
+|+The following table describes how the three Shield Generator Activation thresholds are reached.
+!Stage
+!Power Cell Capacity
+!Additional Conditions
+!Activating Grants
+|-
+|1
+|9
+|The teleoperated phase
+must have begun.
+|Unlocks Rotation Control.
+|-
+|2
+|20
+|Rotation Control must be complete.
+|Unlocks Position Control.
+|-
+|3
+|20
+|Position Control must be complete.
+|One Ranking Point.
+|}
+
+====Control Panel====
+There are two Control Panels placed on either side of the middle of the field, in each alliance's Trench. They are large discs, with eight colored wedges (red, yellow, blue, and green, repeated once) printed on both the top and bottom. There is a glass panel on the bottom of the Control Panel, however, its wedges are still visible from underneath. After activating Stage 1 and reaching Stage 2's capacity, an alliance may score 10 points by performing Rotation Control on the Control Panel. This entails spinning the Control Panel at least 3 times, but not more than 5. Rotating past a fifth rotation resets this task, and the rotations must be completed again. After activating Stage 2 and reaching Stage 3's capacity, the alliance may score 20 points by performing Position Control. This entails rotating the Control Panel to a certain color specified by the Field Management System through a message sent to each team's driver's station. When complete, this energizes the Shield Generator, gaining the alliance one ranking point.
+
+====Rendezvous Point====
+An alliance's Rendezvous Point is located underneath the Shield generator, and is marked with each alliance's color on three sides, with the fourth side being a black line separating the two Rendezvous Points. Alliances gain 5 points for each robot parked there when the game ends or 25 for each robot hanging, which will be explained below.
+
+====Generator Switch====
+A Generator Switch is located above each alliance's Rendezvous Point, and is attached to the Shield Generator.  During the final 30 seconds of a match, robots may extend up and attach to the bar on the bottom of the switch.  Each robot attached to the switch and off the ground at the end of the match is worth 25 extra points. The switch is able to swing back and forth when robots attach to it, and there is an additional 15-point bonus for balancing the switch within ~8 degrees of level.  An additional ranking point will also be given to an alliance if their endgame score (i.e., that of climbing and parking) is 65 points or more, which makes the Shield Generator operational.
+
+====Scoring Summary====
+
+{| class="wikitable"
+!Action
+!Autonomous
+!Teleop
+!Ranking Points 
+(in Qualification)
+|-
+|Initiation Line Cross
+|5 points
+|
+|
+|-
+|Power Cells in Bottom Port
+|2 points
+|1 point
+|
+|-
+|Power Cells in Outer Port
+|4 points
+|2 points
+|
+|-
+|Power Cells in Inner Port
+|6 points
+|3 points
+|
+|-
+|Control Panel Rotation Control
+|
+|10 points
+|
+|-
+|Control Panel Position Control
+|
+|20 points
+|
+|-
+|Hang on Shield Generator
+|
+|25 Points
+|
+|-
+|Park below Shield Generator
+|
+|5 Points
+|
+|-
+|Generator Switch Level
+|
+|15 Points
+|
+|-
+|Shield Generator Operational
+|
+|
+|1 RP
+|-
+|Shield Generator Energized
+|
+|
+|1 RP
+|-
+|Foul
+|3 points to opposing alliance 
+|3 points to opposing alliance
+|
+|-
+|Tech Foul
+|15 points to opposing alliance
+|15 points to opposing alliance
+|
+|-
+|Win
+|
+|
+|2 RP
+|-
+|Tie
+|
+|
+|1 RP
+|-
+|}
+<ref>{{Cite web|url=https://firstfrc.blob.core.windows.net/frc2020/Manual/2020FRCGameSeasonManual.pdf|website=firstfrc.blob.core.windows.net|access-date=2020-01-04|title=FIRST Robotics Competition 2020 Game Manual}}</ref>
+
+In qualification rounds, teams are ranked by their Ranking Score, or their average number of Ranking Points (RP) per match. To ensure high placement, it is not only important to win matches, but to complete the secondary objectives as well, to amass as many Ranking Points as possible.
+
+== Events ==
+The competition season for Infinite Recharge was planned to be divided into seven weeks, with many events occurring simultaneously during each week. After Week 7, teams that had qualified were scheduled to compete in the [[FIRST Championship]], held over two weeks in [[Houston]] and [[Detroit]]. However, due to the coronavirus pandemic, a majority of these events including both championships were eventually cancelled. As a result, the final season covered only three weeks.
+
+=== Week 1 ===
+{| class="wikitable mw-collapsible"
+!Event
+!Location
+!Date
+|-
+|Israel District 1
+|[[Haifa|Haifa, Israel]]
+|February 24–25
+|-
+|Israel District 2
+|[[Haifa|Haifa, Israel]]
+|February 26–27
+|-
+|Palmetto
+|[[Myrtle Beach, South Carolina]]
+|February 26 – 29
+|-
+|Miami Valley
+|[[Dayton, Ohio]]
+|February 26 – 29
+|-
+|Great Northern
+|[[Grand Forks, North Dakota]]
+|February 26 – 29
+|-
+|Monterrey
+|[[Monterrey, Nuevo León]]
+|February 26 – 29
+|-
+|Kettering University
+|[[Flint, Michigan]]
+|February 27 – 29
+|-
+|Southfield
+|[[Southfield, Michigan]]
+|February 27 – 29
+|-
+|Traverse City
+|[[Traverse City, Michigan]]
+|February 27 – 29
+|-
+|Granite State
+|[[Salem, New Hampshire]]
+|February 27 – 29
+|-
+|Clackamas Academy 
+|[[Oregon City, Oregon]]
+|February 27 – 29
+|-
+|Greater Kansas City
+|[[Lee's Summit, Missouri]]
+|February 27 – March 1
+|-
+|Los Angeles North
+|[[Thousand Oaks, California]]
+|February 27 – March 1
+|-
+|Northern CT
+|[[Woodstock, Connecticut]]
+|February 28 – March 1
+|-
+|Gainesville
+|[[Gainesville, Georgia]]
+|February 28 – March 1
+|-
+|Wake County
+|[[Holly Springs, North Carolina]]
+|February 28 – March 1
+|-
+|Durham College
+|[[Oshawa, Ontario]]
+|February 28 – March 1
+|-
+|Hatboro-Horsham
+|[[Horsham, Pennsylvania]]
+|February 28 – March 1
+|-
+|Haymarket VA
+|[[Haymarket, Virginia]]
+|February 28 – March 1
+|-
+|Dripping Springs
+|[[Dripping Springs, Texas]]
+|February 28 – March 1
+|-
+|Greenville
+|[[Greenville, Texas]]
+|February 28 – March 1
+|-
+|Glacier Peak
+|[[Snohomish, Washington]]
+|February 28 – March 1
+|-
+|}
+<ref name=":0">{{Cite web|url=https://www.thebluealliance.com/events|title=2020 FRC Event List|website=The Blue Alliance|language=en|access-date=2020-01-05}}</ref>
+
+=== Week 2 ===
+{| class="wikitable mw-collapsible"
+!Event
+!Location
+!Date
+|-
+|Festival de Robotique
+|[[Sherbrooke, Quebec]]
+|March 4 – 7
+|-
+|Arkansas
+|[[Little Rock, Arkansas]]
+|March 4 – 7
+|-
+|Midwest
+|[[Chicago, Illinois]]
+|March 4 – 7
+|-
+|Lake Superior
+|[[Duluth, Minnesota]]
+|March 4 – 7
+|-
+|Northern Lights
+|[[Duluth, Minnesota]]
+|March 4 – 7
+|-
+|Utah
+|[[West Valley City, Utah]]
+|March 4 – 7
+|-
+|Canadian Pacific
+|[[Victoria, British Columbia]]
+|March 4 – 7
+|-
+|Dalton
+|[[Dalton, Georgia]]
+|March 5–7
+|-
+|Jackson
+|[[Spring Arbor, Michigan]]
+|March 5–7
+|-
+|Kettering University
+|[[Flint, Michigan]]
+|March 5–7
+|-
+|Milford
+|[[Highland Township, Oakland County, Michigan|Highland, Michigan]]
+|March 5–7
+|-
+|St. Joseph
+|[[St. Joseph, Michigan]]
+|March 5–7
+|-
+|Kingsford
+|[[Kingsford, Michigan]]
+|March 5–7
+|-
+|West Valley
+|[[Spokane Valley, Washington]]
+|March 5–7
+|-
+|Istanbul
+|[[Istanbul, Turkey]]
+|March 5 – 8
+|-
+|Del Mar
+|[[Del Mar, California]]
+|March 5 – 8
+|-
+|Los Angeles
+|[[El Segundo, California]]
+|March 5 – 8
+|-
+|Waterbury
+|[[Waterbury, Connecticut]]
+|March 6–8
+|-
+|Bloomington
+|[[Bloomington, Indiana]]
+|March 6–8
+|-
+|SE Mass
+|[[Bridgewater, Massachusetts]]
+|March 6–8
+|-
+|Bethesda
+|[[Bethesda, Maryland]]
+|March 6–8
+|-
+|UNC Pembroke
+|[[Pembroke, North Carolina]]
+|March 6–8
+|-
+|Georgian College
+|[[Barrie|Barrie, Ontario]]
+|March 6–8
+|-
+|Humber College
+|[[Toronto|Toronto, Ontario]]
+|March 6–8
+|-
+|Richmond
+|[[Richmond, Virginia]]
+|March 6–8
+|-
+|Channelview
+|[[Channelview, Texas]]
+|March 6–8
+|-
+|Del Rio
+|[[Del Rio, Texas]]
+|March 6–8
+|-
+|Plano
+|[[Plano, Texas]]
+|March 6–8
+|}
+<ref name=":0" />
+
+=== Week 3 ===
+{| class="wikitable mw-collapsible"
+!Event
+!Location
+!Date
+|-
+|Bosphorus
+|[[Istanbul|Istanbul, Turkey]]
+|March 9–11
+|}
+<ref name=":0" />
+
+===Postponed and Cancelled Events===
+On January 30, 2020, FIRST announced that the two Beijing Cultural Exchange regional events that were scheduled for Weeks 3 and 4 would be postponed until after the FIRST Championship due to the [[COVID-19 pandemic]].<ref>{{Cite web|url=https://www.firstinspires.org/robotics/frc/blog/2020-the-coronavirus|title=The Coronavirus|date=2020-01-30|website=FIRST|language=en|access-date=2020-01-30}}</ref> As teams will not have an opportunity to qualify for the 2020 Championship through these events, teams that win Championship-qualifying awards at these two events will qualify for the 2021 Championship instead.
+
+The Taichung Science Park regional, scheduled for Week 2, was postponed for the same reason.<ref>{{Cite web|url=https://www.frctaichungregional.com.tw/en/article/12|title=Postpone Announcement|website=www.frctaichungregional.com.tw|access-date=2020-03-04}}</ref>
+
+On March 5, FIRST Washington announced that the Auburn Mountainview district event, scheduled for Week 2, was cancelled due to the coronavirus.<ref>{{Cite web|url=https://firstwa.org/event/frc-week-2-auburn-mountainview/|website=firstwa.org|access-date=2020-03-05|title=CANCELED – FRC Week 2 Auburn Mountainview}}</ref> This was the first event cancellation or postponement in the United States as a result of the outbreak.
+
+On March 6, the Central New York regional, scheduled for Week 4, was postponed due to the coronavirus.<ref>{{Cite web|url=https://sunypoly.edu/news/suny-poly-first-statement.html|title=SUNY Poly FIRST Statement|website=sunypoly.edu|access-date=2020-03-06}}</ref> The Mount Olive district event, scheduled for Week 2, was cancelled for the same reason.
+
+On March 8, both Australian regionals were postponed due to the coronavirus. All FIRST in Michigan district events after Week 3 were also postponed.<ref>{{Cite web|url=https://firstinmichigan.us/FRC/|title=FRC – FIRST in Michigan|language=en-US|access-date=2020-03-12}}</ref>
+
+At 10 AM on March 12, the Finger Lakes regional was cancelled due to the coronavirus following an announcement from the Monroe County health department, which restricted events over a size of 50 persons.<ref>{{Cite web|url=http://upstatenyfirst.org/2020/03/12/covid-19-update-postponing/|title=Upstate NY FIRST COVID-19 Update – Postponing|website=upstatenyfirst.org|access-date=2020-03-12}}</ref> The FIRST Chesapeake district also cancelled all remaining events, and rescheduled their district championship to June 17–20.<ref>{{Cite web|url=https://www.firstchesapeake.org/9-events/546-covid-19-update|title=COVID-19 Update|website=www.firstchesapeake.org|access-date=2020-03-12}}</ref> Additionally, FIRST Mid-Atlantic has postponed all of its remaining events, including the district championship.<ref>{{Cite web|url=https://midatlanticrobotics.com/wp-content/uploads/2020/03/FMA-2020-Season-Update-Communication.pdf|title=FIRST Mid-Atlantic 2020 Season Postponement|last=|first=|date=2020-03-12|website=FIRST Mid-Atlantic|archive-url=|archive-date=|access-date=2020-03-12}}</ref>
+
+On March 12, 2020, FIRST announced that the 2020 season was suspended effective immediately. It was also announced that both FIRST Championship events would be cancelled.<ref name="COVID-19 Impact" />
+
+On May 13, all suspended events were cancelled by FIRST. Additionally, it was announced that Infinite Recharge will be replayed in 2021 "with adjustments".<ref name="COVID-19 Impact" />
+
+====Events Postponed or Cancelled Before March 12====
+{| class="wikitable"
+!Event
+!Week
+!Location
+|-
+|Taichung Science Park
+|2
+|[[Taichung, Taiwan]]
+|-
+|Mount Olive
+|2
+|[[Mount Olive Township, New Jersey|Mount Olive, New Jersey]]
+|-
+|Beijing Cultural Exchange #1
+|3
+|[[Beijing|Beijing, China]]
+|-
+|New York Tech Valley
+|3
+|[[Troy, New York]]
+|-
+|Southern Cross
+|3
+|[[Sydney Olympic Park|Sydney Olympic Park, Australia]]
+|-
+|Arizona North
+|3
+|[[Flagstaff, Arizona]]
+|-
+|North Shore
+|3
+|[[Reading, Massachusetts]]
+|-
+|Springside Chestnut Hill Academy
+|3
+|[[Philadelphia|Philadelphia, Pennsylvania]]
+|-
+|Robbinsville
+|3
+|[[Trenton, New Jersey]]
+|-
+|St. Joseph
+|3
+|[[Mishawaka, Indiana]]
+|-
+|Eastern Carolina University
+|3
+|[[Greenville, North Carolina]]
+|-
+|Finger Lakes Regional
+|3
+|[[Rochester Institute of Technology|Rochester, New York]]
+|-
+|Orlando
+|3
+|[[Orlando, Florida]]
+|-
+|St. Louis
+|3
+|[[St. Louis|St. Louis, Missouri]]
+|-
+|Oklahoma
+|3
+|[[Oklahoma City|Oklahoma City, Oklahoma]]
+|-
+|Central Valley
+|3
+|[[Fresno, California]]
+|-
+|San Diego
+|3
+|[[Del Mar, California]]
+|-
+|Ryerson University
+|3
+|[[Toronto|Toronto, Ontario]]
+|-
+|Amarillo
+|3
+|[[Amarillo, Texas]]
+|-
+|Fort Worth
+|3
+|[[Fort Worth, Texas]]
+|-
+|New Braunfels
+|3
+|[[New Braunfels, Texas]]
+|-
+|Carleton University
+|3
+|[[Ottawa|Ottawa, Ontario]]
+|-
+|Beijing Cultural Exchange #2
+|4
+|[[Beijing|Beijing, China]]
+|-
+|Central New York
+|4
+|[[Utica, New York]]
+|-
+|South Pacific
+|4
+|[[Sydney Olympic Park|Sydney Olympic Park, Australia]]
+|-
+|Greater Pittsburgh
+|4
+|[[California, Pennsylvania]]
+|-
+|San Francisco
+|4
+|[[San Francisco, California]]
+|-
+|SBPLI Long Island #1
+|4
+|[[Hempstead, New York]]
+|-
+|Huson Valley
+|4
+|[[Suffern, New York]]
+|-
+|Western New England
+|4
+|[[Springfield, Massachusetts]]
+|-
+|WPI
+|4
+|[[Worcester, Massachusetts]]
+|-
+|SBPLI Long Island #2
+|5
+|[[Hempstead, New York]]
+|-
+|UNC Asheville
+|5
+|[[Asheville, North Carolina]]
+|-
+|Silicon Valley
+|6
+|[[San Jose, California]]
+|}
+
+=====Districts Postponed Before March 12=====
+{| class="wikitable"
+!District
+!Location
+!Number of events affected
+|-
+|Pacific Northwest
+|[[Oregon]], [[Washington (state)|Washington]], and [[Alaska]]
+|7
+|-
+|Michigan
+|[[Michigan]]
+|21
+|-
+|Israel
+|[[Israel]]
+|3
+|-
+|Peachtree
+|[[Georgia (U.S. state)|Georgia]]
+|4
+|-
+|Chesapeake
+|[[Washington, D.C.]], [[Maryland]], and [[Virginia]]
+|5
+|-
+|Mid-Atlantic
+|[[Delaware]], [[New Jersey]], and eastern [[Pennsylvania]]
+|7
+|}
+
+====Events Suspended or Cancelled on March 12====
+===== Week 4 =====
+{| class="wikitable mw-collapsible"
+!Event
+!Location
+!Scheduled Date
+|-
+|Central Illinois
+|[[Peoria, Illinois]] 
+|March 18–21
+|-
+|Heartland
+|[[Olathe, Kansas]]
+|March 18–21
+|-
+|Regional Laguna
+|[[Torreón|Torreón, Mexico]]
+|March 18–21
+|-
+|Memphis
+|[[Collierville, Tennessee]]
+|March 18–21
+|-
+|Wisconsin
+|[[Milwaukee|Milwaukee, Wisconsin]]
+|March 18–21
+|-
+|Colorado
+|[[Denver|Denver, Colorado]]
+|March 18–21
+|-
+|Hawaii
+|[[Honolulu|Honolulu, Hawaii]]
+|March 18–21
+|-
+|Columbus
+|[[Columbus, Indiana]]
+|March 19–21
+|-
+|University of Waterloo
+|[[Waterloo, Ontario]]
+|March 19–21
+|-
+|Austin
+|[[Austin, Texas]]
+|March 19–21
+|-
+|Dallas
+|[[Dallas|Dallas, Texas]]
+|March 19–21
+|-
+|Houston
+|[[Houston|Houston, Texas]]
+|March 19–21
+|-
+|Ventura
+|[[Ventura, California]]
+|March 19–22
+|-
+|Guilford County
+|[[Gibsonville, North Carolina]]
+|March 20–22
+|-
+|York University
+|[[Toronto|Toronto, Ontario]]
+|March 20–22
+|}
+
+===== Week 5=====
+{| class="wikitable mw-collapsible"
+!Event
+!Location
+!Scheduled Date
+|-
+|Buckeye
+|[[Cleveland|Cleveland, Ohio]]
+|March 25–28
+|-
+|Smoky Mountains
+|[[Knoxville, Tennessee]]
+|March 25–28
+|-
+|Iowa
+|[[Cedar Falls, Iowa]]
+|March 25–28
+|-
+|Bayou
+|[[Kenner, Louisiana]]
+|March 25–28
+|-
+|10,000 Lakes
+|[[Minneapolis|Minneapolis, Minnesota]]
+|March 25–28
+|-
+|North Star
+|[[Minneapolis|Minneapolis, Minnesota]]
+|March 25–28
+|-
+|Idaho
+|[[Nampa, Idaho]]
+|March 25–28
+|-
+|Sacramento
+|[[Davis, California]]
+|March 25–28
+|-
+|Monterey Bay
+|[[Seaside, California]]
+|March 25–28
+|-
+|Las Vegas
+|[[Las Vegas|Las Vegas, Nevada]]
+|March 25–28
+|-
+|Perry Meridian
+|[[Indianapolis|Indianapolis, Indiana]]
+|March 26–28
+|-
+|Windsor Essex
+|[[Windsor, Ontario]]
+|March 26–28
+|-
+|Pasadena
+|[[Pasadena, Texas]]
+|March 26–28
+|-
+|Greater Boston
+|[[Revere, Massachusetts]]
+|March 27–29
+|-
+|Southern New Hampshire
+|[[Bedford, New Hampshire]]
+|March 27–29
+|-
+|North Bay
+|[[North Bay, Ontario]]
+|March 27–29
+|-
+|El Paso
+|[[El Paso, Texas]]
+|March 27–29
+|}
+
+===== Week 6 =====
+{| class="wikitable"
+!Event
+!Location
+!Scheduled Date
+|-
+|Rocket City
+|[[Huntsville, Alabama]]
+|April 1 – 4
+|-
+|Seven Rivers
+|[[La Crosse, Wisconsin]]
+|April 1 – 4
+|-
+|Aerospace Valley
+|[[Lancaster, California]]
+|April 1 – 4
+|-
+|Arizona West
+|[[Glendale, Arizona]]
+|April 1 – 4
+|-
+|Canadian Rockies
+|[[Calgary, Alberta]]
+|April 1 – 4
+|-
+|Green Country
+|[[Tulsa, Oklahoma]]
+|April 1 – 4
+|-
+|Orange County
+|[[Costa Mesa, California]]
+|April 1 – 4
+|-
+|Mid-Atlantic District Championship
+|[[Bethlehem, Pennsylvania]]
+|April 1 – 4
+|-
+|Texas District Championship
+|[[San Antonio, Texas]]
+|April 1 – 4
+|-
+|Pine Tree
+|[[Lewiston, Maine]]
+|April 2 – 4
+|-
+|Central Missouri
+|[[Sedalia, Missouri]]
+|April 2 – 5
+|-
+|New York City
+|[[New York City, New York]]
+|April 2 – 5
+|-
+|South Florida
+|[[West Palm Beach, Florida]]
+|April 2 – 5
+|-
+|North Carolina District Championship
+|[[Lillington, North Carolina]]
+|April 3 – 5
+|-
+|Indiana District Championship
+|[[Lafayette, Indiana]]
+|April 3 – 5
+|-
+|Hartford
+|[[Hartford, Connecticut]]
+|April 3 – 5
+|-
+|McMaster University
+|[[Hamilton, Ontario]]
+|April 3 – 5
+|-
+|Western University
+|[[London, Ontario]]
+|April 3 – 5
+|}
+
+===== Week 7 =====
+{| class="wikitable"
+!Event
+!Location
+!Scheduled Date
+|-
+|Montreal
+|[[Montreal, Quebec]]
+|April 8 – 11
+|-
+|New England District Championship
+|[[West Springfield, Massachusetts]]
+|April 8 – 11
+|-
+|Ontario District Championship
+|[[Mississauga, Ontario]]
+|April 8 – 11
+|-
+|}
+
+===== [[FIRST Championship]] =====
+{| class="wikitable"
+!Event
+!Location
+!Scheduled Date
+|-
+|FIRST Championship (Houston)
+|[[Houston|Houston, Texas]]
+|April 15 – 18
+|-
+|FIRST Championship (Detroit)
+|[[Detroit|Detroit, Michigan]]
+|April 29 – May 2
+|}
+<ref>{{Cite web|url=https://www.firstinspires.org/covid-19-event-updates|title=FIRST Event Updates|date=2020-03-08|website=FIRST|language=en|access-date=2020-03-09}}</ref><ref>{{Cite web|url=https://www.chiefdelphi.com/t/2020-frc-events-affected-by-covid-19/381041|title=2020 FRC Events Affected by COVID-19|date=2020-03-09|website=Chief Delphi|language=en-US|access-date=2020-03-09}}</ref>
+
+===FIRST Virtual Showcase===
+On May 2, FIRST held a showcase event over Twitch, where they presented several awards that would have been otherwise awarded at the FIRST Championship. This included the Woodie Flowers Award and the Founders Award, which was presented to the FIRST community "in recognition of our members’ use of science and technology to make the world better and stronger."<ref>{{Cite web|title=FIRST Hosts Global Virtual Event to Recognize Robotics Community Achievements From the FIRST RISE, powered by Star Wars: Force for Change, Season|url=https://www.firstinspires.org/about/press-room/first-hosts-global-virtual-event-to-recognize-robotics-community-achievements|date=2020-05-02|website=FIRST|language=en|access-date=2020-05-08}}</ref> Additionally, it was announced that the championship would remain in Houston and Detroit for the 2021 season.
+
+==References==
+{{reflist}}
+
+==Notes==
+{{notelist}}
+
+{{FRCGames}}
+{{FIRST}}
+
+[[Category:FIRST Robotics Competition games]]
+[[Category:2020 in robotics]]

@@ -1,0 +1,180 @@
+{{For|the part of a plant|Umbel}}
+{{Use dmy dates|date=August 2022}}
+{{Infobox software
+ |name = UMBEL
+ |logo =
+ |screenshot =
+ |caption = Upper Mapping and Binding Exchange Layer
+ |developer =  Structured Dynamics
+ |released = 16 July 2008
+ |latest_release_version =  UMBEL 1.50
+ |latest_release_date = 10 May 2016<ref>{{cite web |url=http://umbel.org/resources/news/new-major-upgrade-of-umbel-released-version-1.50/
+ |title=New, Major Upgrade of UMBEL Released: version 1.50 |publisher=UMBEL Web site |date=11 May 2016}}</ref>
+ |operating_system =
+ |genre = {{Flatlist|
+* [[Ontology (information science)|Ontology]]
+* [[Semantic Web]]
+* [[Linked data|Linked Data]]
+* [[Artificial intelligence]]
+}}
+ |programming language = {{Flatlist|
+* [[Web Ontology Language|OWL 2]]
+* [[SKOS]]
+}}
+ |license = [[Creative Commons licenses|Creative Commons Attribution 3.0]]
+}}
+'''UMBEL''' ('''U'''pper '''M'''apping and '''B'''inding '''E'''xchange '''L'''ayer) is a logically organized knowledge [[Graph (discrete mathematics)|graph]] of 34,000 concepts and entity types that can be used in [[information science]] for relating information from disparate sources to one another. It was retired at the end of 2019.<ref>{{cite web |last1=Bergman |first1=Michael K. |title=UMBEL to Be Retired by End of 2019 |url=https://www.mkbergman.com/2229/umbel-to-be-retired-by-end-of-2019/ |website=AI3:::Adaptive Information |language=English |date=7 May 2019}}</ref> UMBEL was first released in July 2008. Version 1.00 was released in February 2011.<ref>See the [http://umbel.org/resources/news/finally-umbel-v-100] release announcement.</ref> Its current release is version 1.50.<ref>See http://umbel.org/resources/news/new-major-upgrade-of-umbel-released-version-1.50/</ref>
+
+The [[symbol grounding problem|grounding]] of this information occurs by common reference to the permanent [[Uniform Resource Identifier|URIs]] for the UMBEL concepts; the connections within the UMBEL [[upper ontology]] enable concepts from sources at different levels of abstraction or specificity to be logically related. Since UMBEL is an [[open-source software|open-source]] extract of the [[Cyc#OpenCyc|OpenCyc]] [[knowledge base]], it can also take advantage of the [[inference engine|reasoning capabilities]] within [[Cyc]].
+
+UMBEL has two means to promote the [[semantic interoperability]] of information:.<ref>{{cite web
+ | url = http://techwiki.umbel.org/index.php/UMBEL_Specification
+ | title = UMBEL (Upper Mapping and Binding Exchange Layer)
+ | website = UMBEL Web Site
+ | access-date = 8 February 2016
+}}</ref> It is:
+
+* An [[ontology (information science)|ontology]] of about 35,000 reference concepts, designed to provide common [[Data mapping|mapping]] points for relating different ontologies or [[Conceptual schema|schema]] to one another, and
+* A [[controlled vocabulary|vocabulary]] for aiding that ontology mapping, including expressions of likelihood relationships distinct from exact identity or equivalence. This vocabulary is also designed for interoperable [[Ontology (information science)#Domain ontologies and upper ontologies|domain ontologies]].
+
+[[File:LOD Cloud 2014-08.svg|thumb|400px|Diagram showing [[Linking Open Data]] datasets.  UMBEL is near the hub, below and to the right of the central DBpedia.]]
+
+UMBEL is written in the [[Semantic Web]] languages of [[SKOS]] and [[Web Ontology Language|OWL 2]]. It is a [[Class (set theory)|class]] structure used in [[Linked data|Linked Data]], along with OpenCyc, [[Yago (database)|YAGO]], and the [[DBpedia]] ontology. Besides data integration, UMBEL has been used to aid [[concept search]],<ref>{{cite book
+|last1= Sah
+|first1= M
+|last2= Wade
+|first2= V
+|year= 2012
+|chapter= A novel concept-based search for the web of data using UMBEL and a fuzzy retrieval model
+|chapter-url= https://www.researchgate.net/publication/262218017
+|title= The Semantic Web: Research and Applications
+|publisher= Springer
+|location= Berlin Heidelberg
+|publication-date= 27 May 2012
+|pages= 103–118
+}}</ref><ref>{{cite book
+|last1= Sah
+|first1= M
+|last2= Wade
+|first2= V
+|year= 2013
+|chapter= Personalized concept-based search and exploration on the web of data using results categorization
+|chapter-url= http://eswc-conferences.org/sites/default/files/papers2013/sah.pdf
+|title= The Semantic Web: Semantics and Big Data
+|publisher= Springer
+|location= Berlin Heidelberg
+|publication-date= 26 May 2013
+|pages= 532–547
+}}</ref> concept definitions,<ref>{{cite book
+|last1= Ballatore
+|first1= Andrea
+|editor1-first= Harlan
+|editor1-last= Onsrud
+|editor2-first= Werner
+|editor2-last= Kuhn
+|year= 2016
+|chapter= Prolegomena for an Ontology of Place
+|chapter-url= http://eprints.cdlib.org/uc/item/0rw1n045.pdf
+|title= Advancing Geographic Information Systems
+|publisher= GSDI Association Press
+|location= Needham, MA
+|pages= 91–103
+}}</ref> [[Ranking (information retrieval)|query ranking]],<ref>{{cite book
+| last1       = Stecher
+| first1      = R
+| last2      = Costache
+| first2     = S
+| last3      = Niederée
+| first3     = C
+| last4      = Nejdl
+| first4     = W
+| title = Active Flow and Combustion Control 2018
+| chapter = Query Ranking in Information Integration
+| date       = 7 June 2010
+| url        = https://www.researchgate.net/publication/220921101
+| journal    = Advanced Information Systems Engineering
+| volume      = 141
+| publisher  = Springer Berlin Heidelberg
+| pages      = 230–235
+| doi      = 10.1007/978-3-642-13094-6_19
+| series      = Notes on Numerical Fluid Mechanics and Multidisciplinary Design
+| isbn      = 978-3-319-98176-5
+| s2cid = 8568849
+}}</ref> ontology integration,<ref>{{cite book
+|last1= Damova
+|first1= M
+|last2= et
+|first2= al.
+|year= 2012
+|editor1-first= Maria Teresa
+|editor1-last= Pazienza
+|chapter= Creation and Integration of Reference Ontologies for Efficient LOD Management
+|chapter-url= http://www.igi-global.com/book/semi-automatic-ontology-development/58294
+|title= Semi-Automatic Ontology Development: Processes and Resources
+|publisher= IGI Global
+|pages= 162–199
+|isbn= 9781466601888
+}}</ref> and ontology consistency checking.<ref>{{cite book
+| last1       = Sheng
+| first1      = Z
+| last2      = Wang
+| first2     = X
+| last3      = Shi
+| first3     = H
+| last4      = Feng
+| first4     = Z
+| title = Web Information Systems and Mining
+| chapter = Checking and Handling Inconsistency of DBpedia
+| date       = 26 October 2012
+| volume      = 7529
+| publisher  = Springer Berlin Heidelberg
+| pages      = 480–488
+| doi      = 10.1007/978-3-642-33469-6_60
+| series      = Lecture Notes in Computer Science
+| isbn      = 978-3-642-33468-9
+}}</ref> It has also been used to build large ontologies<ref>{{cite journal
+| last       = Yablonsky
+| first      = S
+| date       = Jun 2009
+| title      = Semantic Web framework for development of very large ontologies
+| url        = http://www.scielo.org.mx/pdf/poli/n39/n39a4.pdf
+| journal    = Polibits
+| volume = 39
+| issue      = 39
+| pages      = 19–26
+| doi = 10.17562/PB-39-3
+| citeseerx = 10.1.1.186.4474
+}}</ref> and for online [[question answering]] systems.<ref>{{cite journal
+| last1       = Bishop
+| first1      = B
+| last2      = et
+| first2     = al.
+| date       = Jan 2011
+| title      = Factforge: A fast track to the web of data
+| url        = http://www.semantic-web-journal.net/sites/default/files/swj77_2.pdf
+| journal    = Semantic Web
+| volume     = 2
+| issue      = 2
+| pages      = 157–166
+| doi = 10.3233/SW-2011-0040
+}}</ref>
+
+Including OpenCyc, UMBEL has about 65,000 formal mappings to [[DBpedia]], PROTON, [[GeoNames]], and [[schema.org]], and provides linkages to more than 2 million [[Wikipedia]] pages (English version). All of its reference concepts and mappings are organized under a hierarchy of 31 different "super types",<ref>See [http://techwiki.umbel.org/index.php/UMBEL_-_Annex_G Annex G] in the UMBEL specifications.</ref> which are mostly disjoint from one another. Each of these "super types" has its own typology of entity classes to provide flexible tie-ins for external content. 90% of UMBEL is contained in these entity classes.
+
+==See also==
+* [[Cyc]]
+* [[DBpedia]]
+
+==Notes==
+{{Reflist}}
+
+==External links==
+* [https://web.archive.org/web/20181216061818/http://www.umbel.org/ Main page for UMBEL]
+* [http://techwiki.umbel.org/index.php/UMBEL_Specification UMBEL specification], and its accompanying [http://umbel.org/specifications/annexes Annexes A – L, Z]
+
+{{Semantic Web}}
+
+[[Category:Knowledge representation]]
+[[Category:Ontology (information science)]]
+[[Category:Semantic Web]]
+[[Category:Knowledge bases]]

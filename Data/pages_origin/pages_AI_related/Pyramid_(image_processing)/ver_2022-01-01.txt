@@ -1,0 +1,80 @@
+{{FeatureDetectionCompVisNavbox}}
+[[File:image pyramid.svg|thumb|upright=1.2|Visual representation of an image pyramid with 5 levels]]
+'''Pyramid''', or '''pyramid representation''', is a type of [[Scale model|multi-scale]] [[Signal (information theory)|signal]] [[Knowledge representation|representation]] developed by the [[computer vision]], [[image processing]] and [[signal processing]] communities, in which a signal or an image is subject to repeated [[smoothing]] and [[Downsampling|subsampling]]. Pyramid representation is a predecessor to [[scale space|scale-space representation]] and [[multiresolution analysis]].
+
+==Pyramid generation==
+
+There are two main types of pyramids: lowpass and bandpass.
+
+A lowpass pyramid is made by smoothing the image with an appropriate smoothing filter and then subsampling the smoothed image, usually by a factor of 2 along each coordinate direction. The resulting image is then subjected to the same procedure, and the cycle is repeated multiple times. Each cycle of this process results in a smaller image with increased smoothing, but with decreased spatial sampling density (that is, decreased image resolution). If illustrated graphically, the entire multi-scale representation will look like a pyramid, with the original image on the bottom and each cycle's resulting smaller image stacked one atop the other.
+
+A bandpass pyramid is made by forming the difference between images at adjacent levels in the pyramid and performing image interpolation between adjacent levels of resolution, to enable computation of pixelwise differences.<ref>
+E.H. Andelson and C.H. Anderson and J.R. Bergen and P.J. Burt and J.M. Ogden.
+[http://persci.mit.edu/pub_pdfs/RCA84.pdf "Pyramid methods in image processing"].
+1984.
+</ref>
+
+==Pyramid generation kernels==
+
+A variety of different smoothing [[Kernel (image processing)|kernels]] have been proposed for generating pyramids.<ref>{{Cite journal
+| last1 = Burt | first1 = P. J.
+| doi = 10.1016/0146-664X(81)90092-7
+| title = Fast filter transform for image processing
+| journal = Computer Graphics and Image Processing
+| volume = 16
+| pages = 20–51
+|date=May 1981
+}}</ref><ref name=Crowley1981>{{Cite journal |last=Crowley |first=James L. |title=A representation for visual information |publisher=Carnegie-Mellon University, Robotics Institute |date=November 1981  |id=tech. report CMU-RI-TR-82-07 |url=http://www.ri.cmu.edu/publication_view.html?pub_id=37}}</ref><ref>{{cite journal | last1 = Burt | first1 = Peter | last2 = Adelson | first2 = Ted | year = 1983 | title = The Laplacian Pyramid as a Compact Image Code | url = http://persci.mit.edu/pub_pdfs/pyramid83.pdf| journal = IEEE Trans. Commun. | volume = 9 | issue = 4| pages = 532–540 | doi = 10.1109/TCOM.1983.1095851 | citeseerx = 10.1.1.54.299 }}</ref><ref>{{Cite journal
+| last1 = Crowley | first1 = J. L.
+| last2 = Parker | first2 = A. C. | author2-link = Alice C. Parker
+| title = A representation for shape based on peaks and ridges in the difference of low-pass transform
+| journal = IEEE Transactions on Pattern Analysis and Machine Intelligence
+| volume = 6
+| issue = 2
+| pages = 156–170
+|date=March 1984
+| pmid = 21869180
+| doi = 10.1109/TPAMI.1984.4767500
+| citeseerx = 10.1.1.161.3102
+}}</ref><ref>{{cite journal | last1 = Crowley | first1 = J. L. | last2 = Sanderson | first2 = A. C. | year = 1987 | title = Multiple resolution representation and probabilistic matching of 2-D gray-scale shape | url = http://www-prima.inrialpes.fr/Prima/Homepages/jlc/papers/Crowley-Sanderson-PAMI87.pdf| journal = IEEE Transactions on Pattern Analysis and Machine Intelligence | volume = 9 | issue = 1| pages = 113–121 | doi = 10.1109/tpami.1987.4767876 | pmid = 21869381 | citeseerx = 10.1.1.1015.9294 }}</ref><ref>{{cite journal | last1 = Meer | first1 = P. | last2 = Baugher | first2 = E. S. | last3 = Rosenfeld | first3 = A. | year = 1987 | title = Frequency domain analysis and synthesis of image generating kernels | doi = 10.1109/tpami.1987.4767939 | journal = IEEE Transactions on Pattern Analysis and Machine Intelligence | volume = 9 | issue = 4| pages = 512–522 | pmid = 21869409 }}</ref> Among the suggestions that have been given, the ''binomial kernels'' arising from the [[binomial coefficient]]s stand out as a particularly useful and theoretically well-founded class.<ref name=Crowley1981/><ref>Lindeberg, Tony, "[http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A472968&dswid=77 Scale-space for discrete signals]," PAMI(12), No. 3, March 1990, pp. 234-254.</ref><ref>Lindeberg, Tony. [http://www.csc.kth.se/~tony/book.html Scale-Space Theory in Computer Vision], Kluwer Academic Publishers, 1994, {{ISBN|0-7923-9418-6}} (see specifically Chapter 2 for an overview of Gaussian and Laplacian image pyramids and Chapter 3 for theory about generalized binomial kernels and discrete Gaussian kernels)</ref><ref name=LinBre03-ScSp/><ref>See the article on [[multi-scale approaches]] for a very brief theoretical statement</ref> Thus, given a two-dimensional image, we may apply the (normalized) binomial filter (1/4, 1/2, 1/4) typically twice or more along each spatial dimension and then subsample the image by a factor of two. This operation may then proceed as many times as desired, leading to a compact and efficient multi-scale representation. If motivated by specific requirements, intermediate scale levels may also be generated where the subsampling stage is sometimes left out, leading to an ''oversampled'' or ''hybrid pyramid''.<ref name=LinBre03-ScSp/> With the increasing computational efficiency of [[CPU]]s available today, it is in some situations also feasible to use wider supported [[Gaussian filter]]s as smoothing kernels in the pyramid generation steps.
+
+===Gaussian pyramid===
+In a Gaussian pyramid, subsequent images are weighted down using a Gaussian average ([[Gaussian blur]]) and scaled down. Each pixel containing a local average corresponds to a neighborhood pixel on a lower level of the pyramid. This technique is used especially in [[texture synthesis]].
+
+====Laplacian pyramid====
+A Laplacian pyramid is very similar to a Gaussian pyramid but saves the difference image of the blurred versions between each levels. Only the smallest level is not a difference image to enable reconstruction of the high resolution image using the difference images on higher levels.  This technique can be used in [[image compression]].<ref>{{cite journal | last1 = Burt | first1 = Peter J. | last2 = Adelson | first2 = Edward H. | year = 1983 | title = The Laplacian Pyramid as a Compact Image Code | url = http://persci.mit.edu/pub_pdfs/pyramid83.pdf | journal = IEEE Transactions on Communications | volume =  31| issue = 4| pages =  532–540| doi = 10.1109/TCOM.1983.1095851 | citeseerx = 10.1.1.54.299 }}</ref>
+
+===Steerable pyramid===
+A steerable pyramid, developed by [[Eero Simoncelli|Simoncelli]] and others, is an implementation of a multi-scale, multi-orientation [[band-pass filter]] bank used for applications including [[image compression]], [[texture synthesis]], and [[Outline of object recognition|object recognition]].  It can be thought of as an orientation selective version of a Laplacian pyramid, in which a bank of [[steerable filter]]s are used at each level of the pyramid instead of a single Laplacian or [[Gaussian filter]].<ref>{{Cite web |first=Eero |last=Simoncelli |url=http://www.cns.nyu.edu/~eero/STEERPYR/ |title=The Steerable Pyramid |publisher=cns.nyu.edu }}</ref><ref>{{Cite web |first1=Roberto |last1=Manduchi |first2=Pietro |last2=Perona |first3=Doug |last3=Shy |title=Efficient Deformable Filter Banks |url=http://www.vision.caltech.edu/publications/ManduchiPeronaShy_efficient_deformable.pdf |publisher=[[California Institute of Technology]]/[[University of Padua]] |year=1997 }} <br />Also in {{Cite journal |journal=Transactions on Signal Processing |title=Efficient Deformable Filter Banks |volume=46 |issue=4 |pages=1168–1173 |year=1998 |doi=10.1109/78.668570|last1=Manduchi |first1=R. |last2=Perona |first2=P. |last3=Shy |first3=D. |bibcode=1998ITSP...46.1168M |citeseerx=10.1.1.5.3102 }}</ref><ref>Stanley A. Klein ; Thom Carney ; Lauren Barghout-Stein and Christopher W. Tyler
+"Seven models of masking", Proc. SPIE 3016, Human Vision and Electronic Imaging II, 13 (June 3, 1997); {{DOI|10.1117/12.274510}}</ref>
+
+==Applications of pyramids==
+
+===Alternative representation===
+In the early days of computer vision, pyramids were used as the main type of multi-scale representation for computing multi-scale image [[feature detection (computer vision)|features]] from real-world image data. More recent techniques include [[scale space|scale-space representation]], which has been popular among some researchers due to its theoretical foundation, the ability to decouple the subsampling stage from the multi-scale representation, the more powerful tools for theoretical analysis as well as the ability to compute a representation at ''any'' desired scale, thus avoiding the algorithmic problems of relating image representations at different resolution. Nevertheless, pyramids are still frequently used for expressing computationally efficient approximations to [[scale space|scale-space representation]].<ref name=LinBre03-ScSp>Lindeberg, T. and Bretzner, L. [http://kth.diva-portal.org/smash/record.jsf?pid=diva2%3A440700&dswid=-2509 Real-time scale selection in hybrid multi-scale representations], Proc. Scale-Space'03, Isle of Skye, Scotland, Springer Lecture Notes in Computer Science, volume 2695, pages 148-163, 2003.</ref><ref>Crowley, J, Riff O. [http://www-prima.inrialpes.fr/Prima/Homepages/jlc/papers/Crowley-ScaleSpace03.pdf Fast computation of scale normalised Gaussian receptive fields], Proc. Scale-Space'03, Isle of Skye, Scotland, Springer [[Lecture Notes in Computer Science]], volume 2695, 2003.</ref><ref>{{cite journal | last1 = Lowe | first1 = D. G. | year = 2004 | title = Distinctive image features from scale-invariant keypoints | url = http://citeseer.ist.psu.edu/lowe04distinctive.html| journal = International Journal of Computer Vision | volume = 60 | issue = 2| pages = 91–110 | doi=10.1023/B:VISI.0000029664.99615.94| citeseerx = 10.1.1.73.2924 }}</ref>
+
+===Detail manipulation===
+Laplacian image pyramids based on the [[bilateral filter]] provide a good framework for image detail enhancement and manipulation.{{Citation needed|date=June 2019}} The difference images between each layer are modified to exaggerate or reduce details at different scales in an image.
+
+Some [[image compression]] file formats use the [[Adam7 algorithm]] or some other [[Interlacing (bitmaps)|interlacing]] technique.
+These can be seen as a kind of image pyramid.
+Because those file format store the "large-scale" features first, and fine-grain details later in the file,
+a particular viewer displaying a small "thumbnail" or on a small screen can quickly download just enough of the image to display it in the available pixels—so one file can support many viewer resolutions, rather than having to store or generate a different file for each resolution.
+
+==See also==
+* [[Mipmap]]
+* [[Scale space implementation]]
+* [[Level of detail (computer graphics)|Level of detail]]
+* [[JPEG 2000#Multiple resolution representation]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://fourier.eng.hmc.edu/e161/lectures/canny/node3.html Gaussian-Laplacian Pyramid Image Coding] - illustrates methods of [[Downsampling]], [[Upsampling]], and [[Gaussian function|Gaussian]] [[convolution]]
+* [http://www.cse.yorku.ca/~kosta/CompVis_Notes/gaussian_pyramid.pdf The Gaussian Pyramid] - provides a brief introduction for the procedure and cites several sources
+* [http://www.prip.tuwien.ac.at/twist/irregulargraphpyramid.php Laplacian Irregular Graph Pyramid] - Figure 1 on this page illustrates an example of the Gaussian Pyramid
+* [https://archive.today/20130117073108/http://aspdf.com/ebook/the-laplacian-pyramid-as-a-compact-image-code-pdf.html The Laplacian Pyramid as a Compact Image Code] on [http://aspdf.com/ eBook Submission]
+
+[[Category:Image processing]]
+[[Category:Computer vision]]

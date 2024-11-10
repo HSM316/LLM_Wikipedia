@@ -1,0 +1,95 @@
+{{3p|date=September 2018}}
+There are a number of competitions and prizes to promote research in [[artificial intelligence]].
+
+==General machine intelligence==
+The [[Rumelhart Prize|David E. Rumelhart prize]] is an annual award for making a "significant contemporary contribution to the theoretical foundations of human cognition".  The prize is $100,000.
+
+The Human-Competitive Award<ref>{{Cite web|url=http://www.human-competitive.org/|title=Human Competitive|website=www.human-competitive.org}}</ref> is an annual challenge started in 2004 to reward results "competitive with the work of creative and inventive humans". The prize is $10,000.  Entries are required to use [[evolutionary computing]].
+
+The [[IJCAI Award for Research Excellence]] is a biannual award given at the [[IJCAI]] conference to researcher in [[artificial intelligence]] as a recognition of [[excellence]] of their career.
+
+The 2011 [[Federal Virtual World Challenge]], advertised by The White House<ref name="White House Publication, Challenge.Gov Fact Sheet">{{cite web|url=https://obamawhitehouse.archives.gov/sites/default/files/microsites/ostp/challenge-gov-fact-sheet.pdf  |year=2010|access-date=June 7, 2013|via=[[NARA|National Archives]]  |work=[[Office of Science and Technology Policy]]  |title= White House Publication, Challenge.Gov Fact Sheet}}</ref> and sponsored by the [[U.S. Army Research Laboratory]]'s Simulation and Training Technology Center, <ref name="White House Publication, Challenge.Gov Fact Sheet" /><ref name="Federal Virtual Worlds Challenge Winners Announced">{{cite web|url=http://www.arl.army.mil/www/default.cfm?page=571  |publisher=United States Army Research Laboratory |year=2011|access-date=June 7, 2013|title= Federal Virtual Worlds Challenge Winners Announced}}</ref><ref name="Army chooses winners in battle of the virtual worlds">{{cite web|url=http://defensesystems.com/articles/2011/06/02/army-names-winners-of-federal-virtual-worlds-contest.aspx  |publisher=DefenseSystems.com |year=2011|access-date=June 7, 2013|title= Army chooses winners in battle of the virtual worlds}}</ref> held a competition offering a total of $52,000 USD in cash prize awards for general artificial intelligence applications, including "adaptive learning systems, intelligent conversational bots, adaptive behavior (objects or processes)" and more.<ref name="2011 FVWC">{{cite web|url=http://science.dodlive.mil/2010/09/08/announcing-the-2011-federal-virtual-worlds-challenge/ |publisher="Armed with Science," a daily blog site published by the United States Department of Defense |year=2010|access-date=September 7, 2013|title= 2011 US DoD Artificial Intelligence Competition}}</ref>
+
+The Machine Intelligence Prize is awarded annually by the [[British Computer Society]] for progress towards machine intelligence.<ref>{{Cite web|url=http://www.bcs-sgai.org/micomp/|title=SGAI: BCS Machine Intelligence Competition|website=www.bcs-sgai.org}}</ref>
+
+The [[Kaggle]] - "the world's largest community of data scientists compete to solve most valuable problems".
+
+==Conversational behaviour==
+The [[Loebner prize]] is an annual competition to determine the best [[Turing test]] competitors. The winner is the computer system that, in the judges' opinions, demonstrates the "most human" conversational behaviour, they have an additional prize for a system that in their opinion passes a Turing test. This second prize has not yet been awarded.
+
+==Automatic control==
+
+===Pilotless aircraft===
+[[Image:VT Searching.png|thumb|right|200px|International Aerial Robotics Competition]]
+The [[International Aerial Robotics Competition]] is a long-running event begun in 1991 to advance the state of the art in fully autonomous air vehicles.  This competition is restricted to university teams (although industry and governmental sponsorship of teams is allowed).  Key to this event is the creation of flying robots which must complete complex missions without any human intervention.  Successful entries are able to interpret their environment and make real-time decisions based only on a high-level mission directive (e.g., "find a particular target inside a building having certain characteristics which is among a group of buildings 3 kilometers from the aerial robot launch point").  In 2000, a $30,000 prize was awarded during the 3rd Mission (search and rescue), and in 2008, $80,000 in prize money was awarded at the conclusion of the 4th Mission (urban reconnaissance).
+
+===Driverless cars===
+[[Image:desertToCity.jpg|thumb|right|200px|Darpa Grand Challenge]]
+The [[DARPA Grand Challenge]] is a series of competitions to promote [[driverless car]] technology, aimed at a congressional mandate stating that by 2015 one-third of the operational ground combat vehicles of the US Armed Forces should be unmanned.<ref>[http://www.darpa.mil/grandchallenge04/sponsor_toolkit/congress_lang.pdf Congressional Mandate] {{Webarchive|url=https://web.archive.org/web/20080216094908/http://www.darpa.mil/grandchallenge04/sponsor_toolkit/congress_lang.pdf |date=2008-02-16 }} DARPA</ref> While the first race had no winner, the second awarded a $2 million prize for the autonomous navigation of a hundred-mile trail, using [[GPS]], computers and a sophisticated array of sensors. In November 2007, DARPA introduced the [[DARPA Urban Challenge]], a sixty-mile urban area race requiring vehicles to navigate through traffic. In November 2010 the US Armed Forces extended the competition with the $1.6 million prize [[Multi Autonomous Ground-robotic International Challenge]] to consider cooperation between multiple vehicles in a simulated-combat situation.
+
+[[Roborace]] will be a global motorsport championship with [[Autonomous car|autonomously driving]], [[Electric vehicle|electrically powered]] vehicles. The series will be run as a support series during the [[Formula E]] championship for electric vehicles.<ref name="announcement">{{cite web|url=http://www.fiaformulae.com/en/news/2015/november/formula-e-kinetik-announce-roborace-a-global-driverless-championship.aspx|title=Formula E & Kinetik announce driverless support series|publisher=fiaformulae.com|date=2015-11-27}}</ref> This will be the first global championship for driverless cars.<ref>{{cite web|url=https://www.engadget.com/2015/11/28/formula-e-roborace/|title=Formula E is planning the first racing series for driverless cars|publisher=engadget.com|date=2015-11-28}}</ref>
+
+==Data-mining and prediction==
+The [[Netflix Prize]] was a competition for the best [[collaborative filtering]] [[algorithm]] that predicts user ratings for [[film]]s, based on previous ratings.  The competition was held by [[Netflix]], an online [[DVD]]-rental service{{Citation needed|date=March 2019}}.  The prize was $1,000,000.
+
+The Pittsburgh Brain Activity Interpretation Competition<ref>{{Cite web|url=http://www.ebc.pitt.edu/PBAIC.html|archive-url=https://web.archive.org/web/20080310070925/http://www.ebc.pitt.edu/PBAIC.html|url-status=dead|title=The Experience Based Cognition Project<!-- Bot generated title -->|archive-date=March 10, 2008}}</ref> will reward analysis of [[fMRI]] data "to predict what individuals perceive and how they act and feel in a novel Virtual Reality world involving searching for and collecting objects, interpreting changing instructions, and avoiding a threatening dog."  The prize in 2007 was $22,000.
+
+The Face Recognition Grand Challenge (May 2004 to March 2006) aimed to promote and advance [[facial recognition system|face recognition technology]].<ref>{{Cite web |url=http://face.nist.gov/frgc/ |title=NIST Face Recognition Grand Challenge<!-- Bot generated title --> |access-date=2008-03-27 |archive-url=https://web.archive.org/web/20080410072057/http://face.nist.gov/frgc/ |archive-date=2008-04-10 |url-status=dead }}</ref>
+
+The [[American Meteorological Society]]'s artificial intelligence competition involves learning a [[classifier (mathematics)|classifier]] to characterise precipitation based on meteorological analyses of environmental conditions and polarimetric radar data.<ref>{{Cite web |url=http://www.nssl.noaa.gov/ai2008/ |title=Archived copy |access-date=2009-01-06 |archive-url=https://web.archive.org/web/20091113074224/http://www.nssl.noaa.gov/ai2008/ |archive-date=2009-11-13 |url-status=dead }}</ref>
+
+==Cooperation and coordination==
+
+===Robot football===
+[[Image:Robocup.legged.leauge.2004.nk.jpg|thumb|right|200px|A legged league game from RoboCup 2004 in Lisbon, Portugal.]]
+The [[RoboCup]] and [[Federation of International Robot-soccer Association|FIRA]] are annual international robot soccer competitions. The International RoboCup Federation challenge is by 2050 "a team of fully autonomous humanoid robot soccer players shall win the soccer game, comply with the official rule of the FIFA, against the winner of the most recent World Cup."<ref>[http://www.robocup.org/Press/pr/RoboCup2003_020603eng.pdf The RoboCup2003 Presents: Humanoid Robots playing Soccer] {{webarchive|url=https://web.archive.org/web/20080216094909/http://www.robocup.org/Press/pr/RoboCup2003_020603eng.pdf |date=2008-02-16 }} PRESS RELEASE: 2 June 2003</ref>
+
+==Logic, reasoning and knowledge representation==
+[[Image:Agda proof.jpg|thumb|200px|right|Excerpt of a proof in [[Agda (theorem prover)|agda2]]]]
+The [[Herbrand Award]] is a prize given by [[Conference on Automated Deduction|CADE]] Inc. to honour persons or groups for important contributions to the field of [[automated theorem proving|automated deduction]].  The prize is $1000.
+
+The [[CADE ATP System Competition]] (CASC) is a yearly competition of fully automated theorem provers for classical first order logic associated with the [[Conference on Automated Deduction|CADE]] and [[IJCAR]] conferences. The competition was part of the [[Alan Turing Centenary Conference]] in 2012, with total prizes of 9000 GBP given by [[Google]].
+
+The SUMO prize is an annual prize for the best open source ontology extension of the [[Suggested Upper Merged Ontology|Suggested Upper Merged Ontology (SUMO)]], a formal theory of terms and logical definitions describing the world.<ref>{{Cite web|url=http://www.adampease.org/OP/|archive-url=https://web.archive.org/web/20080509192629/http://www.ontologyportal.org/prize.html|url-status=dead|title=The Annual SUMO Prize|archive-date=May 9, 2008|website=www.adampease.org}}</ref>  The prize is $3000.
+
+The [[Hutter Prize|Hutter Prize for Lossless Compression of Human Knowledge]] is a cash prize which rewards compression improvements on a specific 100 MB English text file. The prize awards 500 euros for each one percent improvement, up to €50,000. The organizers believe that text compression and AI are equivalent problems and 3 prizes were already given, at around € 2k.
+
+The Cyc TPTP Challenge is a competition to develop reasoning methods for the [[Cyc]] comprehensive ontology and database of everyday common sense knowledge.<ref>{{cite web|url=http://www.opencyc.org/doc/tptp_challenge_problem_set|archive-url=https://web.archive.org/web/20120319123128/http://www.opencyc.org/doc/tptp_challenge_problem_set|url-status=dead|archive-date=2012-03-19|title=The Cyc TPTP Challenge Problem Set|website=opencyc.org}}</ref>  The prize is 100 euros for "each winner of two related challenges".<ref>{{cite web|url=http://www.opencyc.org/announce/Cyc%20ATP%20Challenges%20at%20CASC-J4|archive-url=https://web.archive.org/web/20120216063326/http://www.opencyc.org/announce/Cyc%20ATP%20Challenges%20at%20CASC-J4|archive-date=2012-02-16|url-status=dead|title= Cyc ATP Challenges at CASC-J4! |website=opencyc.org}}</ref>
+
+The [[Eternity II]] challenge was a [[constraint satisfaction]] problem very similar to the [[Tetravex]] game.  The objective is to lay 256 tiles on a 16x16 grid while satisfying a number of constraints.  The problem is known to be [[NP-complete]].<ref>{{cite journal | doi = 10.1016/j.ipl.2006.04.010 | volume=99 | title=Tetravex is NP-complete | journal=Information Processing Letters | year=2006 | pages=171–174| arxiv=0903.1147 | last1=Takenaga | first1=Yasuhiko | last2=Walsh | first2=Toby | issue=5 | s2cid=7228681 }}</ref> The prize was US$2,000,000.<ref>http://uk.eternityii.com/competition-rules-eternity-2/</ref> The competition ended in December 2010.
+
+==Games==
+The [[World Computer Chess Championship]] has been held since 1970.  The International Computer Games Association continues to hold an annual [[Computer Olympiad]] which includes this event plus computer competitions for many other games.
+
+The Ing Prize was a substantial money prize attached to the World [[Computer Go]] Congress, starting from 1985 and expiring in 2000.  It was a graduated set of handicap challenges against young professional players with increasing prizes as the handicap was lowered.  At the time it expired in 2000, the unclaimed prize was 400,000 NT dollars for winning a 9-stone handicap match.
+
+The AAAI [[General Game Playing]] Competition is a competition to develop programs that are effective at [[General Game Playing|general game playing]].<ref>{{Cite web|url=http://games.stanford.edu/competition/competition.html|archive-url=https://web.archive.org/web/20080629220940/http://games.stanford.edu/competition/competition.html|url-status=dead|title=General Game Playing<!-- Bot generated title -->|archive-date=June 29, 2008}}</ref><ref>{{Cite web|url=http://www.aaai.org/Conferences/AAAI/2007/aaai07game.php|title=AAAI-07 General Game Playing Competition|website=www.aaai.org}}</ref> Given a definition of a game, the program must play it effectively without human intervention.  Since the game is not known in advance the competitors cannot especially adapt their programs to a particular scenario.  The prize in 2006 and 2007 was $10,000.
+
+The General Video Game AI Competition (GVGAI<ref>{{Cite web|url=http://www.gvgai.net/|title=The GVG-AI Competition|website=www.gvgai.net}}</ref>) poses the problem of creating artificial intelligence that can play a wide, and in principle unlimited, range of games. Concretely, it tackles the problem of devising an algorithm that is able to play any game it is given, even if the game is not known a priori. Additionally, the contests poses the challenge of creating level and rule generators for any game is given. This area of study can be seen as an approximation of General Artificial Intelligence, with very little room for game dependent heuristics. The competition runs yearly in different tracks: single player planning,<ref>{{Cite web|url=http://www.diego-perez.net/papers/GVGAI2014Competition.pdf|title=Single Player Planning GVGAI}}</ref> two-player planning,<ref>{{Cite web|url=http://www.diego-perez.net/papers/GVGAI20162PCompetition.pdf|title=Two-Player Planning GVGAI}}</ref> single player learning,<ref>{{Cite web|url=http://www.liujialin.tech/publications/GVGAISingleLearning_manual.pdf|title=Single Player Learning GVGAI}}</ref> level<ref>{{Cite web|url=http://www.diego-perez.net/papers/GVGLG.pdf|title=Level Generation GVGAI}}</ref> and rule<ref>{{Cite web|url=http://www.diego-perez.net/papers/GVGRuleGeneration.pdf|title=Rule Generation GVGAI}}</ref> generation, and each track prizes ranging from 200 to 500 US dollars for winners and runner-ups.
+
+The 2007 Ultimate Computer Chess Challenge was a competition organised by [[FIDE|World Chess Federation]] that pitted
+[[Deep Fritz]] against [[Deep Junior]].  The prize was $100,000.
+
+The annual [[Arimaa#Arimaa Challenge|Arimaa Challenge]] offered a $10,000 prize until the year 2020 to develop a program that plays the board game [[Arimaa]] and defeats a group of selected human opponents. In 2015, David Wu's bot bot_sharp beat the humans, losing only 2 games out of 9.<ref>{{Cite web|url=http://arimaa.com/arimaa/challenge/2015/showGames.cgi|title=2015 Arimaa Challenge Match|website=arimaa.com}}</ref> As a result, the Arimaa Challenge was declared over and David Wu received the prize of $12,000 ($2,000 being offered by third-parties for 2015's championship).
+
+[[2K Australia]] is offering a prize worth A$10,000 to develop a game-playing bot that plays a [[first-person shooter]].  The aim is to convince a panel of judges that it is actually a human player. The competition started in 2008 and was won in 2012. A new competition is planned for 2014.<ref>{{Cite web|url=http://www.botprize.org/|title=Bot Prize &#124; Robots, AI, and Media}}</ref>
+
+The [[Google AI Challenge]]<ref>[https://web.archive.org/web/20100908001350/http://www.ai-contest.com/index.php]</ref> was a bi-annual online contest organized by the [[University of Waterloo]] Computer Science Club and sponsored by [[Google]] that ran from 2009 to 2011. Each year a game was chosen and contestants submitted specialized [[computer game bot|automated bots]] to play against other competing bots.
+
+[[Cloudball]] had its first round in Spring 2012 and finished on June 15. It is an international artificial intelligence programming contest, where users continuously submit the actions their soccer teams will take in each time step, in simple high level C# code.
+
+==See also==
+* [[Artificial intelligence]]
+* [[Progress in artificial intelligence]]
+* [[Glossary of artificial intelligence]]
+
+==References==
+{{reflist|30em}}
+
+{{Robot Soccer Competitions}}
+{{Robotics}}
+
+[[Category:Artificial intelligence]]
+[[Category:Computer science competitions]]
+[[Category:Science and technology awards]]
+[[Category:Robotics competitions|*]]

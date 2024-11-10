@@ -1,0 +1,13 @@
+{{compu-AI-stub}}
+{{Unreferenced|date=August 2009}}
+'''JaCoP''' is a constraint solver for [[constraint satisfaction problem]]s. It is written in [[Java (programming language)|Java]] and it is provided as a Java library. JaCoP has an interface to the [[MiniZinc]] and [[AMPL]] modeling languages. Its main focus is on ease of use, modeling power, as well as efficiency. It has a large collection of global constraints implemented to facilitate problem modeling. JaCoP is actively developed since year 2001. Krzysztof Kuchcinski and Radoslaw Szymanek are the core developers of this Java library. There are number of people who have contributed to JaCoP development in addition to core developers. JaCoP development has been influenced by more than 20 research articles from Constraint Programming community. It has been used as a tool in more than 30 research articles.{{Citation needed|date=August 2009}} There are many different examples provided so it is easier to learn how to use JaCoP.{{Citation needed|date=November 2020}}
+
+The JaCoP project contains a [[Wrapper library|wrapper]] for the [[Scala (programming language)|Scala programming language]], and a wrapper for [[Clojure]] is maintained as a separate project [https://github.com/aengelberg/clocop CloCoP].
+
+==External links==
+* [http://jacop.osolpro.com/ JaCoP homepage]
+
+
+{{Mathematical optimization software}}
+{{DEFAULTSORT:Jacop (Solver)}}
+[[Category:Constraint programming]]

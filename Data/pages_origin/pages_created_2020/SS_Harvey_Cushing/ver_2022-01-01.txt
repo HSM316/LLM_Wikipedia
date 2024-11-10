@@ -1,0 +1,124 @@
+{{Use dmy dates|date=December 2019}}
+{{Short description|Liberty ship of WWII}}
+{|{{Infobox ship begin}}
+{{Infobox ship image
+|Ship image=
+|Ship caption= 
+}}
+{{Infobox ship career
+|Hide header=
+|Ship country=United States
+|Ship flag={{USN flag|1946}}
+|Ship name= ''Harvey Cushing''
+|Ship namesake= [[Harvey Cushing]]
+|Ship owner = [[War Shipping Administration]] (WSA)
+|Ship operator = [[Marine Transport Lines, Inc.]]
+|Ship ordered = as type (EC2-S-C1) hull, [[Maritime Commission|MC]] hull 1210
+|Ship builder = [[St. Johns River Shipbuilding Company]], [[Jacksonville, Florida|Jacksonville]], Florida{{sfn|St. John's River SBC|2010}}    
+|Ship original cost=$1,455,316{{sfn|MARCOM}}
+|Ship yard number=18
+|Ship way number=6
+|Ship laid down= 5 September 1943
+|Ship launched= 31 October 1943
+|Ship completed= 11 November 1943
+|Ship sponsor= [[Betsey Cushing Roosevelt Whitney]]
+|Ship identification = *[[Maritime call sign|Call sign]]: KUJO
+*{{ICS|Kilo}}{{ICS|Uniform}}{{ICS|Juliet}}{{ICS|Oscar}}{{sfn|MARCOM}}
+|Ship motto=
+|Ship fate= Laid up in the, [[National Defense Reserve Fleet]], [[Mobile, Alabama|Mobile]], Alabama, 30 August 1946
+|Ship status= Sold for commercial use, 9 December 1946, removed from fleet, 25 February 1947
+|Ship notes=           
+|Ship badge=
+}}
+{{Infobox ship career
+|Hide header=title
+|Ship country=Italy
+|Ship flag={{shipboxflag|Italy|civil}}
+|Ship name= ''Eretteo''
+|Ship namesake= 
+|Ship owner = [[Fratelli d'Amico]]
+|Ship operator = [[A.F. Klaveness & Co.]]
+|Ship fate= Grounded, 20 September 1965
+|Ship status= Refloated and scrapped
+|Ship notes=           
+|Ship badge=
+}}
+{{Infobox ship characteristics
+| Hide header = 
+| Header caption = {{sfn|Davies|2004|p=23}}
+| Ship class ={{Liberty ship class}}
+| Ship type =
+| Ship tonnage = {{Liberty ship tonnage}}
+| Ship displacement = {{Liberty ship displacement}}
+| Ship length = {{Liberty ship length}}
+| Ship beam = {{Liberty ship beam}}
+| Ship draft = {{Liberty ship draft}}
+| Ship capacity = {{Liberty ship cargo capacity}}
+| Ship hold depth = 
+| Ship power = {{Liberty ship power}}
+| Ship propulsion = {{Liberty ship propulsion|8}}
+| Ship complement = {{Liberty ship complement}}
+| Ship armament = {{Liberty ship armament}}
+| Ship speed = {{Liberty ship speed}}
+| Ship notes = 
+}}
+|}
+
+'''SS ''Harvey Cushing''''' was a [[Liberty ship]] built in the [[United States]] during [[World War II]]. She was named after [[Harvey Cushing]], an American [[neurosurgeon]], [[pathologist]], writer and [[draftsman]]. A pioneer of brain surgery, he was the first exclusive neurosurgeon and the first person to describe [[Cushing's disease]].
+
+==Construction==
+''Harvey Cushing'' was laid down on 5 September 1943, under a [[Maritime Commission]] (MARCOM) contract, MC hull 1210, by the [[St. Johns River Shipbuilding Company]], [[Jacksonville, Florida|Jacksonville]], Florida; she was sponsored by [[Betsey Cushing Roosevelt Whitney]], the daughter of the namesake, and was launched on 31 October 1943.{{sfn|St. John's River SBC|2010}}{{sfn|MARCOM}}
+
+==History==
+She was allocated to [[Marine Transport Lines, Inc.]], on 11 November 1943. On 30 August 1946, she was laid up in the [[National Defense Reserve Fleet]], [[Mobile, Alabama|Mobile]], Alabama. She was sold for commercial use, 9 December 1946, to the government of [[Italy]], for $544,506. She was removed from the fleet on 25 February 1947. ''Harvey Cushing'' was renamed ''Eretteo'' and reflagged in Italy. On 20 September 1965, she ran aground on [[Sakhalin Island]], and broke in two. She was refloated by the [[Soviet Union]] and towed to [[Sovetskaya Gavan]], where she was most likely scrapped.{{sfn|MARAD}}
+
+==References==
+{{reflist}}
+
+==Bibliography==
+{{refbegin}}
+* {{cite web
+  | url = http://shipbuildinghistory.com/shipyards/emergencylarge/stjohnsriver.htm
+  | title = St. John's River Shipbuilding, Jacksonville FL
+  | publisher =  www.ShipbuildingHistory.com
+  | date = 16 October 2010
+  | access-date = 31 December 2019
+  | ref = {{sfnRef|St. John's River SBC|2010}}
+  }}
+* {{cite web  
+  |url= https://vesselhistory.marad.dot.gov/ShipHistory/Detail/2110
+  |title=Harvey Cushing
+  |author=Maritime Administration
+  |work=Ship History Database Vessel Status Card
+  |publisher=U.S. Department of Transportation, Maritime Administration
+  |access-date= 31 December 2019
+  |ref={{sfnref|MARAD}}
+  }}
+* {{cite web
+  |last= Davies
+  |first= James
+  |url= http://www.ww2ships.com/acrobat/us-os-001-f-r00.pdf
+  |title= Specifications (As-Built)
+  |page=23
+  |date= May 2004
+  |access-date= 31 December 2019
+  }}
+* {{cite web
+  |url= http://usmaritimecommission.de/query.php?datalist=1&typeofquery=Name%20of%20Ship&valueofquery=Harvey%20Cushing&code=B1210a
+  |title= SS ''Harvey Cushing''
+  |access-date= 31 December 2019
+  |ref= {{sfnRef|MARCOM}}
+  }}
+{{refend}}
+
+ <!-- non-breaking space to keep AWB drones from altering the space before the navbox-->
+
+{{Liberty ships H}}
+{{MARCOM ships St. John's River SB Co.}}
+
+{{DEFAULTSORT:Harvey Cushing}}
+[[Category:Liberty ships]]
+[[Category:Ships built in Jacksonville, Florida]]
+[[Category:1943 ships]]
+[[Category:Mobile Reserve Fleet]]
+[[Category:Liberty ships transferred to Italy]]

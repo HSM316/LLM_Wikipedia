@@ -1,0 +1,63 @@
+{{Infobox
+|name    = EoT
+|title   = Eyes of Things
+|headerstyle  = background:#ccf;
+|labelstyle   = background:#ddf;
+|header1 = Information
+|label2  = Funding agency
+|data2   = [[European Commission]] 
+|label3  = Framework Programme
+|data3   = [[Framework Programmes for Research and Technological Development|Horizon 2020]]
+|label4  = Project type
+|data4   = Innovation Action
+|label5  = Participants
+|data5   = [[University of Castilla–La Mancha]], AWAIBA, Movidius, [[Thales Group|THALES]], [[German Research Centre for Artificial Intelligence|DFKI]], [https://www.fluxguide.com/ Fluxguide], Evercam, [[Affective science|nVISO]]
+|label6  = Start
+|data6   = January 2015
+|label7  = End
+|data7   = June 2018
+|label8  = Website
+|data8   = http://eyesofthings.eu
+|belowstyle = background:#ddf;
+}}
+
+'''Eyes of Things''' (EoT) is the name of a project funded by the [[Framework Programmes for Research and Technological Development#Horizon 2020|European Union’s Horizon 2020 Research and Innovation Programme]] under grant agreement number 643924.<ref>{{cite journal|title=Eyes of Things|first1=Oscar|last1=Deniz|first2=Noelia|last2=Vallez|first3=Jose L.|last3=Espinosa-Aranda|first4=Jose M.|last4=Rico-Saavedra|first5=Javier|last5=Parra-Patino|first6=Gloria|last6=Bueno|first7=David|last7=Moloney|first8=Alireza|last8=Dehghani|first9=Aubrey|last9=Dunne|first10=Alain|last10=Pagani|first11=Stephan|last11=Krauss|first12=Ruben|last12=Reiser|first13=Martin|last13=Waeny|first14=Matteo|last14=Sorci|first15=Tim|last15=Llewellynn|first16=Christian|last16=Fedorczak|first17=Thierry|last17=Larmoire|first18=Marco|last18=Herbst|first19=Andre|last19=Seirafi|first20=Kasra|last20=Seirafi|date=21 May 2017|journal=Sensors|volume=17|issue=5|pages=1173|doi=10.3390/s17051173|pmid=28531141|pmc=5470918}}</ref><ref>{{cite web|url=https://www.newscientist.com/article/2137835-smart-doll-fitted-with-ai-chip-can-read-your-childs-emotions/|title=Smart doll fitted with AI chip can read your child's emotions|website=NewScientist.com|access-date=26 January 2018}}</ref><ref>Emotion-reading doll is a somewhat creepy example of what´s possible with AI, by Luke Dormehl, Digital Trends, June 22, 2017</ref><ref>Low-Cost Visually Intelligent Robots with EoT, D. Moloney, D. Pena, A. Dunne et al. Workshop Robotics: Science and Systems (RSS 2016), Michigan (USA) [http://juxi.net/workshop/deep-learning-rss-2016/papers/Moloney%20-%20Low-Cost%20Visually%20Intelligent%20Robots%20with%20EoT.pdf]</ref><ref>[http://cordis.europa.eu/news/rcn/122843_en.html Kick off of new 'Eyes of Things' project. CORDIS Wire]</ref><ref>[http://www.vision-systems.com/articles/2015/01/computer-vision-platform-being-developed-by-european-commission.html Computer vision platform being developed by European Commission]</ref><ref>HiPEAC members will coordinate a European project on Smart Cyber-Physical Systems, HiPEAC Info n. 41, page 12, January 2015, [https://www.hipeac.org/assets/public/publications/newsletter/hipeacinfo41.pdf]{{Dead link|date=December 2019 |bot=InternetArchiveBot |fix-attempted=yes }}</ref> The purpose of the project, which is funded under the Smart [[Cyber-physical system]]s topic,<ref>{{cite web|url=http://ec.europa.eu/research/participants/portal/desktop/en/opportunities/h2020/topics/78-ict-01-2014.html|title=ICT 2014 - Information and Communications Technologies, Topic: Smart CyberPhysical Systems|website=Europa.eu|access-date=26 January 2018}}</ref> is to develop a generic hardware-software platform for embedded, efficient (i.e. battery-operated, wearable, mobile), [[computer vision]], including [[deep learning]] inference.
+
+On November 29, 2018, the [[European Space Agency]] announced that it was testing the suitability of the device for space applications in advance of a flight in a [[CubeSat|Cubesat]].<ref>{{Cite web|url=https://www.esa.int/Our_Activities/Space_Engineering_Technology/ESA_team_blasts_Intel_s_new_AI_chip_with_radiation_at_CERN|title=ESA team blasts Intel's new AI chip with radiation at CERN|last=ESA|date=2018-12-04|website=European Space Agency|language=en-GB|access-date=2018-12-04}}</ref> 
+[[File:Eyes of Things.jpg|thumb|Eyes of Things board]]
+
+==Motivation==
+EoT is based on the following tenets:<ref>A Vision for the Future. D. Moloney, O. Deniz. IEEE Consumer Electronics 4(2), April 2015, [http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7084763&filter%3DAND%28p_IS_Number%3A7084739%29]</ref>
+* Future embedded systems will have more intelligence and cognitive functionality. Vision is paramount to such intelligent capacity
+* Unlike other sensors, vision requires intensive processing. Power consumption must be optimized if vision is to be used in mobile and wearable applications
+* Cloud processing of edge-captured images is not sustainable. The sheer amount of visual data generated cannot be transferred to the cloud. Bandwidth is not sufficient and cloud servers cannot cope with it.
+
+==Partners==
+*[http://visilab.etsii.uclm.es/?page_id=39 VISILAB] group at [[University of Castilla–La Mancha]] (Coordinator)
+* [[Movidius]] 
+* Awaiba 
+* Thales Security Solutions & Systems 
+* DFKI 
+* [https://www.fluxguide.com/ Fluxguide]
+* Evercam 
+* nVISO
+
+== Awards ==
+
+* 2019 Electronic Component and Systems Innovation Award by the European Commission
+* 2018 HiPEAC Tech Transfer Award 
+* 2018 EC Innovation Radar - highlighting excellent innovations Award
+* 2018 Internet of Things (IoT) Technology Research Award Pilot by Google
+* 2016 Semifinalist "THE VISION SHOW STARTUP COMPETITION", Global Association for Vision Information, Boston US
+
+==See also==
+* [[Wearable camera]]
+* [[Computer vision]]
+* [[Internet of Things]]
+* [[Embedded systems]]
+* [[Edge computing]]
+
+==References==
+{{reflist|30em}}
+
+[[Category:Computer vision]]

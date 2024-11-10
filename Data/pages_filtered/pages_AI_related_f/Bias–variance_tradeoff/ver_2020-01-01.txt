@@ -1,0 +1,75 @@
+In statistics and machine learning, the bias–variance tradeoff is the property of a set of predictive models whereby models with a lower bias in parameter estimation have a higher variance of the parameter estimates across samples, and vice versa. The bias–variance dilemma or bias–variance problem is the conflict in trying to simultaneously minimize these two sources of error that prevent supervised learning algorithms from generalizing beyond their training set:
+ The bias error is an error from erroneous assumptions in the learning algorithm. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
+ The variance is an error from sensitivity to small fluctuations in the training set. High variance can cause an algorithm to model the random noise in the training data, rather than the intended outputs (overfitting).
+
+The bias–variance decomposition is a way of analyzing a learning algorithm's expected generalization error with respect to a particular problem as a sum of three terms, the bias, variance, and a quantity called the irreducible error, resulting from noise in the problem itself.
+
+This tradeoff applies to all forms of supervised learning: classification, regression (function fitting),Bias–variance decomposition, In Encyclopedia of Machine Learning. Eds. Claude Sammut, Geoffrey I. Webb. Springer 2011. pp. 100–101 and structured output learning. It has also been invoked to explain the effectiveness of heuristics in human learning.
+
+Motivation
+The bias-variance tradeoff is a central problem in supervised learning. Ideally, one wants to choose a model that both accurately captures the regularities in its training data, but also generalizes well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. High-variance learning methods may be able to represent their training set well but are at risk of overfitting to noisy or unrepresentative training data. In contrast, algorithms with high bias typically produce simpler models that don't tend to overfit but may underfit their training data, failing to capture important regularities.
+
+Models with high variance are usually more complex (e.g. higher-order regression polynomials), enabling them to represent the training set more accurately. In the process, however, they may also represent a large noise component in the training set, making their predictions less accurate – despite their added complexity. In contrast, models with higher bias tend to be relatively simple (low-order or even linear regression polynomials) but may produce lower variance predictions when applied beyond the training set.
+
+Bias–variance decomposition of squared error
+Suppose that we have a training set consisting of a set of points  and real values  associated with each point . We assume that there is a function with noise , where the noise, , has zero mean and variance .
+
+We want to find a function , that approximates the true function  as well as possible, by means of some learning algorithm. We make "as well as possible" precise by measuring the mean squared error between  and : we want  to be minimal, both for  and for points outside of our sample. Of course, we cannot hope to do so perfectly, since the  contain noise ; this means we must be prepared to accept an irreducible error in any function we come up with.
+
+Finding an  that generalizes to points outside of the training set can be done with any of the countless algorithms used for supervised learning. It turns out that whichever function  we select, we can decompose its expected error on an unseen sample  as follows:
+
+where
+
+and
+
+The expectation ranges over different choices of the training set , all sampled from the same joint distribution . The three terms represent:
+ the square of the bias of the learning method, which can be thought of as the error caused by the simplifying assumptions built into the method. E.g., when approximating a non-linear function  using a learning method for linear models, there will be error in the estimates  due to this assumption;
+ the variance of the learning method, or, intuitively, how much the learning method  will move around its mean;
+ the irreducible error . 
+
+Since all three terms are non-negative, this forms a lower bound on the expected error on unseen samples.
+
+The more complex the model  is, the more data points it will capture, and the lower the bias will be. However, complexity will make the model "move" more to capture the data points, and hence its variance will be larger.
+
+Derivation
+The derivation of the bias–variance decomposition for squared error proceeds as follows.
+For notational convenience, abbreviate  and . First, recall that, by definition, for any random variable , we have
+
+Rearranging, we get:
+
+Since  is deterministic
+
+Thus, given  and , implies 
+
+Also, since 
+
+Thus, since  and  are independent, we can write
+
+ Application to regression 
+The bias–variance decomposition forms the conceptual basis for regression regularization methods such as Lasso and ridge regression. Regularization methods introduce bias into the regression solution that can reduce variance considerably relative to the ordinary least squares (OLS) solution.  Although the OLS solution provides non-biased regression estimates, the lower variance solutions produced by regularization techniques provide superior MSE performance.
+
+Application to classification
+The bias–variance decomposition was originally formulated for least-squares regression. For the case of classification under the 0–1 loss (misclassification rate), it is possible to find a similar decomposition. Alternatively, if the classification problem can be phrased as probabilistic classification, then the expected squared error of the predicted probabilities with respect to the true probabilities can be decomposed as before.
+
+Approaches
+Dimensionality reduction and feature selection can decrease variance by simplifying models. Similarly, a larger training set tends to decrease variance. Adding features (predictors) tends to decrease bias, at the expense of introducing additional variance. Learning algorithms typically have some tunable parameters that control bias and variance; for example,
+ linear  and Generalized linear models can be regularized to decrease their variance at the cost of increasing their bias.
+ In artificial neural networks, the variance increases and the bias decreases as the number of hidden units increase. Like in GLMs, regularization is typically applied.
+ In k-nearest neighbor models, a high value of  leads to high bias and low variance (see below).
+ In instance-based learning, regularization can be achieved varying the mixture of prototypes and exemplars.
+ In decision trees, the depth of the tree determines the variance. Decision trees are commonly pruned to control variance.
+
+One way of resolving the trade-off is to use mixture models and ensemble learning.Jo-Anne Ting, Sethu Vijaykumar, Stefan Schaal, Locally Weighted Regression for Control. In Encyclopedia of Machine Learning. Eds. Claude Sammut, Geoffrey I. Webb. Springer 2011. p. 615Scott Fortmann-Roe. Understanding the Bias–Variance Tradeoff. 2012. http://scott.fortmann-roe.com/docs/BiasVariance.html
+For example, boosting combines many "weak" (high bias) models in an ensemble that has lower bias than the individual models, while bagging combines "strong" learners in a way that reduces their variance.  
+
+Model validation methods such as cross-validation (statistics) can be used to tune models so as to optimize the trade-off. 
+
+k-nearest neighbors
+In the case of -nearest neighbors regression, when the expectation is taken over the possible labeling of a fixed training set, a closed-form expression exists that relates the bias–variance decomposition to the parameter :
+
+where  are the  nearest neighbors of  in the training set. The bias (first term) is a monotone rising function of , while the variance (second term) drops off as  is increased. In fact, under "reasonable assumptions" the bias of the first-nearest neighbor (1-NN) estimator vanishes entirely as the size of the training set approaches infinity.
+
+Application to human learning
+While widely discussed in the context of machine learning, the bias-variance dilemma has been examined in the context of human cognition, most notably by Gerd Gigerenzer and co-workers in the context of learned heuristics. They have argued (see references below) that the human brain resolves the dilemma in the case of the typically sparse, poorly-characterised training-sets provided by experience by adopting high-bias/low variance heuristics. This reflects the fact that a zero-bias approach has poor generalisability to new situations, and also unreasonably presumes precise knowledge of the true state of the world. The resulting heuristics are relatively simple, but produce better inferences in a wider variety of situations.
+
+Geman et al. argue that the bias-variance dilemma implies that abilities such as generic object recognition cannot be learned from scratch, but require a certain degree of “hard wiring”   that is later tuned by experience.  This is because model-free approaches to inference require impractically large training sets if they are to avoid high variance.

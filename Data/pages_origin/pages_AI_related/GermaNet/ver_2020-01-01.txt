@@ -1,0 +1,69 @@
+{{primary sources|date=November 2011}}
+'''GermaNet''' is a lexical-semantic net for the [[German language]] that relates [[noun]]s, [[verb]]s, and [[adjective]]s semantically by grouping lexical units that express the same concept into ''[[synset]]s'' and by defining [[semantic]] relations between these synsets.<ref name="Storjohann2010">{{cite book|author=Petra Storjohann|title=Lexical-semantic relations: theoretical and practical perspectives|url=https://books.google.com/books?id=OYBWObJ547AC&pg=PA165|accessdate=16 November 2011|date=23 June 2010|publisher=John Benjamins Publishing Company|isbn=978-90-272-3138-3|pages=165–}}</ref> GermaNet is free for academic use, after signing a license. GermaNet has much in common with the English [[WordNet]] and can be viewed as an on-line [[thesaurus]] or a light-weight [[ontology (information science)|ontology]]. GermaNet has been developed and maintained within various projects at the research group for General and Computational Linguistics, [[University of Tübingen]] since 1997. It has been integrated into the [[EuroWordNet]], a multilingual lexical-semantic database.<ref name="homepage">{{Cite web|url=http://www.sfs.uni-tuebingen.de/GermaNet/|title=Welcome to the GermaNet Homepage|website=www.sfs.uni-tuebingen.de|accessdate=November 20, 2019}}</ref>
+
+==Database==
+
+===Contents===
+GermaNet  partitions the lexical space into a set of concepts that are interlinked by semantic relations. A semantic concept is modeled by a ''[[synset]]''. A synset is a set of words (called lexical units) where all the words are taken to have the same or almost the same meaning.Thus a synset is a set of synonyms grouped under one definition, or "gloss".
+
+In addition to the gloss, synsets are labeled with their syntactic function and accompanied by example sentences for each distinct meaning in the synset.<ref name="GernEdiT">V. Henrich, E. Hinrichs. 2010. [http://www.lrec-conf.org/proceedings/lrec2010/pdf/264_Paper.pdf GernEdiT - The GermaNet Editing Tool]. In: ''Proceedings of the Seventh Conference on International Language Resources and Evaluation''.</ref>
+Just as in WordNet, for each word category the semantic space is divided into a number of [[semantic field]]s closely related to major nodes in the semantic network: ''Ort'', or "location", ''Körper'', or "body", etc.<ref name="homepage" />
+
+The following is an up-to-date statistics of GermaNet's version 11.0 contents (release May 2016):
+
+*Number of synsets: 110167
+*Number of Lexical Units: 142814
+*Number of Literals: 126348
+*Number of Conceptual Relations: 123678
+*Number of Lexical Relations (synonymy excluded): 4203
+*Number of Split Compounds: 66047
+*Number of Interlingual Index (ILI) Records: 28567
+*Number of Wiktionary Sense Descriptions: 28552<ref name="homepage" />
+
+===Format===
+All GermaNet data is stored in a relational [[PostgreSQL]] 5 database. The database model follows the internal structure of GermaNet: there are tables to store synsets, lexical units, conceptual and lexical relations, etc.<ref name="GernEdiT"/> The distribution format of all GermaNet data is [[XML]]. The two types of files, one for synsets and the other for relations, represent all data that is available in the GermaNet database.
+
+==Interfaces==
+There are several [[Application Programming Interface]]s (API) available for [[Java (programming language)|Java]]<ref name="api">{{Cite web|url=http://www.sfs.uni-tuebingen.de/lsd/tools.shtml|title=Applications and Tools|website=www.sfs.uni-tuebingen.de|accessdate=November 20, 2019}}</ref> and for [[Perl]]. These APIs are distributed freely and provide easy access to all information in various versions of GermaNet.
+
+==Licenses==
+GermaNet 11.0 (released May 2016) is free for academic. It can be distributed under one of the following types of [[software license agreement|license agreements]]:
+* ''Academic Research Agreement'': free for the research purposes of academic institutions. Licenses are not given to individuals, and those seeking a license are required to talk to an academic advisor.
+
+* ''Research and Development Agreement'': applies to non-academic institutions and research consortia. To be used strictly for technology development and internal research.
+
+* ''Commercial Agreement'': applies to non-academic institutions and commercial enterprises. It permits technology development and internal research, as well as giving the non-exclusive right to distribute and market any derived product or service.<ref>{{Cite web|url=http://www.sfs.uni-tuebingen.de/lsd/licenses.shtml|title=Licenses|website=www.sfs.uni-tuebingen.de|access-date=2017-03-26}}</ref>
+
+==Open-de-WordNet==
+
+Open-de-WordNet is freely available WordNet-compatible alternative to GermaNet.<ref name="odenet">{{Cite web|url=https://github.com/hdaSprachtechnologie/odenet|title=GitHub - hdaSprachtechnologie/odenet: Open German WordNet|date=November 14, 2019|accessdate=November 20, 2019|via=GitHub}}</ref>
+
+==Applications==
+GermaNet has been used for a variety of applications, including semantic analysis, shallow recognition of implicit document structure, compound analysis;<ref>Manuela Kunze and Dietmar Rösner. 2004. Issues in Exploiting GermaNet as a Resource in Real Applications.</ref> for analyzing sectional preferences,<ref>Sabine Schulte im Walde, 2004. GermaNet Synsets as Selectional Preferences in Semantic Verb Clustering.</ref> for word sense disambiguation,<ref>Saito et al., 2002. Evaluation of GermanNet: Problems Using GermaNet for Automatic Word Sense Disambiguation.</ref> etc.
+== See also==
+* [[Hyponym]]
+* [[Is-a]]
+* [[Machine-readable dictionary]]
+* [[Ontology (information science)]]
+* [[Semantic network]]
+* [[Semantic Web]]
+* [[Synonym Ring]]
+* [[Taxonomy (general)|Taxonomy]]
+* [[ThoughtTreasure]]
+* [[UBY-LMF]]
+* [[Word sense disambiguation]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{Official website|http://www.sfs.uni-tuebingen.de/GermaNet/}}
+* [https://weblicht.sfs.uni-tuebingen.de/germanet/ GernWeb browsing tool]
+
+{{Authority control}}
+[[Category:German language]]
+[[Category:Thesauri]]
+[[Category:Lexical databases]]
+[[Category:Knowledge representation]]
+[[Category:Computational linguistics]]
+[[Category:Online dictionaries]]

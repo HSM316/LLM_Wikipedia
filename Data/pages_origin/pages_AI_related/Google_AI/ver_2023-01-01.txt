@@ -1,0 +1,44 @@
+{{short description|Google division dedicated to AI}}
+{{use mdy dates|date=June 2022}}
+{{distinguish|google.com.ai}}
+{{Infobox company
+| name = Google AI
+| industry = [[Artificial intelligence]]
+| founded = {{start date and age|2017}}
+| owner = [[Google]]
+| website = {{url|www.ai.google}}
+}}
+
+'''Google AI''' is a division of [[Google]] dedicated to [[artificial intelligence]].<ref>{{Cite web|url=http://realmoney.thestreet.com/articles/05/18/2017/google-has-ai-lead-and-putting-it-good-use|title=Google Has an AI Lead and Is Putting It to Good Use|last=Jhonsa|first=Eric|date=18 May 2017|website=[[TheStreet.com]]|access-date=19 May 2017}}</ref> It was announced at [[Google I/O]] 2017 by CEO [[Sundar Pichai]].<ref>{{cite web|title=Google I/O'17: Google Keynote|url=https://www.youtube.com/watch?v=Y2VF8tmLFHw&t=52m47s|website=[[YouTube]]|publisher=Google Developers|access-date=18 May 2017}}</ref>
+
+==Projects==
+* Serving cloud-based TPUs ([[tensor processing unit]]s) in order to develop machine learning software.<ref>{{Cite web|url=https://www.bloomberg.com/news/articles/2017-05-17/google-to-sell-new-ai-supercomputer-chip-via-cloud-business|title=Google to Offer New AI 'Supercomputer' Chip Via Cloud|last=Bergen|first=Mark|date=17 May 2017|website=[[Bloomberg News]]|access-date=19 May 2017}}</ref><ref>{{Cite web|url=http://fortune.com/2017/05/17/google-artificial-intelligence-tpu-chip/|title=Google Hopes This New Technology Will Make Artificial Intelligence Smarter|last=Vanian|first=Jonathan|date=17 May 2017|website=[[Fortune (magazine)|Fortune]]|access-date=19 May 2017}}</ref>
+* Development of [[TensorFlow]].<ref>{{cite web|title=TensorFlow – Google.ai|url=https://google.ai/tools/tensorflow/#?modal_active=none|website=Google.ai|access-date=21 May 2017}}</ref>
+* The TPU research cloud provides free access to a cluster of cloud TPUs to researchers engaged in open-source machine learning research.<ref>{{cite web|title=TPU Research Cloud|url=https://sites.research.google/trc|website=sites.research.google|access-date=13 June 2022}}</ref>
+* Portal to over 5500 (as of September 2019) research publications by Google staff.<ref>{{cite web |title=Publications – Google AI |url=https://ai.google/research/pubs/ |website=Google AI |access-date=18 September 2019 |language=en}}</ref>
+* Magenta: a deep learning research team exploring the role of machine learning as a tool in the creative process.<ref>{{cite web|title=Magenta|url=https://magenta.tensorflow.org|website=Magenta.tensorflow.org|access-date=19 Feb 2019}}</ref> The team has released many [[open source|open source projects]] allowing artists and musicians to extend their processes using AI.<ref>{{cite web|title=tenorflow/magenta|url=https://github.com/tensorflow/magenta|website=github.com|access-date=19 Feb 2019}}</ref>
+*[[Sycamore processor|Sycamore]]: a new 54-[[qubit]] programmable [[Quantum computing|quantum processor]].<ref>{{Cite web|url=http://ai.googleblog.com/2019/10/quantum-supremacy-using-programmable.html|title=Quantum Supremacy Using a Programmable Superconducting Processor|website=Google AI Blog|language=en|access-date=2020-04-01}}</ref>
+*[[LaMDA]]: a family of conversational neural language models<ref>{{Cite web |last=Condon |first=Stephanie |date=May 18, 2021 |title=Google I/O 2021: Google unveils new conversational language model, LaMDA |url=https://www.zdnet.com/article/google-io-google-unveils-new-conversational-language-model-lamda/ |url-status=live |archive-url=https://web.archive.org/web/20210518194954/https://www.zdnet.com/article/google-io-google-unveils-new-conversational-language-model-lamda/ |archive-date=May 18, 2021 |access-date=June 12, 2022 |website=[[ZDNet]]}}</ref>
+
+==References==
+{{reflist}}
+
+== Further reading ==
+{{ref begin}}
+* ''[https://fossbytes.com/google-puts-all-of-their-ai-stuff-on-google-ai/ Google Puts All Of Their A.I. Stuff On Google.ai, Announces Cloud TPU]''
+* ''[http://mobilesyrup.com/2017/05/17/google-collects-ai-initiatives-under-google-ai/ Google collects its AI initiatives under Google.ai]''
+* ''[https://web.archive.org/web/20170827035527/http://wsoe.org/google-collects-ai-based-services-across-the-company-into-google-ai/ Google collects AI-based services across the company into Google.ai]'' – "Google.ai is a collection of products and teams across Alphabet with a focus on AI."
+* ''[https://char.gd/blog/2017/googles-deep-focus-on-ai-is-paying-off Google's deep focus on AI is paying off]''
+{{ref end}}
+
+==External links==
+*{{Official website|http://ai.google}}
+
+{{Differentiable computing}}
+{{Google LLC}}
+
+[[Category:Google]]
+[[Category:Artificial intelligence]]
+[[Category:2022 controversies in the United States]]
+
+{{Google-stub}}

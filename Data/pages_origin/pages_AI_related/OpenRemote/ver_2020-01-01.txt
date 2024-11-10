@@ -1,0 +1,43 @@
+{{Multiple issues|
+{{notability|Products|date=June 2015}}
+{{advert|date=June 2015}}
+}}
+
+'''OpenRemote''' is an [[Open-source software|open source]] project,<ref>{{Cite web | url=https://github.com/openremote/openremote | title=GitHub - openremote/Openremote: OpenRemote v3.}}</ref> which integrates many different protocols and solutions available for smart building, and smart city [[automation]], and offers [[Visualization software|visualization]] tools. OpenRemote Inc. was created to enable the sponsorship of the OpenRemote open source project – in the vein of [[WildFly|JBoss]]. OpenRemote follows a Professional Open Source methodology, licensing under the [[Affero General Public License]] version 3.
+
+The founders of OpenRemote are [[Marc Fleury]], founder of JBoss, and Juha Lindfors.
+
+== Designer ==
+
+In any automation project there are two roles: the ‘technicians’ and the ‘[[user interface]] designer’. The designer defines the use cases, and translates this into the behavior as well as UI of the system. For [[Business-to-business|B2B]] projects, these roles are filled in by installers and [[Unix|UX]]/UI designers. In the ultimate B2C product these roles can be automated and both handled by the end-user. OpenRemote has chosen for a set of [[Cloud computing|cloud]]-based configuration tools, with a clear distinction between the technical integration and UI design. These support both roles. The advantage of cloud-based tools is the possibility of remote support, both in project configuration as well as updates and maintenance.
+
+A second choice they made was to have the integration and automation logic of devices and sensors, organized by a local runtime controller. The rationale is based on organizing an intrinsically stable and responsive system, meaning independence at the lowest level possible with the least dependency of higher level systems. An internet connection is only required for communication to (sub)systems outside the own network, or during configuration of the system. The presence of non [[IP address|IP]] based wired or wireless protocols, is another reason of requiring a local controller.
+
+The third choice made was to use an [[Object-modeling technique|object model]] to describe devices, commands and data, allowing for the programming of rules (using Drools), macros, commands, and designing a UI, independent of the underlying brand or protocol. This limits the system programming effort as the protocol specific programming will be eliminated.
+
+== Manager ==
+
+Manager 3.0 is created to handle larger multi tenant applications. It includes a much more flexible (and better) ID & account management solution.
+
+== Architecture ==
+
+The [[software architecture]] can be split into three main elements:
+# cloud-based configuration tools, both for configuration as well as UI Design
+# local runtime controller, integrating between different protocols, and managing automation rules
+# control panels (apps, webview) used in a local network or when accessing a runtime controller from a remote location via a remote proxy service.
+
+== Reception ==
+
+OpenRemote is applied in a large range of home automation applications. Many examples can be found on their website [https://openremote.io openremote.io]. Recently, they have gained some traction with licensing. In addition they are adopted by installers who apply the tools to building automation, [[Smart city|smart cities]] and healthcare.<ref>[http://www.technologyreview.com/news/519666/free-software-ties-the-internet-of-things-together MIT Technology review]</ref>
+<ref>[https://www.rijksoverheid.nl/actueel/nieuws/2016/11/22/plan-voor-slimmere-grensbewaking-schiphol-winnaar-venj-innovatieprijs Winner Safety Innovation Competition Dutch Ministry of Safety & Justice 2016]</ref>
+
+==References==
+{{Reflist}}
+
+== External links ==
+* [http://openremote.org Community website]
+* [http://www.openremote.io Professional website]
+
+
+
+[[Category:Free software]]

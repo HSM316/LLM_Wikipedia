@@ -1,0 +1,24 @@
+{{Infobox software
+|name = ADS-AC
+|author = Tarvo Korrovits
+|released = {{start date|1992}}
+|programming language = [[C (programming language)|C]]
+|operating system = [[Windows]]
+|language = English
+|genre = [[Artificial intelligence|AI]]
+|license = [[GNU General Public License|GPL]]
+|website = {{URL|adsproject.sourceforge.net}}
+}}
+
+'''ADS-AC''' is an experimental [[open-source model|open source]] program which implements Absolutely Dynamic System (ADS), a proposed mechanism for [[Artificial consciousness|Artificial Consciousness (AC)]].
+
+==Theory==
+ADS-AC uses a system of "points" or "nodes" connected by "links" to create a structure of "knots". The nodes have no properties other than their links to other nodes in order to maintain their absolute dynamicity.
+
+==See also==
+* [[Artificial Consciousness]]
+* [[Artificial Intelligence]]
+* [[Artificial general intelligence|Strong AI]]
+
+[[Category:Artificial intelligence]]
+[[Category:1992 software]]

@@ -1,0 +1,37 @@
+'''MIBE architecture''' (''Motivated Independent BEhavior'') is a [[behavior-based robotics|behavior-based]] robot architecture developed at [http://www.airlab.elet.polimi.it/ Artificial Intelligence and Robotics Lab] of [[Politecnico di Milano]] by Fabio La Daga and [http://home.dei.polimi.it/bonarini/index.html Andrea Bonarini] in 1998. MIBE architecture is based on the idea of [[animat]] and derived from [[subsumption architecture]], formerly developed by [[Rodney Brooks]] and colleagues at [[Massachusetts Institute of Technology|MIT]] in 1986.
+
+==Description==
+
+MIBE architecture is based on the assumption that autonomy is grounded on [[motivation]] and arises from superimposition of synergetic activities in response to multiple [[Drive theory|drives]]. An autonomous agent is developed to achieve one or more goals (primary goals), but secondary goals also originate from environmental and functional constraints. MIBE architecture defines both primary and secondary goals as ''needs''. A specific drive originates from each need. MIBE architecture generates and weights all these drives in an explicit ''motivational state''. The higher the urgency to satisfy a specific need, the higher its weight in the motivational state and the higher the drive to perform a behavior that satisfies the given need.
+
+==Differences from subsumption architecture==
+MIBE architecture mainly departs from [[subsumption architecture]] due to the introduction of a top-level ''motivational structure'' which determines behavior priorities at run time. That is, there are not layers and static hierarchical dependencies between behavioral modules, but each behavior constantly competes with others for taking control of the agent through the top level motivational state from which specific drives originate (via predetermined or reinforcement-learned functions).
+
+While subsumption architecture is built on a predetermined hierarchy of behavioral modules, MIBE architecture consists of a more complex structure, where several behaviors (that always compete for taking control of the robot via the motivational state) can activate and control dynamically an adaptive set of underlying modules, called ''abilities''. Each behavior performs its task by activating and tuning the abilities it needs. Abilities supply the functional modules for performing specific activities and may activate each other in a hierarchical structure in the same way behaviors use abilities. Both behaviors and abilities are implemented by the same kind of functional modules, but a fundamental difference exists: behaviors are ''self-activating'' modules in response to a robot+environment state, whilst abilities are just ''functional blocks'' activated and controlled by behaviors for accomplishing their tasks (or by higher-level abilities that have been already activated by a behavior). Behaviors exist for satisfying specific needs, whilst abilities are not related to any need, because they are used by behaviors for accomplishing their tasks, but have no meaning alone.
+
+The list of abilities needed by each module (behavior or ability) is represented by its ''activation tree''; the complete set of activation trees can be represented by a system-wide acyclic ''activation graph''.
+
+Behaviors are activated on the basis of their specific drive pressure in the motivational state at run time: the most motivated behavior (i.e., the most urgent or convenient) is always activated. Nevertheless, less motivated behaviors could even be activated at the same time, with the constraint they cannot use any of the abilities already collected by a more motivated behavior which is already acting. The BCR subsystem (''Behavior Conflict Resolver'') ensures no conflicting behaviors (i.e., sharing one or more abilities in their activation trees) can be active at the same time.
+
+The main advantage of MIBE architecture is its high modularity and ''molecularity'': new abilities and behaviors can be added easily without changing the existing modular structure. Similarly, a behavior can be modified or removed with no functional effects on other modules. ''Drives'' can be added to or removed from the motivational structure or modified with no need to change the previous system structure, except rebalancing the drive-generation functions.
+
+The main issue of MIBE architecture is the difficulty of modeling the optimal boundaries of the ''state-space'' by shaping the motivational structure (i.e.: tuning the drive-generation functions or their learning algorithms) so that the autonomous agent performs the best behavior for each robot+environment state (however the same difficulty also concerns the development of autonomous agents based on subsumption architecture, although the static hierarchical dependencies between behavioral modules make them a bit easier to set up).
+
+== See also ==
+* [[Agent architecture]]
+* [[Behavior-based robotics]]
+* [[Cognitive architecture]]
+* [[Emergent behavior]]
+* [[Hierarchical control system]]
+* [[Robotic paradigm]]s
+* [[Scruffies]]
+* [[Situated]]
+
+==References==
+
+* F. La Daga, A. Bonarini (1998), "Behavioral control architecture with motivational approach for autonomous agents", [[Politecnico di Milano]], [http://www.dei.polimi.it/index.php?&idlang=eng Dipartimento di Elettronica e Informazione (DEI)].
+* M. Colombetti, M. Dorigo (1998), "Robot Shaping: An experiment in behavior engineering", Intelligent Robotics and Autonomous Agents series, MIT Press
+* D. McFarland, T. Bosser (1993), "Intelligent behavior in animals and robots", MIT Press/Bradford books
+[[Category:Software architecture]]
+[[Category:Cognitive architecture]]
+[[Category:Robot architectures]]

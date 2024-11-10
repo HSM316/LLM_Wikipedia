@@ -1,0 +1,51 @@
+{{primary sources|date=August 2017}}
+{{Infobox company
+| logo = OpenIO Logo.svg
+| logo_alt = OpenIO Object Storage Logo
+| type = 
+| industry = [[Information technology]], [[Computer data storage|Data storage]], [[Data processing]]
+| founded = 2015
+| defunct = 2020
+| hq_location_country = [[France]]
+| products = 
+| owner = 
+| website = 
+}}
+'''OpenIO''' offered [[object storage]] for a wide range of high-performance applications.<ref name="openio.io">{{Cite news|title=OpenIO Object Storage Overview|language=en|work=OpenIO|url=https://www.openio.io/product/product-overview}}</ref> OpenIO was founded in 2015 by Laurent Denel ([[Chief executive officer|CEO]]), Jean-François Smigielski ([[Chief technology officer|CTO]]) and five other co-founders; it leveraged [[Open-source software|open source software]], developed since 2006,<ref>{{Cite news|last=Nicholas|first=Philippe|date=2016-07-15|title=The History Boys: Object storage... from the beginning|language=en|work=The Register|url=https://www.theregister.co.uk/2016/07/15/the_history_boys_cas_and_object_storage_map/}}</ref> based on a [[Grid computing|grid technology]] that enabled dynamic behaviour and supported heterogenous hardware. In October 2017 OpenIO completed a $5 million funding round.<ref>{{Cite news|last=Dillet|first=Romain|date=2017-10-24|title=OpenIO raises $5 million to build your own Amazon S3 on any storage device|language=en|work=TechCrunch|url=https://techcrunch.com/2017/10/24/openio-raises-5-million-to-build-your-own-amazon-s3-on-any-storage-device/}}</ref> In July 2020 OpenIO had been acquired by [[OVH]]<ref>{{Cite web|date=2020-07-22|title=With the acquisition of OpenIO, OVHcloud's ambition is to create the best Object Storage offer on the market|url=https://www.ovh.com/world/news/press/cpl1582.acquisition-openio-ovhclouds-ambition-create-best-object-storage-offer-market|website=OVHcloud}}</ref> and withdrawn from the market to become the core technology of [[OVHcloud]] object storage offering.<ref>{{Cite web|title= Object Storage - OVHcloud|url=https://www.ovhcloud.com/en/public-cloud/object-storage/|website=OVHcloud}}</ref>
+
+==Software==
+OpenIO is a [[Software-defined storage|software-defined]] [[object storage|object store]] that supports [[Amazon S3|S3]] and can be deployed [[On-premises software|on-premises]], [[Cloud computing|cloud-hosted]] or at the [[Edge computing|edge]], on any hardware mix. It has been designed from the beginning for performance and cost-efficiency at any scale,<ref>{{Cite news|last=Mellor|first=Chris|date=2015-12-05|title=Openio's objective is opening up object storage space|language=en|work=The Register|url=https://www.theregister.co.uk/2015/12/02/openio_object_storage_upstart/}}</ref> and it has been optimized for [[Big data|Big Data]], [[High Performance Computing|HPC]] and [[Artificial intelligence|AI]].<ref>{{Cite web|title=OpenIO {{!}} High Performance Object Storage for Big Data and AI|url=https://www.openio.io/|website=OpenIO|language=en}}</ref>
+
+OpenIO stores objects within a flat structure within a massively distributed directory with [[Indirection (computing)|indirections]], which allows the data query path to be independent of the number of nodes and the performance not to be affected by the growth of capacity. Servers are organized as a grid of nodes massively [[Distributed computing|distributed]], where each node takes part in directory and storage services, which ensures that there is no [[single point of failure]] and that new nodes are automatically discovered and immediately available without the need to rebalance data.<ref name=":0">{{Cite web|title=OpenIO Core Concepts|url=https://docs.openio.io/latest/source/arch-design/sds_concepts.html|website=OpenIO Documentation}}</ref>
+
+The software is built on top of a technology that ensures optimal data placement based on real-time metrics and allows the addition or removal of storage devices with automatic performance and [[Load balancing (computing)|load impact optimization]].<ref>{{Cite news|title=OpenIO Object Storage for Big Data|language=en|work=OpenIO|url=https://www.openio.io/resources/openio-overview}}</ref><ref>{{Cite web|date=2017-07-18|title=Why We Designed an Object Store with a Conscience|url=https://staging-openio.kinsta.cloud/blog/sds-a-storage-system-with-a-conscience|website=OpenIO Blog|language=en}}</ref> For data protection OpenIO has synchronous and asynchronous [[Replication (computing)|replication]] with multiple copies, and an [[erasure coding]] implementation based on [[Reed–Solomon error correction|Reed-Solomon]] that can be deployed in one data center or geo-distributed or stretched [[Computer cluster|clusters]].<ref>{{Cite web|title=OpenIO Data Management Features|url=https://docs.openio.io/latest/source/arch-design/data_management.html|website=OpenIO Documentation}}</ref><ref>{{Cite web|title=OpenIO Storage Policies|url=https://docs.openio.io/latest/source/arch-design/storage_policies.html|website=OpenIO Documentation}}</ref>
+
+The software has a feature that catches all events that occur in the cluster and can pass them up in the [[Hardware stack|stack]] or to applications running on OpenIO nodes. This enables [[Event-driven architecture|event-driven]] computing directly into the storage infrastructure.<ref>{{Cite news|last=Delaporte|first=Guillaume|date=2017-05-17|title=Simple Metadata Indexing through Grid for Apps|language=en|work=OpenIO Blog|url=https://www.openio.io/blog/product/simple-metadata-indexing-through-grid-for-apps}}</ref><ref name=":1">{{Cite news|last=Delaporte|first=Guillaume|date=2017-06-07|title=Detect patterns in pictures at scale using Tensorflow and OpenIO GridForApps|language=en|work=OpenIO Blog|url=https://www.openio.io/blog/product/detect-patterns-in-pictures-at-scale-using-tensorflow-and-openio-grid-for-apps}}</ref>
+
+The open source code is available on [https://github.com/open-io Github] and it is licensed under [[AGPL 3|AGPL3]] for server code and [[LGPL|LGPL3]] for client code.
+
+== Performance ==
+OpenIO claimed in 2019 to have reached 1.372 Tbps write speed (171 GB/s) on a cluster of 350 physical machines.<ref>{{Cite web|last=Mellor|first=Chris|date=2019-10-15|title=OpenIO 'solves' the problem with object storage hyperscalability|url=https://blocksandfiles.com/2019/10/15/openio-high-performance-object-storage/|website=Blocks & Files}}</ref> The benchmark scenario, conducted under production conditions with standard hardware (commodity servers with 7200 rpm [[Hard disk drive|HDDs]]), consisted in backing up a 38 [[Petabyte|PB]] [[Apache Hadoop|Hadoop]] [[Data lake|datalake]] via the DistCp command.<ref>{{Cite web|title=Terabit Challenge {{!}} OpenIO Object Storage|url=https://www.openio.io/tbps-challenge|website=OpenIO}}</ref> This level of performance marked, according to analysts,<ref>{{Cite web|last=Enrico|first=Signoretti|date=2019-11-08|title=S3, file access and high performance… this is not your old object storage|url=https://gigaom.com/report/key-criteria-for-evaluating-enterprise-object-storage/|website=Gigaom}}</ref> the arrival of a new generation of [[object storage]] technologies oriented toward high performance and hyper-scalability.
+
+==See also==
+*[[Object storage]]
+*[[Cloud storage]]
+*[[Backup software]]
+*[[Big data|Big Data]]
+
+==References==
+
+{{Reflist}}
+
+==External links==
+* [https://docs.openio.io/ OpenIO Documentation]
+* [https://github.com/open-io/ OpenIO Github repository]
+
+[[Category:Object storage]]
+[[Category:Computer storage companies]]
+[[Category:Distributed data storage]]
+[[Category:Cloud storage]]
+[[Category:Cloud computing providers]]
+[[Category:Cloud computing]]
+[[Category:Internet of things]]
+[[Category:Big data products]]

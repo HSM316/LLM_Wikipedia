@@ -1,0 +1,160 @@
+{{short description|Romanian-American developer of robotic process automation software}}
+{{Advert|date=October 2024}}
+{{Use mdy dates|date=February 2020}}
+{{Infobox company
+| logo = File:UiPath_2019_Corporate_Logo.png
+| name = UiPath Inc.
+| type = [[Public company|Public]]
+| traded_as = {{ubl|{{NYSE|PATH}} (Class A)|[[Russell 1000]] component}}
+| industry = [[Software]]
+| products = {{ubl|[[Robotic Process Automation|RPA]] tools|[[Automation]] tools}}
+| area_served = Worldwide
+| founded = {{Start date and age|2005}} in [[Bucharest, Romania]]
+| founders = {{Unbulleted list|[[Daniel Dines]]|Marius Tîrcă}}
+| key_people = {{Unbulleted list|Daniel Dines ([[chairman and CEO]]) |Ashim Gupta ([[CFO]])|Bobby Patrick ([[Chief marketing officer|CMO]])}}
+| hq_location_city = [[One Vanderbilt]]<br />[[New York, New York]]
+| hq_location_country = U.S.
+| num_employees = 4,035 (2024)
+| revenue = {{increase}} {{US$|1.31 billion|link=yes}} (2024)
+| operating_income = {{nowrap|{{increasenegative}} {{US$|&minus;165 million}} (2024)}}
+| net_income = {{increasenegative}} {{US$|&minus;90 million}} (2024)
+| assets = {{increase}} {{US$|2.95 billion}} (2024)
+| equity = {{increase}} {{US$|2.02 billion}} (2024)
+| num_locations = 31 countries
+| homepage = {{url|uipath.com}}
+| footnotes = Financials {{asof|2024|1|31|lc=y|df=US}}.<ref name=AR>{{cite web|title= UiPath Inc. Full Year Ended 31 January 2024 Form 10-K Report |url=https://www.sec.gov/ix?doc=/Archives/edgar/data/1734722/000173472224000011/path-20240131.htm |website=SEC.gov |publisher=[[U.S. Securities and Exchange Commission]] |date=27 March 2024}}</ref>
+}}
+
+'''UiPath Inc.''' is a global [[software]] company that makes [[robotic process automation]] (RPA) software. It was founded in [[Bucharest]], Romania, by [[Daniel Dines]] and Marius Tîrcă. Its headquarters are in [[New York City]]. The company's software monitors user activity to automate repetitive front and back office tasks, including those performed using other business software such as [[customer relationship management]] or [[enterprise resource planning]] (ERP) software.
+
+In December 2020, the company filed confidentially for an initial public offering, and became public on April 21, 2021.<ref name=":0">{{Cite web |last=Levy |first=Ari |date=2021-04-21 |title=UiPath climbs 23% in stock market debut after one of largest US software IPOs in history |url=https://www.cnbc.com/2021/04/21/uipath-rises-17percent-in-nyse-debut-after-one-of-top-software-ipos-ever.html |access-date=2024-02-01 |website=CNBC |language=en}}</ref>
+
+== History ==
+UiPath was founded in 2005 in [[Bucharest, Romania]] as DeskOver, by Romanian entrepreneurs [[Daniel Dines]] and Marius Tîrcă.<ref name=business1>{{cite web|url=http://business-review.eu/news/the-story-of-uipath-how-it-became-romanias-first-unicorn-164248 |title=The story of UiPath – How did it become Romania's first unicorn? |website=Business Review |date=September 4, 2018 |access-date=March 3, 2021}}</ref>
+
+In 2013, the company released the first UiPath Desktop Automation product line, which gave companies RPA tools to automate manual and repetitive back office tasks.<ref name=business1/>
+
+In 2015, the company changed its name to UiPath.<ref name=business1/> Also in 2015, after receiving seed funding from [[Accel Partners]] and earlier investors, the company also opened offices in [[London]], [[New York City]], [[Bangalore]], [[Paris]], [[Singapore]], [[Washington, D.C.]], and [[Tokyo]].<ref>{{cite web|url=https://www.romania-insider.com/romanian-tech-startup-uipath-raises-usd-30-mln-develop-intelligent-software-robots/|title=Romanian tech startup UiPath raises USD 30 mln to develop intelligent software robots|website=Romania-Insider.com|date=April 27, 2017 |access-date=March 9, 2018}}</ref><ref name=business1/>
+
+By April 2016, the company had released its Front Office and [[Microsoft BackOffice Server|Back Office Server]] suites, and also released its Studio Community Edition. Within six months, the company had 10,000 active members, and more than 250 enterprise customers.<ref name=business1/>
+
+In 2017, UiPath reported 590 employees and moved its headquarters to New York to be closer to its international customer base.<ref name=":1">{{cite news|url=https://www.nytimes.com/reuters/2018/03/06/technology/06reuters-europe-venturecapital-romania.html|title=Romanian Firm Emerges as Leader in Automating Business Tasks|date=March 6, 2018|archive-url=https://web.archive.org/web/20180306184325/https://www.nytimes.com/reuters/2018/03/06/technology/06reuters-europe-venturecapital-romania.html|archive-date=March 6, 2018|url-status=dead|agency=Reuters}}</ref>
+
+In October 2019, UiPath announced the acquisition of Ukrainian process [[documentation]] company StepShot and Dutch [[process mining]] company ProcessGold.<ref name="venture2">{{cite web|url =https://venturebeat.com/2019/10/15/uipath-acquires-processgold-and-stepshot-to-help-businesses-identify-rpa-opportunities/|title=UiPath acquires ProcessGold and StepShot to help businesses identify RPA opportunities|website=VentureBeat|date=October 15, 2019|access-date=March 3, 2021}}</ref> Also in October, the company announced UiPath Explorer, a new product using technology from the acquired companies; a robot communication tool called UiPath Apps; a low code robot programming tool called UiPath StudioX; an embedded analytics tool called UiPath Insights; and UiPath Connect, a tool that allowed every employee to find new processes to automate.<ref name="venture2" /><ref name="silicon1">{{cite web|url=https://siliconangle.com/2019/10/15/uipath-debuts-new-tools-find-automate-business-processes/ |title=UiPath announces new tools and acquisitions to automate more business processes |website=Silicon Angle |date=October 15, 2019 |access-date=March 3, 2021}}</ref>
+
+In November of the same year, the company reported it had 5,000 customers worldwide, and a developer community of more than 500,000 people.<ref name="strategy1">{{cite web|url=https://www.strategy-business.com/article/Making-automation-easy|title=PwC Strategy+Business: Automation Made Easy|website=Strategy + Business|date=November 20, 2019|access-date=March 3, 2021}}</ref> In November, the company was ranked first in the Deloitte Technology Fast 500.<ref>{{cite web|url=https://www2.deloitte.com/us/en/pages/technology-media-and-telecommunications/articles/fast500-winners.html|title=2019 Technology Fast 500 winners|website=www.deloitte.com|access-date=November 6, 2019}}</ref>
+
+In March 2021, UiPath acquired [[Cloud Elements]], an interconnectivity platform to advance API-based automation capabilities.<ref>{{Cite web |last=Busvine |first=Douglas |title=IPO contender UiPath extends automation offering with Cloud Elements buy |url=https://www.reuters.com/article/us-cloudelements-m-a-uipath/ipo-contender-uipath-extends-automation-offering-with-cloud-elements-buy-idUSKBN2BF2A1 |date=March 23, 2021 |website=[[Reuters]]}}</ref><ref>{{Cite web |last=Deutscher |first=Maria |title=UiPath acquires Cloud Elements to advance API-based automation in the enterprise |url=https://siliconangle.com/2021/03/23/uipath-acquires-cloud-elements-advance-api-based-automation-enterprise/ |date=March 23, 2021 |website=SiliconANGLE}}</ref>
+
+In April 2021, UiPath raised $1.3 billion in an initial public offering on the [[New York Stock Exchange]] in one of the largest US software IPOs in history.<ref name=CNBC>{{cite web|url=https://www.cnbc.com/2021/04/21/uipath-rises-17percent-in-nyse-debut-after-one-of-top-software-ipos-ever.html |title=UiPath rises 23% in NYSE debut? |website=CNBC |date=April 27, 2021 |access-date=April 27, 2021}}</ref><ref name=":0" />
+
+In July 2022, UiPath acquired Re:infer, a [[natural language processing]] developer, for an undisclosed sum.<ref>{{cite news |url=https://www.wsj.com/articles/automation-tech-company-uipath-acquires-ai-startup-re-infer-11659393146 |title=Automation Tech Company UiPath Acquires AI Startup Re:infer |date=August 1, 2022 |work=[[The Wall Street Journal]] |last=Loten |first=Angus |url-access=limited}}</ref><ref>{{Cite web |title=UiPath acquires London-based NLP startup Re:infer |url=https://techcrunch.com/2022/08/01/uipath-acquires-london-based-nlp-startup-reinfer/ |date=August 1, 2022 |website=TechCrunch |last=Sawers |first=Paul}}</ref>
+
+==Products==
+UiPath develops software to automate repetitive digital tasks normally performed by people. The technology combines emulating how humans read computer screens (AI computer vision), together with [[API]]s, and gives users access to pre-built automation components that can be combined to automate routine processes.<ref name=strategy1/> Its earlier products simplified tasks performed using other business software such as CRM or ERP systems, in internal and back-office areas like accounting, human resources paperwork, and claims processing.<ref name=venture1>{{cite web|url= https://venturebeat.com/2019/06/22/uipath-rpa-and-ai-will-be-commoditized-productivity-tools-within-5-years/ |title=UiPath: RPA and AI will be commoditized productivity tools within 5 years |website=Venturebeat |date=June 22, 2019 |access-date=March 3, 2021}}</ref><ref name="tech1">{{Cite web|date=April 30, 2019|title=UiPath nabs $568M at a $7B valuation to bring robotic process automation to the front office|url=https://techcrunch.com/2019/04/30/uipath-rpa-series-d/|access-date=March 2, 2021|website=TechCrunch|language=en-US}}</ref> Newer applications of the company's software include coordinating with artificial intelligence systems to simplify repetitive front office tasks including customer management.<ref name=tech1/> UiPath's built-in [[optical character recognition]] (OCR) engines from Google, Microsoft, and ABBYY can read information from a screen or scanned document.{{citation needed|date=February 2022}}
+
+UiPath's main product is the UiPath Automation Platform.<ref name="tech4">{{cite web|date=February 1, 2021|title=Robotic process automation platform UiPath raises $750M at $35B valuation|url=https://techcrunch.com/2021/02/01/robotic-process-automation-platform-uipath-raises-750m-at-35b-valuation/|access-date=March 3, 2021|website=Techcrunch}}</ref> The platform combines a family of low-code visual [[integrated development environment]] (IDE) products called Studio for process creation, with client-side agents called Robots that execute those processes. The processes are deployed, monitored and managed remotely with a central management tool called Orchestrator.<ref name=infoworld1>{{Cite web|url=https://www.infoworld.com/article/3393444/review-uipath-aces-robotic-process-automation.html|title=Review: UiPath aces robotic process automation|website=Infoworld|language=en-US|date=May 6, 2019|access-date = March 3, 2021}}</ref>
+
+Additional available software includes:
+
+*UIPath AI Center (previously AI Fabric) - orchestrates and inserts AI into business processes.<ref name=venture1/>{{citation needed|date=March 2021}}
+*UiPath Action Center - a communication tool for instances where robots need to connect with humans for direction, described by the company as “human in the loop.”<ref name=silicon1/>{{citation needed|date=March 2021}}
+*UiPath Apps - a low-code application development platform.
+*UiPath Assistant - a launchpad for automations that a company provides to its computer workers. It sits on the computer desktop and gives people easy access to selected automations that help them with their tasks.<ref name=computer1>{{cite web|url=https://www.computerweekly.com/blog/CW-Developer-Network/UiPath-robots-calmly-hyper-over-hyperautomation |title=UiPath robots 'calmly hyper' over hyperautomation |website=Computer Weekly |date=May 13, 2020 |access-date=March 2, 2021}}</ref>
+*UiPath Automation Hub (previously UiPath Connect Enterprise) - a tool allows every employee at an organization to help find, suggest and track new processes to automate.<ref name=silicon1/><ref>{{cite web|url=https://business-review.eu/tech/uipath-extends-rpa-market-leadership-readies-for-hyperautomation-208170 |title=UiPath Extends RPA Market Leadership, Readies for Hyperautomation |website=Business Review |date=February 21, 2021 |access-date=March 3, 2021}}</ref>
+*UiPath Document Understanding - software that extracts, interprets and processes data from PDFs, images, handwriting and other communication media.<ref>{{cite web|url=https://www.information-age.com/deloitte-uipath-partner-deliver-intelligent-document-processing-123489324/ |title=Deloitte and UiPath partner to deliver Intelligent Document Processing |website=Information Age |date=May 4, 2020 |access-date=March 3, 2021}}</ref>
+*UiPath Insights - a modular data dashboard that provides analytics for UiPath's automated processes.<ref name=silicon1/>
+*UiPath Process Mining (previously ProcessGold) - a tool that uncovers new automation opportunities by analyzing application logs.<ref name=computer1/>
+*UiPath StudioX - a platform with simplified coding that allows workers to build their own robots to simplify their own work.<ref name=silicon1/>
+*UiPath Test Suite - automates and centralizes testing to ensure the quality of every automation and application before they go live.<ref>{{cite web|url=https://aithority.com/robots/automation/uipath-now-certified-for-sap-solution-manager-test-automation/ |title=UiPath Now Certified for SAP Solution Manager Test Automation |website=AiThority |date=August 5, 2020 |access-date=March 3, 2021}}</ref>
+
+UiPath's software products are available as native software or using the [[Software as a Service]] (SaaS) model.<ref name=venture2/><ref name=infoworld1/>
+
+UiPath also hosts the UiPath Academy, to provide job training and certification in the field of robotic process automation.<ref>{{cite news|url= https://www.cxoinsightme.com/news/uipath-extends-its-online-rpa-academy-and-certification/|title=UiPath extends its online RPA academy and certification| last1=Lunden |first1=Ingrid |website=CXO Insight Middle East|date=April 3, 2020|access-date=March 3, 2021}}</ref>
+
+== Funding ==
+UIPath Funding in millions of $ USD:
+{{ #invoke:Chart | bar-chart
+| group 1 = 2 : 30 : 153 : 225 : 568 : 225 : 750
+| group 2 = 0 : 0 : 1100 : 3000 : 7000 : 10200 : 35000
+| colors = blue: red
+| group names = Funding : Valuation
+| x legends = 2015-08 : 2017-04 : 2018-03 : 2018-09 : 2019-04 : 2020-07 : 2021-02
+}}
+
+{| class="wikitable"
+|+
+!When
+!Funding Raised
+!Valuation
+!Who and notes
+|-
+|August 2015
+|US$1.6 million
+|.
+|UiPath closed an initial seed funding round led by the Earlybird Venture Capital, with Credo Ventures and Seedcamp as backers.<ref name="business1" />
+|-
+|April 2017
+|$30 million investment
+|.
+|One of the biggest Series A rounds of funding in Europe, led by Accel. Previous investors Earlybird Venture Capital, Credo Ventures and Seedcamp also joined.<ref name="business1" />
+|-
+|March 6, 2018
+|$153 million investment
+|$1.1 billion
+|from Accel, [[CapitalG]], and [[Kleiner Perkins Caufield & Byers]].<ref>{{cite news|last1=Lunden|first1=Ingrid|date=March 6, 2018|title=UiPath Confirms $153 M at $1.1B Valuation|website=TechCrunch|url=https://techcrunch.com/2018/03/06/uipath-confirms-153m-at-1-1b-valuation-from-accel-capitalg-and-kp-for-its-software-robots/|access-date=March 6, 2018}}</ref><ref>{{cite news|date=March 6, 2018|title=UiPath Confirms $153 M at $1.1B Valuation|website=Reuters|url=https://www.reuters.com/article/brief-uipath-raises-153-million-series-b/brief-uipath-raises-153-million-series-b-led-by-accel-idUSFWN1QO0CZ|access-date=March 6, 2018}}</ref>
+|-
+|September 18, 2018
+|$225 million
+|$3 billion valuation
+|Funding round led by CapitalG and Sequoia Capital.<ref name="inc42.com">{{Cite web|date=September 18, 2018|title=With India Focus, Global Robotics Company UiPath Raises $225 Mn|url=https://inc42.com/buzz/with-india-focus-global-robotics-company-uipath-raises-225-mn/|website=Inc42 Media}}</ref>
+|-
+|April 30, 2019
+|$568 million
+|$7 billion (claimed by the company after the funding round)
+|Series D round of funding led by hedge fund [[Coatue Management]], with participation from Alphabet's CapitalG, Sequoia, Accel, Madrona Venture Group, IVP, [[Dragoneer Investment Group|Dragoneer]], Wellington, Sands Capital, and funds advised by T. Rowe Price & Associates.<ref name="tech1" />
+|-
+|July 13, 2020
+|$225 Million
+|$10.2 Billion.<ref>{{Cite web|title=UiPath reels in another $225M as valuation soars to $10.2B|url=https://techcrunch.com/2020/07/13/uipath-reels-in-another-225m-as-valuation-soars-to-10-2b|website=TechCrunch|date=July 13, 2020 |language=en-US}}</ref>
+|.
+|-
+|December 17, 2020
+|.
+|.
+|UiPath filed a confidential draft registration statement with the United States Security and Exchange Commission for an initial public offering.<ref>{{Cite web|title=UiPath files confidential IPO|url=https://techcrunch.com/2020/12/17/uipath-files-confidential-ipo-paperwork-with-sec/|website=TechCrunch|date=December 17, 2020 |language=en-US}}</ref><ref>{{Cite news|title=Software maker UiPath says it has confidentially filed for IPO|url=https://www.bloomberg.com/news/articles/2020-12-17/uipath-is-said-to-be-close-to-filing-confidentially-for-ipo|newspaper=Bloomberg.com|date=December 17, 2020|language=en-US}}</ref><ref>{{Cite web|title=UiPath files for IPO, could become one of New York City's largest tech companies|url=https://www.cnbc.com/2020/12/17/uipath-files-for-ipo-could-become-one-of-nycs-biggest-tech-companies.html|website=CNBC|date=December 18, 2020|language=en-US}}</ref><ref>{{Cite web|title=UiPath: Get ready for another big software IPO|url=https://www.barrons.com/articles/uipath-files-confidentially-for-ipo-51608252665|website=Barrons|language=en-US}}</ref>
+|-
+|February 1, 2021
+|$750 million
+|$35 billion (post-money valuation)
+|Series F funding.<ref name="tech4" />
+|}
+
+== References ==
+{{reflist}}
+
+==External links==
+*{{Official|https://www.uipath.com}}
+{{Finance links
+| name = UiPath Inc.
+| symbol = PATH
+| reuters = PATH.N
+| bloomberg = PATH:US
+| sec_cik = 1734722
+| yahoo = PATH
+| google = PATH:NYSE
+}}
+
+{{Portalbar|Companies}}
+
+[[Category:Business software companies]]
+[[Category:Automation software]]
+[[Category:Artificial intelligence companies]]
+[[Category:Software companies established in 2005]]
+[[Category:Software companies based in New York City]]
+[[Category:Software companies of the United States]]
+[[Category:Romanian companies established in 2005]]
+[[Category:Software companies of Romania]]
+[[Category:2021 initial public offerings]]
+[[Category:Publicly traded companies based in New York City]]
+[[Category:Companies listed on the New York Stock Exchange]]

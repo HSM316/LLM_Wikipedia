@@ -1,0 +1,157 @@
+The '''Harris corner detector''' is a [[corner detection]] operator that is commonly used in [[computer vision]] algorithms to extract corners and infer [[feature (computer vision)|features]] of an image. It was first introduced by Chris Harris and Mike Stephens in 1988 upon the improvement of [[Corner detection#Moravec corner detection algorithm|Moravec's corner detector]].<ref name="harris"/> Compared to the previous one, Harris' corner detector takes the differential of the corner score into account with reference to direction directly, instead of using shifting patches for every 45 degree angles, and has been proved to be more accurate in distinguishing between edges and corners.<ref name="dey"/> Since then, it has been improved and adopted in many algorithms to preprocess images for subsequent applications.
+
+== Introduction ==
+
+A corner is a point whose local neighborhood stands in two dominant and different edge directions.  In other words, a corner can be interpreted as the junction of two edges, where an edge is a sudden change in image brightness.<ref name = "derpanis"/> Corners are the important features in the image, and they are generally termed as interest points which are invariant to translation, rotation and illumination. Although corners are only a small percentage of the image, they contain the most important features in restoring image information, and they can be used to minimize the amount of processed data for motion tracking, [[image stitching]], building 2D mosaics, [[computer stereo vision|stereo vision]], image representation and other related computer vision areas.
+
+In order to capture the corners from the image, researchers have proposed many different corner detectors including the [[Kanade–Lucas–Tomasi feature tracker|Kanade-Lucas-Tomasi]] (KLT) operator and the Harris operator which are most simple, efficient and reliable for use in corner detection. These two popular methodologies are both closely associated with and based on the local structure matrix. Compared to the Kanade-Lucas-Tomasi corner detector, the Harris corner detector provides good repeatability under changing illumination and rotation, and therefore, it is more often used in stereo matching and image database retrieval. Although there still exists drawbacks and limitations, the Harris corner detector is still an important and fundamental technique for many computer vision applications.
+
+== Development of Harris corner detection algorithm <ref name="harris"/> ==
+
+Without loss of generality, we will assume a [[grayscale]] 2-dimensional image is used. Let this image be given by <math>I</math>. Consider taking an image patch <math>(x, y) \in W</math>(window) and shifting it by <math>(\Delta x,\Delta y)</math>. The ''sum of squared differences'' (SSD) between these two patches, denoted <math>f</math>, is given by:
+
+:<math>
+f(\Delta x,\Delta y) = \underset{(x_k,y_k)\in W}\sum\left(I(x_k,y_k) - I(x_k+\Delta x,y_k+\Delta y)\right)^2
+</math>
+
+<math>I(x+\Delta x,y+\Delta y)</math> can be approximated by a [[Taylor series|Taylor expansion]].  Let <math> I_x</math> and <math> I_y</math> be the partial [[image derivative|derivatives]] of <math> I</math>, such that
+:<math>
+I(x+\Delta x,y+\Delta y) \approx I(x,y) + I_x(x,y)\Delta x+I_y(x,y)\Delta y
+</math>
+
+This produces the approximation
+:<math>
+f(\Delta x,\Delta y)  \approx \underset{(x,y)\in W}\sum \left( I_x(x,y)\Delta x + I_y(x,y)\Delta y \right)^2,
+</math>
+
+which can be written in matrix form:
+:<math>
+f(\Delta x,\Delta y) \approx \begin{pmatrix} \Delta x & \Delta y \end{pmatrix} M \begin{pmatrix} \Delta x \\ \Delta y \end{pmatrix},
+</math>
+
+where ''M'' is the [[structure tensor]],
+
+:<math>
+M = \underset{(x,y)\in W}\sum 
+\begin{bmatrix}
+I_x^2 & I_x I_y \\
+I_x I_y & I_y^2 
+\end{bmatrix}
+=
+\begin{bmatrix}
+\underset{(x,y)\in W}\sum I_x^2 &\underset{(x,y)\in W} \sum I_x I_y \\
+\underset{(x,y)\in W}\sum I_x I_y & \underset{(x,y)\in W}\sum I_y^2
+\end{bmatrix}
+</math>
+
+== Process of Harris corner detection algorithm<ref>{{Cite web|title = Harris Operator Corner Detection using Sliding Window Method - Google Scholar|url = https://scholar.google.com/scholar?q=++Harris+Operator+Corner+Detection+using+Sliding+Window+Method&btnG=&hl=en&as_sdt=0%252C36|website = scholar.google.com|access-date = 2015-11-29}}</ref><ref>{{Cite web|title = The Comparison and Application of Corner Detection Algorithms - Google Scholar|url = https://scholar.google.com/scholar?hl=en&q=The+Comparison+and+Application+of+Corner+Detection+Algorithms&btnG=&as_sdt=1%252C36&as_sdtp=|website = scholar.google.com|access-date = 2015-11-29}}</ref><ref name = "sanchez"/> ==
+Commonly, Harris corner detector algorithm can be divided into five steps.
+# Color to grayscale
+# Spatial derivative calculation
+# Structure tensor setup
+# Harris response calculation
+# Non-maximum suppression
+
+=== Color to grayscale ===
+If we use Harris corner detector in a color image, the first step is to convert it into a [[grayscale]] image, which will enhance the processing speed.
+
+The value of the gray scale pixel can be computed as a weighted sums of the values R, B and G of the color image, 
+:<math>\sum_{C\,\in\,\{R,G,B\}} w_C \cdot C</math>, 
+
+where, e.g., 
+:<math>w_R=0.299,\ w_G=0.587,\ w_B=1-(w_R+w_G)=0.114.</math>
+
+===Spatial derivative calculation ===
+Next, we are going to find the derivative with respect to x and the derivative with respect to y, <math>I_x( x, y)</math> and <math>I_y( x, y)</math>.
+
+=== Structure tensor setup ===
+With <math> I_x( x, y)</math> , <math> I_y( x, y) </math>, we can construct the structure tensor <math> M </math>.
+
+=== Harris response calculation===
+For <math>x\ll y</math>, one has 
+<math>\tfrac{x\cdot y}{x+y}=x\tfrac{1}{1+x/y}\approx x.</math>
+In this step, we compute the smallest [[eigenvalue]] of the structure tensor using that approximation:
+
+: <math> \lambda _{\min} \approx \frac{ \lambda _1 \lambda _2} {(\lambda _1+\lambda _2)} = \frac{\det(M)} {\operatorname{tr}(M)} </math>
+
+with the [[Trace of a matrix|trace]] <math>\mathrm{tr}(M) = m_{11} + m_{22} </math>. 
+
+Another commonly used Harris response calculation is shown as below,
+
+<math> R = \lambda _1 \lambda _2 - k(\lambda _1 + \lambda _2)^2 = \det(M) - k\operatorname{tr}(M)^2</math>
+
+where <math> k </math> is an empirically determined constant; <math> k \in [0.04, 0.06] </math> .
+
+=== Non-maximum suppression ===
+In order to pick up the optimal values to indicate corners, we find the local maxima as corners within the window which is a 3 by 3 filter.
+
+== Improvement<ref>{{Cite journal|title = Improving Harris corner selection strategy|journal = IET Computer Vision|date = 2011-03-01|volume = 5|issue = 2|pages = 87|doi = 10.1049/iet-cvi.2009.0127|first1 = F.|last1 = Bellavia|first2 = D.|last2 = Tegolo|first3 = C.|last3 = Valenti}}</ref><ref>{{Cite book|title = Machine Learning for High-Speed Corner Detection|publisher = Springer Berlin Heidelberg|date = 2006-05-07|isbn = 978-3-540-33832-1|pages = 430–443|series = Lecture Notes in Computer Science|doi = 10.1007/11744023_34|language = en|first1 = Edward|last1 = Rosten|first2 = Tom|last2 = Drummond|editor-first = Aleš|editor-last = Leonardis|editor-first2 = Horst|editor-last2 = Bischof|editor-first3 = Axel|editor-last3 = Pinz|citeseerx = 10.1.1.64.8513}}</ref> ==
+
+# [[Harris–Laplace detector|Harris-Laplace Corner Detector]]<ref>{{Cite web|title = A Comparison of Affine Region Detectors - Google Scholar|url = https://scholar.google.com/scholar?q=+A+Comparison+of+Affine+Region+Detectors&btnG=&hl=en&as_sdt=0%252C36|website = scholar.google.com|access-date = 2015-11-29}}</ref>
+# Differential Morphological Decomposition Based Corner Detector<ref>{{Cite journal|title = Multi scale Harris corner detector based on Differential Morphological Decomposition|url = https://www.researchgate.net/publication/220644165|journal = Pattern Recognition Letters|pages = 1714–1719|volume = 32|issue = 14|doi = 10.1016/j.patrec.2011.07.021|first1 = L.|last1 = Gueguen|first2 = M.|last2 = Pesaresi|year = 2011}}</ref>
+# Multi-scale Bilateral Structure Tensor Based Corner Detector<ref>{{Cite web|title = A Multi-scale Bilateral Structure Tensor Based Corner Detector - Google Scholar|url = https://scholar.google.com/scholar?q=A+Multi-scale+Bilateral+Structure+Tensor+Based+Corner+Detector&btnG=&hl=en&as_sdt=0%252C36|website = scholar.google.com|access-date = 2015-11-29}}</ref>
+
+== Applications ==
+# Image Alignment, [[Image stitching|Stitching]] and [[Image registration|Registration]]<ref>{{Cite book|title = Image registration based on harris corner and mutual information|journal = 2011 International Conference on Electronic and Mechanical Engineering and Information Technology (EMEIT)|date = 2011-08-01|pages = 3434–3437|volume = 7|doi = 10.1109/EMEIT.2011.6023066|first1 = Juan|last1 = Kang|first2 = Chuangbai|last2 = Xiao|first3 = M.|last3 = Deng|first4 = Jing|last4 = Yu|first5 = Haifeng|last5 = Liu|isbn = 978-1-61284-087-1|s2cid = 17367248}}</ref>
+# 2D Mosaics Creation<ref>{{Cite web|title = Underwater Mosaic Creation using Video sequences from Different Altitudes - Google Scholar|url = https://scholar.google.com/scholar?hl=en&q=Underwater+Mosaic+Creation+using+Video+sequences+from+Different+Altitudes&btnG=&as_sdt=1%252C23&as_sdtp=|website = scholar.google.com|access-date = 2015-12-02}}</ref>
+# 3D Scene Modeling and [[3D reconstruction|Reconstruction]]<ref>{{Cite web|title = Automated reconstruction of 3D scenes from sequences of images - Google Scholar|url = https://scholar.google.com/scholar?q=Automated+reconstruction+of+3D+scenes+from+sequences+of+images&btnG=&hl=en&as_sdt=0%252C23|website = scholar.google.com|access-date = 2015-12-02}}</ref>
+# [[Moving object detection|Motion Detection]]<ref>{{Cite book|title = Multi-resolution optical flow tracking algorithm based on multi-scale Harris corner points feature|journal = Control and Decision Conference, 2008. CCDC 2008. Chinese|date = 2008-07-01|pages = 5287–5291|doi = 10.1109/CCDC.2008.4598340|first1 = Meng|last1 = Liu|first2 = Chengdong|last2 = Wu|first3 = Yunzhou|last3 = Zhang|isbn = 978-1-4244-1733-9|s2cid = 8085227}}</ref>
+# [[Object Recognition]]<ref>{{Cite web|title = Object Recognition from Local Scale-Invariant Features - Google Scholar|url = https://scholar.google.com/scholar?q=Object+Recognition+from+Local+Scale-Invariant+Features&btnG=&hl=en&as_sdt=0%252C36|website = scholar.google.com|access-date = 2015-11-29}}</ref>
+# Image Indexing and [[Content-based image retrieval|Content-based Retrieval]]<ref>{{Cite web|title = Salient Points for Content Based Retrieval - Google Scholar|url = https://scholar.google.com/scholar?q=Salient+Points+for+Content+Based+Retrieval+&btnG=&hl=en&as_sdt=0%252C23|website = scholar.google.com|access-date = 2015-12-02}}</ref>
+# [[Video Tracking]]<ref>{{Cite web|title = Tracking and Recognition of Objects using SURF Descriptor and Harris Corner Detection - Google Scholar|url = https://scholar.google.com/scholar?q=+Tracking+and+Recognition+of+Objects+using+SURF+Descriptor+and+Harris+Corner+Detection&btnG=&hl=en&as_sdt=0%252C23|website = scholar.google.com|access-date = 2015-12-02}}</ref>
+
+== See also ==
+* [[Structure tensor]]
+* [[Harris affine region detector]]
+* [[Corner detection]]
+* [[Feature detection (computer vision)]]
+* [[Computer vision]]
+* [[List of computer vision topics]]
+
+== References ==
+{{Reflist|refs=
+<ref name="harris">{{cite conference
+| author = Chris Harris and Mike Stephens
+| title = A Combined Corner and Edge Detector
+| book-title = Alvey Vision Conference
+| volume = 15 
+| year = 1988
+}}</ref>
+
+<ref name="dey">{{cite arXiv
+| author = Dey, Nilanjan |display-authors=etal
+| title = A Comparative Study between Moravec and Harris Corner Detection of Noisy Images Using Adaptive Wavelet Thresholding Technique
+| eprint = 1209.1558
+| year = 2012
+|class=cs.CV
+}}</ref>
+
+<ref name="derpanis">{{cite conference
+| author = Konstantinos G. Derpanis
+| title = The harris corner detector.
+| publisher = York University
+| year = 2004
+}}</ref>
+
+<ref name="sanchez">{{cite journal
+| author = Javier Sánchez, Nelson Monzón and Agustín Salgado
+| title = An Analysis and Implementation of the Harris Corner Detector
+| journal = Image Processing on Line
+| doi = 10.5201/ipol.2018.229
+| volume = 8
+| pages = 305–328
+| year = 2018
+| doi-access = free
+}}</ref>
+
+<!--<ref name="bellavia"> Bellavia, Fabio, Domenico Tegolo, and Cesare Valenti. "Improving Harris corner selection strategy." IET Computer Vision 5.2 (2011): 87-96. </ref>
+ -->
+}}
+
+== External links ==
+*[http://opencvexamples.blogspot.com/2013/10/harris-corner-detection.html "Learn OpenCV by Examples : Harris Corner Detection"]
+*[http://docs.opencv.org/2.4/doc/tutorials/features2d/trackingmotion/harris_detector/harris_detector.html "Harris Corner Detection - OpenCV Documentation"] 
+* {{cite web|url=http://opencv-python-tutroals.readthedocs.org/en/latest/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html|title=Harris Corner Detection - OpenCV-Python Tutorials|archive-url=https://web.archive.org/web/20210507051910/https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_feature2d/py_features_harris/py_features_harris.html|archive-date=2021-05-07}}
+* [https://ipolcore.ipol.im/demo/clientApp/demo.html?id=229 Online Implementation of the Harris Corner Detector - IPOL]
+
+[[Category:Computer vision]]

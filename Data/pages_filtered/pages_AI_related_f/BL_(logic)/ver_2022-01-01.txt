@@ -1,0 +1,47 @@
+In mathematical logic, basic fuzzy Logic (or shortly BL), the logic of the continuous t-norms, is one of the t-norm fuzzy logics. It belongs to the broader class of substructural logics, or logics of residuated lattices;Ono (2003). it extends the logic of all left-continuous t-norms MTL.
+
+ Syntax 
+
+ Language 
+
+The language of the propositional logic BL consists of countably many propositional variables and the following primitive logical connectives:
+ Implication  (binary)
+ Strong conjunction  (binary). The sign & is a more traditional notation for strong conjunction in the literature on fuzzy logic, while the notation  follows the tradition of substructural logics.
+ Bottom  (nullary — a propositional constant);  or  are common alternative signs and zero a common alternative name for the propositional constant (as the constants bottom and zero of substructural logics coincide in MTL).
+The following are the most common defined logical connectives:
+ Weak conjunction  (binary), also called lattice conjunction (as it is always realized by the lattice operation of meet in algebraic semantics). Unlike MTL and weaker substructural logics, weak conjunction is definable in BL as
+
+ Negation  (unary), defined as
+
+ Equivalence  (binary), defined as
+
+ As in MTL, the definition is equivalent to 
+ (Weak) disjunction  (binary), also called lattice disjunction (as it is always realized by the lattice operation of join in algebraic semantics), defined as
+
+ Top  (nullary), also called one and denoted by  or  (as the constants top and zero of substructural logics coincide in MTL), defined as
+
+Well-formed formulae of BL are defined as usual in propositional logics. In order to save parentheses, it is common to use the following order of precedence:
+ Unary connectives (bind most closely)
+ Binary connectives other than implication and equivalence
+ Implication and equivalence (bind most loosely)
+
+ Axioms 
+
+A Hilbert-style deduction system for BL has been introduced by Petr Hájek (1998). Its single derivation rule is modus ponens:
+from  and  derive 
+The following are its axiom schemata:
+
+The axioms (BL2) and (BL3) of the original axiomatic system were shown to be redundant (Chvalovský, 2012) and (Cintula, 2005). All the other axioms were shown to be independent (Chvalovský, 2012).
+ Semantics 
+
+Like in other propositional t-norm fuzzy logics, algebraic semantics is predominantly used for BL, with three main classes of algebras with respect to which the logic is complete:
+ General semantics, formed of all BL-algebras — that is, all algebras for which the logic is sound
+ Linear semantics, formed of all linear BL-algebras — that is, all BL-algebras whose lattice order is linear
+ Standard semantics, formed of all standard BL-algebras — that is, all BL-algebras whose lattice reduct is the real unit interval [0, 1] with the usual order; they are uniquely determined by the function that interprets strong conjunction, which can be any continuous t-norm.
+
+ Bibliography 
+
+ Hájek P., 1998, Metamathematics of Fuzzy Logic. Dordrecht: Kluwer.
+ Ono, H., 2003, "Substructural logics and residuated lattices — an introduction". In F.V. Hendricks, J. Malinowski (eds.): Trends in Logic: 50 Years of Studia Logica, Trends in Logic 20: 177–212.
+ Cintula P., 2005, "Short note: On the redundancy of axiom (A3) in BL and MTL". Soft Computing 9: 942.
+ Chvalovský K., 2012, "On the Independence of Axioms in BL and MTL". Fuzzy Sets and Systems 197: 123–129, .

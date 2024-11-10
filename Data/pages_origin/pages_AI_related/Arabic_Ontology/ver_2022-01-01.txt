@@ -1,0 +1,55 @@
+{{Infobox website
+| name            = Arabic Ontology
+| website         = {{url|ontology.birzeit.edu}}
+| logo            = ao-logo.png
+| type            = Ontology
+| launch_date     = 2018-09-25
+| commercial      = No
+| content_license = copyright
+| owner           = [[Birzeit University]]
+| author          = Mustafa Jarrar
+}}
+
+'''Arabic Ontology''' is a linguistic ontology for the Arabic language, which can be used as an Arabic [[WordNet|Wordnet]] with ontologically-clean content. People use it also as a tree (i.e. classification) of the concepts/meanings of the [[Arabic]] terms. It is a formal representation of the concepts that the Arabic terms convey, and its content is ontologically well-founded, and benchmarked to scientific advances and rigorous knowledge sources rather than to speakers’ naïve beliefs as wordnets typically do<ref name=AO_portal /> 
+.<ref>{{cite journal|last1=Jarrar|first1=Mustafa|date=2011|title=Building a Formal Arabic Ontology (Invited Paper).|url=http://www.jarrar.info/publications/J11.pdf|journal=Proceedings of the Experts Meeting on Arabic Ontologies and Semantic Networks. ALECSO, Arab League. Tunis.}}</ref> The Ontology tree can be explored online.<ref name=AO_portal>{{cite web|url=https://ontology.birzeit.edu/concept/293198|title=Arabic Ontology Tree Online|website=ontology.birzeit.edu}}</ref>
+
+== Ontology Structure ==
+The ontology structure (i.e., data model) is similar to [[WordNet|Wordnet]] structure. Each concept in the ontology is given a unique concept identifier (URI), informally described by a gloss, and lexicalized by one or more of synonymous [[Lemma (morphology)|lemma]] terms. Each term-concept pair is called a [[Word sense|sense]], and is given a SenseID. A set of senses is called [[Synonym ring|synset]]. Concepts and senses are described by further attributes such as era and area - to specify when and where it is used, lexicalization type, example sentence, example instances, ontological analysis, and others. [[Ontology components#Relationships|Semantic relations]] (e.g., [[Hierarchy#Subtypes|SubTypeOf]], [[Mereology|PartOf]], and others) are defined between concepts. Some important [[Ontology components#Individuals|individuals]] are included in the ontology, such as individual countries and seas. These individuals are given separate IndividualIDs and linked with their concepts through the InstanceOf relation.
+
+== Mappings to other resources ==
+Concepts in the Arabic Ontology are mapped to synsets in [[WordNet|Wordnet]], as well as to [[Basic Formal Ontology|BFO]] and [[Upper ontology#DOLCE|DOLCE]]. Terms used in the Arabic Ontology are mapped to lemmas in the LDC's SAMA database.
+
+== Arabic Ontology versus Arabic WordNet ==
+The Arabic Ontology can be seen as a next generation of WordNet - or as an ontologically-clean Arabic WordNet. It follows the same structure (i.e., data model) as wordnet, and it is fully mapped to Wordnet. However, there are critical foundational differences between them: 
+# The ontology is benchmarked on state-of-art scientific discoveries, while WordNet is benchmarked on native-speakers’ naïve knowledge;
+# The ontology is governed by scientifically and philosophically well-established top levels; 
+# Unlike WordNet, all concepts in the ontology are formal, i.e., a concept is a set of individuals (i.e., a [[Ontology components#Classes|class]]), thus concepts like (horizon) are not allowed in the ontology; and 
+# Glosses in the ontology are strictly formulated, and focus on the distinguishing characteristics, which is not the case in WordNet.
+
+== Applications ==
+The Arabic Ontology can be used in many application domains; such as: 
+# [[Information retrieval]], to enrich queries (e.g., in [[Web search engine|search engines]]) and improve the quality of the results, i.e. meaningful search rather than string-matching search; 
+# [[Machine translation]] and [[word-sense disambiguation]], by finding the exact mapping of concepts across languages, especially that the Arabic ontology is also mapped to the WordNet; 
+# [[Data integration|Data Integration]] and [[interoperability]] in which the Arabic ontology can be used as a semantic reference to link databases and information systems; 
+# [[Semantic Web]] and [[Semantic Web#Web 3.0|Web 3.0]], by using the Arabic ontology as a semantic reference to disambiguate the meanings used in websites; among many other applications.
+
+== URLs Design ==
+The URLs in the Arabic Ontology are designed according to the W3C's Best Practices for Publishing Linked Data, as described in the following URL schemes. This allows one to also explore the whole database like exploring a graph:
+
+# Ontology Concept: Each concept in the Arabic Ontology has a ConceptID and can be accessed using: ''https://{domain}/concept/{ConceptID | Term}''. In case of a term, the set of concepts that this term lexicalizes are all retrieved. In case of a ConceptID, the concept and its direct subtypes are retrieved, e.g. https://ontology.birzeit.edu/concept/293198
+# Semantic relations: Relationships between concepts can be accessed using these schemes: (i) the URL: ''https:// {domain}/concept/{RelationName}/{ConceptID}'' allows retrieval of relationships among ontology concepts. (ii) the URL: ''https://{domain}/lexicalconcept/{RelationName}/{lexicalConceptID}'' allows retrieval of relations between lexical concepts. For example, https://ontology.birzeit.edu/concept/instances/293121 retrieves the instances of the concept 293121. The relations that are currently used in our database are: {subtypes, type, instances, parts, related, similar, equivalent}.
+
+== References ==
+{{Reflist}}
+
+[[Category:Knowledge representation]]
+[[Category:Information science]]
+[[Category:Ontology]]
+[[Category:Ontology (information science)]]
+[[Category:Arabic dictionaries]]
+[[Category:Online dictionaries]]
+[[Category:Lexical databases]]
+[[Category:Computational linguistics]]
+[[Category:Natural language processing]]
+[[Category:Thesauri]]
+[[Category:Birzeit University]]

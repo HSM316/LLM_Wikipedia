@@ -1,0 +1,123 @@
+{{broader|Pose (computer vision)}}
+{{merge from|Articulated body pose estimation|date=November 2019}}
+'''3D pose estimation''' is the problem of determining the transformation of an object in a 2D image which gives the 3D object.  One of the requirements of 3D pose estimation arises from the limitations of [[feature (computer vision)|feature]]-based pose estimation.  There exist environments where it is difficult to extract corners or edges from an image<ref>{{cite journal
+ |last1=Fabbri |first1=Ricardo
+ |last2=Kimia |first2=Benjamin
+ |date=2016
+ |title=Multiview Differential Geometry of Curves
+ |journal=International Journal of Computer Vision
+ |volume=120 |issue=3 |pages=324–346
+ |arxiv=1604.08256
+ |bibcode=2016arXiv160408256F
+ |doi=10.1007/s11263-016-0912-7
+}}</ref><ref>
+{{cite arxiv
+ |last1=Fabbri |first1=Ricardo
+ |last2=Duff |first2=Timothy
+ |last3=Fan |first3=Hongyi
+ |last4=Regan |first4=Margaret
+ |last5=de Pinho |first5=David
+ |last6=Tsigaridas |first6=Elias
+ |last7=Wampler |first7=Charles
+ |last8=Hauenstein |first8=Jonathan
+ |last9=Kimia |first9=Benjamin
+ |last10=Leykin |first10=Anton
+ |last11=Pajdla |first11=Tomas
+ |date=23 Mar 2019
+ |title=Trifocal Relative Pose from Lines at Points and its Efficient Solution
+ |eprint=1903.09755
+ |class=cs.CV
+}}</ref>.  To circumvent these issues, the object is dealt with as a whole in noted techniques through the use of free-form contours.<ref>{{cite web|author=Bodo Rosenhahn |url=http://www.ks.informatik.uni-kiel.de/modules.php/name+Publikationen |title=Pose Estimation of 3D Free-form Contours in Conformal Geometry |publisher=Institut fur Informatik und Praktische Mathematik, Christian-Albrechts-Universitat zu Kiel |accessdate=2008-06-09 |archiveurl=https://web.archive.org/web/20080603222942/http://www.ks.informatik.uni-kiel.de/modules.php/name%2BPublikationen |archivedate=3 June 2008 |url-status=live }}</ref>
+
+==From an uncalibrated 2D camera==
+It is possible to estimate the 3D rotation and translation of a 3D object from a single 2D photo, if an approximate 3D model of the object is known and the corresponding points in the 2D image are known. A common technique for solving this has recently{{When|date=February 2011}} been "POSIT",<ref>{{cite web|author = Javier Barandiaran|title=POSIT tutorial|url=https://github.com/opencv/opencv/wiki/Posit|publisher=OpenCV|date=28 December 2017}}</ref> where the 3D pose is estimated directly from the 3D model points and the 2D image points, and corrects the errors iteratively until a good estimate is found from a single image.<ref>{{cite journal | author = Dementhon and Davis, 1995 | url = http://portal.acm.org/citation.cfm?id=204015 | title = Model-based object pose in 25 lines of code | journal = International Journal of Computer Vision | volume = 15 | issue = 1–2 | pages = 123–141 | publisher = Kluwer Academic Publishers | accessdate = 2010-05-29 | doi = 10.1007/BF01450852 | year = 1995 }}</ref> Most implementations of POSIT only work on non-coplanar points (in other words, it won't work with flat objects or planes).<ref>{{cite web | author = Javier Barandiaran | url = http://opencv.willowgarage.com/wiki/Posit | title = POSIT tutorial with OpenCV and OpenGL | accessdate = 2010-05-29 | archiveurl = https://web.archive.org/web/20100620131054/http://opencv.willowgarage.com/wiki/Posit | archivedate = 20 June 2010 | url-status = dead | df = dmy-all }}</ref>
+
+Another approach is to register a [[3D computer graphics|3D]] CAD model over the photograph of a known object by [[optimizing]] a suitable distance measure with respect to the pose parameters.<ref>
+{{cite book | author = Srimal Jayawardena and Marcus Hutter and Nathan Brewer |
+title = 2011 International Conference on Digital Image Computing: Techniques and Applications |
+pages = 37–44 |
+chapter-url = https://ieeexplore.ieee.org/document/6128657 |
+chapter = A Novel Illumination-Invariant Loss for Monocular 3D Pose Estimation |
+accessdate = 2013-06-01
+|
+doi = 10.1109/DICTA.2011.15 |
+year = 2011 |
+isbn = 978-1-4577-2006-2 |
+citeseerx = 10.1.1.766.3931 }}
+</ref><ref>
+{{
+Cite book | author = Srimal Jayawardena and Di Yang and Marcus Hutter |
+title = 2011 International Conference on Digital Image Computing: Techniques and Applications |
+pages = 51–58 |
+chapter-url = https://ieeexplore.ieee.org/document/6128659 |
+chapter = 3D Model Assisted Image Segmentation |
+accessdate = 2013-06-01
+|
+doi = 10.1109/DICTA.2011.17 |
+year = 2011 |
+isbn = 978-1-4577-2006-2 |
+citeseerx = 10.1.1.751.8774 }}
+</ref>
+The distance measure is computed between the object in the photograph and the 3D [[CAD model]] projection at a given pose.
+[[Perspective projection]] or [[orthogonal projection]] is possible depending on the pose representation used.
+This approach is appropriate for applications where a 3D CAD model of a known object (or object category) is available.
+
+==From a calibrated 2D camera==
+Given a 2D image of an object, and the camera that is calibrated with respect to a world coordinate system, it is also possible to find the pose which gives the 3D object in its object coordinate system.<ref name="Bodo Rosenhahn">{{cite web | author = Bodo Rosenhahn | url = http://homepages.inf.ed.ac.uk/rbf/CVonline/LOCAL_COPIES/ROSENHAHN1/CVOnlinePose.html | title = Foundations about 2D-3D Pose Estimation | publisher = CV Online  | accessdate = 2008-06-09 }}</ref> This works as follows.
+
+=== Extracting 3D from 2D ===
+Starting with a 2D image, image points are extracted which correspond to corners in an image.  The projection rays from the image points are reconstructed from the 2D points so that the 3D points, which must be incident with the reconstructed rays, can be determined.
+
+===Pseudocode===
+The algorithm for determining pose estimation is based on the [[iterative closest point]] algorithm. The main idea is to determine the correspondences between 2D image features and points on the 3D model curve.  
+
+ (a) Reconstruct projection rays from the image points
+ (b) Estimate the nearest point of each projection ray to a point on the 3D contour
+ (c) Estimate the pose of the contour with the use of this correspondence set
+ (d) goto (b)
+
+The above algorithm does not account for images containing an object that is partially occluded.  The following algorithm assumes that all contours are rigidly coupled, meaning the pose of one contour defines the pose of another contour.
+
+ (a) Reconstruct projection rays from the image points
+ (b) For each projection ray R:
+      (c) For each 3D contour:
+           (c1) Estimate the nearest point P1 of ray R to a point on the contour
+           (c2) if (n == 1) choose P1 as actual P for the point-line correspondence
+           (c3) else compare P1 with P:
+                    if dist(P1, R) is smaller than dist(P, R) then
+                        choose P1 as new P
+ (d) Use (P, R) as correspondence set.
+ (e) Estimate pose with this correspondence set
+ (f) Transform contours, goto (b)
+
+== Estimating pose through comparison ==
+Systems exist which use a database of an object at different rotations and translations to compare an input image against to estimate pose.  These systems accuracy is limited to situations which are represented in their database of images, however the goal is to recognize a pose, rather than determine it.<ref>{{cite journal | author = Vassilis Athitsos | title = Estimating 3D Hand Pose from a Cluttered Image | publisher = Boston University Computer Science Tech.|url=https://open.bu.edu/xmlui/bitstream/handle/2144/1505/2003-009-3D-hand-pose-from-cluttered.pdf?sequence=1}}</ref>
+
+==Software==
+* [http://www.ics.forth.gr/%7elourakis/posest/ posest], a [[GPL]] [[C (programming language)|C]]/[[C++]] library for 6DoF pose estimation from 3D-2D correspondences.
+* [https://github.com/rfabbri/diffgeom2pose diffgeom2pose], fast Matlab solver for 6DoF pose estimation from only ''two'' 3D-2D correspondences of points with directions (vectors), or points at curves (point-tangents). The points can be [[Scale-invariant_feature_transform|SIFT]] attributed with feature directions.
+* [https://github.com/rfabbri/minus MINUS]: C++ package for (relative) pose estimation of three views. Includes cases of three corresponding points with lines at these points (as in feature positions and orientations, or curve points with tangents), and also for three corresponding points and one line correspondence.
+
+==See also==
+*[[Gesture recognition]]
+*[[3D reconstruction from multiple images]]
+*[[Articulated body pose estimation]]
+*[[Camera resectioning|Camera calibration]]
+*[[Homography (computer vision)]]
+*[[Trifocal tensor]]
+*[[Pose estimation]]
+
+== References ==
+{{Reflist|30em}}
+
+==Bibliography==
+*Rosenhahn, B. "Foundations about 2D-3D Pose Estimation."
+*Rosenhahn, B. "Pose Estimation of 3D Free-form Contours in Conformal Geometry."
+*Athitsos, V. "Estimating 3D Hand Pose from a Cluttered Image."
+
+==External links==
+*[[:es:Estimación de una Postura 3D|Estimación de una Postura 3D]]
+
+[[Category:Computer vision]]
+[[Category:Geometry in computer vision]]
+[[Category:Robot control]]

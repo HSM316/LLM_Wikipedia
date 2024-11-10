@@ -1,0 +1,57 @@
+{{AFC submission|||ts=20191102173917|u=Abelyako|ns=118}}
+{{Infobox software
+| title = 
+| name = OpenVINO
+| logo = <!-- Image name is enough -->
+| logo size = 
+| logo alt = 
+| logo caption = 
+| screenshot = <!-- Image name is enough -->
+| screenshot size = 
+| screenshot alt = 
+| caption = 
+| collapsible = 
+| author = [[Intel Corporation]],
+| developer = 
+| released = 
+| discontinued = 
+| latest release version = [[2019 R3]]
+| latest release date = [[01 October 2019 ]]<ref>https://software.intel.com/en-us/articles/OpenVINO-RelNotes</ref>
+| latest preview version = 
+| latest preview date = 
+| programming language = [[C++]], [[Python]]
+| operating system = [[Cross-platform]]
+| platform = 
+| size =  <!-- 2.4.13 for Linux, unpacked -->
+| language = 
+| language count = <!-- Number only -->
+| language footnote = 
+| genre = 
+| license = [[Apache License|Apache License Version 2.0]]
+| alexa = 
+| website = {{URL|https://docs.openvinotoolkit.org/ }}
+| standard = 
+| AsOf = 
+}}
+
+'''OpenVINO toolkit''' (Open Visual Inference and Neural network Optimization) is a free toolkit for inference neural network model on various [[Intel]] processors. The tookit has two versions: OpenVINO tookit, which is supported by open source community and Intel(R) Distribution of OpenVINO toolkit, which is supported by Intel.
+OpenVINO was developed by [[Intel]]. The toolkit is cross-platform and free for use under [[Apache License|Apache License Version 2.0]]<ref>https://docs.openvinotoolkit.org/</ref>.
+
+The high level pipeline of OpenVINO consists of two parts: generate IR (Intermediate Representation) files via Model Optimizer using your trained model or public one and execute inference on Inference Engine on specified plugins ([[Central processing unit|CPU]], Intel Processor Graphics, VPU, FPGA, GNA, Multi-Device plugin, Heterogeneous plugin)<ref>https://docs.openvinotoolkit.org/latest/_docs_IE_DG_Introduction.html</ref>.
+
+== Supported Frameworks and Formats ==
+
+* [[Caffe (software)|Caffe]] (most public branches)
+* [[TensorFlow]]
+* [[Apache MXNet|MXNet]]
+* [[Kaldi (software)|Kaldi]]
+* [[Open Neural Network Exchange|ONNX]]
+* and other frameworks that can be serialized to [[Open Neural Network Exchange|ONNX]] format ([[PyTorch|Pytorch]], [https://caffe2.ai/ Caffe2], [https://github.com/PaddlePaddle/Paddle PaddlePaddle] and others)
+
+== Programming language ==
+OpenVINO is written in [[C++]] and [[Python (programming language)|Python]].
+
+== OS support ==
+OpenVINO runs on the following desktop operation systems: [[Microsoft Windows|Windows]], [[Linux]], [[MacOS]].
+
+== References ==

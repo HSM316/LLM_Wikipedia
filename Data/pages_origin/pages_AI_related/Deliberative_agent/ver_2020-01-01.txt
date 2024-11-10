@@ -1,0 +1,55 @@
+'''Deliberative agent''' (also known as intentional agent) is a sort of [[software agent]] used mainly in [[Multi-agent system|multi-agent system simulations]]. According to Wooldridge's definition, a deliberative agent is "one that possesses an explicitly represented, symbolic model of the world, and in which decisions (for example about what actions to perform) are made via symbolic reasoning".<ref name="Wooldridge2p40" />
+
+Compared to [[Reactive planning|reactive agents]], which are able to reach their goal only by reacting reflexively on external stimuli, a deliberative agent's internal processes are more complex. The difference lies in fact, that deliberative agent maintains a [[Physical symbol system|symbolic representation]] of the world it inhabits.<ref name="Hayzeldenp101" /> In other words, it possesses internal image of the external environment and is thus capable to plan its actions. Most commonly used architecture for implementing such behavior is [[Belief-Desire-Intention software model]] (BDI), where an agent's beliefs about the world (its image of a world), desires (goal) and intentions are internally represented and practical reasoning is applied to decide, which action to select.<ref name="Hayzeldenp101" />
+
+There has been considerable research focused on integrating both reactive and deliberative agent strategies resulting in developing a compound called [[hybrid agent]], which combines extensive manipulation with nontrivial symbolic structures and reflexive reactive responses to the external events.<ref name="Hayzeldenp101" />
+
+== How do deliberative agents work? ==
+It has already been mentioned, that deliberative agents possess a) inherent image of an outer world and  b) goal to achieve and is thus able to produce a list of actions (plan) to reach the goal. In unfavorable conditions, when the plan is no more applicable, agent is usually able to recompute it. 
+
+The process of plan computing (or recomputing) is as follows:<ref name="Vlahavasp235" />
+* a sensory input is received by the ''belief revision function'' and agent's beliefs are altered
+* ''option generation function'' evaluates altered beliefs and intentions and creates the options available to the agent. Agent's desires are constituted.
+* ''filter function'' then considers current beliefs, desires and intentions and produces new intentions
+* ''action selection function'' then receives intentions ''filter function'' and decides what action to perform
+
+The deliberative agent requires symbolic representation with compositional semantics (e. g. data tree) in all major functions, for its deliberation is not limited to present facts, but construes hypotheses about possible future states and potentially also holds information about past (i.e. memory). These hypothetic states involve goals, plans, partial solutions, hypothetical states of the agent's beliefs, etc. It is evident, that deliberative process may become considerably complex and hardware killing.<ref name="Scheutzp2" />
+
+== History of a concept ==
+Since the early 1970, the ''AI planning community'' has been involved in developing artificial ''planning agent'' (a predecessor of a deliberative agent), which would be able to choose a proper plan leading to a specified goal.<ref name="Wooldridgep13" /> These early attempts resulted in constructing simple planning system called [[Stanford Research Institute Problem Solver|STRIPS]]. It soon became obvious that STRIPS concept needed further improvement, for it was unable to effectively solve problems of even moderate complexity.<ref name="Wooldridgep13" /> In spite of considerable effort to raise the efficiency (for example by implementing ''hierarchical'' and ''non-linear planning''), the system remained somewhat weak while working with any time-constrained system.<ref name="Nilssonp9" />
+
+More successful attempts have been made in late 1980s to design ''planning agents''. For example the ''IPEM'' (Integrated Planning, Execution
+and Monitoring system) had a sophisticated non-linear planner embedded. Further, Wood's ''AUTODRIVE'' simulated a behavior of deliberative agents in a traffic and Cohen's ''PHOENIX'' system was construed to simulate a  forest fire management.<ref name="Nilssonp9" />
+
+In 1976, Simon and Newell formulated the [[Physical symbol system|Physical Symbol System hypothesis]],<ref name="Newellp34" /> which claims, that both human and artificial intelligence have the same principle - symbol representation and manipulation.<ref name="Hayzeldenp101" /> According to the hypothesis it follows, that there is no substantial difference between human and machine in intelligence, but just quantitative and structural - machines are much less complex.<ref name="Newellp34" /> Such a provocative proposition must have become the object of serious criticism and raised a wide discussion, but the problem itself still remains unsolved in its merit until these days.<ref name="Nilssonp9" />
+
+Further development of classical ''symbolic AI'' proved not to be dependent on final verifying the Physical Symbol System hypothesis at all. In 1988, Bratman, Israel and Pollack introduced ''Intelligent Resource-bounded Machine Architecture'' (IRMA), the first system implementing the [[Belief-Desire-Intention software model]] (BDI). IRMA exemplifies the standard idea of ''deliberative agent'' as it is known today: a software agent embedding the symbolic representation and implementing the BDI.<ref name="Wooldridge2p40" />
+
+== Efficiency of deliberative agents compared to reactive ones==
+Above-mentioned troubles with symbolic AI have led to serious doubts about the viability of such a concept, which resulted in developing a ''reactive architecture'', which is based on wholly different principles. Developers of the new architecture have rejected using symbolic representation and manipulation as a base of any artificial intelligence. Reactive agents achieve their goals simply through reactions on changing environment, which implies reasonable computational modesty.<ref name="Knight" />
+
+Even though deliberative agents consume much more system resources than their reactive colleagues, their results are significantly better just in few special situations, whereas it is usually possible to replace one deliberative agent with few reactive ones in many cases, without losing a substantial deal of the simulation result's adequacy.<ref name="Knight" /> It seems that classical deliberative agents may be usable especially where correct action is required, for their ability to produce optimal, domain-independent solution.<ref name="Vlahavasp235" /> Deliberative agent often fails in changing environment, for it is unable to re-plan its actions quickly enough.<ref name="Vlahavasp235" />
+
+== See also ==
+* [[Multi-agent system]]
+* [[Artificial Intelligence]]
+* [[Software agent]]
+* [[Intelligent agent]]
+
+== Notes ==
+{{reflist|refs=
+<ref name="Hayzeldenp101">Hayzelden, A. L.; Bigham J. ''[https://books.google.com/books?hl=en&lr=&id=7U3dvFLwL1gC&oi=fnd&pg=PA1&dq=%22Software+agents+for+future+communication+systems%22&ots=2wdeKg4x31&sig=CBf4q_8IDH08Np7O2iZFJSeL_eo#v=snippet&q=%22Physical%20Symbol%20System%22%20OR%20deliberative&f=false Software agents for future communication systems]''. 1st ed. New York: Springer, 1999. Pp. 101.</ref>
+<ref name="Knight">Knight, K. "[https://www.ijcai.org/Proceedings/93-1/Papers/061.pdf Are many reactive agents better than a few deliberative ones?]". In ''IJCAI'93: Proceedings of the 13th international joint conference on Artificial intelligence''. Vol. 1. 1st ed. Chambery: Morgan Kaufmann Publishers Inc., 1993. Pp 432 - 437.</ref>
+<ref name="Newellp34">Newell, A.; Simon, H. A. "[https://ccc.inaoep.mx/~munoz/teaching/NewellSimon1976.pdf Computer science as empirical inquiry: Symbols and search]". ''Communications of the Association for Computing Machinery'' 19.3 (1976): 113 - 126.</ref>
+<ref name="Nilssonp9">Nilsson, N. "[http://geza.kzoo.edu/~erdi/cogsci/pssh.pdf The Physical Symbol System Hypothesis: Status and Prospects]". In Lungarella, M.; Iida, F.; Bongard, J. (Eds.). ''50 Years of Artificial Intelligence''. 1st ed. New York: Springer, 2007. Pp. 9 - 17.</ref>
+<ref name="Scheutzp2">Scheutz, M.; Brian Logan, B. "[https://www.researchgate.net/profile/Matthias_Scheutz/publication/2375220_Affective_vs_Deliberative_Agent_Control/links/0deec51dbc8b45bc89000000.pdf Affective vs. Deliberative Agent Control]". In Standish, R., K.; Bedau, M., A.; Abbass, H., A. (Eds.). ''ICAL 2003 Proceedings of the eighth international conference on Artificial life''. 1st ed. Boston, MA: MIT Press Cambridge, c2003. Pp 284 - 295.</ref>
+<ref name="Vlahavasp235">Vlahavas, I.; Vrakas, D. ''[https://books.google.com/books?hl=en&lr=&id=-MdQtA2GfT0C&oi=fnd&pg=PR5&dq=%22Intelligent+techniques+for+planning%22&ots=v7XZLdUiwf&sig=tctVAEX1_LAUJNCxJomKrN1lQBg#v=onepage&q=%22Intelligent%20techniques%20for%20planning%22&f=false Intelligent techniques for planning]''. 1st ed. Hershey, PA: Idea Group Publishing, c2005. Pp 235.</ref>
+<ref name="Wooldridgep13">Wooldridge, M.; Jennings N. R. "[https://eprints.soton.ac.uk/252177/1/ECAI94-WS.pdf Agent Theories, Architectures, and Languages: A Survey]". ''Lecture Notes in Computer Science'' 890 (1995): 1 - 39. Pp. 13.</ref>
+<ref name="Wooldridge2p40">Wooldridge, M. "Conceptualising and Developing Agents". In ''Proceedings of the UNICOM Seminar on Agent Software''. 1st ed. London, 1995. Pp. 42.</ref>
+}}
+
+== External links ==
+* [https://www.cs.cmu.edu/afs/cs/usr/pstone/public/papers/97MAS-survey/node14.html Reactive vs. Deliberative agents]
+* [https://www.cs.cmu.edu/afs/cs/usr/pstone/public/papers/97MAS-survey/node14.html Keyword 'Deliberative agent' at Encyclopedia.com]
+
+[[Category:Multi-agent systems]]

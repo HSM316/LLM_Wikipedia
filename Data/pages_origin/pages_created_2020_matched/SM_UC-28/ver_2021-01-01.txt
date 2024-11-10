@@ -1,0 +1,137 @@
+{{other ships|German submarine U-28}}
+{|{{Infobox ship begin}}
+{{Infobox ship image
+|Ship image=
+|Ship caption=
+}}
+{{Infobox ship career
+|Ship country=[[German Empire]]
+|Ship flag={{Shipboxflag|German Empire|naval}}
+|Ship name=''UC-28''
+|Ship ordered=29 August 1915<ref name=UC-28>{{cite Uboat.net
+|name=UC 28
+|id=UC+28
+|type=1sub
+|accessdate=22 February 2009
+}}</ref>
+|Ship builder=[[AG Vulcan Stettin|AG Vulcan]], [[Hamburg]]<ref name=Tarrant-173>Tarrant, p. 173.</ref>
+|Ship yard number=67<ref name=UC-28 />
+|Ship laid down=
+|Ship launched=8 July 1916<ref name=UC-28 />
+|Ship commissioned=6 August 1916<ref name=UC-28 />
+|Ship decommissioned=
+|Ship struck=
+|Ship fate=surrendered, February 1919; [[ship breaking|broken up]]<ref name=UC-28 />
+|Ship notes=
+}}
+{{Infobox ship characteristics
+|Header caption={{sfn|Gröner|1991|pp=31-32}}
+|Ship class=[[German Type UC II submarine]]
+|Ship displacement=
+*{{convert|400|t|LT|abbr=on}}, surfaced
+*{{convert|480|t|LT|abbr=on}}, submerged
+|Ship length=
+*{{convert|49.45|m|ftin|abbr=on}} [[o/a]]
+*{{convert|39.30|m|ftin|abbr=on}} [[pressure hull]]
+|Ship beam=
+*{{convert|5.22|m|ftin|abbr=on}} o/a
+*{{convert|3.65|m|ftin|0|abbr=on}} pressure hull
+|Ship draught={{convert|3.68|m|ftin|abbr=on}}
+|Ship propulsion=
+*2 × [[propeller shaft (ship)|propeller shafts]]
+*2 × 6-cylinder, 4-stroke [[diesel engine]]s, {{convert|520|PS|kW bhp|abbr=on}}
+*2 × [[electric motor]]s, {{convert|460|PS|kW shp|abbr=on}}
+|Ship speed=
+*{{convert|11.6|kn}}, surfaced
+*{{convert|6.6|kn}}, submerged
+|Ship range=
+*{{convert|9,410|nmi|abbr=on|lk=in}} at {{convert|7|kn}}, surfaced
+*{{convert|53|nmi|abbr=on}} at {{convert|4|kn}}, submerged
+|Ship test depth={{convert|50|m|ft|abbr=on}}
+|Ship complement=26
+|Ship armament=
+*6 × {{convert|100|cm|in|1|abbr=on}} mine tubes
+*18 × UC 200 [[naval mine|mines]]
+*3 × {{convert|50|cm|in|1|abbr=on}} [[torpedo tube]]s (2 bow/external; one stern)
+*7 × [[torpedo]]es
+*1 × [[8.8 cm SK L/30 naval gun|{{convert|8.8|cm|in|sp=us|abbr=on}} Uk L/30]] [[deck gun]]
+|Ship notes=48-second diving time
+}}
+{{Infobox service record
+|is_ship=yes
+|is_multi=yes
+|partof=*Training Flotilla
+*unknown – 11 November 1918
+|commanders=*''Oblt.z.S.'' Theodor Schultz<ref>{{cite Uboat.net
+|id=312
+|name=Theodor Schultz
+|type=1comm
+|accessdate=4 March 2015
+}}</ref>
+*6 August 1916 - unknown
+|operations=No patrols
+|victories=None
+}}
+|}
+
+'''SM ''UC-28''''' was a German [[German Type UC II submarine|Type UC II]] [[minelayer|minelaying]] [[submarine]] or [[U-boat]] in the [[German Imperial Navy]] ({{lang-de|Kaiserliche Marine}}) during [[World War I]]. The U-boat was ordered on 29 August 1915 and was [[Ceremonial ship launching|launch]]ed on 8 July 1916. She was [[Ship commissioning|commission]]ed into the German Imperial Navy on 6 August 1916 as SM ''UC-28''.<ref group=Note>"SM" stands for "Seiner Majestät" ({{lang-en|His Majesty's}}) and combined with the ''U'' for ''Unterseeboot'' would be translated as ''His Majesty's Submarine''.</ref> In 0 patrols ''UC-28'' sank no ships. ''UC-28'' surrendered to France on 12 February 1919 and was [[ship breaking|broken up]].<ref name=UC-28 />
+
+==Design==
+A [[German Type UC II submarine]], ''UC-28'' had a displacement of {{convert|400|t|LT}} when at the surface and {{convert|480|t|LT}} while submerged. She had a [[length overall]] of {{convert|49.45|m|ftin|abbr=on}}, a [[beam (ship)|beam]] of {{convert|5.22|m|ftin|abbr=on}}, and a [[draught (ship)|draught]] of {{convert|3.68|m|ftin|abbr=on}}. The submarine was powered by two six-cylinder four-stroke diesel engines each producing {{convert|260|PS|kW shp}} (a total of {{convert|520|PS|kW shp}}), two [[electric motor]]s producing {{convert|460|PS|kW shp}}, and two [[propeller shaft]]s. She had a dive time of 48 seconds and was capable of operating at a depth of {{convert|50|m}}.{{sfn|Gröner|1991|pp=31-32}}
+
+The submarine had a maximum surface speed of {{convert|11.6|kn}} and a submerged speed of {{convert|6.7|kn}}. When submerged, she could operate for {{convert|53|nmi}} at {{convert|4|kn}}; when surfaced, she could travel {{convert|9410|nmi}} at {{convert|7|kn}}. ''UC-28'' was fitted with six {{convert|100|cm}} mine tubes, eighteen UC 200 mines, three {{convert|50|cm}} [[torpedo tube]]s (one on the stern and two on the bow), seven torpedoes, and one [[8.8 cm SK L/30 naval gun|{{convert|8.8|cm|in|sp=us|abbr=on}} Uk L/30]] [[deck gun]]. Her [[Ship's company|complement]] was twenty-six crew members.
+
+==References==
+
+===Notes===
+{{Reflist|group=Note}}
+
+===Citations===
+{{Reflist|colwidth=30em}}
+
+===Bibliography===
+{{refbegin}}
+*{{cite book
+|first=Harald
+|last=Bendert
+|title=Die UC-Boote der Kaiserlichen Marine 1914-1918. Minenkrieg mit U-Booten
+|publisher=Mittler
+|year=2001
+|location=Hamburg, Berlin, Bonn
+|isbn=3-8132-0758-7
+|language=German
+|ref=harv
+}}
+*{{cite book
+|last1=Gröner
+|first1=Erich
+|last2=Jung
+|first2=Dieter
+|last3=Maass
+|first3=Martin
+|translator-last1=Thomas
+|translator-first1=Keith
+|translator-last2=Magowan
+|translator-first2=Rachel
+|year=1991
+|title=U-boats and Mine Warfare Vessels
+|volume=2
+|work=German Warships 1815–1945
+|location=London
+|publisher=Conway Maritime Press
+|isbn=0-85177-593-4
+|ref=CITEREFGröner1991
+}}
+* {{cite book | last = Gardiner | first = Robert, ed. |title=Conway's All the World's Fighting Ships, 1906–1921 | location = [[Annapolis, Maryland]] | publisher = [[Naval Institute Press]] | year = 1985 | isbn = 978-0-87021-907-8 | oclc = 12119866 }}
+* {{cite book | last = Tarrant | first = V. E. |title=The U-Boat Offensive: 1914–1945 | location = Annapolis, Maryland | publisher = Naval Institute Press | year = 1989 | isbn = 978-0-87021-764-7 | oclc = 20338385 }}
+{{Refend}}
+
+{{German Type UC II submarines}}
+
+{{DEFAULTSORT:Uc028}}
+[[Category:Ships built in Hamburg]]
+[[Category:German Type UC II submarines]]
+[[Category:U-boats commissioned in 1916]]
+[[Category:World War I minelayers of Germany]]
+[[Category:World War I submarines of Germany]]
+[[Category:1916 ships]]

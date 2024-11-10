@@ -1,0 +1,61 @@
+{{Automatic taxobox
+|image = 
+|image_caption = 
+|taxon = Oeosporangium
+|authority = Vis.<ref name=CFLW/>
+|subdivision_ranks = Species
+|subdivision = [[#Species|See text]].
+}}
+
+'''''Oeosporangium''''' is a  genus of [[fern]]s in the subfamily [[Cheilanthoideae]] of the family [[Pteridaceae]].<ref name=PPGI/> The genus has not always been recognized. In the [[Pteridophyte Phylogeny Group]] classification of 2016 (PPG I) it was included in ''Allosorus''<ref name=PPGI/> (a genus since subsumed into ''[[Aleuritopteris]]''). It was accepted by the ''Checklist of the Ferns and Lycophytes of the World'' {{As of|2020|January|lc=yes}}.<ref name=CFLW/> As [[Circumscription (taxonomy)|circumscribed]] there, the genus is native to the [[Old World]].<ref name=CFLW/>
+
+==Species==
+{{As of|2020|January}}, the ''Checklist of Ferns and Lycophytes of the World'' recognized the following species:<ref name=CFLW/>
+{{Div col|colwidth=24em}}
+*''[[Oeosporangium belangeri]]'' <small>(Bory) Fraser-Jenk.</small>
+*''[[Oeosporangium chinense]]'' <small>(Baker) Fraser-Jenk.</small>
+*''[[Oeosporangium chusanum]]'' <small>(Hook.) Fraser-Jenk.</small>
+*''[[Oeosporangium contiguum]]'' <small>(Baker) Fraser-Jenk.</small>
+*''[[Oeosporangium coriaceum]]'' <small>(Decne.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium delicatulum]]'' <small>(Tagawa & K.Iwats.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium elegans]]'' <small>(Poir.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium fragile]]'' <small>(Hook.) Fraser-Jenk.</small>
+*''[[Oeosporangium guanchicum]]'' <small>(Bolle) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium hancockii]]'' <small>(Baker) Fraser-Jenk.</small>
+*''[[Oeosporangium hispanicum]]'' <small>(Mett.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium insigne]]'' <small>(Ching) Fraser-Jenk.</small>
+*''[[Oeosporangium kuhnii]]'' <small>(Milde) Fraser-Jenk.</small>
+*''[[Oeosporangium mairei]]'' <small>(Brause) Fraser-Jenk.</small>
+*''[[Oeosporangium nitidulum]]'' <small>(Hook.) Fraser-Jenk.</small>
+*''[[Oeosporangium patulum]]'' <small>(Baker) Fraser-Jenk.</small>
+*''[[Oeosporangium pauperculum]]'' <small>(Christ) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium persica]]'' <small>(Bory) Vis.</small>
+*''[[Oeosporangium pulchellum]]'' <small>(Bory ex Willd.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium smithii]]'' <small>(C.Chr.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium stramineum]]'' <small>(Ching) Fraser-Jenk.</small>
+*''[[Oeosporangium subvillosum]]'' <small>(Hook.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium nudiusculum]]'' <small>(R.Br.) comb. ined.</small>
+*''[[Oeosporangium tenuifolium]]'' <small>(Burm.f.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium thwaitesii]]'' <small>(Mett. ex Kuhn) Fraser-Jenk.</small>
+*''[[Oeosporangium tinaei]]'' <small>(Tod.) Fraser-Jenk.</small>
+*''[[Oeosporangium tirajanae]]'' <small>(T.S.Velázquez) comb. ined.</small>
+*''[[Oeosporangium trichophyllum]]'' <small>(Baker) Fraser-Jenk.</small>
+*''[[Oeosporangium velutinum]]'' <small>(Tardieu & C.Chr.) Fraser-Jenk.</small>
+*''[[Oeosporangium viride]]'' <small>(Forsk.) Fraser-Jenk. & Pariyar</small>
+*''[[Oeosporangium yunnanense]]'' <small>(Ching) Fraser-Jenk. & Pariyar</small>
+{{Div col end}}
+
+==References==
+{{Reflist|refs=
+<ref name=CFLW>{{Citation |last1=Hassler |first1=Michael |last2=Schmitt |first2=Bernd |date=November 2019 |contribution=''Oeosporangium'' |title=Checklist of Ferns and Lycophytes of the World |at=8.11 |url=https://worldplants.webarchiv.kit.edu/ferns/ |accessdate=2020-01-01 |lastauthoramp=yes }}</ref>
+
+<ref name=PPGI>{{Citation |author=PPG I |year=2016 |title=A community-derived classification for extant lycophytes and ferns |journal=Journal of Systematics and Evolution |volume=54 |issue=6 |pages=563–603 |doi=10.1111/jse.12229}}</ref>
+}}
+
+{{Taxonbar|from=Q7831411}}
+
+[[Category:Pteridaceae]]
+[[Category:Fern genera]]
+
+
+{{fern-stub}}

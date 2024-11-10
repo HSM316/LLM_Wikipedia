@@ -1,0 +1,69 @@
+{{Short description|Railway station in Switzerland}}
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = St. Gallen Winkeln
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = St. Gallen Winkeln railway station.jpg
+| alt                 = Two-story building with gabled roof
+| caption             = The station building in 2018
+| address             = 
+| borough             = [[St. Gallen]]
+| country             = [[Switzerland]]
+| coordinates         = {{WikidataCoord||region:CH-SG_type:railwaystation|format=dms|display=inline,title}}
+| elevation           = {{WikidataElevation|abbr=on}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = [[St. Gallen–Winterthur railway line|St. Gallen–Winterthur line]]
+| distance            = {{convert|86.4|km|mi|abbr=on}} from {{rws|Sargans}}<ref name="saw"/>
+| platforms           = 
+| tracks              = 
+| train_operators     = [[THURBO]]
+| connections         = {{Plainlist|
+* {{ill|Verkehrsbetriebe St. Gallen|de}} [[Trolleybuses in St. Gallen|trolleybus]] lines
+* {{ill|Regiobus|de|Regiobus (Gossau)}} bus lines
+}}<ref>{{cite web | title=St. Gallen West | url=https://www.postauto.ch/sites/default/files/stgallen_west_2020.pdf | publisher=[[PostBus Switzerland]] | date=13 December 2020 | accessdate=29 December 2020}}</ref>
+| structure           = 
+| parking             = 
+| bicycle             = 
+| accessible          = 
+| code                = 
+| iata                =
+| zone                = 210 and 211 ({{ill|Tarifverbund Ostwind|de}})<ref>{{cite web | title=OSTWIND-Zonenplan | url=https://www.ostwind.ch/de/zonenplaene/zonenplan.html | publisher={{ill|Tarifverbund Ostwind|de}} | date=13 December 2020 | accessdate=29 December 2020 | lang=de}}</ref>
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 1,200 per weekday<ref>{{cite web | url=https://data.sbb.ch/explore/dataset/passagierfrequenz/table/?sort=dwv | title=Passagierfrequenz | date=September 2019 | accessdate=29 December 2020 | publisher=Swiss Federal Railways}}</ref>
+| pass_year           = 2018
+| pass_rank           = 
+| services            = {{Adjacent stations|system1=St. Gallen S-Bahn
+|line1=1|type1=St. Gallen–Winterthur|left1=Gossau SG|right1=St. Gallen Bruggen
+|line2=5|left2=Gossau SG|right2=St. Gallen Bruggen
+}}
+| other_services      = 
+| mapframe            = yes
+| mapframe-custom     = {{Maplink|frame=yes|plain=yes|frame-align=center|frame-width=300|frame-height=180|zoom=12|type=point|marker=rail}}
+}}
+'''St. Gallen Winkeln railway station''' ({{lang-de|Bahnhof St. Gallen Winkeln}}) is a railway station in the Winkeln neighborhood of [[St. Gallen]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of St. Gallen|St. Gallen]]. It is an intermediate stop on the [[St. Gallen–Winterthur railway line|St. Gallen–Winterthur line]].<ref name="saw">{{Eisenbahnatlas Schweiz | page = 14}}</ref> 
+
+== Services ==
+{{As of|alt=As of the December 2023 timetable change|2023|12|post=,}} the following rail services stop at St. Gallen Winkeln:<ref name="fpf850">{{cite web | url = https://www.öv-info.ch/sites/default/files/fap/2024/pdf/850.pdf | title = Winterthur – St. Gallen | publisher = Swiss Federal Railways | date=7 November 2023 | accessdate = 14 December 2023 | lang=de}}</ref>
+
+* [[St. Gallen S-Bahn]]:
+** {{Rail icon|St. Gallen S-Bahn|1}}: half-hourly service between {{rws|Wil}} and {{rws|Schaffhausen}}.
+** {{Rail icon|St. Gallen S-Bahn|5}}: half-hourly (weekdays) or hourly (weekends) service between [[Weinfelden railway station|Weinfelden]] and [[St. Gallen railway station|St. Gallen]]; hourly service to {{rws|St. Margrethen}}.
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline}}
+* {{SBB web|6300|st-gallen-winkeln}}
+
+[[Category:Railway stations in the canton of St. Gallen]]
+[[Category:Swiss Federal Railways stations]]
+[[Category:Buildings and structures in St. Gallen (city)]]

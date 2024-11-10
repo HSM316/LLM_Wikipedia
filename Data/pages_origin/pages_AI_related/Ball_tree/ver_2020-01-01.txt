@@ -1,0 +1,110 @@
+{{About|the binary tree variant|a metric-tree involving multi-way splits|M-tree}}
+
+In [[computer science]], a '''ball tree''', '''balltree'''<ref name=r1 /> or '''metric tree''', is a [[space partitioning]] [[data structure]] for organizing points in a multi-dimensional space. The ball tree gets its name from the fact that it partitions data points into a nested set of hyperspheres known as "balls". The resulting data structure has characteristics that make it useful for a number of applications, most notably [[nearest neighbor search]].
+
+== Informal description ==
+A ball tree is a [[binary tree]] in which every node defines a D-dimensional [[hypersphere]], or ball, containing a subset of the points to be searched. Each internal node of the tree partitions the data points into two disjoint sets which are associated with different balls. While the balls themselves may intersect, each point is assigned to one or the other ball in the partition according to its distance from the ball's center. Each leaf node in the tree defines a ball and enumerates all data points inside that ball.
+
+Each node in the tree defines the smallest ball that contains all data points in its subtree. This gives rise to the useful property that, for a given test point {{mvar|t}}, the distance to any point in a ball {{mvar|B}} in the tree is greater than or equal to the distance from {{mvar|t}} to the ball. <!-- an explanation with a graphic might be nice here -->  Formally:
+<ref name="liu">{{cite journal|author1=Liu, T. |author2=Moore, A. |author3=Gray, A.  |lastauthoramp=yes |url=http://people.ee.duke.edu/~lcarin/liu06a.pdf |title=New Algorithms for Efficient High-Dimensional Nonparametric Classification|journal=Journal of Machine Learning Research|volume=7|pages=1135–1158|year= 2006}}</ref>
+: <math>
+    D^{B}(t) = 
+        \begin{cases}
+            \max(|t - B.pivot| - B.radius, D^{B.parent}),
+                & \text{if }B \neq Root \\
+            \max(|t - B.pivot| - B.radius, 0),
+                & \text{if }B = Root \\
+        \end{cases}
+</math>
+Where <math>D^{B}(t)</math> is the minimum possible distance from any point in the ball {{mvar|B}} to some point {{mvar|t}}.
+
+Ball-trees are related to the [[M-tree]], but only support binary splits, whereas in the M-tree each level splits <math>m</math> to <math>2m</math> fold, thus leading to a shallower tree structure, therefore need fewer distance computations, which usually yields faster queries. Furthermore, M-trees can better be stored [[Computer_data_storage#Secondary_storage|on disk]], which is organized in [[Page (computer memory)|pages]]. The M-tree also keeps the distances from the parent node precomputed to speed up queries.
+
+[[Vantage-point tree]]s are also similar, but they binary split into one ball, and the remaining data, instead of using two balls.
+
+== Construction ==
+A number of ball tree construction algorithms are available.<ref name=r1>Omohundro, Stephen M. (1989) [ftp://ftp.icsi.berkeley.edu/pub/techreports/1989/tr-89-063.pdf "Five Balltree Construction Algorithms"]</ref> The goal of such an algorithm is to produce a tree that will efficiently support queries of the desired type (e.g. nearest-neighbor) efficiently in the average case. The specific criteria of an ideal tree will depend on the type of question being answered and the distribution of the underlying data. However, a generally applicable measure of an efficient tree is one that minimizes the total volume of its internal nodes. Given the varied distributions of real-world data sets, this is a difficult task, but there are several heuristics that partition the data well in practice. In general, there is a tradeoff between the cost of constructing a tree and the efficiency achieved by this metric. 
+<ref name="liu" />
+
+This section briefly describes the simplest of these algorithms. A more in-depth discussion of five algorithms was given by Stephen Omohundro.<ref name=r1/>
+
+=== k-d Construction Algorithm ===
+The simplest such procedure is termed the "k-d Construction Algorithm", by analogy with the process used to construct [[k-d tree]]s. This is an [[off-line algorithm]], that is, an algorithm that operates on the entire data set at once. The tree is built top-down by recursively splitting the data points into two sets. Splits are chosen along the single dimension with the greatest spread of points, with the sets partitioned by the median value of all points along that dimension. Finding the split for each internal node requires linear time in the number of samples contained in that node, yielding an algorithm with [[time complexity]] <math>O(n\, \log\, n)</math>, where ''n'' is the number of data points.
+
+==== Pseudocode ====
+ '''function''' construct_balltree '''is'''
+     '''input:''' ''D'', an array of data points.
+     '''output:''' ''B'', the root of a constructed ball tree.
+ 
+     '''if''' a single point remains '''then'''
+         create a leaf ''B'' containing the single point in ''D''
+         '''return''' ''B''
+     '''else'''
+         let ''c'' be the dimension of greatest spread
+         let ''p'' be the central point selected considering c
+         let ''L'', ''R'' be the sets of points lying to the left and right of the median along dimension ''c''
+         create ''B'' with two children: 
+             ''B''.pivot := p
+             ''B''.child1 := construct_balltree(L),
+             ''B''.child2 := construct_balltree(R),
+             let ''B''.radius be maximum distance from p among children
+         '''return''' ''B''
+     '''end if'''
+ '''end function'''
+
+== Nearest-neighbor search ==
+
+An important application of ball trees is expediting [[nearest neighbor search]] queries, in which the objective is to find the k points in the tree that are closest to a given test point by some distance metric (e.g. [[Euclidean distance]]). A simple search algorithm, sometimes called KNS1, exploits the distance property of the ball tree. In particular, if the algorithm is searching the data structure with a test point ''t'', and has already seen some point ''p'' that is closest to ''t'' among the points encountered so far, then any subtree whose ball is further from ''t'' than ''p'' can be ignored for the rest of the search.
+
+=== Description ===
+
+The ball tree nearest-neighbor algorithm examines nodes in depth-first order, starting at the root. During the search, the algorithm
+maintains a max-first [[priority queue]] (often implemented with a [[Heap (data structure)|heap]]), denoted ''Q'' here, of the k nearest points encountered so far. At each node ''B'', it may perform one of three operations, before finally returning an updated version of the priority queue:
+
+# If the distance from the test point ''t'' to the current node ''B'' is greater than the furthest point in ''Q'', ignore ''B'' and return ''Q''.
+# If ''B'' is a leaf node, scan through every point enumerated in ''B'' and update the nearest-neighbor queue appropriately. Return the updated queue.
+# If ''B'' is an internal node, call the algorithm recursively on ''B'''s two children, searching the child whose center is closer to ''t'' first. Return the queue after each of these calls has updated it in turn.
+
+Performing the recursive search in the order described in point 3 above increases likelihood that the further child will be pruned 
+entirely during the search.
+
+=== Pseudocode ===
+    '''function''' knn_search '''is'''
+        '''input:''' 
+            t, the target point for the query
+            k, the number of nearest neighbors of t to search for
+            Q, max-first priority queue containing at most k points
+            B, a node, or ball, in the tree
+        '''output:''' 
+            Q, containing the k nearest neighbors from within B
+        '''if''' distance(t, B.pivot) - B.radius ≥ distance(t, Q.first) '''then'''
+            '''return''' Q unchanged
+        '''else if''' B is a leaf node '''then'''
+            '''for each''' point p in B '''do'''
+                '''if''' distance(t, p) < distance(t, Q.first) '''then'''
+                    add p to Q
+                    '''if''' size(Q) > k '''then'''
+                        remove the furthest neighbor from Q
+                    '''end if'''
+                '''end if'''
+            '''repeat'''
+        '''else'''
+            let child1 be the child node closest to t
+            let child2 be the child node furthest from t
+            knn_search(t, k, Q, child1)
+            knn_search(t, k, Q, child2)
+        '''end if'''
+    '''end function'''<ref name="liu" />
+
+=== Performance ===
+In comparison with several other data structures, ball trees have been shown to perform fairly well on 
+the nearest-neighbor search problem, particularly as their number of dimensions grows.<ref name="kumar">{{Cite book | doi = 10.1007/978-3-540-88688-4_27| chapter = What is a Good Nearest Neighbors Algorithm for Finding Similar Patches in Images?| title = Computer Vision – ECCV 2008| volume = 5303| pages = 364| series = Lecture Notes in Computer Science| year = 2008| last1 = Kumar | first1 = N. | last2 = Zhang | first2 = L. | last3 = Nayar | first3 = S. | isbn = 978-3-540-88685-3|url=http://www1.cs.columbia.edu/CAVE/publications/pdfs/Kumar_ECCV08_2.pdf}}</ref><ref name="kibriya">{{Cite book | doi = 10.1007/978-3-540-74976-9_16| chapter = An Empirical Comparison of Exact Nearest Neighbour Algorithms| title = Knowledge Discovery in Databases: PKDD 2007| volume = 4702| pages = 140| series = Lecture Notes in Computer Science| year = 2007| last1 = Kibriya | first1 = A. M. | last2 = Frank | first2 = E. | isbn = 978-3-540-74975-2|url=http://www.cs.waikato.ac.nz/~ml/publications/2007/KibriyaAndFrankPKDD07.pdf}}</ref>
+However, the best nearest-neighbor data structure for a given application will depend on the dimensionality, number of data points, and underlying structure of the data.
+
+==References==
+
+{{reflist}}
+
+[[Category:Trees (data structures)]]
+[[Category:Machine learning]]
+[[Category:Articles with example pseudocode]]

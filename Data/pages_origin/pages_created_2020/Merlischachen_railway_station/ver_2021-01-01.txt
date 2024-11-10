@@ -1,0 +1,61 @@
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = Merlischachen
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = Merlischachen railway station.jpg
+| alt                 = Roof-covered shelter on platform
+| caption             = The station in 2018
+| address             = 
+| borough             = [[Küssnacht]]
+| country             = [[Switzerland]]
+| coordinates         = {{WikidataCoord|Q12174811|region:CH-SZ_type:railwaystation|format=dms|display=inline,title}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = [[Lucerne–Immensee railway|Lucerne–Immensee line]]
+| distance            = 
+| platforms           = 
+| tracks              = 
+| train_operators     = [[Swiss Federal Railways]]
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 
+| pass_year           = 
+| pass_rank           = 
+|services            = {{Adjacent stations|system1=Lucerne S-Bahn
+|line1=3|left1=Meggen|right1=Küssnacht am Rigi
+}}
+| other_services      = 
+| map_type            = Switzerland#Canton of Schwyz
+| map_caption         =
+| map_size            = 300px
+}}
+'''Merlischachen railway station''' ({{lang-de|Bahnhof Merlischachen}}) is a railway station in the municipality of [[Küssnacht]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of Schwyz|Schwyz]]. It is an intermediate stop on the standard gauge [[Lucerne–Immensee railway|Lucerne–Immensee line]] of [[Swiss Federal Railways]].
+
+== Services ==
+The following services stop at Merlischachen:<ref name="fpf601">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/601.pdf | title = Luzern - Rotkreuz - Arth-Goldau - Erstfeld | publisher = Bundesamt für Verkehr | date=5 November 2019 | accessdate = 31 December 2019}}</ref>
+
+* [[Lucerne S-Bahn]] {{rcb|Lucerne S-Bahn|3|inline=croute}}: hourly service between {{rws|Lucerne}} and [[Brunnen railway station|Brunnen]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline}}
+* {{SBB web|5011|merlischachen}}
+
+[[Category:Railway stations in the canton of Schwyz]]
+[[Category:Swiss Federal Railways stations]]

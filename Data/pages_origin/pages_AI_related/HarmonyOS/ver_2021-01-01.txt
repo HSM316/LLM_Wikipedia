@@ -1,0 +1,148 @@
+{{short description|IoT operating system by Huawei}}
+{{distinguish|Harmony (operating system)}}
+{{Infobox OS
+| name = HarmonyOS
+| logo = 
+| logo_size = 80px
+| logo caption = logo of HarmonyOS
+| logo alt = 
+| screenshot = <!-- Filename only (no wikilink, nor Image:/File:) -->
+| caption = 
+| screenshot_alt = 
+| collapsible = 
+| version of = <!-- For articles about releases of operating systems ONLY -->
+| developer = [[Huawei]]
+| Owner = [[Huawei]]
+| family = [[Android (operating system)|Android]]
+| working state = Current <!-- "Current", "Discontinued" (operating systems), or "No longer supported" (releases) -->
+| source model = [[Closed source]]
+| released = {{Start date and age|2019|8|9}}
+| discontinued = <!-- DON'T use this for articles about releases of operating systems. -->
+| RTM date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| GA date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| latest release version = 1.0.1.66SP3
+| latest release date = {{Start date and age|2020|10|20}}
+| latest preview version = 2.0.0.612
+| latest preview date = {{Start date and age|2020|12|16}}
+| marketing target = [[Smartphone|Smartphones]], [[Smart TV|Smart TVs]]
+| programmed in = [[C (programming language)|C]], [[C++]], [[Java (programming language)|Java]]
+| language = <!-- Supported human languages (English, French, Italian, Arabic, Chinese ...) -->
+| language count = 
+| language footnote = 
+| package manager = <!-- dpkg, rpm, Windows installer, etc. -->
+| supported platforms = <!-- [[IA-32]], [[x86-64]], [[Itanium]], [[ARM architecture|ARM]], etc. -->
+| kernel type = <!-- [[Microkernel]] -->
+| userland = 
+| preceded by = 
+| succeeded by = 
+| website = {{URL|https://www.harmonyos.com/en/home}}
+| support status = <!-- For articles about releases of operating systems ONLY -->
+| other articles = <!-- Other Articles-->
+}}
+
+{{Infobox OS
+| name = OpenHarmony
+| logo = <!-- Filename only: no wikilink, Image: or File: -->
+| logo size = 
+| logo caption = 
+| logo alt = 
+| screenshot = <!-- Filename only: no wikilink, Image: or File: -->
+| caption = 
+| screenshot_alt = 
+| collapsible = 
+| version of = <!-- For articles about releases of operating systems ONLY -->
+| developer = [[Huawei]]
+| family = [[LiteOS]]
+| working state = Current
+| source model = [[Open-source software|Open source]]
+| released = {{Start date and age|2019|9|10}}
+| discontinued = <!-- DON'T use this for articles about releases of operating systems. -->
+| RTM date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| GA date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| latest release version = 1.0
+| latest release date = {{Start date and age|2020|9|10}}
+| latest preview version = 
+| latest preview date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| repo = <!-- {{URL|https://example.com}} -->
+| marketing target = [[Internet of Things]]
+| programmed in = [[C]], [[C++]]
+| language = <!-- Supported human languages (English, French, Italian, Arabic, ...) -->
+| language count = 
+| language footnote = 
+| update model = <!-- APT, Windows Update, etc. -->
+| package manager = <!-- dpkg, rpm, Windows installer, etc. -->
+| supported platforms = <!-- [[IA-32]], [[x86-64]], [[Itanium]], [[ARM architecture|ARM]], etc. -->
+| kernel type = <!-- Hybrid, Monolithic, Microkernel, Exokernel, Nanokernel, etc. -->
+| userland = 
+| ui = 
+| license = 
+| preceded by = 
+| succeeded by = 
+| website = {{URL|https://www.harmonyos.com/en/home}}
+| support status = <!-- For articles about releases of operating systems ONLY -->
+| other articles = 
+}}
+
+{{Infobox Chinese
+| t = 鴻蒙
+| s = 鸿蒙
+| l = 
+| tp = Hóng Méng
+| p = Hóngméng
+| mi = 
+| bpmf = ㄏㄨㄥˊ ㄇㄥ
+| y = Hùhng Mùhng
+| j = Hung4 Mung4
+| ci = 
+| c = 
+| altname = 
+| order = st
+}}
+'''HarmonyOS''' ({{zh|s=鸿蒙|p=Hóngméng}}) is a family of [[operating system|operating systems]] developed by [[Huawei]]. It is designed for [[Smart device|smart devices]] such as [[Smart TV|smart TVs]] and it has been used as a [[mobile operating system]]. It is expected to become an [[Open-source software|open-source]], [[Free software|free]], and [[microkernel]]-based [[distributed operating system]]. <ref>{{Cite web|last=Phelan|first=David|title=Huawei's Ambitious Alternative To Google May Be Coming For These Huawei & Honor Phones|url=https://www.forbes.com/sites/davidphelan/2020/10/06/huaweis-ambitious-alternative-to-google-may-be-coming-soon-for-these-huawei--honor-phones/|access-date=2020-10-07|website=Forbes|language=en}}</ref> 
+
+Unveiled on 9 August 2019, the platform is designed primarily for [[Internet of things|Internet of Things]] (IoT) devices. Version 1.0 of HarmonyOS was first adopted in September 2019 in its smart screen products launched only in China. Version 2.0 of HarmonyOS was then announced in September 2020 with support for smartphones, head units, watches and smart TVs. Its first developer beta was released to selected developers on 16 December 2020 via OTA updates, which also allows developers to roll back their phones to EMUI 11.
+
+== History ==
+
+=== Origins ===
+Reports surrounding an in-house operating system being developed by Huawei date back as far as 2012. They intensified in May 2019 after Huawei was subjected to export restrictions by the United States government for alleged violations of [[United States sanctions against Iran]]. Huawei executive Richard Yu described an in-house platform as a "plan B" in case it is prevented from using [[Android (operating system)|Android]] on future [[smartphone]] products.<ref>{{Cite web|url=https://www.federalregister.gov/documents/2019/05/21/2019-10616/addition-of-entities-to-the-entity-list|title=Addition of Entities to the Entity List|date=2019-05-21|website=Federal Register|access-date=2019-06-08|archive-url=https://web.archive.org/web/20190608070718/https://www.federalregister.gov/documents/2019/05/21/2019-10616/addition-of-entities-to-the-entity-list|archive-date=8 June 2019|url-status=live}}</ref><ref>{{Cite web|url=https://www.scmp.com/tech/big-tech/article/3001685/huawei-confirms-it-has-built-its-own-operating-system-just-case-us|title=Huawei confirms it has its own OS on back shelf as a plan B|date=14 March 2019|website=South China Morning Post|access-date=21 May 2019|archive-url=https://web.archive.org/web/20190521023511/https://www.scmp.com/tech/big-tech/article/3001685/huawei-confirms-it-has-built-its-own-operating-system-just-case-us|archive-date=21 May 2019|url-status=live}}</ref><ref>{{Cite web|url=https://www.cnbc.com/2019/03/15/huawei-has-built-its-own-operating-system-for-smartphones-laptops.html|title=Huawei built software for smartphones and laptops in case it can't use Microsoft or Google|last=Kharpal|first=Arjun|date=15 March 2019|website=CNBC|archive-url=https://web.archive.org/web/20190522193246/https://www.cnbc.com/2019/03/15/huawei-has-built-its-own-operating-system-for-smartphones-laptops.html|archive-date=22 May 2019|url-status=live|access-date=23 May 2019}}</ref>
+
+Prior to its unveiling, it was originally speculated to be a [[mobile operating system]] that could replace [[Android (operating system)|Android]] on future Huawei devices (in response to financial sanctions imposed on Huawei by the United States government in May 2019), but by July 2019, some Huawei executives were describing Harmony as being an "industrial" [[embedded operating system]] designed for IoT hardware, discarding the previous statements for it to be a mobile operating system. These details were confirmed upon the official unveiling of the platform in 2019, with Huawei listing use cases such as [[Smart TV|smart TVs]], [[in-car entertainment]], and [[wearable device]]s.
+
+Some media outlets reported that this OS, referred to as "Hongmeng OS", could be released in China in either August or September 2019, with a worldwide release in the second quarter of 2020.<ref>{{Cite web|url=https://www.cnbc.com/2019/05/23/huawei-our-own-operating-system-could-be-ready-this-year.html|title=Huawei says its own operating system could be ready this year if it can't use Google or Microsoft|first=Arjun|last=Kharpal|date=May 23, 2019|website=CNBC}}</ref><ref>{{Cite web|url=https://www.techradar.com/news/huaweis-os-to-be-rolled-out-next-month|title=Huawei says its Android OS replacement launch date is still undecided [Updated]|first1=Naushad K.|last1=Cherrayil|first2=John McCann 2019-05-28T15:33:46Z Mobile|last2=phones|website=TechRadar}}</ref> On 24 May 2019, Huawei registered "Hongmeng OS" as a [[trademark]] in China.<ref>{{Cite web|url=https://www.cnet.com/news/huawei-os-reportedly-far-from-ready-after-android-ban-software/|title=Huawei OS may be called 'Hongmeng,' but it's reportedly 'far from ready'|first=Corinne|last=Reichert|website=CNET}}</ref> The name "[[Hong Meng|Hongmeng]]" ({{zh|s=鸿蒙|p=|c=|t=|l=Vast Mist}}) came from Chinese mythology that symbolizes primordial chaos or the world before creation.<ref>{{cite news |last1=Uy |first1=Ed |title=No Google, no problem? Huawei unveils its own OS - Ed Uy |url=https://businessmirror.com.ph/2019/08/17/no-google-no-problem-huawei-unveils-its-own-os/ |accessdate=19 August 2019 |work=BusinessMirror |date=17 August 2019}}</ref> The same day, Huawei registered trademarks surrounding "Ark OS" and variants with the [[European Union Intellectual Property Office]].<ref>{{cite web|url=https://www.androidheadlines.com/2019/05/hauweis-android-alternative-possible-name-ark-os.html|title=Huawei's Android Alternative May Be Called "Ark OS"|first=Kristijan|last=Lucic|date=2019-05-27|accessdate=2019-05-30|publisher=Android Headlines}}</ref> In July 2019, it was reported that Huawei had also registered trademarks surrounding the word "Harmony" for desktop and mobile operating system software, indicating either a different name or a component of the OS.<ref>{{Cite web|url=https://thenextweb.com/plugged/2019/07/15/huawei-wants-to-name-its-android-os-replacement-harmony-in-europe/|title=Huawei wants to name its Android OS replacement 'Harmony' in Europe|last=Lakshmanan|first=Ravie|date=2019-07-15|website=The Next Web|language=en-us|access-date=2019-07-16}}</ref>
+
+In June 2019, Huawei communications VP Andrew Williamson told [[Reuters]] that the company was testing HongMeng in China, and that it could be ready "in months". However, in July 2019, chairman [[Liang Hua]] and  senior vice president Catherine Chen stated that Hongmeng OS was not actually intended as a mobile operating system for smartphones, and was actually an [[embedded operating system]] designed for [[Internet of things]] (IoT) hardware.<ref>{{Cite web|url=https://technode.com/2019/07/12/huawei-chairman-android-remains-our-first-choice/|title=Android remains our 'first choice': Huawei chairman|date=2019-07-12|website=TechNode|language=en-US|access-date=2019-07-19|archive-url=https://web.archive.org/web/20190719185147/https://technode.com/2019/07/12/huawei-chairman-android-remains-our-first-choice/|archive-date=19 July 2019|url-status = live}}</ref><ref>{{Cite web|url=https://www.cnet.com/news/huawei-says-hongmeng-os-isnt-designed-as-android-replacement/|title=Huawei says Hongmeng OS isn't designed as an Android replacement|last=Keane|first=Sean|website=CNET|language=en|access-date=2019-07-19|archive-url=https://web.archive.org/web/20190719184715/https://www.cnet.com/news/huawei-says-hongmeng-os-isnt-designed-as-android-replacement/|archive-date=19 July 2019|url-status = live}}</ref><ref>{{Cite web|url=https://www.theverge.com/2019/7/19/20700411/huawei-hongmeng-os-android-replacement-not|title=Huawei says its Hongmeng OS isn't an Android replacement after all|last=Byford|first=Sam|date=2019-07-19|website=The Verge|access-date=2019-07-19|archive-url=https://web.archive.org/web/20190719100812/https://www.theverge.com/2019/7/19/20700411/huawei-hongmeng-os-android-replacement-not|archive-date=19 July 2019|url-status = live}}</ref> In July 2019, Huawei chairman [[Liang Hua]] stated that the OS was intended for "industrial" use and that Huawei "[had not] decided yet if the Hongmeng OS can be developed as a [[Mobile operating system|smartphone operating system]] in the future" (preferring the continued use of Android for these devices).<ref>{{Cite web|url=https://technode.com/2019/07/12/huawei-chairman-android-remains-our-first-choice/|title=Android remains our 'first choice': Huawei chairman|date=2019-07-12|website=TechNode|language=en-US|access-date=2019-07-19}}</ref> Building upon the statement, Huawei's senior vice president Catherine Chen stated that it was an [[embedded operating system]] designed for [[Internet of things]] (IoT) hardware.<ref>{{Cite web|url=https://www.cnet.com/news/huawei-says-hongmeng-os-isnt-designed-as-android-replacement/|title=Huawei says HarmonyOS isn't designed as an Android replacement|last=Keane|first=Sean|website=CNET|language=en|access-date=2019-07-19}}</ref><ref name=":1">{{Cite web|url=https://www.theverge.com/2019/7/19/20700411/huawei-hongmeng-os-android-replacement-not|title=Huawei says its HarmonyOS isn't an Android replacement after all|last=Byford|first=Sam|date=2019-07-19|website=The Verge|access-date=2019-07-19}}</ref>
+
+=== Release ===
+On 9 August 2019, Huawei officially unveiled HarmonyOS at its inaugural developers' conference in [[Dongguan]]. Huawei described HarmonyOS as a [[Free software|free]], [[microkernel]]-based distributed operating system for various types of hardware, with faster [[inter-process communication]] than [[QNX]] or Google's [[Google Fuchsia|Fuchsia]] microkernel, and [[real-time computing|real-time]] resource allocation. The ARK compiler can be used to optimize Android [[Android application package|APK packages]] on the OS. Huawei stated that developers would be able to "flexibly" deploy HarmonyOS software across various device categories; the company focused primarily on IoT devices, including smart TVs, [[wearable device]]s, and [[in-car entertainment]] systems, and did not explicitly position HarmonyOS as a mobile OS.<ref>{{Cite web|url=https://www.engadget.com/2019/08/09/huawei-harmony-os-hongmeng-android/|title=Huawei reveals HarmonyOS, its alternative to Android|website=Engadget|language=en|access-date=2019-08-09}}</ref><ref name="verge-harmony">{{Cite web|url=https://www.theverge.com/2019/8/9/20798251/huawei-harmonyos-hongmengos-smartphones-internet-of-things-operating-system-android|title=Huawei's new operating system is called HarmonyOS|last=Porter|first=Jon|date=2019-08-09|website=The Verge|access-date=2019-08-09}}</ref>
+
+HarmonyOS 2.0 launched at the Huawei Developer Conference on 10 September 2020. Huawei announced it intended to ship the operating system on its smartphones in 2021.<ref>{{cite web |last1=Kharpal |first1=Arjun |title=Huawei says its own operating system HarmonyOS will come to smartphones next year |url=https://www.cnbc.com/2020/09/10/huawei-opens-harmonyos-to-third-party-smartphone-makers-after-google-ban.html |website=CNBC |date=10 September 2020 |access-date=21 September 2020}}</ref>
+
+The first developer beta of HarmonyOS 2.0 was launched on 16 December 2020. Along with the beta, Huawei announced a developer competition with awards that total up to 1.5 million CNY. They also released an IDE, based on [[IntelliJ IDEA]], and a cloud emulator for developers in early access. <ref name=":2" />
+
+== Devices ==
+Huawei stated that HarmonyOS would initially be used on devices targeting the Chinese market. The company's subsidiary brand, [[Honor (brand)|Honor]], unveiled the Honor Vision line of [[Smart TV|smart TVs]] as the first consumer electronics devices to run HarmonyOS.<ref>{{Cite web|url=https://www.theverge.com/2019/8/10/20798260/huawei-honor-smart-tv-vision-pro-harmonyos-china|title=The Honor Vision TV is Huawei's first HarmonyOS device|last=Porter|first=Jon|date=2019-08-10|website=The Verge|access-date=2019-08-13}}</ref><ref name="verge-harmony"/> Honor Vision, Honor Vision Pro, Huawei Vision (65/75), Huawei Router AX3 are the first devices to run HarmonyOS 1.0.
+
+HarmonyOS 2.0 will support cross development for smartphones, in-car head units, smart watches and smart TVs. A single user interface can be developed that will automatically adapt between different devices.
+
+The HarmonyOS 2.0 beta launched on 16 December 2020 supports the Huawei P40, Huawei P40 Pro, Huawei Mate 30, Huawei Mate 30 Pro, and Huawei MatePad Pro. While the beta fully supports Android apps,<ref>{{Cite web|last=Jeet|date=2020-12-15|title=Huawei's HarmonyOS 2.0 for smartphones get Android apps support; Beta releasing tomorrow|url=https://www.gizmochina.com/2020/12/15/huawei-harmonyos-2-android-app-release-roadmap/|access-date=2020-12-20|website=Gizmochina|language=en-US}}</ref> a compatibility layer based on Android Runtime also enables support for HAP packages, HarmonyOS's proprietary package format.<ref name=":2">{{Cite web|title=HarmonyOS Document|url=https://developer.harmonyos.com/en/docs/documentation/doc-guides/build_hap-0000001053342418|access-date=2020-12-20|website=developer.harmonyos.com}}</ref> Selected beta testers in China can download and test HarmonyOS 2.0 via OTA updates. Huawei has also given these beta testers the option to roll back their devices to EMUI 11.
+
+== Relations with Android ==
+Huawei claimed that HarmonyOS is a microkernel-based, distributed OS that is completely different from Android and iOS. <ref>{{Cite web|last=Li|first=Deng|date=2020-09-21|title=HarmonyOS/Hongmeng OS: Here's everything you need to know about this new Operating System|url=https://www.huaweicentral.com/harmonyos-hongmeng-os-everything-you-need-to-know/|access-date=2020-12-20|website=Huawei Central|language=en-US}}</ref> However, it was later revealed that HarmonyOS 1.0 was based on Android 9 and supported ADB, the Android Debug Bridge. <ref>{{Cite web|title=欺骗消费者？荣耀智慧屏用的根本不是鸿蒙系统，而是安卓9.0！|url=https://new.qq.com/omn/20190819/20190819A0H6JI00.html|access-date=2020-12-24|website=new.qq.com}}</ref> In September 2020, it was found that HDC, the debug bridge in HarmonyOS 2.0, was again based on ADB. <ref>{{Cite web|last=|first=|date=|title=Reverse Analysis of the First HarmonyOS App|url=https://shoewann0402.github.io/2020/09/12/reverse-analysis-of-the-frist-harmonyos-app/index.html|url-status=live|archive-url=|archive-date=|access-date=2020-12-20|website=Shoewann's Personal Blog|language=zh-CN}}</ref><ref>{{Cite web|title=華為鴻蒙 2.0 被質疑僅是「換皮」 系統底層基礎仍是 Android - ezone.hk - 科技焦點 - 5G流動|url=https://ezone.ulifestyle.com.hk/article/2752710|access-date=2020-12-24|website=ezone.hk 即時科技生活}}</ref> A video of HarmonyOS 2.0 developer beta running on mobile was then posted, showing that the beta was just the same as Android 10 and no significant changes have been made in the name of HarmonyOS operating system. <ref>{{Cite web|last=Li|first=Deng|date=2020-12-18|title=Here's what Android cannot do but HarmonyOS 2.0 can, the power of distributed technology [Video]|url=https://www.huaweicentral.com/heres-what-android-cannot-do-but-harmonyos-2-0-can-the-power-of-distributed-technology-video/|access-date=2020-12-20|website=Huawei Central|language=en-US}}</ref><ref>{{Cite web|last=自由電子報 3C科技|date=2020-12-17|title=華為「鴻蒙」手機介面揭曉！網友狠酸：只是換名字的 Android - 自由電子報 3C科技|url=https://3c.ltn.com.tw/news/42671|access-date=2020-12-24|website=自由時報電子報}}</ref> 
+
+The future architecture, however, would be based only on HarmonyOS microkernel, according to the HarmonyOS roadmap. <ref name=":0" />
+
+== OpenHarmony ==
+OpenHarmony is the open-source implementation of HarmonyOS launched by the OpenAtom Foundation. The project, hosted on Gitee, only targeted IoT platforms as of December 2020. <ref>{{Cite web|last=|first=|date=|title=OpenHarmony|url=http://gitee.com/openharmony|url-status=live|archive-url=|archive-date=|access-date=2020-12-20|website=Gitee|language=zh-CN}}</ref> According to the HarmonyOS roadmap, implementations of HarmonyOS on smartphones and smart TVs would become fully open-source before October 2021. <ref name=":0">{{Cite web|last=Li|first=Deng|date=2020-12-14|title=HarmonyOS 2.0 Mobile Beta launch event set for December 16, check full event schedule|url=https://www.huaweicentral.com/harmonyos-2-0-mobile-beta-launch-event-set-for-december-16-1/|access-date=2020-12-20|website=Huawei Central|language=en-US}}</ref>
+
+== See also ==
+*[[EulerOS]]
+*[[AliOS]] 
+* [[Comparison of mobile operating systems]]
+
+== References ==
+{{Reflist}}{{Huawei}}{{Android (operating system)}}{{Mobile operating systems}}
+[[Category:2019 software]]
+[[Category:Embedded operating systems]]
+[[Category:Huawei products]]
+[[Category:Internet of things]]

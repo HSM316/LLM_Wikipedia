@@ -1,0 +1,47 @@
+Picollator - Internet search engine that performs searches for web sites and multimedia by visual query (image) or text, or a combination of visual query and text. Picollator recognizes objects in the image, obtains their relevance to the text and vice a versa, and searches in accordance with all information provided.
+
+ Description 
+
+At present Picollator identifies human faces on the images and creates a database of people's faces.  So you can search for websites containing photos, other images of the submitted person, lookalikes, similar photos in the Internet.
+
+Visual query offers quite a natural approach to search: upload your image and search for similar pictures. This makes the system totally language-independent.
+
+Picollator goes to the hybrid search. It allows users to search for webpages by text also, or combine visual and text query. Complex search query (image+text) provides the best possible results, transforming all media into knowledge.
+
+ History 
+
+2006 Recogmission LLC developed a desktop application for photo collections management. The system automatically classifies, manages and retrieves photographs stored locally or in corporate databases.
+
+2007 Recogmission started Picollator multimedia search engine project, now in Beta stage.
+
+2008 Picollator.mobi  - the new universal search engine for mobile phones
+
+2009 Recogmission opens the web based content filter service piFilter.com , which inherited some pattern recognition technologies from Picollator search engine.
+
+ Features 
+
+Most image search engines match user textual query and picture tags. Picollator is based on a different approach. It stores in its database patterns or objects found in the picture. It is able to understand who is in the photo and compare it to other photos and find similar ones.
+
+Picollator is able to perform search by images and/or text to find digital images and/or textual resources in the Internet.
+
+To search for multimedia information user may submit
+
+Sample image to find images with relevant people
+Image to find web resources
+Text to find images
+Text to find web resources
+Text and Image to find images and/or web resources.
+
+ Facts 
+
+Picollator is the noun, while the corresponding verb 'to picollate' has been first invented by Recogmission team. 'Picollate' consists of two word samples: 'PICture' and 'COLLATE'. Recogmission used the word 'picollate' in the meaning of the process of picture searching and managing.
+
+Picollator generally works with digital photos and texts and offers the hybrid search possibility, because the user is able to find any resource using the text or rich content. Yet, the system is able to process artworks and even painted portraits.
+
+Picollator image index contains black-and-white photos as well as coloured photographs.
+
+ Company 
+
+Recogmission :ru:Recogmission LLC has developed a novel indexing engine for multimedia information search based on the visual query.
+
+Recogmission develops solutions for multimedia information (image, text and video) indexing and search on the Web and in corporate environments.

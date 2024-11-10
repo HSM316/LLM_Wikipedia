@@ -1,0 +1,73 @@
+{{Short description|Railway station in Switzerland}}
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = Immensee
+| former = Immensee-Küssnacht
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = FFS Ec 2-5 28 Immensee 230509.jpg
+| alt                 = Green steam locomotive with carriages in front of a two-story building
+| caption             = Heritage steam locomotive at Immensee in 2009
+| address             = 
+| borough             = [[Küssnacht]]
+| country             = [[Switzerland]]
+| coordinates         = {{WikidataCoord||region:CH-SZ_type:railwaystation|format=dms|display=inline,title}}
+| elevation           = {{WikidataElevation|abbr=on}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = {{Plainlist|
+* [[Gotthard railway|Gotthard line]]
+* [[Lucerne–Immensee railway|Lucerne–Immensee line]]
+* [[Rupperswil–Immensee railway|Rupperswil–Immensee line]]
+}}
+| distance            = {{Plainlist|
+* {{convert|19.2|km|mi|abbr=on}} from {{rws|Lucerne}}
+* {{convert|107.2|km|mi|abbr=on}} from {{rws|Basel SBB}}
+}}<ref name="saw" />
+| platforms           = 3
+| tracks              = 4
+| train_operators     = [[Swiss Federal Railways]]
+| connections         = {{ill|Zugerland Verkehrsbetriebe|de}} buses<ref>{{cite web | title=Liniennetz Schwyz–Weggis | url=https://www.fahrplanfelder.ch/fileadmin/fap_pdf/Liniennetzpl%C3%A4ne/60.000.pdf | page=3 | publisher=[[Auto AG Schwyz]] | date=13 December 2020 | access-date=1 January 2021 | lang=de | archive-date=20 March 2022 | archive-url=https://web.archive.org/web/20220320050412/https://www.fahrplanfelder.ch/fileadmin/fap_pdf/Liniennetzpl%C3%A4ne/60.000.pdf | url-status=dead }}</ref>
+| structure           = 
+| parking             = 
+| bicycle             = 
+| accessible          = 
+| code                = 
+| iata                =
+| zone                = 675 and 676 ({{ill|Tarifverbund Schwyz|de}})<ref>{{cite web | title=Tarifzonen | url=https://www.tvsz.ch/zonenplan | publisher={{ill|Tarifverbund Schwyz|de}} | date=13 December 2020 | access-date=1 January 2021 | lang=de}}</ref>
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 610 per weekday<ref>{{cite web | url=https://data.sbb.ch/explore/dataset/passagierfrequenz/table/?sort=dwv | title=Passagierfrequenz | date=September 2019 | access-date=1 January 2021 | publisher=Swiss Federal Railways}}</ref>
+| pass_year           = 2018
+| pass_rank           = 
+|services            = {{Adjacent stations|system1=Lucerne S-Bahn
+|line1=3|left1=Küssnacht am Rigi|right1=Arth-Goldau
+}}
+| other_services      = 
+| mapframe            = yes
+| mapframe-custom     = {{Maplink|frame=yes|plain=yes|frame-align=center|frame-width=300|frame-height=180|zoom=12|type=point|marker=rail}}
+}}
+'''Immensee railway station''' ({{langx|de|Bahnhof Immensee}}) is a railway station in the municipality of [[Küssnacht]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of Schwyz|Schwyz]]. It located at the junction of three standard gauge lines of [[Swiss Federal Railways]]: the [[Gotthard railway|Gotthard]], [[Lucerne–Immensee railway|Lucerne–Immensee]], and [[Rupperswil–Immensee railway|Rapperswil–Immensee]].<ref name="saw">{{Eisenbahnatlas Schweiz | page = 22}}</ref>
+
+== Layout ==
+Immensee has three platforms serving four tracks, numbered 1–4. The platform nearest the station building ({{Langx|de-CH|Hausperron}}) is {{convert|70|m}} long. Next to that platform is a {{convert|119|m|adj=on}} intermediate platform ({{Langx|de-CH|Zwischenperron}}), serving one track. Finally, there is a {{convert|199|m|adj=on}} [[island platform]] serving two tracks.<ref>{{Cite web |title=Stop: platform length (body) |url=https://data.sbb.ch/explore/dataset/perron/table/?q=5003 |access-date=2023-08-11 |website=data.sbb.ch |language=en-US}}</ref>
+
+== Services ==
+{{As of|alt=As of the December 2020 timetable change|2020|12|post=,}} the following services stop at Immensee:<ref name="fpf601">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/601.pdf | title = Luzern - Küssnacht am Rigi - Arth-Goldau - Göschenen | publisher = Bundesamt für Verkehr | date=3 November 2020 | access-date = 1 January 2021}}</ref>
+
+* [[Lucerne S-Bahn]] {{rcb|Lucerne S-Bahn|3|inline=croute}}: hourly service between {{rws|Luzern}} and [[Brunnen railway station|Brunnen]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Commons category-inline}}
+* {{SBB web|5003|immensee}}
+
+[[Category:Railway stations in the canton of Schwyz]]
+[[Category:Swiss Federal Railways stations]]

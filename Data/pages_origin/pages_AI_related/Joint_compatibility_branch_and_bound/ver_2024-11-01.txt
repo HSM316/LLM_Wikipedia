@@ -1,0 +1,20 @@
+{{Short description|Computer vision algorithm}}
+'''Joint compatibility branch and bound''' (JCBB) is an [[algorithm]] in [[computer vision]] and [[robotics]] commonly used for [[data association]] in [[simultaneous localization and mapping]]. JCBB measures the joint compatibility of a set of pairings that successfully rejects spurious matchings and is hence known to be robust in complex environments.<ref name=Neira2001>{{citation
+ | doi = 10.1109/70.976019
+ | last = Neira | first =  J. Tardos
+ | year = 2001
+ | last2 = Tardos
+ | first2 = J.D.
+ | title = Data association in stochastic mapping using the joint compatibility test
+ | journal = IEEE Transactions on Robotics and Automation
+ | volume = 17
+ | issue = 6
+ | pages = 890–897
+ | url = http://webdiis.unizar.es/~jdtardos/papers/Neira_TRA_2001.pdf
+}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Computer vision]]
+[[Category:Robot control]]

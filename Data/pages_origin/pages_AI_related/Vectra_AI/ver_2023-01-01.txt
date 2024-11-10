@@ -1,0 +1,106 @@
+{{CoI|date=June 2021}}
+{{Advert|date=February 2021}}
+{{Infobox company
+| name = Vectra AI
+| type = Privately Held
+| industry = [[Information security|Information Security]] 
+| founded = {{start date and age|2012}} (incorporated)
+| founders = Mark Abene, James Harlacher, Marc Rogers, Ivan Wick{{cn|date=December 2021}}  
+| hq_location_city = [[San Jose, California|San Jose]], [[California]]
+| hq_location_country = [[United States|U.S.]]
+| area_served = North America, Europe, Middle East, Africa, Australia/New Zealand, Japan and Asia-Pacific
+| website = {{URL|http://www.vectra.ai}}  
+}}
+'''Vectra AI, Inc.''' is a cybersecurity company with headquarters in [[San Jose, California]]. 
+
+== History ==
+
+Vectra was founded in 2010 as TraceVector LLC in New York City and was incorporated in 2012 under the name Vectra Networks.<ref>{{cite web |title=Contact Vectra |url=https://www.vectra.ai/about/contact |access-date=16 April 2018 |website=Vectra}}</ref>
+
+== Products ==
+
+The Cognito platform from Vectra provides continuous, automated threat surveillance to expose hidden and unknown cyberattackers that actively spread inside networks.
+
+Threat behaviors and cyberattack techniques detected by Cognito include [[botnet]] command-and-control communications, [[botnet]] monetization, internal reconnaissance, lateral movement, and [[data theft]], or exfiltration.
+
+Vectra offers three applications on the Cognito platform to address use cases:
+* Cognito Stream delivers enterprise-scale network metadata enriched with security insights in Zeek format to data lakes and security information and event management (SIEM) applications without the complexity, constant tuning and scale limitation of open-source Zeek. <ref>{{cite web|title=Vectra Recall overview|url=https://assets.website-files.com/5bc662b786ecfc12c8d29e0b/5cae82a490434c84422d5317_BR-Cognito-Stream-Overview-041019.pdf|access-date=15 April 2019|publisher=Vectra}}</ref>
+
+* Cognito Recall gives security analysts a logical starting point to perform AI-assisted threat hunting and conclusive incident investigations. <ref>{{cite web|title=Vectra Recall overview|url=https://assets.website-files.com/5bc662b786ecfc12c8d29e0b/5ca7a779c6d18ff3ccf94d55_BR-Cognito-Recall-Overview-040519.pdf|access-date=15 April 2019|publisher=Vectra}}</ref>
+
+* Cognito Detect automates the real-time detection of hidden attackers in cloud and data center workloads and user and internet-of-things devices.<ref>{{cite web|title=Vectra Detect overview|url=https://assets.website-files.com/5bc662b786ecfc12c8d29e0b/5ca7a811c6d18f56cdf96582_HO-Cognito-Platform-Overview-040519.pdf|access-date=15 April 2019|publisher=Vectra}}</ref>
+
+Using AI for incident detection and triage in its security operations center has helped one Vectra customer – Texas A&M University System – resolve an incident in 10 to 20 minutes, rather than hours or days.<ref>{{cite news |title=AI is changing SecOps: What security analysts need to know |publisher=TechBeacon |url=https://techbeacon.com/security/ai-changing-secops-what-security-analysts-need-know |access-date=16 April 2018}}</ref>
+
+== Technology ==
+
+Vectra AI combines data science, machine learning and network behavioral analysis technologies<ref>{{cite web|last1=Maiwald|first1=Eric|title=Network Behavior Analysis: Moving Beyond Signatures|url=https://www.gartner.com/doc/1405498/network-behavior-analysis-moving-signatures|website=Gartner|access-date=16 April 2018}}</ref> to identify patterns that characterize malicious behavior within a network.
+
+Cognito uses [[artificial intelligence]], including [[supervised learning]], [[unsupervised machine learning]], and [[deep learning]] techniques, to detect and respond to advanced cyberattacks. Remediation actions are taken with [[security information and event management]] (SIEMs), [[Firewall (computing)|firewalls]], [[endpoint security]] enforcement, [[network access control]], and orchestration, which are integrated with Cognito via an [[application programming interface]].
+ 
+Vectra was issued ten U.S. patents for advanced cyber security analytics capabilities automated by AI:
+* 10050985<ref>{{cite web|title=System for implementing threat detection using threat and risk assessment of asset-actor interactions|url=https://patents.google.com/patent/US10050985B2/en?oq=10050985|access-date=15 April 2019}}</ref> 
+* 9930053<ref>{{cite web|title=Method and system for detecting bot behavior|url=https://patents.google.com/patent/US9930053B2/en?oq=9930053|access-date=15 April 2019}}</ref> 
+* 9847968<ref>{{cite web|title=Method and system for generating durable host identifiers using network artifacts|url=https://patents.google.com/patent/US9847968B2/en?oq=9847968|access-date=15 April 2019}}</ref> 
+* 10033752<ref>{{cite web|title=System for implementing threat detection using daily network traffic community outliers|url=https://patents.google.com/patent/US10033752B2/en?oq=10033752|access-date=15 April 2019}}</ref> 
+* 9853988<ref>{{cite web|title=Method and system for detecting threats using metadata vectors|url=https://patents.google.com/patent/US9853988B2/en?oq=9853988+|access-date=15 April 2019}}</ref> 
+* 9807110<ref>{{cite web|title=Method and system for detecting algorithm-generated domains|url=https://patents.google.com/patent/US9807110B2/en?oq=9807110|access-date=15 April 2019}}</ref> 
+* 9900336<ref>{{cite web|title=System for detecting threats using scenario-based tracking of internal and external network traffic|url=https://patents.google.com/patent/US9900336B2/en?oq=9900336|access-date=15 April 2019}}</ref> 
+* EP3221793<ref>{{cite web|title=Method and system for detecting threats using passive cluster mapping|url=https://patents.google.com/patent/EP3221793B1/en?oq=EP3221793|access-date=15 April 2019}}</ref> 
+* 9237164<ref>{{cite web|title=Systems and methods for capturing, replaying, or analyzing time-series data|url=https://www.google.com/patents/US9237164|website=Google Patents|access-date=16 April 2018}}</ref> 
+* 9407647<ref>{{cite web|title=Systems and methods for capturing, replaying, or analyzing time-series data|url=https://www.google.com/patents/US9407647|website=Google Patents|access-date=16 April 2018}}</ref> 
+* 9565208<ref>{{cite web|title=System and method for detecting network intrusions using layered host scoring|url=https://www.google.com/patents/US20150264061|website=Google Patents|access-date=16 April 2018}}</ref> 
+* 9602533<ref>{{cite web|title=Detecting network reconnaissance by tracking intranet dark-net communications|url=https://www.google.com/patents/US20150264078|website=Google Patents|access-date=16 April 2018}}</ref>
+* 9628512<ref>{{cite web|title=Malicious relay detection on networks|url=https://www.google.com/patents/US9628512|website=Google Patents|access-date=16 April 2018}}</ref>
+
+== Attacker Behavior Industry Reports == 
+
+Vectra publishes Attacker Behavior Industry Reports, which provide an analysis of active and persistent attacker behaviors inside the enterprise networks of Vectra customers. The reports examine a wide range of cyberattack detections and trends from 300+ Vectra customers from nine different industries. The reports span all strategic phases of the attack lifecycle.
+
+* "90% of organisations deploying Remote Desktop Protocol (RDP) exhibited RDP attacker behaviour."<ref>{{cite news|title=#Privacy: Research reveals that RDP remains a popular technique for cyberattackers|url=https://gdpr.report/news/2019/09/26/privacy-research-reveals-that-rdp-remains-a-popular-technique-for-cyberattackers/|access-date=22 November 2019|publisher=PrivSec Report}}</ref>
+
+* "The most significant ransomware threat — in which hackers steal your data and hold it for ransom — is malicious encryption of shared network files in cloud service providers."<ref>{{cite news|title=Vectra: Ransomware attacks are spreading to cloud, datacenter, and enterprise infrastructure|url=https://venturebeat.com/2019/08/07/vectra-ransomware-attacks-are-spreading-to-cloud-data-center-and-enterprise-infrastructure/|access-date=22 November 2019|publisher=Venture Beat}}</ref>
+
+* "Attackers are actively infiltrating energy organizations and utilities for reconnaissance purposes.”<ref>{{cite news|title=Energy Sector's IT Networks in the Bulls-Eye|url=https://www.darkreading.com/analytics/energy-sectors-it-networks-in-the-bulls-eye/d/d-id/1333201|access-date=22 April 2018|publisher=Dark Reading}}</ref>
+
+* "Sixty percent of cryptomining detections in a Vectra study occurred on higher-education networks."<ref>{{cite news|title=University Networks Become Fertile Ground for Cryptomining|url=https://www.darkreading.com/attacks-breaches/university-networks-become-fertile-ground-for-cryptomining-/d/d-id/1331399|access-date=22 April 2018|publisher=Dark Reading}}</ref>
+
+* "Sophisticated cyber-attackers are using hidden tunnels to spy on financial firms and pilfer sensitive data and personally-identifiable information (PII) - and they're doing it at a higher rate than in other industries."<ref>{{cite news|title=University Networks Become Fertile Ground for Cryptomining|url=https://www.scmagazineuk.com/cyber-attackers-use-hidden-tunnels-pilfer-data-financial-service-firm/article/1486693|access-date=22 April 2018|publisher=SC Magazine}}</ref>
+
+== Awards and honors ==
+Vectra and its customers have received industry recognition, including: 
+
+* 2022 Best Tech Startups in San Jose by the Tech Tribune.<ref name=":0">{{Cite news |title=2022 Best Tech Startups in San Jose |url=https://thetechtribune.com/10-best-tech-startups-in-san-jose/}}</ref>
+* 2021 SC Awards Europe: shortlisted in the category of Best Use of Machine Learning and AI. <ref>{{Cite web |title=SC Awards Europe 2021 |url=https://www.scawardseurope.com/Result |website=SC Awards Europe}}</ref>
+* 2021 recognized as a leader in the Best Network Traffic Analysis (NTA) Solutions,<ref>{{Cite web |title=Best Network Traffic Analysis (NTA) Tools |url=https://www.peerspot.com/categories/network-traffic-analysis-nta |website=Peerspot}}</ref> Best Intrusion Detection System (IDS) Software<ref>{{Cite web |title=Best Intrusion Detection and Prevention Software (IDPS) |url=https://www.peerspot.com/categories/network-traffic-analysis-nta |website=Peerspot}}</ref> and Best Network Detection and Response (NDR) Solutions<ref>{{Cite web |title=Best Network Detection and Response (NDR) Software |url=https://www.peerspot.com/categories/network-detection-and-response-ndr |website=Peerspot}}</ref> by PeerSpot (formerly IT Central Station)
+* 2021 named to CRN's 20 Coolest Security Companies as part of their annual security 100 list and received a 5-star rating in the 2021 CRN Partner Program Guide..<ref>{{Cite news |title=CRN website |url=https://www.crn.com/partner-program-guide/ppg2021-details.htm?c=258}}</ref>
+* 2021 Best Tech Startups in San Jose by the Tech Tribune.<ref name=":0" />
+* 2020 finalist as a Security Trailblazer in the Microsoft Security 20/20 award.<ref>{{Cite web |title=Finalists announced in second annual Microsoft Security 20/20 awards |url=https://www.microsoft.com/security/blog/2021/03/11/finalists-announced-in-second-annual-microsoft-security-20-20-awards/ |website=Microsoft.com}}</ref>
+* 2020 CISO50 & Future Security Awards: Winner in the Network Detection & Response vendor category<ref>{{Cite news |title=CISO50 and Future Security Awards 2020: winners revealed |url=https://www.tahawultech.com/industry/technology/ciso-50-and-future-security-awards-2020-winners/}}</ref>
+* 2020 Finalist in the Network Security category for the CISO Choice Awards.<ref>{{Cite news |title=CISO Choice Awards™ 2020 |url=https://securitycurrent.com/ciso-choice-awards/}}</ref>
+* 2020 Computing Security Excellence Awards: Finalist in “Enterprise Threat Detection”, “Security Automation” categories and Winner of the “Network Security" Award.<ref>{{Cite news |title=2020 Computing Security Excellence Awards list |url=https://event.computing.co.uk/securityexcellence/en/page/2020-finalists}}</ref>
+* 2020 Award for Best Security Innovation in a SaaS Product from the SaaS Awards<ref>{{Cite news |title=The SaaS Awards is pleased to announce the winners of the 2020 program |url=https://www.cloud-awards.com/2020-software-awards-shortlist/}}</ref>
+* 2020 SC Awards Europe Winner for Best Customer Service, named as Highly Recommended in the Best Behaviour Analytics/Enterprise Threat Detection category and Finalist for Best Use of Machine Learning/AI.<ref>{{Cite web |title=2020 Cybersecurity Product / Service Awards – Winners and Finalists |url=https://cybersecurity-excellence-awards.com/2020-cybersecurity-product-awards-winners-and-finalists/ |website=Cybersecurity Excellence Awards}}</ref>
+* 2020 Silver Edison Award in the Innovative Services category for Security and Compliance Platforms<ref>{{Cite web |title=2020 EDISON BEST NEW PRODUCT AWARDS™ WINNERS |url=https://edisonawards.com/winners2020.php |website=Edison Awards}}</ref>
+* 2020 Cybersecurity Excellence Awards - Series of Gold Awards for Threat Hunting, Security Analytics, AWS Cloud Security, Threat Detection Intelligence and Response, Artificial Intelligence Security, Silver Award for Security Automation and Bronze Award for Best Cybersecurity Company.<ref>{{Cite web |title=2020 Cybersecurity Product / Service Awards – Winners and Finalists |url=https://cybersecurity-excellence-awards.com/2020-cybersecurity-product-awards-winners-and-finalists/ |website=Cybersecurity Excellence Awards}}</ref>
+* 2020 Cyber Defense Magazine Infosec Awards - Next Gen Category for "Cloud Security" and "Artificial Intelligence and Machine Learning"
+*2019 Deloitte 2019 Technology Fast 500 winners<ref>{{cite news|title=2019 Technology Fast 500|url=https://www2.deloitte.com/us/en/pages/technology-media-and-telecommunications/articles/fast500-winners.html|access-date=22 November 2019|publisher=Deloitte}}</ref>
+* 2019 computing Security Excellence Awards: Enterprise Threat Detection (Finalist) and Most Innovative AI/ML Security Solution (Finalist)<ref>{{cite news|title=2019 computing Security Excellence Awards|url=https://events.computing.co.uk/securityexcellence|access-date=22 November 2019|publisher=computing}}</ref>
+* 2019 The Hot 150 Cybersecurity Companies<ref>{{cite news|title=Cybersecurity Ventures The Hot 150 Cybersecurity companies|url=https://cybersecurityventures.com/cybersecurity-companies-list-hot-150/#hot-150/?view_15_per_page=150&view_15_page=1|access-date=22 November 2019|publisher=Cybersecurity Ventures}}</ref>
+* 2019 Stratus Awards for Cloud Computing<ref>{{cite news|title=Cybersecurity Ventures The Hot 150 Cybersecurity companies|url=https://www.bintelligence.com/stratus-awards|access-date=22 November 2019|publisher=Business Intelligence Group}}</ref>
+* 2019 SC Awards Europe: Highly Commented for Best Use of Machine Learning, Best Behavior Analytics and Enterprise Threat Detection<ref>{{cite news|title=2019 SC Awards Europe: Best Use of Machine Learning: Vectra Cognito (Highly Commended)|url=https://www.scawardseurope.com/results-2019/|access-date=22 November 2019|publisher=SC Media Europe}}</ref>
+* 2019 American Business Association Stevie Awards: Best Artificial Intelligence and Machine Learning Solution<ref>{{cite news|title=2019 American Business Association Awards|url=https://stevieawards.com/aba/product-management-new-product-awards|access-date=22 November 2019|publisher=American Business Association}}</ref>
+* 2019 The Software Report: Top 25 Women Leaders in Cybersecurity<ref>{{cite news|title=2019 The Software Report: Top 25 Women Leaders in Cybersecurity|url=https://www.thesoftwarereport.com/top-25-women-leaders-in-cybersecurity-of-2019/|access-date=22 November 2019|publisher=The Software Report}}</ref>
+* 2019 Red Herring Top 100 Global Winner<ref>{{cite news|title=Red Herring Top 100 Global Winner|url=https://www.redherring.com/2018-red-herring-top-100-global-winners/|access-date=22 November 2019|publisher=Red Herring}}</ref>
+* 2019 Artificial Intelligence Excellence Awards: Vectra Cognito Platform and Chief Technology Officer Oliver Tavakoli<ref>{{cite news|title=Honoring Achievements in Artificial Intelligence|url=https://www.bintelligence.com/artificial-intelligence-excellence-awards|access-date=15 April 2019|publisher=AI Intelligence Awards}}</ref>
+* 2019 CRN Security 100<ref>{{cite news|title=Vectra Recognized on CRN's 2019 Security 100 List|url=https://www.vectra.ai/news/vectra-recognized-on-crns-2019-security-100-list|access-date=15 April 2019|publisher=CRN}}</ref>
+* 2018 Gartner Magic Quadrant for Intrusion Detection and Prevention Systems<ref>{{cite web|last1=Craig Lawson|first1=Claudio Nevia|title=Magic Quadrant for Intrusion Detection and Prevention Systems|url=https://www.gartner.com/doc/3844163/magic-quadrant-intrusion-detection-prevention|website=Gartner|access-date=16 April 2018}}</ref>
+
+== References ==
+<references />
+
+[[Category:Companies based in San Jose, California]]
+[[Category:American companies established in 2012]]
+[[Category:Computer security companies]]
+[[Category:Networking companies of the United States]]
+[[Category:AI companies]]

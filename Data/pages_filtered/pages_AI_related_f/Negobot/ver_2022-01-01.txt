@@ -1,0 +1,25 @@
+Negobot also referred to as Lolita or Lolita chatbot is a chatterbot that was introduced to the public in 2013, designed by researchers from the University of Deusto and Optenet to catch online pedophiles. It is a conversational agent that utilizes natural language processing (NLP), information retrieval (IR) and Automatic Learning.  Because the bot poses as a young female in order to entice and track potential predators, it became known in media as the "virtual Lolita", in reference to Vladimir Nabokov's novel.
+
+ Background 
+
+In 2013, the University of Deusto researchers published a paper on their work with Negobot and disclosed the text online. In their abstract, the researchers addressed the issue that an increasing number of children are using the internet and that these young users are more susceptible to existing internet risks. Their main objective was to create a chatterbot with the ability to trap online predators that posed a threat to children. They intended to deploy the bot into sites frequented by predators such as social networks and chatrooms. The university researchers used information provided by anti-pedophilia activist organization Perverted-Justice, including examples of online encounters and conversations with sexual predators, to supplement the program's artificial intelligence system.
+
+ Features 
+
+ Programmed persona 
+
+The chatterbot takes the guise of a naive and vulnerable 14-year-old girl. The bot's programmers used methods of artificial intelligence and natural language processing to create a conversational agent fluent in typical teenage slang, misspellings, and knowledge of pop culture. Through these linguistic features, the bot is able to mimic the conversational style of young teenagers. It also features split personalities and seven different patterns of conversation. Negobot's primary creator, Dr. Carlos Laorden, expressed the significance of the bot's distinguishable style of communication, stating that normally, "chatbots tend to be very predictable. Their behavior and interest in a conversation are flat, which is a problem when attempting to detect untrustworthy targets like paedophiles." What makes Negobot different is its game theory feature, which makes it able to "maintain a much more realistic conversation." Apart from being able to imitate a stereotypical teenager, the program is also able to translate messages into different languages.
+
+ Game theory 
+
+Negobot's designers programmed it with the ability to treat conversations with potential predators as if it were a game, the objective being to collect as much information on the suspect as possible that could provide evidence of pedophilic characteristics and motives. The use of game theory shapes the decisions the bot makes and the overall direction of the conversation.
+
+The bot initiates its undercover operations by entering a chat as a passive participant, waiting to be chatted by a user. Once a user elicits conversation, the bot will frame the conversation in such a way that keeps the target engaged, extracting personal information and discouraging it from leaving the chat. The information is then recorded to be potentially sent to the police. If the target seems to lose interest, the bot attempts to make it feel guilty by expressing sentiments of loneliness and emotional need through strategic, formulated responses, ultimately prolonging interaction. In addition, the bot may provide fake information about itself in attempt to lure the target into physical meetings.
+
+ Limitations 
+
+Despite being able to carry out a realistic conversation, Negobot is still unable to detect linguistic subtleties in the messages of others, including sarcasm.
+
+ Controversy 
+
+John Carr, a specialist in online child safety, expressed his concern to BBC over the legality of this undercover investigation. He claimed that using the bot on unsuspecting internet users could be considered a form of entrapment or harassment. The type of information that Negobot collects from potential online predators, he said, is unlikely to be upheld in court. Furthermore, he warned that relying on only software without any real-world policing risks enticing individuals to do or say things that they would not have if real-world policing were a factor.

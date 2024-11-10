@@ -1,0 +1,19 @@
+{{third-party|date=November 2018}}
+The '''Argument Web''' is a large-scale Web of interconnected [[argument|arguments]] created by individuals as they express their opinions and interact with the opinions of others.<ref name="rahwan1">Rahwan, Iyad, Fouad Zablith, and Chris Reed. "Laying the foundations for a world wide argument web." Artificial intelligence 171, no. 10-15 (2007): 897-921.</ref> The Argument Web aims to make online debate intuitive for participants such as [[mediation|mediators]], [[students]], [[academics]], [[broadcasting|broadcasters]] and [[blog|bloggers]], to create a Web infrastructure that allows for the storage, automatic retrieval and analysis of [[linked data|linked argument data]], and to improve the quality of online [[argument]] and [[debate]].<ref name="bex1">Bex, Floris, John Lawrence, Mark Snaith, and Chris Reed. "Implementing the argument web." Communications of the ACM 56, no. 10 (2013): 66-73.</ref> The Argument Web can be described as a portion of a larger [[Semantic Web]].<ref name="rahwan2">Rahwan, Iyad. "Mass argumentation and the semantic web." Web Semantics: Science, Services and Agents on the World Wide Web 6, no. 1 (2008): 29-37.</ref>
+
+== Argument blogging ==
+ArguBlogging is software which allows its users to select portions of hypertext on webpages in their [[Web browsers]] and to agree or disagree with the selected content, posting their [[arguments]] to their [[blog|blogs]] with [[linked data|linked argument data]].<ref name="bex2">Bex, Floris, Mark Snaith, John Lawrence, and Chris Reed. "Argublogging: An application for the argument web." Web Semantics: Science, Services and Agents on the World Wide Web 25 (2014): 9-15.</ref> It is implemented as a [[bookmarklet]], adding functionality to [[Web browsers]] and interoperating with blogging platforms such as [[Blogger (service)|Blogger]] and [[Tumblr]].
+
+== See also ==
+{{Div col begin|colwidth=22em}}
+*[[Argument Interchange Format]]
+{{Div col end}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+* http://argublogging.com/
+
+[[Category:Argument technology]]
+[[Category:Semantic Web]]

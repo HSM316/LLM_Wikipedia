@@ -1,0 +1,137 @@
+{{Multiple issues|section=|
+{{original research|date=June 2015}}
+{{more citations needed|date=June 2015}}
+{{primary sources|date=June 2015}}
+}}
+{{Infobox software
+| name                   = 3D Slicer
+| title                  = 
+| logo                   = <!-- [[File: ]] -->
+| screenshot             = 3DSlicerLogo.png
+| caption                = 
+| collapsible            = 
+| author                 = [http://www.slicer.org/wiki/Documentation/Release/Acknowledgments The Slicer Community]
+| developer              = 
+| released               = <!-- {{Start date|YYYY|MM|DD|df=yes/no}} -->
+| discontinued           = 
+| latest release version = 4.10.2
+| latest release date    = {{Start date and age|2019|05|22|df=yes/no}}
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language   = [[C++]], [[Python (programming language)|Python]], [[Qt (framework)|Qt]]
+| operating system       =  [[Linux]], [[macOS]], [[Windows]]
+| platform               = 
+| size                   = 200MB
+| language               = English
+| status                 = 
+| genre                  = Scientific visualization and image computing
+| license                = [[BSD licenses|BSD-style]]
+| website                = {{URL|www.slicer.org}}
+}}
+
+'''3D Slicer''' ('''Slicer''') is a [[Free software|free]] and [[Open-source software|open source]] [[software]] package for [[image analysis]]<ref>{{Cite book|url=https://books.google.com/?id=2v7IBAAAQBAJ&pg=PA145&lpg=PA145&dq=3D+Slicer+(Slicer)+is+a+free+and+open+source+software+package+for+image+analysis%5B1%5D#v=onepage&q=3D%20Slicer%20(Slicer)%20is%20a%20free%20and%20open%20source%20software%20package%20for%20image%20analysis%5B1%5D&f=false|title=Image-Guided Neurosurgery|last=Golby|first=Alexandra J.|date=2015-05-05|publisher=Academic Press|isbn=9780128011898|language=en}}</ref><ref>Pieper S., Halle M., Kikinis R. 3D SLICER. Proceedings of the 1st IEEE International Symposium on Biomedical Imaging: From Nano to Macro 2004; 1:632&ndash;635.</ref> and [[scientific visualization]]. Slicer is used in a variety of [[medical]] applications, including [[autism]], [[multiple sclerosis]], [[systemic lupus erythematosus]], [[prostate cancer]], [[lung cancer]], [[breast cancer]], [[schizophrenia]], [[orthopedic]] [[biomechanics]], [[Chronic obstructive pulmonary disease|COPD]], [[cardiovascular disease]] and [[neurosurgery]].<ref>{{Cite book|url=https://books.google.com/?id=AueetgAACAAJ|title=3dslicer|last=Adriaan|first=Germain|date=2011-08-16|publisher=Brev Publishing|isbn=9786136666464|language=en}}</ref>
+
+==About==
+3D Slicer is a free open source software (BSD-style license) that is a flexible, modular platform for image analysis and visualization. 3D Slicer is extended to enable development of both interactive and [[batch processing]] tools for a variety of applications.<ref>{{Cite web|url=https://www.slicer.org/|title=3D Slicer|website=www.slicer.org|language=en|access-date=2017-09-20}}</ref>
+
+3D Slicer provides [[image registration]], processing of [[Diffusion MRI|DTI (diffusion tractography)]], an interface to external devices for image guidance support, and [[Graphics processing unit|GPU]]-enabled [[volume rendering]], among other capabilities. 3D Slicer has a modular organization that allows the addition of new functionality and provides a number of generic features not available in competing tools.{{citation needed|date=October 2017}}
+
+The interactive visualization capabilities of 3D Slicer include the ability to display arbitrarily oriented image slices, build surface models from image labels, and hardware accelerated volume rendering.{{citation needed|date=October 2017}} 3D Slicer also supports a rich set of annotation features ([[Fiduciary marker|fiducials]] and measurement widgets, customized color maps).{{citation needed|date=October 2017}}
+
+Slicer's capabilities include:<ref>Pieper S., Lorensen B., Schroeder W., Kikinis R. The NA&#45;MIC Kit: ITK, VTK, Pipelines, Grids and 3D Slicer as an Open Platform for the [[Medical Image Computing]] Community. Proceedings of the 3rd IEEE International Symposium on Biomedical Imaging: From Nano to Macro 2006; 1:698&#45;701.</ref>
+
+* Handling [[DICOM|DICOM images]]  and reading/writing a variety of other formats
+* Interactive visualization of [[Voxel|volumetric Voxel images]], [[Polygonal modeling|polygonal meshes]], and [[volume rendering]]s
+* Manual editing
+* Fusion and co-registering of data using rigid and non-rigid algorithms
+* Automatic [[Segmentation (image processing)|image segmentation]]
+* Analysis and visualization of diffusion tensor imaging data
+* Tracking of devices for image-guided procedures.
+
+Slicer is compiled for use on multiple computing platforms, including [[Microsoft Windows|Windows]], [[Linux]], and [[macOS]].
+
+Slicer is distributed under a [[Bsd license|BSD]] style, free, open source license. The license has no restrictions on use of the software in academic or commercial projects. However, no claims are made on the software being useful for any particular task. It is entirely the responsibility of the user to ensure compliance with local rules and regulations. The slicer has not been formally approved for clinical use by the FDA in the US or by any other regulatory body elsewhere.
+
+== Image gallery ==
+<gallery widths="300px" perrow="2">
+Image:3DSlicer-VolumeRendering1.png | Hardware accelerated volume rendering with nVidia drivers, (on Windows and Linux only).
+Image:3DSlicer-IGT.png | ProstateNav Module for MRI guided robot assisted biopsy of the prostate.
+Image:Fedorov-Supercomputing2006-fig3.png| Left: 3D rendering. Right: Open MR system
+Image:3DSlicer-Mahnaz-ISBI2008-fig2.jpg |Visualization of some atlas-based ROIs which correspond to major anatomical fiber tracts. The atlas was provided as part of a download of [http://www.dtistudio.org DTI studio].
+Image:3DSlicer-KubickiJPR2007-fig6.jpg| High resolution data acquired on 3-Tesla magnet and post-processed using automated tracking procedure. 
+Image:3DSlicer-odonnell-miccai2006-fig2.jpg | High-dimensional white matter atlas generation and group analysis: result of automatic segmentation of novel subjects. 
+Image:3DSlicer-Jolley-HR2008-fig7.jpg | Patient-specific modeling in a patient with congenital heart disease. 
+Image:3DSlicer-Margulies-ObstetGynecol2006-fig1.jpg | Left: Three-dimensional model of levator ani subdivisions including the pubic bone and pelvic viscera. Right: The same model without the pubic bone.
+Image:3DSlicer-Park-AJNR2004-Fig1.jpg |Cortical parcellations derived from SPGR images obtained from a tumor patient. 
+Image:3DSlicer-Mislow-NeurosurgClinNAm2009-fig3.jpg | Intraoperative colocalization using iMRI images and 3-D Slicer software. 
+</gallery>
+
+==History==
+
+Slicer started as a master’s [[thesis]] project between the Surgical Planning Laboratory at the Brigham and Women's Hospital and the MIT Artificial Intelligence Laboratory in 1998.<ref>{{cite journal | last1 = Hirayasu | first1 = Y | last2 = Shenton | first2 = ME | last3 = Salisbury | first3 = DF | last4 = Dickey | first4 = CC | last5 = Fischer | first5 = IA | last6 = Mazzoni | first6 = P | last7 = Kisler | first7 = T | last8 = Arakaki | first8 = H | last9 = Kwon | first9 = JS | last10 = Anderson | first10 = JE | last11 = Yurgelun-Todd | first11 = D | last12 = Tohen | first12 = M | last13 = McCarley | first13 = RW | title = Lower left temporal lobe MRI volumes in patients with first-episode schizophrenia compared with psychotic patients with first-episode affective disorder and normal subjects | journal = The American Journal of Psychiatry | volume = 155 | issue = 10 | pages = 1384–91 | year = 1998 | pmid = 9766770 | doi = 10.1176/ajp.155.10.1384 }}</ref> 3D Slicer version 2 has been downloaded several thousand times. In 2007 a completely revamped version 3 of Slicer was released. The next major refactoring of Slicer was initiated in 2009, which transitioned the [[GUI]] of Slicer from using KWWidgets to [[Qt (framework)|Qt]]. Qt-enabled Slicer version 4 was released in 2011.<ref>{{cite journal|last1=Fedorov|last2=Beichel|last3=Kalpathy-Cramer|last4=Finet|last5=Fillion-Robin|last6=Pujol|last7=Bauer|last8=Jennings|last9=Fennessy|last10=Sonka|last11=Buatti|last12=Aylward|last13=Miller|last14=Pieper|last15=Kikinis|title=3D Slicer as an image computing platform for the Quantitative Imaging Network|journal=Magnetic Resonance Imaging|volume=30|issue=9|pages=1323–41|year=2012|pmid=22770690|doi=10.1016/j.mri.2012.05.001|pmc=3466397}}</ref>
+
+Slicer software has enabled a variety of research [[Academic publishing|publications]], all aimed at improving image analysis.
+<ref>{{Cite web|url=https://scholar.google.com/scholar?hl=en&as_sdt=1%2C22&as_vis=1&q=%28%223D+Slicer%22+OR+%22slicer+org%22+OR+Slicer3D%29+-Slic3r+&btnG=|title=Literature Search showing over 9000 publications that reference 3D Slicer on Google Scholar|language=en|access-date=2019-12-09}}</ref>
+
+
+This significant software project has been enabled by the participation of several large-scale [[National Institutes of Health|NIH]] funded efforts, including the NA-MIC, NAC, [[Biomedical Informatics Research Network|BIRN]], CIMIT, Harvard Catalyst and NCIGT communities. The funding support comes from several federal funding sources, including [[National Center for Research Resources|NCRR]], [[National Institute of Biomedical Imaging and Bioengineering|NIBIB]], NIH Roadmap, [[National Cancer Institute|NCI]], [[National Science Foundation|NSF]] and the [[United States Department of Defense|DOD]].
+
+==Users==
+
+Slicer's platform provides functionalities for segmentation, registration and [[Three-dimensional space|three-dimensional]] visualization of [[multimodal distribution|multimodal]] image data, as well as advanced image analysis [[algorithms]] for [[diffusion tensor]] imaging, functional [[magnetic resonance imaging]] and [[image-guided radiation therapy]]. Standard [[image file formats]] are supported, and the application integrates interface capabilities to biomedical research software.
+
+Slicer has been used in a variety of [[clinical research]]. In image-guided therapy research, Slicer is frequently used to construct and visualize collections of MRI data that are available pre- and intra-operatively to allow for the acquiring of spatial [[Coordinate system|coordinates]] for instrument tracking.<ref>{{cite journal | last1 = Hata | first1 = N | last2 = Piper | first2 = S | last3 = Jolesz | first3 = FA | last4 = Tempany | first4 = CM | last5 = Black | first5 = PM | last6 = Morikawa | first6 = S | last7 = Iseki | first7 = H | last8 = Hashizume | first8 = M | last9 = Kikinis | first9 = R  | title = Application of open source image guided therapy software in MR-guided therapies | journal = Medical Image Computing and Computer-assisted Intervention : MICCAI ... International Conference on Medical Image Computing and Computer-Assisted Intervention | volume = 10 | issue = Pt 1 | pages = 491–8 | year = 2007 | pmid = 18051095 | doi=10.1007/978-3-540-75757-3_60}}</ref> In fact, Slicer has already played such a pivotal role in image-guided therapy, it can be considered as growing up alongside that field, with over 200 publications referencing Slicer since 1998.<ref>For a list of publications citing Slicer usage since 1998, visit: http://www.slicer.org/publications/pages/display/?collectionid=11</ref>
+
+In addition to producing 3D models from conventional MRI images, Slicer has also been used to present information derived from fMRI (using MRI to assess blood flow in the brain related to [[Nervous system|neural]] or [[spinal cord]] activity),<ref>{{cite journal | last1 = Archip | first1 = N | last2 = Clatz | first2 = O | last3 = Whalen | first3 = S | last4 = Kacher | first4 = D | last5 = Fedorov | first5 = A | last6 = Kot | first6 = A | last7 = Chrisochoides | first7 = N | last8 = Jolesz | first8 = F | last9 = Golby | first9 = A | last10 = Black | first10 = PM | last11 = Warfield | first11 = SK | title = Non-rigid alignment of pre-operative MRI, fMRI, and DT-MRI with intra-operative MRI for enhanced visualization and navigation in image-guided neurosurgery | journal = NeuroImage | volume = 35 | issue = 2 | pages = 609–24 | year = 2007 | pmid = 17289403 | doi = 10.1016/j.neuroimage.2006.11.060 | pmc=3358788}}</ref> DTI (using MRI to measure the restricted diffusion of water in imaged tissue),<ref>{{cite journal | last1 = Ziyan | first1 = U | last2 = Tuch | first2 = D | last3 = Westin | first3 = CF | title = Segmentation of thalamic nuclei from DTI using spectral clustering | journal = Medical Image Computing and Computer-assisted Intervention : MICCAI ... International Conference on Medical Image Computing and Computer-Assisted Intervention | volume = 9 | issue = Pt 2 | pages = 807–14 | year = 2006 | pmid = 17354847 | doi=10.1007/11866763_99}}</ref> and [[electrocardiography]].<ref>{{cite journal | last1 = Verhey | first1 = JF | last2 = Nathan | first2 = NS | last3 = Rienhoff | first3 = O | last4 = Kikinis | first4 = R | last5 = Rakebrandt | first5 = F | last6 = D'ambra | first6 = MN | title = Finite-element-method (FEM) model generation of time-resolved 3D echocardiographic geometry data for mitral-valve volumetry | journal = BioMedical Engineering OnLine | volume = 5 | pages = 17 | year = 2006 | pmid = 16512925 | pmc = 1421418 | doi = 10.1186/1475-925X-5-17 }}</ref> For example, Slicer's DTI package allows the conversion and analysis of DTI images. The results of such analysis can be integrated with the results from analysis of [[Morphology (biology)|morphologic]] MRI, MR [[Angiography|angiograms]] and fMRI. Other uses of Slicer include [[paleontology]]<ref>http://openpaleo.blogspot.com/2009/03/3d-slicer-tutorial-part-vi.html</ref> and neurosurgery planning.<ref>http://picasaweb.google.com/107065747472066371420</ref>
+
+==Developers==
+
+The Slicer Developer Orientation offers resources for developers new to the platform. Slicer development is coordinated on the slicer-devel mailing list, and a summary of development statistics is available on Ohloh.<ref>{{Cite web|url=https://stef2cnrs.wordpress.com/category/marching-cubes/|title=marching cubes {{!}} biomedical optics|website=stef2cnrs.wordpress.com|language=fr-FR|access-date=2017-09-20}}</ref>
+
+3D Slicer is built on [[VTK]], a pipeline-based graphical library that is widely used in scientific visualization and [[Insight Segmentation and Registration Toolkit|ITK]], a framework widely used for the development of [[Segmentation (image processing)|image segmentation]] and [[image registration]]. In version 4, the core application is implemented in [[C++]], and the API is available through a [[Python (programming language)|Python]] wrapper to facilitate rapid, iterative development and visualization in the included Python console. The user interface is implemented in Qt, and may be extended using either C++ or Python.<ref>{{Cite book|title=Detection and Quantification of Small Changes in MRI Volumes|last=|first=|publisher=|year=2014|isbn=|location=|pages=18}}</ref>
+
+Slicer supports several types of modular development. Fully interactive, custom interfaces may be written in C++ or Python. Command-line programs in any language may be wrapped using a light-weight [[XML]] specification, from which a graphical interface is automatically generated.
+
+For modules that are not distributed in the Slicer core application, a system is available to automatically build and distribute for selective download from within Slicer. This mechanism facilitates the incorporation of code with different license requirements from the permissive BSD-style license used for the Slicer core.
+
+The Slicer build process utilizes [[CMake]] to automatically build prerequisite and optional libraries (excluding Qt). The core development cycle incorporates automatic testing, as well as incremental and nightly builds on all platforms, monitored using an online dashboard.
+
+== External dependencies ==
+*[[Visualization Toolkit|VTK]]
+*[[Insight Segmentation and Registration Toolkit|ITK]]
+*[[CMake]]
+*[[CPack]]
+*[[Python (programming language)|Python]]
+*[[Nrrd]]
+*[[Medical Reality Markup Language|MRML]]
+*[[IGSTK]]
+*[[Qt (software)|Qt]]
+
+==See also==
+*[[Analyze (imaging software)|Analyze]]
+*[[GIMIAS]]
+*[[Mimics]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Commonscat|3DSlicer}}
+*[http://www.slicer.org Slicer]
+{{Image Processing Software}}
+{{Free healthcare software|state=expanded}}
+
+{{DEFAULTSORT:3dslicer}}
+[[Category:Computer vision software]]
+[[Category:Free 3D graphics software]]
+[[Category:Free bioimaging software]]
+[[Category:Free biovisualization software]]
+[[Category:Free DICOM software]]
+[[Category:Free health care software]]
+[[Category:Free science software]]
+[[Category:Free software programmed in C++]]
+[[Category:Free software programmed in Python]]
+[[Category:Free software programmed in Tcl]]
+[[Category:Science software for Linux]]
+[[Category:Science software that uses Qt]]
+[[Category:Software that uses VTK]]

@@ -1,0 +1,47 @@
+{{short description|Web application}}
+{{Use dmy dates|date=August 2018}}
+{{Infobox website
+| name             = Cleverbot
+| url              = {{URL|https://www.cleverbot.com/}}
+| type             = [[Chatterbot]]
+| registration     = None
+| author           = [[Rollo Carpenter]]
+| screenshot       = Cleverbot website.png
+| current_status   = Active
+}}
+
+'''Cleverbot''' is a [[chatterbot]] [[web application]]. It was created by British [[AI]] scientist [[Rollo Carpenter]] and launched in October 2008. It was preceded by [[Jabberwacky]], a chatbot project that began in 1988 and went online in 1997.<ref>{{Cite web|url=http://www.jabberwacky.com/j2about|title=About the Jabberwacky AI|website=www.jabberwacky.com|archive-url=https://web.archive.org/web/20170107185820/http://www.jabberwacky.com/j2about|archive-date=2017-01-07|access-date=2017-01-07|quote=The whole thing started way back in 1988, and went on the web in 1997.}}</ref> In its first decade, Cleverbot held several thousand conversations with Carpenter and his associates. Since launching on the web, the number of conversations held has exceeded 150 million.<ref>Gilbert, R. L., & Forney, A. (2015). Can avatars pass the Turing test? Intelligent agent perception in a 3D virtual environment. International Journal of Human-Computer Studies, 73, 30-36</ref> Besides the web application, Cleverbot is also available as an [[iOS]], [[Android (operating system)|Android]], and [[Windows Phone]] app.<ref>{{cite web|url=http://www.cleverbot.com/app|title=Cleverbot|publisher=Cleverbot.com|access-date=14 January 2013}}</ref>
+
+== Operation ==
+Cleverbot's responses are not pre-programmed because it learns from human input: Humans type into the box below the Cleverbot logo and the system finds all keywords or an exact phrase matching the input. After searching through its saved conversations, it responds to the input by finding how a human responded to that input when it was asked, in part or in full, by Cleverbot.<ref name="sh">{{cite web| last=Saenz|first=Aaron |title=Cleverbot Chat Engine Is Learning From The Internet To Talk Like A Human |url=http://singularityhub.com/2010/01/13/cleverbot-chat-engine-is-learning-from-the-internet-to-talk-like-a-human/|work=Singularity Hub |access-date=2011-06-06|date=2010-01-13}}</ref><ref>{{cite web |title=Rollo Carpenter |url=http://www.techniche.org/techniche11/lectures/287.html |work=Technische| publisher=Indian Institute of Technology Guwahati |access-date=13 November 2011 |archive-url=https://web.archive.org/web/20111127115711/http://www.techniche.org/techniche11/lectures/287.html |archive-date=27 November 2011|url-status=dead}}</ref>
+
+Cleverbot participated in a formal [[Turing test]] at the 2011 [[Techniche]] festival at the [[Indian Institute of Technology Guwahati]] on 3 September 2011. Out of the 1334 votes cast, Cleverbot was judged to be 59.3% human, compared to the rating of 63.3% human achieved by human participants. A score of 50.05% or higher is often considered to be a passing grade.<ref>{{cite news|last=Aron|first=Jacob|title=Software tricks people into thinking it is human|url=https://www.newscientist.com/article/dn20865-software-tricks-people-into-thinking-it-is-human/|access-date=13 November 2011|newspaper=New Scientist|date=6 September 2011}}</ref> The software running for the event had to handle just 1 or 2 simultaneous requests, whereas online Cleverbot is usually talking to around 10,000 to 50,000 people at once.<ref>https://www.cleverbot.com/human Article in 'Cleverbot' </ref>
+
+== Developments ==
+Cleverbot is constantly growing in data size at the rate of 4 to 7 million interactions per day.<ref name="Existor ML">{{Cite web|url=https://www.existor.com/products/cleverbot-data-for-machine-learning/|title=Cleverbot Data for Machine Learning – Existor|website=www.existor.com|access-date=2016-11-30}}</ref> Updates to the software have been mostly behind the scenes. In 2014, Cleverbot was upgraded to use [[GPU]] serving techniques.<ref>{{cite web|url=http://www.existor.com/ai-parallel |title=Parallel Processing on Graphics Cards - Existor.com - Cleverbot |publisher=Existor.com |date=2014-02-05 |access-date=2014-06-09}}</ref> Unlike [[ELIZA|Eliza]], the program does not respond in a fixed way, instead choosing its responses [[heuristically]] using [[fuzzy logic]], the whole of the conversation being compared to the millions that have taken place before. Cleverbot now uses over 279 million interactions, about 3-4% of the data it has already accumulated. The developers of Cleverbot are attempting to build a new version using machine learning techniques.<ref name="Existor ML" />
+
+An app that uses the Cleverscript engine to play a game of 20 Questions, has been launched under the name ''Clevernator''. Unlike other such games, the player asks the questions and it is the role of the AI to understand, and answer factually. An app that allows owners to create and talk to their own small Cleverbot-like AI has been launched, called ''Cleverme!'' for Apple products.<ref>{{cite web|url=https://itunes.apple.com/us/app/cleverme!/id685281893?mt=8|title=Cleverme! on the App Store on iTunes|work=iTunes|access-date=24 March 2014}}</ref>
+
+In early 2017, a [[Twitch (service)|Twitch]] stream of two [[Google Home]] devices modified to talk to each other using Cleverbot garnered over 700,000 visitors and over 30,000 peak concurrent viewers.<ref>{{Cite web|url=https://www.engadget.com/2017/01/07/two-google-home-bots-engage-in-a-duel-of-words/|title=Two Google Home bots engage in a duel of words|last=Moon|first=Mariella|date=2017-01-07|website=Engadget|access-date=2017-01-07}}</ref><ref>{{Cite web|url=https://www.twitch.tv/seebotschat|title=seebotschat - Twitch|access-date=2017-01-07|quote=dependency.list(); >> cleverbot.com}}</ref><ref>{{Cite news|url=http://nerdist.com/two-google-homes-are-having-a-bizarre-and-fascinating-conversation-on-twitch/|title=Two Google Homes are Having a Bizarre and Fascinating Conversation on Twitch|last=Rossignol|first=Derrick|date=2017-01-06|work=Nerdist|quote=Twitch user seebotschat got Cleverbot, an artificial intelligence chatbot that’s been online since 1996, running on two units...|access-date=2017-01-07|archive-url=https://web.archive.org/web/20170108093951/http://nerdist.com/two-google-homes-are-having-a-bizarre-and-fascinating-conversation-on-twitch/|archive-date=8 January 2017|url-status=dead}}</ref><ref>{{Cite news|url=http://www.androidcentral.com/watching-two-google-homes-trying-have-conversation-best-thing-youll-see-today|title=Watching two Google Homes trying to have a conversation is the best thing you'll see today|last=Bader|first=Daniel|date=2017-01-06|work=Android Central|quote=Twitch channel seebotschat have managed to whip together a Cleverbot API hook that keeps the units speaking...|access-date=2017-01-07}}</ref>
+
+==In popular culture==
+In late 2010, Cleverbot received widespread media attention after being featured in the popular [[creepypasta]] [[Alternate reality game|ARG]] [[Web fiction#Web serial|web serial]] ''[[Ben Drowned]]'' by Alexander D. Hall.<ref name="Kotaku Defined">{{Cite web|url=https://kotaku.com/the-haunting-of-a-majoras-mask-cartridge-5635521|title=The ''Zelda'' Ghost Story That Helped Define Creepypasta|first=Eric|last=Van Allen|publisher=[[Kotaku]]|date=October 26, 2017}}</ref><ref name="The Haunting">{{cite web|url=https://kotaku.com/the-haunting-of-a-majoras-mask-cartridge-5635521|first=Owen|last=Good|title=The Haunting Of A Majora's Mask Cartridge|date=November 9, 2010|publisher=[[Kotaku]]}}</ref><ref name="Vice">{{cite web|url=https://www.vice.com/en_us/article/d3njam/zelda-is-at-its-best-when-it-embraces-horror-breath-of-the-wild-sequel|title=Zelda Is at Its Best When It Embraces Horror|date= June 28, 2019|publisher=[[Vice (magazine)|Vice]]|first=Liam|last=Conlon}}</ref>
+
+== See also ==
+* [[Siri (software)|Siri]]
+* [[Cortana (virtual assistant)|Cortana]]
+* [[Google Assistant]]
+* [[Omegle]]
+* [[ChatGPT]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{Official website|https://www.cleverbot.com/}}
+* [https://web.archive.org/web/20180110025910/http://cleverscript.io/ Cleverscript website]
+* [https://www.twitch.tv/seebotschat Livestream of 2 cleverbots chatting with each other] on [[Twitch (service)|Twitch]]
+
+[[Category:Chatbots]]
+[[Category:Applications of artificial intelligence]]
+[[Category:1997 introductions]]

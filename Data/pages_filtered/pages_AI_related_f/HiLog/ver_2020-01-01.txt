@@ -1,0 +1,22 @@
+HiLog is a programming logic with higher-order syntax, which allows arbitrary terms to appear in predicate and function positions.  However, the model theory of HiLog is first-order. Although syntactically HiLog strictly extends first order logic, HiLog can be embedded into this logic.
+
+HiLog was first described in 1989. It was later extended in the direction of many-sorted logic. 
+
+The XSB system parses HiLog syntax, but the integration of HiLog into XSB is only partial. In particular, HiLog is not integrated with the XSB module system. A full implementation of HiLog is available in the Flora-2 system.
+
+It has been shown that HiLog can be embedded into first-order logic through a fairly simple transformation. For instance, p(X)(Y,Z(V)(W)) gets embedded as the following first-order term: apply(p(X),Y,apply(apply(Z,V),W)).
+
+The Framework for Logic-Based Dialects (RIF-FLD) of the Rule Interchange Format (RIF) is largely based on the ideas underlying HiLog and F-logic. 
+
+ Examples 
+
+In all the examples below, capitalized symbols denote variables and the comma denotes logical conjunction, as in most logic programming languages. The first and the second examples show that variables can appear in predicate positions. Predicates can even be complex terms, such as closure(P) or maplist(F) below. The third example shows that variables can also appear in place of atomic formulas, while the fourth example illustrates the use of variables in place of function symbols. The first example defines a generic transitive closure operator, which can be applied to an arbitrary binary predicate. The second example is similar. It defines a LISP-like mapping operator, which applies to an arbitrary binary predicate. The third example shows that the Prolog meta-predicate call/1 can be expressed in HiLog in a natural way and without the use of extra-logical features. The last example defines a predicate that traverses arbitrary binary trees represented as first-order terms.
+  closure(P)(X,Y) <- P(X,Y).
+  closure(P)(X,Y) <- P(X,Z), closure(P)(Z,Y).
+
+  maplist(F)([],[]).
+  maplist(F)([X|R],[Y|Z]) <- F(X,Y), maplist(F)(R,Z).
+
+  call(X) <- X.
+
+  traverse(X(L,R)) <- traverse(L), traverse(R).

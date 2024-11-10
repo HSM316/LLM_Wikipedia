@@ -1,0 +1,29 @@
+{{short description|Round holes in cheese}}
+[[File:Emmentaler aoc block.jpg|thumb|250px|[[Emmentaler]] with eyes]]
+
+'''Eyes''' are the round holes that are a characteristic feature of [[Swiss-type cheese]]<ref name="Metabolism-McSweeney">{{Cite book |title=Cheese: Chemistry, Physics and Microbiology |volume=2 |chapter=Metabolism of Residual Lactose and of Lactate and Citrate |last1=McSweeney |first1=Paul L.H. |last2=Fox |first2 = Patrick F. |publisher=Elsevier |url=|doi=10.1016/S1874-558X(04)80074-5 |year=2004 |isbn13=978-0-12-263653-0 |pages=366-367 }}</ref> (e.g. [[Emmentaler cheese]]) and some [[Dutch-type cheese]]s.  The eyes are bubbles of [[carbon dioxide]] [[gas]].  The gas is produced by various species of [[bacterium|bacteria]] in the cheese.<ref name="Clark1917">{{cite journal |doi=10.3168/jds.S0022-0302(17)94362-0 |title=On the Formation of “Eyes” in Emmental Cheese |journal=Journal of Dairy Science |volume=1 |issue=2 |pages=91–113 |year=1917 |last1=Clark |first1=William|url=https://zenodo.org/record/1520810/files/article.pdf }}</ref>
+
+== Swiss cheese ==
+In Swiss-type cheeses, the eyes form as a result of the activity of propionic acid [[bacterium|bacteria]] (''[[propionibacteria]]''), notably ''[[Propionibacterium freudenreichii]]'' subsp. ''shermanii''.<ref name="Sweeney 349">P.L.H. McSweeney, ''Biochemistry of Cheese Ripening: Introduction and Overview'', in: Fox, p. 349</ref><ref name="Genoscope">{{cite journal|title=Propionibacterium freudenreichii ssp shermanii ATCC9614: A bacterium used in the production of Emmental|journal=[[Genoscope]]|date=16 January 2008|url=http://www.genoscope.cns.fr/spip/propionibacterium-freudenreichii,467.html|accessdate=23 October 2010|archive-url=https://web.archive.org/web/20160826155845/http://www.genoscope.cns.fr/spip/Propionibacterium-freudenreichii,467.html|archive-date=26 August 2016|url-status=dead}}</ref> These bacteria transform [[lactic acid]] into [[propionic acid]] and carbon dioxide, according to the formula:
+
+:3 [[Lactic acid|Lactate]] → 2 [[propionic acid|Propionate]] + [[acetic acid|Acetate]] + [[carbon dioxide|CO<sub>2</sub>]] + [[Water|H<sub>2</sub>O]]<ref>T. Beresford, A. Williams; ''The Microbiology of Cheese Ripening'', in: Fox, p. 303</ref>
+
+The CO<sub>2</sub> so produced accumulates at weak points in the [[curd]], where it forms the bubbles that become the cheese's eyes.<ref name="Sweeney 349" /> Not all CO<sub>2</sub> is so trapped: in an {{convert|80|kg|abbr=on}} cheese, about 20 L CO<sub>2</sub> remain in the eyes, while 60 L remain dissolved in the cheese mass and 40 L are lost from the cheese.<ref name="Metabolism-McSweeney" />
+
+== Dutch cheese ==
+In Dutch-type cheeses, the CO<sub>2</sub> that forms the eyes results from the metabolisation of [[citrate]] by citrate-positive ("Cit+") strains of [[lactococci]].<ref name="Metabolism-McSweeney"/>
+
+== Bibliography ==
+*Polychroniadou, A. (2001). ''Eyes in cheese: a concise review.'' ''[[Milchwissenschaft]]'' 56, 74-77.
+
+== References ==
+*{{cite book|title=Cheese: Chemistry, Physics, and Microbiology, Volume 1: General Aspects|publisher=[[Academic Press]]|isbn=978-0-12-263652-3|editor=Fox, P.F.}}
+
+== Footnotes ==
+{{reflist}}
+
+{{DEFAULTSORT:Eyes (Cheese)}}
+[[Category:Cheese]]
+[[Category:Carbon dioxide]]
+[[Category:Food chemistry]]
+[[Category:Food science]]

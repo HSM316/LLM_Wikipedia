@@ -1,0 +1,27 @@
+{{Update|date=October 2023}}
+
+In [[machine learning]] and [[computational learning theory]], '''LogitBoost''' is a [[Boosting (meta-algorithm)|boosting]] algorithm formulated by [[Jerome H. Friedman|Jerome Friedman]], [[Trevor Hastie]], and [[Robert Tibshirani]]. 
+
+The original paper casts the [[AdaBoost]] algorithm into a statistical framework.<ref>{{cite journal |first1=Jerome |last1=Friedman |first2=Trevor |last2=Hastie |first3=Robert |last3=Tibshirani |title=Additive logistic regression: a statistical view of boosting |journal=Annals of Statistics |volume=28 |issue=2 |year=2000 |pages=337–407 |citeseerx=10.1.1.51.9525 |doi=10.1214/aos/1016218223}}</ref> Specifically, if one considers [[AdaBoost]] as a [[generalized additive model]] and then applies the cost function of [[logistic regression]], one can derive the LogitBoost algorithm.<ref>{{Cite web |title=Machine Learning Algorithms for Beginners |url=https://www.prodigitalweb.com/machine-learning-algorithms-for-beginners/ |access-date=2023-10-01 |language=en-US}}</ref>
+
+==Minimizing the LogitBoost cost function==
+LogitBoost can be seen as a [[convex optimization]]. Specifically, given that we seek an additive model of the form
+
+:<math>f = \sum_t \alpha_t h_t</math>
+
+the LogitBoost algorithm minimizes the [[Loss functions for classification|logistic loss]]:
+
+:<math>\sum_i \log\left( 1 + e^{-y_i f(x_i)}\right)</math>
+
+==See also==
+* [[Gradient boosting]]
+* [[Logistic model tree]]
+
+==References==
+{{Reflist}}
+
+[[Category:Ensemble learning]]
+[[Category:Classification algorithms]]
+[[Category:Machine learning algorithms]]
+
+{{Compu-AI-stub}}

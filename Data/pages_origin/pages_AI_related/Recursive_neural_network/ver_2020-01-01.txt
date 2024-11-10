@@ -1,0 +1,54 @@
+{{Distinguish|recurrent neural network}}
+A '''recursive neural network''' is a kind of [[deep learning#Deep neural networks|deep neural network]] created by applying the same set of weights [[recursion|recursively]] over a structured input, to produce a [[structured prediction]] over variable-size input structures, or a scalar prediction on it, by traversing a given structure in [[topological sort|topological order]]. RNNs have been successful, for instance, in learning sequence and tree structures in [[natural language processing]], mainly phrase and sentence continuous representations based on [[word embedding]]. RNNs have first been introduced to learn [[distributed representation]]s of structure, such as [[mathematical logic|logical terms]].<ref>{{cite book|doi=10.1109/ICNN.1996.548916 |last1=Goller|first1=C.|title=Proceedings of International Conference on Neural Networks (ICNN'96)|volume=1|pages=347–352|last2=Küchler|first2=A. |year=1996|isbn=978-0-7803-3210-2|citeseerx=10.1.1.52.4759|chapter=Learning task-dependent distributed representations by backpropagation through structure}}</ref>
+Models and general frameworks have been developed in further works since the 1990s.<ref name=":0">{{Cite journal|last=Sperduti|first=A.|last2=Starita|first2=A.|date=1997-05-01|title=Supervised neural networks for the classification of structures|journal=IEEE Transactions on Neural Networks|volume=8|issue=3|pages=714–735|doi=10.1109/72.572108|pmid=18255672|issn=1045-9227}}</ref><ref>{{Cite journal|last=Frasconi|first=P.|last2=Gori|first2=M.|last3=Sperduti|first3=A.|date=1998-09-01|title=A general framework for adaptive processing of data structures|journal=IEEE Transactions on Neural Networks|volume=9|issue=5|pages=768–786|doi=10.1109/72.712151|pmid=18255765|issn=1045-9227|citeseerx=10.1.1.64.2580}}</ref>
+
+== Architectures ==
+
+=== Basic ===
+[[File:Simple recursive neural network.svg|thumbnail|A simple recursive neural network architecture]]
+
+In the most simple architecture, nodes are combined into parents using a weight matrix that is shared across the whole network, and a non-linearity such as ''[[tanh]]''. If ''c''<sub>1</sub> and ''c''<sub>2</sub> are ''n''-dimensional vector representation of nodes, their parent will also be an ''n''-dimensional vector, calculated as
+
+<math>p_{1,2} = \tanh\left(W[c_1 ; c_2]\right)</math>
+
+Where ''W'' is a learned <math>n\times 2n</math> weight matrix.
+
+This architecture, with a few improvements, has been used for successfully parsing natural scenes and for syntactic parsing of natural language sentences.<ref>{{cite journal|last1=Socher|first1=Richard|last2=Lin|first2=Cliff|last3=Ng|first3=Andrew Y.|last4=Manning|first4=Christopher D.|title=Parsing Natural Scenes and Natural Language with Recursive Neural Networks|journal=The 28th International Conference on Machine Learning (ICML 2011)|url=http://nlp.stanford.edu/pubs/SocherLinNgManning_ICML2011.pdf}}</ref>
+
+=== Recursive cascade correlation (RecCC) ===
+RecCC is a constructive neural network approach to deal with tree domains<ref name=":0" />  with pioneering applications to chemistry<ref>{{Cite journal|last=Bianucci|first=Anna Maria|last2=Micheli|first2=Alessio|last3=Sperduti|first3=Alessandro|last4=Starita|first4=Antonina|year=2000|title=Application of Cascade Correlation Networks for Structures to Chemistry|journal=Applied Intelligence|language=en|volume=12|issue=1–2|pages=117–147|doi=10.1023/A:1008368105614|issn=0924-669X}}</ref> and extension to [[directed acyclic graph]]s.<ref>{{Cite journal|last=Micheli|first=A.|last2=Sona|first2=D.|last3=Sperduti|first3=A.|date=2004-11-01|title=Contextual processing of structured data by recursive cascade correlation|journal=IEEE Transactions on Neural Networks|volume=15|issue=6|pages=1396–1410|doi=10.1109/TNN.2004.837783|pmid=15565768|issn=1045-9227|citeseerx=10.1.1.135.8772}}</ref>
+
+=== Unsupervised RNN ===
+A framework for unsupervised RNN has been introduced in 2004.<ref>{{Cite journal|last=Hammer|first=Barbara|last2=Micheli|first2=Alessio|last3=Sperduti|first3=Alessandro|last4=Strickert|first4=Marc|year=2004|title=Recursive self-organizing network models|url=|journal=Neural Networks|volume=17|issue=8–9|pages=1061–1085|doi=10.1016/j.neunet.2004.06.009|pmid=15555852|citeseerx=10.1.1.129.6155}}</ref><ref>{{Cite journal|last=Hammer|first=Barbara|last2=Micheli|first2=Alessio|last3=Sperduti|first3=Alessandro|last4=Strickert|first4=Marc|date=2004-03-01|title=A general framework for unsupervised processing of structured data|journal=Neurocomputing|series=|volume=57|pages=3–35|doi=10.1016/j.neucom.2004.01.008|citeseerx=10.1.1.3.984}}</ref>
+
+=== Tensor ===
+Recursive neural [[tensor]] networks use one, tensor-based composition function for all nodes in the tree.<ref>{{cite journal|last1=Socher|first1=Richard|last2=Perelygin|first2=Alex|last3=Y. Wu|first3=Jean|last4=Chuang|first4=Jason|last5=D. Manning|first5=Christopher|last6=Y. Ng|first6=Andrew|last7=Potts|first7=Christopher|title=Recursive Deep Models for Semantic Compositionality Over a Sentiment Treebank|journal=Emnlp 2013|url=http://nlp.stanford.edu/~socherr/EMNLP2013_RNTN.pdf}}</ref>
+
+== Training ==
+
+=== Stochastic gradient descent ===
+Typically, [[stochastic gradient descent]] (SGD) is used to train the network. The gradient is computed using [[backpropagation through structure]] (BPTS), a variant of [[backpropagation through time]] used for [[recurrent neural networks]].
+
+== Properties ==
+Universal approximation capability of RNN over trees has been proved in literature.<ref>{{Cite book|url=https://books.google.com/?id=H3_1BwAAQBAJ&pg=PA1#v=onepage&q&f=false|title=Learning with Recurrent Neural Networks|last=Hammer|first=Barbara|date=2007-10-03|publisher=Springer|isbn=9781846285677|language=en}}</ref><ref>{{Cite journal|last=Hammer|first=Barbara|last2=Micheli|first2=Alessio|last3=Sperduti|first3=Alessandro|date=2005-05-01|title=Universal Approximation Capability of Cascade Correlation for Structures|journal=Neural Computation|language=en|volume=17|issue=5|pages=1109–1159|doi=10.1162/0899766053491878|citeseerx=10.1.1.138.2224}}</ref>
+
+== Related models ==
+
+=== Recurrent neural networks ===
+{{Main|Recurrent neural network}}
+[[Recurrent neural network]]s are recursive [[artificial neural network]]s with a certain structure: that of a linear chain. Whereas recursive neural networks operate on any hierarchical structure, combining child representations into parent representations, recurrent neural networks operate on the linear progression of time, combining the previous time step and a hidden representation into the representation for the current time step.
+
+=== Tree Echo State Networks ===
+An efficient approach to implement recursive neural networks is given by the Tree Echo State Network<ref>{{Cite journal|last=Gallicchio|first=Claudio|last2=Micheli|first2=Alessio|date=2013-02-04|title=Tree Echo State Networks|journal=Neurocomputing|volume=101|pages=319–337|doi=10.1016/j.neucom.2012.08.017|hdl=11568/158480}}</ref> within the [[reservoir computing]] paradigm.
+
+=== Extension to graphs ===
+Extensions to [[Graph (discrete mathematics)|graphs]] include Graph Neural Network (GNN),<ref>{{Cite journal|last=Scarselli|first=F.|last2=Gori|first2=M.|last3=Tsoi|first3=A. C.|last4=Hagenbuchner|first4=M.|last5=Monfardini|first5=G.|date=2009-01-01|title=The Graph Neural Network Model|journal=IEEE Transactions on Neural Networks|volume=20|issue=1|pages=61–80|doi=10.1109/TNN.2008.2005605|pmid=19068426|issn=1045-9227|url=https://repository.hkbu.edu.hk/vprd_ja/1}}</ref> Neural Network for Graphs (NN4G),<ref>{{Cite journal|last=Micheli|first=A.|date=2009-03-01|title=Neural Network for Graphs: A Contextual Constructive Approach|journal=IEEE Transactions on Neural Networks|volume=20|issue=3|pages=498–511|doi=10.1109/TNN.2008.2010350|pmid=19193509|issn=1045-9227}}</ref> and more recently [[convolutional neural network]]s for graphs.
+
+== References ==
+{{Reflist}}
+
+[[Category:Artificial intelligence]]
+[[Category:Artificial neural networks]]
+
+
+{{compu-AI-stub}}

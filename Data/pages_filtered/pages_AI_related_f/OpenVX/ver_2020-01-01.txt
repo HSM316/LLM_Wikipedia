@@ -1,0 +1,29 @@
+OpenVX is an open, royalty-free standard for cross platform acceleration of computer vision applications. It is designed by the Khronos Group to facilitate portable, optimized and power-efficient processing of methods for vision algorithms. This is aimed for embedded and real-time programs within computer vision and related scenarios. It uses a connected graph representation of operations.
+
+Overview
+OpenVX specifies a higher level of abstraction for programming computer vision use cases than compute frameworks such as OpenCL. The high level makes the programming easy and the underlying execution will be efficient on different computing architectures. This is done while having a consistent and portable vision acceleration API.
+
+OpenVX is based on a connected graph of vision nodes that can execute the preferred chain of operations. It is possible to optimize the underlying implementation through various techniques, for example: acceleration on various processing units or dedicated hardware. This architecture facilitates applications programmed in OpenVX on different systems with different power and performance, including battery-sensitive, vision-enabled, wearable displays.
+
+OpenVX is complementary to the open source vision library OpenCV. OpenVX in some applications offer a better optimized graph management than OpenCV.
+
+History
+ OpenVX 1.0 specification was released in October 2014. 
+ OpenVX sample implementation was released in December 2014.
+ OpenVX 1.1 specification was released on May 2, 2016.
+ OpenVX 1.2 was released on May 1, 2017.https://www.khronos.org/news/press/openvx-1.2-specification-cross-platform-acceleration-power-efficient-vision
+ Updated OpenVX adopters program and OpenVX 1.2 conformance test suite was released on November 21, 2017.
+OpenVX 1.2.1 was released on November 27, 2018.
+OpenVX 1.3 was released on October 22, 2019.https://www.khronos.org/news/press/khronos-releases-openvx-1.3-open-standard-for-cross-platform-vision-and-machine-intelligence-acceleration
+
+ Implementations, frameworks and libraries 
+
+ AMD OpenVX (AMDOVX) - for AMD's CPUs and GPUs.
+ Cadence - for Cadence Design Systems's Tensilica Vision DSPs.
+ Imagination - for Imagination Technologies's PowerVR GPUs
+ Synopsys - for Synopsys' DesignWare EV Vision Processors
+ Texas Instruments’ OpenVX (TIOVX) - for Texas Instruments’ Jacinto™ ADAS SoCs.
+ NVIDIA VisionWorks - for CUDA-capable Nvidia GPUs and SoCs.
+
+ MIVisionX - for AMD's CPUs and GPUs.
+ OpenVINO - for Intel's CPUs, GPUs, VPUs, and FPGAs.

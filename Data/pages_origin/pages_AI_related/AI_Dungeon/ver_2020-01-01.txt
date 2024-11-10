@@ -1,0 +1,18 @@
+{{Infobox video game
+| developer = Nick Walton
+| platforms = PC, Android, IOS
+| title = AI Dungeon 2
+| released = December 5, 2019
+| genre = [[Text adventure]]
+}}
+
+'''AI Dungeon 2''' is an open-source [[Interactive fiction|text adventure game]] that uses [[OpenAI]] to generate effectively limitless open-ended story lines. Released in December, 2019 by Nick Walton, the game uses AI that has researched the archives of games on chooseyourstory.com to generate complex responses to user input.<ref>{{Cite web|url=https://www.pcgamer.com/this-ai-writes-a-text-adventure-while-you-play-it/|title=This AI writes a text adventure while you play it|last=Macgregor|first=Jody|date=2019-12-08|website=PC Gamer|language=en-US|access-date=2019-12-10}}</ref><ref>{{Cite web|url=https://www.theverge.com/tldr/2019/12/6/20998993/ai-dungeon-2-choose-your-own-adventure-game-text-nick-walton-gpt-machine-learning|title=This AI text adventure game has pretty much infinite possibilities|last=Vincent|first=James|date=2019-12-06|website=The Verge|language=en|access-date=2019-12-10}}</ref><ref>{{Cite web|url=https://kotaku.com/in-ai-dungeon-2-you-can-do-anything-even-start-a-rock-1840276553|title=In AI Dungeon 2, You Can Do Anything--Even Start A Rock Band Made Of Skeletons|access-date=2019-12-14}}</ref>
+
+==References==
+{{reflist}}
+{{videogame-stub}}
+
+
+[[Category:Interactive fiction]]
+[[Category:Video games using procedural generation]]
+[[Category:2019 video games]]

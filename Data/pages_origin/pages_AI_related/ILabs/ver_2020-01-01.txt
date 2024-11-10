@@ -1,0 +1,90 @@
+{{Lowercase title}}
+'''iLabs''' is a non-profit Milan-based organization pursuing multidisciplinary research on radical extension of human life-span. It was founded in 1977 by Gabriele Rossi and Antonella Canonico, who advocate the scenario known as “Semi-Immortality”, an elaborate vision of an era of quasi-immortal individuals (“intelligent systems”), that is philosophically linked to other instances of [[Transhumanism]] and futurists’ theories (such as [[Raymond Kurzweil]]’s). 
+
+''iLabs'' led the development of [[Artificial Intelligence]] tools in Italy: the first relational database (1984), a self-monitoring and self-modifying application for production planning (1985), programs for [[data compression]] (1980), visual recognition (1983), [[cryptography]] (1987).
+
+Starting with the publishing of ''Semi-Immortality''<ref>The English version of [http://www.semi-immortality.com/ Semi-Immortality] is freely available under a CC license.</ref> in November 2007, ''iLabs'' has also been devoting considerable resources to further improve the impact of the research program and raise the general awareness towards semi-immortality and related topics, resulting in a series of books, articles, interviews and events popular in the Italian transhumanist community and beyond.<ref>See [http://www.ilabs.it/ iLabs] website.</ref>
+
+On March 5, 2011 ''iLabs'' hosted the [http://www.singularitysummit.it/defaultEN.asp iLabs Singularity Summit], featuring speeches from [[Raymond Kurzweil]] and [[Aubrey De Grey]].
+
+==History==
+''iLabs'' was founded in 1977 by two young Italian researchers, Antonella Canonico (psychologist) and Gabriele Rossi (computer scientist). The lab pursues a long-term research goal – the radical extension of human life-span  – through the completion of mid-term projects in several fields.
+
+Throughout their history, ''iLabs'' has been pioneering the use of Artificial Intelligence and psychoneurophysiology (also known as [[Psychoneuroimmunology]]) in a variety of experimental and real-world settings.<ref>See for example the interview on [http://www.newtonline.it/ Newton] (August 2010). [http://www.semi-immortalita.it/public/newton_agosto.pdf PDF]</ref> In 1984 the ''iLabs'' department of Artificial Intelligence created the first Italian data-base, ''Sistema I'', the first of a series of projects in [[computer science]]:
+
+* in 1991, ''IAssist'', an [[expert system]] for customer care;
+* in 1993, ''i5'', an expert system for insurance [[risk management]];
+* in 1994, ''BBS-RCAuto'', the first real-time comparison of insurance policies across the all Italian market;
+* in 1995, ''ZaZen'', an expert system for [[derivative market trading]];
+* in 1996, ''iAssicur97'', a completely web-based software allowing natural language queries;
+* in 2010, ''iMaat'', a digital universe based on a proprietary [[reversible cellular automaton]].<ref>Tutorial, papers and simulations
+are available on the book [http://www.mmdr.it/provaEN.asp website].</ref>
+
+The department of Psychoneurophysiology was one of the first institution in the country promoting the field through innovative proposals in [[psychology]], [[stress management]] and [[bio-statistics]]:
+
+* in 1996, the creation of a free web-service for psychological assistance;
+* in 2002, ''Buddhamam'', a wellness center specialized in stress management;
+* in 2008, ''iMed'', a statistical estimator of biological age from blood samples.
+
+The department started focusing on [[psycho-oncology]] in 2000, with hundreds of subjects successfully treated since then.
+
+==iLabs R&D Structure==
+''iLabs'' is privately owned and run since their foundation. ''iLabs'' started commercial spin-offs to apply their discoveries in business-oriented contexts; in turn, profits from commercial activities are used to fund the labs projects.<ref>[http://www.monsieur.it/sommario_scheda.aspx?id=788&numero=86 Monsieur], April 2010. [http://www.semi-immortalita.it/public/monsieur.pdf PDF]</ref>
+
+The main agenda is carried on, for the most part, by the departments of Artificial Intelligence and Psychoneurophysiology. However, ''iLabs'' relies on renowned experts to further widen the scope of the research program: professionals from mathematics, physics, logic, law, economics, medicine, biology have worked for the lab to address specific scientific challenges. The results of the projects are popularized through books, events, digital material, and spread in the academic community with peer-reviewed publications.
+
+''iLabs'' [http://www.ilabs.it/Partners.asp partners] include [[Humanity+]], [[SENS Foundation]], [http://www.kurzweilai.net/ KurzweilAI], [http://www.scienceagainstaging.com/ENG/index_ENG.html Science for Life Extension], [http://www.estropico.org/  Estropico]. Four ''iLabs'' members are also in the Advisory Board of Lifeboat Foundation.
+
+==Semi-Immortality and the Call for Players==
+“Semi-immortality” is the title of the ''iLabs'' volume detailing the first thirty years of research: since it is doubtful that full immortality can be truly achieved by physical entities, the term “semi-immortality” was preferred as the main tag over ''iLabs'' vision.<ref>See [http://www.semi-immortality.com/ Semi-Immortality], Chapter II.</ref>
+
+There are two explicit assumptions underlying the labs work: first, only a truly global perspective may lead mankind to a radical extension of the life-span. According to the founders, technology and science will play a major role, but without addressing serious challenges in ethics and social theory all the attempts would be doomed to failure.<ref>[http://www.ilgiornale.it/interni/nel_2030_luomo_arrivera_alla_semi-immortalita/21-06-2009/articolo-id=360348-page=0-comments=2 ''Il Giornale''], June 21, 2009.</ref> Second, achieving the “''semi-immortality''” is a hard, articulated task requiring huge efforts and resources, as well as the finest minds.<ref>[http://www.libero-news.it/ ''Libero''], July 18, 2008. [http://www.semi-immortalita.it/intervista_libero.pdf PDF]</ref>
+
+In 2008, ''iLabs'' published online the first version of their “[http://www.ilabs.it/public/CallForPlayers_1.0_ENG.pdf Call for Players]”, detailing the fields of study in their global agenda and explaining the labs’ structure and activities. The document’s explicit aim is to attract interested researchers to their projects.
+
+According to the document, the ''semi-immortality'' picture is declined in three core areas of study and intervention:
+
+# mathematics, physics, computer science
+# biology, medicine, psychology
+# philosophy, law, politics
+
+=== Mathematics, physics, computer science ===
+''iLabs'' projects in this area are based on the so-called ''Mathematics of the Models of Reference''.<ref>See ''The Mathematics of the Models of Reference'', 2010, College Publications, London</ref> The theory –created by Gabriele Rossi and developed with Francesco Berto and Jacopo Tagliabue – use cellular automata theory as the building block of computation and a perfect isomorphism between matter and information as the main “philosophical” assumption.
+
+''iLabs'' digital universe satisfies universality (it is equivalent to a [[Turing Machine]]) and perfect reversibility (a desideratum if one wants to easily preserve various quantities and never lose information), and it comes embedded in a first-order theory allowing computable, qualitative statements on the universe evolution.
+
+=== Biology, medicine, psychology ===
+After two decades of studies on mind-body relations and psycho-oncology, ''iLabs'' started the development of a proprietary protocol for health monitoring, inspired by the success of [[evidence-based medicine]].
+
+Collecting more than 80 million single blood tests, the Department of Psychoneurophysiology created ''iMed'', a statistical estimator of “biological age”. The algorithm takes as input a subject’s blood test and gives back a probability distribution; the statistics can then be used to compare the subject’s real age with her biological age, thereby yielding a quantitative assessment of the aging rate.
+
+''iMed'' is now being expanded to include other simple and inexpensive test to improve the estimator accuracy: the hope is to develop an easy-to-use and reliable method to objectively assess the health status of any subject
+
+=== Philosophy, law, politics ===
+Given the attention ''iLabs'' has always been putting on ethical aspects of the technological developments, it is not surprising that many activities are focused on forecasting social changes and planning new scenarios for justice, economy, education.
+
+Gabriele Rossi – a popular entrepreneur and innovator in the Italian insurance market – wrote dozens of articles in popular and specialized magazines on the impact of the technological revolution (and the life-span extension) on the economy and the society as a whole.
+
+More recently, ''iLabs'' published ''[http://www.lalegge.net/defaultEN.asp The Law in the Society of Semi-Immortality]'': the essay argues for two radical changes in how justice and morality are currently conceived. Approaching the Singularity, artificial minds could be used to make the whole process of justice administration perfectly objective, progressively eliminating the human bias in legal judgments. Second, new values are likely to be promoted by the exponential technological trend: the book holds that, in the near future, the value of Truth is likely to have increasing importance in advanced societies.
+
+The two claims are not uncontroversial, as several speakers and critics pointed out during the first presentations of the volume in the academic ([http://www.filosofia.lettere.unipd.it/analitica/sifa2010/ SIFA 2010]) and transhumanist community ([http://transvision2010.wordpress.com/ Transvision 2010]<ref>The video of the conference are available [http://telexlr8.wordpress.com/2010/10/25/transvision-2010-october-22-24-2010/ here].</ref>). To promote an informed debate on ethical and social issues of the technological evolution, ''iLabs'' writes monthly contributions to Italian national magazines and blogs.
+
+==References==
+<references/>
+
+==External links==
+*[http://www.singularitysummit.it/defaultEN.asp Singularity Summit]
+*[http://www.semi-immortality.com/ Semi-Immortality]
+*[http://humanityplus.org/ Humanity+]
+*[http://www.sens.org/ Sens Foundation]
+*[http://www.kurzweilai.net/ KurzweilAI]
+*[http://www.scienceagainstaging.com/ENG/index_ENG.html Science for Life Extension]
+
+==Bibliography==
+*[http://www.semi-immortality.com/acquistaEN.asp Semi-Immortality], 2010, English version freely available under a CC license
+*[http://www.mmdr.it/defaultEN.asp The Mathematics of the Models of Reference], 2010, College Publications (Text in Computing), London
+*[http://www.ilabs.it/public/CallForPlayers_1.0_ENG.pdf Call for Players]
+
+{{DEFAULTSORT:Ilabs}}
+[[Category:Singularitarianism]]
+[[Category:Artificial intelligence associations]]

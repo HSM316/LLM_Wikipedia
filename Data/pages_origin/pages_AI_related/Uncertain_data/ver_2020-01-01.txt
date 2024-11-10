@@ -1,0 +1,28 @@
+In [[computer science]], '''uncertain data''' is data that contains [[measurement error|noise]] that makes it deviate from the correct, intended or original values. In the age of [[big data]], uncertainty or data veracity is one of the defining characteristics of data. Data is constantly growing in volume, variety, velocity and uncertainty (1/veracity). Uncertain data is found in abundance today on the web, in sensor networks, within enterprises both in their structured and unstructured sources. For example, there may be uncertainty regarding the address of a customer in an enterprise dataset, or the temperature readings captured by a sensor due to aging of the sensor. In 2012 IBM called out '''managing uncertain data at scale''' in its '''global technology outlook''' report<ref>{{cite report|url=http://www.zurich.ibm.com/pdf/isl/infoportal/GTO_2012_Booklet.pdf|title=Global Technology Outlook|year=2012}}</ref> that presents a comprehensive analysis looking three to ten years into the future seeking to identify significant, disruptive technologies that will change the world. In order to make confident business decisions based on real-world data, analyses must necessarily account for many different kinds of uncertainty present in very large amounts of data. Analyses based on uncertain data will have an effect on the quality of subsequent decisions, so the degree and types of inaccuracies in this uncertain data cannot be ignored.
+
+Uncertain data is found in the area of [[sensor networks]]; text where [[noisy text]] is found in abundance on social media, web and within enterprises where the structured and [[unstructured data]] may be old, outdated, or plain incorrect; in modeling where the [[mathematical model]] may only be an approximation of the actual process. When representing such data in a [[database]], some indication of the [[probability]] of the correctness of the various values also needs to be estimated.
+
+There are three main models of uncertain data in databases. In '''attribute uncertainty''', each uncertain attribute in a tuple is subject to its own independent [[probability distribution]].<ref name="orion">{{cite journal|last=Prabhakar|first=Sunil |title=ORION: Managing Uncertain (Sensor) Data|url=http://mobisensors.cs.pitt.edu/files/papers/prabhakar.pdf}}</ref> For example, if readings are taken of temperature and wind speed, each would be described by its own probability distribution, as knowing the reading for one measurement would not provide any information about the other.
+
+In '''correlated uncertainty''', multiple attributes may be described by a [[joint probability distribution]].<ref name="orion"/> For example, if readings are taken of the position of an object, and the ''x''- and ''y''-coordinates stored, the probability of different values may depend on the distance from the recorded coordinates. As distance depends on both coordinates, it may be appropriate to use a joint distribution for these coordinates, as they are not [[Statistical independence|independent]].
+
+In '''tuple uncertainty''', all the attributes of a [[tuple]] are subject to a joint probability distribution. This covers the case of correlated uncertainty, but also includes the case where there is a probability of a tuple not belonging in the relevant relation, which is indicated by all the probabilities not summing to one.<ref name="orion"/> For example, assume we have the following tuple from a [[probabilistic database]]:
+{| class="wikitable" border="1"
+|-
+|| (a, 0.4) | (b, 0.5)
+|}
+
+Then, the tuple has 10% chance of not existing in the database.
+
+==References==
+{{reflist}}
+
+*{{cite conference|first=Habich|last=Volk|author2=Clemens Utzny, Ralf Dittmann, Wolfgang Lehner|publisher=IEEE|title=Error-Aware Density-Based Clustering of Imprecise Measurement Values|booktitle=Seventh IEEE International Conference on Data Mining Workshops, 2007. ICDM Workshops 2007. }}
+*{{cite conference|first=Volk|last=Rosentahl|author2=Martin Hahmann, Dirk Habich, Wolfgang Lehner|publisher=IEEE|title=Clustering Uncertain Data With Possible Worlds|booktitle=Proceedings of the 1st Workshop on Management and mining Of Uncertain Data in conjunction with the 25th International Conference on Data Engineering, 2009.}}
+
+[[Category:Machine learning]]
+[[Category:Data mining]]
+[[Category:Statistical theory]]
+
+
+{{compu-sci-stub}}

@@ -1,0 +1,58 @@
+{{primary sources|date=September 2011}}
+{{Infobox Academic Conference
+ | history = 2002–
+ | discipline = [[Artificial intelligence]] [[Logic in computer science]] [[Semantic Web]]
+ | abbreviation = RuleML
+ | publisher = [[Springer Science+Business Media|Springer]] [[Lecture Notes in Computer Science|LNCS]]
+ | country= International
+ | frequency = annual (since 2002)
+}}
+
+The annual '''International Web Rule Symposium''' ('''RuleML''') is an international [[academic conferences]] on research, applications, languages and standards for rule technologies. Since 2017 it is organised as '''International Joint Conference on Rules and Reasoning''' ('''RuleML+RR'''). It is a conference in the field of [[rule-based programming]] and [[rule-based system]]s including [[Production system (computer science)|production rules systems]], [[Logic programming|logic programming rule engines]], and [[business rules engine]]s/[[Business rule management system|business rules management systems]]; [[Semantic web|Semantic Web]] rule languages and rule standards (e.g., [[RuleML]], LegalRuleML, Reaction RuleML, [[Semantic Web Rule Language|SWRL]], [[Rule Interchange Format|RIF]], [[Common logic|Common Logic]], [[Production Rule Representation|PRR]], [[Decision Model and Notation]] (DMN), [[Semantics of Business Vocabulary and Business Rules|SBVR]]); [[Complex event processing|rule-based event processing languages (EPLs) and technologies]]; and research on [[inference]] rules, [[Constraint Handling Rules|constraint handling rules]], [[Rule of inference|transformation rules]], [[decision rules]], [[Production (computer science)|production rules]], and [[Event Condition Action|ECA rules]]. RuleML+RR is the leading conference to build bridges between academia and industry in the field of Web rules and its applications, especially as part of the semantic technology stack.<ref>[http://www.aaai.org/ojs/index.php/aimagazine/article/view/2634 A Report on the Ninth International Web Rule Symposium. AI Magazine 37(1): 105-106 (2016)].</ref> RuleML+RR is commonly listed together with other Artificial Intelligence conferences worldwide.<ref>See, e.g., [http://academic.research.microsoft.com/RankList?entitytype=3&topDomainID=2&subDomainID=5&last=0&start=101&end=200  In Microsoft Academic Ranking of the top conference in Artificial Intelligence it is on position 114 with a field rank of 15] {{webarchive|url=https://web.archive.org/web/20121103025047/http://academic.research.microsoft.com/RankList?entitytype=3&topDomainID=2&subDomainID=5&last=0&start=101&end=200 |date=2012-11-03 }}.</ref><ref>See, e.g., [https://web.archive.org/web/20150216011623/http://citeseerx.ist.psu.edu/stats/venues RuleML is in the top 100 venues for impact factor on CiteSeerX (place 71)].</ref><ref>See, e.g., [https://scholar.google.de/scholar?q=RuleML&hl=en&as_sdt=0,5 >9100 results in Google Scholar for RuleML].</ref><ref>See, e.g., figure 3 in [http://www.disco.ethz.ch/publications/apweb08.pdf  Michael Kuhn and Roger Wattenhofer. The layered world of scientific conferences. In Progress in WWW Research and Development, figure 3, 2008.] {{webarchive|url=https://web.archive.org/web/20120425142148/http://www.disco.ethz.ch/publications/apweb08.pdf |date=2012-04-25 }} which shows the relations of RuleML to areas such as Semantic Web, Agents, AI, KR and AI conferences such AAAI.</ref><ref>See, e.g., [http://portal.core.edu.au/conf-ranks/?search=RuleML&by=all&source=CORE2014&sort=atitle&page=1 Core conference ranking].</ref>
+
+==History==
+The RuleML conference series has been held without interruption since 2002. The RuleML Symposium has evolved from an annual series of first international workshops since 2002, international conferences in 2005 and 2006, to the premier International Symposium for the Web rules community since 2007. Since 2017 it is joint with the Web Reasoning and Rule Systems conference series to the new International Joint Conference on Rules and Reasoning (RuleML+RR).
+
+==International Rule Challenge==
+The '''International Rule Challenge''' has been held since 2007 at the RuleML Symposium. It calls for submissions of benchmarks/evaluations, demos, case studies / use cases, experience reports, best practice solutions (e.g. design patterns, reference architectures, models), rule-based implementations/ tools/ applications, demonstrations engineering methods, implementations of rule standards and industrial problem statements. It also hosts a rule base competition.
+
+==RuleML Doctoral Consortium==
+Since 2011 the RuleML symposium organizes a Doctoral Consortium for PhD students.
+
+Since 2017 also the [http://reasoningweb.org/ Reasoning Web Summer Schools] are co-located with the RuleML+RR conference.
+
+== List of RuleML Editions ==
+
+* [https://2019.ruleml.org RuleML+RR 2019: Third International Joint Conference on Rules and Reasoning]
+* [https://2018.ruleml.org/ RuleML+RR 2018: Second International Joint Conference on Rules and Reasoning]
+* [https://2017.ruleml.org/ RuleML+RR 2017: First International Joint Conference on Rules and Reasoning]
+* [https://2016.ruleml.org/ RuleML-2016: Tenth International Web Rule Symposium]
+* [https://web.archive.org/web/20150808110728/http://2015.ruleml.org/ RuleML-2015: Ninth International Web Rule Symposium]
+* [https://2014.ruleml.org/ RuleML-2014: Eighth International Web Rule Symposium]
+* [https://2013.ruleml.org/ RuleML-2013: Seventh International Web Rule Symposium]
+* [https://2012.ruleml.org/ RuleML-2012: Sixth International Web Rule Symposium]
+* [https://2011.ruleml.org/ RuleML-2011: Fifth International Web Rule Symposium]
+* [https://2010.ruleml.org/ RuleML-2010: Fourth International Web Rule Symposium]
+* [https://semtech2010.semanticuniverse.com/rules Special Semantic Rules track at SemTech 2010]
+* [https://2009.ruleml.org/ RuleML-2009: Third International Web Rule Symposium]
+* [https://2008.ruleml.org/ RuleML-2008: Second International Web Rule Symposium]
+* [https://2007.ruleml.org/ RuleML-2007: First International Web Rule Symposium]
+* [https://2006.ruleml.org/ RuleML-2006: Second International Conference on Rules and Rule Markup Languages for the Semantic Web]
+* [https://2006.ruleml.org/reaction Special Workshop on Reaction Rules]
+* [https://web.archive.org/web/20100807002201/http://2005.ruleml.org/ RuleML-2005: First International Conference on Rules and Rule Markup Languages for the Semantic Web]
+* [https://2004.ruleml.org/ RuleML-2004: Third International Workshop on Rules and Rule Markup Languages for the Semantic Web]
+* [https://2003.ruleml.org RuleML-2003: Second International Workshop on Rules and Rule Markup Languages for the Semantic Web]
+* [http://www.informatik.uni-trier.de/~ley/db/conf/rml/rml2002.html RuleML-2002: First International Workshop on Rule Markup Languages for Business Rules on the Semantic Web]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://www.informatik.uni-trier.de/~ley/db/conf/ruleml/ List of RuleML conferences and symposia]. [[University of Trier]]. Retrieved July 5, 2016.
+
+[[Category:Web-related conferences]]
+[[Category:Artificial intelligence conferences]]
+[[Category:Academic conferences]]
+[[Category:Computer conferences]]
+
+{{compu-conference-stub}}

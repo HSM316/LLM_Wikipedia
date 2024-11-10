@@ -1,0 +1,35 @@
+In January 2015, Stephen Hawking, Elon Musk, and dozens of artificial intelligence experts signed an open letter on artificial intelligence calling for research on the societal impacts of AI. The letter affirmed that society can reap great potential benefits from artificial intelligence, but called for concrete research on how to prevent certain potential "pitfalls": artificial intelligence has the potential to eradicate disease and poverty, but researchers must not create something which cannot be controlled. The four-paragraph letter, titled "Research Priorities for Robust and Beneficial Artificial Intelligence: An Open Letter", lays out detailed research priorities in an accompanying twelve-page document.
+
+ Background 
+
+By 2014, both physicist Stephen Hawking and business magnate Elon Musk had publicly voiced the opinion that superhuman artificial intelligence could provide incalculable benefits, but also can end the human race if deployed incautiously (see Existential risk from advanced artificial intelligence). At the time, Hawking and Musk both sat on the scientific advisory board for the Future of Life Institute, an organisation working to "mitigate existential risks facing humanity". The institute drafted an open letter directed to the broader AI research community, and circulated it to the attendees of its first conference in Puerto Rico during the first weekend of 2015. The letter was made public on January 12.
+
+ Purpose 
+
+The letter highlights both the positive and negative effects of artificial intelligence. According to Bloomberg Business, Professor Max Tegmark of MIT circulated the letter in order to find common ground between signatories who consider super intelligent AI a significant existential risk, and signatories such as Professor Oren Etzioni, who believe the AI field was being "impugned" by a one-sided media focus on the alleged risks. The letter contends that:
+
+The potential benefits (of AI) are huge, since everything that civilization has to offer is a product of human intelligence; we cannot predict what we might achieve when this intelligence is magnified by the tools AI may provide, but the eradication of disease and poverty are not unfathomable. Because of the great potential of AI, it is important to research how to reap its benefits while avoiding potential pitfalls.
+
+One of the signatories, Professor Bart Selman of Cornell University, said the purpose is to get AI researchers and developers to pay more attention to AI safety. In addition, for policymakers and the general public, the letter is meant to be informative but not alarmist. Another signatory, Professor Francesca Rossi, stated that "I think it's very important that everybody knows that AI researchers are seriously thinking about these concerns and ethical issues".
+
+ Concerns raised by the letter 
+
+The signatories ask: How can engineers create AI systems that are beneficial to society, and that are robust? Humans need to remain in control of AI; our AI systems must "do what we want them to do". The required research is interdisciplinary, drawing from areas ranging from economics and law to various branches of computer science, such as computer security and formal verification. Challenges that arise are divided into verification ("Did I build the system right?"), validity ("Did I build the right system?"), security, and control ("OK, I built the system wrong, can I fix it?")
+
+ Short-term concerns 
+
+Some near-term concerns relate to autonomous vehicles, from civilian drones and self-driving cars. For example, a self-driving car may, in an emergency, have to decide between a small risk of a major accident and a large probability of a small accident. Other concerns relate to lethal intelligent autonomous weapons: Should they be banned? If so, how should 'autonomy' be precisely defined? If not, how should culpability for any misuse or malfunction be apportioned?
+
+Other issues include privacy concerns as AI becomes increasingly able to interpret large surveillance datasets, and how to best manage the economic impact of jobs displaced by AI.
+
+ Long-term concerns 
+
+The document closes by echoing Microsoft research director Eric Horvitz's concerns that:
+
+we could one day lose control of AI systems via the rise of superintelligences that do not act in accordance with human wishes – and that such powerful systems would threaten humanity. Are such dystopic outcomes possible? If so, how might these situations arise? ...What kind of investments in research should be made to better understand and to address the possibility of the rise of a dangerous superintelligence or the occurrence of an "intelligence explosion"?
+
+Existing tools for harnessing AI, such as reinforcement learning and simple utility functions, are inadequate to solve this; therefore more research is necessary to find and validate a robust solution to the "control problem".
+
+ Signatories 
+
+Signatories include physicist Stephen Hawking, business magnate Elon Musk, the co-founders of DeepMind, Vicarious, Google's director of research Peter Norvig, Professor Stuart J. Russell of the University of California Berkeley, and other AI experts, robot makers, programmers, and ethicists. The original signatory count was over 150 people, including academics from Cambridge, Oxford, Stanford, Harvard, and MIT.

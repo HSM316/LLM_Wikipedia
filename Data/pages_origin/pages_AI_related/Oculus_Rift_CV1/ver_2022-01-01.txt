@@ -1,0 +1,115 @@
+{{short description|Virtual reality headset by Oculus VR}}
+{{Infobox information appliance
+| name = Oculus Rift CV1
+| image = Oculus-Rift-CV1-Headset-Front.jpg
+| caption = Oculus Rift CV1 headset
+| developer = [[Oculus VR|Oculus VR, LLC]]
+| manufacturer = Oculus VR
+| type = [[Virtual reality headset]]
+| generation = 1<ref>{{Cite web|url=https://www.roadtovr.com/facebook-ceo-mark-zuckerberg-oculus-quest-completes-companys-first-gen-lineup/|title=Facebook CEO Mark Zuckerberg: 'Oculus Quest Completes Company's First-Gen Lineup'|last=Hayden|first=Scott|date=2018-10-15|website=Road to VR|language=en-US|access-date=2019-03-22}}</ref>
+| lifespan = 2016-2019
+| discontinued = 2019<ref name="rift-phaseout-tested">{{cite web |last1=Mitchell |first1=Nate |title=Oculus Rift S Hands-On and Impressions! |url=https://www.youtube.com/watch?v=2vtryRHVg_I&t=3m22s |website=YouTube |publisher=Whalerock Industries |access-date=23 May 2019 |date=March 20, 2019 |quote=So Rift S is gonna wholly replace Rift. We're actually in the process of phasing out Rift right now.}}</ref><ref name="rift-phaseout-theverge">{{cite web |last1=Robertson |first1=Adi |title=The Oculus Rift is out of stock almost everywhere, still shipping 'while supplies last' |url=https://www.theverge.com/2019/3/20/18273327/oculus-rift-available-out-of-stock-amazon-bestbuy-newegg |website=The Verge |publisher=Vox Media, Inc. |access-date=23 May 2019 |date=March 20, 2019 |quote=While we don’t comment on specific shipment windows or allocations, [we] can confirm [the] original Rift is still available for sale at Oculus.com and from our retail partners while supplies last.}}</ref><ref name="rift-phaseout-oculusblog">{{cite web |title=Announcing Oculus Rift S, Our New PC VR Headset Launching Spring 2019 for $399 |url=https://www.oculus.com/blog/announcing-oculus-rift-s-our-new-pc-vr-headset-launching-spring-2019/ |website=Oculus.com |publisher=Facebook Technologies, LLC |access-date=23 May 2019 |date=March 20, 2019 |quote=Rift S replaces the original Rift with an upgrade to a higher resolution display, improved optics, and a feature called Passthrough+ … Because Rift and Rift S share the same core platform experience, current Rift owners will be able to take advantage of our continued software updates.}}</ref>
+| media = 
+| os = 
+| power = 
+| cpu = 
+| memory = 
+| storage = 
+| display = [[PenTile matrix family|PenTile]]<ref>{{Cite web | url = https://arstechnica.com/gaming/2016/03/ask-ars-i-cant-choose-between-oculus-rift-htc-vive-and-playstation-vr/ | first = Lee | last = Hutchinson | title = Ask Ars: I can't choose between Oculus Rift, HTC Vive, and PlayStation VR! | date = March 22, 2016 | access-date = September 24, 2016 | work = Ars Technica}}</ref> [[OLED]] 2160x1200 (1080x1200 per eye) @ 90 Hz
+| graphics = 
+| sound = {{plainlist|
+*Integrated [[3D audio]] headphones (user removable/exchangeable)
+}}
+| input = [[6DOF]] (3-axis rotational tracking + 3-axis positional tracking) through USB-connected IR LED sensor, which tracks via the "constellation" method
+| controllers = {{plainlist|
+*[[Xbox One]] game controller
+*Oculus Touch motion tracked controllers
+}}
+| camera = 
+| touchpad = 
+| connectivity = [[HDMI|HDMI 1.3]], [[USB 3.0]], [[USB 2.0]]
+| dimensions = 
+| weight = {{convert|470|g|lb|abbr=on}}
+| compatibility = 
+| successor = [[Oculus Rift S]]
+| related = 
+| website = {{Official website|https://www.oculus.com/rift/}}
+| founder = 
+| releasedate = {{start date|2016|03|28}}
+| price = US$599.99
+| unitssold = 547,000 (July 2019 estimate)<ref name="cnbc-superdata-july-2019"/>
+| unitsshipped = 
+| service = 
+| topgame = 
+| predecessor = [[Oculus Rift DK2]]
+}}
+
+'''Oculus Rift CV1''', also known simply as '''Oculus Rift''', is a [[virtual reality headset]] developed by [[Oculus VR]], a subsidiary of [[Meta Platforms, Inc]]. It was announced on January 2016,<ref>{{cite web|url=https://www.businessinsider.com/oculus-rift-price-release-date-announced-2016-1|title=Facebook's Oculus Rift VR headset costs $600|publisher=Business Insider}}</ref> and released in March the same year. The device constituted the first commercial release in the [[Oculus Rift]] lineup. 
+
+Production of the CV1 concluded in March 2019, being succeeded by the [[Oculus Rift S]]. Meta have stated that they will continue to provide software support to the CV1 "for the foreseeable future".<ref name=":4">{{Cite web|url=https://uploadvr.com/original-oculus-rift-future/|title=Original Oculus Rift Will Be Supported 'For The Foreseeable Future'|date=2019-03-20|website=UploadVR|language=en-US|access-date=2019-03-25}}</ref>
+
+==History==
+After the DK1 and DK2 prototypes, Oculus VR finally announced on May 6, 2015, that the consumer version of the Rift would ship in the first quarter of 2016 with pre-orders starting on January 6, 2016, at 8 am PST.<ref>{{cite web|title=First Look at the Rift, Shipping Q1 2016|url=https://www.oculus.com/en-us/blog/first-look-at-the-rift-shipping-q1-2016/|website=oculus.com|date=May 6, 2015}}</ref>
+
+On January 5, 2016, the day before pre-orders went live, in an update posted to the original Kickstarter page, it was announced that all Kickstarter backers who pledged for a Rift development kit would get a free KickStarter Edition Oculus Rift.<ref>{{Cite web|url=https://www.kickstarter.com/projects/1523379957/oculus-rift-step-into-the-game/posts/1458224|title=Update 82: Thank you from Oculus · Oculus Rift: Step Into the Game|website=Kickstarter|language=en|access-date=2019-03-21}}</ref>
+
+On January 6, 2016, pre-orders started, at $599.99.<ref>{{cite web|url=https://www.oculus.com/en-us/rift/|title=Oculus Rift - Oculus|work=Oculus.com|access-date=11 March 2017}}</ref> At the same time, the shipment date was announced for March 28, 2016.<ref>{{cite web|url=https://www.oculus.com/en-us/blog/oculus-rift-pre-orders-now-open-first-shipments-march-28/|title=Blog — Oculus Rift Pre-Orders Now Open, First Shipments March 28|work=Oculus.com|access-date=11 March 2017}}</ref> On January 16, 2016, shipping dates for new orders of the Rift were delayed until July 2016 due to the number of pre-orders on day 1.
+
+On March 25, 2016, the first batch of Oculus Rift virtual reality headsets began shipping to consumers.<ref>{{cite web|url=http://www.gamewatcher.com/news/2016-25-03-oculus-rift-vr-headset-starts-shipping-to-customers|title=Oculus Rift VR headset starts shipping to customers|last=Falcon|first=Jonah|publisher=GameWatcher|date=March 25, 2016|access-date=March 25, 2016}}</ref> On April 12, 2016, customers were notified that their shipments were pushed back due to early component shortage. The dates varied between 3 and 8 weeks of delay in regards to previous estimates.
+
+In March 2019, shortly before the Rift S was announced, the original Rift started disappearing from physical third-party stores, making it available only via the official Facebook listing.<ref>{{Cite web|url=https://uploadvr.com/oculus-rift-stock-sold-out-online/|title=Oculus Rift Sold Out In Stores, Only Available From Facebook|date=2019-03-15|website=UploadVR|language=en-US|access-date=2019-03-25}}</ref> Then, during the announcement, it was said that the Rift S would replace the original Rift. Shortly afterwards, most sellers stopped replenishing their Rift stock.<ref>{{Cite web|url=https://www.theverge.com/2019/3/20/18273327/oculus-rift-available-out-of-stock-amazon-bestbuy-newegg|title=The Oculus Rift is out of stock almost everywhere, still shipping "while supplies last"|last=Robertson|first=Adi|date=2019-03-20|website=The Verge|access-date=2019-03-25}}</ref>
+
+In March 2019, Oculus VR stated that they planned to support the original Rift with software updates for "the foreseeable future."<ref name=":4"/>
+{{clear}}
+
+==Hardware==
+[[File:Oculus-Rift-CV1-Headset-Back.jpg|thumb|Oculus Rift headset's backside, showing its lenses]]
+The CV1 is an improved version of the Crescent Bay Prototype, featuring per-eye displays running at 90&nbsp;Hz with a higher combined resolution than DK2, 360-degree positional tracking, integrated audio, a vastly increased positional tracking volume, and a heavy focus on consumer ergonomics and aesthetics.<ref>{{cite web|url=https://www.oculus.com/en-us/blog/first-look-at-the-rift-shipping-q1-2016/ |title=Blog — First Look at the Rift, Shipping Q1 2016 &#124; Oculus - Oculus VR |publisher=Oculus |access-date=July 17, 2015}}</ref>
+
+===Displays===
+The device features two [[Pentile]] [[Organic light-emitting diode|OLED]] displays, 1080×1200 resolution per eye, a 90&nbsp;Hz refresh rate, and a 110° field of view.<ref name="oculus.com">{{cite web|last1=Binstock|first1=Atman|title=Powering the Rift|url=https://www.oculus.com/en-us/blog/powering-the-rift/|website=oculus.com|date=May 15, 2015}}</ref><ref name="riftDT">{{cite web|url=https://www.digitaltrends.com/virtual-reality/oculus-rift-vs-htc-vive/|title=Oculus Rift vs. HTC Vive - Spec Comparison|author=Digital Trends Staff|date=29 February 2016|publisher=Digital Trends|access-date=16 March 2016}}</ref><ref name="ars_review">{{cite web|last1=Orland|first1=Kyle|title=The Ars review: Oculus Rift expands PC gaming past the monitor's edge|url=https://arstechnica.com/gaming/2016/03/the-ars-review-oculus-rift-expands-pc-gaming-past-the-monitors-edge/|website=Ars Technica|access-date=29 March 2016|date=2016-03-28}}</ref> The separation of the lenses is adjustable by a slider on the bottom of the device, in order to accommodate a wide range of [[interpupillary distance]]s. The fresnel lenses are not interchangeable; however, there are multiple facial interfaces so that the device can be positioned at different distances from the user's eyes. This also allows for users wearing glasses to use the Rift, as well as users with widely varying facial shapes.
+
+===Audio===
+The Rift CV1 features integrated headphones that provide real-time [[3D audio effect]]s. This was developed from technology licensed from RealSpace 3D Audio, by Visisonics.<ref>{{cite news |title=VisiSonics' RealSpace 3D Audio Software Licensed by Oculus for Virtual Reality |url=https://www.prnewswire.com/news-releases/visisonics-realspace-3d-audio-software-licensed-by-oculus-for-virtual-reality-278413231.html |access-date=23 November 2020 |work=www.prnewswire.com |date=7 October 2014 |language=en}}</ref> The headphones are user-replaceable, with Oculus and other manufactures such as [[JBL]] providing aftermarket audio accessories. The CV1 was struck by a design flaw by which the headphones lost sound on either side, after a cable running through the headband at the back of the headset was severed from regular use. In light of this issue, [[Palmer Luckey]] announced a campaign by which he was meant to ship a free custom made solution for this flaw to affected users, but the announcement never materialized.<ref>{{cite web|url=https://www.slashgear.com/palmer-luckey-offers-free-oculus-rift-repair-kit-for-audio-problems-18566213/|title=Palmer Luckey offers free Oculus Rift repair kit for audio problems}}</ref>
+
+===Constellation===
+[[File:Oculus-Rift-CV1-Sensor-wStand.jpg|thumb|Oculus Rift Constellation sensor]]
+Constellation is the headset's rotational and [[positional tracking]] system, used to track the position of the user's head as well as other VR devices,<ref name=Constellation>{{cite web|url=http://vrfocus.com/archives/17005/palmer-luckey-explains-oculus-rifts-constellation-tracking-and-fabric/|title=Palmer Luckey Explains Oculus Rift's Constellation Tracking and Fabric - VRFocus|work=VRFocus|access-date=June 17, 2015}}</ref> with low latency, and sub-millimeter accuracy.<ref name="ReferenceA"/> The system consists of external infrared tracking sensors that optically track specially designed VR devices. This provides the Rift with full [[Degrees of freedom (mechanics)#Six degrees of freedom (6 DoF)|6 degree of freedom]] rotational and positional tracking.
+
+The Rift, or any other device being tracked by the system, is fitted with a series of precisely positioned infrared LEDs under or above the surface, set to blink in a specific pattern. By knowing the configuration of the LEDs on the objects and their pattern, the system can determine the precise position of the device with sub-millimeter accuracy and near-zero latency.<ref name=Constellation/> The system then includes one or more USB stationary infrared sensors that originally come with a stand in a desk lamp form factor, but standard screw holes allow for the stand to be removed and the sensor to be mounted anywhere the user sees fit. The sensors normally sit on the user's desk, creating a 3D space that allows the user to use the device while sitting, standing, walking, or even jumping around the room.<ref name="ReferenceA">{{cite web|title=The Oculus Rift, Oculus Touch, and VR Games at E3|url=https://www.oculus.com/en-us/blog/the-oculus-rift-oculus-touch-and-vr-games-at-e3/|website=oculus.com|date=June 11, 2015}}</ref>
+
+In its initial presentation, before the Touch controllers were released, the system was only used to track the [[head-mounted display]], and a single sensor was included with the device, which was sufficient there being no chance of the user's hands blocking the headset from it. When the Touch controllers were released, two-sensor setups became the baseline, in order to guarantee proper tracking of the headset and controllers.<ref>{{cite web|url=http://uploadvr.com/oculus-rift-room-scale/|title=Room scale rifting. Oculus rift positional tracking with Touch|work=Virtual Reality & Oculus News and Events|access-date=June 17, 2015}}</ref> For "room scale" virtual reality, three or more sensors are required. When the controllers were sold separately, a second sensor was included. Later, the standard Rift bundle was updated to include the controllers and additional sensor. Additional sensors, placed behind the user, allow for 360º rotation without the sensors being occluded by the user them self. Three- and four-sensor configurations become the standard for this scenario.
+
+===Controllers===
+[[File:Oculus-Rift-Touch-Controllers-Pair.jpg|thumb|Oculus Touch controllers]]
+[[File:Oculus-Rift-CV1-Remote.jpg|thumb|The Oculus Remote, included with the first shipments of the Rift CV1, up until the introduction of the Oculus Touch controllers.]]
+
+As a result of a partnership with [[Microsoft]], early Oculus Rift units were bundled with an [[Xbox One controller]],<ref>{{cite web|author=Stuart Dredge |url=https://www.theguardian.com/technology/live/2015/jun/11/liveblog-facebook-oculus-vr-rift-e3 |title=Oculus Rift virtual reality headset to ship with Xbox One controller |work=The Guardian |date=June 11, 2015 |access-date=July 17, 2015}}</ref> being what the majority of virtual reality games used at that point, when motion controllers weren't available yet.<ref>{{cite web|author=Elizabeth Bogart |url=http://uploadvr.com/palmer-luckey-speaks-candidly-about-xbox-one-controllers-being-bundled-with-the-rift/ |title=Palmer Luckey Speaks Candidly About Xbox One Controllers Being Bundled with the Rift - Virtual Reality & Oculus News and Events |publisher=Uploadvr.com |date=June 12, 2015 |access-date=July 17, 2015}}</ref>
+
+Also included with the bundle was the Oculus Remote, a wireless remote that provided basic navigation functionality. It included four directional inputs, a touch-sensitive disc, Enter and Back buttons, volume up/down, and an Oculus button.<ref>{{cite web|url=https://www.vrfocus.com/2017/07/a-guide-to-the-oculus-remote-for-oculus-rift/|title=A Guide to the Oculus Remote for Oculus Rift|publisher=VRFocus.com}}</ref>
+
+In December 2016,<ref>{{cite web|url=https://www.ign.com/articles/2016/10/06/oculus-touch-price-release-date-announced|title=OCULUS TOUCH PRICE, RELEASE DATE ANNOUNCED|date=2016-10-06}}</ref> the [[Oculus Touch]] motion controllers were released. Initially released as a standalone accessory for the Rift, pre-orders for Oculus Touch began on October 10, 2016, with priority granted until October 27 to those who had originally pre-ordered Oculus Rift,<ref>{{cite web|url=http://www.gamespot.com/articles/oculus-touch-controllers-cost-200-release-date-ann/1100-6444265/|title=Oculus Touch Controllers Cost $200, Release Date Announced|first=Eddie|last=Makuch|work=[[GameSpot]]|date=6 October 2016|access-date=11 December 2016}}</ref> and they were finally released on December 6, 2016.<ref>{{cite web|url=https://www.oculus.com/blog/oculus-touch-launches-today/|title=Oculus Touch Launches Today!|publisher=Oculus VR|date=2016-12-06}}</ref>
+
+In August 2017, the standard Rift bundle was modified, dropping the Oculus Remote and Xbox One controller in favor of the Oculus Touch, and adding a second tracking sensor.
+
+== Rift for Business==
+During Oculus Connect in June 2017, Oculus VR announced and released their Oculus Rift for Business bundle for 900 USD, which included the Rift CV1 HMD, Oculus Touch controllers, three Constellation sensors, an Oculus remote, and three Rift Fits (the name given to the piece that cushions the device onto the user's face). The bundle also includes an expanded warranty, preferential customer service, and commercial use license.<ref>{{Cite news|url=https://www.theverge.com/2017/10/11/16459492/oculus-vr-rift-headset-business-bundle|title=Oculus is now selling its Rift headset to businesses with a new bundle|work=The Verge|access-date=2017-12-19}}</ref><ref>{{Cite news|url=https://www.oculus.com/blog/announcing-oculus-for-business-bringing-vr-into-the-workplace/|title=Announcing Oculus for Business: Bringing VR into the Workplace|last=VR|first=Oculus|access-date=2017-12-19|language=en}}</ref>
+
+==References==
+{{reflist|refs=
+
+<ref name="cnbc-superdata-july-2019">{{cite web |last1=Rodriguez |first1=Salvador |title=Facebook will never break through with Oculus, says one of the VR company's co-founders |url=https://www.cnbc.com/2019/07/12/facebook-oculus-will-never-break-through-co-founder-jack-mccauley.html |website=CNBC |publisher=CNBC LLC |access-date=9 August 2019 |archive-url=https://web.archive.org/web/20190809064224/https://www.cnbc.com/2019/07/12/facebook-oculus-will-never-break-through-co-founder-jack-mccauley.html |archive-date=9 August 2019 |url-status=live |date=14 July 2019}}</ref>
+
+}}
+
+==External links==
+* [https://www.oculus.com/rift/ Official site]
+
+{{Mixed reality}}
+{{Facebook navbox}}
+
+[[Category:Products introduced in 2016]]
+[[Category:Virtual reality headsets]]
+[[Category:Oculus Rift]]
+[[Category:American inventions]]
+[[Category:Wearable devices]]

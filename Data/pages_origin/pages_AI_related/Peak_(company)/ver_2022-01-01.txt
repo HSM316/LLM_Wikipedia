@@ -1,0 +1,84 @@
+{{UDP|date=April 2020}}
+{{Infobox company
+| name = Peak
+| logo = [[File:Logo_for_Peak_(company).jpg]]
+| logo_size = 
+| logo_padding = 
+| logo_alt = 
+| logo_caption = 
+| image = 
+| image_size = 
+| image_alt = 
+| image_caption = 
+| trading_name = 
+| native_name = 
+| native_name_lang = <!-- Use ISO 639-1 code, e.g. "fr" for French. For multiple names in different languages, use {{Lang|[code]|[name]}}. -->
+| romanized_name = 
+| former_name = 
+| type = Privately held company
+| traded_as = 
+| ISIN = 
+| industry = Decision Intelligence
+| genre = 
+| fate = 
+| predecessor = <!-- or: | predecessors = -->
+| successor = <!-- or: | successors = -->
+| founded = 2014 in [[Manchester]], [[United Kingdom]]
+| founder = {{Unbulleted list|Richard Potter|David Leitch|Atul Sharma}}
+| defunct = <!-- {{End date|YYYY|MM|DD}} -->
+| hq_location = 
+| hq_location_city = [[Manchester]]
+| hq_location_country = United Kingdom
+| num_locations = 3
+| num_locations_year = <!-- Year of num_locations data (if known) -->
+| area_served = <!-- or: | areas_served = -->
+| key_people = 
+| products = 
+| brands = 
+| production = 
+| production_year = <!-- Year of production data (if known) -->
+| services = 
+| revenue = 
+| revenue_year = <!-- Year of revenue data (if known) -->
+| operating_income = 
+| income_year = <!-- Year of operating_income data (if known) -->
+| net_income = <!-- or: | profit = -->
+| net_income_year = <!-- or: | profit_year = --><!-- Year of net_income/profit data (if known) -->
+| aum = <!-- Only for financial-service companies -->
+| assets = 
+| assets_year = <!-- Year of assets data (if known) -->
+| equity = 
+| equity_year = <!-- Year of equity data (if known) -->
+| owner = <!-- or: | owners = -->
+| members = 
+| members_year = <!-- Year of members data (if known) -->
+| num_employees = 
+| num_employees_year = <!-- Year of num_employees data (if known) -->
+| parent = 
+| divisions = 
+| subsid = 
+| module = <!-- Used to embed other templates -->
+| ratio = <!-- Basel III ratio, for BANKS ONLY -->
+| rating = <!-- credit rating, for BANKS ONLY -->
+| website = {{URL|peak.ai}}
+| footnotes = 
+| ISIN2 = 
+}}
+
+'''Peak''' is a [[Decision intelligence|Decision Intelligence]] company headquartered in [[Manchester]], [[United Kingdom|UK]].<ref>{{cite web |last=Chapman |first=Stephen |url=https://www.prolificnorth.co.uk/news/digital/2018/02/artificial-intelligence-company-takes-top-floor-£8m-manchester-development |title=Artificial Intelligence company takes top floor of £8m Manchester development |work=Prolific North |date=22 February 2018}}</ref> It was founded in December 2014<ref>{{cite web|url=https://technorthhq.com/business/northern-stars-richard-potter-peak-bi/|title=Northern Stars: Interview with Richard Potter (Peak)|date=22 October 2015|publisher=Tech Nation}}</ref> and has additional offices in [[Jaipur]], [[India]], and [[Edinburgh]], [[Scotland]]. It is known for its Decision Intelligence platform, a [[Software_as_a_Service|SaaS]] platform that invokes AI workflows upon ingested data and exposes the results via [[Application_programming_interface|APIs]] and built-in UI functionality, as well as abstracting the underlying [[Cloud_computing|cloud infrastructure]].<ref>{{cite web|url=https://venturebeat.com/2020/04/23/peak-ai-raises-12-million-to-bolster-enterprise-ai-adoption/|title=Peak.AI raises $12 million to bolster enterprise AI adoption|first=Kyle|last=Wiggers|date=2020-04-23|website=VentureBeat|access-date=2020-05-04}}</ref>
+
+== History ==
+
+The company was founded by CEO Richard Potter, David Leitch and Atul Sharma.<ref>{{cite web|url=https://www.manchestereveningnews.co.uk/business/business-news/data-analytics-company-formed-pub-13607095|title=Data analytics company formed in pub secures £2.5m funding|first=Lucy|last=Roue|date=12 September 2017|publisher=}}</ref> In 2015, Peak was one of the winners of the Tech North Northern Stars competition.<ref>{{cite web|url=https://technorthhq.com/business/northern-stars-grand-final/|title=Northern Stars Grand Final 201|date=4 December 2015|publisher=Tech Nation}}</ref> In 2017, it secured £2.5 million in [[Series A round|Series A capital funding]] from [[MMC Ventures]]<ref>{{Cite web|url=https://medium.com/mmc-writes/mmcs-investment-in-peak-57e11e345819|title=MMC's investment in Peak|last=Coker|first=Jon|date=2017-09-11|website=MMC writes|access-date=2018-04-09}}</ref> for investment in [[machine learning]] and [[artificial intelligence]] technologies<ref>{{cite web |last=Austin |first=Simon |url=https://www.prolificnorth.co.uk/digital/2017/09/manchester-data-analytics-firm-peak-secures-£25m-funding |title=Manchester data analytics firm Peak secures £2.5m funding |work=Prolific North |date=11 September 2017}}</ref> and was named as one of the top five startups in Manchester by [[Wired (magazine)|''Wired'' magazine]].<ref>{{Cite news|url=https://www.wired.co.uk/article/startup-city-manchester|title=Startup Cities: Manchester|last=Volpicelli|first=Gian|work=Wired|access-date=2018-04-09}}</ref> In 2018, it was chosen to work as part of [[Arsenal F.C.]]'s Innovation Lab<ref>{{cite web|url=https://www.prolificnorth.co.uk/news/digital/2018/01/peak-signed-arsenal-innovation-lab|title=Peak signed up for Arsenal Innovation Lab|date=17 January 2018|publisher=}}</ref> and it was one of the 37 fastest growing technology companies in the UK selected to join the [[East London Tech City|Tech City UK]] Upscale programme.<ref>{{Cite news|url=https://www.techcityuk.com/blog/2018/01/37-of-the-uks-fastest-growing-tech-companies-join-upscale-2018/|title=37 of the UK's fastest growing Tech Companies join Upscale 2018|date=2018-01-25|work=Tech City UK|access-date=2018-04-09|language=en-US}}</ref>
+
+In April 2020, the company raised $12 million in extended series A funding, required for sustaining its growth, commercial expansion, and R&D efforts.<ref>{{cite web|url=https://venturebeat.com/2020/04/23/peak-ai-raises-12-million-to-bolster-enterprise-ai-adoption/|title=Peak.AI raises $12 million to bolster enterprise AI adoption|first=Kyle|last=Wiggers|date=2020-04-23|website=VentureBeat|access-date=2020-05-04}}</ref> In February 2021, Peak announced a $21 million Series B funding round – led by investors Oxx, Praetura Ventures, MMC Ventures and Arete – to further make AI accessible to non-tech companies.<ref>{{cite web|url=https://techcrunch.com/2021/02/17/peak-ai-nabs-21m-for-a-platform-to-help-non-tech-companies-make-ai-based-decisions/|title=Peak AI nabs $21M for a platform to help non-tech companies make AI-based decisions|first=Ingrid|last=Lunden|date=2021-02-18|website=TechCrunch|access-date=2021-02-17}}</ref> In August 2021, Peak announced a $75 million Series C funding round, led by SoftBank Vision Fund 2.<ref>{{Cite web|title=Peak raises $75M for a platform that helps non-tech companies build AI applications|url=https://social.techcrunch.com/2021/08/31/peak-raises-75m-for-a-platform-that-helps-non-tech-companies-build-ai-applications/|access-date=2021-11-03|website=TechCrunch|language=en-US}}</ref>
+
+== References ==
+{{reflist}}
+
+[[Category:Companies based in Manchester]]
+[[Category:Data]]
+[[Category:Artificial intelligence]]
+[[Category:Privately held companies of England]]
+[[Category:British companies established in 2014]]
+[[Category:2014 establishments in England]]

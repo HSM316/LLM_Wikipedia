@@ -1,0 +1,84 @@
+{{short description|2015 artificial intelligence warning}}
+{{Infobox document
+| document_name        = Research Priorities for Robust and Beneficial Artificial Intelligence: An Open Letter
+| image                = 
+| image_size           = 
+| image_alt            = 
+| caption              = 
+| image2               = 
+| image2_size          = 
+| image2_alt           = 
+| caption2             = 
+| orig_lang_code       = 
+| title_orig           = 
+| date_created         = January 2015
+| date_presented       = 
+| date_ratified        = 
+| date_effective       = 
+| date_repeal          = 
+| location_of_document = 
+| commissioned         = 
+| writer               = [[Stephen Hawking]], [[Elon Musk]], and dozens of [[artificial intelligence]] experts
+| signers              = 
+| media_type           = 
+| subject              =  research on the societal impacts of AI
+| purpose              = 
+| wikisource           = 
+| wikisource1          = 
+| wikisource2          = 
+| wikisource3          = 
+| wikisource4          = 
+| wikisource5          = 
+
+}}
+In January 2015, [[Stephen Hawking]], [[Elon Musk]], and dozens of [[artificial intelligence]] experts<ref name=telegraph>{{cite news|last1=Sparkes|first1=Matthew|title=Top scientists call for caution over artificial intelligence|url=https://www.telegraph.co.uk/technology/news/11342200/Top-scientists-call-for-caution-over-artificial-intelligence.html|access-date=24 April 2015|work=[[The Daily Telegraph|The Telegraph (UK)]]|date=13 January 2015}}</ref> signed an '''open letter on artificial intelligence'''<ref>{{Cite web |date=2015-11-02 |title=FLI - Future of Life Institute {{!}} AI Open Letter |url=http://futureoflife.org/ai-open-letter/ |access-date=2024-07-09 |archive-url=https://web.archive.org/web/20151102025442/http://futureoflife.org/ai-open-letter/ |archive-date=2015-11-02 }}</ref> calling for research on the societal impacts of AI. The letter affirmed that society can reap great potential benefits from artificial intelligence, but called for concrete research on how to prevent certain potential "pitfalls": artificial intelligence has the potential to eradicate disease and poverty, but researchers must not create [[AI safety|something which is unsafe]] or [[AI control problem|uncontrollable]].<ref name=telegraph /> The four-paragraph letter, titled "'''Research Priorities for Robust and Beneficial Artificial Intelligence: An Open Letter'''", lays out detailed research priorities in an accompanying twelve-page document.<ref>{{Cite web |last1=Russell |first1=Stuart |last2=Dewey |first2=Daniel |last3=Tegmar |first3=Max |date=2015-01-23 |title=Research priorities for robust and beneficial artificial intelligence |url=http://futureoflife.org/data/documents/research_priorities.pdf |archive-url=https://web.archive.org/web/20151201084116/http://futureoflife.org/data/documents/research_priorities.pdf |archive-date=2015-12-01 |url-status=live}}</ref>
+
+== Background ==
+
+By 2014, both physicist Stephen Hawking and business magnate Elon Musk had publicly voiced the opinion that [[superintelligence|superhuman artificial intelligence]] could provide incalculable benefits, but could also [[existential risk from artificial general intelligence|end the human race]] if deployed incautiously. At the time, Hawking and Musk both sat on the scientific advisory board for the [[Future of Life Institute]], an organisation working to "mitigate existential risks facing humanity". The institute drafted an open letter directed to the broader AI research community,<ref name=cbc>{{cite news|last1=Chung|first1=Emily|title=AI must turn focus to safety, Stephen Hawking and other researchers say|url=https://www.cbc.ca/amp/1.2899067|access-date=24 April 2015|work=[[Canadian Broadcasting Corporation]]|date=13 January 2015}}</ref> and circulated it to the attendees of its first conference in Puerto Rico during the first weekend of 2015.<ref>{{cite news|last1=McMillan|first1=Robert|title=AI Has Arrived, and That Really Worries the World's Brightest Minds|url=https://www.wired.com/2015/01/ai-arrived-really-worries-worlds-brightest-minds/|access-date=24 April 2015|work=[[Wired (website)|Wired]]|date=16 January 2015}}</ref> The letter was made public on January 12.<ref name=bloomberg>{{cite news|author1=Dina Bass|author2=Jack Clark|title=Is Elon Musk Right About AI? Researchers Don't Think So|url=https://www.bloomberg.com/news/articles/2015-02-04/is-elon-musk-right-about-ai-researchers-don-t-think-so|access-date=24 April 2015|work=[[Bloomberg Business]]|date=4 February 2015}}</ref>
+
+== Purpose ==
+
+The letter highlights both the positive and negative effects of artificial intelligence.<ref>{{cite news|last1=Bradshaw|first1=Tim|title=Scientists and investors warn on AI|url=http://www.ft.com/intl/cms/s/0/3d2c2f12-99e9-11e4-93c1-00144feabdc0.html|access-date=24 April 2015|work=[[The Financial Times]]|date=12 January 2015|quote=Rather than fear-mongering, the letter is careful to highlight both the positive and negative effects of artificial intelligence.}}</ref> According to [[Bloomberg Business]], Professor [[Max Tegmark]] of [[MIT]] circulated the letter in order to find common ground between signatories who consider super intelligent AI a significant [[existential risk]], and signatories such as Professor [[Oren Etzioni]], who believe the AI field was being "impugned" by a one-sided media focus on the alleged risks.<ref name=bloomberg /> The letter contends that:
+
+<blockquote>The potential benefits (of AI) are huge, since everything that civilization has to offer is a product of human intelligence; we cannot predict what we might achieve when this intelligence is magnified by the tools AI may provide, but the eradication of disease and poverty are not unfathomable. Because of the great potential of AI, it is important to research how to reap its benefits while avoiding potential pitfalls.<ref>{{cite web|title=Research Priorities for Robust and Beneficial Artificial Intelligence: an Open Letter|url=http://futureoflife.org/misc/open_letter|publisher=[[Future of Life Institute]]|access-date=24 April 2015}}</ref></blockquote>
+
+One of the signatories, Professor [[Bart Selman]] of [[Cornell University]], said the purpose is to get AI researchers and developers to pay more attention to AI safety. In addition, for policymakers and the general public, the letter is meant to be informative but not alarmist.<ref name=cbc /> Another signatory, Professor [[Francesca Rossi]], stated that "I think it's very important that everybody knows that AI researchers are seriously thinking about these concerns and ethical issues".<ref>{{cite news|title=Big science names sign open letter detailing AI danger|url=https://www.newscientist.com/article/mg22530044.000-big-science-names-sign-open-letter-detailing-ai-danger.html|access-date=24 April 2015|work=[[New Scientist]]|date=14 January 2015}}</ref>
+
+== Concerns raised by the letter ==
+
+The signatories ask: How can engineers create AI systems that are beneficial to society, and that are robust? Humans need to [[AI control problem|remain in control of AI]]; our AI systems must "do what we want them to do".<ref name=telegraph /> The required research is interdisciplinary, drawing from areas ranging from economics and law to various branches of [[computer science]], such as computer security and [[formal verification]]. Challenges that arise are divided into verification ("Did I build the system right?"), validity ("Did I build the right system?"), security, and control ("OK, I built the system wrong, can I fix it?").<ref name="document attached to open letter">{{cite web|title=Research priorities for robust and beneficial artificial intelligence|url=http://futureoflife.org/static/data/documents/research_priorities.pdf|publisher=[[Future of Life Institute]]|access-date=24 April 2015|date=23 January 2015}}</ref>
+
+=== Short-term concerns ===
+
+{{Further|Machine ethics}}
+
+Some near-term concerns relate to autonomous vehicles, from civilian drones and [[self-driving car]]s. For example, a self-driving car may, in an emergency, have to decide between a small risk of a major accident and a large probability of a small accident. Other concerns relate to lethal intelligent autonomous weapons: Should they be banned? If so, how should 'autonomy' be precisely defined? If not, how should culpability for any misuse or malfunction be apportioned?
+
+Other issues include privacy concerns as AI becomes increasingly able to interpret large surveillance datasets, and how to best manage the economic impact of jobs displaced by AI.<ref name=cbc />
+
+=== Long-term concerns ===
+
+{{Further|Existential risk from artificial general intelligence|Superintelligence}}
+
+The document closes by echoing [[Microsoft]] research director [[Eric Horvitz]]'s concerns that:
+
+<blockquote>we could one day lose control of AI systems via the rise of superintelligences that do not act in accordance with human wishes &ndash; and that such powerful systems would threaten humanity. Are such dystopic outcomes possible? If so, how might these situations arise? ... What kind of investments in research should be made to better understand and to address the possibility of the rise of a dangerous superintelligence or the occurrence of an "intelligence explosion"?</blockquote>
+
+Existing tools for harnessing AI, such as reinforcement learning and simple utility functions, are inadequate to solve this; therefore more research is necessary to find and validate a robust solution to the "control problem".<ref name="document attached to open letter" />
+
+== Signatories ==
+
+Signatories include physicist [[Stephen Hawking]], business magnate [[Elon Musk]], the entrepreneurs behind [[DeepMind]] and [[Vicarious (company)|Vicarious]], [[Google]]'s director of research [[Peter Norvig]],<ref name=telegraph /> Professor [[Stuart J. Russell]] of the [[University of California, Berkeley]],<ref>{{cite news|last1=Wolchover|first1=Natalie|title=Concerns of an Artificial Intelligence Pioneer|url=https://www.quantamagazine.org/20150421-concerns-of-an-artificial-intelligence-pioneer/|access-date=24 April 2015|work=Quanta magazine|date=21 April 2015}}</ref> and other AI experts, robot makers, programmers, and ethicists.<ref>{{cite news|title=Experts pledge to rein in AI research|url=https://www.bbc.com/news/technology-30777834|access-date=24 April 2015|work=[[BBC News]]|date=12 January 2015}}</ref> The original signatory count was over 150 people,<ref>{{cite news|last1=Hern|first1=Alex|title=Experts including Elon Musk call for research to avoid AI 'pitfalls'|url=https://www.theguardian.com/technology/2015/jan/12/elon-musk-ai-artificial-intelligence-pitfalls|access-date=24 April 2015|work=[[The Guardian]]|date=12 January 2015}}</ref> including academics from Cambridge, Oxford, Stanford, Harvard, and MIT.<ref>{{cite news|last1=Griffin|first1=Andrew|title=Stephen Hawking, Elon Musk and others call for research to avoid dangers of artificial intelligence|url=https://www.independent.co.uk/life-style/gadgets-and-tech/news/stephen-hawking-elon-musk-and-others-call-for-research-to-avoid-dangers-of-artificial-intelligence-9972660.html |archive-url=https://ghostarchive.org/archive/20220524/https://www.independent.co.uk/life-style/gadgets-and-tech/news/stephen-hawking-elon-musk-and-others-call-for-research-to-avoid-dangers-of-artificial-intelligence-9972660.html |archive-date=2022-05-24 |url-access=subscription |url-status=live|access-date=24 April 2015|work=[[The Independent]]|date=12 January 2015}}</ref>
+
+== Notes ==
+{{Reflist|30em}}
+
+== External links ==
+* [https://futureoflife.org/2015/10/27/ai-open-letter/ Research Priorities for Robust and Beneficial Artificial Intelligence: An Open Letter]
+
+{{Existential risk from artificial intelligence}}
+
+[[Category:Open letters]]
+[[Category:Computing and society]]
+[[Category:Existential risk from artificial general intelligence]]

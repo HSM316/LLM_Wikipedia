@@ -1,0 +1,69 @@
+{{Notability|Products|date=August 2020}}
+{{Undisclosed paid|date=August 2020}}
+{{Infobox software
+| name                   = Predix (Predix Platform)
+| logo                   = Predix Logo.svg
+| logo size              = 270px
+| logo alt               = Predix Logo
+| screenshot             = <!-- Image name is enough -->
+| caption                = 
+| screenshot alt         = 
+| collapsible            = 
+| author                 = [[GE Digital]]
+| developer              = [[GE Digital]]
+| released               = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| discontinued           = 
+| latest release version = 
+| latest release date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| status                 = Active
+| programming language   = 
+| operating system       = 
+| platform               = 
+| size                   = 
+| language               = 
+| language count         = <!-- Number only -->
+| language footnote      = 
+| genre                  = 
+| license                = 
+| alexa                  = 
+| website                = {{URL|https://www.ge.com/digital/iiot-platform}}
+| standard               = 
+| AsOf                   = 
+}}
+
+'''Predix''', known as '''Predix Platform''' is an industrial [[Internet of things|IoT]] software platform from [[GE Digital]]. It provides secure edge-to-cloud [[Operational technology|OT]]/[[IT]] data connectivity, processing, analytics, and services to support industrial applications from GE Digital as well as those developed by customers or partners. The Platform has both [[Edge computing|edge]] and cloud components. Predix Cloud is hosted on [[AWS]].
+
+Predix Essentials is a packaged and pre-configured version of the Predix Platform intended to immediately support typical [[IIoT]] use cases such as condition-based monitoring without the need for software or application development.
+
+== Overview ==
+Predix Platform collects and transfers OT and IT data to the cloud by direct connector software or Predix Edge – an on-premises software product that also supports local analytics and applications processing. Predix Edge deployments can be managed at the local level and/or centrally from Predix Cloud.
+
+In addition to data ingestion, processing and storage, Predix Platform provides a flexible framework for operationalizing streaming and batch analytics processing using Spark, [[Hadoop]], [[Cloud Foundry]], and independently-managed runtimes. A variety of application microservices are offered via standard APIs, including advanced features such as asset modeling, alerting, cases, and policy (workflow) management. 
+
+Predix Essentials is a packaged and pre-configured version of the Predix Platform intended to immediately support typical IIoT use cases such as condition-based monitoring without the need for software or application development. The Predix Essentials User Console is a built-in end-user application which supports data visualization, analysis, dashboarding, case management, action tracking, and alert policy management and processing. 
+
+In November 2016, [[Forrester Research]] said GE Digital's Predix was one of eleven significant IoT packages.<ref>{{cite web|first=Michele|last=Pelino|url=https://www.forrester.com/report/The+Forrester+Wave+IoT+Software+Platforms+Q4+2016/-/E-RES136087 |title=IoT Software Platforms, Q4 2016 |publisher=[[Forrester Research]] |date=2016-11-15|quote=[W]e identified the 11 most significant IoT packages — Amazon Web Services (AWS), Ayla Networks, Cisco Jasper, Exosite, General Electric (GE), IBM, LogMeIn, Microsoft, PTC, SAP, and Zebra Technologies}}</ref>
+
+==See also==
+* [[Amazon Web Services]]
+* [[Cloud-Based Design and Manufacturing|Cloud-based design and manufacturing]]
+* [[Industrial control system]]
+* [[Industry 4.0]]
+* [[Microsoft Azure]]
+* [[Oracle Cloud]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{official website|ge.com/digital/iiot-platform}}
+
+{{Cloud computing}}
+
+[[Category:Big data products]]
+[[Category:Industrial automation]]
+[[Category:Industrial computing]]
+[[Category:Internet of things]]
+[[Category:Technology forecasting]]

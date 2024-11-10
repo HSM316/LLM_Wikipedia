@@ -1,0 +1,57 @@
+Intel RealSense Technology is a product range of depth and tracking technologies designed to give machines and devices depth perception capabilities. The technologies, owned by Intel are used in autonomous drones, robots, AR/VR, smart home devices amongst many others broad market products.
+
+The RealSense product is made of Vision Processors, Depth and Tracking Modules, and Depth Cameras, supported by an open source, cross-platform SDK, simplifying supporting cameras for third party software developers, system integrators, ODMs and OEMs.
+
+ Technology overview 
+Intel RealSense Group supports multiple depth and tracking technologies including Coded Light Depth, Stereo Depth and Positional Tracking.
+
+ Current Product range 
+
+In August 2021 Intel announced it is “winding down” its RealSense computer vision division to focus on its core businesses. Specifically the End of Life (EOL) of LiDAR L515, Facial Authentication (F455) and Tracking (T265) product lines have been announced. The majority of the Stereo Product Line is still available and new products have been released in the meantime.
+
+As of January 2018, new Intel RealSense D400 Product Family was launched with the Intel RealSense Vision Processor D4, Intel RealSense Depth Module D400 Series, and 2 ready to use depth cameras: Intel RealSense Depth Cameras D435 and D415.
+
+Previous generations of Intel RealSense depth cameras (F200, R200 and SR300) were implemented in multiple laptop and tablet computers by  Asus, HP, Dell, Lenovo, and Acer. Additionally, Razer and Creative offered consumer ready standalone webcams with the Intel RealSense camera built into the design.: Razer Stargazer and the Creative BlasterX Senz3D.
+
+ Product series 
+
+ Intel RealSense D400 Product Family 
+
+ Intel RealSense Vision Processor D4 Series 
+The Intel RealSense Vision Processor D4 series are vision processors based on 28 nanometer (nm) process technology to compute real-time stereo depth data. They utilise a depth algorithm that enables more accurate and longer range depth perception than previously available. There are two products in this family: RealSense Vision processor D4 and RealSense Vision Processor D4m.
+
+ Other products 
+The Intel RealSense Depth Module D400 Series is designed for easy integration to bring 3D into devices and machines. Intel also released the D415 and D435 in 2018.  Both cameras feature the RealSense Vision processor D4 and camera sensors.  They are supported by the cross-platform and open source Intel RealSense SDK 2.0. The Intel D415 is designed for more precise measurements.
+
+ Intel RealSense Depth Camera D435 
+The Intel RealSense Depth Camera D435 is ideal for capturing stereo depth in a variety of applications that help perceive the world in 3D.http://roscon.ros.org/2016/presentations/ROSCon2016_Intel_RealSense.pdf https://www.patreon.com/posts/intel-euclid-022-12444963Archived at Ghostarchive and the Wayback Machine: https://www.mouser.de/new/Intel/intel-euclid-dev-kit/https://imvc.co.il/Portals/38/Amit%20Moran.pdf https://www.intel.com/content/dam/support/us/en/documents/emerging-technologies/Euclid_User_Guide.pdf 
+
+ Previous Generations 
+
+ Intel RealSense 3D Camera (Front F200) 
+This is a stand-alone camera that can be attached to a desktop or laptop computer. It is intended to be used for natural gesture-based interaction, face recognition, immersive, video conferencing and collaboration, gaming and learning and 3D scanning. There was also version of this camera to be embedded into laptop computers.
+
+ Intel RealSense Snapshot 
+Snapshot is a camera intended to be built into tablet computers and possibly smartphones. Its intended uses include taking photographs and performing after the fact refocusing, distance measurements, and applying motion photo filters. The refocus feature differs from a plenoptic camera in that RealSense Snapshot takes pictures with large depth of field so that initially the whole picture is in focus and then in software it selectively blurs parts of the image depending on their distance. The Dell Venue 8 7000 Series Android tablet is equipped with this camera.
+
+ Intel RealSense 3D Camera (Rear R200) 
+Rear-mounted camera for Microsoft Surface or a similar tablet, like the HP Spectre X2. This camera is intended for augmented reality applications, content creation, and object scanning. Its depth accuracy is on the order of millimeters and its range is up to 6.0 meters. The R200 is a stereo camera and is able to obtain accurate depth outdoors as well as indoors.
+
+ App Challenge 
+To address the lack of applications built on the RealSense platform and to promote the platform among software developers, in 2014 Intel organized the Intel RealSense App Challenge. The winners were awarded large sums of money.
+
+Reception
+In an early preview article in 2015, PC Worlds Mark Hachman concluded that RealSense is an enabling technology that will be largely defined by the software that will take advantage of its features. He noted that as of the time the article was written, the technology was new and there was no such software.
+
+ Product Technical Specifications 
+
+Specifications: Intel RealSense Depth Camera D415, D435 and D455 
+D415D435D455Use EnvironmentIndoor/OutdoorDepth TechnologyActive  infrared (IR) stereoIR Projector & Left/Right Camera TypeStandardWideShutter TypeRollingGlobalImage Sensor ModuleOV2740 (OV02740-H34A-Z)OV9782 (OV09782-GA4A)Image Sensor TechnologyPureCel HDROmniPixel3-GSImage Sensor Size1⁄6 inch, 3855 µm × 2919 µm1⁄4 inch, 3896 µm × 2453 µmImage Sensor Pixel Size1.4 µm × 1.4 µm3 µm × 3 µmVision Processor BoardRealSense Vision Processor D4Depth Sensor ModuleRealSense Module D415 RealSense Module D430 + RGB CameraRealSense Module D450Depth Field of View for HD H:65°±2 V:40°±1 D:72°±2H:87°±3 V:58°±1 D:95°±3Depth Field of View for VGA H:50°±2 V:40°±1 D:61°±2H:75°±3 V:62°±1 D:89°±3Depth Resolution and FramerateUp to 1280px × 720px @ 90fpsMinimum Depth Distance at Maximum Resolution45 cm / 17.7"28 cm / 11.0"52 cm / 20.5"Depth Accuracy<2% at 2.0m / 2.2yd<2% at 4.0m / 4.4ydIdeal and Maximum Range 0.5m to 3m / 0.6yd to 3.3yd0.3m to 3m / 0.3yd to 3.3yd0.6m to 6m / 0.3yd to 6.6ydRGB Resolution, Framerate and Aspect Ratio1920px × 1080px @ 30fps (16:9) 1280px × 800px @ 30fps (8:5)RGB Field of View H:69.4° V:42.5° D:77.0°H:91.2° V:65.5° D:100.6°RGB Lens Distortion ≤1.5%Device Dimensions99mm × 20mm × 23mm 90mm × 25mm × 25mm 124mm × 26mm × 29mmConnectorUSB Type-C 3.1 Gen 1Mounting MechanismsOne 1/4-20UNC thread mounting pointTwo M3 thread mounting points Two M4 thread mounting points
+
+Specifications: Intel RealSense Vision Processor D4 Series 
+(Not available separately as these are just the bare PCB Vision Processor boards, only used as basis for the RealSense Depth Camera series)
+RealSense Vision Processor D4 RealSense Vision Processor D4MDepth TechnologyStereoStereoForm FactorASIC BGAASIC BGAPackage Size 6.4mm x 6.4mm x 1mm4.7mm x 3.8mm x 0.55mmProcess Technology 28 nm28 nmDepth Max Throughput 36.6 MP/sec (848×480@90fps)Depth Stream Output Resolution Up to 1280×720Up to 720×720Depth Stream Output Frame RateUp to 90fpsRGB Sensor Max Resolution & Max Frame Rate  1920×1080, Up to 60fps720×720, Up to 30 fpsIR Projector Controls Yes YesHost Interface USB 3.0 2x MIPIMulti Camera Support Yes, up to 5 Up to 30fpsI/O5x MIPI CSI-2, 5x I2C, 1x SPI, GPIO, Timer2x MIPI 1x I2C, 1x SPI, GPIO, Timer
+
+Specifications: Intel Stereo DepthModule SKUs 
+(Not available separately as these are just the bare PCB Depth Sensor Modules, only used as basis for the RealSense Depth Camera series)
+D400D410D415D420D430Depth technologyPassive IR StereoActive IR Stereo Active IR Stereo Passive IR StereoActive IR Stereo Image Sensor  technologyRolling ShutterRolling ShutterRolling ShutterGlobal ShutterGlobal ShutterDepth FOV (HxV  for HD 16:9) 63.4degx 40.4deg63.4degx 40.4deg63.4degx 40.4deg85.2degx 58deg85.2degx 58degRGB Frame Rate  and Resolution--Up to 60FPS --Depth ResolutionUp to 1280x720Up to 1280x720Up to 1280x720Up to 1280x720Up to 1280x720Depth Frame RateUp to 90fpsUp to 90fpsUp to 90fpsUp to 90fpsUp to 90fpsRange0.16-10m+0.16-10m+0.16-10m+0.11-10m+0.11-10m+

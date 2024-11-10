@@ -1,0 +1,39 @@
+{{context|date=May 2013}}
+
+'''Cooperative Coevolution''' (CC) is an [[evolutionary computation]] method that divides a large [[Computational problem|problem]] into subcomponents and solves them independently in order to solve the large problem.<ref>M. A. Potter and K. A. D. Jong, “[https://pdfs.semanticscholar.org/350e/0e980f86c604ba282037c70da9e19cd9c2b6.pdf A cooperative coevolutionary approach to function optimization],” in PPSN III: Proceedings of the International Conference on Evolutionary Computation. The Third Conference on Parallel Problem Solving from Nature. London, UK:Springer-Verlag, 1994, pp. 249–257.</ref> 
+
+The subcomponents are also called [[species]]. The subcomponents are implemented as subpopulations and the only interaction between subpopulations is in the cooperative evaluation of each individual of the subpopulations. The general CC framework is nature inspired where the individuals of a particular group of species mate amongst themselves, however, [[mating]] in between different species is not feasible. The cooperative evaluation of each individual in a subpopulation is done by [[concatenating]] the current individual with the best individuals from the rest of the subpopulations as described by M. Potter.<ref name="Mitchell A. Potter 2000, p.1-29">Mitchell A. Potter, Kenneth A. De Jong, [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.35.5861&rep=rep1&type=pdf Cooperative Coevolution: An Architecture for Evolving Coadapted Subcomponents], Evolutionary Computation, v.8 n.1, 2000, p.1-29.</ref>
+
+The cooperative [[coevolution]] framework has been applied to real world problems such as [[pedestrian]] detection systems,<ref>Cao, X., Qiao, H. and Keane, J., [http://www.paper.edu.cn/scholar/showpdf/MUj2gN5IMTT0MxeQh A low-cost pedestrian-detection system with a single optical camera]. IEEE Transactions on Intelligent Transportation Systems. v9 i1. 58-67.
+</ref> large-scale  function optimization<ref>Yang, Z., Tang, K., and Yao, X. 2008. [http://web.xidian.edu.cn/xlwang/files/20150312_174900.pdf Large scale evolutionary optimization using cooperative coevolution]. Inf. Sci. 178, 15 (Aug. 2008), 2985-2999</ref> and [[neural network]] training.<ref name="Mitchell A. Potter 2000, p.1-29"/><ref>García-Pedrajas, N., Hervás-Martínez, C. and Muñoz Pérez, J., [http://atarazanas.sci.uma.es/docs/tesisuma/16643057.pdf COVNET: a cooperative coevolutionary model for evolving artificial neural networks]. IEEE Transactions on Neural Networks. v14 i3. 575-596.
+</ref>
+It has also be further extended into another method, called [[Constructive cooperative coevolution]].
+
+==Pseudocode==
+
+ ''i'' := 0
+ 
+ '''for each''' subproblem ''S'' '''do'''
+     Initialise a subpopulation ''Pop''<sub>''0''</sub>(''S'')
+     calculate fitness of each member in ''Pop''<sub>''0''</sub>(''S'')
+ 
+ '''while''' termination criteria not satisfied  '''do'''
+     ''i'' := ''i'' + 1
+     '''for each''' subproblem ''S'' '''do'''
+         select ''Pop''<sub>''i''</sub>(''S'') from ''Pop''<sub>''i-1''</sub>(''S'')
+         apply genetic operators to ''Pop''<sub>''i''</sub>(''S'')
+         calculate fitness of each member in ''Pop''<sub>''i''</sub>(''S'')
+
+== See also ==
+<!-- Please don't add a whole list of optimization algorithms, the categories serve that purpose. -->
+<!-- 27/3/11 Updated with more meaningful category organisation - I have tried to keep the list as brief as possible, relying on sub-pages for further breakdown of categories. Please try to maintain this spirit on edits. -->
+
+* [[Constructive cooperative coevolution]]
+* [[Genetic algorithms]]
+* [[Differential evolution]]
+* [[Metaheuristic]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Evolutionary computation]]

@@ -1,0 +1,75 @@
+{{Infobox station
+| style               =
+| name                = Wattwil
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = B-Wattwil-Bahnhof.jpg
+| alt                 = Three-story building
+| caption             = The Wattwil station building in 2011
+| address             = 
+| borough             = Wattwil
+| country             = [[Switzerland]]
+| coordinates         = {{coord|47|17|58|N|9|05|12|E|region:CH-SG|format=dms|display=inline,title}}
+| owned               = [[Südostbahn]]
+| operator            = 
+| line                = {{Plainlist|
+* [[Bodensee–Toggenburg railway|Bodensee–Toggenburg]]
+* [[Uznach–Wattwil railway|Uznach–Wattwil]]
+* [[Wil–Ebnat-Kappel railway|Wil–Ebnat-Kappel]]
+}}
+| distance            = 
+| platforms           = 
+| tracks              = 
+| train_operators     = {{Plainlist|
+* [[THURBO]]
+* [[Südostbahn]]
+}}
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 
+| pass_year           = 
+| pass_rank           = 
+| services            = {{Adjacent stations|system1=Südostbahn
+|line1=Voralpen-Express|left1=Uznach|right1=Herisau
+|system2=St. Gallen S-Bahn
+|line2=2|left2=Ebnat-Kappel|right2=Lichtensteig
+|line3=4|left3=Kaltbrunn|right3=Lichtensteig
+|line4=9|right4=Lichtensteig
+}}
+| other_services      = 
+}}
+'''Wattwil railway station''' ({{lang-de|Bahnhof Wattwil}}) is a railway station in [[Wattwil]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of St. Gallen|St. Gallen]]. It is an intermediate station on the [[Bodensee–Toggenburg railway]], the southern terminus of the [[Wil–Ebnat-Kappel railway]], and the eastern terminus of the [[Uznach–Wattwil railway]]. It is served by local and long-distance trains.
+
+== Services ==
+=== Long-distance ===
+Wattwil is served by the [[Voralpen Express]], which runs hourly between [[Lucerne railway station|Lucerne]] and [[St. Gallen railway station|St. Gallen]].<ref name="fpf870">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/870.pdf | title = Romanshorn - St. Gallen - Wattwil - Rapperswil | publisher = Bundesamt für Verkehr | date=4 December 2019 | accessdate = 30 December 2019}}</ref>
+
+=== Local ===
+Wattwil is served by three services of the [[St. Gallen S-Bahn]]:<ref name="fpf870" />
+
+* {{S-Bahn-St.-Gallen|2}}: hourly service over the Bodensee–Toggenburg railway between [[Nesslau-Neu St. Johann railway station|Nesslau-Neu St. Johann]] and [[Altstätten SG railway station|Altstätten SG]].
+* {{S-Bahn-St.-Gallen|4}}: hourly service over the Bodensee–Toggenburg railway via [[Sargans railway station|Sargans]] (circular operation).
+* {{S-Bahn-St.-Gallen|9}}: half-hourly service over the Wil–Ebnat-Kappel railway to [[Wil railway station|Wil]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline|Wattwil train station}}
+* [https://www.sbb.ch/en/station-services/railway-stations/further-stations/station.6200.wattwil.html Wattwil station on SBB]
+
+[[Category:Railway stations in the canton of St. Gallen]]
+[[Category:Südostbahn stations]]

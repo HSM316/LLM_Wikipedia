@@ -1,0 +1,70 @@
+{{short description|Subdiscipline of artificial intelligence}}
+'''Statistical relational learning''' ('''SRL''') is a subdiscipline of [[artificial intelligence]] and [[machine learning]] that is concerned with [[domain model]]s that exhibit both [[uncertainty]] (which can be dealt with using statistical methods) and complex, [[relation (mathematics)|relational]] structure.<ref name=getoor:book07 /><ref name=rossi:jair12 />
+Typically, the [[knowledge representation]] formalisms developed in SRL use (a subset of) [[first-order logic]] to describe relational properties of a domain in a general manner ([[universal quantification]]) and draw upon [[probabilistic graphical model]]s (such as [[Bayesian network]]s or [[Markov network]]s) to model the uncertainty; some also build upon the methods of [[inductive logic programming]]. Significant contributions to the field have been made since the late 1990s.<ref name=getoor:book07 />
+
+As is evident from the characterization above, the field is not strictly limited to learning aspects; it is equally concerned with [[Semantic reasoner|reasoning]] (specifically [[statistical inference|probabilistic inference]]) and [[knowledge representation]]. Therefore, alternative terms that reflect the main foci of the field include ''statistical relational learning and reasoning'' (emphasizing the importance of reasoning) and ''first-order probabilistic languages'' (emphasizing the key properties of the languages with which models are represented).
+Another term that is sometimes used in the literature is ''relational machine learning'' (RML).
+
+== Canonical tasks ==
+A number of canonical tasks are associated with statistical relational learning, the most common ones being.<ref name=richardson:ml06 />
+
+* [[collective classification]], i.e. the (simultaneous) [[classification (machine learning)|prediction of the class]] of several objects given objects' attributes and their relations
+* [[link prediction]], i.e. predicting whether or not two or more objects are related
+* [[link-based clustering]], i.e. the [[cluster analysis|grouping]] of similar objects, where similarity is determined according to the links of an object, and the related task of [[collaborative filtering]], i.e. the filtering for information that is relevant to an entity (where a piece of information is considered relevant to an entity if it is known to be relevant to a similar entity)
+* [[social network]] modelling
+* [[record linkage|object identification/entity resolution/record linkage]], i.e. the identification of equivalent entries in two or more separate databases/datasets
+
+== Representation formalisms ==
+{{More footnotes|date=June 2011}}
+
+One of the fundamental design goals of the representation formalisms developed in SRL is to abstract away from concrete entities and to represent instead general principles that are intended to be universally applicable. Since there are countless ways in which such principles can be represented, many representation formalisms have been proposed in recent years.<ref name=getoor:book07 /> In the following, some of the more common ones are listed in alphabetical order:
+
+* [[Bayesian logic program]]
+* [[BLOG model]]
+* [[Markov logic network]]s
+* [[Multi-entity Bayesian network]]
+* [[Probabilistic logic program]]s
+* Probabilistic relational model – a Probabilistic Relational Model (PRM) is the counterpart of a [[Bayesian network]] in statistical relational learning.<ref name=friedman:ijcai99 /><ref name=sommestad:compsec10 />
+* [[Probabilistic soft logic]]
+* [[Recursive random field]]
+* [[Relational Bayesian network]]
+* [[Relational dependency network]]
+* [[Relational Markov network]]
+* [[Relational Kalman filtering]]
+
+== See also ==
+* [[Association rule learning]]
+* [[Formal concept analysis]]
+* [[Fuzzy logic]]
+* [[Grammar induction]]
+* [[Knowledge graph embedding]]
+
+== Resources ==
+* Brian Milch, and [[Stuart J. Russell]]: ''[ftp://nozdr.ru/biblio/kolxo3/Cs/CsLn/Inductive%20Logic%20Programming,%2016%20conf.,%20ILP%202006(LNCS4455,%20Springer,%202006)(ISBN%203540738460)(466s).pdf#page=20 First-Order Probabilistic Languages: Into the Unknown]'', Inductive Logic Programming, volume 4455 of [[Lecture Notes in Computer Science]], page 10–24. Springer, 2006
+* Rodrigo de Salvo Braz, Eyal Amir, and [[Dan Roth]]: ''[http://www.ai.sri.com/~braz/papers/sci-chapter.pdf A Survey of First-Order Probabilistic Models]'', Innovations in Bayesian Networks, volume 156 of Studies in Computational Intelligence, Springer, 2008
+* Hassan Khosravi and Bahareh Bina: ''[http://www.cs.ubc.ca/~hkhosrav/pub/survey.pdf A Survey on Statistical Relational Learning]'', Advances in Artificial Intelligence, Lecture Notes in Computer Science, Volume 6085/2010, 256–268, Springer, 2010
+* Ryan A. Rossi, Luke K. McDowell, David W. Aha, and [[Jennifer Neville]]: ''[http://www.jair.org/media/3659/live-3659-6589-jair.pdf Transforming Graph Data for Statistical Relational Learning]'', Journal of Artificial Intelligence Research (JAIR), Volume 45, page 363-441, 2012
+* [[Luc De Raedt]], [[Kristian Kersting]], [[Sriraam Natarajan]] and [[David Poole (researcher)|David Poole]], "Statistical Relational Artificial Intelligence: Logic, Probability, and Computation", Synthesis Lectures on Artificial Intelligence and Machine Learning" March 2016 {{ISBN|9781627058414}}.
+
+== References ==
+{{reflist|
+refs=
+<ref name=getoor:book07>
+   {{cite book |last1=Getoor |first1=Lise |last2=Taskar |first2=Ben |author-link1=Lise Getoor |author-link2=Ben Taskar |date=2007 |title=Introduction to Statistical Relational Learning |url=https://linqs.github.io/linqs-website/publications/#id:getoor-book07 |publisher=MIT Press |isbn=978-0262072885}}
+</ref>
+<ref name=rossi:jair12>
+   Ryan A. Rossi, Luke K. McDowell, David W. Aha, and Jennifer Neville, "[http://www.jair.org/media/3659/live-3659-6589-jair.pdf  Transforming Graph Data for Statistical Relational Learning.]"  ''Journal of Artificial Intelligence Research (JAIR)'', '''Volume 45''' (2012), pp. 363-441.
+</ref>
+<ref name=richardson:ml06>
+   Matthew Richardson and [[Pedro Domingos]], [http://www.cs.washington.edu/homes/pedrod/papers/mlj05.pdf  "Markov Logic Networks.]"  ''Machine Learning'', '''62''' (2006), pp. 107–136.
+</ref>
+<ref name=friedman:ijcai99>
+   Friedman N, Getoor L, Koller D, Pfeffer A. (1999) [https://www.biostat.wisc.edu/~page/lprm-ijcai99.pdf "Learning probabilistic relational models"]. In: ''International joint conferences on artificial intelligence'', 1300–09
+</ref>
+<ref name=sommestad:compsec10>
+   Teodor Sommestad, Mathias Ekstedt, Pontus Johnson (2010) "A probabilistic relational model for security risk analysis", ''Computers & Security'', 29 (6), 659-679 {{doi|10.1016/j.cose.2010.02.002}}
+</ref>
+}}
+
+[[Category:Computational statistics]]
+[[Category:Machine learning]]

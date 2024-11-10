@@ -1,0 +1,15 @@
+{{Orphan|date=September 2018}}
+{{notability|date=September 2018}}
+
+The CLEVER ('''C'''ross '''L'''ipschitz '''E'''xtreme '''V'''alue for n'''E'''twork '''R'''obustness) score is a way of measuring the robustness of an [[artificial neural network]] towards [[Deep learning#Cyberthreat|adversarial attacks]].<ref>{{cite arXiv |last=Weng |first=Tsui-Wei |date=2018 |title=Evaluating the robustness of neural networks: An extreme value theory approach |class=stat.ML |eprint=1801.10578}}</ref>
+It was developed by a team at the [[MIT-IBM Watson AI Lab]] and first presented at the 2018 [[International Conference on Learning Representations]].<ref>{{cite web |url=https://www.ibm.com/blogs/research/2018/05/clever-adversarial-attack/ |title=A CLEVER Way to Resist Adversarial Attack |last= |first= |date=May 2, 2018 |website= |publisher= |access-date=September 12, 2018 |quote=}}</ref>
+
+== References ==
+{{Reflist}}
+
+[[Category:Computer science]]
+[[Category:Deep learning]]
+[[Category:Artificial neural networks]]
+
+
+{{Computer-science-stub}}

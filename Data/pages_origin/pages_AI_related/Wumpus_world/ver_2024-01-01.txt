@@ -1,0 +1,10 @@
+'''Wumpus world''' is a simple world use in [[artificial intelligence]] for which to represent knowledge and to reason. Wumpus world was introduced by Genesereth, and is discussed in Russell-Norvig Artificial intelligence book ({{ISBN|0136042597}}) inspired by 1972 video game [[Hunt the Wumpus]] .
+
+== References ==
+* [http://www.cis.temple.edu/~giorgio/cis587/readings/wumpus.shtml CIS587: The Wumpus World]
+* [[Hunt the Wumpus]]
+
+[[Category:Artificial intelligence]]
+
+
+{{compu-AI-stub}}

@@ -1,0 +1,29 @@
+'''Argument mining''', or '''argumentation mining''', is a research area within the [[natural-language processing]] field. The goal of argument mining is the automatic extraction and identification of argumentative structures from [[natural language]] text with the aid of computer programs.<ref name=lippi2016/> Such argumentative structures include the premise, conclusions, the argument scheme and the relationship between the main and subsidiary argument, or the main and counter-argument within discourse.<ref name=IJCAI_tutorial/><ref name=ACL_tutorial/> The Argument Mining workshop series is the main research forum for argument mining related research.<ref name=argmining2018/>
+
+== Applications ==
+Argument mining has been applied in many different genres including the qualitative assessment of [[social media]] content (e.g. Twitter, Facebook), where it provides a powerful tool for policy-makers and researchers in social and political sciences.<ref name=lippi2016/> Other domains include legal documents, product reviews, scientific articles, online debates, newspaper articles and dialogical domains.
+
+== Challenges ==
+Given the wide variety of text genres and the different research perspectives and approaches, it has been difficult to reach a common and objective evaluation scheme.<ref name=unshared_task/> Many annotated data sets have been proposed, with some gaining popularity, but a consensual data set is yet to be found. 
+Annotating argumentative structures is a highly demanding task. There have been successful attempts to delegate such annotation tasks to the crowd but the process still requires a lot of effort and carries significant cost. Initial attempts to bypass this hurdle were made using the weak supervision approach.<ref name=levy2017/>
+
+== See also ==
+* [[Argumentation theory]]
+
+== References ==
+{{reflist|refs=
+<ref name=lippi2016>{{Cite journal|last=Lippi|first=Marco|last2=Torroni|first2=Paolo|date=2016-04-20|title=Argumentation Mining: State of the Art and Emerging Trends|journal=ACM Transactions on Internet Technology |volume=16|issue=2|pages=10|doi=10.1145/2850417|issn=1533-5399}}</ref>
+<ref name=argmining2018>{{cite web|url=https://www.research.ibm.com/haifa/Workshops/argmining18/index.shtml|title=5th Workshop on Argument Mining}}</ref>
+<ref name=IJCAI_tutorial>{{Cite web|url=http://www.i3s.unice.fr/~villata/tutorialIJCAI2016.html|title=Argument Mining - IJCAI2016 Tutorial|last=Budzynska|first=Katarzyna|last2=Villata|first2=Serena|website=www.i3s.unice.fr|language=en|access-date=2018-03-30}}</ref>
+<ref name=ACL_tutorial>{{Cite web|url=http://acl2016tutorial.arg.tech/|title=NLP Approaches to Computational Argumentation - ACL 2016 Tutorial|last=Gurevych|first=Iryna|last2=Reed|first2=Chris|last3=Slonim|first3=Noam|last4=Stein|first4=Benno}}</ref>
+<ref name=unshared_task>{{Cite web|url=http://argmining2016.arg.tech/index.php/home/call-for-papers/unshared-task/|title=Unshared Task - 3rd Workshop on Argument Mining}}</ref>
+<ref name=levy2017>{{Cite journal|url=http://www.aclweb.org/anthology/W17-5110|title=Unsupervised corpus-wide claim detection|journal=Proceedings of the 4th Workshop on Argumentation Mining 2017|date=2017|last=Levy|first=Ran|last2=Gretz|first2=Shai|last3=Sznajder|first3=Benjamin|last4=Hummel|first4=Shay|last5=Aharonov|first5=Ranit|last6=Slonim|first6=Noam}}</ref>
+}}
+
+[[Category:Argument technology]]
+[[Category:Data mining]]
+[[Category:Information retrieval]]
+[[Category:Computational linguistics]]
+
+
+{{comp-ling-stub}}

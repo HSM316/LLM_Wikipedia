@@ -1,0 +1,52 @@
+{{Orphan|date=June 2016}}
+
+{{Pfam box
+| Symbol = I-set
+| Name = Immunoglobulin I-set domain
+| image = PDB 1evt EBI.jpg
+| width =
+| caption = Structures of fibroblast growth factor 1.<ref name="pmid10830168">{{cite journal |vauthors=Plotnikov AN, Hubbard SR, Schlessinger J, Mohammadi M |title=Crystal structures of two FGF-FGFR complexes reveal the determinants of ligand-receptor specificity |journal=Cell |volume=101 |issue=4 |pages=413–24 |date=May 2000 |pmid=10830168 |doi= 10.1016/S0092-8674(00)80851-X|url=}}</ref>
+| Pfam= PF07679
+| InterPro= IPR013098
+| SMART=
+| Prosite =
+| SCOP =
+| TCDB =
+| OPM family=
+| OPM protein=
+| PDB= {{PDB3|1bih}}B:327-412 {{PDB3|1cs6}}A:322-407 {{PDB3|1cvs}}C:159-247 {{PDB3|1epf}}B:20-114 {{PDB3|1evt}}D:159-247 {{PDB3|1fhg}}A:42-132 {{PDB3|1fq9}}C:159-247 {{PDB3|1gxe}}A:652-767 {{PDB3|1ie5}}A:214-304 {{PDB3|1ij9}}A:25-112 {{PDB3|1koa}}:6585-6674 {{PDB3|1pd6}}A:363-448 {{PDB3|1qct}}E:153-241 {{PDB3|1qz1}}A:214-305 {{PDB3|1ry7}}B:157-245 {{PDB3|1tlk}}:42-132 {{PDB3|1tnm}}:33489-3357 {{PDB3|1tnn}}:33489-3357 {{PDB3|1u2h}}A:43-113 {{PDB3|1vca}}A:25-112 {{PDB3|1vsc}}A:25-112 {{PDB3|1wf5}}A:306-320 {{PDB3|1wit}}:4150-4239 {{PDB3|1wiu}}:4150-4239 {{PDB3|1wwc}}A:325-352 {{PDB3|1x44}}A:342-430 {{PDB3|2cqv}}A:1238-1327 {{PDB3|2cry}}A:419-516 {{PDB3|2ncm}}:20-114
+}}
+
+'''I-set domains''' are found in several [[cell adhesion molecule]]s, including vascular ([[VCAM-1|VCAM]]), intercellular ([[Intercellular adhesion molecule|ICAM]]), neural ([[Neural cell adhesion molecule|NCAM]]) and mucosal addressin ([[Addressin|MADCAM]]) cell adhesion molecules, as well as junction adhesion molecules ([[JAM2|JAM]]). I-set domains are also present in several other diverse protein families, including several tyrosine-protein kinase receptors, the hemolymph protein [[hemolin]], the muscle proteins titin, telokin, and twitchin, the neuronal adhesion molecule axonin-1,<ref name="PUB00024043">{{cite journal |vauthors=Sonderegger P, Welte W, Diederichs K, Freigang J, Proba K, Leder L |title=The crystal structure of the ligand binding module of axonin-1/TAG-1 suggests a zipper mechanism for neural cell adhesion |journal=Cell |volume=101 |issue=4 |pages=425–33 |year=2000 |pmid=10830169 |doi=10.1016/S0092-8674(00)80852-1}}</ref> and the signalling molecule semaphorin 4D that is involved in axonal guidance, immune function and angiogenesis.<ref name="PUB00027657">{{cite journal |vauthors=Stuart DI, Jones EY, Harlos K, Esnouf RM, Love CA |title=Structure determination of human semaphorin 4D as an example of the use of MAD in non-optimal cases |journal=Acta Crystallogr. D |volume=62 |issue= Pt 1|pages=108–15 |year=2006 |pmid=16369100 |doi=10.1107/S0907444905034992}}</ref>
+
+==Human proteins containing this domain ==
+* [[ADAMTSL1]], [[ADAMTSL3]], [[ALPK3]], [[AXL receptor tyrosine kinase|AXL]],
+* [[BOC (gene)|BOC]],
+* [[C9orf94]], [[CADM2]], [[CADM4]], [[CCDC141]], [[CDON]], [[CEACAM7]], [[CHL1]], [[CILP2]], [[CNTN1]], [[CNTN2]], [[CNTN3]], [[CNTN4]], [[CNTN5]], [[CNTN6]], [[CXADR]],
+* [[Deleted in Colorectal Cancer|DCC]], [[DSCAM]], [[DSCAML1]],
+* [[ESAM]],
+* [[FGFR1]], [[FGFR3]], [[FGFR4]], [[FGFRL1]], [[FLT1]], [[FLT4]], [[FSTL4]], [[FSTL5]],
+* [[HMCN1]], [[Neurotrimin|HNT]], [[HSPG2]],
+* [[ICAM5]], [[IGFBP7]], [[IGFBPL1]], [[IGSF10]], [[IGSF22]], [[IGSF9]], [[ISLR]],
+* [[KALRN]], [[KAZALD1]], [[Kinase insert domain receptor|KDR]], [[KIAA0626]], [[KIRREL]], [[KIRREL2]], [[KIRREL3]],
+* [[L1CAM]], [[LINGO1]], [[LINGO2]], [[LRFN2]], [[LRFN3]], [[LRFN4]], [[LRFN5]], [[LRIG1]], [[LRIG2]], [[LRIG3]], [[LRIT2]], [[LRIT3]], [[LRRC24]], [[LRRC4B]], [[LRRC4C]], [[LRRN1]], [[LRRN3]], [[LRRN5]], [[LSAMP]],
+* [[Myelin-associated glycoprotein|MAG]], [[MDGA2]], [[MFAP3L]], [[MUSK]], [[MXRA5]], [[MYBPC1]], [[MYBPC2]], [[MYBPC3]], [[MYBPH]], [[MYBPHL]], [[MYLK]], [[MYOM1]], [[MYOM2]], [[MYOM3]], [[MYOT]], [[MYPN]],
+* [[NCAM1]], [[NCAM2]], [[NEGR1]], [[NEO1]], [[NEXN]], [[NFASC]], [[NGL1]], [[NOPE]], [[NPHS1]], [[NPTN]], [[NRCAM]], [[NRG2]], [[NT (protein)|NT]], [[NTRK2]], [[NTRK3]],
+* [[OBSCN]], [[OBSL1]], [[OPCML]],
+* [[Palladin|PALLD]], [[PAPLN]], [[PDGFRA]], [[PRODH2]], [[PTK7]], [[PTPRD]], [[PTPRF]], [[PTPRS]], [[PTPsigma]], [[PUNC]],
+* [[ROBO1]], [[ROBO2]], [[ROBO3]], [[ROBO4]], [[ROR1]], [[ROR2]],
+* [[SDK1]], [[SDK2]], [[SIGLEC1]], [[SIGLEC6]], [[SPEG]],
+* [[TRIO (gene)|TRIO]], [[Titin|TTN]],
+* [[UNC5A]], [[UNC5B]], [[UNC5C]],
+* [[VCAM1]], [[WFIKKN1]], [[WFIKKN2]],
+
+==References==
+{{reflist}}
+
+{{InterPro content|IPR013098}}
+
+[[Category:Protein domains]]
+[[Category:Single-pass transmembrane proteins]]
+
+
+{{membrane-protein-stub}}

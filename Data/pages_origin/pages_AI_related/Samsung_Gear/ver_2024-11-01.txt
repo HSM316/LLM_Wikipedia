@@ -1,0 +1,174 @@
+{{Short description|Line of wearable computing devices}}
+[[File:Samsung Galaxy Gear blank screen.jpg|300px|thumb|right|Samsung Galaxy Gear]]
+[[File:Samsung_Gear_Sport_-_On_wrist.png|thumb|right|Samsung Gear Sport]]
+'''Samsung Gear''' was a line of [[wearable computing]] devices produced by [[Samsung Electronics]]. The first device in the series, the [[Samsung Galaxy Gear|Galaxy Gear]] smartwatch, was announced in 2013.<ref name="engadget-galaxygearunveil">{{cite web|title=Samsung unveils Galaxy Gear smartwatch with 1.63-inch AMOLED touchscreen, built-in camera, 70 apps|url=https://www.engadget.com/2013/09/04/samsung-unveils-galaxy-gear/|work=Engadget|access-date=9 December 2013}}</ref> Since then, the line has expanded to include fitness bands and earbuds, as well as more smartwatches.
+
+In February 2019, Samsung re-branded smartwatches, fitness bands, and earbuds under the [[Samsung Galaxy#Wearables|Galaxy]] brand.<ref>{{cite web |title=Samsung Announces New Galaxy Watch Active, Galaxy Fit, and Galaxy Buds |url=https://www.droid-life.com/2019/02/20/samsung-galaxy-wearables-2019/ |website=Droid Life |date=2019-02-20 }}</ref> Samsung shipped approximately 31 million wearable devices in 2019,<ref>{{Cite web|url=https://www.idc.com/getdoc.jsp?containerId=prUS46122120|title=Shipments of Wearable Devices Reach 118.9 Million Units in the Fourth Quarter and 336.5 Million for 2019, According to IDC|website=IDC: The premier global market intelligence company|access-date=2020-04-09|archive-date=2021-01-14|archive-url=https://web.archive.org/web/20210114120031/https://www.idc.com/getdoc.jsp?containerId=prUS46122120|url-status=dead}}</ref> including 7.4 million true wireless earbuds.<ref>{{Cite web|url=https://www.androidcentral.com/samsung-comes-distant-third-place-tws-headphone-sales-2019|title=Samsung's true wireless headphone sales in 2019 couldn't compete with Apple|date=2020-01-15|website=Android Central|access-date=2020-04-08}}</ref>
+
+== Watches ==
+{| class="wikitable"
+!Product
+!Model
+!Launch date
+!SoC
+!Wireless
+!Display
+!OS
+!Internal storage
+!Battery size
+|-
+|[[Samsung Galaxy Gear|Galaxy Gear]]
+|SM-V700
+|September 23, 2013
+|Exynos 4212 1x 800&nbsp;MHz
+|
+|1.63" super AMOLED (320x320)
+|[[Android (operating system)|Android]]<br />[[Tizen]]
+|4GB/512 MB RAM
+|315 mAh
+|-
+|[[Samsung Gear 2|Gear 2]]
+|SM-R380<br/>SM-R381 (Neo)
+|February 22, 2014
+|Exynos 3250 1x 1&nbsp;GHz
+|
+|1.63" super AMOLED (320x320)
+|[[Tizen]]
+|4GB/512 MB RAM
+|300 mAh
+|-
+|[[Samsung Gear Live|Gear Live]]
+|SM-R382
+|June 25, 2014
+|Snapdragon 400 4x 1&nbsp;GHz
+|BCM4334W (Wi-Fi/BT)<ref>{{Cite web|url=https://www.ifixit.com/Teardown/Samsung+Gear+Live+Teardown/27038|title=Samsung Gear Live Teardown|date=2014-07-07|website=iFixit|language=en|access-date=2020-04-09}}</ref>
+|1.63" super AMOLED (320x320)
+|[[Wear OS|Android Wear]]
+|4GB/512 MB RAM
+|300 mAh
+|-
+|[[Samsung Gear S|Gear S]]
+|SM-R750 (Cellular)<br/>SM-R750J<br/>SM-R750A/B/D/P/T/V/W (cellular)
+|November 7, 2014
+|Exynos 4212 4x 1&nbsp;GHz<br/>Snapdragon 400 4x 1&nbsp;GHz<br/>Snapdragon 400 4x 1&nbsp;GHz
+|
+|2.0" curved Super AMOLED (360x480)
+| rowspan="4" |[[Tizen]]
+|4GB/512 MB RAM
+|300 mAh
+|-
+|[[Samsung Gear S2|Gear S2]]
+|SM-R720 (BT/Wi-Fi)<br/>SM-R730 (Cellular)<br/>SM-R732 (Classic; BT/Wi-Fi)
+|October 2, 2015
+|Exynos 3250 2x Cortex-A7 1&nbsp;GHz
+|BCM4343 (Wi-Fi/BT)<ref>{{Cite web|url=https://electronics360.globalspec.com/article/7496/teardown-samsung-gear-s2|title=Teardown: Samsung Gear S2|date=2016-10-20|website=electronics360.globalspec.com|access-date=2020-04-09}}</ref>
+|1.2" circular Super AMOLED (360x360)
+|4GB/512 MB RAM
+|250 mAh<br />300 mAh<br />250 mAh
+|-
+|[[Samsung Gear S3|Gear S3]]
+|SM-R760 (Frontier; BT/Wi-Fi)<br/>SM-R765 (Frontier; Cellular)<br/>SM-R770 (Classic; BT/Wi-Fi)
+|November 18, 2016
+| rowspan="2" |Exynos 7270 2x Cortex-A53 1&nbsp;GHz
+|
+|1.3" circular Super AMOLED (360x360)
+|4GB/768 MB RAM
+|380 mAh
+|-
+|[[Samsung Gear Sport|Gear Sport]]
+|SM-R600
+|October 27, 2017
+|BCM4752 (GNSS)<ref>{{Cite web|url=https://gethypoxic.com/blogs/technical/samsung-gear-sport-teardown|title=Samsung Gear Sport Teardown|website=HYPOXIC|date=November 2017 |access-date=2020-04-09}}</ref>
+|1.2" circular Super AMOLED (360x360)
+|4GB/768 MB RAM
+|300 mAh
+|}
+
+== Fitness bands ==
+{| class="wikitable"
+|+
+!Product
+!Model
+!Launch date
+!SoC
+!Wireless
+!Display
+!OS
+!Internal storage
+!Battery size
+|-
+|[[Samsung Gear Fit|Gear Fit]]
+|SM-R350
+|April 11, 2014
+|STM32F439ZI CM4 180&nbsp;MHz<ref>{{Cite web|url=https://www.ifixit.com/Teardown/Samsung+Gear+Fit+Teardown/24029|title=Samsung Gear Fit Teardown|date=2014-04-10|website=iFixit|language=en|access-date=2020-04-08}}</ref>
+|BCM4334W (WLAN/BT)
+|1.84" curved Super AMOLED display (432x128)
+|RTOS
+|4GB<ref>{{cite web|url=https://www.engadget.com/products/samsung/gear/fit/specs/|title=Samsung Gear review|website=Engadget|access-date=14 January 2018|archive-date=15 January 2018|archive-url=https://web.archive.org/web/20180115001906/https://www.engadget.com/products/samsung/gear/fit/specs/|url-status=dead}}</ref>
+| rowspan="3" |200 mAh
+|-
+|[[Samsung Gear Fit 2|Gear Fit 2]]
+|SM-R360
+|June 2, 2016
+| rowspan="2" |[[Exynos]] 3250 2xA7 1&nbsp;GHz<ref>{{Cite web|url=https://www.ept.ca/features/looking-inside-samsung-gear-fit-2-pro-fitness-band/|title=Looking inside the Samsung Gear Fit 2 Pro Fitness Band|last=says|first=George Topouzov|website=Electronic Products & Technology|date=April 2018 |language=en-US|access-date=2020-04-08}}</ref>
+| rowspan="2" |BCM43436 (WLAN/BT) + BCM4774 (GNSS)
+| rowspan="2" |1.5" curved Super AMOLED (432x216)
+| rowspan="2" |[[Tizen]]
+|4GB/512 MB RAM<ref>{{cite web|url=http://www.samsung.com/global/galaxy/gear-fit2/|title=Samsung Gear Fit2|access-date=14 January 2018}}</ref>
+|-
+|Gear Fit 2 Pro<ref name="theverge_16224712">{{cite web|url=https://www.theverge.com/2017/8/30/16224712/samsung-gear-fit2-pro-iconx-specs-release-date-price-ifa-2017|title=Samsung launches swim-tracking Gear Fit2 Pro and upgrades Gear IconX battery life|last1=Savov|first1=Vlad|date=2017-08-30|website=The Verge|publisher=[[Vox Media, Inc.]]|access-date=28 January 2018}}</ref>
+|SM-R365
+|October 26, 2017
+|4GB/512 MB RAM<ref>{{Cite web|url=https://www.androidauthority.com/samsung-gear-fit-2-pro-gear-sport-specs-release-date-price-specs-796548/|title=The new Samsung Gear Fit 2 Pro and Gear Sport are aiming for the fitness crowd|date=2017-08-30|website=Android Authority|language=en-US|access-date=2020-04-08}}</ref>
+|}
+
+== Earbuds ==
+{| class="wikitable"
+|+
+!Product
+!Model
+!Launch date
+!Audio processor
+!Wireless
+!Codec
+!Mics
+!Internal storage
+!Battery life
+|-
+|Gear IconX<ref>{{Cite web|url=http://www.samsung.com/global/galaxy/gear-iconx/|title=Samsung Gear IconX|website=The Official Samsung Galaxy Site|language=en|access-date=2020-04-08}}</ref>
+|SM-R150
+|July 15, 2016
+|On-Semi LC823450<ref>{{Cite web|url=https://radtenna.com/blog/iconx-teardown|title=Post Page|website=radtenna.com|access-date=2020-04-08}}</ref>
+|BCM43436 (BT4.2)
+| rowspan="2" |On-Semi
+| rowspan="2" |2 per bud
+|4 GB
+|1.6 hours<ref>{{Cite web|url=http://www.samsung.com/us/audio/headphones/in-ear/gear-iconx-blue-sm-r150nzbaxar/|title=Gear IconX Headphones - SM-R150NZBAXAR {{!}} Samsung US|website=Samsung Electronics America|language=en-US|access-date=2020-04-08}}</ref>
+|-
+|Gear IconX (2018)
+|SM-R140
+|October 27, 2017
+|On-Semi LC823450<ref>{{Cite web|url=https://www.buzzbit.com.my/samsung-gear-iconx-r140|title=Samsung Gear IconX R140|website=www.buzzbit.com.my|language=en|access-date=2020-04-08|archive-date=2020-10-27|archive-url=https://web.archive.org/web/20201027173558/https://www.buzzbit.com.my/samsung-gear-iconx-r140|url-status=dead}}</ref>
+|BCM43013<ref>{{Cite web|url=https://manualzz.com/doc/50007749/samsung-기어-아이콘x--2018--사용자-매뉴얼|title=Samsung 기어 아이콘X (2018) 사용자 매뉴얼 {{!}} Manualzz|website=manualzz.com|access-date=2020-04-08}}</ref> (BT4.2)
+|3.4 GB<ref>{{Cite web|url=https://www.samsung.com/us/business/products/mobile/accessories/headsets/gear-iconx-2018-sm-r140nzkaxar/|title=SM-R140NZKAXAR {{!}} Gear IconX (2018) Wireless Headphones Black {{!}} Samsung Business|website=Samsung Electronics America|language=en-US|access-date=2020-04-08}}</ref>
+|5 hours
+|}
+
+== Other devices ==
+* [[Samsung Gear VR]] – [[virtual reality]] device
+* [[Samsung Gear 360]] – 360-degree video camera
+* Samsung Gear Circle – smart neck band
+
+== References ==
+{{reflist}}
+
+{{Samsung Gear}}
+{{Smartwatch}}
+{{Samsung Electronics}}
+
+[[Category:Consumer electronics brands]]
+[[Category:Samsung wearable devices|Gear]]
+[[Category:Wearable devices]]
+
+
+{{electronics-stub}}

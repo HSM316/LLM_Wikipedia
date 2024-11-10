@@ -1,0 +1,115 @@
+{{Use dmy dates|date=November 2017}}
+{{Infobox camera
+ | camera_name      =Autographer
+ | image            = File:Autographer.png
+ | image_size       = 
+ | image_alt        = 
+ | caption          = 
+ | maker            =OMG Life Ltd.
+ | type             = 
+ | sensor           = <!-- Image sensor -->
+ | sensor_type      = <!-- Type of sensor used to record the image (Analog/Digital CCD/CMOS, Film, etc) -->
+ | sensor_size      = <!-- Size of the image sensor (physical for film or physical/megapixel for digital) -->
+ | sensor_maker     =
+ | filmformat       = 
+ | filmsize         =
+ | recording_medium =Digital
+ | res              = <!-- Maximum image resolution -->
+ | lens_mount       = 
+ | lens             =Wide-angle
+ | focus_type       = 
+ | exposure         = 
+ | flash            = 
+ | flashcomp        = <!-- Flash exposure compensation -->
+ | fsynch           = <!-- Flash synchronization -->
+ | fadvance         = <!-- Film advance -->
+ | frewind          = <!-- Film rewind -->
+ | frame_rate       = 
+ | shutter          = 
+ | shutterRange     = 
+ | shutter_speeds   = 
+ | f-numbers        = 
+ | metering         = 
+ | emode            = <!-- Exposure modes -->
+ | mmode            = <!-- Metering modes -->
+ | farea            = <!-- Focus areas -->
+ | fmode            = <!-- Focus modes -->
+ | cont             = <!-- Continuous shooting -->
+ | viewfinder       = 
+ | ovf              = <!-- Optional viewfinders -->
+ | magnification    =
+ | coverage         = <!-- Frame coverage -->
+ | speedRange       = <!-- Film speed -->
+ | DXcoding         = <!-- Film speed detection -->
+ | flbkt            = <!-- Flash bracketing -->
+ | fcbkt            = <!-- Focus bracketing -->
+ | WB               = <!-- White balance -->
+ | wbbkt            = <!-- White balance bracketing -->
+ | brightness       = <!-- Projector brightness -->
+ | imsize           = <!-- Projector image size -->
+ | throwdis         = <!-- Project throw distance -->
+ | prores           = <!-- Projector resolution -->
+ | rearLCD          = 
+ | storage          = 
+ | battery          = 
+ | dimensions       =
+ | weight           =
+ | price            = 
+ | date             = 30 July 2013
+ | obp              = <!-- Optional battery packs -->
+ | odb              = <!-- Optional data backs -->
+ | omd              = <!-- Optional motor drives -->
+ | oacc             = <!-- Optional accessories -->
+ | complens         = <!-- Compatible lens -->
+ | compflash        = <!-- Compatible flashes -->
+ | interface_AVout  = <!-- Type of video and/or audio output port(s) available (i.e. HDMI, USB, IEEE 1394) -->
+ | interface_Data   = <!-- Type of port(s) available for interfacing with computers or other (i.e printers) devices (i.e. USB, IEEE 1394/Firewire, 802.11/WiFi) -->
+ | body_comp-feats  = <!-- Body composition or other special features (i.e. ABS plastic, water submersible) -->
+ | made_in          =
+ | footnotes        =
+ | exbkt            = <!-- Exposure bracketing -->
+ | drbkt            = <!-- Dynamic range bracketing -->
+ | drcomp           = <!-- Dynamic range compressor -->
+ | iproc            = <!-- Image processor -->
+ | vidrecord        = <!-- Video/movie recording.  Show the video dimensions, fps, bitrate, etc. -->
+}}
+
+'''Autographer''' is a hands-free, [[wearable technology|wearable]] [[digital camera]] developed by OMG Life. The camera uses five different sensors to determine when to automatically take photos and can take up to 2,000 pictures a day. It was released in July 2013 and is used primarily for [[lifelog|lifelogging]], entertainment and travel. As of 16 October 2016, OMG Life, the company behind Autographer discontinued operations.
+
+== History ==
+
+Autographer was developed by British company OMG Life, a wholly owned subsidiary of Oxford Metrics Group (OMG) plc, after licensing technology from [[Microsoft]] to create a medical memory aid called the Vicon Revue.<ref name=CellanJones13/><ref name=Dishman14>{{cite news |title=Can Better Memories Be Captured? |author=Lydia Dishman |url=http://www.fastcompany.com/3027723/can-better-memories-be-captured |newspaper=[[Fast Company (magazine)|Fast Company]] |date=21 March 2014 |accessdate=24 March 2014}}</ref><ref name=BloombergBW>{{cite web |url=http://investing.businessweek.com/research/stocks/snapshot/snapshot.asp?ticker=OMG:LN |archive-url=https://archive.today/20140422161631/http://investing.businessweek.com/research/stocks/snapshot/snapshot.asp?ticker=OMG:LN |url-status=dead |archive-date=22 April 2014 |title=Omg Plc |work=[[Bloomberg Businessweek]] |publisher=[[Bloomberg L.P.|Bloomberg]] |accessdate=24 March 2014 }}</ref> The original product was released in October 2009 and was designed to capture the lives of patients with [[Alzheimer's disease]] and other memory problems, so that their doctors could assess how many of the events the patients recalled.<ref name=CellanJones13/><ref name=Payne13/><ref name=Lindores09>{{cite news |title=Microsoft camera deal powers OMG share jump |author=Sharon Lindores |url=https://www.reuters.com/article/omg-microsoft-idUSLF67180420091015 |work=[[Reuters]] |date=15 October 2009 |accessdate=14 March 2014}}</ref> OMG reinvented the device as a consumer product based on feedback from customers who were using the technology for entertainment purposes.<ref name=CellanJones13/>
+
+The media was first able to view [[Prototype|prototypes]] for Autographer in March 2013,<ref name=Payne13>{{cite news |title=Autographer's automatic photography is seductive - but what about privacy? |author=Christian Payne |url=https://www.theguardian.com/technology/2013/jul/31/autographer-review-wearable-camera-documentally |work=[[The Guardian]] |date=31 July 2013 |accessdate=13 March 2014}}</ref> and journalists were invited to test the product at the [[London Zoo]] before its release.<ref name=CellanJones13>{{cite news |title=Life with a wearable camera |author=Rory Cellan-Jones |url=https://www.bbc.co.uk/news/technology-23488118 |work=[[BBC]] |date=29 July 2013 |accessdate=13 March 2014}}</ref><ref name=Woods13>{{cite news |title=Autographer review: We put this $615 wearable life-logging camera to the test |author=Ben Woods |url=https://thenextweb.com/gadgets/2013/07/29/autographer-review-we-put-this-615-wearable-life-logging-camera-to-the-test/#!zErS9 |work=The Next Web |date=29 July 2013 |accessdate=14 March 2014}}</ref>
+Autographer went on sale in July 2013 in the [[United Kingdom|U.K.]] and [[Europe]].<ref name=Smith13>{{cite news |title=Autographer wearable camera launches tomorrow for £400, we go hands-off |author=Mat Smith |url=https://www.engadget.com/2013/07/29/autographer-wearable-camera-hands-on-price/ |work=[[Engadget]] |date=29 July 2013 |accessdate=13 March 2014}}</ref><ref name=Curtis13/> It was initially sold on a dedicated Autographer website prior to its global release.<ref name=Curtis13/>
+
+It was featured on ''[[The Jonathan Ross Show]]'' in January 2014.<ref name=TVEyes14>{{Cite episode | url = http://mms.tveyes.com/Transcript.asp?stationid=6110&DateTime=01%2F08%2F2014+22%3A41%3A09&mediapreload=14&playclip=true |series=''[[The Jonathan Ross Show]]'' |station=ITV1LONDON |airdate=8 January 2014 |season=6 |number=1 }}</ref> That same month, UK retailer [[Topman]] used Autographers during its [[London Fashion Week|London Collections: Men]] event. The Autographer images captured by its team were publicly viewable on the brand's digital magazine website, Topman Generation. The promotion also included a daily giveaway of an Autographer.<ref name=RetailBulletin14>{{cite news |title=Topman & Google+ Partner For London Collections: Men |url=http://www.theretailbulletin.com/news/topman_partners_with_google_for_london_collections_men_fashion_show_06-01-14/ |work=[[The Retail Bulletin]] |date=6 January 2014 |accessdate=13 March 2014}}</ref>
+Previously only available in black, the company added new color options to Autographer, including blue, green, and yellow, at the [[Consumer Electronics Show|International CES]] in January 2014.<ref name=Westbrook14>{{cite news|title=Wearable tech, 4K TVs and robots trend at annual CES |author=Brian M. Westbrook |url=http://www.king5.com/news/technology/Wearable-tech-4K-TVs-and-robots-trend-at-annual-CES-239312991.html |archive-url=https://archive.today/20140422161654/http://www.king5.com/news/technology/Wearable-tech-4K-TVs-and-robots-trend-at-annual-CES-239312991.html |url-status=dead |archive-date=22 April 2014 |work=[[KING-TV]] |date=8 January 2014 |accessdate=13 March 2014 }}</ref><ref name=4Traders14>{{cite news |title=Autographer Announces Three Colorful New Choices at CES 2014 for Consumers to Capture Life's Most Precious Moments |url=http://www.4-traders.com/news/Autographer-Announces-Three-Colorful-New-Choices-at-CES-2014-for-Consumers-to-Capture-Lifes-Most-Pr--17759285/ |work=[[4 Traders]] |date=7 January 2014 |accessdate=13 March 2014}}</ref> In March 2014, it was announced that OMG Life had developed a waterproof kit for Autographer with waterproof case maker Aquapac, allowing the device to be used underwater to a depth of 30 feet for around 30 minutes.<ref name=Lee14>{{cite news |title=Autographer wearable camera now lets you take hands-free photos underwater |author=Nicole Lee |url=https://www.engadget.com/2014/03/25/autographer-waterproof-kit/ |newspaper=[[Engadget]] |date=25 March 2014 |accessdate=2 April 2014}}</ref> 
+
+As of 16 October 2016, OMG Life, the company behind Autographer discontinued operations.
+
+== Design and features ==
+Autographer is [[wearable technology]] that features a hands-free, [[lifelog|lifelogging]] camera in a plastic casing meant to be worn around the neck or clipped to clothing.<ref name=Spence13/><ref name=Goldman14>{{cite news |title=Wearable cameras at CES 2014: Autographer |author=Joshua Goldman |url=http://ces.cnet.com/2300-35304_1-10019340-3.html |work=[[CNET]] |date=8 Jan 2014 |accessdate=13 March 2014 |archive-date=12 January 2014 |archive-url=https://web.archive.org/web/20140112004132/http://ces.cnet.com/2300-35304_1-10019340-3.html |url-status=dead }}</ref><ref name=RomerLee13/> The camera is 5 [[Pixel|megapixels]] and has a 136-degree [[wide-angle lens]] that was designed to resemble a [[human eye]].<ref name=Payne13/><ref name=RomerLee13/> Autographer is 90x36mm in size and weighs approximately 58 grams.<ref name=Vincent13>{{cite news |title=Autographer camera launches: Snap 2,000 pics a day without lifting a finger |author=James Vincent |url=https://www.independent.co.uk/life-style/gadgets-and-tech/news/autographer-camera-launches-snap-2000-pics-a-day-without-lifting-a-finger-8739961.html |work=[[The Independent]] |date=31 July 2013 |accessdate=13 March 2014}}</ref><ref name=RomerLee13>{{cite news |title=Autographer – Capturing the city |author=Chris Romer-Lee |url=http://www.bdonline.co.uk/autographer-–-capturing-the-city/5063880.article |work=[[Building Design]] |date=25 November 2013 |accessdate=12 March 2014}}</ref>
+Autographer has five [[sensor|sensors]] to detect changes in environment. These changes trigger the camera to take a photo.<ref name=Curtis13/><ref name=RomerLee13/><ref name=Spence13/> There is a sensor to determine when there is a shift in color, an [[infrared]] sensor for lighting changes, a [[thermometer]] that reacts to temperature, a [[magnetometer]] that perceives direction changes, and an [[accelerometer]] which detects motion.<ref name=Woods13/><ref name=Goldman14/> The device also uses [[Global Positioning System|GPS]] to track where photos were taken.<ref name=Goldman14/><ref name=Curtis13>{{cite news |title=Autographer: 2,000 pictures a day from your wearable camera |author=Sophie Curtis |url=https://www.telegraph.co.uk/technology/news/10213150/Autographer-2000-pictures-a-day-from-your-wearable-camera.html |work=[[The Daily Telegraph]] |date=31 Jul 2013 |accessdate=13 March 2014}}</ref>
+Unlike traditional digital cameras, it does not have a screen to preview images.<ref name=Spence13/> The images captured by Autographer can be managed through an [[iOS]] or [[Android (operating system)|Android]] [[Mobile application software|app]] and desktop software.<ref name=Payne13/><ref name=RomerLee13/> [[Bluetooth]] syncing allows users to automatically port images to their devices.<ref name=Fowler14>{{cite news |title=Very Candid Cameras: Autographer and Narrative Clip Are Watching You |author=Geoffrey A. Fowler |url=https://www.wsj.com/news/articles/SB10001424052702304757004579334690844629788 |work=[[The Wall Street Journal]] |date=21 January 2014 |accessdate=13 March 2014}}</ref> Using the software and apps, users are able to edit and tag images, as well as view collected data about them, including GPS.<ref name=Goldman14/><ref name=Smith13/> Images can also be used to create animated [[Graphics Interchange Format|GIFs]] and [[stop motion]] videos.<ref name=Curtis13/><ref name=Goldman14/> 
+
+Autographer can take up to 2,000 photos a day and contains 8GB of memory that can store up to 16,000 images.<ref name=Curtis13/><ref name=Goldman14/>
+
+== Reception ==
+
+Autographer has received positive reviews for its ease of use, and the quality of its app and software by both ''[[Forbes]]'' and ''[[The Guardian]]'',<ref name=Spence13/><ref name=Payne13/><ref name=RomerLee13/> while the ability to take unique candid shots has been praised by ''[[The Wall Street Journal]]'' and ''[[Building Design]]''.<ref name=Fowler14/><ref name=RomerLee13/> It has been named a top travel gift by ''Escapism magazine'' and [[AOL]] UK Travel.<ref name=Escapsim13>{{cite news |title=Top Travel Gifts |url=http://www.escapismmagazine.com/featured/top-travel-gifts/ |newspaper=[[Escapism magazine]] |accessdate=2 April 2014}}</ref><ref name=Jowaheer13>{{cite news |title=Cracking Christmas gift ideas for travellers |author=Roshina Jowaheer |url=http://travel.aol.co.uk/2013/12/04/christmas-gift-ideas-for-travellers/#!slide=aol_1607118 |work=[[AOL UK Travel]] |date=4 December 2013 |accessdate=10 April 2014}}</ref>
+The product has received criticism in the media for privacy issues,<ref name=Vincent13/> and OMG has worked to address these concerns by including an [[etiquette]] guide with Autographer.<ref name=CellanJones13/><ref name=Curtis13/> Both ''The Wall Street Journal'' and ''The Guardian'' noted that the device's design makes it conspicuous when taking photos and includes a highly visible lens cover.<ref name=Spence13>{{cite news |title=The Autographer Is An Intelligent Wearable Camera That Raises Many Important Questions Forbes |author=Ewan Spence |url=https://www.forbes.com/sites/ewanspence/2013/12/19/the-autographer-is-an-intelligent-wearable-camera-that-raises-many-important-questions/ |work=[[Forbes]] |date=19 Dec 2013 |accessdate=12 March 2014}}</ref><ref name=Fowler14/><ref name=Payne13/> Other negative issues cited about Autographer include image quality and price.<ref name=Smith13/><ref name=CellanJones13/>
+
+== References ==
+
+{{reflist}}
+
+== External links ==
+
+[https://web.archive.org/web/20131116054459/http://www.autographer.com/ Autographer home page]
+
+[[Category:Digital cameras]]
+[[Category:Ubiquitous computing]]
+[[Category:Wearable computers]]
+[[Category:Fashion accessories]]
+[[Category:Ambient intelligence]]

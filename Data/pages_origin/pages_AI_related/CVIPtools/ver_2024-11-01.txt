@@ -1,0 +1,42 @@
+{{Short description|Open source image processing software}}
+{{Advert|date=September 2023}}
+{{Infobox software
+| name = CVIPtools
+| screenshot = [[File:CVIPtoolsfrontpage.png|CVIPtoolsfrontpage|250px]]
+| caption = A screenshot of CVIPtools running
+| author = Scott E. Umbaugh
+| programming language = [[C (programming language)|C]], [[C++]], [[C Sharp (programming language)|C#]]
+| operating system = [[Windows]], [[Unix]]
+| latest_release_version = 5.9h
+| latest_release_date = {{start date|June 2023}}
+| language = English
+| genre = [[Image processing]]
+| license = [[Freeware]]
+| website = {{URL|http://cviptools.siue.edu/}}
+}}
+
+'''CVIP'''  has the ability to read various image formats, including [[TIFF]], [[PNG]], [[GIF]], [[JPEG]], [[BMP file format|BMP]], and [[Raw image format|RAW]] formats. It supports standard image processing functions, [[image compression]], [[Digital photograph restoration|restoration]], logical and arithmetical operations between images, [[Contrast (vision)|contrast]] manipulation, image sharpening, [[frequency transform]]ation, [[edge detection]], segmentation, and [[geometric transformation]]s.<ref name=":0">{{cite web|url=http://fileforum.betanews.com/detail/CVIPtools-for-Linux/1017471208/3|title=CVIPtools for Linux|website=FileForum.betanews.com|accessdate=8 June 2018}}</ref>
+
+== CVIP-ATAT ==
+The Computer Vision and Image Processing Algorithm Test and Analysis Tool, CVIP-ATAT, creates human and computer vision applications. Its primary use is to execute [[algorithm]]s for processing multiple images at a time, incorporating various algorithmic and parameter variations. The program determines a suitable algorithm for pre-processing, segmenting, and post-processing a set of images for a specific application to distinguish crucial regions of interest within the image.
+
+CVIP-ATAT provides a [[graphical user interface]] (GUI) to input algorithms for testing and analysis. Users can define multiple processes to test at each stage, along with parameter ranges for these processes. Additionally, users can specify a group of images for processing and a set of "ideal" output images to evaluate the success of each algorithm. Each algorithm is characterized by a specific set of processes and parameter values.
+
+The tool automatically executes algorithms consisting of permutations of values for each parameter across processes and stages. Users can compare the outcomes of various algorithms to identify the optimal set of processes and parameters for the specific application. It serves as a front-end tool for [[image analysis]] to help determine the most efficient set of processes and parameters for extracting regions of interest in an image for further processing.<ref>{{cite book |last=Umbaugh |first=Scott E |title=Digital Image Processing and Analysis : Applications with Matlab and CVIP tools |publisher=CRC Press |year=2018 |isbn=978-1-4987-6602-9 |edition=3rd |location=Boca Raton, FL}}[https://www.crcpress.com/Digital-Image-Processing-and-Analysis-Applications-with-MATLAB-and-CVIPtools/Umbaugh/p/book/9781498766029]</ref>
+
+== CVIP-FEPC ==
+The Computer Vision and Image Processing Feature Extraction and Pattern Classification Tool, CVIP-FEPC, is used to advance human and computer vision applications. While its primary function is computer vision, it serves various purposes, such as supporting the development of image compression schemes for human vision applications by identifying image features needed for a specific compression scheme. In computer vision applications, feature extraction and pattern classification form the fundamental components of image analysis systems for particular applications.
+
+CVIP-FEPC's primary function is [[batch processing]] of large image sets. Users can select features and pattern classification parameters to process these image sets automatically. CVIP-FEPC allows users to define training and test sets and conduct multiple experiments to identify parameters for classifying objects of interest in the photos.
+
+CVIP-FEPC is primarily designed to work with images containing binary masks representing individual objects of interest, with one object per image. It is compatible with manually created masks using CVIP tools or other tools available in various image database applications. Users load images, specify classes, select features and the test set, choose pattern classification parameters, and initiate the processing of the image set. Subsequently, an output file containing the experiment results is generated.<ref>{{cite book |last=Umbaugh |first=Scott E |title=Digital Image Processing and Analysis : Applications with Matlab and CVIP tools |publisher=CRC Press |year=2018 |isbn=978-1-4987-6602-9 |edition=3rd |location=Boca Raton, FL}}[https://www.crcpress.com/Digital-Image-Processing-and-Analysis-Applications-with-MATLAB-and-CVIPtools/Umbaugh/p/book/9781498766029]</ref>
+
+== CVIP Toolbox for MATLAB ==
+The CVIP Toolbox contains [[Library (computing)|library functions]] for use in [[MATLAB]]. It includes arithmetic and logic functions, banding, coloring, conversion of image files, edge/line detection, [[geometry]], [[histogram]]s, mapping, morphological functions, noise filters, objective fidelity metrics, pattern classification and classification algorithms, segmentation, spatial filters, and transformation filters. The CVIP Toolbox also includes a CVIPlab skeleton program and a utility function for batch processing.<ref>{{cite book |last=Umbaugh |first=Scott E |title=Digital Image Processing and Analysis : Applications with Matlab and CVIPtools |publisher=CRC Press |year=2018 |isbn=978-1-4987-6602-9 |edition=3rd |location=Boca Raton, FL}}[https://www.crcpress.com/Digital-Image-Processing-and-Analysis-Applications-with-MATLAB-and-CVIPtools/Umbaugh/p/book/9781498766029]</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Computer vision software]]
+[[Category:Free and open-source software]]
+[[Category:Image processing software]]

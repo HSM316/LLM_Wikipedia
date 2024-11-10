@@ -1,0 +1,79 @@
+{{Multiple issues|
+{{Advert|date=April 2021}}
+{{No footnotes|date=November 2023}}
+}}
+{{Infobox company
+| name = Recogmission LLC
+| type = Private
+| industry = [[Web search engine|Search Engine]]
+| foundation = [[Samara, Russia|Samara]], [[Russian Federation]] (2006)
+| location_city = London
+| products = [[Web search engine]], [[Image search]] 
+| location_country = UK, Russian Federation
+| homepage = [http://www.recogmission.com/ www.recogmission.com] {{Dead link|date=April 2021}}
+}}
+'''Picollator''' is an [[Internet]] search engine that performs searches for web sites and multimedia by visual query (image) or text, or a combination of visual query and text. Picollator recognizes objects in the image, obtains their relevance to the text and vice versa, and searches in accordance with all information provided.
+
+== Description ==
+
+Picollator identifies human faces in the images and creates a database of people's faces. This allows the user to search for other images of the submitted person, lookalikes and/or similar images in images found on websites. Picollator can be used in any language.
+
+== History ==
+
+'''2006''' {{En dash}} Recogmission LLC developed a desktop application for photo collections management. The system automatically classifies, manages and retrieves photographs stored locally or in corporate databases.
+
+'''2007''' {{En dash}} Recogmission started Picollator multimedia search engine project, now in Beta stage.
+
+'''2008''' {{En dash}} Picollator.mobi  is launched—a new universal search engine for mobile phones.
+
+'''2009''' {{En dash}} Recogmission opens the web based [[content filter]] service piFilter.com, which inherited some pattern recognition technologies from Picollator.
+
+== Features ==
+
+Most image search engines match user textual query and picture tags. Picollator is based on a different approach. Patterns and objects found in the image are stored in its database, therefore it is able to recognise the contents of the image and compare it to other images to find similarities.
+
+
+To search for multimedia information, the user may submit
+
+*Sample image to find images with relevant people
+*Image to find web resources
+*Text to find images
+*Text to find web resources
+*Text and Image to find images and/or web resources.
+
+== Company ==
+
+[[:ru:Recogmission LLC]] has developed an indexing engine for multimedia information search based on the visual query.
+
+Recogmission develops solutions for multimedia information (image, text and video) indexing and searching on the web and in corporate environments.
+
+== References ==
+*[http://www.marketersstudio.com/2008/03/picollator-love.html Picollator Loves My Girlish Smile, ''Inside the Marketers Studio - David Berkowitz's Marketing Blog''] {{Webarchive|url=https://web.archive.org/web/20080612112800/http://www.marketersstudio.com/2008/03/picollator-love.html |date=2008-06-12 }}. March 20, 2008
+*[http://philbradley.typepad.com/phil_bradleys_weblog/2008/03/picollator---im.html Picollator - Image search engine, ''Phil Bradley's weblog'']. March 31, 2008
+*[http://www.techpin.com/image-based-queries/ Image-Based Queries, ''Techpin'']. March 16, 2008
+*[http://www.neoteo.com/picollator-buscador-de-rostros.neo Picollator: Buscador de rostros, ''Neoteo''] {{Webarchive|url=https://web.archive.org/web/20080820071932/http://www.neoteo.com/picollator-buscador-de-rostros.neo |date=2008-08-20 }}
+*[http://www.genbeta.com/2008/03/26-picollator-online-search-buscador-de-caras-dentro-de-las-imagenes-online Picollator Online Search, buscador de caras dentro de las imágenes online, ''Genbeta''] {{Webarchive|url=https://web.archive.org/web/20080709060923/http://www.genbeta.com/2008/03/26-picollator-online-search-buscador-de-caras-dentro-de-las-imagenes-online |date=2008-07-09 }}. March 26, 2008
+*[http://www.web20share.com/2008/04/picollator.html  Picollator:基于脸部特征的图片搜索引擎, 天涯海阁] {{Webarchive|url=https://web.archive.org/web/20080805173137/http://www.web20share.com/2008/04/picollator.html |date=2008-08-05 }}
+*[http://www.at-web.de/blog/20080721/picollator-gesichter-suchen-mit-bildvorlagen.htm Picollator - Gesichter suchen mit Bildvorlagen, ''@-web Suchmaschinen Weblog'']. July 21, 2008
+*[http://internetcommunications.tmcnet.com/topics/enterprise/articles/34083-picollator-launches-new-web-search-system.htm Picollator Launches New Web Search System, ''TMCnet.com''] {{Webarchive|url=https://web.archive.org/web/20080808194116/http://internetcommunications.tmcnet.com/topics/enterprise/articles/34083-picollator-launches-new-web-search-system.htm |date=2008-08-08 }}. July 15, 2008
+*[http://www.internetworld.de/home/news-single/article/picollator-sucht-menschen-mithilfe-von-gesichtserkennung-7949.html Picollator sucht Menschen mithilfe von Gesichtserkennung, ''Internet World Business''] {{Webarchive|url=https://web.archive.org/web/20081004174447/http://www.internetworld.de/home/news-single/article/picollator-sucht-menschen-mithilfe-von-gesichtserkennung-7949.html |date=2008-10-04 }}. July 22, 2008
+*[http://kmvirtual.com/2008/05/30/sketch-based-query-search-engine/ Sketch based query for image retrieval, ''Kmvirtual''] {{Webarchive|url=https://web.archive.org/web/20090301011353/http://kmvirtual.com/2008/05/30/sketch-based-query-search-engine/ |date=2009-03-01 }}. May 30, 2008
+*[http://startupers.ru/startups/picollator_search_similar_faces/  Picollator - текстовый или визуальный поиск?, ''Стартаперы.ru'']{{Dead link|date=April 2021}}
+*[http://www.mediaatlas.ru/news/?id=24175 Picollator ищет похожих людей, ''Новости Медиа Атлас''] {{Webarchive|url=https://web.archive.org/web/20111002134341/http://www.mediaatlas.ru/news/?id=24175 |date=2011-10-02 }}. March 3, 2008
+*[http://internetakias.gr/2008/04/07/picollator/ Picollator - Οπτική αναζήτηση… περίπου :), ''Internetakias.gr''] {{Webarchive|url=https://web.archive.org/web/20081002055021/http://internetakias.gr/2008/04/07/picollator/ |date=2008-10-02 }}. April 7, 2008
+*[http://itua.info/news/internet/13588.html Доступны мультимедийные запросы в новой поисковой системе Picollator, ''ITua.info'']. March 14, 2008
+*[http://www.newsland.ru/News/Detail/id/279141/cat/18 Как найти человека по рисунку лица?, ''Newsland'']
+*[http://www.igromania.ru/Articles/13905/Vsevidyashee_oko_onlaina_Obzor_neobychnyh_poiskovikov.htm Всевидящее око онлайна, ''Игромания'']. July, 2008
+*[http://osp-con.ru/news/articles/2008/26/5171554/ Microsoft поднимет долю программ в ВВП, ''OSP.ru'']{{Dead link|date=April 2021}} July 1, 2008
+*[http://www.ppc-seo.blogspot.com/2008/04/blog-post_3063.html Система поиска по мультимедийным запросам, ''Мониторинг Интернета'']. April 7, 2008 
+*[http://elvisti.com/node/74902 В Рунете запущена система мультимедийного поиска Picollator.ru, ''Elvisti.com'']. April 13, 2008
+*[http://www.rocit.ru/news/shownews.php3?id=35106 Мультимедийный поиск становится интеллектуальным, ''Rocit.ru''] {{Webarchive|url=https://web.archive.org/web/20160306192729/http://www.rocit.ru/news/shownews.php3?id=35106 |date=2016-03-06 }}. July 2, 2008
+*[http://eplus.com.ua/news/_2008-03-11-14-44-26.html В Рунете появилась система поиска похожих картинок, ''Eplus.com.ua''] {{Webarchive|url=https://web.archive.org/web/20080725040455/http://eplus.com.ua/news/_2008-03-11-14-44-26.html |date=2008-07-25 }}. March 11, 2008
+*[http://www.commcenter.ru/mmedia/articles/2008_03_29_02.html Ресурсы в сети можно искать с помощью изображений, ''Commcenter.ru'']. March 29, 2008
+
+
+
+{{Web search engines navbox}}
+[[Category:Facial recognition software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Internet search engines]]

@@ -1,0 +1,110 @@
+{{Main|2020 World Junior Ice Hockey Championships}}
+
+{{Infobox international hockey competition
+| tourney_name =IIHF U20 World Championship<br>Division I
+| year = 2020
+| image = 
+| size = 
+| caption = 
+| country = Bulgaria
+| dates = 13 – 19 January 2020
+| num_teams = 8
+| venues = 1
+| cities = 1
+| prevseason = [[2019 World Junior Ice Hockey Championships – Division III|2019]]
+| nextseason = [[2021 World Junior Ice Hockey Championships – Division III|2021]]
+}}
+
+The '''2020 World Junior Ice Hockey Championship Division III''' consisted of two groups of four teams each: the top 2 teams from each division will play in the semi finals in a 4 team bracket for a chance to play for promotion to Division II B, while the bottom 2 teams in each group will play in placement rounds for 5th to 8th place.
+
+To be eligible as a junior player in these tournaments, a player cannot be born earlier than 2000. 
+
+==Division III ==
+The Division III tournament was played in [[Sofia]], [[Bulgaria]], from 13 – 19 January 2020.<ref>{{cite web|url=http://reports.iihf.hockey/Hydra/792/IHM792000_08_1_0.pdf|title=IIHF Ice hockey U20 World Championship Div III – Competition schedule|date=26 September 2019|publisher=[[International Ice Hockey Federation|IIHF]]|access-date=31 December 2019}}</ref>
+
+{{Infobox international hockey competition
+| tourney_name =IIHF U20 World Championship<br>Division III
+| year = 2020
+| image = 
+| size = 
+| caption = 
+| country = Bulgaria
+| dates = 13-19 January 2020
+| num_teams = 8
+| venues = 1
+| cities = 1
+| games = 
+| goals = 
+| attendance = 
+| scoring_leader = 
+| points = 
+}}
+
+===Participants===
+{| class="wikitable"
+|-
+! Team || Qualification
+|-
+| {{ihj|MEX}}|| placed 6th in Division II B last year and were relegated
+|-
+| {{ihj|AUS}}|| placed 2nd in Division III last year
+|-
+| {{ihj|TUR}}|| placed 3rd in Division III last year
+|-
+| {{ihj|BUL}}|| placed 4th in Division III last year
+|-
+| {{ihj|ISL}}|| placed 5th in Division III last year
+|-
+| {{ihj|TPE}}|| placed 6th in Division III last year
+|-
+| {{ihj|RSA}}|| placed 7th in Division III last year
+|-
+| {{ihj|NZL}}|| placed 8th in Division III last year
+|}
+
+===Match officials===
+{{col-begin}}
+{{col-2}}
+;Referees
+
+{{col-2}}
+;Linesmen
+
+{{col-end}}
+
+===Standings===
+{| class="wikitable floatright" style="text-align:center;" width=220px
+|-
+| '''Division III Venue'''
+|-
+|width=220px|'''[[Sofia]]'''
+|-
+|[[Winter Sports Palace]]<br>Capacity: 4,600
+|-
+|[[File:http://www.sofia-guide.com/assets/winter_palace_sports_sofia_training.jpg|220px]]
+|}
+
+;Group A
+<section begin=Division III/>
+{{#invoke:Sports table|main|style=WL OT
+
+|source=
+
+|team_order= BUL, MEX, ISL, NZL
+
+|win_BUL=0|OTwin_BUL=0|OTloss_BUL=0|loss_BUL=0|gf_BUL=0|ga_BUL=0|status_BUL=H
+|win_MEX=0|OTwin_MEX=0|OTloss_MEX=0|loss_MEX=0|gf_MEX=0|ga_MEX=0|status_MEX=
+|win_ISL=0|OTwin_ISL=0|OTloss_ISL=0|loss_ISL=0|gf_ISL=0|ga_ISL=0|status_ISL=
+|win_NZL=0|OTwin_NZL=0|OTloss_NZL=0|loss_NZL=0|gf_NZL=0|ga_NZL=0|status_NZL=
+
+|name_BUL={{ihj|BUL}}
+|name_MEX={{ihj|MEX}}
+|name_ISL={{ihj|ISL}}
+|name_NZL={{ihj|NZL}}
+
+|result1=A |result2=A |result3=Q |result4=Q
+|res_col_header=Q
+|col_A=green1 |text_A=Advance to Semi Finals
+|col_Q=blue1 |text_Q=Advance to Placement Round
+}}
+<section end=Division III/>

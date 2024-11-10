@@ -1,0 +1,46 @@
+{{unclear|date=February 2021}}
+
+<!-- DEFINITIONS -->
+'''Artificial wisdom''' is a [[software system]] that can demonstrate one or more qualities of being [[wikt:wise|wise]].
+
+Artificial wisdom can be described as [[artificial intelligence]] reaching the top-level of decision-making when confronted with the most complex challenging situations.<ref>{{cite book | title=Studies in Computational Intelligence | chapter=Intelligent Decision Making: An AI-Based Approach | publisher=Springer | year=2008 | volume=97 | isbn=978-3-540-76828-9 | issn=1860-949X | doi=10.1007/978-3-540-76829-6 | page=}}</ref> The term artificial wisdom is used when the "intelligence" is based on more than by chance collecting and interpreting data, but by design<ref>{{cite journal | last1 = Suarez | first1 = Juan Francisco | title = Wise by Design: A Wisdom-Based Framework for Innovation and Organizational Design and its Potential Application in the Future of Higher Education | year = 2014 | pages = 131 | journal = Dissertations & Theses Antioch University | url = http://aura.antioch.edu/etds/131}}</ref> enriched with smart and conscience strategies that wise people would use.<ref>{{cite journal | last1 = Wang | first1 = Feng-Hsu | title = Personalized recommendation for web-based learning based on ant colony optimization with segmented-goal and meta-control strategies | year = 2011 | pages = 2054–2059 | journal = IEEE International Conference on Fuzzy Systems | doi = 10.1109/FUZZY.2011.6007628 | isbn = 978-1-4244-7315-1 | s2cid = 33702266 }}</ref>
+
+The worries about the future with artificial intelligence is bend to a more positive perspective when considering computer-aided wisdom; the collaboration between artificial intelligence and [[contemplative neuroscience]].<ref>{{cite journal | last1 = Karamjit | first1 = Gill | title = Citizens and netizens: a contemplation on ubiquitous technology | year = 2013 | volume = 28 | issue = 2 | pages = 131–132 | journal =  AI & Society| doi = 10.1007/s00146-013-0451-5 | doi-access = free }}</ref>
+
+== References ==
+<references/>
+
+== Further reading ==
+{{refbegin|30em}}
+* {{cite journal | last1 = Casacuberta Sevilla | first1 = David | title = The quest for artificial wisdom | year = 2013 | volume = 28 | issue = 2 | pages = 199–207 | journal =  AI & Society| doi = 10.1007/s00146-012-0390-6 | s2cid = 17183036 }}
+* {{cite journal | last1 = Davis | first1 = Joshua P. | title = Artificial wisdom? A potential limit on AI in law (and elsewhere) | year = 2019 | volume = 72 | issue = 1 | journal =  Oklahoma Law Review| doi = 10.2139/ssrn.3350600 | s2cid = 172032989 | url = https://digitalcommons.law.ou.edu/cgi/viewcontent.cgi?article=1377&context=olr }}
+* {{cite journal | last1 = Tsai | first1 = Cheng-hung | title = Artificial wisdom: a philosophical framework | year = 2020 | journal =  AI & Society| volume = 35 | issue = 4 | pages = 937–944 | doi = 10.1007/s00146-020-00949-5 | s2cid = 211234659 }}
+* {{cite journal | author1= Siddike M.A.K., Iwano K., Hidaka K., Kohda Y., Spohrer J. | title = Wisdom Service Systems: Harmonious Interactions Between People and Machine | year = 2018 | volume = 601 | pages = 115–127 | journal = Advances in Intelligent Systems and Computing | doi = 10.1007/978-3-319-60486-2_11 | isbn = 978-3-319-60485-5 }}
+* {{Cite journal |title=An AI That Knows the World Like Children Do <!--magazine article title: "Making AI More Human" --> |url=https://www.scientificamerican.com/article/an-ai-that-knows-the-world-like-children-do/ |first= Alison |last=Gopnik |author-link=Alison Gopnik |date=June 2017 |journal=Scientific American |volume=316 |number=6 |pages=60–65 |doi=10.1038/scientificamerican0617-60|pmid=28510556 }}
+*{{Cite journal |journal=Scientific American |doi=10.1038/scientificamerican0317-58 |date=March 2017 |volume=316 |number=3 |pages=58–63 |first=Gary |last=Marcus |title=The Search for a New Test of Artificial Intelligence <!--magazine article title: "Am I Human?"-->
+
+ |pmid=28207697 |url=https://www.scientificamerican.com/article/the-search-for-a-new-test-of-artificial-intelligence/ |quote=A stumbling block to AI has been an incapacity for reliable disambiguation. An example is the "pronoun disambiguation problem": a machine has no way of determining to whom or what a pronoun in a sentence refers.}}
+* {{cite journal | last1 = San Segundo | first1 = Rosa | title = A new concept of knowledge | year = 2002 | volume = 26 | issue = 4 | pages = 239–245 | journal = Online Information Review | doi = 10.1108/14684520210438688 | hdl = 10016/4490 | hdl-access = free }}
+* {{Cite journal |author-link=George Musser |first=George |last=Musser |title=Machine Learning Gets a Bit More Humanlike <!--magazine article title: "Artificial Imagination"--> |date=May 2019 |journal=Scientific American |volume=320 |number=5 |pages=58–64 |url=https://www.scientificamerican.com/article/machine-learning-gets-a-bit-more-humanlike/ |doi=10.1038/scientificamerican0519-58|doi-broken-date=2022-07-24 }}
+* {{cite journal | last1 = Serenko | first1 = Alexander | author2=Michael Dohan | year = 2011 | title = Comparing the expert survey and citation impact journal ranking methods: Example from the field of Artificial Intelligence | url = http://www.aserenko.com/papers/JOI_AI_Journal_Ranking_Serenko.pdf | journal = Journal of Informetrics | volume = 5 | issue = 4| pages = 629–649 | doi = 10.1016/j.joi.2011.06.002}}
+
+{{refend}}
+
+{{Existential_risk_from_artificial_intelligence}}
+{{Philosophy of mind}}
+{{Cybernetics}}
+{{Computer science}}
+{{Evolutionary computation}}
+{{emerging technologies|topics=yes|infocom=yes}}
+{{Glossaries of science and engineering}}
+{{Authority control}}
+
+[[Category:Artificial intelligence]]
+[[Category:Cybernetics]]
+[[Category:Formal sciences]]
+[[Category:Computational neuroscience]]
+[[Category:Emerging technologies]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Computational fields of study]]
+
+{{ai-stub}}

@@ -1,0 +1,302 @@
+{{Short description|Measurement of algorithmic bias}}
+{{Multiple issues|{{Manual|date=December 2019}}
+{{Technical|date=December 2019}}}}
+'''Fairness''' in [[Machine Learning|machine learning]] refers to the various attempts at correcting [[algorithmic bias]] in automated decision processes based on machine learning models. Decisions made by computers after a machine-learning process may be considered unfair if they were based on [[Dependent and independent variables|variables]] considered '''sensitive'''. Examples of these kinds of variable include [[gender]], [[ethnicity]], [[sexual orientation]], [[disability]] and more. As it is the case with many ethical concepts, definitions of fairness and bias are always controversial. In general, fairness and bias are considered relevant when the decision process impacts people's lives. In [[machine learning]], the problem of [[algorithmic bias]] is well known and well studied. Outcomes may be skewed by a range of factors and thus might be considered unfair with respect to certain groups or individuals. An example would be the way social media sites deliver personalized news to consumers.
+
+== Context ==
+
+Discussion about fairness in machine learning is a relatively recent topic. Since 2016 there has been a sharp increase in research into the topic.<ref>{{Cite journal |last1=Caton |first1=Simon |last2=Haas |first2=Christian |date=2020-10-04 |title=Fairness in Machine Learning: A Survey |url=http://arxiv.org/abs/2010.04053 |arxiv=2010.04053 }}</ref> This increase could be partly accounted to an influential report by [[ProPublica]] that claimed that the [[COMPAS (software)|COMPAS]] software, widely used in US courts to predict [[recidivism]], was racially biased.<ref name=":0" /> One topic of research and discussion is the definition of fairness, as there is no universal definition, and different definitions can be in contradiction with each other, which makes it difficult to judge machine learning models.<ref>{{Cite journal |last1=Friedler |first1=Sorelle A. |last2=Scheidegger |first2=Carlos |last3=Venkatasubramanian |first3=Suresh |date=April 2021 |title=The (Im)possibility of fairness: different value systems require different mechanisms for fair decision making |url=https://dl.acm.org/doi/10.1145/3433949 |journal=Communications of the ACM |language=en |volume=64 |issue=4 |pages=136–143 |doi=10.1145/3433949 |s2cid=1769114 |issn=0001-0782}}</ref> Other research topics include the origins of bias, the types of bias, and methods to reduce bias.<ref>{{Cite journal |last1=Mehrabi |first1=Ninareh |last2=Morstatter |first2=Fred |last3=Saxena |first3=Nripsuta |last4=Lerman |first4=Kristina |last5=Galstyan |first5=Aram |date=2021-07-13 |title=A Survey on Bias and Fairness in Machine Learning |url=https://doi.org/10.1145/3457607 |journal=ACM Computing Surveys |volume=54 |issue=6 |pages=115:1–115:35 |doi=10.1145/3457607 |arxiv=1908.09635 |s2cid=201666566 |issn=0360-0300}}</ref>
+
+In recent years tech companies have made tools and manuals on how to detect and reduce [[bias]] in machine learning. [[IBM]] has tools for [[Python (programming language)|Python]] and [[R (programming language)|R]] with several algorithms to reduce software bias and increase its fairness.<ref name="IBM">{{Cite web |title=AI Fairness 360 |url=https://aif360.mybluemix.net/ |access-date=2022-11-18 |website=aif360.mybluemix.net}}</ref><ref>{{cite web |title=IBM AI Fairness 360 open source toolkit adds new functionalities |date=4 June 2020 |url=http://www.techrepublic.com/google-amp/article/ibm-ai-fairness-360-open-source-toolkit-adds-new-functionalities/ |publisher=Tech Republic}}</ref> [[Google]] has published guidlines and tools to study and combat bias in machine learning.<ref>{{Cite web |title=Responsible AI practices |url=https://ai.google/responsibilities/responsible-ai-practices/ |access-date=2022-11-18 |website=Google AI |language=en}}</ref><ref>{{Citation |title=Fairness Indicators |date=2022-11-10 |url=https://github.com/tensorflow/fairness-indicators |publisher=tensorflow |access-date=2022-11-18}}</ref> [[Facebook]] have reported their use of a tool, Fairness Flow, to detect bias in their [[Artificial intelligence|AI]].<ref>{{Cite web |title=How we're using Fairness Flow to help build AI that works better for everyone |url=https://ai.facebook.com/blog/how-were-using-fairness-flow-to-help-build-ai-that-works-better-for-everyone/ |access-date=2022-11-18 |website=ai.facebook.com |language=en}}</ref> However, critics have argued that the company's efforts are insufficient, reporting little use of the tool by employees as it cannot be used for all their programs and even when it can, use of the tool is optional.<ref>{{Cite web |date=2021-03-31 |title=AI experts warn Facebook's anti-bias tool is 'completely insufficient' |url=https://venturebeat.com/business/ai-experts-warn-facebooks-anti-bias-tool-is-completely-insufficient/ |access-date=2022-11-18 |website=VentureBeat |language=en-US}}</ref> 
+
+==Controversies==
+{{Main articles|Algorithmic bias#Impact}}The use of algorithmic decision making in the legal system has been a notable area of use under scrutiny. In 2014, then [[United States Attorney General|U.S. Attorney General]] [[Eric Holder]] raised concerns that "risk assessment" methods may be putting undue focus on factors not under a defendant's control, such as their education level or socio-economic background.<ref>{{Cite web |date=2014-08-01 |title=Attorney General Eric Holder Speaks at the National Association of Criminal Defense Lawyers 57th Annual Meeting and 13th State Criminal Justice Network Conference |url=https://www.justice.gov/opa/speech/attorney-general-eric-holder-speaks-national-association-criminal-defense-lawyers-57th |access-date=2022-04-16 |website=www.justice.gov |language=en}}</ref> The 2016 report by [[ProPublica]] on [[COMPAS (software)|COMPAS]] claimed that black defendants were almost twice as likely to be incorrectly labelled as higher risk than white defendants, while making the opposite mistake with white defendants.<ref name=":0">{{Cite web |last=Mattu |first=Julia Angwin,Jeff Larson,Lauren Kirchner,Surya |title=Machine Bias |url=https://www.propublica.org/article/machine-bias-risk-assessments-in-criminal-sentencing |access-date=2022-04-16 |website=ProPublica |language=en}}</ref> The creator of [[COMPAS (software)|COMPAS]], Northepointe Inc., disputed the report, claiming their tool is fair and ProPublica made statistical errors,<ref>{{Cite journal |last1=Dieterich |first1=William |last2=Mendoza |first2=Christina |last3=Brennan |first3=Tim |date=2016 |title=COMPAS Risk Scales: Demonstrating Accuracy Equity and Predictive Parity |url=https://njoselson.github.io/pdfs/ProPublica_Commentary_Final_070616.pdf |journal=Northpointe Inc}}</ref> which was subsequently refuted again by ProPublica.<ref>{{Cite web |last=Angwin |first=Jeff Larson,Julia |title=Technical Response to Northpointe |url=https://www.propublica.org/article/technical-response-to-northpointe |access-date=2022-11-18 |website=ProPublica |language=en}}</ref>
+
+Racial and gender bias has also been noted in image recognition algorithms. Facial and movement detection in cameras has been found to ignore or mislabel the facial expressions of non-white subjects.<ref>{{Cite magazine |last=Rose |first=Adam |date=2010-01-22 |title= |language=en-US |magazine=Time |url=http://content.time.com/time/business/article/0,8599,1954643,00.html |access-date=2022-11-18 |issn=0040-781X}}</ref> In 2015, the automatic tagging feature in both [[Flickr]] and [[Google Photos]] was found to label black people with tags such as "animal" and "gorilla".<ref>{{Cite web |date=2015-07-01 |title=Google says sorry for racist auto-tag in photo app |url=http://www.theguardian.com/technology/2015/jul/01/google-sorry-racist-auto-tag-photo-app |access-date=2022-04-16 |website=the Guardian |language=en}}</ref> A [[Beauty.AI|2016 international beauty contest judged by an AI algorithm]] was found to be biased towards individuals with lighter skin, likely due to bias in training data.<ref>{{Cite web |date=2016-09-08 |title=A beauty contest was judged by AI and the robots didn't like dark skin |url=http://www.theguardian.com/technology/2016/sep/08/artificial-intelligence-beauty-contest-doesnt-like-black-people |access-date=2022-04-16 |website=the Guardian |language=en}}</ref> A study of three commercial gender classification algorithms in 2018 found that all three algorithms were generally most accurate when classifying light-skinned males and worst when classifying dark-skinned females.<ref>{{cite conference |last1=Buolamwini |first1=Joy |author-link1=Joy Buolamwini |last2=Gebru |first2=Timnit |author-link2=Timnit Gebru |date=February 2018 |title=Gender Shades: Intersectional Accuracy Disparities in Commercial Gender Classification |url=http://proceedings.mlr.press/v81/buolamwini18a/buolamwini18a.pdf |conference=Conference on Fairness, Accountability and Transparency |location=New York, NY, USA |pages=77–91}}</ref> In 2020, an image cropping tool from [[Twitter]]  was shown to prefer lighter skinned faces.<ref>{{Cite web |date=2021-08-10 |title=Student proves Twitter algorithm 'bias' toward lighter, slimmer, younger faces |url=http://www.theguardian.com/technology/2021/aug/10/twitters-image-cropping-algorithm-prefers-younger-slimmer-faces-with-lighter-skin-analysis |access-date=2022-11-18 |website=the Guardian |language=en}}</ref> [[DALL-E]], a machine learning [[Text-to-image model]] released in 2021, has been prone to create racist and sexist images that reinforce societal stereotypes, something that has been admitted by its creators.<ref>{{Citation |title=openai/dalle-2-preview |date=2022-11-17 |url=https://github.com/openai/dalle-2-preview/blob/eeec5a1843b1d17cb9ed113117a2fcaa9206a564/system-card.md |publisher=OpenAI |access-date=2022-11-18}}</ref>
+
+Other areas where machine learning algorithms are in use that have been shown to be biased include job and loan applications. [[Amazon (company)|Amazon]] has used software to review job applications that was sexist, for example by penalizing resumes that included the word "women".<ref>{{Cite news |date=2018-10-10 |title=Amazon scraps secret AI recruiting tool that showed bias against women |language=en |work=Reuters |url=https://www.reuters.com/article/us-amazon-com-jobs-automation-insight-idUSKCN1MK08G |access-date=2022-11-18}}</ref> In 2019, [[Apple Inc.|Apple]]'s algorithm to determine credit card limits for their new [[Apple Card]] gave significantly higher limits to males than females, even for couples that shared their finances.<ref>{{Cite news |title=Apple Card algorithm sparks gender bias allegations against Goldman Sachs |language=en-US |newspaper=Washington Post |url=https://www.washingtonpost.com/business/2019/11/11/apple-card-algorithm-sparks-gender-bias-allegations-against-goldman-sachs/ |access-date=2022-11-18 |issn=0190-8286}}</ref> Mortgage-approval algorithms in use in the U.S. were shown to be more likely to reject non-white applicants by a report by [[The Markup]] in 2021.<ref>{{Cite web |last1=Martinez |first1=Emmanuel |last2=Kirchner |first2=Lauren |title=The Secret Bias Hidden in Mortgage-Approval Algorithms – The Markup |url=https://themarkup.org/denied/2021/08/25/the-secret-bias-hidden-in-mortgage-approval-algorithms |access-date=2022-11-18 |website=themarkup.org |language=en}}</ref>{{Expand section|date=January 2022}}
+
+== Group Fairness criteria ==
+In [[Statistical classification|classification]] problems, an algorithm learns a function to predict a discrete characteristic <math display="inline"> Y </math>, the target variable, from known characteristics <math display="inline"> X </math>. We model <math display="inline"> A </math> as a discrete [[random variable]] which encodes some characteristics contained or implicitly encoded in <math display="inline"> X </math> that we consider as sensitive characteristics (gender, ethnicity, sexual orientation, etc.). We finally denote by <math display="inline"> R </math> the prediction of the [[Statistical classification|classifier]].
+Now let us define three main criteria to evaluate if a given classifier is fair, that is if its predictions are not influenced by some of these sensitive variables.<ref name="Barocas">Solon Barocas; Moritz Hardt; Arvind Narayanan, [http://www.fairmlbook.org ''Fairness and Machine Learning'']. Retrieved 15 December 2019.</ref>
+
+=== Independence ===
+
+We say the [[random variable]]s <math display="inline">(R,A)</math> satisfy '''independence''' if the sensitive characteristics <math display="inline"> A </math> are [[Independence (probability theory)|statistically independent]] of the prediction <math display="inline"> R </math>, and we write
+<math display="block"> R \bot A. </math>
+We can also express this notion with the following formula:
+<math display="block"> P(R = r\ |\ A = a) = P(R = r\ |\ A = b) \quad \forall r \in R \quad \forall a,b \in A </math>
+This means that the classification rate for each target classes is equal for people belonging to different groups with respect to sensitive characteristics <math>A</math>.
+
+Yet another equivalent expression for independence can be given using the concept of [[mutual information]] between [[random variables]], defined as
+<math display="block"> I(X,Y) = H(X) + H(Y) - H(X,Y) </math>
+In this formula, <math display="inline"> H(X) </math> is the [[Entropy (information theory)|entropy]] of the [[random variable]] <math> X </math>. Then <math display="inline"> (R,A) </math> satisfy independence if <math display="inline"> I(R,A) = 0 </math>.
+
+A possible [[relaxation (approximation)|relaxation]] of the independence definition include introducing a positive [[Slack variable|slack]] <math display="inline> \epsilon > 0 </math> and is given by the formula:
+<math display="block"> P(R = r\ |\ A = a) \geq P(R = r\ |\ A = b) - \epsilon \quad \forall r \in R \quad \forall a,b \in A </math>
+
+Finally, another possible [[Relaxation (approximation)|relaxation]] is to require <math display="inline"> I(R,A) \leq \epsilon </math>.
+
+=== Separation ===
+
+We say the [[random variable]]s <math display="inline">(R,A,Y)</math> satisfy '''separation''' if the sensitive characteristics <math display="inline"> A </math> are [[Independence (probability theory)|statistically independent]] of the prediction <math display="inline"> R </math> given the target value <math display="inline"> Y </math>, and we write
+<math display="block"> R \bot A\ |\ Y. </math>
+We can also express this notion with the following formula:
+<math display="block"> P(R = r\ |\ Y = q, A = a) = P(R = r\ |\ Y = q, A = b) \quad \forall r \in R \quad q \in Y \quad \forall a,b \in A </math>
+This means that all the dependence of the decision <math>R</math> on the sensitive attribute <math>A</math> must be justified by the actual dependence of the true target variable <math>Y</math>.
+
+Another equivalent expression, in the case of a binary target rate, is that the [[Sensitivity and specificity|true positive rate]] and the [[Sensitivity and specificity|false positive rate]] are equal (and therefore the [[Sensitivity and specificity|false negative rate]] and the [[Sensitivity and specificity|true negative rate]] are equal) for every value of the sensitive characteristics:
+<math display="block"> P(R = 1\ |\ Y = 1, A = a) = P(R = 1\ |\ Y = 1, A = b) \quad \forall a,b \in A </math>
+<math display="block"> P(R = 1\ |\ Y = 0, A = a) = P(R = 1\ |\ Y = 0, A = b) \quad \forall a,b \in A </math>
+
+A possible relaxation of the given definitions is to allow the value for the difference between rates to be a [[Sign (mathematics)|positive number]] lower than a given [[slack variable|slack]] <math display="inline> \epsilon > 0 </math>, rather than equal to zero.
+
+
+In some fields separation (separation coefficient) in a [[confusion matrix]] is a measure of the distance (at a given level of the probability score) between the ''predicted'' cumulative percent negative and ''predicted'' cumulative percent positive. 
+
+The greater this separation coefficient is at a given score value, the more effective the model is at differentiating between the set of positives and negatives at a particular probability cut-off. According to Mayes:<ref>{{Cite book |last=Mayes |first=Elizabeth |title=Handbook of Credit Scoring |publisher=Glenlake Publishing |year=2001 |isbn=0-8144-0619-X |location=NY, NY, USA |pages=282 |language=English}}</ref> "It is often observed in the credit industry that the selection of validation measures depends on the modeling approach. For example, if modeling procedure is parametric or semi-parametric, the [[K-S test|'''two-sample K-S test''']] is often used. If the model is derived by heuristic or iterative search methods, the measure of model performance is usually [[Divergence (statistics)|'''divergence''']]. A third option is the coefficient of separation...The coefficient of separation, compared to the other two methods, seems to be most reasonable as a measure for model performance because it reflects the separation pattern of a model."
+
+=== Sufficiency ===
+
+We say the [[random variable]]s <math display="inline">(R,A,Y)</math> satisfy '''sufficiency''' if the sensitive characteristics <math display="inline"> A </math> are [[Independence (probability theory)|statistically independent]] of the target value <math display="inline"> Y </math> given the prediction <math display="inline"> R </math>, and we write
+<math display="block"> Y \bot A\ |\ R. </math>
+We can also express this notion with the following formula:
+<math display="block"> P(Y = q\ |\ R = r, A = a) = P(Y = q\ |\ R = r, A = b) \quad \forall q \in Y \quad r \in R \quad \forall a,b \in A </math>
+This means that the [[probability theory|probability]] of actually being in each of the groups is equal for two individuals with different sensitive characteristics given that they were predicted to belong to the same group.
+
+=== Relationships between definitions ===
+
+Finally, we sum up some of the main results that relate the three definitions given above:
+
+* Assuming <math display="inline"> Y </math> is binary, if <math display="inline"> A </math> and <math display="inline"> Y </math> are not [[Independence (probability theory)|statistically independent]], and <math display="inline"> R </math> and <math display="inline"> Y </math> are not [[Independence (probability theory)|statistically independent]] either, then independence and separation cannot both hold.
+* If <math display="inline">(R,A,Y)</math> as a [[joint distribution]] has positive [[probability theory|probability]] for all its possible values and <math display="inline"> A </math> and <math display="inline"> Y </math> are not [[Independence (probability theory)|statistically independent]], then separation and sufficiency cannot both hold.
+
+
+=== Mathematical formulation of group fairness definitions ===
+
+==== Preliminary definitions ====
+{{Main articles|Confusion matrix}}
+
+Most statistical measures of fairness rely on different metrics, so we will start by defining them. When working with a [[binary numeral system|binary]] classifier, both the predicted and the actual classes can take two values: positive and negative. Now let us start explaining the different possible relations between predicted and actual outcome:<ref name="metrics_paper">Verma, Sahil, and Julia Rubin. [https://doi.org/10.23919/FAIRWARE.2018.8452913 "Fairness definitions explained."] In 2018 IEEE/ACM international workshop on software fairness (fairware), pp. 1-7. IEEE, 2018.</ref>[[File:Binary confusion matrix.jpg|frame|Confusion matrix]]
+* '''True positive (TP)''': The case where both the predicted and the actual outcome are in a positive class.
+* '''True negative (TN)''': The case where both the predicted outcome and the actual outcome are assigned to the negative class.
+* '''False positive (FP)''': A case predicted to befall into a positive class assigned in the actual outcome is to the negative one.
+* '''False negative (FN)''': A case predicted to be in the negative class with an actual outcome is in the positive one.
+These relations can be easily represented with a [[confusion matrix]], a table that describes the accuracy of a classification model. In this matrix, columns and rows represent instances of the predicted and the actual cases, respectively.
+
+By using these relations, we can define multiple metrics which can be later used to measure the fairness of an algorithm:
+* '''Positive predicted value (PPV)''': the fraction of positive cases which were correctly predicted out of all the positive predictions. It is usually referred to as [[accuracy and precision|precision]], and represents the [[probability theory|probability]] of a correct positive prediction. It is given by the following formula:
+<math display="block"> PPV = P(actual=+\ |\ prediction=+) = \frac{TP}{TP+FP}</math>
+* '''False discovery rate (FDR)''': the fraction of positive predictions which were actually negative out of all the positive predictions. It represents the [[probability theory|probability]] of an erroneous positive prediction, and it is given by the following formula:
+<math display="block"> FDR = P(actual=-\ |\ prediction=+) = \frac{FP}{TP+FP} </math>
+* '''Negative predicted value (NPV)''': the fraction of negative cases which were correctly predicted out of all the negative predictions. It represents the [[probability theory|probability]] of a correct negative prediction, and it is given by the following formula:
+<math display="block"> NPV = P(actual=-\ |\ prediction=-) = \frac{TN}{TN+FN} </math>
+* '''False omission rate (FOR)''': the fraction of negative predictions which were actually positive out of all the negative predictions. It represents the [[probability theory|probability]] of an erroneous negative prediction, and it is given by the following formula:
+<math display="block"> FOR = P(actual=+\ |\ prediction=-) = \frac{FN}{TN+FN} </math>
+* '''True positive rate (TPR)''': the fraction of positive cases which were correctly predicted out of all the positive cases. It is usually referred to as sensitivity or recall, and it represents the [[probability theory|probability]] of the positive subjects to be classified correctly as such. It is given by the formula:
+<math display="block"> TPR = P(prediction=+\ |\ actual=+) = \frac{TP}{TP+FN} </math>
+* '''False negative rate (FNR)''': the fraction of positive cases which were incorrectly predicted to be negative out of all the positive cases. It represents the [[probability theory|probability]] of the positive subjects to be classified incorrectly as negative ones, and it is given by the formula:
+<math display="block"> FNR = P(prediction=-\ |\ actual=+) = \frac{FN}{TP+FN} </math>
+* '''True negative rate (TNR)''': the fraction of negative cases which were correctly predicted out of all the negative cases. It represents the [[probability theory|probability]] of the negative subjects to be classified correctly as such, and it is given by the formula:
+<math display="block"> TNR = P(prediction=-\ |\ actual=-) = \frac{TN}{TN+FP} </math>
+* '''False positive rate (FPR)''': the fraction of negative cases which were incorrectly predicted to be positive out of all the negative cases. It represents the [[probability theory|probability]] of the negative subjects to be classified incorrectly as positive ones, and it is given by the formula:
+<math display="block"> FPR = P(prediction=+\ |\ actual=-) = \frac{FP}{TN+FP} </math>
+
+
+[[File:RelationsEng.jpg|frame|Relationship between fairness criteria as shown in Barocas et al.<ref name="Barocas"/>]]
+The following criteria can be understood as measures of the three general definitions given at the beginning of this section, namely '''Independence''', '''Separation''' and '''Sufficiency'''. In the table<ref name="Barocas"/> to the right, we can see the relationships between them.
+
+To define these measures specifically, we will divide them into three big groups as done in Verma et al.:<ref name="metrics_paper"/> definitions based on a predicted outcome, on predicted and actual outcomes, and definitions based on predicted probabilities and the actual outcome.
+
+We will be working with a binary classifier and the following notation: <math display="inline"> S </math> refers to the score given by the classifier, which is the probability of a certain subject to be in the positive or the negative class. <math display="inline"> R </math> represents the final classification predicted by the algorithm, and its value is usually derived from <math display="inline"> S </math>, for example will be positive when <math display="inline"> S </math> is above a certain threshold. <math display="inline"> Y </math> represents the actual outcome, that is, the real classification of the individual and, finally, <math display="inline"> A </math> denotes the sensitive attributes of the subjects.
+
+==== Definitions based on predicted outcome ====
+
+The definitions in this section focus on a predicted outcome <math display="inline"> R </math> for various [[probability distribution|distributions]] of subjects. They are the simplest and most intuitive notions of fairness.
+
+* '''Demographic parity''', also referred to as '''statistical parity''', '''acceptance rate parity''' and '''benchmarking'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have equal probability of being assigned to the positive predicted class. This is, if the following formula is satisfied:
+<math display="block"> P(R = +\ |\ A = a) = P(R = +\ |\ A = b) \quad \forall a,b \in A </math>
+
+* '''Conditional statistical parity'''. Basically consists in the definition above, but restricted only to a [[subset]] of the instances. In  mathematical notation this would be:
+<math display="block"> P(R = +\ |\ L = l, A = a) = P(R = +\ |\ L = l, A = b) \quad \forall a,b \in A \quad \forall l \in L </math>
+
+==== Definitions based on predicted and actual outcomes ====
+
+These definitions not only considers the predicted outcome <math display="inline"> R </math> but also compare it to the actual outcome <math display="inline"> Y </math>.
+
+* '''Predictive parity''', also referred to as '''outcome test'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have equal PPV. This is, if the following formula is satisfied:
+<math display="block"> P(Y = +\ |\ R = +, A = a) = P(Y = +\ |\ R = +, A = b) \quad \forall a,b \in A </math>
+: Mathematically, if a classifier has equal PPV for both groups, it will also have equal FDR, satisfying the formula:
+<math display="block"> P(Y = -\ |\ R = +, A = a) = P(Y = -\ |\ R = +, A = b) \quad \forall a,b \in A </math>
+
+* '''False positive error rate balance''', also referred to as '''predictive equality'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have aqual FPR. This is, if the following formula is satisfied:
+<math display="block"> P(R = +\ |\ Y = -, A = a) = P(R = +\ |\ Y = -, A = b) \quad \forall a,b \in A </math>
+: Mathematically, if a classifier has equal FPR for both groups, it will also have equal TNR, satisfying the formula:
+<math display="block"> P(R = -\ |\ Y = -, A = a) = P(R = -\ |\ Y = -, A = b) \quad \forall a,b \in A </math>
+
+* '''False negative error rate balance''', also referred to as '''equal opportunity'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have equal FNR. This is, if the following formula is satisfied:
+<math display="block"> P(R = -\ |\ Y = +, A = a) = P(R = -\ |\ Y = +, A = b) \quad \forall a,b \in A </math>
+: Mathematically, if a classifier has equal FNR for both groups, it will also have equal TPR, satisfying the formula:
+<math display="block"> P(R = +\ |\ Y = +, A = a) = P(R = +\ |\ Y = +, A = b) \quad \forall a,b \in A </math>
+
+* [[Equalized odds]], also referred to as '''conditional procedure accuracy equality''' and '''disparate mistreatment'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have equal TPR and equal FPR, satisfying the formula:
+<math display="block"> P(R = +\ |\ Y = y, A = a) = P(R = +\ |\ Y = y, A = b) \quad y \in \{+,-\} \quad \forall a,b \in A </math>
+
+* '''Conditional use accuracy equality'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have equal PPV and equal NPV, satisfying the formula:
+<math display="block"> P(Y = y\ |\ R = y, A = a) = P(Y = y\ |\ R = y, A = b) \quad y \in \{+,-\} \quad \forall a,b \in A </math>
+
+* '''Overall accuracy equality'''. A classifier satisfies this definition if the subject in the protected and unprotected groups have equal prediction accuracy, that is, the probability of a subject from one class to be assigned to it. This is, if it satisfies the following formula:
+<math display="block"> P(R = Y , A = a) = P(R = Y\ |\ A = b) \quad \forall a,b \in A </math>
+
+* '''Treatment equality'''. A classifier satisfies this definition if the subjects in the protected and unprotected groups have an equal ratio of FN and FP, satisfying the formula:
+<math display="block"> \frac{FN_{A=a}}{FP_{A=a}} = \frac{FN_{A=b}}{FP_{A=b}} </math>
+
+==== Definitions based on predicted probabilities and actual outcome ====
+
+These definitions are based in the actual outcome <math display="inline"> Y </math> and the predicted probability score <math display="inline"> S </math>.
+
+* '''Test-fairness''', also known as '''calibration''' or '''matching conditional frequencies'''. A classifier satisfies this definition if individuals with the same predicted probability score <math display="inline"> S </math> have the same probability of being classified in the positive class when they belong to either the protected or the unprotected group:
+<math display="block"> P(Y = +\ |\ S = s,A = a) = P(Y = +\ |\ S = s,A = b) \quad \forall s \in S \quad \forall a,b \in A </math>
+
+* '''Well-calibration''' is an extension of the previous definition. It states that when individuals inside or outside the protected group have the same predicted probability score <math display="inline"> S </math> they must have the same probability of being classified in the positive class, and this probability must be equal to <math display="inline"> S </math>:
+<math display="block"> P(Y = +\ |\ S = s,A = a) = P(Y = +\ |\ S = s,A = b) = s \quad \forall s \in S \quad \forall a,b \in A </math>
+
+* '''Balance for positive class'''. A classifier satisfies this definition if the subjects constituting the positive class from both protected and unprotected groups have equal average predicted probability score <math display="inline"> S </math>. This means that the expected value of probability score for the protected and unprotected groups with positive actual outcome <math display="inline"> Y </math> is the same, satisfying the formula:
+<math display="block"> E(S\ |\ Y = +,A = a) = E(S\ |\ Y = +,A = b) \quad \forall a,b \in A </math>
+
+* '''Balance for negative class'''. A classifier satisfies this definition if the subjects constituting the negative class from both protected and unprotected groups have equal average predicted probability score <math display="inline"> S </math>. This means that the expected value of probability score for the protected and unprotected groups with negative actual outcome <math display="inline"> Y </math> is the same, satisfying the formula:
+<math display="block"> E(S\ |\ Y = -,A = a) = E(S\ |\ Y = -,A = b) \quad \forall a,b \in A </math>
+
+
+=== Social welfare function ===
+
+Some scholars have proposed defining algorithmic fairness in terms of a [[social welfare function]]. They argue that using a social welfare function enables an algorithm designer to consider fairness and predictive accuracy in terms of their benefits to the people affected by the algorithm. It also allows the designer to [[trade off]] efficiency and equity in a principled way.<ref name="chen-hooker-2021">{{cite arXiv|eprint=2102.00311|last1=Chen|first1=Violet (Xinying)|last2=Hooker|first2=J. N.|title=Welfare-based Fairness through Optimization|year=2021|class=cs.AI}}</ref> [[Sendhil Mullainathan]] has stated that algorithm designers should use social welfare functions in order to recognize absolute gains for disadvantaged groups. For example, a study found that using a decision-making algorithm in [[pretrial detention]] rather than pure human judgment reduced the detention rates for Blacks, Hispanics, and racial minorities overall, even while keeping the crime rate constant.<ref name="mullainathan-ec-2018">{{cite AV media|url=https://www.youtube.com/watch?v=rp965fnd3qE|title=Algorithmic Fairness and the Social Welfare Function|last=Mullainathan|first=Sendhil|author-link=Sendhil Mullainathan|date=June 19, 2018|journal=Keynote at the 19th ACM Conference on Economics and Computation (EC'18)|publisher=YouTube|quote=In other words, if you have a social welfare function where what you care about is harm, and you care about harm to the African Americans, there you go: 12 percent less African Americans in jail overnight.... Before we get into the minutiae of relative harm, the welfare function is defined in absolute harm, so we should actually calculate the absolute harm first.|minutes=48}}</ref>
+
+== Individual Fairness criteria ==
+
+An important distinction among fairness definitions is the one between group and individual notions.<ref name="mitchell2021">{{cite journal | url=https://doi.org/10.1146/annurev-statistics-042720-125902 | doi=10.1146/annurev-statistics-042720-125902 | title=Algorithmic Fairness: Choices, Assumptions, and Definitions | year=2021 | last1=Mitchell | first1=Shira | last2=Potash | first2=Eric | last3=Barocas | first3=Solon | last4=d'Amour | first4=Alexander | last5=Lum | first5=Kristian | journal=Annual Review of Statistics and Its Application | volume=8 | issue=1 | pages=141–163 | bibcode=2021AnRSA...8..141M | s2cid=228893833 }}</ref><ref  name="castelnovo2022">{{cite journal | url=https://doi.org/10.1038/s41598-022-07939-1 | doi=10.1038/s41598-022-07939-1 | title=A clarification of the nuances in the fairness metrics landscape | year=2022 | last1=Castelnovo | first1=Alessandro | last2=Crupi | first2=Riccardo | last3=Greco | first3=Greta | last4=Regoli | first4=Daniele | last5=Penco | first5=Ilaria Giuseppina | last6=Cosentini | first6=Andrea Claudio | journal=Scientific Reports | volume=12 | issue=1 | page=4209 | pmid=35273279 | pmc=8913820 | arxiv=2106.00467 | bibcode=2022NatSR..12.4209C }}</ref><ref name="metrics_paper"/><ref  name="mehrabi2021">Mehrabi, Ninareh, Fred Morstatter, Nripsuta Saxena, [[Kristina Lerman]], and Aram Galstyan. [https://doi.org/10.1145/3457607 "A survey on bias and fairness in machine learning."] ACM Computing Surveys (CSUR) 54, no. 6 (2021): 1-35.</ref> Roughly speaking, while group fairness criteria compare quantities at a group level, typically identified by sensitive attributes (e.g. gender, ethnicity, age, etc...), individual criteria compare individuals. In words, individual fairness follow the principle that "similar individuals should receive similar treatments".
+
+There is a very intuitive approach to fairness, which usually goes under the name of '''Fairness Through Unawareness''' (FTU), or ''Blindness'', that prescribe not to explicitly employ sensitive features when making (automated) decisions. This is effectively a notion of individual fairness, since two individuals differing only for the values of their sensitive attributes would receive the same outcome.
+
+However, in general, FTU is subject to several drawbacks, the main being that it does not take into account possible correlations between sensitive attributes and non-sensitive attributes employed in the decision-making process. For example, an agent with the (malignant) intention to discriminate on the basis of gender could introduce in the model a proxy variable for gender (i.e. a variable highly correlated with gender) and effectively using gender information while at the same time being compliant to the FTU prescription.
+
+The problem of ''what variables correlated to sensitive ones are fairly employable by a model'' in the decision-making process is a crucial one, and is relevant for [[#Group_Fairness_criteria|group concepts]] as well: independence metrics require a complete removal of sensitive information, while separation-based metrics allow for correlation, but only as far as the labeled target variable "justify" them. 
+
+The most general concept of individual fairness was introduced in the pioneer work by Dwork and collaborators in 2012<ref>{{cite book | chapter-url=https://doi.org/10.1145/2090236.2090255 | doi=10.1145/2090236.2090255 | chapter=Fairness through awareness | title=Proceedings of the 3rd Innovations in Theoretical Computer Science Conference on - ITCS '12 | year=2012 | last1=Dwork | first1=Cynthia | last2=Hardt | first2=Moritz | last3=Pitassi | first3=Toniann | last4=Reingold | first4=Omer | last5=Zemel | first5=Richard | pages=214–226 | isbn=9781450311151 | s2cid=13496699 }}</ref> and can be thought of as a mathematical translation of the principle that the decision map taking features as input should be built such that it is able to "map similar individuals similarly", that is expressed as a [[Lipschitz_continuity|Lipschitz condition]] on the model map. They call this approach '''Fairness Through Awareness''' (FTA), precisely as counterpoint to FTU, since they underline the importance of choosing the appropriate target-related distance metric in order to assess which individuals are ''similar'' in specific situations. Again, this problem is very related to the point raised above about what variables can be seen as "legitimate" in particular contexts.
+
+
+== Causality-based metrics ==
+Causal fairness measures the frequency with which two nearly identical users or applications who differ only in a set of characteristics with respect to which resource allocation must be fair receive identical treatment.<ref name="causal">{{cite book |last1=Galhotra |first1=Sainyam |last2=Brun |first2=Yuriy |last3=Meliou |first3=Alexandra |title=Fairness Testing: Testing Software for Discrimination |journal=Proceedings of the 11th Joint Meeting of the European Software Engineering Conference and ACM SIGSOFT Symposium on the Foundations of Software Engineering (ESEC/FSE) |date=2017 |pages=498–510 |doi=10.1145/3106237.3106277|isbn=9781450351058 |arxiv=1709.03221 |s2cid=6324652 }}</ref>
+An entire branch of the academic research on fairness metrics is devoted to leverage causal models to assess bias in [[machine learning]] models. This approach is usually justified by the fact that the same observational distribution of data may hide different causal relationships among the variables at play, possibly with different interpretations of whether the outcome are affected by some form of bias or not.<ref name="Barocas"/>
+
+Kusner et al.<ref name="cff">Kusner, M. J., Loftus, J., Russell, C., & Silva, R. (2017). [https://proceedings.neurips.cc/paper/2017/hash/a486cd07e4ac3d270571622f4f316ec5-Abstract.html Counterfactual fairness]. Advances in neural information processing systems, 30.</ref> propose to employ [[Causal_model#Counterfactuals|counterfactuals]], and define a decision-making process '''counterfactually fair''' if, for any individual, the outcome does not change in the counterfactual scenario where the sensitive attributes are changed. The mathematical formulation reads:
+
+<math>     
+P(R_{A\leftarrow a}=1\ |\ A=a,X=x) = P(R_{A\leftarrow b}=1\ |\ A=a,X=x),\quad\forall a,b;
+</math>
+
+that is: taken a random individual with sensitive attribute <math>A=a</math> and other features <math>X=x</math> and the same individual if she had <math>A = b</math>, they should have same chance of being accepted.
+The symbol <math>\hat{R}_{A\leftarrow a}</math> represents the counterfactual random variable <math>R</math> in the scenario where the sensitive attribute <math>A</math> is fixed to <math>A=a</math>. The conditioning on <math>A=a, X=x</math> means that this requirement is at the individual level, in that we are conditioning on all the variables identifying a single observation.
+
+Machine learning models are often trained upon data where the outcome depended on the decision made at that time.<ref>{{Cite journal |last1=Coston |first1=Amanda |last2=Mishler |first2=Alan |last3=Kennedy |first3=Edward H. |last4=Chouldechova |first4=Alexandra |date=2020-01-27 |title=Counterfactual risk assessments, evaluation, and fairness |url=https://doi.org/10.1145/3351095.3372851 |journal=Proceedings of the 2020 Conference on Fairness, Accountability, and Transparency |series=FAT* '20 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=582–593 |doi=10.1145/3351095.3372851 |isbn=978-1-4503-6936-7|s2cid=202539649 }}</ref> For example, if a machine learning model has to determine whether an inmate will recidivate and will determine whether the inmate should be released early, the outcome could be dependent on whether the inmate was released early or not. Mishler et al.<ref>{{Cite journal |last1=Mishler |first1=Alan |last2=Kennedy |first2=Edward H. |last3=Chouldechova |first3=Alexandra |date=2021-03-01 |title=Fairness in Risk Assessment Instruments: Post-Processing to Achieve Counterfactual Equalized Odds |url=https://doi.org/10.1145/3442188.3445902 |journal=Proceedings of the 2021 ACM Conference on Fairness, Accountability, and Transparency |series=FAccT '21 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=386–400 |doi=10.1145/3442188.3445902 |isbn=978-1-4503-8309-7|s2cid=221516412 }}</ref> propose a formula for counterfactual equalized odds: 
+
+<math>P(R=1 | Y^0=0, A=a) = P(R=1 | Y^0=0, A=b) \wedge P(R=0 | Y^1=1, A=a) = P(R=0 | Y^1=1, A=b),\quad\forall a,b;</math>
+
+where <math>R</math> is a random variable, <math>Y^x</math> denotes the outcome given that the decision <math>x</math> was taken, and <math>A</math> is a sensitive feature.
+
+== Bias Mitigation strategies ==
+
+Fairness can be applied to machine learning algorithms in three different ways: [[data preprocessing]], [[mathematical optimization|optimization]] during software training, or post-processing results of the algorithm.
+
+=== Preprocessing ===
+
+Usually, the classifier is not the only problem; the [[dataset]] is also biased. The discrimination of a dataset <math display="inline"> D </math> with respect to the group <math display="inline"> A = a </math> can be defined as follows:
+<math display="block"> disc_{A=a}(D) = \frac{|\{X\in D| X(A) \neq a, X(Y) = +\}|}{|\{X \in D | X(A) \neq a \}|} - \frac{|\{X\in D| X(A) = a, X(Y) = +\}|}{|\{X \in D | X(A) = a \}|}</math>
+
+That is, an approximation to the difference between the probabilities of belonging in the positive class given that the subject has a protected characteristic different from <math display="inline"> a </math> and equal to <math display="inline"> a </math>.
+
+Algorithms correcting bias at preprocessing remove information about dataset variables which might result in unfair decisions, while trying to alter as little as possible. This is not as simple as just removing the sensitive variable, because other attributes can be correlated to the protected one.
+
+A way to do this is to map each individual in the initial dataset to an intermediate representation in which it is impossible to identify whether it belongs to a particular protected group while maintaining as much information as possible. Then, the new representation of the data is adjusted to get the maximum accuracy in the algorithm.
+ 
+This way, individuals are mapped into a new multivariable representation where the probability of any member of a protected group to be mapped to a certain value in the new representation is the same as the probability of an individual which doesn't belong to the protected group. Then, this representation is used to obtain the prediction for the individual, instead of the initial data. As the intermediate representation is constructed giving the same probability to individuals inside or outside the protected group, this attribute is hidden to the classificator.
+
+An example is explained in Zemel et al.<ref name="zemel">Richard Zemel; Yu (Ledell) Wu; Kevin Swersky; Toniann Pitassi; Cyntia Dwork, [https://www.cs.toronto.edu/~toni/Papers/icml-final.pdf ''Learning Fair Representations'']. Retrieved 1 December 2019</ref> where a [[multinomial distribution|multinomial random variable]] is used as an intermediate representation. In the process, the system is encouraged to preserve all information except that which can lead to biased decisions, and to obtain a prediction as accurate as possible.
+
+On the one hand, this procedure has the advantage that the preprocessed data can be used for any machine learning task. Furthermore, the classifier does not need to be modified, as the correction is applied to the [[Data set|dataset]] before processing. On the other hand, the other methods obtain better results in accuracy and fairness.<ref name="datascience">Ziyuan Zhong, [https://towardsdatascience.com/a-tutorial-on-fairness-in-machine-learning-3ff8ba1040cb ''Tutorial on Fairness in Machine Learning'']. Retrieved 1 December 2019</ref>
+
+==== Reweighing ====
+
+Reweighing is an example of a preprocessing algorithm. The idea is to assign a weight to each dataset point such that the weighted [[discrimination]] is 0 with respect to the designated group.<ref name="reweighing">Faisal Kamiran; Toon Calders, [https://link.springer.com/content/pdf/10.1007%2Fs10115-011-0463-8.pdf ''Data preprocessing techniques for classification without discrimination'']. Retrieved 17 December 2019</ref>
+
+If the dataset <math display="inline"> D </math> was unbiased the sensitive variable <math display="inline"> A </math> and the target variable <math display="inline"> Y </math> would be [[Independence (probability theory)|statistically independent]] and the probability of the [[Joint probability distribution|joint distribution]] would be the product of the probabilities as follows:
+<math display="block"> P_{exp}(A = a \wedge Y = +) = P(A = a) \times P(Y = +) = \frac{|\{X \in D | X(A) = a\}|}{|D|} \times \frac{|\{X \in D| X(Y) = + \}|}{|D|}</math>
+
+In reality, however, the dataset is not unbiased and the variables are not [[Independence (probability theory)|statistically independent]] so the observed probability is:
+<math display="block"> P_{obs}(A = a \wedge Y = +) = \frac{|\{X \in D | X(A) = a \wedge X(Y) = +\}|}{|D|} </math>
+
+To compensate for the bias, the software adds a [[weight function|weight]], lower for favored objects and higher for unfavored objects. For each <math display="inline"> X \in D </math> we get:
+<math display="block"> W(X) = \frac{P_{exp}(A = X(A) \wedge Y = X(Y))}{P_{obs}(A = X(A) \wedge Y = X(Y))} </math>
+
+When we have for each <math display="inline"> X </math> a weight associated <math display="inline"> W(X) </math> we compute the weighted discrimination with respect to group <math display="inline"> A = a </math> as follows:
+<math display="block"> disc_{A = a}(D) = \frac{\sum W(X) X \in \{X\in D| X(A) \neq a, X(Y) = +\}}{\sum W(X) X \in \{X \in D | X(A) \neq a \}} - \frac{\sum W(X) X \in \{X\in D| X(A) = a, X(Y) = +\}}{\sum W(X) X \in \{X \in D | X(A) = a \}} </math>
+
+It can be shown that after reweighting this weighted discrimination is 0.
+
+===Inprocessing===
+
+Another approach is to correct the [[bias]] at training time. This can be done by adding constraints to the optimization objective of the algorithm.<ref name="zafar">Muhammad Bilal Zafar; Isabel Valera; Manuel Gómez Rodríguez; Krishna P. Gummadi, [https://people.mpi-sws.org/~mzafar/papers/disparate_mistreatment.pdf ''Fairness Beyond Disparate Treatment & Disparate Impact: Learning Classification without Disparate Mistreatment'']. Retrieved 1 December 2019</ref> These constraints force the algorithm to improve fairness, by keeping the same rates of certain measures for the protected group and the rest of individuals. For example, we can add to the objective of the [[algorithm]] the condition that the false positive rate is the same for individuals in the protected group and the ones outside the protected group.
+
+The main measures used in this approach are false positive rate, false negative rate, and overall misclassification rate. It is possible to add just one or several of these constraints to the objective of the algorithm. Note that the equality of false negative rates implies the equality of true positive rates so this implies the equality of opportunity. After adding the restrictions to the problem it may turn intractable, so a relaxation on them may be needed.
+
+This technique obtains good results in improving fairness while keeping high accuracy and lets the [[programmer]] choose the fairness measures to improve. However, each machine learning task may need a different method to be applied and the code in the classifier needs to be modified, which is not always possible.<ref name="datascience"/>
+
+==== Adversarial debiasing ====
+
+We train two [[Statistical classification|classifiers]] at the same time through some gradient-based method (f.e.: [[gradient descent]]). The first one, the ''predictor'' tries to accomplish the task of predicting <math display="inline"> Y </math>, the target variable, given <math display="inline"> X </math>, the input, by modifying its weights <math display="inline"> W </math> to minimize some [[loss function]] <math display="inline">L_{P}(\hat{y},y)</math>. The second one, the ''adversary'' tries to accomplish the task of predicting <math display="inline"> A </math>, the sensitive variable, given <math display="inline"> \hat{Y} </math> by modifying its weights <math display="inline"> U </math> to minimize some loss function <math display="inline">L_{A}(\hat{a},a) </math>.<ref name="adversarial1">Brian Hu Zhang; Blake Lemoine; Margaret Mitchell, [https://arxiv.org/abs/1801.07593 ''Mitigating Unwanted Biases with Adversarial Learning'']. Retrieved 17 December 2019</ref><ref name="adversarial2">Joyce Xu, [https://towardsdatascience.com/algorithmic-solutions-to-algorithmic-bias-aef59eaf6565 ''Algorithmic Solutions to Algorithmic Bias: A Technical Guide'']. Retrieved 17 December 2019</ref>
+
+An important point here is that, in order to propagate correctly, <math display="inline"> \hat{Y} </math> above must refer to the raw output of the classifier, not the discrete prediction; for example, with an [[artificial neural network]] and a classification problem, <math display="inline"> \hat{Y} </math> could refer to the output of the [[softmax function|softmax layer]].
+
+Then we update <math display="inline"> U </math> to minimize <math display="inline"> L_{A} </math> at each training step according to the [[gradient]] <math display="inline"> \nabla_{U}L_{A} </math> and we modify <math display="inline"> W </math> according to the expression:
+<math display="block"> \nabla_{W}L_{P} - proj_{\nabla_{W}L_{A}}\nabla_{W}L_{P} - \alpha \nabla_{W}L_{A} </math>
+where <math display="alpha"> \alpha </math> is a tuneable [[hyperparameter optimization|hyperparameter]] that can vary at each time step.
+
+[[File:AdvFig2.jpg|frame|Graphic representation of the vectors used in adversarial debiasing as shown in Zhang et al.<ref name=adversarial1/>]]
+The intuitive idea is that we want the ''predictor'' to try to minimize <math display="inline"> L_{P} </math> (therefore the term <math display="inline"> \nabla_{W}L_{P} </math>) while, at the same time, maximize <math display="inline"> L_{A} </math> (therefore the term <math display="inline"> - \alpha \nabla_{W}L_{A} </math>), so that the ''adversary'' fails at predicting the sensitive variable from  <math display="inline"> \hat{Y} </math>.
+
+The term <math display="inline"> -proj_{\nabla_{W}L_{A}}\nabla_{W}L_{P} </math> prevents the ''predictor'' from moving in a direction that helps the ''adversary'' decrease its loss function.
+
+It can be shown that training a ''predictor'' classification model with this algorithm improves [[#Definitions based on predicted outcome|demographic parity]] with respect to training it without the ''adversary''.
+
+===Postprocessing===
+
+The final method tries to correct the results of a classifier to achieve fairness. In this method, we have a classifier that returns a score for each individual and we need to do a binary prediction for them. High scores are likely to get a positive outcome, while low scores are likely to get a negative one, but we can adjust the [[critical value|threshold]] to determine when to answer yes as desired. Note that variations in the threshold value affect the trade-off between the rates for true positives and true negatives.
+
+If the score function is fair in the sense that it is independent of the protected attribute, then any choice of the threshold will also be fair, but classifiers of this type tend to be biased, so a different threshold may be required for each protected group to achieve fairness.<ref name="hardt" /> A way to do this is plotting the true positive rate against the false negative rate at various threshold settings (this is called ROC curve) and find a threshold where the rates for the protected group and other individuals are equal.<ref name="hardt">Moritz Hardt; Eric Price; Nathan Srebro, [https://arxiv.org/abs/1610.02413 ''Equality of Opportunity in Supervised Learning'']. Retrieved 1 December 2019</ref>
+
+The advantages of postprocessing include that the technique can be applied after any classifiers, without modifying it, and has a good performance in fairness measures. The cons are the need to access to the protected attribute in test time and the lack of choice in the balance between accuracy and fairness.<ref name="datascience"/>
+
+==== Reject Option based Classification ====
+
+Given a [[Statistical classification|classifier]] let <math display="inline"> P(+|X) </math> be the probability computed by the classifiers as the [[probability]] that the instance <math display="inline"> X </math> belongs to the positive class +. When <math display="inline"> P(+|X) </math> is close to 1 or to 0, the instance <math display="inline"> X </math> is specified with high degree of certainty to belong to class + or - respectively. However, when <math display="inline"> P(+|X) </math> is closer to 0.5 the classification is more unclear.<ref name="roc">Faisal Kamiran; Asim Karim; Xiangliang Zhang, [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.722.3030&rep=rep1&type=pdf ''Decision Theory for Discrimination-aware Classification'']. Retrieved 17 December 2019</ref>
+
+We say <math display="inline"> X </math> is a "rejected instance" if <math display="inline"> max(P(+|X), 1-P(+|X)) \leq \theta </math> with a certain <math display="inline"> \theta </math> such that <math display="inline"> 0.5 < \theta < 1 </math>.
+
+The algorithm of "ROC" consists on classifying the non-rejected instances following the rule above and the rejected instances as follows: if the instance is an example of a deprived group (<math>X(A) = a</math>) then label it as positive, otherwise, label it as negative.
+
+We can optimize different measures of [[discrimination]] (link) as functions of <math display="inline"> \theta </math> to find the optimal <math display="inline"> \theta </math> for each problem and avoid becoming discriminatory against the privileged group.<ref name="roc" />
+
+== See also ==
+
+* [[Algorithmic bias]]
+* [[Machine learning]]
+
+== References ==
+<references />
+
+[[Category:Machine learning]]
+[[Category:Information ethics]]
+[[Category:Computing and society]]
+[[Category:Philosophy of artificial intelligence]]
+[[Category:Discrimination]]
+[[Category:Bias]]

@@ -1,0 +1,480 @@
+{{Short description|UCI Chess Engine}}
+{{about|the [[chess engine]] named Dragon|the [[chess opening]] named Dragon|Sicilian Defense, Dragon Variation}}
+{{Use mdy dates|date=June 2023}}
+{{Infobox software
+| name = Komodo
+| title = Komodo
+| logo = Komodo Chess logo.svg
+| author = {{plainlist|
+*[[Don Dailey]]
+*[[Larry Kaufman]]
+}}
+| developer = Komodo Chess, [[Chess.com]]
+| released = {{Start date and age|2010|01}}
+| discontinued =
+| latest release version = Komodo 14.1
+| latest release date = {{Start date and age|2020|11|2}}
+| latest preview version =
+| latest preview date =
+| programming language = [[C (programming language)|C]], [[C++]]
+| operating system = [[Linux]], [[Microsoft Windows]], [[Mac OS X]], [[Android (operating system)|Android]]
+| platform =
+| replaces = Komodo
+| replaced_by =
+| size =
+| language =
+| genre = [[Chess engine]]
+| license =[[Proprietary software|Proprietary]]
+| website = {{URL|komodochess.com}}
+}}
+{{Infobox software
+| name = Dragon by Komodo Chess
+| title = Dragon by Komodo Chess
+| developer = Komodo Chess, [[Chess.com]]
+| released = {{Start date and age|2020|11|9}}
+| discontinued =
+| latest release version = Dragon 3.3
+| latest release date = {{Start date and age|2023|10|04}}
+| latest preview version =
+| latest preview date =
+| programming language = [[C (programming language)|C]], [[C++]]
+| operating system = [[Linux]], [[Microsoft Windows]], [[Mac OS X]], [[Android (operating system)|Android]]
+| platform =
+| replaces = Doch
+| replaced_by = Dragon
+| size =
+| language =
+| genre = [[Chess engine]]
+| license =[[Proprietary software|Proprietary]]
+| website = {{URL|komodochess.com}}
+}}
+
+'''Komodo''' and '''Dragon by Komodo Chess''' (also known as '''Dragon''' or '''Komodo Dragon''') are [[Universal Chess Interface|UCI]] [[chess engine]]s developed by Komodo Chess,<ref name="komodo chess">{{cite web|url=https://komodochess.com/store/pages.php?cmsid=20|title=Frequently Asked Questions}}</ref> which is a part of [[Chess.com]].<ref name="chess-com">{{cite web | url=https://www.chess.com/news/view/chess-com-acquires-komodo-launches-new-monte-carlo-version-similar-to-alphazero | title=Chess.com Acquires Komodo; Launches New 'Monte Carlo' Version Similar To AlphaZero | publisher=Chess.com | date = 2018-05-24 | access-date = 2018-09-04}}</ref> The engines were originally authored by [[Don Dailey]] and [[Grandmaster (chess)|GM]] [[Larry Kaufman]]. Dragon is a [[Proprietary software|commercial]] chess engine, but Komodo is free for non-commercial use.<ref>{{cite web|url=https://komodochess.com/downloads.htm|title=Available Versions of Komodo}}</ref> Dragon is consistently ranked near the top of most major chess engine rating lists, along with [[Stockfish (chess)|Stockfish]] and [[Leela Chess Zero]].<ref>{{cite web|url=http://computerchess.org.uk/ccrl/4040.live/ |title=CCRL 40/40 Rating List — All engines (best versions only) |publisher=computerchess.org.uk |access-date=October 25, 2013 |url-status=dead |archive-url=https://web.archive.org/web/20111002094957/http://computerchess.org.uk/ccrl/4040.live/ |archivedate=October 2, 2011 }}</ref><ref>{{cite web | url=http://www.inwoba.de/bayes.html | title=IPON Rating List | publisher=inwoba.de | accessdate=April 28, 2015 | archive-url=https://web.archive.org/web/20140529051651/http://www.inwoba.de/bayes.html | archive-date=May 29, 2014 | url-status=dead }}</ref><ref>{{cite web | url=http://www.amateurschach.de/ | title=SWCR chess engine ratings list |publisher=amateurschach.de | accessdate=October 25, 2013}}</ref><ref>{{cite web| url=http://www.husvankempen.de/nunn/40_40%20Rating%20List/40_40%20MPVersion/rangliste.html| title=CEGT Best Versions| publisher=husvankempen.de| access-date=October 25, 2013| archive-url=https://web.archive.org/web/20071224182032/http://www.husvankempen.de/nunn/40_40%20Rating%20List/40_40%20MPVersion/rangliste.html| archive-date=December 24, 2007| url-status=dead}}</ref><ref>{{cite web|title=CCRL 40/4 Rating List|url=http://computerchess.org.uk/ccrl/404/|publisher=CCRL|accessdate=25 October 2013}}</ref>
+{{Chess programming series}}
+== History ==
+=== Komodo ===
+[[File:Komodo_Chess_logo.svg|thumb|Komodo logo]]
+Komodo was derived from Don Dailey's former engine Doch in January 2010.<ref>{{cite web|last=Dailey|first=Don|title=Komodo 1.0 JA by Don Dailey available|url=http://www.talkchess.com/forum/viewtopic.php?t=31903|accessdate=25 October 2013}}</ref> The first multiprocessor version of Komodo was released in June 2013 as ''Komodo 5.1 MP''.<ref>{{cite web|last=Dailey|first=Don|title=Komodo 5.1 MP has been released|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=521500&t=48316|accessdate=25 October 2013}}</ref> This version was a major rewrite and a port of Komodo to [[C++11]]. A single-processor version of Komodo (which won the CCT15 tournament in February earlier that year) was released as a stand-alone product shortly before the 5.1 MP release. This version, named ''Komodo CCT'', was still based on the older C code, and was approximately 30 Elo stronger than the 5.1 MP version, as the latter was still undergoing massive code-cleanup work.<ref>{{cite web|last=Dailey|first=Don|title=Komodo CCT|url=http://komodochess.com/komodoCCT-31a|accessdate=25 October 2013|archive-date=23 October 2013|archive-url=https://web.archive.org/web/20131023061817/http://komodochess.com/komodoCCT-31a|url-status=dead}}</ref>
+
+With the release of Komodo 6 on October 4, 2013, Don Dailey announced that he was suffering from an acute form of [[leukaemia]], and would no longer contribute to the future development of Komodo.<ref>{{cite web|last=Dailey|first=Don|title=Komodo release|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=537479&t=49623|accessdate=25 October 2013}}</ref> On October 8, Don made an announcement on the Talkchess forum that Mark Lefler would be joining the Komodo team and would continue its development.<ref>{{cite web|last=Dailey|first=Don|title=Who is Don/Larry's new partner!?|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=537479&t=49623|accessdate=25 October 2013}}</ref>
+
+Komodo TCEC was released on December 4, 2013. This was the same version that had won [[TCEC]] Season 5, and was the last with input from Don Dailey, to whom it was dedicated.<ref>{{cite web |last1=Kaufman |first1=Larry |title=Komodo TCEC released. |url=http://www.talkchess.com/forum/viewtopic.php?t=50324 |website=Computer Chess Club |access-date=26 October 2023}}</ref> Komodo 7 was released on May 21, 2014, adding Syzygy tablebase support.<ref>{{cite web |title=Komodo 7 |url=https://komodochess.com/Komodo7-38a.htm |website=Komodo chess engine |access-date=26 October 2023 |archive-url=https://web.archive.org/web/20140525030200/https://komodochess.com/Komodo7-38a.htm |archive-date=2014-05-25}}</ref>
+
+On May 24, 2018, [[Chess.com]] announced that it has acquired Komodo and that the Komodo team have joined Chess.com.<ref name="chess-com"/> The Komodo team is now called Komodo Chess.<ref name="komodo chess"/>
+
+On December 17, 2018, Komodo Chess released Komodo 12.3 MCTS, a version of the Komodo 12.3 engine that uses [[Monte Carlo tree search]] instead of [[alpha–beta pruning]]/[[minimax]].<ref>{{Cite web|url=https://komodochess.com/Komodo12.htm|title=Komodo 12 Chess Engine - Official Site|access-date=2018-12-20|archive-date=2018-12-21|archive-url=https://web.archive.org/web/20181221041327/https://komodochess.com/Komodo12.htm|url-status=dead}}</ref>
+
+The latest version, Komodo 14.1, was released on November 2, 2020.<ref>{{cite web|title=Komodo 14 Chess Engine|url=https://komodochess.com/Komodo14.htm|accessdate=2022-03-19|archive-date=June 15, 2021|archive-url=https://web.archive.org/web/20210615084509/https://komodochess.com/Komodo14.htm|url-status=dead}}</ref>
+
+=== Dragon ===
+On November 9, 2020, Komodo Chess released ''Dragon by Komodo Chess 1.0'', which features the use of [[efficiently updatable neural network]]s in its [[evaluation function]]. Dragon is derived from Komodo in the same way that Komodo was derived from Doch.<ref>{{cite web|url=https://www.chess.com/news/view/komodo-releases-powerful-new-dragon-chess-engine|title=Komodo Releases Powerful New 'Dragon' Chess Engine|author=Sam Copeland|date=2020-11-10|accessdate=2022-03-19}}</ref><ref>{{Cite web|url=https://komodochess.com/dragon.htm|title = Dragon Chess Engine - Official Site}}</ref> Dragon is also called ''Komodo Dragon'' in certain tournaments such as the [[Top Chess Engine Championship]] and the [[World Computer Chess Championship]] (WCCC) but not in the [[Chess.com#Chess.com Computer Chess Championship|Chess.com Computer Chess Championship]] (CCC). A Chess.com staff member named Dmitry Pervov joined the Dragon development team to write the NNUE code for Dragon, and Dietrich Kappe joined the Dragon development team to help Larry Kaufman and Mark Lefter train Dragon's neural networks.<ref name="Kaufman2020">{{cite web|url=https://www.talkchess.com/forum3/viewtopic.php?f=2&t=75748|title=Dragon by Komodo Chess|author=[[Larry Kaufman]]}}</ref>
+
+On March 17, 2023, Larry Kaufman announced that he and Mark Lefter have stepped down from Dragon development and from ownership of Komodo Chess, and that [[Chess.com]] have taken full control of Komodo Chess. As of March 17, 2023, Dietrich Kappe is the only person responsible for the development of Dragon, but Chess.com are looking for more programmers to help with Dragon development.<ref name="Kaufman2023">{{cite web|url=https://talkchess.com/forum3/viewtopic.php?f=2&t=81715|title=KomodoChess and chess.com|author=[[Larry Kaufman]]}}</ref>
+
+The final version, Dragon 3.3, was released on October 4, 2023.<ref>{{cite web|title=Dragon Chess Engine - Official Site|url=https://komodochess.com/dragon-3.3.htm|accessdate=2023-01-17}}</ref> 
+
+== Competition results ==
+=== Komodo ===
+Komodo has played in the ICT 2010 in Leiden, and further in the CCT12 and CCT14. Komodo had its first tournament success in 1999, when it won the CCT15 with a score of 6½/7.<ref>{{cite web|last=Skinner|first=Peter|title=CCT15 - Results|url=http://www.talkchess.com/forum/viewtopic.php?t=47309|accessdate=25 October 2013}}</ref> Komodo won both the World Computer Chess Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1676|title=WCCC2016}}</ref> and World Computer Software Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1679|title=WCSC 2016}}</ref> in 2016. Komodo once again won the World Computer Chess Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1990|title=WCSC 2017}}</ref> and World Blitz<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1994|title=World Bltz 2017}}</ref> in 2017. 
+
+In [[TCEC]] competition, Komodo was historically one of the strongest engines. In Season 4, it lost only eight out of its 53 games and managed to reach Stage 4 (Quarterfinals), against very strong competition which were running on eight cores (Komodo was running on a single processor).<ref>{{cite web|title=Komodo - Performance|url=http://chess.martijngrimme.nl/engine.php?engine=Komodo|accessdate=25 October 2013|archive-url=https://web.archive.org/web/20131023115405/http://chess.martijngrimme.nl/engine.php?engine=Komodo|archive-date=23 October 2013|url-status=dead}}</ref> The next season, Komodo won the superfinal against [[Stockfish (chess)|Stockfish]]. The two engines jockeyed for the championship over the next few seasons: Stockfish won in Season 6, while Komodo won Seasons 7 and 8. Komodo failed to make the superfinal in Season 9, losing out to Houdini; but after Houdini was later disqualified for containing code plagiarized from Stockfish,<ref>{{cite web|url=https://www.chess.com/news/view/chessbase-fat-fritz-2-stockfish-leela-chess-zero|title=Open Source Community Critical Of Chessbase, Fat Fritz 2|publisher=[[chess.com]]|date=25 February 2021}}</ref><ref>{{cite web|url=https://chess24.com/en/read/news/chessbase-s-fat-fritz-2-condemned-as-rip-off-stockfish-clone|title=ChessBase's Fat Fritz 2 condemned as 'rip-off' Stockfish clone
+|publisher=chess24|date=22 February 2021}}</ref><ref>{{Cite web|url=https://wiki.chessdom.org/Engines_and_authors#Footnote|title=Engines and authors - TCEC wiki}}</ref> Komodo was promoted to the runner-up. Komodo retrospectively won Season 10 in the same way. Starting from Season 11 however, Stockfish improved at a rate that left its rivals behind, crushing Komodo in Season 12 and 13. The advent of the neural network engine [[Leela Chess Zero]] meant Komodo has largely failed to qualify for the superfinal since, with a single exception in Season 22, when it lost to Stockfish. Although Komodo has not qualified for the superfinal, it has cemented itself as the third-strongest engine in the competition, finishing in that position for five of the last six seasons.
+
+==== Chess.com Computer Chess Championship ====
+
+<div style=display:inline-table>
+{| class="wikitable"
+|+Main Events
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|CCC 1
+|2018
+|15+5
+|4th
+|<ref>{{Cite web|title=CCC 1|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887|access-date=21 March 2022|website=chess.com|date=October 4, 2018 }}</ref>
+|-
+|CCC 2
+|2018
+|5+2
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=CCC 2|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-blitz|access-date=21 March 2022|website=chess.com|date=November 19, 2018 }}</ref>
+|-
+|CCC 3
+|2019
+|30+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=CCC 3|url=https://www.chess.com/news/view/stockfish-wins-rapid-computer-championship-over-lc0-bullet-chess-next|access-date=21 March 2022|website=chess.com|date=January 22, 2019 }}</ref>
+|-
+|CCC 4
+|2019
+|1+2
+|4th
+|<ref>{{Cite web|title=CCC 4|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-bullet-escalation-next|access-date=21 March 2022|website=chess.com|date=January 30, 2019 }}</ref>
+|-
+|CCC 5
+|2019
+|10+5
+|4th
+|<ref>{{Cite web|title=CCC 5|url=https://cccfiles.chess.com/archive/tournament-17847.pgn|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 6
+|2019
+|10+10
+|7th
+|<ref>{{Cite web|title=CCC 6|url=https://www.chess.com/news/view/stockfish-faces-lc0-in-computer-chess-championship-finals|access-date=21 March 2022|website=chess.com|date=March 8, 2019 }}</ref>
+|-
+|CCC 7
+|2019
+|5+2
+|6th
+|<ref>{{Cite web|title=CCC 7|url=https://www.chess.com/news/view/computer-chess-championship-playing-blitz-after-stockfish-defends-title|access-date=21 March 2022|website=chess.com|date=March 20, 2019 }}</ref>
+|-
+|CCC 8
+|2019
+|15+5
+|6th
+|<ref>{{Cite web|title=CCC 8|url=https://www.chess.com/computer-chess-championship#event=ccc-8-deep-dive|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 9
+|2019
+|5+2
+|5th
+|<ref>{{Cite web|title=CCC 9 Semifinals|url=https://www.chess.com/computer-chess-championship#event=ccc-9-the-gauntlet-semifinals|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 10
+|2019
+|10+3
+|4th
+|<ref>{{Cite web|title=CCC 10 Semifinals|url=https://www.chess.com/computer-chess-championship#event=ccc10-semifinals|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 11
+|2019
+|30+5
+|4th
+|<ref>{{Cite web|title=CCC 11 Semifinals|url=https://www.chess.com/computer-chess-championship#event=ccc11-semifinals|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 12
+|2020
+|1+1
+|4th
+|<ref>{{Cite web|title=CCC 12|url=https://www.chess.com/computer-chess-championship#event=ccc1211-komodo-vs-scorpio|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 13
+|2020
+|10+5
+|4th
+|<ref>{{Cite web|title=CCC 13 Semifinals|url=https://www.chess.com/computer-chess-championship#event=ccc13-semifinals|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC 14
+|2020
+|10+3
+|5th
+|<ref>{{Cite web|title=CCC 14|url=https://www.chess.com/computer-chess-championship#event=ccc1425-stoofvlees-vs-komodo|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC Blitz 2020
+|2020
+|5+5
+|9th
+|<ref>{{Cite web|title=CCC Blitz Championship 2020|url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2020|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC Blitz 2021
+|2021
+|5+5
+|10th
+|<ref>{{Cite web|title=CCC Blitz Championship 2021|url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2021|access-date=21 March 2022|website=chess.com}}</ref>
+|-
+|CCC Chess 960 Blitz
+|2021
+|5+5
+|9th
+|<ref>{{Cite web|title=CCC Chess 960 Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-chess-960-blitz-championship|access-date=21 March 2022|website=chess.com}}</ref>
+|}
+</div>
+
+=== Dragon ===
+
+==== Chess.com Computer Chess Championship ====
+
+<div style=display:inline-table>
+{| class="wikitable"
+|+Main Events
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|CCC Blitz 2020
+|2020
+|5+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship Blitz 2020|url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2020-semifinals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC Rapid 2021
+|2021
+|15+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship Rapid 2021|url=https://www.chess.com/computer-chess-championship#event=ccc-rapid-2021-elite-round|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC Blitz 2021
+|2021
+|5+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship Blitz 2021|url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2021-semifinals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC Chess 960 Blitz
+|2021
+|5+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship Chess 960 Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-chess-960-blitz-championship-finals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC 16: Rapid
+|2021
+|15+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 16: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc-16-rapid-semifinals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC 16: Bullet
+|2021
+|2+1
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 16: Bullet|url=https://www.chess.com/computer-chess-championship#event=ccc-16-bullet-finals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC 16: Blitz
+|2022
+|5+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 16: Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-16-blitz-finals|access-date=20 March 2022|website=Chess.com}}</ref>
+|-
+|CCC 17: Rapid
+|2022
+|15+3
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 17: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc-17-rapid-finals|access-date=30 March 2022|website=Chess.com}}</ref>
+|-
+|CCC 17: Bullet
+|2022
+|2+1
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 17: Bullet|url=https://www.chess.com/computer-chess-championship#event=ccc-17-bullet-finals|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 17: Blitz
+|2022
+|5+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 17: Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-17-blitz-challenger|access-date=13 July 2022|website=Chess.com}}</ref>
+|-
+|CCC 18: Rapid
+|2022
+|15+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 18: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc-18-rapid-semifinals|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 19: Blitz
+|2022
+|5+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 19: Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-19-blitz-finals|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 19: Rapid
+|2022
+|15+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 19: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc-19-rapid-challenger-match|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 19: Bullet
+|2023
+|1+1
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 19: Bullet
+|url=https://www.chess.com/computer-chess-championship#event=ccc-19-bullet-finals|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 20: Blitz
+|2023
+|3+2
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 20: Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc-20-blitz-challenger-match|access-date=24 March 2023|website=Chess.com}}</ref>
+|-
+|CCC 20: Rapid
+|2023
+|10+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 20: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc-20-rapid-challenger-match|access-date=4 August 2023|website=Chess.com}}</ref>
+|-
+|CCC 20: Bullet
+|2023
+|1+1
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship CCC 20: Bullet|url=https://www.chess.com/computer-chess-championship#event=ccc20-bullet-challenger-match|access-date=4 August 2023|website=Chess.com}}</ref>
+|-
+|CCC 21: Blitz
+|2023
+|3+2
+|4th
+|<ref>{{Cite web|title=Computer Chess Championship CCC 21: Blitz|url=https://www.chess.com/computer-chess-championship#event=ccc21-blitz-semifinals|access-date=14 August 2023|website=Chess.com}}</ref>
+|-
+|CCC 21: Rapid
+|2023
+|10+3
+|4th
+|<ref>{{Cite web|title=Computer Chess Championship CCC 21: Rapid|url=https://www.chess.com/computer-chess-championship#event=ccc21-rapid-semifinals|access-date=14 October 2023|website=Chess.com}}</ref>
+|}
+</div>
+
+==== Top Chess Engine Championship ====
+
+<div style=display:inline-table>
+{| class="wikitable"
+|+Main Events
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|Season 20
+|2020
+|60+7
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Season 20 Premier Division|url=https://tcec-chess.com/#div=p&game=1&season=20|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Season 21
+|2021
+|90+9
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Season 21 Infrafinal|url=https://tcec-chess.com/#div=if&game=1&season=21|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Season 22
+|2022
+|120+12
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=TCEC Season 22 Superfinal|url=https://tcec-chess.com/#div=sf&game=1&season=22|access-date=30 July 2022|website=tcec-chess.com}}</ref>
+|-
+|Season 23
+|2022
+|60+6
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Season 23 Infrafinal|url=https://tcec-chess.com/#div=if&game=1&season=23|access-date=10 December 2022|website=tcec-chess.com}}</ref>
+|-
+|Season 24
+|2023
+|60+6
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Season 24 Division P Playoff|url=https://tcec-chess.com/#div=pp&game=1&season=24|access-date=28 April 2023|website=tcec-chess.com}}</ref>
+|-
+|Season 25
+|2023
+|60+6
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Season 25 Division P Playoff|url=https://tcec-chess.com/#div=pp&game=1&season=25|access-date=29 October 2023|website=tcec-chess.com}}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Cup
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|Cup 8
+|2021
+|30+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Cup 8|url=https://tcec-chess.com/#game=1&round=fl&season=cup8|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Cup 9
+|2021
+|30+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Cup 9|url=https://tcec-chess.com/#game=1&round=fl&season=cup9|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Cup 10
+|2022
+|30+3
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=TCEC Cup 10|url=https://tcec-chess.com/#game=1&round=fl&season=cup10|access-date=30 July 2022|website=tcec-chess.com}}</ref>
+|-
+|Cup 11
+|2023
+|30+3
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC Cup 11|url=https://tcec-chess.com/#game=1&round=fl&season=cup11|access-date=17 January 2023|website=tcec-chess.com}}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Fischer random chess (FRC)
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|FRC 3
+|2021
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=TCEC FRC 3|url=https://tcec-chess.com/#div=frc3f&game=1&season=20|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|FRC 4 
+|2022
+|30+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web|title=TCEC FRC 4|url=https://tcec-chess.com/#div=frc4fl&game=1&season=21|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Swiss
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|Swiss 1
+|2021
+|45+7
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=TCEC Swiss 1|url=https://tcec-chess.com/#div=sw1&game=1&season=20|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Swiss 2
+|2022
+|45+7
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=TCEC Swiss 2|url=https://tcec-chess.com/#div=sw2&game=1&season=21|access-date=20 March 2022|website=tcec-chess.com}}</ref>
+|-
+|Swiss 3
+|2022
+|45+4.5
+|4th
+|<ref>{{Cite web|title=TCEC Swiss 3|url=https://tcec-chess.com/#div=sw3&game=1&season=22|access-date=13 July 2022|website=tcec-chess.com}}</ref>
+|-
+|Swiss 4
+|2023
+|30+3
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web|title=TCEC Swiss 4|url=https://tcec-chess.com/#div=sw4&game=1&season=24|access-date=13 February 2023|website=tcec-chess.com}}</ref>
+|}
+</div>
+
+== Notable games ==
+
+{{Chess diagram small
+| tright
+| Komodo vs Hannibal
+|rd|  |  |  |  |  |  | 
+|  |  |  |bd|rd|  |kd|pd
+|  |  |pd|  |  |pd|pd| 
+|  |pd|rl|pd|  |  |  | 
+|pd|pl|  |pl|  |pl|  |pl
+|  |  |  |  |pl|  |  | 
+|pl|  |  |  |  |pl|bl| 
+|  |  |rl|  |  |  |kl| 
+| Komodo plays the exchange sacrifice 33. Rxc6 and goes on to win the game, proving the superiority of its pieces over Black's two rooks.
+}}
+* [http://tcec.chessdom.com/archive.php?se=4&st=2b&ga=13 Komodo vs Hannibal, nTCEC - Stage 2b - Season 1, Round 4.1, ECO: A10, 1–0] {{Webarchive|url=https://web.archive.org/web/20160304033037/http://tcec.chessdom.com/archive.php?se=4&st=2b&ga=13 |date=2016-03-04 }} Komodo sacrifices an [[The exchange (chess)|exchange]] for positional gain.<ref name="season2">{{cite web|title=Interesting Games from Season 2|url=http://www.tcec-chess.net/viewtopic.php?f=10&t=182|accessdate=25 October 2013|archiveurl=https://web.archive.org/web/20131025194033/http://www.tcec-chess.net/viewtopic.php?f=10&t=182|archivedate=25 October 2013}}</ref>
+* [http://tcec.chessdom.com/archive.php?se=5&st=3&ga=7 Gull vs Komodo, nTCEC - Stage 3 - Season 2, Round 2.2, ECO: E10, 0–1] {{Webarchive|url=https://web.archive.org/web/20160304025201/http://tcec.chessdom.com/archive.php?se=5&st=3&ga=7 |date=March 4, 2016 }} {{Webarchive|url=https://web.archive.org/web/20160304025201/http://tcec.chessdom.com/archive.php?se=5&st=3&ga=7 |date=2016-03-04 }}<ref name="season2" /><ref>{{cite web|last=Chen|first=Franklin|title=The computer plays the exchange sacrifice|date=24 October 2013|url=http://chessimprover.com/the-computer-plays-the-exchange-sacrifice/|accessdate=26 October 2013}}</ref>
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* {{Official website|komodochess.com}}
+
+{{Portal|Chess}}
+
+{{Chess}}
+
+[[Category:2010 software]]
+[[Category:Chess engines]]
+[[Category:Applied machine learning]]
+[[Category:Chess.com]]

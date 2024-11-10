@@ -1,0 +1,48 @@
+'''Machine learning control (MLC)''' is a subfield of [[machine learning]], [[intelligent control]] and [[control theory]]
+which solves [[optimal control]] problems with methods of [[machine learning]].
+Key applications are complex nonlinear systems
+for which [[linear control theory]] methods are not applicable.
+
+== Types of problems and tasks ==
+Four types of problems are commonly encountered.
+* Control parameter identification: MLC translates to a parameter identification<ref name=Baeck1993>Thomas Bäck & Hans-Paul Schwefel (Spring 1993) [http://doi.org/10.1162/evco.1993.1.1.1 "An overview of evolutionary algorithms for parameter optimization"], [[Evolutionary Computation (journal)|Journal of Evolutionary Computation (MIT Press)]], vol. 1, no. 1, pp. 1-23</ref> if the structure of the control law is given but the parameters are unknown. One example is the [[genetic algorithm]] for optimizing coefficients of a [[PID controller]]<ref name=Benard2015aiaa>N. Benard, J. Pons-Prats, J. Periaux, G. Bugeda, J.-P. Bonnet & E. Moreau, (2015) [https://arc.aiaa.org/doi/abs/10.2514/6.2015-2957 "Multi-Input Genetic Algorithm for Experimental Optimization of the Reattachment Downstream of a Backward-Facing Step with Surface Plasma Actuator"], Paper AIAA 2015-2957 at 46th AIAA Plasmadynamics and Lasers Conference, Dallas, TX, USA, pp. 1-23.</ref> or discrete-time optimal control.<ref>Zbigniew Michalewicz, Cezary Z. Janikow & Jacek B. Krawczyk (July 1992) [https://doi.org/10.1016/0898-1221(92)90094-X "A modified genetic algorithm for optimal control problems"], [Computers & Mathematics with Applications], vol. 23, no 12, pp. 83-94.</ref>
+* Control design as regression problem of the first kind:  MLC approximates a general nonlinear mapping from sensor signals to actuation commands, if the sensor signals and the optimal actuation command are known for every state. One example is the computation of sensor feedback from a known [[full state feedback]]. A [[neural network]] is commonly used technique for this task.<ref>C. Lee, J. Kim, D. Babcock & R. Goodman (1997) [https://dx.doi.org/10.1063/1.869290 "Application of neural networks to turbulence control for drag reduction"], [[Physics of Fluids]], vol. 6, no. 9, pp. 1740-1747</ref>
+* Control design as regression problem of the second kind: MLC may also identify arbitrary nonlinear control laws which minimize the cost function of the plant. In this case, neither a model, nor the control law structure,  nor the optimizing actuation command needs to be known. The optimization is only based on the control performance (cost function) as measured in the plant. [[Genetic programming]] is a powerful regression technique for this purpose.<ref>D. C. Dracopoulos & S. Kent (December 1997) [http://doi.org/10.1007/BF01501508 "Genetic programming for prediction and control"], Neural Computing & Applications (Springer), vol. 6, no. 4, pp. 214-228.</ref>
+* Reinforcement learning control: The control law may be continually updated over measured performance changes (rewards) using [[reinforcement learning]].<ref>Andrew G. Barto (December 1994) [http://doi.org/10.1016/0959-4388(94)90138-4 "Reinforcement learning control"], [[Current Opinion in Neurobiology]], vol. 6, no. 4, pp. 888–893</ref>
+
+MLC comprises, for instance, neural network control, 
+genetic algorithm based control, 
+genetic programming control,
+reinforcement learning control, 
+and has methodological overlaps with other data-driven control,
+like [[artificial intelligence]] and [[robot control]].
+
+== Applications ==
+MLC has been successfully applied
+to many nonlinear control problems,
+exploring unknown and often unexpected actuation mechanisms.
+Example applications include
+
+* Altitude control of satellites.<ref>Dimitris. C. Dracopoulos & [[Antonia J. Jones|Antonia. J. Jones]] (1994) 
+[[doi:10.1007/BF01414807|Neuro-genetic adaptive attitude control]], Neural Computing & Applications (Springer), vol. 2, no. 4, pp. 183-204.</ref>
+* Building thermal control.<ref>Jonathan A. Wright, Heather A. Loosemore & Raziyeh Farmani (2002) [http://doi.org/10.1016/S0378-7788(02)00071-3 "Optimization of building thermal design and control by multi-criterion genetic algorithm], [Energy and Buildings], vol. 34, no. 9, pp. 959-972.</ref>
+* Feedback turbulence control.<ref name=Benard2015aiaa /><ref>Steven J. Brunton & Bernd R. Noack (2015)  [http://doi.org/10.1115/1.4031175 Closed-loop turbulence control: Progress and challenges], [[Applied Mechanics Reviews]], vol. 67, no. 5, article 050801, pp. 1-48.</ref>
+* Remotely operated under water vehicle.<ref>J. Javadi-Moghaddam, & A. Bagheri (2010 [http://doi.org/10.1016/j.eswa.2009.06.015 "An adaptive neuro-fuzzy sliding mode based genetic algorithm control system for under water remotely operated vehicle"], [https://www.journals.elsevier.com/expert-systems-with-applications/ Expert Systems with Applications], vol. 37 no. 1, pp. 647-660.</ref>
+* Many more engineering MLC application are summarized in the review article of PJ Fleming & RC Purshouse (2002).<ref>Peter J. Fleming, R. C. Purshouse (2002 [http://doi.org/10.1016/S0967-0661(02)00081-3 "Evolutionary algorithms in control systems engineering: a survey"]
+[[:nl:Control Engineering Practice|Control Engineering Practice]], vol. 10, no. 11, pp. 1223-1241</ref>
+
+As for all general nonlinear methods,
+MLC comes with no guaranteed convergence, 
+optimality or robustness for a range of operating conditions.
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+{{Refbegin|1}}
+* Dimitris C Dracopoulos (August 1997) [https://www.springer.com/fr/book/9783540761617 "Evolutionary Learning Algorithms for Neural Adaptive Control"], Springer. {{ISBN|978-3-540-76161-7}}.
+*Thomas Duriez, Steven L. Brunton & [[Bernd Noack|Bernd R. Noack]] (November 2016) [https://www.springer.com/fr/book/9783319406237 "Machine Learning Control - Taming Nonlinear Dynamics and Turbulence"], Springer. {{ISBN|978-3-319-40624-4}}.
+
+[[Category:Machine learning]]
+[[Category:Control theory]]
+[[Category:Cybernetics]]

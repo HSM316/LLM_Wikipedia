@@ -1,0 +1,44 @@
+Leela Chess Zero (abbreviated as LCZero, lc0) is a free, open-source, and neural network-based chess engine and distributed computing project. Development has been spearheaded by programmer Gary Linscott, who is also a developer for the Stockfish chess engine. Leela Chess Zero was adapted from the Leela Zero Go engine, which in turn was based on Google's AlphaGo Zero project, also to verify the methods in the AlphaZero paper as applied to the game of chess.
+
+Like Leela Zero and AlphaGo Zero, Leela Chess Zero starts with no intrinsic chess-specific knowledge other than the basic rules of the game. Leela Chess Zero then learns how to play chess by reinforcement learning from repeated self-play, using a distributed computing network coordinated at the Leela Chess Zero website.
+
+, Leela Chess Zero had played over 232 million games against itself, and is capable of play at a level that is comparable with Stockfish, the leading conventional chess program.
+
+History
+The Leela Chess Zero project was first announced on TalkChess.com on January 9, 2018. This revealed Leela Chess Zero as the open-source, self-learning chess engine it would come to be known as, with a goal of creating a strong chess engine. Within the first few months of training, Leela Chess Zero had already reached the Grandmaster level, surpassing the strength of early releases of Rybka, Stockfish, and Komodo, despite evaluating orders of magnitude fewer positions while using MCTS.
+
+In December 2018, the AlphaZero team published a new paper in Science magazine revealing previously undisclosed details of the architecture and training parameters used for AlphaZero. These changes were soon incorporated into Leela Chess Zero and increased both its strength and training efficiency.
+
+The work on Leela Chess Zero has informed the similar AobaZero project for shogi.
+
+ Program and use 
+The method used by its designers to make Leela Chess Zero self-learn and play chess at above human level is reinforcement learning. This is a machine-learning algorithm, mirrored from AlphaZero to be used by Leela Chess Zero, to maximize reward to make the engine a better chess player through self-play. From open-source, Leela Chess Zero has played hundreds of millions of games, run by volunteer users, in order to learn with the reinforcement algorithm. In order to contribute to the advancement of the Leela Chess Zero engine, the latest version of the Engine as well as the Client must be downloaded. The Client is needed to connect to the current server of Leela Chess Zero, which all of the information from the self-play chess games are stored, to obtain the latest network, generate self-play games, and upload the training data back to the server.
+
+If, however, someone would like themselves to play against Leela Chess Zero engine, the network must be downloaded. The network contains Leela Chess Zero's evaluation function that is needed for the opponent to play against the engine. Playing against a past form of the Leela Chess Zero engine is also possible, although the self-play rating calculated for the engine is different from the conventional Elo chess rating. In order to find the self-play rating of Leela Chess Zero from Elo rating is to use the formula:
+
+X = (y + 511.7)/0.6
+
+where y is the players Elo chess rating, and X is Leela Chess Zero's self-play rating.
+
+Competition results
+In April 2018, Leela Chess Zero became the first neural network engine to enter the Top Chess Engine Championship (TCEC), during season 12 in the lowest division, division 4. Leela did not perform well: in 28 games, it won one, drew two, and lost the remainder; its sole victory came from a position in which its opponent, Scorpio 2.82, crashed in three moves.See the season 12 archives at http://tcec.chessdom.com/archive.php However, it improved quickly. In July 2018, Leela placed seventh out of eight competitors at the 2018 World Computer Chess Championship. In August 2018, it won division 4 of TCEC season 13 with a record of 14 wins, 12 draws, and 2 losses.See the season 13 archives at http://tcec.chessdom.com/archive.php In Division 3, Leela scored 16/28 points, finishing third behind Ethereal, who scored 22.5/28 points, and Arasan on tiebreak. 
+
+By September 2018, Leela had become competitive with the strongest engines in the world. In the 2018 Chess.com Computer Chess Championship (CCCC), Leela placed fifth out of 24 entrants. The top eight engines advanced to round 2, where Leela placed fourth. Leela then won the 30-game match against Komodo to secure third place in the tournament. Concurrently, Leela participated in the TCEC cup, a new event in which engines from different TCEC divisions can play matches against one another. Leela defeated higher-division engines Laser, Ethereal and Fire before finally being eliminated by Stockfish in the semi-finals.See the TCEC Cup 1 archives at http://tcec.chessdom.com/archive.php
+
+In October and November 2018, Leela participated in the Chess.com Computer Chess Championship Blitz Battle. Leela finished third behind Stockfish and Komodo.
+
+In December 2018, Leela participated in season 14 of the Top Chess Engine Championship. Leela dominated divisions 3, 2, and 1, easily finishing first in all of them. In the premier division, Stockfish dominated while Houdini, Komodo and Leela competed for second place. It came down to a final-round game where Leela needed to hold Stockfish to a draw with black to finish second ahead of Komodo. It successfully managed this and therefore contested the superfinal against Stockfish. It narrowly lost the superfinal against Stockfish with a 49.5-50.5 final score.See the season 14 archives at http://tcec.chessdom.com/archive.php
+
+In February 2019, Leela scored its first major tournament win when it defeated Houdini in the final of the second TCEC cup. Leela did not lose a game the entire tournament.See the TCEC Cup 2 archives at http://legacy-tcec.chessdom.com/archive.php In April 2019, Leela won the Chess.com Computer Chess Championship 7: Blitz Bonanza, becoming the first neural-network project to take the title.
+
+In May 2019, Leela defended its TCEC cup title, this time defeating Stockfish in the final 5.5-4.5 (+2 =7 -1) after Stockfish blundered a 7-man tablebase draw.See the game score at https://cd.tcecbeta.club/archive.html?season=cup3&round=fl&game=9 Leela also won the Superfinal of season 15 of the Top Chess Engine Championship 53.5-46.5 (+14 -7 =79) versus Stockfish.
+
+Season 16 of TCEC saw Leela finish in 3rd place in premier division, missing qualification for the superfinal to Stockfish and new neural network engine AllieStein. Leela did not suffer any losses in the Premier division, the only engine to do so, and defeated Stockfish in one of the six games they played. However, Leela only managed to score 9 wins, while AllieStein and Stockfish both scored 14 wins. This inability to defeat weaker engines led to Leela finishing 3rd, half a point behind AllieStein and a point behind Stockfish. In the fourth TCEC cup, Leela was seeded first as the defending champion, which placed it on the opposite half of the brackets as AllieStein and Stockfish. Leela was able to qualify for the finals, where it faced Stockfish. After seven draws, Stockfish won the eighth game to win the match.
+
+Results summary
++Top Chess Engine Championship (TCEC)https://www.tcec-chess.com/archive.html Season  Division 4  Division 3  Division 2  Division 1  Division P  Superfinal 12 (2018)  8th  –  –  –  –  – 13 (2018)  1st  3rd  –  –  –  – 14 (2018)  –  1st  1st  1st  2nd  2nd 15 (2019)  –  –  –  –  2nd  1st 16 (2019)  –  –  –  –  3rd  –
+
++Chess.com Computer Chess Championship (CCC) Event  Year  Time Controls  Result  Ref CCC 1: Rapid Rumble  2018  15+5  3rd   CCC 2: Blitz Battle  2018  5+2  3rd   CCC 3: Rapid Redux  2019  30+5  2nd   CCC 4: Bullet Brawl  2019  1+2  2nd   CCC 5: Escalation  2019  10+5  2nd   CCC 6: Winter Classic  2019  10+10  2nd   CCC 7: Blitz Bonanza  2019  5+2  1st   CCC 8: Deep Dive  2019  15+5  2nd  CCC 9: The Gauntlet  2019  5+2, 10+5  3rd  CCC 10: Double Digits  2019  10+3  3rd  CCC 11  2019  30+5  1st 
+
+Notable games
+ Leela vs Stockfish, CCCC bonus games, 1-0 Leela beats the world champion Stockfish engine despite a 1-pawn handicap.

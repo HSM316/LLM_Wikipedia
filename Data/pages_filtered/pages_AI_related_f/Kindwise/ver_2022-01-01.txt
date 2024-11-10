@@ -1,0 +1,11 @@
+FlowerChecker is a European plant identification company headquartered in Brno, Czech Republic. Besides plants, FlowerChecker also aims at the identification of mosses, lichens, and fungi. It was established in 2014 by Ondřej Veselý, Jiří Řihák, and Ondřej Vild, Ph.D. students at that time. 
+
+ Features & Tools 
+FlowerChecker offers two different solutions - FlowerChecker mobile app and Plant.id API.
+
+FlowerChecker app was launched in April 2014 on Android and later in the same year on iOS. It requires users to send photographs of the object they want to identify. Thereafter, the photographs are sent to an international team of botany and horticulture experts for examination.
+
+Plant.id is a machine learning-based plant identification API launched in 2018. Plant.id API is suitable for incorporation into other software and can be used for other applications.  It can be also used for non-profit objectives, such as for environmental research or for students. High identification accuracy can be achieved by combining several images of different plant organs. 
+
+ Recognition 
+In 2019, FlowerChecker was awarded the Idea of the Year at the AI Awards organized by the Confederation of Industry of the Czech Republic. In 2020, an academic study comparing ten free automated image recognition apps showed that Plant.id’s performance excelled in most studied parameters.

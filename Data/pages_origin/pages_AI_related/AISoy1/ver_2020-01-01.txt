@@ -1,0 +1,27 @@
+{{Orphan|date=October 2013}}
+
+[[File:Aisoy1.jpg|thumb|AISoy1 robot]]
+
+'''AISoy1''', developed by the Spanish company AISoy Robotics, is a pet-robot considered to be one of the first emotional-learning [[robot]]s for the consumer market. Its software platform  allows it to interpret stimuli from its sensors network, in order to gain information from its environment and take decisions based on logical and emotional criteria.<ref>García, Janine. Inteligencia ambiental para entorno doméstico.</ref> Unlike other previously developed robots, AISoy1 has not a single collection of programmed answers, but its behavior is dynamic and results unpredictable. The dialogue system and the advanced recognition system allow it to interact with humans as well as robots.<ref>{{cite news|url=http://articles.economictimes.indiatimes.com/2010-07-30/news/27623571_1_first-robot-domestic-robot-spanish-firm|title=The world's first robot with conscience|accessdate=2012-03-02 | work=The Times Of India|date=2010-07-30}}</ref>
+
+== Features ==
+The robot is based on the [[Linux]] [[operating system]] with a Texas Instruments OMAP 3503 (ARM Cortex A8) processor at 600&nbsp;MHz. It has a 1 GB [[Flash memory|NAND FLASH]] memory, 256 MB MOBILE [[DDR SDRAM]], and a [[microSD]] card slot to increase its memory.
+
+AISoy1 has various sensors, including temperature, 3D orientation, environmental brightness, touch and force sensors. It is equipped with a radio communication module as well as an integrated 1Mpx [[webcam|camera]], allowing it to visually recognize users.<ref>{{cite web|url=http://ercim-news.ercim.eu/en84/special/aisoy-1-a-robot-that-perceives-feels-and-makes-decisions|title=AIsoy 1: A Robot that Perceives, Feels and Makes Decisions|accessdate=2012-03-06}}</ref>
+
+== Human Interaction ==
+[[File:Captura DIA.png|thumb|Graphical Programming Interface DIA]]
+The AISoy1 robots develop a unique personality based on their past experiences with the user. As they develop a relationship with their user, they improve their speech ability and feeling capacities. They are able to experience up to 14 different emotional states.<ref>{{cite web|url=http://www.ubergizmo.com/2010/08/aisoy-robotics-aisoy-1-edutainment-robot-hails-from-spain/|title=AISoy Robotics’ AISoy 1 edutainment robot hails from Spain|accessdate=2012-03-06}}</ref>
+
+AISoy1 can be commanded to perform different activities through [[Speech recognition|voice commands]], such as engaging in games, playing music, or saving information. Users wanting to extend the functionality of AISoy1 can do so through the platform DIA, which allows quick creation of programs through a [[Unified Modeling Language|graphical]] tool. More advanced users can integrate hardware and develop complex programs through the [[Software development kit|SDK]] from AISoy.<ref>{{cite web|url=http://www.estamoscreandovida.com/ya-disponible-av5/|title=Ya disponible la actualización vital 5|accessdate=2012-03-05|archive-url=https://web.archive.org/web/20120211183648/http://www.estamoscreandovida.com/ya-disponible-av5/|archive-date=2012-02-11|url-status=dead}}</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.aisoy.es Official Website of AISoy Robotics (Spanish and English)].
+
+[[Category:Social robots]]
+[[Category:Robotic animals]]
+[[Category:2010 robots]]
+[[Category:Robots of Spain]]

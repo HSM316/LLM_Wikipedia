@@ -1,0 +1,157 @@
+In [[machine learning]], '''feature hashing''', also known as the '''hashing trick''' (by analogy to the [[kernel trick]]), is a fast and space-efficient way of vectorizing [[Feature (machine learning)|features]], i.e. turning arbitrary features into indices in a vector or matrix.<ref name="Moody">{{cite journal |last1=Moody |first1=John |title=Fast learning in multi-resolution hierarchies |journal=Advances in Neural Information Processing Systems |date=1989 |url=http://papers.nips.cc/paper/175-fast-learning-in-multi-resolution-hierarchies.pdf}}</ref><ref name="Weinberger"/> It works by applying a [[hash function]] to the features and using their hash values as indices directly, rather than looking the indices up in an [[associative array]]. This trick is often attributed to Weinberger et al., but there exists a much earlier description of this method published by John Moody in 1989.<ref name="Weinberger"/><ref name="Moody"/>
+
+==Motivating example==
+In a typical [[document classification]] task, the input to the machine learning algorithm (both during learning and classification) is free text. From this, a [[bag of words]] (BOW) representation is constructed: the individual [[Type–token distinction|tokens]] are extracted and counted, and each distinct token in the training set defines a [[Feature (machine learning)|feature]] (independent variable) of each of the documents in both the training and test sets.
+
+Machine learning algorithms, however, are typically defined in terms of numerical vectors. Therefore, the bags of words for a set of documents is regarded as a [[term-document matrix]] where each row is a single document, and each column is a single feature/word; the entry {{math|''i'', ''j''}} in such a matrix captures the frequency (or weight) of the {{mvar|j}}'th term of the ''vocabulary'' in document {{mvar|i}}. (An alternative convention swaps the rows and columns of the matrix, but this difference is immaterial.)
+Typically, these vectors are extremely [[sparse matrix|sparse]]—according to [[Zipf's law]].
+
+The common approach is to construct, at learning time or prior to that, a ''dictionary'' representation of the vocabulary of the training set, and use that to map words to indices. [[Hash table]]s and [[trie]]s are common candidates for dictionary implementation. E.g., the three documents
+
+* ''John likes to watch movies. ''
+* ''Mary likes movies too.''
+* ''John also likes football.''
+
+can be converted, using the dictionary
+
+{| class="wikitable"
+|-
+! Term !! Index
+|-
+| John || 1
+|-
+| likes || 2
+|-
+| to || 3
+|-
+| watch || 4
+|-
+| movies || 5
+|-
+| Mary || 6
+|-
+| too || 7
+|-
+| also || 8
+|-
+| football || 9
+|}
+
+to the term-document matrix
+
+:<math>
+\begin{pmatrix}
+\textrm{John} & \textrm{likes} & \textrm{to} & \textrm{watch} & \textrm{movies} & \textrm{Mary} & \textrm{too} & \textrm{also} & \textrm{football} \\
+1 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 \\
+0 & 1 & 0 & 0 & 1 & 1 & 1 & 0 & 0 \\
+1 & 1 & 0 & 0 & 0 & 0 & 0 & 1 & 1
+\end{pmatrix}
+</math>
+
+(Punctuation was removed, as is usual in document classification and clustering.)
+
+The problem with this process is that such dictionaries take up a large amount of storage space and grow in size as the training set grows.<ref name="mobilenlp">{{cite conference |author1=K. Ganchev |author2=M. Dredze |year=2008 |url=http://www.cs.jhu.edu/~mdredze/publications/mobile_nlp_feature_mixing.pdf |title=Small statistical models by random feature mixing |conference=Proc. ACL08 HLT Workshop on Mobile Language Processing}}</ref>  On the contrary, if the vocabulary is kept fixed and not increased with a growing training set, an adversary may try to invent new words or misspellings that are not in the stored vocabulary so as to circumvent a machine learned filter.  This difficulty is why feature hashing has been tried for [[spam filtering]] at [[Yahoo! Research]].<ref>{{cite journal |author1=Josh Attenberg |author2=Kilian Weinberger |author3=Alex Smola |author4=Anirban Dasgupta |author5=Martin Zinkevich |title=Collaborative spam filtering with the hashing trick |journal=Virus Bulletin |year=2009|url=https://www.virusbulletin.com/virusbulletin/2009/11/collaborative-spam-filtering-hashing-trick}}</ref>
+
+Note that the hashing trick isn't limited to text classification and similar tasks at the document level, but can be applied to any problem that involves large (perhaps unbounded) numbers of features.
+
+==Feature vectorization using hashing trick==
+Instead of maintaining a dictionary, a feature vectorizer that uses the hashing trick can build a vector of a pre-defined length by applying a hash function {{mvar|h}} to the features (e.g., words), then using the hash values directly as feature indices and updating the resulting vector at those indices. Here, we assume that feature actually means feature vector. 
+<syntaxhighlight lang="pascal">
+ function hashing_vectorizer(features : array of string, N : integer):
+     x := new vector[N]
+     for f in features:
+         h := hash(f)
+         x[h mod N] += 1
+     return x
+</syntaxhighlight>
+Thus, if our feature vector is ["cat","dog","cat"] and hash function is <math> hash(x_f)=1</math> if <math>x_f</math> is "cat" and <math>2</math> if <math>x_f</math> is "dog". Let us take the output feature vector dimension ({{mono|N}}) to be 4. Then output {{mono|x}} will be [0,2,1,0].
+It has been suggested that a second, single-bit output hash function {{mvar|ξ}} be used to determine the sign of the update value, to counter the effect of [[Hash table#Collision resolution|hash collision]]s.<ref name="Weinberger">{{cite conference |author1=Kilian Weinberger |author2=Anirban Dasgupta |author3=John Langford |author4=Alex Smola |author5=Josh Attenberg |year=2009 |url=http://alex.smola.org/papers/2009/Weinbergeretal09.pdf |title=Feature Hashing for Large Scale Multitask Learning |conference=Proc. ICML}}</ref> If such a hash function is used, the algorithm becomes
+<syntaxhighlight lang="pascal">
+ function hashing_vectorizer(features : array of string, N : integer):
+     x := new vector[N]
+     for f in features:
+         h := hash(f)
+         idx := h mod N
+         if ξ(f) == 1:
+             x[idx] += 1
+         else:
+             x[idx] -= 1
+     return x
+</syntaxhighlight>
+
+The above pseudocode actually converts each sample into a vector. An optimized version would instead only generate a stream of ({{mvar|h}},{{mvar|ξ}}) pairs and let the learning and prediction algorithms consume such streams; a [[linear model]] can then be implemented as a single hash table representing the coefficient vector.
+
+===Properties===
+{| class="wikitable" style="float: right; margin-left: 1.5em; margin-right: 0; margin-top: 0;"
+|-
+! ''ξ''(''f''₁) !! ''ξ''(''f''₂) !! Final value, ''ξ''(''f''₁) + ''ξ''(''f''₂)
+|-
+| -1 || -1 || -2
+|-
+| -1 || 1 || 0
+|-
+| 1 || -1 || 0
+|-
+| 1 || 1 || 2
+|}
+
+When a second hash function ''ξ'' is used to determine the sign of a feature's value, the [[Expected value|expected]] [[mean]] of each column in the output array becomes zero because ''ξ'' causes some collisions to cancel out.<ref name="Weinberger"/> E.g., suppose an input contains two symbolic features ''f''₁ and ''f''₂ that collide with each other, but not with any other features in the same input; then there are four possibilities which, if we make no assumptions about ''ξ'', have equal probability, as listed in the table on the right.
+
+In this example, there is a 50% probability that the hash collision cancels out. Multiple hash functions can be used to further reduce the risk of collisions.<ref name="mahout">{{cite book
+|last1 = Owen
+|first1 = Sean
+|last2 = Anil
+|first2 = Robin
+|last3 = Dunning
+|first3 = Ted
+|last4 = Friedman
+|first4 = Ellen
+|title=Mahout in Action
+|pages=261–265
+|publisher = Manning
+|year = 2012
+}}</ref>
+
+Furthermore, if ''φ'' is the transformation implemented by a hashing trick with a sign hash ''ξ'' (i.e. ''φ''(''x'') is the feature vector produced for a sample ''x''), then [[inner product]]s in the hashed space are unbiased:
+
+:<math> \mathbb{E}[\langle \varphi(x), \varphi(x') \rangle] = \langle x, x' \rangle</math>
+
+where the expectation is taken over the hashing function ''φ''.<ref name="Weinberger"/> It can be verified that<math>\langle \varphi(x), \varphi(x') \rangle</math> is a [[Positive-definite matrix|positive semi-definite]] [[Kernel trick|kernel]].<ref name="Weinberger"/><ref>{{cite conference|last=Shi|first=Q.|author2=Petterson J. |author3=Dror G. |author4=Langford J. |author5=Smola A. |author6=Strehl A. |author7=Vishwanathan V. |title=Hash Kernels|conference=AISTATS|year=2009}}</ref>
+
+===Extensions and variations===
+Recent work extends the hashing trick to supervised mappings from words to indices,<ref>{{cite conference|last=Bai|first=B.|author2=Weston J. |author3=Grangier D. |author4=Collobert R. |author5=Sadamasa K. |author6=Qi Y. |author7=Chapelle O. |author8=Weinberger K. |title=Supervised semantic indexing|conference=CIKM|year=2009|pages=187–196|url=http://www.cs.cornell.edu/~kilian/papers/ssi-cikm.pdf}}</ref>
+which are explicitly learned to avoid collisions of important terms.
+
+===Applications and practical performance===
+Ganchev and Dredze showed that in text classification applications with random hash functions and several tens of thousands of columns in the output vectors, feature hashing need not have an adverse effect on classification performance, even without the signed hash function.<ref name="mobilenlp"/>
+Weinberger et al. applied their variant of hashing to the problem of [[spam filter]]ing, formulating this as a [[multi-task learning]] problem where the input features are pairs (user, feature) so that a single parameter vector captured per-user spam filters as well as a global filter for several hundred thousand users, and found that the accuracy of the filter went up.<ref name="Weinberger"/>
+
+==Implementations==
+Implementations of the hashing trick are present in:
+
+* [[Apache Mahout]]<ref name="mahout" />
+* [[Gensim]]<ref>{{cite web|url=http://radimrehurek.com/gensim/corpora/hashdictionary.html |title=gensim: corpora.hashdictionary – Construct word<->id mappings |publisher=Radimrehurek.com |accessdate=2014-02-13}}</ref>
+* [[scikit-learn]]<ref>{{cite web|url=http://scikit-learn.org/stable/modules/feature_extraction.html#feature-hashing |title=4.1. Feature extraction — scikit-learn 0.14 documentation |publisher=Scikit-learn.org |accessdate=2014-02-13}}</ref>
+* sofia-ml<ref>{{cite web|url=https://code.google.com/p/sofia-ml/ |title=sofia-ml - Suite of Fast Incremental Algorithms for Machine Learning. Includes methods for learning classification and ranking models, using Pegasos SVM, SGD-SVM, ROMMA, Passive-Aggressive Perceptron, Perceptron with Margins, and Logistic Regression |accessdate=2014-02-13}}</ref>
+* [[Vowpal Wabbit]]
+* [[Apache Spark]]<ref>{{cite web|url=https://spark.apache.org/docs/latest/api/scala/index.html#org.apache.spark.mllib.feature.HashingTF|title=Hashing TF|quote=Maps a sequence of terms to their term frequencies using the hashing trick.|accessdate=4 September 2015}}</ref>
+* [[R (programming language)|R]]<ref>{{cite web|url=https://cran.r-project.org/web/packages/FeatureHashing/index.html |title=FeatureHashing: Creates a Model Matrix via Feature Hashing With a Formula Interface}}</ref>
+* [[TensorFlow]]<ref>{{cite web|url=https://www.tensorflow.org/api_docs/python/tf/keras/preprocessing/text/hashing_trick |title=tf.keras.preprocessing.text.hashing_trick — TensorFlow Core v2.0.1 |quote=Converts a text to a sequence of indexes in a fixed-size hashing space. |accessdate=2020-04-29}}</ref>
+
+==See also==
+* [[Bloom filter]]
+* [[Count–min sketch]]
+* [[Heaps' law]]
+* [[Locality-sensitive hashing]]
+* [[MinHash]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* [http://hunch.net/~jl/projects/hash_reps/index.html Hashing Representations for Machine Learning] on John Langford's website
+* [https://web.archive.org/web/20120609232923/http://metaoptimize.com/qa/questions/6943/what-is-the-hashing-trick What is the "hashing trick"? - MetaOptimize Q+A]
+
+[[Category:Hashing]]
+[[Category:Machine learning]]
+[[Category:Articles with example pseudocode]]

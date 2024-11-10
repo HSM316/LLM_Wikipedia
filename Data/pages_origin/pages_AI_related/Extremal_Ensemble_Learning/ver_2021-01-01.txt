@@ -1,0 +1,38 @@
+'''Extremal Ensemble Learning (EEL)''' is a [[machine learning]] algorithmic paradigm for [[Graph partition|graph partitioning]]. EEL creates an [[Ensemble learning|ensemble]] of partitions and then uses information contained in the ensemble to find new and improved partitions. The ensemble evolves and learns how to form improved partitions through [[extremal]] updating procedure. The final solution is found by achieving [[Consensus (computer science)|consensus]] among its member partitions about what the optimal partition is.<ref name="RenEEL">
+{{cite journal
+ |author1=J. Guo |author2=P. Singh | author3=K.E. Bassler | year = 2019
+ | title = Reduced network extremal ensemble learning (RenEEL) scheme for community detection in complex networks
+ | journal = Scientific Reports
+ | volume = 9
+ | doi = 10.1038/s41598-019-50739-3
+ | issue = 14234
+|page=14234 |pmid=31578406 |pmc=6775136 |arxiv=1909.10491 |bibcode=2019NatSR...914234G | doi-access = free
+ }}</ref><ref>{{cite journal
+ |last1=Polikar |first1=R.
+ |title=Ensemble based systems in decision making
+ |journal=IEEE Circuits and Systems Magazine
+ |volume=6 |issue=3 |pages=21&ndash;45 |year=2006
+ |doi=10.1109/MCAS.2006.1688199
+|s2cid=18032543
+ }}</ref>
+== Reduced Network Extremal Ensemble Learning (RenEEL) ==
+A particular implementation of the EEL paradigm is the Reduced Network Extremal Ensemble Learning (RenEEL) scheme for partitioning a graph.<ref name="RenEEL"></ref> RenEEL uses consensus across many partitions in an ensemble to create a reduced network that can be efficiently analyzed to find more accurate partitions. These better quality partitions are subsequently used to update the ensemble. An algorithm that utilizes the RenEEL scheme is currently the best algorithm for finding the graph partition with maximum [[Modularity (networks)|modularity]], which is an [[NP-Hard Problem|NP-hard problem]].<ref name="npnas">{{cite journal
+ | author = Newman, M. E. J.
+ | year = 2006
+ | title = Modularity and community structure in networks
+ | journal = Proceedings of the National Academy of Sciences of the United States of America
+ | volume = 103
+ | issue = 23
+ | pages = 8577–8696
+ | doi = 10.1073/pnas.0601602103
+ | pmid=16723398
+ | pmc=1482622
+ |arxiv = physics/0602124 |bibcode = 2006PNAS..103.8577N }}</ref>
+== References ==
+{{reflist}}
+
+[[Category:Machine learning algorithms]]
+[[Category:Graph algorithms]]
+
+
+{{Compu-ai-stub}}

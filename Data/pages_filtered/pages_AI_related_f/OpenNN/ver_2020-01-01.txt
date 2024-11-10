@@ -1,0 +1,13 @@
+OpenNN (Open Neural Networks Library) is a software library written in the C++ programming language which implements neural networks, a main area of deep learning research. The library is open-source, licensed under the GNU Lesser General Public License.
+
+Characteristics
+The software implements any number of layers of non-linear processing units for supervised learning. This deep architecture allows the design of neural networks with universal approximation properties. Additionally, it allows multiprocessing programming by means of OpenMP, in order to increase computer performance.
+
+OpenNN contains data mining algorithms as a bundle of functions. These can be embedded in other software tools, using an application programming interface, for the integration of the predictive analytics tasks. In this regard, a graphical user interface is missing but some functions can be supported by specific visualization tools.
+
+History
+The development started in 2003 at the International Center for Numerical Methods in Engineering, within the research project funded by the European Union called RAMFLOOD (Risk Assessment and Management of FLOODs). Then it continued as part of similar projects.
+At present, OpenNN is being developed by the startup company Artelnics.
+
+Applications
+OpenNN is a general purpose artificial intelligence software package. It uses machine learning techniques for solving data mining and predictive analytics tasks in different fields. For instance, the library has been applied in the engineering, energy, or chemistry sectors.

@@ -1,0 +1,32 @@
+IFTTT (, an acronym of if this, then that) is a private commercial company founded in 2011, that runs online digital automation platforms which it offers as a service.Elyas Ben Hadj Yahia (18 Jan 2018) "A Language-Based Approach for Web Service Composition", Université de Bordeaux. pp. 42-43 Their platforms provide a visual interface for making cross-platform if statements. , they have 18 million users.
+
+IFTTT has partnerships with different providers of everyday services as well as using public APIs to integrate them with each other through its platform. They supply event notifications to IFTTT and execute commands that implement the responses.
+
+ History 
+On December 14, 2010, Linden Tibbets, the co-founder of IFTTT, posted a blog post titled "ifttt the beginning..." on the IFTTT website, announcing the new project. The first IFTTT applications were designed and developed by Linden with co-founders Jesse Tane and Alexander Tibbets. The product was officially launched on September 7, 2011.
+
+By April 2012, users had created one million tasks. In June 2012, the service entered the internet of things space by integrating with Belkin Wemo devices, allowing applets to interact with the physical world. In July 2013, IFTTT released an iPhone app and later released a version for iPad and iPod touch. An Android version was launched in July 2014. By the end of 2014, the IFTTT business was valued at approximately US$170 million.
+
+On February 19, 2015, IFTTT launched three new applications: Do Button (that triggers an action when it is pressed), Do Camera (which automatically uploads an image to services such as Facebook, Twitter, and Dropbox), and Do Notes (which uploads text to services). In November 2016, the four apps were merged. By December 2016, the company announced a partnership with JotForm to integrate an applet to create actions in other applications.
+
+Part of IFTTT's revenue comes from IFTTT platform partners, who pay to have their products connected to the service.
+
+On September 10, 2020, the service switched to a limited freemium model with a subscription-based version known as "IFTTT Pro", which allows services to use conditional statements and query data for more complex tasks. At the same time, all existing users were limited to three custom applets, being required to subscribe to Pro in order to remove this limitation. This decision generated criticism from IFTTT's community of users.
+
+ Features 
+ Overview 
+right|Screenshot of the IFTTT website
+IFTTT employs the following concepts:
+ Services (formerly known as channels) are the basic building blocks of IFTTT. They mainly describe a series of data from a certain web service such as YouTube or eBay. Services can also describe actions controlled with certain APIs, like SMS. Sometimes, they can represent information in terms of weather or stocks. Each service has a particular set of triggers and actions.
+ Triggers are the part of an applet represented as "This" in the "If This Then That" acronym. They are the items that trigger the action. For example, from an RSS feed, you can receive a notification based on a keyword or phrase.
+ Actions are the "that" part of an applet. They are the output that results from the input of the trigger.
+ Applets (formerly known as recipes) are the predicates made from triggers and actions. For example, a user would activate a trigger by liking a picture on Instagram and the applet would do an action, like sending the photo to their Dropbox account.
+ "Ingredients" are basic data available from a trigger—from the email trigger, for example; subject, body, attachment, received date, and sender’s address.
+
+ Usage examples 
+ IFTTT can automate web application tasks, such as posting the same content on several social networks.
+ Marketing professionals can use IFTTT to track mentions of companies in RSS feeds.
+ IFTTT also is used in home automation, for instance switching on a light when detecting motion in a room (with associated compliant devices).
+
+ Reception and impact 
+IFTTT was featured on Time magazine's "50 Best Websites 2012" list. Microsoft developed a similar product called Microsoft Flow (later renamed Microsoft Power Automate).

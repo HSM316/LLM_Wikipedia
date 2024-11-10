@@ -1,0 +1,98 @@
+{{short description|Histone methylation on tail of histone H3 associated with gene bodies}}
+
+'''H3K36me3''' is an [[epigenetic]] modification to the DNA packaging protein [[Histone H3]]. It is a mark that indicates the tri-[[methylation]] at the 36th [[lysine]] residue of the histone H3 protein and often associated with [[gene|gene bodies]].
+
+There are diverse modifications at H3K36 and have many important biological processes. H3K36 has different acetylation and methylation states with no similarity to each other.<ref name="epigenie">{{cite web |title=H3K36 |url=https://epigenie.com/key-epigenetic-players/histone-proteins-and-modifications/histone-h3k36/ |website=epigenie |access-date=10 November 2019}}</ref>
+
+==Nomenclature==
+
+H3K36me3 indicates [[Methylation|trimethylation]] of [[lysine]] 36 on histone H3 protein subunit:
+<ref>{{cite book |isbn=9780127999586 |pages=21–38|title=Epigenetic Gene Expression and Regulation|last1=Huang|first1=Suming|last2=Litt|first2=Michael D.|last3=Ann Blakey|first3=C.|date=2015-11-30|publisher=Elsevier Science }}</ref>
+{| class="wikitable" style="text-align:center"
+|Abbr.
+|Meaning
+|-
+|H3
+|H3 family of histones
+|-
+|K
+|standard abbreviation for lysine
+|-
+|36
+|position of amino acid residue
+(counting from N-terminus)
+|-
+|me
+|methyl group
+|-
+|3
+|number of methyl groups added
+|}
+
+==Lysine Methylation==
+
+[[File:Methylation-lysine.PNG|Methylation-lysine]]
+
+This diagram shows the progressive methylation of a lysine residue. The tri-methylation denotes the methylation present in H3K36me3.
+
+==Understanding histone modifications==
+
+The genomic DNA of eukaryotic cells is wrapped around special protein molecules known as [[Histones]]. The complexes formed by the looping of the DNA are known as [[chromatin]]. The basic structural unit of chromatin is the [[nucleosome]]: this consists of the core octamer of histones (H2A, H2B, H3 and H4) as well as a linker histone and about 180 base pairs of DNA. These core histones are rich in lysine and arginine residues. The [[C-terminus|carboxyl (C) terminal]] end of these histones contribute to histone-histone interactions, as well as histone-DNA interactions. The amino [[N-terminus|(N) terminal]] charged tails are the site of the post-translational modifications, such as the one seen in H3K36me3.<ref>{{cite journal | vauthors = Ruthenburg AJ, Li H, Patel DJ, Allis CD | title = Multivalent engagement of chromatin modifications by linked binding modules | journal = Nature Reviews. Molecular Cell Biology | volume = 8 | issue = 12 | pages = 983–94 | date = December 2007 | pmid = 18037899 | doi = 10.1038/nrm2298 | pmc = 4690530 }}</ref><ref>{{cite journal | vauthors = Kouzarides T | title = Chromatin modifications and their function | journal = Cell | volume = 128 | issue = 4 | pages = 693–705 | date = February 2007 | pmid = 17320507 | doi = 10.1016/j.cell.2007.02.005 | doi-access = free }}</ref>
+
+==Mechanism and function of modification==
+
+===Binding proteins===
+
+H3K36me3 can bind [[chromodomain]] proteins such as MSL3 hMRG15 and scEaf3.<ref name="Abcam">{{cite web |title=Epigenetic modifications poster |url=https://www.abcam.com/pathways/epigenetic-modifications-poster |website=Abcam |access-date=10 November 2019}}</ref> It can bind [[PWWP]] proteins such as BRPF1 [[DNA (cytosine-5)-methyltransferase 3A|DNMT3A]], [[Hepatoma-derived growth factor|HDGF2]] and [[Tudor domain]]s such as PHF19 and PHF1.<ref name="Abcam"/>
+
+===DNA repair===
+
+H3K36me3 is required for [[homologous recombination]]al [[DNA repair|repair of DNA damage]] such as double-strand breaks.<ref name="pmid24931610">{{cite journal |vauthors=Pfister SX, Ahrabi S, Zalmas LP, Sarkar S, Aymard F, Bachrati CZ, Helleday T, Legube G, La Thangue NB, Porter AC, Humphrey TC |title=SETD2-dependent histone H3K36 trimethylation is required for homologous recombination repair and genome stability |journal=Cell Rep |volume=7 |issue=6 |pages=2006–18 |date=June 2014 |pmid=24931610 |pmc=4074340 |doi=10.1016/j.celrep.2014.05.026 }}</ref>  The trimethylation is catalyzed by [[SETD2]] [[methyltransferase]].
+
+===Other roles===
+
+H3K36me3 acts as a mark for [[HDAC]]s to bind and deacetylate the histone which would prevent run-away transcription.<ref name="epigenie"/>  It is associated with both facultative and constitutive [[heterochromatin]].<ref>{{cite journal |doi=10.1101/gr.118091.110 |pmid=21803857 |pmc=3166828 |title=Histone H3 trimethylation at lysine 36 is associated with constitutive and facultative heterochromatin |journal=Genome Research |volume=21 |issue=9 |pages=1426–1437 |year=2011 |last1=Chantalat |first1=S. |last2=Depaux |first2=A. |last3=Hery |first3=P. |last4=Barral |first4=S. |last5=Thuret |first5=J.-Y. |last6=Dimitrov |first6=S. |last7=Gerard |first7=M. }}</ref>
+
+==Relationship with other modifications==
+
+H3K36me3 might define [[exon]]s. Nucleosomes in the exons have more histone modifications such as H3K79, H4K20, and especially H3K36me3.<ref name="epigenie"/>
+
+==Epigenetic implications==
+
+The post-translational modification of histone tails by either histone modifying complexes or chromatin remodelling complexes are interpreted by the cell and lead to complex, combinatorial transcriptional output. It is thought that a [[Histone code]] dictates the expression of genes by a complex interaction between the histones in a particular region.<ref>{{cite journal | vauthors = Jenuwein T, Allis CD | title = Translating the histone code | journal = Science | volume = 293 | issue = 5532 | pages = 1074–80 | date = August 2001 | pmid = 11498575 | doi = 10.1126/science.1063127 | s2cid = 1883924 }}</ref> The current understanding and interpretation of histones comes from two large scale projects: [[ENCODE]] and the Epigenomic roadmap.<ref>{{cite journal | vauthors = Birney E, Stamatoyannopoulos JA, Dutta A, Guigó R, Gingeras TR, Margulies EH, Weng Z, Snyder M, Dermitzakis ET, Thurman RE, Kuehn MS, Taylor CM, Neph S, Koch CM, Asthana S, Malhotra A, Adzhubei I, Greenbaum JA, Andrews RM, Flicek P, Boyle PJ, Cao H, Carter NP, Clelland GK, Davis S, Day N, Dhami P, Dillon SC, Dorschner MO, Fiegler H, Giresi PG, Goldy J, Hawrylycz M, Haydock A, Humbert R, James KD, Johnson BE, Johnson EM, Frum TT, Rosenzweig ER, Karnani N, Lee K, Lefebvre GC, Navas PA, Neri F, Parker SC, Sabo PJ, Sandstrom R, Shafer A, Vetrie D, Weaver M, Wilcox S, Yu M, Collins FS, Dekker J, Lieb JD, Tullius TD, Crawford GE, Sunyaev S, Noble WS, Dunham I, Denoeud F, Reymond A, Kapranov P, Rozowsky J, Zheng D, Castelo R, Frankish A, Harrow J, Ghosh S, Sandelin A, Hofacker IL, Baertsch R, Keefe D, Dike S, Cheng J, Hirsch HA, Sekinger EA, Lagarde J, Abril JF, Shahab A, Flamm C, Fried C, Hackermüller J, Hertel J, Lindemeyer M, Missal K, Tanzer A, Washietl S, Korbel J, Emanuelsson O, Pedersen JS, Holroyd N, Taylor R, Swarbreck D, Matthews N, Dickson MC, Thomas DJ, Weirauch MT, Gilbert J, Drenkow J, Bell I, Zhao X, Srinivasan KG, Sung WK, Ooi HS, Chiu KP, Foissac S, Alioto T, Brent M, Pachter L, Tress ML, Valencia A, Choo SW, Choo CY, Ucla C, Manzano C, Wyss C, Cheung E, Clark TG, Brown JB, Ganesh M, Patel S, Tammana H, Chrast J, Henrichsen CN, Kai C, Kawai J, Nagalakshmi U, Wu J, Lian Z, Lian J, Newburger P, Zhang X, Bickel P, Mattick JS, Carninci P, Hayashizaki Y, Weissman S, Hubbard T, Myers RM, Rogers J, Stadler PF, Lowe TM, Wei CL, Ruan Y, Struhl K, Gerstein M, Antonarakis SE, Fu Y, Green ED, Karaöz U, Siepel A, Taylor J, Liefer LA, Wetterstrand KA, Good PJ, Feingold EA, Guyer MS, Cooper GM, Asimenos G, Dewey CN, Hou M, Nikolaev S, Montoya-Burgos JI, Löytynoja A, Whelan S, Pardi F, Massingham T, Huang H, Zhang NR, Holmes I, Mullikin JC, Ureta-Vidal A, Paten B, Seringhaus M, Church D, Rosenbloom K, Kent WJ, Stone EA, Batzoglou S, Goldman N, Hardison RC, Haussler D, Miller W, Sidow A, Trinklein ND, Zhang ZD, Barrera L, Stuart R, King DC, Ameur A, Enroth S, Bieda MC, Kim J, Bhinge AA, Jiang N, Liu J, Yao F, Vega VB, Lee CW, Ng P, Shahab A, Yang A, Moqtaderi Z, Zhu Z, Xu X, Squazzo S, Oberley MJ, Inman D, Singer MA, Richmond TA, Munn KJ, Rada-Iglesias A, Wallerman O, Komorowski J, Fowler JC, Couttet P, Bruce AW, Dovey OM, Ellis PD, Langford CF, Nix DA, Euskirchen G, Hartman S, Urban AE, Kraus P, Van Calcar S, Heintzman N, Kim TH, Wang K, Qu C, Hon G, Luna R, Glass CK, Rosenfeld MG, Aldred SF, Cooper SJ, Halees A, Lin JM, Shulha HP, Zhang X, Xu M, Haidar JN, Yu Y, Ruan Y, Iyer VR, Green RD, Wadelius C, Farnham PJ, Ren B, Harte RA, Hinrichs AS, Trumbower H, Clawson H, Hillman-Jackson J, Zweig AS, Smith K, Thakkapallayil A, Barber G, Kuhn RM, Karolchik D, Armengol L, Bird CP, de Bakker PI, Kern AD, Lopez-Bigas N, Martin JD, Stranger BE, Woodroffe A, Davydov E, Dimas A, Eyras E, Hallgrímsdóttir IB, Huppert J, Zody MC, Abecasis GR, Estivill X, Bouffard GG, Guan X, Hansen NF, Idol JR, Maduro VV, Maskeri B, McDowell JC, Park M, Thomas PJ, Young AC, Blakesley RW, Muzny DM, Sodergren E, Wheeler DA, Worley KC, Jiang H, Weinstock GM, Gibbs RA, Graves T, Fulton R, Mardis ER, Wilson RK, Clamp M, Cuff J, Gnerre S, Jaffe DB, Chang JL, Lindblad-Toh K, Lander ES, Koriabine M, Nefedov M, Osoegawa K, Yoshinaga Y, Zhu B, de Jong PJ | display-authors = 6 | title = Identification and analysis of functional elements in 1% of the human genome by the ENCODE pilot project | journal = Nature | volume = 447 | issue = 7146 | pages = 799–816 | date = June 2007 | pmid = 17571346 | pmc = 2212820 | doi = 10.1038/nature05874 | collaboration = The ENCODE Project Consortium | bibcode = 2007Natur.447..799B }}</ref> The purpose of the epigenomic study was to investigate epigenetic changes across the entire genome. This led to chromatin states which define genomic regions by grouping the interactions of different proteins and/or histone modifications together.
+Chromatin states were investigated in Drosophila cells by looking at the binding location of proteins in the genome. Use of [[ChIP-sequencing]] revealed regions in the genome characterised by different banding.<ref>{{cite journal | vauthors = Filion GJ, van Bemmel JG, Braunschweig U, Talhout W, Kind J, Ward LD, Brugman W, de Castro IJ, Kerkhoven RM, Bussemaker HJ, van Steensel B | title = Systematic protein location mapping reveals five principal chromatin types in Drosophila cells | journal = Cell | volume = 143 | issue = 2 | pages = 212–24 | date = October 2010 | pmid = 20888037 | pmc = 3119929 | doi = 10.1016/j.cell.2010.09.009 }}</ref> Different developmental stages were profiled in Drosophila as well, an emphasis was placed on histone modification relevance.<ref>{{cite journal | vauthors = Roy S, Ernst J, Kharchenko PV, Kheradpour P, Negre N, Eaton ML, Landolin JM, Bristow CA, Ma L, Lin MF, Washietl S, Arshinoff BI, Ay F, Meyer PE, Robine N, Washington NL, Di Stefano L, Berezikov E, Brown CD, Candeias R, Carlson JW, Carr A, Jungreis I, Marbach D, Sealfon R, Tolstorukov MY, Will S, Alekseyenko AA, Artieri C, Booth BW, Brooks AN, Dai Q, Davis CA, Duff MO, Feng X, Gorchakov AA, Gu T, Henikoff JG, Kapranov P, Li R, MacAlpine HK, Malone J, Minoda A, Nordman J, Okamura K, Perry M, Powell SK, Riddle NC, Sakai A, Samsonova A, Sandler JE, Schwartz YB, Sher N, Spokony R, Sturgill D, van Baren M, Wan KH, Yang L, Yu C, Feingold E, Good P, Guyer M, Lowdon R, Ahmad K, Andrews J, Berger B, Brenner SE, Brent MR, Cherbas L, Elgin SC, Gingeras TR, Grossman R, Hoskins RA, Kaufman TC, Kent W, Kuroda MI, Orr-Weaver T, Perrimon N, Pirrotta V, Posakony JW, Ren B, Russell S, Cherbas P, Graveley BR, Lewis S, Micklem G, Oliver B, Park PJ, Celniker SE, Henikoff S, Karpen GH, Lai EC, MacAlpine DM, Stein LD, White KP, Kellis M | display-authors = 6 | title = Identification of functional elements and regulatory circuits by Drosophila modENCODE | journal = Science | volume = 330 | issue = 6012 | pages = 1787–97 | date = December 2010 | pmid = 21177974 | pmc = 3192495 | doi = 10.1126/science.1198374 | collaboration = modENCODE Consortium | bibcode = 2010Sci...330.1787R }}</ref> A look in to the data obtained led to the definition of chromatin states based on histone modifications.<ref>{{cite journal | vauthors = Kharchenko PV, Alekseyenko AA, Schwartz YB, Minoda A, Riddle NC, Ernst J, Sabo PJ, Larschan E, Gorchakov AA, Gu T, Linder-Basso D, Plachetka A, Shanower G, Tolstorukov MY, Luquette LJ, Xi R, Jung YL, Park RW, Bishop EP, Canfield TK, Sandstrom R, Thurman RE, MacAlpine DM, Stamatoyannopoulos JA, Kellis M, Elgin SC, Kuroda MI, Pirrotta V, Karpen GH, Park PJ | display-authors = 6 | title = Comprehensive analysis of the chromatin landscape in Drosophila melanogaster | journal = Nature | volume = 471 | issue = 7339 | pages = 480–5 | date = March 2011 | pmid = 21179089 | doi = 10.1038/nature09725 | pmc = 3109908 | bibcode = 2011Natur.471..480K }}</ref> Certain modifications were mapped and enrichment was seen to localize in certain genomic regions. Five core histone modifications were found with each respective one being linked to various cell functions.
+* [[H3K4me3]]-promoters
+* [[H3K4me1]]- primed enhancers
+* H3K36me3-gene bodies
+* [[H3K27me3]]-polycomb repression
+* [[H3K9me3]]-heterochromatin
+
+The human genome was annotated with chromatin states. These annotated states can be used as new ways to annotate a genome independently of the underlying genome sequence. This independence from the DNA sequence enforces the epigenetic nature of histone modifications. Chromatin states are also useful in identifying regulatory elements that have no defined sequence, such as enhancers. This additional level of annotation allows for a deeper understanding of cell specific gene regulation.<ref>{{cite journal | vauthors = Kundaje A, Meuleman W, Ernst J, Bilenky M, Yen A, Heravi-Moussavi A, Kheradpour P, Zhang Z, Wang J, Ziller MJ, Amin V, Whitaker JW, Schultz MD, Ward LD, Sarkar A, Quon G, Sandstrom RS, Eaton ML, Wu YC, Pfenning AR, Wang X, Claussnitzer M, Liu Y, Coarfa C, Harris RA, Shoresh N, Epstein CB, Gjoneska E, Leung D, Xie W, Hawkins RD, Lister R, Hong C, Gascard P, Mungall AJ, Moore R, Chuah E, Tam A, Canfield TK, Hansen RS, Kaul R, Sabo PJ, Bansal MS, Carles A, Dixon JR, Farh KH, Feizi S, Karlic R, Kim AR, Kulkarni A, Li D, Lowdon R, Elliott G, Mercer TR, Neph SJ, Onuchic V, Polak P, Rajagopal N, Ray P, Sallari RC, Siebenthall KT, Sinnott-Armstrong NA, Stevens M, Thurman RE, Wu J, Zhang B, Zhou X, Beaudet AE, Boyer LA, De Jager PL, Farnham PJ, Fisher SJ, Haussler D, Jones SJ, Li W, Marra MA, McManus MT, Sunyaev S, Thomson JA, Tlsty TD, Tsai LH, Wang W, Waterland RA, Zhang MQ, Chadwick LH, Bernstein BE, Costello JF, Ecker JR, Hirst M, Meissner A, Milosavljevic A, Ren B, Stamatoyannopoulos JA, Wang T, Kellis M | display-authors = 8 | title = Integrative analysis of 111 reference human epigenomes | journal = Nature | volume = 518 | issue = 7539 | pages = 317–30 | date = February 2015 | pmid = 25693563 | doi = 10.1038/nature14248 | collaboration = Roadmap Epigenomics Consortium | pmc = 4530010 | bibcode = 2015Natur.518..317. }}</ref>
+
+==Clinical significance==
+
+This histone methylation is responsible for maintaining gene expression stability. It is important throughout aging and has an impact on longevity. Genes that change their expression during aging have much lower levels of H3K36me3 in their gene bodies.<ref>{{cite journal |doi=10.1101/gad.254144.114 |pmid=25838541 |pmc=4387714 |title=Trimethylation of Lys36 on H3 restricts gene expression change during aging and impacts life span |journal=Genes & Development |volume=29 |issue=7 |pages=718–731 |year=2015 |last1=Pu |first1=Mintie |last2=Ni |first2=Zhuoyu |last3=Wang |first3=Minghui |last4=Wang |first4=Xiujuan |last5=Wood |first5=Jason G. |last6=Helfand |first6=Stephen L. |last7=Yu |first7=Haiyuan |last8=Lee |first8=Siu Sylvia }}</ref>
+
+There is reduced levels of H3K36me3 and [[H3K79me2]] at the upstream GAA region of the [[FXN]], indicative of a defect
+of transcription elongation in [[Friedreich's ataxia]].<ref>{{cite journal |doi=10.1155/2013/852080 |pmid=23533785 |pmc=3590757 |title=Epigenetics in Friedreich's Ataxia: Challenges and Opportunities for Therapy |journal=Genetics Research International |volume=2013 |pages=1–12 |year=2013 |last1=Sandi |first1=Chiranjeevi |last2=Al-Mahdawi |first2=Sahar |last3=Pook |first3=Mark A. |doi-access=free }}</ref>
+
+==Methods==
+
+The histone mark H3K36me3 can be detected in a variety of ways:
+
+1. Chromatin Immunoprecipitation Sequencing ([[ChIP-sequencing]]) measures the amount of DNA enrichment once bound to a targeted protein and immunoprecipitated. It results in good optimization and is used in vivo to reveal DNA-protein binding occurring in cells. ChIP-Seq can be used to identify and quantify various DNA fragments for different histone modifications along a genomic region.<ref>{{cite web |title=Whole-Genome Chromatin IP Sequencing (ChIP-Seq) |url=https://www.illumina.com/Documents/products/datasheets/datasheet_chip_sequence.pdf |website=Illumina |access-date=23 October 2019}}</ref>
+
+2. Micrococcal Nuclease sequencing (MNase-seq) is used to investigate regions that are bound by well positioned nucleosomes. Use of the micrococcal nuclease enzyme is employed to identify nucleosome positioning. Well positioned nucleosomes are seen to have enrichment of sequences.<ref>{{cite web |title=MAINE-Seq/Mnase-Seq |url=https://www.illumina.com/science/sequencing-method-explorer/kits-and-arrays/maine-seq-mnase-seq-nucleo-seq.html?langsel=/us/ |website=illumina |access-date=23 October 2019}}</ref>
+
+3. Assay for transposase accessible chromatin sequencing  (ATAC-seq) is used to look in to regions that are nucleosome free (open chromatin). It uses hyperactive [[Tn5 transposon]] to highlight nucleosome localisation.<ref name="BuenrostroWu2015">{{cite journal|last1=Buenrostro|first1=Jason D.|last2=Wu|first2=Beijing|last3=Chang|first3=Howard Y.|last4=Greenleaf|first4=William J.|title=ATAC-seq: A Method for Assaying Chromatin Accessibility Genome-Wide|year=2015|pages=21.29.1–21.29.9|doi=10.1002/0471142727.mb2129s109|pmid=25559105|journal=Current Protocols in Molecular Biology|volume=109|pmc=4374986|isbn=9780471142720}}</ref><ref name="SchepBuenrostro2015">{{cite journal|last1=Schep|first1=Alicia N.|last2=Buenrostro|first2=Jason D.|last3=Denny|first3=Sarah K. |last4=Schwartz |first4=Katja |last5=Sherlock |first5=Gavin |last6=Greenleaf |first6=William J. |title=Structured nucleosome fingerprints enable high-resolution mapping of chromatin architecture within regulatory regions|journal=Genome Research|volume=25|issue=11|year=2015|pages=1757–1770|issn=1088-9051|doi=10.1101/gr.192294.115|pmid=26314830|pmc=4617971}}</ref><ref name="SongCrawford2010">{{cite journal|last1=Song|first1=L.|last2=Crawford|first2=G. E.|title=DNase-seq: A High-Resolution Technique for Mapping Active Gene Regulatory Elements across the Genome from Mammalian Cells|journal=Cold Spring Harbor Protocols|volume=2010|issue=2|year=2010|pages=pdb.prot5384|issn=1559-6095|doi=10.1101/pdb.prot5384|pmid=20150147|pmc=3627383}}</ref>
+
+== See also ==
+* [[Histone methylation]]
+* [[Histone methyltransferase]]
+* [[Methyllysine]]
+
+== References ==
+{{reflist}}
+
+[[Category:Epigenetics]]
+[[Category:Post-translational modification]]

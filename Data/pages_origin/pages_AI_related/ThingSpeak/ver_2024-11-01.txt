@@ -1,0 +1,59 @@
+{{Short description|Open-source Internet of Things application}}
+{{Infobox Software
+| name                   = ThingSpeak
+| logo                   = thingspeak logo white.png
+| programming language   = [[Ruby (programming language)|Ruby]]
+| operating system       = [[Cross-platform]]
+| language               = [[English language|English]], [[Italian language|Italian]], [[Brazilian Portuguese language|Brazilian Portuguese]]<ref name="locales source code dir">[https://github.com/iobridge/thingspeak/tree/master/config/locales ThingSpeak supported languages]</ref>
+| genre                  = [[API]]
+| license                = [[GNU General Public License|GPL]] version 3
+| website                = [http://thingspeak.com/ thingspeak.com] and [https://github.com/iobridge/thingspeak/ github]
+}}
+'''ThingSpeak''' is an [[open-source software|open-source]] software written in [[Ruby (programming language)|Ruby]] which allows users to communicate with [[Internet of Things|internet enabled devices]].<ref>{{citation
+|title=github README file
+|date=8 October 2021
+|url=https://github.com/iobridge/thingspeak/blob/master/README.textile
+}}</ref> It facilitates data access, retrieval and logging of data by providing an [[API]] to both the devices and [[social network]] websites.
+ThingSpeak was originally launched by [[ioBridge]] in 2010 as a service in support of IoT applications.<ref>{{citation
+|title=ioBridge Blog Post
+|date=19 December 2014
+|url=http://blog.iobridge.com/2014/12/thingspeak-plus-third-party-hardware-an-alternative-to-iobridge-hardware/
+}}</ref>
+
+ThingSpeak has integrated support from the numerical computing software [[MATLAB]] from [[MathWorks]],<ref>{{citation
+|title=MATLAB support for ThingSpeak
+|url=http://www.mathworks.com/hardware-support/thingspeak.html
+}}</ref> allowing ThingSpeak users to analyze and visualize uploaded data using MATLAB without requiring the purchase of a MATLAB license from MathWorks.<ref>{{Cite web|url=https://www.mathworks.com/products/thingspeak.html|title = ThingSpeak}}</ref>
+
+ThingSpeak has been the subject of articles in specialized "[[Maker culture|Maker]]" websites like [[Instructables]],<ref>{{citation
+|title=Indoor Environmental Quality Station
+|url=http://www.instructables.com/id/Indoor-Environmental-Quality-station-Bluetooth-T/
+}}</ref> 
+[[The Code Project|Codeproject]],<ref>{{citation
+|title=An Introduction to ThingSpeak
+|date=23 November 2014
+|url=http://www.codeproject.com/Articles/845538/An-Introduction-to-ThingSpeak
+}}</ref> and [[Channel 9 (Microsoft)|Channel 9]].<ref>{{citation
+|title=Hello ThingSpeak
+|url=http://www.instructables.com/id/Indoor-Environmental-Quality-station-Bluetooth-T/
+}}</ref>
+
+==See also==
+
+{{Portal|Free and open-source software}}
+
+* [[Web of things]]
+* [[Ubiquitous computing]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{official website|https://thingspeak.com/}}
+
+[[Category:Internet of things]]
+[[Category:Free software programmed in Ruby]]
+[[Category:Software using the GPL license]]
+
+
+{{free-software-stub}}

@@ -1,0 +1,33 @@
+{{Short description|Influential memorandums}}
+{{no footnotes|date=October 2009}}
+{{use dmy dates|date=May 2019|cs1-dates=y}}
+{{use list-defined references|date=January 2022}}
+The '''AI Memos''' are a series of influential [[memorandum]]s and [[technical report]]s published by the [[MIT Computer Science and Artificial Intelligence Laboratory|MIT AI Lab]], [[Massachusetts Institute of Technology]], United States. They cover [[Artificial Intelligence]], a field of [[computer science]].
+
+Noteworthy memos in the series include:
+
+* AI Memo 39, "The New Compiler", describing the first implementation of a [[Self-hosting (compilers)|self-hosting]] compiler (for [[LISP 1.5]])
+* AI Memo 41, "A Chess Playing Program", describing [[Kotok-McCarthy]], the first computer program to play [[chess]] convincingly
+* AI Memo 239 (1972), also known as [[HAKMEM]], a compendium of [[Life hack|hack]]s and algorithms
+* [[Gerald Jay Sussman|Sussman]] and [[Guy L. Steele, Jr.|Steele]]'s [[Lambda Papers]]:
+** AI Memo 349 (1975), "Scheme: An Interpreter for Extended Lambda Calculus"
+** AI Memo 353 (1976), "Lambda: The Ultimate Imperative"
+** AI Memo 379 (1976), "Lambda: The Ultimate Declarative"
+** AI Memo 443 (1977), "Debunking the 'Expensive Procedure Call' Myth, or, Procedure Call Implementations Considered Harmful, or, Lambda: The Ultimate GOTO"
+** AI Memo 453 (1978), "The Art of the Interpreter of, the Modularity Complex (Parts Zero, One, and Two)"
+** AI Technical Report 474 (1978), "RABBIT: A Compiler for SCHEME"
+** AI Memo 514 (1979), "Design of LISP-based Processors, or SCHEME: A Dielectric LISP, or Finite Memories Considered Harmful, or LAMBDA: The Ultimate Opcode"
+
+== References ==
+* {{cite journal |title=Introduction to the COMTEX Microfiche Edition of the Early MIT Artificial Intelligence Memos |author-first=Marvin |author-last=Minsky |author-link=Marvin Minsky |date=1983 |journal=[[AI Magazine]] |volume=4 |issue=1 |doi=10.1609/aimag.v4i1.384 |pages=19–22 |url=http://www.aaai.org/ojs/index.php/aimagazine/article/viewArticle/384 |access-date=2009-08-25 |url-status=dead |archive-url=https://web.archive.org/web/20110604050446/http://www.aaai.org/ojs/index.php/aimagazine/article/viewArticle/384 |archive-date=2011-06-04}}
+
+== External links ==
+* [http://dspace.mit.edu/handle/1721.1/5460 AI Memos (1959–2004)] collection at DSpace at MIT
+* [http://publications.csail.mit.edu/ai/ AI Series] historical archive at the CSAIL Publications and Digital Archive
+
+[[Category:Massachusetts Institute of Technology]]
+[[Category:Artificial intelligence papers]]
+[[Category:History of artificial intelligence]]
+[[Category:Memoranda]]
+
+{{compu-AI-stub}}

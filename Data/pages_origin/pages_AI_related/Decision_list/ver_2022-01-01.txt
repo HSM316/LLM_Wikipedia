@@ -1,0 +1,31 @@
+'''Decision lists''' are a representation for Boolean functions which can be easily learnable from examples.<ref>{{cite journal|author=Ronald L. Rivest|authorlink=Ronald L. Rivest|title=Learning decision lists|journal=Machine Learning|volume=2|issue=3|pages=229–246|date=Nov 1987|doi=10.1023/A:1022607331053|url=http://people.csail.mit.edu/rivest/pubs/Riv87b.pdf|doi-access=free}}</ref>  Single term decision lists are more expressive than [[Logical disjunction|disjunctions]] and [[Logical_conjunction|conjunctions]]; however, 1-term decision lists are less expressive than the general [[disjunctive normal form]] and the [[conjunctive normal form]].
+
+The language specified by a k-length decision list includes as a subset the language specified by a k-depth [[decision tree]].
+
+Learning decision lists can be used for [[attribute efficient learning]].<ref>Adam R. Klivans and Rocco A. Servedio, "Toward Attribute Efficient Learning of Decision Lists and Parities", ''Journal of Machine Learning Research'' '''7''':12:587-602 [http://dl.acm.org/citation.cfm?id=1248567&dl=ACM&coll=DL&CFID=344844478&CFTOKEN=13074001 ACM Digital Library] [http://www.jmlr.org/papers/volume7/klivans06a/klivans06a.pdf full text]</ref>
+
+== Definition ==
+
+A decision list (DL) of length {{mvar|r}} is of the form:
+
+ '''if''' {{math|''f''<sub>1</sub>}} '''then''' 
+     output {{math|''b''<sub>1</sub>}}
+ '''else if''' {{math|''f''<sub>2</sub>}} '''then'''
+     output {{math|''b''<sub>2</sub>}}
+ ...
+ '''else if''' {{mvar|f<sub>r</sub>}} '''then'''
+     output {{mvar|b<sub>r</sub>}}
+
+where {{mvar|f<sub>i</sub>}} is the {{mvar|i}}th formula and {{mvar|b<sub>i</sub>}} is the {{mvar|i}}th [[Boolean data type|boolean]] for <math>i \in \{1...r\}</math>.  The last if-then-else is the default case, which means formula {{mvar|f<sub>r</sub>}} is always equal to true. A {{mvar|k}}-DL is a decision list where all of formulas have at most {{mvar|k}} terms.  Sometimes "decision list" is used to refer to a 1-DL, where all of the formulas are either a variable or its [[negation]].
+
+== See also ==
+* [[Decision stump]]
+
+==References==
+<references/>
+
+[[Category:Artificial intelligence]]
+[[Category:Machine learning]]
+
+
+{{AI-stub}}

@@ -1,0 +1,142 @@
+{{distinguish|the Turing Test}}
+
+'''Turing's Wager''' is a [[philosophical argument]] that claims it is impossible to infer or deduce a detailed mathematical model of the [[human brain]] within a reasonable timescale, and thus impossible in any practical sense. The argument was first given in 1950 by the [[computational theory|computational theorist]] [[Alan Turing]] in his paper ''[[Computing Machinery and Intelligence]]'', published in [[Mind (journal)|Mind]] {{harv|Turing|1950|p=453}}. The argument asserts that determining any [[mathematical model]] of a [[computer]] (its [[source code]] or any isomorphic equivalent such as a [[Turing machine]] or [[virtual simulation]]) is not possible in a reasonable timeframe.<ref>Turing suggests 1000 years as a reasonable timeframe {{harv|Turing|1950|p=453}}.</ref> As a consequence, determining a mathematical model of the human brain (which is, by its nature, more complicated) must also be impossible within that timeframe.
+
+== Effect of modern technology on wager ==
+
+It has been argued that modern [[medical imaging|neuroimaging techniques]] will allow researchers to create accurate simulations of the human mind within the [[21st century]] ({{Harvnb|Kurzweil|2012}}; {{Harvnb|Markram|2012}}, {{Harvnb|Fildes|2009}}), thereby overcoming the wager.<ref>Turing's Wager should not be confused with 'A Wager on the Turing Test', a real-life wager between Kurzweil and Mitchell Kapor over whether a computer will pass the Turing Test by 2029 {{harv|Kurzweil|Kapor|2009}}.</ref> Others have argued that such claims are unjustified {{harv|Thwaites|Soltan|Wieser|Nimmo-Smith|2017<!--|p=???-->}}.
+
+== Relationship between Turing's Wager and the Turing Test ==
+
+The [[Turing Test]] attempts to define when a machine might be said to possess [[human intelligence]], while Turing’s Wager is an argument aiming to demonstrate that characterising the brain mathematically will take over a thousand years. While building an [[artificial intelligence]] and [[brain mapping|mapping the human brain]] are both difficult endeavours, the former is actually a sub-problem of the latter {{harv|Thwaites|Soltan|Wieser|Nimmo-Smith|2017}}.
+
+<!--
+{{Quote|text=
+
+Turing was optimistic about mankind’s ability to build a machine able to pass the Turing Test [...]. He was not, by contrast, optimistic about their chances of beating Turing’s Wager — and with good reason: modelling a brain accurately is a much harder problem than imitating it approximately. Indeed, the former is sub-problem of the latter: if an individual was able to overcome Turing’s Wager and come into possession of a complete mathematical characterisation of the human brain, then that individual would, as a consequence, be in possession of a machine able to pass the Turing Test.}}-->
+
+== Footnotes ==
+
+{{reflist}}
+
+== References ==
+
+{{Refbegin|30em}}
+
+*{{cite news
+| last         = Fildes
+| first        = Jonathan
+| date         = 2009
+| title        = Artificial brain '10 years away'
+| url          = http://news.bbc.co.uk/1/hi/8164060.stm
+| work     = BBC News Online
+| location   = London 
+| access-date  = 2017-06-17
+| quote = "Henry Markram, director of the Blue Brain Project [...] told the TED Global conference in Oxford that [...] 'It is not impossible to build a human brain and we can do it in 10 years.'"
+}}
+
+*{{cite book
+| last    = Kurzweil
+| first   = Ray
+| year     = 2012
+| title    = How to Create a Mind: The Secret of Human Thought Revealed
+| location = New York
+| publisher  = Viking Books
+| isbn = 978-0-670-02529-9
+}}
+
+*{{cite book
+|last1 = Kurzweil 
+|first1 = Ray
+|last2 = Kapor 
+|first2 = Mitchell
+|editor-last=Epstein
+|editor-first=Robert
+|editor-last2= Roberts
+|editor-first2= Gary
+|editor-last3= Beber
+|editor-first3= Grace
+|title=Parsing the Turing Test: Philosophical and Methodological Issues in the Quest for the Thinking Computer
+|publisher=Springer Netherlands 
+|location= Dordrecht
+|date=2009
+|pages=463–477
+|chapter=Chapter 27: A Wager on the Turing Test
+|isbn=978-1-4020-6710-5
+|doi=10.1007/978-1-4020-6710-5_27
+}}
+
+*{{cite journal
+| last    = Markram
+| first   = Henry
+| year     = 2012
+| title    = The Human Brain Project
+| journal = Scientific American
+| volume  = 306
+| issue   = 6
+| pages = 50–55
+| doi = 10.1038/scientificamerican0612-50
+| pmid = 22649994
+| bibcode = 2012SciAm.306f..50M
+}}
+
+*{{cite journal
+| last1    = Thwaites
+| first1   = Andrew
+| last2      = Soltan
+| first2     = Andrew
+| last3      = Wieser
+| first3     = Eric
+| last4      = Nimmo-Smith
+| first4     = Ian
+| year     = 2017
+| title    = The difficult legacy of Turing's wager
+| journal = Journal of Computational Neuroscience
+| volume  = 43
+| issue   = 1
+| pages = 1–4
+| doi = 10.1007/s10827-017-0651-y
+| pmid  = 28643213
+| pmc= 5502069
+}}
+
+*{{cite journal
+| last    = Turing
+| first   = Alan
+| year     = 1950
+| title    = Computing machinery and intelligence
+| journal = Mind
+| volume  = 59
+| issue   = 236
+| pages = 433–460
+| doi = 10.1093/mind/LIX.236.433
+}}
+{{Refend}}
+
+== Further reading ==
+
+*{{cite journal
+| last1    = Thwaites
+| first1   = Andrew
+|last2      = Soltan
+|first2     = Andrew
+|last3      = Wieser
+|first3     = Eric
+|last4      = Nimmo-Smith
+|first4     = Ian
+| year     = 2017
+| title    = The difficult legacy of Turing's wager
+| journal = Journal of Computational Neuroscience
+| volume  = 43
+| issue   = 1
+| pages = 1–4
+| doi = 10.1007/s10827-017-0651-y
+| pmid  = 28643213
+| pmc=5502069
+}}
+
+[[Category:History of artificial intelligence]]
+[[Category:Alan Turing]]
+[[Category:History of neuroscience]]
+[[Category:Philosophy of mind]]
+[[Category:Neuroscience]]

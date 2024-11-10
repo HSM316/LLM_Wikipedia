@@ -1,0 +1,8 @@
+Node-RED is a flow-based development tool for visual programming developed originally by IBM for wiring together hardware devices, APIs and online services as part of the Internet of Things.
+
+Node-RED provides a web browser-based flow editor, which can be used to create JavaScript functions. Elements of applications can be saved or shared for re-use. The runtime is built on Node.js. The flows created in Node-RED are stored using JSON. Since version 0.14, MQTT nodes can make properly configured TLS connections.
+
+In 2016, IBM contributed Node-RED as an open source OpenJS Foundation project.
+
+ Node-RED projects 
++NameDescriptionNode-REDA visual tool for wiring the Internet of ThingsNode-RED DashboardA dashboard UI for Node-REDNode generatorCommand line tool to generate Node-RED node modules from several various sources, including Open API document and function node's source. Node-RED Command Line ToolCommand-line tool allows you to remotely administer a Node-RED instance.

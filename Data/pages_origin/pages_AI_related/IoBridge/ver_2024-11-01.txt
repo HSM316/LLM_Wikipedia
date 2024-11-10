@@ -1,0 +1,56 @@
+{{Short description|Manufacturer of Internet-based monitor and control hardware}}
+{{Lowercase}}
+{{Infobox information appliance
+| name         = ioBridge
+| image        = [[File:IO-204.jpg|ioBridge IO-204|frameless]]
+| caption      = ioBridge IO-204
+| manufacturer = ioBridge, Inc.
+| type         = Monitor & Control Module
+| connectivity = 10/100/1000BASE-T auto-negotiated network
+| unitssold    = 
+| media        = 
+| input        = 4 I/O channels with separate digital input, analog input and digital output, up to 4 Smart Boards for more complex functions
+| camera       = 
+| power        = 5&nbsp;V
+| memory       = 
+| service      = 
+| dimensions   = 
+| weight       = 
+}}
+
+'''ioBridge''' is a manufacturer of Internet-based monitor and control hardware and a provider of seamlessly integrated cloud-based social Web 2.0 [[folksonomy|folksonomies]] and curated online API webservices, using [[WebSocket]], [[JSON]] and a host of other related technologies.
+
+Jason Winters and Hans Scharler founded ioBridge in [[Gainesville, Florida]] on June 26, 2008.<ref>{{cite web|title=IOBRIDGE CORPORATION from Florida Department of State, Division of Corporations|access-date=2021-07-24|url=http://search.sunbiz.org/Inquiry/CorporationSearch/SearchResultDetail?inquirytype=EntityName&directionType=Initial&searchNameOrder=IOBRIDGE%20P080000619680&aggregateId=domp-p08000061968-ef5ced8e-c288-48e6-b380-34ff5d24218a&searchTerm=iobridge&listNameOrder=IOBRIDGE%20P080000619680}}</ref>   
+
+In December 2008, ioBridge released the IO-204 Monitor and Control Module and web services platform to connect electronics projects online such as an iPhone-controlled [[dog treat]] dispenser<ref>{{cite web |last=Sande |first=Steven |url=http://www.tuaw.com/2008/12/04/woof-an-iphone-controlled-dog-treat-dispenser/ |title=Woof! An iPhone-controlled dog treat dispenser &#124; TUAW - The Unofficial Apple Weblog |publisher=TUAW |date=2008-12-04 |access-date=2013-07-04 |archive-date=2013-07-03 |archive-url=https://web.archive.org/web/20130703081509/http://www.tuaw.com/2008/12/04/woof-an-iphone-controlled-dog-treat-dispenser/ |url-status=dead }}</ref> and a toaster that could post to [[Twitter]].<ref>{{cite web|last=Ganapati |first=Priya |url=https://www.wired.com/gadgetlab/2008/12/twittering-toas/ |title=Twittering Toaster Offers Some Tasty Bites &#124; Gadget Lab |publisher=Wired.com |date=2009-04-22 |access-date=2013-07-04}}</ref>
+
+In 2009, ReadWriteWeb chose the IO-204 Module as one of its "Top 10 Internet of Things Products of 2009",<ref>{{cite web |url=http://www.readwriteweb.com/archives/top_10_internet_of_things_products_of_2009p2.php |title=Top 10 Internet of Things Products of 2009 – ReadWrite |publisher=Readwriteweb.com |access-date=2013-07-04 |url-status=dead |archive-url=https://web.archive.org/web/20100606073403/http://www.readwriteweb.com/archives/top_10_internet_of_things_products_of_2009p2.php |archive-date=2010-06-06 }}</ref> and Ben Arnold from the [[Consumer Electronics Association]] (CEA) explored the possibilities of using the IO-204 for social-network-aware home automation in the article "Growing the connected home ecosystem".<ref>[http://www.ce.org/Press/CEA_Pubs/135.asp ] {{webarchive |url=https://web.archive.org/web/20091210192416/http://www.ce.org/Press/CEA_Pubs/135.asp |date=December 10, 2009 }}</ref>
+
+User projects using the ioBridge module and web services have been featured on popular technology blogs such as Engadget<ref>{{cite web|url=https://www.engadget.com/tag/ioBridge/ |title=IoBridge Articles on Engadget |publisher=Engadget.com |access-date=2013-07-04}}</ref><ref>{{cite web|last=Flatley |first=Joseph L. |url=https://www.engadget.com/2009/05/13/iobridge-used-for-web-based-water-metering-shiatsu-massage/ |title=ioBridge used for web-based water metering, shiatsu massage |publisher=Engadget.com |date=2009-05-13 |access-date=2013-07-04}}</ref><ref>{{cite web|last=Miller |first=Ross |url=https://www.engadget.com/2009/01/19/student-charts-electrical-usage-in-real-time-much-to-big-brothe/ |title=Student charts electrical usage in real-time, much to Big Brother's delight |publisher=Engadget.com |date=2009-01-19 |access-date=2013-07-04}}</ref> and Hackaday.<ref>{{cite web|url=http://hackaday.com/tag/iobridge/ |title=iobridge |publisher=Hackaday.com |access-date=2013-07-04}}</ref><ref>{{cite web|url=http://hackaday.com/2009/02/04/laser-pup/ |title=Laser pup |publisher=Hackaday.com |date=2009-02-04 |access-date=2013-07-04}}</ref>
+
+==IO-204 Module==
+The IO-204 Module connects to a [[local area network]] using 10/100/1000BASE-T Ethernet and then establishes an encrypted connection to ioBridge web servers.
+
+The IO-204 has four [[GPIO]] channels. Each channel includes a 5&nbsp;V power line, a ground connection, digital input pin, analog input pin, and a digital output pin. The digital input line is capable of reading voltages of 0&nbsp;V and 5&nbsp;V and pulse counting. The analog input is 10-bit resolution for voltages varying between 0&nbsp;V and 5&nbsp;V. The digital output line outputs 0&nbsp;V and 5&nbsp;V at 20&nbsp;mA and is capable of sending pulses and serial data.
+
+Each channel supports smart boards<ref>{{cite web|url=http://www.iobridge.net/wiki/smart-boards |title=Smart Boards |date=17 February 2012 |publisher=Iobridge.net |access-date=2013-07-04}}</ref> to add serial communication for microcontrollers such as [[Arduino]] or [[BASIC Stamp]], [[Servomechanism|servo]] control, or [[X10 (industry standard)|X10]] outlet and light control.
+
+The module provides 1&nbsp;KB of on-board logic storage for rules defined by the user. A rule is a set of conditions and actions based on time, input conditions, output conditions, and online/offline status.
+
+The IO-204 requires a regulated 5&nbsp;V power adapter with a minimum of 1&nbsp;A and a maximum of 4&nbsp;A.
+
+==Web services==
+ioBridge modules are accessed via an ioBridge.com hosted web interface for configuration, control, and monitoring from a web browser supporting [[Ajax (programming)|Ajax]], [[JavaScript]], [[CSS]], and [[HTML]]. Features of the web service include a drag-and-drop dashboard, data logging, data charting, widget creation, and email alerting.
+
+[[API]]s allow the web services to be extended and integrated into third-party applications<ref>{{cite web|url=http://www.iobridge.net/wiki/api |title=ioBridge API |date=17 February 2012 |publisher=Iobridge.net |access-date=2013-07-04}}</ref> using a [[RESTful]] interface.
+
+==References==
+<!--- See [[Wikipedia:Footnotes]] on how to create references using <ref></ref> tags which will then appear here automatically -->
+{{Reflist}}
+
+==External links==
+* [http://www.iobridge.com/ ioBridge Official Site]
+
+{{Ambient intelligence}}
+
+[[Category:Internet of things]]

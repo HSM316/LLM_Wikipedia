@@ -1,0 +1,23 @@
+AForge.NET is a computer vision and artificial intelligence library originally developed by Andrew Kirillov for the .NET Framework.Greg Duncan. Portable Image and Video processing with help from AForge.NET and Accord.NET.  Channel 9, November 2014.  Web extract
+
+The source code and binaries of the project are available under the terms of the Lesser GPL and the GPL (GNU General Public License).
+
+Another (unaffiliated) project called Accord.NET was created to extend the features of the original AForge.NET library.
+
+ Discontinuation of free public support and future development 
+
+On April 1, 2012, Andrew Kirillov announced the end of the public support for the library, temporarily closing the discussion forums. The last release of the AForge.NET Framework was made available on July 17, 2013. However, since its release 3.0 in 2015, the Accord.NET project started to incorporate most of the original AForge.NET source code in its codebase, continuing its support and development under the Accord.NET name.
+
+Features
+
+The framework's API includes support for:
+ Computer vision, image processing and video processing
+ Including a comprehensive image filter library
+ Artificial Neural networks library implements some common network architectures (multi-layer feed forward and distance networks) and learning algorithms (back propagation, delta rule, simple perceptron, evolutionary learning).
+ Genetic algorithms, genetic programming and gene expression programming
+ Fuzzy logic
+ Machine learning
+ and libraries for a select set of robotics kits
+ Lego Mindstorms NXT and RCX kits
+
+The framework is provided not only with different libraries and their sources, but with many sample applications, which demonstrate the use of this framework, and with documentation help files, which are provided in HTML Help format. A number of software applications and research works utilized the framework.

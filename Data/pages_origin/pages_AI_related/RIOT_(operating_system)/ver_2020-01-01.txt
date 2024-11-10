@@ -1,0 +1,54 @@
+{{infobox OS
+| name                   = RIOT
+| logo                   = File:Logo-RIOT.png
+| logo caption           = RIOT – The friendly OS for the IoT
+| source model           = [[Open-source software|Open source]]
+| license                = [[GNU Lesser General Public License|LGPLv2]]
+| working state          = Current
+| kernel type            = [[Microkernel]]
+| supported platforms    = [[TI MSP430]], [[ARM7]], [[ARM Cortex-M]]0-M0+-M3-M4, [[Atmel AVR]], [[MIPS architecture|MIPS32r2]]
+| family                 = [[Embedded operating system]]s
+| website                = {{URL|www.riot-os.org}}
+}}
+
+'''RIOT''' is a small [[operating system]] for networked, memory-constrained systems with a focus on low-power wireless [[Internet of Things]] (IoT) devices. It is [[open-source software]], released under the [[GNU Lesser General Public License]] (LGPL).
+
+==Background==
+It was initially developed by [[Freie Universität Berlin]] (FU Berlin), [[Institut national de recherche en informatique et en automatique]] (INRIA) and the [[Hochschule für Angewandte Wissenschaften Hamburg]] (HAW Hamburg). RIOT's kernel is mostly inherited from FireKernel,<ref>{{cite web|url=https://ieeexplore.ieee.org/document/5355049  |title=A Real-Time Kernel for Wireless Sensor Networks Employed in Rescue Scenarios, in Proceedings of the IEEE 34th Conference on Local Computer Networks (LCN), October 2009. |publisher=IEEE |date=2013-10-20 |accessdate=2014-05-18}}</ref> which was originally developed for [[sensor network]]s.
+
+==Technical aspects==
+RIOT is based on a [[microkernel]] architecture.<ref>{{cite web|url=http://hal.inria.fr/docs/00/94/51/22/PDF/2013-riot_os.pdf |title= RIOT OS: Towards an OS for the Internet of Things, in Proceedings of the 32nd IEEE International Conference on Computer Communications (INFOCOM), April 2013 |publisher=IEEE |date=2013-04-15 |accessdate=2014-05-18}}</ref> In contrast to other operating systems with similarly low memory use (such as [[TinyOS]] or [[Contiki]]), RIOT allows [[Application software|application]] programming with the [[programming language]]s [[C (programming language)|C]] and [[C++]], and provides full [[Thread (computing)|multithreading]] and [[Real-time computing|real-time]] abilities.<ref>{{cite web|url=http://www.heise.de/developer/meldung/Sonderheft-iX-Developer-Embedded-Software-am-Kiosk-erhaeltlich-2112409.html |title=Betriebssysteme für eingebettete Systeme im Internet der Dinge: Freie Fahrt für Experimentierfreudige, published in iX Developer Magazine, Special Issue on Embedded Software |publisher=Heise.de |date=2014-02-14 |accessdate=2014-05-18}}</ref> It is supported by popular [[Transport Layer Security|SSL/TLS]] libraries such as [[wolfSSL]].<ref>{{Cite web|url=https://github.com/RIOT-OS/RIOT/pull/6197|title=wolfSSL Alpha examples by kaleb-himes · Pull Request #6197 · RIOT-OS/RIOT|website=GitHub|language=en|access-date=2019-02-13}}</ref> 
+
+RIOT runs on 8-bit (such as AVR Atmega), 16-bit (such as TI MSP430) and 32-bit (such as ARM Cortex) processors.<ref>{{cite web|url=http://www.lembarque.com/avec-riot-linternet-des-objets-tient-son-os-temps-reel-open-source_001920 |title= Avec RIOT, l'Internet des objets tient son OS temps reel open source |publisher=lembarque.com |date=2014-04-09 |accessdate=2014-05-18}}</ref> A native port also enables RIOT to run as a [[Linux]] or [[macOS]] process, enabling use of standard development and debugging tools such as [[GNU Compiler Collection]] (GCC), [[GNU Debugger]], [[Valgrind]], [[Wireshark]] etc. RIOT is partly [[Portable Operating System Interface]] (POSIX) compliant.
+
+RIOT provides multiple network stacks,<ref>{{cite web|url=http://dl.acm.org/citation.cfm?id=2602399 |title= Simply RIOT: Teaching and Experimental Research in the Internet of Things, in Proceedings of the 13th ACM/IEEE International Conference on Information Processing in Sensor Networks (IPSN), April 2014 |publisher=ACM |date=2014-04-15 |accessdate=2014-05-18}}</ref> including [[IPv6]], [[6LoWPAN]], or [[Content centric networking]] and standard protocols such as RPL,<ref>{{cite web|url=https://tools.ietf.org/html/rfc6550 |title= "RPL: IPv6 Routing Protocol for Low-Power and Lossy Networks", IETF Request For Comments 6550, March 2012 |publisher=IETF |date=2012-03-01 |accessdate=2014-05-18}}</ref> [[User Datagram Protocol]] (UDP), [[Transmission Control Protocol]] (TCP), and [[CoAP]].
+
+==Source code==
+RIOT source code is available on [[GitHub]], and developed by an international community of open source developers.
+
+==See also==
+* [[Contiki]]
+* [[TinyOS]]
+* [[FreeRTOS]]
+* [[Nano-RK]]
+* [[Zephyr (operating_system)|Zephyr]]
+* [[Comparison of real-time operating systems]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|www.riot-os.org}}
+
+{{Wireless Sensor Network}}
+{{Real-time operating systems}}
+{{Microkernel}}
+
+[[Category:ARM operating systems]]
+[[Category:Embedded operating systems]]
+[[Category:Free software operating systems]]
+[[Category:Internet of things]]
+[[Category:Microkernels]]
+[[Category:Microkernel-based operating systems]]
+[[Category:MIPS operating systems]]
+[[Category:Real-time operating systems]]

@@ -1,0 +1,56 @@
+<!-- This page was created using the page Die Kathedrale on German wikipedia, albeit with edits. -->
+{{Infobox video game
+| title = Die Kathedrale
+| image = 
+| platforms = [[Amiga]], [[DOS]]
+| released  = 1991
+| developer = [[:de:Weltenschmiede|Weltenschmiede]]
+| programmer = Harald Evers
+| artist = 
+| collapsible = 
+| state = 
+| caption = 
+| publisher = [[Software 2000]]
+| series = 
+| engine = 
+| genre = [[Interactive fiction|Text adventure]]
+| modes = [[Single-player video game|Single-player]]
+}}
+'''''Die Kathedrale''''' ([[English language|English]]: '''''The Cathedral''''') is a [[German language|German]] [[Interactive fiction|text adventure]] game published in 1991 by [[Software 2000]] and developed by [[:de:Weltenschmiede|Weltenschmiede]], and released for [[Amiga]] and [[DOS]]. ''Die Kathedrale'' is part of a text adventure trilogy; it is preceeded by [[:de:Das Stundenglas|Das Stundenglas]] (1990) and succeeded by [[:de:Hexuma|Hexuma]] (1992).
+
+==Plot==
+The protagonist takes a tour through St. Pauls Kathedrale in the fictional town of Schoenau, which is celebrating its 850th anniversary. There they bump into their former classmate Dani, who is also visiting the cathedral. The cathedral’s visiting hours end, and the pair, having lost track of time, are locked inside. They explore the cathedral and discover letters dating back to the [[15th century]], copies of which are included with the game.<ref name=joker /> The letters suggest that Victor Paz, the [[architect]] of the cathedral, hid fifteen deadly traps in the cathedral to enact revenge on the [[Catholic Church]] as a whole, but also specifically against the [[Bishop]] Sebastian of [[Altenburg]] who murdered one of Paz’s relatives under the [[Medieval Inquisition|Inquisition]].<ref name=joker /> It is also later revealed that Paz is the half brother of [[Jan Hus]], a historical figure who was burned at the stake for [[heresy]].<ref name=joker /> The protagonist must visit three different years in time, and disarm five of the traps in each era; the three years being 1992, 1881 and 1437.
+
+==Gameplay==
+In contrast to classic text adventures, which have no images, ''Die Kathedrale'' has 120 pictures of various locations to accompany the text.<ref name=joker /> ''Die Kathedrale's'' backgrounds can be interacted with in the style of a [[Adventure game#Point-and-click adventure games|point and click adventure]], while interactions with objects are inputted using text commands.<ref name=joker /> ''Die Kathedrale'' has a time limit of 56 in-game hours; after this point, the alternate time zones will become unaccessable and the game will end.<ref name=joker /> ''Die Kathedrale'' has 150 different rooms.<ref name=joker />
+
+==Development==
+''Die Kathedrale'' is the second game in a trilogy of text adventure games about time travel by developer [[:de:Weltenschmiede|Weltenschmiede]]; ''Die Kathedrale'' is preceeded by [[:de:Das Stundenglas|Das Stundenglas]]<ref name=joker /> (1990) and succeeded by [[:de:Hexuma|Hexuma]] (1992).
+
+Publisher [[Software 2000]] describes ''Die Kathedrale'' as an "Artventure" game due to the addition of graphics to the text adventure format - one of eight games in this range. ''Die Kathedrale'' was bundled with [[Infocom#Reception|feelies]], including a poster, [[Blueprint|blueprints]] of the cathedral, a brochure detailing the cathedral's history, and copies of letters from the 15th century that can be found in-game.<ref name=joker /> These feelies serve as a form of [[copy protection]] as they are referenced in the game and required for puzzles.
+
+In 1993 ''Die Kathedrale's'' programmer Harald Evers published a novel based on the game, ''Die Kathedrale: Das Geheimnis einer Rache''.<ref>{{cite book |last1=Evers |first1=Harald |title=Die Kathedrale: Das Geheimnis einer Rache |date=1993 |publisher=Herbig Verlags |location=Munich, Germany |isbn=978-3-7766-1795-5 |url=https://www.worldcat.org/search?qt=wikipedia&q=isbn%3A9783776617955 |language=German}}</ref>
+
+==Reception==
+''Amiga Joker'' gave the Amiga version of ''Die Kathedrale'' an overall score of 87%, calling it "complex" and "the best German text adventure so far" and praised the text adventure format: "The game understands almost any input, and in addition the legibility of the output text is excellent." ''Amiga Joker'' noted ''Die Kathedrale'' as an improvement over its predecessor, ''Das Stundenglas'', citing improved graphics and 'more interesting' feelies. ''Amiga Joker'' also praised the addition of graphical backgrounds, calling them "vibrant & stimulating", but criticized the abscence of music aside from the title screen. ''Amiga Joker'' noted ''Die Kathedrale's'' feelies, praising the "immersive" aged effect of the documents, and stating that "The first thing you notice are the thick and original instructions, which are written like a personal report ... four skillfully aged letters, within which the plot of the game is buried ... the blueprints of the cathedral are very nice and fit the style [of the game]." In their conclusion, ''Amiga Joker'' summarised ''Die Kathedrale'' as "an exciting mystery game with an extra portion of fun - excellent for adventurers whom struggle with the English language, an absolute must!"<ref name=joker>{{cite magazine| title =Die Kathedrale Amiga Review|date=August 1991| url = https://archive.org/details/Amiga_Joker_1991-08_Joker_Verlag_DE/page/n13| magazine = Amiga Joker| publisher = Joker Verlag| page=14}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+* [http://hol.abime.net/2550 ''Die Kathedrale''] at Hall of Light Amiga database
+*{{moby game|id=/die-kathedrale|name=''Die Kathedrale''}}
+
+[[Category:1991 video games]]
+[[Category:Adventure games]]
+[[Category:Amiga games]]
+[[Category:DOS games]]
+[[Category:Video game sequels]]
+[[Category:Video games developed in Germany]]
+[[Category:Video games about time travel]]
+[[Category:Video games with historical settings]]
+[[Category:Video games set in Germany]]
+[[Category:Video games set in the 15th century]]
+[[Category:Video games set in the 19th century]]
+[[Category:Video games set in antiquity]]
+[[Category:Video games about religion]]

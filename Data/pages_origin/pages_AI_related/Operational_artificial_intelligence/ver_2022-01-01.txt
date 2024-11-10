@@ -1,0 +1,23 @@
+'''Operational artificial intelligence''', or '''operational AI''', is a type of intelligent system designed for real-world applications, particularly at commercial scale. The term is used to distinguish accessible [[artificially intelligent]] (AI) systems from [[fundamental research|fundamental]] AI research and from [[industrial AI]] applications which are not integrated with the routine usage of a business. The definition of operational AI differs throughout the IT [[Industry (economics)|industry]], where vendors and individual organizations often create their own custom definitions of such processes and services for the purpose of marketing their own products. 
+
+Applications include [[text analytics]], advanced analytics, [[facial recognition system|facial]] and [[image recognition]], machine learning, and [[natural language generation]].<ref>{{cite web |last1=Barnett |first1=Gordon |title=The insurance industry is a prime target for AI technologies and solutions |url=https://www.zdnet.com/article/the-insurance-industry-is-a-prime-target-for-ai-technologies-and-solutions/ |website=ZDNet |publisher=Forester Research |accessdate=28 March 2018}}</ref> 
+
+==Definitions==
+According to a white paper by software company Tupl Inc, continuous machine learning model training and results extraction in the telecom industry requires a large number of automation utilities in order to "facilitate the development and deployment of a multitude of use cases, the collection and correlation of the data, the creation and training of the models, and the operation at telecom-grade levels of security and availability".<ref>{{cite web |last1=Tapia| last2=Palacios |last3=Noël| last4=Hautakangas |first1=Pablo| first2=Enrique| first3=Laurent| first4=Petri |title=Implementing Operational AI in Telecom Environments |url=https://www.tupl.com/wp-content/uploads/2018/02/tupl-white-paper-operational-ai.pdf |website=tupl.com |publisher=Tupl, inc. |accessdate=12 October 2018}}</ref>
+[[File:Operational ai telecom.png|thumb|Operational AI key components for telecom industry. Authors: Pablo Tapia, Enrique Palacios, Laurent Noël, Petri Hautakangas of Tupl Inc.]]
+
+Researchers in the [[University of Waterloo]]'s Artificial Intelligence Group describe operational AI in terms of the focus on [[Applications of artificial intelligence|applications]] that bring value to products and company.<ref>{{cite web |title=Operational Artificial Intelligence |url=https://uwaterloo.ca/operational-artificial-intelligence-research/ |website=University of Waterloo |accessdate=9 October 2018}}</ref><ref>{{cite web |last1=Han |first1=Meghan |title=New Institute for Applied AI Opens in Waterloo |url=https://medium.com/syncedreview/new-institute-for-applied-ai-opens-in-waterloo-afc35992cbf8 |website=medium.com |publisher=Synced Review |accessdate=9 October 2018}}</ref> University of Waterloo Professor of Electrical and Computer Engineering Fakhri Karray describes operational AI as "application of AI for the masses".<ref>{{cite web |last1=Caldwell |first1=Brian |title=AI with a Difference |url=https://engineerthefuture.ca/ai-with-a-difference/ |publisher=University of Waterloo |accessdate=31 August 2017}}</ref> Canada Research Chair and Associate Professor Alexander Wong describes operational AI as AI for "anyone, anywhere, anytime." [[File:Operational wong.png|thumb|Diagram of components of operational AI. Frame from "Operational Artificial Intelligence: Anytime, Anywhere, Anyone", talk by Professor Alexander Wong, 12-12-2017, uploaded to CENTRA community.]]
+
+==Related terms==
+[[Industrial AI]] refers to intelligent systems applied for business at any scale and for any use case.
+
+==See also==
+*[[Applications of artificial intelligence]]
+*[[Edge computing]]
+*[[Industrial artificial intelligence]]
+*[[Continuous integration]]
+
+==References==
+{{Reflist}}
+
+[[Category:Artificial intelligence]]

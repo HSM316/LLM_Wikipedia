@@ -1,0 +1,94 @@
+{{Short description|Motherboard}}
+{{redirect|Xbee|the car produced by Suzuki|Suzuki Xbee}}
+{{Infobox computer
+|name         = XBee
+|manufacturer = [[Digi International]]
+|CPU          = Silicon Labs EM357 SoC
+|Power        = 2.1 to 3.6 V DC
+|image        = XBee Series 2 with Whip Antenna, with US Quarter.jpg
+|caption      = An XBee radio with a [[Quarter (United States coin)|Quarter]]. The XBee board is {{convert|24.38|mm|in|abbr=on}} wide.
+|type         = Sensor
+|input        = 20 GPIO pins
+}}
+
+'''Digi XBee''' is the brand name of a popular family of [[Computer form factor|form factor]] compatible wireless connectivity modules from [[Digi International]]. The first XBee modules were introduced under the '''MaxStream''' brand in 2005<ref>{{cite web|url=http://www.freescale.com/files/abstract/press_release/MAXSTREAM_ZIGBEE_PR.html |title=Archived copy |access-date=May 11, 2011 |url-status=dead |archive-url=https://web.archive.org/web/20120316101443/http://www.freescale.com/files/abstract/press_release/MAXSTREAM_ZIGBEE_PR.html |archive-date=March 16, 2012 }}</ref> and were based on the [[IEEE 802.15.4]]-2003 standard designed for point-to-point and star communications.  Since the initial introduction, the XBee family has grown and a complete ecosystem of wireless modules, gateways, adapters and software has evolved.
+
+The XBee radios can all be used with the minimum number of connections&nbsp;— power (3.3&nbsp;V), ground, data in and data out ([[Universal asynchronous receiver-transmitter|UART]]), with other recommended lines being Reset and Sleep.<ref>{{cite web|url=http://www.digi.com/support/kbase/kbaseresultdetl.jsp?id%3D2176 |title=Knowledge Base Article - Sleep Timing, Retry Timing, and Encryption Throughput - Support - Digi International |access-date=May 11, 2011 |url-status=dead |archive-url=https://web.archive.org/web/20110722014704/http://www.digi.com/support/kbase/kbaseresultdetl.jsp?id=2176 |archive-date=July 22, 2011 }}</ref> Additionally, most XBee families have some other [[flow control (data)|flow control]], [[input/output]] (I/O), [[analog-to-digital converter]] (A/D) and indicator lines built in.
+
+The latest XBee 3 family introduces new capabilities like MicroPython, Digi's TrustFence security framework and Bluetooth low energy for local commissioning, configuration, diagnostics or beaconing
+
+== Supported technologies ==
+Short Range (2.4 GHz)
+* [[Zigbee]], [[IEEE 802.15.4]], [[Digi International#DigiMesh|DigiMesh]], [[Bluetooth Low Energy]]
+
+Long Range (868/900 MHz)
+* Point-to-Point, Star topology, DigiMesh
+
+Cellular / LPWAN
+* LTE Cat-1, [[LTE-M]] / [[Narrowband IoT]], 3G
+
+==Form-factors, antennas and data modes==
+XBee modules are available in three form-factors. All XBees, with the exception of the XBee 868LP, are available in the popular 20-pin through-hole form-factor. The latest XBee modules are also available in surface-mount and micro-mount form-factors, which are popular for high-volume applications due to the reduced manufacturing costs of SMT.
+
+* [[Through-hole technology|through-hole]] (TH)
+* surface mount (SMT)
+* micro-mount (MMT)
+
+XBee modules typically come with several antenna options, including [[Hirose U.FL|U.FL]], on-board chip, RF pad and integrated PCB
+
+XBee modules can operate either in a transparent data mode or in a packet-based [[application programming interface]] (API) mode.<ref name="XBeeRefGuide">{{Cite web|url=http://www.tunnelsup.com/tup/2012/11/30/xbee-s2-quick-reference-guide-cheat-sheet/|title = XBee S2 Quick Reference Guide/Cheat Sheet and Video Tutorials to Getting Started - TunnelsUP}}</ref> 
+
+* Transparent mode: data coming into the Data IN (DIN) pin are directly transmitted over-the-air to the intended receiving radios without any modification. Incoming packets can either be directly addressed to one target (point-to-point) or broadcast to multiple targets (star). This mode is primarily used in instances where an existing protocol cannot tolerate changes to the data format. [[Hayes command set#Description|AT commands]] are used to control the radio's setting
+* API mode: data are wrapped in a packet structure that allows for addressing, parameter setting and packet delivery feedback,<ref>{{cite web|url=http://www.digi.com/learningcenter/video/player.jsp?videoid%3Dzigbee-at-vs-api-commands |title=ZigBee AT vs API Commands - Digi International |access-date=May 11, 2011 |url-status=dead |archive-url=https://web.archive.org/web/20110722014817/http://www.digi.com/learningcenter/video/player.jsp?videoid=zigbee-at-vs-api-commands |archive-date=July 22, 2011 }}</ref> including remote sensing and control of digital I/O and analog input pins.<ref name="Faludi2010">{{cite book|author=Robert Faludi|title=Building Wireless Sensor Networks: With ZigBee, XBee, Arduino, and Processing|url=https://books.google.com/books?id=xMC69vQJLZIC|access-date=7 June 2012|date=24 December 2010|publisher=O'Reilly Media, Inc.|isbn=978-0-596-80773-3}}</ref>
+
+== Product family ==
+As of March 2020, the Digi XBee portfolio includes<ref>{{Cite web|url=http://www.digi.com/xbee/|title = Explore the Digi XBee Ecosystem}}</ref>
+
+* Short Range (2.4 GHz)
+**XBee 3 (newest family featuring integrated Bluetooth low energy, MicroPython and TrustFence security framework)
+***802.15.4 - [[Network topology#Point-to-point|point-to-point topology]] or [[Network topology#Star|star topology]] based on the [[IEEE 802.15.4]] protocol
+***Zigbee - standards-based mesh networking based on the Zigbee protocol
+***DigiMesh - sleeping mesh networking protocol developed by Digi International
+**XBee Series 2 (mature family, not recommended for new designs)
+***802.15.4 / Zigbee / DigiMesh (see descriptions above)
+*Long Range (900/868 MHz)
+**XBee SX 900 / 868
+***[[Network topology#Point-to-point|point-to-point topology]], [[Network topology#Star|star topology]] or mesh networking based on DigiMesh protocol
+***High power (up to 1-Watt) for extreme RF line-of-sight range up to 105 km (65 miles)
+***Low power (+13 dBm / 20 mW) for EU and battery-optimized applications
+**XBee 868LP/900HP
+***[[Network topology#Point-to-point|point-to-point topology]], [[Network topology#Star|star topology]] or mesh networking based on DigiMesh protocol
+* Cellular / LPWAN
+**XBee 3 LTE Cat-1
+**XBee 3 LTE-M / NB-IoT
+**XBee 3G<!---
+|- style="height: 45px;"
+![[MSRP]]<br>(as of March 2016)
+| || || || || || ||
+
+|- style="height: 45px;"
+!Release date
+| || || || || || ||
+-->
+
+==See also==
+*[[Bluetooth]]
+*[[Zigbee]]
+*[[LTE-M]]
+*[[Narrowband IoT]]
+*[[Comparison of wireless data standards]]
+
+==References==
+{{reflist}}
+
+==External links==
+{{Commons category}}
+* [http://www.digi.com/xbee Official Digi XBee Website]
+* [http://arduino.cc/blog/category/wireless/xbee/ XBee on Arduino Blog]
+* [http://gallery.digi.com/ XBee Project Gallery]
+* [http://examples.digi.com/ XBee Examples Site]
+
+{{Ambient intelligence}}
+
+[[Category:Wireless sensor network]]
+[[Category:Internet of things]]

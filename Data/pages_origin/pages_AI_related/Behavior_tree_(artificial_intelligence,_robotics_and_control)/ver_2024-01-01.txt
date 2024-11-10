@@ -1,0 +1,129 @@
+A '''behavior tree''' is a [[mathematical model]] of [[Automated planning and scheduling|plan]] execution used in [[computer science]], [[robotics]], [[control systems]] and [[Artificial intelligence (video games)|video games]]. They describe switchings between a finite set of tasks in a modular fashion. Their strength comes from their ability to create very complex tasks composed of simple tasks, without worrying how the simple tasks are implemented. Behavior trees present some similarities to [[State machine|hierarchical state machines]] with the key difference that the main building block of a behavior is a task rather than a state. Its ease of human understanding make behavior trees less error prone and very popular in the game developer community. Behavior trees have been shown to generalize several other control architectures.<ref name = "Colledanchise TRO16">{{cite journal |last1=Colledanchise |first1=Michele |last2=Ögren |first2=Petter |year=2017 |title=How Behavior Trees Modularize Hybrid Control Systems and Generalize Sequential Behavior Compositions, the Subsumption Architecture, and Decision Trees |journal=IEEE Transactions on Robotics |volume=33 |issue=2 |pages=372–389 |doi=10.1109/TRO.2016.2633567 |s2cid=9518238 |url=http://urn.kb.se/resolve?urn=urn:nbn:se:kth:diva-202922 }}</ref><ref name = "Colledanchise BOOK17">{{cite book |last1=Colledanchise |first1=Michele |last2=Ögren |first2=Petter |year=2018 |arxiv=1709.00084 |title=Behavior Trees in Robotics and AI: An Introduction |publisher=CRC Press |doi=10.1201/9780429489105 |isbn=978-1-138-59373-2 |s2cid=27470659 }}</ref>
+
+[[File:BT search and grasp.svg|thumb|right|450px| Behavior tree modelling the search and grasp plan of a two-armed robot.]]
+
+== Background ==
+A behavior based control structure has been initially proposed by Rodney Brooks in his paper titled 'A robust layered control system for a mobile robot'. In the initial proposal a list of behaviors could work as alternative one another, later the approach has been extended and generalized in a tree-like organization of behaviors, with extensive application in the game industry{{Citation needed|reason=Provided citations show no evidence of behavior trees originating in video games, only that they were used in those specific video games. Earlier papers such as 'Believable Agents: Building Interactive Personalities' (Loyall 1997) propose behavior trees in other fields.|date=October 2022}} as a powerful tool to [[Behavior model|model the behavior]] of [[non-player character]]s (NPCs).<ref name = "Damian Isla">{{cite web |last=Isla |first=D. |date=2005 |url=https://www.gamasutra.com/view/feature/130663/gdc_2005_proceeding_handling_.php |title=Handling complexity in the Halo 2 AI |work=Game Developers Conference (Vol. 12) }}</ref><ref name = "Damian Isla2">{{cite book |last=Isla |first=D. |year=2008 |title=Halo 3-building a better battle |work=Game Developers Conference 2008 }}</ref><ref name="agis2020">{{cite journal |last1=Agis |first1=Ramiro A. |last2=Gottifredi |first2=Sebastian |last3=García |first3=Alejandro J. |date=2020 |title=An event-driven behavior trees extension to facilitate non-player multi-agent coordination in video games |url=https://cs.uns.edu.ar/~ragis/Agis%20et%20al.%20(2020)%20-%20An%20event-driven%20behavior%20trees%20extension%20to%20facilitate%20non-player%20multi-agent%20coordination%20in%20video%20games.pdf |journal=Expert Systems with Applications |volume=155 |issue=1 |page=113457 |doi=10.1016/j.eswa.2020.113457|s2cid=218995637 }}</ref><ref name="lim">{{cite book |last1=Lim |first1=C. U. |last2=Baumgarten |first2=R. |last3=Colton |first3=S. |chapter=Evolving Behaviour Trees for the Commercial Game DEFCON |series=Lecture Notes in Computer Science |volume=6024 |year=2010 |chapter-url=http://ccg.doc.gold.ac.uk/wp-content/uploads/2016/10/lim_evogames10.pdf |title=Applications of Evolutionary Computation |pages=100–110 |publisher=Springer |location=Berlin |isbn=978-3-642-12238-5 |doi=10.1007/978-3-642-12239-2_11 }}</ref>
+They have been extensively used in high-profile video games such as [[Halo (series)|Halo]], [[BioShock (series)|Bioshock]], and [[Spore (2008 video game)|Spore]]. Recent works propose behavior trees as a multi-mission control framework for [[Unmanned aerial vehicle|UAV]], complex robots, robotic manipulation, and multi-robot systems.<ref name = "ogren2">{{cite book |last=Ögren |first=Petter |chapter-url=https://www.csc.kth.se/~petter/Publications/ogren2012bt.pdf |chapter=Increasing Modularity of UAV Control Systems using Computer Game Behavior Trees |title=AIAA Guidance, Navigation and Control Conference, Minneapolis, Minnesota |pages=13–16 |year=2012 }}</ref><ref name = "colledanchise">{{cite book |last1=Colledanchise |first1=Michele |last2=Marzinotto |first2=Alejandro |last3=Ögren |first3=Petter |title=2014 IEEE International Conference on Robotics and Automation (ICRA) |chapter=Performance analysis of stochastic behavior trees |chapter-url=https://www.csc.kth.se/~miccol/Michele_Colledanchise/Publications_files/ICRA14_cmo_final.pdf |date=2014 |pages=3265–3272 |doi=10.1109/ICRA.2014.6907328 |isbn=978-1-4799-3685-4 |s2cid=14719083 }}</ref><ref name="marzonotto">{{cite book |last1=Marzinotto |first1=Alejandro |last2=Colledanchise |first2=Michele |last3=Smith |first3=Christian |last4=Ögren |first4=Petter |chapter-url=https://www.csc.kth.se/~miccol/Michele_Colledanchise/Publications_files/2013_ICRA_mcko.pdf |chapter=Towards a Unified BTs Framework for Robot Control |title=Robotics and Automation (ICRA), 2014 IEEE International Conference on |date=2014 }}</ref><ref name = "Klocker">Klöckner, Andreas. "Interfacing BTs with the World Using Description Logic." In AIAA Guidance, Navigation and Control Conference, Boston, MA. 2013.</ref><ref name = "Klocker2">{{cite book |last=Klöckner |first=Andreas |chapter=Behavior Trees for UAV Mission Management |title=GI-Jahrestagung |pages=57–68 |year=2013 }}</ref><ref name = "Bagnell">{{cite book |last1=Bagnell |first1=J. Andrew |first2=Felipe |last2=Cavalcanti |first3=Lei |last3=Cui |first4=Thomas |last4=Galluzzo |first5=Martial |last5=Hebert |first6=Moslem |last6=Kazemi |first7=Matthew |last7=Klingensmith |display-authors=3 |chapter-url=https://espace.curtin.edu.au/bitstream/handle/20.500.11937/14608/193059_193059.pdf?sequence=2 |chapter=An integrated system for autonomous robotics manipulation |title=Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ International Conference on |pages=2955–2962 |publisher=IEEE |year=2012 |doi=10.1109/IROS.2012.6385888 |hdl=20.500.11937/14608 |isbn=978-1-4673-1736-8 |s2cid=419179 }}</ref>
+Behavior trees have now reached the maturity to be treated in Game AI textbooks,<ref name = "Millington">{{cite book |last1=Millington |last2=Funge |title=Artificial Intelligence for Games |publisher=CRC Press |year=2009 |isbn=978-0-12-374731-0 }}</ref><ref name = "Rabin">{{cite book |first=S. |last=Rabin |title=Game AI Pro |publisher=CRC Press |year=2014 |isbn=978-1-4665-6596-8 }}</ref> as well as generic game environments such as [[Unity (game engine)]] and [[Unreal Engine]] (see links below).
+
+Behavior trees became popular for their development paradigm: being able to create a complex behavior by only programming the NPC's actions and then designing a tree structure (usually through [[drag and drop]]) whose leaf nodes are actions and whose inner nodes determine the NPC's decision making. Behavior trees are visually intuitive and easy to design, test, and debug, and provide more modularity, scalability, and reusability than other behavior creation methods.
+
+Over the years, the diverse implementations of behavior trees kept improving both in efficiency and capabilities to satisfy the demands of the industry, until they evolved into '''event-driven''' behavior trees.<ref name="champandard2012">{{cite book |first1=Alex J. |last1=Champandard |first2=Philip |last2=Dunstan |chapter-url=http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter06_The_Behavior_Tree_Starter_Kit.pdf |chapter=The Behavior Tree Starter Kit |title=Game AI Pro: Collected Wisdom of Game AI Professionals |pages=72–92 |year=2012 }}</ref><ref name=agis2020/> Event-driven behavior trees solved some scalability issues of classical behavior trees by changing how the tree internally handles its execution, and by introducing a new type of node that can react to events and abort running nodes. Nowadays, the concept of event-driven behavior tree is a standard and used in most of the implementations, even though they are still called "behavior trees" for simplicity.
+
+== Key concepts ==
+
+A behavior tree is graphically represented as a directed [[Tree (set theory)|tree]] in which the nodes are classified as root, control flow nodes, or execution nodes (tasks). For each pair of connected nodes the outgoing node is called parent and the incoming node is called child. The root has no parents and exactly one child, the control flow nodes have one parent and at least one child, and the execution nodes have one parent and no children. Graphically, the children of a control flow node are placed below it, ordered from left to right.<ref name = "craft ai">{{cite web |author=craft ai |date=2015 |url= https://www.craft.ai/post/bt-101-behavior-trees-grammar-basics |title=BT 101 – Behavior Trees grammar basics }}</ref>
+
+The execution of a behavior tree starts from the root which sends ticks with a certain frequency to its child. A tick is an enabling signal that allows the execution of a child. When the execution of a node in the behavior tree is allowed, it returns to the parent a status '''running''' if its execution has not finished yet, '''success''' if it has achieved its goal, or '''failure''' otherwise.
+
+=== Control flow node ===
+
+A control flow node is used to control the subtasks of which it is composed. A control flow node may be either a selector (fallback) node or a sequence node. They run each of their subtasks in turn. When a subtask is completed and returns its status (success or failure), the control flow node decides whether to execute the next subtask or not.
+
+==== Selector (fallback) node ====
+
+[[File:Fallback in Behavior tree.png|thumb|right|Figure I. Graphical representation of a fallback composition of N tasks.]]
+
+Fallback nodes are used to find and execute the first child that does not fail. A fallback node will return with a status code of success or running immediately when one of its children returns success or running (see Figure I and the pseudocode below). The children are ticked in order of importance, from left to right.
+
+In pseudocode, the algorithm for a fallback composition is:
+
+ 1 '''for''' i from 1 to n '''do'''
+ 2     childstatus ← Tick(child(i))
+ 3     '''if''' childstatus = running
+ 4         '''return''' running
+ 5     '''else if''' childstatus = success
+ 6         '''return''' success
+ 7 '''end'''
+ 8 '''return''' failure
+
+==== Sequence node ====
+
+[[File:Sequence composition in behaviour trees.png|thumb|right|Figure II. Graphical representation of a sequence composition of N tasks.]]
+Sequence nodes are used to find and execute the first child that has not yet succeeded. A sequence node will return with a status code of failure or running immediately when one of its children returns failure or running (see Figure II and the pseudocode below). The children are ticked in order, from left to right.
+
+In pseudocode, the algorithm for a sequence composition is:
+
+ 1 '''for''' i from 1 to n '''do'''
+ 2     childstatus ← Tick(child(i))
+ 3     '''if''' childstatus = running
+ 4         '''return''' running
+ 5     '''else if''' childstatus = failure
+ 6         '''return''' failure
+ 7 '''end'''
+ 8 '''return''' success
+
+== Mathematical state space definition ==
+
+In order to apply control theory tools to the analysis of behavior trees, they can be defined as three-tuple.<ref name="colledanchise2">{{cite book |last1=Colledanchise |first1=Michele |last2=Ögren |first2=Petter |chapter-url=https://www.csc.kth.se/~miccol/Michele_Colledanchise/Publications_files/IROS14_CO.pdf |chapter=How Behavior Trees Modularize Robustness and Safety in Hybrid Systems |title=In Intelligent Robots and Systems (IROS), 2014 IEEE/RSJ International Conference on |publisher=IEEE |year=2014 }}</ref>
+
+<math>
+ T_i=\{f_i,r_i, \Delta t\}, 
+</math>
+
+where <math> i\in \mathbb{N}</math> is the index of the tree, <math>f_i: \mathbb{R}^n \rightarrow  \mathbb{R}^n</math> is a vector field representing the right hand side of an ordinary difference equation, <math>\Delta t</math> is a time step and 
+<math>r_i: \mathbb{R}^n \rightarrow  \{R_i,S_i,F_i\}</math> is the return status, that can be equal to either 
+Running <math>R_i</math>,
+Success <math>S_i</math>, or
+Failure <math>F_i</math>.
+
+'''Note''': A task is a degenerate behavior tree with no parent and no child.
+
+=== Behavior tree execution ===
+
+The execution of a behavior tree is described by the following standard ordinary difference equations:
+
+<math>x_{k+1}(t_{k+1})=f_i( x_{k}(t_{k}))  </math>
+
+<math>t_{k+1}=t_{k}+\Delta t </math>
+
+where <math> k\in \mathbb{N}</math> represent the discrete time, and  <math> x \in \mathbb{R}^n  </math> is the state space of the system modelled by the behavior tree.
+
+=== Sequence composition ===
+
+Two behavior trees <math>T_i</math> and <math>T_j</math> can be composed into a more complex behavior tree <math>T_0</math> using a Sequence operator.
+
+<math>T_0=\mbox{sequence}(T_i,T_j).</math>
+
+Then return status <math>r_0</math> and the vector field <math>f_0</math> associated with <math>T_0</math> are defined (for <math>\mathcal{S}_1</math>{{Definition needed|date=January 2019}}) as follows:
+
+<math>
+r_0(x_k) = 
+\begin{cases}
+r_j(x_k) & \text{ if } x_k \in \mathcal{S}_1\\
+r_i(x_k) & \text{ otherwise }.
+\end{cases}
+</math>
+
+<math>
+f_0(x_k) = 
+\begin{cases}
+f_j(x_k) & \text{ if } x_k \in \mathcal{S}_1\\
+f_i(x_k) & \text{ otherwise }.
+\end{cases}
+</math>
+
+== See also ==
+* [[Decision tree]]
+* [[Hybrid system]]
+* [[Subsumption architecture]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [https://wiki.ros.org/behavior_tree ROS behavior tree library]
+* [https://docs.unrealengine.com/4.27/en-US/InteractiveExperiences/ArtificialIntelligence/BehaviorTrees/ Unreal Engine 4 behavior tree documentation]
+* [https://outforafight.wordpress.com/2014/07/15/behaviour-behavior-trees-for-ai-dudes-part-1/ Behavior trees for AI: How they work]
+* [https://www.pirobot.org/blog/0030/ Behavior Trees: Simple yet Powerful AI for your Robot] {{Webarchive|url=https://web.archive.org/web/20200225163905/http://www.pirobot.org/blog/0030/ |date=2020-02-25 }}
+* [https://www.kth.se/profile/petter/page/video-lectures-on-behavior-trees Video Lectures on Behavior Trees]
+
+
+{{DEFAULTSORT:Behavior tree}}
+[[Category:Automata (computation)]]
+[[Category:Models of computation]]
+[[Category:Digital electronics]]
+[[Category:Robot control]]
+[[Category:Automated planning and scheduling]]
+[[Category:Visual programming]]

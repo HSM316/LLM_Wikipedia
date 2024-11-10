@@ -1,0 +1,38 @@
+An area of computer vision is active vision, sometimes also called active computer vision. An active vision system is one that can manipulate the viewpoint of the camera(s) in order to investigate the environment and get better information from it.http://axiom.anu.edu.au/~rsl/rsl_active.html
+
+Background
+The interest in active camera system started as early as two decades ago.  Beginning in the late 1980s, Aloimonos et al. introduced the first general framework for active vision in order to improve the perceptual quality of tracking results.  Active vision is particularly important to cope with problems like occlusions, limited field of view and limited resolution of the camera. Other advantages can be reducing the motion blur of a moving object  and enhancing depth perception of an object by focusing two cameras on the same object or moving the cameras. 
+Active control of the camera view point also helps in focusing computational resources on the relevant element of the scene. In this selective aspect, active vision can be seen as strictly related to (overt & covert) visual attention in biological organisms, which has been shown to enhance the perception of selected part of the visual field. This selective aspect of human (active) vision can be easily related to the foveal structure of the human eye, where in about 5% of the retina more than the 50% of the colour receptors are located.
+
+It has also been suggested that visual attention and the selective aspect of active camera control can help in other tasks like learning more robust models of objects and environments with less labeled samples or autonomously
+.
+
+Approaches
+
+The autonomous camera approach
+Autonomous cameras are cameras that can direct themselves in their environment.  There has been some recent work using this approach.  In work from Denzler et al., the motion of a tracked object is modeled using a Kalman filter while the focal length that minimizes the uncertainty in the state estimations is the one that is used.  A stereo set-up with two zoom cameras was used.  A handful of papers have been written for zoom control and do not deal with total object-camera position estimation.  An attempt to join estimation and control in the same framework can be found in the work of Bagdanov et al., where a Pan-Tilt-Zoom camera is used to track faces.  Both the estimation and control models used are ad hoc, and the estimation approach is based on image features rather than 3D properties of the target being tracked.
+
+The master/slave approach
+In a master/slave configuration, a supervising static camera is used to monitor a wide field of view and to track every moving target of interest. The position of each of these targets over time is then provided to a foveal camera, which tries to observe the targets at a higher resolution. Both the static and the active cameras are calibrated to a common reference, so that data coming from one of them can be easily projected onto the other, in order to coordinate the control of the active sensors. Another possible use of the master/slave approach consists of a static (master) camera extracting visual features of an object of interest, while the active (slave) sensor uses these features to detect the desired object without the need of any training data.
+
+The active camera network approach
+In recent years there has been growing interest in building networks of active cameras and optional static cameras so that you can cover a large area while maintaining high resolution of multiple targets.  This is ultimately a scaled-up version of either the master/slave approach or the autonomous camera approach.  This approach can be highly effective, but also incredibly costly.  Not only are multiple cameras involved but you also must have them communicate with each other which can be computationally expensive.
+
+Controlled active vision framework
+Controlled active vision can be defined as a controlled motion of a vision sensor can maximize the performance of any robotic algorithm that involves a moving vision sensor.  It is a hybrid of control theory and conventional vision.  An application of this framework is real-time robotic servoing around static or moving arbitrary 3-D objects.  See Visual Servoing.  Algorithms that incorporate the use of multiple windows and numerically stable confidence measures are combined with stochastic controllers in order to provide a satisfactory solution to the tracking problem introduced by combining computer vision and control.  In the case where there is an inaccurate model of the environment, adaptive control techniques may be introduced.  The above information and further mathematical representations of controlled active vision can be seen in the thesis of Nikolaos Papanikolopoulos.
+
+Examples
+Examples of active vision systems usually involve a robot mounted camera, but other systems have employed human operator-mounted cameras (a.k.a. "wearables").Mapping Large Loops with a Single Hand-Held Camera.
+LA Clemente, AJ Davison, ID Reid, J Neira, JD Tardós - Robotics: Science and Systems, 2007 Applications include automatic surveillance, human robot interaction (video),Towards active event recognition D Ognibene, Y Demiris The 23rd International Joint Conference of Artificial Intelligence (IJCAI13) SLAM, route planning,http://www.surrey.ac.uk/eng/research/mechatronics/robots/Activities/ActiveVision/activevis.html  etc. In the DARPA Grand Challenge most of the teams used LIDAR combined with active vision systems
+to guide driverless vehicles across an off-road course.
+
+A good example of active vision can be seen in this YouTube video.  It shows face tracking using active vision with a pan-tilt camera system.  https://www.youtube.com/watch?v=N0FjDOTnmm0
+
+Active Vision is also important to understand how humans.Findlay, J. M. & Gilchrist, I. D. Active Vision, The Psychology of Looking and Seeing Oxford University Press, 2003
+and organism endowed with visual sensors, actually see the world considering the limits of their sensors, the richness and continuous variability of the visual signal and the effects of their actions and goals on their perception.
+
+The controllable active vision framework can be used in a number of different ways.  Some examples might be vehicle tracking, robotics applications, and interactive MRI segmentation.
+
+Interactive MRI segmentation uses controllable active vision by using a Lyapanov control design to establish a balance between the influence of a data-driven gradient flow and the human’s input over time.  This smoothly couples automatic segmentation with interactivity.  More information on this method can be found in.  Segmentation in MRIs is a difficult subject, and it takes an expert to trace out the desired segments due to the MRI picking up all fluid and tissue.  This could prove impractical because it would be a very lengthy process.  Controllable active vision methods described in the cited paper could help improve the process while relying on the human less.
+
+Various downloads of different implementations of active vision can be found from this link to the active vision lab at Oxford University.  http://www.robots.ox.ac.uk/ActiveVision/Downloads/index.html

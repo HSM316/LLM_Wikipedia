@@ -1,0 +1,25 @@
+ioBridge is a manufacturer of Internet-based monitor and control hardware and a provider of seamlessly integrated cloud-based social Web 2.0 folksonomies and curated online API webservices, using WebSocket, JSON and a host of other related technologies.
+
+Jason Winters and Hans Scharler founded ioBridge in Gainesville, Florida on June 26, 2008.   
+
+In December 2008, ioBridge released the IO-204 Monitor and Control Module and web services platform to connect electronics projects online such as an iPhone-controlled dog treat dispenser and a toaster that could post to Twitter.
+
+In 2009, ReadWriteWeb chose the IO-204 Module as one of its "Top 10 Internet of Things Products of 2009", and Ben Arnold from the Consumer Electronics Association (CEA) explored the possibilities of using the IO-204 for social-network-aware home automation in the article "Growing the connected home ecosystem". 
+
+User projects using the ioBridge module and web services have been featured on popular technology blogs such as Engadget and Hackaday.
+
+IO-204 Module
+The IO-204 Module connects to a Local Area Network using 10/100/1000Base-T Ethernet and then establishes an encrypted connection to ioBridge web servers.
+
+The IO-204 has four GPIO channels. Each channel includes a 5 V power line, a ground connection, digital input pin, analog input pin, and a digital output pin. The digital input line is capable of reading voltages of 0 V and 5 V and pulse counting. The analog input is 10-bit resolution for voltages varying between 0 V and 5 V. The digital output line outputs 0 V and 5 V at 20 mA and is capable of sending pulses and serial data.
+
+Each channel supports smart boards to add serial communication for microcontrollers such as Arduino or BASIC Stamp, servo control, or X10 outlet and light control.
+
+The module provides 1 KB of on-board logic storage for rules defined by the user. A rule is a set of conditions and actions based on time, input conditions, output conditions, and online/offline status.
+
+The IO-204 requires a regulated 5 V power adapter with a minimum of 1 A and a maximum of 4 A.
+
+Web services
+ioBridge modules are accessed via an ioBridge.com hosted web interface for configuration, control, and monitoring from a web browser supporting Ajax, JavaScript, CSS, and HTML. Features of the web service include a drag-and-drop dashboard, data logging, data charting, widget creation, and email alerting.
+
+APIs allow the web services to be extended and integrated into third-party applications using a RESTful interface.

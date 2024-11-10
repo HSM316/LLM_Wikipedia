@@ -1,0 +1,266 @@
+{{short description|Statistical measure of association for two binary variables}}
+In [[statistics]], the '''phi coefficient''' (or '''mean square contingency coefficient''' and denoted by '''φ''' or '''r<sub>φ</sub>''') is a measure of association for two binary variables. In [[machine learning]], it is known as the '''Matthews correlation coefficient''' (MCC) and used as a measure of the quality of binary (two-class) [[Binary classification|classifications]], introduced by biochemist [[Brian Matthews (biochemist)|Brian W. Matthews]] in 1975.<ref name="Matthews1975">{{cite journal|last=Matthews|first=B. W.|title=Comparison of the predicted and observed secondary structure of T4 phage lysozyme|journal=Biochimica et Biophysica Acta (BBA) - Protein Structure|date=1975|volume=405|issue=2|pages=442–451|doi=10.1016/0005-2795(75)90109-9|pmid=1180967}}</ref> Introduced by [[Karl Pearson]],<ref>Cramer, H.  (1946). ''Mathematical Methods of Statistics''. Princeton: Princeton  University Press, p. 282 (second paragraph). {{ISBN|0-691-08004-6}}</ref> and also known as the ''Yule phi coefficient'' from its introduction by [[Udny Yule]] in 1912<ref>{{Cite journal|title=On the Methods of Measuring Association Between Two Attributes|journal=Journal of the Royal Statistical Society|last=Yule|first=G. Udny|volume=75|pages=579–652|issue=6|year=1912|doi=10.2307/2340126|jstor=2340126|url=https://zenodo.org/record/1449482}}</ref> this measure is similar to the [[Pearson correlation coefficient]] in its interpretation. In fact, a Pearson correlation coefficient estimated for two binary variables will return the phi coefficient.<ref>Guilford, J. (1936). ''Psychometric Methods''. New York: McGraw–Hill Book Company, Inc.
+</ref> The phi coefficient is related to the [[chi-squared statistic]] for a 2×2 [[contingency table]] (see [[Pearson's chi-squared test]])<ref>Everitt B.S. (2002) ''The Cambridge Dictionary of Statistics'', CUP. {{ISBN|0-521-81099-X}}</ref>
+
+: <math>|\phi| = \sqrt{\frac{\chi^2}{n}}</math>
+
+where ''n'' is the total number of observations. Two binary variables are considered positively associated if most of the data falls along the diagonal cells. In contrast, two binary variables are considered negatively associated if most of the data falls off the diagonal. If we have a 2×2 table for two random variables ''x'' and&nbsp;''y''
+<center>
+{| class="wikitable" style="text-align: center; background: #FFFFFF;"
+|-----
+|
+|| ''y'' = 1 || ''y'' = 0 || total
+|-----
+| ''x'' = 1 || <math>n_{11}</math> || <math>n_{10}</math> || <math>n_{1\bullet}</math>
+|-----
+| ''x'' = 0 || <math>n_{01}</math> || <math>n_{00}</math> || <math>n_{0\bullet}</math>
+|-----
+| total     || <math>n_{\bullet1}</math> || <math>n_{\bullet0}</math> || <math>n</math>
+|}
+</center>
+where ''n''<sub>11</sub>,  ''n''<sub>10</sub>, ''n''<sub>01</sub>, ''n''<sub>00</sub>, are non-negative counts of numbers of observations that sum to&nbsp;''n'', the total number of observations.  The phi coefficient that describes the association of ''x'' and ''y'' is
+
+: <math>\phi = \frac{n_{11}n_{00}-n_{10}n_{01}}{\sqrt{n_{1\bullet}n_{0\bullet}n_{\bullet0}n_{\bullet1}}}.</math>
+
+Phi is related to the [[point-biserial correlation coefficient]] and Cohen's ''d'' and estimates the extent of the relationship between two variables (2×2).<ref name="Ref_">Aaron, B., Kromrey, J. D., & Ferron, J. M. (1998, November). [https://eric.ed.gov/?id=ED433353 Equating r-based and d-based effect-size indices: Problems with a commonly recommended formula.] Paper presented at the annual meeting of the Florida Educational Research Association, Orlando, FL. (ERIC Document Reproduction Service No. ED433353)</ref>
+
+The phi coefficient can also be expressed using only <math>n</math>, <math>n_{11}</math>, <math>n_{1\bullet}</math>, and <math>n_{\bullet1}</math>, as
+
+: <math>\phi = \frac{nn_{11}-n_{1\bullet}n_{\bullet1}}{\sqrt{n_{1\bullet}n_{\bullet1}(n-n_{1\bullet})(n-n_{\bullet1})}}.</math>
+
+==Maximum values==
+Although computationally the Pearson correlation coefficient reduces to the phi coefficient in the 2×2 case, they are not in general the same. The Pearson correlation coefficient ranges from −1 to +1, where ±1 indicates perfect agreement or disagreement, and 0 indicates no relationship. The phi coefficient has a maximum value that is determined by the distribution of the two variables if one or both variables can take on more than two values.{{Explain|date=November 2020|reason=The article only ever talks about the 2x2 case and binary variables. How does the phi coefficient extend to other cases?}} See Davenport and El-Sanhury (1991) <ref>Davenport, E., & El-Sanhury, N. (1991). Phi/Phimax: Review and Synthesis. Educational and Psychological Measurement, 51, 821–828.</ref> for a thorough discussion.
+
+== Machine learning ==
+The MCC is defined identically to phi coefficient, introduced by [[Karl Pearson]],<ref>Cramer, H.  (1946). ''Mathematical Methods of Statistics''. Princeton: Princeton  University Press, p. 282 (second paragraph). {{ISBN|0-691-08004-6}}</ref><ref>Date unclear, but prior to his death in 1936.</ref> also known as the Yule phi coefficient from its introduction by [[Udny Yule]] in 1912.<ref>{{Cite journal|title=On the Methods of Measuring Association Between Two Attributes|journal=Journal of the Royal Statistical Society|last=Yule|first=G. Udny|volume=75|pages=579–652|issue=6|year=1912|doi=10.2307/2340126|jstor=2340126|url=https://zenodo.org/record/1449482}}</ref> Despite these antecedents which predate Matthews's use by several decades, the term MCC is widely used in the field of bioinformatics and machine learning.
+
+The coefficient takes into account true and false positives and negatives and is generally regarded as a balanced measure which can be used even if the classes are of very different sizes.<ref name="Boughorbel2017">{{cite journal|last=Boughorbel|first=S.B |title=Optimal classifier for imbalanced data using Matthews Correlation Coefficient metric|journal=PLOS ONE|volume=12 |issue=6 |pages=e0177678 |date=2017|doi=10.1371/journal.pone.0177678 |pmid=28574989 |pmc=5456046 |bibcode=2017PLoSO..1277678B |doi-access=free }}</ref> The MCC is in essence a correlation coefficient between the observed and predicted binary classifications; it returns a value between &minus;1 and +1. A coefficient of +1 represents a perfect prediction, 0 no better than random prediction and &minus;1 indicates total disagreement between prediction and observation. However, if MCC equals neither &minus;1, 0, or +1, it is not a reliable indicator of how similar a predictor is to random guessing because MCC is dependent on the dataset.<ref name="Chicco2021">{{cite journal|last1=Chicco|first1=D.|last2=Tötsch|first2=N.|last3=Jurman|first3=G.|title=The Matthews correlation coefficient (MCC) is more reliable than balanced accuracy, bookmaker informedness, and markedness in two-class confusion matrix evaluation|journal=BioData Mining|volume=14 |date=2021|issue=1|page=13|doi=10.1186/s13040-021-00244-z|pmid=33541410|pmc=7863449|doi-access=free}}</ref> MCC is closely related to the [[Pearson's chi-square test|chi-square statistic]] for a 2×2 [[contingency table]]
+
+: <math>|\text{MCC}| = \sqrt{\frac{\chi^2}{n}}</math>
+
+where ''n'' is the total number of observations.
+
+While there is no perfect way of describing the [[confusion matrix]] of true and false positives and negatives by a single number, the Matthews correlation coefficient is generally regarded as being one of the best such measures.<ref name="Powers2011">{{cite arxiv |last1=Powers |first1=David M. W. |title=Evaluation: from precision, recall and F-measure to ROC, informedness, markedness and correlation |date=10 October 2020 |class=cs.LG |eprint=2010.16061}}</ref> Other measures, such as the proportion of correct predictions (also termed [[accuracy]]), are not useful when the two classes are of very different sizes. For example, assigning every object to the larger set achieves a high proportion of correct predictions, but is not generally a useful classification.
+
+The MCC can be calculated directly from the [[confusion matrix]] using the formula:
+
+: <math>
+\text{MCC} = \frac{ \mathit{TP} \times \mathit{TN} - \mathit{FP} \times \mathit{FN} } {\sqrt{ (\mathit{TP} + \mathit{FP}) ( \mathit{TP} + \mathit{FN} ) ( \mathit{TN} + \mathit{FP} ) ( \mathit{TN} + \mathit{FN} ) } }
+</math>
+
+In this equation, ''TP'' is the number of [[true positive]]s, ''TN'' the number of [[true negative]]s, ''FP'' the number of [[false positive]]s and ''FN'' the number of [[false negative]]s. If any of the four sums in the denominator is zero, the denominator can be arbitrarily set to one; this results in a Matthews correlation coefficient of zero, which can be shown to be the correct limiting value.
+
+The MCC can be calculated with the formula:
+: <math>\text{MCC} =
+    \sqrt{\mathit{PPV} \times \mathit{TPR} \times \mathit{TNR} \times \mathit{NPV}}
+  - \sqrt{\mathit{FDR} \times \mathit{FNR} \times \mathit{FPR} \times \mathit{FOR}}
+</math>
+using the positive predictive value, the true positive rate, the true negative rate, the negative predictive value, the false discovery rate, the false negative rate, the false positive rate, and the false omission rate.
+
+The original formula as given by Matthews was:<ref name=Matthews1975 />
+: <math>\begin{align}
+           N &= \mathit{TN} + \mathit{TP} + \mathit{FN} + \mathit{FP} \\
+           S &= \frac{ \mathit{TP} + \mathit{FN} } { N } \\
+           P &= \frac{ \mathit{TP} + \mathit{FP} } { N } \\
+  \text{MCC} &= \frac{ \mathit{TP} / N - S \times P } {\sqrt{ P S ( 1 - S)  ( 1 - P ) } }
+\end{align}</math>
+
+This is equal to the formula given above. As a [[Correlation and dependence|correlation coefficient]], the Matthews correlation coefficient is the [[geometric mean]] of the [[regression coefficient]]s of the problem and its [[Dual (mathematics)|dual]]. The component regression coefficients of the Matthews correlation coefficient are [[Markedness]] (Δp) and [[Youden's J statistic]] ([[Informedness]] or Δp').<ref name="Powers2011" /><ref name="Perruchet2004">{{cite journal |first1=P. |last1=Perruchet |first2=R. |last2=Peereman |year=2004 |title=The exploitation of distributional information in syllable processing |journal=J. Neurolinguistics |volume=17 |issue=2–3 |pages=97–119 |doi=10.1016/s0911-6044(03)00059-9|s2cid=17104364 }}</ref> [[Markedness]] and [[Informedness]] correspond to different directions of information flow and generalize [[Youden's J statistic]], the <math> \delta </math>p statistics and (as their geometric mean) the Matthews Correlation Coefficient to more than two classes.<ref name="Powers2011" />
+
+Some scientists claim the Matthews correlation coefficient to be the most informative single score to establish the quality of a binary classifier prediction in a confusion matrix context.<ref name="Chicco2017">{{cite journal 
+| vauthors = Chicco D
+| title = Ten quick tips for machine learning in computational biology 
+| journal = BioData Mining
+| volume = 10
+| issue =  35
+| pages = 35 
+| date = December 2017 
+| pmid = 29234465
+| doi = 10.1186/s13040-017-0155-3
+| pmc= 5721660
+}}</ref>
+
+==Example==
+Given a sample of 12 pictures, 8 of cats and 4 of dogs, where cats belong to class 1 and dogs belong to class 0,
+
+:actual = [1,1,1,1,1,1,1,1,0,0,0,0],
+
+assume that a classifier that distinguishes between cats and dogs is trained, and we take the 12 pictures and run them through the classifier, and the classifier makes 9 accurate predictions and misses 3: 2 cats wrongly predicted as dogs (first 2 predictions) and 1 dog wrongly predicted as a cat (last prediction).
+
+:prediction = [0,0,'''1''','''1''','''1''','''1''','''1''','''1''','''0''','''0''','''0''',1]
+
+With these two labelled sets (actual and predictions) we can create a confusion matrix that will summarize the results of testing the classifier:
+{| class="wikitable" style="text-align:center;"
+! {{diagonal split header|Actual class|Predicted<br />class}}
+! Cat
+! Dog
+|-
+! Cat
+| '''6'''
+| 2
+|-
+! Dog
+| 1
+| '''3'''
+|}
+
+In this confusion matrix, of the 8 cat pictures, the system judged that 2 were dogs, and of the 4 dog pictures, it predicted that 1 was a cat. All correct predictions are located in the diagonal of the table (highlighted in bold), so it is easy to visually inspect the table for prediction errors, as they will be represented by values outside the diagonal.
+
+In abstract terms, the confusion matrix is as follows:
+{| class="wikitable" style="text-align:center;"
+! {{diagonal split header|Actual class|Predicted<br />class}}
+!P
+!N
+|-
+!P
+|'''TP'''
+|FN
+|-
+!N
+|FP
+|'''TN'''
+|}
+where P = Positive; N = Negative; TP = True Positive; FP = False Positive; TN = True Negative; FN = False Negative.
+
+Plugging the numbers from the formula:
+:<math>\text{MCC} = \frac{6 \times 3 - 1 \times 2}{\sqrt{(6 + 1) \times (6 + 2) \times (3 + 1) \times (3 + 2)}} = \frac{16}{\sqrt{1120}} \approx 0.478</math>
+
+== Confusion matrix ==
+{{main article|Confusion matrix}}
+
+{{Confusion matrix terms|recall=}}
+
+Let us define an experiment from '''P''' positive instances and '''N''' negative instances for some condition. The four outcomes can be formulated in a 2×2 ''[[contingency table]]'' or ''[[confusion matrix]]'', as follows:
+
+{{diagnostic testing diagram}}
+
+== Multiclass case ==
+The Matthews correlation coefficient has been generalized to the multiclass case. This generalization was called the  <math>R_K</math> statistic (for K different classes) by the author, and defined in terms of a <math>K\times K</math> confusion matrix <math>C</math><ref name="gorodkin2004comparing">{{cite journal|last=Gorodkin|first=Jan|title=Comparing two K-category assignments by a K-category correlation coefficient|journal=Computational Biology and Chemistry|date=2004|volume=28|number=5|pages=367–374|doi=10.1016/j.compbiolchem.2004.09.006|pmid=15556477}}</ref>
+.<ref name="GorodkinRk2006">{{cite web|last1=Gorodkin|first1=Jan|title=The Rk Page|url=http://rk.kvl.dk/introduction/index.html|website=The Rk Page|access-date=28 December 2016}}</ref>
+
+:<math>\text{MCC} =
+  \frac{\sum_{k}\sum_{l}\sum_{m} C_{kk}C_{lm} - C_{kl}C_{mk}}{
+    \sqrt{\sum_{k}\left(\sum_l C_{kl}\right)\left(\sum_{k' | k' \neq k}\sum_{l'} C_{k'l'}\right)}
+    \sqrt{\sum_{k}\left(\sum_l C_{lk}\right)\left(\sum_{k' | k' \neq k}\sum_{l'} C_{l'k'}\right)}
+  }
+</math>
+
+When there are more than two labels the MCC will no longer range between −1 and +1. Instead the minimum value will be between −1 and 0 depending on the true distribution. The maximum value is always +1.
+
+<!-- 
+TODO: potentially un-comment later, for now just stick with referenced version-->
+
+This formula can be more easily understood by defining intermediate variables:<ref>{{cite web|url=https://scikit-learn.org/stable/modules/model_evaluation.html#matthews-corrcoef|title=Matthew Correlation Coefficient|website=scikit-learn.org}}</ref> 
+* <math>t_k = \sum_i C_{ik}</math> the number of times class k truly occurred, 
+* <math>p_k = \sum_i C_{ki}</math> the number of times class k was predicted, 
+* <math>c = \sum_{k} C_{kk}</math> the total number of samples correctly predicted, 
+* <math>s = \sum_i \sum_j C_{ij}</math> the total number of samples. This allows the formula to be expressed as:
+
+:<math>\text{MCC} =
+  \frac{cs - \vec{t} \cdot \vec{p}}{
+    \sqrt{s^2 - \vec{p} \cdot \vec{p}}
+    \sqrt{s^2 - \vec{t} \cdot \vec{t}}
+  }
+</math>
+{| class="wikitable" style="float:right; text-align:center;"
+! {{diagonal split header|Actual class|Predicted<br />class}}
+! Cat !! Dog !! rowspan="4" style="padding:0;"| || Sum
+|-
+! Cat
+| '''6''' || 2 || {{color|maroon|'''8'''}}
+|-
+! Dog
+| 1 || '''3''' || {{color|brown|'''4'''}}
+|- style="border-top:2px solid #aaa;"
+! Sum
+| {{color|purple|'''7'''}} || {{color|blue|'''5'''}} || {{color|green|'''12'''}}
+|}
+Using above formula to compute MCC measure for the dog and cat example discussed above, where the confusion matrix is treated as a 2 × Multiclass example:
+
+:<math>\text{MCC}=\frac{(6+3)\times{\color{green}12}\;-\;{\color{blue}5}\times{\color{brown}4}\;-\;{\color{purple}7}\times{\color{maroon}8}}{\sqrt{{\color{green}12}^2-{\color{blue}5}^2-{\color{purple}7}^2}\sqrt{{\color{green}12}^2-{\color{brown}4}^2-{\color{maroon}8}^2}}=\frac{32}{\sqrt{4480}}\approx 0.478</math>
+
+== Advantages over accuracy and F1 score ==
+As explained by Davide Chicco in his paper ''"Ten quick tips for machine learning in [[computational biology]]"'' ([[BioData Mining]], 2017) and by Giuseppe Jurman in his paper ''"The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation"'' ([[BMC Genomics]], 2020), the Matthews correlation coefficient is more informative than F1 score and accuracy in evaluating binary classification problems, because it takes into account the balance ratios of the four confusion matrix categories (true positives, true negatives, false positives, false negatives).<ref name="Chicco2017" /><ref>{{cite journal | vauthors = Chicco D, Jurman G | title = The advantages of the Matthews correlation coefficient (MCC) over F1 score and accuracy in binary classification evaluation | journal = BMC Genomics| volume = 21| issue =  1| date = January 2020 | page = 6-1–6-13 | pmid = 31898477| doi = 10.1186/s12864-019-6413-7| pmc= 6941312}}</ref>
+
+The former article explains, for ''Tip 8'':
+
+{{Quote
+|title=Ten quick tips for machine learning in [[computational biology]]<ref name="Chicco2017" />
+|author=Davide Chicco
+|text=In order to have an overall understanding of your prediction, you decide to take advantage of common statistical scores, such as accuracy, and F1 score.
+: <math>\text{accuracy} = \frac{ TP+TN } {TP+TN+FP+FN}</math>
+
+(Equation 1, accuracy: worst value = 0; best value = 1)
+
+: <math>\text{F1 score} = \frac{ 2 TP } {2 TP+FP+FN}</math>
+
+(Equation 2, F1 score: worst value = 0; best value = 1)
+
+However, even if accuracy and F1 score are widely employed in statistics, both can be misleading, since they do not fully consider the size of the four classes of the confusion matrix in their final score computation.
+
+Suppose, for example, you have a very imbalanced validation set made of 100 elements, 95 of which are positive elements, and only 5 are negative elements (as explained in Tip 5). And suppose also you made some mistakes in designing and training your machine learning classifier, and now you have an algorithm which always predicts positive. Imagine that you are not aware of this issue.
+
+By applying your only-positive predictor to your imbalanced validation set, therefore, you obtain values for the confusion matrix categories:
+
+: TP = 95, FP = 5; TN = 0, FN = 0.
+
+These values lead to the following performance scores: accuracy = 95%, and F1 score = 97.44%. By reading these over-optimistic scores, then you will be very happy and will think that your machine learning algorithm is doing an excellent job. Obviously, you would be on the wrong track.
+
+On the contrary, to avoid these dangerous misleading illusions, there is another performance score that you can exploit: the Matthews correlation coefficient [40] (MCC).
+: <math>\text{MCC} = \frac{ TP \times TN - FP \times FN } {\sqrt{ (TP + FP) ( TP + FN ) ( TN + FP ) ( TN + FN ) } }</math>
+
+(Equation 3, MCC: worst value = −1; best value = +1).
+
+By considering the proportion of each class of the confusion matrix in its formula, its score is high only if your classifier is doing well on both the negative and the positive elements.
+
+In the example above, the MCC score would be undefined (since TN and FN would be 0, therefore the denominator of Equation 3 would be 0). By checking this value, instead of accuracy and F1 score, you would then be able to notice that your classifier is going in the wrong direction, and you would become aware that there are issues you ought to solve before proceeding.
+
+Consider this other example. You ran a classification on the same dataset which led to the following values for the confusion matrix categories:
+
+: TP = 90, FP = 4; TN = 1, FN = 5.
+
+In this example, the classifier has performed well in classifying positive instances, but was not able to correctly recognize negative data elements. Again, the resulting F1 score and accuracy scores would be extremely high: accuracy = 91%, and F1 score = 95.24%. Similarly to the previous case, if a researcher analyzed only these two score indicators, without considering the MCC, they would wrongly think the algorithm is performing quite well in its task, and would have the illusion of being successful.
+
+On the other hand, checking the Matthews correlation coefficient would be pivotal once again. In this example, the value of the MCC would be 0.14 (Equation 3), indicating that the algorithm is performing similarly to random guessing. Acting as an alarm, the MCC would be able to inform the data mining practitioner that the statistical model is performing poorly.
+
+For these reasons, we strongly encourage to evaluate each test performance through the Matthews correlation coefficient (MCC), instead of the accuracy and the F1 score, for any binary classification problem.
+}}
+
+Chicco's passage might be read as endorsing the MCC score in cases with imbalanced data sets. This, however, is contested; in particular, Zhu (2020) offers a strong rebuttal.<ref>{{Cite journal|last=Zhu|first=Qiuming|date=2020-08-01|title=On the performance of Matthews correlation coefficient (MCC) for imbalanced dataset|url=https://www.sciencedirect.com/science/article/pii/S016786552030115X|journal=Pattern Recognition Letters|language=en|volume=136|pages=71–80|doi=10.1016/j.patrec.2020.03.030|bibcode=2020PaReL.136...71Z|s2cid=219762950|issn=0167-8655}}</ref>
+
+Note that the F1 score depends on which class is defined as the positive class. In the first example above, the F1 score is high because the majority class is defined as the positive class. Inverting the positive and negative classes results in the following confusion matrix:
+
+: TP = 0, FP = 0; TN = 5, FN = 95
+
+This gives an F1 score = 0%.
+
+The MCC doesn't depend on which class is the positive one, which has the advantage over the F1 score to avoid incorrectly defining the positive class.
+
+==See also==
+* [[Cohen's kappa]]
+* [[Contingency table]]
+* [[Cramér's V (statistics)|Cramér's V]], a similar measure of association between nominal variables.
+* [[F1 score]]
+* [[Fowlkes–Mallows index]]
+* [[Polychoric correlation]] (subtype: Tetrachoric correlation), when variables are seen as dichotomized versions of (latent) continuous variables
+
+==References==
+{{Reflist}}
+
+<!--from [[Matthews correlation coefficient]]
+should reference in the main text  === General References ===
+* [[Pierre Baldi|Baldi, P.]]; Brunak, S.; Chauvin, Y.; Andersen, C. A. F.; Nielsen, H. Assessing the accuracy of prediction algorithms for classification: an overview" ''Bioinformatics'' 2000, 16, 412&ndash;424. [https://web.archive.org/web/20070303100500/http://bioinformatics.oxfordjournals.org/cgi/content/abstract/16/5/412]
+* Carugo, O., Detailed estimation of bioinformatics prediction reliability through the Fragmented Prediction Performance Plots. BMC Bioinformatics 2007. [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2148069/]
+-->
+
+{{Statistics}}
+
+{{DEFAULTSORT:Phi Coefficient}}
+[[Category:Bioinformatics]]
+[[Category:Cheminformatics]]
+[[Category:Computational chemistry]]
+[[Category:Information retrieval evaluation]]
+[[Category:Machine learning]]
+[[Category:Statistical classification]]
+[[Category:Statistical ratios]]
+[[Category:Summary statistics for contingency tables]]

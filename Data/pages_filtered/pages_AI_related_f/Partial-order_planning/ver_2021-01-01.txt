@@ -1,0 +1,57 @@
+Partial-order planning is an approach to automated planning that maintains a partial ordering between actions and only commits ordering between actions when forced to i.e., ordering of actions is partial. Also this planning doesn't specify which action will come out first when two actions are processed. By contrast, total-order planning maintains a total ordering between all actions at every stage of planning. Given a problem in which some sequence of actions is required in order to achieve a goal, a partial-order plan specifies all actions that need to be taken, but specifies an ordering between actions only where necessary.
+	
+Consider the following situation: a person must travel from the start to the end of an obstacle course. This obstacle course is composed of a bridge, a see-saw and a swing-set. The bridge must be traversed before the see-saw and swing-set are reachable. Once reachable, the see-saw and swing-set can be traversed in any order, after which the end is reachable. In a partial-order plan, ordering between these obstacles is specified only when necessary. The bridge must be traversed first. Second, either the see-saw or swing-set can be traversed. Third, the remaining obstacle can be traversed. Then the end can be traversed. Partial-order planning relies upon the Principle of Least Commitment for its efficiency. 
+
+Partial-order plan
+A partial-order plan or partial plan is a plan which specifies all actions that need to be taken, but only specifies the order between actions when necessary. It is the result of a partial-order planner. A partial-order plan consists of four components:
+
+ A set of actions (also known as operators).
+ A partial order for the actions. It specifies the conditions about the order of some actions.
+ A set of causal links. It specifies which actions meet which preconditions of other actions. Alternatively, a set of bindings between the variables in actions.
+ A set of open preconditions. It specifies which preconditions are not fulfilled by any action in the partial-order plan.
+
+In order to keep the possible orders of the actions as open as possible, the set of order conditions and causal links must be as small as possible.
+
+A plan is a solution if the set of open preconditions is empty.
+
+A linearization of a partial order plan is a total order plan derived from the particular partial order plan; in other words, both order plans consist of the same actions, with the order in the linearization being a linear extension of the partial order in the original partial order plan.
+
+Example
+
+For example, a plan for baking a cake might start:
+
+ go to the store
+ get eggs; get flour; get milk
+ pay for all goods
+ go to the kitchen
+
+This is a partial plan because the order for finding eggs, flour and milk is not specified, the agent can wander around the store reactively accumulating all the items on its shopping list until the list is complete.
+
+Partial-order planner
+
+A partial-order planner is an algorithm or program which will construct a partial-order plan and search for a solution. The input is the problem description, consisting of descriptions of the initial state, the goal and possible actions.
+
+The problem can be interpreted as a search problem where the set of possible partial-order plans is the search space. The initial state would be the plan with the open preconditions equal to the goal conditions. The final state would be any plan with no open preconditions, i.e. a solution.
+
+The initial state is the starting conditions, and can be thought of as the preconditions to the task at hand. For a task of setting the table, the initial state could be a clear table. The goal is simply the final action that needs to be accomplished, for example setting the table. The operators of the algorithm are the actions by which the task is accomplished. For this example there may be two operators: lay (tablecloth), and place (glasses, plates, and silverware).
+
+Plan space
+The plan space of the algorithm is constrained between its start and finish. The algorithm starts, producing the initial state and finishes when all parts of the goal have been achieved. In the setting a table example, there are two types of actions that need to be addressed—the put-out and lay operators. There are also four unsolved operators: Action 1, lay-tablecloth, Action 2, Put-out (plates), Action 3, Put-out (silverware), and Action 4, Put-out (glasses). However, there is a threat that arises if Action 2, 3, or 4 comes before Action 1. This threat is that the precondition to the start of the algorithm will be unsatisfied as the table will no longer be clear. Thus, there are constraints that need to be added to the algorithm that force Actions 2, 3, and 4 to come after Action 1. Once these steps are completed, the algorithm will finish and the goal will have been completed.
+
+Threats
+As seen in the algorithm presented above, partial-order planning can encounter certain threats, meaning orderings that threaten to break connected actions, thus potentially destroying the entire plan. There are two ways to resolve threats: 
+ Promotion
+ Demotion
+
+Promotion orders the possible threat after the connection it threatens. Demotion orders the possible threat before the connection it threatens.
+
+Partial-order planning algorithms are known for being both sound and complete, with sound being defined as the total ordering of the algorithm, and complete being defined as the capability to find a solution, given that a solution does in fact exist.
+
+Partial-order vs. total-order planning
+Partial-order planning is the opposite of total-order planning, in which actions are sequenced all at once and for the entirety of the task at hand. The question arises when one has two competing processes, which one is better? Anthony Barret and Daniel Weld have argued in their 1993 book, that partial-order planning is superior to total-order planning, as it is faster and thus more efficient. They tested this theory using Korf’s taxonomy of subgoal collections, in which they found that partial-order planning performs better because it produces more trivial serializability than total-order planning. Trivial serializability facilitates a planner’s ability to perform quickly when dealing with goals that contain subgoals. Planners perform more slowly when dealing with laboriously serializable or nonserializable subgoals. The determining factor that makes a subgoal trivially or laboriously serializable is the search space of different plans. They found that partial-order planning is more adept at finding the quickest path, and is therefore the more efficient of these two main types of planning.
+
+The Sussman anomaly
+Partial-order plans are known to easily and optimally solve the Sussman anomaly. Using this type of incremental planning system solves this problem quickly and efficiently. This was a result of partial-order planning that solidified its place as an efficient planning system.
+
+Disadvantages to partial-order planning
+One drawback of this type of planning system is that it requires a lot more computational power for each node. This higher per-node cost occurs because the algorithm for partial-order planning is more complex than others. This has important artificial intelligence implications. When coding a robot to do a certain task, the creator needs to take into account how much energy is needed. Though a partial-order plan may be quicker it may not be worth the energy cost for the robot. The creator must be aware of and weigh these two options to build an efficient robot.

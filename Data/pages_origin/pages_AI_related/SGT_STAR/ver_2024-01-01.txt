@@ -1,0 +1,22 @@
+'''SGT STAR''', also known as '''Sgt. Star''' or '''Sergeant Star''', was a [[chatbot]] operated by the [[United States Army]] to answer questions about [[Military recruitment|recruitment]].<ref name="nbc">{{cite web |title=Sgt. Star Wants You: Inside the Army's Multimillion-Dollar Chatbot |url=https://www.nbcnews.com/tech/tech-news/sgt-star-wants-you-inside-armys-multimillion-dollar-chatbot-n84501 |website=NBC News |accessdate=1 August 2018}}</ref><ref name="armysite">{{cite web |title=SGT STAR goes mobile; Prospects get answers to questions anywhere, any time |url=https://www.army.mil/article/103582/sgt_star_goes_mobile_prospects_get_answers_to_questions_anywhere_any_time |website=www.army.mil |accessdate=1 August 2018 |language=en}}</ref>
+
+== Background ==
+After the [[September 11 attacks]], traffic increased significantly to chatrooms on the U.S. Army's website, goarmy.com, increasing costs of staffing the live chatrooms. As a cost-cutting measure, the SGT STAR project was initiated as a partnership between the [[United States Army Accessions Command]] and [[Spectre AI Incorporated|Spectre AI]], a wholly owned subsidiary of Next IT. Next IT, a [[Spokane, Washington]]-based company deploys "intelligent [[virtual assistant]]s," using its software dubbed "ActiveAgent" which is a framework for  [[functional presence engine|functional presence engines]]. 
+
+Testing began in 2003, and SGT STAR launched to the public in 2006.<ref name="eff201404">{{cite web |last1=Maass |first1=Dave |title=Answers and Questions About Military, Law Enforcement, and Intelligence Agency Chatbots |url=https://www.eff.org/deeplinks/2014/04/answers-questions-about-military-law-enforcement-and-intelligence-agency-chatbots |website=Electronic Frontier Foundation |accessdate=1 August 2018 |language=en |date=18 April 2014}}</ref> "STAR" is an [[acronym]] for "strong, trained and ready."<ref name="armysite" /> SGT STAR was launched as a chat interface on goarmy.com, but has since been developed as a mobile application,<ref name="armysite"/> as well as a life-size animated projection that has appeared live at public events.<ref name="usc">{{cite web |title=Sergeant Star |url=http://ict.usc.edu/prototypes/sgt-star/ |website=ict.usc.edu |accessdate=1 August 2018}}</ref> SGT STAR can also interact with users on [[Facebook]].<ref>{{cite web |title=An intelligent interface that is ready when you are |url=http://www.nextit.com/case-studies/army |website=Next IT}}</ref>
+
+== FOIA request ==
+In 2013, the [[Electronic Frontier Foundation]] filed a [[Freedom of Information Act (United States)|Freedom of Information Act]] request to learn more about SGT STAR, including input and output patterns (questions and answers), usage statistics, contracts, and privacy policies. They received these records in April 2014, after coverage from various media outlets and a tongue-in-cheek campaign to "Free Sgt. Star."<ref name="nbc"/><ref name="eff201401">{{cite web |last1=Maass |first1=Dave |title=Free Sgt. Star: Army Ignores FOIA Request for Artificial Intelligence Records |url=https://www.eff.org/deeplinks/2014/01/free-sgt-star-army-ignores-foia-request-artificial-intelligence-records |website=Electronic Frontier Foundation |language=en |date=31 January 2014}}</ref><ref>{{cite web |title=#18 - The Army's Robot Recruiter {{!}} On The Media {{!}} WNYC |url=https://www.wnyc.org/story/18-armys-robot-recruiter/ |website=TLDR |publisher=WNYC |language=en}}</ref><ref>{{cite web |title=EFF lifts the lid on the secrets of the U.S. Army's chatbots |url=https://www.digitaltrends.com/computing/eff-lifts-lid-secrets-u-s-armys-chatbots/ |website=Digital Trends |accessdate=1 August 2018 |date=19 April 2014}}</ref>
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [https://www.goarmy.com/ask-sgt-star.html Official website]
+* [https://www.eff.org/files/2014/04/18/sgt_star_answers_current_-_stateless.pdf SGT STAR answers obtained by EFF]
+* [https://www.eff.org/files/2014/04/18/sgt_star_usage_data_-_chat_session_totals.pdf SGT STAR usage statistics obtained by EFF]
+
+[[Category:Chatbots]]
+[[Category:Military technology]]
+[[Category:Military recruitment]]
+[[Category:United States Army]]

@@ -1,0 +1,11 @@
+'''Wumpus world''' is a simple world use in [[artificial intelligence]] for which to represent knowledge and to reason. Wumpus world was introduced by [[Michael Genesereth]], and is discussed in the Russell-Norvig Artificial Intelligence book 'Artificial Intelligence: A Modern Approach'.<ref>{{Cite book |last=Russell |first=Stuart J. |title=Artificial intelligence: a modern approach |last2=Norvig |first2=Peter |date=2016 |publisher=Pearson |others=Ernest Davis, Douglas Edwards |isbn=978-0-13-604259-4 |edition=3rd|series=Prentice Hall series in artificial intelligence |location=Boston Columbus Indianapolis New York San Francisco Upper Saddle River Amsterdam Cape Town Dubai London Madrid Milan Munich Paris Montreal Toronto Delhi Mexico City Sao Paulo Sydney Hong Kong Seoul Singapore Taipei Tokyo}}</ref> Wumpus World is loosely inspired by the 1972 video game [[Hunt the Wumpus]].
+
+== References ==
+{{reflist}}
+* [http://www.cis.temple.edu/~giorgio/cis587/readings/wumpus.shtml CIS587: The Wumpus World]
+* [[Hunt the Wumpus]]
+
+[[Category:Artificial intelligence]]
+
+
+{{compu-AI-stub}}

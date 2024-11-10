@@ -1,0 +1,64 @@
+{{Infobox station
+| style               = Südostbahn
+| name                = Mogelsberg
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = Mogelsberg railway station.jpg
+| alt                 = Two-story building with gabled roof
+| caption             = The Mogelsberg station building in 2018
+| address             = 
+| borough             = Mogelsberg
+| country             = [[Switzerland]]
+| coordinates         = {{coord|47|21|49.2|N|9|8|32|E|region:CH-SG|format=dms|display=inline,title}}
+| owned               = [[Südostbahn]]
+| operator            = 
+| line                = [[Bodensee–Toggenburg railway|Bodensee–Toggenburg]]
+| distance            = 
+| platforms           = 
+| tracks              = 
+| train_operators     = {{Plainlist|
+* [[THURBO]]
+* [[Südostbahn]]
+}}
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 
+| pass_year           = 
+| pass_rank           = 
+| services            = {{Adjacent stations
+|system1=St. Gallen S-Bahn
+|line1=2|left1=Brunnadern-Neckertal|right1=Degersheim
+|line2=4|left2=Brunnadern-Neckertal|right2=Degersheim
+}}
+| other_services      = 
+}}
+'''Mogelsberg railway station''' ({{lang-de|Bahnhof Mogelsberg}}) is a railway station in [[Mogelsberg]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of St. Gallen|St. Gallen]]. It is an intermediate station on the [[Bodensee–Toggenburg railway]] and is served by local trains only.
+
+== Services ==
+Mogelsberg is served by two services of the [[St. Gallen S-Bahn]]:<ref name="fpf870">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/870.pdf | title = Romanshorn - St. Gallen - Wattwil - Rapperswil | publisher = Bundesamt für Verkehr | date=4 December 2019 | accessdate = 30 December 2019}}</ref>
+
+* {{S-Bahn-St.-Gallen|2}}: hourly service over the Bodensee–Toggenburg railway between [[Nesslau-Neu St. Johann railway station|Nesslau-Neu St. Johann]] and [[Altstätten SG railway station|Altstätten SG]].
+* {{S-Bahn-St.-Gallen|4}}: hourly service over the Bodensee–Toggenburg railway via [[Sargans railway station|Sargans]] (circular operation).
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline|Mogelsberg railway station}}
+* [https://www.sbb.ch/en/station-services/railway-stations/further-stations/station.6293.mogelsberg.html Mogelsberg station on SBB]
+
+[[Category:Railway stations in the canton of St. Gallen]]
+[[Category:Südostbahn stations]]

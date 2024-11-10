@@ -1,0 +1,58 @@
+{{Chembox
+| ImageFile = 
+| IUPACName = Iron(2+) chromite
+| OtherNames = 
+|Section1={{Chembox Identifiers
+| CASNo = 1308-31-2
+| PubChem = 166600
+| RTECS = GB4000000
+| EINECS = 215-159-3 
+| ChemSpiderID =
+| SMILES = [O-2].[O-2].[O-2].[Cr+3].[Fe+3]
+| InChI = 1S/Cr.Fe.3O/q2*+3;3*-2
+| InChIKey = HEQBUZNAOJCRSL-UHFFFAOYSA-N
+| StdInChI = 
+| StdInChIKey = 
+ }}
+|Section2={{Chembox Properties
+| Formula = FeCr<sub>2</sub>O<sub>4</sub>
+| MolarMass = 223.83 g/mol
+| Appearance = Brown-black solid
+| Density = 4.97 g/cm<sup>3</sup>
+| MeltingPtC = 2190 to 2270
+| BoilingPt = 
+| Solubility = insoluble
+| SolubleOther = Slightly soluble in acid
+| RefractIndex = 2.16
+ }}
+|Section3={{Chembox Structure
+| CrystalStruct = cubic 
+ }}
+|Section4={{Chembox Hazards
+| GHSPictograms = {{GHS09}}
+| HPhrases = {{H-phrases|317}}
+| MainHazards = 
+| FlashPt = 
+| AutoignitionPt = 
+ }}
+}}
+'''Iron(II) chromite''' is an inorganic mineral composed primarily of chromium(III) oxide and iron(II) oxide compounds with the simplistic [[chemical formula]] FeCr<sub>2</sub>O<sub>4</sub>.
+
+==Preparation==
+It is created by the [[sintering]] of [[chromium(III) oxide]] and [[iron(II) oxide]] at 1600 °C. It also occurs in nature as the mineral [[chromite]], though with many impurities.
+
+==Uses==
+[[File:ChromiteUSGOV.jpg|left|thumb|[[Chromite]], a {{chem2|FeCr2O4}} containing mineral]]
+It is used as a commercial source of [[chromium]] and its compounds.<ref>[http://ull.chemistry.uakron.edu/erd/Chemicals/10000/8641.html University of Akron Chemical Database] {{webarchive|url=https://archive.today/20121215100718/http://ull.chemistry.uakron.edu/erd/Chemicals/10000/8641.html |date=2012-12-15 }}</ref>  It is also used as a catalyst in the synthesis of hydrogen (H<sub>2</sub>) from the reaction between carbon monoxide and water vapor.
+
+==Safety==
+Its dust particles may cause irritation; inhalation and ingestion of its dust should be avoided. Swallowing larger amounts may cause injury.
+
+==References==
+{{reflist}}
+
+{{Iron compounds}}
+
+[[Category:Iron(II) compounds]]
+[[Category:Chromium(III) compounds]]
+[[Category:Chromium–oxygen compounds]]

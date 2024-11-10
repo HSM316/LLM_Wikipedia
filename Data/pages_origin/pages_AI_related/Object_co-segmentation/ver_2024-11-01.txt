@@ -1,0 +1,87 @@
+{{Short description|Type of image segmentation, jointly segmenting semantically similar objects in multiple images}}
+[[File:Samples of object co-segmentation.jpg|thumb|upright=1.5|Example video frames and their object co-segmentation annotations (ground truth) in the Noisy-ViDiSeg<ref name="Liu Wang Hua Zhang 2018 pp. 5840–5853"/> dataset. Object segments are depicted by the red edge.]]
+
+In [[computer vision]], '''object co-segmentation''' is a special case of [[image segmentation]], which is defined as jointly segmenting semantically similar objects in multiple images or video frames.<ref name="Vicente Rother Kolmogorov 2011 p. "/><ref name="Chen Chen Chang 2012 p. "/>
+
+== Challenges ==
+
+It is often challenging to extract segmentation masks of a target/object from a noisy collection of images or video frames, which involves [[Object detection|object discovery]] coupled with [[Image segmentation|segmentation]]. A '''noisy collection''' implies that the object/target is present sporadically in a set of images or the object/target disappears intermittently throughout the video of interest. Early methods<ref name="lee2011key"/><ref name="ma2012maximum"/> typically involve mid-level representations such as [[Object detection|object proposals]].  
+
+== Dynamic Markov networks-based methods ==
+[[File:The inference process of the two coupled dynamic Markov networks to obtain the joint video object discovery and segmentation.jpg|thumb|left|upright=1.5|The inference process of the two coupled dynamic Markov networks to obtain the joint video object discovery and segmentation<ref name="Liu Wang Hua Zhang 2018 pp. 5840–5853"/>]][[File:Framework of Joint Video Object Discovery and Segmentation.png|thumb|upright=1.5|A joint object discover and co-segmentation framework based on coupled dynamic Markov Networks<ref name="Liu Wang Hua Zhang 2018 pp. 5840–5853"/>.]] 
+A joint object discover and co-segmentation method based on coupled dynamic [[Markov random field|Markov networks]] has been proposed recently,<ref name="Liu Wang Hua Zhang 2018 pp. 5840–5853"/> which claims significant improvements in robustness against irrelevant/noisy video frames. 
+
+Unlike previous efforts which conveniently assumes the consistent presence of the target objects throughout the input video, this coupled dual dynamic Markov network based algorithm simultaneously carries out both the detection and segmentation tasks with two respective Markov networks jointly updated via belief propagation. 
+
+Specifically, the Markov network responsible for segmentation is initialized with superpixels and provides information for its Markov counterpart responsible for the object detection task. Conversely, the Markov network responsible for detection builds the object proposal graph with inputs including the spatio-temporal  segmentation tubes. 
+
+== Graph cut-based methods ==
+[[Graph cuts in computer vision|Graph cut]] optimization is a popular tool in computer vision, especially in earlier [[image segmentation]] applications. As an extension of regular graph cuts, multi-level hypergraph cut is proposed<ref name="Wang Lv Zhang Niu 2020"/> to account for more complex high order correspondences among video groups beyond typical pairwise correlations. 
+
+With such hypergraph extension, multiple modalities of correspondences, including low-level appearance, saliency, coherent motion and high level features such as object regions, could be seamlessly incorporated in the hyperedge computation. In addition, as a core advantage over [[co-occurrence]] based approach, hypergraph implicitly retains more complex correspondences among its vertices, with the hyperedge weights conveniently computed by [[Eigendecomposition of a matrix|eigenvalue decomposition]] of [[Laplacian matrix|Laplacian matrices]].
+
+== CNN/LSTM-based methods ==
+[[File:Overview of the coarse-to-fine temporal action localization.png|thumb|left|upright=2.0|Overview of the coarse-to-fine temporal action localization in.<ref name="Wang Duan Zhang Niu p=1657"/> (a) Coarse localization. Given an untrimmed video, we first generate saliency-aware video clips via variable-length sliding windows. The proposal network decides whether a video clip contains any actions (so the clip is added to the candidate set) or pure background (so the clip is directly discarded). The subsequent classification network predicts the specific action class for each candidate clip and outputs the classification scores and action labels. (b) Fine localization. With the classification scores and action labels from prior coarse localization, further prediction of the video category is carried out and its starting and ending frames are obtained.]][[File:Flowchart of the spatio-temporal action localization detector Segment-tube.png|upright=1.5|thumb|right|Flowchart of the spatio-temporal action localization detector segment-tube.<ref name="Wang Duan Zhang Niu p=1657"/> As the input, an untrimmed video contains multiple frames of actions (''e.g.'', all actions in a pair figure skating video), with only a portion of these frames belonging to a relevant category (''e.g.'', the DeathSpirals). There are usually irrelevant preceding and subsequent actions (background). The Segment-tube detector alternates the optimization of temporal localization and spatial segmentation iteratively. The final output is a sequence of per-frame segmentation masks with precise starting/ending frames denoted with the red chunk at the bottom, while the background are marked with green chunks at the bottom.]]
+
+In [[Activity recognition|action localization]] applications, ''object co-segmentation'' is also implemented as the '''segment-tube''' spatio-temporal detector.<ref name="Wang Duan Zhang Niu p=1657"/> Inspired by the recent spatio-temporal action localization efforts with tubelets (sequences of bounding boxes), Le ''et al.'' present a new spatio-temporal action localization detector Segment-tube, which consists of sequences of per-frame segmentation masks. This Segment-tube detector can temporally pinpoint the starting/ending frame of each action category in the presence of preceding/subsequent interference actions in untrimmed videos. Simultaneously, the Segment-tube detector produces per-frame segmentation masks instead of bounding boxes, offering superior spatial accuracy to tubelets. This is achieved by alternating iterative optimization between temporal action localization and spatial action segmentation.
+
+The proposed segment-tube detector is illustrated in the flowchart on the right. The sample input is an untrimmed video containing all frames in a pair figure skating video, with only a portion of these frames belonging to a relevant category (e.g., the DeathSpirals). Initialized with saliency based image segmentation on individual frames, this method first performs temporal action localization step with a cascaded 3D [[Convolutional neural network|CNN]] and [[Long short-term memory|LSTM]], and pinpoints the starting frame and the ending frame of a target action with a coarse-to-fine strategy. Subsequently, the segment-tube detector refines per-frame spatial segmentation with [[Graph cuts in computer vision|graph cut]] by focusing on relevant frames identified by the temporal action localization step. The optimization alternates between the temporal action localization and spatial action segmentation in an iterative manner. Upon practical convergence, the final spatio-temporal action localization results are obtained in the format of a sequence of per-frame segmentation masks (bottom row in the flowchart) with precise starting/ending frames. 
+
+== See also ==
+
+* [[Image segmentation]]
+* [[Object detection]]
+* [[Video content analysis]]
+* [[Image analysis]]
+* [[Digital image processing]]
+* [[Activity recognition]]
+* [[Computer vision]]
+* [[Convolutional neural network]]
+* [[Long short-term memory]]
+
+== References ==
+{{reflist|refs=
+
+<ref name="Vicente Rother Kolmogorov 2011 p. ">{{cite conference | last1=Vicente | first1=Sara | last2=Rother | first2=Carsten | last3=Kolmogorov | first3=Vladimir | title=CVPR 2011 | chapter=Object cosegmentation | publisher=IEEE | year=2011 | pages=2217–2224 | isbn=978-1-4577-0394-2 | doi=10.1109/cvpr.2011.5995530 }}</ref>
+
+<ref name="Chen Chen Chang 2012 p. ">{{cite conference | last1=Chen | first1=Ding-Jie | last2=Chen | first2=Hwann-Tzong | last3=Chang | first3=Long-Wen | title=Proceedings of the 20th ACM international conference on Multimedia - MM '12 | chapter=Video object cosegmentation | publisher=ACM Press | location=New York, New York, USA | year=2012 | page=805 | isbn=978-1-4503-1089-5 | doi=10.1145/2393347.2396317 }}</ref>
+
+<ref name="Liu Wang Hua Zhang 2018 pp. 5840–5853">{{cite journal | last1=Liu | first1=Ziyi | last2=Wang | first2=Le | last3=Hua | first3=Gang | last4=Zhang | first4=Qilin | last5=Niu | first5=Zhenxing | last6=Wu | first6=Ying | last7=Zheng | first7=Nanning | title=Joint Video Object Discovery and Segmentation by Coupled Dynamic Markov Networks | journal=IEEE Transactions on Image Processing | volume=27 | issue=12 | year=2018 | issn=1057-7149 | doi=10.1109/tip.2018.2859622 | pages=5840–5853 | url=https://qilin-zhang.github.io/_pages/pdfs/Joint_Video_Object_Discovery_and_Segmentation_by_Coupled_Dynamic_Markov_Networks.pdf | pmid=30059300| bibcode=2018ITIP...27.5840L | s2cid=51867241 | doi-access=free }}</ref>
+
+
+<ref name="lee2011key">{{cite conference | last1=Lee | first1=Yong Jae | last2=Kim | first2=Jaechul | last3=Grauman | first3=Kristen | title=2011 International Conference on Computer Vision | chapter=Key-segments for video object segmentation | publisher=IEEE | year=2011 | pages=1995–2002 | isbn=978-1-4577-1102-2 | doi=10.1109/iccv.2011.6126471 | citeseerx=10.1.1.269.2727 }}</ref>
+
+<ref name="ma2012maximum">{{cite conference | last1=Ma | first1=Tianyang | last2=Latecki | first2=Longin Jan |title=Maximum weight cliques with mutex constraints for video object segmentation | website=IEEE CVPR 2012 | year=2012 | pages=670–677 | doi=10.1109/CVPR.2012.6247735 | isbn=978-1-4673-1228-8 }}</ref>
+
+<!--
+<ref name="zhang2013video">{{cite conference | last=Zhang | first=Dong | last2=Javed | first2=Omar | last3=Shah | first3=Mubarak | title=Video Object Segmentation through Spatially Accurate and Temporally Dense Extraction of Primary Object Regions | publisher=IEEE | year=2013 | isbn=978-0-7695-4989-7 | doi=10.1109/cvpr.2013.87 }}</ref>
+
+<ref name="fragkiadaki2015learning">{{cite conference | last=Fragkiadaki | first=Katerina | last2=Arbelaez | first2=Pablo | last3=Felsen | first3=Panna | last4=Malik | first4=Jitendra | title=Learning to segment moving objects in videos | publisher=IEEE | year=2015 | isbn=978-1-4673-6964-0 | doi=10.1109/cvpr.2015.7299035 }}</ref>
+
+<ref name="perazzi2015fully">{{cite conference | last=Perazzi | first=Federico | last2=Wang | first2=Oliver | last3=Gross | first3=Markus | last4=Sorkine-Hornung | first4=Alexander | title=Fully Connected Object Proposals for Video Segmentation | publisher=IEEE | year=2015 | isbn=978-1-4673-8391-2 | doi=10.1109/iccv.2015.369 }}</ref>
+
+<ref name="koh2017primary">{{cite conference | last=Koh | first=Yeong Jun | last2=Kim | first2=Chang-Su | title=Primary Object Segmentation in Videos Based on Region Augmentation and Reduction | publisher=IEEE | year=2017 | isbn=978-1-5386-0457-1 | doi=10.1109/cvpr.2017.784 }}</ref>
+
+<ref name="krahenbuhl2014geodesic">{{cite book | last=Krähenbühl | first=Philipp | last2=Koltun | first2=Vladlen | title=Computer Vision – ECCV 2014 | chapter=Geodesic Object Proposals | publisher=Springer International Publishing | publication-place=Cham | year=2014 | isbn=978-3-319-10601-4 | issn=0302-9743 | doi=10.1007/978-3-319-10602-1_47 | pages=725–739}}</ref>
+
+<ref name="xue2013automatic">{{cite journal | last=Xue | first=Jianru | last2=Wang | first2=Le | last3=Zheng | first3=Nanning | last4=Hua | first4=Gang | title=Automatic salient object extraction with contextual cue and its applications to recognition and alpha matting | journal=Pattern Recognition | publisher=Elsevier BV | volume=46 | issue=11 | year=2013 | issn=0031-3203 | doi=10.1016/j.patcog.2013.03.028 | pages=2874–2889}}</ref>
+-->
+
+<ref name="Wang Lv Zhang Niu 2020">{{cite journal | last1=Wang | first1=Le | last2=Lv | first2=Xin | last3=Zhang | first3=Qilin | last4=Niu | first4=Zhenxing | last5=Zheng | first5=Nanning | last6=Hua | first6=Gang | title=Object Cosegmentation in Noisy Videos with Multilevel Hypergraph | journal=IEEE Transactions on Multimedia | publisher=IEEE | year=2020 | volume=23 | page=1 | issn=1520-9210 | doi=10.1109/tmm.2020.2995266 | s2cid=219410031 | url=https://qilin-zhang.github.io/_pages/pdfs/Object_Cosegmentation_in_Noisy_Videos.pdf}}</ref>
+
+<ref name="Wang Duan Zhang Niu p=1657">{{cite journal | last1=Wang | first1=Le | last2=Duan | first2=Xuhuan | last3=Zhang | first3=Qilin | last4=Niu | first4=Zhenxing | last5=Hua | first5=Gang | last6=Zheng | first6=Nanning | title=Segment-Tube: Spatio-Temporal Action Localization in Untrimmed Videos with Per-Frame Segmentation | journal=Sensors | publisher=MDPI AG | volume=18 | issue=5 | date=2018-05-22 | issn=1424-8220 | doi=10.3390/s18051657 | page=1657 | url=https://qilin-zhang.github.io/_pages/pdfs/Segment-Tube_Spatio-Temporal_Action_Localization_in_Untrimmed_Videos_with_Per-Frame_Segmentation.pdf | pmid=29789447 | pmc=5982167| bibcode=2018Senso..18.1657W | doi-access=free }}  [[File:CC-BY icon.svg|50px]] Material was copied from this source, which is available under a [https://creativecommons.org/licenses/by/4.0/ Creative Commons Attribution 4.0 International License].</ref>
+
+}}
+
+{{DEFAULTSORT:Object Co-Segmentation (Image Processing)}}
+
+<!--- Categories --->
+[[Category:Image segmentation]]
+[[Category:Computer vision]]
+[[Category:Applications of computer vision]]
+[[Category:Image processing]]
+[[Category:Machine vision]]
+[[Category:Film and video technology]]
+[[Category:Applied machine learning]]
+[[Category:Cognition]]
+[[Category:Motion in computer vision]]

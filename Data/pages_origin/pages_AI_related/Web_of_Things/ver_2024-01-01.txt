@@ -1,0 +1,156 @@
+{{Short description|Objects connected to the World Wide Web}}
+{{multiple issues|
+{{peacock|date=November 2018}}
+{{undue weight|date=November 2018}}
+}}
+
+'''Web of Things''' ('''WoT''') describes a set of standards by the [[World Wide Web Consortium]] (W3C) for the interoperability of different [[Internet of things]] (IoT) platforms and application domains.<ref>{{Cite web|title=Web of Things (WoT) Architecture|url=https://www.w3.org/TR/wot-architecture/Overview.html|access-date=2020-06-12|website=www.w3.org|archive-date=2020-04-14|archive-url=https://web.archive.org/web/20200414181740/https://www.w3.org/TR/wot-architecture/Overview.html|url-status=live}}</ref>
+
+== Building blocks ==
+The four WoT building blocks provide a way to implement systems that conform with the WoT [[architecture]].
+
+=== Thing Description (TD) ===
+The key component of WoT building blocks is the [[Thing_Description|WoT Thing Description]]. A Thing Description describes a virtual or a physical device (Thing). It defines an information model of a Thing based on semantic vocabulary and a serialization based on [[JSON]]. TD can be considered as the main entry point for a Thing, like an [[Webserver directory index|index.html]] page for a website. TDs foster [[interoperability]] by providing both human and machine-readable (and understandable) [[metadata]] about a Thing, such as a title, ID, descriptions, etc. A Thing Description also describes all available actions, events, and properties of a Thing, as well as all available security mechanisms to access them. TDs are highly flexible in order to guarantee interoperability. In addition to the standard functionality, it defines a mechanism to extend the functionality (through the Context Extension Framework).<ref name=":1">{{Cite web|title=Web of Things (WoT) Architecture|url=https://www.w3.org/TR/wot-architecture/Overview.html|access-date=2020-12-13|website=www.w3.org|archive-date=2020-04-14|archive-url=https://web.archive.org/web/20200414181740/https://www.w3.org/TR/wot-architecture/Overview.html|url-status=live}}</ref>
+
+=== Binding Templates ===
+[[Internet of things|IoT]] uses a large variety of protocols to interact with Things since there does not exist a suitable protocol. One of the main challenges for the Web of Things is to handle the variety of protocols and interaction mechanisms. This problem is tackled through the Binding Templates. WoT Binding Templates provide a collection of communication metadata blueprints to support various IoT solutions. A Binding Template is created only once and then can be reused in any Thing Description.<ref name=":1" />
+
+=== Scripting API ===
+The WoT Scripting [[API]] is an optional building block of the Web of Things. It eases IoT application development by providing an [[ECMAScript]]-based application API in a similar manner to how web browsers provide an API for web applications. By having a universal application [[runtime system]], Scripting API solves the problem of [[Homogeneity and heterogeneity|heterogeneity]] of IoT systems. It also enables creating of reusable scripts to implement the device logic, which significantly improves the portability of the application modules.<ref name=":1" />
+
+The current reference implementation of the WoT scripting API is an open-source project called [https://github.com/eclipse/thingweb.node-wot ''node-wot''], which is developed by the [http://www.thingweb.io ''Eclipse Thingweb''] project.<ref>{{Cite web|title=Web of Things (WoT) Scripting API|url=https://www.w3.org/TR/wot-scripting-api/Overview.html|access-date=2020-12-13|website=www.w3.org|archive-date=2020-11-26|archive-url=https://web.archive.org/web/20201126041214/https://www.w3.org/TR/wot-scripting-api/Overview.html|url-status=live}}</ref>
+
+=== Security and Privacy Guidelines ===
+In WoT architecture, security is relevant to all aspects of the architecture. Specification of each WoT building block contains several considerations regarding the security and privacy of that particular block. Security is supported by certain explicit features, such as public metadata in Thing Descriptions and separation of concerns in the design of Scripting API. In addition, there is also a specification called ''[https://www.w3.org/TR/2019/NOTE-wot-security-20191106/ WoT Security and Privacy Guidelines]'', guiding a variety of security and privacy related concerns.<ref name=":1" />
+
+== History ==
+Connecting objects to the Web arguably started around the year 2000. In 2002, a peer-reviewed paper presented the Cooltown project.<ref name="KindbergBarton2000">{{cite book|last1=Kindberg|first1=T.|title=Proceedings Third IEEE Workshop on Mobile Computing Systems and Applications|last2=Barton|first2=J.|last3=Morgan|first3=J.|last4=Becker|first4=G.|last5=Caswell|first5=D.|last6=Debaty|first6=P.|last7=Gopal|first7=G.|last8=Frid|first8=M.|last9=Krishnan|first9=V.|year=2000|isbn=978-0-7695-0816-0|pages=19–28|chapter=People, places, things: Web presence for the real world|citeseerx=10.1.1.24.4651|doi=10.1109/MCSA.2000.895378|last10=Morris|first10=H.|last11=Schettino|first11=J.|last12=Serra|first12=B.|last13=Spasojevic|first13=M.|s2cid=282147 }}</ref> This project explored the use of URLs to address and HTTP interact with physical objects such as public screens or printers.
+
+Following this early work, the growing interest in and implementation of the [[Internet of things]] started to raise some questions about the application layer of the IoT.<ref name="wot-iot-paper">
+{{cite conference|last1=Guinard|first1=Dominique|last2=Trifa|first2=Vlad|last3=Wilde|first3=Erik|year=2010|title=A Resource Oriented Architecture for the Web of Things.|url=http://www.vs.inf.ethz.ch/publ/papers/dguinard-things-2010.pdf|conference=Internet of Things 2010 International Conference (IoT 2010)}}</ref> While most of the work in the IoT space focused on network protocols, there was a need to think about the convergence of data from IoT devices. Researchers and practitioners started envisioning the IoT as a system where data from various devices could be consumed by Web applications to create new use cases.
+
+The idea of the Web as an application layer for the IoT started to emerge in 2007. Several researchers started working in parallel to these concepts. Amongst them, [[Dominique Guinard]] and [[Vlad Trifa]] started the Web of Things online community and published the first WoT manifesto, advocating the use of Web standards (REST, Lightweight semantics, etc.) to build the application layer of the IoT. The manifesto was published together with an implementation on the Sun SPOT platform. At the same time, [[Dave Raggett]] from [[W3C]] started talking about a Web of Things at various W3C and IoT events. Erik Wilde published "Putting Things to REST", a self-published concept paper looking at utilizing REST to sense and control physical objects.<ref name="rest-things">{{cite web|title=Putting things to REST|url=http://dret.net/netdret/docs/wilde-irep07-015-restful-things.pdf|access-date=2014-11-15|archive-date=2017-08-09|archive-url=https://web.archive.org/web/20170809092303/http://dret.net/netdret/docs/wilde-irep07-015-restful-things.pdf|url-status=live}}</ref> Early mentions of the Web of Things as a term also appeared in a paper by Vlad Stirbu et al.<ref name="stirbu">{{Cite conference|last=Stirbu|first=V.|year=2008|title=Towards a RESTful Plug and Play Experience in the Web of Things|conference=Semantic Computing, 2008 IEEE International Conference on|pages=512–517|book-title=Semantic Computing, 2008 IEEE International Conference on}}</ref>
+
+From 2007 onwards, Trifa, Guinard, Wilde and other researchers tried publishing their ideas and concepts at peer-reviewed conferences but their work was rejected by [[Scientific Research Publishing|Wireless Sensor Networks]] research community on the basis that Internet and Web protocols were too verbose and limited in the context of real-world devices,<ref name="wot-5years">{{cite web|date=2014-10-23|title=5 Years of Web of Things Workshops|url=http://www.slideshare.net/misterdom/5-years-of-web-of-things-workshops|access-date=2014-11-15|archive-date=2017-01-09|archive-url=https://web.archive.org/web/20170109133530/http://www.slideshare.net/misterdom/5-years-of-web-of-things-workshops|url-status=live}}</ref> preferring to focus on optimization of memory and computation usage, wireless bandwidth, or very short duty cycles.{{Citation needed|date=March 2023}}
+ 
+However, a number of researchers in the WSN community started considering these ideas more seriously. In early 2009, several respected WSN researchers such as David Culler, Jonathan Hui, Adam Dunkels and Yazar Dogan evaluated the use of Internet and Web protocols for low-power sensor nodes and showed the feasibility of the approach.<ref name="HuiCuller2008">{{cite book|last1=Hui|first1=Jonathan W.|title=Proceedings of the 6th ACM conference on Embedded network sensor systems – Sen ''Sys'' '08|last2=Culler|first2=David E.|year=2008|isbn=9781595939906|pages=15|chapter=IP is dead, long live IP for wireless sensor networks|citeseerx=10.1.1.562.6336|doi=10.1145/1460412.1460415|s2cid=6139531 }}</ref><ref name="YazarDunkels2009">{{cite book|last1=Yazar|first1=Dogan|title=Proceedings of the First ACM Workshop on Embedded Sensing Systems for Energy-Efficiency in Buildings - Build ''Sys'' '09|last2=Dunkels|first2=Adam|year=2009|isbn=9781605588247|pages=43|chapter=Efficient application integration in IP-based sensor networks|citeseerx=10.1.1.158.3650|doi=10.1145/1810279.1810289|s2cid=7587931 }}</ref>
+
+Following this, Guinard and Trifa presented their end-to-end implementation of the concepts and presented it in a peer-reviewed publication accepted at the World Wide Web conference in 2009.<ref name="wotpaper">
+{{cite conference|last1=Guinard|first1=Dominique|last2=Trifa|first2=Vlad|year=2009|title=Towards the Web of Things: Web Mashups for Embedded Devices.|url=http://www.vs.inf.ethz.ch/publ/papers/dguinard_09_WOTMashups.pdf|conference=WWW (International World Wide Web Conferences), Enterprise Mashups and Lightweight Composition on the Web (MEM 2009) Workshop}}</ref> Building on this implementation and uniting efforts, a RESTful architecture for things was proposed in 2010 by Guinard, Trifa and Wilde.<ref name="GuinardTrifa2010">{{cite book|last1=Guinard|first1=Dominique|title=2010 Internet of Things (IoT)|last2=Trifa|first2=Vlad|last3=Wilde|first3=Erik|year=2010|isbn=978-1-4244-7413-4|pages=1–8|chapter=A resource oriented architecture for the Web of Things|doi=10.1109/IOT.2010.5678452|s2cid=5839440 }}</ref> Guinard, Trifa and Wilde ran the first International Workshop in 2010 on the Web of Things<ref name="wot-workshop">{{cite web|title=International Workshop on the Web of Things|url=http://www.webofthings.org/wot|access-date=2014-11-15|archive-date=2016-10-14|archive-url=https://web.archive.org/web/20161014133418/http://webofthings.org/wot/|url-status=live}}</ref> and has been an annual occurrence since. These workshops morphed into a growing community of researchers and practitioners could discuss the latest findings and ideas on the Web of Things {{Citation needed|date=March 2023}}.
+
+In 2011, two of the first PhD thesis on the Web of Things were presented at ETH Zurich: Building Blocks for a Participatory Web of Things: Devices, Infrastructures, and Programming Frameworks from Vlad Trifa<ref name="thesis-trifa">{{cite thesis|type=Ph.D.|first=Vlad|last=Trifa|title=Building Blocks for a Participatory Web of Things: Devices, Infrastructures, and Programming Frameworks|publisher=ETH Zurich|year=2011|url=http://www.vs.inf.ethz.ch/publ/papers/trifam-buildi-2011.pdf|access-date=2014-11-15|archive-date=2016-03-03|archive-url=https://web.archive.org/web/20160303233222/http://www.vs.inf.ethz.ch/publ/papers/trifam-buildi-2011.pdf|url-status=live}}</ref> and A Web of Things Application Architecture – Integrating the Real-World into the Web from Dominique Guinard.<ref name="thesis-guinard">{{cite thesis|type=Ph.D.|first=Dominique|last=Guinard|title=A Web of Things Application Architecture – Integrating the Real-World into the Web.|publisher=ETH Zurich|year=2011|url=http://www.vs.inf.ethz.ch/publ/papers/dguinard-awebof-2011.pdf|access-date=2014-11-15|archive-date=2016-03-03|archive-url=https://web.archive.org/web/20160303220842/http://www.vs.inf.ethz.ch/publ/papers/dguinard-awebof-2011.pdf|url-status=live}}</ref> Building on this work, Simon Mayer emphasized the importance of REST's uniform interface, and in particular the [[HATEOAS]] principle, in his PhD thesis.<ref name="thesis-mayer">{{cite thesis|type=Ph.D.|first=Simon|last=Mayer|title=Interacting with the Web of Things.|publisher=ETH Zurich|year=2014|url=https://www.research-collection.ethz.ch/handle/20.500.11850/91081|access-date=2021-06-27|archive-date=2021-03-19|archive-url=https://web.archive.org/web/20210319130124/https://www.research-collection.ethz.ch/handle/20.500.11850/91081|url-status=live}}</ref>
+
+In 2014, the W3C showed an increased interest on the Web of Things and organized the W3C Workshop on the Web of Things,<ref>{{cite web|title=W3C Workshop on the Web of Things|url=http://www.w3.org/2014/02/wot/|access-date=2014-11-15|archive-date=2019-02-09|archive-url=https://web.archive.org/web/20190209095915/http://www.w3.org/2014/02/wot/|url-status=live}}</ref> under the lead of Dave Raggett together with [[Siemens]] and the COMPOSE European project. This workshop leads to the creation of the Web of Things Interest Group at [[W3C]]<ref name="wot-w3c">{{cite web|title=W3C Web of Things|url=https://www.w3.org/WoT/|access-date=2019-10-06|archive-date=2021-03-09|archive-url=https://web.archive.org/web/20210309072625/https://www.w3.org/WoT/|url-status=live}}</ref> and the submission of the Web Thing Model.<ref>{{cite web|title=Web Thing Model|url=http://www.w3.org/Submission/2015/01/|access-date=2015-09-27|archive-date=2018-03-21|archive-url=https://web.archive.org/web/20180321193028/http://www.w3.org/Submission/2015/01/|url-status=live}}</ref>
+
+The same year, Siemens announced the creation of a research group dedicated to the Web of Things.<ref>{{cite web|title=Siemens Web of Things Research Group|url=http://www.usa.siemens.com/en/about_us/research/web-of-things.htm|access-date=2014-11-15|archive-date=2018-01-28|archive-url=https://web.archive.org/web/20180128221759/http://www.usa.siemens.com/en/about_us/research/web-of-things.htm|url-status=live}}</ref> In October 2014, Google also announced its interest in these ideas by launching the Physical Web GitHub project.<ref>{{Cite web|title=The Physical Web|url=https://github.com/google/physical-web|access-date=2017-02-08|website=GitHub|language=en|archive-date=2019-01-30|archive-url=https://web.archive.org/web/20190130214208/https://github.com/google/physical-web|url-status=live}}</ref>
+
+The Web of Things Interest Group identified the required set of standards needed for the Web of Things in February 2017.<ref>{{cite web|title=W3C Web of Things joint IG/WG meeting in Santa Clara, 5–9 February 2016|url=https://www.w3.org/blog/wotig/2017/02/27/w3c-web-of-things-joint-igwg-meeting-in-santa-clara-5-9-february-2016/|access-date=6 October 2019|archive-date=6 October 2019|archive-url=https://web.archive.org/web/20191006160454/https://www.w3.org/blog/wotig/2017/02/27/w3c-web-of-things-joint-igwg-meeting-in-santa-clara-5-9-february-2016/|url-status=live}}</ref> The Working Group has started working on four deliverables called WoT Architecture,<ref name="wot-architecture">{{cite web|title=W3C WoT Architecture|url=http://w3c.github.io/wot-architecture/|access-date=2019-10-06|archive-date=2019-10-06|archive-url=https://web.archive.org/web/20191006143538/https://w3c.github.io/wot-architecture/|url-status=live}}</ref> 
+WoT Thing Description,<ref name="wot-td">{{cite web|title=W3C WoT Thing Description|url=http://w3c.github.io/wot-thing-description/|access-date=2019-10-06|archive-date=2019-10-06|archive-url=https://web.archive.org/web/20191006160535/https://w3c.github.io/wot-thing-description/|url-status=live}}</ref>
+WoT Scripting API,<ref name="wot-api">{{cite web|title=W3C WoT Scripting API|url=https://w3c.github.io/wot-scripting-api/|access-date=2019-10-06|archive-date=2019-10-06|archive-url=https://web.archive.org/web/20191006160456/https://w3c.github.io/wot-scripting-api/|url-status=live}}</ref> and WoT Binding Templates.<ref name="wot-binding">{{cite web|title=W3C WoT Binding Templates|url=https://w3c.github.io/wot-binding-templates/|access-date=2019-10-06|archive-date=2019-10-06|archive-url=https://web.archive.org/web/20191006160456/https://w3c.github.io/wot-binding-templates/|url-status=live}}</ref>
+
+== See also ==
+* [[Internet of Things|Internet of Things (IoT)]]
+* [[Smart device]]
+* [[Connected Devices (disambiguation)|Connected device]]
+* [[Home automation|Home automation devices]]
+* [[Smart grid]]
+* [[Matter (standard)|Matter]]
+
+== Further reading ==
+*{{Cite book
+ | last1 = Guinard
+ | first1 = Dominique
+ | last2 = Vlad
+ | first2 = Trifa
+ | year = 2015
+ | title = Building the Web of Things
+ | publisher = Manning
+ | isbn = 9781617292682
+ | url = http://book.webofthings.io
+}}
+
+* {{cite web
+  |url=http://www.webofthings.org/wot
+  |title=Proceedings of International Workshops on the Web of Things.
+}}
+
+*{{Cite conference
+| last = Guinard
+| first = Dominique
+|author2=Vlad Trifa |author3=Erik Wilde
+ | title = A Resource Oriented Architecture for the Web of Things
+| book-title = Proc. of IoT 2010 (IEEE International Conference on the Internet of Things)
+| url=http://www.vs.inf.ethz.ch/publ/bibtex.html?file=papers/dguinard-things-2010
+| location = Tokyo, Japan
+| date = 2010
+}}
+
+*{{cite thesis 
+|type=Ph.D. 
+|first=Dominique
+|last=Guinard
+|title= A Web of Things Application Architecture – Integrating the Real-World into the Web.
+|publisher=ETH Zurich
+|year=2011
+|url=http://www.vs.inf.ethz.ch/publ/papers/dguinard-awebof-2011.pdf
+}}
+
+*{{cite thesis 
+|type=Ph.D. 
+|first=Vlad 
+|last=Trifa 
+|title=Building Blocks for a Participatory Web of Things: Devices, Infrastructures, and Programming Frameworks 
+|publisher=ETH Zurich
+|year=2011
+|url=http://www.vs.inf.ethz.ch/publ/papers/trifam-buildi-2011.pdf
+}}
+
+*{{Cite book|last=Fielding|first=Roy Thomas|year=2000|title=Architectural Styles and the Design of Network-based Software Architectures|version=Doctoral dissertation|publisher=University of California, Irvine|url=http://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm}}
+*{{Cite book
+ | last1 = Richardson
+ | first1 = Leonard
+ | last2 = Ruby
+ | first2 = Sam
+ | author2-link = Sam Ruby
+ | publication-date = May 8, 2007
+ | year = 2007
+ | title = RESTful Web Services
+ | publisher = O'Reilly
+ | isbn = 978-0-596-52926-0
+ | url-access = registration
+ | url = https://archive.org/details/restfulwebservic00rich_0
+ }}
+
+*{{Cite conference
+ |last1=Fortuna
+ |first1=Carolina
+ |last2=Grobelnik
+ |first2=Marko
+ |date=2011-03-09
+ |title=Tutorial: The Web of Things
+ |url=http://sensorlab.ijs.si/en/publication/6/the-web-of-things
+ |conference=Proceedings of the World Wide Web Conference 2011, Hyderabad, India
+ |publisher=Association for Computing Machinery}}
+
+== External links ==
+* {{cite web
+  |url=http://www.w3.org/WoT/
+  |title=Web of Things at W3C
+}}
+
+* {{cite web
+  |url=http://datatracker.ietf.org/wg/core/charter/
+  |title=IETF CoRE WG charter
+}}
+
+== References ==
+<references/>
+
+{{W3C Standards}}
+{{Ambient intelligence}}
+
+[[Category:Cloud standards]]
+[[Category:Web 2.0 neologisms]]
+[[Category:World Wide Web]]
+[[Category:Internet of things]]
+[[Category:World Wide Web Consortium]]

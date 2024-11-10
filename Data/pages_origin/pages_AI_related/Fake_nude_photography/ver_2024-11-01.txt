@@ -1,0 +1,291 @@
+{{short description|Falsified images of the naked human body}}
+
+{{Artificial intelligence}}
+'''Fake nude photography''' is the creation of [[nude photography|nude photographs]] designed to appear as genuine nudes of an individual.<ref name="PHVN"/><ref name="R1"/> The motivations for the creation of these modified photographs include curiosity, sexual gratification, the stigmatization or embarrassment of the subject, and commercial gain, such as through the sale of the photographs via pornographic websites.<ref name="PHVN"/><ref name="q2"/><ref name="auto"/><ref name="R2"/><ref name="CNN"/> Fakes can be created using [[image editing software]] or through [[machine learning]]. Fake images created using the latter method are called [[deepfake]]s..
+
+== History ==
+Magazines such as ''[[Celebrity Skin (magazine)|Celebrity Skin]]'' published non-fake paparazzi shots and illicitly obtained nude photos, showing there was a market for such images.<ref name="MarshallRedmond2015"/>  Subsequently, some websites hosted fake nude or pornographic photos of celebrities, which are sometimes referred to as '''celebrity fakes'''.  In the 1990s and 2000s, fake nude images of celebrities proliferated on [[Usenet]] and on websites, leading to campaigns to take legal action against the creators of the images<ref name="SpinelloTavani2004"/><ref name="Walls1999"/> and websites dedicated to determining the veracity of nude photos.<ref name="R3"/> "Deepfakes", which use [[artificial neural network]]s to superimpose one person's face into an image or video of someone else, were popularized in the late 2010s, leading to concerns about the technology's use in [[fake news]] and [[revenge porn]].<ref name="Cole2017"/><ref name="Cole2018"/>
+
+Fake nude photography is sometimes confused with [[Deepfake pornography]], but the two are distinct.  Fake nude photography typically starts with human-made non-sexual images, and merely makes it appear that the people in them are nude (but not having sex).  Deepfake pornography typically starts with human-made sexual (pornographic) images or videos, and alters the actors' facial features to make the participants in the sexual act look like someone else. 
+
+===DeepNude===
+{{Anchor|DeepNude}}In June 2019, a downloadable [[Windows]] and [[Linux]] application called DeepNude was released which used a [[Generative adversarial network|Generative Adversarial Network]] to remove clothing from images of women. The images it produced were typically not pornographic, merely nude.  Because there were more images of nude women than men available to its creator, the images it produced were all female, even when the original was male.  The app had both a paid and unpaid version.<ref name=":30">{{cite web |last1=Cole |first1=Samantha |last2=Maiberg |first2=Emanuel |last3=Koebler |first3=Jason |title=This Horrifying App Undresses a Photo of Any Woman with a Single Click |url=https://www.vice.com/en_us/article/kzm59x/deepnude-app-creates-fake-nudes-of-any-woman |website=Vice |access-date=2 July 2019 |date=26 June 2019 |archive-date=2 July 2019 |archive-url=https://web.archive.org/web/20190702011315/https://www.vice.com/en_us/article/kzm59x/deepnude-app-creates-fake-nudes-of-any-woman |url-status=live }}</ref> A few days later, on June 27, the creators removed the application and refunded consumers, although various copies of the app, both free and for charge, continue to exist.<ref name="theverge.com">{{Cite web|url=https://www.theverge.com/2019/7/3/20680708/deepnude-ai-deepfake-app-copies-easily-accessible-available-online|title=DeepNude AI copies easily accessible online|work=The Verge|first=James|last=Vincent|date=3 July 2019|access-date=11 August 2023|archive-date=8 February 2021|archive-url=https://web.archive.org/web/20210208095902/https://www.theverge.com/2019/7/3/20680708/deepnude-ai-deepfake-app-copies-easily-accessible-available-online|url-status=live}}</ref> On [[GitHub]], the [[open-source]] version of this program called "open-deepnude" was deleted.<ref>{{cite news |url=https://www.vice.com/en_us/article/8xzjpk/github-removed-open-source-versions-of-deepnude-app-deepfakes |publisher=[[Vice Media]] |title=GitHub Removed Open Source Versions of DeepNude |first=Joseph |last=Cox |date=July 9, 2019 |access-date=December 15, 2019 |archive-date=September 24, 2020 |archive-url=https://web.archive.org/web/20200924083833/https://www.vice.com/en_us/article/8xzjpk/github-removed-open-source-versions-of-deepnude-app-deepfakes |url-status=live }}</ref> The open-source version had the advantage of allowing it to be trained on a larger dataset of nude images to increase the resulting nude image's accuracy level.<ref name="Cisco DeepNude is back">{{cite news |url=https://blogs.cisco.com/analytics-automation/deepnude-is-back|title=DeepNude- the AI that 'Undresses' Women- is Back. What Now?|publisher=[[Cisco]]|language=en-US|url-status=live|author=Redmon, Jennifer|date=July 7, 2019|access-date=March 11, 2023|archive-date=March 1, 2023|archive-url=https://web.archive.org/web/20230301114127/https://blogs.cisco.com/analytics-automation/deepnude-is-back}}</ref>  A successor free software application, Dreamtime, was later released, and some copies of it remain available, though some have been suppressed.
+
+=== Deepfake Telegram Bot ===
+In July 2019 a deepfake bot service was launched on messaging app [[Telegram (software)|Telegram]] that used AI technology to create nude images of women. The service was free and enabled users to submit photos and receive manipulated nude images within minutes. The service was connected to seven Telegram channels, including the main channel that hosts the bot, technical support, and image sharing channels. While the total number of users was unknown, the main channel had over 45,000 members. As of July 2020, it is estimated that approximately 24,000 manipulated images had been shared across the image sharing channels.<ref>{{Cite web |title=A deepfake bot is being used to "undress" underage girls |url=https://www.technologyreview.com/2020/10/20/1010789/ai-deepfake-bot-undresses-women-and-underage-girls/ |access-date=2023-04-20 |website=MIT Technology Review |first=Karen |last=Hao |date=2020-10-20 |language=en |archive-date=2023-04-20 |archive-url=https://web.archive.org/web/20230420045217/https://www.technologyreview.com/2020/10/20/1010789/ai-deepfake-bot-undresses-women-and-underage-girls/ |url-status=live }}</ref>
+
+=== Nudify websites ===
+By late 2024, most ways to produce nude images from photographs of clothed people were accessible at websites rather than in apps, and required payment.<ref>{{cite web |url=https://nudify.info/download-apps-like-deepnude-alternatives/ |title=24 DeepNude Alternatives (Tested Free & Paid) |date=2024-08-23 |author=Rody |access-date=2024-08-31}}</ref>
+
+==Purposes==
+ {{quote box
+| quote = "They are fake nudes, altered in Photoshop, and it is one of many tactics that has been used to silence me," <br> [[Diane Rwigara]].<ref name=CNN />
+| source = —'''''[[CNN]]'''''
+| width = 40%
+| align = Right
+| style = padding:15px;
+}}
+
+The reasons for the creation of nude photos may range from a need to discredit the target publicly, personal hatred for the target, or the promise of pecuniary gains for such work on the part of the creator of such photos.<ref name="PHVN"/><ref name="q2"/><ref name="auto"/>
+ 
+Fake nude photos often target prominent figures such as businesspeople or politicians.<ref name=CNN /> This is the case for candidate for Rwanda's presidential election in 2017, Diane Rwigara.<ref name="CNN"/>
+ 
+==Notable cases==
+{{expand section|date=November 2019}}
+In 2010, 97 people were arrested in Korea after spreading fake nude pictures of the group [[Girls' Generation]] on the internet.<ref name="mv"/> In 2011, a 53-year-old [[Incheon]] man was arrested after spreading more fake pictures of the same group.<ref name="R4"/><ref name="dan"/><ref name="R5"/>
+ 
+In 2012, South Korean police identified 157 Korean artists of whom fake nudes were circulating.<ref name="a"/>
+ 
+In 2012, when [[Liu Yifei]]'s fake nude photography released on the network, Liu Yifei Red Star Land Company declared a legal search to find out who created and released the photos.<ref name="vne"/><ref name="R6"/>
+ 
+In the same year, [[Chinese people|Chinese]] actor [[Huang Xiaoming]] released nude photos that sparked public controversy, but they were ultimately proven to be real pictures.<ref name="R7"/>
+ 
+In 2014, supermodel [[Kate Upton]] threatened to sue a website for posting her fake nude photos.<ref name="R8"/> Previously, in 2011, this page was threatened by Taylor Swift.<ref name="R9"/>
+ 
+In November 2014, singer [[Bi Rain]] was angry because of a fake nude photo that spread throughout the internet. Information reveals that: "Rain's nude photo was released from [[Kim Tae-hee]]'s lost phone." Rain's label, [[Cube Entertainment]], stated that the person in the nude photo is not Rain and the company has since stated that it will take strict legal action against those who post photos together with false comments.<ref name="R10"/><ref name="R11"/>
+ 
+In July 2018, Seoul police launched an investigation after a fake nude photo of President [[Moon Jae-in]] was posted on the website of the Korean [[radical feminist]] group [[WOMAD (website)|WOMAD]].<ref name="R12"/>
+ 
+In early 2019, [[Alexandria Ocasio-Cortez]], a [[Democratic Party (United States)|Democratic]] politician, was berated by other political parties over a fake nude photo of her in the bathroom. The picture created a huge wave of media controversy in the United States.<ref name="R13"/><ref name="R14"/><ref name="R15"/><ref name="R16"/>
+
+==Methods==
+Fake nude images can be created using image editing software or neural network applications.<ref name=Cole2018/><ref name="Marshall2016"/>
+There are two basic  methods:<ref>{{Cite news |last=Verma |first=Pranshu |date=2023-11-04 |title=AI fake nudes are booming. It's ruining real teens' lives. |language=en-US |newspaper=Washington Post |url=https://www.washingtonpost.com/technology/2023/11/05/ai-deepfake-porn-teens-women-impact/ |access-date=2023-12-06 |issn=0190-8286}}</ref>
+* Combine and superimpose existing images onto source images, adding the face of the subject onto a nude model.<ref name="mv"/>
+* Remove clothes from the source image to make it look like a nude photo.<ref name="PHVN"/><ref name="q2"/><ref name="R17"/>
+ 
+==Impact==
+
+Images of this type may have a negative psychological impact on the victims and may be used for [[extortion]] purposes.<ref name="PHVN"/><ref name="R18"/><ref name="R19"/>
+ 
+==See also==
+* [[Nude photography]]
+* [[Glamour photography]]
+* [[Deepfake pornography]]
+* [[Voyeurism]]
+
+==References==
+{{reflist|2|refs=
+<ref name="PHVN">{{cite news
+| newspaper = An ninh thế giới | date = August 27, 2012
+| url = http://antg.cand.com.vn/Kinh-te-Van-hoa-The-Thao/Phat-hoang-voi-nan-fake-si-304003/
+| title = Phát hoảng với nạn "fake sĩ" | language = vi
+| trans-title = Terrified with "fake photo maker" | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R1">{{Cite web
+| url = https://www.nguoiduatin.vn/phat-hoang-vi-tro-fake-anh-tuc-a54127.html
+| title = Phát hoảng vì trò fake ảnh tục | language = vi
+| website = Người Đưa Tin | date = December 27, 2012 | access-date = June 30, 2019 }}
+</ref>
+ 
+<ref name="q2">{{Cite web
+| url = https://baodatviet.vn/doi-song/gia-dinh/phat-hoang-vi-tro-fake-anh-tuc-2324293/
+| title = Phát hoảng vì trò fake ảnh tục
+| website = baodatviet.vn
+| language = vi
+| access-date = June 30, 2019
+| archive-date = June 30, 2019
+| archive-url = https://web.archive.org/web/20190630113816/http://baodatviet.vn/doi-song/gia-dinh/phat-hoang-vi-tro-fake-anh-tuc-2324293/
+| url-status = dead
+}}</ref>
+ 
+<ref name="auto">{{Cite web
+| url = https://timesofindia.indiatimes.com/city/kochi/woman-wins-battle-against-fake-nude-pics/articleshow/66802568.cms
+| title = Kerala woman wins battle against fake nude pictures
+| website = The Times of India | date = November 26, 2018 | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R2">{{cite news
+| newspaper = [[The Washington Post]] | first= Abby|last=Ohlheiser | date = January 11, 2019
+| url = https://www.washingtonpost.com/technology/2019/01/10/nude-photo-hoax-was-supposed-silence-alexandria-ocasio-cortez-instead-she-turned-up-volume/
+| title = A nude-photo hoax was supposed to silence Alexandria Ocasio-Cortez. Instead, she turned up the volume
+| url-access = limited | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="CNN">{{cite news
+| newspaper = [[CNN]] | first1 = Stephanie | last1 = Busari | first2 = Torera | last2 = Idowu | date = August 5, 2017
+| url = https://edition.cnn.com/2017/08/04/africa/rwanda-election-nude-photos-candidate/index.html
+| title = Fake nude photos were used to 'silence me', disqualified Rwandan candidate says
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="MarshallRedmond2015">{{cite book
+| author1 = P. David Marshall | author2 = Sean Redmond | title = A Companion to Celebrity
+| chapter-url = https://books.google.com/books?id=wWS-CgAAQBAJ&pg=PT722 | date = 14 October 2015
+| publisher = Wiley | isbn = 978-1-118-47492-1 | pages = 510–12
+| chapter = Exposure: The Public Self Explored}}
+</ref>
+ 
+<ref name="SpinelloTavani2004">{{cite book
+| author1 = Richard A. Spinello | author2 = Herman T. Tavani | title = Readings in Cyberethics
+| url = https://books.google.com/books?id=oUMuHNQ5Sg0C&pg=PA209 | year = 2004
+| publisher = Jones & Bartlett Learning | isbn = 978-0-7637-2410-8 | pages = 209}}
+</ref>
+ 
+<ref name="Walls1999">{{Cite news
+| title = Why every star is naked on the Net: It may be Sandra Bullock's face, but everything else below her neck belongs to someone else
+| author = Jeff Walls | work = National Post | date = 21 Aug 1999 | via = [[ProQuest]]
+| quote = And taking her anti-faking crusade to the artists' virtual turf, the mother of actress Alyssa Milano has launched a counter-site, www.cyber-tracker.com, to "empower celebrities to take back" their images. Lin Milano contends she combines "sensitivity to the celebrity with the toughness required to make a serious impact on the Web pornographers". }}
+</ref>
+ 
+<ref name="R3">{{cite magazine
+| last1 = Kushner | first1 = David | title = These Are Definitely Not Scully's Breasts
+| magazine = Wired | date = November 2003 | volume = 11 | issue = 11
+| url = https://www.wired.com/wired/archive/11.11/fakers.html | access-date = 2009-05-19}}
+</ref>
+ 
+<ref name="Cole2017">{{Cite web
+| title = AI-Assisted Fake Porn Is Here and We're All Fucked | first=Samantha|last=Cole
+| work = Motherboard | date = 11 Dec 2017 | access-date = 27 November 2019
+| url = https://www.vice.com/en_us/article/gydydm/gal-gadot-fake-ai-porn}}
+</ref>
+ 
+<ref name="Cole2018">{{Cite web
+| title = We Are Truly Fucked: Everyone Is Making AI-Generated Fake Porn Now - VICE
+| first=Samantha|last=Cole | work = Motherboard | date = 24 Jan 2018 | access-date = 27 November 2019
+| url = https://www.vice.com/en_us/article/bjye8a/reddit-fake-porn-app-daisy-ridley}}
+</ref>
+ 
+<ref name="R4">{{cite news
+| newspaper = [[Thanh Niên]] | author = Phi Yến | date = February 22, 2012
+| url = https://thanhnien.vn/van-hoa/bat-duoc-nghi-can-tung-anh-nude-gia-cua-snsd-76313.html
+| title = Bắt được nghi can tung ảnh nude giả của SNSD | language = vi
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="dan">{{cite web
+| newspaper = Dân Việt | author = Thảo Linh | date = February 22, 2012
+| url = http://danviet.vn/giai-tri/bat-nghi-can-tung-anh-nude-gia-cua-girls-generation-103424.html
+| title = Bắt nghi can tung ảnh nude giả của Girls Generation
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R5">{{Cite web
+| url = http://maivang.nld.com.vn/news-2012022205030405.htm
+| title = Bắt nghi can tung ảnh nude giả của sao Hàn | language = vi
+| website = Nld.com.vn | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="a">{{Cite web
+| url = https://ngoisao.vn/hau-truong/chuyen-lang-sao/157-sao-nu-bi-phat-tan-anh-den-67345.htm
+| title = 157 sao nữ bị phát tán ảnh "đen" | language = vi | date = April 3, 2012
+| author = Quỳnh An | website = ngoisao.vn | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="vne">{{Cite web
+| url = https://vnexpress.net/giai-tri/luu-diec-phi-bi-ham-hai-bang-anh-nong-2401670.html
+| title = Lưu Diệc Phi bị hãm hại bằng ảnh nóng - VnExpress Giải Trí
+| author = Hải Lan | date = December 13, 2012 | website = vnexpress.net
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R6">{{Cite web
+| url = http://danviet.vn/giai-tri/anh-luu-diec-phi-khoa-than-tran-ngap-web-den-54425.html
+| title = Ảnh Lưu Diệc Phi khoả thân tràn ngập web đen | language = vi
+| author = Hàn Giang | date = December 12, 2012 | website = Dân Việt
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R7">{{Cite web
+| url = https://ione.vnexpress.net/tin-tuc/sao/huynh-hieu-minh-bi-phat-tan-anh-nude-dom-ma-nhu-that-1938638.html
+| title = Huỳnh Hiểu Minh bị phát tán ảnh nude 'dỏm mà như thật'
+| language = vi | author = Duy Tại | date = June 9, 2012 | website = IONE.VNEXPRESS.NET
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R8">{{Cite web
+| url = https://thanhnien.vn/van-hoa/kate-upton-quyet-truy-duoi-bat-ky-ai-tung-anh-khoa-than-cua-minh-810147.html
+| title = Kate Upton quyết truy đuổi bất kỳ ai tung ảnh khỏa thân của mình
+| language = vi | author = Nguyen Thuy | date = September 2, 2014 | website = thanhnien.vn
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R9">{{Cite web
+| url = https://nld.com.vn/van-hoa-van-nghe/bi-tung-anh-khoa-than-gia-kate-upton-doa-kien-20140310110022367.htm
+| title = Bị tung ảnh khỏa thân giả, Kate Upton dọa kiện
+| language = vi | newspaper = Người lao động | author = M. Khuê
+| date = March 10, 2014 | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R10">{{Cite web
+| url = https://kpopherald.koreaherald.com/view.php?ud=201411141412144515245_2
+| title = K-pop star Rain angered by his fake nude photo | date = November 15, 2014
+| website = KoreaHearld.com | access-date = December 10, 2022}}
+</ref>
+ 
+<ref name="R11">{{Cite web |date=2014-11-14 |title=Rain sues over allegedly fake nude pics |url=https://www.koreatimes.co.kr/www/nation/2014/11/113_168177.html |website=The Korea Times |language=en |url-status=live |archive-url=https://web.archive.org/web/20231228140132/http://www.koreatimes.co.kr/www/nation/2014/11/113_168177.html |archive-date= December 28, 2023 }}
+</ref>
+ 
+<ref name="R12">''[[The Korea Times]]'', [https://www.koreatimes.co.kr/www/nation/2018/07/113_252415.html Police probe fake nude photo of President Moon on the radical feminist website]
+</ref>
+ 
+<ref name="R13">{{cite web|url=https://www.nytimes.com/2019/01/10/nyregion/ocasio-cortez-fake-nude-photo.html|title=The Latest Smear Against Ocasio-Cortez: A Fake Nude Photo|work=[[The New York Times]]|first=Michael|last=Gold|date=January 10, 2019|access-date=August 11, 2023}}
+</ref>
+ 
+<ref name="R14">{{cite web
+|url=https://www.theguardian.com/us-news/2019/jan/10/alexandria-ocasio-cortez-hits-out-at-disgusting-media-publishing-fake-nude-image
+|title=Alexandria Ocasio-Cortez hits out at 'disgusting' media publishing fake nude image
+|first=Ed|last=Pilkington|work=[[The Guardian]]|date=January 10, 2023|access-date=August 11, 2023}}
+</ref>
+ 
+<ref name="R15">{{Cite news
+| url = https://www.nytimes.com/2019/01/14/opinion/aoc-nude-selfie.html
+| title = Opinion &#124; The Real Naked Selfies Are Coming | first=Lux|last=Alptraum
+| newspaper = The New York Times | date = January 14, 2019 | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R16">{{Cite web
+| url = https://www.newsweek.com/alexandria-ocasio-cortez-fake-nude-debunked-foot-fetishists-1282672
+| title = Fake nude photo of Alexandria Ocasio-Cortez debunked by foot fetishist
+| author = Daniel Moritz-Rabson | date = January 7, 2019 | website = Newsweek
+| access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="Marshall2016">{{cite book
+| author = P. David Marshall | title = The Celebrity Persona Pandemic
+| url = https://books.google.com/books?id=OCl0DwAAQBAJ&pg=PT31 | date = 31 October 2016
+| publisher = University of Minnesota Press | isbn = 978-1-4529-5226-0 | pages = 31–}}
+</ref>
+ 
+<ref name="mv">{{Cite web
+| url = http://maivang.nld.com.vn/news-20120217041119221.htm
+| title = Nhóm nhạc SNSD dính nghi án ảnh khỏa thân | language = vi
+| website = Nld.com.vn | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R17">{{Cite web
+| url = http://doisongtieudung.vn/phuong-trinh-toi-ma-dam-khoa-than-u-453087.html
+| title = Phương Trinh: 'Tôi mà dám khỏa thân ư?' | language = vi
+| website = doisongtieudung.vn | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R18">{{Cite web
+| url = https://www.phunuonline.com.vn/van-hoa-giai-tri/cube-khoi-kien-vi-huyna-bi-ghep-anh-nude-24532/
+| title = Cube khởi kiện vì HuynA bị ghép ảnh nude | language = vi
+| date = June 10, 2014 | website = Phụ nữ online | access-date = June 30, 2019}}
+</ref>
+ 
+<ref name="R19">{{Cite web
+| url = https://www.24h.com.vn/ca-nhac-mtv/my-nhan-trouble-maker-khon-kho-vi-anh-loa-lo-c73a634737.html
+| title = Mỹ nhân Trouble Maker khốn khổ vì ảnh lõa lồ | language = vi
+| website = Tin tức 24h | access-date = June 30, 2019}}
+</ref>
+}}
+ 
+==Further reading==
+* Forbes, chapter 169, no 1–6, p.&nbsp;84, Bertie Charles, Forbes Incorporated, 2002, California university.
+* American Journalism Review: AJR., chapter 18, no 1–5, p.&nbsp;29, College of Journalism of the University of Maryland at College Park, 1996
+* Hana S. Noor Al-Deen, John Allen Hendricks, ''Social Media: Usage and Impact'', p.&nbsp;248, Lexington Books, 2012.
+* Janet Staiger, ''Media Reception Studies'', p.&nbsp;124, NYU Press, 1 July 2005
+* Kola Boof, ''Diary of a Lost Girl: The Autobiography of Kola Boof'', p.&nbsp;305, Door of Kush, 2006.
+* Laurence O'Toole, ''Pornocopia: porn, sex, technology and desire'', p.&nbsp;279, Serpent's Tail, 1999
+
+[[Category:Nude photography]]
+[[Category:Nudity]]
+[[Category:Computer graphics]]
+[[Category:Pornography]]
+[[Category:Photography forgeries]]
+[[Category:Photographic techniques]]
+[[Category:Applications of computer vision]]
+[[Category:Applications of artificial intelligence]]

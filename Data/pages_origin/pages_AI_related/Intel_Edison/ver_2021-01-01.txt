@@ -1,0 +1,386 @@
+{{Infobox Computer
+|image = Intel-Edison2.png
+|name = Intel Edison
+|developer = Intel Corporation
+|type = Tiny Board Computer
+|website = {{URL|https://software.intel.com/en-us/iot/hardware/edison}}
+|release date = Q3'14
+|discontinued = {{End date|2017|06|19}}<ref name="http://hackaday.com/2017/06/19/intel-discontinues-joule-galileo-and-edison-product-lines/">[http://hackaday.com/2017/06/19/intel-discontinues-joule-galileo-and-edison-product-lines/ Intel Discontinues Joule, Galileo, And Edison Product Lines | Hackaday]</ref>
+|RAMtype = LPDDR3 1&nbsp;GB
+|cpu = Atom 2-Core (Silvermont)
+|CPUspeed = 500&nbsp;MHz
+|storage = 4&nbsp;GB EMMC
+}}
+The '''Intel Edison''' is a [[computer-on-module]] that was offered by [[Intel]] as a [[Development board|development system]] for [[wearable computer|wearable devices]]<ref name="PCWorld2085120">{{cite web|url=http://www.pcworld.com/article/2085120/intels-smallest-computer-to-power-wearable-devices.html|title= Intel's smallest computer to power wearable devices|publisher=PC World|date=2014-01-06}}</ref> and [[Internet of Things]] devices. The system was initially announced to be the same size and shape as an [[SD card]] and containing a [[dual-core]] [[Intel Quark]] x86<ref>{{cite web|url=http://www.intel.com/content/www/us/en/do-it-yourself/edison.html|title=Intel Edison}}</ref> [[Central processing unit|CPU]] at 400 MHz communicating via [[Bluetooth]] and [[Wi-Fi]].<ref>{{cite web|url=https://www.engadget.com/2014/01/06/intel-edison/|title=Intel announces Edison: a 22 nm dual-core PC the size of an SD card|publisher=Engadget|date=2014-01-06}}</ref><ref>{{cite web|url=http://www.pcpro.co.uk/news/386362/intel-edison-an-sd-card-sized-pc-for-wearable-computing|title=Intel Edison: an SD-card sized PC for wearable computing|publisher=PC Pro|date=2014-01-07|access-date=2014-01-07|archive-url=https://web.archive.org/web/20150530011625/http://www.pcpro.co.uk/news/386362/intel-edison-an-sd-card-sized-pc-for-wearable-computing|archive-date=2015-05-30|url-status=dead}}</ref> A later announcement changed the CPU to a 500 MHz [[Silvermont]] dual-core [[Intel Atom (CPU)|Intel Atom CPU]],<ref>{{cite web|url=http://blogs.intel.com/technology/2014/03/wearables-tailoring-intel-edison-technology-provide-expanded-benefits/|title=Wearables: Tailoring Intel Edison Technology to Provide Expanded Benefits|publisher=Intel|date=2014-03-28}}</ref> and in September 2014 a second version of Edison was shown at [[Intel Developer Forum|IDF]], which was bigger and thicker than a standard SD card.<ref name="edison2">{{cite web|url=https://www.engadget.com/2014/03/31/intel-sd-card-sized-edison-change/|title=Intel's SD card-sized computer may not be so tiny after all|publisher=Engadget|date=2014-03-31}}</ref><ref>{{cite news|url=http://linuxgizmos.com/edison-iot-module-ships-with-atom-plus-quark-combo-soc/|title=Edison IoT module ships with Atom/Quark combo SoC|last=Brown|first=Eric|date=Sep 10, 2014|publisher=LinuxGizmos|access-date=14 September 2014}}</ref><ref>{{cite news|url=https://www.engadget.com/2014/09/09/intel-edison-launch/|title=Intel's Edison launches at IDF, and it's still tiny|date=September 9, 2014|publisher=Engadget|access-date=14 September 2014}}</ref>
+
+The board was discontinued on June 19, 2017.<ref name="http://hackaday.com/2017/06/19/intel-discontinues-joule-galileo-and-edison-product-lines/"/>
+
+== First version ==
+Its launch was announced at [[Consumer Electronics Show|CES]] in January 2014.<ref name=PCWorld2085120/> Intel [[Chief executive officer|CEO]] [[Brian Krzanich]] showed a demo of a baby monitoring system (Nursery2.0) which was created using Intel Edison.<ref>{{cite web|title=CES 2014: Keynote Address by Brian Krzanich, CEO of Intel (start at 21:56) - YouTube|url=https://www.youtube.com/watch?v=FZTLPjxUS7g&t=21m56s}}</ref> He also announced that the [[Wolfram Language]] and [[Mathematica]] will be available on the Intel Edison<ref>{{cite web|url=http://www.heise.de/newsticker/meldung/Intels-Edison-Pentium-System-im-Format-einer-SD-Karte-2076917.html|title=Intels Edison: Pentium-System im Format einer SD-Karte|first=heise|last=online}}</ref><ref>{{cite web|url=http://tech.ca.msn.com/intel-ceo-points-toward-wearable-future-with-%E2%80%98smart-earbud%E2%80%99-smartwatch-1|archive-url=https://web.archive.org/web/20140202115716/http://tech.ca.msn.com/intel-ceo-points-toward-wearable-future-with-%E2%80%98smart-earbud%E2%80%99-smartwatch-1|url-status=dead|archive-date=2014-02-02|title=MSN.com - Hotmail, Outlook, Skype, Bing, Latest News, Photos & Videos}}</ref> and that the device will be able to run Linux.<ref>{{cite web|url=http://hackaday.com/2014/01/07/intel-edison-a-desktop-from-1998-in-an-sd-card/|title=Intel Edison: A Desktop From 1998 In An SD Card|author=Brian Benchoff|publisher=Hackaday}}</ref>
+
+== Second version ==
+In March 2014, Intel announced changes in the Intel Edison project and the second version of the board was presented in September 2014. Its dimensions are 35.5 x 25 x 3.9&nbsp;mm, with components on both sides. The board's main [[System on a chip|SoC]] is a [[22 nanometer|22 nm]] Intel [[Atom (system on chip)|Atom]] "Tangier" (Z34XX) that includes two Atom [[Silvermont]] cores running at 500&nbsp;MHz and one [[Intel Quark]] core at 100&nbsp;MHz (for executing [[Real-time operating system|RTOS]] [[ViperOS]]). The SoC has 1&nbsp;GB RAM integrated on package. There is also 4 GB [[eMMC]] flash on board, [[Wi-Fi]], [[Bluetooth 4]] and [[USB]] controllers. The board has 70-pin dense connector ([[Hirose Electric Group|Hirose]] DF40) with USB, [[Secure Digital|SD]], [[Universal asynchronous receiver/transmitter|UARTs]], [[General-purpose input/output|GPIOs]]. The price of the device is around 50 USD.<ref name="gizmo-1409-relaunch-edison">{{cite news|url=http://linuxgizmos.com/edison-iot-module-ships-with-atom-plus-quark-combo-soc/|title=Edison IoT module ships with Atom/Quark combo SoC|author=Eric Brown|date=Sep 10, 2014|publisher=LinuxGizmos|access-date=2014-09-14}}</ref> It runs [[Yocto Project|Yocto Linux]] with development support for [[Arduino|Arduino IDE]], [[Eclipse (software)|Eclipse]] ([[C (programming language)|C]], [[C++]], [[Python (programming language)|Python]]), and Intel XDK ([[NodeJS]], [[HTML5]]).
+[[File:Intel Edison PCB Block Diagram.png|centre|thumb|439x439px]]
+
+== Interface connector ==
+The connector on Intel Edison is a Hirose 70-pin DF40 Series “header” connector. (Hirose part number: DF40C-70DP-0.4V(51)). It exports many signals (USB, GPIOs, SPI, I²C, PWM, etc.).
+
+The mating Hirose connector on an expansion board is the “receptacle” connector and is available in three different heights (1.5&nbsp;mm, 2.0&nbsp;mm, 3.0&nbsp;mm).
+
+== Development boards ==
+
+=== Arduino board ===
+[[File:Intel Edison Arduino Photo.gif|right|thumb|330x330px|Arduino Uno Compatible Board for Edison Module]]
+Intel Released an Arduino Uno compatible board (with only 4 PWM pins instead of 6) that accepts the Intel Edison module. Newer revisions have 6 PWM pins.
+
+Board I/O Features:
+* 20 digital input/output pins, including 6 pins as PWM outputs
+* 6 analog inputs
+* 1 UART (Rx/Tx)
+* 1 I²C
+* 1 ICSP (In-system programming) 6-pin header (SPI)
+* Micro USB device connector OR (via mechanical switch) dedicated standard size USB host Type-A connector
+* Micro USB device (connected to UART)
+* SD card connector
+* DC power jack (7 to 15VDC input)
+
+=== Intel breakout board ===
+[[File:Intel edison breakout board photo.gif|right|thumb|Intel Edison Break Out Board]]
+Intel released a breakout board that is twice the area of the Intel Edison module and is designed for prototyping with [[open-source hardware]] and software.
+* Exposes native 1.8 V I/O of the Edison module
+* 0.1” grid I/O array of through-hole solder points
+* USB OTG with USB Micro Type-AB connector
+* USB OTG power switch
+* Battery Charger
+* USB to device UART bridge with USB Micro
+* Type-B connector
+* DC power supply jack (7 V – 15 V) DC input
+
+The table below lists the signals from the Edison Module that are routed to the four breakout connector (J17-J20). The figure below shows the location of each connector. 
+[[File:Intel Edison BreakoutBoard pinout.png|centre|thumb|450x450px|Intel  Edison Breakout Board - Breakout Connectors]]
+{| class="wikitable"
+!Pin
+!Function
+!Alternate Function
+!Description
+!
+!Pin
+!Function
+!Alternate Function
+!Description
+|-
+|J17 - pin 1 
+|GP182_PWM2
+|
+|GPIO capable of PWM output.
+|
+|J18 - pin 1
+|GP13_PWM1
+|
+|GPIO capable of PWM output.
+|-
+|J17 - pin 2
+|NC
+|
+|No Connect
+|
+|J18 - pin 2
+|GP165
+|
+|GPIO
+|-
+|J17 -pin 3
+|NC
+|
+|No Connect
+|
+|J18 - pin 3
+|GPI_PWRBTN_N
+|
+|Power button input.
+|-
+|J17 - pin 4
+|VIN
+|
+|7 to 15 V.
+|
+|J18 - pin 4
+|MSIC_SLP_CLK2
+|
+|32&nbsp;kHz sleep clock.
+|-
+|J17 - pin 5
+|GP135
+|UART2_TX
+|GPIO, UART2 transmit output.
+|
+|J18 - pin 5
+|V_VBAT_BKUP
+|
+|RTC backup battery input.
+|-
+|J17 - pin 6
+|RCVR_MODE
+|
+|Firmware recovery mode.
+|
+|J18 - pin 6
+|GP19
+|I2C1_SCL
+|GPIO,IC21 SCL output open collector.
+|-
+|J17 - pin 7
+|GP27
+|I2C6_SCL
+|GPIO,IC26 SCL output open collector.
+|
+|J18 - pin 7
+|GP12_PWM0
+|
+|GPIO capable of PWM output.
+|-
+|J17 - pin 8
+|GP20
+|I2C1_SDA
+|GPIO, I2C1 data open collector.
+|
+|J18 - pin 8
+|GP183_PWM3
+|
+|GPIO capable of PWM output.
+|-
+|J17 - pin 9
+|GP28
+|I2C6_SDA
+|GPIO, I2C6 data open collector.
+|
+|J18 - pin 9
+|NC
+|
+|No Connect
+|-
+|J17 - pin 10
+|GP111
+|SSP5_FS1
+|GPIO, SSP2 chip select 2 output.
+|
+|J18 - pin 10
+|GP110
+|SSP5_FS0
+|GPIO, SSP1 chip select 2 output.
+|-
+|J17 - pin 11
+|GP109
+|SSP5_CLK
+|GPIO, SSP5 clock output.
+|
+|J18 - pin 11
+|GP114
+|SSP5_RX
+|GPIO, SSP5 receive data input.
+|-
+|J17 - pin 12
+|GP115
+|SSP5_TXD
+|GPIO, SSP5 transmit data output.
+|
+|J18 - pin 12
+|GP129
+|UART1_RTS
+|GPIO, UART1 ready to send output.
+|-
+|J17 - pin 13
+|OSC_CLK_OUT_0
+|
+|High speed clock output.
+|
+|J18 - pin 13
+|GP130
+|UART1_RX
+|GPIO, UART1 receive data input.
+|-
+|J17 - pin 14
+|GP128
+|UART1_CTS
+|GPIO, UART1 clear to send input.
+|
+|J18 - pin 14
+|4 FW_RCVR
+|
+|Firmware recovery, active high on boot.
+|-
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+|J19 - pin 1
+|NC
+|
+|No connect.
+|
+|J20 - pin 1
+|V_VSYS
+|
+|System input power.
+|-
+|J19 - pin 2
+|V_V1P80
+|
+|System 1.8 V I/O output power.
+|
+|J20 - pin 2
+|V_V3P30
+|
+|System 3.3 V output.
+|-
+|J19 - pin 3
+|GND
+|
+|Ground.
+|
+|J20 - pin 3
+|GP134
+|UART2_RX
+|UART2 Rx (input).
+|-
+|J19 - pin 4
+|GP44
+|ALS_INT_N
+|GPIO, Ambient light Sensor interrupt input.
+|
+|J20 - pin 4
+|GP45
+|COMPASS_DRDY
+|GPIO, compass data ready input.
+|-
+|J19 - pin 5
+|GP46
+|ACCELEROMETER_INT_1
+|GPIO, accelerometer interrupt input.
+|
+|J20 - pin 5
+|GP47
+|ACCELEROMETER_INT_2
+|GPIO, accelerometer interrupt input 2.
+|-
+|J19 - pin 6
+|GP48
+|GYRO_DRDY
+|GPIO, gyro data ready input.
+|
+|J20 - pin 6
+|GP49
+|GYRO_INT
+|GPIO, gyro interrupt input.
+|-
+|J19 - pin 7
+|RESET_OUT#
+|
+|System reset out low.
+|
+|J20 - pin 7
+|GP15
+|
+|GPIO.
+|-
+|J19 - pin 8
+|GP131
+|UART1_TX
+|GPIO, UART 1 Tx output.
+|
+|J20 - pin 8
+|GP84
+|SD_CLK_FB
+|GPIO, SD clock feedback input.
+|-
+|J19 - pin 9
+|GP14
+|AUDIO_CODEC_INT
+|GPIO, audio codec interrupt input.
+|
+|J20 - pin 9
+|GP42
+|SSP2_RXD
+|GPIO, SSP2 Rx data input.
+|-
+|J19 - pin 10
+|GP40
+|SSP2_CLK
+|GPIO, SSP2 clock output.
+|
+|J20 - pin 10
+|GP41
+|SSP2_FS
+|GPIO, SSP2 frame sync output.
+|-
+|J19 - pin 11
+|GP43
+|SSP2_TXD
+|GPIO, SSP2 transmit data output.
+|
+|J20 - pin 11
+|GP78
+|SD_CLK
+|GPIO, SD clock output.
+|-
+|J19 - pin 12
+|GP77
+|SD_CDN
+|GPIO, SD card detect low input
+|
+|J20 - pin 12
+|GP79
+|SD_CMD
+|GPIO, SD command.
+|-
+|J19 - pin 13
+|GP82
+|SD_DAT2
+|GPIO, SD data 2
+|
+|J20 - pin 13
+|GP80
+|SD_DAT0
+|GPIO, SD data 0.
+|-
+|J19 - pin 14
+|GP83
+|SD_DAT3
+|GPIO, SD data 3
+|
+|J20 - pin 14
+|GP81
+|SD_DAT1
+|GP81 SD data 1.
+|}
+
+=== Modulowo board ===
+In October 2015, Modulowo<ref>{{Cite web|title = Zestawy rozwojowe - Modułowo|url = http://modulowo.com|website = Modułowo|access-date = 2015-11-30|language = pl-PL}}</ref> published information about the development kit Modulowo Explore E for Intel Edison.<ref>{{Cite web|title = Modulowo® Explore™ E for Intel® Edison - Modulowo|url = http://modulowo.com/en/edison/|website = Modulowo|access-date = 2015-11-30|language = en-US}}</ref> Development Board allows for quick prototyping and design new solutions and adding sensors, controllers lights, motor drivers, GPS modules, communication modules and more.
+
+== See also ==
+*[[Intel Galileo]]
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* [http://blogs.intel.com/technology/2014/03/wearables-tailoring-intel-edison-technology-provide-expanded-benefits/ Wearables: Tailoring Intel Edison Technology to Provide Expanded Benefits], Intel.
+* [http://www.intel.com/content/www/us/en/do-it-yourself/edison.html Edison module] // Intel
+* [http://download.intel.com/support/edison/sb/edisonarduino_hg_331191007.pdf Intel Edison Kit for Arduino (Hardware Guide)], [[Intel]], February 2015
+* [https://www-ssl.intel.com/content/dam/support/us/en/documents/edison/sb/edisonbreakout_hg_331190006.pdf Intel Edison Breakout Board (Hardware Guide)], [[Intel]], February 2015
+* [https://edison-fw.github.io/meta-intel-edison/ Unofficial support for Intel Edison by community (for users)]
+* [https://edison-fw.github.io/edison-wiki/ Unofficial support for Intel Edison by community (for developers)]
+
+{{Intel technology}}
+{{Single-board computer}}
+
+[[Category:Intel products]]
+[[Category:Wearable computers]]
+[[Category:Internet of things]]
+[[Category:Single-board computers]]

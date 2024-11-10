@@ -1,0 +1,628 @@
+{{short description|Line of smartwatches}}
+{{Use mdy dates|date=June 2019}}
+{{Infobox information appliance
+| logo = Apple Watch official logo.svg
+| image = Apple Watch Series 4 Extract.png
+| caption = Fourth generation Apple Watch in 40mm size
+| developer = [[Apple Inc.]]
+| manufacturer = {{ubl|[[Quanta Computer]]<ref name=Quanta>{{cite web|url=https://blogs.wsj.com/digits/2014/06/20/who-is-apples-watch-maker|work=[[The Wall Street Journal]]|title=Who Is Apple's Watch Maker?|author=Eva Dou |date=June 20, 2014|access-date=February 8, 2015}}</ref>|[[Compal Electronics]]<ref name=Compal>{{cite web|url=https://blogs.wsj.com/digits/2014/06/20/who-is-apples-watch-maker|work=[[MacRumors]]|title=Apple Watch Series 4 Expected to Gain Second Manufacturer Following 'Much Better Than Expected' Demand|author=Joe Rossignol |date=September 26, 2018|access-date=September 26, 2018}}</ref>
+|([[contract manufacturer]])}}
+| family = 
+| type = [[Smartwatch]]
+| lifespan = 
+| discontinued = '''1st Gen:''' {{Start date and age|2016|9|7}}<br />'''Series 1:''' {{Start date and age|2018|9|21}}<br />'''Series 2:''' {{Start date and age|2017|9|12}}<br />'''Series 4:''' {{Start date and age|2019|9|10}}<br />'''Series 5:''' {{Start date and age|2020|9|15}}
+| media = 
+| os = [[watchOS]]
+| power = Built-in rechargeable [[lithium-ion polymer battery|Li-Po battery]]<br />
+'''1st Gen, Series 1:'''<br />
+'''38mm'''<br />{{nowrap|3.8 [[Volt|V]] 0.78 [[kilowatt hour|W·h]] (205}} [[ampere hour|mA·h]])<ref name="ifixit">{{cite web|url=https://www.ifixit.com/Teardown/Apple+Watch+Teardown/40655|title=Apple Watch Teardown - iFixit|access-date=April 24, 2015}}</ref><ref name="AnandTech"/><br />
+'''42mm'''<br />{{nowrap|3.78 V 0.93 W·h (246}} mA·h)<ref name="AnandTech">{{cite web|url=http://www.anandtech.com/show/9381/the-apple-watch-review/|title=The Apple Watch Review |publisher=[[AnandTech]]|date=July 20, 2015|access-date=July 27, 2015|first1=Joshua|last1=Ho|first2=Brandon|last2=Chester}}</ref><br />
+'''Series 2:'''<br />
+'''38mm'''<br />{{nowrap|3.77 V 1.03 W·h (273}} mA·h)<ref name="Series2Battery38mm"/><br />
+'''42mm'''<br />{{nowrap|3.8 V 1.27 W·h (334}} mA·h)<ref name="Series2Battery42mm"/><br />
+'''Series 3:'''<br />
+'''Non-LTE:'''<br />
+'''38mm'''<br />{{nowrap|3.81 V 1.00 W·h (262}} mA·h)<ref name="Series3Battery38mmNonLTE"/><br />
+'''42mm'''<br />{{nowrap|3.82 V 1.31 W·h (342}} mA·h)<ref name="Series3Battery42mmNonLTE"/><br />
+'''LTE:'''<br />
+'''38mm'''<br />{{nowrap|3.82 V 1.07 W·h (279}} mA·h)<ref name="Series3Battery38mmLTE"/><br />
+'''42mm'''<br />{{nowrap|3.82 V 1.34 W·h (352}} mA·h)<ref name="Series3Battery42mmLTE"/><br />
+'''Series 4:'''<br />
+'''40mm'''<br />{{nowrap|3.81 V 0.858 W·h (224.9}} mA·h)<ref name="LloydS5-40mm"/><br />
+'''44mm'''<br />{{nowrap|3.81 V 1.113 W·h (291.8}} mA·h)<ref name="IFixIt9-24-2018"/><br />
+'''Series 5:'''<br />
+'''40mm'''<br />{{nowrap|3.85 V 0.944 W·h (245}} mA·h)<ref name="LloydS5-40mm"/><br />
+'''44mm'''<br />{{nowrap|3.814 V 1.129 W·h (296}} mA·h)<ref name="LloydS5-44mm"/><br />
+'''Series 6:'''<br />
+'''40mm'''<br />{{nowrap|3.85 V 1.024 W·h (265.9}} mA·h)<ref name="watchS6-teardown"/><br />
+'''44mm'''<br />{{nowrap|3.85 V 1.17 W·h (303.8}} mA·h)<ref name="watchS6-teardown"/>
+
+| soc = '''1st Gen:''' [[Apple S1]]<br />'''Series 1:''' [[Apple S1P]]<br />'''Series 2:''' [[Apple S2]]<br />'''Series 3:''' [[Apple S3]]<br />'''Series 4:''' [[Apple S4]]<br />'''Series 5, SE:''' [[Apple S5]]<br />'''Series 6:''' [[Apple S6]]
+| cpu = 
+| memory = '''1st Gen, Series 1, Series 2:''' 512&nbsp;MB [[Dynamic random-access memory|DRAM]]<ref name=Peckham/><br />'''Series 3:''' 768&nbsp;MB DRAM<ref name="OriginalWatchTeardown">{{cite web|url=http://appleinsider.com/articles/15/04/30/teardown-shows-apple-watch-s1-chip-has-custom-cpu-512mb-ram-8gb-storage|title=Teardown shows Apple Watch S1 chip has custom CPU, 512MB RAM, 8GB storage|publisher=[[AppleInsider]]|access-date=April 30, 2015}}</ref><ref name=Peckham>{{cite web |url=https://www.techradar.com/news/which-apple-watch-should-i-buy |last=Peckham |first=James |title=Apple Watch: the ultimate guide to pick your next iPhone compatible watch |date=June 4, 2019 |access-date=September 28, 2019 |website=[[TechRadar]]}}</ref><br />'''Series 4, Series 5:''' 1&nbsp;GB DRAM<ref name=Lanaria>{{cite web |url=https://www.techtimes.com/articles/245398/20190918/developer-confirms-apple-watch-series-5-has-the-same-cpu-as-its-predecessor-and-1-gb-ram.htm |title=Developer Confirms Apple Watch Series 5 Has The Same CPU As Its Predecessor And 1 GB RAM |last=Lanaria |first=Vincent |date=September 18, 2019 |access-date=September 28, 2019 |website=TechTimes}}</ref>
+| storage = '''1st Gen, Series 1, Series 2:''' 8&nbsp;[[Gigabyte|GB]]<ref name=Mayo>{{cite web |url=https://9to5mac.com/2015/03/10/apple-watch-includes-8-gb-of-storage-allows-2-gb-of-music-storage-and-75-mb-of-photos/ |title=Apple Watch includes 8 GB of storage, allows 2 GB of music and 75 MB of photos |last=Mayo |first=Benjamin |date=March 10, 2015 |access-date=September 29, 2019 |website=[[9to5Mac]]}}</ref><ref name="OriginalWatchTeardown"/><ref name=S1TS>{{cite web |url=https://support.apple.com/kb/sp745?locale=en_US |title=Apple Watch Series 1 - Technical Specifications |date=March 30, 2019 |access-date=September 29, 2019 |website=[[support.apple.com]] |publisher=[[Apple, Inc.]]}}</ref><ref name=La>{{cite web |url=https://www.cnet.com/news/apple-watch-4-vs-watch-series-3-and-2-whats-new-and-different/ |title=Apple Watch 4 vs. Watch Series 3 and 2: What's new and different? |date=July 12, 2019 |access-date=September 29, 2019 |website=[[cnet]]}}</ref><br />'''Series 3:''' 8&nbsp;GB (GPS) or 16&nbsp;GB (Cellular)<ref name="appleWatch3TS"/><br />'''Series 4:''' 16&nbsp;GB<ref name="appleWatch4TS">{{Cite web|url=https://support.apple.com/kb/SP778?locale=en_US|title=Apple Watch Series 4 - Technical Specifications|website=support.apple.com|access-date=September 17, 2018}}</ref><br />'''Series 5, SE, Series 6:''' 32&nbsp;GB<ref name="AppleWatch5TS"/><ref name="appleWatchSETS">{{Cite web|url=https://support.apple.com/kb/SP827?locale=en_US|title=Apple Watch SE - Technical Specifications|website=support.apple.com|access-date=2020-09-15}}</ref><ref name="appleWatch6TS">{{Cite web|url=https://support.apple.com/kb/SP826?locale=en_US|title=Apple Watch Series 6 - Technical Specifications|website=support.apple.com|access-date=2020-09-15}}</ref>
+| display = [[OLED]]<ref name="ars-review"/> with strengthened Ion-X glass or [[Sapphire#Sapphire glass|Sapphire glass]] <br />
+'''1st Gen, Series 1, Series 2, Series 3:'''<br />
+'''38mm'''<br />{{convert|33.96|mm|in|abbr=on}} diagonal, 272×340&nbsp;[[image resolution|pixels]], 326&nbsp;dpi<br />
+'''42mm'''<br />{{convert|38.96|mm|in|abbr=on}} diagonal, 312×390&nbsp;pixels, 326&nbsp;dpi<br />
+'''Series 4, Series 5, SE, Series 6:'''<br />
+'''40mm'''<br />{{convert|38.94|mm|in|abbr=on}} diagonal, 324×394&nbsp;pixels, 326&nbsp;dpi<br />
+'''44mm'''<br />{{convert|45.20|mm|in|abbr=on}} diagonal, 368×448&nbsp;pixels, 326&nbsp;dpi<br />
+'''1st Gen, Series 1, Series 2, Series 3, Series 4, Series 5:''' [[Force Touch]]
+| graphics = 
+| sound = 
+| input = 
+| controllers = 
+| camera = 
+| touchpad = 
+| connectivity = [[Near field communication|NFC]], Diagnostics port<br />'''1st Gen, Series 1, Series 2:''' [[Bluetooth#Bluetooth 4.0|Bluetooth 4.0]]<ref name="appleWatch0TS"/><ref name="appleWatch2TS">{{Cite web|url=https://support.apple.com/kb/SP746?locale=en_US|title=Apple Watch Series 2 - Technical Specifications|website=support.apple.com|access-date=September 17, 2018}}</ref><br />'''Series 3:''' LTE cellular data (optional), [[Bluetooth#Bluetooth 4.2|Bluetooth 4.2]]<ref name="appleWatch3TS"/><br />'''Series 4, Series 5, SE, Series 6:''' LTE cellular data (optional), [[Bluetooth#Bluetooth 5|Bluetooth 5]]<ref name="appleWatch4TS"/><ref name=AppleWatch5TS>{{cite web |url=https://support.apple.com/kb/SP808?locale=en_US |title=Apple Watch Series 5 - Technical Specifications |website=[[Apple.com]] |access-date=September 28, 2019}}</ref><ref name="appleWatchSETS"/><ref name="appleWatch6TS"/><br />'''1st Gen, Series 1, Series 2, Series 3, Series 4, Series 5, SE:''' [[Wi-Fi]] ([[802.11]] [[802.11b|b]]/[[802.11g|g]]/[[802.11n|n]] [[IEEE 802.11n-2009#Deployment strategies|2.4GHz only]])<br />'''Series 6:''' Wi-Fi (802.11 b/g/n 2.4GHz & 5GHz)
+| platform = 
+| dimensions = '''1st Gen, Series 1:'''<br />
+'''38&nbsp;mm'''<br />{{convert|38.6|x|33.3|x|10.5|mm|abbr=on|disp=br()}}<br />
+'''42&nbsp;mm'''<br />{{convert|42|x|35.9|x|10.5|mm|abbr=on|disp=br()}}<br />
+
+'''Series 2, Series 3:'''<br />
+'''38&nbsp;mm'''<br />{{convert|38.6|x|33.3|x|11.4|mm|abbr=on|disp=br()}}<br /> '''42&nbsp;mm'''<br />{{convert|42.5|x|36.4|x|11.4|mm|abbr=on|disp=br()}}<br />
+'''Series 4, Series 5, Series SE, Series 6:'''<br />
+'''40&nbsp;mm'''<br />{{convert|40|x|34|x|10.7|mm|abbr=on|disp=br()}}<br />
+'''44&nbsp;mm'''<br />{{convert|44|x|38|x|10.7|mm|abbr=on|disp=br()}}<br />
+| compatibility = watchOS 1 - 3: [[iPhone 5]] or later<br />watchOS 4 - 5: [[iPhone 5S]] or later <small>(Non-LTE Watch)</small>, [[iPhone 6]] or later <small>(LTE Watch)</small><br />watchOS 6 - 7: [[iPhone 6S]] or later
+| successor = 
+| related = 
+| website = {{URL|https://www.apple.com/watch}}
+| releasedate = '''1st Gen:''' {{Start date and age|2015|4|24}}<br />'''Series 1 and Series 2:''' {{Start date and age|2016|9|16}}<br />'''Series 3:''' {{Start date and age|2017|9|22}} <br />'''Series 4:''' {{Start date and age|2018|9|21}}<br />'''Series 5:''' {{Start date and age|2019|9|20}}
+<br />'''Series 6 and SE:''' {{Start date and age|2020|9|18}}
+| unitssold = 33 million (2017)<ref>{{Cite news|url=https://bgr.com/2017/09/26/apple-watch-sales-estimate-33-million-revenue/|title=How many Apple Watches has Apple sold so far?|last=Heisler|first=Yoni|date=September 27, 2017|work=[[Boy Genius Report|BGR]]|access-date=August 23, 2018}}</ref>
+| unitsshipped = 
+| service = 
+}}
+
+'''Apple Watch''' is a line of [[smartwatch]]es produced by [[Apple Inc.]] It incorporates [[activity tracker|fitness tracking]], [[Health (Apple)|health-oriented capabilities]], and [[wireless telecommunication]], and integrates with [[iOS]] and other Apple products and services.
+
+The Apple Watch was released in April 2015<ref name="theverge">{{cite web|url=https://live.theverge.com/apple-iphone-iwatch-live-blog |title=The Verge live blog |work=[[The Verge]] |publisher=[[Vox Media]] |date=September 9, 2014 |access-date=September 10, 2014 |url-status=dead |archive-url=https://web.archive.org/web/20140909221803/http://live.theverge.com/apple-iphone-iwatch-live-blog/ |archive-date=September 9, 2014 }}</ref><ref>{{cite web|last1=Etherington|first1=Darrell|title=Tim Cook Says Apple Watch Ships In April|url=https://techcrunch.com/2015/01/27/tim-cook-says-apple-watch-should-ship-in-april/|website=[[TechCrunch]]|publisher=[[AOL]]|access-date=January 28, 2015}}</ref> and quickly became the best-selling [[wearable device]]: 4.2 million were sold in the second quarter of [[fiscal year|fiscal]] 2015.<ref>{{cite web|title = Apple Watch is 'world's best selling wearable' with 4.2 million shifted in Q2|url = http://www.theinquirer.net/inquirer/news/2418517/apple-watch-is-worlds-best-selling-wearable-with-42-million-shifted-in-q2}}</ref><ref>{{cite web|title = Apple Watch Price Details in India|url = http://www.tsaproundup.com/apple-smart-watch-launching-date-price-details-in-india/|access-date = November 3, 2015|archive-url = https://web.archive.org/web/20161101211712/http://www.tsaproundup.com/apple-smart-watch-launching-date-price-details-in-india/|archive-date = November 1, 2016|url-status = dead}}</ref> In subsequent years, a new generation of Apple Watch with an improved set of internal components<ref name=Slavov2020>{{cite web |url=https://www.phonearena.com/news/apple-watch-series-6-vs-5_id127069 |title=Apple Watch Series 6 vs Series 5: What are the differences |last=Slavov |first=Mariyan |website=PhoneArena.com |date=September 16, 2020 |access-date=September 20, 2020}}</ref><ref name=Butler2020>{{cite web |url=https://9to5mac.com/2020/02/06/how-to-determine-your-apple-watch-model/ |title=How to determine which Apple Watch model you have |last=Butler |first=Sydney |date=February 6, 2020 |website=[[9to5Mac]] |access-date=September 20, 2020}}</ref><ref name=Loyola2018>{{cite web |url=https://www.macworld.com/article/2894969/which-watch-how-to-pick-the-apple-watch-that-s-right-for-you.html |title=Which Apple Watch? How to pick the Apple Watch that’s right for you |last=Loyola |first=Roman |date=November 14, 2018 |website=[[Macworld]] |access-date=September 20, 2020}}</ref> — labeled by Apple a 'Series', with certain exceptions{{efn|In September 2016, the second generation of Apple Watch was divided into two Series, the [[Apple Watch Series 2|Series 2]] and the budget [[Apple Watch Series 1|Series 1]], with different internal components.<ref name=Caldwell /> In September 2020, the sixth generation of Apple Watch was divided into the [[Apple Watch Series 6|Series 6]] and the budget [[Apple Watch SE]], also carrying different internal components.<ref name=NBCBay2020>{{cite news |url=https://www.nbcbayarea.com/news/local/apple-to-unveil-new-iphone-during-virtual-event-sept-15/2359454/ |title=Apple Unveils New Watch, iPad During Virtual Event |author=[[NBC Bay Area]] |date=September 15, 2020 |access-date=September 20, 2020}}</ref><ref name=Pettit /><br>For convenience sake, this article treats the SE as the equivalent of a numbered Series.}} — has been introduced each September.<ref name=Eadicicco>{{cite news |url=https://www.businessinsider.com/apple-watch-series-6-rumors-release-date-specs-features-2020-1 |title=The Apple Watch is finally getting 1 major feature it's been missing that Fitbit has offered for year |last=Eadicicco  |first=Lisa |date=September 4, 2020 |access-date=September 19, 2020 |website=[[Business Insider]]}}</ref>
+
+Each Series has been initially sold in multiple variants defined by the watch casing's material, color, and size (except for the budget watches [[Apple Watch Series 1|Series 1]] and [[Apple Watch SE|SE]], available only in aluminum<ref name=Caldwell>{{cite web |url=https://www.imore.com/apple-watch-1-review |title=Apple Watch Series 1 review: Second-best is still pretty darn good |last=Caldwell |first=Serenity |date=November 21, 2016 |website=[[iMore]] |access-date=September 19, 2020}}</ref><ref name=Charlton>{{cite web |url=https://www.macrumors.com/guide/apple-watch-series-6-vs-apple-watch-se/ |title=Apple Watch Series 6 vs. Apple Watch SE Buyer's Guide |last=Charlton |first=Hartley |date=September 17, 2020 |website=[[MacRumors]] |access-date=September 19, 2020}}</ref><ref name=Pettit>{{cite news |last=Pettit |first=Harry |title=Cheapest Apple Watch in years unveiled with fitness apps, sleep tracker and more |newspaper=[[The Sun (UK)|The Sun]] |date=September 15, 2020}}</ref>), and beginning with [[Apple Watch Series 3|Series 3]], by the option in the aluminum variants for [[LTE (telecommunications)|LTE]] [[cellular connectivity]], which comes standard with the other materials.<ref name=CloverGuide>{{cite web |title=Picking the Best Apple Watch to Buy in 2020 |url=https://www.macrumors.com/guide/best-apple-watch-to-buy/ |last=Clover |first=Juli |date=June 8, 2020 |website=[[MacRumors]] |access-date=September 19, 2020}}</ref> The band included with the watch can be selected from multiple options from Apple, and watch variants in aluminum co-branded with [[Nike, Inc.|Nike]] and in stainless steel co-branded with [[Hermès]] are also offered, which include exclusive bands and digital watch faces carrying those companies' brandings.<ref name=CloverGuide />
+
+Apple Watch operates primarily in conjunction with the user's [[iPhone]] for functions such as configuring the watch and syncing data with iPhone apps, but can separately connect to a [[Wi-Fi network]] for some data-reliant purposes, including basic communications and audio streaming.<ref name=HT205547>{{cite web |url=https://support.apple.com/en-us/HT205547 |title=Use your Apple Watch without your iPhone nearby |author=[[Apple, Inc.]] |date=September 17, 2020 |access-date=September 19, 2020}}</ref><ref>{{Cite web|url=https://www.imore.com/how-your-apple-watch-connects-wi-fi-networks-when-away-your-iphone|title=Connect your Apple Watch to Wi-Fi for direct online usage — here's how |date=2019-07-30 |website=iMore |language=en |access-date=2019-10-29}}</ref> LTE-equipped models can independently connect to a [[mobile network]], including for calling, texting, and installed [[mobile app]] data use, substantially reducing the need for an iPhone after initial setup.<ref name=Gil /> The oldest model of iPhone that is compatible with any given Apple Watch depends on the version of [[system software]] installed on each device.<ref name=Potuck2019>{{cite web |url=https://9to5mac.com/2019/06/03/watchos-6-compatibility/ |title=Here are all the Apple Watch models compatible with watchOS 6 |last=Potuck |first=Michael |website=[[9to5Mac]] |date=June 3, 2019 |access-date=September 19, 2020}}</ref> {{As of|2020|September}}, new Apple Watches come with [[watchOS]] 7 preinstalled and require an iPhone running [[iOS 14]], which is available for the [[iPhone 6S]] and later.<ref name=Hodge2020>{{cite news |url=https://www.cnet.com/how-to/watchos-7-is-available-so-update-your-apple-watch-heres-how-to-do-it/ |title=WatchOS 7 is here, so update your Apple Watch. Here's how to do it |last1=Hodge |first1=Rae |last2=Sherr |first2=Ian |date=September 17, 2020 |website=[[Cnet.com]] |access-date=September 19, 2020}}</ref>
+
+== Development ==
+The goal of the Apple Watch was to complement an iPhone and add new functions, and to free people from their phones.<ref name="wired.com">{{cite web|url=https://www.wired.com/2015/04/the-apple-watch/|title=iPhone Killer: The Secret History of the Apple Watch|work=[[Wired (magazine)|Wired]]}}</ref> [[Kevin Lynch (computing)|Kevin Lynch]] was hired by Apple to make [[wearable technology]] for the wrist. He said: "People are carrying their phones with them and looking at the screen so much. People want that level of engagement. But how do we provide it in a way that's a little more human, a little more in the moment when you're with somebody?"<ref name="wired.com" /> Apple's development process was held under wraps until a [[Wired (website)|''Wired'']] article revealed how some internal design decisions were made.<ref name="wired.com" />
+
+Rumors as far back as 2011 speculated that Apple was developing a wearable variation of the [[iPod]] that would curve around the user's wrist, and feature [[Siri]] integration.<ref name="imore-earlyrumors">{{cite web|title=Rumor: Apple working on wearable iPod with Siri control &#124; iMore|url=http://www.imore.com/apple-working-wearable-ipod-siri-control|website=[[iMore]]|access-date=September 1, 2015}}</ref> In February 2013, ''[[The New York Times]]'' and ''[[The Wall Street Journal]]'' reported that Apple was beginning to develop an [[iOS]]-based smartwatch with a curved display.<ref name="verge-earlyrumors">{{cite web|title=Apple is 'experimenting' with curved glass smartwatch, says NYT and WSJ|url=https://www.theverge.com/2013/2/10/3973364/apple-rumored-to-be-developing-ios-based-smartwatch/in/4286985|website=[[The Verge]]|access-date=July 15, 2015}}</ref> That same month, ''[[Bloomberg News|Bloomberg]]'' reported that Apple's smartwatch project was "beyond the experimentation phase" with a team of about 100 designers.<ref name="bloomberg-watchrumor">{{cite web|title=Apple Said to Have Team Developing Wristwatch Computer|url=https://www.bloomberg.com/news/articles/2013-02-12/apple-said-to-have-team-developing-wristwatch-computer|website=[[Bloomberg News|Bloomberg]]|access-date=July 15, 2015}}</ref> In July 2013, ''[[Financial Times]]'' reported that Apple had begun hiring more employees to work on the smartwatch, and that it was targeting a retail release in late 2014.<ref name="verge-ftblitz">{{cite web|title=Apple on iWatch hiring blitz ahead of possible late 2014 launch, says Financial Times|url=https://www.theverge.com/2013/7/14/4522898/apple-on-iwatch-hiring-blitz-and-could-launch-next-year-says/in/4286985|website=[[The Verge]]|access-date=July 15, 2015}}</ref>
+
+==Unveiling and release==
+{| class="wikitable sortable" style="font-size:88%;"
+|-
+!Watch
+!Released with
+!Release date
+!Final supported OS
+!Support ended
+!Support lifespan
+|- style="background:#ececec;"
+|'''[[Apple Watch (1st generation)]]'''
+|[[watchOS]] 1.0 ([[iOS 8|iOS 8.2]])
+|{{Sortable date|2015|04|24}}
+|watchOS 4.3.2 ([[iOS 11|iOS 11.4.1]]){{efn-ua|watch OS 4.3.2 requires iOS version 11.4, but higher version iOS can still pair with a watchOS 4 watch.}}
+|{{Sortable date|2018|09|17}}
+|'''{{Age in years and months|2015|04|24|2018|09|17|sortable=on}}'''
+|- style="background:#ececec;"
+|'''[[Apple Watch Series 1|Series 1]]'''
+|watchOS 3.0 ([[iOS 10|iOS 10.0]])
+|{{Sortable date|2016|09|12}}
+| rowspan="2" |watchOS 6.3 ([[iOS 13|iOS 13.7]]){{efn-ua|watch OS 6.3 requires iOS version 13.5, but iOS 14 can still pair with a watchOS 6 watch.}}
+| rowspan="2" |{{Sortable date|2020|09|15}}
+|'''{{Age in years and months|2016|09|12|sortable=on}}'''
+|- style="background:#ececec;"
+|'''[[Apple Watch Series 2|Series 2]]'''
+|watchOS 3.0 ([[iOS 10|iOS 10.0]])
+|{{Sortable date|2016|09|16}}
+|'''{{Age in years and months|2016|09|16|sortable=on}}'''
+|- style="background:#d4f4b4;"
+|'''[[Apple Watch Series 3|Series 3]]'''
+|watchOS 4.0 ([[iOS 11|iOS 11.0]])
+|{{Sortable date|2017|09|22}}
+|[[WatchOS|Latest watchOS]]
+|(Current)
+|'''{{Age in years and months|2017|09|22|sortable=on}} +'''
+|- style="background:#c1e6f5;"
+|'''[[Apple Watch Series 4|Series 4]]'''
+|watchOS 5.0 ([[iOS 12|iOS 12.0]])
+|{{Sortable date|2018|09|21}}
+|Latest watchOS
+|(Current)
+|'''{{Age in years and months|2018|09|21|sortable=on}} +'''
+|- style="background:#c1e6f5;"
+|'''[[Apple Watch Series 5|Series 5]]'''
+|watchOS 6.0 ([[iOS 13|iOS 13.0]])
+|{{Sortable date|2019|09|20}}
+|Latest watchOS
+|(Current)
+|'''{{Age in years and months|2019|09|20|sortable=on}} +'''
+|- style="background:#d4f4b4;"
+|'''[[Apple Watch SE|SE]]'''
+|watchOS 7.0 ([[iOS 14|iOS 14.0]])
+|{{Sortable date|2020|09|18}}
+|Latest watchOS
+|(Current)
+|'''{{Age in years and months|2020|09|18|sortable=on}} +'''
+|- style="background:#d4f4b4;"
+|'''[[Apple Watch Series 6|Series 6]]'''
+|watchOS 7.0 ([[iOS 14|iOS 14.0]])
+|{{Sortable date|2020|09|18}}
+|Latest watchOS
+|(Current)
+|'''{{Age in years and months|2020|09|18|sortable=on}} +'''
+|-class="sortbottom"
+| colspan="6" |
+{|
+!Legend:
+|{{legend2|#ececec|{{abbr|Discontinued and unsupported|Watch is discontinued and last supported watchOS version for this device is not supported anymore.}}|border=1px solid #AAAAAA}}
+|{{legend2|#c1e6f5|{{abbr|Discontinued, but still supported|Discontinued device, but still supported.}}|border=1px solid #AAAAAA}}
+|{{legend2|#d4f4b4|{{abbr|'''Current or still sold'''|Device runs with a supported watchOS version.}}|border=1px solid #AAAAAA}}
+|
+|}
+|}
+{{notelist-ua}}
+
+In April 2014, Apple CEO [[Tim Cook]] told ''[[The Wall Street Journal]]'' that the company was planning to launch new products that year, but revealed no specifics.<ref name="wsj-cooknewproducts">{{cite web|title=Apple's Cook on New Products: ‘Take the Time to Get It Right’|url=https://blogs.wsj.com/digits/2014/04/24/apples-cook-on-new-products-take-the-time-to-get-it-right/|work=[[The Wall Street Journal]]|access-date=July 15, 2015}}</ref> In June 2014, [[Reuters]] reported that production was expected to begin in July for an October release.<ref name="verge-reutersreport">{{cite web|title=Apple's iWatch may launch in October with 2.5-inch screen, says Reuters|url=https://www.theverge.com/2014/6/19/5825178/apple-iwatch-could-launch-in-october/in/4286985}}{{subscription required}}</ref>
+
+During a September 2014 press event where the [[iPhone 6]] was also presented, the new watch product was introduced by Tim Cook. After a video focusing on the design process, Cook reappeared on stage wearing an Apple watch.<ref name="verge-watchannounce">{{cite web|title=Apple Watch announced: available for $349 early next year|url=https://www.theverge.com/2014/9/9/6125873/apple-watch-smartwatch-announced|website=[[The Verge]]|access-date=July 15, 2015}}</ref><ref name="verge-watchfitness">{{cite web|title=The Apple Watch is poised to dominate the market for digital fitness trackers|url=https://www.theverge.com/2014/9/9/6127839/apple-watch-healthkit-digital-health-fitness|website=[[The Verge]]|access-date=July 15, 2015}}</ref>
+
+In comparison to other Apple products and competing smartwatches, marketing of the Apple Watch promoted the device as a [[fashion accessory]].<ref name="wp-fashion">{{cite news|title=Apple Watch is competing as a fashion accessory, and that's a risky move|url=https://www.washingtonpost.com/blogs/innovations/wp/2015/03/05/apple-watch-is-competing-as-a-fashion-accessory-and-thats-a-risky-move/|access-date=July 15, 2015|work=[[The Washington Post]]}}</ref><ref name="mashable-applewatch-">{{cite web|title=First Apple Watch ads in U.S. magazines favor fashion lovers over techies|url=http://mashable.com/2015/02/25/apple-watch-vogue/|website=[[Mashable]]|access-date=July 15, 2015}}</ref> Apple later focused on its health and fitness-oriented features, in an effort to compete with dedicated [[activity tracker]]s. The watchOS 3 added fitness tracking for wheelchair users, social sharing in the Activity app, and a Breathe app to facilitate [[mindfulness]].<ref>{{Cite web|url=https://www.verizonwireless.com/articles/brief-history-of-apple-watch/|title=A timeline: A brief history of Apple Watch|website=www.verizonwireless.com|language=en|access-date=2020-02-24}}</ref>
+
+The device was not branded as "iWatch" (which would put it in line with its pre-existing product lines such as iPod, iPhone, and [[iPad]]) because the inventor decided "Apple Watch" made more visionary sense than "iWatch," which would have followed previously-existing strategems; in the United States, the "iWatch" trademark is owned by OMG Electronics – who was [[crowdfunding]] a device under the same name, and is owned in the [[European Union]] by Irish firm Probendi.<ref name="cnet-iwatchname">{{cite web|url=https://www.cnet.com/news/non-apple-companies-hold-iwatch-trademark-in-u-s-u-k-china/|title=Non-Apple companies hold iWatch trademark in U.S., U.K., China|website=[[CNET]]|access-date=July 15, 2015}}</ref><ref name="cnbc-applewatchname">{{cite web|url=https://www.cnbc.com/2015/04/09/why-the-apple-watch-isnt-called-the-iwatch.html|title=Why the Apple Watch isn't called the iWatch|website=CNBC|publisher=[[NBCUniversal Television Group|NBCUniversal News Group]]|access-date=July 15, 2015}}</ref> In July 2015, Probendi sued Apple Inc. for [[trademark infringement]], arguing that through [[keyword advertising]] on the [[Google Search|Google search engine]], it caused advertising for the Apple Watch to appear on search results pages when users searched for the trademarked term "iWatch".<ref name="ars-iwatchlawsuit">{{cite web|url=https://arstechnica.com/tech-policy/2015/07/the-apple-iwatch-doesnt-exist-but-a-legal-fight-over-it-does/|title=The Apple iWatch doesn’t exist, but a legal fight over it does|website=[[Ars Technica]]|access-date=July 15, 2015}}</ref>
+
+===Release===
+Pre-orders for the Apple Watch began on April 10, 2015, with the official release on April 24.<ref name="verge-releasedate">{{cite web|title=Apple Watch release date is April 24th, with pricing from $349 to over $10,000|url=https://www.theverge.com/2015/3/9/8162455/apple-watch-price-release-date-2015|website=[[The Verge]]|access-date=July 15, 2015}}</ref> Initially, it was not available at the [[Apple Store]]; customers could make appointments for demonstrations and fitting, but the device was not in-stock for walk-in purchases and had to be reserved and ordered online. ''[[CNET]]'' felt that this distribution model was designed to prevent Apple Store locations from having long line-ups due to the high demand.<ref name="cnet-reservation">{{cite web|title=Apple Watch launch: Plan ahead – it's by appointment only|url=https://www.cnet.com/news/apple-watch-launch-plan-ahead-its-by-appointment-only/|website=[[CNET]]|access-date=July 15, 2015}}</ref><ref name="cnet-reserveapplestore">{{cite web|title=Apple Watch can now be reserved for in-store purchase|url=https://www.cnet.com/news/apple-watch-can-now-be-reserved-for-in-store-pick-up/|website=CNET|access-date=July 15, 2015}}</ref> Selected models were available in limited quantities at luxury boutiques and authorized resellers.<ref name="cnet-boutique">{{cite web|title=Want an Apple Watch on Friday? Head to a luxury boutique|url=https://www.cnet.com/news/if-you-want-an-apple-watch-on-friday-head-to-a-luxury-boutique/|website=[[CNET]]|access-date=July 15, 2015}}</ref> On June 4, 2015, Apple announced that it planned to stock Apple Watch models at its retail locations.<ref name="cnet-reserveapplestore" /> On August 24, 2015, [[Best Buy]] announced that it would begin stocking Apple Watch at its retail stores by the end of September.<ref name="verge-awbestbuy">{{cite web|title=The Apple Watch will be available at all Best Buy locations next month|url=https://www.theverge.com/2015/8/25/9206317/apple-watch-sales-retail-best-buy|website=[[The Verge]]|access-date=September 22, 2015}}</ref> Both [[T-Mobile US]] and [[Sprint Corporation|Sprint]] also announced plans to offer Apple Watch through their retail stores.<ref name="pcmag-awsprint">{{cite web|title=Buy Apple Watch From Sprint on Friday|url=https://www.pcmag.com/article2/0,2817,2491664,00.asp|website=[[PC Magazine]]|access-date=September 22, 2015}}</ref>
+
+In September 2015, Apple launched a new subset of Apple Watch, with a stainless steel body and leather band, in collaboration with [[Hermès]].<ref>{{cite web|last1=Reisinger|first1=Don|title=Apple's Pricey Hermès Smartwatch Will Be Available Online Friday|url=http://fortune.com/2016/01/20/apple-watch-hermes-online/|website=fortune.com|publisher=[[Fortune (magazine)|Fortune]]|access-date=January 21, 2016}}</ref> The following year, Apple launched another subset of Apple Watches in collaboration with [[Nike, Inc.|Nike]] dubbed "Apple Watch Nike+". Both subsets featured cosmetic customization, but otherwise functioned like standard Apple Watches.<ref>{{cite news|last1=Reisinger|first1=Don|title=Review: Apple Watch Nike+ isn't much different from Series 2, and that's OK - Appleinsider|url=https://appleinsider.com/articles/16/12/13/review-apple-watch-nike-isnt-much-different-from-series-2-and-thats-ok|date=December 13, 2016}}</ref>
+
+Apple Watch went on sale in [[India]] in November 2015.<ref>{{cite news|last1=Hughes|first1=Neil|title=Apple Watch finally goes on sale in India starting at the equivalent of $470|url=http://pocketnow.com/2015/11/06/apple-watch-india-availability-prices|access-date=November 6, 2015|publisher=Pocketnow|date=November 6, 2015}}</ref> The device also launched in [[Chile]], the [[Philippines]], [[Indonesia]], and [[South Africa]].<ref>{{cite news|title=Apple Watch coming to India on Nov. 6, prices and resellers unknown|url=http://appleinsider.com/articles/15/10/23/apple-watch-coming-to-india-on-nov-6-prices-and-resellers-unknown|access-date=October 23, 2015}}</ref><ref>{{cite news|title=Tanggal Rilis Apple Watch di Indonesia Terkuak: Akhir November!|url=http://www.makemac.com/apple-watch-indonesia/|access-date=November 14, 2015|publisher=Makemac}}</ref>
+
+==Specifications==
+===Design===
+[[File:Apple Watch Series 3 Sensors.jpg|thumb|right|Underside of the Series 3 showing sensors and the digital crown]]
+[[File:Apple Watch Series 4 40mm space gray Aluminum.jpg|thumb|right|Series 4 (40mm)]]
+Each series of Apple Watch is offered in multiple variants, distinguished by the casing's material, color, and size,<ref name=AppleInsider2014>{{cite web |url=https://appleinsider.com/articles/14/09/04/apples-iwatch-to-come-in-two-sizes-8gb-storage-multiple-material-color-options-for-2015-launch---report |title=Apple's 'iWatch' to have two sizes, 8GB storage, multiple material & color options for 2015 launch - report |website=[[AppleInsider]] |date=September 4, 2014 |access-date=September 28, 2019}}</ref> with special bands and digital watch faces available for certain variants co-branded with Nike and Hermès, which are also sometimes accompanied by other unique extras, like stainless steel charging pucks, premium packaging, and exclusive color basic bands.<ref name=Horowitz>{{cite web |url=https://venturebeat.com/2018/09/24/the-10-point-apple-watch-series-4-review-finally-a-worthwhile-upgrade/ |last=Horowitz |first=Jeremy |title=The 10-point Apple Watch Series 4 review: Finally a worthwhile upgrade |date=September 24, 2018 |access-date=September 28, 2019 |website=[[VentureBeat]]}}</ref><ref name=TechRadar2019>{{cite web |title=Apple Watch 5 review |last=Beavis |first=Gareth |url=https://www.techradar.com/reviews/apple-watch-5-review |date=September 18, 2019 |access-date=September 28, 2019 |website=[[TechRadar]]}}</ref><ref name=AppleInsider2018>{{cite web |url=https://appleinsider.com/articles/18/10/10/should-you-buy-the-apple-watch-nike-series-4-instead-of-the-standard-model |title=Should you buy the Apple Watch Nike+ Series 4 instead of the standard model? |date=October 10, 2018 |access-date=September 28, 2019 |website=[[AppleInsider]]}}</ref><ref name="O'Hara">{{cite web |url=https://appleinsider.com/articles/18/09/21/hands-on-apple-watch-series-4-hermes |title=Hands on: Apple Watch Series 4 Hermes |last=O'Hara |first=Andrew |date=September 21, 2018 |access-date=September 28, 2019 |website=[[AppleInsider]]}}</ref>
+
+Originally at launch, the Apple Watch was marketed through 3 "collections", with the case made out of different materials:
+* Apple Watch Sport (Aluminium case)
+* Apple Watch (Stainless steel case)
+* Apple Watch Edition (Originally released as an 18kt gold casing with newer materials in later models)
+Since Series 2, Apple dropped the "Sport" moniker from the branding (apart from the sport bands). "Apple Watch Edition" branding still exists.<ref>https://www.imore.com/apple-watch-series-2-unboxing</ref>
+
+The Series 4 and Series 5 have been made available two sizes, {{convert|40|mm|in|abbr=on}} and {{convert|44|mm|in|abbr=on}}, replacing the {{convert|38|mm|in|abbr=on}} and {{convert|42|mm|in|abbr=on}} sizes of the original, Series 2, and Series 3 models.<ref name=Etienne>{{cite web |url=https://www.theverge.com/2018/9/12/17852388/apple-watch-series-4-dimensions-size-0-comparison-thick-iphone-event-2018 |title=Apple Watch Series 4 is thinner than previous models but bulkier than the original |last=Etienne |first=Stefan |website=[[The Verge]] |date=September 12, 2018 |access-date=September 28, 2019}}</ref><ref name=Wuerthele>{{cite web |url=https://appleinsider.com/articles/19/09/25/review-the-apple-watch-series-5-leaves-the-competition-in-the-dust |title=Review: The Apple Watch Series 5 leaves the competition in the dust |last1=Wuerthele |first1=Mike |last2=O'Hara |first2=Andrew |website=[[AppleInsider]] |date=September 25, 2019 |access-date=September 29, 2019}}</ref> The design of the watch has not changed significantly since its release, so customizable bands and accessories are typically compatible with any Apple Watch of the same size, while {{convert|38|mm|in|abbr=on}} straps also fit {{convert|40|mm|in|abbr=on}} watches, and {{convert|42|mm|in|abbr=on}} straps fit {{convert|44|mm|in|abbr=on}} watches.<ref name=Steele>{{cite web |url=https://www.pcmag.com/feature/364073/the-best-apple-watch-bands |last=Steele |first=Chandra |title=The Best Apple Watch Bands |date=October 2, 2018 |access-date=September 28, 2019 |website=[[PCMag]]}}</ref> The casing of the watch includes a mechanism to enable the straps to be interchangeable.
+
+For input, the watch includes a "digital [[watch#Handedness|crown]]", which can be turned to scroll or zoom and pressed to return to the home screen, and a [[touchscreen]] that features [[Force Touch]] technology, which makes it pressure-sensitive and capable of distinguishing between a tap and a press.<ref name="ars-review" /> The watch also has a side button which can be used to display recently used apps and access [[Apple Pay]].<ref name=theverge2 /> Apple rates the device's battery for 18 hours of mixed usage.<ref name="ars-review"/><ref>{{cite web|url=http://www.humavox.com/blog/wearable-month-apple-watch/|title=Wearable of the Month: The Apple Watch|date=October 29, 2015|work=[[Humavox]]}}</ref> Apple Watch is charged by means of [[inductive charging]], using a cable similar to the [[MagSafe (Mac)|MagSafe]] cable from Apple's [[MacBook family]] of laptops.<ref name=theverge /> If the watch's battery depletes to less than 10 percent, the user is alerted and offered to enable a "power reserve" mode, which allows the user to continue to read the time for an additional 72 hours. The watch then reverts to its original mode when recharged.<ref>{{cite web|url=https://www.apple.com/au/watch/battery.html|title=General Battery Information|publisher=[[Apple Inc.]]|access-date=April 11, 2015}}</ref>
+
+Apple did not explicitly market the first generation Apple Watch as being [[waterproof]], stating that it can withstand splashes of water (such as rain and hand washing), but does not recommend submersion ([[IP code|IPX7]]). Apple introduced a higher level of water resistance with the release of the Apple Watch Series 2, and the device was explicitly advertised as being suitable for swimming and surfing.<ref name="apple" />
+
+===Bands===
+Apple Watch comes with an included band (strap) to attach it to the user's wrist, which can be easily changed to other types. Third party bands are compatible with Apple Watch, however Apple produces bands in a variety of materials and colours which are updated each season. The most recent update to the colours occurred in March 2020. Bands designed for the 38mm and 42mm cases are completely compatible with the 40mm and 44mm cases respectively.
+
+Starting with Apple Watch Series 5, Apple introduced the Apple Watch Studio which allows customers to mix and match bands, eliminating the need to purchase a specific combination and allows for a simplification of packaging (since Series 4).
+
+====Sport band====
+Originally designed to be shipped exclusively with the original Apple Watch Sport, the sport band is made of fluoroelastomer with a pin‑and‑tuck closure. Made for an active lifestyle and for its durability, it was originally available in five colours including green, yellow, pink, white. A black colour was also produced which only shipped with the space grey case. The sport band can be purchased in 2 different sizes, S/M and M/L.
+
+====Classic Buckle====
+A leather strap which is reminiscent of traditional wrist watch straps including a metal buckle and fastener, available in a range of colours including black and brown.
+
+====Modern Buckle====
+A leather band which uses a quick release mechanism to attach the strap to the wrist and is designed to wrap symmetrically around the wrist.
+
+====Leather loop====
+Made from Venezia leather, the quilted fit of the strap, which has a series of hidden magnets in it, allows it to be infinitely adjustable. The strap is designed to attach to itself in a loop fashion and can be worn snug to the user's wrist.
+
+====Milanese loop====
+Reminiscent of mesh watch straps from more premium brands of watches, the Milanese loop is made of stainless steel with a magnetic fastener. It is infinitely adjustable making it suitable for a variety of wrist sizes.
+
+====Woven Nylon====
+Discontinued band which was similar to the 'classic buckle' band but made from nylon.
+
+====Sport loop====
+Introduced alongside the Apple Watch Series 3, the sport loop is made of nylon and features a hook and loop closure to secure the watch to the wrist. It is quick-fastening and designed for fitness as it is marketed as being breathable and lightweight. It is worn similarly to the leather and Milanese loop bands and is infinitely adjustable.
+
+====Link bracelet====
+The most expensive band available for purchase from Apple, the link bracelet mirrors high-end watch bands and includes a butterfly closure for fastening to the wrist. It contains more than 100 components and is made from the same [[stainless steel]] [[alloy]] as the Apple Watch case. For a larger fit, 6 additional links can be purchased separately, which can be installed using a simple release button.
+
+====Nike Sport Band and Sport Loop====
+The Nike Sport band is the signature band which ships with Apple Watch Nike Series 2 and later. It is made from fluoroelastomer, however it has compression-moulded perforations for breathability. The perforations often have a contrasting colour in them.
+
+Similar in fit and wear to the normal sport loop, the Nike sport loop bands contain a reflective thread which shimmers when light strikes it. Although both Nike bands are designed to complement the Nike Apple Watch, they can also be purchased separately.
+
+====Solo Loop and Braided Solo Loop====
+Announced alongside the Apple Watch Series 6 and Apple Watch SE, the Solo Loop and Braided Solo Loop have no buckles or clasps. Both loops, stated by Apple as being compatible with Series 4 and above plus Watch SE, come in 12 sizes and a variety of colors. However, only six of the sizes are compatible with all watches that are otherwise compatible—the three smallest sizes are incompatible with a 44 mm case, while the three largest are incompatible with a 40 mm case.
+
+===Hardware===
+====First generation====
+[[File:Apple S1 module.png|thumb|[[Apple S1]]|100px]]
+
+The first-generation Apple Watch,<ref>{{cite web | access-date=2020-02-18 | url=https://www.gadgetbridge.com/news/the-first-generation-of-the-oppo-watch-teased-to-come-with-apple-like-rectangular-dial/ | title=The first generation of the Oppo Watch teased, to come with Apple-like rectangular dial | date=2020-02-18 | language=en | website=gadgetbridge.com}}</ref> colloquially referred to as Series 0, uses the single-core [[Apple S1|S1]] [[system-on-chip]]. It does not have a built-in [[Global Positioning System|GPS]] chip, instead relying on a paired iPhone for location services. It uses a [[linear actuator]] called the "Taptic Engine" to provide [[haptic technology|haptic feedback]] when an alert or a notification is received, and is used for other purposes by certain apps.<ref name="ars-review" /> The watch is equipped with a built-in [[heart rate monitor|heart rate sensor]], which uses both [[infrared]] and visible-light [[light-emitting diode|LEDs]] and [[photodiodes]].<ref>{{citation|periodical=Apple Support|title=Your heart rate. What it means, and where on Apple Watch you’ll find it.|language=de|url=https://support.apple.com/en-us/HT204666|access-date=June 16, 2017
+}}</ref> All versions of the first-generation Apple Watch have 8&nbsp;[[gigabyte|GB]] of storage; the operating system allows the user to store up to 2&nbsp;GB of music and 75&nbsp;[[megabyte|MB]] of photos. When the Apple Watch is paired with an iPhone, all music on that iPhone is also available to be controlled and accessed from the Apple Watch.<ref>[http://9to5mac.com/tag/even-the-edition-has-8gb/ Apple Watch includes 8&nbsp;GB of storage, allows 2&nbsp;GB of music storage and 75 MB of photos]. Retrieved March 11, 2015.</ref> Software support for the first Apple Watch ended with watchOS 4.3.2.
+
+====Second generation (Series 1 and 2)====
+[[File:Apple S2 module.png|thumb|[[Apple S2]]|100px]]
+{{Main|Apple Watch Series 2}}
+
+The second generation has two models. The Series 1 has a variant of the dual-core [[Apple S2]] processor with GPS removed, known as the [[Apple S1P]]. It has a lower starting price than first generation watches.<ref name="appleWatchCompareArchived">{{cite web|url=https://www.apple.com/watch/compare/|website=Apple|title=Apple Watch – Compare|access-date=September 16, 2016|archive-url=https://web.archive.org/web/20170712183811/https://www.apple.com/watch/compare/|archive-date=July 12, 2017|url-status=bot: unknown}}[[Archive.org]] link:</ref> The Series 2 has the dual-core [[Apple S2]] processor, water resistance to 50&nbsp;meters, a display twice as bright, and a GPS receiver.<ref name="appleWatchCompareArchived" /><ref name="apple">{{cite web|url=https://www.apple.com/mz/newsroom/2016/09/07Apple-Introduces-Apple-Watch-Series-2-The-Ultimate-Device-For-A-Healthy-Life/ |publisher=apple.com|title=Apple Introduces Apple Watch Series 2, The Ultimate Device For A Healthy Life|access-date=September 11, 2016}}</ref> Software support for the Series 1 and Series 2 Apple Watch ended with watchOS 6.2.8 and then 6.2.9.
+
+====Third generation (Series 3)====
+[[File:Apple S3 module.png|thumb|[[Apple S3]]|100px]]
+{{main|Apple Watch Series 3}}
+
+The third generation of the Apple Watch features a faster processor, the dual-core [[Apple S3|S3]], [[Bluetooth 4.2]] (compared to 4.0 on older models), a built-in altimeter for measuring flights of stairs climbed, increased RAM size, and is available in a variant with [[LTE (telecommunication)|LTE]] cellular connectivity. Siri is able to speak on Apple Watch Series 3 due to the increased processing speed of the Watch.<ref>{{cite news|last1=Stern|first1=Joanna|title=Apple Watch Series 3 Review: Untethered... and Unreliable|url=https://www.wsj.com/articles/apple-watch-series-3-review-untethered-and-unreliable-1505905203|access-date=September 22, 2017|work=Wall Street Journal|date=September 20, 2017}}</ref>
+
+====Fourth generation (Series 4)====
+[[File:Apple S4 module.png|thumb|[[Apple S4]]|100px]]
+{{Main|Apple Watch Series 4}}
+
+The fourth generation Apple Watch<ref>{{Cite news|url=https://www.apple.com/newsroom/2018/09/redesigned-apple-watch-series-4-revolutionizes-communication-fitness-and-health/|title=Apple Watch Series 4: Beautifully redesigned with breakthrough communication, fitness and health capabilities.|work=[[Apple Inc.]]|access-date=September 12, 2018}}</ref> was announced in 2018. It features larger displays with thinner bezels and rounded corners, a slightly rounder, thinner chassis with a redesigned ceramic back, a new [[Apple S4|S4]] 64-bit dual-core processor capable of up to double the S3's performance, upgraded 16 GB storage,  new options for watch face customization, and a new electrical heart sensor which works by measuring the potential difference between the wrist and a finger from the opposing hand into the S4 Module over 30 seconds. The [[electrocardiography|ECG]] system has received clearance from the United States [[Food and Drug Administration]], a first ever for a consumer device,<ref>{{Cite news|url=https://9to5mac.com/2018/09/12/apple-watch-ecg/|title=Apple Watch now offers ECG, the first over-the-counter consumer device to do so|date=September 12, 2018|work=[[9to5Mac]]|access-date=November 18, 2018}}</ref> and is supported by the [[American Heart Association]].<ref>{{Cite news|url=https://www.wired.com/story/apple-watch-series-4/|title=Apple Watch's Update Adds Heart-Monitoring Capabilities|last=Goode|first=Lauren|date=September 12, 2018|work=[[Wired (magazine)|Wired]]|access-date=December 12, 2018|issn=1059-1028}}</ref> This device can also detect falls and will automatically contact emergency services unless the user cancels the outgoing call. The microphone was moved to the opposite side between the side button and the digital crown to improve call quality. Other changes include the digital crown incorporating haptic feedback with the Apple Haptic Engine and includes the new Apple-designed [[Apple W series|W3]] wireless chip.
+
+====Fifth generation (Series 5)====
+[[File:Apple S5 module.png|thumb|[[Apple S5]]|100px]]
+{{main|Apple Watch Series 5}}
+
+The fifth generation of the Apple Watch was revealed during the 2019 Apple Special Event. It includes an always-on display with energy-saving [[Low-temperature polycrystalline silicon|LTPO]] OLED screen and low-power screen driver capable of refresh rates as low as once per second. Additional new features include International Emergency Calling enabling emergency calls in over 150 countries, a more energy-efficient [[Apple Watch Series 5|S5]] processor, improved ambient light sensor, doubling of storage to 32 GB, and the addition of a [[magnetometer]], enabling a compass function. It also brought back the "Edition" tier, with a ceramic model absent from the previous generation, and a new titanium model which comes in two colors: natural and Space Black.<ref name=":1">{{Cite web|url=https://www.apple.com/apple-watch-edition/|title=Apple Watch Edition|website=[[Apple Inc.]]|access-date=2019-09-12}}</ref>
+
+====Sixth generation (Series 6 and SE)====
+[[File:Apple S6 module.png|thumb|[[Apple S6]]|100px]]
+{{main|Apple Watch Series 6|Apple Watch SE}}
+
+The sixth generation of the Apple Watch was revealed during the September 15, 2020 Time Flies Apple Event. Additional new features include a new S6 processor (that is up to 20% faster than the S4 and S5),<ref>{{Cite web|title=What did Apple Reveal during their September 2020 Keynote? We summarised.|url=https://techlunar.com/news/what-did-apple-reveal-during-their-september-2020-keynote-we-summarised|access-date=2020-09-26|website=www.techlunar.com|language=en}}</ref> a brighter always-on display, a blood oxygen app that works with a new in-watch sensor, an [[electrocardiogram]] app, a sleep monitoring app, and an always-on altimeter.<ref>{{Cite web|url=https://www.apple.com/apple-events/september-2020/ |title=Apple Event: September 15, 2020 |website=[[Apple Inc.]] |access-date=2020-09-15}}</ref> The S6 has an updated 3rd generation Optical Heart Rate Sensor. 
+
+The Apple Watch SE only uses the S5 processor, and does not have the ECG app and Blood Oxygen Sensor. Only comes with the 2nd generation Optical Hear Rate Sensor.
+
+==Software==
+Apple Watch runs [[watchOS]], whose interface is based around a home screen with circular app icons. The OS can be navigated using the touchscreen or the crown on the side of the watch.<ref name="ars-review"/> During its debut, the first generation Apple Watch needed to be paired with an [[iPhone 5]] or later running [[iOS 8.2]] or later; this version of iOS introduced the Apple Watch app, which is used to pair the watch with an iPhone, customize settings and loaded apps, and highlight compatible apps from the App Store.<ref name="ars-review">{{cite web|title=Review: The absolutely optional Apple Watch and Watch OS 1.0|url=https://arstechnica.com/apple/2015/05/review-the-absolutely-optional-apple-watch-and-watch-os-1-0/|website=Ars Technica|access-date=July 15, 2015}}</ref>
+
+The Apple Watch is capable of receiving notifications, messages, and phone calls via a paired iPhone.<ref name="ars-review"/> "Glances" allowed users to swipe between pages containing [[software widget|widget-like]] displays of information; however, this feature was replaced by a new Control Center. watchOS also supports [[iOS 8#Continuity|Handoff]] to send content from Apple Watch to an iOS or macOS device,<ref name="ars-review"/> and act as a [[Electronic viewfinder|viewfinder]] for an iPhone camera,<ref name=theverge2>{{cite web|url=https://www.theverge.com/2014/9/9/6107091/apple-watch-iphone-6-most-important-things|title=The Verge: The 15 most important announcements from the Apple Watch, iPhone 6 event|work=[[The Verge]]|publisher=[[Vox Media]]|date=September 9, 2014|access-date=September 10, 2014}}</ref> [[Siri]] is also available for voice commands, and is capable of responding with voice prompts on the Series 3 watches.<ref name="ars-review" /> Apple Watch also supports [[Apple Pay]], and enables its use with older iPhone models that do not contain [[near-field communication]] (NFC) support.<ref name="ars-review" />
+
+Apple Watch's default apps are designed to interact with their iOS counterparts, such as [[Apple Mail|Mail]], Phone, Calendar, [[iMessage|Messages]], [[Apple Maps|Maps]], Music, [[Photos (Apple)|Photos]], Reminders, Remote (which can control [[iTunes]] and [[Apple TV]]), Stocks, and [[Apple Wallet|Wallet]].<ref name="ars-review" /> Using the [[Activity (Apple)|Activity]] and Workout apps, a user can track their physical activity and send data back to the iPhone for use in its Health app and other [[HealthKit]]-enabled software.<ref name="ars-review" /> With watchOS 3, Reminders, Home, Find My Friends, Heart Rate, and Breathe were added to the stock apps.
+
+With the release of watchOS 4 and the Series 3 Apple Watch, iPhone 5 and iPhone 5c support was dropped, requiring users to use an [[iPhone 5s]] or later with iOS 11 or later to use watchOS 4. Apple Watches still running watchOS 3 or below remain compatible with the iPhone 5 and iPhone 5c. Further, watchOS 5 dropped support for the original (Series 0) Apple Watch.<ref>{{cite web |title=watchOS 5 Preview |url=https://www.apple.com/watchos-preview/ |website=[[Apple Inc.]] |access-date=June 14, 2018}}</ref> watchOS 6 requires iOS 13, and was the final version to support the Series 1 and Series 2 Apple Watch. watchOS 7 requires iOS 14.
+
+===Version history===
+{{See also|WatchOS#Version_history|l1=watchOS version history}}
+
+At [[WWDC]] 2015, Tim Cook announced watchOS 2.0; described by ''[[CNET]]'' as a "significant revamp", it included a new [[software development kit]] that allows more direct access to the device's hardware, new watch faces, the ability to reply to an e-mail, and other features.<ref>{{Cite web|title = Get ready for Apple Watch 2.0|url = https://www.cnet.com/news/get-ready-for-apple-watch-2-0/|website = [[CNET]]|access-date = June 10, 2015}}</ref> WatchOS 2.0 was released in September 2015.<ref>{{cite web|last1=Cunningham|first1=Andrew|title=After delay, Apple releases watchOS 2.0 to the public|url=https://arstechnica.com/apple/2015/09/after-delay-apple-releases-watchos-2-0-to-the-public/|website=[[Ars Technica]]|publisher=[[Condé Nast]]|access-date=September 21, 2015|date=September 21, 2015}}</ref> Following the software update, some users experienced issues with lag.<ref>{{Cite web|url=http://www.cultofmac.com/393831/why-im-cheating-on-my-apple-watch/|title=Why I’m cheating on my Apple Watch |website=Cult of Mac|access-date=March 13, 2016}}</ref>
+
+watchOS 3.0 was announced at WWDC 2016, with a priority on performance. Users are able to keep apps running in memory as well as receive background updates and refreshed information. Other updates include a new Dock invoked with the side button to replace the performance-laden Glances, an updated Control Center, and new reply options on Messages. Several new watch faces have also been added, including [[Minnie Mouse]], along with the ability to switch watch faces from the lock screen simply by swiping. A new feature called SOS allows users to hold the dock button to make a call to the local emergency line and pull up the user's Medical ID. Another feature is Activity Sharing, which allows sharing of workouts with friends and even sending their heartbeats to one another. A new app called Breathe guides users through breathing exercises throughout the day, with visuals and haptic feedback. It was made available to the public in September 2016.
+
+watchOS 3.1 was released to the public in October 2016, and watchOS 3.2 was released in March 2017.<ref>{{Cite web|url=https://9to5mac.com/2016/10/24/apple-releases-watchos-3-1-to-the-public-with-bug-fixes-update-through-iphone-watch-app/|title=Apple Releases watchOS 3.1 to the public with bug fixes, update through iPhone Watch app|website=[[9to5Mac]]|access-date=May 27, 2017}}</ref> Both updates added minor improvements and bug fixes.
+
+WatchOS 4.0 was announced at WWDC 2017 and released to the public in September 2017. WatchOS 4 features a proactive Siri watch face, personalized activity coaching, and an entirely redesigned music app. It also introduces [[Apple GymKit]], a technology platform to connect workouts with cardio equipment.
+
+WatchOS 4.3 was released in March 2018. It introduced support for Nightstand mode in portrait orientation. It brought back the ability for music playing on the iPhone to be controlled using the Music app on the Apple Watch and also enabled control of playback and volume on Apple's HomePod. Other new features included a new charging animation and a new app loading animation. Activity data was added to the Siri watch face, and the battery complication more accurately reports battery life.
+
+watchOS 5.0 was first shown to the public at the San Jose WWDC developer conference held by Apple. It introduced an instant watch-to-watch [[Walkie-Talkie (Apple)|walkie-talkie]] mode, all-new Podcasts app, raise-wrist-to-speak Siri, customizable Control Center, and the ability to access the notification center and control center from apps. Other features included support for WebKit to view web pages, six new watch faces, and new workout running features.<ref>{{Cite news|url=https://9to5mac.com/2018/09/17/watchos-5-features/|title=watchOS 5 for Apple Watch now available with Podcasts and Walkie-Talkie apps, much more|date=September 17, 2018|work=[[9to5Mac]]|access-date=November 18, 2018}}</ref> It was released to the public in September 2018.<ref>[https://www.cnet.com/news/apple-watch-4-rumors-launch-features-leaks-specs-price-release-date-reports-bigger-display/ Apple Watch Series 4 starts at $399, packs larger displays and EKG sensor - CNET<!-- Bot generated title -->]</ref>  On the newest release of watchOS beta the sleep feature was shown on screen, this would eliminate the need to use third-party apps.
+
+watchOS 6.0 was released to the public in September 2019. It introduced more native iOS apps such as voice memos, calculator, and a native watchOS app store. watchOS 6.0 also introduced new features such as the noise app that allows you to measure the sound around you in decibels, menstrual tracking, and new watch faces. Other features include Siri being able to tell users what music they are listening to, activity trends, and a new UI framework for developers.
+
+watchOS 7.0 was announced in 22 June 2020 at the WWDC, and released on September 16th, 2020; new functionalities include sleep tracking, additional watch faces, handwashing detection and new workouts such as dancing.<ref name="appleWatchOS7" />
+
+===Third-party apps===
+In watchOS 1, third-party [[WatchKit]] applications run in the background on the iPhone as an application extension while a set of native user interface resources are installed on Apple Watch.<ref name=ArsTechnica>{{cite web|last1=Cunningham|first1=Andrew|title=Apple releases WatchKit developer tools alongside first iOS 8.2 beta|url=https://arstechnica.com/apple/2014/11/apple-releases-watchkit-developer-tools-alongside-first-ios-8-2-beta/|website=[[Ars Technica]]|publisher=[[Condé Nast]]|access-date=May 15, 2015|date=November 18, 2014}}</ref> Thus, watchOS apps must be bundled within their respective iOS app, and are synced to the watch either manually, or automatically upon installation of the phone app.<ref name="ars-review"/> 
+
+With the release of watchOS 2, Apple made it mandatory for new watch apps to be developed with the watchOS 2 SDK from June 1, 2016 onwards; no third-party languages or SDKs can be used to develop apps.<ref>{{cite web|url=http://appleinsider.com/articles/16/04/22/apple-requires-all-new-watchos-apps-be-native-by-june-1|title=Apple requires all new watchOS apps be native by June 1|date=April 22, 2016|website=AppleInsider|access-date=May 15, 2017}}</ref> This allowed for developers to create native apps that are run on the watch itself, thus improving the responsiveness of third-party apps.
+
+In watchOS 5 and earlier, all watchOS apps are dependent apps - the watchOS app relies on an iOS companion app in order to function properly.<ref>{{cite web|title=Creating Independent watchOS Apps - Apple Developer Documentation|url=https://developer.apple.com/documentation/watchkit/creating_independent_watchos_apps#overview|website=Apple Developer|access-date=September 20, 2020}}</ref> However, in watchOS 6 or later, developers are able to create completely independent watchOS apps, and no longer require an app to be installed on the paired iPhone. This was assisted by the introduction of a separate App Store on the Apple Watch itself.<ref>{{cite web|last1=Abent|first1=Eric|url=https://www.slashgear.com/apple-watch-independent-apps-cut-out-the-iphone-03578919/|title=Apple Watch independent apps cut out the iPhone|date=June 3, 2019|website=SlashGear|access-date=September 20, 2020}}</ref>
+
+==Models==
+{{See also|List of iOS devices#Apple Watch}}
+
+[[File:AppleWatchAppleStore3.jpg|thumb|right|An Apple Store showcase with various Apple Watch models]]
+As of September 2020, seven generations and seven series of Apple Watch have been released.
+
+Apple Watch models have been divided into five "collections": Apple Watch (1st gen-present), Apple Watch Sport (1st gen), Apple Watch Nike+ (Series 2-present), Apple Watch [[Hermès]] (1st gen-Series 5, Series 6-present), and Apple Watch Edition (1st gen-Series 3, Series 5, Series 6-present). They are differentiated by combinations of cases, bands, and exclusive watch faces; Apple Watch comes with either aluminum or stainless steel cases, and various watch bands (only stainless steel was offered for Apple Watch 1st gen); Apple Watch Sport came with aluminum cases and sport bands or woven nylon bands; Apple Watch Nike+ comes with aluminum cases and Nike sport bands or sport loops; Apple Watch [[Hermès]] uses stainless steel cases and Hermès leather watch bands (also included is an exclusive Hermès orange sport band); and Apple Watch Edition came with ceramic cases and various bands (the 1st gen Apple Watch Edition used 18&nbsp;karat yellow or rose gold).<ref>{{cite web|url=https://www.phonearena.com/news/Apple-Watch-Edition-price-to-start-at-5000_id60775|title=Apple Watch: 18-Karat Gold Premium Smartwatch Edition To Be Priced At $5000|date=September 17, 2014}}</ref> With the Series 5, the Edition tier was expanded with a new titanium case.<ref name=":1" />
+
+Apple Watch Series 1 models were previously only available with aluminum cases and sport bands.<ref>{{Cite web|url=https://www.apple.com/shop/buy-watch/apple-watch-series-1|title=Buy Apple Watch Series 1 |website=apple.com|access-date=October 15, 2016}}</ref>
+
+As of Series 3, each Apple Watch model in aluminum, the least expensive casing, is available either with or without [[LTE (telecommunications)|LTE]] [[cellular connectivity]], while the models with the other casing materials available (stainless steel and sometimes ceramic and titanium) always include it.<ref name=Gil>{{cite web |url=https://www.imore.com/apple-watch-cellular-vs-gps-whats-difference |title=Apple Watch Cellular vs GPS: What's the difference? |website=[[iMore]] |date=September 15, 2020 |last=Gil |first=Lory |access-date=September 19, 2020}}</ref><ref name=Song2019>{{cite news |url=https://www.pcmag.com/reviews/apple-watch-series-3 |title=Apple Watch Series 3 Review |last=Song |first=Victoria |date=October 16, 2019 |access-date=September 19, 2020 |website=[[PCMag.com]]}}</ref>
+
+Each model through Series 3 comes in a 38- or 42-millimeter body, with the larger size having a slightly larger screen and battery.<ref name="ars-review" /> The Series 4 has been updated to 40- and 44-millimeter models, respectively. Each model has various color and band options. Featured Apple-made bands include colored sport bands, sport loop, woven nylon band, classic buckle, modern buckle, leather loop, Milanese loop, and a link bracelet.<ref name="ars-review" />
+
+== Comparison of models ==
+
+{| class="wikitable"
+!Legend:
+|{{legend2|silver|{{abbr|Discontinued and unsupported|Device is discontinued and no longer sold}}|border=1px solid #AAAAAA}}
+|{{legend2|#f8eaba|{{abbr|Discontinued, but still supported	|Discontinued older device versions, not currently being sold but still supported.}}|border=1px solid #AAAAAA}}
+|{{legend2|#a4f4a4|{{abbr|Current|Current versions of devices being sold.}}|border=1px solid #AAAAAA}}
+|}
+
+{| class="wikitable mw-collapsible" style="text-align:center; font-size:90%;"
+!Specification<ref name="appleWatchCompare">{{cite web|url=https://www.apple.com/watch/compare/|title=Apple Watch – Compare|website=Apple|access-date=March 5, 2018}}</ref>
+! style="background:silver;" |1st generation (Series 0)<ref name="appleWatch0TS">{{cite web|url=https://support.apple.com/kb/SP735|title=Apple Watch (1st generation) - Technical Specifications|website=support.apple.com}}</ref>
+! style="background:silver;" |2nd generation (Series&nbsp;1)<ref name="appleWatchCompareArchived" />
+! style="background:silver;" |2nd generation (Series&nbsp;2)<ref name="appleWatchCompareArchived" />
+! style="background:#a4f4a4;" |3rd generation (Series&nbsp;3)<ref name="appleWatch3TS">{{cite web|url=https://support.apple.com/kb/SP766|title=Apple Watch Series 3 - Technical Specifications|website=support.apple.com}}</ref><ref name="appleWatchCompare" />
+! style="background:#f8eaba;" |4th generation (Series 4)<ref>{{Cite web|url=https://www.apple.com/watch/compare/|title=Apple Watch - Compare Models|website=Apple|access-date=September 13, 2018}}</ref>
+! style="background:#f8eaba;" |5th generation (Series 5)<ref name=":2">{{Cite web|url=https://www.apple.com/watch/compare/|title=Apple Watch - Compare Models|website=Apple|access-date=2019-09-12}}</ref>
+!style="background:#a4f4a4;" |6th generation (SE)
+!style="background:#a4f4a4;" |6th generation (Series 6)
+|-
+!System on chip (SoC)<ref name="appleWatchCompare" />
+|[[Apple S1]]<ref name="appleWatch0TS" />
+|[[Apple_S1#S1P|Apple S1P]]<ref name="appleWatchCompareArchived" />
+|[[Apple S2]]<ref name="appleWatchCompareArchived" />
+|[[Apple S3]]<ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+|[[Apple S4]]<ref name="appleWatchCompare" />
+| colspan="2" |[[Apple S5]]<ref name=":2" />
+|[[Apple S6]]
+|-
+!Satellite Navigation<ref name="appleWatchCompare" />
+| colspan="2" |No<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" />
+|[[Global Positioning System]] (GPS) and [[GLONASS]]<ref name="appleWatchCompareArchived" />
+| colspan="5" |[[Global Positioning System]] (GPS), [[GLONASS]], [[Galileo (satellite navigation)|Galileo]], and [[Quasi-Zenith Satellite System|QZSS]]<ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+|-
+!Cellular ([[LTE (telecommunication)|LTE]] / [[UMTS]])<ref name="appleWatchCompare" />
+| colspan="3" |No<ref name="appleWatch0TS" /><ref name="appleWatchCompare" /><ref name="appleWatchCompareArchived" />
+| colspan="5" |Optional ([[eSIM]])<ref name="appleWatch3TS" /><ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Water Resistant mark|Water resistance]]<ref name="appleWatchCompare" />
+| colspan="2" |[[IP Code|IPX7]] splash resistant (up to 1&nbsp;meter)<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" />
+| colspan="6" |[[International Organization for Standardization|ISO]] 22810:2010 water resistant (up to 50&nbsp;meters)<ref name="appleWatch3TS" /><ref name="appleWatchCompareArchived" /><ref name=":2" />
+|-
+!Wireless networking<ref name="appleWatchCompare" />
+| colspan="7" |[[Wi-Fi]] ([[802.11]] [[802.11b|b]]/[[802.11g|g]]/[[802.11n|n]] 2.4&nbsp;[[GHz]])<ref name="appleWatch0TS" /><ref name="appleWatch3TS" /><ref name="appleWatchCompareArchived" /><ref name=":2" />
+|Wi-Fi (802.11 b/g/n 2.4&nbsp;GHz & 5&nbsp;GHz)
+|-
+![[Bluetooth]]<ref name="appleWatchCompare" />
+| colspan="3" |[[Bluetooth 4.0]]<ref name="appleWatch0TS" /><ref name="appleWatchCompare" /><ref name="appleWatchCompareArchived" />
+|Bluetooth&nbsp;4.2<ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+| colspan="4" |Bluetooth 5.0<ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Ultra-wideband|Ultra Wideband]]
+| colspan="7" |No
+|U1 chip<ref>{{Cite web|title=Apple Watch - Compare Models|url=https://www.apple.com/watch/compare/|access-date=2020-09-15|website=Apple|language=en-US}}</ref>
+|-
+![[Heart rate monitor|Optical heart sensor]]<ref name="appleWatchCompare" />
+| colspan="8" |Yes<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" /><ref name="appleWatch3TS" /><ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Electrocardiography|Electrical heart sensor (ECG/EKG)]]<ref name="appleWatchCompare" />
+| colspan="4" |No<ref name="appleWatchCompare" />
+| colspan="2" |Yes<ref name="appleWatchCompare" /><ref name=":2" />
+|No
+|Yes<ref>{{Cite web|title=Apple Watch Comparison|url=https://www.superwatches.com/apple-watch-comparison/|access-date=2020-09-15|website=Superwatches|language=en-US}}</ref>
+|-
+![[Oxygen saturation (medicine)|Blood oxygen sensor]]<ref name="appleWatchCompare" />
+| colspan="7" |No<ref name="appleWatchCompare" />
+|Yes<ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Accelerometer]]<ref name="appleWatchCompare" />
+| colspan="4" |16g<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" /><ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+| colspan="4" |32g<ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Gyroscope]]<ref name="appleWatchCompare" />
+| colspan="4" |Yes<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" /><ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+| colspan="4" |Improved<ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Ambient light sensor]]<ref name="appleWatchCompare" />
+| colspan="8" |Yes<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" /><ref name="appleWatch3TS" /><ref name="appleWatchCompare" /><ref name=":2" />
+|-
+![[Altimeter]]<ref name="appleWatchCompare" />
+| colspan="3" |No<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" />
+| colspan="3" |Yes<ref name="appleWatch3TS" /><ref name="appleWatchCompare" /><ref name=":2" />
+| colspan="2" |Always on<ref name="appleWatch3TS" /><ref name="appleWatchCompare" /><ref name=":2" />
+|-
+!Compass
+| colspan="5" |No
+| colspan="3" |Yes<ref name="autogenerated1">{{Cite web|url=https://support.apple.com/kb/SP808?locale=en_US|title=Apple Watch Series 5 - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|-
+!"Siri Speaks" and "Raise to Speak"<ref>{{Cite web|url=https://support.apple.com/en-us/HT205184|title=Use Siri on your Apple Watch|website=Apple Support|language=en|access-date=2019-09-19}}</ref>
+| colspan="3" |No
+| colspan="5" |Yes
+|-
+!Display<ref name="appleWatchCompare" />
+| colspan="2" |[[OLED]] Retina display with [[Force Touch]] (450&nbsp;[[Nit (unit)|nits]])<ref name="appleWatch0TS" /><ref name="appleWatchCompareArchived" />
+| colspan="2" |Second-generation OLED Retina display with Force Touch (1000&nbsp;nits)<ref name="appleWatchCompareArchived" /><ref name="appleWatch3TS" /><ref name="appleWatchCompare" />
+|LTPO<ref name="OLED-infoLTPOBackplaneTech">{{cite web|url=https://www.oled-info.com/ltpo|title=LTPO backplane technology - introduction and news|date=February 10, 2019|website=OLED-info|publisher=Metalgrass Ltd.|access-date=February 27, 2019}}</ref> OLED Retina display with Force Touch (1000&nbsp;nits)<ref name="appleWatchCompare" />
+|LTPO OLED Always-on Retina display with Force Touch (1000 nits)<ref name=":2" />
+|LTPO<ref name="OLED-infoLTPOBackplaneTech" /> OLED Retina display (1000&nbsp;nits)<ref name="appleWatchCompare" />
+|LTPO OLED Always-on Retina display  (1000 nits)<ref name=":2" />
+|-
+!Pixel Density
+| colspan="8" |326 ppi
+|-
+! rowspan="2" |Display Size
+| colspan="4" |38mm (case height): 1.337in (diagonal) with 272x340 pixels<ref name="appleHigWatchDisplaySizes">{{Cite web|url=https://developer.apple.com/design/human-interface-guidelines/watchos/visual-design/display-sizes/|title=Display Sizes - Visual Design - watchOS - Human Interface Guidelines - Apple Developer|website=Apple|access-date=October 7, 2019}}</ref>
+| colspan="4" |40mm (case height): 1.533in (diagonal) with 324x394 pixels<ref name="appleHigWatchDisplaySizes" /> (viewable area reduced by rounded corners)
+|-
+| colspan="4" |42mm (case height): 1.566in (diagonal) with 312x390 pixels<ref name="appleHigWatchDisplaySizes" />
+| colspan="4" |44mm (case height): 1.780in (diagonal) with 368x448 pixels<ref name="appleHigWatchDisplaySizes" /> (viewable area reduced by rounded corners)
+|-
+![[Central Processing Unit]] (CPU)
+|520&nbsp;[[MHz]] 32-bit Single-Core<ref name="OriginalWatchTeardown" />
+| colspan="2" |520&nbsp;MHz 32-bit Dual-Core<ref>{{cite web|url=https://www.anandtech.com/show/10896/the-apple-watch-series-2-review|title= The Apple Watch Series 2 Review: Building Towards Maturity|first=Brandon|last=Chester|website=[[Anandtech]]|date=December 20, 2016}}</ref>
+|32-bit Dual-Core<ref name="appleWatchCompare" />
+| colspan="4" |64-bit Dual-Core<ref name="appleWatchCompare" /><ref name=":2" />
+|-
+!Storage
+| colspan="3" |8&nbsp;[[Gigabyte|GB]]<ref name="OriginalWatchTeardown" /><ref name="appleWatchCompare" />
+|'''Non-LTE''': 8&nbsp;GB<ref name="appleWatchCompare" /><br />'''LTE''': 16&nbsp;GB<ref name="appleWatchCompare" />
+|16&nbsp;GB<ref name="appleWatchCompare" />
+| colspan="3" |32 GB<ref name=":2" />
+|-
+![[Random Access Memory]] (RAM)
+| colspan="3" |512&nbsp;[[Megabyte|MB]] [[DRAM]]<ref name="OriginalWatchTeardown" /><ref name="Peckham" />
+|768&nbsp;MB DRAM<ref name=":0">{{Cite web|url=http://techinsights.com/about-techinsights/overview/blog/apple-watch-series-3-teardown/|title=Apple Watch Series 3 Teardown|last=www.techinsights.com|website=www.techinsights.com|access-date=March 5, 2018}}</ref>
+| colspan="2" |1&nbsp;GB (1024 MB) DRAM<ref name="Lanaria" />
+| colspan="2" | Unknown
+|-
+!OS Versions
+|[[watchOS]] 1.0 to 4.3.2<ref name="appleWatch0TS" />
+| colspan="2" |watchOS 3.0 to 6.2.9<ref name="appleWatchOS5">{{cite web|url=https://www.apple.com/watchos/watchos-preview/|title=watchOS 6 compatibility}}</ref>
+|watchOS 4.0 to 7.1<ref name="appleWatchOS7">{{cite web |title=watchOS 7 adds significant personalization, health, and fitness features to Apple Watch |url=https://www.apple.com/newsroom/2020/06/watchos-7-adds-significant-personalization-health-and-fitness-features-to-apple-watch/ |website=Apple Newsroom |access-date=22 June 2020}}</ref>
+|watchOS 5.0 to 7.1<ref name="appleWatchOS7" />
+|watchOS 6.0 to 7.1<ref name="appleWatchOS7" />
+| colspan="2" |watchOS 7.0 to 7.1
+|-
+!Requires{{ref|A|[A]}}
+|[[iPhone 5]] or later running [[iOS 8.2]] or later<ref name="appleWatch0TS" />
+| colspan="2" |iPhone 5 or later running [[iOS 10]] or later<ref name="applePR_AWS2">{{cite web|url=https://www.apple.com/newsroom/2016/09/apple-introduces-apple-watch-series-2.html|title=Apple introduces Apple Watch Series 2}}</ref>
+|'''Non-LTE''': [[iPhone 5S]] or later running [[iOS 11]] or later<ref name="appleWatch3TS" /><br />'''LTE''': [[iPhone 6]] or later, running iOS 11 or later<ref name="appleWatch3TS" />
+|'''Non-LTE''': [[iPhone 5S]] or later running [[iOS 12]] or later<ref name="appleWatch4TS" /><br />'''LTE''': [[iPhone 6]] or later, running iOS 12 or later<ref name="appleWatchCompare" />
+|[[IPhone 6S|iPhone 6s]] or later, running [[iOS 13]] or later
+| colspan="2" |iPhone 6s or later with iOS 14 or later
+|-
+!Battery
+| colspan="2" |205&nbsp;[[MAh|mA·h]], 3.8&nbsp;[[Volt|V]], 0.78&nbsp;[[Watt-hour|W·h]] battery capacity (38&nbsp;mm)<ref name="AnandTech"/>
+
+246&nbsp;mA·h, 3.78&nbsp;V, 0.93&nbsp;W·h battery capacity (42&nbsp;mm)<ref name="AnandTech"/>
+|273&nbsp;mA·h, 3.77&nbsp;V, 1.03&nbsp;W·h battery capacity (38&nbsp;mm)<ref name="Series2Battery38mm">{{cite web|url=https://www.ifixit.com/Teardown/Apple+Watch+Series+2+Teardown/67385|title=Apple Watch Series 2 Teardown - iFixit|access-date=20 September 2020}}</ref>
+
+334&nbsp;mA·h, 3.8&nbsp;V, 1.27&nbsp;W·h battery capacity (42&nbsp;mm)<ref name="Series2Battery42mm">{{cite web|url=https://store.ifixit.co.uk/products/apple-watch-42-mm-series-2-replacement-battery|title=Apple Watch (42 mm, Series 2) Replacement Battery – iFixit Store UK|access-date=20 September 2020}}</ref>
+|'''Non-LTE''': 262&nbsp;mA·h, 3.81&nbsp;V, 1.00&nbsp;W·h battery capacity (38&nbsp;mm)<ref name="Series3Battery38mmNonLTE">{{cite web|url=https://www.ifixit.com/Store/Smartwatch/Apple-Watch-38-mm-Series-3-GPS-Replacement-Battery/IF374-016?o=2|title=Apple Watch (38 mm Series 3 GPS) Replacement Battery - iFixit|access-date=8 October 2019}}</ref>
+
+342&nbsp;mA·h, 3.82&nbsp;V, 1.31&nbsp;W·h battery capacity (42&nbsp;mm)<ref name="Series3Battery42mmNonLTE">{{cite web|url=https://www.ifixit.com/Store/Smartwatch/Apple-Watch-42-mm-Series-3-GPS-Replacement-Battery/IF374-017?o=2|title=Apple Watch (42 mm Series 3 GPS) Replacement Battery - iFixit|access-date=8 October 2019}}</ref>
+
+'''LTE''': 279&nbsp;mA·h, 3.82&nbsp;V, 1.07&nbsp;W·h battery capacity (38&nbsp;mm)<ref name="Series3Battery38mmLTE">{{cite web|url=https://www.ifixit.com/Store/Smartwatch/Apple-Watch-38-mm-Series-3-Cellular-Replacement-Battery/IF374-014?o=2|title=Apple Watch (38 mm Series 3 Cellular) Replacement Battery - iFixit|access-date=8 October 2019}}</ref>
+
+352&nbsp;mA·h,&nbsp; 3.82&nbsp;V, 1.34&nbsp;W·h battery capacity (42&nbsp;mm)<ref name="Series3Battery42mmLTE">{{cite web|url=https://www.ifixit.com/Store/Smartwatch/Apple-Watch-42-mm-Series-3-Cellular-Replacement-Battery/IF374-015?o=2|title=Apple Watch (42 mm Series 3 Cellular) Replacement Battery - iFixit|access-date=8 October 2019}}</ref>
+|'''40&nbsp;mm''': 224.9&nbsp;mA·h, 3.81&nbsp;V, 0.858&nbsp;W·h battery capacity<ref name="LloydS5-40mm" />
+
+'''44&nbsp;mm''': 291.8&nbsp;mA·h, 3.81&nbsp;V, 1.113&nbsp;W·h battery capacity<ref name="IFixIt9-24-2018">{{cite web|url=https://www.ifixit.com/Teardown/Apple+Watch+Series+4+Teardown/113044|title=Apple Watch Series 4 Teardown|date=September 24, 2018|website=[[IFixIt]]|access-date=September 29, 2019}}</ref>
+|'''40&nbsp;mm''': 245&nbsp;mA·h, 3.85&nbsp;V, 0.944&nbsp;W·h battery capacity<ref name="LloydS5-40mm">{{cite web|url=https://www.ifixit.com/News/40mm-apple-watch-series-5-new-battery-design|title=The 40mm Apple Watch Series 5 Has a Radical New Battery Design|last=Lloyd|first=Craig|date=September 26, 2019|website=[[IFixIt]]|access-date=September 29, 2019}}</ref>
+
+'''44&nbsp;mm''': 296&nbsp;mA·h, 3.814&nbsp;V, 1.129&nbsp;W·h battery capacity<ref name="LloydS5-44mm">{{cite web|url=https://www.ifixit.com/News/apple-watch-series-5-teardown|title=Apple Watch Series 5 Teardown|last=Lloyd|first=Craig|date=September 25, 2019|website=[[IFixIt]]|access-date=September 29, 2019}}</ref>
+| Unknown
+|'''40&nbsp;mm''': 265.9&nbsp;mA·h, 3.85&nbsp;V, 1.024&nbsp;W·h battery capacity<ref name="watchS6-teardown">{{cite web|url=https://www.ifixit.com/Teardown/Apple+Watch+Series+6+Teardown/136694|title=Apple Watch Series 6 Teardown|last=Isakeit|first=Tobias|date=September 21, 2020|website=[[IFixIt]]|access-date=September 21, 2020}}</ref>
+
+'''44&nbsp;mm''': 303.8&nbsp;mA·h, 3.85&nbsp;V, 1.17&nbsp;W·h battery capacity<ref name="watchS6-teardown"/>
+|-
+!Charge Times
+| -
+| -
+| -
+|~1.5 hours to 80%
+
+~2 hours to 100%<ref name=":3">{{Cite web|date=2020-09-05|title=Apple Watch - Battery - Apple|url=https://web.archive.org/web/20200905063818/https://www.apple.com/watch/battery/|access-date=2020-09-15|website=web.archive.org}}</ref>
+| ~1.5 hours to 80%
+~2 hours to 100%<ref>{{Cite web|last=Demarest|first=Abigail Abesamis|title=How to charge your new Apple Watch, and how long it takes to fully charge|url=https://www.businessinsider.com/how-to-charge-apple-watch-how-long|access-date=2020-09-18|website=Business Insider}}</ref>
+|~1.5 hours to 80%
+~2.5 hours to 100%<ref name=":3" />
+|~1.5 hours to 80%
+
+~2.5 hours to 100%
+|~1 hour to 80%
+~1.5 hours to 100%<ref>{{Cite web|title=Apple Watch - Battery|url=https://www.apple.com/watch/battery/|access-date=2020-09-15|website=Apple|language=en-US}}</ref>
+|-
+!Weight
+|25g<ref>{{Cite web|url=https://support.apple.com/kb/SP736?locale=en_US|title=Apple Watch Sport (1st generation) - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref> to 69g<ref>{{Cite web|url=https://support.apple.com/kb/SP737?locale=en_US|title=Apple Watch Edition (1st generation) - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|25g to 30g <ref>{{Cite web|url=https://support.apple.com/kb/SP745?locale=en_US|title=Apple Watch Series 1 - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|28.2g to 52.4g <ref>{{Cite web|url=https://support.apple.com/kb/SP746?locale=en_US|title=Apple Watch Series 2 - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|26.7g to 52.8g <ref>{{Cite web|url=https://support.apple.com/kb/SP766?locale=en_US|title=Apple Watch Series 3 - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|30.1g to 47.9g <ref>{{Cite web|url=https://support.apple.com/kb/SP778?locale=en_US|title=Apple Watch Series 4 - Technical Specifications|website=support.apple.com|access-date=2019-09-19}}</ref>
+|30.8g to 47.8g <ref name="autogenerated1" />
+|30.49g to 36.36g <ref>{{Cite web|url=https://support.apple.com/kb/SP827?locale=en_US|title=Apple Watch SE - Technical Specifications|website=support.apple.com|access-date=2020-09-15}}</ref>
+|30.5g to 47.1g <ref>{{Cite web|url=https://support.apple.com/kb/SP826?locale=en_US|title=Apple Watch Series 6 - Technical Specifications|website=support.apple.com|access-date=2020-09-15}}</ref>
+|-
+!Greenhouse Gas Emissions
+|50&nbsp;kg [[Carbon dioxide equivalent|CO<sub>2</sub>e]]<ref>{{Cite web|url=https://images.apple.com/environment/pdf/products/watch/AppleWatch_PER_sept2015.pdf|title=Apple Watch Environmental Report|date=September 2015|website=Apple and the Environment|publisher=Apple Inc.|url-status=dead|archive-url=https://web.archive.org/web/20160317015212/http://images.apple.com/environment/pdf/products/watch/AppleWatch_PER_sept2015.pdf|archive-date=March 17, 2016|access-date=March 29, 2016}}</ref>
+|20&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://images.apple.com/environment/pdf/products/watch/Apple_Watch_Series1_PER_sept2016.pdf|title=Apple Watch Series 1 Environmental Report}}</ref>
+|30&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://images.apple.com/environment/pdf/products/watch/Apple_Watch_Series2_PER_sept2016.pdf|title=Apple Watch Series 2 Environmental Report}}</ref>
+|'''Non-LTE''': 28&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://images.apple.com/environment/pdf/products/watch/Apple_Watch_Series3_GPS_PER_sept2017.pdf|title=Apple Watch Series 3 (GPS) Environmental Report|date=September 2017|access-date=October 24, 2017}}</ref>
+
+'''LTE''': 36&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://images.apple.com/environment/pdf/products/watch/Apple_Watch_Series3_GPSCellular_PER_sept2017.pdf|title=Apple Watch Series 3  (GPS + Cellular) Environmental Report|date=September 2017|access-date=October 24, 2017}}</ref>
+|'''Non-LTE:''' 38&nbsp;kg CO<sub>2</sub>e<ref>{{Cite journal|date=September 12, 2018|title=Apple Watch Series 4 (GPS) Environmental Report|url=https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series4_GPS_PER_sept2018.pdf|journal=Apple Environmental Status Report}}</ref>
+
+'''LTE:''' 39&nbsp;kg CO<sub>2</sub>e<ref>{{Cite journal|date=September 12, 2018|title=Apple Watch Series 4 (GPS + Cellular) Environmental Report|url=https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series4_GPSCellular_PER_sept2018.pdf|journal=Apple Environmental Status Report}}</ref>
+|'''All:''' 40&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series5_PER_sept2019.pdf|title=Apple Watch Series 5 Product Environmental Report|date=September 10, 2019|website=Apple|access-date=September 12, 2019}}</ref>
+|'''All:''' 35&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://www.apple.com/environment/pdf/products/watch/Apple_Watch_SE_PER_sept2020.pdf|title=Apple Watch SE Product Environmental Report|date=September 15, 2020|website=Apple|access-date=September 20, 2020}}</ref>
+|'''All:''' 36&nbsp;kg CO<sub>2</sub>e<ref>{{Cite web|url=https://www.apple.com/environment/pdf/products/watch/Apple_Watch_Series6_PER_sept2020.pdf|title=Apple Watch Series 6 Product Environmental Report|date=September 15, 2020|website=Apple|access-date=September 20, 2020}}</ref>
+|-
+!Introduced
+|April 2015
+|September 2016
+|September 2016
+|September 2017
+|September 2018
+|September 2019
+| colspan="2" |September 15, 2020
+|-
+!Discontinued
+|September 2016
+|September 2018
+|September 2017
+| In production
+|September 2019
+|September 2020
+| colspan="2" | In Production
+|-
+!Model Numbers<ref name="Identify">{{cite web|url=https://support.apple.com/en-us/HT204507|title=Identify your Apple Watch|date=September 19, 2019|website=[[support.apple.com]]|access-date=September 29, 2019}}</ref>
+|A1553 (38mm) A1554 (42mm)
+|A1802 (38mm) A1803 (42mm)
+|A1757 (38mm) A1758 (42mm)<br />'''Edition:''' A1816 (38mm) A1817 (42mm)
+|'''GPS:''' A1858 (38mm) A1859 (42mm)<br />'''GPS + Cellular:'''<br />Americas: A1860 (38mm) A1861 (42mm)<br />Europe and Asia Pacific: A1889 (38mm) A1891 (42mm)<br />China mainland: A1890 (38mm) A1892 (42mm)
+|'''GPS:''' A1977 (40mm) A1978 (44mm)<br />'''GPS + Cellular:'''<br />North America: A1975 (40mm) A1976 (44mm)<br />Europe, Asia Pacific, and China mainland: A2007 (40mm) A2008 (44mm)
+|'''GPS:''' A2092 (40mm), A2093 (44mm)<br />'''GPS + Cellular:'''<br />North America: A2094 (40mm) A2095 (44mm)<br />Europe, Asia Pacific, and China mainland: A2156 (40mm) A2157 (44mm)
+|'''GPS:''' A2351 (40mm), A2352 (44mm)<br />'''GPS + Cellular:'''<br />North America: A2353 (40mm) A2354 (44mm)<br />Europe, Asia Pacific, and China mainland: A2355 (40mm) A2356 (44mm)
+|'''GPS:''' A2291 (40mm), A2292 (44mm)<br />'''GPS + Cellular:'''<br />North America: A2293 (40mm) A2294 (44mm)<br />Europe, Asia Pacific, and China mainland: A2375 (40mm) A2376 (44mm)
+|-
+!FCC ID
+|BCG-E2870<ref>{{cite web|url=https://electric.garden/BCG-E2870?fccid|title=E2870 Apple Watch A1153 38mm (First Generation) by Apple|access-date=8 October 2019}}</ref> BCG-E2871<ref>{{cite web|url=https://electric.garden/BCG-E2871?fccid|title=E2871 Apple Watch A1154 42mm (First Generation) by Apple|access-date=8 October 2019}}</ref>
+|BCG-E3102<ref>{{cite web|url=https://electric.garden/BCG-E3102?fccid|title=E3102 Apple Watch Series 1 A1802 38mm by Apple|access-date=8 October 2019}}</ref> BCG-E3103<ref>{{cite web|url=https://electric.garden/BCG-E3103?fccid|title=E3103 Apple Watch Series 1 A1803 42mm by Apple|access-date=8 October 2019}}</ref>
+|BCG-E3104<ref>{{cite web|url=https://electric.garden/BCG-E3104?fccid|title=E3104 Apple Watch Series 2 A1757 & A1816 38mm by Apple|access-date=8 October 2019}}</ref> BCG-E3105<ref>{{cite web|url=https://electric.garden/BCG-E3105?fccid|title=E3105 Apple Watch Series 2 A1758 & A1817 42mm by Apple|access-date=8 October 2019}}</ref>
+|BCG-A1858<ref>{{cite web|url=https://electric.garden/BCG-A1858?fccid|title=A1858 Apple Watch Series 3 (Gps) 38mm by Apple|access-date=8 October 2019}}</ref> BCG-A1859<ref>{{cite web|url=https://electric.garden/BCG-A1859?fccid|title=A1859 Apple Watch Series 3 (Gps) 42mm by Apple|access-date=8 October 2019}}</ref> BCG-A1860<ref>{{cite web|url=https://electric.garden/BCG-A1860?fccid|title=A1860 Apple Watch Series 3 (Gps + Cellular) 38mm by Apple|access-date=8 October 2019}}</ref> BCG-A1861<ref>{{cite web|url=https://electric.garden/BCG-A1861?fccid|title=A1861 Apple Watch Series 3 (Gps + Cellular) 42mm by Apple|access-date=8 October 2019}}</ref> BCG-A1889<ref>{{cite web|url=https://electric.garden/BCG-A1889?fccid|title=A1889 Apple Watch Series 3 (Gps + Cellular) Global 38mm by Apple|access-date=8 October 2019}}</ref> BCG-A1891<ref>{{cite web|url=https://electric.garden/BCG-A1891?fccid|title=A1891 Apple Watch Series 3 (Gps + Cellular) Global 42mm by Apple|access-date=8 October 2019}}</ref> BCG-A1890<ref>{{cite web|url=https://electric.garden/BCG-A1890?fccid|title=A1890 Apple Watch Series 3 (Gps + Cellular) China 38mm by Apple|access-date=8 October 2019}}</ref> BCG-A1892<ref>{{cite web|url=https://electric.garden/BCG-A1892?fccid|title=A1892 Apple Watch Series 3 (Gps + Cellular) China 42mm by Apple|access-date=8 October 2019}}</ref>
+|BCG-A1977<ref>{{cite web|url=https://electric.garden/BCG-A1977?fccid|title=A1977 Apple Watch Series 4 (Gps) 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A1978<ref>{{cite web|url=https://electric.garden/BCG-A1978?fccid|title=A1978 Apple Watch Series 4 (Gps) 44mm by Apple|access-date=8 October 2019}}</ref> BCG-A1975<ref>{{cite web|url=https://electric.garden/BCG-A1975?fccid|title=A1975 Apple Watch Series 4 (Gps + Cellular) 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A1976<ref>{{cite web|url=https://electric.garden/BCG-A1976?fccid|title=A1976 Apple Watch Series 4 (Gps + Cellular) 44mm by Apple|access-date=8 October 2019}}</ref> BCG-A2007<ref>{{cite web|url=https://electric.garden/BCG-A2007?fccid|title=A2007 Apple Watch Series 4 (Gps + Cellular) Global 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A2008<ref>{{cite web|url=https://electric.garden/BCG-A2008?fccid|title=A2008 Apple Watch Series 4 (Gps + Cellular) Global 44mm by Apple|access-date=8 October 2019}}</ref>
+|BCG-A2092<ref>{{cite web|url=https://electric.garden/BCG-A2092?fccid|title=A2092 Apple Watch Series 5 (Gps) 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A2093<ref>{{cite web|url=https://electric.garden/BCG-A2093?fccid|title=A2093 Apple Watch Series 5 (Gps) 44mm by Apple|access-date=8 October 2019}}</ref> BCG-A2094<ref>{{cite web|url=https://electric.garden/BCG-A2094?fccid|title=A2094 Apple Watch Series 5 (Gps + Cellular) 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A2095<ref>{{cite web|url=https://electric.garden/BCG-A2095?fccid|title=A2095 Apple Watch Series 5 (Gps + Cellular) 44mm by Apple|access-date=8 October 2019}}</ref> BCG-A2156<ref>{{cite web|url=https://electric.garden/BCG-A2156?fccid|title=A2156 Apple Watch Series 5 (Gps + Cellular) Global 40mm by Apple|access-date=8 October 2019}}</ref> BCG-A2157<ref>{{cite web|url=https://electric.garden/BCG-A2157?fccid|title=A2157 Apple Watch Series 5 (Gps + Cellular) Global 44mm by Apple|access-date=8 October 2019}}</ref>
+|BCG-A2351<ref>{{cite web|url=https://electric.garden/BCG-A2351?fccid|title=A2351 Apple Watch SE (Gps) 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2352<ref>{{cite web|url=https://electric.garden/BCG-A2352?fccid|title=A2352 Apple Watch SE (Gps) 44mm by Apple|access-date=21 September 2020}}</ref> BCG-A2353<ref>{{cite web|url=https://electric.garden/BCG-A2353?fccid|title=A2353 Apple Watch SE (Gps + Cellular) 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2354<ref>{{cite web|url=https://electric.garden/BCG-A2354?fccid|title=A2354 Apple Watch SE (Gps + Cellular) 44mm by Apple|access-date=21 September 2020}}</ref> BCG-A2355<ref>{{cite web|url=https://electric.garden/BCG-A2355?fccid|title=A2355 Apple Watch SE (Gps + Cellular) Global 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2356<ref>{{cite web|url=https://electric.garden/BCG-A2356?fccid|title=A2356 Apple Watch SE (Gps + Cellular) Global 44mm by Apple|access-date=21 September 2020}}</ref>
+|BCG-A2291<ref>{{cite web|url=https://electric.garden/BCG-A2291?fccid|title=A2291 Apple Watch Series 6 (Gps) 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2292<ref>{{cite web|url=https://electric.garden/BCG-A2292?fccid|title=A2292 Apple Watch Series 6 (Gps) 44mm by Apple|access-date=21 September 2020}}</ref> BCG-A2293<ref>{{cite web|url=https://electric.garden/BCG-A2293?fccid|title=A2293 Apple Watch Series 6 (Gps + Cellular) 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2294<ref>{{cite web|url=https://electric.garden/BCG-A2294?fccid|title=A2294 Apple Watch Series 6 (Gps + Cellular) 44mm by Apple|access-date=21 September 2020}}</ref> BCG-A2375<ref>{{cite web|url=https://electric.garden/BCG-A2375?fccid|title=A2375 Apple Watch Series 6 (Gps + Cellular) Global 40mm by Apple|access-date=21 September 2020}}</ref> BCG-A2376<ref>{{cite web|url=https://electric.garden/BCG-A2376?fccid|title=A2157 Apple Watch Series 6 (Gps + Cellular) Global 44mm by Apple|access-date=21 September 2020}}</ref>
+|-
+!Launch price - base model (US)
+|$349
+|$269
+|$369
+|$329
+| colspan="2" |$399
+|$279
+|$399
+|}
+
+* <sup>{{note|A|[A]}}</sup> At time of original release.
+
+== Reception ==
+[[File:Apple store opens on iWatch day 2015 -06-10 jeh.jpg|thumb|An Apple Store opens its doors on the first day of sales of the Apple Watch.]]
+Following the announcement, initial impressions from technology and watch industry observers were varied; the watch was praised by some for its "design, potential capabilities and eventual usefulness",<ref name="Time-92914">{{cite web |url=http://time.com/3445265/apple-watch-predictions/ |title=Nobody Can Predict the Success of Apple's Watch Yet |last1=Bajarin |first1=Tim|author-link1=Tim Bajarin|date=September 29, 2014 |work=[[Time (magazine)|Time]] |access-date=April 2, 2015}}</ref> while others offered criticism of these same aspects.<ref name="Time-92914" /> Venture capitalist [[Marc Andreessen]] said he "can't wait" to try it,<ref name="CNET_10714">{{cite web |url=https://www.cnet.com/news/zuckerberg-is-worlds-best-ceo-twitter-the-eighth-wonder-says-marc-andreessen/ |title=Zuckerberg is world's best CEO, Twitter the eighth wonder, says Marc Andreessen |date=October 7, 2014 |work=[[CNET]] |access-date=October 14, 2014}}</ref> and [[Steve Jobs]]' biographer [[Walter Isaacson]] described it as "extremely cool" and an example of future technology that is "much more embedded into our lives".<ref name="Gizmodo-10614">{{cite web |url=https://gizmodo.com/walter-isaacson-talks-gamergate-apple-watch-and-his-1642877801 |title=Walter Isaacson Talks AI, Apple Watch, and His New Book The Innovators |last1=Shaban |first1=Hamza |date=October 6, 2014 |work=[[Gizmodo]] |access-date=October 14, 2014}}</ref> However, Evan Dashevsky of ''[[PC Magazine]]'' said it offered nothing new in terms of functionality compared to the [[Moto 360]], except the customizable vibration notifications.<ref name="PCmag article 1">{{cite web|url=https://www.pcmag.com/article2/0,2817,2468276,00.asp|title=There's Only One Reason to Buy an Apple Watch|website=[[PC Magazine]]|date=September 10, 2014|access-date=September 10, 2014}}</ref> In November 2014, Apple Watch was listed by ''Time'' as one of the 25 Best Inventions of 2014.<ref name=TimeInventions>{{cite web|title=The 25 Best Inventions of 2014|url=http://time.com/3594971/the-25-best-inventions-of-2014/|website=[[Time (magazine)|Time]]|access-date=January 21, 2015|date=November 20, 2014}}</ref>
+
+Initial reviews for the device have been generally positive with some caveats.<ref>{{cite web|url=http://m.smh.com.au/digital-life/wearables/apple-watch-reviews-very-positive-with-some-caveats-20150409-1mh4ef.html|title=Apple watch reviews very positive, with some caveats|last1=Biggs|first1=Tim|work=[[The Sydney Morning Herald]]|date=April 9, 2015|access-date=April 9, 2015}}</ref> Reviewers praised the watch's potential ability to integrate into everyday life and the overall design of the product, but noted issues of speed and price. Many reviewers described the watch as functional and convenient, while also noting failure to offer as much potential functionality as preceding smartphones. Farhad Manjoo of ''[[The New York Times]]'' mentioned the device's steep learning curve, stating it took him "three long, often confusing and frustrating days" to become accustomed to watchOS 1, but loved it thereafter.<ref name="NYT review">{{cite web|last1=Manjoo|first1=Farhad|title=Apple Watch Review: Bliss, but Only After a Steep Learning Curve|url=https://www.nytimes.com/2015/04/09/technology/personaltech/apple-watch-bliss-but-only-after-a-steep-learning-curve.html|website=[[The New York Times]]|access-date=April 25, 2015|date=April 8, 2015}}</ref> Some reviewers also compared it to competing products, such as [[Android Wear]] devices, and claimed "The Smartwatch Finally Makes Sense".<ref name="WSJ">{{cite web|url=https://www.wsj.com/articles/apple-watch-review-the-smartwatch-finally-makes-sense-1428494495|title=Apple Watch Review: The Smartwatch Finally Makes Sense|last1=Fowler|first1=Geoffrey|work=[[The Wall Street Journal]]|date=April 8, 2015|access-date=April 9, 2015}}</ref> Reviewers had mixed opinions on battery life though, with Geoffrey Fowler of ''[[The Wall Street Journal]]'' saying "the battery lives up to its all-day billing, but sometimes just barely,"<ref name="WSJ" /> and others compared it to the [[Samsung Gear 2]], which "strolls through three days of moderate usage."<ref>{{cite web|last1=Johnson|first1=Luke|title=Samsung Gear 2: Apps, Battery, Value and Verdict |url=http://www.trustedreviews.com/samsung-gear-2-review-apps-battery-value-and-verdict-page-3|website=[[Trusted Reviews]]|access-date=April 9, 2015|quote=It strolled through three days moderate usage, which is two full days longer than the Galaxy Gear, but's still short of what we would like to see on a wearable.}}</ref> Tim Bradshaw of the ''[[Financial Times]]'' used several applications over a period of days. He concluded that there is no "killer application" so far besides telling the time, which is the basic function of a wristwatch anyhow.<ref>Tim Bradshaw: Apple Watch. In: [[Financial Times]]. May 22, 2015, p. 10</ref><!--Does this add any value to the article at this point?-->
+
+When using the Apple Watch, some users have reported issues using the heart monitoring feature due to permanent skin conditions including [[tattoos]]. The Watch uses photoplethysmography technology (PPG) which utilizes the green LED lights to measure heart rates.<ref>{{Cite web|url=https://exist.io/blog/fitness-trackers-heart-rate/|title=How do fitness trackers measure your heart rate?|last=Cooper|first=Belle|date=February 21, 2016}}</ref> To gauge a user's heart rate, the watch flashes green light from the LEDs at the skin and records the amount of this light that is absorbed by the red pigment of the blood.<ref>{{Cite web|url=https://www.theguardian.com/technology/2015/apr/30/how-tattoogate-has-highlighted-a-wider-problem-with-wearables|title=How #tattoogate has highlighted a wider problem with wearables|last=Hern|first=Alex|date=April 30, 2015}}</ref> However, under certain circumstances the skin may not allow for the light absorption to be read properly and thus provide inaccurate results.<ref>{{Cite web|url=https://support.apple.com/en-us/HT204666 |title=Your heart rate. What it means, and where on Apple Watch you'll find it. |date=May 30, 2015 |website=[[Apple Inc.]] |access-date=August 19, 2015}}</ref>
+
+Some users have complained that the logo and text on the back of the Apple Watch Sport model, primarily the space gray version,<ref>{{cite web |url=http://appleinsider.com/articles/15/08/19/apple-watch-sport-owners-report-unexpected-rear-logo-damage-other-text-scratching-off |title=Apple Watch Sport owners report unexpected rear logo damage, other text scratching off |author=Roger Fingas}}</ref> can be easily worn off.<ref>{{cite web|title=Apple Watch Sport Users Complain That Lettering And Logo Are Wearing Off|url=http://consumerist.com/2015/08/20/apple-watch-sport-users-complain-that-lettering-and-logo-are-wearing-off/|website=[[Consumerist]]|access-date= August 20, 2015}}</ref>
+
+===Sales===
+Financial analysts offered early sales estimates from a few million to as many as 34.7 million in the first year.<ref>{{Cite web|title = Apple Watch sales to reach 36 million in first year, analyst predicts |url = https://www.cnet.com/news/apple-watch-sales-to-reach-36-million-over-first-12-months-predicts-analyst/|website = CNET|access-date = June 7, 2015}}</ref> [[Time (magazine)|''Time'']]{{'}}s [[Tim Bajarin]] summarized the breadth of reactions, writing that "there is not enough information yet to determine how this product will fare when it finally reaches the market next year".<ref name="Time-92914" />
+
+Owing to the inadequacy of materials, the Apple Watch's delivery was delayed from its initial pre-order release date of April 10, 2015.<ref>{{Cite web|title=Apple Watch delays may be due to faulty part|url=https://www.cnet.com/news/apple-watch-delays-may-be-due-to-faulty-taptic-engine/|author=Shara Tibkens|website=[[CNET]]|access-date=August 19, 2015}}</ref> As a result, only 22 percent of the pre-ordered Apple Watches were dispatched in the United States during the weekend after the release date.<ref>{{Cite web|title=Apple Watch may have shipped to only 22 percent of preorder buyers so far|url=https://www.cnet.com/news/apple-watch-may-have-shipped-to-only-22-percent-of-us-preorder-buyers/|author=Lance Whitney|website=[[CNET]]|access-date = August 19, 2015}}</ref> It is estimated Apple received almost one million Apple Watch pre-orders in the United States during the initial six hours of the pre-order period on April 10, 2015, after which it sold out and further orders would start delivering in June.<ref>{{cite web|url=http://qz.com/381791/apple-watch-pre-orders-were-1-million-in-the-us-on-its-first-day-a-shopping-data-firm-estimates/|title=Apple Watch pre-orders were 1 million in the US on its first day, a shopping data firm estimates|author=Dan Frommer|work=[[Quartz (publication)|Quartz]]|access-date=April 13, 2015}}</ref> A report later on by an analyst stated that Apple Watch was already a $10 billion business during its first year.<ref>{{Cite web|url=http://www.aboveavalon.com/notes/2016/6/29/apple-watch-is-already-a-10-billion-business|title=Apple Watch Is Already a $10 Billion Business|access-date=July 2, 2016}}</ref><ref>{{Cite web|url=http://www.thecrydsdaily.com/2016/07/apple-watch-is-colossal-10-billion.html|title=Apple Watch Is A Colossal $10 Billion Business After Just 1 Year In The Market|website=The Cryd's Daily|access-date=July 2, 2016}}</ref><ref>{{Cite web|url=http://fortune.com/2016/07/01/apple-watch-business/|title=Here's How Much the Apple Watch Business Is Worth|date=July 1, 2016|website=Fortune|access-date=July 2, 2016}}</ref>
+
+Apple has not disclosed any sales figures for the Apple Watch.<ref name="FortuneApr16">{{cite web|last1=Reisinger|first1=Ron|title=Apple Watch Sales Have Plummeted, Analyst Says|url=http://fortune.com/2016/04/21/apple-watch-sales-2/|website=[[Fortune (magazine)|Fortune]]|access-date=January 1, 2017}}</ref> An estimate by IDC states Apple shipped over 12 million units in 2015.<ref>{{cite web|last1=Nick|first1=Statt|title=Apple shipped 11.6 million Apple Watches last year, says IDC (Feb 24, 2016)|url=https://www.theverge.com/2016/2/24/11108312/wearable-market-growth-idc-report-2015|website=TheVerge.com|access-date=January 1, 2017}}</ref> In late 2016, a veteran of the Swiss watch industry said Apple sold about 20 million watches and had a market share of about 50 percent.<ref>{{cite news|title=Swiss watch sector set for smartwatch boom|url=http://uk.reuters.com/article/uk-swiss-watches-idUKKBN14L12A|access-date=January 1, 2017|agency=Reuters|date=January 1, 2017}}</ref>
+
+== Controversies ==
+In December 2019, Dr. Joseph Wiesel, a [[New York University]] cardiologist, sued Apple over allegations that the Apple Watch violates a patented method for detecting [[atrial fibrillation]]. Wiesel claimed he had shared details of the patent with Apple in September 2017, but the company refused to negotiate.<ref>{{Cite web|url=https://www.engadget.com/2019/12/29/new-york-doctor-sues-apple-over-irregular-heartbeat-detection/|title=New York doctor sues Apple over irregular heartbeat detection|website=Engadget|language=en|access-date=2019-12-29}}</ref><ref>{{Cite web|url=https://insidetechworld.com/featured/apple-sued-by-new-york-university-doctor-watch-heart-tech/|title=Apple Watch sued by NYU doctor over Heart Technology|website=InsideTechWorld|language=en|access-date=2019-12-31}}</ref>
+
+==See also==
+*[[List of iOS devices]]
+<!-- do not add competing products here; that is not the purpose of See Also on Wikipedia -->
+
+==Notes==
+{{notelist}}
+
+==References==
+<ref>{{Cite web|url=https://blog.google/products/maps/new-ways-get-around-google-maps-ios/#:~:text=Google%20Maps%20is%20now%20compatible,with%20the%20next%20iOS%20update|title=Enjoy Google Maps in Apple Car Play|website=Blog.google|language=en-US|access-date=August 10, 2020}}</ref>
+{{Reflist}}
+
+==External links==
+{{Commons category|Apple Watch}}
+*{{Official website|https://www.apple.com/watch|Apple Watch}} – official site
+
+{{iOS}}
+{{Apple}}
+{{Smartwatch}}
+
+[[Category:Apple Inc. hardware]]
+[[Category:Smartwatches]]
+[[Category:Wearable devices]]
+[[Category:Computer-related introductions in 2015]]

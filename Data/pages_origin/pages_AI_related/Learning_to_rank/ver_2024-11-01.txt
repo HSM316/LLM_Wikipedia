@@ -1,0 +1,420 @@
+{{short description|Use of machine learning to rank items}}
+{{Machine learning|Problems}}
+
+'''Learning to rank'''<ref name="liu">{{citation
+|author=Tie-Yan Liu
+|title=Learning to Rank for Information Retrieval
+|journal=Foundations and Trends in Information Retrieval
+|year=2009
+|isbn=978-1-60198-244-5
+|doi=10.1561/1500000016
+|pages=225–331
+|volume=3
+|issue=3
+}}. Slides from Tie-Yan Liu's talk at [[World Wide Web Conference|WWW]] 2009 conference are [http://wwwconference.org/www2009/pdf/T7A-LEARNING%20TO%20RANK%20TUTORIAL.pdf available online] {{Webarchive|url=https://web.archive.org/web/20170808044438/http://wwwconference.org/www2009/pdf/T7A-LEARNING%20TO%20RANK%20TUTORIAL.pdf |date=2017-08-08 }}</ref> or '''machine-learned ranking''' ('''MLR''') is the application of [[machine learning]], typically [[Supervised learning|supervised]], [[Semi-supervised learning|semi-supervised]] or [[reinforcement learning]], in the construction of [[ranking function|ranking models]] for [[information retrieval]] systems.<ref>[[Mehryar Mohri]], Afshin Rostamizadeh, Ameet Talwalkar (2012) ''Foundations of Machine Learning'', The
+MIT Press {{ISBN|9780262018258}}.</ref> [[Training data]] may, for example, consist of lists of items with some [[partial order]] specified between items in each list. This order is typically induced by giving a numerical or ordinal score or a binary judgment (e.g. "relevant" or "not relevant") for each item. The goal of constructing the ranking model is to rank new, unseen lists in a similar way to rankings in the training data.
+
+== Applications ==
+
+=== In information retrieval ===
+[[File:MLR-search-engine-example.svg|250px|thumb|A possible architecture of a machine-learned search engine]]
+Ranking is a central part of many [[information retrieval]] problems, such as [[document retrieval]], [[collaborative filtering]], [[sentiment analysis]], and [[online advertising]].
+
+A possible architecture of a machine-learned search engine is shown in the accompanying figure.
+
+Training data consists of queries and documents matching them together with the relevance degree of each match. It may be prepared manually by human ''assessors'' (or ''raters'', as [[Google]] calls them), who check results for some queries and determine [[Relevance (information retrieval)|relevance]] of each result. It is not feasible to check the relevance of all documents, and so typically a technique called pooling is used — only the top few documents, retrieved by some existing ranking models are checked. This technique may introduce selection bias. Alternatively, training data may be derived automatically by analyzing ''clickthrough logs'' (i.e. search results which got clicks from users),<ref name="Joachims2002">{{citation
+ | author=Joachims, T.
+ | journal=Proceedings of the ACM Conference on Knowledge Discovery and Data Mining
+ | url=http://www.cs.cornell.edu/people/tj/publications/joachims_02c.pdf
+ | title=Optimizing Search Engines using Clickthrough Data
+ | year=2002
+ | access-date=2009-11-11
+ | archive-date=2009-12-29
+ | archive-url=https://web.archive.org/web/20091229194717/http://www.cs.cornell.edu/people/tj/publications/joachims_02c.pdf
+ | url-status=live
+ }}</ref> ''query chains'',<ref>{{citation |author1=Joachims T. |author2=Radlinski F. |title=Query Chains: Learning to Rank from Implicit Feedback |url=http://radlinski.org/papers/Radlinski05QueryChains.pdf |year=2005 |journal=Proceedings of the ACM Conference on Knowledge Discovery and Data Mining |arxiv=cs/0605035 |bibcode=2006cs........5035R |access-date=2009-12-19 |archive-date=2011-07-27 |archive-url=https://web.archive.org/web/20110727195024/http://radlinski.org/papers/Radlinski05QueryChains.pdf |url-status=live }}</ref> or such search engines' features as Google's (since-replaced) [[Google SearchWiki|SearchWiki]]. Clickthrough logs can be biased by the tendency of users to click on the top search results on the assumption that they are already well-ranked.
+
+Training data is used by a learning algorithm to produce a ranking model which computes the relevance of documents for actual queries.
+
+Typically, users expect a search query to complete in a short time (such as a few hundred milliseconds for web search), which makes it impossible to evaluate a complex ranking model on each document in the corpus, and so a two-phase scheme is used.<ref>{{citation |author1=B. Cambazoglu |author2=H. Zaragoza |author3=O. Chapelle |author4=J. Chen |author5=C. Liao |author6=Z. Zheng |author7=J. Degenhardt. |title=Early exit optimizations for additive machine learned ranking systems |journal=WSDM '10: Proceedings of the Third ACM International Conference on Web Search and Data Mining, 2010. |url=http://olivier.chapelle.cc/pub/wsdm2010.pdf |access-date=2009-12-23 |archive-date=2019-08-28 |archive-url=https://web.archive.org/web/20190828063315/http://olivier.chapelle.cc/pub/wsdm2010.pdf |url-status=dead }}</ref> First, a small number of potentially relevant documents are identified using simpler retrieval models which permit fast query evaluation, such as the [[vector space model]], [[Standard Boolean model|Boolean model]], weighted AND,<ref>{{citation
+ | author1=Broder A.|author1-link=Andrei Broder
+ | author2=Carmel D.
+ | author3=Herscovici M.
+ | author4=Soffer A.|author4-link=Aya Soffer
+ | author5=Zien J.
+ |title=Proceedings of the twelfth international conference on Information and knowledge management
+ |chapter=Efficient query evaluation using a two-level retrieval process
+ | year=2003
+ | pages=426–434
+ | doi=10.1145/956863.956944
+ | isbn=978-1-58113-723-1
+ | s2cid=2432701
+ | url=http://cis.poly.edu/westlab/papers/cntdstrb/p426-broder.pdf
+ | access-date=2009-12-15
+ | archive-url=https://web.archive.org/web/20090521102038/http://cis.poly.edu/westlab/papers/cntdstrb/p426-broder.pdf
+ | archive-date=2009-05-21
+ | url-status=dead
+ }}</ref> or [[Okapi BM25|BM25]]. This phase is called ''top-<math>k</math> document retrieval'' and many heuristics were proposed in the literature to accelerate it, such as using a document's static quality score and tiered indexes.<ref name="manning-q-eval">{{citation
+ |author1=Manning C. |author2=Raghavan P. |author3=Schütze H. | title=Introduction to Information Retrieval
+ | publisher=Cambridge University Press
+ | year=2008}}. Section [http://nlp.stanford.edu/IR-book/html/htmledition/efficient-scoring-and-ranking-1.html 7.1] {{Webarchive|url=https://web.archive.org/web/20090719140459/http://nlp.stanford.edu/IR-book/html/htmledition/efficient-scoring-and-ranking-1.html |date=2009-07-19 }}</ref> In the second phase, a more accurate but computationally expensive machine-learned model is used to re-rank these documents.
+
+=== In other areas ===
+Learning to rank algorithms have been applied in areas other than information retrieval:
+* In [[machine translation]] for ranking a set of hypothesized translations;<ref name="Duh09">{{citation
+ | author=Kevin K. Duh
+ | title=Learning to Rank with {{sic|hide=y|Partially|-}}Labeled Data
+ | year=2009
+ | url=http://ssli.ee.washington.edu/people/duh/thesis/uwthesis.pdf
+ | access-date=2009-12-27
+ | archive-date=2011-07-20
+ | archive-url=https://web.archive.org/web/20110720112832/http://ssli.ee.washington.edu/people/duh/thesis/uwthesis.pdf
+ | url-status=live
+ }}</ref>
+* In [[computational biology]] for ranking candidate 3-D structures in protein structure prediction problems;<ref name="Duh09" />
+* In [[recommender system]]s for identifying a ranked list of related news articles to recommend to a user after he or she has read a current news article.<ref>Yuanhua Lv, Taesup Moon, Pranam Kolari, Zhaohui Zheng, Xuanhui Wang, and Yi Chang, [http://sifaka.cs.uiuc.edu/~ylv2/pub/www11-relatedness.pdf ''Learning to Model Relatedness for News Recommendation''] {{Webarchive|url=https://web.archive.org/web/20110827065356/http://sifaka.cs.uiuc.edu/~ylv2/pub/www11-relatedness.pdf |date=2011-08-27 }}, in International Conference on World Wide Web (WWW), 2011.</ref>
+
+== Feature vectors ==
+For the convenience of MLR algorithms, query-document pairs are usually represented by numerical vectors, which are called ''[[feature vector]]s''. Such an approach is sometimes called ''bag of features'' and is analogous to the [[bag of words]] model and [[vector space model]] used in information retrieval for representation of documents.
+
+Components of such vectors are called ''[[feature (machine learning)|feature]]s'', ''factors'' or ''ranking signals''. They may be divided into three groups (features from [[document retrieval]] are shown as examples):
+* ''Query-independent'' or ''static'' features — those features, which depend only on the document, but not on the query. For example, [[PageRank]] or document's length. Such features can be precomputed in off-line mode during indexing. They may be used to compute document's ''static quality score'' (or ''static rank''), which is often used to speed up search query evaluation.<ref name="manning-q-eval" /><ref>{{cite conference
+ | first=M.
+ | last=Richardson
+ | author2=Prakash, A.
+ | author3=Brill, E.
+ | title=Beyond PageRank: Machine Learning for Static Ranking
+ | book-title=Proceedings of the 15th International World Wide Web Conference
+ | pages=707–715
+ | year=2006
+ | url=http://research.microsoft.com/en-us/um/people/mattri/papers/www2006/staticrank.pdf
+ | conference=
+ | access-date=2009-11-18
+ | archive-date=2009-08-15
+ | archive-url=https://web.archive.org/web/20090815173829/http://research.microsoft.com/en-us/um/people/mattri/papers/www2006/staticrank.pdf
+ | url-status=live
+ }}</ref>
+* ''Query-dependent'' or ''dynamic'' features — those features, which depend both on the contents of the document and the query, such as [[TF-IDF]] score or other non-machine-learned ranking functions.
+* ''[[Query-level feature]]s'' or ''query features'', which depend only on the query. For example, the number of words in a query.
+
+Some examples of features, which were used in the well-known [https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/  LETOR] dataset:
+* TF, [[TF-IDF]], [[Okapi BM25|BM25]], and [[language modeling]] scores of document's [[Information retrieval|zone]]s (title, body, anchors text, URL) for a given query;
+* Lengths and [[Inverse document frequency|IDF]] sums of document's zones;
+* Document's [[PageRank]], [[HITS algorithm|HITS]] ranks and their variants.
+
+Selecting and designing good features is an important area in machine learning, which is called [[feature engineering]].
+
+== Evaluation measures ==
+{{main|Evaluation measures (information_retrieval)#Offline_metrics}}
+
+There are several measures (metrics) which are commonly used to judge how well an algorithm is doing on training data and to compare the performance of different MLR algorithms. Often a learning-to-rank problem is reformulated as an optimization problem with respect to one of these metrics.
+
+Examples of ranking quality measures:
+*[[Mean Average Precision|Mean average precision]] (MAP);
+* [[Discounted cumulative gain|DCG]] and [[Normalized discounted cumulative gain|NDCG]];
+* [[Precision (information retrieval)|Precision]]@''n'', NDCG@''n'', where "@''n''" denotes that the metrics are evaluated only on top ''n'' documents;
+* [[Mean reciprocal rank]];
+* [[Kendall's tau]];
+* [[Spearman's rank correlation coefficient|Spearman's rho]].
+
+DCG and its normalized variant NDCG are usually preferred in academic research when multiple levels of relevance are used.<ref>{{Cite web |url=http://www.stanford.edu/class/cs276/handouts/lecture15-learning-ranking.ppt |title=Archived copy |access-date=2009-12-14 |archive-date=2011-01-04 |archive-url=https://web.archive.org/web/20110104111500/http://www.stanford.edu/class/cs276/handouts/lecture15-learning-ranking.ppt |url-status=live }}</ref> Other metrics such as MAP, MRR and precision, are defined only for binary judgments.
+
+Recently, there have been proposed several new evaluation metrics which claim to model user's satisfaction with search results better than the DCG metric:
+* Expected reciprocal rank (ERR);<ref>{{citation
+|author1=Olivier Chapelle |author2=Donald Metzler |author3=Ya Zhang |author4=Pierre Grinspan |title=Expected Reciprocal Rank for Graded Relevance
+|url=http://research.yahoo.com/files/err.pdf |archive-url=https://web.archive.org/web/20120224053008/http://research.yahoo.com/files/err.pdf |url-status=dead |archive-date=2012-02-24 |journal=CIKM
+|year=2009
+}}</ref>
+* [[Yandex]]'s pfound.<ref>{{citation
+|author1=Gulin A.
+|author2=Karpovich P.
+|author3=Raskovalov D.
+|author4=Segalovich I.
+|title=Yandex at ROMIP'2009: optimization of ranking algorithms by machine learning methods
+|url=http://romip.ru/romip2009/15_yandex.pdf
+|journal=Proceedings of ROMIP'2009
+|year=2009
+|pages=163–168
+|access-date=2009-11-13
+|archive-date=2009-11-22
+|archive-url=https://web.archive.org/web/20091122074302/http://romip.ru/romip2009/15_yandex.pdf
+|url-status=live
+}} (in Russian)</ref>
+Both of these metrics are based on the assumption that the user is more likely to stop looking at search results after examining a more relevant document, than after a less relevant document.
+
+== Approaches ==
+{{Expand section|date=December 2009}}
+[[Tie-Yan Liu]] of Microsoft Research Asia has analyzed existing algorithms for learning to rank problems in his book ''Learning to Rank for Information Retrieval''.<ref name="liu" /> He categorized them into three groups by their input spaces, output spaces, hypothesis spaces (the core function of the model) and [[loss function]]s: the pointwise, pairwise, and listwise approach. In practice, listwise approaches often outperform pairwise approaches and pointwise approaches. This statement was further supported by a large scale experiment on the performance of different learning-to-rank methods on a large collection of benchmark data sets.<ref name="Tax2015">{{citation |author1=Tax, Niek |author2=Bockting, Sander |author3=Hiemstra, Djoerd |journal=Information Processing & Management |volume=51 |issue=6 |title=A cross-benchmark comparison of 87 learning to rank methods |pages=757–772 |year=2015 |url=http://wwwhome.cs.utwente.nl/~hiemstra/papers/ipm2015.pdf |doi=10.1016/j.ipm.2015.07.002 |s2cid=22782599 |access-date=2017-10-15 |archive-url=https://web.archive.org/web/20170809115827/http://wwwhome.cs.utwente.nl/~hiemstra/papers/ipm2015.pdf |archive-date=2017-08-09 |url-status=dead }}</ref>
+
+In this section, without further notice, <math>x</math> denotes an object to be evaluated, for example, a document or an image, <math>f(x)</math> denotes a single-value hypothesis, <math>h(\cdot)</math> denotes a bi-variate or multi-variate function and <math>L(\cdot)</math> denotes the loss function.
+
+=== Pointwise approach ===
+In this case, it is assumed that each query-document pair in the training data has a numerical or ordinal score. Then the learning-to-rank problem can be approximated by a regression problem — given a single query-document pair, predict its score. Formally speaking, the pointwise approach aims at learning a function <math>f(x)</math> predicting the real-value or ordinal score of a document <math>x</math> using the loss function <math>L(f; x_j, y_j)</math>.
+
+A number of existing [[Supervised learning|supervised]] machine learning algorithms can be readily used for this purpose. [[Ordinal regression]] and [[classification (machine learning)|classification]] algorithms can also be used in pointwise approach when they are used to predict the score of a single query-document pair, and it takes a small, finite number of values.
+
+=== Pairwise approach ===
+In this case, the learning-to-rank problem is approximated by a classification problem — learning a [[binary classifier]] <math>h(x_u, x_v)</math> that can tell which document is better in a given pair of documents. The classifier shall take two documents as its input and the goal is to minimize a loss function <math>L(h; x_u, x_v, y_{u,v})</math>. The loss function typically reflects the number and magnitude of [[Permutation#Inversions|inversions]] in the induced ranking.
+
+In many cases, the binary classifier <math>h(x_u, x_v)</math> is implemented with a scoring function <math>f(x)</math>. As an example, RankNet <ref>{{cite journal |last1=Burges |first1=Chris J. C. |last2=Shaked |first2=Tal |last3=Renshaw |first3=Erin |last4=Lazier |first4=Ari |last5=Deeds |first5=Matt |last6=Hamilton |first6=Nicole |last7=Hullender |first7=Greg |title=Learning to Rank using Gradient Descent |url=https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent |date=1 August 2005 |journal= |access-date=31 March 2021 |archive-date=26 February 2021 |archive-url=https://web.archive.org/web/20210226045904/https://www.microsoft.com/en-us/research/publication/learning-to-rank-using-gradient-descent/ |url-status=live }}</ref> adapts a probability model and defines <math>h(x_u, x_v)</math> as the estimated probability of the document <math>x_u</math> has higher quality than <math>x_v</math>:
+
+:<math>  P_{u, v}(f) = 
+  \text{CDF} (f(x_u) - f(x_v)),
+</math>
+where <math>\text{CDF}(\cdot)</math> is a [[cumulative distribution function]], for example, the [[Logistic distribution#Cumulative distribution function|standard logistic CDF]], i.e.
+:<math>
+  \text{CDF}(x)
+  =
+  \frac{
+    1
+  }{
+    1 + \exp\left[ - x \right]
+  }. 
+</math>
+
+=== Listwise approach ===
+These algorithms try to directly optimize the value of one of the above evaluation measures, averaged over all queries in the training data. This is often difficult in practice because most evaluation measures are not continuous functions with respect to ranking model's parameters, and so continuous approximations or bounds on evaluation measures have to be used. For example the SoftRank algorithm.<ref>Taylor, M.J., Guiver, J., Robertson, S.E., & Minka, T.P. (2008). SoftRank: optimizing non-smooth rank metrics. Web Search and Data Mining.</ref> LambdaMART is a pairwise algorithm which has been empirically shown to approximate listwise objective functions.<ref>{{Cite journal |last=Burges |first=Chris J. C. |date=2010-06-23 |title=From RankNet to LambdaRank to LambdaMART: An Overview |url=https://www.microsoft.com/en-us/research/publication/from-ranknet-to-lambdarank-to-lambdamart-an-overview/ |language=en-US}}</ref>
+
+=== List of methods ===
+A partial list of published learning-to-rank algorithms is shown below with years of first publication of each method:
+:{|class="wikitable sortable"
+! Year || Name || Type || Notes
+|-
+| 1989 || OPRF<ref name="Fuhr1989">{{citation
+ | last=Fuhr
+ | first=Norbert
+ | journal=ACM Transactions on Information Systems
+ | title=Optimum polynomial retrieval functions based on the probability ranking principle
+ | volume=7
+ | number=3
+ | pages=183–204 
+ | year=1989
+ | doi=10.1145/65943.65944
+| s2cid=16632383
+ | doi-access=free
+ }}</ref> || <span style="display:none">2</span>pointwise || Polynomial regression (instead of machine learning, this work refers to pattern recognition, but the idea is the same).
+|-
+| 1992 || SLR<ref name="Cooperetal1992">{{citation
+ |author1=Cooper, William S. |author2=Gey, Frederic C. |author3=Dabney, Daniel P. |title=Proceedings of the 15th annual international ACM SIGIR conference on Research and development in information retrieval - SIGIR '92 |chapter=Probabilistic retrieval based on staged logistic regression | pages=198–210 
+ | year=1992
+ | doi=10.1145/133160.133199
+|isbn=978-0897915236 |s2cid=125993 }}</ref>   || <span style="display:none">2</span>pointwise || Staged logistic regression.
+|-
+| 1994 || NMOpt<ref name="Bartelletal1994">{{citation |author1=Bartell, Brian T. |author2=Cottrell Garrison W. |author3=Belew, Richard K. |title=Sigir '94 |chapter=Automatic Combination of Multiple Ranked Retrieval Systems |pages=173–181 |year=1994 |doi=10.1007/978-1-4471-2099-5_18 |url=https://link.springer.com/chapter/10.1007/978-1-4471-2099-5_18 |isbn=978-0387198897 |s2cid=18606472 |access-date=2020-10-12 |archive-date=2018-06-13 |archive-url=https://web.archive.org/web/20180613203647/https://link.springer.com/chapter/10.1007%2F978-1-4471-2099-5_18 |url-status=live }}</ref>   || <span style="display:none">2</span>listwise || Non-Metric Optimization.
+|-
+| 1999 || [https://www.jstor.org/stable/2699986 MART] (Multiple Additive Regression Trees)<ref>{{Cite journal |last=Friedman |first=Jerome H. |date=2001 |title=Greedy Function Approximation: A Gradient Boosting Machine |url=https://www.jstor.org/stable/2699986 |journal=The Annals of Statistics |volume=29 |issue=5 |pages=1189–1232 |doi=10.1214/aos/1013203451 |jstor=2699986 |issn=0090-5364}}</ref>|| <span style="display:none">2</span>pairwise ||
+|-
+| 2000 || [http://web.archive.org/web/20140926033154/http://research.microsoft.com/apps/pubs/default.aspx?id=65610 Ranking SVM] (RankSVM) || <span style="display:none">2</span>pairwise ||  A more recent exposition is in,<ref name="Joachims2002" /> which describes an application to ranking using clickthrough logs.
+|-
+| 2001 || [https://proceedings.neurips.cc/paper_files/paper/2001/file/5531a5834816222280f20d1ef9e95f69-Paper.pdf Pranking]|| <span style="display:none">1</span>pointwise || Ordinal regression.
+|-
+| 2003 <!-- or 1998? --> || [http://jmlr.csail.mit.edu/papers/volume4/freund03a/freund03a.pdf RankBoost] || <span style="display:none">2</span>pairwise ||
+|-
+| 2005 || [https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf RankNet] || <span style="display:none">2</span>pairwise ||
+|-
+| 2006 || [https://dl.acm.org/doi/pdf/10.1145/1148170.1148205 IR-SVM]<ref>{{Cite book |last1=Cao |first1=Yunbo |last2=Xu |first2=Jun |last3=Liu |first3=Tie-Yan |last4=Li |first4=Hang |last5=Huang |first5=Yalou |last6=Hon |first6=Hsiao-Wuen |chapter=Adapting ranking SVM to document retrieval |date=2006-08-06 |title=Proceedings of the 29th annual international ACM SIGIR conference on Research and development in information retrieval |chapter-url=https://dl.acm.org/doi/10.1145/1148170.1148205 |series=SIGIR '06 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=186–193 |doi=10.1145/1148170.1148205 |isbn=978-1-59593-369-0}}</ref>|| <span style="display:none">2</span>pairwise || Ranking SVM with query-level normalization in the loss function.
+|-
+| 2006 || [https://proceedings.neurips.cc/paper_files/paper/2006/file/af44c4c56f385c43f2529f9b1b018f6a-Paper.pdf LambdaRank]|| pairwise/listwise || RankNet in which pairwise loss function is multiplied by the change in the IR metric caused by a swap.
+|-
+| 2007 || [https://dl.acm.org/doi/pdf/10.1145/1277741.1277809 AdaRank]<ref>{{Cite book |last1=Xu |first1=Jun |last2=Li |first2=Hang |chapter=AdaRank: A boosting algorithm for information retrieval |date=2007-07-23 |title=Proceedings of the 30th annual international ACM SIGIR conference on Research and development in information retrieval |chapter-url=https://dl.acm.org/doi/10.1145/1277741.1277809 |series=SIGIR '07 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=391–398 |doi=10.1145/1277741.1277809 |isbn=978-1-59593-597-7}}</ref>|| <span style="display:none">3</span>listwise ||
+|-
+| 2007 || [http://research.microsoft.com/apps/pubs/default.aspx?id=70364 FRank] || <span style="display:none">2</span>pairwise || Based on RankNet, uses a different loss function - fidelity loss.
+|-
+| 2007 || [http://www.cc.gatech.edu/~zha/papers/fp086-zheng.pdf GBRank] || <span style="display:none">2</span>pairwise ||
+|-
+| 2007 || [http://research.microsoft.com/apps/pubs/default.aspx?id=70428 ListNet] || <span style="display:none">3</span>listwise ||
+|-
+| 2007 || [http://research.microsoft.com/apps/pubs/default.aspx?id=68128 McRank] || <span style="display:none">1</span>pointwise ||
+|-
+| 2007 || [https://web.archive.org/web/20100807162456/http://www.stat.rutgers.edu/~tzhang/papers/nips07-ranking.pdf QBRank] || <span style="display:none">2</span>pairwise ||
+|-
+| 2007 || [http://web.archive.org/web/20110605102007/http://research.microsoft.com/en-us/people/hangli/qin_ipm_2008.pdf RankCosine]<ref>{{Cite journal |last1=Qin |first1=Tao |last2=Zhang |first2=Xu-Dong |last3=Tsai |first3=Ming-Feng |last4=Wang |first4=De-Sheng |last5=Liu |first5=Tie-Yan |last6=Li |first6=Hang |date=2008-03-01 |title=Query-level loss functions for information retrieval |url=https://linkinghub.elsevier.com/retrieve/pii/S0306457307001276 |journal=Information Processing & Management |series=Evaluating Exploratory Search Systems |volume=44 |issue=2 |pages=838–855 |doi=10.1016/j.ipm.2007.07.016 |issn=0306-4573}}</ref>|| <span style="display:none">3</span>listwise ||
+|-
+| 2007 || [https://citeseerx.ist.psu.edu/document?repid=rep1&type=pdf&doi=f83659a19e6373231a7609d13accf27555fd6ed8 RankGP]<ref>{{Cite book |last1=Lin |first1=Jung Yi |last2=Yeh |first2=Jen-Yuan |last3=Chao Chung Liu |chapter=Learning to rank for information retrieval using layered multi-population genetic programming |date=July 2012 |title=2012 IEEE International Conference on Computational Intelligence and Cybernetics (CyberneticsCom) |chapter-url=http://dx.doi.org/10.1109/cyberneticscom.2012.6381614 |publisher=IEEE |pages=45–49 |doi=10.1109/cyberneticscom.2012.6381614|isbn=978-1-4673-0892-2 }}</ref>|| <span style="display:none">3</span>listwise ||
+|-
+| 2007 || [http://staff.cs.utu.fi/~aatapa/publications/inpPaTsAiBoSa07a.pdf RankRLS] || <span style="display:none">2</span>pairwise ||
+Regularized least-squares based ranking. The work is extended in
+<ref name=pahikkala2009efficient>{{Citation|last=Pahikkala|first=Tapio |author2=Tsivtsivadze, Evgeni |author3=Airola, Antti |author4=Järvinen, Jouni |author5=Boberg, Jorma |title=An efficient algorithm for learning to rank from preference graphs|journal=Machine Learning|year=2009|volume=75|issue=1|pages=129–165|doi=10.1007/s10994-008-5097-z|postscript=.|doi-access=free}}</ref> to learning to rank from general preference graphs.
+|-
+| 2007 || [http://www.cs.cornell.edu/People/tj/publications/yue_etal_07a.pdf SVM<sup>map</sup>] || <span style="display:none">3</span>listwise ||
+|-
+| 2008 || [https://web.archive.org/web/20150610212615/http://research.microsoft.com/pubs/69536/tr-2008-109.pdf LambdaSMART/LambdaMART]|| pairwise/listwise || Winning entry in the Yahoo Learning to Rank competition in 2010, using an ensemble of LambdaMART models. Based on MART (1999)<ref>C. Burges. (2010). [https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf From RankNet to LambdaRank to LambdaMART: An Overview] {{Webarchive|url=https://web.archive.org/web/20171110173101/https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/MSR-TR-2010-82.pdf |date=2017-11-10 }}.</ref> “LambdaSMART”, for Lambda-submodel-MART, or LambdaMART for the case with no submodel.
+|-
+| 2008 || [https://dl.acm.org/doi/pdf/10.1145/1390156.1390306 ListMLE]<ref>{{Cite book |last1=Xia |first1=Fen |last2=Liu |first2=Tie-Yan |last3=Wang |first3=Jue |last4=Zhang |first4=Wensheng |last5=Li |first5=Hang |chapter=Listwise approach to learning to rank: Theory and algorithm |date=2008-07-05 |title=Proceedings of the 25th international conference on Machine learning - ICML '08 |chapter-url=https://dl.acm.org/doi/10.1145/1390156.1390306 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=1192–1199 |doi=10.1145/1390156.1390306 |isbn=978-1-60558-205-4}}</ref>|| <span style="display:none">3</span>listwise || Based on ListNet.
+|-
+| 2008 || [https://dl.acm.org/doi/pdf/10.1145/1390334.1390355 PermuRank]<ref>{{Cite book |last1=Xu |first1=Jun |last2=Liu |first2=Tie-Yan |last3=Lu |first3=Min |last4=Li |first4=Hang |last5=Ma |first5=Wei-Ying |chapter=Directly optimizing evaluation measures in learning to rank |date=2008-07-20 |title=Proceedings of the 31st annual international ACM SIGIR conference on Research and development in information retrieval |chapter-url=https://dl.acm.org/doi/10.1145/1390334.1390355 |series=SIGIR '08 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=107–114 |doi=10.1145/1390334.1390355 |isbn=978-1-60558-164-4}}</ref>|| <span style="display:none">3</span>listwise ||
+|-
+| 2008 || [https://dl.acm.org/doi/pdf/10.1145/1341531.1341544 SoftRank]<ref>{{Cite book |last1=Taylor |first1=Michael |last2=Guiver |first2=John |last3=Robertson |first3=Stephen |last4=Minka |first4=Tom |chapter=SoftRank: Optimizing non-smooth rank metrics |date=2008-02-11 |title=Proceedings of the international conference on Web search and web data mining - WSDM '08 |chapter-url=https://dl.acm.org/doi/10.1145/1341531.1341544 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=77–86 |doi=10.1145/1341531.1341544 |isbn=978-1-59593-927-2}}</ref>|| <span style="display:none">3</span>listwise ||
+|-
+| 2008 || [https://dl.acm.org/doi/pdf/10.1145/1367497.1367552 Ranking Refinement]<ref>Rong Jin, Hamed Valizadegan, Hang Li, [http://www.cs.pitt.edu/~valizadegan/Publications/ranking_refinement.pdf ''Ranking Refinement and Its Application for Information Retrieval''] {{Webarchive|url=https://web.archive.org/web/20120406214253/http://www.cs.pitt.edu/~valizadegan/Publications/ranking_refinement.pdf |date=2012-04-06 }}, in International Conference on World Wide Web (WWW), 2008.</ref> || <span style="display:none">2</span>pairwise || A semi-supervised approach to learning to rank that uses Boosting.
+|-
+| 2008 || [https://web.archive.org/web/20100723152841/http://www-connex.lip6.fr/~amini/SSRankBoost/ SSRankBoost]<ref>Massih-Reza Amini, Vinh Truong, Cyril Goutte, [http://www-connex.lip6.fr/~amini/Publis/SemiSupRanking_sigir08.pdf ''A Boosting Algorithm for Learning Bipartite Ranking Functions with Partially Labeled Data''] {{Webarchive|url=https://web.archive.org/web/20100802093049/http://www-connex.lip6.fr/~amini/Publis/SemiSupRanking_sigir08.pdf |date=2010-08-02 }}, International ACM SIGIR conference, 2008. The [http://www-connex.lip6.fr/~amini/SSRankBoost/ code] {{Webarchive|url=https://web.archive.org/web/20100723152841/http://www-connex.lip6.fr/~amini/SSRankBoost/ |date=2010-07-23 }} is available for research purposes.</ref>  || <span style="display:none">2</span>pairwise|| An extension of RankBoost to learn with partially labeled data (semi-supervised learning to rank).
+|-
+| 2008 || [[arxiv:2311.01864|SortNet]]<ref>Leonardo Rigutini, Tiziano Papini, Marco Maggini, Franco Scarselli, [http://research.microsoft.com/en-us/um/beijing/events/lr4ir-2008/PROCEEDINGS-LR4IR%202008.PDF "SortNet: learning to rank by a neural-based sorting algorithm"] {{Webarchive|url=https://web.archive.org/web/20111125100156/http://research.microsoft.com/en-us/um/beijing/events/lr4ir-2008/proceedings-lr4ir%202008.pdf |date=2011-11-25 }}, SIGIR 2008 workshop: Learning to Rank for Information Retrieval, 2008</ref> || <span style="display:none">2</span>pairwise|| SortNet, an adaptive ranking algorithm which orders objects using a neural network as a comparator. 
+|-
+| 2009 || [https://dl.acm.org/doi/pdf/10.1145/1645953.1646057 MPBoost]<ref>{{Cite book |last1=Zhu |first1=Chenguang |last2=Chen |first2=Weizhu |last3=Zhu |first3=Zeyuan Allen |last4=Wang |first4=Gang |last5=Wang |first5=Dong |last6=Chen |first6=Zheng |chapter=A general magnitude-preserving boosting algorithm for search ranking |date=2009-11-02 |title=Proceedings of the 18th ACM conference on Information and knowledge management |chapter-url=https://dl.acm.org/doi/10.1145/1645953.1646057 |series=CIKM '09 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=817–826 |doi=10.1145/1645953.1646057 |isbn=978-1-60558-512-3}}</ref>|| <span style="display:none">2</span>pairwise || Magnitude-preserving variant of RankBoost. The idea is that the more unequal are labels of a pair of documents, the harder should the algorithm try to rank them.
+|-
+| 2009 || [https://web.archive.org/web/20130620070239/http://machinelearning.org/archive/icml2009/papers/498.pdf BoltzRank] || <span style="display:none">3</span>listwise || Unlike earlier methods, BoltzRank produces a ranking model that looks during query time not just at a single document, but also at pairs of documents.
+|-
+| 2009 || [http://www.iis.sinica.edu.tw/papers/whm/8820-F.pdf BayesRank] || <span style="display:none">3</span>listwise || A method combines Plackett-Luce Model and neural network to minimize the expected Bayes risk, related to NDCG, from the decision-making aspect.
+|-
+| 2010 || [http://web.archive.org/web/20150324205505/https://people.cs.pitt.edu/~valizadegan/Publications/NDCG_Boost.pdf NDCG Boost]<ref>Hamed Valizadegan, Rong Jin, Ruofei Zhang, [[Jianchang Mao]], [http://www.cs.pitt.edu/~valizadegan/Publications/NDCG_Boost.pdf ''Learning to Rank by Optimizing NDCG Measure''] {{Webarchive|url=https://web.archive.org/web/20120406214443/http://www.cs.pitt.edu/~valizadegan/Publications/NDCG_Boost.pdf |date=2012-04-06 }}, in Proceeding of Neural Information Processing Systems (NIPS), 2010.</ref> || <span style="display:none">3</span>listwise || A boosting approach to optimize NDCG.
+|-
+| 2010 || [https://arxiv.org/abs/1001.4597 GBlend] || <span style="display:none">2</span>pairwise || Extends GBRank to the learning-to-blend problem of jointly solving multiple learning-to-rank problems with some shared features.
+|-
+| 2010 || [https://web.archive.org/web/20100601205607/http://wume.cse.lehigh.edu/~ovd209/wsdm/proceedings/docs/p151.pdf IntervalRank] || <span style="display:none">2</span>pairwise & listwise ||
+|-
+| 2010 || [http://web.archive.org/web/20100922104716/http://www.eecs.tufts.edu/~dsculley/papers/combined-ranking-and-regression.pdf CRR]<ref>{{Cite book |last=Sculley |first=D. |chapter=Combined regression and ranking |date=2010-07-25 |title=Proceedings of the 16th ACM SIGKDD international conference on Knowledge discovery and data mining |chapter-url=https://dl.acm.org/doi/10.1145/1835804.1835928 |series=KDD '10 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=979–988 |doi=10.1145/1835804.1835928 |isbn=978-1-4503-0055-1}}</ref>|| <span style="display:none">2</span>pointwise & pairwise || Combined Regression and Ranking. Uses [[stochastic gradient descent]] to optimize a linear combination of a pointwise quadratic loss and a pairwise hinge loss from Ranking SVM.
+|-
+| 2014 || [http://web.archive.org/web/20190312003749/https://storage.googleapis.com/pub-tools-public-publication-data/pdf/42242.pdf LCR]<ref>{{Cite book |last1=Lee |first1=Joonseok |last2=Bengio |first2=Samy |last3=Kim |first3=Seungyeon |last4=Lebanon |first4=Guy |last5=Singer |first5=Yoram |chapter=Local collaborative ranking |date=2014-04-07 |title=Proceedings of the 23rd international conference on World wide web |chapter-url=https://dl.acm.org/doi/10.1145/2566486.2567970 |series=WWW '14 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=85–96 |doi=10.1145/2566486.2567970 |isbn=978-1-4503-2744-2}}</ref>|| <span style="display:none">2</span>pairwise || Applied local low-rank assumption on collaborative ranking. Received best student paper award at WWW'14.
+|-
+|2015
+|[https://www.cv-foundation.org/openaccess/content_cvpr_2015/papers/Schroff_FaceNet_A_Unified_2015_CVPR_paper.pdf FaceNet]
+|pairwise
+|Ranks face images with the triplet metric via deep convolutional network.
+|-
+|2016
+|[https://arxiv.org/abs/1603.02754 XGBoost]
+|pairwise
+|Supports various ranking objectives and evaluation metrics.
+|-
+|2017 || [http://web.archive.org/web/20180131023750/http://eprints.nottingham.ac.uk/41540/1/dls_sac2017.pdf ES-Rank]<ref>{{Cite book |last1=Ibrahim |first1=Osman Ali Sadek |last2=Landa-Silva |first2=Dario |chapter=ES-Rank: Evolution strategy learning to rank approach |date=2017-04-03 |title=Proceedings of the Symposium on Applied Computing |chapter-url=https://dl.acm.org/doi/10.1145/3019612.3019696 |series=SAC '17 |location=New York, NY, USA |publisher=Association for Computing Machinery |pages=944–950 |doi=10.1145/3019612.3019696 |isbn=978-1-4503-4486-9|url=https://nottingham-repository.worktribe.com/file/854560/1/dls_sac2017.pdf }}</ref>|| listwise || Evolutionary Strategy Learning to Rank technique with 7 fitness evaluation metrics.
+|-
+| 2018 || [https://dl.acm.org/doi/abs/10.1145/3209978.3209985 DLCM]<ref name="ai2018learning">{{citation
+ |author1=Ai, Qingyao |author2=Bi, Keping |author3=Jiafeng, Guo |author4=Croft, W. Bruce |title=The 41st International ACM SIGIR Conference on Research & Development in Information Retrieval |chapter=Learning a Deep Listwise Context Model for Ranking Refinement | pages=135–144
+ | year=2018
+ | doi=10.1145/3209978.3209985
+|isbn=9781450356572 |s2cid=4956076 |doi-access=free |arxiv=1804.05936 }}</ref>   || <span style="display:none">2</span>listwise || A multi-variate ranking function that encodes multiple items from an initial ranked list (local context) with a recurrent neural network and create result ranking accordingly.
+|-
+|2018
+|[http://www.jmlr.org/papers/volume19/17-179/17-179.pdf PolyRank]<ref>{{Cite journal|last1=Davidov|first1=Ori|last2=Ailon|first2=Nir|last3=Oliveira|first3=Ivo F. D.|date=2018|title=A New and Flexible Approach to the Analysis of Paired Comparison Data|url=http://jmlr.org/papers/v19/17-179.html|journal=Journal of Machine Learning Research|volume=19|issue=60|pages=1–29|issn=1533-7928|access-date=2019-09-17|archive-date=2019-10-03|archive-url=https://web.archive.org/web/20191003090745/http://www.jmlr.org/papers/v19/17-179.html|url-status=live}}</ref>
+|pairwise
+|Learns simultaneously the ranking and the underlying [[generative model]] from pairwise comparisons.
+|-
+|2018 || [https://arxiv.org/abs/1803.05796 FATE-Net/FETA-Net]<ref>{{cite arXiv |last1=Pfannschmidt |first1=Karlson |last2=Gupta |first2=Pritha | last3=Hüllermeier |first3=Eyke |date=2018 |title=Deep Architectures for Learning Context-dependent Ranking Functions |class=stat.ML |eprint=1803.05796}}</ref>|| listwise || End-to-end trainable architectures, which explicitly take all items into account to model context effects.
+|-
+|2019
+|[https://web.archive.org/web/20190514175024/http://cs-people.bu.edu/fcakir/papers/fastap_cvpr2019.pdf FastAP]<ref>Fatih Cakir, Kun He, Xide Xia, Brian Kulis, Stan Sclaroff, [http://cs-people.bu.edu/fcakir/papers/fastap_cvpr2019.pdf ''Deep Metric Learning to Rank''] {{Webarchive|url=https://web.archive.org/web/20190514175024/http://cs-people.bu.edu/fcakir/papers/fastap_cvpr2019.pdf |date=2019-05-14 }}, In Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2019.</ref>
+|listwise
+|Optimizes Average Precision to learn deep embeddings.
+|-
+|2019
+|[https://arxiv.org/abs/1905.06452 Mulberry] || listwise & hybrid || Learns ranking policies maximizing multiple metrics across the entire dataset.
+|-
+|2019 
+|[https://ecmlpkdd2019.org/downloads/paper/400.pdf DirectRanker] || pairwise || Generalisation of the RankNet architecture. 
+|-
+| 2019 || [https://dl.acm.org/doi/abs/10.1145/3341981.3344218 GSF]<ref name="10.1145/3341981.3344218">{{citation
+ |author1=Ai, Qingyao |author2=Wang, Xuanhui |author3=Bruch, Sebastian |author4=Golbandi, Nadav |author5=Bendersky, Michael |author6=Najork, Marc |title=Proceedings of the 2019 ACM SIGIR International Conference on Theory of Information Retrieval |chapter=Learning Groupwise Multivariate Scoring Functions Using Deep Neural Networks | pages=85–92
+ | year=2019
+ | doi=10.1145/3341981.3344218
+|isbn=9781450368810 |s2cid=199441954 |doi-access=free |arxiv=1811.04415 }}</ref>   || <span style="display:none">2</span>listwise || A permutation-invariant multi-variate ranking function that encodes and ranks items with groupwise scoring functions built with deep neural networks.
+|-
+|2020
+|[https://openaccess.thecvf.com/content_CVPR_2020/papers/Rolinek_Optimizing_Rank-Based_Metrics_With_Blackbox_Differentiation_CVPR_2020_paper.pdf RaMBO]<ref>{{cite arXiv |last1=Rolínek |first1=Michal |last2=Musil |first2=Vít |last3=Paulus |first3=Anselm |last4=Vlastelica |first4=Marin |last5=Michaelis |first5=Claudio |last6=Martius |first6=Georg |date=2020-03-18 |title=Optimizing Rank-based Metrics with Blackbox Differentiation |class=cs.LG |eprint=1912.03500 }}</ref>
+|listwise
+|Optimizes rank-based metrics using blackbox backpropagation.<ref>{{Cite journal |last1=Vlastelica |first1=Marin |last2=Paulus |first2=Anselm |last3=Musil |first3=Vít |last4=Martius |first4=Georg |last5=Rolínek |first5=Michal |date=2019-12-04 |title=Differentiation of Blackbox Combinatorial Solvers |arxiv=1912.02175 |language=en }}</ref>
+|-
+|2020
+|[https://arxiv.org/pdf/1904.06813.pdf PRM]<ref>{{Cite book|last1=Liu|first1=Weiwen|last2=Liu|first2=Qing|last3=Tang|first3=Ruiming|last4=Chen|first4=Junyang|last5=He|first5=Xiuqiang|last6=Heng|first6=Pheng Ann|title=Proceedings of the 29th ACM International Conference on Information & Knowledge Management |chapter=Personalized Re-ranking with Item Relationships for E-commerce |date=2020-10-19|chapter-url=https://doi.org/10.1145/3340531.3412332|series=CIKM '20|location=Virtual Event, Ireland|publisher=Association for Computing Machinery|pages=925–934|doi=10.1145/3340531.3412332|isbn=978-1-4503-6859-9|s2cid=224281012|access-date=2021-04-26|archive-date=2021-10-17|archive-url=https://web.archive.org/web/20211017153218/https://dl.acm.org/doi/10.1145/3340531.3412332|url-status=live}}</ref>|| pairwise || Transformer network encoding both the dependencies among items and the interactions between the user and items.
+|-
+| 2020 || [https://dl.acm.org/doi/abs/10.1145/3397271.3401104 SetRank]<ref name="10.1145/3397271.3401104">{{citation
+ |author1=Pang, Liang |author2=Xu, Jun |author3=Ai, Qingyao |author4=Lan, Yanyan |author5=Cheng, Xueqi |author6=Wen, Jirong |title=Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval |chapter=SetRank | pages=499–508
+ | year=2020
+ | doi=10.1145/3397271.3401104
+|isbn=9781450380164 |s2cid=241534531 }}</ref>   || <span style="display:none">2</span>listwise || A permutation-invariant multi-variate ranking function that encodes and ranks items with self-attention networks.
+|-
+|2021
+|[https://arxiv.org/pdf/2012.06731v2.pdf PiRank]<ref>{{Cite journal|last1=Swezey|first1=Robin|last2=Grover|first2=Aditya|last3=Charron|first3=Bruno|last4=Ermon|first4=Stefano|date=2021-11-27|title=PiRank: Scalable Learning To Rank via Differentiable Sorting|arxiv= 2012.06731|journal= Advances in Neural Information Processing Systems |volume=34 |series=NeurIPS '21|location=Virtual Event, Ireland}}</ref>|| listwise || Differentiable surrogates for ranking able to exactly recover the desired metrics and scales favourably to large list sizes, significantly improving internet-scale benchmarks.
+|-
+|2022
+|[https://link.springer.com/article/10.1007/s10115-022-01726-0 SAS-Rank]
+|listwise
+|Combining Simulated Annealing with Evolutionary Strategy for implicit and explicit learning to rank from relevance labels.
+|-
+|2022
+|[https://www.researchsquare.com/article/rs-2121120/v1 VNS-Rank]
+|listwise
+|Variable Neighborhood Search in 2 Novel Methodologies in AI for Learning to Rank.
+|-
+|2022
+|[https://www.researchsquare.com/article/rs-2293850/v1 VNA-Rank]
+|listwise
+|Combining Simulated Annealing with Variable Neighbourhood Search for Learning to Rank.
+|-
+|2023
+|[https://link.springer.com/article/10.1007/s00521-023-08412-4 GVN-Rank]
+|listwise
+|Combining Gradient Ascent with Variable Neighbourhood Search for Learning to Rank.
+|}
+
+Note: as most supervised learning-to-rank algorithms can be applied to pointwise, pairwise and listwise case, only those methods which are specifically designed with ranking in mind are shown above.
+== History ==
+[[Norbert Fuhr]] introduced the general idea of MLR in 1992, describing learning approaches in information retrieval as a generalization of parameter estimation;<ref name="Fuhr1992">{{citation
+ | last=Fuhr
+ | first=Norbert
+ | journal=Computer Journal
+ | title=Probabilistic Models in Information Retrieval
+ | volume=35
+ | number=3
+ | pages=243–255
+ | year=1992
+ | doi=10.1093/comjnl/35.3.243
+| doi-access=free
+ }}</ref> a specific variant of this approach (using [[polynomial regression]]) had been published by him three years earlier.<ref name="Fuhr1989" /> Bill Cooper proposed [[logistic regression]] for the same purpose in 1992 <ref name="Cooperetal1992" /> and used it with his [[University of California at Berkeley|Berkeley]] research group to train a successful ranking function for [[Text Retrieval Conference|TREC]]. Manning et al.<ref>{{citation |author1=Manning C. |author2=Raghavan P. |author3=Schütze H. |title=Introduction to Information Retrieval |publisher=Cambridge University Press |year=2008}}. Sections [http://nlp.stanford.edu/IR-book/html/htmledition/references-and-further-reading-7.html 7.4] {{Webarchive|url=https://web.archive.org/web/20090721115530/http://nlp.stanford.edu/IR-book/html/htmledition/references-and-further-reading-7.html |date=2009-07-21 }} and [http://nlp.stanford.edu/IR-book/html/htmledition/references-and-further-reading-15.html 15.5] {{Webarchive|url=https://web.archive.org/web/20100509011556/http://nlp.stanford.edu/IR-book/html/htmledition/references-and-further-reading-15.html |date=2010-05-09 }}</ref> suggest that these early works achieved limited results in their time due to little available training data and poor machine learning techniques.
+
+Several conferences, such as [[Neural Information Processing Systems|NeurIPS]], [[Special Interest Group on Information Retrieval|SIGIR]] and [[International Conference on Machine Learning|ICML]] have had workshops devoted to the learning-to-rank problem since the mid-2000s (decade).
+
+=== Practical usage by search engines ===
+Commercial [[web search engine]]s began using machine-learned ranking systems since the 2000s (decade). One of the first search engines to start using it was [[AltaVista]] (later its technology was acquired by [[Overture Services, Inc.|Overture]], and then [[Yahoo]]), which launched a [[gradient boosting]]-trained ranking function in April 2003.<ref>Jan O. Pedersen. [http://jopedersen.com/Presentations/The_MLR_Story.pdf The MLR Story] {{Webarchive|url=https://web.archive.org/web/20110713120113/http://jopedersen.com/Presentations/The_MLR_Story.pdf |date=2011-07-13 }}</ref><ref>{{US Patent|7197497}}</ref>
+
+[[Bing (search engine)|Bing]]'s search is said to be powered by [https://www.microsoft.com/en-us/research/wp-content/uploads/2005/08/icml_ranking.pdf RankNet] algorithm,<ref>{{Cite web |url=http://www.bing.com/community/blogs/search/archive/2009/06/01/user-needs-features-and-the-science-behind-bing.aspx?PageIndex=4 |title=Bing Search Blog: User Needs, Features and the Science behind Bing |access-date=2009-11-19 |archive-date=2009-11-25 |archive-url=https://web.archive.org/web/20091125205204/http://www.bing.com/community/blogs/search/archive/2009/06/01/user-needs-features-and-the-science-behind-bing.aspx?PageIndex=4 |url-status=live }}</ref>{{when|date=February 2014}} which was invented at [[Microsoft Research]] in 2005.
+
+In November 2009 a Russian search engine [[Yandex]] announced<ref name="snezhinsk">[http://webmaster.ya.ru/replies.xml?item_no=5707&ncrnd=5118 Yandex corporate blog entry about new ranking model "Snezhinsk"] {{Webarchive|url=https://web.archive.org/web/20120301165959/http://webmaster.ya.ru/replies.xml?item_no=5707&ncrnd=5118 |date=2012-03-01 }} (in Russian)</ref> that it had significantly increased its search quality due to deployment of a new proprietary [[MatrixNet]] algorithm, a variant of [[gradient boosting]] method which uses oblivious decision trees.<ref>The algorithm wasn't disclosed, but a few details were made public in [http://download.yandex.ru/company/experience/GDD/Zadnie_algoritmy_Karpovich.pdf] {{Webarchive|url=https://web.archive.org/web/20100601171627/http://download.yandex.ru/company/experience/GDD/Zadnie_algoritmy_Karpovich.pdf|date=2010-06-01}} and [http://download.yandex.ru/company/experience/searchconf/Searchconf_Algoritm_MatrixNet_Gulin.pdf] {{Webarchive|url=https://web.archive.org/web/20100601171629/http://download.yandex.ru/company/experience/searchconf/Searchconf_Algoritm_MatrixNet_Gulin.pdf|date=2010-06-01}}.</ref> Recently they have also sponsored a machine-learned ranking competition "Internet Mathematics 2009"<ref>{{Cite web |url=http://imat2009.yandex.ru/academic/mathematic/2009/en/ |title=Yandex's Internet Mathematics 2009 competition page |access-date=2009-11-11 |archive-url=https://web.archive.org/web/20150317144535/http://imat2009.yandex.ru/academic/mathematic/2009/en/ |archive-date=2015-03-17 |url-status=dead }}</ref> based on their own search engine's production data. Yahoo has announced a similar competition in 2010.<ref>{{Cite web |url=http://learningtorankchallenge.yahoo.com/ |title=Yahoo Learning to Rank Challenge |access-date=2010-02-26 |archive-url=https://web.archive.org/web/20100301011649/http://learningtorankchallenge.yahoo.com/ |archive-date=2010-03-01 |url-status=dead }}</ref>
+
+As of 2008, [[Google]]'s [[Peter Norvig]] denied that their search engine exclusively relies on machine-learned ranking.<ref>{{cite web
+ |url         = http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
+ |archive-url  = https://archive.today/20120701122042/http://anand.typepad.com/datawocky/2008/05/are-human-experts-less-prone-to-catastrophic-errors-than-machine-learned-models.html
+ |archive-date = 2012-07-01
+ |title       = Are Machine-Learned Models Prone to Catastrophic Errors?
+ |date        = 2008-05-24
+ |last        = Rajaraman
+ |first       = Anand
+ |author-link  = Anand Rajaraman
+ |access-date = 2009-11-11
+ |url-status    = live
+}}</ref> [[Cuil]]'s CEO, Tom Costello, suggests that they prefer hand-built models because they can outperform machine-learned models when measured against metrics like click-through rate or time on landing page, which is because machine-learned models "learn what people say they like, not what people actually like".<ref>{{cite web
+  | url = http://www.cuil.com/info/blog/2009/06/26/so-how-is-bing-doing
+  | archive-url = https://archive.today/20090627213358/http://www.cuil.com/info/blog/2009/06/26/so-how-is-bing-doing
+  | archive-date = 2009-06-27
+  | title = Cuil Blog: So how is Bing doing?
+  | date = 2009-06-26
+  | last = Costello
+  | first = Tom}}</ref>
+
+In January 2017, the technology was included in the [[Open-source software|open source]] search engine [[Apache Solr]].<ref>{{Cite news|url=https://www.techatbloomberg.com/blog/bloomberg-integrated-learning-rank-apache-solr/|title=How Bloomberg Integrated Learning-to-Rank into Apache Solr {{!}} Tech at Bloomberg|date=2017-01-23|work=Tech at Bloomberg|access-date=2017-02-28|language=en-US|archive-date=2017-03-01|archive-url=https://web.archive.org/web/20170301092711/https://www.techatbloomberg.com/blog/bloomberg-integrated-learning-rank-apache-solr/|url-status=live}}</ref> It is also available in the open source [[OpenSearch (software)|OpenSearch]] and the [[Source-available software|source-available]] [[Elasticsearch]].<ref>{{Cite web |title=Learning to Rank for Amazon OpenSearch Service - Amazon OpenSearch Service |url=https://docs.aws.amazon.com/opensearch-service/latest/developerguide/learning-to-rank.html |access-date=2023-09-22 |website=docs.aws.amazon.com}}</ref><ref>{{Cite web |title=Elasticsearch Learning to Rank: the documentation — Elasticsearch Learning to Rank documentation |url=https://elasticsearch-learning-to-rank.readthedocs.io/en/latest/ |access-date=2023-09-22 |website=elasticsearch-learning-to-rank.readthedocs.io}}</ref> These implementations make learning to rank widely accessible for enterprise search.
+
+== Vulnerabilities ==
+Similar to recognition applications in [[computer vision]], recent neural network based ranking algorithms are also found to be susceptible to covert [[generative adversarial network|adversarial attacks]], both on the candidates and the queries.<ref name="Zhou Niu Wang Zhang 2020">{{cite arXiv | last1=Zhou | first1=Mo | last2=Niu | first2=Zhenxing | last3=Wang | first3=Le | last4=Zhang | first4=Qilin | last5=Hua | first5=Gang | title=Adversarial Ranking Attack and Defense | year=2020 | class=cs.CV | eprint=2002.11293v2 }}</ref> With small perturbations imperceptible to human beings, ranking order could be arbitrarily altered. In addition, model-agnostic transferable adversarial examples are found to be possible, which enables black-box adversarial attacks on deep ranking systems without requiring access to their underlying implementations.<ref name="Zhou Niu Wang Zhang 2020" /><ref name="Li Ji Liu Hong pp. 4899–4908">{{cite journal | last1=Li | first1=Jie | last2=Ji | first2=Rongrong | last3=Liu | first3=Hong | last4=Hong | first4=Xiaopeng | last5=Gao | first5=Yue | last6=Tian | first6=Qi | title=Universal Perturbation Attack Against Image Retrieval | website=International Conference on Computer Vision (ICCV 2019) | year=2019 | url=https://openaccess.thecvf.com/content_ICCV_2019/html/Li_Universal_Perturbation_Attack_Against_Image_Retrieval_ICCV_2019_paper.html | pages=4899–4908 | arxiv=1812.00552 | access-date=2020-07-04 | archive-date=2020-07-06 | archive-url=https://web.archive.org/web/20200706051031/https://openaccess.thecvf.com/content_ICCV_2019/html/Li_Universal_Perturbation_Attack_Against_Image_Retrieval_ICCV_2019_paper.html | url-status=live }}</ref>
+
+Conversely, the robustness of such ranking systems can be improved via adversarial defenses such as the Madry defense.<ref name="Madry Makelov Schmidt Tsipras 2017">{{cite arXiv | last1=Madry | first1=Aleksander | last2=Makelov | first2=Aleksandar | last3=Schmidt | first3=Ludwig | last4=Tsipras | first4=Dimitris | last5=Vladu | first5=Adrian | title=Towards Deep Learning Models Resistant to Adversarial Attacks | date=2017-06-19 | class=stat.ML | eprint=1706.06083v4 }}</ref>
+
+==See also==
+*[[Content-based image retrieval]]
+*[[Multimedia information retrieval]]
+*[[Image retrieval]]
+*[[Triplet loss]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+; Competitions and public datasets
+* [https://www.microsoft.com/en-us/research/project/letor-learning-rank-information-retrieval/ LETOR: A Benchmark Collection for Research on Learning to Rank for Information Retrieval]
+* [https://web.archive.org/web/20150912134134/http://imat2009.yandex.ru/en Yandex's Internet Mathematics 2009]
+* [https://web.archive.org/web/20100301011649/http://learningtorankchallenge.yahoo.com/ Yahoo! Learning to Rank Challenge]
+* [http://research.microsoft.com/en-us/projects/mslr/default.aspx Microsoft Learning to Rank Datasets]
+
+[[Category:Information retrieval techniques]]
+[[Category:Machine learning]]
+[[Category:Ranking functions]]

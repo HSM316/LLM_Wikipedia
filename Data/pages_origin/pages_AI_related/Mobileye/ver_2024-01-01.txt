@@ -1,0 +1,380 @@
+{{Short description|Israeli information technology company}}
+{{Infobox company
+| name = Mobileye Global Inc.
+| logo = Mobileye new logo.svg
+| logo_size = 
+| logo_padding = 
+| logo_alt = 
+| logo_caption = 
+| image = 
+| image_size = 
+| image_alt = 
+| image_caption = 
+| type = [[Public company|Public]] [[Subsidiary]]
+| traded_as = {{nowrap|{{NASDAQ|MBLY}} (Class A)}}
+| ISIN = 
+| industry = {{ublist|[[Automotive]]|[[Autonomous cars]]}}
+| founded = {{start date and age|1999}} in [[Jerusalem]], Israel 
+| founders = {{ublist|[[Amnon Shashua]]|Norio Ichihashi|Ziv Aviram}}
+| hq_location = 
+| hq_location_city = Jerusalem
+| hq_location_country = Israel
+| num_locations = 
+| num_locations_year = <!-- Year of num_locations data (when known) -->
+| area_served = <!-- or: | areas_served = -->
+| key_people = {{ublist|Amnon Shashua<br />(President and CEO)|[[Pat Gelsinger]]<br />(Chairman)}}
+| products = {{hlist|EyeQ| REM| RSS| Mobileye SuperVision| Mobileye Drive| Mobileye Robotaxi}}
+| brands = 
+| production = 
+| production_year = <!-- Year of production data (when known) -->
+| services = 
+| revenue = {{increase}} {{US$|1.87 billion|link=yes}}
+| revenue_year = 2022
+| operating_income = {{increase}} {{US$|-37 million}}
+| income_year = 2022
+| net_income = {{decrease}} {{US$|-82 million}}
+| net_income_year = 2022
+| assets = {{decrease}} {{US$|15.44 billion}}
+| assets_year = 2022
+| equity = {{decrease}} {{US$|14.79 billion}}
+| equity_year = 2022
+| owner = 
+| num_employees = {{circa|3,500}}
+| num_employees_year = 2022
+| parent = [[Intel]] (94.2%)
+| divisions = 
+| subsid = 
+| module = <!-- Used to embed other templates -->
+| website = {{url|mobileye.com}}
+| footnotes = <ref name=10K>{{cite web |url=https://www.sec.gov/ix?doc=/Archives/edgar/data/1910139/000110465923030588/mbly-20221231x10k.htm |title=Mobileye Global Inc. 2022 Annual Report (Form 10-K) |date=March 9, 2023 |publisher=[[U.S. Securities and Exchange Commission]]}}</ref><ref name=S1>{{cite web |url=https://www.sec.gov/Archives/edgar/data/1910139/000110465922109469/tm227410-19_s1a.htm |title=Mobileye Global Inc. Form S1/A |date=October 18, 2022 |publisher=[[U.S. Securities and Exchange Commission]]}}</ref><ref>{{Cite web|title=ZANGU: A JOURNEY THROUGH SPACE|url=https://calbizjournal.com/zangu-a-journey-through-space/|website=California Business Journal|date=11 August 2017 }}</ref>
+}}
+
+'''Mobileye Global Inc.''' is a company developing [[autonomous driving]] technologies and [[advanced driver-assistance systems]] (ADAS) including cameras, computer chips and software.<ref>{{Cite web|title=Intel Will Take its Mobileye Automotive Unit Public in 2022|url=https://www.nytimes.com/2021/12/06/technology/intel-mobileye-ipo.html|date=December 6, 2021|website= NY Times}}</ref><ref>{{cite web|title=Intel to Take Self-Driving Car Unit Mobileye Public|url=https://www.siliconrepublic.com/business/intel-mobileye-public-auto-technology|date=December 7, 2021|website=www.siliconrepublic.com}}</ref> Mobileye was acquired by [[Intel]] in 2017 and went public again in 2022.<ref>{{Cite web|title=Intel's $15 billion purchase of Mobileye shakes up driverless car sector|url= https://www.reuters.com/article/us-intel-mobileye-idUSKBN16K0ZP|date=March 13, 2017|website=Reuters}}</ref><ref>{{cite news|title=Intel completes $15.3b acquisition of Mobileye|url=https://en.globes.co.il/en/article-intel-completing-153b-acquisition-of-mobileye-1001200491|date=August 8, 2017|newspaper=Globes}}</ref> Mobileye is based in [[Jerusalem]], [[Israel]], and also has sales and marketing offices in [[Midtown, Manhattan]], US; [[Shanghai]], [[China]]; [[Tokyo]], [[Japan]]; and [[Düsseldorf]], [[Germany]].
+
+[[File:Lane Guidance Camera PCB.jpg|thumb|right|A Mobileye EyeQ2 chip used in a Hyundai Lane Guidance camera module]]
+
+==History==
+Mobileye was founded in 1999 by [[Hebrew University]] professor [[Amnon Shashua]] when he evolved his academic research into a vision system which could detect vehicles using a camera and software [[algorithms]] on a processor.<ref>{{cite web|url=http://www.bloomberg.com/research/stocks/private/person.asp?personId=543997&privcapId=24494124 |title=Amnon Shashua: Executive Profile & Biography - Businessweek |website=www.bloomberg.com |access-date=15 January 2022 |archive-url=https://web.archive.org/web/20160204085223/http://www.bloomberg.com/research/stocks/private/person.asp?personId=543997&privcapId=24494124 |archive-date=4 February 2016 |url-status=dead}}</ref> Since its establishment, it has developed into a supplier of automotive safety technologies based on adding "intelligence" to inexpensive cameras for commercialization.<ref>{{cite web|title=At High Speed, On the Road to a Driverless Future|url=https://www.nytimes.com/2013/05/28/science/on-the-road-in-mobileyes-self-driving-car.html?pagewanted=all&_r=0|date=May 27, 2013|website=NY Times}}</ref>
+
+Mobileye established its first research center in 2004, and launched the first generation EyeQ1 processor four years later, in 2008. The technology offered driver assistance including AEB ([[Collision avoidance system|automatic emergency braking]]). One of the first vehicles to use this technology was the fifth-generation [[BMW 7 Series]]. Subsequent versions of the chip were released in 2010, 2014 and 2018.<ref>{{cite web|title=Inside the Suppliers: Mobileye|url=https://www.carexpert.com.au/car-news/inside-the-suppliers-mobileye|date=February 21, 2021|website=www.carexpert.com}}</ref>
+
+In 2013, Mobileye announced the sale of a 25% stake to Blue-chip investors for $400 million, valuing the company at approximately $1.5 billion.<ref>{{cite web|title=Israeli Startup Mobileye Selling 25% Stake for $400M to Group of Blue-chip Investors|url=https://www.haaretz.com/israel-news/business/.premium-mobileye-scores-record-value-for-israeli-startup-1.5292900|date=July 8, 2013|website=www.haaretz.com}}</ref><ref>{{cite web|title=Mobileye, a Maker of Automated Driving Systems, Raises $400 Million|url=https://dealbook.nytimes.com/2013/07/07/mobileye-a-maker-of-automated-driving-systems-raises-400-million/|date=July 7, 2013|website=dealbook.nytimes.com}}</ref>
+
+Mobileye went public on the [[New York Stock Exchange]] in 2014. It raised $890 million, and became the largest Israeli IPO in U.S. history.<ref>{{cite web|title=Mobileye Raises $890 Million as Largest Israeli IPO in the US|url=https://www.bloomberg.com/news/articles/2014-07-31/mobileye-raises-890-million-as-largest-israeli-ipo-in-the-u-s-|date=August 1, 2014|website=Bloomberg}}</ref><ref>{{cite web|title=Mobileye Caps Wild Ride On Stock Market With $15.3 Billion Acquisition|url=https://www.forbes.com/sites/laurengensler/2017/03/13/mobileye-stock-intel-acquisition/?sh=231002d4f086|date=March 13, 2017|website=Forbes}}</ref> By the end of the year, Mobileye's technology was implemented in 160 car models made by 18 different OEMs.<ref>{{cite web|title=7 Things You Didn't Know About Mobileye|url=https://news.yahoo.com/7-things-didnt-know-mobileye-223110409.html|date=June 27, 2015|website=Yahoo! News}}</ref>
+
+In 2017, Mobileye unveiled a mathematical model for safe self-driving cars based on a research paper by CEO Amnon Shashua and VP of Technology Shai Shalev-Shwartz. The paper outlines a system called Responsibility-Sensitive Safety (RSS) which redefines fault and caution and could potentially be used to inform insurance policies and driving laws.<ref>{{cite web|title=Intel Unveils Model for Safe Driverless Cars|url=https://www.calcalistech.com/ctech/articles/0,7340,L-3723101,00.html|date=October 18, 2017|website=www.calcalistech}}</ref> Shai Shalev-Shwartz was promoted to CTO in 2019.<ref>{{cite web|title=Mobileye's Mathematical Approach is the Key to Autonomous Vehicle Revolution, Says Chief Technology Officer|url=https://www.calcalistech.com/ctech/articles/0,7340,L-3753877,00.html|date=January 9, 2019|website=www.calcalistech.com}}</ref>
+
+In March 2017, Intel announced that it would be acquiring Mobileye for $15.3 billion<ref name="BBC">{{cite news|title=Intel buys driverless car technology firm Mobileye|url=https://www.bbc.co.uk/news/business-39253422|access-date=13 March 2017|work=BBC|date=13 March 2017|archive-date=15 August 2021|archive-url=https://web.archive.org/web/20210815213045/https://www.bbc.co.uk/news/business-39253422|url-status=live}}</ref> — the biggest-ever acquisition of an Israeli tech company.<ref>{{cite journal |author=מובילאיי |url=http://www.themarker.com/markets/1.3921460 |title=אינטל מאשרת את חשיפת TheMarker: תרכוש את מובילאיי ב-15.3 מיליארד דולר – שוק ההון |journal=TheMarker |date=2017-03-13 |access-date=2017-03-18 |archive-date=2021-03-18 |archive-url=https://web.archive.org/web/20210318140757/https://www.themarker.com/markets/1.3921460 |url-status=live }}</ref> Following the acquisition, Reuters reported that the [[U.S. Securities and Exchange Commission]] had charged two Israelis, [[Ariel Darvasi]] and Amir Waldman, with engaging in insider trading prior to the announcement of the acquisition of Mobileye by Intel.<ref>{{cite web | last=Tress | first=Luke | title=Two Israelis accused of Mobileye insider trading | website=The Times of Israel | date=2017-03-24 | url=https://www.timesofisrael.com/two-israelis-accused-of-mobileye-insider-trading/ | archive-url=https://web.archive.org/web/20201112000539/https://www.timesofisrael.com/two-israelis-accused-of-mobileye-insider-trading/ | archive-date=2020-11-12 | url-status=live}}</ref> Both had connections to Mobileye through the Hebrew University of Jerusalem, where Mobileye's technology was first developed.<ref>{{Cite news |date=2017-07-25 |title=Israeli professor settles Mobileye insider trading case in U.S. |language=en |work=Reuters |url=https://www.reuters.com/article/ctech-us-sec-insidertrading-mobileye-idCAKBN1AA213-OCATC |access-date=2022-12-16}}</ref> Also, the SEC obtained an emergency court order, freezing certain assets of Virginia residents Lawrence F. Cluff, Jr. and Roger E. Shaoul who allegedly used insider information to make approximately $1 million on Intel's purchase of Mobileye.<ref>{{cite web |title=SEC Freezes Assets Of Traders |website=Financial Advisor |date=April 7, 2017 |url=https://www.fa-mag.com/news/sec-freezes-assets-of-traders-32217.html |archive-url=https://web.archive.org/web/20220125031113/https://www.fa-mag.com/news/sec-freezes-assets-of-traders-32217.html |archive-date=2022-01-25 | url-status=live}}</ref> Neither Intel nor Mobileye were accused by the SEC of violating the law.
+
+In October 2018, Mobileye and [[Volkswagen]] released plans to commercialize [[Mobility as a service|Mobility-as-a-Service]] (MaaS) in Israel. Mobileye began "robotaxi" trials with [[Nio Inc.|Nio]] electric vehicles in Israel in May 2020 due to a delay in the arrival of Volkswagen minivans, and unveiled its new production-ready robotaxi in 2021 at the IAA Mobility show in Munich.<ref>{{Cite news|url=https://www.theverge.com/2018/10/29/18039216/volkswagen-intel-mobileye-self-driving-ride-hailing-israel-2019|title=Volkswagen, Intel, and Mobileye will launch a self-driving taxi service in Israel in 2019|work=The Verge|access-date=2018-11-01|archive-date=2018-11-01|archive-url=https://web.archive.org/web/20181101095436/https://www.theverge.com/2018/10/29/18039216/volkswagen-intel-mobileye-self-driving-ride-hailing-israel-2019|url-status=live}}</ref><ref>{{Cite news|url=https://newsroom.intel.com/news-releases/volkswagen-mobileye-champion-motors-invest-israel-deploy-first-autonomous-ev-ride-hailing-service/|title=Volkswagen, Mobileye and Champion Motors to Invest in Israel and Deploy First Autonomous EV Ride-Hailing Service Intel Newsroom|work=Intel Newsroom|access-date=2018-11-01|language=en-US|archive-date=2018-11-01|archive-url=https://web.archive.org/web/20181101095534/https://newsroom.intel.com/news-releases/volkswagen-mobileye-champion-motors-invest-israel-deploy-first-autonomous-ev-ride-hailing-service/|url-status=live}}</ref>
+
+Mobileye demonstrated an autonomous car equipped only with cameras on the streets of Jerusalem in January 2020,<ref>{{cite web|title=Watch Mobileye's self-driving car drive through Jerusalem using only cameras|url=https://www.theverge.com/2020/1/7/21055450/mobileye-self-driving-car-watch-camera-only-intel-jerusalem|date=January 7, 2020|website=The Verge}}</ref> later testing the cars in Munich<ref>{{cite web|title=Mobileye's autonomous cars use cameras to navigate freeways in Munich|url=https://venturebeat.com/2020/12/15/mobileyes-autonomous-cars-use-cameras-to-navigate-freeways-in-munich/|date=December 15, 2020|website=Venture Beat}}</ref> and New York City.<ref name=":2">{{cite web|title=Intel's Mobileye takes its autonomous vehicle testing program to New York City|url=https://techcrunch.com/2021/07/20/intels-mobileye-takes-its-autonomous-vehicle-testing-program-to-new-york-city/|date=July 20, 2021|website=Tech Crunch}}</ref>
+
+In December 2021, Intel announced its plan to take Mobileye automotive unit public via an [[Initial public offering|IPO]] of newly issued stock in 2022, maintaining its majority ownership of the company.<ref>{{cite news|last1=Metz|first1=Cade|date=6 December 2021|title=Intel will take its Mobileye automotive unit public in 2022|work=The New York Times|url=https://www.nytimes.com/2021/12/06/technology/intel-mobileye-ipo.html|url-status=live|access-date=9 January 2022|archive-url=https://web.archive.org/web/20220109195415/https://www.nytimes.com/2021/12/06/technology/intel-mobileye-ipo.html|archive-date=9 January 2022}}</ref> In October 2022, Intel offered 5–6% of outstanding shares raising $861{{nbsp}}million by selling 41{{nbsp}}million shares, valuing Mobileye at around $17{{nbsp}}billion{{snd}}more than what it originally paid in 2017.<ref name=wsj-ipo22>{{cite web |url=https://www.wsj.com/articles/intel-prices-widely-anticipated-ipo-for-self-driving-car-unit-mobileye-11666736996 |title=Intel Prices Widely Anticipated IPO for Self-Driving Car Unit Mobileye |date=October 25, 2022 | last=Driebusch |first=Corrie |work=[[The Wall Street Journal]] |url-access=limited}}</ref><ref name=bloom-ipo22>{{cite web |url=https://www.bloomberg.com/news/articles/2022-10-25/mobileye-global-said-to-price-ipo-above-range-at-21-a-share |title=Mobileye Global Prices IPO Above Range to Raise $861 Million |date=October 25, 2022 |last1=Tse |first1=Crystal |last2=King |first2=Ian |work=[[Bloomberg News]] |url-access=limited |archive-url=http://archive.today/2022.10.26-032944/https://www.bloomberg.com/news/articles/2022-10-25/mobileye-global-said-to-price-ipo-above-range-at-21-a-share |archive-date=October 26, 2022 |url-status=live}}</ref> Intel continued to hold all of Mobileye's Class B shares, giving itself an overall 99.4% of voting power.<ref name=bloom-ipo22 /> Mobileye picked the same stock ticker it used prior to the acquisition{{snd}}MBLY{{snd}}but on the [[Nasdaq]].<ref name=wsj-ipo22 />
+[[File:Mobileye logo.jpg|thumb|Original Mobileye logo]]
+
+=== Partnerships ===
+Mobileye has formed a number of partnerships with automakers. Mobileye launched multiple series productions for [[Lane departure warning system|LDW]] on GM [[Cadillac]] STS and DTS vehicles,<ref>{{cite web|title=Advanced Lane Departure Warning Debuts in Select 2008 GM Cars|url=https://www.automotive-fleet.com/47238/advanced-lane-departure-warning-debuts-in-select-2008-gm-cars|date=October 19, 2007|website=www.automotive-fleet.com}}</ref> and on [[BMW 5 Series|BMW 5]] and [[BMW 6 Series|6 Series]] vehicles.<ref>{{cite web|title=Mobileye EyeQ1 SoC powers Continental camera for BMW 7 Series|url=https://www.electronicdesign.com/markets/automotive/article/21796716/mobileye-eyeq1-soc-powers-continental-camera-for-bmw-7-series|date=September 11, 2008|website=www.electronicdesign.com}}</ref> In 2016, Mobileye and [[Delphi (software)|Delphi]] formed a partnership to develop a near-complete autonomous driving system by 2019.<ref>{{Cite web|title=Delphi and Mobileye are teaming up to build a self-driving system by 2019|url=https://www.theverge.com/2016/8/23/12603624/delphi-mobileye-self-driving-autonomous-car-2019|date=August 23, 2016|website=The Verge}}</ref> In early 2017, Mobileye announced a partnership with BMW to integrate Mobileye technology into vehicles going to market in 2018. In 2018, Mobileye announced partnerships with BMW, [[Nissan]] and Volkswagen.<ref>{{cite web|title=Nissan and Mobileye are teaming up on ProPilot 2.0|url=https://www.cnet.com/roadshow/news/mobileye-nissan-nio-pro-pilot-self-driving/|date=August 22, 2019|website=www.cnet.com}}</ref> In 2019, Mobileye and NIO announced that they would partner on the development of AVs for consumer markets in China and other major territories.<ref>{{cite web|title=Mobileye's Partnerships with BMW, Ford, NIO, Nissan, Volkswagen & WILLER|url=https://cleantechnica.com/2020/08/10/mobileyes-partnerships-with-bmw-ford-nio-nissan-volkswagen-willer/|date=August 10, 2020|website=www.cleantechnica.com}}</ref> In July 2020, Mobileye and [[Ford Motor Company|Ford]] announced a deal in which Mobileye would supply its EyeQ camera-based gear and software across Ford's global product line.<ref>{{cite web|title=How Ford cars are getting closer to driving with Intel's Mobileye|url=https://fortune.com/2020/07/20/ford-intel-mobileye-self-driving-cars/|date=July 20, 2020|website=Fortune}}</ref><ref>{{cite web|title=Mobileye Wants to teach Your Robotic Car to Merge in Heavy Boston Traffic|url=https://www.forbes.com/sites/alanohnsman/2017/01/13/mobileye-wants-to-teach-your-robotic-car-to-merge-in-heavy-boston-traffic/?sh=1e424bdd41b4|date=January 13, 2017|website=Forbes}}</ref> Also in 2020, Mobileye announced a partnership with WILLER29<ref>{{cite web|title=Mobileye & WILLER Partner for Robotaxis in Japan|url=https://cleantechnica.com/2020/08/06/mobileye-willer-partner-for-robotaxis-in-japan/|date=August 6, 2020|website=www.cleantechnica.com}}</ref> to launch a robotaxi service in [[Japan]], [[Taiwan]] and [[Southeast Asia]]<ref>{{cite news|title=Mobileye teams with WILLER to bring robotaxis to Japan|url=https://en.globes.co.il/en/article-mobileye-teams-with-willer-to-bring-robotaxis-to-japan-1001335082|date=July 8, 2020|newspaper=Globes}}</ref> and with [[Geely]] for ADAS.<ref>{{Cite web|title=China's Geely to install Mobileye autonomous driving tech in future vehicles|url=https://www.calcalistech.com/ctech/articles/0,7340,L-3851216,00.html|date=September 24, 2020|website=www.calcalistech.com}}</ref><ref>{{Cite web|title=Mobileye signs driver-assistance deal with Geely, one of China's largest privately held auto makers|url=https://social.techcrunch.com/2020/09/23/mobileye-signs-driver-assistance-deal-with-geely-one-of-chinas-largest-privately-held-auto-makers/|access-date=2020-09-25|website=TechCrunch|date=24 September 2020|language=en-US}}{{Dead link|date=August 2023 |bot=InternetArchiveBot |fix-attempted=yes }}</ref> The same year, Intel announced that it had acquired Moovit, a mobility-as-a-service (MaaS) company, to enhance Mobileye's MaaS offering.<ref>{{cite web|title=Intel acquires transit data startup Moovit for $900 million|url=https://www.theverge.com/2020/5/4/21246672/intel-moovit-acquisition-self-driving-mobility-robotaxi|date=May 4, 2020|website=The Verge}}</ref>
+
+In February 2021, Mobileye, [[Transdev]] Autonomous Transport System (ATS) and Lohr Group formed a partnership to develop and deploy autonomous shuttles,<ref>{{cite web|title=Mobileye, Transdev, Lohr partner on autonomous shuttles|url=http://magazine.todaysmotorvehicles.com/article/april-2021/mobileye-transdev-lohr-partner-on-autonomous-shuttles.aspx|website=www.todaysmotorvehicles.com|access-date=2022-03-16|archive-date=2022-02-21|archive-url=https://web.archive.org/web/20220221111000/http://magazine.todaysmotorvehicles.com/article/april-2021/mobileye-transdev-lohr-partner-on-autonomous-shuttles.aspx|url-status=dead}}</ref> and in April Mobileye announced a partnership with Udelv on the company's electric self-driving delivery vehicle, called "Transporter", with the goal to begin commercial operations in 2023.<ref>{{cite web|title=Intel's Mobileye teams with Udelv to launch 35,000 driverless delivery vehicles by 2028|url=https://techcrunch.com/2021/04/12/ntels-mobileye-teams-with-udelv-to-launch-35000-driverless-delivery-vehicles-by-2028/|date=April 12, 2021|website=Tech Crunch}}</ref> In May 2021, [[Toyota|Toyota Motor Corp]]. selected Mobileye and German supplier [[ZF Friedrichshafen|ZF]] to develop and supply ADAS for a number of vehicle platforms.<ref>{{cite web|title=ZF and Mobileye safety technology chosen by Toyota|url=https://www.automotiveworld.com/news-releases/zf-and-mobileye-safety-technology-chosen-by-toyota/|date=May 18, 2021|website=www.automotiveworld.com}}</ref><ref>{{Cite web|title=Mobileye, ZF team on advanced safety systems for Toyota|url=https://www.reuters.com/business/autos-transportation/mobileye-zf-team-advanced-safety-systems-toyota-2021-05-18/|date=May 18, 2021|website= Reuters}}</ref> Mobileye also began a partnership with [[Mahindra & Mahindra|Mahindra]] in 2021.<ref>{{cite web|title=Now, cars can have sensors to alert possible collisions|url=https://www.thehindu.com/news/cities/Hyderabad/now-cars-can-have-sensors-to-alert-possible-collisions/article36654073.ece\|date=September 24, 2021|website=The Hindu}}</ref>
+
+==== Porsche ====
+In May 2023, Porsche and Mobileye<ref>{{Cite web |title=Porsche and Mobileye launch SuperVision collaboration {{!}} Mobileye Blog |url=https://www.mobileye.com/news/porsche-mobileye-supervision-collaboration/ |access-date=2023-05-30 |website=Mobileye |language=en}}</ref> launched a collaboration to provide Mobileye’s SuperVision™ premium advanced driver assistance systems in future Porsche production models. 
+
+==== Tesla ====
+In August 2015, [[Tesla Motors]] announced that it would incorporate Mobileye's technology in Model S cars.<ref name=":0">[http://news.nocamels.com/2015/08/23/mobileyes-tech-powers-tesla-model-s/ Mobileye’s Tech Powers Tesla Model] {{Webarchive|url=https://web.archive.org/web/20150826134047/http://news.nocamels.com/2015/08/23/mobileyes-tech-powers-tesla-model-s/|date=2015-08-26}} NoCamels News 23 August 2015</ref> Tesla reportedly did not share its plans with Mobileye, and after the first deadly crash of a self-driving [[Tesla Model S|Model S]] with active ''Autopilot'' became public in June 2016, Mobileye announced the end of their partnership.<ref>{{cite news|last1=Bhuiyan|first1=Johana|title=In the wake of a fatal crash, Tesla will quit using Mobileye's chips for Autopilot vision|url=http://www.recode.net/2016/7/26/12285930/tesla-mobileye-self-driving-cars|access-date=26 July 2016|publisher=ReCode|date=26 July 2016|archive-date=27 July 2016|archive-url=https://web.archive.org/web/20160727135722/http://www.recode.net/2016/7/26/12285930/tesla-mobileye-self-driving-cars|url-status=live}}</ref><ref>{{cite news|last1=Korosec|first1=Kristen|title=Mobileye Is Ending Its Relationship With Tesla on Future Self-Driving Car Tech|url=http://fortune.com/2016/07/26/mobileye-tesla-self-driving-cars/|access-date=26 July 2016|publisher=Fortune|date=26 July 2016|archive-date=29 July 2016|archive-url=https://web.archive.org/web/20160729192432/http://fortune.com/2016/07/26/mobileye-tesla-self-driving-cars/|url-status=live}}</ref> The two companies expressed disagreement over what caused the accident,<ref>{{cite web|title=tesla and Mobileye disagree on lack of emergency braking in deadly Autopilot crash|url=https://www.theverge.com/2016/7/1/12085218/tesla-autopilot-crash-investigation-radar-automatic-emergency-braking|date=July 1, 2016|website=The Verge}}</ref> with Mobileye CEO Amnon Shashua claiming that Tesla "was pushing the envelope in terms of safety" and that Autopilot is a "driver assistance system" and not a "driverless system".<ref>{{cite web|title=Mobileye says Tesla was 'pushing the envelope in terms of safety'|url=https://www.reuters.com/article/us-mobileye-tesla/mobileye-says-tesla-was-pushing-the-envelope-in-terms-of-safety-idUSKCN11K2T8|date=September 15, 2016|website=Reuters}}</ref> Mobileye also issued a statement that its systems were not designed to recognize a "lateral turn across path" and would not have those capabilities until 2018.<ref name=":1">[https://www.theverge.com/2016/7/1/12085218/tesla-autopilot-crash-investigation-radar-automatic-emergency-braking Tesla and Mobileye disagree on lack of emergency braking in deadly Autopilot crash] {{Webarchive|url=https://web.archive.org/web/20170621190909/https://www.theverge.com/2016/7/1/12085218/tesla-autopilot-crash-investigation-radar-automatic-emergency-braking|date=2017-06-21}}, on [[The Verge]], July 1, 2016</ref>
+
+==Technology==
+===EyeQ===
+The EyeQ system-on-chip (SoC) utilizes a single camera sensor to provide passive/active ADAS and features including [[Collision avoidance system|automatic emergency braking]] (AEB), [[adaptive cruise control]] (ACC), [[Lane departure warning system|lane keeping assist]](LKA), traffic jam assist (TJA) and [[Collision avoidance system|forward collision warning]] (FCW).<ref>{{cite web|title=Inside the Suppliers: Mobileye|url=https://www.carexpert.com.au/car-news/inside-the-suppliers-mobileye|date=February 21, 2021|website=www.carexpert.com.au}}</ref> Mobileye's fifth-generation EyeQ is able to support fully-autonomous (Level 5) vehicles. More than 27 automobile manufacturers utilize EyeQ for their assisted-driving technologies.<ref>{{cite web|title=Mobileye's EyeQ soc will be able to support fully autonomous (Level 5) vehicles|url=https://www.heshmore.com/mobileyes-eyeq-soc-will-be-able-to-support-fully-autonomous-level-5-vehicles|date=August 31, 2021|website=Heshmore}}</ref>
+
+===Road Experience Management (REM)===
+Mobileye's Road Experience Management, or REM, uses real-time data from Mobileye-equipped vehicles to build out a global 3D map.<ref>{{cite web|title=Intel is taking its self-driving company Mobileye public in 2022|url=https://www.theverge.com/2021/12/7/22822279/intel-mobileye-ipo-2022-autonomous-vehicles-robotaxi|date=December 7, 2021|website=The Verge}}</ref> The data collected is compressed text that collects about 10 [[kilobyte]]s per kilometer<ref name=":2" /> and compiled in the cloud in a map called Mobileye RoadBook which leverages anonymized, crowdsourced data from vehicle cameras for autonomous navigation and localization.<ref>{{cite web|title=Mobileye expands Ford partnership to power driver-assist features|url=https://venturebeat.com/2020/07/20/mobileye-expands-ford-partnership-to-power-driver-assist-features/|date=July 20, 2020|website=Venture Beat}}</ref> According to Mobileye, REM had mapped more than 7.5 billion kilometers of roads by January 2021.<ref>{{cite web|title=Mobileye announces autonomous vehicle pilot programs in Tokyo, Shanghai and Paris|url=https://venturebeat.com/2021/01/11/mobileye-announces-autonomous-vehicle-pilot-programs-in-tokyo-shanghai-and-paris/|date=January 11, 2021|website=Venture Beat}}</ref>
+
+=== Responsibility-Sensitive Safety Model (RSS) ===
+RSS, or the Responsibility-Sensitive Safety Model, is a mathematical model first proposed by Mobileye in 2017 for AV safety.<ref>{{cite arXiv|date=2017 |first1= Shai |last1=Shalev-Shwartz |first2= Shaked |last2=Shammah |first3= Amnon |last3=Shashua |title=On a Formal Model of Safe and Scalable Self-driving Cars |class= cs.RO |eprint= 1708.06374 }}</ref><ref>{{cite web|title=Can Mobileye Validate 'True Redundancy'?|url=https://www.eetimes.com/can-mobileye-validate-true-redundancy/|date=2018-05-22|website=EE Times}}</ref> RSS is a formal model for AV decision-making that digitizes the implicit rules of safe driving for AVs to prevent self-driving vehicles from causing accidents. RSS is defined in software.<ref>{{Cite web|date=2018-07-04|title=Baidu partners with Intel's Mobileye to enhance Apollo self-driving platform|url=https://venturebeat.com/2018/07/03/baidu-partners-with-intel-and-mobileye-to-enhance-its-self-driving-platform/|access-date=|website=VentureBeat|language=en-US}}</ref>
+
+=== True Redundancy ===
+True Redundancy is an integrated system that utilizes data streams from 360-surround view cameras, lidar, and radar for level 4 autonomous driving.<ref>{{Cite web|last=Saleem|first=Rohail|date=2020-11-23|title=Luminar Has Given Intel's (NASDAQ: INTC) Mobileye a Shot at Outshining Tesla's (NASDAQ: TSLA) Autopilot|url=https://wccftech.com/luminar-has-given-intels-mobileye-a-shot-at-outshining-teslas-autopilot/|access-date=|website=Wccftech|language=en-US}}</ref> This approach first "doubles down" on the computer-vision subsystem before adding a lidar/radar subsystem for redundancy.<ref>{{Cite web|last=|date=2021-07-20|title=Mobileye testing autonomous vehicles in New York City|url=https://www.calcalistech.com/ctech/articles/0,7340,L-3912941,00.html|access-date=|website=CTECH - www.calcalistech.com}}</ref>
+
+=== Mobileye Supervision ===
+SuperVision uses EyeQ5 SoC devices processing data from 11 cameras.<ref>{{Cite web|date=2021-08-27|title=Mobileye and ZEEKR expand partnership to enable future of cars|url=https://www.automotiveworld.com/news-releases/mobileye-and-zeekr-expand-partnership-to-enable-future-of-cars/|access-date=|website=Automotive World|language=en-GB}}</ref><ref name="auto">{{Cite web|date=2021-09-07|title=Mobileye adds fresh updates to big driverless vision|url=https://www.autonews.com/mobility-report/mobileye-adds-new-details-driverless-path-ahead|access-date=|website=Automotive News|language=en}}</ref> The system uses cameras only and is designed for Level 2+ cars,<ref>{{cite web|title=China's Geely to deploy Mobileye's 'Hands-free' ADAS|url=https://www.eetimes.com/chinas-geely-to-deploy-mobileyes-hands-free-adas/|date=2020-09-25|website=EE Times}}</ref> and allows for hands-free driving and self-parking capabilities.<ref name="auto"/> Geely's [[Zeekr 001|Zeekr electric vehicle]] is equipped with the Mobileye SuperVision ADAS and began road trials in 2021.<ref>{{Cite news|date=2021-04-18|title=Tesla rival Geely lands in Israel for Mobileye trials|language=en|work=Globes|url=https://en.globes.co.il/en/article-tesla-rival-geely-lands-in-israel-for-mobileye-trials-1001367876|access-date=}}</ref><ref>{{Cite web|title=Mobileye signs driver-assistance deal with Geely, one of China's largest privately held auto makers|url=https://social.techcrunch.com/2020/09/23/mobileye-signs-driver-assistance-deal-with-geely-one-of-chinas-largest-privately-held-auto-makers/|access-date=|website=TechCrunch|date=24 September 2020|language=en-US}}{{Dead link|date=August 2023 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+=== Mobileye Drive ===
+Mobileye Drive is a Level 4 self-driving system. The full sensor suite includes 13 cameras, 3 long-range [[Lidar|LiDARs]], 6 short-range LiDARs and 6 [[radar]]s.<ref name=":5">{{Cite web|last=Cole|first=Craig|title=Mobileye self-driving taxis heading to public roads next year|url=https://www.cnet.com/roadshow/news/mobileye-self-driving-taxis/|access-date=|website=Roadshow|language=en}}</ref> Mobileye Drive was first fitted to vehicles used for driverless, ride-hailing services in 2021, with plans for public testing in Germany and Israel in 2022.<ref>{{Cite web|last=Hawkins|first=Andrew J.|date=2021-09-07|title=Intel's Mobileye will launch a robotaxi service in Germany in 2022|url=https://www.theverge.com/2021/9/7/22659366/intel-mobileye-robotaxi-germany-sixt-moovit|access-date=|website=The Verge|language=en}}</ref><ref name=":5" />
+
+=== Aftermarket ===
+Mobileye's aftermarket vision-based ADAS systems are based on the same core technology as for production models. These systems offer lane departure warning, forward collision warning, headway monitoring and warning, intelligent headlamp control and speed limit indication (tsr).<ref>{{Cite news|last=Jensen|first=Christopher|date=2019-04-16|title=High-Tech Collision Warnings, No Matter How Smart Your Car Is|language=en-US|work=The New York Times|url=https://www.nytimes.com/2019/04/16/business/collision-warning-systems-aftermarket.html|access-date=|issn=0362-4331}}</ref> These systems have also been integrated with fleet management systems.<ref>{{cite web|date=Apr 14, 2010|title=InstallerNet to handle installation of Mobileye systems|url=http://fleetowner.com/equipment/news/installernet-mobileye-installation-0414|url-status=live|archive-url=https://web.archive.org/web/20150323052258/http://fleetowner.com/equipment/news/installernet-mobileye-installation-0414|archive-date=2015-03-23|access-date=2015-01-26|website=Fleet Owner}}</ref>
+
+==Chips==
+
+===Comparison===
+{| class="wikitable"
+|+
+!Mobileye<ref>{{Cite news|url=https://www.mobileye.com/our-technology/evolution-eyeq-chip/|title=The Evolution of EyeQ|work=Mobileye|access-date=2017-12-08|language=en-US|archive-date=2017-12-07|archive-url=https://web.archive.org/web/20171207090412/http://www.mobileye.com/our-technology/evolution-eyeq-chip/|url-status=live}}</ref>
+!EyeQ1
+!EyeQ2
+!EyeQ3
+! colspan="2" |EyeQ4
+! colspan="2" |EyeQ5
+! colspan="2" |EyeQ6
+!EyeQ Ultra
+|-
+!Configuration
+|
+|
+|
+|Mid
+|High
+|Mid
+|High
+|Lite
+|High
+|
+|-
+!On market
+|2008
+|2010
+|2014
+| colspan="2" |2018
+|2021
+|2021
+|2023
+|2024
+|2023
+|-
+!Claimed autonomous level
+| colspan="2" |Driver Assistance
+|2
+|2
+|2+
+|2+
+|4
+|2
+|2+
+|5
+|-
+!Performance (int8 TOPS)
+|0.0044
+|0.026
+|0.256
+|1.1
+|2
+|4.6
+|16
+|5
+|34
+|176
+|-
+!Power consumption
+|2.5 watt
+|2.5 watt
+|2.5 watt
+|
+|
+|
+|
+|
+|
+|
+|-
+!CPU
+|
+|
+|
+|
+|
+|
+|
+|2 core, 8 thread
+|8 core, 32 thread
+|12 core, 24 thread
+|-
+!Memory
+|
+|
+|
+|
+|
+|
+|
+|LPDDR4(X)
+|LPDDR5
+|LPDDR5X
+|-
+!Semiconductor node
+|180&nbsp;nm CMOS
+|90&nbsp;nm CMOS
+|40&nbsp;nm CMOS
+| colspan="2" |28&nbsp;nm FD-SOI
+| colspan="2" |7&nbsp;nm FinFET
+| colspan="2" |7&nbsp;nm FinFET
+|5&nbsp;nm
+|-
+!Algorithms & neural networks
+|
+|
+|
+*Vehicle's Rear
+*Pedestrians
+*Lane Markings
+*Semantic Free Space
+*Traffic signs
+| colspan="2" |
+*3D Vehicles,
+*Next-Gen Lane Markings
+*Road Markings
+*Traffic Lights
+*Relevance of Traffic Lights
+*Next-Gen Semantic Free Space
+*Road Profile
+*General Objects
+*Hazards
+*Animals
+*Path Prediction
+*Road Edges
+| colspan="2" |
+*3D Vidar (Pseudo Lidar)
+*Pixel-Level Scene Segmentation
+*Full Image Detection
+*Surface Segmentation
+*Lane Semantics
+*Road Users Trajectory Prediction
+*Parallax Net
+*Vector Field,
+*Multi-Camera Bird's Eye View Network
+*Road Users Understanding
+*Road Geometry
+|
+|
+|
+|-
+!Implementations
+|
+|
+| style="vertical-align: top;" |
+*Audi's Traffic Jam Pilot<ref>{{Cite web |date=2017-09-07 |title=First impressions of Audi's self-driving system |url=https://europe.autonews.com/article/20170909/BLOG15/170909839/first-impressions-of-audi-s-self-driving-system |url-status=live |archive-url=https://web.archive.org/web/20190102151036/https://europe.autonews.com/article/20170909/BLOG15/170909839/first-impressions-of-audi-s-self-driving-system |archive-date=2019-01-02 |access-date=2019-01-02 |website=Automotive News Europe |language=en}}</ref>
+**[[Audi A8|2019 Audi A8]]
+*[[Cadillac CT6]] (2017-2019)
+*GM's Supercruise<ref>{{Cite web|url=https://www.autopilotreview.com/tesla-autopilot-features-review/|title=Tesla Autopilot Review and Features for 2019|last=Steve|date=2018-09-21|website=AutoPilot Review|language=en-US|access-date=2019-01-02|archive-date=2019-01-02|archive-url=https://web.archive.org/web/20190102143148/https://www.autopilotreview.com/tesla-autopilot-features-review/|url-status=live}}</ref>
+*[[Ford F-150]] (2018-2020)
+*Nissan's ProPilot <ref>{{Cite web|url=https://jalopnik.com/the-2018-nissan-leaf-will-come-with-a-semi-autonomous-d-1796364797|title=The 2018 Nissan Leaf Might Be The First Affordable Non-Tesla To Drive Itself|last=Tracy|first=David|date=23 June 2017|website=Jalopink|access-date=2 January 2019|archive-date=2 January 2019|archive-url=https://web.archive.org/web/20190102194940/https://jalopnik.com/the-2018-nissan-leaf-will-come-with-a-semi-autonomous-d-1796364797|url-status=live}}</ref><ref>{{Cite news|url=https://seekingalpha.com/article/3991836-mobileyes-mbly-ceo-ziv-aviram-q2-2016-results-earnings-call-transcript|title=Mobileye's (MBLY) CEO Ziv Aviram on Q2 2016 Results - Earnings Call Transcript|date=26 July 2016|work=Seeking Alpha|access-date=2 January 2019|archive-date=23 October 2016|archive-url=https://web.archive.org/web/20161023043852/http://seekingalpha.com/article/3991836-mobileyes-mbly-ceo-ziv-aviram-q2-2016-results-earnings-call-transcript|url-status=live}}</ref><ref>{{Cite web|url=https://www.garbernissan.net/blog/model-highlight/nissan-to-expand-propilot-technology/|title=Nissan to Expand ProPILOT Technology|date=2018-05-21|website=Garber Nissan|language=en|access-date=2019-01-02|archive-date=2019-01-02|archive-url=https://web.archive.org/web/20190102144747/https://www.garbernissan.net/blog/model-highlight/nissan-to-expand-propilot-technology/|url-status=dead}}</ref>
+** 2020 Nissan Skyline
+** 2022 Nissan Ariya
+*[[Tesla Autopilot]] Hardware 1
+**Model S & X (Sep-2014 – Oct-2016)
+*Volvo's Pilot Assist 1, 2 & 3 <ref>{{Cite web|url=https://arstechnica.com/cars/2016/05/from-audi-to-volvo-most-self-driving-cars-use-the-same-hardware/|title=From Audi to Volvo, most "self-driving" cars use the same hardware|last=Gitlin|first=Jonathan M.|date=2016-05-26|website=Ars Technica|language=en-us|access-date=2019-01-02|archive-date=2019-01-03|archive-url=https://web.archive.org/web/20190103004738/https://arstechnica.com/cars/2016/05/from-audi-to-volvo-most-self-driving-cars-use-the-same-hardware/|url-status=live}}</ref><ref>{{Cite web|url=http://nocamels.com/2015/06/mobileye-driverless-car/|title=Mobileye Gearing Up For Driverless Cars {{!}} Technology News|date=2015-06-30|website=NoCamels - Israeli Innovation News|language=en-US|access-date=2019-01-02|archive-date=2019-01-03|archive-url=https://web.archive.org/web/20190103004736/http://nocamels.com/2015/06/mobileye-driverless-car/|url-status=live}}</ref>
+| colspan="2" style="vertical-align: top;" |
+*BMW Driving Assistant Professional<ref>{{Cite web |last=Huetter |first=John |date=2018-10-03 |title=2019 BMW 3 Series has aluminum hood and fenders, slew of possible tech |url=https://www.repairerdrivennews.com/2018/10/03/2019-bmw-3-series-has-aluminum-hood-and-fenders-slew-of-possible-tech/ |url-status=live |archive-url=https://web.archive.org/web/20190102151310/https://www.repairerdrivennews.com/2018/10/03/2019-bmw-3-series-has-aluminum-hood-and-fenders-slew-of-possible-tech/ |archive-date=2019-01-02 |access-date=2019-01-02 |website=Repairer Driven News |language=en-US}}</ref><ref>{{Cite web |title=BMW USA News - The All-New 2019 BMW X5 Sports Activity Vehicle. |url=http://www.bmwusanews.com/newsrelease.do?id=3241&mid |url-status=live |archive-url=https://web.archive.org/web/20190103010241/http://www.bmwusanews.com/newsrelease.do?id=3241&mid |archive-date=2019-01-03 |access-date=2019-01-02 |website=www.bmwusanews.com}}</ref>
+**X5 (2019 - 2020)
+**3 Series (2019 - 2020)
+*[[Ford Mustang Mach-E]] (2021) <ref>{{Cite web |title=Ford and Mobileye Expand Relationship to Offer Better Camera-Based Collision Avoidance in Global Vehicles |url=https://media.ford.com/content/fordmedia/fna/us/en/news/2020/07/20/ford-mobileye-camera-based-collision-avoidance.html |url-status=live |archive-url=https://web.archive.org/web/20200720165851/https://media.ford.com/content/fordmedia/fna/us/en/news/2020/07/20/ford-mobileye-camera-based-collision-avoidance.html |archive-date=2020-07-20 |access-date=2020-07-20}}</ref>
+*[[Ford F-150]] (2021)
+*[[Li Xiang One]]
+*NIO Pilot<ref>{{Cite web|url=https://venturebeat.com/2017/12/18/nio-launches-es8-suv-with-new-user-experience/|title=NIO Launches ES8 SUV with New User Experience|date=2017-12-18|website=VentureBeat|language=en-US|access-date=2019-01-02|archive-date=2019-01-02|archive-url=https://web.archive.org/web/20190102143243/https://venturebeat.com/2017/12/18/nio-launches-es8-suv-with-new-user-experience/|url-status=live}}</ref><ref>{{Cite web|url=https://leasehackr.com/blog/2018/6/13/we-drive-the-all-electric-nio-es8-suv-leasehackr-exclusive|title=Off-Ramp: We drive the 643 HP electric NIO ES8 SUV! (Leasehackr Exclusive)|website=LEASEHACKR|date=13 June 2018 |language=en-US|access-date=2019-01-02|archive-date=2019-01-02|archive-url=https://web.archive.org/web/20190102143130/https://leasehackr.com/blog/2018/6/13/we-drive-the-all-electric-nio-es8-suv-leasehackr-exclusive|url-status=live}}</ref><ref>{{Cite web|url=https://www.cnet.com/roadshow/news/nio-es6-317-mile-electric-suv/|title=Nio ES6 is a 317-mile electric SUV with a swappable, upgradable battery|last=Goodwin|first=Antuan|website=Roadshow|language=en|access-date=2019-01-02|archive-date=2019-01-02|archive-url=https://web.archive.org/web/20190102143120/https://www.cnet.com/roadshow/news/nio-es6-317-mile-electric-suv/|url-status=live}}</ref>
+**[[Nio ES8]]
+**[[Nio ES6]]
+*Nissan's ProPilot 2.0 <ref>{{Cite web|url=https://www.engadget.com/2019/05/16/nissan-skyline-propilot-2-driver-assist/|title=Nissan's ProPilot 2.0 driver assist allows hands-off highway driving|website=Engadget|language=en|access-date=2019-11-14|archive-date=2019-06-05|archive-url=https://web.archive.org/web/20190605190044/https://www.engadget.com/2019/05/16/nissan-skyline-propilot-2-driver-assist/|url-status=live}}</ref><ref>{{Cite web|url=https://www.cnet.com/roadshow/news/mobileye-nissan-nio-pro-pilot-self-driving/|title=Nissan and Mobileye are teaming up on ProPilot 2.0|last=Hyatt|first=Kyle|website=Roadshow|language=en|access-date=2019-11-14|archive-date=2019-12-15|archive-url=https://web.archive.org/web/20191215172748/https://www.cnet.com/roadshow/news/mobileye-nissan-nio-pro-pilot-self-driving/|url-status=live}}</ref>
+*VW Travel Assist<ref>{{Cite web|url=https://www.topgear.com/car-news/geneva-motor-show/new-volkswagen-passat-can-drive-itself-130mph|title=The new Volkswagen Passat can drive itself at 130mph|date=2019-02-06|website=Top Gear|language=en|access-date=2019-11-14|archive-date=2020-08-04|archive-url=https://web.archive.org/web/20200804012055/https://www.topgear.com/car-news/geneva-motor-show/new-volkswagen-passat-can-drive-itself-130mph|url-status=live}}</ref>
+**[[Volkswagen Passat]] (2019-2020)
+**[[Volkswagen Golf Mk8|Volkswagen Golf 8]] (2020)
+*Honda Sensing<ref>{{Cite web |title=Scott Brown on LinkedIn: Check out this 2022 Honda Civic &quot;MobilEye&quot; &quot;EyeQ®4M&quot; Camera warning label! |url=https://www.linkedin.com/posts/scott-brown-diag_check-out-this-2022-honda-civic-mobileye-activity-7077669450010787840-J3wn |access-date=2023-09-06 |website=www.linkedin.com |language=en}}</ref>
+**[[Honda HR-V]] (2021)
+**[[Honda Civic (eleventh generation)|Honda Civic]] (2022)
+**[[Honda ZR-V]] (2023)
+| colspan="2" |
+*BMW's Personal Copilot <ref>{{Cite web |date=2020-09-24 |title=BMW Unveils AV Safety Platform Architecture |url=https://www.eetasia.com/bmw-unveils-av-safety-platform-architecture/ |url-status=live |archive-url=https://web.archive.org/web/20210121024741/https://www.eetasia.com/bmw-unveils-av-safety-platform-architecture/ |archive-date=2021-01-21 |access-date=2020-05-07 |website=eetasia |language=en-US}}</ref><ref>{{Cite web |title=Innoviz Claims New Lidar Sensor 70% Cheaper, Better Performance |url=https://www.forbes.com/sites/samabuelsamid/2020/10/14/innoviz-claims-new-lidar-sensor-70-cheaper-better-performance/?sh=7c1a7584777f |url-status=live |archive-url=https://web.archive.org/web/20211015121915/https://www.forbes.com/sites/samabuelsamid/2020/10/14/innoviz-claims-new-lidar-sensor-70-cheaper-better-performance/?sh=7c1a7584777f |archive-date=2021-10-15 |access-date=2020-10-14 |website=Forbes |language=en-US}}</ref>
+**[[BMW iX]] (2022)
+*Zeekr Copilot (SuperVision™)<ref>{{Cite web|url=https://techcrunch.com/2020/09/23/mobileye-signs-driver-assistance-deal-with-geely-one-of-chinas-largest-privately-held-auto-makers/|title=Mobileye signs driver-assistance deal with Geely, one of China's largest privately held auto makers|date=2020-09-24|website=TechCrunch|language=en-US|archive-date=2020-09-24|archive-url=https://web.archive.org/web/20200924072134/https://techcrunch.com/2020/09/23/mobileye-signs-driver-assistance-deal-with-geely-one-of-chinas-largest-privately-held-auto-makers/|url-status=live}}</ref><ref>{{Cite web|url=https://vehicle-electronics.biz/news/geely-uses-mobileye-adas-premium-ev/2228|title=Geely uses Mobileye ADAS in premium EV|website=VehicleElectronics|language=en-US|archive-date=2021-10-15|archive-url=https://web.archive.org/web/20211015080931/https://vehicle-electronics.biz/news/geely-uses-mobileye-adas-premium-ev/2228|url-status=live}}</ref>
+**[[Zeekr 001]] (2021)
+**[[Zeekr 009]] (2023)
+|
+|
+|
+|}
+
+===Hardware===
+{| class="wikitable"
+|+
+!Production model
+|Zeekr 001<ref>{{Cite news|url=https://autonews.gasgoo.com/70017577.html|title=Mobileye and Geely to Offer Most Robust Driver Assistance Features|website=gasgoo|access-date=2020-09-26|language=en-US|archive-date=2020-09-25|archive-url=https://web.archive.org/web/20200925181002/http://autonews.gasgoo.com/70017577.html|url-status=live}}</ref>
+|-
+!Production date
+| Q4 2021
+|-
+!Product name
+| Co-pilot
+|-
+! colspan="6" | Chips
+|-
+! Board
+| [[#Chips|2x MobilEye EyeQ5H]]<ref>{{Cite news|url=http://wccftech.com/tesla-autopilot-future/|title=The Future of Tesla Autopilot - What Happens After Mobileye?|date=2016-07-29|newspaper=Wccftech|language=en-US|access-date=2016-12-31|archive-date=2017-01-01|archive-url=https://web.archive.org/web/20170101161433/http://wccftech.com/tesla-autopilot-future/|url-status=live}}</ref>
+|-
+! colspan="6" | Sensors
+|-
+! Forward radar
+| colspan="2" | 250&nbsp;m (820&nbsp;ft) ultra-long sensing millimeter wave radar
+|-
+! Forward cameras
+| colspan="3" | {{ubl|Narrow (28°): 8 megapixels | Main (120°): 8 megapixels}}
+|-
+! Forward looking side cameras
+| colspan="3" | {{ubl |Left (100°): 8 megapixels |  Right (100°): 8 megapixels}}
+|-
+! Rearward looking side cameras
+| colspan="3" | {{ubl |Left (100°): 8 megapixels | Right: (100°): 8 megapixels}}
+|-
+! Rearview cameras
+| colspan="3" | {{ubl |Rear (60°): 8 megapixels}}
+|-
+! Parking cameras
+| colspan="3" | {{ubl |4x Parking Cameras (192°): 8 megapixels}}
+|-
+|}
+
+== See also ==
+*[[Science and technology in Israel]]
+*[[Economy of Israel]]
+*[[Start-up Nation]]
+*[[OrCam device]]
+*[[Automatic Emergency Braking|Automatic emergency braking]]
+*[[Advanced driver-assistance systems|ADAS]]
+*[[Self-driving car]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{official|https://www.mobileye.com}}
+{{Finance links
+| name = Mobileye Global Inc.
+| symbol = MBLY
+| reuters = MBLY.O
+| bloomberg = MBLY:US
+| sec_cik = 1910139
+| yahoo = MBLY
+| google = MBLY:NASDAQ
+}}
+
+{{Intel}}
+
+[[Category:Vehicle safety technologies]]
+[[Category:Automotive electronics]]
+[[Category:Automotive technology tradenames]]
+[[Category:Israeli brands]]
+[[Category:Commercial computer vision systems]]
+[[Category:Applications of artificial intelligence]]
+[[Category:Software companies of Israel]]
+[[Category:Software companies established in 1999]]
+[[Category:Intelligent transportation systems]]
+[[Category:Warning systems]]
+[[Category:Companies based in Jerusalem]]
+[[Category:Companies formerly listed on the New York Stock Exchange]]
+[[Category:Companies listed on the Nasdaq]]
+[[Category:Intel acquisitions]]
+[[Category:Mergers and acquisitions of Israeli companies]]
+[[Category:Israeli inventions]]
+[[Category:2017 mergers and acquisitions]]
+[[Category:1999 establishments in Israel]]
+[[Category:2014 initial public offerings]]
+[[Category:2022 initial public offerings]]

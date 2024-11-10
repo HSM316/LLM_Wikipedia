@@ -1,0 +1,17 @@
+{{Orphan|date=August 2022}}
+
+'''OntoCAPE''' is a large-scale [[ontology (information science)|ontology]] for the [[domain knowledge|domain]] of [[Computer-Aided Process Engineering]] (CAPE). It can be downloaded free of charge via the [https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape/?lidx=1 OntoCAPE Homepage].
+
+OntoCAPE is partitioned into 62 sub-ontologies, which can be used individually or as an integrated suite. The sub-ontologies are organized across different [[abstraction layer]]s, which separate general knowledge from knowledge about particular domains and applications.
+
+* The upper layers have the character of an [[upper ontology]], covering general topics such  as mereotopology, systems theory, quantities and units.
+* The lower layers conceptualize the domain of chemical process engineering, covering domain-specific topics such as materials, chemical reactions, or unit operations.
+
+== Further reading ==
+* Marquardt et al. (2010). [https://www.springer.com/chemistry/book/978-3-642-04654-4 ''OntoCAPE: A Re-Usable Ontology for Chemical Process Engineering'']. Springer-Verlag, Berlin Heidelberg.
+
+== External links ==
+* [https://www.avt.rwth-aachen.de/cms/AVT/Wirtschaft/SoftwareSimulation/~ipts/OntoCape/?lidx=1 OntoCAPE Homepage]
+
+[[Category:Knowledge representation]]
+[[Category:Ontology (information science)]]

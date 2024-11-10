@@ -1,0 +1,64 @@
+In the [[regulation]] of [[algorithm]]s, particularly [[artificial intelligence]] and its subfield of [[machine learning]], a '''right to explanation''' (or '''right to ''an'' explanation''') is a [[right]] to be given an [[explanation]] for an output of the algorithm. Such rights primarily refer to [[individual right]]s to be given an explanation for decisions that significantly affect an individual, particularly legally or financially. For example, a person who applies for a loan and is denied may ask for an explanation, which could be "[[Credit bureau]] X reports that you declared bankruptcy last year; this is the main factor in considering you too likely to default, and thus we will not give you the loan you applied for."
+
+Some such [[legal right]]s already exist, while the scope of a general "right to explanation" is a matter of ongoing debate.
+
+== Examples ==
+=== Credit score in the United States ===
+{{details|Credit score in the United States}}
+
+[[Credit score in the United States]] – more generally, credit actions – have a well-established right to explanation. Under the [[Equal Credit Opportunity Act]] (Regulation B of the [[Code of Federal Regulations]]),
+Title 12, Chapter X, Part 1002, [https://www.ecfr.gov/cgi-bin/text-idx?SID=1bb14fdfd1afc7d3f2d4756d223aeadb&mc=true&node=se12.8.1002_19 §1002.9], creditors are required to notify applicants of action taken in certain circumstances, and such notifications must provide specific reasons, as detailed in §1002.9(b)(2):<ref>[[Consumer Financial Protection Bureau]], [https://www.consumerfinance.gov/eregulations/1002-9/2011-31714#1002-9-b-2 §1002.9(b)(2)]</ref>
+
+{{quote|(2) Statement of specific reasons. The statement of reasons for adverse action required by paragraph (a)(2)(i) of this section must be specific and indicate the principal reason(s) for the adverse action. Statements that the adverse action was based on the creditor's internal standards or policies or that the applicant, joint applicant, or similar party failed to achieve a qualifying score on the creditor's credit scoring system are insufficient.}}
+
+The [https://www.consumerfinance.gov/eregulations/1002-Subpart-Interp/2011-31714#1002-9-b-2-Interp-1 official interpretation] of this section details what types of statements are acceptable.
+
+Credit agencies and data analysis firms such as [[FICO]] comply with this regulation by providing a list of reasons (generally at most 4, per interpretation of regulations), consisting of a numeric '''{{visible anchor|reason code}}''' (as identifier) and an associated explanation, identifying the main factors affecting a credit score.<ref>[http://www.creditscoring.com/creditscore/fico/factors/reason-codes.html US FICO credit risk score reason codes: Fundamental document from FICO listing all of the FICO credit score reasons that a score is not higher], March 31, 2010, by Greg Fisher</ref> An example might be:<ref>[https://www.reasoncode.org/reasoncode101 Reason Codes 101]</ref>
+
+:32: Balances on bankcard or revolving accounts too high compared to credit limits
+
+=== European Union ===
+
+The European Union [[General Data Protection Regulation]] (enacted 2016, taking effect 2018), extends the automated decision-making rights in the 1995 [[Data Protection Directive]] to provide a legally disputed form of a right to an explanation, stated as such in [https://www.privacy-regulation.eu/en/r71.htm Recital 71]: "[the data subject should have] the right ... to obtain an explanation of the decision reached". In full:
+
+{{quote|
+The data subject should have the right not to be subject to a decision, which may include a measure, evaluating personal aspects relating to him or her which is based solely on automated processing and which produces legal effects concerning him or her or similarly significantly affects him or her, such as automatic refusal of an online credit application or e-recruiting practices without any human intervention.
+
+...
+
+In any case, such processing should be subject to suitable safeguards, which should include specific information to the data subject and the right to obtain human intervention, to express his or her point of view, to obtain an explanation of the decision reached after such assessment and to challenge the decision.}}
+
+However, the extent to which the regulations themselves provide a "right to explanation" is heavily debated.<ref>{{cite journal |last1=Goodman |first1=Bryce |title=European Union Regulations on Algorithmic Decision-Making and a 'Right to Explanation' |last2=Flaxman |first2=Seth |url=https://www.aaai.org/ojs/index.php/aimagazine/article/view/2741 |journal=AI Magazine |year=2017 |doi=10.1609/aimag.v38i3.2741|arxiv=1606.08813 }}</ref><ref name=":0" /><ref>[https://iapp.org/news/a/is-there-a-right-to-explanation-for-machine-learning-in-the-gdpr/ Is there a 'right to explanation' for machine learning in the GDPR?], Jun 1, 2017, Andrew Burt</ref> There are two main strands of criticism. There are significant legal issues with the right as found in Article 22 — as recitals are not binding, and the right to an explanation is not mentioned in the binding articles of the text, having been removed during the legislative process.<ref name=":0">{{cite journal |ssrn=2903469 |last1=Wachter |first1=Sandra |last2=Mittelstadt |first2=Brent |last3=Floridi |first3=Luciano |title=Why a Right to Explanation of Automated Decision-Making Does Not Exist in the General Data Protection Regulation |date=December 28, 2016 |journal=International Data Privacy Law}}</ref> In addition, there are significant restrictions on the types of automated decisions that are covered — which must be both "solely" based on automated processing, and have legal or similarly significant effects — which significantly limits the range of automated systems and decisions to which the right would apply.<ref name=":0" /> In particular, the right is unlikely to apply in many of the cases of algorithmic controversy that have been picked up in the media.<ref name=":1">{{Cite journal|last=Edwards|first=Lilian|last2=Veale|first2=Michael|date=2017|title=Slave to the algorithm? Why a "right to an explanation" is probably not the remedy you are looking for|url=http://ssrn.com/abstract=2972855|journal=Duke Law and Technology Review|volume=|pages=|ssrn=2972855|via=}}</ref>
+
+A second potential source of such a right has been pointed to in Article 15, the "right of access by the data subject". This restates a similar provision from the 1995 Data Protection Directive, allowing the data subject access to "meaningful information about the logic involved" in the same significant, solely automated decision-making, found in Article 22. Yet this too suffers from alleged challenges that relate to the timing of when this right can be drawn upon, as well as practical challenges that mean it may not be binding in many cases of public concern.<ref name=":0" />
+
+=== France ===
+In [[France]] the 2016 ''Loi pour une République numérique'' (Digital Republic Act or ''loi numérique'') amends the country's administrative code to introduce a new provision for the explanation of decisions made by public sector bodies about individuals.<ref name=":2">{{Cite journal|last=Edwards|first=Lilian|last2=Veale|first2=Michael|date=2018|title=Enslaving the Algorithm: From a ‘Right to an Explanation’ to a ‘Right to Better Decisions’?|url=https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3052831|journal=IEEE Security & Privacy|volume=|pages=|ssrn=3052831|via=}}</ref> It notes that where there is "a decision taken on the basis of an algorithmic treatment", the rules that define that treatment and its “principal characteristics” must be communicated to the citizen upon request, where there is not an exclusion (e.g. for national security or defence). These should include the following:
+# the degree and the mode of contribution of the algorithmic processing to the decision- making;
+# the data processed and its source;
+# the treatment parameters, and where appropriate, their weighting, applied to the situation of the person concerned;
+# the operations carried out by the treatment. 
+Scholars have noted that this right, while limited to administrative decisions, goes beyond the GDPR right to explicitly apply to decision support rather than decisions "solely" based on automated processing, as well as provides a framework for explaining specific decisions.<ref name=":2" /> Indeed, the GDPR automated decision-making rights in the European Union, one of the places a "right to an explanation" has been sought within, find their origins in French law in the late 1970s.<ref>{{Cite journal|last=Bygrave|first=L A|date=2001|title=Minding the Machine: Article 15 of the EC Data Protection Directive and Automated Profiling|url=http://folk.uio.no/lee/oldpage/articles/Minding_machine.pdf|journal=Computer Law & Security Review|volume=17|issue=1|pages=|doi=10.1016/S0267-3649(01)00104-2|via=}}</ref>
+
+== Criticism ==
+
+Some argue that a "right to explanation" is at best unnecessary, at worst harmful, and threatens to stifle innovation. Specific criticisms include: favoring human decisions over machine decisions; being redundant with existing laws; and focusing on process over outcome.<ref>[http://www.techzone360.com/topics/techzone/articles/2017/01/25/429101-eus-right-explanation-harmful-restriction-artificial-intelligence.htm EU's Right to Explanation: A Harmful Restriction on Artificial Intelligence], Nick Wallace, Center for Data Innovation, January 25, 2017</ref>
+
+More fundamentally, many algorithms used in machine learning are not easily explainable. For example, the output of a [[deep neural network]] depends on many layers of computations, connected in a complex way, and no one input or computation may be a dominant factor. The field of [[Explainable AI]] seeks to provide better explanations from existing algorithms, and algorithms that are more easily explainable, but it is a young and active field.<ref>{{Cite journal|last=Miller|first=Tim|date=2017-06-22|title=Explanation in Artificial Intelligence: Insights from the Social Sciences|url=http://arxiv.org/abs/1706.07269|journal=arXiv:1706.07269 [cs]}}</ref><ref>{{Cite journal|last=Mittelstadt|first=Brent|last2=Russell|first2=Chris|last3=Wachter|first3=Sandra|date=2019|title=Explaining Explanations in AI|url=http://dx.doi.org/10.1145/3287560.3287574|journal=Proceedings of the Conference on Fairness, Accountability, and Transparency - FAT* '19|location=New York, New York, USA|publisher=ACM Press|doi=10.1145/3287560.3287574|isbn=978-1-4503-6125-5}}</ref>
+
+Similarly, human decisions often cannot be easily explained: they may be based on intuition or a "[[gut feeling]]" that is hard to put into words. Some would argue that machines should not be required to meet a higher standard than humans.
+
+== See also ==
+* [[Explainable AI]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.slate.com/articles/technology/future_tense/2017/05/why_artificial_intelligences_should_have_to_explain_their_actions.html Artificial Intelligence Owes You an Explanation], by John Frank Weaver, ''Slate'', May 8, 2017
+
+[[Category:Accountability]]
+[[Category:Algorithms]]
+[[Category:Artificial intelligence]]
+[[Category:Human rights]]
+[[Category:Machine learning]]

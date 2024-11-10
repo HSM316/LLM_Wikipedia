@@ -1,0 +1,105 @@
+{{Short description|Open-source IoT platform}}
+{{Infobox computer
+| name        = NODEMCU
+| logo        = 
+| image       = NodeMCU DEVKIT 1.0.jpg
+| caption     =NodeMCU DEVKIT 1.0 
+| developer   = ESP8266 Opensource Community
+| releasedate = 
+| type        = [[Single-board microcontroller]]
+| price       = $5
+| cpu         = ESP8266<ref>Zohaib Hassan, Abhijeet, and Apoorva Sharma. "Internet of Life (IOL)." (2015). {{ISBN|978-93-5156-328-0}}</ref>(LX106<ref name=8266sdk>{{cite web|last1=Brian Benchoff|url=https://hackaday.com/2014/10/25/an-sdk-for-the-esp8266-wifi-chip/|title=An SDK for the ESP8266 Wi-Fi chip|website=Hackaday|date=25 October 2014|access-date=2 April 2015}}</ref>)
+| graphics    = 
+| storage     = 4MBytes<ref>{{cite web|last1=Vowstar|title=NodeMCU Devkit|url=https://github.com/nodemcu/nodemcu-devkit|website=Github|publisher=NodeMCU Team|access-date=2 April 2015}}</ref>
+| memory      = 128kBytes
+| power       = USB
+| website     = {{URL|https://www.nodemcu.com}}}}
+[[File:NodeMCU DEVKIT 1.0 BOTTOM.JPG|thumb|NodeMCU DEVKIT 1.0, bottom|alt=]]
+'''NodeMCU''' is a low-cost open source [[Internet of Things|IoT]] platform.<ref name="nodemcu firmware">{{cite web|last1=Zeroday|title=A lua based firmware for wifi-soc esp8266|url=https://github.com/nodemcu/nodemcu-firmware|website=Github|access-date=2 April 2015}}</ref><ref>{{cite web|last1=Hari Wiguna|title=NodeMCU LUA Firmware|url=https://hackaday.io/project/3465-playing-with-esp8266/log/11449-nodemcu-lua-firmware|website=Hackaday|access-date=2 April 2015}}</ref> It initially included [[firmware]] which runs on the [[ESP8266]] [[Wi-Fi]] [[System on a chip|SoC]] from [[Espressif]] Systems, and hardware which was based on the ESP-12 module.<ref name="Espressif Systems">{{cite web|last1=Systems|first1=Espressif|title=Espressif Systems|url=https://wikidevi.com/wiki/Espressif|website=Espressif-WikiDevi|access-date=3 June 2017|archive-url=https://web.archive.org/web/20171201034024/https://wikidevi.com/wiki/Espressif|archive-date=1 December 2017|url-status=dead}}</ref><ref>{{cite web|url=http://hackaday.com/2015/01/01/a-dev-board-for-the-esp-lua-interpreter/|title=A DEV BOARD FOR THE ESP LUA INTERPRETER|website=Hackaday|last1=Brian Benchoff|date=2 January 2015|access-date=2 April 2015}}</ref> Later, support for the [[ESP32]] 32-bit MCU was added.
+
+== Overview ==
+NodeMCU is an open source firmware for which open source [[prototyping]] board designs are available. The name "NodeMCU" combines "[[Node (computer science)|node]]" and "MCU" ([[micro-controller]] unit).<ref name="developer.ibm.com">{{Cite web|url=https://developer.ibm.com/tutorials/iot-nodemcu-open-why-use/|title = IBM Developer}}</ref> Strictly speaking, the term "NodeMCU" refers to the firmware rather than the associated [[development kits]].{{citation needed|date=February 2020|reason=This was in the text when I found it and I think it is true.}}
+
+Both the firmware and prototyping board designs are [[open source]].<ref name="developer.ibm.com"/>
+
+The firmware uses the [[Lua (programming language)|Lua]] scripting language. The firmware is based on the eLua project, and built on the Espressif Non-OS SDK for ESP8266. It uses many open source projects, such as lua-cjson<ref>{{cite web|last1=Mpx|title=Lua CJSON is a fast JSON encoding/parsing module for Lua|url=https://github.com/mpx/lua-cjson/|website=Github|access-date=2 April 2015}}</ref> and [[SPIFFS]].<ref name="spiffs">{{cite web|last1=Pellepl|title=Wear-leveled SPI flash file system for embedded devices|url=https://github.com/pellepl/spiffs|website=GitHub|access-date=2 April 2015}}</ref> Due to resource constraints, users need to select the modules relevant for their project and build a firmware tailored to their needs. Support for the 32-bit [[ESP32]] has also been implemented.
+
+The prototyping hardware typically used is a circuit board functioning as a [[dual in-line package]] (DIP) which integrates a USB controller with a smaller surface-mounted board containing the MCU and antenna. The choice of the DIP format allows for easy prototyping on [[breadboard]]s. The design was initially based on the ESP-12 module of the [[ESP8266]], which is a Wi-Fi SoC integrated with a [[Tensilica]] Xtensa LX106 core, widely used in IoT applications (see [[#Related projects|related projects]]).
+
+== Types ==
+There are two available versions of NodeMCU as version 0.9 & 1.0 where the version 0.9 contains '''ESP-12''' and version 1.0 contains '''ESP-12E''' where E stands for "Enhanced".<ref>{{Cite web|date=2018-11-21|title=NodeMCU - A Perfect Board for IoT|url=https://www.circuito.io/blog/nodemcu-esp8266/|access-date=2021-05-27|website=circuito.io blog}}</ref>
+
+== History ==
+NodeMCU was created shortly after the [[ESP8266]] came out. On December 30, 2013, [[Espressif Systems]]<ref name="Espressif Systems" /> began production of the ESP8266.<ref>{{cite news|last1=Espressif system|title=IoT Wi-Fi 802.11b/g/n integrated SoC implementation of volume production|url=http://article.liepin.com/20140701/365564.shtml|access-date=2 April 2015|publisher=中国上海讯|date=December 30, 2013|archive-url=https://web.archive.org/web/20150402133249/http://article.liepin.com/20140701/365564.shtml|archive-date=2 April 2015|url-status=dead}}</ref> NodeMCU started on 13 Oct 2014, when Hong committed the first file of nodemcu-firmware to GitHub.<ref>{{cite web|last1=Hong|title=First commit of NodeMCU Firmware|url=https://github.com/nodemcu/nodemcu-firmware/commit/9c98808289d0863a41c695e03d4067424fc1cdec|website=Github|access-date=2 April 2015}}</ref> Two months later, the project expanded to include an open-hardware platform when developer Huang R committed the [[gerber format|gerber]] file of an ESP8266 board, named devkit v0.9.<ref name="init devkit">{{cite web|last1=Huang R.|title=Initial design of NodeMCU devkit|url=https://github.com/nodemcu/nodemcu-devkit/commit/3c155e5a9f24aa8463aef8c7b011c69e94fcd9c7|website=Github|access-date=2 April 2015}}</ref> Later that month, Tuan PM ported [[MQTT]] client library from [[Contiki]] to the ESP8266 SoC platform,<ref name="mqtt client">{{cite web|last1=Tuan PM|title=MQTT client library for ESP8266|url=https://github.com/tuanpmt/esp_mqtt|website=Github|access-date=2 April 2015}}</ref> and committed to NodeMCU project, then NodeMCU was able to support the MQTT IoT protocol, using Lua to access the MQTT broker. Another important update was made on 30 Jan 2015, when Devsaurus ported the u8glib<ref name=u8g>{{cite web|last1=Olikraus|last2=Daniel Sittig|title=Universal Graphics Library for 8 Bit Embedded Systems|url=https://code.google.com/p/u8glib/|website=Google code|access-date=2 April 2015}}</ref> to the NodeMCU project,<ref name=u8glib>{{cite web|last1=Devsaurus|title=U8glib for esp8266|url=https://github.com/devsaurus/nodemcu-firmware/commit/33601462efdcea189f1f20f2cece66581ee57951|website=Github|access-date=2 April 2015}}</ref> enabling NodeMCU to easily drive LCD, Screen, OLED, even VGA displays.
+
+In the summer of 2015 the original creators abandoned the firmware project and a group of independent contributors took over. By the summer of 2016 the NodeMCU included more than 40 different modules.
+
+== Related projects ==
+
+=== ESP8266 Arduino Core ===
+As [[Arduino|Arduino.cc]] began developing new MCU boards based on non-[[AVR microcontrollers|AVR]] processors like the ARM/SAM MCU used in the Arduino Due, they needed to modify the [[Arduino IDE]] so it would be relatively easy to change the IDE to support alternate toolchains to allow Arduino C/C++ to be compiled for these new processors. They did this with the introduction of the Board Manager and the SAM Core. A "core" is the collection of software components required by the Board Manager and the Arduino IDE to compile an Arduino C/C++ source file for the target MCU's machine language. Some ESP8266 enthusiasts developed an Arduino core for the ESP8266 WiFi SoC, popularly called the "ESP8266 Core for the Arduino IDE".<ref>{{Cite web|url=https://github.com/esp8266/Arduino|title=ESP8266 core for Arduino|website=[[GitHub]]|access-date=10 January 2019}}</ref> This has become a leading software development platform for the various ESP8266-based modules and development boards, including NodeMCUs.
+
+== Pins ==
+NodeMCU provides access to the [[General-purpose input/output|GPIO]] (General Purpose Input/Output) and a pin mapping table is part of the API documentation.<ref>{{Cite web|url=https://nodemcu.readthedocs.io/en/latest/en/modules/gpio/|title=gpio - NodeMCU Documentation|website=nodemcu.readthedocs.io|language=en|access-date=2018-11-11}}</ref>
+{| class="wikitable"
+|-
+!I/O index
+!ESP8266 pin
+|-
+|0 [*]
+|GPIO16
+|-
+|1
+|GPIO5
+|-
+|2
+|GPIO4
+|-
+|3
+|GPIO0
+|-
+|4
+|GPIO2
+|-
+|5
+|GPIO14
+|-
+|6
+|GPIO12
+|-
+|7
+|GPIO13
+|-
+|8
+|GPIO15
+|-
+|9
+|GPIO3
+|-
+|10
+|GPIO1
+|-
+|11
+|GPIO9
+|-
+|12
+|GPIO10
+|}
+[*] D0 (GPIO16) can only be used for GPIO read/write. It does not support open-drain/interrupt/PWM/I²C or 1-Wire.
+
+== See also ==
+* [[Microcontroller|MCU (Micro Controller Unit)]]
+
+== References ==
+{{Reflist|30em|refs=
+}}
+
+== External links ==
+* {{Official website}}
+
+{{Commons category}}
+{{Ambient intelligence}}
+
+[[Category:Open hardware electronic devices]]
+[[Category:Internet of things]]
+[[Category:Robotics hardware]]

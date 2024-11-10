@@ -1,0 +1,21 @@
+
+'''Textual case-based reasoning''' (TCBR) is a subtopic of [[case-based reasoning]], in short CBR, a popular area in [[artificial intelligence]]. CBR suggests the ways to use past experiences to solve future similar problems, requiring that past experiences be structured in a form similar to [[attribute-value pairs]]. This leads to the investigation of textual descriptions for knowledge exploration whose output will be, in turn, used to solve similar problems.<ref name=":0">{{Cite journal|last1=Weber|first1=R.O.|last2=K.|first2=Ashley|last3=S.|first3=Brüninghaus|date=2005|title=Textual Case-Based Reasoning|journal=Knowledge Engineering Review|volume=20|issue=3 |pages=255–260|doi=10.1017/S0269888906000713 |citeseerx=10.1.1.91.9022 |s2cid=11502038 }}</ref>
+
+== Subareas ==
+Textual case-base reasoning research has focused on:
+
+* measuring similarity between textual cases<ref name=":0" />
+* mapping texts into structured case representations<ref name=":0" />
+* adapting textual cases for reuse<ref name=":0" />
+* automatically generating representations.<ref name=":0" />
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://tcbr.dei.uc.pt/ Fourth Workshop on Textual Case-Based Reasoning: Beyond Retrieval]
+* [http://cbrwiki.fdi.ucm.es/mediawiki/index.php/Textual_Case-Based_Reasoning Textual Case-Based Reasoning Wiki] {{Webarchive|url=https://web.archive.org/web/20120615130422/http://cbrwiki.fdi.ucm.es/mediawiki/index.php/Textual_Case-Based_Reasoning |date=2012-06-15 }}
+{{AI-stub}}
+[[Category:Classification algorithms]]
+[[Category:Inductive reasoning]]
+[[Category:Natural language processing]]

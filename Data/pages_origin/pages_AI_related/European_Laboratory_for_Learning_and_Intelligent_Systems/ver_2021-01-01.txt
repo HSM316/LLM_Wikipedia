@@ -1,0 +1,213 @@
+{{short description|European non-profit promoting AI research in Europe}}
+{{Use dmy dates|date=September 2020}}
+{{Infobox organization
+| logo = Logo_of_ELLIS.png
+| formation = {{start date and age|2018|12|06}}
+| website = [https://ellis.eu/en ellis.eu]
+}}
+
+The '''European Laboratory for Learning and Intelligent Systems''' ('''ELLIS''') is a pan-European [[nonprofit organization]] for the promotion of [[artificial intelligence]] with a focus on [[machine learning]]. The organization's goal is to establish top AI research institutes, strengthen basic research and create a European [[PhD programme]] for AI.
+
+== History ==
+The organization was inspired by the Learning in Machines and Brains program of the [[Canadian Institute for Advanced Research]]. ELLIS was first proposed in an open letter to European governments in April 2018, which stated that Europe was not keeping up with the US and China. It urged that European governments act to provide opportunities and funding for world-class AI research in Europe.<ref>{{Cite news|url=https://www.theguardian.com/science/2018/apr/23/scientists-plan-huge-european-ai-hub-to-compete-with-us|title=Scientists plan huge European AI hub to compete with US|last=Sample|first=Ian|date=2018-04-23|work=The Guardian|access-date=2019-12-12|language=en-GB|issn=0261-3077}}</ref><ref>{{Cite web|url=https://www.forbes.com/sites/samshead/2018/04/24/european-scientists-call-for-ai-institute-as-us-and-china-pull-away/|title=European Scientists Call For AI Institute As US and China Pull Away|last=Shead|first=Sam|website=Forbes|language=en|access-date=2019-12-11}}</ref><ref>{{Cite web|url=https://www.sciencemag.org/news/2018/04/15-billion-artificial-intelligence-research-europe-pins-hopes-ethics|title=With €1.5 billion for artificial intelligence research, Europe pins hopes on ethics|date=2018-04-25|website=Science {{!}} AAAS|language=en|access-date=2019-12-12}}</ref>
+
+It was founded on 6 December 2018 at the [[Conference on Neural Information Processing Systems]] (NeurIPS).<ref>{{Cite journal|url=https://www.nature.com/articles/d41586-018-07730-1|title=Europe’s AI researchers launch professional body over fears of falling behind|date=2018-12-10|journal=Nature|language=en|doi=10.1038/d41586-018-07730-1|last=Else|first=Holly}}</ref>
+
+== Board ==
+The members of the board are:<ref name=":0">{{Cite web|url=http://ellis.eu/board|title=Board|last=Williams|first=Jonathan|website=European Lab for Learning & Intelligent Systems|access-date=2019-12-11}}</ref>
+
+* [[Barbara Caputo]]
+* [[Nuria Oliver]]
+* [[Bernhard Schölkopf]] (chairman)
+* [[Max Welling]]
+
+== ELLIS research groups ==
+ELLIS has set up so-called ELLIS units, research groups, at 30 locations. In an open competition, the research groups were selected by an international commission of scientists according to their scientific excellence in the field. 
+
+These institutions will invest 300 million euros in artificial intelligence research over the next 5 years.<ref>{{Cite web|url=https://ellis.eu/news/ellis-inaugurates-30-research-units-at-leading-institutions-across-europe|title=ELLIS inaugurates 30 research units at leading institutions across Europe|date=2020-09-15|website=ellis.eu|language=en|access-date=2020-09-22}}</ref>
+
+{| class="wikitable"
+|+Current ELLIS Units
+!City
+!Country
+!Institution
+!Leader(s)
+!References
+|-
+|[[Alicante]]
+|Spain
+|[[University of Alicante]]
+|[[Nuria Oliver]]
+|<ref>{{Cite news|url=https://elpais.com/ccaa/2019/12/11/valencia/1576044621_828869.html|title=Alicante será la sede española del centro europeo de investigación en inteligencia artificial|date=2019-12-11|work=El País|access-date=2019-12-11|language=es|issn=1134-6582}}</ref><ref>{{Cite web|url=https://www.expansion.com/valencia/2019/12/10/5deff1d7e5fdeaaa668b4591.html|title=Alicante albergará uno de los 17 centros del laboratorio europeo de Inteligencia Artifical|date=2019-12-10|website=Expansión|language=es|access-date=2019-12-11}}</ref><ref>{{Cite web|url=https://www.diarioinformacion.com/alicante/2019/12/10/alicante-inteligencia-artificial-ellis/2214769.html|title=Alicante, primera ciudad española de la red europea de Inteligencia Artificial|last=INFORMACION|website=www.diarioinformacion.com|language=es|access-date=2019-12-11}}</ref>
+|-
+|[[Amsterdam]]
+|Netherlands
+|[[University of Amsterdam]]
+|[[Max Welling]]
+|<ref>{{Cite web|url=https://fd.nl/ondernemen/1327547/netwerk-van-wetenschappers-investeert-200-mln-in-menselijke-ai|title=Netwerk van wetenschappers investeert €200 mln in 'menselijke' AI|website=FD.nl|access-date=2019-12-11}}</ref><ref>{{Cite web|url=https://www.uva.nl/en/content/news/press-releases/2019/12/amsterdam-selected-as-hub-to-retain-ai-talent.html|title=Amsterdam selected as excellence center to retain AI talent|date=2019-10-12|website=University of Amsterdam|language=en|access-date=2019-12-11}}</ref><ref>{{Cite web|url=http://www.agconnect.nl/artikel/amsterdam-en-delft-krijgen-ellis-units-voor-behoud-ai-talent|title=Amsterdam en Delft krijgen ELLIS Units voor behoud AI-talent|website=AG Connect|language=nl|access-date=2019-12-11}}</ref><ref>{{Cite web|url=https://www.uva.nl/en/content/news/press-releases/2019/12/amsterdam-selected-as-hub-to-retain-ai-talent.html|title=Amsterdam selected as excellence center to retain AI talent - University of Amsterdam|last=Amsterdam|first=Universiteit van|date=2019-10-12|website=www.uva.nl|language=en|access-date=2019-12-11}}</ref>
+|-
+|[[Berlin]]
+|Germany
+|[[Technische Universität Berlin]]
+|[[Klaus-Robert Müller]]
+|<ref>{{Cite web|url=https://bifold.berlin/berlin-ai-research-presented-at-ellis-inauguration/|title=Berlin AI research presented at ELLIS inauguration|website=TU Berlin|language=en|access-date=2020-10-26}}</ref><ref>{{Cite web|url=https://www.pressestelle.tu-berlin.de/menue/tub_medien/publikationen/medieninformationen/2020/april_2020/medieninformation_nr_642020/|title=KI-Forschung: TU Berlin stärkt ihr Netzwerk|website=TU Berlin|language=de|access-date=2020-08-06}}</ref>
+|-
+|[[Cambridge]]
+|UK
+|[[University of Cambridge]], [http://mlg.eng.cam.ac.uk/ellis Unit]
+|Carl Edward Rasmussen and José Miguel Hernández-Lobato
+|
+|-
+|[[Copenhagen]]
+|Denmark
+|[[Technical University of Denmark|DTU]], [[IT University of Copenhagen|ITU]], [[University of Copenhagen|KU]]
+|Ole Winther
+|<ref>{{Cite web|url=https://www.compute.dtu.dk/english/news/2019/12/copenhagen-is-in-the-champions-league-of-machine-learning|title=Copenhagen is in the Champions League of Machine Learning - DTU Compute|website=DTU Compute|language=en|access-date=2019-12-17}}</ref>
+|-
+|[[Darmstadt]]
+|Germany
+|[[Technische Universität Darmstadt|TU Darmstadt]]
+|[[Stefan Roth]]
+|<ref>{{Cite web|url=https://www.tu-darmstadt.de/universitaet/aktuelles_meldungen/einzelansicht_246336.de.jsp|title=Im europäischen Netzwerk für KI-Spitzenforschung|date=2019-12-10|website=Technische Universität Darmstadt|language=de|access-date=2019-12-11}}</ref>
+|-
+|[[Delft]]
+|Netherlands
+|[[Delft University of Technology|TU Delft]]
+|Robert Babuska, Frans Oliehoek, Jens Kober
+|<ref>{{Cite web|url=https://www.tudelft.nl/en/2019/tu-delft/tu-delft-selected-as-ellis-unit-for-ai-and-machine-learning/|title=TU Delft selected as ELLIS unit for AI and machine learning|website=TU Delft|language=en|date=2019-12-12|access-date=2020-08-11}}</ref><ref>{{Cite web|url=http://www.agconnect.nl/artikel/amsterdam-en-delft-krijgen-ellis-units-voor-behoud-ai-talent|title=Amsterdam en Delft krijgen ELLIS Units voor behoud AI-talent|website=AG Connect|language=nl|access-date=2019-12-11}}</ref>
+|-
+|[[Edinburgh]]
+|Scotland, UK
+|[[University of Edinburgh]]
+| Chris Williams, Guido Sanguinetti, Sharon Goldwater
+|<ref name=":epp">{{Cite web|url=https://ellis.eu/uploads/ckeditor/attachments/313/ELLIS_Public_Position_Paper.pdf|title=ELLIS public position paper|website=ELLIS.eu|language=en|access-date=2020-08-06}}</ref>
+|-
+|[[Freiburg im Breisgau|Freiburg]]
+|Germany
+|[[University of Freiburg]]
+|
+|<ref>{{Cite web|url=https://www.pr.uni-freiburg.de/pm/2019/erfolg-fuer-experten-des-maschinellen-lernens|title=Erfolg für Experten des maschinellen Lernens — Presse- und Öffentlichkeitsarbeit|website=www.pr.uni-freiburg.de|access-date=2019-12-11}}</ref>
+|-
+|[[Genoa]]
+|Italy
+|[[Istituto Italiano di Tecnologia]]
+|
+|<ref name=":epp" />
+|-
+|[[Haifa]]
+|Israel
+|[[Technion]]
+|Shie Mannor
+|<ref name =":epp" />
+|-
+|[[Heidelberg]]
+|Germany
+|[[University of Heidelberg]]
+|Anna Kreshuk, Oliver Stegle
+|<ref>{{Cite web|url=https://www.embl.org/news/lab-matters/ellis-heidelberg/|title=Bridging artificial intelligence and the life sciences – launch of ELLIS Heidelberg|website=embl.org|language=de|access-date=2020-08-06}}</ref>
+|-
+|[[Helsinki]]
+|Finland
+|Finnish Center for Artificial Intelligence
+|Samuel Kaski
+|<ref>{{Cite web|url=https://www.aalto.fi/en/news/helsinki-and-fcai-will-host-a-new-ellis-unit-for-top-ai-research|title=Helsinki and FCAI will host a new ELLIS unit for top AI research {{!}} Aalto University|website=www.aalto.fi|language=en|access-date=2019-12-12}}</ref>
+|-
+|[[Lausanne]]
+|Switzerland
+|[[École Polytechnique Fédérale de Lausanne]]
+|Pascal Frossard, Jan Kerschgens [https://www.epfl.ch/research/domains/epfl-ellis/epfl-ellis/contact/]
+|
+|-
+|[[Leuven]]
+|Belgium
+|[[KU Leuven]]
+|Matthew Blaschko 
+| <ref>https://ai.kuleuven.be/news/kul-selected-as-one-of-the-30-ellis-units-under-the-lead-of-matthew-blaschko</ref>
+|-
+|[[Linz]]
+|Austria
+|[[Johannes Kepler University Linz|LIT AI Lab]]
+|[[Sepp Hochreiter]]
+|<ref name=":2">{{Cite web|url=https://www.jku.at/en/news-events/news/detail/news/the-jku-and-ist-austria-thrilled-to-join-the-ellis-network/|title=The JKU and IST Austria Thrilled to Join the ELLIS Network|website=JKU - Johannes Kepler Universität Linz|language=en|access-date=2019-12-11}}</ref><ref name=":3">{{Cite web|url=https://orf.at/stories/3147111/|title=Europäisches KI-Netzwerk etabliert zwei Standorte in Österreich|last=red|first=ORF at/Agenturen|date=2019-12-10|website=news.ORF.at|language=de|access-date=2019-12-11}}</ref><ref name=":4">{{Cite web|url=https://www.krone.at/2060323|title=JKU Linz ist bei Netzwerk für „Kunsthirne“ dabei|last=2019-12-11|first=krone at|date=2019-12-11|website=www.krone.a|language=de|access-date=2019-12-11}}</ref>
+|-
+|[[Lisbon]]
+|Portugal
+|[[Instituto Superior Técnico]]
+|Manuel Lopes
+|<ref name=":epp" />
+|-
+|[[London]]
+|UK
+|[[University College London]]
+|
+|<ref name=":epp" />
+|-
+|[[Munich]]
+|Germany
+|[[Helmholtz Zentrum München|HMGU]], [[Technical University of Munich|TUM]]
+|[[Daniel Cremers]], Massimo Fornasier and Fabian Theis
+|
+|-
+|[[Nijmegen]]
+|Netherlands
+|[[Radboud University]]
+|Marcel van Gerven
+|<ref>{{Cite web|url=https://www.ru.nl/english/news-agenda/news/vm/general/2020/radboud-university-opening-ellis-unit-expand-ai/|title=Radboud University opening ELLIS-unit to expand AI- and Machine learning research|website=www.ru.nl|language=en|access-date=2020-08-10}}</ref>
+|-
+|[[Oxford]]
+|UK
+|[[University of Oxford]]
+|Stephen Roberts, [[Yee Whye Teh]] and [[Michael Wooldridge (computer scientist)|Michael Woolridge]]
+|<ref>{{Cite web|url=http://www.ox.ac.uk/news/2019-12-11-ai-experts-across-europe-assembled-new-units|title=AI experts from across Europe assembled in new units {{!}} University of Oxford|website=www.ox.ac.uk|language=en|access-date=2019-12-11}}</ref>
+|-
+|[[Paris]]
+|France
+|[[Université Paris Sciences et Lettres|PSL Université]], [[Sorbonne Université]], [[Université Paris-Saclay]], [[:fr:Institut_polytechnique_de_Paris|Institut Polytechnique de Paris]], [[University of Paris (2019)|Université de Paris]]
+|
+|<ref name=":2" />
+|-
+|[[Prague]]
+|Czech Republic
+|[[Czech Technical University in Prague|Czech Technical University]]
+|
+|
+|-
+|[[Saarbrücken]]
+|Germany
+|[[Max Planck Institute for Informatics]]
+|
+|
+|-
+|[[Tübingen]]
+|Germany
+|[[Max Planck Institute for Intelligent Systems]]
+|
+|<ref name=":1">{{Cite web|url=https://is.tuebingen.mpg.de/news/tubingen-becomes-an-ellis-unit|title=Tübingen becomes an ELLIS unit {{!}} Max Planck Institute for Intelligent Systems|last=Williams|first=Jon|website=is.tuebingen.mpg.de|language=en|access-date=2019-12-11}}</ref>
+|-
+|[[Tel Aviv]]
+|Israel
+|[[Tel Aviv University]]
+|
+|
+|-
+|[[Vienna]]
+|Austria
+|[[Institute of Science and Technology Austria|IST Austria]]
+|Christoph Lampert
+|<ref name=":2" /><ref name=":3" />
+|-
+|[[Zürich]]
+|Switzerland
+|[[ETH Zurich|ETH Zürich]]
+|Thomas Hofmann
+|
+|}
+
+== Research programmes ==
+ELLIS set up 11 research programmes. The research programmes have been selected by an international commission.<ref>{{Cite web|url=http://ellis.eu/en/news/ellis-programs-launched|title=ELLIS Programs launched|last=Williams|first=Jonathan|website=European Lab for Learning & Intelligent Systems|access-date=2019-12-11}}</ref>
+
+== References ==
+<references />
+[[Category:Artificial intelligence associations]]
+[[Category:2018 establishments in Europe]]
+[[Category:Organizations established in 2018]]

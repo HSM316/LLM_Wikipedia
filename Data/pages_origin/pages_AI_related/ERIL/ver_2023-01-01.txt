@@ -1,0 +1,75 @@
+{{Short description|Visual language for representing the data structure of a computer system}}
+{{COI|date=June 2016}}
+{{Orphan|date=April 2014}}
+
+[[File:A simple example ERIL diagram.png|thumb|right|An example ERIL diagram with 3 classes and 3 one-to-many relationships.]]
+
+'''ERIL''' ('''Entity-Relationship and Inheritance Language''') is a [[visual language]] for representing the data structure of a computer system.
+As its name suggests, ERIL is based on [[Entity–relationship model|entity-relationship]] diagrams and [[class diagram]]s.
+ERIL combines the [[Relational data model|relational]] and [[Object-oriented programming|object-oriented]] approaches to [[data model]]ing.
+
+== Overview ==
+ERIL can be seen as a set of guidelines aimed at improving the readability of structure diagrams.
+These guidelines were borrowed from [[DRAKON]], a variant of [[flowchart]]s created within the Russian space program.
+ERIL itself was developed by Stepan Mitkin.
+
+The ERIL guidelines for drawing diagrams:
+* Lines must be straight, either strictly vertical or horizontal.
+* Vertical lines mean ownership ([[Object composition|composition]]).
+* Horizontal lines mean peer relationships ([[Object composition#Aggregation|aggregation]]).
+* Line intersections are not allowed.
+* It is not recommended to fit the whole data model on a single diagram. Draw many simple diagrams instead.
+* The same class (table) can appear several times on the same diagram.    
+* Use the following standard symbols to indicate the type of the relationship.
+** One-to-one: a simple line.
+** One-to-many, two-way: a line with a "paw".
+** One-to-many, one-way: an arrow.
+** Many-to-many: a line with two "paws".    
+* Do not lump together inheritance and data relationships.<ref>[http://drakon-editor.sourceforge.net/eril.html ERIL: a Visual Language for Data Modelling]</ref>
+
+== Indexes ==
+A class (table) in ERIL can have several indexes.
+Each index in ERIL can include one or more fields, similar to indexes in [[relational database]]s.
+ERIL indexes are logical. They can optionally be implemented by real data structures.
+
+== Links ==
+Links between classes (tables) in ERIL are implemented by the so-called "link" fields.
+Link fields can be of different types according to the link type:
+* reference;
+* collection of references.
+    
+Example: there is a one-to-many link between ''Documents'' and ''Lines''. One ''Document'' can have many ''Lines''. Then the ''Document.Lines'' field is a collection of references to the lines that belong to the document. ''Line.Document'' is a reference to the document that contains the line.
+
+Link fields are also logical. They may or may not be implemented physically in the system.
+
+== Usage ==
+
+ERIL is supposed to model any kind of data regardless of the storage. 
+The same ERIL diagram can represent data stored in a [[relational database]], in a [[NoSQL]] database, [[XML]] file or in the memory.
+
+ERIL diagrams serve two purposes.
+The primary purpose is to explain the data structure of an existing or future system or component.
+The secondary purpose is to automatically generate source code from the model.
+Code that can be generated includes specialized collection classes, hash and comparison functions, data retrieval and modification procedures, [[Data definition language|SQL data-definition]] code, etc. Code generated from ERIL diagrams can ensure referential and uniqueness [[data integrity]].
+Serialization code of different kinds can also be automatically generated.
+In some ways ERIL can be compared to [[object-relational mapping]] frameworks.
+
+== See also ==
+* [[Model-driven engineering]]
+* [[Unified Modeling Language|UML]]
+* [[Entity–relationship model]]
+* [[Flowchart]]s
+* [[Class diagram]]
+* [[DRAKON]]
+
+== Notes ==
+{{Reflist}}
+
+
+[[Category:Architecture description language]]
+[[Category:Data modeling languages]]
+[[Category:Data modeling diagrams]]
+[[Category:Diagrams]]
+[[Category:Knowledge representation]]
+[[Category:Specification languages]]
+[[Category:Software modeling language]]

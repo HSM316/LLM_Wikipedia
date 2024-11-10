@@ -1,0 +1,296 @@
+{{Orphan|date=April 2014}}
+
+'''Color normalization''' is a topic in [[computer vision]] concerned with artificial [[color vision]] and object recognition. In general, the distribution of color values in an image depends on the illumination, which may vary depending on lighting conditions, cameras, and other factors. Color normalisation allows for object recognition techniques based on colour to compensate for these variations.
+
+== Main concepts ==
+
+=== Color constancy ===
+{{main|Color constancy}}
+[[Color constancy]] is a feature of the human internal model of perception, which provides humans with the ability to assign a relatively constant color to objects even under different illumination conditions. This is helpful for object recognition as well as identification of light sources in an environment. For example, humans see an object approximately as the same color when the sun is bright or when the sun is dim.
+
+=== Applications ===
+Color normalization has been used for object recognition on color images in the field of [[robotics]], [[bioinformatics]] and general [[artificial intelligence]], when it is important to remove all intensity values from the image while preserving color values. One example is in case of a scene shot by a [[surveillance]] camera over the day, where it is important to remove shadows or lighting changes on same color pixels and recognize the people that passed.<ref name="background">{{Cite book
+| author = Maria Vanrell
+ |author2=Felipe Lumbreras |author3=Albert Pujol |author4=Ramon Baldrich |author5=Josep Llados |author6=J.J. Villanueva
+| date = 7 October 2001
+| title = Colour normalisation based on background information
+| journal = Image Processing, 2001
+| volume = 1
+| isbn = 978-0-7803-6725-8
+| id = INSPEC 7210999
+| pages = 874–877
+| location = Thessaloniki, Greece
+| doi=10.1109/icip.2001.959185
+}}</ref> Another example is automated screening tools used for the detection of diabetic retinopathy<ref name="retina">{{cite report
+| author = Keith A. Goatman
+|author2=A. David Whitwam |author3=A. Manivannan |author4=John A. Olson |author5=Peter F. Sharp
+ | title = Colour normalisation of retinal images <!--| affiliation = Bio-Medical Physics & Bio-Engineering, University of Aberdeen-->
+| url = http://www.biomed.abdn.ac.uk/Abstracts/A01128/kag_miua2003.pdf
+ }}</ref> as well as molecular diagnosis of cancer states,<ref name="cancer">{{cite journal
+| author = Mark A. Rubin
+|author2=Maciej P. Zerkowski |author3=Robest L. Camp |author4=Rainer Kuefer |author5=Matthias D. Hofer |author6=Arul M. Chinnaiyan |author7=David L. Rimm
+ |date=March 2004
+| title = Quantitative Determination of Expression of the Prostate Cancer Protein a-Methylacyl-CoA Racemase Using Automated Quantitative Analysis (AQUA)
+| journal = The American Journal of Pathology
+| volume = 164 | issue = 3
+| pages = 831–840
+| pmc=1613273
+| pmid=14982837 | doi=10.1016/s0002-9440(10)63171-9
+}}</ref> where it is important to include color information during classification. Another area where color normalization is commonly used is in [[pathology]], and more specifically, [[digital pathology]] where digitized microscopic images of [[histological section|histological sections]]  can be [[staining|stained]], one of the most common procedures is [[H&E stain]]. Differences in several factors such as reagents, temperatures, staining conditions, preparation procedures and image acquisition can cause variations of the colors. In those cases, it is important to normalize, but normalization can have an impact on classification methods 
+.<ref name="cancers">{{cite journal
+| author = Francesco Bianconi
+|author2=Jakob N. Kather  |author3=Constantino Carlos Reyes-Aldasoro 
+|date= November 2020
+| title = Experimental Assessment of Color Deconvolutionand Color Normalization for AutomatedClassification of Histology Images Stained withHematoxylin and Eosin
+| journal = Cancers
+| volume = 12 | issue = 11
+| pages = 3337
+| doi=10.3390/cancers12113337
+}}</ref>
+
+
+
+== Known issues ==
+The main issue about certain applications of color normalization is that the end result looks unnatural or too distant from the original colors.<ref name="first">{{Cite report
+| author     = L.Csink
+|author2=D. Paulus |author3=U. Ahlrichs |author4=B. Heigl
+ | url        = http://www.uni-koblenz.de/~agas/Documents/Csink1998CNA.pdf
+| date       = 1990-09-24
+| title      = Color Normalization and Object Localization
+}}</ref> In cases where there is a subtle variation between important aspects, this can be problematic. More specifically, the side effect can be that pixels become divergent and not reflect the actual color value of the image.
+A way of combating this issue is to use color normalization in combination with [[thresholding (image processing)|thresholding]] to correctly and consistently segment a colored image.<ref name="book">{{cite book
+| last = Burger
+| first = Wilhelm
+|author2=Mark J. Burge
+| title = Digital Image Processing: An algorithmic introduction using Java
+| publisher = [[Springer Publishing|Springer]]
+| year = 2008
+| isbn = 978-1846283796
+}}</ref>
+
+== Transformations and algorithms ==
+There is a vast array of different transformations and algorithms for achieving color normalization and a limited list is presented here. The performance of an algorithm is dependent on the task and one algorithm which performs better than another in one task might perform worse in another ([[no free lunch theorem]]). Additionally, the choice of the algorithm depends on the preferences of the user for the end-result, e.g. they may want a more natural-looking color image.
+
+=== Grey world ===
+The grey world normalization makes the assumption that changes in the lighting spectrum can be modelled by three constant factors applied to the red, green and blue channels of color.<ref name="face">{{cite report
+| author = Jose M. Buenaposada
+|author2=Luis Baumela
+| title = Variations of Grey World for face tracking <!--| affiliation = Departmento de Inteligencia Artificial, Universidad Politecnica de Madrid-->
+| url =http://www.dia.fi.upm.es/~pcr/publications/impcomm2001.pdf
+}}</ref> More specifically, a change in illuminated color can be modelled as a scaling α, β and γ in the R, G and B color channels and as such the grey world algorithm is invariant to illumination color variations. Therefore, a constancy solution can be achieved by dividing each color channel by its average value as shown in the following formula:
+
+<math>
+\left ( \alpha R, \beta G, \gamma B \right ) \rarr \left ( \frac{\alpha R}{\frac{\alpha}{n} \sum_i R }, \frac{\beta G}{\frac{\beta}{n} \sum_i G }, \frac{\gamma B}{\frac{\gamma}{n} \sum_i B } \right )
+</math>
+
+As mentioned above, grey world color normalization is invariant to illuminated color variations α, β and γ, however it has one important problem: it does not account for all variations of illumination intensity and it is not dynamic; when new objects appear in the scene it fails.<ref name="face" /> To solve this problem there are several variants of the grey world algorithm.<ref name="face" />
+Additionally there is an iterative variation of the grey world normalization, however it was not found to perform significantly better.<ref name="finlay">{{cite journal
+| first1 = Graham D.
+| last1 = Finlayson
+| first2 = Bernt
+| last2 = Schiele
+| first3 = James L.
+| last3 = Crowley
+| year = 1998
+| title = Comprehensive Colour Image Normalization
+| journal = Burkhard and Neumann
+| oclc =  849180213
+| id = INSPEC 7210999
+| pages = 475–490
+| url = http://www-prima.imag.fr/jlc/papers/ECCV98-Finlayson.pdf
+}}</ref>
+
+=== Histogram equalization ===
+{{main|Histogram equalization}}
+
+[[Histogram equalization]] is a non-linear transform which maintains pixel rank and is capable of normalizing for any monotonically increasing color transform function. It is considered to be a more powerful normalization transformation than the grey world method. The results of histogram equalization tend to have an exaggerated blue channel and look unnatural, due to the fact that in most images the distribution of the pixel values is usually more similar to a [[Gaussian distribution]], rather than [[uniform distribution (continuous)|uniform]].<ref name="book" />
+
+=== Histogram specification ===
+{{main|Histogram specification}}
+
+[[Histogram specification]] transforms the red, green and blue histograms to match the shapes of three specific histograms, rather than simply equalizing them. It refers to a class of image transforms which aims to obtain images of which the histograms have a desired shape.<ref name="retina" />
+As specified, firstly it is necessary to convert the image so that it has a particular histogram.
+Assume an image x. The following formula is the equalization transform of this image:
+
+<math>
+y = f(x) = \int\limits_{0}^{x} p_x (u) du
+</math>
+
+Then assume wanted image z. The equalization transform of this image is:
+
+<math>
+y' = g(z) = \int\limits_{0}^{z} p_z (u) du
+</math>
+
+Of course <math> p_z (u) </math> is the histogram of the output image.
+The formula to find the inverse of the above transform is:
+
+<math>
+z = g^{-1} (y')
+</math>
+
+Therefore, since images y and y' have the same equalized histogram they are actually the same image, meaning y = y' and the transform from the given image x to the wanted image z is:
+
+<math>
+z = g^{-1} (y') = g^{-1} (y) = g^{-1} (f(x))
+</math>
+
+Histogram specification has the advantage of producing more realistic looking images,<ref>{{Cite book
+| author = A. Osareh |author2=M. Mirmehdi |author3=B. Thomas
+| year = 2002
+| title = Classification and localisation of diabetic-related eye disease
+| journal = Proceedings of the European Conference on Computer Vision
+| pages = 502–516
+| url = http://dl.acm.org/citation.cfm?id=649256
+|display-authors=etal|isbn=9783540437482 |series=Eccv '02 }}</ref> as it does not exaggerate the blue channel like [[histogram equalization]].
+
+=== Comprehensive Color Normalization ===
+
+The comprehensive color normalization is shown to increase localization and object classification results in combination with color indexing.<ref name="finlay" /> It is an iterative algorithm which works in two stages. The first stage is to use the red, green and blue color space with the intensity normalized, to normalize each pixel. The second stage is to normalize each color channel separately, so that the sum of the color components is equal to one third of the number of pixels. The iterations continue until convergence, meaning no additional changes. Formally:
+
+Normalize the color image
+
+<math>
+f^{(t)} = [f_{ij}^{(t)}]_{i = 1...N, j = 1...M}
+</math>
+
+which consists of color vectors
+
+<math>
+f_{ij}^{(t)} = (r_{ij}^{(t)}, g_{ij}^{(t)}, b_{ij}^{(t)})^T .
+</math>
+
+For the first step explained above, compute:
+
+<math>
+S_{ij} := r_{ij}^{(t)} + g_{ij}^{(t)} + b_{ij}^{(t)}
+</math>
+
+which leads to
+
+<math>
+r_{ij}^{(t+1)} = \frac{r_{ij}^{(t)}}{S_{ij}}, g_{ij}^{(t+1)} = \frac{g_{ij}^{(t)}}{S_{ij}}
+</math>
+
+and
+
+<math>
+b_{ij}^{(t+1)} = \frac{b_{ij}^{(t)}}{S_{ij}}.
+</math>
+
+For the second step explained above, compute:
+
+<math>
+r' = \frac{3}{NM} \sum_{i=1}^N \sum_{j=1}^M r_{ij}^{(t+1)}
+</math>
+
+and normalize
+
+<math>
+r_{ij}^{(t+2)} = \frac{r_{ij}^{(t+1)}}{r'}.
+</math>
+
+Of course the same process is done for b' and g'. Then these two steps are repeated until the changes between iteration t and t+2 are less than some set threshold.
+
+Comprehensive color normalization, just like the [[histogram equalization]] method previously mentioned, produces results that may look less natural due to the reduction in the number of color values.<ref name="first" />
+
+== References ==
+<references/>
+
+== Bibliography ==
+*{{Cite report
+| author     = L.Csink
+|author2=D. Paulus |author3=U. Ahlrichs |author4=B. Heigl
+ | url        = http://www.uni-koblenz.de/~agas/Documents/Csink1998CNA.pdf
+| date       = 1990-09-24
+| title      = Color Normalization and Object Localization
+}}
+
+*{{cite journal
+| author = Mark A. Rubin
+|author2=Maciej P. Zerkowski |author3=Robest L. Camp |author4=Rainer Kuefer |author5=Matthias D. Hofer |author6=Arul M. Chinnaiyan |author7=David L. Rimm
+ |date=March 2004
+| title = Quantitative Determination of Expression of the Prostate Cancer Protein a-Methylacyl-CoA Racemase Using Automated Quantitative Analysis (AQUA)
+| journal = The American Journal of Pathology
+| volume = 164 | issue = 3
+| pages = 831–840
+| pmc=1613273
+| pmid=14982837 | doi=10.1016/s0002-9440(10)63171-9
+}}
+
+*{{Cite book
+| author = Maria Vanrell
+ |author2=Felipe Lumbreras |author3=Albert Pujol |author4=Ramon Baldrich |author5=Josep Llados |author6=J.J. Villanueva
+| date = 7 October 2001
+| title = Colour normalisation based on background information
+| journal = Image Processing, 2001
+| volume = 1
+| isbn = 978-0-7803-6725-8
+| id = INSPEC 7210999
+| pages = 874–877
+| location = Thessaloniki, Greece
+| doi=10.1109/icip.2001.959185
+}}
+
+*{{cite book
+| last = Burger
+| first = Wilhelm
+|author2=Mark J. Burge
+| title = Digital Image Processing: An algorithmic introduction using Java
+| publisher = [[Springer Publishing|Springer]]
+| year = 2008
+| isbn = 978-1846283796
+}}
+
+*{{cite journal
+| author = G.D. Finlayson |author2=B. Shiele |author3=J.L. Crowley
+| year = 1998
+| title = Comprehensive Colour Image Normalization
+| journal = Burkhard and Neumann
+| id = INSPEC 7210999
+| pages = 475–490
+| url = http://www-prima.imag.fr/jlc/papers/ECCV98-Finlayson.pdf
+}}
+
+*{{Cite book
+| author = A. Osareh |author2=M. Mirmehdi |author3=B. Thomas
+| year = 2002
+| title = Classification and localisation of diabetic-related eye disease
+| journal = Proceedings of the European Conference on Computer Vision
+| pages = 502–516
+| url = http://dl.acm.org/citation.cfm?id=649256
+|display-authors=etal|isbn=9783540437482 |series=Eccv '02 }}
+
+*{{Cite book
+| author = Juan Sanchez
+ |author2=Xavier Binefa <!--| affiliation = Universitat Autonoma de Barcelona Computer Vision Center and Dpt. d'Informatica Edifici-->
+| title = Color Normalization for Digital Video Processing
+| series = Lecture Notes in Computer Science
+| editor = Laurini, Robert
+| publisher = [[Springer Publishing|Springer]]
+| isbn = 978-3-540-41177-2
+| pages = 125–139
+| volume = 2929
+| year = 200
+| doi=10.1007/3-540-40053-2_17
+}}
+*{{cite report
+| author = Jose M. Buenaposada
+|author2=Luis Baumela
+| title = Variations of Grey World for face tracking <!--| affiliation = Departmento de Inteligencia Artificial, Universidad Politecnica de Madrid-->
+| url =http://www.dia.fi.upm.es/~pcr/publications/impcomm2001.pdf
+}}
+*{{cite report
+| author = Keith A. Goatman
+|author2=A. David Whitwam |author3=A. Manivannan |author4=John A. Olson |author5=Peter F. Sharp
+ | title = Colour normalisation of retinal images <!--| affiliation = Bio-Medical Physics & Bio-Engineering, University of Aberdeen-->
+| url = http://www.biomed.abdn.ac.uk/Abstracts/A01128/kag_miua2003.pdf
+ }}
+
+== External links ==
+*[http://fourier.eng.hmc.edu/e161/lectures/contrast_transform/contrast_transform.html Image Enhancement by Contrast Transform]
+*[http://web.media.mit.edu/~wad/color/constancy.html Color Constancy MIT]
+
+<!--- Categories --->
+[[Category:Image processing]]
+[[Category:Computer vision]]

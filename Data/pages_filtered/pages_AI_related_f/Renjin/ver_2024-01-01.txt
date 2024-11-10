@@ -1,0 +1,14 @@
+Renjin is an implementation of the R programming language atop the Java Virtual Machine. It is free software released under  the GPL. Renjin is tightly integrated with Java to allow the embedding of the interpreter into any Java application with full two-way access between the Java and R code.
+
+Renjin's development is primarily supported by BeDataDriven, but ultimately made possible by several current and past contributors including Mehmet Hakan Satman,
+Hannes Mühleisen, and Ruslan Shevchenko.
+
+History
+Renjin's roots lie in an abortive 2010 attempt to compile the GNU R interpreter for the JVM via nestedvm, a toolchain which involves cross-compiling C and Fortran code to a static MIPS binary, which nestedvm
+can then translate to JVM bytecode. This proved challenging as GNU R had grown to rely heavily on dynamic linking and the best C standard library
+implementation available at the time for the MIPS architecture, Newlib, was not fully compatible with the GNU C Library, against which
+GNU R had been developed.
+
+The experience with the R4JVM project provided the BeDataDriven team with in depth look at the GNU R codebase, and convinced them
+that a new implementation, written in Java, was a feasible undertaking. Development on Renjin began in October 2010, and rapidly resulted in 
+a functional, if minimal, interpreter for the R language.

@@ -1,0 +1,75 @@
+In [[geometry]], the term '''Dubins path''' typically refers to the shortest curve that connects two points in the two-dimensional [[Euclidean plane]] (i.e. ''x-y'' plane) with a constraint on the [[curvature]] of the path and with prescribed initial and terminal [[tangents]] to the path, and an assumption that the vehicle traveling the path can only travel forward. If the vehicle can also travel in reverse, then the path follows the Reeds–Shepp curve.<ref>{{cite journal
+| last1=Reeds | first1=J. A.
+| last2=Shepp | first2=L. A.
+| title=Optimal paths for a car that goes both forwards and backwards
+| journal=Pacific Journal of Mathematics
+| volume=145
+| date=1990
+| issue=2
+| pages=367–393
+| doi=10.2140/pjm.1990.145.367 | doi-access=free}}</ref>
+
+[[Lester Dubins|Lester Eli Dubins]] (1920–2010)<ref>{{cite web|title=IN MEMORIAM Lester Eli Dubins Professor of Mathematics and Statistics, Emeritus UC Berkeley 1920–2010|url=http://universityofcalifornia.edu/senate/inmemoriam/lesterelidubins.html|publisher=University of California|access-date=26 May 2012|archive-url=https://web.archive.org/web/20110915140737/http://universityofcalifornia.edu/senate/inmemoriam/lesterelidubins.html|archive-date=15 September 2011|url-status=dead}}</ref> proved using tools from analysis<ref>{{cite journal|last1=Dubins|first1=L. E.|title=On Curves of Minimal Length with a Constraint on Average Curvature, and with Prescribed Initial and Terminal Positions and Tangents|journal=American Journal of Mathematics|date=July 1957|volume=79|issue=3|pages=497–516|doi=10.2307/2372560|jstor=2372560}}</ref> that any such path will consist of maximum curvature and/or straight line segments. In other words, the shortest path will be made by joining circular arcs of maximum curvature and straight lines.
+
+==Discussion==
+Dubins proved his result in 1957. In 1974 Harold H. Johnson proved Dubins' result by applying [[Pontryagin's maximum principle]].<ref>{{cite journal
+| last1=Johnson | first1=Harold H.
+| title=An application of the maximum principle to the geometry of plane curves
+| journal=[[Proceedings of the American Mathematical Society]]
+| volume=44
+| issue=2
+| pages=432–435
+| date=1974
+| doi=10.1090/S0002-9939-1974-0348631-6 | doi-access=free
+| mr=0348631}}</ref> In particular, Harold H. Johnson presented necessary and sufficient conditions for a plane curve, which has bounded piecewise continuous curvature and prescribed initial and terminal points and directions, to have minimal length. In 1992 the same result was shown again using [[Pontryagin's maximum principle]].<ref>{{cite conference|last1=Boissonat|first1=J.-D.|author-link1=Jean-Daniel Boissonnat|last2=Cerezo |first2=A. |last3=Leblond |first3=K. |title=Shortest Paths of Bounded Curvature in the Plane|volume=3|book-title=Proceedings of the IEEE International Conference on Robotics and Automation|date=May 1992|pages=2315–2320|location=Piscataway, NJ|doi=10.1109/ROBOT.1992.220117 |url=http://hal.archives-ouvertes.fr/docs/00/07/50/59/PDF/RR-1503.pdf}}</ref> More recently, a geometric curve-theoretic proof has been provided by J. Ayala, D. Kirszenblat and J. Hyam Rubinstein.<ref>{{cite journal
+| last1=Ayala | first1=José
+| last2=Kirszenblat | first2=David
+| last3=Rubinstein | first3=Hyam
+| title=A Geometric approach to shortest bounded curvature paths
+| journal=Communications in Analysis and Geometry
+| year=2018
+| volume=26
+| issue=4
+| pages=679–697
+| doi=10.4310/CAG.2018.v26.n4.a1 | doi-access=free| arxiv=1403.4899
+}}</ref> A proof characterizing Dubins paths in homotopy classes has been given by J. Ayala.<ref>{{cite journal
+| last1=Ayala | first1=José
+| title=Length minimising bounded curvature paths in homotopy classes
+| journal=Topology and Its Applications
+| volume=193
+| pages=140–151
+| date=2015
+| doi=10.1016/j.topol.2015.06.008 | doi-access=free}}</ref>
+
+==Applications==
+The Dubins path is commonly used in the fields of [[robotics]] and [[control theory]] as a way to plan paths for wheeled robots, airplanes and underwater vehicles. There are simple geometric<ref>{{cite report|last=Anisi|first=David|title=Optimal Motion Control of a Ground Vehicle|date=July 2003|publisher=Swedish Research Defence Agency|id=1650-1942|url=https://people.kth.se/~anisi/articles/foi-r-0961-se.pdf}}</ref> and analytical methods<ref>{{cite conference|last1=Bui|first1=Xuan-Nam |last2=Boissonnat|first2=J.-D.|author-link2=Jean-Daniel Boissonnat |last3=Soueres |first3=P. |last4=Laumond |first4=J.-P. |title=Shortest Path Synthesis for Dubins Non-Holonomic Robot|volume=1|book-title=IEEE Conference on Robotics and Automation|date=May 1994|pages=2–7|location=San Diego, CA|doi=10.1109/ROBOT.1994.351019}}</ref> to compute the optimal path.
+
+For example, in the case of a wheeled robot, a simple kinematic car model (also known as Dubins' car) for the systems is:
+<math display=block>
+\begin{align}
+\dot x &= V \cos (\theta) \\
+\dot y &= V \sin (\theta) \\
+\dot \theta &= u
+\end{align}
+</math>
+where <math>(x,y)</math> is the car's position, <math>\theta</math> is the heading, the car is moving at a constant speed <math> V </math>, and the turn rate control <math> u </math> is bounded. In this case the maximum turning rate corresponds to some minimum [[turning radius]] (and equivalently maximum curvature). The prescribed initial and terminal tangents correspond to initial and terminal [[Direction (geometry)|headings]]. The Dubins' path gives the shortest path joining two oriented points that is feasible for the wheeled-robot model.
+
+The optimal path type can be described using an analogy with cars of making a 'right turn (R)' , 'left turn (L)' or driving 'straight (S).' An optimal path will always be at least one of the six types: RSR, RSL, LSR, LSL, RLR, LRL. For example, consider that for some given initial and final positions and tangents, the optimal path is shown to be of the type 'RSR.' Then this corresponds to a right-turn arc (R) followed by a straight line segment (S) followed by another right-turn arc (R). Moving along each segment in this sequence for the appropriate length will form the shortest curve that joins a starting point A to a terminal point B with the desired tangents at each endpoint and that does not exceed the given curvature. <gallery>
+File:Dubins1.svg|An RSL Dubins path
+File:Dubins2.svg|An RSR Dubins path
+File:Dubins3.svg|An LRL Dubins path
+</gallery>
+
+==Dubins Interval Problem==
+Dubins interval problem is a key variant of the Dubins path problem, where an interval of heading directions are specified at the initial and terminal points. The tangent direction of the path at initial and final points are constrained to lie within the specified intervals. One could solve this using geometrical analysis,<ref>{{cite journal|last1=Manyam|first1=Satyanarayana|last2=Rathinam|first2=Sivakumar|title=On Tightly Bounding the Dubins Traveling Salesman's Optimum|journal=Journal of Dynamic Systems, Measurement, and Control|volume=140|issue=7|pages=071013|date=2016|arxiv=1506.08752|doi=10.1115/1.4039099|s2cid=16191780 }}</ref> or using Pontryagin's minimum principle.<ref>{{cite journal|last1=Manyam | first1=Satyanarayana G. | last2=Rathinam | first2=Sivakumar | last3=Casbeer | first3=David | last4=Garcia | first4=Eloy |title=Tightly Bounding the Shortest Dubins Paths Through a Sequence of Points|year=2017|journal=Journal of Intelligent & Robotic Systems|volume=88|issue=2–4|pages=495–511|doi=10.1007/s10846-016-0459-4|doi-access=|s2cid=30943273 }}</ref>
+
+==References==
+{{reflist}}
+
+== External links ==
+* [http://planning.cs.uiuc.edu/node821.html Dubins Curves], from Planning Algorithms by  Steven M. LaValle
+*[https://demonstrations.wolfram.com/IsochronsForADubinsCar/ Isochrons for a Dubins Car], a demonstration from [[Wolfram Demonstrations Project]]
+
+[[Category:Piecewise-circular curves]]
+[[Category:Automated planning and scheduling]]
+[[Category:Robot kinematics]]

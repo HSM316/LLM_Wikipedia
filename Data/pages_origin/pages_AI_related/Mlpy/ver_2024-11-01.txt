@@ -1,0 +1,50 @@
+{{Lowercase title}}
+{{Infobox software
+| name                   = mlpy
+| logo                   =
+| screenshot             =
+| caption                =
+| collapsible            =
+| author                 =
+| developer              = Lead Developer: Davide Albanese; Contributors: Giuseppe Jurman, Stefano Merler, Roberto Visintainer, Marco Chierici
+| released               =
+| latest release version = 3.5.0
+| latest release date    = {{Start date and age|2012|03|12|df=yes}}
+| latest preview version =
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language   = [[Python (programming language)|Python]], [[C (programming language)|C]] and [[C++]]
+| operating system       = [[Linux]], [[macOS]], [[FreeBSD]], [[Microsoft Windows]]
+| platform               =
+| size                   =
+| language               =
+| status                 =
+| genre                  = [[Machine learning]]
+| license                = [[GPL]]
+| website                = {{URL|http://mlpy.sourceforge.net/}}
+}}
+'''mlpy''' is a [[Python (programming language)|Python]], [[open-source software|open-source]], [[machine learning]] library built on top of [[NumPy]]/[[SciPy]], the [[GNU Scientific Library]] and it makes an extensive use of the [[Cython]] language. mlpy provides a wide range of state-of-the-art machine learning methods for supervised and unsupervised problems and it is aimed at finding a reasonable compromise among modularity, maintainability, reproducibility, usability and efficiency. mlpy is multiplatform, it works with Python 2 and 3 and it is distributed under GPL3.
+
+Suited for general-purpose machine learning tasks,<ref>Soleymani et al (2011). ''Continuous emotion detection in response to music videos''. IEEE International Conference on Automatic Face & Gesture Recognition and Workshops 2011.</ref>{{failed verification|date=August 2014}}<ref>Megies, T. et al (2011). ''ObsPy – What can it do for data centers and observatories?'' Annals of Geophysics, 2011.</ref>{{failed verification|date=August 2014}}<ref>Nguyen, M. H (2010). Nguyen et al. ''Optimal feature selection for support vector machines''. Pattern Recognition, 2010.</ref><ref>Santana R. (2011) R. Santana. ''Estimation of distribution algorithms: from available implementations to potential developments''. Proceedings of the 13th annual conference companion on Genetic and evolutionary computation, 2011.</ref>{{failed verification|date=August 2014}} mlpy's motivating application field is bioinformatics, i.e. the analysis of high throughput omics data.<ref>Wuchty S. (2010). ''Gene pathways and subnetworks distinguish between major glioma subtypes and elucidate potential underlying biology''. Journal of Biomedical Informatics, 2010</ref>
+
+==Features==
+* Regression: [[least squares]], [[ridge regression]], least angle regression, [[Elastic net regularization|elastic net]], kernel ridge regression, [[support vector machines]] (SVM), [[partial least squares]] (PLS)
+* Classification: [[linear discriminant analysis]] (LDA), Basic [[perceptron]], Elastic Net, [[logistic regression]], (Kernel) Support Vector Machines (SVM), Diagonal Linear Discriminant Analysis (DLDA), Golub Classifier, Parzen-based, (kernel) Fisher Discriminant Classifier, k-nearest neighbor, Iterative RELIEF, Classification Tree, Maximum Likelihood Classifier
+* Clustering: [[hierarchical clustering]], Memory-saving Hierarchical Clustering, [[k-means]]
+* [[Dimensionality reduction]]: (Kernel) [[Fisher discriminant analysis]] (FDA), Spectral Regression Discriminant Analysis (SRDA), (kernel) [[Principal component analysis]] (PCA)
+
+Kernel-based functions are managed through a common kernel layer. In particular, the user can choose between supplying the data or a precomputed kernel in input space. Linear, polynomial, Gaussian, exponential and sigmoid kernels are available as default choices, and custom kernels can be defined as well. Many classification and regression algorithms are endowed with an internal feature ranking procedure: in alternative, mlpy implements the I-Relief algorithm. [[Recursive feature elimination]] (RFE) for linear classifiers and the KFDA-RFE algorithm are available for feature selection. Methods for feature list analysis (for example the Canberra stability indicator<ref>{{cite journal|last1=Jurman|first1=Giuseppe |last2=Merler |first2=Stefano |last3=Barla |first3=Annalisa |last4=Paoli |first4=Silvano |last5=Galea |first5=Antonio |last6=Furlanello |first6=Cesare|title=Algebraic stability indicators for ranked lists in molecular profiling|journal=Bioinformatics|year=2008|volume=24|issue=2|pages=258–264|doi=10.1093/bioinformatics/btm550|pmid=18024475|doi-access=free}}</ref>), data resampling and error evaluation are provided, together with different clustering analysis methods (Hierarchical, Memory-saving Hierarchical, k-means). Finally, dedicated
+submodules are included for longitudinal data analysis through wavelet transform (Continuous, Discrete and Undecimated) and dynamic programming algorithms (Dynamic Time Warping and variants).
+
+==See also==
+* [[scikit-learn]], an open source machine learning library for the Python programming language
+* [[Infer.NET]], an open source machine learning library for the .NET Framework
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website|http://mlpy.sourceforge.net/}}
+
+[[Category:Data mining and machine learning software]]
+[[Category:Free statistical software]]
+[[Category:Python (programming language) scientific libraries]]

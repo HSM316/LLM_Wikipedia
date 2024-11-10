@@ -1,0 +1,56 @@
+{{Infobox software
+| name                   = revoscalepy
+| title                  = revoscalepy
+| logo                   = 
+| logo caption           = 
+| screenshot             = 
+| caption                = 
+| collapsible            = 
+| author                 = [[Microsoft]]
+| developer              = 
+| released               = {{Start date and age|2017}}
+| discontinued           = 
+| latest release version = 
+| latest release date    = 
+| latest preview version = 
+| latest preview date    = 
+| programming language   = [[Python (programming language)|Python]]
+| operating system       = 
+| platform               = [[Windows]], [[Linux]]
+| size                   = 
+| language               = Python
+| language footnote      = 
+| status                 = 
+| genre                  = 
+| license                = 
+| website                = {{URL|https://docs.microsoft.com/en-us/machine-learning-server/python-reference/revoscalepy/revoscalepy-package/}}
+}}
+
+'''revoscalepy''' is a [[machine learning]] package in [[Python (programming language)|Python]] created by [[Microsoft]]. It is available as part of Machine Learning Services in [[Microsoft SQL Server]] 2017 and Machine Learning Server 9.2.0 and later.<ref name="revoscalepy-intro"/>
+
+The package contains functions for creating [[linear model]], [[logistic regression]], [[random forest]], [[decision tree]] and [[Gradient boosting|boosted decision tree]], in addition to some summary functions for inspecting data.<ref name="revoscalepy-doc"/>   Other machine learning algorithms such as neural network are provided in microsoftml, a separate package that is the Python version of MicrosoftML.<ref name="microsoftml-doc"/>
+
+revoscalepy also contains functions designed to run machine learning [[algorithm]]s in different compute contexts, including SQL Server, [[Apache Spark]], and [[Hadoop]].<ref name="revoscalepy-doc"/>
+
+In June 2021, Microsoft announced to open source the revoscalepy and [[RevoScaleR]] packages, making them freely available under the [[MIT License]].<ref>[https://cloudblogs.microsoft.com/sqlserver/2021/06/30/looking-to-the-future-for-r-in-azure-sql-and-sql-server/ Looking to the future for R in Azure SQL and SQL Server - Microsoft SQL Server Blog]</ref>
+
+==See also==
+* [[Microsoft SQL Server#Machine_Learning_Services | Microsoft Machine Learning Services]]
+
+== References ==
+{{reflist|30em|refs=
+
+<ref name="revoscalepy-intro">{{ cite web | url = https://docs.microsoft.com/en-us/sql/advanced-analytics/python/what-is-revoscalepy | title = Introducing revoscalepy | publisher = Microsoft Corporation | accessdate = 2018-04-10 }}</ref>
+<ref name="revoscalepy-doc">{{ cite web | url = https://docs.microsoft.com/en-us/machine-learning-server/python-reference/revoscalepy/revoscalepy-package | title = revoscalepy package | publisher = Microsoft Corporation | accessdate = 2018-04-10 }}</ref>
+<ref name="microsoftml-doc">{{ cite web | url = https://docs.microsoft.com/en-us/machine-learning-server/python-reference/microsoftml/microsoftml-package | title = microsoftml package | publisher = Microsoft Corporation | accessdate = 2018-04-10 }}</ref>
+
+}}
+
+== External links ==
+* [https://github.com/Azure/MachineLearningSamples-mml Samples for using revoscalepy and microsoftml]
+
+{{Microsoft FOSS}}
+
+[[Category:Applied machine learning]]
+[[Category:Python (programming language) software]]
+[[Category:Microsoft software]]

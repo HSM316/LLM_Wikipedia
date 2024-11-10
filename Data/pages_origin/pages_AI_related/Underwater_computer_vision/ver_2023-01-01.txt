@@ -1,0 +1,68 @@
+{{short description|Subfield of computer vision}}
+'''Underwater computer vision''' is a subfield of [[computer vision]]. In recent years, with the development of underwater vehicles  ( [[Remotely operated underwater vehicle|ROV]],  [[Autonomous underwater vehicle|AUV]],  [[Underwater glider|gliders]]), the need to be able to record and process huge amounts of information has become increasingly important.  Applications range from inspection of underwater structures for the offshore industry to the identification and counting of fishes for biological research.  However, no matter how big the impact of this technology can be to industry and research, it still is in a very early stage of development compared to traditional computer vision. One reason for this is that, the moment the camera goes into the water, a whole new set of challenges appear. On one hand, cameras have to be made waterproof, marine corrosion deteriorates materials quickly and access and modifications to experimental setups are costly, both in time and resources. On the other hand, the physical properties of the water make light behave differently, changing the appearance of a same object with variations of depth, organic material, currents, temperature etc.
+
+== Applications ==
+* [[Seafloor survey]]
+* [[Vehicle navigation and positioning]]<ref>{{cite book |last1=Horgan |first1=Jonathan |last2=Toal |first2=Daniel |title=Underwater Vehicles |chapter=Computer Vision Applications In the Navigation of Unmanned Underwater Vehicles|year=2009 |doi=10.5772/6703 |isbn=978-953-7619-49-7 |s2cid=2940888 |chapter-url=https://pdfs.semanticscholar.org/e72f/51ebeab09ab9ae1e08067ec4ddcb929bf025.pdf}}</ref>
+* [[Biological monitoring]]
+* [[Video mosaic]]s as visual navigation maps
+* [[Pipeline inspection]]
+* [[Wreckage visualization]]
+* Maintenance of [[underwater structures]]
+* Drowning detection, e.g. [[Pool safety camera|pool safety]]
+
+== Medium differences ==
+
+=== Illumination ===
+
+In air, light comes from the whole hemisphere on cloudy days, and is dominated by the sun. In water lighting comes from a finite cone above the scene. This phenomenon is called [[Snell's window]].
+
+=== Light attenuation ===
+
+Unlike air, water attenuates light exponentially. This results in hazy images with very low contrast. The main reasons for light attenuation are light absorption (where energy is removed from the light) and light scattering, by which the direction of light is changed. Light scattering can further be divided into forward scattering, which results in an increased blurriness and backward scattering that limits the contrast and is responsible for the characteristic veil of underwater images. Both scattering and attenuation are heavily influenced by the amount of organic matter dissolved or suspended in the water.
+
+Another problem with water is that light attenuation is a function of the wavelength. This means that different colours are attenuated faster or slower than others, leading to colour degradation. Red and orange light is the first to be attenuated, followed by yellows and greens. Blue is the least attenuated visual wavelength.
+
+{{expand section|light attenuation by turbidity|date=March 2021}}
+
+== Challenges ==
+
+In high level computer vision, human structures are frequently used as image features for image matching in different applications. However, the sea bottom lacks such features, making it hard to find correspondences in two images.
+
+In order to be able to use a camera in the water, a watertight housing is required. However, refraction will happen at the water-glass and glass-air interface due to differences in density of the materials. This has the effect of introducing a non-linear image deformation.
+
+The motion of the vehicle presents another special challenge. Underwater vehicles are constantly moving due to currents and other phenomena. This introduces another uncertainty to algorithms, where small motions may appear in all directions. This can be specially important for [[video tracking]]. In order to reduce this problem [[image stabilization]] algorithms may be applied.
+
+== Frequent methods ==
+{{clarify|frequent methods of what?|date=March 2021}}
+
+=== Image restoration ===
+
+[[Image restoration]]<ref>{{cite journal |last1=Y. Schechner |first1=Yoav |last2=Karpel |first2=Nir  |title=Clear Underwater vision  |journal= Proc. Computer Vision & Pattern Recognition  |volume= I |pages= 536–543 }}</ref><ref>{{cite journal |last1=Hou |first1=Weilin |last2=J.Gray |first2=Deric |last3= Weidemann |first3=Alan D. |last4= A.Arnone |first4=Robert  |title=Comparison and Validation of point spread models for imaging in natural waters  |journal=Optics Express |volume=16 |issue=13 |pages=9958–9965 |bibcode=2008OExpr..16.9958H |year=2008 |doi=10.1364/OE.16.009958 |pmid=18575566 |doi-access=free }}</ref> aims to model the degradation process and then invert it, obtaining the new image after solving. It is generally a complex approach that requires plenty of parameters{{clarify|what parameters?|date=March 2021}} that vary a lot between different water conditions.
+
+=== Image enhancement ===
+
+Image enhancement<ref>{{cite journal |last1=Schettini  |first1=Raimondo |last2=Corchs |first2=Silvia  |title=Underwater Image Processing: State of the Art Image Enhancement Methods  |journal= EURASIP Journal on Advances in Signal Processing |volume=2010  |pages=14 |doi=10.1155/2010/746052|year=2010 |doi-access=free}}</ref> only tries to provide a visually more appealing image without taking the physical image formation process into account. These methods are usually simpler and less computational intensive.
+
+=== Color correction ===
+
+Different algorithms exist that perform automatic [[color correction]].<ref>Akkaynak, Derya, and Tali Treibitz. "[http://openaccess.thecvf.com/content_CVPR_2019/papers/Akkaynak_Sea-Thru_A_Method_for_Removing_Water_From_Underwater_Images_CVPR_2019_paper.pdf Sea-Thru: A Method for Removing Water From Underwater Images]." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2019.</ref><ref>{{cite journal |last1= Iqbal |first1=K. |last2=Odetayo |first2=M. |last3=James |first3=A. |last4=Salam |first4=R.A.  |title= Enhancing the low quality images using Unsupervised Color Correction Methods  |journal= Systems Man and Cybernetics |url=http://www.academia.edu/download/47949043/Enhancing_the_low_quality_images_using_U20160810-14441-dvebk7.pdf}}{{dead link|date=July 2022|bot=medic}}{{cbignore|bot=medic}}</ref> The UCM  (Unsupervised Color Correction Method), for example, does this in the following steps: It firstly reduces the color cast by equalizing the color values. Then it enhances contrast by stretching the red histogram towards the maximum and finally saturation and intensity components are optimized.
+
+== Underwater stereo vision ==
+
+It is usually assumed that stereo cameras have been calibrated previously, geometrically and radiometrically. This leads to the assumption that corresponding pixels should have the same color. However this can not be guaranteed in an underwater scene, because of dispersion and backscatter as mentioned earlier. However, it is possible to digitally model this phenomenon and create a virtual image with those effects removed
+
+== Other application fields ==
+
+In recent years imaging sonars<ref>{{cite journal |last1=Mignotte |first1= M. |last2= Collet |first2=C.  |title=Markov Random Field and Fuzzy Logic Modeling in Sonar Imagery |journal= Computer Vision and Image Understanding |volume=79  |pages=4–24 |doi= 10.1006/cviu.2000.0844 |citeseerx= 10.1.1.38.4225 |year= 2000 }}</ref><ref>{{cite journal |last1=Cervenka |first1=Pierre |last2=de Moustier |first2=Christian  |title=Sidescan Sonar Image Processing Techniques |journal= IEEE Journal of Oceanic Engineering |volume=18 |issue=2 |pages=108|bibcode=1993IJOE...18..108C |year=1993 |doi=10.1109/48.219531 }}</ref> have become more and more accessible and gained resolution, delivering better images. Sidescan sonars are used to produce complete [[seafloor mapping|maps of regions of the sea floor]] stitching together sequences of sonar images. However, imaging sonar images often lack proper contrast and are degraded by artefacts and distortions due to noise, attitude changes of the AUV/ROV carrying the sonar or non uniform beam patterns.  Another common problem with sonar computer vision is the comparatively low frame rate of sonar images.<ref>{{cite journal |last1= Trucco |first1=E. |last2= Petillot  |first2=Y.R. |last3= Tena Ruiz |first3= I.  |title=Feature Tracking in Video and Sonar Subsea Sequences with Applications |journal=Computer Vision and Image Understanding  |volume=79  |pages= 92–122 |doi=10.1006/cviu.2000.0846 |year=2000 }}</ref>
+
+== References ==
+
+{{Reflist}}
+
+{{Computer vision footer}}
+{{Underwater diving|scidiv}}
+{{authority control}}
+
+[[Category:Computer vision]]
+[[Category:Submarine design]]

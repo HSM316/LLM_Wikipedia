@@ -1,0 +1,77 @@
+{{Short description|Genus of parasitic worms}}
+{{Use dmy dates|date=March 2020}}
+{{Automatic taxobox
+| taxon = Floridosentis
+| authority = Ward, 1953
+| type_species = '''''Floridosentis elongatus'''''<ref>{{cite WoRMS |title=''Floridosentis'' |id=20349 |access-date=29 March 2024}}</ref>
+| type_species_authority = Ward, 1953
+}}
+
+'''''Floridosentis''''' is a [[genus]] in [[Acanthocephala]] (thorny-headed worms, also known as spiny-headed worms).
+
+==Taxonomy==
+The genus was described by Ward in 1953. Phylogenetic studies have been published on this genus.<ref>https://www.ncbi.nlm.nih.gov/popset/?term=txid84279[organism:exp]%20AND%20phylogenetic_study[prop]</ref>
+
+==Description==
+''Floridosentis'' species consist of a proboscis covered in hooks and a long trunk. 
+
+==Species==
+The genus ''Floridosentis'' <small>Ward, 1953</small> contains species.{{#tag:ref|A [[Binomial nomenclature|binomial authority]] in parentheses indicates that the species was originally described in a genus other than the present genus.|group=lower-alpha}}
+* '''''Floridosentis mugilis''''' <small>(Machado-Filho, 1951)</small>
+* '''''Floridosentis pacifica''''' <small>Bravo-Hollis, 1969</small>
+
+==Distribution==
+The distribution of ''Floridosentis'' is determined by that of its hosts.
+
+==Hosts==
+[[File:Acanthocephala LifeCycle lg.jpg|thumb|250px|alt=Diagram of the life cycle of Acanthocephala|Life cycle of Acanthocephala.<ref>{{cite web
+	| url = https://www.cdc.gov/dpdx/acanthocephaliasis/index.html
+	| title = Acanthocephaliasis
+	| last = CDC’s Division of Parasitic Diseases and Malaria
+	| date = April 11, 2019
+	| website = www.cdc.gov
+	| publisher = [[Center for Disease Control]]
+	| access-date = July 17, 2023
+	| quote = 
+	| archive-date = 8 June 2023
+	| archive-url = https://web.archive.org/web/20230608133736/https://www.cdc.gov/dpdx/acanthocephaliasis/index.html
+	| url-status = live
+	}}</ref>{{#tag:ref|There are no known aberrant human infections for ''Floridosentis'' species.<ref name="Mathison2021"/>|group=lower-alpha}}]]
+The life cycle of an acanthocephalan consists of three stages beginning when an infective acanthor (development of an egg) is released from the intestines of the [[Host (biology)#Types of hosts|definitive host]] and then ingested by an arthropod, the [[Host (biology)#Types of hosts|intermediate host]]. Although the intermediate hosts of ''Floridosentis'' are ???. When the acanthor [[molt]]s, the second stage called the acanthella begins. This stage involves penetrating the wall of the [[mesenteron]] or the intestine of the intermediate host and growing. The final stage is the infective cystacanth which is the [[larva]]l or juvenile state of an Acanthocephalan, differing from the adult only in size and stage of sexual development. The cystacanths within the intermediate hosts are consumed by the definitive host, usually attaching to the walls of the intestines, and as adults they reproduce sexually in the intestines. The acanthor are passed in the [[feces]] of the definitive host and the cycle repeats. There may be [[Host_(biology)#Types_of_hosts|paratenic hosts]] (hosts where parasites infest but do not undergo larval development or sexual reproduction) for ''Floridosentis''.<ref>{{cite book
+	| last = Schmidt
+	| first = G.D.
+	| editor-last1 = Crompton
+	| editor-first1 = D.W.T.
+	| editor-last2 = Nickol
+	| editor-first2 = B.B.
+	| author-link = 
+	| date = 1985
+	| title = Biology of the Acanthocephala
+	| chapter = Development and life cycles
+	| url = https://core.ac.uk/download/pdf/17218255.pdf
+	| location = Cambridge
+	| publisher = Cambridge Univ. Press
+	| pages = 273–305
+	| isbn = 
+	| access-date = 16 July 2023
+	| archive-date = 22 July 2023
+	| archive-url = https://web.archive.org/web/20230722191034/https://core.ac.uk/download/pdf/17218255.pdf
+	| url-status = live
+	}}</ref>
+
+''Floridosentis'' parasitizes marine fish.<ref>{{cite web |url=https://pubmed.ncbi.nlm.nih.gov/32920194/ |title=Genetic diversification of acanthocephalans of the genus ''Floridosentis'' Ward 1953 (Acanthocephala: Neoechinorhynchidae), parasites of mullets from the Americas  |last1=Rosas-Valdez |first1=Rogelio |last2=José Morrone |first2=Juan |last3=Daniel Pinacho-Pinacho |first3=Carlos |last4=Domínguez-Domínguez |first4=Omar |last5=García-Varela |first5=Martín |date=September 2020 |website=pubmed.ncbi.nlm.nih.gov |publisher=Elsevier |access-date=29 March 2024 |doi=10.1016/j.meegid.2020.104535}}</ref> There are no reported cases of ''Floridosentis'' infesting humans in the English language medical literature.<ref name="Mathison2021">{{cite journal |last1=Mathison |first1=BA |display-authors=etal |title=Human Acanthocephaliasis: a Thorn in the Side of Parasite Diagnostics |journal=J Clin Microbiol |date=2021 |volume=59 |issue=11 |page=e02691-20 |doi=10.1128/JCM.02691-20 |pmid=34076470 |url=https://doi.org/10.1128%2FJCM.02691-20|pmc=8525584 }}</ref>
+
+<gallery mode="packed" widths="180" caption="Hosts for ''Floridosentis'' species">
+</gallery>
+
+== Notes ==
+{{Notelist}}
+
+==References==
+{{Reflist}}
+
+{{Taxonbar|from=Q2401836}}
+
+[[Category:Acanthocephala genera]]
+[[Category:Acanthocephala]]
+[[Category:Taxa described in 1953]]

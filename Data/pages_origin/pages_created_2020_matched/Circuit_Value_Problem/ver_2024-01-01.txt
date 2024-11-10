@@ -1,0 +1,25 @@
+{{Short description|Computational problem}}
+[[File:Combinatorial Logic Example.svg|thumb|Boolean example circuit]]
+The '''Circuit Value Problem''' (or Circuit Evaluation Problem) is the computational problem of computing the output of a given [[Boolean circuit]] on a given input.
+
+The problem is complete for [[P (complexity)|P]] under uniform [[AC0|AC{{sup|0}}]] reductions. Note that, in terms of [[time complexity]], it can be solved in [[linear time]] simply by a [[topological sort]].
+
+The [[Boolean Formula Value Problem]] (or Boolean Formula Evaluation Problem) is the special case of the problem when the circuit is a tree. The Boolean Formula Value Problem is complete for [[NC (complexity)|NC{{sup|1}}]].<ref>{{cite conference | url=https://dl.acm.org/doi/pdf/10.1145/28395.28409 | author=Samuel R. Buss | author-link=Samuel Buss | title=The Boolean formula value problem is in ALOGTIME | editor=Alfred V. Aho | editor-link=Alfred Aho| book-title=Proceedings of the 19th Annual ACM [[Symposium on Theory of Computing]] (STOC) | publisher=ACM | pages=123&ndash;131 | date=Jan 1987 }} ([http://www.math.ucsd.edu/~sbuss/ResearchWeb/Boolean Author's draft])</ref>
+
+The problem is closely related to the [[Boolean satisfiability problem|Boolean Satisfiability Problem]] which is complete for [[NP (complexity)|NP]] and its complement, the [[Tautology (logic)|Propositional Tautology Problem]], which is complete for [[co-NP]].
+
+== See also ==
+
+* [[Circuit satisfiability]]
+* [[Switching lemma]]
+
+==References==
+{{Reflist}}
+* {{cite journal | url= | doi=10.1145/990518.990519 | author=Richard E. Ladner | author-link=Richard E. Ladner | title=The circuit value problem is log space complete for P | journal=[[ACM SIGACT News]] | volume=7 | number=101 | pages=18&ndash;20 | date=Jan 1975 }} 
+
+[[Category:Polynomial-time problems]]
+[[Category:Computational problems]]
+[[Category:Theoretical computer science]]
+
+
+{{compu-prog-stub}}

@@ -1,0 +1,44 @@
+{{short description|Entertainment recommendation engine}}
+{{Infobox website
+| name           = TasteDive
+| favicon        =
+| logo           = File:TasteDive Logo.png
+| logo_size      =
+| screenshot     =
+| commercial     = Yes
+| type           = [[Review aggregator]]
+| registration   = Free/subscription
+| owner          =
+| launch_date    = 2008
+| founder        = Andrei Oghina <br> Felix Oghina
+| current_status = Active
+| oclc           =
+| url            = {{URL|https://www.tastedive.com/}}
+}}
+
+'''TasteDive''' (formerly named '''TasteKid''') is an entertainment [[recommendation engine]] for films, TV shows, music, video games, and books. It also has elements of a [[social media]] site.
+
+==History==
+TasteDive was founded in 2008 as TasteKid by brothers Andrei Oghina and Felix Oghina.<ref name="cnet">{{cite news |last1=Lowensohn |first1=Josh |title=Taste Kid offers dead simple content recommendations via search |url=https://www.cnet.com/news/taste-kid-offers-dead-simple-content-recommendations-via-search/ |accessdate=15 November 2018 |publisher=CNET |date=28 October 2008}}</ref><ref name="nextweb">{{cite news |last1=Bryant |first1=Martin |title=TasteKid now recommending movies, music and books to over 15,000 users |url=https://thenextweb.com/eu/2010/12/16/tastekid-now-recommending-movies-music-and-books-to-over-15000-users/ |accessdate=15 November 2018 |publisher=The Next Web |date=16 December 2010}}</ref><ref name="infotoday">{{cite news |last1=O'Dell |first1=Bethanie |title=Reader's Advisory: Four Sites That Will Help You Fake It |url=http://www.infotoday.com/cilmag/jul17/ODell--Readers-Advisory-Four-Sites-That-Will-Help-You-Fake-It.shtml |accessdate=15 November 2018 |publisher=Info Today}}</ref><ref>{{cite book |last1=Novak |first1=Alison |title=Defining Identity and the Changing Scope of Culture in the Digital Age |date=2016 |publisher=IGI Global |isbn=9781522502128 |page=46 |url=https://books.google.com/books?id=L9k6DAAAQBAJ&q=%22tastekid%22&pg=PA46 |accessdate=20 February 2019}}</ref> In 2019, it was acquired by [[Qloo]].<ref>{{cite news |last1=Ha |first1=Anthony |title=Qloo acquires cultural recommendation service TasteDive |url=https://techcrunch.com/2019/02/13/qloo-acquires-tastedive/ |accessdate=20 February 2019 |publisher=TechCrunch |date=13 February 2019}}</ref>
+
+==Description==
+When a user types in the title of a film or TV show, the site's algorithm provides a list of similar content. It provides recommendations for TV shows to watch based on films liked by the user, and vice versa. It also provides recommendations for music, video games, and books, and includes film and TV trailers and music videos.<ref name="nextweb"/><ref name="popsci">{{cite news |last1=Nield |first1=David |title=How to find the best music, movie, and TV recommendations |url=https://www.popsci.com/find-best-music-movie-tv-recommendations#page-6 |accessdate=15 November 2018 |publisher=Popular Science |date=10 July 2017}}</ref><ref name="cnet2">{{cite news |last1=Reisinger |first1=Don |title=Top 10 movie recommendation engines |url=https://www.cnet.com/news/top-10-movie-recommendation-engines/ |accessdate=15 November 2018 |publisher=CNET |date=19 March 2009}}</ref><ref>{{cite news |last1=Staveley |first1=Jessica |title=The genius hack for picking a movie when you absolutely cannot decide what to watch. |url=https://www.mamamia.com.au/best-movies-to-watch/ |accessdate=20 February 2019 |publisher=MamaMia |date=31 December 2018}}</ref> An account is free and is not required to receive recommendations, but recommendations are more accurate for those with an account.<ref name="infotoday"/> The more a user explores the site, the more the site learns about the user's preferences and the better the results become. The site also has a social media aspect where one can see activity and gain recommendations from other users, how many others in the community like or dislike any recommendation, and how popular their tastes are within the TasteDive community.<ref name="cnet"/><ref>{{cite news |last1=Hullinger |first1=Jessica |title=6 smart tools that will help you discover new music |url=https://theweek.com/articles/544447/6-smart-tools-that-help-discover-new-music |accessdate=15 November 2018 |publisher=The Week |date=7 April 2015}}</ref><ref>{{cite news |last1=Patkar |first1=Mihir |title=5 Sites to Find Which TV Show to Watch Next |url=https://www.makeuseof.com/tag/sites-find-tv-show-watch-next/ |accessdate=15 November 2018 |publisher=makeuseof.com |date=30 September 2017}}</ref>
+
+The main competitors of TasteDive are Taste App,<ref>{{cite web|url= https://www.taste.io/ |title= Taste - Movies & TV Reviews }}</ref> Trakt.tv<ref>{{cite web|url= http://trakt.tv/ |title= trakt.tv Automatically track }}</ref> and Tastoid.<ref>{{cite web|url= https://www.tastoid.com/ |title= Tastoid: Movie and TV recommendations }}</ref>
+
+==See also==
+* [[Rating site]]
+* [[Recommender system]]
+
+== References ==
+{{Reflist}}
+
+<!--- Categories --->
+[[Category:Recommender systems]]
+[[Category:Internet properties established in 2008]]
+[[Category:American entertainment websites]]
+[[Category:Applied machine learning]]
+[[Category:Artificial intelligence applications]]
+
+
+{{entertainment-website-stub}}

@@ -1,0 +1,119 @@
+Mobileye Global Inc. is a company developing autonomous driving technologies and advanced driver-assistance systems (ADAS) including cameras, computer chips and software. Mobileye was acquired by Intel in 2017 and went public again in 2022. Mobileye is based in Jerusalem, Israel, and also has sales and marketing offices in Midtown, Manhattan, US; Shanghai, China; Tokyo, Japan; and Düsseldorf, Germany.
+
+right|A Mobileye EyeQ2 chip used in a Hyundai Lane Guidance camera module
+
+History
+Mobileye was founded in 1999 by Hebrew University professor Amnon Shashua when he evolved his academic research into a vision system which could detect vehicles using a camera and software algorithms on a processor. Since its establishment, it has developed into a supplier of automotive safety technologies based on adding "intelligence" to inexpensive cameras for commercialization.
+
+Mobileye established its first research center in 2004, and launched the first generation EyeQ1 processor four years later, in 2008. The technology offered driver assistance including AEB (automatic emergency braking). One of the first vehicles to use this technology was the fifth-generation BMW 7 Series. Subsequent versions of the chip were released in 2010, 2014 and 2018.
+
+In 2013, Mobileye announced the sale of a 25% stake to Blue-chip investors for $400 million, valuing the company at approximately $1.5 billion.
+
+Mobileye went public on the New York Stock Exchange in 2014. It raised $890 million, and became the largest Israeli IPO in U.S. history. By the end of the year, Mobileye's technology was implemented in 160 car models made by 18 different OEMs.
+
+In 2017, Mobileye unveiled a mathematical model for safe self-driving cars based on a research paper by CEO Amnon Shashua and VP of Technology Shai Shalev-Shwartz. The paper outlines a system called Responsibility-Sensitive Safety (RSS) which redefines fault and caution and could potentially be used to inform insurance policies and driving laws. Shai Shalev-Shwartz was promoted to CTO in 2019.
+
+In March 2017, Intel announced that it would be acquiring Mobileye for $15.3 billion — the biggest-ever acquisition of an Israeli tech company. Following the acquisition, Reuters reported that the U.S. Securities and Exchange Commission had charged two Israelis, Ariel Darvasi and Amir Waldman, with engaging in insider trading prior to the announcement of the acquisition of Mobileye by Intel. Both had connections to Mobileye through the Hebrew University of Jerusalem, where Mobileye's technology was first developed. Also, the SEC obtained an emergency court order, freezing certain assets of Virginia residents Lawrence F. Cluff, Jr. and Roger E. Shaoul who allegedly used insider information to make approximately $1 million on Intel's purchase of Mobileye. Neither Intel nor Mobileye were accused by the SEC of violating the law.
+
+In October 2018, Mobileye and Volkswagen released plans to commercialize Mobility-as-a-Service (MaaS) in Israel. Mobileye began "robotaxi" trials with Nio electric vehicles in Israel in May 2020 due to a delay in the arrival of Volkswagen minivans, and unveiled its new production-ready robotaxi in 2021 at the IAA Mobility show in Munich.
+
+Mobileye demonstrated an autonomous car equipped only with cameras on the streets of Jerusalem in January 2020, later testing the cars in Munich and New York City.
+
+In December 2021, Intel announced its plan to take Mobileye automotive unit public via an IPO of newly issued stock in 2022, maintaining its majority ownership of the company. In October 2022, Intel offered 5–6% of outstanding shares raising $861million by selling 41million shares, valuing Mobileye at around $17billionmore than what it originally paid in 2017. Intel continued to hold all of Mobileye's Class B shares, giving itself an overall 99.4% of voting power. Mobileye picked the same stock ticker it used prior to the acquisitionMBLYbut on the Nasdaq.
+Original Mobileye logo
+
+ Partnerships 
+Mobileye has formed a number of partnerships with automakers. Mobileye launched multiple series productions for LDW on GM Cadillac STS and DTS vehicles, and on BMW 5 and 6 Series vehicles. In 2016, Mobileye and Delphi formed a partnership to develop a near-complete autonomous driving system by 2019. In early 2017, Mobileye announced a partnership with BMW to integrate Mobileye technology into vehicles going to market in 2018. In 2018, Mobileye announced partnerships with BMW, Nissan and Volkswagen. In 2019, Mobileye and NIO announced that they would partner on the development of AVs for consumer markets in China and other major territories. In July 2020, Mobileye and Ford announced a deal in which Mobileye would supply its EyeQ camera-based gear and software across Ford's global product line. Also in 2020, Mobileye announced a partnership with WILLER29 to launch a robotaxi service in Japan, Taiwan and Southeast Asia and with Geely for ADAS. The same year, Intel announced that it had acquired Moovit, a mobility-as-a-service (MaaS) company, to enhance Mobileye's MaaS offering.
+
+In February 2021, Mobileye, Transdev Autonomous Transport System (ATS) and Lohr Group formed a partnership to develop and deploy autonomous shuttles, and in April Mobileye announced a partnership with Udelv on the company's electric self-driving delivery vehicle, called "Transporter", with the goal to begin commercial operations in 2023. In May 2021, Toyota Motor Corp. selected Mobileye and German supplier ZF to develop and supply ADAS for a number of vehicle platforms. Mobileye also began a partnership with Mahindra in 2021.
+
+ Porsche 
+In May 2023, Porsche and Mobileye launched a collaboration to provide Mobileye’s SuperVision™ premium advanced driver assistance systems in future Porsche production models. 
+
+ Tesla 
+In August 2015, Tesla Motors announced that it would incorporate Mobileye's technology in Model S cars.Mobileye’s Tech Powers Tesla Model  NoCamels News 23 August 2015 Tesla reportedly did not share its plans with Mobileye, and after the first deadly crash of a self-driving Model S with active Autopilot became public in June 2016, Mobileye announced the end of their partnership. The two companies expressed disagreement over what caused the accident, with Mobileye CEO Amnon Shashua claiming that Tesla "was pushing the envelope in terms of safety" and that Autopilot is a "driver assistance system" and not a "driverless system". Mobileye also issued a statement that its systems were not designed to recognize a "lateral turn across path" and would not have those capabilities until 2018.Tesla and Mobileye disagree on lack of emergency braking in deadly Autopilot crash , on The Verge, July 1, 2016
+
+Technology
+EyeQ
+The EyeQ system-on-chip (SoC) utilizes a single camera sensor to provide passive/active ADAS and features including automatic emergency braking (AEB), adaptive cruise control (ACC), lane keeping assist(LKA), traffic jam assist (TJA) and forward collision warning (FCW). Mobileye's fifth-generation EyeQ is able to support fully-autonomous (Level 5) vehicles. More than 27 automobile manufacturers utilize EyeQ for their assisted-driving technologies.
+
+Road Experience Management (REM)
+Mobileye's Road Experience Management, or REM, uses real-time data from Mobileye-equipped vehicles to build out a global 3D map. The data collected is compressed text that collects about 10 kilobytes per kilometer and compiled in the cloud in a map called Mobileye RoadBook which leverages anonymized, crowdsourced data from vehicle cameras for autonomous navigation and localization. According to Mobileye, REM had mapped more than 7.5 billion kilometers of roads by January 2021.
+
+ Responsibility-Sensitive Safety Model (RSS) 
+RSS, or the Responsibility-Sensitive Safety Model, is a mathematical model first proposed by Mobileye in 2017 for AV safety. RSS is a formal model for AV decision-making that digitizes the implicit rules of safe driving for AVs to prevent self-driving vehicles from causing accidents. RSS is defined in software.
+
+ True Redundancy 
+True Redundancy is an integrated system that utilizes data streams from 360-surround view cameras, lidar, and radar for level 4 autonomous driving. This approach first "doubles down" on the computer-vision subsystem before adding a lidar/radar subsystem for redundancy.
+
+ Mobileye Supervision 
+SuperVision uses EyeQ5 SoC devices processing data from 11 cameras. The system uses cameras only and is designed for Level 2+ cars, and allows for hands-free driving and self-parking capabilities. Geely's Zeekr electric vehicle is equipped with the Mobileye SuperVision ADAS and began road trials in 2021.
+
+ Mobileye Drive 
+Mobileye Drive is a Level 4 self-driving system. The full sensor suite includes 13 cameras, 3 long-range LiDARs, 6 short-range LiDARs and 6 radars. Mobileye Drive was first fitted to vehicles used for driverless, ride-hailing services in 2021, with plans for public testing in Germany and Israel in 2022.
+
+ Aftermarket 
+Mobileye's aftermarket vision-based ADAS systems are based on the same core technology as for production models. These systems offer lane departure warning, forward collision warning, headway monitoring and warning, intelligent headlamp control and speed limit indication (tsr). These systems have also been integrated with fleet management systems.
+
+Chips
+
+Comparison
++MobileyeEyeQ1EyeQ2EyeQ3EyeQ4EyeQ5EyeQ6EyeQ UltraConfigurationMidHighMidHighLiteHighOn market200820102014201820212021202320242023Claimed autonomous levelDriver Assistance222+2+422+5Performance (int8 TOPS)0.00440.0260.2561.124.616534176Power consumption2.5 watt2.5 watt2.5 wattCPU2 core, 8 thread8 core, 32 thread12 core, 24 threadMemoryLPDDR4(X)LPDDR5LPDDR5XSemiconductor node180 nm CMOS90 nm CMOS40 nm CMOS28 nm FD-SOI7 nm FinFET7 nm FinFET5 nmAlgorithms & neural networksVehicle's Rear
+Pedestrians
+Lane Markings
+Semantic Free Space
+Traffic signs3D Vehicles,
+Next-Gen Lane Markings
+Road Markings
+Traffic Lights
+Relevance of Traffic Lights
+Next-Gen Semantic Free Space
+Road Profile
+General Objects
+Hazards
+Animals
+Path Prediction
+Road Edges3D Vidar (Pseudo Lidar)
+Pixel-Level Scene Segmentation
+Full Image Detection
+Surface Segmentation
+Lane Semantics
+Road Users Trajectory Prediction
+Parallax Net
+Vector Field,
+Multi-Camera Bird's Eye View Network
+Road Users Understanding
+Road GeometryImplementationsAudi's Traffic Jam Pilot
+2019 Audi A8
+Cadillac CT6 (2017-2019)
+GM's Supercruise
+Ford F-150 (2018-2020)
+Nissan's ProPilot 
+ 2020 Nissan Skyline
+ 2022 Nissan Ariya
+Tesla Autopilot Hardware 1
+Model S & X (Sep-2014 – Oct-2016)
+Volvo's Pilot Assist 1, 2 & 3 BMW Driving Assistant Professional
+X5 (2019 - 2020)
+3 Series (2019 - 2020)
+Ford Mustang Mach-E (2021) 
+Ford F-150 (2021)
+Li Xiang One
+NIO Pilot
+Nio ES8
+Nio ES6
+Nissan's ProPilot 2.0 
+VW Travel Assist
+Volkswagen Passat (2019-2020)
+Volkswagen Golf 8 (2020)
+Honda Sensing
+Honda HR-V (2021)
+Honda Civic (2022)
+Honda ZR-V (2023)BMW's Personal Copilot 
+BMW iX (2022)
+Zeekr Copilot (SuperVision™)
+Zeekr 001 (2021)
+Zeekr 009 (2023)
+
+Hardware
++Production modelZeekr 001Production date Q4 2021Product name Co-pilot Chips Board 2x MobilEye EyeQ5H Sensors Forward radar 250 m (820 ft) ultra-long sensing millimeter wave radar Forward cameras  Forward looking side cameras  Rearward looking side cameras  Rearview cameras  Parking cameras 

@@ -1,0 +1,88 @@
+{{short description|Stream in Pennsylvania, USA}}
+{{Infobox river
+| name               = Georges Creek
+| name_native        = 
+| name_native_lang   = 
+| name_other         = Tributary to Monongahela River
+| name_etymology     = 
+<!---------------------- IMAGE & MAP -->
+| image              = 
+| image_caption      = 
+| map                = 
+| map_size           = 300
+| map_caption        = 
+| pushpin_map        = Pennsylvania#USA
+| pushpin_map_size   = 300
+| pushpin_map_caption= Location of Georges Creek mouth
+<!---------------------- LOCATION -->
+| subdivision_type1  = Country
+| subdivision_name1  = [[United States]]
+| subdivision_type2  = State
+| subdivision_name2  = [[Pennsylvania]]
+| subdivision_type3  = County
+| subdivision_name3  = [[Fayette County, Pennsylvania|Fayette]]
+| subdivision_type4  = Borough
+| subdivision_name4  = [[Smithfield, Pennsylvania|Smithfield]]<br />[[Fairchance, Pennsylvania|Fairchance]]
+| subdivision_type5  = 
+| subdivision_name5  = 
+<!---------------------- PHYSICALCHARACTERISTICS -->
+| length             = {{convert|17.57|mi|km|abbr=on}}<ref name="geoviewer">{{cite web |title=ArcGIS Web Application |url=https://epa.maps.arcgis.com/apps/webappviewer/index.html?id=ada349b90c26496ea52aab66a092593b |website=epa.maps.arcgis.com |publisher=US EPA |accessdate=30 December 2019}}</ref>
+| width_min          = 
+| width_avg          = 
+| width_max          = 
+| depth_min          = 
+| depth_avg          = 
+| depth_max          = 
+| discharge1_location= [[Monongahela River]]
+| discharge1_min     = 
+| discharge1_avg     = {{convert|95.35|cuft/s|m3/s|abbr=on}} at mouth with Monongahela River<ref name="watershed">{{cite web |title=Georges Creek Watershed Report |url=https://watersgeo.epa.gov/watershedreport/?comid=3787775 |website=Waters Geoviewer |publisher=US EPA |accessdate=30 December 2019}}</ref>
+| discharge1_max     = 
+<!---------------------- BASIN FEATURES -->
+| source1            = confluence of Askon and White Rock Hollows
+| source1_location   = about 0.5 miles east of [[Fairchance, Pennsylvania]]<ref name="GCTopozone">{{cite web |title=Georges Creek Topo Map, Fayette County PA (Masontown Area) |url=https://www.topozone.com/pennsylvania/fayette-pa/stream/georges-creek-19/ |website=TopoZone |publisher=Locality, LLC |accessdate=30 December 2019 |language=en}}</ref>
+| source1_coordinates= {{coord|39|49|46|N|079|42|00|W|display=inline}}<ref name="GNIS">{{cite web |title=GNIS Detail - Georges Creek |url=https://geonames.usgs.gov/apex/f?p=138:3:0::NO:3:P3_FID,P3_TITLE:1192509,Georges%20Creek |website=geonames.usgs.gov |publisher=US Geological Survey |accessdate=30 December 2019}}</ref>
+| source1_elevation  = {{convert|1,200|ft|abbr=on}}<ref name = GCTopozone/>
+| mouth              = [[Monongahela River]]
+| mouth_location     = [[New Geneva, Pennsylvania]]<ref name = GCTopozone/>
+| mouth_coordinates  = {{coord|39|47|10|N|079|54|58|W|display=inline,title}}<ref name = GNIS/>
+| mouth_elevation    = {{convert|763|ft|abbr=on}}<ref name = GNIS/>
+| progression        = generally southwest
+| river_system       = [[Monongahela River]]
+| basin_size         = {{convert|64.87|sqmi}}<ref name = watershed/>
+| basin_population   = 
+| tributaries_left   = Cave Hollow<br />[[Mountain_Creek_(Georges_Creek_tributary)|Mountain Creek]]<br />Hope Hollow
+| tributaries_right  = [[Muddy_Run_(Georges_Creek_tributary)|Muddy Run]]<br />[[York_Run_(Georges_Creek_tributary)|York Run]]<br />[[War_Branch_(Georges_Creek_tributary)|War Branch]]
+| waterbodies        = 
+| custom_label       = 
+| custom_data        = 
+| extra              = 
+}}
+
+'''Georges Creek''' is a {{convert|17.57|mi|km|abbr=on}} long 4th order tributary to the [[Monongahela River]] in [[Fayette County, Pennsylvania]].
+
+==Variant names==
+According to the [[Geographic Names Information System]], it has also been known historically as:<ref name="GNIS"/> 
+* George Creek
+* George's Creek
+* Georges Run
+
+==Course==
+Georges Creek forms at the confluence of Askon Hollow and White Oak Hollow about 0.5 miles east of Fairchance in Fayette County.  Georges Creek then flows southwesterly to meet the Monongahela River at [[New Geneva, Pennsylvania]].<ref name = GCTopozone/>
+
+==Watershed==
+Georges Creek drains {{convert|64.87|sqmi}} of area, receives about 44.9 in/year of precipitation, has a [[topographic wetness index]] of 370.59, and has an average water temperature of 10.50&nbsp;°C.<ref name="watershed"/>  The watershed is 58% forested.<ref name="watershed"/>
+
+==Additional Images==
+
+[[File:Course of Georges Creek (Monongahela River tributary).jpg|thumb|left|baseline|Course of Georges Creek (Monongahela River tributary) in Fayette County, Pennsylvania]]
+[[File:Watershed of Georges Creek (Monongahela River tributary).jpg|thumb|center|baseline|Watershed of Georges Creek (Monongahela River tributary) in Fayette County, Pennsylvania]]
+
+==References==
+{{Reflist}}
+
+{{authority control}}
+
+[[Category:Rivers of Pennsylvania]]
+[[Category:Rivers of Fayette County, Pennsylvania]]
+[[Category:Tributaries of the Monongahela River]]
+[[Category:Allegheny Plateau]]

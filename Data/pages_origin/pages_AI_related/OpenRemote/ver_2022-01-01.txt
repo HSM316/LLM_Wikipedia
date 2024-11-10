@@ -1,0 +1,26 @@
+{{Multiple issues|
+{{notability|Products|date=June 2015}}
+{{advert|date=June 2015}}
+}}
+
+'''OpenRemote''' is an [[Open-source software|open source IoT]] solution available for smart building, and smart city [[automation]],<ref>{{Cite web | url=https://github.com/openremote/openremote | title=GitHub - openremote/Openremote: OpenRemote v3.| website=[[GitHub]]}}</ref> which integrates many different protocols and solutions, and offers [[Visualization software|visualization]] tools. OpenRemote Inc. was originally created by the founder of [[WildFly|JBoss]] [[Marc Fleury]] to enable the sponsorship of the OpenRemote open source project. OpenRemote follows the same professional open source methodology, licensing under the [[Affero General Public License]] version 3.
+
+It initially, successfully started the first open source home automation solution, but moved away from that with a new more generic IoT platform.
+
+== OpenRemote open source IoT platform ==
+
+Manager 3.0 is created to handle larger multi-tenant applications. It includes a generic asset and attribute structure, allowing users to build their own asset types and adding their protocols, using generic protocols (eg. HTTP/REST, MQTT, Bluetooth) or more traditional protocols such as KNX, BACnet, Modbus, Zwave. A rules engine allows for several ways of programming logic (When-Then rules, Flow rules, or Groovy programmed). A UI component library offers front end developers a quick way to build project specific frontend applications, using regular tools like [[Angular (web framework)|Angular]] or [[React (web framework)]]. By using multiple instances in an Edge Gateway mode on eg. [[ARM64]], multiple projects can be connected to, and synchronised with, a centrally hosted instance.
+
+== Reception ==
+
+OpenRemote is applied in a range of energy management, asset management and smart city applications. Examples can be found on their website openremote.io. Recently,{{when|date=August 2021}} they have gained some traction with licensing. In addition they are adopted by cities and property developers, which apply the tools to distributed energy management solutions,<ref>{{cite news |title=The City of Arnhem selects OpenRemote's Energy Management IoT solution |url=https://www.windtech-international.com/projects-and-contracts/the-city-of-arnhem-selects-openremote-s-energy-management-iot-solution |accessdate=1 December 2020}}</ref> and [[Smart city|smart cities]]. As well as earlier recognition by the ''MIT Technology Review'',<ref>{{cite news |title=Open source IoT glues Internet of Things together |url=http://www.technologyreview.com/news/519666/free-software-ties-the-internet-of-things-together%20MIT%20Technology%20review |accessdate=1 November 2013 |publisher=MIT Technology Review}}</ref> they were also recognised by the Dutch Ministry of Security & Justice.<ref>{{cite web |last1=Rijksoverheid |title=OpenRemote wint Veiligheids Innovatie Competitie |url=https://www.rijksoverheid.nl/actueel/nieuws/2016/11/22/plan-voor-slimmere-grensbewaking-schiphol-winnaar-venj-innovatieprijs%20Winner%20Safety%20Innovation%20Competition%20Dutch%20Ministry%20of%20Safety%20&%20Justice%202016 |accessdate=1 September 2016}}</ref>
+
+==References==
+
+{{reflist}}
+
+== External links ==
+* [http://openremote.org Community website]
+* [http://www.openremote.io Professional website]
+
+[[Category:Free software]]

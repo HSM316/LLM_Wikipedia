@@ -1,0 +1,75 @@
+Quadratic unconstrained binary optimization (QUBO), also known as unconstrained binary quadratic programming (UBQP), is a combinatorial optimization problem with a wide range of applications from finance and economics to machine learning. QUBO is an NP hard problem, and for many classical problems from theoretical computer science, like maximum cut, graph coloring and the partition problem, embeddings into QUBO have been formulated.
+Embeddings for machine learning models include support-vector machines, clustering and probabilistic graphical models.
+Moreover, due to its close connection to Ising models, QUBO constitutes a central problem class for adiabatic quantum computation, where it is solved through a physical process called quantum annealing.
+
+Definition
+
+The set of binary vectors of a fixed length  is denoted by , where  is the set of binary values (or bits).
+We are given a real-valued upper triangular matrix , whose entries  define a weight for each pair of indices  within the binary vector.
+We can define a function  that assigns a value to each binary vector through
+ 
+
+Intuitively, the weight  is added if both  and  have value 1.
+When , the values  are added if , as  for all .
+
+The QUBO problem consists of finding a binary vector  that is minimal with respect to , namely
+ 
+
+In general,  is not unique, meaning there may be a set of minimizing vectors with equal value w.r.t. .
+The complexity of QUBO arises from the number of candidate binary vectors to be evaluated, as  grows exponentially in .
+
+Sometimes, QUBO is defined as the problem of maximizing , which is equivalent to minimizing .
+
+Properties
+
+QUBO is scale invariant for positive factors , which leave the optimum  unchanged:
+ 
+
+In its general form, QUBO is NP-hard and cannot be solved efficiently by any polynomial-time algorithm.
+However, there are polynomially-solvable special cases, where  has certain properties, for example:
+
+ If all coefficients are positive, the optimum is trivially . Similarly, if all coefficients are negative, the optimum is .
+ If  is diagonal, the bits can be optimized independently, and the problem is solvable in . The optimal variable assignments are simply  if , and  otherwise.
+ If all off-diagonal elements of  are non-positive, the corresponding QUBO problem is solvable in polynomial time.See Theorem 3.16 in Punnen (2022); note that the authors assume the maximization version of QUBO.
+
+Applications
+
+QUBO is a structurally simple, yet computationally hard optimization problem.
+It can be used to encode a wide range of optimization problems from various scientific areas.
+
+Cluster Analysis
+
+As an illustrative example of how QUBO can be used to encode an optimization problem, we consider the problem of cluster analysis.
+Here, we are given a set of 20 points in 2D space, described by a matrix , where each row contains two cartesian coordinates.
+We want to assign each point to one of two classes or clusters, such that points in the same cluster are similar to each other.
+For two clusters, we can assign a binary variable  to the point corresponding to the -th row in , indicating whether it belongs to the first () or second cluster ().
+Consequently, we have 20 binary variables, which form a binary vector  that corresponds to a cluster assignment of all points (see figure).
+
+One way to derive a  clustering is to consider the pairwise distances between points.
+Given a cluster assignment , one of  or  evaluates to 1 if points  and  are in the same cluster.
+Similarly, one of  or  indicates that they are in different clusters.
+Let  denote the Euclidean distance between points  and .
+In order to define a cost function to minimize, when points  and  are in the same cluster we add their positive distance , and subtract it when they are in different clusters.
+This way, an optimal solution tends to place points which are far apart into different clusters, and points that are close into the same cluster.
+The cost function thus comes down to
+ 
+
+From the second line, the QUBO parameters can be easily found by re-arranging to be:
+ 
+
+Using these parameters, the optimal QUBO solution will correspond to an optimal cluster w.r.t. above cost function.
+
+Connection to Ising models
+
+QUBO is very closely related and computationally equivalent to the Ising model, whose Hamiltonian function is defined as
+ 
+with real-valued parameters  for all .
+The spin variables  are binary with values from  instead of .
+Moreover, in the Ising model the variables are typically arranged in a lattice where only neighboring pairs of variables  can have non-zero coefficients.
+Applying the identity  yields an equivalent QUBO problem:
+ 
+where
+ 
+and using the fact that for a binary variable .
+
+As the constant  does not change the position of the optimum , it can be neglected during optimization and is only important for recovering the original Hamiltonian function value.

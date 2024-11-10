@@ -1,0 +1,38 @@
+{{Short description|Role for technical aspects of data systems}}
+{{more footnotes|date=August 2010}}
+In [[data governance]] groups, responsibilities for data management are increasingly divided between the business process owners and information technology (IT) departments.  Two functional titles commonly used for these roles are [[data steward]] and '''data custodian'''. 
+
+Data Stewards are commonly responsible for data content, context, and associated business rules. Data custodians are responsible for the safe custody, transport, storage of the data and implementation of business rules.<ref>Carnegie Mellon - Information Security Roles and Responsibilities, http://www.cmu.edu/iso/governance/roles/data-custodian.html</ref><ref>''Policies, Regulations and Rules: Data Management Procedures - REG 08.00.3 - Information Technology'', NC State University, http://www.ncsu.edu/policies/informationtechnology/REG08.00.3.php {{Webarchive|url=https://web.archive.org/web/20100616052821/http://www.ncsu.edu/policies/informationtechnology/REG08.00.3.php |date=2010-06-16 }}</ref> Simply put, Data Stewards are responsible for what is stored in a data field, while data custodians are responsible for the technical environment and database structure. Common job titles for data custodians are database administrator (DBA), data modeler,[[Extract, transform, load|ETL]] developer and data engineer.
+
+==Data custodian responsibilities==
+A data custodian ensures:
+# Access to the data is authorized and controlled
+# Data stewards are identified for each data set
+# Technical processes sustain [[data integrity]]
+# Processes exist for data quality issue resolution in partnership with data stewards
+# Technical controls safeguard data
+# Data added to data sets are consistent with the [[common data model]]
+# Versions of [[master data]] are maintained along with the history of changes
+# Change management practices are applied in maintenance of the database
+# Data content and changes can be audited
+
+==See also==
+* [[Data governance]]
+* [[Data steward]]
+
+==References==
+<references></references>
+
+==Related Links==
+* ''Establishing data stewards'', by Jonathan G. Geiger, Teradata Magazine Online, September 2008, http://apps.teradata.com/tdmo/v08n03/Features/EstablishingDataStewards.aspx
+* '' A Rose By Any Other Name – Titles In Data Governance'', by Anne Marie Smith, Ph.D., EIMInstitute.ORG Archives, Volume 1, Issue 13, March 2008, http://www.eiminstitute.org/library/eimi-archives/volume-1-issue-13-march-2008-edition/a-rose-by-any-other-name-2013-titles-in-data-governance
+
+{{DEFAULTSORT:Data Custodian}}
+[[Category:Information technology governance]]
+[[Category:Data management]]
+[[Category:Knowledge representation]]
+[[Category:Library occupations]]
+[[Category:Metadata]]
+[[Category:Technical communication]]
+
+[[de:Data Steward]]

@@ -1,0 +1,91 @@
+{{short description|Programming paradigm}}
+{{Programming paradigms}}
+
+'''Agent-oriented programming''' ('''AOP''') is a [[programming paradigm]] where the construction of the software is centered on the concept of [[software agent]]s. In contrast to [[object-oriented programming]] which has objects (providing methods with variable parameters) at its core, AOP has externally specified agents (with interfaces and messaging capabilities) at its core. They can be thought of as abstractions of objects. Exchanged messages are interpreted by receiving "agents", in a way specific to its class of agents.
+
+== History ==
+Historically, the concept of agent-oriented programming and the idea of centering software around the concept of an Agent was introduced by [[Yoav Shoham]] within his [[Artificial Intelligence]] studies in 1990.<ref>
+{{cite book | first=Y. | last=Shoham | year=1990 | title=Agent-Oriented Programming | publisher = Computer Science Department | location = Stanford University | type = Technical Report STAN-CS-90-1335}}</ref><ref>
+{{cite journal | first=Y. | last=Shoham | year=1993 | title=Agent-Oriented Programming | journal = Artificial Intelligence | volume=60 | citeseerx =10.1.1.123.5119 | pages = 51–92 | doi = 10.1016/0004-3702(93)90034-9 | issue = 1}}
+</ref> His agents are specific to his own paradigm as they have just one method, with a single parameter. To quote Yoav Shoham from his paper in 1990 for a basic difference between AOP and OOP:
+:...agent-oriented programming (AOP), which can be viewed as a specialization of object-oriented programming. ...
+
+{| class="wikitable"
+|-
+!  !! OOP !! AOP
+|-
+| Basic unit || object || agent
+|-
+| Parameters defining state of basic unit || unconstrained || beliefs, commitments, capabilities, choices, ...
+|-
+| Process of computation || message passing and response methods || message passing and response methods
+|-
+| Types of message || unconstrained || inform, request, offer, promise, decline, ...
+|-
+| Constraints on methods || none || honesty, consistency, ...
+|}
+
+== Frameworks ==
+There are multiple AOP 'frameworks', also called agent platforms, that implement Shoham's programming paradigm. The following examples illustrate how a basic agent is programmed as a hello-world program.
+
+=== JADE ===
+For the Java-platform one of the frameworks is JADE <ref>{{cite conference|last=Bellifeminee|first=Fabio|author2=Agostino Poggi |author3=Giovanni Rimassa|title=JADE: a FIPA2000 compliant agent development environment|year=2001|conference=Proceedings of the fifth international conference on Autonomous agents|pages=216–217|doi=10.1145/375735.376120}}</ref> (https://web.archive.org/web/20100621141053/http://jade.tilab.com/).
+Here is a very basic example [https://web.archive.org/web/20110702083510/http://rootdev.nl/blog/article/aop_jade_configure_in_eclipse_and_netbeans] of an agent that runs code
+<syntaxhighlight lang="java">
+package helloworld;
+import jade.core.Agent;
+
+public class Hello extends Agent {
+	
+	protected void setup() { 
+		System.out.println("Hello World. ");
+		System.out.println("My name is "+ getLocalName()); 
+	}
+	
+	public Hello() {
+		System.out.println("Constructor called");
+	}
+
+}
+</syntaxhighlight>
+At the core of JADE's AOP model is that its [[API]] supports the standard [[Foundation for Intelligent Physical Agents|FIPA]] [[Agent Communication Language]]
+
+=== Agent Speak (Jason) ===
+For a literal translation of agent-oriented concepts into a scheme unobfuscated as is JADE, behind Java and Object Orientedness, Agent Speak <ref>Anand S. Rao, 1996. AgentSpeak(L): BDI Agents Speak Out in a Logical Computable Language. Proceedings of Seventh European Workshop on Modelling Autonomous Agents in a Multi-Agent World (MAAMAW-96).</ref> (Jason) provides a "natural" language for agents.
+<syntaxhighlight lang="java">
+	
+	started.
+
+	+started <- .print("Hello World. ").
+	
+</syntaxhighlight>
+
+=== GOAL ===
+[[GOAL agent programming language|GOAL]] is an agent [[programming language]] for programming [[cognitive agent]]s. GOAL agents derive their choice of action from their beliefs and goals. The language provides the basic building blocks to design and implement cognitive agents by programming constructs that allow and facilitate the manipulation of an agent's beliefs and goals and to structure its [[decision-making]]. The language  provides an intuitive programming framework based on [[common sense]] or [[practical reasoning]].
+
+=== SARL Language ===
+[[SARL language|SARL]]<ref>{{cite book|doi=10.1109/wi-iat.2014.156|chapter=SARL: A General-Purpose Agent-Oriented Programming Language|title=2014 IEEE/WIC/ACM International Joint Conferences on Web Intelligence (WI) and Intelligent Agent Technologies (IAT)|pages=103–110|year=2014|last1=Rodriguez|first1=Sebastian|last2=Gaud|first2=Nicolas|last3=Galland|first3=Stéphane|isbn=978-1-4799-4143-8}}</ref> ([http://www.sarl.io SARL website]) provides the fundamental abstractions for coding multiagent systems. It uses a script-like syntax (inspired by Scala and Ruby).
+<syntaxhighlight lang="java">
+package helloworld
+import io.sarl.core.Initialize
+agent HelloWorldAgent {
+        on Initialize {	
+             println("Hello World.")
+        }
+}	
+</syntaxhighlight>
+
+== Middleware ==
+One way to implement modular or extensible AOP support is to define standard AOP [[API]]s to [[middleware]] functions that are themselves implemented as [[software agent]]s. For example, a directory service can be implemented as a [[Foundation for Intelligent Physical Agents|FIPA]] directory facilitator or DF software agent; life-cycle management to start, stop, suspend and resume agents can be implemented as a FIPA Agent Management Service or AMS agent.<ref>{{cite journal|last=Poslad|first=S|title=Specifying Protocols for Multi-agent System Interaction|year=2007|journal=ACM Transactions on Autonomous and Adaptive Systems|volume=2|issue=4|pages=15–es|doi=10.1145/1293731.1293735}}</ref> A benefit of the AOP approach is that it supports more dynamic roles between different users and providers of applications, services and networks. For example, traditionally, networks and services were usually managed by the network and service provider on behalf of the customer and offered as a single virtual network service but customers themselves are becoming more empowered to integrate and manage their own services. This can be achieved via AOP and APIs to middleware agents that can flexibly and dynamically manage communication.<ref>{{cite book|last=Poslad|first=S|author2=J. Pitt |author3=A. Mamdani |author4=R. Hadingham |author5=P. Buckle |title = Agent-oriented middleware for integrating customer network services. In: Software Agents for Future Communication Systems, Hayzelden A, Bigham J Eds.| year = 1999|pages=221–242|doi=10.1007/978-3-642-58418-3_9}}</ref>
+
+== See also ==
+* [[Software agent]]
+* [[NetLogo]]
+* [[Actor model]]
+* [[GOAL agent programming language|GOAL]]
+
+== References ==
+{{Reflist}}
+
+{{DEFAULTSORT:Agent-Oriented Programming}}
+[[Category:Agent-based programming languages]]

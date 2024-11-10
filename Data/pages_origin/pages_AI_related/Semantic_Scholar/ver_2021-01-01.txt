@@ -1,0 +1,40 @@
+{{short description|Search service for journal articles}}
+{{Infobox website
+| name             = Semantic Scholar
+| logo             = Semantic Scholar logo.png
+| type             = [[Search engine]]
+| author           = [[Allen Institute for Artificial Intelligence]]
+| launch_date      = {{start date|2015|11}}
+| website          = {{url|https://semanticscholar.org}}
+}}
+
+'''Semantic Scholar''' is an [[artificial intelligence|artificial-intelligence]] backed [[search engine]] for [[academic publications]] that was developed at the [[Allen Institute for Artificial Intelligence]] and publicly released in November 2015.<ref name="MyUser_The_Washington_Post_November_3_2015c">{{cite web |author=Ariana Eunjung Cha |url=https://www.washingtonpost.com/news/to-your-health/wp/2015/11/02/paul-allens-ai-research-group-unveils-program-that-aims-to-shake-up-how-we-search-scientific-knowledge-give-it-a-try/ |title=Paul Allen's AI research group unveils program that aims to shake up how we search scientific knowledge. Give it a try. |date=3 November 2015 |newspaper=The Washington Post |accessdate= November 3, 2015}}</ref> The project uses a combination of [[machine learning]], [[natural language processing]], and [[machine vision]] to add a layer of [[semantic analysis (linguistics)|semantic analysis]] to the traditional methods of [[citation analysis]], and to extract relevant figures, entities, and venues from papers.<ref name=Bohannon>{{cite journal|url=http://www.sciencemag.org/news/2016/11/computer-program-just-ranked-most-influential-brain-scientists-modern-era|title=A computer program just ranked the most influential brain scientists of the modern era|last1=Bohannon |first1=John |date=11 November 2016 |journal=[[Science (journal)|Science]]|doi=10.1126/science.aal0371|accessdate=12 November 2016}}</ref> In comparison to [[Google Scholar]] and [[PubMed]], Semantic Scholar is designed to highlight the most important and influential papers, and to identify the connections between them.
+
+As of January 2018, following a 2017 project that added biomedical papers and topic summaries, the Semantic Scholar corpus included more than 40 million papers from [[computer science]] and [[biomedicine]].<ref>{{Cite news|url=https://www.geekwire.com/2017/ai2-semantic-scholar-biomedicine/|title=AI2 scales up Semantic Scholar search engine to encompass biomedical research|date=2017-10-17|work=GeekWire|access-date=2018-01-18|language=en-US}}</ref> In March 2018, Doug Raymond, who developed [[machine learning]] initiatives for the [[Amazon Alexa]] platform, was hired to lead the Semantic Scholar project.<ref>{{cite web|url=https://www.geekwire.com/2018/tech-moves-allen-institute-hires-amazon-alexa-machine-learning-leader-microsoft-chairman-takes-new-investor-role/|publisher=GeekWire|title=Tech Moves: Allen Instititue Hires Amazon Alexa Machine Learning Leader; Microsoft Chairman Takes on New Investor Role; and More|date=2018-05-02}}</ref>
+
+As of August 2019, the number of included papers had grown to more than 173 million<ref>{{cite web |title=main page |url=https://www.semanticscholar.org/ |website=Semantic Scholar |accessdate=11 August 2019}}</ref> after the addition of the [[Microsoft Academic Graph]] records.<ref>{{cite web|accessdate=2019-08-25|title=AI2 joins forces with Microsoft Research to upgrade search tools for scientific studies|url=https://www.geekwire.com/2018/ai2-joins-forces-microsoft-upgrade-search-tools-scientific-research/|date=2018-12-05|website=GeekWire}}</ref> Each paper hosted by Semantic Scholar is assigned a unique [[identifier]] called the Semantic Scholar Corpus ID (or S2CID for short), for example
+
+:: {{cite journal|last1=Liu |first1=Ying |last2=Gayle |first2=Albert A |last3=Wilder-Smith |first3=Annelies |last4=Rocklöv |first4=Joacim |title=The reproductive number of COVID-19 is higher compared to SARS coronavirus |journal=Journal of Travel Medicine |date=March 2020 |volume=27 |issue=2 |id={{S2CID|211099356}}}}
+
+==See also==
+* [[Citation analysis]]
+* [[Citation index]]
+* [[Knowledge extraction]]
+* [[List of academic databases and search engines]]
+* [[Scientometrics]]
+
+==References==
+{{Reflist}}
+
+==External links==
+{{Wikidata property|P6611|P4012|P8299|P4011}}
+* {{Official website}}
+
+{{Academic publishing}}
+{{Authority files}}
+
+[[Category:Bibliographic databases in computer science]]
+[[Category:Internet search engines]]
+[[Category:Scholarly search services]]
+
+{{searchengine-website-stub}}

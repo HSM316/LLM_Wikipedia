@@ -1,0 +1,62 @@
+{{short description|Plot of machine learning model performance over time or experience}}
+
+[[File:Learning Curves (Naive Bayes).png|thumb|Learning curve plot of training set size vs training score (loss) and cross-validation score]]
+{{Machine learning bar}}
+
+In [[machine learning]] (ML), a '''learning curve''' (or '''training curve''') is a [[Plot (graphics)|graphical representation]] that shows how a model's performance on a [[Training, validation, and test data sets|training set]] (and usually a validation set) changes with the number of training iterations (''epochs'') or the amount of training data.<ref name=abs2201.12150>{{cite news |arxiv=2201.12150 |title=Mohr, Felix and van Rijn, Jan N. "Learning Curves for Decision Making in Supervised Machine Learning - A Survey." arXiv preprint arXiv:2201.12150 (2022).}}</ref>
+Typically, the number of training epochs or training set size is plotted on the ''x''-axis, and the value of the [[loss function]] (and possibly some other metric such as the [[Cross-validation (statistics)|cross-validation score]]) on the ''y''-axis.
+
+Synonyms include ''error curve'', ''experience curve'', ''improvement curve'' and ''generalization curve''.<ref>{{Cite journal |last1=Viering |first1=Tom |last2=Loog |first2=Marco |date=2023-06-01 |title=The Shape of Learning Curves: A Review |url=https://ieeexplore.ieee.org/document/9944190 |journal=IEEE Transactions on Pattern Analysis and Machine Intelligence |volume=45 |issue=6 |pages=7799–7819 |doi=10.1109/TPAMI.2022.3220744 |pmid=36350870 |issn=0162-8828|arxiv=2103.10948 }}</ref>
+
+More abstractly, learning curves plot the difference between learning effort and predictive performance, where "learning effort" usually means the number of training samples, and "predictive performance" means accuracy on testing samples.<ref>{{Citation |last=Perlich |first=Claudia |title=Learning Curves in Machine Learning |date=2010 |url=https://doi.org/10.1007/978-0-387-30164-8_452 |encyclopedia=Encyclopedia of Machine Learning |pages=577–580 |editor-last=Sammut |editor-first=Claude |access-date=2023-07-06 |place=Boston, MA |publisher=Springer US |language=en |doi=10.1007/978-0-387-30164-8_452 |isbn=978-0-387-30164-8 |editor2-last=Webb |editor2-first=Geoffrey I.}}</ref>
+
+Learning curves have many useful purposes in ML, including:<ref>{{cite web|last=Madhavan|first=P.G.|title=A New Recurrent Neural Network Learning Algorithm for Time Series Prediction|url=http://www.jininnovation.com/RecurrentNN_JIntlSys_PG.pdf|work=Journal of Intelligent Systems|page=113 Fig. 3|volume=7|issue=1–2|date=1997}}</ref><ref>{{cite web|title=Machine Learning 102: Practical Advice|url=https://astroml.github.com/sklearn_tutorial/practical.html#learning-curves|work=Tutorial: Machine Learning for Astronomy with Scikit-learn}}</ref><ref>{{cite journal|last=Meek|first=Christopher|author2=Thiesson, Bo |author3=Heckerman, David |title=The Learning-Curve Sampling Method Applied to Model-Based Clustering|journal=Journal of Machine Learning Research|date=Summer 2002|volume=2|issue=3|page=397|url=http://connection.ebscohost.com/c/articles/7188676/learning-curve-sampling-method-applied-model-based-clustering|archive-url=https://web.archive.org/web/20130715142652/http://connection.ebscohost.com/c/articles/7188676/learning-curve-sampling-method-applied-model-based-clustering|url-status=dead|archive-date=2013-07-15}}</ref>
+
+* choosing model parameters during design,
+* adjusting optimization to improve convergence,
+* and diagnosing problems such as [[overfitting]] (or underfitting).
+
+Learning curves can also be tools for determining how much a model benefits from adding more training data, and whether the model suffers more from a [[Bias-variance tradeoff|variance error or a bias error]]. If both the validation score and the training score converge to a certain value, then the model will no longer significantly benefit from more training data.<ref name="scikit-learn_learning-curve">{{cite web |author=scikit-learn developers |title=Validation curves: plotting scores to evaluate models — scikit-learn 0.20.2 documentation |url=https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve |access-date=February 15, 2019}}</ref>
+
+==Formal definition==
+
+When creating a function to approximate the distribution of some data, it is necessary to define a loss function <math>L(f_\theta(X), Y)</math> to measure how good the model output is (e.g., accuracy for classification tasks or [[mean squared error]] for regression). We then define an optimization process which finds model parameters <math>\theta</math> such that <math>L(f_\theta(X), Y)</math> is minimized, referred to as <math>\theta^*</math>.
+
+===Training curve for amount of data===
+
+If the training data is
+
+<math>\{x_1, x_2, \dots, x_n \}, \{ y_1, y_2, \dots y_n \}</math>
+
+and the validation data is
+
+<math>\{ x_1', x_2', \dots x_m' \}, \{ y_1', y_2', \dots y_m' \}</math>,
+
+a learning curve is the plot of the two curves
+
+# <math>i \mapsto L(f_{\theta^*(X_i, Y_i)}(X_i), Y_i ) </math>
+# <math>i \mapsto L(f_{\theta^*(X_i, Y_i)}(X_i'), Y_i' ) </math>
+
+where <math>X_i = \{ x_1, x_2, \dots x_i \} </math>
+
+===Training curve for number of iterations===
+
+Many optimization [[algorithm]]s are iterative, repeating the same step (such as [[backpropagation]]) until the process [[Convergence (mathematics)|converges]] to an optimal value. [[Gradient descent]] is one such algorithm. If <math>\theta_i^*</math> is the approximation of the optimal <math>\theta</math> after <math>i</math> steps, a learning curve is the plot of
+
+# <math>i \mapsto L(f_{\theta_i^*(X, Y)}(X), Y) </math>
+# <math>i \mapsto L(f_{\theta_i^*(X, Y)}(X'), Y') </math>
+
+==See also==
+*[[Overfitting]]
+*[[Bias–variance tradeoff]]
+*[[Model selection]]
+*[[Cross-validation (statistics)]]
+*[[Validity (statistics)]]
+*[[Verification and validation]]
+*[[Double descent]]
+
+==References==
+{{Reflist}}
+
+[[Category:Model selection]]
+[[Category:Machine learning]]

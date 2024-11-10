@@ -1,0 +1,90 @@
+{{short description|English computer scientist}}
+{{Infobox scientist
+| name = Emma Hart
+| image = 
+| birth_name = 
+| birth_date = {{Birth year and age|1967}}
+| birth_place = [[Middlesbrough]], [[England]]
+| death_date = <!-- {{death date and age|mf=yes|2001|07|19|1925|03|05}} -->
+| death_place = 
+| residence = 
+| nationality = [[United Kingdom|English]]
+| field = computer science
+| known_for = [[evolutionary computation|Evolutionary algorithms]], [[Optimisation (computer science)|optimisation]]
+| work_institutions = [[Edinburgh Napier University]]
+| alma_mater = [[University of Oxford]]<br />[[University of Edinburgh]]
+| doctoral_advisor = [[Peter Ross (computer scientist)|Peter Ross]]
+| awards = 2018, Bronze Award in International Human-Competitive Awards (Humies)
+| spouse = 
+| thesis_title = Immunology as a metaphor for computational information processing: Fact or fiction?
+}}
+
+{{external media | width = 210px | align = right | headerimage=  | video1 = [https://www.contactengine.com/insiders-guide-ai-evolutionary-computation/ "An Insider's Guide to Artificial Intelligence: Evolutionary Computation"], Laura van Beers talks to Professor Emma Hart | video2 = [https://www.youtube.com/watch?v=PtNI3DYFOVA "Emma Hart - Full Interview"], Sentient Technologies, Aug 16, 2018 }}
+
+'''Professor Emma Hart''' (born 1967) is an English computer scientist known for her work in [[Artificial immune system|Artificial Immune Systems (AIS)]], [[evolutionary computation]] and [[Optimisation (computer science)|optimisation]]. She is a professor of [[computational intelligence]] at [[Edinburgh Napier University]], editor-in-chief of the ''[[Evolutionary Computation (journal)|Journal of Evolutionary Computation]]'' (MIT Press), and D. Coordinator of the Future & Emerging Technologies (FET) Proactive Initiative, Fundamentals of Collective Adaptive Systems.
+
+== Early life and education ==
+Hart was born in [[Middlesbrough]], England in 1967.<ref name="Minervascientifica">{{cite web |title=Emma Hart: Bio-inspired computing |url=http://minervascientifica.co.uk/emma-hart/ |website=Minerva Scientifica |publisher=[[National Library of Scotland]], [[British Society for the History of Science]] |access-date=15 February 2019 |location=Edinburg, Scotland |date=6 November 2017}}</ref> In 1990 she graduated from the [[University of Oxford]] with a first class BA(Hons) in Chemistry. She then continued her studies at the [[University of Edinburgh]], graduating with an MSc in Artificial Intelligence in 1994, followed by a PhD that explored the use of immunology as an inspiration for computing, examining a range of techniques applied to optimization and data classification problems.<ref name="Ishibuchi2015">{{cite book |editor-last=Ishibuchi |editor-first=Hisao |title=Computational Intelligence |url=https://books.google.com/books?id=lZhgCwAAQBAJ&pg=PA138 |volume=II |year=2015 |publisher=[[UNESCO]], [[Encyclopedia of Life Support Systems|ELOSS Publishers Ltd.]] |location=United Kingdom |isbn=978-1-78021-021-6 |pages=138}}</ref> Her dissertation was titled ''Immunology as a metaphor for computational information processing: Fact or fiction?,''<ref name="Dissertation">{{Cite book|last=Hart|first=Emma|date=2002|title=Immunology as a metaphor for computational information processing: fact or fiction? (Dissertation) |language=en|publisher=The University of Edinburgh|hdl=1842/23042}}</ref> and her doctoral advisor was [[Peter Ross (computer scientist)|Peter Ross]].
+
+== Career ==
+In 2000 Hart took a position as a lecturer at [[Edinburgh Napier University]] , and was promoted to a [[Reader (academic rank)|Reader]], [[Professor]], and in 2008 Chair in [[Natural Computation]].<ref name="Ishibuchi2015" /> She is now director of the [[Centre of Algorithms, Visualisation and Evolving Systems]] (CAVES) group in the School of Computing. She continues to research in the area of developing novel bio-inspired techniques for solving a range of real-world optimisation and classification problems,<ref name="RobotEvolutionProject">{{cite web |title=Autonomous robot evolution cradle to grave |url=https://www.napier.ac.uk/research-and-innovation/research-search/projects/autonomous-robot-evolution-cradle-to-grave |website=Edinburgh Napier University |language=en}}</ref> as well as exploring  the fundamental properties of immune-inspired computing through modelling and simulation.<ref name="Ishibuchi2015" /> She is also involved in editorial activity and currently occupies the position of Editor-in-Chief of the ''[[Evolutionary Computation (journal)|Journal of Evolutionary Computation]]'' (MIT Press).<ref name="MIT2017">{{cite news |title=Welcome Emma Hart |url=https://mitpress.mit.edu/blog/welcome-emma-hart |access-date=21 February 2019 |work=The MIT Press |date=13 January 2017}}</ref><ref>{{cite news |first1=Emma|last1= Hart |first2=Barry|last2= Gardiner |title=Storm Damage to Forests Costs Billions – Here's How AI Can Help |url=http://www.brinknews.com/storm-damage-to-forests-costs-billions-heres-how-ai-can-help/ |access-date=15 February 2019 |agency=Marsh & McLennan Insights |newspaper=Brink News |date=29 May 2018 |location=Washington, D.C.}}</ref>
+
+Her interests lie in the area of [[bio-inspired computing]]''''',''''' in particular [[Artificial immune system|Artificial Immune Systems (AIS)]]''.'' She also undertakes research in three main areas:'' ''[[Optimisation (computer science)|optimisation]]'','' [[Self-organization|self-organising/self-adaptive systems]]'', ''and [[artificial intelligence]]''.''
+
+Hart is D. Coordinator of Fundamentals of Collective Adaptive Systems (FoCAS), a Future and Emerging Technologies Proactive Initiative funded by the European Commission under FP7.<ref name="AboutFoCAS">{{cite web |title=About FoCAS |url=http://www.focas.eu/about-focas/ |website=Fundamentals of Collective Adaptive Systems}}</ref>
+
+== Selected works ==
+
+=== Conference talks ===
+*{{cite web |last1=Hart |first1=Emma |title=Lifelong learning in optimization (video) |url=https://euro2016.euro-online.org/index.html%3Fp=781.html |website=28th European Conference on Operational Research |publisher=The Association of European Operational Research Societies}}
+
+=== Journal articles ===
+* "An immune system approach to scheduling in changing environments". E.Hart, P.Ross. 1999. ''Proceedings of the 1st Annual Conference on Genetic and Evolutionary Computation'' (2), 1559-1566.
+* "Exploiting the analogy between immunology and sparse distributed memories: A system for clustering non-stationary data". E.Hart, P.Ross. 2002. ''1st International Conference on Artificial Immune Systems''.  
+* "Evolutionary scheduling: A review". E Hart, P Ross, D Corne. 2005. ''Genetic Programming and Evolvable Machines'' 6(2), 191-220. DOI: https://doi.org/10.1007/s10710-005-7580-7 
+* "Application areas of AIS: The past, the present and the future". E.Hart, J.Timmis. 2008. ''Applied soft computing'' 8(1), 191-201. DOI: https://doi.org/10.1016/j.asoc.2006.12.004  
+* "Structure versus function: a topological perspective on immune networks". E.Hart, H.Bersini, F.Santos. 2010. ''Natural computing'' 9(3), 603-624. DOI: https://doi.org/10.1007/s11047-009-9138-8 
+* "On the life-long learning capabilities of a nelli*: A hyper-heuristic optimisation system". E.Hart, K.Sim. 2014. ''International Conference on Parallel Problem Solving from Nature'', 282-291. DOI: https://doi.org/10.1007/978-3-319-10762-2_28 
+* "A hyper-heuristic ensemble method for static job-shop scheduling". E.Hart, K.Sim. 2016. ''Evolutionary computation 24(4), 609-635. DOI:'' https://dx.doi.org/10.1162/EVCO_a_00183
+
+== Awards and recognition ==
+* 2016, Featured article on Lifelong Learning in Optimisation, IFORS newsletter<ref name="IFORSFeatureArticle">{{cite web |title=IFORS newsletter features article on Prof. Harts work on Lifelong Learning in Optimisation |url=https://www.napier.ac.uk/research-and-innovation/research-search/news/ifors-newsletter-features-article-on-prof-harts-work-on-lifelong-learning-in |website=Edinburgh Napier University |language=en |date=December 5, 2016}}</ref>
+* 2016, "A Combined Generative and Selective Hyper-heuristic for the Vehicle Routing Problem" presented at GECCO 2016 (Denver, USA), ACM<ref name="Gecco2016Paper">{{cite web |title=Conference Success for members of Bio-Inspired Special Interest group |url=https://www.napier.ac.uk/research-and-innovation/research-search/news/conference-success-for-members-of-bioinspired-special-interest-group |website=Napier |language=en |date=July 18, 2016}}</ref>
+* 2016, "A Hybrid Parameter Control Approach Applied to a Diversity-based Multi-objective Memetic Algorithm for Frequency Assignment Problems" presented at WCCI 2016 (Vancouver, Canada), IEEE<ref name="Segredo">{{cite journal |last1=Segredo |first1=E. |last2=Paechter |first2=B. |last3=Hart |first3=E. |last4=González-Vila |first4=C. I. |title=Hybrid parameter control approach applied to a diversity-based multi-objective memetic algorithm for frequency assignment problems |journal=2016 IEEE Congress on Evolutionary Computation (CEC), Vancouver, BC |date=2016 |pages=1517–1524 |doi=10.1109/CEC.2016.7743969 |url=https://ieeexplore.ieee.org/document/7743969/authors#authors |access-date=22 February 2019|isbn=978-1-5090-0623-6 }}</ref>
+* 2017, Keynote Speaker, 2017 International Joint Conference on Computational Intelligence<ref name="IJCCI2017Keynote">{{cite web |title=Prof. Emma Hart invited as a keynote speaker at IJCCI in Funchal, Madeira, November 2017 |url=https://www.napier.ac.uk/research-and-innovation/research-search/news/prof-emma-hart-invited-as-a-keynote-speaker-at-ijcci-in-funchal-madeira-november-2017 |website=Edinburgh Napier University |language=en |date=November 1, 2017}}</ref>
+* 2018, Bronze Award in International Human-Competitive Awards (Humies),  International Conference on Genetic and Evolutionary Computation, Kyoto Japan<ref name="Hummies2018">{{cite web |title=Prof. Emma Hart and Dr Kevin Sim win Bronze Award in International Humies competition for work on predicting wind damage in Forestry |url=https://www.napier.ac.uk/research-and-innovation/research-search/news/prof-emma-hart-and-dr-kevin-sim-win-bronze-award-in-international-humies-competition-for |website=Edinburgh Napier University |date=July 19, 2018}}</ref><ref name="Langdon`">{{cite journal |last1=Langdon |first1=W. B. |title=Human-Competitive awards 2018 |journal=ACM SIGEVOlution |date=2 January 2019 |volume=11 |issue=4 |pages=3–8 |doi=10.1145/3302542.3302543 |arxiv=1810.09416 }}</ref>
+* 2018, Nomination for best paper award, GECCO 18, Kyoto, Japan<ref name="Gecco18BestPaper">{{cite web |title= Evolutionary Robotics Research Nominated for Best Paper Award |url=https://www.napier.ac.uk/research-and-innovation/research-search/news/evolutionary-robotics-research-nominated-for-best-paper-award |website=Edinburgh Napier University |language=en |date=July 15, 2018}}</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Google scholar id}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Hart, Emma}}
+[[Category:Artificial immune systems]]
+[[Category:Artificial intelligence researchers]]
+[[Category:Evolutionary computation]]
+[[Category:Living people]]
+[[Category:People from Middlesbrough]]
+[[Category:English computer scientists]]
+[[Category:English women educators]]
+[[Category:20th-century English educators]]
+[[Category:English women scientists]]
+[[Category:21st-century English educators]]
+[[Category:English academics]]
+[[Category:British women academics]]
+[[Category:20th-century English scientists]]
+[[Category:21st-century English scientists]]
+[[Category:20th-century British women scientists]]
+[[Category:21st-century British women scientists]]
+[[Category:20th-century English women]]
+[[Category:21st-century English women]]
+[[Category:1967 births]]
+[[Category:British women computer scientists]]
+[[Category:Alumni of the University of Oxford]]
+[[Category:Alumni of the University of Edinburgh]]
+[[Category:20th-century women educators]]
+[[Category:21st-century women educators]]

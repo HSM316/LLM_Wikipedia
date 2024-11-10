@@ -1,0 +1,124 @@
+{{Infobox person
+| name        = Dominique Guinard
+| image       =Dominique Guinard.jpg 
+| caption     =
+| birth_date  = {{Birth date and age|df=yes|1981|02|27}}
+| birth_place = [[Fribourg]], [[Switzerland]]
+| other_names = Dom Guinard
+| education   = ETH Zurich
+| occupation  = [[Chief technology officer|CTO]]
+| employer    = [[EVRYTHNG]]
+| known_for   = pioneering the [[Web of Things]], founding [[EVRYTHNG]], contributing to [[Internet of Things]] standards
+| title       = Ph.D. in Computer Science
+| term        =
+| predecessor =
+| successor   =
+| party       =
+| boards      =
+| spouse      =
+| partner     =
+| children    =
+| parents     =
+| relatives   =
+| website     = http://guinard.org/
+| signature   =
+| footnotes   =
+| religion    =
+}}
+
+'''Dominique "Dom" Guinard''' is the CTO of [[EVRYTHNG]].<ref>{{cite web
+|url=https://www.crunchbase.com/organization/thngy
+  |title=Crunchbase - EVRYTHNG}}</ref> He is a technologist, entrepreneur and developer with a career dedicated to building the [[Internet of Things]] both in the cloud and on embedded Things. He is particularly known for his early contributions to the [[Web of Things]] alongside with other researchers such as [[Vlad Trifa]], Erik Wilde and [[Friedemann Mattern]].<ref name='wotpaper'>
+{{cite conference
+|last1=Guinard
+|first1=Dominique
+|last2=Trifa
+|first2=Vlad
+|year=2009
+|conference =  WWW (International World Wide Web Conferences), Enterprise Mashups and Lightweight Composition on the Web (MEM 2009) Workshop
+|title = Towards the Web of Things: Web Mashups for Embedded Devices.
+|url = http://www.vs.inf.ethz.ch/publ/papers/dguinard_09_WOTMashups.pdf
+}}</ref> Guinard is a published researcher, a book author and a recognized expert in Internet of Things technologies<ref name='iot-top-100'>{{cite web
+|url=http://www.postscapes.com/top-100-thinkers-tracking-the-internet-of-things/
+  |title=The world's top blogs and people creating and tracking the IoT}}</ref>
+
+==Career==
+
+Guinard studied Computer Science at [[Université de Fribourg]] and graduated with a master's degree in computer science with a minor in business administration. During his studies he also worked at and co-founded several startups (Spoker, Dartfish, GMIPSoft), taught computer science and software developed at several private and public schools.
+
+Guinard began working on the Internet of Things in 2005 with Sun Microsystems working on RFID applications. He continued studying the field with his a master's thesis at [[Lancaster University]] on Ubiquitous Computing. After graduating from university, he went on to get his PhD in Computer Science at [[ETH Zurich]]. During his time as a PhD he also worked as a Research Associate for [[SAP SE|SAP]] where he met [[Vlad Trifa]]. Both focused on the Internet of Things applications at SAP especially looking at the integration of real-world devices such as wireless sensor networks to business processes and enterprise software (e.g., ERPs).
+
+The complexity of these integrations at the time lead them to look for simpler integration mechanisms. In 2007 they defined an application layer for the Internet of Things that uses Web standards called the Web of Things and founded the Webofthings.org community<ref name='wot-blog'>{{cite web
+|url=http://webofthings.org/team/
+  |title=Web of Things, Team}}</ref> to promote the use of Web standards in the IoT. Guinard wrote his Ph.D thesis on the Web of Things, particularly looking at the physical mashups of Things on the Web. His thesis<ref>*{{cite thesis
+|type=Ph.D.
+|first=Dominique
+|last=Guinard
+|title=A Web of Things Application Architecture - Integrating the Real-World into the Web
+|publisher=ETH Zurich
+|year=2011
+|url=https://s3.amazonaws.com/guinard.org/webofthings-thesis-domguinard.pdf
+}}</ref> was granted an ETH Medal in 2012
+.<ref>{{cite web
+|url=http://radar.oreilly.com/dguinard
+  |title=Oreilly Radar - Dominique Guinard}}</ref> Towards the end of his Ph.D worked applying the Web of Things concepts to Smart Supply chains and IoT applications in manufacturing environments at the [[MIT]] [[Auto-ID]] Lab with Professor [[Sanjay Sarma]].
+
+In 2011, Guinard co-founded [[EVRYTHNG]] together with [[Vlad Trifa]], Niall Murphy and [[Andy Hobsbawm]].<ref>{{cite web |url=http://startupbeat.com/2012/12/14/backed-by-1m-in-seed-funding-from-atomico-evrythng-is-creating-the-smart-web-of-things-id3062/ |title=Backed by $1M in Seed funding from Atomico, EVRYTHNG is creating the smart 'Web of Things' |publisher=Startup Beat |date=14 December 2012 |accessdate=12 September 2013}}</ref> The founding idea of EVRYTHNG was to create digital identities and Web APIs for all kinds of objects: from consumer goods to consumer electronics. As such, EVRYTHNG was the first commercial Web of Things platform. Dominique has been the [[Chief technology officer|CTO]] of EVRYTHNG since then, overseeing all the technical aspects of the platform.
+
+In 2015, Guinard co-authored the Web Thing Model<ref>{{cite web
+|url=http://www.w3.org/Submission/wot-model/
+  |title=Web Thing Model, W3C Member Submission}}</ref> which was accepted as an official [[W3C]] member submission. The Web Thing model is a first attempt at creating a simple Web based standard for the application layer of the [[Internet of Things]].<ref>{{cite web
+|url=http://radar.oreilly.com/2015/10/helping-things-in-the-iot-speak-the-same-language.html
+  |title=Helping Things in the IoT speak the same language}}</ref>
+
+==Publications==
+
+Guinard published a number of scientific articles in journals and conferences
+<ref>{{cite web
+|url=http://dblp.uni-trier.de/pers/hd/g/Guinard:Dominique
+  |title=DBLP: Guinard Dominique}}</ref>
+covering many aspects of the [[Internet of Things]] and the [[Web of Things]].<ref>{{cite web
+|url=http://webofthings.org/publications/
+  |title=Web of Things, Publications}}</ref> One of his most cited publications is "Towards the Web of Things: Web Mashups for Embedded Devices"<ref name='wotpaper'/> which lays the foundations for integrating everyday devices and sensors to the Web.
+
+Guinard co-authored a number of books
+<ref>{{Cite book
+| last = Guinard
+| first = Dominique
+| last2 = Vlad
+| first2 = Trifa
+| year = 2016
+| title = Using the Web to Build the IoT
+| publisher = Manning
+| isbn = 9781617294006
+}}</ref>
+<ref>{{Cite book
+| year = 2011
+| title = Architecting the Internet of Things
+| publisher = Sprinter
+| isbn = 9781617294006
+| url = https://www.springer.com/gb/book/9783642191565
+}}</ref>
+related IoT and in particular "Building the Web of Things".<ref>{{Cite book
+| last = Guinard
+| first = Dominique
+| last2 = Vlad
+| first2 = Trifa
+| year = 2016
+| title = Building the Web of Things
+| publisher = Manning
+| isbn = 9781617292682
+| url = http://book.webofthings.io
+}}</ref> This book was the first to provide an applicable step-by-step guide about how to implement Web-based smart products and applications using [[Node.js]] and the [[Raspberry Pi]].
+
+==References==
+{{Reflist}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Guinard, Dominique}}
+[[Category:Living people]]
+[[Category:ETH Zurich alumni]]
+[[Category:Swiss computer scientists]]
+[[Category:Internet of things]]
+[[Category:1981 births]]

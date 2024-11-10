@@ -1,0 +1,72 @@
+{{Short description|Toolkit for deploying inference neural network model on Intel hardware}}
+{{Use dmy dates|date=March 2020}}
+{{Infobox software
+| title = 
+| name = OpenVINO
+| logo = OpenVINO logo.svg
+| logo alt = OpenVINO logo
+| developer = [[Intel Corporation]]
+| released = {{Start date and age|2018|05|16}}
+| latest release version = 2024.4
+| latest release date = September 2024.<ref>{{Cite web | url=https://docs.openvino.ai/releasenotes |title = Release Notes for Intel Distribution of OpenVINO toolkit 2024.4|date = September 2024}}</ref>
+| programming language = [[C++]]
+| operating system = [[Cross-platform]]
+| genre = 
+| license = [[Apache License]] 2.0
+| alexa = 
+| website = {{URL|https://docs.openvino.ai/}}
+| repo = {{URL|https://github.com/openvinotoolkit/openvino}}
+| AsOf = September 2024
+}}
+
+OpenVINO is an open-source software toolkit for optimizing and deploying [[deep learning]] models. It enables programmers to develop scalable and efficient AI solutions with relatively few lines of code. It supports several popular model formats<ref name=":0" /> and categories, such as [[large language model]]s, [[computer vision]], and [[generative AI]].
+
+Actively developed by [[Intel]], it prioritizes high-performance inference on Intel hardware but also supports [[ARM architecture family|ARM/ARM64]] processors<ref name=":0">{{Cite web |date=24 Jan 2024 |title=OpenVINO Compatibility and Support |url=https://docs.openvino.ai/compatibility |website=OpenVINO Documentation}}</ref> and encourages contributors to add new devices to the portfolio.
+
+Based in C++, it offers the following APIs: C/C++, Python, and Node.js (an early preview).
+
+OpenVINO is cross-platform and free for use under [[Apache License]] 2.0.<ref>{{Cite web |date=16 Oct 2018 |title=License |url=https://github.com/openvinotoolkit/openvino?tab=Apache-2.0-1-ov-file |website=OpenVINO repository}}</ref>
+
+==Workflow==
+The simplest OpenVINO usage involves obtaining a model and running it as is. Yet for the best results, a more complete workflow is suggested:<ref>{{Cite web |date=25 April 2024 |title=OpenVINO Workflow |url=https://docs.openvino.ai/2024/openvino-workflow.html |website=OpenVINO Documentation}}</ref>
+
+* obtain a model in one of supported frameworks,
+* convert the model to OpenVINO IR using the OpenVINO Converter tool,
+* optimize the model, using training-time or post-training options provided by [https://github.com/openvinotoolkit/nncf OpenVINO's NNCF].
+* execute inference, using OpenVINO Runtime by specifying one of several inference modes.
+
+== OpenVINO model format ==
+OpenVINO IR<ref>{{Cite web |date=2 Feb 2024 |title=OpenVINO IR |url=https://docs.openvino.ai/2023.3/openvino_ir.html |website=www.docs.openvino.ai}}</ref> is the default format used to run inference. It is saved as a set of two files, *[[Binary file|.bin]] and *[[XML|.xml]], containing weights and topology, respectively. It is obtained by converting a model from one of the supported frameworks, using the application's API or a dedicated converter.
+
+Models of the supported formats may also be used for inference directly, without prior conversion to OpenVINO IR. Such an approach is more convenient but offers fewer optimization options and lower performance, since the conversion is performed automatically before inference. Some pre-converted models can be found in the [[Hugging Face]] repository.<ref>{{Cite web |title=Hugging Face OpenVINO Space |url=https://huggingface.co/OpenVINO |website=Hugging Face}}</ref>
+
+The supported model formats are:<ref>{{Cite web |date=24 Jan 2024 |title=OpenVINO Model Preparation |url=https://docs.openvino.ai/2023.3/openvino_docs_model_processing_introduction.html |website=OpenVINO Documentation}}</ref>
+* [[PyTorch]]
+* [[TensorFlow]]
+* TensorFlow Lite
+* [[Open Neural Network Exchange|ONNX]] (including formats that may be serialized to ONNX)
+* PaddlePaddle
+
+== OS support ==
+OpenVINO runs on [[Microsoft Windows|Windows]], [[Linux]] and [[MacOS]].<ref>{{Cite web |date=February 2024 |title=System Requirements |url=https://docs.openvino.ai/2023.3/system_requirements.html#operating-systems-and-developer-environment |website=OpenVINO Documentation}}</ref>
+
+==See also==
+* [[Comparison of deep learning software]]
+
+== References ==
+{{Reflist|refs=}}
+{{Refbegin}}
+* {{cite thesis |last1=Agrawal|first1=Vasu|year=2019
+     |type=MSc |title=Ground Up Design of a Multi-modal Object Detection System |publisher=Carnegie Mellon University Pittsburgh, PA
+     |url=https://www.ri.cmu.edu/wp-content/uploads/2019/12/thesis_ebook.pdf|url-status=live
+     |archive-url=https://web.archive.org/web/20200126174037/https://www.ri.cmu.edu/wp-content/uploads/2019/12/thesis_ebook.pdf|archive-date=26 January 2020}}
+* {{cite journal|last1=Driaba|first1=Alexander|last2=Gordeev|first2=Aleksei|last3=Klyachin|first3=Vladimir|year=2019|title=Recognition of Various Objects from a Certain Categorical Set in Real Time Using Deep Convolutional Neural Networks|url=http://ceur-ws.org/Vol-2500/paper_5.pdf|access-date=26 January 2020|url-status=live|archive-url=https://archive.today/20200126171356/http://ceur-ws.org/Vol-2500/paper_5.pdf|archive-date=26 January 2020|publisher=Institute of Mathematics and Informational Technologies Volgograd State University}}
+* {{Cite book|last=Nanjappa|first=Ashwin|date=31 May 2019|title=Caffe2 Quick Start Guide: Modular and scalable deep learning made easy
+     |publisher=Packt|isbn=978-1789137750|pages=91–98}}
+{{Refend}}
+
+{{Intel software}}
+{{Deep Learning Software}}
+
+[[Category:Applied machine learning]]
+[[Category:Free statistical software]]

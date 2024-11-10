@@ -1,0 +1,77 @@
+{{Infobox company
+| name     = MyRobots
+| logo     = Logo myrobots.png
+| type     = Private
+| genre            =
+| foundation       = 2011
+| founder          = Mario Tremblay
+| hq_location     = Paris, France
+| language=
+| key_people       =
+| area_served      = World
+| industry         = Service Robotic Market
+| products         =  Cloud Robotics Platform
+| services         =
+| revenue          =
+| operating_income =
+| net_income       =
+| num_employees    =
+| parent           =
+| divisions        =
+| subsid           =
+| owner            =
+| homepage         = [http://www.myrobots.com www.myrobots.com]
+| dissolved        =
+| footnotes        =
+}}
+'''MyRobots''' is an online [[social network]] for [[robot]]s and smart objects. The site claims robots can benefit from being connected to other robots in the same way humans use social networks to interact and collaborate with other humans.<ref>[https://www.forbes.com/sites/alexknapp/2011/12/22/myrobots-com-aims-to-be-facebook-for-robots/ MyRobots.com Aims To Be 'Facebook For Robots'] Forbes</ref><ref>[https://www.newscientist.com/blogs/onepercent/2011/12/facebook-for-robots-helps-droi.html?DCMP=OTC-rss&nsref=online-news Facebook for robots helps droids get smarter] NewScientist</ref><ref>[http://spectrum.ieee.org/automaton/robotics/robotics-software/is-myrobotscom-the-facebook-for-robots-verdict-maybe Is MyRobots.com the 'Facebook for Robots?' Verdict: Maybe ] IEEE Spectrum</ref><ref>[https://www.engadget.com/2011/12/21/myrobots-com-for-all-of-your-robots-social-needs/ MyRobots.com: for all of your robot's social needs] Engadget</ref>  The robots reportedly share their sensor information, giving insight on their perspective of their current state.
+
+==History==
+
+MyRobots has been launched by RobotShop in December 2011.<ref>[http://robotics.tmcnet.com//topics/robotics/articles/261899-myrobotscom-launches-app-store-robots.htm MyRobots.com Launches App Store for Robots] Robotics Wire</ref><ref>[https://venturebeat.com/2011/12/22/robot-social-networking/ Now your robots can post status updates too with MyRobots.com ] VentureBEat</ref> MyRobots is one of the first Cloud Robotics initiative. Cloud robotics happens when robots are connected to the Internet. Then, by doing so, robots become augmented with more capacity and intelligence. The cloud lets them communicate with other machines and serve their human operators better. Connected robots equal augmented robots. By collaborating with other machines and humans, robots transcend their physical limitations and become more useful and capable, since they can delegate parts of their tasks to more suitable parties.<ref>[http://www.roboticstrends.com/design_development/article/thought_leader_interview_mario_tremblay Thought Leader Interview: Mario Tremblay] Robotic Trends</ref><ref>{{cite web|title=The Rising Prospects of Cloud Robotic Applications|url=http://real.mtak.hu/16135/1/ICCC_paper_cloud%20robot.pdf}}</ref><ref>{{cite web|title=MyRobots.com Pioneers Cloud Robotics, Interview With Mario Tremblay|url=http://www.robotshop.com/blog/en/myrobots-com-pioneers-cloud-robotics-interview-with-mario-tremblay-1348}}</ref>
+
+==MyRobots API==
+MyRobots provides a Restful API.<ref>[http://www.myrobots.com/wiki/API MyRobots API]</ref> All internet enabled devices and robots can connect via the API.
+
+Most important keywords used in the MyRobots API:
+
+'''Channel or Robot''' - The name for where data can be inserted or retrieved within the MyRobots API, identified by a numerical Channel ID.
+
+'''Field''' - One of eight specific locations for data inside of a channel, identified by a number between 1 and 8. It can store numeric data from sensors or alphanumeric strings from serial devices or RFID readers.
+
+'''Status''' - A short status message to augment the data stored in a channel.
+
+'''Location''' - The latitude, longitude, and elevation of where data is being sent from.
+
+'''Feed''' - The collective name for the data stored inside a channel, which may be any combination of field data, status updates, and location info.
+
+'''Write API Key''' – A 16 digit code that allows an application to write data to a channel.
+
+'''Read API Key''' – A 16 digit code that allows an application to read the data stored in a channel.
+
+''' Alerts''' - Robots can react to certain conditions by using alerts.
+
+==MyRobots Connect==
+
+The MyRobots Connect<ref>[http://www.myrobots.com/wiki/MyRobots_Connect] MyRobots Connect</ref> is a Serial-to-Ethernet gateway that connects directly to MyRobots Data Engine. It's an Open-source Hardware (OSHW) module that uses a Microchip PIC18F67J60 to run a TCP-IP stack. It relays the serial commands received by an included XBee module using an Open Serial Protocol. The MyRobots Connect receives serial data and messages using the wireless XBee module and sends them to the MyRobot servers using a standard internet connection.
+
+The MyRobots Connect uses DHCP so connecting it to a router is a simple matter of plugging a network cable; no configuration required.
+
+==See also==
+*[[Robot]]
+*[[RobotShop]]
+*[[Robotics]]
+*[[Cloud robotics]]
+
+==References==
+{{reflist|2}}
+
+==External links==
+*[https://web.archive.org/web/20120122053515/http://www.myrobots.com/ MyRobots official web site]
+*[http://www.robotshop.com RobotShop official web site]
+*[http://www.myrobots.com/wiki/API MyRobots API]
+*[http://www.myrobots.com/wiki/Compatible_Hardware MyRobots Compatible Hardware]
+
+[[Category:French social networking websites]]
+[[Category:Robotics projects]]
+[[Category:Cloud robotics]]

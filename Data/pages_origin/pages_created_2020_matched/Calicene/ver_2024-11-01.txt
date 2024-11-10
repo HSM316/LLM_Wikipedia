@@ -1,0 +1,47 @@
+{{short description|Chemical compound}}
+{{Chembox
+| ImageFile = Calicene.svg
+| ImageSize = 200px
+| PIN = 5-(Cycloprop-2-en-1-ylidene)cyclopenta-1,3-diene
+| OtherNames = Triapentafulvalene
+| Section1 = {{Chembox Identifiers
+| CASNo = 6249-23-6
+| PubChem = 12302244
+|  ChemSpiderID = 26537418
+| SMILES = C1(C=CC=C1)=C2C=C2
+| StdInChI= 1S/C8H6/c1-2-4-7(3-1)8-5-6-8/h1-6H
+| StdInChIKey = ZXWMPJFQZJXFQN-UHFFFAOYSA-N
+  }}
+| Section2 = {{Chembox Properties
+| C=8|H=6
+| Appearance = 
+| Density = 
+| MeltingPt = 
+| BoilingPt = 
+| Solubility = 
+  }}
+| Section3 = {{Chembox Hazards
+| MainHazards =
+| FlashPt =
+| AutoignitionPt =
+  }}
+}}
+'''Calicene''' or '''triapentafulvalene''' is a [[hydrocarbon]] of the [[Fulvalenes|fulvalene class]] with [[chemical formula]] C<sub>8</sub>H<sub>6</sub>, composed of a [[cyclopentadiene]] ring and a [[cyclopropene]] ring linked by a [[double bond]]. Its name is derived from the Latin ''calix'' meaning "goblet", from its shape.
+
+==Properties==
+Very high resonance energy is predicted by the [[Hückel method]],<ref>{{cite journal | last = Schaad| first = L. J. | author2 = B. Andes Hess, Jr |title = Dewar Resonance Energy | journal = Chemical Reviews | year = 2001 | volume = 101 | issue = 5 | pages = 1465–1476 | doi = 10.1021/cr9903609 | pmid = 11710229 }}</ref> however its resonance energy is not high.
+The central double bond is [[electric dipole moment|polarized]] with a partial positive charge on the carbon atom of triangular ring and a partial negative charge on the carbon atom of pentagonal ring, in keeping with added [[Hückel's rule]] stability of rings containing 2&nbsp;[[pi electron|π electron]]s and 6&nbsp;π electrons respectively. Calicene's dipole moment has been computed to be 4.66&nbsp;[[Debye|D]].<ref name= "bicalicene">{{cite journal | last =  Oziminski | first = W. P. | author2 = M. Palusia |title = Capturing the elusive aromaticity of bicalicene  | journal = Physical Chemistry Chemical Physics | year = 2013 | volume = 15 | issue = 9| pages = 3286–3293| doi = 10.1039/C2CP43426A | pmid = 23358331 |bibcode = 2013PCCP...15.3286O}}</ref>
+Several compounds that contains two or more calicene subunits are aromatic, such as [[Bicalicene|''trans''-bicalicene]]<ref name= "bicalicene" /> (ring compound) or poly-2,7-[N]calicenes (chain compound)<ref>{{cite journal | last = Ratanadachanakin | first = Thawalrat | author2 = Collier, Willard E. R. |title = Aromaticity of a series of poly-2,7-[N]calicenes| journal = Maejo International Journal of Science and Technology | year = 2015 | volume =  9| issue = 1 | pages = 21–31|url = http://www.mijst.mju.ac.th/vol9/21-31.pdf }}</ref>
+
+Despite several attempts to prepare it, the parent calicene has so far defied attempts at synthesis.<ref>{{Cite book|title=Houben-Weyl Methods of Organic Chemistry Vol. E 17d, 4th Edition Supplement: Carbocyclic Three-Membered Ring Compounds, Cyclopropenes, Author Index, Compound Index|last=de Meijere|first=Armin|publisher=Georg Thieme Verlag|year=2014|isbn=978-3131819741|location=Stuttgart|pages=2967}}</ref>  However, 1,2,3,4,5,6-hexaphenylcalicene has been prepared and an experimental dipole moment of 6.3 D was measured.<ref>{{Cite journal|last1=Agranat|first1=Israel|last2=Bergmann|first2=Ernst D.|date=1965-01-01|title=Hexaphenyltriapentafulvalene|journal=Chemical Communications|language=en|issue=21|pages=512–513|doi=10.1039/C19650000512|issn=0009-241X}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Polycyclic nonaromatic hydrocarbons]]
+[[Category:Fulvalenes]]
+[[Category:Cyclopropenes]]
+[[Category:Hypothetical chemical compounds]]
+
+
+{{Hydrocarbon-stub}}

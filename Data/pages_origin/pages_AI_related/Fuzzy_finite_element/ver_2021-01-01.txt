@@ -1,0 +1,23 @@
+The '''fuzzy finite element''' method combines the well-established [[finite element method]] with the concept of [[fuzzy number]]s, the latter being a special case of a [[fuzzy set]].<ref>[[Michael Hanss]], 2005. ''Applied Fuzzy Arithmetic, An Introduction with Engineering Applications''. Springer, {{ISBN|3-540-24201-5}}</ref> The advantage of using [[fuzzy number]]s instead of [[real numbers]] lies in the incorporation of [[uncertainty]] (on material properties, parameters, geometry, initial conditions, etc.) in the finite element analysis. 
+
+One way to establish a fuzzy finite element (FE) analysis is to use existing FE software (in-house or commercial) as an inner-level module to compute a [[deterministic]] result, and to add an outer-level loop to handle the fuzziness (uncertainty). This outer-level loop comes down to solving an [[Optimization (mathematics)|optimization]] problem. If the inner-level deterministic module produces [[monotonic]] behavior with respect to the input variables, then the outer-level optimization problem is greatly simplified, since in this case the [[Maxima and minima|extrema]] will be located at the [[vertex (geometry)|vertices]] of the [[domain of a function|domain]].
+
+Parabolic Equation
+
+Traditional finite element method is a well-established method to solve various problems of science and engineering. Different authors have used various methods to solve governing differential equation of heat conduction problem. In this study, heat conduction in a circular rod has been considered which is made up of two different materials viz. aluminum and copper. In earlier studies parameters in the differential equation have been taken as fixed numbers which actually may not. Those parameters are found in general by some measurements or experiments. So the material properties are actually uncertain and may be considered to vary in an interval or as fuzzy and in that case complex interval arithmetic or fuzzy arithmetic has to be considered in the analysis. Hence interval/fuzzy arithmetic is applied in the finite element method to solve a steady state heat conduction problem. Application of fuzzy finite element method in the said problem gives fuzzy system of linear equations in general. Here we have also proposed new methods to handle such type of fuzzy system of linear equations. Corresponding results are computed and has been reported here.<ref>[[Sarangam Majumdar]], 2012. ''[http://ethesis.nitrkl.ac.in/3029/1/Sarangam_Majumdar(M.Sc)Thesis.pdf Fuzzy Finite Element Method for One-dimensional Steady State Heat Conduction Problem]''. Thesis, </ref>
+
+==See also==
+{{div col|colwidth=30em}}
+* [[Finite element method]]
+* [[Fuzzy number]]
+* [[Fuzzy set]]
+* [[Uncertainty]]
+{{div col end}}
+
+==References==
+{{reflist}}
+
+{{Non-classical logic}}
+
+{{DEFAULTSORT:Fuzzy Finite Element}}
+[[Category:Fuzzy logic]]

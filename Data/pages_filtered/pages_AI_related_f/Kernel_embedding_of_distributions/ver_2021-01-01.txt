@@ -1,0 +1,287 @@
+In machine learning, the kernel embedding of distributions (also called the kernel mean or mean map) comprises a class of nonparametric methods in which a probability distribution is represented as an element of a reproducing kernel Hilbert space  (RKHS).A. Smola, A. Gretton, L. Song, B. Schölkopf. (2007). A Hilbert Space Embedding for Distributions . Algorithmic Learning Theory: 18th International Conference. Springer: 13–31.   A generalization of the individual data-point feature mapping done in classical kernel methods, the embedding of distributions into infinite-dimensional feature spaces can preserve all of the statistical features of arbitrary distributions, while allowing one to compare and manipulate distributions using Hilbert space operations such as inner products, distances, projections, linear transformations, and spectral analysis.L. Song, K. Fukumizu, F. Dinuzzo, A. Gretton (2013). Kernel Embeddings of Conditional Distributions: A unified kernel framework for nonparametric inference in graphical models. IEEE Signal Processing Magazine 30: 98–111.    This learning framework is very general and can be applied to distributions over any space  on which a sensible kernel function (measuring similarity between elements of ) may be defined.  For example, various kernels have been proposed for learning from data which are: vectors in , discrete classes/categories, strings, graphs/networks, images, time series, manifolds, dynamical systems, and other structured objects.J. Shawe-Taylor, N. Christianini. (2004). Kernel Methods for Pattern Analysis. Cambridge University Press, Cambridge, UK.T. Hofmann, B. Schölkopf, A. Smola. (2008). Kernel Methods in Machine Learning. The Annals of Statistics 36(3):1171–1220.  The theory behind kernel embeddings of distributions has been primarily developed by  Alex Smola, Le Song , Arthur Gretton, and Bernhard Schölkopf. A review of recent works on kernel embedding of distributions can be found in.
+
+The analysis of distributions is fundamental in machine learning and statistics,  and many algorithms in these fields rely on information theoretic approaches such as entropy, mutual information, or Kullback–Leibler divergence.  However, to estimate these quantities, one must first either perform density estimation, or employ sophisticated space-partitioning/bias-correction strategies which are typically infeasible for high-dimensional data.L. Song. (2008) Learning via Hilbert Space Embedding of Distributions. PhD Thesis, University of Sydney.  Commonly, methods for modeling complex distributions rely on parametric assumptions that may be unfounded or computationally challenging (e.g. Gaussian mixture models), while nonparametric methods like kernel density estimation (Note: the smoothing kernels in this context have a different interpretation than the kernels discussed here) or characteristic function representation (via the Fourier transform of the distribution) break down in high-dimensional settings.
+
+Methods based on the kernel embedding of distributions sidestep these problems and also possess the following advantages: 
+ Data may be modeled without restrictive assumptions about the form of the distributions and relationships between variables
+  Intermediate density estimation is not needed
+  Practitioners may specify the properties of a distribution most relevant for their problem (incorporating prior knowledge via choice of the kernel)
+ If a characteristic kernel is used, then the embedding can uniquely preserve all information about a distribution, while thanks to the kernel trick, computations on the potentially infinite-dimensional RKHS can be implemented in practice as simple Gram matrix operations 
+ Dimensionality-independent rates of convergence for the empirical kernel mean (estimated using samples from the distribution)  to the kernel embedding of the true underlying distribution can be proven.
+ Learning algorithms based on this framework exhibit good generalization ability and finite sample convergence, while often being simpler and more effective than information theoretic methods
+Thus, learning via the kernel embedding of distributions offers a principled drop-in replacement for information theoretic approaches and is a framework which not only subsumes many popular methods in machine learning and statistics as special cases, but also can lead to entirely new learning algorithms.
+
+Definitions
+
+Let  denote a random variable with domain  and distribution  Given a kernel  on  the Moore–Aronszajn theorem asserts the existence of a RKHS  (a Hilbert space of functions  equipped with inner products  and norms ) in which the element  satisfies the reproducing property 
+
+One may alternatively consider  an implicit feature mapping  from  to  (which is therefore also called the feature space), so that  can be viewed as a measure of similarity between points  While the similarity measure is linear in the feature space, it may be highly nonlinear in the original space depending on the choice of kernel.
+
+Kernel embedding
+The kernel embedding of the distribution  in  (also called the kernel mean or mean map) is given by:
+
+If  allows a square integrable density , then , where  is the Hilbert–Schmidt integral operator. A kernel is characteristic if the mean embedding  is injective.K. Fukumizu, A. Gretton, X. Sun, and B. Schölkopf (2008). Kernel measures of conditional independence. Advances in Neural Information Processing Systems 20, MIT Press, Cambridge, MA. Each distribution can thus be uniquely represented in the RKHS and all statistical features of distributions are preserved by the kernel embedding if a characteristic kernel is used.
+
+Empirical kernel embedding
+Given  training examples  drawn independently and identically distributed (i.i.d.) from  the kernel embedding of  can be empirically estimated as
+
+Joint distribution embedding
+If  denotes another random variable (for simplicity, assume the co-domain of  is also  with the same kernel  which satisfies ), then the joint distribution  can be mapped into a tensor product feature space  via 
+
+By the equivalence between a tensor and a linear map, this joint embedding may be interpreted as an uncentered cross-covariance operator  from which the cross-covariance of mean-zero functions  can be computed as L. Song, J. Huang, A. J. Smola, K. Fukumizu. (2009).Hilbert space embeddings of conditional distributions. Proc. Int. Conf. Machine Learning. Montreal, Canada: 961–968.
+
+Given  pairs of training examples  drawn i.i.d. from , we can also empirically estimate the joint distribution kernel embedding via
+
+Conditional distribution embedding
+Given a conditional distribution  one can define the corresponding RKHS embedding as 
+
+Note that the embedding of  thus defines a family of points in the RKHS indexed by the values  taken by conditioning variable . By fixing  to a particular value, we obtain a single element in , and thus it is natural to define the operator
+
+ 
+
+which given the feature mapping of  outputs the conditional embedding of  given  Assuming that for all  it can be shown that 
+
+This assumption is always true for finite domains with characteristic kernels, but may not necessarily hold for continuous domains. Nevertheless, even in cases where the assumption fails,  may still be used to approximate the conditional kernel embedding  and in practice, the inversion operator is replaced with a regularized version of itself  (where  denotes the identity matrix).
+
+Given training examples  the empirical kernel conditional embedding operator may be estimated as 
+
+where  are implicitly formed feature matrices,  is the Gram matrix for samples of , and  is a regularization parameter needed to avoid overfitting.
+
+Thus, the empirical estimate of the kernel conditional embedding is given by a weighted sum of samples of  in the feature space:
+
+ 
+
+where  and 
+
+Properties
+
+ The expectation of any function  in the RKHS can be computed as an inner product with the kernel embedding:
+
+ In the presence of large sample sizes, manipulations of the  Gram matrix may be computationally demanding. Through use of a low-rank approximation of the Gram matrix (such as the incomplete Cholesky factorization), running time and memory requirements of kernel-embedding-based learning algorithms can be drastically reduced without suffering much loss in approximation accuracy.
+
+ Convergence of empirical kernel mean to the true distribution embedding 
+
+ If  is defined such that  takes values in  for all  with  (as is the case for the widely used radial basis function kernels), then with probability at least :
+ 
+where  denotes the unit ball in  and  is the Gram matrix with  
+
+ The rate of convergence (in RKHS norm) of the empirical kernel embedding to its distribution counterpart is  and does not depend on the dimension of . 
+
+ Statistics based on kernel embeddings thus avoid the curse of dimensionality, and though the true underlying distribution is unknown in practice, one can (with high probability) obtain an approximation within  of the true kernel embedding based on a finite sample of size .
+
+ For the embedding of conditional distributions, the empirical estimate can be seen as a weighted average of feature mappings (where the weights  depend on the value of the conditioning variable and capture the effect of the conditioning on the kernel embedding). In this case, the empirical estimate converges to the conditional distribution RKHS embedding with rate  if the regularization parameter  is decreased as  though faster rates of convergence may be achieved by placing additional assumptions on the joint distribution.
+
+ Universal kernels 
+
+ Letting  denote the space of continuous bounded functions on compact domain , we call a kernel  universal if  is continuous for all  and the RKHS induced by  is dense in .
+
+ If  induces a strictly positive definite kernel matrix for any set of distinct points, then it is a universal kernel. For example, the widely used Gaussian RBF kernel 
+
+on compact subsets of  is universal.
+
+ If  is shift-invariant  and its representation in Fourier domain is 
+
+and support of  is an entire space, then  is universal. page 139 For example, Gaussian RBF is universal, sinc kernel is not universal.
+
+ If  is universal, then it is characteristic, i.e. the kernel embedding is one-to-one.A. Gretton, K. Borgwardt, M. Rasch, B. Schölkopf, A. Smola. (2007). A kernel method for the two-sample-problem. Advances in Neural Information Processing Systems 19, MIT Press, Cambridge, MA.
+
+ Parameter selection for conditional distribution kernel embeddings 
+
+ The empirical kernel conditional distribution embedding operator  can alternatively be viewed as the solution of the following regularized least squares (function-valued) regression problem S. Grunewalder, G. Lever, L. Baldassarre, S. Patterson, A. Gretton, M. Pontil. (2012). Conditional mean embeddings as regressors. Proc. Int. Conf. Machine Learning: 1823–1830.
+ 
+where  is the Hilbert–Schmidt norm. 
+
+ One can thus select the regularization parameter  by performing cross-validation based on the squared loss function of the regression problem.
+
+ Rules of probability as operations in the RKHS 
+
+This section illustrates how basic probabilistic rules may be reformulated as (multi)linear algebraic operations in the kernel embedding framework and is primarily based on the work of Song et al. The following notation is adopted: 
+
+  joint distribution over random variables 
+
+  marginal distribution of ;  marginal distribution of 
+
+  conditional distribution of  given  with corresponding conditional embedding operator  
+
+  prior distribution over 
+
+  is used to distinguish distributions which incorporate the prior from distributions  which do not rely on the prior
+
+In practice, all embeddings are empirically estimated from data  and it assumed that a set of samples  may be used to estimate the kernel embedding of the prior distribution .
+
+ Kernel sum rule 
+In probability theory, the marginal distribution of  can be computed by integrating out  from the joint density (including the prior distribution on )
+
+The analog of this rule in the kernel embedding framework states that  the RKHS embedding of , can be computed via
+
+ 
+
+where  is the kernel embedding of  In practical implementations, the kernel sum rule takes the following form
+
+ 
+
+where 
+
+ 
+
+is the empirical kernel embedding of the prior distribution,  , and  are Gram matrices with entries  respectively.
+
+ Kernel chain rule 
+In probability theory, a joint distribution can be factorized into a product between conditional and marginal distributions 
+
+The analog of this rule in the kernel embedding framework states that  the joint embedding of  can be factorized as a composition of conditional embedding operator with the auto-covariance operator associated with 
+
+ 
+
+where 
+
+ 
+ 
+
+In practical implementations, the kernel chain rule takes the following form
+
+ Kernel Bayes' rule 
+In probability theory, a posterior distribution can be expressed in terms of a prior distribution and a likelihood function as 
+
+ where 
+
+The analog of this rule in the kernel embedding framework expresses the kernel embedding of the conditional distribution in terms of conditional embedding operators which are modified by the prior distribution
+
+ 
+
+where from the chain rule: 
+
+In practical implementations, the kernel Bayes' rule takes the following form
+
+ 
+
+where 
+
+Two regularization parameters are used in this framework:  for the estimation of  and  for the estimation of the final conditional embedding operator 
+
+The latter regularization is done on square of  because  may not be positive definite.
+
+Applications
+
+ Measuring distance between distributions 
+The maximum mean discrepancy (MMD) is a distance-measure between distributions  and  which is defined as the squared distance between their embeddings in the RKHS 
+
+While most distance-measures between distributions such as the widely used Kullback–Leibler divergence either require density estimation (either parametrically or nonparametrically) or space partitioning/bias correction strategies, the MMD is easily estimated as an empirical mean which is concentrated around the true value of the MMD. The characterization of this distance as the maximum mean discrepancy refers to the fact that computing the MMD is equivalent to finding the RKHS function that maximizes the difference in expectations between the two probability distributions 
+
+ Kernel two-sample test 
+Given n training examples from  and m samples from , one can formulate a test statistic based on the empirical estimate of the MMD
+
+to obtain a two-sample test A. Gretton, K. Borgwardt, M. Rasch, B. Schölkopf, A. Smola. (2012). A kernel two-sample test. Journal of Machine Learning Research, 13: 723–773. of the null hypothesis that both samples stem from the same distribution (i.e. ) against the broad alternative .
+
+ Density estimation via kernel embeddings 
+Although learning algorithms in the kernel embedding framework circumvent the need for intermediate density estimation, one may nonetheless use the empirical embedding to perform density estimation based on n samples drawn from an underlying distribution . This can be done by solving the following optimization problem M. Dudík, S. J. Phillips, R. E. Schapire. (2007). Maximum Entropy Distribution Estimation with Generalized Regularization and an Application to Species Distribution Modeling. Journal of Machine Learning Research, 8: 1217–1260.
+
+ subject to 
+
+where the maximization is done over the entire space of distributions on  Here,  is the kernel embedding of the proposed density  and  is an entropy-like quantity (e.g. Entropy, KL divergence, Bregman divergence). The distribution which solves this optimization may be interpreted as a compromise between fitting the empirical kernel means of the samples well, while still allocating a substantial portion of the probability mass to all regions of the probability space (much of which may not be represented in the training examples). In practice, a good approximate solution of the difficult optimization may be found by restricting the space of candidate densities to a mixture of M candidate distributions with regularized mixing proportions. Connections between the ideas underlying Gaussian processes and conditional random fields may be drawn with the estimation of conditional probability distributions in this fashion, if one views the feature mappings associated with the kernel as sufficient statistics in generalized (possibly infinite-dimensional) exponential families.
+
+ Measuring dependence of random variables 
+A measure of the statistical dependence between random variables  and  (from any domains on which sensible kernels can be defined) can be formulated based on the Hilbert–Schmidt Independence Criterion A. Gretton, O. Bousquet, A. Smola, B. Schölkopf. (2005). Measuring statistical dependence with Hilbert–Schmidt norms. Proc. Intl. Conf. on Algorithmic Learning Theory: 63–78. 
+
+and can be used as a principled replacement for mutual information, Pearson correlation or any other dependence measure used in learning algorithms. Most notably, HSIC can detect arbitrary dependencies (when a characteristic kernel is used in the embeddings, HSIC is zero if and only if the variables are independent), and can be used to measure dependence between different types of data (e.g. images and text captions). Given n i.i.d. samples of each random variable, a simple parameter-free unbiased estimator of HSIC which exhibits concentration about the true value can be computed in  time, where the Gram matrices of the two datasets are approximated using  with . The desirable properties of HSIC have led to the formulation of numerous algorithms which utilize this dependence measure for a variety of common machine learning tasks such as: feature selection (BAHSIC L. Song, A. Smola , A. Gretton, K. Borgwardt, J. Bedo. (2007). Supervised feature selection via dependence estimation. Proc. Intl. Conf. Machine Learning, Omnipress: 823–830.), clustering (CLUHSIC L. Song, A. Smola, A. Gretton, K. Borgwardt. (2007). A dependence maximization view of clustering. Proc. Intl. Conf. Machine Learning. Omnipress: 815–822.), and dimensionality reduction (MUHSIC L. Song, A. Smola, K. Borgwardt, A. Gretton. (2007). Colored maximum variance unfolding. Neural Information Processing Systems.).
+
+HSIC can be extended to measure the dependence of multiple random variables. The question of when HSIC captures independence in this case has recently been studied:Zoltán Szabó, Bharath K. Sriperumbudur. Characteristic and Universal Tensor Product Kernels. Journal of Machine Learning Research, 19:1–29, 2018. for 
+more than two variables
+ on : the characteristic property of the individual kernels remains an equivalent condition.
+ on general domains: the characteristic property of the kernel components is necessary but not sufficient.
+
+ Kernel belief propagation 
+Belief propagation is a fundamental algorithm for inference in graphical models in which nodes repeatedly pass and receive messages corresponding to the evaluation of conditional expectations. In the kernel embedding framework, the messages may be represented as RKHS functions and the conditional distribution embeddings can be applied to efficiently compute message updates. Given n samples of random variables represented by nodes in a Markov random field, the incoming message to node t from node u can be expressed as 
+
+ 
+
+if it assumed to lie in the RKHS. The kernel belief propagation update message from t to node s is then given by 
+
+where  denotes the element-wise vector product,  is the set of nodes connected to t excluding node s, ,  are the Gram matrices of the samples from variables , respectively, and  is the feature matrix for the samples from .
+
+Thus, if the incoming messages to node t are linear combinations of feature mapped samples from , then the outgoing message from this node is also a linear combination of feature mapped samples from . This RKHS function representation of message-passing updates therefore produces an efficient belief propagation algorithm in which the potentials are nonparametric functions inferred from the data so that arbitrary statistical relationships may be modeled.
+
+ Nonparametric filtering in hidden Markov models 
+In the hidden Markov model (HMM), two key quantities of interest are the transition probabilities between hidden states  and the emission probabilities  for observations. Using the kernel conditional distribution embedding framework, these quantities may be expressed in terms of samples from the HMM. A serious limitation of the embedding methods in this domain is the need for training samples containing hidden states, as otherwise inference with arbitrary distributions in the HMM is not possible.
+
+One common use of HMMs is filtering in which the goal is to estimate posterior distribution over the hidden state  at time step t given a history of previous observations  from the system. In filtering, a belief state  is recursively maintained via a prediction step (where updates  are computed by marginalizing out the previous hidden state) followed by a conditioning step (where updates  are computed by applying Bayes' rule to condition on a new observation). The RKHS embedding of the belief state at time t+1 can be recursively expressed as 
+
+by computing the embeddings of the prediction step via the kernel sum rule and the embedding of the conditioning step via kernel Bayes' rule. Assuming a training sample  is given, one can in practice estimate 
+
+ 
+
+and filtering with kernel embeddings is thus implemented recursively using the following updates for the weights  
+
+where  denote the Gram matrices of  and  respectively,  is a transfer Gram matrix defined as  and 
+
+ Support measure machines 
+The support measure machine (SMM) is a generalization of the support vector machine (SVM) in which the training examples are probability distributions paired with labels .K. Muandet, K. Fukumizu, F. Dinuzzo, B. Schölkopf. (2012). Learning from Distributions via Support Measure Machines. Advances in Neural Information Processing Systems: 10–18. SMMs solve the standard SVM dual optimization problem using the following expected kernel
+
+ 
+
+which is computable in closed form for many common specific distributions  (such as the Gaussian distribution) combined with popular embedding kernels  (e.g. the Gaussian kernel or polynomial kernel), or can be accurately empirically estimated from i.i.d. samples  via
+
+Under certain choices of the embedding kernel , the SMM applied to training examples  is equivalent to a SVM trained on samples , and thus the SMM can be viewed as a flexible SVM in which a different data-dependent kernel (specified by the assumed form of the distribution ) may be placed on each training point.
+
+ Domain adaptation under covariate, target, and conditional shift 
+The goal of domain adaptation is the formulation of learning algorithms which generalize well when the training and test data have different distributions. Given training examples  and a test set  where the  are unknown, three types of differences are commonly assumed between the distribution of the training examples  and the test distribution :<ref name = "DA">K. Zhang, B. Schölkopf, K. Muandet, Z. Wang. (2013). Domain adaptation under target and conditional shift. Journal of Machine Learning Research, 28(3): 819–827.</ref>A. Gretton, A. Smola, J. Huang, M. Schmittfull, K. Borgwardt, B. Schölkopf. (2008). Covariate shift and local learning by distribution matching. In J. Quinonero-Candela, M. Sugiyama, A. Schwaighofer, N. Lawrence (eds.). Dataset shift in machine learning, MIT Press, Cambridge, MA: 131–160.
+ Covariate shift in which the marginal distribution of the covariates changes across domains: 
+ Target shift in which the marginal distribution of the outputs changes across domains: 
+ Conditional shift in which  remains the same across domains, but the conditional distributions differ: . In general, the presence of conditional shift leads to an ill-posed problem, and the additional assumption that  changes only under location-scale (LS) transformations on  is commonly imposed to make the problem tractable.
+
+By utilizing the kernel embedding of marginal and conditional distributions, practical approaches to deal with the presence of these types of differences between training and test domains can be formulated. Covariate shift may be accounted for by reweighting examples via estimates of the ratio  obtained directly from the kernel embeddings of the marginal distributions of  in each domain without any need for explicit estimation of the distributions. Target shift, which cannot be similarly dealt with since no samples from  are available in the test domain, is accounted for by weighting training examples using the vector  which solves the following optimization problem (where in practice, empirical approximations must be used) 
+
+ subject to 
+
+To deal with location scale conditional shift, one can perform a LS transformation of the training points to obtain new transformed training data  (where  denotes the element-wise vector product). To ensure similar distributions between the new transformed training samples and the test data,  are estimated by minimizing the following empirical kernel embedding distance 
+
+In general, the kernel embedding methods for dealing with LS conditional shift and target shift may be combined to find a reweighted transformation of the training data which mimics the test distribution, and these methods may perform well even in the presence of conditional shifts other than location-scale changes.
+
+ Domain generalization via invariant feature representation 
+Given N sets of training examples sampled i.i.d. from distributions , the goal of domain generalization is to formulate learning algorithms which perform well on test examples sampled from a previously unseen domain  where no data from the test domain is available at training time. If conditional distributions  are assumed to be relatively similar across all domains, then a learner capable of domain generalization must estimate a functional relationship between the variables which is robust to changes in the marginals . Based on kernel embeddings of these distributions, Domain Invariant Component Analysis (DICA) is a method which determines the transformation of the training data that minimizes the difference between marginal distributions while preserving a common conditional distribution shared between all training domains.K. Muandet, D. Balduzzi, B. Schölkopf. (2013).Domain Generalization Via Invariant Feature Representation. 30th International Conference on Machine Learning. DICA thus extracts invariants, features that transfer across domains, and may be viewed as a generalization of many popular dimension-reduction methods such as kernel principal component analysis, transfer component analysis, and covariance operator inverse regression. 
+
+Defining a probability distribution  on the RKHS  with 
+
+ 
+
+DICA measures dissimilarity between domains via distributional variance which is computed as 
+
+ 
+
+where 
+
+ 
+
+so  is a  Gram matrix over the distributions from which the training data are sampled. Finding an orthogonal transform onto a low-dimensional subspace B (in the feature space) which minimizes the distributional variance, DICA simultaneously ensures that B aligns with the bases of a central subspace C for which  becomes independent of  given  across all domains. In the absence of target values , an unsupervised version of DICA may be formulated which finds a low-dimensional subspace that minimizes distributional variance while simultaneously maximizing the variance of  (in the feature space) across all domains (rather than preserving a central subspace).
+
+ Distribution regression 
+In distribution regression, the goal is to regress from probability distributions to reals (or vectors). Many important machine learning and statistical tasks fit into this framework, including multi-instance learning, and point estimation problems without analytical solution (such as hyperparameter or entropy estimation). In practice only samples from sampled distributions are observable, and the estimates have to rely on similarities computed between sets of points''. Distribution regression has been successfully applied for example in supervised entropy learning, and aerosol prediction using multispectral satellite images.Z. Szabó, B. Sriperumbudur, B. Póczos, A. Gretton. Learning Theory for Distribution Regression. Journal of Machine Learning Research, 17(152):1–40, 2016.
+
+Given  training data, where the  bag contains samples from a probability distribution  and the  output label is , one can tackle the distribution regression task by taking the embeddings of the distributions, and learning the regressor from the embeddings to the outputs. In other words, one can consider the following kernel ridge regression problem 
+
+where 
+
+ 
+
+with a  kernel on the domain of -s ,  is a kernel on the embedded distributions, and  is the RKHS determined by . Examples for  include the linear kernel , the Gaussian kernel , the exponential kernel , the Cauchy kernel , the generalized t-student kernel , or the inverse multiquadrics kernel .
+
+The prediction on a new distribution  takes the simple, analytical form
+  
+where , , , . Under mild regularity conditions this estimator can be shown to be consistent and it can achieve the one-stage sampled (as if one had access to the true -s) minimax optimal rate. In the  objective function -s are real numbers; the results can also be extended to the case when -s are -dimensional vectors, or more generally elements of a separable Hilbert space using operator-valued  kernels.
+
+ Example 
+In this simple example, which is taken from Song et al.,  are assumed to be discrete random variables which take values in the set  and the kernel is chosen to be the Kronecker delta function, so . The feature map corresponding to this kernel is the standard basis vector . The kernel embeddings of such a distributions are thus vectors of marginal probabilities while the embeddings of joint distributions in this setting are  matrices specifying joint probability tables, and the explicit form of these embeddings is
+
+The conditional distribution embedding operator, 
+
+ 
+
+is in this setting a conditional probability table
+
+and 
+
+Thus, the embeddings of the conditional distribution under a fixed value of  may be computed as
+
+In this discrete-valued setting with the Kronecker delta kernel, the kernel sum rule becomes
+
+The kernel chain rule in this case is given by

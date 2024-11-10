@@ -1,0 +1,58 @@
+{{Infobox software
+| name = Fluentd
+| logo = [https://www.fluentd.org/images/miscellany/fluentd-logo.png]
+| screenshot = 
+| caption = 
+| developer = Treasure Data
+| released = {{Start date and age|df=yes|2011|10|10|br=yes}}
+| latest release version = 1.15.3
+| latest release date = {{start date and age|2022|11|02}}<ref name="github-release">{{cite web|url=https://github.com/fluent/fluentd/releases|via=[[GitHub]]|title=Releases - fluent/fluentd}}</ref>
+| latest preview version = 
+| latest preview date = 
+| operating system = [[Linux]] ([[Amazon Linux]], [[CentOS]], [[RHEL]]), [[macOS]] (10.9 and above), [[Ruby (programming language)|Ruby]], [[Windows]] (7 and above)
+| programming language = [[C (Programming Language)|C]], [[Ruby (programming language)|Ruby]]
+| genre = Logging tool
+| license = [[Apache License|Apache 2.0]]
+| website = {{official URL}}
+}}
+
+'''Fluentd''' is a [[cross platform|cross-platform]] [[open-source software|open-source]] [[data collection]] software project originally developed at Treasure Data. It is written primarily in the [[Ruby (programming language)|Ruby]] programming language.
+
+== Overview ==
+Fluentd was positioned for "[[big data]]", semi- or un-structured data sets. It analyzes [[Logfile#Event logs|event log]]s, [[Application software|application]] logs, and [[clickstream]]s.<ref>Pasupuleti, Pradeep and Purra, Beulah Salome (2015). [https://books.google.com/books?id=evioCwAAQBAJ&pg=PA48 ''Data Lake Development with Big Data'']. pp. 44–45; 48. [[Packt]]. {{ISBN|1785881663}}</ref> According to Suonsyrjä and Mikkonen, the "core idea of Fluentd is to be the unifying layer between different types of log inputs and outputs.",<ref>Suonsyrjä, Sampo and Mikkonen, Tommi [https://books.google.com/books?id=TRWcCgAAQBAJ&pg=PA170 "Designing an Unobtrusive Analytics Framework for Monitoring Java Applications"], pp. 170–173 in ''Software Measurement''. Springer. {{ISBN|3319242857}}</ref> Fluentd is available on Linux, macOS, and Windows.<ref>Fluentd.org. [http://www.fluentd.org/download "Download Fluentd"]. Retrieved 10 March 2016.</ref>
+
+== History ==
+Fluentd was created by Sadayuki Furuhashi as a project of the [[Mountain View, California|Mountain View]]-based firm Treasure Data. Written primarily in [[Ruby (programming language)|Ruby]], its source code was released as [[open-source software]] in October 2011.<ref>Mayer, Chris (30 October 2013). [https://jaxenter.com/treasure-data-breaking-down-the-hadoop-barrier-2-107032.html "Treasure Data: Breaking down the Hadoop barrier"]. ''JAXenter''</ref><ref name="fluentd-architecture">Fluentd.org. [http://www.fluentd.org/architecture "What is Fluentd?"]. Retrieved 10 March 2016.</ref>
+The company announced $5 million of funding in 2013.<ref>{{Cite news |title= Treasure Data raises $5M, fuses Hadoop and data warehouse in Amazon's cloud |author= Derrick Harris |work= GigaOm |date= July 23, 2013 }}</ref>
+Treasure Data was then sold to [[Arm Ltd.]] in 2018.<ref>{{Cite web |title= Arm unit Treasure Data to seek buyer or IPO before Nvidia sale |work= Nikkei Asia |date= November 19, 2020 |access-date= August 2, 2021 |url= https://asia.nikkei.com/Business/Technology/Arm-unit-Treasure-Data-to-seek-buyer-or-IPO-before-Nvidia-sale }}</ref>
+
+== Users ==
+
+Fluentd was one of the data collection tools recommended by [[Amazon Web Services]] in 2013, when it was said to be similar to [[Apache Flume]] or [[Scribe (log server)|Scribe]].<ref>{{Cite web |title= Best Practices for Amazon EMR |author= Parviz Deyhim |date= August 2013 |publisher= Amazon Web Services |url= http://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf |page= 12 |access-date= March 24, 2017 |archive-url= https://web.archive.org/web/20160326193947/http://media.amazonwebservices.com/AWS_Amazon_EMR_Best_Practices.pdf |archive-date= 2016-03-26 |url-status= dead }}</ref> [[Google Cloud Platform]]'s [[BigQuery]] recommends Fluentd as the default real-time data-ingestion tool, and uses Google's customized version of Fluentd, called google-fluentd, as a default logging agent.<ref>[[Google Cloud Platform]] (2016). [https://cloud.google.com/solutions/real-time/fluentd-bigquery "Real-time logs analysis using Fluentd and BigQuery"]. Retrieved 10 March 2016.</ref><ref>Google Cloud Platform (2016). [https://cloud.google.com/logging/docs/agent/ "The Logging Agent"]. Retrieved 10 March 2016.</ref>
+
+== Fluent Bit ==
+Fluent Bit is a log processor and log forwarder which is being developed as a [[Cloud_Native_Computing_Foundation|CNCF]] sub-project under the umbrella of Fluentd project.<ref>{{Cite web|title=Fluent Bit|url=https://fluentbit.io/|website=fluentbit.io|accessdate=2021-12-05}}</ref> Fluentd is written in C and Ruby and built as a Ruby gem so it consumes some amount of memory resources. On the other hand, since Fluent Bit is written only in C and has no dependencies, the consumed memory usage much decreased compared to Fluentd which makes it easy to run on the embedded Linux and container environment.<ref>{{Cite web|title=Fluentd & Fluent Bit - Fluent Bit: Official Manual|url=https://docs.fluentbit.io/manual/about/fluentd-and-fluent-bit|accessdate=2021-12-05}}</ref>
+
+== References ==
+{{Reflist}}
+
+==Further reading==
+*Goasguen, Sébastien (2014). ''60 Recipes for Apache CloudStack: Using the CloudStack Ecosystem'', [https://books.google.com/books?id=S76uBAAAQBAJ&pg=PA109 "Chapter 6: Advanced Recipes"]. [[O'Reilly Media]]. {{ISBN|1491910127}}
+*Wilkins, Phil (2022). ''Logging in Action, With Fluentd, Kubernetes and more.'' [[Manning_Publications|Manning]]. {{ISBN|9781617298356}}
+
+==External links==
+* {{official website}}
+* [https://github.com/fluent/fluentd Source Code] on [[GitHub]]
+
+[[Category:Big data companies]]
+[[Category:Data warehousing products]]
+[[Category:Data security]]
+[[Category:Computer security companies]]
+[[Category:Free software programmed in Ruby]]
+[[Category:System administration]]
+[[Category:Data mining and machine learning software]]
+[[Category:Free science software]]
+[[Category:Free data analysis software]]
+[[Category:Free artificial intelligence applications]]
+[[Category:Computer logging]]
+[[Category:Software using the Apache license]]

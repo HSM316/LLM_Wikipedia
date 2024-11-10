@@ -1,0 +1,42 @@
+Fuzzy classification is the process of grouping elements into a fuzzy setZadeh, L. A. (1965). Fuzzy sets. Information and Control (8), pp. 338–353. whose membership function is defined by the truth value of a fuzzy propositional function.Zimmermann, H.-J. (2000). Practical Applications of Fuzzy Technologies. Springer.Meier, A., Schindler, G., & Werro, N. (2008). Fuzzy classification on relational databases. In M. Galindo (Hrsg.), Handbook of research on fuzzy information processing in databases (Bd. II, S. 586-614). Information Science Reference.Del Amo, A., Montero, J., & Cutello, V. (1999). On the principles of fuzzy classification. Proc. 18th North American Fuzzy Information Processing Society Annual Conf, (S. 675 – 679).
+
+A fuzzy class ~C = { i | ~Π(i) } is defined as a fuzzy set ~C of individuals i satisfying a fuzzy classification predicate ~Π which is a fuzzy propositional function. The domain of the fuzzy class operator ~{ .| .}  is the set of variables V and the set of fuzzy propositional functions ~PF, and the range is the fuzzy powerset (the set of fuzzy subsets) of this universe, ~P(U):
+
+~{ .| .}:V × ~PF ⟶ ~P(U)
+
+A fuzzy propositional function is, analogous to,Russel, B. (1919). Introduction to Mathematical Philosophy. London: George Allen & Unwin, Ltd., S. 155 an expression containing one or more variables, such that, when values are assigned to these variables, the expression becomes a fuzzy proposition in the sense of.Zadeh, L. A. (1975). Calculus of fuzzy restrictions. In L. A. Zadeh, K.-S. Fu, K. Tanaka, & M. Shimura (Hrsg.), Fuzzy sets and Their Applications to Cognitive and Decision Processes. New York: Academic Press.
+
+Accordingly, fuzzy classification is the process of grouping individuals having the same characteristics into a fuzzy set. A fuzzy classification corresponds to a membership function μ that indicates whether an individual is a member of a class, given its fuzzy classification predicate ~Π.
+
+μ:~PF × U ⟶ ~T
+
+Here, ~T is the set of fuzzy truth values (the interval between zero and one). The fuzzy classification predicate ~Π corresponds to a fuzzy restriction "i is R"  of U, where R is a fuzzy set defined by a truth function. The degree of membership of an individual i in the fuzzy class ~C is defined by the truth value of the corresponding fuzzy predicate.
+
+μ~C(i):= τ(~Π(i))
+
+Classification
+Intuitively, a class is a set that is defined by a certain property, and all objects having that property are elements of that class. The process of classification evaluates for a given set of objects whether they fulfill the classification property, and consequentially are a member of the corresponding class. However, this intuitive concept has some logical subtleties that need clarification.
+
+A class logicGlubrecht, J.-M., Oberschelp, A., & Todt, G. (1983). Klassenlogik. Mannheim/Wien/Zürich: Wissenschaftsverlag. is a logical system which supports set construction using logical predicates with the class operator { .| .}. A class
+
+C = { i | Π(i) }
+
+is defined as a set C of individuals i satisfying a classification predicate Π which is a propositional function. The domain of the class operator { .| .}  is the set of variables V and the set of propositional functions PF, and the range is the powerset of this universe P(U) that is, the set of possible subsets:
+
+{ .| .} :V×PF⟶P(U)
+
+Here is an explanation of the logical elements that constitute this definition:
+ An individual is a real object of reference.
+ A universe of discourse is the set of all possible individuals considered.
+ A variable V:⟶R is a function which maps into a predefined range R without any given function arguments: a zero-place function.
+ A propositional function is "an expression containing one or more undetermined constituents, such that, when values are assigned to these constituents, the expression becomes a proposition".
+
+In contrast, classification is the process of grouping individuals having the same characteristics into a set. A classification corresponds to a membership function μ that indicates whether an individual is a member of a class, given its classification predicate Π.
+
+μ:PF × U ⟶ T
+
+The membership function maps from the set of propositional functions PF and the universe of discourse U into the set of truth values T. The membership μ of individual i in Class C is defined by the truth value τ of the classification predicate Π.
+
+μC(i):=τ(Π(i))
+
+In classical logic the truth values are certain. Therefore a classification is crisp, since the truth values are either exactly true or exactly false.

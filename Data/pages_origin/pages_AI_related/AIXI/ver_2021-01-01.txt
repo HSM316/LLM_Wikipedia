@@ -1,0 +1,80 @@
+'''AIXI''' {{IPA-all|'ai̯k͡siː|}} is a theoretical [[Mathematical logic#Formal logical systems|mathematical formalism]] for [[artificial general intelligence]].
+It combines [[Solomonoff induction]] with [[Decision theory|sequential decision theory]].
+AIXI was first proposed by [[Marcus Hutter]] in 2000<ref>{{cite book |author=Marcus Hutter |title=A Theory of Universal Artificial Intelligence based on Algorithmic Complexity |url=https://archive.org/details/arxiv-cs0004001 |arxiv=cs.AI/0004001 |year=2000 |bibcode=2000cs........4001H }}</ref> and several results regarding AIXI are proved in Hutter's 2005 book ''Universal Artificial Intelligence''.<ref name="uaibook">{{cite book |author=Marcus Hutter |title=Universal Artificial Intelligence: Sequential Decisions Based on Algorithmic Probability |series=Texts in Theoretical Computer Science an EATCS Series |url=https://books.google.com/books?id=NP53iZGt4KUC |year=2004 |publisher=Springer |isbn=978-3-540-22139-5 |doi=10.1007/b138233 |ref=harv |author-mask=1}}</ref>
+
+AIXI is a [[Reinforcement learning|reinforcement learning agent]]. It maximizes the expected total rewards received from the environment. Intuitively, it simultaneously considers every computable hypothesis (or environment). In each time step, it looks at every possible program and evaluates how many rewards that program generates depending on the next action taken. The promised rewards are then weighted by the [[Subjective logic|subjective belief]] that this program constitutes the true environment. This belief is computed from the length of the program: longer programs are considered less likely, in line with [[Occam's razor]]. AIXI then selects the action that has the highest expected total reward in the weighted sum of all these programs.
+
+== Definition ==
+
+AIXI is a reinforcement learning agent that interacts with some stochastic and unknown but computable environment <math>\mu</math>. The interaction proceeds in time steps, from <math>t=1</math> to <math>t=m</math>, where <math>m \in \mathbb{N}</math> is the lifespan of the AIXI agent. At time step ''t'', the agent chooses an action <math>a_t \in \mathcal{A}</math> (e.g. a limb movement) and executes it in the environment, and the environment responds with a "percept" <math>e_t \in \mathcal{E} = \mathcal{O} \times \mathbb{R}</math>, which consists of an "observation" <math>o_t \in \mathcal{O}</math> (e.g., a camera image) and a reward <math>r_t \in \mathbb{R}</math>, distributed according to the [[conditional probability]] <math>\mu(o_t r_t | a_1 o_1 r_1 ... a_{t-1} o_{t-1} r_{t-1} a_t)</math>, where <math>a_1 o_1 r_1 ... a_{t-1} o_{t-1} r_{t-1} a_t</math> is the "history" of actions, observations and rewards. The environment <math>\mu</math> is thus mathematically represented as a [[probability distribution]] over "percepts" (observations and rewards) which depend on the ''full'' history, so there is no [[Markov property|Markov assumption]] (as opposed to other RL algorithms). Note again that this probability distribution is ''unknown'' to the AIXI agent. Furthermore, note again that <math>\mu</math> is computable, that is, the observations and rewards received by the agent from the environment <math>\mu</math> can be computed by some program (which runs on a [[Turing machine]]), given the past actions of the AIXI agent.<ref name=veness2009>{{cite arXiv |last1=Veness |first1=Joel |author2=Kee Siong Ng |last3=Hutter |first3=Marcus |last4=Uther |first4=William  |last5=Silver |first5=David   |eprint=0909.0801 |title=A Monte Carlo AIXI Approximation |year=2009 |class=cs.AI}}</ref>
+
+The ''only'' goal of the AIXI agent is to maximise <math>\sum_{t=1}^m r_t</math>, that is, the sum of rewards from time step 1 to m.
+
+The AIXI agent is associated with a stochastic policy <math>\pi : (\mathcal{A} \times \mathcal{E})^* \rightarrow \mathcal{A}</math>, which is the function it uses to choose actions at every time step, where <math>\mathcal{A}</math> is the space of all possible actions that AIXI can take and <math>\mathcal{E}</math> is the space of all possible "percepts" that can be produced by the environment. The environment (or probability distribution) <math>\mu</math> can also be thought of as a stochastic policy (which is a function): <math>\mu  : (\mathcal{A} \times \mathcal{E})^* \times \mathcal{A} \rightarrow \mathcal{E} </math>, where the <math>*</math> is the [[Kleene star]] operation.
+
+In general, at time step <math>t</math> (which ranges from 1 to m), AIXI, having previously executed actions <math>a_1\dots a_{t-1}</math> (which is often abbreviated in the literature as <math>a_{<t}</math>) and having observed the history of percepts <math>o_1 r_1 ... o_{t-1} r_{t-1}</math> (which can be abbreviated as <math>e_{<t}</math>), chooses and executes in the environment the action, <math>a_t</math>, defined as follows <ref>[http://hutter1.net/ai/uaibook.htm Universal Artificial Intelligence<!-- Bot generated title -->]</ref>
+
+:<math>
+a_t := \arg \max_{a_t} \sum_{o_t r_t} \ldots \max_{a_m} \sum_{o_m r_m} [r_t + \ldots + r_m] \sum_{q:\; U(q, a_1 \ldots a_m) = o_1 r_1 \ldots o_m r_m} 2^{-\textrm{length}(q)} 
+</math>
+
+or, using parentheses, to disambiguate the precedences
+
+:<math>
+a_t :=  \arg \max_{a_t} \left( \sum_{o_t r_t} \ldots \left( \max_{a_m} \sum_{o_m r_m} [r_t + \ldots + r_m] \left( \sum_{q:\; U(q, a_1 \ldots a_m) = o_1 r_1 \ldots o_m r_m} 2^{-\textrm{length}(q)} \right) \right) \right)
+</math>
+
+Intuitively, in the definition above, AIXI considers the sum of the total reward over all possible "futures" up to <math>m - t</math> time steps ahead (that is, from <math>t</math> to <math>m</math>), weighs each of them by the complexity of programs <math>q</math> (that is, by <math>2^{-\textrm{length}(q)}</math>) consistent with the agent's past (that is, the previously executed actions, <math>a_{<t}</math>, and received percepts, <math>e_{<t}</math>) that can generate that future, and then picks the action that maximises expected future rewards.<ref name=veness2009 />
+
+Let us break this definition down in order to attempt to fully understand it.
+
+<math>o_t r_t</math> is the "percept" (which consists of the observation <math>o_t</math> and reward <math>r_t</math>) received by the AIXI agent at time step <math>t</math> from the environment (which is unknown and stochastic). Similarly, <math>o_m r_m</math> is the percept received by AIXI at time step <math>m</math> (the last time step where AIXI is active).
+
+<math>r_t + \ldots + r_m</math> is the sum of rewards from time step <math>t</math> to time step <math>m</math>, so AIXI needs to look into the future to choose its action at time step <math>t</math>.
+
+<math>U</math> denotes a [[monotone class theorem|monotone]] [[universal Turing machine]], and <math>q</math> ranges over all (deterministic) programs on the universal machine <math>U</math>, which receives as input the program <math>q</math> and the sequence of actions <math>a_1\dots a_m</math> (that is, all actions), and produces the sequence of percepts <math>o_1 r_1 \ldots o_m r_m</math>. The universal Turing machine <math>U</math> is thus used to "simulate" or compute the environment responses or percepts, given the program <math>q</math> (which "models" the environment) and all actions of the AIXI agent: in this sense, the environment is "computable" (as stated above). Note that, in general, the program which "models" the ''current'' and actual environment (where AIXI needs to act) is unknown because the current environment is also unknown. 
+
+<math>\textrm{length}(q)</math> is the length of the program <math>q</math> (which is encoded as a string of bits). Note that <math>2^{-\textrm{length}(q)} = \frac{1}{2^{\textrm{length}(q)}}</math>. Hence, in the definition above, <math>\sum_{q:\; U(q, a_1 \ldots a_m) = o_1 r_1 \ldots o_m r_m} 2^{-\textrm{length}(q)}</math> should be interpreted as a [[Mixture (probability)|mixture]] (in this case, a sum) over all computable environments (which are consistent with the agent's past), each weighted by its complexity <math>2^{-\textrm{length}(q)}</math>. Note that <math>a_1 \ldots a_m</math> can also be written as <math>a_1 \ldots a_{t-1}a_t \ldots a_m</math>, and <math>a_1 \ldots a_{t-1} = a_{<t}</math> is the sequence of actions already executed in the environment by the AIXI agent. Similarly, <math>o_1 r_1 \ldots o_m r_m = o_1 r_1 \ldots o_{t-1} r_{t-1}o_{t} r_{t} \ldots o_m r_m</math>, and <math>o_1 r_1 \ldots o_{t-1} r_{t-1}</math> is the sequence of percepts produced by the environment so far.
+
+Let us now put all these components together in order to understand this equation or definition.
+
+At time step t, AIXI chooses the action <math>a_t</math> where the function <math>\sum_{o_t r_t} \ldots \max_{a_m} \sum_{o_m r_m} [r_t + \ldots + r_m] \sum_{q:\; U(q, a_1 \ldots a_m) = o_1 r_1 \ldots o_m r_m} 2^{-\textrm{length}(q)}</math> attains its maximum. 
+
+{{Missing information|description of the selection of actions|date=February 2019}}
+
+=== Parameters ===
+
+The parameters to AIXI are the universal Turing machine ''U'' and the agent's lifetime ''m'', which need to be chosen. The latter parameter can be removed by the use of [[discounting]].
+
+== The meaning of the word AIXI ==
+
+According to Hutter, the word "AIXI" can have several interpretations. AIXI can stand for AI based on Solomonoff's distribution, denoted by <math>\xi</math> (which is the Greek letter xi), or e.g. it can stand for AI "crossed" (X) with induction (I). There are other interpretations.
+
+== Optimality ==
+
+AIXI's performance is measured by the expected total number of rewards it receives.
+AIXI has been proven to be optimal in the following ways.<ref name="uaibook" />
+
+* [[Pareto optimality]]: there is no other agent that performs at least as well as AIXI in all environments while performing strictly better in at least one environment.{{citation needed|date=June 2014}}
+* Balanced Pareto optimality: Like Pareto optimality, but considering a weighted sum of environments.
+* Self-optimizing: a policy ''p'' is called self-optimizing for an environment <math>\mu</math> if the performance of ''p'' approaches the theoretical maximum for <math>\mu</math> when the length of the agent's lifetime (not time) goes to infinity. For environment classes where self-optimizing policies exist, AIXI is self-optimizing.
+
+It was later shown by Hutter and Jan Leike that balanced Pareto optimality is subjective and that any policy can be considered Pareto optimal, which they describe as undermining all previous optimality claims for AIXI.<ref>{{cite conference|conference=Proceedings of the 28th Conference on Learning Theory|last1=Leike|first1=Jan|last2=Hutter|first2=Marcus|title=Bad Universal Priors and Notions of Optimality|date=2015|url=http://proceedings.mlr.press/v40/Leike15.pdf}}</ref>
+
+However, AIXI does have limitations. It is restricted to maximizing rewards based on percepts as opposed to external states. It also assumes it interacts with the environment solely through action and percept channels, preventing it from considering the possibility of being damaged or modified. Colloquially, this means that it doesn't consider itself to be contained by the environment it interacts with. It also assumes the environment is computable.<ref>{{cite web|last1=Soares|first1=Nate|title=Formalizing Two Problems of Realistic World-Models|url=https://intelligence.org/files/RealisticWorldModels.pdf|website=Intelligence.org|accessdate=2015-07-19|ref=MIRI}}</ref> Since AIXI is incomputable (see below), it assigns zero probability to its own existence{{citation needed|date=October 2017}}.
+
+== Computational aspects ==
+
+Like [[Solomonoff induction]], AIXI is [[Undecidable problem|incomputable]]. However, there are computable approximations of it. One such approximation is AIXI''tl'', which performs at least as well as the provably best time ''t'' and space ''l'' limited agent.<ref name="uaibook" /> Another approximation to AIXI with a restricted environment class is MC-AIXI (FAC-CTW) (which stands for [[Monte Carlo method|Monte Carlo]] AIXI FAC-[[Context tree weighting|Context-Tree Weighting]]), which has had some success playing simple games such as [[Partially observable system|partially observable]] [[Pac-Man]].<ref name=veness2009>{{cite arXiv |last1=Veness |first1=Joel |author2=Kee Siong Ng |last3=Hutter |first3=Marcus |last4=Uther |first4=William  |last5=Silver |first5=David   |eprint=0909.0801 |title=A Monte Carlo AIXI Approximation |year=2009 |class=cs.AI}}</ref><ref>[https://www.youtube.com/watch?v=yfsMHtmGDKE Playing Pacman using AIXI Approximation - YouTube<!-- Bot generated title -->]</ref>
+
+== See also ==
+* [[Gödel machine]]
+
+== References ==
+
+{{reflist}}
+* "Universal Algorithmic Intelligence: A mathematical top->down approach", Marcus Hutter, {{arXiv|cs/0701125}}; also in ''Artificial General Intelligence'', eds. B. Goertzel and C. Pennachin, Springer, 2007, {{ISBN|9783540237334}}, pp.&nbsp;227–290, {{doi|10.1007/978-3-540-68677-4_8}}.
+
+[[Category:Optimal decisions]]
+[[Category:Decision theory]]
+[[Category:Machine learning]]

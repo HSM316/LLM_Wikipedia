@@ -1,0 +1,34 @@
+The '''Dynamic Analysis and Replanning Tool''', commonly abbreviated to '''DART''', is an [[artificial intelligence]] program<ref>{{cite web | title = AI Military Topics | publisher = Association for the Advancement of Artificial Intelligence | url = http://www.aaai.org/AITopics/html/military.html | format = web | access-date = 2008-02-28}}</ref> used by the [[U.S. military]] to optimize and schedule the transportation of supplies or personnel and solve other [[logistics|logistical]] problems.
+
+DART uses [[intelligent agent]]s to aid decision support systems located at the U.S. [[United States Transportation Command|Transportation]] and [[United States European Command|European]] Commands.<ref name=Sarah/> It integrates a set of intelligent data processing agents and database management systems to give planners the ability to rapidly evaluate plans for logistical feasibility. By automating evaluation of these processes DART decreases the cost and time required to implement decisions.<ref name=Staff_Guide>{{Cite journal | title = JOPES ADP for Transportation Planning | journal = Joint Staff Officers Guide | volume = AFSC Pub 1 | issue = chapter 6.91 |page=631 | publisher = U.S. Department of Defense | year = 1997 | url = http://www.fas.org/man/dod-101/dod/docs/pub1_97/Chap6.html | access-date = 2008-02-28}}</ref>
+
+DART achieved logistical solutions that surprised many military planners. Introduced in 1991, DART had by 1995 offset the monetary equivalent of all funds [[DARPA]] had channeled into AI research for the previous 30 years combined.<ref name=Sarah>{{cite journal | last = Reese Hedberg | first = Sarah | title = DART: Revolutionizing Logistics Planning | journal = IEEE Intelligent Systems | volume = 17 | issue = 3 | pages = 81–83 | publisher = IEEE | year = 2002 | url = http://csdl2.computer.org/persagen/DLAbsToc.jsp?resourcePath=/dl/mags/ex/&toc=comp/mags/ex/2002/03/x3toc.xml&DOI=10.1109/MIS.2002.1005635 |doi=10.1109/MIS.2002.1005635 | access-date = 2008-02-28}}</ref><ref name=Lopez>{{cite journal | last = Lopez | first = Antonio M. | author2 = Comello, Jerome J. | author3 = Cleckner, William H. | title = Machines, the Military, and Strategic Thought | journal = Military Review | volume = Sep/Oct | pages = 71–74 | publisher = U.S. Department of Defense | location = Fort Leavenworth | year = 2004 | url = http://usacac.leavenworth.army.mil/cac/milreview/download/English/SepOct04/lopez.pdf | access-date = 2008-02-28 | url-status = dead | archive-url = https://web.archive.org/web/20070612064519/http://usacac.leavenworth.army.mil/cac/milreview/download/English/SepOct04/lopez.pdf | archive-date = 2007-06-12 }}</ref>
+
+==Development and introduction==
+DARPA funded the [[MITRE Corporation]] and [[Carnegie Mellon University]] to analyze the feasibility of several intelligent planning systems. In November 1989, a demonstration named ''The Proud Eagle Exercise'' indicated many inadequacies and bottlenecks within military support systems.<ref name=Cross/> In July, DART was previewed to the military by [[BBN Technologies|BBN Systems and Technologies]] and the ISX Corporation (now part of [[Lockheed Martin Advanced Technology Labs|Lockheed Martin Advanced Technology Laboratories]]) in conjunction with the [[United States Air Force]] [[Rome Laboratory]].<ref>{{cite web
+  | last = Bates
+  | first = Madeleine
+  |author2=Ellard, Dan |author3=Peterson, Pat |author4=Shaked, Varda
+  | title = Using Spoken Language to Facilitate Military Transportation Planning
+  | url = http://www.aclweb.org/anthology-new/H/H91/H91-1040.pdf
+  | access-date = 2008-02-28}}</ref>  It was proposed in November 1990, with the military immediately demanding that a prototype be developed for testing. Eight weeks later, a hasty but working prototype was introduced in 1991 to the [[USTRANSCOM]] at the beginning of [[Operation Desert Storm]] during the [[Gulf War]].<ref name=Cross>{{Cite book| last1 = Cross | first1 = Stephen E. | first2 = Walker | last2 = Edward | editor-last = Zweben | editor-first = Monte | editor2-last = Fox | editor2-first = Mark S. | title = Intelligent Scheduling | publisher = Morgan Kaufmann | year = 1994 | location = University of Michigan | pages = 711–729 | url = https://books.google.com/books?id=ry3W5xF8ibUC&q=bbn+systems+and+technologies+dart&pg=RA1-PA712
+ | isbn = 1-55860-260-7}}</ref>
+
+==Impact==
+Directly following its launch, DART solved several logistical nightmares, saving the military millions of dollars.<ref name=Sarah/> Military planners were aware of the tremendous obstacles facing moving military assets from bases in [[Europe]] to prepared bases in [[Saudi Arabia]], in preparation for [[Desert Storm]].<ref name=Cross/> DART quickly proved its value by improving upon existing plans of the U.S. military. What surprised many observers was DART's ability to adapt plans rapidly in a crisis environment.<ref name=Staff_Guide/>
+
+DART's success led to the development of other military planning agents such as:
+*RDA - Resource Description and Access system<ref name=Staff_Guide/>
+*DRPI - Knowledge-Based Planning and Scheduling Initiative, a successor of DART<ref>{{cite web | title =DRPI: DARPA / Rome Laboratory Knowledge-Based Planning and Scheduling Initiative  | publisher = ISX Corporation  | url = http://www.isx.com/projects/drpi.php  | format = web | access-date = 2008-02-28  | archive-url = https://web.archive.org/web/20060905171618/http://www.isx.com/projects/drpi.php  | archive-date = 2006-09-05}}</ref>
+
+==See also==
+* [[Military logistics]]
+* [[JADE (planning system)]]
+
+==References==
+{{reflist}}
+
+[[Category:Military logistics of the United States]]
+[[Category:Automated planning and scheduling]]
+[[Category:Common Lisp (programming language) software]]
+[[Category:Mitre Corporation]]

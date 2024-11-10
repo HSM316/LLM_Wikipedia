@@ -1,0 +1,84 @@
+{{short description|Virtual reality headset by Valve}}
+{{missing information|the Index's history, development, reception, etc|date=January 2020}}
+{{Use mdy dates|date=January 2019}}
+{{Infobox information appliance
+| name = Valve Index
+| developer = [[Valve Corporation|Valve]]
+| manufacturer = Valve
+| type = [[Virtual reality headset]]
+| generation = Second
+| os = [[Windows]], [[Linux]]
+| display = Two 1440×1600 [[LCD]] IPS Fast Switching Type Displays @ 80 Hz, 90 Hz, 120 Hz, or 144 Hz<ref name="indexspecs-official"/>
+| sound = Integrated headphones, 3.5mm [[audio jack]], built-in dual microphone array<ref name="indexspecs-official"/>
+| controllers = Valve Index Controllers
+| camera = Front-facing 960×960 stereo cameras<ref name="indexspecs-official"/>
+| connectivity = [[DisplayPort]] 1.2, [[USB 3.0]] expansion port<ref name="indexspecs-official"/>
+| compatibility = Supports HTC Vive and Vive Pro Controllers and HTC Vive and Vive Pro Base Stations<ref name="index-storepage"/>
+| related = [[HTC Vive]], [[HP Reverb G2]]<ref>{{Cite web|last=Robertson|first=Adi|date=2020-03-23|title=HP is teasing a new VR headset in partnership with Valve and Microsoft|url=https://www.theverge.com/2020/3/23/21191386/hp-microsoft-valve-windows-mixed-reality-reverb-vr-headset-new-announce-half-life-alyx|access-date=2021-11-27|website=The Verge|language=en}}</ref>
+| website = {{URL|https://www.valvesoftware.com/index}}
+| releasedate = June 28, 2019
+| price = {{USD|999}}<ref>{{Cite web |url=https://www.trustedreviews.com/news/valve-index-headset-release-date-news-specs-price-3688519 |title=Valve Index Headset: Price, release date, specs for Valve's new VR headset |last=Tucker |first=Jake |date=2019-04-30 |website=Trusted Reviews |language=en-US |access-date=2019-06-05}}</ref><ref>{{Cite web |url=https://www.theverge.com/2019/4/30/18524167/valve-index-vr-headset-price-pre-order-date |title=Valve's Index VR headset will officially cost $999, and here's what it's all about |last=Hollister |first=Sean |date=2019-04-30 |website=The Verge |access-date=2019-06-05}}</ref>
+| retail availability = 2019
+| logo = VI logo.svg
+}}
+
+The '''Valve Index''' is a consumer [[virtual reality headset]] created and manufactured by [[Valve Corporation|Valve]]. Announced on April 30, 2019, the headset was released on June 28 of the same year.<ref name="ars-reveal"/><ref>{{cite web |last1=Higham |first1=Michael |title=Valve Index Impressions – A Necessary But Incremental Step For PC VR |url=https://www.gamespot.com/articles/valve-index-impressions-a-necessary-but-incrementa/1100-6467377/ |website=GameSpot |access-date=9 June 2019}}</ref> The Index is a second-generation headset and the first to be manufactured completely by Valve. ''[[Half-Life: Alyx]]'' is [[Product bundling|bundled in]] with the headset.
+
+== Technical specifications ==
+
+=== Display ===
+The headset uses an [[IPS panel|IPS]] fast switching<ref name="reddit">{{cite web |last1=Tiger |first1=Leon |title=Fun fact, the index's display panels are IPS |url=https://www.reddit.com/r/ValveIndex/comments/nh986v/fun_fact_the_indexs_display_panels_are_ips/ |website=Reddit |publisher=tigerleon10 |access-date=20 June 2021}}</ref> 1440×1600 [[LCD]] panel for each eye for a combined resolution of 2880×1600. The panels are full [[RGB]] and can operate at refresh rates of 80, 90, 120, or 144&nbsp;Hz.<ref name="indexspecs-official" /> The specified [[field of view]] is 130°, but users report a practical field of view of 120°.<ref>{{cite web |title=Valve Index vs Vive Pro vs Reverb G2: Do We Have a VR King? |url=https://circuitstream.com/blog/valve-index-vs-vive-pro-vs-reverb-g2/ |website=Circuit Stream |publisher=Circuit Stream |access-date=22 November 2020 |language=en-US |date=22 October 2020 |quote=Compared to other headsets on the market, Valve Index currently has the highest field of view (FOV) of 130 degrees (perceived as 120)}}{{unreliable source?|date=December 2020}}</ref> The panels and lenses can be moved horizontally to adjust the user's [[inter-pupillary distance]] (IPD) using a physical slider underneath the displays. The allowable IPD adjustment ranges between 58 and 70mm.
+
+=== Tracking ===
+The headset and controllers both support Valve's Lighthouse 2.0 tracking system,<ref name="ars-reveal" /> while retaining full compatibility with all previous [[HTC Vive]] base stations,<ref>{{Cite web|date=2019-09-04|title=Do HTC Vive lighthouse base stations work with the Valve Index headset?|url=https://www.windowscentral.com/can-you-use-htc-vive-base-stations-valve-index|access-date=2020-07-16|website=Windows Central}}</ref> using [[SteamVR]].
+
+=== Controls ===
+The headset is intended to be used with the Valve Index Controllers—known during development as the Knuckles Controllers<ref name="roadtovr-leak" />—but is also [[Backward compatibility|backward compatible]] with the [[HTC Vive]] and HTC Vive Pro controllers.<ref name="index-storepage" /> The Valve Index Controllers have a [[joystick]], [[touchpad]], two face buttons, a menu button, a trigger, and an array of 87 sensors that allow the controllers to track hand position, finger position, motion, and pressure to create an accurate representation of the user's hand in virtual reality.<ref name="controllerspecs-official" /> In addition, the controllers include an [[accelerometer]] for additional measurements.
+
+=== Audio ===
+The Index includes "a pair of ultra near-field, full range, off-ear (extra-aural) headphones",<ref name="ear-speakers">{{cite web |last1=Ridgway |first1=Emily |title=Ear Speakers - Research, Design, and Evolution |url=https://www.valvesoftware.com/en/index/deep-dive/ear-speakers |website=Valve Corporation |publisher=Valve Software |access-date=19 April 2021 |quote=a pair of ultra near-field, full range, off-ear (extra-aural) headphones}}</ref> which use BMR drivers to create accurate and immersive low frequency sounds, as well as a microphone.
+
+== History ==
+
+=== Development ===
+The Valve Index is Valve's first virtual reality headset developed and manufactured in house, and is planned to be the launch console for Valve's upcoming virtual reality games. Development on a completely first party headset started some time around 2015 according to interviews with staff, before the release of their Vive headset with HTC. In February 2021, Valve registered patents for a new VR headset, describing the improvements over the previous model.<ref>{{Cite web|date=2021-08-13|title=A Successor To Valve Index VR Headset Could Be In The Works|url=https://exputer.com/news/tech/valve-index-vr-headset/|access-date=2021-08-14|website=eXputer.com|language=en-US}}</ref>
+
+=== Release ===
+It sold an estimated 149,000 sets in 2019, 103,000 of which were in the fourth quarter due to the announcement of ''[[Half-Life: Alyx]]'', which buyers received for free.<ref>{{Cite web |url=https://www.superdataresearch.com/blog/superdata-xr-update |title=SuperData XR Quarterly Update |website=SuperData, a Nielsen Company}}</ref> The sudden demand caused the unit to be sold out in all 31 countries except Japan in January 2020.<ref>{{Cite web |url=https://www.gamesindustry.biz/articles/2020-01-15-valve-index-out-of-stock-around-the-globe-ahead-of-half-life-alyx-launch |title=Valve Index out of stock around the globe ahead of Half-Life: Alyx launch |website=GamesIndustry.biz}}</ref> As of December 2019, 6.67% of the VR units connected to Steam are Valve Index sets.<ref>{{Cite web |url=https://www.roadtovr.com/analysis-monthly-connected-vr-headsets-on-steam-record-high/ |title=Analysis: Monthly-connected VR Headsets on Steam Reach Record High of 1.3 Million |first=Ben |last=Lang |date=January 29, 2020}}</ref> While Valve had anticipated supply for many of those that had ordered the Index in time for the March 2020 release of ''Half-Life: Alyx'', the [[COVID-19 pandemic]] impacted production of the Index which left Valve with a reduced number of units available on the release date.<ref>{{cite web | url=https://www.vg247.com/2020/02/21/coronavirus-has-affected-the-production-schedule-for-valve-index-fewer-units-to-be-made-available/ | title=Coronavirus has affected the production schedule for Valve Index, fewer units to be made available | first=Stephany | last=Nunneley | date=February 21, 2020 | access-date = February 21, 2020 | work=[[VG247]] }}</ref>
+
+== See also ==
+* [[Reality Labs]]
+* [[VirtualLink]]
+
+==References==
+{{Reflist|refs=
+
+<ref name="indexspecs-official">{{cite web |title=Headset – Valve Index – Upgrade your experience |url=https://www.valvesoftware.com/en/index/headset |website=Valvesoftware.com |publisher=Valve |access-date=9 May 2019}}</ref>
+
+<ref name="index-storepage">{{cite web |title=Valve Index Headset on Steam |url=https://store.steampowered.com/app/1059530/Valve_Index_Headset/ |website=Steam Store |publisher=Valve |access-date=9 May 2019}}</ref>
+
+<ref name="roadtovr-leak">{{Cite web |url=https://www.roadtovr.com/valve-index-vr-headset-leaked-steam-page-release-date/ |title=Valve Index and Knuckles Pre-orders Confirmed for May 1st, Shipping in June |last=Lang |first=Ben |date=2019-04-01 |website=Road to VR |language=en-US |access-date=2019-04-19}}</ref>
+
+<!-- Not in use
+<ref name="tomshardware-linuxsupport">{{Cite web |url=https://www.tomshardware.com/news/valve-index-vr-headset-support-linux,39012.html |title=Valve's Index VR Headset Will Support Linux |date=2019-04-07 |website=Tom's Hardware |language=en |access-date=2019-04-19}}</ref>
+Not in use-->
+
+<ref name="ars-reveal">{{cite web |last1=Machkovech |first1=Sam |title=Valve Index reveal: The best of VR's first generation—but is it worth $999? |url=https://arstechnica.com/gaming/2019/04/valve-index-reveal-the-best-of-vrs-first-generation-but-is-it-worth-999/ |website=[[ArsTechnica]] |publisher=Conde Nast |access-date=9 May 2019 |date=2019-04-30}}</ref>
+
+<ref name="controllerspecs-official">{{cite web |title=Controllers – Valve Index – Upgrade your experience |url=https://www.valvesoftware.com/en/index/controllers |website=Valvesoftware.com |publisher=Valve |access-date=20 May 2020}}</ref>
+
+<ref name="reddit">{{cite web |last1=Tiger |first1=Leon |title=Fun fact, the index's display panels are IPS |url=https://www.reddit.com/r/ValveIndex/comments/nh986v/fun_fact_the_indexs_display_panels_are_ips/ |website=Reddit |publisher=tigerleon10 |access-date=20 June 2021}}</ref>
+
+}}
+
+==External links==
+* {{Official website|https://www.valvesoftware.com/index}}
+
+{{Mixed reality}}
+{{Valve}}
+
+[[Category:Virtual reality headsets]]
+[[Category:American inventions]]
+[[Category:Products introduced in 2019]]
+[[Category:Valve Corporation]]
+[[Category:Wearable devices]]

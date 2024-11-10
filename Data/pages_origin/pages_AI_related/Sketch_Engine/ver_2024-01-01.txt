@@ -1,0 +1,116 @@
+{{Short description|Corpus manager and text analysis software}}
+{{Infobox software
+| name                   = Sketch Engine
+| title                  =
+| logo                   = Sketch Engine logo 2017.svg
+| logo caption           = Logo of Sketch Engine
+| logo size              = 250px
+| logo alt               =
+| screenshot             = Concordance_in_Sketch_Engine.png
+| caption                = Sketch Engine concordance page
+| screenshot size        =
+| screenshot alt         =
+| collapsible            =
+| author                 = [[Adam Kilgarriff]], Pavel Rychlý
+| developer              = [https://www.lexicalcomputing.com/ Lexical Computing CZ s.r.o.]
+| released               = {{Start date and age|2003|07|23|df=yes}}<ref>[http://wck2.companieshouse.gov.uk/ Companies House] Searched on [[United Kingdom]]'s [[registrar of companies]] (Company name: LEXICAL COMPUTING LIMITED or Company number: 04841901)</ref>
+| discontinued           =
+| latest release version =
+| latest release date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| latest preview version =
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language   = [[Go_(programming_language)|Go]], [[JavaScript]], [[jQuery]], [[C++]], [[Python (programming language)|Python]]
+| operating system       = [[Linux]], [[Mac OS X]]
+| platform               = [[IA-32]], [[x64]] or [[IA-64]]
+| size                   =
+| language               = Arabic, Crimean Tatar, Czech, English, French, German, Irish, Italian, Nko, Spanish, Ukrainian
+| language count         = 11
+| language footnote      =
+| genre                  = [[Corpus manager]] for 90+ languages, [[database management systems|database management system]]
+| license                = [[Proprietary software]]; both [[commercial software|commercial]] and [[freeware]] editions are available
+| website                = {{URL|www.sketchengine.eu}}
+| standard               = [[Unicode]]
+| AsOf                   =
+}}
+
+'''Sketch Engine''' is a corpus manager and [[text analysis]] software developed by Lexical Computing CZ s.r.o. since 2003. Its purpose is to enable people studying language behaviour ([[lexicographers]], researchers in [[corpus linguistics]], translators or language learners) to search large text collections according to complex and linguistically motivated queries. Sketch Engine gained its name after one of the key features, [[word sketch]]es: one-page, automatic, corpus-derived summaries of a word's grammatical and collocational behaviour.<ref>{{cite journal|last1=Kilgarriff|first1=Adam|last2=Baisa|first2=Vít|last3=Bušta|first3=Jan|last4=Jakubíček|first4=Miloš|last5=Kovář|first5=Vojtěch|last6=Michelfeit|first6=Jan|last7=Rychlý|first7=Pavel|last8=Suchomel|first8=Vít|title=The Sketch Engine: ten years on|journal=Lexicography|date=10 July 2014|volume=1|issue=1|pages=7–36|doi=10.1007/s40607-014-0009-9|issn=2197-4292|doi-access=free}}</ref> Currently, it supports and provides corpora in 90+ languages.<ref>{{cite web |url=https://www.sketchengine.eu/user-guide/user-manual/corpora/by-language/ |title= Languages in Sketch Engine |author=<!--Not stated--> |date= 7 June 2016|website=Sketch Engine |publisher=Lexical Computing s.r.o. |access-date=22 January 2018}}</ref>
+
+== History of development ==
+Sketch Engine is a product of Lexical Computing Limited, a company founded in 2003 by the lexicographer and research scientist [[Adam Kilgarriff]].<ref>[http://kilgarriff.co.uk Adam Kilgarriff's home page]</ref> He started a collaboration with Pavel Rychlý, a computer scientist working at the Natural Language Processing Centre, [[Masaryk University]],<ref>[http://nlp.fi.muni.cz Natural Language Processing Centre, Masaryk University]</ref> and the developer of Manatee and Bonito (two major parts of the software suite), and introduced the concept of [[word sketch]]es.
+
+Since then, Sketch Engine has been commercial software, however, all the core features of Manatee and Bonito that were developed by 2003 (and extended since then) are freely available under the [[GPL]] license within the NoSketch Engine suite.<ref>[http://nlp.fi.muni.cz/trac/noske NoSketch Engine]</ref>
+
+== Features ==
+A list of tools available in Sketch Engine:
+* [[Word sketch]]es – a one-page automatic derived summary of a word's grammatical and collocational behaviour
+* Word sketch difference – compares and contrasts two words by analysing their collocation
+* Distributional [[Thesaurus]] – automated thesaurus finding words with similar meaning or appearing in the same/similar context
+* [[Concordance (publishing)|Concordance]] search – finds examples of a word form, lemma, phrase, tag or complex structure
+* [[Collocation]] search – word co-occurrence analysis displaying the most frequent words (to a search word) which can be regarded as collocation candidates
+* Word lists – generates frequency lists which can be filtered with complex criteria
+* [[n-gram]]s – generates frequency lists of multi-word expressions
+* [[Terminology extraction|Terminology]] / [[Keyword (linguistics)|Keyword]] extraction (both monolingual and bilingual) – automatic extraction key words and multi-word terms from texts (based on frequency count and linguistic criteria)
+* Diachronic analysis ([[Trend analysis|Trends]])<ref>{{cite journal|last1=Kilgarriff|first1=Adam|last2=Herman|first2=Ondřej|last3=Bušta|first3=Jan|last4=Rychlý|first4=Pavel|last5=Jakubíček|first5=Miloš|title=DIACRAN: a framework for diachronic analysis|journal=Corpus Linguistics 2015|date=2015|pages=65–70|url=https://www.sketchengine.co.uk/wp-content/uploads/Diacran_CL2015.pdf}}</ref> – detecting words which undergo changes in the frequency of use in time (show trending words)
+* Corpus building and management – create corpora from the Web or uploaded texts including [[part-of-speech tagging]] and [[lemmatization]] which can be used as [[data mining]] software
+* [[Parallel corpus]] (bilingual) facilities – looking up translation examples (EUR-Lex corpus, [[Europarl corpus]], OPUS corpus, etc.) or building parallel corpus from own aligned texts
+* Text type analysis – statistics of metadata in the corpus
+
+=== Keywords and terminology extraction ===
+It is a tool for automatic term extraction for identifying words typical of a particular corpus, document, or text. It supports extracting one-word and multi-word units from monolingual and bilingual texts. The terminology extraction feature provides a list of relevant terms based on comparison with a large corpus of general language. This tool is also a separate service operating as [https://terms.sketchengine.eu/ OneClick terms] with a dedicated interface.<ref>{{cite journal|last1=Baisa|first1=Vít|title=Simplifying terminology extraction: OneClick Terms|journal=Proceedings of the 9th International Corpus Linguistics Conference|date=2017|url=https://www.birmingham.ac.uk/Documents/college-artslaw/corpus/conference-archives/2017/general/paper385.pdf}}</ref>
+
+== List of text corpora ==
+Sketch Engine provides access to more than 700 text corpora. There are monolingual as well as multilingual language corpora of different sizes (from thousand of words up to 60 billions of words) and various sources (web, books, subtitles, legal documents, etc.). The list of corpora includes [[British National Corpus]], [[Brown Corpus]], [[Cambridge English Corpus|Cambridge Academic English Corpus]] and Cambridge Learner Corpus, [[CHILDES]] corpora of child language, OpenSubtitles (a set of 60 parallel corpora), 24 multilingual corpora of [[EUR-Lex]] documents, [[TenTen Corpus Family]] (multi-billion web corpora), trends corpora (monitor corpora with daily updates), etc.
+
+== Architecture ==
+[[File:Thesaurus in Sketch Engine.png|thumb|upright=1.5|alt=Sketch Engine thesaurus page|Thesaurus cloud of the lemma ''work'' in Sketch Engine]]
+
+Sketch Engine consists of three main components: an underlying [[database management system]] called Manatee, a web interface search front-end called Bonito and a web interface for corpus building and management called Corpus Architect.
+<ref name="bonito">{{cite journal|last1=Rychlý|first1=Pavel|title=Manatee/bonito–a modular corpus manager|journal=1st Workshop on Recent Advances in Slavonic Natural Language Processing|date=2007|pages=65–70|url=http://nlp.fi.muni.cz/raslan/2007/raslan07.pdf#page=73}}</ref>
+
+=== Manatee ===
+
+Manatee is a [[database management system]] specifically devised for effective indexing of large text corpora. It is based on the idea of [[inverted index]]ing (keeping an index of all positions of a given word in the text). It has been used to index text corpora comprising tens of billions of words.<ref>{{cite journal|last1=Pomikálek|first1=Jan|last2=Jakubíček|first2=Miloš|last3=Rychlý|first3=Pavel|title=Building a 70 billion word corpus of English from ClueWeb|journal=Proceedings of the Eight International Conference on Language Resources and Evaluation (LREC'12)|date=2012|url=http://www.lrec-conf.org/proceedings/lrec2012/pdf/1047_Paper.pdf}}</ref>
+
+Searching corpora indexed by Manatee is performed by formulating queries in the Corpus Query Language (CQL).<ref>{{cite web |url=https://www.sketchengine.co.uk/documentation/corpus-querying/ |title=CQL – Corpus Query Language |author=<!--Not stated--> |date= 15 May 2015|website=Sketch Engine |publisher=Lexical Computing s.r.o. |access-date=22 January 2018}}</ref>
+
+Manatee is written in [[C++]] and offers an [[API]] for a number of other programming languages including [[Python (programming language)|Python]], [[Java (programming language)|Java]], [[Perl]] and [[Ruby (programming language)|Ruby]]. Recently, it was rewritten into [[Go (programming language)|Go]] for faster processing of corpus queries.<ref>{{cite journal|last1=Rychlý|first1=Pavel|last2=Rábara|first2=Radoslav|title=Concurrent Processing of Text Corpus Queries|journal=Workshop on Recent Advances in Slavonic Natural Language Processing|date=2015|pages=49–58|url=https://www.sketchengine.co.uk/wp-content/uploads/Concurrent_Processing_2015.pdf}}</ref>
+
+=== Bonito ===
+
+Bonito is a web interface for Manatee providing access to corpus search. In the [[client–server model]], Manatee is the server and Bonito plays the client part. It is written in [[Python (programming language)|Python]].<ref name="bonito" />
+
+=== Corpus Architect ===
+
+Corpus Architect is a web interface providing corpus building and management features. It is also written in [[Python (programming language)|Python]].
+
+== Applications ==
+Sketch Engine has been used by major British or other publishing houses for producing dictionaries such as [[Macmillan English Dictionary for Advanced Learners|Macmillan English Dictionary]], [[Dictionnaires Le&nbsp;Robert]], [[Oxford University Press]] or [[Shogakukan]] and four of the UK's five biggest dictionary publishers use Sketch Engine.<ref>{{cite web |url=http://impact.ref.ac.uk/CaseStudies/CaseStudy.aspx?Id=39760 |title=Using Computational Lexicography for Dictionary Production with the Sketch Engine
+ |author=<!--Staff writer(s); no by-line.--> |date= |website=REF Impact Case Studies
+ |publisher=University of Brighton |access-date=18 April 2015}}</ref>
+
+==See also==
+* [[SkELL]] – a free web service for language learning based on Sketch Engine
+
+==References==
+{{Reflist}}
+
+== Related publications ==
+* {{Cite book|url=http://www.versatile.pub/deske.html|title=Discovering English with Sketch Engine : a corpus-based approach to language exploration. Workbook and glossary|last=Thomas|first=James|date=March 2016|publisher=Versatile|isbn=9788026095798|location=Brno|language=en}}
+
+==External links==
+{{Commons category}}
+* [http://www.sketchengine.eu/ Sketch Engine website]
+* [https://www.sketchengine.eu/corpora-and-languages/ List of corpora available in Sketch Engine]
+* [https://terms.sketchengine.eu/ OneClick terms – an online term extractor with term extraction technology from Sketch Engine]
+{{Corpus linguistics}}
+
+[[Category:Applied linguistics]]
+[[Category:Computational linguistics]]
+[[Category:Corpus linguistics]]
+[[Category:Database management systems]]
+[[Category:Data mining and machine learning software]]
+[[Category:Lexicography]]
+[[Category:Linguistic research]]
+[[Category:Natural language processing]]
+[[Category:Text analysis]]
+[[Category:Text mining]]

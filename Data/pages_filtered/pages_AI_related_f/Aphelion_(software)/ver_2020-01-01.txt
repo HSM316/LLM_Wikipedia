@@ -1,0 +1,133 @@
+The Aphelion Imaging Software Suite is a software suite that includes three base products -  Aphelion Lab, Aphelion Dev, and Aphelion  for addressing image processing and image analysis applications. The suite also includes a set of extension programs to implement specific vertical applications that benefit from imaging techniques.
+
+The Aphelion software products can be used to prototype and deploy applications, or can be integrated, in whole or in part, into a user's system as processing and visualization libraries whose components are available as both DLLs or .Net components.
+
+ History and evolution 
+The development of Aphelion started in 1995 as a joint project of a French company,  S.A., and an American company, Amerinex Applied Imaging, Inc. (AAI) Aphelion's image processing and analysis functions were made from operators available from the KBVision software developed and sold by Amerinex's predecessor, Amerinex Articifial Intelligence Inc. In the 1990s, the XLim software library was developed at the Center of Mathematical Morphology of Mines ParisTech, and both companies carried out its development tasks.
+
+The first version of Aphelion was completed and released in April 1996. Successive versions were released before the first official stable release in December 1996 at the Photonics East conference in Boston and the Solutions Vision show in Paris in January 1997, where at the latter it competed with Stemmer Imaging's  imaging toolbox.
+
+In 1998, version 2.3 of Aphelion for Windows 98 was released, and its user base was growing in both France and the United States. Version 3.0, totally rewritten to take advantage of Microsoft's then-recent ActiveX technology, was officially released in 2000. It also became available as a « Developer » version, for rapid prototyping of applications using its intuitive  and the macro recording capability, and a « Core » version, including the full library as a set of ActiveX components to be used by software developers, integrators and original equipment manufacturers ().
+
+As AAI turned its focus to security, in 2001, ADCIS took the lead on developing Aphelion.  focused on millimeter wave scanners for concealed weapon detection at airports, and eventually merged with Millimetrics to become Millivision.
+
+In 2004,  specified version 4.0 of Aphelion. The set of image processing/analysis functions was rewritten one more time to be compatible with the .NET technology and the emergence of 64 bit architecture s. In addition, the  was redesigned to address two usage types: a semi-automatic use where the user is guided through the different steps of functions, and a fully automatic use where the expert user can quickly invoke imaging functions. Its first release was presented at the  exhibition in Birmingham,  the same year. During the Vision Show in Paris in October 2008, the new Aphelion Lab product was launched for users that are not specialists in image processing. It is easier to use, and only includes fewer image processing functions. It was then included in the Aphelion Image Processing Suite, consisting of Aphelion Dev (replacing Aphelion Developer), Aphelion Lab, Aphelion  (replacing Aphelion Core), and a set of extensions.
+
+Nowadays,  is still working on the suite, and updated versions with new extensions and functionalities continually become available from the websites of both companies. In 2015, support was added for very large images and scan microscope images (virtual slides compound into a very large JPEG 2000 image) for high throughput imaging, and new specific extensions were also added. In late 2015,  announced Aphelion's port for tablets and smartphones, for vertical applications.
+
+The name "Aphelion" comes from the astronomical term of the same name, meaning the point on a planet rotating around the Sun where it lies farthest from it, applying the term in a metaphorical sense. Unix was the operating system used on scientific workstations in the 1990s, such as on the workstations manufactured by market leader Sun Microsystems, which Windows suite Aphelion was quite removed from.
+
+ Description 
+
+Aphelion is a software suite to be used for image processing and image analysis. It supports 2D and 3D, monochrome, color, and multi-band images. It is developed by , a French software house located in Saint-Contest, Calvados, Normandy.
+
+Aphelion is widely used in the scientific/industry community to solve basic and complex imaging applications. First, the imaging application is quickly developed from the Graphical User Interface, involving a set of functions that can be automatically recorded into a macro command. The macro languages available in Aphelion (i.e. BasicScript, Python, and C#) help to process batch of images, and prompt the user if needed for specific parameters that are applied to the imaging functions. All Aphelion image processing functions are written in C++, and the Aphelion user interface is written in C#. C++ functions can be called from the C# language thanks the use of dedicated wrappers.
+
+The main principle of image processing is to automatically process pixels of a digital image, then extract one or more objects of interest (i.e. cells in the field of biology, inclusions in the field of material science) and compute one or more measurements on those objects to quantify the image and generate a verdict (good image, image with defects, cancerous cells). In other words, starting from an image, pixels are processed by a set of successive functions or operators until only measurements are computed and used as the input of a 3rd party system or a classification software that will classify objects of interest that have been extracted during the imaging process.
+
+An acquisition system such as a digital camera, a video camera, an optical or electron microscope, a medical scanner, or a smartphone can be used to capture images. The set of values or pixels can be processed as a 1D image (1D signal), a 2D image (array of pixel values corresponding to a monochrome or color image), or a 3D image displayed using volume rendering (array of voxels in the 3D space) or displaying surfaces by using 3D rendering. A 2D color image is made of 3 value pixels (typically Red, Green, and Blue information or another color space), and a 3D image is made of monochrome, color (indexed color are often used), multispectral, or hyperspectral data. When dealing with videos, an additional band is added corresponding to temporal information.
+
+The Aphelion Software Suite includes three base products, and a set of optional extensions for specific applications:
+ Aphelion Lab: Entry-level package for non-experts in image processing. It helps to quickly segment an image in a semi-automatic or manual ways, and compute a set of measurements computed on objects of interest that have been extracted during the segmentation process. A set of wizards guides the user from image acquisition to report generation.
+ Aphelion Dev: Full imaging environment including over 450 functions to develop and deploy an application that involves image processing and analysis. It also includes a set of macro-command languages to automate any application to be invoked from the user interface. It also helps to run the imaging algorithm on more than one image that are stored on disk, available on the network, or captured by an acquisition device. Aphelion libraries for image processing and visualization are provided in Aphelion Dev as DLLs and .Net components.
+ Aphelion : A set of libraries to develop a stand-alone application with a custom interface based on the Aphelion libraries. This software development kit including display, processing and analysis functions that can be used by software developers and s. It is provided as DLLs and .Net components. The stand-alone application is typically developed in C# on one computer, and then deployed on multiple s and systems.
+
+A set of optional extensions can be added to the « Aphelion Dev » product, depending on the application. An evaluation version of Aphelion can be run on a  for 30 days.  A permanent version of Aphelion is available based on a perpetual license. Upgrades are available through a maintenance agreement based on a yearly fee. Technical support is provided by the engineers who are developing the product.
+
+The goal of image processing is usually to extract object(s) of interest in an image, and then to classify them based on some characteristics such as shape, density, position, etc. Using Aphelion, this goal is achieved by performing the following tasks:
+ Load an image from disk or acquire an image using an acquisition device.
+ Enhance the image removing noise or modifying its contrast.
+ Segment the image extracting objects of interest to be measured and analyzed. Typically, for simple applications, a threshold is performed to generate a binary image. Then, morphological operators are applied to clean the image and only keep objects of interest. Finally, a label value is given to each object based on its connectivity (4 or 8 connectivity when a square grid is used), and the background of the image is given value zero.
+ The set of objects can be manually edited by the user to remove artifacts, and alter their edges. Objects can then be measured in terms of shape, color, densitometry, and then classified using the measurements.
+ What has been developed above for one image can be applied to a batch of images thanks to the use of the macro-commands available in the Aphelion User Interface. It helps to generate more measurements and get a more robust algorithm working on multiple images.
+ Statistical analysis can be performed on the measurements and classifiers can be trained if the number of objects is large enough and if descriptors or measurements are available to classify objects into classes or categories.
+
+ Applications 
+The Aphelion Imaging Software Suite is used by students, researchers, engineers, and software developers in many application domains involving image processing and computer vision, such as:
+ security (surveillance, object tracking)
+ remote sensing
+ quality control for the industry and inspection applications
+ materials science
+ life sciences (medicine and biology)
+ earth science (geology)
+ theory (image processing, machine learning and optimization)
+
+ Security 
+Aphelion  has been used in the field of video surveillance involving multiple cameras. An application has been developed to monitor a subway in a capital city (corridors, platforms, etc.). Another application has been developed to count the number of people entering/exiting a room. Aphelion can also be used to monitor traffic on roads, and analyze trajectories of moving objects. In the fields of robotics and computer vision, the software can be used to detect static and moving objects such as vehicles, and moving targets. Aphelion has been used in portable devices to read car license plates.  also used the Aphelion  to perform 3D reconstructions of 2D shapes and estimate the weight and the volume of the 3D object.
+
+ Remote sensing 
+Aphelion is used to automatically detect roads, buildings, agricultural fields in satellite images. The software can also be used to analyze the surface of the sun. Satellite images are usually multi band images, and contain information that the human eye cannot see. In addition, they are usually digitized on more than 8 bits. In remote sensing applications, hyperspectral images are commonly used (infrared and ultraviolet). They help to extract some specific contrast areas in known wavelengths.
+
+ Quality control and inspection 
+In the field of quality control for industry,  has developed a specific measurement software product to analyze printed circuit board in the field of electronics. Aphelion has also been used to analyze and read documents, as well as detecting defects on printed documents. In the field of cosmetics, Aphelion has been used to analyze the wear and tear of nail polish, and to perform quality control on facial cream. The software can also be used to compare images over time (before and after) and to objectively measure the efficacy of an anti-wrinkle cream. Other quality control applications have been developed by  such as the automatic classification of argentic grains on films.
+In optics field,  was involved in two projects, one to develop an innovative technique to cut lenses for glasses and one to model rigid scleral contact lenses in the 3D space, and then mill them. These contact lenses are worn by patients who have severe injuries in the eye (explosion, piece of glass, etc.). This last project is a joint project between EyePrint Prosthetics and .
+
+ Materials science 
+In the field of metallurgy, Aphelion ActiveXActiveX components of Aphelion Developer are .Net component ancestors of the current Aphelion  software development kit. components have been used to do metallography in conjunction with electron microscopes () and microprobe () to quantify and analyze inclusions in steel. Carbon dispersion in one step of font production has also been analyzed using image processing techniques.
+
+During the process of surface coating, and metallic element diffusion (chrome-alumine), a link has been established between the shape of elements analyzed on  images, and constraints generated by these particles (observed by X-ray diffraction). Based on ASTM standards, a set of specific tools has been implemented in the Aphelion software product to detect and then analyze grain boundaries. Work has been done in field of electron tomography to add image alignment and 3D reconstruction tools plug-in using  images.
+
+Image analysis also helps to study composite polymers strengthen by glass fiber, and to measure the impact of the size of micro threads used to link soft fibers in the perpendicular direction. The size of the threads can modify the matrix distribution used to combine this material. The study of the distribution of metallic elements in composite materials and alloys, such as AlSiC is usually performed by granulometry involving image processing and analysis. Porosity of macromolecular materials as xerogel is sometime studied using 3D and X-ray microtomography.
+
+The Aphelion software product has been used in the field of chemical engineering to study water mixes coming from two different sources in a continuous stirred-tank reactor. First, a correlation has been established between the light intensity from a laser plane  described as grey level values, and concentrations going through that plane. The correlation was then used to quantify concentration evolutions using image processing.
+
+In the field of industrial water treatment and sewage treatment, Aphelion helps to process XRay microtomograph images of sewage sludge. Each section is processed as a 2D image, a binary threshold is then applied to discriminate between air and the humid material, and finally a 3D reconstruction is performed to track the volume evolution of cracks during the drying process. This last process is important to treat sewage sludge to be landfilled, incinerated or applied on agricultural land. The automatic analysis helped to track the crack evolution depending on the origin of different sludges. The image processing involved a histogram equalization followed by an Otsu threshold. Aphelion has also been used in the field of XRay microtomography to perform statistical analysis of foams (number of bubble faces, bubble average size, etc.).
+
+ Life sciences 
+The comprehensive set of Aphelion functions is used to analyze images coming from an optical microscope and a camera mounted on top of the microscope. The software also controls the automated stage mounted on the microscope in the X, Y and Z directions. Z is used to change focus. Measurements based on shape analysis (surface area, perimeter, volume, elongation, compactness, etc.) and texture analysis (e.g., homogeneity, average intensity, moments) are automatically computed by Aphelion and displayed in the user interface in a spreadsheet on which statistical analysis as surface ratios can be performed. Analysis reports can also be generated in the user interface and then saved in specific folders. Microscopes using reflected light can also be used for the analysis. For example, a specific software based on the Aphelion ActiveX components is capable to measure inhibitor agent effects on dentin cells resorption.
+
+In the field of cytopathology,  developed a set of software products such as a specific software to analyze blood composition, count and classify red globules, and another software to automatically classify cancerous cells using a classification based on multiple neural networks. Images are first acquired by a video camera mounted on an automated optical microscope. They are then automatically processed by Aphelion, and cytoplasm and nuclei are segmented using a watershed algorithm. Aphelion has also been used to study tumor vascularization in low resolution images using a slide scanner (much cheaper than a scan microscope). The software that was developed helped the detection of immune-marked cells. Image analysis is also used in histology to study angiogenesis in 2D and 3D on microscopy images to measure effects of inhibitors and accelerants impact on blood vessels growth.
+
+ developed a chromosome classification assistant in the field of cytogenetics to automatically detect telomeres and pair chromosomes. Ploidics, a software product to quantify  ploidy based on optical density has been developed for a customer and released as an off-the-shelf product. Aphelion can also be used to analyze gel electrophoresis.
+
+In the field of dermatology, Aphelion users developed a method to quantify wounded cells.
+
+Aphelion and software products based on Aphelion have been widely used in the field of ophthalmology. The first product that was released was capable of detecting lesions in color fundus images of patients with age-related macular degeneration or to automatically determine a diabetic retinopathy grade. Other software products for ophthalmology pathologies have been developed such as  for measurement of 3D volume of pigment epithelium detachment,  to study confocal images of the cornea in the 2D and 3D spaces,  to quantify conjunctival hyperaemia at the ocular surface, and  to study dry eye syndrome looking at tears present on lid wiper epithelium.
+
+In the field of pharmacology,  used the Aphelion  libraries to develop a specific software product to find new molecules inhibiting mitosis in epifluorescence microscopy images.
+
+A joint development has been developed in radiology application field by  and Robert Van't Hof to study osteoporosis images of the bone and quantify porosities. ADCIS also used tomography method () to perform 3D reconstruction from multiple points of view measuring background absorption (e.g., cone beam computed tomography).
+
+Some Aphelion research users used the software in the field of biology to automatically quantify ox maturation. They developed segmentation techniques applied on vertebra images including color space conversions (CIE L*a*b* and Hue, Saturation, and Intensity) to detect bones and cartilage edges. Image Processing can also be used to count cells. This technique was applied when looking at Petri dishes in microbiology.
+
+In agriculture and botany, the Aphelion Software Product helps to study macroscopic scale properties of leaves. The algorithm includes a segmentation of leaves versus the background, and then compute a set of measurements and perform a statistical analysis and then classification. The ultimate goal of the application was to find a correlation between physiology parameters of fruit trees, and visual observation on leaves.
+
+In the food industry, Aphelion can be used to measure the average grain size, or to compute the surface ratio of pulps in tomatoes.
+
+ Earth science 
+In the field of geology, scientists based their research work on Aphelion to perform a statistical analysis to determine the relationship between the size and shape of rock debris present in moraines, and the value of the maximal slope that will not cause rockfalls. Morphological parameters computed by Aphelion are easier to compute and less expensive to generate than the usual ones.
+Images, coming from macro photographies of metamorphic rocks helped to study the distribution of garnet crystals in the Alps.
+
+In geothermal engineering, Aphelion was used in project for the Soultz-sous-Forêts site in Alsace, France.  It was used to study the distribution of quartz grains in a drill (granulometry). Crack networks have also been studies using thermal, hydraulic, and mechanical techniques.
+
+ Theory 
+Image Processing and Analysis is a scientific discipline as well as statistics, and set theory are. Research people spend time to find new algorithms, new functions (adaptive contrast, new color space definition, etc.), or even newer techniques such as deep learning. There is a very tight connection between image processing and classification (machine learning), which is part of the artificial intelligence field.
+
+Aphelion can be used to develop new image processing operators that are easily inserted into the graphical user interface. Once the operator is available in the , it can be tested, associated parameters can be altered, and it can even be called from a macro-command to be tested in an algorithm or a full batch of images.
+
+New operators are added from time to time depending on customer requests, and new techniques that are developed in research labs. For example, works from Hanbury and Serra on color spaces where the hue is represented as an angle (Hue Saturation Value, Hue Saturation Lightness, Hue Saturation Brightness or Hue Saturation Intensity) are proposing a new color space,  derived from  (Hue, Saturation, Lightness). Gervais Gauthier, from , gave a talk where he showed the benefit of a vectorial representation of objects and chains in image processing.
+
+Subjects of work or research as program optimization, parallel computing with threads, distributed computing (clusters or grids of computers and video cards), GPGPU or new processor instruction sets usage, evolve according to the hardware progresses made regularly. The computer performances ever increase, changing the definition of reachable real-time computations. Aphelion performances are sometime used as reference to compare optimizations.
+
+ Specifications 
+alt=Aphelion Dev graphical user interface version 4.x with details about utility of regions of the interface|400x400px|Aphelion Dev Graphical User Interface version 4.x: (1) Task Bar, (2) Image Display, (3) Macro editing window/Function window, (4) Charts (a profile is displayed in this example), (5) Image Gallery, (6) Measurement grid.
+All products of the Aphelion Imaging Software Suite can be run on  equipped with Windows (Vista, 7, 8, 8.1, or 10) 32 or 64 bits.
+An online help and video tutorials are available to the user.
+
+ Software extensions 
+Below is a list of Aphelion optional extensions:
+ 3D Image Processing and 3D Image Display: A set of extensions to display and process 3D images. The 3D display extension is based on the  software product.
+ 3D Skeletonization: Extension to compute the 3D skeleton.
+ Image Registration: Image registration extension to register images coming from different acquisition devices.
+ Classification Tools: Classification extension including a « Fuzzy Logic » (fuzzy logic classification),« Neural Networks » (classification based on artificial neural networks, and « Random Forest » (classification based on random forests, derived from the R software product)
+ Kriging: Specific extension to remove image noise using geostatistics techniques.
+ Camera interface drivers and microscope interface software
+ Virtual Image Capture and Virtual Image Stitcher: Two software products to capture mult-field images and stitch them into one single and very large image in the fields of optical and electron microscopy (image stitching).
+ Stereology Analyzer: Software to analyze a very large image using stereology. This extension is mainly used in the field of biology on images acquired by a scan microscope.
+ VisionTutor: Online image processing course including all the theory and application macro commands that are compatible with Aphelion.
+
+The Aphelion user can add his/her own macro-commands in the user interface that have been automatically recorded to process a batch of images. He/she can also add plugins and libraries in the  that have been developed outside the Aphelion environment.
+
+ Software versions 
++ Aphelion software release dates Software release Release date Aphelion 1.0  1995 Aphelion 2.0first official version  1996 Aphelion 2.1  1996–1997 Aphelion 2.2  1997 Aphelion 2.3  1998–1999 Aphelion 3.0  1999–2000 Aphelion 3.1  December 2001 Aphelion 3.2a-f  2001–2004 Aphelion 3.2g  March 2004 Aphelion 3.2h  November 2004 Aphelion 3.2i  March 2006 Aphelion 3.2j  October 2008 – 2012 Aphelion 4.0.0  July 2009 Aphelion 4.0.5  December 2009 Aphelion 4.0.6  May 2010 Aphelion 4.0.7  August 2010 Aphelion 4.0.8  October 2010 Aphelion 4.0.9  February 2011 Aphelion 4.0.10  April 2011 Aphelion 4.1.0  October 2011 Aphelion 4.1.1  April 2012 Aphelion 4.1.2  November 2012 Aphelion 4.2.0  February 2013 Aphelion 4.2.1  January 2014 Aphelion 4.3.0  October 2014Aphelion 4.3.1  December 2014 Aphelion 4.3.2  September 2015 Aphelion 4.4.0  October 2017
+alt=GUI of a previous version of Aphelion (version 3.2j) with multiple detached windows per image (Multiple document interface).|left|400x400px|GUI of a previous version of Aphelion (version 3.2j).

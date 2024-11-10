@@ -1,0 +1,26 @@
+{{Main|Ontology components#Classes|l1 = Classes on the ontology component page}}
+
+In [[Knowledge representation and reasoning|knowledge representation]], a '''class''' is a collection of individuals or objects.<ref name="DLs">{{cite conference|title=Description Logics: Foundations for Class-based Knowledge Representation|author1=Diego Calvanese|author2=Giuseppe De Giacomo|author3=Maurizio Lenzerini|conference=[[Logic in Computer Science]]|year=2002|citeseerx=10.1.1.177.2787}}</ref> A class can be defined either by [[Extensional definition|extension]] (specifying members), or by [[Intensional definition|intension]] (specifying conditions), using what is called in some ontology languages like [[Web Ontology Language|OWL]]. According to the [[Type–token distinction]], the ontology is divided into individuals, who are real worlds objects, or events, and types, or classes, who are sets of real world objects. Class expressions or definitions gives the properties that the individuals must fulfill to be members of the class. Individuals that fulfill the property are called [[Instance (computer science)|Instances]].
+
+== Relationships ==
+
+=== Instantiation ===
+
+The instantiation [[relation (mathematics)|relationship]] is a relation between objects and classes. We say that an object O, say ''Harry the eagle'' is an instance of a class, say ''Eagle''. ''Harry the eagle'' has all the properties that we can attribute to an eagle, for example his parents were eagles, he is a bird, he is a meat eater and so on. It is a special kind of [[is a]] relationship. Its noted [[Concept assertion]] (<math> : </math>) in [[Description logic]]s, a family of logic based on classes, class assertion <ref name="owlclass">{{cite web|url=http://www.w3.org/TR/owl2-syntax/#Class_Assertions|title=owl2 syntax}}</ref>
+
+=== Subsumption ===
+Classes can [[is a|subsume]] each other. We say usually that if <code>A</code> and <code>B</code> are classes, and all <code>A</code> instances are also <code>B</code> instances, then B subsumes A, or A is a subclass of B, for example in the OWL Language it is called 'subclassof'.<ref name="owlclass"/>
+
+==References==
+<references/>
+
+== See also ==
+* [[Metaclass (Semantic Web)]]
+* [[Ontology (information science)|Ontology]]
+* [[Ontology components]]
+* [[Description logic]]
+* [[Type-token distinction]]
+
+[[Category:Knowledge representation]]
+
+{{Information-science-stub}}

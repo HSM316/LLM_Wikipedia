@@ -1,0 +1,35 @@
+{{more footnotes|date=April 2016}}
+'''Bayesian structural time series''' ('''BSTS''') model is a [[statistical]] technique used for [[feature selection]], time series forecasting, [[Nowcasting (economics)|nowcasting]], inferring causal impact and other applications. The model is designed to work with [[time series]] data.
+
+The model has also promising application in the field of analytical [[marketing]]. In particular, it can be used in order to assess how much different marketing campaigns have contributed to the change in web search volumes, product sales, brand popularity and other relevant indicators. [[Difference in differences|Difference-in-differences]] models<ref name=":0" /> and [[interrupted time series]] designs<ref>{{cite web |url=https://www.insightsassociation.org/issues-policies/glossary/interrupted-time-series-design |website=Interrupted Time-Series Design |title= Interrupted Time-Series Design|publisher=Insights Association |accessdate=21 March 2019}}</ref> are alternatives to this approach. "In contrast to classical difference-in-differences schemes, state-space models make it possible to (i) infer the temporal evolution of attributable impact, (ii) incorporate empirical priors on the parameters in a fully Bayesian treatment, and (iii) flexibly accommodate multiple sources of variation, including the time-varying influence of contemporaneous covariates, i.e., synthetic controls."<ref name=":0" />
+
+== General model description ==
+The model consists of three main components:
+# '''[[Kalman filter]]'''. The technique for time series decomposition. In this step, a researcher can add different state variables: trend, seasonality, regression, and others.
+# '''[[Spike-and-slab variable selection|Spike-and-slab]] method.''' In this step, the most important regression predictors are selected.
+# '''[[Ensemble learning|Bayesian model averaging]].''' Combining the results and prediction calculation.
+The model could be used to discover the causations with its counterfactual prediction and the observed data.<ref name=":0">{{Cite web|url=http://research.google.com/pubs/pub41854.html|title=Inferring causal impact using Bayesian structural time-series models|website=research.google.com|access-date=2016-04-17}}</ref>
+
+A possible drawback of the model can be its relatively complicated mathematical underpinning and difficult implementation as a computer program. However, the programming language [[R (programming language)|R]] has ready-to-use packages for calculating the BSTS model,<ref>{{Cite web|url=https://cran.r-project.org/web/packages/bsts/bsts.pdf|title=bsts}}</ref><ref>{{Cite web|url=https://google.github.io/CausalImpact/CausalImpact.html|title=CausalImpact|website=google.github.io|access-date=2016-04-17}}</ref> which do not require strong mathematical background from a researcher.
+
+== See also ==
+* [[Bayesian inference using Gibbs sampling]]
+* [[Correlation does not imply causation]]
+* [[Spike-and-slab regression]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+* Scott, S. L., & Varian, H. R. 2014a. [http://people.ischool.berkeley.edu/~hal/Papers/2012/fat.pdf Bayesian variable selection for nowcasting economic time series]. ''Economic Analysis of the Digital Economy.''
+* Scott, S. L., & Varian, H. R. 2014b. [http://people.ischool.berkeley.edu/~hal/Papers/2013/pred-present-with-bsts.pdf Predicting the present with bayesian structural time series]. ''International Journal of Mathematical Modelling and Numerical Optimisation.''
+* Varian, H. R. 2014. [http://people.ischool.berkeley.edu/~hal/Papers/2013/ml.pdf Big Data: New Tricks for Econometrics]. ''Journal of Economic Perspectives''
+* Brodersen, K. H., Gallusser, F., Koehler, J., Remy, N., & Scott, S. L. 2015. [http://research.google.com/pubs/pub41854.html Inferring causal impact using Bayesian structural time-series models]. ''The Annals of Applied Statistics.''
+* R package [https://cran.r-project.org/web/packages/bsts/bsts.pdf "bsts"].
+* R package [https://google.github.io/CausalImpact/CausalImpact.html "CausalImpact"].
+* O’Hara, R. B., & Sillanpää, M. J. 2009. [https://projecteuclid.org/euclid.ba/1340370391 A review of Bayesian variable selection methods: what, how and which]. ''Bayesian analysis.''
+* [[Jennifer A. Hoeting|Hoeting, J. A.]], Madigan, D., Raftery, A. E., & Volinsky, C. T. 1999. [https://projecteuclid.org/euclid.ss/1009212519 Bayesian model averaging: a tutorial]. ''Statistical science.''
+
+[[Category:Machine learning]]
+[[Category:Bayesian statistics]]
+[[Category:Time series]]

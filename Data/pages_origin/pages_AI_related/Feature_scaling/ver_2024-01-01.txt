@@ -1,0 +1,71 @@
+{{Short description|Method used to normalize the range of independent variables}}
+{{Machine learning bar}}
+
+'''Feature scaling''' is a method used to normalize the range of independent variables or features of data. In [[data processing]], it is also known as data normalization and is generally performed during the [[data preprocessing]] step.
+
+==Motivation==
+Since the range of values of raw data varies widely, in some [[machine learning]] algorithms, objective functions will not work properly without [[Normalization (statistics)|normalization]]. For example, many [[Statistical classification|classifiers]] calculate the distance between two points by the [[Euclidean distance]]. If one of the features has a broad range of values, the distance will be governed by this particular feature. Therefore, the range of all features should be normalized so that each feature contributes approximately proportionately to the final distance.
+
+Another reason why feature scaling is applied is that [[gradient descent]] converges much faster with feature scaling than without it.<ref>{{cite arXiv|last=Ioffe|first=Sergey|author2=Christian Szegedy|year=2015|title=Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift|eprint=1502.03167|class=cs.LG}}</ref>
+
+It's also important to apply feature scaling if [[Regularization (mathematics)|regularization]] is used as part of the loss function (so that coefficients are penalized appropriately).
+<!-- {|
+Deleted image removed: [[Image:Before FS.png|thumb|300px|A convergence of the Gradient Descent algorithm before applying feature scaling]]
+Deleted image removed: [[Image:After FS.png|thumb|300px|A convergence of the Gradient Descent algorithm after applying feature scaling]]
+|} -->
+
+==Methods==
+
+===Rescaling (min-max normalization)===
+Also known as min-max scaling or min-max normalization, rescaling is the simplest method and consists in rescaling the range of features to scale the range in [0, 1] or [−1, 1]. Selecting the target range depends on the nature of the data. The general formula for a min-max of [0, 1] is given as:<ref>{{cite web |title=Min Max normalization |url=https://ml-concepts.com/2021/10/08/min-max-normalization/ |website=ml-concepts.com}}</ref>
+
+: <math>x' = \frac{x - \text{min}(x)}{\text{max}(x)-\text{min}(x)}</math>
+
+where <math>x</math> is an original value, <math>x'</math> is the normalized value. For example, suppose that we have the students' weight data, and the students' weights span [160 pounds, 200 pounds]. To rescale this data, we first subtract 160 from each student's weight and divide the result by 40 (the difference between the maximum and minimum weights).
+
+To rescale a range between an arbitrary set of values [a, b], the formula becomes:
+
+: <math>x' = a + \frac{(x - \text{min}(x))(b-a)}{\text{max}(x)-\text{min}(x)}</math>
+
+where <math>a,b</math> are the min-max values.
+
+===Mean normalization===
+
+: <math>x' = \frac{x - \bar{x}}{\text{max}(x)-\text{min}(x)}</math>
+
+where <math>x</math> is an original value, <math>x'</math> is the normalized value, <math>\bar{x}=\text{average}(x)</math> is the mean of that feature vector. There is another form of the means normalization which divides by the standard deviation which is also called standardization.
+
+===Standardization (Z-score Normalization)===
+{{see also|Standard score}}
+In machine learning, we can handle various types of data, e.g. audio signals and pixel values for image data, and this data can include multiple [[dimensions]]. Feature standardization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. This method is widely used for normalization in many machine learning algorithms (e.g., [[support vector machine]]s, [[logistic regression]], and [[artificial neural network]]s).<ref name=":0">{{Cite book|title = Data Science from Scratch|last = Grus|first = Joel|publisher = O'Reilly|year = 2015|isbn = 978-1-491-90142-7|location = Sebastopol, CA|pages = 99, 100}}</ref><ref>{{Cite book |last1=Hastie |first1=Trevor |url=https://books.google.com/books?id=eBSgoAEACAAJ |title=The Elements of Statistical Learning: Data Mining, Inference, and Prediction |last2=Tibshirani |first2=Robert |last3=Friedman |first3=Jerome H. |date=2009 |publisher=Springer |isbn=978-0-387-84884-6 |language=en}}</ref> The general method of calculation is to determine the distribution [[mean]] and [[standard deviation]] for each feature. Next we subtract the mean from each feature. Then we divide the values (mean is already subtracted) of each feature by its standard deviation.
+
+: <math>x' = \frac{x - \bar{x}}{\sigma}</math>
+
+Where <math>x</math> is the original feature vector, <math>\bar{x}=\text{average}(x)</math> is the mean of that feature vector, and <math>\sigma</math> is its standard deviation.
+
+===Scaling to unit length===
+Another option that is widely used in machine-learning is to scale the components of a feature vector such that the complete vector has length one. This usually means dividing each component by the [[Euclidean length]] of the vector: 
+:<math>x' = \frac{x}{\left\|{x}\right\|}</math>
+
+In some applications (e.g., histogram features) it can be more practical to use the L<sub>1</sub> norm (i.e., [[taxicab geometry]]) of the feature vector. This is especially important if in the following learning steps the scalar metric is used as a distance measure.{{why|date=January 2020}}
+Note that this only works for <math>x\neq \mathbf{0}</math>.
+
+== Application ==
+In [[stochastic gradient descent]], feature scaling can sometimes improve the convergence speed of the algorithm.<ref>{{cite web |title=Gradient Descent, the Learning Rate, and the importance of Feature Scaling |date=15 July 2020 |url=https://towardsdatascience.com/gradient-descent-the-learning-rate-and-the-importance-of-feature-scaling-6c0b416596e1}}</ref> In support vector machines,<ref>{{cite journal|last=Juszczak|first=P.|author2=D. M. J. Tax |author3=R. P. W. Dui |year=2002|title=Feature scaling in support vector data descriptions|journal=Proc. 8th Annu. Conf. Adv. School Comput. Imaging|pages=25–30|citeseerx=10.1.1.100.2524}}</ref> it can reduce the time to find support vectors.
+
+==See also==
+* [[Normalization (statistics)]]
+* [[Standard score]]
+* [[fMLLR]], Feature space Maximum Likelihood Linear Regression
+
+==References==
+{{reflist}}
+
+== Further reading ==
+* {{cite book |first1=Jiawei |last1=Han |first2=Micheline |last2=Kamber |first3=Jian |last3=Pei |title=Data Mining: Concepts and Techniques |publisher=Elsevier |year=2011 |chapter=Data Transformation and Data Discretization |pages=111–118 |isbn=9780123814807 |chapter-url=https://books.google.com/books?id=pQws07tdpjoC&pg=PA111 }}
+
+== External links ==
+*[http://openclassroom.stanford.edu/MainFolder/VideoPage.php?course=MachineLearning&video=03.1-LinearRegressionII-FeatureScaling&speed=100/ Lecture by Andrew Ng on feature scaling]
+
+[[Category:Machine learning]]
+[[Category:Statistical data transformation]]

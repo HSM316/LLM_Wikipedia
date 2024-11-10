@@ -1,0 +1,23 @@
+{{notable|date=May 2018}}
+'''Nvidia DGX''' is a line of [[Nvidia]] produced servers and workstations which specialize in using [[GPGPU]] to accelerate [[deep learning]] applications.
+
+== DGX-1 ==
+DGX-1 servers feature 8 [[GPU]]s based on the [[Pascal (microarchitecture)|Pascal]] or [[Volta (microarchitecture)|Volta]] [[daughter card]]s<ref>{{cite web|title=nvidia dgx-1|url=https://images.nvidia.com/content/technologies/deep-learning/pdf/61681-DB2-Launch-Datasheet-Deep-Learning-Letter-WEB.pdf}}</ref> with [[HBM 2]] memory, connected by an [[NVLink]] [[mesh network]].<ref>{{cite web|title=inside pascal|url=https://devblogs.nvidia.com/parallelforall/inside-pascal/|quote=Eight GPU hybrid cube mesh architecture with NVLink}}</ref>
+
+The product line is intended to bridge the gap between GPUs and [[AI accelerator (computer hardware)|AI accelerator]]s in that the device has specific features specializing it for deep learning workloads.<ref>{{cite web|title=deep learning supercomputer|url=https://www.engadget.com/2016/04/05/nvidia-dgx-1-deep-learning-supercomputer/}}</ref> 
+The initial Pascal based DGX-1 delivered 170 [[teraflop]]s of [[FP16|half precision]] processing,<ref>{{cite web|title=DGX-1 deep learning system|url=http://images.nvidia.com/content/technologies/deep-learning/pdf/Datasheet-DGX1.pdf|quote=NVIDIA DGX-1 Delivers 75X Faster Training...Note: Caffe benchmark with AlexNet, training 1.28M images with 90 epochs}}</ref> while the Volta-based upgrade increased this to 960 [[teraflop]]s.<ref>{{cite web|title=DGX Server|url=https://www.nvidia.com/en-us/data-center/dgx-server/|website=DGX Server|publisher=Nvidia|accessdate=7 September 2017}}</ref>
+
+== DGX-2 ==
+The successor of the Nvidia DGX-1 is the [[Nvidia DGX-2]], which uses 16 32GB V100 (second generation) cards in a single unit.  This increases performance of up to 2 Petaflops with 512GB of shared memory for tackling larger problems and uses NVSwitch to speed up internal communication. 
+
+== References ==
+{{reflist}}
+
+{{Nvidia}}
+
+[[Category:AI accelerators]]
+[[Category:GPGPU]]
+[[Category:Nvidia products]]
+[[Category:Parallel computing]]
+
+{{computer-stub}}

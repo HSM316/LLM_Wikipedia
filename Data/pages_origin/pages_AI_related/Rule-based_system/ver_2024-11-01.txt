@@ -1,0 +1,80 @@
+{{Short description|Type of computer system}}
+In [[computer science]], a '''rule-based system''' is a computer system in which domain-specific [[knowledge representation|knowledge]] is represented in the form of rules and general-purpose [[reasoning system|reasoning]] is used to solve problems in the domain. 
+
+Two different kinds of rule-based systems emerged within the field of [[artificial intelligence]] in the 1970s: 
+* [[Production system (computer_science)|Production systems]], which use ''if-then rules'' to derive ''actions'' from ''conditions''. 
+* [[Logic programming]] systems, which use ''conclusion if conditions rules'' to derive ''conclusions'' from ''conditions''. 
+The differences and relationships between these two kinds of rule-based system has been a major source of misunderstanding and confusion.
+
+Both kinds of rule-based systems use either [[forward chaining|forward]] or [[backward  chaining]], in contrast with [[imperative programming language|imperative programs]], which execute commands listed sequentially. However, logic programming systems have a logical interpretation, whereas production systems do not.
+
+==Production system rules==
+
+A classic example of a production rule-based system is the domain-specific [[expert system]] that uses rules to make deductions or choices.<ref name="GrosanAbraham2011">{{cite book|author1=Crina Grosan|author2=Ajith Abraham|title=Intelligent Systems: A Modern Approach|url=https://books.google.com/books?id=c1fzgQj5lhkC&pg=PA149|date=29 July 2011|publisher=Springer Science & Business Media|isbn=978-3-642-21004-4|pages=149–}}</ref>  For example, an expert system might help a doctor choose the correct diagnosis based on a cluster of symptoms, or select tactical moves to play a game.
+
+Rule-based systems can be used to perform [[lexical analysis]] to [[compiler|compile]] or [[interpreter (computing)|interpret]] computer programs, or in [[natural language processing]].<ref name="Chan2014">{{cite book|author=Sin-Wai Chan|title=Routledge Encyclopedia of Translation Technology|url=https://books.google.com/books?id=S0FWBQAAQBAJ&pg=PA454|date=13 November 2014|publisher=Routledge|isbn=978-1-317-60815-8|pages=454–}}</ref>
+
+Rule-based programming attempts to derive execution instructions from a starting set of data and rules. This is a more indirect method than that employed by an [[imperative programming language]], which lists execution steps sequentially.
+
+===Construction===
+
+A typical rule-based system has four basic components:<ref>{{cite web|url=http://www.j-paine.org/students/lectures/lect3/node5.html|title=What is a rule-based system?|work=j-paine.org}}</ref>
+
+* A list of rules or '''rule base''', which is a specific type of [[knowledge base]].
+* An [[inference engine]] or [[semantic reasoner]], which infers information or takes action based on the interaction of input and the rule base. The interpreter executes a [[Production system (computer_science)|production system]] program by performing the following match-resolve-act cycle:<ref>{{cite journal
+| author= Cabitza, F., & Dal Seno, B.
+| title= DJess-A Knowledge-Sharing Middleware to Deploy Distributed Inference Systems. 
+| journal= International Journal of Computer and Information Engineering
+| year=2005
+| volume=2
+| pages=66–69
+| doi= 10.1109/PERSER.2005.1506416| s2cid= 27323155 
+}}</ref>
+:* Match: In this first phase, the condition sides of all productions are matched against the contents of working memory. As a result a set (the ''conflict set'') is obtained, which consists of instantiations of all satisfied productions. An instantiation of a production is an ordered list of working memory elements that satisfies the condition side of the production.
+:* [[Conflict resolution strategy|Conflict-resolution]]: In this second phase, one of the production instantiations in the conflict set is chosen for execution. If no productions are satisfied, the interpreter halts.
+:* Act: In this third phase, the actions of the production selected in the conflict-resolution phase are executed. These actions may change the contents of working memory. At the end of this phase, execution returns to the first phase.
+* Temporary [[working memory]], which is a  database of facts.
+* A [[user interface]] or other connection to the outside world through which input and output signals are received and sent.
+
+Whereas the matching phase of the inference engine has a logical interpretation, the conflict resolution and action phases do not. Instead, "their semantics is usually described as a series of applications of various state-changing operators, which often gets quite involved (depending on the choices made in deciding which ECA rules fire, when, and so forth), and they can hardly be regarded as declarative".<ref>Maier, D., Tekle, K.T., Kifer, M. and Warren, D.S., 2018. Datalog: concepts, history, and outlook. In Declarative Logic Programming: Theory, Systems, and Applications (pp. 3-100).</ref>
+
+==Logic programming rules==
+The logic programming family of computer systems includes the programming language [[Prolog]], the database language [[Datalog]] and the knowledge representation and problem-solving language [[answer set programming|Answer Set Programming]] (ASP). In all of these languages, rules are written in the form of ''[[Clause (logic)|clauses]]'':
+
+:<code>A :- B<sub>1</sub>, ..., B<sub>n</sub>.</code>
+
+and are read as declarative sentences in logical form:
+
+:<code>A if B<sub>1</sub> and ... and B<sub>n</sub>.</code>
+
+In the simplest case of [[Horn clause]]s (or "definite" clauses), which are a subset of [[first-order logic]], all of the A, B<sub>1</sub>, ..., B<sub>n</sub> are [[atomic formula]]e.
+
+Although Horn clause logic programs are [[Turing completeness | Turing complete]],<ref>{{cite journal |last=Tärnlund |first=S.Å. |date=1977 |title=Horn clause computability |journal=[[BIT Numerical Mathematics]] |volume=17 |issue=2 |pages=215–226 |doi=10.1007/BF01932293|s2cid=32577496 }}</ref><ref>{{cite journal |last1=Andréka |first1=H. |last2=Németi |first2=I. |date=1978 |title=The generalised completeness of Horn predicate-logic as a programming language |url=https://cyber.bibl.u-szeged.hu/index.php/actcybern/article/view/3160 |journal=Acta Cybernetica |volume=4 |issue=1 |pages=3–10}}</ref> for many practical applications, it is useful to extend Horn clause programs by allowing negative conditions, implemented by [[negation as failure]]. Such extended logic programs have the knowledge representation capabilities of a [[non-monotonic logic]].
+
+== Differences and relationships between production rules and logic programming rules ==
+
+The most obvious difference between the two kinds of systems is that production rules are typically written in the forward direction, ''if A then B'',  and logic programming rules are typically written in the backward direction, ''B if A''. In the case of logic programming rules, this difference is superficial and purely syntactic. It does not affect the semantics of the rules. Nor does it affect whether the rules are used to reason backwards, Prolog style, to reduce the goal ''B'' to the subgoals ''A'', or whether they are used, Datalog style, to derive ''B'' from ''A''.
+
+In the case of production rules, the forward direction of the syntax reflects the stimulus-response character of most production rules, with the stimulus ''A'' coming before the response ''B''. Moreover, even in cases when the response is simply to draw a conclusion ''B'' from an assumption ''A'', as in [[modus ponens]], the match-resolve-act cycle is restricted to reasoning forwards from ''A'' to ''B''. Reasoning backwards in a production system would require the use of an entirely different kind of inference engine.
+
+In his Introduction to Cognitive Science,<ref>{{Cite book|title=Mind: Introduction to Cognitive Science|last=Thagard|first=Paul|publisher=The MIT Press|year=2005|isbn=9780262701099|pages=11}}https://www.google.co.uk/books/edition/Mind_second_edition/gjcR1U2HT7kC?hl=en&gbpv=1&pg=PP11&printsec=frontcover</ref> [[Paul Thagard]] includes logic and rules as alternative approaches to modelling human thinking. He does not consider logic programs in general, but he considers Prolog to be, not a rule-based system, but "a programming language that uses logic representations and deductive techniques" (page 40).
+
+He argues that rules, which have the form ''IF condition THEN action'', are "very similar" to logical conditionals, but they are simpler and have greater psychological plausability (page 51). Among other differences between logic and rules, he argues that logic uses deduction, but rules use search (page 45) and can be used to reason either forward or backward (page 47). Sentences in logic "have to be interpreted as ''universally true''", but rules can be ''defaults'', which admit exceptions (page 44). He does not observe that all of these features of rules apply to logic programming systems.
+
+==See also==
+* [[Logic programming]]
+* [[Expert systems]]
+* [[Rewriting]]
+* [[RuleML]]
+* [[List of rule-based languages]]
+* [[Learning classifier system]]
+* [[Rule-based machine learning]]
+* [[Rule-based modeling]]
+
+== References ==
+{{Reflist}}
+
+{{Types of programming languages}}
+{{Semantic Web}}
+
+[[Category:Rule engines]]

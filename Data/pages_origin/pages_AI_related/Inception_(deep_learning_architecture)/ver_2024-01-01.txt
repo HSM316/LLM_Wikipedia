@@ -1,0 +1,16 @@
+{{short description| Convolutional Neural Network }}
+'''Inception v3'''<ref name=szegedy>{{Cite journal|last=Szegedy|first=Christian|date=2015|title=Going deeper with convolutions|url=https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43022.pdf|journal=CVPR2015}}</ref><ref>{{cite book |last1=Tang |title=Intelligent Mobile Projects with TensorFlow |date=May 2018 |publisher=Packt Publishing |isbn=9781788834544 |pages=Chapter 2 |url=https://www.oreilly.com/library/view/intelligent-mobile-projects/9781788834544/}}</ref> is a [[convolutional neural network]] for assisting in [[image analysis]] and [[object detection]], and got its start as a module for GoogLeNet. It is the third edition of Google's Inception Convolutional Neural Network, originally introduced during the ImageNet Recognition Challenge. The design of Inceptionv3 was intended to allow deeper networks while also keeping the number of parameters from growing too large: it has "under 25 million parameters", compared against 60 million for [[AlexNet]].<ref name=szegedy />
+
+Just as [[ImageNet]] can be thought of as a database of classified visual objects, Inception helps classification of objects<ref>{{cite book |last1=Karim and Zaccone |title=Deep Learning with TensorFlow |date=March 2018 |publisher=Packt Publishing |isbn=9781788831109 |pages=Chapter 4 |url=https://www.oreilly.com/library/view/deep-learning-with/9781788831109/}}</ref> in the world of [[computer vision]]. The Inceptionv3 architecture has been reused in many different applications, often used "pre-trained" from ImageNet. One such use is in [[life sciences]], where it aids in the research of [[leukemia]].<ref>{{cite web |last1=Milton-Barker |first1=Adam |title=Inception V3 Deep Convolutional Architecture For Classifying Acute Myeloid/Lymphoblastic Leukemia |url=https://software.intel.com/en-us/articles/inception-v3-deep-convolutional-architecture-for-classifying-acute-myeloidlymphoblastic |website=intel.com |publisher=Intel |access-date=2 February 2019}}</ref>
+
+The original name (Inception) was codenamed this way after a popular "we need to go deeper" internet meme went viral, quoting a phrase from the ''[[Inception]]'' film of [[Christopher Nolan]].<ref name=szegedy/>
+
+==References==
+{{Reflist}}
+
+
+{{Comp-sci-stub}}
+
+
+
+[[Category:Neural networks]]

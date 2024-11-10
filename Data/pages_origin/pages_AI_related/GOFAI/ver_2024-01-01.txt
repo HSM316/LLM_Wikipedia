@@ -1,0 +1,137 @@
+{{short description|Symbolic AI and its influence on philosophy and psychology}}
+
+In the [[philosophy of artificial intelligence]], '''GOFAI''' ("Good old fashioned artificial intelligence") is classical [[symbolic AI]], as opposed to other approaches, such as [[artificial neural networks|neural networks]], [[situated robotics]], [[narrow AI|narrow]] symbolic AI or [[neuro-symbolic AI]].{{sfn|Boden|2014}}{{sfn|Segerberg|Meyer|Kracht|2020}}
+The term was coined by philosopher [[John Haugeland]] in his 1985 book ''Artificial Intelligence: The Very Idea''.{{sfn|Haugeland|1985|p=113}}
+
+Haugeland coined the term to address two questions:
+* Can GOFAI produce human level artificial intelligence in a machine? 
+* Is GOFAI the primary method that brains use to display intelligence? 
+AI founder [[Herbert A. Simon]] speculated in 1963 that the answers to both these questions was "yes". His evidence was the performance of programs he had co-written, such as [[Logic Theorist]] and the [[General Problem Solver]], and his [[psychological research]] on human problem solving.{{sfn|Newell|Simon|1963}} 
+
+AI research in the 1950s and 60s had an enormous influence on intellectual history: it inspired the [[cognitive revolution]], led to the founding of the academic field of [[cognitive science]], and was the essential example in the philosophical theories of [[computationalism]], [[functionalism (philosophy)|functionalism]] and [[cognitivism (ethics)|cognitivism in ethics]] and the psychological theories of [[cognitivism (psychology)|cognitivism]] and [[cognitive psychology]]. The specific aspect of AI research that led to this revolution was what Haugeland called "GOFAI". 
+
+== Western rationalism ==
+{{citation needed section|date=October 2023}}
+<!-- Haugeland devotes 100 pages to this idea. Later this year, I will summarize it accurately here, with Haugeland as a source. For now, without sources, here is the general idea.--> 
+Haugeland places GOFAI within the [[rationalism|rationalist]] tradition in western philosophy, which holds that abstract [[reason]] is the "highest" faculty, that it is what separates man from the animals, and that it is the most essential part of our intelligence. This assumption is present in [[Plato]] and [[Aristotle]], in [[William Shakespeare|Shakespeare]], [[Thomas Hobbes|Hobbes]], [[David Hume|Hume]] and [[John Locke|Locke]], it was central to the [[Age of Enlightenment|Enlightenment]], to the [[logical positivist]]s of the 1930s and to the [[computationalism|computationalists]] and [[cognitivism (psychology)|cognitivists]] of the 1960s. As Shakespeare wrote:
+{{quote|What a piece of work is a man, How noble in reason, how infinite in faculty ... In apprehension how like a god, The beauty of the  world, The paragon of animals.<ref>Shakespeare, William. ''The Globe illustrated Shakespeare.  The complete works, annotated, Deluxe Edition'', (1986). ''Hamlet'', Act II, scene 2, page 1879. Greenwich House, Inc. a division of Arlington House, Inc. distributed by Crown Publishers, Inc., 225 Park Avenue South, New York, NY 10003, USA.</ref>}}
+
+[[Symbolic AI]] in the 1960s was able to successfully simulate the process of high-level reasoning, including [[deductive reasoning|logical deduction]], [[algebra]], [[geometry]], [[spatial reasoning]] and [[means-ends analysis]], all of them in precise English sentences, just like the ones humans used when they reasoned. Many observers, including philosophers, psychologists and the AI researchers themselves became convinced that they had captured the essential features of intelligence. This was not just hubris or speculation -- this was entailed by [[rationalism]]. If it was not true, then it brings into question a large part of the entire Western philosophical tradition. 
+
+[[Continental philosophy]], which included [[Friedrich Nietzsche|Nietzsche]], [[Edmund Husserl|Husserl]], [[Martin Heidegger|Heidegger]] and others, rejected [[rationalism]] and argued that our high-level reasoning was limited, prone to error, and that most of our abilities come from our intuitions, our culture, and from our instinctive feel for the situation. Philosophers who were familiar with this tradition were the first to criticize GOFAI and the assertion that it was sufficient for intelligence, such as [[Hubert Dreyfus]] and Haugeland.
+
+== Haugeland's GOFAI ==
+{{See also|Physical symbol system|Dreyfus' critique of AI}}
+
+Critics and supporters of Haugeland's position, from philosophy, psychology or AI research, have found it difficult to define "GOFAI" precisely, and thus the literature contains a variety of interpretations. [[Drew McDermott]], for example, finds Haugeland's description of GOFAI "incoherent" and argues that GOFAI is a "myth".<ref>
+{{citation 
+| title = GOFAI Considered Harmful (And Mythical)
+| author = Drew McDermott | author-link = Drew McDermott
+| year = 2015
+| s2cid = 57866856 }}
+</ref> 
+
+Haugeland coined the term GOFAI in order to examine the philosophical implications of “the claims essential to all GOFAI theories”,{{sfn|Haugeland|1985|p=113}} which he listed as:
+{{quote | 
+1. our ability to deal with things intelligently is due to our capacity to think about them reasonably (including sub-conscious thinking); and 
+2. our capacity to think about things reasonably amounts to a faculty for internal “automatic” symbol manipulation | {{harvtxt|Haugeland|1985|p=113}} }}
+
+This is very similar to the [[necessary and sufficient|sufficient]] side of the [[physical symbol systems hypothesis]] proposed by [[Herbert A. Simon]] and [[Allen Newell]] in 1963:
+{{quote|"A physical symbol system has the [[sufficient|necessary and sufficient means]] for general intelligent action."|{{harvtxt|Newell|Simon|1976|p=116}}}}
+It is also similar to [[Hubert Dreyfus]]' "[[Dreyfus' critique of AI#Dreyfus' four assumptions of artificial intelligence research|psychological assumption]]": 
+{{quote|"The mind can be viewed as a device operating on bits of information according to formal rules.
+"|{{harvtxt|Dreyfus|1979|p=157}}}}
+
+Haugeland's description of GOFAI refers to symbol manipulation governed by a set of instructions for manipulating the symbols. The "symbols" he refers to are discrete physical things that are assigned a definite semantics -- like <nowiki><cat></nowiki> and <nowiki><mat></nowiki>. They do not refer to signals, or unidentified numbers, or matrixes of unidentified numbers, or the zeros and ones of digital machinery.{{sfn|Touretzky|Pomerleau|1994}}{{sfn|Nilsson|2007|p=10}} Thus, Haugeland's GOFAI does not include "good old fashioned" techniques such as [[cybernetic]]s, [[perceptrons]], [[dynamic programming]] or [[control theory]] or modern techniques such as [[artificial neural network|neural networks]] or [[support vector machines]].
+
+These questions ask if GOFAI is ''sufficient'' for [[artificial general intelligence|general intelligence]] -- they ask if there is ''nothing'' else required to create fully intelligent machines. Thus GOFAI, for Haugeland, does not include systems that combine symbolic AI with other techniques, such as [[neuro-symbolic AI]], and also does not include [[narrow AI|narrow]] [[symbolic AI]] systems that are designed only to solve a specific problem and are not expected to exhibit [[artificial general intelligence|general intelligence]].
+
+== Replies ==
+{{expand section|date=July 2023}}
+
+=== Replies from AI Scientists ===
+
+[[Stuart J. Russell|Russell]] and [[Peter Norvig|Norvig]] wrote, in reference to [[Hubert Dreyfus|Dreyfus]] and [[John Haugeland|Haugeland]]:<blockquote>The technology they criticized came to be called Good Old-Fashioned AI (GOFAI). GOFAI corresponds to the simplest logical agent design ... and we saw ... that it is indeed difficult to capture every contingency of appropriate behavior in a set of necessary and sufficient logical rules; we called that the [[qualification problem]].{{sfn|Russell |Norvig|2021|p=982}}</blockquote>
+
+Later symbolic AI work after the 1980's incorporated more robust approaches to open-ended domains such as  [[probabilistic reasoning]], [[non-monotonic reasoning]], and [[machine learning]].
+
+Currently, most AI researchers believe [[deep learning]], and more likely, a synthesis of neural and symbolic approaches ([[neuro-symbolic AI]]), will be required for general intelligence.
+
+==Citations==
+{{reflist}}
+
+== References ==
+* {{citation 
+| last=Haugeland | first=John | author-link = John Haugeland 
+| year = 1985 
+| title = Artificial Intelligence: The Very Idea 
+| publisher=MIT Press| location= Cambridge, Mass 
+| isbn=0-262-08153-9 }}
+* {{citation
+| title = The Cambridge Handbook of Artificial Intelligence
+| contribution = GOFAI
+| year = 2014
+| first = Margaret | last = Boden | author-link = Margaret Boden
+| editor1 = Keith Frankish
+| editor2 = William M. Ramsay
+| publisher = Cambridge University Press
+| isbn = 9781139046855
+| pages = 89–107
+| quote = Good Old-Fashioned AI – GOFAI, for short – is a label used to denote classical, symbolic, AI. The term “AI” is sometimes used to mean only GOFAI, but that is a mistake. AI also includes other approaches, such as connectionism (of which there are several varieties: see Chapter 5), evolutionary programming, and situated and evolutionary robotics.
+}}
+* {{citation 
+| last1 = Segerberg | first1 = Krister 
+| last2 = Meyer | first2 = John-Jules
+| first3 = Marcus | last3 = Kracht
+| contribution = The Logic of Action
+| title = The Stanford Encyclopedia of Philosophy 
+| date = Summer 2020
+| editor-first = Edward N. | editor-last = Zalta
+| url = https://plato.stanford.edu/archives/sum2020/entries/logic-action/
+| quote = [T]here is a tradition within AI to try and construct these systems based on symbolic representations of all relevant factors involved. This tradition is called symbolic AI or ‘good old-fashioned’ AI (GOFAI).}}
+* {{Citation 
+| last1 = Newell | first1 = Allen | author1-link = Allen Newell
+| last2 = Simon  | first2 = H. A. | author2-link = Herbert A. Simon
+| year = 1963 
+| contribution=GPS: A Program that Simulates Human Thought
+| title=Computers and Thought 
+| editor1-last= Feigenbaum | editor1-first= E.A. | editor1-link = Edward Feigenbaum
+| editor2-last= Feldman    | editor2-first= J. 
+| publisher= McGraw-Hill  |location= New York 
+}}
+* {{citation 
+| title = Reconstructing Physical Symbol Systems
+| first1 = David S. | last1 = Touretzky | author1-link = David Touretzky
+| first2 = Dean A.  | last2 = Pomerleau
+| year = 1994
+| journal = Cognitive Science
+| volume = 18 | issue = 2
+| pages = 345&ndash;353
+| doi = 10.1207/s15516709cog1802_5 | url = https://www.cs.cmu.edu/~dst/pubs/simon-reply-www.ps.gz
+}}
+* {{Citation 
+| work = 50 Years of AI, Festschrift, LNAI 4850 
+| last = Nilsson | first = Nils | author-link = Nils Nilsson (researcher) 
+| title = The Physical Symbol System Hypothesis: Status and Prospects 
+| year = 2007 
+| editor-last = Lungarella | editor-first = M. 
+| pages = 9–17 
+| publisher = Springer 
+| url = https://ai.stanford.edu/%7Enilsson/OnlinePubs-Nils/PublishedPapers/pssh.pdf
+}}
+* {{Cite book
+| first1 = Stuart J. | last1 = Russell | author1-link = Stuart J. Russell
+| first2 = Peter.    | last2 = Norvig  | author2-link = Peter Norvig
+| title=[[Artificial Intelligence: A Modern Approach]]
+| year = 2021
+| edition = 4th 
+| isbn = 9780134610993 
+| lccn = 20190474
+| publisher = Pearson | location = Hoboken}}
+* {{Citation |last=Dreyfus |first=Hubert |title=What Computers ''Still'' Can't Do |year=1979 |publisher=MIT Press |location=New York |authorlink=Hubert Dreyfus}}.
+* {{Citation |doi=10.1145/360018.360022 |last1=Newell |first1=Allen |last2=Simon |first2=H. A. |year=1976 |title=Computer Science as Empirical Inquiry: Symbols and Search |volume=19 |pages=113–126 |journal=Communications of the ACM |author-link=Allen Newell |authorlink2=Herbert A. Simon |issue=3 |doi-access=free}}
+
+[[zh-yue:GOFAI]]
+[[Category:Terms in science and technology]]
+[[Category:Philosophy of artificial intelligence]]
+[[Category:Concepts in the philosophy of mind]]

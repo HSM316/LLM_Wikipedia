@@ -1,0 +1,34 @@
+'''Knowledge compilation''' is a family of approaches for addressing the intractability of
+a number of [[artificial intelligence]] problems.
+
+A propositional model is compiled in an off-line phase in order to support some queries in [[polynomial time]]. Many ways of compiling a propositional models exist.<ref name="darwiche">Adnan Darwiche, Pierre Marquis, "[https://doi.org/10.1613/jair.989 A Knowledge Compilation Map]", Journal of Artificial Intelligence Research 17 (2002) 229-264</ref>
+
+Different compiled representations have different properties.
+The three main properties are:
+* The compactness of the representation
+* The queries that are supported in polynomial time
+* The transformations of the representations that can be performed in polynomial time
+
+== Classes of representations ==
+
+Some examples of [[Binary decision diagram|diagram classes]] include [[OBDD]]s, [[FBDD]]s, and non-deterministic OBDDs, as well as [[Multi-valued Decision Diagram|MDD]].
+
+Some examples of [[Boolean formula|formula]] classes include [[Disjunctive normal form|DNF]] and [[Conjunctive normal form|CNF]].
+
+Examples of circuit classes include [[Negation normal form|NNF]], DNNF, d-DNNF, and [[Sentential decision diagram|SDD]].
+
+== Knowledge compilers ==
+
+* c2d: supports compilation to d-DNNF
+* d4: supports compilation to d-DNNF
+* miniC2D: supports compilation to SDD
+* KCBox: supports compilation to OBDD, OBDD[AND], and CCDD
+
+== References ==
+<references/>
+
+{{DEFAULTSORT:Knowledge Compilation}}
+[[Category:Artificial intelligence]]
+
+
+{{Compu-AI-stub}}

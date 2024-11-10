@@ -1,0 +1,47 @@
+In [[computer vision]], the '''Birchfield–Tomasi dissimilarity''' is a [[pixel]]wise image dissimilarity measure that is robust with respect to [[sampling (signal processing)|sampling]] effects. In the comparison of two image elements, it fits the intensity of one pixel to the linearly interpolated intensity around a corresponding pixel on the other image.<ref name="original-paper">Birchfield and Tomasi (1998)</ref> It is used as a dissimilarity measure in stereo matching, where one-dimensional search for correspondences is performed to recover a dense [[binocular disparity|disparity]] map from a [[stereo vision|stereo image pair]].<ref name="evaluation">Hirschmüller and Scharstein (2007)</ref><ref>Szeliski and Scharstein (2004)</ref><ref>Morales et al. (2013)</ref>
+
+== Description ==
+
+When performing pixelwise [[correspondence problem|image matching]], the measure of dissimilarity between pairs of pixels from different images is affected by differences in image acquisition such as [[illumination (image)|illumination]] [[bias (statistics)|bias]] and [[noise (signal processing)|noise]]. Even when assuming no difference in these aspects between an image pair, additional inconsistencies are introduced by the pixel sampling process, because each pixel is a sample obtained integrating the continuous light signal over a finite region of space, and two pixels matching the same feature of the image content may correspond to slightly different regions of the real object that can reflect light differently and can be subject to partial occlusion, depth discontinuity, or different lens defocus, thus generating different intensity signals.<ref name="original-paper" />
+
+The Birchfield–Tomasi measure compensates for the sampling effect by considering the [[linear interpolation]] of the samples. Pixel similarity is then determined by finding the best match between the intensity of a pixel sample in one image and the interpolated function in an interval around a location in the other image.<ref name="original-paper" />
+
+Considering the stereo matching problem for a [[image rectification|rectified]] stereo pair, where the search for correspondences is performed in one dimension, given two columns <math>x_l</math> and <math>x_r</math> along the same scanline for the left and right image respectively, it is possible to define two symmetric functions
+:<math>
+\begin{align}
+d_l(x_l, x_r) &= \min_{x_r - \frac{1}{2} \le x \le x_r + \frac{1}{2}} \left| I_l(x_l) - \hat{I}_r(x) \right| \\
+d_r(x_l, x_r) &= \min_{x_l - \frac{1}{2} \le x \le x_l + \frac{1}{2}} \left| \hat{I}_l(x) - I_r(x_r) \right|
+\end{align}
+</math>
+where <math>\hat{I}_l</math> and <math>\hat{I}_r</math> are the linear interpolation functions of the left and right image intensity <math>I_l</math> and <math>I_l</math> along the scanline. The Birchfield–Tomasi dissimilarity can then be defined as<ref name="original-paper" />
+:<math>
+d(x_l, x_r) = \min \left\{ d_l(x_l, x_r), d_r(x_l, x_r) \right\}.
+</math>
+
+In practice the measure can be computed with only a small and constant overhead with respect to the calculation of the simple intensity difference, because it is not necessary to reconstruct the interpolant function. Given that the interpolant is linear within each unit interval centred around a pixel, its minimum is located in one of its extremities. Therefore, <math>d_l(x_l, x_r)</math> can be written as
+:<math>
+d_l(x_l, x_r) = \max \left\{ 0, I_l(x_l) - I_{max}, I_{min} - I_l(x_l) \right\}
+</math>
+where
+:<math>
+\begin{align}
+I_{max} &= \max \left\{ I_r(x_r), I^{+}_{r}(x_r), I^{-}_{r}(x_r) \right\} \\
+I_{min} &= \min \left\{ I_r(x_r), I^{+}_{r}(x_r), I^{-}_{r}(x_r) \right\}
+\end{align}
+</math>
+denoting with <math>I^{+}_{r}(x_r)</math> and <math>I^{-}_{r}(x_r)</math> the values of the interpolated intensities at the rightmost and leftmost extremities of a one-pixel interval centred around <math>x_r</math>
+:<math>
+\begin{align}
+I^{+}_{r}(x_r) &= \frac{1}{2} \left( I_r(x_r) + I_r(x_r + 1) \right) \\
+I^{-}_{r}(x_r) &= \frac{1}{2} \left( I_r(x_r - 1) + I_r(x_r) \right) .
+\end{align}
+</math>
+The other function <math>d_r(x_l, x_r)</math> can be similarly rewritten, completing the expression for <math>d</math>.<ref name="original-paper" />
+
+== References ==
+<references />
+* {{cite journal|title=A pixel dissimilarity measure that is insensitive to image sampling|year=1998|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=20|pages=401–406|issue=4|publisher=IEEE|last1=Birchfield|first1=Stan|last2=Tomasi|first2=Carlo}}
+* {{cite conference|title=Evaluation of cost functions for stereo matching|booktitle=2007 IEEE Conference on Computer Vision and Pattern Recognition|year=2007|last1=Hirschmüller|first1=Heiko|last2=Scharstein|first2=Daniel}}
+* {{cite conference|last1=Morales|first1=Nestor|last2=Camellini|first2=Gabriele|last3=Felisa|first3=Mirko|last4=Grisleri|first4=Paolo|last5=Zani|first5=Paolo|title=Performance analysis of stereo reconstruction algorithms|conference=16th International IEEE Conference on Intelligent Transportation Systems|year=2013|pages=1298–1303}}
+* {{cite journal|last1=Szeliski|first1=Richard|last2=Scharstein|first2=Daniel|title=Sampling the disparity space image|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=26|issue=3|year=2004|pages=419–425}}
+[[Category:Computer vision]]

@@ -1,0 +1,22 @@
+{{orphan|date=July 2017}}
+{{Unr|date=January 2020}}
+'''Computational human modeling''' is an interdisciplinary [[computational science]] that links the diverse fields of [[artificial intelligence]], [[cognitive science]], and [[computer vision]] with [[machine learning]], [[mathematics]], and [[cognitive psychology]].
+
+Computational human modeling emphasizes descriptions of human for A.I. research and applications.
+
+==Major topics==
+Research in computational human modeling can include computer vision studies on identify ([[face recognition]]), attributes (gender, age, skin color), expressions, geometry (3D face modeling, 3D body modeling), and activity (pose, gaze, actions, and social interactions).
+
+==See also==
+* [[Activity recognition]]
+* [[Computational theory of mind]]
+* [[Emotion recognition]]
+* [[Facial recognition system]]
+* [[Three-dimensional face recognition]]
+
+{{DEFAULTSORT:Computational Human Modeling}}
+[[Category:Computer science]]
+[[Category:Artificial intelligence]]
+[[Category:Humanoids]]
+[[Category:Humanoid robots]]
+[[Category:Cognitive science]]

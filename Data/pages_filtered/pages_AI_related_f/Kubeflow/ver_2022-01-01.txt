@@ -1,0 +1,20 @@
+Kubeflow is a free and open-source machine learning platform designed to enable using machine learning pipelines to orchestrate complicated workflows running on Kubernetes (e.g. doing data processing then using TensorFlow or PyTorch to train a model, and deploying to TensorFlow Serving or Seldon). Kubeflow was based on Google's internal method to deploy TensorFlow models called TensorFlow Extended.
+
+ Kubeflow Overview 
+Kubeflow is a free and open-sourced project designed to make running Machine Learning workflows on Kubernetes clusters simpler and more coordinated. This is a Cloud-Native framework for employing Machine Learning in containerized environments in Kubernetes. Kubeflow's integration with and extension of Kubernetes has become seamless and Kubeflow has been designed to run everywhere Kubernetes runs: on-prem, GCP, AWS, Azure, etc.
+
+Kubeflow began as an internal Google project as a simpler & easier way to run TensorFlow jobs on Kubernetes, based specifically on the TensorFlow Extended pipeline. Google open-source engineers David Aronchick, Jeremy Lewi and Vishnu Kannan co-founded the Kubeflow project and after its initial release at Kubecon  companies such as Google, Arrikto, Cisco, IBM, Red Hat, CoreOS and CaiCloud began publicly contributing to the GitHub issue board.
+
+ What is Kubeflow? 
+At its core, Kubeflow offers an end-to-end ML stack orchestration toolkit to build on Kubernetes as a way to deploy, scale and manage complex systems. Features such as running JupyterHub servers allowing multiple users to contribute to a project simultaneously has become an invaluable asset of Kubeflow. Detailed management of a project and in depth monitoring/analyzing of said project are paramount attributes in Kubeflow.
+
+Data scientists and engineers are now able to develop a complete pipeline composed of segmented steps. These segmented steps in Kubeflow are loosely coupled components of an ML pipeline, a feature not core to other frameworks, allowing pipelines to become easily reusable and modifiable for other jobs. This added flexibility has the potential to save an incalculable amount of labor necessary to develop a new data pipeline for each specific use case. Through this process, Kubeflow aims to simplify Kubernetes deployments while also accounting for future needs of portability and scalability.
+
+ Release History 
+Kubeflow 1.0 was announced  on February 26, 2020 via a blog post, The 1.0 release is available through the public GitHub repository.  Specifically, Kubeflow 1.0 focused on stabilizing the following core Kubeflow components: Kubeflow's UI - the central dashboard, Jupyter notebook controller and web app, Tensorflow Operator (TFJob) and PyTorch Operator for distributed training, kfctl for deployment and upgrades, Profile Controller and UI for multiuser management.
+
+Kubeflow 1.1 was released on June 30, 2020, and is available through the public GitHub repository. The focus for the release was simplification of notebook automation with Fairing and Kale, MXNet and XGBoost distributed training operators, and multi-user pipelines.
+
+Kubeflow 1.2 was released on November 18, 2020, and is available through the public GitHub repository.
+
+Kubeflow 1.3 was released on April 23, 2021, and is available through the public GitHub repository.

@@ -1,0 +1,92 @@
+{{Short description|Machine learning algorithm}}
+'''Coupled Pattern Learner''' (CPL) is a [[machine learning]] algorithm which couples the [[semi-supervised learning]] of categories and relations to forestall the problem of semantic drift associated with boot-strap learning methods.
+
+== Coupled Pattern Learner ==
+[[Semi-supervised learning]] approaches using a small number of labeled examples with many unlabeled examples are usually unreliable as they produce an internally consistent, but incorrect set of extractions. CPL solves this problem by simultaneously learning classifiers for many different categories and relations in the presence of an [[Ontology (information science)|ontology]] defining constraints that couple the training of these classifiers. It was introduced by Andrew Carlson, Justin Betteridge, Estevam R. Hruschka Jr. and Tom M. Mitchell in 2009.<ref name=cbl2009>{{cite journal|last=Carlson|first=Andrew|author2=Justin Betteridge |author3=Estevam R. Hruschka Jr. |author4= Tom M. Mitchell |year=2009|title=Coupling semi-supervised learning of categories and relations|journal=Proceedings of the NAACL HLT 2009 Workshop on Semi-Supervised Learning for Natural Language Processing |publisher=Association for Computational Linguistics|location=Colorado, USA|pages=1–9|isbn=9781932432381 |url=http://dl.acm.org/citation.cfm?id=1621829.1621830}}</ref><ref name=cpl2010>{{cite book|last=Carlson|first=Andrew|author2=Justin Betteridge |author3=Richard C. Wang |author4=Estevam R. Hruschka Jr. |author5= Tom M. Mitchell |title=Proceedings of the third ACM international conference on Web search and data mining |chapter=Coupled semi-supervised learning for information extraction |year=2010|publisher=ACM|location=NY, USA|pages=101–110|doi=10.1145/1718487.1718501|isbn=9781605588896|doi-access=free}}</ref>
+
+== CPL overview==
+CPL is an approach to [[semi-supervised learning]] that yields more accurate results by coupling the training of many information extractors. Basic idea behind CPL is that semi-supervised training of a single type of extractor such as ‘coach’ is much more difficult than simultaneously training many extractors that cover a variety of inter-related entity and relation types. Using prior knowledge about the relationships between these different entities and relations CPL makes unlabeled data as a useful constraint during training. For e.g., ‘coach(x)’ implies ‘person(x)’ and ‘not sport(x)’.
+
+== CPL description ==
+=== Coupling of predicates ===
+CPL primarily relies on the notion of coupling the [[learning]] of multiple functions so as to constrain the semi-supervised learning problem. CPL constrains the learned function in two ways.
+# Sharing among same-arity predicates according to logical relations
+# Relation argument type-checking
+
+=== Sharing among same-arity predicates ===
+Each predicate P in the ontology has a list of other same-arity predicates with which P is mutually exclusive. If A is [[mutually exclusive]] with predicate B, A’s positive instances and patterns become negative instances and negative patterns for B. For example, if ‘city’, having an instance ‘Boston’ and a pattern ‘mayor of arg1’, is mutually exclusive with ‘scientist’, then ‘Boston’ and ‘mayor of arg1’ will become a negative instance and a negative pattern respectively for ‘scientist.’  Further, Some categories are declared to be a subset of another category.  For e.g., ‘athlete’ is a subset of ‘person’.
+
+=== Relation argument type-checking ===
+This is a type checking information used to couple the learning of relations and categories. For example, the arguments of the ‘ceoOf’ relation are declared to be of the categories ‘person’ and ‘company’. CPL does not promote a pair of noun phrases as an instance of a relation unless the two noun phrases are classified as belonging to the correct argument types.
+
+=== Algorithm description ===
+
+Following is a quick summary of the CPL algorithm.<ref name=cpl2010 />  
+ Input: An ontology O, and a text corpus C 
+ Output: Trusted instances/patterns for each predicate
+ '''for''' i=1,2,...,∞ '''do'''
+     '''foreach''' predicate p in O '''do'''
+         EXTRACT candidate instances/contextual patterns using recently promoted patterns/instances;
+         FILTER candidates that violate coupling;
+         RANK candidate instances/patterns;
+         PROMOTE top candidates;
+     '''end'''
+ '''end'''
+
+==== Inputs ====
+A large [[Text corpus|corpus]] of Part-Of-Speech tagged sentences and an initial ontology with predefined categories, relations, mutually exclusive relationships between same-arity predicates, subset relationships between some categories, seed instances for all predicates, and seed patterns for the categories.
+
+==== Candidate extraction ====
+CPL finds new candidate instances by using newly promoted patterns to extract the noun phrases that co-occur with those patterns in the text corpus. CPL extracts,
+* Category Instances
+* Category Patterns
+* Relation Instances
+* Relation Patterns
+
+==== Candidate filtering ====
+Candidate instances and patterns are filtered to maintain high precision, and to avoid extremely specific patterns. An instance is only considered for assessment if it co-occurs with at least two promoted patterns in the text corpus, and if its co-occurrence count with all promoted patterns is at least three times greater than its co-occurrence count with negative patterns.
+
+==== Candidate ranking ====
+CPL ranks candidate instances using the number of promoted patterns that they co-occur with so that candidates that occur with more patterns are ranked higher. Patterns are ranked using an estimate of the precision of each pattern.
+
+==== Candidate promotion ====
+CPL ranks the candidates according to their assessment scores and promotes at most 100 instances and 5 patterns for each predicate. Instances and patterns are only promoted if they co-occur with at least two promoted patterns or instances, respectively.
+
+== Meta-Bootstrap Learner ==
+Meta-Bootstrap Learner (MBL) was also proposed by the authors of CPL.<ref name=cpl2010 /> Meta-Bootstrap learner couples the training of multiple extraction techniques with a multi-view constraint, which requires the extractors to agree. It makes addition of coupling constraints on top of existing extraction algorithms, while treating them as black boxes, feasible. MBL assumes that the errors made by different extraction techniques are independent. Following is a quick summary of MBL.
+
+ '''Input''': An ontology O, a set of extractors ε
+ '''Output''': Trusted instances for each predicate
+ '''for''' i=1,2,...,∞ '''do'''
+     '''foreach''' predicate p in O '''do'''
+         '''foreach''' extractor e in ε '''do'''
+             Extract new candidates for p using e with recently promoted instances;
+         '''end'''
+         FILTER candidates that violate mutual-exclusion or type-checking constraints;
+         PROMOTE candidates that were extracted by all extractors;
+     '''end'''
+ '''end'''
+
+Subordinate algorithms used with MBL do not promote any instance on their own, they report the evidence about each candidate to MBL and MBL is responsible for promoting instances.
+
+== Applications ==
+In their paper <ref name=cbl2009 /> authors have presented results showing the potential of CPL to contribute new facts to existing repository of semantic knowledge, Freebase <ref>{{cite journal|year=2009 |title=Freebase data dumps |publisher=Metaweb Technologies |url=http://download.freebase.com/datadumps/ |url-status=dead |archiveurl=https://web.archive.org/web/20111206102101/http://download.freebase.com/datadumps/ |archivedate=December 6, 2011 }}</ref>
+
+== See also ==
+* [[Co-training]]
+* [[Never-Ending Language Learning]]
+
+== Notes ==
+{{reflist}}
+
+==References==
+* {{cite journal|last=Liu|first=Qiuhua |author2=Xuejun Liao |author3=Lawrence Carin |year=2008|title=Semi-supervised multitask learning|journal=NIPS}}
+* {{cite journal|last=Shinyama|first=Yusuke|author2=Satoshi Sekine|year=2006|title=Preemptive information extraction using unrestricted relation discovery|journal=HLT-Naacl}}
+* {{cite journal|last=Chang|first=Ming-Wei|author2=Lev-Arie Ratinov |author3=Dan Roth |year=2007|title=Guiding semi-supervision with constraint driven learning|journal=ACL}}
+*  {{cite journal|last=Banko|first=Michele|author2=Michael J. Cafarella |author3=Stephen Soderland |author4=Matt Broadhead |author5=Oren Etzioni |author5-link=Oren Etzioni |year=2007|title=Open information extraction from the web|journal=IJCAI}}
+* {{cite book|last=Blum|first=Avrim|author2=Tom Mitchell|title=Proceedings of the eleventh annual conference on Computational learning theory |chapter=Combining labeled and unlabeled data with co-training |year=1998|journal=COLT|pages=92–100|doi=10.1145/279943.279962|isbn=1581130570|s2cid=207228399 }}
+* {{cite journal|last=Riloff|first=Ellen|author2=Rosie Jones|year=1999|title=Learning dictionaries for information extraction by multi-level bootstrapping|journal=AAAI}}
+* {{cite journal|last=Rosenfeld|first=Benjamin|author2=Ronen Feldman|year=2007|title=Using corpus statistics on entities to improve semi-supervised relation extraction from the web|journal=ACL}}
+* {{cite journal|last=Wang|first=Richard C.|author2=William W. Cohen|year=2008|title=Iterative set expansion of named entities using the web|journal=ICDM}}
+
+[[Category:Machine learning]]

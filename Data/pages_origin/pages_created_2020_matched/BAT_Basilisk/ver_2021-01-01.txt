@@ -1,0 +1,287 @@
+{{Use dmy dates|date=April 2017}}
+{{Use British English|date=April 2017}}
+<!-- This article is a part of [[Wikipedia:WikiProject Aircraft]]. Please see [[Wikipedia:WikiProject Aircraft/page content]] for recommended layout. -->
+{|{{Infobox Aircraft Begin
+ | name=F.K.25 Basilisk
+ | image=BAT F.K.25 Basilisk 010120 p19.jpg
+ | caption=
+}}{{Infobox Aircraft Type
+ | type=[[Fighter aircraft]]
+ | national origin=[[United Kingdom]]
+ | manufacturer=[[British Aerial Transport]]
+ | designer=[[Frederick Koolhoven]]
+ | first flight=September 1918
+ | introduced=
+ | retired=
+ | status=Prototype
+ | primary user=
+ | number built=3
+ | developed from=
+ | variants with their own articles=
+}}
+|}
+The '''BAT F.K.25 Basilisk''' was a prototype [[United Kingdom|British]] [[fighter aircraft]] of the [[World War I|First World War]]. A single engined [[biplane]] intended to meet a requirement to replace the [[Sopwith Snipe]], the Basilisk was unsuccessful, only three being built.
+
+==Development and design==
+In 1918, the British [[Air Ministry]] issued the RAF Type 1 specification for a single-seat fighter, powered by the new (and untried) [[ABC Dragonfly]] air cooled [[radial engine]] to replace the [[Sopwith Snipe]]. To meet this requirement, [[Frederick Koolhoven]], (formerly of [[Armstrong Whitworth Aircraft]] and before that [[Société Pour L'Aviation et ses Dérivés|Deperdussin]]) chief designer of the [[British Aerial Transport]] Company of London, designed the F.K. 25 Basilisk.<ref name="Lewis Fighter p128,130">Lewis 1979, pp.128, 130.</ref>
+
+Like Koolhovens earlier [[BAT Bantam|F.K.23 Bantam]], the Basilisk was a two-bay [[biplane]] with a wooden [[monocoque]] fuselage, but was larger and heavier to accommodate the larger engine and the equipment required by the Specification.  Armament was two [[Vickers machine gun]]s mounted ahead of the pilot, and enclosed in a large fairing that formed the upper coaming of the pilot's cockpit.<ref name="Mason Fighter p140">Mason 1992, p.140.</ref><ref name="Bruce British p75">Bruce 1957, p.75.</ref>
+
+Three prototypes were ordered in early 1918, and the first one flew in September 1918.<ref name="Mason Fighter p140"/> It was destroyed on 3 May 1919 when attempting to break the [[Flight altitude record|World altitude record]], its engine catching fire and BAT's test pilot, Peter Legh, being killed after he jumped clear.<ref name="Mason Fighter p140"/><ref name="Bruce v1 p64"/><ref>''Flight'' 8 May 1919, p.616.</ref>  The second and third prototype were fitted with modified, horn balanced ailerons, with the second prototype tested at [[RAF Martlesham Heath|Martlesham Heath]] in October 1919.  While its performance was good (although not as good as claimed by BAT), the Dragonfly engine was hopelessly unreliable, with further development or production abandoned earlier in the year, and the Basilisk was abandoned when Koolhoven left BAT at the end of 1919.<ref name="Bruce v1 p64"/>
+
+==Specifications (Second prototype)==
+{{Aircraft specs
+|ref=Jane's All the World's Aircraft 1919<ref name=JAWA1919>{{cite book|last=Grey|first=C.G.|title=Jane's All the World's Aircraft 1919|year=1969|publisher=David & Charles (Publishing) Limited|isbn=978-0-7153-4647-1 |pages=81a to 83a|edition=Facsimile}}</ref> War Planes of the First World War: Fighters Volume One <ref name="Bruce v1 p64">Bruce 1965, p.64.</ref>
+|prime units?=imp
+<!--
+        General characteristics
+-->
+|genhide=
+
+|crew=1
+|capacity={{convert|448|lb|kg|abbr=on|2}} disposable load
+|length m=
+|length ft=20
+|length in=5
+|length note=
+|span m=
+|span ft=25
+|span in=4
+|span note=
+|upper span m=
+|upper span ft=
+|upper span in=
+|upper span note=
+|mid span m=
+|mid span ft=
+|mid span in=
+|mid span note=
+|lower span m=
+|lower span ft=
+|lower span in=
+|lower span note=
+|swept m=<!-- swing-wings -->
+|swept ft=<!-- swing-wings -->
+|swept in=<!-- swing-wings -->
+|swept note=
+|dia m=<!-- airships etc -->
+|dia ft=<!-- airships etc -->
+|dia in=<!-- airships etc -->
+|dia note=
+|width m=<!-- if applicable -->
+|width ft=<!-- if applicable -->
+|width in=<!-- if applicable -->
+|width note=
+|height m=
+|height ft=8
+|height in=2
+|height note=
+|wing area sqm=
+|wing area sqft=212
+|wing area note=
+|swept area sqm=<!-- swing-wings -->
+|swept area sqft=<!-- swing-wings -->
+|swept area note=
+|volume m3=<!-- lighter-than-air -->
+|volume ft3=<!-- lighter-than-air -->
+|volume note=
+|aspect ratio=<!-- sailplanes -->
+|airfoil=
+|empty weight kg=
+|empty weight lb=1,350
+|empty weight note=
+|gross weight kg=
+|gross weight lb=2,085
+|gross weight note=
+|max takeoff weight kg=
+|max takeoff weight lb=
+|max takeoff weight note=
+|fuel capacity={{convert|40|impgal|l USgal|abbr=on|2}}
+|lift kg=<!-- lighter-than-air -->
+|lift lb=<!-- lighter-than-air -->
+|lift note=
+|more general=
+<!--
+        Powerplant
+-->
+|eng1 number=1
+|eng1 name=[[ABC Dragonfly]]
+|eng1 type=9-cyl. air-cooled radial piston engine
+|eng1 kw=<!-- prop engines -->
+|eng1 hp=320
+|eng1 shp=<!-- prop engines -->
+|eng1 kn=<!-- jet/rocket engines -->
+|eng1 lbf=<!-- jet/rocket engines -->
+|eng1 note=
+|power original=
+|thrust original=
+|eng1 kn-ab=<!-- afterburners -->
+|eng1 lbf-ab=<!-- afterburners -->
+
+|eng2 number=
+|eng2 name=
+|eng2 type=
+|eng2 kw=<!-- prop engines -->
+|eng2 hp=<!-- prop engines -->
+|eng2 shp=<!-- prop engines -->
+|eng2 kn=<!-- jet/rocket engines -->
+|eng2 lbf=<!-- jet/rocket engines -->
+|eng2 note=
+|eng2 kn-ab=<!-- afterburners -->
+|eng2 lbf-ab=<!-- afterburners -->
+
+|eng3 number=
+|eng3 name=
+|eng3 type=
+|eng3 kw=<!-- prop engines -->
+|eng3 hp=<!-- prop engines -->
+|eng3 shp=<!-- prop engines -->
+|eng3 kn=<!-- jet/rocket engines -->
+|eng3 lbf=<!-- jet/rocket engines -->
+|eng3 note=
+|eng3 kn-ab=<!-- afterburners -->
+|eng3 lbf-ab=<!-- afterburners -->
+|more power=
+
+|prop blade number=2
+|prop name=BAT tractor {{convert|8|ft|m|abbr=on|2}} pitch
+|prop dia m=<!-- propeller aircraft -->
+|prop dia ft=8
+|prop dia in=8
+|prop dia note=
+
+|rot number=<!-- helicopters -->
+|rot dia m=<!-- helicopters -->
+|rot dia ft=<!-- helicopters -->
+|rot dia in=<!-- helicopters -->
+|rot area sqm=<!-- helicopters -->
+|rot area sqft=<!-- helicopters -->
+|rot area note=
+<!--
+        Performance
+-->
+|perfhide=
+
+|max speed kmh=
+|max speed mph=162
+|max speed kts=
+|max speed note=at sea level
+:*{{convert|154|mph|km/h kn|abbr=on|0}} at {{convert|10,000|ft|m|abbr=on|2}}
+:*{{convert|141|mph|km/h kn|abbr=on|0}} at {{convert|15,000|ft|m|abbr=on|2}}
+:*{{convert|132|mph|km/h kn|abbr=on|0}} at {{convert|20,000|ft|m|abbr=on|2}}
+* '''Landingspeed:''' {{convert|52|mph|km/h kn|abbr=on|0}}
+|max speed mach=<!-- supersonic aircraft -->
+|cruise speed kmh=
+|cruise speed mph=
+|cruise speed kts=
+|cruise speed note=
+|stall speed kmh=
+|stall speed mph=
+|stall speed kts=
+|stall speed note=
+|never exceed speed kmh=
+|never exceed speed mph=
+|never exceed speed kts=
+|never exceed speed note=
+|minimum control speed kmh=
+|minimum control speed mph=
+|minimum control speed kts=
+|minimum control speed note=
+|range km=
+|range miles=
+|range nmi=
+|range note=
+|combat range km=
+|combat range miles=
+|combat range nmi=
+|combat range note=
+|ferry range km=
+|ferry range miles=
+|ferry range nmi=
+|ferry range note=
+|endurance=<!-- if range unknown -->
+|ceiling m=
+|ceiling ft=22,500
+|ceiling note=
+|g limits=<!-- aerobatic -->
+|roll rate=<!-- aerobatic -->
+|glide ratio=<!-- sailplanes -->
+|climb rate ms=
+|climb rate ftmin=2,500
+|climb rate note=
+|time to altitude={{convert|5,000|ft|m|abbr=on|2}} in 2 minutes
+:*{{convert|10,000|ft|m|abbr=on|2}} in 5 minutes
+:*{{convert|20,000|ft|m|abbr=on|2}} in 16 minutes 24 seconds
+|sink rate ms=<!-- sailplanes -->
+|sink rate ftmin=<!-- sailplanes -->
+|sink rate note=
+|lift to drag=
+|wing loading kg/m2=
+|wing loading lb/sqft=9.25
+|wing loading note=
+|disk loading kg/m2=
+|disk loading lb/sqft=
+|disk loading note=
+|fuel consumption kg/km=
+|fuel consumption lb/mi=
+|power/mass=0.173 hp/lb (0.285 kW/kg)
+|thrust/weight=
+
+|more performance=
+<!--
+        Armament
+-->
+|guns= 2× forward firing, synchronised [[.303 British|{{convert|0.303|in|mm|abbr=on|1}}]] [[Vickers machine gun]]s
+|bombs=
+|rockets=
+|missiles=
+|hardpoints=
+|hardpoint capacity=
+|hardpoint rockets=
+|hardpoint missiles=
+|hardpoint bombs=
+|hardpoint other=
+
+|avionics=
+}}
+
+==See also==
+{{aircontent
+<!-- include as many lines are appropriate. additional lines/entries with carriage return. -->
+|see also=
+|related=*[[BAT Bantam]]<!-- related developments -->
+|similar aircraft=*[[Armstrong Whitworth Ara]]
+* [[Nieuport Nighthawk]]
+* [[Armstrong Whitworth Siskin|Siddeley Siskin]]
+* [[Sopwith Snapper]]
+* [[Sopwith Snark]]<!-- similar or comparable aircraft -->
+|lists=<!-- related lists -->
+}}
+
+==Notes==
+{{reflist}}
+
+==References==
+{{refbegin}}
+* {{cite book|last=Grey|first=C.G.|title=Jane's All the World's Aircraft 1919|year=1969|publisher=David & Charles (Publishing) Limited|isbn=978-0-7153-4647-1 |pages=81a to 83a|edition=Facsimile}}
+* "[http://www.flightglobal.com/pdfarchive/view/1919/1919%20-%200616.html The Late Peter Legh]." ''[[Flight International|Flight]]'', 8 May 1919, No. 641 Vol. XI. p.&nbsp;616.
+* "[http://www.flightglobal.com/pdfarchive/view/1920/1920%20-%200020.html Some "B.A.T." Aeroplanes]". ''[[Flight International|Flight]]'', 1 January 1920, pp.&nbsp;18, 19.
+* Bruce, J.M. ''British Aeroplanes 1914-18''. London:Putnam, 1957.
+* Bruce, J.M. ''War Planes of the First World War: Fighters Volume One''. London:Macdonald, 1965.
+* Lewis, Peter. ''The British Fighter since 1912''. London:Putnam, Fourth edition 1979. {{ISBN|0-370-10049-2}}.
+* Mason, Francis K. ''The British Fighter since 1912''. Annapolis, USA:Naval Institute Press, 1992. {{ISBN|1-55750-082-7}}.
+
+{{refend}}
+
+==External links==
+{{commons category|BAT F.K.25 Basilisk}}
+* [http://www.airwar.ru/enc/fww1/fk25.html BAT FK-25 Basilisk] (in Russian)
+{{BAT aircraft}}
+{{Koolhoven aircraft}}
+
+[[Category:1910s British fighter aircraft]]
+[[Category:Biplanes]]
+[[Category:Military aircraft of World War I]]
+[[Category:Koolhoven aircraft]]
+[[Category:Single-engined tractor aircraft]]
+[[Category:Aircraft first flown in 1918]]

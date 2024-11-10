@@ -1,0 +1,57 @@
+{{Use mdy dates|date=December 2019}}
+{{Infobox information appliance
+| name = Apple Watch Series 3
+| logo = Apple Watch official logo.svg
+| logo_size = 150px
+| logo caption = 
+| image = 
+| image_size = 
+| aka = Apple Watch 3
+| developer = [[Apple Inc.]]
+| family = [[Apple Watch]]
+| type = [[Smartwatch]]
+| generation = 4th Generation
+| release date = {{Start date and age|2017|09|22}}
+| units sold = 18,000,000 units (2017)
+| os = [[WatchOS|watchOS 7]]
+| power = 
+| soc = 
+| cpu = [[Apple S3]]
+| predecessor = [[Apple Watch Series 2]]
+| successor = [[Apple Watch Series 4]]
+| website = {{url|https://www.apple.com/apple-watch-series-3/}}
+}} 
+
+The '''Apple Watch Series 3''' is the fourth-generation model of the [[Apple Watch]]. This device was released on September 22, 2017, continuing Apple's yearly release cycle. As of September 2020, Apple Watch Series 3 with [[Wi-Fi]] and [[Global Positioning System|GPS]] can be purchased for $199. The addition of [[cellular network|cellular]] connectivity is no longer available.<ref name="auto">{{Cite web|url=https://www.apple.com/apple-watch-series-3/|title=Apple Watch Series 3|website=Apple}}</ref> 
+
+Apple used advertising points to emphasize the need for this product to track fitness goals. The "3 Ring Goal" for tracking the users fitness level while the device is being used has been improved for accuracy and workout plans.<ref name="auto"/> Apple Watch Series 3 added cellular connectivity for the first time in an Apple Watch. The four major [[United States|US]] carriers ([[AT&T Mobility|AT&T]], [[Sprint Corporation|Sprint Wireless]], [[T-Mobile US|T-Mobile]], and [[Verizon Wireless]]) all support Apple Watch Series 3 and use the same mobile number as the user's iPhone.
+
+== Features ==
+The Apple Watch Series 3 featured [[LTE (telecommunications)|LTE]] cellular connectivity for the first time in an Apple Watch, enabling users to make phone calls, [[iMessage]] and stream Apple Music and podcasts directly on the watch when their iPhone is not nearby.<ref name="auto"/> The watch comes with an electronic SIM card<ref>{{Cite news|url=https://www.theverge.com/2017/9/12/16270442/new-apple-watch-lte-announced-price-release-date-features|title=The new Apple Watch works without a phone|work=The Verge|access-date=September 20, 2017}}</ref><ref name=":1">{{Cite news|url=https://www.apple.com/newsroom/2017/09/apple-watch-series-3-features-built-in-cellular-and-more/|title=Apple Watch Series 3 features built-in cellular and more|work=Apple Newsroom|access-date=September 20, 2017|language=en-US}}</ref> and shares the same mobile number as the user's iPhone. Add-on plans start at $10/month from the four major US carriers.<ref>{{Cite news|url=http://bgr.com/2017/09/12/apple-watch-3-cellular-plan-cost/|title=The Apple Watch Series 3 is going to cost you $10 per month, forever|last=Mills|first=Chris|date=September 13, 2017|work=BGR|access-date=September 20, 2017|language=en-US}}</ref>
+
+==Hardware==
+Apple Watch Series 3 has a dual-core [[Apple S3]] processor that is 70% faster than the [[Apple S2]] and enables Siri voice responses. It features a Bluetooth 4.2 vs the 4.0 on older models allowing for a faster and stronger connection to the paired device. The cellular-capable watch has a red digital crown while the non-LTE version has a plain digital crown.<ref>{{Cite news|url=https://www.macobserver.com/news/product-news/new-apple-watch-series-3-better-ever/|title=The New Apple Watch Series 3, Better Than Ever [Update] |date=September 12, 2017|work=The Mac Observer|access-date=September 20, 2017|language=en-US}}</ref> It has a built-in NFC chip which can be used for [[Apple Pay]].<ref>{{Cite news|url=http://www.techradar.com/news/apple-watch-compatible-gym-equipment-will-be-ready-by-september|title=Apple Watch-compatible gym equipment will be ready by September|work=TechRadar|access-date=September 20, 2017|language=en}}</ref> Apple claims 18 hours of battery life.<ref>{{Cite web|url=https://www.apple.com/au/watch/compare/|title=Apple Watch - Compare Models|website=Apple (Australia)|language=en-AU|access-date=2019-12-12}}</ref> Each model of the Series 3 comes in a 38- or 42-millimeter body, with the larger size having a slightly larger screen and battery. It also includes [[International Organization for Standardization|ISO]] 22810:2010 water resistance (up to 50&nbsp;meters) from the Apple Watch Series 2.<ref>"Review: The absolutely optional Apple Watch and Watch OS 1.0". Ars Technica. Retrieved July 15, 2015.</ref>
+
+== Software ==
+As of September 2020, The Apple Watch Series 3 ships with [[watchOS]] 7, which has a new Sleep app (enabling built-in sleep tracking), Watch Face sharing (to share specific faces with specific complications with others), as well as new workout options (Dance, Functional Strength Training, Core Training and Cooldown)<ref name=":1" /><ref>{{Cite news|url=https://techcrunch.com/2017/09/12/apples-watch-3-rolls-out-heart-health-and-smart-fitness-features/|title=Apple’s Watch 3 rolls out heart health and smart fitness features|last=Buhr|first=Sarah|work=TechCrunch|access-date=September 20, 2017|language=en}}</ref><ref>{{Cite news|url=https://www.theverge.com/2020/6/22/21294434/apple-watchos-7-features-sleep-tracking-face-sharing-fitness-apps-2020|title= watchOS 7 announced with sleep tracking and rebranded Fitness app|work=The Verge|access-date=September 17, 2020|language=en-US}}</ref>
+
+== Requirements ==
+Compatibility depends on the version of watchOS shipped on the device. As of September 2020, the Apple Watch Series 3 ships with watchOS 7 and officially requires an iPhone 6S or later with iOS 14 or later.<ref>{{Cite web|url=https://support.apple.com/kb/SP766?locale=en_CA|title=Apple Watch Series 3 – Technical Specifications|website=support.apple.com|language=en|access-date=December 26, 2019}}</ref>
+
+==References==
+{{reflist}}
+
+== External links ==
+* [https://www.apple.com/apple-watch-series-3/ Apple Watch Series 3]
+{{Smartwatch}}
+{{Apple hardware since 1998}}
+{{Apple Inc. hardware}}
+{{iOS}}
+
+[[Category:Apple Inc. hardware]]
+[[Category:Products introduced in 2017]]
+[[Category:Smartwatches]]
+[[Category:Wearable devices]]
+
+
+{{Apple-stub}}

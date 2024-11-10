@@ -1,0 +1,114 @@
+{{primary sources|date=March 2018}}
+{{short description|Project for an open source artificial intelligence framework}}
+{{Infobox software
+| name                   = OpenCog
+| title                  = 
+| logo                   = OpenCog.png
+| logo size              = 120px
+| logo caption           = Open Source Artificial Intelligence
+| screenshot             = <!-- [[File: ]] -->
+| caption                = 
+| collapsible            = 
+| author                 = [https://github.com/opencog/opencog/graphs/contributors OpenCog Developers]
+| developer              = [http://opencog.org OpenCog Foundation]
+| released               = {{Start date and age|df=yes|2008|01|21}}<ref name="source-release">{{cite web |url=http://bazaar.launchpad.net/~opencog-dev/opencog/trunk/changes/2 |title=OpenCog Release |date=21 January 2008 |access-date=21 January 2008}}</ref>
+| discontinued           = 
+| latest release version = 
+| latest release date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language   = [[C++]], [[Python (programming language)|Python]], [[Scheme (programming language)|Scheme]]
+| operating system       = 
+| platform               = [[Linux]]
+| size                   = 
+| language               = 
+| genre                  = [[Artificial general intelligence]]
+| license                = [[GNU Affero General Public License]]
+| website                = {{URL|opencog.org/}}
+}}
+'''OpenCog''' is a project that aims to build an [[open source software|open source]] artificial intelligence framework. '''OpenCog Prime''' is an architecture for robot and virtual [[embodied cognition]] that defines a set of interacting components designed to give rise to human-equivalent [[artificial general intelligence]] (AGI) as an [[emergent phenomenon]] of the whole system.<ref>{{Cite web|url=http://www.cybertechnews.org/?p=915 |title=OpenCog: Open-Source Artificial General Intelligence for Virtual Worlds {{!}} CyberTech News |date=2009-03-06 |access-date=2016-10-01 |url-status=bot: unknown |archive-url=https://web.archive.org/web/20090306053354/http://www.cybertechnews.org/?p=915 |archive-date=2009-03-06 }}</ref> OpenCog Prime's design is primarily the work of [[Ben Goertzel]] while the OpenCog framework is intended as a generic framework for broad-based AGI research. Research utilizing OpenCog has been published in journals and presented at conferences and workshops including the annual [[Conference on Artificial General Intelligence]]. OpenCog is released under the terms of the [[Affero General Public License|GNU Affero General Public License]].
+
+OpenCog is in use by more than 50 companies, including [[Huawei]] and [[Cisco]].<ref>{{cite web |url=https://venturebeat.com/2017/12/07/singularitynet-talks-collaborative-ai-as-its-token-sale-hits-400-oversubscription/ |title=SingularityNET talks collaborative AI as its token sale hits 400% oversubscription |last=Rogers |first=Stewart |date=2017-12-07 |website=venturebeat.com |publisher=[[VentureBeat]] |access-date=2018-03-13}}</ref>
+
+== Origin ==
+
+OpenCog was originally based on the release in 2008 of the source code of the proprietary "Novamente Cognition Engine" (NCE) of Novamente LLC. The original NCE code is discussed in the PLN book (ref below).  Ongoing development of OpenCog is supported by Artificial General Intelligence Research Institute (AGIRI), the [[Google Summer of Code]] project, [[Hanson Robotics]], [[SingularityNET]] and others.
+
+== Components ==
+
+OpenCog consists of:
+
+* A [[graph database]], dubbed the [https://wiki.opencog.org/w/Atomspace AtomSpace], that holds "atoms" (that is, [[term (logic)|terms]], [[atomic formula]]s, [[sentence (mathematical logic)|sentences]] and [[relational model|relationships]]) together with their "values" ([[valuation (logic)|valuations]] or [[interpretation (logic)|interpretations]], which can be thought of as per-atom [[key-value database]]s). An example of a value would be a [[truth value]]. Atoms are globally unique, immutable and are indexed (searchable); values are fleeting and changeable.
+
+* A collection of pre-defined atoms, termed [https://wiki.opencog.org/w/Atomese Atomese], used for generic [[knowledge representation]], such as [[conceptual graph]]s and [[semantic network]]s, as well as to represent and store the rules (in the sense of [[term rewriting]]) needed to manipulate such graphs.
+
+* A collection of pre-defined atoms, that encode a [[type theory|type subsystem]], including [[type constructor]]s and [[function type]]s. These are used to specify the types of variables, terms and expressions, and are used to specify the structure of generic graphs containing variables.
+
+* A collection of pre-defined atoms that encode both [[functional programming language|functional]] and [[imperative programming language|imperative]] programming styles.  These include the [[lambda abstraction]] for binding [[free variable]]s into [[bound variable]]s, as well as for performing [[beta reduction]].
+
+* A collection of pre-defined atoms that encode a [[satisfiability modulo theories]] solver, built in as a part of a generic graph query engine, for performing graph and hypergraph pattern matching ([[graph isomorphism|isomorphic subgraph discovery]]).  This generalizes the idea of a structured query language ([[SQL]]) to the domain of generic graphical queries; it is an extended form of a graph [[query language]].
+
+* A generic [[rule engine]], including a [[forward chaining|forward chainer]] and a [[backward chaining|backward chainer]], that is able to chain together rules. The rules are exactly the graph queries of the graph query subsystem, and so the rule engine vaguely resembles a [[query plan]]ner. It is designed so as to allow different kinds of [[inference engine]]s and [[reasoning system]]s to be implemented, such as [[Bayesian inference]] or [[fuzzy logic]], or practical tasks, such as [[constraint solver]]s or [[planning|motion planner]]s.
+
+* An attention allocation subsystem based on economic theory, termed ECAN.<ref>{{cite web|url=https://wiki.opencog.org/w/ECAN | title = Economic Attention Allocation}}</ref> This subsystem is used to control the combinatorial explosion of search possibilities that are met during inference and chaining.
+
+* An implementation of a probabilistic [[reasoning system|reasoning engine]] based on [[probabilistic logic network]]s (PLN).  The current implementation uses the rule engine to chain together specific rules of [[logical inference]] (such as [[modus ponens]]), together with some very specific mathematical formulas assigning a probability and a confidence to each deduction. This subsystem can be thought of as a certain kind of [[proof assistant]] that works with a modified form of Bayesian inference.
+
+* A probabilistic [[genetic programming|genetic program evolver]] called Meta-Optimizing Semantic Evolutionary Search, or MOSES.<ref>{{cite web|url=https://wiki.opencog.org/w/MOSES|title=MOSES}}</ref> This is used to discover collections of short Atomese programs that accomplish tasks; these can be thought of as performing a kind of [[decision tree learning]], resulting in a kind of [[random forest|decision forest]], or rather, a generalization thereof.
+
+* A natural language input system consisting of [[Link Grammar]], and partly inspired by both [[ Meaning-Text Theory]] as well as Dick Hudson's [[word grammar|Word Grammar]], which encodes semantic and syntactic relations in Atomese.
+
+* A natural language generation system.<ref>{{cite web |url=https://wiki.opencog.org/w/Natural_language_generation|title=Natural Language Generation.}}</ref>
+
+* An implementation of [[Psi-Theory]] for handling [[emotion]]al states, drives and urges, dubbed OpenPsi.<ref>{{cite web|url=https://wiki.opencog.org/w/OpenPsi|title=OpenPsi}}</ref>
+
+* Interfaces to [[Hanson Robotics]] robots, including emotion modelling<ref>{{Cite web |url=http://wiki.hansonrobotics.com/w/Emotion_modeling |title=Emotion modeling - Hanson Robotics Wiki |access-date=2015-04-24 |archive-url=https://web.archive.org/web/20180319173932/http://wiki.hansonrobotics.com/w/Emotion_modeling |archive-date=2018-03-19 |url-status=dead }}</ref> via OpenPsi.  This includes the [[Loving AI]] project, used to demonstrate meditation techniques.
+
+== Organization and funding ==
+
+In 2008, the [[Machine Intelligence Research Institute]] (MIRI), formerly called Singularity Institute for Artificial Intelligence (SIAI), sponsored several researchers and engineers. Many contributions from the open source community have been made since OpenCog's involvement in the [[Google Summer of Code]] in 2008 and 2009. Currently MIRI no longer supports OpenCog.<ref>{{cite web|url=http://multiverseaccordingtoben.blogspot.com/2010/10/singularity-institutes-scary-idea-and.html|author=Ben Goertzel|title=The Singularity Institute's Scary Idea (and Why I Don't Buy It)|work=The Multiverse According to Ben|date = 2010-10-29|access-date = 2011-06-24|author-link=Ben_Goertzel}}</ref> OpenCog has received funding and support from several sources, including the Hong Kong government, [[Hong Kong Polytechnic University]], the [[Jeffrey Epstein VI Foundation]]<ref>{{cite web|url= https://www.forbes.com/sites/drewhendricks/2013/10/02/science-funder-jeffrey-epstein-launches-radical-emotional-software-for-the-gaming-industry/|title=Science Funder Jeffrey Epstein Launches Radical Emotional Software |work= Forbes |date= Oct 2, 2013}}</ref> and [[Hanson Robotics]]. The OpenCog project is currently affiliated with [[SingularityNET]] and Hanson Robotics.
+
+==Applications==
+Similar to other [[cognitive architecture]]s, the main purpose is to create virtual humans, which are three dimensional [[Avatar (computing)|avatar]] characters. The goal is to mimic behaviors like emotions, gestures and learning. For example, the emotion module in the software was only programmed because humans have emotions. Artificial General Intelligence can be realized, if it simulates intelligence of humans.<ref name="BurdenSavin-Baden2019">{{cite book|author1=David Burden|author2=Maggi Savin-Baden|title=Virtual Humans: Today and Tomorrow|url=https://books.google.com/books?id=ySiFDwAAQBAJ&pg=PT303|access-date=25 August 2020|date=24 January 2019|publisher=CRC Press|isbn=978-1-351-36526-0}}</ref>
+
+The self-description of the OpenCog project provides additional possible applications which are going into the direction of natural language processing and the simulation of a dog.<ref name="GoertzelPennachin2014">{{cite book|author1=Ben Goertzel|author2=Cassio Pennachin|author3=Nil Geisweiller|title=Engineering General Intelligence, Part 1: A Path to Advanced AGI via Embodied Learning and Cognitive Synergy|url=https://books.google.com/books?id=5Wm5BQAAQBAJ&pg=PA23|date=8 July 2014|publisher=Springer|isbn=978-94-6239-027-0|pages=23–}}</ref>
+
+== See also ==
+
+* [[Soar (cognitive architecture)|Soar]]
+* [[Cyc]]
+*[[List of free and open-source software packages|List of free and open source software packages]]
+* [[OpenAI]]
+
+==Sources==
+* {{cite conference
+ | first = D 
+ | last = Hart
+ |author2=B Goertzel
+ | year = 2008
+ | title = OpenCog: A Software Framework for Integrative Artificial General Intelligence
+ | conference = Proceedings of the First AGI Conference
+ | url = http://www.agiri.org/OpenCog_AGI-08.pdf
+}} [https://books.google.com/books?id=a_ZR81Z25z0C Gbooks]
+
+* Goertzel, B., Iklé, M., Goertzel, I.F., Heljakka, A. ''[https://www.springer.com/computer/artificial/book/978-0-387-76871-7 Probabilistic Logic Networks, A Comprehensive Framework for Uncertain Inference]'', Springer, 2009, VIII, 336 p., Hardcover {{ISBN|978-0-387-76871-7}}
+
+== References ==
+{{reflist}}
+
+== External links ==
+
+*{{Official website|http://opencog.org}}
+*[http://wiki.opencog.org/w/The_Open_Cognition_Project OpenCog Wiki]
+*{{youtube|x18yaOXBSQA|AGI 2011: OpenCog - GoogleTechTalks}}
+*{{youtube|Rgjw8O3vLBs|AGI 2011: Architectures Part I - GoogleTechTalks}}
+*{{youtube|5hsvCib83ME|Artificial General Intelligence: Now Is the Time - 2007 GoogleTechTalks}}
+*[http://wiki.opencog.org/w/CogPrime_Overview CogPrime: An Integrative Architecture for Embodied Artificial General Intelligence]
+*{{youtube|qfwMV18is6M OpenCog: An Open Source Software Framework & A Design & Vision for Advanced AGI.}}  Given at Monash University Australia, Sept 2011. Adam Ford
+*{{youtube|mdLbg-anczk Video introduction to OpenCog by Ben Goertzel}}. Ben speaks on OpenCog in Tai Po, Hong Kong, Dec 2011. Adam Ford
+*{{youtube|4xogjUqEQvY Ben Goertzel - the future of AGI - Open Cog development in Asia}} Adam Ford
+{{Existential risk from artificial intelligence}}
+
+[[Category:Software using the GNU AGPL license]]
+[[Category:Open-source artificial intelligence]]
+[[Category:Emergence]]

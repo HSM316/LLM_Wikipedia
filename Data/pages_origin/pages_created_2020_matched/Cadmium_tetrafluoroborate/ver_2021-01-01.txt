@@ -1,0 +1,112 @@
+{{chembox
+| verifiedrevid = 
+| Name = Cadmium tetrafluoroboate
+| ImageFile = 
+| ImageSize = 
+| ImageName = 
+| OtherNames =Cadmium(II) tetrafluoroborate
+Cadmium fluoroborate
+Cadmium fluoborate 
+|Section1={{Chembox Identifiers
+| ChemSpiderID_Ref = 
+| ChemSpiderID = 
+| InChI = 1S/2BF4.Cd/c2*2-1(3,4)5;/q2*-1;+2
+| InChIKey = NXOFSPIMFJTFSE-UHFFFAOYSA-N
+| SMILES = [B-](F)(F)(F)F.[B-](F)(F)(F)F.[Cd+2]
+| StdInChI_Ref = {{stdinchicite|correct|chemspider}}
+| StdInChI = 
+| StdInChIKey_Ref =
+| StdInChIKey = 
+| CASNo = 14486-19-2
+| CASNo_Ref = {{cascite|correct|CAS}}
+| UNII_Ref = {{fdacite|correct|FDA}}
+| UNII = 6FO2G6257B
+| PubChem = 12886773
+| RTECS = 
+| EINECS = 
+  }}
+|Section2={{Chembox Properties
+| Formula = Cd(BF<sub>4</sub>)<sub>2</sub>
+| Appearance = colorless solid crystals<br> very [[hygroscopic]]
+| Odor = odorless
+| MolarMass = 286.020 g/mol
+| Density = 1.60 g/cm<sup>3</sup><ref>{{Cite book |title=CRC Handbook of Chemistry and Physics, 88th Edition |last=Lide |first=David R. |publisher=Taylor & Francis |year=2007–2008 |isbn=9780849304880 |location=Boca Raton, FL }}</ref>
+| Solubility = very soluble
+| SolubleOther = very soluble in [[ethanol|alcohol]]
+| MeltingPt = 
+| MeltingPt_notes =
+| BoilingPt = 
+| RefractIndex =
+  }}
+|Section3={{Chembox Structure
+| CrystalStruct =
+}}
+|Section7={{Chembox Hazards
+| NFPA-H = 
+| NFPA-F =  
+| NFPA-R = 
+| NFPA-S = 
+| LD50 =
+| REL = Ca<ref name=PGCH>{{PGCH|0087}}</ref>
+| PEL = [1910.1027] TWA 0.005 mg/m<sup>3</sup> (as Cd)<ref name=PGCH/>
+| IDLH = Ca [9 mg/m<sup>3</sup> (as Cd)]<ref name=PGCH/>
+  }}
+|Section8={{Chembox Related
+| OtherCations = 
+  }}
+}}
+'''Cadmium tetrafluoroborate''' is an [[Ionic compound|ionic]], chemical compound with the formula Cd(BF<sub>4</sub>)<sub>2</sub>.<ref>[http://toxnet.nlm.nih.gov/cgi-bin/sis/search/f?./temp/~9CKeOg:11:FULL Hazardous Substances Database]. toxnet.nlm.nih.gov</ref> It is an ionic, crystalline solid, which is colorless and odorless. Cadmium tetrafluoroborate is most frequently used in the industrial production of [[High-strength low-alloy steel|high-strength steels]], its purpose being to prevent hydrogen [[Absorption (chemistry)|absorption]], a source of post-production cracking of the metal, in the treated steels. Another application of the chemistry of cadmium tetrafluoroborate is fine tuning of the size of [[cadmium telluride]] [[nanomaterials]].
+
+While the use of cadmium tetrafluoroborate is limited, concerns about limited or chronic exposure to this substance should be brought to the attention of a physician or other trained medical staff. Exposure to cadmium tetrafluoroborate, via ingestion, contact with the skin or mucous membranes, or inhalation can have lasting and harmful health effects.
+
+==Preparation==
+Cadmium tetrafluoroborate may be prepared from the reaction between an aqueous solution of [[fluoroboric acid]] and [[cadmium carbonate]] or [[cadmium oxide]]:<ref>{{Cite web |url=https://pubchem.ncbi.nlm.nih.gov/substance/12886773 |title=Compound Summary for PubChem CID 12886773 |date=2017 |website=NIH }}</ref>
+:<chem>{H3OBF4_(aq)} + {CdCO3_(s)} ->  {Cd(BF4)2_(aq)} + {HCO3^-_(aq)} + {H2O_(l)} </chem>{{citation needed|date=May 2019}}
+:<chem>{H3OBF4_(aq)} + {CdO_(s)} -> {Cd(BF4)2_(aq)} + {HO^-_(aq)} + {H2O_(l)}</chem>{{citation needed|date=May 2019}}
+
+It is also possible to prepare cadmium tetrafluoroborate through an [[Redox|oxidation-reduction]] reaction implementing nitrosyl tetrafluoroborate:<ref>{{Cite journal |last1=Hathaway |first1=B. J. |last2=Holah |first2=D. G. |last3=Underhill |first3=A. E. |date=1962 |title=The preparation and properties of some bivalent transition-metal tetrafluoroborate–methyl cyanide complexes |journal=Journal of the Chemical Society |pages=2444–8 |doi=10.1039/JR9620002444}}</ref>
+:<chem>{Cd(s)} + {2NOBF4} ->[{ethyl acetate}][{methyl cyanide}] {Cd(BF4)2} + {2NO}</chem>
+
+==Structure==
+
+=== Cadmium tetrafluoroborate ===
+Cadmium tetrafluoroborate is an ionic compound formed from the two, ionic species Cd<sup>2+</sup> and BF<sub>4</sub><sup>−</sup>. At room temperature it forms colorless, odorless crystals which are soluble in polar solvents such as water or ethanol. At room temperature, the hydrated salt, Cd(BF<sub>4</sub>)<sub>2</sub>·6H<sub>2</sub>O, exists in a [[monoclinic crystal system]], though this is temperature dependent.<ref name=":0">{{cite journal|last1=Jain |first1=A.K. |last2=Geoffroy|first2=M.|title=ESR study of phase transitions in single crystals of Cd(BF4)2, 6H2O|journal=Solid State Communications |date=October 1981 |volume=40|issue=1 |pages=33–35 |doi=10.1016/0038-1098(81)90705-5|bibcode=1981SSCom..40...33J }}</ref> Two, first-order [[phase transition]]s have been noted in the literature for this material, one each at 324 K and 177 K, representing a change in the crystal system from monoclinic to [[Hexagonal crystal family|trigonal]] and from trigonal to either monoclinic or [[Triclinic crystal system|triclinic]], respectively.<ref name=":0" /> The quasi-trigonal geometry of the cadmium tetrafluoroborate hexahydrate crystal is unique among the [[Transition metal|first-row transition metal]] tetrafluoroborates and perchlorates, which have predominately [[Hexagonal crystal family|hexagonal]] structures.<ref>{{Cite journal |last1=Moss |first1=K.C.|last2=Russell  |first2=D.R.|last3=Sharp|first3=D.W.A.  |date=1961 |title=The lattice constants of some metal-fluoroborate hexahydrates |journal=Acta Crystallographica |volume=14 |issue=3 |pages=330 |doi=10.1107/S0365110X61001133 }}</ref>
+
+=== Related transition-metal complexes ===
+The Cd<sup>2+</sup> species of cadmium tetrafluoroborate may associate with various [[ligand]]s to form transition-metal [[Coordination complex|complexes]]. The structural formulas and geometries for such complexes can vary depending upon [[coordination number]] of the complex and the electronic properties of the ligands (see also, [[HSAB theory]]). However, two general forms may predominate: (i) [Cd(L)<sub>n</sub>(BF<sub>4</sub>)<sub>m</sub>], where L and BF<sub>4</sub><sup>−</sup> are ligands in the inner-sphere, and (ii) [Cd(L)<sub>n</sub>](BF<sub>4</sub>)<sub>2</sub>, where BF<sub>4</sub><sup>−</sup> is located in the outer-sphere;<ref name=":1">{{Cite journal |last1=Chebotarev |first1=A. N. |last2=Shestakova |first2=M. V. |last3=Kuz'min |first3=V. E. |last4=Artemenko |first4=A. G. |date=2005-09-01 |title=The Maximum Hardness Principle and the Composition of Zn(II) and Cd(II) Tetrafluoroborate Complexes with Nitrogen-Containing Organic Bases |journal=Russian Journal of Coordination Chemistry |volume=31 |issue=9 |pages=619–622 |doi=10.1007/s11173-005-0145-8 |s2cid=93456957 }}</ref> for both, n=1,2,…,6. The literature contains reports of distorted [[Octahedral molecular geometry|octahedral]] geometries<ref name=":2">{{Cite journal |last1=J. |first1=Reedijk |last2=G.C. |first2=Verschoor |date=1973-04-15 |title=Pyrazoles and imidazoles as ligands. XX. The crystal and molecular structure of hexakis(2-methylimidazole)cadmium(II) tetrafluoroborate |url=http://journals.iucr.org/b/issues/1973/04/00/a09951/a09951.pdf |journal=Acta Crystallographica B |volume=29 |issue=4 |pages=721 |doi=10.1107/S0567740873003237 |doi-access=free}}</ref><ref name=":8">{{Cite journal |last1=Tomat |first1=Elisa |last2=Cuesta |first2=Luciano |last3=Lynch |first3=Vincent M. |last4=Sessler |first4=Jonathan L. |date=2007-08-01 |title=Binuclear Fluoro-Bridged Zinc and Cadmium Complexes of a Schiff Base Expanded Porphyrin: Fluoride Abstraction from the Tetrafluoroborate Anion |journal=Inorganic Chemistry |volume=46 |issue=16 |pages=6224–6226 |doi=10.1021/ic700933p |pmid=17630733 }}</ref> for Cadmium tetrafluoroborate complexes with nitrogen-containing ligands such as [[pyrazole]]s and [[imidazole]]s<ref name=":2" /> and [[porphyrin]]s.<ref name=":8" /> Given the structural formulas for Cadmium tetrafluoroborate complexes noted in the literature<ref name=":1" /> however, such as [Cd(L)<sub>4</sub>(BF<sub>4</sub>)<sub>2</sub>], it is likely that [[Tetrahedral molecular geometry|tetrahedral]] geometries are also possible in such complexes.
+
+== Uses ==
+
+=== Electroplating ===
+The most significant, industrial use of Cd(BF<sub>4</sub>)<sub>2</sub> is in the [[electroplating]] of high-strength steels.<ref name=":3">{{Cite book  |title=Electrodeposition: The Materials Science of Coatings and Substrates |last=Dini |first=J. W. |date=1993 |publisher=Noyes Publications |isbn=9780815513209}}</ref> Here, species such as cadmium tetrafluoroborate (or Cd-Ti or CdCN) are deposited on the surface of steels in an electroplating process which inhibits absorption of hydrogen onto the surface of the steels, a source of cracking following baking of the metal.<ref name=":3" /> Optimization of the electroplating process, adjusting electrolyte concentrations in Cadmium tetrafluoroborate mixes, has been explored in the literature.<ref>{{Cite journal |last1=Zagurskii |first1=I. N. |last2=Ozerov |first2=A. M. |date=1973 |title=Cadmium plating of steel wire in hydrogen tetrafluoroborate electrolytes |journal=Zashchita Metallov |publisher=Volgograd. INst. INzh. Gor. Khoz. |volume=9 |issue=2 |pages=221–3}}</ref> Among other methods of electroplating, cadmium tetrafluoroborate baths have middling efficiency. It has, for instance, been demonstrated that traditional cyanide bathes (e.g. CdCN or ZnCN) and variants there-of provide more efficient distribution of [[current density]] during electroplating, resulting in steels which could bear greater loads.<ref>{{Cite journal |last1=Geyer |first1=N. M. |last2=Lawless |first2=G. W. |last3=Cohen |first3=B. |date=1958-11-14 |title=A New Look at the Hydrogen Embrittlement of Cadmium Coated High Strength Steels. Period Covered: January 1956 to May 1958 |osti=4286738}}</ref>
+
+=== Nanomaterials ===
+A method of [[Chemical milling|etching]] of CdTe nanocrystals which removes Cd from the surface of the nano-structures via attack by tetrafluoroborate anions has been reported in the literature.<ref name=":4">{{Cite journal |last1=Liu |first1=Jianbo |last2=Yang |first2=Xiaohai |last3=Wang |first3=Kemin |last4=Wang |first4=Dong |last5=Zhang |first5=Pengfei |date=2009-10-06 |title=Chemical etching with tetrafluoroborate: a facile method for resizing of CdTe nanocrystals under mild conditions |journal=Chemical Communications |issue=40 |pages=6080–2 |doi=10.1039/B910752E|pmid=19809650 }}</ref> While the presence of Cd-F surface bonds and dissociation of Cd from the surface of the nano-structures are clear from the investigation, complex formation of Cd with BF<sub>4</sub><sup>−</sup> in solution was not discussed though may be inferred from the [[Spectrophotometry|spectrophotometric]] results.<ref name=":4" />
+
+=== Determination of boron in steels by solvent extraction ===
+Methodology has been reported for the determination of boron concentration in steels using cadmium tetrafluoroborate complex formation during [[Liquid–liquid extraction|solvent extraction]] to facilitate indirect [[Atomic absorption spectroscopy|atomic absorption]] measurements.<ref name=":5">{{cite journal |last1=Hayashi |first1=Y. |last2=Matsushita |first2=S. |last3=Kumamaru |first3=T. |last4=Yamamoto |first4=Y. |title=Indirect atomic-absorption determination of boron by solvent extraction as tris(1,10-phenanthroline)cadmium tetrafluoroborate |journal=Talanta |date=April 1973 |volume=20 |issue=4 |pages=414–416 |doi=10.1016/0039-9140(73)80171-7|pmid=18961297 }}</ref> Tetrafluoroborate, formed from acid extraction of boron for a steel sample using [[boric acid]], associates with a transition metal complex of Cd<sup>2+</sup> and forms a complex which is measureable by atomic absorption spectroscopy.<ref name=":5" /> Similar procedures have been implemented for the same purpose using other transition metals<ref>{{cite journal |last1=Donaldson |first1=E. |title=Spectrophotometric determination of boron in iron and steel with curcumin after separation by 2-ethyl-1,3-hexanediol-chloroform extraction |journal=Talanta |date=November 1981 |volume=28 |issue=11 |pages=825–831 |doi=10.1016/0039-9140(81)80024-0|pmid=18963014 }}</ref> and for determination of boron in high-purity [[silicon]] using other cadmium tetrafluoroborate transition metal complexes.<ref>{{Cite journal |last1=Liu |first1=C. Y. |last2=Chen |first2=P. Y. |last3=Lin |first3=H. M. |last4=Yang |first4=M. H. |date=1985-01-01 |title=Determination of boron in high-purity silicon and trichlorosilane indirectly by measurement of cadmium in tris (1,10-phenanthroline) cadmium tetrafluoroborate |journal=Fresenius' Zeitschrift für analytische Chemie |volume=320 |issue=1 |pages=22–28 |doi=10.1007/BF00481073|s2cid=91528317 }}</ref>
+
+== Hazards and Safety ==
+
+=== Biological hazards, safety, and treatment ===
+Cadmium tetreafluoroborate is a caustic substance, particularly when in aqueous solution. Multiple routes of exposure, such as ingestion, inhalation, or contact with the skin or [[mucous membrane]]s, are available through contact with aqueous cadmium tetrafluorobromate.<ref name=":6">{{Cite web |url=http://www.sigmaaldrich.com/catalog/product/aldrich/481734?lang=en&region=US |title=Cadmium tetrafluoroborate solution 481734 |website=Sigma-Aldrich |access-date=2017-05-05}}</ref><ref name=":7">{{Cite web |url=https://toxnet.nlm.nih.gov/cgi-bin/sis/search2/r?dbs+hsdb:@term+@rn+@rel+14486-19-2. |title=TOXNET |website=toxnet.nlm.nih.gov |access-date=2017-05-05}}</ref> Target biological systems following exposure include the lungs, kidneys, and liver.<ref name=":6" /><ref name=":7" /> Symptoms of cadmium tetrafluoroborate exposure include nausea, vomiting, fever, irritation of the mucous membranes (e.g. upper respiratory tract, eyes) and skin, coughing, wheezing, or difficulty breathing.<ref name=":6" /> The mechanism of toxicity of this substance is related to [[cadmium poisoning]] and exposure to [[Boronic acid|borates]] and [[hydrofluoric acid]].<ref name=":7" /> The compound functions in solution as a weakly acidic inorganic salt, neutralizing bases.<ref>{{Cite web |url=https://cameochemicals.noaa.gov/chemical/8373 |title=CADMIUM FLUOROBORATE {{!}} CAMEO Chemicals {{!}} NOAA |last=GOV |first=NOAA Office of Response and Restoration, US |website=cameochemicals.noaa.gov |access-date=2017-05-05}}</ref> After initial exposure, thorough rising of the affected area with water is recommended. However, seeking medical attention is strongly advised as treatment for exposure to Cd or F containing compounds such as cadmium tetrafluoroborate generally involves [[Intravenous therapy|intravenous]] administration (I.V.) of calcium chloride and sodium bicarbonate for the purpose of maintaining blood pH and sequestering Cd<sup>2+</sup> and BF<sub>4</sub><sup>−</sup> in [[Solubility|insoluble]] salts.<ref name=":7" />
+
+=== Chronic exposure ===
+Chronic exposure to this substance may have negative health consequences. According to its OSHA, IARC, and ACGIH ratings, cadmium tetrafluoroborate is recognized as a carcinogenic substance.<ref name=":3" /><ref name=":7" /><ref>{{Cite web |url=https://chem.nlm.nih.gov/chemidplus/rn/14486-19-2 |title=ChemIDplus – 14486-19-2 – NXOFSPIMFJTFSE-UHFFFAOYSA-N – Cadmium fluoborate – Similar structures search, synonyms, formulas, resource links, and other chemical information. |last=Chambers |first=Michael |website=chem.nlm.nih.gov |access-date=2017-05-05}}</ref><ref>{{Cite web |url=http://monographs.iarc.fr/ENG/Classification/index.php |title=IARC Monographs- Classifications |website=monographs.iarc.fr |access-date=2017-05-05}}</ref> Further effects of chronic exposure may include [[hypocalcaemia]] and [[edema]]s of the respiratory system.<ref name=":6" />
+
+=== Non-biological hazards and safety ===
+Although this compound is a negligible fire hazard,<ref>{{Cite web |url=http://www.basstechintl.com/wp-content/uploads/2014/05/Cadmium-Fluoborate-3-18-14.pdf |title=Material Safety Data Sheet: Cadmium Fluoborate |date=2014 |publisher=BassTech International }}</ref> combustion of cadmium tetrafluoroborate produces hazardous decomposition products including cadmium/[[cadmium oxide]] and [[hydrogen fluoride]]. Therefore, cadmium tetrafluoroborate is stored out of direct light, in a cool environment, and away from other flammable materials.
+
+== See also ==
+*[[Hydrogen embrittlement]]
+*[[Electroplating]]
+*[[HSAB theory]]
+
+==References==
+{{reflist}}
+
+{{Cadmium compounds}}
+{{Tetrafluoroborates}}
+
+[[Category:Cadmium compounds]]
+[[Category:Tetrafluoroborates]]

@@ -1,0 +1,60 @@
+{{Short description|Computer software developer}}{{Advert|date=August 2022}}{{Infobox company
+| name = CloudSight, Inc.
+| logo = CloudSight.svg
+| type = Private
+| industry = {{unbulleted list| [[Internet]] | [[Software|Computer software]] | [[Computer vision]] }}
+| founded = {{Start date and age|2012}}
+| founders = {{Unbulleted list| Dominik Mazur|Bradford Folkens}}
+| hq_location_city = [[Los Angeles]], [[California]]
+| area_served = Worldwide
+| key_people = {{Unbulleted list|Bradford Folkens (CEO)|Chris Weilemann (CTO)}}
+| products = {{unbulleted list| CloudSight API | [[CamFind]] | TapTapSee }}
+| website = {{URL|https://CloudSight.ai}}
+}}
+
+'''CloudSight, Inc.''' is a Los Angeles, CA-based technology company that specializes in [[image captioning]] and understanding.
+
+==History==
+
+CloudSight was founded in 2012 by Dominik Mazur and Bradford Folkens. It was previously known as Image Searcher, Inc. and then CamFind, Inc., respectively. In 2016, the company was officially rebranded as CloudSight, Inc.<ref>{{cite web|title=ImageSearcher Inc.|url=https://relationshipscience.com/organization/imagesearcher-inc-149488082|website=relationshipscience.com|access-date=2021-11-18}}</ref>
+
+As of August, 2022, CloudSight has 15+ granted patents for its technology.<ref>{{cite web|last1=Dove|first1=Jackie|title=CamFind Launches CloudSight API to Advance Visual Search|url=https://thenextweb.com/creativity/2015/02/24/camfind-launches-cloudsight-api-for-multiplatform-visual-search-functionality/|website=The Next Web|access-date=21 September 2017|date=24 February 2015}}</ref> To date, CloudSight has recognized over 1 billion images. This dataset becomes invaluable for [[Artificial neural network|neural network training]] and the development of [[artificial intelligence]].<ref>{{cite web|last1=Weinglass|first1=Simona|title=CamFind, which aims to be the Google of visual search, raises $4.8M in seed funding|url=http://www.geektime.com/2015/02/24/camfind-which-aims-to-be-the-google-of-visual-search-raises-4-8m-in-seed-funding/|website=Geektime|access-date=21 September 2017|date=24 February 2015}}</ref>
+
+== Products ==
+
+=== TapTapSee ===
+
+On October 11, 2012, CloudSight released its first [[mobile application]] into the [[App Store (iOS)|AppStore]], TapTapSee.<ref>{{cite web|title=Visual Search App CamFind Passes 1M Downloads, Makes Its API Public|url=https://techcrunch.com/2013/10/31/camfind/|website=techcrunch.com|access-date=2021-11-18}}</ref>
+
+TapTapSee is a [[mobile camera]] application designed specifically for the [[Blindness|blind]] and [[visually impaired]] iOS and Android users. Its image recognition capabilities are powered by CloudSight API. The application utilizes the device’s camera and [[VoiceOver]] functions to photograph objects and identify them out loud for the user.<ref>{{cite web|last1=Sanders|first1=James|title=Virtual reality targeted at the visually-impaired|url=http://vator.tv/news/2017-08-23-virtual-reality-targeted-to-the-visually-impaired|website=Vator|access-date=21 September 2017|date=23 August 2017}}</ref><ref>{{cite web|last1=Morlin-Yron|first1=Sophie|title=The app lending eyes to the blind|url=http://edition.cnn.com/2016/11/24/africa/be-specular-app-helps-the-blind/index.html|publisher=CNN.com|access-date=21 September 2017}}</ref>
+
+TapTapSee was the 2014 recipient of the Access Award by the [[American Foundation for the Blind]].<ref>{{cite web|title=American Foundation for the Blind Announces 2014 Access Award Winners|url=http://www.afb.org/info/about-us/press-room/american-foundation-for-the-blind-announces-2014-access-award-winners/125|website=AFB|access-date=21 September 2017|language=en|archive-url=https://web.archive.org/web/20170323230832/http://www.afb.org/info/about-us/press-room/american-foundation-for-the-blind-announces-2014-access-award-winners/125|archive-date=23 March 2017|url-status=dead}}</ref> In March 2013, TapTapSee was named App of the Month by the [[Royal National Institute for the Blind]]. At the end of 2013, TapTapSee was elected into the AppleVis iOS Hall of Fame.<ref>{{cite web|title=Seeing eye-phone? App helps blind know what they're looking|url=https://www.cbsnews.com/news/seeing-eye-phone-app-helps-blind-know-what-theyre-looking-at/|work=CBS News|access-date=21 September 2017}}</ref>
+
+=== CamFind ===
+On April 7, 2013, CloudSight released its second mobile application into the AppStore, [[CamFind]]. The mobile application surpassed 1,000,000 downloads within the first seven months after its release into the Apple AppStore.<ref>{{cite web|last1=Shu|first1=Catherine|title=Visual Search App CamFind Passes 1M Downloads, Makes Its API Public|url=https://techcrunch.com/2013/10/31/camfind/|website=TechCrunch|access-date=21 September 2017|language=en}}</ref>
+
+CamFind is a [[visual search engine]] application that utilizes image recognition to photograph, identify, and provide information on any object, at any angle. Its image recognition capabilities are powered by CloudSight API.<ref>{{cite web|title=Visual Search App CamFind Passes 1M Downloads, Makes Its API Public|url=https://techcrunch.com/2013/10/31/camfind/|website=techcrunch.com|access-date=2021-11-18}}</ref>
+
+CamFind is available in the [[Apple Applications Store|Apple AppStore]] and [[Google Play Store]] where it received 11,000,000+ downloads as of 2022 combined between Apple Store and Google Play Store. In February 2015, CamFind was released on [[Google Glass]] via MyGlass.<ref>{{cite web|last1=Takahashi|first1=Dean|title=CamFind app brings accurate visual search to Google Glass|url=https://venturebeat.com/2014/09/24/camfind-app-brings-accurate-visual-search-to-google-glass-exclusive/|website=VentureBeat|date=24 September 2014|access-date=21 September 2017}}</ref>
+
+In April 2015, CloudSight evolved CamFind a step further by releasing [[social network]] capabilities within the application. The app now features the ability for users to share the items they identify, as well as see the items that others are identifying with CamFind.<ref>{{cite news|last1=Dove|first1=Jackie|title=CamFind Mobile Visual Search App Now Has a Social Network|url=https://thenextweb.com/creativity/2015/04/16/camfind-visual-search-app-for-iphone-and-android-now-features-a-social-network/|newspaper=TNW &#124; Creativity|access-date=21 September 2017|date=16 April 2015}}</ref>
+
+=== CloudSight API ===
+
+In September 2013, CloudSight released its CloudSight API to the general public.<ref>{{cite web|last1=Wagner|first1=Janet|title=Developers of CamFind App Release Image Recognition API to General Public|url=https://www.programmableweb.com/news/developers-camfind-app-release-image-recognition-api-to-general-public/brief/2013/09/18|website=ProgrammableWeb|date=18 September 2013|access-date=21 September 2017|language=en}}</ref>
+
+"The CloudSight API employs [[deep learning]], a technology that simulates the [[human brain]], 'learning' from its mistakes over time, and is the same technology powering CamFind."<ref>{{cite web|last1=Sawers|first1=Paul|title=CamFind raises $5M and launches its image-recognition API for any developer to use|url=https://venturebeat.com/2015/02/24/camfind-raises-5m-and-launches-its-image-recognition-api-for-any-developer-to-use/|website=VentureBeat|date=24 February 2015|access-date=21 September 2017}}</ref>
+
+=== Google Cloud Marketplace ===
+
+On June 2, 2020, CloudSight announced availability of their neural network products on Google Cloud Marketplace as part of a collaboration with Google Cloud.<ref>{{cite web|title=CloudSight Now Available on Google Cloud Marketplace|url=https://news.yahoo.com/cloudsight-now-available-google-cloud-131500387.html|website=Yahoo! News|access-date=12 August 2020|language=en}}</ref>
+
+== References ==
+{{Reflist}}
+
+[[Category:Mobile technology companies]]
+[[Category:American companies established in 2012]]
+[[Category:Technology companies based in Greater Los Angeles]]
+[[Category:Software companies of the United States]]
+[[Category:Applications of artificial intelligence]]
+[[Category:2012 establishments in California]]

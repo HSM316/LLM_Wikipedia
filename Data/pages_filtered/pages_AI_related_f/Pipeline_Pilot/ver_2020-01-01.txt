@@ -1,0 +1,41 @@
+Pipeline Pilot is a desktop software program developed by Accelrys Enterprise Platform to process and analyze data. Originally used in the natural sciences, the product's basic ETL (Extract, transform, load) and analytics capabilities have been broadened. The product is now used for data science, ETL, reporting, prediction and analytics in a number of sectors. The main feature of the product is the ability to design data workflows using a graphical user interface. The program is an example of visual and dataflow programming. It has use in a variety of settings, such as  cheminformatics and QSAR, Next Generation Sequencing, image analysis, and text analytics.
+
+ History 
+
+The product was created by SciTegic. BIOVIA subsequently acquired SciTegic and Pipeline Pilot in 2004. BIOVIA was itself purchased by Dassault Systèmes in 2014. The product expanded from an initial focus on chemistry to include general extract, transform and load (ETL) capabilities. Beyond the base product, Dassault has added analytical and data processing collections for report generation, data visualization and a number of scientific and engineering sectors. Currently, the product is used for ETL, analytics and machine learning in the chemical, energy, consumer packaged goods, aerospace, automotive and electronics manufacturing industries.
+
+ Overview 
+
+Pipeline Pilot is part of a class of software products that provide user interfaces for manipulating and analyzing data. Pipeline Pilot and similar products allow users with limited or no coding abilities to transform and manipulate datasets. Usually, this is a precursor to conducting analysis of the data. Like other graphical ETL products, it enables users to pull from different data sources, such as CSV files, text files and databases.
+
+ Components, pipelines, protocols and data records 
+
+The graphical user interface, called the Pipeline Pilot Professional Client, allows users to drag and drop discrete data processing units called "components". Components can load, filter, join or manipulate data. Components can also perform much more advanced data manipulations, such as building regression models, training neural networks or processing datasets into PDF reports.
+
+Pipeline Pilot implements a Components paradigm. Components are represented as nodes in a workflow. In a mathematical sense, components are modeled as nodes in a directed graph: "pipes" (graph edges) connect components and move data along the from node to node where operations are performed on the data. Users have the choice to use predefined components, or to develop their own. To help in industry-specific applications, such as Next Generation Sequencing (see High-throughput sequencing (HTS) methods), BIOVIA has developed components that greatly reduce the amount of time users need to do common industry-specific tasks.
+
+Users can choose from components that come pre-installed or create their own components in workflows called "protocols". Protocols are sets of linked components. Protocols can be saved, reused and shared. Users can mix and match components that are provided with the software from BIOVIA with their own custom components. Connections between two components are called "pipes", and are visualized in the software as two components connected by a pipe. End users design their workflows/protocols, then execute them by running the protocol. Data flows from left to right along the pipes.
+
+Modern data analysis and processing can involve a very large number of manipulations and transformations. One major feature of Pipeline Pilot is the ability to visually condense a lengthy series of data manipulations that involve many components. A workflow of any length can be visually condensed into a component that is used in a high level workflow. This means that a protocol can be saved and used as a component in another protocol. In the terminology used in Pipeline Pilot, protocols that are used as components in other protocols are called "subprotocols". This allows users to add layers of complexity to their data processing and manipulation workflows, then hide that complexity so they can design the workflow at a higher level of abstraction.
+
+ Component collections 
+
+Pipeline Pilot features a number of add-ons called "collections". Collections are groups of specialized functions like processing genetic information or analyzing polymers offered to end users for an additional licensing fee. Currently, there are a number of these collections.
+
+ Group  Domain  Component collectionScience specific Chemistry  Chemistry  ADMET  Cheminformatics Biology  Gene Expression  Sequence Analysis  Mass Spectrometry for Proteomics  Next Generation Sequencing Materials Modeling & Simulation  Materials Studio  Polymer Properties (Synthia)Generic Reporting & Visualization  Reporting  Database & Application Integration  Integration  Imaging  Imaging Analysis & Statistics  Data Modeling  Advanced Data Modeling  R StatisticsDocument Search & Analysis  Chemical Text Mining Text Analytics Laboratory Plate Data Analytics  Analytical Instrumentation 
+
+Given the number of different add-ons now offered by BIOVIA, Pipeline Pilot's use cases are very broad and difficult to summarize succinctly. The product has been used in:
+ Predictive maintenance
+ Image analysis, for example the determination of the inhibitory action of a substance on biological processes (IC50) by calculating the dose–response relationship directly from information extracted from high-content screening assay images, associated with dilution in the plate layout and chemistry information about the tested compounds (Imaging, Chemistry, Plate Data Analytics)
+ A recommender system for scientific literature based on a Bayesian model built using fingerprint and user's reading list or papers ranking
+ Access to experiment methods and results from electronic laboratory notebook or laboratory information management system, with resulting reports for resource capacity planning
+
+ PilotScript and custom scripts 
+
+As with other ETL and analytics solutions, Pipeline Pilot is often used when one or more large (1TB+) and/or complex datasets is processed. In these situations, end users may want to utilize programming scripts that they have written. Early in its development, Pipeline Pilot created a simplified, pared-down scripting language called PilotScript that enabled end users to easily write basic programming scripts that could be incorporated into a Pipeline Pilot protocol. Later releases extended support for a variety of programming languages, including Python, .NET, Matlab, Perl, SQL, Java, VBScript and R.
+
+The syntax for PilotScript is based on PLSQL. It can be used in components such as the Custom Manipulator (PilotScript) or the Custom Filter (PilotScript). As an example, the following script can be used to add a property named "Hello" to each record passing through a custom scripting component in a Pipeline Pilot protocol. The value of the property is the string "Hello World!".
+
+Hello := "Hello World!";
+
+Currently, the product supports a number of APIs for different programming languages that can be executed without the program's graphical user interface.

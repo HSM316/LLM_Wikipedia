@@ -1,0 +1,67 @@
+A '''digital object memory''' ('''DOMe''') is a [[Digital data|digital]] [[Computer data storage|storage]] space intended to keep permanently all related information about a concrete physical object instance that is collected during the lifespan of this object<ref>{{cite book|last=Haupert|first=Jens|title=DOMeMan : Repräsentation, Verwaltung und Nutzung von digitalen Objektgedächtnissen|year=2013|publisher=AKA Verlag|isbn=978-3-89838-339-4}}</ref>  and thus forms a basic building block for the [[Internet of Things]] (IoT)<ref>{{cite news|last=Ashton|first=Kevin|title=That 'Internet of Things' Thing, in the real world things matter more than ideas|url=http://www.rfidjournal.com/articles/view?4986|newspaper=RFID Journal|date=June 22, 2009}}</ref> by connecting digital information with physical objects.<ref>{{cite book|last=Wahlster|first=Wolfgang|title=SemProM, Foundations of Semantic Product Memories for the Internet of Things|year=2013|publisher=Springer Berlin Heidelberg|isbn=978-3-642-37376-3|url=http://scidok.sulb.uni-saarland.de/volltexte/2013/5073/}}</ref>
+
+Such memories require each object instance to be uniquely identified and this [[Identifier (computer science)|ID]] to be attached to the physical object. The underlying techniques to create identification codes and to attach them to objects are manifold but [[Machine-readable medium|machine-readable]] techniques are mandatory. Commonly used are [[barcode]]s with one or two dimensions (e.g. [[QRcode]] or [[DataMatrix]]) and radio based tags like [[RFID]] or [[Near field communication|NFC]]. Such codes or tags are a low cost solution but demand an underlying server infrastructure to host the memory data.
+
+[[File:DOMe Ontology.svg|thumb|A taxonomy of Digital Object Memories (DOMe)]]
+
+== Active digital object memories ==
+In contrast to the mentioned memories providing only a passive storage space, the more sophisticated '''active digital object memories''' ('''ADOMe''') are based on [[embedded systems]] in terms of [[cyber-physical system]]s (CPS) and provide on the hardware side
+* a [[microprocessor]],
+* memory, 
+* [[microsensor]] systems, 
+* [[positioning chip]]s, 
+* radio modules for [[web connectivity]], 
+* possibly [[actuator]]s, 
+* its own energy supply or [[Energy Harvesting|energy-harvesting]] unit
+and on the software side there are 
+* [[memory management]] functions, 
+* sensor interpretation components, 
+* and possibly sensor fusion software modules, 
+* state transformation and processing logic components, 
+* [[communication interface]]s, 
+* user interfaces, 
+* and security modules.
+
+Such active memories allow for "on-object" processing of object-related tasks, such as condition monitoring, compilation of associated data, and memory clean-up. In addition to strictly passive memories (storage space is located in the web as mentioned above) and active memories (with "on-object" storage) hybrid forms are also available, that perform simple tasks "on-product", outsource more complex tasks to server-based infrastructures, and keep both representations in sync.
+
+== Digital product memory ==
+'''Digital product memories''' ('''DPM''') are a subclass of digital object memories, which include memories for all artifacts that were intentionally created such as containers and pieces of art or valuable and rare natural objects such as a marble plate or a lump of gold.  Such objects don't have all the attributes of industrial products, but nevertheless a digital black box attached to them for [[lifelogging]] can make sense for specific applications.<ref>{{cite journal|last=Wahlster|first=Wolfgang|title=Digital product memory: embedded systems keep a diary|journal=Harting tec.News 15|year=2007|pages=7–9}}</ref>
+
+== Semantic product memory ==
+'''Semantic product memories''' ('''SemProM''') go beyond that, since they provide a machine-understandable meaning description of their contents based on semantic web technologies. If a product memory has no explicit semantic markup, only propriety software can exploit the information stored in the memory. In contrast, semantic product memories can be interpreted by any software that has access to the semantic description of the epistemological primitives and the ontologies used for capturing memory contents.
+
+== Object memory model ==
+In the context of the Object Memory Modeling Incubator Group,<ref>[http://www.w3.org/2005/Incubator/omm/XGR-omm-20111026/ OMM XG]</ref> part of the [[W3C]] Incubator Activity, an object memory format, which allows for modeling of events or other information about individual physical artifacts (ideally over their lifetime) and thus implements an '''object memory model''' ('''OMM'''), was created. The model consists of a block-based approach to partition the entire memory to groups each with associated object-related information. Each block consists of the data itself (the so-called [[payload]]) and a set of [[metadata]] attributes to describe the block content.
+
+== Related research projects ==
+
+=== SemProM ===
+Funded by the German Ministry of Education and Research, the project SemProM (Semantic Product Memory<ref>http://www.semprom.org/</ref>) employs [[smart label]]s in order to give products a digital memory and thus support intelligent applications along the product's [[Product lifecycle|lifecycle]]. By the use of integrated [[sensor]]s, relations in the production process become transparent and [[supply chain]]s as well as environmental influences retraceable. The producer gets supported and the consumer better informed about the product.
+
+=== RES-COM ===
+Funded by the German Ministry of Education and Research, the project RES-COM (Resource Conservation by Context-Activated Machine-to-Machine Communication<ref>http://www.res-com-project.org/</ref>) focuses on the development of technologies (containing interfaces, protocols and data models) for [[proactive]] resource conservation based on [[Machine to machine|M2M]]-communication. With a defined interaction with active digital object memories the project tries to leverage the integration of distributed and active components to existing centralized structures in the field of industry and manufacturing.
+
+=== Aletheia ===
+The Aletheia project<ref>http://www.aletheia-projekt.de/</ref> is a leading innovation project, sponsored by the German Ministry of Education and Research that aims at obtaining comprehensive access to product information through the use of [[semantic]] technologies. The project follows an approach which does not only consult structured data from company-owned information sources, such as product databases, to respond to inquiries, it also looks at [[unstructured data]] from office documents and [[web 2.0]] sources, such as [[wiki]]s, [[blog]]s, and [[internet forum]]s, as well as sensor and [[RFID]] data.
+
+=== ADiWa ===
+The ADiWa project (Alliance Digital Product Flow<ref>http://www.adiwa.net/</ref>), funded by the German Ministry of Education and Research, makes the huge potential of information from the Internet of Things accessible for business-relevant [[workflow]]s that can be strategically planned and manipulated. For the data-level connection of objects from the real world, results from available solutions and from the SemProM project shall be used. ADiWa focuses on [[business process]]es, which can be controlled and manipulated based on evaluated information from the real world.
+
+=== SmartProducts ===
+The SmartProducts project,<ref>{{Cite web |url=http://www.smartproducts-project.eu/ |title=Archived copy |access-date=2013-05-07 |archive-url=https://web.archive.org/web/20090323082517/http://www.smartproducts-project.eu/ |archive-date=2009-03-23 |url-status=dead }}</ref> funded by the European Union in the 7th Research Framework Programme (FP7), develops the scientific and technological basis for building "smart products" with embedded proactive knowledge. Smart products help customers, designers and workers to deal with the ever-increasing complexity and variety of modern products. Such smart products leverage proactive knowledge to communicate and co-operate with humans, other products and the environment. The project thereby also focuses on small devices with limited storage capabilities and thus also requires efficient storage mechanisms. Moreover, the project aims to apply the results achieved by the incubator group for optimizing the data exchange between different smart products.
+
+=== ToTEM ===
+Tales of Things and electronic Memory (TOTeM<ref>{{Cite web |url=http://www.youtotem.com/ |title=Archived copy |access-date=2013-05-07 |archive-url=https://web.archive.org/web/20130718001614/http://youtotem.com/ |archive-date=2013-07-18 |url-status=dead }}</ref>) is a three-year collaborative project between five universities in the United Kingdom. A project aim is to explore the implications of Internet of Things technologies for the design of novel forms of augmented memory systems. While the potential implications of the Internet of Things for supply chain management and energy consumption have been acknowledged and discussed, its application for the engagement with personal and social memories has been rarely mentioned. More and more newly manufactured objects are often tagged at production and made traceable. Tales of Things provides a design space for exploring the value of a user-generated Internet of Old Things in which people's memories are linked to objects.
+
+=== SmaProN ===
+The project Smart Product Networks (SmaProN<ref>http://iss.uni-saarland.de/de/projects/smapron</ref>), funded by the German Ministry of Education and Research, explores the dynamic linking of smart products to product bundles and product hierarchies, based on the developed Tip'n'Tell architecture (to integrate distributed product information) and the product description model SPDO (using semantic web-based representation languages).
+
+=== RAN ===
+The project RFID-Based Automotive Network (RAN<ref>http://www.autoran.de/</ref>), founded by the German Ministry of Education and Research, focuses on the development of a RFID-based hybrid control architecture and valuation methods for value added chains. Using the example of automobile industry they develop a combined data management that exchanges product-related information in a decentralized way using RFID-tags. In addition order-related information are stored in centralized manufacturer databases. Such an architecture allows for transport of product-related data at the location of the physical object and process related data in real-time via backend systems.
+
+== References ==
+{{reflist}}
+
+[[Category:Internet of things]]
+[[Category:Semantic Web]]
+[[Category:Research and development in Germany]]

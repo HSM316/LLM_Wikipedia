@@ -1,0 +1,74 @@
+In measurements, the measurement obtained can suffer from two types of uncertainties. The first is the random uncertainty which is due to the noise in the process and the measurement. The second contribution is due to the systematic uncertainty which may be present in the measuring instrument. Systematic errors, if detected, can be easily compensated as they are usually constant throughout the measurement process as long as the measuring instrument and the measurement process are not changed. But it can not be accurately known while using the instrument if there is a systematic error and if there is, how much? Hence, systematic uncertainty could be considered as a contribution of a fuzzy nature.
+
+This systematic error can be approximately modeled based on our past data about the measuring instrument and the process.
+
+Statistical methods can be used to calculate the total uncertainty from both systematic and random contributions in a measurement. But, the computational complexity is very high and hence, are not desirable.
+
+L.A.Zadeh introduced the concepts of fuzzy variables and fuzzy sets. Fuzzy variables are based on the theory of possibility and hence are possibility distributions. This makes them suitable to handle any type of uncertainty, i.e., both systematic and random contributions to the total uncertainty.
+
+Random-fuzzy variable (RFV) is a type 2 fuzzy variable, defined using the mathematical possibility theory, used to represent the entire information associated to a measurement result. It has an internal possibility distribution and an external possibility distribution called membership functions. The internal distribution is the uncertainty contributions due to the systematic uncertainty and the bounds of the RFV are because of the random contributions. The external distribution gives the uncertainty bounds from all contributions.
+
+Definition
+right|upright=2.0|Random-Fuzzy Variable
+A Random-fuzzy Variable (RFV) is defined as a type 2 fuzzy variable which satisfies the following conditions:
+ Both the internal and the external functions of the RFV can be identified.
+ Both the internal and the external functions are modeled as possibility distributions(pd).
+ Both the internal and external functions have a unitary value for possibility to the same interval of values.
+
+An RFV can be seen in the figure. The external membership function is the distribution in blue and the internal membership function is the distribution in red. Both the membership functions are possibility distributions. Both the internal and external membership functions have a unitary value of possibility only in the rectangular part of the RFV. So, all three conditions have been satisfied.
+
+If there are only systematic errors in the measurement, then the RFV simply becomes a fuzzy variable which consists of just the internal membership function. Similarly, if there is no systematic error, then the RFV becomes a fuzzy variable with just the random contributions and therefore, is just the possibility distribution of the random contributions.
+
+Construction
+
+A Random-fuzzy variable can be constructed using an Internal possibility distribution(rinternal) and a random possibility distribution(rrandom).
+
+The random distribution(rrandom)
+
+rrandom is the possibility distribution of the random contributions to the uncertainty. Any measurement instrument or process suffers from random error contributions due to intrinsic noise or other effects.
+
+This is completely random in nature and is a normal probability distribution when several random contributions are combined according to the Central limit theorem.
+
+But, there can also be random contributions from other probability distributions such as a uniform distribution, gamma distribution and so on.
+
+The probability distribution can be modeled from the measurement data. Then, the probability distribution can be used to model an equivalent possibility distribution using the maximally specific probability-possibility transformation.
+
+Some common probability distributions and the corresponding possibility distributions can be seen in the figures.
+left|upright=2.0|Normal distribution in probability and possibility.
+right|upright=2.0|Uniform distribution in probability and possibility.
+center|upright=2.0|Triangular distribution in probability and possibility.
+
+The internal distribution(rinternal)
+
+rinternal is the internal distribution in the RFV which is the possibility distribution of the systematic contribution to the total uncertainty. This distribution can be built based on the information that is available about the measuring instrument and the process.
+
+The largest possible distribution is the uniform or rectangular possibility distribution. This means that every value in the specified interval is equally possible. This actually represents the state of total ignorance according to the theory of evidence which means it represents a scenario in which there is maximum lack of information.
+
+This distribution is used for the systematic error when we have absolutely no idea about the systematic error except that it belongs to a particular interval of values. This is quite common in measurements.
+
+But, in certain cases, it may be known that certain values have a higher or lower degrees of belief than certain other values. In this case, depending on the degrees of belief for the values, an appropriate possibility distribution could be constructed.
+
+The construction of the external distribution(rexternal) and the RFV
+
+After modeling the random and internal possibility distribution, the external membership function, rexternal, of the RFV can be constructed by using the following equation:
+
+ 
+
+where  is the mode of , which is the peak in the membership function of  and Tmin is the minimum triangular norm.
+
+RFV can also be built from the internal and random distributions by considering the α-cuts of the two possibility distributions(PDs).
+
+An α-cut of a fuzzy variable F can be defined as 
+
+So, essentially an α-cut is the set of values for which the value of the membership function  of the fuzzy variable is greater than α. So, this gives the upper and lower bounds of the fuzzy variable F for each α-cut.
+
+The α-cut of an RFV, however, has 4 specific bounds and is given by .  and  are the lower and upper bounds respectively of the external membership function(rexternal) which is a fuzzy variable on its own.  and  are the lower and upper bounds respectively of the internal membership function(rinternal) which is a fuzzy variable on its own.
+
+To build the RFV, let us consider the α-cuts of the two PDs i.e., rrandom and rinternal for the same value of α. This gives the lower and upper bounds for the two α-cuts. Let them be  and  for the random and internal distributions respectively.  can be again divided into two sub-intervals  and  where  is the mode of the fuzzy variable. Then, the α-cut for the RFV for the same value of α,  can be defined by 
+
+Using the above equations, the α-cuts are calculated for every value of α which gives us the final plot of the RFV.
+
+A Random-Fuzzy variable is capable of giving a complete picture of the random and systematic contributions to the total uncertainty from the α-cuts for any confidence level as the confidence level is nothing but 1-α.
+
+An example for the construction of the corresponding external membership function(rexternal) and the RFV from a random PD and an internal PD can be seen in the following figure.
+center|upright=3.0|Construction of an external membership function and the RFV from internal and random possibility distributions.

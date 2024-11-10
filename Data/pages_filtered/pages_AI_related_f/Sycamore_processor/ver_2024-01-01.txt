@@ -1,0 +1,12 @@
+right|The Sycamore processor
+Sycamore is a transmon superconducting quantum processor created by Google's Artificial Intelligence division. It has 53 qubits.
+
+In 2019, Sycamore completed a task in 200 seconds that Google claimed, in a Nature paper, would take a state-of-the-art supercomputer 10,000 years to finish. Thus, Google claimed to have achieved quantum supremacy. To estimate the time that would be taken by a classical supercomputer, Google ran portions of the quantum circuit simulation on the Summit, the most powerful classical computer in the world. Later, IBM made a counter-argument, claiming that the task would only take 2.5 days on a classical system like Summit. If Google's claims are upheld, then it would represent an exponential leap in computing power.
+
+In August 2020, quantum engineers working for Google reported the largest chemical simulation on a quantum computer – a Hartree–Fock approximation with Sycamore paired with a classical computer that analyzed results to provide new parameters for the 12-qubit system.
+
+In April 2021, researchers working with Sycamore reported that they were able to realize the ground state of the toric code, a topologically ordered state, with 31 qubits. They showed long-range entanglement properties of the state by measuring non-zero topological entropy, simulating anyon interferometry and their braiding statistics, and preparing a topological quantum error correcting code with one logical qubit.
+
+In July 2021, a collaboration consisting of Google and multiple universities reported the observation of a discrete time crystal on the Sycamore processor. The chip of 20 qubits was used to obtain a many-body localization configuration of up and down spins. The configuration was stimulated with a laser to achieve a periodically driven "Floquet" system where all up spins are flipped for down and vice versa in periodic cycles which are multiples of the laser's cycles. No energy was absorbed from the laser so the system remained in a protected eigenstate order.
+
+In 2022, the Sycamore processor was used to simulate traversable wormhole dynamics.

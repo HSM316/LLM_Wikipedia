@@ -1,0 +1,24 @@
+{{Use American English|date = January 2019}}
+{{Short description|Computer recognition of written words}}
+{{Use mdy dates|date = January 2019}}
+
+'''Intelligent Word Recognition''', or '''IWR''',<ref>{{Cite web|url=https://www.acronymfinder.com/Intelligent-Word-Recognition-(IWR).html|title=IWR - Intelligent Word Recognition {{!}} AcronymFinder|website=www.acronymfinder.com|access-date=2019-02-28}}</ref> is the recognition of unconstrained handwritten words.<ref>{{Cite web|url=https://www.efilecabinet.com/what-is-iwr-intelligent-word-recognition-how-is-it-related-to-document-management/|title=What is IWR? (Intelligent Word Recognition)|date=2016-01-04|website=eFileCabinet|language=en-US|access-date=2019-02-28}}</ref> IWR recognizes entire handwritten words or phrases instead of character-by-character, like its predecessor, [[optical character recognition]] (OCR).<ref>{{Cite web|url=https://www.a2ia.com/en/intelligent-character-recognition-icr|title=intelligent-character-recognition-icr}}</ref> IWR technology matches handwritten or printed words to a user-defined dictionary, significantly reducing character errors encountered in typical character-based recognition engines.  
+
+New technology on the market utilizes IWR, [[Optical character recognition|OCR]], and [[Intelligent character recognition|ICR]] together, which opens many doors for the processing of documents, either constrained (hand printed or machine printed) or unconstrained (freeform cursive). IWR also eliminates a large percentage of the manual [[Data entry clerk|data entry]] of handwritten documents that, in the past, could only be keyed by a human, creating an automated workflow.
+
+When cursive handwriting is in play, for each word analyzed, the system breaks down the words into a sequence of graphemes, or subparts of letters. These various curves, shapes and lines make up letters and IWR considers these various shape and groupings in order to calculate a confidence value associated with the word in question.<ref>{{Cite journal|title=Fuzzy system for intelligent word recognition using a regular grammar|pages=45–53|journal=Journal of Applied Logic|volume=24|doi=10.1016/j.jal.2016.11.023|date=November 2017|last1=Álvarez|first1=D.|last2=Fernández|first2=R.A.|last3=Sánchez|first3=L.}}</ref>
+
+IWR is not meant to replace [[Intelligent character recognition|ICR]] and [[Optical character recognition|OCR]] engines which work well with printed data; however, IWR reduces the number of character errors associated with these engines, and it is ideal for processing real-world documents that contain mostly freeform, hard-to-recognize data, inherently unsuitable for them.<ref>{{Cite web|url=https://www.igi-global.com/dictionary/digital-documents-recognition/42848|title=What is Intelligent Word Recognition {{!}} IGI Global|website=www.igi-global.com|access-date=2019-02-28}}</ref>
+
+==See also==
+* [[AI effect]]
+* [[Handwriting recognition]]
+* [[Optical character recognition]]
+
+; Lists
+* [[List of emerging technologies]]
+* [[Outline of artificial intelligence]]
+
+== References ==
+<references />
+[[Category:Artificial intelligence]]

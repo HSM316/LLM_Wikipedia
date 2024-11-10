@@ -1,0 +1,16 @@
+{{Multiple issues|
+{{COI|date=April 2016}}
+{{technical|date=April 2016}}
+}}
+
+'''Agent mining''' is an interdisciplinary area that synergizes [[Multi-agent system|multiagent systems]] with [[data mining]] and [[machine learning]].<ref>{{Cite web|url=https://link.springer.com/journal/10458/25/3/page/1|title=Special issue on Agent mining, Autonomous Agents and Multi-Agent Systems}}</ref><ref>{{Cite journal|last=Cao|first=Longbing|last2=Weiss|first2=Gerhard|last3=Yu|first3=Philip|year=2012|title=A Brief Introduction to Agent Mining|journal=Autonomous Agents and Multi-Agent Systems|volume=25|issue=3|pages=419–424|doi=10.1007/s10458-011-9191-4}}</ref>
+
+The interaction and integration between multiagent systems and data mining have a long history.<ref>{{Cite journal|title=Special issue on Agents and Data Mining, IEEE Intelligent Systems|journal=IEEE Intelligent Systems|volume=24|issue=3|pages=14–15|doi=10.1109/MIS.2009.54|year=2009|last1=Cao|first1=Longbing|last2=Gorodetsky|first2=Vladimir|last3=Mitkas|first3=Pericles A.}}</ref><ref>{{Cite journal|last=Cao|first=Longbing|last2=Gorodetsky|first2=Vladimir|last3=Mitkas|first3=Pericles A.|year=2009|title=Agent Mining: The Synergy of Agents and Data Mining|journal=IEEE Intelligent Systems|volume=24|issue=3|pages=64–72|doi=10.1109/MIS.2009.45}}</ref> The very early work on agent mining focused on agent-based knowledge discovery,<ref>{{Cite journal|last=Davies|first=W.|last2=Edwards|first2=P.|year=1995|title=Agent-Based Knowledge Discovery|journal=Working Notes of the AAAI Spring Symp. Information Gathering from Heterogeneous, Distributed Environments|pages=34–37}}</ref> agent-based distributed data mining,<ref>{{Cite journal|last=Klusch|first=M.|last2=Lodi|first2=S.|last3=Moro|first3=G.|year=2003|title=Agent-Based Distributed Data Mining|journal=LNCS |volume=2586|pages=104–122}}</ref><ref>{{Cite journal|last=Kargupta|first=H.|last2=Hamzaoblu|first2=I.|last3=Stafford|first3=B.|year=1997|title=Scalable Distributed Data Mining Using an Agent-Based Architecture|journal=Proc. 3rd Int'l Conf. Knowledge Discovery and Data Mining (KDD 97)|pages=211–214}}</ref> and agent-based distributed machine learning,<ref>{{Cite book|last=Weiss|first=G.|year=1998|title=A Multiagent Perspective of Parallel and Distributed Machine Learning|journal=Agents 98|pages=226–230|doi=10.1145/280765.280806|isbn=978-0897919838}}</ref> and using data mining to enhance agent intelligence.<ref>{{Cite book|title=Agent Intelligence through Data Mining|last=Symeonidis|first=A.|last2=Mitkas|first2=P.|publisher=Springer|year=2005}}</ref>
+
+The International Workshop on Agents and Data Mining Interaction<ref>{{Cite web|url=http://www.agentmining.org|title=ADMI workshops}}</ref> has been held for more than 10 times, co-located with the International Conference on Autonomous Agents and Multi-Agent Systems. Several proceedings are available from Springer [[Lecture Notes in Computer Science]].
+
+== References ==
+{{reflist}}
+
+[[Category:Multi-agent systems| ]]
+[[Category:Data mining]]

@@ -1,0 +1,32 @@
+{{for|the editing paradigm|WYSIWYM}}
+
+'''What you see is what you meant''' ('''WYSIWYM''') is a text editing [[interaction technique]] that emerged from two projects at [[University of Brighton]]. It allows users to create abstract [[knowledge representation]]s such as those required by the [[Semantic Web]] using a natural language interface. [[Natural language understanding]] (NLU) technology is not employed. Instead,  [[natural language generation]] (NLG) is used in a highly interactive manner.
+
+The text editor accepts repeated refinement of a selected span of text as it becomes increasingly less vacuous of authored semantics. Using a mouse, a text property held in the evolving text can be further refined by a set of options derived by NLG from a built-in [[ontology]]. An invisible representation of the semantic knowledge is created which can be used for multilingual document generation, formal knowledge formation, or any other task that requires formally specified information.<ref>{{Cite web|url = http://oro.open.ac.uk/39116/1/Thesis_Final.pdf|title = Generating Natural Language Explanations For Entailments In Ontologies|date = 2013|access-date = 10 November 2014|website = Open Research Online|publisher = The Open University|last = Nguyen|first = Tu}}</ref>
+
+The two projects at Brighton worked in the field of Conceptual Authoring to lay a foundation for further research and development of a Semantic Web Authoring Tool (SWAT). This tool has been further explored as a means for developing a knowledge base by those without prior experience with Controlled Natural Language tools.<ref>{{Cite journal|url = http://oro.open.ac.uk/40385/|title = How easy is it to learn a controlled natural language for building a knowledge base?|last = Williams|first = Sandra|date = 13 June 2014|journal = Fourth Workshop on Controlled Natural Language, 20–22 August 2014, Galway, Ireland (Forthcoming), Springer International Publishing AG.|volume = 8625|pages = 20–32|access-date = 10 November 2014|isbn = 9783319102221}}</ref>
+
+==See also==
+*[[Semantic markup]]
+* [[Web Ontology Language|OWL [Web Ontology Language]]]
+* [[WYSIWYM]]
+* [[Protégé (software)]]
+
+== References ==
+<references />
+
+==External links==
+* Nguyen, Tu (2013).  ''[http://oro.open.ac.uk/39116/ Generating Natural Language Explanations For Entailments In Ontologies.]  ''PhD thesis The Open University.
+* [http://mcs.open.ac.uk/nlg/research/Conceptual_Authoring.html Conceptual Authoring] at Natural Language Generation group of the Open University
+* [http://mcs.open.ac.uk/nlg/SWAT/ SWAT: Semantic Web Authoring Tool] research project
+* [http://mcs.open.ac.uk/nlg/old_projects/wysiwym/ WYSIWYM home page]
+
+{{DEFAULTSORT:WYSIWYM (interaction technique)}}
+[[Category:Knowledge representation]]
+[[Category:Natural language generation]]
+[[Category:Ontology (information science)]]
+[[Category:Ontology editors]]
+[[Category:Semantic Web]]
+
+
+{{text-editor-stub}}

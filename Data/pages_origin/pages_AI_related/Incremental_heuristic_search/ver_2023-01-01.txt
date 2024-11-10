@@ -1,0 +1,31 @@
+{{Short description|Search algorithm}}
+{{Graph search algorithm}}
+
+'''Incremental heuristic search''' algorithms combine both incremental and heuristic search to speed up searches of sequences of similar search problems, which is important in domains that are only incompletely known or change dynamically.<ref>S. Koenig, M. Likhachev, Y. Liu and D. Furcy. Incremental Heuristic Search in Artificial Intelligence. Artificial Intelligence Magazine, 25(2), 99-112, 2004.</ref> Incremental search has been studied at least since the late 1960s. Incremental search algorithms reuse information from previous searches to speed up the current search and solve search problems potentially much faster than solving them repeatedly from scratch.<ref>[[Narsingh Deo|N. Deo]] and C. Pang. Shortest-path algorithms: Taxonomy and Annotation.  Networks 14, 275–323, 1984.</ref> Similarly, heuristic search has also been studied at least since the late 1960s.
+
+Heuristic search algorithms, often based on [[A* search algorithm|A*]], use heuristic knowledge in the form of approximations of the goal distances to focus the search and solve search problems potentially much faster than uninformed search algorithms.<ref>P. Hart, N. Nilsson and B. Raphael, A Formal Basis for the Heuristic Determination of Minimum Cost Paths, IEEE Trans. Syst. Science and Cybernetics, SSC-4(2), 100-107, 1968.</ref> The resulting search problems, sometimes called dynamic path planning problems, are graph search problems where paths have to be found repeatedly because the [[topology]] of the graph, its edge costs, the start [[vertex (graph theory)|vertex]] or the goal vertices change over time.<ref>N. Deo and C. Pang. Shortest-path algorithms: Taxonomy
+and Annotation.  Networks 14, 275–323, 1984.</ref>
+
+So far, three main classes of incremental heuristic search algorithms have been developed:
+
+* The first class restarts A* at the point where its current search deviates from the previous one (example: Fringe Saving A*<ref>X. Sun and S. Koenig. The Fringe-Saving A* Search Algorithm - A Feasibility Study. In Proceedings of the International Joint Conference on Artificial Intelligence (IJCAI), 2391-2397, 2007.</ref>).
+* The second class updates the h-values (heuristic, i.e. approximate distance to goal) from the previous search during the current search to make them more informed (example: Generalized Adaptive A*<ref>X. Sun, S. Koenig and W. Yeoh. Generalized Adaptive A*. In Proceedings of the International Joint Conference on Autonomous Agents and Multiagent Systems (AAMAS), 469-476, 2008.</ref>).
+* The third class updates the g-values (distance from start) from the previous search during the current search to correct them when necessary, which can be interpreted as transforming the A* search tree from the previous search into the A* search tree for the current search (examples: [[Lifelong Planning A*]],<ref>S. Koenig, M. Likhachev and D. Furcy. Lifelong Planning A*. Artificial Intelligence, 155, (1-2), 93-146, 2004.</ref> [[D*]],<ref>6. A. Stentz. The Focussed D* Algorithm for Real-Time Replanning. Proceedings of the International Joint Conference on Artificial Intelligence, 1652–1659, 1995.</ref> [[D*#D.2A Lite|D* Lite]]<ref>S. Koenig and M. Likhachev. Fast Replanning for Navigation in Unknown Terrain. Transactions on Robotics, 21, (3), 354-363, 2005.</ref>).
+
+All three classes of incremental heuristic search algorithms are different from other replanning algorithms, such as planning by analogy, in that their plan quality does not deteriorate with the number of replanning episodes.
+
+==Applications==
+Incremental heuristic search has been extensively used in [[robotics]], where a larger number of path planning systems are based on either [[D*]] (typically
+earlier systems) or D* Lite (current systems), two different incremental heuristic search algorithms.
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://www.cs.cmu.edu/~maxim/ Maxim Likhachev's page]
+* [http://idm-lab.org/project-a.html Sven Koenig's web page]
+* [https://web.archive.org/web/20161120074915/http://www.frc.ri.cmu.edu/~axs/dynamic_plan.html Anthony Stentz's web page]
+
+[[Category:Search algorithms]]
+[[Category:Robot control]]
+[[Category:Artificial intelligence]]

@@ -1,0 +1,34 @@
+'''Task Analysis, Environment Modeling, and Simulation (TAEMS or TÆMS)''' is a problem domain independent [[modeling language]] used to describe the task structures and the [[problem-solving]] activities of intelligent agents in a multi-agent environment.<ref>{{cite web|author=Keith S. Decker|title=Environment Centered Analysis and Design of Coordination Mechanisms|url=http://www.cis.udel.edu/~decker/pubs/decker-thesis-tr.pdf|work=Ph.D. Thesis at University of Massachusetts: UMass CMPSCI Technical Report 95-69|publisher=University of Delaware|year=1995}}</ref><ref>{{cite web |author=Bryan Horling |author2=Victor Lesser |author3=Regis Vincent |author4=Tom Wagner |author5=Anita Raja |author6=Shelley Zhang |author7=Keith Decker |author8=Alan Garvey |title=The Taems White Paper |year=1999 |url=ftp://mas.cs.umass.edu/pub/taemswhite.pdf |location=Multi-Agent Systems Lab |publisher=University of Massachusetts }}{{Dead link|date=June 2018 |bot=InternetArchiveBot |fix-attempted=no }}
+</ref>
+
+The intelligent agent operates in environments where:
+* responses by specific deadlines may be required
+* the information required for the optimal performance of a computational task may not be available
+* the results of the computations of multiple agents to interdependent subproblems may need to be aggregated together in order to solve a high-level goal
+* an agent may be contributing concurrently to the solution of multiple goals
+
+== Tasks ==
+
+The modeling language represents a task structure so that an intelligent agent can reason about its potential actions in the context of its working environment. The intelligent agent needs to determine what goals can and should be achieved, and what actions are needed to achieve those goals. This includes determining the implications of those actions, and of actions performed by other agents in the environment.
+
+The modeling language represents a task structure including the quantitative representation of complex task interrelationships, with the task structure model divided into generative, objective, and subjective viewpoints. The generative viewpoint describes the statistical characteristics required to generate the objective and subjective episodes in an environment; it is a workload generator. The objective viewpoint is the actual, real, instantiated task structures that are present in an episode. The subjective viewpoint is the view that the agents have of objective reality.
+
+== Coordination ==
+
+Coordination of agents is accomplished by the Generalized Partial Global Planning (GPGP) family of algorithms that are used to respond to particular features of the task structure. GPGP is a cooperative (team-oriented) coordination component that is built of modular mechanisms that work in conjunction with, but do not replace, a fully functional agent with a local scheduler. GPGP can be adapted to different problem domains, it allows agent heterogeneity, it exchanges global information, it communicates at multiple levels of abstraction, and it allows the use of a separate local scheduling component.
+
+== See also ==
+* [[Automated planning and scheduling]]
+* [[Multi-agent planning]]
+* [[Multi-agent systems]]
+* [[Software agent]]
+* [[Distributed artificial intelligence]]
+* [[Cooperative distributed problem solving]]
+* [[Stanford Research Institute Problem Solver|STRIPS]]
+* [[Hierarchical task network]]
+
+== References ==
+<references/>
+
+[[Category:Multi-agent systems]]
+[[Category:Automated planning and scheduling]]

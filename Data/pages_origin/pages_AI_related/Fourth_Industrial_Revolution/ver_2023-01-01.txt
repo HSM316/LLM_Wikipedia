@@ -1,0 +1,301 @@
+{{short description|Current trend of automation and data exchange in manufacturing technologies}}
+{{Use dmy dates|date=September 2022}}
+{{Use British English|date=November 2021}}
+{{multiple image
+| perrow = 2
+| total_width = 350
+| image1 = Ocado warehouse bots.jpg
+| image2 = Augmented reality at Museu de Mataró linking to Catalan Wikipedia (18).JPG
+| image3 = Internet of Battlefield Things.tif
+| image4 = Amazon Go - Seattle (20180804111407).jpg
+| footer = '''Fourth Industrial Revolution'''. '''Top-left''': an image of warehouse robots operating goods logistics in an [[Ocado Group|Ocado]] warehouse, managed and operated through [[artificial intelligence]] systems created by Ocado Technology. '''Top-right''': augmented tablet information of a painting in [[Mataró Museum|Museu de Mataró]], linking to Wikipedia's Catalan article on [[:ca:Jordi Arenas i Clavell|Jordi Arenas i Clavell]]. '''Bottom-left''': illustrated understanding of the [[Internet of things]] in a battlefield setting. '''Bottom-right''': customers using [[Amazon Go]], an example of "just walk out shopping" where integrated technology creates a seamless consumer journey through including [[computer vision]], [[Machine learning|deep-learning algorithms]], and [[sensor fusion]].
+}}
+
+{{Sociology}}
+{{History of technology sidebar}}
+
+The '''Fourth Industrial Revolution''', '''4IR''', or '''Industry 4.0''',<ref>{{Cite journal|last1=Bai|first1=Chunguang|last2=Dallasega|first2=Patrick|last3=Orzes|first3=Guido|last4=Sarkis|first4=Joseph|date=1 November 2020|title=Industry 4.0 technologies assessment: A sustainability perspective|url=https://www.sciencedirect.com/science/article/pii/S0925527320301559|journal=International Journal of Production Economics|language=en|volume=229|pages=107776|doi=10.1016/j.ijpe.2020.107776|s2cid=218941878|issn=0925-5273}}</ref> conceptualizes rapid change to technology, industries, and societal patterns and processes in the 21st century due to increasing interconnectivity and smart [[automation]]. The term has been used widely in scientific literature,<ref>{{cite journal |last1=Colombo |first1=Armando W. |last2=Karnouskos |first2=Stamatis |last3=Bangemann |first3=Thomas |title=Towards the Next Generation of Industrial Cyber-Physical Systems |journal=Industrial Cloud-Based Cyber-Physical Systems |date=2014 |pages=1–22 |doi=10.1007/978-3-319-05624-1_1 |isbn=978-3-319-05623-4 |url=http://dx.doi.org/10.1007/978-3-319-05624-1_1}}</ref>{{failed verification|date=October 2022}} and in 2015 was popularized by [[Klaus Schwab]], the [[World Economic Forum]] Founder and Executive chairman. Schwab asserts that the changes seen are more than just improvements to efficiency, but express a significant shift in [[Capitalism|industrial capitalism]].<ref name=":5">{{Cite journal|last1=Philbeck|first1=Thomas|last2=Davis|first2=Nicholas|title=The Fourth Industrial Revolution|date=2018|url=https://www.jstor.org/stable/26588339|journal=Journal of International Affairs|volume=72|issue=1|pages=17–22|jstor=26588339|issn=0022-197X}}</ref>
+
+A part of this phase of industrial change is the joining of technologies like [[artificial intelligence]], [[CRISPR gene editing|gene editing]], to [[Robotics|advanced robotics]] that blur the lines between the physical, digital, and biological worlds.<ref name=":5"/><ref name=":6">{{Cite web|last=UK Gov Department for Business, Energy & Industrial Strategy|date=11 June 2019|title=Regulation for the Fourth Industrial Revolution|url=https://www.gov.uk/government/publications/regulation-for-the-fourth-industrial-revolution/regulation-for-the-fourth-industrial-revolution|access-date=2021-11-18|website=GOV.UK|language=en}}</ref>
+
+Throughout this, fundamental shifts are taking place in how the global production and supply network operates through ongoing automation of traditional manufacturing and industrial practices, using modern smart technology, large-scale [[machine-to-machine]] communication (M2M), and the [[internet of things]] (IoT). This integration results in increasing automation, improving communication and self-monitoring, and the use of smart machines that can analyze and diagnose issues without the need for human intervention.<ref>{{Cite web|title=What is Industry 4.0? Everything you need to know|url=https://www.techradar.com/news/what-is-industry-40-everything-you-need-to-know|last=November 2019|first=Mike Moore 05|website=TechRadar|date=5 November 2019|language=en|access-date=2020-05-27}}</ref>
+
+It also represents a social, political, and economic shift from the [[Digital Revolution|digital age]] of the late 1990s and early 2000s to an era of embedded connectivity distinguished by the omni-use and commonness of technological use throughout society (e.g. a [[metaverse]]) that changes the ways humans experience and [[Sociology of knowledge|know]] the world around them.<ref>{{Cite journal|last1=Lee|first1=MinHwa|last2=Yun|first2=JinHyo|last3=Pyka|first3=Andreas|last4=Won|first4=DongKyu|last5=Kodama|first5=Fumio|last6=Schiuma|first6=Giovanni|last7=Park|first7=HangSik|last8=Jeon|first8=Jeonghwan|last9=Park|first9=KyungBae|last10=Jung|first10=KwangHo|last11=Yan|first11=Min-Ren|date=21 June 2018|title=How to Respond to the Fourth Industrial Revolution, or the Second Information Technology Revolution? Dynamic New Combinations between Technology, Market, and Society through Open Innovation|journal=Journal of Open Innovation: Technology, Market, and Complexity|language=en|volume=4|issue=3|pages=21|doi=10.3390/joitmc4030021|issn=2199-8531|doi-access=free}}</ref> It posits that we have created and are entering an [[Augmented reality|augmented]] [[social reality]] compared to just the [[Sense|natural senses]] and industrial ability of humans alone.<ref name=":5"/>
+
+== History ==
+The phrase ''Fourth Industrial Revolution'' was first introduced by a team of scientists developing a high-tech strategy for the German government.<ref>{{Cite web|date=4 March 2013|title=Industrie 4.0: Mit dem Internet der Dinge auf dem Weg zur 4. industrial Revolution - vdi-nachrichten.com|url=http://www.vdi-nachrichten.com/artikel/Industrie-4-0-Mit-dem-Internet-der-Dinge-auf-dem-Weg-zur-4-industriellen-Revolution/52570/1|access-date=2021-01-25|archive-url=https://web.archive.org/web/20130304101009/http://www.vdi-nachrichten.com/artikel/Industrie-4-0-Mit-dem-Internet-der-Dinge-auf-dem-Weg-zur-4-industriellen-Revolution/52570/1|archive-date=4 March 2013}}</ref> [[Klaus Schwab]], executive chairman of the [[World Economic Forum]] (WEF), introduced the phrase to a wider audience in a 2015 article published by ''[[Foreign Affairs]]''.<ref name=faff>{{Cite magazine|url=https://www.foreignaffairs.com/articles/2015-12-12/fourth-industrial-revolution/ |title=The Fourth Industrial Revolution|last=Schwab|first=Klaus|date=12 December 2015|access-date=2019-01-15}}</ref> "Mastering the Fourth Industrial Revolution" was the 2016 theme of the [[World Economic Forum#Annual meeting in Davos|World Economic Forum Annual Meeting]], in Davos-Klosters, Switzerland.<ref name=marr16>{{Cite news|last=Marr|first=Bernard|title=Why Everyone Must Get Ready For The 4th Industrial Revolution|language=en|work=Forbes|url=https://www.forbes.com/sites/bernardmarr/2016/04/05/why-everyone-must-get-ready-for-4th-industrial-revolution/#5af877b33f90|access-date=2018-02-14}}</ref>
+
+On 10 October 2016, the Forum announced the opening of its Centre for the Fourth Industrial Revolution in San Francisco.<ref>{{Cite web|url=https://www.weforum.org/press/2016/10/new-forum-center-to-advance-global-cooperation-on-fourth-industrial-revolution/|title=New Forum Center to Advance Global Cooperation on Fourth Industrial Revolution|date=10 October 2016|access-date=15 October 2018}}</ref> This was also subject and title of Schwab's 2016 book.<ref>{{cite book
+| last1 = Schwab
+| first1 = Klaus
+| author-link1 = Klaus Schwab
+| year = 2016
+| title = The Fourth Industrial Revolution
+| url = https://books.google.com/books?id=ST_FDAAAQBAJ
+| location = New York
+| publisher = Crown Publishing Group
+| publication-date = 2017
+| isbn = 9781524758875
+| access-date = 29 June 2017
+| quote = Digital technologies ... are not new, but in a break with the third industrial revolution, they are becoming more sophisticated and integrated and are, as a result, transforming societies and the global economy.}}</ref> Schwab includes in this fourth era technologies that combine hardware, software, and biology ([[cyber-physical system]]s),<ref>{{Cite web|url=https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/|title=The Fourth Industrial Revolution: what it means and how to respond|website=World Economic Forum|access-date=2018-03-20}}</ref> and emphasizes advances in communication and connectivity. Schwab expects this era to be marked by breakthroughs in emerging technologies in fields such as [[robotics]], [[artificial intelligence]], [[nanotechnology]], [[quantum computing]], [[biotechnology]], the [[internet of things]], the [[industrial internet of things]], decentralized consensus, [[5G|fifth-generation wireless technologies]], [[3D printing]], and [[autonomous vehicles|fully autonomous vehicles]].<ref>
+{{cite web
+|last1= Schwab|first1= Klaus
+|title= The Fourth Industrial Revolution: what it means, how to respond
+|url= https://www.weforum.org/agenda/2016/01/the-fourth-industrial-revolution-what-it-means-and-how-to-respond/
+|website= World Economic Forum|access-date = 29 June 2017
+|quote= The possibilities of billions of people connected by mobile devices, with unprecedented processing power, storage capacity, and access to knowledge, are unlimited. And these possibilities will be multiplied by emerging technology breakthroughs in fields such as artificial intelligence, robotics, the Internet of Things, autonomous vehicles, 3-D printing, nanotechnology, biotechnology, materials science, energy storage, and quantum computing.}}</ref>
+
+In ''The [[Great Reset]]'' proposal by the WEF, ''The Fourth Industrial Revolution'' is included as a [[strategic intelligence]] in the solution to rebuild the economy sustainably following the [[COVID-19 pandemic]].<ref>{{cite web |title=Strategic Intelligence – World Economic Forum |url=https://intelligence.weforum.org/topics/a1Gb0000001RIhBEAW?tab=publications |archive-url=https://archive.today/20201222034658/https://intelligence.weforum.org/topics/a1Gb0000001RIhBEAW?tab=publications |archive-date=22 December 2020 |language=en}}</ref>
+
+=== First Industrial Revolution ===
+{{Main|Industrial Revolution}}
+The First Industrial Revolution was marked by a transition from hand production methods to machines through the use of steam power and water power. The implementation of new technologies took a long time, so the period which this refers to was between 1760 and 1820, or 1840 in Europe and the United States. Its effects had consequences on textile manufacturing, which was first to adopt such changes, as well as iron industry, agriculture, and mining although it also had societal effects with an ever stronger middle class.<ref>{{Cite web|title=The Industrial Revolution and Work in Nineteenth-Century Europe – 1992, Page xiv by David Cannadine, Raphael Samuel, Charles Tilly, Theresa McBride, Christopher H. Johnson, James S. Roberts, Peter N. Stearns, William H. Sewell Jr, Joan Wallach Scott|url=https://www.questia.com/read/107622079/the-industrial-revolution-and-work-in-nineteenth-century|website=|access-date=9 June 2019|archive-date=29 January 2020|archive-url=https://web.archive.org/web/20200129200235/https://www.questia.com/read/107622079/the-industrial-revolution-and-work-in-nineteenth-century|url-status=dead}}</ref>
+
+=== Second Industrial Revolution ===
+{{Main|Second Industrial Revolution}}
+The Second Industrial Revolution, also known as the Technological Revolution, is the period between 1871 and 1914 that resulted from installations of extensive railroad and telegraph networks, which allowed for faster transfer of people and ideas, as well as electricity. Increasing electrification allowed for factories to develop the modern [[production line]]. It was a period of great economic growth, with an increase in productivity, which also caused a surge in unemployment since many factory workers were replaced by machines.<ref>{{Cite web|title=History of Electricity|url=https://www.instituteforenergyresearch.org/history-electricity/}}</ref>
+
+=== Third Industrial Revolution ===
+{{Main|Digital Revolution}}
+The Third Industrial Revolution, also known as the Digital Revolution, occurred in the late 20th century, after the end of the two world wars, resulting from a slowdown of industrialization and technological advancement compared to previous periods. The production of the [[Z1 (computer)|Z1 computer]], which used binary [[floating-point numbers]] and [[Boolean logic]], a decade later, was the beginning of more advanced digital developments. The next significant development in communication technologies was the [[supercomputer]], with extensive use of computer and communication technologies in the production process; machinery began to abrogate the need for human power.<ref>{{Cite web|title=History – Future of Industry|url=https://www.sanayidegelecek.com/en/sanayi-4-0/tarihsel-gelisim/}}</ref>
+
+== Fourth Industrial Revolution ==
+In essence, the Fourth Industrial Revolution is the trend towards [[automation]] and data exchange in manufacturing technologies and processes which include [[Cyber-physical system|cyber-physical systems (CPS)]], IoT, industrial internet of things,<ref>{{Cite web|title=IIOT AND AUTOMATION|url=https://www.punetechtrol.com/blogs/iiot-and-automation}}</ref> [[cloud computing]],<ref name="Definition-I4.0">Hermann, Pentek, Otto, 2016: [http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=7427673&newsearch=true&queryText=industrie%204.0%20design%20principles Design Principles for Industrie 4.0 Scenarios], accessed on 4 May 2016</ref><ref>[[Jürgen Jasperneite]]:''[http://www.computer-automation.de/steuerungsebene/steuernregeln/fachwissen/article/93559/0/Was_hinter_Begriffen_wie_Industrie_40_steckt/ Was hinter Begriffen wie Industrie 4.0 steckt] {{Webarchive|url=https://web.archive.org/web/20130401204034/http://www.computer-automation.de/steuerungsebene/steuernregeln/fachwissen/article/93559/0/Was_hinter_Begriffen_wie_Industrie_40_steckt/|date=1 April 2013}}'' in ''Computer & Automation'', 19 December 2012 accessed on 23 December 2012</ref><ref>Kagermann, H., W. Wahlster and J. Helbig, eds., 2013: Recommendations for implementing the strategic initiative Industrie 4.0: Final report of the Industrie 4.0 Working Group</ref><ref name=":2">Heiner Lasi, Hans-Georg Kemper, Peter Fettke, Thomas Feld, Michael Hoffmann: Industry 4.0. In: Business & Information Systems Engineering 4 (6), pp. 239–242</ref> [[cognitive computing]], and artificial intelligence.<ref name=":2"/><ref>{{Cite journal|last1=Gazzaneo|first1=Lucia|last2=Padovano|first2=Antonio|last3=Umbrello|first3=Steven|date=1 January 2020|title=Designing Smart Operator 4.0 for Human Values: A Value Sensitive Design Approach|journal=Procedia Manufacturing|series=International Conference on Industry 4.0 and Smart Manufacturing (ISM 2019)|language=en|volume=42|pages=219–226|doi=10.1016/j.promfg.2020.02.073|issn=2351-9789|doi-access=free}}</ref>
+
+The machines cannot replace the deep expertise but they tend to be more efficient than humans in performing repetitive functions, and the combination of [[machine learning]] and computational power allows machines to carry out highly complicated tasks.<ref>{{Cite journal |last1=Pedota |first1=Mattia |last2=Piscitello |first2=Lucia |date=3 November 2021 |title=A new perspective on technology‐driven creativity enhancement in the Fourth Industrial Revolution |url=http://dx.doi.org/10.1111/caim.12468 |journal=Creativity and Innovation Management |volume=31 |issue=1 |pages=109–122 |doi=10.1111/caim.12468 |hdl=11311/1208221 |s2cid=243788231 |issn=0963-1690}}</ref>
+
+The [https://www.wired.co.uk/article/factory-of-the-future Fourth Industrial Revolution (4IR)] has been defined as technological developments in cyber-physical systems such as high capacity connectivity; new human-machine interaction modes such as touch interfaces and virtual reality systems; and improvements in transferring digital instructions to the physical world including robotics and [https://3dprintingindustry.com/3d-printing-basics-free-beginners-guide 3D printing] (additive manufacturing); the [https://www.wired.co.uk/article/internet-of-things-what-is-explained-iot Internet of Things (IoT)]; “big data” and cloud computing; artificial intelligence-based systems; improvements to and uptake of Off-Grid / Stand-Alone Renewable Energy Systems: solar, wind, wave, hydroelectric and the electric batteries (lithium-ion renewable [[energy storage system]]s (ESS) and EV). 
+
+The Fourth Industrial Revolution marks the beginning of the [[imagination age]].<ref name="iage">{{Cite web|last=Recke|first=Martin|date=June 2019|title=Why imagination and creativity are primary value creators|url=https://nextconf.eu/2019/06/why-imagination-and-creativity-are-primary-value-creators/|publisher=SinnerSchrader Aktiengesellschaft}}</ref>
+
+=== Key themes===
+'''Industry 4.0 increases operational efficiency.'''
+Four themes are presented that summarize an Industry 4.0:<ref name="Definition-I4.0"/>
+* Interconnection – the ability of machines, devices, sensors, and people to connect and communicate with each other via the Internet of things, or the internet of people (IoP)<ref name="auto">{{Cite news|last=Bonner|first=Mike|title=What is Industry 4.0 and What Does it Mean for My Manufacturing?|language=en-us|url=https://blog.viscosity.com/blog/what-is-industry-4.0-and-what-does-it-mean-for-my-manufacturing|access-date=2018-09-24}}</ref>
+* Information transparency – the transparency afforded by Industry 4.0 technology provides operators with comprehensive information to make decisions. Inter-connectivity allows operators to collect immense amounts of data and information from all points in the manufacturing process, identify key areas that can benefit from improvement to increase functionality<ref name="auto"/>
+* Technical assistance – the technological facility of systems to assist humans in decision-making and problem-solving, and the ability to help humans with difficult or unsafe tasks<ref>{{Cite web|last=Marr|first=Bernard|title=What Everyone Must Know About Industry 4.0|url=https://www.forbes.com/sites/bernardmarr/2016/06/20/what-everyone-must-know-about-industry-4-0/|access-date=2020-05-27|website=Forbes|language=en}}</ref>
+* Decentralized decisions – the ability of cyber physical systems to make decisions on their own and to perform their tasks as autonomously as possible. Only in the case of exceptions, interference, or conflicting goals, are tasks delegated to a higher level<ref>Gronau, Norbert, Marcus Grum, and Benedict Bender. "Determining the optimal level of autonomy in cyber-physical production systems." 2016 IEEE 14th International Conference on Industrial Informatics (INDIN). IEEE, 2016. DOI:10.1109/INDIN.2016.7819367</ref>
+
+=== Distinctiveness===
+Proponents of the Fourth Industrial Revolution suggest it is a distinct revolution rather than simply a prolongation of the Third Industrial Revolution.<ref name="faff"/> This is due to the following characteristics: 
+* [[Velocity]] — exponential speed at which incumbent industries are affected and displaced<ref name="faff"/>
+* Scope and systems impact – the large amount of sectors and firms that are affected<ref name="faff"/>
+* Paradigm shift in technology policy – new policies designed for this new way of doing are present. An example is Singapore's formal recognition of Industry 4.0 in its innovation policies.
+
+Critics of the concept dismiss Industry 4.0 as a marketing strategy. They suggest that although revolutionary changes are identifiable in distinct sectors, there is no systemic change so far. In addition, the pace of recognition of Industry 4.0 and policy transition varies across countries; the definition of Industry 4.0 is not harmonized. One of the most known figures is [[Jeremy Rifkin]] who "agree[s] that digitalization is the hallmark and defining technology in what has become known as the Third Industrial Revolution".<ref>{{cite web | url=https://www.industryweek.com/technology-and-iiot/information-technology/article/21967057/the-2016-world-economic-forum-misfires-with-its-fourth-industrial-revolution-theme | title=StackPath }}</ref> However, he argues that "that the evolution of digitalization has barely begun to run its course and that its new configuration in the form of the Internet of Things represents the next stage of its development".<ref>{{cite web | url=https://www.industryweek.com/technology-and-iiot/information-technology/article/21967057/the-2016-world-economic-forum-misfires-with-its-fourth-industrial-revolution-theme | title=StackPath }}</ref>
+
+=== Components ===
+[[File:Equipment for self-driving car.jpg|thumb|Self-driving car]]
+[[File:Internet of Things (IoT).png|thumb|Internet of Things (IoT)]]
+
+The application of the Fourth Industrial Revolution operates through:<ref name=":0">{{Cite web|title=How To Define Industry 4.0: Main Pillars Of Industry 4.0|url=https://www.researchgate.net/publication/326557388|website=ResearchGate|language=en|access-date=2019-06-09}}</ref>
+* [[Mobile device]]s
+* [[Internet of things]] (IoT) platforms
+* Location detection technologies (electronic identification)
+* Advanced human-machine interfaces
+* Authentication and fraud detection
+* Smart sensors
+* Big analytics and advanced processes
+* Multilevel customer interaction and customer profiling
+* [[Augmented reality]]/[[wearables]]
+* On-demand availability of computer [[system resource]]s
+* Data visualization and triggered "live" training<ref name=":0"/>{{clarify|date=April 2022}}
+
+Mainly these technologies can be summarized into four major components, defining the term "Industry 4.0" or "smart factory":<ref name=":0"/>
+* [[Cyber-physical system]]s
+* [[Internet of things]] (IoT)
+* On-demand availability of computer system resources (e.g. [[cloud computing]])
+* [[Cognitive computing]]<ref name=":0"/>
+
+Industry 4.0 networks a wide range of new technologies to create value. Using [[cyber-physical system]]s that monitor physical processes, a virtual copy of the physical world can be designed. Characteristics of cyber-physical systems include the ability to make decentralized decisions independently, reaching a high degree of autonomy.<ref name=":0"/>
+
+The value created in Industry 4.0, can be relied upon electronic identification, in which the smart manufacturing require set technologies to be incorporated in the manufacturing process to thus be classified as in the development path of Industry 4.0 and no longer [[digitisation]].<ref>{{Cite web|title=Industrie 4.0 Maturity Index – Managing the Digital Transformation of Companies|url=https://en.acatech.de/publication/industrie-4-0-maturity-index-managing-the-digital-transformation-of-companies/|access-date=2020-12-21|website=acatech – National Academy of Science and Engineering|language=en-GB}}</ref>
+
+===Primary drivers===
+
+==== Digitization and integration of vertical and horizontal value chains ====
+Industry 4.0 integrates processes vertically, across the entire organization, including processes in product development, manufacturing, structuring, and service; horizontally, Industry 4.0 includes internal operations from suppliers to customers as well as all key value chain partners.<ref name=":1">{{Cite web|title=Industry 4.0: Building the digital enterprize.|url=https://www.pwc.com/gx/en/industries/industries-4.0/landing-page/industry-4.0-building-your-digital-enterprise-april-2016.pdf|last=Geissbauer|first=Dr. R}}</ref>
+
+==== Digitization of product and services ====
+Integrating new methods of data collection and analysis–such as through the expansion of existing products or creation of new digitized products–helps companies to generate data on product use to refine products<ref name=":1"/>
+
+==== Digital business models and customer access ====
+Customer satisfaction is a perpetual, multi-stage process that requires modification in real-time to adapt to the changing needs of consumers<ref name=":1"/>
+
+== Trends ==
+=== Smart factory ===
+{{Main|Smart manufacturing}}
+Smart Factory is the vision of a production environment in which production facilities and logistics systems are organized without human intervention.
+
+The Smart Factory is no longer a vision. While different model factories represent the feasible, many enterprises already clarify with examples practically, how the Smart Factory functions.
+
+The technical foundations on which the Smart Factory – the intelligent factory – is based are cyber-physical systems that communicate with each other using the Internet of Things and Services. An important part of this process is the exchange of data between the product and the production line. This enables a much more efficient connection of the Supply Chain and better organisation within any production environment.
+
+The Fourth Industrial Revolution fosters what has been called a "smart factory". Within modular structured smart factories, cyber-physical systems monitor physical processes, create a virtual copy of the physical world and make decentralized decisions.<ref>{{Cite journal|last1=Chen|first1=Baotong|last2=Wan|first2=Jiafu|last3=Shu|first3=Lei|last4=Li|first4=Peng|last5=Mukherjee|first5=Mithun|last6=Yin|first6=Boxing|date=2018|title=Smart Factory of Industry 4.0: Key Technologies, Application Case, and Challenges|journal=IEEE Access|volume=6|pages=6505–6519|doi=10.1109/ACCESS.2017.2783682|s2cid=3809961|issn=2169-3536|doi-access=free}}</ref> Over the internet of things, cyber-physical systems communicate and cooperate with each other and with humans in synchronic time both internally and across organizational services offered and used by participants of the [[value chain]].<ref name="Definition-I4.0"/><ref>{{Cite journal|last1=Padovano|first1=Antonio|last2=Longo|first2=Francesco|last3=Nicoletti|first3=Letizia|last4=Mirabelli|first4=Giovanni|date=1 January 2018|title=A Digital Twin based Service Oriented Application for a 4.0 Knowledge Navigation in the Smart Factory|journal=IFAC-PapersOnLine|series=16th IFAC Symposium on Information Control Problems in Manufacturing INCOM 2018|language=en|volume=51|issue=11|pages=631–636|doi=10.1016/j.ifacol.2018.08.389|issn=2405-8963|doi-access=free}}</ref>
+
+=== Predictive maintenance ===
+Industry 4.0 can also provide predictive maintenance, due to the use of technology and the IoT sensors. Predictive maintenance – which can identify maintenance issues in live – allows machine owners to perform cost-effective maintenance and determine it ahead of time before the machinery fails or gets damaged.&nbsp; For example, a company in Los Angeles could understand if a piece of equipment in Singapore is running at an abnormal speed or temperature. They could then decide whether or not it needs to be repaired.<ref>{{Cite web|title=Are You Ready For The Fourth Industrial Revolution?|url=https://theonebrief.com/are-you-ready-for-the-fourth-industrial-revolution/|date=4 May 2017|website=The One Brief|language=en-US|access-date=2020-05-27}}</ref>
+
+=== 3D printing ===
+
+The Fourth Industrial Revolution is said to have extensive dependency on [[3D printing]] technology.&nbsp; Some advantages of 3D printing for industry are that 3D printing can print many geometric structures, as well as simplify the product design process. It is also relatively environmentally friendly. In low-volume production, it can also decrease lead times and total production costs. Moreover, it can increase flexibility, reduce warehousing costs and help the company towards the adoption of a mass customization business strategy. In addition, 3D printing can be very useful for printing spare parts and installing it locally, therefore reducing supplier dependence and reducing the supply lead time.<ref>{{Cite journal|last1=Yin|first1=Yong|last2=Stecke|first2=Kathryn E.|last3=Li|first3=Dongni|date=17 January 2018|title=The evolution of production systems from Industry 2.0 through Industry 4.0|journal=International Journal of Production Research|volume=56|issue=1–2|pages=848–861|doi=10.1080/00207543.2017.1403664|issn=0020-7543|doi-access=free}}</ref>
+
+The determining factor is the pace of change. The correlation of the speed of technological development and, as a result, socio-economic and infrastructural transformations with human life allows one to state a qualitative leap in the speed of development, which marks a transition to a new time era.<ref>[https://elibrary.ru/item.asp?id=39147614 Shestakova I. G.&nbsp;New temporality of digital civilization: the future has already come // // Scientific and Technical Journal of St. Petersburg State Polytechnical University. Humanities and social sciences. 2019. # 2. P.20-29]</ref>
+
+=== Smart sensors ===
+
+Sensors and instrumentation drive the central forces of innovation, not only for Industry 4.0 but also for other "smart" megatrends, such as smart production, smart mobility, smart homes, smart cities, and smart factories.<ref>Imkamp, D., Berthold, J., Heizmann, M., Kniel, K., Manske, E., Peterek, M., Schmitt, R., Seidler, J., and Sommer, K.-D.: Challenges and trends in manufacturing measurement technology – the "Industrie 4.0" concept, J. Sens. Sens. Syst., 5, 325–335, https://doi.org/10.5194/jsss-5-325-2016, 2016</ref>
+
+Smart sensors are devices, which generate the data and allow further functionality from self-monitoring and self-configuration to condition monitoring of complex processes. 
+With the capability of wireless communication, they reduce installation effort to a great extent and help realize a dense array of sensors.<ref>A.A. Kolomenskii, P.D. Gershon, H.A. Schuessler, Sensitivity and
+detection limit of concentration and adsorption measurements by
+laser-induced surface-plasmon resonance, Appl. Opt. 36 (1997)
+6539–6547</ref>
+
+The importance of sensors, measurement science, and smart evaluation for Industry 4.0 has been recognized and acknowledged by various experts and has already led to the statement "Industry 4.0: nothing goes without sensor systems."<ref>Arnold, H.: Kommentar Industrie 4.0: Ohne Sensorsysteme geht nichts, available at: http://www.elektroniknet.de/messen-testen/ sonstiges/artikel/110776/ (last access: 10 March 2018), 2014</ref>
+
+However, there are a few issues, such as time synchronization error, data loss, and dealing with large amounts of harvested data, which all limit the implementation of full-fledged systems. Moreover, additional limits on these functionalities represents the battery power. One example of the integration of smart sensors in the electronic devices, is the case of smart watches, where sensors receive the data from the movement of the user, process the data and as a result, provide the user with the information about how many steps they have walked in a day and also converts the  data into calories burned.
+
+==== Agriculture and food industries ====
+[[File:IFarm.fi Vertical farm Finland.jpg|thumb|[[Hydroponics|Hydroponic]] [[vertical farming]]]]
+
+Smart sensors in these two fields are still in the testing stage.<ref>{{Cite journal|last=Ray|first=Partha Pratim|date=1 January 2017|title=Internet of things for smart agriculture: Technologies, practices and future direction|url=https://content.iospress.com/articles/journal-of-ambient-intelligence-and-smart-environments/ais440|journal=Journal of Ambient Intelligence and Smart Environments|language=en|volume=9|issue=4|pages=395–420|doi=10.3233/AIS-170440|issn=1876-1364}}</ref> These innovative connected sensors collect, interpret and communicate the information available in the plots (leaf area, vegetation index, chlorophyll, hygrometry, temperature, water potential, radiation). Based on this scientific data, the objective is to enable real-time monitoring via a smartphone with a range of advice that optimizes plot management in terms of results, time and costs. On the farm, these sensors can be used to detect crop stages and recommend inputs and treatments at the right time. As well as controlling the level of irrigation.<ref>{{Cite journal|last1=Ferreira|first1=Diogo|last2=Corista|first2=Pedro|last3=Gião|first3=João|last4=Ghimire|first4=Sudeep|last5=Sarraipa|first5=João|last6=Jardim-Gonçalves|first6=Ricardo|date=June 2017|title=Towards smart agriculture using FIWARE enablers|url=https://ieeexplore.ieee.org/document/8280066|journal=2017 International Conference on Engineering, Technology and Innovation (ICE/ITMC)|pages=1544–1551|doi=10.1109/ICE.2017.8280066|isbn=978-1-5386-0774-9|s2cid=3433104}}</ref>
+
+The food industry requires more and more security and transparency and full documentation is required. This new technology is used as a tracking system as well as the collection of human data and product data.<ref>{{Citation|last1=Otles|first1=Semih|title=15 – Industry 4.0: The Smart Factory of the Future in Beverage Industry|date=1 January 2019|url=http://www.sciencedirect.com/science/article/pii/B9780128152607000158|work=Production and Management of Beverages|pages=439–469|editor-last=Grumezescu|editor-first=Alexandru Mihai|publisher=Woodhead Publishing|language=en|isbn=978-0-12-815260-7|access-date=2020-09-26|last2=Sakalli|first2=Aysegul|editor2-last=Holban|editor2-first=Alina Maria}}</ref>
+
+=== Accelerated transition to the knowledge economy ===
+
+Knowledge economy is an economic system in which production and services are largely based on knowledge-intensive activities that contribute to an accelerated pace of technical and scientific advance, as well as rapid obsolescence.<ref>{{Cite web |last=Schwok |first=Karen |date=2 December 2020 |title=A "new" tech revolution is coming and the winds of change will hit the U.S. first |url=https://www.calcalistech.com/ctech/articles/0,7340,L-3878571,00.html |access-date=2022-03-11 |website=CTECH - www.calcalistech.com}}</ref><ref>{{cite journal |last1=Powell |first1=W. W. |last2=Snellman |first2=K. |title=The knowledge economy. |journal=Annu. Rev. Sociol. |date=2004 |volume=199–220 |issue=30 |pages=199–220 |doi=10.1146/annurev.soc.29.010202.100037 }}</ref> Industry 4.0 aids transitions into knowledge economy by increasing reliance on intellectual capabilities than on physical inputs or natural resources.
+
+== Challenges ==
+Challenges in implementation of Industry 4.0:<ref name=":3">{{cite web 
+|url=http://doku.iab.de/forschungsbericht/2015/fb0815.pdf |title=BIBB : Industrie 4.0 und die Folgen für Arbeitsmarkt und Wirtschaft |date=August 2015 |website=Doku.iab.de |access-date=2016-11-30|language=de}}</ref><ref name=":4">{{cite journal 
+|title=Impact of IoT challenges and risks for SCM |journal=Supply Chain Management |volume=24 |pages=39–61 |date=2019 |language=en|doi=10.1108/SCM-03-2018-0142 |last1=Birkel |first1=Hendrik Sebastian |last2=Hartmann |first2=Evi |s2cid=169819946 }}</ref>
+
+=== Economic ===
+* High economic costs
+* Business model adaptation
+* Unclear economic benefits/excessive investment<ref name=":3"/><ref name=":4"/>
+
+=== Social ===
+* Privacy concerns
+* Surveillance and distrust
+* General reluctance to change by stakeholders
+* Threat of redundancy of the corporate IT department
+* [[Technological unemployment|Loss of many jobs]] to automatic processes and IT-controlled processes, especially for [[Blue-collar worker|blue collar workers]]<ref name=":3"/><ref name=":4"/><ref>{{Cite journal|last1=Longo|first1=Francesco|last2=Padovano|first2=Antonio|last3=Umbrello|first3=Steven|date=January 2020|title=Value-Oriented and Ethical Technology Engineering in Industry 5.0: A Human-Centric Perspective for the Design of the Factory of the Future|journal=Applied Sciences|language=en|volume=10|issue=12|pages=4182|doi=10.3390/app10124182|doi-access=free}}</ref>
+*Increased risk of gender inequalities in professions with job roles most susceptible to replacement with AI<ref>{{Cite journal|last=Alderman|first=J|date=1 June 2021|title=Women in the smart machine age: Addressing emerging risks of an increased gender gap in the accounting profession|url=https://www.sciencedirect.com/science/article/abs/pii/S0748575121000026|journal=Journal of Accounting Education|language=en|volume=55|pages=100715|doi=10.1016/j.jaccedu.2021.100715|s2cid=233583489|issn=0748-5751}}</ref><ref>{{Cite web|last=UNESCO|date=25 February 2021|title=Women a minority in Industry 4.0 fields|url=https://en.unesco.org/news/women-minority-industry-40-fields|access-date=2021-06-25|website=UNESCO|language=en}}</ref>
+
+=== Political ===
+* Lack of regulation, standards and forms of certifications
+* Unclear legal issues and data security<ref name=":3"/><ref name=":4"/>
+
+=== Organizational ===
+* IT security issues, which are greatly aggravated by the inherent need to open up previously closed production shops
+* Reliability and stability needed for critical [[machine-to-machine]] communication (M2M), including very short and stable latency times
+* Need to maintain the integrity of production processes
+* Need to avoid any IT snags, as those would cause expensive production outages
+* Need to protect industrial know-how (contained also in the control files for the industrial automation gear)
+* Lack of adequate skill-sets to expedite the transition towards a fourth industrial revolution
+* Low top management commitment
+* Insufficient qualification of employees<ref name=":3"/><ref name=":4"/>
+
+== Country applications ==
+Many countries have set up institutional mechanisms to foster the adoption of Industry 4.0 technologies. For example,
+
+=== Australia ===
+Australia has a Digital Transformation Agency (est. 2015) and the Prime Minister's Industry 4.0 Taskforce (est. 2016), which promotes collaboration with industry groups in Germany and the USA.<ref name="Scott-Kemmis et al. 2021">{{cite book|author1=Scott-Kemmis|url=https://unesdoc.unesco.org/ark:/48223/pf0000377481.locale=en|title=Southeast Asia and Oceania. In UNESCO Science Report: the Race Against Time for Smarter Development.|date=11 June 2021|publisher=UNESCO|isbn=978-92-3-100450-6|editor1-last=Schneegans|location=Paris|pages=674–715|author1-link=D|author2-link=Intarakumnerd|author3-link=Rasiah|author4-link=Amaradasa|editor2-last=Straza|editor3-last=Lewis}}</ref>
+
+=== Germany ===
+The term "Industrie 4.0", shortened to I4.0 or simply I4, originated in 2011 from a project in the high-tech strategy of the [[German government]] and specifically relates to that project policy, rather than a wider notion of a Fourth Industrial Revolution of 4IR.<ref name=":5"/> which promotes the [[Digital Revolution|computerization]] of manufacturing.<ref>{{cite web|author=BMBF-Internetredaktion|date=21 January 2016|title=Zukunftsprojekt Industrie 4.0 – BMBF|url=https://www.bmbf.de/de/zukunftsprojekt-industrie-4-0-848.html|access-date=2016-11-30|website=Bmbf.de}}</ref> The term "Industrie 4.0" was publicly introduced in the same year at the [[Hannover Fair]].<ref>{{cite web|date=1 April 2011|title=Industrie 4.0: Mit dem Internet der Dinge auf dem Weg zur 4. industriellen Revolution|url=http://www.vdi-nachrichten.com/artikel/Industrie-4-0-Mit-dem-Internet-der-Dinge-auf-dem-Weg-zur-4-industriellen-Revolution/52570/1|url-status=dead|archive-url=https://web.archive.org/web/20130304101009/http://www.vdi-nachrichten.com/artikel/Industrie-4-0-Mit-dem-Internet-der-Dinge-auf-dem-Weg-zur-4-industriellen-Revolution/52570/1|archive-date=4 March 2013|access-date=2016-11-30|website=Vdi-nachrichten.com|language=de}}</ref> Renowned German professor [[Wolfgang Wahlster]] is sometimes called the inventor of the "[[Industry 4.0]]" term.<ref name="Sensors_2020_08">{{cite journal|last1=Szajna|first1=Andrzej|last2=Stryjski|first2=Roman|last3=Wozniak|first3=Waldemar|last4=Chamier-Gliszczynski|first4=Norbert|last5=Kostrzewski|first5=Mariusz|date=22 August 2020|title=Assessment of Augmented Reality in Manual Wiring Production Process with Use of Mobile AR Glasses|journal=Sensors|publisher=MDPI|volume=20|issue=17|page=4755|bibcode=2020Senso..20.4755S|doi=10.3390/s20174755|pmc=7506974|pmid=32842693|doi-access=free}}</ref> In October 2012, the Working Group on Industry 4.0 presented a set of Industry 4.0 implementation recommendations to the German federal government. The workgroup members and partners are recognized as the founding fathers and driving force behind Industry 4.0. On 8 April 2013 at the Hannover Fair, the final report of the Working Group Industry 4.0 was presented. This working group was headed by Siegfried Dais, of [[Robert Bosch GmbH]], and Henning Kagermann, of the [[German Academy of Science and Engineering]].<ref>[http://www.plattform-i40.de Industrie 4.0 Plattform] Last download on 15. Juli 2013</ref>
+
+As Industry 4.0 principles have been applied by companies, they have sometimes been rebranded. For example, the aerospace parts manufacturer [[Meggitt PLC]] has branded its own Industry 4.0 research project M4.<ref name="auto1">{{cite web|date=22 June 2018|title=Time to join the digital dots|url=https://www.aero-mag.com/meggitt-applied-research-technology-group-data-capture/|access-date=2018-07-25|language=en}}</ref>
+
+The discussion of how the shift to Industry 4.0, especially [[digitization]], will affect the labour market is being discussed in Germany under the topic of [[Work 4.0]].<ref>Federal Ministry of Labour and Social Affairs of Germany (2015). ''Re-Imagining Work: White Paper Work 4.0''.</ref>
+
+The federal government in Germany through its ministries of the BMBF and BMWi, is a leader in the development of the I4.0 policy. Through the publishing of set objectives and goals for enterprises to achieve, the German federal government attempts to set the direction of the digital transformation. However, there is a gap between German enterprise's collaboration and knowledge of these set policies.<ref name=":7">{{Cite journal |last=Keller |first=Matthias |date=2021 |title=I4.0 Strategy and Policy Integration in The German Machining Industry |url=https://www.researchgate.net/publication/359005363 |journal=KU Leuven}}</ref> The biggest challenge which SMEs in Germany are currently facing regarding digital transformation of their manufacturing processes is ensuring that there is a concrete IT and application landscape to support further digital transformation efforts.<ref name=":7" />
+
+The characteristics of the German government's Industry 4.0 strategy involve the strong customization of products under the conditions of highly flexible (mass-) production.<ref>{{cite web|date=29 January 2016|title=This Is Not the Fourth Industrial Revolution|url=http://www.slate.com/articles/technology/future_tense/2016/01/the_world_economic_forum_is_wrong_this_isn_t_the_fourth_industrial_revolution.html|via=Slate}}</ref> The required automation technology is improved by the introduction of methods of self-optimization, self-configuration,<ref>[https://www.youtube.com/watch?v=JtC3DAfLTxw Selbstkonfiguierende Automation für Intelligente Technische Systeme], Video, last download on 27. Dezember 2012</ref> self-diagnosis, cognition and intelligent support of workers in their increasingly complex work.<ref>[[Jürgen Jasperneite]]; Oliver, Niggemann: Intelligente Assistenzsysteme zur Beherrschung der Systemkomplexität in der Automation. In: ATP edition – Automatisierungstechnische Praxis, 9/2012, Oldenbourg Verlag, München, September 2012</ref> The largest project in Industry 4.0 as of July 2013 is the German [[Federal Ministry of Education and Research (Germany)|Federal Ministry of Education and Research]] (BMBF) leading-edge cluster "Intelligent Technical Systems Ostwestfalen-Lippe (its OWL)". Another major project is the BMBF project RES-COM,<ref>{{cite web|title=Herzlich willkommen auf den Internetseiten des Projekts RES-COM – RES-COM Webseite|url=http://www.res-com-projekt.de/|access-date=2016-11-30|website=Res-com-projekt.de}}</ref> as well as the Cluster of Excellence "Integrative Production Technology for High-Wage Countries".<ref>{{cite web|date=19 October 2016|title=RWTH AACHEN UNIVERSITY Cluster of Excellence "Integrative Production Technology for High-Wage Countries" – English|url=http://www.production-research.de/|access-date=2016-11-30|website=Production-research.de}}</ref> In 2015, the [[European Commission]] started the international [[Horizon 2020]] research project CREMA (Providing Cloud-based Rapid Elastic Manufacturing based on the [[XaaS]] and Cloud model) as a major initiative to foster the Industry 4.0 topic.<ref>{{cite web|date=21 November 2016|title=H2020 CREMA – Cloud-based Rapid Elastic Manufacturing|url=http://www.crema-project.eu|access-date=2016-11-30|website=Crema-project.eu}}</ref>
+
+=== Estonia ===
+In Estonia, the digital transformation dubbed as the 4th Industrial Revolution by [[Klaus Schwab]] and the [[World Economic Forum]] in 2015 started with the restoration of independence in 1991. Although a latecomer to the [[Information revolution|Information Revolution]] due to 50 years of [[Soviet occupation of Estonia|Soviet Occupation]], Estonia [[Leapfrogging|leapfrogged]] to the digital era, while skipping the analogue connections almost completely. The early decisions made by Prime Minister [[Mart Laar]] on the course of the country's economic development led to the establishment of what is today known as [[e-Estonia]], one of the worlds most [[Digital Nations|digitally advanced nations]]. 
+
+According to the goals set in the Estonia’s Digital Agenda 2030,<ref>{{Cite web |title=Digiühiskonna arengukava 2030 {{!}} Majandus- ja Kommunikatsiooniministeerium |url=https://www.mkm.ee/digiriik-ja-uhenduvus/digiuhiskonna-arengukava-2030 |access-date=2022-10-16 |website=www.mkm.ee}}</ref> next leaps in the country's digital transformation will be switching to event based and proactive services, both in private and business environment, as well as developing a green, AI-powered and human-centric digital government.
+
+=== Indonesia ===
+Another example is Making Indonesia 4.0, with a focus on improving industrial performance.<ref name="Scott-Kemmis et al. 2021"/>
+
+=== South Africa ===
+South Africa appointed a Presidential Commission on the Fourth Industrial Revolution in 2019, consisting of about 30 stakeholders with a background in academia, industry and government.<ref name="UNESCO Science Report 2021">{{cite book|url=https://unesdoc.unesco.org/ark:/48223/pf0000377433/PDF/377433eng.pdf.multi|title=UNESCO Science Report: the Race Against Time for Smarter Development.|date=11 June 2021|publisher=UNESCO|isbn=978-92-3-100450-6|editor1-last=Schneegans|editor1-first=S.|location=Paris|editor2-last=Straza|editor2-first=T.|editor3-last=Lewis|editor3-first=J.}}</ref><ref name="Kraemer-Mbula et al. 2021">{{cite book|author1=Kraemer-Mbula|url=https://unesdoc.unesco.org/ark:/48223/pf0000377475/PDF/377475eng.pdf.multi|title=Southern Africa. In UNESCO Science Report: the Race Against Time for Smarter Development.|author2=Sheikheldin|author3=Karimanzira|date=11 June 2021|publisher=UNESCO|isbn=978-92-3-100450-6|location=Paris|pages=534–573}}</ref> South Africa has also established an Inter ministerial Committee on Industry 4.0.
+
+=== South Korea ===
+The Republic of Korea has had a Presidential Committee on the Fourth Industrial Revolution since 2017.  The Republic of Korea's I-Korea strategy (2017) is focusing on new growth engines that include AI, drones and autonomous cars, in line with the government's innovation-driven economic policy.<ref name="UNESCO Science Report 2021"/>
+===Spain===
+See [[Science and technology in Spain]]
+
+=== Uganda ===
+Uganda adopted its own National 4IR Strategy in October 2020 with emphasis on e-governance, urban management (smart cities), health care, education, agriculture and the digital economy; to support local businesses, the government was contemplating introducing a local start-ups bill in 2020 which would require all accounting officers to exhaust the local market prior to procuring digital solutions from abroad.<ref name="UNESCO Science Report 2021"/>
+
+=== United Kingdom ===
+In a policy paper published in 2019, the UK's [[Department for Business, Energy and Industrial Strategy|Department for Business, Energy & Industrial Strategy]], titled "Regulation for the Fourth Industrial Revolution", outlined the need to evolve current regulatory models to remain competitive in evolving technological and social settings.<ref name=":6"/>
+
+=== United States ===
+The [[United States Department of Homeland Security|Department of Homeland Security]] in 2019 published a paper called 'The Industrial Internet of things (IIOT): Opportunities, Risks, Mitigation'. The base pieces of critical infrastructure are increasingly digitized for greater connectivity and optimization. Hence, its implementation, growth and maintenance must be carefully planned and safeguarded. The paper discusses not only applications of [[Industrial internet of things|IIOT]] but also the associated risks. It has suggested some key areas where risk mitigation is possible. To increase coordination between the public, private, law enforcement, academia and other stakeholders the DHS has formed has new agency called [[National Cybersecurity and Communications Integration Center]] (NCCIC).<ref>{{Cite journal |last1=Ayala |first1=Mario |last2=Cantu |first2=Rob |date=2019 |title=THE INDUSTRIAL INTERNET OF THINGS (IIOT): OPPORTUNITIES, RISKS, MITIGATIO |url=https://www.dhs.gov/sites/default/files/publications/ia/ia_iiot-intercommections.pdf |journal=Department of Homeland Security-Publications |pages=34 |via=DHS}}</ref>
+
+==Industry applications ==
+The aerospace industry has sometimes been characterized as "too low volume for extensive automation"; however, Industry 4.0 principles have been investigated by several aerospace companies, and technologies have been developed to improve productivity where the upfront cost of automation cannot be justified. One example of this is the aerospace parts manufacturer [[Meggitt PLC]]'s M4 project.<ref name="auto1"/>
+
+The increasing use of the [[industrial internet of things]] is referred to as Industry 4.0 at [[Robert Bosch GmbH|Bosch]], and generally in Germany. Applications include machines that can predict failures and trigger maintenance processes autonomously or self-organized coordination that react to unexpected changes in production.<ref>{{cite web|title=The Internet of Things and the future of manufacturing &#124; McKinsey & Company |author1=Markus Liffler |author2=Andreas Tschiesner |date=6 January 2013 |website=Mckinsey.com |access-date=2016-11-30 |url=https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-internet-of-things-and-the-future-of-manufacturing}}</ref>
+
+Industry 4.0 inspired Innovation 4.0, a move toward digitization for academia and [[research and development]].<ref name=Polymer/> In 2017, the £81M Materials Innovation Factory (MIF) at the [[University of Liverpool]] opened as a center for computer aided materials science,<ref name=cas20>{{cite web |title=Formulus |url=https://www.cas.org/products/formulus |website=Develop Safe and Effective Products with Formulus |access-date=17 August 2020}}</ref> where robotic formulation,<ref name=robform>{{cite news |title=Innovation 4.0: A Digital Revolution for R&D |url=https://www.newstatesman.com/spotlight/manufacturing/2019/09/innovation-40-digital-revolution-rd |access-date=17 August 2020 |publisher=New Statesman}}</ref> data capture and modeling are being integrated into development practices.<ref name=Polymer>{{cite journal |last1=McDonagh |display-authors=etal |first1=James |title=What Can Digitization Do For Formulated Product Innovation and Development |journal=Polymer International |date=31 May 2020 |volume=70 |issue=3 |pages=248–255 |doi=10.1002/pi.6056 |s2cid=219766018 |url=https://figshare.com/articles/What_Can_Digitization_Do_For_Formulated_Product_Innovation_and_Development/11763864 }}</ref>
+
+== Criticism ==
+
+With the consistent development on automation of everyday tasks, some saw the benefit in the exact opposite of automation where self-made products are valued more than those that involved automation.<ref name="Journal of Consumer Psychology">{{cite journal|last1=Norton|first1=Michael|last2=Mochon|first2=Daniel|last3=Ariely|first3=Dan|title=The IKEA effect: When labor leads to love|journal=Journal of Consumer Psychology|date=9 September 2011|volume=22|issue=3|pages=453–460|doi=10.1016/j.jcps.2011.08.002|url=http://nrs.harvard.edu/urn-3:HUL.InstRepos:12136084}}</ref> This valuation is named the '[[IKEA effect]]', a term coined by [[Michael I. Norton]] of [[Harvard Business School]], Daniel Mochon of [[Yale]], and [[Dan Ariely]] of [[Duke University|Duke]].
+
+==See also==
+* [[Advanced manufacturing]]
+* [[Computer-integrated manufacturing]]
+* [[Digital modeling and fabrication]]
+* [[Industrial control system]]
+* [[Intelligent maintenance system]]s
+* [[Lights out (manufacturing)|Lights-out manufacturing]]
+* [[Machine to machine]]
+* [[Cyber manufacturing]]
+* [[Work 4.0]]
+* [[World Economic Forum]] 2016
+* [[Simulation software]]
+* [[The War on Normal People]]
+* [[List of emerging technologies]]
+*[[Technological unemployment]]
+*[[Technological singularity]]
+
+==References==
+{{reflist}}
+
+{{Industrial Revolution}}
+{{Sociology2}}
+{{History of technology}}
+{{Science and technology studies}}
+
+===Sources===
+* {{Free-content attribution
+| title = UNESCO Science Report: the Race Against Time for Smarter Development.
+| author = Schneegans, S., T. Straza and J. Lewis (eds)
+| publisher = UNESCO
+| page numbers = 
+| source = 
+| documentURL = https://unesdoc.unesco.org/ark:/48223/pf0000377433/PDF/377433eng.pdf.multi
+| license statement URL = 
+| license = C-BY-SA 3.0 IGO
+}}
+
+[[Category:2015 neologisms]]
+[[Category:21st century]]
+[[Category:Industrial automation]]
+[[Category:Industrial computing]]
+[[Category:Internet of things]]
+[[Category:Technology forecasting]]
+[[Category:Big data]]
+[[Category:Industrial Revolution]]
+[[Category:Fourth Industrial Revolution]]
+[[Category:World Economic Forum]]

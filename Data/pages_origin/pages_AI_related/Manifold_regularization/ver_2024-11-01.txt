@@ -1,0 +1,231 @@
+[[File:Example of unlabeled data in semisupervised learning.png|thumb|250px|Manifold regularization can classify data when labeled data (black and white circles) are sparse, by taking advantage of unlabeled data (gray circles). Without many labeled data points, [[supervised learning]] algorithms can only learn very simple decision boundaries (top panel). Manifold learning can draw a decision boundary between the natural classes of the unlabeled data, under the assumption that close-together points probably belong to the same class, and so the decision boundary should avoid areas with many unlabeled points. This is one version of [[semi-supervised learning]].]]
+
+In [[machine learning]], '''Manifold regularization''' is a technique for using the shape of a dataset to constrain the functions that should be learned on that dataset. In many machine learning problems, the data to be learned do not cover the entire input space. For example, a [[facial recognition system]] may not need to classify any possible image, but only the subset of images that contain faces. The technique of manifold learning assumes that the relevant subset of data comes from a [[manifold]], a mathematical structure with useful properties. The technique also assumes that the function to be learned is ''smooth'': data with different labels are not likely to be close together, and so the labeling function should not change quickly in areas where there are likely to be many data points. Because of this assumption, a manifold regularization algorithm can use unlabeled data to inform where the learned function is allowed to change quickly and where it is not, using an extension of the technique of [[Tikhonov regularization]]. Manifold regularization algorithms can extend [[supervised learning]] algorithms in [[semi-supervised learning]] and [[Transduction (machine learning)|transductive learning]] settings, where unlabeled data are available. The technique has been used for applications including medical imaging, geographical imaging, and object recognition.
+
+== Manifold regularizer ==
+
+=== Motivation ===
+
+Manifold regularization is a type of [[Regularization (mathematics)|regularization]], a family of techniques that reduces [[overfitting]] and ensures that a problem is [[well-posed problem|well-posed]] by penalizing complex solutions. In particular, manifold regularization extends the technique of [[Tikhonov regularization]] as applied to [[Reproducing kernel Hilbert spaces]] (RKHSs). Under standard Tikhonov regularization on RKHSs, a learning algorithm attempts to learn a function <math>f</math> from among a hypothesis space of functions <math>\mathcal{H}</math>. The hypothesis space is an RKHS, meaning that it is associated with a [[Kernel method|kernel]] <math>K</math>, and so every candidate function <math>f</math> has a [[Norm (mathematics)|norm]] <math>\left\| f \right\|_K</math>, which represents the complexity of the candidate function in the hypothesis space. When the algorithm considers a candidate function, it takes its norm into account in order to penalize complex functions.
+
+Formally, given a set of labeled training data <math>(x_1, y_1), \ldots, (x_{\ell}, y_{\ell})</math> with <math>x_i \in X, y_i \in Y</math> and a [[loss function]] <math>V</math>, a learning algorithm using Tikhonov regularization will attempt to solve the expression
+
+: <math> \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} V(f(x_i), y_i) + \gamma \left\| f \right\|_K^2 </math>
+
+where <math>\gamma</math> is a [[Hyperparameter optimization|hyperparameter]] that controls how much the algorithm will prefer simpler functions over functions that fit the data better.
+[[File:Swissroll manifold unrolled.png|thumb|300x300px|A two-dimensional [[manifold]] embedded in three-dimensional space (left). Manifold regularization attempts to learn a function that is smooth on the unrolled manifold (right).]]
+Manifold regularization adds a second regularization term, the ''intrinsic regularizer'', to the ''ambient regularizer'' used in standard Tikhonov regularization. Under the [[Manifold hypothesis|manifold assumption]] in machine learning, the data in question do not come from the entire input space <math>X</math>, but instead from a nonlinear [[manifold]] <math>M\subset X</math>. The geometry of this manifold, the intrinsic space, is used to determine the regularization norm.<ref name="Belkin et al. 2006">{{Cite journal| volume = 7| pages = 2399–2434| last1 = Belkin| first1 = Mikhail| last2 = Niyogi| first2 = Partha| last3 = Sindhwani| first3 = Vikas| title = Manifold regularization: A geometric framework for learning from labeled and unlabeled examples| journal = The Journal of Machine Learning Research| access-date = 2015-12-02| date = 2006| url = http://dl.acm.org/citation.cfm?id=1248632}}</ref>
+
+=== Laplacian norm ===
+
+There are many possible choices for the intrinsic regularizer <math>\left\| f \right\|_I</math>. Many natural choices involve the [[Differential geometry|gradient on the manifold]] <math> \nabla_{M} </math>, which can provide a measure of how smooth a target function is. A smooth function should change slowly where the input data are dense; that is, the gradient <math> \nabla_{M} f(x) </math> should be small where the ''marginal probability density'' <math>\mathcal{P}_X(x) </math>, the [[probability density]] of a randomly drawn data point appearing at <math>x</math>, is large. This gives one appropriate choice for the intrinsic regularizer:
+
+: <math> \left\| f \right\|_I^2 = \int_{x \in M} \left\| \nabla_{M} f(x) \right\|^2 \, d \mathcal{P}_X(x) </math>
+
+In practice, this norm cannot be computed directly because the marginal distribution <math>\mathcal{P}_X</math> is unknown, but it can be estimated from the provided data. 
+
+=== Graph-based approach of the Laplacian norm ===
+
+When the distances between input points are interpreted as a graph, then the [[Laplacian matrix]] of the graph can help to estimate the marginal distribution. Suppose that the input data include <math>\ell</math> labeled examples (pairs of an input <math>x</math> and a label <math>y</math>) and <math>u</math> unlabeled examples (inputs without associated labels). Define <math>W</math> to be a matrix of edge weights for a graph, where <math>W_{ij}</math> is a distance measure between the data points <math>x_i</math> and <math>x_j</math>. Define <math>D</math> to be a diagonal matrix with <math>D_{ii} = \sum_{j=1}^{\ell + u} W_{ij}</math> and <math>L</math> to be the Laplacian matrix <math>D-W</math>. Then, as the number of data points <math>\ell + u</math> increases, <math>L</math> converges to the [[Laplace–Beltrami operator]] <math>\Delta_{M}</math>, which is the [[divergence]] of the gradient <math>\nabla_M</math>.<ref name="Hein et al. 2005">{{Cite book
+| publisher = Springer
+| pages = 470–485
+| last1 = Hein
+| first1 = Matthias
+| last2 = Audibert
+| first2 = Jean-Yves
+| last3 = Von Luxburg
+| first3 = Ulrike | author3-link = Ulrike von Luxburg
+| title = Learning theory
+| volume = 3559
+| chapter = From graphs to manifolds–weak and strong pointwise consistency of graph laplacians
+| date = 2005
+| doi = 10.1007/11503415_32
+| series = Lecture Notes in Computer Science
+| isbn = 978-3-540-26556-6
+| citeseerx = 10.1.1.103.82
+}}</ref><ref>{{Cite book|
+ publisher = Springer
+| pages = 486–500
+| last1 = Belkin
+| first1 = Mikhail
+| last2 = Niyogi
+| first2 = Partha
+| title = Learning theory
+| volume = 3559
+| chapter = Towards a theoretical foundation for Laplacian-based manifold methods
+| date = 2005
+| doi = 10.1007/11503415_33
+| series = Lecture Notes in Computer Science
+| isbn = 978-3-540-26556-6
+| citeseerx = 10.1.1.127.795
+}}</ref> Then, if <math>\mathbf{f}</math> is a vector of the values of <math>f</math> at the data, <math>\mathbf{f} = [f(x_1), \ldots, f(x_{l+u})]^{\mathrm{T}}</math>, the intrinsic norm can be estimated:
+
+: <math> \left\| f \right\|_I^2 = \frac{1}{(\ell+u)^2} \mathbf{f}^{\mathrm{T}} L \mathbf{f} </math>
+
+As the number of data points <math>\ell + u</math> increases, this empirical definition of <math> \left\| f \right\|_I^2</math> converges to the definition when <math>\mathcal{P}_X</math> is known.<ref name="Belkin et al. 2006" />
+
+=== Solving the regularization problem with graph-based approach ===
+
+Using the weights <math>\gamma_A</math> and <math>\gamma_I</math> for the ambient and intrinsic regularizers, the final expression to be solved becomes:
+
+: <math> \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} V(f(x_i), y_i) + \gamma_A \left\| f \right\|_K^2 + \frac{\gamma_I}{(\ell+u)^2} \mathbf{f}^{\mathrm{T}} L \mathbf{f} </math>
+
+As with other [[kernel methods]], <math>\mathcal{H}</math> may be an infinite-dimensional space, so if the regularization expression cannot be solved explicitly, it is impossible to search the entire space for a solution. Instead, a [[representer theorem]] shows that under certain conditions on the choice of the norm <math>\left\| f \right\|_I</math>, the optimal solution <math>f^*</math> must be a linear combination of the kernel centered at each of the input points: for some weights <math>\alpha_i</math>,
+
+: <math> f^*(x) = \sum_{i=1}^{\ell + u} \alpha_i K(x_i, x) </math>
+
+Using this result, it is possible to search for the optimal solution <math>f^*</math> by searching the finite-dimensional space defined by the possible choices of <math>\alpha_i</math>.<ref name="Belkin et al. 2006" />
+
+=== Functional approach of the Laplacian norm ===
+
+The idea beyond graph-Laplacian is to use neighbors to estimate Laplacian. 
+This method is akin [[k-nearest neighbors algorithm|local averaging methods]], that are known to scale poorly in high-dimensional problem.
+Indeed, graph Laplacian is known to suffer from the [[curse of dimensionality]].<ref name="Hein et al. 2005" />
+Luckily, it is possible to leverage expected smoothness of the function to estimate thanks to more advanced functional analysis.
+This method consists in estimating the Laplacian operator thanks to derivatives of the kernel reading <math>\partial_{1, j} K(x_i, x)</math> where <math>\partial_{1,j}</math> denotes the partial derivatives according to the ''j''-th coordinate of the first variable.<ref>{{Cite arXiv|last1=Cabannes|first1=Vivien|last2=Pillaud-Vivien|first2=Loucas|last3=Bach|first3=Francis|last4=Rudi|first4=Alessandro|date=2021|title=Overcoming the curse of dimensionality with Laplacian regularization in semi-supervised learning|class=stat.ML|eprint=2009.04324}}</ref>
+This second approach of the Laplacian norm is to put in relation with [[meshfree methods]], that contrast with the [[finite difference method]] in PDE.
+
+== Applications ==
+
+Manifold regularization can extend a variety of algorithms that can be expressed using Tikhonov regularization, by choosing an appropriate loss function <math>V</math> and hypothesis space <math>\mathcal{H}</math>. Two commonly used examples are the families of [[support vector machines]] and [[Least squares#Regularized versions|regularized least squares]] algorithms. (Regularized least squares includes the ridge regression algorithm; the related algorithms of LASSO and [[elastic net regularization]] can be expressed as support vector machines.<ref>{{cite book
+|title=An Equivalence between the Lasso and Support Vector Machines
+|last=Jaggi|first=Martin
+|editor-last1=Suykens|editor-first1=Johan
+|editor-last2=Signoretto|editor-first2=Marco
+|editor-last3=Argyriou|editor-first3=Andreas
+|year=2014
+|publisher=Chapman and Hall/CRC}}</ref><ref>
+{{cite conference
+|last1=Zhou
+|first1=Quan
+|last2=Chen
+|first2=Wenlin
+|last3=Song
+|first3=Shiji
+|last4=Gardner
+|first4=Jacob
+|last5=Weinberger
+|first5=Kilian
+|last6=Chen
+|first6=Yixin
+|title=A Reduction of the Elastic Net to Support Vector Machines with an Application to GPU Computing
+|url=https://www.aaai.org/ocs/index.php/AAAI/AAAI15/paper/view/9856
+|conference=[[Association for the Advancement of Artificial Intelligence]]}}</ref>) The extended versions of these algorithms are called Laplacian Regularized Least Squares (abbreviated LapRLS) and Laplacian Support Vector Machines (LapSVM), respectively.<ref name="Belkin et al. 2006" />
+
+=== Laplacian Regularized Least Squares (LapRLS) ===
+
+Regularized least squares (RLS) is a family of [[Regression analysis|regression algorithms]]: algorithms that predict a value <math>y = f(x)</math> for its inputs <math>x</math>, with the goal that the predicted values should be close to the true labels for the data. In particular, RLS is designed to minimize the [[mean squared error]] between the predicted values and the true labels, subject to regularization. Ridge regression is one form of RLS; in general, RLS is the same as ridge regression combined with the [[kernel method]].{{Citation needed|reason=Kernel ridge regression can be seen to have the same form as RLS in a general RKHS, but it is difficult to find a source that discusses the connection in detail.|date=December 2015}} The problem statement for RLS results from choosing the loss function <math>V</math> in Tikhonov regularization to be the mean squared error:
+
+: <math> f^* = \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} (f(x_i) - y_i)^2 + \gamma \left\| f \right\|_K^2 </math>
+
+Thanks to the [[representer theorem]], the solution can be written as a weighted sum of the kernel evaluated at the data points:
+
+: <math> f^*(x) = \sum_{i=1}^{\ell} \alpha_i^* K(x_i, x) </math>
+
+and solving for <math>\alpha^*</math> gives:
+
+: <math> \alpha^* = (K + \gamma \ell I)^{-1} Y </math>
+
+where <math>K</math> is defined to be the kernel matrix, with <math>K_{ij} = K(x_i, x_j)</math>, and <math>Y</math> is the vector of data labels.
+
+Adding a Laplacian term for manifold regularization gives the Laplacian RLS statement:
+
+: <math> f^* = \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} (f(x_i) - y_i)^2 + \gamma_A \left\| f \right\|_K^2 + \frac{\gamma_I}{(\ell+u)^2} \mathbf{f}^{\mathrm{T}} L \mathbf{f} </math>
+
+The representer theorem for manifold regularization again gives
+
+: <math> f^*(x) = \sum_{i=1}^{\ell + u} \alpha_i^* K(x_i, x) </math>
+
+and this yields an expression for the vector <math>\alpha^*</math>. Letting <math>K</math> be the kernel matrix as above, <math>Y</math> be the vector of data labels, and <math>J</math> be the <math> (\ell + u) \times (\ell + u) </math> block matrix <math>\begin{bmatrix} I_{\ell} & 0 \\ 0 & 0_u \end{bmatrix} </math>:
+
+: <math> \alpha^* = \underset{\alpha \in \mathbf{R}^{\ell + u}}{\arg\!\min} \frac{1}{\ell} (Y - J K \alpha)^{\mathrm{T}} (Y - J K \alpha) + \gamma_A \alpha^{\mathrm{T}} K \alpha + \frac{\gamma_I}{(\ell + u)^2} \alpha^{\mathrm{T}} K L K \alpha </math>
+
+with a solution of
+
+: <math> \alpha^* = \left( JK + \gamma_A \ell I + \frac{\gamma_I \ell}{(\ell + u)^2} L K \right)^{-1} Y </math><ref name="Belkin et al. 2006" />
+
+LapRLS has been applied to problems including sensor networks,<ref>{{Cite conference
+| publisher = Menlo Park, CA; Cambridge, MA; London; AAAI Press; MIT Press; 1999
+| volume = 21
+| pages = 988
+| last1 = Pan
+| first1 = Jeffrey Junfeng
+| last2 = Yang
+| first2 = Qiang
+| last3 = Chang
+| first3 = Hong
+| last4 = Yeung
+| first4 = Dit-Yan
+| title = A manifold regularization approach to calibration reduction for sensor-network based tracking
+| book-title = Proceedings of the national conference on artificial intelligence| access-date = 2015-12-02
+| date = 2006
+| url = http://www.aaai.org/Papers/AAAI/2006/AAAI06-155.pdf}}</ref>
+[[medical imaging]],<ref>{{Cite conference| publisher = IEEE| pages = 1628–1631| last1 = Zhang| first1 = Daoqiang| last2 = Shen| first2 = Dinggang| title = Semi-supervised multimodal classification of Alzheimer's disease| book-title = Biomedical Imaging: From Nano to Macro, 2011 IEEE International Symposium on| date = 2011| doi = 10.1109/ISBI.2011.5872715}}</ref><ref>{{Cite book| publisher = Springer| pages = 264–271| last1 = Park| first1 = Sang Hyun| last2 = Gao| first2 = Yaozong| last3 = Shi| first3 = Yinghuan| last4 = Shen| first4 = Dinggang| title = Machine Learning in Medical Imaging| volume = 8679| chapter = Interactive Prostate Segmentation Based on Adaptive Feature Selection and Manifold Regularization| date = 2014| doi = 10.1007/978-3-319-10581-9_33| series = Lecture Notes in Computer Science| isbn = 978-3-319-10580-2}}</ref>
+object detection,<ref>{{Cite journal| last = Pillai| first = Sudeep| title = Semi-supervised Object Detector Learning from Minimal Labels| access-date = 2015-12-15| url = http://people.csail.mit.edu/spillai/data/papers/ssl-cv-project-paper.pdf}}</ref>
+[[spectroscopy]],<ref>{{Cite journal| volume = 11| issue = 1| pages = 416–419| last1 = Wan| first1 = Songjing| last2 = Wu| first2 = Di| last3 = Liu| first3 = Kangsheng| title = Semi-Supervised Machine Learning Algorithm in Near Infrared Spectral Calibration: A Case Study on Diesel Fuels| journal = Advanced Science Letters| date = 2012| doi=10.1166/asl.2012.3044}}</ref>
+[[document classification]],<ref>{{Cite journal| volume = 8| issue = 4| pages = 1011–1018| last1 = Wang| first1 = Ziqiang| last2 = Sun| first2 = Xia| last3 = Zhang| first3 = Lijie| last4 = Qian| first4 = Xu| title = Document Classification based on Optimal Laprls| journal = Journal of Software| date = 2013| doi=10.4304/jsw.8.4.1011-1018}}</ref>
+drug-protein interactions,<ref>{{Cite journal| volume = 4| issue = Suppl 2| pages = –6| last1 = Xia| first1 = Zheng| last2 = Wu| first2 = Ling-Yun| last3 = Zhou| first3 = Xiaobo| last4 = Wong| first4 = Stephen TC| title = Semi-supervised drug-protein interaction prediction from heterogeneous biological spaces| journal = BMC Systems Biology| date = 2010| citeseerx = 10.1.1.349.7173| doi = 10.1186/1752-0509-4-S2-S6| pmid = 20840733| pmc = 2982693| doi-access = free}}</ref>
+and compressing images and videos.<ref>{{Cite conference| publisher = ACM| pages = 161–168| last1 = Cheng| first1 = Li| last2 = Vishwanathan| first2 = S. V. N.| title = Learning to compress images and videos| book-title = Proceedings of the 24th international conference on Machine learning| access-date = 2015-12-16| date = 2007| url = http://dl.acm.org/citation.cfm?id=1273517}}</ref>
+
+=== Laplacian Support Vector Machines (LapSVM) ===
+
+[[Support vector machines]] (SVMs) are a family of algorithms often used for [[Statistical classification|classifying data]] into two or more groups, or ''classes''. Intuitively, an SVM draws a boundary between classes so that the closest labeled examples to the boundary are as far away as possible. This can be directly expressed as a [[linear program]], but it is also equivalent to Tikhonov regularization with the [[hinge loss]] function, <math>V(f(x), y) = \max(0, 1 - yf(x))</math>:
+
+: <math> f^* = \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} \max(0, 1 - y_if(x_i)) + \gamma \left\| f \right\|_K^2 </math><ref>{{Cite journal| volume = 48| issue = 1–3| pages = 115–136| last1 = Lin| first1 = Yi| last2 = Wahba| first2 = Grace| last3 = Zhang| first3 = Hao| last4 = Lee| first4 = Yoonkyung|author4-link= Yoonkyung Lee | title = Statistical properties and adaptive tuning of support vector machines| journal = Machine Learning| date = 2002| doi=10.1023/A:1013951620650| doi-access = free}}</ref><ref>{{Cite journal| volume = 6| pages = 69–87| last1 = Wahba| first1 = Grace| last2 = others| title = Support vector machines, reproducing kernel Hilbert spaces and the randomized GACV| journal = Advances in Kernel Methods-Support Vector Learning| date = 1999| citeseerx = 10.1.1.53.2114}}</ref>
+
+Adding the intrinsic regularization term to this expression gives the LapSVM problem statement:
+
+: <math> f^* = \underset{f \in \mathcal{H}}{\arg\!\min} \frac{1}{\ell} \sum_{i=1}^{\ell} \max(0, 1 - y_if(x_i)) + \gamma_A \left\| f \right\|_K^2 + \frac{\gamma_I}{(\ell+u)^2} \mathbf{f}^{\mathrm{T}} L \mathbf{f} </math>
+
+Again, the representer theorem allows the solution to be expressed in terms of the kernel evaluated at the data points:
+
+: <math> f^*(x) = \sum_{i=1}^{\ell + u} \alpha_i^* K(x_i, x) </math>
+
+<math>\alpha</math> can be found by writing the problem as a linear program and solving the [[Duality (optimization)|dual problem]]. Again letting <math>K</math> be the kernel matrix and <math>J</math> be the block matrix <math>\begin{bmatrix} I_{\ell} & 0 \\ 0 & 0_u \end{bmatrix} </math>, the solution can be shown to be
+
+: <math>\alpha = \left( 2 \gamma_A I + 2 \frac{\gamma_I}{(\ell + u)^2} L K \right)^{-1} J^{\mathrm{T}} Y \beta^* </math>
+
+where <math>\beta^*</math> is the solution to the dual problem
+
+:<math> \begin{align}
+& & \beta^* = \max_{\beta \in \mathbf{R}^{\ell}} & \sum_{i=1}^{\ell} \beta_i - \frac{1}{2} \beta^{\mathrm{T}} Q \beta \\
+& \text{subject to} && \sum_{i=1}^{\ell} \beta_i y_i = 0 \\
+& && 0 \le \beta_i \le \frac{1}{\ell}\; i = 1, \ldots, \ell
+\end{align} </math>
+
+and <math>Q</math> is defined by
+
+: <math> Q = YJK \left( 2 \gamma_A I + 2 \frac{\gamma_I}{(\ell + u)^2} L K \right)^{-1} J^{\mathrm{T}} Y </math><ref name="Belkin et al. 2006" />
+
+LapSVM has been applied to problems including geographical imaging,<ref>{{Cite journal| volume = 48| issue = 11| pages = 4110–4121| last1 = Kim| first1 = Wonkook| last2 = Crawford| first2 = Melba M.|author2-link=Melba Crawford| title = Adaptive classification for hyperspectral image data using manifold regularization kernel machines| journal =  IEEE Transactions on Geoscience and Remote Sensing| date = 2010| doi = 10.1109/TGRS.2010.2076287| s2cid = 29580629}}</ref><ref>{{Cite journal| volume = 31| issue = 1| pages = 45–54| last1 = Camps-Valls| first1 = Gustavo| last2 = Tuia| first2 = Devis| last3 = Bruzzone| first3 = Lorenzo| last4 = Atli Benediktsson| first4 = Jon| title = Advances in hyperspectral image classification: Earth monitoring with statistical learning methods| journal = IEEE Signal Processing Magazine| date = 2014| doi=10.1109/msp.2013.2279179| arxiv = 1310.5107| bibcode = 2014ISPM...31...45C| s2cid = 11945705}}</ref><ref>{{Cite conference| publisher = IEEE| pages = 1521–1524| last1 = Gómez-Chova| first1 = Luis| last2 = Camps-Valls| first2 = Gustavo| last3 = Muñoz-Marí| first3 = Jordi| last4 = Calpe| first4 = Javier| title = Semi-supervised cloud screening with Laplacian SVM| book-title = Geoscience and Remote Sensing Symposium, 2007. IGARSS 2007. IEEE International| date = 2007| doi = 10.1109/IGARSS.2007.4423098}}</ref>
+medical imaging,<ref>{{Cite book| publisher = Springer| pages = 82–90| last1 = Cheng| first1 = Bo| last2 = Zhang| first2 = Daoqiang| last3 = Shen| first3 = Dinggang| title = Medical Image Computing and Computer-Assisted Intervention–MICCAI 2012| volume = 7510| chapter = Domain transfer learning for MCI conversion prediction| issue = Pt 1| date = 2012| doi = 10.1007/978-3-642-33415-3_11| pmid = 23285538| pmc = 3761352| series = Lecture Notes in Computer Science| isbn = 978-3-642-33414-6}}</ref><ref>{{Cite journal| volume = 37| issue = 8| pages = 4155–4172| last1 = Jamieson| first1 = Andrew R.| last2 = Giger| first2 = Maryellen L.| last3 = Drukker| first3 = Karen| last4 = Pesce| first4 = Lorenzo L.| title = Enhancement of breast CADx with unlabeled dataa)| journal = Medical Physics| date = 2010| doi=10.1118/1.3455704| pmid = 20879576| pmc = 2921421| bibcode = 2010MedPh..37.4155J}}</ref><ref>{{Cite journal| volume = 1| issue = 2| pages = 151–155| last1 = Wu| first1 = Jiang| last2 = Diao| first2 = Yuan-Bo| last3 = Li| first3 = Meng-Long| last4 = Fang| first4 = Ya-Ping| last5 = Ma| first5 = Dai-Chuan| title = A semi-supervised learning based method: Laplacian support vector machine used in diabetes disease diagnosis| journal = Interdisciplinary Sciences: Computational Life Sciences| date = 2009| doi=10.1007/s12539-009-0016-2| pmid = 20640829| s2cid = 21860700}}</ref>
+face recognition,<ref>{{Cite journal| volume = 4| issue = 17| last1 = Wang| first1 = Ziqiang| last2 = Zhou| first2 = Zhiqiang| last3 = Sun| first3 = Xia| last4 = Qian| first4 = Xu| last5 = Sun| first5 = Lijun| title = Enhanced LapSVM Algorithm for Face Recognition.| journal = International Journal of Advancements in Computing Technology| access-date = 2015-12-16| date = 2012| url = http://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=20058039&AN=98908455&h=8QzzRizi2IKxCZ4EHJjzxbGY%2FQazcifd58fcAGEG17GiFk0wZE59DrEge0xfEGhXRqsBaMwuBNyenVSP6sjwsA%3D%3D&crl=c}}</ref>
+machine maintenance,<ref>{{Cite journal| volume = 38| issue = 8| pages = 10199–10204| last1 = Zhao| first1 = Xiukuan| last2 = Li| first2 = Min| last3 = Xu| first3 = Jinwu| last4 = Song| first4 = Gangbing| title = An effective procedure exploiting unlabeled data to build monitoring system| journal = Expert Systems with Applications| date = 2011| doi=10.1016/j.eswa.2011.02.078}}</ref>
+and [[brain–computer interfaces]].<ref>{{Cite journal| volume = 7| issue = 1| pages = 22–26| last1 = Zhong| first1 = Ji-Ying| last2 = Lei| first2 = Xu| last3 = Yao| first3 = D.| title = Semi-supervised learning based on manifold in BCI| journal = Journal of Electronics Science and Technology of China| access-date = 2015-12-16| date = 2009| url = http://www.journal.uestc.edu.cn/archives/2009/1/7/22-2677907.pdf}}</ref>
+
+== Limitations ==
+
+* Manifold regularization assumes that data with different labels are not likely to be close together. This assumption is what allows the technique to draw information from unlabeled data, but it only applies to some problem domains. Depending on the structure of the data, it may be necessary to use a different semi-supervised or transductive learning algorithm.<ref>{{Cite journal| last = Zhu| first = Xiaojin| title = Semi-supervised learning literature survey| date = 2005| citeseerx = 10.1.1.99.9681}}</ref>
+* In some datasets, the intrinsic norm of a function <math>\left\| f \right\|_I</math> can be very close to the ambient norm <math>\left\| f \right\|_K</math>: for example, if the data consist of two classes that lie on perpendicular lines, the intrinsic norm will be equal to the ambient norm. In this case, unlabeled data have no effect on the solution learned by manifold regularization, even if the data fit the algorithm's assumption that the separator should be smooth. Approaches related to [[co-training]] have been proposed to address this limitation.<ref>{{Cite conference| publisher = ACM| pages = 976–983| last1 = Sindhwani| first1 = Vikas| last2 = Rosenberg| first2 = David S.| title = An RKHS for multi-view learning and manifold co-regularization| book-title = Proceedings of the 25th international conference on Machine learning| access-date = 2015-12-02| date = 2008| url = http://dl.acm.org/citation.cfm?id=1390279}}</ref>
+* If there are a very large number of unlabeled examples, the kernel matrix <math>K</math> becomes very large, and a manifold regularization algorithm may become prohibitively slow to compute. Online algorithms and sparse approximations of the manifold may help in this case.<ref>{{Cite book| pages = 393–407| last1 = Goldberg| first1 = Andrew| last2 = Li| first2 = Ming| last3 = Zhu| first3 = Xiaojin| title = Machine Learning and Knowledge Discovery in Databases| chapter = Online Manifold Regularization: A New Learning Setting and Empirical Study| volume = 5211| date = 2008| doi = 10.1007/978-3-540-87479-9_44| series = Lecture Notes in Computer Science| isbn = 978-3-540-87478-2}}</ref>
+
+== See also ==
+* [[Manifold learning]]
+* [[Manifold hypothesis]]
+* [[Semi-supervised learning]]
+* [[Transduction (machine learning)]]
+* [[Spectral graph theory]]
+* [[Reproducing kernel Hilbert space]]
+* [[Tikhonov regularization]]
+* [[Differential geometry]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+
+=== Software ===
+* The [http://manifold.cs.uchicago.edu/manifold_regularization/software.html ManifoldLearn library] and the [http://www.dii.unisi.it/~melacci/lapsvmp/ Primal LapSVM library] implement LapRLS and LapSVM in [[MATLAB]].
+* The [http://dlib.net/ml.html Dlib library] for [[C++]] includes a linear manifold regularization function.
+
+[[Category:Machine learning]]

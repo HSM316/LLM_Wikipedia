@@ -1,0 +1,47 @@
+Most real databases contain data whose correctness is uncertain. In order to work with such data, there is a need to quantify the integrity of the data. This is achieved by using probabilistic databases.
+
+A probabilistic database is an uncertain database in which the possible worlds have associated probabilities. Probabilistic database management systems are currently an active area of research. "While there are currently no commercial probabilistic database systems, several research prototypes exist..."Vinod Muthusamy, Haifeng Liu, Hans-Arno Jacobsen: Predictive Publish/Subscribe Matching. University of Toronto.
+
+Probabilistic databases distinguish between the logical data model and the physical representation of the data much like relational databases do in the ANSI-SPARC Architecture.
+In probabilistic databases this is even more crucial since such databases have to represent very large numbers of possible worlds, often exponential in the size of one world (a classical database), succinctly.Nilesh N. Dalvi, Dan Suciu: Efficient query evaluation on probabilistic databases. VLDB J. 16(4): 523-544 (2007)Lyublena Antova, Christoph Koch, Dan Olteanu: 10^(10^6) Worlds and Beyond: Efficient Representation and Processing of Incomplete Information. ICDE 2007: 606-615
+
+Terminology
+
+In a probabilistic database, each tuple is associated with a probability between 0 and 1, with 0 representing that the data is certainly incorrect, and 1 representing that it is certainly correct.
+
+Possible Worlds
+
+A probabilistic database could exist in multiple states. For example, if we are uncertain about the existence of a tuple in the database, then the database could be in two different states with respect to that tuple—the first state contains the tuple, while the second one does not. Similarly, if an attribute can take one of the values x, y or z, then the database can be in three different states with respect to that attribute.
+
+Each of these states is called a possible world.
+
+Consider the following database:
+
++ An Incomplete Database A  Ba1  b1a2 b2a3 {b3,b3′,b3′′}
+
+(Here {b3,b3′,b3′′} denotes that the attribute can take any of the values b3,b3′ or b3′′)
+
+Let us assume that we are uncertain about the first tuple, certain about the second tuple and uncertain about the value of attribute B in the third tuple.
+
+Then the actual state of the database may or may not contain the first tuple (depending on whether it is correct or not). Similarly, the value of the attribute B may be b3,b3′ or b3′′.
+
+Consequently, the possible worlds corresponding to the database are as follows:
++ World 1 A  Ba1  b1a2 b2a3 b3
++ World 2 A  Ba1 b1a2 b2a3 b3′
++ World 3 A  Ba1 b1a2 b2a3 b3′′
+
++ World 4 A  Ba2 b2a3 b3
++ World 5 A  Ba2 b2a3 b3′
++ World 6 A  Ba2 b2a3 b3′′
+
+Types of Uncertainties
+
+There are essentially two kinds of uncertainties that could exist in a probabilistic database, as described in the table below:
+
++ Types of Uncertainties Tuple-level uncertainty  Attribute-level uncertainty Here, we are not sure if a tuple is correct or not, that is, whether it should exist in the database or not.  Here, we are not sure about the values that an attribute of a tuple can take, that is, it could take one of the several possible values.  Corresponding to each uncertain tuple, there are two possible worlds: one which includes the tuple while the other which does not.  Corresponding to each uncertain attribute which can take one of the values a1,...,an, there are n possible worlds. Tuple-level uncertainty can be seen as a boolean random variable associated with each uncertain tuple.  Attribute-level uncertainty can be seen as a random variable associated with each uncertain attribute which can take values a1,...,an.
+
+By assigning values to random variables associated with the data items, we can represent different possible worlds.
+
+History
+
+The first published use of the term "probabilistic database" was probably in the 1987 VLDB conference paper "The theory of probabilistic databases", by Cavallo and Pittarelli. The title (of the 8 page paper) was intended as a bit of a joke, since David Maier's 600 page monograph, The Theory of Relational Databases, would have been familiar at that time to most of the conference participants and readers of the conference proceedings.

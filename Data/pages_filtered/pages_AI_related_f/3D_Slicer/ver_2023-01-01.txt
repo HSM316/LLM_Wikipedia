@@ -1,0 +1,66 @@
+3D Slicer (Slicer) is a free and open source software package for image analysis and scientific visualization. Slicer is used in a variety of medical applications, including autism, multiple sclerosis, systemic lupus erythematosus, prostate cancer, lung cancer, breast cancer, schizophrenia, orthopedic biomechanics, COPD, cardiovascular disease and neurosurgery.
+
+About
+3D Slicer is a free open source software (BSD-style license) that is a flexible, modular platform for image analysis and visualization. 3D Slicer is extended to enable development of both interactive and batch processing tools for a variety of applications.
+
+3D Slicer provides image registration, processing of DTI (diffusion tractography), an interface to external devices for image guidance support, and GPU-enabled volume rendering, among other capabilities. 3D Slicer has a modular organization that allows the addition of new functionality and provides a number of generic features not available in competing tools.
+
+The interactive visualization capabilities of 3D Slicer include the ability to display arbitrarily oriented image slices, build surface models from image labels, and hardware accelerated volume rendering. 3D Slicer also supports a rich set of annotation features (fiducials and measurement widgets, customized color maps).
+
+Slicer's capabilities include:
+ Handling DICOM images  and reading/writing a variety of other formats
+ Interactive visualization of volumetric Voxel images, polygonal meshes, and volume renderings
+ Manual editing
+ Fusion and co-registering of data using rigid and non-rigid algorithms
+ Automatic image segmentation
+ Analysis and visualization of diffusion tensor imaging data
+ Tracking of devices for image-guided procedures.
+
+Slicer is compiled for use on multiple computing platforms, including Windows, Linux, and macOS.
+
+Slicer is distributed under a BSD style, free, open source license. The license has no restrictions on use of the software in academic or commercial projects. However, no claims are made on the software being useful for any particular task. It is entirely the responsibility of the user to ensure compliance with local rules and regulations. The slicer has not been formally approved for clinical use by the FDA in the US or by any other regulatory body elsewhere.
+
+ Image gallery 
+
+History
+
+Slicer started as a master's thesis project between the Surgical Planning Laboratory at the Brigham and Women's Hospital and the MIT Artificial Intelligence Laboratory in 1998. 3D Slicer version 2 has been downloaded several thousand times. In 2007 a completely revamped version 3 of Slicer was released. The next major refactoring of Slicer was initiated in 2009, which transitioned the GUI of Slicer from using KWWidgets to Qt. Qt-enabled Slicer version 4 was released in 2011. As of 2022, Slicer 4 had been downloaded over one million times by users around the world.
+
+Slicer software has enabled a variety of research publications, all aimed at improving image analysis.
+
+This significant software project has been enabled by the participation of several large-scale NIH funded efforts, including the NA-MIC, NAC, BIRN, CIMIT, Harvard Catalyst and NCIGT communities. The funding support comes from several federal funding sources, including NCRR, NIBIB, NIH Roadmap, NCI, NSF and the DOD.
+
+Users
+
+Slicer's platform provides functionalities for segmentation, registration and three-dimensional visualization of multimodal image data, as well as advanced image analysis algorithms for diffusion tensor imaging, functional magnetic resonance imaging and image-guided radiation therapy. Standard image file formats are supported, and the application integrates interface capabilities to biomedical research software.
+
+Slicer has been used in a variety of clinical research. In image-guided therapy research, Slicer is frequently used to construct and visualize collections of MRI data that are available pre- and intra-operatively to allow for the acquiring of spatial coordinates for instrument tracking. In fact, Slicer has already played such a pivotal role in image-guided therapy, it can be considered as growing up alongside that field, with over 200 publications referencing Slicer since 1998.
+
+In addition to producing 3D models from conventional MRI images, Slicer has also been used to present information derived from fMRI (using MRI to assess blood flow in the brain related to neural or spinal cord activity), DTI (using MRI to measure the restricted diffusion of water in imaged tissue), and electrocardiography. For example, Slicer's DTI package allows the conversion and analysis of DTI images. The results of such analysis can be integrated with the results from analysis of morphologic MRI, MR angiograms and fMRI. Other uses of Slicer include paleontology and neurosurgery planning.
+
+There is an active community at Slicer's Discourse server.
+
+Developers
+
+The Slicer Developer Orientation offers resources for developers new to the platform. Slicer development is coordinated on the Slicer Discourse forum, and a summary of development statistics is available on Ohloh.
+
+3D Slicer is built on VTK, a pipeline-based graphical library that is widely used in scientific visualization and ITK, a framework widely used for the development of image segmentation and image registration. In version 4, the core application is implemented in C++, and the API is available through a Python wrapper to facilitate rapid, iterative development and visualization in the included Python console. The user interface is implemented in Qt, and may be extended using either C++ or Python.
+
+Slicer supports several types of modular development. Fully interactive, custom interfaces may be written in C++ or Python. Command-line programs in any language may be wrapped using a light-weight XML specification, from which a graphical interface is automatically generated.
+
+For modules that are not distributed in the Slicer core application, a system is available to automatically build and distribute for selective download from within Slicer. This mechanism facilitates the incorporation of code with different license requirements from the permissive BSD-style license used for the Slicer core.
+
+The Slicer build process utilizes CMake to automatically build prerequisite and optional libraries (excluding Qt). The core development cycle incorporates automatic testing, as well as incremental and nightly builds on all platforms, monitored using an online dashboard.
+
+Slicer's development is managed primarily through its GitHub repository.
+
+ External dependencies 
+VTK
+ITK
+CMake
+CPack
+Python
+Nrrd
+MRML
+IGSTK
+Qt

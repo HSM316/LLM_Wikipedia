@@ -1,0 +1,40 @@
+{{short description|Programmable electronic component}}
+{{Sources exist|date=August 2019}}
+{{Advert|date=January 2021}}
+
+A '''data processing unit (DPU)''' is a programmable specialized [[electronic circuit]] with [[hardware acceleration]] of [[data processing]] for [[data-centric computing]].<ref>{{Cite web|url=https://packetpushers.net/peek-inside-fungible-data-center-startup-juniper-cofounder-pradeep-sindhu/|title=A Peek Inside Fungible, A Data Center Startup From Juniper Cofounder Pradeep Sindhu - Packet Pushers|website=packetpushers.net|access-date=2019-08-06}}</ref> The data is transmitted to and from the component as multiplexed packets of information. A DPU generally contains a [[Central processing unit|CPU]], [[Network interface controller|NIC]] and programmable data [[Hardware acceleration|acceleration engines]].<ref>{{Cite web|last=Deierling|first=Kevin|date=2020-05-21|title=What Is a DPU? {{!}} NVIDIA Blog|url=https://blogs.nvidia.com/blog/2020/05/20/whats-a-dpu-data-processing-unit/|access-date=2021-05-29|website=The Official NVIDIA Blog|language=en-US}}</ref><ref name=":0">{{Cite web|last=servethehome|date=2020-09-29|title=What is a DPU A Data Processing Unit Quick Primer|url=https://www.servethehome.com/what-is-a-dpu-a-data-processing-unit-quick-primer/|access-date=2021-06-06|website=ServeTheHome|language=en-US}}</ref> This allows DPUs to have the generality and the programmability of [[central processing unit]]s while being specialized to operate efficiently on [[Network packet|networking packets]], storage requests or analytics requests.<ref>{{Cite web|date=2018-11-30|title=To handle the data tsunami, Juniper's founder turns to custom silicon|url=https://siliconangle.com/2018/11/30/junipers-founder-turns-to-custom-silicon-for-handling-the-data-tsunami-mayfield50/|access-date=2019-08-06|website=SiliconANGLE|language=en-US}}</ref><ref>{{Cite patent|number=20190012350|title=Data Processing Unit for Stream Processing|gdate=2019-01-10|invent1=Sindhu|invent2=Frailong|invent3=Noureddine|invent4=Marti|inventor1-first=Pradeep|inventor2-first=Jean-marc|inventor3-first=Wael|inventor4-first=Felix A.|url=http://www.freepatentsonline.com/y2019/0012350.html}}</ref><ref>Hennessy, John. “[https://www.kisacoresearch.com/sites/default/files/presentations/09.00_-_alphabet_-_john_hennessy.pdf The End of Moore's Law, CPUs (as We Know Them), and the Rise of Domain Specific Architectures].” AI Hardware Summit. Stanford University. September 29, 2019. </ref>
+
+The data [[Hardware acceleration|acceleration engines]] differentiates itself from a CPU by a larger degree of parallelism (required to process many requests) and from a [[GPU]] by a [[MIMD]] architecture rather than an [[SIMD]] architecture (required as each request needs to make different decisions and follow a different path through the chip).<ref>{{Cite web|last=Deierling|first=Kevin|date=2020-05-21|title=What’s a DPU?|url=https://blogs.nvidia.com/blog/2020/05/20/whats-a-dpu-data-processing-unit/|access-date=2020-10-03|website=The Official NVIDIA Blog|language=en-US}}</ref><ref>{{Cite web|url=http://social.techcrunch.com/2019/08/15/the-renaissance-of-silicon-will-create-industry-giants/|title=The renaissance of silicon will create industry giants|website=TechCrunch|language=en-US|access-date=2019-08-16}}</ref> DPUs can be either [[ASIC|ASIC-based]], [[FPGAs|FPGA-based]] or [[System on a chip|SoC-based]].<ref>{{Cite web|last=Deierling|first=Kevin|date=2018-08-30|title=Defining SmartNIC: What is a SmartNIC and How to Choose the Best One|url=https://blog.mellanox.com/2018/08/defining-smartnic/|access-date=2021-05-29|website=Mellanox Technologies Blog|language=en}}</ref> DPUs have been increasingly used in [[Data center|data centers]] and [[Supercomputer|supercomputers]] since their introduction in the 2010s due to the rise in use of [[data-centric computing]], [[big data]], [[Computer_security|security]], and [[artificial intelligence]]/[[machine learning]]/[[deep learning]].<ref>{{Cite web|last=Bhageshpur|first=Kiran|date=2016-10-06|title=The Emergence Of Data-Centric Computing|url=https://www.nextplatform.com/2016/10/06/emergence-data-centric-computing/|access-date=2021-05-29|website=The Next Platform|language=en-US}}</ref> DPUs are designed to be independent infrastructure endpoints.<ref>{{Cite web|last=servethehome|date=2021-05-29|title=DPU vs SmartNIC and the STH NIC Continuum Framework|url=https://www.servethehome.com/dpu-vs-smartnic-sth-nic-continuum-framework-for-discussing-nic-types/|access-date=2021-06-06|website=ServeTheHome|language=en-US}}</ref>
+
+DPU vendors & product lines include:
+
+* [[Nvidia]]/[[Mellanox Technologies]]: BlueField, ConnectX, Innova<ref>{{Cite web|title=NVIDIA BlueField Data Processing Units|url=https://www.nvidia.com/en-us/networking/products/data-processing-unit/|access-date=2021-05-29|website=NVIDIA|language=en-us}}</ref>
+* [[Marvell Technology, Inc.|Marvell Technology]]: OCTEON and ARMADA<ref>{{Cite web|title=Data Processing Units (DPUs) {{!}} Empowering Carrier, Enterprise and Cloud Data Services - Marvell|url=https://www.marvell.com/products/data-processing-units.html|access-date=2021-05-29|website=www.marvell.com}}</ref>
+* [[Fungible Inc.|Fungible]]: F & S Series<ref>{{Cite web|title=DPU Platform – Fungible|url=https://www.fungible.com/product/dpu-platform/|access-date=2021-05-29|website=www.fungible.com}}</ref>
+* Pensando: Capri, Elba & DSC<ref>{{Cite web|title=The Pensando Distributed Services Platform|url=https://pensando.io/our-platform/|access-date=2021-05-29|website=Pensando|language=en-US}}</ref><ref name=":0" />
+*[[Broadcom Inc.|Broadcom]]: Stingray<ref>{{Cite web|title=At a Glance: The Broadcom Stingray PS1100R delivers breakthrough performance and efficiency|url=https://www.broadcom.com/blog/at-a-glance--the-broadcom-stingray-ps1100r-delivers-breakthrough-performance-and-efficiency-for-nvme-of-storage-target-applications|access-date=2021-06-06|website=www.broadcom.com|language=en}}</ref>
+*[[Intel]]: Infrastructure Processing Unit (IPU)<ref>{{Cite web|title=Intel Unveils Infrastructure Processing Unit|url=https://www.intel.com/content/www/us/en/newsroom/news/infrastructure-processing-unit-data-center.html|access-date=2021-06-16|website=Intel|language=en}}</ref>
+*[[Kalray]]: Kalray K200-LP<ref>{{Cite web|title=KALRAY MPPA® DPUs AT THE HEART OF THE STORAGE REVOLUTION|url=https://www.kalrayinc.com/storage/|access-date=2021-09-29|website=www.kalrayinc.com|language=en}}</ref>
+
+Software vendors utilizing DPUs include:
+
+* [[Cloudflare]]
+* [[DataDirect_Networks|DDN]]
+* [[WekaIO]]
+* [[Palo_Alto_Networks|Palo Alto Networks]]
+* [[Vmware|VMware]]
+* [[VAST_Data|Vast Data]]
+* [[Bloombase]]
+
+== References ==
+<references />{{Electronics-stub}}
+
+{{Hardware acceleration}}
+[[Category:Electronics]]
+[[Category:Data processing]]
+[[Category:Artificial intelligence]]
+[[Category:Application-specific integrated circuits]]
+[[Category:Hardware acceleration]]
+[[Category:Digital electronics]]
+[[Category:Electronic design]]
+[[Category:Electronic design automation]]

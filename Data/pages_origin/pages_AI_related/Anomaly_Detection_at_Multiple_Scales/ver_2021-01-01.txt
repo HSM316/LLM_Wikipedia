@@ -1,0 +1,42 @@
+{{Infobox
+|name    =
+|title   = Anomaly Detection at Multiple Scales
+|label2  = Establishment
+|data2   = 2011
+|label3  = Sponsor
+|data3   = [[DARPA]]
+|label4  = Value
+|data4   = $35 million
+|label5  = Goal
+|data5   = Detect insider threats in defense and government networks<!--
+|label5  = Primary contractor
+|data5   = [[Georgia Tech Research Institute]]
+|label6  = Other contractors
+|data6  = ???-->
+|label7  = Website
+|data7   = [http://www.darpa.mil/Our_Work/I2O/Programs/Anomaly_Detection_at_Multiple_Scales_(ADAMS).aspx www.darpa.mil]
+}}
+'''Anomaly Detection at Multiple Scales''', or '''ADAMS''', is a $35 million [[DARPA]] project designed to identify patterns and anomalies in very large data sets. It is under DARPA's [[DARPA#Current program offices|Information Innovation office]] and began in 2011.<ref name="darpa1">{{cite web|url=http://www.darpa.mil/Our_Work/I2O/Programs/Anomaly_Detection_at_Multiple_Scales_(ADAMS).aspx|title=ADAMS|publisher=[[DARPA]] Information Innovation Office|accessdate=2011-12-05|archive-url=https://web.archive.org/web/20120121113838/http://www.darpa.mil/Our_Work/I2O/Programs/Anomaly_Detection_at_Multiple_Scales_(ADAMS).aspx|archive-date=2012-01-21|url-status=dead}}</ref><ref name=fbo1>{{cite news|url=https://www.fbo.gov/download/2f6/2f6289e99a0c04942bbd89ccf242fb4c/DARPA-BAA-11-04_ADAMS.pdf|title=Anomaly Detection at Multiple Scales (ADAMS) Broad Agency Announcement DARPA-BAA-11-04|publisher=[[General Services Administration]]|date=2010-10-22|accessdate=2011-12-05|archive-url=https://web.archive.org/web/20120406072850/https://www.fbo.gov/download/2f6/2f6289e99a0c04942bbd89ccf242fb4c/DARPA-BAA-11-04_ADAMS.pdf|archive-date=2012-04-06|url-status=dead}}</ref><ref name="ackerman1">{{cite news|url=https://www.wired.com/dangerroom/2010/10/darpa-starts-sleuthing-out-disloyal-troops/|title=Darpa Starts Sleuthing Out Disloyal Troops|first=Spencer|last=Ackerman|work=[[Wired (magazine)|Wired]]|date=2010-10-11|accessdate=2011-12-06}}</ref><ref name="cnn">{{cite news|url=http://articles.cnn.com/2010-10-27/us/pentagon.e.mail.profiling_1_nidal-hasan-darpa-fort-hood|title=Military wants to scan communications to find internal threats|first=Charley|last=Keyes|work=[[CNN]]|date=2010-10-27|accessdate=2011-12-06}}</ref>
+
+The project is intended to detect and prevent insider threats such as "a soldier in good mental health becoming homicidal or
+suicidal", an "innocent insider becoming malicious", or "a government employee <nowiki>[</nowiki>who<nowiki>]</nowiki> abuses access privileges to share classified information".<ref name=fbo1 /><ref name=gatech1>{{cite news|url=http://www.gatech.edu/newsroom/release.html?nid=72599|title=Georgia Tech Helps to Develop System That Will Detect Insider Threats from Massive Data Sets|publisher=[[Georgia Institute of Technology]]|date=2011-11-10|accessdate=2011-12-06}}</ref> Specific cases mentioned are [[Nidal Malik Hasan]] and [[WikiLeaks]] source [[Chelsea Manning]].<ref name=insidehpc1>{{cite news|url=http://insidehpc.com/2011/11/29/video-interview-darpas-adams-project-taps-big-data-to-find-the-breaking-bad/|title=Video Interview: DARPA's ADAMS Project Taps Big Data to Find the Breaking Bad|publisher=Inside HPC|date=2011-11-29|accessdate=2011-12-06}}</ref> Commercial applications may include finance.<ref name=insidehpc1 /> The intended recipients of the system output are operators in the [[counterintelligence]] agencies.<ref name=fbo1 /><ref name=gatech1 />
+
+The [[Proactive Discovery of Insider Threats Using Graph Analysis and Learning]] is part of the ADAMS project.<ref name=gatech1 /><ref name=brandon>{{cite news|url=http://www.foxnews.com/scitech/2011/12/03/could-us-government-start-reading-your-emails/|title=Could the U.S. Government Start Reading Your Emails?|first=John|last=Brandon|publisher=[[Fox News]]|date=2011-12-03|accessdate=2011-12-06}}</ref> The Georgia Tech team includes noted [[high-performance computing]] researcher [[David A. Bader]].<ref>{{cite web|url=http://www.cse.gatech.edu/taxonomy/term/153/all|title=Anomaly Detection at Multiple Scales|publisher=[[Georgia Institute of Technology College of Computing|Georgia Tech College of Computing]]|accessdate=2011-12-06}}</ref>
+
+== See also ==
+* [[Cyber Insider Threat]]
+* [[Einstein (US-CERT program)]]
+* [[Threat (computer)]]
+* [[Intrusion detection]]
+
+== References ==
+{{reflist}}
+
+[[Category:Applied data mining]]
+[[Category:Computer security]]
+[[Category:Georgia Tech Research Institute]]
+[[Category:DARPA]]
+
+
+{{military-stub}}
+{{software-stub}}

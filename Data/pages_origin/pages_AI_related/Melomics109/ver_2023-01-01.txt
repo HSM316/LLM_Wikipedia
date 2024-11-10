@@ -1,0 +1,43 @@
+{{Short description|Music composition computer at Universidad de Málaga}}
+{{Infobox custom computer
+| Image          = Melomics109.jpg
+| Caption        = Melomics109 computer cluster
+| Website        = 
+| Dates          = Operational November 2013
+| Location       = [[University of Málaga|Universidad de Málaga]]
+| Sponsors       =
+| Operators      = 
+| Architecture   = 960 [[AMD]] processors, [[Debian]] [[Linux]] operating system
+| Memory         = 3840 GB 
+| Storage        = 320 TB
+| Power          = 
+| OS             = [[Debian]] [[Linux]]
+| Space          =
+| Cost           = 
+| ChartName      = 
+| ChartPosition  =
+| ChartDate      =
+| Purpose        = Composition of [[music]]
+| Legacy         =
+| Emulators      =
+| Sources        =
+}}
+'''Melomics109''' is a [[computer cluster]] (three cabinets with customized front panels) located at [[University of Málaga|Universidad de Málaga]]. It is part of the [[Spanish Supercomputing Network]], and has been designed to increase the computational power provided by [[Iamus (computer)|Iamus]].<ref>{{cite news | title= Artificial music: The computers that create melodies|publisher= BBC Future|last= Ball |first= Philip| date =8 August 2014| url =http://www.bbc.com/future/story/20140808-music-like-never-heard-before/}}</ref><ref>{{cite journal | title= Die Mozart-Maschine| journal= Die Tageszeitung (Taz)| date =13 January 2013| url =http://www.taz.de/Computer-komponiert-klassische-Musik/!108691/}}</ref> Powered by [[Melomics]]' technology, the composing module of Melomics109 is able to create and synthesize music in a variety of [[musical styles]]. This music has been made freely accessible to everyone.<ref>{{cite news | title= La revolución musical de una máquina| newspaper= El Pais| date =8 December 2013| url =http://ccaa.elpais.com/ccaa/2013/12/06/andalucia/1386362952_545600.html}}</ref><ref>{{cite journal| title= Francisco J. Vico and the First Computer-Musicians| journal= IDG Connect| date= 7 July 2014| url= http://www.idgconnect.com/abstract/8505/francisco-j-vico-first-computer-musicians| access-date= 22 July 2014| archive-date= 25 June 2016| archive-url= https://web.archive.org/web/20160625021540/http://www.idgconnect.com/abstract/8505/francisco-j-vico-first-computer-musicians| url-status= dead}}</ref>
+
+[[0music (album)|0music]] is the first album composed and interpreted by Melomics109, launched on July 21 under the name of {{cite web |url=http://melomics.com/@melomics109/0music/ |title=0music}}<ref>{{cite journal | title= Presentación de 0music| journal= University of Malaga Press| date =19 July 2014| url =http://www.uma.es/sala-de-prensa/noticias/presentacion-de-0music-segundo-disco-compuesto-y-grabajo-con-la-tecnologia-melonics/}}</ref> [[Melomics]] aims at freely distributing Melomics109's production, in all formats, and this album is the first one being released in audio (MP3) and editable format (MIDI), under CC0 (public domain) licensing. The rest of Melomics109's production can be browsed, listened to, and downloaded for free at Melomics' {{cite web |url=http://melomics.uma.es/search?q=melomics109 |title=repository}}
+
+==External links==
+* [http://melomics.uma.es/ Melomics home page]
+* [http://www.geb.uma.es/melomics/melomics.html Melomics page at University of Malaga (Spain)]
+
+==References==
+{{reflist}}
+{{computer-stub}}
+
+[[Category:Cluster computing]]
+[[Category:Music technology]]
+[[Category:Artificial intelligence art]]
+[[Category:One-of-a-kind computers]]
+[[Category:Spanish Supercomputing Network]]
+
+{{music-stub}}

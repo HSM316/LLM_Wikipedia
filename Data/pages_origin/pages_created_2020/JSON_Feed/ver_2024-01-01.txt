@@ -1,0 +1,113 @@
+{{short description|Web feed format}}
+{{Infobox file format
+| name = JSON Feed
+| icon =
+| logo = 
+| screenshot =
+| caption = JSON Feed
+| extension = {{code|.json}}
+| mime = {{code|application/feed+json}}
+|_nomimecode = yes
+| type code =
+| uniform type =
+| owner =
+| genre = [[Web syndication]]
+| container for =
+| contained by =
+| extended from = [[JSON]]
+| extended to =
+| standards =
+| open = yes
+| url = https://jsonfeed.org/
+}}
+'''JSON Feed''' is a [[Web feed]] file format for [[Web syndication]] in [[JSON]] instead of [[XML]] as used by [[RSS]] and [[Atom (Web standard)|Atom]].<ref>{{cite web |url=https://jsonfeed.org/version/1 |title=JSON Feed: Version 1 |date=2017-05-17 |author1=Brent Simmons |author2=Manton Reece}}</ref>
+
+A range of software libraries and web frameworks support content syndication via JSON Feed.<ref>{{cite web |url=https://jsonfeed.org/code |title=JSON Feed: Code |author1=Brent Simmons |author2=Manton Reece}}</ref> Supporting clients include [[NetNewsWire]], [[NewsBlur]],<ref name="blog_News">{{Cite web |title=NewsBlur now supports the new JSON Feed spec |author=Samuel Clay |work=The NewsBlur Blog |date=23 May 2017 |access-date=17 July 2020 |url= https://blog.newsblur.com/post/160982162270/newsblur-now-supports-the-new-json-feed-spec}}</ref> ReadKit and Reeder.<!--ref: https://moshbox.jp/?p=30715-->
+
+Notable publishers include [[NPR]]<ref name="npr._NPRn">{{Cite web |title=NPR now supports JSON Feed! |last=Kasbergen |first=Nara |work=Medium |date= 12 December 2017|access-date=17 July 2020 |url= https://npr.codes/npr-now-supports-json-feed-1c8af29d0ce7}}</ref> and the Microblogging platform [[Micro.blog]], which uses it as the response format for many API calls.<ref>{{cite web |title=JSON Feed |url=https://book.micro.blog/json-feed/ |website=Indie Microblogging |publisher=Manton Reece |access-date=2022-12-24}}</ref>
+
+== Example ==
+This is an example feed using the 1.1 [https://www.jsonfeed.org/version/1.1/ Specification.]<ref>{{Cite web|title=JSON Feed - JSON Feed Version 1.1|url=https://www.jsonfeed.org/version/1.1/|access-date=2021-10-25|website=www.jsonfeed.org}}</ref> More details can be found on the website, including other optional properties like ''expired'' and ''hubs''. Custom objects may also be used by publishers, but feed readers that do not understand it must ignore it.<syntaxhighlight lang="json">
+{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "My Example Feed",
+  "home_page_url": "https://example.org/",
+  "feed_url": "https://example.org/feed.json",
+  "description": "Optional to provide more detail beyond the title.",
+  "user_comment": "Optional and should be ignored by feed readers.",
+  "next_url": "https://example.org/feed-pagination.json?x=unique_next_url",
+  "icon": "https://example.org/favicon-timeline-512x512.png",
+  "favicon": "https://example.org/favicon-sourcelist-64x64.png",
+  "authors": [
+    {
+      "name": "Optional Author",
+      "url": "https://example.org/authors/optional-author",
+      "avatar": "https://example.org/authors/optional-author/avatar-512x512.png"
+    }
+  ],
+  "language": "en-US",
+  "items": [
+    {
+      "id": "2",
+      "content_text": "This is a second item.",
+      "url": "https://example.org/second-item",
+      "language": "es-mx",
+      "attachments": [
+        {
+          "url": "https://example.org/second-item/audio.ogg",
+          "mime_type": "audio/ogg",
+          "title": "Optional Title",
+          "size_in_bytes": 31415927,
+          "duration_in_seconds": 1800
+        }
+      ]
+    },
+    {
+      "id": "required-unique-string-that-does-not-change: number, guid, url, etc.",
+      "url": "https://example.org/initial-post",
+      "external_url": "https://en.wikipedia.org/w/index.php?title=JSON_Feed",
+      "title": "Optional Title",
+      "content_html": "<p>Optional content for the feed reader. You may also use content_text or both at the same time.</p>",
+      "content_text": "Optional text for simple feeds.",
+      "summary": "Optional summary of the item.",
+      "image": "https://example.org/initial-post/main-img.png",
+      "banner_image": "https://example.org/initial-post/details-banner.png",
+      "date_published": "2021-10-25T19:30:00-01:00",
+      "date_modified": "2021-10-26T19:45:00-01:00",
+      "authors": [
+        {
+          "name": "Optional Author",
+          "url": "https://example.org/authors/optional-author",
+          "avatar": "https://example.org/authors/optional-author/avatar-512x512.png"
+        }
+      ],
+      "tags": [
+        "Optional Tag",
+        "Example"
+      ],
+      "language": "en-US"
+    }
+  ]
+}
+</syntaxhighlight>
+
+== See also ==
+* [[Comparison of feed aggregators]]
+
+==References==
+{{reflist}}
+
+==External links==
+* {{official}}
+
+{{Web syndication}}
+{{Aggregators}}
+{{Data Exchange}}
+
+[[Category:JSON| ]]
+[[Category:Computer file formats]]
+[[Category:Computer-related introductions in 2017]]
+[[Category:Open formats]]
+[[Category:Web syndication formats]]
+
+{{Podcasting-stub}}

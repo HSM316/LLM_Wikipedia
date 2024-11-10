@@ -1,0 +1,68 @@
+The Turing Institute, George Square, Glasgow.
+
+The Turing Institute was an Artificial Intelligence laboratory based in Glasgow, Scotland between 1983 and 1994. The company undertook basic and applied research, working directly with large companies across Europe, the United States, and Japan developing software as well as providing training, consultancy and information services.
+
+Formation
+Turing Institute Board Meeting 1984. Left to right: Peter Mowforth, Tim Niblett, Lord Balfour, Donald Michie, and Jim Alty.
+The Institute was formed in June 1983 by Donald Michie, Peter Mowforth and Tim Niblett. The Institute was named after Alan Turing who Donald Michie had worked with at Bletchley Park during the Second World War.
+
+The organisation grew out of the Machine Intelligence Research Unit at Edinburgh University  with a plan to combine research in Artificial Intelligence with technology transfer to industry. In 1983, Sir Graham Hills was instrumental in the Institute moving to Glasgow where, with support from the Scottish Development Agency it formed a close working relationship with Strathclyde University.
+Lord Balfour of Burleigh (Chairman) and Shirley Williams joined the board along with a growing team of researchers and AI specialists. Notable amongst these was Stephen Muggleton who was responsible for work developing Inductive Logic Programming.
+
+Professor Jim Alty moved his Man Machine Interaction (HCI) group (later the Scottish HCI Centre) to the Turing Institute in 1984. The move included a significant expansion of the Postgraduate school at the Institute. Jim Alty joined the Turing Institute Board and became Chief Executive. The HCI Centre and the Institute collaborated on a wide range of projects.
+
+Training and resource centre
+The Turing Institute Library with Chief Librarian Julia Wilkinson and Colin Lindsay.
+
+In 1984, following the UK Government Alvey Report on AI, the Institute became an Alvey Journeyman centre  for the UK. Under the guidance of Judith Richards, companies such as IBM (see:John Roycroft), Burroughs, British Airways, Shell, and Unilever seconded researchers to develop new industrial AI applications.
+The Turing Institute Library was formed in 1983 and grew by selling access by subscription to its Information Services. The library developed a large searchable electronic database of content from most of the main AI research and Development centres around the world. Library affiliates logged into the system by dial-up and received weekly summaries of newly added items that could be ordered or downloaded as abstracts.
+The publisher Addison-Wesley developed a close working relationship and published the Turing Institute Press series of books.
+
+In 1984, Jim Alty wrote a text book  which was adopted by many universities and a much-cited paper on expert systems (with Mike Coombs).
+
+Throughout its existence, the Institute organised ran a wide range of workshops and International conferences. Notable amongst these were the Turing Memorial Lecture Series whose speakers included Tony Hoare, Herbert Simon, and John McCarthy. Major conferences included The British Association (147th conference in 1985), BMVC'91, IEEE International Symposium on Intelligent Control (1992)   and the Machine Intelligence Series.
+
+ Research and development 
+
+The Institute won research funding from the Westinghouse Corporation after it developed a machine learned rule-based system to improve the efficiency of a nuclear power plant. The research funding was used to launch the Freddy 3 advanced robotics project  aimed at studying robot learning and robot social interaction. Barry Shepherd developed much of the Freddy 3 software infrastructure. Tatjana Zrimec used the system to investigate how playing robots could develop structured knowledge about their world  while Claude Sammut used the system to investigate machine learning and control  and helped develop Reinforcement Learning. Ivan Bratko made several visits to the Turing Institute undertaking research in machine learning and Advanced Robotics.
+Professor Donald Michie teaching a group of Industrial students, 1986 
+Peter Mowforth with the Freddy 3 Advanced Robotics Facility, 1987 
+Danny Pearce using HyperLook to help develop a satellite simulation for the European Space Agency in 1988
+The Institute undertook several projects for the US military (e.g. Personnel Allocation for the US Office of Naval Research), credit card scoring for a South African Bank   and seed sorting for Scottish Agricultural Sciences Agency. Other large projects included the ESPRIT Machine Learning Toolbox developing CN2  and Electrophoretic Gel analysis with Unilever.
+
+In 1984 the Institute worked under contract from Radian Corp  to develop code for the Space Shuttle auto-lander.
+The code was developed with an inductive rule generator, Rulemaster, using training examples from a NASA simulator. A similar approach was later used by Danny Pearce to develop qualitative models to control and diagnose satellites for ESA as well as optimising gas flow in the North Sea for Enterprise Oil. Similar approaches based on pole-balancing automata  were used to control submersible vehicles  and develop a control system for helicopters carrying sling loads.
+Stephen Muggleton and his group developed Inductive Logic Programming and was involved in the practical use of machine learning for the generation of expert knowledge. Applications included the discovery of rules for protein folding (with Ross King)  and drug design  as well as systems such as CIGOL that were capable of discovering new concepts and hypotheses.
+
+In 1986, Jim Alty's HCI group won a major ESPRIT 1 contract to investigate the use of Knowledge Based systems in Process Control Interfaces called GRADIENT (Graphical Intelligent Dialogues, P600). (with Gunnar Johannsen of Kassel University), Peter Elzer (Clausthal University) and Asea Brown Boveri) to create intelligent interfaces for process control operators. This work had a major impact on process control interface design. The initial pilot phase report (Alty, Elzer et al., 1985) was widely used and cited. Many research papers were produced  A follow-on large ESPRIT research project was PROMISE (Process Operators Multimedia Intelligent Support Environment) working with DOW Benelux (Netherlands), Tecsiel (Italy) and Scottish Power (Scotland).
+
+In 1987, the Turing Institute won a project to build a large, scalable, network-available user-manual for 
+S.W.I.F.T. The worldwide-web-like system was launched in 1988. Its success as a global hypertext resource for its users led to SWIFT sponsoring the Turing Memorial series of Lectures.  The close working relationship came to an end, in part, when a key member of the SWIFT team, Arnaud Rubin, was killed by a terrorist bomb on Pan Am flight 103 over Lockerbie.
+
+One of the strongest business relationships the Institute had was with Sun Microsystems. Sun funded a series of projects where the key Institute Personnel were Tim Niblett and Arthur van Hoff. Several projects concerned the development of new user-interface tools and environments (e.g. GoodNews, HyperNews and HyperLook).
+
+HyperLook was written in PostScript and PDB, an ANSI C to PostScript compiler developed at the Institute, and it ran on Sun's NeWS Windowing System. Don Hopkins, while studying at the Turing Institute, ported SimCity to Unix with HyperLook as its front-end.
+
+Arthur van Hoff left the Institute in 1992 and joined Sun Microsystems where he authored the Java 1.0 compiler, the beta version of the HotJava browser and helped with the design of the Java language.
+
+Throughout the 1980s, the Turing Institute Vision Group developed multi-scale tools and applications. A series of 3D industrial applications were developed and deployed using the Multi-Scale Signal Matching (MSSM) technology, specifically:
+
+ 3D head modelling
+ Robot navigation
+ Real time robot camera stereo vergence
+ Terrain Modelling
+ Scene of Crime capture of 3D footprints for the Royal Canadian Mounted Police
+ Maxillofacial reconstruction and Denture cast digital archiving with Glasgow Dental School.
+ Brain model labelling with Guys Hospital
+ Hyper-resolution methods to improve CCTV image quality for Strathclyde Police
+ High-speed target tracking for the UK Ministry of Defence
+ Virtual backgrounds and camera photogrammetry for BBC broadcast TV.
+ 3D car body shape reconstruction from wax models; Ford Motor Company, Dearbourn, USA.
+ With Sun Microsystems using a stereo pair of miniature cameras to create and re-project a normalised straight-on view for teleconferencing.
+
+Various other robot projects were undertaken at the Turing Institute where key researchers included Paul Siebert, Eddie Grant, Paul Grant, David Wilson, Bing Zhang and Colin Urquhart (e.g. ).
+
+In 1990 the Turing Institute organised and ran the First Robot Olympics with the venue at the University of Strathclyde.
+
+Closure
+From 1989 onwards, the company faced financial difficulties that caused it to close in 1994.

@@ -1,0 +1,31 @@
+In [[artificial intelligence]], a '''behavior selection algorithm''',<ref>[http://www.gameaipro.com/GameAIPro/GameAIPro_Chapter04_Behavior_Selection_Algorithms.pdf Behavior Selection Algorithms: An Overview]</ref> or '''action selection algorithm''', is an algorithm that selects appropriate behaviors or actions for one or more [[intelligent agent]]s. In [[artificial intelligence (video games)|game artificial intelligence]], it selects behaviors or actions for one or more [[non-player character]]s. Common behavior selection algorithms include:
+
+*[[Finite-state machine]]s
+**[[Hierarchical finite-state machine]]s
+*[[Decision tree]]s
+*[[Behavior tree (artificial intelligence, robotics and control)|Behavior tree]]s
+*[[Hierarchical task network]]s
+*[[Hierarchical control system]]s
+*[[Utility system (artificial intelligence)|Utility system]]s
+*[[Dialogue tree]] (for selecting what to say)
+
+== Related concepts ==
+
+In [[Application software|application]] programming, run-time selection of the behavior of a specific method is referred to as the [[strategy design pattern]].
+
+== See also ==
+* [[Cognitive model]] - all cognitive models exhibit behavior in terms of making decisions (taking action), making errors, and with various reaction times.
+* [[Behavioral modeling]], in systems theory
+* [[Behavioral modeling in hydrology]]
+* [[Behavioral modeling in computer-aided design]]
+* [[Behavioral modeling language]]
+* [[Case-based reasoning]], solving new problems based on solutions of past problems
+* [[Model-based reasoning]]
+
+== References ==
+
+{{reflist}}
+
+{{newline}}
+
+{{ai-stub}}

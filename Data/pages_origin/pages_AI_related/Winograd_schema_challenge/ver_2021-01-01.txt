@@ -1,0 +1,92 @@
+{{short description|Test of machine intelligence}}
+{{Use dmy dates|date=April 2018}}
+The '''Winograd Schema Challenge''' ('''WSC''') is a test of machine intelligence proposed by [[Hector Levesque]], a computer scientist at the [[University of Toronto]]. Designed to be an improvement on the [[Turing test]], it is a multiple-choice test that employs questions of a very specific structure: they are instances of what are called Winograd Schemas, named after [[Terry Winograd]], professor of computer science at [[Stanford University]].<ref name="ieee web">{{cite web|last1=Ackerman|first1=Evan|title=Can Winograd Schemas Replace Turing Test for Defining Human-level AI|url=https://spectrum.ieee.org/automaton/robotics/artificial-intelligence/winograd-schemas-replace-turing-test-for-defining-humanlevel-artificial-intelligence|website=IEEE Spectrum|accessdate=29 October 2014|date=2014-07-29}}</ref>
+
+On the surface, Winograd Schema questions simply require the resolution of [[Anaphora (linguistics)|anaphora]]: the machine must identify the [[antecedent (grammar)|antecedent]] of an ambiguous [[pronoun]] in a statement. This makes it a task of [[natural language processing]], but Levesque argues that for Winograd Schemas, the task requires the use of knowledge and [[commonsense reasoning]].<ref name="Levesque14">{{Cite journal | doi = 10.1016/j.artint.2014.03.007| title = On our best behaviour| journal = Artificial Intelligence| volume = 212| pages = 27–35| year = 2014| last1 = Levesque | first1 = H. J. | doi-access = free}}</ref>
+
+[[Nuance Communications]] announced in July 2014 that it would sponsor an annual WSC competition, with a prize of $25,000 for the best system that could match human performance.<ref name=nuance>{{cite web|title=Nuance announces the Winograd Schemas Challenge to Advance Artificial Intelligence Innovation|url=http://www.businesswire.com/news/home/20140728005207/en/Nuance-Announces-Winograd-Schema-Challenge-Advance-Artificial#.VF_SHIfXmRs|website=Business Wire|accessdate=9 November 2014|date=2014-07-28}}</ref> However, the prize is no longer offered.
+
+== Background ==
+The Winograd Schema Challenge was proposed in the spirit of the [[Turing test]]. Proposed by [[Alan Turing]] in 1950, the Turing test plays a central role in the philosophy of [[artificial intelligence]]. Turing proposed that, instead of debating whether a machine can think, the science of AI should be concerned with demonstrating intelligent behavior, which can be tested. But the exact nature of the test Turing proposed has come under scrutiny, especially since an AI chatbot named Eugene claimed to pass it in 2014. One of the major concerns with the Turing Test is that a machine could easily pass the test with brute force and/or trickery, rather than true intelligence.<ref name="Turing paper" />
+
+The Winograd Schema Challenge was proposed in part to ameliorate the problems that came to light with the nature of the programs that performed well on the test.<ref name=Hector>{{cite conference|last1=Levesque|first1=Hector|last2=Davis|first2=Ernest|last3=Morgenstern|first3=Leora|title=The Winograd Schema Challenge|work=Proceedings of the Thirteenth International Conference on Principles of Knowledge Representation and Reasoning|date=2012|url=http://www.aaai.org/ocs/index.php/KR/KR12/paper/download/4492/4924|accessdate=29 October 2014}}</ref>
+
+Turing's original proposal was what he called the [[Turing test#Imitation game|imitation game]], which involves free-flowing, unrestricted conversations in English between human judges and computer programs over a text-only channel (such as teletype). In general, the machine passes the test if interrogators are not able to tell the difference between it and a human in a five-minute conversation.<ref name="Turing paper">{{cite journal|first1=Alan|last1=Turing|author-link=Alan Turing|title=Computing Machinery and Intelligence|url=http://phil415.pbworks.com/f/TuringComputing.pdf|accessdate=28 October 2014|journal=[[Mind (journal)|Mind]]|volume=LIX|issue=236|date=October 1950|pages=433–460|doi=10.1093/mind/LIX.236.433}}</ref>
+
+=== Eugene Goostman ===
+
+On June 7, 2014, a computer program named [[Eugene Goostman]] was declared to be the first AI to have passed the Turing test in a competition held by the [[University of Reading]] in England. In the competition Eugene was able to convince 33% of judges that they were talking with a 13-year-old Ukrainian boy.<ref name="IEEE journal">{{cite journal|last1=Ackerman|first1=Evan|title=A Better Test Than Turing|journal=IEEE Spectrum|date=Oct 2014|volume=51|issue=10|pages=20–1|doi=10.1109/mspec.2014.6905475}}</ref> The supposed victory of a machine that thinks aroused controversies about the [[Turing test]]. Critics claimed that Eugene passed the test simply by fooling the judge and taking advantage of its purported identity. For example, it could easily skip some key questions by joking around and changing subjects. However, the judge would forgive its mistakes because Eugene identified as a teenager who spoke English as his second language.<ref name="live science">{{cite web|last1=Lewis|first1=Tanya|title=Brainy Machines Need An Updated IQ Test, Expert Say|url=http://www.livescience.com/47296-turing-test-needs-an-update.html|website=[[Live Science]]|date=11 August 2014|accessdate=28 October 2014}}</ref>
+
+=== Weaknesses of the Turing test ===
+
+The performance of Eugene Goostman exhibited some of the Turing test's problems. Levesque identifies several major issues,<ref name="Levesque14" /> summarized as follows:<ref name="Michael15">{{cite book|last1=Michael|first1=Julian|title=The Theory of Correlation Formulas and Their Application to Discourse Coherence|date=18 May 2015|publisher=UT Digital Repository|page=6|hdl=2152/29979}}</ref>
+* Deception: The machine is forced to construct a false identity, which is not part of intelligence.
+* Conversation: A lot of interaction may qualify as "legitimate conversation"—jokes, clever asides, points of order—without requiring intelligent reasoning.
+* Evaluation: Humans make mistakes and judges often would disagree on the results.
+
+== Winograd Schemas ==
+The key factor in the WSC is the special format of its questions, which are derived from Winograd Schemas. Questions of this form may be tailored to require knowledge and commonsense reasoning in a variety of domains. They must also be carefully written not to betray their answers by [[Selection (linguistics)|selectional restrictions]] or statistical information about the words in the sentence.
+
+=== Origin ===
+The first cited example of a Winograd Schema (and the reason for their namesake) is due to [[Terry Winograd]]:<ref name=UNL>{{cite journal|last1=Winograd|first1=Terry|title=Understanding Natural Language|url=http://ac.els-cdn.com/0010028572900023/1-s2.0-0010028572900023-main.pdf?_tid=60a02632-63c1-11e4-81b8-00000aacb35f&acdnat=1415064473_e5b480b8f467ac1be8bdfa3354ba6608|date=Jan 1972|journal=Cognitive Psychology|volume=3|issue=1|pages=1–191|doi=10.1016/0010-0285(72)90002-3|accessdate=4 November 2014}}</ref>
+{{block indent|
+The city councilmen refused the demonstrators a permit because they [feared/advocated] violence.
+}}
+The choices of "feared" and "advocated" turn the schema into its two instances:
+{{block indent|
+The city councilmen refused the demonstrators a permit because they feared violence.
+
+The city councilmen refused the demonstrators a permit because they advocated violence.
+}}
+
+The question is whether the pronoun "they" refers to the city councilmen or the demonstrators, and switching between the two instances of the schema changes the answer. The answer is immediate for a human reader but proves difficult to emulate in machines. Levesque<ref name="Levesque14" /> argues that knowledge plays a central role in these problems: the answer to this schema has to do with our understanding of the typical relationships between and behavior of councilmen and demonstrators.
+
+Since the original proposition of the Winograd Schema Challenge, Ernest Davis, a professor at [[New York University]], has compiled a list of over 140 Winograd Schemas from various sources as examples of the kinds of questions that should appear on the Winograd Schema Challenge.<ref name=collection>{{cite web|last1=Davis|first1=Ernest|title=A Collection of Winograd Schemas|url=https://www.cs.nyu.edu/davise/papers/WS.html|website=cs.nyu.edu|publisher=NYU|accessdate=30 October 2014}}</ref>
+
+=== Formal description ===
+A Winograd Schema Challenge question consists of three parts:
+# A sentence or brief discourse that contains the following:
+#* Two [[noun phrase]]s of the same [[semantic class]] (male, female, inanimate, or group of objects or people),
+#* An ambiguous [[pronoun]] that may refer to either of the above noun phrases, and
+#* A special word and alternate word, such that if the special word is replaced with the alternate word, the natural resolution of the pronoun changes.
+# A question asking the identity of the ambiguous pronoun, and
+# Two answer choices corresponding to the noun phrases in question.
+
+A machine will be given the problem in a standardized form which includes the answer choices, thus making it a [[binary decision]] problem.
+
+=== Advantages ===
+The Winograd Schema Challenge has the following purported advantages:
+* Knowledge and commonsense reasoning are required to solve them.
+* Winograd Schemas of varying difficulty may be designed, involving anything from simple cause-and-effect relationships to complex narratives of events.
+* They may be constructed to test reasoning ability in specific domains (e.g., social/psychological or spatial reasoning).
+* There is no need for human judges.<ref name="Hector" />
+
+=== Pitfalls ===
+One difficulty with the Winograd Schema Challenge is the development of the questions. They need to be carefully tailored to ensure that they require commonsense reasoning to solve. For example, Levesque<ref name="Hector" /> gives the following example of a so-called Winograd Schema that is "too easy":
+{{block indent|
+The women stopped taking pills because they were [pregnant/carcinogenic]. Which individuals were [pregnant/carcinogenic]?
+}}
+The answer to this question can be determined on the basis of  [[Selection (linguistics)|selectional restrictions]]: in any situation, pills do not get pregnant, women do; women cannot be carcinogenic, but pills can. Thus this answer could be derived without the use of reasoning, or any understanding of the sentences' meaning—all that is necessary is data on the selectional restrictions of ''pregnant'' and ''carcinogenic.''
+
+== Activity ==
+In 2016 and 2018, Nuance Communications sponsored a competition, offering a grand prize of $25,000 for the top scorer above 90% (for comparison, humans correctly answer to 92–96% of WSC questions<ref name="Sakaguchi">{{Cite arXiv |eprint = 1907.10641|last1 = Sakaguchi|first1 = Keisuke|author2 = Ronan Le Bras|last3 = Bhagavatula|first3 = Chandra|last4 = Choi|first4 = Yejin|title = WinoGrande: An Adversarial Winograd Schema Challenge at Scale|year = 2019|class = cs.CL}}</ref>). However, the 2018 competition was cancelled<ref>{{cite journal|url=http://www.dialog-21.ru/media/4589/boguslavskyimplusetal-111.pdf|title=Knowledge-based approach to Winograd Schema Challenge|last1=Boguslavsky|first1=I.M.|last2=Frolova|first2=T.I.|last3=Iomdin|first3=L.L.|last4=Lazursky|first4=A.V.|last5=Rygaev|first5=I.P.|last6=Timoshenko|first6=S.P.|journal=Proceedings of the International Conference of Computational Linguistics and Intellectual Technologies|date=2019|location=Moscow}}</ref> and the prize is no longer offered.<ref name=CR>{{cite web|url=http://commonsensereasoning.org/winograd.html|website=CommonsenseReasoning.org|title=Winograd Schema Challenge|accessdate=24 January 2020}}</ref>
+
+The Twelfth International Symposium on the Logical Formalizations of Commonsense Reasoning was held on March 23–25, 2015 at the [[AAAI]] Spring Symposium Series at Stanford University, with a special focus on the Winograd Schema Challenge. The organizing committee included Leora Morgenstern ([[Leidos]]), Theodore Patkos (The Foundation for Research & Technology Hellas), and Robert Sloan ([[University of Illinois at Chicago]]).<ref name=AIII>{{cite web|url=http://www.aaai.org/Symposia/Spring/sss15symposia.php#ss04|title=AAAI 2015 Spring Symposia|website=Association for the Advancement of Artificial Intelligence|accessdate=1 January 2015}}</ref>
+
+The 2016 Winograd Schema Challenge was run on July 11, 2016 at IJCAI-16. There were four contestants. The first round of the contest was to solve PDPs—pronoun disambiguation problems, adapted from literary sources, not constructed as pairs of sentences.<ref>{{cite magazine|first1=Ernest|last1=Davis|first2=Leora|last2=Morgenstern|first3=Charles|last3=Ortiz|title=The First Winograd Schema Challenge at IJCAI-16|magazine=AI Magazine|date=Fall 2017|url=http://www.aimagazine-digital.org/aimagazine/fall_2017?sub_id=TUUUqmoUzKCg&pg=99#pg99}}</ref> The highest score achieved was 58% correct, by Quan Liu et al, of the University of Science and Technology, China.<ref>{{cite arxiv|title=Commonsense Knowledge Enhanced Embeddings for Solving Pronoun Disambiguation Problems in Winograd Schema Challenge|eprint=1611.04146|first1=Quan|last1=Liu|first2=Hui|last2=Jiang|first3=Zhen-Hua|last3=Ling|first4=Xiaodan|last4=Zhu|first5=Si|last5=Wei|first6=Yu|last6=Hu|class=cs.AI|year=2016}}</ref> Hence, by the rules of that challenge, no prizes were awarded, and the challenge did not proceed to the second round.  The organizing committee in 2016 was Leora Morgenstern, Ernest Davis, and Charles Ortiz.
+
+70% accuracy on 70 manually selected problems from the 273<ref name="Sakaguchi"/> in the original Winograd Schema dataset was achieved in 2017 by a Neural Association Model designed for Commonsense Knowledge Acquisition.<ref>{{cite journal|url=https://www.ijcai.org/Proceedings/2017/326|doi=10.24963/ijcai.2017/326|title=Cause-Effect Knowledge Acquisition and Neural Association Model for Solving A Set of Winograd Schema Problems|last1=Liu|first1=Quan|last2=Jiang|first2=Hui|last3=Evdokimov|first3=Andrew|last4=Ling|first4=Zhen-Hua|last5=Zhu|first5=Xiaodan|last6=Wei|first6=Si|last7=Hu|first7=Yu|journal=Proceedings of the Twenty-Sixth International Joint Conference on Artificial Intelligence|pages=2344–2350|date=2017|isbn=9780999241103}}</ref> In June 2018, a score of 63.7% accuracy was achieved on the full dataset using an ensemble of Recurrent Neural Network language models,<ref>{{cite arxiv|last1=Trinh|first1=Trieu H.|last2=Le|first2=Quoc V.|date=2019-09-26|title=A Simple Method for Commonsense Reasoning|class=cs.AI|eprint=1806.02847}}</ref> marking the first use of deep neural networks that learn from independent corpora to acquire common sense knowledge.  In 2019 a score of 90.1%, was achieved on the original Winograd Scheme dataset by fine-tuning of the [[BERT (language model)|BERT]] language model with appropriate WSC-like training data to avoid having to learn commonsense reasoning.<ref name="Sakaguchi" /> The general language model [[GPT-3]] achieved a score of 88.3% without specific fine-tuning in 2020.<ref name="Brown_et_al_2020">{{Cite arXiv |eprint = 2005.14165|last1 = Brown|first1 = Tom B.|last2 = Mann|first2 = Benjamin|last3 = Ryder|first3 = Nick|last4 = Subbiah|first4 = Melanie|last5 = Kaplan|first5 = Jared|last6 = Dhariwal|first6 = Prafulla|last7 = Neelakantan|first7 = Arvind|last8 = Shyam|first8 = Pranav|last9 = Sastry|first9 = Girish|last10 = Askell|first10 = Amanda|last11 = Agarwal|first11 = Sandhini|last12 = Herbert-Voss|first12 = Ariel|last13 = Krueger|first13 = Gretchen|last14 = Henighan|first14 = Tom|last15 = Child|first15 = Rewon|last16 = Ramesh|first16 = Aditya|last17 = Ziegler|first17 = Daniel M.|last18 = Wu|first18 = Jeffrey|last19 = Winter|first19 = Clemens|last20 = Hesse|first20 = Christopher|last21 = Chen|first21 = Mark|last22 = Sigler|first22 = Eric|last23 = Litwin|first23 = Mateusz|last24 = Gray|first24 = Scott|last25 = Chess|first25 = Benjamin|last26 = Clark|first26 = Jack|last27 = Berner|first27 = Christopher|last28 = McCandlish|first28 = Sam|last29 = Radford|first29 = Alec|last30 = Sutskever|first30 = Ilya|title = Language Models are Few-Shot Learners|year = 2020|class = cs.CL|display-authors = 29}}</ref> A more challenging, adversarial "Winogrande" dataset of 44,000 problems was designed in 2019. The state-of-the-art on this larger dataset as of August 2020 remains at the 84.6% reported for fine-tuned [[BERT (language model)|BERT]].<ref name="Brown_et_al_2020"/>
+
+A version of the Winograd Schema Challenge is one part of the GLUE (General Language Understanding Evaluation) benchmark collection of challenges in automated natural language understanding.<ref>{{cite web|url=https://gluebenchmark.com/|website=GlueBenchmark.com|title = GLUE Benchmark|accessdate=30 July 2019}}</ref>
+
+== References ==
+<!--- See http://en.wikipedia.org/wiki/Wikipedia:Footnotes on how to create references using <ref></ref> tags, these references will then appear here automatically -->
+{{Reflist}}
+
+== External links ==
+* [http://commonsensereasoning.org/winograd.html Website for the contest sponsored by Nuance Communications]
+
+<!--- Categories --->
+[[Category:Artificial intelligence]]
+[[Category:Turing tests]]
+[[Category:Tests]]

@@ -1,0 +1,15 @@
+In mathematics, vague sets are an extension of fuzzy sets.
+
+In a fuzzy set, each object is assigned a single value in the interval [0,1] reflecting its grade of membership. This single value does not allow a separation of evidence for membership and evidence against membership.
+
+Gau et al."Vague sets". proposed the notion of vague sets, where each object is characterized by two different membership functions: a true membership function and a false membership function.
+This kind of reasoning is also called interval membership, as opposed to point membership in the context of fuzzy sets.
+
+Mathematical definition
+A vague set  is characterized by
+ its true membership function 
+ its false membership function 
+ with 
+
+The grade of membership for x is not a crisp value anymore, but can be located in . This interval can be interpreted as an extension to the fuzzy membership function. The vague set degenerates to a fuzzy set, if  for all x.
+The uncertainty of x is the difference between the upper and lower bounds of the membership interval; it can be computed as .

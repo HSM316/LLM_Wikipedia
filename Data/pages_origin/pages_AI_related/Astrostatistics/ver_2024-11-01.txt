@@ -1,0 +1,16 @@
+{{Short description|Branch of statistics combining astrophysics, statistical analysis and data mining}}
+{{Multiple issues|
+{{One source|date=September 2024}}
+{{Third-party|date=September 2024}}
+}}
+'''Astrostatistics''' is a discipline which spans [[astrophysics]], [[statistical analysis]] and [[data mining]].<ref>{{Cite web |title=Astrostatistics and Astroinformatics Portal |url=https://asaip.psu.edu |access-date=2024-09-03 |website=asaip.psu.edu}}</ref> It is used to process the vast amount of data produced by [[automated scanning]] of the cosmos, to characterize complex datasets, and to link [[astronomical data]] to [[theoretical astrophysics|astrophysical theory]]. Many branches of statistics are involved in astronomical analysis including [[nonparametrics]], [[multivariate regression]] and [[multivariate classification]], [[Time series|time series analysis]], and especially [[Bayesian inference]]. The field is closely related to [[astroinformatics]].
+
+==References==
+{{reflist}}
+
+[[Category:Astrophysics]]
+[[Category:Applied statistics]]
+[[Category:Data mining]]
+[[Category:Machine learning]]
+
+{{Statistics-stub}}

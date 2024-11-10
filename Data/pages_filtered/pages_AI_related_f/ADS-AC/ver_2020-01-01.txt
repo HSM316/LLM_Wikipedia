@@ -1,0 +1,4 @@
+ADS-AC is an experimental open source program which implements Absolutely Dynamic System, a proposed mechanism for AC.
+
+Theory
+ADS-AC uses a system of "points" or "nodes" connected by "links" to create a structure of "knots". The nodes have no properties other than their links to other nodes in order to maintain their absolute dynamicity.

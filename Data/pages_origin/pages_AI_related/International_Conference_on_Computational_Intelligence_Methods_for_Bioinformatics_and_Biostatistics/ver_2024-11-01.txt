@@ -1,0 +1,92 @@
+{{Short description|Yearly scientific conference}}
+{{Multiple issues|
+{{Third-party|date=July 2019}}
+{{More citations needed|date=July 2019}}
+}}
+{{Use dmy dates|date=January 2015}}
+{{Infobox recurring event
+| name = International Conference on Computational Intelligence Methods for Bioinformatics and Biostatistics
+| native_name = 
+| logo = Cibb logo.png
+| image = <!--DO NOT include "File:" part of image name
+  (different from above because of merger with
+  Template:Infobox festival)-->
+| imagesize =
+| caption = 
+| date = <!--"dates=" also works, as merged from
+  Template:Infobox festival. Do not use both-->
+| begins = 10 September 2025
+| ends = 12 September 2025
+| prev = CIBB 2024, [[Benevento]], Italy, EU
+| next = CIBB 2025, [[Milan]], Italy, EU
+| frequency = yearly
+| location = Various
+| years_active = {{age|2004|09|14}}
+| first = CIBB 2004, [[Perugia]], Italy
+| last =
+| participants = 
+| attendance = 
+| genre = Scientific conference
+| budget =
+| patron =
+| organised = Yearly local organizing committees, and members of the [[European Neural Network Society]] and [[IEEE Computational Intelligence Society]]
+| people =
+| member = 
+| website = {{URL|https://www.bioinformatics-sannio.org/cibb2024/}}
+| footnotes =
+}}
+The '''International Conference on Computational Intelligence Methods for Bioinformatics and Biostatistics''' ('''CIBB''') is a yearly [[scientific conference]] focused on [[machine learning]] and [[computational intelligence]] applied to [[bioinformatics]], [[biostatistics]], and [[medical informatics]].
+
+==Organization and history==
+The CIBB conferences are typically organized by members of the [[IEEE Computational Intelligence Society]] (IEEE CIS) and the International Neural Network Society (INNS), among others. Their main themes are [[machine learning]], [[data mining]], and [[computational intelligence]] algorithms applied to [[biology|biological]] and [[biostatistics|biostatistical]] problems.
+
+The CIBB conference was originally started by Francesco Masulli ([[Università di Genova]]), Antonina Starita ([[Università di Pisa]]), and Roberto Tagliaferri ([[Università di Salerno]]) as a special session within other international conferences held in Italy: the 14th Italian Workshop on Neural Networks (2004), the 6th International Workshop on Fuzzy Logic and Applications (2005), the 7th International Fuzzy Logic and Intelligent Technologies in Nuclear Science Conference on Applied Artificial Intelligence (2006), and the 7th International Workshop on Fuzzy Logic and Applications (2007). Because of the broad participation of researchers to the CIBB special session at the latter meeting, which included twenty-six submitted papers, the CIBB steering committee decided to turn CIBB into an autonomous conference starting with the 2008 edition in [[Vietri sul Mare]], Italy.<ref>[https://www.scm.tees.ac.uk/c.angione/papers/BookProceedingsCIBB2015.pdf CIBB 2015 Conference proceedings - CIBB history (PDF)]</ref>
+
+During their first editions, the CIBB conferences were organized and attended mainly by Italian researchers at various academic locations throughout Italy. As international audience and importance of the conference grew, following editions moved outside Italy. The 2012 CIBB conference was held for the first time outside [[Europe]], in [[Houston, Texas]].
+[[File:CIBB2014 moment.jpeg|thumb|right|CIBB 2014 conference in Cambridge, Great Britain]]
+
+==Format==
+The conference is a single track meeting that includes invited talks as well as oral and poster presentations of [[Peer review|refereed]] papers. It usually lasts three days in September, and traditionally includes some special sessions about the application of [[computational intelligence]] to specific aspects of [[biology]] (for example, the "Special session on machine learning in health informatics and biological systems" at CIBB 2018,<ref>[https://davidechicco.github.io/cibb2018specialsession/ CIBB 2018 Special session on machine learning in health informatics and biological systems]</ref>) and occasionally some tutorials.
+
+At the 2011 conference edition in [[Gargnano]], the scientific committee gave a young researcher best paper award.<ref>[https://web.archive.org/web/20150418003139/http://neuronelab.unisa.it/category/conference-workshop/c75-cibb2011/ UniSa.it - CIBB 2011 webpage]</ref><ref>{{Cite book|first1=Davide|title = Computational Intelligence Methods for Bioinformatics and Biostatistics|volume = 7548|last1=Chicco|first2=Marco|last2=Tagliasacchi|first3=Marco|last3=Masseroli|date=10 December 2012|publisher=Springer|pages=238–252|doi=10.1007/978-3-642-35686-5_20|series = Lecture Notes in Computer Science|isbn = 978-3-642-35685-8}}</ref>
+
+==Publications==
+Proceedings of the conferences are published as a book series by [[Springer Science+Business Media]],<ref>{{cite web |title=International Meeting on Computational Intelligence Methods for Bioinformatics and Biostatistics |website=SpringerLink |url=https://link.springer.com/conference/cibb |publisher=[[Springer Science+Business Media]] |accessdate=2019-07-07}}</ref> whereas selected papers are published in journals such as ''[[BMC Bioinformatics]]'' and ''[[BMC Medical Informatics and Decision Making]]''.<ref>{{cite journal |title=12th and 13th International Meeting on Computational Intelligence Methods for Bioinformatics and Biostatistics (CIBB 2015/16) |journal=BMC Bioinformatics |url=https://bmcbioinformatics.biomedcentral.com/articles/supplements/volume-19-supplement-7 |publisher=[[BioMed Central]] |year=2018}}</ref>
+
+== Editions ==
+Future:
+*{{flagicon|ITA}} CIBB 2025, September 10–12, [[Milan]], Italy, EU – 20th edition.<ref>Announced at the end of CIBB 2024 in Benevento</ref>
+
+Past:
+*{{flagicon|ITA}} CIBB 2024, September 4–6, [[Benevento]], Italy, EU – 19th edition.<ref>[https://www.bioinformatics-sannio.org/cibb2024/ CIBB 2024  official website]</ref>
+*{{flagicon|ITA}} CIBB 2023, September 4–6, [[Padua]], Italy, EU – 18th edition.<ref>[https://cibb2023.dei.unipd.it/ CIBB 2023  official website]</ref>
+* CIBB 2021, November 15–17, online, virtual edition– 17th edition.<ref>[https://davidechicco.github.io/cibb2021/index.html CIBB 2021 official website]</ref>
+*{{flagicon|ITA}} CIBB 2019, September 4–6, [[Bergamo]], Italy, EU – 16th edition.<ref>[https://web.archive.org/web/20191112223142/https://dinamico2.unibg.it/cazzaniga/cibb2019/index.html CIBB2019  official website]</ref>
+*{{flagicon|Portugal}} CIBB 2018, September 6–8, [[Almada]], Portugal, EU – 15th edition.<ref>[http://eventos.fct.unl.pt/cibb2018 Unl.pt - CIBB 2018]</ref>
+*{{flagicon|ITA}} CIBB 2017, September 7–9 [[Cagliari]], Italy, EU – 14th edition.<ref>[http://cibb2017.unica.it/ UniCa.it - CIBB 2017]</ref>
+*{{flagicon|Scotland}} CIBB 2016, September 1–3, [[Stirling]], Scotland, United Kingdom – 13th edition.<ref>[http://www.cs.stir.ac.uk/events/cibb2016/ Stir.ac.uk - CIBB 2016]</ref>
+*{{flagicon|ITA}} CIBB 2015, September 10–12, [[Naples]], Italy, EU – 12th  edition.<ref>[https://web.archive.org/web/20180705204119/http://bioinfo.na.iac.cnr.it/cibb2015/ CIBB 2015 official website]</ref> 
+*{{flagicon|England}} CIBB 2014, June 26–28, [[Cambridge]], England, United Kingdom – 11th  edition.<ref>[http://www.cussb.unisr.it/cibb2014/ Cussb.UniSr.it/cibb2014 – CIBB 2014 official website]</ref>
+*{{flagicon|FRA}} CIBB 2013, June 20–22, [[Nice]], France, EU – 10th  edition.<ref>[https://web.archive.org/web/20130309225310/http://mc3.i3s.unice.fr/CIBB-PRIB-2013/CIBB/ Web Archive - CIBB 2013 official website]</ref> Preceded by [[PRIB]] 2013.
+*{{flagicon|USA}} CIBB 2012, July 12–14, [[Houston]], Texas, USA – 9th  edition.<ref>[https://web.archive.org/web/20140513183431/http://www.cibb2012.org/ Web Archive - CIBB 2012 official website]</ref>
+*{{flagicon|ITA}} CIBB 2011, June 30–July 2, [[Gargnano]], Italy, EU – 8th  edition.<ref>[https://web.archive.org/web/20120921024135/http://www.neuronelab.dmi.unisa.it:80/index.php?option=com_content&view=article&id=137&Itemid=141 Web Archive - CIBB 2011 official website]</ref>
+* {{flagicon|ITA}} CIBB 2010, September 16–18, [[Palermo]], Italy, EU – 7th  edition.<ref>[http://cibb10.pa.icar.cnr.it/ CIBB 2010 official website]</ref>
+* {{flagicon|ITA}} CIBB 2009, October 15–17, [[Genoa]], Italy, EU – 6th  edition.<ref>[https://web.archive.org/web/20160219190404/http://cibb09.disi.unige.it/ Web Archive - CIBB 2009 official website]</ref> 
+* {{flagicon|ITA}} CIBB 2008, October 3–4, [[Vietri sul Mare]], Italy, EU – 5th  edition.<ref>[https://web.archive.org/web/20090501235630/http://cibb08.disi.unige.it/ Web Archive - CIBB 2008 official website]</ref>
+* {{flagicon|ITA}} CIBB 2007, July 7–10, [[Portofino]], Italy, EU – 4th  edition. Special session of WILF 2007.<ref>[https://web.archive.org/web/20070730091733/http://cibb07.dsi.unimi.it/ Web Archive - CIBB 2007 call for papers]</ref>
+* {{flagicon|ITA}} CIBB 2006, August 30, [[Genoa]], Italy, EU – 3rd edition. Special session of FLINS 2006.<ref>[https://web.archive.org/web/20160304033409/http://cibb06.disi.unige.it Web Archive - CIBB 2006 official website]</ref>
+* {{flagicon|ITA}} CIBB 2005, September 15–17, [[Crema, Lombardy|Crema]], Italy, EU – 2nd edition. Special session of WILF 2005.<ref>[https://web.archive.org/web/20070730091742/http://cibb05.disi.unige.it/ Wen Archive CIBB 2005 call for papers]</ref>
+* {{flagicon|ITA}} CIBB 2004, September 14–15, [[Perugia]], Italy, EU – 1st edition. Special session of WIRN 2004.<ref>[http://www.disi.unige.it/person/MasulliF/conferences/CIBB04.html CIBB 2004 official webpage]</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official website|https://www.bioinformatics-sannio.org/cibb2024/|CIBB 2024 official website}}
+*[http://www.wikicfp.com/cfp/servlet/tool.search?q=cibb&year=a CIBB conference series on WikiCfp.com]
+
+{{Authority control}}
+
+[[Category:Artificial intelligence conferences]]
+[[Category:Computer science conferences]]
+[[Category:Bioinformatics]]

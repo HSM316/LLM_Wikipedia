@@ -1,0 +1,23 @@
+[[File:Fuzzy arithmetic.png|thumb|Fuzzy arithmetic]]
+A '''fuzzy number''' is a generalization of a regular, real number in the sense that it does not refer to one single value but rather to a connected set of possible values, where each possible value has its own weight between 0 and 1.<ref>{{Cite journal|last=Dijkman|first=J.G|last2=Haeringen|first2=H van|last3=Lange|first3=S.J de|title=Fuzzy numbers|journal=Journal of Mathematical Analysis and Applications|language=en|volume=92|issue=2|pages=301–341|doi=10.1016/0022-247x(83)90253-6|year=1983|doi-access=free}}</ref> This weight is called the [[Membership function (mathematics)|membership function]]. A fuzzy number is thus a special case of a convex, normalized [[fuzzy set]] of the real line.<ref>[http://www.itm.uni-stuttgart.de/staff/Hanss/ Michael Hanss], 2005. ''Applied Fuzzy Arithmetic, An Introduction with Engineering Applications''. Springer, {{ISBN|3-540-24201-5}}</ref> Just like [[Fuzzy logic]] is an extension of [[Boolean logic]] (which uses absolute truth and falsehood only, and nothing in between), fuzzy numbers are an extension of [[real numbers]]. Calculations with fuzzy numbers allow the incorporation of [[uncertainty]] on parameters, properties, geometry, initial conditions, etc. The arithmetic calculations on fuzzy numbers are implemented using fuzzy arithmetic operations, which can be done by two different approaches: (1) interval arithmetic approach;<ref>{{Cite journal|last=Alavidoost|first=M.H.|last2=Mosahar Tarimoradi|first2=M.H.|last3=Zarandi|first3=F.|title=Fuzzy adaptive genetic algorithm for multi-objective assembly line balancing problems|language=en|volume=34|pages=655-677|doi=10.1016/j.asoc.2015.06.001}} </ref> and (2) the extension principle approach.<ref> {{Cite journal|last=Gerami Seresht|first=N.|last2=Fayek|first2=A.R.|title=Computational method for fuzzy arithmetic operations on triangular fuzzy numbers by extension principle|language=en|volume=106|pages=172–193|doi=10.1016/j.ijar.2019.01.005}}</ref>
+
+A fuzzy number is equal to a fuzzy interval.<ref name="Lee2006">{{cite book|author=Kwang Hyung Lee|title=First Course on Fuzzy Theory and Applications|url=https://books.google.com/books?id=mbMSv8NtuYwC|access-date=23 August 2020|date=30 November 2006|publisher=Springer Science & Business Media|isbn=978-3-540-32366-2|pages=130–}}</ref> The degree of fuzziness is determined by the a-cut which is also called the fuzzy spread.{{Citation needed|date=November 2020}}
+
+==See also==
+* [[Fuzzy set]]
+* [[Uncertainty]]
+* [[Interval arithmetic]]
+* [[Random variable]]
+
+==References==
+{{reflist}}
+
+==External links==
+* [https://web.archive.org/web/20060206033549/http://www.seattlerobotics.org/encoder/mar98/fuz/flindex.html Fuzzy Logic Tutorial]
+
+{{Number systems}}
+
+[[Category:Fuzzy logic]]
+[[Category:Numbers]]
+
+{{num-stub}}

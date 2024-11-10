@@ -1,0 +1,28 @@
+{{short description|Programming techniques in computational intelligence}}
+{{Multiple issues|
+{{notability|date=December 2014}}
+{{More citations needed|date=October 2014}}
+}}
+{{Use dmy dates|date=October 2017}}
+
+'''Computational heuristic intelligence'''<ref>Newell, A. (1981) [https://kilthub.cmu.edu/articles/journal_contribution/The_heuristic_of_George_Polya_and_its_relation_to_artificial_intelligence/6610595 THE HEURISTIC OF GEORGE POLYA AND ITS RELATION TO ARTIFICIAL INTELLIGENCE]{{cbignore|bot=medic}} Department of Computer Science, Carnegie-Mellon University</ref> (CHI) refers to specialized programming techniques in [[computational intelligence]] (also called [[artificial intelligence]], or AI). These techniques have the express goal of avoiding [[complexity]] issues, also called [[NP-hard]] problems, by using human-like techniques. They are best summarized as the use of exemplar-based methods ([[heuristics]]), rather than rule-based methods ([[algorithms]]). Hence the term is distinct from the more conventional computational ''algorithmic'' intelligence, or [[symbolic AI]]. An example of a CHI technique is the [[encoding specificity principle]] of Tulving and Thompson.<ref>Tulving, E., & Thomson, D.M. (1973).  [http://gureckislab.org/courses/fall15/lhc/readings/TulvingThompson1973.pdf Encoding specificity and retrieval processes in episodic memory]. Psychological Review, 80, 352–373,</ref> In general, CHI principles are problem solving techniques used by people, rather than programmed into machines. It is by drawing attention to this key distinction that the use of this term is justified in a field already replete with confusing neologisms. Note that the legal systems of all modern human societies employ both heuristics (generalisations of cases) from individual trial records as well as legislated statutes (rules) as regulatory guides.
+
+Another recent approach to the avoidance of complexity issues is to employ [[feedback]] control rather than [[feed forward (control)|feedforward]] modeling as a problem-solving paradigm. This approach has been called [[computational cybernetics]], because (a) the term 'computational' is associated with conventional computer programming techniques which represent a strategic, compiled, or feedforward model of the problem, and (b) the term 'cybernetic' is associated with conventional system operation techniques which represent a tactical, interpreted, or feedback model of the problem. Of course, real programs and real problems both contain both feedforward and feedback components. A real example which illustrates this point is that of human cognition, which clearly involves both perceptual ([[Top-down and bottom-up design|bottom-up]], feedback, sensor-oriented) and conceptual ([[wikt:top-down|top-down]], feedforward, motor-oriented) information flows and hierarchies.
+
+The AI engineer must choose between mathematical and cybernetic problem solution and machine design paradigms. This is not a coding (program language) issue, but relates to understanding the relationship between the declarative and procedural programming paradigms. 
+The vast majority of STEM professionals never get the opportunity to design or implement pure cybernetic solutions. When pushed, most responders will dismiss the importance of any difference by saying that all code can be reduced to a mathematical model anyway. Unfortunately, not only is this belief false, it fails most spectacularly in many AI scenarios.
+
+Mathematical models are not time agnostic, but by their very nature are pre-computed, i.e. feedforward. Dyer [2012] and Feldman [2004] have independently investigated the simplest of all somatic governance paradigms, namely control of a simple jointed limb by a single flexor muscle. They found that it is impossible to determine forces from limb positions- therefore, the problem cannot have a pre-computed (feedforward) mathematical solution. Instead, a top-down command bias signal changes the threshold feedback level in the sensorimotor loop, e.g. the loop formed by the afferent and efferent nerves, thus changing the so-called ‘equilibrium point’ of the flexor muscle/ elbow joint system. An overview of the arrangement reveals that global postures and limb position are commanded in feedforward terms, using global displacements (common coding), with the forces needed being computed locally by feedback loops. This method of sensorimotor unit governance, which is based upon what [[Anatol Feldman]] calls the ‘equilibrium Point’ theory, is formally equivalent to a servomechanism such as a car's ‘cruise control’.
+
+==See also==
+
+* [[NP-hard]]
+* [[Heuristics]]
+* [[Computational cybernetics]]
+* [[Top-down and bottom-up design]]
+
+==References==
+{{Reflist}}
+
+[[Category:Artificial intelligence]]
+[[Category:Heuristics]]

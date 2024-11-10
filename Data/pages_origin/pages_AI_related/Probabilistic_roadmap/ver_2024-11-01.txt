@@ -1,0 +1,41 @@
+{{Short description|Probabilistic motion planning algorithm}}
+The '''probabilistic roadmap'''<ref>{{citation
+ | last1 = Kavraki | first1 = L. E. | author1-link = Lydia Kavraki
+ | last2 = Svestka | first2 = P.
+ | last3 = Latombe | first3 = J.-C. | author3-link = Jean-Claude Latombe
+ | last4 = Overmars | first4 = M. H. | author4-link = Mark Overmars
+ | doi = 10.1109/70.508439
+ | issue = 4
+ | journal = IEEE Transactions on Robotics and Automation
+ | pages = 566–580
+ | title = Probabilistic roadmaps for path planning in high-dimensional configuration spaces
+ | volume = 12
+ | year = 1996| hdl = 1874/17328 | hdl-access = free
+ }}.</ref> planner is a [[motion planning]] algorithm in robotics, which solves the problem of determining a path between a starting configuration of the robot and a goal configuration while avoiding collisions.
+
+[[File:PRM with Ob-maps.gif|thumb|An example of a probabilistic random map algorithm exploring feasible paths around a number of polygonal obstacles]]
+
+The basic idea behind PRM is to take random samples from the [[Configuration space (physics)|configuration space]] of the robot, testing them for whether they are in the free space, and use a local planner to attempt to connect these configurations to other nearby configurations. The starting and goal configurations are added in, and a [[graph search algorithm]] is applied to the resulting [[Graph (discrete mathematics)|graph]] to determine a path between the starting and goal configurations.
+
+The probabilistic roadmap planner consists of two phases: a construction and a query phase. In the construction phase, a roadmap (graph) is built, approximating the motions that can be made in the environment. First, a random configuration is created. Then, it is connected to some neighbors, typically either the ''k'' nearest neighbors or all neighbors less than some predetermined distance. Configurations and connections are added to the graph until the roadmap is dense enough. In the query phase, the start and goal configurations are connected to the graph, and the path is obtained by a [[Dijkstra's shortest path]] query.
+
+Given certain relatively weak conditions on the shape of the free space, PRM is provably probabilistically complete, meaning that as the number of sampled points increases without bound, the probability that the algorithm will not find a path if one exists approaches zero.  The rate of convergence depends on certain visibility properties of the free space, where visibility is determined by the local planner.  Roughly, if each point can "see" a large fraction of the space, and also if a large fraction of each subset of the space can "see" a large fraction of its complement, then the planner will find a path quickly.
+
+The invention of the PRM method is credited to [[Lydia Kavraki|Lydia E. Kavraki]].<ref>{{Cite web|url=http://mentalfloss.com/article/53176/dr-lydia-e-kavraki-woman-making-robots-work|title=Dr. Lydia E. Kavraki: A Woman Making Robots Work|last=Erbland|first=Kate|date=2013-10-14|website=Mental Floss|language=en|archive-url=|archive-date=|access-date=2019-10-07}}</ref><ref>{{Cite web|url=https://www.acm.org/articles/bulletins/2017/april/athena-2017-kavraki|title=Lydia E. Kavraki named 2017-2018 ACM Athena Lecturer|website=www.acm.org|language=en|access-date=2019-10-07}}</ref> There are many variants on the basic PRM method, some quite sophisticated, that vary the sampling strategy and connection strategy to achieve faster performance.  See e.g. {{harvtxt|Geraerts|Overmars|2002}}<ref>{{citation
+ | last1 = Geraerts | first1 = R.
+ | last2 = Overmars | first2 = M. H. | author2-link = Mark Overmars
+ | contribution = A comparative study of probabilistic roadmap planners
+ | pages = 43–57
+ | title = Proc. Workshop on the Algorithmic Foundations of Robotics (WAFR'02)
+ | url = http://people.cs.uu.nl/roland/pdf/compare.pdf
+ | year = 2002}}.</ref> for a discussion.
+
+==References==
+{{Reflist}}
+
+[[Category:Robot control]]
+[[Category:Automated planning and scheduling]]
+[[Category:Path planning]]
+
+
+{{robotics-stub}}

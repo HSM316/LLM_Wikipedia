@@ -1,0 +1,23 @@
+{{More footnotes|date=August 2020}}
+'''Script theory''' is a [[Psychology|psychological]] theory which posits that [[human behaviour]] largely falls into patterns called "scripts" because they function analogously to the way a written script does, by providing a program for action. [[Silvan Tomkins]] created script theory as a further development of his [[affect theory]], which regards human beings' emotional responses to stimuli as falling into categories called "[[Affect (psychology)|affects]]": he noticed that the purely biological response of affect may be followed by awareness and by what we [[Cognition|cognitively]] do in terms of acting on that affect so that more was needed to produce a complete explanation of what he called "human being theory".
+
+In script theory, the basic unit of analysis is called a "scene", defined as a sequence of events linked by the affects triggered during the experience of those events. Tomkins recognized that our affective experiences fall into patterns that we may group together according to criteria such as the types of persons and places involved and the degree of intensity of the effect experienced, the patterns of which constitute scripts that inform our behavior in an effort to maximize positive affect and to minimize negative affect.
+
+== In artificial intelligence ==
+[[Roger Schank]], [[Robert P. Abelson]] and their research group, extended Tomkins' scripts and used them in early artificial intelligence work as a method of representing [[procedural knowledge]].<ref>{{cite book|last1=Schank|first1=Roger C.|title=Dynamic memory: A theory of reminding and learning in computers and people|date=1990|publisher=Cambridge University Press|location=Cambridge (GB)|isbn=978-0521270298|edition=Repr.}}</ref> In their work, scripts are very much like [[frame (artificial intelligence)|frames]], except the values that fill the slots must be ordered. A script is a structured representation describing a stereotyped sequence of events in a particular context. Scripts are used in natural language understanding systems to organize a knowledge base in terms of the situations that the system should understand.
+
+The classic example of a script involves the typical sequence of events that occur when a person drinks in a restaurant:  ''finding a seat, reading the menu, ordering drinks from the waitstaff...''  In the script form, these would be decomposed into [[conceptual dependency theory|conceptual transitions]], such as '''MTRANS''' and '''PTRANS''', which refer to ''mental transitions [of information]'' and ''physical transitions [of things]''.
+
+Schank, Abelson and their colleagues tackled some of the most difficult problems in [[artificial intelligence]] (i.e., [[story understanding]]), but ultimately their line of work ended without tangible success. This type of work received little attention after the 1980s, but it is very influential in later [[knowledge representation]] techniques, such as [[case-based reasoning]].
+
+Scripts can be inflexible. To deal with inflexibility, smaller modules called [[memory organization packet]]s (MOP) can be combined in a way that is appropriate for the situation.
+
+== References ==
+* Nathanson, Donald L. ''Shame and Pride: Affect, Sex, and the Birth of the Self''. London: W.W. Norton, 1992 
+* [[Eve Kosofsky Sedgwick|Sedgwick, Eve Kosofsky]] and Adam Frank, eds. 1995. ''Shame and Its Sisters: A Silvan Tomkins Reader''. Durham and London: Duke University Press.
+* Tomkins, Silvan. "Script Theory". ''The Emergence of Personality''. Eds. Joel Arnoff, A. I. Rabin, and Robert A. Zucker. New York: Springer Publishing Company, 1987. 147–216. 
+* Tomkins, Silvan. "Script Theory: Differential Magnification of Affects". Nebraska Symposium On Motivation 1978. Ed. Richard A. Deinstbier. Lincoln, NE: [[University of Nebraska Press]], 1979. 201–236.
+
+[[Category:History of artificial intelligence]]
+[[Category:Knowledge representation]]
+[[Category:Psychological theories]]

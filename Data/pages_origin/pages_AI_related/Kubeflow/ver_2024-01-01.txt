@@ -1,0 +1,190 @@
+{{Short description|Open-source machine learning platform}}
+{{COI|date=September 2022}}
+{{Infobox software
+| title = Kubeflow
+| name = Kubeflow
+| logo = Kubeflow-logo.png
+| logo size = 84px
+| author = [[Google]]
+| developer = Kubeflow Contributors<ref name="kubeflow_working_groups" /> - [[AWS]], [[Bloomberg L.P.|Bloomberg]], [[Google]], [[IBM]], [[NVIDIA]], [[Nutanix]], [[Red Hat]], Arrikto, and others
+| released = {{Start date and age|2018|04|05}}<ref name="kubeflow_0.1" />
+| latest release version = 1.8<ref name="kubeflow_1.8" />
+| latest release date = {{Start date and age|2023|11|01}}
+| repo = {{URL|https://github.com/kubeflow}}
+| programming language = [[Go (programming language)|Go]], [[Python (programming language)|Python]]
+| platform = [[Kubernetes]]
+| genre = [[Machine learning#Software|Machine Learning Platform]]
+| license = [[Apache License 2.0]]
+| website = {{URL|https://kubeflow.org}}
+}}
+
+'''Kubeflow''' is an [[open-source software|open-source]] platform for [[machine learning]] and [[MLOps]] on [[Kubernetes]] introduced by [[Google]]. The different stages in a typical [[MLOps|machine learning lifecycle]] are represented with different [[Component-based software engineering|software components]] in Kubeflow, including model development ''([[#Kubeflow Notebooks|Kubeflow Notebooks]]<ref name="kubeflow_notebooks" />)'', model training ''([[#Kubeflow Pipelines|Kubeflow Pipelines]]'',''<ref name="kubeflow_pipelines" /> [[#Kubeflow Training Operator|Kubeflow Training Operator]]<ref name="kubeflow_training_operator" />)'', model serving ''([[#KServe|KServe]]{{efn|name=kserve_rename}}<ref name="kubeflow_kserve" />)'', and [[automated machine learning]] ''([[#Katib|Katib]]<ref name="kubeflow_katib" />)''.
+
+Each component of Kubeflow can be deployed separately, and it is not a requirement to deploy every component.<ref name="kubeflow_install" />
+
+== History ==
+
+The Kubeflow project was first announced at ''[[Cloud Native Computing Foundation|KubeCon + CloudNativeCon North America 2017]]'' by [[Google]] engineers David Aronchick, Jeremy Lewi, and Vishnu Kannan<ref>{{Cite web |title="Hot Dogs or Not" - At Scale with Kubernetes [I] - Vish Kannan & David Aronchick, Google | website=[[YouTube]] |url=https://www.youtube.com/watch?v=R3dVF5wWz-g |language=en}}</ref> to address a perceived lack of flexible options for building production-ready machine learning systems.<ref>{{Cite web |title=Introducing Kubeflow - A Composable, Portable, Scalable ML Stack Built for Kubernetes |date=21 December 2017 |url=https://kubernetes.io/blog/2017/12/introducing-kubeflow-composable/ |language=en}}</ref> The project has also stated it began as a way for Google to open-source how they ran [[TensorFlow]] internally.<ref name="kubeflow_history" />
+
+The first release of Kubeflow (Kubeflow 0.1) was announced at ''KubeCon + CloudNativeCon Europe 2018''<ref>{{Cite web |title=Google-led Kubeflow, machine learning for Kubernetes, begins to take shape |date=4 May 2018 |url=https://techcrunch.com/2018/05/04/google-kubeflow-machine-learning-for-kubernetes-begins-to-take-shape/ |language=en}}</ref> with claims of having already become among the top 2% of [[GitHub]] projects ever.<ref>{{Cite web |title=Announcing Kubeflow 0.1 |date=4 May 2018 |url=https://kubernetes.io/blog/2018/05/04/announcing-kubeflow-0.1/ |language=en}}</ref> Kubeflow 1.0 was released in March 2020 via a public blog post announcing that many Kubeflow components were graduating to a "stable status", indicating they were now ready for production usage.<ref>{{Cite web |title=Kubeflow 1.0: Cloud-Native ML for Everyone |date=2 March 2020 |url=https://blog.kubeflow.org/releases/2020/03/02/kubeflow-1-0-cloud-native-ml-for-everyone.html |language=en}}</ref>
+
+In October 2022, Google announced that the Kubeflow project had applied to join the [[Cloud Native Computing Foundation]].<ref>{{Cite web |last=Lamkin |first=Thea |date=2022-10-24 |title=Kubeflow has applied to become a CNCF incubating project |url=https://blog.kubeflow.org/kubeflow-applied-cncf-incubating/ |access-date=2023-11-02 |website=Kubeflow |language=en}}</ref><ref>{{Cite web |date=2022-10-24 |title=Kubeflow applies to become a CNCF incubating project |url=https://opensource.googleblog.com/2022/10/kubeflow-applies-to-become-a-cncf-incubating-project.html |access-date=2023-11-02 |website=Google Open Source Blog}}</ref> In July 2023, the foundation voted to accept Kubeflow as an incubating stage project.<ref>{{Cite web |date=2023-07-25 |title=Kubeflow brings MLOps to the CNCF Incubator |url=https://www.cncf.io/blog/2023/07/25/kubeflow-brings-mlops-to-the-cncf-incubator/ |access-date=2023-11-02 |website=Cloud Native Computing Foundation |language=en-US}}</ref><ref>{{Cite web |date=2023-07-25 |title=Kubeflow joins the CNCF family |url=https://opensource.googleblog.com/2023/07/kubeflow-joins-cncf-family.html |access-date=2023-11-02 |website=Google Open Source Blog}}</ref>
+
+== Components ==
+
+=== ''Kubeflow Notebooks'' for model development ===
+
+Machine learning models are developed in the notebooks component called ''Kubeflow Notebooks''. The component runs web-based development environments inside a Kubernetes cluster, with native support for [[Jupyter Notebook]], [[Visual Studio Code]], and [[RStudio]].<ref name="kubeflow_notebooks_overview" />
+
+=== ''Kubeflow Pipelines'' for model training ===
+
+Once developed, models are trained in the ''Kubeflow Pipelines'' component. The component acts as a platform for building and deploying [[Software portability|portable]], scalable machine learning workflows based on Docker containers.<ref name="kubeflow_pipelines_intro" /> [[Google Cloud Platform]] has adopted the ''Kubeflow Pipelines DSL'' within its ''Vertex AI Pipelines'' product.<ref>{{Cite web |title=Vertex AI - Building a pipeline |url=https://cloud.google.com/vertex-ai/docs/pipelines/build-pipeline |language=en}}</ref>
+
+=== ''Kubeflow Training Operator'' for model training ===
+
+For certain machine learning models and libraries, the ''Kubeflow Training Operator'' component provides [[Kubernetes#Operators|Kubernetes custom resources]] support. The component runs distributed or non-distributed [[TensorFlow]], [[PyTorch]], [[Apache MXNet]], [[XGBoost]], and [[Open MPI|MPI]] training jobs on Kubernetes.<ref name="kubeflow_training_operator" />
+
+=== ''KServe'' for model serving ===
+
+The ''KServe'' component (previously named KFServing<ref name="kubeflow_kserve_rename" />) provides [[Kubernetes#Operators|Kubernetes custom resources]] for serving machine learning models on arbitrary frameworks including [[TensorFlow]], [[XGBoost]], [[scikit-learn]], [[PyTorch]], and [[Open Neural Network Exchange|ONNX]].<ref>{{Cite web |title=KServe GitHub |website=[[GitHub]] |url=https://github.com/kserve/kserve |language=en}}</ref> KServe was developed collaboratively by [[Google]], [[IBM]], [[Bloomberg L.P.|Bloomberg]], [[NVIDIA]], and [[Seldon (company)|Seldon]].<ref name="kubeflow_kserve_rename" /> Publicly disclosed adopters of KServe include [[Bloomberg L.P.|Bloomberg]],<ref>{{Cite news |title=The journey to build Bloomberg's ML Inference Platform Using KServe (formerly KFServing) |newspaper=Bloomberg L.p. |date=12 October 2021 |url=https://www.bloomberg.com/company/stories/the-journey-to-build-bloombergs-ml-inference-platform-using-kserve-formerly-kfserving/ |language=en}}</ref> [[Gojek]],<ref>{{Cite web |title=Merlin: Making ML Model Deployments Magical |url=https://www.gojek.io/blog/merlin-making-ml-model-deployments-magical |language=en}}</ref> and others.<ref>{{Cite web |title=KServe Website - Adopters of KServe |url=https://kserve.github.io/website/master/community/adopters/ |language=en}}</ref>
+
+=== ''Katib'' for automated machine learning ===
+
+Lastly, Kubeflow includes a component for [[Automated machine learning|automated training and development of machine learning models]], the ''Katib'' component. It is described as a Kubernetes-native project and features [[Hyperparameter optimization|hyperparameter tuning]], [[early stopping]], and [[neural architecture search]].<ref>{{Cite web |title=Kubeflow GitHub - Katib |website=[[GitHub]] |url=https://github.com/kubeflow/katib |language=en}}</ref>
+
+== Release timeline ==
+
+{| class="wikitable"
+|+ Release timeline
+|-
+! Version !! Release Date !! Release Information !! Release Blog
+|-
+| Kubeflow 0.1
+|| 5 April, 2018<ref name="kubeflow_0.1" />
+|| -
+|| https://kubernetes.io/blog/2018/05/04/announcing-kubeflow-0.1/
+|-
+| Kubeflow 0.2
+|| 2 July, 2018<ref name="kubeflow_0.2" />
+|| -
+|| https://medium.com/kubeflow/kubeflow-0-2-offers-new-components-and-simplified-setup-735e4c56988d
+|-
+| Kubeflow 0.3
+|| 5 October, 2018<ref name="kubeflow_0.3" />
+|| -
+|| https://medium.com/kubeflow/kubeflow-0-3-simplifies-setup-improves-ml-development-98b8ca10bd69
+|-
+| Kubeflow 0.4
+|| 8 January, 2019<ref name="kubeflow_0.4" />
+|| -
+|| https://medium.com/kubeflow/kubeflow-0-4-release-enhancements-for-machine-learning-productivity-d77c54df07a9
+|-
+| Kubeflow 0.5
+|| 9 April, 2019<ref name="kubeflow_0.5" />
+|| -
+|| https://medium.com/kubeflow/kubeflow-v0-5-simplifies-model-development-with-enhanced-ui-and-fairing-library-78e19cdc9f50
+|-
+| Kubeflow 0.6
+|| 19 July, 2019<ref name="kubeflow_0.6" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-0.6/
+|| https://medium.com/kubeflow/kubeflow-v0-6-a-robust-foundation-for-artifact-tracking-data-versioning-multi-user-support-9896d329412c
+|-
+| Kubeflow 0.7
+|| 17 October, 2019<ref name="kubeflow_0.7" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-0.7/
+|| https://medium.com/kubeflow/kubeflow-v0-7-delivers-beta-functionality-in-the-leadup-to-v1-0-1e63036c07b8
+|-
+| Kubeflow 1.0
+|| 20 February, 2020<ref name="kubeflow_1.0" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.0/
+|| https://blog.kubeflow.org/releases/2020/03/02/kubeflow-1-0-cloud-native-ml-for-everyone
+|-
+| Kubeflow 1.1
+|| 31 July, 2020<ref name="kubeflow_1.1" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.1/
+|| https://blog.kubeflow.org/release/official/2020/07/31/kubeflow-1.1-blog-post
+|-
+| Kubeflow 1.2
+|| 18 November, 2020<ref name="kubeflow_1.2" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.2/
+|| https://blog.kubeflow.org/release/official/2020/11/18/kubeflow-1.2-blog-post
+|-
+| Kubeflow 1.3
+|| 23 April, 2021<ref name="kubeflow_1.3" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.3/
+|| https://blog.kubeflow.org/kubeflow-1.3-release/
+|-
+| Kubeflow 1.4
+|| 12 October, 2021<ref name="kubeflow_1.4" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.4/
+|| https://blog.kubeflow.org/kubeflow-1.4-release/
+|-
+| Kubeflow 1.5
+|| 10 March, 2022<ref name="kubeflow_1.5" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.5/
+|| https://blog.kubeflow.org/kubeflow-1.5-release/
+|-
+| Kubeflow 1.6
+|| 7 September, 2022<ref name="kubeflow_1.6" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.6/
+|| https://blog.kubeflow.org/kubeflow-1.6-release/
+|-
+| Kubeflow 1.7
+|| 29 March, 2023<ref name="kubeflow_1.7" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.7/
+|| https://blog.kubeflow.org/kubeflow-1.7-release/
+|-
+| Kubeflow 1.8
+|| 1 November, 2023<ref name="kubeflow_1.8" />
+|| https://www.kubeflow.org/docs/releases/kubeflow-1.8/
+|| https://blog.kubeflow.org/kubeflow-1.8-release/
+|}
+
+==Notes==
+{{notelist|refs=
+{{efn|name=kserve_rename|KServe was previously known as KFServing<ref name="kubeflow_kserve_rename" />}}
+}}
+
+== References ==
+{{reflist|refs=
+<ref name="kubeflow_history">{{Cite web |title=Kubeflow Website - History |url=https://www.kubeflow.org/docs/started/introduction/#history |language=en}}</ref>
+<ref name="kubeflow_install">{{Cite web |title=Kubeflow Website - Installing Kubeflow |url=https://www.kubeflow.org/docs/started/installing-kubeflow/ |language=en}}</ref>
+<ref name="kubeflow_working_groups">{{Cite web |title=Kubeflow Website - Working Groups |url=https://kubeflow.org/docs/about/community/#kubeflow-working-groups |language=en}}</ref>
+<ref name="kubeflow_pipelines">{{Cite web |title=Kubeflow Website - Kubeflow Pipelines |url=https://www.kubeflow.org/docs/components/pipelines/ |language=en}}</ref>
+<ref name="kubeflow_pipelines_intro">{{Cite web |title=Kubeflow Website - Kubeflow Pipelines Introduction |url=https://www.kubeflow.org/docs/components/pipelines/introduction/ |language=en}}</ref>
+<ref name="kubeflow_notebooks">{{Cite web |title=Kubeflow Website - Kubeflow Notebooks |url=https://www.kubeflow.org/docs/components/notebooks/ |language=en}}</ref>
+<ref name="kubeflow_notebooks_overview">{{Cite web |title=Kubeflow Website - Kubeflow Notebooks Overview |url=https://www.kubeflow.org/docs/components/notebooks/overview/ |language=en}}</ref>
+<ref name="kubeflow_katib">{{Cite web |title=Kubeflow Website - Katib |url=https://www.kubeflow.org/docs/components/katib/ |language=en}}</ref>
+<ref name="kubeflow_training_operator">{{Cite web |title=Kubeflow GitHub - Kubeflow Training Operator |website=[[GitHub]] |url=https://github.com/kubeflow/training-operator |language=en}}</ref>
+<ref name="kubeflow_kserve">{{Cite web |title=Kubeflow Website - KServe |url=https://www.kubeflow.org/docs/external-add-ons/kserve/ |language=en}}</ref>
+<ref name="kubeflow_kserve_rename">{{Cite web |title=KServe: The next generation of KFServing |date=27 September 2021 |url=https://blog.kubeflow.org/release/official/2021/09/27/kfserving-transition |language=en}}</ref>
+<ref name="kubeflow_0.1">{{Cite web |title=Kubeflow 0.1 - Release Tag |website=[[GitHub]] |url=https://github.com/kubeflow/kubeflow/releases/tag/v0.1.0/ |language=en}}</ref>
+<ref name="kubeflow_0.2">{{Cite web |title=Kubeflow 0.2 - Release Tag |website=[[GitHub]] |url=https://github.com/kubeflow/kubeflow/releases/tag/v0.2.0/ |language=en}}</ref>
+<ref name="kubeflow_0.3">{{Cite web |title=Kubeflow 0.3 - Release Tag |website=[[GitHub]] |url=https://github.com/kubeflow/kubeflow/releases/tag/v0.3.0/ |language=en}}</ref>
+<ref name="kubeflow_0.4">{{Cite web |title=Kubeflow 0.4 - Release Tag |website=[[GitHub]] |url=https://github.com/kubeflow/kubeflow/releases/tag/v0.4.0/ |language=en}}</ref>
+<ref name="kubeflow_0.5">{{Cite web |title=Kubeflow 0.5 - Release Tag |website=[[GitHub]] |url=https://github.com/kubeflow/kubeflow/releases/tag/v0.5.0/ |language=en}}</ref>
+<ref name="kubeflow_0.6">{{Cite web |title=Kubeflow 0.6 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-0.6/ |language=en}}</ref>
+<ref name="kubeflow_0.7">{{Cite web |title=Kubeflow 0.7 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-0.7/ |language=en}}</ref>
+<ref name="kubeflow_1.0">{{Cite web |title=Kubeflow 1.0 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.0/ |language=en}}</ref>
+<ref name="kubeflow_1.1">{{Cite web |title=Kubeflow 1.1 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.1/ |language=en}}</ref>
+<ref name="kubeflow_1.2">{{Cite web |title=Kubeflow 1.2 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.2/ |language=en}}</ref>
+<ref name="kubeflow_1.3">{{Cite web |title=Kubeflow 1.3 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.3/ |language=en}}</ref>
+<ref name="kubeflow_1.4">{{Cite web |title=Kubeflow 1.4 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.4/ |language=en}}</ref>
+<ref name="kubeflow_1.5">{{Cite web |title=Kubeflow 1.5 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.5/ |language=en}}</ref>
+<ref name="kubeflow_1.6">{{Cite web |title=Kubeflow 1.6 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.6/ |language=en}}</ref>
+<ref name="kubeflow_1.7">{{Cite web |title=Kubeflow 1.7 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.7/ |language=en}}</ref>
+<ref name="kubeflow_1.8">{{Cite web |title=Kubeflow 1.8 - Release Information |url=https://www.kubeflow.org/docs/releases/kubeflow-1.8/ |language=en}}</ref>
+}}
+
+==External links==
+* {{Official website}}
+* {{GitHub|kubeflow}}
+
+{{Google FOSS}}
+
+[[Category:2018 software]]
+[[Category:Cloud infrastructure]]
+[[Category:Data mining and machine learning software]]
+[[Category:Software using the Apache license]]
+[[Category:Free software programmed in Python]]
+[[Category:Free software programmed in Go]]

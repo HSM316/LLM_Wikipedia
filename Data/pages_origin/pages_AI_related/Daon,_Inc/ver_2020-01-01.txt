@@ -1,0 +1,43 @@
+{{Infobox company
+| name     = Daon, Inc.
+| type     = Private 
+| foundation       = [[Dublin, Ireland]], (1999)
+| location_city    = [[Reston, Virginia]] 
+| location_country = U.S.
+| industry         = [[Software]] & [[Biometrics]]
+| products         = IdentityX<br />DaonEngine<br />DaonEnroll<br />Unified ID<br />DaonAnalytics<br />Credential Connect
+| homepage         = {{URL|http://www.daon.com/}}
+| logo             = 
+}}
+
+'''Daon''' (pronounced day-on) is an international [[biometrics]] and identity assurance software company founded in 1999 by Irish entrepreneur [[Dermot Desmond]]. The name, Daon, was chosen because it stems from the Celtic word for human being, duine daonna.<ref>http://www.irishdictionary.ie/dictionary?language=irish&word=daonna.</ref>
+
+Daon's primary business is in software development where they create and integrate biometric identity assurance systems such as facial recognition, voice recognition, fingerprints, retina scans, and vein patterns to verify a person’s identity. Its products include IdentityX (their flagship biometric mobile authentication platform), DaonEngine, DaonEnroll, DaonAnalytics, and Credential Connect.
+
+IdentityX is a platform that allows users to authenticate themselves on any mobile device using biometrics instead of a password. IdentityX uses facial recognition, voice recognition, fingerprint, and more to prove a user is who they claim to be. In 2015, IdentityX was one of the first products to be certified by the FIDO alliance,<ref>https://fidoalliance.org/certification/fido-certified/</ref> an industry consortium in which PayPal and Lenovo are among the founders. Also in 2015, Daon’s IdentityX won NACUSO’s Next Big Idea competition<ref>https://www.nacuso.org/2015/04/28/identityx-wins-nacusos-next-big-idea-competition/</ref> as well as the Best in Show award from the CUNA Technology Council.<ref>{{Cite web |url=http://www.cuna.org/Stay-Informed/Press-Room/Press-Releases/2015-Press-Releases/CUNA-Technology-Council-Announces-Daon-as-2015-Best-in-Show-Award-winner/ |title=Archived copy |access-date=2015-07-20 |archive-url=https://web.archive.org/web/20150923211936/http://www.cuna.org/Stay-Informed/Press-Room/Press-Releases/2015-Press-Releases/CUNA-Technology-Council-Announces-Daon-as-2015-Best-in-Show-Award-winner/ |archive-date=2015-09-23 |url-status=dead}}</ref>
+
+Daon’s  biometric products integrate with preexisting IT platforms and applications to manage identity life-cycles. Daon serves multiple markets including mobile authentication, border management, civil ID, traveler ID, employee credentialing, and [[access control]]. Their software is used worldwide at airports and international borders<ref>http://www.accenture.com/Global/Services/Alliances/Daon.htm</ref> and supports U.S. [[Registered Traveler]] airports.<ref>http://findbiometrics.com/interview-with-tom-grissen-ceo-daon-inc/</ref>
+
+Daon is headquartered just miles outside of Washington, DC at the [[Reston Town Center]] in the [[Dulles Technology Corridor]]. Daon also has major operations in [[Dublin]], located in the [[International Financial Services Center]] (IFSC). Daon has an additional office in Canberra, Australia.
+
+Daon is a member of the Federation for Identity and Cross-Credentialing Systems, Inc. (FIXs) and has an executive serving as the elected chair of the BioAPI Consortium and as head of the U.S. delegation to ISO/IEC JTC1 SC37 (subcommittee on biometrics). Daon is also a member of the Biometrics Consortium.
+
+In 2006, Daon and the American Association of Airport Executives (AAAE) entered into a joint venture to create the Security Biometric Clearing Network (SBCN) to provide services for biometric identity management, including enrollment, background checking, secure biometric and biographic information storage, and card issuance.<ref>{{cite web|url=http://daon.com/partners/Security_Biometric_Clearing_Network.html< |title=Security Biometric Clearing Network (SBCN) |publisher=Daon Inc. |accessdate=2008-10-08 }}{{dead link|date=December 2016 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+In 2008, Daon received the [[Frost & Sullivan]] Best Practices Award for Biometric Product Strategy Leadership.<ref>{{cite web|url=http://www.frost.com/prod/servlet/press-release.pag?docid=119809589&ctxst=FcmCtx1&ctxht=FcmCtx2&ctxhl=FcmCtx3&ctxixpLink=FcmCtx3&ctxixpLabel=FcmCtx|title=Frost & Sullivan Extols Daons Sound Platform Strategy in the World Biometrics Market |date=2008-01-31|website=Frost & Sullivan|accessdate=2008-10-08}}</ref>
+
+In August 2008 Daon acquired software assets and associated personnel for physical security interconnectivity from Enterprise Air, a New York-based provider of solutions for the physical security market.<ref>{{cite web|url=http://findbiometrics.com/daon-acquires-physical-security-interconnect-psi-offering-from-enterprise-air/ |title=Daon Acquires Physical Security Interconnect (PSI) Offering from Enterprise Air |date=2008-08-21 |work=Daon Press Release |accessdate=2008-10-08 |url-status=dead|archiveurl=https://web.archive.org/web/20131219023631/http://findbiometrics.com/daon-acquires-physical-security-interconnect-psi-offering-from-enterprise-air/ |archivedate=2013-12-19 |df= }}</ref>
+
+== See also ==
+* [[Dermot Desmond]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://daon.com/ Company Website]
+
+[[Category:Biometrics software]]
+[[Category:Software companies established in 1999]]
+[[Category:Companies based in Reston, Virginia]]
+[[Category:Software companies of the United States]]

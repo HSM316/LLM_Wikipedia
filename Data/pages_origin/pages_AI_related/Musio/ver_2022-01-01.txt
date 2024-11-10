@@ -1,0 +1,53 @@
+{{advert|date=April 2017}}
+[[File:Musio.png|thumb|A.I. Robot created by AKA]]
+'''Musio''' is a [[social robot]] designed by AKA Intelligence, powered by MUSE, a [[deep learning]] based AI quantum engine for communication developed by AKA. Using [[deep learning]] algorithms, Musio converses with people, recognises objects and also understands people's facial expressions.<ref>[http://www.japantimes.co.jp/news/2015/11/19/business/tech/ai-robot-touted-future-english-learning-tool-japanese-kids/#.V2ircriLSUk AI robot touted as future English-learning tool for Japanese kids], Japan Times, 2015.11.19</ref><ref>[http://time.com/3901769/musio-robot/ Meet the Chatty Robot Who Wants to Outsmart Every Other Toy], Times, 2015.06.02</ref> Additionally, Musio has its own emotional engine, this lets it also express facial expressions when conversing with someone. Different sounds and facial colours are shown with animations. When multiple users are present and registered with Musio, the interaction with each one is different. This is affected based on each person's emotional state when talking to Musio, past discussions and subjects discussed. On May 2015, Musio was first introduced to the world through the global crowdfunding site [[Indiegogo]]. It was a success, where AKA Intelligence managed to raise 201% of their needed funding, resulting in a total of just over $100k.<ref>[https://www.indiegogo.com/projects/musio-your-curious-new-friend#/ Musio: Your Curious New Friend], Indiegogo, 2016.11.08</ref>
+
+== MUSE ==
+MUSE is the deep learning based AI quantum engine for communication that powers Musio. It attempts to understand the user via textual language, oral language, gestures and facial expressions. This way, MUSE can communicate with the user as a whole. AKA Intelligence built the quantum machine learning system on the neuroscience to interplay between structure (i.e. rule-based) and antistructure methods (i.e. statistical).<ref>[http://www.akaintelligence.com/ Deep learning quantum engine], AKA Intelligence, 2016.11.10</ref>
+
+== Sophy ==
+Sophy is Musio's companion [[robot]] that allows Musio to interact with various study material. Using an optical LED Sensor (OID) Sophy can "read" information and send it to Musio. They use low-energy bluetooth to connect with one another. When Sophy needs to communicate to the user, a tactile feedback motor is used. This can be felt in a series of morse-code to know exactly what the message is. A morse-code manual is provided with Sophy.<ref>[https://themusio.com/download/Sophy%20User's%20Guide%20(ENG).pdf/ Sophy User Guide]{{Dead link|date=April 2020 |bot=InternetArchiveBot |fix-attempted=yes }}, Sophy User Guide, 2016.11.12</ref>
+
+== Purpose ==
+Musio is a social robot for educational purposes, specifically to help people who wish to improve their English speaking abilities. With the help of a WI-FI connection, Musio can talk freely about different subjects with people. A whole range of questions can be asked and also with the use an inference abilities, Musio can also know what a person is talking about, remembering past questions. Apart from trivial questions, a natural fluid conversation can also be carried out.<ref>[https://www.engadget.com/2015/06/01/musio-ai-robot/ Adorable AI-powered robot Musio just wants to be your friend], Engadget, 2015.06.01</ref> In addition, an assistant OID partner device, Sophy linked with Musio provides learning opportunities from a wide range of educational material. Two of the many abilities Musio has is "Pronunciation Checkup" and "Grammar Correction". This really helps with pronunciations and grammar, especially if the user is not a native English speaker. While all this is happening, Musio communicates with the user, developing a friendship with them in the process.
+
+== Specification ==
+{|class="wikitable"
+|-
+!bgcolor="#87CEEB" colspan="2"|Musio
+|-
+| Dimensions || Height: 218&nbsp;mm, Depth: 83&nbsp;mm, Width: 174&nbsp;mm, Weight: 850g
+|-
+| CPU || ARM Cortex quad core
+|-
+| Battery || 10800mAh (2700mAh Li-cell Battery 4EA)
+|-
+| Display || 5.5" Color TFT-LCD 1080x1920 (FHD)
+|-
+| MIC || Noise Canceling
+|-
+| SPK || Rated 1.0W / Max 1.2W
+|-
+| Platform || Android 5.1.1
+|-
+| Network || Wi-Fi 802.11 b/g/n<br />
+BT 4.0<br />
+LTE B1(2.1&nbsp;GHz band)
+|}
+
+== See also ==
+* [[Artificial intelligence]]
+* [[Cynthia Breazeal|JIBO]]
+* [[Manav (robot)]]
+* [[Nao (robot)]]
+* [[Pepper (robot)]]
+* [[Sanbot (robot)]]
+* [[j3l (robot)]]
+
+== References ==
+<references/>
+
+== External links ==
+* {{official website|https://themusio.com/}}
+
+[[Category:Social robots]]

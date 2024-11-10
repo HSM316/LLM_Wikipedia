@@ -1,0 +1,148 @@
+'''Anne O'Tate'''  is a free, web-based application <ref name="cite pmid| 18279519">{{Cite journal 
+| last1 = Smalheiser | first1 = N. R. 
+| last2 = Zhou | first2 = W. 
+| last3 = Torvik | first3 = V. I. 
+| title = Anne O'Tate: A tool to support user-driven summarization, drill-down and browsing of PubMed search results 
+| doi = 10.1186/1747-5333-3-2 
+| journal = Journal of Biomedical Discovery and Collaboration 
+| volume = 3 
+| pages = 2 
+| year = 2008 
+| pmid = 18279519 
+| pmc =2276193 
+| doi-access = free 
+}}</ref> that analyses sets of records identified on [[PubMed]], the [[bibliographic database]] of articles from over 5,500 biomedical journals worldwide. While PubMed has its own wide range of search options to identify sets of records relevant to a researchers query it lacks the ability to analyse these sets of records further, a process for which the terms [[text mining]] and  [[drill down]] have been used. Anne O'Tate is able to perform such analysis and can process sets of up to 25,000 PubMed records.<ref name="cite pmid| 18279519"/>
+
+==Description==
+
+Once a set of articles has been identified using Anne O’Tate with its PubMed-like interface and search syntax, the set can be analysed and words and concepts mentioned in specific 'fields' (sections) of PubMed records can be displayed in order of frequency.<ref name="cite pmid| 20333611 ">{{Cite journal 
+| last1 = Palidwor | first1 = G. A. 
+| last2 = Andrade-Navarro | first2 = M. A. 
+| title = MLTrends: Graphing MEDLINE term usage over time 
+| journal = Journal of Biomedical Discovery and Collaboration 
+| volume = 5 
+| pages = 1–6 
+| year = 2010 
+| doi = 10.5210/disco.v5i0.2680 
+| pmid = 20333611 
+| pmc = 2990277
+}}</ref> ‘Fields’ which Anne O’Tate can display in this manner are:
+
+===Topics (MeSH)===
+This option may help to identify possible [[Medical Subject Headings]]  (known as MeSH terms, but called ‘Topics’ by Anne O’Tate) for a subject for which no corresponding subject heading or ‘entry term’ (cross-references to preferred MeSH term) exists or where PubMed’s automatic mapping process (identifying a MeSH term and including it in a search formulation) fails.
+
+Searching for instance for articles on ‘“Knowledge Transfer”’ (for which no corresponding MeSH or entry term exists) will retrieve a set of some 530 studies in PubMed (as of August 2011); Anne O’Tate’s analysis suggests that MeSH terms like "Diffusion of Innovation" or "Information Dissemination" may be suitable additional concepts to retrieve a more ‘sensitive’ (comprehensive) set of references. This method of identifying possible MeSH terms is not available on PubMed.
+
+===Authors===
+This option may help with identifying authors who have written frequently about a given subject, or may help with identifying possible experts or peer reviewers
+
+===Journals===
+Identifying journals which publish papers on the subject under investigation may assist with selecting suitable journals to consider for manuscripts or for detailed scanning for relevant articles ('hand searching'<ref name="cite pmid| 10381991">{{Cite journal 
+| last1 = Langham | first1 = J. 
+| last2 = Thompson | first2 = E. 
+| last3 = Rowan | first3 = K. 
+| title = Identification of randomized controlled trials from the emergency medicine literature: Comparison of hand searching versus MEDLINE searching 
+| journal = Annals of Emergency Medicine 
+| volume = 34 
+| issue = 1 
+| pages = 25–34 
+| year = 1999 
+| pmid = 10381991
+ | doi=10.1016/s0196-0644(99)70268-4
+}}</ref>) not found by the search on PubMed.
+
+===Other fields===
+Author affiliations (addresses) and the years of publication can also be analysed.  ‘Important words’ from titles and abstracts which may "[...] have more frequent occurrences in the result subset than in the [[MEDLINE]] as a whole, thus they distinguish the result subset from the rest of MEDLINE" <ref name="cite pmid| 21245076">{{Cite journal 
+| last1 = Lu | first1 = Z. 
+| doi = 10.1093/database/baq036 
+| title = PubMed and beyond: A survey of web tools for searching biomedical literature 
+| journal = Database 
+| volume = 2011 
+| pages = baq036 
+| year = 2011 
+| pmid = 21245076 
+| pmc =3025693 
+}}</ref>  can be identified and help with further refining a search on PubMed.<ref name="cite pmid|  8563319">{{Cite journal 
+| last1 = Wilczynski | first1 = N. L. 
+| last2 = Walker | first2 = C. J. 
+| last3 = McKibbon | first3 = K. A. 
+| last4 = Haynes | first4 = R. B. 
+| title = Reasons for the loss of sensitivity and specificity of methodologic MeSH terms and textwords in MEDLINE
+| journal = Proceedings. Symposium on Computer Applications in Medical Care
+| pages = 436–440 
+| year = 1995 
+| pmid = 8563319 
+| pmc = 2579130
+}}</ref><ref name="cite pmid|  9251552">{{Cite journal 
+| last1 = Greenhalgh | first1 = T. 
+| title = How to read a paper. The Medline database 
+| journal = BMJ (Clinical Research Ed.) 
+| volume = 315 
+| issue = 7101 
+| pages = 180–183 
+| year = 1997 
+| pmid = 9251552 
+| pmc = 2127107
+ | doi=10.1136/bmj.315.7101.180
+}}</ref><ref>{{Cite journal | last1 = Smalheiser | first1 = N. R. | last2 = Zhou | first2 = W. | last3 = Torvik | first3 = V. I. | doi = 10.3390/info2020266 |doi-access=free | title = Distribution of "Characteristic" Terms in MEDLINE Literatures| journal = Information | volume = 2 | issue = 4 | pages = 266–276 | year = 2011 }}</ref>
+
+== History ==
+
+Anne O'Tate (a pun on the word ‘annotate’) was developed by Neil R Smalheiser and a team of researchers from the [[University of Chicago]]. It is part of the Arrowsmith Project, which developed tools such as “Arrowsmith” proper, a text-comparison application,<ref name="cite pmid| 19185946">{{Cite journal 
+| last1 = Smalheiser | first1 = N. R. 
+| last2 = Torvik | first2 = V. I. 
+| last3 = Zhou | first3 = W. 
+| doi = 10.1016/j.cmpb.2008.12.006 
+| title = Arrowsmith two-node search interface: A tutorial on finding meaningful links between two disparate sets of articles in MEDLINE 
+| journal = Computer Methods and Programs in Biomedicine 
+| volume = 94 
+| issue = 2 
+| pages = 190–197 
+| year = 2009 
+| pmid = 19185946 
+| pmc =2693227 
+}}</ref> "Adam", a database of medical abbreviations,<ref name="cite pmid|  16982707">{{Cite journal 
+| last1 = Zhou | first1 = W. 
+| last2 = Torvik | first2 = V. I. 
+| last3 = Smalheiser | first3 = N. R. 
+| doi = 10.1093/bioinformatics/btl480 
+| title = ADAM: Another database of abbreviations in MEDLINE 
+| journal = Bioinformatics 
+| volume = 22 
+| issue = 22 
+| pages = 2813–2818 
+| year = 2006 
+| pmid = 16982707 
+| doi-access = free 
+}}</ref> and ‘’Author-ity’’ (an author-disambiguation tool),<ref name="cite pmid| 20072710">{{Cite journal 
+| last1 = Torvik | first1 = V. I. 
+| last2 = Smalheiser | first2 = N. R. 
+| title = Author Name Disambiguation in MEDLINE 
+| journal = ACM Transactions on Knowledge Discovery from Data 	 
+| volume = 3 
+| issue = 3 
+| pages = 1–29 
+| year = 2009 
+| pmid = 20072710 
+| pmc = 2805000
+| doi = 10.1145/1552303.1552304 
+}}</ref> "Compendium", a list of [[biomedical text mining]] tools, and Anne O’Tate. The Project is based on research led by [[Don R. Swanson]] at the [[University of Chicago]]<ref>{{cite journal |journal= Library Trends |volume= 48 |number= 1 |date= Summer 1999 |pages= 48–59 |title= Implicit Text Linkages between Medline Records: Using Arrowsmith as an Aid to Scientific Discovery |author1= Swanson, D.R. |author2= Smalheiser, N.R. |url= http://www.ideals.illinois.edu/bitstream/handle/2142/8269/librarytrendsv48i1e_opt.pdf |access-date= July 4, 2011 }}</ref> which hosted the original tool.<ref>{{cite web |title= Arrowsmith-2 on Linux |url= http://kiwi.uchicago.edu/ |publisher= The University of Chicago |url-status=dead |archive-url= https://web.archive.org/web/20090618051959/http://kiwi.uchicago.edu/ |archive-date= June 18, 2009 |access-date= July 4, 2011 }}</ref>
+Further research was led by Neil R. Smalheiser at the [[University of Illinois at Chicago]], with funding from the [[National Institutes of Health]].<ref>{{cite conference |pages= 26–43 |conference=8th international conference on discovery science |date= October 2005 |author= Smalheiser, N.R. |isbn=978-3-540-29230-2 |title=Discovery Science |volume=3735 |chapter-url=https://books.google.com/books?id=lbfHJWW8NtkC&pg=PA26 |doi=10.1007/11563983_5 |chapter=The Arrowsmith Project: 2005 Status Report |series=Lecture Notes in Computer Science}}</ref>
+
+==Other PubMed text-mining applications==
+
+A wide range of text-mining applications for PubMed have been developed,<ref name="cite pmid| 21245076"/> using their own interface, such as [[GoPubMed]], ClusterMed, or PubReMiner. Only Anne O’Tate uses PubMed’s standard interface, search syntax, and some of its functionality.
+
+== References ==
+{{Reflist}}
+
+== External links ==
+*[http://arrowsmith.psych.uic.edu/cgi-bin/arrowsmith_uic/AnneOTate.cgi Anne O'Tate]
+*[https://www.ncbi.nlm.nih.gov/pubmed/ PubMed Home Page]
+*[https://www.nlm.nih.gov/pubs/factsheets/mesh.html Medical Subject Headings Fact Sheet]
+* {{cite web |title= The Arrowsmith Project Homepage |url=http://arrowsmith.psych.uic.edu/arrowsmith_uic/index.html |publisher= University of Illinois at Chicago, Department of Psychiatry |date= December 20, 2007 |access-date= July 4, 2011 }}
+
+<!--- Categories --->
+[[Category:Data mining and machine learning software]]
+[[Category:Data management software]]
+[[Category:Medical databases]]

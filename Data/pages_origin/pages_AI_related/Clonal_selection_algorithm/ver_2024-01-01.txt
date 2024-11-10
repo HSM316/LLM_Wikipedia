@@ -1,0 +1,74 @@
+{{Evolutionary algorithms}}
+In [[artificial immune systems]], '''clonal selection algorithms''' are a class of algorithms inspired by the [[clonal selection]] theory of [[acquired immunity]] that explains how B and T [[lymphocyte]]s improve their response to [[antigens]] over time called [[affinity maturation]]. These algorithms focus on the [[Universal Darwinism|Darwinian]] attributes of the theory where selection is inspired by the affinity of [[antigen-antibody interaction|antigen-antibody interactions]], reproduction is inspired by [[cell division]], and variation is inspired by [[somatic hypermutation]]. Clonal selection algorithms are most commonly applied to [[Optimization (mathematics)|optimization]] and [[pattern recognition]] domains, some of which resemble parallel [[hill climbing]] and the [[genetic algorithm]] without the recombination operator.<ref>{{Cite web|url=http://www.cleveralgorithms.com/nature-inspired/immune/clonal_selection_algorithm.html|title=Clonal Selection Algorithm|last=Brownlee|first=Jason|website=Clonal Selection Algorithm}}</ref>
+
+== Techniques ==
+*'''CLONALG''': The '''CLON'''al selection '''ALG'''orithm<ref>
+{{cite journal
+ | last = de Castro
+ | first = L. N.
+ |author2=Von Zuben, F. J.
+ | title = Learning and Optimization Using the Clonal Selection Principle
+ | journal = IEEE Transactions on Evolutionary Computation 
+ | volume = 6
+ | issue = 3
+ | year = 2002
+ | pages = 239–251
+ | url = ftp://ftp.dca.fee.unicamp.br/pub/docs/vonzuben/lnunes/ieee_tec01.pdf
+ | doi=10.1109/tevc.2002.1011539}}
+</ref>
+*'''AIRS''': The Artificial Immune Recognition System<ref>{{cite journal
+ | last = Watkins
+ | first = Andrew
+ | author2 = Timmis, Jon
+ | author3 = Boggess, Lois
+ | title = Artificial Immune Recognition System (AIRS): An Immune-Inspired Supervised Learning Algorithm
+ | journal = Genetic Programming and Evolvable Machines
+ | volume = 5
+ | issue = 3
+ | year = 2004
+ | pages = 291–317
+ | url = http://www.cse.msstate.edu/%7Eandrew/research/publications/airs.pdf
+ | doi = 10.1023/B:GENP.0000030197.83685.94
+ | citeseerx = 10.1.1.58.1410
+ | s2cid = 13661336
+ | access-date = 2008-11-27
+ | archive-url = https://web.archive.org/web/20090108045124/http://www.cse.msstate.edu/%7Eandrew/research/publications/airs.pdf
+ | archive-date = 2009-01-08
+ | url-status = dead
+ }}</ref>
+*'''BCA''': The B-Cell Algorithm<ref>
+{{cite conference
+  | last = Kelsey
+  | first = Johnny
+  |author2=Timmis, Jon
+  | title = Immune Inspired Somatic Contiguous Hypermutation for Function Optimisation 
+  | book-title = Genetic and Evolutionary Computation (GECCO 2003)
+  | year = 2003
+  | pages = 202
+  | doi = 10.1007/3-540-45105-6_26
+ }}
+</ref>
+
+== See also ==
+*[[Artificial immune system]]
+*[[Biologically inspired computing]]
+*[[Computational immunology]]
+*[[Computational intelligence]]
+*[[Evolutionary computation]]
+*[[Immunocomputing]]
+*[[Natural computation]]
+*[[Swarm intelligence]]
+
+== Notes ==
+{{reflist}}
+
+== External links ==
+*[http://www.artificial-immune-systems.org/algorithms.shtml#clonal-alg Clonal Selection Pseudo code] on AISWeb
+*[https://web.archive.org/web/20090711163953/http://www.dca.fee.unicamp.br/~lnunes/manual.html CLONALG in Matlab] developed by Leandro de Castro and Fernando Von Zuben
+*[https://web.archive.org/web/20081224175602/http://optalgtoolkit.sourceforge.net/ Optimization Algorithm Toolkit] in Java developed by Jason Brownlee which includes the following clonal selection algorithms: Adaptive Clonal Selection (ACS), Optimization Immune Algorithm (opt-IMMALG), Optimization Immune Algorithm (opt-IA), Clonal Selection Algorithm (CLONALG, CLONALG1, CLONALG2), B-Cell Algorithm (BCA), Cloning, Information Gain, Aging (CLIGA), Immunological Algorithm (IA)
+*[http://www.artificial-immune-systems.org/code/airs/airs_andrew.tar.gz AIRS in C++]{{dead link|date=August 2017 |bot=InternetArchiveBot |fix-attempted=yes }} developed by Andrew Watkins
+*[http://www.artificial-immune-systems.org/code/bca/BCA.tar.gz BCA in C++]{{dead link|date=August 2017 |bot=InternetArchiveBot |fix-attempted=yes }} developed by Johnny Kelsey
+
+{{Evolutionary computation}}
+[[Category:Genetic algorithms]]
+[[Category:Artificial immune systems]]

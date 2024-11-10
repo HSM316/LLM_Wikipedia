@@ -1,0 +1,67 @@
+{{Infobox software
+| name                   = Rattle GUI
+| title                  = Rattle GUI
+| logo                   = <!-- [[File: ]] -->
+| logo caption           = 
+| screenshot             = <!-- [[File: ]] -->
+| caption                = 
+| collapsible            = 
+| author                 = Graham Williams
+| developer              = Graham Williams
+| released               = <!-- {{Start date|YYYY|MM|DD|df=yes/no}} -->
+| discontinued           = 
+| latest release version = 5.4.0
+| latest release date    = {{Start date and age|2020|05|23|df=yes}}
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| frequently updated     = <!-- DO NOT include this parameter unless you know what it does -->
+| programming language   = [[R (programming language)|R]]
+| operating system       = 
+| platform               = 
+| size                   = 
+| language               = 
+| language count         = <!-- DO NOT include this parameter unless you know what it does -->
+| language footnote      = 
+| status                 = 
+| genre                  = [[GUI widget]] toolkit
+| license                = GNU General Public License
+| website                = {{URL|https://rattle.togaware.com/}}
+}}
+
+'''Rattle GUI''' is a free and [[open source software]] ([[GNU General Public License|GNU GPL]] v2) package providing a [[graphical user interface]] (GUI) for [[data mining]] using the [[R (programming language)|R statistical programming language]]. Rattle is used in a variety of situations. Currently there are 15 different government departments in Australia, in addition to various other organisations around the world, which use Rattle in their data mining activities and as a [[statistical package]].
+
+Rattle provides considerable data mining functionality by exposing the power of the R Statistical Software through a graphical user interface. Rattle is also used as a teaching facility to learn the R software Language. There is a Log Code tab, which replicates the R code for any activity undertaken in the GUI, which can be copied and pasted. Rattle can be used for statistical analysis, or model generation. Rattle allows for the dataset to be partitioned into training, validation and testing. The dataset can be viewed and edited. There is also an option for scoring an external data file.
+
+==Features==
+*File Inputs = [[Comma-separated values|CSV]], TXT, [[Microsoft Excel|Excel]], [[Attribute-Relation File Format|ARFF]], ODBC, R Dataset, RData File, Library Packages Datasets, Corpus, and Scripts.
+*Statistics = Min, Max, Quartiles, Mean, St Dev, Missing, Medium, Sum, Variance, Skewness, Kurtosis, chi square.
+*Statistical tests = Correlation, Wilcoxon-Smirnov, Wilcoxon Rank Sum, T-Test, F-Test, and Wilcoxon Signed Rank.
+*Clustering = KMeans, Clara, Hierarchical, and BiCluster.
+*Modeling = Decision Trees, Random Forests, ADA Boost, Support Vector Machine, Logistic Regression, and Neural Net.
+*Evaluation = Confusion Matrix, Risk Charts, Cost Curve, Hand, Lift, ROC, Precision, Sensitivity.
+*Charts = Box Plot, Histogram, Correlations, Dendrograms, Cumulative, Principal Components, Benford, Bar Plot, Dot Plot, and  [[mosaic plot|Mosaic]].
+*Transformations = Rescale (Recenter, Scale 0-1, Median/MAD, Natural Log, and Matrix) - Impute ( Zero/Missing, Mean, Median, Mode & Constant), Recode (Binning, Kmeans, Equal Widths, Indicator, Join Categories) - Cleanup (Delete Ignored, Delete Selected, Delete Missing, Delete Obs with Missing)
+
+Rattle also uses two external graphical investigation / plotting tools.  Latticist and GGobi are independent applications which provide highly dynamic and interactive graphic data visualisation for exploratory
+data analysis.
+
+==Packages==
+The capabilities of R are extended through user-submitted ''packages'', which allow specialized statistical techniques, graphical devices, as well as import/export capabilities to many external data formats. Rattle uses these packages - RGtk2, pmml, colorspace, ada, amap, arules, biclust, cba, descr, doBy, e1071, ellipse, fEcofin, fBasics, foreign, fpc, gdata, gtools, gplots, gWidgetsRGtk2, Hmisc, kernlab, latticist, Matrix, mice, network, nnet, odfWeave, party, playwith, psych, randomForest, reshape, RGtk2Extras, ROCR, RODBC, rpart, RSvgDevice, survival, timeDate, graph, RBGL, bitops,
+
+==See also==
+* [[R (programming language)#Interfaces|R interfaces]]
+
+==References==
+*Graham J Williams (2011). [https://www.springer.com/statistics/physical+%26+information+science/book/978-1-4419-9889-7 Data Mining with Rattle and R: The Art of Excavating Data for Knowledge Discovery], Springer, Use R!. 
+*In 2010, Rattle was listed in the top 10 graphical user interfaces in statistical software by Decision Stats.
+*Rattle is described as an "attractive, easy-to-use front end ... data mining toolkit" in an article published in the Teradata Magazine, volume 9, issue 3, page 57 (September 2009).
+*Graham J William (2009). [http://journal.r-project.org/archive/2009-2/RJournal_2009-2_Williams.pdf Rattle: A Data Mining GUI for R]. ''[http://journal.r-project.org/ The R Journal]'' '''1'''(2):45-55.
+
+==External links==
+*[https://rattle.togaware.com/ Official home page]
+*[https://code.google.com/archive/p/rattle/ Source code page]
+
+{{R (programming language)}}
+
+[[Category:Free R (programming language) software]]
+[[Category:Data mining and machine learning software]]

@@ -1,0 +1,38 @@
+{{Short description|Machine learning technique}}
+'''Product of experts''' (PoE) is a [[machine learning]] technique. It models a probability distribution by combining the output from several simpler distributions.
+It was proposed by [[Geoffrey Hinton]] in 1999,<ref>{{Cite book |last=Hinton |first=G.E. |title=9th International Conference on Artificial Neural Networks: ICANN '99 |date=1999 |chapter=Products of experts |chapter-url=https://digital-library.theiet.org/content/conferences/10.1049/cp_19991075 |language=en |publisher=IEE |volume=1999 |pages=1–6 |doi=10.1049/cp:19991075 |isbn=978-0-85296-721-8}}</ref> along with an algorithm for training the parameters of such a system.
+
+The core idea is to combine several probability distributions ("experts") by multiplying their density functions—making the PoE classification similar to an "and" operation. This allows each expert to make decisions on the basis of a few dimensions without having to cover the full dimensionality of a problem:
+<math>
+P(y|\{x_k\})=\frac{1}{Z}\prod_{j=1}^M f_j(y|\{x_k\})
+</math>
+ 
+where <math>f_j</math> are unnormalized expert densities and <math>Z=\int\mbox{d}y \prod_{j=1}^M f_j(y|\{x_k\})</math> is a normalization constant (see [[partition function (statistical mechanics)]]).
+
+This is related to (but quite different from) a [[mixture model]], where several probability distributions <math>p_j(y|\{x_j\})</math> are combined via an "or" operation, which is a weighted sum of their density functions:
+<math>
+P(y|\{x_k\})=\sum_{j=1}^M \alpha_j p_j(y|\{x_k\}),
+</math>
+with <math>\sum_j \alpha_j=1.</math>
+
+The experts may be understood as each being responsible for enforcing a constraint in a high-dimensional space. A data point is considered likely iff none of the experts say that the point violates a constraint.
+
+To optimize it, he proposed the '''contrastive divergence minimization''' algorithm.<ref>{{Cite journal |last=Hinton |first=Geoffrey E. |date=2002-08-01 |title=Training Products of Experts by Minimizing Contrastive Divergence |url=https://direct.mit.edu/neco/article/14/8/1771-1800/6687 |journal=Neural Computation |language=en |volume=14 |issue=8 |pages=1771–1800 |doi=10.1162/089976602760128018 |pmid=12180402 |s2cid=207596505 |issn=0899-7667}}</ref> This algorithm is most often used for learning [[Restricted Boltzmann machine|restricted Boltzmann machines]].
+
+== See also ==
+
+* [[Mixture of experts]]
+* [[Boltzmann machine]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* [http://www.scholarpedia.org/article/Product_of_experts Product of experts] article in [[Scholarpedia]]
+* [https://www.cs.toronto.edu/~hinton/poe.html Geoffrey Hinton's articles on PoE]
+
+{{DEFAULTSORT:Product Of Experts}}
+[[Category:Machine learning]]
+
+
+{{Compu-stub}}

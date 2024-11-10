@@ -1,0 +1,377 @@
+{{Multiple issues|
+{{unreliable sources|date=June 2012}}
+{{refimprove|date=June 2012}}
+{{original research|date=June 2012}}
+{{more footnotes|date=June 2012}}
+}}
+{{Infobox file format
+| name = (FML) Fuzzy Markup Language <!-- For rollover expansion of links in other pages-->
+| icon =
+<!-- | screenshot = [[Image:HTML.svg|200px]] -->
+<!-- | extension = .html, .htm
+| mime = text/html
+| type code = TEXT
+| uniform type = public.html -->
+| owner = [[Giovanni Acampora]]
+| genre = [[Markup language]]
+| container for =
+| contained by =
+| extended from = [[Extensible Markup Language|XML]]
+<!-- | extended to = [[XHTML]] -->
+| standard = [https://standards.ieee.org/standard/1855-2016.html IEEE 1855-2016]
+}}
+
+'''Fuzzy Markup Language''' ('''FML''') is a specific purpose markup language based on [[XML]], used for describing the structure and behavior of a [[fuzzy system]] independently of the hardware architecture devoted to host and run it.
+
+==Overview==
+FML was designed and developed by Giovanni Acampora during his Ph.D. course in Computer Science, at University of Salerno, Italy, in 2004. The original idea inspired Giovanni Acampora to create FML was the necessity of creating a cooperative fuzzy-based framework aimed at automatically controlling a living environment characterized by a plethora of heterogeneous devices whose interactions were devoted to maximize the human comfort under energy saving constraints. This framework represented one of the first concrete examples of [[AmI|Ambient Intelligence]]. Beyond this pioneering application, the major advantage of using XML to describe a fuzzy system is hardware/software interoperability. Indeed, all that is needed to read an FML file is the appropriate schema for that file, and an FML parser. This markup approach makes it much easier to exchange fuzzy systems between software: for example, a machine learning application could extract fuzzy rules which could then be read directly into a fuzzy inference engine or uploaded into a fuzzy controller. Also, with technologies like [[XSLT]], it is possible to compile the FML into the programming language of your choice, ready for embedding into whatever application you please. As stated by Mike Watts on his popular Computational Intelligence blog:<ref>{{cite web|last=Watts |first=Mike |url=http://computational-intelligence.blogspot.it/2011/05/fuzzy-markup-language.html |title=Computational Intelligence: Fuzzy Markup Language |publisher=Computational-intelligence.blogspot.it |date=2011-05-28 |access-date=2012-06-11}}</ref>
+<blockquote>"Although Acampora's motivation for developing FML seems to be to develop embedded fuzzy controllers for ambient intelligence applications, FML could be a real boon for developers of fuzzy rule extraction algorithms: from my own experience during my PhD, I know that having to design a file format and implement the appropriate parsers for rule extraction and fuzzy inference engines can be a real pain, taking as much time as implementing the rule extraction algorithm itself. I would much rather have used something like FML for my work."</blockquote>
+
+A complete overview of FML and related applications can be found in the book titled ''On the power of Fuzzy Markup Language''<ref name=Acampora2013/> edited by Giovanni Acampora, Chang-Shing Lee, Vincenzo Loia and Mei-Hui Wang, and published by Springer in the series ''Studies on Fuzziness and Soft Computing''.
+
+==Syntax, grammar & hardware synthesis==
+FML allows fuzzy systems to be coded through a collection of correlated semantic tags capable of modeling the different components of a classical fuzzy controller such as knowledge base, rule base, fuzzy variables and fuzzy rules. Therefore, the FML tags used to build a fuzzy controller represent the set of lexemes used to create fuzzy expressions. In order to design a well-formed XML-based language, an FML context-free grammar is defined by means of a XML schema which defines name, type and attributes characterized each XML element. However, since an FML program represents only a static view of a fuzzy logic controller, the so-called eXtensible Stylesheet Language Translator (XSLT) is provided to change this static view to a computable version. Indeed, XSLTs modules are able to convert the FML-based fuzzy controller in a general purpose computer language using an XSL file containing the translation description. At this level, the control is executable for the hardware. In short, FML is essentially composed by three layers:
+* XML in order to create a new markup language for fuzzy logic control;
+* a XML Schema in order to define the legal building blocks;
+* eXtensible Stylesheet Language Transformations (XSLT) in order to convert a fuzzy controller description into a specific programming language.
+
+===FML Syntax===
+FML syntax is composed of XML tags and attributes which describe the different components of a fuzzy logic controller listed below:
+*fuzzy knowledge base;
+*fuzzy rule base;
+*inference engine
+*fuzzification subsystem;
+*defuzzification subsystem.
+
+In detail, the opening tag of each FML program is <code><FuzzyController></code> which represents the fuzzy controller under modeling. This tag has two attributes: ''name'' and ''ip''. The first attribute permits to specify the name of fuzzy controller and ''ip'' is used to define the location of controller in a computer network. The fuzzy knowledge base is defined by means of the tag <code><KnowledgeBase></code> which maintains the set of [[fuzzy concept]]s used to model the fuzzy rule base. In order to define the fuzzy
+concept related controlled system, <code><KnowledgeBase></code>  tag uses a set of nested tags:
+*<code><FuzzyVariable></code> defines the fuzzy concept;
+*<code><FuzzyTerm></code> defines a linguistic term describing the fuzzy concept; 
+*a set of tags defining a shape of fuzzy sets are related to fuzzy terms. 
+The attributes of <code><FuzzyVariable></code> tag are: ''name'', ''scale'', ''domainLeft'', ''domainRight'', ''type'' and, for only an output, ''accumulation'', ''defuzzifier'' and ''defaultValue''. The ''name'' attribute defines the name of fuzzy concept, for instance, ''temperature''; ''scale'' is used to define the scale used to measure the fuzzy concept, for instance, ''Celsius degree''; ''domainLeft'' and ''domainRight'' are used to model the universe of discourse of fuzzy concept, that is, the set of real values related to fuzzy concept, for instance [0°,40°] in the case of Celsius degree; the position of fuzzy concept into rule (consequent part or antecedent part) is defined by ''type'' attribute (input/output); ''accumulation'' attribute defines the method of accumulation that is a method that permits the combination of results of a variable of each rule in a final result; ''defuzzifier'' attribute defines the method used to execute the conversion from a fuzzy set, obtained after aggregation process, into a numerical value to give it in output to system; ''defaultValue'' attribute defines a real value used only when no rule has fired for the variable at issue.
+As for tag <code><FuzzyTerm></code>, it uses two attributes: ''name'' used to identify the linguistic value associate with fuzzy concept and ''complement'', a boolean attribute that defines, if it is true, it is necessary to consider the complement of membership function defined by given parameters. Fuzzy shape tags, used to complete the definition of fuzzy concept, are:
+*<code><TRIANGULARSHAPE></code>
+*<code><RIGHTLINEARSHAPE></code>
+*<code><LEFTLINEARSHAPE></code>
+*<code><PISHAPE></code>
+*<code><GAUSSIANSHAPE></code>
+*<code><RIGHTGAUSSIANSHAPE></code>
+*<code><LEFTGAUSSIANSHAPE></code>
+*<code><TRAPEZOIDSHAPE></code>
+*<code><SSHAPE></code>
+*<code><ZSHAPE></code>
+*<code><RECTANGULARSHAPE></code>
+*<code><SINGLETONSHAPE></code>
+Every shaping tag uses a set of attributes which defines the real outline of corresponding fuzzy set. The number of these attributes depends on the chosen fuzzy set shape.
+
+In order to make an example, consider the ''Tipper Inference System'' described in Mathworks Matlab Fuzzy Logic Toolbox Tutorial. This Mamdani system is used to regulate the tipping in, for example, a restaurant. It has got two variables in input (''food'' and ''service'') and one in output (''tip''). FML code for modeling part of knowledge base of this fuzzy system containing variables ''food'' and ''tip'' is shown below.
+
+<syntaxhighlight lang="xml"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<FuzzyController name="newSystem" ip="127.0.0.1">
+    <KnowledgeBase>
+        <FuzzyVariable name="food" domainleft="0.0" domainright="10.0" scale="" type="input">        
+            <FuzzyTerm name="delicious" complement="false">
+                <LeftLinearShape Param1="5.5" Param2="10.0"/>
+            </FuzzyTerm>
+            <FuzzyTerm name="rancid" complement="false">
+                <TriangularShape Param1="0.0" Param2="2.0" Param3="5.5"/>
+            </FuzzyTerm>
+        </FuzzyVariable>
+        ...........
+    	<FuzzyVariable name="tip" domainleft="0.0" domainright="20.0" scale="Euro" defaultValue="0.0" defuzzifier="COG"        
+ 	               accumulation="MAX"  type="output">
+            <FuzzyTerm name="average" complement="false">
+                <TriangularShape Param1="5.0" Param2="10.0" Param3="15.0"/>
+            </FuzzyTerm>
+            <FuzzyTerm name="cheap" complement="false">
+                <TriangularShape Param1="0.0" Param2="5.0" Param3="10.0"/>
+            </FuzzyTerm>
+            <FuzzyTerm name="generous" complement="false">
+                <TriangularShape Param1="10.0" Param2="15.0" Param3="20.0"/>
+            </FuzzyTerm>
+        </FuzzyVariable>
+    </KnowledgeBase>
+    ............
+</FuzzyController>
+</syntaxhighlight>
+
+A special tag that can furthermore be used to define a fuzzy shape is <code><UserShape></code>. This tag is used to customize fuzzy shape (custom shape). The custom shape modeling is performed via a set of <code><Point></code> tags that lists the extreme points of geometric area defining the custom fuzzy shape. Obviously, the attributes used in <code><Point></code> tag are x and y coordinates. 
+As for rule base component, FML allows to define a set of rule bases, each one of them describes a different behavior of system. The root of each rule base is modeled by <code><RuleBase></code> tag which defines a fuzzy rule set. The <code><RuleBase></code> tag uses five attributes: ''name'', ''type'', ''activationMethod'', ''andMethod'' and ''orMethod''. Obviously, the ''name'' attribute uniquely identifies the rule base. The ''type'' attribute permits to specify the kind of fuzzy controller (Mamdani or TSK) respect to the rule base at issue. The ''activationMethod'' attribute defines the method used to implication process; the ''andMethod'' and ''orMethod'' attribute define, respectively, the ''and'' and ''or'' algorithm to use by default.  In order to define the single rule the <code><Rule></code> tag is used. The attributes used by the <code><Rule></code> tag are: ''name'', ''connector'', ''operator'' and ''weight''. The ''name'' attribute permits to identify the rule; ''connector'' is used to define the logical operator used to connect the different clauses in antecedent part (and/or); ''operator'' defines the algorithm to use for chosen connector; ''weight'' defines the importance of rule during inference engine step. The definition of antecedent and consequent rule part is obtained by using <code><Antecedent></code> and <code><Consequent></code> tags. <code><Clause></code> tag is used to model the fuzzy clauses in antecedent and consequent part. This tag use the attribute ''modifier'' to describe a modification to term used in the clause. The possible values for this attribute are: ''above'', ''below'', ''extremely'', ''intensify'', ''more or less'', ''norm'', ''not'', ''plus'', ''slightly'', ''somewhat'', ''very'', ''none''. To complete the definition of fuzzy clause the nested <code><Variable></code>  and <code><Term></code> tags have to be used. A sequence of <code><Rule></code> tags realizes a fuzzy rule base.
+
+As example, consider a Mamdani rule composed by ''(food is rancid) OR (service is very poor)'' as antecedent and ''tip is cheap'' as consequent. The antecedent part is formed by two clauses: ''(food is rancid)'' and ''(service is poor)''. The first antecedent clause uses ''food'' as variable and ''rancid'' as fuzzy term, whereas, the second antecedent clause uses ''service'' as a variable, ''poor'' as fuzzy term and ''very'' as modifier; the consequent clause uses ''tip'' as a fuzzy variable and ''cheap'' as a fuzzy term. The complete rule is:
+
+'''IF''' ''(food is rancid)'' '''OR''' ''(service is very poor)'' '''THEN''' ''(tip is cheap)''.
+
+Let us see how FML defines a rule base with this rule.
+
+<syntaxhighlight lang="xml"> 
+<RuleBase name="Rulebase1" activationMethod="MIN" andMethod="MIN" orMethod="MAX" type="mamdani">
+      <Rule name="reg1" connector="or" operator="MAX" weight="1.0">
+           <Antecedent>
+                <Clause>
+                    <Variable>food</Variable>
+                    <Term>rancid</Term>
+                </Clause>
+                <Clause modifier="very">
+                    <Variable>service</Variable>
+                    <Term>poor</Term>
+                </Clause>
+            </Antecedent>
+            <Consequent>
+                <Clause>
+                    <Variable>tip</Variable>
+                    <Term>cheap</Term>
+                </Clause>
+            </Consequent>
+      </Rule>
+      ............
+</RuleBase>
+</syntaxhighlight>
+
+Now, let us see a Takagi-Sugeno-Kang system that regulates the same issue. The most important difference with Mamdani system is the definition of a different output variable ''tip''. The <code><TSKVariable></code> tag is used to define an output variable that can be used in a rule of a Tsk system. This tag has the same attributes of a Mamdani output variable except for the ''domainleft'' and ''domainright'' attribute because a variable of this kind (called tsk-variable) hasn't a universe of discourse. The nested <code><TSKTerm></code> tag represents a linear function and so it is completely different from <code><FuzzyTerm></code>. The <code><TSKValue></code> tag is used to define the coefficients of linear function. The following crunch of FML code shows the definition of output variable ''tip'' in a Tsk system.
+
+<syntaxhighlight lang="xml"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<FuzzyController name="newSystem" ip="127.0.0.1">
+    <KnowledgeBase>
+ 	.......
+        <TSKVariable name="tip" scale="null" accumulation="MAX" defuzzifier="WA" type="output">
+            <TSKTerm name="average" order="0">
+                <TSKValue>1.6</TSKValue>
+            </TSKTerm>
+            <TSKTerm name="cheap" order="1">
+                <TSKValue>1.9</TSKValue>
+                <TSKValue>5.6</TSKValue>
+                <TSKValue>6.0</TSKValue>
+            </TSKTerm>
+            <TSKTerm name="generous" order="1">
+                <TSKValue>0.6</TSKValue>
+                <TSKValue>1.3</TSKValue>
+                <TSKValue>1.0</TSKValue>
+            </TSKTerm>
+        </TSKVariable>
+    <KnowledgeBase>
+    ..........
+</FuzzyController>
+</syntaxhighlight>
+
+The FML definition of rule base component in a Tsk system doesn't change a lot. The only different thing is that the <code><Clause></code> tag doesn't have the modifier attribute.
+
+As example, consider a tsk rule composed by ''(food is rancid) OR (service is very poor)'' as antecedent and, as consequent, ''tip=1.9+5.6*food+6.0*service'' that can be written as ''tip is cheap'' in an implicitly way. So the rule can be written in this way:
+	
+'''IF''' ''(food is rancid)'' '''OR''' ''(service is very poor)'' '''THEN''' ''(tip is cheap)''.
+
+Let us see how FML defines a rule base with this rule.
+
+<syntaxhighlight lang="xml"> 
+<RuleBase name="Rulebase1" activationMethod="MIN" andMethod="MIN" orMethod="MAX" type="tsk">
+<Rule name="reg1" connector="or" operator="MAX" weight="1.0">
+            <Antecedent>
+                <Clause>
+                    <Variable>food</Variable>
+                    <Term>rancid</Term>
+                </Clause>
+                <Clause>
+                    <Variable>service</Variable>
+                    <Term>poor</Term>
+                </Clause>
+            </Antecedent>
+            <Consequent>
+                <Clause>
+                    <Variable>tip</Variable>
+                    <Term>cheap</Term>
+                </Clause>
+            </Consequent>
+        </Rule>
+	............
+</RuleBase>
+</syntaxhighlight>
+
+===FML Grammar===
+The FML tags used to build a fuzzy controller represent the set of lexemes used to create fuzzy expressions. However, in order to realize a well-formed XML-based language, an FML context-free grammar is necessary and described in the following. The FML context-free grammar is modeled by XML file in the form of a XML Schema Document (XSD) which expresses the set of rules to which a document must conform in order to be considered a ''valid'' FML document. Based on the previous definition, a portion of the FML XSD regarding the knowledge base definition is given below.
+
+<syntaxhighlight lang="xml"> 
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">	
+  ........
+	<xs:complexType name="KnowledgeBaseType">
+		<xs:sequence>
+		   <xs:choice minOccurs="0" maxOccurs="unbounded">
+			   <xs:element name="FuzzyVariable" type="FuzzyVariableType"/>
+			   <xs:element name="TSKVariable" type="TSKVariableType"/>
+			 </xs:choice>	
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="FuzzyVariableType">
+		<xs:sequence>
+			<xs:element name="FuzzyTerm" type="FuzzyTermType" maxOccurs="unbounded"/>
+		</xs:sequence>
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="defuzzifier" default="COG">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="MM|COG|COA|WA|Custom"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="accumulation" default="MAX">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="MAX|SUM"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="scale" type="xs:string" />
+		<xs:attribute name="domainleft" type="xs:float"  use="required"/>
+		<xs:attribute name="domainright" type="xs:float" use="required"/>
+		<xs:attribute name="defaultValue" type="xs:float" default="0"/>
+		<xs:attribute name="type"  default="input">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="input|output"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="FuzzyTermType">
+		<xs:choice>
+			<xs:element name="RightLinearShape" type="TwoParamType"/>
+			<xs:element name="LeftLinearShape" type="TwoParamType"/>
+			<xs:element name="PIShape" type="TwoParamType"/>
+			<xs:element name="TriangularShape" type="ThreeParamType"/>
+			<xs:element name="GaussianShape" type="TwoParamType"/>
+			<xs:element name="RightGaussianShape" type="TwoParamType"/>
+			<xs:element name="LeftGaussianShape" type="TwoParamType"/>
+			<xs:element name="TrapezoidShape" type="FourParamType"/>
+			<xs:element name="SingletonShape" type="OneParamType"/>
+			<xs:element name="RectangularShape" type="TwoParamType"/>
+			<xs:element name="ZShape" type="TwoParamType"/>
+			<xs:element name="SShape" type="TwoParamType"/>
+			<xs:element name="UserShape" type="UserShapeType"/>
+		</xs:choice>
+        <xs:complexType name="TwoParamType">
+		<xs:attribute name="Param1" type="xs:float" use="required"/>
+		<xs:attribute name="Param2" type="xs:float" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="ThreeParamType">
+		<xs:attribute name="Param1" type="xs:float" use="required"/>
+		<xs:attribute name="Param2" type="xs:float" use="required"/>
+		<xs:attribute name="Param3" type="xs:float" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="FourParamType">
+		<xs:attribute name="Param1" type="xs:float" use="required"/>
+		<xs:attribute name="Param2" type="xs:float" use="required"/>
+		<xs:attribute name="Param3" type="xs:float" use="required"/>
+		<xs:attribute name="Param4" type="xs:float" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="UserShapeType">
+		<xs:sequence>
+			<xs:element name="Point" type="PointType" minOccurs="2" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="PointType">
+		<xs:attribute name="x" type="xs:float" use="required"/>
+		<xs:attribute name="y" type="xs:float" use="required"/>
+	</xs:complexType>
+	<xs:complexType name="RuleBaseType">
+		<xs:attribute name="name" type="xs:string" use="required"/>
+		<xs:attribute name="activationMethod" default="MIN">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="PROD|MIN"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="andMethod" default="MIN">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="PROD|MIN"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="orMethod" default="MAX">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern value="PROBOR|MAX"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+		<xs:attribute name="type" use="required">
+			<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="TSK|Tsk|tsk|Mamdani|mamdani"/>
+					</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	<xs:complexType name="MamdaniRuleBaseType">
+		<xs:complexContent>
+     		<xs:extension base="RuleBaseType">
+				<xs:sequence>
+					<xs:element name="Rule" type="MamdaniFuzzyRuleType" minOccurs="0" maxOccurs="unbounded"/>
+				</xs:sequence>
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
+	<xs:complexType name="AntecedentType">
+		<xs:sequence>
+			<xs:element name="Clause" type="ClauseType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="MamdaniConsequentType">
+		<xs:sequence>
+			<xs:element name="Clause" type="ClauseType" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:complexType name="ClauseType">
+		<xs:sequence>
+			<xs:element name="Variable">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:whiteSpace value="collapse"/>
+						<xs:pattern value="(([A-Z])|([a-z]))+([A-Z]|[a-z]|[0-9])*"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:element>
+			<xs:element name="Term" type="xs:string">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute name="modifier" use="optional">
+			<xs:simpleType>
+				<xs:restriction base="xs:string">
+					<xs:pattern     
+                                            value="above|below|extremely|intensify|more_or_less|norm|not|plus|slightly|somewhat|very"/>
+				</xs:restriction>
+			</xs:simpleType>
+		</xs:attribute>
+	</xs:complexType>
+	..........
+</xs:schema>
+</syntaxhighlight>
+
+===FML Synthesis===
+Since an FML program realizes only a static view of a fuzzy system, the so-called eXtensible Stylesheet Language Translator (XSLT) is provided to change this static view to a computable version. In particular, the XSLT technology is used convert a fuzzy controller description into a general-purpose computer language to be computed on several hardware platforms. Currently, a XSLT converting FML program in runnable Java code has been implemented. In this way, thanks to the transparency capabilities provided by Java virtual machines, it is possible to obtain a fuzzy controller modeled in high level way by means of FML and runnable on a plethora of hardware architectures through Java technologies. However, XSLT can be also used for converting FML programs in legacy languages related to a particular hardware or in other general purpose languages.
+
+==References==
+{{reflist|refs=
+<ref name=Acampora2013>
+  {{cite book | title=On the power of Fuzzy Markup Language | volume=296
+   | series=Studies in Fuzziness and Soft Computing
+   | publisher= Springer|  work=Vol.296 | year=2013
+   | editor1-first=Giovanni|editor1-last= Acampora| editor2-first=Vincenzo|editor2-last=Loia| editor3-first=Chang-Shing | editor3-last=Lee
+   | editor4-first=Mei-Hui | editor4-last=Wang 
+   | doi=10.1007/978-3-642-35488-5
+   | isbn=978-3-642-35487-8
+   }}</ref>
+}}
+
+==Further reading==
+* {{cite journal | title=Diet assessment based on type-2 fuzzy ontology and fuzzy markup language | journal=International Journal of Intelligent Systems | date=December 2010 | author=Lee, Chang-Shing | pages=1187–1216|display-authors=etal | doi=10.1002/int.20449 | volume=25 | issue=12| s2cid=13570946 }} {{Paywall}}
+* {{Cite journal|last=Acampora|first=G.|author2=Loia, V.|year=2005|title=Fuzzy control interoperability and scalability for adaptive domotic framework|journal= IEEE Transactions on Industrial Informatics|volume=1|issue=2|pages=97–111|doi=10.1109/TII.2005.844431|s2cid=8008285 }}
+* {{Cite journal|last=Acampora|first=G.|author2=Loia, V.|year=2008|title=A proposal of ubiquitous fuzzy computing for Ambient Intelligence|journal= Information Sciences|volume=178|issue=3|pages=631–646|doi=10.1016/j.ins.2007.08.023}}
+* {{Cite journal|last=Acampora|first=G.|author2=Wang, M.-H.|author3= Lee, C.-S.|author4= Hsieh, K.-L.|author5= Hsu, C.-Y.|author6= Chang, C.-C.|year=2010|title=Ontology-based multi-agents for intelligent healthcare applications|journal= Journal of Ambient Intelligence and Humanized Computing|volume=1|issue=2|pages=111–131|doi=10.1007/s12652-010-0011-5|s2cid=35304577 }}
+* {{Cite journal|last=Acampora|first=G.|author2= Loia, V.|author3= Gaeta, M.|author4= Vasilakos, A.V.|year=2010|title=Interoperable and adaptive fuzzy services for ambient intelligence applications|journal= ACM Transactions on Autonomous and Adaptive Systems|volume=5|issue=2|doi=10.1145/1740600.1740604|pages=1–26|s2cid=14234229 }}
+
+[[Category:Markup languages]]
+[[Category:Fuzzy logic]]

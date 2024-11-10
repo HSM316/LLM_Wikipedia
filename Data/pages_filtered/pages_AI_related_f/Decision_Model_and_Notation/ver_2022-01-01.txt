@@ -1,0 +1,72 @@
+Decision Model and Notation (DMN) is a standard published by the Object Management Group.OMG standard "Decision Model and Notation (DMN)", current version It is a standard approach for describing and modeling repeatable decisions within organizations to ensure that decision models are interchangeable across organizations.
+
+The DMN standard provides the industry with a modeling notation for decisions that will support decision management and business rules. The notation is designed to be readable by business and IT users alike. This enables various groups to effectively collaborate in defining a decision model:
+ the business people who manage and monitor the decisions,
+ the business analysts or functional analysts who document the initial decision requirements and specify the detailed decision models and decision logic, 
+ the technical developers responsible for the automation of systems that make the decisions.
+
+The DMN standard can be effectively used standalone but it is also complementary to the BPMN and CMMN standards. BPMN defines a special kind of activity, the Business Rule Task, which "provides a mechanism for the process to provide input to a business rule engine and to get the output of calculations that the business rule engine might provide"OMG standard "BPMN", current version that can be used to show where in a BPMN process a decision defined using DMN should be used.
+
+DMN has been made a standard for Business Analysis according to BABOK v3.
+
+ Elements of the standard 
+The standard includes three main elements
+ Decision Requirements Diagrams that show how the elements of decision-making are linked into a dependency network.
+ Business context for decisions such as the roles of organizations or the impact on performance metrics.
+ A Friendly Enough Expression Language (FEEL) that can be used to evaluate expressions in a decision table and other logic formats.
+
+ Use cases 
+The standard identifies three main use cases for DMN
+ Defining manual decision making
+ Specifying the requirements for automated decision-making
+ Representing a complete, executable model of decision-making
+
+ Benefits 
+Using the DMN standard will improve business analysis and business process management, since
+ other popular requirement management techniques such as BPMN and UML do not handle decision making
+ growth of projects using business rule management systems or BRMS, which allow faster changesDiscovering the Decisions within Your Business Processes using IBM Blueworks Live, Publisher IBM Redbooks, 2014 
+ it facilitates better communications between business, IT and analytic roles in a company
+ it provides an effective requirements modeling approach for Predictive Analytics projects and fulfills the need for "business understanding" in methodologies for advanced analytics such as CRISP-DM
+ it provides a standard notation for decision tables, the most common style of business rules in a BRMS
+
+ Relationship to BPMN 
+
+DMN has been designed to work with BPMN. Business process models can be simplified by moving process logic into decision services. DMN is a separate domain within the OMG that provides an explicit way to connect to processes in BPMN. Decisions in DMN can be explicitly linked to processes and tasks that use the decisions. This integration of DMN and BPMN has been studied extensively.F. Hasic et al. (2018). Augmenting processes with decision intelligence: Principles for integrated modelling. Decision Support Systems, 107, 1-12. DMN expects that the logic of a decision will be deployed as a stateless, side-effect free Decision Service. Such a service can be invoked from a business process and the data in the process can be mapped to the inputs and outputs of the decision service.F. Hasic et al. (2020). Decision as a Service (DaaS): A Service-Oriented Architecture Approach for Decisions in Processes. IEEE Transactions on Services Computing
+
+ DMN BPMN example 
+As mentioned, BPMN is a related OMG Standard for process modeling. DMN complements BPMN, providing a separation of concerns between the decision and the process. The example here describes a BPMN process and DMN DRD (Decision Requirements Diagram) for onboarding a bank customer. Several decisions are modeled and these decisions will direct the processes response.
+
+New bank account process
+In the BPMN process model shown in the figure, a customer makes a request to open a new bank account. The account application provides the account representative with all the information needed to create an account and provide the requested services. This includes the name, address and various forms of identification. In the next steps of the work flow, the 'Know Your Customer' (KYC) services are called. 
+In the 'KYC' services, the name and address are validated; followed by a check against the international criminal database (Interpol) and the database of persons that are 'Politically exposed persons (PEP)'. The PEP is a person who is either entrusted with a prominent political position or a close relative thereof. Deposits from persons on the PEP list are potentially corrupt. This is shown as two services on the process model. Anti-money-laundering (AML) regulations require these checks before the customer account is certified. 
+thumbnail|Figure: A process with decisions for creating a new bank customer.
+
+The results of these services plus the forms of identification are sent to the Certify New Account decision. This is shown as a 'rule' activity, verify account, on the process diagram. If the new customer passes certification, then the account is classified into onboarding for Business Retail, Retail, Wealth Management and High Value Business. Otherwise the customer application is declined. The Classify New Customer Decision classifies the customer.
+If the verify-account process returns a result of 'Manual' then the PEP or the Interpol check returned a close match. The account representative must visually inspect the name and the application to determine if the match is valid and accept or decline the application.
+
+Certify new account decision
+thumbnail|The decision structure logic and data associated with the account verification.
+
+An account is certified for opening if the individual's' address is verified, and if valid identification is provided, and if the applicant is not on a list of criminals or politically exposed persons. These are shown as sub-decisions below the 'certify new account' decision. The account verification services provides a 100% match of the applicants address.
+For identification to be valid, the customer must provide a driver's license, passport or government issued ID.
+
+The checks against PEP and Interpol are 'Fuzzy' matches and return matching score values. Scores above 85 are considered a 'match' and scores between 65 and 85 would require a 'manual' screening process. People who match either of these lists are rejected by the account application process. If there is a partial match with a score between 65 and 85, against the Interpol or PEP list then the certification is set to manual and an account representative performs a manual verification of the applicant's data. These rules are reflected in the figure below, which presents the decision table for whether to pass the provided name for the lists checks.
+thumbnail|Business rules for evaluating the score of the PEP and Interpol 'Fuzzy' match.
+
+Client category
+The client's on-boarding process is driven by what category they fall in. The category is decided by the:
+ Type of client, business or private 
+ The size of the funds on deposit 
+ And the estimated net worth 
+This decision is shown below:
+thumbnail|The client category decision.
+There are 6 business rules that determine the client's category and these are shown in the decision table here:
+thumbnail|A DMN decision table with business rules for classifying a customer into a category based on the input data.
+
+Summary example
+In this example, the outcome of the 'Verify Account' decision directed the responses of the new account process. The same is true for the 'Classify Customer' decision. By adding or changing the business rules in the tables, one can easily change the criteria for these decisions and control the process differently.
+
+Modeling is a critical aspect of improving an existing process or business challenge. Modeling is generally done by a team of business analysts, IT personnel, and modeling experts. The expressive modeling capabilities of BPMN allows business analyst to understand the functions of the activities of the process. Now with the addition of DMN, business analysts can construct an understandable model of complex decisions. Combining BPMN and DMN yields a very powerful combination of models that work synergistically to simplify processes.
+
+ Relationship to decision mining and process mining
+Automated discovery techniques that infer decision models from process execution data have been proposed as well.J. De Smedt et al. (2019). Holistic discovery of decision models from process execution data. Knowledge-Based Systems, 183, 104866 Here, a DMN decision model is derived from a data-enriched event log, along with the process that uses the decisions. In doing so, decision mining complements process mining with traditional data mining approaches.

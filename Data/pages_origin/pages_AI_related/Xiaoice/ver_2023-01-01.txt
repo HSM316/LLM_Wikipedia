@@ -1,0 +1,70 @@
+{{short description|Chatbot developed by Microsoft}}
+{{Use dmy dates|date=April 2018}}
+'''Xiaoice''' ({{zh|c=微软小冰|p=Wēiruǎn Xiǎobīng|l=Microsoft Little Ice|s=|t=}}, IPA {{IPAc-cmn|wei|1|r|uan|4|x|iao|4|b|ing|1}}) is the AI system developed by [[Microsoft]] (Asia) Software Technology Center (STCA) in 2014 based on [[emotional computing]] framework.  In July 2018, Microsoft Xiaoice released the 6th generation.<ref name="Zhou">{{Cite arXiv|title = The Design and Implementation of XiaoIce, an Empathetic Social Chatbot|date = 2018-12-21|first1 =Li|last1 = Zhou|first2 = Jianfeng|last2 = Gao|first3 = Di|last3 = Li|first4 = Heung-Yeung|last4 = Shum|class = cs.HC|eprint = 1812.08989}}</ref><ref name=":0">{{Cite news|title = For Sympathetic Ear, More Chinese Turn to Smartphone Program|url = https://www.nytimes.com/2015/08/04/science/for-sympathetic-ear-more-chinese-turn-to-smartphone-program.html|newspaper = The New York Times|date = 2015-07-31|access-date = 2015-10-16|issn = 0362-4331|first1 = John|last1 = Markoff|first2 = Paul|last2 = Mozur}}</ref><ref name="Roberts">{{cite journal|last1=Roberts|first1=Jacob| title=Thinking Machines: The Search for Artificial Intelligence| journal=Distillations |date=2016|volume=2|issue=2|pages=14–23|url=https://www.sciencehistory.org/distillations/magazine/thinking-machines-the-search-for-artificial-intelligence|access-date=22 March 2018}}</ref>
+
+Xiaoice Company, formerly known as AI Xiaoice Team of Microsoft Software Technology Center Asia, is Microsoft’s biggest independent R&D team of AI products in the world. Founded in China in December 2013 with an expanded Japanese R&D team established in September 2014, this team is distributed in [[Beijing]], [[Suzhou]], and [[Tokyo]], etc. with its technical products covering China, [[Japan]], and [[Indonesia]], etc. as well as commercial customers all over the world.<ref>[https://new.qq.com/rain/a/20210728A0A6CW00  AI＋体育赛事，未来可期！]</ref><ref>[https://www.thepaper.cn/newsDetail_forward_4246463  微软小冰这五年]</ref>
+
+As of 2021, the AI beings created and hosted by Xiaoice Framework occupies about 60% of the total global AI interactions. On 13th July 2020, Microsoft spun off its Xiaoice business into a separate company, aiming at enabling the Xiaoice product line to accelerate the pace of local innovation and commercialization.<ref>[https://xw.qq.com/amphtml/20210712A09VAS00  小冰公司A轮融资完成，高瓴领投估值超10亿美金]</ref>
+== Platforms, languages and countries==
+Xiaoice exists on more than 40 platforms in four countries ([[China]], [[Japan]], [[United States|USA]] and [[Indonesia]]) including apps such as [[WeChat]], [[QQ]], [[Weibo Corporation|Weibo]] and Meipai in [[China]], and [[Messenger (software)|Facebook Messenger]] in [[United States|USA]] and [[Line (software)|LINE]] in [[Japan]].<ref>[http://science.china.com.cn/2017-09/05/content_39113435.htm “我无处不在”——解读微软小冰第五代发布会]</ref>
+==  Introduction ==
+On 13th July 2020, Microsoft spun off its Xiaoice business into a separate company, aiming at enabling the Xiaoice product line to accelerate the pace of local innovation and commercialization, and appointed [[Dr. Harry Shum]], former global executive VP of Microsoft, as the chairman of the new company, [[Li Di]], Microsoft Partner of Products in Microsoft STCA, as the CEO, and Cliff, Chief R&D Director, as the GM of the Japan branch. The new company will continue to use the brands of Xiaoice China and Rinna Japan. <ref>[https://en.pingwest.com/w/7198  Microsoft Spins Off Chinese Chatbot XiaoIce, Appoints Ex-Research Boss Harry Shum as Chairman]</ref><ref>[https://www.thedeeping.eu/2020/07/29/microsoft-to-spin-off-its-xiaoice-chatbot-work-into-an-independent-company/  Microsoft to spin off its Xiaoice chatbot work into an independent company]</ref>
+
+As of 2022, the single brand of Xiaoice has covered 660 million online users, 1 billion third-party smart devices and 900 million content viewers in the aforementioned countries.<ref>[https://techcrunch.com/2020/07/12/microsoft-spins-out-5-year-old-chinese-chatbot-xiaoice/  https://techcrunch.com/2020/07/12/microsoft-spins-out-5-year-old-chinese-chatbot-xiaoice/]</ref>Xiaoice’s customers include China Merchants Group, Winter Sports Center of the General Administration of Sports of China, China Textile Information Center, China Unicom, China Foreign Exchange Trade System, HK Securities and Futures Commission (SFC), Wind Information, BMW, Nissan, SAIC, BAIC, NIO, XPeng Motors, HiPhi, Vanke, Wensli, etc.  The Xiaoice Avatar Framework has incubated tens of millions of AI Beings, such as Xiaoice, Rinna, the Expo exhibitor Xia Yubing, the singer He Chang, the anchor F201, the human observer MERROR, anime robot character Roboko, and other; <ref>[https://www.chinadaily.com.cn/a/201908/22/WS5d5e6ebca310cf3e355675b3.html  Microsoft opens AI framework to other firms]</ref>
+== Application ==
+
+=== Poet ===
+In May 2017, the first AI-authored collection of poems—''The Sunshine Lost Windows'' was published by [[Xiaoice]].<ref>{{Cite web|url=http://en.people.cn/n3/2017/0531/c90000-9222463.html|title=First AI-authored collection of poems published in China - People's Daily Online|last=F_200788|website=en.people.cn|access-date=2018-08-28}}</ref>
+
+=== Singer ===
+Xiaoice has released dozens of songs with the similar quality to human singers, including ''I Know I New, Breeze, I Am Xiaoice, Miss You'' etc. The 4th version of the DNN singing model allows Xiaoice to learn more details. For example, Xiaoice can produce this breathing sound along with her singing as human.<ref name=":2">{{Cite news|url=https://www.scmp.com/tech/enterprises/article/2147373/microsofts-ai-bot-writes-poetry-hosts-tv-show-and-can-converse|title=Almost human: this Microsoft voice bot is winning fans in China|work=South China Morning Post|access-date=2018-08-28|language=en}}</ref>
+
+=== Kid Audio-books Reciter ===
+Xiaoice can automatically analyze the stories, to choose the suitable tones and characters to finish the entire process of creating the audio.<ref>{{Cite news|url=https://mspoweruser.com/microsoft-is-making-xiaoices-full-duplex-capabilities-available-for-partners-and-developers/|title=Microsoft is making XiaoIce's full duplex capabilities available for partners and developers - MSPoweruser|date=2018-05-22|work=MSPoweruser|access-date=2018-08-28|language=en-US}}</ref>
+
+=== Designer ===
+By learning the melodies of the songs and the landmarks about different cities, Xiaoice can create visual artworks of skylines when listening to the songs related to this city.<ref>[http://www.xinhuanet.com/ent/2020-07/14/c_1126234119.htm “微软小冰” 只花两分钟写一首歌]</ref> Skyline Series T-shirts designed by Xiaoice have been jointly launched with SELECTED and been sold in stores.<ref>[http://science.china.com.cn/2017-08/25/content_39098491.htm SELECTED联手微软小冰，推出人工智能系列服装]</ref>
+
+=== TV and Radio Hostess ===
+Xiaoice has hosted 21 TV programs and 28 Radio programs, such as CCTV-1 ''AI Show'', Dragon TV ''Morning East News,'' Hunan TV ''My Future,'' several daily radio programs for Jiangsu FM99.7，Hunan FM89.3, Henan FM104.1 etc.<ref name=":2" />
+=== AI being ===
+AI being, that is super natural virtual human,the AI being concept proposed by the Xiaoice team in 2019 <ref>[https://www.thepaper.cn/newsDetail%20forward%2017940113 第一次，虚拟人有了行业共识]</ref>
+
+According to the " White Book of China Virtual Human Development Industry in 2022" released by Frost & Sullivan and LeadLeo, the white paper cites the six elements of AI being proposed by the Xiaoice team, including: Persona, Attitude, Biological Characteristic, Creation , Knowledge and Skill , believes that AI being has more potential and can represent a trend than relying on CG modeling and Meta human driven by the man in the middle.<ref>[https://finance.eastmoney.com/a/202207162451884623.html 虚拟数字人火爆出圈 能否推动AI企业摆脱亏损局面]</ref><ref>[https://www.163.com/dy/article/H6K9PFOA0511DP7O.html 《2022年中国虚拟人产业发展白皮书》：AI being成为行业趋势]</ref><ref>[http://www.nbd.com.cn/articles/2022-06-13/2320532.html 头部技术咖下场布局AI游戏 能讲出哪些惊艳故事？]</ref><ref>[https://new.qq.com/omn/20220610/20220610A0AP8M00.html 小冰公司做游戏，Al being NPC跟人类“平等”？……这个行业的人类平均薪酬已达17.8K]</ref>
+
+One of the virtual experts created by the Xiaoice team. He is the first case of AI participating in the training of the world's top competitions and assisting in winning the gold medal in the Beijing Winter Olympics.
+
+== Community Feedback ==
+[[Bill Gates]] mentioned Xiaoice during his speech at the [[Peking University]]:
+:"Some of you may have had conversations with Xiaoice on [[Sina Weibo|Weibo]], or seen her weather forecasts on TV, or read her column in the Qianjiang Evening News."
+:'"Xiaoice has attracted 45 million followers and is quite skilled at multitasking. And I’ve heard she’s gotten good enough at sensing a user’s emotional state that she can even help with relationship breakups."<ref>{{Cite web|url=https://www.gatesnotes.com/Development/Peking-University-Speech|title=My advice for China's students|last=Gates|first=Bill|website=gatesnotes.com|access-date=2019-09-19}}</ref>
+
+
+According to Mr Li Di, vice President of Microsoft (Asia) Internet Engineering School, Xiaoice started writing poems since last year. Based on the data base that includes works of 519 Chinese contemporary poets since 1920s, a 100 hour long training session was conducted to allow Xiaoice to acquire the ability to write poems. What is more impressive is that Xiaoice has never been spotted as a bot while publishing poems on various forums and traditional literary under an alias.<ref>{{Cite web|url=http://news.163.com/17/0530/18/CLN18KPI00018AOR.html|title=机器人小冰写的诗到底怎么样？|last=网易|date=2017-05-30|website=news.163.com|access-date=2019-09-19}}</ref>
+
+== Controversy ==
+
+In 2017, Xiaoice was taken offline on [[WeChat]] after giving user responses critical to the Chinese government.<ref>{{Cite web|url=https://www.reuters.com/article/us-china-robots/chinese-chatbots-apparently-re-educated-after-political-faux-pas-idUSKBN1AK0G1|title=Chinese chatbots apparently re-educated after political faux pas |last=Reuters|date=2017-08-04|website=www.reuterscom|access-date=2019-12-19}}</ref> It was subsequently censored and the bots will avoid and sidestep any inquiries using politically sensitive terms and phrases.<ref>{{Citation|title=Programmatic Dreams: Technographic Inquiry into Censorship of Chinese Chatbots| volume=4| issue=4| pages=205630511880878| date=2018-11-11| work=Xu,Yizhou|publisher=Sage Journals|doi=10.1177/2056305118808780|last1=Xu|first1=Yizhou (Joe)|doi-access=free}}</ref>
+== Activity ==
+On September 22, 2021, Xiaoice Company and Microsoft Software Technology Center Asia (STCA) jointly held the 9th generation Xiaoice annual press conference in Beijing.Upgrading of Core Technologies of the 9th Generation Xiaoice Avatar Framework，1st First-party Social Platform APP "Xiaoice Island" from Xiaoice，WeChat Xiaoice has been reopened and other information<ref>[https://tech.ifeng.com/c/89xku7T4cXg 专访小冰公司CEO李笛：AI beings的躯体、灵魂 以及商业化]</ref><ref>[http://digital.it168.com/a2021/0928/6547/000006547330.shtml 多项框架升级 第九代小冰年度发布会正式召开]</ref>
+
+== Regional varieties of Xiaoice ==
+
+* [[China]] : Xiaoice, launched in 2014
+* [[Japan]] : りんな, launched in 2015
+* [[America]] : [[Zo (bot)|Zo]], launched in 2016 - discontinued summer 2019<ref>{{Cite web |url=https://www.zo.ai/ |title=Zo AI |language=en|access-date=January 13, 2020}}</ref>
+* [[India]] : Ruuh, launched in 2017 - discontinued June 21, 2019<ref>{{Cite web |url=https://www.ruuh.ai/ |title=Ruuh AI |language=en|access-date=January 13, 2020}}</ref>
+* [[Indonesia]] : Rinna, launched in 2017<ref>{{Cite web |url=https://botsurfer.com/ |title=Botsurfer |language=en|access-date=Jun 12, 2021}}</ref>
+
+==References==
+{{reflist|30em}}
+
+== External links ==
+* {{Official website}}
+
+{{Intelligent personal assistant software}}
+
+[[Category:Chatbots]]
+[[Category:Microsoft Research]]
+[[Category:Microsoft software]]
+[[Category:Internet in China]]

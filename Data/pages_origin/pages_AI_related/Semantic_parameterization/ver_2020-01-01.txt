@@ -1,0 +1,104 @@
+'''Semantic parameterization''' is a conceptual modeling process for expressing natural language descriptions of a domain in first-order predicate logic.<ref>Travis D. Breaux and Annie I. Antón (2004). [http://theprivacyplace.org/blog/wp-content/uploads/2008/07/tr-2004-36.pdf Deriving Semantic Models from Privacy Policies] {{webarchive|url=https://web.archive.org/web/20110728100341/http://theprivacyplace.org/blog/wp-content/uploads/2008/07/tr-2004-36.pdf |date=2011-07-28 }}. North Carolina State University Computer Science Technical Report TR-2004-36.</ref><ref>Travis D. Breaux and Annie I. Antón (2008). [http://theprivacyplace.org/blog/wp-content/uploads/2008/07/tr-2005-31.pdf "Mining Rule Semantics to Understand Legislative Compliance"] {{webarchive|url=https://web.archive.org/web/20110728100512/http://theprivacyplace.org/blog/wp-content/uploads/2008/07/tr-2005-31.pdf |date=2011-07-28 }}. North Carolina State University Computer Science Technical Report TR-2005-31.</ref><ref name="Breaux">T.D. Breaux, A.I. Anton, J. Doyle, [http://www4.ncsu.edu/~tdbreaux/publications/tdbreaux-tosem09.pdf "Semantic parameterization: a process for modeling domain descriptions"] {{webarchive|url=https://web.archive.org/web/20080517070656/http://www4.ncsu.edu/~tdbreaux/publications/tdbreaux-tosem09.pdf |date=2008-05-17 }}, ''ACM Transactions on Software Engineering Methodology'', vol. 18, no. 2, Article 5, 2008.</ref> The process yields a formalization of natural language sentences in [[Description Logic]] to answer the ''who,'' ''what'' and ''where'' questions in the Inquiry-Cycle Model (ICM) developed by Colin Potts and his colleagues at the Georgia Institute of Technology.<ref name="Potts">C. Potts, K. Takahashi, and A.I. Anton, "Inquiry-based requirements analysis", ''IEEE Software'' 11(2): 21–32, 1994.</ref> The parameterization process complements the Knowledge Acquisition and autOmated Specification (KAOS) method,<ref>A. Dardenne, A. van Lamsweerde and S. Fickas, "Goal-Directed Requirements Acquisition", ''Science of Computer Programming'' v. 20, North Holland, 1993, pp. 3-50.</ref> which formalizes answers to the ''when'', ''why'' and ''how'' ICM questions in [[Temporal Logic]], to complete the ICM formalization. The artifacts used in the parameterization process include a dictionary that aligns the domain lexicon with unique concepts, distinguishing between [[synonyms]] and [[polysemes]], and several natural language patterns that aid in mapping common domain descriptions to formal specifications.
+
+== Relationship to other theories ==
+
+Semantic Parameterization defines a meta-model consisting of eight roles that are domain-independent and reusable. Seven of these roles correspond to Jeffrey Gruber's [[thematic relations]]<ref>J. Gruber, ''Lexical Structures in Syntax and Semantics'', North Holland, New York, 1976.</ref> and [[case role]]s in Charles Fillmore's [[case grammar]]:<ref>C. Fillmore, "The Case for Case", ''Universals in Linguistic Theory'', Holt, Rhinehart and Winston, New York, 1968.</ref>
+
+{| class="wikitable" border="1" cellpadding="3" align="center"
+|+ Meta-model Mapping to Case Frames and Thematic Relations
+! Breaux's Meta-model
+! Fillmore's Case Roles
+! Thematic Relations
+|-
+| Subject
+| Agentive
+| Agent
+|-
+| Action
+|
+|-
+| Object
+| Objective/ Factitive
+| Theme/ Patient
+|-
+| Target
+| Dative
+| Goal
+|-
+| Source
+| Source
+| Source
+|-
+| Instrument
+| Instrumental
+| Instrument
+|-
+| Purpose
+|
+| Purposive
+|-
+| Location
+| Locative
+| Location
+|-
+|
+| Comitative
+| Accompaniment
+|}
+
+The Inquiry-Cycle Model (ICM) was introduced to drive elicitation between engineers and stakeholders in requirements engineering.<ref name="Potts" /> The ICM consists of ''who'', ''what'', ''where'', ''why'', ''how'' and ''when'' questions. All but the ''when'' questions, which require a [[Temporal Logic]] to represent such phenomena, have been aligned with the meta-model in semantic parameterization using [[Description Logic]] (DL).
+
+{| class="wikitable" border="1" cellpadding="3" align="center"
+|+ Mapping from DL roles to questions in the Inquiry-Cycle Model
+! DL Role in Meta-model
+! ICM Question
+|-
+| isSubjectOf.Activity
+| Who performs the action?
+|-
+| isObjectOf.Activity
+| Upon what is the action performed?
+|-
+| isTargetOf.Activity
+| With whom is the transaction performed?
+|-
+| isPurposeOf.Activity
+| Why is the action performed?
+|-
+| isInstrumentOf.Activity
+| How is the action performed?
+|-
+| isLocationOf.Activity
+| Where is the action performed?
+|}
+
+== Introduction with Example ==
+
+The semantic parameterization process is based on [[Description Logic]], wherein the TBox is composed of words in a ''dictionary'', including nouns, verbs, and adjectives, and the ABox is partitioned into two sets of assertions: 1) those assertions that come from words in the natural language statement, called the ''grounding'', and 2) those assertions that are inferred by the (human) modeler, called the ''meta-model''. Consider the following unstructured natural language statement (UNLS) (see Breaux et al.<ref name="Breaux" /> for an extended discussion):
+
+;UNLS<sub>1.0</sub>: The customer<sub>1,1</sub> must not share<sub>2,2</sub> the access-code<sub>3,3</sub> of the customer<sub>1,1</sub> with someone<sub>4,4</sub> who is not the provider<sub>5,4</sub>.
+
+The modeler first identifies intensional and extensional polysemes and synonyms, denoted by the subscripts: the first subscript uniquely refers to the intensional index, i.e., the same first index in two or more words refer to the same concept in the TBox; the second subscript uniquely refers to the extensional index, i.e., two same second index in two or more words refer to the same individual in the ABox. This indexing step aligns words in the statement and concepts in the dictionary. Next, the modeler identifies concepts from the dictionary to compose the meta-model. The following table illustrates the complete DL expression that results from applying semantic parameterization.
+
+{| class="wikitable" border="1" cellpadding="3" align="center"
+|+ The grounding {{mvar|G}} and meta-model {{mvar|M}} derived from UNLS<sub>1.0</sub>
+! Grounding ({{mvar|G}})
+! Meta-model ({{mvar|M}})
+|-valign="top"
+| {{math|Customer(''p''<sub>1</sub>) <br />
+⨅ Share(''p''<sub>2</sub>) <br />
+⨅ isAccessCodeOf(''p''<sub>3</sub>, ''p''<sub>1</sub>) <br />
+⨅ Someone(''p''<sub>4</sub>) <br />
+⨅ Provider(''p''<sub>4</sub>)}}
+| {{math|Activity(''p''<sub>5</sub>) <br />
+⨅ hasSubject(''p''<sub>5</sub>, ''p''<sub>1</sub>) <br />
+⨅ hasAction(''p''<sub>5</sub>, ''p''<sub>2</sub>) <br />
+⨅ hasObject(''p''<sub>5</sub>, ''p''<sub>3</sub>) <br />
+⨅ hasTarget(''p''<sub>5</sub>, ''p''<sub>4</sub>) <br />
+⨅ isRefrainmentOf(''p''<sub>5</sub>, ''p''<sub>1</sub>)}}
+|}
+
+== References ==
+{{Reflist}}
+
+[[Category:Knowledge representation]]

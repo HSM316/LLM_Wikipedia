@@ -1,0 +1,67 @@
+{{short description|U.S. military system used for planning}}
+{{About|a software system used for planning||Jade (disambiguation)}}
+
+'''Joint Assistant for Development and Execution (JADE)''' is a [[U.S. military]] system used for planning the deployment of military forces in crisis situations.<ref name="JADE-2001"/>
+
+The U.S. military developed this [[Automated planning and scheduling|automated planning]] software system in order to expedite the creation of the detailed planning needed to deploy military forces for a [[military operation]]. JADE uses [[Artificial Intelligence]] (AI) technology combining user input, a [[knowledge base]] of stored plans, and suggestions by the system to provide the ability to develop large-scale and complex plans in minimal time.
+
+== History ==
+In 1999, the operational tool used for managing force deployment planning in the U.S. military was the Joint Operation Planning and Execution System (JOPES). The JADE tool for rapid crisis action planning had been developed by [[BBN Technologies]] under a contract to [[DARPA]] within the ARPA-Rome Planning Initiative, but was available only in a prototype environment.<ref name="JADE-1999">{{cite web|author1=Alice M. Mulvehill |author2=Joseph A. Caroli |title=JADE: A Tool for Rapid Crisis Action Planning|url=http://www.dtic.mil/dtic/tr/fulltext/u2/a458570.pdf|publisher=[[Defense Technical Information Center|Defense Technical Information Center (DTIC)]]|year=1999}}</ref> In subsequent years, JADE was successfully demonstrated<ref name="JADE-2001">{{cite web|author1=Alice M. Mulvehill |author2=Clinton Hyde |author3=David Rager |title=Joint Assistant for Development and Execution (JADE)|url=http://www.dtic.mil/get-tr-doc/pdf?AD=ADA398021|type=PDF download; [https://www.researchgate.net/publication/235135366_Joint_Assistant_for_Development_and_Execution_(JADE) the abstract] is available from [[ResearchGate]]|publisher=[[Defense Technical Information Center|Defense Technical Information Center (DTIC)]]|year=2001}}</ref>{{rp|page=24}} and then integrated into the [[Global Command and Control System]] (GCCS) and the Adaptive Course of Action (ACOA) environment while meeting the requirements of the Defense Information Infrastructure Common Operating Environment (DII-COE).
+
+An official 2016 document approved for public release titled ''Human Systems Roadmap Review'' describes plans to create autonomous weapon systems that analyze social media and make decisions, including the use of lethal force, with minimal human involvement.<ref>{{cite web|author=Dr. John Tangney|title=Human Systems Roadmap Review|url=http://www.defenseinnovationmarketplace.mil/resources/NDIA_Human_Systems_Conference_2016_HSCOI_DistroA_FINAL.pdf|publisher=Defense Innovation Marketplace|year=2016}}</ref> This type of system is referred to as a [[Lethal autonomous weapon|Lethal Autonomous Weapon System]] (LAWS).
+
+The name "JADE" comes from the [[Jade (color)|jade green color]] seen on the island of [[Oahu, Hawaii|Oahu]] in [[Hawaii]] where the U.S. [[United States Pacific Command|Pacific Command]] (PACOM) is headquartered.<ref name="JADE-2001"/>{{rp|page=1}}
+
+JFRG II will be replaced with JADE.
+
+== Components ==
+JADE integrates the technology of three software systems:<ref name="JADE-2001"/>{{rp|pages=1–2}}<ref name="JADE-2005">{{cite web|author1=A. Boukhtouta |author2=J. Berger |author3=A. Guitouni |author4=F. Bouak |author5=A. Bedrouni |title=Description and analysis of military planning systems|url=http://www.dtic.mil/dtic/tr/fulltext/u2/a437437.pdf|publisher=[[Defense Technical Information Center|Defense Technical Information Center (DTIC)]]|year=2005|pages=20–21}}</ref><ref name="JADE-2010">{{cite web|author1=Anet Greenley |author2=Sylvain Pronovost |author3=Dennis Kelleher |author4=John Graham |author5=Peter Race |author6=Patrick Lachance |title=Identification of Decision Support Concepts for the Planning of Air Force Immediate Contingencies Operations|url=http://www.dtic.mil/dtic/tr/fulltext/u2/a554352.pdf|publisher=[[Defense Technical Information Center|Defense Technical Information Center (DTIC)]]|year=2010|pages=190–191}}</ref>
+* ForMAT (Force Management and Analysis Tool) – a [[case-based reasoning]] (CBR) force deployment planning tool that uses past experience (past planned Force modules (FMs)); the tool was developed initially by [[The MITRE Corporation]], and then developed further by [[BBN Technologies]]
+* Prodigy-Analogy – a combined case-based reasoning and generative planner with a multi-strategy planning and learning architecture developed by [[Carnegie Mellon University]]
+* PARKA – a highly indexed [[Knowledge-based systems|knowledge-based]] management system developed by the [[University of Maryland]]
+
+== Features ==
+JADE uses [[Artificial Intelligence]] (AI) technology with [[Case-based reasoning|case-based]] and generative planning methods to provide the ability to develop large-scale and complex [[Military operation plan|plans]] in minimal time. JADE is a [[Knowledge-based systems|knowledge-based]] system that uses highly structured information that takes advantage of data hierarchies. JADE uses dialog initiated both by the user and by the system. JADE is used to rapidly create [[Time Phased Force Deployment Data]] (TPFDD) to organize the deployment of combat-ready forces.<ref name="JADE-2001"/>{{rp|pages=1–2}}  Case-based planning methods (also known as the variant approach) use an existing plan for a similar mission and make the necessary modifications to the plan for the new mission. Generative planning methods build new plans from the mission goals and requirements by means of [[Automated planning and scheduling#Algorithms for planning|planning algorithms]] and the [[knowledge base]].
+
+JADE supports the retrieval and reuse of previous plan elements for use in the development of new plans by using a map-oriented [[drag and drop]] interface. Force modules (FMs) from previous plans (cases) can be dragged from the case library and dropped onto a geographic destination. To support plan adaption of previous plans or modifications resulting from changing mission requirements, constraint checking against the knowledge base and mission goals causes automatic reminders from the system to notify the user of changes and improvements that need to be made. JADE is a mixed-initiative system, using dialog initiated by both the user (user-initiative) and by the system (system-initiative).
+
+The knowledge base supports the development of deployment plans for war and situations other than war. JADE is designed to inter-operate with the Adaptive Course of Action (ACOA) program, which provides a near real-time distributed collaborative environment that supports end-to-end joint planning by multiple command centers.<ref name="JADE-2001"/>{{rp|pages=21–23}} The Time Phased Force Deployment Data (TPFDD) produced by JADE included an Operational Plan (OPLAN) which describes the mission and specifies where and when the forces involved in a mission are to be deployed. The TPFDD also specifies the combat forces and the combat service support required in order to support the mission, which includes transportation phasing, mode, and geographical locations.
+
+== Time Phased Force Deployment Data (TPFDD) ==
+
+"Time Phased Force Deployment Data" (TPFDD) is a U.S. [[United States Department of Defense|Department of Defense]] (DOD) term. A TPFDD is the [[data base]] portion of an [[Military operation plan|operation plan]] in the Joint Operation Planning and Execution System (JOPES); this system is part of the [[Global Command and Control System]] (GCCS). The TPFDD contains data on [[military unit]]s and forces regarding force data as scheduled over time, data for cargo and personnel that are not part of the units, and movement data for the operation plan.<ref>{{cite web|title=time-phased force and deployment data|url=http://usmilitary.about.com/od/glossarytermst/g/t6400.htm|website=[[About.com]]}}</ref><ref>{{cite web|title=Definition of the United States Department of Defense military term "time-phased force and deployment data"|url=http://www.militaryfactory.com/dictionary/military-terms-defined.asp?term_id=5459|website=MilitaryFactory.com}}</ref>
+
+Data regarding military units in the TPFDD include:
+* Units that are already in-place
+* Units deploying to support the operation plan, including a priority for the desired sequencing
+* Routing and movement data associated with forces that are being deployed
+* Estimates of non-unit-related cargo and personnel movements that occur concurrently with the deployment of forces
+* Estimates of transportation requirements using common-user resources and resources assigned or attached
+
+== See also ==
+* [[Automated planning and scheduling]]
+* [[Battle command]]
+* [[Battle command knowledge system]]
+* [[Computer-aided process planning]]
+* [[Dynamic Analysis and Replanning Tool|Dynamic Analysis and Replanning Tool (DART)]]
+* [[FirstNet]]
+* [[Future Attribute Screening Technology|Future Attribute Screening Technology (FAST)]]
+* [[Global Information Network Architecture|Global Information Network Architecture (GINA)]]
+* [[Goal-oriented inference]]
+* [[Human Terrain System|Human Terrain System (HTS)]]
+* [[NetOps]]
+* [[Stingray phone tracker]]
+*[[Palantir Technologies|Palantir]]
+*[https://rebelliondefense.com/company/ Rebellion Defense]
+*[https://heronsystems.com/ Heron Systems]
+
+== References ==
+<references/>
+
+[[Category:Automated planning and scheduling]]
+[[Category:Emergency management in the United States]]
+[[Category:Information operations and warfare]]
+[[Category:Net-centric]]
+[[Category:Command and control]]
+[[Category:Military planning]]
+[[Category:Military equipment of the United States]]

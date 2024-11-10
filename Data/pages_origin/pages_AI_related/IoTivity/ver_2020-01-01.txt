@@ -1,0 +1,74 @@
+{{Infobox software
+| name                   = IoTivity
+| logo                   = <!-- Image name is enough -->
+| logo alt               = 
+| screenshot             = <!-- Image name is enough -->
+| caption                = 
+| screenshot alt         = 
+| collapsible            = 
+| author                 = [[Open Connectivity Foundation]]
+| developer              = 
+| released               = {{Start date and age|2015|12|18}}
+| discontinued           = 
+| latest release version = 2.0
+| latest release date    = 2018
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| programming language   = [[C (programming language)|C]], [[C++]], [[Java (programming language)]]
+| operating system       = [[Linux]], [[Tizen]], [[Android (operating system)|Android]], [[Windows (operating system)]], [[iOS]]
+| platform               = 
+| size                   = 
+| language               = 
+| language count         = <!-- Number only -->
+| language footnote      = 
+| genre                  = 
+| license                = [[Apache License 2.0]]
+| alexa                  = 
+| website                = {{URL|https://www.iotivity.org}}
+| standard               = 
+| AsOf                   = 
+}}
+
+The '''IoTivity''' is an open source project.<ref>{{cite web|url=http://www.iotivity.org/|title=IoTivity}}</ref> The IoTivity project is hosted by the [[Linux Foundation]],<ref>{{cite web|url=http://www.linuxfoundation.org/news-media/announcements/2015/01/iotivity-open-source-project-announces-preview-release|title=IoTivity Open Source Project Announces Preview Release|accessdate=14 January 2015|work=Linux Foundation}}</ref> and sponsored by the [[Open Connectivity Foundation|Open Connectivity Foundation (OCF)]]<ref>{{cite web|url=https://openconnectivity.org/|title=Open Connectivity Foundation}}</ref> that is a group of technology companies such as [[Samsung Electronics]] and [[Intel]] who together will develop standard specifications, promote a set of [[interoperability]] guidelines, and provide a certification program to enable the [[Internet of Things]].<ref>{{cite web|url=http://www.cnet.com/news/intel-samsung-create-internet-of-things-group/|title=Intel, Samsung create Internet of Things group|accessdate=7 July 2014|work=CNET News}}</ref> This project is independent from the OCF. Any individual or company can contribute to the project, and this may influence OCF standards indirectly. However, being a member of the OCF can benefit from [[Cross-licensing|patent cross-licensing protection]].
+
+The IoTivity architectural goal is to create a new standard by which billions of wired and wireless devices will connect to each other and to the internet. The goal is an extensible and robust architecture that works for smart and thin devices.<ref>{{cite web|url=https://thenextweb.com/apps/2015/01/14/iotivity-is-a-new-open-source-attempt-to-establish-internet-of-things-standards/|title=IoTivity is a new open-source attempt to establish Internet-of-Things standards|accessdate=14 January 2015|work=TNW News}}</ref>
+
+In October 2016 they announced [[AllJoyn]] merger into Iotivity.<ref>{{Cite news|url=https://securityledger.com/2016/10/open-source-iot-standards-iotivity-and-alljoyn-merge/|title=Open Source IoT Standards IoTivity and AllJoyn Merge|date=2016-10-11|newspaper=The Security Ledger|language=en-US|access-date=2016-10-18}}</ref> Also during the merging announcement, it was stated that current devices running either AllJoyn or Iotivity will be interoperable and backward compatible. 
+
+The IoTivity will deliver an open source reference implementation of the OCF standard specifications but not limited to those requirements. 
+
+The current release is 2.0<ref>{{Cite news|url=https://staceyoniot.com/this-may-not-be-the-iot-standard-you-were-looking-for/|title=This may not be the IoT standard you were looking for - Stacey on IoT {{!}} Internet of Things news and analysis|date=2018-09-04|work=Stacey on IoT {{!}} Internet of Things news and analysis|access-date=2018-09-06|language=en-US}}</ref> Previously, there was a 1.3.1 release<ref>{{cite web|url=https://www.iotivity.org/downloads/iotivity-1.3.1|title=IoTivity 1.3.1 release download|accessdate=7 March 2018}}</ref> for the IoTivity Framework. Within the merging process with [[AllJoyn]], the project's licence is changed to [[Apache License|Apache 2.0 Licence]] which makes it easier to other open source projects to include IoTivity and AllJoyn in more projects.
+
+==Overview==
+October 10th of 2016 AllSeen Alliance merged with the Open Connectivity Foundation (OCF) under the OCF name and bylaws. OCF will now sponsor both the IoTivity and AllJoyn open source projects at The Linux Foundation. Both projects will collaborate to support future versions of the OCF specification in a single IoTivity implementation that combines the best of both technologies into a unified solution. The newly merged groups announced that they will collaborate on future OCF specifications, as well as the IoTivity and AllJoyn open source projects, and current devices running on either AllJoyn or IoTivity solutions will be interoperable and backward-compatible. The expanded OCF board of directors will consist of executives from a wide array of leading companies: Electrolux, Arçelik A.S., ARRIS International plc, CableLabs, Canon, Cisco, GE Digital, Haier, Intel, LG Electronics, Microsoft, Qualcomm, Samsung, and Technicolor SA.<ref>https://allseenalliance.org/allseen-alliance-merges-open-connectivity-foundation-accelerate-internet-things AllSeen Alliance Merges with Open Connectivity Foundation to Accelerate the Internet of Things</ref>
+
+== Protocols ==
+The system uses the [[Constrained Application Protocol|Constrained Application Protocol (CoAP)]] as its [[application layer]] and is agnostic to the underlying [[physical layer]] as long as the [[network layer]] is [[internet protocol| IP]]. <ref name="arch">https://www.iotivity.org/documentation/architecture-overview</ref> examples include:
+* [[Wi-Fi]]
+* [[Ethernet]]
+* [[Bluetooth low energy| Bluetooth low energy (IPSP)]]
+* [[thread (network protocol)|Thread]]
+* [[Z-Wave]]
+
+Legacy protocols are also supported by a protocol plugin manager <ref name="PPM iotivity wiki page">https://wiki.iotivity.org/protocol_plug_manager_for_linux</ref> including:
+* [[ANT+]]
+* [[Zigbee]]
+* [[Bluetooth low energy| Bluetooth low energy (GATT)]]
+
+== Features ==
+* [[Service discovery|Discovery]] - the ability for a given device to find other devices around it as well as offering its own services to them
+* [[Message|Data Transmission]] - the ability to pass messages between devices in a standardised way
+* ''Device management''
+* ''Data management''
+
+==See also==
+* [[Open Connectivity Foundation]]: On February 19, 2016 the OIC changed its name to the Open Connectivity Foundation<ref>{{cite web|url=https://industrial-iot.com/2016/02/meet-the-open-connectivity-foundation-ocf/|title=IoT Standards Get a Big Push: Meet the Open Connectivity Foundation (OCF)|date=23 February 2016}}</ref>
+* [[Open Interconnect Consortium]]
+* [[Constrained Application Protocol]]: The core protocol that IoTivity is built on
+* [[AllJoyn]], a similar, collaborating open source project, also sponsored by [[Open Interconnect Consortium]]
+
+==References==
+{{reflist}}
+
+[[Category:Internet of things]]
+[[Category:Linux Foundation projects]]

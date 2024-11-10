@@ -1,0 +1,112 @@
+Synthetic media (also known as AI-generated media, media produced by generative AI, personalized media, personalized content, and colloquially as deepfakes) is a catch-all term for the artificial production, manipulation, and modification of data and media by automated means, especially through the use of artificial intelligence algorithms, such as for the purpose of misleading people or changing an original meaning. Synthetic media as a field has grown rapidly since the creation of generative adversarial networks, primarily through the rise of deepfakes as well as music synthesis, text generation, human image synthesis, speech synthesis, and more. Though experts use the term "synthetic media," individual methods such as deepfakes and text synthesis are sometimes not referred to as such by the media but instead by their respective terminology (and often use "deepfakes" as a euphemism, e.g. "deepfakes for text" for natural-language generation; "deepfakes for voices" for neural voice cloning, etc.) Significant attention arose towards the field of synthetic media starting in 2017 when Motherboard reported on the emergence of AI altered pornographic videos to insert the faces of famous actresses. Potential hazards of synthetic media include the spread of misinformation, further loss of trust in institutions such as media and government, the mass automation of creative and journalistic jobs and a retreat into AI-generated fantasy worlds. Synthetic media is an applied form of artificial imagination.
+
+ History 
+
+Pre-1950s
+Maillardet's automaton drawing a picture.
+Synthetic media as a process of automated art dates back to the automata of ancient Greek civilization, where inventors such as Daedalus and Hero of Alexandria designed machines capable of writing text, generating sounds, and playing music. The tradition of automaton-based entertainment flourished throughout history, with mechanical beings' seemingly magical ability to mimic human creativity often drawing crowds throughout Europe, China, India, and so on. Other automated novelties such as Johann Philipp Kirnberger's "Musikalisches Würfelspiel" (Musical Dice Game) 1757 also amused audiences.Nierhaus, Gerhard (2009). Algorithmic Composition: Paradigms of Automated Music Generation, pp. 36 & 38n7. .
+
+Despite the technical capabilities of these machines, however, none were capable of generating original content and were entirely dependent upon their mechanical designs.
+
+Rise of artificial intelligence
+
+The field of AI research was born at a workshop at Dartmouth College in 1956,Dartmouth conference:
+ 
+ , who writes "the conference is generally recognized as the official birthdate of the new science."
+ , who call the conference "the birth of artificial intelligence."
+  begetting the rise of digital computing used as a medium of art as well as the rise of generative art. Initial experiments in AI-generated art included the Illiac Suite, a 1957 composition for string quartet which is generally agreed to be the first score composed by an electronic computer.Denis L. Baggi, "The Role of Computer Technology in Music and Musicology ", lim.dico.unimi.it (December 9, 1998). Lejaren Hiller, in collaboration with Leonard Issacson, programmed the ILLIAC I computer at the University of Illinois at Urbana–Champaign (where both composers were professors) to generate compositional material for his String Quartet No. 4.
+
+In 1960, Russian researcher R.Kh.Zaripov published worldwide first paper on algorithmic music composing using the "Ural-1" computer.
+
+In 1965, inventor Ray Kurzweil premiered a piano piece created by a computer that was capable of pattern recognition in various compositions. The computer was then able to analyze and use these patterns to create novel melodies. The computer was debuted on Steve Allen's I've Got a Secret program, and stumped the hosts until film star Harry Morgan guessed Ray's secret.
+
+Before 1989, artificial neural networks have been used to model certain aspects of creativity. Peter Todd (1989) first trained a neural network to reproduce musical melodies from a training set of musical pieces. Then he used a change algorithm to modify the network's input parameters.  The network was able to randomly generate new music in a highly uncontrolled manner.Todd, P.M., and Loy, D.G. (Eds.) (1991). Music and connectionism. Cambridge, MA: MIT Press.
+
+In 2014, Ian Goodfellow and his colleagues developed a new class of machine learning systems: generative adversarial networks (GAN). Two neural networks contest with each other in a game (in the sense of game theory, often but not always in the form of a zero-sum game). Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proven useful for semi-supervised learning, fully supervised learning, and reinforcement learning. In a 2016 seminar, Yann LeCun described GANs as "the coolest idea in machine learning in the last twenty years".
+
+In 2017, Google unveiled transformers, a new type of neural network architecture specialized for language modeling that enabled for rapid advancements in natural language processing. Transformers proved capable of high levels of generalization, allowing networks such as GPT-3 and Jukebox from OpenAI to synthesize text and music respectively at a level approaching humanlike ability. There have been some attempts to use GPT-3 and GPT-2 for screenplay writing, resulting in both dramatic (the Italian short film Frammenti di Anime Meccaniche, written by GPT-2) and comedic narratives (the short film Solicitors by YouTube Creator Calamity AI written by GPT-3).
+
+ Branches of synthetic media 
+
+Deepfakes
+
+Deepfakes (a portmanteau of "deep learning" and "fake") are the most prominent form of synthetic media. They are media that take a person in an existing image or video and replace them with someone else's likeness using artificial neural networks. They often combine and superimpose existing media onto source media using machine learning techniques known as autoencoders and generative adversarial networks (GANs). Deepfakes have garnered widespread attention for their uses in celebrity pornographic videos, revenge porn, fake news, hoaxes, and financial fraud. This has elicited responses from both industry and government to detect and limit their use.
+
+The term deepfakes originated around the end of 2017 from a Reddit user named "deepfakes". He, as well as others in the Reddit community r/deepfakes, shared deepfakes they created; many videos involved celebrities' faces swapped onto the bodies of actresses in pornographic videos, while non-pornographic content included many videos with actor Nicolas Cage's face swapped into various movies. In December 2017, Samantha Cole published an article about r/deepfakes in Vice that drew the first mainstream attention to deepfakes being shared in online communities. Six weeks later, Cole wrote in a follow-up article about the large increase in AI-assisted fake pornography. In February 2018, r/deepfakes was banned by Reddit for sharing involuntary pornography. Other websites have also banned the use of deepfakes for involuntary pornography, including the social media platform Twitter and the pornography site Pornhub. However, some websites have not yet banned Deepfake content, including 4chan and 8chan.
+
+Non-pornographic deepfake content continues to grow in popularity with videos from YouTube creators such as Ctrl Shift Face and Shamook. A mobile application, Impressions, was launched for iOS in March 2020. The app provides a platform for users to deepfake celebrity faces into videos in a matter of minutes.
+
+Image synthesis
+
+Image synthesis is the artificial production of visual media, especially through algorithmic means. In the emerging world of synthetic media, the work of digital-image creation—once the domain of highly skilled programmers and Hollywood special-effects artists—could be automated by expert systems capable of producing realism on a vast scale. One subfield of this includes human image synthesis, which is the use of neural networks to make believable and even photorealistic renditionsPhysics-based muscle model for mouth shape control  on IEEE Explore (requires membership)Realistic 3D facial animation in virtual space teleconferencing  on IEEE Explore (requires membership) of human-likenesses, moving or still. It has effectively existed since the early 2000s. Many films using computer generated imagery have featured synthetic images of human-like characters digitally composited onto the real or other simulated film material. Towards the end of the 2010s deep learning artificial intelligence has been applied to synthesize images and video that look like humans, without need for human assistance, once the training phase has been completed, whereas the old school 7D-route required massive amounts of human work. The website This Person Does Not Exist showcases fully automated human image synthesis by endlessly generating images that look like facial portraits of human faces.
+
+Audio synthesis
+
+Beyond deepfakes and image synthesis, audio is another area where AI is used to create synthetic media. Synthesized audio will be capable of generating any conceivable sound that can be achieved through audio waveform manipulation, which might conceivably be used to generate stock audio of sound effects or simulate audio of currently imaginary things.
+
+AI art
+
+Music generation
+
+The capacity to generate music through autonomous, non-programmable means has long been sought after since the days of Antiquity, and with developments in artificial intelligence, two particular domains have arisen:
+ The robotic creation of music, whether through machines playing instruments or sorting of virtual instrument notes (such as through MIDI files)
+ Directly generating waveforms that perfectly recreate instrumentation and human voice without the need for instruments, MIDI, or organizing premade notes.
+
+Speech synthesis
+
+Speech synthesis has been identified as a popular branch of synthetic media and is defined as the artificial production of human speech. A computer system used for this purpose is called a speech computer or speech synthesizer, and can be implemented in software or hardware products. A text-to-speech (TTS) system converts normal language text into speech; other systems render symbolic linguistic representations like phonetic transcriptions into speech.
+
+Synthesized speech can be created by concatenating pieces of recorded speech that are stored in a database. Systems differ in the size of the stored speech units; a system that stores phones or diphones provides the largest output range, but may lack clarity. For specific usage domains, the storage of entire words or sentences allows for high-quality output. Alternatively, a synthesizer can incorporate a model of the vocal tract and other human voice characteristics to create a completely "synthetic" voice output.
+
+Virtual assistants such as Siri and Alexa have the ability to turn text into audio and synthesize speech.
+
+In 2016, Google DeepMind unveiled WaveNet, a deep generative model of raw audio waveforms that could learn to understand which waveforms best resembled human speech as well as musical instrumentation. Some projects offer real-time generations of synthetic speech using deep learning, such as 15.ai, a web application text-to-speech tool developed by an MIT research scientist.
+
+Natural-language generation
+
+Natural-language generation (NLG, sometimes synonymous with text synthesis) is a software process that transforms structured data into natural language.  It can be used to produce long form content for organizations to automate custom reports, as well as produce custom content for a web or mobile application. It can also be used to generate short blurbs of text in interactive conversations (a chatbot) which might even be read out by a text-to-speech system. Interest in natural-language generation increased in 2019 after OpenAI unveiled GPT2, an AI system that generates text matching its input in subject and tone. GPT2 is a transformer, a deep machine learning model introduced in 2017 used primarily in the field of natural language processing (NLP).
+
+Interactive media synthesis
+
+AI-generated media can be used to develop a hybrid graphics system that could be used in video games, movies, and virtual reality, as well as text-based games such as AI Dungeon 2, which uses either GPT-2 or GPT-3 to allow for near-infinite possibilities that are otherwise impossible to create through traditional game development methods. Computer hardware company Nvidia has also worked on developed AI-generated video game demos, such as a model that can generate an interactive game based on non-interactive videos. Through procedural generation, synthetic media techniques may eventually be used to "help designers and developers create art assets, design levels, and even build entire games from the ground up."
+
+ Concerns and controversies 
+
+Deepfakes have been used to misrepresent well-known politicians in videos. In separate videos, the face of the Argentine President Mauricio Macri has been replaced by the face of Adolf Hitler, and Angela Merkel's face has been replaced with Donald Trump's.
+
+In June 2019, a downloadable Windows and Linux application called DeepNude was released which used neural networks, specifically generative adversarial networks, to remove clothing from images of women. The app had both a paid and unpaid version, the paid version costing $50. On June 27 the creators removed the application and refunded consumers.
+
+The US Congress held a senate meeting discussing the widespread impacts of synthetic media, including deepfakes, describing it as having the "potential to be used to undermine national security, erode 
+public trust in our democracy and other nefarious reasons."
+
+In 2019, voice cloning technology was used to successfully impersonate a chief executive's voice and demand a fraudulent transfer of €220,000. The case raised concerns about the lack of encryption methods over telephones as well as the unconditional trust often given to voice and to media in general.
+
+Starting in November 2019, multiple social media networks began banning synthetic media used for purposes of manipulation in the lead-up to the 2020 United States presidential election.
+
+ Potential uses and impacts 
+
+Synthetic media techniques involve generating, manipulating, and altering data to emulate creative processes on a much faster and more accurate scale. As a result, the potential uses are as wide as human creativity itself, ranging from revolutionizing the entertainment industry to accelerating the research and production of academia. The initial application has been to synchronize lip-movements to increase the engagement of normal dubbing that is growing fast with the rise of OTTs. News organizations have explored ways to use video synthesis and other synthetic media technologies to become more efficient and engaging. Potential future hazards include the use of a combination of different subfields to generate fake news, natural-language bot swarms generating trends and memes, false evidence being generated, and potentially addiction to personalized content and a retreat into AI-generated fantasy worlds within virtual reality.
+
+Advanced text-generating bots could potentially be used to manipulate social media platforms through tactics such as astroturfing.
+
+Deep reinforcement learning-based natural-language generators could potentially be used to create advanced chatbots that could imitate natural human speech.
+
+One use case for natural-language generation is to generate or assist with writing novels and short stories, while other potential developments are that of stylistic editors to emulate professional writers.
+
+Image synthesis tools may be able to streamline or even completely automate the creation of certain aspects of visual illustrations, such as animated cartoons, comic books, and political cartoons. Because the automation process takes away the need for teams of designers, artists, and others involved in the making of entertainment, costs could plunge to virtually nothing and allow for the creation of "bedroom multimedia franchises" where singular people can generate results indistinguishable from the highest budget productions for little more than the cost of running their computer. Character and scene creation tools will no longer be based on premade assets, thematic limitations, or personal skill but instead based on tweaking certain parameters and giving enough input.
+
+A combination of speech synthesis and deepfakes has been used to automatically redub an actor's speech into multiple languages without the need for reshoots or language classes. It also can be used by companies for employee onboarding, eLearning, explainer and how-to videos
+
+An increase in cyberattacks has also been feared due to methods of phishing, catfishing, and social hacking being more easily automated by new technological methods.
+
+Natural-language generation bots mixed with image synthesis networks may theoretically be used to clog search results, filling search engines with trillions of otherwise useless but legitimate-seeming blogs, websites, and marketing spam.
+
+There has been speculation about deepfakes being used for creating digital actors for future films. Digitally constructed/altered humans have already been used in films before, and deepfakes could contribute new developments in the near future. Amateur deepfake technology has already been used to insert faces into existing films, such as the insertion of Harrison Ford's young face onto Han Solo's face in Solo: A Star Wars Story, and techniques similar to those used by deepfakes were used for the acting of Princess Leia in Rogue One.
+
+GANs can be used to create photos of imaginary fashion models, with no need to hire a model, photographer, makeup artist, or pay for a studio and transportation. GANs can be used to create fashion advertising campaigns including more diverse groups of models, which may increase intent to buy among people resembling the models or family members. GANs can also be used to create portraits, landscapes and album covers. The ability for GANs to generate photorealistic human bodies presents a challenge to industries such as fashion modeling, which may be at heightened risk of being automated.
+
+In 2019, Dadabots unveiled an AI-generated stream of death metal which remains ongoing with no pauses.
+
+Musical artists and their respective brands may also conceivably be generated from scratch, including AI-generated music, videos, interviews, and promotional material. Conversely, existing music can be completely altered at will, such as changing lyrics, singers, instrumentation, and composition. In 2018, using a process by WaveNet for timbre musical transfer, researchers were able to shift entire genres from one to another. Through the use of artificial intelligence, old bands and artists may be "revived" to release new material without pause, which may even include "live" concerts and promotional images.
+
+Neural network-powered photo manipulation has the potential to abet the behaviors of totalitarian and absolutist regimes.  A sufficiently paranoid totalitarian government or community may engage in a total wipe-out of history using all manner of synthetic technologies, fabricating history and personalities as well as any evidence of their existence at all times. Even in otherwise rational and democratic societies, certain social and political groups may use synthetic to craft cultural, political, and scientific cocoons that greatly reduce or even altogether destroy the ability of the public to agree on basic objective facts. Conversely, the existence of synthetic media will be used to discredit factual news sources and scientific facts as "potentially fabricated."

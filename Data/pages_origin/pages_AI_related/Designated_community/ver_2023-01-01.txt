@@ -1,0 +1,19 @@
+In information and archival communities, a '''designated community''' is an identified group of potential consumers who should be able to understand a particular set of information. These consumers may consist of multiple communities, are designated by the archive, and may change over time.<ref>{{cite web |title=Reference Model for an Open Archival Information System (ISO 14721:2012) |url=http://public.ccsds.org/publications/archive/650x0m2.pdf}}</ref>
+
+Organizations determine their designated communities and establish standards and guidelines that create a mutually beneficial relationship. A designated community can be defined by its occupation, status, or geographic location.
+
+The term ''designated community'' is closely aligned with the concept of [[Open Archival Information System]] (OAIS).<ref>{{cite web |title=Meeting the challenges of digital preservation: The OAIS reference model |url=https://www.oclc.org/research/publications/library/2000/lavoie-oais.html |website=OCLC Research |accessdate=29 April 2019}}</ref> Each one gives the other a central purpose. The OAIS is a repository of information specified for its designated community. The designated community is the reason the OAIS maintains the information it collects.
+
+A designated community can change, grow, shrink, or otherwise change over time, depending on the purpose of the information being preserved. Sometimes, a designated community can start as one subset and evolve into a wholly different subset depending on how the information that was originally assigned is being used or misused.
+
+== Example  ==
+Canada's [[York University]] has a specific definition for its digital preservation designated communities. They categorize them as “primary” and “secondary” communities.<ref>{{cite web |url=https://digital.library.yorku.ca/documentation/digital-preservation-designated-community-definition |title=Designated Community Definition |website=York University |first=Nick |last=Ruest |date=12 October 2021 |access-date=25 March 2022}}</ref> This demonstrates their prioritization of the intent behind what is digitally preserved. With a primary community made up of the university's faculty, students, staff, and researchers, York University situates that community's digital preservation needs above others.
+
+==References==
+{{reflist}}
+
+[[Category:Archival science]]
+[[Category:Knowledge representation]]
+
+
+{{library-stub}}

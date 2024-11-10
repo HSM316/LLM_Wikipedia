@@ -1,0 +1,17 @@
+SQLf is a SQL extended with fuzzy set theory application for expressing flexible (fuzzy) queries to traditional (or ″Regular″) Relational Databases. Among the known extensions proposed to SQL, at the present time, this is the most complete, because it allows the use of diverse fuzzy elements in all the constructions of the language SQL.
+
+SQLf is the only known proposal of flexible query system allowing linguistic quantification over set of rows in queries, achieved through the extension of SQL nesting and partitioning structures with fuzzy quantifiers. It also allows the use of quantifiers to qualify the quantity of search criteria satisfied by single rows. Several mechanisms are proposed for query evaluation, the most important being the one based on the derivation principle. This consists in deriving classic queries that produce, given a threshold t, a t-cut of the result of the fuzzy query, so that the additional processing cost of using a fuzzy language is diminished.
+
+ Basic block 
+The fundamental querying structure of SQLf is the multi-relational block. The conception of this structure is based on the three basic operations of the relational algebra: projection, cartesian product and selection, and the application of fuzzy sets’ concepts. The result of a SQLf query is a fuzzy set of rows that is a fuzzy relation instead of a regular relation.
+A basic block in SQLf consists of a SELECT clause, a FROM clause and an optional WHERE clause. The semantic of this query structure is:
+ The SELECT clause corresponds to the projection. It specifies the relations’ attributes (or attribute expressions) that will be selected. The resulting table is a fuzzy set and it is given in decreasing ordered of satisfaction degree. 
+ The SELECT clause specifies also a calibration that is intended to restrict the set of rows retrieved. There are two kinds of calibrations: quantitative and qualitative. In quantitative calibration the user specifies the number of results to be retrieved, so that the query will retrieve the rows with highest membership degrees up to the number of required answers. In qualitative calibration the user specifies a minim level of satisfaction that must have any retrieved row.
+ The FROM clause corresponds to the Cartesian Product. The consult is made on the Cartesian Product of the relations that are specified in this clause. 
+ The WHERE clause corresponds to the selection. It specifies the condition for which the satisfaction degree will be calculated. Rows that do not satisfy at all the condition are rejected. This condition is a fuzzy predicate that may involve any attribute of the relations.
+
+The following is an example of a SELECT query that returns a list of hotels that are cheap. The query retrieves all rows from the Hotels table that satisfice the fuzzy predicate cheap defined by the fuzzy set μ=(, , 25, 30). The result is sorted in descending order by the membership degree of the query.
+
+SELECT name, address
+  FROM  Hotels
+  WHERE price = cheap;

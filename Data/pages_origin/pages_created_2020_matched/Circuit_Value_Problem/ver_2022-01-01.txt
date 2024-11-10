@@ -1,0 +1,18 @@
+[[File:Combinatorial Logic Example.svg|thumb|Boolean example circuit]]
+The '''Circuit Value Problem''' (or Circuit Evaluation Problem) is the computational problem of computing the output of a given [[Boolean circuit]] on a given input.
+
+The problem is complete for [[P (complexity)|P]] under uniform [[AC0|AC{{sup|0}}]] reductions. Note that, in terms of [[time complexity]], it can be solved in [[linear time]] simply by a [[topological sort]].
+
+The [[Boolean Formula Value Problem]] (or Boolean Formula Evaluation Problem) is the special case of the problem when the circuit is a tree. The Boolean Formula Value Problem is complete for [[NC (complexity)|NC{{sup|1}}]].<ref>{{cite web|last=Buss|first=Samuel R.|author-link=Samuel Buss|title=The Boolean formula value problem is in ALOGTIME|url=http://www.math.ucsd.edu/~sbuss/ResearchWeb/Boolean/|website=www.math.ucsd.edu|date=January 1987|accessdate=May 5, 2017}}</ref>
+
+The problem is closely related to the [[Boolean satisfiability problem|Boolean Satisfiability Problem]] which is complete for [[NP (complexity)|NP]] and its complement, the [[Tautology (logic)|Propositional Tautology Problem]], which is complete for [[co-NP]].
+
+==References==
+{{Reflist}}
+
+[[Category:Polynomial-time problems]]
+[[Category:Computational problems]]
+[[Category:Theoretical computer science]]
+
+
+{{compu-prog-stub}}

@@ -1,0 +1,37 @@
+'''Mongoose OS''' is an Internet of Things (IoT) Firmware Development Framework available under Apache License Version 2.0. It supports low power, connected microcontrollers such as: [[ESP32]], [[ESP8266]], TI CC3200, TI CC3220, [[STM32]] (STM32L4, STM32F4, STM32F7 series).<ref>{{Cite web|url=http://hackaday.com/2017/03/08/point-and-click-to-an-iot-button/|title=Point and Click to an IoT Button|last=By|website=Hackaday|access-date=2017-04-06}}</ref> Its purpose is to be a complete environment for prototyping, development and managing connected devices.
+
+It is designed to reduce the time and costs associated with IoT projects.<ref>{{Cite news|url=https://opensource.com/article/17/3/mongoose-os-iot-development|title=How to build an IoT project with Mongoose OS|work=Opensource.com|access-date=2017-04-06|language=en}}</ref>
+
+Mongoose OS fills a noticeable gap for embedded software developers: the gap between Arduino firmware suitable for prototyping and bare-metal microcontrollers' native SDKs.<ref>{{Cite web|url=https://www.thoughtworks.com/radar/platforms?blipid=1256|title=Mongoose OS {{!}} Technology Radar {{!}} ThoughtWorks|website=www.thoughtworks.com|language=en|access-date=2019-11-20}}</ref>
+
+It is developed by Cesanta Software Ltd., a company based in Dublin (Ireland) and [[#License|dual licensed]].
+
+{{Infobox software
+| name = Mongoose OS
+| developer = Cesanta Software Ltd.
+| licence = Dual License: Apache License Version 2.0 and Commercial License.
+| website = {{url|https://mongoose-os.com}}
+}}
+
+== Features ==
+* User friendly Over the Air (OTA) updating of embedded ICs.<ref>{{Cite news|url=http://www.embedded.com/design/prototyping-and-development/4443082/Updating-firmware-reliably|title=Updating firmware reliably|last=Ryabkov|first=Deomid|work=Embedded|access-date=2017-04-06|language=en}}</ref>
+* Secure connectivity and crypto support<ref>{{Cite web|url=http://www.cnx-software.com/2017/03/07/secure-iot-connectivity-with-nodemcu-esp8266-board-atecc508a-crypto-chip-mongoose-os-and-aws-iot/|title=Secure IoT Connectivity with NodeMCU ESP8266 Board, ATECC508A Crypto Chip, Mongoose OS, and AWS IoT|access-date=2017-04-06}}</ref>
+* Integrated [[Mongoose (web server)|Mongoose Web Server]]
+* Programming in either [[JavaScript]] (integrated [https://github.com/cesanta/mjs mJS engine]) or C.
+* Integration with private and public clouds: AWS IoT,<ref>{{Cite news|url=https://aws.amazon.com/blogs/apn/aws-iot-on-mongoose-os-part-1/|title=AWS IoT on Mongoose OS – Part 1 {{!}} Amazon Web Services|date=2017-04-13|work=Amazon Web Services|access-date=2018-11-14|language=en-US}}</ref> Microsoft Azure IoT,<ref>{{Cite web|url=https://azure.microsoft.com/en-us/blog/azure-iot-automatic-device-management-helps-deploying-firmware-updates-at-scale/|title=Azure IoT automatic device management helps deploying firmware updates at scale|website=azure.microsoft.com|language=en|access-date=2019-01-16}}</ref><ref>{{Cite web|url=https://channel9.msdn.com/Shows/Internet-of-Things-Show/Update-Mongoose-OS-with-Automatic-Device-Management-in-Azure-IoT-Hub|title=Update Mongoose OS with Automatic Device Management in Azure IoT Hub|website=Channel 9|language=en|access-date=2018-11-14}}</ref> Google IoT Core,<ref>{{Citation|last=Mongoose OS|title=Google I/O '17: Mongoose OS makes it easy connect microcontrollers to Google Cloud IoT Core|date=2017-05-19|url=https://www.youtube.com/watch?v=zV8bbpIxUt8|access-date=2018-11-14}}</ref> IBM Watson IoT,<ref>{{Cite web|url=https://www-356.ibm.com/partnerworld/gsd/solutiondetails.do?solution=55930&lc=en&stateCd=P&tab=1|title=IBM - Mongoose OS|website=www-356.ibm.com|access-date=2019-01-16}}</ref> Mosquitto, HiveMQ, etc.
+
+== License ==
+Mongoose OS is Open Source and dual-licensed:
+* Mongoose OS Community Edition - Apache License Version 2.0
+* Mongoose OS Enterprise Edition - Commercial License
+
+== References ==
+{{reflist}}
+
+== External links ==
+
+* {{Official website|https://mongoose-os.com/|name=}}
+
+[[Category:Embedded operating systems]]
+[[Category:Free software operating systems]]
+[[Category:Internet of things]]

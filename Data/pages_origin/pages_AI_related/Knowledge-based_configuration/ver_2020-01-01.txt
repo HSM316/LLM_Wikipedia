@@ -1,0 +1,124 @@
+'''Knowledge-based configuration''', or also referred to as '''product configuration''' or '''product customization''', is an activity of [[Personalization|customising]] a product to meet the needs of a particular customer. The product in question may consist of mechanical parts, services, and software. Knowledge-based configuration is a major application area for [[artificial intelligence]] (AI), and it is based on modelling of the configurations in a manner that allows the utilisation of AI techniques for searching for a valid configuration to meet the needs of a particular customer.<ref group="A" name="Stum97"/><ref group="A" name="Sabi98"/><ref group="A" name="Soin98"/><ref group="A" name="Felf01"/><ref group="A" name="Wang11"/><ref group="B" name="FHBT2014"/><ref group="B" name="HMR2008"/><ref group="B" name="FS2006"/>
+
+==Background==
+Knowledge-based configuration (of complex products and services) has a long history as an [[artificial intelligence]] application area, see, e.g.<ref group="B" name="FHBT2014"/><ref group="A" name="Stum97"/><ref group="A" name="a1"/><ref group="A" name="a2"/><ref group="A" name="a3"/><ref group="A" name="a4"/><ref group="A" name="a5"/><ref group="A" name="Mitt89"/> Informally, configuration can be defined as a "special case of design activity, where the artifact being configured is assembled from instances of a fixed set of well-defined component types which can be composed conforming to a set of constraints".<ref group="A" name="Sabi98"/> Such constraints<ref group="B" name="RBW2006"/> are representing technical restrictions, restrictions related to economic aspects, and conditions related to production processes. The result of a configuration process is a product configuration (concrete configuration), i.e., a list of instances and in some cases also connections between these instances. Examples of such configurations are computers to be delivered or financial service portfolio offers (e.g., a combination of loan and corresponding risk insurance).
+
+==Configuration systems==
+'''Configuration systems'''<ref group="B" name="FHBT2014"/><ref group="A" name="Stum97"/><ref group="A" name="Sabi98"/> or also referred to as '''configurators''' or '''mass customization toolkits''',<ref group="A" name="a11"/> are one of the most successfully applied [[Artificial Intelligence]] technologies. Examples are the automotive industry,<ref group="A" name="a4"/><ref group="B" name="HW2012"/> the telecommunication industry,<ref group="A" name="a2"/> the computer industry,<ref group="A" name="a1"/><ref group="A" name="a9"/> and power electric transformers.<ref group="A" name="a3"/> Starting with rule-based approaches such as R1/[[XCON]],<ref group="A" name="a1"/> model-based representations of knowledge (in contrast to rule-based representations) have been developed which strictly separate product domain knowledge from the problem solving one - examples thereof are the [[constraint satisfaction problem]], the [[Boolean satisfiability problem]], and different [[answer set programming]] (ASP) representations. There are two commonly cited conceptualizations of configuration knowledge.<ref group="A" name="Soin98"/><ref group="A" name="Felf01"/> The most important concepts in these are components, ports, resources and functions.  This separation of product domain knowledge and problem solving knowledge increased the effectiveness of configuration application development and maintenance,<ref group="A" name="a2"/><ref group="A" name="a4"/><ref group="A" name="a5"/><ref group="A" name="a10"/> since changes in the product domain knowledge do not affect search strategies and vice versa.
+
+Configurators are also often considered as "[[open innovation]] toolkits", i.e., tools which support customers in the product identification phase.<ref group="A" name="a12a1"/> In this context customers are innovators who articulate their requirements leading to new innovative products.<ref group="A" name="a12a1"/><ref group="A" name="a14"/><ref group="A" name="a26"/>  "Mass Confusion" <ref group="A" name="a15"/> – the overwhelming of customers by a large number of possible solution alternatives (choices) – is a phenomenon which often comes with the application of configuration technologies. This phenomenon motivated the creation of personalized configuration environments taking into account a customer’s knowledge and preferences.<ref group="A" name="a13"/><ref group="A" name="a7"/>
+
+==Configuration process==
+Core configuration, i.e., guiding the user and checking the consistency of user requirements with the knowledge base, solution presentation and translation of configuration results into [[bill of materials]] (BOM) are major tasks to be supported by a configurator.<ref group="A" name="a12a"/><ref group="B" name="BMU2012"/><ref group="A" name="Wang11"/><ref group="A" name="a11"/><ref group="A" name="a16"/> Configuration knowledge bases are often built using proprietary languages.<ref group="A" name="a5"/><ref group="A" name="a13"/><ref group="A" name="a12"/>
+In most cases knowledge bases are developed by knowledge engineers who elicit product, marketing and sales knowledge from domain experts. Configuration knowledge bases are composed of a formal description of the structure of the product and further constraints restricting the possible feature and component combinations.
+
+Configurators known as [[Characteristic based product configurator|characteristic based product configurators]] use sets of discrete variables that are either binary or have one of several values, and these variables define every possible product variation.
+
+==Software and service configuration==
+Recently, knowledge based configuration has been extended to service and software configuration. Modeling software configuration has been based on two main approaches: feature modeling,<ref group="A" name="a20"/><ref group="B" name="a21"/> and component-connectors.<ref group="A" name="a22"/> Kumbang [[domain ontology]] combines the previous approaches building on the tradition of knowledge based configuration.<ref group="A" name="a23"/>
+
+==See also==
+*[[Characteristic based product configurator]]
+*[[Configurator]]
+*[[Configure Price Quote]]
+*[[Constraint satisfaction]]
+*[[Feature model]]
+*[[Mass customization]]
+*[[Open innovation]]
+*[[Product differentiation]]
+*[[Product family engineering]]
+*[[Software product line]]
+
+==References==
+===Conference and journal papers===
+{{reflist|group="A"|refs=
+<ref name="a7">L. Ardissono, A. Felfernig, G. Friedrich, D. Jannach, G. Petrone, R. Schaefer, and M. Zanker, A Framework for the development of personalized, distributed web-based configuration systems, AI Magazine, vol. 24, no. 3, pp. 93–108, 2003.</ref>
+
+<ref name="a23">T. Asikainen, T. Männistö, and T. Soininen, [http://lib.tkk.fi/Diss/2008/isbn9789512294855/article3.pdf Kumbang: A domain ontology for modelling variability in software product families], Advanced Engineering Informatics, 21(1): 23–40, 2007.</ref>
+
+<ref name="a1">V. Barker, D. O’Connor, J. Bachant, and E. Soloway, Expert systems for configuration at Digital: [[XCON]] and beyond, Communications of the ACM, vol. 32, no. 3, pp. 298–318, 1989.</ref>
+
+<ref name="a16">A. Felfernig, Standardized Configuration Knowledge Representations as Technological Foundation for Mass Customization, IEEE Transactions on Engineering Management, 54(1), pp. 41–56, 2007.</ref>
+
+<ref name="Felf01">A. Felfernig, G. Friedrich, and D. Jannach, Conceptual modeling for configuration of mass-customizable products, Artificial Intelligence in Engineering 15(2): 165–176, 2001</ref>
+
+<ref name="a2">G. Fleischanderl, G. Friedrich, A. Haselboeck, H. Schreiner, and M. Stumptner, Configuring Large Systems Using Generative Constraint Satisfaction, IEEE Intelligent Systems, vol. 13, no. 4, pp. 59–68, 1998.</ref>
+
+<ref name="a3">C. Forza and F. Salvador, Managing for variety in the order acquisition and fulfillment process: The contribution of product configuration systems, International Journal of Production Economics, no. 76, pp. 87–98, 2002.</ref>
+
+<ref name="a11">N. Franke and F. Piller, Configuration Toolkits for Mass Customization: Setting a Research Agenda, Working Paper No. 33 of the Dept. of General and Industrial Management, Technische Universitaet Muenchen, no. ISSN 0942-5098, 2002.</ref>
+
+<ref name="a12">A. Haag, Sales Configuration in Business Processes, IEEE Intelligent Systems, vol. 13, no. 4, pp. 78–85, 1998.</ref>
+
+<ref name="a12a">A. Haag, Product Configuration in SAP: A Retrospective, in Book: Knowledge-based Configuration - From Research to Business Cases, Elsevier/Morgan Kaufmann, pp. 319-337, 2014.</ref>
+
+<ref name="a12a1">E. von Hippel, User Toolkits for Innovation, Journal of Product Innovation Management, vol. 18, no. 4, pp. 247-257, 2001.</ref>
+
+<ref name="a15">C. Huffman and B. Kahn, Variety for Sale: Mass Customization or Mass Confusion, Journal of Retailing, no. 74, pp. 491–513, 1998.</ref>
+
+<ref name="a4">E. Juengst and M. Heinrich, Using Resource Balancing to Configure Modular Systems, IEEE Intelligent Systems, vol. 13, no. 4, pp. 50–58, 1998.</ref>
+
+<ref name="a13">U. Junker, Preference programming for configuration, in IJCAI’01 Workshop on Configuration, Seattle, WA, 2001.</ref>
+
+<ref name="a20">K. C. Kang, S. G. Cohen, J. A. Hess, W. E. Novak, and A. S. Peterson, Feature-oriented domain analysis (FODA) feasibility study, Technical Report CMU/SEI-90-TR-21 ESD-90-TR-222, Software Engineering Institute, Carnegie Mellon University, 1990</ref>
+
+<ref name="a5">D. Mailharro, A classification and constraint-based framework for configuration, Artificial Intelligence for Engineering, Design, Analysis and Manufacturing Journal, Special Issue: Configuration Design, vol. 12, no. 4, pp. 383–397, 1998.</ref>
+
+<ref name="a9">D. McGuiness and J. Wright, An Industrial Strength Description Logics-Based Configurator Platform, IEEE Intelligent Systems, vol. 13, no. 4, pp. 69–77, 1998.</ref>
+
+<ref name="a10">S. Mittal and B. Falkenhainer, Dynamic Constraint Satisfaction Problems, in National Conference on Artificial Intelligence (AAAI 90), Boston, MA, 1990, pp. 25–32.</ref>
+
+<ref name="Mitt89">S. Mittal and F. Frayman, Towards a Generic Model of Configuration Tasks, in 11th International Joint Conference on Artificial Intelligence, Detroit, MI, 1989, pp. 1395–1401.</ref>
+
+<ref name="a14">F. Piller and M. Tseng, The Customer Centric Enterprise, Advances in Mass Customization and Personalization. Springer Verlag, 2003, pp. 3–16.</ref>
+
+<ref name="Sabi98">D. Sabin and R. Weigel, Product Configuration Frameworks – A Survey, IEEE Intelligent Systems, vol. 13, no. 4, pp. 42–49, 1998.</ref>
+
+<ref name="Soin98">T. Soininen, J. Tiihonen, T. Männistö, and  R. Sulonen, Towards a General Ontology of Configuration. AI EDAM (Artificial Intelligence for Engineering Design, Analysis and Manufacturing),  12(4): 357–372, 1998</ref>
+
+<ref name="Stum97">M. Stumptner, An Overview of Knowledge-Based Configuration. AI Commun. 10(2): 111–125, 1997.</ref>
+
+<!--<ref name="a24">J. Tiihonen, T. Soininen, I. Niemelä, and R. Sulonen, A Practical Tool for Mass-Customising Configurable Products. In Proceedings of International Conference on Engineering Design (ICED 03), 2003.</ref>-->
+
+<ref name="a22">R. van Ommering, F. van der Linden, J. Kramer, and J. Magee, The Koala component model for consumer electronics software, IEEE Computer, 33(3): 72–85, 2000.</ref>
+
+<ref name="Wang11">Y. Wang, and M. Tseng, Adaptive Attribute Selection for Configurator Design via Shapley Value. Artificial Intelligence for Engineering Design, Analysis and Manufacturing, 25 (1): 189–199, 2011.</ref>
+
+<ref name="a26">Y. Wang, and M. Tseng, An Approach to Improve the Efficiency of Configurators. In Proceedings of IEEE International Conference on Industrial Engineering and Engineering Management, 2007.</ref>
+
+}}
+
+===Books===
+{{reflist|group="B"|refs=
+<ref name="BMU2012">U. Blumöhr, M. Münch, M. Ukalovic, Variant Configuration with SAP, Galileo Press, 2012.</ref>
+<ref name="a21">K. Czarnecki, U. W. Eisenecker, Generative Programming – Methods, Tools, and Applications, Addison Wesley, 2000.</ref>
+<ref name="FHBT2014">A. Felfernig, L. Hotz, C. Bagley, and J. Tiihonen, [http://www.configurationbook.org Knowledge-based Configuration: From Research to Business Cases], Elsevier/Morgan Kaufmann, 2014.</ref>
+<ref name="FS2006">C. Forza, F. Salvador, Product Information Management for Mass Customization, Palgrave Macmillan, 2006.</ref>
+<ref name="HMR2008">L. Hvam, N. Mortensen, J. Riis, Product Customization, Springer Verlag, 2008.</ref>
+<ref name="RBW2006">F. Rossi, P. Van Beek, T. Walsh, Handbook of Constraint Programming, Elsevier, 2006.</ref>
+<ref name="HW2012">{{cite book |author-first=Wilmjakob Johannes |author-last=Herlyn |title=PPS im Automobilbau – Produktionsprogrammplanung und -steuerung von Fahrzeugen und Aggregaten |publisher=Hanser Verlag |publication-place=München, Germany |ISBN=978-3-446-41370-2 |date=2012 |language=German}}</ref>
+}}
+
+==External links==
+* [https://www.eventhelpr.com/event/JmBq0ti5xxcJXF6H 20+ years of International Workshops on Configuration]
+
+===Research prototypes===
+* [http://www.hitec-hh.de/literatur/literatur.html 1991 PLAKON / Project TeX-K]
+* [http://www.aaai.org/Papers/Workshops/1999/WS-99-05/WS99-05-024.pdf 1999 Konwerk / Project Prokon]
+* [http://www.iospress.nl/book/configuration-in-industrial-product-families/  2002 ConIPF]
+* [http://www.soberit.hut.fi/pdmg/papers/Tiihonen_1290ICED03FPB.pdf 2003 WeCoTin]
+* [http://www.soberit.hut.fi/KumbangTools 2005 Kumbang tools]
+* [http://www.weevis.org 2014 WeeVis (Wiki-based learning environment for simple problems)]
+
+===Journal special issues on configuration===
+* [http://journals.cambridge.org/action/displayAbstract?fromPage=online&aid=38637 AIEDAM 1998 Special Issue on Configuration Design]
+* [http://www.computer.org/portal/web/intelligent/home IEEE Intelligent Systems Special Issue on Configuration 1998 (vol. 13, No. 4)]
+* [http://web.cs.wpi.edu/~aiedam/SpecialIssues AIEDAM 2003 Special Issue on Configuration]
+* [http://www.computer.org/portal/web/intelligent/home IEEE Intelligent Systems Special Issue on Configuration 2007]
+* [http://www.inderscience.com/browse/index.php?journalID=119&year=2006&vol=1&issue=4 Special Issue on Configuration in the International Journal of Mass Customization 2006]
+* [http://www.inderscience.com/browse/index.php?journalID=119&year=2010&vol=3&issue=4 International Journal of Mass Customization Special Issue on Configuration 'Advances in Configuration Systems' 2010 (vol 3, No: 4).]
+* [http://web.cs.wpi.edu/~aiedam/SpecialIssues AIEDAM 2011 Special Issue on Configuration]
+* [http://iospress.metapress.com/content/g22881xq55555618/ AI Communications 2013 Special Issue on Engineering techniques for knowledge bases]
+
+[[Category:Artificial intelligence]]
+[[Category:Innovation]]

@@ -1,0 +1,108 @@
+{{short description|Software program}}
+{{Confused|Google Daydream}}
+{{For|the Richard James Simpson album|Deep Dream (album)}}
+[[File:"Mona Lisa" with DeepDream effect using VGG16 network trained on ImageNet.jpg|thumb|The ''[[Mona Lisa]]'' with DeepDream effect using VGG16 network trained on ImageNet]]
+{{Machine learning|Artificial neural network}}
+'''DeepDream''' is a [[computer vision]] program created by [[Google]] engineer Alexander Mordvintsev that uses a [[convolutional neural network]] to find and enhance patterns in [[image]]s via [[algorithm]]ic [[pareidolia]], thus creating a [[dream]]-like appearance reminiscent of a [[psychedelic experience]] in the deliberately overprocessed images.<ref name=codexample/><ref name=goingdeeper/><ref name=arxiv/>
+
+Google's program popularized the term (deep) "dreaming" to refer to the generation of images that produce desired [[activation (neural network)|activation]]s in a trained [[deep neural network|deep network]], and the term now refers to a collection of related approaches.
+
+==History==
+The DeepDream software, originated in a deep [[convolutional neural network|convolutional network]] codenamed "Inception" after the [[Inception|film of the same name]],<ref name=codexample>{{cite web|first1=Alexander |last1=Mordvintsev|first2=Christopher |last2=Olah|first3=Mike|last3=Tyka|year=2015|archive-url=https://web.archive.org/web/20150708233542/http://googleresearch.blogspot.co.uk/2015/07/deepdream-code-example-for-visualizing.html|archive-date=2015-07-08|url=http://googleresearch.blogspot.co.uk/2015/07/deepdream-code-example-for-visualizing.html|title=DeepDream - a code example for visualizing Neural Networks|publisher=Google Research}}</ref><ref name="goingdeeper">{{cite web|archive-url=https://web.archive.org/web/20150703064823/http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html|archive-date=2015-07-03|url=http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html|title=Inceptionism: Going Deeper into Neural Networks|publisher=Google Research|first1=Alexander |last1=Mordvintsev|first2=Christopher |last2=Olah|first3=Mike|last3=Tyka|year=2015}}</ref><ref name=arxiv>{{cite conference
+ | last1 = Szegedy | first1 = Christian
+ | last2 = Liu | first2 = Wei
+ | last3 = Jia | first3 = Yangqing
+ | last4 = Sermanet | first4 = Pierre
+ | last5 = Reed | first5 = Scott E.
+ | last6 = Anguelov | first6 = Dragomir
+ | last7 = Erhan | first7 = Dumitru
+ | last8 = Vanhoucke | first8 = Vincent
+ | last9 = Rabinovich | first9 = Andrew
+ | arxiv = 1409.4842
+ | contribution = Going deeper with convolutions
+ | doi = 10.1109/CVPR.2015.7298594
+ | pages = 1–9
+ | publisher = IEEE Computer Society
+ | title = IEEE Conference on Computer Vision and Pattern Recognition, CVPR 2015, Boston, MA, USA, June 7–12, 2015
+ | year = 2015}}</ref> was developed for the [[ImageNet Large Scale Visual Recognition Challenge|ImageNet Large-Scale Visual Recognition Challenge]] (ILSVRC) in 2014<ref name=arxiv/> and released in July 2015.
+
+The dreaming idea and name became popular on the internet in 2015 thanks to Google's DeepDream program.  The idea dates from early in the history of neural networks,<ref name=lewis88>{{cite conference |last=Lewis |first=J.P. |title=IEEE International Conference on Neural Networks |chapter=Creation by refinement: a creativity paradigm for gradient descent learning networks |conference=IEEE International Conference on Neural Networks|year=1988|pages=229-233 vol.2 |doi=10.1109/ICNN.1988.23933 |isbn=0-7803-0999-5 }}</ref> and similar methods have been used to synthesize visual textures.<ref name=portilla00>{{cite journal |last1=Portilla |first1=J |last2=Simoncelli |first2=Eero |title=A parametric texture model based on joint statistics of complex wavelet coefficients |journal=International Journal of Computer Vision |volume=40 |pages=49–70 |year=2000|doi=10.1023/A:1026553619983 |s2cid=2475577 }}</ref>
+Related visualization ideas were developed (prior to Google's work) by several research groups.<ref name=erhan09>{{cite conference |last=Erhan |first=Dumitru. |s2cid=15127402 |title=Visualizing Higher-Layer Features of a Deep Network |conference=International Conference on Machine Learning Workshop on Learning Feature Hierarchies|year=2009}}</ref><ref name=simonyan14>{{cite conference |last1=Simonyan |first1=Karen |last2=Vedaldi |first2=Andrea |last3=Zisserman |first3=Andrew |title=Deep Inside Convolutional Networks: Visualising Image Classification Models and Saliency Maps |conference=[[International Conference on Learning Representations]] Workshop |year=2014 |arxiv=1312.6034 }}</ref>
+
+After Google published their techniques and made their code [[open source|open-source]],<ref name=github>{{GitHub|google/deepdream}}</ref> a number of tools in the form of web services, mobile applications, and desktop software appeared on the market to enable users to transform their own photos.<ref>{{cite magazine |url= https://www.wired.co.uk/news/archive/2015-07/03/google-deep-dream |title= These Google "Deep Dream" Images Are Weirdly Mesmerising |magazine= Wired |author= Daniel Culpan |date= 2015-07-03 |access-date=2015-07-25}}</ref>
+
+==Process==
+{{multiple image
+| direction         = vertical
+| width             = 200
+| image1            = Aurelia-aurita-3 (cropped).jpg
+| alt1              = An image of jellyfish on a blue background
+| image2            = Aurelia-aurita-3-0009.jpg
+| alt2              = An image of jellyfish processed with DeepDream after ten iterations
+| image3            = Aurelia-aurita-3-0049.jpg
+| alt3              = An image of jellyfish processed with DeepDream after fifty iterations
+| footer            = The original image (top) after applying ten (middle) and fifty (bottom) iterations of DeepDream, the network having been trained to perceive dogs and then run backwards
+}}
+The software is designed to [[face detection|detect faces]] and other patterns in images, with the aim of automatically classifying images.<ref>{{cite web |url= https://www.theverge.com/2015/7/7/8904641/fear-and-loathing-clip-google-deep-dream-visualization |title= Fear and Loathing in Las Vegas is terrifying through the eyes of a computer |date= 7 July 2015 |access-date= 2015-07-25 |author= Rich McCormick |work= The Verge}}</ref> However, once trained, the network can also be run in reverse, being asked to adjust the original image slightly so that a given output neuron (e.g. the one for faces or certain animals) yields a higher confidence score. This can be used for visualizations to understand the emergent structure of the neural network better, and is the basis for the DeepDream concept. This reversal procedure is never perfectly clear and unambiguous because it utilizes a [[One-to-many (data model)|one-to-many]] mapping process.<ref>{{Cite journal|last=Hayes|first=Brian|date=2015|title=Computer Vision and Computer Hallucinations|journal=American Scientist|volume=103|issue=6|pages=380|doi=10.1511/2015.117.380|issn=0003-0996|doi-access=free}}</ref> However, after enough reiterations, even imagery initially devoid of the sought features will be adjusted enough that a form of [[pareidolia]] results, by which [[Psychedelic art|psychedelic]] and [[Surrealism|surreal]] images are generated algorithmically. The optimization resembles [[backpropagation]]; however, instead of adjusting the network weights, the weights are held fixed and the input is adjusted.
+
+For example, an existing image can be altered so that it is "more cat-like", and the resulting enhanced image can be again input to the procedure.<ref name="goingdeeper"/> This usage resembles the activity of looking for animals or other patterns in clouds.
+
+Applying gradient descent independently to each pixel of the input produces images in which
+adjacent pixels have little relation and thus the image has too much high frequency information.
+The generated images can be greatly improved by including a prior or [[regularization (mathematics)|regularizer]] that prefers inputs
+that have natural image statistics (without a preference for any particular image), or are simply smooth.<ref name="simonyan14"/><ref name=mahendran>{{cite conference |last1=Mahendran |first1=Aravindh |last2=Vedaldi |first2=Andrea |title=2015 IEEE Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=Understanding Deep Image Representations by Inverting Them |conference=IEEE Conference on Computer Vision and Pattern Recognition |year=2015 |pages=5188–5196 |doi=10.1109/CVPR.2015.7299155 |arxiv=1412.0035 |isbn=978-1-4673-6964-0 }}</ref><ref name=yosinski15>{{cite conference |last1=Yosinski |first1=Jason |last2=Clune |first2=Jeff |last3=Nguyen |first3=Anh |last4=Fuchs |first4=Thomas |title=Understanding Neural Networks Through Deep Visualization |conference=Deep Learning Workshop, International Conference on Machine Learning (ICML) Deep Learning Workshop |year=2015 |arxiv=1506.06579 }}</ref>
+For example, Mahendran et al.<ref name=mahendran/> used the total variation regularizer that prefers images that are piecewise constant. Various regularizers are discussed further in Yosinski et al.<ref name=yosinski15/> An in-depth, visual exploration of feature visualization and regularization techniques was published more recently.<ref>{{Cite journal|last1=Olah|first1=Chris|last2=Mordvintsev|first2=Alexander|last3=Schubert|first3=Ludwig|date=2017-11-07|title=Feature Visualization|journal=Distill|language=en-US|volume=2|issue=11|doi=10.23915/distill.00007|issn=2476-0757|doi-access=free}}</ref>
+
+The cited resemblance of the imagery to [[LSD]]- and [[psilocybin]]-induced hallucinations is suggestive of a functional resemblance between artificial neural networks and particular layers of the visual cortex.<ref>{{cite web|last1=LaFrance|first1=Adrienne|title=When Robots Hallucinate|url=https://www.theatlantic.com/technology/archive/2015/09/robots-hallucinate-dream/403498/|publisher=The Atlantic|access-date=24 September 2015|date=2015-09-03}}</ref>
+
+Neural networks such as DeepDream have biological analogies providing insight into brain processing and the formation of consciousness. Hallucinogens such as DMT alter the function of the serotonergic system which is present within the layers of the visual cortex. Neural networks are trained on input vectors and are altered by internal variations during the training process. The input and internal modifications represent the processing of exogenous and endogenous signals respectively in the visual cortex. As internal variations are modified in deep neural networks the output image reflect these changes. This specific manipulation demonstrates how inner brain mechanisms are analogous to internal layers of neural networks. Internal noise level modifications represent how hallucinogens omit external sensory information leading internal preconceived conceptions to strongly influence visual perception.<ref>{{cite journal|last1=Timmermann|first1=Christopher|title=Neural Network Models for DMT-induced Visual Hallucinations|journal=Neuroscience of Consciousness |publisher=NIH|date=2020-12-12|volume=2020 |issue=1 |pages=niaa024 |doi=10.1093/nc/niaa024 |pmid=33343929 |pmc=7734438 }}</ref>
+
+==Usage==
+[[File:Deep Dreamscope (19822170718).jpg|thumb|left|A heavily DeepDream-processed photograph of three men in a pool]]
+The dreaming idea can be applied to hidden (internal) neurons other than those in the output, 
+which allows exploration of the roles and representations of various parts of the network.<ref name=yosinski15/>
+It is also possible to optimize the input to satisfy either a single neuron (this usage is sometimes called Activity Maximization)<ref name=nguyen16>{{cite conference |last1=Nguyen |first1=Anh |last2=Dosovitskiy |first2=Alexey |last3=Yosinski |first3=Jason |last4=Brox |first4=Thomas |title=Synthesizing the preferred inputs for neurons in neural networks via deep generator networks |conference=arxiv |arxiv=1605.09304 |year=2016 |bibcode=2016arXiv160509304N }}</ref> or an entire layer of neurons.
+
+While dreaming is most often used for visualizing networks or producing computer art, it has recently been proposed that adding "dreamed" inputs to the training set can improve training times for abstractions in Computer Science.<ref>{{cite conference |last1=Arora |first1=Sanjeev |last2=Liang |first2=Yingyu |last3=Tengyu |first3=Ma |title=Why are deep nets reversible: A simple theory, with implications for training |conference=arxiv |arxiv=1511.05653 |year=2016 |bibcode=2015arXiv151105653A }}</ref>
+
+The DeepDream model has also been demonstrated to have application in the field of [[art history]].<ref>{{Cite journal|last=Spratt|first=Emily L.|date=2017|title=Dream Formulations and Deep Neural Networks: Humanistic Themes in the Iconology of the Machine-Learned Image|url=https://edoc.hu-berlin.de/bitstream/handle/18452/19403/Spratt%20-%20final.pdf|journal=Kunsttexte|publisher=Humboldt-Universität zu Berlin|volume=4|bibcode=2018arXiv180201274S|arxiv=1802.01274}}</ref>
+
+DeepDream was used for [[Foster the People]]'s music video for the song "[[Doing It for the Money]]".<ref>{{Citation|last=fosterthepeopleVEVO|title=Foster The People - Doing It for the Money|date=2017-08-11|url=https://www.youtube.com/watch?v=dJ1VorN9Cl0|access-date=2017-08-15}}</ref>
+
+In 2017, a research group out of the University of Sussex created a ''Hallucination Machine'', applying the DeepDream algorithm to a pre-recorded panoramic video, allowing users to explore virtual reality environments to mimic the experience of psychoactive substances and/or psychopathological conditions.<ref>{{cite journal |last1=Suzuki |first1=Keisuke |title=A Deep-Dream Virtual Reality Platform for Studying Altered Perceptual Phenomenology |journal=Sci Rep |volume=7 |issue=1 |pages=15982 |date=22 November 2017 |pmid=29167538 |pmc=5700081 |doi=10.1038/s41598-017-16316-2 |bibcode=2017NatSR...715982S }}</ref>  They were able to demonstrate that the subjective experiences induced by the Hallucination Machine differed significantly from control (non-‘hallucinogenic’) videos, while bearing phenomenological similarities to the psychedelic state (following administration of psilocybin).
+
+In 2021, a study published in the journal [[Entropy (journal)|''Entropy'']] demonstrated the similarity between DeepDream and actual psychedelic experience with [[Neuroscience|neuroscientific]] evidence.<ref name=":0">{{Cite journal |last1=Greco |first1=Antonino |last2=Gallitto |first2=Giuseppe |last3=D’Alessandro |first3=Marco |last4=Rastelli |first4=Clara |date=July 2021 |title=Increased Entropic Brain Dynamics during DeepDream-Induced Altered Perceptual Phenomenology |journal=Entropy |language=en |volume=23 |issue=7 |pages=839 |doi=10.3390/e23070839 |pmid=34208923 |pmc=8306862 |bibcode=2021Entrp..23..839G |issn=1099-4300|doi-access=free }}</ref> The authors recorded Electroencephalography ([[Electroencephalography|EEG]]) of human participants during passive vision of a movie clip and its DeepDream-generated counterpart. They found that DeepDream video triggered a higher [[Entropy (information theory)|entropy]] in the EEG signal and a higher level of [[functional connectivity]] between brain areas,<ref name=":0" /> both well-known [[biomarker]]s of actual psychedelic experience.<ref>{{Cite journal |last1=Carhart-Harris |first1=Robin|author1-link=Robin Carhart-Harris|last2=Leech |first2=Robert |last3=Hellyer |first3=Peter |last4=Shanahan |first4=Murray |last5=Feilding |first5=Amanda |last6=Tagliazucchi |first6=Enzo |last7=Chialvo |first7=Dante |last8=Nutt |first8=David |date=2014 |title=The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs |journal=Frontiers in Human Neuroscience |volume=8 |page=20 |doi=10.3389/fnhum.2014.00020 |issn=1662-5161 |pmc=3909994 |pmid=24550805|doi-access=free }}</ref>
+
+In 2022, a research group coordinated by the University of Trento "measure[d] participants’ cognitive flexibility and creativity after the exposure to virtual reality panoramic videos and their hallucinatory-like counterparts generated by the DeepDream algorithm ... following the simulated psychedelic exposure, individuals exhibited ... an attenuated contribution of the automatic process and chaotic dynamics underlying their decision processes, presumably due to a reorganization in the cognitive dynamics that facilitates the exploration of uncommon decision strategies and inhibits automated choices."<ref>{{cite journal |last1=Rastelli |first1=Clara |last2=Greco |first2=Antonino |last3= Kennett |first3=Yoed |last4= Finocchiaro |first4= Chiara |last5= De Pisapia |first5= Nicola| title=Simulated visual hallucinations in virtual reality enhance cognitive flexibility|journal=Sci Rep |date=7 March 2022 |volume=12 |issue=1 |page=4027 |doi=10.1038/s41598-022-08047-w|pmid=35256740 |pmc=8901713 |bibcode=2022NatSR..12.4027R }}</ref>
+
+== See also ==
+{{Portal|Art}}
+*[[Artificial imagination]]
+*[[DALL-E]]
+*[[Feature detection (computer vision)]]
+*[[Hallucination (artificial intelligence)]]
+*[[Neural style transfer]]
+*[[Procedural textures]]
+*[[Psychedelic art]]
+*[[Texture synthesis]]
+
+==References==
+{{reflist|35em}}
+
+==External links==
+{{commons category|Deep Dream images}}
+{{external media|video1=[https://www.youtube.com/watch?v=BsSmBPmPeYQ Deep Dream (Google) - Computerphile] by [[Michael Pound]]}}
+* {{github|google/deepdream|Deep Dream, python notebook}}
+* {{cite web|url= https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html |title= Inceptionism: Going Deeper into Neural Networks |date= June 17, 2015 |first1= Alexander |last1= Mordvintsev |first2= Christopher |last2= Olah |first3= Mike |last3= Tyka |url-status= live |archive-url= https://web.archive.org/web/20150703064823/http://googleresearch.blogspot.co.uk/2015/06/inceptionism-going-deeper-into-neural.html |archive-date= 2015-07-03 }}
+
+
+[[Category:2015 software]]
+[[Category:Algorithmic art]]
+[[Category:Deep learning software applications]]
+[[Category:Computer art]]
+[[Category:Computer vision software]]
+[[Category:Free and open-source software]]
+[[Category:Google software]]
+[[Category:Object recognition and categorization]]
+[[Category:Psychedelic art]]
+[[Category:Pareidolia]]

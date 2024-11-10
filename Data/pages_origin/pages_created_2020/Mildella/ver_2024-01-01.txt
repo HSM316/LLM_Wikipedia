@@ -1,0 +1,40 @@
+{{Short description|Genus of ferns}}
+{{Automatic taxobox
+|image = Mildella fallax.jpg
+|image_caption = ''[[Mildella fallax]]''
+|taxon = Mildella
+|authority = Trevis.<ref name=PPGI/>
+|subdivision_ranks = Species
+|subdivision = [[#Species|See text]].
+}}
+
+'''''Mildella''''' is a genus of [[fern]]s in the subfamily [[Cheilanthoideae]] of the family [[Pteridaceae]].<ref name=PPGI/> Species are native to Mexico, Central America and the Caribbean.<ref name=CFLW/>
+
+==Species==
+The [[Pteridophyte Phylogeny Group]] classification of 2016 (PPG I) placed seven species in the genus, although recognizing that the genus was then not [[Monophyly|monophyletic]], since the [[New World|New]] and [[Old World]] species belonged in different [[clade]]s.<ref name=PPGI/> {{As of|2019|December}}, the ''Checklist of Ferns and Lycophytes of the World'' placed only two New World species in the genus:<ref name=CFLW/>
+*''[[Mildella fallax]]'' <small>(M.Martens & Galeotti) G.L.Nesom</small>
+*''[[Mildella intramarginalis]]'' <small>(Kaulf. ex Link) Trevis.</small>
+
+The ''Checklist of Ferns and Lycophytes of the World'' placed former ''Mildella'' species in the genus ''[[Oeosporangium]]'':
+*''Mildella henryi'' <small>(Christ) C.C.Hall & Lellinger</small> = ''[[Oeosporangium nitidulum]]''
+*''Mildella mairei'' <small>(Brause) C.C.Hall & Lellinger</small> = ''[[Oeosporangium mairei]]''
+*''Mildella nitidula'' <small>(Wall. ex Hook.) C.C. Hall & Lellinger</small> = ''[[Oeosporangium nitidulum]]''
+*''Mildella paupercula'' <small>(Christ) C.C.Hall & Lellinger</small> = ''[[Oeosporangium pauperculum]]''
+*''Mildella smithii'' <small>(C.Chr.) C.C.Hall & Lellinger</small> = ''[[Oeosporangium smithii]]''
+*''Mildella straminea'' <small>(Ching) C.C.Hall & Lellinger</small> = ''[[Oeosporangium stramineum]]''
+
+==References==
+{{Reflist|refs=
+<ref name=CFLW>{{Citation |last1=Hassler |first1=Michael |last2=Schmitt |first2=Bernd |date=November 2019 |contribution=Mildella |title=Checklist of Ferns and Lycophytes of the World |at=8.11 |url=https://worldplants.webarchiv.kit.edu/ferns/ |accessdate=2019-12-31 |name-list-style=amp }}</ref>
+
+<ref name=PPGI>{{Citation |author=PPG I |year=2016 |title=A community-derived classification for extant lycophytes and ferns |journal=Journal of Systematics and Evolution |volume=54 |issue=6 |pages=563–603 |doi=10.1111/jse.12229|s2cid=39980610 |doi-access=free }}</ref>
+}}
+
+{{Taxonbar|from=Q6016320}}
+
+[[Category:Pteridaceae]]
+[[Category:Fern genera]]
+[[Category:Taxa named by Vittore Benedetto Antonio Trevisan de Saint-Léon]]
+
+
+{{Pteridaceae-stub}}

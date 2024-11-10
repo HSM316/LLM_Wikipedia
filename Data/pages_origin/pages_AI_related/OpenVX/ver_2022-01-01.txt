@@ -1,0 +1,57 @@
+{{Infobox software
+| name = OpenVX
+| logo = OpenVX logo.svg
+| logo size = 200px
+| author = 
+| developer = [[Khronos Group]]
+| latest_release_version = 1.3
+| latest_release_date = {{Start date and age|2019|10|22}}
+| programming_language = [[C (programming language)|C]]
+| operating_system = [[Cross-platform]]
+| platform = [[Cross-platform]]
+| genre = [[Application programming interface|API]]
+| license = 
+| website = {{URL|https://www.khronos.org/openvx/}}
+}}
+'''OpenVX''' is an open, royalty-free standard for cross platform acceleration of [[computer vision]] applications. It is designed by the [[Khronos Group]] to facilitate portable, optimized and power-efficient processing of methods for vision algorithms. This is aimed for [[embedded system|embedded]] and [[real-time computing|real-time]] programs within computer vision and related scenarios. It uses a [[connected graph]] representation of operations.
+
+==Overview==
+OpenVX specifies a higher [[Abstraction layer|level of abstraction]] for programming computer vision use cases than compute frameworks such as [[OpenCL]]. The high level makes the programming easy and the underlying execution will be efficient on different computing architectures. This is done while having a consistent and portable vision acceleration API.
+
+OpenVX is based on a connected graph of vision nodes that can execute the preferred chain of operations. It uses an opaque memory model, allowing to move image data between the host ([[Central processing unit|CPU]]) memory and accelerator, such as [[Graphics processing unit|GPU]] memory. As a result, the OpenVX implementation can optimize the execution through various techniques, such as acceleration on various [[Central processing unit|processing unit]]s or [[ASIC|dedicated hardware]]. This architecture facilitates applications programmed in OpenVX on different systems with different power and performance, including battery-sensitive, vision-enabled, [[Wearable Display|wearable display]]s.<ref>{{Cite book|url = https://www.amazon.com/OpenVX-Programming-Guide-Frank-Brill/dp/0128164255|last1 = Brill|first1 = Frank|last2 = Erukhimov|first2 = Victor|last3 = Giduthuru|first3 = Radha|last4 = Ramm|first4 = Stephen|title = OpenVX Programming Guide|publisher = Elsevier|date=2020}}</ref>
+
+OpenVX is complementary to the open source vision library [[OpenCV]]. OpenVX in some applications offers a better optimized graph management than OpenCV.
+
+==History==
+* OpenVX 1.0 specification was released in October 2014. 
+* OpenVX sample implementation was released in December 2014.
+* OpenVX 1.1 specification was released on May 2, 2016.
+* OpenVX 1.2 was released on May 1, 2017.<ref>{{Cite web|url=https://www.khronos.org/news/press/openvx-1.2-specification-cross-platform-acceleration-power-efficient-vision|title = Khronos Releases OpenVX 1.2 Specification for Cross-Platform Acceleration of Power-Efficient Vision|date = May 2017}}</ref>
+* Updated OpenVX adopters program and OpenVX 1.2 conformance test suite was released on November 21, 2017.<ref>{{Cite news|url=https://www.khronos.org/news/press/khronos-releases-updated-openvx-adopters-program|title=Khronos Releases Updated OpenVX Adopters Program|date=2017-11-21|work=The Khronos Group|access-date=2017-12-06|language=en}}</ref>
+*OpenVX 1.2.1 was released on November 27, 2018.<ref>{{Cite web|url=https://www.khronos.org/registry/OpenVX/|title=Khronos OpenVX Registry - The Khronos Group Inc|website=www.khronos.org|access-date=2019-08-05}}</ref>
+*OpenVX 1.3 was released on October 22, 2019.<ref>{{Cite web|url=https://www.khronos.org/news/press/khronos-releases-openvx-1.3-open-standard-for-cross-platform-vision-and-machine-intelligence-acceleration|title = Khronos Releases OpenVX 1.3 Open Standard for Cross-Platform Vision and Machine Intelligence Acceleration|date = 22 October 2019}}</ref>
+
+== Implementations, frameworks and libraries ==
+
+* [https://gpuopen-professionalcompute-libraries.github.io/MIVisionX/ AMD MIVisionX] - for [[AMD]]'s [[Amd cpus|CPUs]] and [[AMD GPUs|GPUs]].
+* [https://ip.cadence.com/vision Cadence] - for [[Cadence Design Systems]]'s Tensilica Vision DSPs.
+* [https://globenewswire.com/news-release/2016/01/06/799884/0/en/PowerVR-GPUs-From-Imagination-Pass-OpenVX-Conformance-With-Khronos.html Imagination] - for [[Imagination Technologies]]'s PowerVR GPUs
+* [https://www.synopsys.com/dw/ipdir.php?ds=ev6x-vision-processors Synopsys] - for [[Synopsys]]' DesignWare EV Vision Processors
+* [https://www.ti.com/processors/automotive-processors/tdax-adas-socs/design-development.html Texas Instruments’ OpenVX (TIOVX)] - for [[Texas Instruments]]’ Jacinto™ ADAS SoCs.
+* [https://developer.nvidia.com/embedded/visionworks NVIDIA VisionWorks] - for [[CUDA|CUDA-capable]] [[Nvidia]] [[Nvidia gpus|GPUs]] and [[Tegra|SoCs]].
+* [https://software.intel.com/en-us/openvino-toolkit OpenVINO] - for [[Intel]]'s [[List of Intel microprocessors|CPUs]], [[List of Intel graphics processing units|GPUs]], [[Intel VPUs|VPUs]], and [[Intel FPGAs|FPGAs]].
+
+==References==
+{{reflist}}
+
+==External links==
+* {{Official website|https://www.khronos.org/openvx/|name=Official website for OpenVX}}
+* [https://www.khronos.org/registry/OpenVX/ OpenVX Specification Registry]
+* [https://github.com/KhronosGroup/OpenVX-sample-impl OpenVX Sample Implementation]
+* [https://github.com/KhronosGroup/openvx-samples OpenVX Sample Applications]
+* [https://github.com/rgiduthuri/openvx_tutorial OpenVX Tutorial Material]
+
+{{Khronos Group standards}}
+
+[[Category:Application programming interfaces]]
+[[Category:Cross-platform software]]

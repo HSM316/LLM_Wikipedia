@@ -1,0 +1,41 @@
+{{Notability|date=December 2019}}
+{{Infobox software
+| name = Kubeflow
+| logo = Kubeflow-logo.png
+| author = 
+| developer = [[Google]]
+| released = {{Start date and age|2018|03|28}}
+| latest release version = 1.1<ref>{{Citation|title=Kubeflow 1.1 improves ML Workflow Productivity, Isolation & Security, and GitOps|date=2020-07-31|url=https://blog.kubeflow.org/release/official/2020/07/31/kubeflow-1.1-blog-post.html|access-date=2020-08-16}}</ref>
+| latest release date = {{Start date and age| 2020|07|31}}
+| repo = {{URL|https://github.com/kubeflow/kubeflow}}
+| platform = [[Linux]], [[Windows]], [[MacOS]]
+| license = [[Apache License 2.0]]
+| website = {{URL|https://www.kubeflow.org}}
+}}
+
+'''Kubeflow''' is a [[Free software|free]] and [[open-source software|open-source]] machine learning platform designed to enable using machine learning pipelines to orchestrate complicated workflows running on [[Kubernetes]] (e.g. doing data processing then using [[TensorFlow]] or [[PyTorch]] to train a model, and deploying to [[TensorFlow Serving]]). Kubeflow was based on Google's internal method to deploy TensorFlow models called TensorFlow Extended.<ref>{{Cite web|url=https://www.kubeflow.org/docs/about/kubeflow/|title=Kubeflow|website=Kubeflow|language=en|access-date=2019-06-18}}</ref>
+
+== Kubeflow Overview ==
+Kubeflow is a free and open-sourced project designed to make running [[Machine learning|Machine Learning]] [[Workflow software|workflows]] on Kubernetes [[Computer cluster|clusters]] simpler and more coordinated. This is a [[Cloud native computing|Cloud-Native]] framework for employing Machine Learning in [[Docker (software)|containerized]] environments in Kubernetes. Kubeflow's integration with and extension of Kubernetes has become seamless and Kubeflow has been designed to run everywhere Kubernetes runs:<ref>{{Cite web|url=https://kubernetes.io/blog/2017/12/introducing-kubeflow-composable/|title=Introducing Kubeflow - A Composable, Portable, Scalable ML Stack Built for Kubernetes|website=kubernetes.io|language=en|access-date=2020-01-09}}</ref> [[On-premises software|on-prem]], [[Google Cloud Platform|GCP]], [[Amazon Web Services|AWS]], [[Azure DevOps Server|Azure]], etc.
+
+Kubeflow began as an internal Google project<ref>{{Cite web|url=https://www.kubeflow.org/docs/about/kubeflow/#history|title=Kubeflow|website=Kubeflow|language=en|access-date=2020-01-09}}</ref> as a simpler & easier way to run [[TensorFlow]] jobs on Kubernetes, based specifically on the TensorFlow Extended [[Pipeline (computing)|pipeline]]. Google open-source engineers David Aronchick, Jeremy Lewi and Vishnu Kannan co-founded the Kubeflow project and after its initial release at Kubecon <ref>{{Citation|title=Hot Dogs or Not - At Scale with Kubernetes [I] - Vish Kannan & David Aronchick, Google|url=https://www.youtube.com/watch?v=R3dVF5wWz-g|language=en|access-date=2019-12-20}}</ref> companies such as [[Google]], [[Arrikto]], [[Cisco]], [[IBM]], [[Red Hat]], [[CoreOS]] and [[CaiCloud]] began publicly contributing to the [[GitHub]] issue board.
+
+== What is Kubeflow? ==
+At its core, Kubeflow offers an end-to-end [[Machine learning stack|ML stack]] orchestration toolkit to build on Kubernetes as a way to deploy, scale and manage complex systems.<ref>https://www.slideshare.net/jwiegelmann/endtoend-machine-learning-stack</ref> Features such as running [[JupyterHub]] servers allowing multiple users to contribute to a project simultaneously has become an invaluable asset of Kubeflow. Detailed management of a project and in depth monitoring/analyzing of said project are paramount attributes in Kubeflow.
+
+[[Data science|Data scientists]] and [[Data engineering|engineers]] are now able to develop a complete pipeline composed of segmented steps. These segmented steps in Kubeflow are [[Loose coupling|loosely coupled]] components of an ML pipeline, a feature not core to other frameworks, allowing pipelines to become easily reusable and modifiable for other jobs. This added flexibility has the potential to save an incalculable amount of labor necessary to develop a new data pipeline for each specific use case. Through this process, Kubeflow aims to simplify Kubernetes deployments while also accounting for future needs of portability and scalability.
+
+== Kubeflow Roadmap ==
+Kubeflow 1.0 was announced to the public on February 26, 2020 via the Kubeflow blog post.<ref>https://medium.com/kubeflow/kubeflow-1-0-cloud-native-ml-for-everyone-a3950202751</ref> The 1.0 release is available through the public GitHub repository.<ref>https://github.com/kubeflow/kubeflow/releases/tag/v1.0</ref>  Specifically, Kubeflow 1.0 focused on stabilizing the following core Kubeflow components: Kubeflow's UI - the central dashboard, Jupyter notebook controller and web app, Tensorflow Operator (TFJob) and PyTorch Operator for distributed training, kfctl for deployment and upgrades, Profile Controller and UI for multiuser management.
+
+Kubeflow 1.1 was released on June 30, 2020 via the Kubeflow blog post. <ref>https://blog.kubeflow.org/release/official/2020/07/31/kubeflow-1.1-blog-post.html</ref> and is available through the public GitHub repository.<ref>https://github.com/kubeflow/kubeflow/releases/tag/v1.1.0</ref> The focus for the release was simplification of notebook automation with Fairing and Kale, MXNet and XGBoost distributed training operators, and multi-user pipelines.
+
+Kubeflow 1.2 was released on November 18, 2020 via the Kubeflow blog post.<ref>{{Cite web|date=2020-11-18|title=Kubeflow 1.2 release announcement|url=https://blog.kubeflow.org/release/official/2020/11/18/kubeflow-1.2-blog-post.html|access-date=2020-12-13|website=Kubeflow|language=en}}</ref> and is available through the public GitHub repository.<ref>{{Cite web|title=Release v1.2.0 · kubeflow/kubeflow|url=https://github.com/kubeflow/kubeflow/releases/tag/v1.2.0|access-date=2020-12-13|website=GitHub|language=en}}</ref>
+
+== References ==
+<references />
+
+==External links==
+* {{GitHub|kubeflow/kubeflow}}
+
+[[Category:Python (programming language) software]]

@@ -1,0 +1,12 @@
+{{short description|Technique for training recursive neural nets}}
+{{refimprove|date=May 2015}}
+
+'''Backpropagation through structure''' (BPTS) is a gradient-based technique for training [[Recursive neural network|recursive neural nets]] (a superset of [[Recurrent neural network|recurrent neural nets]]) and is extensively described in a 1996 paper written by Christoph Goller and Andreas Küchler.<ref>{{cite book|last1=Kuchler|first1=Andreas|title=Proceedings of International Conference on Neural Networks (ICNN'96)|s2cid=6536466|chapter=Learning Task-Dependent Distributed Representations by Backpropagation Through Structure|citeseerx = 10.1.1.49.1968|year=1996|volume=1|pages=347–352|doi=10.1109/ICNN.1996.548916|isbn=0-7803-3210-5}}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Artificial neural networks]]
+
+
+{{compu-ai-stub}}

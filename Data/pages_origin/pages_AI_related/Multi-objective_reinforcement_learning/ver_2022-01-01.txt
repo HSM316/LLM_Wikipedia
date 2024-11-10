@@ -1,0 +1,10 @@
+{{orphan|date=December 2019}}
+
+'''Multi-objective reinforcement learning''' (MORL) is a form of [[reinforcement learning]] concerned with conflicting alternatives. It is distinct from [[multi-objective optimization]] in that it is concerned with agents acting in environments.<ref>{{cite book |title=Multiple Attribute Decision Making: Methods and Applications |edition=1st |first=Gwo-Hshiung |last=Tzeng |first2=Jih-Jeng |last2=Huang |date=2011 |isbn=9781439861578}}</ref>
+
+==References==
+{{reflist}}
+
+{{Compu-AI-stub}}
+
+[[Category:Reinforcement learning]]

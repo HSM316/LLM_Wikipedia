@@ -1,0 +1,47 @@
+Oculus Rift CV1, also known simply as Oculus Rift, is a virtual reality headset created by Oculus VR, a division of Facebook Inc. It was announced on January 2016, and released in March the same year. The device constituted the first commercial release in the Oculus Rift lineup. In March 2019, the device's production was discontinued, being replaced by the Oculus Rift S. However, Oculus VR has stated that they will continue to support existing devices.
+
+History
+After the DK1 and DK2 prototypes, Oculus VR finally announced on May 6, 2015, that the consumer version of the Rift would ship in the first quarter of 2016 with pre-orders starting on January 6, 2016, at 8 am PST.
+
+On January 5, 2016, the day before pre-orders went live, in an update posted to the original Kickstarter page, it was announced that all Kickstarter backers who pledged for a Rift development kit would get a free KickStarter Edition Oculus Rift.
+
+On January 6, 2016, pre-orders started, at $599.99. At the same time, the shipment date was announced for March 28, 2016. On January 16, 2016, shipping dates for new orders of the Rift were delayed until July 2016 due to the number of pre-orders on day 1.
+
+On March 25, 2016, the first batch of Oculus Rift virtual reality headsets began shipping to consumers. On April 12, 2016, customers were notified that their shipments were pushed back due to early component shortage. The dates varied between 3 and 8 weeks of delay in regards to previous estimates.
+
+In March 2019, shortly before the Rift S was announced, the original Rift started disappearing from physical third-party stores, making it available only via the official Facebook listing. Then, during the announcement, it was said that the Rift S would replace the original Rift. Shortly afterwards, most sellers stopped replenishing their Rift stock.
+
+In March 2019, Oculus VR stated that they planned to support the original Rift with software updates for "the foreseeable future."
+
+Hardware
+Oculus Rift headset's backside, showing its lenses
+The CV1 is an improved version of the Crescent Bay Prototype, featuring per-eye displays running at 90 Hz with a higher combined resolution than DK2, 360-degree positional tracking, integrated audio, a vastly increased positional tracking volume, and a heavy focus on consumer ergonomics and aesthetics.
+
+Displays
+The device features two Pentile OLED displays, 1080×1200 resolution per eye, a 90 Hz refresh rate, and a 110° field of view. The separation of the lenses is adjustable by a slider on the bottom of the device, in order to accommodate a wide range of interpupillary distances. The fresnel lenses are not interchangeable; however, there are multiple facial interfaces so that the device can be positioned at different distances from the user's eyes. This also allows for users wearing glasses to use the Rift, as well as users with widely varying facial shapes.
+
+Audio
+The Rift CV1 features integrated headphones that provide real-time 3D audio effects. This was developed from technology licensed from RealSpace 3D Audio, by Visisonics. The headphones are user-replaceable, with Oculus and other manufactures such as JBL providing aftermarket audio accessories. The CV1 was struck by a design flaw by which the headphones lost sound on either side, after a cable running through the headband at the back of the headset was severed from regular use. In light of this issue, Palmer Luckey announced a campaign by which he was meant to ship a free custom made solution for this flaw to affected users, but the announcement never materialized.
+
+Constellation
+Oculus Rift Constellation sensor
+Constellation is the headset's rotational and positional tracking system, used to track the position of the user's head as well as other VR devices, with low latency, and sub-millimeter accuracy. The system consists of external infrared tracking sensors that optically track specially designed VR devices. This provides the Rift with full 6 degree of freedom rotational and positional tracking.
+
+The Rift, or any other device being tracked by the system, is fitted with a series of precisely positioned infrared LEDs under or above the surface, set to blink in a specific pattern. By knowing the configuration of the LEDs on the objects and their pattern, the system can determine the precise position of the device with sub-millimeter accuracy and near-zero latency. The system then includes one or more USB stationary infrared sensors that originally come with a stand in a desk lamp form factor, but standard screw holes allow for the stand to be removed and the sensor to be mounted anywhere the user sees fit. The sensors normally sit on the user's desk, creating a 3D space that allows the user to use the device while sitting, standing, walking, or even jumping around the room.
+
+In its initial presentation, before the Touch controllers were released, the system was only used to track the head-mounted display, and a single sensor was included with the device, which was sufficient there being no chance of the user's hands blocking the headset from it. When the Touch controllers were released, two-sensor setups became the baseline, in order to guarantee proper tracking of the headset and controllers. For "room scale" virtual reality, three or more sensors are required. When the controllers were sold separately, a second sensor was included. Later, the standard Rift bundle was updated to include the controllers and additional sensor. Additional sensors, placed behind the user, allow for 360º rotation without the sensors being occluded by the user them self. Three- and four-sensor configurations become the standard for this scenario.
+
+Controllers
+Oculus Touch controllers
+The Oculus Remote, included with the first shipments of the Rift CV1, up until the introduction of the Oculus Touch controllers.
+
+As a result of a partnership with Microsoft, early Oculus Rift units were bundled with an Xbox One controller, being what the majority of virtual reality games used at that point, when motion controllers weren't available yet.
+
+Also included with the bundle was the Oculus Remote, a wireless remote that provided basic navigation functionality. It included four directional inputs, a touch-sensitive disc, Enter and Back buttons, volume up/down, and an Oculus button.
+
+In December 2016, the Oculus Touch motion controllers were released. Initially released as a standalone accessory for the Rift, pre-orders for Oculus Touch began on October 10, 2016, with priority granted until October 27 to those who had originally pre-ordered Oculus Rift, and they were finally released on December 6, 2016.
+
+In August 2017, the standard Rift bundle was modified, dropping the Oculus Remote and Xbox One controller in favor of the Oculus Touch, and adding a second tracking sensor.
+
+ Rift for Business
+During Oculus Connect in June 2017, Oculus VR announced and released their Oculus Rift for Business bundle for 900 USD, which included the Rift CV1 HMD, Oculus Touch controllers, three Constellation sensors, an Oculus remote, and three Rift Fits (the name given to the piece that cushions the device onto the user's face). The bundle also includes an expanded warranty, preferential customer service, and commercial use license.

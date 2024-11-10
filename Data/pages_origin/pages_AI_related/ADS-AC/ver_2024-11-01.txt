@@ -1,0 +1,44 @@
+{{no sources |date=July 2024}}
+{{notability |date=July 2024}}
+
+{{Infobox software
+|name = ADS-AC
+|author = Tarvo Korrovits
+|released = {{start date|1992}}
+|programming language = [[C (programming language)|C]]
+|operating system = [[Windows]]
+|language = English
+|genre = [[Artificial intelligence|AI]]
+|license = [[GNU General Public License|GPL]]
+|website = {{URL|adsproject.sourceforge.net}}
+}}
+
+'''ADS-AC''' is an experimental [[open-source model|open source]] program which implements Absolutely Dynamic System (ADS), a proposed mechanism for [[Artificial consciousness|artificial consciousness (AC)]].
+
+This article is not about a claim, but about a software that does things in a certain way. Whether it's the right way can be decided by the user.
+
+==Implementation==
+ADS-AC uses a system of "points" or "nodes" connected by "links" to create a structure of "knots". The nodes have no properties other than their links to other nodes in order to maintain their absolute dynamicity.
+
+==See also==
+* [[Artificial consciousness]]
+* [[Artificial intelligence]]
+* [[Artificial general intelligence|Strong AI]]
+
+==References==
+{{reflist}}
+* Article about ADS-AC in Everything2 (moderated content)  https://everything2.com/user/actsl/writeups/ADS-AC .
+
+* ADS-AC SourceForge project page  https://sourceforge.net/projects/adsproject/ .
+
+* Latest Internet Archive capture of AI Forums with a lot of information and discussion about ADS-AC and related issues  https://web.archive.org/web/20160317040349/http://ai-forum.org/ .
+
+* Baars, Bernhard, [https://www.sscnet.ucla.edu/comm/steen/cogweb/Abstracts/Baars_88.html A Cognitive Theory of Consciousness] (Cambridge University Press, 1988-1998).
+
+* Daniel Dennett's multiple drafts model  http://www.scholarpedia.org/article/Multiple_drafts_model .
+
+* McCarthy, John, [http://www-formal.stanford.edu/jmc/generality/generality.html Generality in Artificial Intelligence] (Stanford University, 1971-1987).
+
+[[Category:History of artificial intelligence]]
+[[Category:1992 software]]
+{{Portal bar|Free and open-source software}}

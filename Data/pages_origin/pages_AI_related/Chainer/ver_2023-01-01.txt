@@ -1,0 +1,64 @@
+{{short description|Machine learning software}}
+{{Infobox software
+| name = Chainer
+| logo = 
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = Seiya Tokui
+| developer = Community, Preferred Networks, Inc.
+| released = {{Start date and age|2015|6|9}}.<ref name=":0">{{cite web|url=https://www.theregister.co.uk/2017/04/07/intel_chainer_ai_day/|title=Big-in-Japan AI code 'Chainer' shows how Intel will gun for GPUs|date=2017-04-07|website=The Register|access-date=2017-12-24}}</ref><ref name=":1">{{Cite news|title=Deep Learning のフレームワーク Chainer を公開しました|url=https://research.preferred.jp/2015/06/deep-learning-chainer/|date=2015-06-09|access-date=2017-12-24|language=ja-JP}}</ref>
+| latest release version = {{wikidata|property|reference|P348}}
+| latest release date    = {{start date and age|{{wikidata|qualifier|P348|P577}}}}
+| latest preview version = 
+| latest preview date = 
+| programming language = [[Python (programming language)|Python]]
+| operating system = 
+| platform = cross-platform
+| size = 
+| language = Python
+| genre = [[Deep learning]] library
+| license = [[MIT License|MIT]]
+| website = {{URL|https://chainer.org/}}
+}}
+
+'''Chainer''' is an [[Open-source software|open source]] [[deep learning]] framework written purely in [[Python (programming language)|Python]] on top of [[NumPy]] and [[CuPy]] Python libraries. The development is led by Japanese venture company Preferred Networks in partnership with [[IBM]], [[Intel]], [[Microsoft]], and [[Nvidia]].<ref>{{Cite web|url=https://chainer.org/#parters|title=Chainer Homepage|access-date=2017-12-24}}</ref><ref>{{Cite web|url=https://www.hpcwire.com/2017/01/26/ibm-wants-red-hat-deep-learning/|title=IBM Wants to be "Red Hat" of Deep Learning|date=2017-01-26|website=HPCwire|access-date=2017-09-08}}</ref><ref>{{Cite news|url=https://newsroom.intel.com/news/intel-collaborating-preferred-networks-japan-deep-learning/|title=Intel Collaborating with Preferred Networks in Japan on Deep Learning|date=2017-04-06|access-date=2017-12-24}}</ref><ref>{{Cite news|url=https://mspoweruser.com/microsoft-partners-with-preferred-networks-to-bring-chainer-deep-learning-technology-to-azure/|title=Microsoft partners with Preferred Networks to bring Chainer deep learning technology to Azure - MSPoweruser|date=2017-05-23|work=MSPoweruser|access-date=2017-09-08|language=en-US}}</ref>
+
+Chainer is notable for its early adoption of "[[#Define-by-run|define-by-run]]" scheme, as well as its performance on large scale systems.<ref name=":0" /> The first version was released in June 2015 and has gained large popularity in Japan since then.<ref name=":0" /><ref name=":1" /> Furthermore, in 2017, it was listed by [[Gregory Piatetsky-Shapiro#KDnuggets|KDnuggets]] in top 10 open source machine learning Python projects.<ref>{{cite web|title=Top 20 Python Machine Learning Open Source Projects|url=https://www.kdnuggets.com/2016/11/top-20-python-machine-learning-open-source-updated.html|website=KDnuggets|date=2017-11-24}}</ref>
+
+In December 2019, Preferred Networks announced the transition of its development effort from Chainer to [[PyTorch]] and it will only provide maintenance patches after releasing v7.<ref>{{Cite web|url=https://preferred.jp/en/news/pr20191205/|title=Preferred Networks Migrates its Deep Learning Research Platform to PyTorch|date=2019-12-05|website=Preferred Networks, Inc.|language=en-US|access-date=2019-12-27}}</ref>
+
+==Define-by-run==
+Chainer was the first deep learning framework to introduce the define-by-run approach.<ref>{{cite journal|last1=Tokui|first1=Seiya|last2=Oono|first2=Kenta|last3=Hido|first3=Shohei|last4=Clayton|first4=Justin|display-authors=1|title=Chainer: a next-generation open source framework for deep learning|journal=29th Annual Conference on Neural Information Processing Systems (NIPS)|date=2015|volume= 5}}</ref><ref>{{cite book|last1=Shimada|first1=Naoki|title=Deep Learning with Chainer|date=September 14, 2017|publisher=Gijutsu-Hyohron|isbn=4774191868|page=61}}</ref> The traditional procedure to train a network was in two phases: define the fixed connections between mathematical operations (such as matrix multiplication and nonlinear activations) in the network, and then run the actual training calculation. This is called the define-and-run or static-graph approach. [[Theano (software)|Theano]] and [[TensorFlow]] are among the notable frameworks that took this approach. In contrast, in the define-by-run or dynamic-graph approach, the connection in a network is not determined when the training is started. The network is determined during the training as the actual calculation is performed.
+
+One of the advantages of this approach is that it is intuitive and flexible.<ref name="ResBlog">{{cite web|title=Eager Execution: An imperative, define-by-run interface to TensorFlow|url=https://research.googleblog.com/2017/10/eager-execution-imperative-define-by.html|website=Google Research Blog}}</ref> If the network has complicated control flows such as [[Conditional (computer programming)|conditionals]] and [[Loop (computing)|loops]], in the define-and-run approach, specially designed operations for such constructs are needed. On the other hand, in the define-by-run approach, programming language's native constructs such as if statements and for loops can be used to describe such flow. This flexibility is especially useful to implement [[recurrent neural networks]].<ref>{{cite web|title=Deep Learning With Dynamic Computation Graphs (ICLR 2017)|url=http://muratbuffalo.blogspot.jp/2017/01/deep-learning-with-dynamic-computation.html|website=Metadata}}</ref><ref>{{cite web |last1=Hido |first1=Shohei |title=Complex neural networks made easy by Chainer |url=https://www.oreilly.com/learning/complex-neural-networks-made-easy-by-chainer |website=O'Reilly Media |accessdate=26 June 2018 |language=en |date=8 November 2016}}</ref>
+
+Another advantage is ease of [[debugging]].<ref name="ResBlog" /> In the define-and-run approach, if an error (such as numeric error) has occurred in the training calculation, it is often difficult to inspect the fault, because the code written to define the network and the actual place of the error are separated. In the define-by-run approach, you can just suspend the calculation with the language's built-in [[debugger]] and inspect the data that flows on your code of the network.
+
+Define-by-run has gained popularity since the introduction by Chainer and is now implemented in many other frameworks, including PyTorch<ref>{{cite web|last1=Perez|first1=Carlos E.|title=PyTorch, Dynamic Computational Graphs and Modular Deep Learning|url=https://medium.com/intuitionmachine/pytorch-dynamic-computational-graphs-and-modular-deep-learning-7e7f89f18d1|website=Medium|date=20 January 2017}}</ref> and TensorFlow.<ref name="ResBlog" />
+
+==Extension libraries==
+Chainer has four extension libraries, ChainerMN, ChainerRL, ChainerCV and ChainerUI. ChainerMN enables Chainer to be used on multiple GPUs with performance significantly faster than other deep learning frameworks.<ref name=":0" /> A supercomputer running Chainer on 1024 GPUs processed 90 epochs of [[ImageNet]] dataset on ResNet-50 network in 15 minutes, which is four times faster than the previous record held by Facebook.<ref name="15min-1">{{cite web|format=pdf|url=https://www.preferred-networks.jp/docs/imagenet_in_15min.pdf|title=Extremely Large Minibatch SGD: Training ResNet-50 on ImageNet in 15 Minutes|access-date=2017-12-24}}</ref><ref name="15min-2">{{cite web|last1=Greene|first1=Tristan|title=Facebook’s nerds bested by Japan’s in the race to train AI|url=https://thenextweb.com/artificial-intelligence/2017/11/20/researchers-did-in-15-minutes-what-takes-facebook-an-hour/|website=The Next Web|accessdate=24 November 2017|date=20 November 2017}}</ref> ChainerRL adds state of art deep [[reinforcement learning]] algorithms, and ChainerUI is a management and visualization tool.
+
+== Applications ==
+Chainer is used as the framework for [[PaintsChainer]], a service which does automatic [[Film colorization|colorization]] of black and white, line only, draft drawings with minimal user input.<ref>{{Cite web|url=http://www.techly.com.au/2017/02/15/neural-network-based-software-will-add-colour-drawings-free/|title=This neural network-based software will add colour to your drawings for free|last=Know|first=Now You|date=2017-02-15|website=Techly|access-date=2017-09-08}}</ref><ref>{{cite news|url=https://www.preferred-networks.jp/en/news/pr20170524|title=Drawing app "pixiv Sketch" and automatic coloring service "PaintsChainer" collaborate to provide a new function for automatic coloring of illustrations!|date=2017-05-24|access-date=2017-12-24}}</ref>
+
+== See also ==
+* [[Comparison of deep learning software]]
+* [[Machine learning]]
+* [[Artificial neural network]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|http://chainer.org/}}
+
+{{Deep Learning Software}}
+
+[[Category:Deep learning software]]
+[[Category:Free statistical software]]
+[[Category:Python (programming language) scientific libraries]]
+[[Category:Open-source artificial intelligence]]
+[[Category:Free software programmed in Python]]
+[[Category:Software using the MIT license]]

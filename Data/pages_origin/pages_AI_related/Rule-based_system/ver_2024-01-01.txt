@@ -1,0 +1,51 @@
+{{distinguish|Basic norm}}
+{{Refimprove|date=May 2019}}
+In [[computer science]], a '''rule-based system''' is used to [[knowledge representation|store and manipulate]] knowledge to interpret information in a useful way. It is often used in [[artificial intelligence]] applications and research. 
+
+Normally, the term ''rule-based system'' is applied to systems involving human-crafted or curated rule sets.  Rule-based systems constructed using automatic rule inference, such as [[rule-based machine learning]], are normally excluded from this system type.
+
+==Applications==
+
+A classic example of a rule-based system is the domain-specific [[expert system]] that uses rules to make deductions or choices.<ref name="GrosanAbraham2011">{{cite book|author1=Crina Grosan|author2=Ajith Abraham|title=Intelligent Systems: A Modern Approach|url=https://books.google.com/books?id=c1fzgQj5lhkC&pg=PA149|date=29 July 2011|publisher=Springer Science & Business Media|isbn=978-3-642-21004-4|pages=149–}}</ref>  For example, an expert system might help a doctor choose the correct diagnosis based on a cluster of symptoms, or select tactical moves to play a game.
+
+Rule-based systems can be used to perform [[lexical analysis]] to [[compiler|compile]] or [[interpreter (computing)|interpret]] computer programs, or in [[natural language processing]].<ref name="Chan2014">{{cite book|author=Sin-Wai Chan|title=Routledge Encyclopedia of Translation Technology|url=https://books.google.com/books?id=S0FWBQAAQBAJ&pg=PA454|date=13 November 2014|publisher=Routledge|isbn=978-1-317-60815-8|pages=454–}}</ref>
+
+Rule-based programming attempts to derive execution instructions from a starting set of data and rules. This is a more indirect method than that employed by an [[imperative programming language]], which lists execution steps sequentially.
+
+==Construction==
+
+A typical rule-based system has four basic components:<ref>{{cite web|url=http://www.j-paine.org/students/lectures/lect3/node5.html|title=What is a rule-based system?|work=j-paine.org}}</ref>
+
+* A list of rules or '''rule base''', which is a specific type of [[knowledge base]].
+* An [[inference engine]] or [[semantic reasoner]], which infers information or takes action based on the interaction of input and the rule base. The interpreter executes a [[Production system (computer_science)|production system]] program by performing the following match-resolve-act cycle:<ref>{{cite journal
+| author= Cabitza, F., & Dal Seno, B.
+| title= DJess-A Knowledge-Sharing Middleware to Deploy Distributed Inference Systems. 
+| journal= International Journal of Computer and Information Engineering
+| year=2005
+| volume=2
+| pages=66–69
+| doi= 10.1109/PERSER.2005.1506416| s2cid= 27323155 
+}}</ref>
+:* Match: In this first phase, the condition sides of all productions are matched against the contents of working memory. As a result a set (the ''conflict set'') is obtained, which consists of instantiations of all satisfied productions. An instantiation of a production is an ordered list of working memory elements that satisfies the condition side of the production.
+:* [[Conflict resolution strategy|Conflict-resolution]]: In this second phase, one of the production instantiations in the conflict set is chosen for execution. If no productions are satisfied, the interpreter halts.
+:* Act: In this third phase, the actions of the production selected in the conflict-resolution phase are executed. These actions may change the contents of working memory. At the end of this phase, execution returns to the first phase.
+* Temporary [[working memory]].
+* A [[user interface]] or other connection to the outside world through which input and output signals are received and sent.
+
+==See also==
+* [[Logic programming]]
+* [[Expert systems]]
+* [[Rewriting]]
+* [[RuleML]]
+* [[List of rule-based languages]]
+* [[Learning classifier system]]
+* [[Rule-based machine learning]]
+* [[Rule-based modeling]]
+
+== References ==
+{{Reflist}}
+
+{{Types of programming languages}}
+{{Semantic Web}}
+
+[[Category:Rule engines]]

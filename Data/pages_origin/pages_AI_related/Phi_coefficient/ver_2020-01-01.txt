@@ -1,0 +1,47 @@
+In [[statistics]], the '''phi coefficient''' (or '''mean square contingency coefficient''' and denoted by '''φ''' or '''r<sub>φ</sub>''') is a measure of association for two binary variables. Introduced by [[Karl Pearson]],<ref>Cramer, H.  (1946). ''Mathematical Methods of Statistics''. Princeton: Princeton  University Press, p. 282 (second paragraph). {{ISBN|0-691-08004-6}}</ref> this measure is similar to the [[Pearson correlation coefficient]] in its interpretation. In fact, a Pearson correlation coefficient estimated for two binary variables will return the phi coefficient.<ref>Guilford, J. (1936). ''Psychometric Methods''. New York: McGraw–Hill Book Company, Inc.
+</ref> The square of the phi coefficient is related to the [[chi-squared statistic]] for a 2×2 [[contingency table]] (see [[Pearson's chi-squared test]])<ref>Everitt B.S. (2002) ''The Cambridge Dictionary of Statistics'', CUP. {{ISBN|0-521-81099-X}}</ref>
+
+: <math>\phi^2 = \frac{\chi^2}{n}</math>
+
+where ''n'' is the total number of observations. Two binary variables are considered positively associated if most of the data falls along the diagonal cells. In contrast, two binary variables are considered negatively associated if most of the data falls off the diagonal. If we have a 2×2 table for two random variables ''x'' and&nbsp;''y''
+<center>
+{| class="wikitable" style="text-align: center; background: #FFFFFF;"
+|-----
+|
+|| ''y'' = 1 || ''y'' = 0 || total
+|-----
+| ''x'' = 1 || <math>n_{11}</math> || <math>n_{10}</math> || <math>n_{1\bullet}</math>
+|-----
+| ''x'' = 0 || <math>n_{01}</math> || <math>n_{00}</math> || <math>n_{0\bullet}</math>
+|-----
+| total     || <math>n_{\bullet1}</math> || <math>n_{\bullet0}</math> || <math>n</math>
+|}
+</center>
+where ''n''<sub>11</sub>,  ''n''<sub>10</sub>, ''n''<sub>01</sub>, ''n''<sub>00</sub>, are non-negative counts of numbers of observations that sum to&nbsp;''n'', the total number of observations.  The phi coefficient that describes the association of ''x'' and ''y'' is
+
+: <math>\phi = \frac{n_{11}n_{00}-n_{10}n_{01}}{\sqrt{n_{1\bullet}n_{0\bullet}n_{\bullet0}n_{\bullet1}}}.</math>
+
+Phi is related to the [[point-biserial correlation coefficient]] and Cohen's ''d'' and estimates the extent of the relationship between two variables (2×2).<ref name="Ref_">Aaron, B., Kromrey, J. D., & Ferron, J. M. (1998, November). [http://www.eric.ed.gov/ERICWebPortal/custom/portlets/recordDetails/detailmini.jsp?_nfpb=true&_&ERICExtSearch_SearchValue_0=ED433353&ERICExtSearch_SearchType_0=no&accno=ED433353 Equating r-based and d-based effect-size indices: Problems with a commonly recommended formula.] Paper presented at the annual meeting of the Florida Educational Research Association, Orlando, FL. (ERIC Document Reproduction Service No. ED433353)</ref>
+
+The phi coefficient can also be expressed using only <math>n</math>, <math>n_{11}</math>, <math>n_{1\bullet}</math>, and <math>n_{\bullet1}</math>, as
+
+: <math>\phi = \frac{nn_{11}-n_{1\bullet}n_{\bullet1}}{\sqrt{n_{1\bullet}n_{\bullet1}(n-n_{1\bullet})(n-n_{\bullet1})}}.</math>
+
+==Maximum values==
+
+Although computationally the Pearson correlation coefficient reduces to the phi coefficient in the 2×2 case, they are not in general the same. The Pearson correlation coefficient ranges from −1 to +1, where ±1 indicates perfect agreement or disagreement, and 0 indicates no relationship. The phi coefficient has a maximum value that is determined by the distribution of the two variables if one or both variables can take on more than two values. See Davenport El-Sanhury (1991) <ref>Davenport, E., & El-Sanhury, N. (1991). Phi/Phimax: Review and Synthesis. Educational and Psychological Measurement, 51, 821–828.</ref> for a thorough discussion.
+
+==See also==
+*[[Contingency table]]
+*[[Matthews correlation coefficient]]
+*[[Cramér's V (statistics)|Cramér's V]], a similar measure of association between nominal variables.
+*[[Polychoric correlation]] (subtype: Tetrachoric correlation), when variables are seen as dichotomized versions of (latent) continuous variables
+
+==References==
+{{Reflist}}
+
+{{Statistics}}
+
+{{DEFAULTSORT:Phi Coefficient}}
+[[Category:Statistical ratios]]
+[[Category:Summary statistics for contingency tables]]

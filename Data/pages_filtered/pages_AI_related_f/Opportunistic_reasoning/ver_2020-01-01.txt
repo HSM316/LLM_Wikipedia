@@ -1,0 +1,7 @@
+Opportunistic reasoning is a method of selecting a suitable logical inference strategy within artificial intelligence applications. 
+
+Specific reasoning methods may be used to draw conclusions from a set of given facts in a knowledge base, e.g. forward chaining versus backward chaining. However, in opportunistic reasoning, pieces of knowledge may be applied either forward or backward, at the "most opportune time".Blackboard systems by I. Craig, 1995  page 84
+
+An opportunistic reasoning system may combine elements of both forward and backward reasoning. It is useful when the number of possible inferences is very large and the reasoning system must be responsive to new data that may become known.Fundamentals of expert systems technology by Samuel J. Biondo 1990  page 69
+
+Opportunistic reasoning has been used in applications such as blackboard systems and medical applications.Roy Turner, "Opportunistic use of schemata" in Tenth Annual Conference of the Cognitive Science Society 1988  page 165

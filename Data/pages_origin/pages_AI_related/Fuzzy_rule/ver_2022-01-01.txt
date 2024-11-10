@@ -1,0 +1,62 @@
+'''Fuzzy rules''' are used within [[Fuzzy logic|fuzzy logic systems]] to infer an output based on input variables. [[Modus ponens]] and [[modus tollens]] are the most important rules of inference.<ref>{{Cite book|title=A mathematical introduction to logic|last=B.|first=Enderton, Herbert|date=2001|publisher=Academic Press|isbn=978-0122384523|edition= 2nd|location=San Diego, Calif.|oclc=45830890}}</ref>  A modus ponens rule is in the form
+:Premise: ''x is A''
+:Implication: '''''IF''' x is A '''THEN''' y is B''
+:Consequent: ''y is B''
+
+In crisp logic, the premise ''x is A'' can only be true or false. However, in a fuzzy rule, the premise ''x is A'' and the consequent ''y is B'' can be true to a degree, instead of entirely true or entirely false.<ref name=":0">{{Cite book|title=Uncertain rule-based fuzzy logic systems : introduction and new directions|last=1938-|first=Mendel, Jerry M.|date=2001|publisher=Prentice Hall PTR|isbn=978-0130409690|location=Upper Saddle River, NJ|oclc=45314121|url-access=registration|url=https://archive.org/details/isbn_9780130409690}}</ref> This is achieved by representing the linguistic variables ''A'' and ''B'' using [[fuzzy set]]s.<ref name=":0" /> In a fuzzy rule, modus ponens is extended to ''generalised modus ponens:.<ref name=":0" />''
+
+:Premise: ''x is A''*
+:Implication: '''''IF''' x is A '''THEN''' y is B''
+:Consequent: ''y is B''*
+
+The key difference is that the premise ''x is A'' can be only partially true. As a result, the consequent ''y is B'' is also partially true. Truth is represented as a [[real number]] between 0 and 1, where 0 is false and 1 is true.
+
+== Comparison between Boolean and fuzzy logic rules ==
+As an example, consider a rule used to control a three-speed fan. A binary IF-THEN statement may be then
+:'''IF'''   ''temperature'' <math>\geq</math> ''30''
+:'''THEN'''  ''fan speed is 3''
+
+The disadvantage of this rule is that it uses a strict temperature as a threshold, but the user may want the fan to still function at this speed when temperature = 29.9. A fuzzy IF-THEN statement may be
+:'''IF'''   ''temperature is hot''
+:'''THEN'''  ''fan speed is fast''
+
+where ''hot'' and ''fast'' are described using [[fuzzy set]]s.
+
+== Fuzzy rule connectors ==
+Rules can connect multiple variables through [[fuzzy set operations]] using [[t-norm]]s and [[T-norm|t-conorms]].
+
+'''T-norms''' are used as an ''AND'' connector.<ref>{{Cite journal|last=Martin Larsen|first=P.|date=1980|title=Industrial applications of fuzzy logic control|journal=International Journal of Man-Machine Studies|volume=12|issue=1|pages=3–10|doi=10.1016/s0020-7373(80)80050-2|issn=0020-7373}}</ref><ref>{{Cite journal|last=Mamdani|first=E.H.|date=1974|title=Application of fuzzy algorithms for control of simple dynamic plant|journal=Proceedings of the Institution of Electrical Engineers|volume=121|issue=12|pages=1585|doi=10.1049/piee.1974.0328|issn=0020-3270}}</ref><ref name=":1">{{Cite book|title=Fuzzy Set Theory - and Its Applications|last=H.-J.|first=Zimmermann|date=1991|publisher=Springer Netherlands|isbn=9789401579490|edition= Second, revised|location=Dordrecht|oclc=851369348}}</ref> For example,
+
+:'''IF'''   ''temperature is hot '''AND''' humidity is high''
+:'''THEN'''  ''fan speed is fast''
+
+The degree of truth assigned to ''temperature is hot'' and to ''humidity is high.'' The result of a t-norm operation on these two degrees is used as the degree of truth that ''fan speed is fast''.
+
+'''T-conorms''' are used as an ''OR'' connector.<ref name=":1" />  For example,
+
+:'''IF'''   ''temperature is hot '''OR''' humidity is high''
+:'''THEN'''  ''fan speed is fast''
+
+The result of a t-conorm operation on these two degrees is used as the degree of truth that ''fan speed is fast''.
+
+The [[Complement (set theory)|complement]] of a fuzzy set is used as a negator.<ref name=":1" /> For example,
+
+:'''IF'''   ''temperature is '''NOT''' hot''
+:'''THEN'''  ''fan speed is slow''
+
+The fuzzy set ''not hot'' is the complement of ''hot.'' The degree of truth assigned to ''temperature is not hot'' is used as the degree of truth that ''fan speed is slow''.
+
+T-conorms are less commonly used as rules can be represented by ''AND'' and ''OR'' connectors exclusively.
+
+== See also ==
+* [[Fuzzy logic]]
+
+== References ==
+{{Reflist}}
+
+{{Non-classical logic}}
+
+[[Category:Fuzzy logic]]
+
+
+{{compu-AI-stub}}

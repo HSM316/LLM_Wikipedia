@@ -1,0 +1,43 @@
+Text mining computer programs are available from many commercial and open source companies and sources.
+
+Commercial
+ Angoss – Angoss Text Analytics provides entity and theme extraction, topic categorization, sentiment analysis and document summarization capabilities via the embedded 
+ AUTINDEX – is a commercial text mining software package based on sophisticated linguistics by IAI (Institute for Applied Information Sciences), Saarbrücken.
+ DigitalMR – social media listening & text+image analytics tool for market research.
+ DiscoverText - online tools for archiving, searching and sorting web-based text from sources, including social media and public comments from a wide range of sources.
+ FICO Score – leading provider of  analytics.
+ General Sentiment – Social Intelligence platform that uses natural language processing to discover affinities between the fans of brands with the fans of traditional television shows in social media.  Stand alone text analytics to capture social knowledge base on billions of topics stored to 2004.
+ IBM LanguageWare  – the IBM suite for text analytics (tools and Runtime).
+ IBM SPSS – provider of Modeler Premium (previously called IBM SPSS Modeler and IBM SPSS Text Analytics), which contains advanced NLP-based text analysis capabilities (multi-lingual sentiment, event and fact extraction), that can be used in conjunction with Predictive Modeling. Text Analytics for Surveys provides the ability to categorize survey responses using NLP-based capabilities for further analysis or reporting.
+ Inxight – provider of text analytics, search, and unstructured visualization technologies. (Inxight was bought by Business Objects that was bought by SAP AG in 2008).
+ Language Computer Corporation – text extraction and analysis tools, available in multiple languages.
+ Lexalytics –  provider of a text analytics engine used in Social Media Monitoring, Voice of Customer, Survey Analysis, and other applications. Salience Engine. The software provides the unique capability of merging the output of unstructured, text-based analysis with structured data to provide additional predictive variables for improved predictive models and association analysis.
+ Linguamatics – provider of natural language processing (NLP) based enterprise text mining and text analytics software, I2E, for high-value knowledge discovery and decision support.
+ Mathematica – provides built in tools for text alignment, pattern matching, clustering and semantic analysis. See Wolfram Language, the programming language of Mathematica.
+MATLAB offers Text Analytics Toolbox for importing text data, converting it to numeric form for use in machine and deep learning, sentiment analysis and classification tasks.
+ Medallia – offers one system of record for survey, social, text, written and online feedback.
+ NetOwl – suite of multilingual text and entity analytics products, including entity extraction, link and event extraction, sentiment analysis, geotagging, name translation, name matching, and identity resolution, among others.
+ PolyAnalyst - text analytics environment.
+ PoolParty Semantic Suite - graph-based text mining platform.
+ RapidMiner with its Text Processing Extension – data and text mining software.
+SAS – SAS Text Miner and Teragram; commercial text analytics, natural language processing, and taxonomy software used for Information Management.
+ Sketch Engine – a corpus manager and analysis software which providing creating text corpora from uploaded texts or the Web including part-of-speech tagging and lemmatization or detecting a particular website.
+ Sysomos – provider social media analytics software platform, including text analytics and sentiment analysis on online consumer conversations.
+ WordStat – Content analysis and text mining add-on module of QDA Miner for analyzing large amounts of text data.
+
+Open source
+
+ Carrot2 – text and search results clustering framework.
+ GATE – general Architecture for Text Engineering, an open-source toolbox for natural language processing and language engineering.
+ Gensim – large-scale topic modelling and extraction of semantic information from unstructured text (Python).
+ Haystack by deepset – a framework for building search systems with document retrieval and question answering capabilities.
+ KH Coder – for Quantitative Content Analysis or Text Mining
+ The KNIME Text Processing extension.
+ Natural Language Toolkit (NLTK) – a suite of libraries and programs for symbolic and statistical natural language processing (NLP) for the Python programming language.
+ OpenNLP – natural language processing.
+ Orange with its text mining add-on.
+ The PLOS Text Mining Collection.
+ The programming language R provides a framework for text mining applications in the package tm. The Natural Language Processing task view contains tm and other text mining library packages.
+ spaCy – open-source Natural Language Processing library for Python
+ Stanbol – an open source text mining engine targeted at semantic content management.
+ Voyant Tools – a web-based text analysis environment, created as a scholarly project.

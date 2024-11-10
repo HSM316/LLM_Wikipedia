@@ -1,0 +1,169 @@
+{{Short description|Process of capturing the shape and appearance of real objects}}
+{{for multi|3D reconstruction in [[medical imaging]]|Iterative reconstruction|3D reconstruction of sound sources|3D sound reconstruction}}
+{{update|date=October 2019}}
+[[File:Pseudunela viatoris 3.png|thumb|3D reconstruction of the general anatomy of the right side view of a small marine slug ''[[Pseudunela viatoris]]''.]]
+In [[computer vision]] and [[computer graphics]], '''3D reconstruction''' is the process of capturing the shape and appearance of real objects.
+This process can be accomplished either by active or passive methods.<ref>Moons, Theo, Luc Van Gool, and Maarten Vergauwen. "[http://www.nowpublishers.com/article/DownloadSummary/CGV-007 3D reconstruction from multiple images part 1: Principles]." Foundations and Trends in Computer Graphics and Vision 4.4 (2010): 287-404.</ref> If the model is allowed to change its shape in time, this is referred to as [[spatio-temporal reconstruction|non-rigid or spatio-temporal]] reconstruction.<ref>Zollhöfer, Michael, et al. "[http://www.charlesloop.com/zollhoefer2014deformable.pdf Real-time non-rigid reconstruction using an RGB-D camera]." ACM Transactions on Graphics 33.4 (2014): 156.</ref>
+
+==Motivation and applications==
+The research of 3D reconstruction has always been a difficult goal. By Using 3D reconstruction one can determine any object's 3D profile, as well as knowing the 3D coordinate of any point on the profile. The 3D reconstruction of objects is a generally scientific problem and core technology of a wide variety of fields, such as Computer Aided Geometric Design ([[CAGD]]), [[computer graphics]], [[computer animation]], [[computer vision]], [[medical imaging]], [[computational science]], [[virtual reality]], [[digital media]], etc.<ref>{{Cite news|url=https://garagefarm.net/blog/the-future-of-3d-modelling|title=The Future of 3D Modeling|date=2017-05-27|work=GarageFarm|access-date=2017-05-27|language=en-US}}</ref> For instance, the lesion information of the patients can be presented in 3D on the computer, which offers a new and accurate approach in diagnosis and thus has vital clinical value.<ref name="Zheng">{{cite book |author1=Liping Zheng |author2=Guangyao Li |author3=Jing Sha |editor-first1=Qingming |editor-first2=Lihong V. |editor-first3=Valery V. |editor-first4=Min |editor-last1=Luo |editor-last2=Wang |editor-last3=Tuchin |editor-last4=Gu |year=2007 |chapter=The survey of medical image 3D reconstruction |series=Proceedings of SPIE |volume=6534 |pages=65342K–65342K–6 |title=Fifth International Conference on Photonics and Imaging in Biology and Medicine |doi=10.1117/12.741321|s2cid=62548928 }}</ref> [[Digital elevation model]]s can be reconstructed using methods such as airborne laser altimetry<ref>Vosselman, George, and Sander Dijkman. "[http://www.isprs.org/proceedings/xxxiv/3-w4/pdf/vosselman.pdf 3D building model reconstruction from point clouds and ground plans]." International archives of photogrammetry remote sensing and spatial information sciences 34.3/W4 (2001): 37-44.</ref> or [[synthetic aperture radar]].<ref>Colesanti, Carlo, and Janusz Wasowski. "[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.582.2745&rep=rep1&type=pdf Investigating landslides with space-borne Synthetic Aperture Radar (SAR) interferometry]." Engineering geology 88.3-4 (2006): 173-199.</ref>
+
+==Active methods==
+[[File:Echo_Sounding_of_Newly_Discovered_Canyon_in_the_Red_Sea_MOD_45155030.jpg|thumb|3D [[echo sounding]] map of an underwater canyon]]
+Active methods, i.e. range data methods, given the [[depth map]], reconstruct the 3D profile by [[numerical approximation]] approach and build the object in scenario based on model. These methods actively interfere with the reconstructed object, either mechanically or radiometrically using [[rangefinder]]s, in order to acquire the depth map, e.g. [[Structured-light 3D scanner|structured light]], laser range finder and other active sensing techniques. A simple example of a mechanical method would use a depth gauge to measure a distance to a rotating object put on a turntable. More applicable [[radiometric]] methods emit [[radiance]] towards the object and then measure its reflected part. Examples range from moving light sources, colored visible light, [[Time-of-flight camera|time-of-flight]] lasers <ref name="Mahmoudzadeh 1655">{{Cite journal|last1=Mahmoudzadeh|first1=Ahmadreza|last2=Golroo|first2=Amir|last3=Jahanshahi|first3=Mohammad R.|last4=Firoozi Yeganeh|first4=Sayna|date=January 2019|title=Estimating Pavement Roughness by Fusing Color and Depth Data Obtained from an Inexpensive RGB-D Sensor|journal=Sensors|volume=19|issue=7|pages=1655|doi=10.3390/s19071655|pmc=6479490|pmid=30959936|bibcode=2019Senso..19.1655M|doi-access=free}}</ref> to [[microwaves]] or [[3D ultrasound]]. See [[3D scanning]] for more details.
+
+==Passive methods==
+Passive methods of 3D reconstruction do not interfere with the reconstructed object; they only use a sensor to measure the radiance reflected or emitted by the object's surface to infer its 3D structure through [[image understanding]].<ref>Buelthoff, Heinrich H., and Alan L. Yuille. "[http://kyb.mpg.de/publications/attachments/shape_from_x_psychophysics_and_computation_717%5B0%5D.pdf Shape-from-X: Psychophysics and computation] {{Webarchive|url=https://web.archive.org/web/20110107162857/http://www.kyb.mpg.de/publications/attachments/shape_from_x_psychophysics_and_computation_717%5B0%5D.pdf |date=2011-01-07 }}." Fibers' 91, Boston, MA. International Society for Optics and Photonics, 1991.</ref> Typically, the [[sensor]] is an image sensor in a camera sensitive to visible light and the input to the method is a set of [[digital images]] (one, two or more) or video. In this case we talk about image-based reconstruction and the output is a [[3D model]]. By comparison to active methods, passive methods can be applied to a wider range of situations.<ref>{{Cite book|last=Moons |first=Theo|title=3D reconstruction from multiple images. Part 1, Principles|date=2010|publisher=Now Publishers, Inc|others=Gool, Luc van., Vergauwen, Maarten.|isbn=978-1-60198-285-8|location=Hanover, MA|oclc=607557354}}</ref>
+
+===Monocular cues methods===
+[[Depth_perception#Monocular_cues|Monocular cues]] methods refer to using one or more images from one viewpoint (camera) to proceed to 3D construction. It makes use of 2D characteristics(e.g. Silhouettes, shading and texture) to measure 3D shape, and that's why it is also named Shape-From-X, where X can be [[silhouettes]], [[shading]], texture etc. 3D reconstruction through monocular cues is simple and quick, and only one appropriate digital image is needed thus only one camera is adequate. Technically, it avoids [[stereo correspondence]], which is fairly complex.<ref>{{Cite book|last1=Saxena|first1=Ashutosh|last2=Sun|first2=Min|last3=Ng|first3=Andrew Y.|title=2007 IEEE 11th International Conference on Computer Vision |chapter=3-D Reconstruction from Sparse Views using Monocular Vision |date=2007|pages=1–8|doi=10.1109/ICCV.2007.4409219|citeseerx=10.1.1.78.5303|isbn=978-1-4244-1630-1|s2cid=17571812}}</ref>
+
+[[File:Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes With Deep Generative Networks.png|thumb|Generating and reconstructing 3D shapes from single or multi-view depth maps or silhouettes<ref name="3DVAE">{{Cite web |url=https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil |last1=Soltani |first1=A.A. |last2=Huang |first2=H. |last3=Wu |first3=J. |last4=Kulkarni |first4=T.D. |last5=Tenenbaum |first5=J.B. |title=Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes With Deep Generative Networks |work=Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition |pages=1511–1519 |year=2017 |via=GitHub }}</ref>]]
+[[File:SilhouetteCones.jpg|thumb|A "[[visual hull]]" reconstructed from multiple viewpoints]]
+
+'''Shape-from-shading''' Due to the analysis of the shade information in the image, by using [[Lambertian reflectance]], the depth of [[normal (geometry)|normal]] information of the object surface is restored to reconstruct.<ref>Horn, Berthold KP. "[https://dspace.mit.edu/bitstream/handle/1721.1/6885/AITR-232.pdf?sequence=2 Shape from shading: A method for obtaining the shape of a smooth opaque object from one view]." (1970).</ref>
+
+'''[[Photometric stereo|Photometric Stereo]]''' This approach is more sophisticated than the shape-of-shading method. Images taken in different lighting conditions are used to solve the depth information. It is worth mentioning that more than one image is required by this approach.<ref>{{cite journal |last=Woodham |first=Robert J. |url=http://www.umiacs.umd.edu/~raghuram/ENEE731/Stereo/Woodham80c.pdf |title=Photometric method for determining surface orientation from multiple images |journal=Optical Engineering |volume=19 |issue=1 |date=1980 |pages=138–141 |archive-url=https://web.archive.org/web/20140327053152/http://www.umiacs.umd.edu/~raghuram/ENEE731/Stereo/Woodham80c.pdf |archive-date=2014-03-27|bibcode=1980OptEn..19..139W |doi=10.1117/12.7972479 }}</ref>
+
+'''Shape-from-texture''' Suppose such an object with smooth surface covered by replicated texture units, and its projection from 3D to 2D causes [[distortion]] and [[perspectivity|perspective]]. Distortion and perspective measured in 2D images provide the hint for inversely solving depth of normal information of the object surface.<ref>{{cite journal |last=Witkin |first=Andrew P. |url=http://jim-stone.staff.shef.ac.uk/psy305/papers/texture_witkinAI1981.pdf |title=Recovering surface shape and orientation from texture |journal=Artificial Intelligence |volume=17 |issue=1–3 |date=1981 |pages=17–45|doi=10.1016/0004-3702(81)90019-9 }}</ref>
+
+'''Machine Learning Based Solutions''' Machine learning enables learning the correspondance between the subtle features in the input and the respective 3D equivalent. Deep neural networks have shown to be highly effective for 3D reconstruction from a single color image. <ref name="feng22depth">{{cite conference |last1=Feng |first1=Qi |last2=Shum |first2=Hubert P. H. |last3=Morishima |first3=Shigeo |title=2022 IEEE Conference on Virtual Reality and 3D User Interfaces (VR) |chapter=360 Depth Estimation in the Wild - The Depth360 Dataset and the SegFuse Network |date=2022 |pages=664–673 |doi=10.1109/VR51125.2022.00087 |publisher=IEEE |arxiv=2202.08010 |isbn=978-1-6654-9617-9 }}</ref> This works even for non-photorealistic input images such as sketches. <ref name="nozawa21car">{{cite journal |last1=Nozawa |first1=Naoki |last2=Shum |first2=Hubert P. H. |last3=Feng |first3=Qi |last4=Ho |first4=Edmond S. L. |last5=Morishima |first5=Shigeo |title=3D Car Shape Reconstruction from a Contour Sketch using GAN and Lazy Learning |journal=Visual Computer |date=2022 |volume=38 |issue=4 |pages=1317–1330 |doi=10.1007/s00371-020-02024-y |issn=1432-2315 |publisher=Springer |doi-access=free }}</ref> Thanks to the high level of accuracy in the reconstructed 3D features, deep learning based method has been employed for biomedical engineering applications to reconstruct CT imagery from X-ray. <ref name="coronafigueroaa23unaligned">{{cite conference |last1=Corona-Figueroa |first1=Abril |last2=Bond-Taylor |first2=Sam |last3=Bhowmik |first3=Neelanjan |last4=Gaus |first4=Yona Falinie A. |last5=Breckon |first5=Toby P. |last6=Shum |first6=Hubert P. H. |last7=Willcocks |first7=Chris G. |title=Unaligned 2D to 3D Translation with Conditional Vector-Quantized Code Diffusion using Transformers |date=2023 |publisher=IEEE/CVF |arxiv=2308.14152 }}</ref>
+
+=== Stereo vision ===
+{{main|Computer stereo vision}}
+{{split section|Computer stereo vision|date=October 2021|discuss=Talk:3D_reconstruction#Merging stereo vision}}
+
+Stereo vision obtains the 3-dimensional geometric information of an object from multiple images based on the research of human [[visual system]].<ref>{{cite journal |last1=Kass |first1=Michael |first2=Andrew |last2=Witkin |first3=Demetri |last3=Terzopoulos |url=http://graphics.hallym.ac.kr/teach/2009/tcg/src/IJCV98Kass.pdf |title=Snakes: Active contour models |journal=International Journal of Computer Vision |volume=1 |issue=4 |date=1988 |pages=321–331|doi=10.1007/BF00133570 |s2cid=12849354 }}</ref> The results are presented in form of depth maps. Images of an object acquired by [[multiple-camera setup|two cameras simultaneously]] in different [[viewing angle]]s, or by one single camera at different time in different viewing angles, are used to restore its 3D geometric information and reconstruct its 3D profile and location. This is more direct than Monocular methods such as shape-from-shading.
+
+Binocular stereo vision method requires two identical cameras with parallel [[optical axis]] to observe one same object, acquiring two images from different points of view. In terms of trigonometry relations, depth information can be calculated from disparity. Binocular stereo vision method is well developed and stably contributes to favorable 3D reconstruction, leading to a better performance when compared to other 3D construction. Unfortunately, it is computationally intensive, besides it performs rather poorly when baseline distance is large.
+
+====Problem statement and basics====
+The approach of using Binocular [[computer stereo vision|stereo vision]] to acquire object's 3D geometric information is on the basis of visual [[Binocular disparity|disparity]].<ref>McCoun, Jacques, and Lucien Reeves. Binocular vision: development, depth perception and disorders. [[Nova Science Publishers, Inc.]], 2010.</ref> The following picture provides a simple schematic diagram of horizontally sighted Binocular Stereo Vision, where b is the baseline between projective centers of two cameras. 
+[[File:Stereoscopic schematic.png|thumb|Geometry of a stereoscopic system]]
+The origin of the camera's coordinate system is at the optical center of the camera's lens as shown in the figure. Actually, the camera's image plane is behind the [[optical center]] of the camera's lens. However, to simplify the calculation, images are drawn in front of the optical center of the lens by f. The u-axis and v-axis of the image's coordinate system <math>O_1uv</math> are in the same direction with x-axis and y-axis of the camera's coordinate system respectively. The origin of the image's coordinate system is located on the intersection of imaging plane and the optical axis. Suppose such world point <math>P</math> whose corresponding image points are <math>P_1(u_1,v_1)</math> and <math>P_2(u_2,v_2)</math> respectively on the left and right image plane. Assume two cameras are in the same plane, then y-coordinates of <math>P_1</math> and <math>P_2</math> are identical, i.e.,<math>v_1 = v_2</math>. According to [[trigonometry]] relations,
+
+<math> u_1=f\frac{x_p}{z_p} </math>
+
+<math> u_2=f\frac{x_p-b}{z_p} </math>
+
+<math> v_1=v_2=f\frac{y_p}{z_p} </math>
+
+where <math>(x_p,y_p,z_p)</math> are coordinates of <math>P</math> in the left camera's coordinate system, <math>f</math> is [[focal length]] of the camera.
+Visual disparity is defined as the difference in image point location of a certain world point acquired by two cameras,
+
+<math> d=u_1-u_2=f\frac{b}{z_p} </math>
+
+based on which the coordinates of <math>P</math> can be worked out.
+
+Therefore, once the coordinates of image points is known, besides the parameters of two cameras, the 3D coordinate of the point can be determined.
+
+<math> x_p=\frac{bu_1}{d} </math>
+
+<math> y_p=\frac{bv_1}{d} </math>
+
+<math> z_p=\frac{bf}{d} </math>
+
+The 3D reconstruction consists of the following sections:
+
+====Image acquisition====
+2D digital image acquisition is the information source of 3D reconstruction. Commonly used 3D reconstruction is based on two or more images, although it may employ only one image in some cases. There are various types of methods for image acquisition that depends on the occasions and purposes of the specific application. Not only the requirements of the application must be met, but also the visual disparity, illumination, performance of camera and the feature of scenario should be considered.
+
+====Camera calibration====
+{{main|Geometric camera calibration}}
+Camera calibration in Binocular Stereo Vision refers to the determination of the mapping relationship between the image points <math>P_1(u_1,v_1)</math> and <math>P_2(u_2,v_2)</math>, and space coordinate <math>P(x_p,y_p,z_p)</math> in the 3D scenario. Camera calibration is a basic and essential part in 3D reconstruction via Binocular Stereo Vision.
+
+====Feature extraction====
+
+{{Main|Feature extraction}}
+
+The aim of feature extraction is to gain the characteristics of the images, through which the stereo correspondence processes. As a result, the characteristics of the images closely link to the choice of matching methods. There is no such universally applicable theory for features extraction, leading to a great diversity of stereo correspondence in Binocular Stereo Vision research.
+
+====Stereo correspondence====
+
+{{Main|Image registration}}
+
+Stereo correspondence is to establish the correspondence between primitive factors in images, i.e. to match <math>P_1(u_1,v_1)</math> and <math>P_2(u_2,v_2)</math> from two images. Certain interference factors in the scenario should be noticed, e.g. illumination, noise, surface physical characteristic, etc.
+
+====Restoration====
+According to precise correspondence, combined with camera location parameters, 3D geometric information can be recovered without difficulties. Due to the fact that accuracy of 3D reconstruction depends on the precision of correspondence, error of camera location parameters and so on, the previous procedures must be done carefully to achieve relatively accurate 3D reconstruction.
+
+==== 3D Reconstruction of medical images ====
+Clinical routine of diagnosis, patient follow-up, computer assisted surgery, surgical planning etc. are facilitated by accurate 3D models of the desired part of human anatomy. Main motivation behind 3D reconstruction includes
+* Improved accuracy due to multi view aggregation.
+* Detailed surface estimates.
+* Can be used to plan, simulate, guide, or otherwise assist a surgeon in performing a medical procedure.
+* The precise position and orientation of the patient's anatomy can be determined.
+* Helps in a number of clinical areas, such as radiotherapy planning and treatment verification, spinal surgery, hip replacement, neurointerventions and aortic stenting.
+'''Applications:'''
+
+3D reconstruction has applications in many fields. They include: 
+* Pavement engineering<ref name="Mahmoudzadeh 1655"/><ref>{{cite arXiv|last1=Mahmoudzadeh|first1=Ahmadreza|last2=Yeganeh|first2=Sayna Firoozi|last3=Golroo|first3=Amir|date=2019-07-09|title=3D pavement surface reconstruction using an RGB-D sensor|eprint=1907.04124|class=cs.CV}}</ref>
+*Medicine<ref name="Zheng" />
+*[[Free-viewpoint television|Free-viewpoint]] video reconstruction<ref>Carranza, Joel, et al. "[https://graphics.tu-bs.de/upload/people/magnor/publications/sig03.pdf Free-viewpoint video of human actors]." ACM Transactions on Graphics. Vol. 22. No. 3. ACM, 2003.</ref>
+*[[Robotic mapping]]<ref>Thrun, Sebastian. "[https://web.archive.org/web/20181025070948/https://pdfs.semanticscholar.org/cbe0/46f24f31aace8b61b36e41392a93225029e0.pdf Robotic mapping: A survey]." Exploring artificial intelligence in the new millennium 1.1-35 (2002): 1.</ref>
+* City planning<ref>{{Cite book|last1=Poullis|first1=Charalambos|last2=You|first2=Suya|title=2011 International Conference on 3D Imaging, Modeling, Processing, Visualization and Transmission |chapter=3D Reconstruction of Urban Areas |date=May 2011|pages=33–40|doi=10.1109/3dimpvt.2011.14|isbn=978-1-61284-429-9|s2cid=1189988}}</ref>
+* [[Tomographic reconstruction]]<ref>Xu, Fang, and Klaus Mueller. "[https://cvc.cs.stonybrook.edu/Publications/2007/XM07/13pmb7_12_006.pdf Real-time 3D computed tomographic reconstruction using commodity graphics hardware] {{Webarchive|url=https://web.archive.org/web/20160319143427/https://cvc.cs.stonybrook.edu/Publications/2007/XM07/13pmb7_12_006.pdf |date=2016-03-19 }}." Physics in Medicine & Biology 52.12 (2007): 3405.</ref>
+* Gaming<ref name="Mortara">Mortara, Michela, et al. "[https://hal.archives-ouvertes.fr/hal-01120560/file/Mortara_12664.pdf Learning cultural heritage by serious games]." Journal of Cultural Heritage 15.3 (2014): 318-325.</ref>
+* [[Virtual environment]]s and [[virtual tourism]]<ref name = "Mortara"/>
+* [[Earth observation]]
+* Archaeology<ref>{{Cite journal |last1=Bruno |first1=Fabio |last2=Bruno |first2=Stefano |last3=De Sensi |first3=Giovanna |last4=Luchi |first4=Maria-Laura |last5=Mancuso |first5=Stefania |last6=Muzzupappa |first6=Maurizio |display-authors=1 |date=January–March 2010 |title=From 3D reconstruction to virtual reality: A complete methodology for digital archaeological exhibition |url=https://www.researchgate.net/publication/248546261 |journal=[[Journal of Cultural Heritage]] |volume=11 |issue=1 |pages=42–49 |doi=10.1016/j.culher.2009.02.006 |via=ResearchGate}}</ref>
+* [[Augmented reality]]<ref>Izadi, Shahram, et al. "[https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/kinectfusion-uist-comp.pdf KinectFusion: real-time 3D reconstruction and interaction using a moving depth camera]." Proceedings of the 24th annual ACM symposium on User interface software and technology. ACM, 2011.</ref>
+* Reverse engineering<ref>{{Cite journal|last1=Wang|first1=Jun|last2=Gu|first2=Dongxiao|last3=Yu|first3=Zeyun|last4=Tan|first4=Changbai|last5=Zhou|first5=Laishui|date=December 2012|title=A framework for 3D model reconstruction in reverse engineering|journal=Computers & Industrial Engineering|volume=63|issue=4|pages=1189–1200|doi=10.1016/j.cie.2012.07.009}}</ref>
+* [[Motion capture]]<ref>Moeslund, Thomas B., and Erik Granum. "[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.108.203&rep=rep1&type=pdf A survey of computer vision-based human motion capture]." Computer vision and image understanding 81.3 (2001): 231-268.</ref>
+* [[3D object recognition]],<ref>Hejrati, Mohsen, and Deva Ramanan. "[http://openaccess.thecvf.com/content_cvpr_2014/papers/Hejrati_Analysis_by_Synthesis_2014_CVPR_paper.pdf Analysis by synthesis: 3d object recognition by object reconstruction]." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2014.</ref> [[gesture recognition]] and [[hand tracking]]<ref>Keskin, Cem, Ayse Erkan, and Lale Akarun. "[https://pdfs.semanticscholar.org/7c97/ad62353a32ef80bf61a3e8e2dc5c701f9914.pdf Real time hand tracking and 3d gesture recognition for interactive interfaces using hmm]." ICANN/ICONIPP 2003 (2003): 26-29.</ref>
+'''Problem Statement:'''
+
+Mostly algorithms available for 3D reconstruction are extremely slow and cannot be used in real-time. Though the algorithms presented are still in infancy but they have the potential for fast computation.
+
+'''Existing Approaches:'''
+[[File:Delaunay Triangulation (25 Points).svg|thumb|[[Delaunay triangulation]] (25 Points)]]
+'''Delaunay and alpha-shapes'''
+* Delaunay method involves extraction of tetrahedron surfaces from initial point cloud. The idea of ‘shape’ for a set of points in space is given by concept of alpha-shapes. Given a finite point set S, and the real parameter alpha, the alpha-shape of S is a polytope (the generalization to any dimension of a two dimensional polygon and a three-dimensional polyhedron) which is neither convex nor necessarily connected.<ref name=":0">{{Cite journal |title=3D reconstruction of medical images from slices automatically landmarked with growing neural models |last1=Angelopoulou |first1=A. |last2=Psarrou |first2=A. |last3=Garcia-Rodriguez |first3=J. |last4= Orts-Escolano |first4=S. |last5=Azorin-Lopez |first5=J. |last6=Revett |first6=K. |journal=Neurocomputing |volume=150 |issue=Part A |date=20 February 2015 |pages=16–25 |doi=10.1016/j.neucom.2014.03.078|url=http://westminsterresearch.wmin.ac.uk/15687/1/Angelopoulou_Psarrou_etal_.2014.pdf |hdl=10045/42544 |hdl-access=free }}</ref> For a large value, the alpha-shape is identical to the convex-hull of S. The algorithm proposed by Edelsbrunner and Mucke<ref name=":1">{{Cite journal |title=Three-dimensional alpha shapes |journal=ACM Trans. Graph. |volume=13 |issue=1 |date=January 1994 |pages=43–72 |bibcode=1994math.....10208E |last1=Edelsbrunner |first1=Herbert |last2=Mücke |first2=Ernst |doi=10.1145/174462.156635 |arxiv=math/9410208 |s2cid=1600979 }}</ref> eliminates all tetrahedrons which are delimited by a surrounding sphere smaller than α. The surface is then obtained with the external triangles from the resulting tetrahedron.<ref name=":1" />
+* Another algorithm called Tight Cocone<ref name=":2">{{Cite journal |title=Probable surface reconstruction from noisy samples |first1=Tamal K. |last1=Dey |author1-link=Tamal Dey|first2=Samrat |last2=Goswami |journal=[[Computational Geometry (journal)|Computational Geometry]] |volume=35 |issue=1–2 |date=August 2006 |pages=124–141 |doi=10.1016/j.comgeo.2005.10.006 |doi-access= }}</ref> labels the initial tetrahedrons as interior and exterior. The triangles found in and out generate the resulting surface.
+Both methods have been recently extended for reconstructing point clouds with noise.<ref name=":2" /> In this method the quality of points determines the feasibility of the method. For precise triangulation since we are using the whole point cloud set, the points on the surface with the error above the threshold will be explicitly represented on reconstructed geometry.<ref name=":0" />
+[[File:MarchingCubes.svg|thumb|Marching Cubes]]
+'''Zero set Methods'''
+
+Reconstruction of the surface is performed using a distance function which assigns to each point in the space a signed distance to the surface ''S''. A contour algorithm is used to extracting a zero-set which is used to obtain polygonal representation of the object. Thus, the problem of reconstructing a surface from a disorganized point cloud is reduced to the definition of the appropriate function ''f'' with a zero value for the sampled points and different to zero value for the rest. An algorithm called [[marching cubes]] established the use of such methods.<ref>{{Cite journal |first1=William E. |last1=Lorensen |first2=Harvey E. |last2=Cline |title=Marching cubes: A high resolution 3D surface construction algorithm |journal=ACM SIGGRAPH Computer Graphics |volume=21 |issue=4 |date=July 1987 |pages=163–169 |doi=10.1145/37402.37422|citeseerx=10.1.1.545.613 }}</ref> There are different variants for given algorithm, some use a discrete function ''f'', while other use a polyharmonic radial basis function is used to adjust the initial point set.<ref>{{Cite journal |title=Surface reconstruction from unorganized points |first1=Hugues |last1=Hoppe |first2=Tony |last2=DeRose |first3=Tom |last3=Duchamp |first4=John |last4=McDonald |first5=Werner |last5=Stuetzle |journal=ACM SIGGRAPH Computer Graphics |volume=26 |issue=2 |date=July 1992 |pages=71–78 |doi=10.1145/142920.134011|citeseerx=10.1.1.5.3672 }}</ref><ref>{{Cite book |chapter=Reconstruction and representation of 3d objects with radial basis functions |title=28th Annual Conference on Computer Graphics and Interactive Techniques SIGGRAPH 2001 |publisher=ACM |year=2001 |pages=67–76 |chapter-url=http://mesh.brown.edu/DGP/pdfs/Carr-sg2001.pdf |first1=J.C. |last1=Carr |first2=R.K. |last2=Beatson |first3=J.B. |last3=Cherrie |first4=T.J. |last4=Mitchell |first5=W.R. |last5=Fright |first6=B.C. |last6=McCallum |first7=T.R. |last7=Evans }}</ref> Functions like Moving Least Squares, basic functions with local support,<ref>{{Cite journal |url=http://www.kyb.mpg.de/fileadmin/user_upload/files/publications/attachments/ImplicitElectronic_3958%5b0%5d.pdf |first1=C. |last1=Walder |first2=B. |last2=Schölkopf |first3=O. |last3=Chapelle |title=Implicit Surface Modelling with a Globally Regularised Basis of Compact Support |journal=Eurographics |volume=25 |year=2006 |issue=3 |access-date=2018-10-09 |archive-url=https://web.archive.org/web/20170922010021/http://www.kyb.mpg.de/fileadmin/user_upload/files/publications/attachments/ImplicitElectronic_3958%5b0%5d.pdf |archive-date=2017-09-22 |url-status=dead }}</ref> based on the Poisson equation have also been used. Loss of the geometry precision in areas with extreme curvature, i.e., corners, edges is one of the main issues encountered. Furthermore, pretreatment of information, by applying some kind of filtering technique, also affects the definition of the corners by softening them. There are several studies related to post-processing techniques used in the reconstruction for the [[corner detection|detection and refinement of corners]] but these methods increase the complexity of the solution.<ref>{{Cite journal |first=C.L. |last=Wang |title=Incremental reconstruction of sharp edges on mesh surfaces |journal=Computer-Aided Design |volume=38 |issue=6 |date=June 2006 |pages=689–702 |doi=10.1016/j.cad.2006.02.009}}</ref> 
+[[File:Solid geometry with volume rendering.jpg|thumb|Solid geometry with volume rendering Image courtesy of Patrick Chris Fragile Ph.D., UC Santa Barbara]]
+'''VR Technique'''
+
+Entire volume transparence of the object is visualized using VR technique. Images will be performed by projecting rays through volume data. Along each ray, opacity and color need to be calculated at every voxel. Then information calculated along each ray will to be aggregated to a pixel on image plane. This technique helps us to see comprehensively an entire compact structure of the object. Since the technique needs enormous amount of calculations, which requires strong configuration computers is appropriate for low contrast data. Two main methods for rays projecting can be considered as follows: 
+* Object-order method: Projecting rays go through volume from back to front (from volume to image plane). 
+* Image-order or ray-casting method: Projecting rays go through volume from front to back (from image plane to volume).There exists some other methods to composite image, appropriate methods depending on the user's purposes. Some usual methods in medical image are [[Maximum intensity projection|MIP]] (maximum intensity projection), MinIP (minimum intensity projection), AC ([[alpha compositing]]) and [[Non-photorealistic rendering|NPVR]] (non-photorealistic [[volume rendering]]).
+[[File:Ray in voxel grid.svg|thumb|Tracing a ray through a voxel grid. The voxels which are traversed in addition to those selected using a standard 8-connected algorithm are shown hatched.]]
+'''Voxel Grid'''
+
+In this filtering technique input space is sampled using a grid of 3D voxels to reduce the number of points.<ref>{{Cite book |last=Connolly |first=C. |title=Proceedings. 1984 IEEE International Conference on Robotics and Automation |chapter=Cumulative generation of octree models from range data |date=1984 |volume=1 |pages=25–32 |doi=10.1109/ROBOT.1984.1087212 }}</ref> For each [[voxel]], a centroid is chosen as the representative of all points. There are two approaches, the selection of the voxel centroid or select the centroid of the points lying within the voxel. To obtain internal points average has a higher computational cost, but offers better results. Thus, a subset of the input space is obtained that roughly represents the underlying surface. The Voxel Grid method presents the same problems as other filtering techniques: impossibility of defining the final number of points that represent the surface, geometric information loss due to the reduction of the points inside a voxel and sensitivity to noisy input spaces.
+
+==See also==
+* [[3D modeling]]
+* [[3D data acquisition and object reconstruction]]
+* [[3D reconstruction from multiple images]]
+* [[3D scanner]]
+* [[3D SEM surface reconstruction]]
+* [[4D reconstruction]]
+* [[Depth map]]
+* [[Kinect]]
+* [[Photogrammetry]]
+* [[Stereoscopy]]
+* [[Structure from motion]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+{{Wiktionary}}
+*[https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes with Deep Generative Networks] - Generate and reconstruct 3D shapes via modeling multi-view depth maps or silhouettes.
+
+==External links==
+* http://www.nature.com/subjects/3d-reconstruction#news-and-comment
+* http://6.869.csail.mit.edu/fa13/lectures/lecture11shapefromX.pdf
+* http://research.microsoft.com/apps/search/default.aspx?q=3d+reconstruction
+* https://research.google.com/search.html#q=3D%20reconstruction
+
+{{Computer vision}}
+
+[[Category:3D computer graphics]]
+[[Category:3D imaging]]
+[[Category:Computer vision]]

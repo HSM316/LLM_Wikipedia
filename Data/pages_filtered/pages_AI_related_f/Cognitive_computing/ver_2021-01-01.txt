@@ -1,0 +1,43 @@
+ 
+
+Cognitive computing (CC) describes technology platforms that, broadly speaking, are based on the scientific disciplines of artificial intelligence and signal processing.  These platforms encompass machine learning, reasoning, natural language processing, speech recognition and vision (object recognition), human–computer interaction, dialog and narrative generation, among other technologies.Augmented intelligence, helping humans make smarter decisions. Hewlett Packard Enterprise. http://h20195.www2.hpe.com/V2/GetPDF.aspx/4AA6-4478ENW.pdf 
+
+ Definition 
+At present, there is no widely agreed upon definition for cognitive computing in either academia or industry.
+
+In general, the term cognitive computing has been used to refer to new hardware and/or software that mimics the functioning of the human brainTerdiman, Daniel (2014) .IBM's TrueNorth processor mimics the human brain.http://www.cnet.com/news/ibms-truenorth-processor-mimics-the-human-brain/Knight, Shawn (2011). IBM unveils cognitive computing chips that mimic human brain TechSpot: August 18, 2011, 12:00 PMHamill, Jasper (2013). Cognitive computing: IBM unveils software for its brain-like SyNAPSE chips The Register: August 8, 2013 (2004) and helps to improve human decision-making. In this sense, CC is a new type of computing with the goal of more accurate models of how the human brain/mind senses, reasons, and responds to stimulus. CC applications link data analysis and adaptive page displays (AUI) to adjust content for a particular type of audience. As such, CC hardware and applications strive to be more affective and more influential by design.
+
+Some features that cognitive systems may express are:
+Adaptive They may learn as information changes, and as goals and requirements evolve. They may resolve ambiguity and tolerate unpredictability. They may be engineered to feed on dynamic data in real time, or near real time.
+Interactive They may interact easily with users so that those users can define their needs comfortably. They may also interact with other processors, devices, and cloud services, as well as with people.
+Iterative and stateful They may aid in defining a problem by asking questions or finding additional source input if a problem statement is ambiguous or incomplete. They may "remember" previous interactions in a process and return information that is suitable for the specific application at that point in time.
+Contextual They may understand, identify, and extract contextual elements such as meaning, syntax, time, location, appropriate domain, regulations, user’s profile, process, task and goal. They may draw on multiple sources of information, including both structured and unstructured digital information, as well as sensory inputs (visual, gestural, auditory, or sensor-provided).Deanfelis, Stephen (2014). Will 2014 Be the Year You Fall in Love With Cognitive Computing? Wired: 2014-04-21
+
+Use cases
+
+ Speech recognition 
+ Sentiment analysis 
+ Face detection 
+ Risk assessment
+ Fraud detection
+ Behavioral recommendations
+
+ Cognitive analytics 
+Cognitive computing-branded technology platforms typically specialize in the processing and analysis of large, unstructured datasets.
+
+Word processing documents, emails, videos, images, audio files, presentations, webpages, social media and many other data formats often need to be manually tagged with metadata before they can be fed to a computer for analysis and insight generation. The principal benefit of utilizing cognitive analytics over traditional big data analytics is that such datasets do not need to be pre-tagged.
+
+Other characteristics of a cognitive analytics system include:
+ Adaptability: cognitive analytics systems can use machine learning to adapt to different contexts with minimal human supervision
+ Natural language interaction: cognitive analytics systems can be equipped with a chatbot or search assistant that understands queries, explains data insights and interacts with humans in natural language.
+
+ Applications 
+Education Even if Cognitive Computing can not take the place of teachers, it can still be a heavy driving force in the education of students. Cognitive Computing being used in the classroom is applied by essentially having an assistant that is personalized for each individual student. This cognitive assistant can relieve the stress that teachers face while teaching students, while also enhancing the student’s learning experience over all. Teachers may not be able to pay each and every student individual attention, this being the place that cognitive computers fill the gap. Some students may need a little more help with a particular subject. For many students, Human interaction between student and teacher can cause anxiety and can be uncomfortable. With the help of Cognitive Computer tutors, students will not have to face their uneasiness and can gain the confidence to learn and do well in the classroom. While a student is in class with their personalized assistant, this assistant can develop various techniques, like creating lesson plans, to tailor and aid the student and their needs.
+Healthcare Numerous tech companies are in the process of developing technology that involves Cognitive Computing that can be used in the medical field. The ability to classify and identify is one of the main goals of these cognitive devices. This trait can be very helpful in the study of identifying carcinogens. This cognitive system that can detect would be able to assist the examiner in interpreting countless numbers of documents in a lesser amount of time than if they did not use Cognitive Computer technology. This technology can also evaluate information about the patient, looking through every medical record in depth, searching for indications that can be the source of their problems.
+
+ Industry work 
+Cognitive Computing in conjunction with big data and algorithms that comprehend customer needs, can be a major advantage in economic decision making.
+
+The powers of Cognitive Computing and AI hold the potential to affect almost every task that humans are capable of performing. This can negatively affect employment for humans, as there would be no such need for human labor anymore. It would also increase the inequality of wealth; the people at the head of the Cognitive Computing industry would grow significantly richer, while workers without ongoing, reliable employment would become less well off.
+
+The more industries start to utilize Cognitive Computing, the more difficult it will be for humans to compete. Increased use of the technology will also increase the amount of work that AI-driven robots and machines can perform. Only extraordinarily talented, capable and motivated humans would be able to keep up with the machines. The influence of competitive individuals in conjunction with AI/CC with has the potential to change the course of humankind.

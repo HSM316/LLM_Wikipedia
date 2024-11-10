@@ -1,0 +1,11 @@
+OpenRemote is an open source IoT solution available for smart building, and smart city automation, which integrates many different protocols and solutions, and offers visualization tools. OpenRemote Inc. was originally created by the founder of JBoss Marc Fleury, to enable the sponsorship of the OpenRemote open source project. OpenRemote follows the same Professional Open Source methodology, licensing under the Affero General Public License version 3.
+
+It initially, successfully started the first open source home automation solution, but moved away form that with a new more generic IoT platform.
+
+ OpenRemote open source IoT platform 
+
+Manager 3.0 is created to handle larger multi tenant applications. It includes a generic asset and attribute structure, allowing users to build their own asset types and adding their protocols, using generic protocols (eg. HTTP/REST, MQTT, Bluetooth) or more traditional protocols such as KNX, BACnet, Modbus, Zwave. A rules engine allows for several ways of programming logic (When-Then rules, Flow rules, or Groovy programmed). A UI component library offers front end developers a quick way to build project specific frontend applications, using regular tools like Angular or React (web framework). By using multiple instances in an Edge Gateway mode on eg. ARM64, multiple projects can be connected to, and synchronised with, a centrally hosted instance.
+
+ Reception 
+
+OpenRemote is applied in a range of energy management, asset management and smart city applications. Examples can be found on their website openremote.io. Recently, they have gained some traction with licensing. In addition they are adopted by cities and property developers, which apply the tools to distributed energy management solutions, smart cities. Next to earlier recognition by MIT Technology review , they also got recognised by the Dutch Ministry of Security & Justice.

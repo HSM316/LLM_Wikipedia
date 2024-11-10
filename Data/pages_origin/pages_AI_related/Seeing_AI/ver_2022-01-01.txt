@@ -1,0 +1,54 @@
+{{Infobox software
+| name = Seeing AI
+| logo = 
+| logo size = 
+| logo caption = App icon seen on [[Android (operating system)|Android]] and [[iOS]]
+| screenshot = 
+| screenshot size = 
+| caption = Seeing AI homes screen, as seen on [[iOS]].
+| collapsible = yes
+| developer = [[Microsoft]]
+| released = {{Start date and age|2017|7|12}}
+| latest release version = 4.0.1
+| latest release date = {{Start date and age|2021|02|19|df=yes}}<ref name="ios release">{{cite web
+    | url = https://apps.apple.com/app/seeing-ai-talking-camera-for-the-blind/id999062298
+    | title = Seeing AI on the App Store
+    | website = apps.apple.com
+    | access-date = 2021-04-29
+  }}</ref>
+| operating system = [[iOS]], [[iPadOS]]
+| size = 302.9&nbsp;[[Megabyte|MB]]<ref name="ios release"/>
+| language = English, Czech, Danish, Dutch, Finnish, French, German, Greek, Hungarian, Italian, Japanese, Polish, Portuguese, Spanish, Swedish, Turkish
+| language count = 16
+| language footnote = <ref name="ios release"/>
+| genre = {{flatlist|
+* [[Application software]]
+}}
+| license = [[Proprietary software]]
+| website = {{url|https://www.microsoft.com/ai/seeing-ai}}
+}}
+'''Seeing AI''' is an [[artificial intelligence]] application developed by [[Microsoft]] for [[iOS]].<ref>{{Cite web|url=https://itunes.apple.com/us/app/seeing-ai-talking-camera-for-the-blind/id999062298|title=Seeing AI on the App Store|website=App Store|language=en-US|access-date=2018-05-20}}</ref><ref>{{cite web |last1=Novet |first1=Jordan |title=Microsoft has a new app that tells the visually impaired what's in front of them |url=https://www.cnbc.com/2017/07/12/microsoft-launches-seeing-ai-app-for-ios.html |website=CNBC |accessdate=6 June 2019}}</ref> Seeing AI uses the device camera to identify people and objects, and then the app audibly describes those objects for people with visual impairment.<ref>{{cite web |last1=Shah |first1=Saqib |title=Microsoft's Seeing AI app for the blind now reads handwriting |url=https://www.engadget.com/2017/12/14/microsoft-seeing-ai-app-update/ |website=Endgadget |accessdate=6 June 2019}}</ref>
+
+== Capabilities ==
+
+Seeing AI is primarily used to describe short text, documents, products, people, currency scenery, colors, handwriting and light.<ref>{{cite web |last1=Bishop |first1=Todd |title=Microsoft's new AI app describes the world for the visually impaired — now available on iPhone |url=https://www.geekwire.com/2017/microsofts-new-ai-app-describes-world-visually-impaired-now-available-iphone/ |website=Geekwire |accessdate=6 June 2019}}</ref> The app can scan a barcode to describe a product<ref>{{cite web |title=Microsoft's 'Seeing AI' app helps vision-impaired users "see" the world through words |url=https://digiaccessorg.wordpress.com/2019/04/14/microsofts-seeing-ai-app-helps-vision-impaired-users-see-the-world-through-words/ |website=DigiAccess |accessdate=6 June 2019}}</ref> and uses sounds to assist the user in focusing on the barcode.<ref>{{cite web |last1=Tracy |first1=Phillip |title=How Microsoft's new app for the blind and visually impaired holds up |url=https://www.dailydot.com/debug/microsoft-seeing-ai-app/ |website=The Daily Dot |accessdate=6 June 2019}}</ref> When the app describes people, it attempts to estimate the person's age, gender, and emotional status.<ref>{{cite web |last1=Kelley |first1=Steven |title=Seeing AI: Artificial Intelligence for Blind and Visually Impaired Users |url=https://www.visionaware.org/info/everyday-living/helpful-products/using-apps/seeing-ai-app/1235 |website=Vision Aware |accessdate=6 June 2019}}</ref> Additionally, in a test run by German journalists in December 2019, ''Seeing AI'' apparently used some sort of [[Facial recognition system]] to identify people on photographs by name.<ref>[https://www.faz.net/aktuell/technik-motor/digital/microsoft-app-seeing-ai-16520240.html "Der Blindenhund kennt auch die Namen"] [[Frankfurter Allgemeine Zeitung]] 5 December 2019</ref>
+
+Some functions are performed on the device, however more complex functions such as describing a scene or recognizing handwriting require an [[Cloud computing|Internet connection]].<ref>{{cite web |last1=Vincent |first1=James |title=Microsoft's new iPhone app narrates the world for blind people |url=https://www.theverge.com/2017/7/12/15958174/microsoft-ai-seeing-app-blind-ios |website=The Verge |accessdate=6 June 2019}}</ref>
+
+In December 2017, Seeing AI introduced the ability for [[currency]] recognition for [[United States dollar|US]] and [[Canadian dollar]], [[Pound sterling|British pounds]] and [[Euro]]s.<ref>{{Cite news|url=https://blogs.msdn.microsoft.com/accessibility/2017/12/13/seeing-ai-new-features/|title=Updated with currency and color recognition, Seeing AI is available in 35 countries|work=Microsoft Accessibility Blog|access-date=2018-05-20|language=en-US}}</ref>
+
+In December 2019, Seeing AI added support for five more languages, Dutch, French, German, Japanese, Spanish.<ref>{{Cite news|url=https://news.microsoft.com/features/bonjour-bienvenidos-seeing-ai-expands-to-5-new-languages/|title=Bonjour! ¡Bienvenidos! Seeing AI expands to 5 new languages|work=Microsoft Features|accessdate=2019-12-05|language=en-AU}}</ref>
+
+Seeing AI is available in 70 countries such as Brazil, Argentina, Australia, Canada, Egypt, Albania, Bhutan, etc. 
+
+Supported on iPhone 5C, 5S and later best performance with iPhone 6S, SE and later models
+
+== References ==
+{{reflist}}
+
+{{Microsoft}}
+__INDEX__
+
+[[Category:Artificial intelligence]]
+[[Category:Microsoft]]
+[[Category:Microsoft software]]

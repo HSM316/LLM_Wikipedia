@@ -1,0 +1,38 @@
+{{update|date=June 2018}}
+The '''Quantum Artificial Intelligence Lab''' (also called the '''Quantum AI Lab''' or '''QuAIL''') is a joint initiative of [[NASA]], [[Universities Space Research Association]], and [[Google]] (specifically, Google Research) whose goal is to pioneer research on how [[quantum computing]] might help with [[machine learning]] and other difficult computer science problems. The lab is hosted at NASA's [[Ames Research Center]].<ref name=google-announcement>{{cite web|url=http://googleresearch.blogspot.com/2013/05/launching-quantum-artificial.html|title = Launching the Quantum Artificial Intelligence Lab|last = Neven|first = Hartmut|date = May 16, 2013|access-date = February 11, 2014|publisher = Google Research}}</ref><ref name=official>{{cite web|url = http://www.nas.nasa.gov/quantum/|title = QuAIL Home|access-date = February 11, 2014|url-status = dead|archive-url = https://web.archive.org/web/20150310044853/http://www.nas.nasa.gov/quantum/|archive-date = March 10, 2015}}</ref>
+
+==History==
+
+The Quantum AI Lab was announced by Google Research in a blog post on May 16, 2013.<ref name=google-announcement/><ref name=technologyreview-launch>{{cite magazine|url=http://www.technologyreview.com/news/514846/google-and-nasa-launch-quantum-computing-ai-lab/|title = Google and NASA Launch Quantum Computing AI Lab: The Quantum Artificial Intelligence Lab will use the most advanced commercially available quantum computer, the D-Wave Two.|last = Choi|first = Charles|date = May 16, 2013|access-date = February 11, 2014|magazine = [[Technology Review]]}}</ref><ref name=dwave>{{cite web|url=http://dwave.wordpress.com/2013/05/16/the-quantum-artificial-intelligence-lab/|title = http://dwave.wordpress.com/2013/05/16/the-quantum-artificial-intelligence-lab/|publisher = Hack The Multiverse|date = May 16, 2013|access-date = February 11, 2014}}</ref><ref>{{cite news|url=https://www.usatoday.com/story/tech/2013/05/24/google-nasa-computer/2358423/|title = Google, NASA take a 'quantum leap' with new computer|newspaper = [[USA Today]]|date = May 24, 2013|access-date = February 11, 2014}}</ref> At the time of launch, the Lab was using the most advanced commercially available quantum computer, D-Wave Two from [[D-Wave Systems]].<ref name=google-announcement/><ref name=technologyreview-launch/><ref name=dwave/>
+
+On May 20, 2013, it was announced that people could apply to use time on the [[D-Wave Two]] at the Lab.<ref name=dwave/>
+
+On October 10, 2013, Google released a short film describing the current state of the Quantum AI Lab.<ref>{{cite web|url=http://io9.com/a-sneak-peak-inside-google-and-nasas-new-quantum-ai-la-1444007785|title = A sneak peak inside Google and NASA's new quantum AI lab|last = Dvorsky|first = George|date = October 11, 2013|access-date = February 11, 2014|publisher = [[io9]]}}</ref><ref>{{cite web|url=http://news.cnet.com/8301-1023_3-57607000-93/google-reveals-the-state-of-its-quantum-lab-in-short-film/|title = Google reveals the state of its quantum lab in short film: The multiverse, physicist Richard Feynman, lobsters, and quantum tunneling all make appearances in Google's short documentary about its Quantum Artificial Intelligence Lab.|last = Rosenblatt|first = Seth|date = October 10, 2013|access-date = February 11, 2014|work = [[CNet]]}}</ref>
+
+On October 18, 2013, Google announced that it had incorporated [[quantum physics]] into ''[[Minecraft]]''.<ref>{{cite web|url=https://plus.google.com/+QuantumAILab/posts/grMbaaDGChH|title = qCraft: Quantum Physics In Minecraft
+|publisher = Google Quantum A.I. Lab Team|date = October 18, 2013|access-date = February 11, 2014}}</ref><ref>{{cite web|url=https://www.theverge.com/2013/10/20/4859548/googles-quantum-ai-lab-minecraft-quantum-physics|title = Google's Quantum AI Lab adds quantum physics to Minecraft|last = Hamburger|first = Ellis|date = October 20, 2013|access-date = February 11, 2014|website = [[The Verge]]}}</ref><ref>{{cite magazine|url=http://www.slate.com/blogs/future_tense/2013/10/18/qcraft_google_quantum_ai_lab_s_minecraft_mod_introduces_gamers_to_quantum.html|title = Google Is Teaching Quantum Physics to Minecraft Addicts|last = Oremus|first = Will|magazine = [[Slate Magazine]]|date = October 18, 2013|access-date = February 11, 2014}}</ref>
+
+In January 2014, Google reported results comparing the performance of the D-Wave Two in the lab with that of classical computers. The results were ambiguous and provoked heated discussion on the Internet.<ref>{{cite web|url=https://plus.google.com/+QuantumAILab/posts/DymNo8DzAYi|title = Where do we stand on benchmarking the D-Wave 2?|publisher = Google Quantum A. I. Lab Team|date = January 19, 2014|access-date = February 11, 2014}}</ref><ref>{{cite web|url=https://www.theregister.co.uk/2014/01/21/dwave_benchmark_flunked_or_wrong_test/|title = Boffin benchmark battle after D-Wave quantum kit crawls in test: D-Wave protests methods used to clock DW2 100 times slower than classical computers|last = Chrigwin|first = Richard|date = January 21, 2014|access-date = February 11, 2014|website = [[The Register]]}}</ref><ref>{{cite web|url=http://thinkingmachineblog.net/google-quantum-a-i-lab-update-on-the-d-wave-2-quantum-computer/|title = Google Quantum A.I. Lab Update on the D-Wave 2 Quantum Computer|last = Van Dusen|first = Augustus|date = January 21, 2014|publisher = Thinking Machine Blog}}</ref>
+On 2 September 2014, it was announced that the Quantum AI Lab, in partnership with [[UC Santa Barbara]], would be launching an initiative to create quantum information processors based on superconducting electronics.<ref>{{cite news|title=Google+ Post|url=https://plus.google.com/+QuantumAILab/posts/UcWGvc9Y6dU|access-date=11 January 2015}}</ref>
+
+On the 23rd of October 2019, the Quantum AI Lab announced in a paper that it had achieved [[quantum supremacy]]. <ref>{{cite web|url=https://www.nature.com/articles/s41586-019-1666-5|title = Quantum supremacy using a programmable superconducting processor
+|publisher = Nature Journal|date = October 23, 2019|access-date = October 23, 2019}}</ref>
+
+==See also==
+* [[Artificial intelligence]]
+* [[Glossary of artificial intelligence]]
+* [[Google Brain]]
+* [[Google X]]
+
+==References==
+{{reflist|30em}}
+
+==External links==
+* {{Official website|https://ti.arc.nasa.gov/tech/dash/groups/physics/quail/}} (NASA)
+* {{Official website|www.usra.edu/quantum/}} (USRA)
+* {{Official website|https://ai.google/research/}} (Google)
+* {{Official Website | https://ai.google/research/teams/applied-science/quantum-ai/}} (Google Quantum AI)
+* [https://plus.google.com/+QuantumAILab/ Google Plus profile]
+
+[[Category:Applied machine learning]]
+[[Category:Google]]

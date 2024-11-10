@@ -1,0 +1,157 @@
+{{Short description|Notion of convergence of random variables}}
+{{other|uniform convergence}}
+'''Uniform convergence in probability''' is a form of [[convergence in probability]] in [[Asymptotic theory (statistics)|statistical asymptotic theory]] and [[probability theory]]. It means that, under certain conditions, the ''empirical frequencies'' of all events in a certain event-family converge to their ''theoretical probabilities''.  Uniform convergence in probability has applications to [[statistics]] as well as [[machine learning]] as part of [[statistical learning theory]].
+
+The [[law of large numbers]] says that, for each ''single'' event <math>A</math>, its empirical frequency in a sequence of independent trials converges (with high probability) to its theoretical probability. In many application however, the need arises to judge simultaneously the probabilities of events of an entire class <math>S</math> from one and the same sample. Moreover it, is required that the relative frequency of the events converge to the probability uniformly over the entire class of events <math>S</math> <ref name="vc" /> The Uniform Convergence Theorem gives a sufficient condition for this convergence to hold. Roughly, if the event-family is sufficiently simple (its [[VC dimension]] is sufficiently small) then uniform convergence holds.
+
+{{TOC limit|3}}
+
+== Definitions ==
+For a class of [[Predicate (mathematical logic)|predicates]] <math>H</math> defined on a set <math>X</math> and a set of samples <math>x=(x_1,x_2,\dots,x_m)</math>, where <math>x_i\in X</math>, the ''empirical frequency'' of <math>h\in H</math> on <math>x</math> is
+
+: <math>\widehat{Q}_x(h)=\frac 1 m |\{i:1\leq i\leq m, h(x_i)=1\}|.</math>
+
+The ''theoretical probability'' of <math>h\in H</math> is defined as <math>Q_P(h) = P\{y\in X : h(y)=1\}.</math>
+
+The Uniform Convergence Theorem states, roughly, that if <math>H</math> is "simple" and we draw samples independently (with replacement) from <math>X</math> according to any distribution <math>P</math>, then [[with high probability]], the empirical frequency will be close to its [[expected value]], which is the theoretical probability.<ref>{{Citation |title=Martingales |date=1991-02-14 |url=http://dx.doi.org/10.1017/cbo9780511813658.014 |work=Probability with Martingales |pages=93–105 |access-date=2023-12-08 |publisher=Cambridge University Press|doi=10.1017/cbo9780511813658.014 |isbn=978-0-521-40455-6 }}</ref>
+
+Here "simple" means that the [[Vapnik–Chervonenkis dimension]] of the class <math>H</math> is small relative to the size of the sample. In other words, a sufficiently simple collection of functions behaves roughly the same on a small random sample as it does on the distribution as a whole.
+
+The Uniform Convergence Theorem was first proved by Vapnik and Chervonenkis<ref name=vc>{{Cite Vapnik Chervonenkis}}</ref> using the concept of [[growth function]].
+
+==Uniform convergence theorem ==
+
+The statement of the uniform convergence theorem is as follows:<ref name="books.google.com">[https://books.google.com/books?id=OiSJYwp4lzYC&q=neural+network+learning+theoretical+foundations Martin Anthony Peter, l. Bartlett. Neural Network Learning: Theoretical Foundations, pages 46–50. First Edition, 1999. Cambridge University Press] {{ISBN|0-521-57353-X}}</ref>
+
+If <math>H</math> is a set of <math>\{0,1\}</math>-valued functions defined on a set <math>X</math> and  <math>P</math> is a probability distribution on <math>X</math> then for <math>\varepsilon>0</math> and <math>m</math> a positive integer, we have:
+: <math>P^m\{|Q_P(h)-\widehat{Q_x}(h)|\geq\varepsilon \text{ for some } h\in H\}\leq 4\Pi_H(2m)e^{-\varepsilon^2 m/8}.</math>
+: where, for any <math>x\in X^m,</math>,
+: <math>Q_P(h)=P\{(y\in X:h(y)=1\},</math>
+: <math>\widehat{Q}_x(h)=\frac 1 m |\{i:1\leq i\leq m,h(x_{i})=1\}|</math>
+: and <math>|x|=m</math>. <math>P^m</math> indicates that the probability is taken over <math>x</math> consisting of <math>m</math> i.i.d. draws from the distribution <math>P</math>.
+
+: <math>\Pi_H</math> is defined as: For any <math>\{0,1\}</math>-valued functions <math>H</math> over <math>X</math> and <math>D\subseteq X </math>,
+: <math>\Pi_H(D)=\{h\cap D:h\in H\}.</math>
+
+And for any natural number <math>m</math>, the [[shattering number]] <math>\Pi_H(m)</math> is defined as:
+: <math>\Pi_H(m)=\max|\{h\cap D:|D|=m,h\in H\}|.</math>
+
+From the point of Learning Theory one can consider <math>H</math> to be the [[Concept class|Concept/Hypothesis]] class defined over the instance set <math>X</math>. Before getting into the details of the proof of the theorem we will state Sauer's Lemma which we will need in our proof.
+
+== Sauer–Shelah lemma ==
+The [[Sauer–Shelah lemma]]<ref>[http://ttic.uchicago.edu/~tewari/lectures/lecture11.pdf Sham Kakade and Ambuj Tewari, CMSC 35900 (Spring 2008) Learning Theory, Lecture 11]</ref> relates the shattering number <math>\Pi_{h}(m)</math> to the VC Dimension.
+
+'''Lemma:''' <math>\Pi_{H}(m)\leq\left( \frac{em}{d}\right)^{d}</math>, where <math>d</math> is the [[VC Dimension]] of the concept class <math>H</math>.
+
+'''Corollary:''' <math>\Pi_{H}(m)\leq m^{d}</math>.
+
+== Proof of uniform convergence theorem ==
+<ref name=vc/> and <ref name="books.google.com"/> are the sources of the proof below. Before we get into the details of the proof of the ''Uniform Convergence Theorem'' we will present a high level overview of the proof.
+
+#''Symmetrization:'' We transform the problem of analyzing <math>|Q_{P}(h)-\widehat{Q}_{x}(h)|\geq\varepsilon</math> into the problem of analyzing <math>|\widehat{Q}_{r}(h)-\widehat{Q}_{s}(h)|\geq\varepsilon/2</math>, where <math>r</math> and <math>s</math> are i.i.d samples of size <math>m</math> drawn according to the distribution <math>P</math>. One can view <math>r</math> as the original randomly drawn sample of length <math>m</math>, while <math>s</math> may be thought as the testing sample which is used to estimate <math>Q_{P}(h)</math>.
+#''Permutation:'' Since <math>r</math> and <math>s</math> are picked identically and independently, so swapping elements between them will not change the probability distribution on <math>r</math> and <math>s</math>. So, we will try to bound the probability of <math>|\widehat{Q}_{r}(h)-\widehat{Q}_{s}(h)|\geq\varepsilon/2</math> for some <math>h \in H</math> by considering the effect of a specific collection of permutations of the joint sample <math>x=r||s</math>. Specifically, we consider permutations <math>\sigma(x)</math> which swap <math>x_i</math> and <math>x_{m+i}</math> in some subset of <math>{1,2,...,m}</math>. The symbol <math>r||s</math> means the concatenation of <math>r</math> and <math>s</math>.{{Citation needed|date=August 2020}}
+#''Reduction to a finite class:'' We can now restrict the function class <math>H</math> to a fixed joint sample and hence, if <math>H</math> has finite VC Dimension, it reduces to the problem to one involving a finite function class.
+
+We present the technical details of the proof.
+
+=== Symmetrization ===
+
+'''Lemma:''' Let <math>V=\{x\in X^m:|Q_P(h)-\widehat{Q}_x(h)|\geq\varepsilon \text{ for some } h\in H\}</math> and
+: <math>R=\{(r,s)\in X^m \times X^m:|\widehat{Q_r}(h)-\widehat{Q}_s(h) |\geq \varepsilon /2 \text{ for some } h\in H\}.</math>
+
+Then for <math>m\geq\frac 2 {\varepsilon^2}</math>, <math>P^m(V)\leq 2P^{2m}(R)</math>.
+
+Proof: 
+By the triangle inequality,<br> 
+if <math>|Q_{P}(h)-\widehat{Q}_r(h)|\geq\varepsilon</math> and <math>|Q_P(h)-\widehat{Q}_s (h)|\leq\varepsilon /2</math> then <math>|\widehat{Q}_r(h)-\widehat{Q}_s (h)|\geq\varepsilon /2</math>.
+
+Therefore,
+
+: <math>
+\begin{align}
+& P^{2m}(R) \\[5pt]
+\geq {} & P^{2m}\{\exists h\in H,|Q_{P}(h)-\widehat{Q}_r(h)| \geq \varepsilon \text{ and } |Q_P(h)-\widehat{Q}_s(h)|\leq\varepsilon /2\} \\[5pt]
+= {} & \int_V P^m\{s:\exists h\in H,|Q_P(h)-\widehat{Q}_r(h)|\geq\varepsilon \text{ and } |Q_P(h)-\widehat{Q}_s(h)|\leq\varepsilon /2\} \, dP^m(r) \\[5pt]
+= {} & A
+\end{align}
+</math>
+
+since <math>r</math> and <math>s</math> are independent.
+
+Now for <math>r\in V</math> fix an <math>h\in H</math> such that <math>|Q_P(h)-\widehat{Q}_r(h)|\geq\varepsilon</math>. For this <math>h</math>, we shall show that
+
+: <math>P^m \left\{ |Q_P(h)-\widehat{Q}_s(h)|\leq\frac \varepsilon 2\right\} \geq\frac 1 2. </math>
+
+Thus for any <math>r\in V</math>, <math>A\geq\frac{P^m(V)}2</math> and hence <math>P^{2m}(R)\geq\frac{P^m(V)}2</math>. And hence we perform the first step of our high level idea.
+
+Notice, <math>m\cdot \widehat{Q}_s(h)</math> is a binomial random variable with expectation <math>m\cdot Q_{P}(h)</math> and variance <math>m\cdot Q_P(h)(1-Q_P(h))</math>. By [[Chebyshev's inequality]] we get
+
+: <math>P^m \left\{|Q_P(h)-\widehat{Q_s(h)}| > \frac \varepsilon 2\right\} \leq \frac{m\cdot Q_P(h)(1-Q_P(h))}{(\varepsilon m/2)^2} \leq \frac 1 {\varepsilon^2 m} \leq\frac 1 2 </math>
+
+for the mentioned bound on <math>m</math>. Here we use the fact that <math>x(1-x)\leq 1/4</math> for <math>x</math>.
+
+=== Permutations ===
+
+Let <math>\Gamma_{m}</math> be the set of all permutations of <math>\{1,2,3,\dots,2m\}</math> that swaps <math>i</math> and <math>m+i</math> <math>\forall i</math> in some subset of <math>\{1,2,3,\ldots,2m\}</math>.
+
+'''Lemma:''' Let <math>R</math> be any subset of <math>X^{2m}</math> and <math>P</math> any probability distribution on <math>X</math>. Then,
+
+: <math>P^{2m}(R)=E[\Pr[\sigma(x)\in R]]\leq \max_{x\in X^{2m}}(\Pr[\sigma(x)\in R]),</math> 
+
+where the expectation is over <math>x</math> chosen according to <math>P^{2m}</math>, and the probability is over <math>\sigma</math> chosen uniformly from <math>\Gamma_{m}</math>.
+
+Proof: 
+For any <math>\sigma\in\Gamma_m,</math>
+
+: <math> P^{2m}(R) = P^{2m}\{x:\sigma(x)\in R\} </math>
+
+(since coordinate permutations preserve the product distribution <math> P^{2m}</math>.)
+
+: <math>
+\begin{align}
+\therefore P^{2m}(R) = {} & \int_{X^{2m}}1_{R}(x) \, dP^{2m}(x) \\[5pt]
+= {} & \frac{1}{|\Gamma_{m}|}\sum_{\sigma\in\Gamma_m} \int_{X^{2m}} 1_R(\sigma(x)) \, dP^{2m}(x) \\[5pt]
+= {} & \int_{X^{2m}} \frac 1 {|\Gamma_m|}\sum_{\sigma\in\Gamma_m} 1_R (\sigma(x)) \, dP^{2m}(x) \\[5pt]
+& \text{(because } |\Gamma_{m}| \text{ is finite)} \\[5pt]
+= {} & \int_{X^{2m}} \Pr[\sigma(x)\in R] \, dP^{2m}(x) \quad \text{(the expectation)} \\[5pt]
+\leq {} & \max_{x\in X^{2m}}(\Pr[\sigma(x)\in R]).
+\end{align}
+</math>
+
+The maximum is guaranteed to exist since there is only a finite set of values that probability under a random permutation can take.
+
+=== Reduction to a finite class ===
+
+'''Lemma:''' Basing on the previous lemma,
+: <math>\max_{x\in X^{2m}}(\Pr[\sigma(x)\in R])\leq 4\Pi_H(2m)e^{-\varepsilon^2 m/8} </math>.
+
+Proof:
+Let us define <math>x=(x_1,x_2,\ldots,x_{2m})</math> and <math>t=|H|_x|</math> which is at most <math>\Pi_H(2m)</math>. This means there are functions <math>h_1,h_2,\ldots,h_t\in H</math> such that for any <math>h\in H,\exists i</math> between <math>1</math> and <math>t</math> with <math>h_i(x_k)=h(x_k)</math> for <math>1\leq k\leq 2m. </math>
+
+We see that <math>\sigma(x)\in R</math> iff for some <math>h</math> in <math>H</math> satisfies,
+<math>|\frac{1}{m}|\{1\leq i\leq m:h(x_{\sigma_{i}})=1\}|-\frac{1}{m}|\{m+1\leq i\leq 2m:h(x_{\sigma_{i}})=1\}||\geq\frac{\varepsilon}{2}</math>.  
+Hence if we define <math>w^{j}_{i}=1</math> if <math>h_{j}(x_{i})=1</math> and <math>w^{j}_{i}=0</math> otherwise.
+
+For <math>1\leq i\leq m</math> and <math>1\leq j\leq t</math>, we have that <math>\sigma(x)\in R</math> iff for some <math>j</math> in <math>{1,\ldots,t}</math> satisfies <math>|\frac 1 m \left(\sum_i w^j_{\sigma(i)}-\sum_i w^j_{\sigma(m+i)}\right)|\geq\frac \varepsilon 2 </math>. By union bound we get
+
+: <math>\Pr[\sigma(x)\in R]\leq t\cdot \max\left(\Pr[|\frac 1 m \left(\sum_i w^j_{\sigma_i} - \sum_i w^j_{\sigma_{m+i}}\right)| \geq \frac \varepsilon 2]\right)</math>
+
+:<math>\leq \Pi_{H}(2m)\cdot \max\left(\Pr\left[ \left| \frac 1 m \left(\sum_i w^j_{\sigma_i}-\sum_i w^j_{\sigma_{m+i}}\right)\right| \geq \frac \varepsilon 2 \right] \right).</math>
+
+Since, the distribution over the permutations <math>\sigma</math> is uniform for each <math>i</math>, so <math>w^j_{\sigma_i}-w^j_{\sigma_{m+i}}</math> equals <math>\pm |w^j_i-w^j_{m+i}|</math>, with equal probability.
+
+Thus,
+
+: <math>\Pr\left[\left|\frac 1 m \left(\sum_i \left(w^j_{\sigma_i}-w^j_{\sigma_{m+i}}\right)\right)\right|\geq\frac \varepsilon 2\right] = \Pr\left[ \left| \frac 1 m \left( \sum_i|w^j_i-w^j_{m+i}|\beta_i\right)\right|\geq\frac \varepsilon 2\right],</math>
+
+where the probability on the right is over <math>\beta_{i}</math> and both the possibilities are equally likely. By [[Hoeffding's inequality]], this is at most <math>2e^{-m\varepsilon^2/8}</math>.
+
+Finally, combining all the three parts of the proof we get the '''Uniform Convergence Theorem'''.
+
+==References==
+{{Reflist}}
+
+[[Category:Combinatorics]]
+[[Category:Machine learning]]
+[[Category:Articles containing proofs]]
+[[Category:Probability theorems]]

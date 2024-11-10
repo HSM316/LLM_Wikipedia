@@ -1,0 +1,140 @@
+{{short description|Java framework for system development}}
+{{Infobox software
+| name                   = JACK Intelligent Agents
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| collapsible            = 
+| developer              = 
+| latest release version = 5.6
+| latest release date    = {{start date|2015|07|01}}
+| latest preview version = 
+| latest preview date    = 
+| size                   = 
+| operating system       = [[Cross-platform]]
+| programming language   = [[Java (programming language)|Java]]
+| genre                  = [[Multi-agent system]] [[Software framework|framework]]
+| license                = [[Proprietary software|Proprietary]] 
+| website                = {{url|http://www.agent-software.com.au/products/jack/}}
+}}
+'''JACK Intelligent Agents''' is a framework in [[Java (programming language)|Java]] for multi-agent system development. JACK Intelligent Agents was built by Agent Oriented Software Pty. Ltd. (AOS) and is a third generation agent platform building on the experiences of the [[Procedural Reasoning System]] (PRS) and [[Distributed Multi-Agent Reasoning System]] (dMARS). JACK is one of the few multi-agent systems that uses the [[Belief-Desire-Intention software model|BDI]] software model and provides its own Java-based plan language and graphical planning tools.
+
+== History ==
+JACK Intelligent Agents was initially developed in 1997 by ex-members of the [[Australian Artificial Intelligence Institute]] (AAII or A<sup>2</sup>I<sup>2</sup>) who were involved in the design, implementation, and application of [[Procedural Reasoning System|PRS]] at [[SRI International]] and/or [[Distributed Multi-Agent Reasoning System|dMARS]] at the AAII. The JACK platform was written for commercial application of the multi-agent paradigm (a [[Commercial off-the-shelf|COTS]] product) to complex problem solving and was the basis for starting the company [[Agent Oriented Software]] (AOS) where it remains the flagship product.
+
+== Features ==
+{{MOS|section|date=May 2015}}
+JACK Intelligent Agents is a mature commercial multi-agent platform that has been under active research, development, and domain-specific application for more than 10 years. The following provides a listing of the platform's key differentiating features.
+
+* '''Agent Run-time''': The core of the platform is an extensible multi-agent run-time. Once domain specific agents, plans, events, capabilities, etc. are specified the JACK kernel manages the execution the system including message passing, reasoning, and meta-reasoning.
+* '''JACK Plan Language (JPL)''': JACK provides an agent-specific plan language for writing JACK plans (the discrete reasoning executed by agents). The plan language is an extension to the [[Java (programming language)|Java]] and offers commands such as @send and @post for inter-agent messaging, as well as the management of actions, sub-tasks and maintenance of conditions. Plans are compiled into Java classes for execution in the JACK run-time offering speed and correctness of execution.
+* '''Belief-Desire-Intention Model''': In addition to a classical (non-BDI) agent model, the platform realizes the [[Belief-desire-intention software model|BDI]] software model, where beliefs are managed by beliefsets encapsulated within agents, desires are the goal states an agent is aspiring to achieve, and intentions are the meta-reasoning and plan-based reasoning the JACK agents use to achieve the current goal.
+* '''Capabilities''': The platform provides capabilities which are abstractions of common behaviors manifest as a complex of plans and events. Capabilities provide a way of conceptually bundling common behaviors and actions and re-using them between agents.<ref>
+{{cite journal
+ | last = Busetta
+ | first = Paolosdada
+ |author2=Nicholas Howden |author3=Ralph Ronnquist |author4=Andrew Hodgson
+  | title = Structuring BDI Agents in Functional Clusters 
+ | journal = Intelligent Agents VI. Agent Theories Architectures, and Languages
+ | volume = 1757
+ | year = 2000
+ | pages = 277–289
+ | publisher = Springer
+ | doi = 10.1007/10719619_21
+ | series = Lecture Notes in Computer Science
+ | isbn = 978-3-540-67200-5 }}
+</ref> 
+* '''JACK Development Environment (JDE)''': Multi-agent systems can be written in Java code and the JACK plan language in a standard [[Integrated development environment|IDE]], although the platform provides an agent-centric [[Integrated development environment|IDE]] called the JACK Development Environment or JDE. The JDE provides graphical tools for writing plans, connecting plans to agents, managing inter-agent communication, as well as compiling and running. The JDE also provides graphical tools for debugging and tracing the execution of plans and inter-agent message passing.<ref>{{cite web |url=http://www.aosgrp.com/documentation/jack/JDE_Manual_WEB |title=Development Environment Manual: JACK Intelligent Agents® Development Environment Manual |website=www.aosgrp.com |access-date=6 June 2022 |archive-url=https://archive.today/20130117030546/http://www.aosgrp.com/documentation/jack/JDE_Manual_WEB |archive-date=17 January 2013 |url-status=dead}}</ref>
+* '''Graphical plans''': A key feature of the JDE is the facility to write and manage graphical plans. These are the discrete reasoning performed by an agent represented graphically as a flow chart, allowing a programmer to manage the code performed in each step of the reasoning graph, and the subject matter expert to manage the logical flow of the reasoning based on the human-readable documentation on each node.<ref>{{cite web |url=http://www.aosgrp.com/documentation/jack/Plan_Editor_Guide_WEB/ |title=Graphical Plan Editor Manual: JACK Intelligent Agents® Graphical Plan Editor Manual |website=www.aosgrp.com |access-date=6 June 2022 |archive-url=https://web.archive.org/web/20110707151801/http://www.aosgrp.com/documentation/jack/Plan_Editor_Guide_WEB/ |archive-date=7 July 2011 |url-status=dead}}</ref>
+* '''JACK Object Modeller (JACOB)''': An object serialization technology used by the JACK run-time for object initialization and inter-process communication. Java objects are serialized to human-readable [[ASCII]] text, not too dissimilar to [[YAML]] and [[XML]].<ref>{{cite web |url=http://www.aosgrp.com/documentation/jack/JACOB_Manual_WEB/ |title=JACOB Manual: JACK Intelligent Agents® JACOB Manual |website=www.aosgrp.com |access-date=6 June 2022 |archive-url=https://web.archive.org/web/20110707152046/http://www.aosgrp.com/documentation/jack/JACOB_Manual_WEB/ |archive-date=7 July 2011 |url-status=dead}}</ref>
+* '''Platform Independence''': The JACK platform is written in [[Java (programming language)|Java]], allowing the deployment of JACK multi-agent systems onto the wide array of platforms that support the [[Java Virtual Machine]]. Currently JACK can be installed on [[Microsoft Windows]] [[operating system]]s only using a [[32-bit]] [[JVM|Java Virtual Machine]] but works also on a [[64-bit]] [[JVM|Java Virtual Machine]]. On the most recent versions of [[OS X|Mac OS X]] [[operating system]]s (starting from [[Mac OS X Lion]]) JACK can be installed only using a [[Command-line interface|console installer]].
+
+== Extensions ==
+{{MOS|section|date=May 2015}}
+The JACK platform has been extended a number of times since its inception. Most of the extensions, such as JACK Teams and CoJACK were developed by or in collaboration with AOS.
+
+* '''JACK Teams''': An extension to the [[Belief-desire-intention software model|BDI]] software model that facilitates agents collaborating in teams toward achieving a goal.<ref>
+{{cite journal
+ | last = Jarvis
+ | first = Bevan |author2=Jarvis, Dennis |author3=Jain, Lakhmi
+ | title = Teams in Multi-Agent Systems 
+ | journal = Intelligent Information Processing III
+ | volume = 228
+ | year = 2007
+ | pages = 1–10
+ | publisher = Springer
+ | doi = 10.1007/978-0-387-44641-7_1
+ | series = IFIP International Federation for Information Processing
+ | isbn = 978-0-387-44639-4 | doi-access = free
+ }}
+</ref> Like JACK, JACK Teams supports its own plan language in what AOS refers to as ''Team-oriented programming''. JACK Teams is integrated into and available as a part of the JACK Intelligent Agents platform.<ref>{{cite web |url=http://www.aosgrp.com/documentation/jack/JACK_Teams_Manual_WEB/ |title=Teams Manual: JACK Intelligent Agents® Teams Manual |website=www.aosgrp.com |access-date=6 June 2022 |archive-url=https://web.archive.org/web/20110707152005/http://www.aosgrp.com/documentation/jack/JACK_Teams_Manual_WEB/ |archive-date=7 July 2011 |url-status=dead}}</ref>
+* '''CoJACK''': An extension to the JACK platform that adds a cognitive architecture to the agents for eliciting more realistic (human-like) behaviors in virtual environments.<ref>
+{{cite conference
+  | last = Evertsz
+  | first = R.
+  |author2=Busetta, P. |author3=Pedrotti, M. |author4=Ritter, F. E. |author5=Bittner, J. L. 
+  | title = CoJACK—Achieving principled behaviour variation in a moderated cognitive architecture 
+  | book-title = Proceedings of the 17th Conference on Behavior Representation in Modeling and Simulation (08-BRIMS-025)
+  | year = 2008
+  | url = http://acs.ist.psu.edu/papers/evertszBPRB08.pdf }}
+</ref>
+* '''FIPA JACK''': An extension to the JACK platform to support the [[Foundation for Intelligent Physical Agents|FIPA]] [[Agent Communications Language]].<ref>{{cite conference
+ | last = de Silva
+ | first = Lavindra
+ | title = Building FIPA Compliancy into JACK
+ | journal = Technical Report / Research Project (RMIT)
+ | year = 2001
+ | publisher = RMIT
+ | url = http://goanna.cs.rmit.edu.au/~ldesilva/doc/fipa.pdf
+ | access-date = 2009-06-04
+ | archive-url = https://web.archive.org/web/20091003133716/http://goanna.cs.rmit.edu.au/~ldesilva/doc/fipa.pdf
+ | archive-date = 2009-10-03
+ | url-status = dead
+ }}</ref>
+* '''Prometheus''': An agent-centric software engineering methodology for managing the [[Systems Development Life Cycle|SDLC]] of a multi-agent-based system. JACK was used as the basis for investigation, comparison, and testing the methodology. The Prometheus involved the development of the Prometheus Design Tool (PDT) which was a [[GUI]]-based tool for managing design concerns in the process.<ref>{{cite conference
+  | last = Padgham
+  | first = Lin
+  | author2 = Winikoff, Michael
+  | title = Prometheus: A Pragmatic Methodology for Engineering Intelligent Agents
+  | book-title = Proceedings of the workshop on Agent-oriented methodologies (at OOPSLA)
+  | year = 2002
+  | url = http://goanna.cs.rmit.edu.au/~linpa/Papers/oopsla02.pdf
+  }}{{Dead link|date=January 2020 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+* '''JACK Eclipse Plug-in''': A plug-in that facilitates the development of JACK-based systems in the [[Eclipse (software)|Eclipse]] [[Integrated development environment|IDE]]. Specifically, the plug-in adds capabilities to Eclipse to support the JACK file types (such as .plan, .agent, etc.) as well support for JACK plan language.
+* '''JACK WebBot''': An extension that embeds the JACK kernel in the [[Apache Tomcat]] web server allowing intelligent agents to be interacted with and formulate responses [[HTTP]] requests (via the [[Java Servlet]] API).<ref>{{cite web |url=http://www.aosgrp.com/documentation/jack/WebBot_Manual_WEB |title=WebBot Manual: JACK Intelligent Agents® WebBot Manual |website=www.aosgrp.com |access-date=6 June 2022 |archive-url=https://archive.today/20130118051857/http://www.aosgrp.com/documentation/jack/WebBot_Manual_WEB |archive-date=18 January 2013 |url-status=dead}}</ref>
+
+== See also ==
+* [[Agent-based model]]
+* [[Agent Communications Language]]
+* [[Autonomous agent]]
+* [[Belief-desire-intention software model]]
+* [[Cognitive architecture]]
+* [[Distributed multi-agent reasoning system]]
+* [[Intelligent agent]]
+* [[Java Agent Development Framework]]
+* [[Multi-agent system]]
+* [[Procedural reasoning system]]
+* [[Software agent]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+* Paolo Busetta, Ralph Ronnquist, Andrew Hodgson, and Andrew Lucas (1999) [https://www.aosgrp.com/media/research/jack/busetta99jack.pdf JACK Intelligent Agents – Components for Intelligent Agents in Java], AgentLink News, Issue 2.
+* Nick Howden, Ralph Rönnquist, Andrew Hodgson, Andrew Lucas (2001) [http://users.cs.cf.ac.uk/O.F.Rana/agents2001/papers/18_howden.pdf JACK intelligent agents – Summary of an agent infrastructure]. Proceedings of the 5th International Conference on Autonomous Agents
+* P. Busetta, Ralph Rönnquist, Andrew Hodgson, Andrew Lucas (1999) [https://web.archive.org/web/20091003175850/http://www.siaa.asn.au/get/2395379584.pdf Light-Weight Intelligent Software Agents in Simulation], in Proceedings of the Simulation Technology and Training (SimTecT 99), Melbourne, Australia
+* M. Winikoff (2005) [https://doi.org/10.1007%2F0-387-26350-0_7 JACK intelligent agents: An industrial strength platform]. In Multi-Agent Programming. Springer.
+* J. Tweedale, N. Ichalkaranje, C. Sioutis, B. Jarvis, A. Consoli, G. Phillips-Wren, "[http://linkinghub.elsevier.com/retrieve/pii/S108480450600035X Innovations in multi-agent systems]" ([https://www.scribd.com/doc/7311726/Innovations-in-multiagent-systems PDF]), Journal of Network and Computer Applications, Volume 30, Issue 3, August 2007, Pages 1089–1115
+* Rick Evertsz, Martyn Fletcher, Richard Jones, Jacquie Jarvis, James Brusey, Sandy Dance: [https://doi.org/10.1007%2F978-3-540-25936-7_2 Implementing Industrial Multi-agent Systems Using JACK]. in Programming Multi-Agent Systems (PROMAS) 2003: 18–48
+* Øystein Spillum, [http://daim.idi.ntnu.no/masteroppgave?id=4091 A Comparison between JACK Intelligent Agents and JACK Teams Applied in Teamwork], Masters Thesis, Norwegian University of Science and Technology, November 2008
+
+== External links ==
+* [http://www.aosgrp.com.au Agent Oriented Software Pty. Ltd. homepage] (AOS)
+* [http://www.agent-software.com.au/products/jack JACK Product webpage]
+* [https://web.archive.org/web/20080719090138/http://www.agent-software.com.au/products/jack/documentation_and_instructi/jack_documentation.html Official JACK Documentation] – including user manuals and tutorials
+* [http://www.innovation.gov.au/Documents/JSFCapabilitiesPresentations2007/company%20profiles/agent_oriented/profile_4.html Australian JSF History of supply for AOS]
+
+{{DEFAULTSORT:Jack Intelligent Agents}}
+[[Category:Java platform software]]
+[[Category:Agent-based software]]
+[[Category:Multi-agent systems]]

@@ -1,0 +1,32 @@
+ML.NET is a free software machine learning library for the C# and F# programming languages. It also supports Python models when used together with NimbusML. The preview release of ML.NET included transforms for feature engineering like n-gram creation, and learners to handle binary classification, multi-class classification, and regression tasks. Additional ML tasks like anomaly detection and recommendation systems have since been added, and other approaches like deep learning will be included in future versions.
+
+Machine learning
+ML.NET brings model-based Machine Learning analytic and prediction capabilities to existing .NET developers. The framework is built upon .NET Core and .NET Standard inheriting the ability to run cross-platform on Linux, Windows and macOS. Although the ML.NET framework is new, its origins began in 2002 as a Microsoft Research project named TMSN (text mining search and navigation) for use internally within Microsoft products. It was later renamed to TLC (the learning code) around 2011. ML.NET was derived from the TLC library and has largely surpassed its parent says Dr. James McCaffrey, Microsoft Research.
+
+Developers can train a Machine Learning Model or reuse an existing Model by a 3rd party and run it on any environment offline. This means developers do not need to have a background in Data Science to use the framework. Support for the open-source Open Neural Network Exchange (ONNX) Deep Learning model format was introduced from build 0.3 in ML.NET. The release included other notable enhancements such as Factorization Machines, LightGBM, Ensembles, LightLDA transform and OVA. The ML.NET integration of TensorFlow is enabled from the 0.5 release. Support for x86 & x64 applications was added to build 0.7 including enhanced recommendation capabilities with Matrix Factorization. A full roadmap of planned features have been made available on the official GitHub repo.
+
+The first stable 1.0 release of the framework was announced at Build (developer conference) 2019. It included the addition of a Model Builder tool and AutoML (Automated Machine Learning) capabilities. Build 1.3.1 introduced a preview of Deep Neural Network training using C# bindings for Tensorflow and a Database loader which enables model training on databases. The 1.4.0 preview added ML.NET scoring on ARM processors and Deep Neural Network training with GPU's for Windows and Linux.
+
+Performance
+Microsoft's paper on machine learning with ML.NET demonstrated it is capable of training sentiment analysis models using large datasets while achieving high accuracy. Its results showed 95% accuracy on Amazon's 9GB review dataset.
+
+Model builder
+The ML.NET CLI is a Command-line interface which uses ML.NET AutoML to perform model training and pick the best algorithm for the data. The ML.NET Model Builder preview is an extension for Visual Studio that uses ML.NET CLI and ML.NET AutoML to output the best ML.NET Model using a GUI.
+
+Model explainability
+AI fairness and explainability has been an area of debate for AI Ethicists in recent years. A major issue for Machine Learning applications is the black box effect where end users and the developers of an application are unsure of how an algorithm came to a decision or whether the dataset contains bias. Build 0.8 included model explainability API's that had been used internally in Microsoft. It added the capability to understand the feature importance of models with the addition of 'Overall Feature Importance' and 'Generalized Additive Models'.
+
+When there are several variables that contribute to the overall score, it is possible to see a breakdown of each variable and which features had the most impact on the final score. The official documentation demonstrates that the scoring metrics can be output for debugging purposes. During training & debugging of a model, developers can preview and inspect live filtered data. This is possible using the Visual Studio DataView tools.
+
+Infer.NET
+
+Microsoft Research announced the popular Infer.NET model-based machine learning framework used for research in academic institutions since 2008 has been released open source and is now part of the ML.NET framework. The Infer.NET framework utilises probabilistic programming to describe probabilistic models which has the added advantage of interpretability. The Infer.NET namespace has since been changed to Microsoft.ML.Probabilistic consistent with ML.NET namespaces.
+
+NimbusML Python support
+Microsoft acknowledged that the Python programming language is popular with Data Scientists, so it has introduced NimbusML the experimental Python bindings for ML.NET. This enables users to train and use machine learning models in Python. It was made open source similar to Infer.NET.
+
+Machine learning in the browser
+ML.NET allows users to export trained models to the Open Neural Network Exchange (ONNX) format. This establishes an opportunity to use models in different environments that don't use ML.NET. It would be possible to run these models in the client side of a browser using ONNX.js, a javascript client-side framework for deep learning models created in the Onnx format.
+
+AI School Machine Learning Course
+Along with the rollout of the ML.NET preview, Microsoft rolled out free AI tutorials and courses to help developers understand techniques needed to work with the framework.

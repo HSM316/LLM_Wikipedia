@@ -1,0 +1,42 @@
+{{short description|AI safety research center}}
+{{Infobox organization
+|name                = Center for Human-Compatible Artificial Intelligence
+|image               = Center for Human-Compatible Artificial Intelligence.png
+|formation           = {{start date and age|2016}}
+|headquarters        = [[Berkeley, California]]
+|leader_title        = Leader
+|leader_name         = [[Stuart J. Russell]]
+|parent_organization = [[University of California, Berkeley]] 
+|homepage            = {{URL|https://humancompatible.ai/}}
+}}
+
+The '''Center for Human-Compatible Artificial Intelligence''' ('''CHAI''') is a research center at [[University of California, Berkeley]] (UC Berkeley) focusing on advanced [[artificial intelligence]] (AI) [[AI control problem|safety methods]].  CHAI was founded in 2016 by a group of academics led by UC Berkeley computer science professor and AI author [[Stuart J. Russell]].<ref>{{cite web |url=https://vcresearch.berkeley.edu/news/uc-berkeley-launches-center-human-compatible-artificial-intelligence |title=UC Berkeley launches Center for Human-Compatible Artificial Intelligence |last=Norris |first=Jeffrey |date=Aug 29, 2016 |accessdate=Dec 27, 2019}}</ref><ref>{{cite web |url=https://www.theguardian.com/technology/2016/aug/30/rise-of-robots-evil-artificial-intelligence-uc-berkeley |title=The rise of robots: forget evil AI – the real risk is far more insidious |last=Solon |first=Olivia |date=Aug 30, 2016 |accessdate=Dec 27, 2019 |publisher=[[The Guardian]]}}</ref> Russell is known for co-authoring the widely used AI textbook ''[[Artificial Intelligence: A Modern Approach]]''.
+
+CHAI's faculty membership includes [[Bart Selman]] and [[Joseph Halpern]] from Cornell University,<ref>{{cite web |url=https://research.cornell.edu/research/human-compatible-ai |title=Human-Compatible AI |author=[[Cornell University]] |accessdate=Dec 27, 2019}}</ref> [[Pieter Abbeel]] from UC Berkeley, and [[Michael Wellman]] from the University of Michigan.<ref>{{cite web |url=https://humancompatible.ai/people | title=People |author=Center for Human-Compatible Artificial Intelligence |accessdate = Dec 27, 2019}}</ref> In 2016, the [[Open Philanthropy Project]] (OpenPhil) recommended a grant of $5,555,550 over five years to support CHAI.<ref>{{cite web |url=https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/uc-berkeley-center-human-compatible-ai |author=[[Open Philanthropy Project]] |title=UC Berkeley — Center for Human-Compatible AI (2016) |date=Aug 2016 |accessdate=Dec 27, 2019}}</ref> CHAI received an additional grant of $200,000 from OpenPhil in 2019.<ref>{{cite web |url=https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/uc-berkeley-center-human-compatible-ai-2019 |author=[[Open Philanthropy Project]] |title=UC Berkeley — Center for Human-Compatible AI (2019) |date=Nov 2019|accessdate=Dec 27, 2019}}</ref>
+
+== Research ==
+
+CHAI's approach to AI safety research focuses on value alignment strategies, particularly [[Reinforcement learning#Inverse reinforcement learning|inverse reinforcement learning]], in which the AI infers human values from observing human behavior.<ref>{{cite web |url=https://futureoflife.org/2016/08/31/new-center-human-compatible-ai/ |title=New Center for Human-Compatible AI |last=Conn |first=Ariel |publisher=[[Future of Life Institute]] |date=Aug 31, 2016 |accessdate=Dec 27, 2019}}</ref>  It has also worked on modeling human-machine interaction in scenarios where intelligent machines have an "off-switch" that they are capable of overriding.<ref>{{cite web|url=https://www.thetimes.co.uk/article/making-robots-less-confident-could-prevent-them-taking-over-gnsblq7lx|title=Making robots less confident could prevent them taking over|last=Bridge|first=Mark|date=June 10, 2017}}</ref>
+
+== See also ==
+
+* [[Existential risk from artificial general intelligence]]
+* [[Future of Humanity Institute]]
+* [[Future of Life Institute]]
+* ''[[Human Compatible]]''
+* [[Machine Intelligence Research Institute]]
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* {{official|https://humancompatible.ai/}}
+
+[[Category:Artificial intelligence associations]]
+[[Category:Existential risk from artificial general intelligence]]
+[[Category:Existential risk organizations]]
+[[Category:Organizations established in 2016]]
+
+{{existential risk from artificial intelligence}}
+
+{{US-org-stub}}

@@ -1,0 +1,7 @@
+ThingSpeak is an open-source software written in Ruby which allows users to communicate with internet enabled devices. It facilitates data access, retrieval and logging of data by providing an API to both the devices and social network websites.
+ThingSpeak was originally launched by ioBridge in 2010 as a service in support of IoT applications.
+
+ThingSpeak has integrated support from the numerical computing software MATLAB from MathWorks, allowing ThingSpeak users to analyze and visualize uploaded data using MATLAB without requiring the purchase of a MATLAB license from MathWorks.
+
+ThingSpeak has been the subject of articles in specialized "Maker" websites like Instructables, 
+Codeproject, and Channel 9.

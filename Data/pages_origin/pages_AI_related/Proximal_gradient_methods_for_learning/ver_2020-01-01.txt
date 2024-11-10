@@ -1,0 +1,138 @@
+'''Proximal gradient''' (forward backward splitting) '''methods for learning''' is an area of research in [[optimization]] and [[statistical learning theory]] which studies algorithms for a general class of [[Convex function#Definition|convex]] [[Regularization (mathematics)|regularization]] problems where the regularization penalty may not be [[Differentiable function|differentiable]]. One such example is <math>\ell_1</math> regularization (also known as Lasso) of the form
+:<math>\min_{w\in\mathbb{R}^d} \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2+ \lambda \|w\|_1, \quad \text{ where } x_i\in \mathbb{R}^d\text{ and } y_i\in\mathbb{R}.</math>
+
+Proximal gradient methods offer a general framework for solving regularization problems from statistical learning theory with penalties that are tailored to a specific problem application.<ref name=combettes>{{cite journal|last=Combettes|first=Patrick L.|author2=Wajs, Valérie R. |title=Signal Recovering by Proximal Forward-Backward Splitting|journal=Multiscale Model. Simul.|year=2005|volume=4|issue=4|pages=1168–1200|doi=10.1137/050626090|url=https://semanticscholar.org/paper/56974187b4d9a8757f4d8a6fd6facc8b4ad08240}}</ref><ref name=structSparse>{{cite journal|last=Mosci|first=S.|author2=Rosasco, L. |author3=Matteo, S. |author4=Verri, A. |author5=Villa, S. |title=Solving Structured Sparsity Regularization with Proximal Methods|journal=Machine Learning and Knowledge Discovery in Databases|year=2010|volume=6322|pages=418–433 |doi=10.1007/978-3-642-15883-4_27|series=Lecture Notes in Computer Science|isbn=978-3-642-15882-7}}</ref> Such customized penalties can help to induce certain structure in problem solutions, such as ''sparsity'' (in the case of [[Lasso (statistics)|lasso]]) or ''group structure'' (in the case of  [[Lasso (statistics)#Group LASSO|group lasso]]).
+
+== Relevant background ==
+
+[[Proximal gradient method]]s are applicable in a wide variety of scenarios for solving [[convex optimization]] problems of the form
+:<math> \min_{x\in \mathcal{H}} F(x)+R(x),</math>
+where <math>F</math> is [[Convex function|convex]] and differentiable with [[Lipschitz continuity|Lipschitz continuous]] [[gradient]], <math> R</math> is a [[Convex function|convex]], [[Semicontinuous function|lower semicontinuous]] function which is possibly nondifferentiable, and <math>\mathcal{H}</math> is some set, typically a [[Hilbert space]]. The usual criterion of <math> x</math> minimizes <math> F(x)+R(x)</math> if and only if <math> \nabla (F+R)(x) = 0</math> in the convex, differentiable setting is now replaced by
+:<math> 0\in \partial (F+R)(x), </math>
+where <math>\partial \varphi</math> denotes the [[subdifferential]] of a real-valued, convex function <math> \varphi</math>.
+
+Given a convex function <math>\varphi:\mathcal{H} \to \mathbb{R}</math> an important operator to consider is its '''proximity operator''' <math>\operatorname{prox}_{\varphi}:\mathcal{H}\to\mathcal{H} </math> defined by
+:<math> \operatorname{prox}_{\varphi}(u) = \operatorname{arg}\min_{x\in\mathcal{H}} \varphi(x)+\frac{1}{2}\|u-x\|_2^2,</math>
+which is well-defined because of the strict convexity of the <math> \ell_2</math> norm. The proximity operator can be seen as a generalization of a [[Projection (linear algebra)|projection]].<ref name=combettes /><ref name=moreau /><ref name=bauschke>{{cite book|last=Bauschke|first=H.H., and Combettes, P.L.|title=Convex analysis and monotone operator theory in Hilbert spaces|year=2011|publisher=Springer}}</ref>
+We see that the proximity operator is important because <math> x^* </math> is a minimizer to the problem <math> \min_{x\in\mathcal{H}} F(x)+R(x)</math> if and only if
+:<math>x^* = \operatorname{prox}_{\gamma R}\left(x^*-\gamma\nabla F(x^*)\right),</math> where <math>\gamma>0</math> is any positive real number.<ref name=combettes />
+
+=== Moreau decomposition ===
+
+One important technique related to proximal gradient methods is the '''Moreau decomposition,''' which decomposes the identity operator as the sum of two proximity operators.<ref name=combettes /> Namely, let <math>\varphi:\mathcal{X}\to\mathbb{R}</math> be a [[Semi-continuity|lower semicontinuous]], convex function on a vector space <math>\mathcal{X}</math>. We define its [[Convex conjugate|Fenchel conjugate]] <math>\varphi^*:\mathcal{X}\to\mathbb{R}</math> to be the function
+:<math>\varphi^*(u) := \sup_{x\in\mathcal{X}} \langle x,u\rangle - \varphi(x).</math>
+The general form of Moreau's decomposition states that for any <math>x\in\mathcal{X}</math> and any <math>\gamma>0</math> that
+:<math>x = \operatorname{prox}_{\gamma \varphi}(x) + \gamma\operatorname{prox}_{\varphi^*/\gamma}(x/\gamma),</math>
+which for <math>\gamma=1</math> implies that <math>x = \operatorname{prox}_{\varphi}(x)+\operatorname{prox}_{\varphi^*}(x)</math>.<ref name=combettes /><ref name=moreau>{{cite journal|last=Moreau|first=J.-J.|title=Fonctions convexes duales et points proximaux dans un espace hilbertien|journal=Comptes Rendus de l'Académie des Sciences, Série A|year=1962|volume=255|pages=2897–2899|mr=144188|zbl=0118.10502}}</ref> The Moreau decomposition can be seen to be a generalization of the usual orthogonal decomposition of a vector space, analogous with the fact that proximity operators are generalizations of projections.<ref name=combettes />
+
+In certain situations it may be easier to compute the proximity operator for the conjugate <math>\varphi^*</math> instead of the function <math>\varphi</math>, and therefore the Moreau decomposition can be applied. This is the case for  [[Lasso (statistics)#Group LASSO|group lasso]].
+
+== Lasso regularization ==
+
+Consider the [[Regularization (mathematics)|regularized]] [[empirical risk minimization]] problem with square loss and with the [[L1-norm|<math>\ell_1</math> norm]] as the regularization penalty:
+:<math>\min_{w\in\mathbb{R}^d} \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2+ \lambda \|w\|_1, </math>
+where <math>x_i\in \mathbb{R}^d\text{ and } y_i\in\mathbb{R}.</math> The <math>\ell_1</math> regularization problem is sometimes referred to as ''lasso'' ([[Lasso (statistics)|least absolute shrinkage and selection operator]]).<ref name=tibshirani /> Such <math>\ell_1</math> regularization problems are interesting because they induce '' sparse'' solutions, that is, solutions <math>w</math> to the minimization problem have relatively few nonzero components. Lasso can be seen to be a convex relaxation of the non-convex problem
+:<math>\min_{w\in\mathbb{R}^d} \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2+ \lambda \|w\|_0, </math>
+where <math>\|w\|_0</math> denotes the <math>\ell_0</math> "norm", which is the number of nonzero entries of the vector <math>w</math>. Sparse solutions are of particular interest in learning theory for interpretability of results: a sparse solution can identify a small number of important factors.<ref name=tibshirani>{{cite journal|last=Tibshirani|first=R.|title=Regression shrinkage and selection via the lasso|journal=J. R. Stat. Soc. Ser. B|year=1996|volume=58|series=1|issue=1|pages=267–288}}</ref>
+
+=== Solving for <math>\ell_1</math> proximity operator ===
+
+For simplicity we restrict our attention to the problem where <math>\lambda=1</math>. To solve the problem
+:<math>\min_{w\in\mathbb{R}^d} \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2+  \|w\|_1, </math>
+we consider our objective function in two parts: a convex, differentiable term <math>F(w) = \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2</math> and a convex function <math>R(w) = \|w\|_1</math>. Note that <math>R</math> is not strictly convex.
+
+Let us compute the proximity operator for <math>R(w)</math>. First we find an alternative characterization of the proximity operator <math>\operatorname{prox}_{R}(x)</math> as follows:
+
+<math>
+\begin{align}
+u = \operatorname{prox}_R(x) \iff & 0\in \partial \left(R(u)+\frac{1}{2}\|u-x\|_2^2\right)\\
+\iff & 0\in \partial R(u) + u-x\\
+\iff & x-u\in \partial R(u).
+\end{align}
+</math>
+
+For <math>R(w) = \|w\|_1</math> it is easy to compute <math>\partial R(w)</math>: the <math>i</math>th entry of <math>\partial R(w)</math> is precisely
+
+:<math> \partial |w_i| = \begin{cases}
+1,&w_i>0\\
+-1,&w_i<0\\
+\left[-1,1\right],&w_i = 0.
+\end{cases}</math>
+
+Using the recharacterization of the proximity operator given above, for the choice of <math>R(w) = \|w\|_1</math> and <math>\gamma>0</math> we have that <math>\operatorname{prox}_{\gamma R}(x)</math> is defined entrywise by
+
+::<math>\left(\operatorname{prox}_{\gamma R}(x)\right)_i = \begin{cases}
+x_i-\gamma,&x_i>\gamma\\
+0,&|x_i|\leq\gamma\\
+x_i+\gamma,&x_i<-\gamma,
+\end{cases}</math>
+
+which is known as the [[Thresholding (image processing)|soft thresholding]] operator <math>S_{\gamma}(x)=\operatorname{prox}_{\gamma \|\cdot\|_1}(x)</math>.<ref name=combettes /><ref name=daubechies>{{cite journal|last=Daubechies|first=I. |author2=Defrise, M. |author3=De Mol, C.|title=An iterative thresholding algorithm for linear inverse problem with a sparsity constraint|journal=Comm. Pure Appl. Math.|year=2004|volume=57|issue=11|pages=1413–1457|doi=10.1002/cpa.20042|arxiv=math/0307152}}</ref>
+
+=== Fixed point iterative schemes ===
+
+To finally solve the lasso problem we consider the fixed point equation shown earlier:
+:<math>x^* = \operatorname{prox}_{\gamma R}\left(x^*-\gamma\nabla F(x^*)\right).</math>
+
+Given that we have computed the form of the proximity operator explicitly, then we can define a standard fixed point iteration procedure. Namely, fix some initial <math>w^0\in\mathbb{R}^d</math>, and for <math>k=1,2,\ldots</math> define
+:<math>w^{k+1} = S_{\gamma}\left(w^k - \gamma \nabla F\left(w^k\right)\right).</math>
+Note here the effective trade-off between the empirical error term <math>F(w) </math> and the regularization penalty <math>R(w)</math>. This  fixed point method has decoupled the effect of the two different convex functions which comprise the objective function into a gradient descent step (<math> w^k - \gamma \nabla F\left(w^k\right)</math>) and a soft thresholding step (via <math>S_\gamma</math>).
+
+Convergence of this fixed point scheme is well-studied in the literature<ref name=combettes /><ref name=daubechies /> and is guaranteed under appropriate choice of step size <math>\gamma</math> and loss function (such as the square loss taken here). [[Gradient descent#Extensions|Accelerated methods]] were introduced by Nesterov in 1983 which improve the rate of convergence under certain regularity assumptions on <math>F</math>.<ref name=nesterov>{{cite journal|last=Nesterov|first=Yurii|title=A method of solving a convex programming problem with convergence rate <math>O(1/k^2)</math>|journal=Soviet Mathematics - Doklady|year=1983|volume=27|issue=2|pages=372–376}}</ref> Such methods have been studied extensively in previous years.<ref>{{cite book|last=Nesterov|first=Yurii|title=Introductory Lectures on Convex Optimization|year=2004|publisher=Kluwer Academic Publisher}}</ref>
+For more general learning problems where the proximity operator cannot be computed explicitly for some regularization term <math>R</math>, such fixed point schemes can still be carried out using approximations to both the gradient and the proximity operator.<ref name=bauschke /><ref>{{cite journal|last=Villa|first=S.|author2=Salzo, S. |author3=Baldassarre, L. |author4=Verri, A. |title=Accelerated and inexact forward-backward algorithms|journal=SIAM J. Optim.|year=2013|volume=23|issue=3|pages=1607–1633|doi=10.1137/110844805|citeseerx=10.1.1.416.3633}}</ref>
+
+== Practical considerations ==
+
+There have been numerous developments within the past decade in [[convex optimization]] techniques which have influenced the application of proximal gradient methods in statistical learning theory. Here we survey a few important topics which can greatly improve practical algorithmic performance of these methods.<ref name=structSparse /><ref name=bach>{{cite journal|last=Bach|first=F.|author2=Jenatton, R. |author3=Mairal, J. |author4=Obozinski, Gl. |title=Optimization with sparsity-inducing penalties|journal= Foundations and Trends in Machine Learning|year=2011|volume=4|issue=1|pages=1–106|doi=10.1561/2200000015|arxiv=1108.0775|bibcode=2011arXiv1108.0775B}}</ref>
+
+=== Adaptive step size ===
+
+In the fixed point iteration scheme
+:<math>w^{k+1} = \operatorname{prox}_{\gamma R}\left(w^k-\gamma \nabla F\left(w^k\right)\right),</math>
+one can allow variable step size <math>\gamma_k</math> instead of a constant <math>\gamma</math>. Numerous adaptive step size schemes have been proposed throughout the literature.<ref name=combettes /><ref name=bauschke /><ref>{{cite journal|last=Loris|first=I. |author2=Bertero, M. |author3=De Mol, C. |author4=Zanella, R. |author5=Zanni, L. |title=Accelerating gradient projection methods for <math>\ell_1</math>-constrained signal recovery by steplength selection rules|journal=Applied & Comp. Harmonic Analysis|volume=27|issue=2|pages=247–254|year=2009|doi=10.1016/j.acha.2009.02.003}}</ref><ref>{{cite journal|last=Wright|first=S.J.|author2=Nowak, R.D. |author3=Figueiredo, M.A.T. |title=Sparse reconstruction by separable approximation|journal=IEEE Trans. Image Process.|year=2009|volume=57|issue=7|pages=2479–2493|doi=10.1109/TSP.2009.2016892|bibcode=2009ITSP...57.2479W}}</ref> Applications of these schemes<ref name=structSparse /><ref>{{cite journal|last=Loris|first=Ignace|title=On the performance of algorithms for the minimization of <math>\ell_1</math>-penalized functionals|journal=Inverse Problems|year=2009|volume=25|issue=3|doi=10.1088/0266-5611/25/3/035008|page=035008|arxiv=0710.4082|bibcode=2009InvPr..25c5008L}}</ref>  suggest that these can offer substantial improvement in number of iterations required for fixed point convergence.
+
+=== Elastic net (mixed norm regularization) ===
+
+[[Elastic net regularization]] offers an alternative to pure <math>\ell_1</math> regularization. The problem of lasso (<math>\ell_1</math>) regularization involves the penalty term <math>R(w) = \|w\|_1</math>, which is not strictly convex. Hence, solutions to <math>\min_w F(w) + R(w),</math> where <math>F</math> is some empirical loss function, need not be unique. This is often avoided by the inclusion of an additional strictly convex term, such as an <math>\ell_2</math> norm regularization penalty. For example, one can consider the problem
+:<math>\min_{w\in\mathbb{R}^d} \frac{1}{n}\sum_{i=1}^n (y_i- \langle w,x_i\rangle)^2+ \lambda \left((1-\mu)\|w\|_1+\mu \|w\|_2^2\right), </math>
+where <math>x_i\in \mathbb{R}^d\text{ and } y_i\in\mathbb{R}.</math>
+For <math>0<\mu\leq 1</math> the penalty term <math>\lambda \left((1-\mu)\|w\|_1+\mu \|w\|_2^2\right)</math> is now strictly convex, and hence the minimization problem now admits a unique solution. It has been observed that for sufficiently small <math>\mu > 0</math>, the additional penalty term <math>\mu \|w\|_2^2</math> acts as a preconditioner and can substantially improve convergence while not adversely affecting the sparsity of solutions.<ref name=structSparse /><ref name=deMolElasticNet>{{cite journal|last=De Mol|first=C. |author2=De Vito, E. |author3=Rosasco, L.|title=Elastic-net regularization in learning theory|journal=J. Complexity|year=2009|volume=25|issue=2|pages=201–230|doi=10.1016/j.jco.2009.01.002|arxiv=0807.3423}}</ref>
+
+== Exploiting group structure ==
+
+Proximal gradient methods provide a general framework which is applicable to a wide variety of problems in [[statistical learning theory]]. Certain problems in learning can often involve data which has additional structure that is known '' a priori''. In the past several years there have been new developments which incorporate information about group structure to provide methods which are tailored to different applications. Here we survey a few such methods.
+
+=== Group lasso ===
+
+Group lasso is a generalization of the [[Lasso (statistics)|lasso method]] when features are grouped into disjoint blocks.<ref name=groupLasso>{{cite journal|last=Yuan|first=M.|author2=Lin, Y. |title=Model selection and estimation in regression with grouped variables|journal=J. R. Stat. Soc. B|year=2006|volume=68|issue=1|pages=49–67|doi=10.1111/j.1467-9868.2005.00532.x|url=https://semanticscholar.org/paper/d98ef875e2cbde3e2cc8fad521e3cbfe1bddbd69}}</ref> Suppose the features are grouped into blocks <math>\{w_1,\ldots,w_G\}</math>. Here we take as a regularization penalty
+
+:<math>R(w) =\sum_{g=1}^G \|w_g\|_2,</math>
+
+which is the sum of the <math>\ell_2</math> norm on corresponding feature vectors for the different groups. A similar proximity operator analysis as above can be used to compute the proximity operator for this penalty. Where the lasso penalty has a proximity operator which is soft thresholding on each individual component, the proximity operator for the group lasso is soft thresholding on each group. For the group <math>w_g</math> we have that proximity operator of <math>\lambda\gamma\left(\sum_{g=1}^G \|w_g\|_2\right) </math> is given by
+
+:<math>\widetilde{S}_{\lambda\gamma }(w_g) =  \begin{cases}
+w_g-\lambda\gamma \frac{w_g}{\|w_g\|_2}, & \|w_g\|_2>\lambda\gamma \\
+0, & \|w_g\|_2\leq \lambda\gamma
+\end{cases}</math>
+
+where <math>w_g</math> is the <math>g</math>th group.
+
+In contrast to lasso, the derivation of the proximity operator for group lasso relies on the [[#Moreau decomposition|Moreau decomposition]]. Here the proximity operator of the conjugate of the group lasso penalty becomes a projection onto the [[Ball (mathematics)|ball]] of a [[dual norm]].<ref name=structSparse />
+
+=== Other group structures ===
+
+In contrast to the group lasso problem, where features are grouped into disjoint blocks, it may be the case that grouped features are overlapping or have a nested structure.  Such generalizations of group lasso have been considered in a variety of contexts.<ref>{{cite journal|last=Chen|first=X.|author2=Lin, Q. |author3=Kim, S. |author4=Carbonell, J.G. |author5=Xing, E.P. |title=Smoothing proximal gradient method for general structured sparse regression|journal=Ann. Appl. Stat.|year=2012|volume=6|issue=2|pages=719–752|doi=10.1214/11-AOAS514|arxiv=1005.4717}}</ref><ref>{{cite journal|last=Mosci|first=S.|author2=Villa, S. |author3=Verri, A. |author4=Rosasco, L. |title=A primal-dual algorithm for group sparse regularization with overlapping groups|journal=NIPS|year=2010|volume=23|pages=2604–2612}}</ref><ref name=nest>{{cite journal|last=Jenatton|first=R. |author2=Audibert, J.-Y. |author3=Bach, F. |title=Structured variable selection with sparsity-inducing norms|journal=J. Mach. Learn. Res.|year=2011|volume=12|pages=2777–2824|bibcode=2009arXiv0904.3523J |arxiv=0904.3523 }}</ref><ref>{{cite journal|last=Zhao|first=P.|author2=Rocha, G. |author3=Yu, B. |title=The composite absolute penalties family for grouped and hierarchical variable selection|journal=Ann. Stat.|year=2009|volume=37|issue=6A|pages=3468–3497|doi=10.1214/07-AOS584|arxiv=0909.0411|bibcode=2009arXiv0909.0411Z}}</ref> For overlapping groups one common approach is known as ''latent group lasso'' which introduces latent variables to account for overlap.<ref>{{cite arxiv |eprint=1110.0413 |last1=Obozinski |first1=Guillaume |title=Group Lasso with Overlaps: The Latent Group Lasso approach |last2=Jacob |first2=Laurent |last3=Vert |first3=Jean-Philippe |class=stat.ML |year=2011 }}</ref><ref>{{cite arxiv |eprint=1209.0368|last1=Villa|first1=Silvia|title=Proximal methods for the latent group lasso penalty|last2=Rosasco|first2=Lorenzo|last3=Mosci|first3=Sofia|last4=Verri|first4=Alessandro|class=math.OC|year=2012}}</ref> Nested group structures are studied in ''hierarchical structure prediction'' and with [[directed acyclic graph]]s.<ref name=nest />
+
+== See also ==
+* [[Convex analysis]]
+* [[Proximal gradient method]]
+* [[Regularization (mathematics)#Regularization in statistics and machine learning|Regularization]]
+* [[Statistical learning theory]]
+
+== References ==
+
+{{reflist}}
+
+[[Category:First order methods|First order methods]]
+[[Category:Convex optimization]]
+[[Category:Machine learning]]

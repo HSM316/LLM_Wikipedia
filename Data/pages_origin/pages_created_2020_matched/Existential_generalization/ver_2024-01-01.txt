@@ -1,0 +1,38 @@
+{{Infobox mathematical statement
+| name = Existential generalization
+| type = [[Rule of inference]]
+| field = [[Predicate logic]]
+| statement = There exists a member <math>x</math> in a universal set with a property of <math>Q</math>
+| symbolic statement = <math> Q(a) \to\ \exists{x}\, Q(x) ,</math>
+}}
+{{Transformation rules}}
+
+In [[predicate logic]], '''existential generalization'''<ref>{{cite book |last1=Copi |first1=Irving M. |last2=Cohen |first2=Carl |title=Introduction to Logic |publisher=Prentice Hall |year=2005}}</ref><ref>{{cite book |title=A Concise Introduction to Logic 4th edition |url=https://archive.org/details/studyguidetoacco00burc |url-access=registration |last=Hurley |first=Patrick  |year=1991 |publisher=Wadsworth Publishing |isbn=9780534145156 }}</ref> (also known as '''existential introduction''', '''∃I''') is a [[Validity (logic)|valid]] [[rule of inference]] that allows one to move from a specific statement, or one instance, to a quantified generalized statement, or [[existential quantification|existential proposition]]. In [[first-order logic]], it is often used as a rule for the [[existential quantifier]] (<math>\exists</math>) in formal proofs.
+
+Example: "Rover loves to wag his tail. Therefore, something loves to wag its tail."
+
+Example: "Alice made herself a cup of tea. Therefore, Alice made someone a cup of tea."
+
+Example: "Alice made herself a cup of tea. Therefore, someone made someone a cup of tea."
+
+In the [[Fitch notation|Fitch-style calculus]]:
+
+:<math> Q(a) \to\ \exists{x}\, Q(x) ,</math>
+
+where <math>Q(a)</math> is obtained from <math>Q(x)</math> by replacing all its free occurrences of <math>x</math> (or some of them) by <math>a</math>.<ref>pg. 347. [[Jon Barwise]] and [[John Etchemendy]], ''Language proof and logic'' Second Ed., CSLI Publications, 2008.</ref>
+
+== Quine ==
+According to [[Willard Van Orman Quine]], [[universal instantiation]] and existential generalization are two aspects of a single principle, for instead of saying that <math>\forall x \, x=x</math> implies <math>\text{Socrates}=\text{Socrates}</math>, we could as well say that the denial <math>\text{Socrates} \ne \text{Socrates}</math> implies <math>\exists x \, x \ne x</math>. The principle embodied in these two operations is the link between [[Quantification (logic)|quantification]]s and the singular statements that are related to them as instances. Yet it is a principle only by courtesy. It holds only in the case where a term names and, furthermore, occurs [[Reference#Semantics|referentially]].<ref>{{cite book |author1=Willard Van Orman Quine |author1-link=Willard Van Orman Quine|author2=Roger F. Gibson |title=Quintessence  |contribution= V.24. Reference and Modality |location=Cambridge, Massachusetts |publisher=Belknap Press of Harvard University Press |year=2008 |oclc=728954096}} Here: p.366.</ref>
+
+==See also==
+*[[List of rules of inference|Inference rules]]
+
+==References==
+{{Reflist}}
+
+{{DEFAULTSORT:Existential Generalization}}
+[[Category:Rules of inference]]
+[[Category:Predicate logic]]
+
+
+{{Logic-stub}}

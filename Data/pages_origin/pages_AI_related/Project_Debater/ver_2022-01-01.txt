@@ -1,0 +1,47 @@
+'''Project Debater''' is an [[IBM]] [[artificial intelligence]] project, designed to participate in a full live debate with expert human debaters.<ref name="guardian" /><ref name="bloomberg" /><ref name="bbc" /><ref name="bbc2" /> It follows on from the [[Watson (computer)|Watson]] project which played ''[[Jeopardy!]]''<ref name="cnet" />
+
+== Development ==
+Project Debater was developed at [[IBM]]'s lab in [[Haifa]], [[Israel]].<ref name="cnet" /> The project was proposed by Noam Slonim in 2011 as the IBM Research next Grand Challenge, following [[Deep Blue (chess computer)|Deep Blue]] and the victory of Watson in ''Jeopardy!''<ref name="verge" /><ref name="nyt" /> It was exposed for the first time in a closed media event at June 18, 2018, in San Francisco, under the leadership of Ranit Aharonov and Slonim, both from the IBM Research lab in Haifa, Israel.<ref name="fastcompany" /> The AI technology debated two human debaters, Noa Ovadia, who was the 2016 Israeli debate champion and Dan Zafrir. The two debated on the topics "We should subsidize space exploration"<ref name="engadget" /> and "Should we increase the use of telemedicine."<ref name="usatoday" />
+
+A demonstration of Project Debater also aired on the Discovery Channel in June 2018 debating the question of whether sports gambling should be legalized.<ref>Discovery Channel. Progress in AI Research. June 2018. [http://www.businessinsider.com/sc/ibm-ai-artificial-intelligence-project-debater-2018-6].</ref>
+
+On February 11, 2019, Project Debater debated Harish Natarajan, who holds the world record in number of debate competition victories. Both sides debated the topic “We should subsidize preschools”.<ref name="vox" /> 
+
+The debate took place in San Francisco, in front of live audience of around 800 people, and was hosted by [[Intelligence Squared]] and moderated by [[John Donvan]].
+
+To develop Project Debater, the IBM Research team had to endow the system<ref name="ibm" /> with the following AI capabilities:
+
+* Data-driven speech writing and delivery: Project Debater is the first demonstration of a computer that can digest massive corpora, and given a short description of a controversial topic, write a well-structured speech, and deliver it with clarity and purpose, while even incorporating humor where appropriate.
+* Listening comprehension: the ability to identify the key concepts and claims hidden within long continuous spoken language.<ref name="emnlp" />
+* Four minutes of persuasive speech: the guarantee of producing four minutes of persuasive speech.<ref name="howitworks" />
+* Modeling human dilemmas: modeling the world of human controversy and dilemmas in a unique [[knowledge representation]], enabling the system to suggest principled arguments as needed.
+
+An article on the project was published in ''[[Nature (journal)|Nature]]'' in March 2021.<ref name="nature" />
+
+== References ==
+{{reflist|refs=
+<ref name="guardian">{{Cite web|url=https://www.theguardian.com/technology/2018/jun/18/artificial-intelligence-ibm-debate-project-debater|title=Man 1, machine 1: landmark debate between AI and humans ends in draw|last=Solon|first=Olivia|date=2018-06-19|website=[[the Guardian]]|language=en|access-date=2018-06-19}}</ref>
+<ref name="verge">{{Cite news|url=https://www.theverge.com/2018/6/18/17477686/ibm-project-debater-ai|title=What it's like to watch an IBM AI successfully debate humans|work=[[The Verge]]|access-date=2018-06-19}}</ref>
+<ref name="bloomberg">{{Cite news|url=https://www.bloomberg.com/news/articles/2018-06-19/ibm-s-debating-ai-is-here-to-convince-you-that-you-re-wrong|title=IBM's Debating AI Is Here to Convince You That You're Wrong|work=[[Bloomberg.com]]|access-date=2018-06-19|language=en}}</ref>
+<ref name="bbc">{{Cite web|url=https://www.bbc.co.uk/news/av/technology-44533627/ibm-project-debater-fights-corner-against-human-opponent|title=The computer taking on humans in debate|website=[[BBC News]]|language=en-GB|access-date=2018-06-19}}</ref>
+<ref name="cnet">{{Cite news|url=https://www.cnet.com/news/an-ibm-computer-debates-humans-and-wins-in-a-new-nuanced-competition/|title=IBM's got a computer that'll take on your debate team and maybe win. It's a new frontier for AI|date=2018-06-18|work=[[CNET]]|access-date=2018-06-20|language=en}}</ref>
+<ref name="nyt">{{Cite news|url=https://www.nytimes.com/2018/06/18/technology/ibm-debater-artificial-intelligence.html|title=IBM Unveils System That 'Debates' With Humans|access-date=2018-06-20|language=en|work=[[The New York Times]]}}</ref>
+<ref name="bbc2">{{Cite news|url=https://www.bbc.co.uk/news/technology-44531132|title=IBM's machine argues with humans|last=Lee|first=Dave|date=2018-06-19|work=[[BBC News]]|access-date=2018-06-20|language=en-GB}}</ref>
+<ref name="engadget">{{Cite news|url=https://www.engadget.com/2018/06/18/ibm-s-project-debater-is-an-ai-thats-ready-to-argue/|title=IBM's Project Debater is an AI that's ready to argue|work=Engadget|access-date=2018-06-20|language=en-US}}</ref>
+<ref name="usatoday">{{Cite news|url=https://www.usatoday.com/story/tech/2018/06/18/ibms-project-debater-uses-artificial-intelligence-debate-human/712353002/|title=IBM shows off an artificial intelligence that can debate a human – and do pretty well|work=USA TODAY|access-date=2018-06-20|language=en}}</ref>
+<ref name="ibm">{{Cite web|url=https://www.ibm.com/blogs/research/2018/06/ai-debate/|title=AI Learns the Art of Debate with IBM Project Debater|date=2016-05-16|website=www.ibm.com|language=en-US|access-date=2018-06-20}}</ref>
+<ref name="fastcompany">{{cite news |last1=McCracken |first1=Harry |title=Meet the AI that IBM Research is teaching to debate human beings |url=https://www.fastcompany.com/40585086/meet-the-ai-that-ibm-research-is-teaching-to-debate-human-beings |accessdate=20 June 2018 |publisher=Fast Company |date=20 June 2018}}</ref>
+<ref name="vox">{{cite news |last1=Samuel|first1=Sigal|title=An AI system competed against a human debate champion. Here's what happened. |url=https://www.vox.com/future-perfect/2019/2/12/18222392/artificial-intelligence-debate-ibm-san-francisco |accessdate=20 June 2018 |publisher=Vox |date=12 February 2019}}</ref>
+<ref name="emnlp">{{Cite news|url=http://aclweb.org/anthology/D18-1078|title=Listening Comprehension over Argumentative Content|language=en}}</ref>
+<ref name="howitworks">{{cite web |url=https://www.research.ibm.com/artificial-intelligence/project-debater/how-it-works/ |title=How it works - Project Debater - IBM Research AI |website=research.ibm.com |access-date=2021-03-23}}</ref>
+<ref name="nature">For commentary see: {{cite journal |last=Reed |first=Chris |date=March 2021 |title=Argument technology for debating with humans |journal=[[Nature (journal)|Nature]] |volume=591 |issue=7850 |pages=373–374 |pmid=33731943 |doi=10.1038/d41586-021-00539-5|doi-access=free }} The original article is: {{cite journal |last1=Slonim |first1=Noam |last2=Bilu |first2=Yonatan |last3=Alzate |first3=Carlos |last4=Bar-Haim |first4=Roy |last5=Bogin |first5=Ben |last6=Bonin |first6=Francesca |last7=Choshen |first7=Leshem |last8=Cohen-Karlik |first8=Edo |last9=Dankin |first9=Lena |last10=Edelstein |first10=Lilach |date=March 2021 |title=An autonomous debating system |journal=[[Nature (journal)|Nature]] |volume=591 |issue=7850 |pages=379–384 |pmid=33731946 |doi=10.1038/s41586-021-03215-w}}</ref>
+}}
+
+{{Differentiable computing}}
+
+[[Category:IBM software]]
+[[Category:Argument technology]]
+[[Category:Artificial intelligence]]
+
+
+{{Tech-stub}}

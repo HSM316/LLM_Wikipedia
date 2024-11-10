@@ -1,0 +1,142 @@
+{{More footnotes|date=January 2018}}
+{{Orphan|date=August 2016}}
+
+The '''Mivar-based approach''' is a mathematical tool for designing [[artificial intelligence]] (AI) systems. Mivar (''Multidimensional Informational Variable Adaptive Reality'') was developed by combining production  and [[Petri nets]]. The Mivar-based approach was developed for semantic analysis and adequate representation of humanitarian [[Epistemology|epistemological]] and [[Axiology|axiological]] principles in the process of developing artificial intelligence. The Mivar-based approach incorporates [[computer sciences|computer science]], [[informatics]] and [[discrete mathematics]], [[databases]],<ref>{{Cite journal|last=Melekhin|first=V.B.|date=September 2019|title=Model of Representation and Acquisition of New Knowledge by an Autonomous Intelligent Robot Based on the Logic of Conditionally Dependent Predicates|journal=Journal of Computer and Systems Sciences International|language=en|volume=58|issue=5|pages=747–765|doi=10.1134/S1064230719050101|s2cid=209964936|issn=1064-2307}}</ref> [[expert systems]],<ref>{{Cite journal|last1=Shadrin|first1=S.S.|last2=Varlamov|first2=O.O.|last3=Ivanov|first3=A.M.|date=2017|title=Experimental Autonomous Road Vehicle with Logical Artificial Intelligence|journal=Journal of Advanced Transportation|language=en|volume=2017|pages=1–10|doi=10.1155/2017/2492765|issn=0197-6729|doi-access=free}}</ref> [[graph theory]], matrices and inference systems. The Mivar-based approach involves two technologies:<ref name=":0">{{Cite arxiv|last=Varlamov|first=Oleg|date=5 Nov 2011|title=MIVAR: Transition from Productions to Bipartite Graphs MIVAR Nets and Practical Realization of Automated Constructor of Algorithms Handling More than Three Million Production Rules|class=cs.AI|eprint=1111.1321}}</ref>
+* '''''Information accumulation''''' is a method of creating global evolutionary data-and-rules bases with variable structure. It works on the basis of adaptive, discrete, mivar-oriented information space, unified data and rules representation, based on three main concepts: “object, property, relation”. Information accumulation is designed to store any information with possible evolutionary structure and without limitations concerning the amount of information and forms of its presentation.<ref>{{Cite journal|last1=Chuvikov|first1=D.A.|last2=Kazakova|first2=N.A.|last3=Varlamov|first3=O.O.|last4=Goloviznin|first4=A.V.|date=2015-01-14|title=3D Modeling and 3D Objects Creation Technology Analysis for Various Intelligent Systems|journal=International Journal of Advanced Studies|language=en|volume=4|issue=4|pages=16|doi=10.12731/2227-930x-2014-4-3|issn=2227-930X|doi-access=free}}</ref>
+* '''''Data processing'''''<ref>{{Cite journal|last1=Adamova|first1=L.E.|last2=Protopopova|first2=D.A.|title=Intelligent Question-Answering System "mivar Virtual Consultant"|date=2017-05-25|journal=International Journal of Advanced Studies|language=en|volume=6|issue=3|pages=9–19|doi=10.12731/2227-930x-2016-3-9-19|issn=2227-930X|doi-access=free}}</ref> is a method of creating a logical inference system or automated algorithm construction from modules, services or procedures on the basis of a trained mivar network of rules with linear computational complexity. Mivar data processing includes logical inference, computational procedures and services.
+Mivar networks allow us to develop cause-effect dependencies (“If-then”) and create an automated, trained, logical reasoning system.
+
+Representatives of Russian association for artificial intelligence (RAAI) – for example, [[Vladimir Gorodetski|V. I. Gorodecki]], doctor of technical science, [[professor]] at SPIIRAS and V. N. Vagin, doctor of technical science, professor at [[Moscow Power Engineering Institute|MPEI]] declared that the term is incorrect and suggested that the author should use standard terminology.
+
+== History ==
+While working in the [[Ministry of Defence (Russia)|Russian Ministry of Defense]], O. O. Varlamov started developing the theory of “rapid logical inference” in 1985.<ref name=":1">{{Cite web|url=http://rbth.com/science_and_tech/2015/05/18/startup_creates_brain_for_robots_capable_of_making_independe_46129.html|title=Startup creates 'brain' for robots capable of making independent decisions|last=Zavyalova|first=Victoria|date=2015-05-18|language=en-US|access-date=2016-08-10}}</ref><ref>{{Cite journal|last1=Panferov|first1=A.A.|last2=Zhdanovich|first2=E.A.|last3=Yufimychev|first3=K.A.|last4=Chuvikov|first4=D.A.|title=Designing Algorithms for Service Robots on the Basis of Mivar Approach|date=2017-05-25|journal=International Journal of Advanced Studies|language=en|volume=6|issue=3|pages=72–86|doi=10.12731/2227-930X-2016-3-72-86|issn=2227-930X|doi-access=free}}</ref> He was analyzing Petri nets and productions to construct algorithms. Generally, mivar-based theory represents an attempt to combine [[Entity–relationship model|entity-relationship models]] and their problem instance – [[semantic network]]s and Petri networks.
+
+The abbreviation MIVAR was introduced as a technical term by O. O. Varlamov, Doctor of Technical Science, professor at [[Bauman Moscow State Technical University|Bauman MSTU]] in 1993 to designate a “semantic unit” in the process of mathematical modeling.<ref name=":1" /><ref>{{Cite journal|last1=Varlamov|first1=O.O.|last2=Adamova|first2=L.E.|last3=Eliseev|first3=D.V.|last4=Mayboroda|first4=Yu.I.|last5=Antonov|first5=P.D.|last6=Sergushin|first6=G.S.|last7=Chibirova|first7=M.O.|title=Mivar Thechnologies in Mathematical Modeling of Natural Language, Images and Human Speech Understanding|date=2014-04-17|journal=International Journal of Advanced Studies|language=en|volume=3|issue=3|pages=17–23|doi=10.12731/2227-930x-2013-3-3|issn=2227-930X|doi-access=free}}</ref> The term has been established and used in all of his further works.
+
+The first experimental systems operating according to mivar-based principles were developed in 2000. Applied mivar systems were introduced in 2015.
+
+== Mivar ==
+Mivar is the smallest structural element of discrete information space.
+
+== Object-property-relation ==
+Object-Property-Relation (VSO) is a graph, the nodes of which are concepts and arcs are connections between concepts.
+
+Mivar space represents a set of axes, a set of elements, a set of points of space and a set of values of points.
+
+<math>A = \{a_n\}, n = 1,\ldots,N,</math>
+
+where:
+
+* <math>A</math> is a set of mivar space axis names; 
+* <math>N</math> is a number of mivar space axes.
+
+Then: <math>\forall a_n \exists F_n =\{ f_{{ni}_n}\}, n=1,\ldots,N, i_n = 1, \ldots, I_n, </math>
+
+where:
+
+* <math>F_n</math> is a set of axis <math>a_n</math> elements;
+* <math>i_n</math> is a set <math>F_n</math> element identifier;
+* <math>I_n = |F_n|.</math>
+
+<math>F_n</math> sets form multidimensional space: <math>M=F_1\times F_2\times \cdots \times F_n.</math>
+<math>m = (i_1, i_2,\ldots ,i_N),</math>
+
+where:
+
+* <math>m \in M</math>;
+* <math>m</math> is a point of multidimensional space;
+* <math>(i_1, i_2,\ldots, i_N)</math> are coordinates of point <math>m</math>.
+
+There is a set of values of multidimensional space points of <math>M</math>:
+
+: <math>C_M=\{c_{i_1,i_2,\ldots,i_N} \mid i_1 = 1,\ldots,I_1, i_2 = 1,\ldots,I_2, \ldots , i_n = 1,\ldots,I_N\},</math>
+
+where:
+
+* <math>c_{i_1,i_2,\ldots,i_N}</math> is a value of the point of multidimensional space <math>M</math> is a value of the point of multidimensional space <math>(i_1,i_2,\ldots,i_N)</math>.
+For every point of space <math>M</math> there is a single value from <math>C_M</math> set or there is no such value. Thus,<math>C_M</math> is a set of data model state changes represented in multidimensional space. To implement a transition between multidimensional space and set of points values the relation <math>\mu</math> has been introduced: <math>C_x=\mu(M_x),</math>
+
+[[File:VSO.png|thumb|Mivar information space]]
+
+where: 
+* <math>M_x\subseteq M; </math>
+* <math>M_x = F_{1x}\times   F_{2x} \times \cdots \times F_{Nx}. </math>
+
+To describe a data model in mivar information space it is necessary to identify three axes:
+
+* The axis of relations «<math>O</math>»;
+* The axis of attributes (properties) «<math>S</math>»;  
+* The axis of elements (objects) of subject domain «<math>V</math>».
+
+These sets are independent. The mivar space can be represented by the following tuple:
+
+: <math>\langle V, S, O\rangle</math>
+
+Thus, mivar is described by «<math>VSO</math>» formula, in which «<math>V</math>» denotes an object or a thing, «<math>S</math>» denotes properties, «<math>O</math>» variety of relations between other objects of a particular subject domain.<ref>{{Cite journal|last1=Chuvikov|first1=D.A.|last2=Nazarov|first2=K.V.|title=Designing Algorithms for Solving Physics Problems on the Basis of Mivar Approach|date=2017-05-25|journal=International Journal of Advanced Studies|language=en|volume=6|issue=3|pages=31–50|doi=10.12731/2227-930x-2016-3-31-50|issn=2227-930X|doi-access=free}}</ref> The category “Relations” can describe dependencies of any complexity level: formulae, logical transitions, text expressions, functions, services, computational procedures and even [[Artificial neural network|neural networks]]. A wide range of capabilities complicates description of modeling interconnections, but can take into consideration all the factors. Mivar computations use mathematical logic. In a simplified form they can be represented as implication in the form of an "if…, then …”<ref>{{Cite journal|last=Eugene|first=Kovshov|title=MIVAR technology as a new generation in Artificial Intelligence (AI)|url=http://www.oulu.fi/sites/default/files/seminars/MIVAR%20technology%20%28Abstract%29.pdf}}</ref> formula. The result of mivar modeling can be represented in the form of a bipartite graph binding two sets of objects: source objects and resultant objects.
+
+== Mivar network ==
+[[File:Формирование двудольной миварной сети.png|thumb|Mivar network representation in the form of a bipartite directed graph]]
+'''''Mivar network''''' is a method for representing objects of the subject domain and their processing rules in the form of a bipartite directed graph consisting of objects and rules.<ref>{{Cite journal|last1=Varlamov|first1=O.O.|last2=Danilkin|first2=A.I.|last3=Shoshev|first3=A.I.|date=2016-10-03|title=Mivar technologies in knowledge representation and reasoning|url=http://elib.bsu.by/bitstream/123456789/158772/1/Varlamov_Danilkin_Shoshev.pdf|journal=Prip'2016|language=en|pages=30–32}}</ref>
+
+A Mivar network is a bipartite graph that can be described in the form of a two-dimensional matrix, in that records information about the subject domain of the current task.<ref>{{Cite journal|last=Ivanchenko|first=N.O.|date=2014-01-01|title=Mivar technologies modelling of enterprise's technical and technological potential|url=http://nbuv.gov.ua/UJRN/ape_2014_1_61|journal=Актуальні проблеми економіки|issue=1|pages=505–510|issn=1993-6788}}</ref><ref name=":2">{{Cite journal|last=Sandu|first=R. A.|s2cid=122489552|date=2010-10-01|title=A method of processing experimental data on the parameters of physical processes in information-measurement systems based on Mivar logical nets|journal=Measurement Techniques|language=en|volume=53|issue=6|pages=600–604|doi=10.1007/s11018-010-9548-0|issn=0543-1972}}</ref>
+
+Generally, mivar networks provide formalization and representation of human knowledge in the form of a connected multidimensional space. That is, a mivar network is a method of representing a piece of mivar space information in the form of a bipartite, [[directed graph]]. The mivar space information is formed by objects and connections, which in total represent the data model of the subject domain. Connections include rules for objects processing. Thus, a mivar network of a subject domain is a part of the mivar space knowledge for that domain.
+
+The graph can consist of objects-variables and rules-procedures. First, two lists are made that form two nonintersecting partitions: the list of objects and the list of rules. Objects are denoted by circles. Each rule in a mivar network is an extension of productions, hyper-rules with multi-activators or computational procedures. It is proved that from the perspective of further processing, these formalisms are identical and in fact are nodes of the bipartite graph, denoted by rectangles.<ref name=":2" />
+
+=== Multi-dimensional binary matrices ===
+Mivar networks can be implemented on single computing systems or [[service-oriented architecture]]s. Certain constraints restrict their application, in particular, the dimension of matrix of linear matrix method for determining logical inference path on the adaptive rule networks. The matrix dimension constraint is due to the fact that implementation requires sending a general matrix to multiple processors. Since every matrix value is initially represented in symbol form, the amount of sent data is crucial when obtaining, for example, 10000 rules/variables. Classical mivar-based method requires storing three values in each matrix cell:
+
+* 0 – no value;
+* x – input variable for the rule;
+* y – output variable for the rule.
+
+The analysis of possibility of firing a rule is separated from determining output variables according to stages after firing the rule. Consequently, it is possible to use different matrices for “search for fired rules” and “setting values for output variables”. This allowsthe use of multidimensional binary matrices. Binary matrix fragments occupy much less space and improve possibilities of applying mivar networks.
+
+== Logical and computational data processing ==
+To implement logical-and-computational data processing the following should be done. First, a formalized subject domain description is developed. The main objects-variables and rules-procedures are specified on the basis of mivar-based approach and then corresponding lists of “objects” and “rules” are formed. This formalized representation is analogous to the bipartite logical network graph.
+
+The main stages of mivar-based information processing are:
+* Forming a subject domain matrix;
+* Working with the matrix and designing the solution algorithm for the task; 
+* Executing the computations and finding the solution.
+
+The first stage is the stage of synthesis of conceptual subject domain model and its formalization in the form of production rules with a transition to mivar rules. “Input objects – rules/procedures – output objects”. Currently, this stage is the most complex and requires involvement of a human expert to develop a mivar model of the subject domain.
+
+Automated solution algorithm construction or logical inference is implemented at the second stage. Input data for algorithm construction are: mivar matrix of subject domain description and a set input of object-variables and required object-variables.
+
+The solution is implemented at the third stage.<ref>{{Cite journal|last1=A.Viattchenin|first1=Dmitri|last2=Shyrai|first2=Stanislau|title=Intuitionistic Heuristic Prototype-based Algorithm of Possibilistic Clustering|journal=Communications on Applied Electronics|volume=1|issue=8|pages=30–40|doi=10.5120/cae-1629|year=2015|citeseerx=10.1.1.695.7655}}</ref>
+
+=== Data processing method ===
+Firstly, the matrix is constructed. Matrix analysis determines whether a successful inference path exists. Then possible logical inference paths are defined and at the last stage the shortest path is selected according to the set optimality criteria.
+[[File:Formation of mivar network matrix.png|thumb|Formation of mivar network matrix|230x230px]]
+Let <math>m</math> rules and <math>n</math> variables be included in the rules as input variables activating them or as  output variables. Then, matrix <math>V(m\cdot n)</math>, each row of which corresponds to one of the rules and contains the information about variables used in the rule, can represent all the interconnections between rules and [[Variable (mathematics)|variables]].
+
+* In each row all the input variables are denoted by <math>x</math> in the corresponding positions of the matrix, all the output variables are denoted by <math>y</math>. 
+* All the variables that have already obtained certain value in the process of inference or setting input data – <math>z</math>. 
+* All the required (output) variables, that is, the variables that should be obtained on the basis of input data – <math>w</math>.
+
+One row and one column are added in the matrix <math>V</math> to store service information. [[File:An example of matrix processing for solving the problem.png|thumb|An example of matrix processing for solving the problem|564x564px]] So, the matrix <math>V</math> of dimension <math>(m+n)\times(n+1)</math>, is obtained, which shows the whole structure of the source rule network. The structure of this logical network can change, that is, this is a network of rules with evolutionary dynamics.
+
+=== Example ===
+To search for a logical inference path the following actions are implemented:
+
+# Known variables are denoted by <math>z</math> and required variables are denoted by w in the row <math>(m+1)</math>. For example, <math>z</math> denotes positions: 1,2,3 in the row <math>(m+1)</math>), the variable <math>w</math> denotes the position <math>(n-2)</math>. 
+# The search of such rules that can be fired, that is, all the input variables of which are known, is implemented successively, for example, top-down. Absent such rules, no logical inference path exists and input data refinement (addition) is requested. Rules that can be fired, are labeled in the corresponding place of service row. For example, we can write 1 in the matrix cell, which is illustrated in the cell <math>(1, n+1)</math>. 
+# Given several such rules, the choice of rules to fire first is implemented according to previously determined criteria. Several rules can be fired simultaneously if sufficient resources are available. 
+# Rule (procedure) firing simulation is implemented by assigning the values “known” to the variables inferred in this rule, that is, <math>z</math> in this example. A fired rule can be marked additionally, for example by number 2 for convenience of further work. For example, the corresponding changes are made in the cells <math>(m+1, n-1), (m+1, n)</math> and <math>(1, n+1)</math>.
+# After rule firing simulation, goal achievement analysis is carried out, that is, required value acquisition is analyzed by comparing special characters in the service row. Given at least one “unknown” (<math>w</math>) value in the service row <math>(m+1)</math>, logical inference path search is carried out. Otherwise, the task is considered to be solved successfully and the rules fired in a corresponding order form the logical inference path searched.
+# The availability of the rules that can be fired after defining new values at the previous stage is assessed. Absent firearable rules, no inference path exists and actions are taken analogous to step 2. Given fireable rules the inference path search continues. In this example such rules exist. In cell <math>(2, n+1)</math> the number 1 is obtained as an indication that this rule can be fired. 
+# At the next stage, analogous to stage 4, the rules are fired (rule firing simulation), analogous to stages 5 and 6 necessary actions are performed to obtain the result. Stages 2–7 are implemented until the result is achieved. A path may or may not be found. 
+# Deducibility of the variables 4 and 5 in the cells <math>(m+1, 4)</math> and <math>(m+1, 5)</math> is obtained, and indication that the rule has already been fired in the cell <math>(2, n+1)</math> is formed, that is, the number 2 is set. After that the analysis of the service row is carried out, which shows that not all the required variables are known. Thus, it is necessary to continue processing matrix <math>V</math> of dimension <math>(m+n)\times(n+1)</math>. The analysis of this matrix demonstrates the possibility of rule <math>m</math> firing. 
+# When rule m is fired, new values are obtained for required variables as well.
+# Thus, no required rules are in the service row and new values are obtained in the cells of the matrix: 2 appears in the cell <math>(m, n+1)-2,</math> and we got the value <math>z</math> instead of <math>w</math> in the cell <math>(m+1, n-2)</math>. So, positive result is obtained, consequently, a logical inference path exists with given input values.<ref name=":0" />
+
+== References ==
+{{Reflist|}}
+
+== External links ==
+* [http://mivar.ru/en «Mivar»] official website.
+
+[[Category:Artificial intelligence]]
+[[Category:Mathematical logic]]

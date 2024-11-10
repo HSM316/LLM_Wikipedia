@@ -1,0 +1,107 @@
+{{short description|U.S. technology company}}
+{{cleanup|reason=promotional language|date=September 2021}}
+{{Use mdy dates|date=March 2021}}
+{{Infobox company
+| name = Asana, Inc.
+| logo = Asana logo.svg
+| type = [[Public company|Public]]
+| traded_as = {{NYSE|ASAN}}
+| founder = {{hlist | [[Dustin Moskovitz]] | [[Justin Rosenstein]]}}
+| num_employees = 900
+| key_people = [[Dustin Moskovitz]] (CEO)
+| foundation = 2008
+| location_city = [[San Francisco]], [[California]]
+| location_country = US
+| industry = {{hlist | [[Project management]] | [[task management]] | [[productivity software]] | [[Collaborative software|team collaboration]]}}
+| revenue ={{Increase}} $142.2 million (2019)<ref>{{Cite web|url=https://www.theinformation.com/articles/asana-weeks-away-from-a-listing-projects-annual-revenue-growth-of-66|title=Asana, Weeks Away From a Listing, Projects Annual Revenue Growth of 66%|publisher=The Information|accessdate=March 15, 2021}}</ref>
+| website = {{URL|https://asana.com}}
+}}
+
+'''Asana''' ({{IPAc-en|ə|'|s|ɑː|n|ə}} or {{IPAc-en|'|ɑː|s|ə|n|ə}})<ref name="about">{{cite web|title=About Asana|publisher=Asana|url=https://asana.com/company|access-date=October 5, 2020}}</ref> is a web and mobile application designed to help teams organize, track, and manage their work. Forrester, Inc. reports that "Asana simplifies team-based work management."<ref>{{Cite web|url=https://www.forrester.com/report/The+Forrester+Wave+Enterprise+Collaborative+Work+Management+Q4+2016/-/E-RES121721|title=The Forrester Wave™: Enterprise Collaborative Work Management, Q4 2016|publisher=www.forrester.com|language=en|access-date=May 18, 2018}}</ref> It is produced by the company of the same name (Asana, Inc.).
+
+The company was founded in 2008 by [[Dustin Moskovitz]] and [[Justin Rosenstein]], who both worked on improving the productivity of employees at [[Facebook]].<ref name=":0">{{Cite web|url=http://latimesblogs.latimes.com/technology/2011/11/facebook-co-founder-dustin-moskovitz-unveils-new-company-.html|title=Facebook co-founder Dustin Moskovitz unveils new company, Asana|date=November 2, 2011|department=Technology |work=[[Los Angeles Times|LA Times Blogs]] |language=en-US|access-date=May 18, 2018}}</ref> The product launched commercially in April 2012.<ref>{{Cite news|url=https://articles.latimes.com/2012/apr/24/business/la-fi-tn-asana-software-startup-from-facebook-veterans-launches-paid-version-20120424|title=Asana, software start-up from Facebook vets, launches paid version|last=Guynn|first=Jessica|date=April 24, 2012|work=Los Angeles Times|access-date=May 18, 2018|language=en-US|issn=0458-3035}}</ref> In December 2018 the company was valued at $1.5 billion.<ref name="techcrunch.com">{{Cite news|url=https://techcrunch.com/2018/11/29/asana-a-work-management-platform-nabs-50m-growth-round-at-a-1-5b-valuation/|title=Asana, a work management platform, nabs $50M growth round at a $1.5B valuation|date=November 30, 2018|publisher=[[TechCrunch]] |access-date=December 3, 2018|language=en}}</ref>
+
+== History ==
+
+Moskovitz and Rosenstein left Facebook in 2008<ref name=":2">{{Cite news|url=http://blog.samaltman.com/asana|title=Asana|work=Sam Altman|access-date=May 18, 2018}}</ref> to start Asana (named after a Sanskrit word meaning “[[yoga pose]]”<ref name=":3">{{Cite news|url=http://fortune.com/2016/03/30/asana-series-c-50-million/|title=Former Facebook Execs Raise $50 Million More for Latest Venture|work=Fortune|access-date=May 18, 2018|language=en}}</ref>), which officially launched for free out of beta in November 2011<ref name=":4">{{Cite web|url=https://techcrunch.com/2016/03/30/task-management-app-asana-raises-50m-at-a-600m-valuation-led-by-ycs-sam-altman/|title=Task management app Asana raises $50M at a $600M valuation led by YC's Sam Altman – TechCrunch|website=techcrunch.com|language=en-US|access-date=May 18, 2018}}</ref> and commercially in April 2012.<ref name=":0" /> 
+
+As of January 2018, Asana claims more than 35,000 paying customers, including [[AB-InBev]], [[Viessmann]], [[eBay]], [[Uber]], [[Overstock]], [[Navy Federal Credit Union]], [[Icelandair Group|Icelandair]], and [[IBM]].<ref>{{Cite news|url=https://blog.asana.com/2018/01/asana-funding-series-d/|title=Raising $75M and partnering with Generation Investment Management to help your team work with clarity and purpose|date=January 30, 2018|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref>
+
+In September 2018, Asana announced that it had reached 50,000 paying customers and a 90 percent YoY revenue growth rate.<ref>{{Cite news|url=https://blog.asana.com/2018/09/asana-company-updates-2018/|title=Asana celebrates 50,000 paying organizations and 6 quarters of accelerating growth rate|date=September 27, 2018|work=The Asana Blog|access-date=October 1, 2018|language=en-US}}</ref>
+
+In September 2020, Asana went public on the [[New York Stock Exchange]] via a [[direct public offering]].<ref>{{Cite web|last=Tse|first=Crystal|title=Asana Valued at $5.5 Billion After Direct Listing Debut|url=https://www.bloomberg.com/news/articles/2020-09-30/asana-opens-at-5-2-billion-value-in-direct-listing-debut|access-date=March 10, 2021|website=Bloomberg|language=en-US}}</ref>
+
+== Product ==
+{{Overly detailed |section|details=When features were introduced may seem like a big deal to company employees, but nobody else cares.|date=November 2021}}
+Asana is a [[Software as a service|software-as-a-service]] designed to improve team collaboration and work management. It helps teams manage projects and tasks in one tool. Teams can create projects, assign work to teammates, specify deadlines, and communicate about tasks directly in Asana. It also includes reporting tools, file attachments, calendars, and more.
+
+In May 2013, Asana launched Organizations, a way for companies of all sizes to use Asana, reporting tools to help teams monitor project progress, and IT admin tools.<ref>{{cite news|url=http://bits.blogs.nytimes.com/2013/05/01/re-reengineering-the-corporation/|title=Re-Re-engineering the Corporation|last=Hardy|first=Quentin|date=May 1, 2013|newspaper=NewYorkTimes}}</ref>
+
+In 2014, Asana launched Calendar View for projects and tasks, its native [[iOS]] app,<ref>{{Cite news|url=https://blog.asana.com/2014/09/ios8app/|title=Asana: upgraded for iOS 8, built for teamwork - The Asana Blog|date=September 17, 2014|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> and Dashboards.<ref>{{Cite news|url=https://blog.asana.com/2014/10/dashboards/|title=Asana Dashboards let you see the big picture of work|date=October 14, 2014|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref>
+
+In January 2015, Asana released its native Android app.<ref>{{Cite web|url=https://venturebeat.com/2015/01/20/asana-ditches-html5-for-its-first-native-android-app/|title=Asana ditches HTML5 for its first native Android app|date=January 20, 2015}}</ref> Later that year, the company added team conversations.<ref>{{Cite news|url=https://blog.asana.com/2015/05/teamconvos/|title=Ditch the distribution list: Team Conversations are here - The Asana Blog|date=May 21, 2015|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> In September 2015, Asana unveiled a completely redesigned application and brand.<ref>{{Cite news|url=https://blog.asana.com/2015/09/the-new-asana/|title=Meet the new Asana - The Asana Blog|date=September 30, 2015|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref>
+
+In 2016, Asana added administrator features including member management,<ref>{{Cite news|url=https://blog.asana.com/2016/03/new-admin-functionality/|title=New member management features for admins - The Asana Blog|date=March 11, 2016|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> team management,<ref>{{Cite news|url=https://blog.asana.com/2016/06/new-admins-team-management/|title=Introducing team management - The Asana Blog|date=June 16, 2016|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> and password and security controls.<ref>{{Cite news|url=https://blog.asana.com/2016/08/admins-stronger-password-controls/|title=New for Admins: Stronger password and security controls - The Asana Blog|date=August 8, 2016|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> Then, status updates were added so teams could communicate the state of a project to stakeholders,<ref>{{Cite news|url=https://blog.asana.com/2016/06/status-updates-have-comments/|title=Project status updates now have comments - The Asana Blog|date=June 1, 2016|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> and task dependencies followed in July 2016.<ref>{{Cite news|url=https://blog.asana.com/2016/07/dependencies/|title=Dependencies: A simple way to manage complex workflows|date=July 28, 2016|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> In September 2016, the company launched custom fields, “an interface and architecture that will let you tailor Asana’s information management to cover a variety of structured data points”.<ref>{{Cite web|url=https://techcrunch.com/2016/09/15/task-management-app-asana-takes-on-the-spreadsheet-with-custom-fields/|title=Task management app Asana takes on the spreadsheet with 'custom fields' – TechCrunch|website=techcrunch.com|language=en-US|access-date=May 18, 2018}}</ref> A few months later, Asana launched Boards so teams could organize and visualize their projects in columns. The Verge reported that, “By integrating lists and boards into a single product, Asana may have just vaulted ahead of its rivals.”<ref>{{Cite news|url=https://www.theverge.com/2016/11/15/13631254/asana-boards-trello-software|title=Asana introduces boards as part of an all-out assault on Trello|work=The Verge|access-date=May 18, 2018}}</ref> The company also released pre-made project templates.
+
+In March 2017, Asana announced its integration with [[Microsoft Teams]],<ref>{{Cite news|url=https://blog.asana.com/2017/03/asana-microsoft-teams-integration/|title=Learn More About the New Asana Microsoft Teams Integration|date=March 13, 2017|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> followed by the launch of custom project templates in June.<ref>{{Cite news|url=https://blog.asana.com/2017/06/create-custom-project-plan-templates-asana/|title=Your recipe for success: Introducing custom templates|date=June 14, 2017|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> In fall 2017, start dates,<ref>{{Cite news|url=https://blog.asana.com/2017/10/add-start-dates-tasks-projects/|title=Avoid the scramble, and add a start date|date=October 16, 2017|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> a new integration with [[Gmail]],<ref>{{Cite news|url=https://blog.google/products/g-suite/track-projects-g-suite-and-asana/|title=Track projects with G Suite and Asana|date=June 19, 2017|work=Google|access-date=May 18, 2018|language=en}}</ref> and comment-only projects were released.<ref>{{Cite news|url=https://blog.asana.com/2017/11/comment-view-only-permissions-asana/|title=Lock it down: Introducing comment-only projects in Asana|date=November 6, 2017|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> Also in November, Asana launched its app in French and German.<ref>{{Cite news|url=https://venturebeat.com/2017/11/01/asana-seeks-growth-in-europe-by-expanding-task-management-app-beyond-english/|title=Asana seeks growth in Europe by expanding task-management app beyond English|date=November 1, 2017|work=VentureBeat|access-date=April 24, 2018}}</ref>
+
+At the beginning of 2018, Asana launched a new CSV importer<ref>{{Cite news|url=https://blog.asana.com/2018/01/import-csv-asana-projects/|title=Move projects from spreadsheets to Asana: introducing the CSV importer|date=January 8, 2018|work=The Asana Blog|access-date=May 18, 2018|language=en-US}}</ref> so teams could upload their data into the app. In February 2018, the app was released in Spanish and Portuguese. In March 2018, Asana announced a new interactive feature called Timeline, which businesses can use to visualize and map out their projects.<ref>{{Cite news|url=https://venturebeat.com/2018/03/28/asana-launches-timeline-tool-for-companies-to-visualize-project-tasks/|title=Asana launches timeline tool for companies to visualize project tasks|date=March 28, 2018|work=VentureBeat|access-date=April 24, 2018}}</ref>
+
+In July 2021, Asana launched an app for [[Zoom (software)|Zoom]]. The Asana app can be opened within the videoconferencing software Zoom.<ref name=":5">{{Cite web|date=2021-07-21|title=Future of Work Here Today: Asana Launches App for Zoom to Reimagine Meetings|url=https://www.businesswire.com/news/home/20210721005369/en/Future-of-Work-Here-Today-Asana-Launches-App-for-Zoom-to-Reimagine-Meetings|access-date=2021-08-02|website=www.businesswire.com|language=en}}</ref>{{better source needed|date=September 2021}}
+
+In October 2021, Asana announced its new ''Enterprise Work Graph'' suite, which includes enterprise workflow features. <ref>{{cite web|url=https://www.computerworld.com/article/3636981/asana-takes-aim-at-the-enterprise-with-new-workflow-features.html|title=Asana takes aim at the enterprise with new workflow features|website=Computer World|date=October 20, 2021|author=Charlotte Trueman|access-date=October 23, 2021}}</ref>
+
+== API and integrations ==
+
+In April 2012, Asana released its [[API]] to third-party developers. Asana's open API provides a means to programmatically read information in Asana, input information into Asana, and create automations within Asana. This allows customers or third-party developers to build on the Asana platform and customize Asana to the unique way their teams work. Common use cases include automating repetitive tasks, chaining processes, automating reporting on tasks and projects, and syncing with databases or other tools.
+
+The Asana API is a RESTful interface, allowing users to update and access much of their data on the platform. It provides predictable URLs for accessing resources, and uses built-in HTTP features to receive commands and return responses. This makes it easy to communicate with a wide variety of environments, from command-line utilities to browser plugins to native applications.
+
+Asana has integrations with other SaaS tools, including [[Gmail]], [[Slack (software)|Slack]], [[Microsoft Outlook]], [[Dropbox (service)|Dropbox]], [[Box (company)|Box]], [[Google Drive]], [[Zapier]], [[IFTTT]], [[Wufoo]], [[JotForm]], [[Okta (identity management)|Okta]], [[OneLogin]], [[Harvest (software)|Harvest]], Instagantt, [[Zendesk]],<ref>{{Cite news|url=https://asana.com/apps|title=Asana Apps and Integrations · Asana|work=Asana|access-date=May 18, 2018|language=en}}</ref>  [[Zoom (software)|Zoom]]<ref name=":5" /> and [[Qatalog]].
+
+== Reception ==
+
+Asana received a 4.5 out of 5 from ''PC Magazine'' (October 13, 2017), which named it an Editors' Choice and called it "one of the best collaboration and productivity apps for teams."<ref name=":1">{{Cite web|url=https://www.pcmag.com/article2/0,2817,2408011,00.asp|title=Asana|website=PCMAG|access-date=February 3, 2018}}</ref> The article remarked on Asana's "thoughtful design, fluid interactive elements, and generous member allotment."<ref name=":1" /> In December 2020, Asana was named as one of the Best Workplaces for Parents in the US by Great Place to Work.<ref>{{Cite web|title=Great Place to Work's Best Workplaces for Parents™ 2020|url=https://www.greatplacetowork.com/best-workplaces/parents/2020|access-date=December 22, 2020|website=Great Place to Work®|language=en-us}}</ref>
+
+== See also ==
+
+* [[Collaboration software]]
+* [[Comparison of project management software]]
+* [[List of collaborative software]]
+* [[List of project management software]]
+* [[Project management software]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+
+* {{official website|http://www.asana.com}}
+* {{Finance links
+
+| symbol = ASAN
+| sec_cik = ASAN
+| google = NYSE:ASAN
+| yahoo = ASAN
+| bloomberg = ASAN:US
+| reuters = ASAN
+| nasdaq = ASAN
+}}
+
+{{Task management software}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Asana (Web Application)}}
+
+[[Category:Task management software]]
+[[Category:Mission District, San Francisco]]
+[[Category:Web applications]]
+[[Category:Software companies based in the San Francisco Bay Area]]
+[[Category:2008 establishments in California]]
+[[Category:Companies based in San Francisco]]
+[[Category:American companies established in 2008]]
+[[Category:Software companies established in 2008]]
+[[Category:Software companies of the United States]]
+[[Category:Companies listed on the New York Stock Exchange]]
+[[Category:Direct stock offerings]]

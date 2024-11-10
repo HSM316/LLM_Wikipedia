@@ -1,0 +1,16 @@
+{{notability|Products|date=April 2012}}
+{{primary sources|date=April 2012}}
+[[Image:MocoloUISample.png|thumb|right|Mocolo screenshot]]
+'''Mocolo''' is a [[proprietary software|proprietary]] video analysis server for [[Microsoft Windows]], mostly used in interactive environments. 
+It monitors video streams, finds interactions (presences or movements) and sends analysis results to a list of client applications in form of [[Open Sound Control]] (OSC) packets.
+Key features: lightweight performance, capability to analyze several video sources at the same time, connectivity toward any [[Open Sound Control|OSC]] capable application.
+Mocolo makes use of small amounts of [[CPU]] time and no use of the [[GPU]], leaving enough resources for other client applications running on the same machine.
+
+==External links==
+* [https://web.archive.org/web/20110316165734/http://www.orfware.com/index_mocolo_intro.html Mocolo homepage]
+* [https://web.archive.org/web/20080619215224/http://www.xtendedlab.com/project.html Xtend3dLab projects page]
+
+[[Category:Computer vision software]]
+
+
+{{science-software-stub}}

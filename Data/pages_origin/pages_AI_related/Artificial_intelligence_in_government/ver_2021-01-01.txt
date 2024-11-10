@@ -1,0 +1,96 @@
+{{See also|Government by algorithm}}
+
+[[Artificial intelligence]] (AI) has a range of uses in [[government]]. It can be used to further [[public policy]] objectives (in areas such as emergency services, health and welfare), as well as assist the public to interact with the government  (through the use of [[Virtual assistant|virtual assistants]], for example). According to the [[Harvard Business Review]], "Applications of artificial intelligence to the public sector are broad and growing, with early experiments taking place around the world."<ref name=":0">{{Cite web|url=https://hbr.org/2018/01/how-ai-could-help-the-public-sector|title=How AI Could Help the Public Sector|last=Martinho-Truswell|first=Emma|date=2018-01-26|website=Harvard Business Review|access-date=2018-12-31}}</ref> Hila Mehr from the [[Ash Center for Democratic Governance and Innovation]] at [[Harvard University]] notes that AI in government is not new, with postal services using machine methods in the late 1990s to [[handwriting recognition|recognise handwriting]] on envelopes to automatically route letters.<ref name=":1">{{Cite web|url=https://ash.harvard.edu/files/ash/files/artificial_intelligence_for_citizen_services.pdf|title=Artificial Intelligence for Citizen Services and Government|last=Mehr|first=Hila|date=August 2017|website=ash.harvard.edu|access-date=2018-12-31}}</ref> The use of AI in government comes with significant benefits, including efficiencies resulting in cost savings (for instance by reducing the number of front office staff), and reducing the opportunities for corruption.<ref name=":9">{{Cite book|last=Zheng, Yongqing Yu, Han Cui, Lizhen Miao, Chunyan Leung, Cyril Yang, Qiang|title=Smarths: An AI platform for improving government service provision|date=2018|oclc=1125199733}}</ref> However, it also carries risks.
+
+== Uses of AI in government ==
+The potential uses of AI in government are wide and varied,<ref name=":8">{{Cite journal|last1=Wirtz|first1=Bernd W.|last2=Weyerer|first2=Jan C.|last3=Geyer|first3=Carolin|date=2018-07-24|title=Artificial Intelligence and the Public Sector—Applications and Challenges|journal=International Journal of Public Administration|volume=42|issue=7|pages=596–615|doi=10.1080/01900692.2018.1498103|s2cid=158829602|issn=0190-0692|url=https://zenodo.org/record/3569435}}</ref> with [[Deloitte]] considering that "Cognitive technologies could eventually revolutionize every facet of government operations".<ref name=":2">{{Cite web|url=https://www2.deloitte.com/insights/us/en/focus/cognitive-technologies/artificial-intelligence-government-summary.html|title=Executive Summary - Demystifying artificial intelligence in government {{!}} Deloitte Insights|date=26 April 2017|website=www2.deloitte.com|access-date=2018-12-31}}</ref> Mehr suggests that six types of government problems are appropriate for AI applications:<ref name=":1" />
+
+# Resource allocation - such as where administrative support is required to complete tasks more quickly.
+# Large datasets - where these are too large for employees to work efficiently and multiple datasets could be combined to provide greater insights.
+# Experts shortage - including where basic questions could be answered and niche issues can be learned.
+# Predictable scenario - historical data makes the situation predictable.
+# Procedural - repetitive tasks where inputs or outputs have a binary answer.
+# Diverse data - where data takes a variety of forms (such as visual and linguistic) and needs to be summarised regularly.
+
+Meher states that "While applications of AI in government work have not kept pace with the rapid expansion of AI in the private sector, the potential use cases in the public sector mirror common applications in the private sector."<ref name=":1" />
+
+Potential and actual uses of AI in government can be divided into three broad categories: those that contribute to public policy objectives; those that assist public interactions with the government; and other uses.
+
+=== Contributing to public policy objectives ===
+There are a range of examples of where AI can contribute to public policy objectives.<ref name=":10">{{Cite journal|last1=Wirtz|first1=Bernd W.|last2=Weyerer|first2=Jan C.|last3=Geyer|first3=Carolin|date=2018-07-24|title=Artificial Intelligence and the Public Sector—Applications and Challenges|journal=International Journal of Public Administration|volume=42|issue=7|pages=596–615|doi=10.1080/01900692.2018.1498103|s2cid=158829602|issn=0190-0692|url=https://zenodo.org/record/3569435}}</ref> These include:
+
+* Receiving benefits at job loss, retirement, bereavement and child birth almost immediately, in an automated way (thus without requiring any actions from citizens at all)<ref>[https://www.globalgovernmentforum.com/enabling-e-government-estonias-national-digital-advisor-marten-kaevats/ Marten Kaevats on the ‘invisible government’]</ref>
+*Social insurance service provision<ref name=":9" />
+* Classifying emergency calls based on their urgency (like the system used by the [[Cincinnati Fire Department]] in the United States<ref name=":6">{{Cite web|url=https://www.capgemini.com/consulting/wp-content/uploads/sites/30/2017/10/ai-in-public-sector.pdf|title=Unleashing the potential of Artificial Intelligence in the Public Sector|last=Capgemini Consulting|date=2017|website=www.capgemini.com|access-date=2018-12-31}}</ref>)
+* Detecting and preventing the spread of diseases<ref name=":6" />
+* Assisting public servants in making welfare payments and immigration decisions<ref name=":0" />
+* Adjudicating bail hearings<ref name=":0" />
+* Triaging health care cases<ref name=":0" />
+* Monitoring social media for public feedback on policies<ref name=":7">{{Cite web|url=https://www.act.ipaa.org.au/brief-artificial|title=In Brief - Artificial Intelligence in the Public Sector|last=Institute of Public Administration Australia|others=Linked infographic based on information by Daniel Castro, Steve Nichols, Eric Ellis, Cynthia Stoddard (Adobe Chief Information Officer) and Government Technology reporting.|access-date=2019-01-01}}</ref>
+* Monitoring social media to identify emergency situations<ref name=":7" />
+* Identifying fraudulent benefits claims<ref name=":7" />
+* Predicting a crime and recommending optimal police presence<ref name=":7" />
+* Predicting traffic congestion and car accidents<ref name=":7" />
+* Anticipating road maintenance requirements<ref name=":7" />
+* Identifying breaches of health regulations<ref name=":7" />
+* Providing personalised education to students<ref name=":6" />
+* Marking exam papers<ref name=":0" />
+* Assisting with defence and national security (see {{section link|Artificial intelligence|Military}} and {{section link|Applications of artificial intelligence|Other}} respectively).
+* Making symptom based health [[Chatbot]] [[Artificial_intelligence_in_healthcare#cite_note-47|AI Vaid]] for diagnosis<ref>[http://www.readwhere.com/read/1807436/The-CEO-Magazine/30-Most-Valuable-Tech-Companies-to-watch-in-2018#dual/46/1 Health Chatbot]</ref>
+
+=== Assisting public interactions with government ===
+AI can be used to assist members of the public to interact with government and access government services,<ref name=":10" /> for example by:
+
+* [[question answering|Answering questions]] using [[Virtual assistant|virtual assistants]] or [[Chatbot|chatbots]] (see below)
+* Directing requests to the appropriate area within government<ref name=":1" />
+* Filling out forms<ref name=":1" />
+* Assisting with searching documents (e.g. [[IP Australia]]’s trade mark search<ref>{{Cite web|url=http://www.oecd.org/innovation/innovative-government/innovation2018.htm|title=Embracing Innovation in Government: Global Trends 2018|last=OECD|date=2018|website=www.oecd.org|access-date=2018-12-31}}</ref>)
+* Scheduling appointments<ref name=":7" />
+
+Examples of virtual assistants or chatbots being used by government include the following:
+
+* Launched in February 2016, the [[Australian Taxation Office]] has a virtual assistant on its [https://www.ato.gov.au website] called "Alex".<ref name=":3">{{Cite web|url=https://www.ato.gov.au/about-ato/commitments-and-reporting/in-detail/ato-regulator-performance-framework-self-assessment-report-2016-17/?page=3|title=ATO Regulator Performance Framework self-assessment report 2016-17|last=Australian Taxation Office|website=www.ato.gov.au|language=en-AU|access-date=2018-12-31}}</ref> As at 30 June 2017, Alex could respond to more than 500 questions, had engaged in 1.5 million conversations and resolved over 81% of enquiries at first contact.<ref name=":3" />
+* Australia's [[National Disability Insurance Scheme]] (NDIS) is developing a virtual assistant called "Nadia" which takes the form of an [[Avatar (computing)|avatar]] using the voice of actor [[Cate Blanchett]].<ref name=":4">{{Cite web|url=https://www.cio.com.au/article/614647/ndia-recruits-cate-blanchett-voice-new-avatar/|title=NDIA recruits Cate Blanchett to voice new avatar|date=22 February 2017|website=CIO|access-date=2018-12-31}}</ref> Nadia is intended to assist users of the NDIS to navigate the service. Costing some $4.5 million,<ref>{{Cite web|url=https://www.aph.gov.au/api/qon/downloadattachment?attachmentId=92f4e55a-820f-42e8-8ec9-2924b113f36f|title=Answers to Estimates Questions on Notice - Question No. NDIA SQ17-000196|date=6 December 2017|website=www.aph.gov.au|access-date=2018-12-31}}</ref> the project has been postponed following a number of issues.<ref>{{Cite web|url=https://www.aph.gov.au/Parliamentary_Business/Committees/Joint/National_Disability_Insurance_Scheme/NDISICTSystems/Report|title=NDIS ICT Systems|last=Joint Standing Committee on the National Disability Insurance Scheme|date=December 2018|website=www.aph.gov.au|language=en-AU|access-date=2018-12-31}}</ref><ref>{{Cite web|url=https://www.abc.net.au/news/2017-09-21/government-stalls-ndis-virtual-assistant-voiced-by-cate-blanchet/8968074|title=Government's Blanchett-voiced AI venture for NDIS stalls|date=21 September 2017|website=ABC News|language=en-AU|access-date=2018-12-31}}</ref> Nadia was developed using [[Watson (computer)|IBM Watson]],<ref>{{Cite web|url=https://parlinfo.aph.gov.au/parlInfo/search/display/display.w3p;query=Id:%22committees/estimate/4f0bb71a-b09f-4adc-934f-c8d5de8ec54f/0002%22|title=Hansard, Community Affairs Legislation Committee|date=31 May 2017|website=Parliament of Australia}}</ref><ref name=":4" /> however, the [[Government of Australia|Australian Government]] is considering other platforms such as [[Cortana|Microsoft Cortana]] for its further development.<ref>{{Cite web|url=https://www.aph.gov.au/api/qon/downloadattachment?attachmentId=a3af3394-0167-4cf1-8b00-983bb8e33792|title=Answers to Estimates Questions on Notice - Question No. NDIA SQ17-000199|date=6 December 2017|website=www.aph.gov.au|access-date=2018-12-31}}</ref>
+* The Australian Government's [[Department of Human Services (Australia)|Department of Human Services]] uses virtual assistants on parts of its [https://www.humanservices.gov.au website] to answer questions and encourage users to stay in the digital channel.<ref name=":5">{{Cite web|url=https://www.humanservices.gov.au/organisations/about-us/annual-reports/annual-report-2017-18|title=Annual Report 2017-18 - Australian Government Department of Human Services|last=Department of Human Services|website=www.humanservices.gov.au|access-date=2018-12-31}}</ref> As at December 2018, a virtual assistant called "Sam" could answer general questions about family, job seeker and student payments and related information. The Department also introduced an internally-facing virtual assistant called "MelissHR" to make it easier for departmental staff to access human resources information.<ref name=":5" />
+* Estonia is building a virtual assistant which will guide citizens through any interactions they have with the government. Automated and proactive services "push" services to citizens at key events of their lives (including births, bereavements, unemployment, ...). One example is the automated registering of babies when they are born.<ref>[https://govinsider.asia/innovation/marten-kaevats-national-digital-advisor-estonias-vision-for-an-invisible-government/ Estonia's vision for an 'invisible government']</ref><ref>[https://medium.com/swlh/estonias-national-strategy-for-artificial-intelligence-2623259ddf4c Estonia’s National Strategy for Artificial Intelligence]</ref>
+
+=== Other uses ===
+Other uses of AI in government include:
+
+* [[Translation]]<ref name=":1" />
+* Drafting documents<ref name=":1" />
+
+== Potential benefits ==
+AI offers potential efficiencies and costs savings for the government. For example, [[Deloitte]] has estimated that automation could save [[Federal government of the United States|US Government]] employees between 96.7 million to 1.2 billion hours a year, resulting in potential savings of between $3.3 billion to $41.1 billion a year.<ref name=":2" /> The [[Harvard Business Review]] has stated that while this may lead a government to reduce employee numbers, "Governments could instead choose to invest in the quality of its services. They can re-employ workers’ time towards more rewarding work that requires lateral thinking, empathy, and creativity — all things at which humans continue to outperform even the most sophisticated AI program."<ref name=":0" />
+
+== Potential risks ==
+
+Potential risks associated with the use of AI in government include AI becoming susceptible to bias,<ref name=":1" /> a lack of transparency in how an AI application may make decisions,<ref name=":6" /> and the accountability for any such decisions.<ref name=":6" />
+
+== See also ==
+*[[AI for Good]]
+* [[Applications of artificial intelligence]]
+* [[Artificial intelligence]]
+* [[Government by algorithm]]
+* [[Lawbot]]
+* [[Regulation of algorithms]]
+* [[Regulation of artificial intelligence]]
+
+== References ==
+{{Reflist}}
+
+== Further reading ==
+{{Cite news|url=https://www.centreforpublicimpact.org/ai-government-working-paper/|title=Destination unknown: Exploring the impact of Artificial Intelligence on Government Working Paper|publisher=Centre for Public Impact (a BCG Foundation)|access-date=31 March 2019}}
+
+{{Cite news|url=https://www.themandarin.com.au/102276-intelligent-decision-making/|title=Bringing intelligence to government decision-making|last=Cornish|first=Lisa|date=5 December 2018|work=The Mandarin|access-date=12 January 2019}}
+
+{{Cite news|url=https://www.canberratimes.com.au/politics/federal/demystifying-artificial-intelligence-20181130-p50jgb.html|title=Demystifying artificial intelligence|last=Garner|first=Catherine|date=4 December 2018|work=The Canberra Times|access-date=12 January 2019}}
+
+{{Cite news|url=https://www.cio.com/article/3279546/artificial-intelligence/powering-ai-for-government.html|title=Powering AI for government|last=London|first=Dan|date=6 June 2018|work=CIO|access-date=12 January 2019}}
+
+{{Cite news|url=https://oecd-opsi.org/wp-content/uploads/2019/11/AI-Report-Online.pdf|title=Hello, World: Artificial intelligence and its use in the public sector|publisher=OECD Observatory of Public Sector Innovation|access-date=20 December 2019}}
+
+[[Category:Artificial intelligence applications]]
+[[Category:Government]]
+[[Category:E-government]]
+[[Category:Government by algorithm]]

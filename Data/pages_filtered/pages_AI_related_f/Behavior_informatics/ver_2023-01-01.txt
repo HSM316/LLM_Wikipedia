@@ -1,0 +1,16 @@
+Behavior informatics (BI) is the informatics of behaviors so as to obtain behavior intelligence and behavior insights. BI is a research method combining science and technology, specifically in the area of engineering. The purpose of BI includes analysis of current behaviors as well as the inference of future possible behaviors. This occurs through pattern recognition.
+
+Different from applied behavior analysis from the psychological perspective, BI builds computational theories, systems and tools to qualitatively and quantitatively model, represent, analyze, and manage behaviors of individuals, groups and/or organizations.
+
+BI is built on classic study of behavioral science, including behavior modeling, applied behavior analysis, behavior analysis, behavioral economics, and organizational behavior. Typical BI tasks consist of individual and group behavior formation, representation, computational modeling, analysis, learning, simulation, and understanding of behavior impact, utility, non-occurring behaviors etc. for behavior intervention and management. The Behavior Informatics approach to data utilizes cognitive as well as behavioral data. By combining the data, BI has the potential to effectively illustrate the big picture when it comes to behavioral decisions and patterns. One of the goals of BI is also to be able to study human behavior while eliminating issues like self-report bias. This creates more reliable and valid information for research studies. 
+
+ Behavior analytics 
+Behavior informatics covers behavior analytics which focuses on analysis and learning of behavioral data.
+
+ Behavior 
+From an Informatics perspective, a behavior consists of four key elements: actors (behavioral subjects and objects), operations (actions, activities) and interactions (relationships), and their properties. A behavior can be represented as a behavior vector, all behaviors of an actor or an actor group can be represented as behavior sequences and multi-dimensional behavior matrix. The following table explains some of the elements of behavior.  
++TermDefinitionSubjectWho is performing the activity.ObjectTo whom the activity is performed.ContextThe environment surrounding an activity. This includes what happens before, during, and after the activity.ActionThe activity the subject is performingGoalThe intended end target the subject hopes to achieve through the action. 
+Behavior Informatics takes into account behavior when analyzing business patterns and intelligence. The inclusion of behavior in these analyses provides prominent information on social and driving factors of patterns.
+
+Behavior Informatics in Business
+Behavior Informatics is being used in a variety of settings, including but not limited to health care management, telecommunication, and marketing. Behavior Informatics is a turning point for the health care system. Behavior Informatics provides a manner in which to analyze and organize the many aspects that go into a person's health care needs and decisions. When it comes to many business models, behavior informatics is utilized for a similar role. Organizations implement behavior informatics to enhance business structure and regime. The use of behavior informatics in many organizations can help moderate ideal business decisions and situations.

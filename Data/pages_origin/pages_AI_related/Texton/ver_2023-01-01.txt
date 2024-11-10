@@ -1,0 +1,42 @@
+
+The term '''''texton''''' was introduced by [[Béla Julesz]] in 1981 to describe "the putative units of pre-attentive human texture perception."<ref>{{Cite journal
+  | authorlink = Bela Julesz
+  | title = Textons, the Elements of Texture Perception, and their Interactions
+  | journal = rk
+
+  | volume = 290
+  | pages = 91–97
+  | date = March 1981
+  | doi = 10.1038/290091a0
+  | pmid = 7207603
+  | last1 = Julesz
+  | first1 = B
+  | issue = 5802}}</ref>
+The term reemerged in the late 1990s and early 2000s to describe vector quantized responses of a linear [[filter bank]].<ref>{{cite journal
+  | author = T. Leung and [[Jitendra Malik|J. Malik]]
+  | title = Representing and recognizing the visual appearance of materials using three-dimensional textons
+  | url = http://www.cs.berkeley.edu/~malik/papers/LM-3dtexton.pdf
+  | journal = International Journal of Computer Vision
+  | volume = 43
+  | issue = 1
+  | pages = 29–44
+  | year = 2001
+  | doi = 10.1023/A:1011126920638 }}</ref><ref>{{cite journal
+  | author = [[Jitendra Malik|J. Malik]], S. Belongie, T. Leung and J. Shi
+  | title = Contour and Texture Analysis for Image Segmentation
+  | url = http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/papers/mbls_ijcv01.pdf
+  | journal = International Journal of Computer Vision
+  | volume = 43
+  | issue = 1
+  | pages = 7–27
+  | year = 2001
+  | doi = 10.1023/A:1011174803800 }}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Computer vision]]
+
+
+{{vocab-stub}}
+{{Compu-AI-stub}}

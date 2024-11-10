@@ -1,0 +1,267 @@
+'''Visual servoing''', also known as '''vision-based robot control''' and abbreviated '''VS''', is a technique which uses feedback information extracted from a vision sensor (visual feedback<ref>{{cite web|title=Basic Concept and Technical Terms|url=http://www.k2.t.u-tokyo.ac.jp/tech_terms/index-e.html#VisualFeedback|website=Ishikawa Watanabe Laboratory, University of Tokyo|accessdate=12 February 2015}}</ref>) to control the motion of a [[robot]]. One of the earliest papers that talks about visual servoing was from the SRI International Labs in 1979.<ref name="Agin1979">Agin, G.J., "Real Time Control of a Robot with a Mobile Camera".  Technical Note 179, SRI International, Feb. 1979.</ref>
+
+==Visual servoing taxonomy==
+[[File:High-speed catching system.webm|thumb|An example of visual servoing in a high-speed catching system<ref>{{cite web|title=High-speed Catching System (exhibited in National Museum of Emerging Science and Innovation since 2005)|url=http://www.k2.t.u-tokyo.ac.jp/fusion/MiraikanCatching/index-e.html|website=Ishikawa Watanabe Laboratory, University of Tokyo|accessdate=12 February 2015}}</ref>]]
+There are two fundamental configurations of the robot end-effector (hand) and the camera:<ref name="Chaumette07" />
+
+* Eye-in-hand, or end-point closed-loop control, where the camera is attached to the moving hand and observing the relative position of the target.
+* Eye-to-hand, or end-point open-loop control, where the camera is fixed in the world and observing the target and the motion of the hand.
+
+Visual Servoing control techniques are broadly classified into the following types:<ref name="Hutchinson1996">S. A. Hutchinson, G. D. Hager, and P. I. Corke. [http://citeseer.ist.psu.edu/76215.html A tutorial on visual servo control.] IEEE Trans. Robot. Automat., 12(5):651--670, Oct. 1996.</ref><ref name="Chaumette06">F. Chaumette, S. Hutchinson. [http://www.irisa.fr/lagadic/publi/publi/Chaumette06a-eng.html  Visual Servo Control, Part I: Basic Approaches.] IEEE Robotics and Automation Magazine, 13(4):82-90, December 2006</ref>
+*Image-based (IBVS)
+*Position/[[pose (computer vision)|pose]]-based (PBVS)
+*Hybrid approach
+
+IBVS  was proposed by Weiss and Sanderson.<ref name="Weiss83">A. C. Sanderson and L. E. Weiss. Adaptive visual servo control of robots. In A. Pugh, editor, Robot Vision, pages 107–116. IFS, 1983</ref>  The control law is based on the error between current and desired features on the image plane, and does not involve any estimate of the pose of the target. The features may be the coordinates of visual features, lines or moments of regions.  IBVS has difficulties<ref name=Chaumette98>F. Chaumette. Potential problems of stability and convergence in image-based and position-based visual servoing. In D. Kriegman, G. Hager, and S. Morse, editors, The confluence of vision and control, volume 237 of Lecture Notes in Control and Information Sciences, pages 66–78. Springer-Verlag, 1998.</ref> with motions very large rotations, which has come to be called camera retreat.<ref name="Corke00"/>
+
+PBVS is a model-based technique (with a single camera). This is because the pose of the object of interest is estimated with respect to the camera and then a command is issued to the robot controller, which in turn controls the robot. In this case the image features are extracted as well, but are additionally used to estimate 3D information (pose of the object in Cartesian space), hence it is servoing in 3D.
+
+Hybrid approaches use some combination of the 2D and 3D servoing. There have been a few different approaches to hybrid servoing
+* 2-1/2-D Servoing<ref name="Malis99">E. Malis, F. Chaumette and S. Boudet, 2.5 D visual servoing, IEEE Transactions on Robotics and Automation, 15(2):238-250, 1999</ref>
+* Motion partition-based
+* Partitioned DOF Based<ref name="Corke00">{{citation |author=P. Corke and S. A. Hutchinson|title=A new partitioned approach to image-based visual servo control|journal=IEEE Trans. Robot. Autom.|volume=17|issue=4|pages=507–515|date=August 2001|doi=10.1109/70.954764}}</ref>
+
+==Survey==
+{{Research paper|section|date=February 2015}}
+The following description of the prior work is divided into 3 parts
+
+* Survey of existing visual servoing methods.
+* Various features used and their impacts on visual servoing.
+* Error and stability analysis of visual servoing schemes.
+
+=== Survey of existing visual servoing methods ===
+
+Visual servo systems, also called servoing, have been around since the early 1980s 
+,<ref name="Agin79">G. J. Agin. Computer vision system for industrial inspection and assembly. IEEE
+Computer, pages 11–20, 1979</ref> although the term visual servo itself was only coined in 1987.<ref name="Chaumette07">F. Chaumette, S. Hutchinson. [http://www.irisa.fr/lagadic/publi/publi/Chaumette07a-eng.html Visual Servo Control, Part II: Advanced Approaches.] IEEE Robotics and Automation Magazine, 14(1):109-118, March 2007</ref><ref name="Hutchinson1996"/><ref name="Chaumette06"/>
+Visual Servoing is, in essence, a method for robot control where the sensor used is a camera (visual sensor). 
+Servoing consists primarily of two techniques,<ref name="Chaumette06"/>
+one involves using information from the image to directly control the degrees of freedom (DOF) of the robot, thus referred to as Image Based Visual Servoing (IBVS).
+While the other involves the geometric interpretation of the information extracted from the camera, such as estimating the pose of the target and parameters of the camera (assuming some basic model of the target is known). Other servoing classifications exist based on the variations in each component of a servoing system 
+,<ref name="Hutchinson1996"/>
+e.g. the location of the camera, the two kinds are eye-in-hand and hand–eye configurations. 
+Based on the control loop, the two kinds are end-point-open-loop and end-point-closed-loop. Based on whether the control is applied to the joints (or DOF)
+directly or as a position command to a robot controller the two types are
+direct servoing and dynamic look-and-move.
+Being one of the earliest works <ref name="Lee87">Lee E. Weiss, Arthur C. Sanderson, and Charles P. Neuman. Dynamic sensor-based control of robots with visual feedback. IEEE Transactions on Robotics and Automation, 3(5):404–417, October 1987</ref>
+the authors proposed a hierarchical
+visual servo scheme applied to image-based servoing. The technique relies on
+the assumption that a good set of features can be extracted from the object
+of interest (e.g. edges, corners and centroids) and used as a partial model
+along with global models of the scene and robot. The control strategy is
+applied to a simulation of a two and three DOF robot arm.
+
+Feddema et al.<ref name="Feddema89">J. T. Feddema and O. R. Mitchell. Vision-guided servoing with feature-based tra- jectory generation. IEEE Transactions on Robotics and Automation, 5(5):691–700, October 1989</ref>
+introduced the idea of generating task trajectory
+with respect to the feature velocity. This is to ensure that the sensors are
+not rendered ineffective (stopping the feedback) for any the robot motions.
+The authors assume that the objects are known a priori (e.g. CAD model)
+and all the features can be extracted from the object.
+The work by Espiau et al.<ref name="Espiau92">B. Espiau, F. Chaumette, and P. Rives. A new approach to visual servoing in robotics. IEEE Transactions on Robotics and Automation, 8(3):313–326, June 1992</ref>
+discusses some of the basic questions in
+visual servoing. The discussions concentrate on modeling of the interaction
+matrix, camera, visual features (points, lines, etc..).
+In <ref>N.P. Papanikopoulos and Khosla P. K. Adaptive robotic visual tracking: Theory and experiments. IEEE Transactions on Automatic Control, 38(3):429–445, March 1993</ref> 
+an adaptive servoing system was proposed with a look-and-move
+servoing architecture. The method used optical flow along with SSD to
+provide a confidence metric and a stochastic controller with Kalman filtering
+for the control scheme. The system assumes (in the examples) that the plane
+of the camera and the plane of the features are parallel.,<ref name="ReferenceA">P. Corke. Experiments in high-performance robotic visual servoing. In International Symposium on Experimental Robotics, October 1993</ref> discusses an approach of velocity control using the Jacobian relationship s˙ = Jv˙ . In addition the author uses Kalman filtering, assuming that
+the extracted position of the target have inherent errors (sensor errors). A
+model of the target velocity is developed and used as a feed-forward input
+in the control loop. Also, mentions the importance of looking into kinematic
+discrepancy, dynamic effects, repeatability, settling time oscillations and lag
+in response.
+
+Corke <ref>P. Corke. Dynamic issues in robot visual-servo systems. In International Symposium on Robotics Research, pages 488–498, 1995.</ref> poses a set of very critical questions on visual servoing and tries
+to elaborate on their implications. The paper primarily focuses the dynamics
+of visual servoing. The author tries to address problems like lag and stability,
+while also talking about feed-forward paths in the control loop. The paper
+also, tries to seek justification for trajectory generation, methodology of axis
+control and development of performance metrics.
+
+Chaumette in <ref>F. Chaumette. Potential problems of stability and convergence on image-based and position-based visual servoing. In D. Kriegman, G. Hagar, and S. Morse, editors, Con- fluence of Vision and Control, Lecture Notes in Control and Information Systems, volume 237, pages 66–78. Springer-Verlag, 1998</ref> provides good insight into the two major problems with
+IBVS. One, servoing to a local minima and second, reaching a Jacobian singularity. The author show that image points alone do not make good features
+due to the occurrence of singularities. The paper continues, by discussing the
+possible additional checks to prevent singularities namely, condition numbers
+of J_s and Jˆ+_s, to check the null space of ˆ J_s and J^T_s . One main point that
+the author highlights is the relation between local minima and unrealizable
+image feature motions.
+
+Over the years many hybrid techniques have been developed.<ref name="Chaumette07"/> These
+involve computing partial/complete pose from Epipolar Geometry using multiple views or multiple cameras. The values are obtained by direct estimation or through a learning or a statistical scheme. While others have used
+a switching approach that changes between image-based and position-based
+based on a Lyapnov function.<ref name="Chaumette07"/>
+The early hybrid techniques that used a combination of image-based and
+pose-based (2D and 3D information) approaches for servoing required either
+a full or partial model of the object in order to extract the pose information
+and used a variety of techniques to extract the motion information from the
+image.<ref>E Marchand, P. Bouthemy, F Chaumette, and V. Moreau. Robust visual tracking by coupling 2d and 3d pose estimation. In Proceedings of IEEE International Conference on Image Processing, 1999.</ref> used an affine motion model from the image motion in addition
+to a rough polyhedral CAD model to extract the object pose with respect to
+the camera to be able to servo onto the object (on the lines of PBVS).
+
+2-1/2-D visual servoing developed by Malis et al.<ref>E. Malis. Hybrid vision-based robot control robust to large calibration errors on both intrinsic and extrinsic camera parameters. In European Control Conference, pages 289–293, September 2001.</ref> is a well known technique that breaks down the information required for servoing into an organized fashion which decouples rotations and translations. The papers
+assume that the desired pose is known a priori. The rotational information is
+obtained from partial pose estimation, a homography, (essentially 3D information) giving an axis of rotation and the angle (by computing the eigenvalues and eigenvectors of the homography). The translational information is
+obtained from the image directly by tracking a set of feature points. The only
+conditions being that the feature points being tracked never leave the field of
+view and that a depth estimate be predetermined by some off-line technique.
+2-1/2-D servoing has been shown to be more stable than the techniques that
+preceded it. Another interesting observation with this formulation is that
+the authors claim that the visual Jacobian will have no singularities during
+the motions.
+The hybrid technique developed by Corke and Hutchinson,<ref name="ReferenceB">P. Corke and S. Hutchinson. A new hybrid image-based visual servo control scheme. In Proceedings of the 39th IEEE Conference on Decision and control, December 2000</ref><ref name="ReferenceC">P. Corke and S. Hutchinson. A new partitioned approach to image-based visual servo control. IEEE Transactions on Robotics and Automation, 17(4):507–515, August 2001</ref> popularly called portioned approach partitions the visual (or image) Jacobian into
+motions (both rotations and translations) relating X and Y axes and motions related to the Z axis.<ref name="ReferenceC"/> outlines the technique, to break out columns
+of the visual Jacobian that correspond to the Z axis translation and rotation
+(namely, the third and sixth columns). The partitioned approach is shown to
+handle the Chaumette Conundrum discussed in.<ref>F. Chaumette. Potential problems of stability and convergence on image-based and position-based visual servoing. In D. Kriegman, G. Hagar, and S. Morse, editors, Confluence of Vision and Control, Lecture Notes in Control and Information Systems, volume 237, pages 66–78. Springer-Verlag, 1998</ref> This technique requires
+a good depth estimate in order to function properly.
+<ref>C. Collewet and F. Chaumette. Positioning a camera with respect to planar objects of unknown shapes by coupling 2-d visual servoing and 3-d estimations. IEEE Transactions on Robotics and Automation, 18(3):322–333, June 2002</ref> outlines a hybrid approach where the servoing task is split into two,
+namely main and secondary. The main task is keep the features of inter-
+est within the field of view. While the secondary task is to mark a fixation
+point and use it as a reference to bring the camera to the desired pose. The
+technique does need a depth estimate from an off-line procedure. The paper
+discusses two examples for which depth estimates are obtained from robot
+odometry and by assuming that all features are on a plane. The secondary
+task is achieved by using the notion of parallax. The features that are tracked
+are chosen by an initialization performed on the first frame, which are typi-
+cally points.
+<ref>F. Chaumette and E. Marchand. Recent results in visual servoing for robotics applications, 2013</ref> carries out a discussion on two aspects of visual servoing, feature
+modeling and model-based tracking. Primary assumption made is that the
+3D model of the object is available. The authors highlights the notion that
+ideal features should be chosen such that the DOF of motion can be decoupled
+by linear relation. The authors also introduce an estimate of the target
+velocity into the interaction matrix to improve tracking performance. The
+results are compared to well known servoing techniques even when occlusions
+occur.
+
+=== Various features used and their impacts on visual servoing ===
+
+This section discusses the work done in the field of visual servoing. We try
+to track the various techniques in the use of features. Most of the work
+has used image points as visual features. The formulation of the interaction
+matrix in <ref name="Hutchinson1996"/> assumes points in the image are used to represent the target.
+There has some body of work that deviates from the use of points and use
+feature regions, lines, image moments and moment invariants.<ref>N. Andreff, B. Espiau, and R. Horaud. Visual servoing from lines. In In International Conference on Robotics and Automation, San Francisco, April 2000</ref>
+In,<ref>J. Shi and C. Tomasi. Good features to track. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 593–600, 1994</ref> the authors discuss an affine based tracking of image features.
+The image features are chosen based on a discrepancy measure, which is
+based on the deformation that the features undergo. The features used were
+texture patches. One of key points of the paper was that it highlighted the
+need to look at features for improving visual servoing.
+In <ref>R. Mahony, P. Corke, and F. Chaumette. Choice of image features for depth-axis control in image based visual servo control. In Proceedings of the IEEE Conference on Intelligent Robots and Systems, pages 390–395, October 2002</ref> the authors look into choice of image features (the same question
+was also discussed in <ref name="Hutchinson1996"/> in the context of tracking). The effect of the choice
+of image features on the control law is discussed with respect to just the
+depth axis. Authors consider the distance between feature points and the
+area of an object as features. These features are used in the control law with
+slightly different forms to highlight the effects on performance. It was noted
+that better performance was achieved when the servo error was proportional
+to the change in depth axis.
+<ref name="chaumette02">F. Chaumette. A first step toward visual servoing using image moments. In Pro- ceedings of the IEEE Conference on Intelligent Robots and Systems, pages 378–383, October 2002.</ref> provides one of the early discussions of the use of moments. The
+authors provide a new formulation of the interaction matrix using the velocity
+of the moments in the image, albeit complicated. Even though the moments
+are used, the moments are of the small change in the location of contour
+points with the use of Green’s theorem. The paper also tries to determine
+the set of features (on a plane) to for a 6 DOF robot.
+In <ref name="chaumette04">F. Chaumette. Image moment:a general and useful set of features for visual servoing. IEEE Transactions on Robotics, 20(4):713–723, August 2004</ref> discusses the use of image moments to formulate the visual Jacobian.
+This formulation allows for decoupling of the DOF based on type of moments
+chosen. The simple case of this formulation is notionally similar to the 2-1/2-
+D servoing.<ref name="chaumette04"/> The time variation of the moments (m˙ij) are determined using
+the motion between two images and Greens Theorem. The relation between
+m˙ij and the velocity screw (v) is given as m˙_ij = L_m_ij v. This technique
+avoids camera calibration by assuming that the objects are planar and using
+a depth estimate. The technique works well in the planar case but tends to
+be complicated in the general case. The basic idea is based on the work in [4]
+Moment Invariants have been used in.<ref name="tahri03">O. Tahri and F. Chaumette. Application of moment invariants to visual servoing. In Proceedings of the IEEE Conference on Robots and Automation, pages 4276–4281, September 2003</ref> The key idea being to find
+the feature vector that decouples all the DOF of motion. Some observations
+made were that centralized moments are invariant for 2D translations. A
+complicated polynomial form is developed for 2D rotations. The technique
+follows teaching-by-showing, hence requiring the values of desired depth and
+area of object (assuming that the plane of camera and object are parallel,
+and the object is planar). Other parts of the feature vector are invariants
+R3,R4. The authors claim that occlusions can be handled.
+<ref name="tahri04">O. Tahri and F. Chaumette. Image moments: Generic descriptors for decoupled image-based visual servoing. In Proceedings of the IEEE Conference on Robotics and Automation, pages 1861–1867, April 2004</ref> and <ref>O. Tahri and F. Chaumette. Complex objects pose estimation based on image moment invariants. In Proceedings of the IEEE Conference on Robots and Automation, pages 436–441, April 2005</ref> build on the work described in.<ref name="chaumette02"/><ref name="tahri03"/><ref name="tahri04"/> The major differ-
+ence being that the authors use a technique similar to,<ref name="ReferenceA"/> where the task is
+broken into two (in the case where the features are not parallel to the cam-
+era plane). A virtual rotation is performed to bring the featured parallel to
+the camera plane.<ref>O. Tahri and F. Chaumette. Point-based and region-based image moments for vi- sual servoing of planar objects. IEEE Transactions on Robotics, 21(6):1116–1127, December 2005</ref> consolidates the work done by the authors on image
+moments.
+
+=== Error and stability analysis of visual servoing schemes ===
+Espiau in <ref>B. Espiau. Effect of camera calibration errors on visual servoing in robotics. In Third Int. Symposium on Experimental Robotics, October 1993</ref> showed from purely experimental work that image based visual servoing (IBVS)
+is robust to calibration errors. The author used a camera with no explicit
+calibration along with point matching and without pose estimation. The
+paper looks at the effect of errors and uncertainty on the terms in the interaction matrix from an experimental approach. The targets used were points
+and were assumed to be planar.
+
+A similar study was done in <ref>M. Jagersand, O. Fuentes, and R. Nelson. Experimental evaluation of uncalibrated visual servoing for precision manipulation. In International Conference on Robotics and Automation, pages 2874–2880, April 1997</ref> where the
+authors carry out experimental evaluation of a few uncalibrated visual servo
+systems that were popular in the 90’s. The major outcome was the experimental evidence of the effectiveness of visual servo control over conventional
+control methods.
+Kyrki et al.<ref>V. Kyrki, D. Kragic, and H Christensen. Measurement errors in visual servoing. In Proceedings of the IEEE Conference on Robotics and Automation, pages 1861–1867, April 2004</ref> analyze servoing errors for position based and 2-1/2-D
+visual servoing. The technique involves determining the error in extracting
+image position and propagating it to pose estimation and servoing control.
+Points from the image are mapped to points in the world a priori to obtain a mapping (which is basically the homography, although not explicitly stated
+in the paper). This mapping is broken down to pure rotations and translations. Pose estimation is performed using standard technique from Computer
+Vision. Pixel errors are transformed to the pose. These are propagating to
+the controller. An observation from the analysis shows that errors in the
+image plane are proportional to the depth and error in the depth-axis is
+proportional to square of depth.
+Measurement errors in visual servoing have been looked into extensively.
+Most error functions relate to two aspects of visual servoing. One being
+steady state error (once servoed) and two on the stability of the control
+loop. Other servoing errors that have been of interest are those that arise
+from pose estimation and camera calibration. In,<ref>E. Malis. Hybrid vision-based robot control robust to large calibration errors on both intrinsic and extrinsic camera parameters. In European Control Conference, pages 289–293, September 2001</ref> the authors extend the
+work done in <ref>E. Malis, F. Chaumette, and S. Boudet. 2-1/2-d visual servoing. IEEE Transactions on Robotics and Automation, 15(2):238–250, April 1999</ref> by considering global stability in the presence of intrinsic
+and extrinsic calibration errors.<ref>G. Morel, P. Zanne, and F. Plestan. Robust visual servoing: Bounding the task func- tion tracking errors. IEEE Transactions on Control System Technology, 13(6):998– 1009, November 2009</ref> provides an approach to bound the task
+function tracking error. In,<ref>G. Chesi and Y. S. Hung. Image noise induces errors in camera positioning. IEEE Transactions on Pattern Analysis and Machine Intelligence, 29(8):1476–1480, August 2007</ref> the authors use teaching-by-showing visual
+servoing technique. Where the desired pose is known a priori and the robot
+is moved from a given pose. The main aim of the paper is to determine the
+upper bound on the positioning error due to image noise using a convex-
+optimization technique.
+<ref>E. Malis and P. Rives. Robustness of image-based visual servoing with respect to depth distribution errors. In IEEE International Conference on Robotics and Automation, September 2003</ref> provides a discussion on stability analysis with respect the uncertainty
+in depth estimates. The authors conclude the paper with the observation that
+for unknown target geometry a more accurate depth estimate is required in
+order to limit the error.
+Many of the visual servoing techniques <ref name="ReferenceB"/><ref name="ReferenceC"/><ref>E. Malis, F. Chaumette, and S. Boudet. 2-1/2-d visual servoing. IEEE Transactions on Robotics and Automation, 15(2):238–250, April 1999</ref> implicitly assume that
+only one object is present in the image and the relevant feature for tracking
+along with the area of the object are available. Most techniques require either
+a partial pose estimate or a precise depth estimate of the current and desired
+pose.
+
+==Software==
+*[http://sourceforge.net/projects/vstoolbox Matlab toolbox for visual servoing].
+*[http://www.robot.uji.es/research/projects/javiss Java-based visual servoing simulator.]
+*[http://www.irisa.fr/lagadic/visp ViSP] (ViSP states for "Visual Servoing Platform") is a modular software that allows fast development of visual servoing applications.<ref name="Marchand05a">E. Marchand, F. Spindler, F. Chaumette. [http://www.irisa.fr/lagadic/publi/publi/Marchand05b-eng.html ViSP for visual servoing: a generic software platform with a wide class of robot control skills.] IEEE Robotics and Automation Magazine, Special Issue on "Software Packages for Vision-Based Control of Motion", P. Oh, D. Burschka (Eds.), 12(4):40-52, December 2005.
+</ref>
+
+==See also==
+*[[Robotics]]
+*[[Robot]]
+*[[Computer Vision]]
+*[[Machine Vision]]
+*[[Robot control]]
+
+==References==
+{{reflist|2}}
+
+==External links==
+*S. A. Hutchinson, G. D. Hager, and P. I. Corke. [http://citeseer.ist.psu.edu/76215.html A tutorial on visual servo control.] IEEE Trans. Robot. Automat., 12(5):651—670, Oct. 1996.
+*F. Chaumette, S. Hutchinson. [http://www.irisa.fr/lagadic/publi/publi/Chaumette06a-eng.html  Visual Servo Control, Part I: Basic Approaches.] IEEE Robotics and Automation Magazine, 13(4):82-90, December 2006.
+*F. Chaumette, S. Hutchinson. [http://www.irisa.fr/lagadic/publi/publi/Chaumette07a-eng.html Visual Servo Control, Part II: Advanced Approaches.] IEEE Robotics and Automation Magazine, 14(1):109-118, March 2007.
+*[https://web.archive.org/web/20091214154858/http://www.robot.uji.es/EURON/visualservoing/tutorial/ Notes from IROS 2004 tutorial on advanced visual servoing].
+* [https://www.springer.com/engineering/robotics/book/978-3-540-23957-4 Springer Handbook of Robotics] Chapter 24: Visual Servoing and Visual Tracking (François Chaumette, Seth Hutchinson)
+*[http://robotics.engr.wisc.edu/ UW-Madison, Robotics and Intelligent Systems Lab]
+*[http://www.irisa.fr/lagadic/welcome-eng.html INRIA Lagadic research group]
+*[https://limbs.lcsr.jhu.edu/Main_Page  Johns Hopkins University, LIMBS Laboratory]
+*[http://sirslab.dii.unisi.it/research/vision/ University of Siena, SIRSLab Vision & Robotics Group]
+*[http://www.ic.is.tohoku.ac.jp/en/ Tohoku University, Intelligent Control Systems Laboratory]
+*[http://www-sop.inria.fr/documents/arobas/index_en.shtml INRIA Arobas research group]
+*[http://robots.lasmea.univ-bpclermont.fr/ LASMEA, Rosace group]
+*[http://www-cvr.ai.uiuc.edu/~seth/ UIUC, Beckman Institute]
+
+{{Robotics}}
+
+[[Category:Robotic sensing]]
+[[Category:Computer vision]]
+[[Category:Robot control]]
+[[Category:Articles containing video clips]]

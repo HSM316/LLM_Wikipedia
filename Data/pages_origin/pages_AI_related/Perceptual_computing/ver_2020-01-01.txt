@@ -1,0 +1,75 @@
+{{Multiple issues|
+{{more citations needed|date=February 2011}}
+{{more footnotes|date=February 2011}}
+{{lead too short|date=February 2011}}
+}}
+
+'''Perceptual computing''' is an application of [[Lotfi A. Zadeh|Zadeh]]'s theory of [[Computing with words and perceptions|computing with words]] on the field of assisting people to make subjective judgments.
+
+==Perceptual computer==
+
+The ''perceptual computer'' – ''Per-C'' – an instantiation of perceptual computing – has the architecture that is depicted in Fig. 1 [2]–[6]. It consists of three components: encoder, CWW engine and decoder. Perceptions – words – activate the Per-C and are the Per-C output (along with data); so, it is possible for a human to interact with the Per-C using just a vocabulary.
+
+[[File:PerC.jpg|below|Figure 1. Architecture for the perceptual computer.]]
+
+A vocabulary is application (context) dependent, and must be large enough so that it lets the end-user interact with the Per-C in a user-friendly manner. The encoder transforms words into [[fuzzy set]]s (FSs) and leads to a ''codebook'' – words with their associated FS models. The outputs of the encoder activate a Computing With Words<ref>Lotfi Zadeh [7], the father of fuzzy logic, coined the phrase computing with words, and stated: ''“CWW is a methodology in which the objects of computation are words and propositions drawn from a natural language. [It is] inspired by the remarkable human capability to perform a wide variety of physical and mental tasks without any measurements and any computations. CWW may have an important bearing on how humans … make perception-based rational decisions in an environment of imprecision, uncertainty and partial truth.”'' He did not mean that computers would actually compute using words—single words or phrases—rather than numbers. He meant that computers would be activated by words, which would be converted into a mathematical representation using fuzzy sets (FSs), and that these FSs would be mapped by a CWW engine into some other FS, after which the latter would be converted back into a word. Zadeh’s definition of CWW is very general and does not refer to a specific field in which CWW would be used. ''Perceptual computing'' focuses on CWW for making subjective judgments.</ref> (CWW) engine, whose output is one or more other FSs, which are then mapped by the decoder into a recommendation (subjective judgment) with supporting data. The recommendation may be in the form of a word, group of similar words, rank or class.
+
+Although there are lots of details needed in order to implement the Per-C’s three components – encoder, decoder and CWW engine – and they are covered in [5], it is when the Per-C is applied to specific applications, that the focus on the methodology becomes clear. Stepping back from those details, the ''methodology of perceptual computing'' is:
+
+# Focus on an application (''A'').
+# Establish a vocabulary (or vocabularies) for ''A''.
+# Collect interval end-point data from a group of subjects (representative of the subjects who will use the Per-C) for all of the words in the vocabulary.
+# Map the collected word data into word-FOUs by using the ''Interval Approach'' [1], [5, Ch. 3]. The result of doing this is the ''codebook'' (or codebooks) for ''A'', and completes the design of the encoder of the Per-C.
+# Choose an appropriate CWW engine for ''A''. It will map IT2 FSs into one or more IT2 FSs. Examples of CWW engines are: IF-THEN rules [5, Ch. 6] and Linguistic Weighted Averages [6], [5, Ch. 5].
+# If an existing CWW engine is available for ''A'', then use its available mathematics to compute its output(s). Otherwise, develop such mathematics for the new kind of CWW engine. The new CWW engine should be constrained<ref>This (new) constraint is the major difference between perceptual computing and function approximation applications of FSs and systems.</ref> so that its output(s) resemble the FOUs in the codebook(s) for ''A''.
+# Map the IT2 FS outputs from the CWW engine into a recommendation at the output of the decoder. If the recommendation is a word, rank or class, then use existing mathematics to accomplish this mapping [5, Ch. 4]. Otherwise, develop such mathematics for the new kind of decoder.
+
+==Applications of Per-C==
+
+To-date a Per-C has been implemented for the following four applications: (1) investment decision-making, (2) social judgment making, (3) distributed decision making, and (4) hierarchical and distributed decision-making. A specific example of the fourth application is the so-called ''Journal Publication Judgment Advisor'' [5, Ch. 10] in which for the first time only words are used at every level of the following hierarchical and distributed decision making process:
+
+<blockquote>
+''n'' reviewers have to provide a subjective recommendation about a journal article that has been sent to them by the Associate Editor, who then has to aggregate the independent recommendations into a final recommendation that is sent to the Editor-in-Chief of the journal. Because it is very problematic to ask reviewers to provide numerical scores for paper-evaluation sub-categories (the two major categories are ''Technical Merit'' and ''Presentation''), such as importance, content, depth, style, organization, clarity, references, etc., each reviewer will only be asked to provide a linguistic score for each of these categories. They will not be asked for an overall recommendation about the paper because in the past it is quite common for reviewers who provide the same numerical scores for such categories to give very different publishing recommendations. By leaving a specific recommendation to the associate editor such inconsistencies can hope to be eliminated. 
+</blockquote>
+
+How words can be aggregated to reflect each reviewer’s recommendation as well as the expertise of each reviewer about the paper’s subject matter is done using a linguistic weighted average. Although the journal publication judgment advisor uses reviewers and an associate editor, the word “reviewer” could be replaced by judge, expert, low-level manager, commander, referee, etc., and the term “associate editor” could be replaced by control center, command center, higher-level manager, etc. So, this application has potential wide applicability to many other applications.
+
+Recently, a new Per-C based [[Failure mode and effects analysis]] (FMEA) methodology was developed, with its application to [[edible bird's nest]] farming, in [[Borneo]], has been reported.<ref>{{cite journal |author1=Chai K.C.|author2=Tay K. M.|author3=Lim C.P. | title=A perceptual computing-based method to prioritize failure modes in failure mode and effect analysis and its application to edible bird nest farming |journal=Applied Soft Computing |volume=49|year=2016|doi=10.1016/j.asoc.2016.08.043
+ |pages= 734–747|url=http://ir.unimas.my/13928/7/A%20perceptual%20computing%20%28abstract%29.pdf}}</ref>
+[[File:Per-c fmea.png|center|thumb|A Perceptual Computing Based Failure Mode and Effect Analysis Methodology]]
+
+In summary, the Per-C (whose development has taken more than a decade) is the first complete implementation of Zadeh’s CWW paradigm, as applied to assisting people to make subjective judgments.
+
+==See also==
+* [[Computing with words and perceptions]]
+* [[Computational intelligence]]
+* [[Expert system]]
+* [[Fuzzy control system]]
+* [[Fuzzy logic]]
+* [[Fuzzy set]]
+* [[Granular computing]]
+* [[Rough set]]
+* [[Soft computing]]
+* [[Type-2 fuzzy sets and systems]]
+* [[Vagueness]]
+
+==Footnotes==
+{{Reflist}}
+
+== Sources ==
+<!--- See [[Wikipedia:Footnotes]] on how to create references using <ref></ref> tags which will then appear here automatically -->
+
+* F. Liu and J. M. Mendel, “Encoding words into interval type-2 fuzzy sets using an Interval Approach,” IEEE Trans. on Fuzzy Systems, vol. 16, pp 1503–1521, December 2008.
+* J. M. Mendel, “The perceptual computer: an architecture for computing with words,” Proc. of Modeling With Words Workshop in the Proc. of FUZZ-IEEE 2001, pp.&nbsp;35–38, Melbourne, Australia, 2001.
+* J. M. Mendel, “An architecture for making judgments using computing with words,” Int. J. Appl. Math. Comput. Sci., vol. 12, No. 3, pp.&nbsp;325–335, 2002
+* J. M. Mendel, “Computing with words and its relationships with fuzzistics,” Information Sciences, vol. 177, pp.&nbsp;998–1006, 2007.
+* J. M. Mendel and D. Wu, Perceptual Computing: Aiding People in Making Subjective Judgments, John Wiley and IEEE Press, 2010.
+* D.Wu and J. M. Mendel, “Aggregation using the linguistic weighted average and interval type-2 fuzzy sets,” IEEE Trans. on Fuzzy Systems, vol. 15, no. 6, pp.&nbsp;1145–1161, 2007.
+* L. A. Zadeh, “Fuzzy logic = computing with words,” IEEE Trans. on Fuzzy Systems, vol. 4, pp.&nbsp;103–111, 1996.
+
+==External links==
+* Freeware MATLAB implementations of Per-C are available at: http://sipi.usc.edu/~mendel/software.
+
+[[Category:Artificial intelligence]]
+[[Category:Fuzzy logic]]
+[[Category:Logic in computer science]]

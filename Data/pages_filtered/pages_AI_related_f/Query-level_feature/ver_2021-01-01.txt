@@ -1,0 +1,9 @@
+A query-level feature or QLF is a ranking feature utilized in a machine-learned ranking algorithm.
+
+Example QLFs:
+ How many times has this query been run in the last month?
+ How many words are in the query?
+ What is the sum/average/min/max/median of the BM25F values for the query?
+
+Category:Machine learning algorithms
+Category:Machine learning

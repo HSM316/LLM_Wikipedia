@@ -1,0 +1,6 @@
+'''Spaun''' ("'''Semantic Pointer Architecture Unified Network'''") is a [[cognitive architecture]] pioneered by '''Chris Eliasmith'''<!--boldface per WP:R#PLA--> of the [[University of Waterloo]] Centre for Theoretical Neuroscience.<ref>{{cite web | url=https://uwaterloo.ca/arts/news/spaun-chris-eliasmith-how-build-brain | title=Spaun: Chris Eliasmith on how to build a brain | work=University of Waterloo | date=6 March 2013 | accessdate=17 May 2016}}</ref> It consists of 2.5 million simulated neurons organized into subsystems that resemble specific brain regions, such as the prefrontal cortex, basal ganglia, and thalamus. It can recognize numbers, remember them, figure out numeric sequences, and even write them down with a robotic arm. <ref name="MyUser_Popsci.com_May_17_2016c">{{cite web |url=http://www.popsci.com/science/article/2012-11/meet-spaun-first-computer-model-complex-brain-behavior |title=Meet Spaun, The Most Complex Simulated Brain Ever |newspaper=Popsci.com |date=  |author= |accessdate= May 17, 2016}}</ref><ref name="Spaun">Eliasmith, C., Stewart T. C., Choo X., Bekolay T., DeWolf T., Tang Y., Rasmussen, D. (2012). A large-scale model of the functioning brain. Science. Vol. 338 no. 6111 pp. 1202-1205. DOI: 10.1126/science.1225266.</ref> It is implemented using [[NENGO|Nengo]].
+
+==References==
+{{Reflist}}
+
+[[Category:Cognitive architecture]]

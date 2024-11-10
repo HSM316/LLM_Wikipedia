@@ -1,0 +1,187 @@
+{{merge from|2D to 3D conversion|date=September 2020}}
+{{update|inaccurate=yes|date=October 2019}}
+
+[[File:Madurodam Shapeways 3D selfie in 1 20 scale after a second spray of varnish FRD.jpg|thumb|500px|A [[3D selfie]] in 1:20 scale printed by [[Shapeways]] using gypsum-based printing, created by [[Madurodam]] miniature park from 2D pictures taken at its Fantasitron photo booth.]]
+
+[[File:Fantasitron photo booth at Madurodam can scan up to two people at a time IMG 3797 FRD.jpg|thumb|3D models are generated from 2D pictures taken at the Fantasitron 3D photo booth at [[Madurodam]]]]
+
+[[File:Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes With Deep Generative Networks.png|thumb|Generating and reconstructing 3D shapes from single or multi-view depth maps or silhouettes <ref name="3DVAE">{{Cite web|url=https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil|title=Soltani, A. A., Huang, H., Wu, J., Kulkarni, T. D., & Tenenbaum, J. B. Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes With Deep Generative Networks. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (pp. 1511-1519).|date=6 March 2020}}</ref>]]
+
+'''3D reconstruction from multiple images''' is the creation of [[three-dimensional model]]s from a set of images. It is the reverse process of obtaining 2D images from 3D scenes.
+
+The essence of an image is a projection from a 3D scene onto a 2D plane, during which process the depth is lost. The 3D point corresponding to a specific image point is constrained to be on the line of sight. From a single image, it is impossible to determine which point on this line corresponds to the image point. If two images are available, then the position of a 3D point can be found as the intersection of the two projection rays. This process is referred to as [[triangulation (computer vision)|triangulation]]. The key for this process is the relations between multiple views which convey the information that corresponding sets of points must contain some structure and that this structure is related to the poses and the calibration of the camera.
+
+In recent decades, there is an important demand for 3D content for [[computer graphics]], [[virtual reality]] and communication, triggering a change in emphasis for the requirements. Many existing systems for constructing 3D models are built around specialized hardware (e.g. stereo rigs) resulting in a high cost, which cannot satisfy the requirement of its new applications. This gap stimulates the use of digital imaging facilities (like a camera). An early method was proposed by Tomasi and Kanade.<ref name="Tomasi">C. Tomasi and T. Kanade, “[http://repository.cmu.edu/cgi/viewcontent.cgi?article=3040&context=compsci Shape and motion from image streams under orthography: A factorization approach]”, International Journal of Computer Vision, 9(2):137-154, 1992.</ref> They used an affine factorization approach to extract 3D from images sequences. However, the assumption of [[orthographic projection]] is a significant limitation of this system.
+
+==Processing==
+[[File:SilhouetteCones.jpg|thumb|A ''[[visual hull]]'' can be reconstructed from multiple silhouettes of an object.<ref name="LaurentiniVisualHull">{{cite journal
+| url=http://portal.acm.org/citation.cfm?coll=GUIDE&dl=GUIDE&id=628563
+| title=The visual hull concept for silhouette-based image understanding
+|date=February 1994
+| journal = IEEE Transactions on Pattern Analysis and Machine Intelligence
+| pages = 150–162
+| author=A. Laurentini
+| volume=16
+| issue=2
+| doi=10.1109/34.273735
+}}</ref> ]]
+The task of converting multiple 2D images into 3D model consists of a series of processing steps:
+
+[[Camera resectioning|Camera calibration]] consists of intrinsic and extrinsic parameters, without which at some level no arrangement of algorithms can work. The dotted line between Calibration and Depth determination represents that the camera calibration is usually required for determining depth.
+
+'''Depth determination''' serves as the most challenging part in the whole process, as it calculates the 3D component missing from any given image – depth. The [[correspondence problem]], finding matches between two images so the position of the matched elements can then be triangulated in 3D space is the key issue here.
+
+Once you have the multiple [[depth map]]s you have to combine them to create a final mesh by calculating depth and projecting out of the camera – '''[[image registration|registration]]'''. Camera calibration will be used to identify where the many meshes created by depth maps can be combined together to develop a larger one, providing more than one view for observation.
+
+By the stage of '''Material Application''' you have a complete 3D mesh, which may be the final goal, but usually you will want to apply the color from the original photographs to the mesh. This can range from projecting the images onto the mesh randomly, through approaches of combining the textures for super resolution and finally to segmenting the mesh by material, such as specular and diffuse properties.
+
+==Mathematical description of reconstruction==
+
+Given a group of 3D points viewed by N cameras with matrices '''<math>\{P^i\}_{i=1\ldots N}</math>''', define '''<math>m_j^i\simeq P^iw_j</math>''' to be the homogeneous coordinates of the projection of the '''<math>j^{th}</math>''' point onto the '''<math>i^{th}</math>''' camera. The reconstruction problem can be changed to: given the group of pixel coordinates '''<math>\{m_j^i\}</math>''', find the corresponding set of camera matrices '''<math>\{P^i\}</math>''' and the scene structure '''<math>\{w_j\}</math>''' such that
+
+:<math>
+m_j^i\simeq P^iw_j
+</math> (1)
+
+Generally, without further restrictions, we will obtain a projective reconstruction.<ref>R. Mohr and E. Arbogast. 
+It can be done without camera calibration. 
+Pattern Recognition Letters, 12:39-43, 1991.</ref><ref>O. Faugeras. 
+[http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.462.4708&rep=rep1&type=pdf What can be seen in three dimensions with an uncalibrated stereo rig?] 
+In Proceedings of the European Conference on Computer Vision, pages 563-578, Santa Margherita L., 1992.</ref> If '''<math>\{P^i\}</math>''' and '''<math>\{w_j\}</math>'''  satisfy (1), '''<math>\{P^iT\}</math>''' and '''<math>\{T^{-1}w_j\}</math>''' will satisfy (1) with any '''4 × 4''' nonsingular matrix '''T'''.
+
+A projective reconstruction can be calculated by correspondence of points only without any ''a priori'' information.
+
+== Auto-calibration ==
+{{further|Camera auto-calibration}}
+
+In '''auto-calibration''' or '''self-calibration''', camera motion and parameters are recovered first, using rigidity. Then structure can be readily calculated. Two methods implementing this idea are presented as follows:
+
+=== Kruppa equations ===
+With a minimum of three displacements, we can obtain the internal parameters of the camera using a system of polynomial equations due to Kruppa,<ref>E. Kruppa. Zur Ermittlung eines Objektes aus zwei Perspektiven mit innerer Orientierung. Sitz.-Ber.Akad.Wiss., Wien, math. naturw. Kl., Abt. IIa., 122:1939-1948, 1913.</ref> which are derived from a geometric interpretation of the rigidity constraint.<ref>S. J. Maybank and O. Faugeras. A theory of self-calibration of a moving camera. International Journal of Computer Vision, 8(2):123-151, 1992.</ref><ref>O. Faugeras and S. Maybank. [https://hal.inria.fr/docs/00/07/54/01/PDF/RR-1157.pdf Motion from point matches: multiplicity of solutions]. International Journal of Computer Vision, 4(3):225-246, June 1990.</ref>
+
+The matrix '''<math>K = AA^{\top}</math>''' is unknown in the Kruppa equations, named Kruppa coefficients matrix. With ''' K''' and by the method of Cholesky factorization one can obtain the intrinsic parameters easily:
+
+:<math> K= 
+\begin{bmatrix}
+k_1 & k_2 & k_3 \\
+k_2 & k_4 & k_5 \\
+k_3 & k_5 & 1 \\
+\end{bmatrix}
+</math>
+
+Recently Hartley <ref name="Hartley">R. I. Hartley. [http://users.rsise.anu.edu.au/hartley/public_html/Papers/kruppa/final-version/kruppa2.pdf Kruppa's equations derived from the fundamental matrix]. 
+IEEE Transactions on Pattern Analysis and Machine Intelligence, 19(2):133-135, February 1997.</ref> proposed a simpler form. Let '''<math>F</math>''' be written as '''<math>F = DUV^\top</math>''', where
+
+Then the Kruppa equations are rewritten (the derivation can be found in <ref name="Hartley"/>)
+
+=== Mendonça and Cipolla ===
+This method is based on the use of rigidity constraint. Design a cost function, which considers the intrinsic parameters as arguments and the [[Fundamental matrix (computer vision)|fundamental matrices]] as parameters. '''<math>{F}_{ij}</math>''' is defined as the fundamental matrix, '''<math>{A}_i</math>'''and '''<math>{A}_j</math>''' as intrinsic parameters matrices.
+
+== Stratification ==
+Recently, new methods based on the concept of '''stratification''' have been proposed.<ref>Pollefeys, Marc. [http://www.academia.edu/download/59332/2okwm7k6k43uh087xh1x.pdf Self-calibration and metric 3D reconstruction from uncalibrated image sequences]. Diss. PhD thesis, ESAT-PSI, KU Leuven, 1999.</ref> Starting from a projective structure, which can be calculated from correspondences only, upgrade this projective reconstruction to a Euclidean reconstruction, by making use of all the available constraints. With this idea the problem can be stratified into different sections: according to the amount of constraints available, it can be analyzed at a different level, projective, affine or Euclidean.
+
+=== The stratification of 3D geometry ===
+Usually, the world is perceived as a 3D [[Euclidean space]]. In some cases, it is not possible to use the full Euclidean structure of 3D space. The simplest being projective, then the affine geometry which forms the intermediate layers and finally Euclidean geometry. The concept of stratification is closely related to the series of transformations on geometric entities: in the projective stratum is a series of projective transformations (a [[homography (computer vision)|homography]]), in the affine stratum is a series of [[affine transformations]], and in Euclidean stratum is a series of Euclidean transformations.
+
+Suppose that a fixed scene is captured by two or more perspective cameras and the correspondences between visible points in different images are already given. However, in practice, the matching is an essential and extremely challenging issue in computer vision. Here, we suppose that <math>n</math> 3D points <math>A_{i}</math> are observed by <math>m</math> cameras with projection matrices <math>P_{j},j=1,\ldots,m.</math> Neither the positions of point nor the projection of camera are known. Only the projections <math>a_{ij}</math> of the <math>i^{th}</math> point in the <math>j^{th}</math> image are known.
+
+===Projective reconstruction===
+Simple counting indicates we have <math>2nm</math> independent measurements and only <math>11 m + 3 n</math> unknowns, so the problem is supposed to be soluble with enough points and images. The equations in homogeneous coordinates can be represented:
+
+:<math>
+a_{ij}\sim P_{j}A_{i}\qquad i=1,\ldots n,~~j=1,\ldots m
+</math>       (2)
+
+So we can apply a nonsingular '''4 × 4''' transformation ''H'' to projections '''<math>P_{j}</math>→<math>P_{j}H^{-1}</math>''' and world points '''<math>A_i</math>→<math>HA_i</math>'''. Hence, without further constraints, reconstruction is only an unknown projective deformation of the 3D world.
+
+===Affine reconstruction===
+''See [[affine space]] for more detailed information about computing the location of the plane at infinity '''<math>{\Pi}_{\infty}</math>'''.''
+The simplest way is to exploit prior knowledge, for example the information that lines in the scene are parallel or that a point is the one thirds between two others.
+
+We can also use prior constraints on the camera motion. By analyzing different images of the same point can obtain a line in the direction of motion. The intersection of several lines is the point at infinity in the motion direction, and one constraint on the affine structure.
+
+===Euclidean reconstruction===
+By mapping the projective reconstruction to one that satisfies a group of redundant Euclidean constraints, we can find a projective transformation ''H'' in equation (2).The equations are highly nonlinear and a good initial guess for the structure is required. This can be obtained by assuming a linear projection - parallel projection, which also allows easy reconstruction by SVD decomposition.<ref name="Tomasi" />
+
+== Algebraic vs geometric error ==
+Inevitably, measured data (i.e., image or world point positions) is noisy and the noise comes from many sources. To reduce the effect of noise, we usually use more equations than necessary and solve with [[least squares]].
+
+For example, in a typical null-space problem formulation Ax = 0 (like the DLT algorithm), the square of the residual ||Ax|| is being minimized with the least squares method.
+
+In general, if ||Ax|| can be considered as a distance between the geometrical entities (points, lines, planes, etc.), then what is being minimized is a '''geometric error''', otherwise (when the error lacks a good geometrical interpretation) it is called an '''algebraic error'''.
+
+Therefore, compared with algebraic error, we prefer to minimize a geometric error for the reasons listed:
+# The quantity being minimized has a meaning.
+# The solution is more stable.
+# The solution is constant under Euclidean transforms.
+
+All the linear algorithms (DLT and others) we have seen so far minimize an algebraic error. Actually, there is no justification in minimizing an algebraic error apart from the ease of implementation, as it results in a linear problem. The minimization of a geometric error is often a non-linear problem, that admit only iterative solutions and requires a starting point.
+
+Usually, linear solution based on algebraic residuals serves as a starting point for a non-linear minimization of a geometric cost function, which provides the solution a final “polish”.<ref>R. Hartley and A. Zisserman. Multiple view geometry in computer vision. Cambridge University Press, 2nd edition, 2003.</ref>
+
+== Medical applications ==
+
+The 2-D imaging has problems of anatomy overlapping with each other and don’t disclose the abnormalities. The 3-D imaging can be used for both diagnostic and therapeutic purposes.
+
+3-D models are used for planning the operation, morphometric studies and has more reliability in orthopedics.
+[[File:Epipolar Geometry1.svg|thumb|Projection of P on both cameras]]
+
+=== Problem statement & Basics ===
+To reconstruct 3-D images from 2-D images taken by a camera at multiple angles. [[Medical imaging]] techniques like [[CT scanning]] and MRI are expensive, and although CT scans are accurate, they can induce high radiation doses which is a risk for patients with certain diseases. Methods based on MRI are not accurate. Since we are exposed to powerful magnetic fields during an MRI scan, this method is not suitable for patients with ferromagnetic metallic implants. Both the methods can be done only when in lying position where the global structure of the bone changes. So, we discuss the following methods which can be performed while standing and require low radiation dose.
+
+Though these techniques are 3-D imaging, the region of interest is restricted to a slice; data are acquired to form a time sequence.
+
+==== Stereo Corresponding Point Based Technique ====
+This method is simple and implemented by identifying the points manually in multi-view radiographs. The first step is to extract the corresponding points in two x-ray images and second step is the 3D reconstruction with algorithms like Discrete Linear Transform.<ref>{{Cite web|url=https://www.researchgate.net/publication/19301926|title=Pearcy MJ. 1985. Stereo radiography of lumbar spine motion. Acta Orthop Scand Suppl}}</ref> Using DLT, the reconstruction is done only where there are SCPs. By increasing the number of points, the results improve <ref>{{Cite journal|title=Aubin CE, Dansereau J, Parent F, Labelle H, de Guise JA. 1997. Morphometric evaluations of personalised 3D reconstructions and geometric models of the human spine|journal=Med Biol Eng Comput}}</ref> but it is time consuming. This method has low accuracy because of low reproducibility and time consumption. This method is dependent on the skill of the operator. This method is not suitable for bony structures with continuous shape. This method is generally used as an initial solution for other methods.<ref name=":0">{{Cite web|url=http://www.int-arch-photogramm-remote-sens-spatial-inf-sci.net/XL-1-W5/319/2015/isprsarchives-XL-1-W5-319-2015.pdf|title=S.Hosseinian, H.Arefi, 3D Reconstruction from multiview medical X-ray images- Review and evaluation of existing methods.}}</ref>
+
+==== Non-Stereo corresponding contour method (NCSS) ====
+This method uses X-ray images for 3D Reconstruction and to develop 3D models with low dose radiations in weight bearing positions.
+
+In NSCC algorithm, the preliminary step is calculation of an initial solution. Firstly anatomical regions from the generic object are defined. Secondly, manual 2D contours identification on the radiographs is performed. From each radiograph 2D contours are generated using the 3D initial solution object. 3D contours of the initial object surface are projected onto their associated radiograph.<ref name=":0" /> The 2D association performed between these 2 set points is based on point-to-point distances and contours derivations developing a correspondence between the 2D contours and the 3D contours. Next step is optimization of the initial solution. Lastly deformation of the optimized solution is done by applying Kriging algorithm to the optimized solution.<ref>{{Cite journal|last1=Laporte |first1=S |last2=Skalli |first2=W |last3=de Guise |first3=JA |last4=Lavaste |first4=F |last5=Mitton |first5=D |year=2003 |title=A biplanar reconstruction method based on 2D and 3D contours: application to distal femur|journal=Comput Methods Biomech Biomed Engin|volume=6|issue=1 |pages=1–6|url=https://www.researchgate.net/publication/10868711|doi=10.1080/1025584031000065956 |pmid=12623432 |s2cid=3206752 }}</ref> Finally, by iterating the final step until the distance between two set points is superior to a given precision value the reconstructed object is obtained.
+
+The advantage of this method is it can be used for bony structures with continuous shape and it also reduced human intervention but they are time consuming.
+
+==== Surface Rendering technique ====
+Surface Rendering technique visualizes a 3D object as a set of surfaces called iso-surfaces. Each surface has points with the same intensity (called iso-value). It is used when we want to see the separated structures e.g. skull from slices of head, blood vessel system from slices of body etc. This technique is used mostly for high contrast data. Two main methods for reconstructing are:
+
+*Contour based reconstruction: Iso-contours are attached to form iso-surfaces<ref name=":1">{{Cite book|title=G.Scott Owen, HyperVis. ACM SIGGRAPH Education Committee, the National Science Foundation (DUE-9752398), and the Hypermedia and Visualization Laboratory, Georgia State University.}}</ref>
+*Voxel based reconstruction: Voxels having same intensity values are used to form iso-surfaces. One popular algorithm is Marching Cubes.<ref name=":1" /> Some similar algorithms as Marching Tetrahedrons, Dividing Cubes <ref name=":1" /> can be considered.
+
+Other proposed or developed techniques include Statistical Shape Model Based Methods, Parametric Methods, Hybrid methods.
+
+== See also ==
+* [[3D pose estimation]]
+* [[3D reconstruction]]
+* [[3D photography]]
+* [[2D to 3D conversion]]
+* [[3D data acquisition and object reconstruction]]
+* [[Epipolar geometry]]
+* [[Camera resectioning]]
+* [[Computer stereo vision]]
+* [[Structure from motion]]
+* [[Stereophotogrammetry]]
+* [[Comparison of photogrammetry software]]
+* [[Visual hull]]
+* [[Human image synthesis]]
+
+== References ==
+<!--- See http://en.Wikipedia.org/wiki/Wikipedia:Footnotes on how to create references using <ref></ref> tags which will then appear here automatically -->
+<references/>
+
+== Further reading ==
+* Yasutaka Furukawa and Carlos Hernández (2015) ''Multi-View Stereo: A Tutorial'' [http://carlos-hernandez.org/papers/fnt_mvs_2015.pdf]
+* Flynn, John, et al. "[https://www.cv-foundation.org/openaccess/content_cvpr_2016/papers/Flynn_DeepStereo_Learning_to_CVPR_2016_paper.pdf Deepstereo: Learning to predict new views from the world's imagery]." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2016.
+
+== External links ==
+{{Wiktionary}}
+*[http://dl.acm.org/citation.cfm?id=1754449&preflayout=tabs 3D Reconstruction from Multiple Images] - discusses methods to extract 3D models from plain images.
+*[http://sites.google.com/site/leeplus/bmvs Visual 3D Modeling from Images and Videos] - a tech-report describes the theory, practice and tricks on 3D reconstruction from images and videos.
+*[https://github.com/Amir-Arsalan/Synthesize3DviaDepthOrSil Synthesizing 3D Shapes via Modeling Multi-View Depth Maps and Silhouettes with Deep Generative Networks] - Generate and reconstruct 3D shapes via modeling multi-view depth maps or silhouettes.
+
+<!--- Categories --->
+[[Category:Computer vision]]
+[[Category:Applications of computer vision]]
+[[Category:Image processing]]
+[[Category:Artificial intelligence]]
+[[Category:Stereophotogrammetry]]
+[[Category:3D imaging]]

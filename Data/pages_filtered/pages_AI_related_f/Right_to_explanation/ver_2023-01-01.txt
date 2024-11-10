@@ -1,0 +1,60 @@
+In the regulation of algorithms, particularly artificial intelligence and its subfield of machine learning, a right to explanation (or right to an explanation) is a right to be given an explanation for an output of the algorithm. Such rights primarily refer to individual rights to be given an explanation for decisions that significantly affect an individual, particularly legally or financially. For example, a person who applies for a loan and is denied may ask for an explanation, which could be "Credit bureau X reports that you declared bankruptcy last year; this is the main factor in considering you too likely to default, and thus we will not give you the loan you applied for."
+
+Some such legal rights already exist, while the scope of a general "right to explanation" is a matter of ongoing debate. There have been arguments made that a "social right to explanation" is a crucial foundation for an information society, particularly as the institutions of that society will need to use digital technologies, artificial intelligence, machine learning. In other words, that the related automated decision making systems that use explainability would be more trustworthy and transparent. Without this right, which could be constituted both legally and through professional standards, the public will be left without much recourse to challenge the decisions of automated systems. One of the emerging problems is how to communicate an explanation to a user, should it be through text, a high-level visual diagram, video or some other medium, and how can an explainable system scope the explanation in a reasonable way? 
+
+ Examples 
+ Credit scoring in the United States 
+
+Under the Equal Credit Opportunity Act (Regulation B of the Code of Federal Regulations),
+Title 12, Chapter X, Part 1002, §1002.9, creditors are required to notify applicants who are denied credit with specific reasons for the detail. As detailed in §1002.9(b)(2):Consumer Financial Protection Bureau, §1002.9(b)(2)
+
+The official interpretation of this section details what types of statements are acceptable. Creditors comply with this regulation by providing a list of reasons (generally at most 4, per interpretation of regulations), consisting of a numeric  (as identifier) and an associated explanation, identifying the main factors affecting a credit score.US FICO credit risk score reason codes: Fundamental document from FICO listing all of the FICO credit score reasons that a score is not higher, March 31, 2010, by Greg Fisher An example might be:
+
+32: Balances on bankcard or revolving accounts too high compared to credit limits
+
+ European Union 
+
+The European Union General Data Protection Regulation (enacted 2016, taking effect 2018) extends the automated decision-making rights in the 1995 Data Protection Directive to provide a legally disputed form of a right to an explanation, stated as such in Recital 71: "[the data subject should have] the right ... to obtain an explanation of the decision reached". In full:
+
+However, the extent to which the regulations themselves provide a "right to explanation" is heavily debated.Is there a 'right to explanation' for machine learning in the GDPR?, Jun 1, 2017, Andrew Burt There are two main strands of criticism. There are significant legal issues with the right as found in Article 22 — as recitals are not binding, and the right to an explanation is not mentioned in the binding articles of the text, having been removed during the legislative process. In addition, there are significant restrictions on the types of automated decisions that are covered — which must be both "solely" based on automated processing, and have legal or similarly significant effects — which significantly limits the range of automated systems and decisions to which the right would apply. In particular, the right is unlikely to apply in many of the cases of algorithmic controversy that have been picked up in the media.
+
+A second potential source of such a right has been pointed to in Article 15, the "right of access by the data subject". This restates a similar provision from the 1995 Data Protection Directive, allowing the data subject access to "meaningful information about the logic involved" in the same significant, solely automated decision-making, found in Article 22. Yet this too suffers from alleged challenges that relate to the timing of when this right can be drawn upon, as well as practical challenges that mean it may not be binding in many cases of public concern.
+
+ France 
+In France the 2016 Loi pour une République numérique (Digital Republic Act or loi numérique) amends the country's administrative code to introduce a new provision for the explanation of decisions made by public sector bodies about individuals. It notes that where there is "a decision taken on the basis of an algorithmic treatment", the rules that define that treatment and its “principal characteristics” must be communicated to the citizen upon request, where there is not an exclusion (e.g. for national security or defence). These should include the following:
+ the degree and the mode of contribution of the algorithmic processing to the decision- making;
+ the data processed and its source;
+ the treatment parameters, and where appropriate, their weighting, applied to the situation of the person concerned;
+ the operations carried out by the treatment. 
+Scholars have noted that this right, while limited to administrative decisions, goes beyond the GDPR right to explicitly apply to decision support rather than decisions "solely" based on automated processing, as well as provides a framework for explaining specific decisions. Indeed, the GDPR automated decision-making rights in the European Union, one of the places a "right to an explanation" has been sought within, find their origins in French law in the late 1970s.
+
+ South Korea 
+South Korea is known to have the strictest regulations on data privacy among Asian countries. Penalties for data protection breaches include paying punitive damages, forfeiting profits, and holding senior executives of a company personally accountable. The country also has strict laws on the cross-border sharing of data; prohibited data transfer can lead to a fine of up to 3 percent of revenue. In 2016, Seoul rejected a request by Google to use mapping data due to security concerns.
+
+ China 
+In 2017, China partially implemented a new cyber security law that required personal information and other important data to be stored locally within the country. The international business community is concerned of the vague definition of the type of data that must be kept on servers within China. China takes data privacy seriously for its increasingly digital-savvy consumers. In January 2018, Ant Financial, Alibaba’s financial arm, came under fire after automatically enrolling users in a credit scoring affiliate.
+
+ Criticism 
+
+Some argue that a "right to explanation" is at best unnecessary, at worst harmful, and threatens to stifle innovation. Specific criticisms include: favoring human decisions over machine decisions, being redundant with existing laws, and focusing on process over outcome.EU's Right to Explanation: A Harmful Restriction on Artificial Intelligence, Nick Wallace, Center for Data Innovation, January 25, 2017
+
+Authors of study “Slave to the Algorithm? Why a 'Right to an Explanation' Is Probably Not the Remedy You Are Looking For” Lilian Edwards and Michael Veale argue that a right to explanation is not the solution to harms caused to stakeholders by algorithmic decisions. They also state that the right of explanation in the GDPR is narrowly-defined, and is not compatible with how modern machine learning technologies are being developed. With these limitations, defining transparency within the context of algorithmic accountability remains a problem. For example, providing the source code of algorithms may not be sufficient and may create other problems in terms of privacy disclosures and the gaming of technical systems. To mitigate this issue, Edwards and Veale argue that an auditing system could be more effective, to allow auditors to look at the inputs and outputs of a decision process from an external shell, in other words, “explaining black boxes without opening them.”
+
+Similarly, Oxford scholars Bryce Goodman and Seth Flaxman assert that the GDPR creates a ‘right to explanation’, but does not elaborate much beyond that point, stating the limitations in the current GDPR. In regards to this debate, scholars Andrew D Selbst and Julia Powles state that the debate should redirect to discussing whether one uses the phrase ‘right to explanation’ or not, more attention must be paid to the GDPR’s express requirements and how they relate to its background goals, and more thought must be given to determining what the legislative text actually means.
+
+More fundamentally, many algorithms used in machine learning are not easily explainable. For example, the output of a deep neural network depends on many layers of computations, connected in a complex way, and no one input or computation may be a dominant factor. The field of Explainable AI seeks to provide better explanations from existing algorithms, and algorithms that are more easily explainable, but it is a young and active field.
+
+Similarly, human decisions often cannot be easily explained: they may be based on intuition or a "gut feeling" that is hard to put into words. It can be argued that machines should not be required to meet a higher standard than humans.
+
+Others argue that the difficulties with explainability are due to its overly narrow focus on technical solutions rather than connecting the issue to the wider questions raised by a "social right to explanation."
+
+ Suggestions 
+Edwards and Veale see the right to explanation as providing some grounds for explanations about specific decisions. They discuss two types of algorithmic explanations, model centric explanations and subject-centric explanations (SCEs), which are broadly aligned with explanations about systems or decisions.
+
+SCEs are seen as the best way to provide for some remedy, although with some severe constraints if the data is just too complex. Their proposal is to break down the full model and focus on particular issues through pedagogical explanations to a particular query, “which could be real or could be fictitious or exploratory”. These explanations will necessarily involve trade offs with accuracy to reduce complexity.
+
+With growing interest in explanation of technical decision making systems in the field of human-computer interaction design, researchers and designers put in efforts to open the black box in terms of mathematically interpretable models as removed from cognitive science and the actual needs of people. Alternative approaches would be to allow users to explore the system’s behavior freely through interactive explanations.
+
+One of Edwards and Veale’s proposals is to partially remove transparency as a necessary key step towards accountability and redress. They argue that people trying to tackle data protection issues have a desire for an action, not for an explanation. The actual value of an explanation will not be to relieve or redress the emotional or economic damage suffered, but to understand why something happened and helping ensure a mistake doesn’t happen again.
+
+On a broader scale, In the study Explainable machine learning in deployment, authors recommend building an explainable framework clearly establishing the desiderata by identifying stakeholder, engaging with stakeholders, and understanding the purpose of the explanation. Alongside, concerns of explainability such as issues on causality, privacy, and performance improvement must be considered into the system.

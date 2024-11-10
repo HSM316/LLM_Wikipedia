@@ -1,0 +1,113 @@
+{{Use dmy dates|date=January 2021}}
+{{Infobox file format
+| name          = Akoma Ntoso
+| icon          = Akoma Ntoso NPS.jpg
+| iconcaption   = The ''akoma ntoso'' symbol (as seen on the US [[African Burial Ground National Monument]] in New York City)
+| icon_size     = 188
+| screenshot    = 
+| screenshot_size = 
+| caption       = 
+| extension     = 
+| extensions    = {{unbulleted list|.akn|.xml}}
+| mime          = application/akn+xml
+| developer     = {{unbulleted list|[[United Nations Department of Economic and Social Affairs|UN DESA]]|[[OASIS (organization)|OASIS]]}}
+| released      = {{start date and age|2018|08|30|df=yes}}
+| latest_release_version = 
+| latest_release_date = <!-- {{start date and age|YYYY|mm|dd|df=yes/no}} -->
+| genre         = [[Legal informatics]]
+| container_for = 
+| contained_by  = 
+| extended_from = [[XML]]
+| extended_to   = 
+| standard      = [http://docs.oasis-open.org/legaldocml/akn-core/v1.0/cos01/part1-vocabulary/akn-core-v1.0-cos01-part1-vocabulary.html Akoma Ntoso 1.0 - XML vocabulary]
+and [http://docs.oasis-open.org/legaldocml/akn-core/v1.0/cos01/part2-specs/akn-core-v1.0-cos01-part2-specs.html specifications]
+| open          = Yes
+}}
+'''Akoma Ntoso''' (''A''rchitecture for ''K''nowledge-''O''riented ''M''anagement of ''A''frican ''N''ormative ''T''exts using ''O''pen ''S''tandards and ''O''ntologies) is an international [[technical standard]] for representing [[Executive (government)|executive]], [[Legislature|legislative]] and [[judiciary]] documents in a structured manner using a domain specific, legal XML vocabulary.
+
+The term ''akoma ntoso'' means "linked hearts" in the [[Akan language]] of West Africa and for this reason it was selected for nominating this legal XML standard. The usual acronym is '''AKN''', to designate the ''XML AKN format''.
+
+== Definition ==
+The Akoma Ntoso standard defines a set of  ‘machine readable’  electronic representations in [[XML]] format of the building blocks of parliamentary, legislative and judiciary documents".
+
+The standard is composed of :
+
+* an XML vocabulary<ref>{{Cite web|title=Akoma Ntoso Version 1.0. Part 1: XML Vocabulary|url=http://docs.oasis-open.org/legaldocml/akn-core/v1.0/os/part1-vocabulary/akn-core-v1.0-os-part1-vocabulary.html|access-date=2020-07-19|website=docs.oasis-open.org}}</ref> that defines the mapping between the structure of legal documents and their equivalent in XML; 
+* specifications of an  [[XML schema]]<ref>{{Cite web|title=Akoma Ntoso Version 1.0. Part 2: Specifications|url=http://docs.oasis-open.org/legaldocml/akn-core/v1.0/akn-core-v1.0-part2-specs.html|access-date=2020-07-19|website=docs.oasis-open.org}}</ref> that defines the structure of legal documents in [[XML]].  They provide rich possibilities of description for several types of parliamentary, legislative and judiciary document, such as bills, acts and parliamentary records, judgments, or gazettes;
+* a recommended naming convention<ref>{{Cite web|title=Akoma Ntoso Naming Convention Version 1.0|url=http://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html|access-date=2020-07-19|website=docs.oasis-open.org}}</ref> for providing unique identifier to legal sources based on [[Functional Requirements for Bibliographic Records|FRBR]] model;
+* a MIME type definition.<ref>{{Cite web|title=Akoma Ntoso Media Type Version 1.0|url=http://docs.oasis-open.org/legaldocml/akn-media/v1.0/akn-media-v1.0.html|access-date=2020-07-19|website=docs.oasis-open.org}}</ref>
+
+== Description ==
+Akoma Ntoso is an international legal document standard that serves as the basis for modern machine-readable and fully digital legislative and judicial processes. This is achieved by providing a coherent syntax and well-defined semantics to represent legal documents in a digital format. It is designed to be suitable as a common exchange format in all parliamentary, legal and judicial systems around the world.<ref>{{Citation |last1=Flatt |first1=Amelie |title=Phase I: Mapping Legal Concepts to Technical Objects |date=2022 |url=https://link.springer.com/10.1007/978-3-031-14132-4_3 |work=Model-Driven Development of Akoma Ntoso Application Profiles |pages=13–17 |place=Cham |publisher=Springer International Publishing |language=en |doi=10.1007/978-3-031-14132-4_3 |isbn=978-3-031-14131-7 |access-date=2023-01-07 |last2=Langner |first2=Arne |last3=Leps |first3=Olof}}</ref>
+
+Taking advantage of the shared heritage present in all legal systems, Akoma Ntoso has been developed to have ample flexibility to respond to all the differences in texts, languages, and legal practices. Aiming to expand on certain common practices, the standard therefore has a broad scope. It provides, inter alia, a common extensible model for data (the document content) and metadata (such as bibliographic information and annotations). Specifically, as a common legal document standard for the interchange of legal documents it is designed to be highly flexible in its support of documents and functionalities,12 maintaining a large set of both structural and semantic building blocks (over 500 entities in version 3.0) for representing this wide variety of document types of virtually all legal traditions. It is extensible in order to allow for modifications to address the individual criteria of organizations or unique aspects of various legal practices and languages without sacrificing interoperability with other systems.
+
+Akoma Ntoso is as such part of a wider approach to developing open, non-proprietary technical standards for structuring legal documents and information under the name of [[Legal XML]], which also includes formats and standards for, e.g., eContracts, eNotarization, electronic court filings, the technical representation of legal norms and rules ([[LegalRuleML]]) or technical standards for the interfaces of, e.g., litigant portal exchange platforms.
+
+Akoma Ntoso allows machine-driven processes to operate on the syntactic and semantic components of digital parliamentary, judicial and legislative documents, thus facilitating the development of high-quality information resources.<ref>{{Citation |last1=Flatt |first1=Amelie |title=Introduction |date=2022 |url=https://link.springer.com/10.1007/978-3-031-14132-4_1 |work=Model-Driven Development of Akoma Ntoso Application Profiles |pages=1–3 |place=Cham |publisher=Springer International Publishing |language=en |doi=10.1007/978-3-031-14132-4_1 |isbn=978-3-031-14131-7 |access-date=2023-01-07 |last2=Langner |first2=Arne |last3=Leps |first3=Olof}}</ref> It can substantially enhance the performance, accountability, quality and openness of parliamentary and legislative operations based on best practices and guidance through machine-assisted drafting and machine-assisted (legal) analysis. Embedded in the environment of the semantic web, it forms the basis for a heterogenous yet interoperable ecosystem, with which these tools can operate and communicate, as well as for future applications and use cases based on digital law or rule representation.<ref>{{Cite book |last1=Flatt |first1=Amelie |title=Model-Driven Development of Akoma Ntoso Application Profiles - A Conceptual Framework for Model-Based Generation of XML Subschemas |last2=Langner |first2=Arne |last3=Leps |first3=Olof |publisher=Sprinter Nature |year=2022 |isbn=978-3-031-14131-7 |edition=1st |location=Heidelberg |language=en}}</ref>
+
+== History and adoption throughout the world ==
+Akoma Ntoso started as an [[United Nations Department of Economic and Social Affairs|UNDESA]] project in 2004<ref>{{Citation|last1=Barabucci|first1=Gioele|title=Multi-layer Markup and Ontological Structures in Akoma Ntoso|date=2010|url=http://link.springer.com/10.1007/978-3-642-16524-5_9|work=AI Approaches to the Complexity of Legal Systems. Complex Systems, the Semantic Web, Ontologies, Argumentation, and Dialogue|volume=6237|pages=133–149|editor-last=Casanovas|editor-first=Pompeu|place=Berlin, Heidelberg|publisher=Springer Berlin Heidelberg|doi=10.1007/978-3-642-16524-5_9|isbn=978-3-642-16523-8|access-date=2020-07-19|last2=Cervone|first2=Luca|last3=Palmirani|first3=Monica|last4=Peroni|first4=Silvio|last5=Vitali|first5=Fabio|series=Lecture Notes in Computer Science |editor2-last=Pagallo|editor2-first=Ugo|editor3-last=Sartor|editor3-first=Giovanni|editor4-last=Ajani|editor4-first=Gianmaria}}</ref> within the initiative [[Parliamentary informatics#Africa|"Strengthening Parliaments’ Information Systems in Africa"]].<ref>{{cite book|last=The International Conference Parliaments’ Information Management in Africa: Challenges and Opportunities of ICTs to Strengthen Democracy and Parliamentary Governance|title=Parliaments' Information Management in Africa - The Nairobi declaration of 11th February 2005|date=11 February 2005|publisher=United Nations}}</ref> Its core vocabulary was created mostly by two professors from the Centre for Research in the History, Philosophy, and Sociology of Law and in Computer Science and Law (CIRSFID) of the [[University of Bologna]]. A first legislative [[text editor]] supporting Akoma Ntoso was developed in 2007 on the base of [[OpenOffice.org|OpenOffice]].<ref name=":0b">{{cite book|last=Buie, Elizabeth.|url=https://www.worldcat.org/oclc/794328699|title=Usability in government systems : user experience design for citizens and public servants|date=2012|publisher=Elsevier Science|others=Murray, Dianne.|isbn=978-0-12-391063-9|location=Burlington|pages=Chapter 9: Legislative drafting systems|oclc=794328699}}</ref>
+
+In 2010 [[European Parliament]] developed an open source web-based application called AT4AM<ref>{{Cite web|date=2013-03-20|title=Parliaments able to save time thanks to free EP tool for managing amendments {{!}} News {{!}} European Parliament|url=https://www.europarl.europa.eu/news/en/headlines/economy/20130318STO06606/parliaments-able-to-save-time-thanks-to-free-ep-tool-for-managing-amendments|access-date=2020-07-19|website=www.europarl.europa.eu}}</ref><ref name=":0" /> based on Akoma Ntoso<ref>{{Cite web|title=AT4AM: the XML web editor used by Members of European Parliament » VoxPopuLII|url=https://blog.law.cornell.edu/voxpop/2013/08/15/at4am-the-xml-web-editor-used-by-members-of-european-parliament/|access-date=2020-07-19|website=blog.law.cornell.edu}}</ref> for facilitating the production and the management of legislative amendments.<ref>{{cite web|title=AT4AM Video|url=https://vimeo.com/17598642|publisher=EU Parliament}}</ref><ref>{{cite web|title=AT4AM world|url=https://vimeo.com/7837751|publisher=EU Parliament}}</ref> Thanks to this project, the application of Akoma Ntoso could be extended to new type of documents (e.g. legislative proposal, transcript) and to other scenarios (e.g., multilingual translation process).
+
+Akoma Ntoso also was explicitly designed to be compliant with [[European Committee for Standardization|CEN]] Metalex,<ref>{{cite web|title=OASIS LegalDocumentML (LegalDocML) TC|url=https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml|access-date=25 August 2013|publisher=[[OASIS (organization)|OASIS]]}}</ref> one of the other popular legal  standards,<ref>{{cite web|date=29 April 2010|title=Akoma Ntoso Updates|url=http://www.akomantoso.org/rss-manager/akoma-ntoso-updates-29th-april-2010|url-status=dead|archive-url=https://web.archive.org/web/20130927133251/http://www.akomantoso.org/rss-manager/akoma-ntoso-updates-29th-april-2010|archive-date=2013-09-27|access-date=25 August 2013|work=akomantoso.org|publisher=[[United Nations Department of Economic and Social Affairs]]}}</ref> which is used in the [[UK Statute Law Database]].<ref>{{cite web|title=RDF/XML Format|url=http://www.legislation.gov.uk/developer/formats/rdf|access-date=25 August 2013|work=Legislation.gov.uk|publisher=[[The National Archives (United Kingdom)|The National Archives]]}}</ref><ref>{{Cite web|title=CEN MetaLex – Open XML Interchange Format for Legal and Legislative Resources|url=http://www.metalex.eu/|access-date=2020-07-19|website=www.metalex.eu}}</ref>
+
+In 2012, the Akoma Ntoso specifications became the main working base for the activities of the LegalDocML Technical Committee within the [[Legal XML|LegalXML]] member section of [[OASIS (organization)|OASIS]].<ref name="oasis-akoma-ntoso">{{cite web|last=Gheen|first=Tina|date=23 April 2012|title=OASIS Puts Akoma Ntoso on the Standards Track|url=http://blogs.loc.gov/law/2012/04/oasis-puts-akoma-ntoso-on-the-standards-track/|publisher=[[Library of Congress]]}}</ref>
+
+The "United States Legislative Markup" (USLM) schema<ref>{{cite web |title=usgpo/uslm |url=https://github.com/usgpo/uslm |website=GitHub USLM Repository |publisher=United States Government Publishing Office |access-date=9 April 2021 |date=24 March 2021}}</ref> for the [[United States Code]] (the US codified laws), developed in 2013, and the [[LexML Brasil]] XML schema for Brazilian [[Legislature|legislative]] and [[judiciary]] documents, developed before, in 2008, were both designed to be consistent with Akoma Ntoso.<ref>{{cite web
+|title=United States Legislative Markup: User Guide for the USLM Schema
+|publisher=[[Office of the Law Revision Counsel]]|date=July 2013|access-date=25 August 2013
+|url=http://uscode.house.gov/download/resources/USLM-User-Guide.pdf
+}}</ref><ref name="lexml">
+{{cite web
+|title=LexML Brasil, Parte 3 – LexML XML Schema, version 1.0
+|publisher=GT LexML|date=December 2008|access-date=7 February 2017
+|url=http://projeto.lexml.gov.br/documentacao/Parte-3-XML-Schema.pdf
+}}</ref>
+
+The [[Library of Congress|United States Library of Congress]] created the Markup of US Legislation in Akoma Ntoso challenge in July 2013 to create representations of selected US bills using the most recent Akoma Ntoso standard within a couple months for a $5000 prize,<ref>{{cite web|title=Library of Congress Announces First Legislative Data Challenge|first=Tina|last=Gheen|date=16 July 2013|publisher=[[Library of Congress]]|url=http://blogs.loc.gov/law/2013/07/library-of-congress-announces-first-legislative-data-challenge/}}</ref> and the Legislative XML Data Mapping challenge in September 2013 to produce a data map for US bill XML and UK bill XML to the most recent Akoma Ntoso schema within a couple months for a $10000 prize.<ref>{{cite web|title=Second Library of Congress Legislative Data Challenge Launched|first=Tina|last=Gheen|date=10 September 2013|publisher=[[Library of Congress]]|url=http://blogs.loc.gov/law/2013/09/second-library-of-congress-legislative-data-challenge-launched/}}</ref>
+
+The [[The National Archives (United Kingdom)|National Archives of UK]] converted all the legislation in AKN in 2014. The availability of bulk legislation "moved the UK's ranking from fourth to first, in the 2014 Global Open Data Index, for legislation".<ref>{{cite web|title=OGP UK National Action Plan 2013-15|date=30 June 2015|publisher=[[The National Archives (United Kingdom)|The National Archives]]|url=http://www.opengovpartnership.org/sites/default/files/UKNAPupdate_June2015_Legislation.pdf/}}</ref>
+
+The [[Senate of the Republic (Italy)|Senate of Italian Republic]] provides, since July 2016, all the bills in Akoma Ntoso as bulk in open data repository.<ref>{{cite web|title=Senate of Italian Republic – AkomaNtosoBulkData|date=24 July 2016|publisher=[[Senate of the Republic (Italy)]]|url=https://github.com/SenatoDellaRepubblica/AkomaNtosoBulkData}}</ref>
+
+The German Federal Ministry of the Interior started the project Elektronische Gesetzgebung ("Electronic Legislation") in 2015/2016<ref>{{Cite web|title=E-Gesetzgebung|url=http://egesetzgebung.bund.de/|access-date=2021-02-23|website=egesetzgebung.bund.de}}</ref> and published Version 1.0 of the German application profile "LegalDocML.de" in March 2020.<ref>{{Cite web|title=Standard LegalDocML.de|url=https://fragdenstaat.de/anfrage/standard-legaldocmlde/|access-date=2021-02-23|website=fragdenstaat.de}}</ref><ref>{{Cite book |last1=Flatt |first1=Amelie |title=Model-Driven Development of Akoma Ntoso Application Profiles - A Conceptual Framework for Model-Based Generation of XML Subschemas |last2=Langner |first2=Arne |last3=Leps |first3=Olof |publisher=Sprinter Nature |year=2022 |isbn=978-3-031-14131-7 |edition=1st |location=Heidelberg |language=en}}</ref> The projects aim is to digitalize the entire legislative lifecycle from drafting to publication. Germany decided to adopt a model-driven development approach to creating and providing a subschema-based application profile in order to ensure interoperability among organizationally independent actors, each with their respective IT landscapes and tools.<ref name=":0">{{citation|surname1=Deutscher Bundestag|editor-surname1= Deutscher Bundestag|title=Antwort der Bundesregierung auf die Kleine Anfrage der Abgeordneten Victor Perli, Niema Movassat, Dr. Gesine Lötzsch, weiterer Abgeordneter und der Fraktion DIE LINKE. – Drucksache 19/25438 – Moderne digitale Rechtsetzung|publication-place=Berlin|date=2020-12-29|language=German}}</ref> In this initial version LegalDocML.de covers draft bills in the form of laws, regulations and general administrative directives. As part of an ongoing development process, the standard could incrementally be expanded in future stages to include all relevant document types of parliamentary, legislative and promulgation processes and tools.<ref>{{Cite book |last1=Flatt |first1=Amelie |title=Model-Driven Development of Akoma Ntoso Application Profiles - A Conceptual Framework for Model-Based Generation of XML Subschemas |last2=Langner |first2=Arne |last3=Leps |first3=Olof |publisher=Sprinter Nature |year=2022 |isbn=978-3-031-14131-7 |edition=1st |location=Heidelberg |language=en}}</ref>
+
+The High-Level Committee on Management (HLCM), part of the [[United Nations System]] Chief Executives Board for Coordination, set up a Working Group on Document Standards that approved in April 2017 to adopt Akoma Ntoso as standard for modeling its documentation.<ref>{{Cite web|title=Akoma Ntoso Guidelines|url=https://unsceb-hlcm.github.io/|access-date=2020-07-19|website=unsceb-hlcm.github.io}}</ref>
+
+Akoma Ntoso in its version 1.0 is finally adopted as OASIS standard in the frame of LegalDocML in August 2018.<ref>{{cite web|title=Akoma Ntoso Version 1.0 becomes an OASIS Standard {{!}} OASIS|url=https://www.oasis-open.org/news/announcements/akoma-ntoso-version-1-0-becomes-an-oasis-standard|access-date=2020-07-19|website=www.oasis-open.org|archive-date=19 July 2020|archive-url=https://web.archive.org/web/20200719093135/https://www.oasis-open.org/news/announcements/akoma-ntoso-version-1-0-becomes-an-oasis-standard|url-status=dead}}</ref>
+
+== Definition and aims ==
+As official self-description, the standard
+
+{{blockquote
+|(...) defines a set of simple, technology-neutral electronic representations of parliamentary, legislative and judiciary documents for e-services in a worldwide context and provides an enabling framework for the effective exchange of "machine readable" parliamentary, legislative and judiciary documents such as legislation, debate record, minutes, judgements, etc.
+<br/>Providing access to primary legal materials, parliamentary works and judiciaries documents is not just a matter of giving physical or on-line access to them. "Open access" requires the information to be described and classified in a uniform and organized way so that content is structured into meaningful elements that can be read and understood by software applications, so that the content is made "machine readable" and more sophisticated applications than on-screen display are made possible.
+}}
+
+== See also ==
+
+*[[Legal XML]]
+*[[LexML]]
+*[[Legal informatics]]
+*[[Parliamentary informatics]]
+*[[LegalDocML]] (OASIS LegalDocumentML)
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [https://www.oasis-open.org/committees/tc_home.php?wg_abbrev=legaldocml Official site of the OASIS LegalDocumentML technical committee] 
+* [https://op.europa.eu/fr/web/eu-vocabularies/akn4eu Akoma Ntoso for European Union (AKN4EU)]
+*[https://unsceb-hlcm.github.io/ AKN for the United Nations System - Guidelines for the mark-up of UN normative, parliamentary and judicial documents (AKN4UN)]
+* https://web.archive.org/web/20170308150550/http://www.akomantoso.org/
+*http://docs.oasis-open.org/legaldocml/akn-nc/v1.0/akn-nc-v1.0.html
+*http://code.google.com/p/akomantoso/
+*[http://www.slaw.ca/2015/05/11/public-review-of-legaldocmls-akoma-ntoso-v1-0/ slaw.ca/2015/05/11 Akoma Ntoso v1.0]
+*[http://akoma-ntoso-markup.challengepost.com/ akoma-ntoso-markup.challengepost.com], [http://legislative-data-mapping.challengepost.com/submissions/19630-akoma-ntoso-converter legislative-data-mapping] (Akoma Ntoso converter)
+*[https://gitlab.opencode.de/bmi/e-gesetzgebung/ldml_de/-/tree/main/Spezifikation?ref_type=heads Specification, schema and artifacts of the German Application Profile LegalDocML.de]
+
+[[Category:Argument technology]]
+[[Category:Markup languages]]
+[[Category:Open standards]]

@@ -1,0 +1,21 @@
+'''LIFER/LADDER''' was one of the first database [[natural language processing]] systems. It was designed as a natural language interface to a database of information about [[US Navy]] ships. This system, as described in a paper by Hendrix (1978), used a [[semantic grammar]] to parse questions and query a distributed database. 
+
+The LIFER/LADDER system could only support simple one-table queries or multiple table queries with easy join conditions.
+
+Some examples of queries it could accept:
+*What are the length, width, and draft of the Kitty Hawk?
+*When will Reeves achieve readiness rating C2?
+*What is the nearest ship to Naples with a doctor on board?
+*What ships are carrying cargo for the United States?
+*Where are they going?
+*Print the American cruisers’ current positions and states of readiness?
+
+==References==
+<references/>
+
+{{DEFAULTSORT:LIFER LADDER}}
+[[Category:History of artificial intelligence]]
+[[Category:United States Navy]]
+
+
+{{Database-software-stub}}

@@ -1,0 +1,891 @@
+{{Short description|Image processing and analysis software suite}}
+{{about|the image analysis software suite|astronomy|Perihelion and aphelion|other uses| Aphelion (disambiguation)}}
+{{Infobox software
+| name                   = Aphelion Imaging Software Suite
+| logo                   = Aphelion (software) logo.png
+| logo alt               = Aphelion logo
+| screenshot             = AphelionDevScreenshot.PNG
+| caption                = Aphelion Dev graphical user interface
+| screenshot alt         = 
+| collapsible            = 
+| author                 = 
+| developer              = ADCIS French company
+| released               = {{Start date and age|1996|df=yes|p=yes|br=no}}
+| discontinued           = 
+| latest release version = 4.6.0
+| latest release date    = {{Start date and age|2022|10|27|df=yes|p=yes|br=yes}}<ref>{{cite web
+  | url = https://www.adcis.net/en/aphelion-4-5-0-press-release/
+  | title = Aphelion 4.5.0 – Press Release - ADCIS
+  | website = adcis.net
+  | date = 23 February 2021
+ | access-date = 2021-03-25
+}}</ref>
+| latest preview version = 
+| latest preview date    =
+| programming language   = [[C Sharp (programming language)|C sharp]], [[C++]]
+| operating system       = [[Microsoft Windows|Windows]] 7 or later
+| platform               = 
+| size                   = 242 MB (x86) / 972 MB (x64)
+| language               = English, French
+| language count         = 2
+| language footnote      = 
+| genre                  = [[Image processing]]
+| license                = [[Proprietary software|Proprietary]] [[commercial software]]
+| website                = {{URL|http://www.adcis.net/en/home/}}
+| standard               = 
+| AsOf                   = 
+}}
+
+The '''''Aphelion Imaging Software Suite''''' is a [[software suite]] that includes three base products -  Aphelion Lab, Aphelion Dev, and Aphelion {{abbr|SDK|Software Development Kit}} for addressing [[image processing]] and [[image analysis]] applications. The suite also includes a set of [[Plug-in (computing)|extension programs]] to implement specific vertical applications that benefit from imaging techniques.
+
+The Aphelion [[software]] products can be used to [[prototype#Engineering sciences|prototype]] and [[Software deployment|deploy]] applications, or can be integrated, in whole or in part, into a user's system as processing and visualization [[Library (computing)|libraries]] whose components are available as both [[Dynamic-link library|DLL]]s or [[.NET Framework|.Net]] [[Component-based software engineering#Software component|components]].
+{{TOC left}}
+{{clear}}
+
+== History and evolution ==
+The development of Aphelion started in 1995 as a joint project of a French company, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} S.A.,<ref>{{cite web|title = About ADCIS (Advanced Concepts in Imaging Software)|url = http://www.adcis.net/en/AboutUs/Corporate.html|website = adcis.net|access-date = 16 November 2015}}</ref> and an American company, Amerinex Applied Imaging, Inc. (AAI)<ref>{{cite web|title = Amerinex Applied Imaging official web site|url = http://www.amerineximaging.com|website = amerineximaging.com|access-date = 5 November 2015}}</ref> Aphelion's image processing and analysis functions were made from operators available from the KBVision software developed and sold by Amerinex's predecessor, Amerinex Artificial Intelligence Inc. In the 1990s, the XLim<ref>{{cite tech report|language=fr|last1=Van Droogenbroeck|first1=Marc|trans-title=Xlim3D: Software for addressing image processing|title=Xlim3D : Un logiciel de traitement d'image|url=http://orbi.ulg.ac.be/bitstream/2268/120647/1/VanDroogenbroeck2002Xlim3D.pdf|format=pdf|website=orbi.ulg.ac.be|date=25 January 2002|access-date=30 November 2015}}</ref> software library was developed at the [[Centre de Morphologie Mathématique|Center of Mathematical Morphology]] of [[Mines ParisTech]], and both companies carried out its development tasks.
+
+The first [[Software versioning|version]] of Aphelion was completed and released in April 1996. Successive versions were released before the first official stable release in December 1996 at the Photonics East conference in [[Boston]] and the Solutions Vision show in [[Paris]] in January 1997, where at the latter it competed with Stemmer Imaging's {{abbr|CVB|Common Vision Blox}}<ref>{{cite web|url=http://www.commonvisionblox.com/en/news/2015-11-common-vision-blox-2016-numerous-new-features/|title=Stemmer imaging at Solutions Vision conference in 1997|website=commonvisionblox.com|access-date=25 February 2016}}</ref> imaging toolbox.
+
+In 1998, version 2.3 of Aphelion for [[Windows 98]]<ref name="Brochure98">{{Cite web|url=http://commonforall.adcis.net/pub/Aphelion%2023%20Brochure%201998%20FR.pdf|title=Official Aphelion 2.3 brochure (1998)|website=adcis.net|language=fr|access-date=19 November 2015}}</ref> was released, and its user base was growing in both France and the United States. Version 3.0, totally rewritten to take advantage of [[Microsoft]]'s then-recent [[ActiveX]]<ref>{{Cite web|url=http://commonforall.adcis.net/pub/Aphelion%2032%20Brochure%202004%20US.pdf|title=Official Aphelion 3.2 brochure (2004)|website=adcis.net|access-date=18 November 2015}}</ref> technology, was officially released in 2000. It also became available as a « Developer » version, for rapid prototyping of applications using its intuitive {{abbr|GUI|Graphical User Interface}} and the macro recording capability, and a « Core » version, including the full library as a set of ActiveX components to be used by [[software developer]]s, integrators and [[original equipment manufacturer]]s ({{abbr|OEM|original equipment manufacturer}}).<ref>{{cite web|url=http://www.adcis.net/en/Products/AphelionThree/GeneralDescription.html|title=Aphelion 3.2 description|website=adcis.net|access-date=19 November 2015}}</ref>
+
+As AAI turned its focus to [[Civil defense|security]], in 2001, ADCIS took the lead on developing Aphelion. {{abbr|AAI|Amerinex Applied Imaging}} focused on [[millimeter wave scanner]]s for concealed weapon detection at [[Airport security|airports]], and eventually merged with Millimetrics to become Millivision.<ref>{{cite web|url=http://www.millivision.com/about.html|title=About Millivision|website=millivision.com|access-date=19 November 2015}}</ref>
+
+In 2004, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} specified version 4.0 of Aphelion. The set of image processing/analysis functions was rewritten one more time to be compatible with the [[.NET Framework|.NET]]<ref name=":0">{{cite web|title = Aphelion 2006 advertising|url = http://www.advancedimagingpro.com/pdf/ADI1206_Software_10_15.pdf|website = AdvancedImagingPro.com|access-date = 19 November 2015}}</ref> technology and the emergence of 64 bit architecture {{abbr|PC|Personal Computer}}s. In addition, the {{abbr|GUI|Graphical User Interface}} was redesigned to address two usage types: a semi-automatic use where the user is guided through the different steps of functions, and a fully automatic use where the expert user can quickly invoke imaging functions. Its first release was presented at the {{abbr|IPOT|Image Processing & Optical Technology}} exhibition in [[Birmingham]], [[United Kingdom|{{abbr|UK|United Kingdom}}]] the same year. During the Vision Show in Paris in October 2008, the new Aphelion Lab product was launched for users that are not specialists in image processing.<ref>{{cite web|language=fr|trans-title=ADCIS (Advanced Concepts in Imaging Software) presents its new Aphelion Lab software|title = ADCIS (Advanced Concepts in Imaging Software) lance son logiciel Aphelion Lab|url = http://visionindustrielle.free.fr/index.php/News/news-adcis-aphelion-lab.html|website = Vision Industrielle|access-date = 5 November 2015}}</ref><ref>{{cite web|language=fr|trans-title=ADCIS (Advanced Concepts in Imaging Software) at Vision Show 2008|title = ADCIS (Advanced Concepts in Imaging Software) au salon Vision Show 2008|url = http://www.adcis.net/en/AboutUs/VisionShow2008.html|website = adcis.net|access-date = 19 November 2015}}</ref> It is easier to use, and only includes fewer image processing functions. It was then included in the Aphelion Image Processing Suite, consisting of Aphelion Dev (replacing Aphelion Developer), Aphelion Lab, Aphelion {{abbr|SDK|Software Development Kit}} (replacing Aphelion Core), and a set of extensions.
+
+Nowadays, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} is still working on the suite, and updated versions with new extensions and functionalities continually become available from the websites of both companies. In 2015, support was added for very large images and scan microscope images<ref name="WhatsNew4_3">{{cite web|url=http://www.adcis.net/en/Products/VersionHistory_version_Aphelion43.html|title=What is new in Aphelion 4.3 release|website=adcis.net|access-date=18 November 2015}}</ref> (virtual slides compound into a very large [[JPEG 2000]] image) for high throughput imaging, and new specific extensions were also added. In late 2015, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} announced Aphelion's port for [[Tablet computer|tablet]]s and [[smartphone]]s, for [[Vertical market software|vertical applications]].<ref>{{cite web|title = ADCIS (Advanced Concepts in Imaging Software) attended the innovation trophies 2015|url = http://www.adcis.net/en/AboutUs/InnovationTrophies2015.html|website = adcis.net|access-date = 19 November 2015}}</ref>
+
+The name "Aphelion" comes from the [[Aphelion|astronomical term]] of the same name, meaning the point on a planet rotating around the [[Sun]] where it lies farthest from it, applying the term in a metaphorical sense{{Citation needed|date=September 2018}}. [[Unix]] was the [[operating system]] used on scientific [[workstation]]s in the 1990s, such as on the workstations manufactured by market leader [[Sun Microsystems]], which [[Windows]] suite Aphelion was quite removed from.
+
+== Description ==
+{{multiple image|align = right|header = <div width=200px>{{abbr|ADCIS|Advanced Concepts in Imaging Software}}<br/><small>Software house of Aphelion</small></div>|image1 = |alt1 = ADCIS logo with 'a' white letter split over four red squares in four more or less sparsed pieces (with one of them slightly inclined).| caption1 = Logo.|width1 = 84|image2 = ADCISOfficeSCThumb.png|alt2 = Photo of the facade of the two-storey building housing the current premises of ADCIS.|caption2 = Premises.|width2 = 150}}
+
+Aphelion is a software suite<ref>{{cite web|title = Aphelion Imaging Software Suite|url = http://www.adcis.net/en/Products|website = adcis.net|access-date = 5 November 2015}}</ref> to be used for image processing and image analysis. It supports 2D and [[3D computer graphics|3D]], monochrome, color, and multi-band images. It is developed by {{abbr|ADCIS|Advanced Concepts in Imaging Software}}, a French [[software house]] located in [[Saint-Contest]], [[Calvados (department)|Calvados]], [[Normandy]].<ref>{{cite web|language = fr|trans-title = High technology companies in Calvados|title = Les hautes technologies dans le Calvados|url = http://calvados-strategie.com/fr/tic-t81.html|website = Calvados stratégie|access-date = 5 November 2015|archive-url = https://web.archive.org/web/20151117023656/http://calvados-strategie.com/fr/tic-t81.html|archive-date = 2015-11-17|url-status = dead}}</ref>
+
+Aphelion is widely used in the scientific/industry community to solve basic and complex imaging applications. First, the imaging application is quickly developed from the Graphical User Interface, involving a set of functions that can be automatically recorded into a macro command. The macro [[programming language|languages]] available in Aphelion (i.e. BasicScript, Python, and C#) help to [[Batch processing|process batch]] of images, and prompt the user if needed for specific parameters that are applied to the imaging functions. All Aphelion image processing functions are written in C++, and the Aphelion user interface is written in C#. C++ functions can be called from the C# language thanks the use of dedicated [[Wrapper function|wrappers]].<ref name="SDK2015">{{cite web|language = en|title = Official Aphelion SDK (Software Development Kit) brochure (2015)|url = http://www.adcis.net/pub/Aphelion%20SDK_FlyerEN.pdf|website = adcis.net|access-date = 19 November 2015}}</ref>
+
+The main principle of image processing is to automatically process pixels of a [[digital image]], then extract one or more objects of interest (i.e. cells in the field of biology, inclusions in the field of material science) and compute one or more measurements on those objects to quantify the image and generate a verdict (good image, image with defects, cancerous cells). In other words, starting from an image, pixels are processed by a set of successive functions or operators until only measurements are computed and used as the input of a 3rd party system or a classification software that will classify objects of interest that have been extracted during the imaging process.
+
+An acquisition system such as a [[digital camera]], a [[video camera]], an [[Optical microscope|optical]] or [[electron microscope]], a [[CT scan|medical scanner]], or a smartphone can be used to capture images. The set of values or [[pixel]]s can be processed as a 1D image (1D signal), a 2D image (array of pixel values corresponding to a monochrome or [[Channel (digital image)|color image]]), or a 3D image displayed using [[volume rendering]] (array of voxels in the 3D space) or displaying surfaces by using [[3D rendering]]. A 2D color image is made of 3 value pixels (typically [[RGB color model|Red, Green, and Blue]] information or another [[color space]]), and a 3D image is made of monochrome, color ([[indexed color]] are often used), [[multispectral image|multispectral]], or [[Hyperspectral imaging|hyperspectral]] data. When dealing with videos, an additional band is added corresponding to [[Time in physics|temporal information]].
+
+The Aphelion Software Suite includes three base products, and a set of optional extensions for specific applications:
+* Aphelion Lab:<ref>{{cite web|title=Official Aphelion Lab brochure (2015) |url=http://www.adcis.net/pub/Aphelion%20Lab%20brochure%20EN%20A4.pdf |website=adcis.net |access-date=19 November 2015 }}</ref> Entry-level package for non-experts in image processing. It helps to quickly [[image segmentation|segment]] an image in a semi-automatic or manual ways, and compute a set of measurements computed on objects of interest that have been extracted during the segmentation process. A set of [[wizard (software)|wizards]] guides the user from image acquisition to [[report generator|report generation]].
+* Aphelion Dev:<ref name="BrochureDev">{{cite web|title = Official Aphelion Dev brochure (2015)|url = http://www.adcis.net/pub/Aphelion%20Dev%20brochure%20EN%20A4.pdf|website = adcis.net|access-date = 19 November 2015}}</ref> Full imaging environment including over 450 functions<ref>{{cite web|title = Aphelion 4.x function list|url = http://www.adcis.net/en/Products/AphelionDev/ImageProcessingLibrary.html|website = adcis.net|access-date = 5 November 2015}}</ref><ref>{{cite web|title = Aphelion 4.x 3D functions|url = http://www.adcis.net/en/Products/Extensions/3DImageProcessing.html|website = adcis.net|access-date = 5 November 2015}}</ref> to develop and [[Software deployment|deploy]] an application that involves image processing and analysis. It also includes a set of [[Macro (computer science)#Application macros and scripting|macro-command]] languages to automate any application to be invoked from the user interface. It also helps to run the imaging algorithm on more than one image that are stored on disk, available on the network, or captured by an acquisition device. Aphelion libraries for image processing and visualization are provided in Aphelion Dev as DLLs and .Net components.
+* Aphelion {{abbr|SDK|Software Development Kit}}:<ref name="SDK2015" /> A set of libraries to develop a stand-alone application with a custom interface based on the Aphelion libraries. This [[software development kit]] including display, processing and analysis [[Subroutine|function]]s that can be used by software developers and {{abbr|OEM|Original Equipment Manufacturer}}s. It is provided as DLLs and .Net components. The stand-alone application is typically developed in C# on one computer, and then deployed on multiple [[Personal computer|{{abbr|PC|Personal Computer}}]]s and systems.
+
+A set of optional extensions can be added to the « Aphelion Dev » product, depending on the application.<ref>{{cite web|title = Distribution and Upgrade Path|url = http://www.adcis.net/en/Products/AphelionDev/Distribution.html|website = adcis.net|access-date = 5 November 2015}}</ref> An evaluation version of Aphelion can be run on a {{abbr|PC|Personal Computer}} for 30 days.<ref>{{cite web|title = Frequently asked questions about Aphelion|url = http://www.adcis.net/en/Products/FAQs_category_General.html|website = adcis.net|access-date = 19 November 2015}} {{quote|text=It is possible to download a trial version of Aphelion from the web.}}</ref> A permanent version of Aphelion is available based on a perpetual license. [[Upgrade]]s are available through a maintenance agreement based on a yearly fee. [[Technical support]] is provided by the engineers who are developing the product.<ref>{{cite web|title = Aphelion technical support|url = http://www.adcis.net/en/Support/SupportTeam.html|website = adcis.net|access-date = 19 November 2015}}</ref>
+
+The goal of image processing is usually to extract object(s) of interest in an image, and then to [[Machine learning|classify]] them based on some characteristics such as shape, density, position, etc. Using Aphelion, this goal is achieved by performing the following tasks:
+# Load an image from disk or acquire an image using an acquisition device.
+# Enhance the image [[Noise reduction|removing noise]] or modifying its contrast.
+# Segment the image extracting objects of interest to be measured and analyzed. Typically, for simple applications, a [[Thresholding (image processing)|threshold]] is performed to generate a binary image. Then, [[Mathematical morphology|morphological operators]] are applied to clean the image and only keep objects of interest. Finally, a label value is given to each object based on its [[Connected space|connectivity]] (4 or 8 connectivity when a square grid is used), and the background of the image is given value zero.
+# The set of objects can be manually edited by the user to remove artifacts, and alter their edges. Objects can then be measured in terms of shape, color, [[densitometry]], and then classified using the measurements.
+# What has been developed above for one image can be applied to a batch of images thanks to the use of the macro-commands available in the Aphelion User Interface. It helps to generate more measurements and get a more robust algorithm working on multiple images.
+# Statistical analysis can be performed on the measurements and [[Statistical classification|classifiers]] can be [[Supervised learning|trained]] if the number of objects is large enough and if descriptors or measurements are available to classify objects into classes or categories.
+
+== Applications ==
+The Aphelion Imaging Software Suite is used by students, researchers, engineers, and software developers in many application domains involving image processing and computer vision,<ref>{{cite web|title = Aphelion application fields|url = http://www.adcis.net/en/Applications/MedicalFields.html|website = adcis.net|access-date = 5 November 2015}}</ref><ref>{{cite web|title = Aphelion application fields videos|url = http://www.adcis.net/en/Download/Videos/Applications.html|website = adcis.net|access-date = 5 November 2015}}</ref> such as:
+* security ([[surveillance]], object tracking)
+* [[remote sensing]]
+* [[quality control]] for the industry and inspection applications
+* [[materials science]]
+* [[List of life sciences|life sciences]] ([[medicine]] and [[biology]])
+* earth science ([[geology]])
+* theory (image processing, machine learning and optimization)
+
+=== Security ===
+Aphelion {{abbr|SDK|Software Development Kit}} has been used in the field of [[Closed-circuit television|video surveillance]] involving multiple cameras. An application has been developed to monitor a [[Rapid transit|subway]] in a capital city (corridors, platforms, etc.).<ref>{{cite web|title = Clovis video surveillance|url = http://www.adcis.net/en/Applications/RDProjects/Clovis.html|website = adcis.net|access-date = 25 November 2015}}</ref> Another application has been developed to count the number of people entering/exiting a room. Aphelion can also be used to monitor traffic on roads, and analyze trajectories of moving objects.<ref name="Brochure95Fr">{{cite web|url=http://commonforall.adcis.net/pub/Aphelion%2010%20Brochure%201995%20FR.pdf|title=Official Aphelion 1.0 french brochure ADCIS (Advanced Concepts in Imaging Software) (1995)|website=adcis.net|language=fr|access-date=18 November 2015}}</ref> In the fields of robotics and computer vision, the software can be used to detect static and moving objects such as vehicles, and moving targets.<ref name="Brochure95US">{{Cite web|url=http://commonforall.adcis.net/pub/Aphelion%2010%20Brochure%201995%20US.pdf|title=Official Aphelion 1.0 U.S. brochure AAI (Amerinex Applied Imaging) (1995)|website=adcis.net|access-date=18 November 2015}}</ref> Aphelion has been used in [[Personal digital assistant|portable devices]] to read car [[Automatic number plate recognition|license plates]].<ref>{{cite web|title=Security Aphelion applications|url=http://www.adcis.net/en/Applications/SecurityApplications.html|website = adcis.net|access-date = 25 November 2015}}</ref> {{abbr|ADCIS|Advanced Concepts in Imaging Software}} also used the Aphelion {{abbr|SDK|Software Development Kit}} to perform [[3D reconstruction from multiple images|3D reconstructions]] of 2D shapes and estimate the weight and the volume of the 3D object.<ref>{{cite web|title=3D Aphelion applications|url=http://www.adcis.net/en/Applications/3D.html|website = adcis.net|access-date = 26 November 2015}}</ref>
+<gallery mode="nolines" heights="80px" class="center">
+AphelionApplication8.jpg|alt=Photo of a license plate|<small>''Automatic number plate recognition.''</small><br />[[Road traffic safety]]
+AphelionApplication21.jpg|alt=Photo of video surveillance in a corridor subway|<small>''Person tracking in a subway using multiple cameras.''</small><br />Video surveillance
+AphelionApplication30.jpg|alt=Photo of fighter jet landing on an aircraft carrier|<small>''[[Airplane]] [[landing]] on a ship tracking.''</small><br />Object tracking
+AphelionApplication7.jpg|alt=Photo of cars detected with boxes in traffic|<small>''[[Car]] tracking.''</small><br />Object tracking
+</gallery>
+
+=== Remote sensing ===
+Aphelion is used to automatically detect [[road]]s, [[buildings]], [[Field (agriculture)|agricultural fields]] in [[Satellite imagery|satellite images]]. The software can also be used to analyze the surface of the Sun.<ref name="Brochure95Fr" /> Satellite images are usually multi band images, and contain information that the human eye cannot see. In addition, they are usually digitized on more than 8 bits. In remote sensing applications, hyperspectral images are commonly used (infrared and ultraviolet). They help to extract some specific contrast areas in known wavelengths.
+<gallery mode="nolines" heights="80px" class="center">
+AphelionApplication4.jpg|alt=Airplane photo of Normandy rural area|<small>''Field identification and classification.''</small><br />Remote sensing
+AphelionApplication22.jpg|alt=Airplane photo of Paris|<small>''Road and building detection.''</small><br />Remote sensing
+</gallery>
+
+=== Quality control and inspection ===
+In the field of quality control for industry, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} has developed a specific measurement software product to analyze [[printed circuit board]] in the field of [[electronics]].<ref name="Brochure98" /> Aphelion has also been used to analyze and read documents, as well as detecting defects on [[printing|printed documents]].<ref name="Brochure95Fr" /> In the field of [[cosmetics]], Aphelion has been used to analyze the wear and tear of [[nail polish]], and to perform quality control on [[cleanser|facial cream]].<ref>{{cite web|title=Aphelion applications in cosmetics|url=http://www.adcis.net/en/Applications/Cosmetics.html|website = adcis.net|access-date = 25 November 2015}}</ref> The software can also be used to compare images over time (before and after) and to objectively measure the efficacy of an anti-wrinkle cream. Other quality control applications have been developed by {{abbr|ADCIS|Advanced Concepts in Imaging Software}} such as the automatic classification of [[Analog photography|argentic grains]] on films.
+In optics field, {{abbr|ADCIS|Advanced Concepts in Imaging Software}} was involved in two projects, one to develop an innovative technique to cut [[Corrective lens|lenses]] for [[glasses]] and one to model rigid scleral [[contact lens]]es in the 3D space, and then mill them. These contact lenses are worn by patients who have severe injuries in the eye (explosion, piece of glass, etc.). This last project is a joint project between EyePrint Prosthetics and {{abbr|ADCIS|Advanced Concepts in Imaging Software}}.<ref>{{cite web|title=Creation of Scleral Lens from Virtual Eye Model (poster ARVO (Association for Research in Vision and Ophthalmology) 2015)|url=http://commonforall.adcis.net/pub/ARVO2015-CSLVEM.pdf|website = adcis.net|access-date = 25 November 2015}}</ref>
+<gallery mode="nolines" heights="80px" class="center">
+AphelionApplication6.jpg|alt=Photo of nail with red nail polish|<small>''Nail polish tear and wear analysis.''</small><br />Cosmetics
+AphelionApplication14.jpg|alt=Macro photography of a cleanser|<small>''Quality control of a cleanser (facial cream).''</small><br />Cosmetics
+AphelionApplication31.jpg|alt=Photo of wrinkles observed using microscope|<small>''[[Wrinkle]]s cream quality control.''</small><br />Cosmetics
+AphelionApplication23.jpg|alt=Photo of printed letters|<small>''Printed documentation quality control.''</small><br />Printing
+AphelionApplication16.jpg|alt=Photo of a lens being cut and with digital annotations|<small>''Lens cutting system.''</small><br />Optics
+AphelionApplication25.jpg|alt=Macro photography of printed circuit board|<small>''Printed circuit board inspection.''</small><br />Electronics
+AphelionApplication15.jpg|alt=Photo of argentic grains|<small>''Argentic grains monitoring.''</small><br />[[Photography]]
+</gallery>
+
+=== Materials science ===
+In the field of [[metallurgy]], Aphelion ActiveX<ref name="ActiveX">ActiveX components of Aphelion Developer are .Net component ancestors of the current Aphelion {{abbr|SDK|Software Development Kit}} software development kit.</ref> components have been used to do [[metallography]] in conjunction with [[electron microscopes#Scanning electron microscope (SEM)|electron microscopes]] ({{abbr|SEM|Scanning Electron Microscopy}}) and [[Energy-dispersive X-ray spectroscopy|microprobe]] ({{abbr|EDS|Energy Dispersive Spectrometry}}) to quantify and analyze [[Inclusion (mineral)|inclusions]] in [[steel]].<ref>{{cite journal
+ | last                   = Hénault
+ | first                  = Éric
+ | title                  = Method of Automatic Characterization of Inclusion Population by a SEM-FEG/EDS/Image Analysis System
+ | journal                = Jeol News
+ | volume                 = 41
+ | issue                  = 73
+ | pages                  = 22–24
+ | date                   = 2006
+ | access-date            = 14 November 2015
+ | url                    = http://www.jeolusa.com/NEWSEVENTS/JEOLNEWSMagazine/tabid/275/Default.aspx
+}}{{quote|text=A coupling was carried out between a field-emission scanning electron microscope (JEOL, JSM-6500F), an energy-dispersive spectrometer (EDS) (PGT, detector SDD SAHARA) and image analysis software (APHELION).}}</ref><ref>{{cite web|language = fr|title = METIS (Measures Endogenous Treatments Inclusions Simulations)|url = http://www.adcis.net/en/Applications/Examples/MeTiS.html|website = adcis.net|access-date = 14 November 2015}}</ref> [[Carbon]] dispersion in one step of font production has also been analyzed using image processing techniques.<ref>{{cite journal
+ | language               = fr
+ | first1                  = Fatah
+ | last1                   = Hellal
+ | first2                 = Jacques
+ | last2                  = Lacaze
+ | first3                 = Alain
+ | last3                  = Hazotte
+ | display-authors        = 1
+ | trans-title            = Carbon dispersion during the decomposition of austenite into ferrite and graphite in a spheroidal graphite cast iron
+ | title                  = Diffusion du carbone lors de la décomposition de l'austénite en ferrite et en graphite dans une fonte à graphite sphéroïdal
+ | journal                = [[Canadian Journal of Physics]]
+ | volume                 = 77
+ | issue                  = 9
+ | date                   = February 2000
+ | doi                    = 10.1139/p99-037
+ | pages=677–684
+| bibcode = 2000CaJPh..77..677H
+ }}</ref>
+
+During the process of surface coating, and metallic element [[Diffusion hardening|diffusion]] (chrome-alumine), a link has been established between the shape of elements analyzed on {{abbr|SEM|Scanning Electron Microscope}} images, and constraints generated by these particles (observed by [[X-ray crystallography#X-ray diffraction|X-ray diffraction]]).<ref>{{cite journal
+ | first1                  = G.
+ | last1                   = Geandier
+ | first2                 = Patrick
+ | last2                  = Weisbecker
+ | first3                 = S.
+ | last3                  = Denis
+ | first4                 = Alain
+ | last4                  = Hazotte
+ | first5                 = A.
+ | last5                  = Mocellin
+ | first6                 = Jean-Lu
+ | last6                  = Lebrun
+ | first7                 = E.
+ | last7                  = Elkaim
+ | display-authors        = 1
+ | title                  = Residual stresses in alumina-chromium composites: micromechanical analysis and study by X-ray diffraction
+ | journal                = {{Interlanguage link multi|Revue de Métallurgie|fr}}
+ | volume                 = 100
+ | issue                  = 12
+ | pages                   = 1163–1172
+ | date                   = December 2003
+ | doi                    = 10.1051/metal:2003185
+}}</ref> Based on [[ASTM International|ASTM]] standards, a set of specific tools has been implemented in the Aphelion software product to detect and then analyze [[Grain boundary|grain boundaries]].<ref>{{cite web|title =Grain boundary measurement|url = http://www.adcis.net/en/Applications/Examples/GrainBoundaryDetection.html|website = adcis.net|access-date = 25 November 2015}}</ref><ref>{{cite conference
+ | language               = fr
+ | first1                  = Christophe
+ | last1                   = Gratin
+ | first2                 = Gervais
+ | last2                  = Gauthier
+ | title                  = Taille de grain : différentiation des joints inter et intra-grains par traitement d'image
+ | trans-title            = Grain sizing: method to filter twin boundaries based on innovative techniques of image processing
+ | conference             = {{Ordinal|39}} conference of the International Society for Stereology
+ | date                   = 4 February 2016
+ | url                    = http://commonforall.adcis.net/pub/ADCIS_ISS_2016_Abstract.pdf
+}}</ref> Work has been done in field of [[electron tomography]] to add image alignment and 3D reconstruction tools [[plug-in (computing)|plug-in]] using [[Transmission electron microscopy|{{abbr|TEM|Transmission electron microscopy}}]] images.<ref>
+{{cite report|language = fr|first1 = Maxime|last1 = Moreaud|title = Nanotomographie|trans-title = Nanotomography|url = http://cmm.mines-paristech.fr/Nanomines/Rapports/NanoTomov1.pdf|website = cmm.mines-paristech.fr|date = 10 April 2007|access-date = 22 February 2016|archive-url = https://web.archive.org/web/20160303070652/http://cmm.mines-paristech.fr/Nanomines/Rapports/NanoTomov1.pdf|archive-date = 3 March 2016|url-status = dead}}{{quote|''{{lang|fr|[...] une solution complète d'alignement des projections et de reconstruction tomographique 3D a été développée et intégrée à la plateforme Aphelion.}}''<br/>{{Square bracket open|2}}...{{Square bracket close}} a complete projection alignment and 3D reconstruction plug-in was developed and integrated to Aphelion.{{Square bracket close}}}}
+</ref>
+
+Image analysis also helps to study [[Composite material|composite polymers]] strengthen by [[glass fiber]], and to measure the impact of the size of micro threads used to link soft fibers in the perpendicular direction.<ref>{{cite journal
+ | first1                  = L.
+ | last1                   = Bizet
+ | first2                 = Joël
+ | last2                  = Bréard
+ | first3                 = Guy
+ | last3                  = Bouquet
+ | first4                 = Jean-Paul
+ | last4                  = Jernot
+ | first5                 = Moussa
+ | last5                  = Gomina
+ | display-authors        = 1
+ | title                  = Serial sections through a continuous fiber-reinforced polymer composite
+ | journal                = Image Analysis and Stereology
+ | volume                 = 23
+ | issue                  = 3
+ | pages                  = 167–176
+ | date                   = 2004
+ | doi                    = 10.5566/ias.v23.p167-176
+| doi-access= free
+ }}{{quote|However, they can be defined after simple morphological transformations on the digitized images of the microstructure: a closing is made on the fiber phase of the yarn by using the Aphelion software.}}</ref> The size of the threads can modify the matrix distribution used to combine this [[Fiberglass|material]]. The study of the distribution of metallic elements in composite materials and alloys, such as [[AlSiC]] is usually performed by [[Granulometry (morphology)|granulometry]] involving image processing and analysis.<ref>{{cite journal
+ | first1                  = S.
+ | last1                   = Yotte
+ | first2                 = Joëlle
+ | last2                  = Riss
+ | first3                 = D.
+ | last3                  = Breysse
+ | first4                 = S.
+ | last4                  = Ghosh
+ | display-authors        = 1
+ | title                  = PMMC cluster analysis
+ | journal                = Computer Modeling in Engineering & Sciences
+ | volume                 = 5
+ | issue                  = 2
+ | pages                  = 171–188
+ | date                   = 2004
+ | doi                    = 10.3970/cmes.2004.005.171
+}}
+</ref> Porosity of [[Polymer science|macromolecular]] materials as [[Gel#Xerogels|xerogel]] is sometime studied using 3D and [[X-ray microtomography]].<ref>{{Cite journal
+ | first1                  = Silvia
+ | last1                   = Blacher
+ | first2                 = Angélique
+ | last2                  = Léonard
+ | first3                 = Benoît
+ | last3                  = Heinrichs
+ | first4                 = Natalia
+ | last4                  = Tcherkassova
+ | first5                 = F.
+ | last5                  = Ferauche
+ | first6                 = Michel
+ | last6                  = Crine
+ | first7                 = Pierre
+ | last7                  = Marchot
+ | first8                 = E.
+ | last8                  = Loukine
+ | first9                 = Jean-Paul
+ | last9                  = Pirard
+ | display-authors        = 1
+ | title                  = Image analysis of X-ray microtomograms of {{chem|Pd–Ag/SiO|2}} xerogel catalysts supported on {{chem|Al|2|O|3}} foams. 
+ | journal                = [[Colloids and Surfaces A: Physicochemical and Engineering Aspects]]
+ | volume                 = 241
+ | issue                  = 1–3
+ | pages                  = 201–206
+ | date                   = 14 July 2004
+ | doi                    = 10.1016/j.colsurfa.2004.04.006
+| hdl = 2268/6497
+ | url = http://orbi.ulg.ac.be/handle/2268/6497
+ | hdl-access= free
+ }}
+</ref>
+
+The Aphelion software product has been used in the field of [[chemical engineering]] to study water mixes coming from two different sources in a [[continuous stirred-tank reactor]].<ref>{{cite journal
+ | first1                  = A.
+ | last1                   = Fall
+ | first2                 = O.
+ | last2                  = Lecoq
+ | first3                 = R.
+ | last3                  = David
+ | display-authors        = 1
+ | title                  = Characterization of Mixing in a Stirred Tank by Planar Laser Induced Fluorescence (PLIF)
+ | journal                = {{Ordinal|4}} International Symposium on Mixing in Industrial Processes
+ | volume                 = 79
+ | issue                  = 8
+ | pages                  = 876–882
+ | date                   = November 2001
+ | doi                    = 10.1205/02638760152721073
+| s2cid = 97079319
+ | url = https://hal.archives-ouvertes.fr/hal-01717493/file/Characterization_of_mixing_in_a_stirred_tank.pdf
+ }}</ref> First, a correlation has been established between the light intensity from a laser plane [[Planar laser-induced fluorescence|{{abbr|PLIF|Planar Laser-Induced Fluorescence}}]] described as grey level values, and concentrations going through that plane. The correlation was then used to quantify concentration evolutions using image processing.
+
+In the field of [[industrial water treatment]] and [[sewage treatment]], Aphelion helps to process XRay microtomograph images of [[sewage sludge]].<ref>{{cite journal
+ | first1                  = Angélique
+ | last1                   = Léonard
+ | first2                 = Silvia
+ | last2                  = Blacher
+ | first3                 = Pierre
+ | last3                  = Marchot
+ | first4                 = Jean-Paul
+ | last4                  = Pirard
+ | first5                 = Michel
+ | last5                  = Crine
+ | display-authors        = 1
+ | title                  = Image analysis of X-ray microtomograms of soft materials during convective drying: 3D measurements
+ | journal                = [[Journal of Microscopy]]
+ | volume                 = 218
+ | issue                  = 3
+ | pages                  = 247–252
+ | date                   = 15 June 2005
+ | doi                    = 10.1111/j.1365-2818.2005.01485.x
+| pmid = 15958018
+ | s2cid = 46242660
+ }}
+{{quote|Specific programs were developed using Aphelion 3.2f (Adcis S.A.) and Matlab software, with image analysis toolbox version 6.0 from Mathworks (Natick, MA).}}</ref> Each section is processed as a 2D image, a binary threshold is then applied to discriminate between air and the humid material, and finally a 3D reconstruction is performed to track the volume evolution of cracks during the [[drying]] process. This last process is important to treat [[Sewage sludge#Treatment|sewage sludge]] to be [[landfill]]ed, [[Incineration|incinerated]] or applied on agricultural land. The automatic analysis helped to track the crack evolution depending on the origin of different sludges. The image processing involved a [[histogram equalization]] followed by an [[Otsu's method|Otsu threshold]]. Aphelion has also been used in the field of XRay microtomography to perform statistical analysis of [[foam]]s (number of bubble faces, bubble average size,&nbsp;etc.).<ref>{{cite journal
+ | first1                  = Jérôme
+ | last1                   = Lambert
+ | first2                 = Isabelle
+ | last2                  = Cantata
+ | first3                 = Renaud
+ | last3                  = Delannaya
+ | first4                 = Anne
+ | last4                  = Renaulta
+ | first5                 = François
+ | last5                  = Granerb
+ | first6                 = James A.
+ | last6                  = Glazierc
+ | first7                 = Igor
+ | last7                  = Veretennikovc
+ | first8                 = Peter
+ | last8                  = Cloetens
+ | display-authors        = 1
+ | title                  = Extraction of relevant physical parameters from 3D images of foams obtained by X-ray tomography
+ | journal                = [[Colloids and Surfaces A: Physicochemical and Engineering Aspects]]
+ | volume                 = 263
+ | issue                  = 1–3
+ | pages                  = 295–302
+ | date                   = February 2005
+ | doi                    = 10.1016/j.colsurfa.2005.01.002
+}}</ref>
+<gallery mode="nolines" heights="80px" class="center">
+AphelionApplication1.jpg|alt=Virtual 3D image of zircone spherical particles in alumine|<small>''[[Zirconium]] particles in [[aluminium]].''</small><br />3D analysis
+AphelionApplication24.jpg|<small>''[[Chemical mapping]] [[Wavelength-dispersive X-ray spectroscopy|{{abbr|WDS|Wavelength-Dispersive X-ray Spectroscopy}}]].''</small><br />Materials science|alt=False-colour images of chemical components concentrations
+AphelionApplication5.jpg|alt=Close-up picture of concrete with blue elements visible|<small>''Granulometry.''</small><br />Materials science
+AphelionApplication36.jpg|alt=Microscopy image of grains of a material with boundaries displayed in yellow overlay|<small>''Grain Sizing.''</small><br />Materials science
+AphelionApplication35.jpg|alt=Microscopy image of a steel inclusion|<small>''Inclusion Analysis in steel.''</small><br />Metallography
+</gallery>
+
+=== Life sciences ===
+The comprehensive set of Aphelion functions is used to analyze images coming from an optical microscope and a camera mounted on top of the microscope. The software also controls the automated stage mounted on the microscope in the X, Y and Z directions. Z is used to change [[Focus (optics)|focus]]. Measurements based on shape analysis (surface area, perimeter, volume, elongation, compactness, etc.) and texture analysis (e.g., homogeneity, average intensity, moments<ref>{{cite conference
+ | first1                  = Florence
+ | last1                   = Poulletier de Gannes
+ | first2                 = Sandrine
+ | last2                  = Sanchez
+ | first3                 = N.
+ | last3                  = Schlinger
+ | first4                 = E.
+ | last4                  = Haro
+ | first5                 = Gilles
+ | last5                  = Ruffie
+ | first6                 = B.
+ | last6                  = Billaudel
+ | first7                 = Isabelle
+ | last7                  = Lagroye
+ | first8                 = Bernard
+ | last8                  = Veyret
+ | display-authors        = 1
+ | title                  = Effect of GSM-900 RFR on HSP expression in brain immune cells
+ | conference             = {{ordinal|28}} Annual Meeting of the BEMS
+ | location               = Cancun, Mexico
+ | date                   = June 2006
+ | url                    = https://hal.archives-ouvertes.fr/hal-00161897
+ | access-date            = 5 November 2015
+ | id                     = hal-00161897, version 1
+}}{{quote|The level of heat shock protein expression was estimated using image analysis (Aphelion software).}}</ref>) are automatically computed by Aphelion and displayed in the user interface in a spreadsheet on which statistical analysis as surface ratios<ref>{{cite journal
+ | first1                  = Maud
+ | last1                   = Jost
+ | first2                 = Alicia R.
+ | last2                  = Folgueras
+ | first3                 = Françoise
+ | last3                  = Frérart
+ | first4                 = Alberto M.
+ | last4                  = Pendas
+ | first5                 = Silvia
+ | last5                  = Blacher
+ | first6                 = Xavier
+ | last6                  = Houard
+ | first7                 = Sarah
+ | last7                  = Berndt
+ | first8                 = Carine
+ | last8                  = Munaut
+ | first9                 = Didier
+ | last9                  = Cataldo
+ | first10                = Jesus
+ | last10                 = Alvarez
+ | first11                = Laurence
+ | last11                 = Melen-Lamalle
+ | first12                = Jean-Michel
+ | last12                 = Foidart
+ | first13                = Carlos
+ | last13                 = López-Otín
+ | first14                = Agnès
+ | last14                 = Noël
+ | display-authors        = 1
+ | title                  = Earlier Onset of Tumoral Angiogenesis in Matrix Metalloproteinase-19–Deficient Mice
+ |journal                = [[Cancer Research (journal)|Cancer Research]]
+ | volume                  = 66
+ | issue                   = 10
+ | date                   = 15 May 2006
+ | doi                    = 10.1158/0008-5472.CAN-05-4315
+ | pmid = 16707448
+ | pages=5234–5241
+| doi-access= free
+ }}
+{{quote|The ratio between the surface of bisbenzimide staining and the surface of specific immunostaining was measured by using a software Aphelion 3.2 from Adcis (Herouville Saint Clair, France).}}</ref> can be performed. Analysis reports can also be generated in the user interface and then saved in specific folders. Microscopes using [[Optical microscope#Illumination techniques|reflected light]] can also be used for the analysis. For example, a specific software based on the Aphelion ActiveX components<ref name="ActiveX" /> is capable to measure [[Reaction inhibitor|inhibitor]] agent effects on [[dentin]] cells resorption.<ref>{{cite journal
+ | first1                  = Rob
+ | last1                   = Van't Hof
+ | first2                 = Aymen
+ | last2                  = Idris
+ | first3                 = Iain R.
+ | last3                  = Greig
+ | first4                 = Susan A.
+ | last4                  = Ridge
+ | first5                 = James
+ | last5                  = Dunford
+ | first6                 = Stuart
+ | last6                  = Ralston
+ | display-authors        = 1
+ | title                  = Identification of biphenylcarboxylic acid derivatives as a novel class of bone resorption inhibitors
+ | journal                = Journal of Bone and Mineral Research
+ | volume = 19
+ | issue                  = 10
+ | pages = 1651–60
+ | date                   = October 2004
+ | access-date            = 5 November 2015
+ | url                    = https://www.researchgate.net/publication/8357603
+ | doi                    = 10.1359/jbmr.2004.19.10.1651
+| pmid                   = 15355560
+ | s2cid = 24149039
+ | doi-access= free
+ }}{{quote|The area resorbed was quantified by Image Analysis using custom software developed using Aphelion ActiveX objects (ADCIS).}}</ref>
+
+In the field of [[cytopathology]], {{abbr|ADCIS|Advanced Concepts in Imaging Software}} developed a set of software products such as a specific software to analyze blood composition, count and classify red globules,<ref name="Brochure98" /> and another software to automatically classify cancerous cells using a classification based on multiple neural networks.<ref>{{cite web|language = fr|title = Projet CLoCyt (Composants Logiciels pour la Cytologie)|trans-title = CLoCyt (Software components for cytopathology) Project|url = https://www.greyc.fr/node/457|website = greyc.fr|access-date = 24 November 2015|archive-url = https://web.archive.org/web/20151125142040/https://www.greyc.fr/node/457|archive-date = 2015-11-25|url-status = dead}}</ref><ref>{{cite conference
+ |language    = fr
+ |first1       = Gervais
+ |last1        = Gauthier
+ |first2      = Damien
+ |last2       = Élie
+ |title       = Annotation et classification d'images : présentation et exemple d'application en cancérologie
+ |trans-title = Image annotation and classification: description and application in oncology example
+ |conference  = {{lang-fr|École d'Hiver sur l'Image Numérique Couleur|lit=Color digital image winter meeting}}
+ |location    = Toulon, France
+ |date        = 13–16 January 2009
+ |access-date = 25 November 2015
+ |url         = http://commonforall.adcis.net/pub/EHINC2009_G_GAUTHIER_D_ELIE_Annotation_et_classification_d'images.pdf
+}}</ref> Images are first acquired by a video camera mounted on an automated optical microscope. They are then automatically processed by Aphelion, and cytoplasm and nuclei are segmented using a [[Watershed (image processing)|watershed]] algorithm. Aphelion has also been used to study [[Neoplasm|tumor]] [[Angiogenesis|vascularization]] in low resolution images using a slide [[Image scanner|scanner]] (much cheaper than a scan microscope).<ref>{{cite conference
+ |language        = fr
+ |first1           = Paulette
+ |last1            = Herlin
+ |first2          = Nicolas
+ |last2           = Signolle
+ |first3          = Alexandre
+ |last3           = Labiche
+ |first4          = Jean-Jacques
+ |last4           = Michels
+ |first5          = Benoît
+ |last5           = Plancoulaine
+ |first6          = Pascal
+ |last6           = Gauduchon
+ |display-authors = 1
+ |title           = Avantages d'une quantification à basse résolution de la vascularisation intratumorale
+ |trans-title     = Benefit of low resolution images usage for tumor angiogenesis quantization
+ |conference      = {{ordinal|9}} conference of the French Microscopy Society ({{lang-fr|Société Française des Microscopies}}) (SFµ)
+ |date            = 4–8 July 2005
+ |access-date     = 25 November 2015
+ |url             = http://commonforall.adcis.net/pub/P_HERLIN_Quantification_de_vascularisation.pdf
+}}{{quote|''{{lang|fr|Une routine de traitement d'images, développée dans l'environnement du logiciel boîte à outils Aphelion (ADCIS) permet de donner une appréciation objective du degré de vascularisation moyen et maximal de la tumeur.}}''<br/>{{Square bracket open}}An image analysis macro-command, developed in the Aphelion (ADCIS) toolbox software, allows to appreciate objectively the mean and maximum grades of tumor vascularisation.{{Square bracket close}}}}</ref> The software that was developed helped the detection of [[Immunohistochemistry|immune-marked]] cells.<ref name="Brochure95Fr" /> Image analysis is also used in [[histology]] to study [[angiogenesis]] in 2D and 3D on microscopy images<ref>{{cite journal
+ | language               = fr
+ | first1                  = Sophie
+ | last1                   = Le Maire
+ | first2                 = Silvia
+ | last2                  = Blacher
+ | first3                 = Jean-Michel
+ | last3                  = Foidart
+ | first4                 = Jacques
+ | last4                  = Verly
+ | display-authors        = 1
+ | title                  = Caractérisation par analyse d'images de l'angiogenèse sur des coupes histologiques
+ | trans-title            = Image analysis quantization of angiogenesis on images of histological slides
+ | journal                = Group for Study of Signal and Image Analysis ({{lang-fr|GRETSI (Groupe d'Études du Traitement du Signal et des Images)}})
+ | date                   = 2005
+ | hdl                  = 2042/14096
+ }}{{quote|''{{lang|fr|Les logiciels utilisés pour réaliser ce travail sont les suivants : (a) APHELION v.3.2 pour le traitement d'images 2D, la reconstruction 3D et les mesures 2D et 3D, [...]}}''<br/>{{Square bracket open}}Softwares used to accomplish this work are: (a) APHELION v.3.2 for 2D image analysis, 3D reconstruction, and 2D and 3D measurements, [...]{{Square bracket close}}}}</ref> to measure effects of inhibitors and [[accelerant]]s impact on [[blood vessel]]s growth.
+
+{{abbr|ADCIS|Advanced Concepts in Imaging Software}} developed a chromosome classification assistant in the field of [[cytogenetics]] to automatically detect [[telomere]]s and pair [[chromosome]]s.<ref name="Brochure98" /> Ploidics, a software product to quantify [[DNA|{{abbr|DNA|Deoxyribonucleic acid}}]] [[ploidy]] based on [[Absorbance|optical density]] has been developed for a customer and released as an off-the-shelf product.<ref>{{cite web|title = Official Ploidics brochure (software based on Aphelion SDK (Software Development Kit))|url = http://commonforall.adcis.net/pub/Ploidics_FlyerEN.pdf|website = adcis.net|access-date = 5 November 2015}}</ref> Aphelion can also be used to analyze [[gel electrophoresis]].<ref name="Brochure98" />
+
+In the field of [[dermatology]], Aphelion users developed a method to quantify [[wound healing assay|wounded cells]].<ref>{{cite journal
+ | first1                  = Kamelia
+ | last1                   = Ghazi
+ | first2                 = Uriell
+ | last2                  = Deng-Pichon
+ | first3                 = Jean-Michel
+ | last3                  = Warnet
+ | first4                 = Patrice
+ | last4                  = Rat
+ | display-authors        = 1
+ | title                  = Hyaluronan Fragments Improve Wound Healing on In Vitro Cutaneous Model through P2X7 Purinoreceptor Basal Activation: Role of Molecular Weight
+ | journal                = [[PLOS One]]
+ | date                   = 16 November 2012
+ | doi                    = 10.1371/journal.pone.0048351
+ | pmid                   = 23173033
+ | pmc = 3500239
+ | volume=7
+ | issue                   = 11
+ | page=e48351
+| bibcode = 2012PLoSO...748351G
+ | doi-access = free
+ }}
+{{quote|Percentage of wound area was measured using Aphelion Dev image processing and analysis software developed by ADCIS S.A.}}</ref>
+
+Aphelion and software products based on Aphelion have been widely used in the field of [[ophthalmology]]. The first product that was released was capable of detecting [[lesion]]s in color [[Fundus photography|fundus images]] of patients with [[age-related macular degeneration]] or to automatically determine a [[diabetic retinopathy]] grade.<ref>{{cite web|title = Retinal analysis |url = http://www.adcis.net/en/Applications/RDProjects/RetinalAnalysis.html|website = adcis.net|access-date = 11 March 2016}}</ref><ref>{{cite web|title = Research projects as Messidor or e-ophta including references to related articles on ADCIS website|url = http://www.adcis.net/en/DownloadThirdParty/Messidor.html|website = adcis.net|access-date = 5 November 2015}}</ref> Other software products for ophthalmology pathologies have been developed such as {{abbr|ReVA|Retina Volume Analyzer}} for measurement of 3D volume of pigment epithelium detachment, {{abbr|ARIES|AlConfocal Rapid Image Evaluation System}} to study [[confocal microscopy|confocal]] images of the [[cornea]] in the 2D and 3D spaces,<ref>{{cite journal
+ | first1                  = Christine W.
+ | last1                   = Sindt
+ | first2                 = Bruno
+ | last2                  = Laӱ
+ | first3                 = Hélène
+ | last3                  = Burdin
+ | first4                 = Jami R.
+ | last4                  = Kern
+ | display-authors        = 1
+ | title                  = Rapid Image Evaluation System for Corneal In Vivo Confocal Microscopy
+ | journal                = Cornea
+ | volume                 = 32
+ | issue                  = 4
+ | pages                  = 460–465
+ | date                   = April 2013
+ | access-date            = 26 November 2015
+ | doi                    = 10.1097/ICO.0b013e31825ab9e2
+ |pmid = 23146928| s2cid = 32402442
+ | url                    = http://commonforall.adcis.net/pub/Sindt%20et%20al%20_Rapid%20Image%20Eval.pdf
+}}</ref> {{abbr|ISOS|Imaging System for the Ocular Surface}} to quantify [[Allergic conjunctivitis|conjunctival]] [[hyperaemia]] at the ocular surface, and {{abbr|LWE|Lid Wiper Ephithelium}} to study [[Keratoconjunctivitis sicca|dry eye syndrome]] looking at tears present on lid wiper epithelium.<ref>{{cite web|language = en|title = Ophthalmology Aphelion applications|url = http://www.adcis.net/en/Applications/List/Ophthalmology.html|website = adcis.net|access-date = 25 November 2015}}</ref>
+
+In the field of [[pharmacology]], {{abbr|ADCIS|Advanced Concepts in Imaging Software}} used the Aphelion {{abbr|SDK|Software Development Kit}} libraries to develop a specific software product to find new [[molecule]]s inhibiting [[mitosis]] in [[Fluorescence microscope|epifluorescence]] microscopy images.<ref>{{cite web|title = RAMIS (Rock, Analysis Module, and Interface for Screening)|url = http://www.adcis.net/fr/Applications/RDProjects/Ramis.html|website = adcis.net|access-date = 25 November 2015}}</ref>
+
+A joint development has been developed in [[radiology]] application field by {{abbr|ADCIS|Advanced Concepts in Imaging Software}} and Robert Van't Hof to study [[osteoporosis]] images of the [[bone]] and quantify porosities.<ref>{{cite web|title = Study of the porosity of the bone|url = http://www.adcis.net/en/Applications/Examples/BoneAnalysis.html|website = adcis.net|access-date = 25 November 2015}}</ref> ADCIS also used [[tomographic reconstruction|tomography]] method ([[Algebraic Reconstruction Technique|{{abbr|ART|Algebraic Reconstruction Technique}}]]) to perform 3D reconstruction from multiple points of view measuring background absorption (e.g., [[cone beam computed tomography]]).
+
+Some Aphelion research users used the software in the field of biology to automatically quantify [[ox]] maturation. They developed segmentation techniques applied on [[vertebra]] images including color space conversions ([[CIE L*a*b*]] and Hue, Saturation, and Intensity) to [[Edge detection|detect]] bones and [[cartilage]] edges.<ref>{{cite journal
+ | first1                  = I.
+ | last1                   = Hatem
+ | first2                 = J.
+ | last2                  = Tan
+ | display-authors        = 1
+ | title                  = Cartilage and bone segmentation in vertebra images
+ | journal                = Transactions of the American Society of Agricultural and Biological Engineers
+ | volume                  = 46
+ | issue                   = 5
+ | date                   = June 2003
+ | doi                    = 10.13031/2013.15436
+}}
+</ref> Image Processing can also be used to count cells. This technique was applied when looking at [[Petri dish]]es in [[microbiology]].<ref name="Brochure95Fr" />
+
+In [[agriculture]] and [[botany]], the Aphelion Software Product helps to study [[macroscopic scale]] properties of leaves.<ref>{{cite journal
+ | first1                  = Janos
+ | last1                   = Kriston-Vizi
+ | first2                 = A.
+ | last2                  = Ferenczy
+ | first3                 = M.
+ | last3                  = Umeda
+ | first4                 = K.
+ | last4                  = Miyamoto
+ | display-authors        = 1
+ | title                  = Biometrical approaches for mandarin leaf image analysis
+ | journal                = Applied Ecology and Environmental Research
+ | volume                  = 2
+ | pages                  = 119–134
+ | date                   = 2004
+ | issue = 1
+ | doi                    = 10.15666/aeer/02119134
+| doi-access= free
+ }}
+{{quote|For image analysis the Aphelion software package was used made by Adcis SA and AAI Inc.}}</ref> The algorithm includes a segmentation of leaves versus the background, and then compute a set of measurements and perform a statistical analysis and then classification. The ultimate goal of the application was to find a correlation between physiology parameters of fruit trees, and visual observation on leaves.
+
+In the [[food industry]], Aphelion can be used to measure the average [[grain]] size, or to compute the surface ratio of [[Juice vesicles|pulps]] in [[tomato]]es.<ref>{{cite web|title = Industrial vision Aphelion applications|url = http://www.adcis.net/en/Applications/IndustrialVision.html|website = adcis.net|access-date = 26 November 2015}}</ref>
+<gallery mode="nolines" heights="80px" class="center">
+AphelionApplication3.jpg|alt=Color fundus picture|<small>''Color fundus images of the retina.''</small><br />Ophthalmology
+AphelionApplication38.jpg|alt=Confocal microscopy gray levels image of cornea nerves|<small>''Confocal image of the cornea nerves.''</small><br />Ophthalmology
+AphelionApplication12.jpg|alt=Microscope photo of blue stain cells and maroon immune-marqued cells|<small>''Immune-marqued cells detection.''</small><br />Oncology
+AphelionApplication34.jpg|alt=Cells inhibiting mitosis displayed using registered bands of epifluorescence microscopy and false-colors|<small>''Selection of molecules inhibiting mitosis.''</small><br />Pharmacology
+AphelionApplication44.jpg|alt=Black and white image of cutaneous cells healing in a Petri dish|<small>''Wound healing quantization.''</small><br />Dermatology
+AphelionApplication26.jpg|alt=Bone radiography with edge detection displayed in overlay|<small>''Osteoporosis analysis.''</small><br />Radiology
+AphelionApplication18.jpg|alt=Green microscope image of chromosomes|<small>''Chromosome classification.''</small><br />Cytogenetics
+AphelionApplication17.jpg|alt=Yellow image of sparsed grains|<small>''Seed Analysis.''</small><br />Metrology
+</gallery>
+
+=== Earth science ===
+In the field of geology, scientists based their research work on Aphelion to perform a statistical analysis to determine the relationship between the size and shape of rock debris present in [[moraine]]s, and the value of the maximal slope that will not cause [[rockfall]]s.<ref>{{cite journal
+ | first1                  = Thomas
+ | last1                   = Lebourg
+ | first2                 = Joëlle
+ | last2                  = Riss
+ | first3                 = E.
+ | last3                  = Pirard
+ | display-authors        = 1
+ | title                  = Influence of morphological characteristics of heterogeneous till formations on the mechanical behaviour by using image and statistical analysis
+ | journal                = Engineering Geology
+ | volume                  = 73
+ | issue                   = 1–2
+ | pages                  = 37–50
+ | date                   = 2004
+ | access-date            = 5 November 2015
+ | doi                    = 10.1016/j.enggeo.2003.11.004
+ | hdl = 2268/450
+ | url                    = https://www.researchgate.net/publication/228416061
+| hdl-access= free
+ }}</ref><ref>{{cite journal
+ | first1                  = Thomas
+ | last1                   = Lebourg
+ | first2                 = Joëlle
+ | last2                  = Riss
+ | first3                 = Richard
+ | last3                  = Fabre
+ | first4                 = Bernard
+ | last4                  = Clément
+ | display-authors        = 1
+ | title                  = Morphological Characteristics of Till Formations in Relation with Mechanical Parameters
+ | journal                = Mathematical Geology
+ | date                   = October 2003
+ | volume                 = 35
+ | issue                  = 7
+ | pages                  = 835–852
+ | doi=10.1023/b:matg.0000007782.78685.a3
+| s2cid = 123026264
+ }}</ref> Morphological parameters computed by Aphelion are easier to compute and less expensive to generate than the usual ones.
+Images, coming from [[Macro photography|macro photographies]] of [[metamorphic rock]]s helped to study the distribution of [[garnet]] crystals in the [[Alps]].<ref>{{cite journal
+ | first1                  = K.
+ | last1                   = Gauchat
+ | first2                 = Baumgartner
+ | last2                  = L. P.
+ | display-authors        = 1
+ | title                  = Cristal Size Distribution (CSD) of garnets as function of metallographic grade and composition in black marls of the Nufenen zone
+ | journal                = Geophysical Research Abstracts
+ | volume                 = 8
+ | date                   = 2006
+ | url                    = http://meetings.copernicus.org/www.cosis.net/abstracts/EGU06/08269/EGU06-J-08269.pdf
+}}{{quote|The 2D garnet distributions and garnet shapes were determined using the Aphelion image analysis program}}</ref>
+
+In [[geothermal energy|geothermal engineering]], Aphelion was used in project for the [[Soultz-sous-Forêts]] site in [[Alsace]], France.  It was used to study the distribution of quartz grains in a drill (granulometry).<ref>{{cite conference
+ | language               = fr
+ | first1                  = Joëlle
+ | last1                   = Riss
+ | first2                 = Sylvie
+ | last2                  = Gentier
+ | display-authors        = 1
+ | title                  = Taille et Forme des cristaux de quartz dans une géode du forage EPS1 de Soultz-sous-Forêts
+ | trans-title            = Size and shape of quartz grains in a geode providing from drill EPS1 of Soultz-sous-Forêts
+ | conference             = {{ordinal|25}} conference of the French Stereology Society
+ | date                   = 6 February 2003
+}}</ref> Crack networks have also been studies using thermal, hydraulic, and mechanical techniques.<ref>{{cite conference
+ | first1                  = Hosni
+ | last1                   = A.
+ | first2                 = Sylvie
+ | last2                  = Gentier
+ | first3                 = A.
+ | last3                  = Genter
+ | first4                 = Joëlle
+ | last4                  = Riss
+ | first5                 = D.
+ | last5                  = Billaux
+ | first6                 = F.
+ | last6                  = Dedecker
+ | display-authors        = 1
+ | title                  = Coupled THM modelling of the stimulated permeable fractures in the near well at the Soultz-sous-Forêts site (France)
+ | journal = Elsevier Geo-Engineering Book Series
+ | conference             = Geoproc 2003, International Conference on Coupled T-H-M-C Processes in Geosystems
+ | location               = Stockholm
+ | date                   = 13–15 October 2003
+ | volume                 = 2
+ | pages                  = 665–670
+ | doi                    = 10.1016/S1571-9960(04)80116-2
+ | issn                   = 1571-9960
+}}</ref>
+
+=== Theory ===
+Image Processing and Analysis is a scientific [[Discipline (academia)|discipline]] as well as statistics, and set theory are. Research people spend time to find new algorithms, new functions ([[Adaptive histogram equalization|adaptive contrast]], new color space definition,&nbsp;etc.), or even newer techniques such as [[deep learning]]. There is a very tight connection between image processing and classification ([[machine learning]]), which is part of the [[artificial intelligence]] field.
+
+Aphelion can be used to develop new image processing operators that are easily inserted into the graphical user interface. Once the operator is available in the {{abbr|GUI|Graphical user interface}}, it can be tested, associated parameters can be altered, and it can even be called from a macro-command to be tested in an algorithm or a full batch of images.
+
+New operators are added from time to time depending on customer requests, and new techniques that are developed in research labs. For example, works from Hanbury and [[Jean Serra|Serra]] on [[HSL and HSV|color spaces where the hue is represented as an angle]] (Hue Saturation Value, Hue Saturation Lightness, Hue Saturation Brightness or Hue Saturation Intensity) are proposing a new color space, {{abbr|IHSL|Improved Hue Saturation Lightness}} derived from {{abbr|HSL|Hue Saturation Lightness}} (Hue, Saturation, Lightness).<ref>{{cite tech report
+ |format=pdf 
+ |first=Allan 
+ |last=Hanbury 
+ |first2=Jean 
+ |last2=Serra 
+ |author-link2=Jean Serra 
+ |title=A 3D-polar coordinate colour representation suitable for image analysis 
+ |id=PRIP-TR-77 
+ |location=University of Technology, Vienna, Austria 
+ |date=2002 
+ |access-date=5 November 2015 
+ |url=http://www.cmm.mines-paristech.fr/~serra/notes_internes_pdf/NI-230.pdf
+}}{{quote|Software already used by the author which implement cylindrically shaped colour models include: Matlab release 12.1, Aphelion 3.0, Optimas 6.1 and Paint Shop Pro 7.}}</ref> Gervais Gauthier, from {{abbr|ADCIS|Advanced Concepts in Imaging Software}}, gave a talk where he showed the benefit of a [[Vector graphics|vectorial representation]] of objects and chains in image processing.<ref>{{cite conference
+ |language     = fr
+ |first        = Gervais
+ |last         = Gauthier
+ |title        = Une approche alternative en traitement d'image : la représentation par objets
+ |trans-title  = Alternativ approach in field of image analysis: object representation
+ |conference   = Autumn days 1998
+ |page         = 80
+ |date         = 27–29 October 1998
+ |access-date  = 25 November 2015
+ |url          = http://commonforall.adcis.net/pub/G_GAUTHIER_Representation_par_objets.pdf
+}}</ref>
+
+Subjects of work or research as [[program optimization]], [[parallel computing]] with threads, [[distributed computing]] ([[Computer cluster|cluster]]s or [[Grid computing|grids]] of computers and [[video card]]s), [[General-purpose computing on graphics processing units|GPGPU]] or new processor [[instruction set]]s usage, evolve according to the hardware progresses made regularly. The [[FLOPS|computer performances]] ever increase, changing the definition of reachable [[Real-time computing|real-time computations]]. Aphelion performances are sometime used as reference to compare optimizations.<ref>
+{{cite thesis
+ |language    = fr
+ |first       = Jaromír
+ |last        = Brambor
+ |title       = Algorithmes de la morphologie mathématique pour les architectures orientées flux
+ |trans-title = Mathematical morphology algorithms for flow oriented architectures
+ |type        = Ph.D. in mathematical morphology
+ |institution = School of Mines of Paris (Mines ParisTech)
+ |page        = 80
+ |date        = 11 July 2006
+ |access-date = 23 February 2016
+ |url         = http://cmm.ensmp.fr/~brambor/public/docs/Brambor-Doctoral-Thesis/Brambor-Doctoral-Thesis.pdf
+ |archive-url  = https://web.archive.org/web/20070103182230/http://cmm.ensmp.fr/~brambor/public/docs/Brambor-Doctoral-Thesis/Brambor-Doctoral-Thesis.pdf
+ |archive-date = 3 January 2007
+ |url-status     = dead
+}}
+</ref>
+
+== Specifications ==
+[[File:AphelionDev GUI.png|alt=Aphelion Dev graphical user interface version 4.x with details about utility of regions of the interface|thumb|400x400px|Aphelion Dev Graphical User Interface version 4.x: (1) Task Bar, (2) Image Display, (3) Macro editing window/Function window, (4) Charts (a profile is displayed in this example), (5) Image Gallery, (6) Measurement grid.]]
+All products of the Aphelion Imaging Software Suite can be run on [[Personal computer|{{abbr|PC|Personal computer}}]] equipped with Windows ([[Windows Vista|Vista]], [[Windows 7|7]], [[Windows 8|8]], 8.1,<ref name="WhatsNew4_3" /> or [[Windows 10|10]]) 32 or 64 bits.<ref>{{cite web|title = Aphelion Dev overview|url = http://www.adcis.net/en/Products/AphelionDev/Overview.html|website= adcis.net|access-date = 18 November 2015}}</ref>
+An [[online help]]<ref>{{cite web|title = Help documents|url = http://www.adcis.net/en/Download/HelpFiles.html|website = adcis.net|access-date = 5 November 2015}}</ref> and video [[tutorial]]s are available to the user.<ref>{{cite web|title = ADCIS (Advanced Concepts in Imaging Software) products videos|url = http://www.adcis.net/en/Download/Videos/Products.html|website = adcis.net|access-date = 5 November 2015}}</ref>
+
+== Software extensions ==
+Below is a list of Aphelion optional extensions:<ref name="BrochureDev" /><ref>{{cite web|title = Software extensions brochures|url = http://www.adcis.net/en/Download/Brochures.html|website = adcis.net|access-date = 18 November 2015}}</ref>
+* 3D Image Processing and 3D Image Display: A set of extensions to display and process 3D images. The 3D display extension is based on the [[VTK|{{abbr|VTK|Visualization ToolKit}}]] software product.<ref name="list">{{cite report|url=http://www7.inra.fr/vh/pflcepia/uploads/docs/softsImage.pdf|title=Solutions logicielles pour le traitement d'images|last1=Legland|first1=David|date=March 2009|language=fr|access-date=25 February 2016|trans-title=Softwares for addressing image processing|journal=[[Institut national de la recherche agronomique|INRA (Institut National de la Recherche Agronomique)]]}}</ref>
+* 3D Skeletonization: Extension to compute the 3D [[Topological skeleton|skeleton]].
+* Image Registration: [[Image registration]] extension to register images coming from different acquisition devices.
+* Classification Tools: Classification extension including a « Fuzzy Logic » ([[fuzzy logic]] classification),« Neural Networks » (classification based on [[artificial neural network]]s, and « Random Forest » (classification based on [[random forest]]s, derived from the [[R (programming language)|R]] software product)
+* Kriging: Specific extension to remove [[image noise]] using [[geostatistics]] techniques.
+* Camera interface drivers and microscope interface software
+* Virtual Image Capture and Virtual Image Stitcher: Two software products to capture mult-field images and stitch them into one single and very large image in the fields of optical and electron microscopy ([[image stitching]]).
+* Stereology Analyzer: Software to analyze a very large image using [[stereology]]. This extension is mainly used in the field of biology on images acquired by a scan microscope.
+* VisionTutor: Online image processing course including all the theory and application macro commands that are compatible with Aphelion.
+
+The Aphelion user can add his/her own macro-commands in the user interface<ref name="BrochureDev" /> that have been automatically recorded to process a batch of images. He/she can also add plugins and libraries in the {{abbr|GUI|Graphical User Interface}} that have been [[Computer programming|developed]] outside the Aphelion environment.<ref>{{cite web|title = Aphelion user guide (Loading a macro as an Aphelion plugin)|url = http://commonforall.adcis.net/pub/Aphelion%20Imaging%20Suite-User%20Guide.pdf|website = adcis.net|access-date = 5 November 2015}}</ref>
+
+== Software versions ==
+<div class="noprint">{{Hidden begin|title=Below is a table providing release dates of the Aphelion software product:|border = 1px solid #AAA|titlestyle=font-weight:normal|contentstyle=text-align:center;|ta2=center}}
+{| class="wikitable" align="center" style="margin-left: auto; margin-right: auto;"
+|+ Aphelion software release dates
+|- style="background-color:#525F79;color:#FFF;"
+| width="50%" | Software release<ref>{{cite web|title = Aphelion version and changes history|url = http://www.adcis.net/en/Products/VersionHistory.html|website = adcis.net|access-date = 5 November 2015}}</ref>
+| width="50%" | Release date
+|-
+| Aphelion 1.0 || 1995
+|- style="background-color:#B7BCC6;"
+| colspan="2" |
+|-
+| Aphelion 2.0<br /><small>first official version</small> || 1996
+|-
+| Aphelion 2.1 || 1996–1997
+|-
+| Aphelion 2.2 || 1997
+|-
+| Aphelion 2.3 || 1998–1999
+|- style="background-color:#B7BCC6;"
+| colspan="2" |
+|-
+| Aphelion 3.0 || 1999–2000
+|-
+| Aphelion 3.1 || December 2001
+|-
+| Aphelion 3.2a-f || 2001–2004
+|-
+| Aphelion 3.2g || March 2004
+|-
+| Aphelion 3.2h || November 2004
+|-
+| Aphelion 3.2i || March 2006
+|-
+| Aphelion 3.2j || October 2008 – 2012
+|- style="background-color:#B7BCC6;"
+| colspan="2" |
+|-
+| Aphelion 4.0.0 || July 2009
+|-
+| Aphelion 4.0.5 || December 2009
+|-
+| Aphelion 4.0.6 || May 2010
+|-
+| Aphelion 4.0.7 || August 2010
+|-
+| Aphelion 4.0.8 || October 2010
+|-
+| Aphelion 4.0.9 || February 2011
+|-
+| Aphelion 4.0.10 || April 2011
+|-
+| Aphelion 4.1.0 || October 2011
+|-
+| Aphelion 4.1.1 || April 2012
+|-
+| Aphelion 4.1.2 || November 2012
+|-
+| Aphelion 4.2.0 || February 2013
+|-
+| Aphelion 4.2.1 || January 2014
+|-
+| Aphelion 4.3.0 || October 2014
+|-
+| |Aphelion 4.3.1 || December 2014
+|-
+| Aphelion 4.3.2 || September 2015
+|-
+| Aphelion 4.4.0 || October 2017
+|-
+| Aphelion 4.5.0 || February 2021
+|-
+| Aphelion 4.6.0 || October 2022
+|}{{Hidden end}}
+</div><!--
+Below is a list of release dates of Aphelion:
+* Aphelion 1.0: 1995
+* Aphelion 2.0 (first official version): 1996
+* Aphelion 2.1: 1996–1997
+* Aphelion 2.2: 1997
+* Aphelion 2.3: 1998–1999
+* Aphelion 3.0: 1999–2000
+* Aphelion 3.1: December 2001
+* Aphelion 3.2a-f: 2001–2004
+* Aphelion 3.2g: March 2004
+* Aphelion 3.2h: November 2004
+* Aphelion 3.2i: March 2006
+* Aphelion 3.2j: October 2008–2012
+* Aphelion 4.0.0: July 2009
+* Aphelion 4.0.5: December 2009
+* Aphelion 4.0.6: May 2010
+* Aphelion 4.0.7: August 2010
+* Aphelion 4.0.8: October 2010
+* Aphelion 4.0.9: February 2011
+* Aphelion 4.0.10: April 2011
+* Aphelion 4.1.0: October 2011
+* Aphelion 4.1.1: April 2012
+* Aphelion 4.1.2: November 2012
+* Aphelion 4.2.0: February 2013
+* Aphelion 4.2.1: January 2014
+* Aphelion 4.3.0: October 2014
+* Aphelion 4.3.1: December 2014
+* Aphelion 4.3.2: September 2015
+* Aphelion 4.4.0: October 2017
+* Aphelion 4.5.0: February 2021
+* Aphelion 4.6.0: October 2022
+-->
+[[File:Aphelion32 GUI.png|alt=GUI of a previous version of Aphelion (version 3.2j) with multiple detached windows per image (Multiple document interface).|thumb|left|400x400px|GUI of a previous version of Aphelion (version 3.2j).]]
+{{clear}}
+
+== See also ==
+{{Portal|Computer programming}}
+{{columns-list|colwidth=30em|
+* [[Python Imaging Library|{{abbr|PIL|Python Imaging Library}}]]
+* [[VTK|{{abbr|VTK|Visualization ToolKit}}]]
+* [[CVIPtools]]
+* [[LabVIEW]]
+* [[R (programming language)|R]]
+* [[SciPy]]
+}}
+
+== Notes and references ==
+{{Reflist|2}}
+
+== External links ==
+* {{Official website|http://www.adcis.net/en/Products}}
+* {{URL|http://www.adcis.net/en/Products/VersionHistory.html|Version history}}
+{{Image Processing Software}}
+
+[[Category:1996 software]]
+[[Category:3D graphics software]]
+[[Category:3D imaging]]
+[[Category:C++ libraries]]
+[[Category:C++ software]]
+[[Category:C Sharp software]]
+[[Category:Commercial computer vision systems]]
+[[Category:Computer vision software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Data visualization software]]
+[[Category:Graphics software]]
+[[Category:Image processing software]]
+[[Category:Image segmentation]]
+[[Category:Medical imaging]]
+[[Category:Medical software]]
+[[Category:Microscopy]]
+[[Category:Virtual reality]]
+[[Category:Windows graphics-related software]]
+[[Category:Software that uses VTK]]

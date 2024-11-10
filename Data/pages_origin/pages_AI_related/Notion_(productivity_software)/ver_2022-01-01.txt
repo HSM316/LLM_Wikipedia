@@ -1,0 +1,156 @@
+{{More citations needed|date=December 2021}}{{Copy edit|date=November 2021}} 
+
+{{short description|collaborative knowledge management platform}}
+'''Notion''' is a [[notetaking software]] and [[project management software]] that is used for [[note-taking]], [[task management]], [[project management]], [[knowledge management]], and [[personal knowledge management]]. The app uses [[Database|databases]] and [[markdown]] pages for use in personal and [[collaboration]] work.
+
+{{Infobox software
+| name = Notion
+| logo = [[File:Notion_app_logo.png|100px|Image: 100 pixels]]
+| developer = Notion Labs Inc.
+| released = 2016
+| latest release version = 2.13.28
+| operating system = {{unbulleted list | [[Microsoft Windows]] |  [[macOS]] | [[Android (operating system)|Android]] | [[iOS]] | [[World Wide Web|Web]]}}
+| platform = Web, macOS, Windows, iOS and Android
+| genre = [[Note-taking]], [[Wiki]]
+| website = https://www.notion.so/
+}}
+
+==History==
+Notion Labs Inc, a [[Startup company|startup]] based in [[San Francisco]], was founded in 2013 by Ivan Zhao.<ref>{{Cite web|last=F|first=STATION|title=STATION F - World's biggest startup campus|url=https://stationf.co/|access-date=2021-05-07|website=stationf.co|language=English}}</ref> The founders declined to meet [[venture capital]]ists or discuss acquiring a higher [[Valuation (finance)|valuation]].<ref>{{Cite web|url=https://www.businessinsider.com/notion-has-vc-knocking-on-its-doors-to-invest-2019-2|title=This enterprise software startup has VCs literally knocking on its doors to invest, but for now, it's not interested|last=Bastone|first=Nick|website=Business Insider|access-date=2020-02-05}}</ref>
+
+The app launched in March 2016 for [[web browser]]s and [[OS X]], May 2017 for [[Microsoft Windows]], and June 2017 for [[iOS]].{{Citation needed|date=December 2021}}
+
+In March 2018, Notion 2.0 was released. It was positively received by [[Product Hunt]] and rated #1 Product of the Month,<ref>{{Cite web|url=https://www.producthunt.com/posts/notion-2-0|title=Notion 2.0 - The all-in-one workspace - notes, tasks, wikis, & databases|website=Product Hunt|access-date=2020-02-05}}</ref> it was also featured in an article in [[The Wall Street Journal|WSJ]].<ref>{{cite web|date=21 March 2018|title=The Only App You Need for Work-Life Productivity|url=https://www.wsj.com/articles/the-only-app-you-need-for-work-life-productivity-1521640800|work=[[The Wall Street Journal]]}}</ref> The company had fewer than 10 employees at that point.<ref>{{Cite web|url=https://usefyi.com/notion-history/|title=How Ivan Zhao's Notion Is Going After Atlassian and Why It Just Might Win|last=Shah|first=Hiten|date=2019-05-28|website=FYI|access-date=2020-02-05}}</ref>
+
+In June 2018, an official [[Android (operating system)|Android]] app was released.<ref>{{cite web |url = https://www.theverge.com/2018/6/7/17434754/notion-android-app-notes-productivity-review |title = Notion brings its powerful note-taking app to Android |date = 7 June 2018 |work = [[The Verge]]}}</ref>
+
+In September 2019, the company announced it had reached 1 million users.<ref name=":1">{{Cite web|url=https://www.theverge.com/2019/9/17/20868716/notion-free-version-students-teachers-note-taking-education-school|title=Notion's powerful note-taking app is now free for students and teachers|last=Newton|first=Casey|date=2019-09-17|website=The Verge|language=en|access-date=2020-02-05}}</ref> In April 2020 it became a [[Unicorn (finance)|unicorn]] when it was valued at $2 billion and had 4 million users.<ref>{{cite web |url = https://www.forbes.com/sites/davidjeans/2020/04/01/buzzy-work-app-notion-hits-2-billion-valuation/#1c2a7f4e78ec
+ |title = Buzzy Work App Notion Hits $2 Billion Valuation In New Raise
+ |date = 1 April 2020 |work = [[Forbes]]}}</ref>
+
+Notion received $50 million in investment from [[Index Ventures]] and other investors in January 2020.<ref>{{Cite news|last=Griffith|first=Erin|date=2020-04-01|title=Notion, Maker of Collaboration Software, Raises $50 Million|language=en-US|work=The New York Times|url=https://www.nytimes.com/2020/04/01/technology/notion-startup-fund-raising.html|access-date=2021-09-08|issn=0362-4331}}</ref>
+
+The Korean version of Notion was officially released in 2020. It is the first overseas version of Notion, has the second highest number of users after the United States, and is one of Notion's fastest growing markets.<ref name=":0">{{Cite web|date=2020-08-11|title=레고블록처럼 사용하는 생산성 앱 '노션' 한국어 버전 정식 출시|trans-title=Full release of productivity app 'Notion' in Korean|url=https://www.techm.kr/news/articleView.html?idxno=74234|url-status=live|access-date=2021-05-07|website=테크M|language=ko}}</ref><ref name=":0" /> Korean startups that are known to use Notion include Toss, StyleShare, Sandbox, Fast Five, Class 101 Zigzag, Karrot and Ridibooks.<ref name=":2">{{Cite web|last=입력 2020.06.18 06:00|date=2020-06-18|title="코딩 못해도 누구나 '일잘러'될 수 있게" 노션 CEO 인터뷰|trans-title=Interview with CEO of Nothan|url=https://news.joins.com/article/23804306|url-status=live|access-date=2021-05-07|website=중앙일보|language=ko}}</ref>
+
+On September 7, 2021, Notion acquired a Hyderabad-based startup called Automate.io.<ref>{{cite web |title=Notion acquires India’s Automate.io in push to accelerate product expansion |url=https://techcrunch.com/2021/09/08/notion-acquires-indias-automate-io-in-push-to-accelerate-product-expansion/ |website=Techcrunch |access-date=1 October 2021}}</ref>
+
+== Software ==
+'''Notion''' is a [[Collaborative software|collaboration]] platform with modified [[markdown]] support that integrates [[kanban]] boards, tasks, [[Wiki software|wikis]], and databases.<ref>{{Cite web|title=Notion Blog|url=https://www.notion.so/blog/taking-building-blocks-beyond-the-workspace-welcome-automate-io|url-status=live|website=Notion.so}}</ref> The company claims it is an all-in-one workspace for [[Notetaking software|note-taking]], [[Knowledge management software|knowledge]] and [[Spreadsheet|data]] management, and [[Project management software|project and task management]].<ref>{{cite web|url=https://androidcommunity.com/notion-goes-where-evernote-dares-not-what-you-need-to-know-20180608/|title=Notion goes where Evernote dares not: what you need to know|date=8 June 2018|work=[[Android Community]]}}</ref> It is described as a file management tool offering a unified workspace, allowing users to comment on ongoing projects, participate in discussions, and receive feedback. In addition to [[Cross-platform software|cross-platform]] apps, it can be accessed via most [[web browser]]s.{{Citation needed|date=December 2021}}
+
+The software includes a tool for "clipping" content from webpages.<ref>{{Cite web|date=2021-01-16|title=Notion Web Clipper: What You Need to Know in 2021|url=https://www.notionwizard.com/does-notion-have-a-web-clipper/|access-date=2021-04-12|website=Notion Wizard|language=en-US}}</ref> Notion helps users schedule tasks, manage files, save documents, set reminders, keep agendas, organize their work. Notion allows writing & pasting equations in the form of blocks or inline, as it supports [[LaTeX]].  Users can also [[wikt:embed|embed]] online content in their Notion pages using Embed.ly. In this way notes can also be efficiently typed down alongside an embedded video playing in [[Picture-in-picture|PiP]] mode.{{Citation needed|date=December 2021}}
+
+=== Pricing ===
+Notion has a four-tiered [[Subscription business model|subscription]] model: free, personal, team, and enterprise. It offers an account credit system where users can earn credit via [[Referral marketing|referrals]]. Users are not charged if they have a remaining balance in their accounts.{{citation needed|date=March 2020}} An academic email address allows a free personal plan. As of May 2020, the company upgraded the Personal Plan to allow unlimited blocks, a change from the previous cap in the Personal Plan.<ref>{{Cite web|last=Newton|first=Casey|date=2020-05-19|title=Notion just removed the biggest limit on its free plan|url=https://www.theverge.com/2020/5/19/21261811/note-taking-app-notion-free-plan-personal-use-unlimited-blocks|access-date=2021-11-07|website=The Verge|language=en}}</ref> This allows all new users the benefit of having unlimited storage.<ref>{{cite web|last=|first=|date=19 June 2019|title=Notion Plans and Pricing|url=https://www.notion.so/pricing|url-status=live|archive-url=|archive-date=|access-date=|website=}}</ref>
+
+=== Outage History ===
+Information on the status of Notion has been reported to the public since 1 December 2011 <ref>{{Cite web|title=Notion Status|url=https://status.notion.so/|access-date=2021-11-07|website=status.notion.so}}</ref> with the most recent significant outage occurring 7 September 2021.{{Citation needed|date=December 2021}}
+{| class="wikitable mw-collapsible"
+|+
+!Date
+!Severity of Outage
+!Duration of Outage
+|-
+|7 September 2021
+|Major outage
+|29 mins
+|-
+|7 September 2021
+|Partial outage
+|11 mins
+|-
+|7 September 2021
+|Partial outage
+|8 mins
+|-
+|12 August 2021
+|Partial outage
+|24 mins
+|-
+|15 May 2021
+|Partial outage
+|21 hours 21 mins
+|-
+|14 May 2021
+|Partial outage
+|6 hours 8 mins
+|-
+|11 May 2021
+|Partial outage
+|6 hours 42 mins
+|-
+|13 April 2021
+|Partial outage
+|4 hours 56 mins
+|-
+|12 March 2021
+|Major outage
+|9 mins
+|-
+|3 March 2021
+|Major outage
+|20 mins
+|-
+|15 February 2021
+|Partial outage
+|8 hours 40 mins
+|-
+|12 February 2021
+|Major outage
+|2 hours 32 mins
+|-
+|21 January 2021
+|Partial outage
+|3 hours 33 mins
+|-
+|4 January 2021
+|Partial outage
+|2 hours 56 mins
+|-
+|11 July 2020
+|Major outage
+|19 mins
+|-
+|25 May 2020
+|Partial outage
+|12 hours 8 mins
+|-
+|24 May 2020
+|Partial outage
+|6 hours 37 mins
+|-
+|29 January 2020
+|Partial outage
+|2 hours 37 mins
+|-
+|21 January 2020
+|Partial outage
+|12 hours 13 mins
+|-
+|20 January 2020
+|Partial outage
+|1 hour 58 mins
+|}
+
+== See also ==
+* [[Wiki software]]
+* [[Collaborative software]]
+* [[Collaborative real-time editor]]
+* [[Document collaboration]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|https://www.notion.so/}}
+
+{{Notetaking software}}
+
+[[Category:Note-taking software]]
+[[Category:Project management software]]
+[[Category:Task management software]]
+[[Category:Android (operating system) software]]
+[[Category:IOS software]]
+[[Category:Collaborative software]]
+[[Category:Wiki software]]
+[[Category:Software companies based in California]]
+[[Category:Business software]]

@@ -1,0 +1,41 @@
+{{Infobox video game
+|title = Grandmaster Chess
+|image = File:Grandmaster_Chess_CD_Cover.jpg
+|caption = CD Cover art
+|developer = [[IntraCorp]]
+|publisher = [[Capstone Software]]
+|released = 1992<br>1993 (CD)
+|genre = [[Chess]]
+|modes = [[Single-player]], [[Multiplayer video game|Multiplayer]]
+|platforms = [[DOS]], [[Macintosh]]
+}}
+'''''Grandmaster Chess''''' is a 1992 video game to play chess for [[PC DOS]] platform develop by [[IntraCorp]] and its subsidiary [[Capstone Software|Capstone]] that was focused on [[neural network technology]] and an [[artificial intelligence (video games)|artificial intelligence]] (AI) able to learn from mistakes.<ref name="underdog">[http://www.hotud.org/component/content/article/37-strategy/22329 Grandmaster Chess] from [[Home of the Underdogs]]. Retrieved on September 22, 2012.</ref>
+
+Capable of using [[VGA]] and [[SVGA]] modes, features multiple skill levels, different sets of pieces, boards and backgrounds, 2D/3D view, pull-down menus, move list with [[VCR]] style control, able to analysis moves and games and rate the user strength. Originally it was distributed in [[floppy disc]]s, but in 1993 in appeared in CD-ROM. This release only relevant addition was the ''Terminator 2: Judgement Day: Chess Wars'' package, an animated chess set like ''[[Battle Chess]]'' video game representing the [[Terminator 2: Judgment Day]] movie.<ref name="moby">[http://www.mobygames.com/game/grandmaster-chess-cd-rom-edition Grandmaster Chess (CD-ROM Edition) for DOS (1993)] from [[MobyGames]]. Retrieved on September 22, 2012.</ref>
+
+==Reception==
+''[[Computer Gaming World]]'' stated that ''Grandmaster Chess'' "falls short of the current competition in terms of overall options". The magazine criticized the game's weak strategic analysis reporting, the absence of an advertised teaching mode, and weak [[chess opening book (computers)|opening book]].<ref name="carter199211">{{cite news | url=http://www.cgwmuseum.org/galleries/index.php?year=1992&pub=2&id=100 | title=Capstone's Grandmaster Chess | work=Computer Gaming World | date=November 1992 | accessdate=4 July 2014 | author=Carter, Tim | pages=88}}</ref>
+
+==See also==
+* [[Computer chess]]
+* [[Vintage software]]
+* [[Artificial Intelligence#Learning|Learning]] section of ''Artificial Intelligence'' article
+* [[Neural network software#Simulators for teaching neural network theory|Simulators for teaching neural network theory]] section of ''Neural network software'' article
+
+==References==
+{{reflist}}
+
+==External links==
+*{{moby game|id=/grandmaster-chess}}
+*{{moby game|id=/grandmaster-chess-cd-rom-edition|name=Grandmaster Chess - CD Edition}}
+* Download rom [http://www.top-5000.nl/cp.htm Free Chess Downloads: Oldies collection].
+
+[[Category:Artificial intelligence applications]]
+[[Category:Chess software]]
+[[Category:DOS games]]
+[[Category:Mac OS games]]
+[[Category:1992 video games]]
+[[Category:Video games developed in the United States]]
+
+
+{{Videogame-stub}}

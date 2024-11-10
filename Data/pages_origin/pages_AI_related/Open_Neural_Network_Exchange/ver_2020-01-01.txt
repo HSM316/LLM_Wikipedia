@@ -1,0 +1,39 @@
+[[File:ONNX logo main.png|200px|right]]
+{{Infobox software}}
+The '''Open Neural Network Exchange''' ('''ONNX''') is an [[Open-source software|open-source]] [[artificial intelligence]] ecosystem.<ref name=":02">{{Cite news|url=https://www.engadget.com/2017/10/11/microsoft-facebooks-ai-onxx-partners/|title=Microsoft and Facebook's open AI ecosystem gains more support|work=Engadget|access-date=2017-10-11|language=en-US}}</ref> ONNX is available on [[GitHub]].
+
+== History ==
+In September 2017 [[Facebook]] and [[Microsoft]] introduced a system for switching between [[machine learning]] frameworks such as [[Torch (machine learning)|PyTorch]] and [[Caffe (software)|Caffe2]]. Later, [[IBM]], [[Huawei]], [[Intel]], [[Advanced Micro Devices|AMD]], [[Arm Holdings|ARM]] and [[Qualcomm]] announced support for the initiative.<ref name=":02" />
+
+In October 2017, Microsoft announced that it would add its Cognitive Toolkit and Project Brainwave platform to the initiative.<ref name=":02" />
+
+In November 2019 ONNX was accepted as graduate project in Linux Foundation AI.
+== Intent ==
+The initiative targets:
+
+=== Framework interoperability ===
+Allow developers to more easily move between frameworks, some of which may be more desirable for specific phases of the development process, such as fast training, network architecture flexibility or inferencing on mobile devices.<ref name=":0">{{Cite news|url=https://www.microsoft.com/en-us/cognitive-toolkit/blog/2017/09/microsoft-facebook-create-open-ecosystem-ai-model-interoperability/|title=Microsoft and Facebook create open ecosystem for AI model interoperability - Microsoft Cognitive Toolkit|date=2017-09-07|work=Microsoft Cognitive Toolkit|access-date=2017-10-11|language=en-US}}</ref>
+
+=== Shared optimization ===
+Allow hardware vendors and others to improve the performance of [[Artificial neural network|artificial neural networks]] of multiple frameworks at once by targeting the ONNX representation.<ref name=":0" />
+
+== Contents ==
+ONNX provides definitions of an extensible computation graph model, built-in operators and standard [[Data type|data types]], focused on inferencing (evaluation).<ref name=":0" />
+
+Each computation [[dataflow]] graph is a list of nodes that form an [[Forest (graph theory)|acyclic graph]]. Nodes have inputs and outputs. Each node is a call to an operator. Metadata documents the graph. Built-in operators are to be available on each ONNX-supporting framework.<ref name=":0" />
+
+== Other partnerships ==
+Microsoft and Facebook are part of the [[Partnership on AI]] along with [[Apple Inc.|Apple]], [[Amazon (company)|Amazon]], [[Google]] and [[IBM]] that works to increase public awareness and boost research.<ref name=":02" />
+
+== References ==
+{{Reflist}}
+
+== See also ==
+* [[Neural Network Exchange Format]]
+* [[Comparison of deep learning software]]
+
+== External links ==
+* {{Cite news|url=https://www.microsoft.com/en-us/cognitive-toolkit/blog/2017/09/microsoft-facebook-create-open-ecosystem-ai-model-interoperability/|title=Microsoft and Facebook create open ecosystem for AI model interoperability - Microsoft Cognitive Toolkit|last=Boyd|first=Eric|date=2017-09-07|work=Microsoft Cognitive Toolkit|access-date=2017-10-11|language=en-US}}
+* {{Citation|title=onnx: Open Neural Network Exchange|date=2017-10-11|url=https://github.com/onnx/onnx|publisher=Open Neural Network Exchange|accessdate=2017-10-11}}
+
+[[Category:Neural network data exchange formats]]

@@ -1,0 +1,119 @@
+{{short description|Data analysis techniques for fraud detection}}
+{{Essay|date=April 2010}}
+
+== Introduction ==
+Fraud that involves [[cell phone]]s, [[insurance claim]]s, [[tax return]] claims, [[Credit card fraud|credit card transactions]], [[government procurement]] etc. represent significant problems for governments and businesses and specialized analysis techniques for discovering fraud using them are required. These methods exist in the areas of [[Knowledge Discovery in Databases]] (KDD), [[Data Mining]], [[Machine Learning]] and [[Statistics]]. They offer applicable and successful solutions in different areas of electronic fraud crimes.<ref>{{Cite web|title=The In-depth 2020 Guide to E-commerce Fraud Detection|url=https://www.datasciencecentral.com/profiles/blogs/the-in-depth-2020-guide-to-e-commerce-fraud-detection|last1=Posted by Roman Chuprina on April 14|first1=2020 at 1:30am|last2=Blog|first2=View|website=www.datasciencecentral.com|language=en|access-date=2020-05-24}}</ref>
+
+In general, the primary reason to use data analytics techniques is to tackle fraud since many internal control systems have serious weaknesses. For example, the currently prevailing approach employed by many law enforcement agencies to detect companies involved in potential cases of fraud consists in receiving circumstantial evidence or complaints from whistleblowers.<ref>{{Cite journal|last1=Velasco|first1=Rafael B.|last2=Carpanese|first2=Igor|last3=Interian|first3=Ruben|last4=Paulo Neto|first4=Octávio C. G.|last5=Ribeiro|first5=Celso C.|date=2020-05-28|title=A decision support system for fraud detection in public procurement|journal=International Transactions in Operational Research|volume=28|language=en|pages=27–47|doi=10.1111/itor.12811|issn=0969-6016|doi-access=free}}</ref> As a result, a large number of fraud cases remain undetected and unprosecuted. In order to effectively test, detect, validate, correct error and monitor control systems against fraudulent activities, businesses entities and organizations rely on specialized data analytics techniques such as data mining, data matching, sounds like function, Regression analysis, Clustering analysis and Gap.<ref name="English302gmu" /> Techniques used for fraud detection fall into two primary classes: statistical techniques and [[artificial intelligence]].<ref name="palshikar_2002" /> 
+
+== Statistical techniques ==
+Examples of statistical data analysis techniques are:
+
+*[[Data preprocessing]] techniques for detection, validation, [[error correction]], and filling up of missing or incorrect data.
+* Calculation of various statistical parameters such as [[average]]s, [[quantile]]s, performance metrics, probability distributions, and so on. For example, the averages may include average length of call, average number of calls per month and average delays in bill payment.
+* Models and probability distributions of various business activities either in terms of various parameters or probability distributions.
+* Computing [[user profile]]s.
+* Time-series analysis of time-dependent data.<ref name=":0" />
+*[[Cluster analysis|Clustering]] and [[statistical classification|classification]] to find patterns and [[data association|associations]] among groups of data.<ref name=":0" />
+*[[Data matching]] Data matching is used to compare two sets of collected data. The process can be performed based on algorithms or programmed loops. Trying to match sets of data against each other or comparing complex data types. Data matching is used to remove duplicate records and identify links between two data sets for marketing, security or other uses.<ref name="English302gmu" />
+* Sounds like Function is used to find values that sound similar. The Phonetic similarity is one way to locate possible duplicate values, or inconsistent spelling in manually entered data. The ‘sounds like’ function converts the comparison strings to four-character American Soundex codes, which are based on the first letter, and the first three consonants after the first letter, in each string.<ref name="English302gmu" />
+*[[Regression analysis]] allows you to examine the relationship between two or more variables of interest. Regression analysis estimates relationships between independent variables and a dependent variable. This method can be used to help understand and identify relationships among variables and predict actual results.<ref name="English302gmu" />
+*[[Gap analysis]] is used to determine whether business requirements are being met, if not, what are the steps that should be taken to meet successfully.
+*[[Pattern matching|Matching algorithm]]s to [[Anomaly detection|detect anomalies]] in the behavior of transactions or users as compared to previously known models and profiles. Techniques are also needed to eliminate [[false alarm]]s, estimate risks, and predict future of current transactions or users.
+
+Some [[forensic accountant]]s specialize in [[Computational forensics|forensic analytics]] which is the procurement and analysis of [[Digital data|electronic data]] to reconstruct, detect, or otherwise support a claim of financial fraud. The main steps in forensic analytics are [[data collection]], [[data preparation]], data analysis, and reporting. For example, forensic analytics may be used to review an employee's [[purchasing card]] activity to assess whether any of the purchases were diverted or divertible for personal use.
+
+== Artificial intelligence techniques ==
+Fraud detection is a knowledge-intensive activity. The main AI techniques used for fraud detection include:
+* [[Data mining]] to classify, cluster, and segment the data and automatically find associations and rules in the data that may signify interesting patterns, including those related to fraud.
+* [[Expert system]]s to encode expertise for detecting fraud in the form of rules.
+* [[Pattern recognition]] to detect approximate classes, clusters, or patterns of suspicious behavior either automatically (unsupervised) or to match given inputs.
+* Machine learning techniques to automatically identify characteristics of fraud.
+*[[Neural nets]] to independently generate classification, clustering, generalization, and forecasting that can then be compared against conclusions raised in internal audits or formal financial documents such as [[Form 10-Q|10-Q]].<ref name=":0" />
+
+Other techniques such as [[link analysis]], [[Bayesian networks]], [[decision theory]], and [[Pattern matching|sequence matching]] are also used for fraud detection.<ref name="palshikar_2002" /> A new and novel technique called System properties approach has also been employed where ever rank data is available. <ref>{{cite journal| last = Vani| first = G. K.| title = How to detect data collection fraud using System properties approach| journal = Multilogic in Science| issn=2277-7601| issue= SPECIAL ISSUE ICAAASTSD-2018|volume=VII|date = February 2018| url = http://www.ycjournal.net/Multilogicinscience/ResearchPapers.aspx|access-date=February 2, 2019}}</ref>
+
+Statistical analysis of research data is the most comprehensive method for determining if data fraud exists. Data fraud as defined by the Office of Research Integrity (ORI) includes fabrication, falsification and plagiarism. 
+
+== Machine learning and data mining ==
+{{Main|Machine learning|Data mining}}
+
+Early data analysis techniques were oriented toward extracting quantitative and statistical data characteristics. These techniques facilitate useful data interpretations and can help to get better insights into the processes behind the data. Although the traditional data analysis techniques can indirectly lead us to knowledge, it is still created by human analysts.<ref name="michalski_1998" />
+
+To go beyond, a data analysis system has to be equipped with a substantial amount of background knowledge, and be able to perform reasoning tasks involving that knowledge and the data provided.<ref name="michalski_1998" /> In effort to meet this goal, researchers have turned to ideas from the machine learning field. This is a natural source of ideas, since the machine learning task can be described as turning background knowledge and examples (input) [[knowledge extraction|into knowledge]] (output).
+
+If data mining results in discovering meaningful patterns, data turns into information. Information or patterns that are novel, valid and potentially useful are not merely information, but knowledge. One speaks of discovering knowledge, before hidden in the huge amount of data, but now revealed.
+
+The machine learning and artificial intelligence solutions may be classified into two categories: 'supervised' and 'unsupervised' learning. These methods seek for accounts, customers, suppliers, etc. that behave 'unusually' in order to output suspicion scores, rules or visual anomalies, depending on the method.<ref name="bolton_2002" />
+
+Whether supervised or unsupervised methods are used, note that the output gives us only an indication of fraud likelihood. No stand alone statistical analysis can assure that a particular object is a fraudulent one, but they can identify them with very high degrees of accuracy. As a result, effective collaboration between machine learning model and human analysts is vital to the success of fraud detection applications.<ref name="tax_2021" />
+
+=== Supervised learning ===
+{{Main|Supervised learning}}
+
+In supervised learning, a random sub-sample of all records is taken and manually classified as either 'fraudulent' or 'non-fraudulent' (task can be decomposed on more classes to meet algorithm requirements). Relatively rare events such as fraud may need to be over sampled to get a big enough sample size.<ref name="dal2014learned" /> These manually classified records are then used to train a supervised machine learning algorithm. After building a model using this training data, the algorithm should be able to classify new records as either fraudulent or non-fraudulent.
+
+Supervised neural networks, fuzzy neural nets, and combinations of neural nets and rules, have been extensively explored and used for detecting fraud in mobile phone networks and financial statement fraud.<ref name="green_1997" /><ref name="estevez_2006" />
+
+Bayesian learning neural network is implemented for credit card fraud detection, telecommunications fraud, auto claim fraud detection, and medical insurance fraud.<ref>{{cite web|last1=Bhowmik|first1=Rekha Bhowmik|title=35 Data Mining Techniques in Fraud Detection|url=http://ojs.jdfsl.org/index.php/jdfsl/article/viewFile/180/108|website=Journal of Digital Forensics, Security and Law|publisher=University of Texas at Dallas}}</ref>
+
+Hybrid knowledge/statistical-based systems, where expert knowledge is integrated with statistical power, use a series of data mining techniques for the purpose of detecting cellular clone fraud. Specifically, a rule-learning program to uncover indicators of fraudulent behaviour from a large database of customer transactions is implemented.<ref name="fawcett_1997" />
+
+Cahill et al. (2000) design a fraud signature, based on data of fraudulent calls, to detect telecommunications fraud. For scoring a call for fraud its probability under the account signature is compared to its probability under a fraud signature. The fraud signature is updated sequentially, enabling event-driven fraud detection.
+
+[[Link analysis]] comprehends a different approach. It relates known fraudsters to other individuals, using record linkage and social network methods.<ref name="phua_2005" /><ref name="cortes_2002" />
+
+This type of detection is only able to detect frauds similar to those which have occurred previously and been classified by a human. To detect a novel type of fraud may require the use of an unsupervised machine learning algorithm.
+
+===Unsupervised learning===
+{{Main|Unsupervised learning}}
+
+In contrast, unsupervised methods don't make use of labelled records.
+
+Some important studies with unsupervised learning with respect to fraud detection should be mentioned. For example, Bolton and Hand<ref name="bolton_2001" /> use [[Peer Group Analysis]] and [[Break Point Analysis]] applied on spending behaviour in credit card accounts. Peer Group Analysis detects individual objects that begin to behave in a way different from objects to which they had previously been similar. Another tool Bolton and Hand<ref name="bolton_2001" /> develop for behavioural fraud detection is Break Point Analysis. Unlike Peer Group Analysis, Break Point Analysis operates on the account level. A break point is an observation where anomalous behaviour for a particular account is detected. Both the tools are applied on spending behaviour in credit card accounts.
+A combination of unsupervised and supervised methods for credit card fraud detection is in.<ref>{{cite journal |last1=Carcillo |first1=Fabrizio |last2=Le Borgne |first2=Yann-Aël |last3=Caelen |first3=Olivier |last4=Kessaci |first4=Yacine |last5=Oblé |first5=Frédéric |last6=Bontempi |first6=Gianluca |title=Combining unsupervised and supervised learning in credit card fraud detection |journal=Information Sciences |date=16 May 2019 |volume=557 |pages=317–331 |doi=10.1016/j.ins.2019.05.042 |url=https://www.sciencedirect.com/science/article/pii/S0020025519304451 |language=en |issn=0020-0255}}</ref>
+
+== Available datasets ==
+A major limitation for the validation of existing fraud detection methods is the lack of public datasets.<ref>{{cite web|last1=Le Borgne|first1=Yann-Aël|last2=Bontempi|first2=Gianluca|title=Machine Learning for Credit Card Fraud Detection - Practical Handbook|year=2021|url=https://fraud-detection-handbook.github.io/fraud-detection-handbook/Foreword.html|access-date=26 April 2021}}</ref> One of the few examples is the Credit Card Fraud Detection dataset<ref>{{cite web |title=Credit Card Fraud Detection |url=https://www.kaggle.com/mlg-ulb/creditcardfraud |website=kaggle.com |language=en}}</ref> made available by the ULB Machine Learning Group.<ref>{{cite web |title=ULB Machine Learning Group |url=http://mlg.ulb.ac.be |website=mlg.ulb.ac.be}}</ref>
+
+==See also==
+{{div col|colwidth=25em}}
+* [[Fraud]]
+* [[Fraud deterrence]]
+* [[Profiling (information science)]]
+* [[Data mining]]
+* [[Geolocation software]]
+* [[Neural networks]]
+* [[Artificial intelligence]]
+* [[Patterns]]
+* [[Data clustering]]
+* [[Statistics]]
+* [[Labelling]]
+* [[Decision tree learning]]
+* [[Regression analysis]]
+* [[Synthetic data]]
+* [[Benford's law]]
+* [[Beneish M-score]]
+{{div col end}}
+
+==References==
+<!--- See [[Wikipedia:Footnotes]] on how to create references using <ref></ref> tags which will then appear here automatically -->
+{{reflist|refs=
+<ref name="bolton_2002">Bolton, R. & Hand, D. (2002). Statistical Fraud Detection: A Review (With Discussion). Statistical Science 17(3): 235–255.</ref>
+<ref name="bolton_2001">Bolton, R. & Hand, D. (2001). [https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.24.5743&rep=rep1&type=pdf Unsupervised Profiling Methods for Fraud Detection.] Credit Scoring and Credit Control VII.</ref>
+<ref name="palshikar_2002">G. K. Palshikar, The Hidden Truth – Frauds and Their Control: A Critical Application for Business Intelligence, Intelligent Enterprise, vol. 5, no. 9, 28 May 2002, pp.&nbsp;46–51.</ref>
+<ref name="michalski_1998">Michalski, R. S., I. Bratko, and M. Kubat (1998). Machine Learning and Data Mining – Methods and Applications. John Wiley & Sons Ltd.</ref>
+<ref name="phua_2005">{{cite journal|author1=Phua, C. |author2=Lee, V. |author3=Smith-Miles, K. |author4=Gayler, R.|year=2005|title=A Comprehensive Survey of Data Mining-based Fraud Detection Research |doi=10.1016/j.chb.2012.01.002 |arxiv=1009.6119|s2cid=50458504 }}</ref>
+<ref name="green_1997">Green, B. & Choi, J. (1997). [https://www.researchgate.net/profile/Brian-Green-12/publication/245508224_Assessing_the_Risk_of_Management_Fraud_Through_Neural_Network_Technology/links/5be84e8792851c6b27b740a8/Assessing-the-Risk-of-Management-Fraud-Through-Neural-Network-Technology.pdf Assessing the Risk of Management Fraud through Neural Network Technology.] Auditing 16(1): 14–28.</ref>
+<ref name="tax_2021">Tax, N. & de Vries, K.J. & de Jong, M. & Dosoula, N. & van den Akker, B. & Smith, J. & Thuong, O. & Bernardi, L. [https://arxiv.org/pdf/2107.01979.pdf Machine Learning for Fraud Detection in E-Commerce: A Research Agenda.] Proceedings of the KDD International Workshop on Deployable Machine Learning for Security Defense (ML hat). Springer, Cham, 2021.</ref>
+<ref name="estevez_2006">Estevez, P., C. Held, and C. Perez (2006). [https://www.cec.uchile.cl/~clperez/papers/Subscription%20Fraud%20Prevention%20in%20Telecommunications%20Using%20Fuzzy%20Rules%20and%20Neural%20Networks.pdf Subscription fraud prevention in telecommunications using fuzzy rules and neural networks]. Expert Systems with Applications 31, 337–344.</ref>
+<ref name="fawcett_1997">Fawcett, T. (1997). [https://ojs.aaai.org/index.php/aimagazine/article/download/1372/1272 AI Approaches to Fraud Detection and Risk Management]: Papers from the 1997 AAAI Workshop. Technical Report WS-97-07. AAAI Press.</ref>
+<ref name="cortes_2002">Cortes, C. & Pregibon, D. (2001). [http://www.ke.tu-darmstadt.de/lehre/archiv/ws0607/ml-sem/steger.pdf Signature-Based Methods for Data Streams.] Data Mining and Knowledge Discovery 5: 167–182.</ref>
+<ref name="dal2014learned">Dal Pozzolo, A. & Caelen, O. & Le Borgne, Y. & Waterschoot, S. & Bontempi, G. (2014). [http://euro.ecom.cmu.edu/resources/elibrary/epay/1-s2.0-S095741741400089X-main.pdf Learned lessons in credit card fraud detection from a practitioner perspective]. Expert systems with applications 41: 10 4915–4928.</ref>
+<ref name="English302gmu">Bolton, R. and Hand, D. (2002). [https://projecteuclid.org/journals/statistical-science/volume-17/issue-3/Statistical-Fraud-Detection-A-Review/10.1214/ss/1042727940.pdf Statistical fraud detection: A review]. Statistical Science 17 (3), pp. 235-255</ref>
+<ref name=":0">{{Cite journal|last=Al-Khatib|first=Adnan M.|s2cid=214778396|date=2012|title=Electronic Payment Fraud Detection Techniques|journal=World of Computer Science and Information Technology Journal|volume=2}}</ref>
+}}
+
+[[Category:Fraud]]
+[[Category:Data analysis]]
+[[Category:Artificial intelligence applications]]

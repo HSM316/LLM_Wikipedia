@@ -1,0 +1,276 @@
+Sparse distributed memory (SDM) is a mathematical model of human long-term memory introduced by Pentti Kanerva in 1988 while he was at NASA Ames Research Center. It is a generalized random-access memory (RAM) for long (e.g., 1,000 bit) binary words. These words serve as both addresses to and data for the memory. The main attribute of the memory is sensitivity to similarity, meaning that a word can be read back not only by giving the original write address but also by giving one close to it, as measured by the number of mismatched bits (i.e., the Hamming distance between memory addresses).
+
+SDM implements transformation from logical space to physical space using distributed data representation and storage, similarly to encoding processes in human memory. A value corresponding to a logical address is stored into many physical addresses. This way of storing is robust and not deterministic. A memory cell is not addressed directly. If input data (logical addresses) are partially damaged at all, we can still get correct output data.
+
+The theory of the memory is mathematically complete and has been verified by computer simulation. It arose from the observation that the distances between points of a high-dimensional space resemble the proximity relations between concepts in human memory. The theory is also practical in that memories based on it can be implemented with conventional random-access memory elements.Flynn, Michael J., Pentti Kanerva, and Neil Bhadkamkar. "Sparse distributed memory prototype: principles and operation." (1989).
+
+Definition
+Human memory has a tendency to congregate memories based on similarities between them (although they may not be related), such as "firetrucks are red and apples are red". Sparse distributed memory is a mathematical representation of human memory, and uses high-dimensional space to help model the large amounts of memory that mimics that of the human neural network. An
+important property of such high dimensional spaces is that two randomly chosen vectors are relatively far away from each other, meaning that they are uncorrelated. SDM can be considered a realization of Locality-sensitive hashing.
+
+The underlying idea behind a SDM is the mapping of  a huge binary memory onto a smaller set of physical locations, so-called hard locations. As a general guideline, those hard locations should be uniformly distributed in the virtual space, to mimic the existence of the larger virtual space as accurately as possible. Every datum is stored distributed by a set of hard locations, and retrieved by averaging those locations. Therefore, recall may not be perfect, accuracy depending on the saturation of the memory.
+
+Kanerva's proposal is based on four basic ideas:Mendes, Mateus Daniel Almeida. "Intelligent robot navigation using a sparse distributed memory." Phd thesis, (2010). URL: https://eg.sib.uc.pt/handle/10316/17781
+
+1. The boolean space , or  points in  dimensions, exhibits properties which are similar to humans' intuitive notions of relationships between the concepts. This means that it makes sense to store data as points of the mentioned space where each memory item is stored as an n-bit vector. 
+2. Neurons with n inputs can be used as address decoders of a random-access memory
+3. Unifying principle: data stored into the memory can be used as addresses to the same memory. Distance between two points is a measure of similarity between two memory items. The closer the points, the more similar the stored vectors.
+4. Time can be traced in the memory as a function of where the data are stored, if the data are organized as sequences of events
+
+The binary space N 
+The SDM works with n-dimensional vectors with binary components. Depending on the context, the vectors are called points, patterns, addresses, words, memory items, data, or events. This section is mostly about the properties of the vector space N = . Let n be number of dimensions of the space. The number of points, or possible memory items, is then . We will denote this number by N and will use N and  to stand also for the space itself.Grebeníček, František. "Sparse Distributed Memory− Pattern Data Analysis. URL: http://www.fit.vutbr.cz/~grebenic/Publikace/mosis2000.pdf"
+
+Concepts Related to the space N: 
+
+Origin, 0:  The point with all coordinates 0 is called the origin, 0 = 000...00.
+Complement, 'x: The complement, or opposite, of point x is the n-tuple that has ones where x has zeros and vice versa.
+Norm, |x|: The norm of point x is the number of ones in its binary representation.
+Difference, x − y: The difference of two points x and y is the n-tuple that has ones where x and y differ and zeros elsewhere. It is the bitwise 'exclusive or': x − y = x ⊕ y. The difference commutes: x − y = y − x.
+Distance, d(x, y) The distance between two points x and y is the number of dimensions at which x and y differ. It is called the Hamming distance (its square root is the Euclidean distance) and is expressed in bits. Distance is the norm of the difference: d(x, y) = |x − y|
+Betweenness, x:y:z: Point y is between points x and z if and only if the distance from x to z is the sum of the distances from x to y and from y to z; that is, x:y:z ⇔ d(x, z) = d(x, y) + d(y, z). It is easily seen that every bit of a point in between is a copy of the corresponding bit of an endpoint.
+Orthogonality, x ⊥ y: Point x is orthogonal to point y, or the two are perpendicular or indifferent, if and only if the distance between the two is half the number of dimensions: x ⊥ y ⇔ d(x, y) = n/2. The distance n/2 is called indifference distance of space N. If x is orthogonal to y, it is also orthogonal to its complement 'y (x is halfway between y and 'y).
+Circle, O(r,x) A circle with radius r and center x is the set of points that are at most r bits from x: O(r,x) = {y | d(x, y) ≤ r}.
+
+Properties of  the space N: 
+
+The space N can be represented by the vertices of the unit cube in n-dimensional Euclidean space. The vertices lie on the surface of an n-dimensional sphere with (Euclidean-metric) radius . This gives rise to the sphere analogy. We will call a space spherical if
+
+1. any point x has a unique opposite 'x,
+2. the entire space is between any point x and its opposite 'x, and
+3. all points are "equal" (meaning that for any two points x and y there is a distance preserving automorphism of the space that maps x to y, so that from any of its points the space "looks" the same).
+
+The surface of a sphere (in Euclidean 3d-space) clearly is spherical. According to definition, N is also spherical, since y ⊕ x ⊕ (…) is an automorphism that maps x to y. 
+Because N is spherical, it is helpful to think of it as the surface of a sphere with circumference 2n. All points of N are equally qualified as points of origin, and a point and its complement are like two poles at distance n from each other, with the entire space in between. The points halfway between the poles and perpendicular to them are like the equator.
+
+Distribution of the space N
+
+The number of points that are exactly d bits from an arbitrary point x (say, from the point 0) is the number of ways to choose d coordinates from a total of n coordinates, and is therefore given by the binomial coefficient: 
+
+The distribution of N thus is the binomial distribution with parameters n and p, where p = 1/2. The mean of the binomial distribution is n/2, and the variance is n/4. This distribution function will be denoted by N(d). 
+The normal distribution F with mean n/2 and standard deviation  is a good approximation to it:  
+N(d) = Pr{d(x, y) ≤ d} ≅ F{(d − n / 2)/ }
+
+Tendency to orthogonality
+
+An outstanding property of N is that most of it lies at approximately the mean (indifference) distance n/2 from a point (and its complement). In
+other words, most of the space is nearly orthogonal to any given point, and the larger n is, the more pronounced is this effect.
+
+As neural network
+The SDM may be regarded either as a content-addressable extension of a classical random-access memory (RAM) or as a special type of three layer feedforward neural network. The main SDM alterations to the RAM are:Grebenıcek, František. Neural Nets as Associative Memories. Diss. Brno University of Technology, 2001. URL: http://www.vutium.vutbr.cz/tituly/pdf/ukazka/80-214-1914-8.pdf
+
+The SDM calculates Hamming distances between the reference address and each location address. For each distance which is less or equal to the given radius the corresponding location is selected.
+The memory is represented by  counters (where n is number of locations and m is the input data length) instead of single-bit storage elements.
+Writing to the memory, instead of overwriting, is as follows:
+if the i-bit of the input data is 1, the corresponding counters (counters in the selected locations (rows) and in the i-th columns) are incremented,
+if the i-bit of the input data is 0, the corresponding counters are decremented.
+Reading (or recall) from the memory is similar:
+The contents of the selected locations are summed columnwise.
+Each sum is thresholded. If the sum is greater than or equal to the threshold value the corresponding output bit is set to 1, in the opposite case it is cleared. Note that the thresholds may be zero, if the training input vectors are closed to orthogonal ones.
+
+Neuron model
+An idealized description of neuron is as follows: a neuron has a cell body with two kinds of branches: dendrites and an axon. It receives input signals from other neurons via dendrites, integrates (sums) them and generates its own (electric) output signal which is sent to outside neurons via axon. The points of electric contact between neurons are called synapses.
+
+When a neuron generates signal it is firing and after firing it must recover before it fires again.
+The relative importance of a synapse to the firing of neuron is called synaptic weight (or input coefficient). There are two kinds of synapses: excitatory that trigger neuron to fire and inhibitory that hinder firing. The neuron is either excitatory or inhibitory according to the kinds of synapses its axon makes.Kandel, Eric R., James H. Schwartz, and Thomas M. Jessell, eds. Principles of neural science. Vol. 4. New York: McGraw-Hill, 2000.
+
+A neuron fires when the sum of inputs exceed a specific threshold. The higher the threshold the more important it is that excitatory synapses have input while inhibitory ones do not.Eccles, John G. "Under the Spell of the Synapse." The Neurosciences: Paths of Discovery, I. Birkhäuser Boston, 1992. 159-179. Whether a recovered neuron actually fires depends on whether it received sufficient excitatory input (beyond the threshold) and not too much of inhibitory input within a certain period.
+
+The formal model of neuron makes further simplifying assumptions. An n-input neuron is modeled by a linear threshold function  as follows :
+
+For  where n is the number of inputs, let  be the output at time t: , and let  be the i-th input at time t: . Let  be the weight of the i-th input and let  be the threshold.
+
+The weighted sum of the inputs at time t is defined by 
+
+The neuron output at time t is then defined as a boolean function: 
+
+Where Ft=1 means that the neuron fires at time t and Ft=0 that it doesn't, i.e. in order for neuron to fire the weighted sum must reach or exceed the threshold .
+Excitatory inputs increase the sum and inhibitory inputs decrease it.
+
+Neuron as address-decoder
+Kanerva's key thesis is that certain neurons could have their input coefficients and thresholds fixed over the entire life of an organism and used as address decoders where n-tuple of input coefficients (the pattern to which neurons respond most readily) determines the n-bit memory address, and the threshold controls the size of the region of similar address patterns to which the neuron responds.
+
+This mechanism is complementary to adjustable synapses or adjustable weights in a neural network (perceptron convergence learning), as this fixed accessing mechanism would be a permanent frame of reference  which allows to select the synapses in which the information is stored and from which it is retrieved under given set of circumstances. Furthermore, an encoding of the present circumstance would serve as an address.
+
+The address a of a neuron with input coefficients w where  is defined as an n-bit input pattern that maximizes the weighted sum. The maximum occurs when the inhibitory inputs are zeros and the excitatory inputs are ones.
+The i-th bit of address is:
+
+(assuming weights are non-zero)
+
+The maximum weighted sum  is then the sum of all positive coefficients: 
+
+And the minimum weighted sum  would correspond to a point opposite the neuron address a`: 
+
+When the threshold c is in range  the output of the neuron is 0 for some addresses (input patterns) and 1 for others. If the threshold is above S the output is always 0, if it's below s the output is always 1. So by a proper choice of the threshold a neuron responds only to just one address. When the threshold is S (the maximum for the weighted sum) the neuron responds only to its own address and acts like an address decoder of a conventional random-access memory.
+
+Memory location
+SDM is designed to cope with address patterns that span an enormous address space (order of  ).  SDM assumes that the address patterns actually describing physical situations of interest are sparsely scattered throughout the input space. It is impossible to reserve a separate physical location corresponding to each possible input; SDM implements only a limited number of physical or hard locations. The physical location is called a memory (or hard) location.
+
+Every hard location has associated with it two items:
+
+ a fixed hard address, which is the N-bit address of the location
+ a contents portion that is M-bits wide and that can accumulate multiple M-bit data patterns written into the location. The contents' portion is not fixed; it is modified by data patterns written into the memory.
+
+In SDM a word could be stored in memory by writing it in a free storage location and at the same time providing the location with the appropriate address decoder. A neuron as an address decoder would select a location based on similarity of the location's address to the retrieval cue. Unlike conventional Turing machines SDM is taking advantage of parallel computing by the address decoders. The mere accessing the memory is regarded as computing, the amount of which increases with memory size.
+
+Address pattern
+An N-bit vector used in writing to and reading from the memory. The address pattern is a coded description of an environmental state. (e.g. N = 256.)
+
+Data pattern
+An M-bit vector that is the object of the writing and reading operations. Like the address pattern, it is a coded description of an environmental state. (e.g. M = 256.)
+
+Writing
+Writing is the operation of storing a data pattern into the memory using a particular
+address pattern. During a write, the input to the memory consists of an address pattern and a data pattern. The address pattern is used to select hard memory locations whose hard addresses are within a certain cutoff distance from the address pattern. The data pattern is stored into each of the selected locations.
+
+Reading
+Reading is the operation of retrieving a data pattern from the memory using a particular address pattern. During a read, an address pattern is used to select a certain number of hard memory locations (just like during a write). The contents of the selected locations are bitwise summed and thresholded to derive an M-bit data pattern. This serves as the output read from the memory.
+
+Pointer chains
+All of the items are linked in a single list (or array) of pointers to memory locations, and are stored in RAM.  Each address in an array points to an individual line in the memory. That line is then returned if it is similar to other lines. Neurons are utilized as address decoders and encoders, similar to the way neurons work in the brain, and return items from the array that match or are similar.
+
+Critical distance
+Kanerva's model of memory has a concept of a critical point: prior to this point, a previously stored item can be easily retrieved; but beyond this point an item cannot be retrieved. Kanerva has methodically calculated this point for a particular set of (fixed) parameters. 
+The corresponding critical distance of a Sparse Distributed Memory can be approximately evaluated minimizing the following equation with the restriction  and . The proof can be found in,
+
+Where:
+ : is the distance to the target;
+ : is the number of dimensions;
+ : is the normalized normal distribution with mean zero and variance one;
+ : is the number of times the target bitstring was written in memory;
+ : is the total of random bitstrings in all  hard-locations activated by a read operation; i.e., the size of a cell assembly;
+ : is the mean number of shared hard-locations activated by two bitstrings  bits away from each other. One can find some values for a 1000-dimensional SDM in Kanerva's book, Table 7.1, p. 63, or the equations to calculate to any SDM in Appendix B, p. 125 of the same book.
+
+Probabilistic interpretation
+An associative memory system using sparse, distributed representations can be reinterpreted as an importance sampler, a Monte
+Carlo method of approximating Bayesian inference.Abbott, Joshua T., Jessica B. Hamrick, and Thomas L. Griffiths. "Approximating Bayesian inference with a sparse distributed memory system." Proceedings of the 35th annual conference of the cognitive science society. 2013.  The SDM can be considered a Monte Carlo approximation to a multidimensional conditional probability integral. The SDM will produce acceptable responses from a training set when this approximation is valid, that is, when the training set contains sufficient data to provide good estimates of the underlying joint probabilities and there are enough Monte Carlo samples to obtain an accurate estimate of the integral.
+
+Biological plausibility
+Sparse coding may be a general strategy of neural systems to augment memory capacity. To adapt to their environments, animals must learn which stimuli are associated with rewards or punishments and distinguish these reinforced stimuli from similar but irrelevant ones.  Such task requires implementing stimulus-specific associative memories  in which only a few neurons out of a population respond to any given stimulus and each neuron responds to only a few stimuli out of all possible stimuli.
+
+Theoretical work on SDM by Kanerva has suggested that sparse coding increases the capacity of associative memory by reducing overlap between representations.  Experimentally, sparse representations of sensory information have been observed in many systems, including vision, audition, touch, and olfaction. However, despite the accumulating evidence for widespread sparse coding and theoretical arguments for its importance, a demonstration that sparse coding improves the stimulus-specificity of associative memory has been lacking until recently.
+
+Some progress has been made in 2014 by Gero Miesenböck's lab at the University of Oxford analyzing  Drosophila Olfactory system.A sparse memory is a precise memory. Oxford Science blog. 28 Feb 2014. http://www.ox.ac.uk/news/science-blog/sparse-memory-precise-memory
+In Drosophila, sparse odor coding by the Kenyon cells of the mushroom body is thought to generate a large number of precisely addressable locations for the storage of odor-specific memories. Lin et al. demonstrated that sparseness is controlled by a negative feedback circuit between Kenyon cells and the GABAergic anterior paired lateral (APL) neuron. Systematic activation and blockade of each leg of this feedback circuit show that Kenyon cells activate APL and APL inhibits Kenyon cells. Disrupting the Kenyon cell-APL feedback loop decreases the sparseness of Kenyon cell odor responses, increases inter-odor correlations, and prevents flies from learning to discriminate similar, but not dissimilar, odors. These results suggest that feedback inhibition suppresses Kenyon cell activity to maintain sparse, decorrelated odor coding and thus the odor-specificity of memories. A 2017 publication in Science showed that fly olfactory circuit implements an improved version of binary locality sensitive hashing via sparse, random projections.
+
+Applications
+In applications of the memory, the words are patterns of features. Some features are produced by a sensory system, others control a motor system. There is a current pattern (of e.g. 1000 bits), which is the current contents of the system's focus. The sensors feed into the focus, the motors are driven from the focus, and the memory is accessed through the focus.
+
+What goes on in the world the system's "subjective" experience is represented internally by a sequence of patterns in the focus. The memory stores this sequence and can recreate it later in the focus if addressed with a pattern similar to one encountered in the past. Thus, the memory learns to predict what is about to happen. Wide applications of the memory would be in systems that deal with real-world information in real time.
+
+The applications include vision detecting and identifying objects in a scene and anticipating subsequent scenes robotics, signal detection and verification, and adaptive learning and control. On the theoretical side, the working of the memory may help us understand memory and learning in humans and animals.Denning, Peter J. Sparse distributed memory. Research Institute for Advanced Computer Science [NASA Ames Research Center], 1989.
+
+The Best Match Search
+SDM can be applied to the problem of finding the best match to a test word in a dataset of stored words.Minsky, Marvin, and Papert Seymour. "Perceptrons." (1969). "Time vs. memory for best matching - an open problem" p. 222–225 or, in other words, the Nearest neighbor search problem.
+
+Consider a memory with N locations where . Let each location have the capacity for one n-bit word (e.g. N= 2100 100-bit words), and let the address decoding be done by N  address decoder neurons. Set the threshold of each neuron x to its maximum weighted sum  and use a common parameter d to adjust all thresholds when accessing the memory. The effective threshold of neuron x will be then  which means that the location x is accessible every time the address x is within d bits of the address presented to memory (i.e. the address held by the address register).
+With  we have a conventional random-access memory. Assume further that each location has a special location-occupied bit that can be accessed in the same way as the regular datum bits. Writing a word to a location sets this location-occupied bit. Assume that only occupied location can be read.
+
+To file the data in memory, start by setting  and issue a command to clear the location-occupied bit. This single operation marks all memory as unoccupied regardless of the values of the address register. Then set  and write each word y of the data set with y itself as the address. Notice that each write operation affects only one location: the location y. Filing time is thus proportional to the number of words in the dataset.
+
+Finding the best match for a test word z, involves placing z in the address register and finding the least distance d for which there is an occupied location. We can start the search by setting  and incrementing d successively until an occupied location is found. This method gives average search times that are proportional to the number of address bits or slightly less than  because the nearest occupied location can be expected to be just under  bits from z (with binary search on d this would be O(log(n)).
+
+With 100-bit words 2100 locations would be needed, i.e. an enormously large memory. However if we construct the memory as we store the words of the dataset we need only one location (and one address decoder) for each word of the data set. None of the unoccupied locations need to be present. This represents the aspect of sparseness in SDM.
+
+Speech recognition
+SDM can be applied in transcribing speech, with the training consisting of "listening" to a large corpus of spoken language. Two hard problems with natural speech are how to detect word boundaries and how to adjust to different speakers. The memory should be able to handle both. First, it stores sequences of patterns as pointer chains. In training in listening to speech it will build a probabilistic structure with the highest incidence of branching at word boundaries. In transcribing speech, these branching points are detected and tend to break the stream into segments that correspond to words. Second, the memory's sensitivity to similarity is its mechanism for adjusting to different speakers and to the variations in the voice of the same speaker.
+
+"Realizing forgetting"
++ Decay Functions 320px|center|The exponential decay function 320px|center|The negated-translated sigmoid function
+At the University of Memphis, Uma Ramamurthy, Sidney K. D'Mello, and Stan Franklin created a modified version of the sparse distributed memory system that represents "realizing forgetting."  It uses a decay equation to better show interference in data. The sparse distributed memory system distributes each pattern into approximately one hundredth of the locations, so interference can have detrimental results.
+
+Two possible examples of decay from this modified sparse distributed memory are presented
+
+Exponential decay mechanism: 
+
+Negated-translated sigmoid decay mechanism: 
+
+In the exponential decay function, it approaches zero more quickly as x increases, and a is a constant (usually between 3-9) and c is a counter. For the negated-translated sigmoid function, the decay is similar to the exponential decay function when a is greater than 4.
+
+As the graph approaches 0, it represents how the memory is being forgotten using decay mechanisms.
+
+Genetic sparse distributed memory
+Ashraf Anwar, Stan Franklin, and Dipankar Dasgupta at The University of Memphis; proposed a model for SDM initialization using Genetic Algorithms and Genetic Programming (1999).
+
+Genetic memory uses genetic algorithm and sparse distributed memory as a pseudo artificial neural network. It has been considered for use in creating artificial life.
+
+Statistical prediction
+SDM has been applied to statistical prediction, the task of associating extremely large perceptual state vectors with future events. In conditions of near- or over- capacity, where the associative memory behavior of the model
+breaks down, the processing performed by the model can be interpreted as that of a statistical predictor and each data counter in an SDM can be viewed as an independent estimate of the conditional probability of a binary function f being equal to the activation set defined by the counter's memory location.Rogers, David. "Statistical prediction with Kanerva's sparse distributed memory." Advances in neural information processing systems. 1989.
+
+Artificial general intelligence
+LIDA uses sparse distributed memory to help model cognition in biological systems. The sparse distributed memory places space is recalling or recognizing the object that it has in relation to other objects. It was developed by Stan Franklin, the creator of the "realizing forgetting" modified sparse distributed memory system. Transient episodic and declarative memories have distributed representations in LIDA (based on modified version of SDMFranklin, Stan, et al. "The role of consciousness in memory." Brains, Minds and Media 1.1 (2005): 38.), there is evidence that this is also the case in the nervous system.
+CMatie is a 'conscious' software agent developed to manage seminar announcements in the Mathematical Sciences Department at the University of Memphis. It's based on SDM augmented with the use of genetic algorithms as an associative memory.
+Hierarchical temporal memory utilizes SDM for storing sparse distributed representations of the data.
+
+(Also see Cognitive architecture & Artificial General Intelligence for a list of SDM related projects)
+
+Reinforcement learning
+SDMs provide a linear, local function approximation scheme, designed to work when a very large/high-dimensional input (address) space has to be mapped into a much smaller physical memory. In general, local architectures, SDMs included, can be subject to the curse of dimensionality, as some target functions may require, in the worst case, an exponential number of local units to be approximated accurately across the entire input space. However, it is widely believed that most decision-making systems need high accuracy only around low-dimensional manifolds of the state space, or important state "highways".Ratitch, Bohdana, Swaminathan Mahadevan, and Doina Precup. "Sparse distributed memories in reinforcement learning: Case studies." Proc. of the Workshop on Learning and Planning in Markov Processes-Advances and Challenges. 2004. The work in Ratitch et al.Ratitch, Bohdana, and Doina Precup. "Sparse distributed memories for on-line value-based reinforcement learning." Machine Learning: ECML 2004. Springer Berlin Heidelberg, 2004. 347-358. combined the SDM memory model with the ideas from memory-based learning, which provides an approximator that can dynamically adapt its structure and resolution in order to locate regions of the state space that are "more interesting"Bouchard-Côté, Alexandre. "Sparse Memory Structures Detection." (2004). and allocate proportionally more memory resources to model them accurately.
+
+Object indexing in computer vision
+Dana H. Ballard's labRao, Rajesh PN, and Dana H. Ballard. "Object indexing using an iconic sparse distributed memory." Computer Vision, 1995. Proceedings., Fifth International Conference on. IEEE, 1995. demonstrated a general-purpose object indexing technique for computer vision that combines the virtues of principal component analysis with the favorable matching properties of high-dimensional spaces to achieve high precision recognition. The indexing algorithm uses an active vision system in conjunction with a modified form of SDM and provides a platform for learning the association between an object's appearance and its identity.
+
+Extensions
+Many extensions and improvements to SDM have been proposed, e.g.:
+
+ Ternary memory space:  This enables the memory to be used as a Transient Episodic Memory (TEM) in cognitive software agents. TEM is a memory with high specificity and low retention, used for events having features of a particular time and place.D'Mello, Sidney K., Ramamurthy, U., & Franklin, S. 2005. Encoding and Retrieval Efficiency of Episodic Data in a Modified Sparse Distributed Memory System. In Proceedings of the 27th Annual Meeting of the Cognitive Science Society. Stresa, ItalRamamaurthy, U., Sidney K. D'Mello, and Stan Franklin. "Modified sparse distributed memory as transient episodic memory for cognitive software agents." Systems, Man and Cybernetics, 2004 IEEE International Conference on. Vol. 6. IEEE, 2004.
+ Integer SDM that uses modular arithmetic integer vectors rather than binary vectors. This extension improves the representation capabilities of the memory and is more robust over normalization. It can also be extended to support forgetting and reliable sequence storage.Snaider, Javier, and Stan Franklin. "Integer sparse distributed memory." Twenty-fifth international flairs conference. 2012.
+ Using word vectors of larger size than address vectors:  This extension preserves many of the desirable properties of the original SDM: auto-associability, content addressability, distributed storage and robustness over noisy inputs. In addition, it adds new functionality, enabling an efficient auto-associative storage of sequences of vectors, as well as of other data structures such as trees.
+ Constructing SDM from Spiking Neurons: Despite the biological likeness of SDM most of the work undertaken to demonstrate its capabilities to date has used highly artificial neuron models which abstract away the actual behaviour of neurons in the brain. Recent work by Steve Furber's lab at the University of ManchesterSharp, Thomas: "Application of sparse distributed memory to the Inverted Pendulum Problem". Diss. University of Manchester, 2009. URL: http://studentnet.cs.manchester.ac.uk/resources/library/thesis_abstracts/MSc09/FullText/SharpThomas.pdfBose, Joy. Engineering a Sequence Machine Through Spiking Neurons Employing Rank-order Codes. Diss. University of Manchester, 2007. proposed adaptations to SDM, e.g. by incorporating N-of-M rank codesSimon Thorpe and Jacques Gautrais. Rank order coding. In Computational Neuroscience: Trends in research, pages 113–118. Plenum Press, 1998. into how populations of neurons may encode information—which may make it possible to build an SDM variant from biologically plausible components. This work has been incorporated into SpiNNaker (Spiking Neural Network Architecture) which is being used as the Neuromorphic Computing Platform for the Human Brain Project.
+ Non-random distribution of locations:Caraig, Lou Marvin. "A New Training Algorithm for Kanerva's Sparse Distributed Memory." arXiv preprint arXiv:1207.5774 (2012). Although the storage locations are initially distributed randomly in the binary N address space, the final distribution of locations depends upon the input patterns presented, and may be non-random thus allowing better flexibility and generalization. The data pattern is first stored at locations which lie closest to the input address. The signal (i.e. data pattern) then spreads throughout the memory, and a small percentage of the signal strength (e.g. 5%) is lost at each subsequent location encountered. Distributing the signal in this way removes the need for a select read/write radius, one of the problematic features of the original SDM. All locations selected in a write operation do not now receive a copy of the original binary pattern with equal strength. Instead they receive a copy of the pattern weighted with a real value from 1.0->0.05 to store in real valued counters (rather than binary counters in Kanerva's SDM). This rewards the nearest locations with a greater signal strength, and uses the natural architecture of the SDM to attenuate the signal strength. Similarly in reading from the memory, output from the nearest locations is given a greater weight than from more distant locations. The new signal method allows the total signal strength received by a location to be used as a measure of the fitness of a location and is flexible to varying input (as the loss factor does not have to be changed for input patterns of different lengths).
+ SDMSCue (Sparse Distributed Memory for Small Cues): Ashraf Anwar & Stan Franklin at The University of Memphis, introduced a variant of SDM capable of Handling Small Cues; namely SDMSCue in 2002. The key idea is to use multiple Reads/Writes, and space projections to reach a successively longer cue.
+
+Related patents
+ Method and apparatus for a sparse distributed memory system  US 5113507 A, Universities Space Research Association, 1992Method and apparatus for a sparse distributed memory system  US 5113507 A, by Louis A. Jaeckel, Universities Space Research Association, 1992, URL: http://www.google.com/patents/US5113507
+ Method and device for storing and recalling information implementing a kanerva memory system US 5829009 A, Texas Instruments, 1998Method and device for storing and recalling information implementing a kanerva memory system US 5829009 A, by Gary A. Frazier, Texas Instruments Incorporated, 1998, URL: https://www.google.com/patents/US5829009
+ Digital memory, Furber, Stephen. US 7512572 B2, 2009Furber, Stephen B. "Digital memory." U.S. Patent No. 7,512,572. 31 Mar. 2009.URL: https://www.google.com/patents/US7512572 
+
+Implementation
+ C Binary Vector Symbols (CBVS): includes SDM implementation in C as a part of vector symbolic architecture developed by EISLAB at Luleå University of Technology: http://pendicular.net/cbvs.php
+ CommonSense ToolKit (CSTK) for realtime sensor data processing developed at the Lancaster University includes implementation of SDM in C++: http://cstk.sourceforge.net/Berchtold, Martin. "Processing Sensor Data with the Common Sense Toolkit (CSTK)." *(2005).
+Julia implementation by Brian Hayes: https://github.com/bit-player/sdm-julia The Mind Wanders by B. Hayes, 2018. url: http://bit-player.org/2018/the-mind-wanders
+ Learning Intelligent Distribution Agent (LIDA) developed by Stan Franklin's lab at the University of Memphis  includes implementation of SDM in Java: http://ccrg.cs.memphis.edu/framework.html
+ Python implementation: https://github.com/msbrogli/sdm
+ Python and OpenCL implementation: https://github.com/msbrogli/sdm-framework
+ APL implementation
+ LISP implementation for the Connection MachineTurk, Andreas, and Günther Görz.  "Kanerva's sparse distributed memory: an object-oriented implementation on the connection machine." IJCAI. 1995.
+ FPGA implementation
+ The original hardware implementation developed by NASA
+An Implementation in C done at the Research Institute for Advanced Computer Science at NASA Ames
+
+Related models
+ Approximate nearest neighbor searchMuja, Marius. "Scalable nearest neighbour methods for high dimensional data." (2013).
+ Associative neural memoriesHassoun, Mohamad H. Associative neural memories. Oxford University Press, Inc., 1993.
+ Autoassociative memory
+ Binary spatter codesKanerva, Pentti. "Binary spatter-coding of ordered K-tuples." Artificial Neural Networks—ICANN 96. Springer Berlin Heidelberg, 1996. 869-873.
+ Associative-memory models of the cerebellum
+ Content-addressable memory
+ Correlation-matrix memoriesKohonen, Teuvo. "Correlation matrix memories." Computers, IEEE Transactions on 100.4 (1972): 353-359.
+ Deep learning § Memory networks
+ Dynamic memory networksAnkit Kumar, Ozan Irsoy, Jonathan Su, James Bradbury, Robert English, Brian Pierce, Peter Ondruska, Ishaan Gulrajani, Richard Socher. "Ask Me Anything: Dynamic Memory Networks for Natural Language Processing." arXiv preprint arXiv:1506.07285 (2015). 
+ Feedforward neural network
+ Hierarchical temporal memory
+ Holographic associative memory
+ Holographic reduced representationPlate, Tony A. "Holographic Reduced Representation: Distributed representation for cognitive structures." (2003).Kanerva, Pentti. "Computing with 10,000-bit words." Proc. 52nd Annual Allerton Conference on Communication, Control, and Computing. 2014.
+ Low-density parity-check code
+ Locality-sensitive hashing
+ Memory networksWeston, Jason, Sumit Chopra, and Antoine Bordes. "Memory networks." arXiv preprint  (2014).
+ Memory-prediction framework
+ Pointer NetworksVinyals, Oriol, Meire Fortunato, and Navdeep Jaitly. "Pointer networks." arXiv preprint  (2015).Kurach, Karol, Andrychowicz, Marcin and  Sutskever, Ilya. "Neural Random-Access Machines." arXiv preprint arXiv:1511.06392 (2015).
+ Random-access memory (as a special case of SDM) 
+ Random indexingJoshi, Aditya, Johan Halseth, and Pentti Kanerva. "Language Recognition using Random Indexing." arXiv preprint arXiv:1412.7026 (2014). https://arxiv.org/abs/1412.7026
+ Recursive auto-associative memory (RAAM)
+ Self-organizing map
+ Semantic folding
+ Semantic hashingSalakhutdinov, Ruslan, and Geoffrey Hinton. "Semantic hashing." RBM 500.3 (2007): 500.
+ Semantic memory
+ Semantic network
+ Semantic pointer architectureEliasmith, Chris, et al. "A large-scale model of the functioning brain." science 338.6111 (2012): 1202-1205.
+ Sequence memory
+ Sparse codingLee, Honglak, et al. "Efficient sparse coding algorithms." Advances in neural information processing systems. 2006.
+ Sparse distributed representations
+ Neural Turing machineGraves, Alex, Greg Wayne, and Ivo Danihelka. "Neural Turing Machines." arXiv preprint  (2014).
+ Stacked autoencoders
+ Vector symbolic architecture
+ Vector space model
+ Virtual memory

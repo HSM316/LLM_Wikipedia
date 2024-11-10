@@ -1,0 +1,45 @@
+{{Infobox road
+|state=TN
+|type=Sec
+|route=276
+|map=
+|alternate_name=Thompson Creek Road
+|length_mi=3.2
+|length_ref=
+|direction_a=South
+|terminus_a={{jct|state=TN|Sec|130}} in [[Raus, Tennessee|Raus]]
+|junction=
+|direction_b=North
+|terminus_b={{jct|state=TN|US|41A}} near [[Normandy, Tennessee|Normandy]]
+|counties=[[Bedford County, Tennessee|Bedford]]
+|previous_type=Sec
+|previous_route=275
+|next_type=TN
+|next_route=277
+}}
+
+'''State Route 276''' ('''SR 276'''), also known as '''Thompson Creek Road''', is a short {{convert|3.2|mi|km}} long north-south state highway in eastern [[Bedford County, Tennessee]], United States. It connects the community of [[Raus, Tennessee|Raus]], and [[Tennessee State Route 130|SR 130]], with [[U.S. Route 41A in Tennessee|U.S. Route 41A]] (US 41A). It is a two-lane highway for its entire length and traverses rural and flat farmland for the majority of its course.<ref name=TDOT-Bedford-County-map>https://www.tn.gov/content/dam/tn/tdot/maps/county-maps-(us-shields)/a-g/Bedford%20County.pdf {{Bare URL PDF|date=March 2022}}</ref><ref name=Googlemaps>{{cite web | url=https://www.google.com/maps/place/TN-276,+Tennessee/@35.4289125,-86.3281873,13z/data=!4m2!3m1!1s0x8863deb251961307:0x93db07a5b697023 | title=TN-276 · Tennessee }}</ref>
+
+==Major intersections==
+
+{{jcttop|length_ref=|state=TN|county=Bedford}}
+{{TNint
+|location=Raus
+|mile=0.0
+|road={{jct|state=TN|Sec|130|city1=Shelbyville|city2=Tullahoma}}
+|notes=Southern terminus
+}}
+{{TNint
+|location=none
+|mile=3.2
+|road={{jct|state=TN|US|41A|name1=[[Tennessee State Route 16|SR 16]]|city1=Shelbyville|city2=Tullahoma}}
+|notes=Northern terminus
+}}
+{{jctbtm}}
+
+==References==
+
+{{reflist}}
+
+[[Category:State highways in Tennessee|276]]
+[[Category:Transportation in Bedford County, Tennessee]]

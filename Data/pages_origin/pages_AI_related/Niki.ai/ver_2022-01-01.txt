@@ -1,0 +1,54 @@
+{{lowercase title}}
+{{Use Indian English|date=April 2018}}
+{{Use dmy dates|date=April 2018}}
+{{Infobox company
+| name               = niki.ai
+| logo               = Niki.ai-logo.svg
+| logo_alt = niki.ai
+| founder            = {{plainlist|
+* Sachin Jaiswal
+* Shishir Modi
+* Keshav Prawasi
+* Nitin Babel
+}}
+| num_locations_year = 2018
+| area_served        = India
+| num_employees      = 50<ref name="teamniki">{{cite web |url=https://niki.ai/team |title=Meet the team |access-date=5 November 2016 |archive-url=https://web.archive.org/web/20161106123427/https://niki.ai/team |archive-date=6 November 2016 |url-status=dead }}</ref>
+| num_employees_year = 2018
+| former_name        = zabbed
+| homepage           = {{URL|https://niki.ai}}
+| foundation         = {{Start date and age|df=yes|2015|3|1}}<br>[[Udaipur]], [[India]]<ref name="aboutniki">{{cite web |url=https://niki.ai/about |title=About the company |access-date=5 November 2016 |archive-url=https://web.archive.org/web/20161106123104/https://niki.ai/about |archive-date=6 November 2016 |url-status=dead }}</ref>
+| location           = 
+| location_city      = [[Bangalore]]
+| location_country   = [[India]]<br />{{coord|12.94318|77.62186|type:landmark_region:IN|format=dms|display=inline,title}}
+| locations          = 1
+}}
+
+'''Niki''' is an artificial intelligence company headquartered in [[Bangalore, Karnataka]]. It was founded in May 2015<ref>{{Cite news|url=http://www.indianweb2.com/2015/07/14/udaipur-based-niki-is-smarter-version-of-siri-for-e-commerce/|title=Udaipur-Based Niki Is Smarter Version Of Siri For E-Commerce|date=14 July 2015|access-date=27 December 2016|via=indianweb2.com}}</ref> by [[Indian Institute of Technology Kharagpur|IIT Kharagpur]] graduates Sachin Jaiswal, Keshav Prawasi, Shishir Modi and Nitin Babel.
+
+The Niki android app was launched for a limited beta in June, 2015, then released for public during YourStory's TechSparks 2015, and is a Tech30 company. The company raised an undisclosed amount in seed funding<ref>{{Cite news|url=https://inc42.com/flash-feed/niki-ai-funding/|title=Artificial Intelligence Startup Niki.ai Raises Funding From ... - Inc42|access-date=26 December 2016|via=Inc42}}</ref> from Unilazer Ventures,<ref>{{Cite news|url=https://www.cbinsights.com/blog/bot-startups-timeline/|title=The Rise Of Bots: A Timeline Of Major VC-Backed Bot Startups - CB Insights|access-date=2 August 2016|via=CB Insights}}</ref> a Mumbai-based VC firm founded by [[Ronnie Screwvala]], in October 2015. This was followed by another seed funding round by [[Ratan Tata]] in May 2016.<ref>{{Cite news|url=https://www.entrepreneur.com/article/276167|title=Chat Bots Charm Ratan Tata, Another AI Startup - Entrepreneur|access-date=26 December 2016|via=entrepreneur.com}}</ref> The company then raised US$2 million in Series A round of funding from SAP.iO, existing investors and some US and Germany-based investors, among others.<ref>{{Cite news|url=https://www.vccircle.com/ratan-tata-backed-ai-startup-niki-ai-raises-2-mn-in-series-a-round/|title=Ratan Tata-backed AI startup Niki.ai raises $2 mn in Series A round|date=2017-06-28|work=VCCircle|access-date=2018-07-10|language=en-US}}</ref> Niki.ai shut down in Oct 2021 as per media reports. Website not working. <ref>{{Cite web|last=Upadhyay|first=Harsh|date=2021-11-09|title=Exclusive: Ratan Tata-backed AI chatbot Niki to shut down ops|url=https://entrackr.com/2021/11/exclusive-ratan-tata-backed-ai-chatbot-niki-to-shut-down-ops/|access-date=2021-12-24|website=Entrackr|language=en-US}}</ref>
+
+== Product ==
+The product is an [[artificial intelligence]]-powered [[chatbot]] which works as an [[intelligent personal assistant]], named Niki. Leveraging [[natural language processing]] and [[machine learning]], Niki presents a chat-based<ref>{{Cite web|url=https://alty.co/blog/chat-as-an-app-interface-when-to-consider-it/|title=Chat as an App Interface: When to Consider It|last=Leonid|first=Gorev|access-date=11 January 2017}}</ref> [[natural language user interface]] to the users where they can interact with Niki in their [[natural language]]. Niki understands how users chat in India,<ref>{{Cite news|url=https://www.forbes.com/sites/suparnadutt/2016/10/04/the-ai-startup-wave-is-hitting-india-and-investors-are-taking-notice/|title=The AI Startup Wave Is Hitting India And Investors Are Taking Notice|last=D'Cunha|first=Suparna Dutt|date=4 October 2016|access-date=11 January 2017|via=Forbes}}</ref> deciphers the words, in the context of product/services that they would like to purchase, and comes up with apt recommendations.
+
+Initially it was only available on the [[Android (operating system)|Android]] platform as a [[mobile app]]. The company has expanded its operations to the [[Facebook messenger]] and Apple iOS platforms.<ref>{{Cite news|url=https://venturebeat.com/2016/08/25/niki-ais-new-messenger-bot-lets-you-hail-cabs-and-order-snacks-in-india/|title=Niki.ai's new Messenger bot lets you hail cabs and order snacks in India|date=25 August 2016|access-date=11 January 2017|via=Venturebeat}}</ref> The company aims to soon be present on more messaging platforms like [[Slack (software)|Slack]] and [[WhatsApp]].
+
+The company currently provides 20+ services to over 2 million consumers, covering a wide spectrum ranging from utility services like mobile recharge, bill payments, travel services like cabs,<ref>{{Cite news|url=https://www.techinasia.com/internet-sucks-in-india-but-ai-chatbot-get-things-done|title=So what if the Internet sucks in India? This AI chatbot gets things done|last=Velayanikal|first=Malavika|date=3 December 2015|access-date=11 January 2017|via=Tech in Asia}}</ref> buses, hotels<ref>{{Cite news|url=http://www.moneycontrol.com/news/sme/now-you-can-bookoyo-room-via-niki-bot_7579601.html|title=Now you can book an OYO room via Niki bot|date=5 October 2016|access-date=11 January 2017|via=Moneycontrol.com}}</ref> and entertainment services like movies and events. Services such as flights and healthcare are also planned.<ref>{{Cite web|title=Niki App Review: The All In One App! - Indian Tech Hunter|url=https://www.indiantechhunter.in/niki-app-review/|access-date=2021-12-04|language=en-US}}</ref>
+
+== Partnerships ==
+In September 2017, [[Infosys]] Finacle joined with Niki.ai to provide chat-based service to banking customers.<ref>{{Cite news|url=http://economictimes.indiatimes.com/tech/ites/infosys-arm-to-offer-chat-based-service-to-banking-customers/articleshow/60753200.cms|title=Infosys arm to offer chat-based service to banking customers|date=2017-09-19|work=The Economic Times|access-date=2017-09-27}}</ref>
+
+In August 2017, Niki partnered with LazyPay to enable a 'buy now, pay later' feature for its users.<ref>{{Cite news|url=http://economictimes.indiatimes.com/small-biz/startups/niki-ai-partners-with-lazypay-to-offer-buy-now-pay-later-feature/articleshow/60310670.cms|title=Niki.ai partners with LazyPay to offer 'buy now, pay later' feature|last=Vignesh|first=J.|date=2017-08-31|work=The Economic Times|access-date=2017-09-27}}</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Official website}}
+* [https://blogs.niki.ai/ Blog]
+* {{Medium.com|niki.ai|niki.ai}}
+*[https://sap.io/ SAP.IO]
+
+[[Category:Artificial intelligence applications]]
+[[Category:Natural language processing]]
+[[Category:Applied machine learning]]

@@ -1,0 +1,47 @@
+{{Short description|Text-to-speech software}}
+{{Infobox software
+| logo                   = 
+| screenshot             = 
+| caption                =
+| developer              = [[CSELT]]
+| released              = 1993   
+| latest release version = 
+| programming language   =
+| operating system       = [[Microsoft Windows|Windows]]
+| language               = Italian
+| genre                  = [[Text to speech]]
+| license                = [[Proprietary software|Proprietary]] [[Freeware]]
+| website                = 
+}}
+
+'''Eloquens'''™ is a text-to-speech software, whose first version was released in 1993 by [[CSELT]]. It was the first commercial [[speech synthesis]] software able to speak Italian.
+
+== Description ==
+It was the first commercial product of the research center CSELT in the field of voice technology. It was built with diphone-technology aimed to reach a high computational efficiency.<ref>{{cite book |last1=Balestri |first1=Marcello |last2=Lazzaretto |first2=Stefano |last3=Salza |first3=Pier Luigi |last4=Sandri |first4=Stefano |title=3rd European Conference on Speech Communication and Technology (Eurospeech 1993) |chapter=The CSELT system for Italian text-to-speech synthesis |date=22 September 1993 |pages=2091–2094 |doi=10.21437/Eurospeech.1993-468|s2cid=42744136 }}</ref> As a result, the produced voice is still "robotic", but more natural than the previous generation voice implemented in [[MUSA (MUltichannel Speaking Automaton)|MUSA]]<ref>{{cite web|url=https://www.w3.org/2006/Talks/0607-loquendo-speech/Baggia_Trento_2006_sml.pdf|first= Paolo|last= Baggia|title= ''Speech Technologies and Standards'', DIT Seminars, Povo, Trento|date= 7 June 2006}}</ref> by CSELT itself. In the past, ELOQUENS was applied to automatically read timetables in the Italian train stations<ref>1997 IEEE International Conference on Acoustics, Speech, and Signal Processing: April 21-24, 1997, Munich, Germany. (1997). United States: IEEE Computer Society Press: p. 1147</ref> and some telephone services provided by [[Telecom Italia]], e.g. the automated address book service.<ref>{{cite book |last1=Nebbia |first1=L. |last2=Quazza |first2=S. |last3=Luigi Salza |first3=P. |title=Proceedings 1998 IEEE 4th Workshop Interactive Voice Technology for Telecommunications Applications. IVTTA '98 (Cat. No.98TH8376) |chapter=A specialised speech synthesis technique for application to automatic reverse directory service |date=1998 |pages=223–228 |doi=10.1109/IVTTA.1998.727725|isbn=0-7803-5028-6 |s2cid=62411997 }}</ref>
+
+In 1997 Eloquens was also used as a building block (synthezer module) in dialogue systems.<ref>{{cite book |last1=Gemello |first1=R. |last2=Albesano |first2=D. |last3=Mana |first3=F. |title=Proceedings of International Conference on Neural Networks (ICNN'97) |chapter=Continuous speech recognition with neural networks and stationary-transitional acoustic units |date=1997 |volume=4 |pages=2107–2111 |doi=10.1109/ICNN.1997.614230|isbn=0-7803-4122-8 |s2cid=56858298 }}</ref>
+
+Nowadays, it is released as [[freeware]]: it is nowadays typically used in spoken comments in many [[YouTube]] videos.
+
+== See also ==
+* [[Loquendo]]
+* [[vidby]]
+* [[Acapela]]
+
+== References ==
+<references/>
+
+== Bibliography ==
+* {{cite journal |last1=Billi |first1=Roberto |last2=Canavesio |first2=Franco |last3=Ciaramella |first3=Alberto |last4=Nebbia |first4=L. |title=Interactive voice technology at work: The CSELT experience |journal=Speech Communication |date=November 1995 |volume=17 |issue=3–4 |pages=263–271 |doi=10.1016/0167-6393(95)00030-R}}
+* {{cite book |last1=Balestri |first1=Marcello |last2=Lazzaretto |first2=Stefano |last3=Salza |first3=Pier Luigi |last4=Sandri |first4=Stefano |title=3rd European Conference on Speech Communication and Technology (Eurospeech 1993) |chapter=The CSELT system for Italian text-to-speech synthesis |date=22 September 1993 |pages=2091–2094 |doi=10.21437/Eurospeech.1993-468|s2cid=42744136 }}
+* {{cite book |last1=Nebbia |first1=L. |last2=Quazza |first2=S. |last3=Luigi Salza |first3=P. |title=Proceedings 1998 IEEE 4th Workshop Interactive Voice Technology for Telecommunications Applications. IVTTA '98 (Cat. No.98TH8376) |chapter=A specialised speech synthesis technique for application to automatic reverse directory service |date=1998 |pages=223–228 |doi=10.1109/IVTTA.1998.727725|isbn=0-7803-5028-6 |s2cid=62411997 }}
+* {{cite journal |last1=Baggia |first1=Paolo |last2=Castagneri |first2=Giuseppe |last3=Danieli |first3=Morena |title=Field trials of the Italian Arise train timetable system |journal=Speech Communication |date=August 2000 |volume=31 |issue=4 |pages=355–367 |doi=10.1016/S0167-6393(99)00068-0}}
+
+== External links ==
+* [https://eloquens.it.softonic.com/ Eloquens on Softonic]
+* [https://web.archive.org/web/20170227133535/http://www.datasheetarchive.com/files/texas-instruments/sc/docs/dsps/softcoop/cseltelq.htm Datasheet Archive: Eloquens 2000]
+
+[[Category:Speech synthesis software]]
+[[Category:Applications of artificial intelligence]]
+[[Category:Computational linguistics]]
+[[Category:History of human–computer interaction]]

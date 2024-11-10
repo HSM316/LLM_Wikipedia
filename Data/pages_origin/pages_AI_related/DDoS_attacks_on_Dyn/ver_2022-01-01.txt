@@ -1,0 +1,188 @@
+{{short description|2016 cyberattack in Europe and North America}}
+{{Infobox event
+| title                    = Dyn cyberattack
+| image                    = Level3 Outage Map (US) - 21 October 2016.png
+| image_size               = 
+| image_alt                =
+| caption                  = Map of areas most affected by attack,<br />16:45 [[UTC]], 21 October 2016.<ref>{{cite web|url=http://downdetector.com/status/level3/map/|title=Level3 outage? Current problems and outages|work=downdetector.com|access-date=23 October 2016}}</ref>
+| native_name              =
+| native_name_lang         =
+| english_name             =
+| time                     = 11:10 – 13:20 [[UTC]]<br />15:50 – 17:00 UTC<br/ > 20:00 – 22:10 UTC<ref>{{cite web|url=https://dyn.com/blog/dyn-analysis-summary-of-friday-october-21-attack/|title=Official Dyn Analysis Summary|author=Dyn|date=26 October 2016|work=dyn.com|access-date=5 February 2019}}</ref>
+| duration                 =
+| date                     = {{start date|2016|10|21}}
+| venue                    =
+| location                 = [[Europe]] and [[North America]], especially the [[East Coast of the United States|Eastern United States]]
+| coordinates              = <!-- {{coord|LAT|LON|region:XXXX_type:event|display=inline,title}} -->
+| also_known_as            =
+| type                     = [[Denial-of-service attack#Distributed attack|Distributed denial-of-service]]
+| theme                    =
+| cause                    =
+| first_reporter           =
+| budget                   =
+| patron                   = <!-- or |patrons= -->
+| organisers               = <!-- or |organizers= -->
+| filmed_by                =
+| participants             = Unknown
+| outcome                  =
+| casualties1              =
+| casualties2              =
+| casualties3              =
+| reported deaths          =
+| reported injuries        =
+| reported missing         =
+| reported property damage =
+| burial                   =
+| inquiries                =
+| inquest                  =
+| coroner                  =
+| arrests                  =
+| suspects                 = New World Hackers, [[Anonymous (group)|Anonymous]]<br />(self-claimed)
+| accused                  =
+| convicted                =
+| charges                  =
+| trial                    =
+| verdict                  =
+| convictions              =
+| sentence                 =
+| publication_bans         =
+| litigation               =
+| awards                   =
+| url                      =
+| blank_label              = <!-- or |blank_data= -->
+| blank1_label             = <!-- or |blank1_data= -->
+| blank2_label             = <!-- or |blank2_data= -->
+| website                  = <!-- {{URL|example.com}} -->
+| notes                    =
+}}
+
+The '''DDoS attack on Dyn''' was a series of [[Denial-of-service attack#Distributed DoS|distributed denial-of-service attacks]] (DDoS attacks) on October 21, 2016, targeting systems operated by [[Domain Name System]] (DNS) provider [[Dyn (company)|Dyn]]. The attack caused major Internet platforms and services to be unavailable to large swathes of users in Europe and North America.<ref name=":0">{{Cite web|url=https://techcrunch.com/2016/10/21/many-sites-including-twitter-and-spotify-suffering-outage/|title=Many sites including Twitter, Shopify and Spotify suffering outage|last1=Etherington|first1=Darrell|last2=Conger|first2=Kate|website=TechCrunch|access-date=2016-10-21}}</ref><ref>{{Cite news|url=https://www.bloomberg.com/news/articles/2016-10-21/internet-service-disrupted-in-large-parts-of-eastern-u-s|title=The Possible Vendetta Behind the East Coast Web Slowdown|newspaper=Bloomberg.com|access-date=2016-10-21}}</ref> The groups [[Anonymous (group)|Anonymous]] and New World Hackers claimed responsibility for the attack, but scant evidence was provided.<ref name="politico1"/>
+
+As a DNS provider, Dyn provides to end-users the service of mapping an Internet [[domain name]]—when, for instance, entered into a [[web browser]]—to its corresponding [[IP address]]. The [[denial-of-service attack#Distributed attack|distributed denial-of-service]] (DDoS) attack was accomplished through numerous DNS lookup requests from tens of millions of IP addresses.<ref name="wired"/> The activities are believed to have been executed through a [[botnet]] consisting of many [[Internet of things|Internet-connected devices]]—such as [[printer (computing)|printers]], [[IP camera]]s, [[residential gateway]]s and [[baby monitor]]s—that had been infected with the [[Mirai (malware)|Mirai]] malware.
+
+== Affected services ==
+Services affected by the attack included:
+
+{{Div col|colwidth=15em}}
+* [[Airbnb]]<ref name="adweek">{{cite web|last1=Heine|first1=Christopher|title=A Major Cyber Attack Is Hurting Twitter, Spotify, Pinterest, Etsy and Other Sites|url=http://www.adweek.com/news/technology/major-cyber-attack-hurting-twitter-spotify-etsy-shopify-and-other-sites-174214|website=AdWeek|access-date=21 October 2016}}</ref>
+* [[Amazon.com]]<ref name="CNBC">{{cite news|last1=Lovelace Jr.|first1=Berkeley|title=After cyberassault KOs Amazon, Twitter, Spotify, third attack reported|url=https://www.cnbc.com/2016/10/21/major-websites-across-east-coast-knocked-out-in-apparent-ddos-attack.html|access-date=21 October 2016|work=CNBC|date=21 October 2016}}</ref>
+* [[Ancestry.com]]<ref name="gizmodo"/><ref name="Fusion"/>
+* ''[[The A.V. Club]]''<ref>{{cite web|last1=Chavez|first1=Danette|title=Here's why half the internet went down today|url=http://www.avclub.com/article/heres-why-half-internet-went-down-today-244611|website=The A.V. Club|access-date=21 October 2016|date=21 October 2016}}</ref>
+* [[BBC]]<ref name="Fusion">{{cite web|last1=Chiel|first1=Ethan|title=Here Are the Sites You Can't Access Because Someone Took the Internet Down|url=http://fusion.net/story/360952/which-sites-affected-ddos-attack/|website=Fusion|access-date=21 October 2016}}</ref>
+* ''[[The Boston Globe]]''<ref name="adweek"/>
+* [[Box (company)|Box]]<ref name="ibtimes">{{cite web|last1=Murdock|first1=Jason|title=Twitter, Spotify, Reddit among top websites knocked offline by major DDoS attack|url=http://www.ibtimes.co.uk/twitter-spotify-reddit-among-top-websites-knocked-offline-by-major-ddos-attack-1587646|website=[[International Business Times UK]]|access-date=21 October 2016|date=21 October 2016}}</ref>
+* ''[[Business Insider]]''<ref name="Fusion"/>
+* [[CNN]]<ref name="Fusion"/>
+* [[Comcast]]<ref name="atlantic">{{Cite news|url=https://www.theatlantic.com/technology/archive/2016/10/when-the-entire-internet-seems-to-break-at-once/504956/|title=What's Going On With the Internet Today?|last1=Meyer|first1=Robinson|last2=LaFrance|first2=Adrienne|newspaper=The Atlantic|language=en-US|access-date=2016-10-21}}</ref>
+* [[TechCrunch#CrunchBase|CrunchBase]]<ref name="Fusion"/>
+* [[DirecTV]]<ref name="Fusion"/>
+* ''[[The Elder Scrolls Online]]''<ref name="Fusion"/><ref>{{cite tweet|user=TESOnline|number=789545206228156416|date=21 October 2016|title=We are still investigating intermittent login issues some players are experiencing across all megaservers.}}</ref>
+* [[Electronic Arts]]<ref name="atlantic"/>
+* [[Etsy]]<ref name="adweek"/><ref name="bbc">{{cite web|title=Massive web attacks briefly knock out top sites|url=https://www.bbc.com/news/technology-37728015|website=BBC News|date=21 October 2016}}</ref>
+* [[FiveThirtyEight]]<ref name="Fusion"/>
+* [[Fox News]]<ref name="Guardian">{{cite web|last1=Thielman|first1=Sam|last2=Johnston|first2=Chris|title=Major cyber attack disrupts internet service across Europe and US|url=https://www.theguardian.com/technology/2016/oct/21/ddos-attack-dyn-internet-denial-service|website=The Guardian|access-date=21 October 2016|date=21 October 2016}}</ref>
+* ''[[The Guardian]]''<ref name="Guardian"/>
+* [[GitHub]]<ref name="adweek"/><ref name="atlantic"/>
+* [[Grubhub]]<ref>{{cite web|last1=Hinckley|first1=Story|title=Did the East Coast just suffer a massive cyberattack?|url=http://www.csmonitor.com/Technology/2016/1021/Did-the-East-Coast-just-suffer-a-massive-cyberattack|website=Christian Science Monitor|access-date=21 October 2016|date=21 October 2016}}</ref>
+* [[HBO]]<ref name="Fusion"/>
+* [[Heroku]]<ref name="nextweb">{{cite web|last1=Hughes|first1=Matthew|title=A massive DDOS attack against Dyn DNS is causing havoc online [Updated]|url=https://thenextweb.com/security/2016/10/21/massive-ddos-attack-dyn-dns-causing-havoc-online/|website=The Next Web|access-date=21 October 2016|date=21 October 2016}}</ref>
+* [[HostGator]]<ref name="Fusion"/>
+* [[iHeartRadio]]<ref name="gizmodo"/><ref name="wjhg">{{cite web|title=Having internet problems today? Here's what's going on|url=http://www.wjhg.com/content/news/Having-internet-problems-today-Heres-whats-going-on-397907861.html|website=WJHG-TV|access-date=21 October 2016}}</ref>
+* [[Imgur]]<ref name="roblox">{{cite web|last1=Chacos|first1=Brad|title=Major DDoS attack on Dyn DNS knocks Spotify, Twitter, Github, PayPal, and more offline|url=http://www.pcworld.com/article/3133847/internet/ddos-attack-on-dyn-knocks-spotify-twitter-github-etsy-and-more-offline.html|website=PCWorld|access-date=22 October 2016}}</ref>
+* [[Indiegogo]]<ref name="gizmodo"/>
+* [[Mashable]]<ref name="reuters">{{cite web|last1=Menn|first1=Joseph|title=Cyber attacks disrupt PayPal, Twitter, other sites|url=https://www.reuters.com/article/us-usa-cyber-idUSKCN12L1ME|website=Reuters|access-date=23 October 2016|date=22 October 2016}}</ref>
+* [[National Hockey League]]<ref name="Fusion"/>
+* [[Netflix]]<ref name="Fusion"/><ref name="Guardian"/>
+* ''[[The New York Times]]''<ref name="adweek"/><ref name="atlantic"/>
+* [[Overstock.com]]<ref name="Fusion"/>
+* [[PayPal]]<ref name="bbc"/>
+* [[Pinterest]]<ref name="atlantic"/><ref name="bbc"/>
+* [[Pixlr]]<ref name="Fusion"/>
+* [[PlayStation Network]]<ref name="atlantic"/>
+* [[Qualtrics]]<ref name="gizmodo"/>
+* [[Quora]]<ref name="Fusion"/>
+* [[Reddit]]<ref name="gizmodo">{{Cite news|url=https://gizmodo.com/this-is-probably-why-half-the-internet-shut-down-today-1788062835|title=This Is Probably Why Half the Internet Shut Down Today [Update: It's Happening Again]|last=Turton|first=William|newspaper=Gizmodo|language=en-US|access-date=2016-10-21}}</ref><ref name="atlantic"/><ref name="bbc"/>
+* [[Roblox]]<ref>{{cite web|title=DDoS Attack on DNS; Major sites including GitHub PSN, Twitter Suffering Outage|url=https://www.hackread.com/ddos-attack-dns-sites-suffer-outage/|website=HackRead|access-date=23 October 2016|date=21 October 2016}}</ref>
+* [[Ruby Lane]]<ref name="Fusion"/>
+* ''[[RuneScape]]''<ref name="gizmodo"/>
+* [[SaneBox]]<ref name="nextweb"/>
+* [[Seamless (company)|Seamless]]<ref name="roblox" />
+* ''[[Second Life]]''<ref name="secondlife">{{cite web|title=[RESOLVED] Unscheduled Maintenance|url=https://community.secondlife.com/t5/Status-Grid/RESOLVED-Unscheduled-Maintenance/ba-p/3075187|access-date=23 October 2016|url-status=dead|archive-url=https://web.archive.org/web/20161024025120/https://community.secondlife.com/t5/Status-Grid/RESOLVED-Unscheduled-Maintenance/ba-p/3075187|archive-date=24 October 2016}}</ref>
+* [[Shopify]]<ref name="adweek"/>
+* [[Slack (software)|Slack]]<ref name="roblox" />
+* [[SoundCloud]]<ref name="adweek"/><ref name="bbc"/>
+* [[Squarespace]]<ref name="Fusion"/>
+* [[Spotify]]<ref name="gizmodo"/><ref name="atlantic"/><ref name="bbc"/>
+* [[Starbucks]]<ref name="gizmodo"/><ref name="wjhg"/>
+* [[Storify]]<ref name="ibtimes"/>
+* [[Swedish Civil Contingencies Agency]]<ref name="sr-20161024">Joel Westerholm. "[https://sverigesradio.se/sida/artikel.aspx?programid=83&artikel=6547041 Så sänktes Twitter och Regeringen.se i attacken]", [[Sveriges Radio]], 24 October 2016. Retrieved 30 October 2016.</ref>
+* [[Government of Sweden|Swedish Government]]<ref name="sr-20161024"/>
+* [[Tumblr]]<ref name="gizmodo"/><ref name="atlantic"/>
+* [[Twilio]]<ref name="gizmodo"/><ref name="Fusion"/>
+* [[Twitter]]<ref name="adweek"/><ref name="gizmodo"/><ref name="atlantic"/><ref name="bbc"/>
+* [[Verizon Communications]]<ref name="atlantic"/>
+* [[Visa Inc.|Visa]]<ref name="cbs">{{cite web|title=U.S. internet disrupted as firm hit by cyberattacks|url=http://www.cbsnews.com/news/internet-disrupted-dyn-hit-by-ddos-cyberattack/|website=CBS News|access-date=21 October 2016}}</ref>
+* [[Vox Media]]<ref name="Verge">{{cite web|last1=Lecher|first1=Colin|title=Denial-of-service attacks are shutting down major websites across the internet|url=https://www.theverge.com/2016/10/21/13357344/ddos-attack-websites-shut-down|website=The Verge|access-date=21 October 2016|date=21 October 2016}}</ref>
+* [[Walgreens]]<ref name="Fusion"/>
+* ''[[The Wall Street Journal]]''<ref name="Guardian"/>
+* [[Wikia]]<ref name="gizmodo"/>
+* ''[[Wired (magazine)|Wired]]''<ref name="ibtimes"/>
+* [[Wix.com]]<ref name="ars">{{cite web|last1=Gallagher|first1=Sean|title=DoS attack on major DNS provider brings Internet to morning crawl [Updated]|url=https://arstechnica.com/security/2016/10/dos-attack-on-major-dns-provider-brings-internet-to-morning-crawl/|website=Ars Technica|date=21 October 2016|access-date=21 October 2016}}</ref>
+* [[WWE Network]]<ref>{{cite web|last1=Wolkenbrod|first1=Rob|title=Why is the WWE Network Down on Friday, October 21?|url=http://dailyddt.com/2016/10/21/wwe-network-down-ddos-attack/|website=Daily DDT|access-date=22 October 2016|date=21 October 2016}}</ref>
+* [[Xbox Live]]<ref>{{cite web|last1=Sarkar|first1=Samit|title=Massive DDoS attack affecting PSN, some Xbox Live apps (update)|url=http://www.polygon.com/2016/10/21/13361014/psn-xbox-live-down-ddos-attack-dyn|website=Polygon|access-date=23 October 2016|date=21 October 2016}}</ref>
+* [[Yammer]]<ref name="roblox" />
+* [[Yelp]]<ref name="Fusion"/>
+* [[Zillow]]<ref name="Fusion"/>
+{{div col end}}
+
+==Investigation==
+[[File:Cyberattack Slows US Access to Popular Sites.webm|thumb|right|[[White House]] spokesperson [[Josh Earnest]] responds on October 21, 2016, the day of the attack]]
+The [[United States Department of Homeland Security|US Department of Homeland Security]] started an investigation into the attacks, according to a [[White House]] source.<ref name=":01">{{Cite web|last1=Etherington|first1=Darrell|last2=Conger|first2=Kate|title=Many sites including Twitter, Shopify and Spotify suffering outage|url=https://techcrunch.com/2016/10/21/many-sites-including-twitter-and-spotify-suffering-outage/|access-date=2016-10-21|website=TechCrunch}}</ref><ref>{{Cite news|url=http://www.politico.com/story/2016/10/websites-down-possible-cyber-attack-230145|title=Government probes major cyberattack causing internet outages|newspaper=[[Politico]]|access-date=2016-10-21}}</ref><ref>{{Cite magazine|url=http://time.com/4540921/internet-dyn-outage-homeland-security/|title=Homeland Security Is 'Investigating All Potential Causes' of Internet Disruptions|last1=Finkle|first1=Jim|last2=Volz|first2=Dustin|magazine=[[Time (magazine)|Time]] |access-date=2016-10-21}}</ref> No group of hackers claimed responsibility during or in the immediate aftermath of the attack.<ref>{{cite web|url=https://money.cnn.com/2016/10/21/technology/ddos-attack-popular-sites/index.html|title=Popular sites like Amazon, Twitter and Netflix suffer outages|website=money.cnn.com|date=21 October 2016|publisher=CNN Money|access-date=October 21, 2016}}</ref> Dyn's chief strategist said in an interview that the assaults on the company's servers were very complex and unlike everyday DDoS attacks.<ref name=":02">{{Cite news|url=https://www.nytimes.com/2016/10/22/business/internet-problems.html|title=No, It's Not Just You. The Internet Is (Still) Having Problems.|last1=Perlroth|first1=Nicole|date=2016-10-21|last2=Mccann|first2=Erin|newspaper=The New York Times|issn=0362-4331|access-date=2016-10-21}}</ref> [[Barbara Simons]], a member of the advisory board of the United States [[Election Assistance Commission]], said such attacks could affect [[electronic voting]] for overseas military or civilians.<ref name=":02" />
+
+Dyn disclosed that, according to business risk intelligence firm FlashPoint and [[Akamai Technologies]], the attack was a [[botnet]] coordinated through numerous [[Internet of things|Internet of Things]]-enabled (IoT) devices, including [[camera]]s, [[residential gateway]]s, and [[baby monitor]]s, that had been infected with [[Mirai (malware)|Mirai]] malware. The attribution of the attack to the Mirai botnet had been previously reported by BackConnect Inc., another security firm.<ref>{{Cite news|url=http://motherboard.vice.com/read/blame-the-internet-of-things-for-destroying-the-internet-today|title=Blame the Internet of Things for Destroying the Internet Today|newspaper=Motherboard|language=en-us|access-date=2016-10-27}}</ref> Dyn stated that they were receiving malicious requests from tens of millions of [[IP address]]es.<ref name="wired">{{Cite news|url=https://www.wired.com/2016/10/internet-outage-ddos-dns-dyn/|title=What We Know About Friday's Massive East Coast Internet Outage|last=Newman|first=Lily Hay|newspaper=WIRED|language=en-US|access-date=2016-10-21}}</ref><ref>{{Cite news|url=https://www.nytimes.com/2016/10/22/business/internet-problems-attack.html|title=Internet Attack Spreads, Disrupting Major Websites|last=Perlroth|first=Nicole|date=2016-10-21|newspaper=The New York Times|issn=0362-4331|access-date=2016-10-22}}</ref> Mirai is designed to [[brute-force attack|brute-force]] the security on an IoT device, allowing it to be controlled remotely.
+
+Cybersecurity investigator [[Brian Krebs]] noted that the source code for Mirai had been released onto the Internet in an [[Open-source software|open-source]] manner some weeks prior, which made the investigation of the perpetrator more difficult.<ref>{{cite web | url = https://www.theverge.com/2016/10/21/13362354/dyn-dns-ddos-attack-cause-outage-status-explained | title= How an army of vulnerable gadgets took down the web today | first = Nick | last = Statt | date = October 21, 2016 | access-date = October 21, 2016 | work = [[The Verge]] }}</ref>
+
+On 25 October 2016, US President Obama stated that the investigators still had no idea who carried out the cyberattack.<ref>CNN, 25 October 2016, [https://money.cnn.com/2016/10/25/technology/cyberattack-obama-dyn-ddos/index.html Obama: We have no idea who carried out huge cyberattack]</ref>
+
+On 13 December 2017, the Justice Department announced that three men (Paras Jha, 21, Josiah White, 20, and Dalton Norman, 21) had entered guilty pleas in cybercrime cases relating to the Mirai and clickfraud botnets.<ref>Justice Department, 13 December 2017, [https://www.justice.gov/usao-nj/pr/justice-department-announces-charges-and-guilty-pleas-three-computer-crime-cases Justice Department Announces Charges And Guilty Pleas In Three Computer Crime Cases Involving Significant Cyber Attacks]</ref>
+
+==Perpetrators==
+In correspondence with the website ''[[Politico]]'', [[hacktivist]] groups SpainSquad, [[Anonymous (group)|Anonymous]], and '''New World Hackers'''<!--incoming redirect to section - see [[MOS:BOLD]], [[WP:R#PLA]]--> claimed responsibility for the attack in retaliation against [[Ecuador]]'s rescinding Internet access to [[WikiLeaks]] founder [[Julian Assange]], at their [[Embassy of Ecuador, London|embassy in London]], where he had been granted [[right of asylum|asylum]].<ref name="politico1">{{cite web |last1=Romm |first1=Tony |last2=Geller |first2=Eric |title=WikiLeaks supporters claim credit for massive U.S. cyberattack, but researchers skeptical |url=http://www.politico.com/story/2016/10/websites-down-possible-cyber-attack-230145 |website=Politico |date=21 October 2016 |access-date=22 October 2016}}</ref> This claim has yet to be confirmed.<ref name="politico1"/> WikiLeaks alluded to the attack on [[Twitter]], tweeting "Mr. Assange is still alive and WikiLeaks is still publishing. We ask supporters to stop taking down the US internet. You proved your point."<ref name="smh">{{cite news |last1=Han |first1=Esther |title=WikiLeaks claims its supporters are behind the massive DDoS cyber attack |url=http://www.smh.com.au/technology/technology-news/wikileaks-points-to-its-supporters-for-massive-ddos-cyber-attack-20161021-gs881u.html |newspaper=[[The Sydney Morning Herald]] |access-date=22 October 2016 |date=22 October 2016}}</ref> New World Hackers has claimed responsibility in the past for similar attacks targeting sites like [[BBC]] and [[ESPN.com]].<ref>{{Cite news |url=https://www.nytimes.com/aponline/2016/10/21/world/europe/ap-disruptive-cyberattack.html|title=Cyberattacks on Key Internet Firm Disrupt Internet Services|last1=Satter |first1=Raphael |last2=Fowler |first2=Bree |last3=Bajak |date=21 October 2016 |newspaper=The New York Times |issn=0362-4331 |access-date=22 October 2016 |archive-date=2016-10-25 |archive-url=https://web.archive.org/web/20161025073904/https://www.nytimes.com/aponline/2016/10/21/world/europe/ap-disruptive-cyberattack.html}}</ref>
+
+On October 26, FlashPoint stated that the attack was most likely done by [[script kiddie]]s.<ref>{{cite news|last1=Lomas|first1=Natasha|title=Dyn DNS DDoS likely the work of script kiddies, says FlashPoint, so i guess that means anonymous did it, as most of anonymous are script kiddies anyway |url=https://techcrunch.com/2016/10/26/dyn-dns-ddos-likely-the-work-of-script-kiddies-says-flashpoint/ |access-date=26 October 2016 |work=TechCrunch |date=26 October 2016}}</ref>
+
+A November 17, 2016, ''Forbes'' article reported that the attack was likely carried out by "an angry gamer".<ref>{{cite web |url=https://www.forbes.com/sites/leemathews/2016/11/17/angry-gamer-blamed-for-most-devastating-ddos-of-2016/#78871c472dac |title=Angry Gamer Blamed For Most Devastating DDoS Of 2016 |last=Mathews |first=Lee |date=17 November 2016 |website=Forbes.com |access-date=20 April 2018}}</ref>
+
+A September 20, 2018, WeLiveSecurity article stated the its three creators meant it as a way of gaining an advantage in fierce competition surrounding the computer game Minecraft – by preventing players from using competitors’ servers and driving them to their own servers in order to ultimately make money off them.<ref>{{cite web |url=https://www.welivesecurity.com/2018/09/20/mirais-architects-avoid-prison-thanks-work-fbi/ |title=Mirai's architects avoid prison thanks to work for FBI |last=Foltýn |first=Tomáš |date=20 September 2018 |website=welivesecurity.com |access-date=5 October 2021}}</ref>
+
+On December 9, 2020, one of the perpetrators pleaded guilty to taking part in the attack. The perpetrator's name was withheld due to his or her age.
+<ref>{{cite web |url=https://www.justice.gov/opa/pr/individual-pleads-guilty-participating-internet-things-cyberattack-2016 |title=Individual Pleads Guilty to Participating in Internet-of-Things Cyberattack in 2016 |date= 9 December 2020 |website=justice.gov |access-date= 7 January 2021}}</ref>
+
+==See also==
+{{Portal|Internet}}
+* [[WannaCry ransomware attack]]
+* [[Mirai (malware)]]
+* [[Vulnerability (computing)]]
+* [https://www.red-button.net/blog/dyn-dyndns-ddos-attack/ Dyn (DynDNS) DDoS Attack]
+{{clear}}
+
+==References==
+{{reflist|30em}}
+
+{{Commons category|October 2016 Dyn cyberattack}}
+{{Hacking in the 2010s}}
+
+{{DEFAULTSORT:Dyn cyberattack, October 2016}}
+[[Category:2016 in computing]]
+[[Category:Denial-of-service attacks]]
+[[Category:October 2016 crimes in Europe]]
+[[Category:October 2016 crimes in the United States]]
+[[Category:Internet of things]]
+[[Category:WikiLeaks]]
+[[Category:Botnets]]
+[[Category:Malware]]
+[[Category:Domain Name System]]
+[[Category:Hacking in the 2010s]]
+[[Category:Cloud infrastructure attacks & failures]]
+[[Category:2010s internet outages]]

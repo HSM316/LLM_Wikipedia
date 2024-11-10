@@ -1,0 +1,31 @@
+Microsoft HoloLens 2 is a pair of mixed reality smartglasses developed and manufactured by Microsoft. It is the successor to the pioneering Microsoft HoloLens. On February 24, 2019 the Hololens 2 enterprise edition debuted as the first variant of the device, followed by a developer edition that was announced on May 2, 2019. It was subsequently released in limited numbers on November 7, 2019. 
+
+ History 
+HoloLens 2 was announced by Alex Kipman on February 24, 2019 at MWC in Barcelona, Spain. You can see the HoloLens 2 on-stage demo from MWC 2019 here. On May 7, 2019 the HoloLens 2 was shown off again at Microsoft Build. There, it showcased an application created with Unreal Engine, which you can see here.
+
+On August 20, 2019, at Hot Chips 31 Microsoft presented their Holographic Processing Unit (HPU) 2.0 custom design for the Hololens 2.
+
+ 7x SIMD Fixed Point (SFP) for 2D processing
+ 6x Floating Vector Processor (FVP) for 3D processing
+ >1 TOP of programmable compute
+ 125Mb SRAM
+ 79mm2 die size and 2 Billion transistors
+ TSMC 16FF+ process
+ PCIe 2.0 x1 at 100 MB/s bandwidth to Snapdragon 850
+
+On August 29, 2019, at the World Artificial Intelligence Conference in Shanghai, Microsoft's Executive Vice President, Harry Shum, revealed that HoloLens 2 will go on sale sometime in September 2019. The product started shipping on November 7, 2019.
+
+ Improvements over the previous model 
+Microsoft highlighted three main improvements made to the device: immersiveness, ergonomics and business friendliness.
+
+HoloLens 2 has a diagonal field of view of 52 degrees, improving over the 34 degree field of view of the first edition of HoloLens, while keeping a resolution of 47 pixels per degree. 
+
+Holographic Processing Unit (HPU) 2.0 improvements compared to the HPU 1.0:
+
+ 1.7x compute
+ 2x effective DRAM bandwidth
+ Improved Hologram stability
+ New hardware accelerated workloads such as eye tracking, fully articulated hand tracking, semantic labeling, spatial audio and JBL filter
+
+ HoloLens 2 Emulation 
+The HoloLens 2 Emulator was made available to developers on April 17, 2019.  This emulator allows developers to create applications for the HoloLens 2 before the device ships. For more technical information on the HoloLens 2 Emulator, see the Microsoft Documentation.

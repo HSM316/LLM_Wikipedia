@@ -1,0 +1,88 @@
+{{short description|Internet platform for data science competitions}}
+{{Infobox company
+| name = Kaggle
+| logo = Kaggle_Logo.svg
+| logo_size = 200px
+| logo_caption = Kaggle logotype
+| type = [[Subsidiary]]
+| founder = {{hlist|[[Anthony Goldbloom]]}}
+| area_served = 
+| key_people = {{Unbulleted list|D. Sculley <small>([[Chief executive officer|CEO]])</small>|Julia Elliott<small> ([[Chief operating officer|COO]]) </small>|Jeff Moser <small> ([[Software architect|Chief Architect]]) </small>}}
+| industry = [[Data science]]
+| genre = 
+| products = Competitions, Kaggle Kernels, Kaggle Datasets, Kaggle Learn
+| services = 
+| revenue = 
+| operating_income = 
+| net_income = 
+| num_employees = 
+| parent = [[Google]]<br>{{small|(2017–present)}}
+| divisions = 
+| subsid = 
+| footnotes = 
+| foundation = April 2010 <!-- this parameter modifies "Founded" -->|
+| location_country = 
+| location = [[San Francisco, United States]]
+| origins = 
+| homepage = {{URL|kaggle.com}}
+| dissolved = 
+}}
+
+'''Kaggle''' is a [[data science competition platform]] and online community for [[data science|data scientist]]s and [[machine learning]] practitioners under [[Google LLC]]. Kaggle enables users to find and publish datasets, explore and build models in a web-based data science environment, work with other data scientists and machine learning engineers, and enter competitions to solve data science challenges.<ref>{{Cite web |date=2023-04-17 |title=A Beginner’s Guide to Kaggle for Data Science |url=https://www.makeuseof.com/beginners-guide-to-kaggle/ |access-date=2023-06-10 |website=MUO |language=en}}</ref>
+
+==History==
+Kaggle was founded by [[Anthony Goldbloom]] in April 2010.<ref name="TechCrunch_Lardinois">{{cite web |title=Google is acquiring data science community Kaggle |url=https://techcrunch.com/2017/03/07/google-is-acquiring-data-science-community-kaggle/ |publisher=[[Techcrunch]] |author1=Lardinois, Frederic |author2=Mannes, John |author3=Lynley, Matthew |date=March 8, 2017 |url-status=live |archive-url=https://archive.today/20170308050143/https://techcrunch.com/2017/03/07/google-is-acquiring-data-science-community-kaggle/ |archive-date=March 8, 2017 |access-date=March 9, 2017}}</ref> [[Jeremy Howard (entrepreneur)|Jeremy Howard]], one of the first Kaggle users, joined in November 2010 and served as the President and Chief Scientist.<ref>{{Cite news |title=The exabyte revolution: how Kaggle is turning data scientists into rock stars |language=en-GB |work=Wired UK |url=https://www.wired.co.uk/article/the-exabyte-revolution |access-date=2023-09-30 |issn=1357-0978 |archive-url=https://archive.today/20230930002008/https://www.wired.co.uk/article/the-exabyte-revolution |archive-date=30 September 2023}}</ref> Also on the team was [[Nicholas Gruen]] serving as the founding chair.<ref>{{cite web |title=Local minnow the toast of Silicon Valley |url=https://www.smh.com.au/business/local-minnow-the-toast-of-silicon-valley-20111103-1mxt9.html |date=4 November 2011 |archive-url=https://archive.today/20230930003717/https://www.smh.com.au/business/local-minnow-the-toast-of-silicon-valley-20111103-1mxt9.html |archive-date=30 September 2023 |work=The Sydney Morning Herald |last=Mulcaster |first=Glenn}}</ref> In 2011, the company raised $12.5 million and [[Max Levchin]] became the chairman.<ref>{{cite web|title=Max Levchin Becomes Chairman Of Kaggle, A Startup That Helps NASA Solve Impossible Problems |url=https://www.businessinsider.com/kaggle-11-million-max-levchin-2011-11 |archive-url=https://archive.today/20230930003553/https://www.businessinsider.com/kaggle-11-million-max-levchin-2011-11 |date= |archive-date=30 September 2023 |work=Business Insider |last=Lichaa |first=Zachary}}</ref> On March 8, 2017, [[Fei-Fei Li]], Chief Scientist at Google, announced that [[Google]] was acquiring Kaggle.<ref>{{Cite news |title=Welcome Kaggle to Google Cloud |language=en |work=Google Cloud Platform Blog |url=https://cloudplatform.googleblog.com/2017/03/welcome-Kaggle-to-Google-Cloud.html |access-date=2018-08-19 |archive-url=https://archive.today/20170308205227/https://cloudplatform.googleblog.com/2017/03/welcome-Kaggle-to-Google-Cloud.html |archive-date=8 March 2017}}</ref>
+
+In June 2017, Kaggle surpassed 1 million registered users, and as of October 2023, it has over 15 million users in 194 countries.<ref>{{Cite web|url=https://www.kaggle.com/tunguz/unique-kaggle-users|title = Unique Kaggle Users}}</ref><ref>{{Cite news|url=https://www.nytimes.com/2012/11/24/science/scientists-see-advances-in-deep-learning-a-part-of-artificial-intelligence.html|title=Scientists See Advances in Deep Learning, a Part of Artificial Intelligence|last=Markoff|first=John|work=The New York Times |date=24 November 2012 |access-date=2018-08-19|language=en}}</ref><ref>{{Cite news |date=2017-06-06 |title=We've passed 1 million members |url=http://blog.kaggle.com/2017/06/06/weve-passed-1-million-members/ |access-date=2018-08-19 |work=Kaggle Winner's Blog |language=en-US}}</ref> 
+
+In 2022, founders Goldbloom and Hamner stepped down from their positions and D. Sculley became the [[Chief executive officer|CEO]].<ref>{{Cite web |last=Wali |first=Kartik |date=2022-06-08 |title=Kaggle gets new CEO, founders quit after a decade |url=https://analyticsindiamag.com/kaggle-gets-new-ceo-founders-quit-after-a-decade/ |access-date=2023-06-10 |website=Analytics India Magazine |language=en-US}}</ref>
+
+In February 2023, Kaggle introduced Models, allowing users to discover and use pre-trained models through deep integrations with the rest of Kaggle’s platform.<ref>{{cite web |title=&#91;Product Launch&#93; Introducing Kaggle Models &#124; Data Science and Machine Learning |url=https://www.kaggle.com/discussions/product-feedback/391200}}</ref>
+
+== Site overview ==
+
+=== Competitions ===
+Many [[machine-learning]] competitions have been run on Kaggle since the company was founded. Notable competitions include gesture recognition for [[Microsoft Kinect]],<ref>{{cite news|last=Byrne|first=Ciara|title=Kaggle launches competition to help Microsoft Kinect learn new gestures|url=https://venturebeat.com/2011/12/12/kaggle-competition-microsoft-kinect-learn-new-gestures/|access-date=13 December 2011|newspaper=VentureBeat|date=December 12, 2011}}</ref> making a [[soccer|football]] [[Artificial intelligence|AI]] for [[Manchester City F.C.|Manchester City]], coding a trading algorithm for [[Two Sigma Investments]],<ref name="ft-novel">{{cite news |last=Wigglesworth |first=Robin |date=March 8, 2017 |title=Hedge funds adopt novel methods to hunt down new tech talent |url=https://www.ft.com/content/1fd47a60-03e5-11e7-aa5b-6bb07f5c8e12 | work=[[The Financial Times]] |location=United Kingdom |access-date=October 29, 2017}}</ref> and improving the search for the [[Higgs boson]] at [[CERN]].<ref>{{cite news|title=The machine learning community takes on the Higgs|url=http://www.symmetrymagazine.org/article/july-2014/the-machine-learning-community-takes-on-the-higgs/|access-date=14 January 2015|newspaper=Symmetry Magazine|date=July 15, 2014}}</ref>
+
+The competition host prepares the data and a description of the problem; the host may choose whether it's going to be rewarded with money or be unpaid. Participants experiment with different techniques and compete against each other to produce the best models. Work is shared publicly through Kaggle Kernels to achieve a better benchmark and to inspire new ideas. Submissions can be made through Kaggle Kernels, via manual upload or using the Kaggle [[Application programming interface|API]]. For most competitions, submissions are scored immediately (based on their predictive accuracy relative to a hidden solution file) and summarized on a live leaderboard. After the deadline passes, the competition host pays the prize money in exchange for "a worldwide, perpetual, irrevocable and royalty-free license [...] to use the winning Entry", i.e. the algorithm, software and related [[intellectual property]] developed, which is "non-exclusive unless otherwise specified".<ref>{{cite web |author=Kaggle |title=Terms and Conditions - Kaggle |url=https://www.kaggle.com/terms}}</ref>
+
+Alongside its public competitions, Kaggle also offers private competitions, which are limited to Kaggle's top participants. Kaggle offers a free tool for data science teachers to run academic machine-learning competitions.<ref>{{cite web |author=Kaggle |title=Kaggle in Class |url=http://inclass.kaggle.com/ |url-status=dead |archive-url=https://web.archive.org/web/20110616013541/http://inclass.kaggle.com/ |archive-date=2011-06-16 |access-date=2011-08-12}}</ref> Kaggle also hosts recruiting competitions in which data scientists compete for a chance to interview at leading data science companies like [[Facebook]], [[Winton Group|Winton Capital]], and [[Walmart]].
+
+Kaggle's competitions have resulted in successful projects such as furthering [[HIV]] research,<ref>{{cite news|last=Carpenter|first=Jennifer|title=May the Best Analyst Win|url=https://www.science.org/doi/abs/10.1126/science.331.6018.698|access-date=1 April 2011|newspaper=Science Magazine|date=February 2011|volume=331 |issue=6018 |pages=698–699 |doi=10.1126/science.331.6018.698 }}</ref> [[chess]] ratings<ref>{{cite news|last=Sonas|first=Jeff|title=The Deloitte/FIDE Chess Rating Challenge|url=http://www.chessbase.com/newsdetail.asp?newsid=7020|access-date=3 May 2011|newspaper=Chessbase|date=20 February 2011}}</ref> and [[traffic]] forecasting.<ref>{{cite news|last=Foo|first=Fran|title=Smartphones to predict NSW travel times?|url=http://www.theaustralian.com.au/australian-it/smartphone-used-to-predict-nsw-travel-times/story-e6frgakx-1226034533295|access-date=3 May 2011|newspaper=The Australian|date=April 6, 2011}}</ref> [[Geoffrey Hinton]] and George Dahl used deep [[neural networks]] to win a competition hosted by [[Merck & Co.|Merck]].{{Citation needed|date=June 2023}} Vlad Mnih (one of Hinton's students) used deep neural networks to win a competition hosted by [[Adzuna]].{{Citation needed|date=June 2023}} This resulted in the technique being taken up by others in the Kaggle community. Tianqi Chen from the [[University of Washington]] also used Kaggle to show the power of [[Xgboost|XGBoost]], which has since replaced [[Random forest|Random Forest]] as one of the main methods used to win Kaggle competitions.{{Citation needed|date=June 2023}}
+
+Several academic papers have been published on the basis of findings made in Kaggle competitions.<ref>{{cite conference |url=http://jmlr.org/proceedings/papers/v42/ |title= NIPS 2014 Workshop on High-energy Physics and Machine Learning | book-title= JMLR W&CP | volume=42}}</ref>  A contributor to this is the live leaderboard, which encourages participants to continue innovating beyond existing best practices.<ref>{{cite news|title=The Value of Feedback in Forecasting Competitions|last1=Athanasopoulos|first1=George|last2=Hyndman|first2=Rob|journal=International Journal of Forecasting|year=2011|volume=27|pages=845–849|url=http://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6V92-52S72B8-1-1&_cdi=5886&_user=559483&_pii=S0169207011000495&_origin=&_coverDate=09%2F30%2F2011&_sk=999729996&view=c&wchp=dGLzVzb-zSkWl&_valck=1&md5=7c0b261207c4204b14d21a95adc9d6bb&ie=/sdarticle.pdf|access-date=2022-03-04|archive-date=2019-02-16|archive-url=https://web.archive.org/web/20190216230244/https://www.sciencedirect.com/science?_ob=MImg&_imagekey=B6V92-52S72B8-1-1&_cdi=5886&_user=559483&_pii=S0169207011000495&_origin=&_coverDate=09%2F30%2F2011&_sk=999729996&view=c&wchp=dGLzVzb-zSkWl&_valck=1&md5=7c0b261207c4204b14d21a95adc9d6bb&ie=%2Fsdarticle.pdf|url-status=dead}}</ref> The winning methods are frequently written on the Kaggle Winner's Blog.
+
+=== Progression System ===
+Kaggle has implemented a progression system to recognize and reward users based on their contributions and achievements within the platform. This system consists of five tiers: Novice, Contributor, Expert, Master, and Grandmaster. Each tier is achieved by meeting specific criteria in competitions, datasets, kernels (code-sharing), and discussions.<ref>{{Cite web |title=Kaggle Progression System |url=https://www.kaggle.com/progression |publisher=Kaggle |access-date=2023-04-03 }}
+</ref>
+
+The highest tier, Kaggle Grandmaster, is awarded to users who have ranked at the top of multiple competitions including high ranking in a solo team. As of May 28, 2024, out of 18.5 million Kaggle accounts, 2,745 have achieved Kaggle Master status and 530 have achieved Kaggle Grandmaster status.<ref>{{Cite web |author=Carl McBride Ellis |title=Kaggle in Numbers |url=https://www.kaggle.com/code/carlmcbrideellis/kaggle-in-numbers |publisher=Kaggle |date=2022-02-10 |access-date=2023-11-01 }}
+</ref>
+
+== See also ==
+*[[Data science competition platform]]
+*[[Anthony Goldbloom]]
+*[[Hugging Face]]
+
+==References==
+{{reflist|30em}}
+
+==Further reading==
+*[https://obamawhitehouse.archives.gov/blog/2011/06/27/competition-shines-light-dark-matter "Competition shines light on dark matter", Office of Science and Technology Policy, Whitehouse website, June 2011]
+*[https://www.wsj.com/articles/SB10001424052748704662604576202392747278936 "May the best algorithm win...", ''The Wall Street Journal'', March 2011]
+*[https://www.newscientist.com/blogs/onepercent/2011/07/kaggle-competition-aims-to-giv.html "Kaggle contest aims to boost Wikipedia editors", ''New Scientist'', July 2011] {{Webarchive|url=https://web.archive.org/web/20160322012136/https://www.newscientist.com/blogs/onepercent/2011/07/kaggle-competition-aims-to-giv.html |date=2016-03-22 }}
+*[http://www.nature.com/nbt/journal/v29/n9/full/nbt.1968.html "Verification of systems biology research in the age of collaborative competition", ''Nature Nanotechnology'', September 2011]
+
+{{Google LLC}}
+{{Google Cloud}}
+
+[[Category:2010 establishments in California]]
+[[Category:2017 mergers and acquisitions]]
+[[Category:Analytics companies]]
+[[Category:Applied machine learning]]
+[[Category:Computer science competitions]]
+[[Category:Crowdsourcing]]
+[[Category:Forecasting competitions]]
+[[Category:Google acquisitions]]
+[[Category:Google Cloud]]
+[[Category:Programming contests]]

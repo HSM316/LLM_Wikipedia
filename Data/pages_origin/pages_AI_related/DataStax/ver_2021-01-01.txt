@@ -1,0 +1,164 @@
+{{Infobox company
+ | name             = DataStax
+ | logo             = DataStax Logo.png
+ | type             = [[Privately held company|Private]]
+ | location_city    = [[Santa Clara, CA]], USA
+ | location_country = United States
+ | foundation       = April 2010 <br/> [[Austin, TX]], USA
+ | founder          = {{plainlist|
+* Jonathan Ellis (CTO)
+* Matt Pfeil
+}}
+ | key_people       = Chet Kapoor<ref>https://www.datastax.com/blog/2019/10/announcing-our-new-ceo</ref> (CEO)<br />Jonathan Ellis (Co-Founder & CTO)<br />Ed Anuf (CPO)<br />Sam Ramji (Chief Strategy Officer)<br />Don Dixon (CFO)
+ | industry         = [[Database Technologies]]
+ | genre            = [[Multi-model database|Multi-Model DBMS]]
+ | num_employees    = 450+ (Nov 2017)<ref name="forbes">{{cite news |last1=Cohan |first1=Peter |title=DataStax Partners With Oracle In $46B Database Market |url=https://www.forbes.com/sites/petercohan/2017/11/24/datastax-partners-with-oracle-in-46-billion-database-market/#4834af397f44 |work=Forbes.com |date=24 Nov 2017}}</ref>
+ | homepage         = [http://www.DataStax.com DataStax.com]
+}}
+
+'''DataStax, Inc.''' is a data management company based in [[Santa Clara, California]].<ref name="wsj">{{cite news |last1=Gage |first1=Deborah |title=DataStax Raises $106 Million in New Pre-IPO Round, Chips Away at Oracle |url=https://blogs.wsj.com/venturecapital/2014/09/04/datastax-raises-106-million-in-new-pre-ipo-round-chips-away-at-oracle/ |publisher=Wall Street Journal |date=4 September 2014}}</ref> The company builds one product, also named DataStax, a storage application which uses [[Apache Cassandra]]. As of October 2017, the company has roughly 400 customers distributed in over 50 countries.<ref name="diginomica">{{cite news |last1=Banks |first1=Martin |title=DataStax adds Oracle to provide practical collaboration |url=https://diginomica.com/2017/10/06/datastax-adds-oracle-provide-practical-collaboration/ |publisher=Diginomica.com |date=6 October 2017}}</ref><ref name="fortune">{{cite news |last1=Clancy |first1=Heather |title=DataStax just scored a big partnership with HP. Here's why. |url=http://fortune.com/2015/04/14/datastax-hp-sales-partnership/ |publisher=Fortune |date=14 April 2015}}</ref>
+
+==History==
+DataStax was built on the open source [[NoSQL]] database [[Apache Cassandra]]. Cassandra was initially developed internally at [[Facebook]] to handle [[Big data|large data sets]] across multiple servers,<ref name="wired"/> and was released as an Apache open source project in 2008.<ref>{{cite news |last1=Jackson |first1=Joab |title=Apache Cassandra Ready for the Enterprise |url=https://www.cio.com/article/2403250/data-management/apache-cassandra-ready-for-the-enterprise.html |publisher=CIO |date=18 October 2011}}</ref> In 2010, Jonathan Ellis and Matt Pfeil left [[Rackspace]], where they had worked with Cassandra, to launch Riptano in Austin, Texas.<ref name="wired">{{cite web|url=https://www.wired.com/2014/08/datastax/|title=OUT IN THE OPEN: THE ABANDONED FACEBOOK TECH THAT NOW HELPS POWER APPLE|date=4 August 2014|publisher=Wired|accessdate=18 September 2017}}</ref><ref>{{cite news |last1=Clark |first1=Don |title=Start-Up Riptano Predicts Success With Cassandra Database |url=https://blogs.wsj.com/venturecapital/2010/10/26/start-up-predicts-success-with-cassandra-database/ |publisher=Wall Street Journal |date=26 October 2010}}</ref> Ellis and Pfeil later renamed the company DataStax, and moved its headquarters to Santa Clara, California.<ref name="wsj"/><ref>{{cite news |last1=Harris |first1=Derrick |title=NoSQL is growing up, and DataStax just raised $106M to prove it |url=https://gigaom.com/2014/09/04/nosql-startup-datastax-raises-106m-as-it-grows-into-being-an-enterprise-software-company/ |publisher=gigaom.com |date=4 September 2014}}</ref>
+
+The company went on to create its own proprietary version of Cassandra, a NoSQL database called DataStax Enterprise (DSE).<ref name="wired"/> Version 1.0, released in October 2011, was the first commercial distribution of the Cassandra database, designed to provide real-time application performance and heavy analytics on the same physical infrastructure.<ref name="forbes"/><ref>{{cite news |last1=Harris |first1=Derrick |title=DataStax gets $11M, fuses NoSQL and Hadoop |url=https://gigaom.com/2011/09/20/datastax-gets-11m-fuses-nosql-and-hadoop/ |publisher=gigaom.com |date=20 September 2011}}</ref> It grew to include advanced security controls, graph database models, operational analytics and advanced search capabilities.<ref name="computerworld">{{cite news |last1=Carey |first1=Scott |title=How DataStax wants its NoSQL platform to drive the 'right now economy' |url=https://www.computerworlduk.com/data/how-datastax-wants-its-nosql-platform-drive-right-now-economy-3664812/ |publisher=Computerworld UK |date=4 October 2017}}</ref>
+
+In September 2014, DataStax raised $106 million in a Series E funding round, raising the total investment in the company to $190 million.<ref name="wsj"/>
+
+In April 2016, the company announced the release of DataStax Enterprise Graph, adding graph data model functionality to DSE.<ref name="techcrunch">{{cite news |last1=Miller |first1=Ron |title=DataStax adds graph databases to enterprise Cassandra product set |url=https://techcrunch.com/2016/04/12/datastax-adds-graph-databases-to-enterprise-cassandra-product-set/ |publisher=techcrunch.com |date=12 April 2016}}</ref>
+
+In March 2017, DataStax announced the release of its DSE platform 5.1, which included improved search capabilities, improved security control, improvements to its Graph data management and improvements to operational analytics performance. DataStax also announced a shift in strategy, with an added focus on customer experience applications. Rather than a new set of technologies, the company started to offer advice on best practice to users of its core DSE platform.<ref>{{cite web|url=http://diginomica.com/2017/03/15/datastax-ceo-launches-new-cx-strategy-focusing-shifting-tech-business/|title=DataStax CEO launches new CX strategy – focus shifting from tech to business|date=15 March 2017|publisher=diginomica|accessdate=12 September 2017}}</ref><ref name="computerworld"/> 
+
+In April 2018, DataStax released DSE 6, with the new version focused on businesses using a hybrid cloud computing model, with all the benefits of a distributed cloud database on any public cloud or on-premise, twice the responsiveness and ability to handle twice the throughput.<ref name="sdtimes">{{cite news |last1=Sargent |first1=Jenna |title=DataStax Enterprise 6 released with double the Apache Cassandra performance |url=https://sdtimes.com/data/datastax-enterprise-6-released-with-double-the-apache-cassandra-performance/ |publisher=San Diego Times |date=19 April 2018}}</ref><ref>{{cite news |last1=Whiting |first1=Rick |title=DataStax Pushes The Cloud Database Performance Boundary With New Release |url=https://www.crn.com/news/applications-os/300102226/datastax-pushes-the-cloud-database-performance-boundary-with-new-release.htm?itc=refresh |publisher=crn.com |date=17 April 2018}}</ref>
+
+In December 2018, DataStax released DSE 6.7, which offer enterprise customers five key new feature upgrades, including: improved analytics, geospatial search, improved data protection in the cloud, enhanced performance insights and new developer integration tools with our Apache Kafka Connector and certified production Docker images.<ref>{{cite web|url=https://www.datastax.com/press-release/datastax-announces-datastax-enterprise-67/|title=DataStax announces the release of DSE 6.7 |publisher=datastax.com}}</ref>
+
+In 2019, Chet Kapoor became the new CEO of Datastax.
+
+== Version history of the DataStax product ==
+{| class="wikitable"
+|+
+!Version
+!Release Date
+|-
+|6.7.4
+|27 June 2019
+|-
+|6.7.3
+|23 April 2019
+|-
+|6.7.2
+|27 February 2019
+|-
+|6.7.1
+|11 February 2019
+|-
+|6.7.0
+|5 December 2018
+|-
+|
+|
+|-
+|6.0.9
+|9 July 2019
+|-
+|6.0.8
+|11 June 2019
+|-
+|6.0.7
+|1 April 2019
+|-
+|6.0.6
+|27 February 2019
+|-
+|6.0.5
+|7 February 2019
+|-
+|6.0.4
+|8 October 2018
+|-
+|6.0.3
+|20 September 2018
+|-
+|6.0.2
+|19 July 2018
+|-
+|6.0.1
+|5 June 2018
+|-
+|6.0.0
+|17 April 2018
+|-
+|
+|
+|-
+|5.1.16
+|9 July 2019
+|-
+|5.1.15
+|11 June 2019
+|-
+|5.1.14
+|16 April 2019
+|-
+|5.1.13
+|27 February 2019
+|-
+|5.1.12
+|26 December 2018
+|-
+|5.1.11
+|14 September 2018
+|-
+|5.1.10
+|5 June 2018
+|-
+|5.1.9
+|24 April 2018
+|-
+|5.1.8
+|5 April 2018
+|-
+|5.1.7
+|15 February 2018
+|-
+|5.1.6
+|22 January 2018
+|-
+|5.1.5
+|19 October 2017
+|-
+|5.1.4
+|12 October 2017
+|-
+|5.1.3
+|6 September 2017
+|-
+|5.1.2
+|18 July 2017
+|-
+|5.1.1
+|23 May 2017
+|-
+|5.1.0
+|18 April 2017
+|}
+
+==See also==
+* [[Apache Cassandra]]
+* [[Oracle Corporation]]
+* [[MongoDB]]
+* [[Couchbase]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official website}}
+
+[[Category:Companies based in Santa Clara, California]]
+[[Category:Column-oriented DBMS software for Linux]]
+[[Category:Graph databases]]
+[[Category:NoSQL]]
+[[Category:American companies established in 2010]]
+[[Category:Cloud computing providers]]

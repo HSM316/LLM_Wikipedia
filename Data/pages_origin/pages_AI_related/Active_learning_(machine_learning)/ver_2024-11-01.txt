@@ -1,0 +1,119 @@
+{{Short description|Machine learning strategy}}
+{{about|a machine learning method|active learning in the context of education|active learning}}
+{{Machine learning bar}}
+'''Active learning''' is a special case of [[machine learning]] in which a learning algorithm can interactively query a human user (or some other information source), to [[Labeled data|label]] new data points with the desired outputs. The human user must possess knowledge/expertise in the problem domain, including the ability to consult/research authoritative sources when necessary. <ref name="settles">{{cite web
+ | title = Active Learning Literature Survey
+ | url = http://pages.cs.wisc.edu/~bsettles/pub/settles.activelearning.pdf
+ | author = Settles, Burr
+ | series= Computer Sciences Technical Report 1648
+ | publisher= University of Wisconsin–Madison
+ | year = 2010
+ | access-date = 2014-11-18
+}}</ref><ref name="rubens2016">{{cite book
+ |last1=Rubens |first1=Neil
+ |last2=Elahi |first2=Mehdi
+ |last3=Sugiyama |first3=Masashi |last4=Kaplan |first4=Dain |editor1-last=Ricci
+ |editor1-first=Francesco
+ |editor2-last=Rokach |editor2-first=Lior
+ |editor3-last=Shapira |editor3-first=Bracha
+ |title=Recommender Systems Handbook
+ |url = http://machinelearning202.pbworks.com/f/Rubens-Active-Learning-RecSysHB2010.pdf
+ |date=2016
+ |publisher=Springer US
+ |isbn=978-1-4899-7637-6
+ |edition=2
+ |chapter=Active Learning in Recommender Systems
+ |doi=10.1007/978-1-4899-7637-6
+|hdl=11311/1006123
+|s2cid=11569603
+ }}</ref><ref name="das2016">{{cite book
+ |last1=Das |first1=Shubhomoy
+ |last2= Wong |first2=Weng-Keen
+ |last3=Dietterich |first3=Thomas
+ |last4=Fern |first4=Alan
+ |last5=Emmott |first5=Andrew
+ |editor1-last=Bonchi |editor1-first=Francesco
+ |editor2-last=Domingo-Ferrer |editor2-first=Josep
+ |editor3-last=Baeza-Yates |editor3-first=Ricardo
+ |editor4-last=Zhou |editor4-first=Zhi-Hua
+ |editor5-last=Wu |editor5-first=Xindong
+ |chapter=Incorporating Expert Feedback into Active Anomaly Discovery
+ |title=IEEE 16th International Conference on Data Mining
+ |pages=853–858
+|date=2016
+ |publisher=IEEE
+ |doi=10.1109/ICDM.2016.0102
+|isbn=978-1-5090-5473-2
+|s2cid=15285595
+ }}</ref> In statistics literature, it is sometimes also called [[optimal experimental design]].<ref name="olsson">{{cite web | url=http://eprints.sics.se/3600/ | title=A literature survey of active machine learning in the context of natural language processing |series=SICS Technical Report T2009:06 | author=Olsson, Fredrik| date=April 2009 }}</ref> The information source is also called ''teacher'' or ''oracle''.
+
+There are situations in which unlabeled data is abundant but manual labeling is expensive. In such a scenario, learning algorithms can actively query the user/teacher for labels. This type of iterative supervised learning is called active learning. Since the learner chooses the examples, the number of examples to learn a concept can often be much lower than the number required in normal supervised learning. With this approach, there is a risk that the algorithm is overwhelmed by uninformative examples.  Recent developments are dedicated to multi-label active learning,<ref name="multi"/> hybrid active learning<ref name="hybrid"/> and active learning in a single-pass (on-line) context,<ref name="single-pass"/> combining concepts from the field of machine learning (e.g. conflict and ignorance) with adaptive, [[incremental learning]] policies in the field of [[online machine learning]]. Using active learning allows for faster development of a machine learning algorithm, when comparative updates would require a quantum or super computer.<ref>{{Cite journal |last=Novikov |first=Ivan |date=2021 |title=The MLIP package: moment tensor potentials with MPI and active learning |journal= Machine Learning: Science and Technology|volume=2 |issue=2 |pages=3,4 |doi=10.1088/2632-2153/abc9fe |doi-access=free |arxiv=2007.08555 }}</ref>
+
+Large-scale active learning projects may benefit from [[crowdsourcing]] frameworks such as [[Amazon Mechanical Turk]] that include many [[human-in-the-loop|humans in the active learning loop]].
+
+==Definitions==
+Let {{mvar|T}} be the total set of all data under consideration. For example, in a protein engineering problem, {{mvar|T}} would include all proteins that are known to have a certain interesting activity and all additional proteins that one might want to test for that activity.
+
+During each iteration, {{mvar|i}}, {{mvar|T}} is broken up into three subsets
+#<math>\mathbf{T}_{K,i}</math>: Data points where the label is '''known'''.
+#<math>\mathbf{T}_{U,i}</math>: Data points where the label is '''unknown'''.
+#<math>\mathbf{T}_{C,i}</math>: A subset of {{mvar|T{{sub|U,i}}}} that is '''chosen''' to be labeled.
+
+Most of the current research in active learning involves the best method to choose the data points for {{mvar|T{{sub|C,i}}}}.
+
+== Scenarios ==
+*'''Pool-Based Sampling''': In this approach, which is the most well known scenario,<ref>{{cite web |last1=DataRobot |title=Active learning machine learning: What it is and how it works |url=https://www.datarobot.com/blog/active-learning-machine-learning |website=DataRobot Blog |publisher=DataRobot Inc. |access-date=30 January 2024}}</ref> the learning algorithm attempts to evaluate ''the entire dataset'' before selecting data points (instances) for labeling. It is often initially trained on a fully labeled subset of the data using a machine-learning method such as logistic regression or SVM that yields class-membership probabilities for individual data instances. The candidate instances are those for which the prediction is most ambiguous. Instances are drawn from the entire data pool and assigned a confidence score, a measurement of how well the learner "understands" the data. The system then selects the instances for which it is the least confident and queries the teacher for the labels. <br />The theoretical drawback of pool-based sampling is that it is memory-intensive and is therefore limited in its capacity to handle enormous datasets, but in practice, the rate-limiting factor is that the teacher is typically a (fatiguable) human expert who must be paid for their effort, rather than computer memory.
+*'''Stream-Based Selective Sampling''': Here, each consecutive unlabeled instance is examined ''one at a time'' with the machine evaluating the informativeness of each item against its query parameters. The learner decides for itself whether to assign a label or query the teacher for each datapoint. As contrasted with Pool-based sampling, the obvious drawback of stream-based methods is that the learning algorithm does not have sufficient information, early in the process, to make a sound assign-label-vs ask-teacher decision, and it does not capitalize as efficiently on the presence of already labeled data. Therefore, the teacher is likely to spend more effort in supplying labels than with the pool-based approach.
+*'''Membership Query Synthesis''': This is where the learner generates synthetic data from an underlying natural distribution. For example, if the dataset are pictures of humans and animals, the learner could send a clipped image of a leg to the teacher and query if this appendage belongs to an animal or human. This is particularly useful if the dataset is small.<ref>{{Cite journal|last1=Wang|first1=Liantao|last2=Hu|first2=Xuelei|last3=Yuan|first3=Bo|last4=Lu|first4=Jianfeng|date=2015-01-05|title=Active learning via query synthesis and nearest neighbour search|url=http://espace.library.uq.edu.au/view/UQ:344582/UQ344582_OA.pdf|journal=Neurocomputing|volume=147|pages=426–434|doi=10.1016/j.neucom.2014.06.042|s2cid=3027214 }}</ref> <br />The challenge here, as with all synthetic-data-generation efforts, is in ensuring that the synthetic data is consistent in terms of meeting the constraints on real data. As the number of variables/features in the input data increase, and strong dependencies between variables exist, it becomes increasingly difficult to generate synthetic data with sufficient fidelity. <br />For example, to create a synthetic data set for human laboratory-test values, the sum of the various [[white blood cell]] (WBC) components in a [[White_blood_cell_differential|White Blood Cell differential]] must equal 100, since the component numbers are really percentages. Similarly, the enzymes [[Alanine_transaminase|Alanine Transaminase]] (ALT) and [[Aspartate_transaminase|Aspartate Transaminase]] (AST) measure liver function (though AST is also produced by other tissues, e.g., lung, pancreas) A synthetic data point with AST at the lower limit of normal range (8-33 Units/L) with an ALT several times above normal range (4-35 Units/L) in a simulated chronically ill patient would be physiologically impossible.
+
+==Query strategies==
+Algorithms for determining which data points should be labeled can be organized into a number of different categories, based upon their purpose:<ref name="settles" />
+
+*'''Balance exploration and exploitation''': the choice of examples to label is seen as a dilemma between the exploration and the exploitation over the data space representation. This strategy manages this compromise by modelling the active learning problem as a contextual bandit problem. For example, Bouneffouf et al.<ref name="Bouneffouf(2014)" /> propose a sequential algorithm named Active Thompson Sampling (ATS), which, in each round, assigns a sampling distribution on the pool, samples one point from this distribution, and queries the oracle for this sample point label.
+*'''Expected model change''': label those points that would most change the current model.
+*'''Expected error reduction''': label those points that would most reduce the model's [[generalization error]].
+*'''Exponentiated Gradient Exploration for Active Learning''':<ref name="Bouneffouf(2016)" /> In this paper, the author proposes a sequential algorithm named exponentiated gradient (EG)-active that can improve any active learning algorithm by an optimal random exploration.
+*'''Random Sampling:''' a sample is randomly selected.<ref name="joint_role" />
+*'''Uncertainty sampling''': label those points for which the current model is least certain as to what the correct output should be.
+**'''Entropy Sampling:''' The entropy formula is used on each sample, and the sample with the highest entropy is considered to be the least certain.<ref name="joint_role" />
+**'''Margin Sampling:''' The sample with the smallest difference between the two highest class probabilities is considered to be the most uncertain.<ref name="joint_role" />
+**'''Least Confident Sampling:''' The sample with the smallest best probability is considered to be the most uncertain.<ref name="joint_role" />
+*'''Query by committee''': a variety of models are trained on the current labeled data, and vote on the output for unlabeled data; label those points for which the "committee" disagrees the most
+*'''Querying from diverse subspaces or partitions''':<ref name="shubhomoydas_github"/> When the underlying model is a forest of trees, the leaf nodes might represent (overlapping) partitions of the original [[feature (machine learning)|feature space]]. This offers the possibility of selecting instances from non-overlapping or minimally overlapping partitions for labeling.
+*'''Variance reduction''': label those points that would minimize output variance, which is one of the components of error.
+*'''[[Conformal prediction]]''': predicts that a new data point will have a label similar to old data points in some specified way and degree of the similarity within the old examples is used to estimate the confidence in the prediction.<ref>{{Cite journal|last1=Makili|first1=Lázaro Emílio|last2=Sánchez|first2=Jesús A. Vega|last3=Dormido-Canto|first3=Sebastián|date=2012-10-01|title=Active Learning Using Conformal Predictors: Application to Image Classification|journal=Fusion Science and Technology|volume=62|issue=2|pages=347–355|doi=10.13182/FST12-A14626|bibcode=2012FuST...62..347M |s2cid=115384000|issn=1536-1055}}</ref>
+*'''Mismatch-first farthest-traversal''': The primary selection criterion is the prediction mismatch between the current model and nearest-neighbour prediction. It targets on wrongly predicted data points. The second selection criterion is the distance to previously selected data, the farthest first. It aims at optimizing the diversity of selected data.<ref name='zhaos' />
+*'''User Centered Labeling Strategies:''' Learning is accomplished by applying dimensionality reduction to graphs and figures like scatter plots. Then the user is asked to label the compiled data (categorical, numerical, relevance scores, relation between two instances.<ref name=":3">{{Cite journal |last1=Bernard |first1=Jürgen |last2=Zeppelzauer |first2=Matthias |last3=Lehmann |first3=Markus |last4=Müller |first4=Martin |last5=Sedlmair |first5=Michael |date=June 2018 |title=Towards User-Centered Active Learning Algorithms |url= |journal=Computer Graphics Forum |volume=37 |issue=3 |pages=121–132 |doi=10.1111/cgf.13406 |s2cid=51875861 |issn=0167-7055}}</ref>
+
+A wide variety of algorithms have been studied that fall into these categories.<ref name="settles" /><ref name="olsson" /> While the  traditional AL  strategies can  achieve  remarkable  performance, it  is often challenging to predict in advance which strategy is the most suitable in aparticular situation. In recent years, meta-learning algorithms have been gaining in popularity. Some of them have been proposed to tackle the problem of learning AL strategies instead of relying on manually designed strategies. A benchmark which compares 'meta-learning approaches to active learning' to 'traditional heuristic-based Active Learning' may give intuitions if 'Learning active learning' is at the crossroads <ref>{{cite conference|last1=Desreumaux |first1=Louis |last2=Lemaire|first2=Vincent|title=Learning Active Learning at the Crossroads? Evaluation and Discussion |date=2020 |conference=Proceedings of the Workshop on Interactive Adaptive Learning co-located with European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases ({ECML} {PKDD} 2020), Ghent, Belgium, 2020 |s2cid=221794570 }}</ref>
+
+==Minimum marginal hyperplane==
+Some active learning algorithms are built upon [[support-vector machine]]s (SVMs) and exploit the structure of the SVM to determine which data points to label. Such methods usually calculate the [[margin (machine learning)|margin]], {{mvar|W}}, of each unlabeled datum in {{mvar|T{{sub|U,i}}}} and treat {{mvar|W}} as an {{mvar|n}}-dimensional distance from that datum to the separating hyperplane.
+
+Minimum Marginal Hyperplane methods assume that the data with the smallest {{mvar|W}} are those that the SVM is most uncertain about and therefore should be placed in {{mvar|T{{sub|C,i}}}} to be labeled. Other similar methods, such as Maximum Marginal Hyperplane, choose data with the largest {{mvar|W}}. Tradeoff methods choose a mix of the smallest and largest {{mvar|W}}s.
+
+==See also==
+* [[List of datasets for machine learning research]]
+* [[Sample complexity]]
+* [[Bayesian Optimization]]
+* [[Reinforcement learning]]
+
+== Literature ==
+* Improving Generalization with Active Learning, David Cohn, Les Atlas & Richard Ladner, Machine Learning 15, 201–221 (1994). https://doi.org/10.1007/BF00993277
+* Balcan, Maria-Florina & Hanneke, Steve & Wortman, Jennifer. (2008). The True Sample Complexity of Active Learning.. 45-56. https://link.springer.com/article/10.1007/s10994-010-5174-y
+* Active Learning and [[Bayesian Optimization]]: a Unified Perspective to Learn with a Goal, Francesco Di Fiore, Michela Nardelli, Laura Mainini, https://arxiv.org/abs/2303.01560v2
+* Learning how to Active Learn: A Deep Reinforcement Learning Approach, Meng Fang, Yuan Li, Trevor Cohn, https://arxiv.org/abs/1708.02383v1
+
+==References==
+{{reflist |refs=
+<ref name="hybrid">{{cite journal |last1=Lughofer |first1=Edwin |title=Hybrid active learning for reducing the annotation effort of operators in classification systems |journal=Pattern Recognition |date=February 2012 |volume=45 |issue=2 |pages=884–896 |doi=10.1016/j.patcog.2011.08.009|bibcode=2012PatRe..45..884L }}</ref>
+<ref name="Bouneffouf(2014)">{{cite book |first1=Djallel |last1=Bouneffouf |first2=Romain |last2=Laroche |first3=Tanguy |last3=Urvoy |first4=Raphael |last4=Féraud |first5=Robin |last5=Allesiardo |year=2014 |chapter-url=https://hal.archives-ouvertes.fr/hal-01069802 |chapter=Contextual Bandit for Active Learning: Active Thompson |doi=10.1007/978-3-319-12637-1_51 |isbn=978-3-319-12636-4 |id=HAL Id: hal-01069802 |editor=Loo, C. K. |editor2=Yap, K. S. |editor3=Wong, K. W. |editor4=Teoh, A. |editor5=Huang, K. |title=Neural Information Processing |volume=8834 |pages=405–412 |series=Lecture Notes in Computer Science |s2cid=1701357 |url=https://hal.archives-ouvertes.fr/hal-01069802/file/Contextual_Bandit_for_Active_Learning.pdf }}</ref>
+<ref name="joint_role">{{cite conference <!-- Citation bot no --> |last1=Faria |first1=Bruno |last2=Perdigão |first2=Dylan |last3=Brás |first3=Joana |last4=Macedo |first4=Luis |chapter=The Joint Role of Batch Size and Query Strategy in Active Learning-Based Prediction - A Case Study in the Heart Attack Domain |title=Progress in Artificial Intelligence |series=Lecture Notes in Computer Science | conference= 21st EPIA Conference on Artificial Intelligence, EPIA 2022, Lisbon, Portugal, August 31–September 2, 2022 | date=2022 |volume=13566 |pages=464–475 |doi=10.1007/978-3-031-16474-3_38|isbn=978-3-031-16473-6 | editor1= Goreti Marreiros| editor2= Bruno Martins|editor3= Ana Paiva | editor4=Bernardete Ribeiro | editor5= Alberto Sardinha}}</ref>
+<ref name="multi">{{cite conference |doi=10.1145/1557019.1557119 |isbn=978-1-60558-495-9 |chapter-url=https://www.microsoft.com/en-us/research/wp-content/uploads/2009/01/sigkdd09-yang.pdf|chapter=Effective multi-label active learning for text classification |title=Proceedings of the 15th ACM SIGKDD international conference on Knowledge discovery and data mining - KDD '09 |pages=917 |year=2009 |last1=Yang |first1=Bishan |last2=Sun |first2=Jian-Tao |last3=Wang |first3=Tengjiao |last4=Chen |first4=Zheng |citeseerx=10.1.1.546.9358 |s2cid=1979173 }}</ref>
+<ref name="single-pass">{{Cite journal | doi=10.1007/s12530-012-9060-7 |title = Single-pass active learning with conflict and ignorance| journal=Evolving Systems| volume=3| issue=4| pages=251–271|year = 2012|last1 = Lughofer|first1 = Edwin|s2cid = 43844282}}</ref>
+<ref name="Bouneffouf(2016)">{{cite journal |last1=Bouneffouf |first1=Djallel |title=Exponentiated Gradient Exploration for Active Learning |journal=Computers |date=8 January 2016 |volume=5 |issue=1 |pages=1 |doi=10.3390/computers5010001|arxiv=1408.2196 |s2cid=14313852 |doi-access=free }}</ref>
+<ref name="shubhomoydas_github">{{Cite web|url=https://github.com/shubhomoydas/ad_examples#query-diversity-with-compact-descriptions|title=shubhomoydas/ad_examples|website=GitHub|language=en|access-date=2018-12-04}}</ref>
+<ref name="zhaos">{{Cite journal|arxiv=2002.05033|title=Active learning for sound event detection|language=en|journal=IEEE/ACM Transactions on Audio, Speech, and Language Processing|last1=Zhao|first1=Shuyang|last2=Heittola|first2=Toni|last3=Virtanen|first3=Tuomas|year=2020}}</ref>
+}}
+
+[[Category:Machine learning]]

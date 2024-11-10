@@ -1,0 +1,29 @@
+Statistical relational learning (SRL) is a subdiscipline of artificial intelligence and machine learning that is concerned with domain models that exhibit both uncertainty (which can be dealt with using statistical methods) and complex, relational structure.Lise Getoor and Ben Taskar: Introduction to statistical relational learning, MIT Press, 2007Ryan A. Rossi, Luke K. McDowell, David W. Aha, and Jennifer Neville, " Transforming Graph Data for Statistical Relational Learning."  Journal of Artificial Intelligence Research (JAIR), Volume 45 (2012), pp. 363-441. Note that SRL is sometimes called Relational Machine Learning (RML) in the literature. Typically, the knowledge representation formalisms developed in SRL use (a subset of) first-order logic to describe relational properties of a domain in a general manner (universal quantification) and draw upon probabilistic graphical models (such as Bayesian networks or Markov networks) to model the uncertainty; some also build upon the methods of inductive logic programming. Significant contributions to the field have been made since the late 1990s.
+
+As is evident from the characterization above, the field is not strictly limited to learning aspects; it is equally concerned with reasoning (specifically probabilistic inference) and knowledge representation. Therefore, alternative terms that reflect the main foci of the field include statistical relational learning and reasoning (emphasizing the importance of reasoning) and first-order probabilistic languages (emphasizing the key properties of the languages with which models are represented).
+
+ Canonical tasks 
+A number of canonical tasks are associated with statistical relational learning, the most common ones beingMatthew Richardson and Pedro Domingos,  "Markov Logic Networks."  Machine Learning, 62 (2006), pp. 107–136.
+
+ collective classification, i.e. the (simultaneous) prediction of the class of several objects given objects' attributes and their relations
+ link prediction, i.e. predicting whether or not two or more objects are related
+ link-based clustering, i.e. the grouping of similar objects, where similarity is determined according to the links of an object, and the related task of collaborative filtering, i.e. the filtering for information that is relevant to an entity (where a piece of information is considered relevant to an entity if it is known to be relevant to a similar entity).
+ social network modelling
+ object identification/entity resolution/record linkage, i.e. the identification of equivalent entries in two or more separate databases/datasets
+
+ Representation formalisms 
+
+One of the fundamental design goals of the representation formalisms developed in SRL is to abstract away from concrete entities and to represent instead general principles that are intended to be universally applicable. Since there are countless ways in which such principles can be represented, many representation formalisms have been proposed in recent years. In the following, some of the more common ones are listed in alphabetical order:
+
+ Bayesian logic program
+ BLOG model
+ Logic programs with annotated disjunctions
+ Markov logic networks
+ Multi-entity Bayesian network
+ Probabilistic relational model – a Probabilistic Relational Model (PRM) is the counterpart of a Bayesian network in statistical relational learning.Friedman N, Getoor L, Koller D, Pfeffer A. (1999) "Learning probabilistic relational models". In: International joint conferences on artificial intelligence, 1300–09Teodor Sommestad, Mathias Ekstedt, Pontus Johnson (2010) "A probabilistic relational model for security risk analysis", Computers & Security, 29 (6), 659-679 
+ Probabilistic soft logic
+ Recursive random field
+ Relational Bayesian network
+ Relational dependency network
+ Relational Markov network
+ Relational Kalman filtering

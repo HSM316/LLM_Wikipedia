@@ -1,0 +1,35 @@
+Quadratic unconstrained binary optimization (QUBO), also known as unconstrained binary quadratic programming (UBQP), is a combinatorial optimization problem with a wide range of applications from finance and economics to machine learning. QUBO is an NP hard problem, and for many classical problems from theoretical computer science, like Maximum cut, Graph coloring and the Partition problem, embeddings into QUBO have been formulated.
+Embeddings for machine learning models include support-vector machines, clustering and probabilistic graphical models.
+Moreover, due to its close connection to Ising models, QUBO constitutes a central problem class for Adiabatic quantum computation, where it is solved through a physical process called quantum annealing.
+
+Definition
+
+Let  be a quadratic polynomial over binary variables,
+ 
+with  for  and coefficients  for . Here  denotes the set of strictly positive integers less or equal to , and .
+The QUBO problem consists of finding a binary vector  that is minimal with respect to  among all other binary vectors, namely
+ 
+
+Sometimes, QUBO is defined as a maximization instead of a minimization problem, which has no effect on the problem's complexity class, as maximizing  is the same as minimizing  (see below).
+Another, more compact way to formulate  is using matrix notation,
+ 
+where  is the symmetric  matrix containing the coefficients .
+
+Properties
+
+ Multiplying the coefficients  with a positive factor  scales the output of  accordingly, leaving the optimum  unchanged:
+ 
+ Flipping the sign of all coefficients flips the sign of 's output, making  the binary vector that maximizes :
+ 
+ If all coefficients are positive, the optimum is trivially . Similarly, if all coefficients are negative, the optimum is .
+ If , then the corresponding QUBO problem is solvable in , the optimal variable assignments  simply being 1 if  and 0 otherwise.
+
+Connection to Ising models
+
+QUBO is very closely related and computationally equivalent to the Ising model, whose Hamiltonian function is defined as
+ 
+with real-valued parameters  for all . The spin variables  are binary with values from  instead of . Moreover, in the Ising model the variables are typically arranged in a lattice where only neighboring pairs of variables  can have non-zero coefficients. Applying the identity  yields an equivalent QUBO problem:
+ 
+where
+ 
+As the constant  does not change the position of the optimum , it can be neglected during optimization and is only important for recovering the original Hamiltonian function value.

@@ -1,0 +1,70 @@
+{{unreliable sources|date=November 2015}}
+{{Infobox software
+| name = ILNumerics
+| screenshot = 
+| caption = 
+| developer = ILNumerics
+| latest release version = v6.0
+| latest release date = {{Start date and age|2022|07|20}}
+| operating system = [[.NET Framework]] / [[Mono (software)|Mono]], [[Microsoft Windows|Windows]], [[Linux]], [[MacOS]]
+| genre = [[List of numerical-analysis software|Technical computing]], [[Mathematical software]]
+| license = [[Proprietary software|Proprietary]]
+| website = {{URL|ilnumerics.net}}
+| platform = [[IA-32]], [[x86-64]], AnyCPU
+| programming language = [[C Sharp (programming language)|C#]], [[Visual Basic .NET|Visual Basic]]
+}}
+'''ILNumerics''' is a mathematical [[Library (computing)|class library]] for [[Common Language Infrastructure]] (CLI) developers and a [[Domain-specific language|domain specific language (DSL)]] for the [[implementation]] of [[numerical analysis|numerical]] [[algorithm]]s on the [[.NET Framework|.NET platform]]. While [[computer algebra system|algebra systems]] with [[graphical user interface]]s focus on [[Prototype-based programming|prototyping]] of algorithms, implementation of such algorithms into distribution-ready [[Application software|applications]] is done using 
+[[Integrated development environment|development environments]] and [[General-purpose programming language|general purpose programming languages (GPL)]]. ILNumerics is an extension to [[Visual Studio Debugger|Visual Studio]] and aims at supporting the creation of technical applications based on .NET.
+
+==History==
+ILNumerics started in 2006 as an open source project, originating from [[Technische Universität Berlin]].<ref>{{cite web |url=https://www.entrepreneurship.tu-berlin.de/menue/start-ups_events/gruenderstories_start-ups/steckbriefe/steckbrief_ilnumerics |title=Centre for Entrepreneurship: Steckbrief ILNumerics |publisher=Entrepreneurship.tu-berlin.de |date= |accessdate=2016-01-28 |archive-url=https://web.archive.org/web/20160220184259/https://www.entrepreneurship.tu-berlin.de/menue/start-ups_events/gruenderstories_start-ups/steckbriefe/steckbrief_ilnumerics |archive-date=2016-02-20 |url-status=dead }}</ref> In 2007 ILNumerics won the BASTA! Innovation Awards 2007<ref>[http://basta-award.de BASTA! Innovation Award 2007]</ref> as most innovative .NET project in [[Germany]], [[Switzerland]] and [[Austria]]. After 6 years of open source development, the project added a closed source, proprietary license in 2011, aiming business and academic developers at the same time. The project quickly gained popularity (download numbers and engagement at stackoverflow.com,<ref>{{cite web|author=ilnumerics |url=https://www.nuget.org/packages/ILNumerics/ |title=NuGet Gallery &#124; ILNumerics 4.8.0 |publisher=Nuget.org |date= |accessdate=2016-01-28}}</ref><ref>{{cite web|url=https://stackoverflow.com/questions/tagged/ilnumerics |title=Newest 'ilnumerics' Questions |publisher=Stack Overflow |date= |accessdate=2016-01-28}}</ref><ref>{{cite web|url=https://visualstudiogallery.msdn.microsoft.com/9a67b49d-b0b2-4073-97fd-3f18ba08cc61 |title=ILNumerics Ultimate VS extension |publisher=Visualstudiogallery.msdn.microsoft.com |date= |accessdate=2016-01-28}}</ref> download counts from website not available).
+The [[.NET Framework version history|.NET framework]] was selected as a [[Managed code|managed]] foundation, since earlier attempts on the [[Java Platform|Java platform]] had been abandoned due to technical limitations. Similarly, the .NET framework has not been designed with the focus on requirements of technical application development. ILNumerics added interfaces to popular codes ([[LAPACK]], [[FFTW]]), [[complex number]]s and [[Parametric polymorphism|generic]] [[Array data structure#Multidimensional arrays|mult-dimensional array]] classes. In 2010 graphical capabilities have been added. Efforts to increase the performance of the technology were introduced in 2011. At the same time, a company was founded to continue the development. The technological goal is to establish the .NET framework as a feasible alternative to unmanaged [[Programming language C|languages]] for numeric computing.
+
+==Syntax==
+ILNumerics implements base functionality frequently needed for application development in technical areas: N-dimensional [[Array data structure|arrays]], [[complex number]]s, [[linear algebra]], [[Fast Fourier transform|FFT]] and [[Chart|plotting]] [[GUI widget|controls]] (2D and [[3D computer graphics|3D]]). The array classes are fully compatible with the array features of [[MATLAB|Matlab]] and [[NumPy|numpy]], including internal storage order, subarray creation, expansion, and advanced indexing. Higher level functionality is provided by toolboxes for [[interpolation]], [[Mathematical optimization|optimization]], [[statistics]], [[Hierarchical Data Format|HDF5]] and [[machine learning]]. The ILNumerics DSL is embedded into .NET. Computational algorithms are formulated using any [[List of CLI languages|CLI language]]. However, only [[C Sharp (programming language)|C#]] and [[Visual Basic .NET|Visual Basic]] are officially supported. Due to the [[type safety|strong type system]] of the .NET framework algorithms created with ILNumerics are strongly typed. This deviates from the syntax of [[Matlab|alternatives]], which are often weakly typed and therefore easier to adopt.
+
+==Graphics==
+A [[scene graph]] is used in ILNumerics to realize graphical output. Interactive 2D and 3D plots are used in Windows Forms applications. Hardware accelerated drawing is available via [[OpenGL]]. A software renderer is provided for legacy hardware, based on GDI+ and [[Scalable Vector Graphics|SVG]].
+
+==IDE integration==
+ILNumerics is distributed as an extension to [[Visual Studio]]. It adds a tool window to the IDE for the graphical inspection of mathematical objects while stepping through user code.
+
+==Performance==
+Since ILNumerics comes as a [[Assembly (CLI)|CLI assembly]], it targets [[Common Language Infrastructure]] (CLI) applications. Just like [[Java (programming language)|Java]] - those frameworks are often criticized for not being suitable for numerical computations. Reasons are the [[Random access memory|memory]] management by a [[Garbage collection (computer science)|garbage collector]], the [[Common Intermediate Language|intermediate language]] execution and deficient optimizations by the [[Compiler optimizations|compilers]] involved. ILNumerics approaches these limitations by performing [[loop unrolling]], [[Bounds-checking elimination|removal of bound checks]] on array accesses and [[Cache-oblivious algorithm|cache optimizations]]. Further speed-up is gained by the auto-management of the memory of large array objects. Numerical operations are [[Parallel computing|parallelized]] on [[Multicore programming|multicore]] systems. Linear algebra routines rely on processor specific optimized versions of [[LAPACK]] and [[BLAS]].
+
+ILNumerics arrays utilize the [[Virtual memory|unmanaged heap]] for storing data. This way, the [[Big data|size]] of ILNumerics arrays is not [https://blogs.msdn.microsoft.com/joshwil/2005/08/10/bigarrayt-getting-around-the-2gb-array-size-limit/ limited by the CLR] and [[P/invoke|interoperability]] with 3rd party libraries is improved.
+
+==See also==
+*[[Comparison of numerical-analysis software]]
+*[[List of numerical-analysis software]]
+*[[List of numerical libraries]]
+
+==References==
+{{Reflist}}
+
+==External links==
+*{{Official website|ilnumerics.net}} 
+*[https://msdn.microsoft.com/library/hh304368%28v=vs.100%29.aspx Article about Math Libraries for .NET at MSDN]
+
+{{Numerical analysis software}}
+{{Statistical software}}
+
+{{DEFAULTSORT:Ilnumerics.Net}}
+[[Category:3D graphics software]]
+[[Category:3D scenegraph APIs]]
+[[Category:Array programming languages]]
+[[Category:C Sharp libraries]]
+[[Category:Computer vision software]]
+[[Category:Data analysis software]]
+[[Category:Data visualization software]]
+[[Category:Mathematical software]]
+[[Category:Numerical analysis software for Linux]]
+[[Category:Numerical analysis software for macOS]]
+[[Category:Numerical analysis software for Windows]]
+[[Category:Numerical linear algebra]]
+[[Category:Numerical programming languages]]
+[[Category:Object-oriented programming languages]]
+[[Category:OpenGL]]
+[[Category:Parallel computing]]
+[[Category:Science software]]
+[[Category:Unix programming tools]]

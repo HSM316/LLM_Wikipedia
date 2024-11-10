@@ -1,0 +1,76 @@
+{{Infobox OS
+| name                   = Android Things
+| logo                   = Android Things logo.png
+| screenshot             = <!-- Filename only (no wikilink, nor Image:/File:) -->
+| caption                = 
+| screenshot_alt         = 
+| collapsible            = 
+| version of             = <!-- For articles about releases of operating systems ONLY -->
+| developer              = <!-- Name of main developer or sponsor-->
+| family                 = <!-- "Unix-like" or "Microsoft Windows" -->
+| working state          = <!-- "Current", "Discontinued" (operating systems), or "No longer supported" (releases) -->
+| source model           = <!-- "Open source", "Closed source", or "Shared source" -->
+| released               = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| discontinued           = <!-- DON'T use this for articles about releases of operating systems. -->
+| RTM date               = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| GA date                = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} ONLY for articles about OS releases -->
+| latest release version = 
+| latest release date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| marketing target       = 
+| programmed in          = 
+| language               = <!-- Supported human languages (English, French, Italian, Arabic, ...) -->
+| language count         = 
+| language footnote      = 
+| update model           = <!-- APT, Windows Update, etc. -->
+| package manager        = <!-- dpkg, rpm, Windows installer, etc. -->
+| supported platforms    = <!-- [[IA-32]], [[x86-64]], [[Itanium]], [[ARM architecture|ARM]], etc. -->
+| kernel type            = <!-- Hybrid, Monolithic, Microkernel, Exokernel, Nanokernel, etc. -->
+| userland               = 
+| ui                     = 
+| license                = 
+| preceded by            = 
+| succeeded by           = 
+| website                = {{URL|https://developer.android.com/things/index.html}}
+| support status         = <!-- For articles about releases of operating systems ONLY -->
+| other articles         = 
+}}
+'''Android Things''' is a deprecated [[Android (operating system)|Android]]-based [[embedded operating system]] platform by Google, announced at [[Google I/O]] 2015, and launched in 2018. Android Things Dashboard shutdown began on January 5, 2021.<ref>[https://www.theverge.com/2020/12/17/22187547/google-android-things-shut-down-smart-home-iot Google to shut down Android Things, a smart home OS that never took off], The Verge</ref> After January 5, 2022, Android Things Dashboard will be shut down completely and all remaining data will be deleted.<ref name=":2" />
+
+Originally, Android Things was aimed for low-power and memory constrained [[Internet of Things]] (IoT) devices,<ref name=":3">[https://arstechnica.com/gadgets/2015/05/google-developing-brillo-internet-of-things-os-based-on-android/ Google developing “Brillo” Internet of Things OS based on Android]</ref><ref name=":4">[http://www.androidauthority.com/project-brillo-google-io-612159/ Project Brillo is Google’s new Internet of Things OS]</ref> but in 2019 project dropped support for low-power hardware and refocused on smartphone-class devices.<ref name=":1">{{Cite web|last=Amadeo|first=Ron|date=2019-02-13|title=Android Things is no longer for "Things," focuses on smart speakers and displays|url=https://arstechnica.com/gadgets/2019/02/android-things-is-no-longer-for-things-focuses-on-smart-speakers-and-displays/|access-date=2020-12-22|website=Ars Technica|language=en-us}}</ref>
+
+== History ==
+
+=== Pre-release ===
+During [[Google I/O 2015]], Google announced an upcoming [[Android (operating system)|Android]]-based [[embedded operating system]] platform, codenamed '''Brillo'''.<ref>{{Cite web|last=King|first=Rachel|title=Google I/O 2015: Google unveils Brillo as operating system for Internet of Things|url=https://www.zdnet.com/article/google-io-2015-android-chrome-cloud-announcement-keynote/|access-date=2020-12-22|website=ZDNet|language=en}}</ref> At the time, project aimed to support low-memory devices with as little as 32-64 MB of RAM.<ref>{{Cite web|date=2015-05-23|title=Google Brillo - An Internet Of Things OS That Runs on 32 MB RAM|url=https://trak.in/tags/business/2015/05/23/google-brillo-internet-of-things-operating-system/|access-date=2020-12-22|website=Trak.in - Indian Business of Tech, Mobile & Startups|language=en-US}}</ref> Brillo platform was not just an OS for IoT devices, but instead a complete software stack with cloud component which included management console for device provisioning and update delivery. Brillo supported [[Wi-Fi]] and [[Bluetooth Low Energy]] and [[Weave (protocol)|Weave protocol]] for communicating with cloud (including update delivery), communication with Android phones, and other compatible devices (including [[Google Nest]] products).<ref>{{Cite web|last=Amadeo|first=Ron|date=2016-12-13|title=Google's new "Android Things" OS hopes to solve awful IoT security|url=https://arstechnica.com/gadgets/2016/12/google-brillo-rebrands-as-android-things-googles-internet-of-things-os/|access-date=2020-12-22|website=Ars Technica|language=en-us}}</ref><ref name=":0">{{Cite web|last=Miller|first=Ross|date=2015-05-28|title=Google announces Brillo, an operating system for the Internet of Things|url=https://www.theverge.com/2015/5/28/8677119/google-project-brillo-iot-google-io-2015|access-date=2020-12-22|website=The Verge|language=en}}</ref>
+
+In 2016, Google revamped Brillo under the new name '''Android Things'''.
+
+Originally, Android Things was aimed for low-power and memory constrained [[Internet of Things]] (IoT) devices, which are usually built from different [[Microcontroller|MCU]] platforms.<ref name=":3" /><ref name=":4" /> 
+
+=== Release ===
+In 2018, Android Things was officially released, with version number 1.0. At the same time, multiple OEMs (including [[JBL (company)|JBL]], [[Lenovo]], and [[LG Electronics]])<ref name=":5">{{Cite news|title=Google Home Hub—Under the hood, it's nothing like other Google smart displays|language=en-us|work=Ars Technica|url=https://arstechnica.com/gadgets/2018/10/google-home-hub-under-the-hood-its-nothing-like-other-google-smart-displays/|access-date=2018-10-11}}</ref> released smart home devices powered by Android Things.<ref>{{Cite web|last=Amadeo|first=Ron|date=2018-05-07|title=Android Things 1.0 launches, Google promises 3 years of updates for every device|url=https://arstechnica.com/gadgets/2018/05/android-things-hits-version-1-0-with-centralized-google-update-system/|access-date=2020-12-22|website=Ars Technica|language=en-us}}</ref> These devices were based on two [[Qualcomm]] "Home Hub" systems-on-chip solutions and Google-provided implementations of Android Things tailored for [[Google Assistant]]-powered [[smart speaker]]s and displays.<ref name=":5" />
+
+In February 2019, Android Things refocused on smart speakers and displays. The project dropped support for resource-constrained IoT devices and changed focus to smartphone-class devices.<ref name=":1" />
+
+=== Shutdown ===
+In December 2020, Android Things Dashboard FAQ page was quietly updated with a notice about upcoming Android Things shut down. Android Things Dashboard stopped accepting new device registrations and projects on January 5, 2021, and will stop distributing updates on January 5, 2022 (at which point "the console will be turned down completely and all project data will be permanently deleted — including build configurations and factory images.")<ref name=":2">{{Cite web|last=Amadeo|first=Ron|date=2020-12-17|title=Google kills Android Things, its IoT OS, in January|url=https://arstechnica.com/gadgets/2020/12/google-kills-android-things-its-iot-os-in-january/|access-date=2020-12-20|website=Ars Technica|language=en-us}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+* {{Official website|https://developer.android.com/things/index.html}}
+
+{{Android}}
+{{Google LLC}}
+
+[[Category:2015 software]]
+[[Category:Android (operating system)]]
+[[Category:Cloud clients]]
+[[Category:Embedded Linux]]
+[[Category:Embedded operating systems]]
+[[Category:Google operating systems]]
+[[Category:Internet of things]]
+[[Category:Software using the Apache license]]

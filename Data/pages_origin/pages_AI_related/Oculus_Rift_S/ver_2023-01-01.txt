@@ -1,0 +1,113 @@
+{{short description|Virtual reality head-mounted display}}
+{{Infobox information appliance
+| name = Oculus Rift S
+| image = Oculus_rift_s.jpg
+| logo = Oculus Rift S logo black.svg
+| caption = 
+| developer = [[Oculus VR|Facebook Technologies]] & [[Lenovo]]
+| manufacturer = Lenovo
+| type = [[Virtual reality headset]]
+| generation = First generation
+| lifespan = 2019-2021
+| discontinued = June 2021<ref>{{Cite web|last=April 2021|first=Hamish Hector 06|title=Goodbye Oculus Rift S, we won't miss you|url=https://www.techradar.com/news/goodbye-oculus-rift-s-we-wont-miss-you|access-date=2021-04-06|website=TechRadar|date=6 April 2021 |language=en}}</ref>
+| media = 
+| os = 
+| power = 
+| cpu = 
+| memory = 
+| storage = 
+| display = Fast-switch LCD 2560×1440 (1280×1440 per eye) @ 80 Hz
+| graphics = 
+| sound = {{plainlist|
+*Integrated speakers
+}}
+| input = [[6DOF]] inside-out tracking through 5 built-in cameras
+| controllers = 2nd generation [[Oculus Touch]] motion tracked controllers
+| camera = 5 cameras
+| touchpad = 
+| connectivity = DisplayPort 1.2, USB 3.0
+| dimensions = 
+| weight = {{convert|1.1|lb|g|abbr=on}}
+| compatibility = Compatible with software developed for [[Oculus Rift|the original Oculus Rift]]
+| predecessor = [[Oculus Rift CV1]]
+| related = 
+| website = {{Official website|https://www.oculus.com/rift-s/}}
+| founder = 
+| releasedate = March 20, 2019
+| retail availability = May 21, 2019
+| price = $399.99 USD, $649 AUD
+| unitssold = 
+| unitsshipped = 
+| service = Oculus Store, [[Steam VR]]
+| topgame = 
+| successor = 
+}}
+
+The '''Oculus Rift S''' is a [[virtual reality headset]] co-developed by [[Lenovo|Lenovo Technologies]] and [[Oculus (brand)|Facebook Technologies]]—a division of [[Meta Platforms]].
+
+Announced in March 2019 and released that May, it is a successor to the original [[Oculus Rift CV1]] model, with noted changes including a new "inside-out" [[VR positional tracking|positional tracking]] system with cameras embedded inside the headset unit (similarly to its sister device, the [[Oculus Quest]]), a higher-resolution display, and a new "halo" head strap.
+
+The Rift S received mixed reviews, with critics praising improvements in comfort and ease of setup due to the halo strap and new tracking system, but characterizing the Rift S as being only an incremental upgrade over the CV1, and noting regressions such as a lower [[refresh rate]], and the lack of hardware adjustment for [[Pupillary distance|inter pupillary distance]] (IPD).
+
+== Development ==
+In June 2015, Oculus VR co-founder [[Palmer Luckey]] revealed that Oculus was already working on a successor to the original Rift and planned to release it in around 2–3 years from the original Rift release. The headset would feature higher resolution screen and inside-out tracking and would enable room scale experiences.<ref name=":3">{{Cite web|url=https://www.venturebeat.com/2015/01/12/oculus-cofounder-describes-ces-demo-and-what-comes-next-for-virtual-reality-interview/|title=Oculus Already Working on the Second Consumer Version of the Rift, Says Palmer Luckey|date=2015-07-07|website=UploadVR|language=en-US|access-date=2019-03-21}}</ref>
+
+In October 2018, Oculus VR co-founder and former CEO until 2016 [[Brendan Iribe]] left Oculus VR, allegedly due to both parts having "fundamentally different views on the future of Oculus that grew deeper over time."<ref>{{Cite web|url=https://techcrunch.com/2018/10/22/oculus-co-founder-is-leaving-facebook-after-cancellation-of-rift-2-headset/|title=Oculus co-founder is leaving Facebook after cancellation of 'Rift 2' headset|website=TechCrunch|date=22 October 2018 |language=en-US|access-date=2019-03-21}}</ref><ref>{{Cite web|url=https://gizmodo.com/oculus-co-founder-s-departure-could-mean-bad-things-for-1829917112|title=Oculus Co-Founder's Departure Could Mean Bad Things for Facebook VR|last=Rutherford|first=Sam|website=Gizmodo|date=22 October 2018 |language=en-US|access-date=2019-03-21}}</ref> Iribe wanted to deliver comfortable VR experience competitive on the high-end market while Oculus leadership aimed to lower the VR gaming entry barrier. [[Mark Zuckerberg]], CEO of Oculus parent company [[Facebook, Inc.]], repeatedly stated that Oculus' goal is to bring a billion users into VR.<ref>{{Cite web|url=https://techcrunch.com/2018/10/31/after-canceling-rift-2-overhaul-oculus-plans-a-modest-update-to-flagship-vr-headset/|title=After canceling 'Rift 2' overhaul, Oculus plans a modest update to flagship VR headset|website=TechCrunch|date=31 October 2018 |language=en-US|access-date=2019-03-22}}</ref> Iribe was said to be overseeing the development of the second generation Oculus Rift, which was canceled the week prior to his departure.<ref>{{Cite web|last=Matney|first=Lucas|date=2018-10-22|title=Oculus co-founder is leaving Facebook after cancellation of 'Rift 2' headset|url=https://social.techcrunch.com/2018/10/22/oculus-co-founder-is-leaving-facebook-after-cancellation-of-rift-2-headset/|access-date=2020-10-18|website=TechCrunch|language=en-US}}</ref>
+
+== Hardware ==
+
+=== Display ===
+Rift S uses a single fast-switch LCD panel with a resolution of 2560×1440 and an 80&nbsp;Hz [[refresh rate]], down from the CV1's 90&nbsp;Hz.<ref name=":1">{{Cite web|last=Statt|first=Nick|date=2019-03-20|title=Oculus unveils the Rift S, a higher-resolution VR headset with built-in tracking|url=https://www.theverge.com/2019/3/20/18273152/oculus-rift-s-vr-headset-announced-pricing-release-date-features-gdc-2019|access-date=2019-03-21|website=The Verge}}</ref>
+
+Also, compared to the original Rift, the Rift S uses "next generation" lens technology, introduced in Oculus Go, which almost entirely eliminates [[god rays]]. The field of view is 115º{{citation needed|date=March 2020|reason=Neither source used below actually mentions the headset's FoV}}, compared to 110º on the Rift CV1. The headset features software-only [[Pupillary distance|inter pupillary distance]] (IPD) adjustment,<ref name=":1" /> because it uses a single screen instead of dual displays.<ref>{{Cite web|url=https://uploadvr.com/oculus-rift-s-ipd/|title=Oculus Explains Why Rift S Doesn't Have Mechanical IPD Adjustment|date=2019-03-20|website=UploadVR|language=en-US|access-date=2019-03-25}}</ref>
+
+=== Audio ===
+As opposed to earphones attached to the strap as on the CV1, built-in audio on the Rift S uses speakers embedded in the headset itself, positioned slightly above the user's ears.<ref>{{Cite web|last=Lang|first=Ben|date=2019-05-21|title=Oculus Rift S Review – A Good Choice for VR Newcomers, a Difficult Choice for VR Vets|url=https://www.roadtovr.com/oculus-rift-s-review-good-choice-for-newcomers-difficult-choice-for-vr-vets/|access-date=2020-11-17|website=Road to VR|language=en-US}}</ref>
+
+=== Oculus Insight ===
+The Rift S uses the same "Oculus Insight" inside-out tracking system used by the [[Oculus Quest]], whereby five cameras built into the headset (two on the front, one on either side, and one looking directly upwards) that track infrared diodes in the controllers, as well as input from the [[Accelerometer|accelerometers]] in the headset and controllers, and a prediction engine, are used to spatially track the headset and controller (removing the need for external sensors mounted in the play area). The Rift S contains an additional fifth camera over the Quest's four to improve compatibility with existing Oculus Rift software.<ref name=":1" /><ref>{{Cite web|last=Ellis|first=Cat|date=2019-09-14|title=Oculus Insight: how Facebook unplugged VR and opened virtual worlds to everyone|url=https://www.techradar.com/news/oculus-insight-how-facebook-unplugged-vr-and-opened-virtual-worlds-to-everyone|access-date=2020-11-17|website=TechRadar|language=en}}</ref><ref>{{Cite web|date=2019-08-22|title=Facebook opens up about the AI powering its Oculus virtual reality headsets|url=https://siliconangle.com/2019/08/22/facebook-opens-ai-powering-virtual-reality-headsets/|access-date=2020-11-17|website=SiliconANGLE|language=en-US}}</ref>
+
+Passthrough+ is provided as a safety feature, which displays output from the cameras in monoscopic black and white when the player exits their designated boundaries. Passthrough+ also makes use of "[[Asynchronous SpaceWarp]]" to produce a comfortable experience with minimal depth disparity or performance impact.<ref name=":0">{{Cite web|date=2019-03-20|title=Oculus Rift S Is Official: Higher Resolution, 5 Camera Inside-Out, $399|url=https://uploadvr.com/oculus-rift-s-official/|access-date=2019-03-21|website=UploadVR|language=en-US}}</ref><ref name=":1" /><ref name=":2">{{Cite web|last=Rutherford|first=Sam|title=The New Oculus Rift S Stops Short of Being Truly Exciting|url=https://gizmodo.com/the-new-oculus-rift-s-stops-short-of-being-truly-exciti-1833446012|access-date=2019-03-21|website=Gizmodo|date=20 March 2019 |language=en-US}}</ref><ref name=":3" />
+
+=== Halo headband ===
+Rift S features a halo headband which, according to Oculus, has a better weight distribution, better light blocking, and will be more comfortable overall. The headset was co-developed with [[Lenovo]], incorporating their experience in the VR and AR space and feedback from the Lenovo Legion gaming community.<ref name=":0" /><ref name=":2" /> The device has a knob at the rear of the band which brings the device forward and backward. The top strap is there to make it snug on the wearer's head, while a button underneath the right side of the headset is used to release the headset from its support, allowing it to be adjusted to be closer or farther from the user's eyes. The device lacks physical adjustment for [[inter-pupillary distance]] (IPD), but this setting is supported in software.<ref name=":1" />
+
+=== Controllers ===
+[[File:Second generation Oculus Touch controllers.jpg|thumb|The second-generation Oculus Touch controllers included with the Oculus Rift S]]
+Oculus Rift S uses the same second generation [[Oculus Touch]] controllers used in the [[Oculus Quest]]. The controllers are similar to the ones used by the original [[Oculus Rift]], except with the tracking ring on the top (to be seen by the headset's built-in cameras) instead of being on the bottom (to be seen by the external Constellation cameras).<ref name=":0" />
+
+== Software ==
+{{Main|List of Oculus Rift games}}
+All existing and future Oculus Rift-compatible software is supported by the Rift S.<ref name=":5">{{Cite web|last=Statt|first=Nick|date=2019-03-20|title=Oculus unveils the Rift S, a higher-resolution VR headset with built-in tracking|url=https://www.theverge.com/2019/3/20/18273152/oculus-rift-s-vr-headset-announced-pricing-release-date-features-gdc-2019|access-date=2019-03-25|website=The Verge}}</ref><ref name=":4">{{Cite web|date=2019-03-20|title=Original Oculus Rift Will Be Supported 'For The Foreseeable Future'|url=https://uploadvr.com/original-oculus-rift-future/|access-date=2019-03-25|website=UploadVR|language=en-US}}</ref> The Oculus storefront also supports [[Cross-buy|cross-buys]] between Oculus Quest and PC for games released on both platforms<ref name=":5" />
+
+== Release ==
+Oculus Rift S was announced during [[Game Developers Conference|GDC]] 2019 on March 20, with shipments starting on May 21 the same year.<ref name=":0"/>  At launch, it shared the same US$399 price point as the CV1.<ref name=":1"/><ref name=":0"/><ref name=":2"/>
+
+On September 16, 2020, Facebook announced the upcoming discontinuation of the Rift S in favor of the [[Oculus Quest 2]], with sales ending in spring 2021.<ref>{{Cite web|last=Robertson|first=Adi|date=2020-09-16|title=Facebook is discontinuing the Oculus Rift S|url=https://www.theverge.com/2020/9/16/21422717/facebook-oculus-rift-s-discontinued-quest-2-vr-connect|access-date=2020-09-16|website=The Verge|language=en}}</ref> In December 2020, Facebook discounted the Rift S to US$300.<ref>{{Cite web|last=Hayden|first=Scott|date=2020-12-11|title=Facebook Slashes Price of Oculus Rift S to $300|url=https://www.roadtovr.com/facebook-slashes-price-oculus-rift-s-300/|access-date=2021-01-03|website=Road to VR|language=en-US}}</ref>
+
+In April 2021, production of the Rift S was discontinued. In an email sent to UploadVR, a Facebook representative stated that "stock of the headset would no longer be replenished moving forward."<ref>{{Cite web|title=Oculus Rift S Stock Empties, 'Won't Be Replenished'|date=5 April 2021 |url=https://uploadvr.com/rift-s-dead/|access-date=2021-04-06|language=en-US}}</ref><ref>{{Cite web|title=Facebook Oculus Rift S discontinued {{!}} bit-tech.net|url=https://bit-tech.net/news/gaming/pc/facebook-oculus-rift-s-discontinued/1/|access-date=2021-04-06|website=bit-tech.net|language=en}}</ref><ref>{{Cite web|last=April 2021|first=Hamish Hector 06|title=Goodbye Oculus Rift S, we won't miss you|url=https://www.techradar.com/news/goodbye-oculus-rift-s-we-wont-miss-you|access-date=2021-04-06|website=TechRadar|date=6 April 2021 |language=en}}</ref> That June, the Rift S section in the Oculus website was updated and was no longer being sold.<ref>{{Cite web |title=Oculus Rift S: PC-Powered VR Gaming Headset {{!}} Oculus |url=https://www.oculus.com/rift-s/ |access-date=2022-04-23 |website=www.oculus.com |language=en}}</ref>
+
+== Reception ==
+The Rift S received mixed reviews. ''The Verge'' felt that the Insight system was "easily a match for the old Rift tracking cameras" and helped make setup less complicated, and that its halo strap was more comfortable than that of the Oculus Quest, but felt that some of its other changes were downgrades over the previous model and Quest — including replacing its headphones with directional speakers, the lack of hardware IPD adjustment, and a screen whose resolution only slightly higher than the Rift CV1, but lower than the Oculus Quest.<ref>{{Cite web|last=Robertson|first=Adi|date=2019-04-30|title=Oculus Rift S review: a swan song for first-generation VR|url=https://www.theverge.com/2019/4/30/18523941/oculus-rift-s-review-vr-headset-price-specs-features|access-date=2020-08-04|website=The Verge|language=en}}</ref>
+
+''TechRadar'' characterized the Rift S as being an incremental upgrade over the CV1, similarly praising its "elegantly simple" tracking system, but noting only marginal hardware updates, and regressions such as its directional speakers, a tighter fit and no hardware IPD, and its lower refresh rate. Coming from a CV1, the reviewer also noted that the Rift S was also the first headset to make them feel nauseous, although citing possible factors such as the lower refresh rate or ''[[Fallout 4 VR]]'' being a SteamVR game that was not fully optimized for the Oculus platform. It was argued that the Rift S "does very little to appeal to those that have already invested in the Oculus ecosystem", and that "the future of Oculus VR, if it is ever to have mainstream appeal from a consumer perspective, looks to sit then with the Oculus Quest, whose freedom of movement does stand the chance of being truly transformational, given the right software."<ref>{{Cite web|last=Lynch|first=Gerald|date=2019-06-06|title=Oculus Rift S review|url=https://www.techradar.com/reviews/oculus-rift-s-review|url-status=live|archive-url=|archive-date=|access-date=2021-01-03|website=TechRadar|language=en}}</ref>
+
+Oculus co-founder [[Palmer Luckey]] criticized the lack of hardware IPD, stating that the software-only adjustment was not comparable in any way to an actual physical IPD adjustment mechanism. He estimated that about 30% of the population — including himself — would not be able to use the Rift S comfortably. In comparison, the original Rift CV1 was designed to support any IPD between the 5th and 95th percentile (58mm and 72mm, respectively), making the device comfortable for 90% of the population.<ref>{{Cite web|url=https://www.roadtovr.com/palmer-luckey-oculus-founder-rift-s-optimal-70-population-ipd/|title=Oculus Founder: Rift S Suitable for Only About 70% of Population Due to IPD|last=Lang|first=Ben|date=2019-03-25|website=Road to VR|language=en-US|access-date=2019-03-25}}</ref>
+
+== Hidden messages in Touch Controllers ==
+On April 12, 2019, Nate Mitchell, co-founder of Oculus VR and head of VR product at Facebook, explained via [[Twitter]] that "some '[[Easter egg (media)|easter egg]]' labels meant for prototypes accidentally made it onto the internal hardware for tens of thousands of [Oculus Quest and Rift S] Touch controllers." The messages on final production hardware say 'This Space For Rent' and 'The Masons Were Here,' while a few development kits contained 'Big Brother is Watching' and 'Hi [[iFixit]]! We See You!'<ref>{{Cite web|url=https://twitter.com/natemitchell/status/1116757807200497664|title=Unfortunately, some "easter egg" labels meant for prototypes accidentally made it onto the internal hardware for tens of thousands of Touch controllers. [1/3]|last=Mitchell|first=Nate|date=2019-04-12|website=@natemitchell|language=en|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://www.theverge.com/2019/4/12/18308132/facebook-oculus-touch-controllers-secret-messages-nate-mitchell-apology|title=Oculus says 'tens of thousands' of its new controllers include secret messages|last=Robertson|first=Adi|date=2019-04-12|website=The Verge|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://www.ign.com/articles/2019/04/13/facebook-accidentally-hid-phrases-like-big-brother-is-watching-in-oculus-touch-vr-controllers|title=Facebook Accidentally Hid Phrases Like 'Big Brother Is Watching' in Oculus Touch VR Controllers|last=Bankhurst|first=Adam|date=2019-04-12|website=IGN|language=en-US|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://bgr.com/2019/04/12/facebook-oculus-touch-controller-hidden-messages/|title=Facebook's latest mishap involves bizarre messages printed on Oculus controllers|last=Meek|first=Andy|date=2019-04-13|website=BGR|language=en|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://kotaku.com/oculus-accidentally-hid-creepy-messages-in-thousands-of-1834013275|title=Oculus Accidentally Hid Creepy Messages In Thousands Of VR Controllers|last=Rivera|first=Joshua|website=Kotaku|date=12 April 2019 |language=en-US|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://www.cnet.com/news/facebook-mistakenly-prints-oculus-touch-controllers-with-cryptic-messages/|title=Facebook mistakenly prints Oculus Touch controllers with cryptic messages|last=Brown|first=Shelby|website=CNET|language=en|access-date=2019-04-13}}</ref><ref>{{Cite web|url=https://www.slashgear.com/new-oculus-vr-controllers-accidentally-include-bizarre-hidden-messages-13573184/|title=New Oculus VR controllers accidentally include bizarre hidden messages|date=2019-04-13|website=SlashGear|language=en-US|access-date=2019-04-13}}</ref>
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website}}
+
+{{Mixed reality}}
+{{Facebook navbox}}
+
+[[Category:Products introduced in 2019]]
+[[Category:Virtual reality headsets]]
+[[Category:Oculus Rift]]
+[[Category:American inventions]]
+[[Category:Wearable devices]]

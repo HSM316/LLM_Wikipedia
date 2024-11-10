@@ -1,0 +1,80 @@
+PyTorch is a machine learning framework based on the Torch library, used for applications such as computer vision and natural language processing, originally developed by Meta AI and now part of the Linux Foundation umbrella. It is free and open-source software released under the modified BSD license. Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface.
+
+A number of pieces of deep learning software are built on top of PyTorch, including Tesla Autopilot, Uber's Pyro, Hugging Face's Transformers, PyTorch Lightning, and Catalyst.
+
+PyTorch provides two high-level features:
+ Tensor computing (like NumPy) with strong acceleration via graphics processing units (GPU)
+ Deep neural networks built on a tape-based automatic differentiation system
+
+History
+Meta (formerly known as Facebook) operates both PyTorch and Convolutional Architecture for Fast Feature Embedding (Caffe2), but models defined by the two frameworks were mutually incompatible. The Open Neural Network Exchange (ONNX) project was created by Meta and Microsoft in September 2017 for converting models between frameworks. Caffe2 was merged into PyTorch at the end of March 2018. In September 2022, Meta announced that PyTorch would be governed by PyTorch Foundation, a newly created independent organizationa subsidiary of Linux Foundation.
+
+PyTorch tensors
+PyTorch defines a class called Tensor (torch.Tensor) to store and operate on homogeneous multidimensional rectangular arrays of numbers. PyTorch Tensors are similar to NumPy Arrays, but can also be operated on a CUDA-capable NVIDIA GPU. PyTorch has also been developing support for other GPU platforms, for example, AMD's ROCm and Apple's Metal Framework.
+
+PyTorch supports various sub-types of Tensors.
+
+Note that the term "tensor" here does not carry the same meaning as tensor in mathematics or physics. The meaning of the word in those areas, that is, a certain kind of object in linear algebra, is only tangentially related to the one in Machine Learning.
+
+Modules
+Autograd module
+PyTorch uses a method called automatic differentiation. A recorder records what operations have performed, and then it replays it backward to compute the gradients. This method is especially powerful when building neural networks to save time on one epoch by calculating differentiation of the parameters at the forward pass.
+
+Optim module
+torch.optim is a module that implements various optimization algorithms used for building neural networks. Most of the commonly used methods are already supported, so there is no need to build them from scratch.
+
+nn module
+PyTorch autograd makes it easy to define computational graphs and take gradients, but raw autograd can be a bit too low-level for defining complex neural networks. This is where the nn module can help. The  nn  module provides layers and tools to easily create a neural networks by just defining the layers of the network.
+
+PyTorch also contains many other useful submodules such as data loading utilities and distributed training functions.
+
+ Example 
+The following program shows the low-level functionality of the library with a simple example
+
+import torch
+dtype = torch.float
+device = torch.device("cpu") # This executes all calculations on the CPU
+# device = torch.device("cuda:0") # This executes all calculations on the GPU
+
+# Creation of a tensor and filling of a tensor with random numbers
+a = torch.randn(2, 3, device=device, dtype=dtype)
+print(a) # Output of tensor A
+# Output: tensor([[-1.1884,  0.8498, -1.7129],
+#                  [-0.8816,  0.1944,  0.5847]])
+
+# Creation of a tensor and filling of a tensor with random numbers
+b = torch.randn(2, 3, device=device, dtype=dtype)
+print(b) # Output of tensor B
+# Output: tensor([[ 0.7178, -0.8453, -1.3403],
+#                  [ 1.3262,  1.1512, -1.7070]])
+
+print(a*b) # Output of a multiplication of the two tensors
+# Output: tensor([[-0.8530, -0.7183,  2.58],
+#                  [-1.1692,  0.2238, -0.9981]])
+
+print(a.sum()) # Output of the sum of all elements in tensor A
+# Output: tensor(-2.1540)
+
+print(a[1,2]) # Output of the element in the third column of the second row (zero based)
+# Output: tensor(0.5847)
+
+print(a.max()) # Output of the maximum value in tensor A
+# Output: tensor(-1.7129)The following code-block shows an example of the higher level functionality provided nn module. A neural network with linear layers is defined in the example.import torch
+from torch import nn # Import the nn sub-module from PyTorch
+
+class NeuralNetwork(nn.Module): # Neural networks are defined as classes
+    def __init__(self): # Layers and variables are defined in the __init__ method
+        super(NeuralNetwork, self).__init__() # Must be in every network.
+        self.flatten = nn.Flatten() # Defining a flattening layer.
+        self.linear_relu_stack = nn.Sequential( # Defining a stack of layers.
+            nn.Linear(28*28, 512), # Linear Layers have an input and output shape
+            nn.ReLU(), # ReLU is one of many activation functions provided by nn
+            nn.Linear(512, 512),
+            nn.ReLU(),
+            nn.Linear(512, 10), 
+        )
+
+    def forward(self, x): # This function defines the forward pass.
+        x = self.flatten(x)
+        logits = self.linear_relu_stack(x)
+        return logits

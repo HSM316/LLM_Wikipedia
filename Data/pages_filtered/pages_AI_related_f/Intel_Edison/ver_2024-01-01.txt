@@ -1,0 +1,51 @@
+The Intel Edison is a computer-on-module that was offered by Intel as a development system for wearable devices and Internet of Things devices. The system was initially announced to be the same size and shape as an SD card and containing a dual-core Intel Quark x86 CPU at 400 MHz communicating via Bluetooth and Wi-Fi. A later announcement changed the CPU to a 500 MHz Silvermont dual-core Intel Atom CPU, and in September 2014 a second version of Edison was shown at IDF, which was bigger and thicker than a standard SD card.
+
+The board was discontinued on June 19, 2017.
+
+ First version 
+Its launch was announced at CES in January 2014. Intel CEO Brian Krzanich showed a demo of a baby monitoring system (Nursery2.0) which was created using Intel Edison. He also announced that the Wolfram Language and Mathematica will be available on the Intel Edison and that the device will be able to run Linux.
+
+ Second version 
+In March 2014, Intel announced changes in the Intel Edison project and the second version of the board was presented in September 2014. Its dimensions are 35.5 x 25 x 3.9 mm, with components on both sides. The board's main SoC is a 22 nm Intel Atom "Tangier" (Z34XX) that includes two Atom Silvermont cores running at 500 MHz and one Intel Quark core at 100 MHz (for executing RTOS ViperOS). The SoC has 1 GB RAM integrated on package. There is also 4 GB eMMC flash on board, Wi-Fi, Bluetooth 4 and USB controllers. The board has 70-pin dense connector (Hirose DF40) with USB, SD, UARTs, GPIOs. The price of the device is around 50 USD. It runs Yocto Linux with development support for Arduino IDE, Eclipse (C, C++, Python), and Intel XDK (NodeJS, HTML5).
+centre|439x439px
+
+ Interface connector 
+The connector on Intel Edison is a Hirose 70-pin DF40 Series “header” connector. (Hirose part number: DF40C-70DP-0.4V(51)). It exports many signals (USB, GPIOs, SPI, I²C, PWM, etc.).
+
+The mating Hirose connector on an expansion board is the “receptacle” connector and is available in three different heights (1.5 mm, 2.0 mm, 3.0 mm).
+
+ Development boards 
+
+ Arduino board 
+right|330x330px|Arduino Uno Compatible Board for Edison Module
+Intel Released an Arduino Uno compatible board (with only 4 PWM pins instead of 6) that accepts the Intel Edison module. Newer revisions have 6 PWM pins.
+
+Board I/O Features:
+ 20 digital input/output pins, including 6 pins as PWM outputs
+ 6 analog inputs
+ 1 UART (Rx/Tx)
+ 1 I²C
+ 1 ICSP (In-system programming) 6-pin header (SPI)
+ Micro USB device connector OR (via mechanical switch) dedicated standard size USB host Type-A connector
+ Micro USB device (connected to UART)
+ SD card connector
+ DC power jack (7 to 15VDC input)
+
+ Intel breakout board 
+right|Intel Edison Break Out Board
+Intel released a breakout board that is twice the area of the Intel Edison module and is designed for prototyping with open-source hardware and software.
+ Exposes native 1.8 V I/O of the Edison module
+ 0.1” grid I/O array of through-hole solder points
+ USB OTG with USB Micro Type-AB connector
+ USB OTG power switch
+ Battery Charger
+ USB to device UART bridge with USB Micro
+ Type-B connector
+ DC power supply jack (7 V – 15 V) DC input
+
+The table below lists the signals from the Edison Module that are routed to the four breakout connector (J17-J20). The figure below shows the location of each connector. 
+centre|450x450px|Intel Edison Breakout Board - Breakout Connectors
+PinFunctionAlternate FunctionDescriptionPinFunctionAlternate FunctionDescriptionJ17 - pin 1 GP182_PWM2GPIO capable of PWM output.J18 - pin 1GP13_PWM1GPIO capable of PWM output.J17 - pin 2NCNo ConnectJ18 - pin 2GP165GPIOJ17 -pin 3NCNo ConnectJ18 - pin 3GPI_PWRBTN_NPower button input.J17 - pin 4VIN7 to 15 V.J18 - pin 4MSIC_SLP_CLK232 kHz sleep clock.J17 - pin 5GP135UART2_TXGPIO, UART2 transmit output.J18 - pin 5V_VBAT_BKUPRTC backup battery input.J17 - pin 6RCVR_MODEFirmware recovery mode.J18 - pin 6GP19I2C1_SCLGPIO,IC21 SCL output open collector.J17 - pin 7GP27I2C6_SCLGPIO,IC26 SCL output open collector.J18 - pin 7GP12_PWM0GPIO capable of PWM output.J17 - pin 8GP20I2C1_SDAGPIO, I2C1 data open collector.J18 - pin 8GP183_PWM3GPIO capable of PWM output.J17 - pin 9GP28I2C6_SDAGPIO, I2C6 data open collector.J18 - pin 9NCNo ConnectJ17 - pin 10GP111SSP5_FS1GPIO, SSP2 chip select 2 output.J18 - pin 10GP110SSP5_FS0GPIO, SSP1 chip select 2 output.J17 - pin 11GP109SSP5_CLKGPIO, SSP5 clock output.J18 - pin 11GP114SSP5_RXGPIO, SSP5 receive data input.J17 - pin 12GP115SSP5_TXDGPIO, SSP5 transmit data output.J18 - pin 12GP129UART1_RTSGPIO, UART1 ready to send output.J17 - pin 13OSC_CLK_OUT_0High speed clock output.J18 - pin 13GP130UART1_RXGPIO, UART1 receive data input.J17 - pin 14GP128UART1_CTSGPIO, UART1 clear to send input.J18 - pin 144 FW_RCVRFirmware recovery, active high on boot.J19 - pin 1NCNo connect.J20 - pin 1V_VSYSSystem input power.J19 - pin 2V_V1P80System 1.8 V I/O output power.J20 - pin 2V_V3P30System 3.3 V output.J19 - pin 3GNDGround.J20 - pin 3GP134UART2_RXUART2 Rx (input).J19 - pin 4GP44ALS_INT_NGPIO, Ambient light Sensor interrupt input.J20 - pin 4GP45COMPASS_DRDYGPIO, compass data ready input.J19 - pin 5GP46ACCELEROMETER_INT_1GPIO, accelerometer interrupt input.J20 - pin 5GP47ACCELEROMETER_INT_2GPIO, accelerometer interrupt input 2.J19 - pin 6GP48GYRO_DRDYGPIO, gyro data ready input.J20 - pin 6GP49GYRO_INTGPIO, gyro interrupt input.J19 - pin 7RESET_OUT#System reset out low.J20 - pin 7GP15GPIO.J19 - pin 8GP131UART1_TXGPIO, UART 1 Tx output.J20 - pin 8GP84SD_CLK_FBGPIO, SD clock feedback input.J19 - pin 9GP14AUDIO_CODEC_INTGPIO, audio codec interrupt input.J20 - pin 9GP42SSP2_RXDGPIO, SSP2 Rx data input.J19 - pin 10GP40SSP2_CLKGPIO, SSP2 clock output.J20 - pin 10GP41SSP2_FSGPIO, SSP2 frame sync output.J19 - pin 11GP43SSP2_TXDGPIO, SSP2 transmit data output.J20 - pin 11GP78SD_CLKGPIO, SD clock output.J19 - pin 12GP77SD_CDNGPIO, SD card detect low inputJ20 - pin 12GP79SD_CMDGPIO, SD command.J19 - pin 13GP82SD_DAT2GPIO, SD data 2J20 - pin 13GP80SD_DAT0GPIO, SD data 0.J19 - pin 14GP83SD_DAT3GPIO, SD data 3J20 - pin 14GP81SD_DAT1GP81 SD data 1.
+
+ Modulowo board 
+In October 2015, Modulowo published information about the development kit Modulowo Explore E for Intel Edison. Development Board allows for quick prototyping and design new solutions and adding sensors, controllers lights, motor drivers, GPS modules, communication modules and more.

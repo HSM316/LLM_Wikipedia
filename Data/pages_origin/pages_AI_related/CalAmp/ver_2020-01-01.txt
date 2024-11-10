@@ -1,0 +1,103 @@
+{{news release|1=article|date=October 2018}}
+{{Infobox company
+| name             = CalAmp
+| logo             = File:CalAmp_corporate_logo.png
+| type             = [[Public company|Public]]
+| traded_as        = {{NASDAQ|CAMP}}
+| foundation       = {{start date and age|1981}}
+| founder          = 
+| location_city    = [[Irvine, California]]
+| location_country = [[U.S.]]
+| industry         = [[Telematics]], [[SaaS]] and [[Internet of things|IoT]]
+| key_people       = Michael J. Burdiek (CEO)
+| products         = CalAmp Telematics Cloud, CalAmp Telematics Suite, CrashBoxx, AssetOutlook, FleetOutlook, GovOutlook, LenderOutlook, [[LoJack Stolen Vehicle Recovery System|LoJack]], LoJack SureDrive, LoJack LotSmart, Telematics Devices
+| services         = 
+| num_employees    = 840 (February 2018)<ref name=2018-10k>{{cite web|url=http://secfilings.nasdaq.com/filingFrameset.asp?FilingID=12742843&RcvdDate=5/10/2018&CoName=CALAMP%20CORP.&FormType=10-K&View=html |title=CalAmp 2018 Annual Report Form (10-K) | publisher=secfilings.nasdaq.com |format= |date=2018-05-09 |accessdate=2018-09-05}}</ref>
+| revenue          = {{ubl|{{nowrap|{{increase}} US$ 365.9&nbsp;million (2018)<ref name=2018-10k/>}}
+| {{nowrap|{{increase}} US$ 351.1&nbsp;million (2017)<ref name=2018-10k/>}}}}
+| homepage         = {{URL|calamp.com}}
+}}
+
+'''CalAmp''' is an [[Irvine, California]]-based provider of [[Internet of things|IoT]] software applications, cloud services, data intelligence and networked [[telematics]] products and services.  The company's technology includes [[edge computing]] devices and [[SaaS]]-based applications for remotely tracking and managing vehicles and consumer products. The company also owns the [[LoJack]] Stolen Vehicle Recovery System and provides connected car and lot management products.<ref name=fool1>{{cite web|url=https://www.fool.com/investing/2017/12/30/where-will-calamp-corp-be-in-5-years.aspx |title=Where Will CalAmp Corp. Be in 5 Years?|website=fool.com |date=2017-12-30 |accessdate=2018-09-05}}</ref>  
+
+==History==
+CalAmp was founded as California Amplifier Inc. in [[Newbury Park, California]] in 1981, by Jacob Inbar and David Nichols, who worked together at a microwave division of [[Eaton Corporation]].<ref name=latimes2>{{cite web|url=http://articles.latimes.com/1986-07-20/business/fi-17338_1_california-amplifier |title=Restructuring After Brush With Bankruptcy : Amplifier Firm Forced to Retune |website=latimes.com |date=1986-07-20 |accessdate=2018-09-05}}</ref> The company originally made amplifiers and other equipment used to transmit microwave signals for satellite video and broadband communications.<ref name=secnews>{{cite web|url=https://www.sec.gov/news/digest/1983/dig101383.pdf |title=sec news digest|website=sec.gov |date=1983-10-13 |accessdate=2018-09-05}}</ref><ref name=ocbj1>{{cite web|url=http://www.ocbj.com/news/2016/may/16/calamp-move-oxnard-adds-tech-sector-here/ |title=CalAmp Move from Oxnard Adds to Tech Sector Here |website=ocbj.com |date=2013-02-12 |accessdate=2018-09-05}}{{subscription required|date=June 2018}}</ref><ref name=latimes1>{{cite web|url=http://articles.latimes.com/2002/dec/02/business/fi-calamplifier2 |title=California Amplifier Stays Prepared |website=latimes.com |date=2002-12-02 |accessdate=2018-09-05}}</ref> The company began trading on NASDAQ in 1983.<ref name=latimes1/><ref name=secnews/>
+
+By 1986, the company had relocated to [[Camarillo, California]], and stopped making amplifiers for the consumer market.<ref name=latimes2/>
+
+In 1999, the company entered the [[direct broadcast satellite]] (DBS) market by acquiring Texas-based Gardiner Group, a satellite dish component provider.<ref name=latimes1/>
+
+In December 2003, the company acquired communications software company Vytek Corp, for $USD76.8 million.<ref name=latimes3>{{cite web|url=http://articles.latimes.com/2003/dec/24/business/fi-amplifier24|title=California Amplifier Agrees to Buy Vytek |website=latimes.com |date=2003-12-24 |accessdate=2018-09-05}}</ref>
+
+In March 2004, the company relocated to [[Oxnard, California]].<ref>{{cite web|url=http://d18rn0p25nwr6d.cloudfront.net/CIK-0000730255/3dae60a1-f7c0-49fb-a2ef-fae18e35f863.pdf|title= California Amplifier to Webcast Management Discussion of Vytek Corporation Pending Acquisition |website=cloudfront.net |date=2004-03-10 |accessdate=2018-07-13}}</ref> In August, the company changed its name to CalAmp Corp.<ref>{{cite web|url=https://www.multichannel.com/news/california-amplifier-call-us-calamp-260082|title=California Amplifier: Call Us CalAmp |website=multichannel.com |date=2004-08-04 |accessdate=2018-09-05}}</ref>
+
+In May 2006, the company acquired [[Montreal, Canada]]-based wireless radio company Dataradio, to expand its wireless data communications business for public safety and [[machine to machine]] (M2M) applications.<ref>{{cite web|url=https://www.socaltech.com/calamp_completes_dataradio_buy_for__4m/s-0004129.html |title=CalAmp Completes Dataradio Buy For $54M|website=socaltech.com |date=2006-05-30 |accessdate=2018-09-05}}</ref>  It also acquired the mobile resource management line from [[Carlsbad, California]]-based location tracking company [[TechnoCom]] to offer enterprise asset tracking and fleet management applications.<ref>{{cite web|url=https://www.rcrwireless.com/20060530/archived-articles/calamp-acquires-m2m-from-technocom |title=CalAmp acquires M2M from TechnoCom|website=rcrwireless.com |date=2006-05-30 |accessdate=2018-09-05}}</ref>
+
+In 2007, the company acquired the Aercept Vehicle Tracking business from wireless telematics service provider AirIQ.<ref name=gpsdaily1>{{cite web|url=http://www.gpsdaily.com/reports/CalAmp_Licenses_Patents_For_Vehicle_Location_Technology_To_SKYWATCH_GPS_999.html |title=CalAmp Licenses Patents For Vehicle Location Technology To SKYWATCH GPS |website=gpsdaily.com |date=2008-02-06 |accessdate=2018-09-05}}</ref>  
+
+By 2010, the company was focused on selling IoT hardware and DBS solutions.<ref name=fool1/>
+
+In December 2012, the company announced the acquisition of [[Herndon, Virginia]]-based fleet management application provider Wireless Matrix Corp for $USD53 million.<ref>{{cite web|url=https://www.streetinsider.com/Mergers+and+Acquisitions/CalAmp+%28CAMP%29+to+Acquire+Wireless+Matrix+in+%2453M+Deal/7964463.html |title=CalAmp (CAMP) to Acquire Wireless Matrix in $53M Deal|website=streetinsider.com |date=2012-12-20 |accessdate=2018-09-05}}</ref>  
+
+In February 2013, the company announced a stock offering that was intended in part to fund the Wireless Matrix Corp purchase.<ref>{{cite web|url=https://www.pacbiztimes.com/2013/02/12/calamp-to-offer-4-2m-shares-to-fund-acquisition/ |title=CalAmp to offer 4.2M shares to fund acquisition |website=pacbiztimes.com |date=2013-02-12 |accessdate=2018-09-05}}</ref> 
+
+In April 2015, CalAmp bought telematics startup Crashboxx, a provider of a vehicle risk management system for insurance companies and fleet operators. The product is used for crash response and accident reconstruction to minimize costs and mitigate fraud.<ref name=seekingalpha>{{cite web|url= https://seekingalpha.com/news/2437526-calamp-buys-insurance-telematics-startup-crashboxx |title=CalAmp buys insurance telematics startup Crashboxx  |website=seekingalpha.com |date=2015-04-20 |accessdate=2018-09-05}}</ref>
+
+By 2016, the company had phased out its DBS business and shifted its focus to SaaS-based telematics products and services.<ref name=fool1/> In February, CalAmp announced it was acquiring stolen vehicle recovery company LoJack Corporation, for USD$134 million, and the deal closed in March.<ref name=wsj1>{{cite web|url=https://www.wsj.com/articles/lojack-agrees-to-134-million-sale-to-calamp-1454363855 |title=LoJack Agrees to $134 Million Sale to CalAmp |website=wsj.com |date=2016-02-01 |accessdate=2018-09-05}}</ref><ref name=reuters>{{cite web|url=https://www.reuters.com/article/idUSASC08HLB|title=BRIEF-CalAmp completes acquisition of Lojack; sees q4 EPS of about $0.32 |website=reuters.com |date=2016-03-21 |accessdate=2018-09-05}}</ref> In April, the company announced it was moving its headquarters from Oxnard to Irvine, California, to take advantage of the area's tech environment.<ref>{{cite web|url=https://www.ocregister.com/2016/04/20/wireless-firm-calamp-to-shift-hq-to-irvine-from-oxnard/ |title=Wireless firm CalAmp to shift HQ to Irvine from Oxnard  |website=ocregister.com |date=2016-04-20 |accessdate=2018-09-05}}</ref> In September, the company introduced the LoJack LotSmart automotive dealer inventory management solution and LoJack SureDrive connected car app.<ref name=digitaltrends>{{cite web|url=https://www.digitaltrends.com/cars/calamp-suredrive-lojack-gps-vehicle-tracking/ |title=Connected-car peace of mind now on tap with LoJack’s SureDrive car security platform  |website=digitaltrends.com |date=2016-09-07 |accessdate=2018-09-05}}</ref>
+
+In January 2019, the company launched a smartwatch-sized pet tracking device called Maven, in conjunction with logistics software company [[CargoSense]].<ref>{{cite web|url=https://www.ocbj.com/news/2019/jan/28/pet-tracking-device-new-market-calamp/ |title=Pet Tracking Device a New Market for CalAmp |website=ocbj.com |date=2019-01-28 |accessdate=2019-01-29}}</ref> 
+
+==Products and services==
+The company combines connected telematics products and cloud technology with Software as a Service (SaaS) applications to collect and assess data from mobile assets, cargo and companies. Micro services for specific tasks are delivered through the company's applications or as standalone services.<ref name=2018-10k/>
+
+*'''Connected telematics devices''' - the company develops telematics devices that capture and report information from remote and mobile assets. Telematics products include asset tracking units; mobile telematics devices; and fixed and mobile wireless gateways and routers that support CalAmp and third party software applications.
+
+*'''SaaS applications''' - the company's SaaS products include a range of applications designed for connected fleet and asset management, supply chain and automotive markets. The CalAmp Telematics Suite of applications includes AssetOutlook, FleetOutlook, GovOutlook and iOn Hours for fleet and asset management, as well as the SC iOn Command Portal, designed for supply chain visibility.<ref>{{cite web|url=https://www.mhlnews.com/new-products/telematics-connected-asset-management|title=Telematics for Connected Asset Management |website=mhlnews.com |date=2017-09-21 |accessdate=2018-09-05}}</ref><ref>{{cite web|url=https://www.rfidjournal.com/articles/view?17108|title=Companies Testing IoT System When Goods Are 'On the Road' |website=rfidjournal.com |date=2018-01-24 |accessdate=2018-09-05}}</ref> Applications also include the flagship LoJack Stolen Vehicle Recovery System, and brand extensions LoJack LotSmart, an inventory management system for automotive dealers, and LoJack SureDrive, a consumer connected car application.<ref name=digitaltrends/><ref name=2018-10k/>
+
+*'''Micro services''' - the company's micro services include Crashboxx, a crash response service that provides instant crash alerts and accident reconstruction reports used by insurance companies and fleet operators to reduce costs and minimize fraud.<ref name=seekingalpha/> Other micro services include driver behavior management and predictive maintenance.<ref>{{cite web|url=https://www.automotive-fleet.com/304960/calamp-reports-telematics-milestone|title=CalAmp Reports Telematics Milestone |website=automotive-fleet.com |date=2018-06-22 |accessdate=2018-09-05}}</ref>
+
+*'''CalAmp Telematics Cloud platform (CTC)''' - CalAmp's CTC platform is used to deploy the company's telematics applications and micro services. The platform collects and reports real-time data from its telematics devices and sensors, to facilitate fleet, asset and cargo management.<ref>{{cite web|url=https://www.automotive-fleet.com/136795/chevin-calamp-partner-for-integrated-telematics-data |title=Chevin, CalAmp Partner for Integrated Telematics Data |website=automotive-fleet.com |date=2016-09-14 |accessdate=2018-09-05}}</ref> The platform also allows third party application integration through open Application Programming Interfaces (APIs), and is designed to integrate with Mobile Network Operators to provide access to additional services.
+
+==LoJack Corporation==
+{{Infobox company
+| name = LoJack Corporation
+| logo = [[File:LoJack_company_logo.png|150px|center]]
+| type = [[Corporation]]
+| traded_as = 
+| foundation = [[Massachusetts]] (1986)
+| location = [[Canton, Massachusetts|Canton]], [[Massachusetts|MA]], [[United States|U.S.]]
+| industry = [[Vehicle tracking system|Vehicle tracking]], [[Motor vehicle theft#Recovery of stolen vehicles|vehicle recovery]]
+| area_served = [[Multinational corporation|Worldwide]]
+| key_people = 
+| revenue = 
+| parent = CalAmp Corp.
+| num_employees =
+| homepage = [http://www.lojack.com/ www.lojack.com]|
+}}
+
+LoJack Corporation was founded in 1986 in [[Medfield, Massachusetts]], by William Reagan, a former Medfield police commissioner.<ref name=twice1>{{cite web|url=https://www.twice.com/industry/lojack-founder-william-reagan-78-passes-away-7983 |title=LoJack Founder William Reagan, 78, Passes Away|website=twice.com |date=2013-07-08 |accessdate=2018-09-05}}</ref>  Reagan had patented the LoJack system in 1979, and chose its name to imply the opposite of "hijack". The system used a hidden car-mounted transceiver, and a tracking computer installed in police cars and aircraft, operating on a dedicated tracking frequency set aside by the Federal Communications Commission. Reagan served as the company's first CEO and Chairman.<ref name=twice1/>
+
+In 1998, the company began offering its tracking system to the heavy machinery and construction industry, including entering into an agreement with [[Caterpillar Inc.|Caterpillar]].<ref>{{cite web|url=http://www.fundinguniverse.com/company-histories/lojack-corporation-history/|title=LoJack Corporation History|website=fundinguniverse.com|date= |accessdate=2018-09-05}}</ref>
+
+In March 2012, the company moved its headquarters to [[Canton, Massachusetts]].<ref>{{cite web|url=http://www.patriotledger.com/x1644242378/LoJack-secure-in-its-new-home-in-Canton|title=LoJack secure in its new home in Canton|website=patriotledger.com|date=2012-03-09 |accessdate=2018-09-05}}</ref>
+
+By 2013, the LoJack system was reportedly operating in 28 states and the District of Columbia and in more than 30 countries. The company reported that more than 1,800 U.S. law enforcement agencies had LoJack tracking computers in their police vehicles.<ref name=twice1/> In November 2013, the company announced they were expanding tracking capabilities to parents, auto makers and insurance companies.<ref>{{cite web|url=https://www.computerworld.com/article/2486217/personal-technology/lojack-system-will-allow-parents-auto-makers-and-insurance-companies-to-track-v.html|title=LoJack system will allow parents, auto makers and insurance companies to track vehicles |website=computerworld.com |date=2013-11-25 |accessdate=2018-09-05}}</ref>
+
+In March 2016, the company was acquired by CalAmp for $134 million.<ref name=wsj1/><ref name=reuters/>
+
+==References==
+{{reflist|30em}}
+
+==External links==
+* [http://www.calamp.com Official website]
+
+[[Category:Companies based in Irvine, California]]
+[[Category:Companies established in 1981]]
+[[Category:Fleet management]]
+[[Category:Intelligent transportation systems]]
+[[Category:Internet of things]]
+[[Category:Supply chain management]]
+[[Category:Telematics]]
+[[Category:Vehicle telematics]]
+[[Category:Vehicle technology]]
+[[Category:Wireless locating]]

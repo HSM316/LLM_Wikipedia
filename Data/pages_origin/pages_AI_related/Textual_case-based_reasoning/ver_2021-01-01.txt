@@ -1,0 +1,13 @@
+{{Underlinked|date=September 2014}}
+
+'''Textual case-based reasoning''' is a subtopic of [[case-based reasoning]], in short CBR, a popular area in [[artificial intelligence]]. CBR suggests the ways to use past experiences to solve future similar problems, requiring that past experiences be structured in a form similar to [[attribute-value pairs]]. This leads to the investigation of textual descriptions for knowledge exploration whose output will be, in turn, used to solve similar problems.<ref>{{Cite journal|last=Weber|first=R.O.|last2=K.|first2=Ashley|last3=S.|first3=Brüninghaus|date=2005|title=Textual Case-Based Reasoning|journal=Knowledge Engineering Review|volume=20|pages=255-260}}</ref>
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://tcbr.dei.uc.pt/ Fourth Workshop on Textual Case-Based Reasoning: Beyond Retrieval]
+* [http://cbrwiki.fdi.ucm.es/mediawiki/index.php/Textual_Case-Based_Reasoning Textual Case-Based Reasoning Wiki] 
+
+[[Category:Classification algorithms]]
+[[Category:Inductive reasoning]]

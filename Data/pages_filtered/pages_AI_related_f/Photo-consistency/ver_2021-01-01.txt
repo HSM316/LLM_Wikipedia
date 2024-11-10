@@ -1,0 +1,6 @@
+In computer vision Photo-consistency determines whether a given voxel is occupied. A voxel is considered to be photo consistent when its color appears to be similar to all the cameras that can see it.Jianfeng Yin and Jeremy R. Cooperstock, A New Photo Consistency Test for Voxel Coloring, Proceedings of the Second Canadian Conference on Computer and Robot Vision (CRV’05), IEEE Most voxel coloring or space carving techniques require using photo consistency as a check condition in Image-based modeling and rendering applications.
+
+ Usage 
+3D Volumetric Reconstruction.Alexander Hornung, and Leif Kobbelt, Robust and Efficient Photo-Consistency Estimation for Volumetric 3D Reconstruction, Lecture Notes in Computer Science, Springer Berlin / Heidelberg.  	
+ Image registration.Zsolt Janko, Dmitry Chetverikov, Photo-Consistency Based Registration of an Uncalibrated Image Pair to a 3D Surface Model Using Genetic Algorithm, Proceedings of the 3D Data Processing, Visualization, and Transmission, 2nd International Symposium.
+ Multi-view reconstruction.Sudipta N. Sinha Marc Pollefeys, Multi-view Reconstruction using Photo-consistency and Exact Silhouette Constraints: A Maximum-Flow Formulation.

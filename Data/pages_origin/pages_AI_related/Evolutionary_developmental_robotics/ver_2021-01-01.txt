@@ -1,0 +1,17 @@
+'''Evolutionary developmental robotics''' ('''evo-devo-robo''' for short) refers to methodologies that systematically integrate [[evolutionary robotics]], [[epigenetic robotics]] and [[morphogenetic robotics]] to study the evolution, physical and mental development and learning of natural intelligent systems in robotic systems. The field was formally suggested and fully discussed in a published paper<ref>Y. Jin and Y. Meng, "Morphogenetic robotics: A new emerging field in developmental robotics. ''IEEE Transactions on Systems, Man, and Cybernetics, Part C: Reviews and Applications, 41(2):145-160, 2011''</ref> and further discussed in a published dialogue.<ref>Y. Jin and Y. Meng. "Evolutionary Developmental Robotics: The Next Step to Go?" IEEE CIS AMD Newsletter, 8(1):13-14, 2011</ref>
+
+The theoretical foundation of evo-devo-robo includes [[evolutionary developmental biology]] (evo-devo), [[evolutionary developmental psychology]], [[developmental cognitive neuroscience]] etc. Further discussions on evolution, development and learning in robotics and design can be found in a number of papers,<ref>H. Lipson, [http://ai2-s2-pdfs.s3.amazonaws.com/adac/8ad353506beaad68e9e5b2f61172a4a0184a.pdf Evolutionary robotics and open-ended design automation].</ref><ref>J. Kodjabachian and J.-A. Meyer, [https://ieeexplore.ieee.org/abstract/document/636087/ Development, learning and evolution in animats]. From Perception to Action, IEEE Press, 1994</ref><ref>D. Floreano, and J. Urzelai. [https://infoscience.epfl.ch/record/63926/files/tb.pdf Neural morphogenesis, synaptic plasticity and evolution]. Theory in Biosciences, 120(3-4):225-240, 2001</ref><ref>J. Kodjabachian and J.-A. Meyer. [https://pdfs.semanticscholar.org/f00f/6605b55314675cb2a3593f44cddd0694826d.pdf Evolution and development of neural controllers for locomotion, gradient-following and obstacle avoidance in artificial insects]. IEEE Trans. on Neural Networks, 9(5):796-812, 1998</ref> including papers on hardware systems<ref>M. Sipper  et al. [http://www.acsa.upt.ro/teaching/ES/POE.pdf A phylogenetic, ontogenetic, and epigenetic view of bio-inspired hardware systems]. IEEE Trans. on Evolutionary Computation. 1(1):83-97, 1997</ref><ref>H. Guo, Y. Meng, and Y. Jin. [http://www.soft-computing.de/BioSystems09_Meng.pdf A cellular mechanism for multi-robot construction via evolutionary multi-objective optimization of a gene regulatory network]. BioSystems, 98(3):193-203, 2009</ref> and computing tissues.<ref>C. Teuscher, D. Mange, A. Stauffer, and G. Tempesti. [http://lslwww.epfl.ch/biowall/Articles/teuscher_biosystems.pdf Bio-inspired computing tissues: Towards machines that evolve, grow, and learn]. IPCAT'2001, April 2001</ref>
+
+== See also ==
+*[[Artificial life]]
+*[[Cognitive robotics]]
+*[[Morphogenetic robotics]]
+*[[Developmental robotics]]
+*[[Evolutionary robotics]]
+
+== References ==
+{{Reflist}}
+
+{{DEFAULTSORT:Evolutionary Developmental Robotics}}
+[[Category:Artificial intelligence]]
+[[Category:Robotics]]

@@ -1,0 +1,7 @@
+Semantic Scholar is an artificial-intelligence backed search engine for academic publications that was developed at the Allen Institute for Artificial Intelligence and publicly released in November 2015. The project uses a combination of machine learning, natural language processing, and machine vision to add a layer of semantic analysis to the traditional methods of citation analysis, and to extract relevant figures, entities, and venues from papers. In comparison to Google Scholar and PubMed, Semantic Scholar is designed to highlight the most important and influential papers, and to identify the connections between them.
+
+As of January 2018, following a 2017 project that added biomedical papers and topic summaries, the Semantic Scholar corpus included more than 40 million papers from computer science and biomedicine. In March 2018, Doug Raymond, who developed machine learning initiatives for the Amazon Alexa platform, was hired to lead the Semantic Scholar project.
+
+As of August 2019, the number of included papers had grown to more than 173 million after the addition of the Microsoft Academic Graph records. Each paper hosted by Semantic Scholar is assigned a unique identifier called the Semantic Scholar Corpus ID (or S2CID for short), for example
+
+ 

@@ -1,0 +1,40 @@
+'''Vivid knowledge''' refers to a specific kind of [[knowledge representation]].
+
+The idea of a '''vivid knowledge base''' is to get an interpretation mostly straightforward out of it &ndash; it implies the interpretation. Thus, any query to such a [[knowledge base]] can be reduced to a [[database]]-like query.
+
+== Propositional knowledge base ==
+
+A [[Propositional logic|propositional]] [[knowledge base]] KB is '''vivid''' ''iff'' KB is a [[Completeness (knowledge bases)|complete]] and [[consistency (knowledge bases)|consistent]] set of [[Literal (mathematical logic)|literals]] (over some vocabulary).<ref>Knowledge Representation and Reasoning / Ronald J. Brachman, Hector J. Levesque / page 337</ref>
+
+Such a knowledge base has the property that it as exactly one interpretation, i.e. the interpretation is unique. A check for entailment of a sentence can simply be broken down into its literals and those can be answered by a simple database-like check of KB.
+
+== First-order knowledge base ==
+
+A [[First-order logic|first-order]] knowledge base KB is '''vivid''' ''iff'' for some finite set of positive function-free ground literals KB<sup>+</sup>,
+
+: KB = KB<sup>+</sup> ∪ Negations ∪ DomainClosure ∪ UniqueNames,
+
+whereby
+
+: Negations ≔ { ¬p | p is atomic and KB ⊭ p },
+: DomainClosure ≔ { (c<sub>i</sub> ≠ c<sub>j</sub>) | c<sub>i</sub>, c<sub>j</sub> are distinct constants },
+: UniqueNames ≔ { ∀x: (x = c<sub>1</sub>) ∨ (x = c<sub>2</sub>) ∨ ..., where the c<sub>i</sub> are all the constants in KB<sup>+</sup> }.
+
+<ref>Knowledge Representation and Reasoning / Ronald J. Brachman, Hector J. Levesque / page 337</ref>
+
+All interpretations of a vivid first-order knowledge base are isomorphic.<ref>Knowledge Representation and Reasoning / Ronald J. Brachman, Hector J. Levesque / page 339</ref>
+
+== See also ==
+* [[Closed world assumption]]
+
+{{computable knowledge}}
+
+== References ==
+
+<references/>
+
+[[Category:Knowledge representation]]
+
+
+{{logic-stub}}
+{{database-stub}}

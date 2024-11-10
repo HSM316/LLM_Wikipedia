@@ -1,0 +1,233 @@
+{{multiple issues|
+{{COI|date=February 2013}}
+{{advert|date=February 2013}}
+{{original research|date=February 2013}}
+}}
+{{Infobox software
+| name                   = Pipeline Pilot
+| title                  = 
+| logo                   = <!-- [[File: ]] -->
+| logo caption           = 
+| screenshot             = <!-- [[File: ]] -->
+| caption                = 
+| collapsible            = 
+| author                 = 
+| developer              = [[Accelrys]]
+| released               = {{Start date|1999|||df=yes/no}}
+| discontinued           = 
+| latest release version = 18.1
+| latest release date    = {{Start date|2018|05||df=yes/no}}
+| latest preview version = 
+| latest preview date    = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| frequently updated     = <!-- DO NOT include this parameter unless you know what it does -->
+| status                 = 
+| programming language   = [[C++]]
+| operating system       = [[Windows]] and [[Linux]]
+| platform               = 
+| size                   = 
+| language               = 
+| language count         = <!-- DO NOT include this parameter unless you know what it does -->
+| language footnote      = 
+| genre                  = [[visual programming|Visual]] and [[dataflow programming|dataflow]] programming language
+| license                = [[Proprietary software|Proprietary]]
+| alexa                  = 
+| website                =
+| standard               = 
+| AsOf                   = 
+}}
+
+'''Pipeline Pilot''' is a desktop software program sold by [[Dassault Systèmes]] for processing and analyzing data. Originally used in the natural sciences, the product's basic ETL ([[Extract, transform, load]]) and analytics capabilities have broadened over time. The product is now used for [[data science]], ETL, reporting, prediction and analytics in a number of sectors. The main feature of the program is the ability to design data workflows using a graphical user interface. It is an example of [[visual programming|visual]] and [[dataflow programming|dataflow]] programming and has use in a variety of settings, such as [[cheminformatics]] and QSAR, <ref name="HassanBrown2007">{{cite journal
+ |last1=Hassan|first1=Moises
+ |last2=Brown|first2=Robert D.
+ |last3=Varma-O'Brien|first3=Shikha
+ |last4=Rogers|first4=David
+ |title=Cheminformatics Analysis and Learning in a Data Pipelining Environment
+ |journal=ChemInform|volume=38|issue=12|year=2007
+ |issn=0931-7597|doi=10.1002/chin.200712278
+}}</ref><ref name="HuLounkine2009">{{cite journal
+ |last1=Hu|first1=Ye
+ |last2=Lounkine|first2=Eugen
+ |last3=Bajorath|first3=Jürgen
+ |title=Improving the Search Performance of Extended Connectivity Fingerprints through Activity-Oriented Feature Filtering and Application of a Bit-Density-Dependent Similarity Function
+ |journal=ChemMedChem|volume=4|issue=4|year=2009|pages=540–548
+ |issn=1860-7179|doi=10.1002/cmdc.200800408
+|pmid=19263458
+ |s2cid=35868099
+ }}</ref><ref name="Warr2012">{{cite journal
+ |last1=Warr
+ |first1=Wendy A.
+ |title=Scientific workflow systems: Pipeline Pilot and KNIME
+ |journal=Journal of Computer-Aided Molecular Design
+ |volume=26
+ |issue=7
+ |year=2012
+ |pages=801–804
+ |issn=0920-654X
+ |doi=10.1007/s10822-012-9577-7
+ |pmid=22644661
+ |pmc=3414708
+|bibcode=2012JCAMD..26..801W
+ }}</ref> Next Generation Sequencing,<ref>{{cite web
+ |url        = http://www.businesswire.com/news/home/20110223005584/en/Accelrys-Enters-Generation-Sequencing-Market-NGS-Collection
+ |title      = Accelrys Enters Next Generation Sequencing Market with NGS Collection for Pipeline Pilot
+ |publisher  = Business Wire
+ |accessdate = 15 February 2013
+|date = 2011-02-23
+ }}</ref> image analysis,<ref name="RabalLink2010">{{cite journal
+ |last1=Rabal|first1=Obdulia
+ |last2=Link|first2=Wolfgang
+ |last3=G. Serelde|first3=Beatriz
+ |last4=Bischoff|first4=James R.
+ |last5=Oyarzabal|first5=Julen
+ |title=An integrated one-step system to extract, analyze and annotate all relevant information from image-based cell screening of chemical libraries
+ |journal=Molecular BioSystems
+ |volume=6
+ |issue=4
+ |year=2010
+ |pages=711–20
+ |issn=1742-206X
+ |doi=10.1039/b919830j
+ |pmid=20237649
+}}</ref><ref name="SimeonovPaveley2012">{{cite journal
+ |last1=Paveley|first1=Ross A.
+ |last2=Mansour|first2=Nuha R.
+ |last3=Hallyburton|first3=Irene
+ |last4=Bleicher|first4=Leo S.
+ |last5=Benn|first5=Alex E.
+ |last6=Mikic|first6=Ivana
+ |last7=Guidi|first7=Alessandra
+ |last8=Gilbert|first8=Ian H.
+ |last9=Hopkins|first9=Andrew L.
+ |last10=Bickle|first10=Quentin D.
+ |title=Whole Organism High-Content Screening by Label-Free, Image-Based Bayesian Classification for Parasitic Diseases
+ |journal=PLOS Neglected Tropical Diseases
+ |volume=6
+ |issue=7
+ |year=2012
+ |pages=e1762
+ |issn=1935-2735
+ |doi=10.1371/journal.pntd.0001762
+|pmid=22860151
+ |pmc=3409125
+ }}</ref> and text analytics. It is not an '[[Object-oriented programming|object oriented]]' programming language .<ref>{{cite journal
+ |last1=Vellay|first1=SG
+ |last2=Latimer|first2=NE
+ |last3=Paillard|first3=G
+ |title=Interactive text mining with Pipeline Pilot: a bibliographic web-based tool for PubMed
+ |journal=Infectious Disorders Drug Targets
+ |volume=9
+ |issue=3
+ |year=2009
+ |pages=366–74
+ |pmid=19519489
+ |doi=10.2174/1871526510909030366
+}}</ref>
+
+== History ==
+
+The product was created by [[SciTegic]]. [[BIOVIA]] subsequently acquired SciTegic and Pipeline Pilot in 2004. BIOVIA was itself purchased by [[Dassault Systèmes]] in 2014. The product expanded from an initial focus on chemistry to include general extract, transform and load (ETL) capabilities. Beyond the base product, Dassault has added analytical and data processing collections for report generation, data visualization and a number of scientific and engineering sectors. Currently, the product is used for ETL, analytics and machine learning in the chemical, energy, consumer packaged goods, aerospace, automotive and electronics manufacturing industries.
+
+== Overview ==
+
+Pipeline Pilot is part of a class of software products that provide user interfaces for manipulating and analyzing data. The Vendor says that Pipeline Pilot and similar products allow users with limited or no coding abilities to transform and manipulate datasets. The dataset manipulation is usually a precursor to conducting analysis of the data. Like other graphical ETL products, it enables users to pull from different data sources, such as CSV files, text files and databases.
+
+=== Components, pipelines, protocols and data records ===
+
+The [[graphical user interface]], called the Pipeline Pilot Professional Client, allows users to drag and drop discrete data processing units called "components". Components can load, filter, join or manipulate data. Components can also perform much more advanced data manipulations, such as building regression models, training neural networks or processing datasets into PDF reports.
+
+Pipeline Pilot implements a [[Component-based software engineering|Components]] paradigm. Components are represented as nodes in a workflow. In a mathematical sense, components are modeled as nodes in a [[directed graph]]: "pipes" (graph edges) connect components and move data along the from node to node where operations are performed on the data. To help in industry-specific applications, such as Next Generation Sequencing (see [[DNA sequencing|High-throughput sequencing (HTS) methods]]), BIOVIA has developed components that greatly reduce the amount of time users need to do common industry-specific tasks.
+
+Users can choose from components that come pre-installed or create their own components in workflows called "protocols". Protocols are sets of linked components. Protocols can be saved, reused and shared. Users can mix and match components that are provided with the software from BIOVIA with their own custom components. Connections between two components are called "pipes", and are visualized in the software as two components connected by a pipe. End users design their workflows/protocols, then execute them by running the protocol. Data flows from left to right along the pipes.
+
+Modern data analysis and processing can involve a very large number of manipulations and transformations. Pipeline Pilot has the ability to visually condense a lengthy series of data manipulations that involve many components. A workflow of any length can be visually condensed into a component that is used in a high level workflow. This means that a protocol can be saved and used as a component in another protocol. In the terminology used in Pipeline Pilot, protocols that are used as components in other protocols are called "subprotocols". This allows users to add layers of complexity to their data processing and manipulation workflows, then hide that complexity so they can design the workflow at a higher level of abstraction.
+
+=== Component collections ===
+
+Pipeline Pilot features a number of add-ons called "collections". Collections are groups of specialized functions like processing genetic information or analyzing polymers offered to end users for an additional licensing fee. Currently, there are a number of these collections.<ref name="Collections">{{cite web|url=http://accelrys.com/products/pipeline-pilot/component-collections.html |title=Pipeline Pilot Component Collections |publisher=Accelrys |accessdate=26 January 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20130115123007/http://accelrys.com/products/pipeline-pilot/component-collections.html |archivedate=January 15, 2013 }}</ref>
+
+{| class="wikitable"
+|-
+! Group !! Domain !! Component collection
+|-
+| rowspan="9"|Science specific || rowspan="3"|Chemistry || Chemistry 
+|-
+| ADMET 
+|-
+| Cheminformatics 
+|-
+| rowspan="4"|Biology || Gene Expression 
+|-
+| Sequence Analysis 
+|-
+| Mass Spectrometry for Proteomics 
+|-
+| Next Generation Sequencing 
+|-
+| rowspan="2"|Materials Modeling & Simulation || Materials Studio 
+|-
+| Polymer Properties (Synthia)
+|-
+| rowspan="10"|Generic|| Reporting & Visualization || Reporting 
+|-
+| Database & Application Integration || Integration 
+|-
+| Imaging || Imaging 
+|-
+| rowspan="3"|Analysis & Statistics || Data Modeling 
+|-
+| Advanced Data Modeling 
+|-
+| R Statistics
+|-
+| rowspan="2"|Document Search & Analysis || Chemical Text Mining
+|-
+| Text Analytics 
+|-
+| rowspan="2"|Laboratory|| Plate Data Analytics 
+|-
+| Analytical Instrumentation 
+|}
+
+Given the number of different add-ons now offered by BIOVIA, Pipeline Pilot's use cases are very broad and difficult to summarize succinctly. The product has been used in:
+* Predictive maintenance
+* Image analysis, for example the determination of the inhibitory action of a substance on biological processes ([[IC50]]) by calculating the [[dose–response relationship]] directly from information extracted from [[high-content screening]] assay images, associated with dilution in the [[microtitre plate|plate]] layout and chemistry information about the tested compounds (Imaging, Chemistry, Plate Data Analytics)
+* A [[recommender system]] for scientific literature based on a Bayesian model built using [[fingerprint (computing)|fingerprint]] and user's reading list or papers ranking
+* Access to experiment methods and results from [[electronic laboratory notebook]] or [[laboratory information management system]], with resulting reports for resource [[capacity planning]]
+
+=== PilotScript and custom scripts ===
+
+As with other ETL and analytics solutions, Pipeline Pilot is often used when one or more large (1TB+) and/or complex datasets is processed. In these situations, end users may want to utilize programming scripts that they have written. Early in its development, Pipeline Pilot created a scripting language called PilotScript that enabled end users to write basic programming scripts that could be incorporated into a Pipeline Pilot protocol. Later releases extended support for a variety of programming languages, including [[Python (programming language)|Python]], [[.NET Framework|.NET]], [[Matlab]], [[Perl]], [[SQL]], [[Java (programming language)|Java]], [[VBScript]] and [[R (programming language)|R]].<ref name="Integration">{{cite web
+ |url        = http://accelrys.com/products/datasheets/integration-collection.pdf
+ |title      = Pipeline Pilot Integration Component Collection Datasheet
+ |publisher  = Accelrys
+ |accessdate = 8 February 2013
+}}</ref>
+
+The syntax for PilotScript is based on [[PLSQL]]. It can be used in components such as the ''Custom Manipulator (PilotScript)'' or the ''Custom Filter (PilotScript)''. As an example, the following script can be used to add a property named "Hello" to each record passing through a custom scripting component in a Pipeline Pilot protocol. The value of the property is the string "Hello World!".
+
+<syntaxhighlight lang="plsql">
+Hello := "Hello World!";
+</syntaxhighlight>
+
+Currently, the product supports a number of APIs for different programming languages that can be executed without the program's graphical user interface.
+
+== References ==
+
+{{Reflist}}
+
+[[Category:Science software]]
+[[Category:Enterprise application integration]]
+[[Category:Extract, transform, load tools]]
+[[Category:Bioinformatics software]]
+[[Category:Computational chemistry software]]
+[[Category:Computer vision software]]
+[[Category:Data analysis software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Data visualization software]]
+[[Category:Laboratory software]]
+[[Category:Mass spectrometry software]]
+[[Category:Natural language processing software]]
+[[Category:Numerical software]]
+[[Category:Plotting software]]
+[[Category:Proprietary software]]
+[[Category:Visual programming languages]]

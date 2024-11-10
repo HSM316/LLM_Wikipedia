@@ -1,0 +1,40 @@
+{{more citations needed|date=June 2023}}
+
+{{Infobox Software
+| name                   = AutoCollage 2008
+| logo                   = 
+| screenshot             = [http://www.softpedia.com/progScreenshots/Microsoft-Research-AutoCollage-Screenshot-108342.html Screenshots at Softpedia]
+| caption                = 
+| developer              = [[Microsoft Research]]
+| released               = September 4, 2008
+| programming language = 
+| operating system     = [[Microsoft Windows]]
+| language             = 
+| genre                = [[Graphics software]]
+| license              = [[Microsoft]] [[Software license agreement|EULA]]
+| website              = [https://web.archive.org/web/20200802190359/https://www.microsoft.com/en-us/download/details.aspx?id=52033 AutoCollage 2008]
+}}
+
+'''AutoCollage 2008''' is a [[Microsoft]] [[photomontage]] [[desktop application]]. The software creates a [[collage]] of representative elements from a set of images. It is able to [[Face detection|detect faces]] and recognize objects.<ref>{{cite web |url=http://news.softpedia.com/news/Introducing-Microsoft-AutoCollage-2008-92306.shtml |title=Introducing Microsoft AutoCollage 2008 |accessdate=2008-09-06 |work=Softpedia.com |archiveurl= https://web.archive.org/web/20080906090139/http://news.softpedia.com/news/Introducing-Microsoft-AutoCollage-2008-92306.shtml |archivedate= 6 September 2008 |url-status= live}}</ref>
+
+The software was developed by [[Microsoft Research]] labs in [[Cambridge]], [[England]] and launched on September 4, 2008.
+
+==Versions==
+An update, named Microsoft Research AutoCollage 2008 version 1.1, was released on February 2009. The software update adds the ability to select images for the AutoCollage, a richer integration with Windows Live Photo Gallery, support for network folders and the ability to define custom output sizes.
+
+A new version, named Microsoft Research AutoCollage Touch 2009, was released in September 2009, and included by some OEMs on machines with Windows 7.
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://support.microsoft.com/kb/961855 Version 1.1 Description]
+
+{{Microsoft}}
+{{Microsoft APIs|state=collapsed}}
+
+[[Category:Photo software]]
+[[Category:2008 software]]
+[[Category:Microsoft software]]
+[[Category:Image processing software]]
+[[Category:Computer vision software]]

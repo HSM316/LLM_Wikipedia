@@ -1,0 +1,37 @@
+{{notability|Companies|date=December 2018}}
+{{Infobox academic conference
+| title = International Conference on Learning Representations
+| logo = 
+| abbreviation = ICLR
+| discipline = [[Machine learning]], [[artificial intelligence]], [[feature learning]]
+| publisher =
+| history = 2013–present
+| frequency = Annual
+| website = https://iclr.cc/
+}}
+The '''International Conference on Learning Representations''' ('''ICLR''')  is a [[machine learning]] [[Academic conference|conference]] held every Spring.  The conference includes invited talks as well as oral and poster presentations of refereed papers. The first ICLR was held in [[Scottsdale, Arizona]].<ref>{{cite web|url=http://deeplearning.net/2012/12/13/first-international-conference-on-learning-representationsiclr-2013/|title=First International Conference on Learning Representations(ICLR 2013) « Deep Learning|website=deeplearning.net}}</ref> Since its inception in 2013, ICLR has employed an [[open peer review]] process to referee paper submissions (based on models proposed by [[Yann LeCun]]<ref>{{cite web|url=http://yann.lecun.com/ex/pamphlets/publishing-models.html|title=Proposal for A New Publishing Model in Computer Science|website=yann.lecun.com}}</ref>). In 2019, there were 1591 paper submissions, of which 500 accepted with poster presentations (31%) and 24 with oral presentations (1.5%).<ref>{{cite web|url=https://openreview.net/group?id=ICLR.cc/2019/Conference|title=ICLR 2019 Conference|website=openreview.net}}</ref>
+
+== Locations ==
+
+* {{flagicon|Ethiopia}} ICLR 2020, [[Addis Ababa, Ethiopia]]<ref>{{cite web|url=https://venturebeat.com/2018/11/19/major-ai-conference-is-moving-to-africa-in-2020-due-to-visa-issues/|title=Major AI conference is moving to Africa in 2020 due to visa issues|date=19 November 2018|publisher=}}</ref>
+* {{flagicon|USA}} ICLR 2019, [[New Orleans, Louisiana|New Orleans]], [[United States]]
+* {{flagicon|Canada}} ICLR 2018, [[Vancouver]], [[Canada]]
+* {{flagicon|France}} ICLR 2017, [[Toulon, France|Toulon]], [[France]]
+* {{flagicon|Puerto Rico}} ICLR 2016, [[San Juan, Puerto Rico|San Juan]], [[Puerto Rico]]
+* {{flagicon|USA}} ICLR 2015, [[San Diego, California|San Diego]], [[United States]]
+* {{flagicon|Canada}} ICLR 2014, [[Banff National Park]], [[Canada]]
+* {{flagicon|USA}} ICLR 2013, [[Scottsdale, Arizona|Scottsdale]], [[United States]]
+
+== See also ==
+* [[ICML]]
+* [[NeurIPS]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+*[https://iclr.cc/ Official website]
+
+[[Category:Artificial intelligence conferences]]
+[[Category:Signal processing conferences]]
+[[Category:International conferences in Canada]]

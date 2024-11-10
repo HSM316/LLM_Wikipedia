@@ -1,0 +1,44 @@
+'''Weak supervision''' is a branch of [[machine learning]] where noisy, limited, or imprecise sources are used to provide supervision signal for labeling large amounts of [[Training, validation, and test sets|training data]] in a [[supervised learning]] setting.<ref name=":0">{{Cite web|url=https://hazyresearch.github.io/snorkel/blog/ws_blog_post.html|title=Weak Supervision: The New Programming Paradigm for Machine Learning|last=Alex Ratner, Stephen Bach, Paroma Varma, Chris Ré And referencing work by many other members of Hazy Research|website=hazyresearch.github.io|access-date=2019-06-05}}</ref> This approach alleviates the burden of obtaining hand-labeled data sets, which can be costly or impractical. Instead, inexpensive weak labels are employed with the understanding that they are imperfect, but can nonetheless be used to create a strong predictive model.<ref name=":2">{{Cite web|url=https://pdfs.semanticscholar.org/3adc/fd254b271bcc2fb7e2a62d750db17e6c2c08.pdf|title=A Brief Introduction to Weakly Supervised Learning|last=Zhou|first=Zhi-Hua|website=semanticscholar.org|access-date=4 June 2019}}</ref>
+
+== Problem of labeled training data ==
+Machine learning models and techniques are increasingly accessible to researchers and developers; the real-world usefulness of these models, however, depends on access to high-quality labeled training data.<ref>{{Cite web|url=http://www.spacemachine.net/views/2016/3/datasets-over-algorithms|title=Datasets Over Algorithms|website=Space Machine|access-date=2019-06-05}}</ref> This need for labeled training data often proves to be a significant obstacle to the application of machine learning models within an organization or industry.<ref name=":0" /> This bottleneck effect manifests itself in various ways, including the following examples:
+
+'''Insufficient quantity of labeled data'''
+
+When machine learning techniques are initially used in new applications or industries, there is often not enough training data available to apply traditional processes.<ref name=":1">{{Cite arXiv|title=A Survey on Data Collection for Machine Learning: A Big Data - AI Integration Perspective|last=Roh|first=Yuji|date=8 Nov 2018 |eprint = 1811.03402|class = cs.LG}}</ref> Some industries have the benefit of decades' worth of training data readily available; those that do not are at a significant disadvantage. In such cases, obtaining training data may be impractical, expensive, or impossible without waiting years for its accumulation.
+
+'''Insufficient subject-matter expertise to label data'''
+
+When labeling training data requires specific relevant expertise, creation of a usable training data set can quickly become prohibitively expensive.<ref name=":1" /> This issue is likely to occur, for example, in [[Biomedicine|biomedical]] or [[National security|security-related]] applications of machine learning.
+
+'''Insufficient time to label and prepare data'''
+
+Most of the time required to implement machine learning is spent in preparing data sets.<ref name=":1" /> When an industry or research field deals with problems that are, by nature, rapidly evolving, it can be impossible to collect and prepare data quickly enough for results to be useful in real-world applications. This issue could occur, for example, in [[fraud detection]] or [[Computer security|cybersecurity]] applications.
+
+Other areas of machine learning exist that are likewise motivated by the demand for increased quantity and quality of labeled training data but employ different high-level techniques to approach this demand. These other approaches include [[Active learning (machine learning)|active learning]], [[semi-supervised learning]], and [[transfer learning]].<ref name=":0" />
+
+== Types of weak labels ==
+Weak labels are intended to decrease the cost and increase the efficiency of human efforts expended in hand-labeling data. They can take many forms, including the following:
+
+* '''Imprecise or inexact labels:''' developers may use higher-level, less precise input from subject-matter experts to create [[Heuristic (computer science)|heuristic rules]], define expected distributions, or impose other constraints on the training data.<ref name="Data Programming 1605">{{Cite arxiv|last=Ré|first=Christopher|last2=Selsam|first2=Daniel|last3=Wu|first3=Sen|last4=De Sa|first4=Christopher|last5=Ratner|first5=Alexander|date=2016-05-25|title=Data Programming: Creating Large Training Sets, Quickly|eprint=1605.07723v3|class=stat.ML}}</ref><ref name=":2" />
+* '''Inaccurate labels:''' developers may use inexpensive, lower-quality input through means such as crowdsourcing to obtain labels that are numerous, but not expected to be perfectly correct.<ref name=":2" />
+* '''Existing resources''': developers may take advantage of existing resources (such as knowledge bases, alternative data sets, or pre-trained models<ref name=":0" />) to create labels that are helpful, though not perfectly suited for the given task.<ref name=":2" />
+
+== Applications of weak supervision ==
+Applications of weak supervision are numerous and varied within the machine learning research community.
+
+[[Stanford University]] researchers created Snorkel, an open-source system for quickly assembling training data through weak supervision.<ref>{{Cite web|url=https://dawn.cs.stanford.edu/2017/05/08/snorkel/|title=Snorkel and The Dawn of Weakly Supervised Machine Learning · Stanford DAWN|website=dawn.cs.stanford.edu|access-date=2019-06-05}}</ref> Snorkel employs the central principles of the data programming paradigm,<ref name="Data Programming 1605"/>  in which developers create labeling functions, which are then used to programmatically label data, and employs supervised learning techniques to assess the accuracy of those labeling functions.<ref>{{Cite web|url=https://hazyresearch.github.io/snorkel/|title=Snorkel by HazyResearch|website=hazyresearch.github.io|access-date=2019-06-05}}</ref> In this way, potentially low-quality inputs can be used to create high-quality models.
+
+In a joint work with [[Google]], Stanford researchers showed that existing organizational knowledge resources could be converted into weak supervision sources and used to significantly decrease development costs and time.<ref>{{Cite arxiv|last=Malkin|first=Rob|last2=Ré|first2=Christopher|last3=Kuchhal|first3=Rahul|last4=Alborzi|first4=Houman|last5=Hancock|first5=Braden|last6=Ratner|first6=Alexander|last7=Sen|first7=Souvik|last8=Xia|first8=Cassandra|last9=Shao|first9=Haidong|date=2018-12-02|title=Snorkel DryBell: A Case Study in Deploying Weak Supervision at Industrial Scale|eprint=1812.00417v2|class=cs.LG}}</ref>
+
+Researchers at [[Massachusetts Institute of Technology]] developed CleanLab for finding label errors in datasets, characterizing label noise, and learning with noisy labels.<ref>{{Cite web|url=https://github.com/cgnorthcutt/cleanlab|title=CleanLab for Finding and Learning with Noisy Labels|last=Northcutt|first=Curtis|access-date=9 October 2019}}</ref>
+
+Researchers at [[University of Massachusetts Amherst]] propose augmenting traditional [[Active learning (machine learning)|active learning]] approaches by soliciting labels on features rather than instances within a data set.<ref>{{Cite web|url=http://gregorydruck.name/pubs/druck09active.pdf|title=Active Learning by Labeling Features|last=Druck|first=Gregory|access-date=4 June 2019}}</ref>
+
+Researchers at [[Johns Hopkins University]] propose reducing the cost of labeling data sets by having annotators provide rationales supporting each of their data annotations, then using those rationales to train both discriminative and generative models for labeling additional data.<ref>{{Cite web|url=http://www.cs.jhu.edu/~ozaidan/rationales/Zaidan_etal_rationales-nips2008.pdf|title=Machine Learning with Annotator Rationales to Reduce Annotation Cost|last=Zaidan|first=Omar|access-date=4 June 2019}}</ref>
+
+Researchers at [[University of Alberta Faculty of Engineering|University of Alberta]] propose a method that applies traditional active learning approaches to enhance the quality of the imperfect labels provided by weak supervision.<ref>{{Cite journal|last=Nashaat|first=Mona|last2=Ghosh|first2=Aindrila|last3=Miller|first3=James|last4=Quader|first4=Shaikh|last5=Marston|first5=Chad|last6=Puget|first6=Jean-Francois|date=December 2018|title=Hybridization of Active Learning and Data Programming for Labeling Large Industrial Datasets|url=https://ieeexplore.ieee.org/document/8622459/|journal=2018 IEEE International Conference on Big Data (Big Data)|location=Seattle, WA, USA|publisher=IEEE|pages=46–55|doi=10.1109/BigData.2018.8622459|isbn=9781538650356}}</ref>
+<references />
+
+[[Category:Machine learning]]
+[[Category:Machine learning researchers]]

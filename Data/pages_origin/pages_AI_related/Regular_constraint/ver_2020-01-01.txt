@@ -1,0 +1,12 @@
+{{Orphan|date=February 2013}}
+
+In [[artificial intelligence]] and [[operations research]], a '''regular constraint''' is a kind of [[global constraint]].  It can be used to solve a particular type of puzzle called a [[nonogram]] or logigrams.
+
+==External links==
+* Paltzer, Nikos. [http://www.ps.uni-sb.de/courses/seminar-ws04/papers/paltzer.pdf ''Regular Language Membership Constraint'']
+
+[[Category:Constraint programming]]
+
+
+{{Compu-AI-stub}}
+{{Mathapplied-stub}}

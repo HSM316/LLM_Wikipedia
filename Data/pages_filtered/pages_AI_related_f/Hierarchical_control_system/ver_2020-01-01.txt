@@ -1,0 +1,44 @@
+A hierarchical control system (HCS) is a form of control system in which a set of devices and governing software is arranged in a hierarchical tree.  When the links in the tree are implemented by a computer network, then that hierarchical control system is also a form of networked control system.
+
+ Overview 
+A human-built system with complex behavior is often organized as a hierarchy. For example, a command hierarchy has among its notable features the organizational chart of superiors, subordinates, and lines of organizational communication. Hierarchical control systems are organized similarly to divide the decision making responsibility.
+
+Each element of the hierarchy is a linked node in the tree. Commands, tasks and goals to be achieved flow down the tree from superior nodes to subordinate nodes, whereas sensations and command results flow up the tree from subordinate to superior nodes. Nodes may also exchange messages with their siblings.  The two distinguishing features of a hierarchical control system are related to its layers.Findeisen, page 9
+
+ Each higher layer of the tree operates with a longer interval of planning and execution time than its immediately lower layer.
+ The lower layers have local tasks, goals, and sensations, and their activities are planned and coordinated by higher layers which do not generally override their decisions. The layers form a hybrid intelligent system in which the lowest, reactive layers are sub-symbolic. The higher layers, having relaxed time constraints, are capable of reasoning from an abstract world model and performing planning.  A hierarchical task network is a good fit for planning in a hierarchical control system.
+
+Besides artificial systems, an animal's control systems are proposed to be organized as a hierarchy. In perceptual control theory, which postulates that an organism's behavior is a means of controlling its perceptions, the organism's control systems are suggested to be organized in a hierarchical pattern as their perceptions are constructed so.
+
+Control system structure
+500px|Functional levels of a manufacturing control operation.
+
+The accompanying diagram is a general hierarchical model which shows functional manufacturing levels using computerised control of an industrial control system.
+
+Referring to the diagram;
+
+ Level 0 contains the field devices such as flow and temperature sensors, and final control elements, such as control valves
+ Level 1 contains the industrialised Input/Output (I/O) modules, and their associated distributed electronic processors.   
+ Level 2 contains the supervisory computers, which  collate information from processor nodes on the system, and provide the operator control screens. 
+ Level 3 is the production control level, which does not directly control the process, but is concerned with monitoring production and monitoring targets
+ Level 4 is the production scheduling level.
+
+ Applications 
+
+ Manufacturing, robotics and vehicles 
+Among the robotic paradigms is the hierarchical paradigm in which a robot operates in a top-down fashion, heavy on planning, especially motion planning.  Computer-aided production engineering has been a research focus at NIST since the 1980s.  Its Automated Manufacturing Research Facility was used to develop a five layer production control model.  In the early 1990s DARPA sponsored research to develop distributed (i.e. networked) intelligent control systems for applications such as military command and control systems.  NIST built on earlier research to develop its Real-Time Control System (RCS) and Real-time Control System Software which is a generic hierarchical control system that has been used to operate a manufacturing cell, a robot crane, and an automated vehicle.
+
+In November 2007, DARPA held the Urban Challenge.  The winning entry, Tartan Racing Tartan Racing team description employed a hierarchical control system, with layered mission planning, motion planning, behavior generation, perception, world modelling, and mechatronics.Urmson, C. et al., Tartan Racing: A Multi-Modal Approach to the DARPA Urban Challenge 2007, page 4
+
+ Artificial intelligence 
+Subsumption architecture is a methodology for developing artificial intelligence that is heavily associated with behavior based robotics.  This architecture is a way of decomposing complicated intelligent behavior into many "simple" behavior modules, which are in turn organized into layers. Each layer implements a particular goal of the software agent (i.e. system as a whole), and higher layers are increasingly more abstract. Each layer's goal subsumes that of the underlying layers, e.g. the decision to move forward by the eat-food layer takes into account the decision of the lowest obstacle-avoidance layer. Behavior need not be planned by a superior layer, rather behaviors may be triggered by sensory inputs and so are only active under circumstances where they might be appropriate.Brooks, R. A. "Planning is just a way of avoiding figuring out what to do next", Technical report, MIT Artificial Intelligence Laboratory, 1987
+
+Reinforcement learning has been used to acquire behavior in a hierarchical control system in which each node can learn to improve its behavior with experience.Takahashi, Y., and Asada, M., Behavior Acquisition by Multi-Layered Reinforcement Learning. In Proceedings of the 1999 IEEE International Conference on Systems, Man, and Cybernetics, pages 716-721
+
+right|400px|Constituents in a node from James Albus's Reference Model Architecture
+James Albus, while at NIST, developed a theory for intelligent system design named the Reference Model Architecture (RMA),Albus, J. S. A Reference Model Architecture for Intelligent Systems Design. In Antsaklis, P.J., Passino, K.M. (Eds.) (1993) An Introduction to Intelligent and Autonomous Control. Kluwer Academic Publishers, 1993, Chapter 2, pp27-56.  which is a hierarchical control system inspired by RCS. Albus defines each node to contain these components.
+ Behavior generation is responsible for executing tasks received from the superior, parent node.  It also plans for, and issues tasks to, the subordinate nodes.
+ Sensory perception is responsible for receiving sensations from the subordinate nodes, then grouping, filtering, and otherwise processing them into higher level abstractions that update the local state and which form sensations that are sent to the superior node.
+ Value judgment is responsible for evaluating the updated situation and evaluating alternative plans.
+ World Model is the local state that provides a model for the controlled system, controlled process, or environment at the abstraction level of the subordinate nodes.
+At its lowest levels, the RMA can be implemented as a subsumption architecture, in which the world model is mapped directly to the controlled process or real world, avoiding the need for a mathematical abstraction, and in which time-constrained reactive planning can be implemented as a finite state machine.  Higher levels of the RMA however, may have sophisticated mathematical world models and behavior implemented by automated planning and scheduling.  Planning is required when certain behaviors cannot be triggered by current sensations, but rather by predicted or anticipated sensations, especially those that come about as result of the node's actions.Meystel, A. M., Albus, J.S., Intelligent Systems, John Wiley and Sons, New York, 2002, pp 30-31

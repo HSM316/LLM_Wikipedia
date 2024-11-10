@@ -1,0 +1,13 @@
+Data augmentation in data analysis are techniques used to increase the amount of data by adding slightly modified copies of already existing data or newly created synthetic data from existing data. It acts as a regularizer and helps reduce overfitting when training a machine learning model. It is closely related to oversampling in data analysis.
+
+ Synthetic oversampling techniques for traditional machine learning 
+
+ Data augmentation for image classification 
+
+ Transformations of images 
+Geometric transformations, flipping, color modification, cropping, rotation, noise injection and random erasing are used to augment image in deep learning.
+
+ Adding new synthetic images 
+Because image data usually have too high dimensions for traditional synthetic oversampling methods, new methods are required for creating new synthetic images for deep learning.
+
+Generative adversarial networks enable to create new synthetic images for data augmentation.

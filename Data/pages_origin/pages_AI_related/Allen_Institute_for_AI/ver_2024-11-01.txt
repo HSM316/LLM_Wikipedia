@@ -1,0 +1,63 @@
+{{Short description|U.S. research institute for computer science}}
+{{Infobox organization
+| name                     = Allen Institute for AI
+| logo                     = [[File:Allen Institute for Artificial Intelligence.svg|250px]]
+| type                     = [[Non-profit]] [[research institute]]
+| tax_id                   = 82-4083177
+| formation                = {{start date and age|2014}}
+| founder                  = [[Paul Allen]]
+| location_city            = [[Seattle, Washington]]
+| location_country         = [[U.S.]]
+| key_people               = Peter Clark, [[Yejin Choi]], Noah Smith, Hannaneh Hajishirzi, Dan Weld, Chris Bretherton, Ani Kembhavi, Jes Lefcourt
+| products                 = 
+| services                 = 
+| revenue                  = 
+| operating_income         = 
+| net_income               = 
+| assets                   = 
+| equity                   = 
+| num_employees            = 
+| parent                   = 
+| divisions                = 
+| caption                  = 
+| website                  = {{Official URL}}
+| footnotes                = 
+| intl                     = 
+}}
+
+The '''Allen Institute for AI''' (abbreviated '''AI2''') is a 501(c)3 non-profit research institute founded by late [[Microsoft]] co-founder and philanthropist [[Paul Allen]] in 2014. The institute seeks to conduct high-impact AI research and engineering in service of the common good.<ref>{{Cite web |title=About — Allen Institute for AI |url=https://allenai.org/about |access-date=2023-05-26 |website=allenai.org |language=en}}</ref> [[Oren Etzioni]] was appointed by Paul Allen<ref>{{Cite web |last=Cook |first=John |date=2013-09-04 |title=Going beyond Siri and Watson: Microsoft co-founder Paul Allen taps Oren Etzioni to lead new Artificial Intelligence Institute |url=https://www.geekwire.com/2013/microsoft-cofounder-paul-allen-taps-search-expert-oren-etzioni-lead-artificial-intelligence-institute/ |access-date=2023-05-26 |website=GeekWire}}</ref> in September 2013 to direct the research at the institute. After leading the organization for nine years, Oren Etzioni stepped down from his role as CEO<ref>{{Cite web |last=Schlosser |first=Kurt |date=2022-06-15 |title=Oren Etzioni stepping down as CEO of Allen Institute for AI after nine years at research hub |url=https://www.geekwire.com/2022/oren-etzioni-stepping-down-as-ceo-of-allen-institute-for-ai-after-nine-years-at-research-hub/ |access-date=2023-05-26 |website=GeekWire}}</ref> on September 30, 2022.  He was replaced in an interim capacity by the leading researcher of the company's Aristo project, Peter Clark. On June 20, 2023, AI2 announced [[Ali Farhadi]] as its next CEO starting July 31, 2023.<ref>{{Cite news |last=Bishop |first=Todd |date=2023-06-20 |title=Apple machine learning leader Ali Farhadi named CEO of Allen Institute for Artificial Intelligence |work=[[GeekWire]] |url=https://www.geekwire.com/2023/apple-machine-learning-leader-ali-farhadi-named-ceo-of-allen-institute-for-artificial-intelligence/ |url-status=live |archive-url=https://web.archive.org/web/20230620203114/https://www.geekwire.com/2023/apple-machine-learning-leader-ali-farhadi-named-ceo-of-allen-institute-for-artificial-intelligence/ |archive-date=2023-06-20}}</ref> The company's board formed a search committee for a new CEO. AI2 also has an active office in [[Tel Aviv]], [[Israel]].<ref>{{Cite web |title=AI2 Israel — Allen Institute for AI |url=https://allenai.org/ai2-israel |access-date=2023-05-26 |website=allenai.org |language=en}}</ref>
+
+==Teams==
+*'''Aristo''': Aristo is a flagship project of AI2 that was inspired by a similar project called Project Halo carried out by Seattle-based investment company Vulcan.<ref>{{Cite web |title=Aristo — Allen Institute for AI |url=https://allenai.org/aristo |access-date=2023-05-26 |website=allenai.org |language=en}}</ref> The original project goal was to design an artificially intelligent system that could successfully read, learn, and reason from texts and ultimately demonstrate its knowledge by successfully passing an 8th-grade science exam – the team achieved this objective in 2018.<ref>{{Cite news |last=Metz |first=Cade |date=2019-09-04 |title=A Breakthrough for A.I. Technology: Passing an 8th-Grade Science Test |language=en-US |work=The New York Times |url=https://www.nytimes.com/2019/09/04/technology/artificial-intelligence-aristo-passed-test.html |access-date=2023-05-26 |issn=0362-4331}}</ref> The current focus of the team<ref>{{Cite web |title=Aristo — Allen Institute for AI |url=https://allenai.org/aristo |access-date=2023-05-26 |website=allenai.org |language=en}}</ref> is to build the next generation of systems that can systematically reason, explain, and continually improve over time.
+*'''PRIOR''': The PRIOR team seeks to advance the field of computer vision by creating AI systems that can see, explore, learn, and reason about the world.<ref>{{Cite web |title=PRIOR |url=https://prior.allenai.org/ |access-date=2023-05-26 |website=prior.allenai.org |language=en-us}}</ref> The team released the open embodied AI platform AI2-THOR in 2016, supporting the training of AI agents in simulated environments.<ref>{{Cite web |publisher=Allen Institute for AI |title=AI2-THOR |url=https://ai2thor.allenai.org/ |access-date=2023-05-26}}</ref> In February 2018, the team released the game [[Iconary]] as a demonstration of an AI that can understand and produce situated scenes from a limited set of icons.
+*'''[[Semantic Scholar]]''': Semantic Scholar tool is an [[Artificial intelligence|artificial-intelligence]] backed [[search engine]] for [[academic publications]] publicly released in November 2015.<ref>{{Cite web |last=Rodriguez |first=Jesus |date=2021-07-08 |title=🔹🔸Edge#104: AllenNLP Makes Cutting-Edge NLP Models Look Easy |url=https://thesequence.substack.com/p/edge104 |access-date=2023-05-26 |website=TheSequence}}</ref> It uses advances in [[natural language processing]] to provide features such as summaries for scholarly papers, contextual information about inline citations, and the ability to create libraries of papers and receive paper recommendations.<ref>{{Cite web |title=Semantic Scholar {{!}} Product |url=https://www.semanticscholar.org/product |access-date=2023-05-26 |website=www.semanticscholar.org |language=en}}</ref>
+*'''AllenNLP''': The AllenNLP team works on research to improve NLP systems' performance and accountability, and advance scientific methodologies for evaluating and understanding NLP systems. The team produces its own research as well as open-source tools to accelerate NLP research.<ref>{{Cite web |title=AllenNLP — Allen Institute for AI |url=https://allenai.org/allennlp |access-date=2023-05-26 |website=allenai.org |language=en}}</ref>
+*'''MOSAIC''': The Mosaic project is focused on defining and building [[Commonsense knowledge (artificial intelligence)|common sense knowledge]] and reasoning for AI systems.<ref>{{Cite web |last=Dormehl |first=Luke |date=2018-04-13 |title=Forget Cloning, A.I. is the Real Way to Let Your Family Pooch Live Forever |url=https://www.digitaltrends.com/cool-tech/ai-behaves-like-dogs/ |access-date=2023-05-26 |website=Digital Trends |language=en}}</ref>
+*'''AI for the Environment''': These teams seek to apply artificial intelligence solutions to the prevention of poaching and illegal fishing in locations around the world, as well as environmental problems like climate modeling and wildfire management. The teams in this group include EarthRanger, Skylight, Climate Modeling, and Wildlands.
+
+==OLMo==
+On May 11, 2023, AI2 announced they were developing OLMo, an open language model aiming to match the performance of other state-of-the-art language models. In February 2024, it was open-sourced, including code, model weights with intermediate snapshots and logs, and contents of their Dolma training dataset, making it the most open state-of-the-art model available.<ref>{{Cite web |last=AI2 |date=2023-05-18 |title=Announcing AI2 OLMo, an open language model made by scientists, for scientists |url=https://blog.allenai.org/announcing-ai2-olmo-an-open-language-model-made-by-scientists-for-scientists-ab761e4e9b76 |access-date=2023-05-26 |website=Medium |language=en}}</ref><ref>{{Cite web |last=Wiggers |first=Kyle |date=2024-02-01 |title=AI2 open sources text-generating AI models -- and the data used to train them |url=https://techcrunch.com/2024/02/01/ai2-open-sources-text-generating-ai-models-and-the-data-used-to-train-them/ |access-date=2024-02-03 |website=TechCrunch |language=en-US}}</ref>
+
+==See also==
+* [[Allen Institute for Brain Science]]
+* [[Allen Institute for Cell Science]]
+* [[Artificial intelligence]]
+* [[Glossary of artificial intelligence]]
+
+==References==
+{{reflist}}
+
+==External links==
+* {{official website}}
+* {{ProPublicaNonprofitExplorer|824083177}}
+
+{{Existential risk from artificial intelligence}}
+{{Vulcan Inc.}}
+
+{{authority control}}
+
+[[Category:Artificial intelligence laboratories]]
+[[Category:Artificial intelligence associations]]
+[[Category:2014 establishments in Washington (state)]]
+[[Category:Research institutes established in 2014]]
+[[Category:Organizations based in Seattle]]

@@ -1,0 +1,119 @@
+{{Primary sources |date=October 2015}}
+{{Infobox organization
+| name = Internet Protocol for Smart Objects Alliance
+| full_name = 
+| native_name = <!-- organization's name in its local language -->
+| native_name_lang = <!-- required ISO 639-1 code of the above native language -->
+| logo = 
+| logo_size = 
+| logo_alt = 
+| logo_caption = 
+| image = 
+| alt = <!-- see WP:ALT -->
+| caption = 
+| map = <!-- map image -->
+| map_alt = 
+| map_caption = 
+| abbreviation = IPSO Alliance
+| nickname = 
+| pronounce = 
+| pronounce ref = 
+| pronounce comment = 
+| named_after = 
+| motto = 
+| merged = [[Open Mobile Alliance]] (OMA)
+| successor = 
+| formation = {{Start date and age|2008}}<!-- If known, add |mm|dd -->
+| founder = <!-- or |founders = -->
+| founding_location = Europe
+| dissolved = {{End date and age|2018|03|27}}
+| merger = <!-- other organizations (if any) merged with, to constitute the new organization -->
+| type = [[Nonprofit organization|Nonprofit]] [[Non-governmental organization|NGO]]
+| tax_id = <!-- or |vat_id = (for European organizations) -->
+| registration_id = <!-- for non-profits -->
+| status = <!-- legal status or description (company, charity, foundation, etc.) -->
+| purpose = [[International standard|International]] [[technical standard]]s
+| professional_title = <!-- for professional associations -->
+| headquarters = 
+| location_city = 
+| location_country = 
+| coordinates = <!-- {{coord|LAT|LON|display=inline,title}} -->
+| origins = 
+| region_served = Worldwide
+| products = <!-- or |product = -->
+| services = 
+| methods = <!-- or |method = -->
+| fields = [[Internet Protocol]] (IP) for [[Computer network|networked]] devices
+| membership = <!-- number of members -->
+| membership_year = <!-- year to which membership numbers/data apply -->
+| language = <!-- or |languages = --><!-- any official language or languages used -->
+| owner = <!-- or |owners = -->
+| sec_gen = <!-- or |gen_sec for General Secretary -->
+| leader_title = <!-- defaults to "Leader" -->
+| leader_name = 
+| leader_title2 = 
+| board_of_directors = 
+| key_people = 
+| main_organ = <!-- or |publication = --><!-- organization's principal body (assembly, committee, board, etc.) or publication -->
+| parent_organization = <!-- or |parent_organisation = -->
+| subsidiaries = 
+| secessions = 
+| affiliations = 
+| budget = 
+| budget_year = 
+| revenue = 
+| revenue_year = 
+| disbursements = 
+| expenses = 
+| expenses_year = 
+| endowment = 
+| endowment_year = 
+| funding = <!-- source of funding e.g. for "think tanks" -->
+| staff = 
+| staff_year = 
+| volunteers = 
+| volunteers_year = 
+| students = 
+| students_year = 
+| awards = 
+| website = <!-- {{URL|example.com}} -->
+| remarks = 
+| footnotes = 
+}}
+The '''Internet Protocol for Smart Objects''' ('''IPSO''') '''Alliance''' was an [[International standard|international]] [[technical standard]]s organization promoting the [[Internet Protocol]] (IP) for what it calls "smart object" communications.<ref>{{cite web |title=The IPSO Alliance |url=http://www.ipso-alliance.org}}</ref> The IPSO Alliance was a non-profit organization founded in 2008 with members from technology, communications and energy companies.<ref>{{cite web |title=IPSO Member Companies |url=http://www.ipso-alliance.org/about/member-companies}}</ref> The Alliance advocated for IP networked devices in energy, consumer, healthcare, and industrial uses. On 27 March 2018, the IPSO Alliance merged with the [[Open Mobile Alliance]] (OMA) to form OMA SpecWorks.<ref>{{cite web |title=IPSO Alliance Merges with Open Mobile Alliance to Form OMA SpecWorks |url=https://www.omaspecworks.org/ipso-alliance-merges-with-open-mobile-alliance-to-form-oma-specworks/ |date=2018-03-27}}</ref>
+
+==Description==
+Smart objects are data structures in constrained devices. They are used to manage the device and the device's data. Constrained devices in turn are small computers ([[microcontrollers]]) with a sensor or [[actuator]] and a communication device, such as thermostats, car engines, light switches, and industrial machinery. Smart objects represent the state, data, etc. of the device (device management) and the state, data, etc., of the sensors and actuators (data management). Smart objects are often simple; that is, their data structures are simple with a number of fixed operations. Due to their low cost, simple smart objects enable a wide range of uses formerly impossible due to cost considerations. These include areas such as home automation, building automation, factory monitoring, smart cities, structural health management systems, smart grid and energy management, and transport.
+
+The IPSO Alliance promotes the ''[[Internet of things]]''. The layered architecture of IP provides a high level of flexibility, innovation, and accelerates the adoption of network-connected devices, often referred to as the ''Internet of things''.
+
+IPSO offered webinars, interoperability events, white papers publication, and complemented the work of entities such as the [[Internet Engineering Task Force]] (IETF), the [[Institute of Electrical and Electronics Engineers]] (IEEE), the [[European Telecommunications Standards Institute]] (ETSI) and the ISA,{{Clarify |date=November 2013}} all of which develop and ratify technical standards in the industrial community.
+
+On 15 February 2013, the Alliance announced its ''IPSO Challenge 2013'' competition to showcase the use of the Internet Protocol (IP) in sensor, control, and M2M applications enabling the Internet of things (IOT).<ref>{{cite web |url=http://www.ipso-alliance.org/challenge2013 |title=Home}}</ref><ref>{{cite web |title=IPSO Alliance and Sensors Expo Announce $10,000 "IPSO Challenge 2013" IP Innovation Competition |url=http://www.ipso-alliance.org/ipso-alliance-and-sensors-expo-announce-10000-ipso-challenge-2013-ip-innovation-competition |access-date=19 February 2013}}</ref> The first round of judging closed on 5 April 2013. The top three finalists went to Sensors Expo in [[Chicago]] on 6 June 2013 to present their prototype or product, where the winner, Redwire Consulting of Boston for their Energy Current Harvesting device was announced. Runners up included CMD Microdevices of Colorado and ViBrain Solutions of Murcia, Spain.
+
+In August 2012 In conjunction with IETF 84 in Vancouver, British Columbia, IPSO hosted an Internet of things interoperability demonstration using the IPv6 and Web standards for machine-to-machine (M2M) devices and cloud services in connected home, building automation, lighting and smart energy-related uses. The Alliance also participated in the Bits-N-Bites Open House, showcasing NXP's smart light bulb, Proto6's motion sensor, and the Ericsson/Sensinode in-home sensors.<ref>{{cite web |title=IPSO Alliance Hosts Another Successful Interop Event at IETF 84 |url=http://www.ipso-alliance.org/ipso-alliance-hosts-another-successful-interop-event-at-ietf-84 |access-date=21 August 2012}}</ref>
+
+In June 2012, to observe World IPv6 Launch Day, the IPSO Alliance enabled its website for IPv6.
+
+In March 2012, IPSO Alliance teamed with European Telecommunications Standards Institute (ETSI) to assemble companies to validate understanding of the Constrained Application Protocol (CoAP) base specification under development by IETF, and test protocol implementation interoperability and conformance. Test results provided to both the IETF and Internet of things (IoT) communities to enhance the quality of these developing standards.<ref>{{Cite web |url=http://www.ipso-alliance.org/COAP2012 |title=Home}}</ref> This event was organized in cooperation with the Probe-IT project, held in Paris, France, on 24–25 March 2012 and was co-located with IETF 83 <ref>{{Cite web |url=http://www.ipso-alliance.org/april-17-2012-successful-first-internet-of-things-iot-coap-plugtests |title=Home}}</ref>
+
+In September 2011, IPSO published its first quarterly newsletter.<ref>{{Cite web |url=http://www.ipso-alliance.org/ipso-alliance-completes-successful-2011-looks-forward-to-continued-growth-2 |title=Home}}</ref>
+
+In June 2011, IPSO announced interoperability testing
+
+In May 2010, ZigBee Alliance and IPv6 Forum formed strategic relationships with the IPSO Alliance to speed adoption of IP networked smart objects.
+
+In April 2010, IPSO conducted a series of successful interoperability tests with several independent implementations of RPL and of 6LoWPAN-HC.
+
+In November 2008, ''[[Time (magazine)|Time]]'' magazine listed the IPSO Alliance and the Internet of things as the 30th most important innovation of 2008.<ref>{{cite news |url=http://www.time.com/time/specials/packages/article/0,28804,1852747_1854195_1854158,00.html |archive-url=https://web.archive.org/web/20081102044646/http://www.time.com/time/specials/packages/article/0,28804,1852747_1854195_1854158,00.html |url-status=dead |archive-date=2 November 2008 |title=Time's Best Innovations of 2008: 30. The Internet of Things |work=Time |date=2008-10-29 |access-date=2010-05-05}}</ref>
+
+On 15 October 2008, members of the IPSO Alliance released uIPv6, the world's smallest [[IPv6]] stack.<ref>[http://tech.slashdot.org/article.pl?no_d2=1&sid=08/10/15/1839209 Slashdot: World's Smallest IPv6 Stack By Cisco, Atmel, SICS]</ref>
+
+==References==
+{{Reflist}}
+
+{{Ambient intelligence}}
+
+{{DEFAULTSORT:Ipso Alliance}}
+[[Category:International trade associations]]
+[[Category:Internet of things]]

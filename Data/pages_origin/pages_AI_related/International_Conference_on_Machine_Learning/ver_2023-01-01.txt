@@ -1,0 +1,70 @@
+{{Short description|Academic conference in machine learning}}
+{{Cleanup bare URLs|date=September 2022}}
+{{Machine learning|Machine-learning venues}}
+The '''International Conference on Machine Learning''' ('''ICML''') is the leading international [[academic conference]] in [[machine learning]]. Along with [[Conference on Neural Information Processing Systems|NeurIPS]] and [[International Conference on Learning Representations|ICLR]], it is one of the three primary conferences of high impact in [[machine learning]] and [[artificial intelligence]] research.<ref>{{Cite web|date=2020-10-07|title=Artificial Intelligence - Google Scholar Metrics|url=https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence|access-date=2020-10-07|archive-url=https://web.archive.org/web/20201007212857/https://scholar.google.es/citations?view_op=top_venues&hl=en&vq=eng_artificialintelligence|archive-date=2020-10-07}}</ref> It is supported by the [http://www.machinelearning.org/ International Machine Learning Society] ([[International Machine Learning Society|IMLS]]). Precise dates vary from year to year, but paper submissions are generally due at the end of January, and the conference is generally held during the following July. The first ICML was held 1980 in [[Pittsburgh]].<ref>http://www.cs.mcgill.ca/~icml2009/past.html</ref><ref>http://machinelearning.org/archive/icml2008/past_icmls.shtml</ref>
+
+== Locations ==
+* {{flagicon|South Korea}} ICML 2026 [[Seoul]], South Korea
+* {{flagicon|Canada}} ICML 2025 [[Vancouver]], Canada
+* {{flagicon|Austria}} ICML 2024 [[Vienna]], Austria
+* {{flagicon|USA}} ICML 2023 [[Honolulu]], [[Hawaii]], United States
+* {{flagicon|USA}} ICML 2022 [[Baltimore]], [[Maryland]], United States
+* {{flagicon|Austria}} ICML 2021 [[Vienna]], Austria (virtual conference)
+* {{flagicon|Austria}} ICML 2020 [[Vienna]], Austria (virtual conference)
+* {{flagicon|USA}} ICML 2019 [[Los Angeles]], United States
+* {{flagicon|Sweden}} ICML 2018 [[Stockholm]], Sweden
+* {{flagicon|AUS}} ICML 2017 [[Sydney]], Australia
+* {{flagicon|USA}} ICML 2016 [[New York City]], United States
+* {{flagicon|France}} ICML 2015 [[Lille]], France
+* {{flagicon|China}} ICML 2014 [[Beijing]], China
+* {{flagicon|USA}} ICML 2013 [[Atlanta]], United States
+* {{flagicon|UK}} ICML 2012 [[Edinburgh]], [[United Kingdom|Great Britain]]
+* {{flagicon|USA}} ICML 2011 [[Bellevue, Washington|Bellevue]], United States
+* {{flagicon|Israel}} ICML 2010 [[Haifa]], Israel
+* {{flagicon|CAN}} ICML 2009 [[Montréal]], Canada
+* {{flagicon|Finland}} ICML 2008 [[Helsinki]], [[Finland]]
+* {{flagicon|USA}} ICML 2007 [[Corvallis, OR|Corvallis]], [[Oregon]], United States
+* {{flagicon|USA}} ICML 2006 [[Pittsburgh, PA|Pittsburgh]], [[Pennsylvania]], United States
+* {{flagicon|GER}} ICML 2005 [[Bonn]], Germany
+* {{flagicon|CAN}} ICML 2004 [[Banff, Alberta|Banff]], Canada
+* {{flagicon|USA}} ICML 2003 [[Washington, DC|Washington DC]], United States
+* {{flagicon|AUS}} ICML 2002 [[Sydney]], Australia
+* {{flagicon|USA}} ICML 2001 [[Williamstown, MA|Williamstown]], [[Massachusetts]], United States
+* {{flagicon|USA}} ICML 2000 [[Stanford, CA|Stanford]], [[California]], United States
+* {{flagicon|Slovenia}} ICML 1999 [[Bled]], Slovenia
+* {{flagicon|USA}} ICML 1998 [[Madison, Wisconsin|Madison]], United States
+* {{flagicon|USA}} ICML 1997 [[Nashville, Tennessee|Nashville]], United States
+* {{flagicon|Italy}} ICML 1996 [[Bari]], Italy
+* {{flagicon|USA}} ICML 1995 [[Tahoe City, California|Tahoe City]], United States
+* {{flagicon|USA}} ICML 1994 [[New Brunswick, New Jersey|New Brunswick]], United States
+* {{flagicon|USA}} ICML 1993 [[Amherst, Massachusetts|Amherst]], United States
+* {{flagicon|UK}} ICML 1992 [[Aberdeen, Scotland|Aberdeen]], [[United Kingdom|Great Britain]]
+* {{flagicon|USA}} ICML 1991 [[Evanston, Illinois|Evanston]], United States
+* {{flagicon|USA}} ICML 1990 [[Austin, Texas|Austin]], United States
+* {{flagicon|USA}} ICML 1989 [[Ithaca, New York|Ithaca]], United States
+* {{flagicon|USA}} ICML 1988 [[Ann Arbor, Michigan|Ann Arbor]], United States
+* {{flagicon|USA}} ICML 1987 [[Irvine, California|Irvine]], United States
+* {{flagicon|USA}} ICML 1985 [[Skytop, Pennsylvania|Skytop]], United States
+* {{flagicon|USA}} ICML 1983 [[Monticello, Illinois|Monticello]], United States
+* {{flagicon|USA}} ICML 1980 [[Pittsburgh, Pennsylvania|Pittsburgh]], United States
+
+== See also ==
+* [[International Conference on Learning Representations|ICLR]]
+* ''[[Journal of Machine Learning Research]]''
+* [[Machine Learning (journal)|''Machine Learning'' (journal)]]
+* [[Conference on Neural Information Processing Systems|NeurIPS]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://icml.cc Official site]
+
+{{Differentiable computing}}
+{{Authority control}}
+
+{{DEFAULTSORT:International Conference On Machine Learning}}
+[[Category:Artificial intelligence conferences]]
+
+
+{{compu-AI-stub}}

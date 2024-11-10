@@ -1,0 +1,58 @@
+{{Short description|Framework}}
+{{More citations needed|date=April 2023}}
+'''MCACEA''' ('''Multiple Coordinated Agents Coevolution Evolutionary Algorithm''') is a general framework that uses a single [[evolutionary algorithm]] (EA) per agent sharing their optimal solutions to coordinate the evolutions of the EAs populations using cooperation objectives. This framework can be used to optimize some characteristics of multiple cooperating agents in [[mathematical optimization]] problems. More specifically, due to its nature in which both individual and cooperation objectives are optimize, MCACEA is used in [[multi-objective optimization]] problems.
+
+==Description and implementation==
+MCACEA, uses multiple EAs (one per each agent) that evolve their own populations to find the best solution for its associated problem according to their individual and cooperation constraints and objective indexes. Each EA is an optimization problem that runs in parallel and that exchanges some information with the others during its evaluation step. This information is needed to let each EA to measure the coordination objectives of the solutions encoded in its own population, taking into account the possible optimal solutions of the remaining populations of the other EAs. With this purpose, each single EA receives information related to the best solutions of the remaining ones before evaluating the cooperative objectives of each possible solution of its own population.
+
+As the cooperation objective values depend on the best solutions of the other populations and the optimality of a solution depends both on the individual and cooperation objectives, it is not really possible to select and send the best solution of 
+each planner to the others. However, MCACEA divides the evaluation step inside each EA in three parts: In the first part, the 
+EAs identify the best solution considering only its individual objective values and send it to the others EAs; in the second part, the cooperation objective values of all solutions are calculated taking into account the received information; and in the third part, the EAs calculate the fitness of the solutions considering all the individual and cooperation objective values. 
+
+Although each population can only offer a unique optimal solution, each EA maintains a [[pareto set]] of optimal solutions and selects the unique optimal solution at the end, when the last population has already been obtained. Therefore, to be able to determine a unique optimal solution according with the individual objectives in each generation (and so, using it with the MCACEA framework), a step in charge of selecting the final optimal solution must also be included in the evaluation step of each EA.
+
+==Evaluation phase in MCACEA==
+The complete evaluation phase of the individual cooperating EAs is divided in six steps. When searching for the solution of a single EA, only the first two steps of this new evaluation process are used. MCACEA extends this process from these two only steps to the next six:
+
+1. Evaluating the individual objectives of each solution.
+
+2. Calculating the fitness of each solution with the single evaluation function (containing only the individual objectives).
+
+3. Finding the best solution of the population.
+
+4. Sending (and receiving) the best solution to (of) the other single EAs.
+
+5. Calculating the cooperation objectives taking into account the received information from the other EAs.
+
+6. Calculating the fitness of each solution with the complete evaluation function (containing both the individual and the cooperation objectives), which have been obtained in steps 1 and 5.
+
+==Similar approaches==
+Although MCACEA may look similar to the habitual parallelization of EAs, in this case, instead of distributing the solutions of the whole problem between different EAs that share their solutions periodically, the algorithm is dividing the problem into smaller problems that are solved simultaneously by each EA taking into account the solutions of the part of the problems that the other EAs are obtaining.
+
+Another possibility,<ref>C. Zheng, L. Li, F. Xu, F. Sun, and M. Ding, ''Evolutionary route planner for unmanned air vehicles,'' IEEE Transactions on Robotics, vol. 21, no. 4, pp. 609–620, Aug. 2005.</ref> is to send the best completely evaluated solutions of the previous generation to the other EAs instead of our current best only individual objective evaluated one. Nevertheless, that approach introduces a bias toward outdated completely evaluated trajectories, while MCACEA does it toward currently good individual objective evaluated ones.
+
+==Applications==
+MCACEA has been used for finding and optimizing [[unmanned aerial vehicles]] (UAVs) trajectories when flying simultaneously in the same scenario.<ref>[http://www.cs.bham.ac.uk/~wbl/biblio/gecco2008/docs/p1477.pdf J. M. de la Cruz, E. Besada-Portas, L. de la Torre, B. Andrés-Toro, and J. A. Lopez-Orozco, ''Evolutionary path planner for UAVs in realistic environments,'' in Proceedings of the Genetic and Evolutionary Compututation Conference, 2008, pp. 1447–1155.]</ref>
+
+==See also==
+* [[Artificial development]]
+* [[Developmental biology]]
+* [[Evolutionary computation]]
+* [[Evolutionary robotics]]
+* [[Fitness function]]
+* [[Fitness landscape]]
+* [[Fitness approximation]]
+* [[Genetic operators]]
+* [[Interactive evolutionary computation]]
+* [[MOEA Framework]], an open source Java framework for multiobjective evolutionary algorithms
+* [[Java Evolutionary Computation Toolkit|ECJ]], a toolkit to implement evolutionary algorithms
+* [[Paradiseo]], a metaheuristics framework
+
+==References==
+<references/>
+
+==Bibliography==
+L. de la Torre, J. M. de la Cruz, and B. Andrés-Toro. ''Evolutionary trajectory planner for multiple UAVs in realistic scenarios''. IEEE Transactions on Robotics, vol. 26, no. 4, pp.&nbsp;619–634, August 2010.
+
+[[Category:Evolutionary computation]]
+[[Category:Mathematical optimization]]

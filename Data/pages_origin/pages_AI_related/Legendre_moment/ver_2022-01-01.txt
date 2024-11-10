@@ -1,0 +1,49 @@
+{{Orphan|date=January 2019}}
+In mathematics, '''Legendre moments''' are a type of [[image moment]] and are achieved by using the [[Legendre polynomial]].  Legendre moments are used in areas of image processing including: pattern and object recognition, image indexing, line fitting, feature extraction, edge detection, and texture analysis.<ref>Lakshmi Deepika, C. et al. "Palmprint authentication using modified legendre moments", Procedia Computer Science, 2010, Vol.2, pp.&nbsp;164–172</ref>  Legendre moments have been studied as a means to reduce image moment calculation complexity by limiting the amount of information redundancy through approximation.<ref>Huazhong Shu, et al. "An Efficient Method for Computation
+of Legendre Moments", Academic Press, 2000</ref>
+
+== Legendre moments<ref>Pew-Thian Yap. "An Efficient Method for the Computation of Legendre Moments", IEEE Transactions on Pattern Analysis and Machine Intelligence ( Volume: 27, Issue: 12, Dec. 2005 )</ref> ==
+With order of ''m'' + ''n'', and object intensity function ''f''(''x'',''y''):
+ 
+:<math> L_{mn}=\frac{(2m+1)(2n+1)} 4 \int\limits_{-1}^1 \int\limits_{-1}^1 P_m(x) P_n(y)f(x,y) \,dx\, dy</math>
+
+where ''m'',''n'' = 1, 2, 3, ...{{math|∞|size=150%}} with the ''n''th-order Legendre polynomials being:
+
+:<math>P_n(x)=\sum_{k=0}^n a_{k,n}x^k=\frac{(-1)^n}{2^n n!} \left( \frac{d}{dx} \right) [(1-x^2)^n] </math>
+
+which can also be written:
+
+:<math>
+\begin{align}
+P_n(x) & =\sum_{k=0}^{D(n)}(-1)^k \frac{(2n-2k)!}{2^n k!(n-k)!(n-2k)!} x^{n-2k} \\[5pt]
+&  = \frac{(2n)!}{2^n(n!)^2}x^n-\frac{(2n-2)!}{2^n 1!(n-1)!(n-2)!} x^{n-2} + \cdots
+\end{align}
+</math>
+
+where ''D''(''n'') = floor(''n''/2). The set of Legendre polynomials {''P''<sub>''n''</sub>(''x'')} form an orthogonal set on the interval [−1,1]:
+
+:<math>\int_{-1}^1 P_n(x)P_m(x) \, dx = \frac{2}{2n+1}\delta_{nm}</math>
+
+A [[recurrence relation]] can be used to compute the Legendre polynomial:
+
+:<math>(n+1)P_{n+1}(x)-(2n+1)xP_n(x)+nP_{n-1}(x)=0</math>
+
+''f''(''x'',''y'') can be written as an infinite series expansion in terms of Legendre polynomials  [−1&nbsp;≤&nbsp;''x'',''y''&nbsp;≤&nbsp;1.]:
+
+:<math>f(x,y)=\sum_{m=0}^\infty \sum_{n=0}^\infty \lambda_{mn}P_m(x)P_n(y)</math>
+
+==See also==
+{{div col|colwidth=20em}}
+* [[Image moment]]
+* [[Legendre polynomial]]
+* [[Zernike polynomials]]
+{{div col end}}
+
+== References ==
+<!-- Inline citations added to your article will automatically display here. See https://en.wikipedia.org/wiki/WP:REFB for instructions on how to add citations. -->
+{{Reflist|30em}}
+
+[[Category:Computer vision]]
+[[Category:Orthogonal polynomials]]
+[[Category:Polynomials]]
+[[Category:Special hypergeometric functions]]

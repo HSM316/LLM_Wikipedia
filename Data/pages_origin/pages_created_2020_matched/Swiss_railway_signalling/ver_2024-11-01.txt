@@ -1,0 +1,241 @@
+{{Refimprove|date=September 2014}}
+{{short description|Railway signalling systems used in Switzerland by different railway companies}}
+'''Swiss railway signalling''' describes the [[railway signalling]] systems used in Switzerland  by the different railway companies. There are two main types of signal, used up to 160&nbsp;km/h, above which speed [[cab signalling]] is required.
+
+== Legal aspects ==
+
+Signalling is governed by strict rules, released by the Federal Office of Transport. The rules for railway operation are laid out in the Swiss Rail Service Regulations (''Fahrdienstvorschriften'' (in German), ''Prescriptions de circulation des trains (PCT)'' (in French), ''Prescrizioni sulla circolazione dei treni (PCT)'' (in Italian)), of which the latest version was issued in 2012, valid since 1 July 2012<ref name="presc"/> and are based on article 11a of the Ordinance of 23 November 1983 on the Construction and Operation of the Railways (Railways Ordinance, RailO).<ref name="ordon"/>
+
+== Light signals ==
+[[File:20080427Y059 NINA014.jpg|thumb|Example of an L type light signal]]
+Swiss light signals are divided into two classes, recognizable by the difference in shape of the signal: type L (for Light) and type N (for ''numérique'' (digital)). Type L was developed many years ago.  The  N system was developed for the [[Rail 2000]] project and shows a clear influence of the Dutch NS'54 system. In contrast to the latter the type N uses the 3 coloured lights in a triangular position, whereas the Dutch system positions them in a vertical line. There are more differences, mainly signalling an occupied section of track to the driver.
+
+In both systems, as is true elsewhere in the world, a [[distant signal]] tells the driver the aspect of the following [[home signal]] according to the [[Signalling_block_system|block system]].  The driver must act accordingly to prepare for the situation at the home signal. Distant signals are always square while home signals are round (N) or elongated (L). Signals are always placed on the left except on tracks normally operated in both directions or where visibility requires a different position.
+
+According to the rules, light signals are used for main line traffic or shunting. N and L type signals are used for main line traffic and are not to be taken account of during shunting.  Shunting signals do not apply to main line movements.
+
+The [[Swiss Federal Railways]] (SBB) are progressively replacing L type signals by N type signals, because  N type signals are more complete, better adapted to high speed operation (>140&nbsp;km/h), allowing greater fluidity and thus increasing capacity.  Most other Swiss railway companies only use L type signals.
+
+=== L type ===
+
+[[File:Exemple ralentissement type L.gif|thumb|right|
+Example of a 'slow' instruction to the required speed]]
+
+L type signals remain the most widespread in the country. It authorizes trains to proceed at their normal speed, to slow them down or to stop them.
+
+The speed reductions imposed by type L signals, when they are protecting a station or a crossover, only apply to the points zone protected by the signal and not normally to the stretch of track beyond the points.  Thus if a signal presents the aspect 2 (maximum speed 40&nbsp;km/h at the signal), the 40&nbsp;km/h limit applies from the signal and over the points concerned. ; as soon as the train has passed the last points in deviated position it can accelerate to the operating speed.  This way of operating requires that the drivers understand for any signal which points are concerned.
+
+A signal presenting the 'stop' aspect cannot be passed under any circumstances without a formal order from the train controller. This order can be transmitted in writing or by radio.  In the latter case the driver must repeat the order word for word. Once this order has been received, the driver can proceed at a speed slow enough that they may stop short of any obstruction de 40&nbsp;km/h.
+This restrictive procedure requires very slow operation.  There is a complementary signal, shown below, which gives the order 'Proceed on sight' without needing a written order, so as to avoid huge delays in case a signal breaks down.
+
+In some cases, mostly entering stations, home signals and distant signals can be found on the same mast; in this case the distant signal is linked to the next home signal.
+
+{| class="wikitable" border="1" 
+|-
+! Distant Signal 
+! Meaning
+! Home signal
+|-
+| [[File:Signalisation suisse signal avancé voie libre.gif|Signal présentant deux feux vert en diagonale sur un carré noir]]
+| '''Aspect 1''' : The track ahead is clear. The train is permitted to travel at any speed up to the current line limit.
+| [[File:Signalisation suisse L principal ouvert.gif|Signal présentant un feu vert sur un signal oblongue allongé]]
+|-
+| [[File:Signalisation suisse signal avancé 40.gif|Signal présentant un feux orange en haut à gauche et un feux vert au milieu à droite,le tout sur un carré noir]]
+| '''Aspect 2''' : Max speed 40&nbsp;km/h for the points in diverging position
+| [[File:Signalisation suisse L principal 40.gif|Signal présentant un feu vert en dessus d'un feu orange sur un signal oblongue noir allongé]]
+|-
+| [[File:Signalisation suisse signal avancé 60.gif|Signal présentant un feu orange en haut à gauche et deux feux verts en diagonale, le tout sur un carré noir]]
+| '''Aspect 3''' : Max speed 60&nbsp;km/h for the points in diverging position. Takes precedence over line limits.
+| [[File:Signalisation suisse L principal 60.gif|Signal présentant deux feux verts verticaux sur une forme oblongue allongée noir]]
+|-
+| [[File:Signalisation suisse signal avancé 90.gif|Signal présentant deux feux verts en diagonale et un autre feu orange en bas à droite, le tout sur un carré noir]]
+| '''Aspect 5''' : Max speed 90&nbsp;km/h for the points in diverging position.
+| [[File:Signalisation suisse L principal 90.gif|Signal présentant trois feux verts verticaux sur une forme oblongue allongée noire]]
+|-
+|
+| '''Aspect 6''' : Max speed 20&nbsp;km/h, the next signal shows 'stop' and is at reduced distance.
+| [[File:Signalisation suisse L principal itineraire court.gif|Signal présentant deux feux orange verticaux sur une forme oblongue allongée noir]]
+|-
+| [[File:Signalisation suisse signal avancé ferme.gif|Signal présentant deux feux orange en haut sur un carré noir]] 
+| '''‘Stop’ Aspect'''  : Trains must stop at home signal
+| [[File:Signalisation suisse L principal 90.png|Signal présentant un feu rouge]]
+|}
+
+==== Combined L Type(K type) ====
+On lines where the blocks are relatively close a system called ''combined'' has been developed. The signal can then be presented on the same plate is a distant signal (warning or announcement of speed), an image of the home signal (track clear, stop or speed limit). To be recognized as a home signal, where the alignment of the lamps would not allow, the combined signal has a distinctive supplementary plate.
+
+[[File:Signalisation suisse type L Combiné avertissement.gif|thumb|right|Combined Signal|alt="Signal combiné, représentant l'image d'avertissement et surmonté du panneau complémentaire pour signaux combinés"]]
+In combined L-type signals the distant signal ‘track clear’ is not shown but implied by the ‘proceed’ aspect. If two successive signals show speed limits, the first speed limit shown  must be applied from the second signal, even if not shown explicitly.
+
+=== N Type ===
+
+N type signals are progressively replacing L type signals on the CFF/SBB network and are starting to be used by other companies, mostly the [[BLS AG|BLS]].
+
+In contrast to L type signals, not all N type home signals are preceded by a distant signal, as all N signals are capable of speed signalling and thus play the role of a distant signal.  Thus, if a driver passes an N type signal showing a speed aspect, he must maintain this speed until he has recognized the aspect of the next signal, which may continue to impose a speed restriction.
+
+Speed signalling is no longer based on combinations of green and yellow, but on one colour accompanied by a single digit display indicating the speed. Thus the green aspect means 'track clear' and if a digit is displayed, with a speed restriction. The yellow aspect still means a warning or a speed restriction if a digit is displayed and a red aspect remains an absolute stop signal, only to be passed with a formal order or with safety equipment deployed.
+
+In order to distinguish clearly between the two, distant signals use square plates while home signals use circular plates.
+
+{| class="wikitable" border="1" style="text-align:center;"
+|+ N type Signals|
+! width="20%" | Distant aspect
+! Meaning
+! Home aspect
+|-
+| [[File:Sign suisse N avance ouvert.GIF|50px|Signal avancé présentant un feu vert]] or [[File:Sign suisse N principal ouvert.GIF|50px|Signal principal présentant un feu vert]]
+| '''Track clear''', proceed at line speed.
+| [[File:Sign suisse N principal ouvert.GIF|50px|Signal principal présentant un feu vert]]
+|-
+| [[File:Sign suisse N avance 70.GIF|50px|Signal avancé présentant un feu orange et un 7 allumé en dessous]] or [[File: Sign suisse N principal 70 execution.GIF|50px|Signal principal présentant un feu orange et un 7 allumé en dessous]]
+| '''Speed restriction''' to the displayed digit x 10&nbsp;km/h (here 70&nbsp;km/h)
+| [[File:Sign suisse N principal 70 execution.GIF|50px|Signal présentant un feu vert et un 7 allumé en dessous]]
+|-
+| [[File:Sign suisse N avance 40.GIF|50px|Signal avancé présentant un feu orange et un 4 allumé en dessous]] or [[File:Sign suisse N principal 40.GIF|50px|Signal principal présentant un feu orange et un 7 allumé en dessous]]
+| '''Obstruction close ahead''', speed limit  40&nbsp;km/h, the next signal is at stop and closer than normal stopping distance.
+| [[File:Sign suisse N principal 40.GIF|50px|Signal présentant un feu orange et une barre horizontale clignotante allumée en dessous]]<br/>
+|-
+| [[File:Sign suisse N avance 40.GIF|50px|Signal avancé présentant un feu orange et un 4 allumé en dessous]] or [[File:Sign suisse N principal 40.GIF|50px|Signal principal présentant un feu orange et un 7 allumé en dessous]]
+| '''Track occupied''', speed limit  40&nbsp;km/h, the next section is obstructed and the driver must be ready to halt the train.
+| [[File:Sign suisse N principal voie occupée.GIF|50px|Signal présentant un feu orange et une barre horizontale allumée en dessous]]
+|-
+| ''no aspect''
+| '''Prewarning''', reduce speed to be able to stop at the signal after next, which is showing the 'stop' aspect and is closer than the normal braking distance to the next signal.
+| [[File: Sign suisse N principal 70.GIF|50px|Signal présentant un feu orange et un 7 allumé en dessous]]
+|-
+| [[File:Signalisation suisse N avance ferme.GIF|50px|Signal avancé présentant un feu orange]] or [[File:Sign suisse N principal avertissement.GIF|50px|Signal principal présentant un feu orange]]
+| '''Stop''' at the signal.
+| [[File:Sign suisse N principal arret.GIF|50px|Signal présentant un feu rouge]]
+|}
+
+== Shunting signals ==
+
+In Switzerland, shunting manoeuvres can be controlled either by shunting signals or dwarf signals. The maximum speed allowed for shunting is 30&nbsp;km/h.  This can be increased in special cases to 40&nbsp;km/h.  In any case speed must be compatible with visibility, local conditions and braking power.<ref>PCT R300.4, chiffre 3.6.1</ref>
+
+Shunting signals are not integrated with automatic train protection systems such as  [[Integra-Signum]] or ZUB 121, so locomotives only used for shunting are not equipped with these systems.
+
+Shunting signals are older technology and comprise fewer safety features. They control shunting paths and are not fitted with interlocks,.<ref>PCT R300.1, définition</ref> The driver must therefore ensure that points are set correctly through their intended path.
+
+Shunting signals can protect one or more sets of points within a zone.
+{| class="wikitable" border="1" width="85%" 
+|-
+! Aspects
+! Meaning
+|-
+| [[File:Rangiersignale 307-310.png|140px]]
+| '''Shunting prohibited''': No shunting in the area defined by local prescriptions<br /> <br /> <br />'''Shunting allowed:''' Shunting allowed for the area defined by local prescriptions
+|-
+| [[File:Sign man man-interdite.PNG|120px]]
+| '''Stop shunting movement''': The driver must halt before the signal or the points protected by the signal.
+|-
+| [[File:Sign man man-autorisée.PNG|120px]]
+| '''OK to start shunting movement''': The driver may start or continue.
+|}
+
+In sidings where there are no signals and the points are operated manually, orders are given by hand signals, acoustic signals or by radio.
+
+=== Dwarf signals ===
+
+In contrast to shunting signals, dwarf signals protect paths and are interlocked. Points in zones equipped with dwarf signals do not have points indicators.
+
+Dwarf signals have three aspects: 
+{| class="wikitable" border="1" width="85%" 
+|-
+! width="10%"|Aspects
+! Meaning
+|-
+| rowspan="3" |[[File:Signaux suisse nains.png|Signaux nains|55px ]]
+| height="45" | '''Stop''': for a moving train: stop before the signal. For a stationary train: do not start to move.
+|-
+| height="45" | '''Proceed with caution''': start or continue to move, expecting an obstacle at any point after the signal.
+|-
+| height="40" | '''Proceed''': start or continue to move, the next dwarf signal shows at minimum a '''proceed with caution''' aspect.
+|}
+
+Dwarf signals are usually positioned on the left of the tracks and only apply to that track. In case it is positioned on the right hand side of the track it has an illuminated indicator (arrow) to make clear for which track it is valid. They are set to allow the passage of trains as well as the standard light signals for mainline movements. The last dwarf signal before entering the main line will show a '''Proceed''' aspect for a train or a '''Proceed with caution''' aspect for a shunting movement.
+
+Whatever kind of signal is used, the permission to move is given to the guard in charge who will then himself authorize the movement to start.  This is to avoid accidents to the team who may be working on a vehicle.
+
+== Complementary light signals ==
+There are many types of complementary light signals to be found on the Swiss Federal Railways network.  Only the most common ones will be shown here.
+
+Complementary signals are  mostly used with type L signals, but some are used with type N. They can also be independent of either type. Mostly they are used
+* to solve problems posed by grouped L signals
+* to mitigate difficulties caused by the use of replacement equipment
+* to communicate orders and information which cannot be communicated with standard signals
+
+===Complementary signals for grouped L type signals===
+
+A grouped signal is an L type signal which applies to several tracks, usually in stations.  The rules covering the presence of several trains waiting at a grouped signal dictate that the traffic controller must indicate to all trains that the signal will pass to 'go' and that they must not start.  The train which has not received this order is free to depart.[[File:Exemple signaux-groupes type L.PNG|thumb|left|Example of group signal|350px]]
+This system is rather slow, so complementary signals are used.
+
+An illuminated numeric display is used to indicate which track is concerned by the signal, track 1 always being the one closest to the station building. Trains standing on other tracks know that this signal implies the 'halt' aspect for their tracks.
+'Track free' indicators are also used which indicate which aspect applies to track where the indicator is installed.  In this example, the driver knows that the signal with aspect 2 permits him to start.
+[[File:Signal auxiliaire type L.GIF|thumb|right|Auxiliary signal illuminated beneath.]]
+
+===Auxiliary signals===
+
+Auxiliary signals are used to send permission to pass a signal which has failed or is showing the 'stop' aspect. This avoids the use of formal orders which would delay trains too much.  An auxiliary signal allows the driver to proceed at sight without needing communication between the driver and the traffic controller.
+
+The auxiliary signal for N type signals is flashing red.
+
+===Other complementary signals===
+
+[[File:Sign suisse autorisation-de-départ.GIF|thumb|left|Right away]]
+In some stations, signals are needed to communicate the ''right away'' to the driver.  He will then know that boarding is complete, the doors are closed and that he may depart.  This signal is actuated by the guard just before boarding himself. These signals are to be found along the platform and sometimes at the departure signal.
+
+Other signals include, for example, an indication that a passenger has requested a stop at a request stop, the voltage in a variable voltage section or an order to test the brakes.
+
+<br>
+== Signs ==
+Signs are used to protect or indicate a fixed feature such as a speed limit or a level crossing.
+
+There are a number of signs that are all designed to protect or to indicate a fixed feature such as a speed restriction or a [[level crossing]]. The signs can be for mainline traffic, shunting traffic or both. They are usually located on the left of the track.
+
+[[File:Panneaux vitesse suisse.png|thumb|left|Speed restriction|55px]]
+
+In Switzerland, the speed of a section is indicated on the route instructions a document that the driver uses to know the speed limits for each part of the route he uses.
+However, the curves to be negotiated at low speed are indicated by signs and are only mentioned in the route instructions. The signs for these speed restrictions are called'' 'low speed section signs'''. There is always, except immediately after a station, a sign indicating the speed restriction of the section in advance, followed by the speed restriction sign itself and then a final signal that ends the speed restriction. When several speeds are shown, the lower one still applies to trains of higher category and the upper one to the lower category.
+
+In the example presented on the left, at the top is an advance warning for a speed restricted section, in the middle the sign to start the speed restriction and below the sign to end the speed restriction and return to normal speed.
+There are also round speed restriction signs, with orange or green circumference, which apply only to tilting trains. These signals operate on the same principle.
+
+{{clear}}
+
+Many other signs exist of which a small sample are shown here:
+
+{| class="wikitable" border="2"
+|-
+! Aspect
+! Meaning
+|-
+| [[File:Signal suisse siffler.PNG|55px]]
+| Horn/Whistle sign; Drivers shall blow their horn/whistle when passing this sign
+|-
+| [[File:Panneau suisse de déclenchement.PNG|45px]]
+| Start of a neutral zone; without electric power. Electric locomotives must open the main circuit breaker before this sign.
+|-
+| [[File:Panneau suisse enclenchement.PNG|45px]]
+| End of a neutral zone; without electric power. Electric locomotives may close the main circuit breaker after this sign.
+|-
+| [[File:End of Overhead Line Electrification (Swiss).png|45px]]
+| End of Overhead Line Electrification; Electric locomotives must not pass this sign. Usually placed on the [[Overhead line|OLE]] equipment,  though can be found as an upright rectangle on the switch signal when it is pointed onto the track where the OLE ends: [[File:End of Overhead Line Electrification Switch Signal (Swiss).png|10px]]
+|-
+| [[File:Limit of shunt (Swiss).png|45px]]
+| Shunt limit; Shunting trains may not pass this sign. Usually found near yards and stations.
+|}
+
+== See also ==
+
+* https://www.styria-mobile.at/home/Austro-SwissRailwaySignalling/asr/ensigchbegriff.html
+
+== References ==
+<references>
+<ref name="presc">{{cite web|url=https://www.bav.admin.ch/bav/de/home/rechtliches/rechtsgrundlagen-vorschriften/fdv-2016.html|title=Fahrdienstvorschriften (FDV)|work=BAV|accessdate=11 September 2014}}</ref>
+<ref name="ordon">{{cite web|url=http://www.admin.ch/opc/de/classified-compilation/19830331/index.html|title=Eisenbahnverordnung (EBV)|work=Swiss Confederation|accessdate=11 September 2014}}</ref>
+</references>
+
+{{Railwaysignalling}}
+
+{{DEFAULTSORT:Swiss Railway Signalling}}
+[[Category:Railway signalling in Switzerland|Switzerland]]

@@ -1,0 +1,134 @@
+Industry 4.0 is the subset of the fourth industrial revolution 
+that concerns industry. The fourth industrial revolution encompasses areas which are not normally classified as an industry, such as smart cities, for instance.
+
+Although the terms "industry 4.0" and "fourth industrial revolution" are often used interchangeably, "industry 4.0" factories have machines which are augmented with wireless connectivity and sensors, connected to a system that can visualise the entire production line and make decisions on its own. 
+
+In essence, industry 4.0 is the trend towards automation and data exchange in manufacturing technologies and processes which include cyber-physical systems (CPS), the internet of things (IoT), industrial internet of things (IIOT), cloud computing Hermann, Pentek, Otto, 2016: Design Principles for Industrie 4.0 Scenarios, accessed on 4 May 2016Jürgen Jasperneite:Was hinter Begriffen wie Industrie 4.0 steckt in Computer & Automation, 19 December 2012 accessed on 23 December 2012Kagermann, H., W. Wahlster and J. Helbig, eds., 2013: Recommendations for implementing the strategic initiative Industrie 4.0: Final report of the Industrie 4.0 Working GroupHeiner Lasi, Hans-Georg Kemper, Peter Fettke, Thomas Feld, Michael Hoffmann: Industry 4.0. In: Business & Information Systems Engineering 4 (6), pp. 239-242, cognitive computing and artificial intelligence.
+
+The concept includes:
+ Smart manufacturing
+ Smart factory
+ Lights out (manufacturing) also known as dark factories
+
+ Industrial internet of things also called internet of things for manufacturing  
+
+Industry 4.0 fosters what has been called a "smart factory". Within modular structured smart factories, cyber-physical systems monitor physical processes, create a virtual copy of the physical world and make decentralized decisions. Over the Internet of Things, cyber-physical systems communicate and cooperate with each other and with humans in real-time both internally and across organizational services offered and used by participants of the value chain.
+
+The determining factor is the pace of change. The correlation of the speed of technological development and, as a result, socio-economic and infrastructural transformations with human life allow us to state a qualitative leap in the speed of development, which marks a transition to a new time eraShestakova I. G. New temporality of digital civilization: the future has already come // // Scientific and Technical Journal of St. Petersburg State Polytechnical University. Humanities and social sciences. 2019. # 2. P.20-29.
+
+Terminology 
+The term "Industrie 4.0", shortened to I4.0 or simply I4, originated in 2011 from a project in the high-tech strategy of the German government, which promotes the computerization of manufacturing. The term "Industrie 4.0" was publicly introduced in the same year at the Hannover Fair. In October 2012 the Working Group on Industry 4.0 presented a set of Industry 4.0 implementation recommendations to the German federal government. The Industry 4.0 workgroup members and partners are recognized as the founding fathers and driving force behind Industry 4.0. On 8 April 2013 at the Hannover Fair, the final report of the Working Group Industry 4.0 was presented.Industrie 4.0 Plattform Last download on 15. Juli 2013. This working group was headed by Siegfried Dais (Robert Bosch GmbH) and Henning Kagermann (German Academy of Science and Engineering).
+
+As Industry 4.0 principles have been applied by companies they have sometimes been re-branded, for example the aerospace parts manufacturer Meggitt PLC has branded its own Industry 4.0 research project M4. 
+
+The discussion of how the shift to Industry 4.0, especially digitalization, will affect the labour market is being discussed in Germany under the topic of Work 4.0.Federal Ministry of Labour and Social Affairs of Germany (2015). Re-Imagining Work: White Paper Work 4.0.
+
+ German strategy 
+The characteristics given for the German government's Industry 4.0 strategy are: the strong customization of products under the conditions of highly flexible (mass-) production. The required automation technology is improved by the introduction of methods of self-optimization, self-configuration,Selbstkonfiguierende Automation für Intelligente Technische Systeme, Video, last download on 27. Dezember 2012 self-diagnosis, cognition and intelligent support of workers in their increasingly complex work.Jürgen Jasperneite; Oliver, Niggemann: Intelligente Assistenzsysteme zur Beherrschung der Systemkomplexität in der Automation. In: ATP edition - Automatisierungstechnische Praxis, 9/2012, Oldenbourg Verlag, München, September 2012 The largest project in Industry 4.0 as of July 2013 is the BMBF leading-edge cluster "Intelligent Technical Systems Ostwestfalen-Lippe (it's OWL)". Another major project is the BMBF project RES-COM, as well as the Cluster of Excellence "Integrative Production Technology for High-Wage Countries". In 2015, the European Commission started the international Horizon 2020 research project CREMA (Providing Cloud-based Rapid Elastic Manufacturing based on the XaaS and Cloud model) as a major initiative to foster the Industry 4.0 topic.
+
+ Design principles and goals
+There are four design principles in Industry 4.0. These principles support companies in identifying and implementing Industry 4.0 scenarios.
+ Interconnection: The ability of machines, devices, sensors, and people to connect and communicate with each other via the Internet of Things (IoT) or the Internet of People (IoP)
+ Information transparency: The transparency afforded by Industry 4.0 technology provides operators with vast amounts of useful information needed to make appropriate decisions. Inter-connectivity allows operators to collect immense amounts of data and information from all points in the manufacturing process, thus aiding functionality and identifying key areas that can benefit from innovation and improvement.
+ Technical assistance: First, the ability of assistance systems to support humans by aggregating and visualizing information comprehensively for making informed decisions and solving urgent problems on short notice. Second, the ability of cyber physical systems to physically support humans by conducting a range of tasks that are unpleasant, too exhausting, or unsafe for their human co-workers.
+ Decentralized decisions: The ability of cyber physical systems to make decisions on their own and to perform their tasks as autonomously as possible. Only in the case of exceptions, interferences, or conflicting goals, are tasks delegated to a higher level.
+
+Industry 4.0 envisions environmentally-sustainable manufacturing by having green manufacturing processes, green supply chain management, and green products.De Sousa Jbbour, A. B. L., Jabbour, C. J. C., Foropon, C., & Godhinho Filho, M. When titans meet – Can industry 4.0 revolutionize the environmentally-sustainable manufacturing wave? The role of critical success factores. (July, 2018), 18-25
+
+ Before Industry 4.0 
+
+Industry 1.0 refers to the first industrial revolution. It is marked by a transition from hand production methods to machines through the use of steam power and water power. The implementation of new technologies took a long time, so the period which this refers to it is between 1760 and 1820, or 1840 in Europe and the US. Its effects had consequences on textile manufacturing, which was first to adopt such changes, as well as iron industry, agriculture, and mining although it also had societal effects with an ever stronger middle class. It also had an effect on British industry at the time. 
+
+Industry 2.0; the second industrial revolution or better known as the technological revolution is the period between 1870 and 1914. It was made possible with the extensive railroad networks and the telegraph which allowed for faster transfer of people and ideas. It is also marked by ever more present electricity which allowed for factory electrification and the modern production line. It is also a period of great economic growth, with an increase in productivity. It, however, caused a surge in unemployment since many workers were replaced by machines in factories. 
+
+The third industrial revolution or Industry 3.0 occurred in the late 20th century, after the end of the two big wars, as a result of a slowdown with the industrialization and technological advancement compared to previous periods. It is also called digital revolution. The global crisis in 1929 was one of the negative economic developments which had an appearance in many industrialized countries from the first two revolutions. The production of Z1 (electrically driven mechanical calculator) was the beginning of more advanced digital developments. This continued with the next significant progress in the development of communication technologies with the supercomputer. In this process, where there was extensive use of computer and communication technologies in the production process. Machines started to abrogate the need for human power in life. 
+
+ Components of Industry 4.0 
+“Industry 4.0” is an abstract and complex term consisting of many components when looking closely into our society and current digital trends. To understand how extensive these components are, here are some contributing digital technologies as examples:
+
+ Mobile devices
+ Internet of Things (IoT) platforms
+ Location detection technologies
+ Advanced human-machine interfaces
+ Authentication and fraud detection
+ 3D printing
+ Smart sensors
+ Big data analytics and advanced algorithms
+ Multilevel customer interaction and customer profiling
+ Augmented reality/ wearables
+ Fog, Edge and Cloud computing
+Data visualization and triggered "real-time" training
+
+Mainly these technologies can be summarized into four major components, defining the term “Industry 4.0” or “smart factory”:
+
+ Cyber-physical systems
+ IoT
+ Cloud computing
+ Cognitive computing
+
+With the help of cyber-physical systems that monitor physical processes, a virtual copy of the physical world can be designed. Thus, these systems have the ability of making decentralized decisions on their own and reach a high degree of autonomy (for more information, see “Industry 4.0 characteristics). As a result, Industry 4.0 networks a wide range of new technologies to create value.
+
+ Industry 4.0 Drivers 
+What all these components have in common, is that Data and Analytics are their core capabilities. “Industry 4.0” is driven by: 
+
+1. Digitization and integration of vertical and horizontal value chains:
+
+Vertically, Industry 4.0 integrates processes across the entire organization for example processes in product development, manufacturing, logistics and service whereas horizontally, Industry 4.0 includes internal operations from suppliers to customers plus all key value chain partners.
+
+2. Digitization of product and service offerings:
+
+Integrating new methods of data collection and analysis for example through the expansion of existing products or creation of new digitised products, helps companies to generate data on product use and thus, to refine products in order to meet best the customers’ needs.
+
+3. Digital business models and customer access:
+
+Reaching customer satisfaction is a multi-stage, never-ending process that needs to be modified currently as customers’ needs change all the time. Therefore, companies expand their offerings by establishing disruptive digital business models to provide their customers digital solutions that meet their needs best.
+
+ Effects 
+
+The increasing use of the Industrial Internet of Things is referred to as Industry 4.0 at Bosch, and generally in Germany. Applications include machines which can predict failures and trigger maintenance processes autonomously or self-organized logistics which react to unexpected changes in production.
+
+ Challenges 
+Challenges in implementation of Industry 4.0: 
+
+Economic
+ High economic costs
+ Business model adaptation
+ Unclear economic benefits/excessive investment
+
+Social
+ Privacy concerns
+ Surveillance and distrust
+ General reluctance to change by stakeholders
+ Threat of redundancy of the corporate IT department
+ Loss of many jobs to automatic processes and IT-controlled processes, especially for blue collar workers
+
+Political
+ Lack of regulation, standards and forms of certifications
+ Unclear legal issues and data security
+
+Organisational/ Internal
+ IT security issues, which are greatly aggravated by the inherent need to open up those previously closed production shops
+ Reliability and stability needed for critical machine-to-machine communication (M2M), including very short and stable latency times
+ Need to maintain the integrity of production processes
+ Need to avoid any IT snags, as those would cause expensive production outages
+ Need to protect industrial know-how (contained also in the control files for the industrial automation gear)
+ Lack of adequate skill-sets to expedite the transition towards the fourth industrial revolution
+ Low top management commitment
+ Insufficient qualification of employees
+
+ Role of big data and analytics 
+
+Modern information and communication technologies like cyber-physical system, big data analytics and cloud computing, will help early detection of defects and production failures, thus enabling their prevention and increasing productivity, quality, and agility benefits that have significant competitive value.
+
+Big data analytics consists of 6Cs in the integrated Industry 4.0 and cyber physical systems environment.
+The 6C system comprises:
+ Connection (sensor and networks)
+ Cloud (computing and data on demand)
+ Cyber (model & memory)
+ Content/context (meaning and correlation)
+ Community (sharing & collaboration)
+ Customization (personalization and value)
+In this scenario and in order to provide useful insight to the factory management, data has to be processed with advanced tools (analytics and algorithms) to generate meaningful information. Considering the presence of visible and invisible issues in an industrial factory, the information generation algorithm has to be capable of detecting and addressing invisible issues such as machine degradation, component wear, etc. in the factory floor.
+
+Applications
+The aerospace industry has sometimes been characterized as "too low volume for extensive automation" however Industry 4.0 principles have been investigated by several aerospace companies, technologies have been developed to improve productivity where the upfront cost of automation cannot be justified, one example of this is the aerospace parts manufacturer Meggitt PLC's project, M4. 

@@ -1,0 +1,25 @@
+'''Zeroth''' is a platform for brain-inspired computing from [[Qualcomm]]. It is based around a {{visible anchor|neural processing unit}} (NPU) [[AI accelerator]] chip and a software API to interact with the platform. It makes a form of [[machine learning]] known as [[deep learning]] available to [[mobile device]]s. It is used for image and sound processing, including [[speech recognition]]. The software operates locally rather than as a [[cloud application]].<ref name=tr>{{cite news |title=Smartphones Will Soon Learn to Recognize Faces and More |first=Tom |last=Simonite |work=[[Technology Review]] |date= March 9, 2015 |url=http://www.technologyreview.com/news/535631/smartphones-will-soon-learn-to-recognize-faces-and-more |access-date=March 10, 2015}}</ref>
+
+Mobile chip maker Qualcomm announced in March 2015 that it would bundle the [[software]] with its next major mobile device chip, the [[Snapdragon (system on chip)|Snapdragon 820]] processor.<ref name=tr/>
+
+== Applications ==
+
+Qualcomm demonstrated that the system could recognize human faces<ref name=tr/> and gestures<ref>{{cite news |title=Qualcomm's Zeroth platform could make your smartphone much smarter |first= Ben Fox |last=Rubin |date=March 2, 2015 |access-date=March 10, 2015 |url=http://www.cnet.com/news/qualcomms-zeroth-platform-could-make-your-smartphone-much-smarter |work=CNET }}</ref> that it had seen before and detect and then search for different types of photo scenes.<ref name=tr/>
+
+Another potential application is to extend [[battery (electricity)|battery]] life by analyzing phone usage and powering down all or part of its capabilities without affecting the user experience.<ref name=tr/>
+
+==See also==
+* [[Neuromorphic computing]]
+* [[TrueNorth]]
+* [[SpiNNaker]]
+* [[Vision processing unit]], a class of processors aimed at [[machine vision]] (including convolutional neural networks, hence overlapping with 'neural processing units')
+
+== References ==
+{{reflist|30em}}
+
+[[Category:Qualcomm software]]
+[[Category:Mobile software]]
+[[Category:Data mining and machine learning software]]
+[[Category:Image processing software]]
+[[Category:Speech recognition software]]
+[[Category:AI accelerators]]

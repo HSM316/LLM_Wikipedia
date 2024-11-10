@@ -1,0 +1,70 @@
+{{Infobox software
+| name                   = Bing Audio
+| title                  = Bing Audio
+| logo                   = [[File:Bing logo (2016).svg|160px|Bing logo as of January 2016]]
+| developer              = [[Microsoft]]
+| operating system       = [[Windows Phone]] (7.5+)
+| size                   = 
+| language =
+| genre = [[music information retrieval|Music Recognition Software]]
+| license = [[proprietary software|Proprietary]]
+| website = 
+}}
+
+'''Bing Audio''' (also known as '''Bing Music''')<ref>{{cite news|last=Stroh|first=Michael|title=Bing Audio, Windows Phone's built-in music matching service, rolls out to 14 new countries|url=http://blogs.windows.com/bloggingwindows/2013/07/03/bing-audio-windows-phones-built-in-music-matching-service-rolls-out-to-14-new-countries/|newspaper=Blogging Windows|date=3 July 2013}}</ref> is a [[music information retrieval|music recognition]] application created by [[Microsoft]] which is installed on [[Windows Phone]]s running version [[Windows Phone 7.5|7.5]] and above, including [[Windows Phone 8]]. On [[Windows Phone 8.1]], and in regions where the [[Microsoft Cortana]] voice assistant is available, Bing Music is integrated with Cortana<ref name=WMPoweruser>{{cite news|last=Súrîl|first=Surur|title=Joe Belfiore confirms WP8.1 Developer Preview is coming "first part of April" and other titbits|url=http://wmpoweruser.com/joe-belfiore-confirms-wp8-1-developer-preview-is-coming-first-part-of-april-and-other-titbits/|newspaper=[[WMPoweruser]]|date=7 April 2014|access-date=7 April 2014|archive-date=9 September 2015|archive-url=https://web.archive.org/web/20150909165135/http://wmpoweruser.com/joe-belfiore-confirms-wp8-1-developer-preview-is-coming-first-part-of-april-and-other-titbits/|url-status=dead}}</ref>  and the music search history is a part of Cortana's "Notebook". The service is only designed to recognize [[recorded music|recorded songs]], not live performances or humming. [[Xbox]] Music Pass subscribers can immediately add the songs to their [[playlist]]s.<ref name=GroovyPost>{{cite news|last=Burgess|first=Brian|title=Use Cortana on Windows Phone 8.1 to Identify Songs|url=http://www.groovypost.com/news/windows-phone-8-1-cortana-identifies-songs/|newspaper=[[GroovyPost]]|date=19 April 2014}}</ref> A unique feature compared to similar services is that Bing Audio continuously listens and analyzes music while most other services can only listen for a fixed amount of time{{citation needed|date=March 2015}}. Bing Research developed a ''fingerprinting'' algorithm to identify songs.<ref>{{cite news|last=Stroh|first=Michael|title=Q&A: The story behind Music search|url=http://blogs.windows.com/bloggingwindows/2011/06/08/qa-the-story-behind-music-search/|newspaper=Blogging Windows|date=8 June 2011}}</ref>
+
+On March 30, 2016 Microsoft announced they will create bots based on Bing features in [[Skype]], which Bing Music was one such feature.<ref>{{cite web|url=https://www.engadget.com/2016/03/30/skype-chat-bot-hands-on/|title=Chatting with Skype bots feels like talking to a search engine.|work=[[Engadget]] ([[AOL]])|date=30 March 2016|first=Nicole|last=Lee}}</ref>
+
+== Availability ==
+=== As part of Cortana (where supported) ===
+*Australia
+*Canada
+*France
+*Germany
+*India 
+*Italy
+*Spain
+*United Kingdom
+*United States
+
+=== As part of Bing Mobile ===
+*Argentina
+*Austria
+*Belgium
+*Brazil
+*Denmark
+*Finland
+*Ireland
+*Mexico
+*Netherlands
+*New Zealand
+*Norway
+*Portugal
+*Sweden
+*Switzerland
+<ref>{{cite news|last=Wang|first=Abigail|title=Bing Audio Brings Music Discovery to 14 New Countries|url=https://www.pcmag.com/article2/0,2817,2421397,00.asp|newspaper=PCMag|date=4 July 2013}}</ref>
+
+==See also==
+*[[Gracenote]]'s MusicID-Stream
+*Play by [[Yahoo Music]]
+*[[Shazam (service)|Shazam]]
+* Sony [[TrackID]]
+*[[SoundHound]]
+*[[Groove (Microsoft service)|Groove Music]] (known as [[Zune Software|Zune]] in versions prior to Windows Phone 8, and as [[Xbox Music]] in Windows Phone 8.x)
+
+==References== 
+{{reflist}}
+
+{{Windows Phone|state=expanded}}
+{{Zune|state=collapsed}}
+{{Microsoft|state=collapsed}}
+
+[[Category:Windows Phone]]
+[[Category:Windows Phone software]]
+[[Category:Computer vision software]]
+[[Category:Augmented reality applications]]
+[[Category:Microsoft software]]
+
+
+{{app-stub}}
+{{music-software-stub}}

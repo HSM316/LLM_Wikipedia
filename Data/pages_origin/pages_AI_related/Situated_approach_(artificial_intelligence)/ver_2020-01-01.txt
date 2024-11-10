@@ -1,0 +1,94 @@
+{{more_footnotes|date=October 2012}}
+In [[artificial intelligence]] research, the '''situated approach''' builds agents that are designed to behave effectively successfully in their environment. This requires designing AI "from the bottom-up" by focussing on the basic perceptual and motor skills required to survive. The situated approach gives a much lower priority to abstract reasoning or problem-solving skills.
+
+The approach was originally proposed as an alternative to traditional approaches (that is, approaches popular before 1985 or so).
+After several decades, classical [[AI]] technologies started to face intractable issues (e.g. combinatorial explosion) when confronted with real-world modeling problems. All approaches to address these issues focus on modeling intelligences situated in an environment. They have become known as the situated approach to AI.
+
+==Emergence of a concept==
+
+=== From traditional AI to Nouvelle AI===
+During the late 1980s, the approach now known as '''Nouvelle AI''' (''Nouvelle'' means new in French) was pioneered at the [[MIT Artificial Intelligence Laboratory]] by [[Rodney Brooks]]. As opposed to classical or traditional [[artificial intelligence]], Nouvelle AI purposely avoided the traditional goal of modeling human-level performance, but rather tries to create systems with intelligence at the level of insects, closer to real-world robots. But eventually, at least at [[MIT]] new AI did lead to an attempt for humanoid AI in [[Cog (project)|the Cog Project]].
+
+===From Nouvelle AI to behavior-based and situated AI===
+The conceptual shift introduced by nouvelle AI flourished in the robotics area, given way to '''behavior-based artificial intelligence''' (BBAI), a [[methodology]] for developing [[AI]] based on a modular decomposition of intelligence. It was made famous by [[Rodney Brooks]]: his [[subsumption architecture]] was one of the earliest attempts to describe a mechanism for developing BBAI. It is extremely popular in [[robotics]] and to a lesser extent to implement [[Intelligent agent|intelligent virtual agents]] because it allows the successful creation of real-time dynamic systems that can run in complex environments.  For example, it underlies the intelligence of the [[Sony]], [[Aibo]] and many [[RoboCup]] robot teams.
+
+Realizing that in fact all these approaches were aiming at building not an abstract intelligence, but rather an intelligence '''situated''' in a given environment, they have come to be known as the situated approach. In fact, this approach stems out from early insights of [[Alan Turing]], describing the need to build machines equipped with sense organs to learn directly from the real-world instead of focusing on abstract activities, such as playing chess.{{Relevance inline|This theory certainly has been put forward by philosophers long before Turing. There is no need to compete who formulated a vague idea first.|date=May 2019}}
+
+==Definitions==
+Classically, a software entity is defined as a simulated element, able to act on itself and on its environment, and which has an internal representation of itself and of the outside world. An entity can communicate with other entities, and its behavior is the consequence of its perceptions, its representations, and its interactions with the other entities.
+
+===AI loop===
+Simulating entities in a virtual environment requires simulating the entire process that goes from a perception of the environment, or more generally from a stimulus, to an action on the environment. This process is called the AI loop and technology used to simulate it can be subdivided in two categories. ''Sensorimotor or low-level'' AI deals with either the perception problem (what is perceived?) or the animation problem (how are actions executed?). ''Decisional or high-level'' AI deals with the [[action selection]] problem (what is the most appropriate action in response to a given perception, i.e. what is the most appropriate behavior?).
+
+===Traditional or symbolic AI===
+There are two main approaches in decisional AI. The vast majority of the technologies available on the market, such as [[Automated planning and scheduling|planning algorithms]], [[finite state machines]] (FSA), or [[expert systems]], are based on the '''traditional or symbolic''' AI approach. Its main characteristics are:
+* It is '''top-down''': it subdivides, in a recursive manner, a given problem into a series of sub-problems that are supposedly easier to solve.
+* It is '''knowledge-based''': it relies on a symbolic description of the world, such as a set of rules.
+
+However, the limits of traditional AI, which goal is to build systems that mimic human intelligence, are well-known: inevitably, a [[combinatorial explosion]] of the number of rules occurs due to the complexity of the environment. In fact, it is impossible to predict all the situations that will be encountered by an autonomous entity.
+
+===Situated or behavioral AI===
+In order to address these issues, another approach to decisional AI, also known as '''situated or behavioral''' AI, has been proposed. It does not attempt to model systems that produce deductive reasoning processes, but rather systems that '''behave realistically in their environment'''. The main characteristics of this approach are the following:
+* It is '''bottom-up''': it relies on elementary behaviors, which can be combined to implement more complex behaviors.
+* It is '''behavior-based''': it does not rely on a symbolic description of the environment, but rather on a model of the interactions of the entities with their environment.
+
+The goal of situated AI is to model entities that are autonomous in their environment. This is achieved thanks to both the intrinsic robustness of the control architecture, and its adaptation capabilities to unforeseen situations.
+
+===Situated agents===
+In [[artificial intelligence]] and [[cognitive science]], the term '''situated''' refers to an [[Intelligent agent|agent]] which is [[embedded systems|embedded]] in an environment. The term ''situated'' is commonly used to refer to [[robot]]s, but some researchers argue that [[software]] agents can also be situated if:
+
+* they exist in a [[dynamical system|dynamic]] (rapidly changing) environment, which
+* they can [[wikt:manipulate|manipulate]] or change through their actions, and which
+* they can [[sense]] or [[Perception|perceive]].
+
+Examples might include web-based agents, which can alter data or trigger processes (such as purchases) over the Internet, or virtual-reality bots which inhabit and change virtual worlds, such as [[Second Life]].
+
+Being situated is generally considered to be part of being [[Embodied embedded cognition|embodied]], but it is useful to consider each perspective individually.  The situated perspective emphasizes that intelligent behavior derives from the environment and the agent's [[interaction]]s with it. The nature of these interactions are defined by an agent's embodiment.
+
+==Implementation principles==
+
+=== Modular decomposition===
+The most important attribute of a system driven by situated AI is that the intelligence is controlled by a set of independent semi-[[Wiktionary:autonomy|autonomous]] modules. In the original systems, each module was actually a separate [[peripheral|device]] or was at least conceived of as running on its own [[Process (computing)|processing]] [[thread (computer science)|thread]]. Generally, though, the modules are just [[abstraction]]s. In this respect, situated AI may be seen as a [[software engineering]] approach to AI, perhaps akin to [[object-oriented programming|object oriented design]].
+
+Situated AI is often associated with [[reactive planning]], but the two are not synonymous. Brooks advocated an extreme version of [[cognitive minimalism]] which required initially that the behavior modules were [[finite state machines]] and thus contained no conventional [[memory]] or [[learning]]. This is associated with reactive AI because reactive AI requires reacting to the current state of the world, not to an [[Intelligent agent|agent]]'s memory or preconception of that world. However, learning is obviously key to realistic [[Artificial general intelligence|strong AI]], so this constraint has been relaxed, though not entirely abandoned.
+
+===Action selection mechanism===
+The situated AI community has presented several solutions to modeling decision-making processes, also known as action selection mechanisms. The first attempt to solve this problem goes back to ''subsumption architectures'',<ref>Brooks, R. (1986). A robust layered control system for a mobile robot. IEEE Journal of Robotics and Automation 2(1):14-23.</ref> which were in fact more an implementation technique than an algorithm. However, this attempt paved the way to several others, in particular the ''free-flow hierarchies''<ref>Rosenblatt J. and Payton D (1989). A fine-grained alternative to the subsumption architecture for mobile robot control. In: Proceedings of the IEEE International Conference on Neural Networks 2:317-324.</ref> and ''activation networks''.<ref>Maes P. (1989). How to do the right thing. Technical Report AIM-1180, MIT Artificial Intelligence Laboratory.</ref> A comparison of the structure and performances of these two mechanisms demonstrated the advantage of using ''free-flow hierarchies'' in solving the action selection problem.<ref>Tyrrell T. (1993). Computational mechanisms for action selection. PhD, University of Edinburgh.</ref><ref>Tyrrell T (1993). The use of hierarchies for action selection. Adaptive Behavior 1(4):387-420.</ref> However, ''motor schemas''<ref>Arkin R. Motor schema based navigation for a mobile robot: an approach to programming by behavior. In: Proceedings of the IEEE Conference on Robotics and Automation, pp. 264-271, 1987.</ref> and ''process description languages''<ref>Steels, L. (1993). Building agents with autonomous behavior systems. In: The artificial route to artificial intelligence. Building situated embodied agents. Lawrence Erlbaum Associates, New Haven.</ref> are two other approaches that have been used with success for autonomous robots.
+
+==Notes and references==
+{{Reflist}}
+
+* Arsenio, Artur M. (2004) ''Towards an embodied and situated AI'', In: Proceedings of the International FLAIRS conference, 2004. [http://www.aaai.org/Papers/FLAIRS/2004/Flairs04-124.pdf (online)]
+* ''The Artificial Life Route To Artificial Intelligence: Building Embodied, Situated Agents'', Luc Steels and Rodney Brooks Eds., Lawrence Erlbaum Publishing, 1995. ({{ISBN|978-0805815184}})
+* Rodney A. Brooks ''Cambrian Intelligence'' (MIT Press, 1999) {{ISBN|0-262-52263-2}}; collection of early papers including "Intelligence without representation" and "Intelligence without reason", from 1986 & 1991 respectively.
+* Ronald C. Arkin ''Behavior-Based Robotics'' (MIT Press, 1998) {{ISBN|0-262-01165-4}}
+* Hendriks-Jansen, Horst (1996) ''Catching Ourselves in the Act: Situated Activity, Interactive Emergence, Evolution, and Human Thought''. Cambridge, Mass.: MIT Press.
+
+==See also==
+
+===Related articles===
+* [[Artificial Intelligence]]
+* [[Cognitive science]]
+
+====Traditional AI====
+* [[Decision Tree]]
+* [[Finite State Machine]]
+* [[Expert System]]
+* [[Automated planning and scheduling|Automated Planning and Scheduling]]
+
+====Situated AI====
+* [[Scruffy AI]]
+* [[Reactive planning]]
+
+====Robotics====
+* [[Behavior-based robotics]]
+* [[Situated robotics]]
+
+==External links==
+* Article [http://www.britannica.com/EBchecked/topic/1473950/artificial-intelligence-situated-approach Artificial Intelligence: The situated approach] from the [[Encyclopædia Britannica]]
+* [http://www.cs.brandeis.edu/~pablo/thesis/html/node22.html Nouvelle AI - Definition]
+* [http://j-paine.org/students/practicals/ps/node3.html Reactive planning and nouvelle AI]
+
+{{DEFAULTSORT:Artificial Intelligence, Situated Approach}}
+[[Category:Artificial intelligence]]
+[[Category:Cognitive science]]

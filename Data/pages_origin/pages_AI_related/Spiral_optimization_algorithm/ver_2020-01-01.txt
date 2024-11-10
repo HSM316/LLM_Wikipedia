@@ -1,0 +1,222 @@
+{{Underlinked|date=November 2018}}
+
+[[File:Spiral image 17.jpg|thumb|The spiral shares the global (blue) and intensive (red) behavior]]
+The '''spiral optimization (SPO) algorithm''' is an uncomplicated search concept inspired by spiral phenomena in nature. 
+The first SPO algorithm was proposed for two-dimensional unconstrained optimization<ref name=tamura11a />
+based on two-dimensional spiral models. This was extended to n-dimensional problems by generalizing the two-dimensional spiral model to an n-dimensional spiral model.<ref name=tamura11b />
+There are effective settings for the SPO algorithm: the periodic descent direction setting<ref name=tamura16a />
+and the convergence setting.<ref name=tamura17a />
+
+== Metaphor ==
+The motivation for focusing on [[spiral]] phenomena was due to the insight that the dynamics that generate logarithmic spirals share the diversification and intensification behavior. The diversification behavior can work for a global search (exploration) and the intensification behavior enables an intensive search around a current found good solution (exploitation).
+
+== Algorithm ==
+[[File:spo_movie4.gif|thumb|Spiral Optimization (SPO) algorithm]]
+The SPO algorithm is a multipoint search algorithm that has no objective function gradient, which uses multiple spiral models that can be described as deterministic dynamical systems. As search points follow logarithmic 
+spiral trajectories towards the common center, defined as the current best point, better solutions can be found and the common center can be updated.
+The general SPO algorithm for a minimization problem under the maximum iteration <math>k_{\max}</math> (termination criterion) is as follows:
+
+ 0) Set the number of search points <math>m\geq 2</math> and the maximum iteration number <math>k_{\max}</math>.
+ 1) Place the initial search points <math>x_i (0) \in \mathbb{R}^n~(i=1, \ldots, m)</math> and determine the center <math> x^{\star}(0)= x_{i_\text{b} }(0) </math>, <math>\displaystyle i_\text{b} =\mathop{\text{argmin}}_{i=1,\ldots,m} \{ f(x_{i}(0)) \} </math>,and then set <math> k = 0 </math>.
+ 2) Decide the step rate <math>r(k)</math> by a rule.
+ 3) Update the search points: <math> x_i(k+1) = x^{\star}(k) + r(k) R(\theta) (x_i(k) - x^{\star}(k))\quad(i=1, \ldots, m).</math>
+ 4) Update the center: <math>
+x^{\star}(k+1) =
+\begin{cases}
+x_{i_\text{b}}(k+1) & \big( \text{if } f(x_{i_\text{b}}(k+1)) < f(x^{\star}(k)) \big),\\
+x^{\star}(k) & \big(\text{otherwise} \big),
+\end{cases}
+</math> where <math>\displaystyle i_\text{b} = \mathop{\text{argmin}}_{i=1,\ldots,m} \{ f(x_i (k+1)) \} </math>.
+ 5) Set <math>k := k+1</math>. If <math>k=k_{\max}</math> is satisfied then terminate and output <math>x^{\star}(k)</math>. Otherwise, return to Step 2).
+
+== Setting ==
+The search performance depends on setting the composite rotation matrix <math>R(\theta)</math>, the step rate <math>r(k)</math>, and the initial points <math>x_i(0)~(i=1,\ldots,m)</math>. 
+The following settings are new and effective.
+
+=== Setting 1 (Periodic Descent Direction Setting)<ref name=tamura16a /> ===
+This setting is an effective setting for high dimensional problems under the maximum iteration <math>k_{\max}</math>. The conditions on <math>R(\theta)</math> and <math>x_i(0)~(i=1,\ldots,m)</math> together ensure that the spiral models generate descent directions periodically. The condition of <math>r(k)</math> works to utilize the periodic descent directions under the search termination <math>k_{\max}</math>.
+
+* Set <math>R(\theta)</math> as follows:<math>R(\theta) = \begin{bmatrix}
+0_{n-1}^\top &-1\\
+I_{n-1}& 0_{n-1}\\
+\end{bmatrix}
+</math> where <math>I_{n-1}</math> is the <math>(n-1)\times (n-1)</math> identity matrix and <math>0_{n-1}</math> is the <math>(n-1)\times 1</math> zero vector.
+* Place the initial points <math>x_i(0) \in \mathbb{R}^n</math> <math>(i = 1,\ldots, m)</math> at random to satisfy the following condition:
+<math>
+\min_{i=1,\ldots,m} \{ \max_{j=1,\ldots,m} \bigl \{ \text{rank} \bigl[ d_{j,i}(0)~R(\theta)d_{j,i}(0)~~
+\cdots~~R(\theta)^{2n-1}d_{j,i}(0) \bigr]\bigr\} \bigr\} = n 
+</math>
+where <math>d_{j,i}(0) = x_{j}(0) - x_i(0)</math>. Note that this condition is almost all satisfied by a random placing and thus no check is actually fine.
+* Set <math>r(k)</math> at Step 2) as follows:<math>r(k) = r = \sqrt[ k_{\max} ]{\delta }~~~~\text{(constant value)}</math> where a sufficiently small <math>\delta > 0</math> such as <math>\delta = 1/k_{\max}</math> or <math>\delta = 10^{-3}</math>.
+
+=== Setting 2 (Convergence Setting)<ref name=tamura17a /> ===
+This setting ensures that the SPO algorithm converges to a stationary point under the maximum iteration <math>k_{\max} = \infty</math>. The settings of <math>R(\theta)</math> and the initial points <math>x_i(0)~(i=1,\ldots,m)</math> are the same with the above Setting 1. The setting of <math>r(k)</math> is as follows.
+* Set <math>r(k)</math> at Step 2) as follows:<math>r(k) =
+\begin{cases}
+1 & (k^\star \leqq k \leqq  k^\star + 2n-1), \\
+h & (k \geqq k^\star + 2n),
+\end{cases}
+</math> where <math>k^\star</math> is an iteration when the center is newly updated at Step 4) and <math>h = \sqrt[ 2n ]{\delta }, \delta \in (0,1)</math> such as <math>\delta = 0.5</math>. Thus we have to add the following rules about <math>k^\star</math> to the Algorithm:  
+:•(Step 1) <math>k^\star = 0</math>.
+:•(Step 4) If <math>x^{\star}(k+1)\neq x^{\star}(k)</math> then <math>k^\star = k+1</math>.
+
+== Future works ==
+* The algorithms with the above settings are deterministic. Thus, incorporating some random operations make this algorithm powerful for [[global optimization]]. Cruz-Duarte et al.<ref>Cruz-Duarte, J. M., Martin-Diaz, I., Munoz-Minjares, J. U., Sanchez-Galindo, L. A., Avina-Cervantes, J. G., Garcia-Perez, A., & Correa-Cely, C. R. (2017). Primary study on the stochastic spiral optimization algorithm. 2017 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC), 1–6. https://doi.org/10.1109/ROPEC.2017.8261609 </ref> demonstrated it by including stochastic disturbances in spiral searching trajectories. However, this door remains open to further studies.
+* To find an appropriate balance between diversification and intensification spirals depending on the target problem class (including <math>k_{\max}</math>) is important to enhance the performance.
+
+== Extended works ==
+Many extended studies have been conducted on the SPO due to its simple structure and concept; these studies have helped improve its global search performance and proposed novel applications.<ref name=nasir15a /><ref name=nasir16a /><ref name=ouadi13a /><ref name=benasla14a /><ref name=sidarto15a /><ref name=KavehMahjoubi />
+
+== References ==
+{{Reflist|refs=
+
+<ref name=KavehMahjoubi >
+{{cite journal |last1=Kaveh |first1=A. |last2=Mahjoubi |first2=S. |title=Hypotrochoid spiral optimization approach for sizing and layout optimization of truss structures with multiple frequency constraints |journal=Engineering with Computers |date=October 2019 |volume=35 |issue=4 |pages=1443–1462 |doi= 10.1007/s00366-018-0675-6}}</ref>== References ==
+
+
+<ref name=tamura11a>
+{{cite journal
+| last1 = Tamura | first1 = K. 
+| last2 = Yasuda | first2 = K.
+| title = Primary Study of Spiral Dynamics Inspired Optimization 
+| journal = IEEJ Transactions on Electrical and Electronic Engineering 
+| year=2011
+| volume=6
+| issue=S1
+| pages=98–100
+| doi=10.1002/tee.20628
+| url=
+}}
+</ref>
+
+<ref name=tamura11b>
+{{cite journal 
+| last1 = Tamura | first1 = K. 
+| last2 = Yasuda | first2 = K.
+| title = Spiral Dynamics Inspired Optimization 
+| journal = Journal of Advanced Computational Intelligence and Intelligent Informatics
+| year = 2011
+| volume = 132 
+| issue = 5
+| pages = 1116–1121
+| doi=10.20965/jaciii.2011.p1116
+| url=
+}}
+</ref>
+
+<ref name=tamura16a>
+{{cite journal 
+| last1 = Tamura | first1 = K. 
+| last2 = Yasuda | first2 = K.
+| title = Spiral Optimization Algorithm Using Periodic Descent Directions 
+| journal = SICE Journal of Control, Measurement, and System Integration 
+| year = 2016 
+| volume = 6 
+| issue = 3
+| pages = 133–143 
+| doi=10.9746/jcmsi.9.134
+| url=https://www.jstage.jst.go.jp/article/jcmsi/9/3/9_134/_pdf
+}}
+</ref>
+
+<ref name=tamura17a>
+{{cite journal 
+| last1 = Tamura | first1 = K. 
+| last2 = Yasuda | first2 = K.
+| title = The Spiral Optimization Algorithm: Convergence Conditions and Settings 
+| journal = IEEE Transactions on Systems, Man, and Cybernetics: Systems
+| year = 2017 
+| volume = PP 
+| issue = 99
+| pages = 1–16 
+| doi = 10.1109/TSMC.2017.2695577
+| url = 
+}}
+</ref>
+
+<ref name=nasir15a>
+{{cite journal 
+| last1 = Nasir 
+| first1 = A. N. K.  
+| last2 = Tokhi | first2 = M. O.
+| title = An improved spiral dynamic optimization algorithm with engineering application 
+| journal = IEEE Trans. Syst.,Man, Cybern., Syst. 
+| year = 2015 
+| volume = 45 
+| issue = 6
+| pages = 943–954
+| doi=10.1109/tsmc.2014.2383995
+| url=
+}}
+</ref>
+
+<ref name=nasir16a>
+{{cite journal 
+| last1 = Nasir | first1 = A. N. K. 
+| last2 = Ismail | first2 = R.M.T.R. 
+| last3 = Tokhi | first3 = M. O.
+| title = Adaptive spiral dynamics metaheuristic algorithm for global optimisation with application to modelling of a flexible system| journal = Appl. Math. Modell. 
+| year = 2016 
+| volume = 40 
+| issue = 9–10
+| pages = 5442–5461
+| doi=10.1016/j.apm.2016.01.002
+| url=http://umpir.ump.edu.my/id/eprint/16770/7/Adaptive%20Spiral%20Dynamics%20Metaheuristic%20Algorithm%20For%20Global%20Optimisation%20With%20Application%20To%20Modelling%20Of%20A%20Flexible%20System.pdf
+}}
+</ref>
+
+<ref name=ouadi13a>
+{{cite journal 
+| last1 = Ouadi | first1 = A. 
+| last2 = Bentarzi | first2 = H. 
+| last3 = Recioui | first3 = A.
+| title = multiobjective design of digital filters using spiral optimization technique
+| journal = SpringerPlus 
+| year = 2013 
+| volume = 2 
+| issue = 461
+| pages = 697–707
+| doi=10.1186/2193-1801-2-461
+| pmid = 24083108 
+| pmc = 3786071 
+| url=
+}}
+</ref>
+
+<ref name=benasla14a>
+{{cite journal 
+| last1 = Benasla | first1 = L. 
+| last2 = Belmadani | first2 = A. 
+| last3 = Rahli | first3 = M.
+| title = Spiral optimization algorithm for solving combined economic and Emission Dispatch
+| journal = Int. J. Elect. Power & Energy Syst. 
+| year = 2014 
+| volume = 62
+| pages = 163–174
+| doi=10.1016/j.ijepes.2014.04.037
+| url=
+}}
+</ref>
+
+<ref name=sidarto15a>
+{{cite journal 
+| last1 = Sidarto | first1 = K. A. 
+| last2 = Kania | first2 = A. 
+| title = Finding all solutions of systems of nonlinear equations using spiral dynamics inspired optimization with clustering
+| journal = JACIII 
+| volume = 19
+| issue = 5
+| pages = 697–707
+| doi=10.20965/jaciii.2015.p0697
+| url=
+| year = 2015 
+}}
+</ref>
+
+}}
+
+[[Category:Nature-inspired metaheuristics| ]]
+[[Category:Collective intelligence]]
+[[Category:Multi-agent systems]]
+[[Category:Evolutionary algorithms]]
+[[Category:Optimization algorithms and methods]]

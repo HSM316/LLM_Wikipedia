@@ -1,0 +1,24 @@
+'''IEEE STANDARD 1855-2016''', IEEE Standard for Fuzzy Markup Language (FML), is a [[technical standard]] developed by the [[IEEE Standards Association]].<ref>Giovanni Acampora, Bruno N. Di Stefano, Autilia Vitiello: IEEE 1855TM: The First IEEE Standard Sponsored by IEEE Computational Intelligence Society [Society Briefs]. IEEE Comp.Int. Mag. 11(4): 4-6 (2016)</ref> FML allows modelling a [[fuzzy logic]] system in a human-readable and hardware independent way. FML is based on eXtensible Markup Language ([[XML]]). The designers of [[fuzzy systems]] with FML have a unified and high-level methodology for describing interoperable fuzzy systems. IEEE STANDARD 1855-2016 uses the [[W3C]] [[XML Schema]] definition language to define the syntax and semantics of the FML programs.
+
+Prior to the introduction of FML, fuzzy logic practitioners could exchange information about their fuzzy algorithms by  adding to their software functions the ability to read, correctly parse, and store the results of their work in a  form compatible with the [[Fuzzy Control Language]] (FCL) described and specified by Part 7 of [[IEC 61131]].<ref name="Di Stefano2013">{{cite journal|year=2013|title=On the Need of a Standard Language for Designing Fuzzy Systems|volume=296|pages=3–15|doi=10.1007/978-3-642-35488-5_1|issn=1434-9922|last1=Di Stefano|first1=Bruno N.}}</ref><ref name="AcamporaLoia2013">{{cite journal|last2=Loia|first2=Vincenzo|last3=Lee|first3=Chang-Shing|last4=Wang|first4=Mei-Hui|year=2013|title=On the Power of Fuzzy Markup Language|volume=296|doi=10.1007/978-3-642-35488-5|issn=1434-9922|last1=Acampora|first1=Giovanni}}</ref>
+
+FML lets people code [[fuzzy systems]] through a collection of correlated semantic tags that model the components of a classical [[fuzzy controller]]—such as [[knowledge base]], [[rule base]], fuzzy variables and fuzzy rules. Therefore, the FML tags used to build a fuzzy controller represent the set of lexemes used to create fuzzy expressions. To design a well-formed XML-based language, an  a XML schema describes an FML context-free grammar that defines name, type, and attributes that characterized each XML element. However, since an FML program represents only a static view of a fuzzy logic controller, the so-called eXtensible Stylesheet Language Translator ([[XSLT]]) changes this static view to a computable version. Indeed, XSLTs modules can convert the FML-based fuzzy controller in a general purpose computer language using an [[XSL]] file containing the translation description. At this level, the control is executable for the hardware. In short, FML is essentially composed by three layers:
+
+* XML to create a new markup language for fuzzy logic control
+
+* An XML schema to define the legal building blocks
+
+* eXtensible Stylesheet Language Transformations ([[XSLT]]) to convert a fuzzy controller description into a specific language
+
+IEEE 1855 was the first standard sponsored by the [[IEEE Computational Intelligence Society]].
+
+== References ==
+<references />
+
+==External links==
+*{{Official website | https://standards.ieee.org/findstds/standard/1855-2016.html}} (https://standards.ieee.org/findstds/standard/1855-2016.html)
+
+
+[[Category:IEEE standards]]
+[[Category:Domain-specific programming languages]]
+[[Category:Fuzzy logic]]

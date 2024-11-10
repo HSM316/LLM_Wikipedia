@@ -1,0 +1,43 @@
+{{Cleanup-PR|article|date=December 2021}}
+
+{{Infobox company
+| name = Daon, Inc.
+| type = [[Private company|Private]]
+| foundation = [[Dublin, Ireland]], (1999)
+| location_city = [[Fairfax, Virginia]]
+| location_country = U.S.
+| industry = [[Software]] & [[Biometrics]]
+| products = IdentityX<br />VeriFLY<br />DaonEngine
+| homepage = {{URL|http://www.daon.com/}}
+| logo = 
+}}
+
+'''Daon''' (pronounced day-on) is an international [[biometrics]] and identity assurance software company founded in 1999 by Irish entrepreneur [[Dermot Desmond]]. The name, Daon, was chosen because it stems from the Celtic word for human being, {{lang|ga|duine daonna}}.<ref>http://www.irishdictionary.ie/dictionary?language=irish&word=daonna {{bare URL inline|date=March 2022}}</ref> Daon is headquartered just miles outside of Washington, DC in Fairfax, VA. Daon also has major operations in [[Dublin]], located in the [[International Financial Services Center]] (IFSC). It has an additional office in Canberra, Australia.
+
+== History ==
+In 2006, Daon and the [[American Association of Airport Executives]] (AAAE) entered into a joint venture to create the Security Biometric Clearing Network (SBCN) to provide services for biometric identity management, including enrollment, background checking, secure biometric and biographic information storage, and card issuance.{{Citation needed|date=June 2020}}
+
+In August 2008 Daon acquired software assets and associated personnel for physical security interconnectivity from Enterprise Air, a New York-based provider of solutions for the physical security market.<ref>{{cite web|date=2008-08-21|title=Daon Acquires Physical Security Interconnect (PSI) Offering from Enterprise Air|url=http://findbiometrics.com/daon-acquires-physical-security-interconnect-psi-offering-from-enterprise-air/|url-status=dead|work=Daon Press Release|accessdate=2008-10-08|archiveurl=https://web.archive.org/web/20131219023631/http://findbiometrics.com/daon-acquires-physical-security-interconnect-psi-offering-from-enterprise-air/|archivedate=2013-12-19}}</ref>
+
+In July 2019, Daon announced the launch of its IdentityX Digital Onboarding 2.0, which sets a new industry standard for all-digital customer onboarding.<ref>{{Cite web|date=2019-07-23|title=Daon Launches Next-Generation Digital Onboarding|url=https://www.businesswire.com/news/home/20190723005092/en/Daon-Launches-Next-Generation-Digital-Onboarding|access-date=2020-02-06|website=www.businesswire.com|language=en}}</ref>
+
+== Overview ==
+Daon's products include IdentityX (their flagship biometric mobile authentication platform), DaonEngine, DaonEnroll, DaonAnalytics, and Credential Connect.{{Citation needed|date=December 2021}} Daon’s biometric products integrate with preexisting IT platforms and applications to manage identity life-cycles. Daon serves multiple markets including mobile authentication, border management, civil ID, traveler ID, employee credentialing, and [[access control]]. Their software is used worldwide at airports and international borders<ref>{{cite web |url=http://www.accenture.com/Global/Services/Alliances/Daon.htm |title=Daon |website=www.accenture.com |url-status=dead |archive-url=https://web.archive.org/web/20060212062046/http://www.accenture.com/Global/Services/Alliances/Daon.htm |archive-date=2006-02-12}}</ref> and supports U.S. [[Registered Traveler]] airports.<ref>{{cite web |url=http://findbiometrics.com/interview-with-tom-grissen-ceo-daon-inc/ |title=Interview with Tom Grissen, CEO, Daon Inc. {{!}} findBIOMETRICS |website=findbiometrics.com |url-status=dead |archive-url=https://web.archive.org/web/20131219021916/http://findbiometrics.com/interview-with-tom-grissen-ceo-daon-inc/ |archive-date=2013-12-19}}</ref>
+
+=== IdentityX ===
+IdentityX is a platform that allows users to authenticate themselves on any mobile device using biometrics instead of a password. IdentityX uses facial recognition, voice recognition, fingerprint, and more to prove a user is who they claim to be. In 2015, IdentityX was one of the first products to be certified by the FIDO alliance,<ref>{{Cite web|url=https://fidoalliance.org/certification/fido-certified/|title=FIDO® Certified}}</ref> an industry consortium in which PayPal and Lenovo are among the founders. Also in 2015, Daon’s IdentityX won NACUSO’s Next Big Idea competition<ref>{{Cite web|url=https://www.nacuso.org/2015/04/28/identityx-wins-nacusos-next-big-idea-competition/|title = IdentityX Wins NACUSO's Next Big Idea Competition - NACUSO}}</ref> as well as the Best in Show award from the CUNA Technology Council.<ref>{{Cite web |url=http://www.cuna.org/Stay-Informed/Press-Room/Press-Releases/2015-Press-Releases/CUNA-Technology-Council-Announces-Daon-as-2015-Best-in-Show-Award-winner/ |title=CUNA: CUNA Technology Council Announces Daon as 2015 Best in Show Award winner |access-date=2015-07-20 |archive-url=https://web.archive.org/web/20150923211936/http://www.cuna.org/Stay-Informed/Press-Room/Press-Releases/2015-Press-Releases/CUNA-Technology-Council-Announces-Daon-as-2015-Best-in-Show-Award-winner/ |archive-date=2015-09-23 |url-status=dead}}</ref>
+
+== See also ==
+* [[Dermot Desmond]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://daon.com/ Company Website]
+
+[[Category:Biometrics software]]
+[[Category:Software companies established in 1999]]
+[[Category:Companies based in Fairfax, Virginia]]
+[[Category:Software companies of the United States]]
+[[Category:1999 establishments in Ireland]]

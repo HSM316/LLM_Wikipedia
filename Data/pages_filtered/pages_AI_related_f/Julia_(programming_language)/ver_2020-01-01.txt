@@ -1,0 +1,103 @@
+Julia is a high-level, high-performance, dynamic programming language. While it is a general purpose language and can be used to write any application, many of its features are well-suited for high-performance numerical analysis and computational science.
+
+Distinctive aspects of Julia's design include a type system with parametric polymorphism in a dynamic programming language; with multiple dispatch as its core programming paradigm. Julia supports concurrent, (composable) parallel and distributed computing (with or without using MPI and/or the built-in corresponding to "OpenMP-style" threads), and direct calling of C and Fortran libraries without glue code. A just-in-time compiler that is referred to as "just-ahead-of-time" in the Julia community is used.
+
+Julia is garbage-collected, uses eager evaluation, and includes efficient libraries for floating-point calculations, linear algebra, random number generation, and regular expression matching. Many libraries are available, including some (e.g., for fast Fourier transforms) that were previously bundled with Julia and are now separate.now available with using FFTW in current versions (That dependency, is one of many which, was moved out of the standard library to a package because it is GPL licensed, and thus is not included in Julia 1.0 by default.) 
+
+Tools available for Julia include IDEs; with integrated tools, e.g. a linter, profiler (and flame graph support available for the built-in one), debugger, and the Rebugger.jl package "supports repeated-execution debugging" and more.
+
+History
+Work on Julia was started in 2009, by Jeff Bezanson, Stefan Karpinski, Viral B. Shah, and Alan Edelman, who set out to create a free language that was both high-level and fast. On 14 February 2012 the team launched a website with a blog post explaining the language's mission.  In an interview with InfoWorld in April 2012, Karpinski said of the name "Julia": "There's no good reason, really. It just seemed like a pretty name."Stefan Karpinski, New Julia language seeks to be the C for scientists, InfoWorld, 18 April 2012 Bezanson said he chose the name on the recommendation of a friend.
+
+Since the 2012 launch, the Julia community has grown, with over 12,000,000 downloads  (and is used at more than 1,500 universities),  The Official Julia Docker images, at Docker Hub, have seen over 4,000,000 downloads as of January 2019.https://hub.docker.com/_/julia The JuliaCon academic conference for Julia users and developers has been held annually since 2014.
+
+Version 0.3 was released in August 2014, version 0.4 in October 2015, version 0.5 in October 2016,The Julia Blog and version 0.6 in June 2017.https://julialang.org/blog/2017/06/julia-0.6-release  Both Julia 0.7 (a useful release for testing packages, and for knowing how to upgrade them for 1.0) and version 1.0 were released on 8 August 2018. Work on Julia 0.7 was a "huge undertaking" (e.g., because of "entirely new optimizer"), and some changes were made to semantics, e.g. the iteration interface was simplified; and the syntax changed a little (with the syntax now stable, and same for 1.x and 0.7).
+
+The release candidate for Julia 1.0 (Julia 1.0.0-rc1) was released on 7 August 2018, and the final version a day later (and by now, Julia 1.0.x are the oldest versions still supported, having long-term support; for at least a year). Julia 1.1 was released in January 2019 with, e.g., a new "exception stack" language feature. Bugfix releases are expected roughly monthly, for 1.3.x and 1.0.x and Julia 1.0.1, up to 1.0.5 have followed that schedule. Julia 1.2 was released in August 2019, and it has e.g. some built-in support for web browsers (for testing if running in JavaScript VM), and Julia 1.3 in November 2019 (and with it Julia 1.2.x, in addition to Julia 1.1.x, releases are no longer maintained), adding e.g. composable multi-threaded parallelism and a binaray artifacts system for Julia packages. JuliaPro version 1.2.0-1 is also out.
+
+Most packages that work in Julia 1.0.x also work in 1.1.x or newer, enabled by the forward compatible syntax guarantee. A major exception was, for interacting with non-Julia code, the JavaCall.jl package (however calling other languages, e.g. R language works, with the package for R fixed) to call Java, Scala etc. This was fixed by Java 11, or alternatively to use those languages with Julia (on older JVM), for e.g. JDBC.jl or Apache Spark (through Spark.jl), users could choose to stay with the LTS version of Julia.   Julia 1.4 had a milestone set for 15 December 2019 and for Julia 1.5 the due date is 15 April 2020. Milestones for Julia 2.0 (and later, e.g. 3.0) currently have no set due dates.
+
+Notable uses
+Julia has attracted some high-profile users, from investment manager BlackRock, which uses it for time-series analytics, to the British insurer Aviva, which uses it for risk calculations. In 2015, the Federal Reserve Bank of New York used Julia to make models of the US economy, noting that the language made model estimation "about 10 times faster" than its previous MATLAB implementation. Julia's co-founders established Julia Computing in 2015 to provide paid support, training, and consulting services to clients, though Julia itself remains free to use. At the 2017 JuliaCon conference, Jeffrey Regier, Keno Fischer and others announced that the Celeste project used Julia to achieve "peak performance of 1.54 petaFLOPS using 1.3 million threads" on 9300  Knights Landing (KNL) nodes of the Cori II (Cray XC40) supercomputer (then 6th fastest computer in the world). Julia thus joins C, C++, and Fortran as high-level languages in which petaFLOPS computations have been achieved.
+
+Three of the Julia co-creators are the recipients of the 2019 James H. Wilkinson Prize for Numerical Software (awarded every four years) "for the creation of Julia, an innovative environment for the creation of high-performance tools that enable the analysis and solution of computational science problems."  Also, Alan Edelman, professor of applied mathematics at MIT, has been selected to receive the 2019 IEEE Computer Society Sidney Fernbach Award "for outstanding breakthroughs in high-performance computing, linear algebra, and computational science and for contributions to the Julia programming language."
+
+Julia Computing and NVIDIA announce "the availability of the Julia programming language as a pre-packaged container on the NVIDIA GPU Cloud (NGC) container registry" with NVIDIA stating "Easily Deploy Julia on x86 and Arm [..] Julia offers a package for a comprehensive HPC ecosystem covering machine learning, data science, various scientific domains and visualization."
+
+Additionally, "Julia was selected by the Climate Modeling Alliance as the sole implementation language for their next generation global climate model. This multi-million dollar project aims to build an earth-scale climate model providing insight into the effects and challenges of climate change."
+
+Sponsors
+Julia has received contributions from over 870 developers worldwide. Dr. Jeremy Kepner at MIT Lincoln Laboratory was the founding sponsor of the Julia project in its early days. In addition, funds from the Gordon and Betty Moore Foundation, the Alfred P. Sloan Foundation, Intel, and agencies such as NSF, DARPA, NIH, NASA, and FAA have been essential to the development of Julia. In addition Mozilla, the maker of Firefox web browser, with its research grants for H1 2019, sponsored "a member of the official Julia team" for the project "Bringing Julia to the Browser", meaning to Firefox  and other web browsers.
+
+Julia Computing
+Julia Computing, Inc. was founded in 2015 by Viral B. Shah, Deepak Vinchhi, Alan Edelman, Jeff Bezanson, Stefan Karpinski and Keno Fischer.
+
+In June 2017, Julia Computing raised $4.6M in seed funding from General Catalyst and Founder Collective.https://juliacomputing.com/communication/2017/06/19/seed-funding.html
+
+Language features
+Though designed for numerical computing, Julia is a general-purpose programming language.
+It is also useful for low-level systems programming, as a specification language, and for web programming at both server and client side.
+
+According to the official website, the main features of the language are:
+
+ Multiple dispatch: providing ability to define function behavior across many combinations of argument types
+ Dynamic type system: types for documentation, optimization, and dispatch
+ Good performance, approaching that of statically-typed languages like C
+ A built-in package manager
+ Lisp-like macros and other metaprogramming facilities
+ Call Python functions: use the PyCall package
+ Call C functions directly: no wrappers or special APIs
+ Powerful shell-like abilities to manage other processes
+ Designed for parallel and distributed computing
+ Coroutines: lightweight green threading
+ User-defined types are as fast and compact as built-ins
+ Automatic generation of efficient, specialized code for different argument types
+ Elegant and extensible conversions and promotions for numeric and other types
+ Efficient support for Unicode, including but not limited to UTF-8
+
+Multiple dispatch (also termed multimethods in Lisp) is a generalization of single dispatch the polymorphic mechanism used in common object-oriented programming (OOP) languages that uses inheritance. In Julia, all concrete types are subtypes of abstract types, directly or indirectly subtypes of the Any type, which is the top of the type hierarchy. Concrete types can not themselves be subtyped the way they can in other languages; composition is used instead (see also inheritance vs subtyping).
+
+Julia draws significant inspiration from various dialects of Lisp, including Scheme and Common Lisp, and it shares many features with Dylan, also a multiple-dispatch-oriented dynamic language (which features an ALGOL-like free-form infix syntax rather than a Lisp-like prefix syntax, while in Julia "everything" is an expression), and with Fortress, another numerical programming language (which features multiple dispatch and a sophisticated parametric type system). While Common Lisp Object System (CLOS) adds multiple dispatch to Common Lisp, not all functions are generic functions.
+
+In Julia, Dylan, and Fortress extensibility is the default, and the system's built-in functions are all generic and extensible. In Dylan, multiple dispatch is as fundamental as it is in Julia: all user-defined functions and even basic built-in operations like + are generic. Dylan's type system, however, does not fully support parametric types, which are more typical of the ML lineage of languages. By default, CLOS does not allow for dispatch on Common Lisp's parametric types; such extended dispatch semantics can only be added as an extension through the CLOS Metaobject Protocol. By convergent design, Fortress also features multiple dispatch on parametric types; unlike Julia, however, Fortress is statically rather than dynamically typed, with separate compiling and executing phases. The language features are summarized in the following table:
+
+ Language  Type system  Generic functions  Parametric types Julia  Dynamic  Default  Yes Common Lisp  Dynamic  Opt-in  Yes (but no dispatch) Dylan  Dynamic  Default  Partial (no dispatch) Fortress  Static  Default  Yes
+
+By default, the Julia runtime must be pre-installed as user-provided source code is run. Alternatively, a standalone executable that needs no Julia source code can be built with ApplicationBuilder.jl and PackageCompiler.jl.
+
+Julia's syntactic macros (used for metaprogramming), like Lisp macros, are more powerful than text-substitution macros used in the preprocessor of some other languages such as C, because they work at the level of abstract syntax trees (ASTs). Julia's macro system is hygienic, but also supports deliberate capture when desired (like for anaphoric macros) using the esc construct.
+
+Interaction
+The Julia official distribution includes a "full-featured interactive command-line REPL" (read–eval–print loop), with a searchable history, tab-completion, many helpful keybindings, and dedicated help and shell modes; which can be used to experiment and test code quickly. The following fragment represents a sample session example where strings are concatenated automatically by println:See also: https://docs.julialang.org/en/v1/manual/strings/ for string interpolation and the string(greet, ", ", whom, ".\n") example for preferred ways to concatenate strings.  Julia has the println and print functions, but also a @printf macro (i.e., not in function form) to eliminate run-time overhead of formatting (unlike the same function in C).
+
+julia> p(x) = 2x^2 + 1; f(x, y) = 1 + 2p(x)y
+julia> println("Hello world!", " I'm on cloud ", f(0, 4), " as Julia supports recognizable syntax!")
+Hello world! I'm on cloud 9 as Julia supports recognizable syntax!
+
+The REPL gives user access to the system shell and to help mode, by pressing ; or ? after the prompt (preceding each command), respectively. It also keeps the history of commands, including between sessions. Code that can be tested inside the Julia's interactive section or saved into a file with a .jl extension and run from the command line by typing:
+
+ $ julia <filename>
+
+Julia is supported by Jupyter, an online interactive "notebooks" environment.
+
+Use with other languages
+Julia is in practice interoperable with many languages. Julia's ccall keyword is used to call C-exported or Fortran shared library functions individually.
+
+Julia has support for the current Unicode 12.1 (which adds only one letter since Unicode 12.0), with UTF-8 used for strings (by default) and for Julia source code, meaning also allowing as an option common math symbols for many operators, such as ∈ for the in operator.
+
+Julia has packages supporting markup languages such as HTML (and also for HTTP), XML, JSON and BSON, and for databases and web use in general.
+
+Implementation
+Julia's core is implemented in Julia and C, together with C++ for the LLVM dependency. The parsing and code-lowering are implemented in FemtoLisp, a Scheme dialect. The LLVM compiler infrastructure project is used as the back end for generation of 64-bit or 32-bit optimized machine code depending on the platform Julia runs on. With some exceptions (e.g., PCRE), the standard library is implemented in Julia itself. The most notable aspect of Julia's implementation is its speed, which is often within a factor of two relative to fully optimized C code (and thus often an order of magnitude faster than Python or R). Development of Julia began in 2009 and an open-source version was publicized in February 2012.
+
+Current and future platforms
+While Julia uses JIT, Julia generates native machine code directly, before a function is first run (not bytecodes that are run on a virtual machine (VM) or translated as the bytecode is running, as with, e.g., Java; the JVM or Dalvik in Android).
+
+Julia has four support tiers, and currently supports all x86-64 processors, that are 64-bit (and is more optimized for the latest generations) and all IA-32 ("x86") processors except for decades old ones, i.e., in 32-bit mode ("i686", excepting CPUs from the pre-Pentium 4-era); and supports more in lower tiers, e.g., ARM has tier 2 support: Julia "fully supports ARMv8 (AArch64) processors, and supports ARMv7 and ARMv6 (AArch32) with some caveats." CUDA (i.e. Nvidia GPUs; implementing PTX) has tier 1 support, with the help of an external package. There are also additionally packages supporting other accelerators, such as Google's TPUs, and AMD's GPUs also have support with e.g. OpenCL. Julia's downloads page provides executables (and source) for all the officially supported platforms.
+
+On some platforms, Julia may need to be compiled from source code (e.g., the original Raspberry Pi), with specific build options. Julia has been "successfully built" 
+on several ARM platforms, up to, e.g., "ARMv8 Data Center & Cloud Processors", such as Cavium ThunderX (first ARM with 48 cores). PowerPC (64-bit) has tier 3 support meaning "may or may not build".
+
+Julia is now supported in Raspbian while support is better for newer Pis, e.g. those with ARMv7 or newer; the Julia support is promoted by the Raspberry Pi Foundation. There's also support for web browsers/JavaScript through JSExpr.jl; and the alternative language of web browsers, WebAssembly, has support through minimal support in Julia itself, that supports several upcoming external Julia projects.
+
+Julia can compile to ARM; thus in theory Android apps can be made, but for now only Julia itself (and most packages) has been made to run under Android indirectly, i.e. in Ubuntu on Android.

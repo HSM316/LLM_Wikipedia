@@ -1,0 +1,101 @@
+The '''Information Coding Classification''' ('''ICC''') is a [[classification system]] covering almost all extant 6500 knowledge fields ([[knowledge domain]]s). Its [[conceptualization]] goes beyond the scope of the well known  library classification systems, such as [[Dewey Decimal Classification]] (DCC), [[Universal Decimal Classification]] (UDC), and [[Library of Congress Classification]] (LCC), by extending also to [[knowledge system]]s that so far have not afforded to  classify  [[literature]].  ICC actually presents a flexible universal ordering system for both literature and other kinds of [[information]], set out as knowledge fields. From a methodological point of view, ICC differs from the above-mentioned systems along the following three lines:
+# Its main classes are not based on [[discipline]]s but on nine live stages of development, so-called [[ontic]]al levels.
+# It breaks them roughly down into hierarchical steps by further nine [[Categorization|categories]] which makes decimal number coding possible.
+# The contents of a knowledge field is earmarked via a digital position scheme, which makes the first hierarchical step refer to the nine ontical levels  (object areas as subject categories), and the second hierarchical step refer to nine functionally ordered form categories.
+Respective knowledge fields permit to step down by the same principle to a third and  forth level, and even further to a fifth and sixth level. Finally, knowledge field subdivisions will have to conform to said digital position scheme.
+Hence, for a given knowledge field identical codes will mark identical categories under respective numbers of the coding system. This  [[mnemotechnics|mnemotechnical]]  aspect of the  system helps memorizing and straightaway retrieving the whereabouts of respective [[interdisciplinary]] and [[transdisciplinary]] fields.
+
+The first two hierarchical levels may be regarded as a top- or [[upper ontology]] for ontologies and other applications.
+
+The terms of the first three hierarchical levels were set out in German and English in ''Wissensorganisation. Entwicklung, Aufgabe, Anwendung, Zukunft'',<ref name="WEAAZ2014">{{citation|surname1=[[Ingetraut Dahlberg]]|editor-surname1=Deutsche Sektion der Internationalen Gesellschaft für Wissensorganisation e.V. (ISKO)|periodical=Textbooks for Knowledge Organization|title=Wissensorganisation. Entwicklung, Aufgabe, Anwendung, Zukunft |volume=Vol.3|publisher=Ergon Verlag|location=Würzburg|pages=1–175|isbn=978-3-95650-065-7|date=  2014|language=German}}</ref> on pp.&nbsp;82 to 100. It was published in 2014 and available so far only in German. In the meantime, also the French terms of the knowledge fields have been collected.
+Competence for maintenance and further development rests with the German Chapter of the  
+[[International Society for Knowledge Organization]] (ISKO) e.V.
+
+== Historical development ==
+At the end of 1970, Prof. Alwin Diemer, Univ.of Düsseldorf proposed to [[Ingetraut Dahlberg]] to undertake a philosophical [[dissertation]] on ''The universal classification system of knowledge, its ontological, epistemological, and information theoretical foundations''. Diemer had in mind an innovating ontological approach for such a system based on the whole spectrum of kinds of being and complying with [[epistemological]] requirements. The third requirement had already been taken up somehow in the Indian [[Colon Classification]], yet it still called for explanations and additions. In 1974, the dissertation was published in German entitled ''Grundlagen universaler Wissensordnung''.<ref name="GuWo">{{citation|surname1=Ingetraut Dahlberg|editor-surname1=Deutsche Gesellschaft für Dokumentation e.V.|title=Grundlagen universaler Wissensordnung. Probleme und Möglichkeiten eines universalen Klassifikationssystems des Wissens. : im Antiquariat noch erhältlich sonst als Print on Demand bei deGruyter|publisher=Verlag Dokumentation|location=Pullach bei München|isbn=978-3111412672|date=  1974|language=German}}</ref> It started with conceptual clarifications, and why and how the term „universal“ was linked to knowledge, including knowledge fields, such as commodity science, artefacts,  statistics, patents, standardization, communication, utility services et al. In chapter 3, six universal classification systems (DDC, UDC, LCC, BC, CC and BBK) were presented,  analyzed and compared.
+
+While preparing the dissertation, Dahlberg started with elaborating the new universal system by first gleaning a lot of extant designations of knowledge fields from whatever available reference works. This was funded by the German Documentation Society (DGD) (1971-2) under the title of ''Order system of knowledge fields''. In addition, the [[syllabus]]es of German universities and polytechniques were explored for relevant terms and documented (1975).  Thereafter, it seemed necessary to add definitions from special dictionaries and encyclopediae; it soon appeared that the 12.500 terms included numerous synonyms, so that the whole collection boiled down to about 6.500 concept designations (Project Logstruktur, supported by the German Science Foundation (DFG) 1976-78).
+
+The outcome of this work <ref name="GuWo" /> was the formulation of 30 theses which ended up in 12 principles for the new system, published 40 years later under.<ref name="WEAAZ2014" /> These principles refer not only to theoretical foundations but also to structure and other organizational aspects of the whole array of knowledge fields. In 1974, the digital position scheme for field subdivision had already been developed  to allow for classifying classification literature in the bibliographical section of the first issue of the Journal International Classification. In 1977, the entire ICC  was ready for presentation at a seminar in Bangalore, India.<ref>{{citation|surname1=Ingetraut Dahlberg|editor-surname1=Sarada Ranganathan Endowment for Library Science|title=Ontical Structures and Universal Classification |location=Bangalore|date=  1978|language=German}}</ref> A publication of the first three hierarchical levels appeared however only in 1982.<ref name="ICC-PSAP">{{citation|surname1=Ingetraut Dahlberg|periodical=International Classification|title=ICC – Information Coding Classification. Principles, structure and application possibilities |volume=2|pages=98–103|date=  1982|language=German}}</ref> It was applied to the bibliography of classification systems and [[thesauri]] in vol.1 of the International Classification and Indexing Bibliography;<ref>{{citation|editor-surname1=Ingetraut Dahlberg|title=International Classification and Indexing Bibliography (ICIB 1): Classification systems and thesauri 1950-1982 |journal=Knowledge Organization International Journal : Devoted to Concept Theory, Classification, Indexing, and Knowledge Representation |publisher=INDEKS Verlag|location=Frankfurt|issn=0943-7444|date=  1982|language=German}}</ref> it has been updated.<ref name="WEAAZ2014" />
+
+== Governing principles ==
+These were published in full length in the book ''Wissensorganisation. Entwicklung, Aufgabe, Anwendung, Zukunft''<ref name="WEAAZ2014" /> and the  article ''Information Coding Classification. Geschichtliches, Prinzipien, Inhaltliches'',<ref name="ICC2010">{{citation|surname1=Ingetraut Dahlberg|editor-surname1=Marlies Ockenfeld|periodical=Information, Wissenschaft & Praxis|title=Information Coding Classification. Geschichtliches, Prinzipien, Inhaltliches |volume=61, Heft 8|publisher=De Gruyter|pages=449–454|issn=1619-4292|date=  2010|language=German}}</ref> hence it suffices to just mention their topics with some necessary additions.
+
+* Principle 1: Concept theoretical approaches. Concepts are the contents of ICC, they are understood as being units of knowledge. The „birth“ of a concept. Where do the characteristics, the knowledge elements come from? How do conceptual relations arise?
+* Principle 2: The four kinds of concept relations and their applications.
+* Principle 3: Decimal numbers form the ICC codes as its universal language.
+* Principle 4: The nine ontical levels of ICC. They were grouped under three captions: Prolegomena (1-3), life sciences (4-6) and human output (7-9):
+:# Structure and form
+:# Matter and energy
+:# Cosmos and earth
+:# Biosphere
+:# Anthroposphere
+:# Sociosphere
+:# Material products (economics and technology)
+:# Intellectual products (knowledge and information)
+:# Spiritual products (products of mind and culture)
+
+* Principle 5: Knowledge fields are structured by categories, based on the Aristotelian form-categories, under a digital position scheme, a kind of scaling rule for subdividing a given field as follows:
+:# General area: problems, theories, principles (axiom and structure)
+:# Object area: objects, kinds, parts, properties of objects
+:# Activity area: methods, processes, activities
+:# Field properties or first characterization   
+:# Persons or secondary characterization
+:# Societies or tertiary characterization
+:# Influences from outside
+:# Applications of the field to other fields
+:# Field information and synthesizing tasks
+:The digital position scheme, called Systematifier, has  also been used for structuring the entire system via the categories figuring on the upper zero level.
+
+An example of its application is the structure of the classification system for knowledge organization literature [http://www.isko.org/scheme.php Gliederung der Klassifikationsliteratur]. (A simplified version with an additional introduction is given in,<ref name="WEAAZ2014" /> p.&nbsp;71)
+
+* Principle 6: The ontical levels outlined under principle 4 conform to the „integrative level theory“ which means that every level is integrated in the following one. In addition, each knowledge area presumes the following one.
+* Principle 7: The combination potential of knowledge fields (interdisciplinarity and transdisciplinarity)is determined by the digital position scheme. (Examples are given in,<ref name="WEAAZ2014" /> p.&nbsp;103-4)
+* Principle 8: The categories of the zero-level are general concepts, their possible subdivisions could once be used for classificatory statements. (These subdivisions still need elaboration)
+* Principle 9 and 10: These relate to the combination potential of classificatory statements with space and time concepts. (Still to be elaborated)
+* Principle 11: The system's mnemotechnical aspect relies on the fixed system position codes and on the 3x3 form- and subject-categories.
+* Principle 12: The combination potential of system position 1, 8 and 9 make ICC to a self-networking system which complies with the present scientific development.
+
+== In matrix form ==
+
+The first two levels of ICC can be represented by following matrix.
+
+[[File:ICC as a Matrix.png|840px|ICC as a Matrix with the first two hierarchical levels]]
+
+The first hierarchical level of the 9 subject categories results from the first vertical array under codes 1-9.  The second hierarchical level of subject categories is structured by the 9 functionally ordered form categories, listed in the first horizontal line under codes 01-09. Some exceptions are mentioned in principle 7.
+
+== Research ==
+
+=== Exploration of automatic classification ===
+For classifying web documents as conceived by Jens Hartmann, University of Karlsruhe, Prof.Walter Koch, University of Graz, has explored in his Institute for Applied Information Technology Research Society (AIT) the application of ICC to automatically classifying metadata of some 350.000 documents. This was facilitated by data generated within the framework of an EU-supported project [http://www.europeana-local.at "EuropeanaLocal"] . For this exploration, three ICC hierarchical levels have been used for some 5000 terms. The result is described in the report of Christoph Mak.<ref>{{citation|surname1=Christian Mak|periodical=Bericht des Instituts "Angewandte Informationstechnik Forschungsgesellschaft MBH" (AIT)|title=Kategorisierung des Datenbestandes der EuropeanaLocal-Österreich anhand der ICC |location=Graz|date=  2011|language=German}}</ref> Prof.Koch regarded a classification degree of almost 50% as a good result, considering that only a shortened version of ICC had been used. In order to reach a better result one would have needed 1–2 years. Also an index of all terms with their codes could be achieved under these explorations.
+
+=== Data Linkage ===
+Motivated by the work of an Italian research Group in Trento on ''Revising the Wordnet Domains Hierarchy: semantics, coverage and balancing'',<ref name="FGinTrnto">{{citation|surname1=Luisa Bentivogli|surname2=Pamela Forner|surname3=Bernardo Magnini|surname4=Emanuele Pianta|periodical=Proceedings of COLING 2004 Workshop on "Multilingual Linguistic Resources|title=[http://multiwordnet.fbk.eu/paper/coling04-ws-WDH.pdf Revising WordNet Domains Hierarchy: Semantics, Coverage, and Balancing] |location=Geneva, Switzerland|pages=101–108|date=  2004|language=German}}</ref> by which the DDC codes were used, Prof. Ernesto DeLuca et al. showed in a study that for such case the use of ICC could lead to essentially better results. This was shown in two contributions: ''Including knowledge domains from the ICC into the Multilingual Lexical Linked Data Cloud (LLD)'' <ref name=" IKDfICC">{{citation|surname1=Ernesto William DeLuca|display-authors=etal|periodical=Knowledge Organization in the 21st Century. Between Historical Patterns and Future Prospects. Proc.13th Int. ISKO Conf.|title=Including Knowledge Domains from the ICC into the Multilingual Lexical Linked Data Cloud |location=Krakau, Polen|pages=258–365|date=  2014|language=German}}</ref> and ''Die Multilingual Lexical Linked Data Cloud: Eine mögliche Zugangsoptimierung?'',<ref name="MLLDC">{{citation|surname1=Ernesto William DeLuca|display-authors=etal|periodical=Information, Wissenschaft & Praxis|title=Die Multilingual Lexical Linked Data Cloud: Eine mögliche Zugangsoptimierung? |volume=65, Heft 4-5|publisher=De Gruyter|pages=279–287|issn=1619-4292|date=  2014|language=German}}</ref> in which the LLD was used in a meta-model which contains all resources with the possibility of retrieval and navigation of data from different aspects. By this, the existing work about many thousand knowledge fields (of  ICC) can be combined with the Multilingual Lexical Linked Data Cloud, based on RDF/OWL representation of EuroWordNet and similar integrated lexical resources (MultiWordNet, MEMODATA and the Hamburg Metapher BD).
+
+=== Semantic Web structuring ===
+In October 2013, the computer scientist Hermann Bense, Dortmund, explored the possibilities for structuring the Semanic Web with ICC codes. He developed two approaches for a pictorial presentation of knowledge fields with their possible subdivisions. A graphic representation of those knowledge fields pertaining to the first two levels can be found under [http://www.ontology4.us/english/Ontologies/Science%2520Ontology/index.html Ontology4]. The inclusion of the third hierarchical level has been envisaged as the next step.
+
+== Some potential applications of ICC in its present form ==
+# Possibility to roughly structure documents, especially bibliographies and reference works.
+# Structuring personal repertories, e.g. a [[Who’s Who]] in ''Who’s Who in Classification and Indexing''<ref name="whoiswho">{{citation|editor-surname1=Ingetraut Dahlberg|title=Who's Who in Classification and Indexing |publisher=INDEKS Verlag|location=Frankfurt|date=  1983|language=German}}</ref>
+# Supporting the recollection of statistics by knowledge fields, e.g. also concerning university professors, statistics of academies, of institutions, of teachers in special education
+# Publishing houses could take up ICC codes for their products to help later sorting by knowledge fields.
+# As a standard classification ICC may be used in many cases, especially in industry,  [[knowledge management]] and [[knowledge engineering]].
+# With the definition of all its terms a lexicon of knowledge fields could be published. This could also be used for such lexica in other languages.<ref name="lexikon">{{citation|surname1=Ingetraut Dahlberg|periodical=Knowledge Organisation 39, No.2|title=A systematic new lexicon of all knowledge fields based on the Information Coding Classification. |pages=142–150|date=  2012|language=German}}</ref>
+# As an example, ICC could be used to compare ongoing scientific activities on a European or world-wide scale.
+# ICC can also be an appropriate tool for switching between extant universal classification systems.<ref name="switch">{{citation|surname1=Ingetraut Dahlberg|editor-surname1=Green, R.|periodical=Knowledge Organization & Change. Proc.4th Int.ISKO Conf., Washington, D.C.|title=Library catalogs and the Internet. Switching for future subject access. |publisher=INDEKS Verlag|location=Frankfurt|pages=155–165|date=  1996|language=German}}</ref>
+# ICC can also be a suitable „hang-up system“ for special classification systems, e.g. for special terminological concept systems.
+# ICC in its three hierarchies and corresponding explanations might also be used in higher education to supply the youngsters with an overview of knowledge fields and an understanding of the relationships in the whole of human knowledge.
+# Similar to the [[Unified Medical Language System]] (UMLS) for medicine such a Unified System of Knowledge Fields could be held available in many languages and thus reach a global understanding of knowledge fields.
+# The alphabetical index to all knowledge field concepts could be used for comparisons with other such indexes to help in finding the missing fields in the different universal classification systems.   
+ 
+== References ==
+{{Reflist|30em}}
+
+{{Authority control}}
+
+[[Category:Classification systems]]
+[[Category:Knowledge representation]]
+[[Category:Library cataloging and classification]]
+[[Category:Ontology]]
+[[Category:Data coding framework]]

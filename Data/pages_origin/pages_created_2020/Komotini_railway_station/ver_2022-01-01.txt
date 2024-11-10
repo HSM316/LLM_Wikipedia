@@ -1,0 +1,73 @@
+{{Cleanup bare URLs|date=August 2021}}
+{{Use dmy dates|date=October 2020}}
+{{Infobox Station
+|name            = {{Infobox station/Header OASA|GR=Κομοτηνή|EN=Komotini|Str1=AT}}
+|type            = 
+|image           = 20090423 Komotini Greece train station.jpg
+|image_caption   = Komotini railway station, April 2009
+|address         = Komotini 691 00<ref>{{Cite web|url=http://www.gtp.gr/TDirectoryDetails.asp?ID=77353&lng=2|title=Komotini Station - National Railway Network - GTP|website=www.gtp.gr}}</ref>
+|borough         = [[Rhodope (regional unit)|Rhodope]]
+|country         = [[Greece]]
+|coordinates     = {{coord|41.1101|25.3940|type:railwaystation_region:GR|format=dms|display=inline,title}}
+|line            = {{Rail color box|system=TrainOSE|line=AD}} [[Thessaloniki–Alexandroupoli railway]]<ref name=OSE>{{Cite web|url=https://ose.gr/en/railway-network/network-map/|title=» General Network MapOSE}}</ref>
+|train_operators = [[TrainOSE]]
+|other           = 
+|structure       = At-grade
+|depth           = 
+|levels          = 1
+|platform        = 2
+|tracks          = 5 (1 mothballed)
+|parking         = Yes
+|bicycle         = No
+|baggage_check   = 
+|opened          = 1900
+|closed          = 
+|rebuilt         = 
+|electrified     = 1958<ref>{{Cite web|url=https://www.trainose.gr/την-1η-ημέρα-ο-θεός-έφτιαξε-τον-σιδηρόδρ/|title=Την 1η ημέρα ο Θεός έφτιαξε τον Σιδηρόδρομο, την 2η το Λιμάνι: Το παράδειγμα της Αλεξανδρούπολης (ένα άρθρο του κ. Ηλία Σ. Τζιώρα)|website=TrainOSE}}</ref>
+|ADA             = 
+[[File:Aiga ticketpurchase inv.svg|25px]] [[File:Aiga waitingroom inv.svg|25px]] [[File:Aiga restaurant inv.svg|25px]] [[File:Aiga parking inv.svg|25px]] [[File:Aiga bus inv.svg|25px]]
+|code            = 
+|owned           = [[Hellenic Railways Organisation|GAIAOSE]]<ref>https://www.gaiaose.com/</ref>
+|zone            = 
+|status          = Staffed (peak-time only)
+|former          = 
+|web             = {{url|www.ose.gr/en}}
+|map             = 
+|passengers      = 
+|mpassengers     = 
+|services        = {{s-rail|title=TrainOSE}}
+{{s-line|system=TrainOSE|line=TO|previous=Xanthi|next=Sikorrachi}}
+{{s-line|system=TrainOSE|line=TA|previous=Polyanthos|next=Venna}}
+{{s-note|text=Former service}}
+{{s-rail|title=TrainOSE}}
+{{s-line|system=TCDD|line=Friendship Express|previous=Xanthi|next=Alexandroupoli}}
+|route_map       = 
+|map_locator     = 
+|map_type        = Greece
+|map_dot_label   = Komotini
+}}
+'''Komotini railway station''' ({{lang-el|Σιδηροδρομικός Σταθμός Κομοτηνής|Sidirodromikós stathmós Komotinís}}) is a railway station that servers the city of [[Komotini]], in [[Rhodope (regional unit)|Rhodope]] in [[East Macedonia and Thrace]], Greece. The station is located 3km southeast of the city center, but still within the city limits. The station (as of 2019) is staffed, but only at peak times, but has waiting rooms and a bus stop in the forecourt.
+
+==History==
+The station opened in 1900. In 2009, with the [[Greek government-debt crisis|Greek debt crisis]] unfolding [[Hellenic Railways Organisation|OSE]]'s Management<ref>{{Cite web|url=https://www.nytimes.com/2010/07/21/business/global/21rail.html|title=Greek Rail System’s Debt Adds to Economic Woes|first=Landon Thomas|last=Jr|date=20 July 2010|via=NYTimes.com}}</ref> was forced to reduce services across the network. Timetables where cutback and routs closed, as the government-run entity attempted to reduce overheads. Services from Thessaloniki and Alexandroupolis were cut back from six to just two trains a day, reducing the reliability of services, and passenger numbers. However, the station building remained open and staffed (at a reduced level). There is old abandoned boxcar shunted onto one of the sidetracks, very close to the station buildings.
+
+==Facilities==
+The station has waiting rooms, within the original brick-built station building. There Are two cafes/restaurants<ref name="auto">{{Cite web|url=https://www.lonelyplanet.com/greece/thrace|title=Thrace travel|website=Lonely Planet}}</ref> one in the station building, with a second within the station complex. The station is staffed, however only during peak times.<ref name="auto"/>
+
+==Services==
+It is served by two long-distance trains<ref name="auto"/> between [[Thessaloniki New Railway Station|Thessaloniki]] and [[Alexandroupoli railway station|Alexandroupolis]].
+
+In January 2019 services between Komotini and Alexandroupolis were suspended after a local river burst its banks in the area near the village of Venna, a rail replacement bus service was commenced.<ref>{{Cite web|url=https://www.ekathimerini.com/news/236428/komotini-alexandroupolis-train-service-disrupted-after-river-flood/|title=Komotini-Alexandroupolis train service disrupted after river flood &#124; eKathimerini.com|website=www.ekathimerini.com}}</ref>
+
+Between July 2005 and February 2011 the ''[[Friendship Express]]'', (an international [[InterCity]] train jointly operated by the [[Turkish State Railways]] (TCDD) and [[TrainOSE]] linking [[Istanbul]]'s [[Sirkeci Terminal]], Turkey and [[Thessaloniki New Railway Station|Thessaloniki]], Greece) made scheduled stops at Komotini.
+
+==References==
+{{Reflist}}
+
+==External links==
+* [https://www.gtp.gr/TDirectoryDetails.asp?ID=77353 Komotini Station - National Railway Network - GTP]
+
+[[Category:Railway stations in Eastern Macedonia and Thrace]]
+[[Category:Railway stations opened in 1900]]
+
+{{Greece-railstation-stub}}

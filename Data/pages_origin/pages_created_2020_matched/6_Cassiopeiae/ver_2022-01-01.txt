@@ -1,0 +1,87 @@
+{{short description|Star in the constellation Cassiopeia}}
+{{Starbox begin}}
+{{Starbox image
+ | image=
+{{Location mark
+|image=Cassiopeia constellation map.svg|alt=|float=center|width=280
+|label=|position=right
+|mark=Red circle.svg|mark_width=10|mark_link=6 Cas|x=630|y=443
+}}
+|caption=Location of 6 Cassiopeiae (circled)
+}}
+{{Starbox observe 
+| epoch = J2000.0
+| constell = [[Cassiopeia (constellation)|Cassiopeia]]
+| ra = {{RA|23|48|50.171}}<ref name="van Leeuwen2007"/>
+| dec = {{DEC|+62|12|52.26}}<ref name="van Leeuwen2007"/>
+| appmag_v = +5.43<ref name=ducati/> {{nowrap|(5.34 - 5.45<ref name=gcvs/>)}}
+}} 
+{{Starbox character 
+| class = A2.5 Ia<sup>+</sup><ref name="ChentsovErmakov2003">{{cite journal|last1=Chentsov|first1=E. L.|last2=Ermakov|first2=S. V.|last3=Klochkova|first3=V. G.|last4=Panchuk|first4=V. E.|last5=Bjorkman|first5=K. S.|last6=Miroshnichenko|first6=A. S.|title=An atlas of spectra of B6-A2 hypergiants and supergiants from 4800 to 6700Å|journal=Astronomy and Astrophysics|volume=397|issue=3|year=2003|pages=1035–1042|issn=0004-6361|doi=10.1051/0004-6361:20021430|bibcode = 2003A&A...397.1035C |doi-access=free}}</ref>
+| b-v = +0.67<ref name=ducati>{{cite journal|bibcode=2002yCat.2237....0D|title=VizieR Online Data Catalog: Catalogue of Stellar Photometry in Johnson's 11-color system|journal=CDS/ADC Collection of Electronic Catalogues|volume=2237|pages=0|last1=Ducati|first1=J. R.|year=2002}}</ref>
+| u-b = &minus;0.02<ref name=ducati/>
+| variable=[[Alpha Cygni variable|α Cyg]]<ref name=gcvs>{{cite journal|bibcode=2009yCat....102025S|title=VizieR Online Data Catalog: General Catalogue of Variable Stars (Samus+ 2007-2013)|journal=VizieR On-line Data Catalog: B/GCVS. Originally Published in: 2009yCat....102025S|volume=1|pages=B/gcvs|display-authors=etal|last1=Samus|first1=N. N.|last2=Durlevich|first2=O. V.|year=2009}}</ref>
+}} 
+{{Starbox astrometry
+| radial_v = 
+| prop_mo_ra = −3.57 ± 0.35<ref name="van Leeuwen2007">{{cite journal | title=Validation of the new Hipparcos reduction | last1=van Leeuwen | first1=F. | journal=Astronomy and Astrophysics | volume=474 | issue=2 | pages=653–664 | year=2007 | arxiv=0708.1752 | bibcode=2007A&A...474..653V | doi=10.1051/0004-6361:20078357 | s2cid=18759600 }}[http://webviz.u-strasbg.fr/viz-bin/VizieR-5?-out.add=.&-source=I/311/hip2&recno=117056 Vizier catalog entry ]</ref>
+| prop_mo_dec = −1.57 ± 0.33<ref name="van Leeuwen2007"/>
+| parallax = 0.53
+| p_error = 0.37
+| parallax_footnote = <ref name="van Leeuwen2007"/>
+| dist_pc = 2,510<ref name=melnick>{{cite journal|bibcode=1995AstL...21...10M|title=A new list of OB associations in our galaxy|journal=Astronomy Letters|volume=21|issue=1|pages=10|last1=Mel'Nik|first1=A. M.|last2=Efremov|first2=Yu. N.|year=1995}}</ref>
+| absmag_v = &minus;8.30<ref name=verdugo>{{cite journal|bibcode=2003IAUS..212..255V|title=Search for magnetic fields in A-type supergiants|journal=A Massive Star Odyssey: From Main Sequence to Supernova|volume=212|pages=255|last1=Verdugo|first1=Eva|last2=Talavera|first2=Antonio|last3=Gómez De Castro|first3=Ana I.|last4=Henrichs|first4=Huib F.|year=2003}}</ref>
+}} 
+{{Starbox detail 
+| mass = 22.0<ref name=verdugo/>
+| radius = 193<ref name=verdugo/>
+| luminosity = 200,000<ref name=achmad>{{cite journal|bibcode=1997A&A...320..196A|title=Radiation driven wind models for A, F and G supergiants|journal=Astronomy and Astrophysics|volume=320|pages=196|last1=Achmad|first1=L.|last2=Lamers|first2=H. J. G. L. M.|last3=Pasquini|first3=L.|year=1997}}</ref>
+| temperature = 10,023 ± 227<ref name=prugniel/>
+| metal_fe = 0.29<ref name=prugniel/>
+| gravity = 1.59<ref name=prugniel>{{Cite journal | doi = 10.1051/0004-6361/201116769| title = The atmospheric parameters and spectral interpolator for the MILES stars| journal = Astronomy & Astrophysics| volume = 531| pages = A165| year = 2011| last1 = Prugniel | first1 = P. | last2 = Vauglin | first2 = I.| last3 = Koleva | first3 = M.|arxiv = 1104.4952 |bibcode = 2011A&A...531A.165P | s2cid = 54940439}}</ref>
+| rotational_velocity = 50<ref name=verdugo/>
+| age =
+}} 
+{{Starbox catalog
+| names = [[Flamsteed designation|6]]&nbsp;Cas, [[Variable star designation|V566]]&nbsp;Cas, [[Bright Star Catalogue|HR]]&nbsp;9018, [[Henry Draper Catalogue|HD]]&nbsp;223385, [[Bonner Durchmusterung|BD]]+61°2533, [[Hipparcos#Published catalogues|HIP]]&nbsp;117447, [[Smithsonian Astrophysical Observatory Star Catalog|SAO]]&nbsp;20869
+}}
+{{Starbox reference
+| Simbad = 6+Cas
+}}
+{{Starbox end}}
+
+'''6 Cassiopeiae''' (6 Cas) is a white [[hypergiant]] in the [[constellation]] [[Cassiopeia (constellation)|Cassiopeia]], and a small-amplitude [[variable star]].
+
+==System==
+6 Cassiopeiae A is a white A2.5 type hypergiant. It is about 25 times as massive as the [[Sun]] and 200,000 times as luminous.  The star is slightly and erratically variable, an [[Alpha Cygni variable]].
+
+6 Cas A has a number of close companions, most notably an 8th magnitude O class bright giant at only 1.5". Its spectral type is O9.75 and its absolute magnitude is &minus;5.8.<ref>{{cite journal|bibcode=1990AISAO..29..101B|title=The atmosphere of the supergiant 6 Cas. IV. The spectrum and radial velocities of the visual companion|journal=Astrofiz. Issled. Izv. Spets. Astrofiz. Obs|volume=29|pages=101|last1=Barsukova|first1=E. A.|last2=Chentsov|first2=E. L.|year=1990}}</ref>  Both are considered to be members of the Cassiopeia OB5 [[stellar association]] at a distance of around 8,000 [[light-year]]s.<ref>{{cite journal|bibcode=1994BSAO...38..103B|title=Hypergiant 6 Cas and association Cas OB5|journal=Bulletin of the Special Astrophysical Observatory|volume=38|pages=103|last1=Bartaya|first1=R. A.|last2=Chargeishvili|first2=K. B.|last3=Chentsov|first3=E. L.|last4=Shkhagosheva|first4=Z. U.|year=1994}}</ref>
+
+==Variability==
+[[File:V566CasLightCurve.png|thumb|left|A [[light curve]] for V566 Cassiopeiae from [[Hipparcos|''Hipparcos'']] data, plotted as a function of phase assuming the dominant period found by Koen and Eyer (2002)<ref name=koen/><ref name=HipDataAccess/>]]
+6 Cas A is an α Cyg variable, pulsating erratically between 5.34 and 5.45.  The strongest period detected in one study was 37 days.<ref name=koen>{{cite journal|bibcode= 2002MNRAS.331...45K |title= New periodic variables from the Hipparcos epoch photometry |journal= Monthly Notices of the Royal Astronomical Society |volume= 331 |issue= 1 |pages= 45–59 |last1= Koen |first1= Chris |last2= Eyer |first2= Laurent |year= 2002 |doi= 10.1046/j.1365-8711.2002.05150.x |arxiv = astro-ph/0112194 |s2cid= 10505995 }}</ref>  It has the [[variable star designation]] V566 Cassiopeiae.<ref name=gcvs/>
+
+==References==
+{{reflist|refs=
+
+<ref name=HipDataAccess>{{cite web |title=Hipparcos Tools Interactive Data Access |url=https://www.cosmos.esa.int/web/hipparcos/interactive-data-access |website=Hipparcos |publisher=ESA |access-date=8 December 2021}}</ref>
+
+}}
+
+==External links==
+*[http://stars.astro.illinois.edu/sow/6cas.html Jim Kaler]
+
+
+{{Stars of Cassiopeia}}
+
+[[Category:A-type hypergiants]]
+[[Category:Cassiopeia (constellation)]]
+[[Category:Flamsteed objects|Cassiopeiae, 06]]
+[[Category:HR objects|9018]]
+[[Category:Henry Draper Catalogue objects|117447]]
+[[Category:Hipparcos objects|117447]]
+[[Category:Durchmusterung objects|BD+61 2533]]
+[[Category:Objects with variable star designations|Cassiopeiae, V566]]
+[[Category:Alpha Cygni variables]]
+[[Category:Multiple stars]]
+[[Category:O-type bright giants]]

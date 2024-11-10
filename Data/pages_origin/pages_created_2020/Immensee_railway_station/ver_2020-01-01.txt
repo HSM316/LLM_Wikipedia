@@ -1,0 +1,65 @@
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = Immensee
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = FFS Ec 2-5 28 Immensee 230509.jpg
+| alt                 = Green steam locomotive with carriages in front of a two-story building
+| caption             = Heritage steam locomotive at Immensee in 2009
+| address             = 
+| borough             = Küssnacht
+| country             = [[Switzerland]]
+| coordinates         = {{coord|47|05|30|N|8|27|46|E|region:CH-SZ|format=dms|display=inline,title}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = {{Plainlist|
+* [[Gotthard railway]]
+* [[Lucerne–Immensee railway]]
+* [[Aargau Southern Railway]]
+}}
+| distance            = 
+| platforms           = 
+| tracks              = 
+| train_operators     = [[Swiss Federal Railways]]
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 
+| pass_year           = 
+| pass_rank           = 
+|services            = {{Adjacent stations|system1=Zug Stadtbahn
+|line1=2 South|left1=Rotkreuz|right1=Arth-Goldau
+|system2=Lucerne S-Bahn
+|line2=3|left2=Küssnacht am Rigi|right2=Arth-Goldau
+}}
+| other_services      = 
+}}
+'''Immensee railway station''' ({{lang-de|Bahnhof Immensee}}) is a railway station in [[Küssnacht]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of Schwyz|Schwyz]]. It sits at the junction of three railway lines: the [[Gotthard railway]], [[Lucerne–Immensee railway]], and the [[Aargau Southern Railway]]. It is served by local trains only.
+
+== Services ==
+Immensee is served by the S2 of the [[Zug Stadtbahn]] and S3 of the [[Lucerne S-Bahn]]:<ref name="fpf601">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/601.pdf | title = Luzern - Rotkreuz - Arth-Goldau - Erstfeld | publisher = Bundesamt für Verkehr | date=5 November 2019 | accessdate = 31 December 2019}}</ref>
+
+* {{rcb|Zug Stadtbahn|2 South|inline=croute}}: peak-hour service over the [[Aargau Southern Railway]] to [[Rotkreuz railway station|Rotkrezu]] and the [[Gotthard railway]] to [[Flüelen railway station|Flüelen]].
+* {{rcb|Lucerne S-Bahn|3|inline=croute}}: hourly service over the [[Lucerne–Immensee railway]] to [[Luzern railway station|Luzern]] and the Gotthard railway to [[Brunnen railway station|Brunnen]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{Commons category-inline|Immensee railway station}}
+* [https://www.sbb.ch/en/station-services/railway-stations/further-stations/station.5003.immensee.html Immensee station on SBB]
+
+[[Category:Railway stations in the canton of Schwyz]]
+[[Category:Swiss Federal Railways stations]]

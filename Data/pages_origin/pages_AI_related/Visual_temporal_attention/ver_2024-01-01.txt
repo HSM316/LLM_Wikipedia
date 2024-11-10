@@ -1,0 +1,48 @@
+[[File:Video frames of the Parallel Bars action category.png|thumb|upright=1.5|Video frames of the ''Parallel Bars'' action category in the UCF-101 dataset<ref name="Center 2013"/> (a) The highest ranking four frames in ''video temporal attention'' weights,  in which the athlete is performing on the parallel bars; (b) The lowest ranking four frames in ''video temporal attention'' weights, in which the athlete is standing on the ground. All weights are predicted by the ATW CNN algorithm.<ref name="Zang Wang Liu Zhang 2018 pp. 97–108"/> The highly weighted video frames generally captures the most distinctive movements relevant to the action category.]]
+<!-- comments here -->
+'''Visual temporal attention''' is a special case of [[Attention|visual attention]] that involves directing attention to specific instant of time. Similar to its spatial counterpart [[visual spatial attention]], these attention modules have been widely implemented in [[Video content analysis|video analytics]] in [[computer vision]] to provide enhanced performance and human interpretable explanation<ref name="Interpretable ML Symposium 2017"/> of [[deep learning]] models.
+
+As visual spatial attention mechanism allows human and/or [[computer vision]] systems to focus more on semantically more substantial regions in space, visual temporal attention modules enable [[machine learning]] algorithms to emphasize more on critical video frames in [[Video content analysis|video analytics]] tasks, such as [[Activity recognition|human action recognition]]. In [[convolutional neural network]]-based systems, the prioritization introduced by the attention mechanism is regularly implemented as a linear weighting layer with parameters determined by labeled training data.<ref name="Interpretable ML Symposium 2017"/>
+
+== Application in Action Recognition ==
+<!-- comments here -->
+[[File:ATW CNN architecture.png|thumb|upright=1.5|ATW CNN architecture.<ref name="Wang Zang Zhang Niu p=1979"/> Three CNN streams are used to process spatial RGB images, temporal optical flow images, and temporal warped optical flow images, respectively. An attention model is employed to assign temporal weights between snippets for each stream/modality. Weighted sum is used to fuse predictions from the three streams/modalities.]]
+<!-- comments here -->
+
+Recent video segmentation algorithms often exploits both spatial and temporal attention mechanisms.<ref name="Zang Wang Liu Zhang 2018 pp. 97–108"/><ref name="Wang Zang Zhang Niu p=1979"/> Research in [[Activity recognition|human action recognition]] has accelerated significantly since the introduction of powerful tools such as [[Convolutional neural network|Convolutional Neural Networks (CNNs)]]. However, effective methods for incorporation of temporal information into CNNs are still being actively explored. Motivated by the popular recurrent attention models in [[natural language processing]], the Attention-aware Temporal Weighted CNN (ATW CNN) is proposed<ref name="Wang Zang Zhang Niu p=1979"/> in videos, which embeds a visual attention model into a temporal weighted multi-stream CNN. This attention model is implemented as temporal weighting and it effectively boosts the recognition performance of video representations. Besides, each stream in the proposed ATW CNN framework is capable of end-to-end training, with both network parameters and temporal weights optimized by [[Stochastic gradient descent|stochastic gradient descent (SGD)]] with [[Backpropagation|back-propagation]]. Experimental results show that the ATW CNN attention mechanism contributes substantially to the performance gains with the more discriminative snippets by focusing on more relevant video segments.
+
+<!-- comments here -->
+
+== Literature ==
+* Seibold VC, Balke J and Rolke B (2023): ''Temporal attention''. Front. Cognit. 2:1168320. doi: 10.3389/fcogn.2023.1168320.
+
+== See also ==
+* [[Attention]]
+* [[Visual spatial attention]]
+* [[Activity recognition|Action Recognition]]
+* [[Video content analysis]]
+* [[Convolutional neural network]]
+* [[Computer vision]]
+
+== References ==
+{{reflist|refs=
+<ref name="Interpretable ML Symposium 2017">{{cite web | title=NIPS 2017 | website=Interpretable ML Symposium | date=2017-10-20 | url=http://interpretable.ml/ | access-date=2018-09-12}}</ref>
+
+<ref name="Zang Wang Liu Zhang 2018 pp. 97–108">{{cite book | last1=Zang | first1=Jinliang | last2=Wang | first2=Le | last3=Liu | first3=Ziyi | last4=Zhang | first4=Qilin | last5=Hua | first5=Gang | last6=Zheng | first6=Nanning | title=IFIP Advances in Information and Communication Technology | chapter=Attention-Based Temporal Weighted Convolutional Neural Network for Action Recognition | publisher=Springer International Publishing | location=Cham | year=2018 | isbn=978-3-319-92006-1 | issn=1868-4238 | doi=10.1007/978-3-319-92007-8_9 | pages=97–108 | arxiv=1803.07179 | s2cid=4058889 }}</ref>
+
+<ref name="Wang Zang Zhang Niu p=1979">{{cite journal | last1=Wang | first1=Le | last2=Zang | first2=Jinliang | last3=Zhang | first3=Qilin | last4=Niu | first4=Zhenxing | last5=Hua | first5=Gang | last6=Zheng | first6=Nanning | title=Action Recognition by an Attention-Aware Temporal Weighted Convolutional Neural Network | journal=Sensors | publisher=MDPI AG | volume=18 | issue=7 | date=2018-06-21 | issn=1424-8220 | doi=10.3390/s18071979 | page=1979 | url=https://qilin-zhang.github.io/_pages/pdfs/sensors-18-01979-Action_Recognition_by_an_Attention-Aware_Temporal_Weighted_Convolutional_Neural_Network.pdf | pmid=29933555 | pmc=6069475| bibcode=2018Senso..18.1979W | doi-access=free }}[[File:CC-BY icon.svg|50px]] Material was copied from this source, which is available under a [https://creativecommons.org/licenses/by/4.0/ Creative Commons Attribution 4.0 International License].</ref>
+
+<ref name="Center 2013">{{cite web | title=UCF101 - Action Recognition Data Set |last=Center | first=UCF | website=CRCV | date=2013-10-17 | url=http://crcv.ucf.edu/data/UCF101.php | access-date=2018-09-12}}</ref>
+
+}}
+
+<!--- Categories --->
+[[Category:Attention]]
+[[Category:Computer vision]]
+[[Category:Machine vision]]
+[[Category:Applications of computer vision]]
+[[Category:Applied machine learning]]
+[[Category:Film and video technology]]
+[[Category:Cognition]]
+[[Category:Cognitive neuroscience]]
+[[Category:Neuropsychology]]

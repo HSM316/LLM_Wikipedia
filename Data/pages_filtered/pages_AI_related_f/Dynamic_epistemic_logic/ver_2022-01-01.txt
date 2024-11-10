@@ -1,0 +1,230 @@
+Dynamic epistemic logic (DEL) is a logical framework dealing with knowledge and information change. Typically, DEL focuses on situations involving multiple agents and studies how their knowledge changes when events occur. These events can change factual properties of the actual world (they are called ontic events): for example a red card is painted in blue. They can also bring about changes of knowledge without changing factual properties of the world (they are called epistemic events): for example a card is revealed publicly (or privately) to be red. Originally, DEL focused on epistemic events. We only present in this entry some of the basic ideas of the original DEL framework; more details about DEL in general can be found in the references.
+
+Due to the nature of its object of study and its abstract approach, DEL is related and has applications to numerous research areas, such as computer science (artificial intelligence), philosophy (formal epistemology), economics (game theory) and cognitive science. In computer science, DEL is for example very much related to multi-agent systems, which are systems where multiple intelligent agents interact and exchange information.
+
+As a combination of dynamic logic and epistemic logic, dynamic epistemic logic is a young field of research. It really started in 1989 with Plaza’s logic of public announcement.  Independently, Gerbrandy and Groeneveld  proposed a system dealing moreover with private announcement and that was inspired by the work of Veltman. Another system was proposed by van Ditmarsch whose main inspiration was the Cluedo game. But the most influential and original system was the system proposed by Baltag, Moss and Solecki. This system can deal with all the types of situations studied in the works above and its underlying methodology is conceptually grounded. We will present in this entry some of its basic ideas.
+
+Formally, DEL extends ordinary epistemic logic by the inclusion of event models to describe actions, and a product update operator that defines how epistemic models are updated as the consequence of executing actions described through event models. Epistemic logic will first be recalled. Then, actions and events will enter into the picture and we will introduce the DEL framework.A distinction is sometimes made between events and actions, an action being a specific type of event performed by an agent.
+
+ Epistemic Logic 
+
+Epistemic logic is a modal logic dealing with the notions of knowledge and belief. As a logic, it is concerned with understanding the process of reasoning about knowledge and belief: which principles relating the notions of knowledge and belief are intuitively plausible? Like epistemology, it stems from the Greek word  or ‘episteme’ meaning knowledge. Epistemology is nevertheless more concerned with analyzing the very nature and scope of knowledge, addressing questions such as “What is the definition of knowledge?” or “How is knowledge acquired?”. In fact, epistemic logic grew out of epistemology in the Middle Ages thanks to the efforts of Burley and Ockham. The formal work, based on modal logic, that inaugurated contemporary research into epistemic logic dates back only to 1962 and is due to Hintikka. It then sparked in the 1960s discussions about the principles of knowledge and belief and many axioms for these notions were proposed and discussed. For example, the interaction axioms  and  are often considered to be intuitive principles: if an agent Knows  then (s)he also Believes , or if an agent Believes , then (s)he Knows that (s)he Believes . More recently, these kinds of philosophical theories were taken up by researchers in economics, artificial intelligence and theoretical computer science where reasoning about knowledge is a central topic. Due to the new setting in which epistemic logic was used, new perspectives and new features such as computability issues were then added to the research agenda of epistemic logic.
+
+ Syntax 
+
+In the sequel,  is a finite set whose elements are called agents and  is a set of propositional letters.
+
+The epistemic language is an extension of the basic multi-modal language of modal logic with a common knowledge operator  and a distributed knowledge operator . Formally, the epistemic language  is defined inductively by the following grammar in BNF:
+
+where ,  and . The basic epistemic language  is the language  without the common knowledge and distributed knowledge operators. The formula  is an abbreviation for  (for a given ),   is an abbreviation for ,  is an abbreviation for  and  an abbreviation for .
+
+Group notions: general, common and distributed knowledge.
+
+In a multi-agent setting there are three important epistemic concepts: general knowledge, distributed knowledge and common knowledge. The notion of common knowledge was first studied by Lewis in the context of conventions. It was then applied to distributed systems  and to game theory, where it allows to express that the rationality of the players, the rules of the game and the set of players are commonly known.
+
+General knowledge.
+
+General knowledge of  means that everybody in the group of agents  knows that . Formally, this corresponds to the following formula:
+
+Common knowledge.
+
+Common knowledge of  means that everybody knows  but also that everybody knows that everybody knows , that everybody knows that everybody knows that everybody knows , and so on ad infinitum. Formally, this corresponds to the following formula
+
+As we do not allow infinite conjunction the notion of common knowledge will have to be introduced as a primitive in our language.
+
+Before defining the language with this new operator, we are going to give an example introduced by Lewis that illustrates the difference between the notions of general knowledge and common knowledge. Lewis wanted to know what kind of knowledge is needed so that the statement : “every driver must drive on the right” be a convention among a group of agents. In other words, he wanted to know what kind of knowledge is needed so that everybody feels safe to drive on the right. Suppose there are only two agents  and . Then everybody knowing  (formally ) is not enough. Indeed, it might still be possible that the agent  considers possible that the agent  does not know  (formally ). In that case the agent  will not feel safe to drive on the right because he might consider that the agent , not knowing , could drive on the left. To avoid this problem, we could then assume that everybody knows that everybody knows that  (formally ). This is again not enough to ensure that everybody feels safe to drive on the right. Indeed, it might still be possible that agent  considers possible that agent  considers possible that agent  does not know  (formally ). In that case and from ’s point of view,  considers possible that , not knowing , will drive on the left. So from ’s point of view,  might drive on the left as well (by the same argument as above). So  will not feel safe to drive on the right. Reasoning by induction, Lewis showed that for any ,  is not enough for the drivers to feel safe to drive on the right. In fact what we need is an infinite conjunction. In other words, we need common knowledge of : .
+
+Distributed knowledge.
+
+Distributed knowledge of  means that if the agents pulled their knowledge altogether, they would know that  holds. In other words, the knowledge of  is distributed among the agents. The formula  reads as ‘it is distributed knowledge among the set of agents  that  holds’.
+
+ Semantics 
+
+Epistemic logic is a modal logic. So, what we call an epistemic model  is just a Kripke model as defined in modal logic. The set  is a non-empty set whose elements are called possible worlds and the interpretation  is a function specifying which propositional facts (such as ‘Ann has the red card’) are true in each of these worlds. The accessibility relations  are binary relations for each agent ; they are intended to capture the uncertainty of each agent (about the actual world and about the other agents' uncertainty). Intuitively, we have  when the world  is compatible with agent ’s information in world  or, in other words, when agent  considers that world  might correspond to the world  (from this standpoint). We abusively write  for  and  denotes the set of worlds .
+
+Intuitively, a pointed epistemic model , where , represents from an external point of view how the actual world  is perceived by the agents .
+
+For every epistemic model , every  and every , we define  inductively by the following truth conditions:
+
+iffiffiffiffiffiff
+
+where  is the transitive closure of : we have that  if, and only if, there are  and  such that  and for all , .
+
+Despite the fact that the notion of common belief has to be introduced as a primitive in the language, we can notice that the definition of epistemic models does not have to be modified in order to give truth value to the common knowledge and distributed knowledge operators.
+
+Card Example:
+
+Players ,  and  (standing for Ann, Bob and Claire) play a card game with three cards: a red one, a green one and a blue one. Each of them has a single card but they do not know the cards of the other players. Ann has the red card, Bob has the green card and Claire has the blue card. This example is depicted in the pointed epistemic model  represented below. In this example,  and . Each world is labelled by the propositional letters which are true in this world and  corresponds to the actual world. There is an arrow indexed by agent  from a possible world  to a possible world  when . Reflexive arrows are omitted, which means that for all  and all , we have that .
+frame|Card Example: pointed epistemic model 
+ stands for : " has the red card''
+
+ stand for: " has the blue card''
+
+ stands for: " has the green card''
+
+and so on...
+
+When accessibility relations are equivalence relations (like in this example) and we have that , we say that agent  cannot distinguish world  from world  (or world  is indistinguishable from world  for agent ). So, for example,  cannot distinguish the actual world  from the possible world where  has the blue card (),  has the green card () and  still has the red card ().
+
+In particular, the following statements hold:
+
+'All the agents know the color of their card'.
+
+' knows that  has either the blue or the green card and that  has either the blue or the green card'.
+
+'Everybody knows that  has either the red, green or blue card and this is even common knowledge among all agents'.
+
+ Knowledge versus Belief 
+We use the same notation  for both knowledge and belief. Hence, depending on the context,  will either read ‘the agent  Knows that  holds’ or ‘the agent  Believes that  holds’. A crucial difference is that, unlike knowledge, beliefs can be wrong: the axiom  holds only for knowledge, but not necessarily for belief. This axiom called axiom T (for Truth) states that if the agent knows a proposition, then this proposition is true. It is often considered to be the hallmark of knowledge and it has not been subjected to any serious attack ever since its introduction in the Theaetetus by Plato.
+
+The notion of knowledge might comply to some other constraints (or axioms) such as : if agent  knows something, she knows that she knows it. These constraints might affect the nature of the accessibility relations  which may then comply to some extra properties. So, we are now going to define some particular classes of epistemic models that all add some extra constraints on the accessibility relations . These constraints are matched by particular axioms for the knowledge operator . Below each property, we give the axiom which defines the class of epistemic frames that fulfill this property. ( stands for  for any .)
+
++
+Properties of accessibility relations and corresponding axiomsserialDtransitive4Euclidicity5reflexiveTsymmetricBconfluent.2weakly connected.3semi-Euclidean.3.2R1.4
+
+We discuss the axioms above. Axiom 4 states that if the agent knows a proposition, then she knows that she knows it (this axiom is also known as the “KK-principle”or “KK-thesis”). In epistemology, axiom 4 tends to be accepted by internalists, but not by externalists. Axiom 4 is nevertheless widely accepted by computer scientists (but also by many philosophers, including Plato, Aristotle, Saint Augustine, Spinoza and Schopenhauer, as Hintikka recalls ). A more controversial axiom for the logic of knowledge is axiom 5 for Euclidicity: this axiom states that if the agent does not know a proposition, then she knows that she does not know it. Most philosophers (including Hintikka) have attacked this axiom, since numerous examples from everyday life seem to invalidate it.For example, assume that a university professor believes (is certain) that one of her colleague’s seminars is on Thursday (formally ). She is actually wrong because it is on Tuesday (). Therefore, she does not know that her colleague’s seminar is on Tuesday (). If we assume that axiom is valid then we should conclude that she knows that she does not know that her colleague’s seminar is on Tuesday () (and therefore she also believes that she does not know it: ). This is obviously counterintuitive. In general, axiom 5 is invalidated when the agent has mistaken beliefs, which can be due for example to misperceptions, lies or other forms of deception. Axiom B states that it cannot be the case that the agent considers it possible that she knows a false proposition (that is, ). If we assume that axioms T and 4 are valid, then axiom B falls prey to the same attack as the one for axiom 5 since this axiom is derivable. Axiom D states that the agent’s beliefs are consistent. In combination with axiom K (where the knowledge operator is replaced by a belief operator), axiom D is in fact equivalent to a simpler axiom D' which conveys, maybe more explicitly, the fact that the agent’s beliefs cannot be inconsistent: . The other intricate axioms .2, .3, .3.2 and .4 have been introduced by epistemic logicians such as Lenzen and Kutchera in the 1970s and presented for some of them as key axioms of epistemic logic. They can be characterized in terms of intuitive interaction axioms relating knowledge and beliefs.
+
+ Axiomatization 
+
+The Hilbert proof system K for the basic modal logic is defined by the following axioms and inference rules: for all ,
+
++Proof system  for PropAll axioms and inference rules of propositional logicKNecIf  then 
+
+The axioms of an epistemic logic obviously display the way the agents reason. For example, the axiom K together with the rule of inference Nec entail that if I know  () and I know that  implies   ( then I know that  (). Stronger constraints can be added. The following  proof systems for  are often used in the literature.
+
++Common proof systems for KD45=K+D+4+5                                    S4.2=S4+.2              S4.3.2=S4+.3.2S5=S4+5S4=K+T+4S4.3=S4+.3S4.4=S4+.4Br=K+T+B
+
+We define the set of proof systems .
+
+Moreover, for all , we define the proof system  by adding the following axiom schemes and rules of inference to those of . For all ,
+
+DisMixInd
+
+The relative strength of the proof systems for knowledge is as follows:
+
+So, all the theorems of  are also theorems of  and . Many philosophers claim that in the most general cases, the logic of knowledge is  or . Typically, in computer science and in many of the theories developed in artificial intelligence, the logic of belief (doxastic logic) is taken to be  and the logic of knowledge (epistemic logic) is taken to be , even if  is only suitable for situations where the agents do not have mistaken beliefs.  has been propounded by Floridi as the logic of the notion of 'being informed’ which mainly differs from the logic of knowledge by the absence of introspection for the agents.
+
+For all , the class of –models or –models is the class of epistemic models whose accessibility relations satisfy the properties listed above defined by the axioms of  or . Then, for all ,  is sound and strongly complete for  w.r.t. the class of –models, and  is sound and strongly complete for  w.r.t. the class of –models.
+
+ Decidability and Complexity 
+
+The satisfiability problem for all the logics introduced is decidable. We list below the computational complexity of the satisfiability problem for each of them. Note that it becomes linear in time if there are only finitely many propositional letters in the language. For , if we restrict to finite nesting, then the satisfiability problem is NP-complete for all the modal logics considered. If we then further restrict the language to having only finitely many primitive propositions, the complexity goes down to linear in time in all cases.
+
++Complexity of the satisfiability problemLogicwith common knowledgeK, S4PSPACEPSPACEEXPTIMEKD45NPPSPACEEXPTIMES5NPPSPACEEXPTIME
+
+The computational complexity of the model checking problem is in P in all cases.
+
+ Adding Dynamics 
+
+Dynamic Epistemic Logic (DEL) is a logical framework for modeling epistemic situations involving several agents, and changes that occur to these situations as a result of incoming information or more generally incoming action. The methodology of DEL is such that it splits the task of representing the agents’ beliefs and knowledge into three parts:
+
+ One represents their beliefs about an initial situation thanks to an epistemic model;
+ One represents their beliefs about an event taking place in this situation thanks to an event model;
+ One represents the way the agents update their beliefs about the situation after (or during) the occurrence of the event thanks to a product update.
+
+Typically, an informative event can be a public announcement to all the agents of a formula : this public announcement and correlative update constitute the dynamic part. However, epistemic events can be much more complex than simple public announcement, including hiding information for some of the agents, cheating, lying, bluffing, etc. This complexity is dealt with when we introduce the notion of event model. We will first focus on public announcements to get an intuition of the main underlying ideas of DEL.
+
+ Public Events 
+
+In this section, we assume that all events are public. We start by giving a concrete example where DEL can be used, to better understand what is going on. This example is called the muddy children puzzle. Then, we will present a formalization of this puzzle in a logic called Public Announcement Logic (PAL). The muddy children puzzle is one of the most well known puzzles that played a role in the development of DEL. Other significant puzzles include the sum and product puzzle, the Monty Hall dilemma, the Russian cards problem, the two envelopes problem, Moore's paradox, the hangman paradox, etc.
+
+Muddy Children Example:
+
+We have two children, A and B, both dirty. A can see B but not himself, and B can see A but not herself. Let  be the proposition stating that A is dirty, and  be the proposition stating that B is dirty.
+
+ We represent the initial situation by the pointed epistemic model  represented below, where relations between worlds are equivalence relations. States  intuitively represent possible worlds, a proposition (for example ) satisfiable at one of these worlds intuitively means that in the corresponding possible world, the intuitive interpretation of  (A is dirty) is true. The links between worlds labelled by agents (A or B) intuitively express a notion of indistinguishability for the agent at stake between two possible worlds. For example, the link between  and  labelled by A intuitively means that A can not distinguish the possible world  from  and vice versa. Indeed, A cannot see himself, so he cannot distinguish between a world where he is dirty and one where he is not dirty. However, he can distinguish between worlds where B is dirty or not because he can see B. With this intuitive interpretation we are brought to assume that our relations between worlds are equivalence relations.centre|frame|Initial situation: pointed epistemic model 
+ Now, suppose that their father comes and announces that at least one is dirty (formally, ). Then we update the model and this yields the pointed epistemic model represented below. What we actually do is suppressing the worlds where the content of the announcement is not fulfilled. In our case this is the world where  and  are true. This suppression is what we call the update. We then get the model depicted below. As a result of the announcement, both A and B do know that at least one of them is dirty. We can read this from the epistemic model.centre|frame|Updated epistemic model after the first announcement 
+ Now suppose there is a second (and final) announcement that says that neither knows they are dirty (an announcement can express facts about the situation as well as epistemic facts about the knowledge held by the agents). We then update similarly the model by suppressing the worlds which do not satisfy the content of the announcement, or equivalently by keeping the worlds which do satisfy the announcement. This update process thus yields the pointed epistemic model represented below. By interpreting this model, we get that A and B both know that they are dirty, which seems to contradict the content of the announcement. However, if we assume that A and B are both perfect reasoners and that this is common knowledge among them, then this inference makes perfect sense.
+centre|Updated epistemic model after the second announcement|frame
+
+Public announcement logic (PAL):
+
+We present the syntax and semantic of Public Announcement Logic (PAL), which combines features of epistemic logic and propositional dynamic logic.
+
+We define the language  inductively by the following grammar in BNF:
+
+where .
+
+The language  is interpreted over epistemic models. The truth conditions for the connectives of the epistemic language are the same as in epistemic logic (see above). The truth condition for the new dynamic action modality  is defined as follows:
+iff
+where  with
+
+,
+
+ for all  and
+
+.
+
+The formula  intuitively means that after a truthful announcement of ,  holds. A public announcement of a proposition  changes the current epistemic model like in the figure below.centre|Eliminate all worlds which currently do not satisfy |frame
+
+The proof system  defined below is sound and strongly complete for  w.r.t. the class of all pointed epistemic models.
+
+The Axioms and the rules of inference of the proof system (see above)Red 1Red 2Red 3Red 4
+
+The axioms Red 1 - Red 4 are called reduction axioms because they allow to reduce any formula of  to a provably equivalent formula of  in . The formula  is a theorem provable in . It states that after a public announcement of , the agent knows that  holds.
+
+PAL is decidable, its model checking problem is solvable in polynomial time and its satisfiability problem is PSPACE-complete.
+
+Muddy children puzzle formalized with PAL:
+
+Here are some of the statements that hold in the muddy children puzzle formalized in PAL.
+
+'In the initial situation, A is dirty and B is dirty'.
+
+'In the initial situation, A does not know whether he is dirty and B neither'.
+
+'After the public announcement that at least one of the children A and B is dirty, both of them know that at least one of them is dirty'. However:
+
+'After the public announcement that at least one of the children A and B is dirty, they still do not know that they are dirty'. Moreover:
+
+'After the successive public announcements that at least one of the children A and B is dirty and that they still do not know whether they are dirty, A and B then both know that they are dirty'.
+
+In this last statement, we see at work an interesting feature of the update process: a formula is not necessarily true after being announced. That is what we technically call “self-persistence” and this problem arises for epistemic formulas (unlike propositional formulas). One must not confuse the announcement and the update induced by this announcement, which might cancel some of the information encoded in the announcement.
+
+ Arbitrary Events 
+
+In this section, we assume that events are not necessarily public and we focus on items 2 and 3 above, namely on how to represent events and on how to update an epistemic model with such a representation of events by means of a product update.
+
+ Event Model 
+
+Epistemic models are used to model how agents perceive the actual world. Their perception can also be described in terms of knowledge and beliefs about the world and about the other agents’ beliefs. The insight of the DEL approach is that one can describe how an event is perceived by the agents in a very similar way. Indeed, the agents’ perception of an event can also be described in terms of knowledge and beliefs. For example, the private announcement of  to  that her card is red can also be described in terms of knowledge and beliefs: while  tells  that her card is red (event )  believes that nothing happens (event ). This leads to define the notion of event model whose definition is very similar to that of an epistemic model.
+
+A pointed event model  represents how the actual event represented by  is perceived by the agents. Intuitively,  means that while the possible event represented by  is occurring, agent  considers possible that the possible event represented by  is actually occurring.
+
+An event model is a tuple  where:
+
+  is a non-empty set of possible events,
+  is a binary relation called an accessibility relation on , for each ,
+  is a function called the precondition function assigning to each possible event a formula of .
+
+ denotes the set  .We write  for , and  is called a pointed event model ( often represents the actual event).
+
+Card Example:
+
+Let us resume the card example and assume that players  and  show their card to each other. As it turns out,  noticed that  showed her card to  but did not notice that  did so to . Players  and  know this. This event is represented below in the event model .
+
+The possible event  corresponds to the actual event ‘players  and  show their and cards respectively to each other’ (with precondition ),  stands for the event ‘player  shows her green card’ (with precondition ) and  stands for the atomic event ‘player  shows her red card’ (with precondition ). Players  and  show their cards to each other, players  and  know this and consider it possible, while player  considers possible that player  shows her red card and also considers possible that player  shows her green card, since he does not know her card. In fact, that is all that player  considers possible because she did not notice that  showed her card.
+
+centre|frame|Pointed event model : Players A and B show their cards to each other in front of player C
+
+Another example of event model is given below. This second example corresponds to the event whereby Player  shows her red card publicly to everybody. Player  shows her red card, players ,  and  ‘know’ it, players ,  and  ‘know’ that each of them ‘knows’ it, etc. In other words, there is common knowledge among players ,  and  that player  shows her red card.
+
+centre|frame|Pointed event model 
+
+ Product Update 
+
+The DEL product update is defined below. This update yields a new pointed epistemic model  representing how the new situation which was previously represented by  is perceived by the agents after the occurrence of the event represented by .
+
+Let  be an epistemic model and let  be an event model. The product update of  and  is the epistemic model  defined as follows: for all  and all ,
+===
+If  and  are such that  then  denotes the pointed epistemic model . This definition of the product update is conceptually grounded.
+
+Card Example:
+
+As a result of the first event described above (Players  and  show their cards to each other in front of player ), the agents update their beliefs. We get the situation represented in the pointed epistemic model  below. In this pointed epistemic model, the following statement holds:  It states that player  knows that player  has the card but player  'believes' that it is not the case.
+
+centre|frame|Updated pointed epistemic model The result of the second event is represented below. In this pointed epistemic model, the following statement holds: . It states that there is common knowledge among  and  that they know the true state of the world (namely  has the red card,  has the green card and  has the blue card), but  does not know it.
+
+centre|frame|Updated pointed epistemic model 
+
+Based on these three components (epistemic model, event model and product update), Baltag, Moss and Solecki defined a general logical language inspired from the logical language of propositional dynamic logic to reason about information and knowledge change.

@@ -1,0 +1,19 @@
+OpenIO was founded in 2015 by Laurent Denel (CEO), Jean-François Smigielski (CTO), and five other co-founders, to offer an object storage solution for building hyper-scalable IT infrastructure for a wide range of applications. They have leveraged open source software, developed since 2006, based on a grid technology that enables dynamic behaviour and supports heterogenous hardware. In October 2017 OpenIO completed a $5 million funding round. In July 2020 OpenIO has been acquired by OVH.
+
+Product
+OpenIO is a software-defined object storage solution that supports S3 and can be deployed on-premises, cloud-hosted or at the edge, on any hardware mix. It has been designed from the beginning for performance and cost-efficiency at any scale, and it has been optimized for Big Data, HPC and AI. 
+
+OpenIO stores objects within in a flat structure within a massively distributed directory with indirections, which allows the data query path to be independent of the number of nodes and the performance not to be affected by the growth of capacity. Servers are organized as a grid of nodes massively distributed, where each node takes part in directory and storage services, which ensures that there is no single point of failure and that new nodes are automatically discovered and immediately available without the need to rebalance data. 
+
+The software is built on top of ConsciousGrid, a technology that ensures optimal data placement based on real-time metrics and allows the addition or removal of storage devices with automatic performance and load impact optimization. For data protection OpenIO has synchronous and asynchronous replication with multiple copies, and an erasure coding implementation based on Reed-Solomon that can be deployed in one data center or geo-distributed or stretched clusters.
+
+The software has a GridForApps feature that catches all events that occur in the cluster and can pass them up in the stack or to applications running on OpenIO nodes. This enables event-driven computing directly into the storage infrastructure. 
+
+OpenIO has native object APIs and SDKs for Python, C and Java, it integrates a HTTP REST/API and has strong compatibility with the Amazon S3 API and the OpenStack Swift API. The company also offers a proprietary File System connector to access data stored in an OpenIO object store through file access methods: it is based on FUSE and presents a POSIX File System which can be shared over local networks via NFS, SMB and FTP.
+
+OpenIO is compatible with x86 and ARMv7/ARMv8 servers running Linux and has low hardware requirements.  It can be installed also on Raspberry Pis and on storage drives with servers embedded.
+
+The open source code is available on Github and it is licensed under AGPL3 for server code and LGPL3 for client code.
+
+ Performance 
+OpenIO claimed to have reached 1.372 Tbps write speed (171 GB/s) on a cluster of 350 physical machines. The benchmark scenario, conducted under production conditions with standard hardware (commodity servers with 7200 rpm HDDs), consisted in backing up a 38 PB Hadoop datalake via the DistCp command. This level of performance marks, according to analysts, the arrival of a new generation of object storage technologies oriented toward high performance and hyper-scalability.

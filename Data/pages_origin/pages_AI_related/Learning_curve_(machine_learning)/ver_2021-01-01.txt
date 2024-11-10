@@ -1,0 +1,50 @@
+{{context|date=March 2019}}
+{{Underlinked|date=February 2019}}
+[[File:Learning Curves (Naive Bayes).png|thumb|Learning curve showing training score and cross validation score]]
+{{Machine learning bar}}
+
+In [[machine learning]], a '''learning curve''' (or '''training curve''') [[Plot (graphics)|plots]] the [[Mathematical optimization|optimal]] value of a model's [[loss function]] for a training set against this loss function evaluated on a [[Cross-validation (statistics)#Holdout method|validation]] data set with same parameters as produced the optimal function. It is a tool to find out how much a machine model benefits from adding more training data and whether the estimator suffers more from a variance error or a bias error. If both the validation score and the training score converge to a value that is too low with increasing size of the training set, it will not benefit much from more training data.<ref name="scikit-learn_learning-curve">{{cite web |url=https://scikit-learn.org/stable/modules/learning_curve.html#learning-curve |title=Validation curves: plotting scores to evaluate models — scikit-learn 0.20.2 documentation |date=  |author=scikit-learn developers |accessdate= February 15, 2019}}</ref>
+
+The machine learning curve is useful for many purposes including comparing different algorithms,<ref>{{cite web|last=Madhavan|first=P.G.|title=A New Recurrent Neural Network Learning Algorithm for Time Series Prediction|url=http://www.jininnovation.com/RecurrentNN_JIntlSys_PG.pdf|work=Journal of Intelligent Systems|page=113 Fig. 3|volume=7|issue=1–2|date=1997}}</ref>  choosing model parameters during design,<ref>{{cite web|title=Machine Learning 102: Practical Advice|url=https://astroml.github.com/sklearn_tutorial/practical.html#learning-curves|work=Tutorial: Machine Learning for Astronomy with Scikit-learn}}</ref> adjusting optimization to improve convergence, and determining the amount of data used for training.<ref>{{cite journal|last=Meek|first=Christopher|author2=Thiesson, Bo |author3=Heckerman, David |title=The Learning-Curve Sampling Method Applied to Model-Based Clustering|journal=Journal of Machine Learning Research|date=Summer 2002|volume=2|issue=3|page=397|url=http://connection.ebscohost.com/c/articles/7188676/learning-curve-sampling-method-applied-model-based-clustering|archive-url=https://web.archive.org/web/20130715142652/http://connection.ebscohost.com/c/articles/7188676/learning-curve-sampling-method-applied-model-based-clustering|url-status=dead|archive-date=2013-07-15}}</ref>
+
+In the machine learning domain, there are two implications of learning curves differing in the x-axis of the curves, with experience of the model graphed either as the number of training examples used for learning or the number of iterations used in training the model.<ref>{{cite book|last1=Sammut|first1=Claude|title=Encyclopedia of Machine Learning|publisher=Springer|isbn=978-0-387-30768-8|page=578|url=https://books.google.com/books?id=i8hQhp1a62UC&q=neural+network+learning+curve&pg=PT604|edition=1st|last2=Webb |first2 = Geoffrey I. (Eds.)|date=28 March 2011}}</ref>
+
+== Formal definition ==
+One model of a machine learning is producing a [[Function (mathematics)|function]], {{Math|f(x)}}, which given some information, {{Math|x}}, predicts some variable, {{Math|y}}, from training data <math>X_\text{train} </math> and <math>Y_\text{train} </math>. It is distinct from [[mathematical optimization]] because <math>f </math> should predict well for <math>x</math>outside of <math>X_\text{train}</math>.
+
+We often constrain the possible functions to a family <math>\{f_\theta(x): \theta \in \Theta \} </math> so that the function is [[Generalization (learning)|generalizable]]<ref name=":0">{{Cite book|last1=Goodfellow|first1=Ian|url=https://books.google.com/books?id=Np9SDQAAQBAJ&q=deep%20learning%20goodfellow&pg=PA108|title=Deep Learning|last2=Bengio|first2=Yoshua|last3=Courville|first3=Aaron|date=2016-11-18|publisher=MIT Press|isbn=978-0-262-03561-3|location=|pages=108|language=en}}</ref> and so that certain properties are true,  either to make finding a good <math>f </math> easier, or because we have some a priori reason to think they are true.<ref name=":0" />{{Rp|172}}
+
+Given that it is not possible to produce a function that perfectly fits out data, it is then necessary to produce a loss function <math>L(f_\theta(X), Y') </math> to measure how good our prediction is.  We then define an optimization process which finds a <math>\theta </math> which minimizes <math>L(f_\theta(X_\text{train}), Y_\text{train}) </math> referred to as <math>\theta^*(X, Y) </math> .
+
+=== Training curve for amount of data ===
+Then if our training data is <math>\{x_1, x_2, \dots, x_n \}, \{ y_1, y_2, \dots y_n \} </math> and our validation data is <math>\{ x_1', x_2', \dots x_m' \},  \{ y_1', y_2', \dots y_m' \} </math> a learning curve is the plot of the two curves
+
+# <math>i \mapsto L(f_{\theta^*(X_i, Y_i)}(X_i), Y_i ) </math>
+# <math>i \mapsto L(f_{\theta^*(X_i, Y_i)}(X_i'), Y_i' ) </math>
+
+where <math>X_i = \{ x_1, x_2, \dots x_i \} </math>
+
+=== Training curve for nuber of iterations ===
+Many optimization processes are iterative, repeating the same step until the process [[Convergence (mathematics)|converges]] to an optimal value. [[Gradient descent]] is one such algorithm. If you define <math>\theta_i^*</math> as the approximation of the optimal <math>\theta</math> after <math>i</math> steps, a learning curve is the plot of 
+
+# <math>i \mapsto L(f_{\theta_i^*(X, Y)}(X), Y) </math>
+# <math>i \mapsto L(f_{\theta_i^*(X, Y)}(X'), Y') </math>
+
+==See also==
+*[[Overfitting]]
+*[[Bias–variance tradeoff]]
+*[[Model selection]]
+*[[Cross-validation (statistics)]]
+*[[Validity (statistics)]]
+*[[Verification and validation]]
+
+==References==
+{{Reflist}}
+
+
+{{compu-ai-stub}}
+{{statistics-stub}}
+
+[[Category:Model selection]]
+[[Category:Machine learning]]
+[[Category:Artificial intelligence]]

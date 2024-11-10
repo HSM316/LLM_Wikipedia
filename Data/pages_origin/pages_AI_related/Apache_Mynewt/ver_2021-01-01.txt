@@ -1,0 +1,95 @@
+{{refimprove|date=November 2018}}
+{{Infobox OS
+| name = Mynewt
+| logo = [[File:Apache_Mynewt_Logo.svg|200px|Apache Mynewt Logo]]
+| screenshot = 
+| caption = Mynewt official logo
+| developer = [[Apache Software Foundation]], community
+| source_model = [[Open-source model|Open-source]]
+| supported_platforms = [[ARM Cortex-M0|Cortex-M0]], [[ARM Cortex-M3|Cortex-M3]], [[ARM Cortex-M4|Cortex-M4]], [[ARM Cortex-M7|Cortex-M7]], [[MIPS architecture|MIPS32]], [[PIC microcontroller#PIC32M MIPS-based line|Microchip PIC32]], [[RISC-V]]
+| ui = 
+| family = 
+| latest_release_version = 1.7.0
+| latest_release_date = {{Start date and age|2019|08|04}}<ref>{{cite web|url=https://cwiki.apache.org/confluence/display/MYNEWT/RN-1.7.0|title=RN-1.7.0 - Apache Mynewt - Apache Software Foundation|access-date=5 August 2019}}</ref>
+| latest_test_version = 
+| latest_test_date = 
+| repo = {{URL|https://gitbox.apache.org/repos/asf?p&#61;mynewt-core.git|Mynewt Repository}}
+| marketing_target = 
+| programmed_in = [[C (programming language)|C]] (Mynewt OS)<br />[[Go (programming language)|Go]] (Newt Tool)
+| prog_language = 
+| language = 
+| updatemodel = 
+| package_manager = 
+| working_state = Stable
+| license = [[Apache License 2.0]]
+| website = {{URL|mynewt.apache.org}}
+}}
+
+'''Apache Mynewt''' is a modular [[real-time operating system]] for connected [[Internet of things]] (IoT)<ref>{{Cite web|url=https://globenewswire.com/news-release/2016/05/20/842021/0/en/Arduino-and-Runtime-Collaborate-to-Introduce-Apache-Mynewt-incubating-to-Arduino-Ecosystem.html|title=Arduino and Runtime Collaborate to Introduce Apache Mynewt (incubating) to Arduino Ecosystem|website=globenewswire.com|access-date=2016-05-24}}</ref> devices that must operate for long times under power, memory, and storage constraints. It is [[free and open-source software]] incubating under the [[Apache Software Foundation]],<ref>{{Cite web|url=http://incubator.apache.org/projects/mynewt.html|title=Mynewt Incubation Status – Apache Incubator|website=incubator.apache.org|access-date=2016-05-24}}</ref> with [[source code]] distributed under the [[Apache License#Version 2.0|Apache License 2.0]], a permissive license that is conducive to commercial adoption of [[open-source software]].<ref>{{Cite web|url=https://www.infoq.com/news/2016/06/apache-mynewt-iot-os|title=Apache Mynewt RTOS Addresses IoT Power, Memory, Storage Constraints|website=www.infoq.com|access-date=2016-06-28}}</ref>
+
+== Overview ==
+Apache Mynewt is a real-time operating system with a rich set of [[Library (computing)|libraries]] intended to make prototyping, deploying, and managing 32-bit [[microcontroller]] based [[Internet of things|IoT]] devices easy.<ref>{{Cite web|url=http://www.eetimes.com/document.asp?doc_id=1329158|title=Open RTOS Targets Net of Things|website=www.eetimes.com|access-date=2016-05-24}}</ref> It is highly composable, to allow building [[embedded system]] applications (e.g., locks, medical devices, industrial IoT) across different types of microcontrollers. The name ''Mynewt'' is wordplay on the English word ''[[wikt:minute|minute]]'', meaning very small: the kernel is only 6 KB in size.
+
+The OS is designed for connectivity, and comes with a full implementation of the [[Bluetooth low energy]] 4.2 stack. With the addition of BLE (supporting all Bluetooth 4.2 compliant security features except privacy) and various utilities such as the default file system, console, shell, logs, stats, etc., the image size is approximately 96 KB for the Nordic nRF51822 Bluetooth SoC.<ref>{{Cite web |url=https://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822 |title=nRF51822 |access-date=2016-05-24 |archive-url=https://web.archive.org/web/20160517194357/http://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822 |archive-date=2016-05-17 |url-status=dead }}</ref> This size metric excludes the [[boot loader]] image.
+
+== Core features ==
+The core operating system supports:<sup>[[ChibiOS/RT|[3]]]</sup>
+* Preemptive [[Thread (computer science)|multithreading]]
+* Tickless priority based [[Scheduling (computing)|scheduling]]
+* Programmable [[Programmable Interval Timer|timers]]
+* System time
+* [[Semaphore (programming)|Semaphores]]
+* [[Mutex]]es
+* Event [[Queue (data structure)|queues]]
+* [[Memory management]] (allocation): [[Dynamic memory allocation|dynamic]] (heap) and [[Memory pool|pool]]
+* Multi-stage software [[watchdog timer]] 
+* Memory or [[data buffer]]s, to hold packet data as it moves up and down the [[Computer network|networking]] [[protocol stack]]
+Other features and utilities include:
+* [[Hardware abstraction]] layer with support for [[CPU time]], [[analog-to-digital converter]] (ADC), [[digital-to-analog converter]] (DAC), [[general-purpose input/output]] (GPIO), Inter-Integrated Circuit ([[I²C]]), [[pulse-width modulation]] (PWM), [[serial port]], [[Serial Peripheral Interface Bus]] (SPI), [[universal asynchronous receiver/transmitter]] (UART).
+* Newtron [[flash file system]] (nffs) with minimal RAM usage and reliability features
+* File system abstraction to allow client code to choose alternate [[file system]]s
+* [[Terminal server|Console access]] and shell package
+* Secure [[Booting|boot loader]] and [[image organizer]] (manager) that includes image integrity verification using [[SHA-256]] and optional [[digital signature]] verification of images before running them
+* Test utilities to build [[regression testing]]
+* Statistics and logs for all major packages
+* JavaScript Object Notation ([[JSON]]) encoder and decoder libraries
+* [[Lua (programming language)|Lua]] interpreter
+
+== Bluetooth low energy ==
+The first network stack available in Mynewt is Bluetooth low energy<ref>{{Cite web|url=http://www.linuxtoday.com/high_performance/apache-mynewt-finds-a-home-on-arduino-srls-latest-sbcs-160520113001.html|title=Apache Mynewt finds a home on Arduino Srl's latest SBCs |website=www.linuxtoday.com|access-date=2016-05-24}}</ref> and is called NimBLE. It complies with Bluetooth Core Specification 4.2.<ref>[https://www.bluetooth.com/specifications/adopted-specifications Bluetooth Core Specification 4.2]</ref>
+
+NimBLE includes both the host and controller components. Access to the controller source code makes the BLE performance highly configurable. For example, the BLE throughput can be adjusted by changing the connection intervals, data packet size, packet queue size etc. A use case requiring a large number of concurrent connections can similarly be configured, provided there is adequate RAM allocated. Example applications that demonstrate how to use available services are included in the package.
+
+== Supported boards ==
+The [[operating system]] is designed for [[cross-platform]] use in [[embedded system]]s (devices) and microcontrollers. It includes board support packages for the following, {{as of|2017|03|lc=y}}:
+* [https://web.archive.org/web/20160526011403/http://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF52832 nRF52832] Bluetooth SoC from Nordic Semiconductor
+* [https://web.archive.org/web/20160517194357/http://www.nordicsemi.com/eng/Products/Bluetooth-Smart-Bluetooth-low-energy/nRF51822 nRF51822]/nRF51422 Bluetooth SoC from Nordic Semiconductor
+* [http://www.st.com/en/evaluation-tools/stm32f3discovery.html STM32F3DISCOVERY] with [[STM32]]F3xx series Cortex-M4 from ST
+* [https://www.olimex.com/Products/ARM/ST/STM32-E407/open-source-hardware STM32-E407] for [http://www.st.com/en/microcontrollers/stm32f407zg.html STM32F407ZGT6] Cortex M4 from ST
+* [https://www.arduino.cc/en/Main/ArduinoBoardZero Arduino Zero] and Zero Pro
+* [https://web.archive.org/web/20170811025434/http://www.arduino.org/products/boards/arduino-m0-pro Arduino M0 Pro] with ATSAMD21G18 Cortex M0
+* [https://www.arduino.cc/en/Main/ArduinoBoard101 Arduino 101], Bluetooth controller only
+* [https://web.archive.org/web/20170818082527/http://www.arduino.org/products/boards/arduino-primo-core Arduino Primo], Bluetooth controller and host
+
+== Package management ==
+The project includes the Newt Tool which is a [[command-line interface]] (CLI) based smart source [[package manager]] system for embedded systems development. Also, it allows composing builds with specified packages and compiler options, generating images and their digital signatures, and finally downloading and debugging the firmware on different targets.
+
+== See also ==
+*[[Embedded operating system]]
+*[[Comparison of real-time operating systems]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{Official website|mynewt.apache.org}}
+* [https://github.com/apache/mynewt-core Apache Mynewt Source Repository]
+
+{{Real-time operating systems}}
+
+[[Category:Embedded operating systems]]
+[[Category:Free software operating systems]]
+[[Category:Free software]]
+[[Category:Internet of things]]
+[[Category:Real-time operating systems]]
+[[Category:Upcoming software]]

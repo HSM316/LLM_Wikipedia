@@ -1,0 +1,33 @@
+Umoove is a high tech startup company that has developed and patented a software-only face and eye tracking technology. The idea was first conceived as an attempt to aid people with disabilities but has since evolved. The only compatibility qualification for tablet computers and smartphones to run Umoove software is a front-facing camera. 
+Umoove headquarters are in Israel on Jerusalem’s Har Hotzvim.
+
+Umoove has 15 employees and received two million dollars in financing in 2012. The company's original founders invested around $800,000 to start the business in 2010.
+In 2013 Umoove was named one of the top three most promising Israeli start ups by Newsgeeks magazine.
+The company also participated in the 2013 LeWeb conference in Paris, France, where innovative technology startups are showcased.
+
+__TOC__
+
+Technology
+The technology uses information extracted from previous frames, such as the angle of the user's head to predict where to look for facial targets in the next frame. This anticipation minimizes the amount of computation needed to scan each image.
+Umoove accounts for variances in environment, lighting conditions and user hand shake/movement. The technology is designed to provide a consistent experience, whether you're in a brightly lit area or a darkened basement, and to work fluidly between them by adapting its processing when it detects color and brightness shifts. It uses an active stabilization technique to filter out natural body movements from an unstable camera in order to minimize false-positive motion detection.
+
+Running the Umoove software on a Samsung Galaxy S3 is said to take up only 2% CPU.
+Umoove works exclusively with software and there is no hardware add-on necessary. It can be run on any smartphone or tablet computer that has a front-facing camera. Umoove claims that even a low-quality camera on an old device will run their software flawlessly.
+
+Umoove Experience
+In January 2014 Umoove released its first game onto the app store. The Umoove Experience game lets users control where they are 'flying' in the game through simple gestures and motions with their head. The avatar will basically go toward wherever the user looks. The game was created to showcase the technology for game developers but that did not stop some from criticizing its simplicity. Umoove also announced that they raised another one million dollars and that they are opening offices in Silicon Valley, California.
+
+In February 2014, Umoove announced that their face-tracking software development kit is available for Android developers as well as iOS.
+
+Reviews
+The Umoove Experience garnered mostly positive reviews from bloggers and mainstream media with some predicting that it could be the future of mobile gaming. Mashable wrote that Umoove's technology could be the emergence of gesture recognition technology in the mobile space, similar to Kinect with console gaming and what Leap Motion has done with desktop computers.
+
+Some, however, remain skeptical. CNET, for example, did not give the game a positive review and called the eye tracking technology ‘freaky but cool’. They also noted that pioneering technologies have been known to fall short of expectations, citing Apple Inc’s Siri as an example. The technology blog GigaOM said that the Umoove Experience is ’awesome’ and technology evangelist Robert Scoble has called Umoove "brilliant".
+
+uHealth
+In January 2015, Umoove released uHealth, a mobile application that uses eye tracking game-like exercise to challenge the user's ability to be attentive, continuously focus, follow commands and avoid distractions. The app is designed in the form of two games, one to improve attention and another that hones focus.
+uHealth is a training tool, not a diagnostic. Umoove has stated that they want to use their technology for diagnosing neurological disorders but this will depend on clinical tests and FDA approval.  The company cites the direct relationship between eye movements and brain activity as well as various vision based therapies have been backed by many scientific studies conducted over the past decades. uHealth is the first time this type of therapy is delivered right to the end user through a simple download.
+
+Collaboration rumors
+In March 2013 there were rumors on the internet that Umoove would be the functioning software embedded into the Samsung Galaxy S4, which was due to launch that month. This rumor was perpetrated by, among others, New York Times, Techcrunch and Yahoo. 
+Once Samsung launched without the Umoove technology rumors about a potential collaboration with Apple Inc hit the web. It has been said that due to the fact that Apple Inc is losing market share and stock value to Samsung they will be more aggressive and eye tracking is a logical place to make that move.

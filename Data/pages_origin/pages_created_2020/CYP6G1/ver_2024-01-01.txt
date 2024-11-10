@@ -1,0 +1,32 @@
+{{Short description|Protein-coding gene in the species Drosophila melanogaster}}
+{{Infobox nonhuman protein
+| Organism=Drosophila melanogaster
+| TaxID = 7227
+| Name=Cytochrome P450 6g1
+| Symbol=Cyp6g1
+| AltSymbols = CYP6-like, DDT-R, Rst(2)DDT
+| RefSeqmRNA = NM_136899.4
+| RefSeqProtein = NP_610743.2
+| UniProt=Q9V674
+| ECnumber = 1.14.-.-
+| EntrezGene = 36316
+| HomoloGene = 59722
+| Chromosome = 2R
+| EntrezChromosome = NT_033778.4
+| GenLoc_start = 12185251
+| GenLoc_end = 12188845
+}}
+'''Cyp6g1''' or '''DDT-R''' is an [[Pesticide resistance|insecticide resistance gene]] for [[DDT resistance|resistance to DDT]] in ''[[Drosophila melanogaster]]''.<ref>{{cite journal | vauthors = McCart C, ffrench-Constant RH | title = Dissecting the insecticide-resistance- associated cytochrome P450 gene Cyp6g1 | journal = Pest Management Science | volume = 64 | issue = 6 | pages = 639–645 | date = June 2008 | pmid = 18338338 | doi = 10.1002/ps.1567 | author2-link = Richard ffrench-Constant | doi-access = free }}</ref> It belongs to the [[cytochrome P450 family]] and is located in chromosome 2R.<ref>{{cite journal | vauthors = Le Goff G, Hilliou F | title = Resistance evolution in Drosophila: the case of CYP6G1 | journal = Pest Management Science | volume = 73 | issue = 3 | pages = 493–499 | date = March 2017 | pmid = 27787942 | doi = 10.1002/ps.4470 }}</ref> Following up their earlier work, Daborn et al. 2002 find the DDT-R gene induces over[[gene transcription|transcription]] of Cyp6g1, of which there are 4 [[gene duplication|duplicates]].<ref name="Clark-et-al-2007">{{cite journal | vauthors = Clark AG, Eisen MB, Smith DR, Bergman CM, Oliver B, Markow TA, Kaufman TC, Kellis M, Gelbart W, Iyer VN, Pollard DA, Sackton TB, Larracuente AM, Singh ND, Abad JP, Abt DN, Adryan B, Aguade M, Akashi H, Anderson WW, Aquadro CF, Ardell DH, Arguello R, Artieri CG, Barbash DA, Barker D, Barsanti P, Batterham P, Batzoglou S, Begun D, etal | display-authors = 6 | author2-link = Andrew G. Clark | author3-link = Michael Eisen | collaboration = Drosophila 12 Genomes Consortium | title = Evolution of genes and genomes on the Drosophila phylogeny | journal = Nature | volume = 450 | issue = 7167 | pages = 203–218 | date = November 2007 | pmid = 17994087 | doi = 10.1038/nature06341 | publisher = [[Nature Portfolio]] | bibcode = 2007Natur.450..203C | s2cid = 2416812 | doi-access = free }}</ref> They also find several substrates of Cyp6g1, namely DDT, [[lufenuron]], and [[nitenpyram]].<ref name="Clark-et-al-2007" />
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://flybase.org/reports/FBgn0025454.html FlyBase Gene Report: Dmel\Cyp6g1] at [[FlyBase]] database of Drosophila genes.
+
+{{Gene-stub}}
+{{Cytochrome P450}}
+[[Category:Cytochrome P450|6]]
+[[Category:Drosophila melanogaster genes]]
+[[Category:DDT]]
+[[Category:EC 1.14]]

@@ -1,0 +1,118 @@
+{{Short description|Double star in the constellation Auriga}}
+{{Starbox begin
+ | name=HD 33203
+}}
+{{Starbox observe
+ | epoch=J2000
+ | ra={{RA|05|10|18.80756}}<ref name="van Leeuwen2007"/>
+ | dec={{DEC|+37|18|06.6588}}<ref name="van Leeuwen2007"/>
+ | appmag_v=6.12<ref name=apjss52_7/>
+ | constell=[[Auriga (constellation)|Auriga]]
+}}
+{{Starbox character
+ | class={{nowrap|K: + B2II}}<ref name=apjs17_371/>
+ | r-i = 
+ | v-r = 
+ | b-v = +0.72<ref name=apjss52_7/>
+ | u-b = −0.36<ref name=apjss52_7/>
+ | variable=
+}}
+{{Starbox astrometry
+ | radial_v=+8.6<ref name=gcsrv/>
+ | prop_mo_ra=+3.01<ref name="van Leeuwen2007"/>
+ | prop_mo_dec=−0.33<ref name="van Leeuwen2007"/>
+ | parallax=2.06
+ | p_error=1.15
+ | parallax_footnote=<ref name="van Leeuwen2007"/>
+ | absmag_v=
+}}<!--
+{{Starbox detail
+ | mass=
+ | radius=
+ | luminosity=
+ | temperature=
+ | metal_fe=
+ | gravity=
+ | rotational_velocity=
+ | age_gyr= 
+}}
+-->{{Starbox catalog
+ | names=[[Durchmusterung|BD]]+37° 1067, [[Henry Draper Catalogue|HD]] 33203, [[Hipparcos Catalogue|HIP]] 24072, [[Smithsonian Astrophysical Observatory Star Catalog|SAO]]&nbsp;57704.
+}}
+{{Starbox reference
+ | Simbad=HD+33203
+}}
+{{Starbox end}}
+'''HD 33203''' is [[double star]] in the northern [[constellation]] of [[Auriga (constellation)|Auriga]]. It includes a bright [[giant star]]<ref name=apjss52_7/> with a [[stellar classification]] of B2II.<ref name=apjs17_371/> The two components have an [[angular separation]] of 1.617[[arc second|″]] along a [[position angle]] of 222.1°.<ref name=aj142_2_56/>
+
+==References==
+{{reflist|refs=
+
+<ref name="van Leeuwen2007">{{citation
+ | last1=van Leeuwen | first1=F.
+ | title=Validation of the new Hipparcos reduction
+ | journal=Astronomy and Astrophysics
+ | volume=474 | issue=2 | pages=653–664 | year=2007
+ | arxiv=0708.1752
+ | bibcode=2007A&A...474..653V
+ | doi=10.1051/0004-6361:20078357
+| s2cid=18759600
+ }}[http://webviz.u-strasbg.fr/viz-bin/VizieR-5?-out.add=.&-source=I/311/hip2&recno=24072 Vizier catalog entry ]</ref>
+
+<ref name=apjs17_371>{{citation
+ | last=Lesh | first=Janet Rountree
+ | title=The Kinematics of the Gould Belt: an Expanding Group?
+ | journal=Astrophysical Journal Supplement
+ | volume=17 | page=371 | date=December 1968
+ | doi=10.1086/190179
+ | bibcode=1968ApJS...17..371L
+| doi-access=free
+ }}</ref>
+
+<ref name=gcsrv>{{citation
+ | last=Wilson | first=Ralph Elmer | year=1953
+ | title=General Catalogue of Stellar Radial Velocities
+ | journal=Carnegie Institute Washington D.C. Publication | publisher=[[Carnegie Institution of Washington]]
+ | location=Washington
+ | bibcode=1953GCRV..C......0W
+}}</ref>
+
+<ref name=apjss52_7>{{citation
+ | last1=Fernie | first1=J. D.
+ | title=New UBVRI photometry for 900 supergiants
+ | journal=Astrophysical Journal Supplement Series
+ | volume=52 | pages=7–22 | date=May 1983
+ | doi=10.1086/190856
+ | bibcode=1983ApJS...52....7F
+| doi-access=free
+ }}</ref>
+
+<ref name=aj142_2_56>{{citation
+ | last1=Hartkopf | first1=William I.
+ | last2=Mason | first2=Brian D.
+ | title=Speckle Interferometry at the USNO Flagstaff Station: Observations Obtained in 2008 and Nine New Orbits 
+ | journal=The Astronomical Journal
+ | volume=142 | issue=2 | id=56 | pages=10
+ | date=August 2011
+ | doi=10.1088/0004-6256/142/2/56 
+ | bibcode=2011AJ....142...56H 
+| doi-access=free}}</ref>
+
+}}
+
+==External links==
+* [http://webviz.u-strasbg.fr/viz-bin/VizieR-S?HIC%2024072 HIC 24072]
+* [http://aladin.u-strasbg.fr/AladinPreview?-c=HD++33203&ident=HD++33203&submit=Aladin+previewer Image HD 33203]
+
+{{Stars of Auriga}}
+
+{{DEFAULTSORT:HD 33203}}
+[[Category:Auriga (constellation)]]
+[[Category:Durchmusterung objects]]
+[[Category:Henry Draper Catalogue objects|033203]]
+[[Category:Hipparcos objects|024072]]
+[[Category:Double stars]]
+[[Category:B-type bright giants]]
+
+
+{{Multi-star-stub}}

@@ -1,0 +1,11 @@
+Vivification is an operation on a description logic knowledge base to improve performance of a semantic reasoner.  Vivification replaces a disjunction of concepts  by the least common subsumer of the concepts .
+
+The goal of this operation is to improve the performance of the reasoner by replacing a complex set of concepts with a single concept which subsumes the original concepts. 
+
+For example, consider the example given in (Cohen 92):  Suppose we have the concept .  This concept can be vivified into a simpler concept .  This summarization leads to an approximation that may not be exactly equivalent to the original.
+
+ An approximation 
+
+Knowledge base vivification is not necessarily exact. If the reasoner is operating under the open world assumption we may get surprising results.  In the previous example, if we replace the disjunction with the vivified concept,  we will arrive at a surprising results.  
+
+First, we find that the reasoner will no longer classify Jill as either a pianist or an organist.  Even though  and  are the only two sub-classes, under the OWA we can no longer classify Jill as playing one or the other.  The reason is that there may be another keyboard instrument (e.g. a harpsichord) that Jill plays but which does not have a specific subclass.   

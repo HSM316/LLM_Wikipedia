@@ -1,0 +1,51 @@
+{{short description|Canadian software company}}
+{{primary sources|date=September 2012}}
+
+{{Infobox company
+| name                = Angoss Software Corporation
+| logo                = [[Image:Logo angoss.png|220px|Angoss]]
+| type                = [[Private company|Private]]
+| foundation          = {{start date and age|1984}}
+| location            = [[Toronto]], [[Ontario]], [[Canada]]
+| area_served         = [[United States]]<br>[[UK]]
+| num_employees       = 150 (2015)
+| industry            = [[Software]]
+| homepage            = {{URL |www.angoss.com}}
+}}
+
+'''Angoss Software Corporation''', headquartered in [[Toronto]], [[Ontario]], [[Canada]], with offices in the [[United States]] and [[UK]], is a provider of [[predictive analytics]] systems through software licensing and services. Angoss' customers represent industries including finance, insurance, mutual funds, retail, health sciences, telecom and technology. The company was founded in 1984, and publicly traded on the [[TSX Venture Exchange]] from 2008-2013 under the ticker symbol ANC.{{Citation needed|date=April 2020}} 
+
+In June 2013 the [[private equity firm]] Peterson Partners acquired Angoss for $8.4 million.<ref name="CNN">By Dan Primack, CNN Money. "[http://finance.fortune.cnn.com/2013/06/12/private-equity-deals-354/ Private equity deals.] {{webarchive |url=https://web.archive.org/web/20130618234359/http://finance.fortune.cnn.com/2013/06/12/private-equity-deals-354/ |date=June 18, 2013 }}" June 12, 2013. Retrieved June 17, 2013.</ref>
+
+==Software==
+* KnowledgeREADER is an integrated [[customer intelligence]] product combining visual text discovery and predictive analytics for customer experience management.
+* KnowledgeSEEKER is a [[data mining]] product. Its features include data profiling, data visualization and decision tree analysis.<ref name="comsol.ch">[https://web.archive.org/web/20110706223314/http://www.comsol.ch/content.php?si=317&id=132&anzeige=Angoss%20Products COMSOL ONLINE - ANGOSS - Knowledge Engineering<!-- Bot generated title -->]</ref> It was first released in 1990.
+* KnowledgeSTUDIO is a [[data mining]] and [[predictive analytics]] suite for the model development and deployment cycle. Its features include data profiling, data visualization, decision tree analysis, predictive modeling, implementation, scoring, validation, monitoring and scorecard development.<ref name="comsol.ch"/>
+* KnowledgeEXCELERATOR is a visual data discovery software and prediction tool for business analysts and knowledge workers.{{Citation needed|date=May 2020}}
+* StrategyBUILDER is an add-on module for KnowledgeSEEKER and KnowledgeSTUDIO and is a product to design, verify, and deploy predictive and business rules.<ref name="comsol.ch"/>
+
+==Services==
+* FundGUARD is [[software as a service]] for marketing, sales targeting and predictive leads for mutual funds and wealth management companies.
+* ClaimGUARD is a fraud and abuse detection service.
+* Cloud on demand Software is offered for KnowledgeSEEKER, KnowledgeSTUDIO and its text analytics module. 
+* KnowledgeSCORE for [[Salesforce.com]] [[customer relationship management]] is a forecasting and predictive sales analytics system for Salesforce users.
+
+==See also==
+* [[List of statistical packages]]
+* [[Predictive analytics]]
+
+==See also==
+*[[FICO]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+*{{official website|angoss.com}}
+
+[[Category:Companies formerly listed on the TSX Venture Exchange]]
+[[Category:Software companies of Canada]]
+[[Category:Companies established in 1993]]
+[[Category:Data mining and machine learning software]]
+[[Category:1993 establishments in Canada]]
+[[Category:Software companies established in 1993]]

@@ -1,0 +1,58 @@
+{{Short description|AI cyber security company}}
+{{Primary sources|date=October 2023}}
+{{Infobox company
+| name = Vectra AI
+| logo = Vectra ai logo.png
+| image = 
+| image_caption = Vectra AI's office in San Jose, California
+| former_name = TraceVector <br />Vectra Networks
+| type = Privately held
+| industry = [[Cybersecurity]]<br />[[Network security]]<br />[[Cloud security]]
+| founded = {{start date and age|2012}}
+| founders = Mark Abene, James Harlacher, Marc Rogers, Steven Lutz
+| hq_location_city = [[San Jose, California|San Jose]], [[California]]
+| hq_location_country = [[United States|U.S.]]
+| num_locations = 11 offices; 3 Security Operations Centers (2023)
+| area_served = North America, Europe, Middle East, Africa, Australia/New Zealand, Japan and Asia-Pacific
+| key_people = Hitesh Sheth (CEO) <br />Willem Hendrickx (CRO)<br />Oliver Tavakoli (CTO)
+| products = Vectra AI [[Cybersecurity]] Platform (formerly Cognito Platform), Vectra Detect, Vectra Recall, Vectra Stream
+| services = MDR ([[Managed security service]])
+| num_employees = 580
+| website = {{URL|https://www.vectra.ai}}
+}}
+'''Vectra AI, Inc.''' is a cybersecurity company that uses [[Artificial intelligence|AI]] for hybrid attack detection, investigation, and response (NDR) solutions.<ref>{{Cite web |last=Raynel |first=Tom |title=Vectra AI unveils enhanced Cloud Detection Response for AWS |url=https://securitybrief.asia/story/vectra-ai-unveils-enhanced-cloud-detection-response-for-aws |access-date=2023-12-21 |website=SecurityBrief Asia |language=en}}</ref> The company was established in 2012 and operates in 113 countries from its [[San Jose, California]] headquarters.
+
+== History ==
+Vectra AI, formerly known as TraceVector, was founded in 2008 by a group of 4 cybersecurity professionals. Its mission was to offer security professionals an automated [[intrusion detection system]] that could address the escalating and sophisticated [[Cyberattack|cyber-attacks]] which had increased dramatically in recent years.<ref>{{Cite web |title=Archive of TraceVector's website |url=http://www.tracevector.com/ |access-date=2023-11-29 |archive-date=2010-05-25 |archive-url=https://web.archive.org/web/20100525082748/http://www.tracevector.com/ |url-status=bot: unknown }}</ref>
+
+In March 2015, Vectra launched the S-series sensor,<ref>{{Cite web |title=Vectra Networks ships a new sensor for its attack-detection gear |url=https://www.networkworld.com/article/2903056/vectra-networks-ships-a-new-sensor-for-its-attack-detection-gear.html |website=Network World|date=27 March 2015 }}</ref> announced record bookings growth of nearly 400 percent in 2015 over 2014 and expanded its business into [[Europe, the Middle East and Africa|EMEA]].<ref>{{Cite web |title=Vectra Networks Expands into EMEA |url=https://www.vectra.ai/news/vectra-networks-expands-into-emea |website=Vectra Networks website}}</ref>
+
+On January 25, 2022, Vectra AI completed the acquisition of Siriux, a network management software company.<ref>{{Cite web |title=Vectra AI snaps up identity and SaaS posture management startup Siriux |url=https://www.ingen.io/all-news/vectra-ai-snaps-up-identity-and-saas-posture-management-startup-siriux |access-date=2024-09-06 |website=Ingenio |language=en-US}}</ref><ref>{{Cite web |last=Kobialka |first=Dan |date=2022-01-26 |title=Vectra Acquires Identity, SaaS Threat Management Company Siriux - |url=https://www.msspalert.com/post/vectra-acquires-identity-saas-threat-management-company-siriux |access-date=2024-09-06 |website=MSSP Alert |language=en}}</ref>
+
+In 2023, the company partnered with [[Curtiss-Wright]]’s Defense Solutions Division to support cyber stacks used in National Security operations.<ref>{{Cite web |last=Magazine |first=EP&T |date=2023-09-23 |title=Curtiss-Wright Collaborates with Vectra AI |url=https://www.ept.ca/2023/09/curtiss-wright-collaborates-with-vectra-ai/ |access-date=2024-01-10 |website=Electronic Products & Technology |language=en-US}}</ref><ref>{{Cite web |last=Blinde |first=Loren |date=2023-09-13 |title=Curtiss-Wright collaborates with Vectra AI |url=https://intelligencecommunitynews.com/curtiss-wright-collaborates-with-vectra-ai/ |access-date=2024-01-10 |website=Intelligence Community News |language=en-US}}</ref>
+
+The company was listed on [[Forbes]] 2023 AI 50.<ref>{{Cite web |last=CAI" |first="KENRICK |title=The AI 50 2023 |url=https://www.forbes.com/lists/ai50/ |access-date=2024-01-10 |website=Forbes |language=en}}</ref>
+
+The company’s current CEO is Hitesh Sheth.<ref>{{Cite web |last=jirehl |date=2024-01-16 |title=The Top 25 Cybersecurity Executives for 2024 {{!}} The Software Report |url=https://www.thesoftwarereport.com/the-top-25-cybersecurity-executives-for-2024/ |access-date=2024-01-23 |language=en-US}}</ref>
+
+== Product ==
+Vectra AI automates threat detection. The Vectra AI Platform with Attack Signal Intelligence uses AI to analyze the behavior of attackers and automatically apply triage. These threats are then correlated, and each security incident is prioritized. The platform employs the integrated signal powering Extended Detection and Response ([[Extended detection and response|XDR]]). XDR is designed to help with threat detection and response challenges in real-time.<ref>{{Cite web |title=Vectra AI unveils XDR platform with real-time attack signal intelligence |url=https://www.csoonline.com/article/648931/vectra-ai-unveils-xdr-platform-with-real-time-attack-signal-intelligence.html |access-date=2023-12-21 |website=CSO Online |language=en}}</ref><ref>{{Cite web |last= |first= |date=2023-08-08 |title=Vectra AI Platform provides real-time attack signal intelligence |url=https://www.helpnetsecurity.com/2023/08/08/vectra-ai-platform/ |access-date=2023-12-21 |website=Help Net Security |language=en-US}}</ref> In 2023 Vectra announced an update to their Cloud Detection and Response for Amazon Web Services.<ref>{{Cite web |last=Raynel |first=Tom |title=Vectra AI unveils enhanced Cloud Detection Response for AWS |url=https://securitybrief.asia/story/vectra-ai-unveils-enhanced-cloud-detection-response-for-aws |access-date=2024-01-23 |website=SecurityBrief Asia |language=en}}</ref>
+
+== Funding ==
+Vectra AI raised a total of $350 million<ref>{{Cite web |title=Vectra AI Joins Security Unicorn Pack at $1.2B Valuation |url=https://www.sdxcentral.com/articles/news/vectra-ai-joins-security-unicorn-pack-at-1-2b-valuation/2021/04/ |website=SDX Central}}</ref> in funding and is considered a [[Unicorn (finance)|Unicorn]] with its $1.2 billion [[Valuation (finance)|valuation]].{{Citation needed|date=October 2023}}
+
+== Investors ==
+Vectra AI has secured investments from a diverse group of [[investor]]s, including [[Khosla Ventures]], IA Ventures, [[Accel (company)|Accel Partners]], Atlantic Bridge, Wipro Ventures, AME Cloud Ventures, [[Intel Capital]], [[DAG Ventures]], [[Ireland Strategic Investment Fund]], Junos Innovation Fund ([[Juniper Networks|Juniper]]), Nissho Electronics, [[Silver Lake (investment firm)|Silver Lake]], TCV, and [[Blackstone Inc.|Blackstone]].<ref>{{Cite web |title=Vectra AI's Investors |url=https://www.vectra.ai/about/leadership#investors |website=Vectra AI's website}}</ref>
+
+== References ==
+<references />
+
+== Further reading ==
+* {{cite web|title=Global and United States Intrusion Detection and Prevention Software Market Size, Status and Forecast 2021-2027|date=20 September 2021|publisher=Kingpin Market Research|url-access=subscription|url=https://kingpinmarketresearch.com/global-and-united-states-intrusion-detection-and-prevention-software-market-19194401}}
+* {{cite web|title=Intrusion Detection and Prevention Systems (IPS) Software Market Analysis 2022: Industry Size, Share, Emerging Trends, Growth Opportunities And Forecast To 2028|publisher=Stratagem Market Insights|date=January 2022|url-access=subscription|url=https://www.stratagemmarketinsights.com/report/intrusion-detection-and-prevention-systems-ips-software-market-99641}}
+
+[[Category:Companies based in San Jose, California]]
+[[Category:American companies established in 2012]]
+[[Category:Computer security companies]]
+[[Category:Networking companies of the United States]]
+[[Category:Artificial intelligence companies]]

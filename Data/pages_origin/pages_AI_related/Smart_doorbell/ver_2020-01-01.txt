@@ -1,0 +1,24 @@
+{{short description|Internet-connected doorbell}}
+[[File:Ring video doorbell.jpg|thumb|The first-generation [[Ring (company)|Ring video doorbell]] attached next to the front door of a house.]]
+A '''smart doorbell''' is an internet-connected [[doorbell]] that notifies the [[smartphone]] or other electronic device of the home owner when a visitor arrives at the door. It activates when the visitor presses the button of the doorbell, or alternatively, when the doorbell senses a visitor with its built-in [[motion sensor]]s. The smart doorbell lets the home owner use a smartphone app to watch and talk with the visitor by using the doorbell's built-in high-definition infrared camera and microphone.<ref>{{cite web|url=http://canitec.org/best-peephole-camera-reviews-and-buying-guide/ |title=Best Peephole Cameras and Buying Guide |website=canitec.org |date=2017-01-17}}</ref> Some smart doorbells also allow the user to open the door remotely using a [[smart lock]].<ref>{{cite web|author= |url=http://www.makeuseof.com/tag/what-is-a-smart-doorbell-and-which-should-you-buy/ |title=What Is A Smart Doorbell, And Which Should You Buy? |website=Makeuseof.com |date=2015-06-10 |accessdate=2016-12-08}}</ref>
+
+==History==
+One of the earliest smart doorbells that entered to the market is the [[Ring Video Doorbell]] which was created by entrepreneur [[James Siminoff]] in 2013. Since then, several smart doorbells have been introduced to the market, another major one is [[Google Nest#Nest Hello|Nest Hello]], some of them with additional, unique features.<ref>{{cite web|url=http://www.safewise.com/resources/smart-doorbell-buyers-guide |title=8 Best Smart Doorbells for Your Home |website=SafeWise.com |date= |accessdate=2016-12-08}}</ref><ref>{{cite web|last=Shu |first=Les |url=http://www.digitaltrends.com/home/smartbell-doorbell/ |title=Smartbell is a smartphone-based doorbell solution for your home |publisher=Digital Trends |date=2013-11-18 |accessdate=2016-12-08}}</ref><ref>{{cite web|author= |url=https://www.wired.com/2016/10/ding-smart-doorbell-not-smart-good/ |title=Ding Is a Smart Doorbell—But Not Too Smart for Its Own Good |website=Wired.com |date=2016-10-12 |accessdate=2016-12-08}}</ref>{{cite web|url=https://www.pcmag.com/roundup/358684/the-best-video-doorbells |title=The Best Video Doorbells for 2019 |website=pcmag.com}}
+
+==Privacy Issues==
+Alarming concerns regarding the security of the smart doorbells have been raised. Researchers at Pen Test Partners in the UK have analyzed the Ring smart doorbell and concluded that it's possible for an attacker to gain access to the homeowner's wireless network by unscrewing the Ring, pressing the setup button and accessing the configuration URL.<ref>{{cite web|url=http://betanews.com/2016/01/14/your-smart-doorbell-may-let-in-unwanted-visitors/ |title=Your smart doorbell may let in unwanted visitors |website=Betanews.com |accessdate=2016-12-08}}</ref> In another security issue that had been observed, a mix-up of two databases allowed some users of the Ring smart doorbell to view live footage from complete strangers' front porches.<ref>{{cite web|url=https://www.grahamcluley.com/ring-smart-doorbell-privacy/ |title="Smart" doorbell bug exposes video footage from strangers' homes |website=Grahamcluley.com |date=2016-05-17 |accessdate=2016-12-08}}</ref>
+
+==See also==
+* [[Internet of Things]]
+* [[Home automation]]
+* [[Smart, connected products]]
+* [[Intercom]]
+* [[Electronic lock]]
+
+==References==
+{{Reflist}}
+
+[[Category:Bells (instrument)]]
+[[Category:Door furniture]]
+[[Category:Internet of things]]
+[[Category:Home automation]]

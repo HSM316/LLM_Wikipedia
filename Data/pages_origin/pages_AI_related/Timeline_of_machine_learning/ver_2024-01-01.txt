@@ -1,0 +1,167 @@
+{{short description|None}}
+
+{{Update|date=August 2021}}
+This page is a '''timeline of machine learning'''. Major discoveries, achievements, milestones and other major events in [[machine learning]] are included.
+
+==Overview==
+{| class="wikitable sortable"
+|-
+! Decade !! Summary          
+|-
+| pre-<br>1950|| Statistical methods are discovered and refined.
+|-
+| 1950s || Pioneering [[machine learning]] research is conducted using simple algorithms.
+|-
+| 1960s || [[Bayesian method]]s are introduced for [[Bayesian inference|probabilistic inference]] in machine learning.<ref>{{cite journal |last1=Solomonoff |first1=R.J. |title=A formal theory of inductive inference. Part II |journal=Information and Control |date=June 1964 |volume=7 |issue=2 |pages=224–254 |doi=10.1016/S0019-9958(64)90131-7 |doi-access= }}</ref>
+|-
+| 1970s || '[[AI winter]]' caused by pessimism about machine learning effectiveness.
+|-
+| 1980s || Rediscovery of [[backpropagation]] causes a resurgence in machine learning research.
+|-
+| 1990s || Work on Machine learning shifts from a knowledge-driven approach to a data-driven approach. Scientists begin creating programs for computers to analyze large amounts of data and draw conclusions{{snd}} or "learn"{{snd}} from the results.<ref name="Marr">{{harvnb|Marr|2016}}.</ref> [[Support-vector machine]]s (SVMs) and [[recurrent neural network]]s (RNNs) become popular.<ref>{{cite journal |last1=Siegelmann |first1=H.T. |last2=Sontag |first2=E.D. |title=On the Computational Power of Neural Nets |journal=Journal of Computer and System Sciences |date=February 1995 |volume=50 |issue=1 |pages=132–150 |doi=10.1006/jcss.1995.1013 |doi-access=free }}</ref> The fields of computational complexity via neural networks and [[super-Turing computation]] started.<ref>{{cite journal |last1=Siegelmann |first1=Hava |title=Computation Beyond the Turing Limit |journal=Journal of Computer and System Sciences |volume=238 |issue=28 |year=1995 |pages=632–637 |doi=10.1126/science.268.5210.545 |pmid=17756722 |bibcode=1995Sci...268..545S |s2cid=17495161 }}</ref>
+|-
+| 2000s || Support-Vector Clustering<ref>{{cite journal |first1=Asa |last1=Ben-Hur |first2=David |last2=Horn |first3=Hava |last3=Siegelmann |first4=Vladimir|last4=Vapnik |title=Support vector clustering |journal=Journal of Machine Learning Research|volume=2 |year=2001 |pages=51–86}}</ref>  and other [[kernel method]]s<ref>{{cite journal |last1=Hofmann |first1=Thomas |first2=Bernhard |last2=Schölkopf |first3=Alexander J. |last3=Smola |title=Kernel methods in machine learning |journal=The Annals of Statistics |volume=36 |issue=3 |year=2008 |pages=1171–1220 |jstor=25464664 |arxiv=math/0701907| doi=10.1214/009053607000000677 |doi-access=free }}</ref> and [[unsupervised machine learning]] methods become widespread.<ref>{{cite journal |first1=James |last1=Bennett |first2=Stan |last2=Lanning |title=The netflix prize |journal=Proceedings of KDD Cup and Workshop 2007 |date=2007 |url=https://www.cs.uic.edu/~liub/KDD-cup-2007/NetflixPrize-description.pdf }}</ref>  
+|-
+| 2010s || [[Deep learning]] becomes feasible, which leads to machine learning becoming integral to many widely used software services and applications.  Deep learning spurs huge advances in vision and text processing.
+|-
+|2020s
+|[[Generative AI]] leads to revolutionary models, creating a proliferation of [[foundation models]] both proprietary and open source, notably enabling products such as [[ChatGPT]] (text-based) and [[Stable Diffusion]] (image based).  Machine learning and AI enter the wider public consciousness.  The commercial potential of AI based on machine learning causes large increases in valuations of companies linked to AI.
+|}
+
+==Timeline==
+{{Incomplete list|date=December 2022}}
+{| class="wikitable sortable"
+|-
+! Year !! Event type !! Caption !! Event
+|-
+| 1763 || Discovery || The Underpinnings of [[Bayes' theorem|Bayes' Theorem]] || [[Thomas Bayes]]'s work ''[[An Essay towards solving a Problem in the Doctrine of Chances]]'' is published two years after his death, having been amended and edited by a friend of Bayes, [[Richard Price]].<ref>{{cite journal|last1=Bayes|first1=Thomas|title=An Essay towards solving a Problem in the Doctrine of Chance|journal=Philosophical Transactions|date=1 January 1763|volume=53|pages=370–418|doi=10.1098/rstl.1763.0053|jstor=105741|doi-access=free}}</ref> The essay presents work which underpins [[Bayes theorem]].
+|-
+| 1805 || Discovery || Least Square || [[Adrien-Marie Legendre]] describes the "méthode des moindres carrés", known in English as the [[least squares]] method.<ref>{{cite book|last1=Legendre|first1=Adrien-Marie|title=Nouvelles méthodes pour la détermination des orbites des comètes|date=1805|publisher=Firmin Didot|location=Paris|page=viii|url=https://archive.org/details/bub_gb_FRcOAAAAQAAJ|accessdate=13 June 2016|language=French}}</ref> The least squares method is used widely in [[data fitting]].
+|-
+| 1812 || || [[Bayes' theorem|Bayes' Theorem]] || [[Pierre-Simon Laplace]] publishes ''Théorie Analytique des Probabilités'', in which he expands upon the work of Bayes and defines what is now known as [[Bayes' Theorem]].<ref>{{cite web|last1=O'Connor|first1=J J|last2=Robertson|first2=E F|title=Pierre-Simon Laplace|url=http://www-history.mcs.st-and.ac.uk/Biographies/Laplace.html|publisher=School of Mathematics and Statistics, University of St Andrews, Scotland|accessdate=15 June 2016}}</ref>
+|-
+| 1913 || Discovery || Markov Chains || [[Andrey Markov]] first describes techniques he used to analyse a poem. The techniques later become known as [[Markov chains]].<ref>{{cite journal |last1=Langston |first1=Nancy |title=Mining the Boreal North |journal=American Scientist |date=2013 |volume=101 |issue=2 |page=1 |doi=10.1511/2013.101.1 |quote=Delving into the text of Alexander Pushkin's novel in verse Eugene Onegin, Markov spent hours sifting through patterns of vowels and consonants. On January 23, 1913, he summarized his findings in an address to the Imperial Academy of Sciences in St. Petersburg. His analysis did not alter the understanding or appreciation of Pushkin's poem, but the technique he developed—now known as a Markov chain—extended the theory of probability in a new direction. }}</ref>
+|-
+|1943
+|Discovery
+|[[Artificial neuron|Artificial Neuron]]
+|[[Warren Sturgis McCulloch|Warren McCulloch]] and [[Walter Pitts]] develop a mathematical model that imitates the functioning of a biological neuron, the [[artificial neuron]] which is considered to be the first neural model invented.<ref>{{cite journal |last1=McCulloch |first1=Warren S. |last2=Pitts |first2=Walter |title=A logical calculus of the ideas immanent in nervous activity |journal=The Bulletin of Mathematical Biophysics |date=December 1943 |volume=5 |issue=4 |pages=115–133 |doi=10.1007/BF02478259 }}</ref>
+|-
+| 1950 || || Turing's Learning Machine || [[Alan Turing]] proposes a 'learning machine' that could learn and become artificially intelligent. Turing's specific proposal foreshadows [[genetic algorithms]].<ref>{{cite journal |last1=Turing |first1=A. M. |title=I.—COMPUTING MACHINERY AND INTELLIGENCE |journal=Mind |date=1 October 1950 |volume=LIX |issue=236 |pages=433–460 |doi=10.1093/mind/LIX.236.433 }}</ref> 
+|-
+| 1951 || || First Neural Network Machine || [[Marvin Minsky]] and Dean Edmonds build the first neural network machine, able to learn, the [[Stochastic Neural Analog Reinforcement Calculator|SNARC]].<ref>{{Harvnb|Crevier|1993|pp=34–35}} and {{Harvnb|Russell|Norvig|2003|p=17}}.</ref>
+|-
+| 1952 || || Machines Playing Checkers || [[Arthur Samuel (computer scientist)|Arthur Samuel]] joins IBM's Poughkeepsie Laboratory and begins working on some of the very first machine learning programs, first creating programs that play [[checkers]].<ref name="aaai">{{cite journal |last1=McCarthy |first1=J. |last2=Feigenbaum |first2=E. |title=In memoriam—Arthur Samuel (1901–1990) |journal=AI Magazine |date=1 September 1990 |volume=11 |issue=3 |pages=10–11 |url=https://dl.acm.org/doi/10.5555/95618.95622 }}</ref>
+|-
+| 1957 || Discovery || Perceptron || [[Frank Rosenblatt]] invents the [[perceptron]] while working at the [[Cornell Aeronautical Laboratory]].<ref>{{cite journal |last1=Rosenblatt |first1=F. |title=The perceptron: A probabilistic model for information storage and organization in the brain. |journal=Psychological Review |date=1958 |volume=65 |issue=6 |pages=386–408 |doi=10.1037/h0042519 |pmid=13602029 |citeseerx=10.1.1.588.3775 |s2cid=12781225 }}</ref> The invention of the perceptron generated a great deal of excitement and was widely covered in the media.<ref>{{cite magazine|last1=Mason|first1=Harding|last2=Stewart|first2=D|last3=Gill|first3=Brendan|title=Rival|url=http://www.newyorker.com/magazine/1958/12/06/rival-2|accessdate=5 June 2016|magazine=The New Yorker|date=6 December 1958}}</ref>
+|-
+| 1963 || Achievement || Machines Playing Tic-Tac-Toe || [[Donald Michie]] creates a 'machine' consisting of 304 match boxes and beads, which uses [[reinforcement learning]] to play [[Tic-tac-toe]] (also known as noughts and crosses).<ref>{{cite web|last1=Child|first1=Oliver|title=Menace: the Machine Educable Noughts And Crosses Engine Read|url=http://chalkdustmagazine.com/features/menace-machine-educable-noughts-crosses-engine/#more-3326|website=Chalkdust Magazine |date=13 March 2016|accessdate=16 Jan 2018}}</ref>
+|- 
+| 1967 || || Nearest Neighbor || The [[nearest neighbour algorithm]] was created, which is the start of basic pattern recognition. The algorithm was used to map routes.<ref name="Marr" />
+|-
+| 1969 || || Limitations of Neural Networks || [[Marvin Minsky]] and [[Seymour Papert]] publish their book ''[[Perceptrons (book)|Perceptrons]]'', describing some of the limitations of perceptrons and neural networks. The interpretation that the book shows that neural networks are fundamentally limited is seen as a hindrance for research into neural networks.<ref>{{cite web|last1=Cohen|first1=Harvey|title=The Perceptron|url=http://harveycohen.net/image/perceptron.html|accessdate=5 June 2016}}</ref>
+|-
+| 1970 || || Automatic Differentiation (Backpropagation) || [[Seppo Linnainmaa]] publishes the general method for automatic differentiation (AD) of discrete connected networks of nested differentiable functions.<ref name="lin1970">{{cite thesis |authorlink1=Seppo Linnainmaa |first1=Seppo |last1=Linnainmaa |year=1970 |title=Algoritmin kumulatiivinen pyoristysvirhe yksittaisten pyoristysvirheiden taylor-kehitelmana |trans-title=The representation of the cumulative rounding error of an algorithm as a Taylor expansion of the local rounding errors |language=Finnish |pages=6–7 |url=https://people.idsia.ch/~juergen/linnainmaa1970thesis.pdf }}</ref><ref name="lin1976">{{cite journal |first=Seppo |last=Linnainmaa |authorlink=Seppo Linnainmaa |year=1976 |title=Taylor expansion of the accumulated rounding error |journal=BIT Numerical Mathematics |volume=16 |issue=2 |pages=146–160 |doi=10.1007/BF01931367 |s2cid=122357351 }}</ref> This corresponds to the modern version of backpropagation, but is not yet named as such.<ref name="grie2012">{{cite journal |last=Griewank |first=Andreas |year=2012 |title=Who Invented the Reverse Mode of Differentiation? |journal=Documenta Matematica, Extra Volume ISMP |pages=389–400}}</ref><ref name="grie2008">Griewank, Andreas and Walther, A. ''Principles and Techniques of Algorithmic Differentiation, Second Edition''. SIAM, 2008.</ref><ref name="schmidhuber2015">{{cite journal |authorlink=Jürgen Schmidhuber |last=Schmidhuber |first=Jürgen |year=2015 |title=Deep learning in neural networks: An overview |journal=Neural Networks |volume=61 |pages=85–117 |arxiv=1404.7828|bibcode=2014arXiv1404.7828S |doi=10.1016/j.neunet.2014.09.003 |pmid=25462637|s2cid=11715509 }}</ref><ref name="scholarpedia2015">{{cite journal | last1 = Schmidhuber | first1 = Jürgen | authorlink = Jürgen Schmidhuber | year = 2015 | title = Deep Learning (Section on Backpropagation) | journal = Scholarpedia | volume = 10 | issue = 11| page = 32832 | doi = 10.4249/scholarpedia.32832 | bibcode = 2015SchpJ..1032832S | doi-access = free }}</ref>
+|- 
+| 1979 || || Stanford Cart || Students at Stanford University develop a cart that can navigate and avoid obstacles in a room.<ref name="Marr" />
+|- 
+| 1979 || Discovery || Neocognitron || [[Kunihiko Fukushima]] first publishes his work on the [[neocognitron]], a type of [[artificial neural network]] (ANN).<ref>{{cite journal
+| last       = Fukushima
+| first      = Kunihiko
+| date       = October 1979
+| title      = 位置ずれに影響されないパターン認識機構の神経回路のモデル --- ネオコグニトロン ---
+| trans-title = Neural network model for a mechanism of pattern recognition unaffected by shift in position — Neocognitron —
+| language   = Japanese
+| journal    = Trans. IECE
+| volume     = J62-A
+| issue      = 10
+| pages      = 658–665
+| url        = https://search.ieice.org/bin/summary.php?id=j62-a_10_658
+}}</ref><ref>{{cite journal |last1=Fukushima |first1=Kunihiko |title=Neocognitron: A self-organizing neural network model for a mechanism of pattern recognition unaffected by shift in position |journal=Biological Cybernetics |date=April 1980 |volume=36 |issue=4 |pages=193–202 |doi=10.1007/BF00344251 |pmid=7370364 |s2cid=206775608 }}</ref> [[Neocognitron|Neocognition]] later inspires [[convolutional neural network]]s (CNNs).<ref>{{cite journal|last1=Le Cun|first1=Yann|title=Deep Learning|citeseerx=10.1.1.297.6176}}</ref>
+|-
+| 1981 || || Explanation Based Learning || Gerald Dejong introduces Explanation Based Learning, where a computer algorithm analyses data and creates a general rule it can follow and discard unimportant data.<ref name="Marr" />
+|-
+| 1982 || Discovery || Recurrent Neural Network || [[John Hopfield]] popularizes [[Hopfield networks]], a type of [[recurrent neural network]] that can serve as [[content-addressable memory]] systems.<ref>{{cite journal |last1=Hopfield |first1=J J |title=Neural networks and physical systems with emergent collective computational abilities. |journal=Proceedings of the National Academy of Sciences |date=April 1982 |volume=79 |issue=8 |pages=2554–2558 |doi=10.1073/pnas.79.8.2554 |pmid=6953413 |pmc=346238 |bibcode=1982PNAS...79.2554H |doi-access=free }}</ref>
+|-
+| 1985 || || [[NETtalk (artificial neural network)|NETtalk]] || A program that learns to pronounce words the same way a baby does, is developed by [[Terry Sejnowski]].<ref name="Marr" />
+|- 
+| 1986 || Application || Backpropagation || [[Seppo Linnainmaa]]'s reverse mode of [[automatic differentiation]] (first applied to neural networks by [[Paul Werbos]]) is used in experiments by [[David Rumelhart]], [[Geoff Hinton]] and [[Ronald J. Williams]] to learn [[Knowledge representation|internal representations]].<ref>{{cite journal |last1=Rumelhart |first1=David E. |last2=Hinton |first2=Geoffrey E. |last3=Williams |first3=Ronald J. |title=Learning representations by back-propagating errors |journal=Nature |date=October 1986 |volume=323 |issue=6088 |pages=533–536 |doi=10.1038/323533a0 |bibcode=1986Natur.323..533R |s2cid=205001834 }}</ref>
+|-
+| 1988 || || [[Universal approximation theorem]] || {{ill|Kurt Hornik|de}} proves that standard multilayer feedforward networks are capable of approximating any Borel measurable function from one finite dimensional space to another to any desired degree of accuracy, provided sufficiently many hidden units are available.
+|-
+| 1989 || Discovery || Reinforcement Learning || Christopher Watkins develops [[Q-learning]], which greatly improves the practicality and feasibility of [[reinforcement learning]].<ref>{{cite journal|last1=Watksin|first1=Christopher|title=Learning from Delayed Rewards|date=1 May 1989|url=http://www.cs.rhul.ac.uk/~chrisw/new_thesis.pdf}}</ref>
+|-
+| 1989 || Commercialization || Commercialization of Machine Learning on Personal Computers || Axcelis, Inc. releases [[Evolver (software)|Evolver]], the first software package to commercialize the use of genetic algorithms on personal computers.<ref>{{cite news|last1=Markoff|first1=John|title=BUSINESS TECHNOLOGY; What's the Best Answer? It's Survival of the Fittest|url=https://www.nytimes.com/1990/08/29/business/business-technology-what-s-the-best-answer-it-s-survival-of-the-fittest.html|accessdate=8 June 2016|work=New York Times|date=29 August 1990}}</ref>
+|-
+| 1992 || Achievement || Machines Playing Backgammon || Gerald Tesauro develops [[TD-Gammon]], a computer [[backgammon]] program that uses an [[artificial neural network]] trained using [[temporal-difference learning]] (hence the 'TD' in the name). TD-Gammon is able to rival, but not consistently surpass, the abilities of top human backgammon players.<ref>{{cite journal |last1=Tesauro |first1=Gerald |title=Temporal difference learning and TD-Gammon |journal=Communications of the ACM |date=March 1995 |volume=38 |issue=3 |pages=58–68 |doi=10.1145/203330.203343 |s2cid=8763243 }}</ref>
+|-
+| 1995 || Discovery || Random Forest Algorithm || Tin Kam Ho publishes a paper describing [[random forest|random decision forests]].<ref>{{cite book |doi=10.1109/ICDAR.1995.598994 |chapter=Random decision forests |title=Proceedings of 3rd International Conference on Document Analysis and Recognition |year=1995 |last1=Tin Kam Ho |volume=1 |pages=278–282 |isbn=0-8186-7128-9 }}</ref>
+|-
+| 1995 || Discovery || Support-Vector Machines || [[Corinna Cortes]] and [[Vladimir Vapnik]] publish their work on [[support-vector machine]]s.<ref>{{cite journal |last1=Cortes |first1=Corinna |last2=Vapnik |first2=Vladimir |title=Support-vector networks |journal=Machine Learning |date=September 1995 |volume=20 |issue=3 |pages=273–297 |doi=10.1007/BF00994018 |doi-access=free }}</ref>
+|-
+| 1997 || Achievement || IBM Deep Blue Beats Kasparov || IBM's [[Deep Blue (chess computer)|Deep Blue]] beats the world champion at chess.<ref name="Marr" />
+|-
+| 1997 || Discovery || LSTM || [[Sepp Hochreiter]] and [[Jürgen Schmidhuber]] invent [[long short-term memory]] (LSTM) recurrent neural networks,<ref>{{cite journal |last1=Hochreiter |first1=Sepp |last2=Schmidhuber |first2=Jürgen |title=Long Short-Term Memory |journal=Neural Computation |date=1 November 1997 |volume=9 |issue=8 |pages=1735–1780 |doi=10.1162/neco.1997.9.8.1735 |pmid=9377276 |s2cid=1915014 }}</ref> greatly improving the efficiency and practicality of recurrent neural networks.
+|-
+| 1998 || || MNIST database || A team led by [[Yann LeCun]] releases the [[MNIST database]], a dataset comprising a mix of handwritten digits from [[American Census Bureau]] employees and American high school students.<ref>{{cite web|last1=LeCun|first1=Yann|last2=Cortes|first2=Corinna|last3=Burges|first3=Christopher|title=THE MNIST DATABASE of handwritten digits|url=http://yann.lecun.com/exdb/mnist/|accessdate=16 June 2016}}</ref> The MNIST database has since become a benchmark for evaluating [[handwriting recognition]].
+|-
+| 2002 || || Torch Machine Learning Library || [[Torch (machine learning)|Torch]], a software library for machine learning, is first released.<ref>{{cite journal|last1=Collobert|first1=Ronan|last2=Benigo|first2=Samy|last3=Mariethoz|first3=Johnny|title=Torch: a modular machine learning software library|date=30 October 2002|url=http://www.idiap.ch/ftp/reports/2002/rr02-46.pdf|accessdate=5 June 2016}}</ref>
+|-
+| 2006 || || The Netflix Prize || The [[Netflix Prize]] competition is launched by [[Netflix]]. The aim of the competition was to use machine learning to beat Netflix's own recommendation software's accuracy in predicting a user's rating for a film given their ratings for previous films by at least 10%.<ref>{{cite web|title=The Netflix Prize Rules|url=http://www.netflixprize.com/rules|website=Netflix Prize|publisher=Netflix|accessdate=16 June 2016|url-status=dead|archiveurl=https://web.archive.org/web/20120303162455/http://www.netflixprize.com/rules|archivedate=3 March 2012}}</ref> The prize was won in 2009.
+|-
+|2009
+|Achievement
+|ImageNet
+|[[ImageNet]] is created. ImageNet is a large visual database envisioned by [[Fei-Fei Li]] from Stanford University, who realized that the best machine learning algorithms wouldn't work well if the data didn't reflect the real world.<ref>{{Cite web|url=https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world/|title=ImageNet: the data that spawned the current AI boom — Quartz|last=Gershgorn|first=Dave|website=qz.com|date=26 July 2017 |language=en-US|access-date=2018-03-30}}</ref> For many, ImageNet was the catalyst for the AI boom<ref>{{cite news |last1=Hardy |first1=Quentin |title=Reasons to Believe the A.I. Boom Is Real |url=https://www.nytimes.com/2016/07/19/technology/reasons-to-believe-the-ai-boom-is-real.html |work=The New York Times |date=18 July 2016 }}</ref> of the 21st century. 
+|-
+| 2010 || || Kaggle Competition || [[Kaggle]], a website that serves as a platform for machine learning competitions, is launched.<ref>{{cite web|title=About|url=https://www.kaggle.com/about|website=Kaggle|publisher=Kaggle Inc|accessdate=16 June 2016}}</ref>
+|-
+| 2011 || Achievement || Beating Humans in Jeopardy || Using a combination of machine learning, [[natural language processing]] and information retrieval techniques, [[IBM]]'s [[Watson (computer)|Watson]] beats two human champions in a [[Jeopardy!]] competition.<ref>{{cite news |last1=Markoff |first1=John |title=Computer Wins on 'Jeopardy!': Trivial, It's Not |url=https://www.nytimes.com/2011/02/17/science/17jeopardy-watson.html |work=The New York Times |date=16 February 2011 |page=A1 }}</ref>
+|-
+| 2012 || Achievement || Recognizing Cats on YouTube || The [[Google Brain]] team, led by [[Andrew Ng]] and [[Jeff Dean (computer scientist)|Jeff Dean]], create a neural network that learns to recognize cats by watching unlabeled images taken from frames of [[YouTube]] videos.<ref>{{cite book |doi=10.1109/ICASSP.2013.6639343 |chapter=Building high-level features using large scale unsupervised learning |title=2013 IEEE International Conference on Acoustics, Speech and Signal Processing |year=2013 |last1=Le |first1=Quoc V. |pages=8595–8598 |isbn=978-1-4799-0356-6 |s2cid=206741597 }}</ref><ref>{{cite news|last1=Markoff|first1=John|title=How Many Computers to Identify a Cat? 16,000|url=https://www.nytimes.com/2012/06/26/technology/in-a-big-network-of-computers-evidence-of-machine-learning.html|accessdate=5 June 2016|work=New York Times|date=26 June 2012|page=B1}}</ref>
+|-
+|2012
+|Discovery
+|Visual Recognition
+|The [[AlexNet]] paper and algorithm achieves breakthrough results in image recognition in the ImageNet benchmark.  This popularizes deep neural networks.<ref>{{Cite web |date=2017-07-26 |title=The data that transformed AI research—and possibly the world |url=https://qz.com/1034972/the-data-that-changed-the-direction-of-ai-research-and-possibly-the-world |access-date=2023-09-12 |website=Quartz |language=en}}</ref>
+|-
+|2013
+|Discovery
+|Word Embeddings
+|A widely cited paper nicknamed [[word2vec]] revolutionizes the processing of text in machine learnings.  It shows how each word can be converted into a sequence of numbers ([[Word embedding|word embeddings]]), the use of these vectors revolutionized text processing in machine learning.<ref>{{Cite web |last=PhD |first=Pedram Ataee |date=2022-07-03 |title=Word2Vec Models are Simple Yet Revolutionary |url=https://towardsdatascience.com/word2vec-models-are-simple-yet-revolutionary-de1fef544b87 |access-date=2023-09-12 |website=Medium |language=en}}</ref>
+|-
+| 2014 || || Leap in Face Recognition || [[Facebook]] researchers publish their work on [[DeepFace]], a system that uses neural networks that identifies faces with 97.35% accuracy. The results are an improvement of more than 27% over previous systems and rivals human performance.<ref>{{cite journal|last1=Taigman|first1=Yaniv|last2=Yang|first2=Ming|last3=Ranzato|first3=Marc'Aurelio|last4=Wolf|first4=Lior|title=DeepFace: Closing the Gap to Human-Level Performance in Face Verification|journal=Conference on Computer Vision and Pattern Recognition|date=24 June 2014|url=https://research.facebook.com/publications/deepface-closing-the-gap-to-human-level-performance-in-face-verification/|accessdate=8 June 2016}}</ref>
+|-
+| 2014 || || Sibyl || Researchers from [[Google]] detail their work on Sibyl,<ref>{{cite web |last1=Canini|first1=Kevin|last2=Chandra|first2=Tushar|last3=Ie|first3=Eugene|last4=McFadden|first4=Jim|last5=Goldman|first5=Ken|last6=Gunter|first6=Mike|last7=Harmsen|first7=Jeremiah|last8=LeFevre|first8=Kristen|last9=Lepikhin|first9=Dmitry|last10=Llinares|first10=Tomas Lloret|last11=Mukherjee|first11=Indraneel|last12=Pereira|first12=Fernando|last13=Redstone|first13=Josh|last14=Shaked|first14=Tal|last15=Singer|first15=Yoram|title=Sibyl: A system for large scale supervised machine learning|url=https://users.soe.ucsc.edu/~niejiazhong/slides/chandra.pdf|website=Jack Baskin School of Engineering|publisher=UC Santa Cruz|accessdate=8 June 2016}}</ref> a proprietary platform for massively parallel machine learning used internally by Google to make predictions about user behavior and provide recommendations.<ref>{{cite news|last1=Woodie|first1=Alex|title=Inside Sibyl, Google's Massively Parallel Machine Learning Platform|url=http://www.datanami.com/2014/07/17/inside-sibyl-googles-massively-parallel-machine-learning-platform/|accessdate=8 June 2016|work=Datanami|publisher=Tabor Communications|date=17 July 2014}}</ref>
+|-
+| 2016 || Achievement || Beating Humans in Go ||Google's [[AlphaGo]] program becomes the first [[Computer Go]] program to beat an unhandicapped professional human player<ref>{{cite web|title=Google achieves AI 'breakthrough' by beating Go champion|url=https://www.bbc.com/news/technology-35420579|website=BBC News|publisher=BBC|accessdate=5 June 2016|date=27 January 2016}}</ref> using a combination of machine learning and tree search techniques.<ref>{{cite web|title=AlphaGo|url=https://www.deepmind.com/alpha-go.html|website=Google DeepMind|publisher=Google Inc|accessdate=5 June 2016}}</ref> Later improved as [[AlphaGo Zero]] and then in 2017 generalized to Chess and more two-player games with [[AlphaZero]]. 
+|-
+|2017
+|Discovery
+|Transformer
+|A team at [[Google Brain]] invent the [[Transformer (machine learning model)|transformer]] architecture,<ref>{{Cite journal |last1=Vaswani |first1=Ashish |last2=Shazeer |first2=Noam |last3=Parmar |first3=Niki |last4=Uszkoreit |first4=Jakob |last5=Jones |first5=Llion |last6=Gomez |first6=Aidan N. |last7=Kaiser |first7=Lukasz |last8=Polosukhin |first8=Illia |date=2017 |title=Attention Is All You Need |arxiv=1706.03762}}</ref> which allows for faster parallel training of neural networks on sequential data like text.
+|-
+| 2018 || Achievement || Protein Structure Prediction || AlphaFold 1 (2018) placed first in the overall rankings of the 13th [[CASP|Critical Assessment of Techniques for Protein Structure Prediction]] (CASP) in December 2018.<ref>{{cite news |last1=Sample |first1=Ian |title=Google's DeepMind predicts 3D shapes of proteins |url=https://www.theguardian.com/science/2018/dec/02/google-deepminds-ai-program-alphafold-predicts-3d-shapes-of-proteins |work=The Guardian |date=2 December 2018 }}</ref>
+|-
+|2021 || Achievement || Protein Structure Prediction || AlphaFold 2 (2021), A team that used AlphaFold 2 (2020) repeated the placement in the CASP competition in November 2020. The team achieved a level of accuracy much higher than any other group. It scored above 90 for around two-thirds of the proteins in CASP's global distance test (GDT), a test that measures the degree to which a computational program predicted structure is similar to the lab experiment determined structure, with 100 being a complete match, within the distance cutoff used for calculating GDT.<ref>{{cite journal |last1=Eisenstein |first1=Michael |title=Artificial intelligence powers protein-folding predictions |journal=Nature |date=23 November 2021 |volume=599 |issue=7886 |pages=706–708 |doi=10.1038/d41586-021-03499-y |s2cid=244528561 }}</ref>
+|-
+|}
+
+==See also==
+* [[History of artificial intelligence]]
+* [[Timeline of artificial intelligence]]
+* [[Timeline of machine translation]]
+
+==References==
+=== Citations ===
+{{Reflist}}
+
+=== Works cited ===
+*{{Cite book |first=Daniel |last=Crevier |year=1993 |title=AI: The Tumultuous Search for Artificial Intelligence |publisher=BasicBooks |isbn=0-465-02997-3 |location=New York |author-link=Daniel Crevier}}
+*{{cite news |last1=Marr |first1=Bernard |title=A Short History of Machine Learning -- Every Manager Should Read |url=https://www.forbes.com/sites/bernardmarr/2016/02/19/a-short-history-of-machine-learning-every-manager-should-read/ |work=Forbes |date=19 February 2016 |access-date=2022-12-25 |archive-url=https://web.archive.org/web/20221205135114/https://www.forbes.com/sites/bernardmarr/2016/02/19/a-short-history-of-machine-learning-every-manager-should-read/ |archive-date=2022-12-05 |url-status=live}}
+* {{Cite book |first1=Stuart |last1=Russell |first2=Peter |last2=Norvig |year=2003 |title=Artificial Intelligence: A Modern Approach |publisher=Pearson Education |isbn=0-137-90395-2 |location=London |author-link1=Stuart J. Russell |author-link2=Peter Norvig}}
+
+{{Timelines of computing}}
+
+[[Category:Machine learning]]
+[[Category:Computing timelines|Machine learning]]

@@ -1,0 +1,39 @@
+{{Infobox company
+| name = MeeMix Ltd
+| logo = Logo personalized exp.jpg
+| logo_size = 180px
+| type = [[Private company|Private]]
+| foundation = 2006
+| location =  [[Tel-Aviv, Israel]]
+| industry = [[Telecommunications]] content services
+| products = Personalized media recommendations,<br> personalized media discovery,<br>  ad personalization
+| homepage = [https://web.archive.org/web/20131102041212/http://www.meemix.biz/ www.meemix.biz]}}
+'''MeeMix Ltd''' is a company specializing in [[Personalization|personalizing]] [[Digital media|media]]-related content recommendations, discovery and [[advertising]] for the [[telecommunication]] industry, founded in 2006.
+
+On January 1, 2008, MeeMix launched meemix.com, a public personalized [[internet radio]]<ref>[https://techcrunch.com/2007/08/01/meemix-a-new-breed-of-music-personalization-is-born/ TechCrunch review]</ref><ref>[https://venturebeat.com/2008/01/01/the-music-sites-keep-coming-meemix-spiralfrog-jango/ VentureBeat review]</ref><ref>[https://web.archive.org/web/20080513222010/http://www.businesshackers.com/meemix-an-excellent-personalized-internet-radio-community/ Businesshackers review]</ref> serving as an online testbed for the development of music taste-prediction technologies.<ref name="About MeeMix">[http://www.meemix.biz/about/glance.php About MeeMix] {{webarchive |url=https://web.archive.org/web/20091002205048/http://www.meemix.biz/about/glance.php |date=October 2, 2009 }}</ref> Subsequently, MeeMix released in 2009 a line of [[Business-to-business]] [[commerce|commercial services]] intended to [[Personalization|personalize]] media recommendations, discovery and advertising.<ref name="About MeeMix"/>{{Dead link|date=May 2015}} MeeMix hybrid taste-prediction technology relies on integrating [[machine learning]] [[algorithm]]s, [[digital signal processing]], behavior analysis, [[metadata]] analysis and [[collaborative filtering]], and is provided via [[API]] web service.<ref>[http://www.meemix.biz/tech/api.php MeeMix technology] {{webarchive|url=https://web.archive.org/web/20091002230438/http://www.meemix.biz/tech/api.php |date=2009-10-02 }}</ref>
+
+In August 2009, MeeMix was announced as Innovator Nominee in the [[GSM Association]]’s Mobile Innovation Grand Prix worldwide contest.<ref>[http://www.gsmworld.com/newsroom/press-releases/2009/3818.htm GSMA Grand Prix] {{webarchive|url=https://web.archive.org/web/20090831075454/http://www.gsmworld.com/newsroom/press-releases/2009/3818.htm |date=2009-08-31 }}</ref>
+
+As of 2013, MeeMix no longer features internet radios on meemix.com. On Sep 28, 2014, meemix.com went offline.{{Citation needed|date=February 2023}}
+
+== See also ==
+* [[Behavioral targeting]]
+* [[Collaborative filtering]]
+* [[Internet radio]]
+* [[Personalization]]
+* [[Predictive analytics]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [https://web.archive.org/web/20090108183716/http://www.meemix.com/ MeeMix online radio]
+
+{{DEFAULTSORT:Meemix}}
+[[Category:Online companies of Israel]]
+[[Category:Software companies established in 2006]]
+[[Category:Web applications]]
+[[Category:Data mining and machine learning software]]
+[[Category:Israeli companies established in 2006]]
+[[Category:Software companies disestablished in 2014]]
+[[Category:2014 disestablishments in Israel]]

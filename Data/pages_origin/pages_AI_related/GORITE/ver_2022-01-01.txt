@@ -1,0 +1,18 @@
+'''GORITE''' or '''Goal ORIented TEams''' is a Java platform for implementing Team Oriented designs for [[Intelligent agent|Intelligent software agents]].
+
+== See also ==
+* [[Belief-Desire-Intention software model]]
+* [[Procedural Reasoning System]]
+
+== References ==
+* Ralph Rönnquist, "[https://doi.org/10.1007%2F978-3-540-79043-3_2 The Goal Oriented Teams (GORITE) Framework]" In Programming Multi-Agent Systems, pages 	27-41, 2008
+* Ralph Rönnquist and Dennis Jarvis "[https://doi.org/10.1007%2F978-3-642-01668-4_7 Interoperability with Goal Oriented Teams (GORITE)]" In Agent-Based Technologies and Applications for Enterprise Interoperability, pages 	118-128, 2009
+
+== External links ==
+* [https://web.archive.org/web/20110713044654/http://www.intendico.com/gorite/ GORITE Homepage]
+
+{{DEFAULTSORT:Gorite}}
+[[Category:Agent-based software]]
+[[Category:Multi-agent systems]]
+
+{{programming-software-stub}}

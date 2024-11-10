@@ -1,0 +1,77 @@
+{{primary sources|date=November 2011}}
+'''GermaNet''' is a [[semantic network]] for the [[German language]].  It relates [[noun]]s, [[verb]]s, and [[adjective]]s semantically by grouping lexical units that express the same concept into ''[[synset]]s'' and by defining [[semantic]] relations between these synsets.<ref name="Storjohann2010">{{cite book|author=Petra Storjohann|title=Lexical-semantic relations: theoretical and practical perspectives|url=https://books.google.com/books?id=OYBWObJ547AC&pg=PA165|accessdate=16 November 2011|date=23 June 2010|publisher=John Benjamins Publishing Company|isbn=978-90-272-3138-3|pages=165–}}</ref> GermaNet is free for academic use, after signing a license. GermaNet has much in common with the English [[WordNet]] and can be viewed as an on-line [[thesaurus]] or a light-weight [[ontology (information science)|ontology]]. GermaNet has been developed and maintained at the [[University of Tübingen]] since 1997 within the research group for General and Computational Linguistics. It has been integrated into the [[EuroWordNet]], a multilingual lexical-semantic database.<ref name="homepage">{{Cite web|url=https://uni-tuebingen.de/en/142806|title=GermaNet - an Introduction|website=uni-tuebingen.de|accessdate=October 1, 2020}}</ref>
+
+==Database==
+
+===Contents===
+GermaNet  partitions the lexical space into a set of concepts that are interlinked by semantic relations. A semantic concept is modeled by a ''[[synset]]''. A synset is a set of words (called lexical units) where all the words are taken to have the same or almost the same meaning. Thus a synset is a set of synonyms grouped under one definition, or "gloss".
+
+In addition to the gloss, synsets are labeled with their syntactic function and accompanied by example sentences for each distinct meaning in the synset.<ref name="GernEdiT">V. Henrich, E. Hinrichs. 2010. [http://www.lrec-conf.org/proceedings/lrec2010/pdf/264_Paper.pdf GernEdiT - The GermaNet Editing Tool]. In: ''Proceedings of the Seventh Conference on International Language Resources and Evaluation''.</ref>
+Just as in WordNet, for each word category the semantic space is divided into a number of [[semantic field]]s closely related to major nodes in the semantic network: ''Ort'', or "location", ''Körper'', or "body", etc.<ref name="homepage" />
+
+As of version 15.0 (release May 2020), GermaNet contains:<ref name="homepage" />
+
+* Synsets:  144113
+* Lexical Units: 185000
+* Literals: 169521
+* Conceptual Relations: 157921
+* Lexical Relations (synonymy excluded): 12203 
+* Split Compounds: 98905
+* Interlingual Index (ILI) Records: 28564
+* Wiktionary Sense Descriptions: 29548
+
+===Format===
+All GermaNet data is stored in a [[PostgreSQL]] [[relational database]]. The database schema follows the internal structure of GermaNet: there are tables to store synsets, lexical units, conceptual and lexical relations, etc.<ref name="GernEdiT"/> GermaNet data is distributed both in this database format and as [[XML]] files. In the XML data, two types of files, one for synsets and the other for relations, represent all data available in the GermaNet database.<ref name="dataformat">{{Cite web|url=https://uni-tuebingen.de/en/142817|title=Data format|accessdate=October 1, 2020}}</ref>
+
+==Interfaces==
+There are software libraries and [[Application Programming Interface|APIs]] available for [[Java (programming language)|Java]], [[Python (programming language)|Python]], [[JavaScript]], and [[Perl]].<ref name="api">{{Cite web|url=https://uni-tuebingen.de/en/142818|title=Applications and Tools|website=uni-tuebingen.de|accessdate=October 1, 2020}}</ref><ref>{{Cite web|url=https://metacpan.org/pod/GermaNet::Flat|title=GermaNet::Flat|website=metacpan.org|accessdate=October 1, 2020}}</ref> These programs are distributed under [[free-software license]]s and provide easy access to all information in various versions of GermaNet.
+
+[https://weblicht.sfs.uni-tuebingen.de/rover GermaNet Rover] is an online application that can be used to search for synsets in GermaNet, explore the data associated with them, and calculate the [[semantic similarity]] of pairs of synsets. It features visualizations of the [[Hyponymy and hypernymy|hypernym]] relation and advanced filtering options for synset searching.
+
+==Licenses==
+GermaNet 15.0 (released May 2020) can be distributed under one of the following types of [[software license agreement|license agreements]]:<ref>{{Cite web|url=https://uni-tuebingen.de/en/142828|title=Licenses|website=uni-tuebingen.de|access-date=October 1, 2020}}</ref>
+
+* ''Academic Research License Agreement'': for the purpose of research at academic institutions. There is no license fee for academic use. Licenses are not given to individual students, and those seeking a license are required to talk to an academic advisor.
+
+* ''Research and Development License Agreement'': applies to non-academic institutions and research consortia. To be used strictly for technology development and internal research.
+
+* ''Commercial License Agreement'': applies to non-academic institutions and commercial enterprises. It permits technology development and internal research, as well as giving the non-exclusive right to distribute and market any derived product or service.
+
+==Alternatives==
+Open-de-WordNet is freely available alternative to GermaNet which is compatible with [[WordNet]].<ref name="odenet">{{Cite web|url=https://github.com/hdaSprachtechnologie/odenet|title=GitHub - hdaSprachtechnologie/odenet: Open German WordNet|date=November 14, 2019|accessdate=November 20, 2019|via=GitHub}}</ref>
+
+==Linguistic Applications==
+GermaNet has been used for a variety of applications, including:
+
+* semantic analysis<ref name="KunzeRoesner2004">Manuela Kunze and Dietmar Rösner. 2004. Issues in Exploiting GermaNet as a Resource in Real Applications.</ref> 
+* shallow recognition of implicit document structure<ref name="KunzeRoesner2004"/>
+* compound analysis<ref name="KunzeRoesner2004"/> 
+* analyzing sectional preferences<ref name="Schulte2004">Sabine Schulte im Walde, 2004. GermaNet Synsets as Selectional Preferences in Semantic Verb Clustering.</ref> 
+* word sense disambiguation<ref>Saito et al., 2002. Evaluation of GermanNet: Problems Using GermaNet for Automatic Word Sense Disambiguation.</ref> 
+
+==See also==
+* [[Hyponym]]
+* [[Is-a]]
+* [[Machine-readable dictionary]]
+* [[Ontology (information science)]]
+* [[Semantic network]]
+* [[Semantic Web]]
+* [[Synonym Ring]]
+* [[Taxonomy (general)|Taxonomy]]
+* [[UBY-LMF]]
+* [[Word sense disambiguation]]
+
+==References==
+{{Reflist}}
+
+== External links ==
+* {{Official website|https://uni-tuebingen.de/en/142806}}
+* [https://weblicht.sfs.uni-tuebingen.de/rover/ GermaNet Rover online browser]
+
+{{Authority control}}
+[[Category:German language]]
+[[Category:Thesauri]]
+[[Category:Lexical databases]]
+[[Category:Knowledge representation]]
+[[Category:Computational linguistics]]
+[[Category:Online dictionaries]]

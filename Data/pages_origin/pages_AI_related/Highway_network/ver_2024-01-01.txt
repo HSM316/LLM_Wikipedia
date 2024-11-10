@@ -1,0 +1,88 @@
+{{short description|Type of neural network}}
+{{About|a technique used in machine learning||Highway}}
+
+In [[machine learning]], the '''Highway Network''' was the first working very deep [[feedforward neural network]] with hundreds of layers, much deeper than previous [[artificial neural network]]s.<ref name="highway2015" /><ref name="highway2015neurips" /><ref name="mostcited2021" />
+It uses skip connections modulated by learned gating mechanisms to regulate information flow, inspired by [[Long short-term memory|Long Short-Term Memory]] (LSTM) [[recurrent neural networks]].<ref name="lstm1997">{{Cite journal 
+ | author = Sepp Hochreiter
+ | author2 = Jürgen Schmidhuber
+ | title = Long short-term memory
+ | journal = [[Neural Computation (journal)|Neural Computation]]
+ | volume = 9
+ | issue = 8
+ | pages = 1735–1780
+ | year = 1997
+ | url = https://www.researchgate.net/publication/13853244
+ | doi=10.1162/neco.1997.9.8.1735
+ | pmid=9377276
+| s2cid = 1915014
+ | author2-link = Jürgen Schmidhuber
+ | author-link = Sepp Hochreiter
+ }}</ref><ref name="lstm2000">{{Cite journal 
+ | author = Felix A. Gers
+ | author2 = Jürgen Schmidhuber
+ | author3 = Fred Cummins
+ | title = Learning to Forget: Continual Prediction with LSTM
+ | journal = [[Neural Computation (journal)|Neural Computation]]
+ | volume = 12
+ | issue = 10
+ | pages = 2451–2471
+ | year = 2000
+ | doi=10.1162/089976600300015015
+| pmid = 11032042
+ | citeseerx = 10.1.1.55.5709
+ | s2cid = 11598600
+ }}</ref>
+The advantage of a Highway Network over the common deep neural networks is that it solves or partially prevents the [[vanishing gradient problem]],<ref name="hochreiter1991">{{cite thesis 
+|url=http://www.bioinf.jku.at/publications/older/3804.pdf
+|degree=diploma 
+|first=Sepp
+|last=Hochreiter
+|title=Untersuchungen zu dynamischen neuronalen Netzen
+|publisher=Technical University Munich, Institute of Computer Science, advisor: J. Schmidhuber
+|year=1991}}</ref> thus leading to easier to optimize neural networks.
+The gating mechanisms facilitate information flow across many layers ("information highways").<ref name="highway2015">{{cite arXiv|last1=Srivastava|first1=Rupesh Kumar|last2=Greff|first2=Klaus|last3=Schmidhuber|first3=Jürgen|title=Highway Networks|eprint=1505.00387|date=2 May 2015|class=cs.LG}}</ref><ref name="highway2015neurips">{{cite journal|last1=Srivastava|first1=Rupesh K|last2=Greff|first2=Klaus|last3=Schmidhuber|first3=Juergen|title=Training Very Deep Networks|journal=Advances in Neural Information Processing Systems |date=2015|volume=28|pages=2377–2385|url=http://papers.nips.cc/paper/5850-training-very-deep-networks|publisher=Curran Associates, Inc.}}</ref>
+
+Highway Networks have been used as part of [[Semantic analysis (machine learning)|text sequence labeling]] and [[speech recognition]] tasks.<ref>{{cite arXiv|last1=Liu|first1=Liyuan|last2=Shang|first2=Jingbo|last3=Xu|first3=Frank F.|last4=Ren|first4=Xiang|last5=Gui|first5=Huan|last6=Peng|first6=Jian|last7=Han|first7=Jiawei|title=Empower Sequence Labeling with Task-Aware Neural Language Model|eprint=1709.04109|date=12 September 2017|class=cs.CL}}</ref><ref>{{cite arXiv|last1=Kurata|first1=Gakuto|last2=Ramabhadran|first2=Bhuvana|author2-link=Bhuvana Ramabhadran|last3=Saon|first3=George|last4=Sethy|first4=Abhinav|title=Language Modeling with Highway LSTM|eprint=1709.06436|date=19 September 2017|class=cs.CL}}</ref>
+An open-gated or gateless Highway Network variant called [[Residual neural network]]<ref name="resnet2015">{{Cite conference|last1=He|first1=Kaiming|last2=Zhang|first2=Xiangyu|last3=Ren|first3=Shaoqing|last4=Sun|first4=Jian|date=2016|title=Deep Residual Learning for Image Recognition|url=https://ieeexplore.ieee.org/document/7780459|journal=2016 IEEE Conference on Computer Vision and Pattern Recognition (CVPR)|location=Las Vegas, NV, USA|publisher=IEEE|pages=770–778|arxiv=1512.03385|doi=10.1109/CVPR.2016.90|isbn=978-1-4673-8851-1}}</ref> was used to win the ImageNet 2015 competition. This has become the most cited neural network of the 21st century.<ref name="mostcited2021">{{Cite news| last=Schmidhuber |first=Jürgen |url=https://people.idsia.ch/~juergen/most-cited-neural-nets.html|title=The most cited neural networks all build on work done in my labs|date=2021|work=AI Blog| location=IDSIA, Switzerland | access-date=2022-04-30}}</ref>
+
+== Model ==
+The model has two gates in addition to the '''H(W<sub>H</sub>, x)''' gate: the transform gate '''T(W<sub>T</sub>, x''') and the carry gate '''C(W<sub>C</sub>, x)'''. Those two last gates are non-linear transfer functions (by convention [[Sigmoid function]]). The '''H(W<sub>H</sub>, x)''' function can be any desired transfer function.
+
+The carry gate is defined as '''C(W<sub>C</sub>, x) = 1 - T(W<sub>T</sub>, x)'''. While the transform gate is just a gate with a sigmoid transfer function.
+
+== Structure ==
+The structure of a hidden layer follows the equation:
+
+<math>
+\begin{align}
+y = H(x,W_{H}) \centerdot T(x,W_{T}) + x \centerdot C(x,W_{C}) = H(x,W_{H}) \centerdot T(x,W_{T}) + x \centerdot (1 - T(x,W_{T}))
+\end{align}
+</math>
+
+== Related Work ==
+[[Sepp Hochreiter]] analyzed the [[vanishing gradient problem]] in 1991 and attributed to it the reason why [[deep learning]] did not work well.<ref name="hochreiter1991"/>
+To overcome this problem, [[Long short-term memory|Long Short-Term Memory]] (LSTM) [[recurrent neural networks]]<ref name="lstm1997"/>
+have residual connections with a weight of 1.0 in every LSTM cell (called the constant error carrousel) to compute <math display="inline"> y_{t+1} = F(x_{t}) + x_t </math>. During [[backpropagation through time]], this becomes the  residual formula <math display="inline">y = F(x) + x</math> for feedforward neural networks. This enables training very deep [[recurrent neural networks]] with a very long time span t. A later LSTM version published in 2000<ref name="lstm2000"/> modulates the identity LSTM connections by so-called "forget gates" such that their weights are not fixed to 1.0 but can be learned. In experiments, the forget gates were initialized with positive bias weights,<ref name="lstm2000"/> thus being opened, addressing the vanishing gradient problem.
+As long as the forget gates of the 2000 LSTM are open, it behaves like the 1997 LSTM. 
+
+The [[Highway_network|Highway Network]] of May 2015<ref name="highway2015"/>
+applies these principles to [[feedforward neural network]]s.
+It was reported to be "the first very deep feedforward network with hundreds of layers".<ref name="highwayblog">{{cite web
+    | title= Highway Networks (May 2015): First Working Really Deep Feedforward Neural Networks With Over 100 Layers | url=https://people.idsia.ch/~juergen/highway-networks.html
+	| last = Schmidhuber
+	| first = Jürgen
+    | date = 2015
+}}
+</ref> 
+It is like a 2000 LSTM with forget gates [[backpropagation through time |unfolded in time]],<ref name="lstm2000"/> while the later Residual Nets have no equivalent of forget gates and are like the unfolded original 1997 LSTM.<ref name="lstm1997"/>
+If the skip connections in Highway Networks are "without gates," or if their gates are kept open (activation 1.0), they become Residual Networks. 
+
+The original Highway Network paper<ref name="highway2015"/> not only introduced the basic principle for very deep feedforward networks, but also included experimental results with 20, 50, and 100 layers networks, and mentioned ongoing experiments with up to 900 layers.
+
+==References==
+{{reflist}}
+
+[[Category:Machine learning]]
+
+
+{{compu-ai-stub}}

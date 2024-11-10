@@ -1,0 +1,27 @@
+{{Use dmy dates|date=April 2016}}
+'''Systems pharmacology''' is the application of [[systems biology]] principles to the field of [[pharmacology]]. It seeks to understand how [[drugs]] affect the human body as a single complex [[biological system]]. 
+Instead of considering the effect of a drug to be the result of one specific [[drug-protein interaction]], systems pharmacology considers the effect of a drug to be the outcome of the [[Network science|network]] of interactions a drug may have. In 1992, an article on systems medicine and pharmacology was published in China.<ref>Zeng (B.) J., On the holographic model of human body, 1st National Conference of Comparative Studies Traditional Chinese Medicine and West Medicine, Medicine and Philosophy, April, 1992 (termed "systems medicine and pharmacology").</ref> [[interaction network|Networks of interaction]] may include chemical-protein, [[protein–protein interaction|protein–protein]], genetic, [[Cell signaling|signalling]] and physiological (at cellular, tissue, organ and whole body levels).  Systems pharmacology uses [[bioinformatics]] and statistics techniques to integrate and interpret these networks.
+
+Systems pharmacology can be applied to drug safety studies as a complement to pharmacoepidemiology.<ref>{{cite journal|title=Role of systems pharmacology in understanding drug adverse events|author=Seth I. Berger and Ravi Iyengar |journal=Systems Biology and Medicine|year=2011|pmid=20803507|doi=10.1002/wsbm.114|volume=3|pmc=3057924|pages=129–35}}</ref> 
+
+==See also==
+
+* [[Quantitative Systems Pharmacology]]
+* [[Drug interaction]]
+
+==PhD programs==
+*''[http://www.pharmetrx.de/ PharMetrX: Pharmacometrics & Computational Disease Modelling]'' (annual call for applications, July - Sept 15th)
+
+== References==
+
+<references />
+
+== External links==
+* [https://www.nigms.nih.gov/training/documents/systemspharmawpsorger2011.pdf Quantitative Systems Pharmacology white paper]
+* [https://csb.mgh.harvard.edu/system_pharmacology Systems Pharmacology at Harvard]
+* [http://www.bio-itworld.com/issues/2012/jan/what-is-quantitative-systems-pharmacology.html What is (Quantitative) Systems Pharmacology? by John Russell]
+
+[[Category:Pharmacology]]
+
+
+{{pharma-stub}}

@@ -1,0 +1,49 @@
+'''Eye vein verification''' is a method of [[biometric authentication]] that applies pattern-recognition techniques to video images of the veins in a user's eyes.<ref name="FastCompany-20131122-password">{{cite news|last=Ungerleider|first=Neal|url=http://www.fastcompany.com/3022104/tech-forecast/your-next-password-might-be-your-eye|title=Your Next Password Might Be Your Eye|magazine=[[Fast Company (magazine)|Fast Company]]|date=22 November 2013|access-date=20 February 2014}}</ref> The complex and random patterns are unique, and modern hardware and software can detect and differentiate those patterns at some distance from the eyes.
+
+== Introduction ==
+
+The veins in the [[sclera]]—the white part of the eyes—can be imaged when a person glances to either side, providing four regions of patterns: one on each side of each eye. Verification employs digital templates from these patterns, and the templates are then encoded with mathematical and statistical algorithms. These allow confirmation of the identity of the proper user and the rejection of anyone else.<ref>{{cite news|last=Stacy|first=Michael|url= http://www.siliconprairienews.com/2012/02/kansas-city-startup-eyeverify-sees-opportunity-in-the-whites-of-your-eyes|title=Kansas City startup EyeVerify sees opportunity in the whites of your eyes|publisher=Silicon Prairie News|date=22 February 2012|access-date=20 February 2014}}</ref>
+Advocates of eye vein verification note that one of the technology's strengths is the stability of the pattern of eye blood vessels; the patterns do not change with age, alcohol consumption, allergies, or redness. Eye veins are clear enough that they can be reliably imaged by the cameras on most smartphones.<ref>{{cite news|last=Miller|first=Michael|url= http://forwardthinking.pcmag.com/none/321342-beyond-passwords-log-in-with-your-voice-your-eyes-or-your-face|title=Beyond Passwords: Log In With Your Voice, Your Eyes, or Your Face|publisher=PC Mag|date=5 March 2014|access-date=19 March 2014}}</ref> The technology works through contacts and glasses, though not through sunglasses. At least one version of eye vein detection uses infrared illumination as part of the imaging, allowing imaging even in low-light conditions.<ref>{{cite news |last=Davies|first=Chris| url=http://www.slashgear.com/eyeverify-eye-vein-biometrics-hands-on-24270961/|title=EyeVerify eye-vein biometrics hands-on|publisher=PC Mag|date=24 February 2013|access-date=19 March 2014}}</ref>
+
+== History ==
+
+Dr. [[Reza Derakhshani]] at University of Missouri, Kansas City, developed the concept of using the veins in the whites of the eyes for identification. He holds several patents on the technology, including a 2008 patent for the concept of using the blood vessels seen in the whites of the eye as a unique identifier.
+
+More recent research has explored using vein patterns in both the [[iris (anatomy)|iris]] and the sclera for recognition.<ref name=SignalImageVideoProcessing-201307-multimodal>{{cite journal|last1= Zhou|first1=Zhi|last2=Du|first2=Eliza|last3=Thomas|first3=N. Luke|last4=Delp|first4=Edward J.|doi=10.1007/s11760-013-0468-8|title=A comprehensive multimodal eye recognition|journal=Signal, Image and Video Processing|volume=7|issue=4|pages=619|year=2013|publisher=[[Springer Science+Business Media]] New York, NY, USA|s2cid=255380965 }}</ref>
+
+== Uses ==
+
+Eye vein verification, like other methods of biometric authentication, can be used in a range of security situations, including mobile banking, government security, and in healthcare environments.<ref name="FastCompany-20131122-password" /><ref name="Consumer-Reports-20130523-banking">{{cite news |first=Jeff|last=Blyskal|title=CR Money Minute: Better smart phone banking security?|url= http://www.consumerreports.org/cro/news/2013/05/cr-money-minute-better-smart-phone-banking-security/index.htm|publisher=Consumer Reports News|date=2013-05-23|access-date=2014-02-21}}</ref>
+[[EyeVerify]], a Kansas City, Kansas, company, markets eye vein verification with a system called Eyeprint.<ref name="EV">{{cite news |title=EyeVerify: Mobile Authentication Through Eye Vein Biometrics |url=http://eyeverify.com/|access-date=2014-02-21}}</ref> In 2012, EyeVerify licensed the technology developed and patented by Derakhshani. And Derakhshani now serves as chief science officer of EyeVerify.<ref>{{Cite web |last=Team |first=S. P. N. |date=2012-02-22 |title=Kansas City startup EyeVerify sees opportunity in the whites of your eyes |url=https://siliconprairienews.com/2012/02/kansas-city-startup-eyeverify-sees-opportunity-in-the-whites-of-your-eyes/ |access-date=2023-08-15 |website=Silicon Prairie News |language=en-US}}</ref>
+
+== Advantages ==
+
+* Eye vein patterns are unique to each person<ref name="IJCNN-20070812-Texture-based">{{cite book|last1=Derakhshani|first1=R.|last2=Ross|first2=A.|title=2007 International Joint Conference on Neural Networks |chapter=A Texture-Based Neural Network Classifier for Biometric Identification using Ocular Surface Vasculature |pages=2982–2987|year=2007|publisher=IJCNN, Orlando, FL, USA|doi=10.1109/IJCNN.2007.4371435|isbn=978-1-4244-1379-9|s2cid=1042317 }}</ref>
+* Patterns do not change over time and are still readable with redness<ref name="IJCNN-20070812-Texture-based"/> 
+* Works with contacts and glasses
+* Resistant to false matches
+
+== Disadvantages ==
+
+* Phone must be held close to face
+* Not supported on devices without cameras or on older smartphones
+
+== See also ==
+{{col div|colwidth=20em}}
+* [[Iris recognition]]
+* [[Finger vein recognition]]
+* [[Fingerprint recognition]]
+* [[Biometrics]]
+* [[Speaker recognition|Voice recognition]]
+* [[Access control]]
+{{colend}}
+
+== References ==
+
+{{reflist}}
+{{Biometrics}}
+
+[[Category:Biometrics software]]
+[[Category:Authentication methods]]
+[[Category:Veins]]
+[[Category:Human eye]]

@@ -1,0 +1,61 @@
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = Meggen
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = Meggen railway station.jpg
+| alt                 = Three-story building with gabled roof
+| caption             = The station in 2018
+| address             = 
+| borough             = [[Meggen]]
+| country             = [[Switzerland]]
+| coordinates         = {{WikidataCoord||region:CH-LU_type:railwaystation|format=dms|display=inline,title}}
+| elevation           = {{WikidataElevation|abbr=on}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = [[Lucerne–Immensee railway|Lucerne–Immensee line]]
+| distance            = {{convert|10.7|km|mi|abbr=on}} from {{rws|Lucerne}}<ref name="saw" />
+| platforms           = 
+| tracks              = 
+| train_operators     = [[Swiss Federal Railways]]
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 10 ({{ill|Tarifverbund Luzern/Obwalden/Nidwalden|de|lt=Passepartout}})<ref>{{cite web | title=Tarifzonen | url=https://passepartout.ch/wp-content/uploads/2020/11/Tarifzonen_reduziert_20_A4_ohne_EZ.pdf | publisher={{ill|Tarifverbund Luzern/Obwalden/Nidwalden|de}} | date=13 December 2020 | accessdate=1 January 2021}}</ref>
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 110 per weekday<ref>{{cite web | url=https://data.sbb.ch/explore/dataset/passagierfrequenz/table/?sort=dwv | title=Passagierfrequenz | date=September 2019 | accessdate=1 January 2021 | publisher=Swiss Federal Railways}}</ref>
+| pass_year           = 2018
+| pass_rank           = 
+|services            = {{Adjacent stations|system1=Lucerne S-Bahn
+|line1=3|left1=Meggen Zentrum|right1=Merlischachen
+}}
+| other_services      = 
+| mapframe            = yes
+| mapframe-custom     = {{Maplink|frame=yes|plain=yes|frame-align=center|frame-width=300|frame-height=180|zoom=12|type=point|marker=rail}}
+}}
+'''Meggen railway station''' ({{lang-de|Bahnhof Meggen}}) is a railway station in the municipality of [[Meggen]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of Lucerne|Lucerne]]. It is an intermediate stop on the standard gauge [[Lucerne–Immensee railway|Lucerne–Immensee line]] of [[Swiss Federal Railways]].<ref name="saw">{{Eisenbahnatlas Schweiz | page = 22}}</ref>
+
+== Services ==
+{{As of|alt=As of the December 2020 timetable change|2020|12|post=,}} the following services stop at Meggen:<ref name="fpf601">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/601.pdf | title = Luzern - Küssnacht am Rigi - Arth-Goldau - Göschenen | publisher = Bundesamt für Verkehr | date=3 November 2020 | accessdate = 1 January 2021}}</ref>
+
+* [[Lucerne S-Bahn]] {{rcb|Lucerne S-Bahn|3|inline=croute}}: hourly service between {{rws|Lucerne}} and [[Brunnen railway station|Brunnen]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline}}
+* {{SBB web|5001|meggen}}
+
+[[Category:Railway stations in the canton of Lucerne]]
+[[Category:Swiss Federal Railways stations]]

@@ -1,0 +1,70 @@
+[[File:MAGIC FINALISTS DSTOS.JPG|thumb|right|300px|Left to right: first Team Michigan, second U. Penn, third RASR, fourth MAGICian WAMbot, fifth Cappadocia]]
+The '''Multi Autonomous Ground-robotic International Challenge (MAGIC)''' is a 1.6 million dollar prize competition for autonomous [[mobile robots]] funded by [[United States Army Tank Automotive Research, Development and Engineering Center|TARDEC]] and the [[Defence Science and Technology Organisation|DSTO]], the primary research organizations for Tank and Defense research in the United States and Australia respectively. The goal of the competition is to create multi-vehicle robotic teams that can execute an intelligence, surveillance and reconnaissance mission in a dynamic urban environment. The challenge required competitors to map a 500&nbsp;m x 500&nbsp;m challenge area in under 3.5 hours  and to correctly locate, classify and recognise all simulated threats. The challenge event was conducted in [[Adelaide]], [[Australia]], during {{nowrap|November 2010}}.
+
+==Competitors==
+Initially 12 teams were selected for the competition in {{nowrap|November 2009}}, of which 10 teams received funding.<ref>[http://drdobbs.com/article/print?articleID=221400276&dept_url=/security/ ''Dr Dobb's Journal''&nbsp;– Teams From U.S., Australia Among Finalists In Worldwide Robotics Competition]</ref> These included:
+* MAGICian – Adelaide/Perth, Australia ([[University of Western Australia|UWA]], [[Edith Cowan University|ECU]], [[Flinders University|Flinders]], [[Thales Australia|Thales]])
+* Strategic Engineering – Adelaide, Australia ([[University of Adelaide|U. Adelaide]])
+* Northern Hunters – Canada ([[Royal Military College of Canada]])
+* Chiba Team – Japan ([[Chiba University]])
+* Cappadocia – Ankara, Turkey ([[ASELSAN]], [[Ohio State University]])
+* RASR – Gaithersburg, Md. (Robotics Research, LLC; [[QinetiQ]]; [[Embry-Riddle Aeronautical University]])
+* Team Cornell – US ([[Cornell University]])
+* Team Michigan – Ann Arbor, Mich. ([[University of Michigan]])
+* Virginia Tech – US ([[Virginia Tech]])
+* University of Pennsylvania – Philadelphia ([[University of Pennsylvania]])
+* Numinence – Brisbane, Australia (Numinence Pty Ltd, [[La Trobe University]])
+* UNSW – Sydney, Australia ([[University of New South Wales|UNSW]])
+
+The first downselection trial required teams to map an indoor area and outdoor area, and to demonstrate distributing and handing over tasks between robots. During the first downselection trial, the top six teams were selected:<ref>{{cite web|title= Finalists Named in Inaugural Worldwide Robotics Competition|author=John Wray|date=2010-07-26|url=http://www.prweb.com/releases/2010/07/prweb4309204.htm
+|publisher=[[PRweb]]}}</ref>
+* Cappadocia – Ankara, Turkey
+* MAGICian – Adelaide/Perth, Australia
+* RASR – Gaithersburg, Md.
+* Team Michigan – Ann Arbor, Mich.
+* University of Pennsylvania – Philadelphia
+* Chiba Team – Japan
+
+Before the finals were held, Chiba Team withdrew from the competition, leaving five competitors.
+
+==Event==
+Ultimately the overall goal of fully autonomous operations without human intervention was not achieved, however, the Secretary for Defence stated "The competing vehicles demonstrated new advances in robotics technology, which are very promising for their potential deployment in combat zones where they can replace our troops in carrying out life-threatening tasks" <ref>{{cite web|title=Mission accomplished, robots await verdict|author=Australia Defence Media Centre|date=2010-11-12|url=http://www.shephard.co.uk/news/uvonline/mission-accomplished-robots-await-verdict/7686/|publisher=[[Shephard]]}}</ref> and considered the competition a success.
+
+==Results==
+The official results of the competition were:
+* First – Team Michigan ($750,000 prize)
+* Second – University of Pennsylvania ($250,000 prize)
+* Third – RASR ($100,000 prize)
+* Fourth – MAGICian & Cappadocia
+
+The "Old Ram Shed Challenge" was a single-day competition held after the completion of MAGIC. It was smaller in scale, allowing all of the teams to demonstrate their systems during a single day. The University of Pennsylvania won this challenge, having found a greater number of the target objects than the other teams.
+
+==Technology==
+Key technology used by all teams was [[computer vision]], [[sensor fusion]], [[human-robot interaction]],
+and [[simultaneous localization and mapping]] (SLAM).
+
+* Team Michigan, a collaboration between the University of Michigan's APRIL Lab and Soar Technology, Inc., had the largest fleet of 14 robots, developed their own [[Inertial Measurement Unit]], and created their [[skid steer]] robot chassis out of Baltic birch plywood. Additionally, they had minimal reliance on [[GPS]] and used bandwidth limited 900&nbsp;MHz radios for all [[telemetry]], imaging, and status communications between all robots and the ground station.  The code was written primarily in [[Java (programming language)|Java]] and each robot was equipped with an actuated 2D [[LIDAR]], along with a unique 2D [[barcode]] for inter-robot recognition.
+* The University of Pennsylvania team consisted of only four members. All code was written using [[Matlab]]. The robots were equipped with omnidirectional vision.
+* RASR used the [[Foster-Miller TALON]] vehicle.
+* MAGICian used the WAMbot robots developed by The University of Western Australia, Edith Cowan University and Thales Australia. Code was written in [[C++]] and [[Java (programming language)|Java]]. The robots were equipped with [[SICK AG|SICK]] laser scanners.
+
+See the September/October 2012 special issue of the Journal of Field Robotics<ref>Ani Hsieh & Simon Lacroix (Ed.). (2012). [http://onlinelibrary.wiley.com/doi/10.1002/rob.v29.5/issuetoc ''Multi Autonomous Ground-robotic International Challenge (MAGIC)''] [Special Issue]. Journal of Field Robotics. 29 (5).</ref> for contest highlights, technical approaches taken by several of the teams, and an explanation of the evaluation metrics used by organizers.
+
+==References==
+{{Reflist}}
+
+==External links==
+*[http://www.abc.net.au/catalyst/stories/3147573.htm Australian science TV covers the MAGIC 2010 finals]
+
+===Official site===
+*[https://web.archive.org/web/20101120203708/http://www.dsto.defence.gov.au/magic2010/ The home page of MAGIC 2010]
+
+===Team sites===
+*[http://www.wambot.org/ The MAGICian WAMbot robot home page]
+*[http://april.eecs.umich.edu/magic/ Team Michigan home page]
+*[https://web.archive.org/web/20110723230726/https://www.grasp.upenn.edu/success_story/upenn_magic_2010_first_round_competition UPenn team (GRASP) news]
+*[http://www2.ece.ohio-state.edu/citr/magic2010/ Team Cappadocia home page]
+*[http://www.robotics.it-chiba.ac.jp/ Chiba robotics lab]
+
+[[Category:Robotics competitions]]
+[[Category:DARPA]]

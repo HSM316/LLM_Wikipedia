@@ -1,0 +1,73 @@
+{{Infobox information appliance
+| name          = NODE+
+| developer     = Variable Inc.
+| manufacturer  = Variable Inc.
+| type          = Handheld [[sensor]] platform 
+| dimensions    = 1 inch in diameter by 3.75 inches wide
+| connectivity  = USB, Bluetooth 2.1 [[Bluetooth 4.0]] [[Bluetooth low energy|low energy]]
+| website       = {{URL|http://variableinc.com/}}
+}}
+
+'''NODE+''' ([[wireless]] [[sensor]] platform) is a first-generation handheld sensor measuring 1 inch in diameter and 3.75 inches wide that communicates wirelessly through low-energy [[Bluetooth 4.0]] with [[Apple iOS]] devices.<ref>{{cite news|title=Variable Technologies wins Early Innovator Award|url=http://businesschatt.com/2012/11/variable-technologies-wins-early-innovator-award/|archive-url=https://web.archive.org/web/20130127223009/http://businesschatt.com/2012/11/variable-technologies-wins-early-innovator-award/|url-status=dead|archive-date=2013-01-27|newspaper=Chattanooga Business Journal|date=2012-11-13}}</ref><ref>{{Cite web|url=https://www.engadget.com/2013/09/11/node-android/|title = Node modular sensor gets Android compatible version}}</ref>
+
+NODE+ has been attributed in the media as a “[[Swiss Army knife]] of sensors,”<ref>{{cite web|title=Wonder gadget can do whatever you want with the right module|url=http://dvice.com/archives/2012/06/node.php|publisher=Dvice.com|date=2012-06-28|url-status=dead|archive-url=https://web.archive.org/web/20120806102105/http://dvice.com/archives/2012/06/node.php|archive-date=2012-08-06}}</ref> similar in appearance to the “[[tricorder]] from [[Star Trek]],”<ref>{{cite web|title=Node Handheld Sensor Looks Like Star Trek Medical Tricorder|url=http://www.thatsitguys.com/news/node-handheld-sensor-looks-like-star-trek-medical-tricorder|date=2012-10-21}}</ref> and as a “powerhouse of quality sensors”<ref>{{cite web|title=CEA Line Shows to Feature More than 120 Innovative Tech Companies|url=http://www.businesswire.com/news/home/20120524006132/en/CEA-Line-Shows-Feature-120-Innovative-Tech|date=2012-01-24}}</ref>  that can “measure anything.”<ref>{{cite news|title=George Yu's Node Gadget Can Measure Anything|url=http://www.businessweek.com/articles/2012-12-13/george-yus-node-gadget-can-measure-anything|newspaper=Bloomberg Businessweek|date=2012-12-13|author=John Tozzi}}</ref>
+
+In September 2014, 16 interchangeable sensor modules were available for purchase that can detect color, gases, ambient temperature, barometric pressure, motion, surface temperature and other qualities.<ref>http://www.businesswire.com/news/home/20120524006132/en/CEA-Line-Shows-Feature-120-Innovative-Tech David Pogue's 2012 Holiday Gift Guide</ref>
+
+[[Mobile applications]] that display the data transmitted by the NODE can be developed through an open [[application programming interface]] (API),<ref name="tuaw">{{cite news|url=http://www.tuaw.com/2012/12/11/node-gives-your-iphone-sensory-input/|title=Node gives your iPhone sensory input|newspaper=The Unofficial Apple Weblog|date=2012-12-11}}</ref> although mobile app developers must obtain a commercial license from Variable Inc. prior to selling a mobile app that uses Node+ sensors for commercial purposes.
+
+Node+ is available in educational settings through a partnership with Vernier Software & Technology. NODE+ is being sold for use in classrooms and educational institutions.<ref>{{Cite web|url=http://campustechnology.com/articles/2013/08/22/vernier-variable-bring-sensor-platform-to-stem-classrooms.aspx?=CT21|title = Vernier, Variable Bring Sensor Platform to STEM Classrooms -}}</ref> NODE+ is also being used to support a variety of academic research studies.<ref>http://www.cs.uic.edu/~urbcomp2013/papers/Paper%2019_Devarakonda.pdf {{Bare URL PDF|date=March 2022}}</ref> Additionally, NODE+ is being used as a platform to help industries worldwide develop Internet of Things (IoT) strategies.<ref>http://challenges.s3.amazonaws.com/node/Variable%202014%20Internet%20of%20NODE%20Things.pdf {{Bare URL PDF|date=March 2022}}</ref>
+
+NODE+ is manufactured in the United States of America.<ref>{{Cite web |url=https://getontheshelf.walmart.com/product/1fc6/NODE-wireless-sensor-pla |title=Walmart: Get on the Shelf |access-date=2014-09-08 |archive-date=2014-09-08 |archive-url=https://web.archive.org/web/20140908202514/https://getontheshelf.walmart.com/product/1fc6/NODE-wireless-sensor-pla |url-status=dead }}</ref>
+
+==History==
+The NODE+ was invented and produced in 2011 by George Yu, Ph.D. in his home in [[Chattanooga, Tennessee]].<ref>{{cite web|title=Variable Technologies opens Knoxville office |url=http://www.eokhq.com/profiles/blogs/variable-technologies-opens-knoxville-office|date=2012-12-13}}</ref>   Prior to founding Variable Technologies LLC as CEO, Yu worked on research and development projects with [[NASA]] and the [[Department of Homeland Security]].<ref>{{cite journal|title=High Tech Inventor Brings High Growth Potential to the INCubator|journal=Trend Magazine|year=2012|issue=Fall|url=http://www.chattanoogachamber.com/news-media/trend-magazine/2012/fall-2012/high-tech-inventor-brings-high}}</ref>
+
+NODE+ raised $76,340 on [[Kickstarter]], $26,340 above its goal of $50,000 on March 23, 2012.<ref>http://www.kickstarter.com/projects/108684420/node-a-modular-handheld-powerhouse-of-sensors Kickstarter.com</ref>
+
+CHROMA, a color-matching module, raised $39,473 on Kickstarter, $24,473 over its goal on December 7, 2012.<ref>http://www.kickstarter.com/projects/108684420/node-chroma-an-accurate-bluetooth-40-color-sensor Kickstarter.com</ref>
+
+Variable Inc. opened a second [[Knoxville, Tennessee]] office in December 2012. This office handles business development and government relations.<ref>{{cite news|title=Variable Technologies opens Knoxville office|url=http://www.knoxnews.com/news/2012/dec/13/variable-technologies-opens-knoxville-office/|newspaper=Knoxville News-Sentinel|date=2012-12-13}}</ref><ref>{{cite news|title=Tech company expands to Knoxville|url=http://westknox.wbir.com/news/news/46309-tech-company-expands-knoxville|newspaper=WBIR TV-10}}</ref>
+
+At the June 2013 Cisco Live U.S. event in Orlando, Florida, Cisco Chief Futurist David Evans demonstrated NODE+ as part of a talk about using technology in an “Internet of Things” strategy, in front of an audience of approximately 20,000 people and more than 200,000 through a webcast.<ref>https://www.ciscolive.com/online/connect/flowPlayer.do?url=http://d2zmdbbm9feqrf.cloudfront.net/2013/usa/GENKEY-1295.mp4 {{Bare URL AV media|date=June 2022}}</ref>
+
+In September 2013, Variable Inc. announced the release of an Android-compatible NODE+ wireless sensor platform.<ref>{{Cite web|url=https://www.engadget.com/2013/09/11/node-android/|title = Node modular sensor gets Android compatible version}}</ref> The device had been only iOS compatible.
+
+NODE+{{CO2}}, a carbon dioxide sensing module, one of six different gas sensors in the OXA sensor family, raised $26,046 on Kickstarter, $1,046 over its goal on December 31, 2013.<ref>{{Cite web|url=https://www.kickstarter.com/projects/soldermaster/node-co2-sensor-measure-air-quality-anywhere-anyti?ref=nav_search|title = NODE {{CO2}} Sensor: Measure Air Quality Anywhere - Anytime}}</ref>
+
+In June 2014, Variable Inc. launched an online hackathon competition entitled HACKANODE.
+
+It appears at this time (9/13/2018) that Node is no longer available.
+
+==Hardware==
+The base unit, NODE+, includes a 9-axis motion engine: a 3-axis gyroscope, a 3-axis accelerometer and a 3-axis magnetometer, as well as 16MB of onboard storage space. The NODE+ has dimmable blue LEDs and two module ports contains a crypto chip on the firmware. It communicates with Bluetooth 2.1 or Bluetooth Low Energy. The lithium polymer battery in the device has a battery life of 12–14 hours with continuous Bluetooth use (54 days in standby mode) and can be charged through the micro-USB port.<ref>{{Cite web|url=http://www.kickstarter.com/projects/108684420/node-a-modular-handheld-powerhouse-of-sensors|title = NODE: A modular, handheld powerhouse of sensors}}</ref>
+
+==Mobile applications==
+
+'''GTI Spindle VibePro:''' A vibration analysis diagnostic app that uses NODE+THERMA to check the surface temperature of rotational machinery.
+
+'''Velos:''' A color matching and collecting application for the NODE+CHROMA Bluetooth interchangeable sensor platform.
+
+'''Cargosense:''' A data and analytics service that delivers total visibility for shipped goods intended for the healthcare industry.
+
+'''Vernier Graphical Analysis:''' Vernier Graphical Analysis and NODE+ are used by students to collect, analyze, and share sensor data in math and science classrooms.
+
+'''Little Lives:''' Little Lives allows school personnel to check students into the classroom and detect oncoming fevers by using NODE+THERMA to record their forehead temperatures.
+
+'''LRV Guru:''' The LRV Guru app helps calculate color contrast ratios. Color samples can be scanned with a NODE+CHROMA or manually entered using manufacturer LRV data.
+
+'''Paint Pro and Paint Pro Classic:''' Paint Pro uses NODE+CHROMA version 1.0 and 1.1 to compare and match paint colors between different manufacturers.
+
+'''Scientific Sci-Fi Scanner:''' NODE+ sensor is an interactive scanner that uses information and data from NASA to give you information about your surroundings using the sensors on your phone.
+
+'''Aeronaut:''' An analog flight instrument that uses NODE+CLIMA as a variometer and altimeter.
+
+'''WKC Fix-O-Meter:''' This app teaches overhead stability and safety to kettlebell lifters and was originally developed for world champion kettlebell lifter Valery Fedorenko.<ref>[[Valery Fedorenko]]</ref>
+
+==References==
+{{Reflist|30em}}
+
+[[Category:Smartphones]]
+[[Category:Sensors]]
+[[Category:Internet of things]]
+[[Category:Kickstarter-funded products]]

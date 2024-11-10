@@ -1,0 +1,12 @@
+In the fields of machine learning, the theory of computation, and random matrix theory, a probability distribution over vectors is said to be in isotropic position if its covariance matrix is equal to the identity matrix. 
+
+ Formal definitions 
+Let  be a distribution over vectors in the vector space .
+Then  is in isotropic position if, for vector  sampled from the distribution,
+
+A set of vectors is said to be in isotropic position if the uniform distribution over that set is in isotropic position. In particular, every orthonormal set of vectors is isotropic.
+
+As a related definition, a convex body  in  is called isotropic if it has volume , center of mass at the origin, and there is a constant  such that
+
+for all vectors  in ; here  stands 
+for the standard Euclidean norm.

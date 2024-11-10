@@ -1,0 +1,80 @@
+'''Darwin Core''' (often abbreviated to '''DwC''') is an extension of [[Dublin Core]] for [[biodiversity informatics]]. It is meant to provide a stable standard reference for sharing information on biological diversity.<ref>{{cite journal|last=Wieczorek|first=John|author2=D. Bloom |author3=R. Guralnick |author4=S. Blum |author5=M. Döring |author6=R. De Giovanni |author7=T. Robertson |author8=D. Vieglais |title=Darwin Core: An Evolving Community-developed Biodiversity Data Standard.|journal=[[PLoS ONE]] |year=2012|volume=7|issue=1|pages=e29715|doi=10.1371/journal.pone.0029715|pmid=22238640|pmc=3253084|bibcode=2012PLoSO...729715W}}</ref> The terms described in this standard are a part of a larger set of vocabularies and technical specifications under development and maintained by [[Biodiversity Information Standards (TDWG)]] (formerly known as the Taxonomic Databases Working Group (TDWG)).
+
+== Description ==
+The Darwin Core is a '''body of standards''' intended to facilitate the sharing of information about [[biological diversity]]. The DwC includes a glossary of terms, and documentation providing reference definitions, examples, and commentary. An overview of the currently adopted terms and concepts can be found in the [https://dwc.tdwg.org/terms/ Darwin Core quick reference guide] maintained by [[TDWG]].
+
+The DwC operational unit is primarily based on [[Taxon|taxa]], their occurrence in nature as documented by observations, specimens, and samples, and related information. Included in the standard are documents describing how these terms are managed, how the set of terms can be extended for new purposes, and how the terms can be used.
+
+Each DwC '''term''' includes a definition and discussions meant to promote the consistent use of the terms across applications and disciplines. In other contexts, such terms might be called properties, elements, fields, columns, attributes, or concepts. Though the data types and constraints are not provided in the term definitions, recommendations are made about how to restrict the values where appropriate, for instance by suggesting the use of [[controlled vocabularies]].
+
+DwC standards are versioned and are constantly evolving, and working groups frequently add to the documentation practical examples that discuss, refine, and expand the normative definitions of each term. This approach to documentation allows the standard to adapt to new purposes without disrupting existing applications.
+
+In practice, Darwin Core decouples the definition and semantics of individual terms from application of these terms in different technologies. Darwin Core provides separate guidelines on how to encode the terms as RDF,<ref name="dwc-rdf">[http://rs.tdwg.org/dwc/terms/guides/rdf/index.htm Darwin Core XML Guide]</ref> XML<ref name="dwc-xml">[http://rs.tdwg.org/dwc/terms/guides/xml/index.htm Darwin Core XML Guide]</ref> or text files.<ref name="dwc-text">[http://rs.tdwg.org/dwc/terms/guides/text/index.htm Darwin Core Text Guide]</ref>
+
+The '''Simple Darwin Core''' <ref name="simpledwc">[http://rs.tdwg.org/dwc/terms/simple/index.htm The Simple Darwin Core]</ref> is a specification for one particular way to use the terms and to share data about taxa and their occurrences in a simply-structured way. It is likely what is meant if someone were to suggest "formatting your data according to the Darwin Core".
+
+== History ==
+Darwin Core was originally created as a [[Z39.50]] profile by the Z39.50 Biology Implementers Group (ZBIG), supported by funding from a USA National Science Foundation award.<ref name="zbig">An Experimental Z39.50 Information Retrieval Protocol Test Bed for Biological Collection and Taxonomic Data, #9811443 [http://nsf.gov/awardsearch/showAward.do?AwardNumber=9811443]</ref>  The name "Darwin Core" was first coined by Allen Allison at the first meeting of the ZBIG held at the University of Kansas in 1998 while commenting on the profile's conceptual similarity with Dublin Core. The Darwin Core profile was later expressed as an XML Schema document for use by the Distributed Generic Information Retrieval (DiGIR) protocol. A [[TDWG]] task group was created to revise the Darwin Core, and a ratified metadata standard was officially released on 9 October 2009.
+
+Though ratified as a standard by TDWG/[[Biodiversity Information Standards]] since then, Darwin Core has had numerous previous versions in production usage. The published standard contains a normative term list<ref name="normative">[https://dwc.tdwg.org/list/ Darwin Core Normative Term List]</ref> with the complete history of the versions of terms leading to the current standard.
+
+{| class="wikitable" style="text-align:left"
+|+Darwin Core Versions
+|-
+! Name !! Namespace !! Number of terms !! XML Schema !! Date Issued
+|-
+! Darwin Core 1.0
+| Not Applicable || 24 || (Z39.50 GRS-1) || 1998
+|-
+! Darwin Core 1.2 (Classic)
+| http://digir.net/schema/conceptual/darwin/2003/1.0/ <ref name="dwc12">Darwin Core 1.2 [https://web.archive.org/web/20080818174540/http://digir.net/schema/conceptual/darwin/2003/1.0/]</ref>   || 46 || [https://web.archive.org/web/20161115214351/http://digir.net/schema/conceptual/darwin/2003/1.0/darwin2.xsd] || 2001-09-11
+|-
+! Darwin Core 1.21 (MaNIS/HerpNet/ORNIS/FishNet2)
+| http://digir.net/schema/conceptual/darwin/2003/1.0/ <ref name="dwc121"> Darwin Core 1.21 [https://web.archive.org/web/20080818174540/http://digir.net/schema/conceptual/darwin/2003/1.0/]</ref>   || 63 || [https://web.archive.org/web/20090303231913/http://digir.net/schema/conceptual/darwin/manis/1.21/darwin2.xsd] || 2003-03-15
+|-
+! Darwin Core OBIS
+| http://www.iobis.org/obis/ <ref name="dwcobis">Darwin Core OBIS [https://web.archive.org/web/20070824110812/http://www.iobis.org/obis/]</ref>   || 27 || [http://iobis.org/obis/obis.xsd] || 2005-07-10
+|-
+! Darwin Core 1.4 (Draft Standard)
+| http://rs.tdwg.org/dwc/dwcore/ <ref name="dwc14">Darwin Core 1.4 [https://zenodo.org/record/12694#.X1lndWdKjOQ]</ref>|| 46 || [https://web.archive.org/web/20180720074904/http://rs.tdwg.org/dwc/tdwg_dw_core.xsd] || 2007-04-23
+|-
+! Darwin Core Standard
+| http://rs.tdwg.org/dwc/terms/ || 169 || [https://dwc.tdwg.org/xml/tdwg_dwcterms.xsd] || 2009-10-09
+|-
+|}
+
+== Key Projects Using Darwin Core ==
+* The [[Global Biodiversity Information Facility]] (GBIF)<ref>{{cite web |url=https://www.gbif.org/informatics/standards-and-tools/publishing-data/data-standards/darwin-core-archives/ |title=Darwin Core |publisher=[[Global Biodiversity Information Facility]] |accessdate=April 12, 2011 |url-status=dead |archiveurl=https://web.archive.org/web/20110412022331/http://www.gbif.org/informatics/standards-and-tools/publishing-data/data-standards/darwin-core-archives |archivedate=April 12, 2011 }}</ref>
+* The [[Ocean Biogeographic Information System]] (OBIS)<ref>{{cite web|url=http://www.iobis.org/data/schema-and-metadata|title=Data Schema and metadata|publisher=[[Ocean Biogeographic Information System]]|accessdate=April 12, 2011|url-status=dead|archiveurl=https://web.archive.org/web/20101008164758/http://www.iobis.org/data/schema-and-metadata|archivedate=October 8, 2010}}</ref>
+*[https://www.ala.org.au/how-to-work-with-data/ The Atlas of Living Australia (ALA)]
+*[http://www3.interscience.wiley.com/cgi-bin/fulltext/120713092/PDFSTART Online Zoological Collections of Australian Museums (OZCAM)]{{dead link|date=July 2020|bot=medic}}{{cbignore|bot=medic}}
+*[http://manisnet.org Mammal Networked Information System (MaNIS)]
+*[http://ornisnet.org Ornithological Information System (ORNIS)]
+*[http://www.fishnet2.net/index.html FishNet 2]
+*[http://vertnet.org VertNet]
+*[http://www.canadensys.net/ Canadensys]
+*[https://archive.today/20130115053113/http://w3.ufsm.br/herbarioflorestal/nature/site/ Sistema Nature 3.0]
+*[http://eol.org Encyclopedia of Life]
+*[https://www.idigbio.org Integrated Digitized Biocollections (iDigBio)] <ref>{{cite web|title=Data Ingestion Guidance|url=https://www.idigbio.org/wiki/index.php/Data_Ingestion_Guidance|publisher=[[iDigBio]]|accessdate=26 September 2016}}</ref> <ref>{{cite web|title=Getting your data out there: Data publishing & data standards with iDigBio|url=https://www.idigbio.org/content/getting-your-data-out-there-data-publishing-data-standards-idigbio|publisher=[[iDigBio]]|accessdate=26 September 2016}}</ref>
+
+== See also ==
+* [[Darwin Core Archive]]
+*[https://github.com/tdwg/dwc Darwin Core Standard Specifications] - [[GitHub]] repository where DwC is actively maintained<ref>{{Citation|last=Darwin Core task group|first=Biodiversity Information Standards (TDWG)|title=Darwin Core: 2014-11-08|date=2014-11-08|url=https://zenodo.org/record/12694|doi=10.5281/zenodo.592792|access-date=2020-10-22}}</ref>
+* [[Biodiversity Information Standards]] (TDWG)
+* [[Biodiversity]]
+* [[Biodiversity informatics]]
+* [[Metadata standards]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[http://rs.tdwg.org/dwc/terms/index.htm Darwin Core Quick Reference Guide]
+*[https://github.com/tdwg/dwc/ Darwin Core Development Site]
+*[https://dwc.tdwg.org/ Official Darwin Core Website]
+*[https://www.tdwg.org/standards/dwc/ Executive Summary of Darwin Core]
+
+[[Category:Bioinformatics]]
+[[Category:Knowledge representation]]
+[[Category:Interoperability]]
+[[Category:Metadata standards]]

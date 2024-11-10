@@ -1,0 +1,81 @@
+{{Use mdy dates|date=June 2023}}
+{{short description|American artificial intelligence technology company}}
+{{infobox company
+| name = Sentient Technologies
+| logo = Sentient-Logo-2000.png
+| former_name = Genetic Finance Holding Ltd.
+| industry = Technology
+| founded = 2007
+| hq_location = San Francisco
+| key_people = {{ubl|[[:en:Antoine Blondeau|Antoine Blondeau]] (Co-Chairman and Co-founder)|[[Babak Hodjat]] (CEO and Co-founder)|[[Adam Cheyer]] (Co-founder)}}
+| products = {{ubl|Sentient Aware|Sentient Ascend}}
+| website = {{URL|sentient.ai}}
+| founders = 
+}}
+
+'''Sentient Technologies''' was an American [[artificial intelligence]] technology company based in [[San Francisco]].<ref name=ft/> Sentient was founded in 2007 and received over $143 million in funding at different points after its inception.<ref name=mit/><ref name=bloom/> As of 2016, Sentient was the world's most well-funded AI company. It focused on e-commerce, online content and trading.<ref name=tele/>
+
+The company was dissolved in 2019.<ref name=MarTechSeries/><ref name=ZDNet/>
+
+==History==
+Sentient originally operated in [[stealth mode]] as Genetic Finance Holding Ltd. The company was founded in 2007 by [[:en:Antoine Blondeau|Antoine Blondeau]], Babak Hodjat and [[Adam Cheyer]] who created the [[Natural language processing|natural language technology]] that led to [[Siri]], [[Apple Inc.|Apple's]] voice recognition software.<ref name=wsj/><ref name=b2/> Sentient raised a $2 million Series A round of funding, and $38 million in a Series B round led by Horizons Ventures.<ref name=wsj/> Sentient emerged from stealth mode in November 2014 with $103.5 million in Series C funding.<ref name=wsj/><ref name=bloom/><ref name=biz/>
+
+Sentient worked with [[Massachusetts Institute of Technology]]'s Computer Science and Artificial Intelligence Laboratory to analyze blood pressure to predict the likelihood of [[sepsis]] in ICU patients.<ref name=wsj/><ref name=mit/> The technology was researched in association with [[St. Michael's Hospital (Toronto)|Saint Michael's Hospital]] at the [[University of Toronto]].<ref name=nyt/> The platform was also used to successfully automate financial services for Sentient's subsidiary, Sentient Investment Management.<ref name=wired/>
+
+In 2015, Sentient launched an AI powered visual intelligence and personalization platform leveraging deep learning and online learning. In 2016, Sentient recruited Mark Elfenbein to be its Chief Revenue Officer.<ref>{{Cite web |url=https://www.bizjournals.com/sanfrancisco/potmsearch/detail/submission/5867352/Mark_Elfenbein |title=Archived copy |access-date=July 18, 2020 |archive-date=May 23, 2016 |archive-url=https://web.archive.org/web/20160523005724/https://www.bizjournals.com/sanfrancisco/potmsearch/detail/submission/5867352/Mark_Elfenbein |url-status=dead }}</ref> Shoes.com, a Vancouver-based online shoe retailer, was Sentient's first retail customer for this service.<ref name=nyt/><ref name=ibt/><ref name=mm/> Since its launch, Sentient had other retailer customers.<ref name=cn/><ref name=wsj/><ref name=cos/> 
+
+Sentient Ascend was launched in September 2016 as a [[Software as a service|SaaS]] AI based [[conversion rate optimization]] platform, largely based on the same [[evolutionary computation|AI methods]] used in its [[financial technology]] IP.<ref name=econ/><ref name=mt/>
+
+In 2019, Sentient Technologies was dissolved, selling off Sentient Ascend to Evolv<ref name=MarTechSeries/> and much of its AI intellectual property to Cognizant.<ref name=ZDNet/>
+
+==Technology==
+Sentient's platform<ref name=nyt/><ref name=ge/> combined evolutionary computation, which mimics biological evolution, and [[deep learning]], which is based on the structure of nervous systems.<ref name=wsj/> Sentient's algorithms worked across as many as two million CPU cores and 5000 GPU cards across 4,000 physical sites around the world, making it one of the largest known systems dedicated to AI.<ref name=tele/><ref name=ibt2/>
+
+==References==
+{{reflist|refs=
+
+<ref name=ZDNet>{{cite web| url=https://www.zdnet.com/article/cognizant-tech-explores-the-evolution-of-ai/| title=IT leader Cognizant evolves AI beyond 'hill climbing'| author= Tiernan Ray | date=February 28, 2019| publisher=CBS Interactive}}</ref>
+
+<ref name=MarTechSeries>{{cite web| url=https://martechseries.com/mts-insights/interviews/martech-interview-michael-scharff-chief-executive-officer-evolv/| title=Evolv Technologies raises $10m and acquires Sentient Ascend| date=June 14, 2019|author= Sudipto Ghosh | publisher=Martechseries}}</ref>
+
+<ref name=wsj>{{cite web| url=https://blogs.wsj.com/venturecapital/2014/11/24/artificial-intelligence-company-sentient-emerges-from-stealth/| title=Artificial Intelligence Company Sentient Emerges From Stealth| author=Deborah Gage| date=November 24, 2014| publisher=The Wall Street Journal}}</ref>
+
+<ref name=mit>{{cite web| url=https://www.technologyreview.com/s/537831/ai-supercomputer-built-by-tapping-data-warehouses-for-their-idle-computing-power/| title=AI Supercomputer Built by Tapping Data Warhouses for Their Idle Computing Power| author=Tom Simonite| date=June 1, 2015| publisher=MIT Technology Review}}</ref>
+
+<ref name=nyt>{{cite web| url=https://bits.blogs.nytimes.com/2015/11/16/artificial-intelligence-draws-new-connections-for-personalization/?_r=2&mtrref=undefined&gwh=CBC99EAB08A05910CDAB778F242E188A&gwt=pay| title=Artificial Intelligence Draws New Connections for Personalization| author=Quentin Hardy| date=November 16, 2015| work=The New York Times}}</ref>
+
+<ref name=tele>{{cite web| url=https://www.telegraph.co.uk/technology/news/11939915/Worlds-most-funded-AI-company-Sentient-Technologies-launches-online-shopping-product.html| title=World's most funded AI company, Sentient Technologies, launches online shopping product| author=Madhumita Murgia| date=October 19, 2015| publisher=Telegraph}}</ref>
+
+<ref name=wired>{{cite web| url=https://www.wired.co.uk/article/sentient-technologies-ai-nurses-bankers| title=Sentient Technologies is using AI to tackle deadly diseases| author=Gian Volpicelli| date=March 30, 2016| publisher=Wired}}</ref>
+
+<ref name=bloom>{{cite web| url=https://www.bloomberg.com/news/articles/2014-11-24/ai-startup-sentient-raises-103-5-million-in-funding| title=AI Startup Sentient Raises $103.5 Million in Funding| author=Jack Clark| date=November 24, 2014| publisher=Bloomberg}}</ref>
+
+<ref name=ft>{{cite web| url=https://www.ft.com/content/74c789c8-11c3-11e6-839f-2922947098f0| title=AI pioneer Sentient to open equity fund to outside investors| author=Robin Wigglesworth| date=May 5, 2016| publisher=Financial Times}}</ref>
+
+<ref name=biz>{{cite web| url=http://www.bizjournals.com/sanfrancisco/blog/2014/11/sentient-technologies-artificial-intelligence-vc.html| title=Artificial intelligence startup Sentient Technologies raises $103.5M| date=November 25, 2014| publisher=San Francisco Business Times}}</ref>
+
+<ref name=b2>{{cite web| url=https://www.bloomberg.com/news/articles/2017-02-06/silicon-valley-hedge-fund-takes-on-wall-street-with-ai-trader| title=Silicon Valley Hedge Fund Takes On Wall Street With AI Trader| author=Adam Satariano| date=February 6, 2017| publisher=Bloomberg}}</ref>
+
+<ref name=cn>{{cite web| url=http://www.channelnews.com.au/technology-the-key-to-fighting-amazon-say-experts-as-us-retailers-shut-up-shop/| title=Technology The Key to Fighting Amazon Says Experts As US Retailers Shut Up Shop| author=David Richards| date=January 23, 2017| publisher=Channel News}}</ref>
+
+<ref name=cos>{{cite web| url=https://www.nxtbook.com/nxtbooks/nrf/STORES1216/#/48| title=Making Changes| author=Craig Guillot| date=December 2016| publisher=NRF}}</ref>
+
+<ref name=mm>{{cite web| url=http://mobilemarketingmagazine.com/spotlight-sentient-aware/| title=Spotlight: Sentient Aware| author=David Murphy| date=November 24, 2016| publisher=Mobile Marketing}}</ref>
+
+<ref name=econ>{{cite web| url=https://econsultancy.com/blog/68466-could-ai-kill-off-the-conversion-optimisation-consultant/| title=Could AI kill off the conversion optimisation consultant?| author=Ben Davis| date=November 2, 2016| publisher=Econsultancy}}</ref>
+
+<ref name=mt>{{cite web| url=http://www.marketingtechnews.net/news/2016/sep/19/sentient-launches-ai-based-conversion-rate-optimisation-solution/| title=Sentient launches AI based conversion rate optimisation tool| author=Rachael Power| date=September 19, 2016| publisher=Marketing Tech}}</ref>
+
+<ref name=ibt>{{cite web| url=http://www.ibtimes.com/deepmind-watson-why-you-should-learn-stop-worrying-love-ai-2339231| title=From DeepMind To Watson: Why You Should Learn To Stop Worrying And Love AI| author=David Gilbert| date=March 18, 2016| work=International Business Times}}</ref>
+
+<ref name=ibt2>{{cite web| url=http://www.ibtimes.com/artificial-intelligence-here-help-you-pick-right-shoes-2144114| title=Artificial Intelligence Is Here To Help You Pick The Right Shoes| author=David Gilbert| date=October 16, 2015| work=International Business Times}}</ref>
+
+<ref name=ge>{{cite web| url=http://www.gereports.com/ai-fighter-pilots-e-commerce-sentients-antoine-blondeau-explains/| title=What Do AI And Fighter Pilots Have To Do With E-Commerce? Sentient's Antoine Blondeay Explains| date=December 5, 2016| publisher=GE Reports}}</ref>
+}}
+
+[[Category:Technology companies established in 2007]]
+[[Category:Companies based in San Francisco]]
+[[Category:2007 establishments in California]]
+[[Category:Artificial intelligence laboratories]]
+[[Category:Technology companies disestablished in 2019]]
+[[Category:2019 disestablishments in California]]

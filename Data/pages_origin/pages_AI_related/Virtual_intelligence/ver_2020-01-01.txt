@@ -1,0 +1,36 @@
+{{multiple issues|
+{{expert needed|date=May 2015}}
+{{Advert|article|date=August 2012}}
+}}
+
+'''Virtual intelligence''' is the term given to artificial intelligence that exists within a virtual world. Many virtual worlds have options for persistent avatars that provide information, training, role playing, and social interactions.
+
+The immersion of virtual worlds provides a unique platform for VI beyond the traditional paradigm of past [[user interface]]s (UIs).  What [[Alan Turing]] established as the benchmark for telling the difference between human and computerized intelligence was done void of visual influences.  With today's VI bots, virtual intelligence has evolved past the constraints of past testing into a new level of the machine's ability to demonstrate intelligence.  The immersive features of these environments provide non verbal elements that affect the realism provided by virtually intelligent agents.
+
+'''Virtual intelligence''' is the intersection of these two technologies:
+* '''Virtual environments''': [[Immersion (virtual reality)|Immersive]] 3D spaces provide for collaboration, simulations, and role playing interactions for training.  Many of these virtual environments are currently being used for government and academic projects, including [[Second Life]], [[VastPark]], [[Forterra Systems|Olive]], [[OpenSimulator|OpenSim]], [[Outerra]], [[Oracle Corporation|Oracle]]'s [[Open Wonderland]], [[Duke University]]'s [[Open Cobalt]], and many others.  Some of the commercial virtual worlds are also taking this technology into new directions, including the high definition virtual world [[Blue Mars (video game)|Blue Mars]].
+* '''[[Artificial intelligence]]''' <!-- needs explanation -->
+
+The virtual environments provide non-verbals and visual cues that can affect not only the believability of the VI, but also the usefulness of it. Because – like many things in technology – it's not just about "whether or not it  works" but also about "how we feel about it working". Virtual Intelligence draws a new distinction as to how this application of AI is different due to the environment in which it operates.
+
+==Examples of use==
+
+* '''Cutlass Bomb Disposal Robot''': [[Northrop Grumman]] developed a virtual training opportunity because of the prohibitive real world cost and dangers associated with bomb disposal. By replicating a complicated system without having to learn advanced code, the virtual robot has no risk of damage, trainee safety hazards, or accessibility constraints.
+* '''MyCyber Twin''': [[NASA]] is among the companies that have used the MyCyber Twin AI technologies. They used it for the [[Phoenix rover]] in the virtual world Second Life. Their MyCyber Twin used a programmed profile to relay information about the Phoenix rover to inform people on what it was doing and its purpose.{{Citation needed|date=May 2015}}
+* '''Second China''': The [[University of Florida]] developed the "Second China" project as an immersive training experience for learning how to interact with culture and language in a foreign country.  Students are immersed in an environment that provides roleplaying challenges coupled with language and cultural sensitivities magnified during country-level diplomatic missions or during times of potential conflict or regional destabilization.  The virtual training provides participants with opportunities to access information, take part in guided learning scenarios, communicate, collaborate, and role-play.  While China was the country for the prototype, this model can be modified for use with any culture to help better understand social and cultural interactions and see how other people think and what their actions imply.
+* '''Duke School of Nursing Training Simulation''': Extreme Reality developed virtual training to test critical thinking with a nurse performing trained procedures to identify critical data to make decisions and performing the correct steps for intervention. Bots are programmed to response to the nurses actions as the patient with their conditions improving if the nurse performs the correct actions.
+
+==See also==
+* [[Embodied agent]]
+* [[Intelligent agent]]
+* [[Non-player character]]
+* [[Virtual reality]]
+<!-- relevant German article: should there be a new English article for it or the article linked to this article? https://de.wikipedia.org/wiki/Intelligenter_virtueller_Agent -->
+
+==Citations==
+
+# [http://prezi.com/bcjqn-zkxvxh/ Virtual Intelligence], David Burden and Dave Fliesen, ModSim World Canada, June 2010
+# [http://openvce.net/modsim Sun Tzu Virtual Intelligence demonstration], MODSIM World, October 2009
+
+[[Category:Artificial intelligence]]
+[[Category:Virtual reality]]

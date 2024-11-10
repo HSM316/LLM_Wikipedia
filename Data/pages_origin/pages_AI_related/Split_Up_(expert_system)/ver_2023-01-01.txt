@@ -1,0 +1,72 @@
+{{Use Australian English|date=June 2018}}
+{{Use dmy dates|date=June 2018}}
+'''Split Up''' is an intelligent [[decision support system]], which makes predictions about the distribution of marital property following divorce in Australia. It is designed to assist [[judge]]s, registrars of the Family Court of Australia, [[mediation|mediators]] and [[lawyers]].
+Split Up operates as a hybrid system, combining rule – based reasoning with [[neural network]] theory.<ref>Stranieri, A. and Zeleznikow, J., Split_Up: The use of an argument based knowledge representation to meet expectations of different users for discretionary decision making,p.1
+Research has shown that rule-based reasoning on its own is not ideal in discretionary fields of law.</ref> Rule based reasoning operates within strict parameters, in the form:
+
+IF < condition(s) > then <action>.<ref name="Stranieri_1998">Stranieri, A. and Zeleznikow, J., Split Up: An Intelligent Decision Support System Which Provides Advice Upon Property Division Following Divorce, International Journal of Law and Information Technology, Vol 6. No. 2, 1998, 190–213.</ref>{{rp|196, 202}}
+
+Neural networks, by contrast, are considered to be better suited to generate decisions in uncertain domains, since they can be taught to weigh the factors considered by judicial decision makers from case data. Yet, they do not provide an explanation for the conclusions they reach. Split_up, with a view to overcome this flaw, uses argument structures proposed by [[Stephen Toulmin|Toulmin]] as the basis for representations from which [[explanation]]s can be generated.<ref name="Stranieri_1995">Stranieri,A. and Zeleznikow, J. (1995) The split-up system: integrating neural networks and rule-based reasoning in the legal domain.</ref>{{rp|186}}
+
+==Application==
+In Australian family law, a judge in determining the distribution of property will:
+#identify the assets of the marriage included in the common pool
+#establish what percentage of the common pool each party will receive
+#determine a final property order in line with the decisions made in 1. and 2.
+
+Split_Up implements step 1 and 2 : the common pool determination and the prediction of a percentage split.
+
+===The common pool determination===
+
+Since the determination of marital property is rule based, it is implemented using [[directed graph]]s.<ref name="Nolan">Nolan, J.R. and Zeleznikow, J., Using soft computing to build real world intelligent decision support systems in uncertain domains, Decision Support Systems, 31 (2001) 263–285.</ref>{{rp|269}}
+
+However, the percentage split between the parties is discretionary in that a judge
+has a wide discretion to look at each party's contributions to the marriage under section 79(4) of the [[Family Law Act 1975]].
+Broadly, the contributions can be taken as financial or non-financial. The party who can demonstrate a larger contribution to the marital relationship will receive a larger proportion of the assets. The court may further look at each party's financial resources and future needs under section 75(2)of the [[Family Law Act 1975]]. These needs can include factors such as the inability to gain employment, the continued care of a child under 18 years of age or medical expenses.
+
+This means that different judges may and will reach different conclusions based on the same facts, since each judge assigns different relevant weights to each factor. Split_up determines the percentage split by using a combination of rule- based reasoning and [[neural networks]].
+
+===The percentage split determination===
+
+In order to determine how judges weigh the different factors, 103 written judgements of commonplace cases were used to establish a database comprising 94 relevant factors for percentage split determination.<ref name="Nolan"/>{{rp|273}}
+
+The factors relevant for a percentage split determination are:
+
+* Past contributions of a husband relative to those of a wife
+* The husband’s future needs relative to those of the wife
+* The wealth of the marriage
+
+The factors relevant for a determination of past contributions are
+
+* The relative direct and indirect contributions of both parties
+* The length of the marriage
+* The relative contributions of both parties to the homemaking role
+
+The hierarchy provides a structure that is used to decompose the task of predicting an outcome into 35 subtasks. Outputs of tasks further down the hierarchy are used as inputs into sub-tasks higher up the hierarchy. Each sub-task is treated as a separate and smaller data mining exercise. Twenty one solid arcs represent inferences performed with the use of rule sets. For example, the level of wealth of a marriage is determined by a rule, which uses the common pool value.
+
+By contrast, the fourteen dashed arcs establish inferences performed with the use of [[neural networks]]. These receive their name from the fact that they resemble a [[nervous system]] in the [[brain]]. They consist of many self – adjusting processing elements cooperating in a densely interconnected network. Each processing element generates a single output that is transmitted to the other processing element. The output signal of a processing element depends on the input to the processing element, i.e. each input is gated by a weighting factor that determines the amount of influence that the input will have on the output. The strength of the weighting factors is adjusted autonomously by the processing element as the data is processed.<ref name="Stranieri_1998" />{{rp|196}}
+
+In Split_Up, the neural network is a [[statistics|statistical]] technique for learning the weights of each of the relevant attributes used in a percentage split determination of marital property.
+
+Hence the inputs to the neural network are contributions, future needs and wealth, and the output the percentage split predicted.
+
+On each arc there is a statistical weight. Using back [[self-replication|propagation]] the neural network learns the necessary pattern to recognize the prediction. It is trained by repeatedly exposing it to examples of the problem and learning the significance (weights) of the input [[node (neural networks)|nodes]].<ref name="Stranieri_1998"/>{{rp|196}}
+
+The neural network used by Split_up is said to generalise well if the output of the network is correct (or nearly correct) for examples not seen during training, which classifies it as an [[Artificial intelligence|intelligent system]].<ref name="Nolan"/>{{rp|274}}
+
+===Toulmin Argument Structure===
+Since the manner in which these weights are learned is primarily statistical, [[domain knowledge]] of legal rules and principles is not modelled directly. However, explanations for a legal conclusion in a domain as discretionary as the determining the distribution of property following divorce, are at least as important as the conclusion reached. Hence the creators of Split_Up used Toulmin Argument structures, to provide independent explanations of the conclusions reached.<ref name="Stranieri_1995"/>{{rp|189}}
+
+These operate on the basis that every argument makes an assertion based on some data. The assertion of the argument stands as the claim of the argument. Since knowing the data and the claim, does not necessarily mean that the claim follows from the data, a mechanism is required to justify the claim in the light of the data. The justification is known as the warrant. The backing of an argument supports the validity of the warrant. In the legal domain, this is typically a reference to a statute or a precedent.
+
+Here, a [[neural network]] (or rules), produce a conclusion from the data of an argument and the data, warrant and backing are reproduced to generate an explanation.
+
+It is noteworthy, though, that an argument’s warrant is reproduced as an explanation regardless of the claim values used. This lack of claim - sensitivity must be overcome by the different users, i.e., the judge, the representatives for the wife and the representatives for the husband, each of whom is encouraged to use the system to prepare their cases, but not to rely exclusively on its outcome.
+
+==References==
+{{Reflist}}
+
+[[Category:Argument technology]]
+[[Category:Expert systems]]
+[[Category:Legal software]]
+[[Category:Government by algorithm]]

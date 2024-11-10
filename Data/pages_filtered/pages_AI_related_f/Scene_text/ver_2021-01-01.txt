@@ -1,0 +1,18 @@
+Scene text is text that appears in an image captured by a camera in an outdoor environment. The image displays the coach category in text format. We can observe that the coach belongs to Sleeper category. The detection and recognition of scene text from camera captured images are computer vision tasks which became important after smart phones with good cameras became ubiquitous. The text in scene images varies in shape, font, colour and position. The recognition of scene text is further complicated sometimes by non-uniform illumination and focus. 
+To improve scene text recognition, the International Conference on Document Analysis and Recognition (ICDAR) conducts a robust reading competition once in two years. The competition was held in 2003, 2005ICDAR 2005 Competitions.
+http://www.iapr-tc11.org/mediawiki/index.php/ICDAR_2005_Robust_Reading_Competitions. and during every ICDAR conference.ICDAR 2013. http://www.icdar2013.org.ICDAR 2017. http://u-pat.org/ICDAR2017/ICDAR 2011 Robust Reading Competition. http://www.cvc.uab.es/icdar2011competition/. International association for pattern recognition (IAPR) has created a list of datasets as Reading systems.IAPR TC11 Reading Systems-Datasets List. http://www.iapr-tc11.org/mediawiki/index.php?title=Datasets.
+
+Text detection
+Text detection is the process of detecting the text present in the image, followed by surrounding it with a rectangular bounding box. Text detection can be carried out using image based techniques or frequency based techniques.
+
+In image based techniques, an image is segmented into multiple segments. Each segment is a connected component of pixels with similar characteristics. The statistical features of connected components are utilised to group them and form the text. Machine learning approaches such as support vector machine and convolutional neural networks are used to classify the components into text and non-text.
+
+In frequency based techniques, discrete Fourier transform (DFT) or discrete wavelet transform (DWT) are used to extract the high frequency coefficients. It is assumed that the text present in an image has high frequency components and selecting only the high frequency coefficients filters the text from the non-text regions in an image.
+
+Word recognition
+In word recognition, the text is assumed to be already detected and located and the rectangular bounding box containing the text is available. The word present in the bounding box needs to be recognized. The methods available to perform word recognition can be broadly classified into top-down and bottom-up approaches.
+
+In the top-down approaches, a set of words from a dictionary is used to identify which word suits the given image. Images are not segmented in most of these methods. Hence, the top-down approach is sometimes referred as segmentation free recognition.
+
+In the bottom-up approaches, the image is segmented into multiple components and the segmented image is passed through a recognition engine. Either an off the shelf Optical character recognition (OCR) engine Abbyy Fine Reader. http://www.abbyy.com/Nuance Omnipage Reader. 
+http://www.nuance.com/Tesseract OCR Engine. http://code.google.com/p/tesseract-ocr/ or a custom-trained one is used to recognise the text.

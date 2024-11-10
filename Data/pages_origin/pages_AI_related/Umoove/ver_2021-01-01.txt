@@ -1,0 +1,64 @@
+{{Infobox company
+|name               = Umoove
+|logo               =  Umoove.jpg
+|type               = LTD
+|traded_as          = 
+|foundation         = Israel (2010)
+|founders           = Yitzi Kempinski, Tuvia Elbaum, Nir Blushtein 
+|area_served        = Worldwide
+|subsid             = 
+|key_people         = Yitz Kempinski <small>([[CEO]], [[Chief technology officer|CTO]])</small><br>Tuvia Elbaum <small>([[Chief marketing officer|CMO]]<ref name="GEK">{{cite web|title=GeekTime|url=http://www.geektime.com/2014/01/14/umoove-releases-first-game-raises-1m//|accessdate=18 February 2014}}</ref>)</small> Nir Blushtein 
+|industry           = Mobile software development, gesture recognition
+|products           = [[Alternative and augmentative communication|AAC devices]]<br>[[Eye tracking]] for mobile devices [[smartphones]] and [[tablet computers]] based on built-in 2D cameras 
+|revenue            = 
+|operating_income   = 
+|net_income         = 
+|assets             = 
+|equity             = 
+|num_employees      = 15 <small>(2013)</small> <ref name="csh">{{cite web|title=SpectrumWebsite|url=https://spectrum.ieee.org/computing/software/eyetracking-software-goes-mobile|accessdate=11 September 2013}}</ref>
+|homepage           = [http://www.Umoove.me/ www.Umoove.me]
+}}
+
+'''Umoove''' is a [[high tech]] [[startup company]] that has developed and patented a software-only face and [[eye tracking]] technology. The idea was first conceived as an attempt to aid people with disabilities but has since evolved. The only compatibility qualification for [[tablet computers]] and [[smartphones]] to run Umoove software is a front-facing camera. 
+Umoove headquarters are in [[Israel]] on [[Jerusalem]]’s [[Har Hotzvim]].
+
+Umoove has 15 employees and received two million dollars in financing in 2012. The company's original founders invested around $800,000 to start the business in 2010.<ref name="NYT">{{cite web|title=NewYorkTimes|url=http://bits.blogs.nytimes.com/2013/03/12/eye-tracking-tech-will-be-open-to-iphones-others/?_r=0|accessdate=11 September 2013}}</ref>
+In 2013 Umoove was named one of the top three most promising Israeli start ups by Newsgeeks magazine.<ref name="21c">{{cite web|title=Israel21C|url=http://israel21c.org/technology/Umoove-operates-your-mobile-through-head-movements-alone/|accessdate=11 September 2013}}</ref>
+The company also participated in the 2013 [[LeWeb]] conference in [[Paris]], [[France]], where innovative technology startups are showcased.<ref name="YKL">{{cite web|title=LeWebsite|url=http://paris.leweb.co/participants/speakers/yitzi-kempinski/umoove|accessdate=18 February 2014}}</ref>
+
+__TOC__
+
+==Technology==
+The technology uses information extracted from previous frames, such as the angle of the user's head to predict where to look for facial targets in the next frame. This anticipation minimizes the amount of computation needed to scan each image.<ref name="spc">{{cite web|title=SpectrumWebsite|url=https://spectrum.ieee.org/computing/software/eyetracking-software-goes-mobile|accessdate=12 September 2013}}</ref>
+Umoove accounts for variances in environment, lighting conditions and user hand shake/movement. The technology is designed to provide a consistent experience, whether you're in a brightly lit area or a darkened basement, and to work fluidly between them by adapting its processing when it detects color and brightness shifts. It uses an active stabilization technique to filter out natural body movements from an unstable camera in order to minimize false-positive motion detection.<ref name="tch">{{cite web|title=TechCrunch|url=https://techcrunch.com/2013/03/13/Umoove-is-poised-to-blanket-the-world-with-mobile-head-tracking-tech-with-or-without-the-galaxy-s-iv/|accessdate=12 September 2013}}</ref>
+
+Running the Umoove software on a [[Samsung Galaxy S3]] is said to take up only 2% [[CPU]].<ref name="spc"/>
+Umoove works exclusively with software and there is no hardware add-on necessary. It can be run on any [[smartphone]] or [[tablet computer]] that has a front-facing camera. Umoove claims that even a low-quality camera on an old device will run their software flawlessly.
+
+==Umoove Experience==
+In January 2014 Umoove released its first game onto the app store.<ref name="ITN">{{cite web|title=iTunes|url=https://itunes.apple.com/us/app/umoove-experience-3d-face/id731389410?mt=8//|accessdate=18 February 2014}}</ref> The Umoove Experience game lets users control where they are 'flying' in the game through simple gestures and motions with their head. The [[avatar (computing)|avatar]] will basically go toward wherever the user looks.<ref name="BGR">{{cite web|title=BGRwebsite|url=http://bgr.com/2014/01/14/best-iphone-game-favorites-umoove//|accessdate=18 February 2014}}</ref> The game was created to showcase the technology for game developers<ref name="TUA">{{cite web|title=TUAWWEBSITE|url=http://www.tuaw.com/2014/01/15/fly-through-umoove-experience-an-addictive-ios-game-that-uses-f//|accessdate=18 February 2014}}</ref> but that did not stop some from criticizing its simplicity.<ref name="CNT">{{cite web|title=CNETWEBSITE|url=http://www.cnet.com.au/iphone-game-tracks-face-movement-for-in-game-navigation-339346418.htm//|accessdate=18 February 2014}}</ref> Umoove also announced that they raised another one million dollars and that they are opening offices in [[Silicon Valley]], [[California]].<ref name="GEK"/>
+
+In February 2014, Umoove announced that their face-tracking [[software development kit]] is available for [[Android (operating system)|Android]] developers as well as [[iOS]].<ref name="NCH">{{cite web|title=TechCrunchFeb14|url=https://techcrunch.com/2014/02/19/umoove-android-adk-beta/|accessdate=20 February 2014}}</ref>
+
+==Reviews==
+The Umoove Experience garnered mostly positive reviews<ref name="GIG">{{cite web|title=Gigaom|url=http://gigaom.com/2014/01/14/this-awesome-ios-game-tracks-your-head-movement-to-control-the-direction-you-fly//|accessdate=19 February 2014}}</ref> from bloggers and mainstream media with some predicting that it could be the future of [[mobile gaming]].<ref name="BGR"/> [[Mashable]] wrote that Umoove's technology could be the emergence of [[gesture recognition]] technology in the mobile space, similar to [[Kinect]] with console gaming and what [[Leap Motion]] has done with desktop computers.<ref name="MSH">{{cite web|title=Mashable|url=http://mashable.com/2014/01/15/this-app-lets-you-control-a-game-using-face-tracking//|accessdate=18 February 2014}}</ref>
+
+Some, however, remain skeptical. [[CNET]], for example, did not give the game a positive review and called the [[eye tracking]] technology ‘freaky but cool’. They also noted that pioneering technologies have been known to fall short of expectations, citing [[Apple Inc]]’s [[Siri]] as an example. The technology blog [[GigaOM]] said that the Umoove Experience is ’awesome’<ref name="GIG"/> and [[technology evangelist]] [[Robert Scoble]] has called Umoove "brilliant".<ref name="RSV">{{cite web|title=ScoblePlus|url=https://plus.google.com/+Scobleizer/posts/SKQEzTymKrk|accessdate=12 September 2013}}</ref>
+
+==uHealth==
+In January 2015, Umoove released uHealth, a [[mobile application]] that uses [[eye tracking]] game-like exercise to challenge the user's ability to be attentive, continuously focus, follow commands and avoid distractions. The app is designed in the form of two games, one to improve attention and another that hones focus.<ref name="CTV">{{cite web|title=CTV|url= http://www.ctvnews.ca/sci-tech/israeli-start-up-creates-app-to-help-concentration-1.2225346|accessdate=17 February 2015}}</ref>
+uHealth is a training tool, not a [[diagnostic]]. Umoove has stated that they want to use their technology for diagnosing [[neurological disorders]] but this will depend on clinical tests and [[FDA]] approval.<ref name="T2I">{{cite web|title=TimesofIsraelShamah|url= http://www.timesofisrael.com/eye-tracking-tech-focuses-on-the-challenge-of-focus/|accessdate=17 February 2015}}</ref>  The company cites the direct relationship between [[eye movements]] and [[brain activity]] as well as various vision based therapies have been backed by many scientific studies conducted over the past decades. uHealth is the first time this type of therapy is delivered right to the end user through a simple download.<ref name="RNN">{{cite web|title=RapidNewsNetwork|url= http://rapidnewsnetwork.com/umoove-launches-eye-tracking-based-ios-app-improving-attention-focus/7955/|accessdate=17 February 2015}}</ref>
+
+==Collaboration rumors==
+In March 2013 there were rumors on the internet that Umoove would be the functioning software embedded into the [[Samsung Galaxy S4]], which was due to launch that month. This rumor was perpetrated by, among others, [[New York Times]],<ref name="NYT"/> [[Techcrunch]]<ref name="tch"/> and [[Yahoo]].<ref name="YHO">{{cite web|title=Yahoo|url=https://news.yahoo.com/galaxy-iv-eye-tracking-tech-coming-iphone-other-152506303.html;_ylt=A2KJ2PbcKUhRHUgAOhvQtDMD|accessdate=12 September 2013}}</ref> 
+Once Samsung launched without the Umoove technology rumors about a potential collaboration with [[Apple Inc]] hit the web. It has been said that due to the fact that [[Apple Inc]] is losing market share and stock value to Samsung they will be more aggressive and [[eye tracking]] is a logical place to make that move.<ref name="TOI">{{cite web|title=TimesofIsrael|url=http://www.timesofisrael.com/does-the-new-iphone-feature-israeli-start-ups-eye-tracking-tech/|accessdate=12 September 2013}}</ref>
+
+==References==
+{{reflist}}
+
+[[Category:Companies established in 2010]]
+[[Category:Software companies of Israel]]
+[[Category:Object recognition and categorization]]
+[[Category:Computer vision]]
+[[Category:Cognitive science]]
+[[Category:Gesture recognition]]

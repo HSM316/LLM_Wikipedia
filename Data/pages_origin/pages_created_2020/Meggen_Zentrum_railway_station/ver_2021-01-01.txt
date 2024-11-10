@@ -1,0 +1,63 @@
+{{Infobox station
+| style               = Swiss Federal Railways
+| name                = Meggen Zentrum
+| native_name         = 
+| native_name_lang    = 
+| symbol_location     = 
+| symbol              = 
+| type                = 
+| image               = Meggen Zentrum railway station.jpg
+| alt                 = Red train at side platform
+| caption             = [[Voralpen Express]] at the station in 2018
+| address             = 
+| borough             = [[Meggen]]
+| country             = [[Switzerland]]
+| coordinates         = {{WikidataCoord|Q12174810|region:CH-LU_type:railwaystation|format=dms|display=inline,title}}
+| owned               = [[Swiss Federal Railways]]
+| operator            = 
+| line                = [[Lucerne–Immensee railway|Lucerne–Immensee line]]
+| distance            = 
+| platforms           = 
+| tracks              = 
+| train_operators     = {{Plainlist|
+* [[Swiss Federal Railways]]
+* [[Südostbahn]]
+}}
+| connections         = 
+| structure           = 
+| parking             = 
+| bicycle             = 
+| disabled            = 
+| code                = 
+| iata                =
+| zone                = 
+| website             = 
+| opened              = <!-- {{Start date|YYYY|MM|DD|df=y}} -->
+| electrified         =
+| closed              = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers          = 
+| pass_year           = 
+| pass_rank           = 
+|services            = {{Adjacent stations|system1=Südostbahn
+|line1=Voralpen-Express|left1=Lucerne Verkehrshaus|right1=Küssnacht am Rigi
+|system2=Lucerne S-Bahn
+|line2=3|left2=Lucerne Verkehrshaus|right2=Meggen
+}}
+| other_services      = 
+}}
+'''Meggen Zentrum railway station''' ({{lang-de|Bahnhof Meggen Zentrum}}) is a railway station in the municipality of [[Meggen]], in the [[Switzerland|Swiss]] [[Canton of Switzerland|canton]] of [[Canton of Lucerne|Lucerne]]. It is an intermediate stop on the standard gauge [[Lucerne–Immensee railway|Lucerne–Immensee line]] of [[Swiss Federal Railways]].
+
+== Services ==
+The following services stop at Meggen Zentrum:<ref name="fpf601">{{cite web | url = https://www.fahrplanfelder.ch/fileadmin/fap_pdf_fields/2020/601.pdf | title = Luzern - Rotkreuz - Arth-Goldau - Erstfeld | publisher = Bundesamt für Verkehr | date=5 November 2019 | accessdate = 31 December 2019}}</ref>
+
+* [[Voralpen Express]]: hourly service between [[Lucerne railway station|Lucerne]] and [[St. Gallen railway station|St. Gallen]].
+* [[Lucerne S-Bahn]] {{rcb|Lucerne S-Bahn|3|inline=croute}}: hourly service between Lucerne and [[Brunnen railway station|Brunnen]].
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{commons category-inline}}
+
+[[Category:Railway stations in the canton of Lucerne]]
+[[Category:Swiss Federal Railways stations]]

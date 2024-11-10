@@ -1,0 +1,110 @@
+In [[statistics]] and in [[machine learning]], a '''linear predictor function''' is a [[linear function]] ([[linear combination]]) of a set of coefficients and explanatory variables ([[independent variable]]s), whose value is used to predict the outcome of a [[dependent variable]].<ref>{{Cite journal|last=Makhoul|first=J.|date=1975|title=Linear prediction: A tutorial review|journal=Proceedings of the IEEE|volume=63|issue=4|pages=561–580|doi=10.1109/PROC.1975.9792|issn=0018-9219}}</ref>  This sort of function usually comes in [[linear regression]], where the coefficients are called [[regression coefficient]]s. However, they also occur in various types of [[linear classifier]]s (e.g. [[logistic regression]]<ref name="Freedman09">{{cite book|title=Statistical Models: Theory and Practice|author=David A. Freedman|publisher=[[Cambridge University Press]]|year=2009|page=26|quote=A simple regression equation has on the right hand side an intercept and an explanatory variable with a slope coefficient. A multiple regression equation has two or more explanatory variables on the right hand side, each with its own slope coefficient|author-link=David A. Freedman}}</ref>, [[perceptron]]s<ref>Rosenblatt, Frank (1957), The Perceptron--a perceiving and recognizing automaton. Report 85-460-1, Cornell Aeronautical Laboratory.</ref>, [[support vector machine]]s<ref name="CorinnaCortes">{{Cite journal|last1=Cortes|first1=Corinna|last2=Vapnik|first2=Vladimir N.|year=1995|title=Support-vector networks|url=http://image.diku.dk/imagecanon/material/cortes_vapnik95.pdf|journal=[[Machine Learning (journal)|Machine Learning]]|volume=20|issue=3|pages=273–297|citeseerx=10.1.1.15.9362|doi=10.1007/BF00994018|authorlink1=Corinna Cortes}}</ref>, and [[linear discriminant analysis]]<ref name="McLachlan:2004">{{cite book|title=Discriminant Analysis and Statistical Pattern Recognition|last1=McLachlan|first1=G. J.|publisher=Wiley Interscience|year=2004|isbn=978-0-471-69115-0|mr=1190469}}</ref>), as well as in various other models, such as [[principal component analysis]]<ref name="Principal Component Analysis">Jolliffe I.T. ''Principal Component Analysis'', Series: Springer Series in Statistics, 2nd ed., Springer, NY, 2002, XXIX, 487 p. 28 illus. {{isbn|978-0-387-95442-4}}</ref> and [[factor analysis]].  In many of these models, the coefficients are referred to as "weights".
+
+== Definition ==
+The basic form of a linear predictor function <math>f(i)</math> for data point ''i'' (consisting of ''p'' [[Dependent and independent variables|explanatory variables]]), for ''i'' = 1, ..., ''n'', is
+
+:<math> f(i) = \beta_0 + \beta_1 x_{i1} + \cdots + \beta_p x_{ip},</math>
+
+where <math>\beta_0, \ldots, \beta_p</math> are the ''coefficients'' (regression coefficients, weights, etc.) indicating the relative effect of a particular ''explanatory variable'' on the ''outcome''.
+
+=== Notations ===
+
+It is common to write the predictor function in a more compact form as follows:
+*The coefficients ''β''<sub>0</sub>, ''β''<sub>1</sub>, ..., ''β''<sub>''p''</sub> are grouped into a single vector '''''β''''' of size ''p''&nbsp;+&nbsp;1.
+*For each data point ''i'', an additional explanatory pseudo-variable ''x''<sub>''i''0</sub> is added, with a fixed value of 1, corresponding to the [[Y-intercept|intercept]] coefficient ''β''<sub>0</sub>.
+*The resulting explanatory variables ''x''<sub>''i0''</sub>(= 1), ''x''<sub>''i''1</sub>, ..., ''x''<sub>''ip''</sub> are then grouped into a single vector '''''x<sub>i</sub>''''' of size ''p''&nbsp;+&nbsp;1.
+
+==== Vector Notation ====
+
+This makes it possible to write the linear predictor function as follows:
+
+:<math>f(i)= \boldsymbol\beta \cdot \mathbf{x}_i</math>
+
+using the notation for a [[dot product]] between two vectors.
+
+==== Matrix Notation ==== 
+
+An equivalent form using matrix notation is as follows:
+
+:<math>f(i)= \boldsymbol\beta^{\mathrm T} \mathbf{x}_i = \mathbf{x}^{\mathrm T}_i \boldsymbol\beta</math>
+
+where <math>\boldsymbol\beta</math> and <math>\mathbf{x}_i</math> are assumed to be a ''(p+1)''-by-1 [[column vector]]s, <math>\boldsymbol\beta^{\mathrm T}</math> is the [[matrix transpose]] of <math>\boldsymbol\beta</math> (so <math>\boldsymbol\beta^{\mathrm T}</math> is a 1-by-''(p+1)'' [[row vector]]), and <math>\boldsymbol\beta^{\mathrm T} \mathbf{x}_i</math> indicates [[matrix multiplication]] between the 1-by-''(p+1)'' row vector and the ''(p+1)''-by-1 column vector, producing a 1-by-1 matrix that is taken to be a [[scalar (mathematics)|scalar]].
+
+== Linear regression ==
+
+An example of the usage of a linear predictor function is in [[linear regression]], where each data point is associated with a [[continuous variable|continuous]] outcome ''y''<sub>''i''</sub>, and the relationship written
+
+:<math>y_i = f(i) + \varepsilon_i = \boldsymbol\beta^{\mathrm T}\mathbf{x}_i\ + \varepsilon_i,</math>
+
+where <math>\varepsilon_i</math> is a ''disturbance term'' or ''[[error variable]]'' — an ''unobserved'' [[random variable]] that adds noise to the linear relationship between the dependent variable and predictor function.
+
+==Stacking==
+
+In some models (standard linear regression, in particular), the equations for each of the data points ''i'' = 1, ..., ''n'' are stacked together and written in vector form as
+
+: <math>
+ \mathbf{y} = \mathbf{X}\boldsymbol\beta + \boldsymbol\varepsilon, \,
+ </math>
+where
+: <math>
+ \mathbf{y} = \begin{pmatrix} y_1 \\ y_2 \\ \vdots \\ y_n \end{pmatrix}, \quad
+ \mathbf{X} = \begin{pmatrix} \mathbf{x}'_1 \\ \mathbf{x}'_2 \\ \vdots \\ \mathbf{x}'_n \end{pmatrix}
+ = \begin{pmatrix} x_{11} & \cdots & x_{1p} \\
+ x_{21} & \cdots & x_{2p} \\
+ \vdots & \ddots & \vdots \\
+ x_{n1} & \cdots & x_{np}
+ \end{pmatrix}, \quad
+ \boldsymbol\beta = \begin{pmatrix} \beta_1 \\ \vdots \\ \beta_p \end{pmatrix}, \quad
+ \boldsymbol\varepsilon = \begin{pmatrix} \varepsilon_1 \\ \varepsilon_2 \\ \vdots \\ \varepsilon_n \end{pmatrix}.
+ </math>
+
+The matrix ''X'' is known as the [[design matrix]] and encodes all known information about the [[independent variables]].  The variables <math>\varepsilon_i</math> are [[random variable]]s, which in standard linear regression are distributed according to a [[standard normal distribution]]; they express the influence of any unknown factors on the outcome.
+
+This makes it possible to find optimal coefficients through the [[method of least squares]] using simple matrix operations.  In particular, the optimal coefficients <math>\boldsymbol{\hat\beta}</math> as estimated by least squares can be written as follows:
+
+:<math>\boldsymbol{\hat\beta} =( X^\mathrm T X)^{-1}X^{\mathrm T}\mathbf{y}.</math>
+
+The matrix <math>( X^\mathrm T X)^{-1}X^{\mathrm T}</math> is known as the [[Moore-Penrose pseudoinverse]] of ''X''.  The use of the [[matrix inverse]] in this formula requires that ''X'' is of [[full rank]], i.e. there is not perfect [[multicollinearity]] among different explanatory variables (i.e. no explanatory variable can be perfectly predicted from the others).  In such cases, the [[singular value decomposition]] can be used to compute the pseudoinverse.
+
+==The explanatory variables==
+Although the outcomes (dependent variables) to be predicted are assumed to be [[random variable]]s, the explanatory variables themselves are usually not assumed to be random{{citation needed|date=April 2018}}.  Instead, they are assumed to be fixed values, and any random variables (e.g. the outcomes) are assumed to be [[conditional probability|conditional]] on them{{citation needed|date=April 2018}}.  As a result, the [[data analyst]] is free to transform the explanatory variables in arbitrary ways, including creating multiple copies of a given explanatory variable, each transformed using a different function.  Other common techniques are to create new explanatory variables in the form of [[interaction variable]]s by taking products of two (or sometimes more) existing explanatory variables.
+
+When a fixed set of nonlinear functions are used to transform the value(s) of a data point, these functions are known as [[basis function]]s.  An example is [[polynomial regression]], which uses a linear predictor function to fit an arbitrary degree [[polynomial]] relationship (up to a given order) between two sets of data points (i.e. a single [[real-valued]] explanatory variable and a related real-valued dependent variable), by adding multiple explanatory variables corresponding to various powers of the existing explanatory variable.  Mathematically, the form looks like this:
+
+:<math>y_i = \beta_0 + \beta_1 x_i + \beta_2 x_i^2 + \cdots + \beta_p x_i^p.</math>
+
+In this case, for each data point ''i'', a set of explanatory variables is created as follows:
+
+:<math>(x_{i1} = x_i,\quad x_{i2} = x_i^2,\quad \ldots,\quad x_{ip} = x_i^p)</math>
+
+and then standard [[linear regression]] is run.  The basis functions in this example would be
+:<math>\boldsymbol\phi(x) = (\phi_1(x), \phi_2(x), \ldots, \phi_p(x)) = (x, x^2, \ldots, x^p).</math>
+
+This example shows that a linear predictor function can actually be much more powerful than it first appears: It only really needs to be linear in the ''coefficients''.  All sorts of non-linear functions of the explanatory variables can be fit by the model.
+
+There is no particular need for the inputs to basis functions to be univariate or single-dimensional (or their outputs, for that matter, although in such a case, a ''K''-dimensional output value is likely to be treated as ''K'' separate scalar-output basis functions).  An example of this is [[radial basis function]]s (RBF's), which compute some transformed version of the distance to some fixed point:
+
+:<math>\phi(\mathbf{x};\mathbf{c}) = \phi(||\mathbf{x} - \mathbf{c}||) = \phi(\sqrt{(x_1 - c_1)^2 + \ldots + (x_K - c_K)^2})</math>
+
+An example is the [[Gaussian function|Gaussian]] RBF, which has the same functional form as the [[normal distribution]]:
+
+:<math>\phi(\mathbf{x};\mathbf{c}) = e^{-b||\mathbf{x} - \mathbf{c}||^2}</math>
+
+which drops off rapidly as the distance from '''''c''''' increases.
+
+A possible usage of RBF's is to create one for every observed data point.  This means that the result of an RBF applied to a new data point will be close to 0 unless the new point is near to the point around which the RBF was applied.  That is, the application of the radial basis functions will pick out the nearest point, and its regression coefficient will dominate.  The result will be a form of [[nearest neighbor interpolation]], where predictions are made by simply using the prediction of the nearest observed data point, possibly interpolating between multiple nearby data points when they are all similar distances away.  This type of [[k-nearest neighbor algorithm|nearest neighbor method]] for prediction is often considered diametrically opposed to the type of prediction used in standard linear regression: But in fact, the transformations that can be applied to the explanatory variables in a linear predictor function are so powerful that even the nearest neighbor method can be implemented as a type of linear regression.
+
+It is even possible to fit some functions that appear non-linear in the coefficients by transforming the coefficients into new coefficients that do appear linear.  For example, a function of the form <math>a + b^2x_{i1} + \sqrt{c}x_{i2}</math> for coefficients <math>a,b,c</math> could be transformed into the appropriate linear function by applying the substitutions <math>b' = b^2, c' = \sqrt{c},</math> leading to <math>a + b'x_{i1} + c'x_{i2},</math> which is linear.  Linear regression and similar techniques could be applied and will often still find the optimal coefficients, but their error estimates and such will be wrong.
+
+The explanatory variables may be of any [[statistical data type|type]]: [[real-valued]], [[binary variable|binary]], [[categorical variable|categorical]], etc.  The main distinction is between [[continuous variable]]s (e.g. income, age, [[blood pressure]], etc.) and [[discrete variable]]s (e.g. sex, race, political party, etc.).  Discrete variables referring to more than two possible choices are typically coded using [[dummy variable (statistics)|dummy variable]]s (or [[indicator variable]]s), i.e. separate explanatory variables taking the value 0 or 1 are created for each possible value of the discrete variable, with a 1 meaning "variable does have the given value" and a 0 meaning "variable does not have the given value".  For example, a four-way discrete variable of [[blood type]] with the possible values "A, B, AB, O" would be converted to separate two-way dummy variables, "is-A, is-B, is-AB, is-O", where only one of them has the value 1 and all the rest have the value 0.  This allows for separate regression coefficients to be matched for each possible value of the discrete variable.
+
+Note that, for ''K'' categories, not all ''K'' dummy variables are independent of each other.  For example, in the above blood type example, only three of the four dummy variables are independent, in the sense that once the values of three of the variables are known, the fourth is automatically determined.  Thus, it's really only necessary to encode three of the four possibilities as dummy variables, and in fact if all four possibilities are encoded, the overall model becomes non-[[identifiable]].  This causes problems for a number of methods, such as the simple closed-form solution used in linear regression.  The solution is either to avoid such cases by eliminating one of the dummy variables, and/or introduce a [[regularization (mathematics)|regularization]] constraint (which necessitates a more powerful, typically iterative, method for finding the optimal coefficients).
+
+==See also==
+*[[Linear model]]
+
+== References ==
+{{Reflist}}
+
+[[Category:Regression analysis]]
+[[Category:Machine learning]]

@@ -1,0 +1,62 @@
+{{Advert|date=October 2024}}
+
+{{Infobox information appliance
+| name         = Bird
+| title        = 
+| aka          = 
+| logo         = Bird Logo.png
+| caption      = 
+| developer    = MUV Interactive
+| manufacturer = 
+| family       = 
+| type         = [[Human sensing|Active human sensing]]
+| generation   = 1
+| releasedate  = {{Start date|2015|10}}
+| lifespan     = 
+| price        = 
+| discontinued = 
+| unitssold    = 
+| unitsshipped = 
+| media        = 
+| os           = 
+| power        = 
+| soc          = 
+| cpu          = 
+| memory       = 
+| storage      = 
+| memory card  =
+| display      = 
+| graphics     = 
+| sound        = 
+| input        = 
+| controllers  = 
+| camera       = 
+| touchpad     = 
+| connectivity = 
+| platform     = 
+| service      = 
+| dimensions   = 
+| weight       = 
+| topgame      = 
+| predecessor  = 
+| successor    = 
+| related      = 
+| website      = [https://web.archive.org/web/20200811125447/http://muvinteractive.com/ muvinteractive.com] (archived from August 11, 2020)
+}}
+'''Bird''' is an interactive input device designed by [[Israel]]-based startup, MUV Interactive, which develops technology for wearable interfaces.<ref name=wired/><ref name=ars/><ref name=msn>{{cite web| publisher=MSN| url=https://www.msn.com/en-us/tv/other/meet-bird-a-device-that-could-find-itself-at-the-center-of-your-connected-future/ar-AAfmkcD| title=Meet Bird, a device that could find itself at the center of your connected future| author=Zach Epstein| date=October 12, 2015| accessdate=February 19, 2016| archive-url=https://web.archive.org/web/20160302095048/http://www.msn.com/en-us/tv/other/meet-bird-a-device-that-could-find-itself-at-the-center-of-your-connected-future/ar-AAfmkcD| archive-date=March 2, 2016| url-status=dead}}</ref>  Bird connects to computers to make any surface an interactive 3D environment. The device features remote touch, touchpad swipe control, gesture control, touchscreen capabilities, voice command recognition, a laser pointer, and other advanced options.<ref>{{cite web|  publisher=Gartner|url=https://www.gartner.com/doc/2715221/cool-vendors-humanmachine-interface-| title=Cool Vendors in Human-Machine Interface, 2014| date=April 22, 2014| accessdate=February 19, 2016}}</ref><ref name=forbes>{{cite web|  work=Forbes|url=https://www.forbes.com/sites/jenniferelias/2015/10/12/this-wearable-wants-to-deliver-your-powerpoint-presentations-from-anywhere/| title=This Wearable Wants To Deliver Your Powerpoint Presentations From Anywhere| date=October 12, 2015| author=Jennifer Elias| accessdate=February 19, 2016}}</ref><ref>{{cite web| publisher=Silicon Wadi| url=http://siliconwadi.fr/19394/exclu-lobjet-israelien-du-futur-arrive-en-france| title=Israeli object of the future arrives in France| author=Sarah Mergul| date=October 22, 2015| accessdate=February 19, 2016}}</ref>
+
+==History==
+Rami Parham, CEO and founder of MUV Interactive,<ref name=msn/> established the company in 2011 with his brother and aimed to create an advanced way of interacting with connected devices.<ref>{{cite web| publisher=Israel21c| url=http://www.israel21c.org/israel21c-aipac-applaud-israeli-innovation/| title=Israel21c, AIPAC applaud Israeli innovation| author=Abigail Klein Leichman| date=March 4, 2015| accessdate=February 19, 2016}}</ref><ref>{{cite web| publisher=The Journal| url=https://thejournal.com/articles/2015/10/13/wearable-device-can-make-any-space-interactive.aspx| title=Wearable Device CanMake Any Space Interactive| author=Michael Hart| date=October 13, 2015| accessdate=February 19, 2016}}</ref> Parham founded MUV Interactive in [[Herzliya]], [[Israel]] with COO Yuval Ben-Zeev.<ref name=bilan>{{cite web| publisher=Bilan|url=http://www.bilan.ch/techno-plus-de-redaction/une-bague-importer-vie-reelle-contenus-virtuels| title=To import a ring in real life virtual content| date=July 6, 2015| author=Matthew Hoffstetter| accessdate=February 19, 2016}}</ref><ref name=bgr>{{cite web| publisher=BGR| url=http://bgr.com/2015/10/12/muv-bird-release-date-price-announced/| title=Meet Bird, a device that could find itself at the center of your connected future| author=Zach Epstein| date=October 12, 2015|accessdate=February 19, 2016}}</ref> 
+
+In 2013, MUV Interactive raised seed funding from investors, including the [[OurCrowd]] funding platform, for the development of Bird.<ref name="forbes" /><ref name="bilan" /><ref name="israel">{{cite web| publisher=Israel 21| url=http://www.israel21c.org/put-bird-on-your-finger-and-rule-your-digital-world/| title=Put Bird on your finger and rule your digital world| author=Abigail Klein Leichman| date=March 19, 2015| accessdate=February 19, 2016}}</ref><ref name="tech">{{cite web| publisher=Tech Times| url=http://www.techtimes.com/articles/94567/20151013/muvs-bird-finger-wearable-can-turn-space-into-input-devices.htm| title=MUV's Bird Finger Wearable Can Turn Space Into Input Devices| author=Aaron Mamiit| date=October 13, 2015| accessdate=February 19, 2016}}</ref> Pre-orders for Bird began in 2015, and the device shipped to thousands worldwide the following year.  Bird is currently used in corporate, educational, and personal settings.<ref name=":0">{{cite web|url=http://nocamels.com/2016/01/muv-interactive-bird-touchscreens-iot/|title=MUV's Smart 'Ring' BIRD Transforms Surfaces Into Giant Interactive Touchscreens|date=January 25, 2016|publisher=No Camel|author=Meital Goldberg, Lauren Blanchard|accessdate=February 19, 2016}}</ref>
+
+==Technology==
+
+Bird is a device that is worn on the index finger and allows users to engage and interact with their digital content. The wearable device uses [[motion detection|motion sensing]] technology to turn a TV or projected image into an interactive display – from up close like a touchscreen or remotely.<ref name=ars>{{cite web|publisher=ArsTechnica| url=https://arstechnica.com/business/2015/10/this-startup-wants-to-bring-a-minority-report-style-interface-to-your-living-room/| title=This startup want to bring a Minority Report-style interface to your living room| author=Cyrus Farivar| date=October 12, 2015| accessdate=February 19, 2016}}</ref><ref name=chip/> Up to five Bird devices can be used on the same surface.<ref>{{cite web| publisher=Etcentric| url=http://www.etcentric.org/israeli-startup-debuts-index-finger-device-to-replace-mouse/| title=Israeli Startup Debuts Index-Finger Device to Replace Mouse| author=Debra Kaufman| date=October 14, 2015| accessdate=February 19, 2016}}</ref><ref>{{cite web| publisher=Fox News| url=http://www.foxnews.com/tech/2015/10/16/bird-gadget-lets-control-drone-with-your-finger.html| title='Bird' gadget lets you control a drone with your finger| author=John Brandon| date=October 16, 2015|accessdate=February 19, 2016}}</ref> The device operates through ten different sensors, including [[accelerometer]], [[Motion detection|motion]], and [[proximity sensor]]s. Algorithms analyze the data including the wearer's position in space, pointing direction, hand posture, voice commands, and pressure levels from the sensors in real time.<ref name=forbes/><ref name=journal>{{cite web| publisher=The Journal| url=https://thejournal.com/articles/2015/10/13/wearable-device-can-make-any-space-interactive.aspx| title=Wearable Device Can Make Any Space Interactive| author=Michael Hart| date=October 13, 2015| accessdate=February 19, 2016}}</ref> Bird's sensors accurately detect data up to 100 feet away from the interactive area.<ref name=forbes/><ref name=chip>{{cite web| publisher=ChipChick| url=http://www.chipchick.com/2014/05/muv-interactive.html| title=New Technology Transforms Any Surface into a Touchscreen| author=Chance Kinney| date=May 12, 2014|accessdate=February 19, 2016}}</ref><ref name=techcorner>{{cite web| publisher=Tech Corner| url=http://techcorner.tsnn.com/content/muv-interactives-bird-gives-exhibitors-wings| title=MUV Interactive's BIRD Gives Exhibitors Wings| date=November 28, 2015| author=Traci Browne| accessdate=February 19, 2016| archive-url=https://web.archive.org/web/20160305075137/http://techcorner.tsnn.com/content/muv-interactives-bird-gives-exhibitors-wings| archive-date=March 5, 2016| url-status=dead}}</ref>
+
+Bird's various features allow the user to interact with the display in diverse ways. Remote touch is used to control content remotely like a remote mouse from up to 100 feet away. The device's touchpad allows the user to scroll up, down, left, and right. Bird's gesture control allows a user to control content using large hand gestures to make presentations more engaging.  The touch feature turns any surface into a touchscreen. Bird can also be used as a smart controller for smart appliances including smart light bulbs and thermostats and as a control for drones using gestures.<ref name=wired>{{cite web| publisher=Wired| url=https://www.wired.co.uk/news/archive/2015-10/13/bird-gesture-based-tech| title=Meed BIRD, a gesture controller for your entire home| author=Becca Caddy| date=October 13, 2015| accessdate=February 19, 2016}}</ref><ref name=journal/>
+
+==References==
+{{reflist}}
+
+[[Category:Wearable devices]]

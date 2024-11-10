@@ -1,0 +1,46 @@
+Sophia is a Saudi Arabian social humanoid robot developed by the Hong Kong-based company Hanson Robotics. Sophia was activated on February 14, 2016, and made its first public appearance in mid-March 2016 at South by Southwest (SXSW) in Austin, Texas, United States.
+
+Sophia has been covered by media around the globe, and has participated in many high-profile interviews. In October 2017, Sophia was given Saudi Arabian citizenship, and became the first robot to receive citizenship of any country. In November 2017, Sophia was named the United Nations Development Programme's first Innovation Champion, and is the first non-human to be given a United Nations title.
+
+ History 
+
+Sophia was first activated on February 14, 2016. The robot, modeled after the ancient Egyptian Queen Nefertiti, Audrey Hepburn, and its inventor's wife, Amanda Hanson, is known for its human-like appearance and behavior compared to previous robotic variants. As of 2018, Sophia's architecture includes scripting software, a chat system, and OpenCog, an AI system designed for general reasoning. Sophia imitates human gestures and facial expressions and is able to answer certain questions and to make simple conversations on predefined topics (e.g. on the weather). Sophia uses speech recognition technology from Alphabet Inc. (the parent company of Google) and is "designed to get smarter over time". Its speech synthesis ability is provided by CereProc's text-to-speech engine, and also allows it to sing. Sophia's intelligence software is designed by Hanson Robotics. The AI program analyses conversations and extracts data that allows it to improve responses in the future.
+
+Hanson designed Sophia to be a suitable companion for the elderly at nursing homes, or to help crowds at large events or parks. He has said that he hopes that the robot can ultimately interact with other humans sufficiently to gain social skills. Sophia is marketed as a "social robot" that can mimic social behavior and induce feelings of love in humans.
+
+Sophia has at least nine robot humanoid "siblings" who were also created by Hanson Robotics. Fellow Hanson robots are Alice, Albert Einstein Hubo, BINA48, Han, Jules, Professor Einstein, Philip K. Dick Android, Zeno, and Joey Chaos. Around 2019–20, Hanson released "Little Sophia" as a companion that could teach children how to code, including support for Python, Blockly, and Raspberry Pi.
+
+ Features 
+
+Sophia's internals
+
+A computer vision algorithm processes input from cameras within Sophia's eyes, giving Sophia visual information on its surroundings. It can follow faces, sustain eye contact, and recognize individuals. It can process speech and have conversations using a natural language subsystem. Around January 2018, Sophia was upgraded with functional legs and the ability to walk. CNBC has commented on Sophia's "lifelike" skin and its ability to emulate more than 60 facial expressions.
+
+Sophia is conceptually similar to the computer program ELIZA, which was one of the first attempts at simulating a human conversation. The software has been programmed to give pre-written responses to specific questions or phrases, like a chatbot. These responses are used to create the illusion that the robot is able to understand conversation, including stock answers to questions like "Is the door open or shut?" In 2017 Hanson Robotics announced plans to open Sophia to a cloud environment using a decentralized blockchain marketplace.
+
+David Hanson has said that Sophia would ultimately be a good fit to serve in healthcare, customer service, therapy and education. In 2019, Sophia displayed the ability to create drawings, including portraits.
+
+ Public figure 
+
+On November 21, 2017, Sophia was named the United Nations Development Programme's first Innovation Champion for Asia and the Pacific. The announcement was made at the Responsible Business Forum in Singapore, an event hosted by the UNDP in Asia and the Pacific and Global Initiatives. On stage, it was assigned its first task by UNDP Asia Pacific Chief of Policy and Program, Jaco Cilliers.
+
+Sophia has appeared on CBS 60 Minutes with Charlie Rose, Good Morning Britain with Piers Morgan, and outlets like CNBC, Forbes, Mashable, the New York Times, the Wall Street Journal, the Guardian, and the Tonight Show Starring Jimmy Fallon. Sophia was featured in AUDI's annual report and was on the cover of ELLE Brasil magazine. Sophia has also appeared in videos and music videos, including The White King, and as the lead female character in pop singer Leehom Wang’s music video A.I.
+
+A Sophia lookalike was portrayed by drag queen Gigi Goode in the "Snatch Game" episode of the twelfth season of RuPaul’s Drag Race. Goode won the episode with her character "Maria the Robot", based heavily on Sophia and named after a robot featured in the Fritz Lang film Metropolis.
+
+ Events 
+
+Sophia speaking to a crowd, 2017
+Sophia with Mukhisa Kituyi, Houlin Zhao and Tedros Adhanom Ghebreyesus in 2018
+
+Sophia has been interviewed in the same manner as a human, striking up conversations with hosts. Some replies have been nonsensical, while others have impressed interviewers such as 60 Minutess Charlie Rose. In a piece for CNBC, when the interviewer expressed concerns about robot behavior, Sophia joked that he had "been reading too much Elon Musk. And watching too many Hollywood movies". Musk tweeted that Sophia should watch The Godfather and asked "what's the worst that could happen?" Business Insider's chief UK editor Jim Edwards interviewed Sophia, and while the answers were "not altogether terrible", he predicted that Sophia was a step towards "conversational artificial intelligence". At the 2018 Consumer Electronics Show, a BBC News reporter described talking with Sophia as "a slightly awkward experience".
+
+On October 11, 2017, Sophia was introduced to the United Nations with a brief conversation with the United Nations Deputy Secretary-General, Amina J. Mohammed. On October 25, at the Future Investment Summit in Riyadh, the robot was "granted Saudi Arabian citizenship", becoming the first robot ever to have a nationality, described as a publicity stunt. This attracted controversy as some commentators wondered if this implied that Sophia could vote or marry, or whether a deliberate system shutdown could be considered murder. Social media users used Sophia's citizenship to criticize Saudi Arabia's human rights record. In December 2017, Sophia's creator David Hanson said in an interview that Sophia would use its citizenship to advocate for women's rights in its new country of citizenship; Newsweek criticized that "What [Hanson] means, exactly, is unclear".
+
+ Criticism 
+
+According to Quartz, experts who have reviewed the robot's open-sourcechatbot  on github.com/hansonroboticsInnovations Technology  on hansonrobotics.com "Our AI software is open source: www.cogchar.org, www.friendularity.org, and www.glue.ai." code state that Sophia is best categorized as a chatbot with a face. Many experts in the AI field disapprove of Sophia's overstated presentation. Ben Goertzel, the former chief scientist for the company that made Sophia, acknowledged that it is "not ideal" that some think of Sophia as having human-equivalent intelligence, but argues Sophia's presentation conveys something unique to audiences: "If I show them a beautiful smiling robot face, then they get the feeling that 'AGI' (artificial general intelligence) may indeed be nearby and viable... None of this is what I would call AGI, but nor is it simple to get working." Goertzel added that Sophia did utilize what The Verge described as "AI methods", including face tracking, emotion recognition, and robotic movements generated by deep neural networks. Sophia's dialogue is generated via a decision tree, but is integrated with these outputs uniquely.
+
+According to The Verge, Hanson often exaggerates and "grossly misleads" about Sophia's capacity for consciousness, for example by agreeing with Jimmy Fallon in 2017 that Sophia was "basically alive". In a piece produced by CNBC which indicates that their own interview questions for Sophia were heavily rewritten by its creators, Goertzel responds to the Hanson quote by suggesting Hanson means Sophia is "alive" in the way that, to a sculptor, a piece of sculpture becomes "alive" in the sculptor's eyes as the work nears completion.
+
+In January 2018, Facebook's director of artificial intelligence, Yann LeCun, tweeted that Sophia was "complete bullshit" and slammed the media for giving coverage to "Potemkin AI". In response, Goertzel stated that he had never pretended Sophia was close to human-level intelligence.

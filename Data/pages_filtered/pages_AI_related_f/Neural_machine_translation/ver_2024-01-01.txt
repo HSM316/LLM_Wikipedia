@@ -1,0 +1,98 @@
+Neural machine translation (NMT) is an approach to machine translation that uses an artificial neural network to predict the likelihood of a sequence of words, typically modeling entire sentences in a single integrated model.
+
+It is the dominant approach today and can produce translations that rival human translations when translating between high-resource languages under specific conditions. However, there still remain challenges, especially with languages where less high-quality data is available, and with domain shift between the data a system was trained on and the texts it is supposed to translate. NMT systems also tend to produce fairly literal translations.
+
+Overview
+
+In the translation task, a sentence  (consisting of  tokens ) in the source language is to be translated into a sentence  (consisting of  tokens ) in the target language. The source and target tokens (which in the simple event are used for each other in order for a particular game ] vectors, so they can be processed mathematically.
+
+NMT models assign a probability  to potential translations y and then search a subset of potential translations for the one with the highest probability. Most NMT models are auto-regressive: They model the probability of each target token as a function of the source sentence and the previously predicted target tokens. The probability of the whole translation then is the product of the probabilities of the individual predicted tokens:
+
+NMT models differ in how exactly they model this function , but most use some variation of the encoder-decoder architecture: They first use an encoder network to process  and encode it into a vector or matrix representation of the source sentence. Then they use a decoder network that usually produces one target word at a time, taking into account the source representation and the tokens it previously produced. As soon as the decoder produces a special end of sentence token, the decoding process is finished. Since the decoder refers to its own previous outputs during, this way of decoding is called auto-regressive.
+
+History
+
+Early approaches
+In 1987, Robert B. Allen demonstrated the use of feed-forward neural networks for translating auto-generated English sentences with a limited vocabulary of 31 words into Spanish. In this experiment, the size of the network's input and output layers was chosen to be just large enough for the longest sentences in the source and target language, respectively, because the network did not have any mechanism to encode sequences of arbitrary length into a fixed-size representation. In his summary, Allen also already hinted at the possibility of using auto-associative models, one for encoding the source and one for decoding the target.
+
+Lonnie Chrisman built upon Allen's work in 1991 by training separate recursive auto-associative memory (RAAM) networks (developed by Jordan B. Pollack) for the source and the target language. Each of the RAAM networks is trained to encode an arbitrary-length sentence into a fixed-size hidden representation and to decode the original sentence again from that representation. Additionally, the two networks are also trained to share their hidden representation; this way, the source encoder can produce a representation that the target decoder can decode. Forcada and Ñeco simplified this procedure in 1997 to directly train a source encoder and a target decoder in what they called a recursive hetero-associative memory.
+
+Also in 1997, Castaño and Casacuberta employed an Elman's recurrent neural network in another machine translation task with very limited vocabulary and complexity.
+
+Even though these early approaches were already similar to modern NMT, the computing resources of the time were not sufficient to process datasets large enough for the computational complexity of the machine translation problem on real-world texts. Instead, other methods like statistical machine translation rose to become the state of the art of the 1990s and 2000s.
+
+Hybrid approaches
+
+During the time when statistical machine translation was prevalent, some works used neural methods to replace various parts in the statistical machine translation while still using the log-linear approach to tie them together. For example, in various works together with other researchers, Holger Schwenk replaced the usual n-gram language model with a neural one and estimated phrase translation probabilities using a feed-forward network.
+
+NMT becomes dominant
+
+CNNs and RNNs
+
+In 2013 and 2014, end-to-end neural machine translation had their breakthrough with Kalchbrenner & Blunsom using a convolutional neural network (CNN) for encoding the source and both Cho et al. and Sutskever et al. using a recurrent neural network (RNN) instead. All three used an RNN conditioned on a fixed encoding of the source as their decoder to produce the translation. However, these models performed poorly on longer sentences. This problem was addressed when Bahdanau et al. introduced attention to their encoder-decoder architecture: At each decoding step, the state of the decoder is used to calculate a source representation that focuses on different parts of the source and uses that representation in the calculation of the probabilities for the next token. Based on these RNN-based architectures, Baidu launched the "first large-scale NMT system" in 2015, followed by Google in 2016. From that year on, neural models also became the prevailing choice in the main machine translation conference Workshop on Statistical Machine Translation.
+
+Gehring et al. combined a CNN encoder with an attention mechanism in 2017, which handled long-range dependencies in the source better than previous approaches and also increased translation speed because a CNN encoder is parallelizable, whereas an RNN encoder has to encode one token at a time due to its recurrent nature. DeepL Translator, which was at the time based on a CNN encoder, was released in the same year and was judged by several news outlets to outperform its competitors.
+
+The transformer
+
+Another network architecture that lends itself to parallelization is the transformer, which was introduced by Vaswani et al. also in 2017. Like previous models, the transformer still uses the attention mechanism for weighting encoder output for the decoding steps. However, the transformer's encoder and decoder networks themselves are also based on attention instead of recurrence or convolution: Each layer weights and transforms the previous layer's output in a process called self-attention. Since the attention mechanism does not have any notion of token order, but the order of words in a sentence is obviously relevant, the token embeddings are combined with an explicit encoding of their position in the sentence. Since both the transformer's encoder and decoder are free from recurrent elements, they can both be parallelized during training. However, the original transformer's decoder is still auto-regressive, which means that decoding still has to be done one token at a time during inference.
+
+The transformer model quickly became the dominant choice for machine translation systems and was still by far the most-used architecture in the Workshop on Statistical Machine Translation in 2022 and 2023.
+
+Usually, NMT models’ weights are initialized randomly and then learned by training on parallel datasets. However, since using large language models (LLMs) such as BERT pre-trained on large amounts of monolingual data as a starting point for learning other tasks has proven very successful in wider NLP, this paradigm is also becoming more prevalent in NMT. This is especially useful for low-resource languages, where large parallel datasets do not exist. An example of this is the mBART model, which first trains one transformer on a multilingual dataset to recover masked tokens in sentences, and then fine-tunes the resulting autoencoder on the translation task.
+
+Generative LLMs
+
+Instead of fine-tuning a pre-trained language model on the translation task, sufficiently large generative models can also be directly prompted to translate a sentence into the desired language. This approach was first comprehensively tested and evaluated for GPT 3.5 in 2023 by Hendy et al. They found that "GPT systems can produce highly fluent and competitive translation outputs even in the zero-shot setting especially for the high-resource language translations". The WMT23 evaluated the same approach (but using GPT-4) and found that it was on par with the state of the art when translating into English, but not quite when translating into lower-resource languages. This is plausible considering that GPT models are trained mainly on English text.
+
+Comparison with statistical machine translation
+
+NMT has overcome several challenges that were present in statistical machine translation (SMT):
+
+ NMT's full reliance on continuous representation of tokens overcame sparsity issues caused by rare words or phrases. Models were able to generalize more effectively.
+ The limited n-gram length used in SMT's n-gram language models caused a loss of context. NMT systems overcome this by not having a hard cut-off after a fixed number of tokens and by using attention to choosing which tokens to focus on when generating the next token.
+ End-to-end training of a single model improved translation performance and also simplified the whole process.
+ The huge n-gram models (up to 7-gram) used in SMT required large amounts of memory, whereas NMT requires less.
+
+Training procedure
+
+Cross-entropy loss
+NMT models are usually trained to maximize the likelihood of observing the training data. I.e., for a dataset of  source sentences  and corresponding target sentences , the goal is finding the model parameters  that maximize the sum of the likelihood of each target sentence in the training data given the corresponding source sentence:
+
+Expanding to token level yields:
+
+Since we are only interested in the maximum, we can just as well search for the maximum of the logarithm instead (which has the advantage that it avoids floating point underflow that could happen with the product of low probabilities).
+
+Using the fact that the logarithm of a product is the sum of the factors’ logarithms  and flipping the sign yields the classic cross-entropy loss:
+
+In practice, this minimization is done iteratively on small subsets (mini-batches) of the training set using stochastic gradient descent.
+
+Teacher forcing
+
+During inference, auto-regressive decoders use the token generated in the previous step as the input token. However, the vocabulary of target tokens is usually very large. So, at the beginning of the training phase, untrained models will pick the wrong token almost always; and subsequent steps would then have to work with wrong input tokens, which would slow down training considerably. Instead, teacher forcing is used during the training phase: The model (the “student” in the teacher forcing metaphor) is always fed the previous ground-truth tokens as input for the next token, regardless of what it predicted in the previous step.
+
+Translation by prompt engineering LLMs
+
+As outlined in the history section above, instead of using an NMT system that is trained on parallel text, one can also prompt a generative LLM to translate a text. These models differ from an encoder-decoder NMT system in a number of ways:
+
+ Generative language models are not trained on the translation task, let alone on a parallel dataset. Instead, they are trained on a language modeling objective, such as predicting the next word in a sequence drawn from a large dataset of text. This dataset can contain documents in many languages, but is in practice dominated by English text. After this pre-training, they are fine-tuned on another task, usually to follow instructions.
+ Since they are not trained on translation, they also do not feature an encoder-decoder architecture. Instead, they just consist of a transformer's decoder.
+ In order to be competitive on the machine translation task, LLMs need to be much larger than other NMT systems. E.g., GPT-3 has 175 billion parameters, while mBART has 680 million and the original transformer-big has “only” 213 million. This means that they are computationally more expensive to train and use.
+
+A generative LLM can be prompted in a zero-shot fashion by just asking it to translate a text into another language without giving any further examples in the prompt. Or one can include one or several example translations in the prompt before asking to translate the text in question. This is then called one-shot or few-shot learning, respectively. For example, the following prompts were used by Hendy et al. (2023) for zero-shot and one-shot translation:
+
+### Translate this sentence from [source language] to [target language], Source:
+[source sentence]
+### Target:
+
+Translate this into 1. [target language]:
+[shot 1 source]
+1. [shot 1 reference]
+Translate this into 1. [target language]:
+[input]
+1.
+
+Literature
+
+ Koehn, Philipp (2020). Neural Machine Translation. Cambridge University Press.
+ Stahlberg, Felix (2020). Neural Machine Translation: A Review and Survey.

@@ -1,0 +1,220 @@
+{{short description|Property of a model}}
+[[File:Bias and variance contributing to total error.svg|thumb|Bias and variance as function of model complexity]]
+{{Machine learning|Theory}}
+
+In [[statistics]] and [[machine learning]], the '''bias–variance tradeoff''' describes the relationship between a model's complexity, the accuracy of its predictions, and how well it can make predictions on previously unseen data that were not used to train the model. In general, as we increase the number of tunable parameters in a model, it becomes more flexible, and can better fit a training data set. It is said to have lower error, or [[Bias of an estimator|bias]]. However, for more flexible models, there will tend to be greater '''variance''' to the model fit each time we take a set of [[sample (statistics)|samples]] to create a new training data set. It is said that there is greater [[variance]] in the model's [[estimation theory|estimated]] [[statistical parameter|parameters]].
+
+The '''bias–variance dilemma''' or '''bias–variance problem''' is the conflict in trying to simultaneously minimize these two sources of [[Errors and residuals in statistics|error]] that prevent [[supervised learning]] algorithms from generalizing beyond their [[training set]]:<ref name=":0">{{cite journal |last1=Kohavi |first1=Ron |last2=Wolpert |first2=David H. |title=Bias Plus Variance Decomposition for Zero-One Loss Functions |journal=ICML |date=1996 |volume=96}}</ref><ref name=":1">{{cite journal |last1=Luxburg |first1=Ulrike V. |last2=Schölkopf |first2=B. |title=Statistical learning theory: Models, concepts, and results |journal=Handbook of the History of Logic |date=2011 |volume=10|  page=Section 2.4}}</ref>
+* The [[Bias of an estimator|''bias'']] error is an error from erroneous assumptions in the learning [[algorithm]]. High bias can cause an algorithm to miss the relevant relations between features and target outputs (underfitting).
+* The ''[[variance]]'' is an error from sensitivity to small fluctuations in the training set. High variance may result from an algorithm modeling the random [[Noise (signal processing)|noise]] in the training data ([[overfitting]]).
+
+The '''bias–variance decomposition''' is a way of analyzing a learning algorithm's [[expected value|expected]] [[generalization error]] with respect to a particular problem as a sum of three terms, the bias, variance, and a quantity called the ''irreducible error'', resulting from noise in the problem itself.
+
+{{multiple image
+| align             = right
+| direction         = vertical
+| width             = 200
+| image1            = Test function and noisy data.png
+| caption1          = Function and noisy data
+| image2            = Radial basis function fit, spread=5.png
+| caption2          = Spread=5
+| image3            = Radial basis function fit, spread=1.png
+| caption3          = Spread=1
+| image4            = Radial basis function fit, spread=0.1.png
+| caption4          = Spread=0.1
+| footer            = A function (red) is approximated using [[radial basis functions]] (blue). Several trials are shown in each graph. For each trial, a few noisy data points are provided as a training set (top). For a wide spread (image 2) the bias is high: the RBFs cannot fully approximate the function (especially the central dip), but the variance between different trials is low. As spread decreases (image 3 and 4) the bias decreases: the blue curves more closely approximate the red. However, depending on the noise in different trials the variance between trials increases. In the lowermost image the approximated values for x=0 varies wildly depending on where the data points were located.
+}}
+
+==Motivation==
+{{See also|Accuracy and precision}}<gallery perrow="2">
+File:Truen bad prec ok.png|High bias, low variance
+File:Truen bad prec bad.png|High bias, high variance
+File:En low bias low variance.png|Low bias, low variance
+File:Truen ok prec bad.png|Low bias, high variance
+</gallery>
+The bias–variance tradeoff is a central problem in supervised learning. Ideally, one wants to [[Model selection|choose a model]] that both accurately captures the regularities in its training data, but also [[Generalization|generalizes]] well to unseen data. Unfortunately, it is typically impossible to do both simultaneously. High-variance learning methods may be able to represent their training set well but are at risk of overfitting to noisy or unrepresentative training data. In contrast, algorithms with high bias typically produce simpler models that may fail to capture important regularities (i.e. underfit) in the data.
+
+It is an often made [[Affirming the consequent|fallacy]]<ref name="nealThesis2019">{{cite arXiv |last=Neal |first=Brady |eprint=1912.08286 |title=On the Bias-Variance Tradeoff: Textbooks Need an Update |class=cs.LG |date=2019}}</ref><ref name="neal2018">{{cite arXiv |first1=Brady |last1=Neal |first2=Sarthak |last2=Mittal |first3=Aristide |last3=Baratin |first4=Vinayak |last4=Tantia |first5=Matthew |last5=Scicluna |first6=Simon |last6=Lacoste-Julien |first7=Ioannis |last7=Mitliagkas |eprint=1810.08591 |title=A Modern Take on the Bias-Variance Tradeoff in Neural Networks |class=cs.LG |date=2018}}</ref> to assume that complex models must have high variance. High variance models are "complex" in some sense, but the reverse needs not be true.<ref>{{Cite conference |last1=Neal |first1=Brady |last2=Mittal |first2=Sarthak |last3=Baratin |first3=Aristide |last4=Tantia |first4=Vinayak |last5=Scicluna |first5=Matthew |last6=Lacoste-Julien |first6=Simon |last7=Mitliagkas |first7=Ioannis |date=2019 |title=A Modern Take on the Bias-Variance Tradeoff in Neural Networks |url=https://openreview.net/forum?id=HkgmzhC5F7 |conference=International Conference on Learning Representations (ICLR) 2019}}</ref> In addition, one has to be careful how to define complexity. In particular, the number of parameters used to describe the model is a poor measure of complexity. This is illustrated by an example adapted from:<ref>{{cite book |last1=Vapnik |first1=Vladimir |title=The nature of statistical learning theory |date=2000 |publisher=Springer-Verlag |location=New York |doi=10.1007/978-1-4757-3264-1 |isbn=978-1-4757-3264-1 |s2cid=7138354 |url=https://dx.doi.org/10.1007/978-1-4757-3264-1}}</ref> The model <math>f_{a,b}(x)=a\sin(bx)</math> has only two parameters (<math>a,b</math>) but it can interpolate any number of points by oscillating with a high enough frequency, resulting in both a high bias and high variance.
+
+An analogy can be made to the relationship between [[accuracy and precision]]. Accuracy is a description of bias and can intuitively be improved by selecting from only [[Sample space|local]] information. Consequently, a sample will appear accurate (i.e. have low bias) under the aforementioned selection conditions, but may result in underfitting. In other words, [[Training, validation, and test data sets|test data]] may not agree as closely with training data, which would indicate imprecision and therefore inflated variance. A graphical example would be a straight line fit to data exhibiting quadratic behavior overall. Precision is a description of variance and generally can only be improved by selecting information from a comparatively larger space. The option to select many data points over a broad sample space is the ideal condition for any analysis. However, intrinsic constraints (whether physical, theoretical, computational, etc.) will always play a limiting role. The limiting case where only a finite number of data points are selected over a broad sample space may result in improved precision and lower variance overall, but may also result in an overreliance on the training data (overfitting). This means that test data would also not agree as closely with the training data, but in this case the reason is inaccuracy or high bias. To borrow from the previous example, the graphical representation would appear as a high-order polynomial fit to the same data exhibiting quadratic behavior. Note that error in each case is measured the same way, but the reason ascribed to the error is different depending on the balance between bias and variance. To mitigate how much information is used from neighboring observations, a model can be [[smoothing|smoothed]] via explicit [[Regularization (mathematics)|regularization]], such as [[shrinkage (statistics)|shrinkage]].
+
+==Bias–variance decomposition of mean squared error==
+{{main|Mean squared error}}
+[[File:Bias-variance decomposition.png|thumb|Bias-variance decomposition in the case of mean squared loss. The green dots are samples of test label <math>y</math> at a fixed test feature <math>x</math>. Their variance around the mean <math>\mathbb E_{y \sim p(\cdot | x)}[y]</math> is the irreducible error <math>\sigma^2</math>. The red dots are test label predictions <math>f(x | D)</math> as the training set <math>D</math> is randomly sampled. Their variance around the mean <math>\mathbb E_D[f(x | D)]</math> is the variance <math>\operatorname{Var}_D\big[f(x | D)\big] </math>. The difference between the red dash and the green dash is the bias <math>\operatorname{Bias}_D\big[f (x | D)\big]  </math>. The bias-variance decomposition is then visually clear: the mean squared error between the red dots and the green dots is the sum of the three components.]]
+Suppose that we have a training set consisting of a set of points <math>x_1, \dots, x_n</math> and real values <math>y_i</math> associated with each point <math>x_i</math>. We assume that the data is generated by a function <math>f(x)</math> such as <math>y = f(x) + \varepsilon</math>, where the noise, <math>\varepsilon</math>, has zero mean and variance <math>\sigma^2</math>.
+
+We want to find a function <math>\hat{f}(x;D)</math>, that approximates the true function <math>f(x)</math> as well as possible, by means of some learning algorithm based on a training dataset (sample) <math>D=\{(x_1,y_1) \dots, (x_n, y_n)\}</math>. We make "as well as possible" precise by measuring the [[mean squared error]] between <math>y</math> and <math>\hat{f}(x;D)</math>: we want <math>(y - \hat{f}(x;D))^2</math> to be minimal, both for <math>x_1, \dots, x_n</math> ''and for points outside of our sample''. Of course, we cannot hope to do so perfectly, since the <math>y_i</math> contain noise <math>\varepsilon</math>; this means we must be prepared to accept an ''irreducible error'' in any function we come up with.
+
+Finding an <math>\hat{f}</math> that generalizes to points outside of the training set can be done with any of the countless algorithms used for supervised learning. It turns out that whichever function <math>\hat{f}</math> we select, we can decompose its [[expected value|expected]] error on an unseen sample <math>x</math> (''i.e. conditional to x'') as follows:<ref name="islr">{{cite book |first1=Gareth |last1=James |first2=Daniela |last2=Witten |author-link2=Daniela Witten |first3=Trevor |last3=Hastie |author-link3=Trevor Hastie |first4=Robert |last4=Tibshirani |author-link4=Robert Tibshirani |title=An Introduction to Statistical Learning |publisher=Springer |year=2013 |url=http://www-bcf.usc.edu/~gareth/ISL/ }}</ref>{{rp|34}}<ref name="ESL">{{cite book |first1=Trevor |last1=Hastie |first2=Robert |last2=Tibshirani |first3=Jerome H. |last3=Friedman |author-link3=Jerome H. Friedman |year=2009 |title=The Elements of Statistical Learning |url=http://statweb.stanford.edu/~tibs/ElemStatLearn/ |access-date=2014-08-20 |archive-url=https://web.archive.org/web/20150126123924/http://statweb.stanford.edu/~tibs/ElemStatLearn/ |archive-date=2015-01-26 |url-status=dead }}</ref>{{rp|223}}
+
+:<math>
+\mathbb{E}_{D, \varepsilon} \Big[\big(y - \hat{f}(x;D)\big)^2\Big]
+= \Big(\operatorname{Bias}_D\big[\hat{f}(x;D)\big] \Big) ^2 + \operatorname{Var}_D\big[\hat{f}(x;D)\big] + \sigma^2
+</math>
+
+where
+:<math>
+\begin{align}
+\operatorname{Bias}_D\big[\hat{f}(x;D)\big] &\triangleq \mathbb{E}_D\big[\hat{f}(x;D)- f(x)\big]\\
+&=  \mathbb{E}_D\big[\hat{f}(x;D)\big] \, - \, \mathbb{E}_{y|x}\big[y(x)\big]
+\end{align}
+</math>
+
+and 
+
+:<math>
+\operatorname{Var}_D\big[\hat{f}(x;D)\big] \triangleq \mathbb{E}_D \Big[ \big( \mathbb{E}_D[\hat{f}(x;D)] - \hat{f}(x;D) \big)^2 \Big]
+</math>
+
+and
+
+:<math>
+\sigma^2 = \operatorname{E}_y \Big[ \big( y - \underbrace{f(x)}_{E_{y|x}[y]} \big)^2 \Big]
+</math>
+
+The expectation ranges over different choices of the training set <math>D=\{(x_1,y_1) \dots, (x_n, y_n)\}</math>, all sampled from the same joint distribution <math>P(x,y)</math> which can for example be done via [[Bootstrapping (statistics)|bootstrapping]].
+The three terms represent:
+* the square of the ''bias'' of the learning method, which can be thought of as the error caused by the simplifying assumptions built into the method. E.g., when approximating a non-linear function <math>f(x)</math> using a learning method for [[linear model]]s, there will be error in the estimates <math>\hat{f}(x)</math> due to this assumption;
+* the ''variance'' of the learning method, or, intuitively, how much the learning method <math>\hat{f}(x)</math> will move around its mean;
+* the irreducible error <math>\sigma^2</math>.
+
+Since all three terms are non-negative, the irreducible error forms a lower bound on the expected error on unseen samples.<ref name="islr" />{{rp|34}}
+
+The more complex the model <math>\hat{f}(x)</math> is, the more data points it will capture, and the lower the bias will be. However, complexity will make the model "move" more to capture the data points, and hence its variance will be larger.
+
+===Derivation===
+The derivation of the bias–variance decomposition for squared error proceeds as follows.<ref>{{cite web |first1=Sethu |last1=Vijayakumar |author-link=Sethu Vijayakumar |title=The Bias–Variance Tradeoff |publisher=[[University of Edinburgh]] |year=2007 |access-date=19 August 2014 |url=http://www.inf.ed.ac.uk/teaching/courses/mlsc/Notes/Lecture4/BiasVariance.pdf }}</ref><ref>{{cite web |title=Notes on derivation of bias-variance decomposition in linear regression |first=Greg |last=Shakhnarovich |year=2011 |access-date=20 August 2014 |url=http://ttic.uchicago.edu/~gregory/courses/wis-ml2012/lectures/biasVarDecom.pdf |archive-url=https://web.archive.org/web/20140821063842/http://ttic.uchicago.edu/~gregory/courses/wis-ml2012/lectures/biasVarDecom.pdf |archive-date=21 August 2014 }}</ref> For convenience, we drop the <math>D</math> subscript in the following lines, such that <math>\hat{f}(x;D) = \hat{f}(x)</math>.
+
+Let us write the mean-squared error of our model:
+
+:<math>
+\begin{align}
+\text{MSE} &\triangleq \mathbb{E}\Big[\big(y - \hat{f}(x)\big)^2\Big]\\
+&= \mathbb{E}\Big[\big(f(x) + \varepsilon - \hat{f}(x)\big)^2\Big] && \text{since } y \triangleq f(x) + \varepsilon\\
+&= \mathbb{E}\Big[\big(f(x) - \hat{f}(x)\big)^2\Big] \, + \, 2 \ \mathbb{E}\Big[ \big(f(x) - \hat{f}(x)\big) \varepsilon \Big] \, + \, \mathbb{E}[\varepsilon^2]
+\end{align}
+</math>
+
+We can show that the second term of this equation is null:
+
+<math>
+\begin{align}
+\mathbb{E}\Big[ \big(f(x) - \hat{f}(x)\big) \varepsilon \Big] &= \mathbb{E} \big[ f(x) - \hat{f}(x) \big] \ \mathbb{E} \big[ \varepsilon \big] && \text{since } \varepsilon \text{ is independent from } x\\
+&= 0 && \text{since } \mathbb{E} \big[ \varepsilon \big] = 0
+\end{align}
+</math>
+
+Moreover, the third term of this equation is nothing but <math>\sigma^2</math>, the variance of <math>\varepsilon</math>.
+
+Let us now expand the remaining term:
+
+<math>
+\begin{align}
+\mathbb{E}\Big[\big(f(x) - \hat{f}(x)\big)^2\Big] &= \mathbb{E}\Big[\big(f(x) - \mathbb{E} \big[ \hat{f}(x) \big] + \mathbb{E} \big[ \hat{f}(x) \big] - \hat{f}(x)\big)^2\Big]\\
+& = {\color{Blue} \mathbb{E}\Big[ \big( f(x) - \mathbb{E} \big[ \hat{f}(x) \big] \big)^2 \Big]}
+\, + \, 2 \ {\color{PineGreen} \mathbb{E} \Big[ \big( f(x) - \mathbb{E} \big[ \hat{f}(x) \big] \big) \big( \mathbb{E} \big[ \hat{f}(x) \big] - \hat{f}(x) \big) \Big]}
+\, + \, \mathbb{E} \Big[ \big( \mathbb{E} \big[ \hat{f}(x) \big] - \hat{f}(x) \big)^2 \Big]
+\end{align}
+</math>
+
+We show that:
+
+<math>
+\begin{align}
+{\color{Blue} \mathbb{E}\Big[ \big( f(x) - \mathbb{E} \big[ \hat{f}(x) \big] \big)^2 \Big]} &= \mathbb{E} \big[ f(x) ^2 \big] \, - \, 2 \ \mathbb{E} \Big[ f(x) \ \mathbb{E} \big[ \hat{f}(x) \big] \Big] \, + \, \mathbb{E} \Big[ \mathbb{E} \big[ \hat{f}(x) \big]^2 \Big]\\
+&= f(x)^2 \, - \, 2 \ f(x) \ \mathbb{E} \big[ \hat{f}(x) \big] \, + \, \mathbb{E} \big[ \hat{f}(x) \big]^2\\
+&= \Big( f(x)  - \mathbb{E} \big[ \hat{f}(x) \big] \Big)^2
+\end{align}
+</math>
+
+This last series of equalities comes from the fact that <math>f(x)</math> is not a random variable, but a fixed, deterministic function of <math>x</math>. Therefore, <math>\mathbb{E} \big[ f(x) \big] = f(x)</math>. Similarly <math>\mathbb{E} \big[ f(x)^2 \big] = f(x)^2</math>, and <math>\mathbb{E} \Big[ f(x) \ \mathbb{E} \big[ \hat{f}(x) \big] \Big] = f(x) \ \mathbb{E} \Big[ \ \mathbb{E} \big[ \hat{f}(x) \big] \Big] = f(x) \ \mathbb{E} \big[ \hat{f}(x) \big]</math>. Using the same reasoning, we can expand the second term and show that it is null:
+
+<math>
+\begin{align}
+{\color{PineGreen} \mathbb{E} \Big[ \big( f(x) - \mathbb{E} \big[ \hat{f}(x) \big] \big) \big( \mathbb{E} \big[ \hat{f}(x) \big] - \hat{f}(x) \big) \Big]} &= \mathbb{E} \Big[ f(x) \  \mathbb{E} \big[ \hat{f}(x) \big] \, - \, f(x) \hat{f}(x) \, - \, \mathbb{E} \big[ \hat{f}(x) \big]^2 + \mathbb{E} \big[ \hat{f}(x) \big] \ \hat{f}(x) \Big]\\
+&= f(x) \  \mathbb{E} \big[ \hat{f}(x) \big] \, - \, f(x) \  \mathbb{E} \big[ \hat{f}(x) \big] \, - \,  \mathbb{E} \big[ \hat{f}(x) \big]^2 \, + \, \mathbb{E} \big[ \hat{f}(x) \big]^2\\
+&= 0
+\end{align}
+</math>
+
+Eventually, we plug our derivations back into the original equation, and identify each term:
+
+<math>
+\begin{align}
+\text{MSE} &= \Big( f(x)  - \mathbb{E} \big[ \hat{f}(x) \big] \Big)^2 + \mathbb{E} \Big[ \big( \mathbb{E} \big[ \hat{f}(x) \big] - \hat{f}(x) \big)^2 \Big] + \sigma^2\\
+&= \operatorname{Bias} \big( \hat{f}(x) \big)^2 \, + \, \operatorname{Var} \big[ \hat{f}(x) \big] \, + \, \sigma^2
+\end{align}
+</math>
+
+
+Finally, MSE loss function (or negative log-likelihood) is obtained by taking the expectation value over <math>x\sim P</math>:
+:<math>
+\text{MSE} = \mathbb{E}_x\bigg\{\operatorname{Bias}_D[\hat{f}(x;D)]^2+\operatorname{Var}_D\big[\hat{f}(x;D)\big]\bigg\} + \sigma^2.
+</math>
+
+==Approaches==
+[[Dimensionality reduction]] and [[feature selection]] can decrease variance by simplifying models. Similarly, a larger training set tends to decrease variance. Adding features (predictors) tends to decrease bias, at the expense of introducing additional variance. Learning algorithms typically have some tunable parameters that control bias and variance; for example,
+* [[linear model|linear]] and [[Generalized linear model|Generalized linear]] models can be [[Regularization (mathematics)|regularized]] to decrease their variance at the cost of increasing their bias.<ref>{{cite book |last=Belsley |first=David |title=Conditioning diagnostics : collinearity and weak data in regression |publisher=Wiley |location=New York (NY) |year=1991 |isbn=978-0471528890 }}</ref>
+* In [[artificial neural network]]s, the variance increases and the bias decreases as the number of hidden units increase,<ref name="geman">{{cite journal |last1=Geman |first1=Stuart |author-link1=Stuart Geman |first2=Élie |last2=Bienenstock |first3=René |last3=Doursat |year=1992 |title=Neural networks and the bias/variance dilemma |journal=Neural Computation |volume=4 |pages=1–58 |doi=10.1162/neco.1992.4.1.1 |s2cid=14215320 |url=http://web.mit.edu/6.435/www/Geman92.pdf }}</ref> although this classical assumption has been the subject of recent debate.<ref name="neal2018" /> Like in GLMs, regularization is typically applied.
+* In [[k-nearest neighbor|''k''-nearest neighbor]] models, a high value of {{mvar|k}} leads to high bias and low variance (see below).
+* In [[instance-based learning]], regularization can be achieved varying the mixture of [[prototype]]s and exemplars.<ref>{{cite journal |last1=Gagliardi |first1=Francesco |date=May 2011 |title=Instance-based classifiers applied to medical databases: diagnosis and knowledge extraction |journal=Artificial Intelligence in Medicine |volume=52 |issue=3 |pages=123–139 |doi=10.1016/j.artmed.2011.04.002 |pmid=21621400 |url=https://www.researchgate.net/publication/51173579 }}</ref>
+* In [[decision tree]]s, the depth of the tree determines the variance. Decision trees are commonly pruned to control variance.<ref name="islr" />{{rp|307}}
+
+One way of resolving the trade-off is to use [[mixture models]] and [[ensemble learning]].<ref>{{cite book |first1=Jo-Anne |last1=Ting |first2=Sethu |last2=Vijaykumar |first3=Stefan |last3=Schaal |url=http://homepages.inf.ed.ac.uk/svijayak/publications/ting-EMLDM2016.pdf |chapter=Locally Weighted Regression for Control |title=Encyclopedia of Machine Learning |editor-first1=Claude |editor-last1=Sammut |editor-first2=Geoffrey I. |editor-last2=Webb |publisher=Springer |year=2011 |page=615 |bibcode=2010eoml.book.....S }}</ref><ref>{{cite web |first=Scott |last=Fortmann-Roe |title=Understanding the Bias–Variance Tradeoff |year=2012 |url=http://scott.fortmann-roe.com/docs/BiasVariance.html }}</ref> For example, [[Boosting (machine learning)|boosting]] combines many "weak" (high bias) models in an ensemble that has lower bias than the individual models, while [[Bootstrap aggregating|bagging]] combines "strong" learners in a way that reduces their variance.
+
+[[Model validation]] methods such as [[cross-validation (statistics)]] can be used to tune models so as to optimize the trade-off.
+
+===''k''-nearest neighbors===
+In the case of [[k-nearest neighbors algorithm|{{mvar|k}}-nearest neighbors regression]], when the expectation is taken over the possible labeling of a fixed training set, a [[closed-form expression]] exists that relates the bias–variance decomposition to the parameter {{mvar|k}}:<ref name="ESL" />{{rp|37, 223}}
+
+:<math>
+\mathbb{E}\left[(y - \hat{f}(x))^2\mid X=x\right] = \left( f(x) - \frac{1}{k}\sum_{i=1}^k f(N_i(x)) \right)^2 + \frac{\sigma^2}{k} + \sigma^2
+</math>
+
+where <math>N_1(x), \dots, N_k(x)</math> are the {{mvar|k}} nearest neighbors of {{mvar|x}} in the training set. The bias (first term) is a monotone rising function of {{mvar|k}}, while the variance (second term) drops off as {{mvar|k}} is increased. In fact, under "reasonable assumptions" the bias of the first-nearest neighbor (1-NN) estimator vanishes entirely as the size of the training set approaches infinity.<ref name="geman" />
+
+==Applications==
+
+===In regression===
+The bias–variance decomposition forms the conceptual basis for regression [[Regularization (mathematics)|regularization]] methods such as [[Lasso (statistics)|LASSO]] and [[ridge regression]]. Regularization methods introduce bias into the regression solution that can reduce variance considerably relative to the [[ordinary least squares|ordinary least squares (OLS)]] solution. Although the OLS solution provides non-biased regression estimates, the lower variance solutions produced by regularization techniques provide superior MSE performance.
+
+===In classification===
+The bias–variance decomposition was originally formulated for least-squares regression. For the case of [[statistical classification|classification]] under the [[0-1 loss]] (misclassification rate), it is possible to find a similar decomposition, with the caveat that the variance term becomes dependent on the target label.<ref>{{cite conference |last=Domingos |first=Pedro |author-link=Pedro Domingos |title=A unified bias-variance decomposition |conference=ICML |year=2000 |url=http://homes.cs.washington.edu/~pedrod/bvd.pdf }}</ref><ref>{{cite journal |first1=Giorgio |last1=Valentini |first2=Thomas G. |last2=Dietterich |author-link2=Thomas G. Dietterich |title=Bias–variance analysis of support vector machines for the development of SVM-based ensemble methods |journal=[[Journal of Machine Learning Research]] |volume=5 |year=2004 |pages=725–775 |url=http://www.jmlr.org/papers/volume5/valentini04a/valentini04a.pdf }}</ref> Alternatively, if the classification problem can be phrased as [[probabilistic classification]], then the expected cross-entropy can instead be decomposed to give bias and variance terms with the same semantics but taking a different form.
+
+It has been argued that as training data increases, the variance of learned models will tend to decrease, and hence that as training data quantity increases, error is minimised by methods that learn models with lesser bias, and that conversely, for smaller training data quantities it is ever more important to minimise variance.<ref>{{cite conference |last1=Brain|first1=Damian|last2=Webb|first2=Geoffrey|author-link2=Geoff Webb|title=The Need for Low Bias Algorithms in Classification Learning From Large Data Sets|conference=Proceedings of the Sixth European Conference on Principles of Data Mining and Knowledge Discovery (PKDD 2002)|year=2002 |url=http://i.giwebb.com/wp-content/papercite-data/pdf/brainwebb02.pdf}}</ref>
+
+===In reinforcement learning===
+Even though the bias–variance decomposition does not directly apply in [[reinforcement learning]], a similar tradeoff can also characterize generalization. When an agent has limited information on its environment, the suboptimality of an RL algorithm can be decomposed into the sum of two terms: a term related to an asymptotic bias and a term due to overfitting. The asymptotic bias is directly related to the learning algorithm (independently of the quantity of data) while the overfitting term comes from the fact that the amount of data is limited.<ref>{{cite journal |first1=Vincent |last1=Francois-Lavet |first2=Guillaume |last2=Rabusseau |first3=Joelle |last3=Pineau |first4=Damien |last4=Ernst |first5=Raphael |last5=Fonteneau |title=On Overfitting and Asymptotic Bias in Batch Reinforcement Learning with Partial Observability |journal= Journal of Artificial Intelligence Research|volume=65 |year=2019 |pages=1–30 |url=https://jair.org/index.php/jair/article/view/11478 |doi=10.1613/jair.1.11478 |doi-access=free |arxiv=1709.07796 }}</ref>
+
+===In human learning===
+While widely discussed in the context of machine learning, the bias–variance dilemma has been examined in the context of [[Cognitive science|human cognition]], most notably by [[Gerd Gigerenzer]] and co-workers in the context of learned heuristics. They have argued (see references below) that the human brain resolves the dilemma in the case of the typically sparse, poorly-characterized training-sets provided by experience by adopting high-bias/low variance heuristics. This reflects the fact that a zero-bias approach has poor generalizability to new situations, and also unreasonably presumes precise knowledge of the true state of the world. The resulting heuristics are relatively simple, but produce better inferences in a wider variety of situations.<ref name="ReferenceA">{{Cite journal |last1=Gigerenzer |first1=Gerd |author-link1=Gerd Gigerenzer |last2=Brighton |first2=Henry |doi=10.1111/j.1756-8765.2008.01006.x |title=Homo Heuristicus: Why Biased Minds Make Better Inferences |journal=Topics in Cognitive Science |volume=1 |issue=1 |pages=107–143 |year=2009 |pmid=25164802 |hdl=11858/00-001M-0000-0024-F678-0 |hdl-access=free }}</ref>
+
+[[Stuart Geman|Geman]] et al.<ref name="geman" /> argue that the bias–variance dilemma implies that abilities such as generic [[object recognition]] cannot be learned from scratch, but require a certain degree of "hard wiring" that is later tuned by experience. This is because model-free approaches to inference require impractically large training sets if they are to avoid high variance.
+
+==See also==
+{{Div col|colwidth=25em}}
+* [[Accuracy and precision]]
+* [[Bias of an estimator]]
+* [[Double descent]]
+* [[Gauss–Markov theorem]]
+* [[Hyperparameter optimization]]
+* [[Law of total variance]]
+* [[Minimum-variance unbiased estimator]]
+* [[Model selection]]
+* [[Regression model validation]]
+* [[Supervised learning]]
+* [[Cramér–Rao bound]]
+* [[Prediction interval]]
+{{Div col end}}
+
+==References==
+{{Reflist}}
+
+== External links ==
+* [https://mlu-explain.github.io/bias-variance/ MLU-Explain: The Bias Variance Tradeoff] — An interactive visualization of the bias-variance tradeoff in LOESS Regression and K-Nearest Neighbors.
+
+{{DEFAULTSORT:Bias-variance dilemma}}
+[[Category:Dilemmas]]
+[[Category:Model selection]]
+[[Category:Machine learning]]
+[[Category:Statistical classification]]

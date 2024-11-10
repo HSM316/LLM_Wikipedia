@@ -1,0 +1,111 @@
+{{short description|real-time operating system}}
+{{Notability|date=April 2014}}
+{{Primary sources|date=April 2014}}
+<!-- Deleted image removed: [[Image:Liteos debugging example.png|thumb|right|Debugging the Blink application in LiteOS using AVR Studio 5.0 and JTAG, showing a breakpoint has been reached and the program halts]] -->
+{{Infobox OS
+| name                   = Huawei LiteOS
+| screenshot             = 
+| caption                = 
+| developer              = Huawei Technologies Co., Ltd
+| family                 = 
+| source_model           = [[Open-source software|Open source]]
+| latest_release_version = V2.1
+| latest_release_date    = {{release_date |2018|05}}
+| license                = [[BSD licenses]]|BSD 3
+| working_state          = Current
+| website                = https://www.huawei.com/liteos
+}}
+'''Huawei LiteOS''' is a lightweight [[real-time operating system]]. It is an open source operating system licensed under a [[BSD licenses|BSD 3-Clause license]] for IoT smart terminals. Microcontrollers of different architectures such as ARM (M0/3/4/7, A7/17/53, ARM9/11), x86, and RISC-V are supported by the project. Huawei LiteOS is part of Huawei's "1+2+1" Internet of Things solution and has been featured in a number of open source development kits and industry offerings.
+
+Huawei LiteOS features lightweight, low-power, fast-response, multi-sensor collaboration, multi-protocol interconnect connectivity, enabling IoT terminals to quickly access the network. Huawei LiteOS will make intelligent hardware development easier, thereby accelerating the realization of the interconnection of all things.
+
+The latest version is V2.1, which was released in May 2018.
+
+== History ==
+On May 20, 2015, at the Huawei Network Conference, Huawei proposed the "1+2+1" Internet of Things solution and release the IoT operating system named Huawei LiteOS.
+
+== Key features ==
+* Lightweight, small kernel (< 10KB<ref>https://developer.huawei.com/ict/en/site-iot/article/liteos-overview</ref>)
+* Energy efficient
+* Fast startup within milliseconds
+* Support NB-IoT, Wi-Fi, Ethernet, BLE, Zigbee and other different IoT protocols
+* Support access to different cloud platforms
+
+== Supported architectures ==
+{{Div col|colwidth=15em}}
+*[[GigaDevice]]
+**GD32F450I-EVAL
+**GD32F190R-EVAL
+**GD32F103C-EVAL
+**GD32F150R-EVAL
+**GD32F207C-EVAL
+
+*[[STMicroelectronics]]
+**STM32F411RE-NUCLEO
+**STM32F412ZG-NUCLEO
+**STM32F429I_DISCO
+**STM32L476RG_NUCLEO
+**STM32F746ZG_NUCLEO
+**STM32F103RB-NUCLEO
+
+*[[Atmel]]
+**Atmel SAM D21 Xplained Pro
+**ATSAM4S-XPRO
+**ARDUINO ZERO PRO
+
+*[[NXP]]
+**LPC824_LITE
+**LPC54110_BOARD
+**FRDM-KW41Z
+**FRDM-KL25Z
+
+*[[Silicon Labs]]
+**EFM32 GIANT GECKO STARTER KIT EFM32GG-STK3700
+**EFM32 PEARL GECKO STARTER KIT SLSTK3401A
+**EFM32 HAPPY GECKO STARTER KIT SLSTK3400A
+
+*MindMotion
+**MM32F103_MINI
+**MM32L373
+**MM32L073PF
+
+*[[Nuvoton]]
+
+*[[Nordic Semi]]
+**NRF52840-PDK
+**NRF52-DK
+
+*[[MediaTek]]
+**LINKIT7687HDK
+
+*[[Texas Instruments|TI]]
+**LAUNCHXL-CC3220SF
+
+*[[Microchip]]
+**ATSAME70Q21
+
+*[[Analog Devices|ADI]]
+**ADuCM4050
+{{div col end}}
+
+== See also ==
+{{Portal|Free and open-source software}}
+* [[Embedded operating system]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{Official website|https://www.huawei.com/liteos}}
+* [https://github.com/LiteOS/LiteOS/ LiteOS source code]
+
+[[Category:Embedded operating systems]]
+[[Category:Embedded systems]]
+[[Category:Free software operating systems]]
+[[Category:Lightweight Unix-like systems]]
+[[Category:Real-time operating systems]]
+[[Category:Wireless sensor network]]
+[[Category:Software using the BSD license]]
+
+{{Wireless Sensor Network}}
+{{Real-time operating systems}}

@@ -1,0 +1,188 @@
+{{Infobox computer hardware
+| name         = TIGER Board
+| image        = [[File:TIGER Board.png|200px]]
+| caption      = 
+| type         = [[Single-board computer]]
+| processor    = [[ARM Cortex-A9|ARM Cortex A9]]
+| memory       = 1GB DDR3
+| storage      = 4 GB NAND flash built-in & microSD
+| Graphics     = ARM Mali-400 MP2
+| Power        = 5V
+}}
+'''GoWarrior''' is an open-source and community-supported [[computing platform]].<ref name="cnx-software.com">{{cite web|url=http://www.cnx-software.com/2015/12/10/gowarrior-tiger-development-board-with-ali-m3733-soc-to-support-android-debian-and-freertos/|title=GoWarrior Tiger Development Board with ALi M3733 SoC To Support Android, Debian and FreeRTOS|publisher=|accessdate=18 December 2015}}</ref> GoWarrior is designed for the world of [[Maker culture|makers]], [[Hacker culture|hackers]], educators, [[Hobbyist operating system development|hobbyists]], and newbies to build electronics projects.<ref>{{cite web|url=https://www.phoronix.com/forums/forum/hardware/general-hardware/839139-tiger-board-a-new-high-end-single-board-computer|title=TIGER Board: A New High-end Single-board Computer|publisher=|accessdate=18 December 2015}}</ref> It offers a complete package of [[Open-source hardware|hardware]], [[Open-source software|software]] and [[Cloud computing|cloud service]].<ref name="livejournal.com">{{cite web|url=http://daytoncallie.livejournal.com/|title=daytoncallie|publisher=|accessdate=18 December 2015}}{{dead link|date=October 2017 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+== TIGER Board ==
+
+TIGER Board is a [[single-board computer]] performs as hardware for GoWarrior platform. It contains [[ARM Cortex-A9|ARM Cortex A9]]<sup>[3]</sup> based M3733-AFAAA<ref>{{cite web|url=https://www.reuters.com/article/ali-corporation-idUSnBw045079a+100+BSW20150105|title=ALi Launches Hardware-assisted DRM Solution Integrating Microsoft’s PlayReady Technologies<3041.TW>|author=Reuters Editorial|date=5 January 2015|work=Reuters|accessdate=18 December 2015}}</ref> ([[System on a chip|SoC]]), [[Mali (GPU)|ARM Mali-400 MP2]], as well as integrated 1GB [[DDR3 SDRAM|DDR3]] RAM.<ref name="cnx-software.com"/><gallery>
+File:TIGER Board bottom.jpg|The picture points the MicroSD card slot on TIGER Board
+</gallery>
+
+=== Hardware Specification ===
+
+GoWarrior specifications<ref name="raffaeletranquillini">{{cite web|url=http://www.board-db.org/detail.php?boardid=101|title=TIGER Board|author=Raffaele Tranquillini|publisher=|accessdate=18 December 2015}}</ref> are:[[File:TIGER Board top.jpg|600x600px|thumb]] [[File:TIGER_Board_bottom.jpg|thumb|600x600px]]
+{| class="wikitable"
+|-
+! Component !! Specifications
+|-
+|[[System on a chip|Soc]]||ALi M3733-AFAAA
+|-
+|[[Central processing unit|CPU]]||1.7&nbsp;GHz ARM Cortex A9
+|-
+|[[Graphics processing unit|GPU]]||ARM Mali-400 MP2
+|-
+|RAM||1GB DDR3, dual-channel
+|-
+|[[Internal storage|Internal Storage]]||4GB [[Flash memory|NAND Flash]]
+|-
+|[[Secure Digital|SD card]]||[[Secure Digital|MicroSD]] card slot (up to 64GB)
+|-
+|[[Power Management Unit|PMU]]||Embedded Power Management Unit (PMU)
+
+Supports [[Real-time clock|Real-time Clock]]
+|-
+|[[Ethernet hub|Ethernet]] (RJ45)||10/100Mbit/s
+|-
+|[[Wi-Fi]]||802.11 b/g/n
+|-
+|[[Bluetooth]]
+|[[Bluetooth 4.0]]
+|-
+|[[Infrared|IR]]
+|IR receiver for [[Remote control|infrared remote control]]
+|-
+|[[HDMI]]
+|Supported resolutions: [[480i|720x480]], [[720x576]], [[720p|1280x720]], and [[1080p|1920x1080]]
+|-
+|[[RCA connector|Analog A/V Out]]
+|[[Phone connector (audio)|3.5mm]] to [[RCA connector|RCA]]
+|-
+|USB
+|2 X [[USB 2.0]] + 1 X [[Micro-USB|Micro USB]]
+|-
+|Buttons & Switch
+|One button is for client mode. The other two buttons are [[User-defined function|user-defined]] buttons.
+One Switch for selecting to [[Booting|boot]] to from NAND Flash or MicroSD card.
+|-
+|[[Light-emitting diode|LEDs]]
+|Total 11 LEDs to indicate different status
+|-
+|[[Pin header|Expansion Headers]]
+|Two 40-pin male headers. J3 and J4 are multiplexed to provide access to the features.
+|-
+|Other Debug
+|One [[Joint Test Action Group|JTAG]] connector reserved on the board, but requires additional hardware and software.
+|-
+|I/O expansions
+|[[General-purpose input/output|GPIO]]: 63 pins
+
+[[Pulse-width modulation|PWM]]: 2 pins
+
+[[System Packet Interface|SPI]]
+
+[[I²C|I2C]]
+
+[[Universal asynchronous receiver/transmitter|UART]]
+|-
+|Operating system
+|Android 4.4.4 based GoDroid
+|-
+|Weight
+|1.48oz (42grams)
+|-
+|Dimensions
+|93.2mm X 59.7mm
+|-
+|Power
+|5V via MicroUSB and/or 1.3mm [[barrel connector]]  (DC In Only)
+|}
+
+== Available operating systems ==
+
+=== GoDroid ===
+GoDroid is an [[Android KitKat]] 4.4.4.<ref name="hwtrek.com">{{cite web|url=https://www.hwtrek.com/profile/marconi-jiang.4176#biography |title=Marconi Jiang |work=HWTrek |accessdate=18 December 2015 |url-status=dead |archiveurl=https://web.archive.org/web/20151222152358/https://www.hwtrek.com/profile/marconi-jiang.4176 |archivedate=22 December 2015 }}</ref> based optimized operating system for GoWarrior platform. In addition to original Android functionalities, GoDroid pre-integrates some useful [[middleware]] components and libraries, as well as some self-developed function blocks, which makes it also a [[software development kit]] for [[Android application package|Android applications]].<ref name="prog3.com">{{cite web|url=http://prog3.com/article/2015-11-19/2826270-GoWarrior-interview-jinjiang|title=The "Carpenter" Ali GoWarrior: -PROG3.COM computing hardware and software platform for a comprehensive open source|publisher=|accessdate=18 December 2015}}</ref>
+
+==== Features ====
+
+===== Booting Option =====
+
+GoDroid supports booting from NAND Flash or from MicroSD card that contains the boot code and image files.<ref>{{cite web|url=http://www.eeboard.com/evaluation/tigerboard/|title=让你无法抗拒折腾的开源硬件板——TigerBoard评测 - 爱板网|publisher=|accessdate=18 December 2015}}</ref>
+
+===== Multimedia =====
+By replacing Android native media engine [[Stagefright (bug)|StageFright]] with [[GStreamer]] and utilizing [[hardware acceleration]] facilities, GoDroid supports various audio/video/[[Container format (digital)|container]] hardware decoding and multiple [[network protocols]] including [[Microsoft Smooth Streaming Protocol|Microsoft Smooth Streaming]], [[HTTP Live Streaming]] and [[Kodi (software)|KODI]] 14.2 has variety of supported video/audio plug-ins.<ref name="seeedstudio.com"/>
+
+===== Wireless Display Standards =====
+Besides the [[Screen Mirroring|screen mirroring]] function of Android [[Miracast]], GoDroid also implements [[Digital Living Network Alliance|DLNA]] system service for sharing digital media among multimedia devices. DMR, DMS and DMP are supported.<ref name="prog3.com"/>
+
+===== Programming language =====
+In addition to [[C/c++|C/C++]]/[[Java (programming language)|JAVA]], GoDroid also integrates QPython2engine for [[Python (programming language)|Python2]] programming on Android.<ref name="hwtrek.com"/>
+
+===== Inter-connection with other OSH Platform =====
+TIGER Board provides 2 sets of 40-pin [[Pin header|expansion headers]], one of which is compatible to Raspberry Pi connector. Raspberry Pi Python applications can be ported and run on GoDroid.<ref name="livejournal.com"/>
+
+===== Integrated Development Environment =====
+GoDroid supports [[Android Studio]] as application [[Integrated development environment|IDE]]. With [[Application programming interface|API]] level 19 configuration to match GoDroid provides the availability of not only original Android API, but also proprietary extended API, such as GPIO/IC2/SPI/PWM.<ref name="raffaeletranquillini"/>
+
+===== Debugging =====
+GoDroid supports standard [[Android Debug Bridge|ADB]] debugging via Ethernet, Wi-Fi and USB.<ref name="cnx-software.com"/>
+
+=== GoBian ===
+GoBian is a [[Linux Embedded|Linux-embedded]] operating system running on TIGER Board for the GoWarrior platform.
+
+GoBian is developed based on [[Raspbian]] which is from [[Debian]] 7 wheezy armhf, and differs from Raspbian for the extra features, for example, GoBian encapsulates the RPi.gpio and other I/O libraries to facilitate transplanting projects which use the related libraries from Raspberry Pi to TIGER Board. Furthermore, GoBian provides support for multimedia by integrating GOF, [[Kodi (software)|KODI]] and other middle-ware modules and applications out-of-the-box.
+
+==== Features ====
+
+===== Networking & Remote Access =====
+GoBian enables the Internet connection through Ethernet or [[Wi-Fi]] through the [[Ethernet port]] and Wi-Fi module on TIGER Board, and thus supports various methods to access the projects and transfer data, such as [[File Transfer Protocol|FTP]], [[Secure Shell|SSH]].
+
+===== Timekeeping =====
+GoBian automatically synchronizes the system time with Internet time servers using the [[Ntpd|NTP]] protocol.
+
+===== File System =====
+GoBian integrates a built-in file system for data management.
+
+===== Built-in Programming Environments =====
+[[C (programming language)|C]], [[C++]], [[Python (programming language)|Python]], [[Perl]], and [[shell script]].
+
+===== I/O Interfaces =====
+GoBian lets you call the GPIO/I2C/UART/SPI interfaces directly in your projects with the built-in RPi.gpio and other libraries.
+
+===== Multimedia =====
+GoBian makes it easy for the secondary development of multimedia applications with the customized GOF middle-ware for TIGER Board.
+
+===== Multitasking =====
+The on-board M3733-AFAAA processor makes GoBian a multitasking system with good performance.
+
+===== Linux Software =====
+The software programs that are available for Debian are basically compatible with GoBian.
+
+===== Low-Power Sleep Mode =====
+GoBian supports the ultra-power-saving sleep mode (PMU Standby), with the entire board power consumption as low as 0.35W.
+
+===== Multi-Screen Sharing =====
+GoBian integrates with DLNA to fully support the multimedia sharing and multi-screen interaction.
+
+===== Community Support =====
+The GoWarrior community is already launched to support your projects with GoBian.
+
+== CloudQ ==
+CloudQ is a comprehensive back-end community support to help users easily build up their projects.<ref name="seeedstudio.com">{{cite web|url=http://www.seeedstudio.com/forum/viewtopic.php?f=45&t=6444 |title=Seeedstudio Forum • View topic - GoWarrior: TIGER Board First Boot and Kodi Settings |publisher= |accessdate=18 December 2015 }}{{dead link|date=January 2017 |bot=InternetArchiveBot |fix-attempted=yes }}</ref>
+
+== See also ==
+
+* [[Comparison of single-board computers]]
+
+== References ==
+
+{{reflist|1}}
+
+== External links ==
+* [https://web.archive.org/web/20151212194355/http://www.gowarriorosh.com/wp/en_US/ GoWarrior]
+* [http://www.arm.com/cortex-a9.php/ ARM]
+
+[[Category:Single-board computers]]
+[[Category:Linux-based devices]]
+[[Category:ARM architecture]]
+[[Category:Internet of things]]
+[[Category:Open hardware electronic devices]]
+[[Category:Educational hardware]]

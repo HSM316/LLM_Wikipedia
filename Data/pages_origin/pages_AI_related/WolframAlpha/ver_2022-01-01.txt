@@ -1,0 +1,70 @@
+{{short description|Search and answer engine}}
+{{Use mdy dates|date=October 2014}}
+{{Infobox website
+| name = WolframAlpha
+| logo = Wolfram Alpha December 2016.svg
+| caption = WolframAlpha is based on the computational platform [[Mathematica]], written by British scientist [[Stephen Wolfram]] in 1988.
+| url = {{URL|https://www.wolframalpha.com/}}
+| commercial = Yes
+| type = [[Answer engine]]
+| registration = Optional
+| owner = WolframAlpha LLC
+| author = [[Wolfram Research]]
+| num_employees = 200 (as of 2012)
+| programming_language = [[Wolfram Language]]
+| launch_date = {{start date and age|2009|5|18}}<ref name="launch date">{{cite web |author=The Wolfram&#124;Alpha Launch Team |url=http://blog.wolframalpha.com/2009/05/08/so-much-for-a-quiet-launch/ |title=So Much for A Quiet Launch |work=Wolfram&#124;Alpha Blog |publisher=Wolfram Alpha |date=May 8, 2009 |access-date=2013-02-09}}</ref> (official launch)<br>{{start date|2009|5|15}}<ref name="updated launch detail">{{cite web |author=The Wolfram&#124;Alpha Launch Team |url=http://blog.wolframalpha.com/2009/05/12/going-live-and-webcasting-it/ |work=Wolfram&#124;Alpha Blog |title=Going Live—and Webcasting It |publisher=Wolfram Alpha |date=May 12, 2009 |access-date=2013-02-09}}</ref> (public launch)
+| current_status = Active
+}}
+
+'''WolframAlpha''' ({{IPAc-en|ˈ|w|ʊ|l|f|r|əm|-}} {{respell|WUUL|frəm|-}}) is a computational knowledge engine and [[answer engine]] developed by [[Wolfram Research]].<ref name="Guardiandatasource">{{cite news |title=Where does Wolfram Alpha get its information? |author=Bobbie Johnson |work=The Guardian |date=May 21, 2009 |access-date=2013-03-08 |url=https://www.theguardian.com/technology/2009/may/21/1 }}</ref> It answers factual queries directly by computing the answer from externally sourced data.<ref>{{Cite web|title = About Wolfram{{!}}Alpha: Making the World's Knowledge Computable|url = http://www.wolframalpha.com/about.html|website=wolframalpha.com|access-date = 2015-11-25}}</ref><ref>{{cite news |url=https://www.theguardian.com/technology/2009/mar/09/search-engine-google |title=British search engine 'could rival Google' |last=Johnson |first=Bobbie |date=March 9, 2009 |work=The Guardian |publisher=Guardian News and Media |location=UK |access-date=2013-02-09}}</ref>
+
+WolframAlpha was released on May 18, 2009, and is based on Wolfram's earlier product [[Wolfram Mathematica]], a computational platform for calculation, visualization, and statistics capabilities.<ref name="launch date" /> Additional data is gathered from both academic and commercial websites such as the CIA's ''[[The World Factbook]]'', the [[United States Geological Survey]], a Cornell University Library publication called ''All About Birds'', ''[[Chambers Biographical Dictionary]]'', [[Dow Jones & Company|Dow Jones]], the ''[[Catalogue of Life]]'',<ref name=Guardiandatasource /> [[CrunchBase]],<ref name=techcrunch>{{cite news |last=Dillet |first=Romain |title=Wolfram Alpha Makes CrunchBase Data Computable Just In Time For Disrupt SF |url=https://techcrunch.com/2012/09/07/wolfram-alpha-makes-crunchbase-data-computable-just-in-time-for-disrupt/ |publisher=TechCrunch |date=September 7, 2012 |access-date=2013-02-09}}</ref> [[Best Buy]],<ref>{{cite news |last=Golson |first=Jordan |title=Wolfram Delivers Siri-Enabled Shopping Results From Best Buy |url=http://www.macrumors.com/2011/12/16/wolfram-delivers-siri-enabled-shopping-results-from-best-buy/ |publisher=MacRumors |date=December 16, 2011 |access-date=2013-02-09}}</ref> and the [[Federal Aviation Administration|FAA]].<ref>{{cite news |last=Barylick |first=Chris |title=Wolfram Alpha search engine now tracks flight paths, trajectory information |url=https://www.engadget.com/2011/11/19/wolfram-alpha-search-engine-now-tracks-flight-paths-trajectory/ |publisher=Engadget |date=November 19, 2011 |access-date=2013-02-09}}</ref> 
+
+== Technology ==
+=== Overview ===
+Users submit queries and computation requests via a text field. WolframAlpha then computes answers and relevant visualizations from a [[knowledge base]] of [[Data curation|curated]], [[structured data]] that come from other sites and books. It is able to respond to particularly phrased [[natural language understanding|natural language]] fact-based questions, or more complex questions. It displays its "Input interpretation" of such a question, using standardized phrases. Mathematical symbolism can be parsed by the engine, which responds with numerical and statistical results.
+
+=== Development ===
+WolframAlpha is written in the [[Wolfram Language]], a general multi-paradigm programming language, and implemented in [[Wolfram Mathematica|Mathematica]] and ran on more than 10,000 CPUs as of 2009.<ref>{{cite news |first=Frederic |last=Lardinois |url=http://readwrite.com/2009/04/25/wolframalpha_our_first_impressions |title=Wolfram&#124;Alpha: Our First Impressions |date=April 25, 2009 |publisher=ReadWriteWeb |access-date=2013-02-09}}</ref>
+
+== Usage ==
+WolframAlpha has been used to power some searches in the [[Microsoft]] [[Bing (search engine)|Bing]] and [[DuckDuckGo]] search engines but is not currently used.<ref>{{cite news |first=Tom |last=Krazit |url=http://news.cnet.com/8301-30684_3-10315117-265.html |title=Bing strikes licensing deal with Wolfram Alpha |publisher=CNET |date=August 21, 2009 |access-date=2013-02-09}}</ref><ref>{{cite web |author=The Wolfram&#124;Alpha Team |date=April 18, 2011 |url=http://blog.wolframalpha.com/2011/04/18/wolframalpha-and-duckduckgo-partner-on-api-binding-and-search-integration/ |title=Wolfram&#124;Alpha and DuckDuckGo Partner on API Binding and Search Integration |work=Wolfram&#124;Alpha Blog |publisher=Wolfram Alpha |access-date=2013-02-09}}</ref> For factual [[question answering]], it is sometimes queried by Apple's [[Siri (software)|Siri]] and [[Amazon Alexa]] for math and science queries.<ref>{{Cite web|title=Alexa gets access to Wolfram Alpha's knowledge engine|url=https://social.techcrunch.com/2018/12/20/alexa-gets-access-to-wolfram-alphas-knowledge-engine/|access-date=2021-03-17|website=TechCrunch|language=en-US}}</ref><ref>{{cite web|url=https://www.news18.com/news/tech/alexa-can-now-answer-those-tricky-math-questions-1983751.html|title=Alexa Can Now Answer Those Tricky Math Questions|work=News18}}</ref>
+
+== History ==
+Launch preparations began on May 15, 2009, at 7pm [[Central Daylight Time (North America)#Central Daylight Time|CDT]] and were broadcast live on [[Justin.tv]]. The plan was to publicly launch the service a few hours later. There were issues due to extreme load. The service was officially launched on May 18, 2009,<ref name="BBC">{{cite news |url=http://news.bbc.co.uk/1/hi/technology/8052798.stm |title=Wolfram 'search engine' goes live |publisher=BBC News |date=May 18, 2009 |access-date=2013-02-09}}</ref> receiving mixed reviews.<ref name="spivack">{{cite web |first=Nova |last=Spivack |title=Wolfram Alpha is Coming – and It Could be as Important as Google |date=March 7, 2009 |url=http://www.novaspivack.com/uncategorized/wolfram-alpha-is-coming-and-it-could-be-as-important-as-google |access-date=2013-02-09 |publisher=Nova Spivack – Minding the Planet}}</ref><ref>{{cite news |first=Ryan |last=Singel |title=Wolfram&#124;Alpha Fails the Cool Test |date=May 18, 2009 |url=https://www.wired.com/epicenter/2009/05/wolframalpha-fails-the-cool-test/ |publisher=Wired |access-date=2013-02-09}}</ref> In 2009, Wolfram Alpha advocates pointed to its potential, some even stating that how it determines results is more important than current usefulness.<ref name="spivack"/>
+
+On February 8, 2012, WolframAlpha Pro was released,<ref name="WAProAnnounce">{{cite news |first=Stephen |last=Wolfram |url=http://blog.wolframalpha.com/2012/02/08/announcing-wolframalpha-pro/ |title=Announcing Wolfram&#124;Alpha Pro |date=February 8, 2012 |work=Wolfram&#124;Alpha Blog |publisher=Wolfram Alpha |access-date=2013-02-09}}</ref> offering users additional features for a monthly subscription fee.<ref name="WAProAnnounce" /><ref name="StepByStep">{{cite web|url=http://blog.wolframalpha.com/2009/12/01/step-by-step-math/|title=Step-by-Step Math}}</ref>
+
+== Copyright claims ==
+''[[InfoWorld]]'' published an article warning readers of the potential implications of giving an automated website proprietary rights to the data it generates.<ref name="copyright">{{cite web |last=McAllister |first=Neil |url=http://www.infoworld.com/d/developer-world/how-wolfram-alpha-could-change-software-248 |title=How Wolfram Alpha could change software |publisher=InfoWorld |date=July 29, 2009 |access-date=2012-02-28}}</ref> [[Free software movement|Free software]] advocate [[Richard Stallman]] also opposes the idea of recognizing the site as a copyright holder and suspects that Wolfram would not be able to make this case under existing copyright law.<ref name="fsf">{{cite mailing list |url=http://lists.essential.org/pipermail/a2k/2009-August/004865.html |title=How Wolfram Alpha's Copyright Claims Could Change Software |date=August 4, 2009 |access-date=2012-02-17 |mailing-list=Access 2 Knowledge|archive-url=https://web.archive.org/web/20130428041345/http://lists.essential.org/pipermail/a2k/2009-August/004865.html |archive-date=April 28, 2013 |last=Stallman |first=Richard |author-link=Richard Stallman}}</ref>
+
+== See also ==
+* [[Commonsense knowledge problem]]
+* [[Artificial general intelligence|Strong AI]]
+* [[Watson (computer)]]
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* {{official website|mobile=http://m.wolframalpha.com/}}
+
+{{Wolfram Research|state=uncollapsed}}
+{{computable knowledge}}
+{{Intelligent personal assistant software}}
+
+[[Category:Agent-based software]]
+[[Category:Educational math software]]
+[[Category:Information retrieval systems]]
+[[Category:Internet properties established in 2009]]
+[[Category:Mathematics education]]
+[[Category:Natural language processing software]]
+[[Category:Open educational resources]]
+[[Category:Physics education]]
+[[Category:Semantic Web]]
+[[Category:Software calculators]]
+[[Category:Virtual assistants]]
+[[Category:Web analytics]]
+[[Category:Websites which mirror Wikipedia]]
+[[Category:Wolfram Research]]
+[[Category:Computer algebra systems]]

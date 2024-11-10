@@ -1,0 +1,10 @@
+Product of experts (PoE) is a machine learning technique. It models a probability distribution by combining the output from several simpler distributions.
+It was proposed by Geoffrey Hinton in 1999, along with an algorithm for training the parameters of such a system.
+
+The core idea is to combine several probability distributions ("experts") by multiplying their density functions—making the PoE classification similar to an "and" operation. This allows each expert to make decisions on the basis of a few dimensions without having to cover the full dimensionality of a problem.
+
+This is related to (but quite different from) a mixture model, where several probability distributions are combined via an "or" operation, which is a weighted sum of their density functions.
+
+The experts may be understood as each being responsible for enforcing a constraint in a high-dimensional space. A data point is considered likely iff none of the experts say that the point violates a constraint.
+
+To optimize it, he proposed the contrastive divergence minimization algorithm. This algorithm is most often used for learning restricted Boltzmann machines.

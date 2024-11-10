@@ -1,0 +1,50 @@
+{{distinguish|text=[[Qubo]], a television service owned by [[Ion Media Networks]]}}
+{{refimprove|date=September 2014}}
+'''Quadratic unconstrained binary optimization''' ('''QUBO''') is a [[pattern matching]] technique, common in [[machine learning]] applications. QUBO is an [[NP hard]] problem. Examples of problems that can be formulated as QUBO problems are the [[Maximum cut]], [[Graph coloring]] and the [[Partition problem]].<ref>{{cite arXiv |last1=Glover |first1=Fred |last2=Kochenberger|first2=Gary |eprint=1811.11538 |title=A Tutorial on Formulating and Using QUBO Models |class= cs.DS|date=2019 }}</ref>
+
+QUBO problems may sometimes be well-suited to algorithms aided by [[quantum annealing]].<ref>{{cite web|url=http://www.technologyreview.com/view/514686/d-waves-quantum-computer-goes-to-the-races-wins/
+| title      = D-Wave's Quantum Computer Goes to the Races, Wins
+| author     = Tom Simonite
+| publisher  = MIT Technology Review
+| date       = {{date|May 8, 2013}}
+| accessdate = {{date|12 may 2013}}
+}}</ref>
+
+QUBO is the problem of minimizing a quadratic polynomial over binary variables.  The quadratic polynomial will be of the form 
+<math>E(X_1, X_2, ... , X_N) = \sum_{i=1}^N \sum_{j=1}^i Q_{ij} \times X_i \times X_j</math>
+with <math>X_i \in \{0,1\}</math> and <math>c_i, Q_{ij} \in R </math>.
+
+==References==
+
+{{Reflist}}
+
+==External links==
+* {{cite journal
+| url        = http://portal.acm.org/citation.cfm?id=1231283
+| title      = Local search heuristics for Quadratic Unconstrained Binary Optimization (QUBO)
+| journal    = Journal of Heuristics
+| doi        = 10.1007/s10732-007-9009-3
+| author     = Endre Boros, Peter L Hammer & Gabriel Tavares
+| volume     =  13| issue = 2
+| date       = April 2007
+| pages      = 99–132
+| publisher  = Association for Computing Machinery
+| accessdate = {{date|12 may 2013}}
+}}
+* {{cite journal
+| title      = Analyzing quadratic unconstrained binary optimization problems via multicommodity flows
+| journal    = Discrete Applied Mathematics
+| author     = Di Wang & Robert Kleinberg
+| volume     =  157| issue = 18
+| date       = November 2009
+| doi        = 10.1016/j.dam.2009.07.009
+| pmid = 20161596
+| pmc = 2808708
+| pages      = 3746–3753
+| publisher  = Elsevier
+}}
+
+[[Category:Machine learning algorithms]]
+
+
+{{compu-AI-stub}}

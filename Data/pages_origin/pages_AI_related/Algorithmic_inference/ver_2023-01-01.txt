@@ -1,0 +1,197 @@
+'''Algorithmic inference''' gathers new developments in the [[statistical inference]] methods made feasible by the powerful computing devices widely available to any data analyst. Cornerstones in this field are [[computational learning theory]], [[granular computing]], [[bioinformatics]], and, long ago, structural probability {{harv|Fraser|1966}}.
+The main focus is on the algorithms which compute statistics rooting the study of a random phenomenon, along with the amount of data they must feed on to produce reliable results. This shifts the interest of mathematicians from the study of the [[probability distribution|distribution laws]] to the functional properties of the [[statistics]], and the interest of computer scientists from the algorithms for processing data to the [[information]] they process.
+
+== The Fisher parametric inference problem ==
+Concerning the identification of the parameters of a distribution law, the mature reader may recall lengthy disputes in the mid 20th century about the interpretation of their variability in terms of [[fiducial distribution]] {{harv|Fisher|1956}}, structural probabilities {{harv|Fraser|1966}}, priors/posteriors {{harv|Ramsey|1925}}, and so on. From an [[epistemologic|epistemology]] viewpoint, this entailed a companion dispute as to the nature of [[probability]]: is it a physical feature of phenomena to be described through [[random variables]] or a way of synthesizing data about a phenomenon? Opting for the latter, Fisher defines a ''fiducial distribution'' law of parameters of a given random variable that he deduces from a sample of its specifications. With this law he computes, for instance “the probability that μ (mean of a [[Normal distribution|Gaussian variable]] – omeur note) is less than any assigned value, or the probability that it lies between any assigned values, or, in short, its probability distribution, in the light of the sample observed”.
+
+== The classic solution ==
+Fisher fought hard to defend the difference and superiority of his notion of parameter distribution in comparison to 
+analogous notions, such as  Bayes' [[posterior distribution]], Fraser's constructive probability and Neyman's [[confidence intervals]]. For half a century, Neyman's confidence intervals  won out for all practical purposes, crediting the phenomenological nature of probability. With this perspective, when you deal with a Gaussian variable, its mean μ is fixed by the physical features of the phenomenon you are observing, where the observations are random operators, hence the observed values are specifications of a [[random sample]]. Because of their randomness, you may compute from the sample specific intervals containing the fixed μ with a given probability that you denote ''confidence''.
+
+=== Example ===
+Let ''X'' be a Gaussian variable<ref>By default, capital letters (such as ''U'', ''X'') will denote random variables and small letters (''u'', ''x'') their corresponding specifications.</ref> with parameters <math>\mu</math> and <math>\sigma^2</math> 
+and <math>\{X_1,\ldots,X_m\}</math> a sample drawn from it. Working with statistics
+
+: <math>S_\mu =\sum_{i=1}^m X_i</math>
+
+and
+
+: <math>S_{\sigma^2}=\sum_{i=1}^m (X_i-\overline X)^2,\text{ where }\overline X = \frac{S_{\mu}}{m} </math>
+
+is the sample mean, we recognize that
+
+: <math>T=\frac{S_{\mu}-m\mu}{\sqrt{S_{\sigma^2}}}\sqrt\frac{m-1}{m}=\frac{\overline X-\mu}{\sqrt{S_{\sigma^2}/(m(m-1))}}</math>
+
+follows a [[Student's t distribution]] {{harv|Wilks|1962}} with parameter (degrees of freedom) ''m''&nbsp;−&nbsp;1, so that
+
+: <math>f_T(t)=\frac{\Gamma(m/2)}{\Gamma((m-1)/2)}\frac{1}{\sqrt{\pi(m-1)}}\left(1 + \frac{t^2}{m-1}\right)^{m/2}.</math>
+
+Gauging ''T'' between two quantiles and inverting its expression as a function of <math>\mu</math> you obtain confidence intervals for <math>\mu</math>.
+
+With the  sample specification:
+
+:<math>\mathbf x=\{7.14, 6.3, 3.9, 6.46, 0.2, 2.94, 4.14, 4.69, 6.02, 1.58\}</math>
+
+having size ''m'' = 10, you compute the  statistics <math>s_\mu = 43.37</math> and <math>s_{\sigma^2}=46.07</math>, and obtain a 0.90 confidence interval for <math>\mu</math> with extremes (3.03,&nbsp;5.65).
+{{clear}}
+
+== Inferring functions with the help of a computer ==
+From a modeling perspective the entire dispute looks like a chicken-egg dilemma: either fixed data by first and probability distribution of their properties as a consequence, or fixed properties by first and probability distribution of the observed data as a corollary.
+The classic solution has one benefit and one drawback. The former was appreciated particularly back  when people still did computations with  sheet and pencil. Per se, the task of computing a Neyman  confidence interval for the fixed parameter θ is hard: you don’t know θ, but you look for disposing around it an interval with a possibly very low probability of failing. The analytical solution is allowed for a very limited number of theoretical cases.  ''Vice versa'' a large variety of instances may be quickly solved in an ''approximate way'' via the [[central limit theorem]] in terms of confidence interval around a Gaussian distribution – that's the benefit. 
+The drawback is that the central limit theorem is applicable when the sample size is sufficiently large. Therefore, it is less and less applicable with the sample involved in modern inference instances. The fault is not in the sample size on its own part. Rather, this size is not sufficiently large because of the [[complexity]] of the inference problem.
+
+With the availability of large computing facilities,  scientists refocused from isolated parameters inference to complex functions inference, i.e. re sets of highly nested parameters identifying functions. In these cases we speak about ''learning of functions'' (in terms for instance of [[regression analysis|regression]], [[Neuro-fuzzy|neuro-fuzzy system]] or [[computational learning theory|computational learning]]) on the basis of highly informative samples. A first effect of having a complex structure linking data is the reduction of the number of sample [[Degrees of freedom (statistics)|degrees of freedom]], i.e. the burning of a part of sample points, so that the effective sample size to be considered in the central limit theorem is too small. Focusing  on the sample size ensuring a limited learning error with a given [[confidence level]], the consequence is that the  lower bound on this size grows with [[complexity index|complexity indices]] such as [[VC dimension]] or [[Complexity index#Detail|detail of a class]] to which the function we want to learn belongs.
+
+=== Example ===
+A sample of 1,000 independent bits is enough to ensure an absolute error of at most 0.081 on the estimation of the parameter ''p'' of the underlying Bernoulli variable with a confidence of at least 0.99. The same size cannot guarantee a threshold less than 0.088 with the same confidence 0.99 when the error is identified with the probability that a 20-year-old man living in New York does not fit the ranges of height, weight and waistline observed on 1,000 Big Apple inhabitants. The accuracy shortage occurs because both the VC dimension and the detail of the class of parallelepipeds, among which the one observed from the 1,000 inhabitants' ranges falls, are equal to 6.
+{{clear}}
+
+== The general inversion problem solving the Fisher question ==
+With insufficiently large samples, the approach: ''fixed sample – random properties'' suggests inference procedures in three steps:
+{|
+|- valign="top" 
+|{{Anchor|Sampling mechanism}}1. || '''Sampling mechanism'''. It consists of a pair <math>(Z, g_{\boldsymbol\theta})</math>, where the seed ''Z'' is a random variable without unknown parameters, while the explaining function <math>g_{\boldsymbol\theta}</math> is a function mapping from samples of ''Z'' to samples of the random variable ''X'' we are interested in. The parameter vector <math>\boldsymbol\theta</math> is a specification of the random parameter <math>\mathbf\Theta</math>. Its components  are  the parameters of the   ''X'' distribution law. The Integral Transform Theorem <!-- {{harv|Mood|1962}} What's that? --> ensures the existence of such a mechanism for each (scalar or vector) ''X'' when the seed coincides with the random variable ''U'' [[Uniform distribution (continuous)|uniformly]] distributed in <math>[0,1]</math>. 
+{|
+|- valign="top" 
+|{{Anchor|Pareto Example}}''Example. ''|| For ''X'' following a [[Pareto distribution]] with parameters ''a'' and ''k'', i.e.
+
+:<math>F_X(x)=\left(1-\frac{k}{x}^a\right) I_{[k,\infty)}(x),</math>
+
+a sampling mechanism <math>(U, g_{(a,k)})</math> for ''X'' with seed ''U''  reads:
+
+:<math>g_{(a,k)}(u)=k (1-u)^{-\frac{1}{a}},</math>  
+or, equivalently, <math> g_{(a,k)}(u)=k u^{-1/a}. </math>
+|}
+|- valign="top" 
+| {{Anchor|Master equation}}2. || '''Master equations'''. The actual connection between the model and the observed data is tossed in terms of a set of relations between statistics on the data and unknown parameters that come as a corollary of the sampling mechanisms. We call these relations ''master equations''. Pivoting around the statistic <math>s=h(x_1,\ldots,x_m)= h(g_{\boldsymbol\theta}(z_1),\ldots, g_{\boldsymbol\theta}(z_m))</math>, the general form of a master equation is:
+
+:<math>s= \rho(\boldsymbol\theta;z_1,\ldots,z_m)</math>.
+
+With these relations we may inspect the values of the parameters that could have generated a sample with the observed statistic from a particular setting of the seeds representing the seed of the sample. Hence, to the population of sample seeds corresponds a population of parameters. In order to ensure this population clean properties, it is enough to draw randomly the seed values and involve either [[sufficient statistics]] or, simply,  [[well-behaved statistic]]s  w.r.t. the parameters, in the master equations.
+
+For example, the statistics <math>s_1=\sum_{i=1}^m \log x_i</math> and <math>s_2=\min_{i=1,\ldots,m} \{x_i\}</math> prove to be sufficient for parameters ''a'' and ''k'' of a Pareto random variable ''X''. Thanks to the (equivalent form of the) sampling mechanism <math>g_{(a,k)}</math> we may read them as
+:<math>s_1=m\log k+1/a \sum_{i=1}^m \log u_i</math>
+:<math>s_2=\min_{i=1,\ldots,m} \{k u_i^{-\frac{1}{a}}\},</math>
+respectively.
+|- valign="top" 
+| 3. || '''Parameter population'''. Having fixed a set of master equations, you may map sample seeds into parameters either numerically through a [[bootstrapping populations|population bootstrap]], or analytically through a [[Twisting properties#twisting argument|twisting argument]]. Hence from a population of seeds you obtain a population of parameters.
+
+{|
+|- valign="top"
+|''Example. '' || From the above master equation we can draw a pair  of parameters, <math>( a, k)</math>, ''compatible'' with the observed sample by solving the following system of equations:
+
+:<math> a=\frac{\sum\log u_i-m\log \min \{u_i\}}{s_1-m\log s_2}.</math>
+:<math> k=\mathrm e^{\frac{ a s_1-\sum\log u_i}{m a}}</math>
+
+where <math>s_1</math> and <math>s_2</math> are the observed statistics and <math>u_1,\ldots,u_m</math> a set of uniform seeds. Transferring to the parameters the probability (density) affecting the seeds,  you obtain the distribution law of the random  parameters ''A'' and ''K'' compatible with the statistics you have observed.
+|}
+Compatibility denotes parameters of compatible populations, i.e. of populations that ''could have generated'' a sample giving rise to the observed statistics. You may formalize this notion as follows:
+|}
+
+===Definition===
+For a random variable and a sample drawn from it a {{Anchor|compatible distribution}}''compatible distribution'' is a distribution having the same [[Algorithmic inference#Sampling mechanism|sampling mechanism]] <math>\mathcal M_X=(Z,g_{\boldsymbol\theta})</math> of ''X'' with a value <math>\boldsymbol\theta</math> of the random parameter <math>\mathbf\Theta</math> derived from a master equation rooted on a well-behaved statistic ''s''.
+
+=== Example ===
+[[Image:Parecdf.png|frame|left|Joint empirical cumulative distribution function of parameters <math>(A,K)</math> of a Pareto random variable.]][[Image:Mucdf.png|frame|right|Cumulative distribution function of the mean ''M'' of a Gaussian random variable]]You may find the distribution law of the Pareto parameters ''A''&nbsp;and ''K''&nbsp;as an implementation example of the [[bootstrapping populations|population bootstrap]]&nbsp;method as in the figure on the left.
+
+Implementing the [[Twisting properties#twisting argument|twisting argument]]&nbsp;method,  you get the distribution  law <math>F_M(\mu)</math>&nbsp;of the mean  ''M''&nbsp;of a Gaussian variable ''X''&nbsp;on the basis of the statistic <math>s_M=\sum_{i=1}^m x_i</math>&nbsp;when <math>\Sigma^2</math>&nbsp;is known to be equal to <math>\sigma^2</math>&nbsp;{{harv|Apolloni|Malchiodi|Gaito|2006}}. Its expression is:
+
+:<math>F_M(\mu)=\Phi\left(\frac{m\mu-s_M}{\sigma\sqrt{m}}\right), </math>
+
+shown in the figure on the right, where <math>\Phi</math> is the [[cumulative distribution function]] of  a [[standard normal distribution]].
+ 
+[[Image:Muconfint.png|frame|left|Upper (purple curve) and lower (blue curve) extremes of a 90% confidence interval of the mean ''M'' of a Gaussian random variable for a fixed <math>\sigma</math> and different values of the statistic ''s''<sub>''m''</sub>.]] Computing a [[confidence interval]]&nbsp;for ''M''&nbsp;given its distribution function is straightforward: we need only find two quantiles (for instance <math>\delta/2</math>&nbsp;and <math>1-\delta/2</math>&nbsp;quantiles in case we are interested in a confidence interval of level δ symmetric in the tail's probabilities) as indicated  on the left in the diagram showing the behavior of the two bounds for different values of the statistic ''s''<sub>''m''</sub>.
+
+The Achilles heel of Fisher's approach lies in the joint distribution of more than one parameter, say mean and variance of a Gaussian distribution. On the contrary, with the last approach (and  above-mentioned methods: [[bootstrapping populations|population bootstrap]] and [[Twisting properties#twisting argument|twisting argument]]) we may learn the joint distribution of many parameters. For instance, focusing on the distribution of two or many more parameters, in the figures below we report two confidence regions where the function to be learnt falls with a confidence of 90%. The former concerns the probability with which an extended [[support vector machine]] attributes a binary label 1 to the points of the <math>(x,y)</math> plane. The two surfaces are drawn on the basis of a set of sample points in turn labelled according to a specific distribution law {{harv|Apolloni|Bassis|Malchiodi|Witold|2008}}. The latter concerns the confidence region of the hazard rate of breast cancer recurrence computed from a censored sample {{harv|Apolloni|Malchiodi|Gaito|2006}}.
+{|
+| [[Image:Svmconf.png|frame|90% confidence region for the family of support vector machines endowed with hyperbolic tangent profile function]]
+| [[Image:Hazardconf.png|frame|90% confidence region for the hazard function of breast cancer recurrence computed from the censored sample <math>t=(9, 13, > 13, 18, 12, 23, 31, 34, > 45, 48, > 161),\, </math>
+
+with >&nbsp;''t'' denoting a censored time]]
+|}
+
+<!--Referenze
+
+Fraser, D.A.S.: Statistics. An Introduction. John Wiley & Sons, London (1958)
+Fisher, M.A.: The fiducial argument in statistical inference. Annals of Eugenics 6
+(1935) 391–398
+Vapnick
+Valiant
+M. Blanchette, T. Kunisaewa, D. Sankoff Parametric genome rearrangement, Gene 172 (1996) GC 11–17 Elsevier
+L: Birkedal, M. Tofte, A constraint-based region inference algorithm -->
+
+== Notes ==
+
+<references />
+
+{{more footnotes|date=July 2011}}
+
+== References ==
+
+*{{Citation
+ | last = Fraser | first = D. A. S.
+ | year = 1966
+ | title = Structural probability and generalization
+ | journal = Biometrika
+ | volume = 53
+ | issue = 1/2
+ | pages = 1–9
+ | postscript = .
+ | doi=10.2307/2334048
+| jstor = 2334048
+ }}
+*{{Citation
+ | last=Fisher |first=M. A. 
+ | title=Statistical Methods and Scientific Inference
+ | publisher=Oliver and Boyd
+ | location=Edinburgh and London
+ | year=1956
+ | url=https://psycnet.apa.org/record/1957-00078-000
+}}
+*{{Citation
+ | last1=Apolloni |first1=B.
+ | last2=Malchiodi | first2=D.
+ | last3=Gaito | first3=S.
+ | title=Algorithmic Inference in Machine Learning
+ | publisher=Magill
+ | series=International Series on Advanced Intelligence
+ | location=Adelaide
+ | volume=5
+ | quote=Advanced Knowledge International
+ | edition=2nd 
+ | year=2006
+ }}
+*{{Citation
+ | last1=Apolloni |first1=B.
+ | last2=Bassis | first2=S.
+ | last3=Malchiodi | first3=D.
+ | last4=Witold | first4=P.
+ | title=The Puzzle of Granular Computing
+ | publisher=Springer
+ | series=Studies in Computational Intelligence
+ | location=Berlin
+ | volume=138
+ | year=2008
+ | url=https://books.google.com/books?id=2PkW8Z8cANEC&q=%22Algorithmic+inference%22
+|isbn=9783540798637
+ }}
+*{{Citation
+ | last= Ramsey |first= F. P. 
+ | title= The Foundations of Mathematics
+ | year= 1925
+ | journal=Proceedings of the London Mathematical Society 
+ |pages= 338–384 
+ | postscript= .
+ | doi=10.1112/plms/s2-25.1.338
+}}
+*{{Citation
+ | last=Wilks |first=S.S.
+ | title=Mathematical Statistics
+ | series=Wiley Publications in Statistics
+ | publisher=John Wiley
+ | location=New York
+ | year=1962
+ }}
+
+[[Category:Algorithmic inference| ]]
+[[Category:Machine learning]]

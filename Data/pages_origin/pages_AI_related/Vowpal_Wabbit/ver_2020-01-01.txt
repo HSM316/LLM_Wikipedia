@@ -1,0 +1,82 @@
+{{ Infobox Software
+| name                   = Vowpal Wabbit
+| logo                   = 
+| screenshot             = 
+| caption                = 
+| collapsible            = yes
+| developer              = [[Yahoo! Research]] & later [[Microsoft Research]]
+| latest release version = 8.8.0
+| latest release date    = {{release date|2019|12|7}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = Linux, OS-X, Microsoft Windows
+| size                   = 
+| programming language   = [[C++]]
+| genre                  = [[machine learning]]
+| license                = [[BSD licenses|BSD License]] 
+| website                = {{url|https://vowpalwabbit.org}}
+}}
+'''Vowpal Wabbit''' (also known as "VW") is an [[open-source software|open-source]] fast [[online machine learning|online]] interactive [[machine learning]] system library and program developed originally at  [[Yahoo! Research]], and currently at [[Microsoft Research]].  It was started and is led by [[John Langford (computer scientist)|John Langford]]. Vowpal Wabbit's interactive learning support is particularly notable including [[Multi-armed_bandit#Contextual_bandit|Contextual Bandits]], [[Active_learning_(machine_learning)|Active Learning]], and forms of guided [[Reinforcement Learning]].  Vowpal Wabbit provides an efficient scalable [[Out-of-core algorithm|out-of-core]] implementation with support for a number of machine learning [[Reduction (complexity)|reductions]], importance weighting, and a selection of different [[loss function]]s and optimization algorithms.
+
+==Notable Features==
+The VW program supports:
+* Multiple supervised (and semi-supervised) learning problems:
+** Classification (both binary and multi-class)
+** Regression
+** [[Active learning (machine learning)|Active learning]] (partially labeled data) for both regression and classification
+* Multiple learning algorithms (model-types / representations)
+** [[Ordinary least squares|OLS]] regression
+** [[Matrix decomposition|Matrix factorization]] (sparse matrix SVD)
+** Single layer [[Artificial neural net|neural net]] (with user specified hidden layer node count)
+** Searn (Search and Learn)
+** [[Latent Dirichlet Allocation]] (LDA)
+** Stagewise polynomial approximation
+** Recommend top-K out of N
+** One-against-all (OAA) and cost-sensitive OAA reduction for multi-class
+** Weighted all pairs
+** [[Multi armed bandit|Contextual-bandit]] (with multiple exploration/exploitation strategies)
+* Multiple [[loss function]]s:
+** squared error
+** quantile
+** hinge
+** logistic
+** poisson
+* Multiple optimization algorithms
+** [[Stochastic gradient descent]] (SGD)
+** [[BFGS method|BFGS]]
+** [[Conjugate gradient method|Conjugate gradient]]
+* Regularization ([[L1 norm]], [[L2 norm]], & [[elastic net regularization]])
+* Flexible input - input features may be:
+** Binary
+** Numerical
+** Categorical (via flexible feature-naming and the [[Feature hashing|hash trick]])
+** Can deal with missing values/sparse-features
+* Other features
+** On the fly generation of feature interactions (quadratic and cubic)
+** On the fly generation of [[N-gram]]s with optional skips (useful for word/language data-sets)
+** Automatic test-set holdout and early termination on multiple passes
+** bootstrapping
+** User settable online learning progress report + auditing of the model
+** [[Hyperparameter optimization]]
+
+==Scalability==
+Vowpal wabbit has been used to learn a tera-feature (10<sup>12</sup>) data-set on 1000 nodes in one hour.<ref>{{Cite arXiv |eprint = 1110.4198|last1 = Agarwal|first1 = Alekh|title = A Reliable Effective Terascale Linear Learning System|last2 = Chapelle|first2 = Olivier|last3 = Dudik|first3 = Miroslav|last4 = Langford|first4 = John|class = cs.LG|year = 2011}}</ref> Its scalability is aided by several factors:
+* Out-of-core online learning: no need to load all data into memory
+* The [[Feature hashing|hashing trick]]: feature identities are converted to a weight index via a hash (uses 32-bit [[MurmurHash]]3)
+* Exploiting multi-core CPUs: parsing of input and learning are done in separate threads.   
+* Compiled C++ code
+
+==External links==
+* {{official website|https://vowpalwabbit.org}}
+* [https://github.com/VowpalWabbit/vowpal_wabbit Vowpal Wabbit's github repository]
+* [https://github.com/VowpalWabbit/vowpal_wabbit/wiki Documentation and examples (github wiki)]
+* [https://www.youtube.com/watch?v=q_BjcopyHq0&feature=youtube_gdata Vowpal Wabbit Tutorial at NIPS 2011]
+* [https://stackoverflow.com/questions/tagged/vowpalwabbit Questions (and answers) tagged 'vowpalwabbit' on StackOverflow]
+
+==References==
+{{reflist}}
+
+[[Category:Data mining and machine learning software]]
+[[Category:Software using the BSD license]]
+
+{{free-software-stub}}

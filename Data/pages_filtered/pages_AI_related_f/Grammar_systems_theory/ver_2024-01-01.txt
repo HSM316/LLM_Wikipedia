@@ -1,0 +1,18 @@
+Grammar systems theory is a field of theoretical computer science that studies systems of finite collections of formal grammars generating a formal language. Each grammar works on a string, a so-called sequential form that represents an environment. Grammar systems can thus be used as a formalization of decentralized or distributed systems of agents in artificial intelligence.
+
+Let  be a simple reactive agent moving on the table and trying not to fall down from the table with two reactions, t for turning and ƒ for moving forward. The set of possible behaviors of  can then be described as formal language
+
+ 
+
+where ƒ can be done maximally k times and t can be done maximally ℓ times considering the dimensions of the table.
+
+450px|right|System of grammars sequentially rewriting shared string  
+Let  be a  which generates language . The behavior of  is then described by this grammar. Suppose the  has a subsumption architecture; each component of this architecture can be then represented as a formal grammar, too, and the final behavior of the agent is then described by this system of grammars.
+
+The schema on the right describes such a system of grammars which shares a common string representing an environment. The shared sequential form is sequentially rewritten by each grammar, which can represent either a component or generally an agent.
+
+If grammars communicate together and work on a shared sequential form, it is called a Cooperating Distributed (DC) grammar system. Shared sequential form is a similar concept to the blackboard approach in AI, which is inspired by an idea of experts solving some problem together while they share their proposals and ideas on a shared blackboard.
+
+Each grammar in a grammar system can also work on its own string and communicate with other grammars in a system by sending their sequential forms on request. Such a grammar system is then called a Parallel Communicating (PC) grammar system.
+
+PC and DC are inspired by distributed AI. If there is no communication between grammars, the system is close to the decentralized approaches in AI. These kinds of grammar systems are sometimes called colonies or Eco-Grammar systems, depending (besides others) on whether the environment is changing on its own (Eco-Grammar system) or not (colonies).

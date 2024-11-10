@@ -1,0 +1,42 @@
+{{original research|date=December 2010}}
+
+'''Artificial stupidity''' is a term used within the field of [[computer science]] to refer to a technique of "[[dumbing down]]" [[computer programs]] in order to deliberately introduce errors in their responses.
+
+== History ==
+
+[[Alan Turing]], in his 1950 paper ''[[Computing Machinery and Intelligence]]'', proposed a test for intelligence which has since become known as the [[Turing test]].<ref name="turing">{{Turing 1950}}</ref> While there are a number of different versions, the original test, described by Turing as being based on the "[[imitation game]]", involved a "machine intelligence" (a computer running an AI program), a female participant, and an interrogator. Both the AI and the female participant were to claim that they were female, and the interrogator's task was to work out which was the female participant and which was not by examining the participant's responses to typed questions.<ref name="turing" /> While it is not clear whether or not Turing intended that the interrogator was to know that one of the participants was a computer, while discussing some of the possible objections to his argument Turing raised the concern that "machines cannot make mistakes".<ref name="turing" />
+
+{{quote|It is claimed that the interrogator could distinguish the machine from the man simply by setting them a number of problems in arithmetic. The machine would be unmasked because of its deadly accuracy.|Turing, 1950|page 448}}
+
+As Turing then noted, the reply to this is a simple one: the machine should ''not'' attempt to "give the ''right'' answers to the arithmetic problems".<ref name="turing" /> Instead, deliberate errors should be introduced to the computer's responses.
+
+== Applications ==
+
+Within computer science, there are at least two major applications for artificial stupidity: the generation of deliberate errors in [[chatbots]] attempting to pass the Turing test or to otherwise fool a participant into believing that they are human; and the deliberate limitation of computer AIs in [[video games]] in order to control the game's difficulty.
+
+=== Chatbots ===
+
+The first [[Loebner prize]] competition was run in 1991. As reported in ''[[The Economist]]'', the winning entry incorporated deliberate errors&nbsp;– described by ''The Economist'' as "artificial stupidity"&nbsp;– to fool the judges into believing that it was human.<ref name="economist">{{Citation | title = Artificial Stupidity | date = 1992-09-01 | newspaper = [[The Economist]] | volume = 324 | issue = 7770 | pages = 14}}</ref> This technique has remained a part of the subsequent Loebner prize competitions, and reflects the issue first raised by Turing.
+
+=== Game design ===
+
+Lars Lidén argues that good game design involves finding a balance between the computer's "intelligence" and the player's ability to win. By finely tuning the level of "artificial stupidity", it is possible to create computer controlled plays that allow the player to win, but do so "without looking unintelligent".<ref name="liden">{{citation | last = Lidén | first = Lars | year = 2004 | title = Artificial Stupidity: The art of making intentional mistakes | editor = S. Rabin | work = AI Game Programming Wisdom 2 | pages = 41–48 | publisher = Charles River Media, Inc.}}</ref>
+
+====Algorithms====
+
+There are many ways to deliberately introduce poor decision-making in search algorithms. Take the [[minimax]] algorithm for example. The minimax algorithm is an adversarial search algorithm that is popularly used in games that require more than one player to compete against each other. The main purpose in this algorithm is to choose a move that maximizes your chance of winning and avoid moves that maximizes the chance of your opponent winning. An algorithm like this would be extremely beneficial to the computer as computers are able to search thousands of moves ahead. To "dumb down" this algorithm to allow for different difficulty levels, [[heuristic]] functions have to be tweaked. Normally, huge points are given in winning states. Tweaking the heuristic by reducing such big payoffs would reduce the chance of the algorithm in choosing the winning state.
+
+Creating heuristic functions to allow for stupidity is more difficult than one might think. If a heuristic allows for the best move, the computer opponent would be too omniscient, making the game frustrating and unenjoyable. But if the heuristic is poor, the game might also be unenjoyable. Therefore, a balance of good moves and bad moves in an adversarial game relies on a well-implemented heuristic function.
+
+=== Arguments on artificial stupidity ===
+
+A 1993 editorial in ''The Economist'' argues that there is "no practical reason" to attempt to create a machine that mimics the behaviour of a human being, since the purpose of a computer is to perform tasks that humans cannot accomplish alone, or at least not as efficiently. Discussing the winning entry in a 1991 Turing contest, which was programmed to introduce deliberate typing errors into its conversation to fool the judges, the editorial asks: "Who needs a computer that can't type?"<ref name="economist"/>
+
+== References ==
+
+{{reflist}}
+
+== Further reading ==
+* TEDx: "The Turing Test, Artificial Intelligence and the Human Stupidity" [https://www.youtube.com/watch?v=O7KrwO3pVZ8]
+
+[[Category:Philosophy of artificial intelligence]]

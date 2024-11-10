@@ -1,0 +1,25 @@
+{{Multiple issues|{{Notability|date=December 2019}}
+}}
+{{Infobox software
+| name = Kubeflow
+| logo = Kubeflow-logo.png
+| author = 
+| developer = [[Google]]
+| released = {{Start date and age|2018|03|28}}
+| latest release version = 0.7<ref>{{Citation|title=GitHub - kubeflow/kubeflow: Machine Learning Toolkit for Kubernetes.|date=2019-06-18|url=https://github.com/kubeflow/kubeflow|publisher=Kubeflow|access-date=2019-06-18}}</ref>
+| latest release date = {{Start date and age|2019|5|7}}
+| repo = {{URL|https://github.com/kubeflow/kubeflow}}
+| platform = [[Linux]], [[Windows]], [[MacOS]]
+| license = [[Apache License 2.0]]
+| website = {{URL|https://www.kubeflow.org}}
+}}
+
+{{Connected contributor|User1=Aronchick|U1-declared=yes| U1-otherlinks=(Optional) Co-founded Kubeflow.}}
+
+'''Kubeflow''' is a [[Free software|free]] and [[open-source software|open-source]] machine learning platform co-founded by [http://davidaronchick.com David Aronchick], Jeremy Lewi and Vishnu Kannan, built by developers at [[Google]], [[Cisco]], [[Red Hat|RedHat]], [[CoreOS]] and [https://intl.caicloud.io/ CaiCloud],  and first released at Kubecon North America in 2017<ref>{{Citation|title=''Hot Dogs or Not" - At Scale with Kubernetes [I] - Vish Kannan & David Aronchick, Google|url=https://www.youtube.com/watch?v=R3dVF5wWz-g|language=en|access-date=2019-12-20}}</ref>. Kubeflow is designed to enable using machine learning pipelines to orchestrate complicated workflows running on Kubernetes (e.g. doing data processing then using [[TensorFlow]] or [[PyTorch]] to train a model, and deploying to [[TensorFlow Serving]]). Kubeflow was based on Google's internal method to deploy TensorFlow models to Kubernetes called TensorFlow Extended.<ref>{{Cite web|url=https://www.kubeflow.org/docs/about/kubeflow/|title=Kubeflow|website=Kubeflow|language=en|access-date=2019-06-18}}</ref>
+
+== References ==
+<references />
+
+
+[[Category:Python software]]

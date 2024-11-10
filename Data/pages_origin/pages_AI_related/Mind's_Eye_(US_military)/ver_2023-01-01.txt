@@ -1,0 +1,19 @@
+The '''Mind's Eye''' is a [[Video Content Analysis|video analysis]] research project using [[artificial intelligence]]. It is funded by the [[Defense Advanced Research Projects Agency]].<ref>{{cite news|last=Lohr|first=Steve|title=Computers That See You and Keep Watch Over You|url=https://www.nytimes.com/2011/01/02/science/02see.html?_r=1&pagewanted=all|accessdate=December 15, 2011|newspaper=The New York Times|date=January 1, 2011}}</ref>
+
+Twelve research teams have been contracted by DARPA for the Mind's Eye: [[Carnegie Mellon University]], Co57 Systems, Inc., [[Colorado State University]], [[Jet Propulsion Laboratory]]/[[California Institute of Technology|Caltech]], [[Massachusetts Institute of Technology]], [[Purdue University]], [[SRI International]], [[University at Buffalo, The State University of New York|State University of New York at Buffalo]], [[Netherlands Organisation for Applied Scientific Research|TNO]] (Netherlands), [[University of Arizona]], [[University of California, Berkeley|University of California Berkeley]] and the [[University of Southern California]].<ref>{{cite web|url=http://www.upi.com/Business_News/Security-Industry/2011/01/05/Military-contracts-for-visual-intel-system/UPI-65861294229967/ |title=Military contracts for visual intel system |publisher=UPI |date=January 5, 2011 |accessdate=December 15, 2011}}</ref>
+
+==Mission==
+"The Mind's Eye program seeks to develop in machines a capability that exists only in animals: visual intelligence. This program pursues the capability to learn generally applicable and generative representations of action between objects in a scene directly from visual inputs, and then reason over those learned representations. A key distinction between this research and the state of the art in machine vision is that the latter has made continual progress in recognizing a wide range of objects and their properties - what might be thought of as the nouns in the description of a scene. The focus of Mind's Eye is to add the perceptual and cognitive underpinnings for recognizing and reasoning about the verbs in those scenes, enabling a more complete narrative of action in the visual experience."<ref>{{cite web|title=Mind's Eye|url=http://www.darpa.mil/Our_Work/I2O/Programs/Minds_Eye.aspx|publisher=DARPA Information Innovation Office|accessdate=6 December 2012|url-status=dead|archiveurl=https://web.archive.org/web/20121014043008/http://www.darpa.mil/Our_Work/I2O/Programs/Minds_Eye.aspx|archivedate=14 October 2012}}</ref>
+
+==See also==
+*[[Gorgon Stare]]
+
+==References==
+{{reflist}}
+
+==External links==
+*{{Official website|http://www.darpa.mil/Our_Work/I2O/Programs/Minds_Eye.aspx}}
+
+[[Category:DARPA]]
+[[Category:Applications of artificial intelligence]]
+[[Category:DARPA projects]]

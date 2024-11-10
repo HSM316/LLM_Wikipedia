@@ -1,0 +1,40 @@
+{{Short description|none}} <!-- This short description is INTENTIONALLY "none" - please see WP:SDNONE before you consider changing it! -->
+Almost all of [[Nevada]] is in the [[Pacific Time Zone]] ([[UTC]] -8). The few exceptions that exist all observe [[Mountain Time]] (UTC -7) and are close to the borders of [[Idaho]] or [[Utah]]. Other than these minor exceptions, Nevada is the only non coastal state to be entirely on Pacific Time. Most of Idaho uses Mountain Time, and Arizona is officially on Mountain Time except for the 2/3 of the year when Daylight Saving Time is in effect, which they don't observe (other than the Navajo Nation).
+
+[[Mountain Time]] is officially observed close to the border to Utah in:
+* [[West Wendover, Nevada|West Wendover]], making [[Elko County, Nevada]] one of the few counties in the US that is split between two time zones.
+
+[[Mountain Time]] is also unofficially observed in the following Idaho border areas:<ref>{{cite web|title=OnTimeZone.com Exceptions, Oddities, and Notes|url=http://ontimezone.com/exceptions.php|publisher=OnTimeZone.com|accessdate=2012-05-21}}</ref>
+* [[Jackpot, Nevada|Jackpot]] for the convenience of tourists from Idaho<ref>{{cite web|title=Jackpot, Nevada Current Local Time and Time Zone|url=http://www.timetemperature.com/tznv/jackpot.shtml|publisher=TimeTemperature.com|accessdate=2012-05-21}}</ref>
+* [[Owyhee, Nevada|Owyhee]] and the rest of the [[Duck Valley Indian Reservation]]<ref>{{cite web|title=Owyhee, Nevada Current Local Time and Time Zone|url=http://www.timetemperature.com/tznv/owyhee.shtml|publisher=TimeTemperature.com|accessdate=2012-05-21}}</ref>
+* [[Mountain City, Nevada|Mountain City]] because of its proximity to Owyhee<ref>{{cite web|title=Mountain City, Nevada Current Local Time and Time Zone|url=http://www.timetemperature.com/tznv/mountain-city.shtml|publisher=TimeTemperature.com|accessdate=2012-05-21}}</ref>
+* [[Jarbidge, Nevada|Jarbidge]] due to its proximity to [[Owyhee, Nevada|Owyhee]]
+
+==IANA time zone database==
+The zones for Nevada  as given by [[zone.tab]] of the [[IANA time zone database]], columns marked * are from the zone.tab:<ref>ftp://ftp.iana.org/tz/data/northamerica</ref>
+{| class="wikitable sortable"
+! c.c.*
+! coordinates*
+! TZ*
+! comments*
+! [[UTC offset]]
+! [[UTC offset#Daylight saving time|UTC offset DST]]
+! Note
+|-
+| {{Time zone/zone.tab cols wiki6|America/Los_Angeles}}
+|
+|-
+| {{Time zone/zone.tab cols wiki6|America/Boise}}
+|
+|}
+
+==References==
+{{reflist}}
+
+==See also==
+* [[Time in the United States]]
+
+{{Time in the United States}}
+
+[[Category:Time in the United States by state|Nevada]]
+[[Category:Geography of Nevada]]

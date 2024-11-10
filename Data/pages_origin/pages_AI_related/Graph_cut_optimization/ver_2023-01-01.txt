@@ -1,0 +1,201 @@
+{{short description|Combinatorial optimization method for a family of functions of discrete variables}}
+'''Graph cut optimization''' is a [[combinatorial optimization]] method applicable to a family of [[function (mathematics)|function]]s of [[Continuous or discrete variable|discrete variable]]s, named after the concept of [[cut (graph theory)|cut]] in the theory of [[flow network]]s. Thanks to the [[max-flow min-cut theorem]], determining the [[minimum cut]] over a [[graph (discrete mathematics)|graph]] representing a flow network is equivalent to computing the [[maximum flow]] over the network. Given a [[pseudo-Boolean function]] <math>f</math>, if it is possible to construct a flow network with positive weights such that
+* each cut <math>C</math> of the network can be mapped to an assignment of variables <math>\mathbf{x}</math> to <math>f</math> (and vice versa), and
+* the cost of <math>C</math> equals <math>f(\mathbf{x})</math> (up to an additive constant)
+then it is possible to find the [[global optimum]] of <math>f</math> in [[polynomial time]] by computing a minimum cut of the graph. The mapping between cuts and variable assignments is done by representing each variable with one node in the graph and, given a cut, each variable will have a value of 0 if the corresponding node belongs to the component connected to the source, or 1 if it belong to the component connected to the sink.
+
+Not all pseudo-Boolean functions can be represented by a flow network, and in the general case the global optimization problem is [[NP-hard]]. There exist sufficient conditions to characterise families of functions that can be optimised through graph cuts, such as [[Pseudo-Boolean function#Submodularity|submodular quadratic functions]]. Graph cut optimization can be extended to functions of discrete variables with a finite number of values, that can be approached with iterative algorithms with strong optimality properties, computing one graph cut at each iteration.
+
+Graph cut optimization is an important tool for inference over [[graphical models]] such as [[Markov random field]]s or [[conditional random field]]s, and it has [[Graph cuts in computer vision|applications in computer vision problems]] such as [[image segmentation]],<ref name="peng" /><ref name="grabcut" /> [[image denoising|denoising]],<ref name="lombaert" /> [[image registration|registration]]<ref name="so" /><ref name="tang" /> and [[stereo cameras|stereo matching]].<ref name="kim" /><ref name="hong" />
+
+== Representability ==
+
+A [[pseudo-Boolean function]] <math>f: \{0, 1\}^n \to \mathbb{R}</math> is said to be ''representable'' if there exists a graph <math>G = (V, E)</math> with non-negative weights and with source and sink nodes <math>s</math> and <math>t</math> respectively, and there exists a set of nodes <math>V_0 = \{v_1, \dots, v_n\} \subset V - \{s, t\}</math> such that, for each tuple of values <math>(x_1, \dots, x_n) \in \{0, 1\}^n</math> assigned to the variables, <math>f(x_1, \dots, x_n)</math> equals (up to a constant) the value of the flow determined by a minimum [[cut (graph theory)|cut]] <math>C = (S, T)</math> of the graph <math>G</math> such that <math>v_i \in S</math> if <math>x_i = 0</math> and <math>v_i \in T</math> if <math>x_i = 1</math>.<ref name="what" />
+
+It is possible to classify pseudo-Boolean functions according to their order, determined by the maximum number of variables contributing to each single term. All first order functions, where each term depends upon at most one variable, are always representable. Quadratic functions
+
+:<math> f(\mathbf{x}) = w_0 + \sum_i w_i(x_i) + \sum_{i < j} w_{ij}(x_i, x_j) . </math>
+
+are representable if and only if they are submodular, i.e. for each quadratic term <math>w_{ij}</math> the following condition is satisfied
+
+:<math> w_{ij}(0, 0) + w_{ij}(1, 1) \le w_{ij}(0, 1) + w_{ij}(1, 0) . </math>
+
+Cubic functions
+
+:<math> f(\mathbf{x}) = w_0 + \sum_i w_i(x_i) + \sum_{i < j} w_{ij}(x_i, x_j) + \sum_{i < j < k} w_{ijk}(x_i, x_j, x_k) </math>
+
+are representable if and only if they are ''regular'', i.e. all possible binary projections to two variables, obtained by fixing the value of the remaining variable, are submodular. For higher-order functions, regularity is a necessary condition for representability.<ref name="what" />
+
+== Graph construction ==
+
+Graph construction for a representable function is simplified by the fact that the sum of two representable functions <math>f'</math> and <math>f''</math> is representable, and its graph <math>G = (V' \cup V'', E' \cup E'')</math> is the union of the graphs <math>G' = (V', E')</math> and <math>G'' = (V'', E'')</math> representing the two functions. Such theorem allows to build separate graphs representing each term and combine them to obtain a graph representing the entire function.<ref name="what" />
+
+The graph representing a quadratic function of <math>n</math> variables contains <math>n + 2</math> vertices, two of them representing the source and sink and the others representing the variables. When representing higher-order functions, the graph contains auxiliary nodes that allow to model higher-order interactions.
+
+=== Unary terms ===
+
+A unary term <math>w_i</math> depends only on one variable <math>x_i</math> and can be represented by a graph with one non-terminal node <math>v_i</math> and one edge <math>s \rightarrow v_i</math> with weight <math>w_i(1) - w_i(0)</math> if <math>w_i(1) \ge w_i(0)</math>, or <math>v_i \rightarrow t</math> with weight <math>w_i(0) - w_i(1)</math> if <math>w_i(1) < w_i(0)</math>.<ref name="what" />
+
+=== Binary terms ===
+
+[[File:Graph cut binary.svg|thumb|Example of a graph representing a quadratic term <math>w_{ij}(x_i, x_j)</math> in case <math>w_{ij}(1, 0) - w_{ij}(0, 0) > 0</math> and <math>w_{ij}(1, 1) - w_{ij}(1, 0) < 0</math>.]]
+
+A quadratic (or binary) term <math>w_{ij}</math> can be represented by a graph containing two non-terminal nodes <math>v_i</math> and <math>v_j</math>. The term can be rewritten as
+
+:<math>w_{ij}(x_i, x_j) = w_{ij}(0, 0) + k_i x_i + k_j x_j + k_{ij} \left( (1 - x_i) x_j + x_i (1 - x_j) \right)</math>
+
+with
+
+:<math>
+\begin{align}
+    k_i    &= \frac{1}{2} (w_{ij}(1, 0) - w_{ij}(0, 0)) \\
+    k_j    &= \frac{1}{2} (w_{ij}(1, 1) - w_{ij}(1, 0)) \\
+    k_{ij} &= \frac{1}{2} (w_{ij}(0, 1) + w_{ij}(1, 0) - w_{ij}(0, 0) - w_{ij}(1, 1)) .
+\end{align}
+</math>
+
+In this expression, the first term is constant and it is not represented by any edge, the two following terms depend on one variable and are represented by one edge, as shown in the previous section for unary terms, while the third term is represented by an edge <math>v_i \rightarrow v_j</math> with weight <math>w_{ij}(0, 1) + w_{ij}(1, 0) - w_{ij}(0, 0) - w_{ij}(1, 1)</math> (submodularity guarantees that the weight is non-negative).<ref name="what" />
+
+=== Ternary terms ===
+
+A cubic (or ternary) term <math>w_{ijk}</math> can be represented by a graph with four non-terminal nodes, three of them (<math>v_i</math>,  <math>v_j</math> and <math>v_k</math>) associated to the three variables plus one fourth auxiliary node <math>v_{ijk}</math>.<ref name="fn auxiliary node" group="note" /> A generic ternary term can be rewritten as the sum of a constant, three unary terms, three binary terms, and a ternary term in simplified form. There may be two different cases, according to the sign of <math>p = w_{ijk}(0, 0, 0) + w_{ijk}(0, 1, 1) + w_{ijk}(1, 0, 1) + w_{ijk}(1, 1, 0)</math>. If <math>p > 0</math> then
+
+:<math>
+    w_{ijk}(x_i, x_j, x_k) =
+          w_{ijk}(0, 0, 0)
+        + p_1 (x_i - 1) + p_2 (x_j - 1) + p_3 (x_k - 1)
+        + p_{23}(x_j - 1) x_k + p_{31} x_i (x_k - 1) + p_{12} (x_i - 1) x_j
+        - p x_i x_j x_k
+</math>
+
+[[File:Graph cut ternary.svg|thumb|upright=2|Example of a graph representing the ternary term <math>p x_i x_j x_k</math> when <math>p > 0</math> (left) and when <math>p < 0</math> (right).]]
+with
+
+:<math>
+\begin{align}
+    p_1    &= w_{ijk}(1, 0, 1) - w_{ijk}(0, 0, 1) \\
+    p_2    &= w_{ijk}(1, 1, 0) - w_{ijk}(1, 0, 1) \\
+    p_3    &= w_{ijk}(0, 1, 1) - w_{ijk}(0, 1, 0) \\
+    p_{23} &= w_{ijk}(0, 0, 1) + w_{ijk}(0, 1, 0) - w_{ijk}(0, 0, 0) - w_{ijk}(0, 1, 1) \\
+    p_{31} &= w_{ijk}(0, 0, 1) + w_{ijk}(1, 0, 0) - w_{ijk}(0, 0, 0) - w_{ijk}(1, 0, 1) \\
+    p_{12} &= w_{ijk}(0, 1, 0) + w_{ijk}(1, 0, 0) - w_{ijk}(0, 0, 0) - w_{ijk}(1, 1, 0) .
+\end{align}
+</math>
+
+If <math>p < 0</math> the construction is similarly, but the variables will have opposite value. If the function is regular, then all its projections of two variables will be submodular, implying that <math>p_{23}</math>, <math>p_{31}</math> and <math>p_{12}</math> are positive and then all terms in the new representation are submodular.
+
+In this decomposition, the constant, unary and binary terms can be represented as shown in the previous sections. If <math>p > 0</math> the ternary term can be represented with a graph with four edges <math>v_i \rightarrow v_{ijk}</math>, <math>v_j \rightarrow v_{ijk}</math>, <math>v_k \rightarrow v_{ijk}</math>, <math>v_{ijk} \rightarrow t</math>, all with weight <math>p</math>, while if <math>p < 0</math> the term can be represented by four edges <math>v_{ijk} \rightarrow v_i</math>, <math>v_{ijk} \rightarrow v_j</math>, <math>v_{ijk} \rightarrow v_k</math>, <math>s \rightarrow v_{ijk}</math> with weight <math>-p</math>.<ref name="what" />
+
+== Minimum cut ==
+
+After building a graph representing a pseudo-Boolean function, it is possible to compute a minimum cut using one among the various algorithms developed for flow networks, such as [[Ford–Fulkerson algorithm|Ford–Fulkerson]], [[Edmonds–Karp algorithm|Edmonds–Karp]], and [[Boykov–Kolmogorov algorithm]]. The result is a partition of the graph in two connected components <math>S</math> and <math>T</math> such that <math>s \in S</math> and <math>t \in T</math>, and the function attains its global minimum when <math>x_i = 0</math> for each <math>i</math> such that the corresponding node <math>v_i \in
+S</math>, and <math>x_i = 1</math> for each <math>i</math> such that the corresponding node <math>v_i \in T</math>.
+
+Max-flow algorithms such as Boykov&ndash;Kolmogorov's are very efficient in practice for sequential computation, but they are difficult to parallelise, making them not suitable for [[distributed computing]] applications and preventing them from exploiting the potential of modern [[Central Processing Unit|CPU]]s. Parallel max-flow algorithms were developed, such as [[Push–relabel maximum flow algorithm|push-relabel]]<ref name="goldberg" /> and [[jump-flood algorithm|jump-flood]],<ref name="peng" /> that can also take advantage of hardware acceleration in [[GPGPU]] implementations.<ref name="cudacuts" /><ref name="peng" /><ref name="stich" />
+
+== Functions of discrete variables with more than two values ==
+
+The previous construction allows global optimization of pseudo-Boolean functions only, but it can be extended to quadratic functions of discrete variables with a finite number of values, in the form
+
+:<math>f(\mathbf{x}) = \sum_{i \in V} D(x_i) + \sum_{(i, j) \in E} S(x_i, x_j)</math>
+
+where <math>E \subseteq V \times V</math> and <math>x_i \in \Lambda = \{1, \dots, k\}</math>. The function <math>D(x_i)</math> represents the unary contribution of each variable (often referred as ''data term''), while the function <math>S(x_i, x_j)</math> represents binary interactions between variables (''smoothness term''). In the general case, optimization of such functions is a [[NP-hard]] problem, and [[stochastic optimization]] methods such as [[simulated annealing]] are sensitive to [[local minima]] and in practice they can generate arbitrarily sub-optimal results.<ref name="annealing" group="note" /> With graph cuts it is possible to construct move-making algorithms that allow to reach in polynomial time a local minima with strong optimality properties for a wide family of quadratic functions of practical interest (when the binary interaction <math>S(x_i, x_j)</math> is a [[metric (mathematics)|metric]] or a [[semimetric]]), such that the value of the function in the solution lies within a constant and known factor from the global optimum.<ref name="fast" />
+
+Given a function <math>f: \Lambda^n \to \mathbb{R}</math> with <math>\Lambda = \{1, \dots, k\}</math>, and a certain assignment of values <math>\mathbf{x} = (x_1, \dots, x_n) \in \Lambda^n</math> to the variables, it is possible to associate each assignment <math>\mathbf{x}</math> to a partition <math>P = \{P_l | l \in \Lambda \}</math> of the set of variables, such that, <math>P_l = \{ x_i | x_i = l \in \Lambda \}</math>. Give two distinct assignments <math>P</math> and <math>P'</math> and a value <math>\alpha \in \Lambda</math>, a move that transforms <math>P</math> into <math>P'</math> is said to be an <math>\alpha</math>-expansion if <math>P_\alpha \subset P'_\alpha</math> and <math>P'_l \subset P_l \; \forall l \in \Lambda - \{ \alpha \}</math>. Given a couple of values <math>\alpha</math> and <math>\beta</math>, a move is said to be an <math>\alpha\beta</math>-swap if <math>P_l = P'_l \; \forall l \in \Lambda - \{ \alpha, \beta \}</math>. Intuitively, an <math>\alpha</math>-expansion move from <math>\mathbf{x}</math> assigns the value of <math>\alpha</math> to some variables that have a different value in <math>\mathbf{x}</math>, while an <math>\alpha\beta</math>-swap move assigns <math>\alpha</math> to some variables that have value <math>\beta</math> in <math>\mathbf{x}</math> and vice versa.
+
+For each iteration, the <math>\alpha</math>-expansion algorithm computes, for each possible value <math>\alpha</math>, the minimum of the function among all assignments <math>\Alpha(\mathbf{x})</math> that can be reached with a single <math>\alpha</math>-expansion move from the current temporary solution <math>\mathbf{x}</math>, and takes it as the new temporary solution.
+
+ <math>\mathbf{x} := \text{arbitrary value in } \Lambda^n</math>
+ <math>\text{exit} := 0</math>
+ '''while''' <math>\text{exit} \ne 1</math>:
+     <math>\text{exit} = 1</math>
+     '''foreach''' <math>\alpha \in \Lambda</math>:
+         <math>\mathbf{\hat{x}} := \arg \min_{\mathbf{y} \in \Alpha(\mathbf{x})} f(\mathbf{y})</math>
+         '''if''' <math>f(\mathbf{\hat{x}}) < \mathbf{x}</math>:
+             <math>\mathbf{x} = \mathbf{\hat{x}}</math>
+             <math>\text{exit} := 0</math>
+
+The <math>\alpha\beta</math>-swap algorithm is similar, but it searches for the minimum among all assignments <math>\Alpha\Beta(\mathbf{x})</math> reachable with a single <math>\alpha\beta</math>-swap move from <math>\mathbf{x}</math>.
+
+ <math>\mathbf{x} := \text{arbitrary value in } \Lambda^n</math>
+ <math>\text{exit} := 0</math>
+ '''while''' <math>\text{exit} \ne 1</math>:
+     <math>\text{exit} = 1</math>
+     '''foreach''' <math>(\alpha, \beta) \in \Lambda^2</math>:
+         <math>\mathbf{\hat{x}} := \arg \min_{\mathbf{y} \in \Alpha\Beta(\mathbf{x})} f(\mathbf{y})</math>
+         '''if''' <math>f(\mathbf{\hat{x}}) < \mathbf{x}</math>:
+             <math>\mathbf{x} = \mathbf{\hat{x}}</math>
+             <math>\text{exit} := 0</math>
+
+In both cases, the optimization problem in the innermost loop can be solved exactly and efficiently with a graph cut. Both algorithms terminate certainly in a finite number of iterations of the outer loop, and in practice such number is small, with most of the improvement happening at the first iteration. The algorithms can generate different solutions depending on the initial guess, but in practice they are robust with respect to initialisation, and starting with a point where all variables are assigned to the same random value is usually sufficient to produce good quality results.<ref name="fast" />
+
+The solution generated by such algorithms is not necessarily a global optimum, but it has strong guarantees of optimality. If <math>S(x_i, x_j)</math> is a [[metric (mathematics)|metric]] and <math>\mathbf{x}</math> is a solution generated by the <math>\alpha</math>-expansion algorithm, or if <math>S(x_i, x_j)</math> is a [[semimetric]] and <math>\mathbf{x}</math> is a solution generated by the <math>\alpha\beta</math>-swap algorithm, then <math>f(\mathbf{x})</math> lies within a known and constant factor from the global minimum <math>f(\mathbf{x}^*)</math>:<ref name="fast" />
+
+:<math>f(\mathbf{x}) \le 2 \frac{ \max_{\alpha \ne \beta \in \Lambda} S(\alpha, \beta) }{ \min_{\alpha \ne \beta \in \Lambda} S(\alpha, \beta) } f(\mathbf{x}^*) . </math>
+
+== Non-submodular functions ==
+{{see also|Quadratic pseudo-Boolean optimization}}
+
+Generally speaking, the problem of optimizing a non-submodular pseudo-Boolean function is [[NP-hard]] and cannot be solved in polynomial time with a simple graph cut. The simplest approach is to approximate the function with a similar but submodular one, for instance truncating all non-submodular terms or replacing them with similar submodular expressions. Such approach is generally sub-optimal, and it produces acceptable results only if the number of non-submodular terms is relatively small.<ref name="review" />
+
+In case of quadratic non-submodular functions, it is possible to compute in polynomial time a partial solution using algorithms such as [[QPBO]].<ref name="review" /> Higher-order functions can be reduced in polynomial time to a quadratic form that can be optimised with QPBO.<ref name="elc" />
+
+== Higher-order functions ==
+
+Quadratic functions are extensively studied and were characterised in detail, but more general results were derived also for higher-order functions. While quadratic functions can indeed model many problems of practical interest, they are limited by the fact they can represent only binary interactions between variables. The possibility to capture higher-order interactions allows to better capture the nature of the problem and it can provide higher quality results that could be difficult to achieve with quadratic models. For instance in [[computer vision]] applications, where each variable represents a [[pixel]] or [[voxel]] of the image, higher-order interactions can be used to model texture information, that would be difficult to capture using only quadratic functions.<ref name="p3" />
+
+Sufficient conditions analogous to submodularity were developed to characterise higher-order pseudo-Boolean functions that can be optimised in polynomial time,<ref name="freedman" /> and there exists algorithms analogous to <math>\alpha</math>-expansion and <math>\alpha\beta</math>-swap for some families of higher-order functions.<ref name="p3" /> The problem is NP-hard in the general case, and approximate methods were developed for fast optimization of functions that do not satisfy such conditions.<ref name="freedman" /><ref name="kohli" />
+
+== References ==
+<references>
+<ref name="cudacuts">Vineet and Narayanan (2008).</ref>
+<ref name="elc">Ishikawa (2014).</ref>
+<ref name="fast">Boykov et al. (2001).</ref>
+<ref name="freedman">Freedman & Drineas (2005).</ref>
+<ref name="goldberg">Goldberg & Tarjan (1988).</ref>
+<ref name="grabcut">Rother et al. (2012).</ref>
+<ref name="hong">Hong and Chen (2004).</ref>
+<ref name="kim">Kim et al. (2003).</ref>
+<ref name="kohli">Kohli et al. (2008).</ref>
+<ref name="lombaert">Lombaert and Cheriet (2012).</ref>
+<ref name="p3">Kohli et al. (2009).</ref>
+<ref name="peng">Peng et al. (2015).</ref>
+<ref name="review">Kolmogorov and Rother (2007).</ref>
+<ref name="so">So et al. (2011).</ref>
+<ref name="stich">Stich (2009).</ref>
+<ref name="tang">Tang and Chung (2007).</ref>
+<ref name="what">Kolmogorov and Zabin (2004).</ref>
+</references>
+
+* {{cite journal|title=Fast approximate energy minimization via graph cuts|year=2001|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=23|issue=11|last1=Boykov|first1=Yuri|last2=Veksler|first2=Olga|last3=Zabih|first3=Ramin|pages=1222–1239|doi=10.1109/34.969114|citeseerx=10.1.1.439.2071}}
+* {{cite conference|title=Energy minimization via graph cuts: Settling what is possible|conference=IEEE Computer Society Conference on Computer Vision and Pattern Recognition|year=2005|volume=2|last1=Freedman|first1=Daniel|last2=Drineas|first2=Petros|pages=939–946|url=http://www.vision.cs.rpi.edu/publications/pdfs/freedman_cvpr05-cuts.pdf}}
+* {{cite journal|title=A new approach to the maximum–flow problem|year=1988|journal=Journal of the ACM|volume=35|pages=921–940|issue=4|last1=Goldberg|first1=Andrew V|last2=Tarjan|first2=Robert E|url=http://akira.ruc.dk/~keld/teaching/algoritmedesign_f03/Artikler/08/Goldberg88.pdf|doi=10.1145/48014.61051|s2cid=52152408}}
+* {{cite conference|first=Hiroshi|last=Ishikawa|title=Higher–Order Clique Reduction Without Auxiliary Variables|conference=IEEE Conference on Computer Vision and Pattern Recognition|year=2014|publisher=IEEE|pages=1362–1369|url=https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Ishikawa_Higher-Order_Clique_Reduction_2014_CVPR_paper.pdf}}
+* {{cite conference|title=Segment-based stereo matching using graph cuts|conference=Proceedings of the 2004 IEEE Computer Society Conference on Computer Vision and Pattern Recognition|year=2004|volume=1|last1=Hong|first1=Li|last2=Chen|first2=George|pages=74–81|url=http://vc.cs.nthu.edu.tw/home/paper/codfiles/qyliu/201211290607/Segment-based%20Stereo%20Matching%20Using%20Graph%20Cuts.pdf}}
+* {{cite journal|first1=Pushmeet|last1=Kohli|first2=M. Pawan|last2=Kumar|first3=Philip H.S.|last3=Torr|title=P<sup>3</sup> & Beyond: Move Making Algorithms for Solving Higher Order Functions|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=31|number=9|year=2009|pages=1645–1656|url=http://www.robots.ox.ac.uk/~phst/Papers/2008/P3%20Journal/p3_pami.pdf|doi=10.1109/tpami.2008.217|pmid=19574624|s2cid=91470}}
+* {{cite conference|title=Visual correspondence using energy minimization and mutual information|conference=Proceedings of the Ninth IEEE International Conference on Computer Vision|year=2003|last1=Kim|first1=Junhwan|last2=Kolmogorov|first2=Vladimir|last3=Zabih|first3=Ramin|pages=1033–1040|url=http://www.academia.edu/download/30739536/1033_kim.pdf}}{{dead link|date=July 2022|bot=medic}}{{cbignore|bot=medic}}
+* {{cite techreport|title=Graph cuts for minimizing robust higher order potentials|year=2008|institution=Oxford Brookes University|last1=Kohli|first1=Pushmeet|last2=Ladicky|first2=Lubor|last3=Torr|first3=PHS|pages=1–9|url=https://www.researchgate.net/profile/Pushmeet_Kohli/publication/228338783_Graph_cuts_for_minimizing_robust_higher_order_potentials/links/544a74be0cf2f10303a41de2/Graph-cuts-for-minimizing-robust-higher-order-potentials.pdf}}
+* {{cite journal|first1=Vladimir|last1=Kolmogorov|first2=Carsten|last2=Rother|title=Minimizing Nonsubmodular Functions: A Review|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=29|number=7|year=2007|pages=1274–1279|doi=10.1109/tpami.2007.1031|pmid=17496384|s2cid=15319364}}
+* {{cite journal|first1=Vladimir|last1=Kolmogorov|first2=Ramin|last2=Zabin|title=What energy functions can be minimized via graph cuts?|journal=IEEE Transactions on Pattern Analysis and Machine Intelligence|volume=26|number=2|year=2004|pages=1645–1656|url=https://ecommons.cornell.edu/bitstream/handle/1813/5842/2001-1857.pdf?sequence=1|doi=10.1109/TPAMI.2004.1262177|pmid=15376891|hdl=1813/5842|hdl-access=free}}
+* {{cite conference|title=Simultaneous image de-noising and registration using graph cuts: Application to corrupted medical images|conference=11th International Conference on Information Science, Signal Processing and their Applications|year=2012|last1=Lombaert|first1=Herve|last2=Cheriet|first2=Farida|pages=264–268|url=http://cim.mcgill.ca/~lombaert/graphcuts-denoising-registration.pdf}}
+* {{cite journal|title=JF-Cut: a parallel graph cut approach for large-scale image and video|year=2015|journal=IEEE Transactions on Image Processing|volume=24|pages=655–666|issue=2|last1=Peng|first1=Yi|last2=Chen|first2=Li|last3=Ou-Yang|first3=Fang-Xin|last4=Chen|first4=Wei|last5=Yong|first5=Jun-Hai|bibcode=2015ITIP...24..655P|doi=10.1109/TIP.2014.2378060|pmid=25494510|s2cid=1665580}}
+* {{cite conference|title=Grabcut: Interactive foreground extraction using iterated graph cuts|conference=ACM transactions on graphics|year=2004|volume=23|last1=Rother|first1=Carsten|last2=Kolmogorov|first2=Vladimir|last3=Blake|first3=Andrew|pages=309–314|url=http://pages.cs.wisc.edu/~dyer/cs534-fall11/papers/grabcut-rother.pdf}}
+* {{cite journal|title=Non-rigid image registration of brain magnetic resonance images using graph-cuts|year=2011|journal=Pattern Recognition|volume=44|issue=10–11|last1=So|first1=Ronald WK|last2=Tang|first2=Tommy WH|last3=Chung|first3=Albert CS|pages=2450–2467|doi=10.1016/j.patcog.2011.04.008}}
+* {{cite conference|title=Graph Cuts with CUDA|first1=Timo|last1=Stich|conference=GPU Technology Conference|year=2009|url=https://www.nvidia.com/content/gtc/documents/1060_gtc09.pdf}}
+* {{cite conference|title=Non-rigid image registration using graph-cuts|conference=International Conference on Medical Image Computing and Computer-Assisted Intervention|year=2007|last1=Tang|first1=Tommy WH|last2=Chung|first2=Albert CS|pages=916–924|url=https://link.springer.com/content/pdf/10.1007/978-3-540-75757-3_111.pdf|doi=10.1007/978-3-540-75757-3_111|doi-access=free}}
+* {{cite conference|title=CUDA cuts: Fast graph cuts on the GPU|conference=IEEE Computer Society Conference on Computer Vision and Pattern Recognition Workshops|year=2008|last1=Vineet|first1=Vibhav|last2=Narayanan|first2=PJ|pages=1–8|url=http://web2py.iiit.ac.in/publications/default/download/inproceedings.pdf.ac87b6f5-826a-41d1-91cf-b19f2574ac66.pdf}}
+
+== Notes ==
+<references group="note">
+<ref name="annealing">Algorithms such as [[simulated annealing]] have strong theoretical convergence properties for some scheduling of the temperature to infinity. Such scheduling cannot be realised in practice.</ref>
+<ref name="fn auxiliary node">Adding one node is necessary, graphs without auxiliary nodes can only represent binary interactions between variables.</ref>
+</references>
+
+== External links ==
+*[http://pub.ist.ac.at/~vnk/software.html Implementation (C++) of several graph cut algorithms] by Vladimir Kolmogorov.
+*[https://github.com/nsubtil/gco-v3.0 GCO], graph cut optimization library by Olga Veksler and Andrew Delong.
+
+{{DEFAULTSORT:Graph cut optimization}}
+[[Category:Combinatorial optimization]]
+[[Category:Computer vision]]
+[[Category:Computational problems in graph theory]]

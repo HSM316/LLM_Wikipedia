@@ -1,0 +1,70 @@
+{{short description|Wikipedia list article}}
+{{Artificial intelligence}}
+[[Artificial intelligence]] researchers have developed several specialized '''programming languages for artificial intelligence''':
+
+== Languages ==
+* [[AIML]] (meaning "Artificial Intelligence Markup Language")<ref name="AIML_Repository">according to (the intro page to) the [http://nlp-addiction.com/chatbot/aiml/ AIML Repository] {{Webarchive|url=https://web.archive.org/web/20150414030045/http://nlp-addiction.com/chatbot/aiml/ |date=2015-04-14 }} at nlp-addiction.com</ref> is an [[XML]] dialect<ref name="alicebot.org_aiml">See the [http://www.alicebot.org/aiml.html AIML "Intro" (web) page] {{Webarchive|url=https://web.archive.org/web/20131029205936/http://www.alicebot.org/aiml.html |date=2013-10-29 }} at www.alicebot.org</ref> for use with [[Artificial Linguistic Internet Computer Entity|A.L.I.C.E.]]-type [[chatterbot]]s. 
+* [[Information Processing Language|IPL]]<ref>
+{{Harvnb|Crevier|1993|pp=46–48}}
+</ref> was the first language developed for artificial intelligence. It includes features intended to support programs that could perform general problem solving, such as lists, associations, schemas (frames), dynamic memory allocation, data types, recursion, associative retrieval, functions as arguments, generators (streams), and cooperative multitasking.
+* [[Lisp (programming language)|Lisp]]<ref>
+[[Lisp (programming language)|Lisp]]:
+* {{Harvnb|Luger|Stubblefield|2004|pp=723–821}}
+* {{Harvnb|Crevier|1993|pp=59–62}},
+* {{Harvnb|Russell|Norvig|2003|p=18}}
+</ref> is a practical mathematical notation for computer programs based on [[lambda calculus]]. [[Linked list]]s are one of the Lisp language's major [[data structure]]s, and Lisp [[source code]] is itself made up of lists. As a result, Lisp programs can manipulate source code as a data structure, giving rise to the [[Macro (computer science)|macro]] systems that allow programmers to create new syntax or even new [[domain-specific language|domain-specific programming language]]s embedded in Lisp. There are many dialects of Lisp in use today, among which are [[Common Lisp]], [[Scheme (programming language)|Scheme]], and [[Clojure]].
+* [[Smalltalk]] has been used extensively for simulations, neural networks, machine learning and genetic algorithms. It implements the purest and most elegant form of object-oriented programming using message passing.
+* [[Prolog]]<ref>
+History of logic programming:
+* {{Harvnb|Crevier|1993|pp=190–196}}.
+</ref><ref>
+[[Prolog]]:
+* {{Harvnb|Poole|Mackworth|Goebel|1998|pp=477–491}},
+* {{Harvnb|Luger|Stubblefield|2004|pp=641–676, 575–581}}
+</ref> is a [[declarative programming|declarative]] language where programs are expressed in terms of relations, and execution occurs by running ''queries'' over these relations. Prolog is particularly useful for symbolic reasoning, database and language parsing applications. Prolog is widely used in AI today.
+* [[Stanford Research Institute Problem Solver|STRIPS]] is a language for expressing [[automated planning and scheduling|automated planning problem instance]]s. It expresses an initial state, the goal states, and a set of actions. For each action preconditions (what must be established before the action is performed) and postconditions (what is established after the action is performed) are specified.
+* [[Planner (programming language)|Planner]] is a hybrid between procedural and logical languages. It gives a procedural interpretation to logical sentences where implications are interpreted with pattern-directed inference.
+* [[POP-11]] is a [[Reflection (computer science)|reflective]], [[dynamic compilation|incrementally compiled]] [[programming language]] with many of the features of an [[interpreted language]]. It is the core language of the [[Poplog]] [[Computer programming|programming]] [[system platform|environment]] developed originally by the [[University of Sussex]], and recently in the [http://www.cs.bham.ac.uk/ School of Computer Science] at the [[University of Birmingham]] which hosts [http://www.cs.bham.ac.uk/research/projects/poplog/freepoplog.html the Poplog website], It is often used to introduce symbolic programming techniques to programmers of more conventional languages like [[Pascal programming language|Pascal]], who find POP syntax more familiar than that of [[Lisp programming language|Lisp]]. One of POP-11's features is that it supports [[first-class function]]s.
+*[[R (programming language)|R]] is widely used in new-style artificial intelligence, involving statistical computations, numerical analysis, the use of Bayesian inference, neural networks and in general [[Machine Learning]]. In domains like finance, biology, sociology or medicine it is considered as one of the main standard languages. It offers several paradigms of programming like vectorial computation, functional programming and object-oriented programming. It supports deep learning libraries like [[MXNet]], [[Keras]] or [[TensorFlow]]. 
+* [[Python (programming language)|Python]] is widely used for artificial intelligence, with packages for several applications including General AI, [[Machine Learning]], [[Natural Language Processing]] and [[Neural Network]]s.<ref>[https://wiki.python.org/moin/PythonForArtificialIntelligence Python For Artificial Intelligence] {{webarchive|url=https://web.archive.org/web/20121101045354/http://wiki.python.org/moin/PythonForArtificialIntelligence |date=2012-11-01 }} Python Wiki 2015</ref>
+* [[Haskell (programming language)|Haskell]] is also a very good programming language for AI. Lazy evaluation and the list and LogicT [[Monad (functional programming)|monads]] make it easy to express non-deterministic algorithms, which is often the case. Infinite data structures are great for search trees. The language's features enable a compositional way of expressing the algorithms. The only drawback is that working with graphs is a bit harder at first because of purity.
+* [[Wolfram Language]] includes a wide range of integrated machine learning capabilities, from highly automated functions like Predict and Classify to functions based on specific methods and diagnostics. The functions work on many types of data, including numerical, categorical, time series, textual, and image.<ref name="Wolfram Language">[http://reference.wolfram.com/language/guide/MachineLearning.html Wolfram Language]</ref>
+* [[C++]] (2011 onwards)
+* [[MATLAB]]
+* [[Perl]]
+* [[Julia (programming language)]], e.g. for machine learning, using native or non-native libraries.
+
+== See also ==
+* [[Glossary of artificial intelligence]]
+* [[List of constraint programming languages]]
+* [[List of computer algebra systems]]
+* [[List of logic programming languages]]
+* [[List of knowledge representation languages]]
+* [[Fifth-generation programming language]]
+
+== Notes ==
+{{reflist}}
+
+== References ==
+{{refbegin}}
+
+=== Major AI textbooks ===
+:''See also the [[Talk:Artificial intelligence/Textbook survey|AI textbook survey]]''
+* {{Citation | first=George | last=Luger | author-link=George Luger | first2=William | last2=Stubblefield | author2-link=William Stubblefield | year=2004 | title=Artificial Intelligence: Structures and Strategies for Complex Problem Solving | edition=5th | publisher=The Benjamin/Cummings Publishing Company, Inc. | isbn=0-8053-4780-1 | url=https://archive.org/details/artificialintell0000luge | url-access=registration }}
+* {{Citation
+| last=Nilsson | first=Nils | author-link=Nils Nilsson (researcher)
+| year=1998 
+| title=Artificial Intelligence: A New Synthesis|publisher=Morgan Kaufmann Publishers
+| isbn=978-1-55860-467-4}}
+* {{Russell Norvig 2003}}
+* {{Citation | first = David | last = Poole | author-link = David Poole (researcher) | first2 = Alan | last2 = Mackworth | author2-link = Alan Mackworth | first3 = Randy | last3 = Goebel | author3-link = Randy Goebel | publisher = Oxford University Press | place = New York | year = 1998 | title = Computational Intelligence: A Logical Approach | url = https://archive.org/details/computationalint00pool | isbn = 0-19-510270-3 }}
+* {{Citation | first = Patrick Henry | last = Winston | author-link = Patrick Winston | publisher = Addison-Wesley | year = 1984 | place = Reading, Massachusetts | isbn = 0-201-08259-4 | title = Artificial Intelligence | url = https://archive.org/details/artificialintell00wins }}
+
+=== History of AI ===
+* {{Crevier 1993}}
+* {{McCorduck 2004}}
+
+{{refend}}
+
+[[Category:Lists of programming languages|Artificial intelligence]]
+[[Category:Artificial intelligence|*]]

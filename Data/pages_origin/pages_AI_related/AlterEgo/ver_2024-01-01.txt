@@ -1,0 +1,34 @@
+{{About|The AlterEgo Silent Speech Device [[MIT Media Lab]]}}
+{{COI|date=April 2018}}
+
+{{Use mdy dates|date=April 2018}}
+
+'''AlterEgo''' is a wearable silent speech output-input device developed by [[MIT Media Lab]].<ref name=Futurism>{{cite web|url=https://futurism.com/alterego-talk-computer-without-words/ |title=This Crazy Gadget Helps You "Talk" To Your Computer Without Words|last1=Ossola|first1=Alexandra|date=April 5, 2018|work=Futurism|accessdate=April 5, 2018}}</ref> The device is attached around the head, neck, and jawline and translates your brain speech center impulse input into words on a computer, without vocalization.
+
+==Description==
+The device consists of 7 small electrodes that attach at various points around the jaw-line and mouth to receive the electrical inputs to the muscles used for speech. It looks similar to a sling for the head, neck and jaw.
+
+==Background==
+Scientists Arnav Kapur of Fluid Interfaces group at MIT Media Lab with Shreyas Kapur and [[Pattie Maes]] designed the prototype and presented the work at the Conference on Intelligent User Interfaces in March 2018, in [[Tokyo]]. They reported that, when testing the accuracy of a classifier trained on data where users were instructed to "read the number to themselves, without producing a sound and moving their lips," they were able to classify the digit (between 0 and 9, i.e., ten classes), with 92 percent accuracy rate.<ref>[https://dam-prod.media.mit.edu/x/2018/03/23/p43-kapur_BRjFwE6.pdf AlterEgo: A Personalized Wearable Silent Speech Interface]</ref>
+
+==See Also==
+*[[Silent speech interface]] 
+*[[Imagined speech]] / [[Subvocalization]]
+
+==External links==
+* [https://www.media.mit.edu/projects/alterego/overview/ MIT Alterego overview]
+* [https://news.mit.edu/2018/computer-system-transcribes-words-users-speak-silently-0404 MIT news]
+* [http://iui.acm.org/2018/ International Conference on Intelligent User Interfaces]
+* [http://fluid.media.mit.edu/vision Fluid Interfaces group]
+* [https://www.technologyreview.com/2018/06/27/141936/transcribing-the-voice-in-your-head/ Transcribing the Voice in Your Head]
+
+==References==
+{{Reflist}}
+{{refbegin|colwidth=39em}}
+{{refend}}
+
+[[Category:Artificial neural networks]]
+[[Category:Internet of things]]
+[[Category:Wearable devices]]
+[[Category:Wearable computers]]
+[[Category:Augmentative and alternative communication]]

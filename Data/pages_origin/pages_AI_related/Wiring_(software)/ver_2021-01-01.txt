@@ -1,0 +1,128 @@
+{{Infobox software
+| name                   = Wiring
+| logo                   = 
+| developer              = [[Hernando Barragán]], [[Brett Hagman]], and [[Alexander Brevig]]
+| latest release version = 1.0 (0101)
+| latest release date    = {{Start date and age|2014|10|28|df=yes}}<ref>{{cite web |url= http://wiring.org.co/download/ |title= Download Wiring |publisher= Wiring.org.co |accessdate= 24 April 2019}}</ref>
+| operating system       = 
+| genre                  = [[Software framework]], [[integrated development environment]]
+| license                = [[GNU Lesser General Public License|LGPL]] or [[GNU General Public License|GPL]] license
+| website                = {{URL|wiring.org.co}}
+}}
+
+'''Wiring''' is an [[open-source software|open-source]] electronics prototyping platform composed of a [[programming language]], an [[integrated development environment]] (IDE), and a [[single-board microcontroller]]. It was developed starting in 2003 by [[Hernando Barragán]].
+
+Barragán started the project at the [[Interaction Design Institute Ivrea]]. The project is currently developed at the School of Architecture and Design at the [[University of the Andes, Colombia|Universidad de Los Andes]] in Bogotá, Colombia.
+
+Wiring builds on [[Processing (programming language)|Processing]], an open project initiated by [[Casey Reas]] and [[Benjamin Fry]], both formerly of the Aesthetics and Computation Group at the [[MIT Media Lab]].
+
+Project experts, intermediate developers, and beginners from around the world share ideas, knowledge and their collective experience as a project community. Wiring makes it easy to create software for controlling devices attached to the electronics board to create various interactive devices. The concept of developing is to write a few lines of code, connect a few electronic components to the Wiring hardware and observe, for example, that a motion sensor controls a light when a person approaches it, write a few more lines, add another sensor, and see how this light changes when the illumination level in a room decreases. This process is called sketching with hardware; explore ideas quickly, select the more interesting ones, refine and produce prototypes in an iterative process.
+
+==Software==
+The Wiring IDE is a [[cross-platform]] application written in [[Java (programming language)|Java]] which is derived from the IDE made for the [[Processing (programming language)|Processing]] programming language. It is designed to introduce programming and sketching with electronics to artists and designers.  It includes a code editor with features such as [[syntax highlighting]], [[brace matching]], and automatic indentation capable of compiling and uploading programs to the board with a single click.
+
+The Wiring IDE includes a [[C (programming language)|C]]/[[C++]] library called "Wiring", which makes common input/output operations much easier.  Wiring programs are written in C++.  A minimal program requires only two functions:
+*{{code|setup()}}: a function run once at the start of a program which can be used to define initial environment settings.
+*{{code|loop()}}: a function called repeatedly until the board is powered off or reset.
+
+A typical first program for a developer using a microcontroller is to blink a [[light-emitting diode]] (LED) on and off. In the Wiring environment, the user might write a program like this:
+
+<syntaxhighlight lang="arduino">
+int ledPin = WLED;               // a name for the on-board LED
+
+void setup () {
+   pinMode(ledPin, OUTPUT);      // configure the pin for digital output
+}
+
+void loop () {
+   digitalWrite(ledPin, HIGH);   // turn on the LED
+   delay (1000);                 // wait one second (1000 milliseconds)
+   digitalWrite(ledPin, LOW);    // turn off the LED
+   delay (1000);                 // wait one second
+}
+</syntaxhighlight>
+
+When the user clicks the "Upload to Wiring hardware" button in the IDE, a copy of the code is written to a temporary file including a standard header file at the file beginning, and a simple [[main function]] appended.
+
+The Wiring IDE uses the [[GNU toolchain]] and [[AVR Libc]] to compile programs, and uses [[avrdude]] to upload programs to the board.
+
+==Open-source hardware and software==
+The Wiring hardware reference designs are distributed under a [[Creative Commons]] Attribution Share-Alike 2.5 license and are available on the Wiring Web site. Layout and production files for the Wiring hardware are also available. The source code for the IDE and the hardware library are available and released under the [[GPLv2]]
+
+==Related projects==
+===Processing===
+Wiring was based on the original work done on [[Processing (programming language)|Processing]] project in MIT.
+
+===Arduino and Fritzing===
+Wiring and Processing have spawned another project, [[Arduino]], which uses the Processing IDE, with a simplified version of the C++ language, as a way to teach artists and designers how to program [[microcontroller]]s. There are now two separate hardware projects, Wiring and Arduino, using the Wiring environment and language.
+
+[[Fritzing]] is another software environment within this family, which supports designers and artists to document their interactive prototypes and to take the step from physical prototyping to actual product.
+
+== See also ==
+{{Portal|Free and open-source software}}
+* [[BASIC Stamp]]
+* [[Gumstix]]
+* [[Make Controller Kit]]
+* [[OOPic]]
+* [[PICAXE]]
+* [[Rabbit Semiconductor]]
+* [[Tinkerforge]]
+
+== Sources ==
+{{Refbegin}}
+*{{citation
+| first1 = Casey
+| last1 = Reas
+| first2 = Ben
+| last2 = Fry
+| first3 = John
+| last3 = Maeda
+| title = Processing: A Programming Handbook for Visual Designers and Artists
+| date = September 30, 2007
+| edition = 1st
+| publisher = The MIT Press
+| pages = 736
+| isbn = 0-262-18262-9
+| url = http://mitpress.mit.edu/catalog/item/default.asp?ttype=2&tid=11251
+}}
+*{{Cite book
+| first1    = Tom
+| last1     = Igoe
+| date      = September 28, 2007
+| title     = Making Things Talk: Practical Methods for Connecting Physical Objects
+| edition   = 1st
+| publisher = [[O'Reilly Media]]
+| pages     = 432
+| isbn      = 0-596-51051-9
+| url       = http://oreilly.com/catalog/9780596510510/
+}}
+*{{Cite book
+| first1    = Joshua
+| last1     = Noble
+| date      = July 15, 2009
+| title     = Programming Interactivity: A Designer's Guide to Processing, Arduino, and openFramework
+| edition   = 1st
+| publisher = [[O'Reilly Media]]
+| pages     = 768
+| isbn      = 0-596-15414-3
+| url       = http://oreilly.com/catalog/9780596800581/
+}}
+{{Refend}}
+{{reflist}}
+
+==External links==
+*{{official website}}
+*[http://www.processing.org/ Processing.org]
+*[http://www.arduino.cc/ Arduino]
+*[http://www.fritzing.org/ Fritzing]
+
+{{Ambient intelligence}}
+
+[[Category:Internet of things]]
+[[Category:Microcontroller software]]
+[[Category:Object-oriented programming languages]]
+[[Category:Cross-platform software]]
+[[Category:Educational programming languages]]
+[[Category:Free computer libraries]]
+[[Category:Open-source hardware]]
+[[Category:Open hardware electronic devices]]

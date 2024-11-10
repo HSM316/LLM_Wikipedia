@@ -1,0 +1,17 @@
+Distributed R is an open source, high-performance platform for the R language. It splits tasks between multiple processing nodes to reduce execution time and analyze large data sets. Distributed R enhances R by adding distributed data structures, parallelism primitives to run functions on distributed data, a task scheduler, and multiple data loaders. It is mostly used to implement distributed versions of machine learning tasks. Distributed R is written in C++ and R, and retains the familiar look and feel of R. , Hewlett-Packard (HP) provides enterprise support for Distributed R with proprietary additions such as a fast data loader from the Vertica database.
+
+History
+Distributed R was begun in 2011 by Indrajit Roy, Shivaram Venkataraman, Alvin AuYoung, and Robert S. Schreiber as a research project at HP Labs. It was open sourced in 2014 under the GPLv2 license and is available at GitHub.
+
+In February 2015, Distributed R reached its first stable version 1.0, along with enterprise support from HP.
+
+Components
+Distributed R is a platform to implement and execute distributed applications in R. The goal is to extend R for distributed computing, while retaining the simplicity and look-and-feel of R. Distributed R consists of the following components:
+
+ Distributed data structures: Distributed R extends R's common data structures such as array, data.frame, and list to store data across multiple nodes. The corresponding Distributed R data structures are darray, dframe, and dlist. Many of the common data structure operations in R, such as colSums, rowSums, nrow and others, are also available on distributed data structures.
+ Parallel loop: Programmers can use the parallel loop, called foreach, to manipulate distributed data structures and execute tasks in parallel. Programmers only specify the data structure and function to express applications, while the runtime schedules tasks and, if required, moves around data.
+ Distributed algorithms: Distributed versions of common machine learning and graph algorithms, such as clustering, classification, and regression.
+ Data loaders: Users can leverage Distributed R constructs to implement parallel connectors that load data from different sources. Distributed R already provides implementations to load data from files and databases to distributed data structures.
+
+Integration with databases
+HP Vertica provides tight integration with their database and the open source Distributed R platform. HP Vertica 7.1 includes features that enable fast, parallel loading from the Vertica database to Distribute R. This parallel Vertica loader can be more than five times (5x) faster than using traditional ODBC based connectors. The Vertica database also supports deployment of machine learning models in the database. Distributed R users can call the distributed algorithms to create machine learning models, deploy them in the Vertica database, and use the model for in-database scoring and predictions. Architectural details of the Vertica database and Distributed R integration are described in the Sigmod 2015 paper.

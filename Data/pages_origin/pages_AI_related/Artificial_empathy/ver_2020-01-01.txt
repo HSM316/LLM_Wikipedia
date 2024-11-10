@@ -1,0 +1,59 @@
+'''Artificial empathy''' ('''AE''') is the development of AI systems − such as companion robots − that are able to [[emotion detection|detect]] and respond to human [[emotion]]s. According to scientists, although the technology can be perceived as scary or threatening by many people,<ref>{{Cite journal|author1=Jan-Philipp Stein|author2=Peter Ohler|date=2017|title=Venturing into the uncanny valley of mind—The influence of mind attribution on the acceptance of human-like characters in a virtual reality setting|journal=Cognition|language=en|volume=160|pages=43–50|doi=10.1016/j.cognition.2016.12.010|pmid=28043026|issn=0010-0277}}</ref> it could also have a significant advantage over humans in professions which are traditionally involved in emotional role-playing such as the health care sector.<ref name="Baumgaertner">{{cite journal |title=Do Emotions Matter in the Ethics of Human-Robot Interaction? |journal=Artificial Empathy and Companion Robots |author=Bert Baumgaertner |author2=Astrid Weiss |publisher=European Community’s Seventh Framework Programme (FP7/2007-2013) under grant agreement No. 288146 (“HOBBIT”); and the Austrian Science Foundation (FWF) under grant agreement T623-N23 (“V4HRC”) |url=http://doc.gold.ac.uk/aisb50/AISB50-S19/AISB50-S19-Baumgaertner-paper.pdf |via=direct download |date=26 February 2014}}</ref> From the care-giver perspective for instance, performing emotional labor above and beyond the requirements of paid labor often results in chronic stress or burnout, and the development of a feeling of being desensitized to patients. However, it is argued that the emotional role-playing between the care-receiver and a robot can actually have a more positive outcome in terms of creating the conditions of less fear and concern for one's own predicament best exemplified by the phrase: "if it is just a robot taking care of me it cannot be that critical." Scholars debate the possible outcome of such technology using two different perspectives. Either, the AE could help the socialization of care-givers, or serve as role model for emotional detachment.<ref name="Baumgaertner"/><ref name="Asada">{{cite journal |title=Affective Developmental Robotics |journal=How Can We Design the Development of Artifcial Empathy? |author=Minoru Asada |publisher=Dept. of Adaptive Machine Systems, Graduate School of Engineering, Osaka University |location=Osaka, Japan |url=http://www.macs.hw.ac.uk/~kl360/HRI2014W/submission/S7.pdf |via=direct download |date=14 February 2014}}</ref>
+
+== Areas of research ==
+{{Main|Philosophy of artificial intelligence|Ethics of artificial intelligence}}
+There are a variety of philosophical, theoretical, and applicative questions related to AE. For example:
+# Which conditions would have to be met for a robot to respond competently to a human emotion?
+# What models of empathy can or should be applied to Social and Assistive Robotics?
+# Does the interaction of humans with robots have to imitate affective interaction between humans?
+# Can a robot help science learn about affective development of humans?
+# Would robots create unforeseen categories of inauthentic relations?
+# What relations with robots can be considered truly authentic?
+
+== Artificial Empathy and Human Services ==
+Although AI has not been shown to replace social workers themselves yet, the technology has begun making waves in the field. Social Work Today published an article describing research performed at Florida State University. The research involved the use of computer algorithms to analyze health records and detect combinations of risk factors that could indicate a future suicide attempt. The article reports, 
+“machine learning—a future frontier for artificial intelligence—can predict with 80% to 90% accuracy whether someone will attempt suicide as far off as two years into the future. The algorithms become even more accurate as a person’s suicide attempt gets closer. For example, the accuracy climbs to 92% one week before a suicide attempt when artificial intelligence focuses on general hospital patients” (2017).
+
+At this point in time, artificial intelligence has not been able to replace social workers completely, but algorithmic machines such as those described above can have incredible benefits to social workers. Social work operates on a cycle of engagement, assessment, intervention, and evaluation with clients. This technology can make the assessment for risk of suicide can lead to earlier interventions and prevention, therefore saving lives. It is the hope of these researchers that the technology will be implemented in our modern healthcare system. The system would learn, analyze, and detect risk factors, alerting the clinician of a patient’s suicide risk score (equivalent to a patient’s cardiovascular risk score). At this point, social workers could step in for further assessment and preventative intervention.
+
+==See also==
+* {{sectionlink|Artificial intelligence|Social intelligence}}
+* [[Artificial human companion]]
+* [[Case-based reasoning]]
+* [[Commonsense reasoning]]
+* [[Emotion recognition]]
+* [[Facial recognition system]]
+* [[Human–robot interaction]]
+* [[Soft computing]]
+** [[Machine learning]]
+** [[Evolutionary computing]]
+* [[Glossary of artificial intelligence]]
+* ''[[Blade Runner]]'' / ''[[Do Androids Dream of Electric Sheep?]]''
+* [[Pepper (robot)]]
+
+== References ==
+{{Reflist}}
+
+{{Navboxes
+|list=
+{{philosophy of mind}}
+{{philosophy of science}}
+{{Evolutionary computation}}
+{{Computable knowledge}}
+{{Computer science}}
+{{Emerging technologies}}
+{{Robotics}}
+}}
+
+{{Authority control}}
+
+{{DEFAULTSORT:Artificial empathy}}
+[[Category:Artificial intelligence]]
+[[Category:Cybernetics]]
+[[Category:Formal sciences]]
+[[Category:Technology in society]]
+[[Category:Computational neuroscience]]
+[[Category:Emerging technologies]]
+[[Category:Unsolved problems in computer science]]
+[[Category:Emotion]]
+[[Category:Affective computing]]

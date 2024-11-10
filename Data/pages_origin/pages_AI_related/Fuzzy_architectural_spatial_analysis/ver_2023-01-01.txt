@@ -1,0 +1,36 @@
+{{Use British (Oxford) English|date=December 2016}}
+
+'''Fuzzy architectural spatial analysis (FASA)''' (also '''fuzzy inference system (FIS) based architectural space analysis''' or '''fuzzy spatial analysis''') is a [[spatial analysis]] method of analysing the spatial formation and architectural space intensity within any architectural organization.<ref>Arabacioglu, Burcin Cem (2010). "Using fuzzy inference system for architectural space analysis". Applied Soft Computing 10 (3): 926–937. {{doi|10.1016/j.asoc.2009.10.011}}</ref>
+
+Fuzzy architectural spatial analysis is used in [[architecture]], [[interior design]], [[urban planning]] and similar [[spatial design]] fields.
+
+==Overview==
+Fuzzy architectural spatial analysis was developed by [[Burcin Cem Arabacioglu]] (2010) from the architectural theories of [[space syntax]]<ref>Hillier, Bill and Hanson, Julienne (1984), "The Social Logic of Space", Cambridge University Press: Cambridge.</ref><ref>Hillier, Bill (1999), "Space is the Machine: A Configurational Theory of Architecture", Cambridge University Press: Cambridge.</ref> and [[visibility graph analysis]],<ref>Turner, Alasdair; Doxa, Maria; O'Sullivan, David and Penn, Alan (2001). "From isovists to visibility graphs: a methodology for the analysis of architectural space". Environment and Planning B 28 (1): 103–121. {{doi|10.1068/b2684}}</ref>  and is applied with the help of a fuzzy system with a Mamdami inference system based on [[fuzzy logic]] within any architectural space. Fuzzy architectural spatial analysis model analyses the space by considering the perceivable architectural element by their boundary and stress characteristics and intensity properties. The method is capable of taking all [[Sense|sensorial]] factors into account during analyses in conformably with the [[perception]] process of architectural space which is a multi-sensorial act.
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{cite journal | first1=Burcin Cem|last1= Arabacioglu | year=2010 | title= Using fuzzy inference system for architectural space analysis | journal= Applied Soft Computing | volume=10 | issue=3 | pages=926–937 | doi= 10.1016/j.asoc.2009.10.011 }}
+* {{citation|first1=Asli|last1=Cekmis|first2=Isis|last2=Hacihasanoglu|first3=Michael J|last3=Ostwald| year=2013 | title=A computational model for accommodating spatial uncertainty: Predicting inhabitation patterns in open-planned spaces|journal=Building and Environment|volume=73|pages=115–126|doi= 10.1016/j.buildenv.2013.11.023 }}.
+* {{citation|first1=Kamlesh|last1=Dutta|first2=Siddhant|last2=Sarthak| year=2011 | title=Architectural space planning using evolutionary computing approaches: a review|journal=Artificial Intelligence Review|volume=36|number=4|pages=311&ndash;321|doi=10.1007/s10462-011-9217-y}}.
+* {{citation|first1=Aswin |last1=Indraprastha |first2=Michihiko |last2=Shinozaki |year=2011 |title=Elaboration Model for Mapping Architectural Space |journal=Journal of Asian Architecture and Building Engineering |volume=10 |issue=2 |pages=1–8 |url=http://www.ar.itb.ac.id/aswin/wp-content/uploads/2011/09/19AP12.pdf |url-status=dead |archiveurl=https://web.archive.org/web/20120515074455/http://www.ar.itb.ac.id/aswin/wp-content/uploads/2011/09/19AP12.pdf |archivedate=2012-05-15 |doi=10.3130/jaabe.10.351 |doi-access=free }}
+* {{citation|first1=Yuan Horng|last1=Lin| year=2013 | title= Fuzzy Kappa Coefficient with Simulated Comparisons|journal=Applied Mechanics and Materials|volume=303-306|pages=372–375|doi=10.4028/www.scientific.net/AMM.303-306.372}}
+* {{citation|first1=Gabriel|last1=Wurzer| year=2013 | title=In-process agent simulation for early stages of hospital planning|journal=Mathematical and Computer Modelling of Dynamical Systems: Methods, Tools and Applications in Engineering and Related Sciences|volume=19|number=4|pages=331&ndash;343|doi=10.1080/13873954.2012.761638}}.
+* {{citation|first1=Xin|last1=Yang|first2=Duan-qing|last2=Xu|first3=Lei|last3=Zhao| year=2013 | title=Efficient data management for incoherent ray tracing|journal=Applied Soft Computing |volume=13|number=1|pages=1&ndash;8|doi= 10.1016/j.asoc.2012.07.002 }}.
+
+==See also==
+
+*[[Fuzzy logic]]
+*[[Spatial analysis]]
+*[[Space syntax]]
+*[[Spatial network analysis software]]
+*[[Visibility graph]]
+*[[Visibility graph analysis]]
+*[[Boundary problem (in spatial analysis)]]
+
+[[Category:Architectural theory]]
+[[Category:Environmental psychology]]
+[[Category:Fuzzy logic]]
+[[Category:Interior design]]
+[[Category:Urban planning]]

@@ -1,0 +1,912 @@
+{{short description|Free and open-source chess engine}}
+{{Infobox software
+| title = Stockfish
+| name = Stockfish
+| logo = NewLogoSF.png
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = 
+| developer = The Stockfish developers<ref>{{Cite web|url=https://github.com/official-stockfish/Stockfish/blob/master/AUTHORS|title=List of Stockfish authors|website=github.com/official-stockfish/Stockfish|access-date=3 July 2023|archive-date=13 July 2018|archive-url=https://web.archive.org/web/20180713223858/https://github.com/official-stockfish/Stockfish/blob/master/AUTHORS|url-status=live}}</ref>
+| released = {{Start date and age|2008|11|02}}
+| discontinued = 
+| latest release version = 17
+| latest release date = {{Start date and age|2024|09|06}}
+| latest preview version = 
+| latest preview date = <!-- {{Start date and age|YYYY|MM|DD}} -->
+| programming language = [[C++]]
+| operating system = [[Microsoft Windows]]<br />[[macOS]]<br />[[Linux]]<br />[[iOS (Apple)|iOS]]<br />[[Android (operating system)|Android]]
+| platform = 
+| size = 
+| language = 
+| genre = [[Chess engine]]
+| license = [[GNU General Public License|GPL-3.0-or-later]]<ref>{{Cite web|url=https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt|title=Stockfish GPLv3 license|website=github.com/official-stockfish/Stockfish|access-date=20 July 2020|archive-date=15 November 2022|archive-url=https://web.archive.org/web/20221115095517/https://github.com/official-stockfish/Stockfish/blob/master/Copying.txt|url-status=live}}</ref>
+}}
+{{Chess programming series}}
+'''Stockfish''' is a [[free and open-source]] [[chess engine]], available for various desktop and mobile platforms. It can be used in [[Computer chess|chess software]] through the [[Universal Chess Interface]].
+
+Stockfish has been one of the best chess engines in the world for several years;<ref>{{Cite news |last=Strogatz |first=Steven |date=2018-12-26 |title=One Giant Step for a Chess-Playing Machine |url=https://www.nytimes.com/2018/12/26/science/chess-artificial-intelligence.html |access-date=2024-02-08 |work=The New York Times |language=en-US |issn=0362-4331 |archive-date=2022-01-04 |archive-url=https://web.archive.org/web/20220104004951/https://www.nytimes.com/2018/12/26/science/chess-artificial-intelligence.html |url-status=live }}</ref><ref>{{Cite news |last=Gibbs |first=Samuel |date=2017-12-07 |title=AlphaZero AI beats champion chess program after teaching itself in four hours |url=https://www.theguardian.com/technology/2017/dec/07/alphazero-google-deepmind-ai-beats-champion-program-teaching-itself-to-play-four-hours |access-date=2024-02-08 |work=The Guardian |language=en-GB |issn=0261-3077 |archive-date=2020-12-07 |archive-url=https://web.archive.org/web/20201207132020/https://www.theguardian.com/technology/2017/dec/07/alphazero-google-deepmind-ai-beats-champion-program-teaching-itself-to-play-four-hours |url-status=live }}</ref><ref>{{Cite magazine |last=Perez-Rey |first=Lisandro |date=2023-08-12 |title=Why AI Chess Bots Are Virtually Unbeatable (ft. GothamChess) |url=https://www.wired.com/video/watch/wired-news-and-science-wi-currents-chess-bots/ |magazine=Wired |access-date=2024-02-08 |archive-date=2024-02-15 |archive-url=https://web.archive.org/web/20240215195142/https://www.wired.com/video/watch/wired-news-and-science-wi-currents-chess-bots |url-status=live }}</ref> it has won all main events of the [[Top Chess Engine Championship]] (TCEC) and the [[Chess.com Computer Chess Championship]] (CCC) since 2020 and, {{as of|2024|10|lc=y}}, is the strongest CPU chess engine in the world with an estimated [[Elo rating system|Elo]] rating of 3642, in a time control of 40/15 (15 minutes to make 40 moves), according to CCRL.<ref>{{Cite web |title=CCRL 40/15 - Index |url=https://computerchess.org.uk/ccrl/404/ |access-date=2024-09-29 |website=computerchess.org.uk|archive-url=https://web.archive.org/web/20240718171110/https://computerchess.org.uk/ccrl/404/ |archive-date=2024-07-18 }}</ref> 
+
+The Stockfish engine was developed by Tord Romstad, Marco Costalba, and Joona Kiiski, and was derived from Glaurung, an open-source engine by Tord Romstad released in 2004. It is now being developed and maintained by the Stockfish community.<ref>{{Cite web|title=Engine authors|url=https://stockfishchess.org/about/#engine-authors|access-date=3 July 2023|website=Stockfish|language=en|archive-date=17 February 2014|archive-url=https://web.archive.org/web/20140217100421/http://stockfishchess.org/about/#engine-authors|url-status=live}}</ref>
+
+Stockfish historically used only a classical [[Evaluation function#Handcrafted evaluation functions|hand-crafted function]] to evaluate board positions, but with the introduction of the [[efficiently updatable neural network]] (NNUE) in August 2020, it adopted a hybrid evaluation system that primarily used the neural network and occasionally relied on the hand-crafted evaluation.<ref>{{Cite web |title=Introducing NNUE Evaluation |url=https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/ |access-date=14 May 2024 |website=Stockfish |archive-date=14 May 2024 |archive-url=https://web.archive.org/web/20240514210546/https://stockfishchess.org/blog/2020/introducing-nnue-evaluation/ |url-status=live }}</ref><ref>{{Cite web |title=Add NNUE evaluation |url=https://github.com/official-stockfish/Stockfish/commit/84f3e867903f62480c33243dd0ecbffd342796fc |access-date=14 May 2024 |website=GitHub}}</ref><ref>{{Cite web |title=NNUE evaluation threshold |url=https://github.com/official-stockfish/Stockfish/commit/3dca13a958cd0dfea1cdea91da230c5aac9e322f |archive-date=14 May 2024 |access-date=14 May 2024 |website=GitHub |archive-url=https://web.archive.org/web/20240514210544/https://github.com/official-stockfish/Stockfish/commit/3dca13a958cd0dfea1cdea91da230c5aac9e322f |url-status=live }}</ref> In July 2023, Stockfish removed the hand-crafted evaluation and transitioned to a fully neural network-based approach.<ref>{{Cite web |title=Remove classical evaluation |url=https://github.com/official-stockfish/Stockfish/commit/af110e02ec96cdb46cf84c68252a1da15a902395 |archive-date=16 May 2024 |access-date=14 May 2024 |website=GitHub |archive-url=https://web.archive.org/web/20240516104649/https://github.com/official-stockfish/Stockfish/commit/af110e02ec96cdb46cf84c68252a1da15a902395 |url-status=live }}</ref><ref name="Stockfish 16.1" />
+
+== Features ==
+Stockfish can use up to 1024 [[central processing unit|CPU thread]]s in [[multiprocessor]] systems. The maximal size of its [[transposition table]] is 32 TB. Stockfish implements an advanced [[alpha–beta search]] and uses [[bitboard]]s. Compared to other engines, it is characterized by its great search depth, due in part to more aggressive [[Alpha–beta pruning|pruning]] and [[late move reductions]].<ref>{{cite web|url=http://www.talkchess.com/forum/viewtopic.php?start=0&t=50220|title=Stockfish depth vs. others; challenge|date=24 November 2013|last=Kaufman|first=Larry|author-link=Larry Kaufman|work=TalkChess.com|access-date=8 March 2014|archive-date=22 May 2014|archive-url=https://web.archive.org/web/20140522103707/http://www.talkchess.com/forum/viewtopic.php?start=0&t=50220|url-status=live}}</ref> {{As of|2024|09}}, Stockfish 17 (4-threaded) achieved an [[Elo rating]] of 3642
+{{+-|16|16}} on the CCRL 40/15 benchmark.<ref>{{Cite web |title=CCRL 40/15 - Index |url=https://www.computerchess.org.uk/ccrl/4040/ |access-date=2024-07-07 |website=computerchess.org.uk }}</ref>
+
+Stockfish supports [[Chess960]], which is one feature that was inherited from Glaurung.<ref>{{Cite web |title=Computer Engines – Chess960.net |url=https://chess960.net/engines/ |access-date=2022-06-21 |language=en-AU |archive-date=2020-07-23 |archive-url=https://web.archive.org/web/20200723231506/https://chess960.net/engines/ |url-status=live }}</ref> The [[Syzygy (tablebase)|Syzygy]] [[Endgame tablebase|tablebase]] support, previously available in a [[Fork (software development)|fork]] maintained by Ronald de Man, was integrated into Stockfish in 2014.<ref>{{cite web | url=http://abrok.eu/stockfish_syzygy/ | title=Stockfish development versions | work=abrok.eu | access-date=1 February 2015 | url-status=dead | archive-url=https://web.archive.org/web/20141111094041/http://abrok.eu/stockfish_syzygy/ | archive-date=11 November 2014 }}</ref> In 2018 support for the 7-man Syzygy was added, shortly after becoming available.<ref>{{Cite web |title=7-piece Syzygy tablebases are complete |url=https://lichess.org/blog/W3WeMyQAACQAdfAL/7-piece-syzygy-tablebases-are-complete |access-date=2022-06-21 |website=lichess.org |date=19 August 2018 |language=en-US |archive-date=2018-08-19 |archive-url=https://web.archive.org/web/20180819204359/https://lichess.org/blog/W3WeMyQAACQAdfAL/7-piece-syzygy-tablebases-are-complete |url-status=live }}</ref>
+
+Stockfish has been a very popular engine on various platforms. On desktop, it is the default chess engine bundled with the [[Internet Chess Club]] interface programs BlitzIn and Dasher. On mobile, it has been bundled with the Stockfish app, SmallFish and Droidfish. Other Stockfish-compatible [[graphical user interface]]s (GUIs) include [[Fritz (chess)|Fritz]], Arena, Stockfish for Mac, and [[PyChess]].<ref>[http://support.stockfishchess.org/kb/getting-started/using-the-stockfish-engine Using the Stockfish Engine] {{Webarchive|url=https://web.archive.org/web/20180109115948/http://support.stockfishchess.org/kb/getting-started/using-the-stockfish-engine |date=2018-01-09 }}, Stockfish Support.</ref><ref>[https://github.com/pychess/pychess/wiki/ChessEngines ChessEngines] {{Webarchive|url=https://web.archive.org/web/20221115102848/https://github.com/pychess/pychess/wiki/ChessEngines |date=2022-11-15 }}, PyChess Github.</ref> Stockfish can be compiled to [[WebAssembly]] or [[JavaScript]], allowing it to run in the browser. Both [[Chess.com]] and [[Lichess]] provide Stockfish in this form in addition to a server-side program.<ref name="lichess" /> Release versions and development versions are available as [[C++]] [[source code]] and as precompiled versions for [[Microsoft Windows]], [[macOS]], [[Linux]] 32-bit/64-bit and [[Android (operating system)|Android]].
+
+== Architecture ==
+The Stockfish engine essentially consists of three parts: [[Board representation (computer chess)|board representation]], [[Tree search|heuristic tree search]], and board evaluation. Board representation is about coding a chess board state efficiently so that it can be efficiently stored and searched over. Heuristic tree search approximates [[minimax]] tree search, which would be too slow to perform. Board evaluation takes in a board representation and gives it a score for how "good" the board is (i.e. the estimated chances of winning).<ref>{{Cite web |title=Stockfish - Chessprogramming wiki |url=https://www.chessprogramming.org/Stockfish |access-date=2023-10-30 |website=www.chessprogramming.org |archive-date=2023-05-22 |archive-url=https://web.archive.org/web/20230522021128/https://www.chessprogramming.org/Stockfish |url-status=live }}</ref>
+
+Starting with Stockfish 12 (2020), a neural network board evaluation function was incorporated. In Stockfish 16.1 (2024), the classical board evaluation functions were removed, leaving just the neural network.<ref name="Stockfish 16.1">{{cite web |title=Stockfish 16.1 |url=https://stockfishchess.org/blog/2024/stockfish-16-1/ |website=Stockfish |access-date=24 February 2024 |date=24 February 2024 |archive-date=24 February 2024 |archive-url=https://web.archive.org/web/20240224201650/https://stockfishchess.org/blog/2024/stockfish-16-1/ |url-status=live }}</ref>
+
+== History ==
+The program originated from ''Glaurung'', an open-source chess engine created by Romstad and first released in 2004. Four years later, Costalba, inspired by the strong open-source engine, decided to fork the project. He named it ''[[Stockfish]]'' because it was "produced in Norway and cooked in Italy" (Romstad is Norwegian, Costalba is Italian). The first version, Stockfish 1.0, was released in November 2008.<ref name="About">{{cite web | url=http://stockfishchess.org/about/ | title=About | work=stockfishchess.org | access-date=5 March 2014 | archive-date=20 September 2012 | archive-url=https://web.archive.org/web/20120920003620/http://stockfishchess.org/about/ | url-status=live }}</ref><ref name="Stockfish 1.0">{{cite web | url=http://www.talkchess.com/forum/viewtopic.php?t=24675 | title=Stockfish 1.0 | last=Costalba | first=Marco | date=2 November 2008 | work=talkchess.com | access-date=6 March 2014 | archive-date=6 March 2014 | archive-url=https://web.archive.org/web/20140306212244/http://www.talkchess.com/forum/viewtopic.php?t=24675 | url-status=live }}</ref> For a while, new ideas and code changes were transferred between the two programs in both directions, until Romstad decided to discontinue Glaurung in favor of Stockfish, which was the more advanced engine at the time.<ref>{{cite web | url=http://wbec-ridderkerk.forumotion.com/t402-stockfish-glaurung#883 | title=Re: Stockfish – Glaurung | last=Romstad | first=Tord | date=5 September 2009 | work=wbec-ridderkerk.forumotion.com | access-date=5 March 2014 | archive-date=6 March 2014 | archive-url=https://web.archive.org/web/20140306003355/http://wbec-ridderkerk.forumotion.com/t402-stockfish-glaurung#883 | url-status=live }}</ref> The last Glaurung version (2.2) was released in December 2008.
+
+Around 2011, Romstad decided to abandon his involvement with Stockfish in order to spend more time on his new iOS chess app.<ref>{{Cite web |last=Logics (Kings_Logics) |first=Kings |title=Stockfish |url=https://www.chess.com/blog/Kings_Logics/stockfish |access-date=2022-06-21 |website=Chess.com |date=21 June 2022 |language=en-US |archive-date=2022-09-22 |archive-url=https://web.archive.org/web/20220922070831/https://www.chess.com/blog/Kings_Logics/stockfish |url-status=live }}</ref> On 18 June 2014 Marco Costalba announced that he had "decided to step down as Stockfish maintainer" and asked that the community create a fork of the current version and continue its development.<ref>{{Cite web|url=http://groups.google.com/forum/?fromgroups=#!topic/fishcooking/VsYuyij6uqQ|title=Step down|last=Costalba|first=Marco|work=groups.google.com|date=18 June 2014|access-date=19 June 2014|archive-date=21 September 2012|archive-url=https://web.archive.org/web/20120921191051/http://groups.google.com/forum/?fromgroups=#!topic/fishcooking/VsYuyij6uqQ|url-status=live}}</ref> An official repository, managed by a volunteer group of core Stockfish developers, was created soon after and currently manages the development of the project.<ref>{{Cite web|url=http://groups.google.com/forum/?fromgroups=#!topic/fishcooking/aUqC13mtSEg|title=New official repository|last=Linscott|first=Gary|work=groups.google.com|date=18 June 2014|access-date=19 June 2014|archive-date=21 September 2012|archive-url=https://web.archive.org/web/20120921191051/http://groups.google.com/forum/?fromgroups=#!topic/fishcooking/aUqC13mtSEg|url-status=live}}</ref>
+
+=== Fishtest ===
+Since 2013, Stockfish has been developed using a [[Distributed computing|distributed]] testing framework named ''Fishtest'', where volunteers can donate CPU time for testing improvements to the program.<ref>{{cite web |title=Stockfish Testing Framework |url=http://tests.stockfishchess.org/tests |access-date=7 March 2014 |work=tests.stockfishchess.org |archive-date=22 March 2014 |archive-url=https://web.archive.org/web/20140322122039/http://tests.stockfishchess.org/tests |url-status=live }}</ref><ref>{{cite web |title=Get Involved |url=http://stockfishchess.org/get-involved/ |access-date=8 March 2014 |work=stockfishchess.org |archive-date=16 June 2013 |archive-url=https://web.archive.org/web/20130616211650/http://stockfishchess.org/get-involved/ |url-status=live }}</ref><ref>{{cite web |last=Costalba |first=Marco |date=1 May 2013 |title=Fishtest Distributed Testing Framework |url=http://www.talkchess.com/forum/viewtopic.php?start=0&t=47885&topic_view=flat&sid=b5662f579ad4c7bea91668bb9d9723a4 |access-date=18 April 2014 |work=talkchess.com |archive-date=19 April 2014 |archive-url=https://web.archive.org/web/20140419012854/http://www.talkchess.com/forum/viewtopic.php?start=0&t=47885&topic_view=flat&sid=b5662f579ad4c7bea91668bb9d9723a4 |url-status=live }}</ref>
+
+Changes to game-playing code are accepted or rejected based on results of playing of tens of thousands of games on the framework against an older "reference" version of the program, using [[sequential probability ratio test]]ing. Tests on the framework are verified using the [[chi-squared test]], and only if the results are statistically significant are they deemed reliable and used to revise the software code.
+
+After the inception of Fishtest, Stockfish experienced an explosive growth of 120 [[Elo rating system|Elo points]] in just 12 months, propelling it to the top of all major rating lists.<ref>
+{{Cite web |title=CCRL Rating List |url=http://computerchess.org.uk/ccrl/404/cgi/compare_engines.cgi?family=Stockfish&print=Rating+list&print=Results+table&print=LOS+table&print=Ponder+hit+table&print=Eval+difference+table&print=Comopp+gamenum+table&print=Overlap+table&print=Score+with+common+opponents |url-status=dead |archive-url=https://archive.today/20140530173724/http://computerchess.org.uk/ccrl/404/cgi/compare_engines.cgi?family=Stockfish&print=Rating+list&print=Results+table&print=LOS+table&print=Ponder+hit+table&print=Eval+difference+table&print=Comopp+gamenum+table&print=Overlap+table&print=Score+with+common+opponents |archive-date=30 May 2014}}</ref> In Stockfish 7, Fishtest author Gary Linscott was added to the official list of authors in acknowledgement of his contribution to Stockfish's strength.
+
+{{as of|2024|10}}, the framework has used a total of more than 15,400 years of CPU time to play over 8.3 billion chess games.<ref>{{cite web |title=Top CPU contributors.txt |url=https://github.com/official-stockfish/Stockfish/blob/master/Top%20CPU%20Contributors.txt |website=github.com}}</ref>
+
+=== NNUE ===
+[[File:Weights-nn-62ef826d1a6d.png|thumb|Stockfish's [[Efficiently updatable neural network|NNUE]] visualized]]
+In June 2020, an [[efficiently updatable neural network]] (NNUE) fork introduced by [[computer shogi]] programmers called Stockfish NNUE was discussed by developers.<ref>{{cite web|url=https://github.com/nodchip/Stockfish|title=Stockfish NNUE|author=nodchip|website=[[GitHub]]|access-date=August 3, 2020|archive-date=July 6, 2020|archive-url=https://web.archive.org/web/20200706194844/https://github.com/nodchip/Stockfish|url-status=live}}</ref><ref>{{cite web|title=SF NNUE. Issue#2728 official-stockfish|website=[[GitHub]]|url=https://github.com/official-stockfish/Stockfish/issues/2728#issuecomment-650523408|date=June 27, 2020|access-date=August 3, 2020|archive-date=July 6, 2020|archive-url=https://web.archive.org/web/20200706194900/https://github.com/official-stockfish/Stockfish/issues/2728#issuecomment-650523408|url-status=live}}</ref> In July 2020 chess news reported that Stockfish NNUE had "broken new ground in computer chess by incorporating a neural network into the already incredibly powerful Stockfish chess engine."<ref>{{Cite web|last=Canary-Reed (the_real_greco)|first=Wilhelm|title=Stockfish+NNUE, Strongest Chess Engine Ever, To Compete In CCCC|url=https://www.chess.com/news/view/stockfishnnue-strongest-chess-engine-ever-to-compete-in-cccc|access-date=2020-07-24|website=[[Chess.com]]|date=20 July 2020|language=en-US|archive-date=2020-07-24|archive-url=https://web.archive.org/web/20200724133851/https://www.chess.com/news/view/stockfishnnue-strongest-chess-engine-ever-to-compete-in-cccc|url-status=live}}</ref> A NNUE [[merge (version control)|merge]] into Stockfish was then announced and development builds became available.<ref name="NNUEmerge">{{cite web|title=official-stockfish / Stockfish, NNUE merge|url=https://github.com/official-stockfish/Stockfish/issues/2823#issue-665540175|author=Joost VandeVondele|website=[[GitHub]]|date=July 25, 2020|access-date=August 3, 2020|archive-date=September 5, 2020|archive-url=https://web.archive.org/web/20200905102355/https://github.com/official-stockfish/Stockfish/issues/2823#issue-665540175|url-status=live}}</ref><ref>{{cite web|title=Stockfish NNUE Development Versions|url=https://abrok.eu/stockfish-nnue/|author=abrok.eu|access-date=August 3, 2020|archive-date=August 5, 2020|archive-url=https://web.archive.org/web/20200805070333/https://abrok.eu/stockfish-nnue/|url-status=dead}}</ref>
+
+{{blockquote|quote="The NNUE branch maintained by @nodchip has demonstrated strong results and offers great potential, and we will proceed to merge ... This merge will introduce machine learning based coding to the engine, thus enlarging the community of developers, bringing in new skills. We are eager to keep everybody on board, including all developers and users of diverse hardware, aiming to be an inclusive community ...the precise steps needed will become clearer as we proceed, I look forward to working with the community to make this happen!"|author = Joost VandeVondele |source = 25 July 2020<ref name="NNUEmerge"/>}}
+
+On 2 September 2020, the twelfth version of Stockfish was released, incorporating the aforementioned neural network improvement.  According to the blog announcement, this new version "plays significantly stronger than any of its predecessors", typically winning ten times more game pairs than it loses when matched against version eleven.<ref>{{Cite web|url=https://stockfishchess.org/blog/2020/stockfish-12/|title=Stockfish 12 - Stockfish - Open Source Chess Engine|website=stockfishchess.org|access-date=2022-10-09|archive-date=2021-02-23|archive-url=https://web.archive.org/web/20210223151114/https://stockfishchess.org/blog/2020/stockfish-12/|url-status=live}}</ref><ref>{{Cite web|title=Stockfish 12 vs Stockfish 11 Raw statistics|url=https://tests.stockfishchess.org/tests/stats/5f4faef2ba100690c5cc5e79|access-date=11 January 2022|website=Stockfish Testing Framework - Stockfish 12 vs Stockfish 11|archive-date=11 January 2022|archive-url=https://web.archive.org/web/20220111172639/https://tests.stockfishchess.org/tests/stats/5f4faef2ba100690c5cc5e79|url-status=live}}</ref> In July 2023, classical evaluation was completely removed.<ref>{{cite web|url=https://github.com/official-stockfish/Stockfish/pull/4674|title=Remove classical evaluation #4674}}</ref>
+
+== Competition results ==
+=== Top Chess Engine Championship ===
+{{main|Top Chess Engine Championship#Tournament results}}
+
+Stockfish is a [[TCEC]] multiple-time champion and the current leader in trophy count. Ever since TCEC restarted in 2013, Stockfish has finished first or second in every season except one. In TCEC Season 4 and 5, Stockfish finished runner-up, with Superfinal scores of 23–25 first against [[Houdini (chess)|Houdini]] 3 and later against [[Komodo (chess)|Komodo]] 1142. Season 5 was notable for the winning Komodo team as they accepted the award posthumously for the program's creator [[Don Dailey]], who succumbed to an illness during the final stage of the event. In his honor, the version of Stockfish that was released shortly after that season was named "Stockfish DD".<ref>{{Cite news|url = http://blog.stockfishchess.org/post/68506094600/stockfish-dd|title = Stockfish Blog on Stockfish DD|access-date = 2014-05-30|archive-date = 2015-07-27|archive-url = https://web.archive.org/web/20150727024013/http://blog.stockfishchess.org/post/68506094600/stockfish-dd|url-status = live}}</ref>
+
+On 30 May 2014, Stockfish 170514 (a development version of Stockfish 5 with tablebase support) convincingly won TCEC Season 6, scoring 35.5–28.5 against Komodo 7x in the Superfinal.<ref name="TCEC archive">{{cite web|title=TCEC Season Archive|url=https://tcec-chess.com/#x=archive|access-date=7 August 2021|work=tcec-chess.com|archive-date=4 September 2019|archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#x=archive|url-status=live}}</ref> Stockfish 5 was released the following day.<ref>{{cite web|url=http://www.talkchess.com/forum/viewtopic.php?t=52487|title=Stockfish 5|last=Costalba|first=Marco|work=talkchess.com|date=31 May 2014|access-date=19 June 2014|archive-date=14 December 2014|archive-url=https://web.archive.org/web/20141214103936/http://www.talkchess.com/forum/viewtopic.php?t=52487|url-status=live}}</ref> In TCEC Season 7, Stockfish again made the Superfinal, but lost to Komodo with the score of 30.5–33.5.<ref name="TCEC archive"/> In TCEC Season 8, despite losses on time caused by buggy code, Stockfish nevertheless qualified once more for the Superfinal, but lost the ensuing 100-game match 46.5–53.5 to Komodo.<ref name="TCEC archive"/> In Season 9, Stockfish defeated Houdini 5 with a score of 54.5 versus 45.5.<ref name="TCEC archive" /><ref>{{cite web|title=Stockfish is the TCEC Season 9 Grand Champion|url=http://www.chessdom.com/stockfish-is-the-tcec-season-9-grand-champion/|website=Chessdom|date=5 December 2016|access-date=5 December 2016|archive-date=6 December 2016|archive-url=https://web.archive.org/web/20161206141825/http://www.chessdom.com/stockfish-is-the-tcec-season-9-grand-champion/|url-status=live}}</ref>
+
+Stockfish finished third during season 10 of TCEC, the only season since 2013 in which Stockfish had failed to qualify for the superfinal. It did not lose a game but was still eliminated because it was unable to score enough wins against lower-rated engines. After this technical elimination, Stockfish went on a long winning streak, winning seasons 11 (59 vs. 41 against Houdini 6.03),<ref name="TCEC archive" /><ref>{{Cite web|url=https://chess24.com/en/watch/live-tournaments/tcec-2018-superfinal|title=TCEC Season 11 Superfinal 2018|website=chess24.com|language=en|access-date=18 November 2018|archive-date=18 November 2018|archive-url=https://web.archive.org/web/20181118165116/https://chess24.com/en/watch/live-tournaments/tcec-2018-superfinal|url-status=live}}</ref> 12 (60 vs. 40 against Komodo 12.1.1),<ref name="TCEC archive" /><ref>{{Cite web|url=https://chess24.com/en/watch/live-tournaments/tcec-2018-season-12-superfinal|title=TCEC Season 12 Superfinal 2018|website=chess24.com|language=en|access-date=18 November 2018|archive-date=2 August 2018|archive-url=https://web.archive.org/web/20180802162843/https://chess24.com/en/watch/live-tournaments/tcec-2018-season-12-superfinal|url-status=live}}</ref> and 13 (55 vs. 45 against Komodo 2155.00)<ref name="TCEC archive" /><ref>{{Cite web|url=https://chess24.com/en/watch/live-tournaments/tcec-2018-season-13-superfinal|title=TCEC Season 13 Superfinal 2018|website=chess24.com|language=en|access-date=18 November 2018|archive-date=18 November 2018|archive-url=https://web.archive.org/web/20181118165349/https://chess24.com/en/watch/live-tournaments/tcec-2018-season-13-superfinal|url-status=live}}</ref> convincingly.<ref>{{cite web|title=Stockfish convincingly wins TCEC Season 11|url=http://www.chessdom.com/stockfish-convincingly-wins-tcec-season-11/|website=Chessdom|date=13 April 2018|access-date=18 April 2018|archive-date=17 April 2018|archive-url=https://web.archive.org/web/20180417235721/http://www.chessdom.com/stockfish-convincingly-wins-tcec-season-11/|url-status=live}}</ref> In [[TCEC Season 14|Season 14]], Stockfish faced a new challenger in [[Leela Chess Zero]], but managed to eke out a win by one game (50.5–49.5).<ref name="TCEC archive" /><ref>{{cite web|url=http://www.chessdom.com/stockfish-continues-to-dominate-computer-chess-wins-tcec-s14/|title=Stockfish continues to dominate computer chess, wins TCEC S14|website=Chessdom|date=1 March 2019|access-date=4 March 2019|archive-date=2 March 2019|archive-url=https://web.archive.org/web/20190302055643/http://www.chessdom.com/stockfish-continues-to-dominate-computer-chess-wins-tcec-s14/|url-status=live}}</ref> Its winning streak was finally ended in [[TCEC Season 15|season 15]], when Leela qualified again and won 53.5–46.5,<ref name="TCEC archive" /> but Stockfish promptly won [[TCEC Season 16|season 16]], defeating AllieStein 54.5–45.5, after Leela failed to qualify for the superfinal.<ref name="TCEC archive" /> In [[TCEC Season 17|season 17]], Stockfish faced Leela again in the superfinal, losing 52.5–47.5. However, Stockfish has won every superfinal since: beating Leela 53.5–46.5 in [[TCEC Season 18|season 18]], 54.5–45.5 in [[TCEC Season 19|season 19]], 53–47 in [[TCEC Season 20|season 20]], and 56–44 in [[TCEC Season 21|season 21]].<ref name="TCEC archive" /> In Season 22, Komodo Dragon beat out Leela to qualify for the superfinal, but was crushed by Stockfish 59.5-40.5. Stockfish did not lose an opening pair in this match.<ref>{{cite web|url=https://www.chessdom.com/stockfish-wins-the-tcec-season-22-superfinal-by-19-points/|title=Stockfish wins the TCEC Season 22 Superfinal by 19 points|publisher=Chessdom|date=23 April 2022|access-date=28 March 2023|archive-date=28 March 2023|archive-url=https://web.archive.org/web/20230328080342/https://www.chessdom.com/stockfish-wins-the-tcec-season-22-superfinal-by-19-points/|url-status=live}}</ref> Leela made the superfinal in Seasons 23 and 24, but was crushed by Stockfish both times (58.5-41.5 and 58-42).<ref>{{cite web|url=https://www.chessdom.com/stockfish-wins-tcec-season-23/|title=Stockfish wins TCEC Season 23|publisher=Chessdom|date=18 November 2022|access-date=28 March 2023|archive-date=28 March 2023|archive-url=https://web.archive.org/web/20230328080342/https://www.chessdom.com/stockfish-wins-tcec-season-23/|url-status=live}}</ref><ref>See the TCEC archives, https://tcec-chess.com/#div=sf&game=1&season=24 {{Webarchive|url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=24 |date=2019-09-04 }}</ref> In Season 25, Stockfish once again defeated Leela, but this time by a narrower margin of 52-48.<ref>See the TCEC archives, https://tcec-chess.com/#div=sf&game=1&season=25 {{Webarchive|url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=25 |date=2019-09-04 }}</ref>
+
+Stockfish also took part in the TCEC cup, winning the first edition, but was surprisingly upset by Houdini in the semifinals of the second edition.<ref name="TCEC archive" /><ref>{{cite web|title=Houdunit ? Most shocking chess engine game of TCEC 2019|website=[[YouTube]]|date=2 February 2019 |url=https://www.youtube.com/watch?v=aj-K2o_RNXY|access-date=2019-02-04|archive-date=2020-02-09|archive-url=https://web.archive.org/web/20200209120438/https://www.youtube.com/watch?v=aj-K2o_RNXY|url-status=live}}</ref> Stockfish recovered to beat Komodo in the third-place playoff.<ref name="TCEC archive" /> In the third edition, Stockfish made it to the finals, but was defeated by [[Leela Chess Zero]] after blundering in a 7-man [[endgame tablebase]] draw. It turned this result around in the fourth edition, defeating Leela in the final 4.5–3.5.<ref name="TCEC archive" /> In TCEC Cup 6, Stockfish finished third after losing to AllieStein in the semifinals, the first time it had failed to make the finals. Since then, Stockfish has consistently won the tournament, with the exception of the 11th edition which Leela won 8.5-7.5.
+
+<div style=display:inline-table>
+{| class="wikitable"
+|+Main league
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|Season 1
+|2010
+|100+10
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 1 |url=https://tcec-chess.com/#div=1&game=1&season=1 |access-date=8 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=1&game=1&season=1 |url-status=live }}</ref>
+|-
+|Season 2
+|2011
+|150+30
+|5th
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 2 |url=https://tcec-chess.com/#div=a&game=1&season=2 |access-date=8 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=a&game=1&season=2 |url-status=live }}</ref>
+|-
+|Season 4
+|2013
+|150+60
+| style="background:#DFDFDF;" |'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 4 |url=https://tcec-chess.com/#div=sf&game=1&season=4 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=4 |url-status=live }}</ref>
+|-
+|Season 5
+|2013
+|120+30
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 5 |url=https://tcec-chess.com/#div=sf&game=1&season=5 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=5 |url-status=live }}</ref>
+|-
+|Season 6
+|2014
+|120+30
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 6 |url=https://tcec-chess.com/#div=sf&game=1&season=6 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=6 |url-status=live }}</ref>
+|-
+|Season 7
+|2014
+|120+30
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 7 |url=https://tcec-chess.com/#div=sf&game=1&season=7 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=7 |url-status=live }}</ref>
+|-
+|Season 8
+|2015
+|180+30
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 8 |url=https://tcec-chess.com/#div=sf&game=1&season=8 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=8 |url-status=live }}</ref>
+|-
+|Season 9
+|2016
+|180+15
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 9 |url=https://tcec-chess.com/#div=sf&game=1&season=9 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=9 |url-status=live }}</ref>
+|-
+|Season 10
+|2017
+|90+10
+|style="background:#DFDFDF;"|'''2nd'''{{refn|group=note|name=dsqhoudini|This result takes into account the disqualification of Houdini 6 from TCEC.}}
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 10 |url=https://tcec-chess.com/#game=1&season=10&stage=2 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&season=10&stage=2 |url-status=live }}</ref>
+|-
+|Season 11
+|2018
+|120+15
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 11 |url=https://tcec-chess.com/#div=sf&game=1&season=11 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=11 |url-status=live }}</ref>
+|-
+|Season 12
+|2018
+|120+15
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 12 |url=https://tcec-chess.com/#div=sf&game=1&season=12 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=12 |url-status=live }}</ref>
+|-
+|Season 13
+|2018
+|120+15
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 13 |url=https://tcec-chess.com/#div=sf&game=1&season=13 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=13 |url-status=live }}</ref>
+|-
+|Season 14
+|2018
+|120+15
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 14 |url=https://tcec-chess.com/#div=sf&game=1&season=14 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=14 |url-status=live }}</ref>
+|-
+|Season 15
+|2019
+|120+10
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 15 |url=https://tcec-chess.com/#div=sf&game=1&season=15 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=15 |url-status=live }}</ref>
+|-
+|Season 16
+|2019
+|120+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 16 |url=https://tcec-chess.com/#div=sf&game=1&season=16 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=16 |url-status=live }}</ref>
+|-
+|Season 17
+|2020
+|90+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 17 |url=https://tcec-chess.com/#div=sf&game=1&season=17 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=17 |url-status=live }}</ref>
+|-
+|Season 18
+|2020
+|90+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 18 |url=https://tcec-chess.com/#div=sf&game=1&season=18 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=18 |url-status=live }}</ref>
+|-
+|Season 19
+|2020
+|120+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 19 |url=https://tcec-chess.com/#div=sf&game=1&season=19 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=19 |url-status=live }}</ref>
+|-
+|Season 20
+|2020
+|120+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 20 |url=https://tcec-chess.com/#div=sf&game=1&season=20 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=20 |url-status=live }}</ref>
+|-
+|Season 21
+|2021
+|120+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 21 |url=https://tcec-chess.com/#div=sf&game=1&season=21 |access-date=5 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=21 |url-status=live }}</ref>
+|-
+|Season 22
+|2022
+|120+12
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 22 |url=https://tcec-chess.com/#div=sf&game=1&season=22 |access-date=20 April 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=22 |url-status=live }}</ref>
+|-
+|Season 23
+|2022
+|120+12
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 23 |url=https://tcec-chess.com/#div=sf&game=1&season=23 |access-date=17 November 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=23 |url-status=live }}</ref>
+|-
+|Season 24
+|2023
+|120+12
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 24 |url=https://tcec-chess.com/#div=sf&game=1&season=24 |access-date=27 April 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=24 |url-status=live }}</ref>
+|-
+|Season 25
+|2023
+|120+12
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 25 |url=https://tcec-chess.com/#div=sf&game=1&season=25 |access-date=29 October 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=25 |url-status=live }}</ref>
+|-
+|Season 26
+|2024
+|120+12
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Season 26 |url=https://tcec-chess.com/#div=sf&game=1&season=26 |access-date=31 May 2024 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sf&game=1&season=26 |url-status=live }}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Cup
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|Cup 1
+|2018
+|30+10
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 1 |url=https://tcec-chess.com/#game=1&round=fl&season=cup1 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup1 |url-status=live }}</ref>
+|-
+|Cup 2
+|2019
+|30+5
+|style="background:#DFDFDF;"|'''2nd'''{{refn|group=note|name=dsqhoudini}}
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 2 |url=https://tcec-chess.com/#game=1&round=fl&season=cup2 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup2 |url-status=live }}</ref>
+|-
+|Cup 3
+|2019
+|30+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 3 |url=https://tcec-chess.com/#game=1&round=fl&season=cup3 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup3 |url-status=live }}</ref>
+|-
+|Cup 4
+|2019
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 4 |url=https://tcec-chess.com/#game=1&round=fl&season=cup4 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup4 |url-status=live }}</ref>
+|-
+|Cup 5
+|2020
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 5 |url=https://tcec-chess.com/#game=1&round=fl&season=cup5 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup5 |url-status=live }}</ref>
+|-
+|Cup 6
+|2020
+|30+5
+|style="background:#FFDF9F;"|'''3rd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 6 |url=https://tcec-chess.com/#game=1&round=fl&season=cup6 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup6 |url-status=live }}</ref>
+|-
+|Cup 7
+|2020
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 7 |url=https://tcec-chess.com/#game=1&round=fl&season=cup7 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup7 |url-status=live }}</ref>
+|-
+|Cup 8
+|2021
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 8 |url=https://tcec-chess.com/#game=1&round=fl&season=cup8 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup8 |url-status=live }}</ref>
+|-
+|Cup 9
+|2021
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 9 |url=https://tcec-chess.com/#game=1&round=fl&season=cup9 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup9 |url-status=live }}</ref>
+|-
+|Cup 10
+|2022
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 10 |url=https://tcec-chess.com/#game=1&round=fl&season=cup10 |access-date=26 May 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup10 |url-status=live }}</ref>
+|-
+|Cup 11
+|2023
+|30+3
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 11 |url=https://tcec-chess.com/#game=1&round=fl&season=cup11 |access-date=14 January 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup11 |url-status=live }}</ref>
+|-
+|Cup 12
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 12 |url=https://tcec-chess.com/#game=1&round=fl&season=cup12 |access-date=28 July 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup12 |url-status=live }}</ref>
+|-
+|Cup 13
+|2024
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Cup 13 |url=https://tcec-chess.com/#game=1&round=fl&season=cup13 |access-date=6 March 2024 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#game=1&round=fl&season=cup13 |url-status=live }}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Fischer random chess (FRC)
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|FRC 1
+|2019
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC1 |url=https://tcec-chess.com/#div=frcsufi&game=1&season=16 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frcsufi&game=1&season=16 |url-status=live }}</ref>
+|-
+|FRC 2
+|2020
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC2 |url=https://tcec-chess.com/#div=frc2f&game=1&season=19 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frc2f&game=1&season=19 |url-status=live }}</ref>
+|-
+|FRC 3
+|2021
+|30+5
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC3 |url=https://tcec-chess.com/#div=frc3f&game=1&season=20 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frc3f&game=1&season=20 |url-status=live }}</ref>
+|-
+|FRC 4
+|2022
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC4 |url=https://tcec-chess.com/#div=frc4f&game=1&season=21 |access-date=7 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frc4f&game=1&season=21 |url-status=live }}</ref>
+|-
+|FRC 5
+|2022
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC5 |url=https://tcec-chess.com/#div=frc5f&game=1&season=22 |access-date=21 July 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frc5f&game=1&season=22 |url-status=live }}</ref>
+|-
+|FRC 6
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRC6 |url=https://tcec-chess.com/#div=frc6f&game=1&season=24 |access-date=30 May 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frc6f&game=1&season=24 |url-status=live }}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Swiss
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|Swiss 1
+|2021
+|45+7
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Swiss 1 |url=https://tcec-chess.com/#div=sw1&game=1&season=20 |access-date=19 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sw1&game=1&season=20 |url-status=live }}</ref>
+|-
+|Swiss 2
+|2021
+|45+7
+|style="background:#DFDFDF;"|'''2nd'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Swiss 2 |url=https://tcec-chess.com/#div=sw2&game=1&season=21 |access-date=19 March 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sw2&game=1&season=21 |url-status=live }}</ref>
+|-
+|Swiss 3
+|2022
+|45+4.5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship Swiss 3 |url=https://tcec-chess.com/#div=sw3&game=1&season=22 |access-date=4 July 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sw3&game=1&season=22 |url-status=live }}</ref>
+|-
+|Swiss 4
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=TCEC Swiss 4|url=https://tcec-chess.com/#div=sw4&game=1&season=24|access-date=13 February 2023|website=tcec-chess.com|archive-date=4 September 2019|archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sw4&game=1&season=24|url-status=live}}</ref>
+|-
+|Swiss 5
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=TCEC Swiss 5|url=https://tcec-chess.com/#div=sw5&game=1&season=25|access-date=15 July 2023|website=tcec-chess.com|archive-date=4 September 2019|archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=sw5&game=1&season=25|url-status=live}}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Double fischer random chess (DFRC)
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|DFRC 1
+|2022
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship DFRC 1 |url=https://tcec-chess.com/#div=dfrc1&game=1&season=22 |access-date=4 August 2022 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=dfrc1&game=1&season=22 |url-status=live }}</ref>
+|-
+|DFRC 2
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship DFRC 2 |url=https://tcec-chess.com/#div=dfrc2f&game=1&season=24 |access-date=15 June 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=dfrc2f&game=1&season=24 |url-status=live }}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Fischer random double (FRD)
+!Event
+!Year
+!Time Controls
+!Result
+!Ref
+|-
+|FRD 1
+|2023
+|30+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Top Chess Engine Championship FRD1 |url=https://tcec-chess.com/#div=frd1f&game=1&season=25 |access-date=19 December 2023 |website=tcec-chess.com |archive-date=4 September 2019 |archive-url=https://web.archive.org/web/20190904093219/https://tcec-chess.com/#div=frd1f&game=1&season=25 |url-status=live }}</ref>
+|}
+</div>
+
+=== Chess.com Computer Chess Championship ===
+Ever since [[chess.com]] hosted its first [[Chess.com Computer Chess Championship]] in 2018, Stockfish has been the most successful engine. It dominated the earlier championships, winning six consecutive titles before finishing second in CCC7. Since then, its dominance has come under threat from the neural-network engines Leelenstein and [[Leela Chess Zero]], but it has continued to perform well, reaching at least the superfinal in every edition up to CCC11. CCC12 had for the first time a knockout format, with seeding placing CCC11 finalists Stockfish and Leela in the same half. Leela eliminated Stockfish in the semi-finals. However, a post-tournament match against the loser of the final, Leelenstein, saw Stockfish winning in the same format as the main event. After finishing second again to Leela in CCC13, and an uncharacteristic fourth in CCC14, Stockfish went on a long winning streak, taking first place in every championship since.
+
+<div style=display:inline-table>
+{| class="wikitable"
+|+Main events
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|CCC
+|2017
+|15+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/news/view/stockfish-wins-chess-com-computer-championship|access-date=22 August 2023|website=Chess.com|archive-date=9 November 2020|archive-url=https://web.archive.org/web/20201109012430/https://www.chess.com/news/view/stockfish-wins-chess-com-computer-championship|url-status=live}}</ref>
+|-
+| CCC 1: Rapid Rumble || 2018 || 15+5 || style="background:#FFFFBF;"|'''1st''' || <ref name=":2">{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887|title=Stockfish Wins Computer Chess Championship Rapid; Lc0 Finishes 3rd|last=Cilento|first=Pete|website=Chess.com|date=4 October 2018 |language=en-US|access-date=20 June 2019|archive-date=6 October 2018|archive-url=https://web.archive.org/web/20181006195513/https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-rapid-lc0-finishes-3rd-3887|url-status=live}}</ref>
+|-
+| CCC 2: Blitz Battle || 2018 || 5+2 || style="background:#FFFFBF;"|'''1st''' || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-blitz|title=Stockfish Wins Computer Chess Championship Blitz|last=Cilento|first=Pete|website=Chess.com|date=19 November 2018 |language=en-US|access-date=20 June 2019|archive-date=22 November 2018|archive-url=https://web.archive.org/web/20181122132147/https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-blitz|url-status=live}}</ref>
+|-
+| CCC 3: Rapid Redux || 2019 || 30+5 || style="background:#FFFFBF;"|'''1st''' || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-rapid-computer-championship-over-lc0-bullet-chess-next|title=Stockfish Wins Rapid Computer Championship Over Lc0; Bullet Chess Next|last=Cilento|first=Pete|website=Chess.com|date=22 January 2019 |language=en-US|access-date=20 June 2019|archive-date=7 November 2020|archive-url=https://web.archive.org/web/20201107232203/https://www.chess.com/news/view/stockfish-wins-rapid-computer-championship-over-lc0-bullet-chess-next|url-status=live}}</ref>
+|-
+| CCC 4: Bullet Brawl || 2019 || 1+2 || style="background:#FFFFBF;"|'''1st''' || <ref>{{Cite web|url=https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-bullet-escalation-next|title=Stockfish Wins Computer Chess Championship Bullet; 'Escalation' Next|last=Cilento|first=Pete|website=Chess.com|date=30 January 2019 |language=en-US|access-date=20 June 2019|archive-date=19 January 2021|archive-url=https://web.archive.org/web/20210119100056/https://www.chess.com/news/view/stockfish-wins-computer-chess-championship-bullet-escalation-next|url-status=live}}</ref>
+|-
+| CCC 5: Escalation || 2019 || 10+5 || style="background:#FFFFBF;"|'''1st''' || <ref>{{cite web|url=https://cccfiles.chess.com/archive/tournament-18208.pgn|title=Lc0 versus Stockfish {{!}} CCC 5: Finals (10{{!}}5)|website=[[Chess.com]]|date=2 August 2019|access-date=17 August 2019|archive-date=8 March 2021|archive-url=https://web.archive.org/web/20210308035855/https://cccfiles.chess.com/archive/tournament-18208.pgn|url-status=live}}</ref>
+|-
+| CCC 6: Winter Classic || 2019 || 10+10 || style="background:#FFFFBF;"|'''1st''' || <ref>{{Cite web|url=https://www.chess.com/news/view/computer-chess-championship-playing-blitz-after-stockfish-defends-title|title=Computer Chess Championship Plays Blitz After Stockfish Defends Title|last=Cilento|first=Pete|website=Chess.com|date=20 March 2019 |language=en-US|access-date=20 June 2019|archive-date=11 November 2020|archive-url=https://web.archive.org/web/20201111185502/https://www.chess.com/news/view/computer-chess-championship-playing-blitz-after-stockfish-defends-title|url-status=live}}</ref>
+|-
+| CCC 7: Blitz Bonanza || 2019 || 5+2 || style="background:#DFDFDF;"| '''2nd''' || <ref name="CCC7">{{cite web |last1=Cilento |first1=Pete |title=Lc0 Wins Computer Chess Championship, Makes History |url=https://www.chess.com/news/view/lc0-wins-computer-chess-championship-makes-history |website=Chess.com |access-date=18 April 2019 |date=17 April 2019 |archive-date=7 November 2020 |archive-url=https://web.archive.org/web/20201107235909/https://www.chess.com/news/view/lc0-wins-computer-chess-championship-makes-history |url-status=live }}</ref>
+|-
+| CCC 8: Deep Dive || 2019 || 15+5 || style="background:#FFFFBF;"|'''1st''' ||<ref name=":3">{{Cite web|url=https://www.chess.com/news/view/computer-chess-championship-9-stockfish-lc0|title=Stockfish Strikes Back, Tops Lc0 In Computer Chess Championship|last=Pete (pete)|website=Chess.com|date=24 May 2019 |language=en-US|access-date=29 May 2019|archive-date=25 May 2019|archive-url=https://web.archive.org/web/20190525015326/https://www.chess.com/news/view/computer-chess-championship-9-stockfish-lc0|url-status=live}}</ref>
+|-
+| CCC 9: The Gauntlet || 2019 || 5+2, 10+5 || style="background:#FFFFBF;"|'''1st''' ||<ref name="CCC9">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc-9-the-gauntlet-final |website=Chess.com |access-date=9 July 2019 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-9-the-gauntlet-final |url-status=live }}</ref>
+|-
+| CCC 10: Double Digits || 2019 || 10+3 || style="background:#DFDFDF;"| '''2nd''' ||<ref name="CCC10">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc10-finals |website=Chess.com |access-date=30 July 2019 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc10-finals |url-status=live }}</ref>
+|-
+| CCC 11|| 2019 || 30+5 || style="background:#DFDFDF;"| '''2nd''' ||<ref name="CCC11">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc11-finals |website=Chess.com |access-date=27 December 2019 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc11-finals |url-status=live }}</ref>
+|-
+| CCC 12: Bullet Madness!|| 2020 || 1+1 || style="background:#FFDF9F;"| '''3rd''' ||<ref name="CCC12">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc1218-scorpio-vs-stockfish-thirdplace-match |website=Chess.com |access-date=28 January 2020 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc1218-scorpio-vs-stockfish-thirdplace-match |url-status=live }}</ref>
+|-
+| CCC 13: Heptagonal || 2020 || 5+5 || style="background:#DFDFDF;"| '''2nd''' ||<ref name="CCC13">{{cite web |title=Computer Chess Championship |url=https://www.chess.com/computer-chess-championship#event=ccc13-finals |website=Chess.com |access-date=30 April 2020 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc13-finals |url-status=live }}</ref>
+|-
+|CCC 14
+|2020
+|15+5, 5+2, 1+1
+|4th
+|<ref>{{Cite web|title=CCC 14|url=https://www.chess.com/computer-chess-championship#event=ccc1429-stockfish-vs-lc0-tiebreak|access-date=16 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc1429-stockfish-vs-lc0-tiebreak|url-status=live}}</ref>
+|-
+|CCC Blitz 2020
+|2020
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC Blitz Championship 2020 Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2020-finals|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2020-finals|url-status=live}}</ref>
+|-
+|CCC Rapid 2021
+|2021
+|15+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC Rapid 2021 Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-rapid-2021-finals|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-rapid-2021-finals|url-status=live}}</ref>
+|-
+| CCC Blitz 2021 || 2021 || 5+5 || style="background:#FFFFBF;"|'''1st''' ||<ref name="CCC Blitz 2021">{{cite web |title=CCC Blitz Championship 2021 Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2021-finals |website=Chess.com |access-date=6 February 2022 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-blitz-championship-2021-finals |url-status=live }}</ref>
+|-
+| CCC Chess 960 Blitz || 2021 || 5+5 || style="background:#FFFFBF;"|'''1st''' ||<ref name="CCC Chess 960 Blitz">{{cite web |title=CCC 960 Blitz Championship Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-chess-960-blitz-championship-finals |website=Chess.com |access-date=6 February 2022 |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-chess-960-blitz-championship-finals |url-status=live }}</ref>
+|-
+| CCC 16: Rapid || 2021 || 15+3 || style="background:#FFFFBF;"|'''1st''' ||<ref name="CCC16">{{cite web|title=CCC 16: Rapid Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-16-rapid-finals|website=Chess.com|access-date=23 November 2021|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-16-rapid-finals|url-status=live}}</ref>
+|-
+| CCC 16: Bullet || 2021 || 2+1 || style="background:#FFFFBF;"|'''1st''' ||<ref name="CCC16Bullet">{{cite web|title=CCC 16: Bullet Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-16-bullet-finals|website=Chess.com|access-date=6 January 2022|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-16-bullet-finals|url-status=live}}</ref>
+|-
+|CCC 16: Blitz
+|2022
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC 16: Blitz Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-16-blitz-finals|access-date=16 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-16-blitz-finals|url-status=live}}</ref>
+|-
+|CCC 17: Rapid
+|2022
+|15+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC 17: Rapid Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-17-rapid-finals|access-date=30 March 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-17-rapid-finals|url-status=live}}</ref>
+|-
+|CCC 17: Bullet
+|2022
+|2+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC 17: Bullet Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-17-bullet-finals|access-date=18 May 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-17-bullet-finals|url-status=live}}</ref>
+|-
+|CCC 17: Blitz
+|2022
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=CCC 17: Blitz Finals|url=https://www.chess.com/computer-chess-championship#event=ccc-17-blitz-finals|access-date=13 July 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-17-blitz-finals|url-status=live}}</ref>
+|-
+|CCC 18: Rapid
+|2022
+|15+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 18: Rapid Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-18-rapid-finals |access-date=18 August 2022 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-18-rapid-finals |url-status=live }}</ref>
+|-
+|CCC 19: Blitz
+|2022
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 19: Blitz Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-19-blitz-finals |access-date=13 October 2022 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-19-blitz-finals |url-status=live }}</ref>
+|-
+|CCC 19: Rapid
+|2022
+|15+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 19: Rapid Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-19-rapid-finals |access-date=3 December 2022 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-19-rapid-finals |url-status=live }}</ref>
+|-
+|CCC 19: Bullet
+|2023
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 19: Bullet Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-19-bullet-finals |access-date=22 January 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-19-bullet-finals |url-status=live }}</ref>
+|-
+|CCC 20: Blitz
+|2023
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 20: Blitz Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-20-blitz-finals |access-date=23 March 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-20-blitz-finals |url-status=live }}</ref>
+|-
+|CCC 20: Rapid
+|2023
+|10+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 20: Rapid Finals |url=https://www.chess.com/computer-chess-championship#event=ccc-20-rapid-finals |access-date=1 June 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc-20-rapid-finals |url-status=live }}</ref>
+|-
+|CCC 20: Bullet
+|2023
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 20: Bullet Finals |url=https://www.chess.com/computer-chess-championship#event=ccc20-bullet-finals |access-date=20 July 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc20-bullet-finals |url-status=live }}</ref>
+|-
+|CCC 21: Blitz
+|2023
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 21: Blitz Finals |url=https://www.chess.com/computer-chess-championship#event=ccc21-blitz-finals |access-date=22 August 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc21-blitz-finals |url-status=live }}</ref>
+|-
+|CCC 21: Rapid
+|2023
+|10+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 21: Rapid Finals |url=https://www.chess.com/computer-chess-championship#event=ccc21-rapid-finals |access-date=13 October 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc21-rapid-finals |url-status=live }}</ref>
+|-
+|CCC 21: Bullet
+|2023
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Computer Chess Championship with Top Engines |url=https://www.chess.com/computer-chess-championship#event=ccc21-bullet-finals |access-date=2023-12-12 |website=Chess.com |language=en-US |archive-date=2018-11-02 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc21-bullet-finals |url-status=live }}</ref>
+|-
+|CCC 22: Blitz
+|2024
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 22: Blitz Finals |url=https://www.chess.com/computer-chess-championship#event=ccc22-blitz-finals |access-date=19 January 2024 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc22-blitz-finals |url-status=live }}</ref>
+|-
+|CCC 22: Rapid
+|2024
+|10+3
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 22: Rapid Finals |url=https://www.chess.com/computer-chess-championship#event=ccc22-rapid-finals |access-date=1 May 2024 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc22-rapid-finals |url-status=live }}</ref>
+|-
+|CCC 22: Bullet
+|2024
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 22: Bullet Finals |url=https://www.chess.com/computer-chess-championship#event=ccc22-bullet-finals |access-date=31 May 2024 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc22-bullet-finals |url-status=live }}</ref>
+|-
+|CCC 23: Blitz
+|2024
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=CCC 23: Blitz Finals |url=https://www.chess.com/computer-chess-championship#event=ccc23-blitz-finals |access-date=17 July 2024 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=ccc23-blitz-finals |url-status=live }}</ref>
+|}
+</div>
+<div style=display:inline-table>
+{| class="wikitable"
+|+Bonus
+|-
+! Event !! Year !! Time Controls !! Result !! Ref
+|-
+|CPU Blitz Madness
+|2020
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=cpu-blitz-madness|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=cpu-blitz-madness|url-status=live}}</ref>
+|-
+|Trillion-Node Throwdown III
+|2020
+|150+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=trillionnode-throwdown-iii|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=trillionnode-throwdown-iii|url-status=live}}</ref>
+|-
+|No-Castle II
+|2020
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=nocastle-ii|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=nocastle-ii|url-status=live}}</ref>
+|-
+|Bullet Chess is Fun
+|2020
+|2+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=bullet-chess-is-fun|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=bullet-chess-is-fun|url-status=live}}</ref>
+|-
+|Checkmate in 4
+|2020
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=checkmate-in-4|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=checkmate-in-4|url-status=live}}</ref>
+|-
+|[[Handicap (chess)|Odds]] Ladder
+|2020
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=odds-ladder|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=odds-ladder|url-status=live}}</ref>
+|-
+|Merry Queen Sac
+|2020
+|2+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=merry-queen-sac|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=merry-queen-sac|url-status=live}}</ref>
+|-
+|[[Budapest Gambit|Budapest]] Bullet
+|2020
+|2+1
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=budapest-bullet|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=budapest-bullet|url-status=live}}</ref>
+|-
+|King Gambit Madness
+|2021
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=king-gambit-madness|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=king-gambit-madness|url-status=live}}</ref>
+|-
+|Drawkiller Update Party
+|2021
+|2+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=drawkiller-update-party|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=drawkiller-update-party|url-status=live}}</ref>
+|-
+|To Castle Or Not To Castle II
+|2021
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=to-castle-or-not-to-castle-ii|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=to-castle-or-not-to-castle-ii|url-status=live}}</ref>
+|-
+|Eco Mega-Match 2 (part 1)
+|2021
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=eco-megamatch-2-part-1|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=eco-megamatch-2-part-1|url-status=live}}</ref>
+|-
+|Eco Mega-Match 2 (part 2)
+|2021
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=eco-megamatch-2-part-2|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=eco-megamatch-2-part-2|url-status=live}}</ref>
+|-
+|[[Caro–Kann Defence|Caro-Kann]] Special
+|2021
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=carokann-special|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=carokann-special|url-status=live}}</ref>
+|-
+|[[King's Indian Defence|King's Indian]] Defense Special
+|2021
+|10+2
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=kings-indian-defense-special|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=kings-indian-defense-special|url-status=live}}</ref>
+|-
+|[[Dutch Defence|Dutch Defense]] Special
+|2021
+|10+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=dutch-defense-special|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=dutch-defense-special|url-status=live}}</ref>
+|-
+|Evans Gambit Madness
+|2021
+|10+2
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=evans-gambit-madness|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=evans-gambit-madness|url-status=live}}</ref>
+|-
+|[[Sicilian Defence, Najdorf Variation|Sicilian Najdorf]] Special
+|2021
+|10+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=sicilian-najdorf-special|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=sicilian-najdorf-special|url-status=live}}</ref>
+|-
+|Belgian Stew
+|2021
+|2+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=belgian-stew|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=belgian-stew|url-status=live}}</ref>
+|-
+|[[Saragossa Opening|Saragossa]]
+|2021
+|2+1
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=saragossa|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=saragossa|url-status=live}}</ref>
+|-
+|Double [[Bongcloud Attack|Bongcloud]], Rapid
+|2021
+|10+2
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=double-bongcloud-rapid|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=double-bongcloud-rapid|url-status=live}}</ref>
+|-
+|[[Hillbilly Attack|The Hillbilly Attack]]
+|2021
+|10+2
+|style="background:#FFDF9F;"| '''3rd'''
+|<ref>{{Cite web|title=Computer Chess Championship|url=https://www.chess.com/computer-chess-championship#event=the-hillbilly-attack|access-date=24 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=the-hillbilly-attack|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Danish Gambit|Danish Gambit Accepted]]
+|2021
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Romantic Openings: Danish Gambit Accepted|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-danish-gambit-accepted|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-danish-gambit-accepted|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Evans Gambit|Evans Gambit Accepted]]
+|2021
+|3+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Romantic Openings: Evans Gambit Accepted|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-evans-gambit-accepted|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-evans-gambit-accepted|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Bishop's Opening|Urusov Gambit Accepted]]
+|2021
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Romantic Openings: Urusov Gambit Accepted|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-urusov-gambit-accepted|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-urusov-gambit-accepted|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Blackmar–Diemer Gambit|Blackmar-Diemer Gambit]]
+|2021
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Romantic Openings: Blackmar-Diemer Gambit|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-blackmardiemer-gambit|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-blackmardiemer-gambit|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Stafford Gambit]]
+|2021
+|1+2
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Romantic Openings: Stafford Gambit|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-stafford-gambit|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-stafford-gambit|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Bishop's Opening|Calabrese Countergambit]]
+|2021
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Romantic Openings: Calabrese Countergambit|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-calabrese-countergambit|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-calabrese-countergambit|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Two Knights Defense, Traxler Counterattack|Traxler Counterattack]]
+|2021
+|5+2
+|style="background:#DFDFDF;"| '''2nd'''
+|<ref>{{Cite web|title=Romantic Openings: Traxler Counterattack|url=https://www.chess.com/computer-chess-championship#event=romantic-openings-traxler-counterattack|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-traxler-counterattack|url-status=live}}</ref>
+|-
+|No Black [[Castling (chess)|Castling]]
+|2022
+|5+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=No Black Castling Bonus|url=https://www.chess.com/computer-chess-championship#event=no-black-castling-bonus|access-date=7 February 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=no-black-castling-bonus|url-status=live}}</ref>
+|-
+|Draw Killer Bonus
+|2022
+|15+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web|title=Draw Killer Bonus|url=https://www.chess.com/computer-chess-championship#event=draw-killer-bonus|access-date=21 July 2022|website=Chess.com|archive-date=2 November 2018|archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=draw-killer-bonus|url-status=live}}</ref>
+|-
+|Romantic Openings: [[Wing Gambit]]
+|2022
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Romantic Openings: Wing Gambit |url=https://www.chess.com/computer-chess-championship#event=romantic-openings-wing-gambit |access-date=18 August 2022 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=romantic-openings-wing-gambit |url-status=live }}</ref>
+|-
+|Chess 324 Bonus
+|2022
+|5+2
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Chess 324 Bonus |url=https://www.chess.com/computer-chess-championship#event=chess-324-bonus |access-date=9 September 2022 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=chess-324-bonus |url-status=live }}</ref>
+|-
+|Classical Cup #1
+|2023
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Classical Cup #1: Match 15 |url=https://www.chess.com/computer-chess-championship#event=classical-cup-1-match-15 |access-date=29 October 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=classical-cup-1-match-15 |url-status=live }}</ref>
+|-
+|Rating Brawl: Fall 2023
+|2023
+|1+1
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Rating Brawl: Fall 2023 |url=https://www.chess.com/computer-chess-championship#event=rating-brawl-fall-2023 |access-date=6 November 2023 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=rating-brawl-fall-2023 |url-status=live }}</ref>
+|-
+|Classical Cup #2
+|2024
+|30+5
+|style="background:#FFFFBF;"|'''1st'''
+|<ref>{{Cite web |title=Classical Cup #2: Match 14 |url=https://www.chess.com/computer-chess-championship#event=classical-cup-2-match-14 |access-date=3 April 2024 |website=[[Chess.com]] |archive-date=2 November 2018 |archive-url=https://web.archive.org/web/20181102011121/https://www.chess.com/computer-chess-championship#event=classical-cup-2-match-14 |url-status=live }}</ref>
+|}
+</div>
+
+== Other matches ==
+
+=== Stockfish 5 versus Nakamura ===
+Stockfish's strength relative to the best human chess players was most apparent in a handicap match with grandmaster [[Hikaru Nakamura]] (2798-rated) in August 2014. In the first two games of the match, Nakamura had the assistance of an older version of [[Rybka]], and in the next two games, he received White with pawn [[Handicap (chess)|odds]] but no assistance. Nakamura was the world's fifth-best human chess player at the time of the match, while Stockfish 5 was denied use of its opening book and endgame tablebase. Stockfish won each half of the match 1.5–0.5. Both of Stockfish's wins arose from positions in which Nakamura, as is typical for his playing style, pressed for a win instead of acquiescing to a draw.<ref>{{Cite web|url=http://www.chess.com/news/stockfish-outlasts-nakamura-3634.|title=Chess News and Event Coverage|date=9 May 2024|access-date=9 November 2017|archive-date=5 May 2022|archive-url=https://web.archive.org/web/20220505191404/http://www.chess.com/news/stockfish-outlasts-nakamura-3634.|url-status=live}}</ref>
+
+=== Stockfish 8 versus AlphaZero ===
+{{main|AlphaZero}}
+
+In December 2017, Stockfish 8 was used as a benchmark to test [[Google]] division [[DeepMind]]'s [[AlphaZero]], with each engine supported by different hardware. AlphaZero was trained through self-play for a total of nine hours, and reached Stockfish's level after just four.<ref>{{Cite web |last=DeepMind |date=6 December 2018 |title=AlphaZero: Shedding new light on chess, shogi, and Go |url=https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go |access-date=20 July 2020 |website=deepmind.com |archive-date=9 August 2019 |archive-url=https://web.archive.org/web/20190809103431/https://deepmind.com/blog/article/alphazero-shedding-new-light-grand-games-chess-shogi-and-go |url-status=live }}</ref><ref name="telegraph">{{Cite news |last1=Knapton |first1=Sarah |last2=Watson |first2=Leon |date=6 December 2017 |title=Entire human chess knowledge learned and surpassed by DeepMind's AlphaZero in four hours |language=en-GB |publisher=[[Telegraph.co.uk]] |url=https://www.telegraph.co.uk/science/2017/12/06/entire-human-chess-knowledge-learned-surpassed-deepminds-alphazero/ |access-date=6 December 2017 |archive-date=2 December 2020 |archive-url=https://web.archive.org/web/20201202114556/https://www.telegraph.co.uk/science/2017/12/06/entire-human-chess-knowledge-learned-surpassed-deepminds-alphazero/ |url-status=live }}</ref><ref>{{Cite news |last=Vincent |first=James |date=6 December 2017 |title=DeepMind's AI became a superhuman chess player in a few hours, just for fun |publisher=[[The Verge]] |url=https://www.theverge.com/2017/12/6/16741106/deepmind-ai-chess-alphazero-shogi-go |access-date=6 December 2017 |archive-date=2 December 2020 |archive-url=https://web.archive.org/web/20201202111249/https://www.theverge.com/2017/12/6/16741106/deepmind-ai-chess-alphazero-shogi-go |url-status=live }}</ref> In 100 games from the normal starting position, AlphaZero won 25 games as White, won 3 as Black, and drew the remaining 72, with 0 losses.<ref name="bbc">{{cite news |date=6 December 2017 |title='Superhuman' Google AI claims chess crown |work=BBC News |url=https://www.bbc.com/news/technology-42251535 |access-date=7 December 2017 |archive-date=2 December 2020 |archive-url=https://web.archive.org/web/20201202173750/https://www.bbc.com/news/technology-42251535 |url-status=live }}</ref> AlphaZero also played twelve 100-game matches against Stockfish starting from twelve popular openings for a final score of 290 wins, 886 draws and 24 losses, for a point score of 733:467.<ref name="crushes">{{cite web |date=6 December 2017 |title=DeepMind's AlphaZero crushes chess |url=https://chess24.com/en/read/news/deepmind-s-alphazero-crushes-chess |access-date=13 December 2017 |publisher=[[chess.com]] |archive-date=12 December 2018 |archive-url=https://web.archive.org/web/20181212141942/https://chess24.com/en/read/news/deepmind-s-alphazero-crushes-chess |url-status=live }}</ref>{{refn|group=note|The academic paper on this sequence of games does not provide the computer resources allocated to each engine.<ref name=preprint>{{Cite arXiv|author-link1=David Silver (programmer)|first1=David|last1= Silver|first2=Thomas|last2= Hubert|first3= Julian|last3=Schrittwieser|first4= Ioannis|last4=Antonoglou |first5= Matthew|last5= Lai|first6= Arthur|last6= Guez|first7= Marc|last7= Lanctot|first8= Laurent|last8= Sifre|first9= Dharshan|last9= Kumaran|first10= Thore|last10= Graepel|first11= Timothy|last11= Lillicrap|first12= Karen|last12= Simonyan|first13=Demis |last13=Hassabis|author-link13=Demis Hassabis |eprint=1712.01815|title=Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm|class=cs.AI|date=5 December 2017}}</ref>}}
+
+AlphaZero's victory over Stockfish sparked a flurry of activity in the computer chess community, leading to a new open-source engine aimed at replicating AlphaZero, known as [[Leela Chess Zero]]. By January 2019, Leela was able to defeat the version of Stockfish that played AlphaZero (Stockfish 8) in a 100-game match. An updated version of Stockfish narrowly defeated Leela Chess Zero in the superfinal of the [[TCEC Season 14|14th TCEC season]], 50.5–49.5 (+10 =81 −9),<ref name="TCEC archive" /> but lost the superfinal of the [[TCEC Season 15|next season]] to Leela 53.5–46.5 (+14 =79 -7).<ref name="TCEC archive" /><ref>{{Cite web |last=crem |title=Lc0 won TCEC 15 |url=http://blog.lczero.org/2019/05/lc0-won-tcec-15.html |access-date=20 June 2019 |language=en |archive-date=28 May 2019 |archive-url=https://web.archive.org/web/20190528132815/http://blog.lczero.org/2019/05/lc0-won-tcec-15.html |url-status=live }}</ref> The two engines remain very close in strength to each other even as they continue to improve: Leela defeated Stockfish in the superfinal of [[TCEC Season 17]], but Stockfish has won every TCEC season since.
+
+== Derivatives ==
+* YaneuraOu, a strong shogi engine and the origin of NNUE. Speaks USI, a variant of [[Universal Chess Interface|UCI]] for shogi.<ref>{{cite web |last1=yaneurao |last3=Nasu |first3=Yu |last2=Noda |first2=Hisayori |title=YaneuraOu: the World's Strongest Shogi engine (AI player), WCSC29 1st winner, educational and USI compliant engine. |url=https://github.com/yaneurao/YaneuraOu |website=GitHub |date=8 November 2020 |access-date=8 November 2020 |archive-date=17 January 2016 |archive-url=https://web.archive.org/web/20160117085555/https://github.com/yaneurao/YaneuraOu |url-status=live }}</ref>
+* Fairy Stockfish, a version modified to play [[fairy chess]]. Runs with regional variants (chess, shogi, [[makruk]], etc.) as well as other variants like [[antichess]].<ref>{{cite web |last1=Fichter |first1=Fabian |title=Fairy-Stockfish: chess variant engine supporting Xiangqi, Shogi, Janggi, Makruk, S-Chess, Crazyhouse, Bughouse, and many more |url=https://github.com/ianfab/Fairy-Stockfish |website=GitHub |date=8 November 2020 |access-date=8 November 2020 |archive-date=9 September 2020 |archive-url=https://web.archive.org/web/20200909165932/https://github.com/ianfab/Fairy-Stockfish |url-status=live }}</ref>
+* [[Lichess]] Stockfish, a version for playing variants without fairy pieces.<ref name=lichess>{{cite web |last1=Dugovic |first1=Daniel |title=ddugovic/Stockfish: Multi-variant fork of popular UCI chess engine |website=[[GitHub]] |url=https://github.com/ddugovic/Stockfish |date=8 November 2020 |access-date=8 November 2020 |archive-date=11 June 2018 |archive-url=https://web.archive.org/web/20180611035421/https://github.com/ddugovic/Stockfish |url-status=live }}</ref>
+* Crystal, which seeks to address common issues with chess engines such as positional or tactical blindness due to over reductions or over pruning, draw blindness due to the [[Fifty-move rule|move horizon]] and displayed principal variation reliability.<ref>{{Cite web |title=Crystal Github |url=https://github.com/jhellis3/Stockfish/tree/crystal |access-date=5 March 2022 |website=Github |archive-date=10 December 2021 |archive-url=https://web.archive.org/web/20211210164812/https://github.com/jhellis3/Stockfish/tree/crystal |url-status=live }}</ref>
+* Brainfish, which contains a reduced version of Cerebellum, a chess opening library.<ref>{{Cite web |title=Brainfish |url=https://zipproth.de/Brainfish/ |access-date=5 March 2022 |website=zipproth.de |archive-date=29 July 2016 |archive-url=https://web.archive.org/web/20160729082852/https://zipproth.de/Brainfish/ |url-status=live }}</ref>
+* BrainLearn, a derivative of Brainfish but with a persisted learning algorithm.<ref>{{Cite web |title=BrainLearn GIthub |url=https://github.com/amchess/BrainLearn |access-date=5 March 2022 |website=Github |archive-date=8 September 2019 |archive-url=https://web.archive.org/web/20190908154215/https://github.com/amchess/BrainLearn |url-status=live }}</ref>
+* ShashChess, a derivative with the goal to apply Alexander Shashin theory from the book ''Best Play: a New Method for Discovering the Strongest Move''.<ref>{{Cite book |title=Best Play: a New Method for Discovering the Strongest Move |year=2013 |isbn=978-1936277469|last1=Shashin |first1=Alexander |publisher=Mongoose Press }}</ref><ref>{{Cite web |title=ShashChess Github |url=https://github.com/amchess/ShashChess |access-date=5 March 2022 |website=Github |archive-date=13 November 2020 |archive-url=https://web.archive.org/web/20201113230837/https://github.com/amchess/ShashChess |url-status=live }}</ref>
+* Pikafish, a free, open source, and strong UCI [[Xiangqi]] engine derived from Stockfish that analyzes xiangqi positions and computes the optimal moves.<ref>{{cite web |title=official-pikafish / Pikafish Github |url=https://github.com/official-pikafish/Pikafish |publisher=PikaCat |access-date=2024-02-28 |archive-date=2024-03-08 |archive-url=https://web.archive.org/web/20240308104959/https://github.com/official-pikafish/Pikafish |url-status=live }}</ref>
+* [[Houdini (chess)|Houdini]] 6, a Stockfish derivative that did not comply with the terms of the GPL license.<ref name=":1">{{Cite web |title=Open Source Community Critical Of Chessbase, Fat Fritz 2 |url=https://www.chess.com/news/view/chessbase-fat-fritz-2-stockfish-leela-chess-zero |access-date=5 March 2022 |website=chess.com |date=25 February 2021 |archive-date=25 February 2021 |archive-url=https://web.archive.org/web/20210225015729/https://www.chess.com/news/view/chessbase-fat-fritz-2-stockfish-leela-chess-zero |url-status=live }}</ref><ref name="settlement">{{cite web |title=Chessbase, Stockfish Reach Settlement Over License Violation Claim |url=https://lichess.org/blog/Y3u1mRAAACIApBVn/settlement-reached-in-stockfish-v-chessbase |website=lichess.org |date=23 November 2022 |language=en-US |archive-url=https://archive.today/20221204135452/https://lichess.org/blog/Y3u1mRAAACIApBVn/settlement-reached-in-stockfish-v-chessbase |archive-date=2022-12-04}}</ref>
+* Fat Fritz 2, a Stockfish derivative that did not comply with the terms of the GPL license.<ref name=":1" /><ref>{{Cite web |title=Fat Fritz 2 is a rip-off |url=https://lichess.org/blog/YCvy7xMAACIA8007/fat-fritz-2-is-a-rip-off |access-date=2022-06-21 |website=lichess.org |date=18 February 2021 |language=en-US |archive-date=2021-02-18 |archive-url=https://web.archive.org/web/20210218203856/https://lichess.org/blog/YCvy7xMAACIA8007/fat-fritz-2-is-a-rip-off |url-status=live }}</ref><ref>{{Cite web |title=Statement on Fat Fritz 2 |url=https://stockfishchess.org/blog/2021/statement-on-fat-fritz-2/ |access-date=5 March 2022 |website=Stockfishchess |archive-date=23 February 2021 |archive-url=https://web.archive.org/web/20210223052559/https://stockfishchess.org/blog/2021/statement-on-fat-fritz-2/ |url-status=live }}</ref>{{R|settlement}}
+
+==Notes==
+{{Portal|Chess|FOSS}}
+{{Reflist|group=note}}
+{{clear}}
+
+== References ==
+{{Reflist|30em}}
+
+== Further reading ==
+*[http://www.schach-welt.de/schach/computerschach/interviews/romstad-kiiski-costalba-eng Interview with Tord Romstad (Norway), Joona Kiiski (Finland) and Marco Costalba (Italy)], programmers of Stockfish
+
+== External links ==
+*{{Official website}}
+*{{github|official-stockfish/Stockfish|Official code repository}}
+*[https://github.com/niklasf/stockfish.wasm WebAssembly port of Stockfish]
+*[http://abrok.eu/stockfish/ Development versions built for Linux and Windows]
+*[https://groups.google.com/forum/?fromgroups=#!forum/fishcooking Developers forum]
+*[http://tests.stockfishchess.org/tests Stockfish Testing Framework]
+
+{{Chess}}
+
+{{DEFAULTSORT:Stockfish (Chess)}}
+[[Category:2008 software]]
+[[Category:Chess engines]]
+[[Category:Free software programmed in C++]]
+[[Category:Distributed computing projects]]
+[[Category:Software using the GPL license]]
+[[Category:Applied machine learning]]
+[[Category:Cross-platform free software]]
+[[Category:Free software for Linux]]
+[[Category:Free software for Windows]]
+[[Category:Free software for macOS]]
+[[Category:Free and open-source Android software]]
+[[Category:Volunteer computing projects]]

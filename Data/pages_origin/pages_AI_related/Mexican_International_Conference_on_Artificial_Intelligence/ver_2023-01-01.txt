@@ -1,0 +1,538 @@
+{{Short description|Annual conference}}
+{{Infobox Academic Conference
+ | history = 2000–
+ | discipline = [[Artificial Intelligence]]
+ | abbreviation = MICAI
+ | publisher = [[Springer Science+Business Media|Springer]] [[Lecture Notes in Artificial Intelligence|LNAI]], [[IEEE]] CPS, journals.
+ | country= International
+ | frequency = annual
+}}
+
+The '''Mexican International Conference on Artificial Intelligence''' ('''MICAI''') is the name of an annual [[Meeting|conference]] covering all areas of [[Artificial Intelligence]] (AI), held in [[Mexico]]. The first MICAI conference was held in 2000. The conference is attended every year by about two hundred of AI researchers and PhD students and 500−1000 local graduate students.
+
+== Overview ==
+MICAI is a high-level peer-reviewed international conference covering all areas of Artificial Intelligence. All editions of MICAI have been published in Springer [[Springer Science+Business Media|Springer]] [[Lecture Notes in Artificial Intelligence|LNAI]] (N 1793, 2313, 2972, 3789, 4293, 4827, 5317, 5845, 6437–6438). Recent MICAI events (2006, 2007, 2008, 2009, and 2010) received over 300 submissions from over 40 countries each. The conference's scientific program includes keynote lectures, paper presentations, tutorials, panels, posters, and workshops. MICAI is organized by the [[Mexican Society for Artificial Intelligence]] (SMIA) in cooperation with various national institutions.
+
+Their topics of interest include, but are not limited to:
+[[Applications of artificial intelligence]],
+[[Automated theorem proving]],
+[[Belief revision]],
+[[Bioinformatics]] and [[Medical applications of artificial intelligence]],
+[[Case-based reasoning]],
+[[Common-sense reasoning]],
+[[Computer vision]] and [[image processing]],
+[[Constraint programming]],
+[[Data mining]],
+[[Expert systems]] and [[knowledge-based systems]],
+[[Fuzzy logic]],
+[[Genetic algorithms]],
+[[Hybrid intelligent systems]],
+[[Intelligent interfaces]]: [[multimedia]], [[virtual reality]],
+[[Intelligent organizations]],
+[[Intelligent tutoring systems]],
+[[Knowledge acquisition]],
+[[Knowledge representation]] and [[knowledge management]],
+[[Logic programming]],
+[[Machine learning]],
+[[Model-based reasoning]],
+[[Multiagent systems]] and [[distributed artificial intelligence]],
+[[Natural Language Processing]],
+[[Artificial neural network|Neural Networks]],
+[[Non-monotonic Reasoning]],
+[[Ontology|Ontologies]],
+[[Pattern Recognition]],
+[[Philosophical and methodological issues of artificial intelligence]],
+[[Planning and scheduling]],
+[[Qualitative reasoning]],
+[[Robotics]],
+[[Spatial and temporal reasoning]],
+[[Uncertainty reasoning]] and [[probabilistic reasoning]].
+
+== Specific MICAI conferences ==
+In the table below, the figures for the number of accepted papers and acceptance rate refer to the main proceedings volume and do not include supplemental proceedings volumes. The number of countries corresponds to submissions, not to accepted papers.
+
+{| class="wikitable"
+|-
+!Year
+!City
+!Website
+!Proceedings
+!Submissions
+!Countries
+!Accepted
+!Acceptance rate
+|-
+|2000
+|[[Acapulco]]
+|[http://www.MICAI.org/2000/]{{dead link|date=January 2018 |bot=InternetArchiveBot |fix-attempted=yes }}
+|<ref name="MICAI2000">{{Cite book | editor1-last = Cairó | editor1-first = Osvaldo | editor2-first = Luis Enrique | editor3-first = Francisco J.| title = MICAI 2000: Advances in Artificial Intelligence | doi = 10.1007/10720076 | series = Lecture Notes in Computer Science | volume = 1793 | year = 2000 | isbn = 978-3-540-67354-5 | editor2-last = Sucar | editor3-last = Cantu }}</ref>
+|163
+|17
+|60
+|37%
+|-
+|2002
+|[[Mérida (Yucatán)|Mérida]]
+|[http://www.MICAI.org/2002/]{{dead link|date=January 2018 |bot=InternetArchiveBot |fix-attempted=yes }}
+|<ref name="MICAI2002">{{Cite book | editor1-last = Coello Coello | editor1-first = Carlos Artemio| editor2-first = Alvaro | editor3-first = Luis Enrique | editor4-first = Osvaldo| doi = 10.1007/3-540-46016-0 | title = MICAI 2002: Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 2313 | year = 2002 | isbn = 978-3-540-43475-7 | editor2-last = de Albornoz | editor3-last = Sucar | editor4-last = Cairó Battistutti }}</ref>
+|85
+|17
+|56
+|66%
+|-
+|2004
+|[[Mexico City|Mexico]]
+|[http://www.MICAI.org/2004/]{{dead link|date=January 2018 |bot=InternetArchiveBot |fix-attempted=yes }}
+|<ref name="MICAI2004">{{Cite book | editor1-last = Monroy | editor1-first = Raúl | editor2-first = Gustavo | editor3-first = Luis Enrique | editor4-first = Humberto | doi = 10.1007/b96521 | title = MICAI 2004: Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 2972 | year = 2004 | isbn = 978-3-540-21459-5 | editor2-last = Arroyo-Figueroa | editor3-last = Sucar | editor4-last = Sossa }}</ref>
+|254
+|19
+|94
+|38.2%
+|-
+|2005
+|[[Monterrey]]
+|[http://www.MICAI.org/2005/]
+|<ref name="MICAI2005">{{Cite book | editor1-last = Gelbukh | editor1-first = Alexander | editor2-first = Álvaro | editor3-first = Hugo | title = MICAI 2005: Advances in Artificial Intelligence | doi = 10.1007/11579427 | series = Lecture Notes in Computer Science | volume = 3789 | year = 2005 | isbn = 978-3-540-29896-0 | editor2-last = de Albornoz | editor3-last = Terashima-Marín | url-access = registration | url = https://archive.org/details/micai2005advance00mexi }}</ref>
+|423
+|43
+|120
+|28%
+|-
+|2006
+|[[Apizaco]]
+|[http://www.MICAI.org/2006]
+|<ref name="MICAI2006">{{Cite book | editor1-last = Gelbukh | editor1-first = Alexander | editor2-first = Carlos Alberto | doi = 10.1007/11925231 | title = MICAI 2006: Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 4293 | year = 2006 | isbn = 978-3-540-49026-5 | editor2-last = Reyes-Garcia }}</ref><ref name="MICAI2006IEEE">{{Cite book | doi = 10.1109/MICAI.2006.40 | chapter = Preface | title = 2006 Fifth Mexican International Conference on Artificial Intelligence | pages = x–m | year = 2006 | isbn = 0-7695-2722-1 | last1 = Gelbukh | first1 = Alexander }}</ref>
+|447
+|42
+|123
+|26%
+|-
+|2007
+|[[Aguascalientes]]
+|[http://www.MICAI.org/2007]
+|<ref name="MICAI2007">{{Cite book | editor1-last = Gelbukh | editor1-first = Alexander | editor2-first = Ángel Fernando | doi = 10.1007/978-3-540-76631-5 | title = MICAI 2007: Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 4827 | year = 2007 | isbn = 978-3-540-76630-8 | editor2-last = Kuri Morales }}</ref><ref name="MICAI2007IEEE">{{Cite book | doi = 10.1109/MICAI.2007.4 | chapter = Preface | title = 2007 Sixth Mexican International Conference on Artificial Intelligence, Special Session (MICAI) | pages = ix– | year = 2007 | isbn = 978-0-7695-3124-3 | last1 = Gelbukh | first1 = Alexander }}</ref>
+|485
+|31
+|115
+|23.9%
+|-
+|2008
+|[[Atizapán de Zaragoza]]
+|[http://www.MICAI.org/2008]
+|<ref name="MICAI2008">{{Cite book | editor1-last = Gelbukh | editor1-first = Alexander | editor2-first = Eduardo F | doi = 10.1007/978-3-540-88636-5 | title = MICAI 2008: Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 5317 | year = 2008 | isbn = 978-3-540-88635-8 | editor2-last = Morales }}</ref><ref name="MICAI2008IEEE">{{Cite book | doi = 10.1109/MICAI.2008.4 | chapter = Preface | title = 2008 Seventh Mexican International Conference on Artificial Intelligence | pages = xi–st | year = 2008 | isbn = 978-0-7695-3441-1 | last1 = Gelbukh | first1 = Alexander | last2 = Morales | first2 = Eduardo F. }}</ref>
+|363
+|43
+|94
+|25.9%
+|-
+|2009
+|[[Guanajuato]]
+|[http://www.MICAI.org/2009]
+|<ref name="MICAI2009">{{Cite book | editor1-last = Hernández Aguirre | editor1-first = Arturo | editor2-first = Raúl | editor3-first = Carlos Alberto | title = MICAI 2009: Advances in Artificial Intelligence | doi = 10.1007/978-3-642-05258-3 | series = Lecture Notes in Computer Science | volume = 5845 | year = 2009 | isbn = 978-3-642-05257-6 | editor2-last = Monroy Borja | editor3-last = Reyes Garciá }}</ref><ref name="MICAI2009IEEE">{{Cite book | doi = 10.1109/MICAI.2009.4 | chapter = Preface | title = 2009 Eighth Mexican International Conference on Artificial Intelligence | pages = viii– | year = 2009 | isbn = 978-0-7695-3933-1 }}</ref>
+|215
+|21
+|63
+|29.3%
+|-
+|2010
+|[[Pachuca]]
+|[http://www.MICAI.org/2010]
+|<ref name="MICAI2010-I">{{Cite book | editor1-last = Sidorov | editor1-first = Grigori | editor2-first = Arturo | editor3-first = Carlos Alberto | title = Advances in Artificial Intelligence | doi = 10.1007/978-3-642-16761-4 | series = Lecture Notes in Computer Science | volume = 6437 | year = 2010 | isbn = 978-3-642-16760-7 | editor2-last = Hernández Aguirre | editor3-last = Reyes García | hdl = 10366/135195 }}</ref><ref name="MICAI2010-II">{{Cite book | editor1-last = Sidorov | editor1-first = Grigori | editor2-first = Arturo | editor3-first = Carlos Alberto | title = Advances in Soft Computing | doi = 10.1007/978-3-642-16773-7 | series = Lecture Notes in Computer Science | volume = 6438 | year = 2010 | isbn = 978-3-642-16772-0 | editor2-last = Hernández Aguirre | editor3-last = Reyes García }}</ref><ref name="MICAI2010IEEE">{{Cite book | doi = 10.1109/MICAI.2010.4 | chapter = Preface | title = 2010 Ninth Mexican International Conference on Artificial Intelligence | pages = viii– | year = 2010 | isbn = 978-1-4244-9246-6 }}</ref>
+|301
+|34
+|126
+|42%
+|-
+|2011
+|[[Puebla]]
+|[http://www.MICAI.org/2011]
+|<ref name="MICAI2011-I">{{Cite book | editor1-last = Batyrshin | editor1-first = Ildar | editor2-first = Grigori | doi = 10.1007/978-3-642-25324-9 | title = Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 7094 | year = 2011 | isbn = 978-3-642-25323-2 | editor2-last = Sidorov }}</ref><ref name="MICAI2011-II">{{Cite book | editor1-last = Batyrshin | editor1-first = Ildar | editor2-first = Grigori | doi = 10.1007/978-3-642-25330-0 | title = Advances in Soft Computing | series = Lecture Notes in Computer Science | volume = 7095 | year = 2011 | isbn = 978-3-642-25329-4 | editor2-last = Sidorov }}</ref><ref name="MICAI2011IEEE">{{Cite book | doi = 10.1109/MICAI.2011.4 | chapter = Preface | title = 2011 10th Mexican International Conference on Artificial Intelligence | pages = ix– | year = 2011 | isbn = 978-1-4577-2173-1 }}</ref>
+|348
+|40
+|96
+|27.7%
+|-
+|2012
+|[[San Luis Potosí]]
+|[http://www.MICAI.org/2012]
+|<ref name="MICAI2012-I">{{Cite book | editor1-last = Batyrshin | editor1-first = Ildar | editor2-first = Miguel | doi = 10.1007/978-3-642-37807-2 | title = Advances in Artificial Intelligence | series = Lecture Notes in Computer Science | volume = 7629 | year = 2013 | isbn = 978-3-642-37806-5 | editor2-last = González Mendoza | hdl = 10366/135195 }}</ref><ref name="MICAI2012-II">{{Cite book | editor1-last = Batyrshin | editor1-first = Ildar | editor2-first = Miguel González | doi = 10.1007/978-3-642-37798-3 | title = Advances in Computational Intelligence | series = Lecture Notes in Computer Science | volume = 7630 | year = 2013 | isbn = 978-3-642-37797-6 | editor2-last = Mendoza }}</ref><ref name="MICAI2012IEEE">{{Cite book | doi = 10.1109/MICAI.2012.4 | chapter = Conference Organization Summary | title = 2012 11th Mexican International Conference on Artificial Intelligence | pages = viii– | year = 2012 | isbn = 978-1-4673-4731-0 }}</ref>
+|224
+|28
+|77
+|34.3%
+|-
+|2013
+|[[Mexico City]]
+|[http://www.MICAI.org/2013]
+|<ref name="MICAI2013-I">{{Cite book | doi = 10.1007/978-3-642-45114-0| title = Advances in Artificial Intelligence and Its Applications| volume = 8265| series = Lecture Notes in Computer Science| year = 2013| isbn = 978-3-642-45113-3}}</ref><ref name="MICAI2013-II">{{Cite book | doi = 10.1007/978-3-642-45111-9| title = Advances in Soft Computing and Its Applications| volume = 8266| series = Lecture Notes in Computer Science| year = 2013| isbn = 978-3-642-45110-2| last1 = Castro| first1 = Félix| last2 = Gelbukh| first2 = Alexander| last3 = González| first3 = Miguel}}</ref><ref name="MICAI2013IEEE">{{Cite book | doi = 10.1109/MICAI.2013.4| chapter = Table of contents| title = 2013 12th Mexican International Conference on Artificial Intelligence| pages = v-ix| year = 2013| isbn = 978-1-4799-2605-3}}</ref>
+|284
+|45
+|85
+|29.9%
+|-
+|2014
+|[[Tuxtla Gutiérrez, Chiapas]]
+|[https://web.archive.org/web/20170823053114/http://www.micai.org/2014/]
+|
+|350
+|46
+|87
+|24.8%
+|}
+
+== Keynote speakers and program chairs ==
+The following persons were honored by being selected by the organizers as keynote speakers or program chairs:
+
+{| class="wikitable"
+|-
+!Year
+!Keynote speakers
+!Program Chairs
+|-
+|2000
+|[[Wolfgang Wahlster]] ([[DFKI]] and [[Saarland University]]),<br>[[Hector Levesque]] ([[University of Toronto]]),<br>[[Jay Liebowitz]] ([[George Washington University]]),<br>[[Adolfo Guzmán Arenas]] ([[Centro de Investigación en Computación|CIC]]),<br>[[Jose Luis Marroquín]] ([[Petroleos Mexicanos|PEMEX]]),<br>[[Bruce Buchanan]] ([[University of Pittsburgh]])
+|[[Osvaldo Cairó]],<br>[[Luis Enrique Sucar]],<br>[[Francisco J. Cantú]]
+|-
+|2002
+|[[Pedro Larrañaga]] ([[University of the Basque Country]]),<br>[[Stuart J. Russell|Stuart Russell]] ([[University of California]]),<br>[[Francisco Cantú]] ([[ITESM]]),<br>[[Edgar Sánchez]] ([[CINVESTAV]]),<br>[[Jean-Claude Latombe]] ([[Stanford University]])
+|[[Carlos Artemio Coello Coello]],<br>[[Álvaro de Albornoz Bueno]],<br>[[Luis Enrique Sucar]],<br>[[Osvaldo Cairó Battistutti]]
+|-
+|2004
+|[[Toby Walsh]] ([[University College Cork]]),<br>[[Dispankar Dasgupta]] ([[University of Memphis]]),<br>[[René Bañares]] ([[Oxford University]]),<br>[[José Negrete Martínez]] ([[Universidad Veracruzana]]),<br>[[Carlos Zozaya]] ([[Instituto Tecnológico Autónomo de México]]),<br>[[Jorge X. Velasco]] ([[Instituto Mexicano del Petróleo]])
+|[[Raúl Monroy Borja]],<br>[[Gustavo Arroyo-Figueroa]],<br>[[Luis Enrique Sucar]],<br>[[Humberto Sossa Azuela]]
+|-
+|2005
+|[[John McCarthy (computer scientist)|John McCarthy]] ([[Stanford University]]),<br>[[Tom M. Mitchell|Tom Mitchell]] ([[Carnegie Mellon University]]),<br>[[Katsushi Ikeuchi]] ([[University of Tokyo]]),<br>[[Erick Cantú-Paz]] ([[Lawrence Livermore National Laboratory]]),<br>[[Jaime Simão Sichman]] ([[University of São Paulo]]),<br>[[Piero P. Bonissone]] ([[General Electric Global Research]])
+|[[Alexander Gelbukh]],<br>[[Álvaro de Albornoz Bueno]]
+|-
+|2006
+|[[Enrique Sucar]] ([[INAOE]]),<br>[[Seth Hutchinson]] ([[University of Illinois at Urbana–Champaign]]),<br>[[Carlos Artemio Coello Coello]] ([[CINVESTAV]]),<br>[[Pedro Domingos]] ([[University of Washington]]),<br>[[Ronald R. Yager]] ([[Iona College (New York)|Iona College]])
+|[[Alexander Gelbukh]],<br>[[Carlos Alberto Reyes García]]
+|-
+|2007
+|[[Fernando de Arriaga-Gómez]] ([[Polytechnic University of Madrid]]),<br>[[Francisco Escolano]] ([[University of Alicante]]),<br>[[Simon Haykin]] ([[McMaster University]]),<br>[[Pablo Noriega]] ([[Institute for Artificial Intelligence Research of the Superior Council of Scientific Research|Institute for AI Research]]),<br>[[Paolo Petta]] ([[University of Vienna]]),<br>[[Boris Stilman]] ([[University of Colorado]])
+|[[Alexander Gelbukh]],<br>[[Ángel Fernando Kuri Morales]]
+|-
+|2008
+|[[Gerardo Jiménez Sánchez]] ([[Johns Hopkins University]]),<br>[[Stephanie Forrest]] ([[University of New Mexico]]),<br>[[Francisco Cervántes-Pérez]] ([[UNAM]]),<br>[[Simon Haykin]] ([[McMaster University]]),<br>[[Steven M. La Valle]] ([[University of Illinois]]),<br>[[Georg Gottlob]] ([[Oxford University]])
+|[[Alexander Gelbukh]],<br>[[Eduardo F. Morales]]
+|-
+|2009
+|[[Patricia Melin]] ([[Institute of Technology, Tijuana]]),<br>[[Ramón López Mántaras]] ([[Spanish National Research Council|CSIC]]),<br>[[Josef Kittler]] ([[University of Surrey]]),<br>[[José Luis Marroquín]] ([[PEMEX]]),<br>[[Dieter Hutter]] ([[DFKI]])
+|[[Arturo Hernández Aguirre]],<br>[[Raúl Monroy Borja]],<br>[[Carlos Alberto Reyes García]]
+|-
+|2010
+|[[Hector García-Molina]] ([[Stanford University]]),<br>[[Witold Pedrycz]] ([[University of Alberta]]),<br>[[De-Shuang Huang]] ([[Academy of Sciences]]),<br>[[Raúl Monroy Borja]] ([[ITESM]]),<br>[[Boris Stilman]] ([[University of Colorado at Denver]]),<br>[[Claudia Manfredi]] ([[University di Firenze]])
+|[[Grigori Sidorov]],<br>[[Arturo Hernández Aguirre]]
+|-
+|2011
+|[[Weiru Liu]] ([[Queen's University Belfast]]),<br>[[Rada Mihalcea]] ([[University of North Texas]]),<br>[[Jesús Favela]] ([[CICESE Research Center]]),<br>[[Raúl Rojas]] ([[Freie Universität Berlin]]),<br>[[Janusz Kacprzyk]] ([[Polish Academy of Sciences]])
+|[[Ildar Batyrshin]],<br>[[Grigori Sidorov]]
+|-
+|2012
+|[[Ulises Cortés]] ([[Universitat Politècnica de Catalunya]]),<br>[[Joydeep Ghosh]] ([[University of Texas]]),<br>[[Jixin Ma]] ([[Old Royal Naval College|Greenwich College]]),<br>[[Roy Maxion]] ([[Carnegie Mellon University]]),<br>[[Grigori Sidorov]] ([[Instituto Politécnico Nacional]]),<br>[[Ian H. Witten|Ian Witten]] ([[University of Waikato]])
+|[[Ildar Batyrshin]],<br>[[Miguel González Mendoza]]
+|-
+|2013
+|[[Ildar Batyrshin]] ([[Instituto Mexicano del Petróleo]]),<br>[[Erik Cambria]] ([[National University of Singapore]]),<br>[[Newton Howard]] ([[Massachusetts Institute of Technology]]),<br>[[Maria Vargas-Vera]] ([[Universidad Adolfo Ibáñez]]),<br>[[Andrei Voronkov]] ([[University of Manchester]])
+|[[Félix Castro]],<br>[[Alexander Gelbukh]],<br>[[Miguel González Mendoza]]
+|-
+|2014
+|[[Oscar Castillo (computer scientist)|Oscar Castillo]] ([[Tijuana IT]]),<br>[[Bonnie E. John]] ([[Thomas J. Watson Research Center]]),<br>[[Bing Liu (computer scientist)|Bing Liu]] ([[University of Illinois]]),<br>[[John Sowa]] ([[VivoMind Research]]),<br>[[Vladimir Vapnik]] ([[NEC Laboratories]])
+|[[Alexander Gelbukh]],<br>[[Félix Castro]],<br>[[Sofía Galicia Haro]]
+|}
+
+== Awards ==
+The authors of the following papers received the Best Paper Award:
+
+{| class="wikitable"
+|-
+!Year
+!Place
+!Authors
+!Country
+!Paper
+|-
+|2000
+| -
+|Joby Varghese and Snehasis Mukhopadhyay
+|India
+|''Multi-agent Adaptive Dynamic Programming''
+|-
+|
+| -
+|Mauricio Osorio
+|Mexico
+|
+|-
+|
+| -
+|G. E. A. P. A. Batista, A. Carvalho, and M. C. Monard
+|
+|''Applying One-sided Selection to Unbalanced Datasets''
+|-
+|
+| -
+|Alexander Gelbukh, Grigori Sidorov, and Igor A. Bolshakov
+|Mexico
+|''Coherence Maintenance in Man-Machine Dialogue with Ellipsis'' (in the section of local papers)
+|-
+|
+| -
+|Alexander Gelbukh
+|Mexico
+|''A Data Structure for Prefix Search under Access Locality Requirements and Its Application to Spelling Correction''  (in the section of local papers)
+|-
+|
+| -
+| Homero V. Rios, Emilio Aguirre et al.
+|
+|''Facial Expression Recognition and Modeling for Virtual Intelligent Tutoring Systems''
+|-
+|
+| -
+|Armando García-Rodríguez, Ramón Martín Rodríguez-Dagnino, and Christos Douligeris
+|
+|''Extending the prediction horizon in dynamic bandwidth allocation for VBR video transport''
+|-
+|
+| -
+|
+|
+|
+|-
+|
+| -
+|
+|
+|
+|-
+|2002
+|1
+|
+|
+|
+|-
+|
+|2
+|
+|
+|
+|-
+|
+|3
+|
+|
+|
+|-
+|2003
+| 1
+|Nestor Velasco Bermeo, Miguel González Mendoza, Alexander García Castro and Irais Heras Dueñas. 
+|Mexico
+|Towards the creation of Semantic Models based on Computer-Aided Designs
+|-
+|2004
+|1
+|
+|
+|
+|-
+|
+|2
+|
+|
+|
+|-
+|
+|3
+|
+|
+|
+|-
+|2005<ref name=MICAI2005 />
+|1
+|Rafael Murrieta Cid, Alejandro Sarmiento, Teja Muppirala, Seth Hutchinson, Raul Monroy, Moises Alencastre Miranda, Lourdes Muñoz Gómez, and Ricardo Swain
+|
+|''A framework for Reactive Motion and Sensing Planning: a Crititcal Events-Based Approach''
+|-
+|
+|2
+|Patrice Delmas, Georgy Gimel'farb, Jiang Liu, and John Morris
+|
+|''A Noise-Driven Paradigm for Solving the Stereo Correspondence Problem''
+|-
+|
+|3
+|Jinghui Xiao, Bingquan Liu, Xiaolong Wang, and Bing Li
+|
+|''A Similarity-Based Approach to Data Sparseness Problem of the Chinese Language Modeling''
+|-
+|2006<ref name=MICAI2006 />
+|1
+|Luz Abril Torres-Méndez and Gregory Dudek
+|
+|''Statistics of Visual and Partial Depth Data for Mobile Robot Environment Modeling''
+|-
+|
+|2
+|Antonio Camarena-Ibarrola and Edgar Chávez
+|
+|''On Musical Performances Identification, Entropy and String Matching''
+|-
+|
+|3
+|Eduardo Rodriguez-Tello, Jin-Kao Hao, and Jose Torres-Jimenez
+|
+|''A Refined Evaluation Function for the MinLA Problem''
+|-
+|2007<ref name=MICAI2007 />
+|1
+|Mu Xiangyang, Zhang Taiyi and Zhou Yaatong
+|China
+|''Scaling Kernels: A New Least Squares Support Vector Machine Kernel for Approximation''
+|-
+|
+|2
+|Jean Bernard Hayet and Justus Piater
+|Mexico / Belgium
+|''On-line Rectification of Sport Sequences with Moving Cameras''
+|-
+|
+|3
+|Marcin Radlak and Ryszard Klempous
+|UK / Poland
+|''SELDI-TOF-MS Pattern Analysis for Cancer Detection as a Base for Diagnostic Software''
+|-
+|2008<ref name=MICAI2008 />
+|1
+|Philippe Fournier-Viger, Roger Nkambou, and Engelbert Mephu Nguifo
+|Canada / France
+|''A Knowledge Discovery Framework for Learning Task Models from User Interactions in Intelligent Tutoring Systems''
+|-
+|
+|2
+|Yulia Ledeneva
+|Mexico
+|''Effect of Preprocessing on Extractive Summarization with Maximal Frequent Sequences''
+|-
+|
+|3
+|Giovanni Lizárraga, Arturo Hernández and Salvador Botello
+|Mexico
+|''A Set of Test Cases for Performance Measures in Multiobjective Optimization''
+|-
+|2009
+|1
+|
+|
+|
+|-
+|
+|2
+|
+|
+|
+|-
+|
+|3
+|
+|
+|
+|-
+|2010
+|1
+|Olga Kolesnikova and Alexander Gelbukh
+|Mexico
+|''Supervised Machine Learning for Predicting the Meaning of Verb-Noun Combinations in Spanish''
+|-
+|
+|2
+|Omar Montano-Rivas, Roy McCasland, Lucas Dixon and Alan Bundy
+|UK
+|''Scheme-based Synthesis of Inductive Theories''
+|-
+|
+|3
+|
+|
+|
+|-
+|2011<ref name=MICAI2011-I />
+|1
+|Sergio Jimenez Vargas and Alexander Gelbukh
+|Colombia / Mexico
+|''SC Spectra: A New Soft Cardinality Approximation for Text Comparison''
+|-
+|
+|2
+|Dmitrijs Rutko
+|Latvia
+|''Fuzzified Tree Search in Teal Domain Games''
+|-
+|
+|3
+|Francisco Madrigal, Jean-Bernard Hayet, and Mariano Rivera
+|Mexico
+|''Multiple Target Tracking with Motion Priors''
+|-
+|2012<ref name=MICAI2012-I />
+|1
+|Nestor Velasco Bermeo, Miguel González Mendoza, Alexander García Castro, Irais Heras Dueñas
+|Mexico / USA
+|''Toward the Creation of Semantic Models Based on Computer-Aided Designs''
+|-
+|
+|2
+|Hillel Romero-Monsivais, Eduardo Rodriguez-Tello, Gabriel Ramírez
+|Mexico
+|''A New Branch and Bound Algorithm for the Cyclic Bandwidth Problem''
+|-
+|
+|3
+|Gonzalo Nápoles, Isel Grau, Maikel León, Ricardo Grau
+|Cuba
+|''Modelling, Aggregation, and Simulation of a Dynamic Biological System Through Fuzzy Cognitive Maps''
+|-
+|2013<ref name=MICAI2013-I />
+|1
+|Sergio Rogelio Tinoco-Martínez, Felix Calderon, Carlos Lara-Alvarez, Jaime Carranza-Madrigal
+|Mexico
+|''A Bayesian and Minimum Variance Technique for Arterial Lumen Segmentation in Ultrasound Imaging''
+|-
+|
+|2
+|Angel Kuri-Morales, Edwin Aldana-Bobadilla
+|Mexico
+|''The Best Genetic Algorithm I. A Comparative Study of Structurally Different Genetic Algorithms''
+|-
+|
+|
+|Angel Kuri-Morales, Edwin Aldana Bobadilla, Ignacio López-Peña
+|Mexico
+|''The Best Genetic Algorithm II. A Comparative Study of Structurally Different Genetic Algorithms''
+|-
+|
+|3
+|Melanie Neunerdt, Michael Reyer, Rudolf Mathar
+|Germany
+|''A POS Tagger for Social Media Texts Trained on Web Comments''
+|}
+
+== See also ==
+* The [[list of computer science conferences]] contains other academic conferences in computer science.
+
+== References ==
+{{Reflist}}
+
+== External links ==
+* [http://www.MICAI.org/ MICAI series website]
+* [http://www.SMIA.org.mx/ Mexican Society for Artificial Intelligence (SMIA)]
+
+{{Authority control}}
+
+[[Category:Computer science conferences]]
+[[Category:Academic conferences]]
+[[Category:Artificial intelligence conferences]]
+[[Category:Recurring events established in 2000]]
+[[Category:Annual events in Mexico]]
+[[Category:International conferences in Mexico]]

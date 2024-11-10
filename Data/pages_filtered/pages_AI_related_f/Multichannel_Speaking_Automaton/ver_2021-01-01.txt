@@ -1,0 +1,9 @@
+right|Audio disk containing "Fra Martino campanaro" sung by MUSA in 1978
+MUSA (MUltichannel Speaking Automaton) was an early prototype of Speech Synthesis machine started in 1975.
+
+ Description 
+It consisted of a stand-alone computer hardware and a specialized software that implemented a diphone-synthesis technology. It was one of the first real-time TTS systems. It was able to read Italian in intellegibile robotic voice and also to sing managing up to 8 synthesis channels in parallel thanks to Linear predictive coding technology.Luciano Nebbia, Paolo Lucchini, Eight-channel digital speech synthesizer based on LPC techniques. ICASSP'79. IEEE International Conference on Acoustics, Speech, and Signal Processing. Vol. 4. IEEE, 1979.. In 1978 it was released, after the building of a working prototype,Roberto Billi, Franco Canavesio, Alberto Ciaramella, & Luciano Nebbia (1995). Interactive voice technology at work: The CSELT experience. Speech communication, 17(3-4), 263-271.  an 45" rpm audio disk containing some trial content of such synthesis, including the song "Fra Martino Campanaro" in "a cappella" (multiple voices) style, attached to some commercial reviews.(it) Virginio Cantoni, Gabriele Falciasecca, Giuseppe Pelosi, eds., Storia delle telecomunicazioni, Vol. 1. Firenze university press, 2011. The experiment was conducted by CSELT, Turin, Italy and was led by Giulio Modena.
+
+ Related pages 
+ Speech synthesis
+ Eloquens (software)

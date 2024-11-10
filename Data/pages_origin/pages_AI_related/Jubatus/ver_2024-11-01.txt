@@ -1,0 +1,48 @@
+{{Notability|Products|date=February 2014}}
+{{ Infobox Software
+| name                   = Jubatus
+| logo                   = 
+| caption                = 
+| collapsible            = yes
+| developer              = [[Nippon Telegraph and Telephone]] & [[Preferred Infrastructure]]
+| latest release version = 0.4.3
+| latest release date    = {{release date|2013|04|19}}
+| latest preview version = 
+| latest preview date    = 
+| operating system       = [[Linux]]
+| size                   = 
+| programming language   = [[C++]]
+| genre                  = [[machine learning]]
+| license                = [[GNU Lesser General Public License]] 2.1
+| website                = {{url|http://jubat.us/en/}}
+}}
+'''Jubatus''' is an [[open-source software|open-source]] [[online machine learning]] and [[distributed computing]] framework developed at [[Nippon Telegraph and Telephone]] and [[Preferred Infrastructure]]. Its features include [[Statistical classification|classification]], [[Recommender system|recommendation]], [[Regression analysis|regression]], [[anomaly detection]] and graph mining.
+It supports many client languages, including [[C++]], [[Java (programming language)|Java]], [[Ruby (programming language)|Ruby]] and [[Python (programming language)|Python]].
+It uses Iterative Parameter Mixture<ref>Ryan McDonald, K. Hall and G. Mann, Distributed Training Strategies for the Structured Perceptron, North American Association for Computational Linguistics (NAACL), 2010.</ref><ref>Gideon Mann, R. McDonald, M. Mohri, N. Silberman, and D. Walker, Efficient Large-Scale Distributed Training of Conditional Maximum Entropy Models, Neural Information Processing Systems (NIPS), 2009.</ref> for distributed machine learning.
+
+==Notable Features==
+Jubatus supports:
+* Multi-classification algorithms:
+** [[Perceptron]]
+** Passive Aggressive<ref>{{cite conference |first1=Koby | last1 = Crammer| first2 = Ofer| last2 = Dekel| authorlink2=Ofer Dekel (researcher) |first3 = Shai| last3 = Shalev-Shwartz| first4 = Yoram | last4 = Singer |title=Online Passive-Aggressive Algorithms |conference=Proceedings of the Sixteenth Annual Conference on Neural Information Processing Systems (NIPS) |year=2003}}</ref><ref>Koby Crammer and Yoram Singer. Ultraconservative online algorithms for multiclass problems. Journal of Machine Learning Research, 2003.</ref><ref>Koby Crammer, Ofer Dekel, Joseph Keshet, Shai Shalev-Shwartz, Yoram Singer, Online Passive-Aggressive Algorithms. Journal of Machine Learning Research, 2006.</ref>
+** Confidence Weighted<ref>Mark Dredze, Koby Crammer and Fernando Pereira, Confidence-Weighted Linear Classification, Proceedings of the 25th International Conference on Machine Learning (ICML), 2008</ref><ref>Koby Crammer, Mark Dredze and Fernando Pereira, Exact Convex Confidence-Weighted Learning, Proceedings of the Twenty Second Annual Conference on Neural Information Processing Systems (NIPS), 2008</ref><ref>Koby Crammer, Mark Dredze and Alex Kulesza, Multi-Class Confidence Weighted Algorithms, Empirical Methods in Natural Language Processing (EMNLP), 2009</ref>
+** Adaptive Regularization of Weight Vectors<ref>Koby Crammer, Alex Kulesza and Mark Dredze, Adaptive Regularization Of Weight Vectors, Advances in Neural Information Processing Systems, 2009</ref>
+** Normal Herd<ref>Koby Crammer and Daniel D. Lee, Learning via Gaussian Herding, Neural Information Processing Systems (NIPS), 2010.</ref>
+* Recommendation algorithms using:
+** [[Inverted index]]
+** [[Minhash]]
+** [[Locality-sensitive hashing]]
+* Regression algorithms:
+** Passive Aggressive
+* feature extraction method for natural language:
+** [[n-gram]]
+** [[Text segmentation]]
+
+==References==
+{{reflist}}
+
+[[Category:Data mining and machine learning software]]
+[[Category:Software using the LGPL license]]
+
+
+{{free-software-stub}}

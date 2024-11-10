@@ -1,0 +1,21 @@
+{{refimprove
+| date = May 2017
+}}{{Machine learning bar}}
+
+'''Labeled data''' is a group of [[Sample (statistics)|samples]] that have been tagged with one or more labels. Labeling typically takes a set of unlabeled data and augments each piece of it with informative tags. For example, a data label might indicate whether a photo contains a horse or a cow, which words were uttered in an audio recording, what type of action is being performed in a video, what the topic of a news article is, what the overall sentiment of a tweet is, or whether a dot in an X-ray is a tumor.
+
+Labels can be obtained by asking humans to make judgments about a given piece of unlabeled data. Labeled data is significantly more expensive to obtain than the raw unlabeled data.
+
+==Crowdsourced labeled data==
+In 2006 [[Fei-Fei Li]], the co-director of the Stanford Human-Centered AI Institute, set out to improve the [[artificial intelligence]] models and algorithms for image recognition by significantly enlarging the [[training data]]. The researchers downloaded millions of images from the [[World Wide Web]] and a team of undergraduates started to apply labels for objects to each image. In 2007 Li outsourced the data labelling work on [[Amazon Mechanical Turk]], an [[online marketplace]] for digital [[piece work]]. The 3.2 million images that were labelled by more than 49,000 workers formed the basis for [[ImageNet]], one of the largest hand-labeled database for [[outline of object recognition]].<ref>{{Cite book| authors = Mary L. Gray & Siddharth Suri |title=Ghost Work: How to Stop Silicon Valley from Building a New Global Underclass|publisher=Houghton Mifflin Harcourt|year=2019|isbn=9781328566287|pages=7}}</ref>
+
+==Automated data labelling==
+After obtaining a labeled dataset, [[machine learning]] models can be applied to the data so that new unlabeled data can be presented to the model and a likely label can be guessed or predicted for that piece of unlabeled data.<ref>Johnson, Leif. [https://stackoverflow.com/a/19172720 "What is the difference between labeled and unlabeled data?"], ''[[Stack Overflow]]'', 4 October 2013. Retrieved on 13 May 2017. {{CC-notice|cc=bysa3|url=https://stackoverflow.com/a/19172720|author=[https://stackoverflow.com/users/2014584/lmjohns3 lmjohns3]}}</ref>
+
+==Data-driven bias==
+Algorithmic decision-making is subject to programmer-driven bias as well as data-driven bias. Training data that relies on bias labeled data will result in prejudices and omissions in a [[predictive model]], despite the machine learning algorithm being legitimate. The labelled data used to train a specific machine learning algorithm needs to be a statistically [[representative sample]] to not bias the results.<ref>{{Cite book| authors = Xianhong Hu, Neupane, Bhanu, Echaiz, Lucia Flores, Sibal, Prateek, Rivera Lam, Macarena |title=Steering AI and advanced ICTs for knowledge societies: a Rights, Openness, Access, and Multi-stakeholder Perspective|publisher=UNESCO Publishing|year=2019|isbn=9789231003639|pages=64}}</ref> Because the labeled data available to train [[facial recognition system]]s has not been representative of a population, underrepresented groups in the labeled data are later often misclassified. In 2018 a study by [[Joy Buolamwini]] and [[Timnit Gebru]] demonstrated that two facial analysis datasets that have been used to train facial recognition algorithms, IJB-A and Adience, are composed of 79.6% and 86.2% lighter skinned humans respectively.<ref>{{Cite book| authors = Xianhong Hu, Neupane, Bhanu, Echaiz, Lucia Flores, Sibal, Prateek, Rivera Lam, Macarena |title=Steering AI and advanced ICTs for knowledge societies: a Rights, Openness, Access, and Multi-stakeholder Perspective|publisher=UNESCO Publishing|year=2019|isbn=9789231003639|pages=66}}</ref>
+
+==References==
+{{Reflist}}
+
+[[Category:Machine learning]]

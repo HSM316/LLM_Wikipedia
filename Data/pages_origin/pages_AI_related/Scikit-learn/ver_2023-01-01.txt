@@ -1,0 +1,108 @@
+{{Short description|Python library for machine learning}}
+{{lowercase title}}
+{{Infobox software
+| name = scikit-learn
+| logo = Scikit learn logo small.svg
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = [[David Cournapeau]]
+| developer = 
+| released = {{Start date and age|2007|06|df=yes}}
+| latest release version = {{wikidata|property|reference|P348}}
+| latest release date    = {{start date and age|{{wikidata|qualifier|P348|P577}}}}
+| latest preview version =
+| latest preview date = 
+| programming language = [[Python (programming language)|Python]], [[Cython]], [[C (programming language)|C]] and [[C++]]{{wikidata|reference|P277}}
+| operating system = [[Linux]], [[macOS]], [[Microsoft Windows|Windows]]
+| platform = 
+| size = 
+| language = 
+| genre = Library for [[machine learning]]
+| license = [[BSD-new|New BSD License]]
+| website = {{URL|https://scikit-learn.org/}}
+}}
+'''scikit-learn''' (formerly '''scikits.learn''' and also known as '''sklearn''') is a [[free software]] [[machine learning]] [[Library (computing)|library]] for the [[Python (programming language)|Python]] [[programming language]].<ref name="jmlr">{{cite journal
+|author1=Fabian Pedregosa
+|author2=Gaël Varoquaux
+|author3=Alexandre Gramfort
+|author4=Vincent Michel
+|author5=Bertrand Thirion
+|author6=Olivier Grisel
+|author7=Mathieu Blondel
+|author8=Peter Prettenhofer
+|author9=Ron Weiss
+|author10=Vincent Dubourg
+|author11=Jake Vanderplas
+|author12=Alexandre Passos
+|author13=David Cournapeau
+|author14=Matthieu Perrot
+|author15=Édouard Duchesnay
+|title=scikit-learn: Machine Learning in Python
+|journal=Journal of Machine Learning Research
+|year=2011
+|volume=12
+|pages=2825–2830
+|url=http://jmlr.org/papers/v12/pedregosa11a.html
+}}</ref>
+It features various [[statistical classification|classification]], [[regression analysis|regression]] and [[Cluster analysis|clustering]] algorithms including [[support vector machine|support-vector machine]]s, [[random forests]], [[gradient boosting]], [[k-means clustering|''k''-means]] and [[DBSCAN]], and is designed to interoperate with the Python numerical and scientific libraries [[NumPy]] and [[SciPy]]. Scikit-learn is a [[NumFOCUS]] fiscally sponsored project.<ref>{{cite web|title=NumFOCUS Sponsored Projects|url=https://numfocus.org/sponsored-projects|publisher=NumFOCUS|access-date=2021-10-25}}</ref>
+
+==Overview==
+The scikit-learn project started as scikits.learn, a [[Google Summer of Code]] project by French [[data scientist]] [[David Cournapeau]]. The name of the project stems from the notion that it is a "SciKit" (SciPy Toolkit), a separately developed and distributed third-party extension to [[SciPy]].<ref>{{cite web
+|url=https://scikits.appspot.com/scikit-learn
+|title=scikit-learn
+|last1=Dreijer
+|first1=Janto
+}}</ref>
+The original [[codebase]] was later rewritten by other developers. In 2010, contributors Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort and Vincent Michel, from the [[French Institute for Research in Computer Science and Automation]] in [[Plateau de Saclay|Saclay]], [[France]], took leadership of the project and released the first public version of the library on February 1st, 2010.<ref>{{cite web|url=https://scikit-learn.org/stable/about.html#history|title=About us — scikit-learn 0.20.1 documentation|website=scikit-learn.org}}</ref> In November 2012, scikit-learn as well as [[scikit-image]], were described as two of the "well-maintained and popular"  {{As of|2012|11|alt=scikits libraries}}.<ref>{{cite book
+|author=Eli Bressert
+|title=SciPy and NumPy: an overview for developers
+|publisher=O'Reilly
+|date=2012
+|url=https://books.google.com/books?id=fLKTuJqQLVEC&pg=PA43
+|page=43
+}}</ref> In 2019, it was noted that scikit-learn is one of the most popular machine learning libraries on [[GitHub]].<ref>{{Cite web|url=https://github.blog/2019-01-24-the-state-of-the-octoverse-machine-learning/|title=The State of the Octoverse: machine learning|date=2019-01-24|website=The GitHub Blog|publisher=[[GitHub]]|language=en-US|access-date=2019-10-17}}</ref>
+
+==Implementation==
+scikit-learn is largely written in Python, and uses [[NumPy]] extensively for high-performance linear algebra and array operations. Furthermore, some core algorithms are written in [[Cython]] to improve performance. Support vector machines are implemented by a Cython wrapper around [[LIBSVM]]; logistic regression and linear support vector machines by a similar wrapper around [[LIBLINEAR]]. In such cases, extending these methods with Python may not be possible.
+
+scikit-learn integrates well with many other Python libraries, such as [[Matplotlib]] and [[plotly]] for plotting, [[NumPy]] for array vectorization, [[Pandas (software)|Pandas]] dataframes, [[SciPy]], and many more.
+
+== Version history ==
+scikit-learn was initially developed by David Cournapeau as a Google Summer of Code project in 2007. Later that year, Matthieu Brucher joined the project and started to use it as a part of his thesis work. In 2010, [[French Institute for Research in Computer Science and Automation|INRIA]], the [[French Institute for Research in Computer Science and Automation]], got involved and the first public release (v0.1 beta) was published in late January 2010.
+* August 2013. scikit-learn 0.14<ref name=":0" />
+* July 2014. scikit-learn 0.15.0<ref name=":0" />
+* March 2015. scikit-learn 0.16.0<ref name=":0" /> 
+* November 2015. scikit-learn 0.17.0<ref name=":0">{{Cite web|url=https://scikit-learn.org/dev/whats_new.html|title=Release history — scikit-learn 0.19.dev0 documentation|website=scikit-learn.org|access-date=2017-02-27}}</ref>
+* September 2016. scikit-learn 0.18.0 
+* July 2017. scikit-learn 0.19.0
+* September 2018. scikit-learn 0.20.0<ref>{{cite web |title=Release History - 0.20.0 documentation |url=https://scikit-learn.org/stable/whats_new.html#version-0-20 |website=scikit-learn |access-date=6 November 2018}}</ref>
+* May 2019. scikit-learn 0.21.0<ref>{{cite web |title=Release History - 0.21.0 documentation |url=https://scikit-learn.org/stable/whats_new.html#version-0-21-0 |website=scikit-learn |access-date=5 May 2019}}</ref>
+* December 2019. scikit-learn 0.22.0<ref>{{cite web |title=Release History - 0.22.0 documentation |url=https://scikit-learn.org/dev/whats_new/v0.22.html#version-0-22-0 |website=scikit-learn |access-date=7 June 2020}}</ref>
+*May 2020. scikit-learn 0.23.0<ref>{{cite web |title=Release History - 0.23.0 documentation |url=https://scikit-learn.org/dev/whats_new/v0.23.html#version-0-23-0 |website=scikit-learn |access-date=7 June 2020}}</ref>
+* Jan 2021. scikit-learn 0.24<ref>{{Citation|title=scikit-learn: A set of python modules for machine learning and data mining|url=http://scikit-learn.org/|access-date=2021-02-08}}</ref>
+* September 2021. scikit-learn 1.0<ref>{{Citation|title=scikit-learn: A set of python modules for machine learning and data mining|url=http://scikit-learn.org/|access-date=2021-09-24}}</ref>
+
+==scikit-learn tools==
+* [[mlpy]]
+* [[SpaCy]]
+* [[Natural Language Toolkit|NLTK]]
+* [[Orange (software)|Orange]]
+* [[PyTorch]]
+* [[TensorFlow]]
+* [[Infer.NET]]
+* [[List of numerical analysis software]]
+
+==References==
+{{Reflist|30em}}
+
+==External links==
+* {{Official website|https://scikit-learn.org/}}
+* {{GitHub|https://github.com/scikit-learn}}
+
+{{SciPy ecosystem}}
+
+[[Category:Data mining and machine learning software]]
+[[Category:Free statistical software]]
+[[Category:Python (programming language) scientific libraries]]
+[[Category:Software using the BSD license]]

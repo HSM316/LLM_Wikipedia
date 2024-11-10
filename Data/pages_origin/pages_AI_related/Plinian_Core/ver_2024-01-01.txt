@@ -1,0 +1,96 @@
+{{Short description|Words used for biological species information}}
+{{Orphan|date=June 2016}}
+{{primary sources|date=January 2016}}
+
+'''Plinian Core''' is a set of vocabulary terms that can be used to describe different aspects of [[biodiversity informatics|biological species information]]. Under "biological species Information" all kinds of properties or traits related to taxa—biological and non-biological—are included. Thus, for instance, terms pertaining descriptions,  legal aspects, conservation, management, demographics, nomenclature, or related resources are incorporated.
+
+== Description ==
+
+The '''Plinian Core''' is aimed to facilitate the exchange of information about the species and upper taxa.
+	
+What is in scope?
+* 	Species level catalogs of any kind of biological objects or data. 
+* 	Terminology associated with biological collection data. 
+* 	Striving for compatibility with other biodiversity-related standards. 
+* 	Facilitating the addition of components and attributes of biological data. 
+	What is not in scope? 
+* 	Data interchange protocols. 
+* 	Non-biodiversity-related data. 
+* 	Occurrence level data. 
+
+	This standard is named after [[Pliny the Elder]], a very influential figure in the study of the biological species.
+	
+'''Plinian Core''' design requirements includes: ease of use, to be self-contained, able to support data integration from multiple databases, and ability to handle different levels of granularity. Core terms can be grouped in its current version as follows:
+* 	[[Metadata]]
+* 	Base Elements
+* 	Record Metadata
+* 	[[Nomenclature#Nomenclature.2C classification and identification|Nomenclature and Classification]]
+* 	[[Taxonomic description]]
+* 	[[Natural history]]
+* 	[[Invasive species]]
+* 	[[Habitat|Habitat and Distribution]]
+* 	[[Demography]] and Threats
+* 	Uses, Management and Conservation
+* 	associatedParty, MeasurementOrFact, References, AncillaryData
+
+== Background ==
+Plinian Core started as a collaborative project between [[Instituto Nacional de Biodiversidad]] and [[GBIF]] Spain in 2005. A series of iterations in which elements were defined and implanted in different projects resulted in a "Plinian Core Flat" [deprecated].
+
+As a result, a new development was impulse to overcome them in 2012. New formal requirements, additional input and a will to better support the standard and its documentation, as well as to align it with the processes of [[TDWG]], the world reference body for biodiversity information standards.
+
+A new version, '''Plinian Core v3.x.x''' was defined. This provides more flexibility to fully represent the information of a species in a variety of scenarios. New elements to deal with aspects such as IPR, related resources, referenced, etc. were introduced, and elements already included were better-defined and documented.
+
+Partner for the development of Plinian Core in this new phase incorporated the [[University of Granada]] (UG, Spain), the [[Alexander von Humboldt Institute]] (IAvH, Colombia), the [[National Commission for the Knowledge and Use of Biodiversity]] (Conabio, Mexico) and the [[University of São Paulo]] (USP, Brazil).
+
+A "Plinian Core Task Group" within TDWG "Interest Group on species Information"<ref>{{Cite web|title = TDWG: (TDWG) Species Information Interest Group - Charter|url = http://www.tdwg.org/activities/species-information/charter/|website = www.tdwg.org|access-date = 2016-01-29}}</ref> was constituted and currently working on its development.
+
+== Levels of the standard ==
+Plinian Core is presented in to levels: the '''abstract model''' and the '''application profiles'''.
+
+The abstract model (AM), comprising the abstract model schema(xsd)  and the terms' URIs, is the normative part. It is all comprehensive, and allows for different levels of granularity in describing species properties. The AM should be taken as a "menu" from which to choose terms and level of detail needed in any specific project.
+
+The subsets of the abstract model intended to be implemented in specific projects are the "application profiles" (APs). Besides containing part of the elements of the AM, APs can impose additional specifications on the included elements, such as controlled vocabularies.  Some examples of APs in use follow:
+# Application profile [https://raw.githubusercontent.com/PlinianCore/Sources/master/xsd/application%20profiles/stable%20version/PliC3.2.1_AP_CONABIO.xsd CONABIO]
+# Application profile [https://raw.githubusercontent.com/PlinianCore/Sources/master/xsd/application%20profiles/stable%20version/PliC3.2.1_AP_INBIO.xsd INBIO]
+# Application profile [https://raw.githubusercontent.com/PlinianCore/Sources/master/xsd/application%20profiles/stable%20version/PliC3.2.1_AP_GBIF_ES.xsd GBIF.ES]
+# Application profile [https://github.com/BancoDatosNaturaleza/EIDOS Banco de Datos de la Naturaleza.Spain]
+# Application profile [https://raw.githubusercontent.com/PlinianCore/Sources/master/xsd/application%20profiles/stable%20version/PliC3.2.1_AP_SIB-COLOMBIA.xsd SIB-COLOMBIA]
+
+== Relation to other standards ==
+Plinian incorporates a number of elements already defined by other standards. The following table summarizes these standards and the elements used in Plinian Core:
+{| class="wikitable"
+!Standard
+!Elements
+|-
+|[[Darwin Core]]
+|taxonConceptID, Hierarchy, MeasurementOrFact, ResourceRelationShip.
+|-
+|[[Ecological Metadata Language]]
+|associatedParty, keywordSet, coverage, dataset
+|-
+|[[Encyclopedia of Life]] Schema
+|AncillaryData: DataObjectBase, References
+|-
+|[[Global Invasive Species Network]]
+|origin, presence, persistence, distribution, harmful, modified, startValidDate, endValidDate, countryCode, stateProvince, county, localityName, county, language, citation, abundance...
+|-
+|[https://www.tdwg.org/standards/tcs/ Taxon Concept Schema. TCS]
+|scientificName
+|}
+
+== External links ==
+* [https://github.com/tdwg/PlinianCore Main page]
+* [http://tools.gbif.org/dwca-validator/extensions.do An Implementation of Plinian Core as GBIF's IPT Extensions]
+* [https://github.com/tdwg/PlinianCore/wiki Plinian Core Terms Quick Reference Guide]
+*[https://github.com/tdwg/PlinianCore/tree/master/xsd/abstract%20models/stable%20version Plinian Core Abstract Model (xsd). Current version]
+* [http://www.tdwg.org/ Biodiversity Information Standards (TDWG)]
+* [https://web.archive.org/web/20160201094013/http://www.ingurumena.ejgv.euskadi.eus/r49-u95/es/contenidos/informacion/naturaeuskadi/es_def/adjuntos/plinian.pdf Sistema de información de la naturaleza de euskadi. Aplicación del estandar Plinian Core]
+* [https://www.miteco.gob.es/es/biodiversidad/servicios/banco-datos-naturaleza/informacion-disponible/BDN_Modelos_Datos.aspx Estándar Plinian Core para la gestión integrada de la información sobre especies. Ministerio de Agricultura, Alimentación y Medio Ambiente de España]
+* [https://web.archive.org/web/20160203073844/http://patrimonio.ambiente.gob.ec/bndv/modelo.php Modelo conceptual de la Base Nacional de Datos de Vegetación. Ministerio del Ambiente, Ecuador]
+
+== References ==
+<references />
+
+[[Category:Knowledge representation]]
+[[Category:Interoperability]]
+[[Category:Metadata standards]]

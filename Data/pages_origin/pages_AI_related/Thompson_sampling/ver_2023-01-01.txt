@@ -1,0 +1,109 @@
+{{More citations needed|date=May 2012}}
+
+'''Thompson sampling''',<ref name="ref1"/><ref name="ref1b"/><ref name="FnTTutorial"/> named after [[William R. Thompson]], is a [[heuristic]] for choosing actions that addresses the [[exploration-exploitation dilemma]] in the [[multi-armed bandit]] problem. It consists of choosing the action that maximizes the expected reward with respect to a randomly drawn belief.
+
+== Description ==
+{{No footnotes|section|date=May 2012}}
+
+Consider a set of contexts <math>\mathcal{X}</math>, a set of actions <math>\mathcal{A}</math>, and rewards in <math>\mathbb{R}</math>. In each round, the player obtains a context <math>x \in \mathcal{X}</math>, plays an action <math>a \in \mathcal{A}</math> and receives a reward <math>r \in \mathbb{R}</math> following a distribution that depends on the context and the issued action. The aim of the player is to play actions such as to maximize the cumulative rewards.
+
+The elements of Thompson sampling are as follows:
+# a likelihood function <math>P(r|\theta,a,x)</math>;
+# a set <math>\Theta</math> of parameters <math>\theta</math> of the distribution of <math>r</math>;
+# a prior distribution <math>P(\theta)</math> on these parameters;
+# past observations triplets <math>\mathcal{D} = \{(x; a; r)\}</math>;
+# a posterior distribution <math>P(\theta|\mathcal{D}) \propto P(\mathcal{D}|\theta)P(\theta)</math>, where <math>P(\mathcal{D}|\theta)</math> is the likelihood function.
+
+Thompson sampling consists in playing the action <math>a^\ast \in \mathcal{A}</math> according to the probability that it maximizes the expected reward; action <math>a^\ast</math> is chosen with probability
+:<math>\int \mathbb{I} \left[ \mathbb{E}(r|a^\ast,x,\theta) = \max_{a'} \mathbb{E}(r|a',x,\theta) \right] P(\theta|\mathcal{D}) d\theta,</math>
+where <math>\mathbb{I}</math> is the [[indicator function]].
+
+In practice, the rule is implemented by sampling. In each round, parameters <math>\theta^\ast</math> are sampled from the posterior <math>P(\theta|\mathcal{D})</math>, and an action <math>a^\ast</math> chosen that maximizes <math>\mathbb{E}[r|\theta^\ast,a^\ast,x]</math>, i.e. the expected reward given the sampled parameters, the action, and the current context. Conceptually, this means that the player instantiates their beliefs randomly in each round according to the posterior distribution, and then acts optimally according to them.  In most practical applications, it is computationally onerous to maintain and sample from a posterior distribution over models.  As such, Thompson sampling is often used in conjunction with approximate sampling techniques.<ref name="FnTTutorial"/>
+
+== History ==
+
+Thompson sampling was originally described by Thompson in 1933.<ref name="ref1"/> It was subsequently rediscovered numerous times independently in the context of multi-armed bandit problems.<ref name="ref2"/><ref name="ref5"/><ref name="ref6"/><ref name="ref4"/><ref name="ref3"/><ref name="ref7"/> A first proof of convergence for the bandit case has been shown in 1997.<ref name="ref2"/> The first application to [[Markov decision process]]es was in 2000.<ref name="ref6"/> A related approach (see [[#Bayesian control rule|Bayesian control rule]]) was published in 2010.<ref name="ref5"/> In 2010 it was also shown that Thompson sampling is ''instantaneously self-correcting''.<ref name="ref7"/> Asymptotic convergence results for contextual bandits were published in 2011.<ref name="ref4"/> Thompson Sampling has been widely used in many online learning problems including A/B testing in website design and online advertising,<ref name="ref9"/> and accelerated learning in decentralized decision making.<ref name="ref8"/> A Double Thompson Sampling (D-TS) <ref name="Wu2016DTS" /> algorithm has been proposed for dueling bandits, a variant of traditional MAB, where feedback comes in the form of pairwise comparison.
+
+== Relationship to other approaches ==
+
+=== Probability matching ===
+
+{{See also|Probability matching}}
+
+Probability matching is a decision strategy in which predictions of class membership are proportional to the class base rates. Thus, if in the training set positive examples are observed 60% of the time, and negative examples are observed 40% of the time, the observer using a probability-matching strategy will predict (for unlabeled examples) a class label of "positive" on 60% of instances, and a class label of "negative" on 40% of instances.
+
+=== Bayesian control rule ===
+
+A generalization of Thompson sampling to arbitrary dynamical environments and causal structures, known as '''Bayesian control rule''', has been shown to be the optimal solution to the adaptive coding problem with actions and observations.<ref name="ref5"/> In this formulation, an agent is conceptualized as a mixture over a set of behaviours. As the agent interacts with its environment, it learns the causal properties and adopts the behaviour that minimizes the relative entropy to the behaviour with the best prediction of the environment's behaviour. If these behaviours have been chosen according to the maximum expected utility principle, then the asymptotic behaviour of the Bayesian control rule matches the asymptotic behaviour of the perfectly rational agent.
+
+The setup is as follows. Let <math>a_1, a_2, \ldots, a_T</math> be the actions issued by an agent up to time <math>T</math>, and let <math>o_1, o_2, \ldots, o_T</math> be the observations gathered by the agent up to time <math>T</math>. Then, the agent issues the action <math>a_{T+1}</math> with probability:<ref name="ref5"/>
+:<math>P(a_{T+1}|\hat{a}_{1:T}, o_{1:T}),</math>
+where the "hat"-notation <math>\hat{a}_t</math> denotes the fact that <math>a_t</math> is a causal intervention (see [[Causality]]), and not an ordinary observation. If the agent holds beliefs <math>\theta \in \Theta</math> over its behaviors, then the Bayesian control rule becomes
+:<math>P(a_{T+1}|\hat{a}_{1:T}, o_{1:T}) = \int_{\Theta} P(a_{T+1}|\theta, \hat{a}_{1:T}, o_{1:T}) P(\theta|\hat{a}_{1:T}, o_{1:T}) \, d\theta</math>,
+where <math>P(\theta|\hat{a}_{1:T}, o_{1:T})</math> is the posterior distribution over the parameter <math>\theta</math> given actions <math>a_{1:T}</math> and observations <math>o_{1:T}</math>.
+
+In practice, the Bayesian control amounts to sampling, at each time step, a parameter <math>\theta^\ast</math> from the posterior distribution <math>P(\theta|\hat{a}_{1:T}, o_{1:T})</math>, where the posterior distribution is computed using Bayes' rule by only considering the (causal) likelihoods of the observations <math>o_1, o_2, \ldots, o_T</math> and ignoring the (causal) likelihoods of the actions <math>a_1, a_2, \ldots, a_T</math>, and then by sampling the action <math>a^\ast_{T+1}</math> from the action distribution <math>P(a_{T+1}|\theta^\ast,\hat{a}_{1:T},o_{1:T})</math>.
+
+=== Upper-Confidence-Bound (UCB) algorithms ===
+
+Thompson sampling and upper-confidence bound algorithms share a fundamental property that underlies many of their theoretical guarantees.  Roughly speaking, both algorithms allocate exploratory effort to actions that might be optimal and are in this sense "optimistic".  Leveraging this property, one can translate regret bounds established for UCB algorithms to Bayesian regret bounds for Thompson sampling<ref name="RussoVanRoy2014"/> or unify regret analysis across both these algorithms and many classes of problems.<ref name="RussoVanRoy2013"/>
+
+== References ==
+
+{{Reflist|refs=
+<ref name="ref1">
+Thompson, William R. [https://www.dropbox.com/s/yhn9prnr5bz0156/1933-thompson.pdf "On the likelihood that one unknown probability exceeds another in view of the evidence of two samples"]. ''[[Biometrika]]'', 25(3–4):285–294, 1933.
+</ref>
+<ref name="ref1b">
+Thompson, W. R. (1935). On the theory of apportionment. ''American Journal of Mathematics'', 57(2), 450-456.
+</ref>
+<ref name="ref2">
+J. Wyatt. ''Exploration and Inference in Learning from Reinforcement''. Ph.D. thesis, Department of Artificial Intelligence, University of Edinburgh. March 1997.
+</ref>
+<ref name="ref3">
+Chapelle, Olivier, and Lihong Li. "An empirical evaluation of thompson sampling." Advances in neural information processing systems. 2011.
+http://papers.nips.cc/paper/4321-an-empirical-evaluation-of-thompson-sampling
+</ref>
+<ref name="ref4">
+B. C. May, B. C., N. Korda, A. Lee, and D. S. Leslie. "Optimistic Bayesian sampling in contextual-bandit problems". Technical report, Statistics Group, Department of Mathematics, University of Bristol, 2011.
+</ref>
+<ref name="ref5">
+P. A. Ortega and D. A. Braun. "A Minimum Relative Entropy Principle for Learning and Acting", ''Journal of Artificial Intelligence Research'', 38, pages 475–511, 2010.
+</ref>
+<ref name="ref6">
+M. J. A. Strens. "A Bayesian Framework for Reinforcement Learning", ''Proceedings of the Seventeenth International Conference on Machine Learning'', Stanford University, California, June 29–July 2, 2000, http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.140.1701
+</ref>
+<ref name="ref7">
+O.-C. Granmo. "Solving Two-Armed Bernoulli Bandit Problems Using a Bayesian Learning Automaton", ''International Journal of Intelligent Computing and Cybernetics'', 3 (2), 2010, 207-234.
+</ref>
+<ref name="ref8">{{Cite journal | last1 = Granmo | first1 = O. C. | last2 = Glimsdal | first2 = S. | title = Accelerated Bayesian learning for decentralized two-armed bandit based decision making with applications to the Goore Game | doi = 10.1007/s10489-012-0346-z | journal = Applied Intelligence | volume = 38 | issue = 4 | pages = 479–488 | year = 2012 | hdl = 11250/137969 | s2cid = 8746483 | hdl-access = free }}
+</ref>
+<ref name="ref9">[[Ian Clarke (computer scientist)|Ian Clarke]].  "Proportionate A/B testing", September 22nd, 2011, http://blog.locut.us/2011/09/22/proportionate-ab-testing/
+</ref>
+<ref name="Wu2016DTS">
+{{citation
+ | arxiv       = 1604.07101| last1     = Wu
+ | first1    = Huasen
+ | last2     = Liu
+ | first2    = Xin
+ | last3     = Srikant
+ | first3    = R
+ | title     = Double Thompson Sampling for Dueling Bandits
+ | year      = 2016
+| bibcode= 2016arXiv160407101W}}
+</ref>
+<ref name="FnTTutorial">
+Daniel J. Russo, Benjamin Van Roy, Abbas Kazerouni, Ian Osband and Zheng Wen (2018), "A Tutorial on Thompson Sampling", Foundations and Trends in Machine Learning: Vol. 11: No. 1, pp 1-96. https://web.stanford.edu/~bvr/pubs/TS_Tutorial.pdf
+</ref>
+<ref name="RussoVanRoy2013">
+Daniel J. Russo and Benjamin Van Roy (2013), "Eluder Dimension and the Sample Complexity of Optimistic Exploration", Advances in Neural Information Processing Systems 26, pp. 2256-2264. https://proceedings.neurips.cc/paper/2013/file/41bfd20a38bb1b0bec75acf0845530a7-Paper.pdf</ref>
+<ref name="RussoVanRoy2014">
+Daniel J. Russo and Benjamin Van Roy (2014), "Learning to Optimize Via Posterior Sampling", Mathematics of Operations Research, Vol. 39, No. 4, pp. 1221-1243, 2014.  https://pubsonline.informs.org/doi/abs/10.1287/moor.2014.0650
+</ref>
+}}
+
+<!--- Categories --->
+[[Category:Artificial intelligence]]
+[[Category:Heuristic algorithms]]
+[[Category:Sequential methods]]
+[[Category:Sequential experiments]]

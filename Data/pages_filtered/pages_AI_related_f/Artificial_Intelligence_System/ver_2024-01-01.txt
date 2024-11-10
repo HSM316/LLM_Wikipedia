@@ -1,0 +1,21 @@
+Artificial Intelligence System (AIS) was a volunteer computing project undertaken by Intelligence Realm, Inc. with the long-term goal of simulating the human brain in real time, complete with artificial consciousness and artificial general intelligence. They claimed to have found, in research, the "mechanisms of knowledge representation in the brain which is equivalent to finding artificial intelligence", before moving into the developmental phase.
+
+History
+The project's initial goal was recreating the largest brain simulation to date, performed by neuroscientist Eugene M. Izhikevich of The Neurosciences Institute in San Diego, California. Izhikevich simulated 1 second of activity of 100 billion neurons (the estimated number of neurons in the human brain) in 50 days using a cluster of 27 3-gigahertz processors.  He extrapolated that a real-time simulation of the brain could not be achieved before 2016.  The project aimed to disprove this prediction.
+
+Artificial Intelligence System announced on On Sep 5, 2007 that they will use the Berkeley Open Infrastructure for Network Computing (BOINC) software to perform intensive calculations.
+
+On July 12, 2008, the first phase of the project had been completed by reaching the 100 billion neuron mark. The project then continued to simulate neurons while they completed the development of other related applications.
+
+ Application description 
+
+ the application is a brain network test system that reenacts biophysical sensory cells characterized as numerical models and use the Hodgkin–Huxley model to portray the properties of brain cells
+ the rundown of models will keep developing and will ultimately arrive at many models
+ the test system gets information from XML records that contain cell properties which portray behavior
+ the test system will process the framework's way of behaving over the long haul
+ calculation results will be saved in records
+
+ Conclusion 
+Artificial Intelligence System had successfully simulated over 700 billion neurons by April 2009 and the project reported 7119 participants in January, 2010
+
+AIS was last seen working on the post data stage before the website was no longer available after November 2010.

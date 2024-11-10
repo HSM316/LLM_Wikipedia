@@ -1,0 +1,196 @@
+{{Infobox algorithm
+|name= <!-- Defaults to article name -->
+|class= [[Search algorithm]]
+|image=
+|caption=
+|data= [[Graph (data structure)|Graph]]
+|time=
+|best-time=
+|average-time=
+|space=
+}}
+
+{{Tree search algorithm}}
+'''LPA*''' or '''Lifelong Planning A*''' is an [[Incremental heuristic search|incremental heuristic search]] algorithm based on [[A* search algorithm|A*]]. It was first described by Sven Koenig and Maxim Likhachev in 2001.<ref name="KoenigLikhachev2001" />
+
+==Description==
+
+LPA* is an incremental version of A*, which can adapt to changes in the graph without recalculating the entire graph, by updating the g-values (distance from start) from the previous search during the current search to correct them when necessary. Like A*, LPA* uses a heuristic, which is a lower boundary for the cost of the path from a given node to the goal. A heuristic is admissible if it is guaranteed to be non-negative (zero being admissible) and never greater than the cost of the cheapest path to the goal.
+
+===Predecessors and successors===
+
+With the exception of the start and goal node, each node {{math|''n''}} has ''predecessors'' and ''successors'':
+
+* Any node from which an edge leads towards {{math|''n''}} is a predecessor of {{math|''n''}}.
+* Any node to which an edge leads from {{math|''n''}} is a successor of {{math|''n''}}.
+
+In the following description, these two terms refer only to the ''immediate'' predecessors and successors, not to predecessors of predecessors or successors of successors.
+
+===Start distance estimates===
+
+LPA* maintains two estimates of the start distance {{math|''g''*(''n'')}} for each node:
+
+* {{math|''g''(''n'')}}, the previously calculated g-value (start distance) as in A*
+* {{math|''rhs''(''n'')}}, a lookahead value based on the g-values of the node’s predecessors (the minimum of all {{math|''g''(''n' '') + ''d''(''n' '', ''n'')}}, where {{math|''n'''}} is a predecessor of {{math|''n''}} and {{math|''d''(''x'', ''y'')}} is the cost of the edge connecting {{math|''x''}} and {{math|''y''}})
+
+For the start node, the following always holds true:
+
+:<math>rhs(start) = g(start) = 0</math>
+
+If {{math|''rhs''(''n'')}} equals {{math|''g''(''n'')}}, then {{math|''n''}} is called ''locally consistent''. If all nodes are locally consistent, then a shortest path can be determined as with A*. However, when edge costs change, local consistency needs to be re-established only for those nodes which are relevant for the route.
+
+===Priority queue===
+
+When a node becomes locally inconsistent (because the cost of its predecessor or the edge linking it to a predecessor has changed), it is placed in a [[priority queue]] for re-evaluation. LPA* uses a two-dimensional key:
+
+:<math>k(n) =
+  \begin{bmatrix}
+    k_1(n)\\
+    k_2(n)\\
+   \end{bmatrix} =
+  \begin{bmatrix}
+    min(g(n), rhs(n)) + h(n, goal)\\
+    min(g(n), rhs(n))\\
+   \end{bmatrix}
+</math>
+
+Entries are ordered by {{math|''k''<sub>1</sub>}} (which corresponds directly to the f-values used in A*), then by {{math|''k''<sub>2</sub>}}.
+
+===Node expansion===
+
+The top node in the queue is expanded as follows:
+
+* If the rhs-value of a node equals its g-value, the node is locally consistent and is removed from the queue.
+* If the rhs-value of a node is less than its g-value (known as a ''locally overconsistent'' node), the g-value is changed to match the rhs-value, making the node locally consistent. The node is then removed from the queue.
+* If the rhs-value of a node is greater than its g-value (known as a ''locally underconsistent'' node), the g-value is set to infinity (which makes the node either locally overconsistent or locally consistent). If the node is then locally consistent, it is removed from the queue, else its key is updated.
+
+Since changing the g-value of a node may also change the rhs-values of its successors (and thus their local consistence), they are evaluated and their queue membership and key is updated if necessary.
+
+Expansion of nodes continues with the next node at the top of the queue until two conditions are met:
+
+* The goal is locally consistent, and
+* The node at the top of the priority queue has a key which is greater than or equal to the key for the goal.
+
+===Initial run===
+
+The graph is initialized by setting the rhs-value of the start node to 0 and its g-value to infinity. For all other nodes, both the g-value and the rhs-value are assumed to be infinity until assigned otherwise. This initially makes the start node the only locally inconsistent node, and thus the only node in the queue. After that, node expansion begins. The first run of LPA* thus behaves in the same manner as A*, expanding the same nodes in the same order.
+
+===Cost changes===
+
+When the cost of an edge changes, LPA* examines all nodes affected by the change, i.e. all nodes at which one of the changed edges terminates (if an edge can be traversed in both directions and the change affects both directions, both nodes connected by the edge are examined):
+
+* The rhs-values of the nodes are updated.
+* Nodes which have become locally consistent are removed from the queue.
+* Nodes which have become locally inconsistent are added to the queue.
+* Nodes which remain locally inconsistent have their keys updated.
+
+After that, node expansion resumes until the end condition has been reached.
+
+===Finding the shortest path===
+
+Once node expansion has finished (i.e. the exit conditions are met), the shortest path is evaluated. If the cost for the goal equals infinity, there is no finite-cost path from start to goal. Otherwise, the shortest path can be determined by moving backwards:
+
+* Start at the goal.
+* Move to the predecessor {{math|''n' ''}} of the current node {{math|''n''}} for which {{math|''g''(''n' '') + ''d''(''n' '', ''n'')}} is lowest (if the lowest score is shared by multiple nodes, each is a valid solution and any of them can be chosen arbitrarily).
+* Repeat the previous step until you have reached the start.<ref name="KoenigLikhachev2002" />
+
+==Pseudocode==
+
+This code assumes a priority queue <code>queue</code>, which supports the following operations:
+
+* <code>topKey()</code> returns the (numerically) lowest priority of any node in the queue (or infinity if the queue is empty)
+* <code>pop()</code> removes the node with the lowest priority from the queue and returns it
+* <code>insert(node, priority)</code> inserts a node with a given priority into the queue
+* <code>remove(node)</code> removes a node from the queue
+* <code>contains(node)</code> returns true if the queue contains the specified node, false if not
+
+<syntaxhighlight lang="java">
+void main() {
+  initialize();
+  while (true) {
+    computeShortestPath();
+    while (!hasCostChanges())
+      sleep;
+    for (edge : getChangedEdges()) {
+        edge.setCost(getNewCost(edge));
+        updateNode(edge.endNode);
+    }
+  }
+}
+
+void initialize() {
+  queue = new PriorityQueue();
+  for (node : getAllNodes()) {
+    node.g = INFINITY;
+    node.rhs = INFINITY;
+  }
+  start.rhs = 0;
+  queue.insert(start, calculateKey(start));
+}
+
+/** Expands the nodes in the priority queue. */
+void computeShortestPath() {
+  while ((queue.getTopKey() < calculateKey(goal)) || (goal.rhs != goal.g)) {
+    node = queue.pop();
+    if (node.g > node.rhs) {
+      node.g = node.rhs;
+    } else {
+      node.g = INFINITY;
+      updateNode(node);
+    }
+    for (successor : node.getSuccessors())
+      updateNode(successor);
+  }
+}
+
+/** Recalculates rhs for a node and removes it from the queue.
+ * If the node has become locally inconsistent, it is (re-)inserted into the queue with its new key. */
+void updateNode(node) {
+  if (node != start) {
+    node.rhs = INFINITY;
+    for (predecessor: node.getPredecessors())
+      node.rhs = min(node.rhs, predecessor.g + predecessor.getCostTo(node));
+    if (queue.contains(node))
+      queue.remove(node);
+    if (node.g != node.rhs)
+      queue.insert(node, calculateKey(node));
+  }
+}
+
+int[] calculateKey(node) {
+  return {min(node.g, node.rhs) + node.getHeuristic(goal), min(node.g, node.rhs)};
+}
+</syntaxhighlight><ref name="KoenigLikhachev2002" />
+
+==Properties==
+
+Being algorithmically similar to A*, LPA* shares many of its properties.
+
+* Each node is expanded (visited) at most twice for each run of LPA*. Locally overconsistent nodes are expanded at most once per LPA* run, thus its initial run (in which every node enters the overconsistent state) has similar performance to A*, which visits each node at most once.
+* The keys of the nodes expanded for each run are monotonically nondecreasing over time, as is the case with A*.
+* The more informed (and thus larger) the heuristics are (while still satisfying the admissibility criteria), the fewer nodes need to be expanded.
+* The priority queue implementation has a significant impact on performance, as in A*. Using a [[Fibonacci heap]] can lead to a significant performance increase over less efficient implementations.
+
+For an A* implementation which breaks ties between two nodes with equal f-values in favor of the node with the smaller g-value (which is not well-defined in A*), the following statements are also true:
+
+* The order in which locally overconsistent nodes are expanded is identical to A*.
+* Of all locally overconsistent nodes, only those whose cost does not exceed that of the goal need to be expanded, as is the case in A*.
+
+LPA* additionally has the following properties:
+
+* When edge costs change, LPA* outperforms A* (assuming the latter is run from scratch) as only a fraction of nodes need to be expanded again.
+
+==Variants==
+
+* [[D*#D.2A Lite|D* Lite]], a reimplementation of the [[D*]] algorithm based on LPA*<ref name="KoenigLikhachev2005" />
+
+==References==
+{{reflist|refs=
+<ref name="KoenigLikhachev2001">{{Citation | last1 = Koenig | first1 = Sven | last2 = Likhachev | first2 = Maxim | chapter = Incremental A* | year = 2001 | chapter-url = https://papers.nips.cc/paper/2003-incremental-a.pdf  |title=Proceedings of the 14th International Conference on Neural Information Processing Systems: Natural and Synthetic (NIPS'01) |publisher=MIT Press |pages=1539–46}}</ref>
+<ref name="KoenigLikhachev2002">{{Citation | last1 = Koenig | first1 = Sven | last2 = Likhachev | first2 = Maxim | chapter = D* Lite | year = 2003 | chapter-url = http://idm-lab.org/bib/abstracts/papers/aaai02b.pdf |title=Proc. Natl. Conf. on Artificial Intelligence, Edmonton, AB |pages=476–483 |isbn=978-0-262-51129-2 |url=https://dl.acm.org/doi/proceedings/10.5555/777092}}</ref>
+<ref name="KoenigLikhachev2005">{{Citation | last1 = Koenig | first1 = S. | last2 = Likhachev | first2 = M. |url=http://www.ent.mrt.ac.lk/iml/paperbase/TRO%20Collection/TRO/2005/june/7.pdf |title=Fast Replanning for Navigation in Unknown Terrain |journal=IEEE Transactions on Robotics |volume=21 |issue=3 |pages=354–363 |date=2005  |doi=10.1109/TRO.2004.838026| s2cid = 15664344 }}</ref>
+}}
+
+[[Category:Search algorithms]]
+[[Category:Robot control]]
+[[Category:Artificial intelligence]]

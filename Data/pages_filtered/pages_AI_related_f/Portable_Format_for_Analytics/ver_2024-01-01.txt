@@ -1,0 +1,59 @@
+right
+
+The Portable Format for Analytics (PFA) is a JSON-based predictive model interchange format conceived and developed by Jim Pivarski. PFA provides a way for analytic applications to describe and exchange predictive models produced by analytics and machine learning algorithms. It supports common models such as logistic regression and decision trees. Version 0.8 was published in 2015.  Subsequent versions have been developed by the Data Mining Group.
+
+As a predictive model interchange format developed by the Data Mining Group, PFA is complementary to the DMG's XML-based standard called the Predictive Model Markup Language or PMML.
+
+Release history
+ Version  Release date Version 0.8.1November 2015
+
+Data Mining Group
+
+The Data Mining Group is a consortium managed by the Center for Computational Science Research, Inc., a nonprofit founded in 2008.
+
+Examples
+ reverse array:
+  # reverse input array of doubles
+  input: {"type": "array", "items": "double"}
+  output: {"type": "array", "items": "double"}
+  action:
+    - let: { x : input}
+    - let: { z : input}
+    - let: { l : {a.len: [x]}}
+    - let: { i : l}
+    - while : { ">=" : [i,0]}
+      do:
+        - set : {z : {attr: z, path : [i] , to: {attr : x ,path : [ {"-":[{"-" : [l ,i]},1]}]  } } }
+        - set : {i : {-:[i,1]}}
+    - z
+
+  Bubblesort
+  input: {"type": "array", "items": "double"}
+  output: {"type": "array", "items": "double"}
+  action:
+    - let: { A : input}
+    - let: { N : {a.len: [A]}}
+    - let: { n : {-:[N,1]}}
+    - let: { i : 0}
+    - let: { s : 0.0}
+    - while : { ">=" : [n,0]}
+      do :
+        - set : { i : 0 }
+        - while : { "<=" : [i,{-:[n,1]}]}
+          do :
+            - if: {">": [ {attr: A, path : [i]} , {attr: A, path:[{+:[i,1]}]} ]}
+              then : 
+                - set : {s : {attr: A, path: [i]}}
+                - set : {A : {attr: A, path: [i], to: {attr: A, path:[{+:[i,1]}]} } }
+                - set : {A : {attr: A, path: [{+:[i,1]}], to: s }}
+            - set : {i : {+:[i,1]}}
+        - set : {n : {-:[n,1]}}                 
+    - A
+
+Implementations
+
+Hadrian (Java/Scala/JVM) - Hadrian is a complete implementation of PFA in Scala, which can be accessed through any JVM language, principally Java. It focuses on model deployment, so it is flexible (can run in restricted environments) and fast. 
+Titus (Python 2.x) - Titus is a complete, independent implementation of PFA in pure Python. It focuses on model development, so it includes model producers and PFA manipulation tools in addition to runtime execution. Currently, it works for Python 2. 
+Titus 2 (Python 3.x) - Titus 2 is a fork of Titus which supports PFA implementation for Python 3. 
+Aurelius (R) - Aurelius is a toolkit for generating PFA in the R programming language. It focuses on porting models to PFA from their R equivalents. To validate or execute scoring engines, Aurelius sends them to Titus through rPython (so both must be installed).
+Antinous (Model development in Jython) - Antinous is a model-producer plugin for Hadrian that allows Jython code to be executed anywhere a PFA scoring engine would go. It also has a library of model producing algorithms.

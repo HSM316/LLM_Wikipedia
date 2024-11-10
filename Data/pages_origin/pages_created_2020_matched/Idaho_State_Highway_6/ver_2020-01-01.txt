@@ -1,0 +1,91 @@
+{{short description|State highway in Idaho, United States}}
+{{Infobox road
+|state=ID
+|type=SH
+|route=6
+|map={{maplink|frame=yes|plain=yes|frame-align=center|frame-width=290|frame-height=290|type=line|raw={{Wikipedia:Map data/Wikipedia KML/Idaho State Highway 6}}}}
+|map_custom=yes
+|map_notes=SH-6 highlighted in red
+|length_mi=40.645
+|length_ref=<ref name="ID-log">{{cite web|author=[[Idaho Transportation Department]]|url=http://itd.idaho.gov/highways/reports/milepostlog/mplog/StateHighway6.html|title=Milepost Log (Idaho SH6)|date=November 26, 2008|accessdate=2008-12-27}}</ref><ref name="ID-log-95">{{cite web|author=[[Idaho Transportation Department]]|url=http://itd.idaho.gov/highways/reports/milepostlog/mplog/US95.html|title=Milepost Log (US95)|date=November 26, 2008|accessdate=2008-12-27}}</ref>
+|direction_a=South
+|terminus_a={{jct|state=WA|WA|272}} at [[Washington (U.S. state)|Washington]] state line near [[Potlatch, Idaho|Potlatch]]
+|junction={{plainlist|
+*{{jct|state=ID|US|95}} near [[Potlatch, Idaho|Potlatch]]
+*{{jct|state=ID|SH|9}} near [[Harvard, Idaho|Harvard]]
+}}
+|direction_b=North
+|terminus_b={{jct|state=ID|SH|3}} near [[Santa, Idaho|Santa]]
+|counties=[[Latah County, Idaho|Latah]], [[Benewah County, Idaho|Benewah]]
+|previous_type=SH
+|previous_route=5
+|next_type=SH
+|next_route=7
+}}
+
+'''Idaho State Highway 6''' ('''SH 6''') is a [[state highway]] in [[Idaho Panhandle|northern]] [[Idaho]] running from the [[Washington (state)|Washington]] state line near [[Potlatch, Idaho|Potlatch]] to [[Santa, Idaho|Santa]]. {{nowrap|It is {{convert|40.645|mi|2}}}} in length and generally runs southwest {{nowrap|to northeast}}
+
+==Route description==
+SH-6 begins at the Washington state line in [[Latah County, Idaho|Latah County]] as a continuation of [[Washington State Route 272]], then heads east to an intersection with [[U.S. Route 95 in Idaho|U.S. 95]], with which it briefly overlaps before diverging and continuing east into Potlatch.  {{nowrap|It continues}} east to an intersection with [[Idaho State Highway 9|SH-9]] {{nowrap|near [[Harvard, Idaho|Harvard]].}}
+
+SH-6 continues northeast and north across the [[Palouse River]] into [[Benewah County, Idaho|Benewah County]], generally north through White Pine Drive; and area of [[Old-growth forest|old-growth]] [[Western white pine|white pine]] trees in the [[Hoodoo Mountains]] in the [[St. Joe National Forest]]. It terminates at a junction with [[Idaho State Highway 3|SH-3]], west {{nowrap|of Santa.<ref name=ID-log/><ref name=ID-log-95/>}}
+
+Between Harvard and [[Emida, Idaho|Emida]], the route crests at an [[elevation]] of about {{convert|3600|ft|round=5}} above [[sea level]]. {{nowrap|This is a}} {{nowrap|park 'n' ski}} lot (Palouse Divide) for [[Cross-country skiing|cross-country]] {{nowrap|skiing,<ref name=pnrskar>{{cite web|url=https://www.fs.usda.gov/recarea/nezperceclearwater/recarea/?recid=80129 |publisher=U.S. Forest Service: Nez Perce-Clearwater National Forests |title=Palouse Divide Nordic Ski Area |accessdate=October 8, 2018}}</ref>}} and the turnoff to {{nowrap|[[North–South Ski Bowl]],}} a defunct [[Alpine skiing|alpine]] {{nowrap|[[Ski area|area]]}} which is now a private conference and {{nowrap|retreat lodge.<ref name=divide>{{cite news|url=https://news.google.com/newspapers?id=S5xfAAAAIBAJ&sjid=sDEMAAAAIBAJ&pg=5774%2C466903|newspaper=Lewiston Morning Tribune|location=Idaho|title=Crossing the divide|last=Barker|first=Eric|date=January 17, 2002|page=1C}}</ref><ref name=pdlodge>{{cite web|url=http://www.myidaholodge.com/history.html|publisher=Palouse Divide Lodge <!--|location=(Benewah County, Idaho)-->|title= History|accessdate=October 8, 2018}}</ref>}}
+
+Prior to the 1960s, SH-6 was signed as an [[alternate route]] of [[Special routes of U.S. Route 95|U.S. 95]], which continued north along {{nowrap|present-day SH-3.}} 
+==Major intersections==
+{{jcttop|state=ID|length_ref=<ref name="ID-log"/>}}
+{{IDint
+|county=Latah
+|cspan=4
+|location=none
+|mile=0.000<!-- MP 100.000 -->
+|road={{jct|state=WA|SR|272|dir1=West|city1=Palouse}}
+|notes=Continuation into Washington
+}}
+{{IDint
+|location=none
+|type=concur
+|mile=4.420<!-- MP 104.420 -->
+|road={{jct|state=ID|US|95|dir1=South|city1=Lewiston}}
+|notes=South end of US-95 overlap
+}}
+{{IDint
+|location=none
+|type=concur
+|mile=5.590<!--MP 361.724-360.554 and then MP 0.000-->
+|road={{jct|state=ID|US|95|dir1=North|city1=Plummer|city2=Coeur d'Alene}}
+|notes=North end of US-95 overlap
+}}
+{{IDint
+|location=none
+|mile=15.448<!--MP 9.858-->
+|road={{jct|state=ID|SH|9|dir1=South|city1=Deary}}
+|notes=
+}}
+{{IDint
+|county=Benewah
+|location=none
+|mile=40.645<!--MP 30.055-->
+|road={{jct|state=ID|SH|3|city1=St. Maries|location2=Coeur d'Alene|city3=Clarkia}}
+}}
+{{jctbtm|keys=concur}}
+
+==See also==
+{{portal|U.S. Roads}}
+* [[List of state highways in Idaho]]
+* [[List of highways numbered 6]]
+
+==References==
+{{reflist|22em}}
+
+==External links==
+{{commons category|Idaho State Highway 6}}
+{{Attached KML|display=inline,title}}
+* [http://www.davidrumsey.com/maps920003-23818.html David Rumsey Map Collection] &ndash; Historic road map (1937) &ndash; Idaho, Montana, Wyoming &ndash; Texaco (Rand McNally)
+** [http://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~212065~5500205:Shell-Highway-Map-of-Idaho--8-DD-19 Idaho highway map (1956)] &ndash; Shell (H.M. Gousha)
+
+
+[[Category:State highways in Idaho|006]]
+[[Category:Transportation in Latah County, Idaho]]
+[[Category:Transportation in Benewah County, Idaho]]

@@ -1,0 +1,36 @@
+Azumio  is a mobile health company that specializes in biometric mobile technology. Founded in 2011, Azumio develops Apple iOS and Android health apps and services. Azumio has released 24 apps on iOS, 5 apps on Android, and 3 apps on Windows Phone. Azumio is a venture-backed company whose investors include Founders Fund, Accel Partners, and Felicis Ventures. The company is headquartered in Palo Alto, California.
+
+Overview
+Azumio publishes biometric health applications and services for mobile devices. The company's goals are directed toward the improvement of wellness by motivating healthy behavior with mobile applications. Within the apps, users can explore personal data trends and stay motivated with community support. Azumio works with clinical research scientists at Stanford University and at the University of California, San Francisco.
+
+In July 2012 Azumio acquired SkyHealth.
+
+Apps
+
+Argus
+Argus is Azumio's largest application, launched on July 1, 2013. With the aim of integrating various aspects of health into a single user timeline, Argus was designed to integrate data from Instant Heart Rate, Sleep Time, Fitness Buddy, and Instant Fitness into a single location. Argus allows users to input and track personal elements of their daily lives such as nutrition and exercise. As a lifetracker, the app functions as a pedometer, calorie counter, nutrition tracker, and activity logger. Argus provides goal tracking functionalities and customizable data trend charts to allow users to compare how various attributes of their lifestyle interact with one another.
+
+Data from 720,000 Argus users was used for a large-scale study of physical activity in 111 countries.Large-scale physical activity data reveal worldwide activity inequality, Althoff et al, doi:10.1038/nature23018
+
+Social
+In December 2013, Argus introduced a health-based social network in which users can add friends and followers.https://www.appannie.com/en/apps/ios/app/624329444/ After completing an activity or logging a health record, users are able to privately or publicly share the event. In April 2014, the social feature was expanded with a News Feed which compiles shared events of friends. A Discover section was added which allows users to explore the social network and add friends and followers with similar interests.
+
+On February 23, 2019, the Wall Street Journal reported that the health-oriented app owned by Azumio, "Instant Heart Rate: HR Monitor," sends user's private health data to social media giant Facebook immediately after it is recorded. This occurs even when the user does not have a Facebook account.Wall Street Journal, February 23-24, 2019, pg.A10.
+
+Fitness Buddy
+Fitness Buddy is Azumio's first fitness application, launched on July 16, 2011. Through built-in training programs, step-by-step videos, audio instruction cues, and motivational guidance, the app aims to serve as a mobile fitness coach. Fitness Buddy contains an exercise library with 1700 exercises, instructional videos, animated workout photos, and a custom workout builder. Fitness Buddy supports iPhone, iPad, Android, and Windows phone platforms, and also features Sonicast which allows two users to wirelessly share workouts with each other
+
+Instant Heart Rate
+Instant Heart Rate, released in October 2010, is a mobile Heart Rate Monitor app. With advancements in mobile phone camera resolution, most smart phones can accurately measure heart rate by analyzing minute color changes of the skin. The application, illuminates a user's finger with a phone's flashlight feature and uses the phone's camera to analyze color changes in the finger tip to track heart rate. The smart phone's sensors are as reliable as traditional methods of measurement.
+
+Insight Reports
+In October 2014, Instant Heart Rate introduced insight reports. When generated, insight reports aggregate heart rate measurements over a one-month period. Users can see their heart rate measurements sorted by time of day, by category (after waking up, before exercise, etc.), and also see visualizations of their pulse waveforms
+
+Sleep Time
+Azumio released a smart alarm clock and sleep analysis tool, Sleep Time, on March 28, 2012. By using the accelerometer in mobile phones, the application uses movement-analysis algorithms to measure the user's level of body movement and correlates that with a specific phase of the sleep cycle (Light sleep and Deep sleep). Recognizing when a user is in a light phase of sleep, Sleep Time alarms incrementally over a set time period to allow for a gradual wakeup. Users can choose from one of the built in soundscapes, environmental background sounds, or play their personal music to fall asleep. After each sleep session, Sleep Time generates a graph that allows the user to track amounts of light and deep sleep, sleep duration, and sleep efficiency. Sleep Time provides syncing capabilities with the Apple Health application.
+
+Glucose Buddy
+Azumio released Glucose Buddy in October 2011 with the aim of digitizing the paper-and-pen logging systems for diabetics.http://www.appannie.com/apps/ios/app/glucose-buddy-diabetes-logbook-manager-wsyncing-blood-pressure-weight-tracking/ Users can manually enter glucose numbers, carbohydrate consumption, insulin dosages, and activities into Glucose Buddy. This data is then synced onto the user's account, allowing access from multiple devices including a desktop web portal. Glucose Buddy plots data into graphs which can be exported and emailed to a user's physician.
+
+Instant Fitness
+The Instant Fitness application is Azumio's integration Fitness Buddy's exercise database into a mobile personal trainer that creates bodyweight workouts for users. Since its release in late December 2012, Instant Fitness has added a smart workout generator. Instant Fitness contains 600 exercises and leads users through workouts with voice cues and step-by-step animations. The workout database includes cardiovascular workouts, equipment-specific routines, and sports-based conditioning workouts. The application logs each of the user's workout repetitions into a data log and calendar.

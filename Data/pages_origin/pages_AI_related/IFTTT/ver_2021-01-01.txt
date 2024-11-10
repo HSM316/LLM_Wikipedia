@@ -1,0 +1,93 @@
+{{short description|Web-based service}}
+{{Infobox software
+| name = 
+| logo                    = IFTTT logo.svg
+| logo size               = 200px
+| author             = Linden Tibbets, Jesse Tane <ref>{{cite web |url=http://blog.ifttt.com/post/2316021241/ifttt-the-beginning| title= ifttt the beginning... | publisher= IFTTT blog | accessdate=October 16, 2014| last= Tibbets| first= Linden}}</ref>
+| developer          =IFTTT Inc.
+| released               = {{Start date and age|df=yes|2011|9|7}}
+| latest release version ='''Android'''<br> 4.3.0 ({{release date and age|2019|10|25}})<ref>{{Cite web|url=https://play.google.com/store/apps/details?id=com.ifttt.ifttt&hl=en_US|title=IFTTT - Apps on Google Play|website=play.google.com|language=en|access-date=2019-10-25}}</ref> <br>'''iOS'''<br> 4.4.0 ({{release date and age|2019|10|25}})<ref>{{Cite web|url=https://apps.apple.com/app/id660944635|title=IFTTT|website=App Store|language=en-us|access-date=2019-10-25}}</ref>
+| status                 = 
+| programming language   =
+| operating system       = [[Android (operating system)|Android]] [[Android KitKat|4.4]] or later <br> [[iOS]] [[IOS 10|10]] or later
+| language               = English
+| genre                  = [[Conditional (computer programming)|Conditional statement creator]], [[Wiktionary:automate|task automator]], [[internet of things]]
+| license            = [[Freemium]]
+| alexa                  =  {{Decrease}} 6,591 ({{as of|2019|10|01|alt=October 2019}})<ref>{{Cite web|url=https://www.alexa.com/siteinfo/ifttt.com|title=Alexa - Ifttt.com Traffic, Demographics, and Competitors - Alexa|website=www.alexa.com|access-date=2019-10-01}}</ref>
+| website                = {{URL|https://ifttt.com/}}
+}}
+
+'''If This Then That''' (commonly known as '''IFTTT''', {{IPAc-en|ɪ|f|t}})<ref>{{cite web |url=https://ifttt.com/m/brand-guidelines |title=Brand guidelines |accessdate=July 22, 2017 |website=IFTTT}}</ref><ref name="ifttt_wtf">{{cite web|url=https://ifttt.com/wtf|accessdate=16 Oct 2014|title=About IFTTT|archive-url=https://web.archive.org/web/20141015215100/https://ifttt.com/wtf|archive-date=15 October 2014|url-status=dead}}</ref> is a [[Web service|web-based service]] that allows users to create chains of [[Conditional (computer programming)|conditional statements]] 
+triggered by changes that occur within other web services such as [[Gmail]], [[Facebook]], [[Telegram (messaging service)|Telegram]], [[Instagram]], or [[Pinterest]].<ref>{{cite web |url=http://www.quickanddirtytips.com/tech/web/what-is-ifttt-and-how-can-it-improve-your-digital-life| title=What Is IFTTT and How Can it Improve Your Digital Life? | date=July 11, 2013 |accessdate=October 16, 2014| last= Escobar| first= Eric}}</ref>
+The service is offered in [[freeware]], subscription, and enterprise versions.
+
+The conditional chains are called ''[[applets]]''. 
+An applet may for example send an e-mail message if the user [[Twitter|tweets]] using a hashtag, or copy a photo on Facebook to a user's archive if someone tags a user in a photo.<ref name="Peers">{{cite web|url=http://blog.1and1.co.uk/2014/10/02/your-online-life-made-simpler-thanks-to-ifttt/|title=Your Online Life Made Simpler, Thanks to IFTTT|last=Peers|first=Nick|date=October 2, 2014|accessdate=October 16, 2014}}</ref>
+
+In addition to the web-based application, the service runs on [[iOS]] and [[Android (operating system)|Android]]. In February 2015, IFTTT renamed its original application to IF, and released a new suite of apps called Do, with which users can create shortcut applications and actions.<ref>{{cite web |title= IFTTT launches Do – a suite of apps to simplify recipes into customizable shortcuts|url=https://thenextweb.com/apps/2015/02/19/ifttt-launches-suite-apps-simplify-recipes-customizable-shortcuts/| publisher=The Next Web|accessdate=February 19, 2015 }}</ref> As of 2015, IFTTT users created about 20 million recipes each day.<ref>{{cite web |title= IFTTT Launches 3 "Do" Apps To Automate Photo Sharing, Tasks, Notes; Rebrands Main App "IF"|url=https://techcrunch.com/2015/02/19/ifttt-launches-3-do-apps-to-automate-photo-sharing-tasks-notes-rebrands-main-app-if/| publisher=[[TechCrunch]]|accessdate=February 22, 2015 }}</ref> All of the functionalities of the Do suite of apps have since been integrated into a redesigned IFTTT app.
+
+== History ==
+On December 14, 2010, Linden Tibbets, the co-founder of IFTTT, posted a blog post titled “ifttt the beginning...” on the IFTTT website, announcing the new project. The first IFTTT applications were designed and developed by Tibbets and co-founder Jesse Tane and the product officially launched on September 7, 2011.<ref>{{cite web|url=http://blog.ifttt.com/post/9919161101/ifttt-is-alive|title=ifttt is alive!|last=Alexander|first=Jesse|date=September 7, 2011|accessdate=November 8, 2016|url-status=bot: unknown|archiveurl=https://web.archive.org/web/20110924230856/http://blog.ifttt.com/post/9919161101/ifttt-is-alive|archivedate=September 24, 2011}}</ref><ref>{{cite web |title= ifttt is alive! |url= http://blog.ifttt.com/post/9919161101/ifttt-is-alive | date=September 7, 2011 |accessdate=October 18, 2014}}</ref>
+
+By April 2012, users had created one million tasks.<ref>{{cite web |title=One million tasks created |url= http://blog.ifttt.com/post/22129854971/one-million-tasks-created | date=April 30, 2012 |accessdate=October 18, 2014}}</ref> In June 2012, the service entered the [[Internet of Things]] space by integrating with [[Belkin Wemo]] devices,<ref name=":0">{{cite web|url=https://thenextweb.com/apps/2012/06/20/task-automation-tool-ifttt-gets-new-look-moves-into-physical-world-with-belkin-wemo-compatibility/|title=Task automation tool IFTTT gets new look, moves into physical world with Belkin WeMo compatibility|last=Panzarino|first=Matthew|date=June 20, 2012|accessdate=July 25, 2012}}</ref> allowing applets to interact with the physical world. In July 2013, IFTTT released an iPhone app and later released a version for iPad and iPod touch.<ref>{{cite web|url=http://blog.ifttt.com/post/55130449805/the-power-of-ifttt-now-in-your-pocket|title=The power of IFTTT, now in your pocket|date=June 10, 2013|accessdate=October 18, 2014}}</ref> Then in April 2014, an Android version came out.<ref>{{cite web |title= The power of IFTTT, now on Android |url= http://blog.ifttt.com/post/83729472199/the-power-of-ifttt-now-on-android | date=April 24, 2014 |accessdate=October 18, 2014}}</ref> By the end of 2014, the IFTTT business was valued at approximately US$170 million.<ref>{{cite web |title= 10 most valued Internet of Things startups from around the world |url= http://www.hottopics.ht/stories/lists/10-most-valued-internet-of-things-startups/ | date=February 2, 2015 |accessdate=February 10, 2015}}</ref>
+
+On February 19, 2015, IFTTT launched three new applications. Do Button triggers an action when you press it. Do Camera automatically uploads the image to the service of your choice (Facebook, Twitter, Dropbox, etc). Do Notes does the same as Do Camera except with notes instead of images. In November 2016, the four apps were merged. By December 2016, the company announced a partnership with [[JotForm]] to integrate an applet to create actions in other applications.<ref>{{Cite web | url = http://www.prnewswire.com/news-releases/jotform-and-ifttts-new-integration-connects-form-responses-to-hundreds-of-new-apps-300373092.html | title = JotForm and IFTTT's New Integration Connects Form Responses to Hundreds of New Apps | work = PR Newswire | date = 6 December 2016}}</ref><ref>{{Cite web | url = http://tech.co/little-ifttt-applets-company-try-2016-12 | title = 6 Little-Known IFTTT Applets Your Company Should Try | work = Tech.co | date = 7 December 2016}}</ref>
+
+Part of the revenue of IFTTT comes from "IFTTT Platform" partners, who pay to have their products connected to the service.{{Citation needed|date=September 2020}}
+
+On September 10, 2020, the service switched to a limited [[freemium]] model with a subscription-based version known as "IFTTT Pro", which allows services to use conditional statements and query data for more complex tasks. At the same time, all existing users were limited to three custom applets, being required to subscribe to Pro in order to remove this limitation.<ref>{{Cite web|title=IFTTT Pro will let users create more complex actions for $10 per month|url=https://www.engadget.com/ifttt-pro-applets-subscription-142815488.html|access-date=2020-09-14|website=Engadget|language=en}}</ref><ref>{{Cite web|last=Ricker|first=Thomas|date=2020-09-10|title=IFTTT introduces Pro subscriptions, limits free version to three applets|url=https://www.theverge.com/2020/9/10/21430265/ifttt-pro-subscriptions-free-controversy|access-date=2020-09-14|website=The Verge|language=en}}</ref> This generated criticism from its users due to this paywall.<ref>{{cite web |last1=Charlton |first1=Alistair |title=IFTTT Pro causes user backlash as free access restricted |url=https://www.gearbrain.com/ifttt-pro-subscription-service-explained-2647566439.html |website=Gearbrain |accessdate=17 September 2020}}</ref>
+
+== Features ==
+=== Overview ===
+[[File:Ifttt screenshot.png|thumb|right|Screenshot of the IFTTT website]]
+IFTTT employs the following concepts:
+* Services (formerly known as channels) are the basic building blocks of IFTTT.<ref name= "wtf">{{cite web| url=https://ifttt.com/wtf| title=About IFTTT| publisher=IFTTT.com| accessdate=October 23, 2014| archive-url=https://web.archive.org/web/20141015215100/https://ifttt.com/wtf| archive-date=October 15, 2014| url-status=dead}}</ref> They mainly describe a series of data from a certain web service such as YouTube or [[eBay]]. Services can also describe actions controlled with certain [[API]]s, like SMS. Sometimes, they can represent information in terms of weather or stocks.<ref>{{cite web|url=https://www.forbes.com/sites/eliseackerman/2012/09/23/ifttt-the-san-francisco-startup-lets-anyone-control-the-internet-of-things/|title=San Francisco Startup Lets Anyone Control The Internet of Things|last=Ackerman|first=Elise|date=September 23, 2012|work=forbes.com|accessdate=October 23, 2014}}</ref> Each service has a particular set of triggers and actions.<ref>{{cite web | url=https://ifttt.com/channels | title=IFTTT Channels | publisher=IFTTT.com  | accessdate=October 23, 2014}}</ref>
+* Triggers are the "this" part of an applet. They are the items that trigger the action. For example, from an [[RSS feed]], you can receive a notification based on a keyword or phrase.<ref name="Peers" />
+* Actions are the "that" part of an applet. They are the output that results from the input of the trigger.
+* Applets (formerly known as recipes) are the [[First-order logic|predicates]] made from Triggers and Actions. For example, if you like a picture on Instagram (trigger), an IFTTT app can send the photo to your [[Dropbox (service)|Dropbox]] account (action).<ref name="wtf" />
+* Ingredients are basic data available from a trigger—from the email trigger, for example; subject, body, attachment, received date, and sender’s address.<ref name="wtf" />
+
+=== Usage examples ===
+* IFTTT can automate web-application tasks, such as posting the same content on several social networks.
+* Marketing professionals can use IFTTT to track mentions of companies in [[RSS feeds]].<ref name="Sara">{{cite web|url=http://www.businessnewsdaily.com/4919-ifttt-for-business.html|title=10 Ways IFTTT Can Help Your Business|date=August 12, 2013|accessdate=October 27, 2014|last=Angeles|first=Sara|archive-url=https://web.archive.org/web/20141022005809/http://www.businessnewsdaily.com/4919-ifttt-for-business.html|archive-date=October 22, 2014|url-status=dead}}</ref>
+* IFTTT also is used in home automation, for instance switching on a light when detecting motion in a room (with associated compliant devices).<ref name=":0" />
+
+== Reception ==
+IFTTT has been received positively by ''[[Forbes]]'',<ref>{{cite news | url= https://www.forbes.com/sites/eliseackerman/2012/09/23/ifttt-the-san-francisco-startup-lets-anyone-control-the-internet-of-things/ | title= IFTTT: San Francisco Startup Lets Anyone Control The Internet of Things | date= September 23, 2012 | accessdate= November 13, 2012 | last= Ackerman|first= Elise | work= Forbes}}</ref> ''[[Time (magazine)|Time]]'',<ref>{{cite news | url= http://techland.time.com/2012/09/18/50-best-websites-2012/slide/ifttt/ | title= 50 Best Websites 2012 | date= September 18, 2012 | accessdate= November 13, 2012 | last= McCracken|first= Harry | work= Time}}</ref> ''[[Wired (magazine)|Wired]]'',<ref>{{cite news | url= https://www.wired.com/design/2012/10/socks-are-the-new-hoodie-startup-swag | title= Socks Are the New Hoodie: A Startup Reinvents Swag | date= October 13, 2012 | accessdate= November 13, 2012 | last= Flaherty|first= Joseph| work= Wired}}</ref> ''[[The New York Times]]'',<ref>{{cite news | url= http://bits.blogs.nytimes.com/2011/09/23/a-web-tool-that-lets-you-automate-the-internet/ | title= A Web Tool That Lets You Automate the Internet | date= September 23, 2011 | accessdate= November 13, 2012 | last= Wortham|first= Jenna| work= The New York Times}}</ref> and ''[[Reader's Digest]]''.<ref>
+{{cite web 
+| url= http://www.rd.com/slideshows/ifttt-recipes/ 
+| title= The IFTTT Recipes that Will Make Your Life Better 
+| accessdate= March 10, 2014 
+| last= Beres|first= Damon
+}}
+</ref> [[Microsoft]] developed a similar product called [[Microsoft Flow]] (later renamed Microsoft Power Automate).<ref>{{cite web
+ | url = http://www.zdnet.com/article/where-did-microsofts-new-flow-event-automation-service-come-from/
+ | title = Where did Microsoft's new Flow event-automation service come from?
+ | last = Foley
+ | first = Mary Jo
+ | author-link = Mary Jo Foley
+ | date = 2016-05-04
+ | website = ZDNet
+ | publisher = CBS Interactive
+ | access-date = 2016-11-25
+ | quote = Microsoft's new alternative to IFTTT can trace its origins back to a couple of other services developed by the company's Cloud and Enterprise group. [...] 'Microsoft Flow is a stand-alone SaaS Service that is designed for broad usage, including business users that want to automate day-to-day tasks. [...]'
+}}
+</ref>
+
+== See also ==
+* [[Google Home]]
+* [[Zapier]]
+* [[n8n]]
+
+== References ==
+{{reflist}}
+
+== External links==
+* {{official website}}
+
+[[Category:Internet of things]]
+[[Category:Web services]]
+[[Category:IOS software]]
+[[Category:Android (operating system) software]]
+[[Category:Internet properties established in 2011]]
+[[Category:Automation software]]

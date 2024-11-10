@@ -1,0 +1,33 @@
+[[Image:XDM_logo_2015.png|right|thumb|XDM logo]]
+The '''Extensible Device Metadata''' (XDM) specification is an [[Open format|open file format]] for embedding device-related [[metadata]] in [[JPEG]] and other common image files without breaking compatibility with ordinary [[image viewers]].<ref>{{citation|url=https://software.intel.com/en-us/articles/the-extensible-device-metadata-xdm-specification-version-10 | title=Intel Developer Zone, "The eXtensible Device Metadata (XDM) Specification - Version 1.0|date=2015-08-16}}</ref>  The metadata types include: [[depth map]], camera [[Pose (computer vision)|pose]], [[point cloud]], lens model, image reliability data, and identifying info about the hardware components.  This metadata can be used, for instance, to create depth effects such as a [[bokeh]] filter, recreate the exact location and position of the camera when the picture was taken, or create 3D data models of environments or objects.
+
+The format uses [[XML]] and is based on the [[Extensible Metadata Platform|XMP]] standard.  It can support multiple "cameras" (image sources and types) in a single image file, and each can include data about its position and orientation relative to the primary camera.  A camera data structure may include an image, depth map, etc.  The XDM 1.0 documentation uses JPEG as the basic model, but states that the concepts generally apply to other image-file types supported by XMP, including [[Portable Network Graphics|PNG]], [[TIFF]], and [[GIF]].
+
+The XDM specification is developed and maintained by a [[working group]] that includes engineers from [[Intel]] and [[Google]].  The version 1.01 specification is posted at the website [http://xdm.org xdm.org]; an earlier 1.0 version was posted at the [https://software.intel.com/en-us/articles/the-extensible-device-metadata-xdm-specification-version-10 Intel website] in late 2015.
+
+XDM builds upon the [https://developers.google.com/depthmap-metadata/ Depthmap Metadata] specification, introduced in 2014 and used in commercial applications including Google Lens Blur<ref>{{citation|url=http://netaz.blogspot.com/2014/06/googles-depth-map.html|title=Running down a dream, "Google's Depth Map"|date=2014-06-07}}</ref><ref>{{citation|url=http://www.codeproject.com/Articles/991837/Googles-Depth-Map|title=Code Project, "Google's Depth Map"|date=2015-05-15}}</ref> and [[Intel RealSense]] Depth Enabled Photography (DEP).<ref>{{citation|url=https://software.intel.com/en-us/articles/intel-realsense-depth-enabled-photography|title=Intel® RealSense™ Depth Enabled Photography|date=2015-10-02}}</ref>  That original specification was designed only for depth-photography use cases.  Due to changes and expansions of the data structure, and the use of different namespaces, the two standards are not compatible.  Existing applications that used that older standard will not work with XDM without modifications.
+
+== See also ==
+* [[Extensible Metadata Platform]]
+
+== References ==
+{{reflist}}
+
+== External links ==
+* [http://www.xdm.org XDM 1.01 beta documentation]
+* [https://software.intel.com/en-us/articles/the-extensible-device-metadata-xdm-specification-version-10 XDM 1.0 beta documentation]
+* [http://www.adobe.com/products/xmp.html Adobe XMP Main Page]
+* [http://www.adobe.com/devnet/xmp/ XMP Specification]
+* [https://developers.google.com/depthmap-metadata/ Depthmap Metadata specification]
+
+{{Graphics file formats}}
+
+[[Category:Digital photography]]
+[[Category:Metadata]]
+[[Category:Computer vision]]
+
+
+{{photography-stub}}
+{{computer-stub}}
+
+{{CCBYSASource|sourcepath=https://software.intel.com/sites/default/files/managed/2a/f2/XDM-Specification.pdf|sourcearticle=XDM|revision=692628038}}

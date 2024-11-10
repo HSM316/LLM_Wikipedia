@@ -1,0 +1,51 @@
+{{Short description|Deep learning framework by Microsoft Research}}
+{{Infobox software
+| name = Microsoft Cognitive Toolkit
+| logo = Microsoft-CogTK.png
+| logo_size = 128px
+| screenshot = 
+| caption = 
+| collapsible = 
+| author = 
+| developer = [[Microsoft Research]]
+| released = {{Start date and age|2016|01|25|df=yes}}
+| latest release version = 2.7.0
+| latest release date = {{Start date and age|2019|04|26|df=yes}}
+| latest preview version = 
+| latest preview date = 
+| programming language = [[C++]]
+| operating system = [[Microsoft Windows|Windows]],<ref>{{cite web |title=The Microsoft Cognitive Toolkit - Cognitive Toolkit - CNTK |url=https://learn.microsoft.com/en-us/cognitive-toolkit/ |website=learn.microsoft.com |language=en-us}}</ref> [[Linux]]
+| platform = 
+| size = 
+| language = 
+| genre = Library for [[machine learning]] and [[deep learning]]
+| license = [[MIT License]]<ref>[https://github.com/Microsoft/CNTK/blob/master/LICENSE.md CNTK/LICENSE.md at master · Microsoft/CNTK]</ref>
+| website = {{URL|https://www.microsoft.com/en-us/cognitive-toolkit/}}
+}}
+'''Microsoft Cognitive Toolkit''',<ref>{{cite web |url=https://blogs.microsoft.com/next/2016/10/25/microsoft-releases-beta-microsoft-cognitive-toolkit-deep-learning-advances/ |title=Microsoft releases beta of Microsoft Cognitive Toolkit for deep learning advances |last1=Linn |first1=Allison |date=25 October 2016 |website=microsoft.com |publisher=Microsoft |access-date=30 January 2017 |quote=Title: Microsoft releases beta of [no 'The' here] Microsoft Cognitive Toolkit |archive-url=https://web.archive.org/web/20170128175454/http://blogs.microsoft.com/next/2016/10/25/microsoft-releases-beta-microsoft-cognitive-toolkit-deep-learning-advances/ |archive-date=28 January 2017 |url-status=dead }}</ref> previously known as '''CNTK''' and sometimes styled as '''The Microsoft Cognitive Toolkit''', is a deprecated<ref>{{Cite web|url=https://docs.microsoft.com/en-us/cognitive-toolkit/releasenotes/cntk_2_7_release_notes|title=CNTK_2_7_Release_Notes - Cognitive Toolkit - CNTK|last=chrisbasoglu|website=docs.microsoft.com|language=en-us|access-date=2020-02-24}}</ref> [[deep learning]] [[Software framework|framework]] developed by [[Microsoft Research]]. Microsoft Cognitive Toolkit describes [[Artificial neural network|neural networks]] as a series of computational steps via a [[directed graph]].
+
+==See also==
+* [[Comparison of deep learning software]]
+* [[ML.NET]]
+* [[Open Neural Network Exchange]]
+
+==References==
+{{Reflist}}
+
+==Further reading==
+* {{cite book|author-first=Willem|author-last=Meints|year=2019|title=Deep Learning with Microsoft Cognitive Toolkit Quick Start Guide: A practical guide to building neural networks using Microsoft's open source deep learning framework|publisher=Packt Publishing|isbn=978-1789802993}}
+
+{{Deep Learning Software}}
+{{Microsoft FOSS}}
+{{Microsoft Research Labs}}
+
+[[Category:Deep learning software]]
+[[Category:Free and open-source software]]
+[[Category:Free statistical software]]
+[[Category:Microsoft free software|Cognitive Toolkit]]
+[[Category:Microsoft Research]]
+[[Category:Software using the MIT license]]
+[[Category:2016 software]]
+
+
+{{ai-stub}}

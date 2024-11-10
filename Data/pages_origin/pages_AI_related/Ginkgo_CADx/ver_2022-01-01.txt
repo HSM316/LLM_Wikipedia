@@ -1,0 +1,59 @@
+{{short description|Medical imaging software and DICOM viewer}}
+{{Infobox software
+| name                   = Ginkgo CADx
+| logo                   = 
+| screenshot             = Ginkgo_CADx_displaying_a_CT.jpg
+| caption                = Ginkgo CADx displaying a CT
+| author                 = MetaEmotion S.L
+| developer              = 
+| released               = 
+| latest release version = 3.8.3
+| latest release date    = {{Start date and age|2015|04}}<ref>{{cite web|title=Ginkgo CADx Changelog|url=https://github.com/gerddie/ginkgocadx/blob/master/ChangeLog|access-date=22 July 2016}}</ref>
+| operating_system       = [[Windows]], [[macOS]], [[Linux]]
+| genre                  = Scientific visualization and image computing
+| license                = [[LGPL]]
+| programming language   = [[C++]]
+| website                = {{URL|ginkgo-cadx.com}}
+}}
+
+'''Ginkgo CADx''' is a multi platform (Windows, Linux,<ref>[https://apps.ubuntu.com/cat/applications/oneiric/ginkgocadx/ Ginkgo CADx package in Ubuntu]</ref> Mac OS X) DICOM viewer (*.dcm) and dicomizer (convert different files to DICOM). Ginkgo CADx is licensed under [[LGPL]] license, being an [[Open-source software|open source]] project with an [[Open core]] approach. The goal of Ginkgo CADx project is to develop an open source professional [[DICOM]] workstation.<ref>[http://www.thehindu.com/todays-paper/tp-national/tp-karnataka/the-technology-behind-medical-imagery/article3615222.ece The technology behind medical imagery. The Hindu newspaper.]</ref>
+
+Ginkgo CADx also has a professional version with a private license model called Ginkgo CADx Pro.
+
+== About Ginkgo CADx ==
+The main features of this software are:
+
+* Fully functional [[DICOM]] viewer and DICOM workstation with [[Picture_Archiving_and_Communication_System|PACS]] support (C-FIND, C-GET, C-MOVE, C-STORE...).
+* Dicomizator: Ginkgo CADx can convert from JPEG, PNG, GIF, TIFF images and PDF documents to DICOM files.
+* Cross-platform (Windows, Linux, Mac OS X).
+* Standard DICOM tools: rulers, angle, window level, cinema mode...
+* Supports numerous DICOM modalities as CT, MR, ECG, PET, XC, SC, XA, MG...
+* Intuitive graphical interface customizable with user profiles.
+* Easily integrated with third party systems using [[HL7]] messages, DICOM and [[Integrating_the_Healthcare_Enterprise|IHE]] compliant workflows.
+
+Ginkgo CADx is written in [[C++]], has a [[Plug-in (computing)|plug-in]] architecture, and is [[cross-platform]] by way of [[CMake]]. It is also based on common open source libraries like [[VTK]],<ref>[http://www.kitware.com/source/home/post/63 Ginkgo CADx: Open Source DICOM CADx Environment. Kitware Source. April 2012.]</ref> [[Insight Segmentation and Registration Toolkit|ITK]], and [[wxWidgets]].
+
+== History ==
+Ginkgo CADx project started in 2009<ref>[http://idoimaging.com/blog/?p=85 I Do Imaging: Ginkgo CADx outline]</ref> with the aim to create an interactive, universal, homogeneous, open-source and cross-platform CADx environment. Developed by MetaEmotion, the first public version ([http://sourceforge.net/projects/ginkgocadx/files/2.0.2.0/ 2.0.2.0]) of Ginkgo CADx was released in 2010.
+
+The Ginkgo CADx team have collaborated with:
+* [[:es:Sacyl|Sacyl]] Public healthcare system of Castilla y León.
+* [[GNUmed]] team. Packaging and compiling Ginkgo CADx for Ubuntu, Debian, Fedora and SUSE.
+
+== References ==
+{{reflist}}
+
+== External links ==
+* {{URL|ginkgo-cadx.com}}
+
+{{Image processing software}}
+{{Free healthcare software|state=expanded}}
+
+[[Category:Computer vision software]]
+[[Category:Free 3D graphics software]]
+[[Category:Free bioimaging software]]
+[[Category:Free software programmed in C++]]
+[[Category:Free health care software]]
+[[Category:Free DICOM software]]
+[[Category:Software that uses wxWidgets]]
+[[Category:Software that uses VTK]]

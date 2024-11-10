@@ -1,0 +1,33 @@
+{{Short description|Contest developed by Two Sigma and Cornell Tech}}
+'''Halite''' is an open-source [[computer programming]] contest developed by the hedge fund/tech firm [[Two Sigma]] in partnership with a team at [[Cornell Tech]].<ref name=":0">{{Cite news|url=https://tech.cornell.edu/news/two-sigma-announces-public-launch-of-halite-ai-coding-game|title=Cornell Tech - Two Sigma Announces Public Launch of Halite, A.I. Coding Game|date=2016-11-02|work=Cornell Tech|access-date=2018-10-04|language=en-US}}</ref> Programmers can see the game environment and learn everything they need to know about the game.<ref>{{Cite journal|last=Segal|first=Michael|title=Why a Hedge Fund Started a Video Game Competition|url=http://nautil.us/issue/54/the-unspoken/why-a-hedge-fund-started-a-video-game-competition|journal=Nautilus|date=2017-11-30}}</ref> Participants are asked to build [[Robot|bots]] in whichever language they choose to compete on a two-dimensional virtual battle field.<ref name=":0" />
+
+==History==
+Benjamin Spector and Michael Truell<ref>{{cite arXiv|last1=Spector|first1=Benjamin|last2=Truell|first2=Michael|date=2017-10-20|title=The Design and Implementation of Modern Online Programming Competitions|eprint=1710.07738|class=cs.CY}}</ref><ref>{{Cite web|url=http://janzert.com/halite/rating-report/|title=A Quick Rating System Comparison.|last=Haskin|first=Brian (Janzert)|website=janzert.com|access-date=2018-10-04}}</ref> created the first Halite competition in 2016, before partnering with Two Sigma later that year.  
+
+=== Halite I ===
+Halite I asked participants to conquer territory on a grid. It launched in November 2016<ref>{{Cite web|url=https://www.gitbook.com/book/shummie/halite-postmortem/details|title=Halite Postmortem · GitBook (Legacy)|website=GitBook|language=en|access-date=2018-10-04}}</ref> and ended in February 2017.<ref>{{Cite web|url=https://dexgroves.github.io/halite/2017/02/15/halite.html|title=Halite Bot Breakdown|website=dexgroves.github.io|access-date=2018-10-04}}</ref><ref>{{Cite news|url=https://stakernotes.com/halite-ml-solution/|title=Halite ML Solution|date=2017-02-18|work=StakerNotes|access-date=2018-10-04|language=en-US}}</ref> Halite I attracted about 1,500 players.<ref name="Financial Times:Funds turn to quant ‘World Cup’ to lure the best analysts">{{cite web|url=https://www.ft.com/content/42a911e6-c003-11e8-95b1-d36dfef1b89a|title=Funds turn to quant 'World Cup' to lure the best analysts|last1=Wigglesworth|first1=Robin|last2=Palma|first2=Stefania|date=29 September 2018|publisher=Financial Times|accessdate=4 October 2018}}</ref>
+
+===Halite II===
+Halite II was similar to Halite I, but with a [[Space warfare|space-war]] theme.<ref name=":1">{{Cite news|url=https://technical.ly/brooklyn/2018/01/09/thomas-zhou-halite-ii/|title=A Brooklyn high-schooler takes on the world - Technical.ly Brooklyn|date=2018-01-09|work=Technical.ly Brooklyn|access-date=2018-10-04|language=en-US}}</ref> It ran from October 2017 until January 2018.<ref>{{Cite news|url=http://www.makeuseof.com/tag/test-ai-coding-skills-programming-challenge/|title=Test Your AI Coding Skills With This Programming Challenge|work=MakeUseOf|access-date=2018-10-04|language=en-US}}</ref><ref>{{Cite press release|url=https://www.prnewswire.com/news-releases/two-sigma-launches-halite-ii-the-open-source-competition-for-experimenting-with-future-applications-of-artificial-intelligence-and-machine-learning-300540919.html|title=Two Sigma Launches Halite II: The Open Source Competition for Experimenting With Future Applications of Artificial Intelligence and Machine Learning|last=Sigma|first=Two|website=www.prnewswire.com|language=en|access-date=2018-10-04}}</ref> The second installment of the competition attracted about 6,000 individual players from more than 100 countries.<ref name="Financial Times:Funds turn to quant ‘World Cup’ to lure the best analysts" /> Among the participants were professors, physicists and [[NASA]] engineers, as well as high school and university students.<ref name=":1" />
+
+===Halite III===
+Halite III launched in mid-October of 2018.<ref>{{cite web |url=https://github.com/HaliteChallenge/Halite-III |title=Season 3 of @twosigma's artificial intelligence programming challenge |website=[[GitHub]] |accessdate=2019-01-10 }}</ref> It ran from October 2018 to January 2019, with an ocean themed playing field. Players were asked to collect and manage Halite, an energy resource. By the end of the competition, Halite III included more than 4000 players and 460 organizations.
+
+===Halite IV===
+Halite IV was hosted by [[Kaggle]], and launched in mid-June of 2020.<ref>{{cite web |url=https://www.kaggle.com/c/halite/overview/timeline |title=Halite by Two Sigma |accessdate=2020-07-11 }}</ref>
+
+== See also ==
+
+* [[List of computer science awards]]
+* [[Competitive programming]]
+
+== References ==
+{{Reflist|}}
+
+==External links==
+* [https://halite.io/ Halite AI Challenge]
+
+[[Category:Programming contests]]
+[[Category:Computer science competitions]]
+[[Category:Artificial intelligence]]
+[[Category:2016 establishments in the United States]]

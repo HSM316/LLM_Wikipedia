@@ -1,0 +1,20 @@
+Android Things is a deprecated Android-based embedded operating system platform by Google, announced at Google I/O 2015, and launched in 2018. Android Things Dashboard shutdown began on January 5, 2021.Google to shut down Android Things, a smart home OS that never took off, The Verge After January 5, 2022, Android Things Dashboard has been shut down completely and all remaining data has been deleted.
+
+Originally, Android Things was aimed for low-power and memory constrained Internet of Things (IoT) devices,Google developing “Brillo” Internet of Things OS based on AndroidProject Brillo is Google’s new Internet of Things OS but in 2019 the project dropped support for low-power hardware and refocused on smartphone-class devices.
+
+ History 
+
+ Pre-release 
+During Google I/O 2015, Google announced an upcoming Android-based embedded operating system platform, codenamed Brillo. At the time, project aimed to support low-memory devices with as little as 32-64 MB of RAM. Brillo platform was not just an OS for IoT devices, but instead a complete software stack with cloud component which included management console for device provisioning and update delivery. Brillo supported Wi-Fi and Bluetooth Low Energy and Weave protocol for communicating with cloud (including update delivery), communication with Android phones, and other compatible devices (including Google Nest products).
+
+In 2016, Google revamped Brillo under the new name Android Things.
+
+Originally, Android Things was aimed for low-power and memory constrained Internet of Things (IoT) devices, which are usually built from different MCU platforms. 
+
+ Release 
+In 2018, Android Things was officially released, with version number 1.0. At the same time, multiple OEMs (including JBL, Lenovo, and LG Electronics) released smart home devices powered by Android Things. These devices were based on two Qualcomm "Home Hub" systems-on-chip solutions and Google-provided implementations of Android Things tailored for Google Assistant-powered smart speakers and displays.
+
+In February 2019, Android Things refocused on smart speakers and displays. The project dropped support for resource-constrained IoT devices and changed focus to smartphone-class devices.
+
+ Shutdown 
+In December 2020, Android Things Dashboard FAQ page was quietly updated with a notice about upcoming Android Things shut down. Android Things Dashboard stopped accepting new device registrations and projects on January 5, 2021, and stopped distributing updates on January 5, 2022 (at which point "the console will be turned down completely and all project data will be permanently deleted — including build configurations and factory images.")

@@ -1,0 +1,23 @@
+A data processing unit (DPU) is a programmable specialized electronic circuit with hardware acceleration of data processing for data-centric computing. The data is transmitted to and from the component as multiplexed packets of information. A DPU generally contains a CPU, NIC and programmable data acceleration engines. This allows DPUs to have the generality and the programmability of central processing units while being specialized to operate efficiently on networking packets, storage requests or analytics requests.Hennessy, John. “The End of Moore's Law, CPUs (as We Know Them), and the Rise of Domain Specific Architectures.” AI Hardware Summit. Stanford University. September 29, 2019. 
+
+The data acceleration engines differentiates itself from a CPU by a larger degree of parallelism (required to process many requests) and from a GPU by a MIMD architecture rather than an SIMD architecture (required as each request needs to make different decisions and follow a different path through the chip). DPUs can be either ASIC-based, FPGA-based or SoC-based. DPUs have been increasingly used in data centers and supercomputers since their introduction in the 2010s due to the rise in use of data-centric computing, big data, security, and artificial intelligence/machine learning/deep learning. DPUs are designed to be independent infrastructure endpoints.
+
+DPU vendors & product lines include:
+
+ Nvidia/Mellanox Technologies: BlueField, ConnectX, Innova
+ Marvell Technology: OCTEON and ARMADA
+ Fungible: F & S Series
+ Pensando: Capri, Elba & DSC
+Broadcom: Stingray
+Intel: Infrastructure Processing Unit (IPU)
+Kalray: Kalray K200-LP
+
+Software vendors utilizing DPUs include:
+
+ Cloudflare
+ DDN
+ WekaIO
+ Palo Alto Networks
+ VMware
+ Vast Data
+ Bloombase

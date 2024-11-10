@@ -1,0 +1,15 @@
+In Australia, the Australian Artificial Intelligence Institute (Australian AI Institute, AAII, or A2I2) was a government-funded research and development laboratory for investigating and commercializing Artificial Intelligence, specifically Intelligent Software Agents.
+
+ History 
+The AAII was started in 1988 as an initiative by the Hawke government and closed in 1999. It was backed by support from the Computer Power Group, SRI International and the Victorian State Government. The director of the group was Michael Georgeff who came from SRI, contributing his experience with the PRS and vision in the domain of Intelligent agents. It was located in the Melbourne suburb of Carlton before moving to more spacious premises in the city centre of Melbourne, Victoria. At its peak it had more than 40 staff and took up two floors of an office building on the corner of Latrobe and Russell Streets.
+
+In the late 1990s, the AAII spun out Agentis International (Agentis Business Solutions) to address the commercialization of the developed technology. Another company, Agent Oriented Software (AOS) was formed by a number of ex-AAII staff to pursue agent technology developing JACK Intelligent Agents. After the AAII shutdown, those staff that remained and the intellectual property were transferred to Agentis International.
+
+ Projects 
+This section summarizes a selection of the software and commercial projects that came out of the AAII: 
+
+ Procedural Reasoning System (PRS) ongoing development and application of PRS in collaboration with SRI International
+ Distributed Multi-Agent Reasoning System (dMARS) an agent-oriented development and implementation environment for building complex, distributed, time-critical systems. Developed as a C++ extension to PRS.
+ Smart Whole AiR Mission Model (SWARMM) an agent-oriented simulation system developed by AAII in conjunction with and for the Air Operations Division (AOD) of the DSTO.
+ Optimal Aircraft Sequencing using Intelligent Scheduling (OASIS) an air traffic management system written in the PRS that accurately estimated aircraft arrival time, determined an optima sequence for landings and alerted operators as to the actions required to achieve the sequence.  It was designed to reduce air traffic congestion and maximize the use of runways.  A prototype was developed for Sydney Airport using dMARS called HORIZON.
+ Single Point of Contact (SPOC) was a system developed for Optus to assist customer service representatives to meet the objective to meet 98% of customer enquirers with a single point of contact with the company. The system was built using dMARS and involved a multilayer architecture.

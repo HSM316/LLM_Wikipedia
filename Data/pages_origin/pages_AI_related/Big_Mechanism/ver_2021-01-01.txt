@@ -1,0 +1,25 @@
+{{refimprove|date=April 2015}}
+
+'''Big Mechanism''' is a $45 million [[DARPA]] research program, begun in 2014, aimed at [[Software development|developing software]] that will read [[cancer]] research papers, integrate them into a cancer model and frame new [[Hypothesis|hypotheses]] by the end of 2017 through the automated collection of [[big data]] and integrating across various disciplines such as knowledge-based [[Natural language processing|NLP]], curation and [[ontology (information science)|ontology]], systems and [[mathematical and theoretical biology|mathematical biology]] by reading research [[Abstract (summary)|abstracts]] and [[Academic publishing|papers]] to extract pieces of causal mechanisms.<ref name=s1>{{Cite journal | doi = 10.1126/science.347.6221.465| title = DARPA sets out to automate research| journal = Science| volume = 347| issue = 6221| pages = 465| year = 2015| last1 = You | first1 = J.| pmid=25635066| bibcode = 2015Sci...347..465Y}}</ref>
+
+== Ras gene ==
+
+The program focuses on mutations in the [[Ras gene]] family, which underlie some one-third of human cancers. Currently, a rough road map shows interaction sequences among [[Protein|proteins]] affecting [[Self-replication|cell replication]] and death. However, the causal relations are poorly understood.<ref name=s1/>
+
+== Plan ==
+
+The program is to occur in three stages. The first is to read literature and convert it into formal representations. Second is to integrate the knowledge into [[computational models]]. Third is to produce experimentally testable explanations and predictions. Research teams are developing four separate systems targeting all three tasks.<ref name=s1/>
+
+In February 2015, an evaluation meeting reviewed progress on the first stage. Multiple tasks were considered. One was extraction of [[Experiment|experimental procedure]] details and evaluating statements such as “we demonstrate” and “we suggest.” Another worked to map sentence meaning and relationships. The best [[Natural-language understanding|machine-reading]] system extracted 40% of relevant information from a small [[text corpus|corpus]] and correctly determined how each passage related to the model.<ref name=s1/>
+
+The second stage is to become active in summer 2015, when members attempt to produce a single reference model. The third stage is the most challenging, because the [[artificial intelligence]] community has had limited success at developing [[hypothesis]] generators. [[Molecular biology]] may be more amenable, because most [[domain knowledge]] is technical and available in written form.<ref name="s1" />
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* {{Official website|http://www.darpa.mil/program/big-mechanism}}
+
+[[Category:DARPA projects]]
+[[Category:Artificial intelligence applications]]
+[[Category:Cancer research]]

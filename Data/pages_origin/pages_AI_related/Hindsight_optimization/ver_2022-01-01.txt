@@ -1,0 +1,7 @@
+{{unreferenced|date=August 2012}}
+'''Hindsight optimisation''' ('''HOP''') is a [[computer science]] technique used in [[artificial intelligence]] for analysis of actions which have stochastic results. HOP is used in combination with a deterministic planner. By creating sample results for each of the possible actions from the given state (i.e. determinising the actions), and using the deterministic planner to analyse those sample results, HOP allows an estimate of the actual action.
+
+==References==
+{{Reflist}}
+
+[[Category:Artificial intelligence]]

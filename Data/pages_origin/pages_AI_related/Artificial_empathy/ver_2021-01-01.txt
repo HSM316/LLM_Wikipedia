@@ -1,0 +1,71 @@
+'''Artificial empathy''' ('''AE''') or '''computational empathy''' is the development of AI systems − such as [[companion robots|companion robot]] or virtual agents − that are able to [[emotion detection|detect]] and respond to human [[emotion]]s in an [[empathy|empathic]] way.<ref name=":Yalcin">Yalçın, Ö.N., DiPaola, S. Modeling empathy: building a link between affective and cognitive processes. Artificial Intelligence Review 53, 2983–3006 (2020). {{doi|10.1007/s10462-019-09753-0}}.</ref> According to scientists, although the technology can be perceived as scary or threatening by many people,<ref>{{Cite journal|author1=Jan-Philipp Stein|author2=Peter Ohler|date=2017|title=Venturing into the uncanny valley of mind—The influence of mind attribution on the acceptance of human-like characters in a virtual reality setting |journal=Cognition |language=en |volume=160 |pages=43–50 |doi=10.1016/j.cognition.2016.12.010 |pmid=28043026|issn=0010-0277}}</ref> it could also have a significant advantage over humans in professions which are traditionally involved in emotional role-playing such as the health care sector.<ref name="Baumgaertner">{{cite journal |title=Do Emotions Matter in the Ethics of Human-Robot Interaction? |journal=Artificial Empathy and Companion Robots |author=Bert Baumgaertner |author2=Astrid Weiss |publisher=European Community’s Seventh Framework Programme (FP7/2007-2013) under grant agreement No. 288146 (“HOBBIT”); and the Austrian Science Foundation (FWF) under grant agreement T623-N23 (“V4HRC”) |url=http://doc.gold.ac.uk/aisb50/AISB50-S19/AISB50-S19-Baumgaertner-paper.pdf |via=direct download |date=26 February 2014}}</ref> From the care-giver perspective for instance, performing emotional labor above and beyond the requirements of paid labor often results in chronic stress or burnout, and the development of a feeling of being desensitized to patients. However, it is argued that the emotional role-playing between the care-receiver and a robot can actually have a more positive outcome in terms of creating the conditions of less fear and concern for one's own predicament best exemplified by the phrase: "if it is just a robot taking care of me it cannot be that critical." Scholars debate the possible outcome of such technology using two different perspectives. Either, the AE could help the socialization of care-givers, or serve as role model for emotional detachment.<ref name="Baumgaertner"/><ref name="Asada">{{cite journal |title=Affective Developmental Robotics |journal=How Can We Design the Development of Artifcial Empathy? |author=Minoru Asada |publisher=Dept. of Adaptive Machine Systems, Graduate School of Engineering, Osaka University |location=Osaka, Japan |url=http://www.macs.hw.ac.uk/~kl360/HRI2014W/submission/S7.pdf |via=direct download |date=14 February 2014}}</ref>
+
+A broader definition of artificial empathy is "the ability of nonhuman models to predict a person's internal state (e.g., cognitive, affective, physical) given the signals (s)he emits (e.g., facial expression, voice, gesture) or to predict a person's reaction (including, but not limited to internal states) when he or she is exposed to a given set of stimuli (e.g., facial expression, voice, gesture, graphics, music, etc.)".<ref name=":0">Xiao, L., Kim, H. J., & Ding, M. (2013). "An introduction to audio and visual research and applications in marketing". ''Review of Marketing Research'', ''10'', p. 244. {{doi|10.1108/S1548-6435(2013)0000010012}}.</ref>
+
+== Areas of research ==
+{{Main|Philosophy of artificial intelligence|Ethics of artificial intelligence}}
+
+There are a variety of philosophical, theoretical, and applicative questions related to AE. For example:
+
+# Which conditions would have to be met for a robot to respond competently to a human emotion?
+# What models of empathy can or should be applied to Social and Assistive Robotics?
+# Does the interaction of humans with robots have to imitate affective interaction between humans?
+# Can a robot help science learn about affective development of humans?
+# Would robots create unforeseen categories of inauthentic relations?
+# What relations with robots can be considered truly authentic?
+
+== Examples of AE research and practice ==
+Humans often communicate and make decisions based on the inferences of other's internal states (e.g., emotional, cognitive and physical states) from the various signals emitted by the person, such as facial expression, body gesture, voice and words.  Broadly speaking, the domain of AE focuses on developing non-human models  to achieve similar objectives using the data emitted by or shown to humans.
+
+=== Streams of AE research ===
+The concept of AE has been applied in various research disciplines, including artificial intelligence and business. Specifically, there have been two main streams of research in this domain: first, the use of nonhuman models in predicting a person's internal state (e.g., cognitive, affective, physical) given the signals he or she emits (e.g., facial expression, voice, gesture); second, the use of nonhuman models in predicting a person's reaction when he or she is exposed to a given set of stimuli (e.g., facial expression, voice, gesture, graphics, music etc.).<ref name=":0" />
+
+Research on [[affective computing]], such as [[emotional speech recognition]] and [[facial expression detection]], falls within the first stream of AE. Contexts that have been studied include oral interviews,<ref>Hansen, J. H., Kim, W., Rahurkar, M., Ruzanski, E., & Meyerhoff, J. (2011). "Robust emotional stressed speech detection using weighted frequency subbands". ''EURASIP Journal on Advances in Signal Processing'', ''2011'', 1–10.</ref> call center<ref>Lee, C. M., & Narayanan, S. S. (2005). "Toward detecting emotions in spoken dialogs. ''IEEE transactions on speech and audio processing'', ''13''(2), 293–303.</ref> human-computer interaction,<ref>Batliner, A., Hacker, C., Steidl, S., Nöth, E., D'Arcy, S., Russell, M. J., & Wong, M. (2004, April). {{"'}}You Stupid Tin Box'-Children Interacting with the AIBO Robot: A Cross-linguistic Emotional Speech Corpus". In ''Lrec''.</ref> sales pitch,<ref>Allmon, D. E., & Grant, J. (1990). Real estate sales agents and the code of ethics: A voice stress analysis. ''Journal of Business Ethics'', '''9'''(10), 807–812.</ref> and financial reporting.<ref>Hobson, J. L., Mayew, W. J., & Venkatachalam, M. (2012). Analyzing speech to detect financial misreporting. ''Journal of Accounting Research'', ''50''(2), 349–392.</ref> The second stream of AE have been researched more in marketing contexts, such as advertising,<ref>Xiao, L., & Ding, M. (2014). "Just the faces: Exploring the effects of facial features in print advertising". ''Marketing Science'', '''33'''(3), 338–352.</ref> branding,<ref>Netzer, O., Feldman, R., Goldenberg, J., & Fresko, M. (2012). Mine your own business: Market-structure surveillance through text mining. ''Marketing Science'', ''31''(3), 521-543.</ref><ref>Tirunillai, S., & Tellis, G. J. (2014). Mining marketing meaning from online chatter: Strategic brand analysis of big data using latent dirichlet allocation. ''Journal of Marketing Research'', ''51''(4), 463–479.</ref> customer reviews,<ref>Büschken, J., & Allenby, G. M. (2016). Sentence-based text analysis for customer reviews. ''Marketing Science'', ''35''(6), 953–975.</ref> in-store recommendation system,<ref>Lu, S., Xiao, L., & Ding, M. (2016). A video-based automated recommender (VAR) system for garments. ''Marketing Science'', ''35''(3), 484-510.</ref> movies,<ref>Liu, X., Shi, S. W., Teixeira, T., & Wedel, M. (2018). Video content marketing: The making of clips. ''Journal of Marketing'', '''82'''(4), 86–101.</ref> and online dating.<ref>Zhou, Yinghui, Shasha Lu, & Min Ding (2020), "Contour-as-Face (CaF) Framework: A Method to Preserve Privacy and Perception", ''Journal of Marketing Research'', forthcoming.</ref>
+
+=== AE applications in practice ===
+With the increasing volume of visual, audio and text data in commerce, there have been many business applications using AE. For example, [[Affectiva]]<ref>{{Cite web | url=https://www.affectiva.com/ |title = Home}}</ref> analyses viewers' facial expressions from video recordings while they are watching video advertisements in order to optimize the content design of video ads. HireVue,<ref>{{Cite web | url=https://www.hirevue.com/ | title=Pre-employment Testing & Video Interviewing Platform}}</ref> a hiring intelligence firm, help firms make recruitment decisions using analysis of the audio and video information from candidates' video interviews. Lapetus Solutions<ref>{{Cite web | url=https://www.lapetussolutions.com/ | title=Lapetus Solutions, Inc}}</ref> develops a model to estimate an individual's longevity, health status and disease susceptibility from a face photo. Their technology has been applied in the insurance industry.<ref>{{Cite web | url=https://demo.lapetussolutions.com/light/home |title = CHRONOS - Get Started}}</ref>
+
+== Artificial empathy and human services ==
+Although AI has not been shown to replace social workers themselves yet, the technology has begun making waves in the field. ''Social Work Today'' published an article in 2017 describing research performed at Florida State University. The research involved the use of computer algorithms to analyze health records and detect combinations of risk factors that could indicate a future suicide attempt. The article reports, "machine learning—a future frontier for artificial intelligence—can predict with 80% to 90% accuracy whether someone will attempt suicide as far off as two years into the future. The algorithms become even more accurate as a person's suicide attempt gets closer. For example, the accuracy climbs to 92% one week before a suicide attempt when artificial intelligence focuses on general hospital patients".
+
+At this point in time, artificial intelligence has not been able to replace social workers completely, but algorithmic machines such as those described above can have incredible benefits to social workers. Social work operates on a cycle of engagement, assessment, intervention, and evaluation with clients. This technology can make the assessment for risk of suicide can lead to earlier interventions and prevention, therefore saving lives. It is the hope of these researchers that the technology will be implemented in our modern healthcare system. The system would learn, analyze, and detect risk factors, alerting the clinician of a patient's suicide risk score (equivalent to a patient's cardiovascular risk score). At this point, social workers could step in for further assessment and preventive intervention.
+
+==See also==
+* {{sectionlink|Artificial intelligence|Social intelligence}}
+* [[Artificial human companion]]
+* ''[[Blade Runner]]'' / ''[[Do Androids Dream of Electric Sheep?]]''
+* [[Case-based reasoning]]
+* [[Commonsense reasoning]]
+* [[Emotion recognition]]
+* [[Facial recognition system]]
+* [[Glossary of artificial intelligence]]
+* [[Human–robot interaction]]
+* [[Pepper (robot)]]
+* Soft computing
+** [[Evolutionary computing]]
+** [[Machine learning]]
+
+== References ==
+{{Reflist}}
+
+{{Navboxes
+|list=
+{{philosophy of mind}}
+{{philosophy of science}}
+{{Evolutionary computation}}
+{{Computable knowledge}}
+{{Computer science}}
+{{emerging technologies|topics=yes|infocom=yes}}
+{{Robotics}}
+}}
+{{Authority control}}
+
+{{DEFAULTSORT:Artificial empathy}}
+[[Category:Affective computing]]
+[[Category:Artificial intelligence]]
+[[Category:Computational neuroscience]]
+[[Category:Cybernetics]]
+[[Category:Emerging technologies]]
+[[Category:Emotion]]
+[[Category:Formal sciences]]
+[[Category:Unsolved problems in computer science]]

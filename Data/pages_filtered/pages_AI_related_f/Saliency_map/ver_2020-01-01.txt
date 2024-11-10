@@ -1,0 +1,56 @@
+476x476px|A view of the fort of Marburg (Germany) and the saliency Map of the image using color, intensity and orientation.
+
+In computer vision, a saliency map is an image that shows each pixel's unique quality. The goal of a saliency map is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. For example, if a pixel has a high grey level or other unique color quality in a color image, that pixel's quality will show in the saliency map and in an obvious way. Saliency is a kind of image segmentation.
+
+Saliency as a segmentation problem
+Saliency estimation may be viewed as an instance of image segmentation. In computer vision, image segmentation is the process of partitioning a digital image into multiple segments (sets of pixels, also known as superpixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. More precisely, image segmentation is the process of assigning a label to every pixel in an image such that pixels with the same label share certain characteristics.
+
+Example implementation
+First, we should calculate the distance of each pixel to the rest of pixels in the same frame:
+
+ is the value of pixel , in the range of [0,255]. The following equation is the expanded form of this equation. 
+  SALS(Ik) = |Ik - I1| + |Ik - I2| + ... + |Ik - IN| 
+Where N is the total number of pixels in  the current  frame. Then we can further restructure  our formula. We put the value that has same I together.
+  SALS(Ik) = ∑ Fn × |Ik - In| 
+Where  is the frequency of . And the value of n belongs to [0,255]. The frequencies is expressed in the form of histogram, and the computational time of histogram is  time complexity.
+
+Time complexity
+This saliency map algorithm has  time complexity. Since the computational time of histogram is  time complexity which N is the number of pixel's number of a frame. Besides, the minus part and multiply part of this equation need 256 times operation. Consequently, the time complexity of this algorithm is  which equals to .
+
+ Pseudocode
+All of the following code is pseudo matlab code. First, read Data from video sequences.
+ for k = 2 : 1 : 13  % which means from frame 2 to 13,  and in every loop K's value increase one.
+   I = imread(currentfilename); % read current frame
+   I1 = im2single(I);    % convert double image into single(requirement of command vlslic)
+   l = imread(previousfilename); % read previous frame
+   I2 = im2single(l);
+   regionSize = 10; % set the parameter of SLIC this parameter setting are the experimental result. RegionSize means the superpixel size.
+   regularizer = 1; % set the parameter of SLIC 
+   segments1 = vl_slic(I1, regionSize, regularizer); % get the superpixel of current frame
+   segments2 = vl_slic(I2, regionSize, regularizer); % get superpixel of the previous frame
+   numsuppix = max(segments1(:)); % get the number of superpixel all information about superpixel is in this link
+   regstats1 = regionprops(segments1,’all’);
+   regstats2 = regionprops(segments2,’all’); % get the region characteristic based on segments1
+After we read data, we do superpixel process to each frame.
+Spnum1 and Spnum2 represent the pixel number of current frame and previous pixel.
+
+% First, we calculate the value distance of each pixel.
+% This is our core code
+for i=1:1:spnum1   %  From the first pixel to the last one. And in every loop i++
+      for j=1:1:spnum2 % From the first pixel to the last one. j++. previous frame
+           centredist(i:j)=sum((center(i)-center(j))); % calculate the center distance 
+      end
+end
+
+Then we calculate the color distance of each pixel, this process we call it contract function.
+for i=1:1:spnum1 % From first pixel of current frame to the last one pixel. I ++
+      for j=1:1:spnum2 % From first pixel of previous frame to the last one pixel. J++
+           posdiff(i,j)=sum((regstats1(j).Centroid’-mupwtd(:,i))); % Calculate the color distance.
+      end
+end
+After this two process,  we will get a saliency map,  and  then store all of these maps into a new FileFolder.
+
+ Difference in algorithms 
+The major difference between function one and two is the difference of contract function. If spnum1 and spnum2 both represent the current frame's pixel number, then this contract function is for the first saliency function. If spnum1 is the current frame's pixel number and spnum2 represent the previous frame's pixel number, then this contract function is for second saliency function. If we use the second contract function which using the pixel of the same frame to get center distance to get a saliency map, then we apply this saliency function to each frame and use current frame's saliency map minus previous frame's saliency map to get a new image which is the new saliency result of the third saliency function.
+
+Saliency result

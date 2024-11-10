@@ -1,0 +1,63 @@
+In [[mathematical logic]], '''basic fuzzy logic''' (or shortly '''BL'''), the logic of the [[continuous function|continuous]] [[t-norm]]s, is one of the [[t-norm fuzzy logics]]. It belongs to the broader class of [[substructural logic]]s, or logics of [[residuated lattice]]s;<ref name="Ono">Ono (2003).</ref> it extends the logic [[Monoidal t-norm logic|MTL]] of all left-continuous t-norms.
+
+== Syntax ==
+
+=== Language ===
+
+The language of the propositional logic BL consists of [[countable|countably]] many [[propositional variable]]s and the following primitive [[logical connective]]s:
+* '''Implication''' <math>\rightarrow</math> ([[arity|binary]])
+* '''Strong conjunction''' <math>\otimes</math> (binary). The sign &amp; is a more traditional notation for strong conjunction in the literature on fuzzy logic, while the notation <math>\otimes</math> follows the tradition of substructural logics.
+* '''Bottom''' <math>\bot</math> ([[nullary]] — a [[Logical constant|propositional constant]]); <math>0</math> or <math>\overline{0}</math> are common alternative signs and '''zero''' a common alternative name for the propositional constant (as the constants bottom and zero of substructural logics coincide in MTL).
+The following are the most common defined logical connectives:
+* '''Weak conjunction''' <math>\wedge</math> (binary), also called '''lattice conjunction''' (as it is always realized by the [[lattice (order)|lattice]] operation of [[meet (mathematics)|meet]] in algebraic semantics). Unlike [[Monoidal t-norm logic|MTL]] and weaker substructural logics, weak conjunction is definable in BL as
+::<math>A \wedge B \equiv A \otimes (A \rightarrow B)</math>
+* '''Negation''' <math>\neg</math> ([[unary operation|unary]]), defined as
+::<math>\neg A \equiv A \rightarrow \bot</math>
+* '''Equivalence''' <math>\leftrightarrow</math> (binary), defined as
+::<math>A \leftrightarrow B \equiv (A \rightarrow B) \wedge (B \rightarrow A)</math>
+: As in MTL, the definition is equivalent to <math>(A \rightarrow B) \otimes (B \rightarrow A).</math>
+* '''(Weak) disjunction''' <math>\vee</math> (binary), also called '''lattice disjunction''' (as it is always realized by the [[lattice (order)|lattice]] operation of [[join (mathematics)|join]] in algebraic semantics), defined as
+::<math>A \vee B \equiv ((A \rightarrow B) \rightarrow B) \wedge ((B \rightarrow A) \rightarrow A)</math>
+* '''Top''' <math>\top</math> (nullary), also called '''one''' and denoted by <math>1</math> or <math>\overline{1}</math> (as the constants top and zero of substructural logics coincide in MTL), defined as
+::<math>\top \equiv \bot \rightarrow \bot</math>
+
+[[Well-formed formula]]e of BL are defined as usual in [[propositional logic]]s. In order to save parentheses, it is common to use the following order of precedence:
+* Unary connectives (bind most closely)
+* Binary connectives other than implication and equivalence
+* Implication and equivalence (bind most loosely)
+
+=== Axioms ===
+
+A [[Hilbert-style deduction system]] for BL has been introduced by [[Petr Hájek]] (1998). Its single derivation rule is [[modus ponens]]:
+:from <math>A</math> and <math>A \rightarrow B</math> derive <math>B.</math>
+The following are its [[axiom scheme|axiom schemata]]:
+:<math>\begin{array}{ll}
+  {\rm (BL1)}\colon & (A \rightarrow B) \rightarrow ((B \rightarrow C) \rightarrow (A \rightarrow C)) \\
+  {\rm (BL2)}\colon & A \otimes B \rightarrow A\\
+  {\rm (BL3)}\colon & A \otimes B \rightarrow B \otimes A\\
+  {\rm (BL4)}\colon &  A \otimes (A \rightarrow B) \rightarrow B \otimes (B \rightarrow A)\\
+  {\rm (BL5a)}\colon &  (A \rightarrow (B \rightarrow C)) \rightarrow (A \otimes B \rightarrow C)\\
+  {\rm (BL5b)}\colon &  (A \otimes B \rightarrow C) \rightarrow (A \rightarrow (B \rightarrow C))\\
+  {\rm (BL6)}\colon &  ((A \rightarrow B) \rightarrow C) \rightarrow (((B \rightarrow A) \rightarrow C) \rightarrow C)\\
+  {\rm (BL7)}\colon &  \bot \rightarrow A
+\end{array}</math>
+
+The axioms (BL2) and (BL3) of the original axiomatic system were shown to be redundant (Chvalovský, 2012) and (Cintula, 2005). All the other axioms were shown to be independent (Chvalovský, 2012).
+== Semantics ==
+
+Like in other propositional [[t-norm fuzzy logics]], [[algebraic semantics (mathematical logic)|algebraic semantics]] is predominantly used for BL, with three main classes of [[algebraic structure|algebras]] with respect to which the logic is [[Completeness (logic)|complete]]:
+* '''General semantics''', formed of all ''BL-algebras'' — that is, all algebras for which the logic is [[Soundness theorem|sound]]
+* '''Linear semantics''', formed of all ''linear'' BL-algebras — that is, all BL-algebras whose [[lattice (order)|lattice]] order is [[total order|linear]]
+* '''Standard semantics''', formed of all ''standard'' BL-algebras — that is, all BL-algebras whose lattice reduct is the real unit interval [0,&nbsp;1] with the usual order; they are uniquely determined by the function that interprets strong conjunction, which can be any continuous [[t-norm]].
+
+== Bibliography ==
+
+* Hájek P., 1998, ''Metamathematics of Fuzzy Logic''. Dordrecht: Kluwer.
+* Ono, H., 2003, "Substructural logics and residuated lattices — an introduction". In F.V. Hendricks, J. Malinowski (eds.): Trends in Logic: 50 Years of Studia Logica, ''Trends in Logic'' '''20''': 177–212.
+* Cintula P., 2005, "Short note: On the redundancy of axiom (A3) in BL and MTL". ''Soft Computing'' '''9''': 942.
+* Chvalovský K., 2012, "[http://karel.chvalovsky.cz/publications/nezavislost.pdf On the Independence of Axioms in BL and MTL]". ''[[Fuzzy Sets and Systems]]'' '''197''': 123–129, {{doi|10.1016/j.fss.2011.10.018}}.
+== References ==
+
+<references/>
+
+[[Category:Fuzzy logic]]

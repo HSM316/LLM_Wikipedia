@@ -1,0 +1,174 @@
+{{short description|Speaker with virtual assistant}}
+{{redirect|Smart display|the touchscreen computer project by Microsoft|Smart Display|smart television displays|Smart TV}}
+{{More citations needed|date=April 2020}}
+A '''smart speaker''' is a type of [[Loudspeaker|speaker]] and [[voice command device]] with an integrated [[virtual assistant (artificial intelligence)|virtual assistant]] that offers interactive actions and [[Hands-free computing|hands-free activation]] with the help of one "hot word" (or several "hot words"). Some smart speakers can also act as a [[smart device]] that utilizes [[Wi-Fi]], [[Bluetooth]] and other protocol standards to extend usage beyond audio playback, such as to control [[home automation]] devices. This can include, but is not limited to, features such as compatibility across a number of services and platforms, [[peer-to-peer]] connection through [[mesh networking]], virtual assistants, and others. Each can have its own designated [[Interface (computing)|interface]] and [[Software feature|features]] in-house, usually launched or controlled via [[Application software|application]] or [[home automation]] software.<ref>[http://whatis.techtarget.com/definition/smart-speaker smart speaker], techtarget.com, May 2017</ref> Some smart speakers also include a screen to show the user a visual response.
+
+As of winter 2017, it is estimated by [[NPR]] and Edison Research that 39 million Americans (16% of the population over 18) own a smart speaker.<ref>{{Citation|title=The Smart Audio Report from NPR and Edison Research, Fall-Winter 2017|url=http://nationalpublicmedia.com/wp-content/uploads/2018/01/The-Smart-Audio-Report-from-NPR-and-Edison-Research-Fall-Winter-2017.pdf}}</ref>
+
+A smart speaker with a touchscreen is known as a [[Smart Display (Smart speaker)|smart display]].<ref>{{cite web|first1=Rich|last1=Brown|access-date=2019-06-19|title=Echo Show, Nest Hub, Facebook Portal and more: How to pick the best smart display in 2019|url=https://www.cnet.com/news/echo-show-nest-hub-facebook-portal-and-more-how-to-pick-the-best-smart-display-in-2019/|website=CNET}}</ref><ref>{{cite web|first1=Cameron|last1=Faulkner|access-date=2019-06-19|title=How Google's new Home Hub compares to the Echo Show and Facebook Portal|url=https://www.theverge.com/2018/10/9/17956898/google-home-hub-vs-amazon-echo-show-facebook-portal-price-smart-speaker-display|date=9 October 2018|website=The Verge}}</ref> It is a smart Bluetooth device that integrates [[conversational user interface]] with display screens to augment voice interaction with images and video. They are powered by one of the common [[Voice user interface|voice assistants]] and offer controls for smart home devices, feature streaming apps and web browsers with touch controls for selecting content. The first smart displays were introduced in 2017 by [[Amazon.com|Amazon]] ([[Amazon Echo Show]], Amazon Echo Spot).
+
+==Accuracy==
+According to a study by ''[[Proceedings of the National Academy of Sciences of the United States of America]]'' released In March 2020, The six biggest tech development companies, [[Amazon (company)|Amazon]], [[Apple Inc.|Apple]], [[Google]], [[Yandex]], [[IBM]] and [[Microsoft]], have misidentified more words spoken by "[[black people]]" than "[[white people]]". The systems tested errors and unreadability, with a 19 and 35 percent discrepancy for the former and 2 and 20 percent discrepancy for the latter.<ref>{{Cite web |url=https://www.nytimes.com/2020/03/23/technology/speech-recognition-bias-apple-amazon-google.html |title=There Is a Racial Divide in Speech-Recognition Systems, Researchers Say |last=Metz |first=Cade |date=2020-03-23 |website=The New York Times |language=en-US |access-date=2020-04-22}}</ref>
+
+The [[North American Chapter of the Association for Computational Linguistics]] (NAACL) also identified a discrepancy between male and female voices. According to their research, Google's speech recognition software is 13 percent more accurate for men than women. It performs better than the systems used by [[Bing (search engine)|Bing]], [[AT&T]] and IBM.<ref>{{Cite web |url=https://hbr.org/2019/05/voice-recognition-still-has-significant-race-and-gender-biases |title=Voice Recognition Still Has Significant Race and Gender Biases |last=Bajorek |first=Joan Palmiter |date=2019-05-10 |website=Harvard Business Review |access-date=2020-04-24}}</ref>
+
+==Privacy concerns==
+The built-in microphone in smart speakers is continuously listening for "hot words" followed by a command. However, these continuously listening microphones also raise privacy concerns among users.<ref name="lau">{{cite journal|title=Alexa, Are You Listening?: Privacy Perceptions, Concerns and Privacy-seeking Behaviors with Smart Speakers|first1=Josephine|last1=Lau|first2=Benjamin|last2=Zimmerman|first3=Florian|last3=Schaub|date=1 November 2018|journal=Proc. ACM Hum.-Comput. Interact.|volume=2|issue=CSCW|pages=102:1–102:31|doi=10.1145/3274371}}</ref> These include what is being recorded, how the data will be used, how it will be protected, and whether it will be used for invasive advertising.<ref>{{cite web|url=https://www.bbc.com/news/technology-39191056|title=Amazon hands over Echo 'murder' data|date=7 March 2017|access-date=2 March 2019|via=www.BBC.com}}</ref><ref>{{cite web|url=https://www.bbc.com/news/technology-43725708|title=Amazon patents 'voice-sniffing' algorithms|date=11 April 2018|access-date=2 March 2019|via=www.BBC.com}}</ref> Further, an analysis of Amazon [[Amazon Echo|Alexa Echo Dots]] showed that 30–38% of "spurious audio recordings were human conversations", suggesting that these devices capture audio outside of strictly after detection of the hot word.<ref>Ford, Marcia, and William Palmer. "Alexa, are you listening to me? An analysis of Alexa voice service network traffic." Personal and Ubiquitous Computing (2018): 1-13.</ref>
+
+===As a wiretap===
+There are strong concerns that the ever-listening microphone of smart speakers presents a perfect candidate for [[Telephone tapping|wiretapping]]. In 2017, British security researcher Mark Barnes showed that pre-2017 Echos have exposed pins which allow for a compromised OS to be booted.<ref>{{cite web|url=https://www.wired.com/story/amazon-echo-wiretap-hack/|title=A Hacker Turned an Amazon Echo Into a 'Wiretap'|first=Andy|last=Greenberg|date=1 August 2017|access-date=2 March 2019|via=www.wired.com}}</ref>
+
+===Voice assistance vs privacy===
+While [[Virtual assistant|voice assistants]] provide a valuable service, there can be some hesitation towards using them in various social contexts, such as in public or around other users.<ref>[https://doi.org/10.1007/978-3-642-31205-2_10 Sarah Mennicken and Elaine M. Huang. 2012. Hacking the Natural Habitat: An In-the-Wild Study of Smart Homes,Their Development, and the People Who Live in Them. In ''Pervasive Computing''. Springer, Berlin, Heidelberg, 143–160.]</ref> However, only more recently have users begun interacting with voice assistants through an interaction with smart speakers rather than an interaction with the phone. On the phone, most voice assistants have the option to be engaged by a physical button (e.g., Siri with a long press of the home button) rather than solely by hot word-based engagement in a smart speaker. While this distinction increases the privacy by limiting when the microphone is on, users felt that having to press a button first removed the convenience of voice interaction.<ref>Christoffer Lambertsson. 2017. Expectations of Privacy in Voice Interaction–A Look at Voice Controlled Bank Transactions. Ph.D. Dissertation. KTH Royal Institute of Technology</ref> This trade-off is not unique to voice assistants; as more and more devices come online, there is an increasing trade-off between convenience and privacy.<ref>[https://www.washingtonpost.com/lifestyle/style/in-todays-homes-consumers-are-willing-to-sacrifice-privacy-for-convenience/2018/09/11/5f951b4a-a241-11e8-93e3-24d1703d2a7a_story.html Rao, Sonia (12 September 2018) "In today's homes, consumers are willing to sacrifice privacy for convenience". Retrieved 25 February 2019]</ref>
+
+===Factors influencing adoption===
+While there are many factors influencing smart speaker adoption, specifically with regards to privacy, Lau et. al. define five distinct categories as pros and cons: convenience, identity as an early adopter, contributing factors,{{examples needed|date=November 2019}} perceived lack of utility, privacy, and security concerns.<ref name="lau" />
+
+==Security concerns==
+When configured without [[authentication]], smart speakers can be activated by people other than the intended user or owner. For example, visitors to a home or office, or people in a publicly accessible area outside an open window, partial wall, or security fence, may be able to be heard by a speaker. One team demonstrated the ability to stimulate the microphones of smart speakers and smartphones through a closed window, from another building across the street, using a laser.<ref>[https://www.engadget.com/2019/11/05/lasers-voice-commands-smart-speaker/ Lasers can silently issue 'voice commands' to your smart speakers]</ref>
+
+== Most popular smart speaker devices and platforms ==
+{| class="wikitable sortable"
+|-
+! Virtual assistant
+! Owned by
+! Devices
+! data-sort-type="number" | No. of users 
+! Languages (dialects)
+! Notes
+|-
+|[[Alice (virtual assistant)|Alice]]
+|[[Yandex]]
+|
+* Yandex Station
+* Yandex Station Mini
+* Irbis A
+* LG Xboom AI ThinQ WK7Y
+* ELARI SmartBeat
+* Prestigio Smartmate Маяк Edition
+* 
+|30 million Yandex devices in [[Commonwealth of Independent States|CIS]] (January 2019)
+|Russian
+|Yandex Station went on sale in July 2018
+|-
+|[[AliGenie]]
+|[[Alibaba Group]]
+|
+* [[Tmall Genie]]
+|
+| Chinese
+| Went on sale in August 2017
+|-
+|[[Amazon Alexa]]
+|[[Amazon (company)|Amazon]]
+| 
+* [[Amazon Echo]] series: [[Amazon Echo#Echo|Echo]], [[Amazon Echo#Echo Dot|Echo Dot]], [[Amazon Echo#Echo Plus|Echo Plus]], [[Amazon Echo#Echo Show|Echo Show]], [[Amazon Echo#Echo Spot|Echo Spot]]
+* [[Amazon Echo#Amazon Tap|Amazon Tap]]
+* [[Sonos One]]
+| 31 million Echo devices in U.S. (January 2018)<ref name=geek/>
+| Summer 2019: English (US, UK, Ireland, Canada and Australia); French (France and Canada); German; Italian; Japanese; Portuguese (Brazilian) and Spanish (Spain and Mexico)<ref name=avs>{{cite web|title=AVS for International|url=https://developer.amazon.com/alexa-voice-service/international/|website=developer.amazon.com|publisher=Amazon|access-date=19 March 2018}}</ref><ref name=langs>{{cite web|title=THE YEAR ALEXA GREW UP|url=https://www.wired.com/story/amazon-alexa-2018-machine-learning/|website=www.wired.com|publisher=Wired|access-date=23 December 2018}}</ref><ref name="globalme">{{cite web |title=Language Support in Voice Assistants Compared |url=https://www.globalme.net/blog/language-support-voice-assistants-compared#Alexas_Language_Support |website=Globalme |access-date=28 January 2020 }}</ref>
+|
+|-
+|[[Siri]]
+|[[Apple, Inc.]]
+|[[HomePod|Apple HomePod]]
+|
+|Summer 2019: Arabic, Chinese (Cantonese and Mandarin), Danish, Dutch, English, Finnish, French, German, Hebrew, Italian, Japanese, Korean, Malay, Norwegian, Portuguese, Russian, Spanish, Swedish, Thai, and Turkish<ref name="globalme"/>
+|
+|-
+|[[Baidu|DuerOS Open Platform]]<ref name=qz1/>
+|[[Baidu]]
+|[[Xiaoyu]], [[Baidu Raven|RavenH]], Aladdin ceiling-mounted smart speaker-lamp-projector<ref>{{cite web|url=https://www.theverge.com/ces/2018/1/8/16866068/baidu-smart-speakers-dueros-ces-2018|title=Baidu launches three new smart speakers that don't need Alexa or Google Assistant}}</reF><ref>{{cite web|url=http://www.slate.com/articles/technology/technology/2017/11/baidu_smart_speaker_razor_h_is_more_interesting_than_the_amazon_echo_or.html|title=Baidu's New Smart Speaker Looks Like Nothing Else on the Market|first=Christina|last=Bonnington|date=16 November 2017|via=Slate}}</ref>
+|
+|Chinese
+|Xiaoyu went on sale in spring 2017.<ref name=qz1>{{cite web|url=https://qz.com/1021492/chinas-tech-giants-are-racing-to-popularize-their-versions-of-the-amazon-echo-among-them-jd-baidu-bidu-and-alibaba-baba/|title=China's tech giants are racing to popularize their versions of the Amazon Echo|first=Josh|last=Horwitz}}</ref>
+|-
+|[[Clova (virtual assistant)|Clova]]
+|[[Naver Corporation]], [[Line Corporation]]
+|
+* [[Wave (smart speaker)|Wave]]
+* [[Friends (smart speaker)|Friends]]
+|
+| Japanese and Korean
+| Introduced summer 2017<ref>{{cite web|url=https://www.voicebot.ai/2017/03/03/line-introduce-clova-virtual-assistant-korean-japan/|title=LINE to Introduce Clova Virtual Assistant for Korea and Japan - Voicebot|website=www.voicebot.ai}}</ref>
+|-
+|[[Google Assistant]]
+|[[Google]]
+|[[Google Home|Google&nbsp;Home&nbsp;series]]: [[Google Home#Home|Home]], [[Google Home#Home Max|Home Max]], [[Google Home#Home Mini|Home&nbsp;Mini]], [[Google Nest Hub|Nest Hub]], Nest Hub Max
+| 14 million Google Homes in U.S. (January 2018)<ref name=geek>{{cite web|url=https://www.geekwire.com/2018/new-data-google-home-faring-better-amazon-echo-40-u-s-holiday-sales/|title=New data: Google Home faring better against Amazon Echo, grabbing 40% of U.S. holiday sales|date=January 26, 2018|website=[[GeekWire]]|first=Todd|last=Bishop|access-date=November 29, 2019}}</ref>
+| Summer 2019: Danish, Dutch, English (U.S., U.K., Canada, Australia, India and Singapore), French (France and Canada), German (Austria and Germany), Hindi, Italian, Japanese, Korean, Norwegian, Portuguese (Brazilian), Spanish (Spain and Mexico) and Swedish<ref>{{cite web|title=Change your Google Assistant language|url=https://support.google.com/googlehome/answer/7550584?hl=en|website=Google Home Help|access-date=19 March 2018}}</ref><ref name="globalme"/>
+|
+|-
+|
+|Beijing LingLong, part of [[JD.com|JD]]
+|[[DingDong]]
+|
+|Mandarin and Cantonese for Greater China
+|In cooperation with Chinese [[artificial intelligence|AI]] firm [[iFlytek]]. Went on sale November 2016.<ref>{{Cite news|url=https://www.wired.com/2016/11/behold-chinas-answer-amazon-echo-linglong-dingdong/|title=Behold China's Answer to Amazon Echo: The LingLong DingDong|last=Bateman|first=Joshua D.|date=22 November 2016|work=[[Wired (magazine)|Wired]]|access-date=25 November 2017|publisher=[[Condé Nast]]}}</ref>
+|-
+|[https://marusia.mail.ru/ Marusia]
+|[https://corp.mail.ru/ Mail.Ru Group]
+|[https://capsula.mail.ru/ Capsula]
+|
+|Russian
+|
+|-
+|[[Microsoft Cortana]]
+|[[Microsoft]]
+|[[Invoke (smart speaker)|Harman Kardon INVOKE]]
+|
+|October 2019: English (US, UK, Canada, Australia and India); Chinese (Simplified); French; German; Italian; Japanese; Portuguese (Brazil); Spanish (Spain and Mexico)<ref>{{cite web |title=Cortana's regions and languages |url=https://support.microsoft.com/en-us/help/4026948/cortanas-regions-and-languages |website=support.microsoft.com |access-date=28 January 2020}}</ref>
+|
+|-
+|Safety Labs Sirona
+|Safety Labs Inc
+|Sirona.TV
+|
+| English (US, UK, Canada, Australia and India); 
+|
+|-
+|[[Xiaowei]]<ref name=qz1/>
+|[[Tencent]]
+|forthcoming<ref name=qz1/>
+|
+|Chinese
+|
+|-
+|[[Bixby (virtual assistant)|Bixby]]
+|[[Samsung Electronics]]
+|[[Galaxy Home]]
+|
+|
+|<ref>{{Cite news|url=https://www.engadget.com/2018/08/09/samsung-galaxy-home-too-little-too-late/|title=Does Samsung's Galaxy Home stand a chance?|last=Ingraham|first=Nathan|date=9 August 2018|work=[[Engadget]]|access-date=9 August 2018|publisher=[[Oath Inc.]]}}</ref>
+|-
+|Hallo Magenta
+|[[Deutsche Telekom]]
+|Hallo Magenta
+|
+|German
+|
+|}
+
+== Gallery ==
+{{Gallery
+|File:Amazon Echo.jpg
+ |The first-generation [[Amazon Echo]] smart speaker in black
+|File:An Apple HomePod speaker .png
+ |An [[Apple HomePod]] speaker
+|File:Google Home sitting on table.jpg
+ |The [[Google Home]] smart speaker idle on a table
+|File:Amazon Echo Show in white.jpg
+ |The [[Amazon Echo Show]] smart speaker in white
+|File:Harman Kardon Invoke Speaker - aerial.jpg
+ |The Harman Kardon [[Invoke (smart speaker)|INVOKE]] smart speaker in graphite
+}}
+
+==References==
+<references />
+
+{{Computer sizes}}
+{{Smart speaker}}
+
+[[Category:Internet of things]]
+[[Category:Wireless]]
+[[Category:Smart speakers| ]]

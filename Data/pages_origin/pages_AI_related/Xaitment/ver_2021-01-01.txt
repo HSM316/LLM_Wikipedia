@@ -1,0 +1,32 @@
+{{DISPLAYTITLE:xaitment}}{{Infobox company
+| name = xaitment GmbH
+| logo = 
+| foundation   = Germany (2004)
+| products     = xaitMap, xaitMap for Unity, xaitControl, xaitControl for Unity (software)
+}}
+
+'''xaitment''' is a German-based company that develops and sells [[Artificial intelligence (video games)|artificial intelligence]] (AI) software to video game developers and simulation developers. The company was founded in 2004 by Dr. Andreas Gerber,<ref>{{cite web |url=http://www.develop-online.net/directory/21/Xaitment |title=xaitment Company Profile on Develop |year=2005 |publisher=Develop}}</ref> and is a spin-off of the German Research Centre for Artificial Intelligence, or [[German Research Centre for Artificial Intelligence|DFKI]]. '''xaitment''' has its main office in Quierschied, Germany, and field offices in San Francisco and China.
+
+== Products ==
+'''xaitment''' currently sells two AI software modules: xaitMap and xaitControl. xaitMap provides [[Runtime library|runtime libraries]] and graphical tools for [[navigation mesh]] generation (also called NavMesh generation), [[pathfinding]], dynamic collision avoidance, and individual and crowd movement. xaitControl is a [[finite-state machine]] for game logic and character [[Behavioral modeling|behavior modeling]] that also includes a real-time debugger. On January 11, 2012, xaitment announced that it making its source code for these modules available to "all current and future US and European licensees".
+
+On February 22, 2012 '''xaitment''' released two new plug-ins, xaitMap and xaitControl for the [[Unity (game engine)|Unity Game Engine]].<ref>{{cite web|url=http://www.xaitment.com/english/blog/press-releases/xaitment-launches-smart-ai-for-unity-147.html |title=xaitment Launches Smart AI for Unity |date=February 22, 2012 |publisher=xaitment |url-status=dead |archiveurl=https://web.archive.org/web/20120229002352/http://www.xaitment.com/english/blog/press-releases/xaitment-launches-smart-ai-for-unity-147.html |archivedate=February 29, 2012 }}</ref> 
+  
+The full versions are available for PC (Windows and Linux), PlayStation 3, Xbox 360 and Wii. The pathfinding plug-in is available with a Windows dev environment, but can deployed on iOS, Mac, Android and the Unity Web Player.
+
+== Partners ==
+'''xaitment's''' AI software is currently integrated into the [[Unity game engine]], Havok's [[Vision Engine]], Bohemia Interactive's VBS2 Simulation Engine, GameBase's [[Gamebryo]] game engine.<ref>{{cite web |url=http://gamasutra.com/view/news/24507/Emergent_Xaitment_Integrate_XaitEngine_AI_With_Gamebryo.php |title=Emergent, Xaitment Integrate xaitEngine AI With Gamebryo |date=July 21, 2009 |publisher=gamasutra}}</ref>
+
+== Customers ==
+'''xaitment''' sells its AI software products to video game developers and military and civil simulation developers. Current customers include Tencent, gamania, TML Studios, Emobi Games, IP Keys and others. A full list of customers can be found on '''xaitment's''' website.<ref>https://web.archive.org/web/20110924165350/http://www.xaitment.com/english/game-studios.html</ref>
+
+== References ==
+<!--- See http://web.archive.org/web/20060923102510/http://en.wikipedia.org/wiki/Wikipedia:Footnotes on how to create references using <ref></ref> tags which will then appear here automatically -->
+{{Reflist}}
+
+== External links ==
+* [https://web.archive.org/web/20040507031620/http://xaitment.com/ xaitment.com]
+
+{{DEFAULTSORT:xaitment}}
+[[Category:Artificial intelligence applications]]
+[[Category:Software companies of Germany]]

@@ -1,0 +1,81 @@
+{{lowercase title}}
+{{Infobox software
+| name                   = mlpack
+| logo                   = Mlpack-logo-white-outline.svg
+| screenshot             =
+| caption                =
+| developer              =
+| released = {{Start date and age|2008|02|01}}<ref name="mlpack-1.0.0">{{cite web
+ | url        = https://github.com/mlpack/mlpack/commit/6f0a3f7db2b4b30e208a89bf93dc2328294e4176
+ | title      = Initial checkin of the regression package to be released · mlpack/mlpack
+ | date       = February 8, 2008
+ | accessdate = May 24, 2020}}</ref>
+| latest release version = {{wikidata|property|reference|P348}}
+| latest release date    = {{start date and age|{{wikidata|qualifier|P348|P577}}}}
+| programming language   = [[C++]], [[Python (programming language)|Python]], [[Julia (programming language)|Julia]], [[Go (programming language)|Go]]
+| operating system       = [[Cross-platform]]
+| language               = [[English language|English]]
+| genre                  = [[Library (computing)|Software library]] [[Machine learning]]
+| license                = [[Open-source software|Open source]] ([[BSD licenses|BSD]])
+}}
+'''mlpack''' is a [[machine learning]] software library for [[C++]], built on top of the [[Armadillo (C++ library)|Armadillo library]] and the [http://ensmallen.org ensmallen] numerical optimization library.<ref>{{cite journal |url=https://jmlr.org/papers/v22/20-416.html |title=The ensmallen library for flexible numerical optimization  |author=Ryan Curtin|journal=Journal of Machine Learning Research |volume=22 |issue=166 |pages= 1–6 |year=2021|display-authors=etal|bibcode=2021arXiv210812981C |arxiv=2108.12981 }}</ref> mlpack has an emphasis on scalability, speed, and ease-of-use. Its aim is to make machine learning possible for novice users by means of a simple, consistent [[Application programming interface|API]], while simultaneously exploiting C++ language features to provide maximum performance and maximum flexibility for expert users.<ref>{{cite journal |url=https://joss.theoj.org/papers/10.21105/joss.05026 |title=mlpack 4: a fast, header-only C++ machine learning library |author=Ryan Curtin |journal=Journal of Open Source Software |volume=8 |issue=82 |pages=5026 |year=2023 |display-authors=etal |arxiv=2302.00820 }}</ref> Its intended target users are scientists and engineers.
+
+It is [[open-source software]] distributed under the [[BSD licenses|BSD license]], making it useful for developing both open source and proprietary software. Releases 1.0.11 and before were released under the [[GNU Lesser General Public License|LGPL]] license.  The project is supported by the [[Georgia Institute of Technology]] and contributions from around the world.
+
+==Miscellaneous features==
+Class templates for [[Gated recurrent unit|GRU]], [[LSTM]] structures are available, thus the library also supports [[Recurrent neural network|Recurrent Neural Networks]].
+
+There are bindings to [[R (programming language)|R]], [[Go (programming language)|Go]], [[Julia (programming language)|Julia]],<ref>{{Cite web|url=https://github.com/mlpack/mlpack.jl|title = Mlpack/Mlpack.jl|date = 10 June 2021}}</ref> and [[Python (programming language)|Python]]. Its binding system is extensible to other languages.
+
+==Supported algorithms==
+Currently ''mlpack'' supports the following [[algorithm]]s and [[Mathematical model|model]]s:
+* [[Collaborative Filtering]]
+* [[Decision stump]]s (one-level decision trees)
+* [[Density Estimation]] Trees
+* [[Euclidean minimum spanning tree]]s
+* [[Mixture models|Gaussian Mixture Models]] (GMMs)
+* [[Hidden Markov Models]] (HMMs)
+* [[Kernel density estimation]] (KDE)
+* [[Kernel principal component analysis|Kernel Principal Component Analysis]] (KPCA)
+* [[k-means clustering|K-Means Clustering]]
+* [[Least-angle regression|Least-Angle Regression]] (LARS/LASSO)
+* [[Linear Regression]]
+* [[Bayesian Linear Regression]]
+* Local Coordinate Coding
+* [[Locality-Sensitive Hashing]] (LSH)
+* [[Logistic regression]]
+* Max-Kernel Search
+* [[Naive Bayes classifier|Naive Bayes Classifier]]
+* [[Nearest neighbor search]] with dual-tree algorithms
+* [[Neighbourhood components analysis|Neighbourhood Components Analysis]] (NCA)
+* [[Non-negative matrix factorization|Non-negative Matrix Factorization]] (NMF)
+* [[Principal Components Analysis]] (PCA)
+* [[Independent component analysis]] (ICA)
+* Rank-Approximate [[Nearest neighbor search|Nearest Neighbor]] (RANN)
+* Simple Least-Squares [[Linear Regression]] (and [[Tikhonov regularization|Ridge Regression]])
+* [[Sparse coding|Sparse Coding]], [[Sparse dictionary learning]]
+* Tree-based Neighbor Search (all-k-nearest-neighbors, all-k-furthest-neighbors), using either kd-trees or cover trees
+* Tree-based Range Search
+
+==See also==
+{{Portal|Free and open-source software}}
+* [[Armadillo (C++ library)]]
+* [[List of numerical analysis software]]
+* [[List of numerical libraries]]
+* [[Numerical linear algebra]]
+* [[Scientific computing]]
+
+==References==
+{{Reflist}}
+
+==External links==
+* {{Official website}}
+* {{GitHub|mlpack/mlpack}}
+
+[[Category:C++ libraries]]
+[[Category:Data mining and machine learning software]]
+[[Category:Free computer libraries]]
+[[Category:Free mathematics software]]
+[[Category:Free science software]]
+[[Category:Free software programmed in C++]]
+[[Category:Free statistical software]]

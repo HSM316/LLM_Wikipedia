@@ -1,0 +1,52 @@
+Distinction between usual machine learning setting and transfer learning, and positioning of domain adaptation.
+
+Domain adaptation is a field associated with machine learning and transfer learning. This scenario arises when we aim at learning from a source data distribution a well performing model on a different (but related) target data distribution. For instance, one of the tasks of the common spam filtering problem consists in adapting a model from one user (the source distribution) to a new user who receives significantly different emails (the target distribution). Domain adaptation has also been shown to be beneficial for learning unrelated sources.
+Note that, when more than one source distribution is available the problem is referred to as multi-source domain adaptation.
+
+ Overview 
+Domain adaptation is the ability to apply an algorithm trained in one or more "source domains" to a different (but related) "target domain". Domain adaptation is a subcategory of transfer learning. In domain adaptation, the source and target domains all have the same feature space (but different distributions); in contrast, transfer learning includes cases where the target domain's feature space is different from the source feature space or spaces.
+
+ Domain shift 
+A domain shift,Sun, Baochen, Jiashi Feng, and Kate Saenko. "Return of frustratingly easy domain adaptation." In Thirtieth AAAI Conference on Artificial Intelligence. 2016. or distributional shift,Amodei, Dario, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, and Dan Mané. "Concrete problems in AI safety." arXiv preprint arXiv:1606.06565 (2016). is a change in the data distribution between an algorithm's training dataset, and a dataset it encounters when deployed. These domain shifts are common in practical applications of artificial intelligence. Conventional machine-learning algorithms often adapt poorly to domain shifts. The modern machine-learning community has many different strategies to attempt to gain better domain adaptation.
+
+ Examples 
+ An algorithm trained on newswires might have to adapt to a new dataset of biomedical documents.Daumé III, Hal. "Frustratingly easy domain adaptation." arXiv preprint arXiv:0907.1815 (2009).
+ A spam filter, trained on a certain group of email users during training, must adapt to a new target user when deployed.Ben-David, Shai, John Blitzer, Koby Crammer, and Fernando Pereira. "Analysis of representations for domain adaptation." In Advances in neural information processing systems, pp. 137-144. 2007.
+ Applying AI diagnostic algorithms, trained on labeled data associated with previous diseases, to new unlabeled data associated with the COVID-19 pandemic.
+ A sudden societal change, such as a pandemic outbreak, can constitute domain shift and cause machine learning algorithms trained on now-obsolete consumer data to fail and require intervention.
+
+Other applications include wifi localization detection and many aspects of computer vision.
+
+ Formalization 
+Let  be the input space (or description space) and let  be the output space (or label space). The objective of a machine learning algorithm is to learn a mathematical model (a hypothesis)  able to attach a label from  to an example from . This model is learned from a learning sample .
+
+Usually in supervised learning (without domain adaptation), we suppose that the examples  are drawn i.i.d. from a distribution  of support  (unknown and fixed). The objective is then to learn  (from ) such that it commits the least error possible for labelling new examples coming from the distribution .
+
+The main difference between supervised learning and domain adaptation is that in the latter situation we study two different (but related) distributions  and  on . The domain adaptation task then consists of the transfer of knowledge from the source domain  to the target one . The goal is then to learn  (from labeled or unlabelled samples coming from the two domains) such that it commits as little error as possible on the target domain .
+
+The major issue is the following: if a model is learned from a source domain, what is its capacity to correctly label data coming from the target domain?
+
+ The different types of domain adaptation  
+There are several contexts of domain adaptation. They differ in the information considered for the target task.
+ The unsupervised domain adaptation: the learning sample contains a set of labeled source examples, a set of unlabeled source examples and a set of unlabeled target examples.
+ The semi-supervised domain adaptation:  in this situation, we also consider a "small" set of labeled target examples. 
+ The supervised domain adaptation: all the examples considered are supposed to be labeled.
+
+ Four algorithmic principles 
+
+ Reweighting algorithms 
+The objective is to reweight the source labeled sample such that it "looks like" the target sample (in terms of the error measure considered).
+
+ Iterative algorithms 
+A method for adapting consists in iteratively "auto-labeling" the target examples. The principle is simple:
+ a model  is learned from the labeled examples;
+  automatically labels some target examples;
+ a new model is learned from the new labeled examples. 
+Note that there exist other iterative approaches, but they usually need target labeled examples.
+
+ Search of a common representation space 
+The goal is to find or construct a common representation space for the two domains. The objective is to obtain a space in which the domains are close to each other while keeping good performances on the source labeling task.
+This can be achieved through the use of Adversarial machine learning techniques where feature representations from samples in different domains are encouraged to be indistinguishable.
+
+ Hierarchical Bayesian Model 
+The goal is to construct a Bayesian hierarchical model , which is essentially a factorization model for counts , to derive domain-dependent latent representations allowing both domain-specific and globally shared latent factors.

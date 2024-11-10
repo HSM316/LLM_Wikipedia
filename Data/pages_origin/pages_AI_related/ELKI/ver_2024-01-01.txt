@@ -1,0 +1,227 @@
+{{short description|Data mining framework}}
+{{Advert|date=January 2019}}
+{{Infobox software
+ |name = Environment for DeveLoping KDD-Applications Supported by Index-Structures
+ |screenshot = ELKI Screenshot.jpg
+ |screenshot size = 300px
+ |caption = Screenshot of ELKI 0.4 visualizing [[OPTICS algorithm|OPTICS]] [[cluster analysis]].
+ |developer = [[Technical University of Dortmund]]; initially [[Ludwig Maximilian University of Munich]]
+ |latest release version = 0.8.0
+ |latest release date = {{Start date and age|2022|10|05|df=yes}}
+ |operating system = [[Microsoft Windows]], [[Linux]], [[Mac OS]]
+ |programming language = [[Java (programming language)|Java]]
+ |platform = [[Java platform]]
+ |genre = [[Data mining]]
+ |license = [[GNU Affero General Public License|AGPL]] (since version 0.4.0)
+ |website = {{url|https://elki-project.github.io/}}
+}}
+
+'''ELKI''' (''Environment for Developing KDD-Applications Supported by Index-Structures'') is a [[data mining]] (KDD, knowledge discovery in databases) [[software framework]] developed for use in research and teaching. It was originally at the database systems research unit of Professor [[Hans-Peter Kriegel]] at the [[Ludwig Maximilian University of Munich]], Germany, and now continued at the [[Technical University of Dortmund]], Germany. It aims at allowing the development and evaluation of advanced data mining algorithms and their interaction with [[index (database)|database index structures]].
+
+== Description ==
+
+The ELKI framework is written in [[Java (programming language)|Java]] and built around a modular architecture. Most currently included algorithms belong to [[cluster analysis|clustering]], [[outlier|outlier detection]],<ref>{{cite journal
+| author=[[Hans-Peter Kriegel]], Peer Kröger, [[Arthur Zimek]]
+| title=Outlier Detection Techniques (Tutorial)
+| journal=13th Pacific-Asia Conference on Knowledge Discovery and Data Mining (PAKDD 2009)
+| location=Bangkok, Thailand
+| year=2009
+| url=http://www.dbs.ifi.lmu.de/Publikationen/Papers/tutorial_slides.pdf
+| access-date=2010-03-26
+}}</ref> and [[index (database)|database indexes]]. The [[Object-oriented programming|object-oriented architecture]] allows the combination of arbitrary algorithms, data types, [[distance function]]s, indexes, and evaluation measures. The Java [[Just-in-time compilation|just-in-time compiler]] optimizes all combinations to a similar extent, making benchmarking results more comparable if they share large parts of the code. When developing new algorithms or index structures, the existing components can be easily reused, and the [[type safety]] of Java detects many programming errors at compile time.
+
+ELKI has been used in [[data science]] for example to cluster [[sperm whale]] codas,<ref name="GeroWhitehead2016">{{cite journal|last1=Gero|first1=Shane|last2=Whitehead|first2=Hal|last3=Rendell|first3=Luke|title=Individual, unit and vocal clan level identity cues in sperm whale codas|journal=Royal Society Open Science|volume=3|issue=1|year=2016|pages=150372|issn=2054-5703|doi=10.1098/rsos.150372|pmid=26909165|pmc=4736920|bibcode=2016RSOS....350372G}}</ref> [[phoneme]] clustering,<ref name="StahlbergSchlippe2013">{{cite book|last1=Stahlberg|first1=Felix|title=Statistical Language and Speech Processing|last2=Schlippe|first2=Tim|last3=Vogel|first3=Stephan|last4=Schultz|first4=Tanja|author4-link= Tanja Schultz |chapter=Pronunciation Extraction from Phoneme Sequences through Cross-Lingual Word-to-Phoneme Alignment|volume=7978|year=2013|pages=260–272|issn=0302-9743|doi=10.1007/978-3-642-39593-2_23|series=Lecture Notes in Computer Science|isbn=978-3-642-39592-5}}</ref> for anomaly detection in [[spaceflight]] operations,<ref name="VerzolaDonati2016">{{cite book|last1=Verzola|first1=Ivano|title=Space ''Ops'' 2016 Conference|last2=Donati|first2=Alessandro|last3=Martinez|first3=Jose|last4=Schubert|first4=Matthias|last5=Somodi|first5=Laszlo|chapter=Project Sibyl: A Novelty Detection System for Human Spaceflight Operations|year=2016|doi=10.2514/6.2016-2405|isbn=978-1-62410-426-8}}</ref> for [[bike sharing]] redistribution,<ref name="AdhamBentley2016">{{cite journal|last1=Adham|first1=Manal T.|last2=Bentley|first2=Peter J.|title=Evaluating clustering methods within the Artificial Ecosystem Algorithm and their application to bike redistribution in London|journal=Biosystems|volume=146|year=2016|pages=43–59|issn=0303-2647|doi=10.1016/j.biosystems.2016.04.008|pmid=27178785}}</ref> and traffic prediction.<ref name="WiselyHurson2015">{{cite book|last1=Wisely|first1=Michael|title=2015 International Conference on Connected Vehicles and Expo (ICCVE)|last2=Hurson|first2=Ali|last3=Sarvestani|first3=Sahra Sedigh|chapter=An extensible simulation framework for evaluating centralized traffic prediction algorithms|year=2015|pages=391–396|doi=10.1109/ICCVE.2015.86|isbn=978-1-5090-0264-1|s2cid=1297145}}</ref>
+
+== Objectives ==
+
+The university project is developed for use in ''teaching and research''. The source code is written with extensibility and reusability in mind, but is also optimized for performance. The experimental [[evaluation]] of algorithms depends on many environmental factors and implementation details can have a large impact on the runtime.<ref>{{cite journal|last1=Kriegel|first1=Hans-Peter|author-link1=Hans-Peter Kriegel|last2=Schubert|first2=Erich|last3=Zimek|first3=Arthur|author-link3=Arthur Zimek|title=The (black) art of runtime evaluation: Are we comparing algorithms or implementations?|journal=Knowledge and Information Systems|volume=52|issue=2|pages=341–378|year=2016|issn=0219-1377|doi=10.1007/s10115-016-1004-2|s2cid=40772241}}</ref> ELKI aims at providing a shared codebase with comparable implementations of many algorithms.
+
+As research project, it currently does not offer integration with [[business intelligence]] applications or an interface to common [[database management system]]s via [[SQL]]. The [[copyleft]] ([[Affero General Public License|AGPL]]) license may also be a hindrance to an integration in commercial products; nevertheless it can be used to evaluate algorithms prior to developing an own implementation for a commercial product. Furthermore, the application of the algorithms requires knowledge about their usage, parameters, and study of original literature. The audience are [[student]]s, [[researcher]]s, [[data science|data scientists]], and [[software engineer]]s.
+
+== Architecture ==
+
+ELKI is modeled around a [[database]]-inspired core, which uses a vertical data layout that stores data in column groups (similar to [[column family|column families]] in [[NoSQL (concept)|NoSQL databases]]). This database core provides [[nearest neighbor search]], range/radius search, and distance query functionality with [[index (database)|index acceleration]] for a wide range of [[distance function|dissimilarity measures]]. Algorithms based on such queries (e.g. [[k-nearest-neighbor algorithm]], [[local outlier factor]] and [[DBSCAN]]) can be implemented easily and benefit from the index acceleration.
+The database core also provides fast and memory efficient collections for object collections and associative structures such as nearest neighbor lists.
+
+ELKI makes extensive use of Java interfaces, so that it can be extended easily in many places. For example, custom data types, distance functions, index structures, algorithms, input parsers, and output modules can be added and combined without modifying the existing code. This includes the possibility of defining a custom distance function and using existing indexes for acceleration.
+
+ELKI uses a [[service provider interface|service loader]] architecture to allow publishing extensions as separate [[jar file]]s.
+
+ELKI uses optimized collections for performance rather than the standard Java API.<ref>{{cite web|title=DBIDs|url=https://elki-project.github.io/dev/dbids|website=ELKI homepage|access-date=13 December 2016}}</ref> [[For loop]]s for example are written similar to [[Iterator#C.2B.2B|C++ iterators]]:
+<syntaxhighlight lang="java">
+  for (DBIDIter iter = ids.iter(); iter.valid(); iter.advance()) {
+    relation.get(iter);     // E.g., get the referenced object
+    idcollection.add(iter); // E.g., add the reference to a DBID collection
+  }
+</syntaxhighlight>
+In contrast to typical Java iterators (which can only iterate over objects), this conserves memory, because the iterator can internally use [[Primitive data type|primitive values]] for data storage. The reduced [[Garbage collection (computer science)|garbage collection]] improves the runtime. Optimized collections libraries such as [[GNU Trove3]], [[Koloboke]], and [[fastutil]] employ similar optimizations. ELKI includes data structures such as object collections and heaps (for, e.g., [[nearest neighbor search]]) using such optimizations.
+
+== Visualization ==
+
+The visualization module uses [[Scalable Vector Graphics|SVG]] for scalable graphics output, and [[Apache Batik]] for rendering of the user interface as well as lossless export into [[PostScript]] and [[Portable Document Format|PDF]] for easy inclusion in scientific publications in [[LaTeX]].
+Exported files can be edited with SVG editors such as [[Inkscape]]. Since [[cascading style sheets]] are used, the graphics design can be restyled easily.
+Unfortunately, Batik is rather slow and memory intensive, so the visualizations are not very scalable to large data sets (for larger data sets, only a subsample of the data is visualized by default).
+
+== Awards ==
+
+Version 0.4, presented at the "Symposium on Spatial and Temporal Databases" 2011, which included various methods for spatial outlier detection,<ref name="sstd11" /> won the conference's "best demonstration paper award".
+
+== Included algorithms ==
+
+Select included algorithms:<ref>excerpt from {{Cite web | url=https://elki-project.github.io/algorithms/ | title=Data Mining Algorithms in ELKI | access-date=17 October 2019 }}</ref>
+*[[Cluster analysis]]:
+**[[K-means clustering]] (including fast algorithms such as Elkan, Hamerly, Annulus, and Exponion k-Means, and robust variants such as k-means--)
+**[[K-medians clustering]]
+**[[K-medoids|K-medoids clustering (PAM)]] (including FastPAM and approximations such as CLARA, CLARANS)
+**[[Expectation-maximization algorithm]] for Gaussian mixture modeling
+**[[Hierarchical clustering]] (including the fast SLINK, CLINK, NNChain and Anderberg algorithms)
+**[[Single-linkage clustering]]
+**Leader clustering
+**[[DBSCAN]] (Density-Based Spatial Clustering of Applications with Noise, with full index acceleration for arbitrary distance functions)
+**[[OPTICS algorithm|OPTICS]] (Ordering Points To Identify the Clustering Structure), including the extensions OPTICS-OF, DeLi-Clu, HiSC, HiCO and DiSH
+**HDBSCAN
+**[[Mean shift|Mean-shift]] clustering
+**[[BIRCH]] clustering
+**[[SUBCLU]] (Density-Connected Subspace Clustering for High-Dimensional Data)
+**CLIQUE clustering
+**ORCLUS and PROCLUS clustering
+**COPAC, ERiC and 4C clustering
+**CASH clustering
+**DOC and FastDOC subspace clustering
+**P3C clustering
+**[[Canopy clustering algorithm]]
+*[[Anomaly detection]]:
+**[[K-nearest neighbors algorithm#k-NN outlier|k-Nearest-Neighbor outlier detection]]
+**[[Local Outlier Factor|LOF]] (Local outlier factor)
+**LoOP (Local Outlier Probabilities)
+**[[OPTICS algorithm|OPTICS]]-OF
+**DB-Outlier (Distance-Based Outliers)
+**LOCI (Local Correlation Integral)
+**LDOF (Local Distance-Based Outlier Factor)
+**[[Expectation-maximization algorithm|EM]]-Outlier
+**SOD (Subspace Outlier Degree)
+**COP (Correlation Outlier Probabilities)
+*[[Association rule learning|Frequent Itemset Mining and association rule learning]]
+**[[Apriori algorithm]]
+**Eclat
+**FP-growth
+*[[Dimensionality reduction]]
+**[[Principal component analysis]]
+**[[Multidimensional scaling]]
+**[[T-distributed stochastic neighbor embedding]] (t-SNE)
+*[[Spatial index]] structures and other search indexes:
+**[[R-tree]]
+**[[R*-tree]]
+**[[M-tree]]
+**[[k-d tree]]
+**[[X-tree]]
+**Cover tree
+**iDistance
+**NN descent
+**[[Locality sensitive hashing]] (LSH)
+*Evaluation:
+**[[Precision and recall]], [[F1 score]], Average Precision
+**[[Receiver operating characteristic]] (ROC curve)
+**[[Discounted cumulative gain]] (including NDCG)
+**[[Silhouette (clustering)|Silhouette index]]
+**[[Davies–Bouldin index]]
+**[[Dunn index]]
+**Density-based cluster validation (DBCV)
+*Visualization
+**[[Scatter plot]]s
+**[[Histogram]]s
+**[[Parallel coordinates]] (also in 3D, using [[OpenGL]])
+*Other:
+**[[Probability distribution|Statistical distributions]] and many [[Estimation theory|parameter estimators]], including robust [[Median absolute deviation|MAD]] based and [[L-moment]] based estimators
+**[[Dynamic time warping]]
+**[[Change detection|Change point detection]] in time series
+**[[Intrinsic dimension]]ality estimators
+
+== Version history ==
+
+Version 0.1 (July 2008) contained several Algorithms from [[cluster analysis]] and [[anomaly detection]], as well as some [[index (database)|index structure]]s such as the [[R*-tree]]. The focus of the first release was on [[subspace clustering]] and [[correlation clustering]] algorithms.<ref name="pub-ver0.1">{{cite conference
+| title=ELKI: A Software System for Evaluation of Subspace Clustering Algorithms
+| author=Elke Achtert, [[Hans-Peter Kriegel]], [[Arthur Zimek]]
+| conference=Proceedings of the 20th international conference on Scientific and Statistical Database Management (SSDBM 08)
+| location=Hong Kong, China
+| publisher=Springer
+| year=2008
+| doi=10.1007/978-3-540-69497-7_41
+| url=http://www.dbs.ifi.lmu.de/~zimek/publications/SSDBM2008/elkipaper.pdf
+}}</ref>
+
+Version 0.2 (July 2009) added functionality for [[time series analysis]], in particular distance functions for time series.<ref>{{cite conference
+| title=ELKI in time: ELKI 0.2 for the performance evaluation of distance measures for time series
+| author=Elke Achtert, Thomas Bernecker, [[Hans-Peter Kriegel]], Erich Schubert, [[Arthur Zimek]]
+| conference=Proceedings of the 11th International Symposium on Advances in Spatial and Temporal Databases (SSTD 2010)
+| location=Aalborg, Dänemark
+| publisher=Springer
+| year=2009
+| doi=10.1007/978-3-642-02982-0_35
+| url=http://www.dbs.ifi.lmu.de/~zimek/publications/SSTD2009/sstd09-elki-paper.pdf
+}}</ref>
+
+Version 0.3 (March 2010) extended the choice of [[anomaly detection]] algorithms and visualization modules.<ref>{{cite conference
+| title=Visual Evaluation of Outlier Detection Models
+| author=Elke Achtert, [[Hans-Peter Kriegel]], Lisa Reichert, Erich Schubert, Remigius Wojdanowski, [[Arthur Zimek]]
+| conference=15th International Conference on Database Systems for Advanced Applications (DASFAA 2010)
+| location=Tsukuba, Japan
+| publisher=Springer
+| year=2010
+| doi=10.1007/978-3-642-12098-5_34
+}}</ref>
+
+Version 0.4 (September 2011) added algorithms for geo data mining and support for multi-relational database and index structures.<ref name="sstd11">{{cite conference
+| title=Spatial Outlier Detection: Data, Algorithms, Visualizations
+| author=Elke Achtert, Achmed Hettab, [[Hans-Peter Kriegel]], Erich Schubert, [[Arthur Zimek]]
+| conference=12th International Symposium on Spatial and Temporal Databases (SSTD 2011)
+| location=Minneapolis, MN
+| publisher=Springer
+| year=2011
+| doi=10.1007/978-3-642-22922-0_41
+}}</ref>
+
+Version 0.5 (April 2012) focuses on the evaluation of [[cluster analysis]] results, adding new visualizations and some new algorithms.<ref name="icde12">{{cite conference| title=Evaluation of Clusterings Metrics and Visual Support
+| author=Elke Achtert, Sascha Goldhofer, [[Hans-Peter Kriegel]], Erich Schubert, [[Arthur Zimek]]
+| conference=28th International Conference on Data Engineering (ICDE)
+| location=Washington, DC
+| year=2012
+| doi=10.1109/ICDE.2012.128
+}}</ref>
+
+Version 0.6 (June 2013) introduces a new 3D adaption of [[parallel coordinates]] for data visualization, apart from the usual additions of algorithms and index structures.<ref name="sigmod13">{{cite conference|title=Interactive Data Mining with 3D-Parallel-Coordinate-Trees
+| author=Elke Achtert, [[Hans-Peter Kriegel]], Erich Schubert, [[Arthur Zimek]]
+| conference=Proceedings of the ACM International Conference on Management of Data ([[SIGMOD]])
+| location=New York City, NY | year=2013 | doi=10.1145/2463676.2463696}}</ref>
+
+Version 0.7 (August 2015) adds support for uncertain data types, and algorithms for the analysis of uncertain data.<ref name="vldb15">{{cite journal|title=A Framework for Clustering Uncertain Data.|author1=Erich Schubert |author2=Alexander Koos |author3=Tobias Emrich |author4=Andreas Züfle |author5=Klaus Arthur Schmid |author6=Arthur Zimek |author-link6=Arthur Zimek|journal=Proceedings of the VLDB Endowment|volume=8|issue=12|pages=1976–1987|year=2015|url=http://www.vldb.org/pvldb/vol8/p1976-schubert.pdf |doi=10.14778/2824032.2824115}}</ref>
+
+Version 0.7.5 (February 2019) adds additional clustering algorithms, anomaly detection algorithms, evaluation measures, and indexing structures.<ref>{{cite arXiv|last1=Schubert|first1=Erich|last2=Zimek|first2=Arthur|date=2019-02-10|title=ELKI: A large open-source library for data analysis - ELKI Release 0.7.5 "Heidelberg"|eprint=1902.03616|class=cs.LG}}</ref>
+
+Version 0.8 (October 2020) adds automatic index creation, garbage collection, and incremental priority search, as well as many more algorithms such as [[BIRCH]].<ref>{{Cite conference |last=Schubert |first=Erich |date=2022 |title=Automatic Indexing for Similarity Search in ELKI |url=https://link.springer.com/chapter/10.1007/978-3-031-17849-8_16 |conference=Similarity Search and Applications |language=en |pages=205–213 |doi=10.1007/978-3-031-17849-8_16}}</ref>
+
+== Similar applications ==
+
+*[[scikit-learn]]: machine learning library in python
+*[[Weka (machine learning)|Weka]]: A similar project by the University of Waikato, with a focus on [[classification (machine learning)|classification]] algorithms
+*[[RapidMiner]]: An application available commercially (a restricted version is available as open source)
+*[[KNIME]]: An open source platform which integrates various components for machine learning and [[data mining]]
+
+==See also==
+* [[Comparison of statistical packages]]
+
+== References ==
+
+{{Reflist}}
+
+== External links ==
+
+* {{Official website|https://elki-project.github.io/}} of ELKI with download and documentation.
+
+{{DEFAULTSORT:Environment For Developing Kdd-Applications Supported By Index-Structures}}
+[[Category:Data mining and machine learning software]]
+[[Category:Free artificial intelligence applications]]
+[[Category:Free data analysis software]]
+[[Category:Free science software]]
+[[Category:Free software programmed in Java (programming language)]]
+[[Category:Software using the GNU AGPL license]]

@@ -1,0 +1,579 @@
+{{short description|Deep learning method}}
+{{Distinguish|Adversarial machine learning}}
+{{use mdy dates|date=April 2021}}
+{{Machine learning|Artificial neural network}}
+
+[[File:Generative Adversarial Network illustration.svg|thumb|An illustration of how a GAN works.]]
+
+A '''generative adversarial network''' ('''GAN''') is a class of [[machine learning]] frameworks and a prominent framework for approaching [[generative AI]].<ref>{{cite web | url=https://pub.towardsai.net/generative-ai-and-future-c3b1695876f2 | title=Generative AI and Future | date=November 15, 2022 }}</ref><ref>{{cite web | url=https://www.computer.org/csdl/magazine/co/2022/10/09903869/1H0G6xvtREk | title=CSDL &#124; IEEE Computer Society }}</ref> The concept was initially developed by [[Ian Goodfellow]] and his colleagues in June 2014.<ref name="GANnips">{{cite conference|last1=Goodfellow|first1=Ian|last2=Pouget-Abadie|first2=Jean|last3=Mirza|first3=Mehdi|last4=Xu|first4=Bing|last5=Warde-Farley|first5=David|last6=Ozair|first6=Sherjil|last7=Courville|first7=Aaron|last8=Bengio|first8=Yoshua|year=2014|title=Generative Adversarial Nets|url=https://papers.nips.cc/paper/5423-generative-adversarial-nets.pdf|conference=Proceedings of the International Conference on Neural Information Processing Systems (NIPS 2014)|pages=2672–2680}}</ref> In a GAN, two [[neural network]]s contest with each other in the form of a [[zero-sum game]], where one agent's gain is another agent's loss.
+
+Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of [[generative model]] for [[unsupervised learning]], GANs have also proved useful for [[semi-supervised learning]],<ref name="ITT_GANs">{{cite arXiv |eprint=1606.03498|title=Improved Techniques for Training GANs|last1=Salimans |first1=Tim |last2=Goodfellow |first2=Ian |last3=Zaremba |first3=Wojciech |last4=Cheung |first4=Vicki |last5=Radford |first5=Alec |last6=Chen |first6=Xi |class=cs.LG |year=2016}}</ref> fully [[supervised learning]],<ref>{{cite journal |last1=Isola |first1=Phillip |last2=Zhu |first2=Jun-Yan |last3=Zhou |first3=Tinghui |last4=Efros |first4=Alexei |title=Image-to-Image Translation with Conditional Adversarial Nets |journal=Computer Vision and Pattern Recognition |date=2017 |url=https://phillipi.github.io/pix2pix/}}</ref> and [[reinforcement learning]].<ref>{{cite journal |last1=Ho |first1=Jonathon |last2=Ermon |first2=Stefano |title=Generative Adversarial Imitation Learning |journal=Advances in Neural Information Processing Systems |pages=4565–4573 |url=http://papers.nips.cc/paper/6391-generative-adversarial-imitation-learning|year=2016 |volume=29 |arxiv=1606.03476 }}</ref>
+
+The core idea of a GAN is based on the "indirect" training through the discriminator, another neural network that can tell how "realistic" the input seems, which itself is also being updated dynamically.<ref>{{cite web |title=Vanilla GAN (GANs in computer vision: Introduction to generative learning) |url=https://theaisummer.com/gan-computer-vision/#vanilla-gan-generative-adversarial-networks-2014 |website=theaisummer.com |date=April 10, 2020 |publisher=AI Summer |access-date=20 September 2020 |url-status=live |archive-url=https://web.archive.org/web/20200603130655/https://theaisummer.com/gan-computer-vision/ |archive-date=2020-06-03}}</ref> This means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.
+
+GANs are similar to [[mimicry]] in [[evolutionary biology]], with an [[evolutionary arms race]] between both networks.
+
+==Definition==
+
+=== Mathematical ===
+
+The original GAN is defined as the following [[Game theory|game]]:<ref name="GANnips" /><blockquote>
+Each [[probability space]] <math>(\Omega, \mu_{\text{ref}})</math> defines a GAN game.
+
+There are 2 players: generator and discriminator.
+
+The generator's [[Strategy (game theory)|strategy set]] is <math>\mathcal P(\Omega)</math>, the set of all probability measures <math>\mu_G</math> on <math>\Omega</math>.
+
+The discriminator's strategy set is the set of [[Markov kernel]]s <math>\mu_D: \Omega \to \mathcal P[0, 1]</math>, where <math>\mathcal P[0, 1]</math> is the set of probability measures on <math>[0, 1]</math>.
+
+The GAN game is a [[zero-sum game]], with objective function<math display="block">L(\mu_G, \mu_D) := \mathbb{E}_{x\sim \mu_{\text{ref}}, y\sim \mu_D(x)}[\ln y] + \mathbb{E}_{x\sim \mu_G, y\sim \mu_D(x)}[\ln (1-y)].</math>
+The generator aims to minimize the objective, and the discriminator aims to maximize the objective.
+</blockquote>The generator's task is to approach <math>\mu_G \approx \mu_{\text{ref}}</math>, that is, to match its own output distribution as closely as possible to the reference distribution. The discriminator's task is to output a value close to 1 when the input appears to be from the reference distribution, and to output a value close to 0 when the input looks like it came from the generator distribution.
+
+=== In practice ===
+The [[generative model|''generative'' network]] generates candidates while the [[discriminative model|''discriminative'' network]] evaluates them.<ref name="GANnips" /> The contest operates in terms of data distributions. Typically, the generative network learns to map from a [[latent space]] to a data distribution of interest, while the discriminative network distinguishes candidates produced by the generator from the true data distribution. The generative network's training objective is to increase the error rate of the discriminative network (i.e., "fool" the discriminator network by producing novel candidates that the discriminator thinks are not synthesized (are part of the true data distribution)).<ref name="GANnips" /><ref>{{cite journal |last1=Luc |first1=Pauline |last2=Couprie |first2=Camille |last3=Chintala |first3=Soumith |last4=Verbeek |first4=Jakob |date=2016-11-25 |title=Semantic Segmentation using Adversarial Networks |journal=NIPS Workshop on Adversarial Training, Dec, Barcelona, Spain |volume=2016 |arxiv=1611.08408 }}</ref>
+
+A known dataset serves as the initial training data for the discriminator. Training involves presenting it with samples from the training dataset until it achieves acceptable accuracy. The generator is trained based on whether it succeeds in fooling the discriminator. Typically, the generator is seeded with randomized input that is sampled from a predefined [[latent space]] (e.g. a [[multivariate normal distribution]]). Thereafter, candidates synthesized by the generator are evaluated by the discriminator. Independent [[backpropagation]] procedures are applied to both networks so that the generator produces better samples, while the discriminator becomes more skilled at flagging synthetic samples.<ref name="OpenAI_com">{{citation |author1=Andrej Karpathy |title=Generative Models |url=https://openai.com/blog/generative-models/ |publisher=[[OpenAI]] |access-date=April 7, 2016 |author2=Pieter Abbeel |author3=Greg Brockman |author4=Peter Chen |author5=Vicki Cheung |author6=Rocky Duan |author7=Ian Goodfellow |author8=Durk Kingma |author9=Jonathan Ho |author-link1=Andrej Karpathy |author-link2=Pieter Abbeel |author10=Rein Houthooft |author11=Tim Salimans |author12=John Schulman |author13=Ilya Sutskever |author14=Wojciech Zaremba}}</ref> When used for image generation, the generator is typically a [[deconvolutional neural network]], and the discriminator is a [[convolutional neural network]].
+
+=== Relation to other statistical machine learning methods ===
+GANs are '''implicit generative models''',<ref>{{cite arXiv |eprint=1610.03483 |class=stat.ML |first1=Shakir |last1=Mohamed |first2=Balaji |last2=Lakshminarayanan |title=Learning in Implicit Generative Models |year=2016}}</ref> which means that they do not explicitly model the likelihood function nor provide a means for finding the latent variable corresponding to a given sample, unlike alternatives such as [[flow-based generative model]].
+[[File:Types of deep generative models.png|thumb|Main types of deep generative models that perform maximum likelihood estimation<ref name=":5" />]]
+Compared to fully visible belief networks such as [[WaveNet]] and PixelRNN and autoregressive models in general, GANs can generate one complete sample in one pass, rather than multiple passes through the network.
+
+Compared to [[Boltzmann machine]]s and nonlinear [[Independent component analysis|ICA]], there is no restriction on the type of function used by the network.
+
+Since neural networks are [[Universal approximation theorem|universal approximators]], GANs are [[Asymptotic_theory_(statistics)#Consistency|asymptotically consistent]]. [[Variational autoencoders]] might be universal approximators, but it is not proven as of 2017.<ref name=":5">{{cite arXiv |last=Goodfellow |first=Ian |date=2017-04-03 |title=NIPS 2016 Tutorial: Generative Adversarial Networks |class=cs.LG |eprint=1701.00160 }}</ref>
+
+== Mathematical properties ==
+
+=== Measure-theoretic considerations ===
+This section provides some of the mathematical theory behind these methods.
+
+In [[Probability axioms|modern probability theory]] based on [[measure theory]], a probability space also needs to be equipped with a [[σ-algebra]]. As a result, a more rigorous definition of the GAN game would make the following changes:<blockquote>Each probability space <math>(\Omega, \mathcal B, \mu_{\text{ref}})</math> defines a GAN game.
+
+The generator's strategy set is <math>\mathcal P(\Omega, \mathcal B)</math>, the set of all probability measures <math>\mu_G</math> on the measure-space <math>(\Omega, \mathcal B)</math>.
+
+The discriminator's strategy set is the set of [[Markov kernel]]s <math>\mu_D: (\Omega, \mathcal B) \to \mathcal P([0, 1], \mathcal B([0, 1]))</math>, where <math>\mathcal B([0, 1])</math> is the [[Borel Algebra|Borel σ-algebra]] on <math>[0, 1]</math>.</blockquote>Since issues of measurability never arise in practice, these will not concern us further.
+
+=== Choice of the strategy set ===
+In the most generic version of the GAN game described above, the strategy set for the discriminator contains all Markov kernels <math>\mu_D: \Omega \to  {\mathcal {P}}[0,1]</math>, and the strategy set for the generator contains arbitrary [[probability distribution]]s <math>\mu_G</math> on <math>\Omega</math>.
+
+However, as shown below, the optimal discriminator strategy against any <math>\mu_G</math> is deterministic, so there is no loss of generality in restricting the discriminator's strategies to deterministic functions <math>D:\Omega \to [0, 1]</math>. In most applications, <math>D</math> is a [[deep neural network]] function.
+
+As for the generator, while <math>\mu_G</math> could theoretically be any computable probability distribution, in practice, it is usually implemented as a [[Pushforward measure|pushforward]]: <math>\mu_G = \mu_Z \circ G^{-1}</math>. That is, start with a random variable <math>z \sim \mu_Z</math>, where <math>\mu_Z</math> is a probability distribution that is easy to compute (such as the [[Continuous uniform distribution|uniform distribution]], or the [[Normal distribution|Gaussian distribution]]), then define a function <math>G: \Omega_Z \to \Omega</math>. Then the distribution <math>\mu_G</math> is the distribution of <math>G(z)</math>.
+
+Consequently, the generator's strategy is usually defined as just <math>G</math>, leaving <math>z \sim \mu_Z</math> implicit. In this formalism, the GAN game objective is<math display="block">L(G, D) := \mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln D(x)] + \mathbb{E}_{z\sim \mu_Z}[\ln (1-D(G(z)))].</math>
+
+=== Generative reparametrization ===
+The GAN architecture has two main components. One is casting optimization into a game, of form <math>\min_G \max_D L(G, D)</math>, which is different from the usual kind of optimization, of form <math>\min_\theta L(\theta)</math>. The other is the decomposition of <math>\mu_G </math> into <math>\mu_Z \circ G^{-1}</math>, which can be understood as a reparametrization trick.
+
+To see its significance, one must compare GAN with previous methods for learning generative models, which were plagued with "intractable probabilistic computations that arise in maximum likelihood estimation and related strategies".<ref name="GANnips" />
+
+At the same time, Kingma and Welling<ref>{{cite arXiv |last1=Kingma |first1=Diederik P. |last2=Welling |first2=Max |date=2014-05-01 |title=Auto-Encoding Variational Bayes |class=stat.ML |eprint=1312.6114 }}</ref> and Rezende et al.<ref>{{Cite journal |last1=Rezende |first1=Danilo Jimenez |last2=Mohamed |first2=Shakir |last3=Wierstra |first3=Daan |date=2014-06-18 |title=Stochastic Backpropagation and Approximate Inference in Deep Generative Models |url=https://proceedings.mlr.press/v32/rezende14.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=1278–1286|arxiv=1401.4082 }}</ref> developed the same idea of reparametrization into a general stochastic backpropagation method. Among its first applications was the [[variational autoencoder]].
+
+=== Move order and strategic equilibria ===
+
+In the original paper, as well as most subsequent papers, it is usually assumed that the generator ''moves first'', and the discriminator ''moves second'', thus giving the following minimax game:<math display="block">\min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D) := \mathbb{E}_{x\sim \mu_{\text{ref}}, y\sim \mu_D(x)}[\ln y] + \mathbb{E}_{x\sim \mu_G, y\sim \mu_D(x)}[\ln (1-y)].</math>
+
+If both the generator's and the discriminator's strategy sets are spanned by a finite number of strategies, then by the [[minimax theorem]],<math display="block">\min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D)= \max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D)</math>that is, the move order does not matter.
+
+However, since the strategy sets are both not finitely spanned, the minimax theorem does not apply, and the idea of an "equilibrium" becomes delicate. To wit, there are the following different concepts of equilibrium:
+
+* Equilibrium when generator moves first, and discriminator moves second:<math display="block">\hat \mu_G \in \arg\min_{\mu_G}\max_{\mu_D} L(\mu_G,\mu_D),\quad
+\hat \mu_D \in \arg\max_{\mu_D} L(\hat\mu_G, \mu_D), \quad 
+</math>
+* Equilibrium when discriminator moves first, and generator moves second:<math display="block">\hat \mu_D \in \arg\max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D), \quad 
+\hat \mu_G \in \arg\min_{\mu_G} L(\mu_G,\hat \mu_D),</math> 
+* [[Nash equilibrium]] <math>(\hat \mu_D, \hat\mu_G) 
+</math>, which is stable under simultaneous move order:<math display="block">\hat \mu_D \in \arg\max_{\mu_D} L(\hat\mu_G, \mu_D), \quad \hat \mu_G \in \arg\min_{\mu_G} L(\mu_G, \hat\mu_D)</math>
+
+For general games, these equilibria do not have to agree, or even to exist. For the original GAN game, these equilibria all exist, and are all equal. However, for more general GAN games, these do not necessarily exist, or agree.<ref name=":2">{{Cite journal |last1=Farnia |first1=Farzan |last2=Ozdaglar |first2=Asuman |date=2020-11-21 |title=Do GANs always have Nash equilibria? |url=https://proceedings.mlr.press/v119/farnia20a.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=3029–3039}}</ref>
+
+=== Main theorems for GAN game ===
+The original GAN paper proved the following two theorems:<ref name="GANnips" />{{Math theorem
+| math_statement = For any fixed generator strategy <math>\mu_G</math>, let the optimal reply be <math>D^* = \arg\max_{D} L(\mu_G, D)</math>, then
+
+<math display="block">\begin{align}
+D^*(x) &= \frac{d\mu_{\text{ref}}}{d(\mu_{\text{ref}} + \mu_G)}\\
+L(\mu_G, D^*) &= 2D_{JS}(\mu_{\text{ref}}; \mu_G) - 2\ln 2
+\end{align}</math>
+
+where the derivative is the [[Radon–Nikodym derivative]], and <math>D_{JS}</math> is the [[Jensen–Shannon divergence]].
+| name = Theorem
+| note = the optimal discriminator computes the Jensen–Shannon divergence
+}}{{Math proof|proof=
+
+By Jensen's inequality,
+
+<math display="block">\mathbb{E}_{x\sim \mu_{\text{ref}}, y\sim \mu_D(x)}[\ln y] \leq  \mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln \mathbb{E}_{y\sim \mu_D(x)}[y]]</math>
+and similarly for the other term. Therefore, the optimal reply can be deterministic, i.e. <math>\mu_D(x) = \delta_{D(x)}</math> for some function <math>D: \Omega \to [0, 1]</math>, in which case
+
+<math display="block">L(\mu_G, \mu_D) := \mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln D(x)] + \mathbb{E}_{x\sim \mu_{G}}[\ln (1-D(x))].</math>
+
+To define suitable density functions, we define a base measure <math>\mu := \mu_{\text{ref}} + \mu_G</math>, which allows us to take the Radon–Nikodym derivatives
+
+<math display="block">\rho_{\text{ref}} = \frac{d\mu_{\text{ref}}}{d\mu} \quad \rho_{G} = \frac{d\mu_{G}}{d\mu}</math>
+with <math>\rho_{\text{ref}} + \rho_G = 1</math>.
+
+We then have
+
+<math display="block">L(\mu_G, \mu_D) := \int \mu(dx) \left[\rho_{\text{ref}}(x) \ln(D(x)) + \rho_G(x) \ln(1-D(x))\right].</math>
+
+The integrand is just the negative [[cross-entropy]] between two Bernoulli random variables with parameters <math>\rho_{\text{ref}}(x)</math> and <math>D(x)</math>. We can write this as <math>-H(\rho_{\text{ref}}(x))-D_{KL}(\rho_{\text{ref}}(x) \| D(x))</math>, where <math>H</math> is the [[binary entropy function]], so
+
+<math display="block">L(\mu_G, \mu_D) = -\int \mu(dx) (H(\rho_{\text{ref}}(x)) + D_{KL}(\rho_{\text{ref}}(x) \| D(x))).</math>
+
+This means that the optimal strategy for the discriminator is <math>D(x) = \rho_{\text{ref}}(x)</math>, with   
+<math display="block">L(\mu_G, \mu_D^*) = -\int \mu(dx) H(\rho_{\text{ref}}(x)) = D_{JS}(\mu_{\text{ref}} \| \mu_G) -2 \ln 2</math>
+
+after routine calculation.  
+}}
+
+'''Interpretation''': For any fixed generator strategy <math>\mu_G</math>, the optimal discriminator keeps track of the likelihood ratio between the reference distribution and the generator distribution:<math display="block">\frac{D(x)}{1-D(x)} = \frac{d\mu_{\text{ref}}}{d\mu_G}(x) = \frac{\mu_{\text{ref}}(dx)}{\mu_G(dx)}; \quad D(x) = \sigma(\ln\mu_{\text{ref}}(dx) - \ln\mu_{G}(dx))</math>where <math>\sigma</math> is the [[logistic function]].
+In particular, if the prior probability for an image <math>x</math> to come from the reference distribution is equal to <math>\frac 12</math>, then <math>D(x)</math> is just the posterior probability that <math>x</math> came from the reference distribution:<math display="block">D(x) = Pr(x \text{ came from reference distribution} | x).</math>
+
+{{Math theorem
+| math_statement = For any GAN game, there exists a pair <math>(\hat\mu_D, \hat\mu_G)</math> that is both a sequential equilibrium and a Nash equilibrium:
+
+<math>\begin{align}
+L(\hat\mu_G, \hat\mu_D) = \min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D) =& \max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D) = -2\ln 2\\
+
+\hat \mu_D \in \arg\max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D), &\quad \hat \mu_G \in \arg\min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D)\\
+
+\hat \mu_D \in \arg\max_{\mu_D} L(\hat\mu_G, \mu_D), &\quad \hat \mu_G \in \arg\min_{\mu_G} L(\mu_G, \hat\mu_D)\\
+\forall x\in \Omega, \hat \mu_D(x) = \delta_{\frac 1 2}, &\quad\hat \mu_G = \mu_{\text{ref}}
+\end{align}
+</math>
+
+That is, the generator perfectly mimics the reference, and the discriminator outputs <math>\frac 12</math> deterministically on all inputs.
+| name = Theorem
+| note = the unique equilibrium point
+}}
+
+{{Math proof|proof=
+From the previous proposition,
+
+<math display="block">\arg\min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D)= \mu_{\text{ref}}; \quad \min_{\mu_G}\max_{\mu_D} L(\mu_G, \mu_D) = -2\ln 2.</math>
+
+For any fixed discriminator strategy <math>\mu_D</math>, any <math>\mu_G</math> concentrated on the set
+
+<math display="block">\{ x | 
+	  \mathbb{E}_{y\sim\mu_D(x)}[\ln(1-y)] = \inf_x \mathbb{E}_{y\sim \mu_D(x)}[\ln(1-y)] 
+	  \}</math>
+is an optimal strategy for the generator. Thus,
+
+<math display="block"> \arg\max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D) =  \arg\max_{\mu_D} \mathbb{E}_{x\sim \mu_{\text{ref}}, y\sim \mu_D(x)}[\ln y] + \inf_x \mathbb{E}_{y\sim \mu_D(x)}[\ln (1-y)].</math>
+
+By Jensen's inequality, the discriminator can only improve by adopting the deterministic strategy of always playing <math>D(x) = \mathbb{E}_{y\sim \mu_D(x)}[y]</math>. Therefore,
+
+<math display="block"> \arg\max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D) =  \arg\max_{D} \mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln D(x)] + \inf_x \ln (1-D(x))</math>
+
+By Jensen's inequality,
+
+<math display="block">\ln \mathbb{E}_{x\sim \mu_{\text{ref}}}[ D(x)] + \inf_x \ln (1-D(x)) = \ln \mathbb{E}_{x\sim \mu_{\text{ref}}}[ D(x)] + \ln (1-\sup_x D(x))=\ln [\mathbb{E}_{x\sim \mu_{\text{ref}}}[ D(x)] (1-\sup_x D(x))] \leq \ln [ \sup_x D(x)) (1-\sup_x D(x))] \leq \ln\frac 14,</math>
+
+with equality if <math>D(x) = \frac 12</math>, so
+
+<math display="block">\forall x\in \Omega, \hat \mu_D(x) = \delta_{\frac 1 2}; \quad \max_{\mu_D}\min_{\mu_G} L(\mu_G, \mu_D) = -2\ln 2.</math>
+
+Finally, to check that this is a Nash equilibrium, note that when <math>\mu_G = \mu_{\text{ref}}</math>, we have
+
+<math display="block">L(\mu_G, \mu_D) := \mathbb{E}_{x\sim \mu_{\text{ref}}, y\sim \mu_D(x)}[\ln (y (1-y))]</math>
+which is always maximized by <math>y = \frac 12</math>.
+
+When <math>\forall x\in \Omega, \mu_D(x) = \delta_{\frac 1 2}</math>, any strategy is optimal for the generator.}}
+
+== Training and evaluating GAN ==
+
+=== Training ===
+
+==== Unstable convergence ====
+While the GAN game has a unique global equilibrium point when both the generator and discriminator have access to their entire strategy sets, the equilibrium is no longer guaranteed when they have a restricted strategy set.<ref name=":2" />
+
+In practice, the generator has access only to measures of form <math>\mu_Z \circ G_\theta^{-1}</math>, where <math>G_\theta</math> is a function computed by a neural network with parameters <math>\theta</math>, and <math>\mu_Z</math> is an easily sampled distribution, such as the uniform or normal distribution. Similarly, the discriminator has access only to functions of form <math>D_\zeta</math>, a function computed by a neural network with parameters <math>\zeta</math>. These restricted strategy sets take up a ''vanishingly small proportion'' of their entire strategy sets.<ref name=":3">{{cite arXiv |last=Weng |first=Lilian |date=2019-04-18 |title=From GAN to WGAN |class=cs.LG |eprint=1904.08994 }}</ref>
+
+Further, even if an equilibrium still exists, it can only be found by searching in the high-dimensional space of all possible neural network functions. The standard strategy of using [[gradient descent]] to find the equilibrium often does not work for GAN, and often the game "collapses" into one of several failure modes. To improve the convergence stability, some training strategies start with an easier task, such as generating low-resolution images<ref name=":1" /> or simple images (one object with uniform background),<ref>{{Cite arXiv |last1=Soviany |first1=Petru |last2=Ardei |first2=Claudiu |last3=Ionescu |first3=Radu Tudor |last4=Leordeanu |first4=Marius |date=2019-10-22 |title=Image Difficulty Curriculum for Generative Adversarial Networks (CuGAN) |class=cs.LG |eprint=1910.08967}}</ref> and gradually increase the difficulty of the task during training. This essentially translates to applying a curriculum learning scheme.<ref>{{Cite journal |last1=Hacohen |first1=Guy |last2=Weinshall |first2=Daphna |date=2019-05-24 |title=On The Power of Curriculum Learning in Training Deep Networks |url=https://proceedings.mlr.press/v97/hacohen19a.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=2535–2544|arxiv=1904.03626 }}</ref>
+
+==== Mode collapse ====
+GANs often suffer from '''mode collapse''' where they fail to generalize properly, missing entire modes from the input data. For example, a GAN trained on the [[MNIST]] dataset containing many samples of each digit might only generate pictures of digit 0. This was named in the first paper as the "[[Look Around You|Helvetica scenario]]".
+
+One way this can happen is if the generator learns too fast compared to the discriminator. If the discriminator <math>D</math> is held constant, then the optimal generator would only output elements of <math>\arg\max_x D(x)</math>.<ref>{{Cite web |title=r/MachineLearning - Comment by u/ian_goodfellow on "[R] [1701.07875] Wasserstein GAN |url=https://www.reddit.com/r/MachineLearning/comments/5qxoaz/comment/dd4041v/?context=3 |access-date=2022-07-15 |website=reddit | date=January 30, 2017 |language=en-US}}</ref> So for example, if during GAN training for generating MNIST dataset, for a few epochs, the discriminator somehow prefers the digit 0 slightly more than other digits, the generator may seize the opportunity to generate only digit 0, then be unable to escape the local minimum after the discriminator improves.
+
+Some researchers perceive the root problem to be a weak discriminative network that fails to notice the pattern of omission, while others assign blame to a bad choice of [[objective function]]. Many solutions have been proposed, but it is still an open problem.<ref>{{cite conference |last1=Lin |first1=Zinan |last2=Khetan |first2=Ashish |last3=Fanti |first3=Giulia |last4=Oh |first4=Sewoong |display-authors=1 |date=December 2018 |title=PacGAN: the power of two samples in generative adversarial networks |url=https://dl.acm.org/doi/10.5555/3326943.3327081 |conference=32nd International Conference on Neural Information Processing Systems |pages=1505–1514 |arxiv=1712.04086}}</ref><ref>{{cite arXiv |eprint=1801.04406 |class=cs.LG |first1=Lars |last1=Mescheder |first2=Andreas |last2=Geiger |title=Which Training Methods for GANs do actually Converge? |date=2018-07-31 |last3=Nowozin |first3=Sebastian}}</ref>
+
+Even the state-of-the-art architecture, BigGAN (2019), could not avoid mode collapse. The authors resorted to "allowing collapse to occur at the later stages of training, by which time a model is sufficiently trained to achieve good results".<ref name=":0" />
+
+==== Two time-scale update rule ====
+The '''two time-scale update rule (TTUR)''' is proposed to make GAN convergence more stable by making the learning rate of the generator lower than that of the discriminator. The authors argued that the generator should move slower than the discriminator, so that it does not "drive the discriminator steadily into new regions without capturing its gathered information".
+
+They proved that a general class of games that included the GAN game, when trained under TTUR, "converges under mild assumptions to a stationary local Nash equilibrium".<ref>{{Cite journal |last1=Heusel |first1=Martin |last2=Ramsauer |first2=Hubert |last3=Unterthiner |first3=Thomas |last4=Nessler |first4=Bernhard |last5=Hochreiter |first5=Sepp |date=2017 |title=GANs Trained by a Two Time-Scale Update Rule Converge to a Local Nash Equilibrium |url=https://proceedings.neurips.cc/paper/2017/hash/8a1d694707eb0fefe65871369074926d-Abstract.html |journal=Advances in Neural Information Processing Systems |publisher=Curran Associates, Inc. |volume=30|arxiv=1706.08500 }}</ref>
+
+They also proposed using the [[Stochastic optimization|Adam stochastic optimization]]<ref>{{cite arXiv |last1=Kingma |first1=Diederik P. |last2=Ba |first2=Jimmy |date=2017-01-29 |title=Adam: A Method for Stochastic Optimization |class=cs.LG |eprint=1412.6980 }}</ref> to avoid mode collapse, as well as the [[Fréchet inception distance]] for evaluating GAN performances.
+
+==== Vanishing gradient ====
+Conversely, if the discriminator learns too fast compared to the generator, then the discriminator could almost perfectly distinguish <math>\mu_{G_\theta}, \mu_{\text{ref}}</math>. In such case, the generator <math>G_\theta</math> could be stuck with a very high loss no matter which direction it changes its <math>\theta</math>, meaning that the gradient <math>\nabla_\theta L(G_\theta, D_\zeta)</math> would be close to zero. In such case, the generator cannot learn, a case of the [[vanishing gradient problem|'''vanishing gradient''' problem]].<ref name=":3" />
+
+Intuitively speaking, the discriminator is too good, and since the generator cannot take any small step (only small steps are considered in gradient descent) to improve its payoff, it does not even try.
+
+One important method for solving this problem is the [[Wasserstein GAN]].
+
+=== Evaluation ===
+GANs are usually evaluated by [[Inception score]] (IS), which measures how varied the generator's outputs are (as classified by an image classifier, usually [[Inceptionv3|Inception-v3]]), or [[Fréchet inception distance]] (FID), which measures how similar the generator's outputs are to a reference set (as classified by a learned image featurizer, such as Inception-v3 without its final layer). Many papers that propose new GAN architectures for image generation report how their architectures break the [[state of the art]] on FID or IS.
+
+Another evaluation method is the Learned Perceptual Image Patch Similarity (LPIPS), which starts with a learned image featurizer <math>f_\theta: \text{Image} \to \R^n</math>, and finetunes it by supervised learning on a set of <math>(x, x', \text{PerceptualDifference}(x, x'))</math>, where <math>x</math> is an image, <math>x'</math> is a perturbed version of it, and <math>\text{PerceptualDifference}(x, x')</math> is how much they differ, as reported by human subjects. The model is finetuned so that it can approximate <math>\|f_\theta(x) - f_\theta(x')\| \approx \text{PerceptualDifference}(x, x')</math>. This finetuned model is then used to define <math>\text{LPIPS}(x, x') := \|f_\theta(x) - f_\theta(x')\| </math>.<ref>{{cite arXiv |last1=Zhang |first1=Richard |last2=Isola |first2=Phillip |last3=Efros |first3=Alexei A. |last4=Shechtman |first4=Eli |last5=Wang |first5=Oliver |date=2018 |title=The Unreasonable Effectiveness of Deep Features as a Perceptual Metric |pages=586–595|class=cs.CV |eprint=1801.03924 }}</ref>
+
+Other evaluation methods are reviewed in.<ref>{{Cite journal |last=Borji |first=Ali |date=2019-02-01 |title=Pros and cons of GAN evaluation measures |url=https://www.sciencedirect.com/science/article/pii/S1077314218304272 |journal=Computer Vision and Image Understanding |language=en |volume=179 |pages=41–65 |doi=10.1016/j.cviu.2018.10.009 |arxiv=1802.03446 |s2cid=3627712 |issn=1077-3142}}</ref>
+
+== Variants ==
+There is a veritable zoo of GAN variants.<ref>{{Citation |last=Hindupur |first=Avinash |title=The GAN Zoo |date=2022-07-15 |url=https://github.com/hindupuravinash/the-gan-zoo |access-date=2022-07-15}}</ref> Some of the most prominent are as follows:
+
+=== Conditional GAN ===
+Conditional GANs are similar to standard GANs except they allow the model to conditionally generate samples based on additional information. For example, if we want to generate a cat face given a dog picture, we could use a conditional GAN.
+
+The generator in a GAN game generates <math>\mu_G</math>, a probability distribution on the probability space <math>\Omega</math>. This leads to the idea of a conditional GAN, where instead of generating one probability distribution on <math>\Omega</math>, the generator generates a different probability distribution <math>\mu_G(c)</math> on <math>\Omega</math>, for each given class label <math>c</math>.
+
+For example, for generating images that look like [[ImageNet]], the generator should be able to generate a picture of cat when given the class label "cat".
+
+In the original paper,<ref name="GANnips" /> the authors noted that GAN can be trivially extended to conditional GAN by providing the labels to both the generator and the discriminator.
+
+Concretely, the conditional GAN game is just the GAN game with class labels provided:<math display="block">L(\mu_G, D) := \mathbb{E}_{c \sim \mu_C, x\sim \mu_{\text{ref}}(c)}[\ln D(x, c)] + \mathbb{E}_{c \sim \mu_C, x\sim \mu_G(c)}[\ln (1-D(x, c))]</math>where <math>\mu_C</math> is a probability distribution over classes, <math>\mu_{\text{ref}}(c)</math> is the probability distribution of real images of class <math>c</math>, and <math>\mu_G(c)</math> the probability distribution of images generated by the generator when given class label <math>c</math>.
+
+In 2017, a conditional GAN learned to generate 1000 image classes of [[ImageNet]].<ref>{{Cite journal |last1=Odena |first1=Augustus |last2=Olah |first2=Christopher |last3=Shlens |first3=Jonathon |date=2017-07-17 |title=Conditional Image Synthesis with Auxiliary Classifier GANs |url=https://proceedings.mlr.press/v70/odena17a.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=2642–2651|arxiv=1610.09585 }}</ref>
+
+=== GANs with alternative architectures ===
+The GAN game is a general framework and can be run with any reasonable parametrization of the generator <math>G</math> and discriminator <math>D</math>. In the original paper, the authors demonstrated it using [[multilayer perceptron]] networks and [[convolutional neural network]]s. Many alternative architectures have been tried.
+
+'''Deep convolutional GAN (DCGAN):'''<ref>{{Cite journal |last1=Radford |first1=Alec |last2=Metz |first2=Luke |last3=Chintala |first3=Soumith |date=2016 |title=Unsupervised Representation Learning with Deep Convolutional Generative Adversarial Networks |journal=ICLR|s2cid=11758569 }}</ref> For both generator and discriminator, uses only deep networks consisting entirely of convolution-deconvolution layers, that is, fully convolutional networks.<ref>{{Cite journal |last1=Long |first1=Jonathan |last2=Shelhamer |first2=Evan |last3=Darrell |first3=Trevor |date=2015 |title=Fully Convolutional Networks for Semantic Segmentation |url=https://openaccess.thecvf.com/content_cvpr_2015/html/Long_Fully_Convolutional_Networks_2015_CVPR_paper.html |pages=3431–3440|journal=CVF}}</ref>
+
+'''Self-attention GAN (SAGAN):'''<ref>{{Cite journal |last1=Zhang |first1=Han |last2=Goodfellow |first2=Ian |last3=Metaxas |first3=Dimitris |last4=Odena |first4=Augustus |date=2019-05-24 |title=Self-Attention Generative Adversarial Networks |url=https://proceedings.mlr.press/v97/zhang19d.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=7354–7363}}</ref> Starts with the DCGAN, then adds residually-connected standard [[Attention mechanism|self-attention modules]] to the generator and discriminator.
+
+'''Variational autoencoder GAN (VAEGAN):<ref>{{Cite journal |last1=Larsen |first1=Anders Boesen Lindbo |last2=Sønderby |first2=Søren Kaae |last3=Larochelle |first3=Hugo |last4=Winther |first4=Ole |date=2016-06-11 |title=Autoencoding beyond pixels using a learned similarity metric |url=https://proceedings.mlr.press/v48/larsen16.html |journal=International Conference on Machine Learning |language=en |publisher=PMLR |pages=1558–1566|arxiv=1512.09300 }}</ref>''' Uses a [[variational autoencoder]] (VAE) for the generator.
+
+'''Transformer GAN (TransGAN):'''<ref>{{cite arXiv |last1=Jiang |first1=Yifan |last2=Chang |first2=Shiyu |last3=Wang |first3=Zhangyang |date=2021-12-08 |title=TransGAN: Two Pure Transformers Can Make One Strong GAN, and That Can Scale Up |class=cs.CV |eprint=2102.07074 }}</ref> Uses the pure [[Transformer (machine learning model)|transformer]] architecture for both the generator and discriminator, entirely devoid of convolution-deconvolution layers.
+
+'''Flow-GAN:'''<ref>{{cite arXiv |last1=Grover |first1=Aditya |last2=Dhar |first2=Manik |last3=Ermon |first3=Stefano |date=2017-05-01 |title=Flow-GAN: Combining Maximum Likelihood and Adversarial Learning in Generative Models |class=cs.LG |eprint=1705.08868 }}</ref> Uses [[flow-based generative model]] for the generator, allowing efficient computation of the likelihood function.
+
+=== GANs with alternative objectives ===
+Many GAN variants are merely obtained by changing the loss functions for the generator and discriminator.
+
+'''Original GAN:'''
+
+We recast the original GAN objective into a form more convenient for comparison:<math display="block">\begin{cases}
+\min_D L_D(D, \mu_G) = -\mathbb{E}_{x\sim \mu_{G}}[\ln D(x)] - \mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln (1-D(x))]\\
+\min_G L_G(D, \mu_G) = -\mathbb{E}_{x\sim \mu_G}[\ln (1-D(x))]
+\end{cases}</math>
+
+'''Original GAN, non-saturating loss:'''
+
+This objective for generator was recommended in the original paper for faster convergence.<ref name="GANnips" /><math display="block">L_G = \mathbb{E}_{x\sim \mu_G}[\ln D(x)]</math>The effect of using this objective is analyzed in Section 2.2.2 of Arjovsky et al.<ref>{{cite arXiv |last1=Arjovsky |first1=Martin |last2=Bottou |first2=Léon |date=2017-01-01 |title=Towards Principled Methods for Training Generative Adversarial Networks |class=stat.ML |eprint=1701.04862 }}</ref>
+
+'''Original GAN, maximum likelihood:'''
+
+<math display="block">L_G = \mathbb{E}_{x\sim \mu_G}[(\exp \circ \sigma^{-1}\circ D) (x)]</math>where <math>\sigma</math> is the logistic function. When the discriminator is optimal, the generator gradient is the same as in [[maximum likelihood estimation]], even though GAN cannot perform maximum likelihood estimation ''itself''.<ref>{{cite arXiv |last=Goodfellow |first=Ian J. |date=2014-12-01 |title=On distinguishability criteria for estimating generative models |class=stat.ML |eprint=1412.6515 }}</ref><ref>{{Cite web |last=Goodfellow |first=Ian |date=2016-08-31 |title=Generative Adversarial Networks (GANs), Presentation at Berkeley Artificial Intelligence Lab |url=https://www.iangoodfellow.com/slides/2016-08-31-Berkeley.pdf |url-status=live |archive-url=https://web.archive.org/web/20220508101103/https://www.iangoodfellow.com/slides/2016-08-31-Berkeley.pdf |archive-date=8 May 2022}}</ref>
+
+'''[[Hinge loss]] GAN''':<ref>{{cite arXiv |last1=Lim |first1=Jae Hyun |last2=Ye |first2=Jong Chul |date=2017-05-08 |title=Geometric GAN |class=stat.ML |eprint=1705.02894 }}</ref><math display="block"> L_{D} = -\mathbb{E}_{x\sim{p}_{\text{ref}}}\left[\min\left(0, -1 + D\left(x\right)\right)\right] -\mathbb{E}_{x\sim\mu_G}\left[\min\left(0, -1 - D\left(x\right)\right)\right] </math><math display="block"> L_{G} = -\mathbb{E}_{x\sim \mu_G} [D\left(x\right)] </math>'''Least squares GAN:'''<ref>{{Cite journal |last1=Mao |first1=Xudong |last2=Li |first2=Qing |last3=Xie |first3=Haoran |last4=Lau |first4=Raymond Y. K. |last5=Wang |first5=Zhen |last6=Paul Smolley |first6=Stephen |date=2017 |title=Least Squares Generative Adversarial Networks |url=https://openaccess.thecvf.com/content_iccv_2017/html/Mao_Least_Squares_Generative_ICCV_2017_paper.html |pages=2794–2802}}</ref><math display="block">L_D = \mathbb{E}_{x\sim \mu_{\text{ref}}}[(D(x)-b)^2] + \mathbb{E}_{x\sim \mu_G}[(D(x)-a)^2]</math><math display="block">L_G = \mathbb{E}_{x\sim \mu_G}[(D(x)-c)^2]</math>where <math>a, b, c</math> are parameters to be chosen. The authors recommended <math>a = -1, b = 1, c = 0</math>.
+
+=== Wasserstein GAN (WGAN) ===
+{{Main|Wasserstein GAN}}
+The Wasserstein GAN modifies the GAN game at two points:
+
+* The discriminator's strategy set is the set of measurable functions of type <math>D: \Omega \to \R</math> with bounded [[Lipschitz norm]]: <math>\|D\|_L \leq K </math>, where <math>K </math> is a fixed positive constant.
+* The objective is<math display="block">L_{WGAN}(\mu_G, D) := \mathbb{E}_{x\sim \mu_G}[D(x)] -\mathbb E_{x\sim  \mu_{\text{ref}}}[D(x)]</math>
+One of its purposes is to solve the problem of mode collapse (see above).<ref name=":3" /> The authors claim "In no experiment did we see evidence of mode collapse for the WGAN algorithm".
+
+=== GANs with more than 2 players ===
+
+==== Adversarial autoencoder ====
+An adversarial autoencoder (AAE)<ref>{{cite arXiv |eprint=1511.05644 |class=cs.LG |first1=Alireza |last1=Makhzani |first2=Jonathon |last2=Shlens |title=Adversarial Autoencoders |first3=Navdeep |last3=Jaitly |first4=Ian |last4=Goodfellow |first5=Brendan |last5=Frey |author-link4=Ian Goodfellow |author-link5=Brendan Frey |year=2016}}</ref> is more autoencoder than GAN. The idea is to start with a plain [[autoencoder]], but train a discriminator to discriminate the latent vectors from a reference distribution (often the normal distribution).
+
+==== InfoGAN ====
+In conditional GAN, the generator receives both a noise vector <math>z</math> and a label <math>c</math>, and produces an image <math>G(z, c)</math>. The discriminator receives image-label pairs <math>(x, c)</math>, and computes <math>D(x, c)</math>.
+
+When the training dataset is unlabeled, conditional GAN does not work directly.
+
+The idea of InfoGAN is to decree that every latent vector in the latent space can be decomposed as <math>(z, c)</math>: an incompressible noise part <math>z</math>, and an informative label part <math>c</math>, and encourage the generator to comply with the decree, by encouraging it to maximize <math>I(c, G(z, c))</math>, the [[mutual information]] between <math>c</math> and <math>G(z, c)</math>, while making no demands on the mutual information <math>z</math> between <math>G(z, c)</math>.
+
+Unfortunately, <math>I(c, G(z, c))</math> is intractable in general, The key idea of InfoGAN is Variational Mutual Information Maximization:<ref>{{Cite journal |last1=Barber |first1=David |last2=Agakov |first2=Felix |date=2003-12-09 |title=The IM algorithm: a variational approach to Information Maximization |url=https://dl.acm.org/doi/abs/10.5555/2981345.2981371 |journal=Proceedings of the 16th International Conference on Neural Information Processing Systems |series=NIPS'03 |location=Cambridge, MA, USA |publisher=MIT Press |pages=201–208 }}</ref> indirectly maximize it by maximizing a lower bound<math display="block"> {\hat {I}}(G,Q)=\mathbb {E} _{z\sim \mu _{Z},c\sim \mu _{C}}[\ln Q(c|G(z,c))]; \quad I(c, G(z, c)) \geq \sup_Q \hat I(G, Q)</math>where <math> Q</math> ranges over all [[Markov kernel]]s of type <math> Q: \Omega_Y \to \mathcal P(\Omega_C)</math>.
+
+The InfoGAN game is defined as follows:<ref>{{Cite journal |last1=Chen |first1=Xi |last2=Duan |first2=Yan |last3=Houthooft |first3=Rein |last4=Schulman |first4=John |last5=Sutskever |first5=Ilya |last6=Abbeel |first6=Pieter |date=2016 |title=InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets |url=https://proceedings.neurips.cc/paper/2016/hash/7c9d0b1f96aebd7b5eca8c3edaa19ebb-Abstract.html |journal=Advances in Neural Information Processing Systems |publisher=Curran Associates, Inc. |volume=29|arxiv=1606.03657 }}</ref><blockquote>Three probability spaces define an InfoGAN game:
+
+* <math>(\Omega_X,  \mu_{\text{ref}})</math>, the space of reference images.
+* <math>(\Omega_Z, \mu_Z)</math>, the fixed random noise generator.
+* <math>(\Omega_C, \mu_C)</math>, the fixed random information generator.
+
+There are 3 players in 2 teams: generator, Q, and discriminator. The generator and Q are on one team, and the discriminator on the other team.
+
+The objective function is<math display="block">L(G, Q, D) = L_{GAN}(G, D) - \lambda \hat I(G, Q)</math>where <math> L_{GAN}(G, D) = \mathbb{E}_{x\sim \mu_{\text{ref}}, }[\ln D(x)] + \mathbb{E}_{z\sim \mu_Z}[\ln (1-D(G(z, c)))]</math> is the original GAN game objective, and <math> \hat I(G, Q) = \mathbb E_{z\sim\mu_Z, c\sim\mu_C}[\ln Q(c | G(z, c))]</math>
+
+Generator-Q team aims to minimize the objective, and discriminator aims to maximize it:<math display="block">\min_{G, Q} \max_D L(G, Q, D)</math></blockquote>
+
+==== Bidirectional GAN (BiGAN) ====
+The standard GAN generator is a function of type <math>G: \Omega_Z\to \Omega_X</math>, that is, it is a mapping from a latent space <math>\Omega_Z</math> to the image space <math>\Omega_X</math>. This can be understood as a "decoding" process, whereby every latent vector <math>z\in \Omega_Z</math> is a code for an image <math>x\in \Omega_X</math>, and the generator performs the decoding. This naturally leads to the idea of training another network that performs "encoding", creating an [[autoencoder]] out of the encoder-generator pair.
+
+Already in the original paper,<ref name="GANnips" /> the authors noted that "Learned approximate inference can be performed by training an auxiliary network to predict <math>z</math> given <math>x</math>". The bidirectional GAN architecture performs exactly this.<ref>{{cite arXiv |eprint=1605.09782 |class=cs.LG |first1=Jeff |last1=Donahue |first2=Philipp |last2=Krähenbühl |title=Adversarial Feature Learning |first3=Trevor |last3=Darrell |author-link3=Trevor Darrell |year=2016}}</ref>
+
+The BiGAN is defined as follows: <blockquote>Two probability spaces define a BiGAN game:
+
+*<math>(\Omega_X, \mu_{X})</math>, the space of reference images.
+* <math>(\Omega_Z, \mu_Z)</math>, the latent space.
+
+There are 3 players in 2 teams: generator, encoder, and discriminator. The generator and encoder are on one team, and the discriminator on the other team.
+
+The generator's strategies are functions <math>G:\Omega_Z \to \Omega_X</math>, and the encoder's strategies are functions <math>E:\Omega_X \to \Omega_Z</math>. The discriminator's strategies are functions <math>D:\Omega_X \to [0, 1]</math>.
+
+The objective function is<math display="block">L(G, E, D) = \mathbb E_{x\sim \mu_X}[\ln D(x, E(x))] + \mathbb E_{z\sim \mu_Z}[\ln (1-D(G(z), z))]</math>
+
+Generator-encoder team aims to minimize the objective, and discriminator aims to maximize it:<math display="block">\min_{G, E} \max_D L(G, E, D)</math> </blockquote>In the paper, they gave a more abstract definition of the objective as:<math display="block">L(G, E, D) = \mathbb E_{(x, z)\sim \mu_{E, X}}[\ln D(x, z)] + \mathbb E_{(x, z)\sim \mu_{G, Z}}[\ln (1-D(x, z))]</math>where <math>\mu_{E, X}(dx, dz) = \mu_X(dx) \cdot \delta_{E(x)}(dz)</math> is the probability distribution on <math>\Omega_X\times \Omega_Z</math> obtained by [[Pushforward measure|pushing <math>\mu_X</math> forward]] via <math>x \mapsto (x, E(x))</math>, and <math>\mu_{G, Z}(dx, dz) = \delta_{G(z)}(dx)\cdot \mu_Z(dz) </math> is the probability distribution on <math>\Omega_X\times \Omega_Z</math> obtained by pushing <math>\mu_Z</math> forward via <math>z \mapsto (G(x), z)</math>.
+
+Applications of bidirectional models include [[semi-supervised learning]],<ref>{{cite arXiv |eprint=1606.00704 |class=stat.ML |first1=Vincent |last1=Dumoulin |first2=Ishmael |last2=Belghazi |title=Adversarially Learned Inference |first3=Ben |last3=Poole |first4=Olivier |last4=Mastropietro |first5=Alex |last5=Arjovsky |first6=Aaron |last6=Courville |year=2016}}</ref> [[explainable artificial intelligence|interpretable machine learning]],<ref>{{cite arXiv |eprint=1606.03657 |class=cs.LG |author1=Xi Chen |author2=Yan Duan |title=InfoGAN: Interpretable Representation Learning by Information Maximizing Generative Adversarial Nets |author3=Rein Houthooft |author4=John Schulman |author5=Ilya Sutskever |author-link5=Ilya Sutskever |author6=Pieter Abeel |author-link6=Pieter Abbeel |year=2016}}</ref> and [[neural machine translation]].<ref>{{Cite web |author1=Zhirui Zhang |author2=Shujie Liu |author3=Mu Li |author4=Ming Zhou |author5=Enhong Chen |date=October 2018 |title=Bidirectional Generative Adversarial Networks for Neural Machine Translation |url=https://www.aclweb.org/anthology/K18-1019.pdf |pages=190–199 |volume=Proceedings of the 22nd Conference on Computational Natural Language Learning}}</ref>
+
+==== CycleGAN ====
+CycleGAN is an architecture for performing translations between two domains, such as between photos of horses and photos of zebras, or photos of night cities and photos of day cities.
+
+The CycleGAN game is defined as follows:<ref>{{cite arXiv |last1=Zhu |first1=Jun-Yan |last2=Park |first2=Taesung |last3=Isola |first3=Phillip |last4=Efros |first4=Alexei A. |date=2017 |title=Unpaired Image-To-Image Translation Using Cycle-Consistent Adversarial Networks |pages=2223–2232|class=cs.CV |eprint=1703.10593 }}</ref><blockquote>There are two probability spaces <math>(\Omega_X, \mu_X), (\Omega_Y, \mu_Y)</math>, corresponding to the two domains needed for translations fore-and-back.
+
+There are 4 players in 2 teams: generators <math>G_X: \Omega_X \to \Omega_Y, G_Y: \Omega_Y \to \Omega_X</math>, and discriminators <math>D_X: \Omega_X\to [0, 1], D_Y:\Omega_Y\to [0, 1]</math>.
+
+The objective function is<math display="block">L(G_X, G_Y, D_X, D_Y) = L_{GAN}(G_X, D_X) +L_{GAN}(G_Y, D_Y) + \lambda L_{cycle}(G_X, G_Y)</math>
+
+where <math>\lambda</math> is a positive adjustable parameter, <math>L_{GAN}</math> is the GAN game objective, and <math>L_{cycle}</math> is the ''cycle consistency loss'':<math display="block">L_{cycle}(G_X, G_Y) = E_{x\sim \mu_X} \|G_X(G_Y(x)) - x\| + E_{y\sim \mu_Y} \|G_Y(G_X(y)) - y\|</math>The generators aim to minimize the objective, and the discriminators aim to maximize it:<math display="block">\min_{G_X, G_Y} \max_{D_X, D_Y} L(G_X, G_Y, D_X, D_Y)</math>  </blockquote>Unlike previous work like pix2pix,<ref>{{cite arXiv |last1=Isola |first1=Phillip |last2=Zhu |first2=Jun-Yan |last3=Zhou |first3=Tinghui |last4=Efros |first4=Alexei A. |date=2017 |title=Image-To-Image Translation With Conditional Adversarial Networks |pages=1125–1134|class=cs.CV |eprint=1611.07004 }}</ref> which requires paired training data, cycleGAN requires no paired data. For example, to train a pix2pix model to turn a summer scenery photo to winter scenery photo and back, the dataset must contain pairs of the same place in summer and winter, shot at the same angle; cycleGAN would only need a set of summer scenery photos, and an unrelated set of winter scenery photos.
+
+=== GANs with particularly large or small scales ===
+
+==== BigGAN ====
+The BigGAN is essentially a self-attention GAN trained on a large scale (up to 80 million parameters) to generate large images of ImageNet (up to 512 x 512 resolution), with numerous engineering tricks to make it converge.<ref name=":0">{{Cite conference |last1=Brock |first1=Andrew |last2=Donahue |first2=Jeff |last3=Simonyan |first3=Karen |date=2018-09-01 |title=Large Scale GAN Training for High Fidelity Natural Image Synthesis |arxiv=1809.11096 |url=https://ui.adsabs.harvard.edu/abs/2018arXiv180911096B |conference=International Conference on Learning Representations 2019}}</ref><ref>{{Cite web |last=Brownlee |first=Jason |date=2019-08-22 |title=A Gentle Introduction to BigGAN the Big Generative Adversarial Network |url=https://machinelearningmastery.com/a-gentle-introduction-to-the-biggan/ |access-date=2022-07-15 |website=Machine Learning Mastery |language=en-US}}</ref>
+
+==== Invertible data augmentation ====
+When there is insufficient training data, the reference distribution <math>\mu_{\text{ref}}</math> cannot be well-approximated by the [[Empirical measure|empirical distribution]] given by the training dataset. In such cases, [[data augmentation]] can be applied, to allow training GAN on smaller datasets. Naïve data augmentation, however, brings its problems.
+
+Consider the original GAN game, slightly reformulated as follows:<math display="block">\begin{cases}
+\min_D L_D(D, \mu_G) = -\mathbb{E}_{x\sim \mu_{\text{ref}}}[\ln D(x)] - \mathbb{E}_{x\sim \mu_G}[\ln (1-D(x))]\\
+\min_G L_G(D, \mu_G) = -\mathbb{E}_{x\sim \mu_G}[\ln (1-D(x))]
+\end{cases}</math>Now we use data augmentation by randomly sampling semantic-preserving transforms <math>T: \Omega \to \Omega</math> and applying them to the dataset, to obtain the reformulated GAN game:<math display="block">\begin{cases}
+\min_D L_D(D, \mu_G) = -\mathbb{E}_{x\sim \mu_{\text{ref}}, T\sim \mu_{trans}}[\ln D(T(x))] - \mathbb{E}_{x\sim \mu_G}[\ln (1-D(x))]\\
+\min_G L_G(D, \mu_G) = -\mathbb{E}_{x\sim \mu_G}[\ln (1-D(x))]
+\end{cases}</math>This is equivalent to a GAN game with a different distribution <math>\mu_{\text{ref}}'</math>, sampled by <math>T(x)</math>, with <math>x\sim \mu_{\text{ref}}, T\sim \mu_{trans}</math>. For example, if <math>\mu_{\text{ref}}</math> is the distribution of images in ImageNet, and <math>\mu_{trans}</math> samples identity-transform with probability 0.5, and horizontal-reflection with probability 0.5, then <math>\mu_{\text{ref}}'</math> is the distribution of images in ImageNet and horizontally-reflected ImageNet, combined.
+
+The result of such training would be a generator that mimics <math>\mu_{\text{ref}}'</math>. For example, it would generate images that look like they are randomly cropped, if the data augmentation uses random cropping.
+
+The solution is to apply data augmentation to both generated and real images:<math display="block">\begin{cases}
+\min_D L_D(D, \mu_G) = -\mathbb{E}_{x\sim \mu_{\text{ref}}, T\sim \mu_{trans}}[\ln D(T(x))] - \mathbb{E}_{x\sim \mu_G, T\sim \mu_{trans}}[\ln (1-D(T(x)))]\\
+\min_G L_G(D, \mu_G) = -\mathbb{E}_{x\sim \mu_G, T\sim \mu_{trans}}[\ln (1-D(T(x)))]
+\end{cases}</math>The authors demonstrated high-quality generation using just 100-picture-large datasets.<ref>{{Cite journal |last1=Shengyu |first1=Zhao |last2=Zhijian |first2=Liu |last3=Ji |first3=Lin |last4=Jun-Yan |first4=Zhu |last5=Song |first5=Han |date=2020 |title=Differentiable Augmentation for Data-Efficient GAN Training |url=https://proceedings.neurips.cc/paper/2020/hash/55479c55ebd1efd3ff125f1337100388-Abstract.html |journal=Advances in Neural Information Processing Systems |language=en |volume=33|arxiv=2006.10738 }}</ref>
+
+The StyleGAN-2-ADA paper points out a further point on data augmentation: it must be ''invertible''.<ref name=":4" /> Continue with the example of generating ImageNet pictures. If the data augmentation is "randomly rotate the picture by 0, 90, 180, 270 degrees with ''equal'' probability", then there is no way for the generator to know which is the true orientation: Consider two generators <math>G, G'</math>, such that for any latent <math>z</math>, the generated image <math>G(z)</math> is a 90-degree rotation of <math>G'(z)</math>. They would have exactly the same expected loss, and so neither is preferred over the other.
+
+The solution is to only use invertible data augmentation: instead of "randomly rotate the picture by 0, 90, 180, 270 degrees with ''equal'' probability", use "randomly rotate the picture by 90, 180, 270 degrees with 0.1 probability, and keep the picture as it is with 0.7 probability". This way, the generator is still rewarded  to keep images oriented the same way as un-augmented ImageNet pictures.
+
+Abstractly, the effect of randomly sampling transformations <math>T: \Omega \to \Omega</math> from the distribution <math>\mu_{trans}</math> is to define a Markov kernel <math>K_{trans}: \Omega \to \mathcal P (\Omega)</math>. Then, the data-augmented GAN game pushes the generator to find some <math>\hat \mu_G\in \mathcal P(\Omega)</math>, such that <math display="block">K_{trans}*\mu_{\text{ref}} = K_{trans}*\hat\mu_{G}</math>where <math>*</math> is the [[Convolution of probability distributions|Markov kernel convolution]].
+A data-augmentation method is defined to be ''invertible'' if its Markov kernel <math>K_{trans}</math> satisfies<math display="block">K_{trans}*\mu= K_{trans}*\mu' \implies \mu = \mu' \quad \forall \mu, \mu' \in \mathcal P(\Omega)</math>Immediately by definition, we see that composing multiple invertible data-augmentation methods results in yet another invertible method. Also by definition, if the data-augmentation method is invertible, then using it in a GAN game does not change the optimal strategy <math>\hat \mu_G</math> for the generator, which is still <math>\mu_{\text{ref}}</math>.
+
+There are two prototypical examples of invertible Markov kernels:
+
+'''Discrete case''': Invertible [[Stochastic matrix|stochastic matrices]], when <math>\Omega</math> is finite.
+
+For example, if <math>\Omega = \{\uparrow, \downarrow, \leftarrow, \rightarrow\}</math> is the set of four images of an arrow, pointing in 4 directions, and the data augmentation is "randomly rotate the picture by 90, 180, 270 degrees with probability <math>p</math>, and keep the picture as it is with probability <math>(1-3p)</math>", then the Markov kernel <math>K_{trans}</math> can be represented as a stochastic matrix:<math display="block">[K_{trans}] = \begin{bmatrix}
+(1-3p) & p & p & p \\
+p & (1-3p) & p & p \\
+p & p & (1-3p) & p \\
+p & p & p & (1-3p) 
+\end{bmatrix}</math> and <math>K_{trans}</math> is an invertible kernel iff <math>[K_{trans}]</math> is an invertible matrix, that is, <math>p \neq 1/4</math>.
+
+'''Continuous case''': The gaussian kernel, when <math>\Omega = \R^n</math> for some <math>n \geq 1</math>.
+
+For example, if <math>\Omega = \R^{256^2}</math> is the space of 256x256 images, and the data-augmentation method is "generate a gaussian noise <math>z\sim \mathcal N(0, I_{256^2})</math>, then add <math>\epsilon z</math> to the image", then <math>K_{trans}</math> is just convolution by the density function of <math>\mathcal N(0, \epsilon^2 I_{256^2})</math>. This is invertible, because convolution by a gaussian is just convolution by the [[heat kernel]], so given any <math>\mu\in\mathcal P(\R^n)</math>, the convolved distribution <math>K_{trans} * \mu</math> can be obtained by heating up <math>\R^n</math> precisely according to <math>\mu</math>, then wait for time <math>\epsilon^2/4</math>. With that, we can recover <math>\mu</math> by running the [[heat equation]] ''backwards in time'' for <math>\epsilon^2/4</math>.
+
+More examples of invertible data augmentations are found in the paper.<ref name=":4" />
+
+==== SinGAN ====
+SinGAN pushes data augmentation to the limit, by using only a single image as training data and performing data augmentation on it. The GAN architecture is adapted to this training method by using a multi-scale pipeline.
+
+The generator <math>G</math> is decomposed into a pyramid of generators <math>G = G_1 \circ G_2 \circ \cdots \circ G_N</math>, with the lowest one generating the image <math>G_N(z_N)</math> at the lowest resolution, then the generated image is scaled up to <math>r(G_N(z_N))</math>, and fed to the next level to generate an image <math>G_{N-1}(z_{N-1} + r(G_N(z_N)))</math> at a higher resolution, and so on. The discriminator is decomposed into a pyramid as well.<ref>{{Cite book |last1=Shaham |first1=Tamar Rott |last2=Dekel |first2=Tali |last3=Michaeli |first3=Tomer |title=2019 IEEE/CVF International Conference on Computer Vision (ICCV) |chapter=SinGAN: Learning a Generative Model from a Single Natural Image |date=October 2019 |chapter-url=http://dx.doi.org/10.1109/iccv.2019.00467 |pages=4569–4579 |publisher=IEEE |doi=10.1109/iccv.2019.00467|arxiv=1905.01164 |isbn=978-1-7281-4803-8 |s2cid=145052179 }}</ref>
+
+=== StyleGAN series ===
+{{Main|StyleGAN}}
+
+The StyleGAN family is a series of architectures published by [[Nvidia]]'s research division.
+
+==== Progressive GAN ====
+Progressive GAN<ref name=":1">{{cite arXiv |last1=Karras |first1=Tero |last2=Aila |first2=Timo |last3=Laine |first3=Samuli |last4=Lehtinen |first4=Jaakko |date=2017-10-01 |title=Progressive Growing of GANs for Improved Quality, Stability, and Variation |class=cs.NE |eprint=1710.10196 }}</ref> is a method for training GAN for large-scale image generation stably, by growing a GAN generator from small to large scale in a pyramidal fashion. Like SinGAN, it decomposes the generator as<math>G = G_1 \circ G_2 \circ \cdots \circ G_N</math>, and the discriminator as <math>D = D_1 \circ D_2 \circ \cdots \circ D_N</math>.
+
+During training, at first only <math>G_N, D_N</math> are used in a GAN game to generate 4x4 images. Then <math>G_{N-1}, D_{N-1}</math> are added to reach the second stage of GAN game, to generate 8x8 images, and so on, until we reach a GAN game to generate 1024x1024 images.
+
+To avoid shock between stages of the GAN game, each new layer is "blended in" (Figure 2 of the paper<ref name=":1" />). For example, this is how the second stage GAN game starts:
+
+* Just before, the GAN game consists of the pair <math>G_N, D_N</math> generating and discriminating 4x4 images.
+* Just after, the GAN game consists of the pair <math>((1-\alpha) + \alpha\cdot G_{N-1})\circ u \circ G_N, D_N \circ d \circ ((1-\alpha) + \alpha\cdot D_{N-1})</math> generating and discriminating 8x8 images. Here, the functions <math>u, d</math> are image up- and down-sampling functions, and <math>\alpha</math> is a blend-in factor (much like an [[Alpha compositing|alpha]] in image composing) that smoothly glides from 0 to 1.
+
+==== StyleGAN-1 ====
+[[File:StyleGAN-1_and_StyleGAN-2.png|thumb|361x361px|The main architecture of StyleGAN-1 and StyleGAN-2]]
+StyleGAN-1 is designed as a combination of Progressive GAN with [[neural style transfer]].<ref>{{Cite book |last1=Karras |first1=Tero |last2=Laine |first2=Samuli |last3=Aila |first3=Timo |title=2019 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=A Style-Based Generator Architecture for Generative Adversarial Networks |date=June 2019 |chapter-url=http://dx.doi.org/10.1109/cvpr.2019.00453 |pages=4396–4405 |publisher=IEEE |doi=10.1109/cvpr.2019.00453|arxiv=1812.04948 |isbn=978-1-7281-3293-8 |s2cid=54482423 }}</ref>
+
+The key architectural choice of StyleGAN-1 is a progressive growth mechanism, similar to Progressive GAN. Each generated image starts as a constant <math>4\times 4 \times 512</math> array, and repeatedly passed through style blocks. Each style block applies a "style latent vector" via affine transform ("adaptive instance normalization"), similar to how neural style transfer uses [[Gramian matrix]]. It then adds noise, and normalize (subtract the mean, then divide by the variance).
+
+At training time, usually only one style latent vector is used per image generated, but sometimes two ("mixing regularization") in order to encourage each style block to independently perform its stylization without expecting help from other style blocks (since they might receive an entirely different style latent vector).
+
+After training, multiple style latent vectors can be fed into each style block. Those fed to the lower layers control the large-scale styles, and those fed to the higher layers control the fine-detail styles.
+
+Style-mixing between two images <math>x, x'</math> can be performed as well. First, run a gradient descent to find <math>z, z'</math> such that <math>G(z)\approx x, G(z')\approx x'</math>. This is called "projecting an image back to style latent space". Then, <math>z</math> can be fed to the lower style blocks, and <math>z'</math> to the higher style blocks, to generate a composite image that has the large-scale style of <math>x</math>, and the fine-detail style of <math>x'</math>. Multiple images can also be composed this way.
+
+==== StyleGAN-2 ====
+StyleGAN-2 improves upon StyleGAN-1, by using the style latent vector to transform the convolution layer's weights instead, thus solving the "blob" problem.<ref>{{Cite book |last1=Karras |first1=Tero |last2=Laine |first2=Samuli |last3=Aittala |first3=Miika |last4=Hellsten |first4=Janne |last5=Lehtinen |first5=Jaakko |last6=Aila |first6=Timo |title=2020 IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR) |chapter=Analyzing and Improving the Image Quality of StyleGAN |date=June 2020 |chapter-url=http://dx.doi.org/10.1109/cvpr42600.2020.00813 |pages=8107–8116 |publisher=IEEE |doi=10.1109/cvpr42600.2020.00813|arxiv=1912.04958 |isbn=978-1-7281-7168-5 |s2cid=209202273 }}</ref>
+
+This was updated by the StyleGAN-2-ADA ("ADA" stands for "adaptive"),<ref name=":4">{{Cite journal |last1=Tero |first1=Karras |last2=Miika |first2=Aittala |last3=Janne |first3=Hellsten |last4=Samuli |first4=Laine |last5=Jaakko |first5=Lehtinen |last6=Timo |first6=Aila |date=2020 |title=Training Generative Adversarial Networks with Limited Data |url=https://proceedings.neurips.cc/paper/2020/hash/8d30aa96e72440759f74bd2306c1fa3d-Abstract.html |journal=Advances in Neural Information Processing Systems |language=en |volume=33}}</ref> which uses invertible data augmentation as described above. It also tunes the amount of data augmentation applied by starting at zero, and gradually increasing it until an "overfitting heuristic" reaches a target level, thus the name "adaptive".
+
+==== StyleGAN-3 ====
+StyleGAN-3<ref>{{Cite book |last=Timo |first=Karras, Tero Aittala, Miika Laine, Samuli Härkönen, Erik Hellsten, Janne Lehtinen, Jaakko Aila |url=http://worldcat.org/oclc/1269560084 |title=Alias-Free Generative Adversarial Networks |date=2021-06-23 |oclc=1269560084}}</ref> improves upon StyleGAN-2 by solving the "texture sticking" problem, which can be seen in the official videos.<ref>{{Cite web |last1=Karras |first1=Tero |last2=Aittala |first2=Miika |last3=Laine |first3=Samuli |last4=Härkönen |first4=Erik |last5=Hellsten |first5=Janne |last6=Lehtinen |first6=Jaakko |last7=Aila |first7=Timo |title=Alias-Free Generative Adversarial Networks (StyleGAN3) |url=https://nvlabs.github.io/stylegan3 |access-date=2022-07-16 |website=nvlabs.github.io}}</ref> They analyzed the problem by the [[Nyquist–Shannon sampling theorem]], and argued that the layers in the generator learned to exploit the high-frequency signal in the pixels they operate upon.
+
+To solve this, they proposed imposing strict [[Low-pass filter|lowpass filters]] between each generator's layers, so that the generator is forced to operate on the pixels in a way [[Faithful representation|faithful]] to the continuous signals they represent, rather than operate on them as merely discrete signals. They further imposed rotational and translational invariance by using more [[Filter (signal processing)|signal filters]]. The resulting StyleGAN-3 is able to solve the texture sticking problem, as well as generating images that rotate and translate smoothly.
+
+==Applications==
+GAN applications have increased rapidly.<ref>{{Citation|last=Caesar|first=Holger|title=A list of papers on Generative Adversarial (Neural) Networks: nightrome/really-awesome-gan|date=2019-03-01|url=https://github.com/nightrome/really-awesome-gan|access-date=2019-03-02}}</ref>
+
+===Fashion, art and advertising===
+
+GANs can be used to generate art; ''[[The Verge]]'' wrote in March 2019 that "The images created by GANs have become the defining look of contemporary AI art."<ref>{{cite news |last1=Vincent |first1=James |title=A never-ending stream of AI art goes up for auction |url=https://www.theverge.com/2019/3/5/18251267/ai-art-gans-mario-klingemann-auction-sothebys-technology |access-date=13 June 2020 |work=The Verge |date=5 March 2019 |language=en}}</ref> GANs can also be used to [[inpainting|inpaint]] photographs<ref>Yu, Jiahui, et al. "[http://openaccess.thecvf.com/content_cvpr_2018/papers/Yu_Generative_Image_Inpainting_CVPR_2018_paper.pdf Generative image inpainting with contextual attention]." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018.</ref> or create photos of imaginary fashion models, with no need to hire a model, photographer or makeup artist, or pay for a studio and transportation.<ref>{{cite web |last1=Wong |first1=Ceecee |title=The Rise of AI Supermodels |url=https://www.cdotrends.com/story/14300/rise-ai-supermodels |website=CDO Trends}}</ref> GANs have also been used for virtual shadow generation.<ref>{{cite book |year=2020 |pmc=7302543 |last1=Taif |first1=K. |last2=Ugail |first2=H. |last3=Mehmood |first3=I. |title=Computational Science – ICCS 2020 |chapter=Cast Shadow Generation Using Generative Adversarial Networks |series=Lecture Notes in Computer Science |volume=12141 |pages=481–495 |doi=10.1007/978-3-030-50426-7_36 |isbn=978-3-030-50425-0 }}</ref>
+
+=== Interactive Media ===
+In 2020, [[Artbreeder]] was used to create the main antagonist in the sequel to the psychological web horror series ''[[Ben Drowned]]''. The author would later go on to praise GAN applications for their ability to help generate assets for independent artists who are short on budget and manpower.<ref>{{Cite web |last=Allen |first=Eric Van |date=2020-07-08 |title=An Infamous Zelda Creepypasta Saga Is Using Artificial Intelligence to Craft Its Finale |url=https://www.usgamer.net/articles/ben-drowned-zelda-creepypasta-finale-artificial-intelligence |access-date=2022-11-07 |website=USgamer |language=en}}</ref><ref>{{Cite web |last=arcadeattack |date=2020-09-28 |title=Arcade Attack Podcast – September (4 of 4) 2020 - Alex Hall (Ben Drowned) - Interview |url=https://www.arcadeattack.co.uk/podcast-september-4-2020/ |access-date=2022-11-07 |website=Arcade Attack |language=en-GB}}</ref>
+
+===Science===
+GANs can [[image restoration|improve]] [[astrophotography|astronomical images]]<ref>{{cite journal|last1=Schawinski|first1=Kevin|last2=Zhang|first2=Ce|last3=Zhang|first3=Hantian|last4=Fowler|first4=Lucas|last5=Santhanam|first5=Gokula Krishnan|s2cid=7213940|date=2017-02-01|title=Generative Adversarial Networks recover features in astrophysical images of galaxies beyond the deconvolution limit|journal=Monthly Notices of the Royal Astronomical Society: Letters|volume=467|issue=1|pages=L110–L114|arxiv=1702.00403|doi=10.1093/mnrasl/slx008|bibcode=2017MNRAS.467L.110S}}</ref> and simulate [[gravitational lens]]ing for dark matter research.<ref>{{cite news |last1=Kincade |first1=Kathy |title=Researchers Train a Neural Network to Study Dark Matter |url=https://www.rdmag.com/news/2019/05/researchers-train-neural-network-study-dark-matter |publisher=R&D Magazine}}</ref><ref>{{cite news |last1=Kincade |first1=Kathy |title=CosmoGAN: Training a neural network to study dark matter |url=https://phys.org/news/2019-05-cosmogan-neural-network-dark.html |work=Phys.org |date=May 16, 2019}}</ref><ref>{{cite web |title=Training a neural network to study dark matter |url=https://www.sciencedaily.com/releases/2019/05/190516145206.htm |website=Science Daily |date=May 16, 2019}}</ref> They were used in 2019 to successfully model the distribution of [[dark matter]] in a particular direction in space and to predict the gravitational lensing that will occur.<ref>{{Cite web|url=https://www.theregister.co.uk/2019/05/20/neural_networks_dark_matter/|title=Cosmoboffins use neural networks to build dark matter maps the easy way|last=at 06:13|first=Katyanna Quach 20 May 2019|website=www.theregister.co.uk|language=en|access-date=2019-05-20}}</ref><ref>{{Cite journal|last1=Mustafa|first1=Mustafa|last2=Bard|first2=Deborah|last3=Bhimji|first3=Wahid|last4=Lukić|first4=Zarija|last5=Al-Rfou|first5=Rami|last6=Kratochvil|first6=Jan M.|s2cid=126034204|date=2019-05-06|title=CosmoGAN: creating high-fidelity weak lensing convergence maps using Generative Adversarial Networks|journal=Computational Astrophysics and Cosmology|volume=6|issue=1|pages=1|doi=10.1186/s40668-019-0029-9|issn=2197-7909|bibcode=2019ComAC...6....1M|arxiv=1706.02390 |doi-access=free }}</ref>
+
+GANs have been proposed as a fast and accurate way of modeling high energy jet formation<ref>{{cite journal|first1=Michela|last1=Paganini|first2=Luke|last2=de Oliveira|first3=Benjamin|last3=Nachman|s2cid=88514467|title=Learning Particle Physics by Example: Location-Aware Generative Adversarial Networks for Physics Synthesis|journal=Computing and Software for Big Science|doi= 	  10.1007/s41781-017-0004-6|year=2017|volume=1|page=4|arxiv=1701.05927|bibcode=2017arXiv170105927D}}</ref> and modeling [[Particle shower|showers]] through [[Calorimeter (particle physics)|calorimeters]] of [[particle physics|high-energy physics]] experiments.<ref>{{cite journal|first1=Michela|last1=Paganini|first2=Luke|last2=de Oliveira|first3=Benjamin|last3=Nachman|s2cid=3330974|title=Accelerating Science with Generative Adversarial Networks: An Application to 3D Particle Showers in Multi-Layer Calorimeters|journal= Physical Review Letters|doi= 	10.1103/PhysRevLett.120.042003|pmid=29437460|year=2018|volume=120|issue=4|page=042003|arxiv=1705.02355|bibcode=2018PhRvL.120d2003P}}</ref><ref>{{cite journal|first1=Michela|last1=Paganini|first2=Luke|last2=de Oliveira|first3=Benjamin|last3=Nachman|s2cid=41265836|title=CaloGAN: Simulating 3D High Energy Particle Showers in Multi-Layer Electromagnetic Calorimeters with Generative Adversarial Networks|journal=Phys. Rev. D|doi=10.1103/PhysRevD.97.014021|year=2018|volume=97|issue=1|page=014021|arxiv=1712.10321|bibcode=2018PhRvD..97a4021P}}</ref><ref>{{cite journal|first1=Martin|last1=Erdmann|first2=Jonas|last2=Glombitza|first3=Thorben|last3=Quast|s2cid=54216502|title=Precise Simulation of Electromagnetic Calorimeter Showers Using a Wasserstein Generative Adversarial Network|journal=Computing and Software for Big Science|doi=10.1007/s41781-018-0019-7|year=2019|volume=3|page=4|arxiv=1807.01954}}</ref><ref>{{cite journal|title=Fast and Accurate Simulation of Particle Detectors Using Generative Adversarial Networks|first1=Pasquale|last1=Musella|first2=Francesco|last2=Pandolfi|s2cid=119474793|year=2018|journal=Computing and Software for Big Science|doi=10.1007/s41781-018-0015-y|volume=2|page=8|arxiv=1805.00850|bibcode=2018arXiv180500850M}}</ref> GANs have also been trained to accurately approximate bottlenecks in computationally expensive simulations of particle physics experiments. Applications in the context of present and proposed [[CERN]] experiments have demonstrated the potential of these methods for accelerating simulation and/or improving simulation fidelity.<ref>{{cite web|title=Deep generative models for fast shower simulation in ATLAS|year=2018|url=https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PUBNOTES/ATL-SOFT-PUB-2018-001/}}</ref><ref>{{cite journal|title=Fast simulation of muons produced at the SHiP experiment using Generative Adversarial Networks|journal=Journal of Instrumentation|volume=14|issue=11|pages=P11028|first=Collaboration|last=SHiP|s2cid=202542604|year=2019|arxiv=1909.04451|doi=10.1088/1748-0221/14/11/P11028|bibcode=2019JInst..14P1028A}}</ref>
+
+===Video games===
+In 2018, GANs reached the [[mod (video gaming)|video game modding]] community, as a method of [[image scaling|up-scaling]] low-resolution 2D textures in old video games by recreating them in [[4K resolution|4k]] or higher resolutions via image training, and then down-sampling them to fit the game's native resolution (with results resembling the [[supersampling]] method of [[spatial anti-aliasing|anti-aliasing]]).<ref>{{cite news|last1=Tang|first1=Xiaoou|last2=Qiao|first2=Yu|last3=Loy|first3=Chen Change|last4=Dong|first4=Chao|last5=Liu|first5=Yihao|last6=Gu|first6=Jinjin|last7=Wu|first7=Shixiang|last8=Yu|first8=Ke|last9=Wang|first9=Xintao|date=2018-09-01|title=ESRGAN: Enhanced Super-Resolution Generative Adversarial Networks|language=en|arxiv=1809.00219|bibcode=2018arXiv180900219W}}</ref> With proper training, GANs provide a clearer and sharper 2D texture image magnitudes higher in quality than the original, while fully retaining the original's level of details, colors, etc. Known examples of extensive GAN usage include ''[[Final Fantasy VIII]]'', ''[[Final Fantasy IX]]'', ''[[Resident Evil (2002 video game)|Resident Evil REmake]]'' HD Remaster, and ''[[Max Payne]]''. {{Citation needed|date=January 2020}}
+
+=== AI-generated video ===
+[[Artificial intelligence art]] for video uses AI to generate video from text as [[Text-to-Video model]]<ref>{{Cite web |last=Narain |first=Rohit |date=2021-12-29 |title=Smart Video Generation from Text Using Deep Neural Networks |url=https://www.datatobiz.com/blog/smart-video-generation-from-text/ |access-date=2022-10-13 |language=en-US}}</ref>
+
+===Audio synthesis===
+{{excerpt|Generative audio}}
+
+===Concerns about malicious applications===
+{{Main|Deepfake}}
+[[File:Woman 1.jpg|thumb|An image generated by a [[StyleGAN]] that looks deceptively like a photograph of a real person. This image was generated by a StyleGAN based on an analysis of portraits.]]
+[[image:GAN deepfake white girl.jpg|thumb|Another example of a GAN generated portrait]]
+Concerns have been raised about the potential use of GAN-based [[human image synthesis]] for sinister purposes, e.g., to produce fake, possibly incriminating, photographs and videos.<ref name=TPDNEwuaitcryhf|>{{cite web|url=https://tech.slashdot.org/story/19/02/14/199200/this-person-does-not-exist-website-uses-ai-to-create-realistic-yet-horrifying-faces|title='This Person Does Not Exist' Website Uses AI To Create Realistic Yet Horrifying Faces|author=msmash|date=2019-02-14|website=Slashdot|access-date=2019-02-16}}</ref>
+GANs can be used to generate unique, realistic profile photos of people who do not exist, in order to automate creation of fake social media profiles.<ref>{{cite news |last1=Doyle |first1=Michael |title=John Beasley lives on Saddlehorse Drive in Evansville. Or does he? |url=https://www.courierpress.com/story/news/crime/2019/05/16/john-beasley-lives-saddlehorse-drive-evansville-does-he/3700111002/ |publisher=Courier and Press |date=May 16, 2019}}</ref>
+
+In 2019 the state of California considered<ref>{{cite news |last1=Targett |first1=Ed |title=California moves closer to making deepfake pornography illegal |publisher=Computer Business Review |date=May 16, 2019}}</ref> and passed on October 3, 2019, the [https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB602 bill AB-602], which bans the use of human image synthesis technologies to make fake pornography without the consent of the people depicted, and [https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=201920200AB730 bill AB-730], which prohibits distribution of manipulated videos of a political candidate within 60 days of an election. Both bills were authored by Assembly member [[Marc Berman]] and signed by Governor [[Gavin Newsom]]. The laws went into effect in 2020.<ref name="CNET2019">
+
+{{cite web
+ | last = Mihalcik
+ | first = Carrie
+ | title = California laws seek to crack down on deepfakes in politics and porn
+ | website = [[cnet.com]]
+ | publisher = [[CNET]]
+ | date = 2019-10-04
+ | url = https://www.cnet.com/news/california-laws-seek-to-crack-down-on-deepfakes-in-politics-and-porn/
+ | access-date = 2019-10-13 }}
+
+</ref>
+
+DARPA's Media Forensics program studies ways to counteract fake media, including fake media produced using GANs.<ref>{{cite magazine |last1=Knight |first1=Will |title=The Defense Department has produced the first tools for catching deepfakes |url=https://www.technologyreview.com/s/611726/the-defense-department-has-produced-the-first-tools-for-catching-deepfakes/ |magazine=MIT Technology Review |date=Aug 7, 2018}}</ref>
+
+===Transfer learning===
+State-of-art [[transfer learning]] research use GANs to enforce the alignment of the latent feature space, such as in deep reinforcement learning.<ref>{{cite arXiv|last1=Li|first1=Bonnie|last2=François-Lavet|first2=Vincent|last3=Doan|first3=Thang|last4=Pineau|first4=Joelle|date=2021-02-14|title=Domain Adversarial Reinforcement Learning|class=cs.LG|eprint=2102.07097}}</ref> This works by feeding the embeddings of the source and target task to the discriminator which tries to guess the context. The resulting loss is then (inversely) backpropagated through the encoder.
+
+===Miscellaneous applications===
+GAN can be used to detect glaucomatous images helping the early diagnosis which is essential to avoid partial or total loss
+of vision.<ref>{{cite journal |last1=Bisneto |first1=Tomaz Ribeiro Viana |last2=de Carvalho Filho |first2=Antonio Oseas |last3=Magalhães |first3=Deborah Maria Vieira |title=Generative adversarial network and texture features applied to automatic glaucoma detection |journal=Applied Soft Computing |volume=90 |date=February 2020 |pages=106165 |doi=10.1016/j.asoc.2020.106165|s2cid=214571484 }}</ref>
+
+GANs that produce [[photorealistic rendering|photorealistic]] images can be used to visualize [[interior design]], [[industrial design]], shoes,<ref>{{Cite web|url=https://towardsdatascience.com/generating-shoe-designs-with-deep-learning-5dde432a23b8|title=Generating Shoe Designs with Machine Learning|last=Wei|first=Jerry|date=2019-07-03|website=Medium|language=en|access-date=2019-11-06}}</ref> bags, and [[clothing]] items or items for [[PC game|computer games]]' scenes.{{Citation needed|reason=No source provided. How does a GAN do this?|date=February 2018}} Such networks were reported to be used by [[Facebook]].<ref>{{cite web|last1=Greenemeier|first1=Larry|title=When Will Computers Have Common Sense? Ask Facebook|url=https://www.scientificamerican.com/article/when-will-computers-have-common-sense-ask-facebook/|website=Scientific American|access-date=July 31, 2016|date=June 20, 2016}}</ref>
+
+GANs have been used to create [[forensic facial reconstruction]]s of deceased historical figures.<ref>{{Citation |title=Reconstruction of the Roman Emperors: Interview with Daniel Voshart |url=https://www.youtube.com/watch?v=5mr6-JbuLrQ |language=en |access-date=2022-06-03}}</ref>
+
+GANs can [[3D reconstruction from multiple images|reconstruct 3D models of objects from images]],<ref>{{cite web|url=http://3dgan.csail.mit.edu/|title=3D Generative Adversarial Network|website=3dgan.csail.mit.edu}}</ref> generate novel objects as 3D point clouds,<ref>{{cite arXiv|eprint=1707.02392|last1=Achlioptas|first1=Panos|last2=Diamanti|first2=Olga|last3=Mitliagkas|first3=Ioannis|last4=Guibas|first4=Leonidas|title=Learning Representations and Generative Models for 3D Point Clouds|year=2018|class=cs.CV}}</ref> and model patterns of motion in video.<ref>{{cite web|url=https://www.cs.columbia.edu/~vondrick/tinyvideo/|title=Generating Videos with Scene Dynamics |website=carlvondrick.com|bibcode=2016arXiv160902612V |last1=Vondrick |first1=Carl |last2=Pirsiavash |first2=Hamed |last3=Torralba |first3=Antonio |year=2016 |arxiv=1609.02612}}</ref>
+
+GANs can be used to age face photographs to show how an individual's appearance might change with age.<ref>{{cite arXiv|last1=Antipov|first1=Grigory|last2=Baccouche|first2=Moez|last3=Dugelay|first3=Jean-Luc|title=Face Aging With Conditional Generative Adversarial Networks|eprint=1702.01983|class=cs.CV|year=2017}}</ref>
+
+GANs can also be used to inpaint missing features in maps, transfer map styles in cartography<ref>{{cite journal|last1=Kang|first1=Yuhao|last2=Gao|first2=Song|last3=Roth|first3=Rob|s2cid=146808465|title=Transferring Multiscale Map Styles Using Generative Adversarial Networks|url=https://geods.geography.wisc.edu/archives/1192|journal=International Journal of Cartography|volume=5|issue=2–3|pages=115–141|year=2019|doi=10.1080/23729333.2019.1615729|bibcode=2019arXiv190502200K|arxiv=1905.02200}}</ref> or augment street view imagery.<ref>{{cite journal|last1=Wijnands|first1=Jasper|last2=Nice|first2=Kerry|last3=Thompson|first3=Jason|last4=Zhao|first4=Haifeng|last5=Stevenson|first5=Mark|s2cid=155100183|title=Streetscape augmentation using generative adversarial networks: Insights related to health and wellbeing|journal=Sustainable Cities and Society|volume=49|pages=101602|year=2019|doi=10.1016/j.scs.2019.101602|arxiv=1905.06464|bibcode=2019arXiv190506464W}}</ref>
+
+Relevance feedback on GANs can be used to generate images and replace image search systems.<ref>{{cite book|last1=Ukkonen|first1=Antti|last2=Joona|first2=Pyry|last3=Ruotsalo|first3=Tuukka|title=Proceedings of the 43rd International ACM SIGIR Conference on Research and Development in Information Retrieval |chapter=Generating Images Instead of Retrieving Them |chapter-url=https://doi.org/10.1145/3397271.3401129|series=<!---->|pages=1329–1338|year=2020|doi=10.1145/3397271.3401129|s2cid=220730163|hdl=10138/328471|isbn=9781450380164|hdl-access=free}}</ref>
+
+A variation of the GANs is used in training a network to generate optimal control inputs to nonlinear [[dynamical system]]s. Where the discriminatory network is known as a critic that checks the optimality of the solution and the generative network is known as an Adaptive network that generates the optimal control. The critic and adaptive network train each other to approximate a nonlinear optimal control.<ref>{{Cite journal|title=A single network adaptive critic (SNAC) architecture for optimal control synthesis for a class of nonlinear systems|journal = Neural Networks|volume = 19|issue = 10|pages = 1648–1660|last1=Padhi|first1=Radhakant|last2=Unnikrishnan|first2=Nishant|doi=10.1016/j.neunet.2006.08.010|pmid = 17045458|year = 2006}}</ref>
+
+GANs have been used to visualize the effect that climate change will have on specific houses.<ref>{{cite magazine |title=AI can show us the ravages of climate change |url=https://www.technologyreview.com/f/613547/ai-can-show-us-the-ravages-of-climate-change/ |magazine=MIT Technology Review |date=May 16, 2019}}</ref>
+
+A GAN model called Speech2Face can reconstruct an image of a person's face after listening to their voice.<ref>{{cite news |last1=Christian |first1=Jon |title=ASTOUNDING AI GUESSES WHAT YOU LOOK LIKE BASED ON YOUR VOICE |url=https://futurism.com/the-byte/ai-guesses-appearance-voice |publisher=Futurism |date=May 28, 2019}}</ref>
+
+In 2016 GANs were used to generate new molecules for a variety of protein targets implicated in cancer, inflammation, and fibrosis. In 2019 GAN-generated molecules were validated experimentally all the way into mice.<ref>{{cite journal |last1=Zhavoronkov |first1=Alex|s2cid=201716327|date=2019|title=Deep learning enables rapid identification of potent DDR1 kinase inhibitors |journal=Nature Biotechnology |volume=37|issue=9|pages=1038–1040|doi=10.1038/s41587-019-0224-x |pmid=31477924}}</ref><ref>{{cite magazine |first=Gregory |last=Barber |title=A Molecule Designed By AI Exhibits "Druglike" Qualities |url=https://www.wired.com/story/molecule-designed-ai-exhibits-druglike-qualities/ |magazine=Wired}}</ref>
+
+Whereas the majority of GAN applications are in image processing, the work has also been done with time-series data. For example, recurrent GANs (R-GANs) have been used to generate energy data for machine learning.<ref>{{Cite journal|author1=Mohammad Navid Fekri |author2=Ananda Mohon Ghosh |author3= Katarina Grolinger |date=2020|title= Generating Energy Data for Machine Learning with Recurrent Generative Adversarial Networks|journal=Energies|volume=13|issue=1|page=130 |doi=10.3390/en13010130 |doi-access=free }}</ref>
+
+==History==
+
+In 1991, [[Jürgen Schmidhuber|Juergen Schmidhuber]] published generative and adversarial [[neural network]]s that contest with each other in the form of a [[zero-sum game]], where one network's gain is the other network's loss.<ref name="curiosity1991">{{cite conference| title = A possibility for implementing curiosity and boredom in model-building neural controllers | last1 = Schmidhuber | first1 = Jürgen | author-link = Juergen Schmidhuber | date = 1991 | publisher = MIT Press/Bradford Books| book-title = Proc. SAB'1991| pages = 222–227}}</ref><ref name="fun2010">{{cite journal|last1=Schmidhuber|first1=Jürgen|author-link=Jürgen Schmidhuber|year=2010|title=Formal Theory of Creativity, Fun, and Intrinsic Motivation (1990-2010)|journal= IEEE Transactions on Autonomous Mental Development|volume=2|issue=3|pages=230–247|doi=10.1109/TAMD.2010.2056368 |s2cid=234198 }}</ref><ref name="gancurpm2020">{{Cite journal|last=Schmidhuber|first=Jürgen| author-link = Juergen Schmidhuber |date=2020|title=Generative Adversarial Networks are Special Cases of Artificial Curiosity (1990) and also Closely Related to Predictability Minimization (1991)|journal=Neural Networks |language=en|volume=127|pages=58–66|doi=10.1016/j.neunet.2020.04.008 |pmid=32334341 |arxiv=1906.04493 |s2cid=216056336 }}</ref> The first network is a [[generative model]] with [[stochasticity]] that models a [[probability distribution]] over output patterns. The second network learns by [[gradient descent]] to predict the reactions of the environment to these patterns. This was called "artificial curiosity." For modern GANs (2014),<ref name="GANnips"/> the environmental reaction is 1 or 0 depending on whether the first network's output is in a given set.<ref name="gancurpm2020"/>
+
+Other people had similar ideas but did not develop them similarly. An idea involving adversarial networks was published in a 2010 blog post by Olli Niemitalo.<ref name="olli2010">{{cite web
+|title= A method for training artificial neural networks to generate missing data within a variable context
+|last1= Niemitalo
+|first1= Olli
+|date= February 24, 2010
+|access-date= February 22, 2019
+|newspaper= Internet Archive (Wayback Machine)
+|url= http://yehar.com:80/blog/?p=167
+|archive-url= https://web.archive.org/web/20120312111546/http://yehar.com/blog/?p=167
+|archive-date= March 12, 2012
+|url-status= live
+}}</ref> This idea was never implemented and did not involve [[stochasticity]] in the generator and thus was not a generative model. It is now known as a conditional GAN or cGAN.<ref name=reddit3>{{cite web | year = 2019
+|title = GANs were invented in 2010?
+|url = https://www.reddit.com/r/MachineLearning/comments/bnqm0p/d_gans_were_invented_in_2010/
+|website = reddit r/MachineLearning | language=en-US|access-date=2019-05-28}}</ref> An idea similar to GANs was used to model animal behavior by Li, Gauci and Gross in 2013.<ref name="Li-etal-GECCO2013">{{cite conference
+|chapter= A Coevolutionary Approach to Learn Animal Behavior Through Controlled Interaction
+|last1= Li
+|first1= Wei
+|last2= Gauci
+|first2= Melvin
+|last3= Gross
+|first3= Roderich
+|title= Proceeding of the fifteenth annual conference on Genetic and evolutionary computation conference - GECCO '13
+|date= July 6, 2013
+|publisher= ACM
+|book-title= Proceedings of the 15th Annual Conference on Genetic and Evolutionary Computation (GECCO 2013)
+|pages= 223–230
+|location= Amsterdam, the Netherlands
+|doi= 10.1145/2463372.2465801|isbn= 9781450319638
+}}</ref>
+
+Another inspiration for GANs was noise-contrastive estimation,<ref>{{cite journal |last1=Gutmann |first1=Michael |last2=Hyvärinen |first2=Aapo |title=Noise-Contrastive Estimation |journal=International Conference on AI and Statistics |url=http://proceedings.mlr.press/v9/gutmann10a/gutmann10a.pdf}}</ref> which uses the same loss function as GANs and which Goodfellow studied during his PhD in 2010–2014.
+
+[[Adversarial machine learning]] has other uses besides generative modeling and can be applied to models other than neural networks. In control theory, adversarial learning based on neural networks was used in 2006 to train robust controllers in a game theoretic sense, by alternating the iterations between a minimizer policy, the controller, and a maximizer policy, the disturbance.<ref>{{cite journal|title=Neurodynamic Programming and Zero-Sum Games for Constrained Control Systems|last1=Abu-Khalaf|first1=Murad|last2=Lewis|first2=Frank L.|last3=Huang|first3=Jie|s2cid=15680448|journal=IEEE Transactions on Neural Networks|volume=19|issue=7|pages=1243–1252|date=July 1, 2008|doi=10.1109/TNN.2008.2000204}}</ref><ref>{{cite journal|title=Policy Iterations on the Hamilton–Jacobi–Isaacs Equation for ''H''<sub>∞</sub> State Feedback Control With Input Saturation|journal=IEEE Transactions on Automatic Control |last1=Abu-Khalaf|first1=Murad|last2=Lewis|first2=Frank L.|last3=Huang|first3=Jie|s2cid=1338976|date=December 1, 2006|doi=10.1109/TAC.2006.884959}}</ref>
+
+In 2017, a GAN was used for image enhancement focusing on realistic textures rather than pixel-accuracy, producing a higher image quality at high magnification.<ref>{{cite arXiv|last1=Sajjadi|first1=Mehdi S. M. |last2=Schölkopf|first2=Bernhard|last3=Hirsch|first3=Michael|date=2016-12-23|title=EnhanceNet: Single Image Super-Resolution Through Automated Texture Synthesis|eprint=1612.07919|class=cs.CV}}</ref> In 2017, the first faces were generated.<ref>{{cite web|url=https://medium.com/@alagraphy/this-person-does-not-exist-neither-will-anything-if-artificial-intelligence-keeps-learning-1a9fcba728f|title=This Person Does Not Exist: Neither Will Anything Eventually with AI|date=March 20, 2019}}</ref> These were exhibited in February 2018 at the Grand Palais.<ref>{{cite web|url=https://www.issuewire.com/artificial-intelligence-enters-the-history-of-art-1620667772563815|title=ARTificial Intelligence enters the History of Art|date=December 28, 2018}}</ref><ref>{{cite web|url=https://link.medium.com/MYqBrGHIKV|title=Le scandale de l'intelligence ARTificielle|author=Tom Février|date=2019-02-17}}</ref> Faces generated by [[StyleGAN]]<ref>{{cite web|url=https://github.com/NVlabs/stylegan|title=StyleGAN: Official TensorFlow Implementation|date=March 2, 2019|via=GitHub}}</ref> in 2019 drew comparisons with [[Deepfake]]s.<ref name=TPDNEitboowo2019>{{cite web|url=https://www.inverse.com/article/53280-this-person-does-not-exist-gans-website=website=Inverse|title=This Person Does Not Exist Is the Best One-Off Website of 2019|last=Paez|first=Danny|date=2019-02-13|access-date=2019-02-16}}</ref><ref name=TPDNE>{{cite web|url=https://boingboing.net/2019/02/15/this-person-does-not-exist.html|title=This Person Does Not Exist|last=Beschizza|first=Rob|date=2019-02-15|website=Boing-Boing|access-date=2019-02-16}}</ref><ref name="Style-based GANs – Generating and Tuning Realistic Artificial Faces">{{cite web|url=https://www.lyrn.ai/2018/12/26/a-style-based-generator-architecture-for-generative-adversarial-networks/|title=Style-based GANs – Generating and Tuning Realistic Artificial Faces|last=Horev|first=Rani|date=2018-12-26|website=Lyrn.AI|access-date=2019-02-16|archive-date=November 5, 2020|archive-url=https://web.archive.org/web/20201105101517/https://www.lyrn.ai/2018/12/26/a-style-based-generator-architecture-for-generative-adversarial-networks/|url-status=dead}}</ref>
+
+Beginning in 2017, GAN technology began to make its presence felt in the fine arts arena with the appearance of a newly developed implementation which was said to have crossed the threshold of being able to generate unique and appealing abstract paintings, and thus dubbed a "CAN", for "creative adversarial network".<ref>{{cite arXiv |eprint=1706.07068|title=CAN: Creative Adversarial Networks, Generating "Art" by Learning About Styles and Deviating from Style Norms|first1=Ahmed |last1=Elgammal |first2=Bingchen |last2=Liu |first3=Mohamed |last3=Elhoseiny |first4=Marian |last4=Mazzone |class=cs.AI |year=2017}}</ref> A GAN system was used to create the 2018 painting ''[[Edmond de Belamy]],'' which sold for US$432,500.<ref>{{cite news|url=https://www.nytimes.com/2018/10/25/arts/design/ai-art-sold-christies.html|title=AI Art at Christie's Sells for $432,500|last1=Cohn|first1=Gabe|date=2018-10-25|newspaper=The New York Times}}</ref> An early 2019 article by members of the original CAN team discussed further progress with that system, and gave consideration as well to the overall prospects for an AI-enabled art.<ref>{{cite journal |author1=Mazzone, Marian |author2=Ahmed Elgammal|date=21 February 2019|title=Art, Creativity, and the Potential of Artificial Intelligence|journal=Arts|volume=8|pages=26|doi=10.3390/arts8010026|doi-access=free}}</ref>
+
+In May 2019, researchers at Samsung demonstrated a GAN-based system that produces videos of a person speaking, given only a single photo of that person.<ref>{{cite magazine |last1=Kulp |first1=Patrick |title=Samsung's AI Lab Can Create Fake Video Footage From a Single Headshot |url=https://www.adweek.com/digital/samsungs-ai-lab-can-create-fake-video-footage-from-a-single-headshot/ |magazine=AdWeek |date=May 23, 2019}}</ref>
+
+In August 2019, a large dataset consisting of 12,197 MIDI songs each with paired lyrics and melody alignment was created for neural melody generation from lyrics using conditional GAN-LSTM (refer to sources at GitHub [https://github.com/yy1lab/Lyrics-Conditioned-Neural-Melody-Generation AI Melody Generation from Lyrics]).<ref>{{cite journal |arxiv=1908.05551 |title=Conditional LSTM-GAN for Melody Generation from Lyrics
+|first1=Yi|last1=Yu |first2=Simon |last2=Canales |journal=ACM Transactions on Multimedia Computing, Communications, and Applications
+|year=2021
+|volume=17
+|pages=1–20
+|doi=10.1145/3424116
+|issn=1551-6857
+|s2cid=199668828
+}}</ref>
+
+In May 2020, [[Nvidia]] researchers taught an AI system (termed "GameGAN") to recreate the game of ''[[Pac-Man]]'' simply by watching it being played.<ref>{{cite news|url=https://www.theverge.com/2020/5/22/21266251/nvidia-ai-gamegan-recreate-pac-man-virutal-environment |title=Nvidia's AI recreates Pac-Man from scratch just by watching it being played|date=2020-05-22|newspaper=The Verge}}</ref><ref>{{cite arXiv |eprint=2005.12126|title=Learning to Simulate Dynamic Environments with GameGAN|year=2020|author1=Seung Wook Kim|last2=Zhou|first2=Yuhao|last3=Philion|first3=Jonah|last4=Torralba|first4=Antonio|last5=Fidler|first5=Sanja|class=cs.CV}}</ref>
+
+==References==
+{{reflist}}
+
+==External links==
+{{Portal|Art}}
+* {{cite news|url=https://www.technologyreview.com/s/603216/5-big-predictions-for-artificial-intelligence-in-2017/|title=5 Big Predictions for Artificial Intelligence in 2017|last=Knight|first=Will|newspaper=MIT Technology Review|access-date=2017-01-05}}
+* {{cite arXiv|eprint=1812.04948|last1=Karras|first1=Tero|last2=Laine|first2=Samuli|last3=Aila|first3=Timo|title=A Style-Based Generator Architecture for Generative Adversarial Networks|year=2018|class=cs.NE}}
+* [https://www.thispersondoesnotexist.com/ This Person Does Not Exist]{{snd}} photorealistic images of people who do not exist, generated by [[StyleGAN]]
+* [https://thiscatdoesnotexist.com/ This Cat Does Not Exist] {{Webarchive|url=https://web.archive.org/web/20190305040119/https://thiscatdoesnotexist.com/ |date=March 5, 2019 }}{{snd}} photorealistic images of cats who do not exist, generated by [[StyleGAN]]
+* {{cite arXiv|eprint=1906.01529|last1=Wang|first1=Zhengwei|last2=She|first2=Qi|last3=Ward|first3=Tomas E.|title=Generative Adversarial Networks in Computer Vision: A Survey and Taxonomy|year=2019|class=cs.LG}}
+
+{{Differentiable computing}}
+
+[[Category:Neural network architectures]]
+[[Category:Cognitive science]]
+[[Category:Unsupervised learning]]
+[[Category:Generative artificial intelligence]]

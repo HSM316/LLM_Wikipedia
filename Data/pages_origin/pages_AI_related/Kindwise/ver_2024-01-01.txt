@@ -1,0 +1,49 @@
+{{Orphan|date=July 2022}}
+
+{{Infobox company
+| name = FlowerChecker
+| logo = 
+| type = 
+| industry = [[Machine learning]]
+| fate = 
+| predecessor = <!-- or: | predecessors = -->
+| successor = <!-- or: | successors = -->
+| founded = <!-- if known: {{2014}} in [[Brno]], country --> 2014 
+| founder = <!-- or: | founders = --> 
+| defunct = <!-- {{End date|YYYY|MM|DD}} -->
+| hq_location_city = [[Brno]]
+| hq_location_country = [[Czech Republic]]
+| area_served = <!-- or: | areas_served = -->
+| key_people = Ondřej Veselý, Ondřej Vild, Jiří Řihák
+| products = Plant identification
+| owner = <!-- or: | owners = -->
+| num_employees = 
+| num_employees_year = <!-- Year of num_employees data (if known) -->
+| parent = 
+| website = {{URL|http://www.flowerchecker.com/en}}
+}}
+
+'''FlowerChecker''' is a European company based in [[Brno|Brno, Czech Republic]] focused on [[plant identification]].<ref name=":6">{{cite web |title=FlowerChecker aneb řekněte mi, co je to za kytku... Globální úspěch z Česka, který tvůrci nechtěli|language=cs|trans-title= FlowerChecker: tell me what this plant is… Unwanted, yet global success coming from the Czech Republic |url=https://tyinternety.cz/startupy/flowerchecker-globalni-uspech-ceska-ktery-se-nestane/|website=tyinternety.cz |date=28 December 2014 |accessdate=14 November 2020}}</ref><ref name=":0">{{cite web |title=Co je tohle za kytku? S určováním rostlin pomůže nová aplikace. Stačí poslat fotku |url=https://ekolist.cz/cz/zelena-domacnost/rady-a-navody/co-je-tohle-za-kytku-s-urcovanim-rostlin-pomuze-nova-aplikace-staci-poslat-fotku|language=cs|trans-title= What is the name of this plant? A new application will help with plant identification. Just send a photo |website=Ekolist.cz | date=30 April 2014 |accessdate=14 November 2020}}</ref> In addition to plants, FlowerChecker also focuses on the identification of mosses, lichens, and fungi.<ref name=":3">{{Cite web|title=Tech Know|url=https://www.smh.com.au/technology/m18techknow-20170921-gym90h.html|last=Maunder|first=Patricia|date=2017-11-14|website=The Sydney Morning Herald|access-date=2020-05-05}}</ref><ref name=":4">{{cite web |last1=Čížek |first1=Jakub |title=FlowerChecker: Botanici za dvacku prozradí, co vám roste na zahradě |language=cs|trans-title=FlowerChecker: Botanists will tell you what is growing in your garden for twenty crowns|url=https://www.zive.cz/bleskovky/flowerchecker-botanici-za-dvacku-prozradi-co-vam-roste-na-zahrade/sc-4-a-174885/default.aspx |accessdate=14 November 2020 |website=Živě.cz}}</ref><ref name=":9">{{cite web |title=Původně byznys nechtěli, ale nějak se to zvrhlo. Česká aplikace na rozpoznání kytek vydělala miliony
+|url=https://cc.cz/puvodne-byznys-nechteli-ale-nejak-se-to-zvrhlo-ceska-aplikace-na-rozpoznani-kytek-vydelala-miliony/|language=cs|trans-title= Initially, they didn’t want a business, but somehow it went wrong. Czech plant identification application has made millions. |website=cc.cz |date=4 May 2022 |accessdate=27 June 2022}}</ref> It was founded in 2014 by Ondřej Veselý, Jiří Řihák, and Ondřej Vild, at the time Ph.D. students.<ref name=":0" /><ref name=":1">{{cite news |title=Aplikace rozpoznává rostliny z celého světa. Díky botanikům i umělé inteligenci |url=https://brnensky.denik.cz/zpravy_region/aplikace-rozpoznava-rostliny-z-celeho-sveta-diky-botanikum-i-umele-inteligenci-20160908.html |language=cs|trans-title=An application can identify plants from all over the world. Thanks to botanists and artificial intelligence|newspaper=Brněnský Deník |date=8 September 2016 |accessdate=14 November 2020}}</ref>
+
+== Features & Tools ==
+FlowerChecker offers two different solutions - FlowerChecker mobile app and Plant.id API.<ref name=":7">{{cite web |title=Tvůrci FlowerCheckeru spouštějí Shazam pro kytky. Plant.id staví na AI a má velké plány |url=https://tyinternety.cz/startupy/tvurci-flowercheckeru-spousteji-shazam-pro-kytky-plant-id-stavi-na-ai-a-ma-velke-plany/|language=cs|trans-title=The creators of FlowerChecker are launching Shazam for plants. Plant.id is based on AI and has big plans|website=tyinternety.cz | date=7 May 2018 |accessdate=14 November 2020}}</ref>
+
+The '''FlowerChecker app''' was launched in April 2014 for Android and later that year for iOS.<ref name=":6" /><ref name=":0" /><ref name=":1" /> It requires users to submit photographs of the object they want to identify.<ref name=":6" /><ref name=":0" /> The photographs are then examined by an international team of experts from the field of [[botany]] and [[horticulture]].<ref name=":6" /><ref name=":0" />
+
+'''Plant.id''' is a machine learning-based plant identification API launched in 2018,<ref name=":7" /> with the plant diseases identification API - Plant.id Health Assessment released in April 2022.<ref name=":9" /> The Plant.id API is suitable for integration into other software such as mobile apps.<ref name=":5">{{cite journal |last1=Jones |first1=Hamlyn G |title=What plant is that? Tests of automated image recognition apps for plant identification on plants from the British flora |journal=AoB Plants |date=23 September 2020 |volume=12 |issue=6 |pages=plaa052 |doi=10.1093/aobpla/plaa052 |pmid=33173573 |pmc=7640754 |url=|issn=2041-2851}}</ref>
+
+== Recognition ==
+In 2019, FlowerChecker won the Idea of the Year award in the AI Awards organized by the Confederation of Industry of the Czech Republic.<ref name=":8">{{cite web |title=V soutěži AI Awards uspěli tvůrci aplikací na určování rostlin nebo na rozpoznávání únosců po hlase |url=https://byznys.ihned.cz/c1-66563320-v-soutezi-ai-awards-uspeli-tvurci-aplikaci-na-urcovani-rostlin-nebo-na-rozpoznavani-unoscu-po-hlase |language=cs|trans-title=Authors of applications for plant identification or voice recognition of abductors were successful at the AI Awards|website=ihned.cz |date=13 May 2019 |accessdate=14 November 2020}}</ref> In 2020, an academic study comparing ten free automated image recognition apps showed that the Plant.id's performance excelled in the most of the studied parameters.<ref name=":5" /> In an independent study comparing different image-based species recognition models and their suitability for recognizing invasive alien species, the Plant.id API achieved the highest accuracy compared to other plant species recognition tools.<ref name=":10">{{cite journal |last1=Jakuschona |first1=Nick |last2=Niers |first2=Tom |last3=Stenkamp|first3=Jan |last4= Bartoschek |first4=Thomas |last5=Schade |first5=Sven |date=18 January 2022 |title=Evaluating image-based species recognition models suitable for citizen science application to support European invasive alien species policy |url=https://op.europa.eu/en/publication-detail/-/publication/91584805-79a1-11ec-9136-01aa75ed71a1/language-en |journal=European Commission, Joint Research Centre |doi=10.2760/97305 |isbn=9789276467212 |access-date=27 June 2022}}</ref>
+
+== Research activities ==
+Flowerchecker cooperates with the Nature Conservation Agency of the Czech Republic<!--Q8183220--> on a biodiversity mapping project.<ref name=":9" />
+
+==References==
+{{Reflist}}
+
+[[Category:Applied machine learning]]
+[[Category:Czech companies established in 2014]]
+[[Category:Software companies of the Czech Republic]]
+[[Category:Android (operating system) software]]
+[[Category:IOS software]]

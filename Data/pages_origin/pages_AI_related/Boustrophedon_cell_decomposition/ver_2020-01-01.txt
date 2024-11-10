@@ -1,0 +1,11 @@
+The '''boustrophedon cell decomposition''' (BCD) is a method used in [[artificial intelligence]] and [[robotics]] for [[Configuration space (physics)|configuration space]] solutions.  Like other cellular decomposition methods, this method transforms the configuration space into cell regions that can be used for [[motion planning|path planning]].
+
+A strength of the boustrophedon cell decomposition is that it allows for more diverse, non-polygonal obstacles within a configuration space.<ref>Choset, Howie. [http://www.springerlink.com/content/pq26x0qu58322435/ Coverage of Known Spaces: The Boustrophedon Cellular Decomposition]</ref> The representation still depicts polygonal obstacles, but the representations are complex enough that they are very effective when describing things like rounded surfaces, jagged edges, etc.
+
+It is a goal of the method to optimize a path that can be chosen by an intelligent system.<ref>http://planning.cs.uiuc.edu/node352.html</ref> While a BCD can represent the existence of objects in a physical space, it does very little to nothing in terms of recognizing the objects. This would be done using another method, one which most likely requires additional sensory data in order to be used.
+
+==References==
+{{reflist}}
+
+[[Category:Robot control]]
+[[Category:Computer vision]]

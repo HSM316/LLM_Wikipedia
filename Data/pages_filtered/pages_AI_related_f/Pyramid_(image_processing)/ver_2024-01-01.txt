@@ -1,0 +1,38 @@
+upright=1.2|Visual representation of an image pyramid with 5 levels
+Pyramid, or pyramid representation, is a type of multi-scale signal representation developed by the computer vision, image processing and signal processing communities, in which a signal or an image is subject to repeated smoothing and subsampling. Pyramid representation is a predecessor to scale-space representation and multiresolution analysis.
+
+Pyramid generation
+
+There are two main types of pyramids: lowpass and bandpass.
+
+A lowpass pyramid is made by smoothing the image with an appropriate smoothing filter and then subsampling the smoothed image, usually by a factor of 2 along each coordinate direction. The resulting image is then subjected to the same procedure, and the cycle is repeated multiple times. Each cycle of this process results in a smaller image with increased smoothing, but with decreased spatial sampling density (that is, decreased image resolution). If illustrated graphically, the entire multi-scale representation will look like a pyramid, with the original image on the bottom and each cycle's resulting smaller image stacked one atop the other.
+
+A bandpass pyramid is made by forming the difference between images at adjacent levels in the pyramid and performing image interpolation between adjacent levels of resolution, to enable computation of pixelwise differences.E.H. Andelson and C.H. Anderson and J.R. Bergen and P.J. Burt and J.M. Ogden.
+"Pyramid methods in image processing".
+1984.
+
+Pyramid generation kernels
+
+A variety of different smoothing kernels have been proposed for generating pyramids. Among the suggestions that have been given, the binomial kernels arising from the binomial coefficients stand out as a particularly useful and theoretically well-founded class.Lindeberg, Tony, "Scale-space for discrete signals," PAMI(12), No. 3, March 1990, pp. 234-254.Lindeberg, Tony. Scale-Space Theory in Computer Vision, Kluwer Academic Publishers, 1994,  (see specifically Chapter 2 for an overview of Gaussian and Laplacian image pyramids and Chapter 3 for theory about generalized binomial kernels and discrete Gaussian kernels)See the article on multi-scale approaches for a very brief theoretical statement Thus, given a two-dimensional image, we may apply the (normalized) binomial filter (1/4, 1/2, 1/4) typically twice or more along each spatial dimension and then subsample the image by a factor of two. This operation may then proceed as many times as desired, leading to a compact and efficient multi-scale representation. If motivated by specific requirements, intermediate scale levels may also be generated where the subsampling stage is sometimes left out, leading to an oversampled or hybrid pyramid. With the increasing computational efficiency of CPUs available today, it is in some situations also feasible to use wider supported Gaussian filters as smoothing kernels in the pyramid generation steps.
+
+Gaussian pyramid
+In a Gaussian pyramid, subsequent images are weighted down using a Gaussian average (Gaussian blur) and scaled down. Each pixel containing a local average corresponds to a neighborhood pixel on a lower level of the pyramid. This technique is used especially in texture synthesis.
+
+Laplacian pyramid
+A Laplacian pyramid is very similar to a Gaussian pyramid but saves the difference image of the blurred versions between each levels. Only the smallest level is not a difference image to enable reconstruction of the high resolution image using the difference images on higher levels.  This technique can be used in image compression.
+
+Steerable pyramid
+A steerable pyramid, developed by Simoncelli and others, is an implementation of a multi-scale, multi-orientation band-pass filter bank used for applications including image compression, texture synthesis, and object recognition.  It can be thought of as an orientation selective version of a Laplacian pyramid, in which a bank of steerable filters are used at each level of the pyramid instead of a single Laplacian or Gaussian filter. Also in 
+
+Applications of pyramids
+
+Alternative representation
+In the early days of computer vision, pyramids were used as the main type of multi-scale representation for computing multi-scale image features from real-world image data. More recent techniques include scale-space representation, which has been popular among some researchers due to its theoretical foundation, the ability to decouple the subsampling stage from the multi-scale representation, the more powerful tools for theoretical analysis as well as the ability to compute a representation at any desired scale, thus avoiding the algorithmic problems of relating image representations at different resolution. Nevertheless, pyramids are still frequently used for expressing computationally efficient approximations to scale-space representation.Lindeberg, T. and Bretzner, L. Real-time scale selection in hybrid multi-scale representations, Proc. Scale-Space'03, Isle of Skye, Scotland, Springer Lecture Notes in Computer Science, volume 2695, pages 148-163, 2003.Crowley, J, Riff O. Fast computation of scale normalised Gaussian receptive fields, Proc. Scale-Space'03, Isle of Skye, Scotland, Springer Lecture Notes in Computer Science, volume 2695, 2003.
+
+Detail manipulation
+Levels of a Laplacian pyramid can be added to or removed from the original image to amplify or reduce detail at different scales. However, detail manipulation of this form is known to produce halo artifacts in many cases, leading to the development of alternatives such as the bilateral filter. 
+
+Some image compression file formats use the Adam7 algorithm or some other interlacing technique.
+These can be seen as a kind of image pyramid.
+Because those file format store the "large-scale" features first, and fine-grain details later in the file,
+a particular viewer displaying a small "thumbnail" or on a small screen can quickly download just enough of the image to display it in the available pixels—so one file can support many viewer resolutions, rather than having to store or generate a different file for each resolution.

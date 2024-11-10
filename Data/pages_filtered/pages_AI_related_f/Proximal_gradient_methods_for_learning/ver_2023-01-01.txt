@@ -1,0 +1,95 @@
+Proximal gradient (forward backward splitting) methods for learning is an area of research in optimization and statistical learning theory which studies algorithms for a general class of convex regularization problems where the regularization penalty may not be differentiable. One such example is  regularization (also known as Lasso) of the form
+
+Proximal gradient methods offer a general framework for solving regularization problems from statistical learning theory with penalties that are tailored to a specific problem application. Such customized penalties can help to induce certain structure in problem solutions, such as sparsity (in the case of lasso) or group structure (in the case of  group lasso).
+
+ Relevant background 
+
+Proximal gradient methods are applicable in a wide variety of scenarios for solving convex optimization problems of the form
+
+where  is convex and differentiable with Lipschitz continuous gradient,  is a convex, lower semicontinuous function which is possibly nondifferentiable, and  is some set, typically a Hilbert space. The usual criterion of  minimizes  if and only if  in the convex, differentiable setting is now replaced by
+
+where  denotes the subdifferential of a real-valued, convex function .
+
+Given a convex function  an important operator to consider is its proximal operator  defined by
+
+which is well-defined because of the strict convexity of the  norm. The proximal operator can be seen as a generalization of a projection.
+We see that the proximity operator is important because  is a minimizer to the problem  if and only if
+ where  is any positive real number.
+
+ Moreau decomposition 
+
+One important technique related to proximal gradient methods is the Moreau decomposition, which decomposes the identity operator as the sum of two proximity operators. Namely, let  be a lower semicontinuous, convex function on a vector space . We define its Fenchel conjugate  to be the function
+
+The general form of Moreau's decomposition states that for any  and any  that
+
+which for  implies that . The Moreau decomposition can be seen to be a generalization of the usual orthogonal decomposition of a vector space, analogous with the fact that proximity operators are generalizations of projections.
+
+In certain situations it may be easier to compute the proximity operator for the conjugate  instead of the function , and therefore the Moreau decomposition can be applied. This is the case for  group lasso.
+
+ Lasso regularization 
+
+Consider the regularized empirical risk minimization problem with square loss and with the  norm as the regularization penalty:
+
+where  The  regularization problem is sometimes referred to as lasso (least absolute shrinkage and selection operator). Such  regularization problems are interesting because they induce  sparse solutions, that is, solutions  to the minimization problem have relatively few nonzero components. Lasso can be seen to be a convex relaxation of the non-convex problem
+
+where  denotes the  "norm", which is the number of nonzero entries of the vector . Sparse solutions are of particular interest in learning theory for interpretability of results: a sparse solution can identify a small number of important factors.
+
+ Solving for L1 proximity operator 
+
+For simplicity we restrict our attention to the problem where . To solve the problem
+
+we consider our objective function in two parts: a convex, differentiable term  and a convex function . Note that  is not strictly convex.
+
+Let us compute the proximity operator for . First we find an alternative characterization of the proximity operator  as follows:
+
+For  it is easy to compute : the th entry of  is precisely
+
+Using the recharacterization of the proximity operator given above, for the choice of  and  we have that  is defined entrywise by
+
+which is known as the soft thresholding operator .
+
+ Fixed point iterative schemes 
+
+To finally solve the lasso problem we consider the fixed point equation shown earlier:
+
+Given that we have computed the form of the proximity operator explicitly, then we can define a standard fixed point iteration procedure. Namely, fix some initial , and for  define
+
+Note here the effective trade-off between the empirical error term  and the regularization penalty . This  fixed point method has decoupled the effect of the two different convex functions which comprise the objective function into a gradient descent step () and a soft thresholding step (via ).
+
+Convergence of this fixed point scheme is well-studied in the literature and is guaranteed under appropriate choice of step size  and loss function (such as the square loss taken here). Accelerated methods were introduced by Nesterov in 1983 which improve the rate of convergence under certain regularity assumptions on . Such methods have been studied extensively in previous years.
+For more general learning problems where the proximity operator cannot be computed explicitly for some regularization term , such fixed point schemes can still be carried out using approximations to both the gradient and the proximity operator.
+
+ Practical considerations 
+
+There have been numerous developments within the past decade in convex optimization techniques which have influenced the application of proximal gradient methods in statistical learning theory. Here we survey a few important topics which can greatly improve practical algorithmic performance of these methods.
+
+ Adaptive step size 
+
+In the fixed point iteration scheme
+
+one can allow variable step size  instead of a constant . Numerous adaptive step size schemes have been proposed throughout the literature. Applications of these schemes  suggest that these can offer substantial improvement in number of iterations required for fixed point convergence.
+
+ Elastic net (mixed norm regularization) 
+
+Elastic net regularization offers an alternative to pure  regularization. The problem of lasso () regularization involves the penalty term , which is not strictly convex. Hence, solutions to  where  is some empirical loss function, need not be unique. This is often avoided by the inclusion of an additional strictly convex term, such as an  norm regularization penalty. For example, one can consider the problem
+
+where 
+For  the penalty term  is now strictly convex, and hence the minimization problem now admits a unique solution. It has been observed that for sufficiently small , the additional penalty term  acts as a preconditioner and can substantially improve convergence while not adversely affecting the sparsity of solutions.
+
+ Exploiting group structure 
+
+Proximal gradient methods provide a general framework which is applicable to a wide variety of problems in statistical learning theory. Certain problems in learning can often involve data which has additional structure that is known  a priori. In the past several years there have been new developments which incorporate information about group structure to provide methods which are tailored to different applications. Here we survey a few such methods.
+
+ Group lasso 
+
+Group lasso is a generalization of the lasso method when features are grouped into disjoint blocks. Suppose the features are grouped into blocks . Here we take as a regularization penalty
+
+which is the sum of the  norm on corresponding feature vectors for the different groups. A similar proximity operator analysis as above can be used to compute the proximity operator for this penalty. Where the lasso penalty has a proximity operator which is soft thresholding on each individual component, the proximity operator for the group lasso is soft thresholding on each group. For the group  we have that proximity operator of  is given by
+
+where  is the th group.
+
+In contrast to lasso, the derivation of the proximity operator for group lasso relies on the Moreau decomposition. Here the proximity operator of the conjugate of the group lasso penalty becomes a projection onto the ball of a dual norm.
+
+ Other group structures 
+
+In contrast to the group lasso problem, where features are grouped into disjoint blocks, it may be the case that grouped features are overlapping or have a nested structure.  Such generalizations of group lasso have been considered in a variety of contexts. For overlapping groups one common approach is known as latent group lasso which introduces latent variables to account for overlap. Nested group structures are studied in hierarchical structure prediction and with directed acyclic graphs.

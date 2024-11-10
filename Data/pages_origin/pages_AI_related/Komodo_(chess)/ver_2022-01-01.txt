@@ -1,0 +1,69 @@
+{{Short description|UCI Chess Engine}}{{Infobox software
+| name = Komodo
+| title = Komodo
+| developer = {{plainlist|
+*[[Don Dailey]]
+*[[Larry Kaufman]]
+*[[Mark Lefler]]
+}}
+| released = {{Start date and age|2010|01}}
+| discontinued =
+| latest release version = Komodo Dragon 2.5
+| latest release date = {{Start date and age|2021|9|24}}
+| latest preview version =
+| latest preview date =
+| programming language = [[C (programming language)|C]], [[C++]]
+| operating system = [[Linux]], [[Microsoft Windows]], [[Mac OS X]], [[Android (operating system)|Android]]
+| platform =
+| size =
+| language =
+| genre = [[Chess engine]]
+| license =[[Proprietary software|Proprietary]]
+| website = {{URL|komodochess.com}}
+}}
+'''Komodo''' is a [[Universal Chess Interface|UCI]] [[chess engine]] developed by [[Don Dailey]] and Mark Lefler, and supported by chess author and evaluation expert [[Grandmaster (chess)|GM]] [[Larry Kaufman]]. Komodo is a [[Proprietary software|commercial]] chess engine but older versions (12 and older) are free for non-commercial use. It is consistently ranked near the top of most major chess engine rating lists, along with [[Stockfish (chess)|Stockfish]] and [[Leela Chess Zero]].<ref>{{cite web|url=http://computerchess.org.uk/ccrl/4040.live/ |title=CCRL 40/40 Rating List — All engines (best versions only) |publisher=computerchess.org.uk |accessdate=October 25, 2013 |url-status=dead |archiveurl=https://web.archive.org/web/20111002094957/http://computerchess.org.uk/ccrl/4040.live/ |archivedate=October 2, 2011 }}</ref><ref>{{cite web | url=http://www.inwoba.de/bayes.html | title=IPON Rating List | publisher=inwoba.de | accessdate=April 28, 2015 | archive-url=https://web.archive.org/web/20140529051651/http://www.inwoba.de/bayes.html | archive-date=May 29, 2014 | url-status=dead }}</ref><ref>{{cite web | url=http://www.amateurschach.de/ | title=SWCR chess engine ratings list |publisher=amateurschach.de | accessdate=October 25, 2013}}</ref><ref>{{cite web| url=http://www.husvankempen.de/nunn/40_40%20Rating%20List/40_40%20MPVersion/rangliste.html| title=CEGT Best Versions| publisher=husvankempen.de| accessdate=October 25, 2013| archive-url=https://web.archive.org/web/20071224182032/http://www.husvankempen.de/nunn/40_40%20Rating%20List/40_40%20MPVersion/rangliste.html| archive-date=December 24, 2007| url-status=dead}}</ref><ref>{{cite web|title=CCRL 40/4 Rating List|url=http://computerchess.org.uk/ccrl/404/|publisher=CCRL|accessdate=25 October 2013}}</ref>
+{{Chess programming series}}
+== History ==
+Komodo was derived from Don Dailey's former engine Doch in January 2010.<ref>{{cite web|last=Dailey|first=Don|title=Komodo 1.0 JA by Don Dailey available|url=http://www.talkchess.com/forum/viewtopic.php?t=31903|accessdate=25 October 2013}}</ref> The first multiprocessor version of Komodo was released in June 2013 as ''Komodo 5.1 MP''.<ref>{{cite web|last=Dailey|first=Don|title=Komodo 5.1 MP has been released|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=521500&t=48316|accessdate=25 October 2013}}</ref> This version was a major rewrite and a port of Komodo to [[C++11]]. A single-processor version of Komodo (which won the CCT15 tournament in February earlier that year) was released as a stand-alone product shortly before the 5.1 MP release. This version, named ''Komodo CCT'', was still based on the older C code, and was approximately 30 Elo stronger than the 5.1 MP version, as the latter was still undergoing massive code-cleanup work.<ref>{{cite web|last=Dailey|first=Don|title=Komodo CCT|url=http://komodochess.com/komodoCCT-31a|accessdate=25 October 2013}}</ref>
+
+With the release of Komodo 6 on 4 October 2013, Don Dailey announced that he was suffering from an acute form of [[leukaemia]], and would no longer contribute to the future development of Komodo.<ref>{{cite web|last=Dailey|first=Don|title=Komodo release|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=537479&t=49623|accessdate=25 October 2013}}</ref> On October 8, Don made an announcement on the Talkchess forum that Mark Lefler would be joining the Komodo team and would continue its development.<ref>{{cite web|last=Dailey|first=Don|title=Who is Don/Larry's new partner!?|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=537479&t=49623|accessdate=25 October 2013}}</ref>
+
+On December 17, 2018, Larry Kaufman announced the release of Komodo 12.3 MCTS, a version of the Komodo 12.3 engine that uses [[Monte Carlo tree search]] instead of [[alpha–beta pruning]]/[[minimax]].<ref>https://komodochess.com/Komodo12.htm</ref>
+
+The latest version, Komodo Dragon 2.5, was released on September 24, 2021.<ref>{{cite web|title=Komodo release|url=https://komodochess.com/dragon-2.5.htm|accessdate=2021-09-30}}</ref> It features support for [[NNUE]].<ref>https://komodochess.com/dragon.htm</ref>
+
+== Playing strength and style ==
+
+Komodo heavily relies on evaluation rather than depth, and thus has a distinctive [[Glossary of chess#Positional play|positional style]]. Its forte is ''to play when there is nothing to play''.<ref>{{cite web|last=Prakash|first=Om|title=Hope for the new Komodo!|url=http://ommprakasshh.blogspot.in/2012/12/hope-for-new-komodo.html|accessdate=25 October 2013}}</ref> Komodo author Don Dailey described it as such: "In positions that most engines would likely struggle or find it impossible to make progress, Komodo quietly prepares a break and ends up with the victory."<ref>{{cite web|last=Dailey|first=Don|title=Quiet game|url=http://www.talkchess.com/forum/viewtopic.php?topic_view=threads&p=521738&t=48316|accessdate=25 October 2013}}</ref>
+
+== Competition results ==
+
+Komodo has played in the ICT 2010 in Leiden, and further in the CCT12 and CCT14. Komodo had its first tournament success in 2013, when it won the CCT15 with a score of 6½/7.<ref>{{cite web|last=Skinner|first=Peter|title=CCT15 - Results|url=http://www.talkchess.com/forum/viewtopic.php?t=47309|accessdate=25 October 2013}}</ref> Komodo also fared very well in the [[TCEC]] competition, where in Season 4, it lost only eight out of its 53 games and managed to reach Stage 4 (Quarterfinals), against very strong competition which were running on eight cores (Komodo was running on a single processor).<ref>{{cite web|title=Komodo - Performance|url=http://chess.martijngrimme.nl/engine.php?engine=Komodo|accessdate=25 October 2013|archive-url=https://web.archive.org/web/20131023115405/http://chess.martijngrimme.nl/engine.php?engine=Komodo|archive-date=23 October 2013|url-status=dead}}</ref> In TCEC Season 5, it won the superfinal against [[Stockfish (chess)|Stockfish]]. It managed to reach the Superfinal in TCEC Season 6 again, but this time, it lost to Stockfish. Komodo regained the title in TCEC Season 7, defeating [[Stockfish (chess)|Stockfish]] in the superfinal. In TCEC Season 8, Komodo defeated Stockfish again in the superfinal.<ref>{{cite web|url=http://tcec.chessdom.com/archive.php|title=TCEC - Top Chess Engine Championship - Archive Mode|access-date=2015-01-01|archive-url=https://web.archive.org/web/20150503193708/http://tcec.chessdom.com/archive.php|archive-date=2015-05-03|url-status=dead}}</ref> Komodo won both the World Computer Chess Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1676|title=WCCC2016}}</ref> and World Computer Software Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1679|title=WCSC 2016}}</ref> in 2016. Komodo once again won the World Computer Chess Championship<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1990|title=WCSC 2017}}</ref> and World Blitz<ref>{{cite web|url=https://icga.leidenuniv.nl/?page_id=1994|title=World Bltz 2017}}</ref> in 2017. Komodo came third in TCEC Season 11 losing to Stockfish and Houdini, and came second in Season 12 losing to Stockfish.<ref>http://www.chessdom.com/tcec-season-11-final-standings/</ref><ref>http://www.chessdom.com/stockfish-convincingly-wins-tcec-season-11/</ref><ref>https://chess24.com/en/watch/live-tournaments/tcec-2018-season-12-superfinal</ref>
+
+== Notable games ==
+
+{{Chess diagram small
+| tright
+| Komodo vs Hannibal
+|rd|  |  |  |  |  |  | 
+|  |  |  |bd|rd|  |kd|pd
+|  |  |pd|  |  |pd|pd| 
+|  |pd|rl|pd|  |  |  | 
+|pd|pl|  |pl|  |pl|  |pl
+|  |  |  |  |pl|  |  | 
+|pl|  |  |  |  |pl|bl| 
+|  |  |rl|  |  |  |kl| 
+| Komodo plays the exchange sacrifice 33. Rxc6 and goes on to win the game, proving the superiority of its pieces over Black's two rooks.
+}}
+* [http://tcec.chessdom.com/archive.php?se=4&st=2b&ga=13 Komodo vs Hannibal, nTCEC - Stage 2b - Season 1, Round 4.1, ECO: A10, 1–0] Komodo sacrifices an [[The exchange (chess)|exchange]] for positional gain.<ref name="season2">{{cite web|title=Interesting Games from Season 2|url=http://www.tcec-chess.net/viewtopic.php?f=10&t=182|accessdate=25 October 2013|archiveurl=https://web.archive.org/web/20131025194033/http://www.tcec-chess.net/viewtopic.php?f=10&t=182|archivedate=25 October 2013}}</ref>
+* [http://tcec.chessdom.com/archive.php?se=5&st=3&ga=7 Gull vs Komodo, nTCEC - Stage 3 - Season 2, Round 2.2, ECO: E10, 0–1]<ref name="season2" /><ref>{{cite web|last=Chen|first=Franklin|title=The computer plays the exchange sacrifice|url=http://chessimprover.com/the-computer-plays-the-exchange-sacrifice/|accessdate=26 October 2013}}</ref>
+
+== References ==
+{{reflist|30em}}
+
+== External links ==
+* {{Official website|komodochess.com}}
+{{Portal|Chess}}
+[[Category:2010 software]]
+[[Category:Chess engines]]
+[[Category:Applied machine learning]]

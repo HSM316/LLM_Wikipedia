@@ -1,0 +1,76 @@
+'''Enterprise interoperability''' is the ability of an enterprise—a company or other large organization—to functionally link activities, such as [[product design]], [[supply chains]], manufacturing, in an efficient and competitive way.
+
+The research in [[interoperability]] of enterprise practised in is various domains itself ([[Enterprise Modelling]], [[Ontologies]], [[Information systems]], Architectures and Platforms) which it is a question of positioning.<ref name="Doumei2008"/>
+
+== Enterprise interoperability topics ==
+===Interoperability in enterprise architecture===
+[[Enterprise architecture]] (EA) presents a high level design of enterprise capabilities that defines successful IT projects in coherence with enterprise principles and business related requirements. EA covers mainly (i) the business capabilities analysis and validation; (ii) the development of business, application, data and technical architectures and solutions, and finally (iii) the control of programme and project implementation and governance. The application of EA methodology feeds the enterprise repository reference frame with sets of building blocks used to compose the targeted system.
+
+The interoperability can be considered either as a principle, requirement or constraint that impact the definition of patterns to compose building blocks in the definition of targeted architectural roadmap. In this scope, EA within the TOGAF perspective,<ref name="TOGAF2011"/> aims to reconcile interoperability requirements with potential solutions that make developed systems interoperable.
+So as to maintain the interoperability challenge quite present in the next steps of system's lifecycle, several models and Frameworks are developed under the topic enterprise interoperability.
+
+===Enterprise interoperability frameworks===
+To preserve interoperability, several [[Enterprise Interoperability Framework|enterprise interoperability frameworks]] can be identified in the literature:
+* 2003: IDEAS:<ref name="IDEAS"/> Interoperability Developments for Enterprise Application and Software.
+* 2004: EIF:<ref name="EIF"/> The European Interoperability Framework
+* 2004: e-GIF:<ref name="eGIF"/> e-Government Interoperability Framework
+* 2006: FEI:<ref name="FEI"/> The Framework for Enterprise Interoperability
+* 2006: C4IF:<ref name="Peristeras2006"/> Connection, Communication, Consolidation, Collaboration Interoperability Framework
+* 2007: AIF:<ref name="ATHENA"/> Athena Interoperability Framework
+* 2007:<ref name="EntSysArch2007"/>  Enterprise Architecture Framework for Agile and Interoperable Virtual Enterprises
+
+The majority of these frameworks considers enterprise at several aspects, viewpoints or abstraction levels: business, process, knowledge, application, technology, data, technic, etc. and proposes guidelines to support modeling and connection capabilities between these levels. The semantic challenge is considered as transversal to all these abstraction levels.
+Setting up and applying guidelines and methodologies developed within these frameworks requires modeling efforts that identify and connect artifacts.
+
+===Interoperability in software engineering===
+The evolution of IT technologies aims to outsource IT capabilities to vendors to manage for use on demand. The evolution pathway starts form packaged solutions and goes through Infrastructure as a service (Iaas), Platform as a service (Paas), Software as a service (Saas) and recently the Cloud. Interoperability efforts are still mainly expected among these levels:
+* strategy to business 
+* business to processes
+* processes to application
+
+Dealing with business process definition, alignment, collaboration and interoperability, several international standards propose methodologies and guidelines in these perspectives:
+* ISO 15704—Requirements for enterprise-reference architectures and methodologies
+* CEN-ISO DIS 19439—Framework for Enterprise Modeling
+* CEN-ISO WD 19440—Constructs for Enterprise Modeling
+* ISO 18629—Process specification language
+* ISO/IEC 15414—ODP Reference Model—Enterprise Language 
+In addition, recent standards (BPMN, BPEL, etc.) and their implementation technologies propose relevant integration capabilities. Furthermore, model driven-engineering <ref name="MDAguide"/> provides capabilities that connect, transform and refine models to support interoperability.
+
+===Metrics for interoperability maturity assessment===
+The following approaches propose some metrics to assess the interoperability maturity,<ref name="Ford2008"/><ref name="GUEDRIA"/> 
+* LISI: Levels of Information Systems Interoperability
+* OIM: Organizational Interoperability Model
+* NMI: NC3TA reference Model for Interoperability
+* LCIM: Levels of Conceptual Interoperability Model
+* EIMM: Enterprise Interoperability Maturity Model
+* Smart Grid Interoperability Maturity Model Rating System
+
+For the several interoperability aspects identified previously, the listed maturity approaches define interoperability categories (or dimensions) and propose qualitative as well as qualitative cross cutting issues to assess them. While interoperability aspects are not covered by a single maturity approach, some propositions go deeply in the definition of metric dimensions at one interoperability aspect such as the business interoperability measurement proposed by Aneesh.<ref name="Zutshi"/>
+
+== See also ==
+* [[INTEROP-VLab]]
+
+== References ==
+{{reflist|
+refs=
+<ref name=Doumei2008>Chen, D., [[Guy Doumeingts|Doumeingts]], G., and [[François Vernadat|Vernadat, F.]] 2008. Architectures for enterprise integration and interoperability: Past, present and future. ''Comput. Ind.'' 59, 7 (Sep. 2008), 647–659. {{in lang|en}} [https://dx.doi.org/10.1016/j.compind.2007.12.016 : DOI]</ref>
+<ref name=TOGAF2011>TOGAF® 9 Certified, 2nd edition. The Open Group, 2011.</ref>
+<ref name=IDEAS>“A Contribution to Enterprise Interoperability Maturity Assessment”</ref>
+<ref name=EIF>EIF 2.0 http://ec.europa.eu/idabc/servlets/Docb0db.pdf</ref>
+<ref name=eGIF>http://edina.ac.uk/projects/interoperability/e-gif-v6-0_.pdf {{Dead link|date=February 2022}}</ref>
+<ref name=FEI>http://chen33.free.fr/M2/Elearning/CIGI2009.Chen.final.pdf {{Bare URL PDF|date=March 2022}}</ref>
+<ref name=Peristeras2006>Peristeras, V., and K. Tarabanis (2006): The Connection, Communication, Consolidation, Collaboration Interoperability Framework (C4IF) for Information Systems Interoperability, International Journal of Interoperability in Business Information Systems (IBIS), Vol. 1, No. 1, pp. 61-72.</ref>
+<ref name=ATHENA>http://www.asd-ssg.org/html/ATHENA/Deliverables/Deliverables%20provided%20to%20EC%206th%206%20Months/070306_ATHENA_DA82_V10.pdf {{Bare URL PDF|date=March 2022}}</ref>
+<ref name=EntSysArch2007>Handbook of Enterprise Systems Architecture in Practice, 2007</ref>
+<ref name=MDAguide>http://www.omg.org/cgi-bin/doc?omg/03-06-01.pdf {{Bare URL PDF|date=March 2022}}</ref>
+<ref name=Ford2008>Ford T., et al. Measuring System Interoperability: An i-Score Improvement. Proceedings of the 6th Annual Conference on Systems Engineering Research. Los Angeles, CA, April 4–5, 2008</ref>
+<ref name=GUEDRIA>GUEDRIAhttp://ori-oai.u-bordeaux1.fr/pdf/2012/GUEDRIA_WIDED_2012.pdf</ref>
+<ref name=Zutshi>http://run.unl.pt/bitstream/10362/2646/1/Zutshi_2010.pdf {{Bare URL PDF|date=March 2022}}</ref>
+}}
+
+== External links ==
+* [http://www.interop-vlab.eu INTEROP-VLab]
+
+[[Category:Interoperability]]
+[[Category:Enterprise modelling]]
+[[Category:Knowledge representation]]

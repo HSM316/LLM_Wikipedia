@@ -1,0 +1,372 @@
+{{for|the human occupation|Virtual assistant (occupation)}}
+{{short description|Mobile software agent}}
+[[File:Android Assistant on the Google Pixel XL smartphone (29526761674).jpg|thumb|[[Google Assistant]] running on a [[Pixel (smartphone)|Pixel XL]] [[smartphone]] ]]
+[[File:Apple tv gen 4 remote.jpeg|thumb|[[Apple TV]] [[remote control]], with which users can ask [[Siri]] virtual assistant to find content to watch]]
+[[File:Amazon Echo.jpg|thumb|100px|[[Amazon Echo]] [[smart speaker]] running the [[Amazon Alexa|Alexa]] virtual assistant]]
+
+An '''intelligent virtual assistant''' ('''IVA''') or '''intelligent personal assistant''' ('''IPA''') is a [[software agent]] that can perform tasks or services for an individual based on commands or questions. Sometimes the term "[[chatbot]]" is used to refer to virtual assistants generally or specifically accessed by [[online chat]]. In some cases, online chat programs are exclusively for entertainment purposes. Some virtual assistants are able to interpret human speech and respond via synthesized voices. Users can ask their assistants questions, control home automation devices and media playback via voice, and manage other basic tasks such as email, to-do lists, and calendars with verbal (spoken?) commands.<ref>{{Cite journal|doi=10.1080/02763869.2018.1404391|pmid = 29327988|title = Alexa, Siri, Cortana, and More: An Introduction to Voice Assistants|journal = Medical Reference Services Quarterly|volume = 37|issue = 1|pages = 81–88|year = 2018|last1 = Hoy|first1 = Matthew B.}}</ref>
+
+As of 2017, the capabilities and usage of virtual assistants are expanding rapidly, with new products entering the market and a strong emphasis on both email and [[voice user interface]]s. Apple and Google have large installed bases of users on [[smartphone]]s. Microsoft has a large installed base of [[Microsoft Windows|Windows]]-based [[personal computers]], smartphones and [[smart speakers]]. Amazon has a large install base for smart speakers.<ref>{{cite web|url=https://www.fool.com/investing/2017/01/30/alexa-how-big-is-amazons-echo.aspx|title= Alexa, How Big Is Amazon's Echo? |website=[[The Motley Fool]]|date=2017-01-30|author= Daniel B. Kline}}</ref> [[Conversica]] has over 100 million engagements via its email and sms interface Intelligent Virtual Assistants for business.
+
+==History==
+Radio Rex was the first voice activated toy released in 1911.<ref>https://www.cnet.com/news/google-finding-its-voice/</ref>
+
+Another early tool which was enabled to perform digital speech recognition was the [[IBM Shoebox]], presented to the general public during the [[1962 Seattle World's Fair]] after its initial market launch in 1961. This early computer, developed almost 20 years before the introduction of the first [[IBM Personal Computer]] in 1981, was able to recognize 16 spoken words and the digits 0 to 9. The next milestone in the development of voice recognition technology was achieved in the 1970s at the [[Carnegie Mellon University]] in [[Pittsburgh]], [[Pennsylvania]] with substantial support of the [[United States Department of Defense]] and its [[DARPA]] agency. Their tool "Harpy" mastered about 1000 words, the vocabulary of a three-year-old. About ten years later the same group of scientists developed a system that could analyze not only individual words but entire word sequences enabled by a [[Hidden Markov Model]].<ref name="spracherkennung1">{{cite news|author= |language=German |url=https://www.welt.de/newsticker/dpa_nt/infoline_nt/computer_nt/article106206488/Von-IBM-Shoebox-bis-Siri-50-Jahre-Spracherkennung.html |title=Feature: Von IBM Shoebox bis Siri: 50 Jahre Spracherkennung - WELT |trans-title=From IBM Shoebox to Siri: 50 years of speech recognition |publisher=Welt.de |date=2012-04-20 |accessdate=2017-12-10|newspaper=Die Welt }}</ref> Thus, the earliest virtual assistants, which applied speech recognition software were [[automated attendant]] and medical [[digital dictation]] software.<ref>{{cite web|last=Zwass |first=Vladimir |url=https://www.britannica.com/technology/speech-recognition |title=speech recognition &#124; technology |publisher=Britannica.com |website=[[Encyclopædia Britannica Online]] |date=2016-02-10 |accessdate=2017-12-10}}</ref> In the 1990s digital speech recognition technology became a feature of the [[personal computer]] with [[Microsoft]], [[IBM]], [[Philips]] and [[Lernout & Hauspie]] fighting for customers. Much later the market launch of the first [[smartphone]] [[IBM Simon]] in 1994 laid the foundation for smart virtual assistants as we know them today.<ref>{{cite web |url=https://pop.orange.com/en/a1436/smartphone-personal-assistant-mobile/ |title=Smartphone: your new personal assistant - Orange Pop |publisher=Pop.orange.com |date=2016-02-23 |accessdate=2017-12-10 |archive-url=https://web.archive.org/web/20170710211123/https://pop.orange.com/en/a1436/smartphone-personal-assistant-mobile/ |archive-date=2017-07-10 |url-status=dead }}</ref> The first modern digital virtual assistant installed on a smartphone was [[Siri]], which was introduced as a feature of the [[iPhone 4S]] on October 4, 2011.<ref>{{cite web|url=https://www.engadget.com/2011/10/04/iphone-4s-hands-on/ |author=Darren Murph |date=2011-10-04 |title=iPhone 4S hands-on! |publisher=Engadget.com |accessdate=2017-12-10}}</ref> [[Apple Inc.]] developed Siri following the 2010 acquisition of [[Siri Inc.]], a [[Corporate spin-off|spin-off]] of [[SRI International]], which is a research institute financed by [[DARPA]] and the [[United States Department of Defense]].<ref name="spracherkennung1"/>
+
+==Method of interaction==
+Virtual assistants make work via:
+
+* Text, including: [[online chat]] (especially in an [[instant messaging]] app or other app), [[SMS|SMS Text]], [[Email|e-mail]] or other text-based communication channel, for example [[Conversica]]'s Intelligent Virtual Assistants for business.<ref>https://www.bloomberg.com/press-releases/2018-10-30/conversica-raises-31-million-in-series-c-funding-to-fuel-expansion-of-conversational-ai-for-business</ref>
+* Voice, for example with [[Amazon Alexa]]<ref>{{Cite web|url=https://www.wsj.com/articles/amazon-extends-alexas-reach-into-wearables-11569440641|title=Amazon Extends Alexa's Reach Into Wearables|last=Herrera|first=Sebastian|website=WSJ|language=en-US|access-date=2019-09-26}}</ref> on the [[Amazon Echo]] device, [[Siri]] on an [[iPhone]], or [[Google Assistant]] on Google-enabled/[[Android (operating system)|Android]] mobile devices
+* By taking and/or uploading images, as in the case of [[Samsung]] [[Bixby (virtual assistant)|Bixby]] on the [[Samsung Galaxy S8]]
+
+Some virtual assistants are accessible via multiple methods, such as [[Google Assistant]] via chat on the [[Google Allo]] and Google Messages app and via voice on [[Google Home]] [[smart speaker]]s.
+
+Virtual assistants use [[natural language processing]] (NLP) to match user text or voice input to executable commands. Many continually learn using [[artificial intelligence]] techniques including [[machine learning]].
+
+To activate a virtual assistant using the voice, a wake word might be used. This is a word or groups of words such as "Hey Siri", "OK Google" or "Hey Google", "Alexa", and "Hey Microsoft".<ref>{{cite web|url=https://gputechconf2017.smarteventscloud.com/connect/sessionDetail.ww?SESSION_ID=112905|title=S7617 - Developing Your Own Wake Word Engine Just Like 'Alexa' and 'OK Google'|publisher=GPU Technology Conference|accessdate=July 17, 2017}}</ref>
+
+==Devices and objects where found==
+Virtual assistants may be integrated into many types of platforms or, like [[Amazon Alexa]], across several of them:
+
+* Into devices like [[smart speakers]] such as [[Amazon Echo]], [[Google Home]] and [[Apple HomePod]]
+* In [[instant messaging]] apps on both smartphones and via the Web, e.g. [[Facebook]]'s [[M (virtual assistant)]] on both [[Facebook]] and [[Facebook Messenger]] apps or via the Web
+* Built into a mobile operating system (OS), as are [[Apple Inc.|Apple]]'s [[Siri]] on [[iOS]] devices and BlackBerry Assistant on [[BlackBerry 10]] devices, or into a desktop OS such as [[Cortana (software)|Cortana]] on [[Microsoft Windows]] OS
+* Built into a smartphone independent of the OS, as is [[Bixby (virtual assistant)|Bixby]] on the [[Samsung Galaxy S8]] and [[Samsung Galaxy Note 8|Note 8]].<ref>{{cite web|author=Lynn La |url=https://www.cnet.com/how-to/google-pixel-assistant/ |title=Everything Google Assistant can do on the Pixel |publisher=CNET |date=2017-02-27 |accessdate=2017-12-10}}</ref> 
+* Within instant messaging platforms, assistants from specific organizations, such as [[Aeromexico]]'s Aerobot on Facebook Messenger or Wechat Secretary on [[WeChat]]
+* Within mobile apps from specific companies and other organizations, such as Dom from [[Domino's Pizza]]<ref>{{cite web|last=Morrison |first=Maureen |url=http://adage.com/article/cmo-strategy/domino-s-pitches-voice-ordering-app-fast-food/295284/ |title=Domino's Pitches Voice-Ordering App in Fast-Food First &#124; CMO Strategy |publisher=AdAge |date=2014-10-05 |accessdate=2017-12-10}}</ref>
+* In appliances,<ref>{{cite web|author=Dan O&#39;Shea |url=http://www.retaildive.com/news/lg-introduces-smart-refrigerator-with-amazon-alexa-enabled-grocery-ordering/433366/ |title=LG introduces smart refrigerator with Amazon Alexa-enabled grocery ordering |publisher=Retail Dive |date=2017-01-04 |accessdate=2017-12-10}}</ref> cars,<ref>{{cite news|author=Samuel Gibbs |url=https://www.theguardian.com/technology/2017/feb/07/amazon-alexa-car-logitech-zerotouch-voice-services-assistant |title=Amazon's Alexa escapes the Echo and gets into cars &#124; Technology |newspaper=The Guardian |date=2017-02-07 |accessdate=2017-12-10}}</ref> and [[wearable computer|wearable technology]].<ref>{{cite web|url=http://www.pocket-lint.com/news/137722-what-is-google-assistant-how-does-it-work-and-which-devices-offer-it |title=What is Google Assistant, how does it work, and which devices offer it? |publisher=Pocket-lint |date=2017-10-06 |accessdate=2017-12-10}}</ref>
+* Previous generations of virtual assistants often worked on websites, such as [[Alaska Airlines]]' Ask Jenn,<ref>{{cite web|url=https://www.alaskaair.com/content/about-us/site-info/ask-jenn.aspx |title="Ask Jenn", Alaska Airlines website |publisher=Alaskaair.com |date=2017-01-02 |accessdate=2017-12-10}}</ref> or on [[interactive voice response]] (IVR) systems such as [[American Airlines]]' IVR by [[Nuance Communications|Nuance]].<ref>{{cite video|url=https://www.youtube.com/watch?v=I7q1cE9_AaQ |title="American Airlines (US Airways) - First US Airline to Deploy Natural Language Speech" (video), Nuance Enterprise on YouTube |publisher=YouTube.com |date=2013-06-26 |quote=YouTube title: Airline Information System, 1989 - AT&T Archives - speech recognition |author=AT&T Tech Channel |accessdate=2017-12-10}}</ref>
+
+==Services==
+Virtual assistants can provide a wide variety of services. These include:<ref>{{cite web|url=https://www.cnet.com/how-to/amazon-echo-the-complete-list-of-alexa-commands/ |author1=Taylor Martin |author2=David Priest |title=The complete list of Alexa commands so far |publisher=CNET |date=2017-09-10 |accessdate=2017-12-10}}</ref>
+
+* Provide information such as weather, facts from e.g. [[Wikipedia]] or [[IMDb]], set an alarm, make to-do lists and shopping lists 
+* Play music from streaming services such as [[Spotify]] and [[Pandora Radio|Pandora]]; play radio stations; read [[audiobooks]]
+* Play videos, TV shows or movies on televisions, streaming from e.g. [[Netflix]]
+* [[Conversational commerce]] (see below)
+*Assist public interactions with government (see [[Artificial intelligence in government]])
+* Complement and/or replace customer service by humans.<ref name=":0">{{Cite book|last=Kongthon|first=Alisa|last2=Sangkeettrakarn|first2=Chatchawal|last3=Kongyoung|first3=Sarawoot|last4=Haruechaiyasak|first4=Choochart|date=2009-01-01|title=Implementing an Online Help Desk System Based on Conversational Agent|journal=Proceedings of the International Conference on Management of Emergent Digital EcoSystems|series=MEDES '09|location=New York, NY, USA|publisher=ACM|pages=69:450–69:451|doi=10.1145/1643823.1643908|isbn=9781605588292}}</ref> One report estimated that an automated online assistant produced a 30% decrease in the work-load for a human-provided [[call centre]].<ref>{{cite web|url=http://www.insurancetech.com/blog/archives/2010/06/aetnas_gorgeous.html |title=Aetna's new "virtual online assistant" |author=Anthony O'Donnell |publisher=Insurance & Technology |date=2010-06-03 |archive-url=https://web.archive.org/web/20100607040004/http://www.insurancetech.com/blog/archives/2010/06/aetnas_gorgeous.html |archive-date=2010-06-07 |url-status=dead }}</ref>
+
+===Conversational commerce===
+{{Main|Conversational commerce}}
+Conversational commerce is [[e-commerce]] via various means of messaging, including via voice assistants<ref>{{cite web|url=https://venturebeat.com/2018/03/06/how-to-prepare-your-products-and-brand-for-conversational-commerce/|title=How to prepare your products and brand for conversational commerce|date=6 March 2018}}</ref> but also [[live chat]] on e-commerce [[Web sites]], live chat on messaging apps such as [[WeChat]], [[Facebook Messenger]] and [[WhatsApp]]<ref>{{cite web|url=https://www.retailtouchpoints.com/topics/omnichannel-cross-channel-strategies/retail-s-big-opportunity-87-of-u-s-consumers-grasp-the-power-of-conversational-commerce|title=Retail's Big Opportunity: 87% Of U.S. Consumers Grasp The Power Of Conversational Commerce - Retail TouchPoints|first=Glenn|last=Taylor}}</ref> and [[chatbots]] on messaging apps or Web sites.
+
+===Third-party services===
+Amazon enables Alexa "Skills" and Google "Actions", essentially apps that run on the assistant platforms.
+
+==Virtual assistant privacy==
+{{Main|Virtual assistant privacy}}
+Virtual assistants have a variety of privacy concerns associated with them. Features such as activation by voice pose a threat, as such features requires the device to always be listening.<ref>{{Cite book | doi=10.1145/3133956.3134052| chapter=DolphinAttack| title=Proceedings of the 2017 ACM SIGSAC Conference on Computer and Communications Security - CCS '17| pages=103–117| year=2017| last1=Zhang| first1=Guoming| last2=Yan| first2=Chen| last3=Ji| first3=Xiaoyu| last4=Zhang| first4=Tianchen| last5=Zhang| first5=Taimin| last6=Xu| first6=Wenyuan| isbn=9781450349468| arxiv=1708.09537}}</ref> Modes of privacy such as the virtual security button have been proposed to create a multilayer authentication for virtual assistants.<ref>{{Cite arxiv |eprint = 1712.03327|last1 = Lei|first1 = Xinyu|title = The Insecurity of Home Digital Voice Assistants - Amazon Alexa as a Case Study|last2 = Tu|first2 = Guan-Hua|last3 = Liu|first3 = Alex X.|last4 = Li|first4 = Chi-Yu|last5 = Xie|first5 = Tian|class = cs.CR|year = 2017}}</ref>
+
+==Developer platforms==
+Notable developer platforms for virtual assistants include:
+
+* [[Amazon Lex]] was opened to developers in April 2017. It involves [[natural language understanding]] technology combined with automatic speech recognition and had been introduced in November 2016.<ref>{{cite web|url=https://techcrunch.com/2017/04/20/amazon-lex-the-technology-behind-alexa-opens-up-to-developers/ |title=Amazon Lex, the technology behind Alexa, opens up to developers |publisher=TechCrunch |date=2017-04-20 |accessdate=2017-12-10}}</ref>
+* Google provides the [[Actions on Google]] and [[Dialogflow]] platforms for developers to create "Actions" for Google Assistant<ref>{{cite web|author= |url=https://developers.google.com/actions/ |title=Actions on Google &#124; Google Developers |date= |accessdate=2017-12-10}}</ref>
+* Apple provides SiriKit for developers to create extensions for [[Siri]]
+* [[IBM]]'s [[Watson (computer)|Watson]], while sometimes spoken of as a virtual assistant is in fact an entire [[artificial intelligence]] platform and community powering some virtual assistants, [[chatbots]]. and many other types of solutions.<ref>{{cite web|author= |url=https://www.ibm.com/blogs/watson/ |title=Watson - Stories of how AI and Watson are transforming business and our world |publisher=Ibm.com |date= |accessdate=2017-12-10}}</ref><ref>{{cite journal|last1=Memeti|first1=Suejb|last2=Pllana|first2=Sabri|title=PAPA: A parallel programming assistant powered by IBM Watson cognitive computing technology|journal=Journal of Computational Science|volume=26|pages=275–284|date=January 2018|doi=10.1016/j.jocs.2018.01.001|url=}}</ref>
+
+===Previous generations===
+In previous generations of text chat-based virtual assistants, the assistant was often represented by an [[avatar (computing)|avatar]] (a.k.a. ''interactive online character'' or ''automated character'') — this was known as an [[embodied agent]].
+
+==Comparison of notable assistants==
+{| class="wikitable sortable" style="font-size: 85%; text-align: center; width: auto;"
+|-
+! Intelligent personal assistant
+! Developer
+! [[Free software]]
+! [[Free and open-source hardware]]
+! [[HDMI]] out
+! External I/O
+! [[Internet of things|IOT]]
+! [[Chromecast]] integration
+! Smart phone app
+! Always on
+! Unit to unit voice channel
+! Skill language
+|-
+
+! style="text-align:left;" scope="col"| [[Amazon Alexa|Alexa]] (a.k.a. [[Amazon Echo|Echo]])
+| [[Amazon.com]]
+| {{no}}
+| {{no}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| ?
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Alisa (virtual assistant)|Alice]]
+| [[Yandex]]
+| {{No}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[AliGenie]]
+|[[Alibaba Group]]
+| {{no}}
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Assistant (by Speaktoit)|Assistant]]
+| [[Speaktoit]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Bixby (voice assistant)|Bixby]]
+| [[Samsung Electronics]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{n/a}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[BlackBerry 10#Miscellaneous|BlackBerry Assistant]]
+| [[BlackBerry Limited]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Braina]]
+| Brainasoft
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Clova (virtual assistant)|Clova]]
+|[[Naver (corporation)|Naver Corporation]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Cortana (software)|Cortana]]
+| [[Microsoft]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Baidu|Duer]]
+| [[Baidu]]<ref>{{cite web|url=https://venturebeat.com/2018/01/08/baidu-unveils-3-smart-speakers-with-its-duer-digital-assistant/|title=Baidu unveils 3 smart speakers with its Duer digital assistant|date=8 January 2018}}</ref>
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|-
+! style="text-align:left;" scope="col"| [[Evi (software)|Evi]]
+| [[Amazon.com]] [[True Knowledge]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Google Assistant]]
+| [[Google]]
+| {{No}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Google Now]]
+| [[Google]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[M (virtual assistant)|M]] (discontinued)<ref>{{Cite news|url=https://www.theverge.com/2018/1/8/16856654/facebook-m-shutdown-bots-ai|title=Facebook is shutting down M, its personal assistant service that combined humans and AI|last=Newton|first=Casey|date=14 January 2018|work=[[The Verge]]|access-date=8 January 2018|publisher=[[Vox Media]]}}</ref>
+| [[Facebook]]
+| 
+| 
+| 
+|
+| 
+| 
+| 
+| 
+| 
+|-
+! style="text-align:left;" scope="col"| [[Mycroft (software)|Mycroft]]<ref>{{cite web|author1=Janakiram MSV|title=Meet Mycroft, The Open Source Alternative To Amazon Echo|url=https://www.forbes.com/sites/janakirammsv/2015/08/20/meet-mycroft-the-open-source-alternative-to-amazon-echo/#6cb4cab96f7d|website=Forbes|accessdate=27 October 2016|date=20 August 2015}}</ref>
+| Mycroft AI
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| {{yes}}
+| Python
+|-
+! style="text-align:left;" scope="col"| [[SILVIA]]
+| Cognitive Code
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{no}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Siri]]
+| [[Apple Inc.]]
+| {{no}}
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{yes}}
+| {{n/a}}
+| ?
+|-
+! style="text-align:left;" scope="col"| [[Viv (software)|Viv]]
+| [[Samsung Electronics]]
+| {{no}}
+| {{n/a}}
+| {{n/a}}
+| {{n/a}}
+| {{yes}}
+| {{no}}
+| {{yes}}
+| {{no}}
+| {{n/a}}
+| ?
+
+|-
+! style="text-align:left;" scope="col"| [[Xiaowei]]
+|[[Tencent]]
+|
+|
+|
+|
+|
+|
+|
+|
+|
+| ?
+|}
+
+==Economic relevance==
+Digital experiences enabled by virtual assistants are considered to be among the major recent technological advances and most promising consumer trends. Experts claim that digital experiences will achieve a status-weight comparable to ‘real’ experiences, if not become more sought-after and prized.<ref>{{cite web|url=http://trendwatching.com/trends/5-trends-for-2017/ |title=5 Consumer Trends for 2017 |publisher=TrendWatching |date=2016-10-31 |accessdate=2017-12-10}}</ref> The trend is verified by a high number of frequent users and the substantial growth of worldwide user numbers of virtual digital assistants. In mid-2017, the number of frequent users of digital virtual assistants is estimated to be around 1 bn worldwide.<ref>{{cite web|url=https://www.statista.com/chart/5621/users-of-virtual-digital-assistants/ |title=Chart: Digital Assistants - Always at Your Service |author=Felix Richter |publisher=Statista |date=2016-08-26 |accessdate=2017-12-10}}</ref> In addition, it can be observed that virtual digital assistant technology is no longer restricted to smartphone applications, but present across many industry sectors (incl. [[automotive]], telecommunications, [[retail]], healthcare and education).<ref name="wordpress1">{{cite web|author= |url=https://gminsights.wordpress.com/tag/virtual-assistant-industry-statistics/ |title=Virtual Assistant Industry Statistics « Global Market Insights, Inc |publisher=Gminsights.wordpress.com |date=2017-01-30 |accessdate=2017-12-10}}</ref>
+In response to the significant R&D expenses of firms across all sectors and an increasing implementation of mobile devices, the market for speech recognition technology is predicted to grow at a [[CAGR]] of 34.9% globally over the period of 2016 to 2024 and thereby surpass a global market size of US$7.5 billion by 2024.<ref name="wordpress1"/> According to an [[Ovum Ltd.|Ovum]] study, the "native digital assistant installed base" is projected to exceed the world's population by 2021, with 7.5 billion active voice AI–capable devices.<ref name=":2">{{Cite web|url=https://ovum.informa.com/resources/product-content/virtual-digital-assistants-to-overtake-world-population-by-2021|title=Virtual digital assistants to overtake world population by 2021|website=ovum.informa.com|language=en|access-date=2018-05-11}}</ref> According to Ovum, by that time "Google Assistant will dominate the voice AI–capable device market with 23.3% market share, followed by Samsung's Bixby (14.5%), Apple's Siri (13.1%), Amazon's Alexa (3.9%), and Microsoft's Cortana (2.3%)."<ref name=":2" />
+
+Taking into consideration the regional distribution of market leaders, North American companies (e.g. [[Nuance Communications]], [[IBM]], [[eGain]]) are expected to dominate the industry over the next years, due to the significant impact of BYOD ([[Bring Your Own Device]]) and enterprise mobility business models. Furthermore, the increasing demand for smartphone-assisted platforms are expected to further boost the North American Intelligent Virtual Assistant (IVA) industry growth. Despite its smaller size in comparison to the North American market, the intelligent virtual assistant industry from the [[Asia-Pacific]] region, with its main players located in [[India]] and [[China]] is predicted to grow at an annual growth rate of 40% (above global average) over the 2016-2024 period.<ref name="wordpress1" />
+
+== Security ==
+In May 2018, researchers from the [[University of California, Berkeley]], published a paper that showed audio commands undetectable for the human ear could be directly embedded into music or spoken text, thereby manipulating virtual assistants into performing certain actions without the user taking note of it.<ref name=":1">{{Cite news|url=https://www.nytimes.com/2018/05/10/technology/alexa-siri-hidden-command-audio-attacks.html|title=Alexa and Siri Can Hear This Hidden Command. You Can't.|date=2018-05-10|work=The New York Times|access-date=2018-05-11|language=en-US|issn=0362-4331}}</ref> The researchers made small changes to audio files, which cancelled out the sound patterns that speech recognition systems are meant to detect. These were replaced with sounds that would be interpreted differently by the system and command it to dial phone numbers, open websites or even transfer money.<ref name=":1" /> The possibility of this has been known since 2016,<ref name=":1" /> and affects devices from [[Apple Inc.|Apple]], [[Amazon (company)|Amazon]] and [[Google]].<ref>{{Cite news|url=https://www.cnet.com/news/security-researchers-warn-of-voice-vulnerabilities/|title=As voice assistants go mainstream, researchers warn of vulnerabilities|date=2018-05-10|work=CNET|access-date=2018-05-11|language=en}}</ref>
+
+In addition to unintentional actions and voice recording, another security and privacy risk associated with intelligent virtual assistants is malicious voice commands: An attacker who impersonates a user and issues malicious voice commands to, for example, unlock a smart door to gain unauthorized entry to a home or garage or order items online without the user's knowledge. Although some IVAs provide a voice-training feature to prevent such impersonation, it can be difficult for the system to distinguish between similar voices. Thus, a malicious person who is able to access an IVA-enabled device might be able to fool the system into thinking that he or she is the real owner and carry out criminal or mischievous acts.<ref>{{Cite journal|last=Chung|first=H.|last2=Iorga|first2=M.|last3=Voas|first3=J.|last4=Lee|first4=S.|date=2017|title=Alexa, Can I Trust You?|journal=Computer|volume=50|issue=9|pages=100–104|doi=10.1109/MC.2017.3571053|issn=0018-9162|pmc=5714311|pmid=29213147}}</ref>
+
+==See also==
+* [[Applications of artificial intelligence]]
+* [[Chatbot]]
+*[[Conversational user interface]]
+* [[Computer facial animation]]
+* [[Expert system]]
+* [[Home network]]
+* [[Intelligent agent]]
+* [[Knowledge Navigator]]
+* [[Microsoft Office Assistant]]
+* [[Natural language processing]]
+* [[Simulated reality]]
+* [[Software agent]]
+* [[Wizard (software)]]
+
+==References==
+{{reflist|30em}}
+
+{{Intelligent personal assistant software}}
+{{Natural language processing}}
+
+[[Category:Virtual assistants|*]]
+[[Category:Agent-based software]]
+[[Category:Customer service]]
+[[Category:Chatbots]]

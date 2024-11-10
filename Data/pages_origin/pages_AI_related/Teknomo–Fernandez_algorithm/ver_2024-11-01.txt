@@ -1,0 +1,73 @@
+{{redirect|TF Algorithm}}
+[[File:Street in Sendai.png|thumb|400px|The TF algorithm produces the background image from a video of a street with many pedestrians crossing.]]
+The '''Teknomo–Fernandez algorithm (TF algorithm)''', is an efficient algorithm for generating the background image of a given video sequence.
+
+By assuming that the background image is shown in the majority of the video, the algorithm is able to generate a good background image of a video in <math>O(R)</math>-time using only a small number of [[binary operations]] and Boolean bit operations, which require a small amount of memory and has built-in operators found in many programming languages such as [[C (programming language)|C]], [[C++]], and [[Java (programming language)|Java]].<ref name="TF">{{cite arXiv | last1 = Teknomo | first1 = Kardi | last2 = Fernandez | first2 = Proceso| title = Background Image Generation Using Boolean Operations | year = 2015 | class = cs.CV | eprint =1510.00889}}</ref><ref name="PCTF">{{cite book | last1 = Abu | first1 = Patricia Angela | last2 = Fernandez | first2 = Proceso| title = 2014 International Conference on Humanoid, Nanotechnology, Information Technology, Communication and Control, Environment and Management (HNICEM) | chapter = Performance Comparison of the Teknomo-Fernandez Algorithm on the RGB and HSV Colour Spaces | year = 2014 | pages = 1–6 | doi = 10.1109/HNICEM.2014.7016262 | isbn = 978-1-4799-4020-2 | s2cid = 15493318 }}</ref><ref name="ITF" />
+
+==History==
+[[File:Sample Colored Result.png|thumb|500px|The TF algorithm generates the colored background image and uses it for background subtraction.]]
+People tracking from videos usually involves some form of [[background subtraction]] to segment foreground from background. Once foreground images are extracted, then desired algorithms (such as those for [[Video tracking|motion tracking]], [[Optical motion tracking|object tracking]], and [[facial recognition system|facial recognition]]) may be executed using these images.<ref name="TF" /><ref name="ITF">{{cite thesis |last=Abu|first=Patricia Angela|date=March 2015|title=Improving the Teknomo–Fernandez Background Image Modeling Algorithm for Foreground Segmentation|type=Ph.D|publisher=Ateneo de Manila University|url=https://www.researchgate.net/publication/273445070}}</ref>
+
+However, [[background subtraction]] requires that the background image is already available and unfortunately, this is not always the case. Traditionally, the background image is searched for manually or automatically from the video images when there are no objects. More recently, automatic background generation through [[object detection]], [[medial filtering]], [[medoid filtering]], [[approximated median filtering]], [[linear predictive filter]], [[non-parametric model]], [[Kalman filter]], and [[adaptive smoothening]] have been suggested; however, most of these methods have high computational complexity and are resource-intensive.<ref name="TF" /><ref name="RTTF">{{cite conference |url=https://www.researchgate.net/publication/298791390 |title=Modifying the Teknomo–Fernandez Algorithm for Accurate Real-Time Background Subtraction | last1 = Abu | first1 = Patricia Angela | last2 = Fernandez | first2 = Proceso|date=March 2016| conference=Philippine Computing Science Congress}}</ref>
+
+The Teknomo–Fernandez algorithm is also an automatic background generation algorithm. Its advantage, however, is its computational speed of only <math>O(R)</math>-time, depending on the resolution <math>R</math> of an image and its accuracy gained within a manageable number of frames. Only at least three frames from a video is needed to produce the background image assuming that for every pixel position, the background occurs in the majority of the videos. Furthermore, it can be performed for both grayscale and colored videos.<ref name="TF" />
+
+==Assumptions==
+* The camera is stationary.
+* The light of the environment changes only slowly relative to the motions of the people in the scene.
+* The number of people does not occupy the scene for most of the time at the same place.
+
+Generally, however, the algorithm will certainly work whenever the following single important assumption holds: <blockquote>For each pixel position, the majority of the pixel values in the entire video contain the pixel value of the actual background image (at that position).<ref name="TF" /></blockquote>As long as each part of the background is shown in the majority of the video, the entire background image needs not to appear in any of its frames. The algorithm is expected to work accurately.<ref name="TF" />
+
+==Background image generation==
+===Equations===
+# For three frames of image sequence <math>x_1</math>, <math>x_2</math>, and <math>x_3</math>, the background image <math>B</math> is obtained using <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math>B = x_3(x_1\oplus x_2)+x_1x_2 </math><ref name="TF" />
+#The Boolean mode function <math>S</math> of the table occurs when the number of 1 entries is larger than half of the number of images such that<ref name="TF" /><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<math>S=\begin{cases} 1, & \text{if } \sum_{i=1}^n x_i\ge\left \lceil \frac n 2 + 1 \right\rceil, \text{ and } n\ge 3 \\
+0, &\text{otherwise} \end{cases}</math>
+# For three images, the background image <math>B</math> can be taken as the value
+::: <math>\bar{x}_1 x_2x_3+x_1\bar{x}_2 x_3+x_1x_2\bar{x}_3+x_1x_2x_3</math> <ref name="TF" />
+
+===Background generation algorithm===
+At the first level, three frames are selected at random from the image sequence to produce a background image by combining them using the first equation. This yields a better background image at the second level. The procedure is repeated until desired level <math>L</math>.<ref name="TF" />
+
+==Theoretical accuracy==
+At level <math>\ell</math>, the probability <math>p_\ell</math> that the modal bit predicted is the actual modal bit is represented by the equation <math>p_\ell = (p_{\ell-1})^3 + 3(p_{\ell-1})^2(1-p_{\ell-1})</math>.
+The table below gives the computed probability values across several levels using some specific initial probabilities. It can be observed that even if the modal bit at the considered position is at a low 60% of the frames, the probability of accurate modal bit determination is already more than 99% at 6 levels.<ref name="TF" />
+[[File:Probability Table.png|framed|center|alt=Computed probabilities table|This table gives the computed probability values across several levels using some specific initial probabilities. It can be observed that even if the modal bit at the considered position is at a low 60% of the frames, the probability of accurate modal bit determination is already more than 99% at six levels.]]
+
+==Space complexity==
+The space requirement of the Teknomo–Fernandez algorithm is given by the function <math>O(RF+R3^L)</math>, depending on the resolution <math>R</math> of the image, the number <math>F</math> of frames in the video, and the desired number <math>L</math> of levels. However, the fact that <math>L</math> will probably not exceed 6 reduces the space complexity to <math>O(RF)</math>.<ref name="TF" />
+
+==Time complexity==
+The entire algorithm runs in <math>O(R)</math>-time, only depending on the resolution of the image. Computing the modal bit for each bit can be done in <math>O(1)</math>-time while the computation of the resulting image from the three given images can be done in <math>O(R)</math>-time. The number of the images to be processed in <math>L</math> levels is <math>O(3^L)</math>. However, since <math>L \le 6</math>, then this is actually <math>O(1)</math>, thus the algorithm runs in <math>O(R)</math>.<ref name="TF" />
+
+==Variants==
+A variant of the Teknomo–Fernandez algorithm that incorporates the [[Monte-Carlo method]] named CRF has been developed. Two different configurations of CRF were implemented: CRF9,2 and CRF81,1. Experiments on some colored video sequences showed that the CRF configurations outperform the TF algorithm in terms of accuracy. However, the TF algorithm remains more efficient in terms of processing time.<ref name="CRF">{{cite journal | last1 = Abu | first1 = Patricia Angela | last2 = Chu | first2 = Varian Sherwin| last3 = Fernandez | first3 = Proceso| title = A Monte-Carlo-based Algorithm for Background Generation | url =https://www.researchgate.net/publication/273391116}}</ref>
+
+==Applications==
+* [[Object detection]]
+* [[Face detection]]
+* [[Face recognition]]
+* [[Pedestrian detection]]
+* [[Video surveillance]]
+* [[Motion capture]]
+* [[Human-computer interaction]]
+* Content-based video coding
+* Traffic monitoring
+* Real-time [[gesture recognition]]
+
+==References==
+{{reflist}}
+
+==Further reading==
+* {{cite thesis |last=Chu |first=Varian Sherwin B. |title=Background image reconstruction using random frame sampling and logical bit operations |date=2013 |publisher=Ateneo de Manila University }}
+*{{cite thesis |last=Abu |first=Patricia Angela R. |title=Improving the Teknomo-Fernandez Background Image Modeling Algorithm for Foreground Segmentation |date=2015 |publisher=Ateneo de Manila University }}
+
+==External links==
+*[https://arxiv.org/abs/1510.00889 Background Image Generation Using Boolean Operations] – describes the TF algorithm, its assumptions, processes, accuracy, time and space complexity, and sample results.
+* [https://www.researchgate.net/publication/273391116_A_Monte-Carlo-based_Algorithm_for_Background_Generation A Monte-Carlo-based Algorithm for Background Generation] – a variant of the Teknomo–Fernandez algorithm that incorporates the [[Monte-Carlo method]] was developed in this study.
+
+{{DEFAULTSORT:Teknomo-Fernandez algorithm}}
+[[Category:Mathematical examples]]
+[[Category:Image processing]]
+[[Category:Computer vision]]

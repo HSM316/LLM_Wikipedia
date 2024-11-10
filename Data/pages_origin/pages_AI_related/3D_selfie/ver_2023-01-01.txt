@@ -1,0 +1,55 @@
+[[File:3D selfie in 1-20 scale as received from Shapeways, the printer company for Madurodam's Fantasitron IMG 4557 FRD.jpg|thumb|A 3D selfie in 1:20 scale]]
+[[File:Doob NY SOHO 3D selfie photo booth IMG 4948 FRD.jpg|thumb|Doob NY SOHO 3D selfie photo booth IMG 4948 FRD]]
+A '''3D selfie''' is a [[3D printing|3D-printed]] scale replica of a person or their face. These [[Three-dimensional space|three-dimensional]] [[selfie]]s are also known as 3D portraits, 3D figurines, 3D-printed figurines, mini-me figurines and miniature statues. In 2014 a first 3D printed bust of a President, [[Barack Obama]], was made.<ref>{{cite web|url= https://3dprint.com/6595/obama-3d-printed/|title= Barack Obama Has Become the First President to be 3D Scanned and Printed|last=Milkert|first=Heidi|date=2014-06-18|website=3DPrint.com}}</ref> 3D-digital-imaging specialists used handheld 3D scanners to create an accurate representation of the President.  
+
+== Description ==
+The capture of a subject as a [[3D modeling|3D model]] can be accomplished in many ways. One of the methods, is called [[photogrammetry]]. Many systems use one or more [[digital camera|digital cameras]] to take 2D pictures of the subject, under normal lighting, under [[Structured light|projected light patterns]], or a combination of these. Inexpensive systems use a single camera which is moved around the subject in 360° at various heights, over minutes, while the subject stays immobile.<ref name="Popsci-2015-selfie-future-is-3d-figure" />   More elaborate systems have a vertical bar of cameras rotate around the subject, usually achieving a full scan in 10 seconds.<ref name="Ibtimes-3d-printed-selfie-service"/>  Most expensive systems have an enclosed 3D photo booth with 50 to 100 cameras statically embedded in walls and the ceiling, firing all at once, eliminating differences in image capture caused by movements of the subject.<ref name="Wired-2015-3d-printed-selfies"/> <ref name="Huffingtonpost-taking-a-3d-selfie"/><ref>{{cite web|url=https://www.tagbox.co.il/|title=Photo booth for events}} Friday, 12 April 2019 </ref> A piece of software then [[3D reconstruction from multiple images|reconstructs a 3D model]] of the subject from these pictures.<ref name="Wired-2015-3d-printed-selfies" /> <ref name="Popsci-2015-selfie-future-is-3d-figure" />
+One of the 3D photo booth, which creates life-like portraits, is called Veronica Chorographic Scanner.<ref>{{cite web|url=https://www.youtube.com/watch?v=zUCnAy1ZfxM|title= Experiencing the Veronica Scanner at the Royal Academy of Arts|author= Karin Giannone|date=27 September 2016|website=YouTube|access-date=2 October 2019}}</ref> The scanner participated in the project of Royal Academy of Arts, where people could have themselves scanned. The scanner utilized 8 cameras taking 96 photographs of a person from each angle. Photogrammetry scanning is generally considered more life-like, than scanning with 3D scanners.<ref>{{cite web|url=https://3dprint.com/144052/veronica-scanner-3d-portraits/|title= The High-Resolution Veronica Scanner Produces 3D Portraits More Realistic Than Photographs|last=Scott|first=Clare|date=2016-07-28|website=3DPrint.com}}</ref>  
+
+Another method for capturing a 3D selfie uses dedicated 3D scanning equipment which may more accurately capture geometry and texture, but take longer to perform. Scanners may be handheld, tripod mounted or fitted to another system that will allow the full geometry of a person to be captured. One of the well-known full body 3D scanners are Shapify booth, based on Artec Eva 3D scanners and Twindom Twinstant Mobile.<ref>{{cite web|url= https://www.aniwaa.com/3d-printed-figurines/|title=3D printed figurines: 3D portraits, 3D figurines and 3D selfies|last=Arrighi|first=Pierre-Antoine|date=2018-07-05|website=Aniwaa}}</ref> 
+
+Production of 3D selfies<ref>{{Cite web|url=https://www.3dgeneration.com/3d-figuren/|title = 3D-Figuren Drucken &#124; Revolutionäre 3D-Body Scan und 3D-Druck}}</ref> is enabled by 3D printing technologies. This includes the ability to 3D print in full color using [[Powder bed and inkjet head 3D printing|gypsum-based binder jetting]] techniques, giving the figurine a sandstone-like texture and look.<ref name="Huffingtonpost-taking-a-3d-selfie" /> Other 3D printing process may be used depending on the desired result.
+
+<gallery mode="packed" heights="140">
+File:Madurodam Shapeways 3D selfie in 1 20 scale after a second spray of varnish FRD.jpg|A 3D selfie seen from various angles
+File:Fantasitron photo booth at Madurodam can scan up to two people at a time IMG 3797 FRD.jpg|Fantasitron 3D photo booth at [[Madurodam]]
+</gallery>
+
+== See also ==
+* [[3D reconstruction]]
+* [[Digitization]]
+* [[Depth map]]
+* [[Full body scanner]]
+* [[Photogrammetry]]
+* [[Range imaging]]
+
+== References ==
+{{reflist|30em|refs=
+
+<ref name="Wired-2015-3d-printed-selfies">{{cite web |title=Take Your Selfie Game to the Next Level With a 3-D Printed Statue of Yourself|url=https://www.wired.com/2015/02/3d-printed-selfies/|publisher=Wired|date=2015-02-16|access-date=2017-12-22}}</ref>
+
+<ref name="Popsci-2015-selfie-future-is-3d-figure">{{cite web |title=The Selfie Of The Future Is A 3D Figure|url=https://www.popsci.com/selfie-future-is-3d-figure|publisher=Popular Science|date=2015-09-12|access-date=2017-12-22}}</ref>
+
+
+<ref name="Huffingtonpost-taking-a-3d-selfie">{{cite web |title=This Is What It's Like To Have A 3D Selfie Taken|url=http://www.huffingtonpost.ca/madaline-zanni/taking-a-3d-selfie_b_10723208.html
+|publisher=HuffPost|date=2016-06-29|access-date=2017-12-23}}</ref>
+
+
+<ref name="Ibtimes-3d-printed-selfie-service">{{cite web |title=Asda Launches £60 3D-Printed Selfie Service for UK Shoppers|url=http://www.ibtimes.co.uk/asda-launches-60-3d-printed-selfie-service-uk-shoppers-1454040
+|work=International Business Times|date=2014-06-25|access-date=2017-12-23}}</ref>
+
+}}
+
+{{Commons category}}
+
+{{3d printing}}
+
+[[Category:3D printing]]
+[[Category:Computer vision]]
+[[Category:Applications of computer vision]]
+[[Category:Image processing]]
+[[Category:3D imaging]]
+[[Category:Self-portraits]]
+[[Category:Narcissism]]
+[[Category:3D scanners]]
+[[Category:Photogrammetry]]

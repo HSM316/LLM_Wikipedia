@@ -1,0 +1,25 @@
+{{Short description|Image processing process}}
+{{more citations needed|date=November 2012}}
+
+'''Local ternary patterns''' (LTP) are an extension of [[local binary patterns]] (LBP).<ref>{{Cite journal |last=Xiaoyang Tan |last2=Triggs |first2=Bill |date=June 2010 |title=Enhanced Local Texture Feature Sets for Face Recognition Under Difficult Lighting Conditions |url=http://ieeexplore.ieee.org/document/5411802/ |journal=IEEE Transactions on Image Processing |volume=19 |issue=6 |pages=1635–1650 |doi=10.1109/TIP.2010.2042645 |issn=1057-7149}}</ref><ref>{{Cite journal |last=Ji |first=Luping |last2=Ren |first2=Yan |last3=Pu |first3=Xiaorong |last4=Liu |first4=Guisong |date=2018-07-01 |title=Median local ternary patterns optimized with rotation-invariant uniform-three mapping for noisy texture classification |url=https://ui.adsabs.harvard.edu/abs/2018PatRe..79..387J |journal=Pattern Recognition |volume=79 |pages=387–401 |doi=10.1016/j.patcog.2018.02.009}}</ref> Unlike LBP, it does not threshold the pixels into 0 and 1, rather it uses a threshold constant to threshold [[pixel]]s into three values. Considering k as the threshold constant, c as the value of the center pixel, a neighboring pixel p, the result of threshold is:
+
+:<math>
+\begin{cases}
+1, & \text{if } p>c+k \\
+0, & \text{if } p>c-k \text{ and } p<c+k \\
+-1 & \text{if } p<c-k \\
+\end{cases}
+</math>
+
+In this way, each thresholded pixel has one of the three values. Neighboring pixels are combined after thresholding into a ternary pattern. Computing a [[histogram]] of these [[Ternary numeral system|ternary values]] will result in a large range, so the ternary pattern is split into two binary patterns. Histograms are concatenated to generate a descriptor double the size of LBP.
+
+== See also ==
+* [[Local binary patterns]]
+
+==References==
+{{Reflist}}
+
+[[Category:Computer vision]]
+
+
+{{comp-sci-stub}}

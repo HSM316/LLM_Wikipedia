@@ -1,0 +1,396 @@
+{{Short description|none}}
+The following list encompasses notable [[smart TV]] platforms and [[application software]] that are used as [[software framework]] and [[middleware]] platforms used by more than just one manufacturer.
+
+==Smart TV middleware providers to multiple third parties==
+For TV sets and companion boxes vendors, available under OEM license.
+
+===Smart TV framework platforms managed by standardization bodies or technology consortium===
+{| class="wikitable sortable"
+|-
+! Framework !! Managed by !! Comments
+|-
+| [[Hybrid Broadcast Broadband TV|HbbTV]] || HbbTV Association || An [[HTML5]]-based application framework middleware software platform provided by the Hybrid Broadcast Broadband TV association.
+|-
+| [[CE-HTML]] || [[Consumer Electronics Association|CEA (Consumer Electronics Association)]] || As part of Web4CE.
+|-
+| [[OIPF]] || [[Open IPTV Forum]] || As of June 2014, OIPF is now part of the [[Hybrid Broadcast Broadband TV|HbbTV]] Association.
+|-
+| [[Tru2way]] || [[CableLabs]] || 
+|}
+
+===Smart TV framework platforms managed by single companies or foundations===
+
+{| class="wikitable sortable"
+|-
+! scope="col" style="width: 150px;" | Framework !! scope="col" style="width: 150px;" | Managed by !! scope="col" style="width: 250px;" |  Used by || Comment
+|-
+| [[Android TV]] || [[Google]] || {{plainlist|
+*Airtel (Xstream Box, Xstream Stick and Internet TV)
+*AIS (Playbox) 
+*Akari
+*Asianet
+*Asus
+*Bang & Olufsen
+*Benq
+*Bouygues Telecom (Bbox Miami)
+*CCC Mobile (Air Stick)<ref>{{cite web|url=https://japan.cnet.com/article/35093972/ |title=The world's smallest Android TV Air Stick |publisher=CNET JAPAN |date=December 19, 2016 |accessdate=October 25, 2017}}</ref>
+*ChannelMaster
+*DirecTV
+*Dish
+*Epson
+*First Media (X1, X1-4K, X1 Prime, X1 Prime-c, X1 Prime-i and One Stream)
+*Free/Iliad (Freebox Mini 4K)
+*Hathway
+*Hisense
+*Grundig
+*KDDI
+*LeEco (Super4 X Series)
+*LG HelloVision
+*LG Uplus
+*Motorola
+*Nex Parabola (NexVidio)
+*Nokia
+*NVIDIA (Shield TV)
+*OnePlus
+*Panasonic
+*PCCW (Now E)
+*Philips
+*Polytron
+*RCA
+*Realme
+*Sharp
+*Skyworth
+*Sony
+*StarHub (StarHub Go Streaming Box, StarHub TV+ Box and StarHub TV+ Pro)
+*Tata Play (binge+)
+*TCL/Thomson
+*Technicolor<ref>{{Cite web|url=http://www.technicolor.com/android-tv|title=Android TV|website=www.technicolor.com|language=en|access-date=2019-07-26}}</ref>
+*Telekom Malaysia (Unifi Plus Box)
+*Telkom Indonesia (IndiHome)
+*TiVo (Stream 4K)
+*Toshiba
+*TVB (myTV SUPER Box and TVB Anywhere Android TV Box)
+*Verizon (Stream TV)
+*Vestel
+*Westinghouse 
+*WeWatch
+*Xiaomi
+*ZTE
+}}
+|| Gives access to Android apps through the Play Store.
+|-
+| [[Boxee]] || Boxee, Inc || D-Link || Popular [[Fork (software development)|fork]] of the [[Kodi (software)|Kodi/XBMC]] media center software with custom [[graphical user interface]] and some [[Proprietary software|proprietary]] [[application framework]] for [[Application software|apps]].<ref>{{cite web |url=http://scoop.intel.com/ibc-2011-smart-tv-qa-with-iomega-olivier-deternod/ |title=IBC 2011: Smart TV Q&A with iomega's Olivier D'Eternod |publisher=Scoop.intel.com |date=September 15, 2011 |accessdate=January 17, 2012 |url-status=dead |archiveurl=https://web.archive.org/web/20120102011951/http://scoop.intel.com/ibc-2011-smart-tv-qa-with-iomega-olivier-deternod/ |archivedate=January 2, 2012 }}</ref><ref>{{cite web|url=http://www.worldtvpc.com/blog/boxee-online-tv-moving-computer-mobile-connected-devices/ |title=Boxee See Internet TV Moving Away From The Computer To Mobile And Connected TV |publisher=Worldtvpc.com |date=December 29, 2011 |accessdate=January 17, 2012}}</ref>
+|-
+| [[Amazon Fire TV|Fire TV]] || [[Amazon Video|Amazon]] || {{plainlist|
+*Westinghouse
+*Element
+*Grundig
+*Insignia
+*JVC
+*Toshiba<ref>[https://www.bestbuy.com/site/toshiba-55-class-led-2160p-smart-4k-uhd-tv-with-hdr-fire-tv-edition/6194911.p?skuId=6194911 Toshiba - 55” Class – LED - 2160p – Smart - 4K UHD TV with HDR – Fire TV Edition]</ref>
+}}
+|
+|-
+| [[Firefox OS]] for TV, My Home Screen || Mozilla || Panasonic || Panasonic's Smart TVs, including their new 4K TVs, continue to feature Mozilla's open source Firefox OS, despite Mozilla lowering its development priority on developing the operating system. <ref>{{cite web|url=http://www.trustedreviews.com/news/panasonic-sticks-with-firefox-os-for-smart-tv-range | title=Panasonic Sticks With Firefox OS for Smart TV Range| date=March 2016}}</ref> Panasonic is continuing to develop their fork, calling it My Home Screen while Mozilla has stated that they will continue to support and work with Panasonic<ref>{{cite web|url=https://blog.mozilla.org/futurereleases/2016/02/04/next-steps-for-connected-devices/ | title=Next Steps for Connected Devices}}</ref><ref>{{cite web|url=http://www.channelnews.com.au/ces-2017-panasonic-announces-new-oled-tv-and-4k-blu-ray-players/ | title=Panasonic Announces New OLED TV and 4K Blu Ray Players}}</ref>
+|-
+| Frog || Wyplay || SFR || Used by some IPTV operators, such as SFR in France on its set-top-box
+|-
+| [[Google TV (smart TV platform)|Google TV]] 
+(original, not to be confused with 2020-released interface gradually replacing Android TV) 
+| Google || {{plainlist|
+*Asus
+*Hisense
+*LG
+*Logitech
+*Netgear
+*SFR
+*Sony
+*TCL
+*Vizio
+}}
+| [[Android (operating system)|Android]]-based platform.<ref>{{cite web|url=http://www.linuxfordevices.com/c/a/News/Google-TV-2-rolls-out/ |title=Google TV 2.0 gains Honeycomb, Android Market |archiveurl=https://archive.today/20120905214746/http://www.linuxfordevices.com/c/a/News/Google-TV-2-rolls-out/ |archivedate=2012-09-05 |url-status=dead }}</ref> Its development stopped in 2013<ref>{{cite web|url=https://code.google.com/p/googletv-issues/issues/list|title=Googletv issue tracker}}</ref> and it is replaced by [[Chromecast]] and [[Android TV]].
+|-
+| [[Liberty Global#Horizon TV|Horizon TV]] || [[Liberty Global]] || || A cross-platform platform based [[Fork (software development)|fork]] of the [[Kodi (software)|Kodi/XBMC]] media center software with proprietary middleware framework for video on demand and handling DRM for streaming cable television channels.
+|-
+| httvLink || HTTV || {{plainlist|
+*Kaon
+*Pace
+*Sagemcom
+*Smit
+}}
+|| [[Hybrid Broadcast Broadband TV|HbbTV]]-compliant
+|-
+| Inview || [[Inview Technology Ltd]] || {{plainlist|
+*Digifusion
+*Thomson
+*Sony
+}}
+|| Connects an ordinary TV (or set-top box) to get [[IPTV]].<ref>{{cite web|last=Smith |first=Tony |url=http://www.reghardware.com/2012/01/23/iptv_week_acetrax_signs_up_for_inview_settop_box_ui/ |title= Acetrax joins Inview VoD squad |date=23 January 2012 | accessdate=8 March 2012}}</ref><ref>{{cite web |url=http://www.digitaltveurope.net/19750/acetrax--to--launch--online--movie--service--with--inview--platform/ |title=Acetrax to launch online movie service with Inview platform |date=2011 |publisher=DigitalTV.net |accessdate=2012-08-03 |url-status=dead |archiveurl=https://web.archive.org/web/20160304094902/http://www.digitaltveurope.net/19750/acetrax--to--launch--online--movie--service--with--inview--platform/ |archivedate=2016-03-04 }}</ref>
+|-
+| JRiver || JRiver ||
+|| Runs on Windows, OSX, Linux, and Android. Features similar to Plex or Kodi. Closed source.
+|-
+| [[Kodi (software)|Kodi Entertainment Center]] (formerly XBMC / Xbox Media Center) || XBMC Foundation || || Kodi/XBMC is [[royalty-free]] and [[cross-platform]]. The core code is written in [[C++]] and is open-source licensed under [[GNU General Public License|GNU GPL v2]]. It offers the possibility for easy [[rebranding]] by an [[original design manufacturer]] (ODM) or [[original equipment manufacturer]] (OEM), with customizing of interface look and feel using [[skin (computing)|skin]]s, and simple [[Plug-in (computing)|plug-ins]] from [[third-party developer]]s, available via [[Python (programming language)|Python]] scripts for content extensions. Due to these reaspns, many [[systems integrator]]s have created modified versions of Kodi, along with a [[just enough operating system|JeOS (just enough operating system)]] made for Kodi/XBMC that are mostly used as a [[software appliance]] suite in a variety of devices including [[smart TV]]s, [[set-top box]]es, [[digital signage]], [[hotel television systems]], [[In-flight entertainment|in-flight entertainment platforms]], and network connected [[digital media player]]s.
+|-
+| [[MeeGo]] || [[Nokia]], [[The Linux Foundation]] || || Middleware for [[smart TV]]. Now split into [[Tizen]], [[Mer (software distribution)|Mer]], and [[Sailfish OS]])<ref>[https://meego.com/devices/smart-tv Smart TV] {{Webarchive|url=https://web.archive.org/web/20121022171536/https://meego.com/devices/smart-tv |date=2012-10-22 }} MeeGo for Smart TV</ref> ([[Linux Foundation]], [[Intel Corporation|Intel]], [[AMD]]<ref>{{cite web|url=http://www.h-online.com/open/news/item/AMD-to-contribute-to-MeeGo-development-1136583.html |title=AMD to contribute to MeeGo development |publisher=The H open |date=November 15, 2010 |accessdate=January 27, 2011}}</ref>), currently based on a derivative fork of [[Kodi (software)|Kodi/XBMC]] media center software<ref>{{cite web|url=http://wiki.meego.com/MeeGo_Smart_TV_for_Trimslice |title=MeeGo Smart TV for Trimslice |publisher=Wiki.meego.com |date=September 21, 2011 |accessdate=January 17, 2012 |url-status=dead |archiveurl=https://web.archive.org/web/20120309223055/http://wiki.meego.com/MeeGo_Smart_TV_for_Trimslice |archivedate=March 9, 2012 }}</ref><ref>{{cite web |url=http://www.madeo.co.uk/?p=851 |title=XBMC + MeeGo hardfp on trimslice – nvidia tegra2 (MeeGo TV) |publisher=Madeo.co.uk |date=August 1, 2011 |accessdate=January 17, 2012 |archive-url=https://web.archive.org/web/20120324191159/http://www.madeo.co.uk/?p=851 |archive-date=March 24, 2012 |url-status=dead }}</ref><ref>{{cite web|author= |url=https://www.youtube.com/watch?v=rfhiz_ORbwE |title=XBMC + MeeGo hardfp on trimslice – nvidia tegra2 (MeeGo TV) |work=Youtube |date=August 1, 2011 |accessdate=January 17, 2012}}</ref><ref>{{cite web |url=https://build.pub.meego.com/package/show?package=xbmc-gles&project=home%3Aarfoll%3Axbmc-testing |title=Show Package XBMC-gles (Project home:arfoll:XBMC-testing) - MeeGo Community Open Build Service |accessdate=2012-11-13 |url-status=dead |archiveurl=https://web.archive.org/web/20120402234722/https://build.pub.meego.com/package/show?package=xbmc-gles&project=home%3Aarfoll%3Axbmc-testing |archivedate=2012-04-02 }} xbmc-gles</ref>
+|-
+| [[Ericsson Mediaroom|Mediaroom]] || [[Ericsson]] (formerly [[Microsoft]]) || Offered by 90 operators around the world || Middleware for pay-TV operators<ref>{{cite web|url=https://www.engadget.com/2007/06/18/microsoft-mediaroom-iptv-gets-a-makeover/ |title=Microsoft Mediaroom: IPTV gets a makeover |publisher=Engadget.com |accessdate=January 17, 2012}}</ref><ref>{{cite web|url=https://www.engadget.com/2009/01/08/microsoft-unveils-all-new-time-shifting-interactive-features-fo/ |title=Microsoft unveils all new time shifting, interactive features for Mediaroom IPTV |publisher=Engadget.com |accessdate=January 17, 2012}}</ref><ref>{{cite web|url=https://www.engadget.com/2011/09/09/new-mediaroom-clients-to-bring-microsofts-tv-platform-everywher/ |title=New Mediaroom clients to bring Microsoft's TV platform everywhere this year |publisher=Engadget.com |accessdate=January 17, 2012}}</ref>
+|-
+| OpenTV || [[Nagravision]] || {{plainlist|
+*BSkyB (UK)
+*Sky Italia (Italy)
+*Digital+ (Spain)
+*Numericable (France)
+*EchoStar (US)
+}}
+|| Middleware for pay-TV operators
+|-
+| Vewd (formerly [[Opera (web browser)#Devices|Opera TV]]) || Vewd || {{plainlist|
+* Hisense
+*Mediatek
+*Humax
+*Samsung
+*Sony
+*Swisscom
+*Vestel
+}}
+|
+|-
+|VIDAA ||VIDAA International || {{plainlist|
+*Hisense
+*Toshiba
+*Sharp
+*Many other OEMs
+}}
+|Smart TV operating system giving access to 250+ global & local content apps and millions of hours of content being watched every month 
+|-
+| Oregan Media Browser 5 || [[Oregan Networks]] || {{plainlist|
+*British Telecom
+*Telefónica
+*NTT
+}}
+|| Middleware for pay-TV operators, deployed by large telecoms and cable operators such as BT and Telefónica on hybrid STBs
+|-
+| [[Plex (software)|Plex]] || Plex, Inc || || Closed source cross-platform media center with proprietary streaming functionality to numerous devices. Started out as a popular [[Fork (software development)|fork]] of the [[Kodi (software)|Kodi/XBMC]] media center software.
+|-
+|PowerUp Suite
+|Zodiac Interactive
+| {{plainlist|
+*Cablevision (Altice ) 
+*Charter Communications 
+*Rogers
+}}
+|Middleware, presentation engine, low level adaptation, back office mediation for Tier 1 through Tier 3 pay TV operators
+|-
+|Roku TV <ref>{{cite web|url=https://support.roku.com/hc/en-us/articles/209403268-Roku-TV-Introduction|title=Roku|last=Roku|website=Roku|access-date=2016-03-12|archive-url=https://web.archive.org/web/20160313043453/https://support.roku.com/hc/en-us/articles/209403268-Roku-TV-Introduction|archive-date=2016-03-13|url-status=dead}}</ref> || [[Roku]] || {{plainlist|
+*TCL
+*Sharp
+*Hisense
+*Haier
+*Philips
+*Sanyo
+*Element
+*JVC
+*RCA
+*Hitachi
+*Magnavox
+*Westinghouse
+*Insignia <ref>{{cite web|url=https://www.insigniaproducts.com/search?query=roku+tv |title=Insignia Product Page |publisher=insigniaproducts.com |date=December 17, 2021 |accessdate=December 17, 2021}}</ref>
+}}
+|
+|-
+| RDK (Reference Development Kit) || RDK Management, LLC || {{plainlist|
+*Cisco
+*Humax
+*Pace
+}}
+|
+|-
+| Smart TV Alliance || Smart TV Alliance || {{plainlist|
+*LG
+*Panasonic (VieraConnect)
+*Philips / TP Vision
+*Toshiba (CloudTV) 
+}}
+| A common SDK for TV app development and publishing for TV vendors.
+|-
+| [[List of software based on XBMC#ToFu Media Platform and ToFu Media Center by Pivos|ToFu Media Platform]] || Pivos || {{plainlist|
+* Pivos
+*PlayJam
+}}
+| Cross-platform fork of [[Kodi (software)|Kodi/XBMC]] media center licensed to third parties and other commercial partners as OEM.
+|-
+| [[Ubuntu TV]] || [[Canonical Ltd.|Canonical]] || || [[Ubuntu (operating system)|Ubuntu operating system]]<ref>{{cite web|url=http://www.extremetech.com/computing/112601-canonical-outs-ubuntu-tv-brave-or-stupid |title=Canonical outs Ubuntu TV: Brave or stupid? |publisher=Extremetech.com |date=January 9, 2012 |accessdate=January 17, 2012}}</ref><ref>{{cite web |last=Schofield |first=Jack |url=http://www.zdnet.co.uk/blogs/jacks-blog-10017212/ces-2012-free-ubuntu-tv-has-service-and-revenue-fees-10025161/?s_cid=938 |title=CES 2012: free Ubuntu TV has service and revenue fees |publisher=Zdnet.co.uk |date=January 9, 2012 |accessdate=January 17, 2012 |url-status=dead |archiveurl=https://web.archive.org/web/20120309052714/http://www.zdnet.co.uk/blogs/jacks-blog-10017212/ces-2012-free-ubuntu-tv-has-service-and-revenue-fees-10025161/?s_cid=938 |archivedate=March 9, 2012 }}</ref><ref>{{cite web|url=http://www.linuxfordevices.com/c/a/News/Canonical-unveils-Ubuntu-TV-/ |title=Unity-based Ubuntu TV takes on Google TV |archiveurl=https://archive.today/20120906165702/http://www.linuxfordevices.com/c/a/News/Canonical-unveils-Ubuntu-TV-/ |archivedate=2012-09-06 |url-status=dead }}</ref> based platform, with [[Unity Next]] user interface for TV.
+|-
+|Virtuoso
+|RCA
+|RCA
+|A closed source Operation system that supports only 2.4ghz Wifi, offers apps Netflix, Twitter, YouTube, Facebook, Pandora, Accuweather and Mirracast screen share.
+|-
+| [[Yahoo! Smart TV]] (formerly Yahoo! Connected TV) || [[Yahoo!]] || {{plainlist|
+*Mediatek
+*Samsung
+*Sony
+*Trident
+*Toshiba
+*Vizio (Internet Apps Plus)
+}}
+|
+|-
+|Shijiu TV
+|Shijiu, Inc
+| {{plainlist|
+*Samsung
+*LG
+*TCL
+*Skyworth
+*Alibaba
+* various OTT boxes
+}}
+|Middleware for internet TV. A cross-platform high-performance OpenGL based HTML5 engine licensed to third parties and other commercial partners as OEM. Also known as 'QCast'.
+|}
+
+==Smart TV platforms utilized by vendors==
+Includes first and third-party solutions.
+
+{| class="wikitable sortable"
+|+
+|-
+! Vendor !! Platform !! Devices
+|-
+| Amazon || [[Amazon Fire TV|Fire TV]] || For Fire TV devices, including Fire TV Stick.
+|-
+| rowspan="2" | Apple || [[tvOS]] || For Apple TV devices. [[iOS]]-based, with an app store. For [[Apple TV]] generation 4 and later.
+|-
+| [[Apple TV#Software|Apple TV Software]] || For Apple TV devices, generations 1 to 3. [[iOS]]-based. Initially based on [[Mac OS X Tiger]] and [[Front Row (software)|Front Row]].
+|-
+| Google || [[Chromecast]] || For Chromecast HDMI dongles.
+|-
+| Haier || [[Roku TV]] || For TV sets.
+|-
+| rowspan="3" | Hisense || [[Android TV]] || For TV sets.
+|-
+| [[Roku TV]] || For TV sets.
+|-
+| VIDAA / VIDAA U|| For TV sets.
+|-
+| Hitachi || [[Roku TV]] ||
+|-
+| Huawei/Honor || [[Harmony OS|HarmonyOS]] || For TV sets.
+|-
+| Insignia || [[Roku TV]] || For TV sets.
+|-
+| rowspan="2" | LG || [[webOS]] Smart TV || Current solution for TV sets. Used on Smart TVs released after 2014.<ref>{{cite web|url=http://www.lgnewsroom.com/newsroom/contents/64104 |title=LG MAKES SMART TV SIMPLE WITH NEW WEBOS SMART TV PLATFORM |publisher=LG |accessdate=January 7, 2014}}</ref>
+|-
+| [[NetCast]] || Former solution for TV sets. Used on Smart TVs released before 2014.<ref>{{cite web|url=http://www.lg.com/global/smarttv/index.jsp |title=Smart TV |publisher=Lg.com |accessdate=January 17, 2012}}</ref><ref>{{cite web|url=http://www.lg.com/us/tv-audio-video/discoverlgtvs/smarttv/index.jsp |title=LG Smart TV – Access the World of Entertainment using the LG Smart TV |publisher=Lg.com |accessdate=January 17, 2012}}</ref><ref>{{cite web|url=http://www.lg.com/us/tv-audio-video/discoverlgtvs/smarttv/easy-to-use.jsp |title=LG Smart TV – Easily Connect, Stream and Share with the new LG Smart TV |publisher=Lg.com |accessdate=January 17, 2012}}</ref><ref>{{cite web|url=http://www.lg.com/au/technology/smart-tv/index.jsp |title=Smart TV |publisher=Lg.com/au |accessdate=June 17, 2012}}</ref><ref>{{cite web|author=Kat Hannaford|url=https://gizmodo.com/5627132/internet+connected-tv-apps-system-renamed-to-smart-tv-by-lg |title=Internet-Connected TV Apps System Renamed to "Smart TV" by LG |publisher=Gizmodo.com |date=September 1, 2010 |accessdate=January 17, 2012}}</ref>
+|-
+| rowspan="2" | Microsoft || [[Xbox One]] || For Xbox One game console. More Smart TV features and TV apps expected with the Windows 10 update, that include the Windows Universal App Store.
+|-
+| [[Xbox 360]] || For Xbox 360 game console, with smart TV features.
+|-
+| Netgear || NeoTV || For NeoTV streaming players.
+|-
+| Nvidia || [[Android TV]] || For Nvidia Shield TVs.
+|-
+| rowspan="3" | Panasonic || [[Viera Cast]] and Viera Connect || For TV sets. The newer TV models now use the [[Firefox OS]] TV platform (no longer vendor specific).
+|-
+| My Home Screen || For TV sets.
+|-
+| Android TV || For TV sets. Since 2020.
+|-
+| rowspan="2" | Philips || [[Android TV]] || For TV sets.
+|-
+| Net TV || Former solution for TV sets. The newer TV models use the [[Android TV]] platform
+|-
+| rowspan="2" | Samsung || [[Tizen]] OS for TV || For newer TV sets.
+|-
+| [[Samsung Smart TV]] (Orsay OS<ref>https://github.com/Samsung/cordova-sectv-orsay</ref>) || Former solution for TV sets and connected Blu-ray players. Now replaced by Tizen OS.<ref>{{cite web|url=http://www.samsung.com/us/article/the-wonder-of-samsung-smart-tvs |title=The Wonder of Samsung Smart TVs |publisher=Samsung.com |accessdate=January 17, 2012|archiveurl=https://web.archive.org/web/20111116022503/http://www.samsung.com/us/article/the-wonder-of-samsung-smart-tvs|archivedate=November 16, 2011|url-status=dead}}</ref>
+|-
+| rowspan="4" | Sharp	|| [[Android TV]] || For TV sets.
+|-
+| AQUOS NET+ || Former solution for TV sets.
+|-
+| [[Roku TV]] || For TV sets.
+|-
+| SmartCentral || Former solution for TV sets.
+|-
+| rowspan="3" | Sony || [[Android TV]]|| For TV sets.
+|-
+| [[PlayStation TV]] with [[Sony Entertainment Network]] || For PlayStation game console.<ref>{{cite web|url=http://www.sony.co.uk/hub/sony-entertainment-network/tv-home-cinema|title=Sony Entertainment Network|access-date=2013-06-24|archive-url=https://web.archive.org/web/20130619172252/http://www.sony.co.uk/hub/sony-entertainment-network/tv-home-cinema|archive-date=2013-06-19|url-status=dead}}</ref><ref>{{cite web|url=https://www.engadget.com/2013/09/09/ps-vita-tv-editorial/|title=Breaking down the PS Vita TV: Why Sony's $100 set-top box is more than a consolation prize|website=Engadget}}</ref>
+|-
+| Sony Internet TV (Sony Apps) || Former solution for TV sets. The newer TV models use the [[Android TV]] platform (no longer vendor specific).
+|-
+| rowspan="3" | TCL || [[Android TV]] || For TV sets. The newer TV models use the Roku TV platform
+|-
+| [[Roku TV]] || For TV sets.
+|-
+| Smart TV 2 || Former solution for TV sets.
+|-
+| TiVo || [[TiVo]] || For TiVo DVR box.
+|-
+| rowspan="3" | Toshiba || [[Android TV]] || For TV sets.
+|-
+| Toshiba Places || Former solution for TV sets.
+|-
+|VIDAA
+|For TV sets<ref>{{Cite web|title=Toshiba 49" Smart HD TV (49L5865)|url=https://toshibatv-in.com/toshiba-49-smart-hd-tv-49l5865/|access-date=2020-11-10|website=Toshiba TV India|language=en-US}}</ref>
+|-
+| Sling Media || [[Slingbox]] || For Slingbox set-top-boxes.
+|-
+| Skyworth || [[Android TV]] || For TV sets.
+|-
+|Vizio
+|[[SmartCast]]
+|For TV sets.
+|-
+| Western Digital || WD TV || For WD TV boxes.
+|-
+| rowspan="4" | Westinghouse || [[Android TV]] || For TV sets.
+|-
+| [[Amazon Fire TV|Fire TV]] || For TV sets.
+|-
+| [[Roku TV]] || For TV sets.
+|-
+| [[Samba TV]] || Former solution for TV sets.
+|-
+| rowspan="2" | [[Xiaomi]] || [[PatchWall]] based on [[Android_(operating_system)|Android]] || For TV sets in mainland China, India, Indonesia
+|-
+| [[Android TV]] || For TV sets in global markets (models: 5ASP/5ARU/6ARG), Mi Box line of set top boxes and Xiaomi TV Stick line of streaming dongles.
+|}
+
+==See also==
+{{Portal|Television}}
+*[[Smart TV]]
+*[[Digital media player]]
+*[[Home theater PC]]
+*[[Comparison of set-top boxes]]
+*[[Comparison of digital media players]]
+* [[:zh:NGB TVOS|Next Generation Broadcasting Network TVOS]], a Chinese-only operating system announced in December 2008<ref>{{cite web|url=http://www.most.gov.cn/zzjg/bld/wg/wgldhd/200812/t20081205_66073.htm|title=科技部和广播电影电视总局签署《国家高性能宽带信息网暨中国下一代广播电视网自主创新合作协议书》|website=www.most.gov.cn|date=5 December 2008|accessdate=11 December 2018}}</ref>
+
+==References==
+{{reflist|colwidth=30em}}
+
+{{Home theater PC (application software)}}
+{{Media player (application software)}}
+
+{{DEFAULTSORT:Smart TV platforms and middleware software}}
+[[Category:Smart TV|*]]
+[[Category:Digital television lists]]
+[[Category:Lists of software|Middleware]]
+[[Category:Digital media players]]
+[[Category:Media players]]
+[[Category:Consumer electronics]]
+[[Category:Internet of things]]
+[[Category:Information appliances]]
+[[Category:Computing-related lists]]
+[[Category:Film and video technology]]
+[[Category:Interactive television|.]]
+[[Category:Internet broadcasting]]
+[[Category:Streaming television|.]]
+[[Category:Multimedia]]
+[[Category:Networking hardware]]
+[[Category:Streaming media systems]]
+[[Category:Video on demand services|.]]
+[[Category:Television technology]]
+[[Category:Television terminology]]
+[[Category:Technological comparisons]]

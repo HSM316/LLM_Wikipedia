@@ -1,0 +1,112 @@
+{{Use dmy dates|date=December 2019}}
+{{Short description|Liberty ship of WWII}}
+{|{{Infobox ship begin}}
+{{Infobox ship image
+|Ship image=
+|Ship caption= 
+}}
+{{Infobox ship career
+|Hide header=
+|Ship country=United States
+|Ship flag={{USN flag|1945}}
+|Ship name= ''Dwight W. Morrow''
+|Ship namesake= [[Dwight W. Morrow]]
+|Ship owner = [[War Shipping Administration]] (WSA)
+|Ship operator = [[Sprague Steamship Co.]]
+|Ship ordered = as type (EC2-S-C1) hull, [[Maritime Commission|MC]] hull 1206
+|Ship builder = [[St. Johns River Shipbuilding Company]], [[Jacksonville, Florida|Jacksonville]], Florida{{sfn|St. John's River SBC|2010}}    
+|Ship original cost=$1,766,458{{sfn|MARCOM}}
+|Ship yard number=14
+|Ship way number=2
+|Ship laid down= 5 July 1943
+|Ship launched= 21 September 1943
+|Ship completed= 5 October 1943
+|Ship sponsor=  [[Elizabeth Cutter Morrow]] 
+|Ship identification = *[[Maritime call sign|Call sign]]: KTNV
+*{{ICS|Kilo}}{{ICS|Tango}}{{ICS|November}}{{ICS|Victor}}{{sfn|MARCOM}}
+|Ship motto=
+|Ship fate=* Laid up in the, [[National Defense Reserve Fleet]], [[Mobile, Alabama|Mobile]], Alabama, 13 October 1945
+* Laid up in the, National Defense Reserve Fleet, [[Wilmington, North Carolina|Wilmington]], North Carolina, 28 August 1948
+|Ship status= Sold for scrapping, 4 April 1968, removed from fleet, 16 May 1968
+|Ship notes=           
+|Ship badge=
+}}
+{{Infobox ship characteristics
+| Hide header = 
+| Header caption = {{sfn|Davies|2004|p=23}}
+| Ship class ={{Liberty ship class}}
+| Ship type =
+| Ship tonnage = {{Liberty ship tonnage}}
+| Ship displacement = {{Liberty ship displacement}}
+| Ship length = {{Liberty ship length}}
+| Ship beam = {{Liberty ship beam}}
+| Ship draft = {{Liberty ship draft}}
+| Ship capacity = {{Liberty ship cargo capacity}}
+| Ship hold depth = 
+| Ship power = {{Liberty ship power}}
+| Ship propulsion = {{Liberty ship propulsion|8}}
+| Ship complement = {{Liberty ship complement}}
+| Ship armament = {{Liberty ship armament}}
+| Ship speed = {{Liberty ship speed}}
+| Ship notes = 
+}}
+|}
+
+'''SS ''Dwight W. Morrow''''' was a [[Liberty ship]] built in the [[United States]] during [[World War II]]. She was named after [[Dwight W. Morrow]], an American businessman, diplomat, and politician. Morrow was a partner in [[J.P. Morgan & Co.]],  served as [[United States Ambassador to Mexico]] from 1927-1930, and was a [[United States Senate|US Senator]] from [[New Jersey]] from 1930-1931.  
+
+==Construction==
+''Dwight W. Morrow'' was laid down on 5 July 1943, under a [[Maritime Commission]] (MARCOM) contract, MC hull 1206, by the [[St. Johns River Shipbuilding Company]], [[Jacksonville, Florida|Jacksonville]], Florida; she was sponsored by [[Elizabeth Cutter Morrow]], the widow of the namesake, she was launched on 21 September 1943.{{sfn|St. John's River SBC|2010}}{{sfn|MARCOM}}
+
+==History==
+She was allocated to [[Sprague Steamship Co.]], on 5 October 1943. On 13 October 1945, she was laid up in the [[National Defense Reserve Fleet]], [[Mobile, Alabama|Mobile]], Alabama, with an estimated $37,500 in damage. She was laid up in the, National Defense Reserve Fleet, [[Wilmington, North Carolina|Wilmington]], North Carolina, 28 August 1948. She was sold for scrapping, on 4 April 1968, to [[Union Minerals and Alloys]]. She was listed as removed from the fleet on 16 May 1968. A telegram dated 27 February 1970, declares that she wasn't removed until this date, and sold to [[Horton Industries, Inc.]] The telegram goes on to say that with the removal of ''Dwight W. Morrow'', the last ship remaining at Wilmington, the service of the Wilmington Reserve Fleet was complete after twenty-three and a half years.{{sfn|MARAD}}
+
+==References==
+{{reflist}}
+
+==Bibliography==
+{{refbegin}}
+* {{cite web
+  | url = http://shipbuildinghistory.com/shipyards/emergencylarge/stjohnsriver.htm
+  | title = St. John's River Shipbuilding, Jacksonville FL
+  | publisher =  www.ShipbuildingHistory.com
+  | date = 16 October 2010
+  | access-date = 30 December 2019
+  | ref = {{sfnRef|St. John's River SBC|2010}}
+  }}
+* {{cite web  
+  |url= https://vesselhistory.marad.dot.gov/ShipHistory/Detail/1307
+  |title=Dwight W. Morrow
+  |author=Maritime Administration
+  |work=Ship History Database Vessel Status Card
+  |publisher=U.S. Department of Transportation, Maritime Administration
+  |access-date= 30 December 2019
+  |ref={{sfnref|MARAD}}
+  }}
+* {{cite web
+  |last= Davies
+  |first= James
+  |url= http://www.ww2ships.com/acrobat/us-os-001-f-r00.pdf
+  |title= Specifications (As-Built)
+  |page=23
+  |date= May 2004
+  |access-date= 30 December 2019
+  }}
+* {{cite web
+  |url= http://usmaritimecommission.de/query.php?datalist=1&typeofquery=Name%20of%20Ship&valueofquery=Dwight%20W.Morrow&code=B1206a
+  |title= SS ''Dwight W. Morrow''
+  |access-date= 30 December 2019
+  |ref= {{sfnRef|MARCOM}}
+  }}
+{{refend}}
+
+ <!-- non-breaking space to keep AWB drones from altering the space before the navbox-->
+
+{{Liberty ships D}}
+{{MARCOM ships St. John's River SB Co.}}
+
+{{DEFAULTSORT:Dwight W. Morrow}}
+[[Category:Liberty ships]]
+[[Category:Ships built in Jacksonville, Florida]]
+[[Category:1943 ships]]
+[[Category:Mobile Reserve Fleet]]
+[[Category:Wilmington Reserve Fleet]]

@@ -1,0 +1,65 @@
+{{Infobox software
+| name = Dr.Fill
+| logo = <!-- File name without 'File:' -->
+| logo caption = 
+| logo alt = 
+| logo size =
+| collapsible = <!-- Any text here will collapse the screenshot. -->
+| screenshot = <!-- File name without 'File:' -->
+| screenshot size =
+| screenshot alt = 
+| caption = 
+| other_names =
+| author = 
+| developer = [[Matt Ginsberg]]
+| released = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| ver layout = <!-- simple (default) or stacked -->
+| discontinued = <!-- Set to yes, if software is discontinued, otherwise omit. -->
+| latest release version = 
+| latest release date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| latest preview version = 
+| latest preview date = <!-- {{Start date and age|YYYY|MM|DD|df=yes/no}} -->
+| repo = <!-- {{URL|example.org}} -->
+| qid = 
+| programming language = 
+| middleware =
+| engine = <!-- or |engines= -->
+| operating system = 
+| platform = 
+| included with = 
+| replaces =
+| replaced_by =
+| service_name = 
+| size = 
+| standard = 
+| language = 
+| language count = <!-- Number only -->
+| language footnote = 
+| genre = [[:Category:Crossword software|Crossword software]]
+| license = <!-- or |licence= -->
+| website = {{URL|https://www.mattginsberg.com/about}}
+| AsOf = 
+| games list = 
+}}
+'''Dr.Fill''' is a [[computer program]] that solves American-style [[crossword]] puzzles.  It was developed by [[Matt Ginsberg]] and described by Ginsberg in an article in the [[Journal of Artificial Intelligence Research]].<ref>{{cite web|url=http://www.jair.org/papers/paper3437.html |title=M. L. Ginsberg (2011) Dr.Fill: Crosswords and an Implemented Solver for Singly Weighted CSPs |publisher=Jair.org |date= |accessdate=2012-03-12}} ([https://web.archive.org/web/20180423230554/http://www.jair.org/papers/paper3437.html Archived version])</ref>  Ginsberg claims in that article that Dr.Fill is among the top fifty crossword solvers in the world.
+
+As described by Ginsberg, Dr.Fill works by converting a crossword to a weighted [[constraint satisfaction problem]] and then attempting to maximize the probability that the fill is correct.  Probabilities for individual words or phrases in the puzzle are computed using relatively simple statistical techniques based on features such as previous appearances of the clue, number of [[Google hit]]s for the fill, and so on.  In doing this, Dr.Fill is attempting to solve a problem similar to that tackled by the [[Jeopardy!]]-playing program [[Watson (computer)|Watson]]; Dr.Fill runs on a laptop instead of a supercomputer and Ginsberg remarks that Watson is far more effective than Dr.Fill at solving this portion of the problem.  Instead of computational horsepower, Dr.Fill relies on the constraints provided by crossing words to refine its answers.
+
+A variety of techniques from [[artificial intelligence]] are applied to attempt to find the most likely fill.  These include a small amount of [[Combinatorial search#Lookahead|lookahead]], limited discrepancy search,<ref>{{cite document|title=W. D. Harvey and M. L. Ginsberg (1995) Limited Discrepancy Search |publisher=IJCAI |year=1995|citeseerx = 10.1.1.34.2426}}</ref> and postprocessing.  Ginsberg remarks that postprocessing was chosen over [[branch and bound]] because the two techniques are mutually incompatible and postprocessing was found to be more effective in this domain.
+
+Dr.Fill participated in the 2012 [[American Crossword Puzzle Tournament]], finishing 141st of approximately 650 entrants with a total score of just over 10,000 points.  The appearance led to a variety of descriptions of Dr.Fill in the popular press, including [[The Economist]],<ref>{{cite news|author=Glenn Fleishman |url=http://www.economist.com/node/21548145 |title=Artificial intelligence: A match for angry words |newspaper=The Economist |date=2012-03-02 |accessdate=2012-03-12}}</ref> the [[San Francisco Chronicle]]<ref>{{cite news|author=James Temple |url=http://www.sfgate.com/cgi-bin/article.cgi?f=/c/a/2012/02/14/BUSO1N712E.DTL&ao=all |title=Crossword contest new challenge for computer |publisher=Sfgate.com |date=2012-02-15 |accessdate=2012-03-12}}</ref> and [[Gizmodo]].<ref>{{cite web|author=Michael Reed |url=https://gizmodo.com/5890050/are-computers-human-enough-for-crossword-puzzles |title=Are Computers Human Enough for Crossword Puzzles? |publisher=Gizmodo.com |date=2012-03-02 |accessdate=2012-03-12}}</ref>  A description of Dr.Fill appeared on the front page of the March 17, 2012 [[The New York Times|New York Times]].<ref>{{cite news|author=Steve Lohr | url=https://www.nytimes.com/2012/03/17/technology/computer-matching-wits-with-humans-in-crossword-tournament.html?_r=1 |title=The Computer's Next Conquest: Crosswords |work=The New York Times |date=2012-03-16 |accessdate=2012-03-18}}</ref>
+
+Dr.Fill's score in 2013 improved to 10,550, which would have earned it 92nd place.  Videos of the program solving the problems from the tournament are available on [[YouTube]].<ref>{{cite web|url=https://www.youtube.com/watch?v=Ii7B1QcURsw |title=Dr.Fill and the 2013 ACPT (Saturday)}}</ref> <ref>{{cite web|url=https://www.youtube.com/watch?v=JL7SFpDU53k |title=Dr.Fill and the 2013 ACPT (Sunday)}}</ref> The score in 2014 improved further to 10,790, which would have tied for 67th place.  A video of the program solving the first six puzzles from that tournament, together with a talk given by Ginsberg describing its performance, can be found on YouTube.<ref>{{cite web|url=https://www.youtube.com/watch?v=oeq22ycvHuQ |title=Dr.Fill and the 2014 ACPT}}</ref>
+
+Dr.Fill has largely continued to improve since the 2014 event.  In 2015, it scored 10,920 points and finished in 55th place.  In 2016, it scored 11,205 points and finished in 41st place.  In 2017, it scored 11,795 and finished in 11th place. In 2018, it scored 10,740 points, dropping to 78th place. Dr.Fill returned to "form" in 2019, once again scoring 11,795 and finishing in 14th place.
+
+The 2020 ACPT was cancelled due to [[COVID-19]], and Dr.Fill participated as a non-competitor in the Boswords tournament instead.  The program outperformed the humans, scoring 11,218 points (fast solves with a total of one mistake) while the best scoring human scored 10,994 points (slower solves but no mistakes).
+
+The 2021 ACPT was virtual, again due to COVID-19.  The Dr.Fill effort was joined by the Berkeley NLP Group, and Dr.Fill won the main event, scoring 12,825 points with Erik Agard, the highest scoring human, scoring 12,810 points.  The tournament was won by Tyler Hinman (12,760 points), who completed the championship puzzle perfectly in three minutes.  Dr.Fill also completed that puzzle perfectly, but in 49 seconds.
+
+After winning the tournament, Ginsberg announced on August 8, 2021 that both he and Dr.Fill would be retiring from crosswords.
+
+==References==
+{{reflist}}
+
+[[Category:Crossword software]]

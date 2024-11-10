@@ -1,0 +1,38 @@
+{{peacock|date=May 2021}}
+'''Data thinking''' is a [[buzzword]] for the generic "mental pattern" observed during the processes of picking a subject to start with, identifying its parts or components, organising and describing them in an informative fashion that is relevant to what motivated and initiated the whole processes.
+
+In the context of new product development and innovation data thinking can be described as follows: Data thinking is a framework to explore, design, develop and validate data driven solutions and user, data and future focused businesses. Data thinking combines [[data science]] with [[design thinking]] and therefore, the focus of this approach does not lie only on data analytics technologies and data collection but also on the design of use centred solutions with high business potential. <ref name=":2">{{Cite web|date=2020-07-02|title=Why do companies need Data Thinking?|url=https://detecon.com/en/knowledge/why-do-companies-need-data-thinking}}</ref><ref name=":0">{{Cite web|title=Data Thinking - Mit neuer Innovationsmethode zum datengetriebenen Unternehmen|trans-title=With new innovation methods to the data-driven company|url=https://www.etventure.de/data-thinking/|language=de}}</ref><ref name=":1">{{Cite web|title=Data Thinking: A guide to success in the digital age|url=https://www.unbelievable-machine.com/en/data-thinking/}}</ref><ref>{{Cite web|last=Herrera|first=Sara|date=2019-02-21|title=Data-Thinking als Werkzeug für KI-Innovation|trans-title=Data Thinking as a tool for KI-innovation|url=https://www.handelskraft.de/data-thinking-als-werkzeug-fuer-ki-innovation/2019/02/|website=Handelskraft|language=de}}</ref>
+
+The term was created by Mario Faria and Rogerio Panigassi in 2013 when they were writing a book about data science, [[data analysis|data analytics]], [[data management]] and how data practitioners were able to achieve their goals.
+
+== Major Phases of Data Thinking ==
+Even though no standardized process for data thinking yet exists, the major phases of the process are similar in many publications and could be summarised as follows:
+
+=== Clarification of the Strategic Context and definition of data driven risks and opportunities focus areas ===
+During this phase the broader context of digital strategy is analysed. Before starting with a concrete data project, it is essential to understand how the new data and AI driven technologies are affecting the business landscape and the implications this has on the future of an organisation. [[Coolhunting|Trend analysis]] / [[technology forecasting]] and scenario planning / analysis as well as internal data capability assessments are the major techniques which are typically applied at this stage. <ref name=":3">{{Cite journal|last1=Schnakenburg|first1=Igor|last2=Kuhn|first2=Steffen|title=Data Thinking: Daten schnell produktiv nutzen können|journal=LÜNENDONK-Magazin "Künstliche Intelligenz"|language=de|volume=05/2020|pages=42–46}}</ref><ref name=":1" />
+
+=== Ideation/Exploration ===
+The result of the earlier stage is a definition of the focus areas which are either most promising or are at the highest risks for or due to data driven transformation. At the ideation/exploration phase the concrete use cases are defined for the selected focus areas. For the successful ideation it is important to combine information about organisational (business) goals, internal/external use needs, data and infrastructure needs as well as domain knowledge about latest data driven technologies and trends.  <ref>{{Cite journal|last1=Nalchigar|first1=Soroosh|last2=Yu|first2=Eric|date=2018-09-01|title=Business-driven data analytics: A conceptual modeling framework|url=http://www.sciencedirect.com/science/article/pii/S0169023X18301691|journal=Data & Knowledge Engineering|language=en|volume=117|pages=359–372|doi=10.1016/j.datak.2018.04.006|issn=0169-023X}}</ref><ref name=":0" />
+
+Design thinking principles in the context of data thinking can be interpreted as follows: when developing data driven ideas, it is crucial to consider the intersection of technical feasibility, business impact and data availability. Typical instruments of design thinking (e.g. user research, [[persona]]s, [[customer journey]]) are broadly applied on this stage. <ref>{{Cite web|last=Woods|first=Rachel|date=2019-03-22|title=A Design Thinking Mindset for Data Science|url=https://towardsdatascience.com/a-design-thinking-mindset-for-data-science-f94f1e27f90|access-date=2020-07-08|website=Medium|language=en}}</ref>
+
+But not only user, customer and strategic needs of an organisation must be considered here. Data needs and data availability analysis as well as research on the AI technologies suitable for the data based solution are essential prats of the successful development process. <ref>{{Cite web|last1=Fomenko|first1=Elena|last2=Mattgey|first2=Annette|date=2020-05-12|title=Was macht eigentlich … ein Data Thinker?|url=https://www.wuv.de/karriere/was_macht_eigentlich_ein_data_thinker|website=W & V|location=German}}</ref>
+
+To scope data and technological basement of the solution, practices from cross industry standard process for data mining ([[CRISP-DM]])  are typically utilised on this stage. <ref>{{Cite journal|last1=Marbán|first1=Óscar|last2=Mariscal|first2=Gonzalo|last3=Menasalvas|first3=Ernestina|last4=Segovia|first4=Javier|date=2007|editor-last=Yin|editor-first=Hujun|editor2-last=Tino|editor2-first=Peter|editor3-last=Corchado|editor3-first=Emilio|editor4-last=Byrne|editor4-first=Will|editor5-last=Yao|editor5-first=Xin|title=An Engineering Approach to Data Mining Projects|url=https://link.springer.com/chapter/10.1007%2F978-3-540-77226-2_59|journal=Intelligent Data Engineering and Automated Learning - IDEAL 2007|series=Lecture Notes in Computer Science|volume=4881|language=en|location=Berlin, Heidelberg|publisher=Springer|pages=578–588|doi=10.1007/978-3-540-77226-2_59|isbn=978-3-540-77226-2}}</ref> 
+
+=== Prototyping / Proof of Concept ===
+During the previous stages the major concept of the data solution was developed. At the current step, the [[proof of concept]] is conducted to check its feasibility. This stage also exploits the prototype framework of design thinking and includes test, evaluation, iteration, and refinement.<ref>{{Cite journal|last=Brown|first=Tim Wyatt, Jocelyn|date=2010-07-01|title=Design Thinking for Social Innovation|url=https://elibrary.worldbank.org/doi/abs/10.1596/1020-797X_12_1_29|journal=Development Outreach|volume=12|issue=1|pages=29–43|doi=10.1596/1020-797X_12_1_29|issn=1020-797X}}</ref> Prototyping design thinking principles are also combined during this phase with process models that are applied in data science projects (e.g. CRISP-DM).<ref name=":3" /> 
+
+=== Measuring business impact ===
+Not only solution feasibility, but also its profitability is proofed during the data thinking process. [[Cost–benefit analysis|Cost benefits analysis]] and [[business case]] calculation are commonly applied during this step.<ref>{{Cite web|date=2018-09-08|title=Data-Thinking – das Potenzial von Daten richtig nutzen|url=https://t3n.de/news/data-thinking-potenzial-daten-1107857/|access-date=2020-07-08|website=t3n Magazin|language=de}}</ref>
+
+=== Implementation and Improvement ===
+If the developed solution proves its feasibility and profitability during this phase, it will be implemented and operationalized. <ref name=":2" /><ref name=":1" />
+
+== References ==
+[[Category:Data management]]
+<references />
+[[Category:Product development]]
+[[Category:Business intelligence]]
+[[Category:Applied data mining]]
+[[Category:Innovation]]

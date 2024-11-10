@@ -1,0 +1,60 @@
+{{Infobox station
+| name = Diego de León
+| symbol_location = madrid
+| symbol = metro
+| type = [[Madrid Metro]] station
+| image = Metro de Madrid - Diego de León 01.jpg
+| alt = 
+| caption = 
+| address = [[Salamanca (Madrid)|Salamanca]], [[Madrid]]
+| borough = 
+| country = Spain
+| coordinates = {{coord|40.4346757|-3.6749579|region:|display=title,inline}}
+| map_type = Spain Madrid
+| owned = [[Consorcio Regional de Transportes de Madrid|CRTM]]
+| operator = [[Consorcio Regional de Transportes de Madrid|CRTM]]
+| line = 
+| distance = 
+| platforms = 
+| tracks = 
+| train_operators = 
+| connections = 
+| structure = 
+| parking = 
+| bicycle = 
+| disabled = No
+| code = 
+| website = 
+| opened = {{Start date|1932|09|17|df=y}}
+| closed = <!-- {{End date|YYYY|MM|DD|df=y}} -->
+| passengers = 
+| pass_year = 
+| pass_rank = 
+| services = {{s-rail|title=Madrid Metro}}
+{{s-line|system=Madrid Metro|line=4|previous=Lista|next=Avenida de América}}
+{{s-line|system=Madrid Metro|line=5|previous=Ventas|next=Núñez de Balboa}}
+{{s-line|system=Madrid Metro|line=6|previous=Manuel Becerra|next=Avenida de América|circular=1}}
+| zone = A
+}}
+
+'''Diego de León''' is a station on [[Line 4 (Madrid Metro)|Line 4]], [[Line 5 (Madrid Metro)|Line 5]], and [[Line 6 (Madrid Metro)|Line 6]] of the [[Madrid Metro]], located at the intersections of Francisco Silvela, Diego de León, and Conde de Peñalver streets in the [[Salamanca (Madrid)|Salamanca district]] of [[Madrid]]. It is in Zone A.<ref>{{Cite web|url=https://www.metromadrid.es/en/linea/linea-5#estacion-410|title=Línea 5|last=|first=|date=|website=Metro de Madrid|language=en|url-status=live|archive-url=|archive-date=|access-date=2019-09-06}}</ref><ref>{{Cite web|url=https://www.metromadrid.es/en/linea/linea-6-circular#estacion-410|title=Línea 6 Circular|last=|first=|date=|website=Metro de Madrid|language=en|url-status=live|archive-url=|archive-date=|access-date=2019-09-05}}</ref> 
+
+The station is named after Diego de León street, which in turn is named after the 19th-century Spanish military and political figure [[Diego de León, 1st Count of Belascoáin|Diego de León]].
+
+== History ==
+The station was inaugurated on 17 September 1932 as part of a branch line of [[Line 2 (Madrid Metro)|Line 2]] that ran from Diego de León to [[Goya (Madrid Metro)|Goya]], where it connected to the rest of Line 2. The branch was considered to be part of Line 2 until 1958, when it was transferred to Line 4.
+
+In 1970, Line 5 was extended to Diego de León. The Line 5 platforms under Juan Bravo street were inaugurated on 26 February, and service began on 2 March.<ref>{{cite web|title=Portada del ABC del día 26 February 1970|trans-title=''ABC'' front page 26 February 1970|url=http://hemeroteca.abc.es/nav/Navigate.exe/hemeroteca/madrid/abc/1970/02/26/001.html|access-date=17 July 2014|website=ABC|date=26 February 1970|language=Spanish}}</ref><ref>{{cite web|title=Viaje inaugural|trans-title=Inaugural trip|url=http://hemeroteca.abc.es/nav/Navigate.exe/hemeroteca/madrid/abc/1970/02/27/007.html|access-date=17 July 2014|website=ABC|date=27 February 1970|language=Spanish}}</ref><ref>{{cite web|title=El Ministro de Obras Públicas inaugura la nueva línea del Metro Callao-Ventas|trans-title=Minister of Public Works inaugurates new Metro line Callao-Ventas|url=http://hemeroteca.abc.es/nav/Navigate.exe/hemeroteca/madrid/abc/1970/02/27/045.html|access-date=17 July 2014|website=ABC|date=27 February 1970|language=Spanish}}</ref> On 26 March 1973, Diego de León ceased to be a terminus station for Line 4 when the line was extended to [[Alfonso XIII (Madrid Metro)|Alfonso XIII]]. On 10 October 1979, the first stretch of Line 6 from [[Pacífico (Madrid Metro)|Pacífico]] to [[Cuatro Caminos (Madrid Metro)|Cuatro Caminos]] was inaugurated, including a stop at Diego de León.<ref>{{cite web|website=El País|title=El Rey inauguró la nueva línea de Metro entre Pacífico y Cuatro Caminos|language=Spanish|trans-title=King inaugurates new Metro line between Pacífico and Cuatro Caminos|url=http://elpais.com/diario/1979/10/11/madrid/308492658_850215.html|access-date=7 March 2014|date=11 October 1979}}</ref>
+
+== References ==
+{{reflist|2}}
+
+{{Madrid Metro station|line4=yes|line5=yes|line6=yes}}
+
+{{DEFAULTSORT:Diego de Leon (Madrid Metro)}}
+[[Category:Madrid Metro stations]]
+[[Category:Railway stations opened in 1932]]
+[[Category:1932 establishments in Spain]]
+
+{{Spain-railstation-stub}}
+{{Madrid-metro-stub}}

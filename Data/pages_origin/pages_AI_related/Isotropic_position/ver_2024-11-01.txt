@@ -1,0 +1,27 @@
+{{Short description|Concept in probability theory and machine learning}}
+In the fields of [[machine learning]], the [[theory of computation]], and [[random matrix theory]], a probability distribution over vectors is said to be in '''isotropic position''' if its [[covariance matrix]] is equal to the [[identity matrix]].
+
+== Formal definitions ==
+Let <math display="inline">D</math> be a distribution over vectors in the vector space <math display="inline">\mathbb{R}^n</math>.
+Then <math display="inline">D</math> is in isotropic position if, for vector <math display="inline">v</math> sampled from the distribution,
+<math display="block">\mathbb{E}\, vv^\mathsf{T} = \mathrm{Id}.</math>
+
+A ''set'' of vectors is said to be in isotropic position if the [[uniform distribution (continuous)|uniform distribution]] over that set is in isotropic position. In particular, every [[orthonormal]] set of vectors is isotropic.
+
+As a related definition, a [[convex body]] <math display="inline">K</math> in <math display="inline">\mathbb{R}^n</math> is called isotropic if it has volume <math display="inline">|K| = 1</math>, center of mass at the origin, and there is a constant <math display="inline">\alpha > 0</math> such that
+<math display="block">\int_K \langle x, y \rangle^2 dx = \alpha^2 |y|^2,</math>
+for all vectors <math display="inline">y</math> in <math display="inline">\mathbb{R}^n</math>; here <math display="inline">|\cdot|</math> stands for the standard Euclidean norm.
+
+== See also ==
+
+* [[Whitening transformation]]
+
+== References ==
+* {{cite journal |first=M. |last=Rudelson |title=Random Vectors in the Isotropic Position |journal=[[Journal of Functional Analysis]] |volume=164 |year=1999 |issue=1 |pages=60–72 |doi=10.1006/jfan.1998.3384 |arxiv=math/9608208 |s2cid=7652247 }}
+
+[[Category:Machine learning]]
+[[Category:Random matrices]]
+
+
+{{matrix-stub}}
+{{ai-stub}}
