@@ -1,2 +1,0 @@
-The CLEVER (Cross Lipschitz Extreme Value for nEtwork Robustness) score is a way of measuring the robustness of an artificial neural network towards adversarial attacks.
-It was developed by a team at the MIT-IBM Watson AI Lab and first presented at the 2018 International Conference on Learning Representations.

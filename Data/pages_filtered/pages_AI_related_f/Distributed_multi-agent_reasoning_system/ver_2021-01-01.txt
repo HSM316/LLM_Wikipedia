@@ -1,4 +1,0 @@
-In artificial intelligence, the distributed multi-agent reasoning system (dMARS) was a platform for intelligent software agents developed at the AAII that makes uses of the belief–desire–intention software model (BDI). The design for dMARS was an extension of the intelligent agent cognitive architecture developed at SRI International called procedural reasoning system (PRS). The most recent incarnation of this framework is the JACK Intelligent Agents platform.
-
-Overview
-dMARS was an agent-oriented development and implementation environment written in C++ for building complex, distributed, time-critical systems.

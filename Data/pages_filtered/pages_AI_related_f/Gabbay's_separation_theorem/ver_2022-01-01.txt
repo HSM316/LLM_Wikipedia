@@ -1,1 +1,0 @@
-In mathematical logic and computer science, Gabbay's separation theorem, named after Dov Gabbay, states that any arbitrary temporal logic formula can be rewritten in a logically equivalent "past → future" form.  I.e. the future becomes what must be satisfied..  This form can be used as execution rules; a MetateM program is a set of such rules..

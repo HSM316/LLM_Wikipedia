@@ -1,4 +1,0 @@
-Multi-agent learning is the use of machine learning in a multi-agent system. Typically, agents improve their decisions via experience. In particular, an agent has to learn how to coordinate with the other agents.
-
- Overview 
-According to an article by Shoham et al. in 2007, it is difficult to pinpoint all relevant articles in the domain. There are some inherent difficulties about multi-agent deep reinforcement learning. The environment is not stationnary anymore, thus the Markov property is violated: transitions and rewards does not only depend on the current state of an agent.

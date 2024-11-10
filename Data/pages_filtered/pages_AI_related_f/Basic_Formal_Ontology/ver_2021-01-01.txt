@@ -1,7 +1,0 @@
-Basic Formal Ontology (BFO) is a top-level ontology developed by Barry Smith and his associates for the purposes of promoting interoperability among domain ontologies built in its terms through a process of downward population.  A guide to building BFO-conformant domain ontologies was published by MIT Press in 2015. The standard  is currently under development.
-
-The structure of BFO is based on a division of entities into two disjoint categories of continuant and occurrent, the former comprehending for example objects and spatial regions, the latter comprehending processes conceived as extended through (or as spanning) time. BFO thereby seeks to consolidate both time and space within a single framework.
-
-Applications
-
-BFO has been adopted as a foundational ontology by over 300 ontology projects, principally in the areas of biomedical ontology and security and defense (intelligence) ontology. An example application of BFO can be seen in the Ontology for Biomedical Investigations (OBI) and in the Open Biomedical Ontologies Foundry.

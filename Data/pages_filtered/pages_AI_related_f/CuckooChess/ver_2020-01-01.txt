@@ -1,7 +1,0 @@
-Cuckoochess is an advanced free and open-source chess engine under the GNU General Public License written in Java by Peter Österlund. CuckooChess provides an own GUI, and optionally supports the Universal Chess Interface protocol for the use with external GUIs such as Arena. An Android port is available, where its GUI is also base of Peter Österlund's Stockfish port dubbed DroidFish.
-
-The program uses the Chess Cases chess font, created by Matthieu Leschemelle. The name CuckooChess comes due that the transposition table is based on Cuckoo hashing.
-
-Android app based chess gaming app Droidfish employs both Cuckoochess and Stockfish chess engines.. Similarly, Kickstarter funded AI based virtual reality chess game Square Off also uses Cuckoochess engine.
-
-It has an ELO rating of 2583 (as of July 2018) and a rank of 135‑137 in the Computer Chess Rating List.
