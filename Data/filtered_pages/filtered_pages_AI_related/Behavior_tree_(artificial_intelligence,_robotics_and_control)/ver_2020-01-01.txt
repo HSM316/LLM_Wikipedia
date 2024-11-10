@@ -1,0 +1,86 @@
+A Behavior Tree is a mathematical model of plan execution used in computer science, robotics, control systems and video games. They describe switchings between a finite set of tasks in a modular fashion. Their strength comes from their ability to create very complex tasks composed of simple tasks, without worrying how the simple tasks are implemented. Behavior trees present some similarities to hierarchical state machines with the key difference that the main building block of a behavior is a task rather than a state. Its ease of human understanding make behavior trees less error prone and very popular in the game developer community. Behavior trees have been shown to generalize several other control architectures.Colledanchise Michele, and Ögren Petter 2016. How Behavior Trees Modularize Hybrid Control Systems and Generalize Sequential Behavior Compositions, the Subsumption Architecture, and Decision Trees. In IEEE Transactions on Robotics vol.PP, no.99, pp.1-18 (2016) Colledanchise Michele, and Ögren Petter 2017. Behavior Trees in Robotics and AI: An Introduction.
+
+right|450px| Behavior tree modelling the search and grasp plan of a two-armed robot.
+
+ Background 
+
+Behavior trees originate from the computer game industry as a powerful tool to model the behavior of non-player characters (NPCs).Isla D. 2005.  Handling complexity in the Halo 2 AI. In Game Developers Conference (Vol. 12)Isla D. 2008.  Halo 3-building a better battle. In Game Developers Conference. 2008.Lim, C. U., Baumgarten, R., & Colton, S. 2010.  Evolving behaviour trees for the commercial game DEFCON. In Applications of Evolutionary Computation, pp. 100-110. Springer Berlin Heidelberg, 2010. 
+They have been extensively used in high-profile video games such as Halo, Bioshock, and Spore. Recent works propose behavior trees as a multi-mission control framework for UAV, complex robots, robotic manipulation, and multi-robot systems.Ögren, Petter. "Increasing Modularity of UAV Control Systems using Computer Game Behavior Trees." In AIAA Guidance, Navigation and Control Conference, Minneapolis, Minnesota, pp. 13-16. 2012.Colledanchise Michele, Marzinotto Alejandro, and Ögren Petter. "Performance Analysis of Stochastic BTs." In Robotics and Automation (ICRA), 2014 IEEE International Conference on. 2014.Marzinotto, Alejandro, Colledanchise Michele, Smith Christian, and Ögren Petter.  "Towards a Unified BTs Framework for Robot Control." In Robotics and Automation (ICRA), 2014 IEEE International Conference on. 2014.Klöckner, Andreas. "Interfacing BTs with the World Using Description Logic." In AIAA Guidance, Navigation and Control Conference, Boston, MA. 2013.Klöckner, Andreas. "Behavior Trees for UAV Mission Management." In GI-Jahrestagung, pp. 57-68. 2013.Bagnell, J. Andrew, Felipe Cavalcanti, Lei Cui, Thomas Galluzzo, Martial Hebert, Moslem Kazemi, Matthew Klingensmith et al. "An integrated system for autonomous robotics manipulation." In Intelligent Robots and Systems (IROS), 2012 IEEE/RSJ International Conference on, pp. 2955-2962. IEEE, 2012.
+Behavior trees have now reached the maturity to be treated in Game AI textbooks 
+Millington and Funge ["Artificial Intelligence for Games." CRC Press 2009 ]
+S. Rabin ["Game AI Pro" CRC Press 2014 ]
+as well as generic game environments such as PyGame and Unreal Engine (see links below).
+
+ Key concepts 
+
+A behavior tree is graphically represented as a directed  tree in which the nodes are classified as root, control flow nodes, or execution nodes (tasks). For each pair of connected nodes the outgoing node is called parent and the incoming node is called child. The root has no parents and exactly one child, the control flow nodes have one parent and at least one child, and the execution nodes have one parent and no children. Graphically, the children of a control flow node are placed below it, ordered from left to right.craft ai 2015.  BT 101 – Behavior Trees grammar basics
+
+The execution of a behavior tree starts from the root which sends ticks with a certain frequency to its child. A tick is an enabling signal that allows the execution of a child. When the execution of a node in the behavior tree is allowed, it returns to the parent a status running if its execution has not finished yet, success if it has achieved its goal, or failure otherwise.
+
+ Control flow node 
+
+A control flow node is used to control the subtasks of which it is composed. A control flow node may be either a selector (fallback) node or a sequence node. They run each of their subtasks in turn. When a subtask is completed and returns its status (success or failure), the control flow node decides whether to execute the next subtask or not.
+
+ Selector (fallback) node 
+
+right|Figure I. Graphical representation of a fallback composition of N tasks.
+
+Fallback nodes are used to find and execute the first child that does not fail. A fallback node will return immediately with a status code of success or running when one of its children returns success or running (see Figure I and the pseudocode below). The children are ticked in order of importance, from left to right.
+
+In pseudocode, the algorithm for a fallback composition is:
+
+ 1 for i from 1 to n do
+ 2     childstatus ← Tick(child(i))
+ 3     if childstatus = running
+ 4        return running
+ 5     else if childstatus = success
+ 6        return success
+ 7 end
+ 8 return failure
+
+ Sequence node 
+
+right|Figure II. Graphical representation of a sequence composition of N tasks.
+Sequence nodes are used to find and execute the first child that has not yet succeeded. A sequence node will return immediately with a status code of failure or running when one of its children returns failure or running (see Figure II and the pseudocode below). The children are ticked in order, from left to right.
+
+In pseudocode, the algorithm for a sequence composition is:
+
+ 1 for i from 1 to n do
+ 2     childstatus ← Tick(child(i))
+ 3     if childstatus = running
+ 4        return running
+ 5     else if childstatus = failure
+ 6        return failure
+ 7 end
+ 8 return success
+
+ Mathematical state space definition 
+
+In order to apply control theory tools to the analysis of behavior trees,
+they can be defined as three-tuple.Colledanchise Michele, and Ögren Petter."How Behavior Trees Modularize Robustness and Safety in Hybrid Systems." In Intelligent Robots and Systems (IROS), 2014 IEEE/RSJ International Conference on, IEEE, 2014.
+
+where  is the index of the tree,  is a vector field representing the right hand side of an ordinary difference equation,  is a time step and 
+ is the return status, that can be equal to either 
+Running ,
+Success , or
+Failure .
+
+Note: A task is degenerate behavior tree with no parent and no child.
+
+ Behavior tree execution 
+
+The execution of a behavior tree is described by the following standard ordinary difference equations:
+
+where  represent the discrete time, and   is the state space of the system modelled by the behavior tree.
+
+ Fallback composition 
+
+Two behavior trees  and  can be composed into a more complex behavior tree  using a Fallback operator.
+
+Then return status  and the vector field  associated with  are defined (for ) as follows:
+
+ Sequence composition 
+
+Two behavior trees  and  can be composed into a more complex behavior tree  using a Sequence operator.
+
+Then return status  and the vector field  associated with  are defined (for ) as follows:

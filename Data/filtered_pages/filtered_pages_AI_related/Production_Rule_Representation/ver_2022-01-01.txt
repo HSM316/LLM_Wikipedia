@@ -1,0 +1,13 @@
+The Production Rule Representation (PRR) is a proposed standard of the Object Management Group (OMG) to provide a vendor-neutral rule-model representation in UML for production rules as used in forward-chaining rule engines.
+
+ History 
+The OMG set up a Business Rules Working Group in 2002 as the first standards body to recognize the importance of the "Business Rules Approach". It issued 2 main RFPs in 2003 – a standard for modeling production rules (PRR), and a standard for modeling business rules as business documentation (BSBR, now SBVR). 
+
+PRR was mostly defined by and for vendors of Business Rule Engines (BREs) (sometimes termed Business Rules Engine(s), like in Wikipedia). Contributors have included all the major BRE vendors, members of RuleML, and leading UML vendors.
+
+ Evolution 
+ The PRR RFP originally suggested that PRR use a combination of UML OCL and Action Semantics for rule conditions and actions. However, expecting modellers to learn 2 relatively obscure UML languages in order to define a production rule proved unpalatable. Therefore PRR OCL was defined that included OCL extensions for simple rule actions (as well as external functions). PRR OCL is currently considered "non-normative" i.e. is not part of the PRR standard per se. PRR beta applies just to a PRR Core that excludes an explicit expression language.
+ The PRR RFP envisaged covering both forward and backward chaining rule engines. However, the lack of vendor support for / interest in backward chaining caused this to be revise to forward chaining and "sequential" semantics. The latter is simply the scripting mode provided by many BPM tools, where rules are listed and executed sequentially as if programmed. This provides PRR with better compatibility with typical BPM scripting engines (and acknowledges the fact that most BREs today support a "sequential" mode of operation, improving performance in some circumstances).
+
+ Status 
+PRR is currently at version 1.0. Per the OMG process it is currently being revised by a Revision Task Force expecting to release a 1.1 version in 2010. Revision task force members were ILOG Inc (co-chair), NoMagic Inc, TIBCO Software Inc, Business Semantics Ltd, Inferware LLC, Sandpiper Software Inc, and 88 Solutions Inc.

@@ -1,0 +1,111 @@
+An AI accelerator, deep learning processor or neural processing unit (NPU) is a class of specialized hardware accelerator or computer system designed to accelerate artificial intelligence and machine learning applications, including artificial neural networks and computer vision. Typical applications include algorithms for robotics, Internet of Things, and other data-intensive or sensor-driven tasks. Google using its own AI accelerators. They are often manycore designs and generally focus on low-precision arithmetic, novel dataflow architectures or in-memory computing capability. , a typical AI integrated circuit chip contains tens of billions of MOSFETs.
+
+AI accelerators such as neural processing units (NPUs) are used in mobile devices such as Apple iPhones and Huawei cellphones, and personal computers such as Intel laptops, AMD laptops and Apple silicon Macs. Accelerators are used in cloud computing servers, including tensor processing units (TPU) in Google Cloud Platform and Trainium and Inferentia chips in Amazon Web Services. A number of vendor-specific terms exist for devices in this category, and it is an emerging technology without a dominant design.
+
+Graphics processing units designed by companies such as Nvidia and AMD often include AI-specific hardware, and are commonly used as AI accelerators, both for training and inference.
+
+ History 
+Computer systems have frequently complemented the CPU with special-purpose accelerators for specialized tasks, known as coprocessors. Notable application-specific hardware units include video cards for graphics, sound cards, graphics processing units and digital signal processors. As deep learning and artificial intelligence workloads rose in prominence in the 2010s, specialized hardware units were developed or adapted from existing products to accelerate these tasks.
+
+ Early attempts 
+First attempts like Intel's ETANN 80170NX incorporated analog circuits to compute neural functions.
+
+Later all-digital chips like the Nestor/Intel Ni1000 followed. As early as 1993, digital signal processors were used as neural network accelerators to accelerate optical character recognition software.
+
+By 1988, Wei Zhang et al. had discussed fast optical implementations of convolutional neural networks for alphabet recognition.
+
+In the 1990s, there were also attempts to create parallel high-throughput systems for workstations aimed at various applications, including neural network simulations.
+
+FPGA-based accelerators were also first explored in the 1990s for both inference and training. 
+
+In 2014, Chen et al. proposed DianNao (Chinese for "electric brain"), to accelerate deep neural networks especially. DianNao provides 452 Gop/s peak performance (of key operations in deep neural networks) in a footprint of 3.02 mm2 and 485 mW. Later, the successors (DaDianNao, ShiDianNao, PuDianNao) were proposed by the same group, forming the DianNao Family
+
+Smartphones began incorporating AI accelerators starting with the Qualcomm Snapdragon 820 in 2015.
+
+ Heterogeneous computing 
+
+Heterogeneous computing incorporates many specialized processors in a single system, or a single chip, each optimized for a specific type of task. Architectures such as the Cell microprocessor have features significantly overlapping with AI accelerators including: support for packed low precision arithmetic, dataflow architecture, and prioritizing throughput over latency. The Cell microprocessor has been applied to a number of tasks including AI.
+
+In the 2000s, CPUs also gained increasingly wide SIMD units, driven by video and gaming workloads; as well as support for packed low-precision data types. Due to the increasing performance of CPUs, they are also used for running AI workloads. CPUs are superior for DNNs with small or medium-scale parallelism, for sparse DNNs and in low-batch-size scenarios.
+
+ Use of GPUs 
+Graphics processing units or GPUs are specialized hardware for the manipulation of images and calculation of local image properties. The mathematical basis of neural networks and image manipulation are similar, embarrassingly parallel tasks involving matrices, leading GPUs to become increasingly used for machine learning tasks.
+
+In 2012, Alex Krizhevsky adopted two GPUs to train a deep learning network, i.e., AlexNet, which won the champion of the ISLVRC-2012 competition. During the 2010s, GPU manufacturers such as Nvidia added deep learning related features in both hardware (e.g., INT8 operators) and software (e.g., cuDNN Library).
+
+Over the 2010s GPUs continued to evolve in a direction to facilitate deep learning, both for training and inference in devices such as self-driving cars. GPU developers such as Nvidia NVLink are developing additional connective capability for the kind of dataflow workloads AI benefits from. As GPUs have been increasingly applied to AI acceleration, GPU manufacturers have incorporated neural network-specific hardware to further accelerate these tasks."A Survey on Optimized Implementation of Deep Learning Models on the NVIDIA Jetson Platform", 2019 Tensor cores are intended to speed up the training of neural networks.
+
+GPUs continue to be used in large-scale AI applications. For example, Summit, a supercomputer from IBM for Oak Ridge National Laboratory, contains 27,648 Nvidia Tesla V100 cards, which can be used to accelerate deep learning algorithms.
+
+ Use of FPGAs 
+Deep learning frameworks are still evolving, making it hard to design custom hardware. Reconfigurable devices such as field-programmable gate arrays (FPGA) make it easier to evolve hardware, frameworks, and software alongside each other.
+
+Microsoft has used FPGA chips to accelerate inference for real-time deep learning services.
+
+ Use of NPUs 
+(add full form of NPUs) Since 2017, several CPUs and SoCs have on-die NPUs: for example, Intel Meteor Lake, Apple A11.
+
+ Emergence of dedicated AI accelerator ASICs 
+While GPUs and FPGAs perform far better than CPUs for AI-related tasks, a factor of up to 10 in efficiency may be gained with a more specific design, via an application-specific integrated circuit (ASIC). These accelerators employ strategies such as optimized memory use and the use of lower precision arithmetic to accelerate calculation and increase throughput of computation. Some low-precision floating-point formats used for AI acceleration are half-precision and the bfloat16 floating-point format. Cerebras Systems has built a dedicated AI accelerator based on the largest processor in the industry, the second-generation Wafer Scale Engine (WSE-2), to support deep learning workloads.
+
+ Ongoing research 
+
+ In-memory computing architectures 
+
+In June 2017, IBM researchers announced an architecture in contrast to the Von Neumann architecture based on in-memory computing and phase-change memory arrays applied to temporal correlation detection, intending to generalize the approach to heterogeneous computing and massively parallel systems. In October 2018, IBM researchers announced an architecture based on in-memory processing and modeled on the human brain's synaptic network to accelerate deep neural networks. The system is based on phase-change memory arrays.
+
+ In-memory computing with analog resistive memories 
+In 2019, researchers from Politecnico di Milano found a way to solve systems of linear equations in a few tens of nanoseconds via a single operation. Their algorithm is based on in-memory computing with analog resistive memories which performs with high efficiencies of time and energy, via conducting matrix–vector multiplication in one step using Ohm's law and Kirchhoff's law. The researchers showed that a feedback circuit with cross-point resistive memories can solve algebraic problems such as systems of linear equations, matrix eigenvectors, and differential equations in just one step. Such an approach improves computational times drastically in comparison with digital algorithms.
+
+ Atomically thin semiconductors 
+In 2020, Marega et al. published experiments with a large-area active channel material for developing logic-in-memory devices and circuits based on floating-gate field-effect transistors (FGFETs). Such atomically thin semiconductors are considered promising for energy-efficient machine learning applications, where the same basic device structure is used for both logic operations and data storage. The authors used two-dimensional materials such as semiconducting molybdenum disulphide to precisely tune FGFETs as building blocks in which logic operations can be performed with the memory elements. 
+
+ Integrated photonic tensor core 
+In 1988, Wei Zhang et al. discussed fast optical implementations of convolutional neural networks for alphabet recognition.
+In 2021, J. Feldmann et al. proposed an integrated photonic hardware accelerator for parallel convolutional processing. The authors identify two key advantages of integrated photonics over its electronic counterparts: (1) massively parallel data transfer through wavelength division multiplexing in conjunction with frequency combs, and (2) extremely high data modulation speeds. Their system can execute trillions of multiply-accumulate operations per second, indicating the potential of integrated photonics in data-heavy AI applications. Optical processors that can also perform backpropagation for artificial neural networks have been experimentally developed.
+
+ Nomenclature 
+As of 2016, the field is still in flux and vendors are pushing their own marketing term for what amounts to an "AI accelerator", in the hope that their designs and APIs will become the dominant design. There is no consensus on the boundary between these devices, nor the exact form they will take; however several examples clearly aim to fill this new space, with a fair amount of overlap in capabilities.
+
+In the past when consumer graphics accelerators emerged, the industry eventually adopted Nvidia's self-assigned term, "the GPU",
+as the collective noun for "graphics accelerators", which had taken many forms before .
+
+All models of Intel Meteor Lake processors have a Versatile Processor Unit (VPU) built-in for accelerating inference for computer vision and deep learning.
+
+ Deep learning processors (DLPs) 
+
+Inspired from the pioneer work of DianNao Family, many DLPs are proposed in both academia and industry with design optimized to leverage the features of deep neural networks for high efficiency. At ISCA 2016, three sessions (15%) of the accepted papers, focused on architecture designs about deep learning. Such efforts include Eyeriss (MIT), EIE (Stanford), Minerva (Harvard), Stripes (University of Toronto) in academia, TPU (Google), and MLU (Cambricon) in industry. We listed several representative works in Table 1.
+
+Table 1. Typical DLPsYearDLPsInstitutionTypeComputationMemory HierarchyControlPeak Performance2014DianNaoICT, CASdigitalvector MACsscratchpadVLIW452 Gops (16-bit)DaDianNaoICT, CASdigitalvector MACsscratchpadVLIW5.58 Tops (16-bit)2015ShiDianNaoICT, CASdigitalscalar MACsscratchpadVLIW194 Gops (16-bit)PuDianNaoICT, CASdigitalvector MACsscratchpadVLIW1,056 Gops (16-bit)2016DnnWeaverGeorgia TechdigitalVector MACsscratchpad - -EIEStanforddigitalscalar MACsscratchpad -102 Gops (16-bit)EyerissMITdigitalscalar MACsscratchpad -67.2 Gops (16-bit)PrimeUCSBhybridProcess-in-MemoryReRAM - -2017TPUGoogledigitalscalar MACsscratchpadCISC92 Tops (8-bit)PipeLayerU of PittsburghhybridProcess-in-MemoryReRAM -FlexFlowICT, CASdigitalscalar MACsscratchpad -420 Gops ()DNPUKAISTdigitalscalar MACSscratchpad -300 Gops(16bit)
+1200 Gops(4bit)2018MAERIGeorgia Techdigitalscalar MACsscratchpad -PermDNNCity University of New Yorkdigitalvector MACsscratchpad -614.4 Gops (16-bit)UNPUKAISTdigitalscalar MACsscratchpad -345.6 Gops(16bit)
+691.2 Gops(8b)
+1382 Gops(4bit)
+7372 Gops(1bit)2019FPSATsinghuahybridProcess-in-MemoryReRAM -Cambricon-FICT, CASdigitalvector MACsscratchpadFISA14.9 Tops (F1, 16-bit)
+
+956 Tops (F100, 16-bit)
+
+ Digital DLPs 
+
+The major components of DLPs architecture usually include a computation component, the on-chip memory hierarchy, and the control logic that manages the data communication and computing flows.
+
+Regarding the computation component, as most operations in deep learning can be aggregated into vector operations, the most common ways for building computation components in digital DLPs are the MAC-based (multiplier-accumulation) organization, either with vector MACs or scalar MACs. Rather than SIMD or SIMT in general processing devices, deep learning domain-specific parallelism is better explored on these MAC-based organizations. Regarding the memory hierarchy, as deep learning algorithms require high bandwidth to provide the computation component with sufficient data, DLPs usually employ a relatively larger size (tens of kilobytes or several megabytes) on-chip buffer but with dedicated on-chip data reuse strategy and data exchange strategy to alleviate the burden for memory bandwidth. For example, DianNao, 16 16-in vector MAC, requires 16 × 16 × 2 = 512 16-bit data, i.e., almost 1024 GB/s bandwidth requirements between computation components and buffers. With on-chip reuse, such bandwidth requirements are reduced drastically. Instead of the widely used cache in general processing devices, DLPs always use scratchpad memory as it could provide higher data reuse opportunities by leveraging the relatively regular data access pattern in deep learning algorithms. Regarding the control logic, as the deep learning algorithms keep evolving at a dramatic speed, DLPs start to leverage dedicated ISA (instruction set architecture) to support the deep learning domain flexibly. At first, DianNao used a VLIW-style instruction set where each instruction could finish a layer in a DNN. Cambricon introduces the first deep learning domain-specific ISA, which could support more than ten different deep learning algorithms. TPU also reveals five key instructions from the CISC-style ISA.
+
+ Hybrid DLPs 
+
+Hybrid DLPs emerge for DNN inference and training acceleration because of their high efficiency. Processing-in-memory (PIM) architectures are one most important type of hybrid DLP. The key design concept of PIM is to bridge the gap between computing and memory, with the following manners: 1) Moving computation components into memory cells, controllers, or memory chips to alleviate the memory wall issue. Such architectures significantly shorten data paths and leverage much higher internal bandwidth, hence resulting in attractive performance improvement. 2) Build high efficient DNN engines by adopting computational devices. In 2013, HP Lab demonstrated the astonishing capability of adopting ReRAM crossbar structure for computing. Inspiring by this work, tremendous work are proposed to explore the new architecture and system design based on ReRAM, phase change memory, etc.
+
+ Benchmarks 
+Benchmarks such as MLPerf and others may be used to evaluate the performance of AI accelerators. Table 2 lists several typical benchmarks for AI accelerators.
++Table 2. Benchmarks.YearNN BenchmarkAffiliations# of microbenchmarks# of component benchmarks# of application benchmarks2012BenchNNICT, CASN/A12N/A2016FathomHarvardN/A8N/A2017BenchIPICT, CAS1211N/A2017DAWNBenchStanford8N/AN/A2017DeepBenchBaidu4N/AN/A2018AI BenchmarkETH ZurichN/A26N/A2018MLPerfHarvard, Intel, and Google, etc.N/A7N/A2019AIBenchICT, CAS and Alibaba, etc.121622019NNBench-XUCSBN/A10N/A
+
+ Potential applications 
+Agricultural robots, for example, herbicide-free weed control.
+Autonomous vehicles: Nvidia has targeted their Drive PX-series boards at this application.
+Computer-aided diagnosis
+Industrial robots, increasing the range of tasks that can be automated, by adding adaptability to variable situations.
+Machine translation
+Military robots
+Natural language processing
+Search engines, increasing the energy efficiency of data centers and the ability to use increasingly advanced queries.
+Unmanned aerial vehicles, e.g. navigation systems, e.g. the Movidius Myriad 2 has been demonstrated successfully guiding autonomous drones.
+Voice user interface, e.g. in mobile phones, a target for Qualcomm Zeroth.

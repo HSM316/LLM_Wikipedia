@@ -1,0 +1,15 @@
+The AI Memos are a series of influential memorandums and technical reports published by the MIT AI Lab, Massachusetts Institute of Technology, United States. They cover Artificial Intelligence, a field of computer science.
+
+Noteworthy memos in the series include:
+
+ AI Memo 39, "The New Compiler", describing the first implementation of a self-hosting compiler (for LISP 1.5)
+ AI Memo 41, "A Chess Playing Program", describing Kotok-McCarthy, the first computer program to play chess convincingly
+ AI Memo 239 (1972), also known as HAKMEM, a compendium of hacks and algorithms
+ Sussman and Steele's Lambda Papers:
+ AI Memo 349 (1975), "Scheme: An Interpreter for Extended Lambda Calculus"
+ AI Memo 353 (1976), "Lambda: The Ultimate Imperative"
+ AI Memo 379 (1976), "Lambda: The Ultimate Declarative"
+ AI Memo 443 (1977), "Debunking the 'Expensive Procedure Call' Myth, or, Procedure Call Implementations Considered Harmful, or, Lambda: The Ultimate GOTO"
+ AI Memo 453 (1978), "The Art of the Interpreter of, the Modularity Complex (Parts Zero, One, and Two)"
+ AI Technical Report 474 (1978), "RABBIT: A Compiler for SCHEME"
+ AI Memo 514 (1979), "Design of LISP-based Processors, or SCHEME: A Dielectric LISP, or Finite Memories Considered Harmful, or LAMBDA: The Ultimate Opcode"

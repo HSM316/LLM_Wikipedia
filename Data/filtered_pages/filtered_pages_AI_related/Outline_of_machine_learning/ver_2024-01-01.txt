@@ -1,0 +1,534 @@
+The following outline is provided as an overview of and topical guide to machine learning:
+
+Machine learning – subfield of soft computing within computer science that evolved from the study of pattern recognition and computational learning theory in artificial intelligence.http://www.britannica.com/EBchecked/topic/1116194/machine-learning  In 1959, Arthur Samuel defined machine learning as a "field of study that gives computers the ability to learn without being explicitly programmed". Machine learning explores the study and construction of algorithms that can learn from and make predictions on data. Such algorithms operate by building a model from an example training set of input observations in order to make data-driven predictions or decisions expressed as outputs, rather than following strictly static program instructions.
+
+ What type of thing is machine learning? 
+
+ An academic discipline
+ A branch of science
+ An applied science
+ A subfield of computer science
+ A branch of artificial intelligence
+ A subfield of soft computing
+ Application of statistics
+
+ Branches of machine learning 
+
+ Subfields of machine learning 
+
+ Computational learning theory – studying the design and analysis of machine learning algorithms.
+ Grammar induction
+ Meta-learning
+
+ Cross-disciplinary fields involving machine learning 
+
+ Adversarial machine learning
+ Predictive analytics
+ Quantum machine learning
+ Robot learning
+ Developmental robotics
+
+ Applications of machine learning 
+
+ Applications of machine learning
+ Bioinformatics
+ Biomedical informatics
+ Computer vision
+ Customer relationship management –
+ Data mining
+ Earth sciences
+ Email filtering
+ Inverted pendulum – balance and equilibrium system.
+ Natural language processing (NLP)
+ Named Entity Recognition
+ Automatic summarization
+ Automatic taxonomy construction
+ Dialog system
+ Grammar checker
+ Language recognition
+ Handwriting recognition
+ Optical character recognition
+ Speech recognition
+ Text to Speech Synthesis (TTS)
+ Speech Emotion Recognition (SER)
+ Machine translation
+ Question answering
+ Speech synthesis
+ Text mining
+ Term frequency–inverse document frequency (tf–idf)
+ Text simplification
+ Pattern recognition
+ Facial recognition system
+ Handwriting recognition
+ Image recognition 
+ Optical character recognition
+ Speech recognition
+ Recommendation system
+ Collaborative filtering
+ Content-based filtering
+ Hybrid recommender systems (Collaborative and content-based filtering)
+ Search engine
+ Search engine optimization
+ Social Engineering
+
+ Machine learning hardware 
+
+ Graphics processing unit
+ Tensor processing unit
+ Vision processing unit
+
+ Machine learning tools 
+
+ Comparison of deep learning software
+
+ Machine learning frameworks 
+
+ Proprietary machine learning frameworks 
+
+ Amazon Machine Learning
+ Microsoft Azure Machine Learning Studio
+ DistBelief – replaced by TensorFlow
+
+ Open source machine learning frameworks 
+
+ Apache Singa
+ Apache MXNet
+ Caffe
+ PyTorch 
+ mlpack
+ TensorFlow
+ Torch
+ CNTK
+ Accord.Net
+ Jax
+ MLJ.jl – A machine learning framework for Julia
+
+ Machine learning libraries 
+
+ Deeplearning4j
+ Theano
+ scikit-learn
+ Keras
+
+ Machine learning algorithms 
+
+ Almeida–Pineda recurrent backpropagation
+ ALOPEX
+ Backpropagation
+ Bootstrap aggregating
+ CN2 algorithm
+ Constructing skill trees
+ Dehaene–Changeux model
+ Diffusion map
+ Dominance-based rough set approach
+ Dynamic time warping
+ Error-driven learning
+ Evolutionary multimodal optimization
+ Expectation–maximization algorithm
+ FastICA
+ Forward–backward algorithm
+ GeneRec
+ Genetic Algorithm for Rule Set Production
+ Growing self-organizing map
+ Hyper basis function network
+ IDistance
+ K-nearest neighbors algorithm
+ Kernel methods for vector output
+ Kernel principal component analysis
+ Leabra
+ Linde–Buzo–Gray algorithm
+ Local outlier factor
+ Logic learning machine
+ LogitBoost
+ Manifold alignment
+ Markov chain Monte Carlo (MCMC)
+ Minimum redundancy feature selection
+ Mixture of experts
+ Multiple kernel learning
+ Non-negative matrix factorization
+ Online machine learning
+ Out-of-bag error
+ Prefrontal cortex basal ganglia working memory
+ PVLV
+ Q-learning
+ Quadratic unconstrained binary optimization
+ Query-level feature
+ Quickprop
+ Radial basis function network
+ Randomized weighted majority algorithm
+ Reinforcement learning
+ Repeated incremental pruning to produce error reduction (RIPPER)
+ Rprop
+ Rule-based machine learning
+ Skill chaining
+ Sparse PCA
+ State–action–reward–state–action
+ Stochastic gradient descent
+ Structured kNN
+ T-distributed stochastic neighbor embedding
+ Temporal difference learning
+ Wake-sleep algorithm
+ Weighted majority algorithm (machine learning)
+
+ Machine learning methods 
+
+ Instance-based algorithm 
+ K-nearest neighbors algorithm (KNN)
+ Learning vector quantization (LVQ)
+ Self-organizing map (SOM)
+
+ Regression analysis 
+ Logistic regression
+ Ordinary least squares regression (OLSR)
+ Linear regression
+ Stepwise regression
+ Multivariate adaptive regression splines (MARS)
+
+ Regularization algorithm
+ Ridge regression
+ Least Absolute Shrinkage and Selection Operator (LASSO)
+ Elastic net
+ Least-angle regression (LARS)
+ Classifiers
+ Probabilistic classifier
+ Naive Bayes classifier
+ Binary classifier
+ Linear classifier
+ Hierarchical classifier
+
+ Dimensionality reduction 
+
+Dimensionality reduction
+ Canonical correlation analysis (CCA)
+ Factor analysis
+ Feature extraction
+ Feature selection
+ Independent component analysis (ICA)
+ Linear discriminant analysis (LDA)
+ Multidimensional scaling (MDS)
+ Non-negative matrix factorization (NMF)
+ Partial least squares regression (PLSR)
+ Principal component analysis (PCA)
+ Principal component regression (PCR)
+ Projection pursuit
+ Sammon mapping
+ t-distributed stochastic neighbor embedding (t-SNE)
+
+ Ensemble learning 
+
+Ensemble learning
+ AdaBoost
+ Boosting
+ Bootstrap aggregating (Bagging)
+ Ensemble averaging – process of creating multiple models and combining them to produce a desired output, as opposed to creating just one model. Frequently an ensemble of models performs better than any individual model, because the various errors of the models "average out."
+ Gradient boosted decision tree (GBDT)
+ Gradient boosting machine (GBM)
+ Random Forest
+ Stacked Generalization (blending)
+
+ Meta-learning 
+
+Meta-learning
+ Inductive bias
+ Metadata
+
+ Reinforcement learning 
+
+Reinforcement learning
+ Q-learning
+ State–action–reward–state–action (SARSA)
+ Temporal difference learning (TD)
+ Learning Automata
+
+ Supervised learning 
+
+Supervised learning
+ Averaged one-dependence estimators (AODE)
+ Artificial neural network
+ Case-based reasoning
+ Gaussian process regression
+ Gene expression programming
+ Group method of data handling (GMDH)
+ Inductive logic programming
+ Instance-based learning
+ Lazy learning
+ Learning Automata
+ Learning Vector Quantization
+ Logistic Model Tree
+ Minimum message length (decision trees, decision graphs, etc.)
+ Nearest Neighbor Algorithm
+ Analogical modeling
+ Probably approximately correct learning (PAC) learning
+ Ripple down rules, a knowledge acquisition methodology
+ Symbolic machine learning algorithms
+ Support vector machines
+ Random Forests
+ Ensembles of classifiers
+ Bootstrap aggregating (bagging)
+ Boosting (meta-algorithm)
+ Ordinal classification
+ Conditional Random Field
+ ANOVA
+ Quadratic classifiers
+ k-nearest neighbor
+ Boosting
+ SPRINT
+ Bayesian networks
+ Naive Bayes
+ Hidden Markov models
+ Hierarchical hidden Markov model
+
+ Bayesian 
+
+Bayesian statistics
+ Bayesian knowledge base
+ Naive Bayes
+ Gaussian Naive Bayes
+ Multinomial Naive Bayes
+ Averaged One-Dependence Estimators (AODE)
+ Bayesian Belief Network (BBN)
+ Bayesian Network (BN)
+
+ Decision tree algorithms 
+
+Decision tree algorithm
+ Decision tree
+ Classification and regression tree (CART)
+ Iterative Dichotomiser 3 (ID3)
+ C4.5 algorithm
+ C5.0 algorithm
+ Chi-squared Automatic Interaction Detection (CHAID)
+ Decision stump
+ Conditional decision tree
+ ID3 algorithm
+ Random forest
+ SLIQ
+
+ Linear classifier 
+
+Linear classifier
+ Fisher's linear discriminant
+ Linear regression
+ Logistic regression
+ Multinomial logistic regression
+ Naive Bayes classifier
+ Perceptron
+ Support vector machine
+
+ Unsupervised learning 
+
+Unsupervised learning
+ Expectation-maximization algorithm
+ Vector Quantization
+ Generative topographic map
+ Information bottleneck method
+ Association rule learning algorithms
+ Apriori algorithm
+ Eclat algorithm
+
+ Artificial neural networks 
+
+Artificial neural network
+ Feedforward neural network
+ Extreme learning machine
+ Convolutional neural network
+ Recurrent neural network
+ Long short-term memory (LSTM)
+ Logic learning machine
+ Self-organizing map
+
+ Association rule learning 
+
+Association rule learning
+ Apriori algorithm
+ Eclat algorithm
+ FP-growth algorithm
+
+ Hierarchical clustering 
+
+Hierarchical clustering
+ Single-linkage clustering
+ Conceptual clustering
+
+ Cluster analysis 
+
+Cluster analysis
+ BIRCH
+ DBSCAN
+ Expectation-maximization (EM)
+ Fuzzy clustering
+ Hierarchical Clustering
+ K-means clustering
+ K-medians
+ Mean-shift
+ OPTICS algorithm
+
+ Anomaly detection 
+
+Anomaly detection
+ k-nearest neighbors algorithm (k-NN)
+ Local outlier factor
+
+ Semi-supervised learning 
+
+Semi-supervised learning
+ Active learning – special case of semi-supervised learning in which a learning algorithm is able to interactively query the user (or some other information source) to obtain the desired outputs at new data points.
+ Generative models
+ Low-density separation
+ Graph-based methods
+ Co-training
+ Transduction
+
+ Deep learning 
+
+Deep learning
+ Deep belief networks
+ Deep Boltzmann machines
+ Deep Convolutional neural networks
+ Deep Recurrent neural networks
+ Hierarchical temporal memory
+ Generative Adversarial Network
+ Style transfer
+ Transformer
+ Stacked Auto-Encoders
+
+ Other machine learning methods and problems 
+
+ Anomaly detection
+ Association rules
+ Bias-variance dilemma
+ Classification
+ Multi-label classification
+ Clustering
+ Data Pre-processing
+ Empirical risk minimization
+ Feature engineering
+ Feature learning
+ Learning to rank
+ Occam learning
+ Online machine learning
+ PAC learning
+ Regression
+ Reinforcement Learning
+ Semi-supervised learning
+ Statistical learning
+ Structured prediction
+ Graphical models
+ Bayesian network
+ Conditional random field (CRF)
+ Hidden Markov model (HMM)
+ Unsupervised learning
+ VC theory
+
+ Machine learning research 
+ List of artificial intelligence projects
+ List of datasets for machine learning research
+
+ History of machine learning 
+
+History of machine learning
+ Timeline of machine learning
+
+ Machine learning projects 
+
+Machine learning projects
+ DeepMind
+ Google Brain
+ OpenAI
+ Meta AI
+
+ Machine learning organizations 
+
+Machine learning organizations
+
+ Machine learning conferences and workshops 
+
+ Artificial Intelligence and Security (AISec) (co-located workshop with CCS)
+ Conference on Neural Information Processing Systems (NIPS)
+ ECML PKDD
+ International Conference on Machine Learning (ICML)
+ ML4ALL (Machine Learning For All)
+
+ Machine learning publications 
+
+ Books on machine learning 
+
+ Mathematics for Machine Learning
+ Hands-On Machine Learning Scikit-Learn, Keras, and TensorFlow
+ The Hundred-Page Machine Learning Book
+
+ Machine learning journals 
+
+ Machine Learning
+ Journal of Machine Learning Research (JMLR)
+ Neural Computation
+
+ Persons influential in machine learning 
+
+ Alberto Broggi
+ Andrei Knyazev
+ Andrew McCallum
+ Andrew Ng
+ Anuraag Jain
+ Armin B. Cremers
+ Ayanna Howard
+ Barney Pell
+ Ben Goertzel
+ Ben Taskar
+ Bernhard Schölkopf
+ Brian D. Ripley
+ Christopher G. Atkeson
+ Corinna Cortes
+ Demis Hassabis
+ Douglas Lenat
+ Eric Xing
+ Ernst Dickmanns
+ Geoffrey Hinton – co-inventor of the backpropagation and contrastive divergence training algorithms
+ Hans-Peter Kriegel
+ Hartmut Neven
+ Heikki Mannila
+ Ian Goodfellow – Father of Generative & adversarial networks
+ Jacek M. Zurada
+ Jaime Carbonell
+ Jeremy Slovak
+ Jerome H. Friedman
+ John D. Lafferty
+ John Platt – invented SMO and Platt scaling
+ Julie Beth Lovins
+ Jürgen Schmidhuber
+ Karl Steinbuch
+ Katia Sycara
+ Leo Breiman – invented bagging and random forests
+ Lise Getoor
+ Luca Maria Gambardella
+ Léon Bottou
+ Marcus Hutter
+ Mehryar Mohri
+ Michael Collins
+ Michael I. Jordan
+ Michael L. Littman
+ Nando de Freitas
+ Ofer Dekel
+ Oren Etzioni
+ Pedro Domingos
+ Peter Flach
+ Pierre Baldi
+ Pushmeet Kohli
+ Ray Kurzweil
+ Rayid Ghani
+ Ross Quinlan
+ Salvatore J. Stolfo
+ Sebastian Thrun
+ Selmer Bringsjord
+ Sepp Hochreiter
+ Shane Legg
+ Stephen Muggleton
+ Steve Omohundro
+ Tom M. Mitchell
+ Trevor Hastie
+ Vasant Honavar
+ Vladimir Vapnik – co-inventor of the SVM and VC theory
+ Yann LeCun – invented convolutional neural networks
+ Yasuo Matsuyama
+ Yoshua Bengio
+ Zoubin Ghahramani

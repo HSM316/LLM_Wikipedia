@@ -1,0 +1,15 @@
+In data governance groups, responsibilities for data management are increasingly divided between the business process owners and information technology (IT) departments.  Two functional titles commonly used for these roles are data steward and data custodian. 
+
+Data Stewards are commonly responsible for data content, context, and associated business rules. Data custodians are responsible for the safe custody, transport, storage of the data and implementation of business rules.Carnegie Mellon - Information Security Roles and Responsibilities, http://www.cmu.edu/iso/governance/roles/data-custodian.htmlPolicies, Regulations and Rules: Data Management Procedures - REG 08.00.3 - Information Technology, NC State University, http://www.ncsu.edu/policies/informationtechnology/REG08.00.3.php  Simply put, Data Stewards are responsible for what is stored in a data field, while data custodians are responsible for the technical environment and database structure. Common job titles for data custodians are database administrator (DBA), data modeler,ETL developer and data engineer.
+
+Data custodian responsibilities
+A data custodian ensures:
+ Access to the data is authorized and controlled
+ Data stewards are identified for each data set
+ Technical processes sustain data integrity
+ Processes exist for data quality issue resolution in partnership with data stewards
+ Technical controls safeguard data
+ Data added to data sets are consistent with the common data model
+ Versions of master data are maintained along with the history of changes
+ Change management practices are applied in maintenance of the database
+ Data content and changes can be audited

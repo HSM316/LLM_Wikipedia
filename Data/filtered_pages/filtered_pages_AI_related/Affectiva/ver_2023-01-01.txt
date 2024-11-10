@@ -1,0 +1,41 @@
+Affectiva is a software company that builds artificial intelligence. The company claims its AI understands human emotions, cognitive states, activities and the objects people use, by analyzing facial and vocal expressions. An offshoot of MIT Media Lab, Affectiva created a new technological category of Artificial Emotional Intelligence, namely, Emotion AI.
+
+History
+Affectiva was co-founded by Rana el Kaliouby, Ph.D., who became chief executive officer as of May 25, 2016, and Rosalind W. Picard, Sc.D., who worked as chairman and Chief Scientist until 2013. Both of Affectiva's early products grew out of collaborative research at the MIT's Media Lab to help people on the autism spectrum.
+
+Affectiva co-founder and CEO, Rana el Kaliouby, Ph.D. has been recognized on Inc.’s Female Founders 100 List 2020, BBC 100 Women 2019, Fortune’s Most Powerful Women Trailblazers 2019, Forbes: America’s Top 50 Women in Tech, Fortune’s 40 under 40 list, and others. She also delivered a TED Talk that has garnered over 1.6 million views.
+
+Affectiva has been recognized on Forbes’ AI 50: America's Most Promising Artificial Intelligence Companies, CB Insights’ AI 100, Forbes’ Top 10 Hot AI Technologies.
+
+Affectiva has been covered in Gartner's, Competitive Landscape: Emotion AI Technologies, Worldwide, and in IDC Innovators: Affective Computing report.
+
+On April 21, 2020, Affectiva co-founder and CEO, Rana el Kaliouby, Ph.D., released a book about her personal journey and the story of Affectiva, called Girl Decoded: A Scientist's Quest to Reclaim Our Humanity by Bringing Emotional Intelligence to Technology. The book was published by Penguin Random House and reviewed by The Wall Street Journal and Science Magazine.
+
+Technology
+The company has expanded its Emotion AI technology to detect more than facial expressions, reactions and emotions. Affectiva's software detects complex and nuanced emotions, cognitive states, such as drowsiness and distraction, certain activities and the objects people use. It does that by analyzing the human face, vocal intonations and body posture.
+
+Affectiva's AI is built with deep learning, computer vision, speech analytics and large amounts of data that has been collected in real-world scenarios. The AI uses an optical sensor like a webcam or smartphone camera to identify a human face in real-time. Then, computer vision algorithms identify key features on the face, which are analyzed by deep learning algorithms to classify facial expressions. These facial expressions are then mapped back to emotions. One journal paper found the  results are comparable to results using facial Electromyography. Affectiva also uses computer vision to detect objects like a cellphone and car seat, as well as body key points, which track body joints to determine movement and location. The company's speech technology works by analyzing audio segments for their acoustic-prosodic features, such as, for example, changes in tone, loudness and tempo.
+
+Affectiva has collected massive amounts of data that are used to train and test the company's deep learning algorithms, and provide insight into human emotional reactions and engagement. The company has analyzed more than 10 million face videos from 90 countries, making it one of the largest data repositories of its kind. Affectiva has also collected more than 19,000 hours of automotive in-cabin data from 4,000 unique individuals. This automotive data is used to adapt its algorithms to varying camera angles, lighting and other environmental conditions in a vehicle.
+
+Affectiva has collected all this data with opt-in and consent. The data is diverse in terms of human appearance features (i.e. gender, ethnicity, age, facial hair, glasses, etc.) and use cases.  The diversity of the data helps the company guard against algorithmic and data bias.
+
+Applications
+Affectiva's AI has many applications, but the company's primary focus is on Automotive and Media Analytics. Other uses of Affectiva's AI include applications in healthcare and mental health, robotics, conversational interfaces, education, gaming, and more.
+
+ Media Analytics 
+Affectiva's technology was first deployed in media analytics, for market research purposes. The company has since tested more than 53,000 ads in 90 countries. Brands, advertising agencies and insights firms use the company's Emotion AI to measure the unfiltered and unbiased emotional responses consumers have when viewing video ads and movie trailers. These insights help improve brand and media content, and predict key metrics in advertising such as sales lift, purchase intent and virality. Affectiva's technology is also used in qualitative research.
+
+Affectiva has partnered with leading insights firms such as Kantar, LRW, Added Value and Unruly. Through these collaborations, 28 percent of the Fortune Global 500 companies, and 70 percent of the world's largest advertisers, use Affectiva’s Emotion AI.
+
+On September 5, 2019, Affectiva announced the appointment of Graham Page, a seasoned Kantar executive, as Global Managing Director of Media Analytics to expand on the company's existing footprint in the media analytics space.
+
+ Automotive 
+On March 21, 2018, Affectiva launched Affectiva Automotive AI, the first multi-modal in-cabin sensing solution to understand what is happening with people in a vehicle. It uses cameras in the car to measure in real time, the state of the driver, the state of the occupants and the state of the vehicle interior (i.e. cabin). This insight helps car manufacturers, fleet management companies and rideshare providers improve road safety and build better driver monitoring systems, by understanding dangerous driver behavior such as drowsiness, distraction and anger. It can also be used to create more comfortable and enjoyable transportation experiences, by understanding how passengers react to the environment, such as content they can consume in the back of the car.
+
+In addition to understanding driver and occupant emotional and cognitive states, Affectiva Automotive AI can also detect contextual cabin information such as the number of passengers, where they are sitting and if an object is present.
+
+Affectiva works with a number of leading car manufacturers and transportation technology companies, including Aptiv, Cerence, Hyundai Kia, Faurecia, Porsche, BMW, GreenRoad Technologies, and Veoneer.  
+
+Acquisition
+In June 2021 Smart Eye acquired Affectiva.

@@ -1,0 +1,394 @@
+An illustration of how a GAN works.
+
+A generative adversarial network (GAN) is a class of machine learning frameworks and a prominent framework for approaching generative AI. The concept was initially developed by Ian Goodfellow and his colleagues in June 2014. In a GAN, two neural networks contest with each other in the form of a zero-sum game, where one agent's gain is another agent's loss.
+
+Given a training set, this technique learns to generate new data with the same statistics as the training set. For example, a GAN trained on photographs can generate new photographs that look at least superficially authentic to human observers, having many realistic characteristics. Though originally proposed as a form of generative model for unsupervised learning, GANs have also proved useful for semi-supervised learning, fully supervised learning, and reinforcement learning.
+
+The core idea of a GAN is based on the "indirect" training through the discriminator, another neural network that can tell how "realistic" the input seems, which itself is also being updated dynamically. This means that the generator is not trained to minimize the distance to a specific image, but rather to fool the discriminator. This enables the model to learn in an unsupervised manner.
+
+GANs are similar to mimicry in evolutionary biology, with an evolutionary arms race between both networks.
+
+Definition
+
+ Mathematical 
+
+The original GAN is defined as the following game:Each probability space  defines a GAN game.
+
+There are 2 players: generator and discriminator.
+
+The generator's strategy set is , the set of all probability measures  on .
+
+The discriminator's strategy set is the set of Markov kernels , where  is the set of probability measures on .
+
+The GAN game is a zero-sum game, with objective function
+The generator aims to minimize the objective, and the discriminator aims to maximize the objective.The generator's task is to approach , that is, to match its own output distribution as closely as possible to the reference distribution. The discriminator's task is to output a value close to 1 when the input appears to be from the reference distribution, and to output a value close to 0 when the input looks like it came from the generator distribution.
+
+ In practice 
+The generative network generates candidates while the discriminative network evaluates them. The contest operates in terms of data distributions. Typically, the generative network learns to map from a latent space to a data distribution of interest, while the discriminative network distinguishes candidates produced by the generator from the true data distribution. The generative network's training objective is to increase the error rate of the discriminative network (i.e., "fool" the discriminator network by producing novel candidates that the discriminator thinks are not synthesized (are part of the true data distribution)).
+
+A known dataset serves as the initial training data for the discriminator. Training involves presenting it with samples from the training dataset until it achieves acceptable accuracy. The generator is trained based on whether it succeeds in fooling the discriminator. Typically, the generator is seeded with randomized input that is sampled from a predefined latent space (e.g. a multivariate normal distribution). Thereafter, candidates synthesized by the generator are evaluated by the discriminator. Independent backpropagation procedures are applied to both networks so that the generator produces better samples, while the discriminator becomes more skilled at flagging synthetic samples. When used for image generation, the generator is typically a deconvolutional neural network, and the discriminator is a convolutional neural network.
+
+ Relation to other statistical machine learning methods 
+GANs are implicit generative models, which means that they do not explicitly model the likelihood function nor provide a means for finding the latent variable corresponding to a given sample, unlike alternatives such as flow-based generative model.
+Main types of deep generative models that perform maximum likelihood estimation
+Compared to fully visible belief networks such as WaveNet and PixelRNN and autoregressive models in general, GANs can generate one complete sample in one pass, rather than multiple passes through the network.
+
+Compared to Boltzmann machines and nonlinear ICA, there is no restriction on the type of function used by the network.
+
+Since neural networks are universal approximators, GANs are asymptotically consistent. Variational autoencoders might be universal approximators, but it is not proven as of 2017.
+
+ Mathematical properties 
+
+ Measure-theoretic considerations 
+This section provides some of the mathematical theory behind these methods.
+
+In modern probability theory based on measure theory, a probability space also needs to be equipped with a σ-algebra. As a result, a more rigorous definition of the GAN game would make the following changes:Each probability space  defines a GAN game.
+
+The generator's strategy set is , the set of all probability measures  on the measure-space .
+
+The discriminator's strategy set is the set of Markov kernels , where  is the Borel σ-algebra on .Since issues of measurability never arise in practice, these will not concern us further.
+
+ Choice of the strategy set 
+In the most generic version of the GAN game described above, the strategy set for the discriminator contains all Markov kernels , and the strategy set for the generator contains arbitrary probability distributions  on .
+
+However, as shown below, the optimal discriminator strategy against any  is deterministic, so there is no loss of generality in restricting the discriminator's strategies to deterministic functions . In most applications,  is a deep neural network function.
+
+As for the generator, while  could theoretically be any computable probability distribution, in practice, it is usually implemented as a pushforward: . That is, start with a random variable , where  is a probability distribution that is easy to compute (such as the uniform distribution, or the Gaussian distribution), then define a function . Then the distribution  is the distribution of .
+
+Consequently, the generator's strategy is usually defined as just , leaving  implicit. In this formalism, the GAN game objective is
+
+ Generative reparametrization 
+The GAN architecture has two main components. One is casting optimization into a game, of form , which is different from the usual kind of optimization, of form . The other is the decomposition of  into , which can be understood as a reparametrization trick.
+
+To see its significance, one must compare GAN with previous methods for learning generative models, which were plagued with "intractable probabilistic computations that arise in maximum likelihood estimation and related strategies".
+
+At the same time, Kingma and Welling and Rezende et al. developed the same idea of reparametrization into a general stochastic backpropagation method. Among its first applications was the variational autoencoder.
+
+ Move order and strategic equilibria 
+
+In the original paper, as well as most subsequent papers, it is usually assumed that the generator moves first, and the discriminator moves second, thus giving the following minimax game:
+
+If both the generator's and the discriminator's strategy sets are spanned by a finite number of strategies, then by the minimax theorem,that is, the move order does not matter.
+
+However, since the strategy sets are both not finitely spanned, the minimax theorem does not apply, and the idea of an "equilibrium" becomes delicate. To wit, there are the following different concepts of equilibrium:
+
+ Equilibrium when generator moves first, and discriminator moves second:
+ Equilibrium when discriminator moves first, and generator moves second: 
+ Nash equilibrium , which is stable under simultaneous move order:
+
+For general games, these equilibria do not have to agree, or even to exist. For the original GAN game, these equilibria all exist, and are all equal. However, for more general GAN games, these do not necessarily exist, or agree.
+
+ Main theorems for GAN game 
+The original GAN paper proved the following two theorems:
+
+Interpretation: For any fixed generator strategy , the optimal discriminator keeps track of the likelihood ratio between the reference distribution and the generator distribution:where  is the logistic function.
+In particular, if the prior probability for an image  to come from the reference distribution is equal to , then  is just the posterior probability that  came from the reference distribution:
+
+ Training and evaluating GAN 
+
+ Training 
+
+ Unstable convergence 
+While the GAN game has a unique global equilibrium point when both the generator and discriminator have access to their entire strategy sets, the equilibrium is no longer guaranteed when they have a restricted strategy set.
+
+In practice, the generator has access only to measures of form , where  is a function computed by a neural network with parameters , and  is an easily sampled distribution, such as the uniform or normal distribution. Similarly, the discriminator has access only to functions of form , a function computed by a neural network with parameters . These restricted strategy sets take up a vanishingly small proportion of their entire strategy sets.
+
+Further, even if an equilibrium still exists, it can only be found by searching in the high-dimensional space of all possible neural network functions. The standard strategy of using gradient descent to find the equilibrium often does not work for GAN, and often the game "collapses" into one of several failure modes. To improve the convergence stability, some training strategies start with an easier task, such as generating low-resolution images or simple images (one object with uniform background), and gradually increase the difficulty of the task during training. This essentially translates to applying a curriculum learning scheme.
+
+ Mode collapse 
+GANs often suffer from mode collapse where they fail to generalize properly, missing entire modes from the input data. For example, a GAN trained on the MNIST dataset containing many samples of each digit might only generate pictures of digit 0. This was named in the first paper as the "Helvetica scenario".
+
+One way this can happen is if the generator learns too fast compared to the discriminator. If the discriminator  is held constant, then the optimal generator would only output elements of . So for example, if during GAN training for generating MNIST dataset, for a few epochs, the discriminator somehow prefers the digit 0 slightly more than other digits, the generator may seize the opportunity to generate only digit 0, then be unable to escape the local minimum after the discriminator improves.
+
+Some researchers perceive the root problem to be a weak discriminative network that fails to notice the pattern of omission, while others assign blame to a bad choice of objective function. Many solutions have been proposed, but it is still an open problem.
+
+Even the state-of-the-art architecture, BigGAN (2019), could not avoid mode collapse. The authors resorted to "allowing collapse to occur at the later stages of training, by which time a model is sufficiently trained to achieve good results".
+
+ Two time-scale update rule 
+The two time-scale update rule (TTUR) is proposed to make GAN convergence more stable by making the learning rate of the generator lower than that of the discriminator. The authors argued that the generator should move slower than the discriminator, so that it does not "drive the discriminator steadily into new regions without capturing its gathered information".
+
+They proved that a general class of games that included the GAN game, when trained under TTUR, "converges under mild assumptions to a stationary local Nash equilibrium".
+
+They also proposed using the Adam stochastic optimization to avoid mode collapse, as well as the Fréchet inception distance for evaluating GAN performances.
+
+ Vanishing gradient 
+Conversely, if the discriminator learns too fast compared to the generator, then the discriminator could almost perfectly distinguish . In such case, the generator  could be stuck with a very high loss no matter which direction it changes its , meaning that the gradient  would be close to zero. In such case, the generator cannot learn, a case of the vanishing gradient problem.
+
+Intuitively speaking, the discriminator is too good, and since the generator cannot take any small step (only small steps are considered in gradient descent) to improve its payoff, it does not even try.
+
+One important method for solving this problem is the Wasserstein GAN.
+
+ Evaluation 
+GANs are usually evaluated by Inception score (IS), which measures how varied the generator's outputs are (as classified by an image classifier, usually Inception-v3), or Fréchet inception distance (FID), which measures how similar the generator's outputs are to a reference set (as classified by a learned image featurizer, such as Inception-v3 without its final layer). Many papers that propose new GAN architectures for image generation report how their architectures break the state of the art on FID or IS.
+
+Another evaluation method is the Learned Perceptual Image Patch Similarity (LPIPS), which starts with a learned image featurizer , and finetunes it by supervised learning on a set of , where  is an image,  is a perturbed version of it, and  is how much they differ, as reported by human subjects. The model is finetuned so that it can approximate . This finetuned model is then used to define .
+
+Other evaluation methods are reviewed in.
+
+ Variants 
+There is a veritable zoo of GAN variants. Some of the most prominent are as follows:
+
+ Conditional GAN 
+Conditional GANs are similar to standard GANs except they allow the model to conditionally generate samples based on additional information. For example, if we want to generate a cat face given a dog picture, we could use a conditional GAN.
+
+The generator in a GAN game generates , a probability distribution on the probability space . This leads to the idea of a conditional GAN, where instead of generating one probability distribution on , the generator generates a different probability distribution  on , for each given class label .
+
+For example, for generating images that look like ImageNet, the generator should be able to generate a picture of cat when given the class label "cat".
+
+In the original paper, the authors noted that GAN can be trivially extended to conditional GAN by providing the labels to both the generator and the discriminator.
+
+Concretely, the conditional GAN game is just the GAN game with class labels provided:where  is a probability distribution over classes,  is the probability distribution of real images of class , and  the probability distribution of images generated by the generator when given class label .
+
+In 2017, a conditional GAN learned to generate 1000 image classes of ImageNet.
+
+ GANs with alternative architectures 
+The GAN game is a general framework and can be run with any reasonable parametrization of the generator  and discriminator . In the original paper, the authors demonstrated it using multilayer perceptron networks and convolutional neural networks. Many alternative architectures have been tried.
+
+Deep convolutional GAN (DCGAN): For both generator and discriminator, uses only deep networks consisting entirely of convolution-deconvolution layers, that is, fully convolutional networks.
+
+Self-attention GAN (SAGAN): Starts with the DCGAN, then adds residually-connected standard self-attention modules to the generator and discriminator.
+
+Variational autoencoder GAN (VAEGAN): Uses a variational autoencoder (VAE) for the generator.
+
+Transformer GAN (TransGAN): Uses the pure transformer architecture for both the generator and discriminator, entirely devoid of convolution-deconvolution layers.
+
+Flow-GAN: Uses flow-based generative model for the generator, allowing efficient computation of the likelihood function.
+
+ GANs with alternative objectives 
+Many GAN variants are merely obtained by changing the loss functions for the generator and discriminator.
+
+Original GAN:
+
+We recast the original GAN objective into a form more convenient for comparison:
+
+Original GAN, non-saturating loss:
+
+This objective for generator was recommended in the original paper for faster convergence.The effect of using this objective is analyzed in Section 2.2.2 of Arjovsky et al.
+
+Original GAN, maximum likelihood:
+
+where  is the logistic function. When the discriminator is optimal, the generator gradient is the same as in maximum likelihood estimation, even though GAN cannot perform maximum likelihood estimation itself.
+
+Hinge loss GAN:Least squares GAN:where  are parameters to be chosen. The authors recommended .
+
+ Wasserstein GAN (WGAN) 
+
+The Wasserstein GAN modifies the GAN game at two points:
+
+ The discriminator's strategy set is the set of measurable functions of type  with bounded Lipschitz norm: , where  is a fixed positive constant.
+ The objective is
+One of its purposes is to solve the problem of mode collapse (see above). The authors claim "In no experiment did we see evidence of mode collapse for the WGAN algorithm".
+
+ GANs with more than 2 players 
+
+ Adversarial autoencoder 
+An adversarial autoencoder (AAE) is more autoencoder than GAN. The idea is to start with a plain autoencoder, but train a discriminator to discriminate the latent vectors from a reference distribution (often the normal distribution).
+
+ InfoGAN 
+In conditional GAN, the generator receives both a noise vector  and a label , and produces an image . The discriminator receives image-label pairs , and computes .
+
+When the training dataset is unlabeled, conditional GAN does not work directly.
+
+The idea of InfoGAN is to decree that every latent vector in the latent space can be decomposed as : an incompressible noise part , and an informative label part , and encourage the generator to comply with the decree, by encouraging it to maximize , the mutual information between  and , while making no demands on the mutual information  between .
+
+Unfortunately,  is intractable in general, The key idea of InfoGAN is Variational Mutual Information Maximization: indirectly maximize it by maximizing a lower boundwhere  ranges over all Markov kernels of type .
+
+The InfoGAN game is defined as follows:Three probability spaces define an InfoGAN game:
+
+ , the space of reference images.
+ , the fixed random noise generator.
+ , the fixed random information generator.
+
+There are 3 players in 2 teams: generator, Q, and discriminator. The generator and Q are on one team, and the discriminator on the other team.
+
+The objective function iswhere  is the original GAN game objective, and 
+
+Generator-Q team aims to minimize the objective, and discriminator aims to maximize it:
+
+ Bidirectional GAN (BiGAN) 
+The standard GAN generator is a function of type , that is, it is a mapping from a latent space  to the image space . This can be understood as a "decoding" process, whereby every latent vector  is a code for an image , and the generator performs the decoding. This naturally leads to the idea of training another network that performs "encoding", creating an autoencoder out of the encoder-generator pair.
+
+Already in the original paper, the authors noted that "Learned approximate inference can be performed by training an auxiliary network to predict  given ". The bidirectional GAN architecture performs exactly this.
+
+The BiGAN is defined as follows: Two probability spaces define a BiGAN game:
+
+, the space of reference images.
+ , the latent space.
+
+There are 3 players in 2 teams: generator, encoder, and discriminator. The generator and encoder are on one team, and the discriminator on the other team.
+
+The generator's strategies are functions , and the encoder's strategies are functions . The discriminator's strategies are functions .
+
+The objective function is
+
+Generator-encoder team aims to minimize the objective, and discriminator aims to maximize it: In the paper, they gave a more abstract definition of the objective as:where  is the probability distribution on  obtained by pushing  forward via , and  is the probability distribution on  obtained by pushing  forward via .
+
+Applications of bidirectional models include semi-supervised learning, interpretable machine learning, and neural machine translation.
+
+ CycleGAN 
+CycleGAN is an architecture for performing translations between two domains, such as between photos of horses and photos of zebras, or photos of night cities and photos of day cities.
+
+The CycleGAN game is defined as follows:There are two probability spaces , corresponding to the two domains needed for translations fore-and-back.
+
+There are 4 players in 2 teams: generators , and discriminators .
+
+The objective function is
+
+where  is a positive adjustable parameter,  is the GAN game objective, and  is the cycle consistency loss:The generators aim to minimize the objective, and the discriminators aim to maximize it:  Unlike previous work like pix2pix, which requires paired training data, cycleGAN requires no paired data. For example, to train a pix2pix model to turn a summer scenery photo to winter scenery photo and back, the dataset must contain pairs of the same place in summer and winter, shot at the same angle; cycleGAN would only need a set of summer scenery photos, and an unrelated set of winter scenery photos.
+
+ GANs with particularly large or small scales 
+
+ BigGAN 
+The BigGAN is essentially a self-attention GAN trained on a large scale (up to 80 million parameters) to generate large images of ImageNet (up to 512 x 512 resolution), with numerous engineering tricks to make it converge.
+
+ Invertible data augmentation 
+When there is insufficient training data, the reference distribution  cannot be well-approximated by the empirical distribution given by the training dataset. In such cases, data augmentation can be applied, to allow training GAN on smaller datasets. Naïve data augmentation, however, brings its problems.
+
+Consider the original GAN game, slightly reformulated as follows:Now we use data augmentation by randomly sampling semantic-preserving transforms  and applying them to the dataset, to obtain the reformulated GAN game:This is equivalent to a GAN game with a different distribution , sampled by , with . For example, if  is the distribution of images in ImageNet, and  samples identity-transform with probability 0.5, and horizontal-reflection with probability 0.5, then  is the distribution of images in ImageNet and horizontally-reflected ImageNet, combined.
+
+The result of such training would be a generator that mimics . For example, it would generate images that look like they are randomly cropped, if the data augmentation uses random cropping.
+
+The solution is to apply data augmentation to both generated and real images:The authors demonstrated high-quality generation using just 100-picture-large datasets.
+
+The StyleGAN-2-ADA paper points out a further point on data augmentation: it must be invertible. Continue with the example of generating ImageNet pictures. If the data augmentation is "randomly rotate the picture by 0, 90, 180, 270 degrees with equal probability", then there is no way for the generator to know which is the true orientation: Consider two generators , such that for any latent , the generated image  is a 90-degree rotation of . They would have exactly the same expected loss, and so neither is preferred over the other.
+
+The solution is to only use invertible data augmentation: instead of "randomly rotate the picture by 0, 90, 180, 270 degrees with equal probability", use "randomly rotate the picture by 90, 180, 270 degrees with 0.1 probability, and keep the picture as it is with 0.7 probability". This way, the generator is still rewarded  to keep images oriented the same way as un-augmented ImageNet pictures.
+
+Abstractly, the effect of randomly sampling transformations  from the distribution  is to define a Markov kernel . Then, the data-augmented GAN game pushes the generator to find some , such that where  is the Markov kernel convolution.
+A data-augmentation method is defined to be invertible if its Markov kernel  satisfiesImmediately by definition, we see that composing multiple invertible data-augmentation methods results in yet another invertible method. Also by definition, if the data-augmentation method is invertible, then using it in a GAN game does not change the optimal strategy  for the generator, which is still .
+
+There are two prototypical examples of invertible Markov kernels:
+
+Discrete case: Invertible stochastic matrices, when  is finite.
+
+For example, if  is the set of four images of an arrow, pointing in 4 directions, and the data augmentation is "randomly rotate the picture by 90, 180, 270 degrees with probability , and keep the picture as it is with probability ", then the Markov kernel  can be represented as a stochastic matrix: and  is an invertible kernel iff  is an invertible matrix, that is, .
+
+Continuous case: The gaussian kernel, when  for some .
+
+For example, if  is the space of 256x256 images, and the data-augmentation method is "generate a gaussian noise , then add  to the image", then  is just convolution by the density function of . This is invertible, because convolution by a gaussian is just convolution by the heat kernel, so given any , the convolved distribution  can be obtained by heating up  precisely according to , then wait for time . With that, we can recover  by running the heat equation backwards in time for .
+
+More examples of invertible data augmentations are found in the paper.
+
+ SinGAN 
+SinGAN pushes data augmentation to the limit, by using only a single image as training data and performing data augmentation on it. The GAN architecture is adapted to this training method by using a multi-scale pipeline.
+
+The generator  is decomposed into a pyramid of generators , with the lowest one generating the image  at the lowest resolution, then the generated image is scaled up to , and fed to the next level to generate an image  at a higher resolution, and so on. The discriminator is decomposed into a pyramid as well.
+
+ StyleGAN series 
+
+The StyleGAN family is a series of architectures published by Nvidia's research division.
+
+ Progressive GAN 
+Progressive GAN is a method for training GAN for large-scale image generation stably, by growing a GAN generator from small to large scale in a pyramidal fashion. Like SinGAN, it decomposes the generator as, and the discriminator as .
+
+During training, at first only  are used in a GAN game to generate 4x4 images. Then  are added to reach the second stage of GAN game, to generate 8x8 images, and so on, until we reach a GAN game to generate 1024x1024 images.
+
+To avoid shock between stages of the GAN game, each new layer is "blended in" (Figure 2 of the paper). For example, this is how the second stage GAN game starts:
+
+ Just before, the GAN game consists of the pair  generating and discriminating 4x4 images.
+ Just after, the GAN game consists of the pair  generating and discriminating 8x8 images. Here, the functions  are image up- and down-sampling functions, and  is a blend-in factor (much like an alpha in image composing) that smoothly glides from 0 to 1.
+
+ StyleGAN-1 
+361x361px|The main architecture of StyleGAN-1 and StyleGAN-2
+StyleGAN-1 is designed as a combination of Progressive GAN with neural style transfer.
+
+The key architectural choice of StyleGAN-1 is a progressive growth mechanism, similar to Progressive GAN. Each generated image starts as a constant  array, and repeatedly passed through style blocks. Each style block applies a "style latent vector" via affine transform ("adaptive instance normalization"), similar to how neural style transfer uses Gramian matrix. It then adds noise, and normalize (subtract the mean, then divide by the variance).
+
+At training time, usually only one style latent vector is used per image generated, but sometimes two ("mixing regularization") in order to encourage each style block to independently perform its stylization without expecting help from other style blocks (since they might receive an entirely different style latent vector).
+
+After training, multiple style latent vectors can be fed into each style block. Those fed to the lower layers control the large-scale styles, and those fed to the higher layers control the fine-detail styles.
+
+Style-mixing between two images  can be performed as well. First, run a gradient descent to find  such that . This is called "projecting an image back to style latent space". Then,  can be fed to the lower style blocks, and  to the higher style blocks, to generate a composite image that has the large-scale style of , and the fine-detail style of . Multiple images can also be composed this way.
+
+ StyleGAN-2 
+StyleGAN-2 improves upon StyleGAN-1, by using the style latent vector to transform the convolution layer's weights instead, thus solving the "blob" problem.
+
+This was updated by the StyleGAN-2-ADA ("ADA" stands for "adaptive"), which uses invertible data augmentation as described above. It also tunes the amount of data augmentation applied by starting at zero, and gradually increasing it until an "overfitting heuristic" reaches a target level, thus the name "adaptive".
+
+ StyleGAN-3 
+StyleGAN-3 improves upon StyleGAN-2 by solving the "texture sticking" problem, which can be seen in the official videos. They analyzed the problem by the Nyquist–Shannon sampling theorem, and argued that the layers in the generator learned to exploit the high-frequency signal in the pixels they operate upon.
+
+To solve this, they proposed imposing strict lowpass filters between each generator's layers, so that the generator is forced to operate on the pixels in a way faithful to the continuous signals they represent, rather than operate on them as merely discrete signals. They further imposed rotational and translational invariance by using more signal filters. The resulting StyleGAN-3 is able to solve the texture sticking problem, as well as generating images that rotate and translate smoothly.
+
+Applications
+GAN applications have increased rapidly.
+
+Fashion, art and advertising
+
+GANs can be used to generate art; The Verge wrote in March 2019 that "The images created by GANs have become the defining look of contemporary AI art." GANs can also be used to inpaint photographsYu, Jiahui, et al. "Generative image inpainting with contextual attention." Proceedings of the IEEE conference on computer vision and pattern recognition. 2018. or create photos of imaginary fashion models, with no need to hire a model, photographer or makeup artist, or pay for a studio and transportation. GANs have also been used for virtual shadow generation.
+
+ Interactive Media 
+In 2020, Artbreeder was used to create the main antagonist in the sequel to the psychological web horror series Ben Drowned. The author would later go on to praise GAN applications for their ability to help generate assets for independent artists who are short on budget and manpower.
+
+Science
+GANs can improve astronomical images and simulate gravitational lensing for dark matter research. They were used in 2019 to successfully model the distribution of dark matter in a particular direction in space and to predict the gravitational lensing that will occur.
+
+GANs have been proposed as a fast and accurate way of modeling high energy jet formation and modeling showers through calorimeters of high-energy physics experiments. GANs have also been trained to accurately approximate bottlenecks in computationally expensive simulations of particle physics experiments. Applications in the context of present and proposed CERN experiments have demonstrated the potential of these methods for accelerating simulation and/or improving simulation fidelity.
+
+Video games
+In 2018, GANs reached the video game modding community, as a method of up-scaling low-resolution 2D textures in old video games by recreating them in 4k or higher resolutions via image training, and then down-sampling them to fit the game's native resolution (with results resembling the supersampling method of anti-aliasing). With proper training, GANs provide a clearer and sharper 2D texture image magnitudes higher in quality than the original, while fully retaining the original's level of details, colors, etc. Known examples of extensive GAN usage include Final Fantasy VIII, Final Fantasy IX, Resident Evil REmake HD Remaster, and Max Payne. 
+
+ AI-generated video 
+Artificial intelligence art for video uses AI to generate video from text as Text-to-Video model
+
+Audio synthesis
+
+Concerns about malicious applications
+
+An image generated by a StyleGAN that looks deceptively like a photograph of a real person. This image was generated by a StyleGAN based on an analysis of portraits.
+Another example of a GAN generated portrait
+Concerns have been raised about the potential use of GAN-based human image synthesis for sinister purposes, e.g., to produce fake, possibly incriminating, photographs and videos.
+GANs can be used to generate unique, realistic profile photos of people who do not exist, in order to automate creation of fake social media profiles.
+
+In 2019 the state of California considered and passed on October 3, 2019, the bill AB-602, which bans the use of human image synthesis technologies to make fake pornography without the consent of the people depicted, and bill AB-730, which prohibits distribution of manipulated videos of a political candidate within 60 days of an election. Both bills were authored by Assembly member Marc Berman and signed by Governor Gavin Newsom. The laws went into effect in 2020.
+
+DARPA's Media Forensics program studies ways to counteract fake media, including fake media produced using GANs.
+
+Transfer learning
+State-of-art transfer learning research use GANs to enforce the alignment of the latent feature space, such as in deep reinforcement learning. This works by feeding the embeddings of the source and target task to the discriminator which tries to guess the context. The resulting loss is then (inversely) backpropagated through the encoder.
+
+Miscellaneous applications
+GAN can be used to detect glaucomatous images helping the early diagnosis which is essential to avoid partial or total loss
+of vision.
+
+GANs that produce photorealistic images can be used to visualize interior design, industrial design, shoes, bags, and clothing items or items for computer games' scenes. Such networks were reported to be used by Facebook.
+
+GANs have been used to create forensic facial reconstructions of deceased historical figures.
+
+GANs can reconstruct 3D models of objects from images, generate novel objects as 3D point clouds, and model patterns of motion in video.
+
+GANs can be used to age face photographs to show how an individual's appearance might change with age.
+
+GANs can also be used to inpaint missing features in maps, transfer map styles in cartography or augment street view imagery.
+
+Relevance feedback on GANs can be used to generate images and replace image search systems.
+
+A variation of the GANs is used in training a network to generate optimal control inputs to nonlinear dynamical systems. Where the discriminatory network is known as a critic that checks the optimality of the solution and the generative network is known as an Adaptive network that generates the optimal control. The critic and adaptive network train each other to approximate a nonlinear optimal control.
+
+GANs have been used to visualize the effect that climate change will have on specific houses.
+
+A GAN model called Speech2Face can reconstruct an image of a person's face after listening to their voice.
+
+In 2016 GANs were used to generate new molecules for a variety of protein targets implicated in cancer, inflammation, and fibrosis. In 2019 GAN-generated molecules were validated experimentally all the way into mice.
+
+Whereas the majority of GAN applications are in image processing, the work has also been done with time-series data. For example, recurrent GANs (R-GANs) have been used to generate energy data for machine learning.
+
+History
+
+In 1991, Juergen Schmidhuber published generative and adversarial neural networks that contest with each other in the form of a zero-sum game, where one network's gain is the other network's loss. The first network is a generative model with stochasticity that models a probability distribution over output patterns. The second network learns by gradient descent to predict the reactions of the environment to these patterns. This was called "artificial curiosity." For modern GANs (2014), the environmental reaction is 1 or 0 depending on whether the first network's output is in a given set.
+
+Other people had similar ideas but did not develop them similarly. An idea involving adversarial networks was published in a 2010 blog post by Olli Niemitalo. This idea was never implemented and did not involve stochasticity in the generator and thus was not a generative model. It is now known as a conditional GAN or cGAN. An idea similar to GANs was used to model animal behavior by Li, Gauci and Gross in 2013.
+
+Another inspiration for GANs was noise-contrastive estimation, which uses the same loss function as GANs and which Goodfellow studied during his PhD in 2010–2014.
+
+Adversarial machine learning has other uses besides generative modeling and can be applied to models other than neural networks. In control theory, adversarial learning based on neural networks was used in 2006 to train robust controllers in a game theoretic sense, by alternating the iterations between a minimizer policy, the controller, and a maximizer policy, the disturbance.
+
+In 2017, a GAN was used for image enhancement focusing on realistic textures rather than pixel-accuracy, producing a higher image quality at high magnification. In 2017, the first faces were generated. These were exhibited in February 2018 at the Grand Palais. Faces generated by StyleGAN in 2019 drew comparisons with Deepfakes.
+
+Beginning in 2017, GAN technology began to make its presence felt in the fine arts arena with the appearance of a newly developed implementation which was said to have crossed the threshold of being able to generate unique and appealing abstract paintings, and thus dubbed a "CAN", for "creative adversarial network". A GAN system was used to create the 2018 painting Edmond de Belamy, which sold for US$432,500. An early 2019 article by members of the original CAN team discussed further progress with that system, and gave consideration as well to the overall prospects for an AI-enabled art.
+
+In May 2019, researchers at Samsung demonstrated a GAN-based system that produces videos of a person speaking, given only a single photo of that person.
+
+In August 2019, a large dataset consisting of 12,197 MIDI songs each with paired lyrics and melody alignment was created for neural melody generation from lyrics using conditional GAN-LSTM (refer to sources at GitHub AI Melody Generation from Lyrics).
+
+In May 2020, Nvidia researchers taught an AI system (termed "GameGAN") to recreate the game of Pac-Man simply by watching it being played.

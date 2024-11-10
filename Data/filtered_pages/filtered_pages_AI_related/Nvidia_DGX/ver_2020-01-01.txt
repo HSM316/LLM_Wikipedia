@@ -1,0 +1,10 @@
+Nvidia DGX is a line of Nvidia produced servers and workstations which specialize in using GPGPU to accelerate deep learning applications.
+
+ DGX-1 
+DGX-1 servers feature 8 GPUs based on the Pascal or Volta daughter cards with HBM 2 memory, connected by an NVLink mesh network.
+
+The product line is intended to bridge the gap between GPUs and AI accelerators in that the device has specific features specializing it for deep learning workloads. 
+The initial Pascal based DGX-1 delivered 170 teraflops of half precision processing, while the Volta-based upgrade increased this to 960 teraflops.
+
+ DGX-2 
+The successor of the Nvidia DGX-1 is the Nvidia DGX-2, which uses 16 32GB V100 (second generation) cards in a single unit.  This increases performance of up to 2 Petaflops with 512GB of shared memory for tackling larger problems and uses NVSwitch to speed up internal communication. 

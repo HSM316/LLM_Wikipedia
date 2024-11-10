@@ -1,0 +1,73 @@
+OpenAI is the for-profit corporation OpenAI LP, whose parent organization is the non-profit organization OpenAI Inc, which conducts research in the field of artificial intelligence (AI) with the stated aim to promote and develop friendly AI in such a way as to benefit humanity as a whole. Founded in late 2015, the San Francisco-based organization aims to “freely collaborate” with other institutions and researchers by making its patents and research open to the public. The founders (notably Elon Musk and Sam Altman) are motivated in part by concerns about the existential risk from artificial general intelligence.
+
+ History 
+In October 2015, Musk, Altman and other investors announced the formation of the organization, pledging over 1 billion to the venture.
+
+On April 27, 2016, OpenAI released a public beta of "OpenAI Gym", its platform for reinforcement learning research.
+
+On December 5, 2016, OpenAI released Universe, a software platform for measuring and training an AI's general intelligence across the world's supply of games, websites and other applications. 
+
+On February 21, 2018, Musk resigned his board seat, citing “a potential future conflict (of interest)” with Tesla AI development for self driving cars, but remained a donor.
+
+As of 2018, OpenAI is headquartered in San Francisco's Mission District, sharing an office building with Neuralink, another company co-founded by Musk.
+
+In July 2019, Microsoft announced that it would invest US$ 1 billion in OpenAI.
+
+Participants
+ CEO: Sam Altman, former president of the startup accelerator Y Combinator
+ Ilya Sutskever, Research director, a former Google expert on machine learning
+ CTO: Greg Brockman, former CTO of Stripe
+
+Other backers of the project include:
+ Reid Hoffman, LinkedIn co-founder
+ Peter Thiel, PayPal co-founder
+ Jessica Livingston, a founding partner of Y Combinator
+
+Companies:
+ Infosys, an Indian IT firm
+ Microsoft's cloud services division
+
+The group started in early January 2016 with nine researchers. According to Wired, Brockman met with Yoshua Bengio, one of the “founding fathers” of the deep learning movement, and drew up a list of the “best researchers in the field”. Microsoft's Peter Lee stated that the cost of a top AI researcher exceeds the cost of a top NFL quarterback prospect. While OpenAI pays corporate-level (rather than nonprofit-level) salaries, it doesn't currently pay AI researchers salaries comparable to those of Facebook or Google. Nevertheless, Sutskever stated that he was willing to leave Google for OpenAI “partly of because of the very strong group of people and, to a very large extent, because of its mission.” Brockman stated that “the best thing that I could imagine doing was moving humanity closer to building real AI in a safe way.” OpenAI researcher Wojciech Zaremba stated that he turned down “borderline crazy” offers of two to three times his market value to join OpenAI instead.
+
+Motives
+Some scientists, such as Stephen Hawking and Stuart Russell, believed that if advanced AI someday gains the ability to re-design itself at an ever-increasing rate, an unstoppable "intelligence explosion" could lead to human extinction.  Musk characterizes AI as humanity's "biggest existential threat." OpenAI's founders structured it as a non-profit so that they could focus its research on creating a positive long-term human impact.
+
+OpenAI states that "it's hard to fathom how much human-level AI could benefit society," and that it is equally difficult to comprehend "how much it could damage society if built or used incorrectly". Research on safety cannot safely be postponed: "because of AI's surprising history, it's hard to predict when human-level AI might come within reach." OpenAI states that AI “should be an extension of individual human wills and, in the spirit of liberty, as broadly and evenly distributed as possible...”, and which sentiment has been expressed elsewhere in reference to a potentially enormous class of AI-enabled products: "Are we really willing to let our society be infiltrated by autonomous software and hardware agents whose details of operation are known only to a select few? Of course not." Co-chair Sam Altman expects the decades-long project to surpass human intelligence.
+
+Vishal Sikka, former CEO of Infosys, stated that an “openness” where the endeavor would “produce results generally in the greater interest of humanity” was a fundamental requirement for his support, and that OpenAI “aligns very nicely with our long-held values” and their “endeavor to do purposeful work”. Cade Metz of Wired suggests that corporations such as Amazon may be motivated by a desire to use open-source software and data to level the playing field against corporations such as Google and Facebook that own enormous supplies of proprietary data. Altman states that Y Combinator companies will share their data with OpenAI.
+
+In 2019 OpenAI became a for profit company called OpenAI LP while staying controlled by a non-profit called OpenAI Inc, a structure that OpenAI call "capped-profit", having previously been a 501(c)(3) nonprofit organization.
+
+Strategy
+Musk posed the question: “what is the best thing we can do to ensure the future is good? We could sit on the sidelines or we can encourage regulatory oversight, or we could participate with the right structure with people who care deeply about developing AI in a way that is safe and is beneficial to humanity.” Musk acknowledged that “there is always some risk that in actually trying to advance (friendly) AI we may create the thing we are concerned about”; nonetheless, the best defense is “to empower as many people as possible to have AI. If everyone has AI powers, then there's not any one person or a small set of individuals who can have AI superpower.”
+
+Musk and Altman's counter-intuitive strategy of trying to reduce the risk that AI will cause overall harm, by giving AI to everyone, is controversial among those who are concerned with existential risk from artificial intelligence. Philosopher Nick Bostrom is skeptical of Musk's approach: “If you have a button that could do bad things to the world, you don't want to give it to everyone.” During a 2016 conversation about the technological singularity, Altman said that “we don’t plan to release all of our source code” and mentioned a plan to “allow wide swaths of the world to elect representatives to a new governance board”. Greg Brockman stated that “Our goal right now... is to do the best thing there is to do. It’s a little vague.”
+
+ Products and applications 
+Gym
+Gym aims to provide an easy to set up, general-intelligence benchmark with a wide variety of different environments—somewhat akin to, but broader than, the ImageNet Large Scale Visual Recognition Challenge used in supervised learning research—and that hopes to standardize the way in which environments are defined in AI research publications, so that published research becomes more easily reproducible. The project claims to provide the user with a simple interface. As of June2017, Gym can only be used with Python. As of September 2017, the Gym documentation site was not maintained, and active work focused instead on its GitHub page.
+
+RoboSumo
+In “RoboSumo”, virtual humanoid “metalearning” robots initially lack knowledge of how to even walk, and given the goals of learning to move around, and pushing the opposing agent out of the ring. Through this adversarial learning process, the agents learn how to adapt to changing conditions; when an agent is then removed from this virtual environment and placed in a new virtual environment with high winds, the agent braces to remain upright, suggesting it had learned how to balance in a generalized way. OpenAI's Igor Mordatch argues for that competition between agents can create an intelligence “arms race” that can increase an agent's ability to function, even outside the context of the competition.
+
+ Debate Game 
+In 2018, OpenAI launched the Debate Game, which teaches machines to debate toy problems in front of a human judge. The purpose is to research whether such an approach may assist in auditing AI decisions and in developing explainable AI.
+
+ OpenAI Five 
+OpenAI Five is the name of a team of five OpenAI-curated bots that are used in the competitive five-on-five video game Dota 2, who learn to play against human players at a high skill level entirely through trial-and-error algorithms. Before becoming a team of five, the first public demonstration occurred at The International 2017, the annual premiere championship tournament for the game, where Dendi, a professional Ukrainian player, lost against a bot in a live 1v1 matchup. After the match, CTO Greg Brockman explained that the bot had learned by playing against itself for two weeks of real time, and that the learning software was a step in the direction of creating software that can handle complex tasks like a surgeon. The system uses a form of reinforcement learning, as the bots learn over time by playing against themselves hundreds of times a day for months, and are rewarded for actions such as killing an enemy and taking map objectives. 
+
+By June 2018, the ability of the bots expanded to play together as a full team of five and were able to defeat teams of amateur and semi-professional players. At The International 2018, OpenAI Five played in two exhibition matches against professional players, but ended up losing both games. In April 2019, OpenAI Five defeated OG, the reigning world champions of the game at the time, 2:0 in a live exhibition match in San Francisco. The bots' final public appearance came later that month, where they played in 42,729 total games in a four-day open online competition, winning a percentage of 99.4% of games.  However, it is important to note that OpenAI only learned a heavily simplified version of Dota, including only 17 out of over 100 heroes and excluding certain items as well as game mechanics.
+
+ Dactyl 
+Dactyl uses machine learning to train a robot Shadow Hand from scratch, using the same reinforcement learning algorithm code that OpenAI Five uses. The robot hand is trained entirely in physically inaccurate simulation.
+
+ GPT-2 
+GPT-2 is an unsupervised Transformer language model, a generative model of language. Its authors argue unsupervised language models to be general-purpose learners, illustrated by GPT-2 achieving state-of-the-art accuracy and perplexity on 7 of 8 zero-shot tasks (i.e. the model was not further trained on any task-specific input-output examples). The corpus it was trained on, called WebText, contains slightly over 8 million documents for a total of 40 GB of text from URLs shared in Reddit submissions with at least 3 upvotes. It avoids certain issues encoding vocabulary with word tokens by using byte pair encoding. This allows to represent any string of characters by encoding both individual characters and multiple-character tokens.
+GPT-2 generates extremely fluent English, and has learned some information about other languages.
+
+Several websites host interactive demonstrations of different instances of GPT-2 and Transformer models.
+
+When fed the first sentence of George Orwell's novel Nineteen Eighty-Four it produces plausible futuristic fiction set in China. Unlike previous OpenAI models, GPT-2 was not initially released to the public out of concern over potential misuse, including applications for writing fake news. Much of the academic community is skeptical that GPT-2 poses a significant threat. The Allen Institute for Artificial Intelligence followed up with a tool to detect "neural fake news". Other researchers, like Jeremy Howard, warn of "the technology to totally fill Twitter, email, and the web up with reasonable-sounding, context-appropriate prose, which would drown out all other speech and be impossible to filter". Eventually, OpenAI released the complete version of the GPT-2 language model.
+
+ GYM Retro
+Gym Retro is a platform for reinforcement learning research on games. Gym Retro is used to conduct research on RL algorithms and study generalization. Prior research in RL has mostly focused on optimizing agents to solve single tasks. Gym Retro gives the ability to generalize between games with similar concepts but different appearances.

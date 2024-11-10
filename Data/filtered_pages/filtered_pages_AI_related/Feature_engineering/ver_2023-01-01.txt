@@ -1,0 +1,69 @@
+Feature engineering or feature extraction  or feature discovery is the process of using domain knowledge to extract features (characteristics, properties, attributes) from raw data.  The motivation is to use these extra features to improve the quality of results from a machine learning process, compared with supplying only the raw data to the machine learning process. 
+
+ Process  
+The feature engineering process is:
+
+Brainstorming or testing features
+ Deciding what features to create
+ Creating features
+ Testing the impact of the identified features on the task
+ Improving your features if needed
+ Repeat
+
+ Typical engineered features 
+The following list provides some typical ways to engineer useful features
+ Numerical transformations (like taking fractions or scaling)
+ Category encoder like one-hot or target encoder (for categorical data)
+ Clustering 
+ Group aggregated values
+ Principal component analysis (for numerical data)
+ Feature construction : building new "physical", knowledge-based parameters relevant to the problem. For example, in physics, construction of dimensionless numbers such as Reynolds number in fluid dynamics, Nusselt number in heat transfer, Archimedes number in sedimentation, construction of first approximations of the solution such as analytical strength of materials solutions in mechanics, etc.
+
+ Relevance 
+Features vary in significance. Even relatively insignificant features may contribute to a model. Feature selection can reduce the number of features to prevent a model from becoming too specific to the training data set (overfitting).
+
+ Explosion 
+Feature explosion occurs when the number of identified features grows inappropriately. Common causes include:
+
+ Feature templates - implementing feature templates instead of coding new features
+ Feature combinations - combinations that cannot be represented by a linear system
+
+Feature explosion can be limited via techniques such as: regularization, kernel methods, and feature selection.
+
+ Automation 
+Automation of feature engineering is a research topic that dates back to the 1990s. Machine learning software that incorporates automated feature engineering has been commercially available since 2016. Related academic literature can be roughly separated into two types:
+
+ Multi-relational decision tree learning (MRDTL) uses a supervised algorithm that is similar to a decision tree. 
+ Deep Feature Synthesis uses simpler methods.
+
+ Multi-relational decision tree learning (MRDTL) 
+MRDTL generates features in the form of SQL queries by successively adding clauses to the queries. For instance, the algorithm might start out with
+
+SELECT COUNT(*) FROM ATOM t1 LEFT JOIN MOLECULE t2 ON t1.mol_id = t2.mol_id GROUP BY t1.mol_id
+
+The query can then successively be refined by adding conditions, such as "WHERE t1.charge <= -0.392".
+
+However, most  MRDTL studies base implementations on relational databases, which results in many redundant operations. These redundancies can be reduced by using techniques such as tuple id propagation. Efficiency can be increased by using incremental updates, which eliminates redundancies.
+
+ Open-source implementations 
+
+There are a number of open-source libraries and tools that automate feature engineering on relational data and time series:
+
+ featuretools is a Python library for transforming time series and relational data into feature matrices for machine learning.
+ OneBM or One-Button Machine combines feature transformations and feature selection on relational data with feature selection techniques. 
+ getML community is an open source tool for automated feature engineering on time series and relational data. It is implemented in C/C++ with a Python interface. It has been shown to be at least 60 times faster than tsflex, tsfresh, tsfel, featuretools or kats.
+ tsfresh is a Python library for feature extraction on time series data. It evaluates the quality of the features using hypothesis testing.
+ tsflex is an open source Python library for extracting features from time series data. Despite being 100% written in Python, it has been shown to be faster and more memory efficient than tsfresh, seglearn or tsfel.
+ seglearn is an extension for multivariate, sequential time series data to the scikit-learn Python library.
+ tsfel is a Python package for feature extraction on time series data.
+ kats is a Python toolkit for analyzing time series data.
+
+ Deep feature synthesis 
+The deep feature synthesis (DFS) algorithm beat 615 of 906 human teams in a competition.
+
+ Feature stores 
+The Feature Store is where the features are stored and organized for the explicit purpose of being used to either train models (by data scientists) or make predictions (by applications that have a trained model). It is a central location where you can either create or update groups of features created from multiple different data sources, or create and update new datasets from those feature groups for training models or for use in applications that do not want to compute the features but just retrieve them when it needs them to make predictions.
+
+A feature store includes the ability to store code used to generate features, apply the code to raw data, and serve those features to models upon request. Useful capabilities include feature versioning and policies governing the circumstances under which features can be used.
+
+Feature stores can be standalone software tools or built into machine learning platforms.

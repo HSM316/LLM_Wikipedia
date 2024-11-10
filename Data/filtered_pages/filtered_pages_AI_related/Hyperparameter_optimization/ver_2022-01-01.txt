@@ -1,0 +1,128 @@
+In machine learning, hyperparameter optimization or tuning is the problem of choosing a set of optimal hyperparameters for a learning algorithm. A hyperparameter is a parameter whose value is used to control the learning process. By contrast, the values of other parameters (typically node weights) are learned.
+
+The same kind of machine learning model can require different constraints, weights or learning rates to generalize different data patterns. These measures are called hyperparameters, and have to be tuned so that the model can optimally solve the machine learning problem. Hyperparameter optimization finds a tuple of hyperparameters that yields an optimal model which minimizes a predefined loss function on given independent data.  The objective function takes a tuple of hyperparameters and returns the associated loss. Cross-validation is often used to estimate this generalization performance.
+
+ Approaches 
+
+Grid search across different values of two hyperparameters. For each hyperparameter, 10 different values are considered, so a total of 100 different combinations are evaluated and compared. Blue contours indicate regions with strong results, whereas red ones show regions with poor results.
+
+ Grid search 
+The traditional way of performing hyperparameter optimization has been grid search, or a parameter sweep, which is simply an exhaustive searching through a manually specified subset of the hyperparameter space of a learning algorithm. A grid search algorithm must be guided by some performance metric, typically measured by cross-validation on the training setChin-Wei Hsu, Chih-Chung Chang and Chih-Jen Lin (2010). A practical guide to support vector classification. Technical Report, National Taiwan University.
+or evaluation on a hold-out validation set.
+
+Since the parameter space of a machine learner may include real-valued or unbounded value spaces for certain parameters, manually set bounds and discretization may be necessary before applying grid search.
+
+For example, a typical soft-margin SVM classifier equipped with an RBF kernel has at least two hyperparameters that need to be tuned for good performance on unseen data: a regularization constant C and a kernel hyperparameter γ. Both parameters are continuous, so to perform grid search, one selects a finite set of "reasonable" values for each, say
+
+Grid search then trains an SVM with each pair (C, γ) in the Cartesian product of these two sets and evaluates their performance on a held-out validation set (or by internal cross-validation on the training set, in which case multiple SVMs are trained per pair). Finally, the grid search algorithm outputs the settings that achieved the highest score in the validation procedure.
+
+Grid search suffers from the curse of dimensionality, but is often embarrassingly parallel because the hyperparameter settings it evaluates are typically independent of each other.
+
+Random search across different combinations of values for two hyperparameters. In this example, 100 different random choices are evaluated. The green bars show that more individual values for each hyperparameter are considered compared to a grid search.
+
+ Random search 
+Random Search replaces the exhaustive enumeration of all combinations by selecting them randomly. This can be simply applied to the discrete setting described above, but also generalizes to continuous and mixed spaces. It can outperform Grid search, especially when only a small number of hyperparameters affects the final performance of the machine learning algorithm. In this case, the optimization problem is said to have a low intrinsic dimensionality. Random Search is also embarrassingly parallel, and additionally allows the inclusion of prior knowledge by specifying the distribution from which to sample.
+
+Methods such as Bayesian optimization smartly explore the space of potential choices of hyperparameters by deciding which combination to explore next based on previous observations.
+
+ Bayesian optimization 
+
+Bayesian optimization is a global optimization method for noisy black-box functions.  Applied to hyperparameter optimization, Bayesian optimization builds a probabilistic model of the function mapping from hyperparameter values to the objective evaluated on a validation set. By iteratively evaluating a promising hyperparameter configuration based on the current model, and then updating it, Bayesian optimization aims to gather observations revealing as much information as possible about this function and, in particular, the location of the optimum. It tries to balance exploration (hyperparameters for which the outcome is most uncertain) and exploitation (hyperparameters expected close to the optimum). In practice, Bayesian optimization has been shown to obtain better results in fewer evaluations compared to grid search and random search, due to the ability to reason about the quality of experiments before they are run.
+
+ Gradient-based optimization 
+For specific learning algorithms, it is possible to compute the gradient with respect to hyperparameters and then optimize the hyperparameters using gradient descent. The first usage of these techniques was focused on neural networks. Since then, these methods have been extended to other models such as support vector machines or logistic regression.
+
+A different approach in order to obtain a gradient with respect to hyperparameters consists in differentiating the steps of an iterative optimization algorithm using  automatic differentiation. 
+
+ Evolutionary optimization 
+
+Evolutionary optimization is a methodology for the global optimization of noisy black-box functions. In hyperparameter optimization, evolutionary optimization uses evolutionary algorithms to search the space of hyperparameters for a given algorithm. Evolutionary hyperparameter optimization follows a process inspired by the biological concept of evolution:
+
+ Create an initial population of random solutions (i.e., randomly generate tuples of hyperparameters, typically 100+)
+ Evaluate the hyperparameters tuples and acquire their fitness function (e.g., 10-fold cross-validation accuracy of the machine learning algorithm with those hyperparameters)
+ Rank the hyperparameter tuples by their relative fitness
+ Replace the worst-performing hyperparameter tuples with new hyperparameter tuples generated through crossover and mutation
+ Repeat steps 2-4 until satisfactory algorithm performance is reached or algorithm performance is no longer improving
+
+Evolutionary optimization has been used in hyperparameter optimization for statistical machine learning algorithms, automated machine learning, typical neural network   and deep neural network architecture search, as well as training of the weights in deep neural networks.
+
+ Population-based 
+Population Based Training (PBT) learns both hyperparameter values and network weights. Multiple learning processes operate independently, using different hyperparameters. As with evolutionary methods, poorly performing models are iteratively replaced with models that adopt modified hyperparameter values and weights based on the better performers. This replacement model warm starting is the primary differentiator between PBT and other evolutionary methods. PBT thus allows the hyperparameters to evolve and eliminates the need for manual hypertuning. The process makes no assumptions regarding model architecture, loss functions or training procedures.
+
+PBT and its variants are adaptive methods: they update hyperparameters during the training of the models. On the contrary, non-adaptive methods have the sub-optimal strategy to assign a constant set of hyperparameters for the whole training. 
+
+ Early stopping-based 
+A class of early stopping-based hyperparameter optimization algorithms is purpose built for large search spaces of continuous and discrete hyperparameters, particularly when the computational cost to evaluate the performance of a set of hyperparameters is high. Irace implements the iterated racing algorithm, that focuses the search around the most promising configurations, using statistical tests to discard the ones that perform poorly.
+Another early stopping hyperparameter optimization algorithm is successive halving (SHA), which begins as a random search but periodically prunes low-performing models, thereby focusing computational resources on more promising models.  Asynchronous successive halving (ASHA) further improves upon SHA's resource utilization profile by removing the need to synchronously evaluate and prune low-performing models. Hyperband is a higher level early stopping-based algorithm that invokes SHA or ASHA multiple times with varying levels of pruning aggressiveness, in order to be more widely applicable and with fewer required inputs.
+
+ Others 
+RBF and spectral approaches have also been developed.
+
+ Open-source software 
+
+Grid search
+Determined, a DL Training Platform includes grid search for PyTorch and TensorFlow (Keras and Estimator) models.
+H2O AutoML provides grid search over algorithms in the H2O open source machine learning library.
+Katib is a Kubernetes-native system that includes grid search.
+scikit-learn is a Python package that includes grid search.
+Talos includes grid search for Keras.
+Tune is a Python library for distributed hyperparameter tuning and supports grid search.
+
+Random search
+Determined is a DL Training Platform that supports random search for PyTorch and TensorFlow (Keras and Estimator) models.
+ hyperopt, also via hyperas and hyperopt-sklearn, are Python packages which include random search.
+Katib is a Kubernetes-native system that includes random search.
+ scikit-learn is a Python package which includes random search.
+ caret is a R package which includes grid & random search.
+Talos includes a customizable random search for Keras.
+Tune is a Python library for distributed hyperparameter tuning and supports random search over arbitrary parameter distributions.
+
+Bayesian
+ Auto-sklearn is a Bayesian hyperparameter optimization layer on top of scikit-learn.
+ Ax is a Python-based experimentation platform that supports Bayesian optimization and bandit optimization as exploration strategies.
+ BOCS is a Matlab package which uses semidefinite programming for minimizing a black-box function over discrete inputs. A Python 3 implementation is also included.
+ HpBandSter is a Python package which combines Bayesian optimization with bandit-based methods.
+Katib is a Kubernetes-native system which includes bayesian optimization.
+mlrMBO, also with mlr, is an R package for model-based/Bayesian optimization of black-box functions.
+optuna is a Python package for black box optimization, compatible with arbitrary functions that need to be optimized.
+ scikit-optimize is a Python package or sequential model-based optimization with a scipy.optimize interface.
+ SMAC SMAC is a Python/Java library implementing Bayesian optimization.
+ tuneRanger is an R package for tuning random forests using model-based optimization.
+
+Gradient-based optimization
+ FAR-HO is a Python package containing Tensorflow implementations and wrappers for gradient-based hyperparamteter optimization with forward and reverse mode algorithmic differentiation.
+ XGBoost is an open-source software library that provides a gradient boosting framework for C++, Java, Python, R, and Julia.
+
+Evolutionary
+ deap is a Python framework for general evolutionary computation which is flexible and integrates with parallelization packages like scoop and pyspark, and other Python frameworks like sklearn via sklearn-deap.
+Determined is a DL Training Platform that supports PBT for optimizing PyTorch and TensorFlow (Keras and Estimator) models.
+ devol is a Python package that performs Deep Neural Network architecture search using genetic programming.
+ nevergrad is a Python package which includes Differential_evolution, Evolution_strategy, Bayesian_optimization, population control methods for the noisy case and Particle_swarm_optimization.
+Tune is a Python library for distributed hyperparameter tuning and leverages nevergrad for evolutionary algorithm support.
+
+Early Stopping
+Determined is a DL Training Platform that supports Hyperband for PyTorch and TensorFlow (Keras and Estimator) models.
+ irace is an R package that implements the iterated racing algorithm.
+Katib is a Kubernetes-native system that includes hyperband.
+
+Other
+Determined is a DL Training Platform that supports random, grid, PBT, Hyperband and NAS approaches to hyperparameter optimization for PyTorch and TensorFlow (Keras and Estimator) models.
+ dlib is a C++ package with a Python API which has a parameter-free optimizer based on LIPO and trust region optimizers working in tandem.
+ Harmonica is a Python package for spectral hyperparameter optimization.
+ hyperopt, also via hyperas and hyperopt-sklearn, are Python packages which include Tree of Parzen Estimators based distributed hyperparameter optimization.
+Katib is a Kubernetes-native system which includes grid, random search, bayesian optimization, hyperband, and NAS based on reinforcement learning.
+ nevergrad is a Python package for gradient-free optimization using techniques such as differential evolution, sequential quadratic programming, fastGA, covariance matrix adaptation, population control methods, and particle swarm optimization.
+ Neural Network Intelligence (NNI) is a Python package which includes hyperparameter tuning for neural networks in local and distributed environments. Its techniques include TPE, random, anneal, evolution, SMAC, batch, grid, and hyperband.
+ parameter-sherpa is a similar Python package which includes several techniques grid search, Bayesian and genetic Optimization
+ photonai is a high level Python API for designing and optimizing machine learning pipelines based on grid, random search and bayesian optimization.
+ pycma is a Python implementation of Covariance Matrix Adaptation Evolution Strategy.
+ rbfopt is a Python package that uses a radial basis function model
+Tune is a Python library for hyperparameter tuning execution and integrates with/scales many existing hyperparameter optimization libraries such as hyperopt, nevergrad, and scikit-optimize.
+
+ Commercial services 
+ Amazon Sagemaker uses Gaussian processes to tune hyperparameters. 
+ BigML OptiML supports mixed search domains
+ Google HyperTune supports mixed search domains
+ Indie Solver supports multiobjective, multifidelity and constraint optimization
+ Mind Foundry OPTaaS supports mixed search domains, multiobjective, constraints, parallel optimization and surrogate models.
+ SigOpt supports mixed search domains, multiobjective, multisolution, multifidelity, constraint (linear and black-box), and parallel optimization.

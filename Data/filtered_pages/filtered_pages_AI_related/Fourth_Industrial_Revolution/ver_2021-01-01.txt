@@ -1,0 +1,140 @@
+The Fourth Industrial Revolution (or Industry 4.0) is the ongoing automation of traditional manufacturing and industrial practices, using modern smart technology. Large-scale machine-to-machine communication (M2M) and the internet of things (IoT) are integrated for increased automation, improved communication and self-monitoring, and production of smart machines that can analyze and diagnose issues without the need for human intervention.
+
+ History 
+The phrase Fourth Industrial Revolution was first introduced by Klaus Schwab, executive chairman of the World Economic Forum, in a 2015 article published by Foreign Affairs, "Mastering the Fourth Industrial Revolution" was the 2016 theme of the World Economic Forum Annual Meeting, in Davos-Klosters, Switzerland.
+
+On October 10, 2016, the Forum announced the opening of its Centre for the Fourth Industrial Revolution in San Francisco. This was also subject and title of Schwab's 2016 book. Schwab includes in this fourth era technologies that combine hardware, software, and biology (cyber-physical systems), and emphasizes advances in communication and connectivity. Schwab expects this era to be marked by breakthroughs in emerging technologies in fields such as robotics, artificial intelligence, nanotechnology, quantum computing, biotechnology, the internet of things, the industrial internet of things, decentralized consensus, fifth-generation wireless technologies, 3D printing, and fully autonomous vehicles.
+
+In The Great Reset proposal by the World Economic Forum, The Fourth Industrial Revolution is included as a Strategic Intelligence in the solution to rebuild the economy sustainably following the COVID-19 pandemic
+ First Industrial Revolution 
+The First Industrial Revolution was marked by a transition from hand production methods to machines through the use of steam power and water power. The implementation of new technologies took a long time, so the period which this refers to it is between 1760 and 1820, or 1840 in Europe and the United States. Its effects had consequences on textile manufacturing, which was first to adopt such changes, as well as iron industry, agriculture, and mining although it also had societal effects with an ever stronger middle class. It also had an effect on British industry at the time.
+
+ Second Industrial Revolution 
+The Second Industrial Revolution, also known as the Technological Revolution, is the period between 1871 and 1914 that resulted from installations of extensive railroad and telegraph networks, which allowed for faster transfer of people and ideas, as well as electricity. Increasing electrification allowed for factories to develop the modern production line. It was a period of great economic growth, with an increase in productivity, which also caused a surge in unemployment since many factory workers were replaced by machines.
+
+ Third Industrial Revolution 
+The Third Industrial Revolution, also known as the Digital Revolution, occurred in the late 20th century, after the end of the two world wars, resulting from a slowdown of industrialization and technological advancement compared to previous periods. The global financial crisis in 1929 followed by the Great Depression affected many industrialized countries. The production of the Z1 computer, which used binary floating-point numbers and Boolean logic, a decade later, was the beginning of more advanced digital developments. The next significant development in communication technologies was the supercomputer, with extensive use of computer and communication technologies in the production process; machinery began to abrogate the need for human power.
+
+ German Strategy 
+The term "Industrie 4.0", shortened to I4.0 or simply I4, originated in 2011 from a project in the high-tech strategy of the German government, which promotes the computerization of manufacturing. The term "Industrie 4.0" was publicly introduced in the same year at the Hannover Fair. In October 2012, the Working Group on Industry 4.0 presented a set of Industry 4.0 implementation recommendations to the German federal government. The workgroup members and partners are recognized as the founding fathers and driving force behind Industry 4.0. On 8 April 2013 at the Hannover Fair, the final report of the Working Group Industry 4.0 was presented. This working group was headed by Siegfried Dais, of Robert Bosch GmbH, and Henning Kagermann, of the German Academy of Science and Engineering.Industrie 4.0 Plattform Last download on 15. Juli 2013
+
+As Industry 4.0 principles have been applied by companies, they have sometimes been rebranded. For example, the aerospace parts manufacturer Meggitt PLC has branded its own Industry 4.0 research project M4.
+
+The discussion of how the shift to Industry 4.0, especially digitization, will affect the labour market is being discussed in Germany under the topic of Work 4.0.Federal Ministry of Labour and Social Affairs of Germany (2015). Re-Imagining Work: White Paper Work 4.0.
+
+The characteristics of the German government's Industry 4.0 strategy involve the strong customization of products under the conditions of highly flexible (mass-) production. The required automation technology is improved by the introduction of methods of self-optimization, self-configuration,Selbstkonfiguierende Automation für Intelligente Technische Systeme, Video, last download on 27. Dezember 2012 self-diagnosis, cognition and intelligent support of workers in their increasingly complex work.Jürgen Jasperneite; Oliver, Niggemann: Intelligente Assistenzsysteme zur Beherrschung der Systemkomplexität in der Automation. In: ATP edition - Automatisierungstechnische Praxis, 9/2012, Oldenbourg Verlag, München, September 2012 The largest project in Industry 4.0 as of July 2013 is the German Federal Ministry of Education and Research (BMBF) leading-edge cluster "Intelligent Technical Systems Ostwestfalen-Lippe (its OWL)". Another major project is the BMBF project RES-COM, as well as the Cluster of Excellence "Integrative Production Technology for High-Wage Countries". In 2015, the European Commission started the international Horizon 2020 research project CREMA (Providing Cloud-based Rapid Elastic Manufacturing based on the XaaS and Cloud model) as a major initiative to foster the Industry 4.0 topic.
+
+ Design principles and goals
+There are four design principles identified as integral to Industry 4.0:Hermann, Pentek, Otto, 2016: Design Principles for Industrie 4.0 Scenarios, accessed on 4 May 2016
+ Interconnection — the ability of machines, devices, sensors, and people to connect and communicate with each other via the Internet of things, or the internet of people (IoP)
+ Information transparency — the transparency afforded by Industry 4.0 technology provides operators with comprehensive information to make decisions. Inter-connectivity allows operators to collect immense amounts of data and information from all points in the manufacturing process, identify key areas that can benefit from improvement to increase functionality
+ Technical assistance — the technological facility of systems to assist humans in decision-making and problem-solving, and the ability to help humans with difficult or unsafe tasks
+ Decentralized decisions — the ability of cyber physical systems to make decisions on their own and to perform their tasks as autonomously as possible. Only in the case of exceptions, interference, or conflicting goals, are tasks delegated to a higher levelGronau, Norbert, Marcus Grum, and Benedict Bender. "Determining the optimal level of autonomy in cyber-physical production systems." 2016 IEEE 14th International Conference on Industrial Informatics (INDIN). IEEE, 2016. DOI:10.1109/INDIN.2016.7819367
+
+ Components 
+5G Cell Tower
+
+The Fourth Industrial Revolution consists of many components when looking closely into our society and current digital trends. To understand how extensive these components are, here are some contributing digital technologies as examples:
+ Mobile devices
+ Internet of things (IoT) platforms
+ Location detection technologies (electronic identification)
+ Advanced human-machine interfaces
+ Authentication and fraud detection
+ 3D printing
+ Smart sensors
+ Big analytics and advanced processes
+ Multilevel customer interaction and customer profiling
+ Augmented reality/ wearables
+ On-demand availability of computer system resources
+Data visualization and triggered "live" training
+
+Mainly these technologies can be summarized into four major components, defining the term “Industry 4.0” or “smart factory”:
+ Cyber-physical systems
+ IoT
+ On-demand availability of computer system resources
+ Cognitive computing
+
+Industry 4.0 networks a wide range of new technologies to create value. Using cyber-physical systems that monitor physical processes, a virtual copy of the physical world can be designed. Characteristics of cyber-physical systems include the ability to make decentralized decisions independently, reaching a high degree of autonomy.
+
+The value created in Industrie 4.0, can be relied upon electronic identification, in which the smart manufacturing require set technologies to be incorporated in the manufacturing process to thus be classified as in the development path of Industrie 4.0 and no longer digitisation. 
+
+Primary Drivers
+Digitization and integration of vertical and horizontal value chains — Industry 4.0 integrates processes vertically, across the entire organization, including processes in product development, manufacturing, structuring, and service; horizontally, Industry 4.0 includes internal operations from suppliers to customers as well as all key value chain partners.
+Digitization of product and services — integrating new methods of data collection and analysis–such as through the expansion of existing products or creation of new digitised products–helps companies to generate data on product use in order to refine products
+Digital business models and customer access — customer satisfaction is a perpetual, multi-stage process that requires modification in real-time to adapt to the changing needs of consumers
+
+ Biggest trends 
+In essence, the Fourth Industrial Revolution is the trend towards automation and data exchange in manufacturing technologies and processes which include cyber-physical systems (CPS), IoT, industrial internet of things, cloud computing,Jürgen Jasperneite:Was hinter Begriffen wie Industrie 4.0 steckt  in Computer & Automation, 19 December 2012 accessed on 23 December 2012Kagermann, H., W. Wahlster and J. Helbig, eds., 2013: Recommendations for implementing the strategic initiative Industrie 4.0: Final report of the Industrie 4.0 Working GroupHeiner Lasi, Hans-Georg Kemper, Peter Fettke, Thomas Feld, Michael Hoffmann: Industry 4.0. In: Business & Information Systems Engineering 4 (6), pp. 239-242 cognitive computing, and artificial intelligence.
+
+ Smart factory 
+The Fourth Industrial Revolution fosters what has been called a "smart factory". Within modular structured smart factories, cyber-physical systems monitor physical processes, create a virtual copy of the physical world and make decentralized decisions. Over the internet of things, cyber-physical systems communicate and cooperate with each other and with humans in synchronic time both internally and across organizational services offered and used by participants of the value chain.
+
+ Predictive maintenance 
+Industry 4.0 can also provide predictive maintenance, due to the use of technology and the IoT sensors. Predictive maintenance – which can identify maintenance issues in live – allows machine owners to perform cost-effective maintenance and determine it ahead of time before the machinery fails or gets damaged.  For example, a company in LA could understand if a piece of equipment in Singapore is running at an abnormal speed or temperature. They could then decide whether or not it needs to be repaired.
+
+ 3D printing 
+Relativity Stargate 3D Printer
+The Fourth Industrial Revolution is said to have extensive dependency on 3D printing technology.  Some advantages of 3D printing for industry are that 3D printing can print many geometric structures, as well as simplify the product design process. It is also relatively environmentally friendly. In low-volume production, it can also decrease lead times and total production costs. Moreover, it can increase flexibility, reduce warehousing costs and help the company towards the adoption of a mass customization business strategy. In addition, 3D printing can be very useful for printing spare parts and installing it locally, therefore reducing supplier dependence and reducing the supply lead time.
+
+The determining factor is the pace of change. The correlation of the speed of technological development and, as a result, socio-economic and infrastructural transformations with human life allow us to state a qualitative leap in the speed of development, which marks a transition to a new time era.Shestakova I. G. New temporality of digital civilization: the future has already come // // Scientific and Technical Journal of St. Petersburg State Polytechnical University. Humanities and social sciences. 2019. # 2. P.20-29
+
+ Smart sensors 
+
+Sensors and instrumentation drive the central forces of innovation, not only for Industry 4.0 but also for other “smart ” megatrends, such as smart production, smart mobility, smart homes, smart cities, and smart factories.Imkamp, D., Berthold, J., Heizmann, M., Kniel, K., Manske, E., Peterek, M., Schmitt, R., Seidler, J., and Sommer, K.-D.: Challenges and trends in manufacturing measurement technology – the “Industrie 4.0” concept, J. Sens. Sens. Syst., 5, 325–335, https://doi.org/10.5194/jsss-5-325-2016, 2016
+
+Smart sensors are devices, which generate the data and allow further functionality from self-monitoring and self-configuration to condition monitoring of complex processes. 
+With the capability of wireless communication, they reduce installation effort to a great extent and help realize a dense array of sensors.A.A. Kolomenskii, P.D. Gershon, H.A. Schuessler, Sensitivity and
+detection limit of concentration and adsorption measurements by
+laser-induced surface-plasmon resonance, Appl. Opt. 36 (1997)
+6539–6547
+
+The importance of sensors, measurement science, and smart evaluation for Industry 4.0 has been recognized and acknowledged by various experts and has already led to the statement "Industry 4.0: nothing goes without sensor systems."Arnold, H.: Kommentar Industrie 4.0: Ohne Sensorsysteme geht nichts, available at: http://www.elektroniknet.de/messen-testen/ sonstiges/artikel/110776/ (last access: 10 March 2018), 2014
+
+However, there are few issues, such as time synchronization error, data loss, and dealing with large amounts of harvested data, which all limit the implementation of full-fledged systems. Moreover, additional limits on these functionalities represents the battery power.
+One example of the integration of smart sensors in the electronic devices, is the case of smart watches, where sensors receive the data from the movement of the user, process the data and as a result, provide the user with the information about how many steps they have walked in a day and also converts the  data into calories burned.
+
+ Agriculture and Food Industries 
+
+Smart sensors in these two fields are still in the testing stage.
+These innovative connected sensors collect, interpret and communicate the information available in the plots (leaf area, vegetation index, chlorophyll, hygrometry, temperature, water potential, radiation). Based on this scientific data, the objective is to enable real-time monitoring via a smartphone with a range of advice that optimizes plot management in terms of results, time and costs.
+On the farm, these sensors can be used to detect crop stages and recommend inputs and treatments at the right time. As well as controlling the level of irrigation.
+
+The food industry requires more and more security and transparency and full documentation is required. This new technology is used as a tracking system as well as the collection of human data as well as product data.
+
+The Fourth Industrial Revolution marks the beginning of the imagination age
+
+ Challenges 
+Challenges in implementation of Industry 4.0:
+
+ Economic 
+ High economic costs
+ Business model adaptation
+ Unclear economic benefits/excessive investment
+
+ Social 
+ Privacy concerns
+ Surveillance and distrust
+ General reluctance to change by stakeholders
+ Threat of redundancy of the corporate IT department
+ Loss of many jobs to automatic processes and IT-controlled processes, especially for blue collar workers
+
+ Political 
+ Lack of regulation, standards and forms of certifications
+ Unclear legal issues and data security 
+
+ Organizational 
+ IT security issues, which are greatly aggravated by the inherent need to open up those previously closed production shops
+ Reliability and stability needed for critical machine-to-machine communication (M2M), including very short and stable latency times
+ Need to maintain the integrity of production processes
+ Need to avoid any IT snags, as those would cause expensive production outages
+ Need to protect industrial know-how (contained also in the control files for the industrial automation gear)
+ Lack of adequate skill-sets to expedite the transition towards a fourth industrial revolution
+ Low top management commitment
+ Insufficient qualification of employees 
+
+Applications
+The aerospace industry has sometimes been characterized as "too low volume for extensive automation"; however, Industry 4.0 principles have been investigated by several aerospace companies, and technologies have been developed to improve productivity where the upfront cost of automation cannot be justified. One example of this is the aerospace parts manufacturer Meggitt PLC's project, M4.
+
+The increasing use of the Industrial Internet of Things is referred to as Industry 4.0 at Bosch, and generally in Germany. Applications include machines that can predict failures and trigger maintenance processes autonomously or self-organized coordination that react to unexpected changes in production.
+
+Industry 4.0 inspired Innovation 4.0, a move toward digitization for academia and research and development. In 2017, the £81m Materials Innovation Factory (MIF) at the University of Liverpool opened as a center for computer aided materials science, where robotic formulation, data capture and modeling are being integrated into development practices.

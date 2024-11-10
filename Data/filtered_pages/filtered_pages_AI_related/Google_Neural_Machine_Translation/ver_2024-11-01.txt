@@ -1,0 +1,133 @@
+Google Neural Machine Translation (GNMT) was a neural machine translation (NMT) system developed by Google and introduced in November 2016 that used an artificial neural network to increase fluency and accuracy in Google Translate. The neural network consisted of two main blocks, an encoder and a decoder, both of LSTM architecture with 8 1024-wide layers each and a simple 1-layer 1024-wide feedforward attention mechanism connecting them. The total number of parameters has been variously described as over 160 million, approximately 210 million, 278 million or 380 million. It used WordPiece tokenizer, and beam search decoding strategy. It ran on Tensor Processing Units.
+
+By 2020, the system had been replaced by another deep learning system based on a Transformer encoder and an RNN decoder.
+
+GNMT improved on the quality of translation by applying an example-based (EBMT) machine translation method in which the system learns from millions of examples of language translation. GNMT's proposed architecture of system learning was first tested on over a hundred languages supported by Google Translate. With the large end-to-end framework, the system learns over time to create better, more natural translations. GNMT attempts to translate whole sentences at a time, rather than just piece by piece. The GNMT network can undertake interlingual machine translation by encoding the semantics of the sentence, rather than by memorizing phrase-to-phrase translations.
+
+ History 
+The Google Brain project was established in 2011 in the "secretive Google X research lab" by Google Fellow Jeff Dean, Google Researcher Greg Corrado, and Stanford University Computer Science professor Andrew Ng. Ng's work has led to some of the biggest breakthroughs at Google and Stanford.
+
+In November 2016, Google Neural Machine Translation system (GNMT) was introduced. Since then, Google Translate began using neural machine translation (NMT) in preference to its previous statistical methods (SMT) which had been used since October 2007, with its proprietary, in-house SMT technology.Google Switches to its Own Translation System, October 22, 2007
+
+Training GNMT was a big effort at the time and took, by a 2021 OpenAI estimate, on the order of 100 PFLOP/s*day (up to 10 FLOPs) of compute which was 1.5 orders of magnitude larger than Seq2seq model of 2014 (but about 2x smaller than GPT-J-6B in 2021).
+
+Google Translate's NMT system uses a large artificial neural network capable of deep learning. By using millions of examples, GNMT improves the quality of translation, using broader context to deduce the most relevant translation. The result is then rearranged and adapted to approach grammatically based human language. GNMT's proposed architecture of system learning was first tested on over a hundred languages supported by Google Translate. GNMT did not create its own universal interlingua but rather aimed at finding the commonality between many languages using insights from psychology and linguistics. The new translation engine was first enabled for eight languages: to and from English and French, German, Spanish, Portuguese, Chinese, Japanese, Korean and Turkish in November 2016. In March 2017, three additional languages were enabled: Russian, Hindi and Vietnamese along with Thai for which support was added later. Support for Hebrew and Arabic was also added with help from the Google Translate Community in the same month. In mid April 2017 Google Netherlands announced support for Dutch and other European languages related to English. Further support was added for nine Indian languages: Hindi, Bengali, Marathi, Gujarati, Punjabi, Tamil, Telugu, Malayalam and Kannada at the end of April 2017.
+
+By 2020, Google had changed methodology to use a different neural network system based on transformers, and had phased out NMT.
+ Evaluation 
+The GNMT system was said to represent an improvement over the former Google Translate in that it will be able to handle "zero-shot translation", that is it directly translates one language into another (for example, Japanese to Korean). Google Translate previously first translated the source language into English and then translated the English into the target language rather than translating directly from one language to another.
+
+A July 2019 study in Annals of Internal Medicine found that "Google Translate is a viable, accurate tool for translating non–English-language trials". Only one disagreement between reviewers reading machine-translated trials was due to a translation error. Since many medical studies are excluded from systematic reviews because the reviewers do not understand the language, GNMT has the potential to reduce bias and improve accuracy in such reviews.
+
+ Languages supported by GNMT 
+As of December 2021, all of the languages of Google Translate support GNMT, with Latin being the most recent addition.
+
+Afrikaans
+Albanian
+Amharic
+Arabic
+Armenian
+Azerbaijani
+Basque
+Belarusian
+Bengali
+Bosnian
+Bulgarian
+Burmese
+Catalan
+Cebuano
+Chewa
+Chinese (Simplified)
+Chinese (Traditional)
+Corsican
+Croatian
+Czech
+Danish
+Dutch
+English
+Esperanto
+Estonian
+Filipino (Tagalog)
+Finnish
+French
+Galician
+Georgian
+German
+Greek
+Gujarati
+Haitian Creole
+Hausa
+Hawaiian
+Hebrew
+Hindi
+Hmong
+Hungarian
+Icelandic
+Igbo
+Indonesian
+Irish
+Italian
+Japanese
+Javanese
+Kannada
+Kazakh
+Khmer
+Kinyarwanda
+Korean
+Kurdish (Kurmanji)
+Kyrgyz
+Lao
+Latin
+Latvian
+Lithuanian
+Luxembourgish
+Macedonian
+Malagasy
+Malay
+Malayalam
+Maltese
+Maori
+Marathi
+Mongolian
+Nepali
+Norwegian (Bokmål)
+Odia
+Pashto
+Persian
+Polish
+Portuguese
+Punjabi (Gurmukhi)
+Romanian
+Russian
+Samoan
+Scottish Gaelic
+Serbian
+Shona
+Sindhi
+Sinhala
+Slovak
+Slovenian
+Somali
+Sotho
+Spanish
+Sundanese
+Swahili
+Swedish
+Tajik
+Tamil
+Tatar
+Telugu
+Thai
+Turkish
+Turkmen
+Ukrainian
+Urdu
+Uyghur
+Uzbek
+Vietnamese
+Welsh
+West Frisian
+Xhosa
+Yiddish
+Yoruba
+Zulu

@@ -1,0 +1,407 @@
+5G is the fifth generation wireless technology for digital cellular networks that has begun wide deployment in 2019. Like previous standards the covered areas are divided into regions called cells, serviced by individual antennas. Virtually every major telecommunication service provider in the developed world is deploying antennas or intends to deploy them soon. The frequency spectrum of 5G is divided into millimeter waves, mid-band and low-band. Low-band uses a similar frequency range as the predecessor, 4G.
+
+5G millimeter wave is the fastest, with actual speeds often being 1-2 gigabit. Frequencies are above 24 GHz reaching up to 72 GHz which is above Extremely high frequency's lower boundary. The reach is short, so more cells are required. Millimeter waves have difficulty traversing many walls and windows, so indoor coverage is limited.
+
+5G mid-band is the most widely deployed, in over 20 networks. Speeds in a 100 MHz wide band are usually 100-400 megabits. In the lab and occasionally in the field, speeds can go over a gigabit. Frequencies deployed are from 2.4 GHz to 4.2 GHz. Sprint and China Mobile are using 2.5 GHz, while others are mostly between 3.3 and 4.2 GHz, a range which offers increased reach. Many areas can be covered simply by upgrading existing towers, which lowers the cost.
+
+5G low-band offers similar capacity to advanced 4G. T-Mobile and AT&T launched low-band services on the first week of December, 2019. T-Mobile CTO Neville Ray warns that speeds on his 600 MHz 5G may be as low as 25 Mbit/s down. AT&T, using 850 MHz, will also usually deliver less than 100 Mbit/s in 2019. The performance will improve, but cannot be much higher than good 4G in the same spectrum.
+
+Verizon, AT&T, and almost all 5G providers in 2019 have latencies between 25-35 milliseconds. The "air latency" (between a phone and a tower) in 2019 equipment is 8-12 ms. The latency to the server, further back in the network, raise the average to ~30 ms, 25%-40% lower than typical 4G deployed. Adding "Edge Servers" close to the towers can bring latency down to 10-20 ms. Lower latency, such as the often touted 1 ms, is years away and does not include the time to the server.
+
+The industry association 3GPP defines any system using "5G NR" (5G New Radio) software as, "5G", a definition that came into general use by late 2018. Previously, some reserved the term for systems that deliver speeds of 20 GHz shared called for by ITU IMT-2020. 3GPP will submit their 5G NR to the ITU.  In addition to traditional mobile operator services, 5G NR also addresses specific requirements for private mobile networks ranging from industrial IoT to critical communications.
+
+Overview
+5G networks are digital cellular networks, in which the service area covered by providers is divided into small geographical areas called cells.  Analog signals representing sounds and images are digitized in the telephone, converted by an analog to digital converter and transmitted as a stream of bits. All the 5G wireless devices in a cell communicate by radio waves with a local antenna array and low power automated transceiver (transmitter and receiver) in the cell, over frequency channels assigned by the transceiver from a pool of frequencies that are reused in other cells. The local antennas are connected with the telephone network and the Internet by a high bandwidth optical fiber or wireless backhaul connection. As in other cell networks, a mobile device crossing from one cell to another is automatically "handed off" seamlessly to the new cell.
+
+Verizon and a few others are using millimeter waves. Millimeter waves have shorter range than microwaves, therefore the cells are limited to smaller size. Millimeter waves also have more trouble passing through building walls.  Millimeter wave antennas are smaller than the large antennas used in previous cellular networks. They are only a few inches (several centimeters) long. Another technique used for increasing the data rate is massive MIMO (multiple-input multiple-output). Each cell will have multiple antennas communicating with the wireless device, received by multiple antennas in the device, thus multiple bitstreams of data will be transmitted simultaneously, in parallel. In a technique called, beamforming, the base station computer will continuously calculate the best route for radio waves to reach each wireless device, and will organize multiple antennas to work together as phased arrays to create beams of millimeter waves to reach the device.
+
+Over 20 networks are deployed using mid-band spectrum, from 2.4 to 4.2 GHz. Mid-band networks have better reach, bringing the cost close to the cost of 4G.
+
+The Universal Mobile Telecommunications System, created and revised by the 3GPP. The family is a full revision from GSM in terms of encoding methods and hardware, although some GSM sites can be retrofitted to broadcast in the UMTS/W-CDMA format. 
+
+T-Mobile USA and AT&T are announcing low-band 5G in December 2019. The performance, reach, and cost will be similar to 4G in the same band when the 5G systems are fully developed and can access more carrier frequencies.
+
+The new 5G wireless devices also have 4G LTE capability, as the new networks use 4G for initially establishing the connection with the cell, as well as in locations where 5G access is not available.
+
+5G can support up to a million devices per square kilometer, while 4G supports only up to 100,000 devices per square kilometer.
+
+Usage scenario
+The ITU-R has defined three main uses for 5G. They are Enhanced Mobile Broadband (eMBB), Ultra Reliable Low Latency Communications (URLLC), and Massive Machine Type Communications (mMTC). Only eMBB is deployed in 2019; URLLC and mMTC is several years away in most locations.
+
+Enhanced Mobile Broadband (eMBB) uses 5G as a progression from 4G LTE mobile broadband services, with faster connections, higher throughput, and more capacity
+
+Ultra-Reliable Low-Latency Communications (URLLC) refer to using the network for mission critical applications that requires uninterrupted and robust data exchange.
+
+Massive Machine-Type Communications (mMTC) would be used to connect to a large number of low power, low cost devices, which have high scalability and increased battery lifetime, in a wide area. 5G technology will connect some of the 50 billion connected IoT devices. Most will use the less expensive Wi-Fi. Drones will aid in disaster recovery efforts, providing real-time data for emergency responders. Smart cities will monitor air and water quality through millions of sensors, giving them insights needed to provide a better quality of life. Most cars will have a 4G or 5G cellular connection for many services. Autonomous cars do not require 5G, as they have to be able to operate where they do not have a network connection. While remote surgeries have been performed over 5G, most remote surgery will be performed in facilities with a fiber connection, usually faster and more reliable than any wireless connection.
+
+ Performance 
+ Speed 
+5G speeds will range from ~50 Mbit/s to over a gigabit. Mid-band 5G, by far the most common, will usually deliver between 100 & 400 Mbit/s. Low-band will be slower.
+
+5G NR speed in sub-6 GHz bands can be slightly higher than the 4G with a similar amount of spectrum and antennas, although some 3GPP 5G networks will be slower than some advanced 4G networks, such as T-Mobile's LTE/LAA network, which achieves 500+ Mbit/s in Manhattan and Chicago. The 5G specification allows LAA (License Assisted Access) as well, but LAA in 5G has not yet been demonstrated. Adding LAA to an existing 4G configuration can add hundreds of megabits per second to the speed, but this is an extension of 4G, not a new part of the 5G standard.
+
+The similarity in terms of throughput between 4G and 5G in the existing bands is because 4G already approaches the Shannon limit on data communication rates. 5G speeds in the less common millimeter wave spectrum, with its much more abundant bandwidth and shorter range, and hence greater frequency reuseability, can be substantially higher.
+
+ Latency 
+In 5G, the "air latency" in equipment shipping in 2019 is  8-12 milliseconds.  The latency to the server must be added to the "air latency". Verizon reports the latency on its 5G early deployment is 30 ms. "Edge Servers close to the towers can reduce latency to 10-20 ms. 1-4 ms will be extremely rare for years outside the lab.
+
+ Standards 
+Initially, the term was associated with the International Telecommunication Union's IMT-2020 standard, which required a theoretical peak download speed of 20 gigabits per second and 10 gigabits per second upload speed, along with other requirements. Then, the industry standards group 3GPP chose the 5G NR (New Radio) standard together with LTE as their proposal for submission to the IMT-2020 standard.
+
+The first phase of 3GPP 5G specifications in Release-15 is scheduled to complete in 2019. The second phase in Release-16 is due to be completed in 2020.
+
+5G NR can include lower frequencies (FR1), below 6 GHz, and higher frequencies (FR2), above 24 GHz. However, the speed and latency in early FR1 deployments, using 5G NR software on 4G hardware (non-standalone), are only slightly better than new 4G systems, estimated at 15 to 50% better.
+
+IEEE covers several areas of 5G with a core focus in wireline sections between the Remote Radio Head (RRH) and Base Band Unit (BBU). The 1914.1 standards focus on network architecture and dividing the connection between the RRU and BBU into two key sections. Radio Unit (RU) to the Distributor Unit (DU) being the NGFI-I (Next Generation Fronthaul Interface) and the DU to the Central Unit (CU) being the NGFI-II interface allowing a more diverse and cost-effective network. NGFI-I and NGFI-II have defined performance values which should be compiled to ensure different traffic types defined by the ITU are capable of being carried. 1914.3 standard is creating a new Ethernet frame format capable of carrying IQ data in a much more efficient way depending on the functional split utilized. This is based on the 3GPP definition of functional splits. Multiple network synchronization standards within the IEEE groups are being updated to ensure network timing accuracy at the RU is maintained to a level required for the traffic carried over it.
+
+5G NR
+
+5G NR (New Radio) is a new air interface developed for the 5G network. It is supposed to be the global standard for the air interface of 3GPP 5G networks.
+
+Pre-standard implementations
+ 5GTF: The 5G network implemented by American carrier Verizon for Fixed Wireless Access in late 2010s uses a pre-standard specification known as 5GTF (Verizon 5G Technical Forum). The 5G service provided to customers in this standard is incompatible with 5G NR. There are plans to upgrade 5GTF to 5G NR "Once [it] meets our strict specifications for our customers," according to Verizon.
+ 5G-SIG： Pre-standard specification of 5G developed by KT Corporation. Deployed at Pyeongchang 2018 Winter Olympics.
+
+Internet of Things
+In the Internet of Things (IoT), 3GPP is going to submit evolution of NB-IoT and eMTC (LTE-M) as 5G technologies for the LPWA (Low Power Wide Area) use case.
+
+ Deployment 
+
+5G 3.5 GHz Cell Site of Deutsche Telekom in Darmstadt, Germany
+5G 3.5 GHz Cell Site of Vodafone in Karlsruhe, Germany
+Beyond mobile operator networks, 5G is also expected to be widely used for private networks with applications in industrial IoT, enterprise networking, and critical communications.
+
+Initial 5G NR launches will depend on existing LTE (4G) infrastructure in non-standalone (NSA) mode (5G NR software on LTE radio hardware), before maturation of the standalone (SA) mode (5G NR software on 5G NR radio hardware) with the 5G core network.
+
+As of April 2019, the Global Mobile Suppliers Association had identified 224 operators in 88 countries that are actively investing in 5G (i.e. that have demonstrated, are testing or trialling, or have been licensed to conduct field trials of 5G technologies, are deploying 5G networks or have announced service launches).GSA: LTE and 5G Market Statistics, 8 April 2019 (retrieved 24 April 2019) The equivalent numbers in November 2018 were 192 operators in 81 countries.GSA: 5G Investments: Trials, Deployments, Launches – Updated March 2019  (retrieved 2nd March 2019) The first country to adopt 5G on a large scale was South Korea, in April 2019. Swedish telecoms giant Ericsson predicted that superfast 5G internet will cover up to 65% of the world’s population by the end of 2025. Also, it plans to invest 1 billion reais ($238.30 million) in Brazil to add a new assembly line dedicated to 5th generation technology (5G) for its Latin American operations. 
+
+When South Korea launched its 5G network, all carriers used Samsung, Ericsson, and Nokia base stations and equipment, except for LG U Plus, who also used Huawei equipment. Samsung was the largest supplier for 5G base stations in South Korea at launch, having shipped 53,000 base stations at the time, out of 86,000 base stations installed across the country at the time.
+
+The first fairly substantial deployments were in April 2019. In South Korea, SK Telecom claimed 38,000 base stations, KT Corporation 30,000 and LG U Plus 18,000; of which 85% are in six major cities. They are using 3.5 GHz (sub-6) spectrum in non-standalone (NSA) mode and tested speeds were from 193 to 430 Mbit/s down. 260,000 signed up in the first month and the goal is 10% of phones on 5G by the end of 2019.
+
+Nine companies sell 5G radio hardware and 5G systems for carriers: Altiostar, Cisco Systems, Datang Telecom, Ericsson, Huawei, Nokia, Qualcomm, Samsung, and ZTE.
+
+Spectrum
+Large quantities of new radio spectrum (5G NR frequency bands) have been allocated to 5G in order to enable its increased throughput when compared with 4G. For example, in July 2016, the U.S. Federal Communications Commission (FCC) freed up vast amounts of bandwidth in underused high-band spectrum for 5G. The Spectrum Frontiers Proposal (SFP) doubled the amount of millimeter-wave unlicensed spectrum to 14 GHz and created four times the amount of flexible, mobile-use spectrum the FCC had licensed to date. In March 2018, European Union lawmakers agreed to open up the 3.6 and 26 GHz bands by 2020.
+
+As of March 2019, there are reportedly 52 countries, territories, special administrative regions, disputed territories and dependencies that are formally considering introducing certain spectrum bands for terrestrial 5G services, are holding consultations regarding suitable spectrum allocations for 5G, have reserved spectrum for 5G, have announced plans to auction frequencies or have already allocated spectrum for 5G use.GSA: Spectrum for Terrestrial 5G Networks: Licensing Developments Worldwide  (March 2019)
+
+Research has been done into the most suitable candidates for spectrum ranges for 5G.Mirfananda, Ahmad & Suryanegara, Muhammad. (2016). 5G spectrum candidates beyond 6 GHz: A simulation of Jakarta environment. 30-35. 10.1109/TENCONSpring.2016.7519373. Due to the demand for spectrum resources and wide frequency range of 5G technology, it is necessary to plan high, medium and low frequency bands in stages in frequency planning, gradually release frequency resources and guarantee the frequency requirements of 5G.Fang Jian, Li Jingchun, Huang Biao, Feng Yan. Research status and prospect of 5G spectrum . Telecommunications science, 2015, 31(12):111-118 The frequency spectrum became a focus due to  predictions that the 3G/4G frequency spectrum would not suffice to accommodate the amount of traffic that 5G will need to handle.
+
+Unlicensed spectrum
+MNOs are increasingly using unlicensed spectrum in the 2.4 and 5 Gigahertz (GHz) frequency bands. 5G networks will need to tap into the vast amount of spectrum available in these unlicensed bands to offload traffic in heavily congested areas and provide connectivity for billions of IoT devices. Advancements in Wi-Fi, LTE in Unlicensed spectrum (LTE-U), License Assisted Access (LAA), and MulteFire, among others, provide better quality and regulated access to unlicensed spectrum.
+
+ 5G devices 
+Samsung Galaxy S10 5G, the first smartphone able to connect to 5G networks
+
+In March 2019, the Global Mobile Suppliers Association released the industry's first database tracking worldwide 5G device launches.Total Telecom: "GSA launches first global database of commercial 5G devices " (retrieved 25 March 2019) In it, the GSA identified 23 vendors who have confirmed the availability of forthcoming 5G devices with 33 different devices including regional variants. There were seven announced 5G device form factors: (telephones (×12 devices), hotspots (×4), indoor and outdoor customer-premises equipment (×8), modules (×5), Snap-on dongles and adapters (×2), and USB terminals (×1)).GSA: 5G Device Ecosystem Report  (25 March 2019) By October 2019, the number of announced 5G devices had risen to 129, across 15 form factors, from 56 vendors.GSA: 5G Devices: Ecosystem Report, September 2019  (retrieved 17 October 2019)
+
+In the 5G IoT chipset arena, as of April 2019 there were four commercial 5G modem chipsets and one commercial processor/platform, with more launches expected in the near future.GSA: LTE, 5G and 3GPP IoT Chipsets: Status Update, April 2019 (retrieved 24 April 2019)
+
+ Availability 
+Availability by Country or region.
+
+ Australia 
+Telstra began its 5G service in areas of Sydney and Melbourne in May 2019 with plans to roll out the service to other cities in the coming years. Optus has also switched on 5G in limited areas, and are currently expanding their 5G network across Australia. Vodafone's 5G network is likely to go live in 2020.
+
+ Argentina 
+Argentina expects deployment of 5G around the end of 2019 or the beginning of 2020 according to some reports or in 2021 or 2022 according to a different estimate. In late 2017, a lab test of a 5G system achieved a download speed of 20 Gbit/s. A single terminal in a shopping center in Buenos Aires was experimentally equipped with 5G in early 2019. Its download speeds were as high as 700 Mbit/s.
+
+ Canada 
+The government of Canada announced a planned roll out of 5G in 2019. An auction for the 5G spectrum is expected in 2020, a decision on a higher frequency spectrum  in 2021, and a new frequency proposal by 2022. The government has committed to an investment of $199 million over the course of five years in order to modernize spectrum equipment; wireless operators are expected to invest $26 billion, and have already invested $17.6 billion. The roll out will be location based, with initial availability decisions being based on the type of community — city, urban, or rural. Among other benefits, the 5G network is expected to help connect Canada's under-served rural communities. It is currently undecided as to whether or not Canada will use Huawei products as part of their infrastructure. Both Bell and Telus have deployment plans involving the company, whereas Rogers does not.
+CarrierAvailabityBell2020Rogers2020Telus2020FidoLate 2020KoodoLate 2020VirginLate 2020Freedom2021SaskTel2021+Videotron2021+
+Discount prepaid carriers such as Public Mobile and Chatr aren't expected to upgrade to 5G for a number of years.
+
+ China 
+China has launched its 5G national network and started commercial operation on 1 November 2019. At launch, Chinese state media called it the world's largest 5G network.
+
+ Finland 
+Finland held an auction for 5G spectrum in 2018. In this the three telecom operators Elisa, DNA and Telia all won a license to use the 3.5 GHz spectrum for 5G networks. As of September 2019, only Elisa is operating a public 5G network in the country. The others are running test networks, but are expected to open networks in the last quarter of 2019. In early October 5G networks are available in the following cities in Finland: Helsinki, Espoo, Jyväskylä, Tampere, Turku and Vantaa.
+
+ Germany 
+Germany held an auction for 5G spectrum in June 2019. The winning companies are committed to providing 5G coverage to 98% of households by 2022.
+
+  Deutsche Telekom Vodafone Telefónica 1&1 Drillisch Berlin Partial Partial — — Frankfurt am Main — Partial — — Cologne / Bonn Partial Partial — — Darmstadt Partial — — — Hamburg Planned Partial — — Munich Partial — — — Karlsruhe — Partial — — Nuremberg — — — — Wolfsburg — Partial — — Sources:
+
+ Operator Infrastructures Spectrum n78 (3,6 GHz TDD) Spectrum n1 (2,1 GHz FDD) Spectrum n28 (700 MHz FDD) Deutsche Telekom (Build-Out) Ericsson and Huawei 90 MHz (10 MHz with limitations) 20 MHz 10 MHz Vodafone (Build-Out) Ericsson and  Huawei 90 MHz (20 MHz with limitations) 20 MHz 10 MHz Telefónica (Planned) Nokia and Huawei 70 MHz 2021: 20 MHz / 2025: 10 MHz  10 MHz  1&1 Drillisch (Planned) N/A 50 MHz 2021: 0 MHz / 2025: 10 MHz 0 MHz
+
+ India 
+On 23 February 2018, Bharti Airtel and Chinese multinational telecom gear Huawei have successfully conducted India's first 5G network trial under a test setup at the former's network experience centre in Manesar, Gurugram.
+However, the Indian government is looking to ban Huawei from future 5G spectrum auctions due to security reasons. In response, Airtel made a statement stating that it may look for alternatives for 5G as it no longer wishes to continue with Huawei infrastructures. Nevertheless, Huawei urged the Department of Telecom to make an independent decision on 5G rollout. Huawei, further said that it won't invest more if government denies permission for 5G auctions. The Ministry of External Affairs spokesperson Ravesh Kumar, said that the Indian government will take a call on this issue. A Telecom Committee is all-set to look up on this matter, from various ministries and departments. Whatever fits in economic and security interest, the committee will decide on this.
+
+In August 2019, the Chinese government increased its pressure on India not to ban Huawei, indicating it could retaliate against Indian companies doing business in China. While Australia and the United Kingdom have expressed their concerns over cyber security of India. Australian national security and cyber officials have also warned India over security threats of Huawei. In Indian Economic Summit 2019, Wilbur Ross said that the U.S. hopes that India “does not inadvertently subject itself to untoward security risk” by using 5G equipment from the Chinese tech giant and mentioned that India should take its own decision on Huawei. The Telecom Regulatory Authority of India (TRAI) has issued, white paper press statement stating that 5G is set to transform communication networks and will bring massive growth in Indian economy by 2021. TRAI has also ordered telecom companies to identify specific use causes for 5G launch.
+
+ Operator Infrastructures Airtel (Planned) Huawei and Nokia BSNL (Planned) Nokia and Coriant Jio (Planned) Samsung Vodafone Idea (Planned) Ericsson Sources:
+
+ Ireland 
+  Eir Three Vodafone Athlone Planned — — Bray Planned — — Carlow Live — — Castlebar Live — — Cork Live — Live Drogheda Live — — Dublin Live — Live Dundalk Live — — Ennis Planned — — Galway Live — Live Kilkenny Live — — Killarney Planned — — Letterkenny Planned — — Limerick Live — Live Navan Planned — — Sligo Planned — — Tralee Planned — — Trim Planned — — Waterford Live — Live Wexford Planned — —
+
+In August 2019, Vodafone Ireland switched on 5G connectivity in Cork, Dublin, Galway, Limerick and Waterford cities initially, with a view to expanding its network over time.
+
+Eir switched on 100 sites across 10 cities during October 2019 and plans to add another 100 cities by the end of the year. Telecom Imagine offers fixed 5G broadband in mostly rural areas of the country which do not have fibre broadband.
+
+ Italy 
+  Iliad TIM Vodafone Wind Tre Bari — Planned — — Brescia — Partial — — Bologna — Planned Partial — Florence — Planned — — Matera — Planned — — Milan — Planned Partial — Naples — Partial Partial — Rome — Partial Partial — Turin — Partial Partial — Verona — Planned — — Sources:
+
+ Operator Infrastructures Iliad Cisco Systems, CommScope and Nokia TIM Ericsson Vodafone Huawei Wind Tre Ericsson and ZTE Sources:
+
+ Japan 
+Service availability before July 2020 (2020 Summer Olympics).
+
+SoftBank: Offering test services for the Japanese national basketball team's reinforced match held at Saitama Super Arena on August 22.
+
+KDDI(au): Developed a mechanism to be used for security at venues linked to drones (small unmanned aerial vehicles) and robot cameras. A test service is scheduled to start after autumn.
+
+NTT DoCoMo: Provides sports watching services using 5G at Rugby World Cup 2019.
+
+Rakuten: The new telecom joins with 5G.
+ Operator Infrastructures NTT DoCoMo (Planned)  KDDI(au) (Planned)  SoftBank (Planned)  Rakuten (Planned) 
+
+ Monaco 
+On 9 July 2019, Monaco Telecom launched its 5G network covering the entire city area in conjunction with the presentation of the commercial offer, using only Huawei equipment.
+
+ Norway 
+In Norway, the first 5G-test was done in 2017.E24: Telenor skal gjøre 5G norsk  (norwegian)
+Telenor launched 5G in Elverum in September 2019, planning to launch in Trondheim soon after. Competitor Ice claimed to be ready for 5G in Oslo and Akershus, Drammen, Bergen, Fredrikstad, Sarpsborg, Stavanger og Sandnes, Trondheim, Skien, Porsgrunn and Kristiansand in November 2019. Telia plan to start their 5G network in 2020, with full national coverage by 2023.
+
+ Pakistan 
+On 22 August 2019, Zong had become the first network to test 5G in Pakistan. This made Pakistan the first country in South Asia to test 5G. The tests were conducted by Pakistani telecom company Zong along with Chinese telecom gear company
+Huawei at Zong's Headquarters in Islamabad.
+
+Pakistan Telecommunication Authority hopes 5G will be available in Pakistan by 2021.
+
+ Operator Infrastructures Zong (Planned) Huawei Sources:
+
+ Philippines 
+5G in the Philippines started in 2016 when Smart Communications tested 5G and recorded a speed of 2.5 Gbps and 14.97 Gbps in its Technolab test in 2018, laying the groundwork for 5G infrastructure in the country. 
+
+Globe Telecom started offering 5G services in the Philippines since July 2019, making Philippines the first country to roll out 5G network in Southeast Asia, and third in Asia after South Korea and Japan. Huawei being Globe Telecom's long time partner ensures that the Philippines will be ahead of other countries in developing its 5G spectrum.
+
+The country's largest telecom PLDT is also planning to roll out its 5G services in the 4th quarter of 2019 tapping Nokia and Finland's Erricson as their technology provider but was delayed. Recently, PLDT CEO Manuel V. Pangilinan announced he is tapping Huawei to provide 5G network in the first quarter of 2020. The telco titan forged a partnership with the Araneta Group to launch 5G technology in Araneta City, which will be transformed into the country’s first Smart 5G Lifestyle Hub. Local telecoms are also ramping up their 5G infrastructure investment through the help of other 5G technology providers.
+
+ Poland 
+Stated-owned Exatel was the first company to conduct the test of 5G connectivity in Poland in 2017. In December 2018, T-Mobile launched first 5G tests in Warsaw, and Katowice and Orange Polska in Gliwice. In March 2019, Orange Polska together with Ericsson launched test in Zakopane, followed by Warsaw in September and together with Nokia in Lublin in October of the same year. In July 2019, Play launched another tests in Toruń and Grójec. In October, 2019, T-Mobile launched an experimental 5G installation in Kraków. The network created together with Nokia was activated in the headquarters of hub:raum innovation center. Its signal was available only inside the building for the T-Mobile business partners and startups cooperating with the innovation centre. 
+
+Play will be the first carrier to offer commercial 5G network in Gdańsk, Gdynia and Sopot from January, 2020.
+
+In 2020 the auction will be held by The Office of Electronic Communications to allocate further frequencies for 5G.
+  Orange T-Mobile Play Plus Bytom Test — — — Chorzów Test — — — Gdańsk — — January 2020 — Gdynia — — January 2020 — Gliwice Test — — — Grójec — — Test — Katowice Test Test — —KołobrzegTest———KoszalinTest———Kraków—Test——LublinTest———Piekary ŚląskieTest———Sopot——January 2020—Toruń——Test—WarszawaTestTestTest—ZakopaneTest———Sources:
+
+ Romania 
+Starting May 2019, Vodafone Romania offer 5G connectivity in Bucharest, Cluj-Napoca and Mamaia.
+
+ Russia 
+In June 2019, "Huawei signed a deal with Russia's largest telecoms operator MTS to develop 5G technologies and launch a fifth-generation network in Russia within the next year."
+
+In July 2019, Moscow announced the opening of 5G demo centres for testing new technologies and city services. The demo centres provide access to 5G networks for Russian and foreign companies via 5G laboratories operating on the principle of vendor neutrality, which means openness to business, information security and respect for patent law.
+
+Agreements on launching a 5G network have been signed with Russia's main telecom operators. The operators will deploy segments of permanently operating 5G zones, test new functionalities of the 5th generation network, and interact with each other.
+
+Each of the 4 operators will have its own pilot zone: at the Exhibition of Achievements of National Economy, Skolkovo, Sparrow Hills and Tverskaya Street. At the same time, the operators will work with the regulator independently on frequency bids and permits.
+
+In 2018, Moscow Mayor Sergey Sobyanin and Sergei Soldatenkov, CEO of MegaFon, Russia's second largest mobile phone operator, have signed a cooperation agreement aimed at developing communication services and information and telecommunications technologies in Moscow.
+
+Beeline has also signed a five-year renewable agreement with the Moscow authorities under which it will deploy a pilot 5G network in the capital next year alongside NB-IoT, Smart City and virtual/augmented reality (VR/AR) solutions.
+
+Ericsson has been selected by Tele2 Russia to upgrade its network with the 5G-ready Ericsson Radio System including software, as part of a five-year network modernisation deal to enable higher speeds and capacity and prepare for the 5G launch.
+
+Tele2 Russia has also entered into a partnership agreement with Huawei, involving strategic cooperation in the development of a 5G-oriented transport and core network, including testing of ultra-wideband communication networks.
+
+At the Mobile World Congress, Ericsson signed a 5G “roadmap agreement” with MTS. The agreement outlines the rollout of 5G networks for the operator in the 2019–2022 timeframe.
+
+The commercial launch of 5G is one of Moscow's priority projects. The first pilot zones will be small areas in key locations across Moscow. These areas fall into two main categories: crowded places (parks and central streets), where more consumer tech 5G tests and demonstrations will be held; and innovation centres and technoparks, where technology companies will be able to test industrial 5G. The project is being implemented in cooperation with Huawei, Nokia, Ericsson, Qualcomm and IBM.
+
+During the 2018 World Cup, MegaFon used Nokia 5G equipment to demonstrate VR Broadcast technology for indoor coverage at a venue for media representatives and football fans. Fifty people used VR glasses to watch the VR broadcast, with 20 VR glasses being used simultaneously at speeds of up to 35 Mbit/s per device.
+
+ San Marino 
+San Marino is covered by the 5G network of TIM San Marino using telecommunications infrastructures produced by Nokia; however no commercial offer is available yet (July 2019).
+
+South Africa
+Launched September 2019.
+
+ South Korea (Republic of Korea)
+By the middle of June 2019, South Korea had over one million 5G subscribers.
+
+ Taiwan
+Taiwan is aiming for service availability by January 2020, according to Vice Premier Chen Chi-mai. In June 2019, the American tech company Qualcomm started construction on a 5G center in Taipei.
+
+ United Kingdom 
+  EE O2 Three Vodafone Belfast Live Live — — Birkenhead — — — Live Birmingham Live Planned Planned Live Blackpool — — — Planned Bolton — — Planned — Bournemouth — — — Planned Bradford — — Planned — Brighton — — Planned — Bristol Live Planned Planned Live Cardiff Live Live Planned Live Coventry Live — Planned — Derby — — Planned — Edinburgh Live Live Planned — Guildford — — — Planned Glasgow Planned — Planned Live Hull Planned — Planned — Leeds Planned Live Planned Live Leicester Planned — Planned — Liverpool Planned — Planned Live London Live Live Live Live Manchester Live Planned Planned Live Middlesbrough — — Planned — Milton Keynes — — Planned — Newbury — — — Planned Newcastle Planned — — — Nottingham  Planned — Planned — Portsmouth — — — Planned Plymouth — — — Planned Reading  — — Planned Planned Rotherham  — — Planned — Sheffield Planned — Planned — Slough — Planned Planned — Stoke-on-Trent — — — Planned Sunderland — — Planned — Walsall Live — Planned Planned Wolverhampton Live — Planned Live Sources:
+
+ United States 
+right|200px|Video produced by the FCC about 5G in the United States
+
+The four major US carriers have announced plans to deploy 5G in 2019, beginning with major metropolitan areas. On July 31, Atlanta became the first city to have it available from all four carriers.
+
+T-Mobile has launched nationwide 5G on December 2nd, 2019.
+
+  AT&T Sprint T-Mobile VerizonAtlanta Live Live Live LiveAustin Live — Live —BirminghamLive—Live—Boise — — — LiveBoston Live — Live LiveBridgeportLive———BuffaloLive—Live—Charlotte Live — Live PlannedChicago — Live Live LiveCincinnati — — Live PlannedCleveland — — Live PlannedColumbus — — Live PlannedDallas–Fort Worth Live Live Live LiveDenver — — Live LiveDes Moines — — — PlannedDetroit — — Live LiveFort Myers — — Live —Houston Live Live Live LiveIndianapolis Live — Live LiveJacksonville Live — Live —Kansas City — Live Live PlannedLas Vegas Live — Live —Little Rock — — Live PlannedLos Angeles Live Live Live —Louisville Live — Live —Memphis — — Live PlannedMinneapolis–Saint Paul — — Live LiveMiami — — Live —MilwaukeeLive—Live—Nashville Live — Live —New Orleans Live — Live —New York Live Live Live LiveOklahoma City Live — Live —Omaha — — — LiveOrlando Live — — —Panama City — — Live LivePhiladelphia——Live—Phoenix — Live Live LivePittsburghLive—Live—Providence Live — Live LiveRaleigh Live — Live —Rochester, New YorkLive—Live --Salt Lake City — — Live PlannedSan Antonio Live — — —San Diego Live — Live PlannedSan Francisco Live — — —San Jose Live — — —Sioux Falls———LiveTampa Live — — —Waco Live — — —Washington, D.C. — Live — Live Sources:
+
+ Operator Infrastructures AT&TNokia, Ericsson, and Samsung Sprint Nokia, Ericsson, and Samsung T-MobileNokia, Ericsson, and Samsung VerizonNokia, Ericsson, and Samsung
+
+In August 2018, Senators John Thune and Brian Schatz introduced the Streamlining the Rapid Evolution and Modernization of Leading-edge Infrastructure Necessary to Enhance (STREAMLINE) Small Cell Deployment Act  (S. 3157), also known as the Streamline Small Cell Deployment Act. The proposed legislation limits local government involvement in the location of 5G equipment.
+
+ Uruguay 
+Uruguay state-owned operator Antel with vendor Nokia launched the first 5G commercial network in Latin America in April 2019.
+
+ Vietnam 
+Vietnam is aiming for service availability by January 2020 – ahead of Singapore and Malaysia, being the second ASEAN-state to roll-out 5G in the Southeast Asia Region--, according to The Diplomat. As previously reported by CommsUpdate, market leader Viettel was handed the country's first licence to trial 5G in January 2019 and tests were launched in Hanoi in cooperation with Swedish vendor Ericsson in May. The test permit is valid for one year until 21 January 2020 and allows the firm to trial the technology in Hanoi and Ho Chi Minh City. The military-owned company, which plans to launch commercial 5G services in 2020, announced that data connection speeds ranged from 1.5Gbit/s to 1.7Gbit/s. A third cellco, MobiFone, is expected to test 5G in Hanoi, Hai Phong and Da Nang. On 17 September 2019, Viettel started installation of 5G testing infrastructure, which was eventually released on 20 September.
+
+ Qatar 
+
+Ooredoo has  announced that the company is the first operator in the world to launch a live 5G network on the 3.5 GHz spectrum band. The breakthrough announcement was made in an event attended by Ooredoo senior management at the Ooredoo Tower in West Bay, Qatar. Now it's one of the first and only countries in the world where all major cities are covered by 5G network and a great number of mobile phones are available in the Qatar market for commercial use. Vodafone Qatar is also working immensely on 5G revolution in the state of Qatar, and has covered its network in many parts of the country.
+
+Ooredoo Qatar and Vodafone Qatar has also launched various cellular plans readily available for customers for purchase and use in the price of 4G.
+
+Users can also readily participate in various free trials of the network.
+
+ In other countries 
+ Mexico could begin 5G service in 2021, according to  José Otero, director for Latin America and the Caribbean of 5G Américas.
+ New Zealand will launch 5G services in December 2019. Vodafone NZ announced its intention and 5G deployment plan on 1 August 2019.
+ Sweden plans to begin rolling 5G services out sometime in 2020.
+ Panama plans to begin rolling out 5G in 2020–2021 using Huawei equipment for all infrastructure.
+
+ Technology 
+ New radio frequencies 
+
+The air interface defined by 3GPP for 5G is known as New Radio (NR), and the specification is subdivided into two frequency bands, FR1 (below 6 GHz) and FR2 (mmWave), each with different capabilities.
+
+ Frequency range 1 (< 6 GHz) 
+The maximum channel bandwidth defined for FR1 is 100 MHz, due to the scarcity of continuous spectrum in this crowded frequency range. The band most widely being used for 5G in this range is around 3.5 GHz. The Korean carriers are using 3.5 GHz although some millimeter wave spectrum has also been allocated.
+
+ Frequency range 2 (> 24 GHz) 
+The minimum channel bandwidth defined for FR2 is 50 MHz and the maximum is 400 MHz, with two-channel aggregation supported in 3GPP Release 15. In the U.S., Verizon is using 28 GHz and AT&T is using 39 GHz. 5G can use frequencies of up to 300 GHz. The higher the frequency, the greater the ability to support high data transfer speeds without interfering with other wireless signals or becoming overly cluttered. Due to this, 5G can support approximately 1,000 more devices per meter than 4G.
+
+ FR2 coverage 
+5G in the 24 GHz range or above use higher frequencies than 4G, and as a result, some 5G signals are not capable of traveling large distances (over a few hundred meters), unlike 4G or lower frequency 5G signals (sub 6 GHz). This requires placing 5G base stations every few hundred meters in order to use higher frequency bands. Also, these higher frequency 5G signals cannot penetrate solid objects easily, such as cars, trees, and walls, because of the nature of these higher frequency electromagnetic waves.
+
++  Cell types Deployment environment Max. number of users Output power (mW) Max. distance from base station 5G NR FR2 Femto cell Homes, businesses Home: 4–8Businesses: 16–32  indoors: 10–100outdoors: 200–1000  10s of meters Pico cell Public areas like shopping malls,airports, train stations, skyscrapers  64 to 128  indoors: 100–250outdoors: 1000–5000  10s of meters Micro cell Urban areas to fill coverage gaps 128 to 256  outdoors: 5000−10000  few hundreds of meters Metro cell Urban areas to provide additional capacity more than 250  outdoors: 10000−20000  hundreds of meters Wi-Fi(for comparison) Homes, businesses less than 50   indoors: 20–100outdoors: 200–1000  few 10s of meters
+
+ Massive MIMO 
+
+Massive MIMO (multiple input and multiple output) antennas increases sector throughput and capacity density using large numbers of antennas and Multi-user MIMO (MU-MIMO). Each antenna is individually-controlled and may embed radio transceiver components. Nokia claimed a five-fold increase in the capacity increase for a 64-Tx/64-Rx antenna system. The term "massive MIMO" was coined by Nokia Bell Labs researcher Dr. Thomas L. Marzetta in 2010, and has been launched in 4G networks, such as Softbank in Japan.
+
+Of more than 562 separate 5G demonstrations, tests or trials globally of 5G technologies, at least 94 of them have involved testing Massive MIMO in the context of 5G.GSA: 5G Investments: Trials, Deployments, Launches – Updated March 2019  (retrieved 2 March 2019)
+
+ Edge computing 
+
+Edge computing is delivered by cloud computing servers closer to the ultimate user. It reduces latency and data traffic congestion.
+
+ Small cell 
+
+Small cells are low-powered cellular radio access nodes that operate in licensed and unlicensed spectrum that have a range of 10 meters to a few kilometers. Small cells are critical to 5G networks, as 5G's radio waves can't travel long distances, because of 5G's higher frequencies.
+
+ Beamforming 
+
+Beamforming, as the name suggests, is used to direct radio waves to a target. This is achieved by combining elements in an antenna array in such a way that signals at particular angles experience constructive interference while others experience destructive interference. This improves signal quality and data transfer speeds. 5G uses beamforming due to the improved signal quality it provides. Beamforming can be accomplished using Phased array antennas.
+
+ Wifi-cellular convergence 
+One expected benefit of the transition to 5G is the convergence of multiple networking functions to achieve cost, power, and complexity reductions. LTE has targeted convergence with Wi-Fi band/technology via various efforts, such as License Assisted Access (LAA; 5G signal in unlicensed frequency bands that are also used by Wi-Fi) and LTE-WLAN Aggregation (LWA; convergence with Wi-Fi Radio), but the differing capabilities of cellular and Wi-Fi have limited the scope of convergence. However, significant improvement in cellular performance specifications in 5G, combined with migration from Distributed Radio Access Network (D-RAN) to Cloud- or Centralized-RAN (C-RAN) and rollout of cellular small cells can potentially narrow the gap between Wi-Fi and cellular networks in dense and indoor deployments. Radio convergence could result in sharing ranging from the aggregation of cellular and Wi-Fi channels to the use of a single silicon device for multiple radio access technologies.
+
+ NOMA (non-orthogonal multiple access) 
+
+NOMA (non-orthogonal multiple access) is a proposed multiple-access technique for future cellular systems via allocation of power.
+
+ SDN/NFV 
+
+Initially, cellular mobile communications technologies were designed in the context of providing voice services and Internet access. Today a new era of innovative tools and technologies is inclined towards developing a new pool of applications. This pool of applications consists of different domains such as the Internet of Things (IoT), web of connected autonomous vehicles, remotely controlled robots, and heterogeneous sensors connected to serve versatile applications. In this context, network slicing has emerged as a key technology to efficiently embrace this new market model.
+
+ Channel coding 
+The channel coding techniques for 5G NR have changed from Turbo codes in 4G to polar codes for the control channels and LDPC (low-density parity check codes) for the data channels.
+
+ Operation in unlicensed spectrum 
+Like LTE in unlicensed spectrum, 5G NR will also support operation in unlicensed spectrum (NR-U). In addition to License Assisted Access (LAA) from LTE that enable carriers to use those unlicensed spectrum to boost their operational performance for users, in 5G NR it will support standalone NR-U unlicensed operation that will allow new 5G NR networks to be established in different environments without acquiring operational license in licensed spectrum, for instance for localized private network or lower the entry barrier for providing 5G internet services to the public.
+
+Concerns
+Interference issues 
+The spectrum used by various 5G proposals will be near that of passive remote sensing such as by weather and Earth observation satellites, particularly for water vapor monitoring. Interference will occur and will potentially be significant without effective controls. An increase in interference already occurred with some other prior proximate band usages. Interference to satellite operations impairs numerical weather prediction performance with substantially deleterious economic and public safety impacts. 
+
+The concerns prompted U.S. Secretary of Commerce Wilbur Ross and NASA Administrator Jim Bridenstine in February 2019 to urge the FCC to delay some spectrum auction proposals, which was rejected. The chairs of the House Appropriations Committee and House Science Committee wrote separate letters to FCC chair Ajit Pai asking for further review and consultation with NOAA, NASA, and DoD, and warning of harmful impacts to national security. Acting NOAA director Neil Jacobs testified before the House Committee in May 2019 that 5G out-of-band emissions could produce a 30% reduction in weather forecast accuracy and that the resulting degradation in ECMWF model performance would have resulted in failure to predict the track and thus the impact of Superstorm Sandy in 2012. The United States Navy in March 2019 wrote a memorandum warning of deterioration and made technical suggestions to control band bleed-over limits, for testing and fielding, and for coordination of the wireless industry and regulators with weather forecasting organizations. 
+
+At the 2019 quadrennial World Radiocommunication Conference (WRC), atmospheric scientists advocated for a strong buffer of –55 decibel watts (dBW), European regulators agreed on a recommendation of –42 dBW, and US regulators (the FCC) recommended a restriction of –20 dBW, which is 150 times weaker than the European proposal. The ITU decided on an intermediate –33 dBW until 1 September 2027 and after that a standard of –39 dBW. This is closer to the European recommendation but even the delayed higher standard is much weaker than that pleaded for by atmospheric scientists, triggering warnings from the World Meteorological Organization (WMO) that the ITU standard, at 10 times less stringent than its recommendation, brings the "potential to significantly degrade the accuracy of data collected". A representative of the American Meteorological Society (AMS) also warned of interference, and the European Centre for Medium-Range Weather Forecasts (ECMWF), sternly warned, saying that society risks "history repeat[ing] itself" by ignoring atmospheric scientists' warnings (referencing global warming, monitoring of which could be imperiled). In December 2019, a bipartisan request was sent from the US House Science Committee to the Government Accountability Office (GAO) to investigate why there is such a discrepancy between recommendations of US civilian and military science agencies and the regulator, the FCC.
+
+Surveillance concerns
+
+Due to fears of potential espionage of foreign users by Chinese equipment vendors, several countries (including Australia and the United Kingdom as of early 2019) have taken actions to restrict or eliminate the use of Chinese equipment in their respective 5G networks. Chinese vendors and the Chinese government have denied these claims.
+
+In 2019, the United States via its FBI, the British GCHQ, other intelligence agencies, and criminal prosecuting organizations, is heavily involved in adjusting surveillance standards. The 5G security architecture is being adjusted so as much metadata as possible is collected for mass surveillance purposes. This happens via the 3SALI meetings of the 3GPP standardization organization.FBI greift massiv in 5G-Überwachungsstandards ein , orf.at, 2019-08-11.
+
+Health concerns
+
+The development of the technology has elicited a range of responses regarding concerns that 5G radiation could have adverse health effects. An opinion piece published on Scientific American's online blog section asserts that complete scientific research regarding its effects has not been conducted and that there could be health risks.Moskowitz, Joel M., We Have No Reason to Believe 5G Is Safe , Scientific American, October 12, 2019 Another article in the same publication offers outlooks from both sides of the debate, and ends in a call for more and higher quality studies on the issue. Wired characterized fears that the technology could cause cancer, infertility, autism, Alzheimer's, and mysterious bird deaths as "conspiracy theory". The US FCC and nearly all other regulators claim 5G radiation will have no significant health effects.
+
+In April 2019, the city of Brussels in Belgium blocked a 5G trial because of radiation laws. In Geneva, Switzerland, a planned upgrade to 5G was stopped for the same reason. The Swiss Telecommunications Association (ASUT) has said that studies have been unable to show that 5G frequencies have any health impact. Several Swiss cantons adopted moratoriums on 5G technology on health grounds, though the Federal offices in charge of environment and telecommunications say that the cantons have no jurisdiction to do so. 
+
+Dr. Paul Ben-Ishai, a member of the Hebrew University of Jerusalem's Physics department, found that human skin is extremely conductive of 5G's EMF radiation. A study on his research by Arjun Alia for Collective Evolution described the sweat ducts as "a number of helical antennas when exposed to these wavelengths that are put out by the devices that employ 5G technology." 
+
+Health concerns related to radiation from cell telephone towers and cell telephones are not new. Although electromagnetic hypersensitivity is not scientifically recognized, diffuse symptoms such as headache and tiredness have been claimed to result from exposure to electromagnetic fields such as those that carry 5G and Wi-Fi. However, 5G technology presents a couple of new issues that depart from 4G technology, namely, higher microwave frequencies from 2.6 GHz to 28 GHz, compared to 700–2500 MHz typically used by 4G. Because the higher millimeter wave used in 5G does not penetrate objects easily, this requires the installation of antennas every few hundred meters, which has sparked concern among the public.
+
+An international appeal to the European Union made on September 13, 2017 garnered over 180 signatures from scientists representing 35 unique countries.  They cite concerns over the 10 to 20 billion connections to the 5G network and the subsequent increase in RF-EMF exposure affecting the global populace constantly. The appeal also references the International Agency for Research on Cancer's (IARC) conclusion in 2011 that frequencies 30 kHz - 300 GHz are likely carcinogenic in humans. This research was seemingly confirmed by the National Toxicology Program (NTP) who studied prolonged exposure to RF radiation on rats and noticed significant increases in cancer formation.
+
+Critics of 5G say that these millimeter wavelengths have not been tested extensively on the general public. Most experts believe that more scientific research is needed, as even though millimeter wave technology has been used in technology such as radar for many decades, there is considerable research regarding the association of cancer to the use of radar devices by police officers.Wirth, Michael, et al, The Epidemiology of Cancer Among Police Officers , United States National Library of Medicine, National Institutes of Health, 2014, citing article of American Journal of Industrial Medicine April 2013
+
+United States Senator Richard Blumenthal in 2018 said "I know of no reliable studies — classified or otherwise that have been done about 5G technology. There may have been studies by the military but so far as I know they failed to meet the specifications that are required in terms of the numbers of animals or other ways of measuring that would be required."
+
+In 2018, Dr. Martin Pall, Professor Emeritus of Biochemistry and Basic Medical Sciences at Washington State University believes "Putting in tens of millions of 5G antennae without a single biological test of  safety has got to be about the stupidest idea anyone has had in the history of the world." He cites the increased number of Phased arrays, the high energy pulses which can easily penetrate the human body, and the bulk of antennae required to operate the network as potential causes for concern.
+
+Writing in the New York Times in 2019, William Broad reported that RT America began airing programming linking 5G to harmful health effects, such as "brain cancer, infertility, autism, heart tumors, and Alzheimer’s disease". Broad asserts that the claims, which he states have increased in 2019, have spread to hundreds of blogs and websites but they "lack scientific support".
+
+In January 2019, more than 180 scientists and doctors from 36 countries sent a letter to officials of the European Union demanding a moratorium on 5G coverage in Europe until potential hazards for human health have been fully investigated. According to the "Statement on emerging health and environmental issues (2018)" edited by European Commission's Scientific Committee on Health, Environmental and Emerging Risks (SCHEER), "5G networks will soon be rolled out for mobile phone and smart device users. How exposure to electromagnetic fields could affect humans remains a controversial area, and studies have not yielded clear evidence of the impact on mammals, birds or insects. The lack of clear evidence to inform the development of exposure guidelines to 5G technology leaves open the possibility of unintended biological consequences."
+
+According to the CNET, "Members of Parliament in the Netherlands are also calling on the government to take a closer look at 5G. Switzerland is taking steps to monitor 5G's impact on people. Several leaders in Congress have written to the Federal Communications Commission expressing concern about potential health risks. In Mill Valley, California, the city council blocked the deployment of new 5G wireless cells." Similar concerns were raised in Vermont and New Hampshire.
+
+In February 2019, Senator Blumenthal questioned 5G industry representatives about health risks and related studies, finding that the industry has not done studies, nor were any ongoing.
+
+In July 2019, the New York Times wrote an article detailing how an influential study from the year 2000, which determined that wireless technology carried a high chance of causing negative health effects in humans, made a scientific error by failing to study the protective benefits of human skin. The article claimed that many of the alleged health concerns around 5G and other wireless technologies in humans have not been scientifically proven.
+
+In August 2019, a court in the USA decided that 5G technology will not be deployed without environmental impact and historic preservation reviews.
+
+In the third quarter of 2019, after campaigning by activist groups, a series of small localities in the UK, including Totnes, Brighton and Hove, Glastonbury, and Frome passed resolutions against the implementation of further 5G infrastructure. For example, the Totnes Town Council passed a symbolic moratorium on the building of additional 5G masts pending additional research on the health effects of 5G.
+
+ Security concerns 
+
+On 18 October 2018, a team of researchers from ETH Zurich, the University of Lorraine and the University of Dundee released a paper entitled, “A Formal Analysis of 5G Authentication”.  It alerted that 5G technology could open ground for a new era of security threats. The paper described the technology as “immature and insufficiently tested,” the one that “enables the movement and access of vastly higher quantities of data, and thus broadens attack surfaces”. Simultaneously, network security companies such as Fortinet, Arbor Networks, A10 Networks, and Voxility advised on personalized and mixed security deployments against massive DDoS attacks foreseen after 5G deployment.
+
+IoT Analytics estimated an increase in the number of IoT devices, enabled by 5G technology, from 7 billion in 2018 to 21.5 billion by 2025. This can raise the attack surface for these devices to a substantial scale, and the capacity for DDoS attacks, cryptojacking, and other cyberattacks could boost proportionally.
+
+ Marketing of non-5G services 
+
+In various parts of the world, carriers have launched numerous differently branded technologies, such as "5G Evolution", which advertise improving existing networks with the use of "5G technology". However, these pre-5G networks are an improvement on specifications of existing LTE networks that are not exclusive to 5G. While the technology promises to deliver faster speeds, and is described by AT&T as a "foundation for our evolution to 5G while the 5G standards are being finalized," it cannot be considered to be true 5G. When AT&T announced 5G Evolution, 4x4 MIMO, the technology that AT&T is using to deliver the faster speeds, had already been put in place by T-Mobile without being branded with the 5G moniker. It is claimed that such branding is a marketing move that will cause confusion with consumers, as it is not made clear that such improvements are not true 5G. 
+
+ History 
+
+ In April 2008, NASA partnered with Geoff Brown and Machine-to-Machine Intelligence (M2Mi) Corp to develop 5G communications technology.
+ In 2008, the South Korean IT R&D program of "5G mobile communication systems based on beam-division multiple access and relays with group cooperation" was formed.
+ In August 2012, New York University founded NYU WIRELESS, a multi-disciplinary academic research centre that has conducted pioneering work in 5G wireless communications.
+ On 8 October 2012, the UK's University of Surrey secured £35M for a new 5G research centre, jointly funded by the British government's UK Research Partnership Investment Fund (UKRPIF) and a consortium of key international mobile operators and infrastructure providers, including Huawei, Samsung, Telefonica Europe, Fujitsu Laboratories Europe, Rohde & Schwarz, and Aircom International. It will offer testing facilities to mobile operators keen to develop a mobile standard that uses less energy and less radio spectrum, while delivering speeds faster than current 4G with aspirations for the new technology to be ready within a decade.
+ On 1 November 2012, the EU project "Mobile and wireless communications Enablers for the Twenty-twenty Information Society" (METIS) starts its activity toward the definition of 5G. METIS achieved an early global consensus on these systems. In this sense, METIS played an important role of building consensus among other external major stakeholders prior to global standardization activities. This was done by initiating and addressing work in relevant global fora (e.g. ITU-R), as well as in national and regional regulatory bodies.
+ Also in November 2012, the iJOIN EU project was launched, focusing on "small cell" technology, which is of key importance for taking advantage of limited and strategic resources, such as the radio wave spectrum. According to Günther Oettinger, the European Commissioner for Digital Economy and Society (2014–2019), "an innovative utilization of spectrum" is one of the key factors at the heart of 5G success. Oettinger further described it as "the essential resource for the wireless connectivity of which 5G will be the main driver". iJOIN was selected by the European Commission as one of the pioneering 5G research projects to showcase early results on this technology at the Mobile World Congress 2015 (Barcelona, Spain).
+ In February 2013, ITU-R Working Party 5D (WP 5D) started two study items: (1) Study on IMT Vision for 2020 and beyond, and; (2) Study on future technology trends for terrestrial IMT systems. Both aiming at having a better understanding of future technical aspects of mobile communications toward the definition of the next generation mobile. 
+ On 12 May 2013, Samsung Electronics stated that they had developed a "5G" system. The core technology has a maximum speed of tens of Gbit/s (gigabits per second). In testing, the transfer speeds for the "5G" network sent data at 1.056 Gbit/s to a distance of up to 2 kilometers with the use of an 8*8 MIMO.
+ In July 2013, India and Israel agreed to work jointly on development of fifth generation (5G) telecom technologies.
+ On 1 October 2013, NTT (Nippon Telegraph and Telephone), the same company to launch world's first 5G network in Japan, wins Minister of Internal Affairs and Communications Award at CEATEC for 5G R&D efforts.
+ On 6 November 2013, Huawei announced plans to invest a minimum of $600 million into R&D for next generation 5G networks capable of speeds 100 times faster than modern LTE networks.
+ On 3 April 2019, South Korea became the first country to adopt 5G. Just hours later, Verizon launched its 5G services in the United States, and disputed South Korea's claim of becoming the world's first country with a 5G network, because allegedly, South Korea's 5G service was launched initially for just six South Korean celebrities so that South Korea could claim the title of having the world's first 5G network. In fact, the three main South Korean telecommunication companies (SK Telecom, KT, and LG Uplus) added more than 40,000 users to their 5G network on the launch day.
+AT&T bring 5G service to consumers and businesses in December 2019 ahead of plans to offer nationwide 5G in the first half of 2020
+
+ Applications 
+
+ Automobiles 
+5G Automotive Association have been promoting the C-V2X communication technology that will first be deployed in 4G. It provides for communication between vehicles and communication between vehicles and infrastructures, leading to increase in autonomous (self-driving) cars and IOT (Internet of Things).
+
+ Automation (Factory and Process) 
+Most experts in the auto industry believe that the incorporation of 5G technology in upcoming self-driving cars will be vital in helping autonomous cars realize their full potential (Llanasas, 2019). The speed and cutting edge technology of this technology will enhance the capabilities of autonomous vehicles whiles making them effective at the same time
+(Llanasas, 2019). For instance, the current 4G network doesn't possess the required speed needed to provide self-driving vehicles that could prevent catastrophic accidents (Llanasas, 2019).
+
+ Public safety 
+Mission-critical push-to-talk (MCPTT) and mission-critical video and data are expected to be furthered in 5G.
+
+Healthcare
+
+5G holds the potential to transform the healthcare industry. Its ultra-reliable low latency communications (URLLC) could improve telehealth and remote recovery. It can enable services such as remote patient monitoring and remote surgery. Though these will require connected healthcare devices.
+
+Fixed wireless
+Fixed wireless connections intended to replace fixed line broadband (ADSL, VDSL, Fiber optic, and DOCSIS connections) with 5G connections.
+
+Smart Home
+5G is leveraged by the smart home concept, which is an automated home equipped with lighting, heating, or other electronic devices that can be controlled remotely by  smartphone or computer. Compared to existing wireless technologies such as WLAN, Bluetooth Low Energy, Zigbee, Z-Wave, and other such technologies, 5G will contribute to the success of smart homes by providing reliable and user-friendly connections to devices with various performance requirements.

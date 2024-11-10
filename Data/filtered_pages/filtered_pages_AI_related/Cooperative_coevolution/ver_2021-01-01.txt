@@ -1,0 +1,21 @@
+Cooperative Coevolution (CC) is an evolutionary computation method that divides a large problem into subcomponents and solves them independently in order to solve the large problem.M. A. Potter and K. A. D. Jong, “A cooperative coevolutionary approach to function optimization,” in PPSN III: Proceedings of the International Conference on Evolutionary Computation. The Third Conference on Parallel Problem Solving from Nature. London, UK:Springer-Verlag, 1994, pp. 249–257. 
+
+The subcomponents are also called species. The subcomponents are implemented as subpopulations and the only interaction between subpopulations is in the cooperative evaluation of each individual of the subpopulations. The general CC framework is nature inspired where the individuals of a particular group of species mate amongst themselves, however, mating in between different species is not feasible. The cooperative evaluation of each individual in a subpopulation is done by concatenating the current individual with the best individuals from the rest of the subpopulations as described by M. Potter.Mitchell A. Potter, Kenneth A. De Jong, Cooperative Coevolution: An Architecture for Evolving Coadapted Subcomponents, Evolutionary Computation, v.8 n.1, 2000, p.1-29.
+
+The cooperative coevolution framework has been applied to real world problems such as pedestrian detection systems,Cao, X., Qiao, H. and Keane, J., A low-cost pedestrian-detection system with a single optical camera. IEEE Transactions on Intelligent Transportation Systems. v9 i1. 58-67. large-scale  function optimizationYang, Z., Tang, K., and Yao, X. 2008. Large scale evolutionary optimization using cooperative coevolution. Inf. Sci. 178, 15 (Aug. 2008), 2985-2999 and neural network training.García-Pedrajas, N., Hervás-Martínez, C. and Muñoz Pérez, J., COVNET: a cooperative coevolutionary model for evolving artificial neural networks. IEEE Transactions on Neural Networks. v14 i3. 575-596.
+It has also be further extended into another method, called Constructive cooperative coevolution.
+
+Pseudocode
+
+ i := 0
+ 
+ for each subproblem S do
+     Initialise a subpopulation Pop0(S)
+     calculate fitness of each member in Pop0(S)
+ 
+ while termination criteria not satisfied  do
+     i := i + 1
+     for each subproblem S do
+         select Popi(S) from Popi-1(S)
+         apply genetic operators to Popi(S)
+         calculate fitness of each member in Popi(S)

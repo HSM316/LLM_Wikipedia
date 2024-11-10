@@ -1,0 +1,6 @@
+A flick is a unit of time equivalent to exactly 1/705,600,000 of a second. The figure was chosen so that frequencies of 24, 25, 30, 48, 50, 60, 90, 100 and 120 Hz, as well as 1/1000 divisions of all those, can be represented with integers. The unit was launched in January 2018 by Facebook. A flick is approximately 1.42 × 10−9 s, which makes it larger than a nanosecond but much smaller than a microsecond.
+
+A similar unit for integer representation of temporal points was proposed in 2004 under the name TimeRef, splitting a second into 14,112,000 parts. This makes 1 TimeRef equivalent to 50 Flicks.
+
+Etymology
+The word flick is a portmanteau of frame (as in e.g. animation frame) and tick (as in computer instruction cycle).

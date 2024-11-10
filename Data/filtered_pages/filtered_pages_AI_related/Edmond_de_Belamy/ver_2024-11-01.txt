@@ -1,0 +1,35 @@
+Edmond de Belamy, sometimes referred to as Portrait of Edmond de Belamy, is a generative adversarial network (GAN) portrait painting constructed by Paris-based arts collective Obvious in 2018 from WikiArt artwork database. Printed on canvas, the work belongs to a series of generative images called La Famille de Belamy. The print is known for being sold for  during a Christie's auction.
+
+The name Belamy is a pun based on Ian Goodfellow, inventor of GANs. In French, "bel ami" means "good friend", which is an allude to Goodfellow's name.
+
+The work has been criticized as having been created with another AI artist's uncredited code.
+
+ Auction 
+It gained media attention after Christie's announced its intention to auction the piece as the first artwork created using artificial intelligence to be featured in the "Prints & Multiples" sale at the Christie's Images New York auction. The picture was originally hung on the wall to the right of a bronze work by Roy Lichtenstein.
+
+The local and online auction's bidding was started on 23 October 2018 among five parties. Six minutes into the bidding, the price went up to ; the price surpassed pre-auction estimates, which valued it at  to . Seven minutes into the bidding, an anonymous phone bidder won the auction with a  bid, and the print was bought for  on 25 October 2018, making it the second most expensive artwork in the auction, just cheaper than Andy Warhol’s artwork, Myths, the 254 cm × 254 cm 1981 artwork that was sold for .
+
+Obvious stated that the proceeds "will [be used] to refine the algorithm [and] create works that increasingly seem to have been created by a human being".
+
+ Method 
+Obvious's members are Hugo Caselles-Dupré, Pierre Fautrel, and Gauthier Vernier. Caselles-Dupré stated that the algorithm used a "discriminator". Hugo Caselles-Dupré found artist Robbie Barrat’s open source algorithm that was forked from Soumith Chintala on Github. He then used the algorithm to be trained on a set of 15,000 portraits from the online art encyclopedia WikiArt, spanning the 14th to the 19th centuries.
+
+It is manually signed with ink at the bottom-right with , which is part of the loss function metaheuristic algorithm code that produced it.
+
+ Description 
+The piece is a portrait depiction of a somewhat blurry man, primarily focused on the top-left corner of the canvas, surrounded by whiter color. The dominant colors in the portrait are brown and beige. The painting has been associated with the aesthetic provisional name that was proposed by François Chollet, GANism, with 'characteristics' of indistinct-blurry imagery.
+
+It is generated and printed by Obvious; the canvas print measures 27  in × 27  in (70 cm × 70 cm) and is set within a gold-colored gilded wood frame.
+
+The work belongs to a series of eleven generative images called La Famille de Belamy (from French, ) that was meant to resemble Belamy's family tree. Edmond de Belamy is the fictional descendant of Madame de Belamy, a name that was given to another artificial intelligence (AI) artwork made by Obvious. The name Belamy is a tribute to Ian Goodfellow's name, inventor of GANs; in French, "bel ami" means "good friend", a translated pun based on good fellow. Though the painting is not supposed to be a depiction of any real person.
+
+ Reception 
+The piece has been criticized because it was created using a generative adversarial network (GAN) software package that was implemented by Robbie Barrat, a then-19-year-old AI artist who was not affiliated with Obvious. Although they did not originally publicize that they were using Barrat's code, Caselles-Dupré later admitted that they had used the code from Barrat with little modification. "If you’re just talking about the code, then there is not a big percentage that has been modified," Caselles-Dupré said. "But if you talk about working on the computer, making it work, there is a lot of effort there." Posts on the project's issue tracker show Obvious members requesting that Barrat provide them with support and custom features. 
+
+On the same day that Edmond de Belamy was sold, Barrat posted two images of comparison between Edmond de Belamy and his "outputs from a neural network [he] trained and put online *over a year ago*" on Twitter, writing that they used his code only to later sell the results. Mario Klingemann wrote that "You could argue that probably 90 percent of the actual 'work' was done by [Barrat]."
+
+The piece has also been criticized for whether it is real "art" or not. Art critic Jonathan Jones did not acknowledge Edmond de Belamy as art. The piece has been placed within a tradition of works calling into question the basis of the modern art market. Research has used Edmond de Belamy to show how anthropomorphizing AI can affect allocations of responsibility and credit to artists.
+
+In an interview, Caselles-Dupré said: "We are in the middle of a storm and lots of false information is released with our name on it. In fact, we are really depressed about it." The "false information" that he was pointing to was that the painting was the first portrait that was generated by AI. 
+
+The head of Christie’s prints and multiples department said he is no expert on AI, having learned about Obvious after reading an article about a collector’s purchase of one of Obvious's previous works for around .

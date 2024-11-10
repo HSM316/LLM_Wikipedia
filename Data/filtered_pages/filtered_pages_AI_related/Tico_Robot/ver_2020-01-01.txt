@@ -1,0 +1,10 @@
+Tico is a social robot developed by Adele Robots to interact with humans in different environments, primarily promotional events and in education as a helper for teachers.
+
+History
+Initially created by Treelogic in 2007 as a research platform for Human-Robot Interaction, it participated in several R&D projects such as ACROSS, and was also tested in supermarkets and schools. It became commercially available in 2010.
+
+Design
+The first version included a laser rangefinder and ultrasonic sensors for obstacle detection, and a camera for tracking people and reading QR codes. It also has a touch screen. Its head and neck access 6 degrees of freedom. It moves using differential steering with two high-torque EC gear-motors, and runs Ubuntu 9.10 on a 1.6Ghz Intel Core Duo. It stands  tall and weighs . A new, fresh battery allows it to run freely for eight hours.
+
+Tico usage
+Tico was tested as a pedagogic tool for teachers to improve children's motivation and gain their attention."Tico at school", 2011

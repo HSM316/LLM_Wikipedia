@@ -1,0 +1,20 @@
+The Allen Institute for AI (abbreviated AI2) is a research institute founded by late Microsoft co-founder Paul Allen. The institute seeks to achieve scientific breakthroughs by constructing AI systems with reasoning, learning, and reading capabilities. Oren Etzioni was appointed by Paul Allen in September 2013 to direct the research at the institute. AI2 has programs in  the University of California, Irvine, and in Tel Aviv, Israel.
+
+Projects
+Aristo: A flagship project of AI2, inspired by a similar project called Project Halo carried out by Seattle-based investment company Vulcan. The goal is to design an artificially intelligent system that can successfully read, learn, and reason from texts and ultimately demonstrate its knowledge by providing explainable question answering. The focus of the project is explained by the guiding philosophy that artificial intelligence is about having a mental model for how things operate and refining that mental model based on new knowledge.
+PRIOR: A ground-breaking research project on visual knowledge extraction that capitalizes on the wealth of information available in images. PRIOR aims to create knowledge bases composed entirely of information derived from images, both static and video. The PRIOR team released the game Iconary in February 2018 as a demonstration of an AI that can understand and produce situated scenes from a limited set of icons.
+Semantic Scholar: an artificial-intelligence backed search engine for academic publications publicly released in November 2015. It uses advances in natural language processing to provide summaries for scholarly papers.
+AllenNLP: AllenNLP is an open-source NLP research library built on PyTorch. AllenNLP includes model abstractions, task abstractions, declarative model for experiment design, reference implementations of high-quality models for both core NLP problems (e.g. semantic role labeling) and NLP applications (e.g. textual entailment). 
+MOSAIC: The Mosaic project is focused on defining and building common sense knowledge and reasoning for AI systems.
+
+Partnerships
+In 2018, the institute partnered with the University of Washington to explore deep learning artificial intelligence designed to predict how dogs would respond to stimulus. Researchers used over 20,000 frames of video to train an AI to predict movements and learn other dog behavior.
+
+AI2 also partnered with the University of Illinois Urbana-Champaign and the University of Washington to develop an artificial intelligence named the "Composition, Retrieval and Fusion Network" (CRAFT). After the AI was trained with a database of over 25,000 videos from the U.S. television show The Flintstones, it was able to create novel short video clips from natural language captions that resembled the cartoon.
+
+Startup incubator
+The institute's startup incubator launched in 2015 with the intent to develop technologies in the artificial intelligence field.
+
+Media coverage
+
+AI2 was the subject of an in-depth article in The Verge. Its launch was covered in Xconomy, and GeekWire. Allen and Etzioni co-authored an article for CNN about artificial intelligence and AI2 in December 2013. AI2 has also been mentioned in other articles discussing the current state of and trends in artificial intelligence research.

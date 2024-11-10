@@ -1,0 +1,4 @@
+DAYDREAMER is a goal-based agent and cognitive architecture developed at University of California, Los Angeles by Erik Mueller. It models the human stream of thought and its triggering and direction by emotions, as in human daydreaming.Turner, Scott R. (1994). The Creative Process: A Computer Model of Storytelling and Creativity, p. 217. RoutledgeEhn, Billy and Löfgren, Orvar (2010). The Secret World of Doing Nothing. University of California Press, 1 May 2010  The architecture is implemented as 12,000 lines of Lisp code.
+
+History
+DAYDREAMER was begun by Erik Mueller in 1983 while he was studying under Michael G. Dyer in the UCLA Computer Science Department.Dyer, Michael G. (1994). "Review: The Society of Mind by Marvin Minsky" in William J. Clancey, Stephen W. Smoliar, Mark Stefik (eds.) Contemplating Minds: A Forum for Artificial Intelligence, p. 262. MIT Press It was completed in 1987 and was followed by the ThoughtTreasure program, which was started in 1993.

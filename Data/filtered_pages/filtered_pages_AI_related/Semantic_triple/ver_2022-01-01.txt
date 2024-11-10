@@ -1,0 +1,24 @@
+A semantic triple, or RDF triple or simply triple, is the atomic data entity in the Resource Description Framework (RDF) data model.http://www.w3.org/TR/PR-rdf-syntax/ "Resource Description Framework (RDF) Model and Syntax Specification" As its name indicates, a triple is a set of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions (e.g., "Bob is 35", or "Bob knows John").
+
+Subject, predicate and object
+This format enables knowledge to be represented in a machine-readable way. Particularly, every part of an RDF triple is individually addressable via unique URIs — for example, the statement "Bob knows John" might be represented in RDF as: 
+
+http://example.name#BobSmith12 http://xmlns.com/foaf/0.1/knows http://example.name#JohnDoe34.
+
+Given this precise representation, semantic data can be unambiguously queried and reasoned about.
+
+alt=Image depicting the subject predicate object relation.|The basic semantic triple model.The components of a triple, such as the statement "The sky has the color blue", consist of a subject ("the sky"), a predicate ("has the color"), and an object ("blue"). This is similar to the classical notation of an entity–attribute–value model within object-oriented design, where this example would be expressed as an entity (sky), an attribute (color) and a value (blue). 
+
+From this basic structure, triples can be composed into more complex models, by using triples as objects or subjects of other triples — for example, Mike → said → (triples → can be → objects).
+
+Given their particular, consistent structure, a collection of triples is often stored in purpose-built databases called Triplestores.
+
+Difference to relational databases
+A relational database is the classical form for information storage. It's working with different tables which consist of rows. The well known SQL-language is able to retrieve information from a database. In contrast, the RDF triple storage is working with logical predicates. No tables nor rows are needed but the information is stored in a text file. A RDF-triple storage can be converted into a SQL database and the other way around. If the knowledge is highly unstructured and dedicated tables aren't flexible enough, semantic triples are used over classical SQL storage.
+
+In contrast to a traditional SQL database, the RDF triple storage isn't created with table editors but the preferred tool is a knowledge editor, for example Protégé. Protégé looks similar to an object-oriented modeling application used for software engineering, but it's focused on natural language information. The RDF triples are aggregated into a knowledge base which allows external parser to run requests. Possible applications are located within video games for the creation of non-player characters.
+
+Limitations
+One concern about triple storage is its lack of database scalability. This problem is especially pertinent if millions of triples are stored and retrieved in a database. The seek time is larger than for classical SQL-based databases.
+
+A more complex issue is a knowledge model's inability to predict future states. Even if all the domain knowledge is available as logical predicates, the model fails in answering what-if questions. For example, suppose in the RDF format a room with a robot and table is described. The robot knows what the location of the table is, is aware of the distance to the table and knows also that a table is a type of furniture. Before the robot can plan its next action, it needs temporal reasoning capabilities. Thus, the knowledge model should answer hypothetical questions in advance before an action is taken.

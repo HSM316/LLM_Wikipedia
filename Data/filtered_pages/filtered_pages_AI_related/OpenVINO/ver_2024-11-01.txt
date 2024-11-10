@@ -1,0 +1,30 @@
+OpenVINO is an open-source software toolkit for optimizing and deploying deep learning models. It enables programmers to develop scalable and efficient AI solutions with relatively few lines of code. It supports several popular model formats and categories, such as large language models, computer vision, and generative AI.
+
+Actively developed by Intel, it prioritizes high-performance inference on Intel hardware but also supports ARM/ARM64 processors and encourages contributors to add new devices to the portfolio.
+
+Based in C++, it offers the following APIs: C/C++, Python, and Node.js (an early preview).
+
+OpenVINO is cross-platform and free for use under Apache License 2.0.
+
+Workflow
+The simplest OpenVINO usage involves obtaining a model and running it as is. Yet for the best results, a more complete workflow is suggested:
+
+ obtain a model in one of supported frameworks,
+ convert the model to OpenVINO IR using the OpenVINO Converter tool,
+ optimize the model, using training-time or post-training options provided by OpenVINO's NNCF.
+ execute inference, using OpenVINO Runtime by specifying one of several inference modes.
+
+ OpenVINO model format 
+OpenVINO IR is the default format used to run inference. It is saved as a set of two files, *.bin and *.xml, containing weights and topology, respectively. It is obtained by converting a model from one of the supported frameworks, using the application's API or a dedicated converter.
+
+Models of the supported formats may also be used for inference directly, without prior conversion to OpenVINO IR. Such an approach is more convenient but offers fewer optimization options and lower performance, since the conversion is performed automatically before inference. Some pre-converted models can be found in the Hugging Face repository.
+
+The supported model formats are:
+ PyTorch
+ TensorFlow
+ TensorFlow Lite
+ ONNX (including formats that may be serialized to ONNX)
+ PaddlePaddle
+
+ OS support 
+OpenVINO runs on Windows, Linux and MacOS.

@@ -1,0 +1,29 @@
+In machine learning, the Highway Network was the first working very deep feedforward neural network with hundreds of layers, much deeper than previous artificial neural networks.
+It uses skip connections modulated by learned gating mechanisms to regulate information flow, inspired by Long Short-Term Memory (LSTM) recurrent neural networks.
+The advantage of a Highway Network over the common deep neural networks is that it solves or partially prevents the vanishing gradient problem, thus leading to easier to optimize neural networks.
+The gating mechanisms facilitate information flow across many layers ("information highways").
+
+Highway Networks have been used as part of text sequence labeling and speech recognition tasks.
+An open-gated or gateless Highway Network variant called Residual neural network was used to win the ImageNet 2015 competition. This has become the most cited neural network of the 21st century.
+
+ Model 
+The model has two gates in addition to the H(WH, x) gate: the transform gate T(WT, x) and the carry gate C(WC, x). Those two last gates are non-linear transfer functions (by convention Sigmoid function). The H(WH, x) function can be any desired transfer function.
+
+The carry gate is defined as C(WC, x) = 1 - T(WT, x). While the transform gate is just a gate with a sigmoid transfer function.
+
+ Structure 
+The structure of a hidden layer follows the equation:
+
+ Related Work 
+Sepp Hochreiter analyzed the vanishing gradient problem in 1991 and attributed to it the reason why deep learning did not work well.
+To overcome this problem, Long Short-Term Memory (LSTM) recurrent neural networks
+have residual connections with a weight of 1.0 in every LSTM cell (called the constant error carrousel) to compute . During backpropagation through time, this becomes the  residual formula  for feedforward neural networks. This enables training very deep recurrent neural networks with a very long time span t. A later LSTM version published in 2000 modulates the identity LSTM connections by so-called "forget gates" such that their weights are not fixed to 1.0 but can be learned. In experiments, the forget gates were initialized with positive bias weights, thus being opened, addressing the vanishing gradient problem.
+As long as the forget gates of the 2000 LSTM are open, it behaves like the 1997 LSTM. 
+
+The Highway Network of May 2015
+applies these principles to feedforward neural networks.
+It was reported to be "the first very deep feedforward network with hundreds of layers". 
+It is like a 2000 LSTM with forget gates unfolded in time, while the later Residual Nets have no equivalent of forget gates and are like the unfolded original 1997 LSTM.
+If the skip connections in Highway Networks are "without gates," or if their gates are kept open (activation 1.0), they become Residual Networks. 
+
+The original Highway Network paper not only introduced the basic principle for very deep feedforward networks, but also included experimental results with 20, 50, and 100 layers networks, and mentioned ongoing experiments with up to 900 layers.

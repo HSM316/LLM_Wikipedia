@@ -1,0 +1,46 @@
+Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step.
+
+Motivation
+Since the range of values of raw data varies widely, in some machine learning algorithms, objective functions will not work properly without normalization. For example, many classifiers calculate the distance between two points by the Euclidean distance. If one of the features has a broad range of values, the distance will be governed by this particular feature. Therefore, the range of all features should be normalized so that each feature contributes approximately proportionately to the final distance.
+
+Another reason why feature scaling is applied is that gradient descent converges much faster with feature scaling than without it.
+
+It's also important to apply feature scaling if regularization is used as part of the loss function (so that coefficients are penalized appropriately).
+
+Methods
+
+Rescaling (min-max normalization)
+Also known as min-max scaling or min-max normalization, rescaling is the simplest method and consists in rescaling the range of features to scale the range in [0, 1] or [−1, 1]. Selecting the target range depends on the nature of the data. The general formula for a min-max of [0, 1] is given as:
+
+ 
+
+where  is an original value,  is the normalized value. For example, suppose that we have the students' weight data, and the students' weights span [160 pounds, 200 pounds]. To rescale this data, we first subtract 160 from each student's weight and divide the result by 40 (the difference between the maximum and minimum weights).
+
+To rescale a range between an arbitrary set of values [a, b], the formula becomes:
+
+ 
+
+where  are the min-max values.
+
+Mean normalization
+
+ 
+
+where  is an original value,  is the normalized value,  is the mean of that feature vector. There is another form of the means normalization which divides by the standard deviation which is also called standardization.
+
+Standardization (Z-score Normalization)
+
+In machine learning, we can handle various types of data, e.g. audio signals and pixel values for image data, and this data can include multiple dimensions. Feature standardization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. This method is widely used for normalization in many machine learning algorithms (e.g., support vector machines, logistic regression, and artificial neural networks). The general method of calculation is to determine the distribution mean and standard deviation for each feature. Next we subtract the mean from each feature. Then we divide the values (mean is already subtracted) of each feature by its standard deviation.
+
+ 
+
+Where  is the original feature vector,  is the mean of that feature vector, and  is its standard deviation.
+
+Scaling to unit length
+Another option that is widely used in machine-learning is to scale the components of a feature vector such that the complete vector has length one. This usually means dividing each component by the Euclidean length of the vector: 
+
+In some applications (e.g., histogram features) it can be more practical to use the L1 norm (i.e., taxicab geometry) of the feature vector. This is especially important if in the following learning steps the scalar metric is used as a distance measure.
+Note that this only works for .
+
+ Application 
+In stochastic gradient descent, feature scaling can sometimes improve the convergence speed of the algorithm. In support vector machines, it can reduce the time to find support vectors. Note that feature scaling changes the SVM result .

@@ -1,0 +1,47 @@
+ELLIS - the European Laboratory for Learning and Intelligent Systems - is a pan-European AI network of excellence which focuses on fundamental science, technical innovation and societal impact. Founded in 2018, ELLIS builds upon machine learning as the driver for modern AI and aims to secure Europe’s sovereignty in this competitive field by creating a multi-centric AI research laboratory. ELLIS wants to ensure that the highest level of AI research is performed in the open societies of Europe and consists of 43 sites, 16 research programs and a pan-European PhD & Postdoc Program.
+
+ History 
+The organization was inspired by the Learning in Machines and Brains program of the Canadian Institute for Advanced Research. ELLIS was first proposed in an open letter to European governments in April 2018, which stated that Europe was not keeping up with the US and China. It urged that European governments act to provide opportunities and funding for world-class AI research in Europe.
+
+It was founded on 6 December 2018 at the Conference on Neural Information Processing Systems (NeurIPS).
+
+ Board 
+The members of the board are: 
+
+ Serge Belongie (University of Copenhagen & Cornell University)
+ Nicolò Cesa-Bianchi (Università degli Studi di Milano)
+ Florence d'Alché-Buc (Télécom Paris)
+ Nada Lavrač (Jožef Stefan Institute)
+ Neil D. Lawrence (University of Cambridge)
+ Nuria Oliver (ELLIS Alicante Unit Foundation | Institute of Humanity-centric AI)
+ Bernhard Schölkopf (Max Planck Institute for Intelligent Systems) Chairman 
+ Josef Sivic (Czech Technical University, École Normale Supérieure & INRIA)
+ Sepp Hochreiter (Johannes Kepler University Linz) Board guest
+
+ ELLIS sites 
+ELLIS is creating a network of research sites distributed across Europe and Israel. Currently, there are 43 sites in 17 countries. The long-term goal is to establish a set of world-class ELLIS institutes, each acting as the core of a local AI ecosystem. 
+
++ELLIS unitsNameLocationDirector(s)Ref(s).ELLIS unit AlicanteAlicante, SpainNuria OliverELLIS unit AmsterdamAmsterdam, NetherlandsCees SnoekELLIS unit BarcelonaBarcelona, SpainCarme Torras, Dimosthenis KaratzasELLIS unit BerlinBerlin, GermanyKlaus-Robert MüllerELLIS unit CambridgeCambridge, United KingdomCarl Edward Rasmussen, José Miguel Hernández-LobatoELLIS unit CopenhagenCopenhagen, DenmarkOle WintherELLIS unit DarmstadtDarmstadt, GermanyStefan RothELLIS unit DelftDelft, NetherlandsFrans OliehoekELLIS unit EdinburghEdinburgh, United Kingdom Ivan TitovELLIS unit FreiburgFreiburg, GermanyFrank HutterELLIS unit GenoaGenoa, ItalyLorenzo Rosasco, Massimiliano PontilELLIS unit GrazGraz, AustriaWolfgang MaassELLIS unit Haifa (Technion)Haifa, IsraelShie MannorELLIS unit HeidelbergHeidelberg, GermanyOliver StegleELLIS unit HelsinkiHelsinki, FinlandSamuel KaskiELLIS unit JenaJena, GermanyMarkus Reichstein, Joachim DenzlerELLIS unit Lausanne (EPFL)Lausanne, SwitzerlandPascal FrossardELLIS unit LeuvenLeuven, BelgiumMatthew Blaschko ELLIS unit LinzLinz, AustriaSepp HochreiterELLIS unit LisbonLisbon, PortugalMario A. T. Figueiredo https://lumlis.tecnico.ulisboa.pt/ELLIS unit London (UCL)London, United KingdomArthur GrettonELLIS associate unit LvivLviv, UkraineRostyslav HrynivELLIS unit MadridMadrid, SpainPedro LarrañagaELLIS unit ManchesterManchester, United KingdomMagnus RattrayELLIS unit MilanMilan, ItalyNicolò Cesa-BianchiELLIS unit Modena (Unimore)Modena, ItalyRita CucchiaraELLIS unit MunichMunich, GermanyDaniel Cremers, Fabian TheisELLIS unit NijmegenNijmegen, NetherlandsMarcel van GervenELLIS unit OxfordOxford, United KingdomMichael Wooldridge, Stephen Roberts, Yee Whye TehELLIS unit ParisParis, FranceGabriel PeyréELLIS unit PraguePrague, Czech RepublicJosef SivicELLIS unit PotsdamPotsdam, GermanyRalf Herbrich, Sebastian Reich, Katharina LadewigELLIS unit SaarbrückenSaarbrücken, GermanyBernt SchieleELLIS unit SofiaSofia, BulgariaLuc Van GoolELLIS unit StuttgartStuttgart, GermanyAndreas BullingELLIS unit Tel AvivTel Aviv, IsraelAmir GlobersonELLIS unit TrentoTrento, ItalyNicu Sebe, Bruno LepriELLIS unit TübingenTübingen, GermanyBernhard Schölkopf, Matthias BethgeELLIS Institute TübingenTübingen, GermanyBernhard SchölkopfELLIS unit TurinTurin, ItalyTatiana  TommasiELLIS unit Vienna (IST Austria)Vienna, AustriaChristoph LampertELLIS unit WarsawWarsaw, PolandTomasz TrzcińskiELLIS unit Zürich (ETH)Zürich, SwitzerlandAndreas Krause
+
+ Research programs 
+In addition to ELLIS units, a European network of top researchers working at locations throughout Europe is being established, organized into 14 ELLIS Programs. These Programs, directed by outstanding European researchers and including leading researchers as Program Fellows, focus on high-impact problem areas that have the potential to move the needle in modern AI.
+
+The ELLIS Programs are inspired by the CIFAR Program model, and closely collaborate with the CIFAR LMB (Learning in Machines and Brains) Program. Each Program has a budget for 2-3 workshops/year to enable meetings of 10-15 Fellows plus guests for intensive scientific exchange. Workshops can be co-located with academic meetings (usually) held in Europe, or organised as stand-alone events, usually at (and with the support of) ELLIS unit sites.
++ELLIS research programsNameDirector(s)ELLIS Health Gunnar Rätsch, Oliver Stegle, Mihaela van der SchaarELLIS Robot Learning: Closing the Reality Gap! Tamim Asfour, Aude Billard, Jan PetersGeometric Deep Learning Michael Bronstein, Taco Cohen, Max WellingHuman-centric Machine LearningPlamen P. Angelov, Nuria Oliver, Adrian WellerInteractive Learning and Interventional RepresentationsNicolò Cesa-Bianchi, Andreas Krause, Bernhard SchölkopfMachine Learning and Computer VisionBernt Schiele, Cordelia Schmid, Yair WeissMachine Learning for Earth and Climate SciencesGustau Camps-Valls, Markus ReichsteinMultimodal Learning SystemsCees Snoek, Nicu SebeNatural IntelligenceMatthias Bethge, Y-Lan Boureau, Peter DayanNatural Language ProcessingAndré Martins, Iryna Gurevych, Ivan TitovQuantum and Physics Based Machine LearningHilbert Johan Kappen, Riccardo  ZecchinaRobust Machine LearningChris Holmes, Samuel Kaski, Yee Whye TehSemantic, Symbolic and Interpretable Machine LearningVolker Tresp, Kristian Kersting, Paolo FrasconiTheory, Algorithms and Computations of Modern Learning SystemsFrancis Bach, Philipp Hennig, Lorenzo Rosasco
+
+ PhD & Postdoc Program 
+The ELLIS PhD & Postdoc Program supports excellent young researchers by connecting them to leading researchers across Europe and offering a variety of networking and training activities, including summer schools and workshops. ELLIS PhDs and postdocs conduct cutting-edge curiosity-driven research in machine learning or a related research area with the goal of publishing in top-tier conferences in the field.
+
+There are two tracks within the ELLIS PhD & Postdoc Program: the academic track and the industry track. These tracks have separate requirements for admission and criteria for activity during the appointment, but otherwise offer the same benefits, network and resources to the applicant. 
+
+Academic track
+
+PhD students and postdocs in the academic track strive for international collaboration as they partner with two European academic institutions in their research. These candidates are supervised by two advisors from different European countries: one of the advisors must be an ELLIS fellow/scholar or unit faculty; the other advisor should be an ELLIS fellow, scholar, unit faculty or member. PhDs and postdocs in the program visit the exchange institution for min. 6 months (the partitioning of this time is flexible). Normally, the exchange is partially sponsored by the exchange institution; students can also apply for the ELISE mobility grant to support their exchange.
+
+Industry track
+
+The industry track is open to PhD and postdoc candidates that will be part of a collaboration between an academic institution and an industry partner, and will spend time conducting research at the industry partner during their PhD or postdoc. The candidate will spend a minimum of 50% of their time at the academic institution, and at least 6 months (cumulative) with the industry partner. 
+
+For this track, both advisors may be located in the same country. One advisor will represent the academic institution and the other the industry partner. One advisor must be an ELLIS fellow/scholar or unit faculty. The second advisor can be an ELLIS fellow, scholar, member, unit faculty OR it is also possible for the second advisor to join if they have co-authored a paper with the applying student as a result of their collaboration, in a top-tier venue in machine learning or related sub-fields (details here).
+
+Calls and admissions: There is a yearly central call for applications in fall, which will be announced on the ELLIS website. Admission to the program is competitive. For reference, about 5-10% of eligible applicants are accepted via the central call. The next chance to apply via the central recruiting is in fall 2024. Nomination to the program (for students who already started their PhD with ELLIS faculty) is possible year-round. 

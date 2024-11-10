@@ -1,0 +1,27 @@
+XGBoost is an open-source software library which provides a gradient boosting framework for C++, Java,
+Python,
+R,
+Julia,
+Perl, and Scala.
+It works on Linux,
+Windows, and
+macOS. From the project description, it aims to provide a "Scalable, Portable and Distributed Gradient Boosting (GBM, GBRT, GBDT) Library". It runs on a single machine, as well as the distributed processing frameworks Apache Hadoop, Apache Spark, and Apache Flink.
+It has gained much popularity and attention recently as the algorithm of choice for many winning teams of machine learning competitions.
+
+History
+XGBoost initially started as a research project by Tianqi Chen as part of the Distributed (Deep) Machine Learning Community (DMLC) group. Initially, it began as a terminal application which could be configured using a libsvm configuration file. It became well known in the ML competition circles after its use in the winning solution of the Higgs Machine Learning Challenge. Soon after, the Python and R packages were built, and XGBoost now has package implementations for Java, Scala, Julia, Perl, and other languages. This brought the library to more developers and contributed to its popularity among the Kaggle community, where it has been used for a large number of competitions.
+
+It was soon integrated with a number of other packages making it easier to use in their respective communities. It has now been integrated with scikit-learn for Python users and with the caret package for R users. It can also be integrated into Data Flow frameworks like Apache Spark, Apache Hadoop, and Apache Flink using the abstracted Rabit and XGBoost4J. XGBoost is also available on OpenCL for FPGAs. An efficient, scalable implementation of XGBoost has been published by Tianqi Chen and Carlos Guestrin.
+
+Features
+Salient features of XGBoost which make it different from other gradient boosting algorithms include:
+
+ Clever penalization of trees
+ A proportional shrinking of leaf nodes
+ Newton Boosting
+ Extra randomization parameter
+Implementation on single, distributed systems and out-of-core computation
+
+Awards
+ John Chambers Award (2016)
+ High Energy Physics meets Machine Learning award (HEP meets ML) (2016)

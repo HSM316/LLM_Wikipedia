@@ -1,0 +1,26 @@
+The motion history image (MHI) is a static image template helps in understanding the motion location and path as it progresses. In MHI, the temporal motion information is collapsed into a single image template where intensity is a function of recency of motion. Thus, the MHI pixel intensity is a function of the motion history at that location, where brighter values correspond to a more recent motion. Using MHI, moving parts of a video sequence can be engraved with a single image, from where one can predict the motion flow as well as the moving parts of the video action.
+
+Some important features of the MHI representation are:Ahad, Md Atiqur Rahman. Motion history images for action recognition and understanding. Springer Science & Business Media, 2012.
+ It represents motion sequence in a compact manner. In this case, the silhouette sequence is condensed into a grayscale image, where dominant motion information is preserved. 
+ MHI can be created and implemented in low illumination conditions where the structure cannot be easily detected otherwise. 
+ The MHI representation is not so sensitive to silhouette noises, holes, shadows, and missing parts. 
+ The gray-scale MHI is sensitive to the direction of motion because it can demonstrate the flow direction of the motion. 
+ It keeps a history of temporal changes at each pixel location, which then decays over time. 
+ The MHI expresses the motion flow or sequence by using the intensity of every pixel in a temporal manner.
+
+General algorithm
+
+ for each time t
+     Bt := absolute_difference(It, It-1) > threshold
+ end for
+ 
+ for each time t
+     for each pixel (x, y)
+         if Bt(x, y) = 1
+             MHIt(x, y) := τ
+         else if MHIt-1 ≠ 0
+             MHIt(x, y) := MHIt-1(x, y) - 1
+         else
+             MHIt(x, y) := 0
+         end if
+ end for

@@ -1,0 +1,6 @@
+AVM Navigator is an additional module of the RoboRealm (plugin) that provides object recognition and autonomous robot navigation using a single video camera on the robot as the main sensor for navigation.
+
+Associative Video Memory
+It is possible due to using of an "Associative Video Memory" (AVM) algorithm based on multilevel decomposition of recognition matrices. It provides image recognition with low False Acceptance Rate (about 0.01%). In this case visual navigation is just the sequence of images (landmarks) with associated coordinates that was memorized inside AVM tree during route training. The navigation map is presented as the set of data (such as X, Y coordinates and azimuth) associated with images inside AVM tree. When a robot sees images from camera (marks) that can be recognized then it confirms its current location.
+
+The navigator creates a way from the current location to target position as a chain of waypoints. If the robot's current orientation does not point to the next waypoint then the navigator turns the robot body. When the robot reaches a waypoint the navigator changes direction to the next waypoint in the chain and so on until the target position is reached.

@@ -1,0 +1,43 @@
+Weak supervision is a branch of machine learning where noisy, limited, or imprecise sources are used to provide supervision signal for labeling large amounts of training data in a supervised learning setting. This approach alleviates the burden of obtaining hand-labeled data sets, which can be costly or impractical. Instead, inexpensive weak labels are employed with the understanding that they are imperfect, but can nonetheless be used to create a strong predictive model.
+
+ Problem of labeled training data 
+Machine learning models and techniques are increasingly accessible to researchers and developers; the real-world usefulness of these models, however, depends on access to high-quality labeled training data. This need for labeled training data often proves to be a significant obstacle to the application of machine learning models within an organization or industry. This bottleneck effect manifests itself in various ways, including the following examples:
+
+Insufficient quantity of labeled data
+
+When machine learning techniques are initially used in new applications or industries, there is often not enough training data available to apply traditional processes. Some industries have the benefit of decades' worth of training data readily available; those that do not are at a significant disadvantage. In such cases, obtaining training data may be impractical, expensive, or impossible without waiting years for its accumulation.
+
+Insufficient subject-matter expertise to label data
+
+When labeling training data requires specific relevant expertise, creation of a usable training data set can quickly become prohibitively expensive. This issue is likely to occur, for example, in biomedical or security-related applications of machine learning.
+
+Insufficient time to label and prepare data
+
+Most of the time required to implement machine learning is spent in preparing data sets. When an industry or research field deals with problems that are, by nature, rapidly evolving, it can be impossible to collect and prepare data quickly enough for results to be useful in real-world applications. This issue could occur, for example, in fraud detection or cybersecurity applications.
+
+Other areas of machine learning exist that are likewise motivated by the demand for increased quantity and quality of labeled training data but employ different high-level techniques to approach this demand. These other approaches include active learning, semi-supervised learning, and transfer learning.
+
+ Types of weak labels 
+Weak labels are intended to decrease the cost and increase the efficiency of human efforts expended in hand-labeling data. They can take many forms, including the following:
+
+ Imprecise or inexact labels: developers may use higher-level, less precise input from subject-matter experts to create heuristic rules, define expected distributions, or impose other constraints on the training data.
+ Inaccurate labels: developers may use inexpensive, lower-quality input through means such as crowdsourcing to obtain labels that are numerous, but not expected to be perfectly correct.
+ Existing resources: developers may take advantage of existing resources (such as knowledge bases, alternative data sets, or pre-trained models) to create labels that are helpful, though not perfectly suited for the given task.
+
+ Applications of weak supervision 
+Applications of weak supervision are numerous and varied within the machine learning research community.
+
+Stanford University researchers created Snorkel, an open-source system for quickly assembling training data through weak supervision. Snorkel employs the central principles of the data programming paradigm,  in which developers create labeling functions, which are then used to programmatically label data, and employs supervised learning techniques to assess the accuracy of those labeling functions. In this way, potentially low-quality inputs can be used to create high-quality models.
+
+In a joint work with Google, Stanford researchers showed that existing organizational knowledge resources could be converted into weak supervision sources and used to significantly decrease development costs and time.
+
+Researchers at Massachusetts Institute of Technology developed CleanLab for finding label errors in datasets, characterizing label noise, and learning with noisy labels.
+
+Researchers at University of Massachusetts Amherst propose augmenting traditional active learning approaches by soliciting labels on features rather than instances within a data set.
+
+Researchers at Johns Hopkins University propose reducing the cost of labeling data sets by having annotators provide rationales supporting each of their data annotations, then using those rationales to train both discriminative and generative models for labeling additional data.
+
+Researchers at University of Alberta propose a method that applies traditional active learning approaches to enhance the quality of the imperfect labels provided by weak supervision.
+
+Category:Machine learning
+Category:Machine learning researchers

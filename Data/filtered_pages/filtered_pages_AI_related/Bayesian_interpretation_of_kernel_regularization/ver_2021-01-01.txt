@@ -1,0 +1,93 @@
+In machine learning, kernel methods arise from the assumption of an inner product space or similarity structure on inputs. For some such methods, such as support vector machines (SVMs), the original formulation and its regularization were not Bayesian in nature. It is helpful to understand them from a Bayesian perspective.  Because the kernels are not necessarily positive semidefinite, the underlying structure may not be inner product spaces, but instead more general reproducing kernel Hilbert spaces.  In Bayesian probability kernel methods are a key component of Gaussian processes, where the kernel function is known as the covariance function.  Kernel methods have traditionally been used in supervised learning problems where the input space is usually a space of vectors while the output space is a space of scalars. More recently these methods have been extended to problems that deal with multiple outputs such as in multi-task learning.
+
+A mathematical equivalence between the regularization and the Bayesian point of view is easily proved in cases where the reproducing kernel Hilbert space is finite-dimensional. The infinite-dimensional case raises subtle mathematical issues; we will consider here the finite-dimensional case. We start with a brief review of the main ideas underlying kernel methods for scalar learning, and briefly introduce the concepts of regularization and Gaussian processes. We then show how both points of view arrive at essentially equivalent estimators, and show the connection that ties them together.
+
+The supervised learning problem
+
+The classical supervised learning problem requires estimating the output for some new input point  by learning a scalar-valued estimator  on the basis of a training set  consisting of  input-output pairs, .  Given a symmetric and positive bivariate function  called a kernel, one of the most popular estimators in machine learning is given by
+
+where  is the kernel matrix with entries , , and .  We will see how this estimator can be derived both from a regularization and a Bayesian perspective.
+
+A regularization perspective
+
+The main assumption in the regularization perspective is that the set of functions  is assumed to belong to a reproducing kernel Hilbert space .
+
+Reproducing kernel Hilbert space
+
+A reproducing kernel Hilbert space (RKHS)  is a Hilbert space of functions defined by a symmetric, positive-definite function  called the reproducing kernel such that the function  belongs to  for all . There are three main properties make an RKHS appealing:
+
+1. The reproducing property, which gives name to the space,
+
+where  is the inner product in .
+
+2. Functions in an RKHS are in the closure of the linear combination of the kernel at given points,
+
+.
+
+This allows the construction in a unified framework of both linear and generalized linear models.
+
+3. The squared norm in an RKHS can be written as
+
+and could be viewed as measuring the complexity of the function.
+
+The regularized functional
+
+The estimator is derived as the minimizer of the regularized functional
+
+where  and  is the norm in .  The first term in this functional, which measures the average of the squares of the errors between the  and the , is called the empirical risk and represents the cost we pay by predicting  for the true value .  The second term in the functional is the squared norm in a RKHS multiplied by a weight  and serves the purpose of stabilizing the problem as well as of adding a trade-off between fitting and complexity of the estimator.  The weight , called the regularizer, determines the degree to which instability and complexity of the estimator should be penalized (higher penalty for increasing value of ).
+
+Derivation of the estimator
+
+The explicit form of the estimator in equation () is derived in two steps.  First, the representer theorem states that the minimizer of the functional () can always be written as a linear combination of the kernels centered at the training-set points,
+
+for some .  The explicit form of the coefficients  can be found by substituting for  in the functional ().  For a function of the form in equation (), we have that
+
+We can rewrite the functional () as
+
+This functional is convex in  and therefore we can find its minimum by setting the gradient with respect to  to zero,
+
+Substituting this expression for the coefficients in equation (), we obtain the estimator stated previously in equation (),
+
+A Bayesian perspective
+
+The notion of a kernel plays a crucial role in Bayesian probability as the covariance function of a stochastic process called the Gaussian process.
+
+A review of Bayesian probability
+
+As part of the Bayesian framework, the Gaussian process specifies the prior distribution that describes the prior beliefs about the properties of the function being modeled.  These beliefs are updated after taking into account observational data by means of a likelihood function that relates the prior beliefs to the observations.  Taken together, the prior and likelihood lead to an updated distribution called the posterior distribution that is customarily used for predicting test cases.
+
+The Gaussian process
+
+A Gaussian process (GP) is a stochastic process in which any finite number of random variables that are sampled follow a joint Normal distribution.  The mean vector and covariance matrix of the Gaussian distribution completely specify the GP.  GPs are usually used as a priori distribution for functions, and as such the mean vector and covariance matrix can be viewed as functions, where the covariance function is also called the kernel of the GP.  Let a function  follow a Gaussian process with mean function  and kernel function ,
+
+In terms of the underlying Gaussian distribution, we have that for any finite set  if we let  then
+
+where  is the mean vector and  is the covariance matrix of the multivariate Gaussian distribution.
+
+Derivation of the estimator
+
+In a regression context, the likelihood function is usually assumed to be a Gaussian distribution and the observations to be independent and identically distributed (iid),
+
+This assumption corresponds to the observations being corrupted with zero-mean Gaussian noise with variance . The iid assumption makes it possible to factorize the likelihood function over the data points given the set of inputs  and the variance of the noise , and thus the posterior distribution can be computed analytically. For a test input vector , given the training data , the posterior distribution is given by
+
+where  denotes the set of parameters which include the variance of the noise  and any parameters from the covariance function  and where
+
+The connection between regularization and Bayes
+
+A connection between regularization theory and Bayesian theory can only be achieved in the case of finite dimensional RKHS. Under this assumption, regularization theory and Bayesian theory are connected through Gaussian process prediction.
+
+In the finite dimensional case, every RKHS can be described in terms of a feature map  such that
+
+Functions in the RKHS with kernel  can be then be written as
+
+and we also have that
+
+We can now build a Gaussian process by assuming  to be distributed according to a multivariate Gaussian distribution with zero mean and identity covariance matrix,
+
+If we assume a Gaussian likelihood we have
+
+where . The resulting posterior distribution is the given by
+
+We can see that a maximum posterior (MAP) estimate is equivalent to the minimization problem defining Tikhonov regularization, where in the Bayesian case the regularization parameter is related to the noise variance.
+
+From a philosophical perspective, the loss function in a regularization setting plays a different role than the likelihood function in the Bayesian setting. Whereas the loss function measures the error that is incurred when predicting  in place of , the likelihood function measures how likely the observations are from the model that was assumed to be true in the generative process. From a mathematical perspective, however, the formulations of the regularization and Bayesian frameworks make the loss function and the likelihood function to have the same mathematical role of promoting the inference of functions  that approximate the labels  as much as possible.

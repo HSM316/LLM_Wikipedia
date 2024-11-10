@@ -1,0 +1,57 @@
+An AI accelerator is a class of specialized hardware accelerator or computer system designed to accelerate artificial intelligence and machine learning applications, including artificial neural networks and machine vision. Typical applications include algorithms for robotics, internet of things, and other data-intensive or sensor-driven tasks. Google using its own AI accelerators. They are often manycore designs and generally focus on low-precision arithmetic, novel dataflow architectures or in-memory computing capability. , a typical AI integrated circuit chip contains billions of MOSFET transistors.
+A number of vendor-specific terms exist for devices in this category, and it is an emerging technology without a dominant design.
+
+ History 
+Computer systems have frequently complemented the CPU with special-purpose accelerators for specialized tasks, known as coprocessors. Notable application-specific hardware units include video cards for graphics, sound cards, graphics processing units and digital signal processors. As deep learning and artificial intelligence workloads rose in prominence in the 2010s, specialized hardware units were developed or adapted from existing products to accelerate these tasks.
+
+ Early attempts 
+First attempts like Intel's ETANN 80170NXJohn C. Dvorak: Intel’s 80170 chip has the theoretical intelligence of a cockroach in PC Magazine Volume 9 Number 10 (May 1990), p. 77, , retrieved May 16, 2021 incorporated analog circuits to compute neural functions. Another example for chips of this category is ANNA, a neural net CMOS accelerator developed by Yann LeCun. Later all digital chips like Nestor/Intel Ni1000 followed. As early as 1993, digital signal processors were used as neural network accelerators e.g. to accelerate optical character recognition software. In the 1990s, there were also attempts to create parallel high-throughput systems for workstations aimed at various applications, including neural network simulations.This presentation covers a past attempt at neural net accelerators, notes the similarity to the modern SLI GPGPU processor setup, and argues that general purpose vector accelerators are the way forward (in relation to RISC-V hwacha project. Argues that NN's are just dense and sparse matrices, one of several recurring algorithms) FPGA-based accelerators were also first explored in the 1990s for both inference and training. Smartphones began incorporating AI accelerators starting with the Qualcomm Snapdragon 820 in 2015.
+
+ Heterogeneous computing 
+Heterogeneous computing refers to incorporating a number of specialized processors in a single system, or even a single chip, each optimized for a specific type of task. Architectures such as the Cell microprocessor have features significantly overlapping with AI accelerators including: support for packed low precision arithmetic, dataflow architecture, and prioritizing 'throughput' over latency. The Cell microprocessor was subsequently applied to a number of tasks including AI.
+
+In the 2000s, CPUs also gained increasingly wide SIMD units, driven by video and gaming workloads; as well as support for packed low-precision data types. Due to increasing performance of CPUs, they are also being used for running AI workloads. CPUs are superior for DNNs with DNNs with small or medium-scale parallelism, for sparse DNNs and in low-batch-size scenarios.
+
+ Use of GPU 
+Graphics processing units or GPUs are specialized hardware for the manipulation of images and calculation of local image properties. The mathematical basis of neural networks and image manipulation are similar, embarrassingly parallel tasks involving matrices, leading GPUs to become increasingly used for machine learning tasks. , GPUs are popular for AI work, and they continue to evolve in a direction to facilitate deep learning, both for training and inference in devices such as self-driving cars. GPU developers such as Nvidia NVLink are developing additional connective capability for the kind of dataflow workloads AI benefits from. As GPUs have been increasingly applied to AI acceleration, GPU manufacturers have incorporated neural network-specific hardware to further accelerate these tasks."A Survey on Optimized Implementation of Deep Learning Models on the NVIDIA Jetson Platform", 2019 Tensor cores are intended to speed up the training of neural networks.
+
+ Use of FPGAs 
+Deep learning frameworks are still evolving, making it hard to design custom hardware. Reconfigurable devices such as field-programmable gate arrays (FPGA) make it easier to evolve hardware, frameworks, and software alongside each other.
+
+Microsoft has used FPGA chips to accelerate inference.
+
+ Emergence of dedicated AI accelerator ASICs 
+While GPUs and FPGAs perform far better than CPUs for AI related tasks, a factor of up to 10 in efficiency may be gained with a more specific design, via an application-specific integrated circuit (ASIC). These accelerators employ strategies such as optimized memory use and the use of lower precision arithmetic to accelerate calculation and increase throughput of computation. Some adopted low-precision floating-point formats used AI acceleration are half-precision and the bfloat16 floating-point format. Companies such as Google, Qualcomm, Amazon, Apple, Facebook, AMD and Samsung are all designing their own AI ASICs.
+
+ In-memory computing architectures 
+
+In June 2017, IBM researchers announced an architecture in contrast to the Von Neumann architecture based on in-memory computing and phase-change memory arrays applied to temporal correlation detection, intending to generalize the approach to heterogeneous computing and massively parallel systems. In October 2018, IBM researchers announced an architecture based on in-memory processing and modeled on the human brain's synaptic network to accelerate deep neural networks. The system is based on phase-change memory arrays.
+
+ In-memory computing with analog resistive memories 
+In 2019 researchers from Politecnico di Milano found a way to solve systems of linear equations in a few tens of nanoseconds via a single operation. Their algorithm is based on in-memory computing with analog resistive memories which performs with high efficiencies of time and energy, via conducting matrix-vector multiplication in one step using Ohm's law and Kirchhoff's law. The researchers showed that a feedback circuit with cross-point resistive memories can solve algebraic problems such as systems of linear equations, matrix eigenvectors, and differential equations in just one step. Such an approach improves computational times drastically in comparison with digital algorithms.
+
+ Atomically thin semiconductors 
+
+In 2020, Marega et al. published experiments with a large-area active channel material for developing logic-in-memory devices and circuits based on floating-gate field-effect transistors (FGFETs). Such atomically thin semiconductors are considered promising for energy-efficient machine learning applications, where the same basic device structure is used for both logic operations and data storage. The authors used two-dimensional materials such as semiconducting molybdenum disulfide.
+
+ Integrated photonic tensor core 
+
+In 2021, J. Feldmann et al. proposed an integrated photonic hardware accelerator for parallel convolutional processing. The authors identify two key advantages of integrated photonics over its electronic counterparts: (1) massively parallel data transfer through wavelength division multiplexing in conjunction with frequency combs, and (2) extremely high data modulation speeds. Their system can execute trillions of multiply-accumulate operations per second, indicating the potential of integrated photonics in data-heavy AI applications.
+
+ Nomenclature 
+
+As of 2016, the field is still in flux and vendors are pushing their own marketing term for what amounts to an "AI accelerator", in the hope that their designs and APIs will become the dominant design. There is no consensus on the boundary between these devices, nor the exact form they will take; however several examples clearly aim to fill this new space, with a fair amount of overlap in capabilities.
+
+In the past when consumer graphics accelerators emerged, the industry eventually adopted Nvidia's self-assigned term, "the GPU", as the collective noun for "graphics accelerators", which had taken many forms before settling on an overall pipeline implementing a model presented by Direct3D.
+
+ Potential applications 
+Agricultural robots, for example herbicide-free weed control.
+Autonomous vehicles: Nvidia has targeted their Drive PX-series boards at this application.
+Computer-aided diagnosis
+Industrial robots, increasing the range of tasks that can be automated, by adding adaptability to variable situations.
+Machine translation
+Military robots
+Natural-language processing
+Search engines, increasing the energy efficiency of data centers and ability to use increasingly advanced queries.
+Unmanned aerial vehicles, e.g. navigation systems, e.g. the Movidius Myriad 2 has been demonstrated successfully guiding autonomous drones.
+Voice user interface, e.g. in mobile phones, a target for Qualcomm Zeroth.

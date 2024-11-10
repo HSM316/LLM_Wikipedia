@@ -1,0 +1,47 @@
+The Mona Lisa with DeepDream effect using VGG16 network trained on ImageNet
+
+DeepDream is a computer vision program created by Google engineer Alexander Mordvintsev that uses a convolutional neural network to find and enhance patterns in images via algorithmic pareidolia, thus creating a dream-like appearance reminiscent of a psychedelic experience in the deliberately overprocessed images.
+
+Google's program popularized the term (deep) "dreaming" to refer to the generation of images that produce desired activations in a trained deep network, and the term now refers to a collection of related approaches.
+
+History
+The DeepDream software, originated in a deep convolutional network codenamed "Inception" after the film of the same name, was developed for the ImageNet Large-Scale Visual Recognition Challenge (ILSVRC) in 2014 and released in July 2015.
+
+The dreaming idea and name became popular on the internet in 2015 thanks to Google's DeepDream program.  The idea dates from early in the history of neural networks, and similar methods have been used to synthesize visual textures.
+Related visualization ideas were developed (prior to Google's work) by several research groups.
+
+After Google published their techniques and made their code open-source, a number of tools in the form of web services, mobile applications, and desktop software appeared on the market to enable users to transform their own photos.
+
+Process
+
+The software is designed to detect faces and other patterns in images, with the aim of automatically classifying images. However, once trained, the network can also be run in reverse, being asked to adjust the original image slightly so that a given output neuron (e.g. the one for faces or certain animals) yields a higher confidence score. This can be used for visualizations to understand the emergent structure of the neural network better, and is the basis for the DeepDream concept. This reversal procedure is never perfectly clear and unambiguous because it utilizes a one-to-many mapping process. However, after enough reiterations, even imagery initially devoid of the sought features will be adjusted enough that a form of pareidolia results, by which psychedelic and surreal images are generated algorithmically. The optimization resembles backpropagation; however, instead of adjusting the network weights, the weights are held fixed and the input is adjusted.
+
+For example, an existing image can be altered so that it is "more cat-like", and the resulting enhanced image can be again input to the procedure. This usage resembles the activity of looking for animals or other patterns in clouds.
+
+Applying gradient descent independently to each pixel of the input produces images in which
+adjacent pixels have little relation and thus the image has too much high frequency information.
+The generated images can be greatly improved by including a prior or regularizer that prefers inputs
+that have natural image statistics (without a preference for any particular image), or are simply smooth.
+For example, Mahendran et al. used the total variation regularizer that prefers images that are piecewise constant. Various regularizers are discussed further in Yosinski et al. An in-depth, visual exploration of feature visualization and regularization techniques was published more recently.
+
+The cited resemblance of the imagery to LSD- and psilocybin-induced hallucinations is suggestive of a functional resemblance between artificial neural networks and particular layers of the visual cortex.
+
+Neural networks such as DeepDream have biological analogies providing insight into brain processing and the formation of consciousness. Hallucinogens such as DMT alter the function of the serotonergic system which is present within the layers of the visual cortex. Neural networks are trained on input vectors and are altered by internal variations during the training process. The input and internal modifications represent the processing of exogenous and endogenous signals respectively in the visual cortex. As internal variations are modified in deep neural networks the output image reflect these changes. This specific manipulation demonstrates how inner brain mechanisms are analogous to internal layers of neural networks. Internal noise level modifications represent how hallucinogens omit external sensory information leading internal preconceived conceptions to strongly influence visual perception.
+
+Usage
+left|A heavily DeepDream-processed photograph of three men in a pool
+The dreaming idea can be applied to hidden (internal) neurons other than those in the output, 
+which allows exploration of the roles and representations of various parts of the network.
+It is also possible to optimize the input to satisfy either a single neuron (this usage is sometimes called Activity Maximization) or an entire layer of neurons.
+
+While dreaming is most often used for visualizing networks or producing computer art, it has recently been proposed that adding "dreamed" inputs to the training set can improve training times for abstractions in Computer Science.
+
+The DeepDream model has also been demonstrated to have application in the field of art history.
+
+DeepDream was used for Foster the People's music video for the song "Doing It for the Money".
+
+In 2017, a research group out of the University of Sussex created a Hallucination Machine, applying the DeepDream algorithm to a pre-recorded panoramic video, allowing users to explore virtual reality environments to mimic the experience of psychoactive substances and/or psychopathological conditions.  They were able to demonstrate that the subjective experiences induced by the Hallucination Machine differed significantly from control (non-‘hallucinogenic’) videos, while bearing phenomenological similarities to the psychedelic state (following administration of psilocybin).
+
+In 2021, a study published in the journal Entropy demonstrated the similarity between DeepDream and actual psychedelic experience with neuroscientific evidence. The authors recorded Electroencephalography (EEG) of human participants during passive vision of a movie clip and its DeepDream-generated counterpart. They found that DeepDream video triggered a higher entropy in the EEG signal and a higher level of functional connectivity between brain areas, both well-known biomarkers of actual psychedelic experience.
+
+In 2022, a research group coordinated by the University of Trento "measure[d] participants’ cognitive flexibility and creativity after the exposure to virtual reality panoramic videos and their hallucinatory-like counterparts generated by the DeepDream algorithm ... following the simulated psychedelic exposure, individuals exhibited ... an attenuated contribution of the automatic process and chaotic dynamics underlying their decision processes, presumably due to a reorganization in the cognitive dynamics that facilitates the exploration of uncommon decision strategies and inhibits automated choices."

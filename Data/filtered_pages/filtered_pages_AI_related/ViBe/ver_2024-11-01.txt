@@ -1,0 +1,20 @@
+ViBe is a background subtraction algorithm which has been presented at the IEEE ICASSP 2009 conference and was refined in later publications. More precisely, it is a software module for extracting background information from moving images. It has been developed by Oliver Barnich and Marc Van Droogenbroeck of the  Montefiore Institute, University of Liège, Belgium.
+
+ViBe is patented:World Intellectual Property Organization. ViBe patents the patent covers various aspects such as stochastic replacement, spatial diffusion, and non-chronological handling.
+
+ViBe is written in the programming language C, and has been implemented on CPU, GPU and FPGA.Kryjak, Tomasz; Gorgon, Marek. "Real-time Implementation of the ViBe Foreground Object Segmentation Algorithm". In Proceedings of the 2013 Federated Conference on Computer Science and Information Systems (FedCSIS) pp. 591–596
+
+ Technical description 
+
+ Pixel model and classification process 
+Many advanced techniques are used to provide an estimate of the temporal probability density function (pdf) of a pixel x. ViBe's approach is different, as it imposes the influence of a value in the polychromatic space to be limited to the local neighborhood. In practice, ViBe does not estimate the pdf, but uses a set of previously observed sample values as a pixel model. To classify a value pt(x), it is compared to its closest values among the set of samples.
+
+ Model update: Sample values lifespan policy 
+ViBe ensures a smooth exponentially decaying lifespan for the sample values that constitute the pixel models. This makes ViBe able to successfully deal with concomitant events with a single model of a reasonable size for each pixel. This is achieved by choosing, randomly, which sample to replace when updating a pixel model. Once the sample to be discarded has been chosen, the new value replaces the discarded sample. The pixel model that would result from the update of a given pixel model with a given pixel sample cannot be predicted since the value to be discarded is chosen at random.
+
+ Model update: Spatial Consistency 
+To ensure the spatial consistency of the whole image model and handle practical situations such as small camera movements or slowly evolving background objects, ViBe uses a technique similar to that developed for the updating process in which it chooses at random and update a pixel model in the neighborhood of the current pixel. By denoting NG(x) and p(x) respectively the spatial neighborhood of a pixel x and its value, and assuming that it was decided to update the set of samples of x by inserting p(x), then ViBe also use this value p(x) to update the set of samples of one of the pixels in the neighborhood NG(x), chosen at random. As a result, ViBe is able to produce spatially coherent results directly without the use of any post-processing method.
+
+ Model initialization 
+Although the model could easily recover from any type of initialization, for example by choosing a set of random values, it is convenient to get an accurate background estimate as soon as possible. Ideally a segmentation algorithm would like to be able to segment the video sequences starting from the second frame, the first frame being used to initialize the model. Since no temporal information is available prior to the second frame, ViBe populates the pixel models with values found in the spatial neighborhood of each pixel; more precisely, it initializes the background model with values taken randomly in each pixel neighborhood of the first frame. The background
+estimate is therefore valid starting from the second frame of a video sequence.

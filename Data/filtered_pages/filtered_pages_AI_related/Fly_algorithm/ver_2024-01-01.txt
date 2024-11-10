@@ -1,0 +1,172 @@
+ History 
+
+The Fly Algorithm is a type of cooperative coevolution based on the Parisian approach. The Fly Algorithm has first been developed in 1999 in the scope of the application of Evolutionary algorithms to computer stereo vision. Unlike the classical image-based approach to stereovision, which extracts image primitives then matches them in order to obtain 3-D information, the Fly Agorithm is based on the direct exploration of the 3-D space of the scene. A fly is defined as a 3-D point described by its coordinates (x, y, z). Once a random population of flies has been created in a search space corresponding to the field of view of the cameras, its evolution (based on the Evolutionary Strategy paradigm) used a fitness function that evaluates how likely the fly is lying on the visible surface of an object, based on the consistency of its image projections. To this end, the fitness function uses the grey levels, colours and/or textures of the calculated fly's projections.
+
+The first application field of the Fly Algorithm has been stereovision. While classical `image priority' approaches use matching features from the stereo images in order to build a 3-D model, the Fly Algorithm directly explores the 3-D space and uses image data to evaluate the validity of 3-D hypotheses. A variant called the "Dynamic Flies" defines the fly as a 6-uple (x, y, z, x’, y’, z’) involving the fly's velocity. The velocity components are not explicitly taken into account in the fitness calculation but are used in the flies' positions updating and are subject to similar genetic operators (mutation, crossover).
+
+The application of Flies to obstacle avoidance in vehicles exploits the fact that the population of flies is a time compliant, quasi-continuously evolving representation of the scene to directly generate vehicle control signals from the flies. The use of the Fly Algorithm is not strictly restricted to stereo images, as other sensors may be added (e.g. acoustic proximity sensors, etc.) as additional terms to the fitness function being optimised. Odometry information can also be used to speed up the updating of flies' positions, and conversely the flies positions can be used to provide localisation and mapping information.
+
+Another application field of the Fly Algorithm is reconstruction for emission Tomography in nuclear medicine. The Fly Algorithm has been successfully applied in single-photon emission computed tomography and positron emission tomography
+. Here, each fly is considered a photon emitter and its fitness is based on the conformity of the simulated illumination of the sensors with the actual pattern observed on the sensors. Within this application, the fitness function has been re-defined to use the new concept of 'marginal evaluation'. Here, the fitness of one individual is calculated as its (positive or negative) contribution to the quality of the global population. It is based on the leave-one-out cross-validation principle. A global fitness function evaluates the quality of the population as a whole; only then the fitness of an individual (a fly) is calculated as the difference between the global fitness values of the population with and without the particular fly whose individual fitness function  has to be evaluated. In  the fitness of each fly is considered as a `level of confidence'. It is used during the voxelisation process to tweak the fly's individual footprint using implicit modelling (such as metaballs). It produces smooth results that are more accurate.
+
+More recently it has been used in digital art to generate mosaic-like images or spray paint. Examples of images can be found on YouTube
+
+ Parisian evolution 
+
+Here, the population of individuals is considered as a society where the individuals collaborate toward a common goal. 
+This is implemented using an evolutionary algorithm that includes all the common genetic operators (e.g. mutation, cross-over, selection). 
+The main difference is in the fitness function. 
+Here two levels of fitness function are used:
+ A local fitness function to assess the performance of a given individual (usually used during the selection process).
+ A global fitness function to assess the performance of the whole population. Maximising (or minimising depending on the problem considered) this global fitness is the goal of the population.
+In addition, a diversity mechanism is required to avoid individuals gathering in only a few areas of the search space. 
+Another difference is in the extraction of the problem solution once the evolutionary loop terminates. In classical evolutionary approaches, the best individual corresponds to the solution and the rest of the population is discarded. 
+Here, all the individuals (or individuals of a sub-group of the population) are collated to build the problem solution.
+The way the fitness functions are constructed and the way the solution extraction is made are of course problem-dependent.
+
+Examples of Parisian Evolution applications include:
+ The Fly algorithm.
+ Text-mining.
+ Hand gesture recognition.
+ Modelling complex interactions in industrial agrifood process.
+ Positron Emission Tomography reconstruction.
+
+ Disambiguation 
+
+ Parisian approach vs cooperative coevolution 
+
+Cooperative coevolution is a broad class of evolutionary algorithms where a complex problem is solved by decomposing it into subcomponents that are solved independently. 
+The Parisian approach shares many similarities with the cooperative coevolutionary algorithm. The Parisian approach makes use of a single-population whereas multi-species may be used in cooperative coevolutionary algorithm. 
+Similar internal evolutionary engines are considered in classical evolutionary algorithm, cooperative coevolutionary algorithm and Parisian evolution. 
+The difference between cooperative coevolutionary algorithm and Parisian evolution resides in the population's semantics. 
+Cooperative coevolutionary algorithm divides a big problem into sub-problems (groups of individuals) and solves them separately toward the big problem. There is no interaction/breeding between individuals of the different sub-populations, only with individuals of the same sub-population. 
+However, Parisian evolutionary algorithms solve a whole problem as a big component. 
+All population's individuals cooperate together to drive the whole population toward attractive areas of the search space.
+
+ Fly Algorithm vs particle swarm optimisation 
+Cooperative coevolution and particle swarm optimisation (PSO) share many similarities. PSO is inspired by the social behaviour of bird flocking or fish schooling. 
+It was initially introduced as a tool for realistic animation in computer graphics. 
+It uses complex individuals that interact with each other in order to build visually realistic collective behaviours through adjusting the individuals' behavioural rules (which may use random generators). 
+In mathematical optimisation, every particle of the swarm somehow follows its own random path biased toward the best particle of the swarm. 
+In the Fly Algorithm, the flies aim at building spatial representations of a scene from actual sensor data; flies do not communicate or explicitly cooperate, and do not use any behavioural model.
+
+Both algorithms are search methods that start with a set of random solutions, which are iteratively corrected toward a global optimum. 
+However, the solution of the optimisation problem in the Fly Algorithm is the population (or a subset of the population): The flies implicitly collaborate to build the solution. In PSO the solution is a single particle, the one with the best fitness. Another main difference between the Fly Algorithm and with PSO is that the Fly Algorithm is not based on any behavioural model but only builds a geometrical representation.
+
+ Applications of the Fly algorithnm 
+ Computer stereo vision
+ Obstacle avoidance
+ Simultaneous localization and mapping (SLAM)
+ Single-photon emission computed tomography (SPECT) reconstruction 
+ Positron emission tomography (PET) reconstruction 
+ Digital art
+
+ Example: Tomography reconstruction 
+
+Tomography reconstruction is an inverse problem that is often ill-posed due to missing data and/or noise. The answer to the inverse problem is not unique, and in case of extreme noise level it may not even exist. The input data of a reconstruction algorithm may be given as the Radon transform or sinogram  of the data to reconstruct .  is unknown;  is known. 
+The data acquisition in tomography can be modelled as:
+
+where  is the system matrix or projection operator and  corresponds to some Poisson noise. 
+In this case the reconstruction corresponds to the inversion of the Radon transform:
+
+Note that  can account for noise, acquisition geometry, etc. 
+The Fly Algorithm is an example of iterative reconstruction. Iterative methods in tomographic reconstruction are relatively easy to model:
+
+where  is an estimate of , that minimises an error metrics (here -norm, but other error metrics could be used) between  and . Note that a regularisation term can be introduced to prevent overfitting and to smooth noise whilst preserving edges. 
+Iterative methods can be implemented as follows:
+512x122px|right|Iterative correction in tomography reconstruction.
+   (i) The reconstruction starts using an initial estimate of the image (generally a constant image),
+   (ii) Projection data is computed from this image,
+   (iii) The estimated projections are compared with the measured projections,
+   (iv) Corrections are made to correct the estimated image, and
+   (v) The algorithm iterates until convergence of the estimated and measured projection sets.
+
+The pseudocode below is a step-by-step description of the Fly Algorithm for tomographic reconstruction. The algorithm follows the steady-state paradigm. For illustrative purposes, advanced genetic operators, such as mitosis, dual mutation, etc. are ignored. A JavaScript implementation can be found on Fly4PET.
+
+ algorithm fly-algorithm is
+     input: number of flies (N), 
+            input projection data (preference)
+     
+     output: the fly population (F), 
+             the projections estimated from F (pestimated)
+             the 3-D volume corresponding to the voxelisation of F (VF)
+     
+     postcondition: the difference between pestimated and preference is minimal.
+     
+     START
+     
+  1.   // Initialisation
+  2.   // Set the position of the N flies, i.e. create initial guess
+  3.   for each fly i in fly population F do
+  4.       F(i)x ← random(0, 1)
+  5.       F(i)y ← random(0, 1)
+  6.       F(i)z ← random(0, 1)
+  7.       Add F(i)'s projection in pestimated
+  8.   
+  9.   // Compute the population's performance (i.e. the global fitness)
+ 10.   Gfitness(F) ← Errormetrics(preference, pestimated)
+ 11.    
+ 12.   fkill ← Select a random fly of F
+ 13.    
+ 14.   Remove fkill's contribution from pestimated
+ 15.    
+ 16.   // Compute the population's performance without fkill
+ 17.   Gfitness(F-{fkill}) ← Errormetrics(preference, pestimated)
+ 18.    
+ 19.   // Compare the performances, i.e. compute the fly's local fitness
+ 20.   Lfitness(fkill) ← Gfitness(F-{fkill}) - Gfitness(F)
+ 21.    
+ 22.   If the local fitness is greater than 0, // Thresholded-selection of a bad fly that can be killed
+ 23.       then go to Step 26.   // fkill is a good fly (the population's performance is better when fkill is included): we should not kill it
+ 24.       else go to Step 28.   // fkill is a bad fly (the population's performance is worse when fkill is included): we can get rid of it
+ 25.    
+ 26.   Restore the fly's contribution, then go to Step 12.
+ 27.    
+ 28.   Select a genetic operator
+ 29.    
+ 30.   If the genetic operator is mutation,
+ 31.       then go to Step 34.
+ 32.       else go to Step 50.
+ 33.    
+ 34.   freproduce ← Select a random fly of F
+ 35.    
+ 14.   Remove freproduce's contribution from pestimated
+ 37.    
+ 38.   // Compute the population's performance without freproduce
+ 39.   Gfitness(F-{freproduce}) ← Errormetrics(preference, pestimated)
+ 40.    
+ 41.   // Compare the performances, i.e. compute the fly's local fitness
+ 42.   Lfitness(freproduce) ← Gfitness(F-{freproduce}) - Gfitness(F)
+ 43.    
+ 44.   Restore the fly's contribution
+ 45.    
+ 46.   If the local fitness is lower than or equal to 0, // Thresholded-selection of a good fly that can reproduce
+ 47.       else go to Step 34.   // freproduce is a bad fly: we should not allow it to reproduce
+ 48.       then go to Step 53.   // freproduce is a good fly: we can allow it to reproduce
+ 49.    
+ 50.   // New blood / Immigration
+ 51.   Replace fkill by a new fly with a random position, go to Step 57.
+ 52.    
+ 53.   // Mutation
+ 54.   Copy freproduce into fkill
+ 55.   Slightly and randomly alter fkill's position
+ 56.    
+ 57.   Add the new fly's contribution to the population
+ 58.    
+ 59.   If stop the reconstruction,
+ 60.       then go to Step 63.
+ 61.       else go to Step 10.
+ 62.    
+ 63.   // Extract solution
+ 64.   VF ← voxelisation of F
+ 65.    
+ 66.   return VF
+    
+    END
+
+ Example: Digital arts 
+
+In this example, an input image is to be approximated by a set of tiles (for example as in an ancient mosaic). A tile has an orientation (angle θ), a three colour components (R, G, B), a size (w, h) and a position (x, y, z). If there are N tiles, there are 9N unknown floating point numbers to guess. In other words for 5,000 tiles, there are 45,000 numbers to find. Using a classical evolutionary algorithm where the answer of the optimisation problem is the best individual, the genome of an individual would be made up of 45,000 genes. This approach would be extremely costly in term of complexity and computing time. The same applies for any classical optimisation algorithm. Using the Fly Algorithm, every individual mimics a tile and can be individually evaluated using its local fitness to assess its contribution to the population's performance (the global fitness). Here an individual has 9 genes instead of 9N, and there are N individuals. It can be solved as a reconstruction problem as follows:
+
+where  is the input image,  and  are the pixel coordinates along the horizontal and vertical axis respectively,  and  are the image width and height in number of pixels respectively,  is the fly population, and  is a projection operator that creates an image from flies. This projection operator  can take many forms. In her work, Z. Ali Aboodd  uses OpenGL to generate different effects (e.g. mosaics, or spray paint). For speeding up the evaluation of the fitness functions, OpenCL is used too.
+The algorithm starts with a population  that is randomly generated (see Line 3 in the algorithm above).  is then assessed using the global fitness to compute  (see Line 10).  is the objective function that has to be minimized.

@@ -1,0 +1,7 @@
+Quadratic unconstrained binary optimization (QUBO) is a pattern matching technique, common in machine learning applications. QUBO is an NP hard problem. Examples of problems that can be formulated as QUBO problems are the Maximum cut, Graph coloring and the Partition problem.
+
+QUBO problems may sometimes be well-suited to algorithms aided by quantum annealing.
+
+QUBO is the problem of minimizing a quadratic polynomial over binary variables.  The quadratic polynomial will be of the form 
+
+with  and .

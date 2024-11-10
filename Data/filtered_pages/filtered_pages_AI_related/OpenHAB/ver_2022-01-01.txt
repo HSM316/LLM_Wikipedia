@@ -1,0 +1,76 @@
+open Home Automation Bus (openHAB) is an open source home automation software written in Java. It is deployed on premises and connects to devices and services from different vendors. As of 2019, close to 300 bindings are available as OSGi modules. Actions, such as switching on lights, are triggered by rules, voice commands, or controls on the openHAB user interface.
+The openHAB project started in 2010. In 2013, the core functionality became an official project of the Eclipse Foundation under the name Eclipse SmartHome. openHAB is based on Eclipse SmartHome and remains the project for the development of bindings.
+According to Black Duck Open Hub, it is developed by one of the largest open-source teams in the world. It also has an active user community.
+
+ Features 
+
+ Installation and runtime 
+
+openHAB requires a JVM and can be deployed on servers running various operating systems, a dedicated Raspberry Pi instance, or some network-attached storage systems. The required bindings can be added at runtime via OSGi. openHAB supports a number of persistence backends for storing and querying the smart home data, including relational and time series databases.
+
+ Discovery and configuration 
+
+After installation, openHAB scans the local network and discovers devices that can be included in the smart home solution. Users can provide credentials and meaningful device names via an administration user interface.
+
+ Things and Items 
+Since major version 2 of OpenHAB the connections to physical devices is split in 2 levels. "Things" are the interface elements to a specific physical device (e.g. an interface to a home automation network like KNX, Z-Wave or ZigBee). Within these things, one or more "Items" can then be defined or discovered. These "Items" correspond to one specific component like a relay controlling a light, the desired temperature of a heating system or a dimmer percentage.
+
+ Sitemaps 
+
+Sitemaps allow the user to determine how the devices in the smart home are arranged. A sitemap groups devices by floor and room and determines how they are visualized and controlled. The following example illustrates what a typical sitemap definition might look like:
+
+sitemap demo label="My home automation" {
+    Frame label="Date" {
+        Text item=Date
+    }
+    Frame label="Demo" {
+        Switch item=Lights icon="light"
+        Text item=LR_Temperature label="Livingroom [%.1f °C]"
+        Group item=Heating
+        Text item=LR_Multimedia_Summary label="Multimedia [%s]" icon="video" {
+            Selection item=LR_TV_Channel mappings=[0="off", 1="DasErste", 2="BBC One", 3="Cartoon Network"]
+            Slider item=LR_TV_Volume
+        }
+    }
+}
+
+ User Interface 
+
+Once the system is configured, openHAB users can view data and perform actions using a number of user interfaces. These include a browser based interface as well as apps for Android, Windows 10, and iOS. All of these UIs are defined by the sitemap mechanism.
+
+ Rules 
+
+An event, condition, action rule-based system is used to automate the smart home. The following example turns off a light once the sun rises at the configured location.
+
+rule "Start wake up light on sunrise"
+when
+    Channel "astro:sun:home:rise#event" triggered
+then
+    switch(receivedEvent.getEvent()) {
+        case "START": {
+            Light.sendCommand(OFF)
+        }
+    }
+end
+
+ openHAB Cloud 
+
+openHAB Cloud is a companion cloud service and backend for openHAB. It provides secure remote access and enables openHAB users to remotely monitor, control and steer their homes through the internet. The openHAB foundation provides a demo system without SLA guarantees.
+
+ Version 3 Improvements 
+
+In 2020, the code was forked for a major rework, separating to 2.5 version from the upcoming 3.0 branch.Development of openHAB 3.0.0 and 2.5.x Apart from some technical code changes (e.g. use of java 11), several functional improvements are foreseen:
+ the UI is unified, and pages (previously managed in sitemaps) are now managed in the OpenHAB designer.
+ User and group management will be available to control who can use specific parts of the UI.
+ Rules and scripts are extended and can be edited directly in de OpenHAB designer.
+The main drawback is that backward compatibility to OpenHAB add-ons for version 1 is dropped.
+
+Version 3.0 has been released 21 December 2020.
+
+ Security 
+
+Many security and privacy concerns have been raised with home automation and IoT in general. openHAB’s on-premises engine and open source character are answers to these concerns. However, it was criticized for its use of default configurations.
+
+ Reception 
+
+openHAB won the IoT Challenge 2013 and the JavaOne Duke’s Choice Award 2013. It was nominated for the JAX Innovation Award 2014 and was the People's Choice Winner at the Postscapes IoT Awards 2014/15. openHAB was also included in a number of product and platform comparisons.

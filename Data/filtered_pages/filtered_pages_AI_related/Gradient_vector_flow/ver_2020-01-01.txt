@@ -1,0 +1,21 @@
+Gradient Vector Flow
+
+Gradient vector flow (GVF), a computer vision framework introduced by Chenyang Xu and Jerry L. Prince 
+ C. Xu and J.L. Prince, "Gradient Vector Flow: A New External Force for Snakes," Proc. IEEE Conf. on Comp. Vis. Patt. Recog. (CVPR), Los Alamitos: Comp. Soc. Press, pp. 66–71, June 1997, http://iacl.ece.jhu.edu/pubs/p087c.pdf
+, is the vector field that is produced by a process that smooths and diffuses an input vector field, and is usually used to create a vector field that points to object edges from a distance.   It's widely used in object tracking, shape recognition, segmentation, and edge detection.  In particular, it's commonly used in conjunction with active contour model.
+
+Results from Gradient Vector Flow algorithm applied to 3-D Metasphere data
+
+Background
+
+Finding objects or homogeneous regions in images is a process known as image segmentation. In many applications, the locations of object edges can be estimated using local operators that yield a new image called an edge map. The edge map can then be used to guide a deformable model, sometimes called an
+active contour or a snake, so that it passes through the edge map in a smooth way, therefore defining the object itself.
+
+A common way to encourage a deformable model to move toward the edge map is to take the spatial gradient of the edge map, yielding a vector field.  Since the edge map has its highest intensities directly on the edge and drops to zero away from the edge, these gradient vectors provide directions for the active contour to move. When the gradient vectors are zero, the active contour will not move, and this is the correct behavior when the contour rests on the peak of the edge map itself. However, because the edge itself is defined by local operators, these gradient vectors will also be zero far away from the edge and therefore the active contour will not move toward the edge when initialized far away from the edge.
+
+Related Concepts
+
+ Deformable models
+ Active contour model
+ Snakes: Active Contours, CVOnline
+ Edge detection

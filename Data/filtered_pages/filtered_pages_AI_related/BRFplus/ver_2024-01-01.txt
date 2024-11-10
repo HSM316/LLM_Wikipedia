@@ -1,0 +1,65 @@
+BRFplus (Business Rule Framework plus) is a business rule management system (BRMS) offered by SAP AG. BRFplus is part of the SAP NetWeaver ABAP stack. Therefore, all SAP applications that are based on SAP NetWeaver can access BRFplus within the boundaries of an SAP system. However, it is also possible to generate web services so that BRFplus rules can also be offered as a service in a SOA landscape, regardless of the software platform used by the service consumers.
+
+BRFplus development started as a supporting tool that was part of SAP Business ByDesign, an ERP solution targeted at small and medium size companies. By that time, the tool was called "Formula and Derivation Tool" (FDT). Later on, it was decided to maintain BRFplus on those codelines that serve as the basis for SAP Business Suite. With that, business rules that have been created for Business ByDesign can easily be taken over in a full-size SAP system where they are ready for use without any changes.
+
+ Overview 
+BRFplus offers a unified modeling and runtime environment for business rules that addresses both technical users (programmers, system administrators) as well as business users who take care of operational business processes (like procurement, bidding, tax form validation, etc.). The different requirements and usage scenarios of the different target groups can be covered with the help of the SAP authorization system and a user interface that can be individually customized.
+
+Being integrated into SAP NetWeaver, BRFplus-based applications can look at, and model, business rules from a strictly business-oriented perspective, rather than starting with the underlying technical artifacts. This is because the integration allows for direct access to the business objects available in the SAP dictionary (like customer, supplier, material, bill, etc.).
+
+In addition to the predefined expression types (decision table, decision tree, formula, database access, loops, etc.) and actions (sending e-mails, triggering a workflow, etc.), BRFplus can be extended by custom expression types. Also, direct calls of function modules as well as ABAP OO class methods are supported so that the entire range of the ABAP programming language is available for solving business tasks.
+
+BRFplus comes with an optional versioning mechanism. Versioning can be switched on and off for individual objects as well as for entire applications. Versioned business rules are needed in certain use cases for legal reasons, but they also allow for simulating the system behavior as it would have been at a particular point in time.
+
+Once the rule objects are in a consistent state and active, the system automatically generates ABAP OO classes that encapsulate the functional scope of the underlying rule object. This is done on an on-demand base and speeds up processing.
+
+The execution of functions as well as of single expressions can be simulated. The processing log of the simulation is useful for checking the implementation and for investigating problems.
+
+BRFplus applications can be exported and imported as an XML file. This is an easy way of creating a data backup. XML files can also be used for deploying rule applications throughout the company.
+
+ Main object types 
+
+ Application 
+The application object serves as a container for all the BRFplus objects that have been assembled to solve a particular business task.  It is possible to define certain default settings on application level that are inherited by all objects that are created in the scope of that application.
+
+ Function 
+A function is used to connect a business application with the rule processing framework of BRFplus. The calling business application passes input values to the function which are then processed by the expressions and rulesets that are associated with the called function. The calculated result is then returned to the calling business application.
+
+ Expression types and action types 
+ Boolean
+ BRMS Connector
+ Case
+ Database Lookup
+ Decision Table
+ Decision Tree
+ Formula
+ Function Call
+ Loop
+ Procedure Call
+ Random Number
+ Search Tree
+ Step Sequence
+ Value Range1
+ XSL Transformation
+
+ Ruleset 
+A ruleset is a container for an arbitrary number of rule objects which in turn carry out the necessary calculations with the help of assigned expressions and actions. Instead of assigning an expression to a function, it is also possible to assign any number of rulesets to a function. When the function is called, all assigned rulesets are subsequently processed.
+
+ Data objects 
+BRFplus supports elementary data objects (text, number, boolean, time point, amount, quantity) as well as structures and tables. Structures can be nested. For all types of data objects it is possible to reference data objects that reside in the data dictionary of the backend system. With that, a BRFplus data object does not only inherit the type definition of the referenced object but can also access associated data like domain value lists or object documentation.
+
+ Other objects 
+With catalogs, it is possible to define business-specific subsets of the rule objects that reside in the system. This is helpful for hiding the complexity of a rule system, thus improving usability.
+
+Object filters are used by system administrators to ensure that for selected users, only a predefined subset of object types is visible. This is useful to enforce access rights as well as modeling policies.
+
+ Other BRM solutions offered by SAP 
+BRFplus is positioned as the successor product of an older business rule solution known as BRF (Business Rule Framework). For a longer transition phase, both solutions exist in parallel. However, an increasing number of SAP applications that used to be based on BRF are migrating to BRFplus.
+
+While BRFplus supports business rules for applications based on the SAP NetWeaver ABAP stack, SAP is offering another product named SAP NetWeaver Business Rules Management (BRM). BRM supports business rule modeling for the SAP NetWeaver Java stack. Both products do not compete. They are available in parallel and can be used in a collaborative approach to deal with use cases where both technology stacks are used in parallel. BRFplus comes with a special expression type that helps bridging the gap between the two different technologies.
+
+ Availability 
+BRFplus has been delivered to the public with SAP NetWeaver 7.0 Enhancement Package 1 for the first time. Being part of SAP NetWeaver, the usage of BRFplus is covered by the "SAP NetWeaver Foundation for Third Party Applications" license, with no additional costs.
+
+ Literature 
+Carsten Ziegler, Thomas Albrecht: BRFplus – Business Rule Management for ABAP Applications. Galileo Press 2011. 

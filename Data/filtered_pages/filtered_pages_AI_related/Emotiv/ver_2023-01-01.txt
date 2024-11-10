@@ -1,0 +1,31 @@
+Emotiv Inc. is a privately held bio-informatics and technology company developing and manufacturing wearable electroencephalography (EEG) products including neuroheadsets, software development kits (SDK), software, mobile apps, and data products. Founded in 2011 by Tan Le and Geoff Mackellar, the company is headquartered in San Francisco, U.S.A. with facilities in Sydney, Hanoi and Ho Chi Minh City.
+
+ History 
+Tan Le founded a separate company called Emotiv Systems with Nam Do, Allan Snyder, and Neil Weste, in Australia in 2003. The work resulted in the first version of the EPOC neuroheadset released in 2009, one of the first mobile EEG device available to the market.
+
+In 2010, Tan Le split from the partnership to establish a US entity Emotiv Lifesciences Inc. with Geoffrey Mackellar. In December 2013, Emotiv Lifesciences officially changed its name to Emotiv Inc.
+
+The original EPOC has been used  in research and shown to deliver acceptable quality EEG for research purposes. In particular, independent research groups at Macquarie University and Flinders University reported that it has comparable signal quality compared to other research-level devices.
+
+The company designed Emotiv Insight, a 5-channel headset and raised capital to develop and manufacture the device and supporting software via crowd funding site Kickstarter. The campaign raised $1,643,117 against the original target of $100,000 USD and earned an Edison Award in April 2014.
+
+In 2013, the company redesigned and released Emotiv EPOC+, a wireless, 14-channel mobile EEG system to target professional use in research and industrial applications with upgraded electronics including 9-axis inertial sensors, Bluetooth Smart and an improved power source.
+
+In October 2015, Emotiv Insight was made available for general release.
+
+In 2015, Emotiv joined the Disney/Techstars Accelerator program and presented at "Demo Day" in October the same year.
+
+ Business 
+
+ Current headset models 
+In 2013, Emotiv Inc. released EPOC+, which is a research-oriented wireless headset that records 14-channel EEG. Unlike conventional EEG systems that use sticky gels, it uses saline based wet sensors. There are two reference sensors at P3 and P4 locations. The EPOC+ measures both EEG and 9-axis motion data. Data is transmitted wirelessly through Bluetooth.
+
+The Emotiv Insight was made available for general release in 2015. It is a 5-channel wireless EEG device covering frontal, temporal and parieto-occipital locations around the brain. It is designed for everyday use by individuals looking to understand and improve their own brains. It utilizes proprietary polymer sensors that are hydrophilic; they pull moisture from the air and skin.
+
+ Software and SDK 
+Emotiv provides free companion app called Insight App for users to monitor their emotions. There are also pay-to-download games such as Arena which allows users to experience mental commands. EMOTIV provides a two-tier SDK for the EPOC: Community and Premium versions. The EMOTIV EPOC research & developer community has grown to over 70,000 people and spans globally
+
+The 14 channel wireless EPOC+ is designed for research and brain-computer interface use, and EEG can be obtained with an Emotiv Pure.EEG subscription.
+
+ Controversy 
+Emotiv has made access to raw data a separate paid option and implemented some countermeasures in order to deter creation of third-party software able to interoperate to headsets (more precisely their USB dongles, the project authors believe that the data flowing between a dongle and a headset is unencrypted) produced by Emotiv. Despite that, free software having access to the data captured by a headset has been created.

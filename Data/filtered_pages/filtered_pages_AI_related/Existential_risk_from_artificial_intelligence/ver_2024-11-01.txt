@@ -1,0 +1,249 @@
+Existential risk from artificial intelligence refers to the idea that substantial progress in artificial general intelligence (AGI) could lead to human extinction or an irreversible global catastrophe.
+
+One argument for the importance of this risk references how human beings dominate other species because the human brain possesses distinctive capabilities other animals lack. If AI were to surpass human intelligence and become superintelligent, it might become uncontrollable. Just as the fate of the mountain gorilla depends on human goodwill, the fate of humanity could depend on the actions of a future machine superintelligence.
+
+The plausibility of existential catastrophe due to AI is widely debated. It hinges in part on whether AGI or superintelligence are achievable, the speed at which dangerous capabilities and behaviors emerge, and whether practical scenarios for AI takeovers exist. Concerns about superintelligence have been voiced by computer scientists and tech CEOs such as Geoffrey Hinton, Yoshua Bengio, Alan Turing, Elon Musk, and OpenAI CEO Sam Altman. In 2022, a survey of AI researchers with a 17% response rate found that the majority believed there is a 10 percent or greater chance that human inability to control AI will cause an existential catastrophe. In 2023, hundreds of AI experts and other notable figures signed a statement declaring, "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war". Following increased concern over AI risks, government leaders such as United Kingdom prime minister Rishi Sunak and United Nations Secretary-General António Guterres called for an increased focus on global AI regulation.
+
+Two sources of concern stem from the problems of AI control and alignment. Controlling a superintelligent machine or instilling it with human-compatible values may be difficult. Many researchers believe that a superintelligent machine would likely resist attempts to disable it or change its goals as that would prevent it from accomplishing its present goals. It would be extremely challenging to align a superintelligence with the full breadth of significant human values and constraints., cited in  In contrast, skeptics such as computer scientist Yann LeCun argue that superintelligent machines will have no desire for self-preservation.
+
+A third source of concern is the possibility of a sudden "intelligence explosion" that catches humanity unprepared. In this scenario, an AI more intelligent than its creators would be able to recursively improve itself at an exponentially increasing rate, improving too quickly for its handlers or society at large to control. Empirically, examples like AlphaZero, which taught itself to play Go and quickly surpassed human ability, show that domain-specific AI systems can sometimes progress from subhuman to superhuman ability very quickly, although such machine learning systems do not recursively improve their fundamental architecture.
+
+History
+One of the earliest authors to express serious concern that highly advanced machines might pose existential risks to humanity was the novelist Samuel Butler, who wrote in his 1863 essay Darwin among the Machines:Breuer, Hans-Peter. 'Samuel Butler's "the Book of the Machines" and the Argument from Design.'  Modern Philology, Vol. 72, No. 4 (May 1975), pp. 365–383.
+
+In 1951, foundational computer scientist Alan Turing wrote the article "Intelligent Machinery, A Heretical Theory", in which he proposed that artificial general intelligences would likely "take control" of the world as they became more intelligent than human beings:
+
+In 1965, I. J. Good originated the concept now known as an "intelligence explosion" and said the risks were underappreciated:
+
+Scholars such as Marvin Minsky and I. J. Good himself occasionally expressed concern that a superintelligence could seize control, but issued no call to action. In 2000, computer scientist and Sun co-founder Bill Joy penned an influential essay, "Why The Future Doesn't Need Us", identifying superintelligent robots as a high-tech danger to human survival, alongside nanotechnology and engineered bioplagues.
+
+Nick Bostrom published Superintelligence in 2014, which presented his arguments that superintelligence poses an existential threat. By 2015, public figures such as physicists Stephen Hawking and Nobel laureate Frank Wilczek, computer scientists Stuart J. Russell and Roman Yampolskiy, and entrepreneurs Elon Musk and Bill Gates were expressing concern about the risks of superintelligence. Also in 2015, the Open Letter on Artificial Intelligence highlighted the "great potential of AI" and encouraged more research on how to make it robust and beneficial. In April 2016, the journal Nature warned: "Machines and robots that outperform humans across the board could self-improve beyond our control—and their interests might not align with ours". In 2020, Brian Christian published The Alignment Problem, which details the history of progress on AI alignment up to that time.
+
+In March 2023, key figures in AI, such as Musk, signed a letter from the Future of Life Institute calling a halt to advanced AI training until it could be properly regulated. In May 2023, the Center for AI Safety released a statement signed by numerous experts in AI safety and the AI existential risk which stated: "Mitigating the risk of extinction from AI should be a global priority alongside other societal-scale risks such as pandemics and nuclear war."
+
+ Potential AI capabilities 
+
+ General Intelligence 
+Artificial general intelligence (AGI) is typically defined as a system that performs at least as well as humans in most or all intellectual tasks. A 2022 survey of AI researchers found that 90% of respondents expected AGI would be achieved in the next 100 years, and half expected the same by 2061. Meanwhile, some researchers dismiss existential risks from AGI as "science fiction" based on their high confidence that AGI will not be created anytime soon.
+
+Breakthroughs in large language models have led some researchers to reassess their expectations. Notably, Geoffrey Hinton said in 2023 that he recently changed his estimate from "20 to 50 years before we have general purpose A.I." to "20 years or less".
+
+The Frontier supercomputer at Oak Ridge National Laboratory turned out to be nearly eight times faster than expected. Feiyi Wang, a researcher there, said "We didn't expect this capability" and "we're approaching the point where we could actually simulate the human brain".
+
+ Superintelligence 
+In contrast with AGI, Bostrom defines a superintelligence as "any intellect that greatly exceeds the cognitive performance of humans in virtually all domains of interest", including scientific creativity, strategic planning, and social skills. He argues that a superintelligence can outmaneuver humans anytime its goals conflict with humans'. It may choose to hide its true intent until humanity cannot stop it. Bostrom writes that in order to be safe for humanity, a superintelligence must be aligned with human values and morality, so that it is "fundamentally on our side"..
+
+Stephen Hawking argued that superintelligence is physically possible because "there is no physical law precluding particles from being organised in ways that perform even more advanced computations than the arrangements of particles in human brains".
+
+When artificial superintelligence (ASI) may be achieved, if ever, is necessarily less certain than predictions for AGI. In 2023, OpenAI leaders said that not only AGI, but superintelligence may be achieved in less than 10 years.
+
+ Comparison with humans 
+Bostrom argues that AI has many advantages over the human brain:
+
+ Speed of computation: biological neurons operate at a maximum frequency of around 200 Hz, compared to potentially multiple GHz for computers.
+ Internal communication speed: axons transmit signals at up to 120 m/s, while computers transmit signals at the speed of electricity, or optically at the speed of light.
+ Scalability: human intelligence is limited by the size and structure of the brain, and by the efficiency of social communication, while AI may be able to scale by simply adding more hardware.
+ Memory: notably working memory, because in humans it is limited to a few chunks of information at a time.
+ Reliability: transistors are more reliable than biological neurons, enabling higher precision and requiring less redundancy.
+ Duplicability: unlike human brains, AI software and models can be easily copied.
+ Editability: the parameters and internal workings of an AI model can easily be modified, unlike the connections in a human brain.
+ Memory sharing and learning: AIs may be able to learn from the experiences of other AIs in a manner more efficient than human learning.
+
+ Intelligence explosion 
+According to Bostrom, an AI that has an expert-level facility at certain key software engineering tasks could become a superintelligence due to its capability to recursively improve its own algorithms, even if it is initially limited in other domains not directly relevant to engineering. This suggests that an intelligence explosion may someday catch humanity unprepared.
+
+The economist Robin Hanson has said that, to launch an intelligence explosion, an AI must become vastly better at software innovation than the rest of the world combined, which he finds implausible.
+
+In a "fast takeoff" scenario, the transition from AGI to superintelligence could take days or months. In a "slow takeoff", it could take years or decades, leaving more time for society to prepare.
+
+ Alien mind 
+Superintelligences are sometimes called "alien minds", referring to the idea that their way of thinking and motivations could be vastly different from ours. This is generally considered as a source of risk, making it more difficult to anticipate what a superintelligence might do. It also suggests the possibility that a superintelligence may not particularly value humans by default. To avoid anthropomorphism, superintelligence is sometimes viewed as a powerful optimizer that makes the best decisions to achieve its goals.
+
+The field of "mechanistic interpretability" aims to better understand the inner workings of AI models, potentially allowing us one day to detect signs of deception and misalignment.
+
+ Limits 
+It has been argued that there are limitations to what intelligence can achieve. Notably, the chaotic nature or time complexity of some systems could fundamentally limit a superintelligence's ability to predict some aspects of the future, increasing its uncertainty.
+
+ Dangerous capabilities 
+Advanced AI could generate enhanced pathogens or cyberattacks or manipulate people. These capabilities could be misused by humans, or exploited by the AI itself if misaligned. A full-blown superintelligence could find various ways to gain a decisive influence if it wanted to, but these dangerous capabilities may become available earlier, in weaker and more specialized AI systems. They may cause societal instability and empower malicious actors.
+
+ Social manipulation 
+Geoffrey Hinton warned that in the short term, the profusion of AI-generated text, images and videos will make it more difficult to figure out the truth, which he says authoritarian states could exploit to manipulate elections. Such large-scale, personalized manipulation capabilities can increase the existential risk of a worldwide "irreversible totalitarian regime". It could also be used by malicious actors to fracture society and make it dysfunctional.
+
+ Cyberattacks 
+AI-enabled cyberattacks are increasingly considered a present and critical threat. According to NATO's technical director of cyberspace, "The number of attacks is increasing exponentially". AI can also be used defensively, to preemptively find and fix vulnerabilities, and detect threats.
+
+AI could improve the "accessibility, success rate, scale, speed, stealth and potency of cyberattacks", potentially causing "significant geopolitical turbulence" if it facilitates attacks more than defense.
+
+Speculatively, such hacking capabilities could be used by an AI system to break out of its local environment, generate revenue, or acquire cloud computing resources.
+
+ Enhanced pathogens 
+As AI technology democratizes, it may become easier to engineer more contagious and lethal pathogens. This could enable people with limited skills in synthetic biology to engage in bioterrorism. Dual-use technology that is useful for medicine could be repurposed to create weapons.
+
+For example, in 2022, scientists modified an AI system originally intended for generating non-toxic, therapeutic molecules with the purpose of creating new drugs. The researchers adjusted the system so that toxicity is rewarded rather than penalized. This simple change enabled the AI system to create, in six hours, 40,000 candidate molecules for chemical warfare, including known and novel molecules.
+
+ AI arms race 
+
+Companies, state actors, and other organizations competing to develop AI technologies could lead to a race to the bottom of safety standards. As rigorous safety procedures take time and resources, projects that proceed more carefully risk being out-competed by less scrupulous developers.
+
+AI could be used to gain military advantages via autonomous lethal weapons, cyberwarfare, or automated decision-making. As an example of autonomous lethal weapons, miniaturized drones could facilitate low-cost assassination of military or civilian targets, a scenario highlighted in the 2017 short film Slaughterbots. AI could be used to gain an edge in decision-making by quickly analyzing large amounts of data and making decisions more quickly and effectively than humans. This could increase the speed and unpredictability of war, especially when accounting for automated retaliation systems.
+
+ Types of existential risk 
+
+upright=1.5|Scope–severity grid from Bostrom's paper "Existential Risk Prevention as Global Priority"
+An existential risk is "one that threatens the premature extinction of Earth-originating intelligent life or the permanent and drastic destruction of its potential for desirable future development".
+
+Besides extinction risk, there is the risk that the civilization gets permanently locked into a flawed future. One example is a "value lock-in": If humanity still has moral blind spots similar to slavery in the past, AI might irreversibly entrench it, preventing moral progress. AI could also be used to spread and preserve the set of values of whoever develops it. AI could facilitate large-scale surveillance and indoctrination, which could be used to create a stable repressive worldwide totalitarian regime.
+
+Atoosa Kasirzadeh proposes to classify existential risks from AI into two categories: decisive and accumulative. Decisive risks encompass the potential for abrupt and catastrophic events resulting from the emergence of superintelligent AI systems that exceed human intelligence, which could ultimately lead to human extinction. In contrast, accumulative risks emerge gradually through a series of interconnected disruptions that may gradually erode societal structures and resilience over time, ultimately leading to a critical failure or collapse.
+
+It is difficult or impossible to reliably evaluate whether an advanced AI is sentient and to what degree. But if sentient machines are mass created in the future, engaging in a civilizational path that indefinitely neglects their welfare could be an existential catastrophe. Moreover, it may be possible to engineer digital minds that can feel much more happiness than humans with fewer resources, called "super-beneficiaries". Such an opportunity raises the question of how to share the world and which "ethical and political framework" would enable a mutually beneficial coexistence between biological and digital minds.
+
+AI may also drastically improve humanity's future. Toby Ord considers the existential risk a reason for "proceeding with due caution", not for abandoning AI. Max More calls AI an "existential opportunity", highlighting the cost of not developing it.
+
+According to Bostrom, superintelligence could help reduce the existential risk from other powerful technologies such as molecular nanotechnology or synthetic biology. It is thus conceivable that developing superintelligence before other dangerous technologies would reduce the overall existential risk.
+
+ AI alignment 
+
+The alignment problem is the research problem of how to reliably assign objectives, preferences or ethical principles to AIs.
+
+ Instrumental convergence 
+
+An "instrumental" goal is a sub-goal that helps to achieve an agent's ultimate goal. "Instrumental convergence" refers to the fact that some sub-goals are useful for achieving virtually any ultimate goal, such as acquiring resources or self-preservation.Omohundro, S. M. (2008, February). The basic AI drives. In AGI (Vol. 171, pp. 483–492). Bostrom argues that if an advanced AI's instrumental goals conflict with humanity's goals, the AI might harm humanity in order to acquire more resources or prevent itself from being shut down, but only as a way to achieve its ultimate goal.
+upright=1.5|Some ways in which an advanced misaligned AI could try to gain more power. Power-seeking behaviors may arise because power is useful to accomplish virtually any objective.
+Russell argues that a sufficiently advanced machine "will have self-preservation even if you don't program it in... if you say, 'Fetch the coffee', it can't fetch the coffee if it's dead. So if you give it any goal whatsoever, it has a reason to preserve its own existence to achieve that goal."
+
+ Resistance to changing goals 
+Even if current goal-based AI programs are not intelligent enough to think of resisting programmer attempts to modify their goal structures, a sufficiently advanced AI might resist any attempts to change its goal structure, just as a pacifist would not want to take a pill that makes them want to kill people. If the AI were superintelligent, it would likely succeed in out-maneuvering its human operators and prevent itself being "turned off" or reprogrammed with a new goal. This is particularly relevant to value lock-in scenarios. The field of "corrigibility" studies how to make agents that will not resist attempts to change their goals.
+
+ Difficulty of specifying goals 
+In the "intelligent agent" model, an AI can loosely be viewed as a machine that chooses whatever action appears to best achieve its set of goals, or "utility function". A utility function gives each possible situation a score that indicates its desirability to the agent. Researchers know how to write utility functions that mean "minimize the average network latency in this specific telecommunications model" or "maximize the number of reward clicks", but do not know how to write a utility function for "maximize human flourishing"; nor is it clear whether such a function meaningfully and unambiguously exists. Furthermore, a utility function that expresses some values but not others will tend to trample over the values the function does not reflect.Yudkowsky, E. (2011, August). Complex value systems in friendly AI. In International Conference on Artificial General Intelligence (pp. 388–393). Germany: Springer, Berlin, Heidelberg.
+
+An additional source of concern is that AI "must reason about what people intend rather than carrying out commands literally", and that it must be able to fluidly solicit human guidance if it is too uncertain about what humans want.
+
+ Alignment of superintelligences 
+Some researchers believe the alignment problem may be particularly difficult when applied to superintelligences. Their reasoning includes:
+
+ As AI systems increase in capabilities, the potential dangers associated with experimentation grow. This makes iterative, empirical approaches increasingly risky.
+ If instrumental goal convergence occurs, it may only do so in sufficiently intelligent agents.
+ A superintelligence may find unconventional and radical solutions to assigned goals. Bostrom gives the example that if the objective is to make humans smile, a weak AI may perform as intended, while a superintelligence may decide a better solution is to "take control of the world and stick electrodes into the facial muscles of humans to cause constant, beaming grins."
+ A superintelligence in creation could gain some awareness of what it is, where it is in development (training, testing, deployment, etc.), and how it is being monitored, and use this information to deceive its handlers. Bostrom writes that such an AI could feign alignment to prevent human interference until it achieves a "decisive strategic advantage" that allows it to take control.
+ Analyzing the internals and interpreting the behavior of current large language models is difficult. And it could be even more difficult for larger and more intelligent models.
+
+Alternatively, some find reason to believe superintelligences would be better able to understand morality, human values, and complex goals. Bostrom writes, "A future superintelligence occupies an epistemically superior vantage point: its beliefs are (probably, on most topics) more likely than ours to be true".
+
+In 2023, OpenAI started a project called "Superalignment" to solve the alignment of superintelligences in four years. It called this an especially important challenge, as it said superintelligence may be achieved within a decade. Its strategy involves automating alignment research using artificial intelligence.
+
+ Difficulty of making a flawless design 
+Artificial Intelligence: A Modern Approach, a widely used undergraduate AI textbook, says that superintelligence "might mean the end of the human race". It states: "Almost any technology has the potential to cause harm in the wrong hands, but with [superintelligence], we have the new problem that the wrong hands might belong to the technology itself." Even if the system designers have good intentions, two difficulties are common to both AI and non-AI computer systems:
+
+ The system's implementation may contain initially unnoticed but subsequently catastrophic bugs. An analogy is space probes: despite the knowledge that bugs in expensive space probes are hard to fix after launch, engineers have historically not been able to prevent catastrophic bugs from occurring.
+ No matter how much time is put into pre-deployment design, a system's specifications often result in unintended behavior the first time it encounters a new scenario. For example, Microsoft's Tay behaved inoffensively during pre-deployment testing, but was too easily baited into offensive behavior when it interacted with real users.
+
+AI systems uniquely add a third problem: that even given "correct" requirements, bug-free implementation, and initial good behavior, an AI system's dynamic learning capabilities may cause it to develop unintended behavior, even without unanticipated external scenarios. An AI may partly botch an attempt to design a new generation of itself and accidentally create a successor AI that is more powerful than itself but that no longer maintains the human-compatible moral values preprogrammed into the original AI. For a self-improving AI to be completely safe, it would need not only to be bug-free, but to be able to design successor systems that are also bug-free.
+
+ Orthogonality thesis 
+Some skeptics, such as Timothy B. Lee of Vox, argue that any superintelligent program we create will be subservient to us, that the superintelligence will (as it grows more intelligent and learns more facts about the world) spontaneously learn moral truth compatible with our values and adjust its goals accordingly, or that we are either intrinsically or convergently valuable from the perspective of an artificial intelligence.
+
+Bostrom's "orthogonality thesis" argues instead that, with some technical caveats, almost any level of "intelligence" or "optimization power" can be combined with almost any ultimate goal. If a machine is given the sole purpose to enumerate the decimals of pi, then no moral and ethical rules will stop it from achieving its programmed goal by any means. The machine may use all available physical and informational resources to find as many decimals of pi as it can. Bostrom warns against anthropomorphism: a human will set out to accomplish their projects in a manner that they consider reasonable, while an artificial intelligence may hold no regard for its existence or for the welfare of humans around it, instead caring only about completing the task.
+
+Stuart Armstrong argues that the orthogonality thesis follows logically from the philosophical "is-ought distinction" argument against moral realism. He claims that even if there are moral facts provable by any "rational" agent, the orthogonality thesis still holds: it is still possible to create a non-philosophical "optimizing machine" that can strive toward some narrow goal but that has no incentive to discover any "moral facts" such as those that could get in the way of goal completion. Another argument he makes is that any fundamentally friendly AI could be made unfriendly with modifications as simple as negating its utility function. Armstrong further argues that if the orthogonality thesis is false, there must be some immoral goals that AIs can never achieve, which he finds implausible. Full text available here .
+
+Skeptic Michael Chorost explicitly rejects Bostrom's orthogonality thesis, arguing that "by the time [the AI] is in a position to imagine tiling the Earth with solar panels, it'll know that it would be morally wrong to do so." Chorost argues that "an A.I. will need to desire certain states and dislike others. Today's software lacks that ability—and computer scientists have not a clue how to get it there. Without wanting, there's no impetus to do anything. Today's computers can't even want to keep existing, let alone tile the world in solar panels."
+
+Anthropomorphic arguments
+Anthropomorphic arguments assume that, as machines become more intelligent, they will begin to display many human traits, such as morality or a thirst for power. Although anthropomorphic scenarios are common in fiction, most scholars writing about the existential risk of artificial intelligence reject them. Instead, advanced AI systems are typically modeled as intelligent agents.
+
+The academic debate is between those who worry that AI might threaten humanity and those who believe it would not. Both sides of this debate have framed the other side's arguments as illogical anthropomorphism. Those skeptical of AGI risk accuse their opponents of anthropomorphism for assuming that an AGI would naturally desire power; those concerned about AGI risk accuse skeptics of anthropomorphism for believing an AGI would naturally value or infer human ethical norms.
+
+Evolutionary psychologist Steven Pinker, a skeptic, argues that "AI dystopias project a parochial alpha-male psychology onto the concept of intelligence. They assume that superhumanly intelligent robots would develop goals like deposing their masters or taking over the world"; perhaps instead "artificial intelligence will naturally develop along female lines: fully capable of solving problems, but with no desire to annihilate innocents or dominate the civilization." Facebook's director of AI research, Yann LeCun, has said: "Humans have all kinds of drives that make them do bad things to each other, like the self-preservation instinct... Those drives are programmed into our brain but there is absolutely no reason to build robots that have the same kind of drives".
+
+Despite other differences, the x-risk school agrees with Pinker that an advanced AI would not destroy humanity out of emotion such as revenge or anger, that questions of consciousness are not relevant to assess the risk, and that computer systems do not generally have a computational equivalent of testosterone. They think that power-seeking or self-preservation behaviors emerge in the AI as a way to achieve its true goals, according to the concept of instrumental convergence.
+
+ Other sources of risk 
+
+Bostrom and others have said that a race to be the first to create AGI could lead to shortcuts in safety, or even to violent conflict.. Roman Yampolskiy and others warn that a malevolent AGI could be created by design, for example by a military, a government, a sociopath, or a corporation, to benefit from, control, or subjugate certain groups of people, as in cybercrime, or that a malevolent AGI could choose the goal of increasing human suffering, for example of those people who did not assist it during the information explosion phase.:158
+
+Scenarios
+Some scholars have proposed hypothetical scenarios to illustrate some of their concerns.
+
+ Treacherous turn 
+In Superintelligence, Bostrom expresses concern that even if the timeline for superintelligence turns out to be predictable, researchers might not take sufficient safety precautions, in part because "it could be the case that when dumb, smarter is safe; yet when smart, smarter is more dangerous". He suggests a scenario where, over decades, AI becomes more powerful. Widespread deployment is initially marred by occasional accidents—a driverless bus swerves into the oncoming lane, or a military drone fires into an innocent crowd. Many activists call for tighter oversight and regulation, and some even predict impending catastrophe. But as development continues, the activists are proven wrong. As automotive AI becomes smarter, it suffers fewer accidents; as military robots achieve more precise targeting, they cause less collateral damage. Based on the data, scholars mistakenly infer a broad lesson: the smarter the AI, the safer it is. "And so we boldly go—into the whirling knives", as the superintelligent AI takes a "treacherous turn" and exploits a decisive strategic advantage.
+
+ Life 3.0 
+In Max Tegmark's 2017 book Life 3.0, a corporation's "Omega team" creates an extremely powerful AI able to moderately improve its own source code in a number of areas. After a certain point, the team chooses to publicly downplay the AI's ability in order to avoid regulation or confiscation of the project. For safety, the team keeps the AI in a box where it is mostly unable to communicate with the outside world, and uses it to make money, by diverse means such as Amazon Mechanical Turk tasks, production of animated films and TV shows, and development of biotech drugs, with profits invested back into further improving AI. The team next tasks the AI with astroturfing an army of pseudonymous citizen journalists and commentators in order to gain political influence to use "for the greater good" to prevent wars. The team faces risks that the AI could try to escape by inserting "backdoors" in the systems it designs, by hidden messages in its produced content, or by using its growing understanding of human behavior to persuade someone into letting it free. The team also faces risks that its decision to box the project will delay the project long enough for another project to overtake it.
+
+ Perspectives 
+
+The thesis that AI could pose an existential risk provokes a wide range of reactions in the scientific community and in the public at large, but many of the opposing viewpoints share common ground.
+
+Observers tend to agree that AI has significant potential to improve society. The Asilomar AI Principles, which contain only those principles agreed to by 90% of the attendees of the Future of Life Institute's Beneficial AI 2017 conference, also agree in principle that "There being no consensus, we should avoid strong assumptions regarding upper limits on future AI capabilities" and "Advanced AI could represent a profound change in the history of life on Earth, and should be planned for and managed with commensurate care and resources."
+
+Conversely, many skeptics agree that ongoing research into the implications of artificial general intelligence is valuable. Skeptic Martin Ford has said: "I think it seems wise to apply something like Dick Cheney's famous '1 Percent Doctrine' to the specter of advanced artificial intelligence: the odds of its occurrence, at least in the foreseeable future, may be very low—but the implications are so dramatic that it should be taken seriously". Similarly, an otherwise skeptical Economist wrote in 2014 that "the implications of introducing a second intelligent species onto Earth are far-reaching enough to deserve hard thinking, even if the prospect seems remote".
+
+AI safety advocates such as Bostrom and Tegmark have criticized the mainstream media's use of "those inane Terminator pictures" to illustrate AI safety concerns: "It can't be much fun to have aspersions cast on one's academic discipline, one's professional community, one's life work... I call on all sides to practice patience and restraint, and to engage in direct dialogue and collaboration as much as possible." Toby Ord wrote that the idea that an AI takeover requires robots is a misconception, arguing that the ability to spread content through the internet is more dangerous, and that the most destructive people in history stood out by their ability to convince, not their physical strength.
+
+A 2022 expert survey with a 17% response rate gave a median expectation of 5–10% for the possibility of human extinction from artificial intelligence.
+
+ Endorsement 
+
+The thesis that AI poses an existential risk, and that this risk needs much more attention than it currently gets, has been endorsed by many computer scientists and public figures, including Alan Turing, the most-cited computer scientist Geoffrey Hinton, Elon Musk, OpenAI CEO Sam Altman, Bill Gates, and Stephen Hawking. Endorsers of the thesis sometimes express bafflement at skeptics: Gates says he does not "understand why some people are not concerned", and Hawking criticized widespread indifference in his 2014 editorial:
+
+Concern over risk from artificial intelligence has led to some high-profile donations and investments. In 2015, Peter Thiel, Amazon Web Services, and Musk and others jointly committed $1 billion to OpenAI, consisting of a for-profit corporation and the nonprofit parent company, which says it aims to champion responsible AI development. Facebook co-founder Dustin Moskovitz has funded and seeded multiple labs working on AI Alignment, notably $5.5 million in 2016 to launch the Centre for Human-Compatible AI led by Professor Stuart Russell. In January 2015, Elon Musk donated $10 million to the Future of Life Institute to fund research on understanding AI decision making. The institute's goal is to "grow wisdom with which we manage" the growing power of technology. Musk also funds companies developing artificial intelligence such as DeepMind and Vicarious to "just keep an eye on what's going on with artificial intelligence, saying "I think there is potentially a dangerous outcome there."
+
+In early statements on the topic, Geoffrey Hinton, a major pioneer of deep learning, noted that "there is not a good track record of less intelligent things controlling things of greater intelligence", but said he continued his research because "the prospect of discovery is too sweet". In 2023 Hinton quit his job at Google in order to speak out about existential risk from AI. He explained that his increased concern was driven by concerns that superhuman AI might be closer than he previously believed, saying: "I thought it was way off. I thought it was 30 to 50 years or even longer away. Obviously, I no longer think that." He also remarked, "Look at how it was five years ago and how it is now. Take the difference and propagate it forwards. That's scary."
+
+In his 2020 book The Precipice: Existential Risk and the Future of Humanity, Toby Ord, a Senior Research Fellow at Oxford University's Future of Humanity Institute, estimates the total existential risk from unaligned AI over the next 100 years at about one in ten.
+
+ Skepticism 
+Baidu Vice President Andrew Ng said in 2015 that AI existential risk is "like worrying about overpopulation on Mars when we have not even set foot on the planet yet." For the danger of uncontrolled advanced AI to be realized, the hypothetical AI may have to overpower or outthink any human, which some experts argue is a possibility far enough in the future to not be worth researching.
+
+Skeptics who believe AGI is not a short-term possibility often argue that concern about existential risk from AI is unhelpful because it could distract people from more immediate concerns about AI's impact, because it could lead to government regulation or make it more difficult to fund AI research, or because it could damage the field's reputation. AI and AI ethics researchers Timnit Gebru, Emily M. Bender, Margaret Mitchell, and Angelina McMillan-Major have argued that discussion of existential risk distracts from the immediate, ongoing harms from AI taking place today, such as data theft, worker exploitation, bias, and concentration of power. They further note the association between those warning of existential risk and longtermism, which they describe as a "dangerous ideology" for its unscientific and utopian nature. Gebru and Émile P. Torres have suggested that obsession with AGI is part of a pattern of intellectual movements called TESCREAL.
+
+Wired editor Kevin Kelly argues that natural intelligence is more nuanced than AGI proponents believe, and that intelligence alone is not enough to achieve major scientific and societal breakthroughs. He argues that intelligence consists of many dimensions that are not well understood, and that conceptions of an 'intelligence ladder' are misleading. He notes the crucial role real-world experiments play in the scientific method, and that intelligence alone is no substitute for these.
+
+Meta chief AI scientist Yann LeCun says that AI can be made safe via continuous and iterative refinement, similar to what happened in the past with cars or rockets, and that AI will have no desire to take control.
+
+Several skeptics emphasize the potential near-term benefits of AI. Meta CEO Mark Zuckerberg believes AI will "unlock a huge amount of positive things", such as curing disease and increasing the safety of autonomous cars.
+
+ Popular reaction 
+
+During a 2016 Wired interview of President Barack Obama and MIT Media Lab's Joi Ito, Ito said: 
+
+Obama added:
+
+Hillary Clinton wrote in What Happened:
+
+ Public surveys 
+In 2018, a SurveyMonkey poll of the American public by USA Today found 68% thought the real current threat remains "human intelligence", but also found that 43% said superintelligent AI, if it were to happen, would result in "more harm than good", and that 38% said it would do "equal amounts of harm and good".
+
+An April 2023 YouGov poll of US adults found 46% of respondents were "somewhat concerned" or "very concerned" about "the possibility that AI will cause the end of the human race on Earth", compared with 40% who were "not very concerned" or "not at all concerned."
+
+According to an August 2023 survey by the Pew Research Centers, 52% of Americans felt more concerned than excited about new AI developments; nearly a third felt as equally concerned and excited. More Americans saw that AI would have a more helpful than hurtful impact on several areas, from healthcare and vehicle safety to product search and customer service. The main exception is privacy: 53% of Americans believe AI will lead to higher exposure of their personal information.
+
+ Mitigation 
+
+Many scholars concerned about AGI existential risk believe that extensive research into the "control problem" is essential. This problem involves determining which safeguards, algorithms, or architectures can be implemented to increase the likelihood that a recursively-improving AI remains friendly after achieving superintelligence. Social measures are also proposed to mitigate AGI risks, such as a UN-sponsored "Benevolent AGI Treaty" to ensure that only altruistic AGIs are created. Additionally, an arms control approach and a global peace treaty grounded in international relations theory have been suggested, potentially for an artificial superintelligence to be a signatory..
+
+Researchers at Google have proposed research into general "AI safety" issues to simultaneously mitigate both short-term risks from narrow AI and long-term risks from AGI.Amodei, Dario, Chris Olah, Jacob Steinhardt, Paul Christiano, John Schulman, and Dan Mané. "Concrete problems in AI safety." arXiv preprint arXiv:1606.06565 (2016). A 2020 estimate places global spending on AI existential risk somewhere between $10 and $50 million, compared with global spending on AI around perhaps $40 billion. Bostrom suggests prioritizing funding for protective technologies over potentially dangerous ones. Some, like Elon Musk, advocate radical human cognitive enhancement, such as direct neural linking between humans and machines; others argue that these technologies may pose an existential risk themselves. Another proposed method is closely monitoring or "boxing in" an early-stage AI to prevent it from becoming too powerful. A dominant, aligned superintelligent AI might also mitigate risks from rival AIs, although its creation could present its own existential dangers. Induced amnesia has been proposed as a way to mitigate risks of potential AI suffering and revenge seeking.
+
+Institutions such as the Alignment Research Center, the Machine Intelligence Research Institute, the Future of Life Institute, the Centre for the Study of Existential Risk, and the Center for Human-Compatible AI are actively engaged in researching AI risk and safety.
+
+ Views on banning and regulation 
+
+ Banning 
+Some scholars have said that even if AGI poses an existential risk, attempting to ban research into artificial intelligence is still unwise, and probably futile. Skeptics consider AI regulation pointless, as no existential risk exists. But scholars who believe in the risk argue that relying on AI industry insiders to regulate or constrain AI research is impractical due to conflicts of interest. They also agree with skeptics that banning research would be unwise, as research could be moved to countries with looser regulations or conducted covertly. Additional challenges to bans or regulation include technology entrepreneurs' general skepticism of government regulation and potential incentives for businesses to resist regulation and politicize the debate.
+
+ Regulation 
+
+In March 2023, the Future of Life Institute drafted Pause Giant AI Experiments: An Open Letter, a petition calling on major AI developers to agree on a verifiable six-month pause of any systems "more powerful than GPT-4" and to use that time to institute a framework for ensuring safety; or, failing that, for governments to step in with a moratorium. The letter referred to the possibility of "a profound change in the history of life on Earth" as well as potential risks of AI-generated propaganda, loss of jobs, human obsolescence, and society-wide loss of control. The letter was signed by prominent personalities in AI but also criticized for not focusing on current harms, missing technical nuance about when to pause, or not going far enough.
+
+Musk called for some sort of regulation of AI development as early as 2017. According to NPR, he is "clearly not thrilled" to be advocating government scrutiny that could impact his own industry, but believes the risks of going completely without oversight are too high: "Normally the way regulations are set up is when a bunch of bad things happen, there's a public outcry, and after many years a regulatory agency is set up to regulate that industry. It takes forever. That, in the past, has been bad but not something which represented a fundamental risk to the existence of civilisation." Musk states the first step would be for the government to gain "insight" into the actual status of current research, warning that "Once there is awareness, people will be extremely afraid... [as] they should be." In response, politicians expressed skepticism about the wisdom of regulating a technology that is still in development.
+
+In 2021 the United Nations (UN) considered banning autonomous lethal weapons, but consensus could not be reached. In July 2023 the UN Security Council for the first time held a session to consider the risks and threats posed by AI to world peace and stability, along with potential benefits. Secretary-General António Guterres advocated the creation of a global watchdog to oversee the emerging technology, saying, "Generative AI has enormous potential for good and evil at scale. Its creators themselves have warned that much bigger, potentially catastrophic and existential risks lie ahead." At the council session, Russia said it believes AI risks are too poorly understood to be considered a threat to global stability. China argued against strict global regulation, saying countries should be able to develop their own rules, while also saying they opposed the use of AI to "create military hegemony or undermine the sovereignty of a country".
+
+Regulation of conscious AGIs focuses on integrating them with existing human society and can be divided into considerations of their legal standing and of their moral rights. AI arms control will likely require the institutionalization of new international norms embodied in effective technical specifications combined with active monitoring and informal diplomacy by communities of experts, together with a legal and political verification process.
+
+In July 2023, the US government secured voluntary safety commitments from major tech companies, including OpenAI, Amazon, Google, Meta, and Microsoft. The companies agreed to implement safeguards, including third-party oversight and security testing by independent experts, to address concerns related to AI's potential risks and societal harms. The parties framed the commitments as an intermediate step while regulations are formed. Amba Kak, executive director of the AI Now Institute, said, "A closed-door deliberation with corporate actors resulting in voluntary safeguards isn't enough" and called for public deliberation and regulations of the kind to which companies would not voluntarily agree.
+
+In October 2023, U.S. President Joe Biden issued an executive order on the "Safe, Secure, and Trustworthy Development and Use of Artificial Intelligence". Alongside other requirements, the order mandates the development of guidelines for AI models that permit the "evasion of human control".

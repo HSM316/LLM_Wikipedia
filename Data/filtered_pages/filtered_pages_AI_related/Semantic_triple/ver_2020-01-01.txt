@@ -1,0 +1,13 @@
+A semantic triple, or simply triple, is the atomic data entity in the Resource Description Framework (RDF) data model.http://www.w3.org/TR/PR-rdf-syntax/ "Resource Description Framework (RDF) Model and Syntax Specification" As its name indicates, a triple is a set of three entities that codifies a statement about semantic data in the form of subject–predicate–object expressions (e.g. "Bob is 35", or "Bob knows John").
+
+This format enables knowledge to be represented in a machine-readable way. Particularly, every part of an RDF triple is individually addressable via unique URIs — for example, the second statement above might be represented in RDF as: 
+
+http://example.name#BobSmith12 http://xmlns.com/foaf/0.1/knows http://example.name#JohnDoe34.
+
+Given this precise representation, semantic data can be unambiguously queried and reasoned about.
+
+alt=Image depicting the subject predicate object relation.|The basic semantic triple model.The components of a triple, such as the statement "The sky has the color blue", consist of a subject ("the sky"), a predicate ("has the color"), and an object ("blue"). This is similar to the classical notation of an entity–attribute–value model within object-oriented design, where this example would be expressed as an entity (sky), an attribute (color) and a value (blue). 
+
+From this basic structure, triples can be composed into more complex models, by using triples as objects or subjects of other triples — for example, Mike → said → (triples → can be → objects).
+
+Given their particular, consistent structure, a collection of triples is often stored in purpose-built databases called Triplestores.

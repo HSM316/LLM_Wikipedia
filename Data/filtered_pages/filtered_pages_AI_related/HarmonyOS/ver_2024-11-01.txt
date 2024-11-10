@@ -1,0 +1,193 @@
+HarmonyOS (HMOS) () is a distributed operating system developed by Huawei for smartphones, tablets, smart TVs, smart watches, personal computers and other smart devices. It has a microkernel design with single framework: the operating system selects suitable kernels from the abstraction layer in the case of devices that use diverse resources. 
+
+HarmonyOS was officially launched by Huawei and first used in Honor smart TVs in August 2019. It was later used in Huawei wireless routers, IoT in 2020, followed by smartphones, tablets and smartwatches from June 2021.
+
+The operating system was initially based on code from the Android Open Source Project (AOSP) and the Linux kernel; many Android apps can be sideloaded on HarmonyOS.
+
+The next iteration of HarmonyOS known as HarmonyOS NEXT was announced on August 4, 2023. It replaces the OpenHarmony multi-kernel system with its own HarmonyOS microkernel at its core, removes all Android code and supports only apps in its native App format. It is currently in public beta testing as official launch of HarmonyOS NEXT 5 and is expected to launch stable builds in the fourth quarter of 2024.
+
+ Architecture 
+HarmonyOS is designed with a layered architecture, which consists of four layers; the kernel layer at the bottom provides the upper three layers, i.e., the system service layer, framework layer and application layer, with basic kernel capabilities, such as process and thread management, memory management, file system, network management, and peripheral management.
+
+The kernel layer incorporates a subsystem that accommodates HarmonyOS kernel based on microkernel as Rich Executed Environment (REE), catering to diverse smart devices. Depending on the device type, different kernels can be selected; for instance, like OpenHarmony base itself but with a single kernel, lightweight systems are chosen for low-power devices like watches and IoT devices to execute lightweight HarmonyOS apps, whereas large-memory devices like mobile phones, tablets, and PCs utilize standard system. The dual-app framework was replaced with a single-app framework in HarmonyOS Next, supporting only native HarmonyOS apps with APP format.
+
+The system includes a communication base called DSoftBus for integrating physically separate devices into a virtual Super Device, allowing one device to control others and sharing data among devices with distributed communication capabilities. "To address security concerns" arising from varying devices, the system provides a hardware-based Trusted Execution Environment (TEE) microkernel to prevent leakage of sensitive personal data when they are stored or processed.
+
+It supports several forms of apps, including native apps that can be installed from AppGallery, installation-free Quick apps and lightweight Meta Services accessible by users on various devices.
+
+ Android fork 
+
+When it launched the operating system, Huawei stated that HarmonyOS plans to become a microkernel-based, distributed OS that was completely different from Android and iOS in terms of target market towards Internet of things. A Huawei spokesperson subsequently stated that HarmonyOS supported multiple kernels and used a Linux kernel if a device had a large amount of RAM, and that the company had taken advantage of a large number of third-party open-source resources, including Linux kernel with POSIX APIs on OpenHarmony base, as a foundation to accelerate the development of its unified system stack as a future-proof, microkernel-based, and distributed OS running on multiple devices.
+
+At its launch as an operating system for smartphones in 2021, HarmonyOS was, however, rumored by Ars Technica to be a "rebranded version of Android and EMUI" with nearly "identical code bases". Following the release of the HarmonyOS 2.0 beta, Ars Technica and XDA Developers suggested that "the smartphone version of the OS had been forked from Android 10". Ars Technica alleged that it resembled the existing EMUI software used on Huawei devices, but with all references to "Android" replaced by "HarmonyOS". It was also noted that the DevEco Studio software based on JetBrains open source IntelliJ IDEA IDE "shared components and tool chains" with Android Studio.
+
+When testing the new MatePad Pro in June 2021, Android Authority and The Verge similarly observed similarities in "behavior", including that it was possible to install apps from Android APK files on the HarmonyOS-based tablet, and to run the Android 10 easter egg apk app, reaffirming earlier rumor mills.
+
+ History 
+
+ Early development 
+Reports surrounding an in-house operating system being developed by Huawei date back as far as 2012 in R&D stages with HarmonyOS NEXT system stack going back as early as 2015. These reports intensified during the Sino-American trade war, after the United States Department of Commerce added Huawei to its Entity List in May 2019 under an indictment that it knowingly exported goods, technology and services of U.S. origin to Iran in violation of sanctions. This prohibited U.S.-based companies from doing business with Huawei without first obtaining a license from the government. Huawei executive  described an in-house platform as a "plan B" in case it is prevented from using Android on future smartphone products due to the sanctions.
+
+Prior to its unveiling, it was originally speculated to be a mobile operating system that could replace Android on future Huawei devices. In June 2019, an Huawei executive told Reuters that the OS was under testing in China, and could be ready "in months", but by July 2019, some Huawei executives described the OS as being an embedded operating system designed for IoT hardware, discarding the previous statements for it to be a mobile operating system.
+
+Some media outlets reported that this OS, referred to as "Hongmeng", could be released in China in either August or September 2019, with a worldwide release in the second quarter of 2020. On 24 May 2019, Huawei registered "Hongmeng" as a trademark in China. The name "Hongmeng" () came from Chinese mythology that symbolizes primordial chaos or the world before creation. The same day, Huawei registered trademarks surrounding "Ark OS" and variants with the European Union Intellectual Property Office. In July 2019, it was reported that Huawei had also registered trademarks surrounding the word "Harmony" for desktop and mobile operating system software, indicating either a different name or a component of the OS.
+
+ Framework transitions 
+
+Early versions of HarmonyOS, starting from version 1.0, employed a "kernel abstraction layer" (KAL) subsystem to support a multi-kernel architecture. This allowed developers to choose different operating system kernels based on the resources available on each device. For low-powered devices such as wearables and Huawei's GT smartwatches, HarmonyOS utilized the LiteOS kernel instead of Linux. It also integrated the LiteOS SDK for TV applications and ensured compatibility with Android apps through the Ark Compiler and a dual-framework approach. HarmonyOS 1.0's original L0-L2 source code branch was contributed to the OpenAtom Foundation to accelerate system development.
+
+HarmonyOS 2.0 introduced a modified version of OpenHarmony's L3-L5 source code, expanding its compatibility across smartphones and tablets. Underneath the kernel abstraction layer (KAL) subsystem, HarmonyOS used the Linux kernel and the AOSP codebase. This setup enabled Android APK files and App Bundles (AAB) to run natively, similar to older Huawei EMUI-based devices, without needing root access.
+
+Additionally, HarmonyOS supported native apps packaged for Huawei Mobile Services through the Ark Compiler, leveraging the OpenHarmony framework within its dual-framework structure at the System Service Layer. This configuration allowed the operating system to run apps developed with restricted HarmonyOS APIs.
+
+Until the release of HarmonyOS 5.0.0, known as HarmonyOS NEXT 5, using its microkernel within a single framework, replacing the operating system dual-framework approach for Huawei's HarmonyOS devices with the AOSP codebase.
+
+ Release 
+
+On 9 August 2019, three months after the Entity List ban, Huawei publicly unveiled HarmonyOS, which Huawei said it had been working on since 2012, at its inaugural developers' conference in Dongguan. Huawei described HarmonyOS as a free, microkernel-based distributed operating system for various types of hardware. The company focused primarily on IoT devices, including smart TVs, wearable devices, and in-car entertainment systems, and did not explicitly position HarmonyOS as a mobile OS.
+
+HarmonyOS 2.0 launched at the Huawei Developer Conference on 10 September 2020. Huawei announced it intended to ship the operating system on its smartphones in 2021. The first developer beta of HarmonyOS 2.0 was launched on 16 December 2020.  Huawei also released the DevEco Studio IDE, which is based on IntelliJ IDEA, and a cloud emulator for developers in early access.
+
+Huawei officially released HarmonyOS 2.0 and launched new devices shipping with the OS in June 2021, and started rolling out system upgrades to Huawei's older phones for users gradually.
+
+On July 27, 2022, Huawei launched HarmonyOS 3 providing an improved experience across multiple devices such as smartphones, tablets, printers, cars and TVs. It also launched Petal Chuxing, a ride-hailing app running on the new version of the operating system.
+
+On 29 June 2023, Huawei launched the first developer beta of HarmonyOS 4. On 4 August 2023, Huawei officially announced and released HarmonyOS 4 as a public beta. On 9 August, it rolled the operating system out on 34 different existing Huawei smartphone and tablet devices—albeit as a public beta build. Alongside HarmonyOS 4, Huawei also announced the launch of HarmonyOS NEXT, which is a "pure" HarmonyOS version, without Android libraries and therefore incompatible with Android apps post-software convergence.
+
+On 18 January 2024, Huawei announced commercialisation of HarmonyOS NEXT with Galaxy stable version rollout which will begin in Q4 2024 based on OpenHarmony 5.0 (API 12) version after OpenHarmony 4.1 (API 11) based Q2 Developer Beta after release of public developer access of HarmonyOS NEXT Developer Preview 1 that has been in the hands of closed cooperative developers partners since August 2023 debut. The new system of upcoming HarmonyOS 5 version that replaced HarmonyOS multi-kernel dual-frame system convergence for unified system stack of the unified app ecosystem for commercial Huawei consumer devices.
+
+On March 11, 2024, Huawei announced the early recruitment for the new test experience version of Huawei HarmonyOS 4 firmware update that includes performance improvements, purer and better user experiences. HarmonyOS version 4.0.0.200 (C00E200R2P7) of the firmware was gradually rolled out on March 12, 2024.
+	
+On April 11, 2024, it has been reported that Huawei opened the registration and rolled out public beta of HarmonyOS 4.2 for 24 devices. On the same day, the company announced its incoming HarmonyOS 5.0 operating system version of Galaxy Edition version under HarmonyOS NEXT system that will first be released as open beta program for developers and users at its annual Huawei Developer Conference in June 2024 before Q4 commercial consumer release with upcoming Mate 70 flagship, among other ecosystem devices. 
+
+On April 18, 2024, Huawei Pura 70 flagship series lineup received HarmonyOS 4.2.0.137 update, after release.
+
+On April 17, 2024, Huawei's chairman Eric Xu revealed plans to push native HarmonyOS NEXT system for next gen HarmonyOS in global markets as the company's focus at Huawei's Analyst Summit 2024 (HAS 2024) to Chinese and international press which was reported in various international outlets on April 22, 2024.
+
+On May 17, 2024, during the HarmonyOS Developer Day (HDD) event, Huawei announced HarmonyOS upgrade with the new HarmonyOS NEXT base will begin commercial use by September with over 800 million units of devices and 4,000 apps in use for a target of 5,000 apps at launch.
+
+On June 21, 2024, during Huawei Developer Conference (HDC) keynote, Huawei announced HarmonyOS NEXT Developer Beta for registered developers and 3,000 pioneer users on limited models such as Huawei Mate 60 Series, Huawei Mate X5 Series and Huawei MatePad Pro 13.2 tablet. The consumer beta version is expected to be released in August 2024 while the stable build to be made available in Q4 2024. During the conference, Huawei formerly announced in-house Cangjie programming language for the new native system alongside releasing the Developer Preview Beta recruitment program.
+
+On October 22, 2024, at Huawei HarmonyOS Next event, it was officially revealed as "pure blood" HarmonyOS NEXT 5 brand transitioning to HarmonyOS 5, incorporated as HarmonyOS 5.0.0 version, for public beta with 2025 expansions. Ahead of flagship devices with stable builds factory in November. 
+
+ Features 
+
+ User interface 
+The HarmonyOS interface is overhauled with native HarmonyOS Design system as "Harmonious aesthetics" philosophy  by ang Zhiyan, Chief UX Designer at Huawei Consumer BGf or the native launcher system that has an emphasis on 'vivid' system colours and reflective 'spatial' visual of light, blur, glow with glassmorphism and neumorphism soft UI that is a medium between skeuomorphism and flat design. In addition to standard folders that require tapping on them to display their contents, folders can be enlarged to always show their contents without text labels directly on the home screen.
+
+Apps can support "snippets", which expose a portion of the app's functionality (such as a media player's controls, or a weather forecast) via an iOS style pop-up window by swiping left after holding the app icon in context menu, and can be pinned to the home screen as a widget. Apps and services can provide cards; as of HarmonyOS 3.0, cards can also be displayed as widgets with different sizes and shapes to adapt to the home screen layout, and can also be stacked.
+
+The user interface font of HarmonyOS on HarmonyOS Next base is HarmonyOS Sans. It is designed to be easy to read, unique, and universal. The system font was used throughout the operating system alongside previous Android-based EMUI 12 and up, including third-party HarmonyOS and former Android apps.
+ Software 
+ Traditional apps 
+Unlike Meta Services that are installation-free, traditional apps need installation. They are available to users through Huawei AppGallery, which serves as the application store for HarmonyOS with HarmonyOS-native apps.HarmonyOS-native apps have access to capabilities such as distributed communications and cards.
+
+ Quick apps 
+Similar to applets, Quick apps were single-page apps written using JavaScript and CSS, with code volume about one fifth of that of a traditional app. They are developed based on the industry standards formulated by the Quick App Alliance, comprising mainstream mobile phone manufacturers in China.
+
+Quick apps are available to users through the AppGallery, Quick App Center, Huawei Assistant, etc., on supported devices. They are installation-free, updated automatically, and their shortcuts can be added by users to the home screen for ease of access.
+
+ Meta Services 
+Managed and distributed by Huawei Ability Gallery, Meta Services (formerly, Atomic Services) are lightweight and consist of one or more HarmonyOS Ability Packages (HAPs) to implement specific convenient services, providing users with dynamic content and functionality. They are accessible via the Service Center from devices, and presented as cards that can be added to a favorite list or pinned to the home screen.
+
+Meta Services are installation-free since the accompanying code is downloaded in the background. They can also be synchronized across multiple devices, such as updating the driver's location on the watch in real time after the user hails a taxi on the mobile phone.
+
+Note: Meta Services (a component of HarmonyOS) should not to be confused with products and services from Meta Platforms (the parent company of Facebook).
+
+ Service Collaboration Kit 
+The Service Collaboration Kit (SCK) provides users with cross-device interaction, allowing them to use the camera, scanning, and gallery functions of other devices. For example, tablets or 2-in-1 laptops can utilize these features from a connected smartphone. To utilize these features, both devices running HarmonyOS NEXT must be logged into the same Huawei account and have WLAN and Bluetooth enabled.
+
+ Harmony Intelligence 
+Harmony Intelligence allows users to deploy AI-based applications on HarmonyOS, using PanGu 5.0 LLM and its embedded variants, alongside new Celia capabilities, HiAI Foundation Kit, MindSpore Lite Kit, Neural Network Runtime Kit, and Computer Vision. These features improve performance, reduce power consumption, and enable efficient AI processing on devices with Kirin chips.
+
+ Super Device 
+HarmonyOS supports cross-platform interactions between supported devices via the "Super Device" interface; devices are paired via a "radar" screen by dragging icons to the centre of the screen. Examples of Super Device features include allowing users to play back media saved inside a smartphone through a paired PC, smart TV or speakers; share PC screen recordings back to a smartphone; run multiple phone apps in a PC window; share files between a paired smartphone and PC; share application states between the paired devices, etc.
+
+ NearLink 
+Incorporated into HarmonyOS 4, NearLink (previously known as SparkLink) is a set of standards that combine the strengths of traditional wireless technologies like Bluetooth and Wi-Fi, while emphasizing improved performance in areas like response time, energy efficiency, signal range, and security. It consists of two access modes: SparkLink Low Energy (SLE) and SparkLink Basic (SLB). SLE is designed for low-power consumption, low-latency, and high-reliability applications, with a data transmission rate reportedly up to 6 times that of Bluetooth; SLB is tailored for high-speed, high-capacity, and high-precision applications, with a data transmission rate reportedly around 2 times that of Wi-Fi.
+
+ Hardware 
+HarmonyOS platform was not designed for a single device at the beginning but developed as a distributed operating system for various devices with memory sizes ranging from 128KB to over 4GB. Hence, the hardware requirements are flexible for the operating system and it may only need 128KB of memory for a variety of smart terminal devices.
+
+ Devices supported at launch 
+The Huawei P30 is one of several Huawei devices to run HarmonyOS.
+Huawei stated that HarmonyOS would initially be used on devices targeting the Chinese market. The company's former subsidiary brand, Honor, unveiled the Honor Vision line of smart TVs as the first consumer electronics devices to run HarmonyOS in August 2019. The HarmonyOS 2.0 beta launched on 16 December 2020 and supported the P30 series, P40 series, Mate 30 series, Mate 40 series, P50 series, and the MatePad Pro.
+
+Stable HarmonyOS 2.0 was released for smartphones and tablets as updates for the P40 and Mate X2 in June 2021. New Huawei Watch, MatePad Pro and PixLab X1 desktop printer models shipping with HarmonyOS were also unveiled at the time. In October 2021, HarmonyOS 2.0 had over 150 million users.
+
+ App development 
+The primary IDE known as DevEco Studio for developing HarmonyOS apps was released by Huawei on September 9, 2020, based on IntelliJ IDEA and Huawei's SmartAssist. The IDE includes DevEco Device Tool, an integrated development tool for customizing HarmonyOS components, coding, compiling and visual debugging, similar to other third party IDEs such as Visual Studio Code for Windows, Linux and macOS.
+
+Applications for HarmonyOS are mostly built using components of ArkUI, a Declarative User Interface framework. ArkUI elements are adaptable to various devices and include new interface rules with automatic updates along with HarmonyOS updates. 
+
+HarmonyOS uses App Pack files suffixed with .app, also known as APP files, for distribution of software via AppGallery. Each App Pack has one or more HarmonyOS Ability Packages (HAP) containing code for their abilities, resources, libraries, and a JSON file with configuration information.  
+
+HarmonyOS as a universal single IoT platform allows developers to write apps once and run everywhere across devices such as phones, tablets, personal computers, TVs, cars, smartwatches, single board computers under OpenHarmony, and screen-less IoT devices such as smart speakers.
+
+As of October  2024, there were reportedly over 6.75 million registered developers participated in developing HarmonyOS apps.
+
+ HarmonyOS ecosystem 
+ HarmonyOS Connect 
+On May 18, 2021, Huawei revealed a plan to upgrade its HarmonyOS Connect brand with a standard badge during a summit in Shanghai to help industrial partners in producing, selling and operating products with third-party OEMs as part of the HarmonyOS system, framework and the Huawei Smart Life (formerly Huawei AI Life) app.
+
+Allowing for fast and low-cost connections to users, smart devices like speakers, fridges and cookers of different brands powered by HarmonyOS can be connected and merged into a super device with a single touch of smartphone without the need to install apps. Also, HiLink protocols for mesh and wireless routers connectivity with devices alongside other smart devices that are platform agnostic that connects to HarmonyOS devices.
+
+The HarmonyOS Connect sets the platform apart from traditional mobile and computing platforms and the company's previous ecosystem attempts with its Android based EMUI and LiteOS connectivity in the past.
+
+ HarmonyOS Cockpit 
+On April 27, 2021, Huawei launched a smart cockpit solution powered by HarmonyOS for electric and autonomous cars powered by its Kirin line of a system-on-chip (SoC) solution. Huawei opened up APIs to help automobile OEMs, suppliers and ecosystem partners in developing features to meet user requirements.
+
+Huawei designed a modular SoC for cars that will be pluggable and easy to upgrade to maintain the peak performance of the cockpit. Users would be able to upgrade the chipset as one can upgrade on an assembled desktop computer with its scalable distributed OS.
+
+On December 21, 2021, Huawei launched a new smart console brand, HarmonySpace, a specialized HarmonyOS vehicle operating system. Based on Huawei's 1+8 ecology, apps on smartphones and tablets can be connected to the car seamlessly with HarmonySpace, which also provides smartphone projection capability.
+
+On December 23, 2021, Huawei announced a new smart select car product – AITO M5, a medium-size SUV with HarmonyOS ecosystem through continuous AI learning optimization and over-the-air upgrades. On July 4, 2022, Huawei officially launched AITO smart select car product to be shipped to customers sometime in August 2022. During the launch, the company received 10,000 pre-orders in 2 hours for its M7 model.
+
+Huawei MagLink built on interconnected Cockpit solution, enables drivers to make the mobile phone application full amount of car, no need for telephony navigation. Huawei's car solution through seamless HarmonyOS system application, eliminate the need for drivers to use mobile phone navigation nor the need to install mobile phone holders. With this solution, enables more built in accessible entertainment and information services. The integration of software and hardware technologies installed on the car, achieving “mobile whole-house intelligence.”
+
+ MineHarmony OS 
+On 14 September 2021, Huawei announced the launch of MineHarmony OS, a customized operating system by Huawei based on its in-house HarmonyOS based on OpenHarmony for industrial use. MineHarmony is compatible with about 400 types of underground coal mining equipment, providing the equipment with a single interface to transmit and collect data for analysis. Wang Chenglu, President of Huawei’s consumer business AI and smart full-scenario business department, indicated that the launch of MineHarmony OS signified that the HarmonyOS ecology had taken a step further from B2C to B2B.
+
+ Market share 
+On December 23, 2021, Richard Yu, CEO of Huawei Consumer Business Group, claimed that HarmonyOS had reached 300 million smartphones and other smart devices, including 200 million devices in the ecosystem and 100 million third-party consumer products from industry partners.
+
+Market research conducted in China by Strategy Analytics showed that Harmony OS was the third largest smartphone platform after Apple iOS and Google Android, reaching a record high of 4% market share in China during the first quarter of 2022, up from zero just a year earlier. This increase in market share took place after the operating system was also launched for smartphone devices in June 2021. 
+
+The research claimed that in the first quarter of 2022 the platform outgrew its rivals, such as Android and Apple iOS, from a low install base of about 150 million smart devices overall, particularly due to the good support in China and the HarmonyOS software upgrades that Huawei made available for its older handset models and its former sub-brands such as Honor.
+
+On August 8, 2022, after the soft launch of HarmonyOS 3, Sina Finance, part of Sina Corporation, and Huawei Central reported that the number of Huawei HarmonyOS Connect devices had exceeded 470 million units. By summer 2022, 14 OpenHarmony distributions had  been launched.
+
+In the third quarter of 2023, HarmonyOS captured a 3% share of the global smartphone market and 13% within China, despite Huawei's limitation to LTE at the time. At the launch of HarmonyOS 4 in August 2023, it was noted that the operating system had been integrated into over 700 million devices. By January 18, 2024, during Huawei's HarmonyOS Ecology Conference in China, this number had risen to over 800 million devices, as reported by Huawei.
+
+In the first quarter of 2024, HarmonyOS reached a 4% market share globally and captured 17% of the Chinese market, surpassing iOS to become the second largest mobile platform domestically, as reported by Counterpoint Research on May 25, 2024. During the HDC 2024 keynote conference, it was announced that HarmonyOS had reached 900 million active on June 21, 2024.
+
+On October 22, 2024, Huawei announced at it's HarmonyOS NEXT 5 event that the HarmonyOS platform has active 1 billion users.
+
+ Relationship with OpenEuler 
+
+In terms of architecture, HarmonyOS has close relationship with OpenEuler, which is a community edition of EulerOS, as they have implemented the sharing of kernel technology as revealed by Deng Taihua, President of Huawei's Computing Product Line. The sharing is reportedly to be strengthened in the future in the areas of the distributed software bus, system security, app framework, device driver framework and new programming language.
+
+ Relationship between HarmonyOS and OpenHarmony 
+
+OpenHarmony is an open-source version of HarmonyOS donated by Huawei to the OpenAtom Foundation, built around a LiteOS kernel descended from original LiteOS operating system. It supports devices running a mini system such as printers, speakers, smartwatches and any other smart device with memory as small as 128 KB, or running a standard system with memory greater than 128 MB. The open-source operating system contains the basic capabilities of HarmonyOS and does not depend on the Android Open Source Project (AOSP) code.
+
+ HarmonyOS NEXT 
+
+HarmonyOS NEXT architecture
+
+On August 4, 2023 at Huawei Developers Conference 2023 (HDC), Huawei officially announced HarmonyOS NEXT, the next iteration system version of HarmonyOS, supporting only native APP apps via Ark Compiler with Huawei Mobile Services (HMS), and ending the support for Android apk apps.
+
+Built on a custom version of OpenHarmony, HarmonyOS NEXT proprietary system has the HarmonyOS microkernel at its core with a single framework, departing from the common Linux kernel and aimed to replace the current multi-kernel HarmonyOS.
+
+Among the first batch of over 200 developers, McDonald's and KFC in China became two of the first multinational food companies to adopt HarmonyOS Next.
+
+On September 4, 2023, it was reported on Weibo social media in China that a former Huawei executive had claimed that HarmonyOS for PC would be released in 2024.
+
+ Trademarks 
+In May 2019, Huawei applied for registration of the trademark "Hongmeng" through the Chinese Patent Office CNIPA, but the application was rejected in pursuance to Article 30 of the PRC Trade Mark Law, citing the trademark was similar to that of "CRM Hongmeng" in graphic design and "Hongmeng" in Chinese word.
+
+In less than a week before launching HarmonyOS 2.0 and new devices by Huawei, the Beijing Intellectual Property Court announced the first-instance judgement in May 2021 to uphold the decision by CNIPA as the trademark was not sufficiently distinctive in terms of its designated services.
+
+However, it was reported that the trademark had officially been transferred from Huizhou Qibei Technology to Huawei by end of May 2021.
+
+On October 22, 2024, It has been reported that Huawei has applied for registration of more than 400 HarmonyOS related trademarks in China.

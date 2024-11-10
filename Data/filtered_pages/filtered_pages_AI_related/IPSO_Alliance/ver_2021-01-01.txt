@@ -1,0 +1,31 @@
+The IPSO Alliance was an organization promoting the Internet Protocol (IP) for what it calls "smart object" communications. The IPSO in IPSO Alliance is short for Internet Protocol for Smart Objects. The IPSO Alliance was a non-profit organization founded in 2008 with members from technology, communications and energy companies. 
+The IPSO Alliance advocated for IP networked devices in energy, consumer, healthcare and industrial applications. On March 27, 2018 the IPSO Alliance merged with the Open Mobile Alliance (OMA) to form OMA SpecWorks.
+
+Description
+Smart objects are data structures in constrained devices. They are used to manage the device and the device's data. Constrained devices in turn are small computers (microcontrollers) with a sensor or actuator and a communication device, such as thermostats, car engines, light switches, and industrial machinery. Smart objects represent the state, data, etc. of the device (device management) and the state, data, et.c of the sensors and actuators (data management). Smart objects are often simple; that is, their data structures are simple with a number of fixed operations. Due to their low cost, simple smart objects enable a wide range of applications not previously possible due to cost considerations. Applications include areas such as home automation, building automation, factory monitoring, smart cities, structural health management systems, smart grid and energy management, and transportation.
+
+The IPSO Alliance promotes the “Internet of Things”. The layered architecture of IP provides a high level of flexibility, innovation and accelerates the adoption of network-connected devices, often referred to as the “Internet of Things.”
+
+IPSO offers webinars, interoperability events, and the publication of white papers. The Alliance also complements the work of entities such as the Internet Engineering Task Force (IETF), the Institute of Electrical and Electronics Engineers (IEEE), the European Telecommunications Standards Institute (ETSI) and the ISA, all of which develop and ratify technical standards in the industrial community.
+
+On February 15, 2013, the IPSO Alliance announced  its "IPSO Challenge 2013 competition to showcase the use of the Internet Protocol (IP) in sensor/control and M2M applications enabling the Internet of Things (IOT). 
+The first round of judging closed on April 5, 2013. 
+The top three finalists went to Sensors Expo in Chicago on June 6, 2013 to present their prototype or product, where the winner, Redwire Consulting of Boston for their Energy Current Harvesting device was announced. Runners up included CMD Microdevices of Colorado and ViBrain Solutions of Murcia, Spain.
+
+August 2012 In conjunction with IETF 84 in Vancouver, BC, IPSO hosted an Internet of Things interoperability demonstration using the IPv6 and Web standards for machine-to-machine (M2M) devices and cloud services in connected home, building automation, lighting and smart energy-related applications.  The Alliance also participated in the Bits-N-Bites Open House, showcasing NXP's smart light bulb, Proto6's motion sensor, and the Ericsson/Sensinode in-home sensors.
+
+June 2012  In celebration of World IPv6 Launch Day, the IPSO Alliance enabled its website to be IPv6 capable
+
+March 2012 IPSO Alliance teams with European Telecommunications Standards Institute (ETSI) to assemble companies to validate understanding of the Constrained Application Protocol (CoAP) base specification under development by IETF, and tests protocol implementation interoperability and conformance.  Test results provided to both the IETF and Internet of Things (IoT) communities to enhance the quality of these developing standards. This event was organized in co-operation the Probe-IT project, held in Paris, France, on 24–25 March 2012 and was co-located with IETF 83 
+
+September 2011 IPSO published its first quarterly newsletter.
+
+June, 2011 IPSO announced interoperability testing
+
+In May 2010, ZigBee Alliance and IPv6 Forum form strategic relationships with the IPSO Alliance to speed adoption of IP networked smart objects
+
+In April 2010, IPSO conducts a series of successful interoperability tests with several independent implementations of RPL and of 6LoWPAN-HC.
+
+In November 2008, TIME Magazine listed the IPSO Alliance and the Internet of Things as the 30th most important innovation of 2008
+
+On October 15, 2008, members of the IPSO Alliance released uIPv6, the world's smallest IPv6 stack.Slashdot: World's Smallest IPv6 Stack By Cisco, Atmel, SICS

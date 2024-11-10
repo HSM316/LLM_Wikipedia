@@ -1,0 +1,57 @@
+The Bradley–Terry model is a probability model for the outcome of pairwise comparisons between individuals, teams, or objects. Given a pair of individuals  and  drawn from some population, it estimates the probability that the pairwise comparison  turns out true, as
+
+where  is a positive real-valued score assigned to individual . The comparison  can be read as " is preferred to ", " ranks higher than ", or " beats ", depending on the application.
+
+For example,  might represent the skill of a team in a sports tournament and  the probability that  wins a game against . Or  might represent the quality or desirability of a commercial product and  the probability that a consumer will prefer product  over product .
+
+The Bradley–Terry model can be used in the forward direction to predict outcomes, as described, but is more commonly used in reverse to infer the scores  given an observed set of outcomes. In this type of application  represents some measure of the strength or quality of  and the model lets us estimate the strengths from a series of pairwise comparisons.  In a survey of wine preferences, for instance, it might be difficult for respondents to give a complete ranking of a large set of wines, but relatively easy for them to compare sample pairs of wines and say which they feel is better.  Based on a set of such pairwise comparisons, the Bradley–Terry model can then be used to derive a full ranking of the wines.
+
+Once the values of the scores  have been calculated, the model can then also be used in the forward direction, for instance to predict the likely outcome of comparisons that have not yet actually occurred.  In the wine survey example, for instance, one could calculate the probability that someone will prefer wine  over wine , even if no one in the survey directly compared that particular pair.
+
+ History and applications 
+The model is named after Ralph A. Bradley and Milton E. Terry, who presented it in 1952, although it had already been studied by Ernst Zermelo in the 1920s. Applications of the model include the ranking of competitors in sports, chess, and other competitions, the ranking of products in paired comparison surveys of consumer choice, analysis of dominance hierarchies within animal and human communities, ranking of journals, and estimation of the relevance of documents in machine-learned search engines.
+
+ Definition 
+The Bradley–Terry model can be parametrized in various ways. Equation () is perhaps the most common, but there are a number of others.  Bradley and Terry themselves defined exponential score functions , so that
+
+Alternatively, one can use a logit, such that
+
+.
+
+This formulation highlights the similarity between the Bradley–Terry model and logistic regression.  Both employ essentially the same model but in different ways.  In logistic regression one typically knows the parameters  and attempts to infer the functional form of ; in ranking under the Bradley–Terry model one knows the functional form and attempts to infer the parameters.
+
+ Estimating the parameters 
+The most common application of the Bradley–Terry model is to infer the values of the parameters  given an observed set of outcomes , such as wins and losses in a competition.  The simplest way to estimate the parameters is by maximum likelihood estimation, i.e., by maximizing the likelihood of the observed outcomes given the model and parameter values.
+
+Suppose we know the outcomes of a set of pairwise competitions between a certain group of individuals, and let  be the number of times individual  beats individual .  Then the likelihood of this set of outcomes within the Bradley–Terry model is  and the log-likelihood of the parameter vector  is
+
+Zermelo showed that this expression has only a single maximum, which can be found by differentiating with respect to  and setting the result to zero, which leads to
+
+This equation has no known closed-form solution, but Zermelo suggested solving it by simple iteration.  Starting from any convenient set of (positive) initial values for the , one iteratively performs the update
+
+for all  in turn.  The resulting parameters are arbitrary up to an overall multiplicative constant, so after computing all of the new values they should be normalized by dividing by their geometric mean thus:
+
+This estimation procedure improves the log-likelihood on every iteration, and is guaranteed to eventually reach the unique maximum.  It is, however, slow to converge.  More recently it has been pointed out that equation () can also be rearranged as
+
+which can be solved by iterating
+
+again normalizing after every round of updates using equation (). This iteration gives identical results to the one in () but converges much faster and hence is normally preferred over ().
+
+ Worked example of solution procedure 
+Consider a sporting competition between four teams, who play a total of 22 games among themselves.  Each team's wins are given in the rows of the table below and the opponents are given as the columns:
++ResultsABCDA -201B3 -50C03 -1D403 -
+For example, Team A has beat Team B twice and lost to team B three times; not played team C at all; won once and lost four times against team D. 
+
+We would like to estimate the relative strengths of the teams, which we do by calculating the parameters , with higher parameters indicating greater prowess. To do this, we initialize the four entries in the parameter vector  arbitrarily, for example assigning the value 1 to each team: .  Then we apply equation () to update , which gives
+
+Now, we apply () again to update , making sure to use the new value of  that we just calculated:
+
+Similarly for  and  we get
+
+Then we normalize all the parameters by dividing by their geometric mean  to get the estimated parameters .
+
+To improve the estimates further, we repeat the process, using the new  values.  For example,
+
+.
+
+Repeating this process for the remaining parameters and normalizing, we get .  Repeating a further 10 times gives rapid convergence toward a final solution of .  This indicates that Team D is the strongest and Team B the second strongest, while Teams A and C are nearly equal in strength but below Teams B and D.  In this way the Bradley-Terry model lets us infer the relationship between all four teams, even though not all teams have played each other.

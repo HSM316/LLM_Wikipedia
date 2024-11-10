@@ -1,0 +1,55 @@
+400px|The TF algorithm produces the background image from a video of a street with many pedestrians crossing.
+The Teknomo–Fernandez algorithm (TF algorithm), is an efficient algorithm for generating the background image of a given video sequence.
+
+By assuming that the background image is shown in the majority of the video, the algorithm is able to generate a good background image of a video in -time using only a small number of binary operations and Boolean Bit operations, which require a small amount of memory and has built-in operators found in many programming languages such as C, C++, and Java.
+
+History
+500px|The TF algorithm generates the colored background image and uses it for background subtraction.
+People tracking from videos usually involves some form of background subtraction to segment foreground from background. Once foreground images are extracted, then desired algorithms (such as those for motion tracking, object tracking, and facial recognition) may be executed using these images.
+
+However, background subtraction requires that the background image is already available and unfortunately, this is not always the case. Traditionally, the background image is searched for manually or automatically from the video images when there are no objects. More recently, automatic background generation through object detection, medial filtering, medoid filtering, approximated median filtering, linear predictive filter, non-parametric model, Kalman filter, and adaptive smoothening have been suggested; however, most of these methods have high computational complexity and are resource-intensive.
+
+The Teknomo–Fernandez algorithm is also an automatic background generation algorithm. Its advantage, however, is its computational speed of only -time, depending on the resolution  of an image and its accuracy gained within a manageable number of frames. Only at least three frames from a video is needed to produce the background image assuming that for every pixel position, the background occurs in the majority of the videos. Furthermore, it can be performed for both grayscale and colored videos.
+
+Assumptions
+ The camera is stationary.
+ The light of the environment changes only slowly relative to the motions of the people in the scene.
+ The number of people does not occupy the scene for the most of the time at the same place.
+
+Generally, however, the algorithm will certainly work whenever the following single important assumption holds: For each pixel position, the majority of the pixel values in the entire video contain the pixel value of the actual background image (at that position).As long as each part of the background is shown in the majority of the video, the entire background image needs not to appear in any of its frames. The algorithm is expected to work accurately.
+
+Background image generation
+Equations
+ For three frames of image sequence , , and , the background image  is obtained using      
+The Boolean mode function  of the table occurs when the number of 1 entries is larger than half of the number of images such that     
+ For three images, the background image  can be taken as the value
+  
+
+Background generation algorithm
+At the first level, three frames are selected at random from the image sequence to produce a background image by combining them using the first equation. This yields a better background image at the second level. The procedure is repeated until desired level .
+
+Theoretical accuracy
+At level , the probability  that the modal bit predicted is the actual modal bit is represented by the equation .
+The table below gives the computed probability values across several levels using some specific initial probabilities. It can be observed that even if the modal bit at the considered position is at a low 60% of the frames, the probability of accurate modal bit determination is already more than 99% at 6 levels.
+inline|center|400px|This table gives the computed probability values across several levels using some specific initial probabilities. It can be observed that even if the modal bit at the considered position is at a low 60% of the frames, the probability of accurate modal bit determination is already more than 99% at six levels.
+
+Space complexity
+The space requirement of the Teknomo–Fernandez algorithm is given by the function , depending on the resolution  of the image, the number  of frames in the video, and the desired number  of levels. However, the fact that  will probably not exceed 6 reduces the space complexity to .
+
+Time complexity
+The entire algorithm runs in -time, only depending on the resolution of the image. Computing the modal bit for each bit can be done in -time while the computation of the resulting image from the three given images can be done in -time. The number of the images to be processed in  levels is . However, since , then this is actually , thus the algorithm runs in .
+
+Variants
+A variant of the Teknomo–Fernandez algorithm that incorporates the Monte-Carlo method named CRF has been developed. Two different configurations of CRF were implemented: CRF9,2 and CRF81,1. Experiments on some colored video sequences showed that the CRF configurations outperform the TF algorithm in terms of accuracy. However, the TF algorithm remains more efficient in terms of processing time.
+
+Applications
+ Object detection
+ Face detection
+ Face recognition
+ Pedestrian detection
+ Video surveillance
+ Motion capture
+ Human-computer interaction
+ Content-based video coding
+ Traffic monitoring
+ Real-time gesture recognition

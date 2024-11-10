@@ -1,0 +1,21 @@
+Fog robotics can be defined as an architecture which consists of storage, networking functions, control with fog computing closer to robots.Fog Robotics: An Introduction. Gudi, S.L.K.C., et al. IEEE/RSJ International Conference on Intelligent Robots and Systems. 2017
+
+Concept
+Fog robotics mainly consists of a fog robot server and the cloud.Fog Robotics: A New Approach to Achieve Efficient and Fluent Human-Robot Interaction. Ingrid Fadelli, ECN Magazine, USA 2018 It acts as a companion to cloud by shoving the data near to the user with the help of a local server. Moreover, these servers are adaptable, consists of processing power for computation, network capability, and secured by sharing the outcomes to other robots for advanced performance with the lowest possible latency. 
+
+As cloud robotics is facing issues such as bandwidth limitations, latency issues, quality of service, privacy and security - Fog robotics can be seen as a viable option for the future robotic systems.Getting a Grip on Reality: Deep Learning and Robot Grasping Matthew Panzarino, TechCrunch, 2018 It is also considered as distributed robot systems of the next generation because robots require much brain power for processing billions of computations while performing its task.Robots and the return to collaborative intelligence. Ken Goldberg, Nature Machine Intelligence, 2019 For instance, fog robotics can play an essential role in helping a robot to grasp spray bottle.Robots can't hold stuff very well, but you can help Matt Simon, Wired, 2018
+
+Applications
+
+A social robot can either connect to the cloud or fog robot server depending upon the availability of information. For instance, it can make a robot working at an airport to communicate with other robots for effective communication with the help of fog robotics.Fog robotics: A new approach to achieve efficient and fluent human-robot interaction. Ingrid Fadelli, Tech Xplore, UK 2018
+
+Research
+
+Fog Robotics
+This project promotes the applicability of fog robotics with regards to human-robot interaction scenarios. It utilises fog robot servers, cloud, and the robots for evaluation of fog robotics architecture.
+
+To improve the security and performance of robotic/machine-learning applications operating in edge computing environments, this project investigates the use of data capsules. As one of the applications, it also examines the fog robot system to preserve the privacy and security of the data.
+
+This project particularly targets the field of radio access network at the edge. As part of this project, a real-time application of fog-assisted robotics is explored. Also, remote monitoring of robots and fleet formation for coordinated movement is being investigated.
+
+This project focusses on designing novel programming models for Fog applications both hardware and operating system (OS) mechanisms including communication protocols of fog nodes. These fog nodes will be further tested real time on robots and other automation devices. Furthermore, an open-source architecture will be built on open standards, e.g., 5G, OPC Unified Architecture (UA), and Time-Sensitive Networking (TSN).

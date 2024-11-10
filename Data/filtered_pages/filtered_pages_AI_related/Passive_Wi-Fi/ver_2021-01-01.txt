@@ -1,0 +1,15 @@
+Passive Wi-Fi is a refinement of Wi-Fi technology that uses passive reflection to reduce energy consumption.
+
+ Wi-Fi energy use 
+
+Wi-Fi use can account for up to 60 percent of a smartphone’s energy consumption. When not connected to a network, Wi-Fi consumes energy because the device constantly searches for a signal.
+
+ Backscattering 
+
+The technique communicates via backscattering, reflecting incoming radio waves sent from a separate device. The technique is similar to contactless RFID chip  cards although unlike such cards, the new technique does not require a special device to read the signal.
+
+The project effectively decoupled the analog and the digital radio signals. Power-intensive functions – like producing a signal at a specific frequency are assigned to a single device in the network that is plugged into the grid. Smartphones modify and reflect this signal to communicate to the router. Prototype passive devices transferred data as far as 100 feet through walls at 11 megabits per second. The system used  10s of microwatts of power, 10−4 less energy than conventional Wi-fi devices, and one thousandth the energy of Bluetooth LE and ZigBee communications standards.
+
+ Applications 
+
+Applications include smart home devices such as smoke detectors, temperature sensors and security cameras that will no longer require a power source.

@@ -1,0 +1,69 @@
+HIV Resistance Response Database Initiative (RDI) is a not-for-profit organisation established in 2002 with the following mission:
+
+To improve the clinical management of HIV infection by developing a large clinical database and bioinformatic techniques that predict accurately any individual's response to any combination of HIV drugs.
+
+The RDI has the following specific goals:
+
+ To be an independent repository of HIV resistance and treatment outcome data
+ To use bioinformatics to explore the relationships between resistance, other clinical and laboratory factors and HIV treatment outcome
+ To develop and make freely available a system to predict treatment response, as an aid to optimising and individualising the clinical management of HIV infection
+
+The RDI consists of a small executive group based in the UK, an international advisory group of leading HIV/AIDS scientists and clinicians, and an extensive global network of collaborators and data contributors.
+
+Background
+Human immunodeficiency virus (HIV) is the virus that causes acquired immunodeficiency syndrome (AIDS), a condition in which the immune system begins to fail, leading to life-threatening opportunistic infections.
+
+There are approximately 25 HIV ‘antiretroviral’ drugs that have been approved for the treatment of HIV infection, from six different classes, based on the point in the HIV life-cycle at which they act.
+
+They are used in combination; typically 3 or more drugs from 2 or more different classes, a form of therapy known as highly active antiretroviral therapy or HAART. The aim of therapy is suppression of the virus to very low, ideally undetectable, levels in the blood this prevents the virus from depleting the immune cells that it preferentially attacks (CD4 cells) and prevents or delays illness and death.
+
+Despite the expanding availability of these drugs and the impact of their use, treatments continue to fail, often involving to the development of resistance.  During drug therapy, low-level virus replication still occurs, particularly when a patient misses a dose. HIV makes errors in copying its genetic material and, if a mutation makes the virus resistant to one or more of the drugs, it may begin to replicate more successfully in the presence of that drug and undermine the effect of the treatment. If this happens then the treatment needs to be changed to re-establish control over the virus.
+
+In well-resourced healthcare settings, when treatment fails a resistance test may be run to predict to which drugs the patient's virus is resistant.  The type of test in most common use is the genotype test, which detects mutations in the viral genetic code. This information is then typically interpreted using rules equating individual mutations with resistance against individual drugs. However, there are many different interpretation systems available that do not always agree, the systems only provide categorical results (resistant, sensitive or intermediate) and they do not necessarily relate well to how a patient will respond to a combination of drugs in the clinic.
+
+RDI Overview
+The RDI was established in 2002 to pioneer a new approach: to develop computational models using a wide range of laboratory and clinical data collected from thousands of patients treated with HAART all over the world and to use these models to predict how an individual patient will respond to different combinations of drugs.
+
+Key to the success of this approach is the collection of large amounts of data with which to train the models and the use of data from as wide and heterogeneous range of sources as possible to maximise the generalisability of the models’ predictions. In order to achieve this, the RDI set out to involve as many clinics worldwide as possible and to be the single repository for the data required, in an attempt to avoid unnecessary duplication of effort and competition.
+
+As of January 2019, the RDI has collected data from approximately 250,000 patients from dozens of clinics in more than 30 countries. It is probably the largest database of its kind in the world.  The data includes demographic information for the patient, and multiple determinations of the amount of virus in the patient's bloodstream, CD4 cells counts (a white blood cell critical to the function of the immune system that HIV targets and destroys), genetic code of the patients virus, and details of the drugs that have been used to treat the patient.
+
+The RDI has used these data to conduct extensive research in order to develop the most accurate system possible for the prediction of treatment response. This research involved the development and comparison of different computational modelling methods including artificial neural networks, support vector machines, random forests and logistical regression.
+
+The predictions of the RDI's models have historically correlated well with the actual changes in virus load of patients in the clinic, typically achieving a correlation co-efficient of 0.7 or more.
+
+Recent models have predicted whether a combination treatment will reduce the level of virus in the patient's bloodstream to undetectable levels with an accuracy of approximately 80%, significantly better than just using a genotype with rules-based interpretation.
+
+HIV-TRePS
+In October 2010, following clinical testing in two multinational studies, the RDI made its experimental HIV Treatment Response Prediction System, HIV-TRePS available over the Internet. In January 2011, two clinical studies were published indicating that use of the HIV-TRePS system could lead to clinical and economic benefits.  The studies, conducted by expert HIV physicians in the US, Canada and Italy, showed that use of the system was associated with changes of treatment decision to combinations involving fewer drugs overall, which were predicted to result in better virological responses, suggesting that use of the system could potentially improve patient outcomes and reduce the overall number and cost of drugs used.
+
+As clinics in resource-limited settings are often unable to afford genotyping, the RDI has developed models that predict treatment response without the need for a genotype, with only a small loss of accuracy. In July 2011, the RDI made these models available as part of the HIV-TRePS system.  This version is aimed particularly at resource-limited settings where genotyping is often not routinely available. The most recent of these models, trained with the largest dataset so far, achieved 80% accuracy, which is comparable to models that use a genotype in their predictions and significantly more accurate than genotyping with rules-based interpretation itself.
+
+HIV-TRePS is now in use in approximately 90 countries as a tool to predict virological response to therapy and avoid treatment failure.
+
+The system has been expanded to enable physicians to include their local drug costs in the modelling.  A recent study of data from an Indian cohort demonstrated that the system was able to identify combinations of three locally available drugs with a higher probability of success than the regimen prescribed in the clinic, including those cases where the treatment used in the clinic failed. Moreover, in all these cases some of the alternatives were less costly than the regimen used in the clinic, suggesting that the system could be not only help avoid treatment failure but also reduce costs.
+
+RDI Personnel
+
+RDI Executive
+ Dr Brendan Larder - Scientific Chair
+ Dr Andrew Revell - Executive Director
+ Dr Dechao Wang - Director Bioinformatics
+ Daniel Coe – Director of Software Development
+
+International Advisory Group
+ Dr Julio Montaner (BC Centre For Excellence in HIV/AIDS, Vancouver, Canada)
+ Dr John Baxter (Cooper University Hospital, Camden, NJ, United States)
+ Dr Sean Emery (National Centre in HIV Epidemiology and Clinical Research, Sydney, Australia)
+ Dr Jose Gatell (Hospital Clinic of Barcelona, Spain)
+ Dr Brian Gazzard (Chelsea and Westminster Hospital, London, United Kingdom)
+Marta Boffito (Chelsea and Westminster Hospital, London, United Kingdom)
+ Dr Anna-Maria Geretti (Royal Free Hospital, London, United Kingdom)
+ Dr Richard Harrigan (BC Centre For Excellence in HIV/AIDS, Vancouver, Canada)
+
+RDI data and study group
+Cohorts: Peter Reiss and Ard van Sighem (ATHENA, the Netherlands); Julio Montaner and Richard Harrigan (BC Center for Excellence in HIV & AIDS, Canada); Tobias Rinke de Wit, Raph Hamers and Kim Sigaloff (PASER-M cohort, The Netherlands); Brian Agan, Vincent Marconi and Scott Wegner (US Department of Defense); Wataru Sugiura (National Institute of Health, Japan); Maurizio Zazzi (MASTER, Italy); Rolf Kaiser and Eugen Schuelter (Arevir Cohort, Köln, Germany); Adrian Streinu-Cercel (National Institute of Infectious Diseases Prof.Dr. Matei Balş, Bucharest, Romania); Gerardo Alvarez-Uria (VFHCS, India), Maria-Jesus Perez-Elias, (CORIS, Spain), Tulio de Oliveira, (SATuRN, South Africa).
+
+Clinics: Jose Gatell and Elisa Lazzari (University Hospital, Barcelona, Spain); Brian Gazzard, Mark Nelson, Anton Pozniak and Sundhiya Mandalia (Chelsea and Westminster Hospital, London, UK); Colette Smith (Royal Free Hospital, London, UK); Lidia Ruiz and Bonaventura Clotet (Fundacion Irsi Caixa, Badelona, Spain); Schlomo Staszewski (Hospital of the Johann Wolfgang Goethe-University, Frankfurt, Germany); Carlo Torti (University of Brescia, Italy); H Clifford Lane, Julia A Metcalf and Catherine A Rehm (National Institutes of Health Clinic, Rockville, USA); Maria-Jesus Perez-Elias (Instituto Ramón y Cajal de Investigación Sanitaria, Madrid, Spain); Stefano Vella and Gabrielle Dettorre (Sapienza University, Rome, Italy); Andrew Carr, Richard Norris and Karl Hesse (Immunology B Ambulatory Care Service, St. Vincent's Hospital, Sydney, NSW, Australia); Dr Emanuel Vlahakis (Taylor's Square Private Clinic, Darlinghurst, NSW, Australia); Hugo Tempelman and Roos Barth (Ndlovu Care Group, Elandsdoorn, South Africa), Robin Wood, Carl Morrow and Dolphina Cogill (Desmond Tutu HIV Centre, University of Cape Town, South Africa); Chris Hoffmann (Aurum Institute, Johannesburg, South Africa and Johns Hopkins University, Boston, USA; Luminita Ene (“Dr. Victor Babes” Hospital for Infectious and Tropical Diseases, Bucharest, Romania); Gordana Dragovic (University of Belgrade, Belgrade, Serbia); Ricardo Diaz and Cecilia Sucupira (Federal University of São Paulo, São Paulo Brazil); Omar Sued and Carina Cesar (Fundación Huésped, Buenos Aires, Argentina); Juan Sierra Madero (Instituto Nacional de Ciencias Medicas y Nutricion Salvador Zubiran, Mexico City, Mexico); Pachamuthu Balakrishnan and Shanmugam Saravanan (YRG Care, Chennai, India).
+
+Clinical trials: Sean Emery and David Cooper (CREST); Carlo Torti (GenPherex); John Baxter (GART, MDR); Laura Monno and Carlo Torti (PhenGen); Jose Gatell and Bonventura Clotet (HAVANA); Gaston Picchio and Marie-Pierre deBethune (DUET 1 & 2 and POWER 3); Maria-Jesus Perez-Elias (RealVirfen); Sean Emery, Paul Khabo and Lotty Ledwaba (PHIDISA).

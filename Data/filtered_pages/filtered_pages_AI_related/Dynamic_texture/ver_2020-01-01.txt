@@ -1,0 +1,21 @@
+Dynamic texture ( sometimes referred to as temporal texture) is the texture with motion which can be found in videos of sea-waves, fire, smoke, wavy trees, etc. Dynamic texture has a spatially repetitive pattern with time-varying visual pattern. Modeling and analyzing dynamic texture is a topic of images processing and pattern recognition in computer vision.
+
+Extracting features that describe the dynamic texture can be utilized for tasks of images sequences classification, segmentation, recognition and retrieval.Comparing with texture found within static images, analyzing dynamic texture is a challenging problem. It is important that the extracted features from dynamic texture combine motion and appearance description, and also be invariance to some transformation such as rotation,translation and illumination.
+
+ Analysis methods of dynamic texture 
+The methods of dynamic texture recognition can categorized as follows:
+
+ Methods based on optical flow: by applying optical flow to the dynamic texture, velocity with direction and magnitude can be detected and used to recognize the dynamic texture. Due to simplicity of its computation, it is currently the most popular method.
+ Methods computing geometric properties: this methods track the surfaces of motion trajectories in spatiotemporal domain.  
+ Methods based on local spatiotemporal filtering : this methods analyze the local spatiotemporal patterns and its orientation and energy and employ them as feature used for classification.
+ Methods based on global spatiotemporal transform: this method characterize the motion at different scale using wavelets that can decompose the motion into local and global.
+ Model-based methods : These methods aims at generating a model to describe the motion by a set of parameters.
+
+ Applications 
+-      Segmenting the sequence images of natural scenes. This helps on differentiate between streets and grass alongside these streets which could be used in the application of navigations.
+
+-      Motion detection : Dynamic texture features extracted from footage videos can be exploited to detect abnormal crowd activities.
+
+-      Video classification: video of natural scenes or other scenes that exhibit dynamic textures.
+
+-      Video retrieval :  Dynamic textures can be employed as a feature retrieve videos that contain, for example, sea-waves, smoke, clouds, wavy trees.

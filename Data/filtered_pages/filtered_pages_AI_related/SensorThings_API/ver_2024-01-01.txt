@@ -1,0 +1,185 @@
+SensorThings API is an Open Geospatial Consortium (OGC) standard providing an open and unified framework to interconnect IoT sensing devices, data, and applications over the Web. It is an open standard addressing the syntactic interoperability and semantic interoperability of the Internet of Things. It complements the existing IoT networking protocols such CoAP, MQTT, HTTP, 6LowPAN. While the above-mentioned IoT networking protocols are addressing the ability for different IoT systems to exchange information, OGC SensorThings API is addressing the ability for different IoT systems to use and understand the exchanged information. As an OGC standard, SensorThings API also allows easy integration into existing Spatial Data Infrastructures or Geographic Information Systems.
+
+OGC SensorThings API has two parts: (1) Part I - Sensing and (2) Part II - Tasking. OGC SensorThings API Part I - Sensing was released for public comment on June 18, 2015. The OGC Technical Committee (TC) approves start of electronic vote on December 3, 2015, and the SensorThings API Part I - Sensing passed the TC vote on February 1, 2016. The official OGC standard specification was published online on July 26, 2016. In 2019 the SensorThings API was also published as a United Nation's ITU-T Technical Specification.
+
+OGC SensorThings API Part II - Tasking Core was released for public comment on February 20, 2018, and it passed the TC vote on June 1, 2018. The official OGC standard specification for the SensorThings API Part II - Tasking Core was published online on January 8, 2019.
+
+In order to offer a better developer experience, the SensorThings API Part II - Tasking Core Discussion Paper was published online on December 18, 2018. The Tasking Core Discussion paper provides 15 JSON examples showing how SensorThings API Part II - Tasking Core can be used.
+
+ Design 
+SensorThings API is designed specifically for resource-constrained IoT devices and the Web developer community. It follows REST principles, the JSON encoding, and the OASIS OData protocol and URL conventions. Also, it has an MQTT extension allowing users/devices to publish and subscribe updates from devices, and can use CoAP in addition to HTTP.
+400x400px|SensorThings API data model
+The foundation of the SensorThings API is its data model that is based on the ISO 19156 (ISO/OGC Observations and Measurements), that defines a conceptual model for observations, and for features involved in sampling when making observations. In the context of the SensorThings, the features are modelled as Things, Sensors (i.e., Procedures in O&M), and Feature of Interests. As a result, the SensorThings API provides an interoperable Observation-focus view, that is particularly useful to reconcile the differences between heterogeneous sensing systems (e.g., in-situ sensors and remote sensors).
+
+An IoT device or system is modelled as a Thing. A Thing has an arbitrary number of Locations (including 0 Locations) and an arbitrary number of Datastreams (including 0 Datastreams). Each Datastream observes one ObservedProperty with one Sensor and has many Observations collected by the Sensor. Each Observation observes one particular FeatureOfInterest. The O&M based model allows SensorThings to accommodate heterogeneous IoT devices and the data collected by the devices.
+
+SensorThings API provides two main functionalities, each handled by a part. The two profiles are the Sensing part and the Tasking part. The Sensing part provides a standard way to manage and retrieve observations and metadata from heterogeneous IoT sensor systems, and the Sensing part functions are similar to the OGC Sensor Observation Service. The Tasking part provides a standard way for parameterizing - also called tasking - of task-able IoT devices, such as sensors or actuators. The Tasking part functions are similar to the OGC Sensor Planning Service.  The Sensing part is designed based on the ISO/OGC Observations and Measurements (O&M) model, and allows IoT devices and applications to CREATE, READ, UPDATE, and DELETE (i.e., HTTP POST, GET, PATCH, and DELETE) IoT data and metadata in a SensorThings service.
+
+ Entities (Resources) 
+SensorThings API Part I - Sensing defines the following resources. As SensorThings is a RESTful web service, each entity can be CREATE, READ, UPDATE, and DELETE with standard HTTP verbs (POST, GET, PATCH, and DELETE):
+ Thing: An object of the physical world (physical things) or the information world (virtual things) that is capable of being identified and integrated into communication networks.
+ Locations: Locates the Thing or the Things it associated with.
+ HistoricalLocations: Set provides the current (i.e., last known) and previous locations of the Thing with their time.
+ Datastream: A collection of Observations and the Observations in a Datastream measure the same ObservedProperty and are produced by the same Sensor.
+ ObservedProperty : Specifies the phenomenon of an Observation.
+ Sensor : An instrument that observes a property or phenomenon with the goal of producing an estimate of the value of the property.
+ Observation: Act of measuring or otherwise determining the value of a property.
+ FeatureOfInterest: An Observation results in a value being assigned to a phenomenon.The phenomenon is a property of a feature, the latter being the FeatureOfInterest of the Observation.
+In addition to the above sensing resources, SensorThings API Part II - Tasking Core defines the following resources:
+
+ TaskingCapabilities: Specifies the task-able parameters of an actuator.
+ Tasks: A collection of Tasks that has been created.
+ Actuator : A type of transducer that converts a signal to some real-world action or phenomenon.
+
+ Example Payload 
+http://example.org/v1.0/Datastream(id)/Observations
+{
+  "@iot.count": 2,
+  "value": [
+    {
+      "@iot.id": 1,
+      "@iot.selfLink": "http://example.org/v1.0/Observations(1)",
+      "phenomenonTime": "2016-01-01T05:00:00.000Z",
+      "result": "-9",
+      "resultTime": null,
+      "Datastream@iot.navigationLink": "http://example.org/v1.0/Observations(1)/Datastream",
+      "FeatureOfInterest@iot.navigationLink": "http://example.org/v1.0/Observations(1)/FeatureOfInterest"
+    },
+    {
+      "@iot.id": 2,
+      "@iot.selfLink": "http://example.org/v1.0/Observations(2)",
+      "phenomenonTime": "2016-01-01T04:00:00.000Z",
+      "result": "-10",
+      "resultTime": null,
+      "Datastream@iot.navigationLink": "http://example.org/v1.0/Observations(2)/Datastream",
+      "FeatureOfInterest@iot.navigationLink": "http://example.org/v1.0/Observations(2)/FeatureOfInterest"
+    }
+  ]
+}
+
+ Data Array Extensions 
+In order to reduce the data size transmitted over the network, SensorThings API data array extension allows users to request for multiple Observation entities and format the entities in the dataArray format. When a SensorThings service returns a dataArray response, the service groups Observation entities by Datastream or MultiDatastream, which means the Observation entities that link to the same Datastream or the same MultiDatastream are aggregated in one dataArray.
+
+ Example request for data array 
+http://example.org/v1.0/Observations?$resultFormat=dataArray
+
+ Example data array response 
+{
+  "value": [
+    {
+      "Datastream@iot.navigationLink": "http://example.org/v1.0/Datastreams(1)",
+      "components": [
+        "id",
+        "phenomenonTime",
+        "resultTime",
+        "result"
+      ],
+      "dataArray@iot.count": 3,
+      "dataArray": [
+        [
+          1,
+          "2005-08-05T12:21:13Z",
+          "2005-08-05T12:21:13Z",
+          20
+        ],
+        [
+          2,
+          "2005-08-05T12:22:08Z",
+          "2005-08-05T12:21:13Z",
+          30
+        ],
+        [
+          3,
+          "2005-08-05T12:22:54Z",
+          "2005-08-05T12:21:13Z",
+          0
+        ]
+      ]
+    }
+  ]
+}
+
+ Evaluation 
+Interoperability between OpenIoT and SensorThings
+"We believe that the implementation of the SensorThing API will be a major improvement for the OpenIoT middleware. It will give OpenIoT a standardized and truly easy to use interface to sensor values.This will complement the rich semantic reasoning services with a simple resource based interface. And the consistent data model mapping gives both a common context to describe the internet of things".
+
+Efficiency of SensorThings API
+A comprehensive evaluation of the SensorThings API is published in Jazayeri, Mohammad Ali, Steve HL Liang, and Chih-Yuan Huang. "Implementation and Evaluation of Four Interoperable Open Standards for the Internet of Things." Sensors 15.9 (2015): 24343-24373.
+
+ Quotes 
+SensorThings API was demonstrated in a pilot project sponsored by the Department of Homeland Security Science and Technology Directorate. Dr. Reginald Brothers, the Undersecretary of the Homeland Security Science and Technology, was "impressed with the ‘state of the practical’ where these various industry sensors can be integrated today using open standards that remove the stovepipe limitations of one-off technologies. "
+
+ OGC SensorThings API Standard Specification 
+ OGC® SensorThings API Part 1: Sensing
+ Internal reference number of this OGC®  document: 15-078r6
+ Submission Date: 2015-06-18
+ Publication Date: 2016-07-26
+ Editor: Steve Liang (University of Calgary/SensorUp)
+ Co-Editors: Chih-Yuan Huang (National Central University) / Tania Khalafbeigi (University of Calgary/SensorUp)
+ OGC® SensorThings API Part 2: Tasking Core
+ Internal reference number of this OGC®  document: 17-079r1
+ Submission Date: 2017-10-13
+ Publication Date: 2019-01-08
+ Editor: Steve Liang (University of Calgary/SensorUp)
+ Co-Editors: Tania Khalafbeigi (University of Calgary/SensorUp)
+ Developer API Documentation
+ Part I - Sensing
+ Part II - Tasking
+ SensorThings API Sandbox 
+ SensorThings Compliance Test Suite
+
+ Free and Open Source SensorThings API Implementations 
+
+ Whiskers 
+In March 2016 SensorUp and the GeoSensorWeb Lab at the University of Calgary submitted an open source software project proposal to the Eclipse Foundation and has been approved. The project is called Whiskers. Whiskers is an OGC SensorThings API framework. It will have a JavaScript client and a light-weight server for IoT gateway devices (e.g., Raspberry Pi or BeagleBone). Whiskers aim to foster a healthy and open IoT ecosystem, as opposed to one dominated by proprietary information silos. Whiskers aims to make SensorThings development easy for the large and growing world of IoT developers.
+
+ GOST 
+GOST is an open source implementation of the SensorThings API in the Go programming language initiated by Geodan. It contains easily deployable server software and a JavaScript client. Currently (June 2016) it is in development but a first version can already be downloaded and deployed. The software can be installed on any device supporting Docker or Go (e.g. Windows, Linux, Mac OS and Raspberry Pi). By default sensor data is stored in a PostgreSQL database.
+
+ FROST 
+FROST-Server is an Open Source server implementation of the OGC SensorThings API. FROST-Server implements the entire specification, including all extensions. It is written in Java and can run in Tomcat or Wildfly and is available as a Docker image. Among its many features is the ability to use String or UUID based entity IDs.
+
+FROST-Client is a Java client library for communicating with a SensorThings API compatible server.
+
+ SensorThings HcDT Charting SDK 
+SensorThings HcDT is a JavaScript charting library for the OGC SensorThings API. It is based on the open source Highcharts library and DataTables. It is a front-end charting library enable developers to connect to datastreams from any OGC SensorThings API service, and display the sensor observations in charts, tables, or dashboard widgets for web applications.
+
+ Mozilla STA 
+Mozilla developed a node implementation of the OGC SensorThings API.
+
+ 52°North STA 
+52N SensorThingsAPI is an open source implementation of the OGC SensorThings API. Its core features are the interoperability with the 52N SOS implementing the OGC Sensor Observation Service, customizable database mappings and several convenience extensions. It can be deployed as a Docker container, inside an Apache Tomcat or as a standalone application.
+
+ Example Applications 
+
+ Department of Homeland Security S&T Shaken Fury Operational Experiment 
+In 2019 the Shaken Fury operational experiment for the DHS Next Generation First Responder program depicts a scenario of an earthquake causing partial structural collapse and HAZMAT leak at a stadium. OGC SensorThings API is used as the standard interface that interconnects multiple sensors and offers an IoT enabled real-time situational awareness.
+
+ Smart Citizens for Smart Cities YYC - Crowd-sourced Air Quality Sensing 
+On Oct 8th 2016, a group of volunteers (smart citizens) in Calgary gathered together, assembled their own sensors, installed at their houses, and formed a crowd-sourced air quality sensor network. All data are publicly available via OGC SensorThings API. This citizen sensing efforts increased the number of Calgary's air quality sensors from 3 to more than 50.
+
+ Smart Emission Project in Nijmegen, NL 
+Smart emission is an air quality monitoring project in the city of Nijmegen, NL. The project deployed multiple air quality sensors throughout the city. Data are published with open standards, including OGC SensorThings API. Part of the project is an open source ETL engine to load the project sensor data into an OGC SensorThings API.
+
+ SensorThings Dashboard 
+
+This dashboard provides easy-to-use client-side visualisation of Internet-of-Things sensor data from OGC SensorThings API compatible servers. Various types of widgets can be arranged and configured on the dashboard. It is a web application and can be embedded into any website. A live demo is available on the project page.
+https://github.com/SensorThings-Dashboard/SensorThings-Dashboard
+
+ GOST Dashboard v2 
+GOST Dashboard v2 is an open source library of custom HTML elements (web components) supporting SensorThings API. These elements facilitate the development of HTML applications integrating functionality and data from SensorThings API compatible services. The components are developed with Predix-UI and Polymer.
+
+ AFarCloud project OGC Connector 
+The connector enables interoperability between OGC-compliant data sources and the semantic middleware developed in the Horizon 2020 ECSEL project AFarCloud. It is a modular Java application with Docker-based deployment, implemented according to the 15-078r6 OGC SensorThings API 1.0 Implementation Standard.
+
+ Comparison between OGC SensorThings API and OGC Sensor Observation Services 
+SensorThings API provides functions similar to the OGC Sensor Observation Service, an OGC specification approved in 2005. Both standard specifications are under the OGC Sensor Web Enablement standard suite. The following table summarizes the technical difference between the two specifications.
+
+    OGC SensorThings API  OGC Sensor Observation Service (SOS) Encoding  JSON  XML Architecture Style  Resource Oriented Architecture  Service Oriented Architecture Binding  REST  SOAP Inserting new sensors or observations  HTTP POST (e.g., CRUD)  using SOS specific interfaces, e.g., RegisterSensor(), InsertObservation() Deleting existing sensors  HTTP DELETE  using SOS specific interfaces, i.e., DeleteSensor() Pagination  $top, $skip, $nextLink  Not Supported Pub/Sub Support  MQTT and SensorThings MQTT Extension  Not Supported Updating properties of existing sensors or observations  HTTP PATCH and JSON PATCH  Not Supported Deleting observations  HTTP DELETE  Not Supported Linked data support  JSON-LD  Not Supported Return only the properties selected by the client  $select  Not Supported Return multiple O&M entities (e.g., FeatureOfInterest and Observation) in one request/response  $expand  Not Supported
+
+ Links 
+ SensorThings API - GitHub
+ Presentation: Sensor up your connected applications with OGC SensorThings API (FOSS4G)
+ Chapter: Mapping the OGC SensorThings API onto the OpenIoT Middleware
+ Tutorial in YouTube: Getting Started Series #1, SensorThings Tutorial Series #2  and SensorThings Tutorial Series #3 
+ Application: SensorThings Playground  allows interested people and organizations to experiment with a SensorThings system via a friendly, step-by-step process.

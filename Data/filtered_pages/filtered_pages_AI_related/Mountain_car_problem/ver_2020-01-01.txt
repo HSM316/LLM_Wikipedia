@@ -1,0 +1,54 @@
+300px| The mountain car problem
+
+Mountain Car, a standard testing domain in Reinforcement Learning, is a problem in which an under-powered car must drive up a steep hill. Since gravity is stronger than the car's engine, even at full throttle, the car cannot simply accelerate up the steep slope. The car is situated in a valley and must learn to leverage potential energy by driving up the opposite hill before the car is able to make it to the goal at the top of the rightmost hill. The domain has been used as a test bed in various Reinforcement Learning papers.
+
+Introduction
+The mountain car problem, although fairly simple, is commonly applied because it requires a reinforcement learning agent to learn on two continuous variables: position and velocity. For any given state (position and velocity) of the car, the agent is given the possibility of driving left, driving right, or not using the engine at all. In the standard version of the problem, the agent receives a negative reward at every time step when the goal is not reached; the agent has no information about the goal until an initial success.
+
+History
+The mountain car problem appeared first in Andrew Moore's PhD Thesis (1990).[Moore, 1990] A. Moore, Efficient Memory-Based Learning for Robot Control, PhD thesis, University of Cambridge, November 1990. It was later more strictly defined in Singh and Sutton's Reinforcement Leaning paper with eligibility traces.[Singh and Sutton, 1996] Singh, S.P. and Sutton, R.S. (1996) Reinforcement learning with replacing eligibility traces. Machine Learning 22(1/2/3):123-158. The problem became more widely studied when Sutton and Barto added it to their book Reinforcement Learning: An Introduction (1998).[Sutton and Barto, 1998] Reinforcement Learning: An Introduction. Richard S. Sutton and Andrew G. Barto. A Bradford Book. The MIT Press Cambridge, Massachusetts London, England, 1998 Throughout the years many versions of the problem have been used, such as those which modify the reward function, termination condition, and/or the start state.
+
+Techniques used to solve mountain car
+Q-learning and similar techniques for mapping discrete states to discrete actions need to be extended to be able to deal with the continuous state space of the problem. Approaches often fall into one of two categories, state space discretization or function approximation.
+
+Discretization
+
+In this approach, two continuous state variables are pushed into discrete states by bucketing each continuous variable into multiple discrete states. This approach works with properly tuned parameters but a disadvantage is information gathered from one state is not used to evaluate another state. Tile coding can be used to improve discretization and involves continuous variables mapping into sets of buckets offset from one another. Each step of training has a wider impact on the value function approximation because when the offset grids are summed, the information is diffused.http://webdocs.cs.ualberta.ca/~sutton/book/8/node6.html#SECTION00132000000000000000
+
+Function approximation
+
+Function approximation is another way to solve the mountain car. By choosing a set of basis functions beforehand, or by generating them as the car drives, the agent can approximate the value function at each state. Unlike the step-wise version of the value function created with discretization, function approximation can more cleanly estimate the true smooth function of the mountain car domain.http://webdocs.cs.ualberta.ca/~sutton/book/8/node9.html#SECTION00140000000000000000
+
+Eligibility Traces
+
+An interesting aspect of the problem involves the delay of actual reward. The agent isn't able to learn about the goal until a successful completion. Given a naive approach for each trial the car can only backup the reward of the goal slightly. This is a problem for naive discretization because each discrete state will only be backed up once, taking a larger number of episodes to learn the problem. This problem can be alleviated via the mechanism of eligibility traces, which will automatically backup the reward given to states before, dramatically increasing the speed of learning. Eligibility traces can be viewed as a bridge from temporal difference learning methods to Monte Carlo methods.
+
+Technical details
+The mountain car problem has undergone many iterations. This section will focus on the standard well defined version from Sutton (2008).[Sutton, 2008] Mountain Car Software. Richard s. Sutton. http://www.cs.ualberta.ca/~sutton/MountainCar/MountainCar.html
+
+State variables
+
+Two-dimensional continuous state space.
+
+Actions
+
+One-dimensional discrete action space.
+
+Reward
+
+For every time step:
+
+Update function
+
+For every time step:
+
+Starting condition
+
+Optionally, many implementations include randomness in both parameters to show better generalized learning.
+
+Termination condition
+
+End the simulation when:
+
+Variations
+There are many versions of the mountain car which deviate in different ways from the standard model. Variables that vary include but are not limited to changing the constants (gravity and steepness) of the problem so specific tuning for specific policies become irrelevant and altering the reward function to affect the agent's ability to learn in a different manner. An example is changing the reward to be equal to the distance from the goal, or changing the reward to zero everywhere and one at the goal.  Additionally we can use a 3D mountain car with a 4D continuous state space.http://library.rl-community.org/wiki/Mountain_Car_3D_(CPP)

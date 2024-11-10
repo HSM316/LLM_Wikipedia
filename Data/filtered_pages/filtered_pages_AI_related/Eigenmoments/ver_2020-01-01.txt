@@ -1,0 +1,158 @@
+alt=concept chart of EigenMoment algorithm|Signal space is transformed into moment space, i.e. Geometric Moments, then it is transformed into noise space in which axes with lowest rate of noise are retained and finally transformed into feature space
+EigenMomentsPew-Thian Yap, Raveendran Paramesran, Eigenmoments, Pattern Recognition, Volume 40, Issue 4, April 2007, Pages 1234-1244, ISSN 0031-3203, 10.1016/j.patcog.2006.07.003. is a set of orthogonal, noise robust, invariant to rotation, scaling and translation and distribution sensitive moments. Their application can be found in signal processing and computer vision as descriptors of the signal or image. The descriptors can later be used for classification purposes.
+
+It is obtained by performing orthogonalization, via eigen analysis on geometric moments.M. K. Hu, "Visual Pattern Recognition by Moment Invariants", IRE Trans. Info. Theory, vol. IT-8, pp.179–187, 1962
+
+ Framework summary 
+EigenMoments are computed by performing eigen analysis on the moment space of an image by maximizing Signal to Noise Ratio in the feature space in form of Rayleigh quotient.
+
+This approach has several benefits in Image processing applications:
+ Dependency of moments in the moment space on the distribution of the images being transformed, ensures decorrelation of the final feature space after eigen analysis on the moment space.
+ The ability of EigenMoments to take into account distribution of the image makes it more versatile and adaptable for different genres.
+ Generated moment kernels are orthogonal and therefore analysis on the moment space becomes easier. Transformation with orthogonal moment kernels into moment space is analogous to projection of the image onto a number of orthogonal axes.
+ Nosiy components can be removed. This makes EigenMoments robust for classification applications.
+ Optimal information compaction can be obtained and therefore a few number of moments are needed to characterize the images.
+
+ Problem formulation 
+Assume that a signal vector  is taken from a certain distribution having coorelation , i.e.  where E[.] denotes expected value.
+
+Dimension of signal space, n, is often too large to be useful for practical application such as pattern classification, we need to transform the signal space into a space with lower dimensionality.
+
+This is performed by a two-step linear transformation:
+
+where  is the transformed signal,  a fixed transformation matrix which transforms the signal into the moment space, and   the transformation matrix which we are going to determine by maximizing the  SNR of the feature space resided by  . For the case of Geometric Moments, X would be the monomials. If , a full rank transformation would result, however usually we have  and . This is specially the case when  is of high dimensions.
+
+Finding  that maximizes the SNR of the feature space:
+
+where N is the correlation matrix of the noise signal. The problem can thus be formulated as
+
+subject to constraints:
+
+ where  is the Kronecker delta.
+
+It can be observed that this maximization is Rayleigh quotient by letting  and  and therefore can be written as:
+
+, 
+
+ Rayleigh quotient 
+Optimization of Rayleigh quotientT. De Bie, N. Cristianini, R. Rosipal, Eigenproblems in
+pattern recognition, in: E. Bayro-Corrochano (Ed.), Handbook of
+Computational Geometry for Pattern Recognition, Computer Vision,
+Neurocomputing and Robotics, Springer, Heidelberg, 2004G.Strang, Linear Algebra and Its Applications, second ed., Academic
+Press, New York, 1980. has the form:
+
+and  and , both are symmetric and  is positive definite and therefore invertible.
+Scaling  does not change the value of the object function and hence and additional scalar constraint  can be imposed on  and no solution would be lost when the objective function is optimized.
+
+This constraint optimization problem can be solved using Lagrangian multiplier:
+
+ subject to 
+
+equating first derivative to zero and we will have:
+
+which is an instance of Generalized Eigenvalue Problem (GEP).
+The GEP has the form:
+
+for any pair  that is a solution to above equation,  is called a generalized eigenvector and  is called a generalized eigenvalue.
+
+Finding  and  that satisfies this equations would produce the result which optimizes Rayleigh quotient.
+
+One way of maximizing Rayleigh quotient is through solving the Generalized Eigen Problem. Dimension reduction can be performed by simply choosing the first components , , with the highest values for  out of the  components, and discard the rest. Interpretation of this transformation is rotating and scaling the moment space, transforming it into a feature space with maximized SNR and therefore, the first  components are the components with highest  SNR values.
+
+The other method to look at this solution is to use the concept of simultaneous diagonalization instead of Generalized Eigen Problem.
+
+ Simultaneous diagonalization 
+
+ Let  and  as mentioned earlier. We can write  as two separate transformation matrices:
+
+ can be found by first diagonalize B:
+
+.
+
+Where  is a diagonal matrix sorted in increasing order. Since  is positive definite, thus . We can discard those eigenvalues that large and retain those close to 0, since this means the energy of the noise is close to 0 in this space, at this stage it is also possible to discard those eigenvectors that have large eigenvalues.
+
+Let  be the first  columns of , now  where  is the  principal submatrix of .
+
+Let
+
+and hence:
+
+.
+
+ whiten  and reduces the dimensionality from  to . The transformed space resided by  is called the noise space.
+
+Then, we diagonalize :
+
+,
+
+where .  is the matrix with eigenvalues of  on its diagonal. We may retain all the eigenvalues and their corresponding eigenvectors since the most of the noise are already discarded in previous step.
+
+Finally the transformation is given by:
+
+where  diagonalizes both the numerator and denominator of the SNR,
+
+,  and the transformation of signal  is defined as .
+
+ Information loss 
+To find the information loss when we discard some of the eigenvalues and eigenvectors we can perform following analysis:
+
+ Eigenmoments 
+
+Eigenmoments are derived by applying the above framework on Geometric Moments. They can be derived for both 1D and 2D signals.
+
+ 1D signal 
+
+If we let , i.e. the monomials, after the transformation  we obtain Geometric Moments, denoted by vector , of signal ,i.e. .
+
+In practice it is difficult to estimate the correlation signal due to insufficient number of samples, therefore parametric approaches are utilized.
+
+One such model can be defined as:
+
+,
+
+400px|alt=Model for correlation in signal|Plot of the parametric model which predicts correlations in the input signal. 
+
+where . This model of correlation can be replaced by other models however this model covers general natural images.
+
+Since  does not affect the maximization it can be dropped.
+
+The correlation of noise can be modelled as , where  is the energy of noise. Again  can be dropped because the constant does not have any effect on the maximization problem.
+
+Using the computed A and B and applying the algorithm discussed in previous section we find  and set of transformed monomials  which produces the moment kernels of EM. The moment kernels of EM decorrelate the correlation in the image.
+
+,
+
+and are orthogonal:
+
+ Example computation 
+
+Taking , the dimension of moment space as  and the dimension of feature space as , we will have:
+
+and
+
+ 2D signal 
+
+The derivation for 2D signal is the same as 1D signal except that conventional Geometric Moments are directly employed to obtain the set of 2D EigenMoments.
+
+The definition of Geometric Moments of order  for 2D image signal is:
+
+.
+
+which can be denoted as . Then the set of 2D EigenMoments are:
+
+,
+
+where  is a matrix that contains the set of EigenMoments.
+
+.
+
+ EigenMoment invariants (EMI)  
+In order to obtain a set of moment invariants we can use normalized Geometric Moments  instead of .
+
+Normalized Geometric Moments are invariant to Rotation, Scaling and Transformation and defined by:
+
+where: is the centroid of the image  and
+
+.
+
+ in this equation is a scaling factor depending on the image.  is usually set to 1 for binary images.

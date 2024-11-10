@@ -1,0 +1,20 @@
+ILNumerics is a mathematical class library for Common Language Infrastructure (CLI) developers and a domain specific language (DSL) for the implementation of numerical algorithms on the .NET platform. While algebra systems with graphical user interfaces focus on prototyping of algorithms, implementation of such algorithms into distribution-ready applications is done using 
+development environments and general purpose programming languages (GPL). ILNumerics is an extension to Visual Studio and aims at supporting the creation of technical applications based on .NET.
+
+History
+ILNumerics started in 2006 as an open source project, originating from Technische Universität Berlin. In 2007 ILNumerics won the BASTA! Innovation Awards 2007BASTA! Innovation Award 2007 as most innovative .NET project in Germany, Switzerland and Austria. After 6 years of open source development, the project added a closed source, proprietary license in 2011, aiming business and academic developers at the same time. The project quickly gained popularity (download numbers and engagement at stackoverflow.com, download counts from website not available).
+The .NET framework was selected as a managed foundation, since earlier attempts on the Java platform had been abandoned due to technical limitations. Similarly, the .NET framework has not been designed with the focus on requirements of technical application development. ILNumerics added interfaces to popular codes (LAPACK, FFTW), complex numbers and generic mult-dimensional array classes. In 2010 graphical capabilities have been added. Efforts to increase the performance of the technology were introduced in 2011. At the same time, a company was founded to continue the development. The technological goal is to establish the .NET framework as a feasible alternative to unmanaged languages for numeric computing.
+
+Syntax
+ILNumerics implements base functionality frequently needed for application development in technical areas: N-dimensional arrays, complex numbers, linear algebra, FFT and plotting controls (2D and 3D). The array classes are fully compatible with the array features of Matlab and numpy, including internal storage order, subarray creation, expansion, and advanced indexing. Higher level functionality is provided by toolboxes for interpolation, optimization, statistics, HDF5 and machine learning. The ILNumerics DSL is embedded into .NET. Computational algorithms are formulated using any CLI language. However, only C# and Visual Basic are officially supported. Due to the strong type system of the .NET framework algorithms created with ILNumerics are strongly typed. This deviates from the syntax of alternatives, which are often weakly typed and therefore easier to adopt.
+
+Graphics
+A scene graph is used in ILNumerics to realize graphical output. Interactive 2D and 3D plots are used in Windows Forms applications. Hardware accelerated drawing is available via OpenGL. A software renderer is provided for legacy hardware, based on GDI+ and SVG.
+
+IDE integration
+ILNumerics is distributed as an extension to Visual Studio. It adds a tool window to the IDE for the graphical inspection of mathematical objects while stepping through user code.
+
+Performance
+Since ILNumerics comes as a CLI assembly, it targets Common Language Infrastructure (CLI) applications. Just like Java - those frameworks are often criticized for not being suitable for numerical computations. Reasons are the memory management by a garbage collector, the intermediate language execution and deficient optimizations by the compilers involved. ILNumerics approaches these limitations by performing loop unrolling, removal of bound checks on array accesses and cache optimizations. Further speed-up is gained by the auto-management of the memory of large array objects. Numerical operations are parallelized on multicore systems. Linear algebra routines rely on processor specific optimized versions of LAPACK and BLAS.
+
+ILNumerics arrays utilize the unmanaged heap for storing data. This way, the size of ILNumerics arrays is not limited by the CLR and interoperability with 3rd party libraries is improved.

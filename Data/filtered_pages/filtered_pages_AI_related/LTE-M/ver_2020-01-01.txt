@@ -1,0 +1,10 @@
+LTE-M (LTE-MTC [Machine Type Communication]), which includes eMTC (enhanced Machine Type Communication), is a type of low power wide area network (LPWAN) radio technology standard developed by 3GPP to enable a wide range of cellular devices and services (specifically, for machine-to-machine and Internet of Things applications).LTE-M – the new GSMeMTC (LTE Cat-M1) The specification for eMTC (LTE Cat-M1) was frozen in 3GPP Release 13 (LTE Advanced Pro), in June 2016.Standards for the IoT Other 3GPP IoT technologies include NB-IoT and EC-GSM-IoT. 
+
+The advantage of LTE-M over NB-IoT is its comparatively higher data rate, mobility, and voice over the network, but it requires more bandwidth, is more costly, and cannot be put into guard band frequency band for now.DIFFERENCES BETWEEN NB-IOT AND LTE-M. In March 2019, the Global Mobile Suppliers Association reported that over 100 operators had deployed/launched either NB-IoT or LTE-M networks.GSA: Global Narrowband IoT – LTE-M networks – March 2019 (retrieved 25 March 2019)
+
+ 3GPP Narrowband Cellular Standards 
+
+ Deployments 
+As of March 2019 the Global Mobile Suppliers Association had identified:GSA: Global Narrowband IoT – LTE-M networks – March 2019 (retrieved 25 March 2019)
+ 60 operators in 35 countries investing in LTE-M networks
+ 34 of those operators in 24 countries had deployed/launched their networks

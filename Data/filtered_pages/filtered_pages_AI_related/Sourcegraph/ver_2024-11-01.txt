@@ -1,0 +1,37 @@
+Sourcegraph Inc. is a company developing code search and code intelligence tool that semantically indexes and analyzes large codebases so that they can be searched across commercial, open-source, local, and cloud-based repositories.
+
+The company has two products available: Cody and Code Search. Code Search was initially released in 2013 under the name Sourcegraph, but was rebranded to Code Search when the company unveiled Cody in 2023. Both products support all major programming languages.
+
+ History 
+Sourcegraph Inc. was founded in by Stanford graduates Quinn Slack and Beyang Liu to drive the development of a code search and code intelligence tool, formerly called Sourcegraph. It was first released in 2013 but was rebranded to Code Search in 2023. It was partly inspired by Liu's experience using Google Code Search while he was a Google intern, It was designed to "tackle the big code problem" by enabling developers to manage large codebases that span multiple repositories, programming languages, file formats, and projects. 
+
+Code Search was initially self-hosted by each customer on their own infrastructure. Early customers included Uber, Dropbox, and Lyft. In 2016, Code Search was criticized for being provided with a Fair Source License with the developers explaining that "all of Sourcegraph’s [sic] source code is publicly available and hackable" and was intended to "help open sourcers strike a balance between getting paid and preserving their values". In 2018, Code Search was licensed under the Apache License 2.0, and Sourcegraph OSS has since been released under the Apache License 2.0. The commercial version, Code Search Enterprise, has been released under its own license. In 2023, Code Search was criticized for dropping the Apache license for most of its code, leaving it public but only available under its Enterprise license.
+
+In 2019, Code Search was integrated into the GitLab codebase, giving GitLab users access to a browser-based developer platform. In 2021, a browser-based portal became available, allowing users to browse open-source projects and personal private code for free.
+In 2022, Sourcegraph Cloud, a commercial single-tenant cloud solution for organizations with more than 100 developers, was launched.
+
+Sourcegraph has raised a total of almost $225 million in financing to date. Its most recent $125 million Series D investment in 2021 valued the company at $2.625 billion, a 300% growth from its previous valuation in 2020.
+ Date Funding Type Money Raised (USD) No. of Investors Lead Investor July 2021 Series D round 125,000,000 4 Andreessen Horowitz December 2020 Series C round 50,000,000 1 Sequoia Capital July 2020 Series B round 5,000,000 1 Felicis Ventures March 2020 Series B round 23,000,000 3 Craft Ventures October 2017 Series A round 20,000,000 3 Goldcrest Capital, Redpoint
+
+In 2023 Sourcegraph Inc. unveiled their new product Cody, and rebranded Sourcegraph to Code Search.
+
+ Products 
+The company has two major products: Cody and Code Search.
+
+ Sourcegraph Cody 
+Cody is a free and open-source AI coding assistant that can help users write, fix, and maintain your code. It works by understanding an entire codebase and using that knowledge to provide context-aware assistance. including code generation, debugging, commenting, documentation, explaining, and answering questions regarding the code. Cody is available for Microsoft Visual Studio Code and most JetBrains IDEs.
+
+ Sourcegraph Code Search 
+
+Sourcegraph's "universal code search" tool is used to search, explore, and understand code. supports over 30 programming languages and integrates with GitHub and GitLab for code hosting, Codecov for code coverage, and Jira Software for project management. Code Search can be implemented across multiple repositories and code hosting platforms. Searches can be literal, regular expression, or structural. The structural search syntax is language-aware and handles nested expressions and multi-line statements better than regular expressions. Sourcegraph's Code Search uses a variant of Google's PageRank algorithm to rank results by relevance. Code Search can be used to search and analyze all of an organization's code. During search indexing, the platform builds a global reference graph, that maps an entire codebase and enables functionality such as "go to definition". Features include:
+
+ Search: Code can be searched and navigated through the Sourcegraph web interface or through browser and IDE extensions and text editor plugins. 
+ Navigation: jumps to the definition of a variable or function, or find all references to it in a codebase.
+ Batch Changes: Enables developers and companies to automate and track large-scale code refactoring, security fixes, and migrations across repositories and code hosts.
+ Code Insights: Extracts data from a codebase to provide detailed analytics and visualizations to track the health and progress of a code project.
+Code search has received adoption by such various sectors as 
+ Research: Code search has been used to develop data mining methods for downstream dependencies and to assist in refactoring and translating a program into its equivalent in another programming language.
+ Physics: Code search is used in the CERN Accelerator Control software community to index, quickly search, and generate statistics on code.
+ Cybersecurity: Code search has been used to gain better insight into source code during penetration testing.
+
+As of July 2021, Code search customers include Adidas, Lyft, Uber, Yelp, Plaid, GE, Atlassian, Amazon, PayPal, Qualtrics, and Cloudflare.

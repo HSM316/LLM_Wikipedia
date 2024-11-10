@@ -1,0 +1,41 @@
+Spark NLP is an open-source text processing library for advanced natural language processing for the Python, Java and Scala programming languages. The library is built on top of Apache Spark and its Spark ML library for speed and scalability  and on top of TensorFlow for deep learning training & inference functionality. Its goal is to provide an API for natural language processing annotations allowing a scalable approach within a distributed large scale environment. The library offers pre-trained neural network models, pipelines, and embeddings , as well as support for training custom models.
+
+Spark NLP is geared towards production use in software systems that outgrow older libraries such as spaCy, nltk, and CoreNLP . As of February 2019, the library is in use by 16% of enterprise companies and the most widely used NLP library by such companies . On March 28th, 2019, Spark NLP was named a winner of the Strata Data Award in the open source category “for providing state-of-the-art natural language processing in Python, Java & Scala” .
+
+ Main features 
+
+The library’s design uses the concept of a pipeline: an ordered set of text annotators . Out of the box annotators include:
+
+ Tokenizer: Word tokens
+ Normalizer: Text cleaning
+Stemmer: Hard stems
+ Lemmatizer: Lemmas
+ RegexMatcher: Rule matching
+ TextMatcher: Phrase matching
+ Chunker: Meaningful phrase matching
+ DateMatcher: Date-time parsing
+ SentenceDetector: Sentence Boundary Detector
+ DeepSentenceDetector: Sentence Boundary Detector with Machine Learning
+ POSTagger: Part of speech tagger
+ ViveknSentimentDetector: Sentiment analysis
+ SentimentDetector: Sentiment analysis
+ Named Entity Recognition CRF annotator
+ Named Entity Recognition Deep Learning annotator
+ SpellChecker: Norvig algorithm
+ SpellChecker: Symmetric delete
+ Dependency Parser: Unlabeled grammatical relation
+ Typed Dependency Parser: Labeled grammatical relation
+
+ Spark NLP for Healthcare 
+Spark NLP for Healthcare is a commercial extension of Spark NLP for biomedical text mining . It provides healthcare-specific annotators, pipelines, models, and embeddings for:
+
+ Biomedical named entity recognition
+ Entity normalization
+ Assertion Status Detection
+ De-identification
+ Part-of-Speech tagging
+ Spell checking & correction
+ Object character recognition (OCR)
+
+ License and Availability 
+Spark NLP is licensed under the Apache 2.0 license. The source code is publicly available on GitHub as well as documentation and a tutorial . Prebuilt versions of Spark NLP are available in PyPi and Anaconda Repository for Python development, in Maven Central for Java & Scala development, and in Spark Packages for Spark development.

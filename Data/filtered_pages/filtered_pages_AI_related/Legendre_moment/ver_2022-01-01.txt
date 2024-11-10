@@ -1,0 +1,16 @@
+In mathematics, Legendre moments are a type of image moment and are achieved by using the Legendre polynomial.  Legendre moments are used in areas of image processing including: pattern and object recognition, image indexing, line fitting, feature extraction, edge detection, and texture analysis.Lakshmi Deepika, C. et al. "Palmprint authentication using modified legendre moments", Procedia Computer Science, 2010, Vol.2, pp. 164–172  Legendre moments have been studied as a means to reduce image moment calculation complexity by limiting the amount of information redundancy through approximation.Huazhong Shu, et al. "An Efficient Method for Computation
+of Legendre Moments", Academic Press, 2000
+
+ Legendre momentsPew-Thian Yap. "An Efficient Method for the Computation of Legendre Moments", IEEE Transactions on Pattern Analysis and Machine Intelligence ( Volume: 27, Issue: 12, Dec. 2005 ) 
+With order of m + n, and object intensity function f(x,y):
+ 
+
+where m,n = 1, 2, 3, ... with the nth-order Legendre polynomials being:
+
+which can also be written:
+
+where D(n) = floor(n/2). The set of Legendre polynomials {Pn(x)} form an orthogonal set on the interval [−1,1]:
+
+A recurrence relation can be used to compute the Legendre polynomial:
+
+f(x,y) can be written as an infinite series expansion in terms of Legendre polynomials  [−1 ≤ x,y ≤ 1.]:

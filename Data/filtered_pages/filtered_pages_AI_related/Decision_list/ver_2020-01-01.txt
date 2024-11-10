@@ -1,0 +1,19 @@
+Decision lists are a representation for Boolean functions which can be easily learnable from examples.  Single term decision lists are more expressive than disjunctions and conjunctions; however, 1-term decision lists are less expressive than the general disjunctive normal form and the conjunctive normal form.
+
+The language specified by a k-length decision list includes as a subset the language specified by a k-depth decision tree.
+
+Learning decision lists can be used for attribute efficient learning.Adam R. Klivans and Rocco A. Servedio, "Toward Attribute Efficient Learning of Decision Lists and Parities", Journal of Machine Learning Research 7:12:587-602 ACM Digital Library full text
+
+ Definition 
+
+A decision list (DL) of length  is of the form:
+
+ if  then 
+   output 
+ else if  then
+   output 
+ ...
+ else if  then
+   output 
+
+where  is the th formula and  is the th boolean for .  The last if-then-else is the default case, which means formula  is always equal to true. A -DL is a decision list where all of formulas have at most  terms.  Sometimes "decision list" is used to refer to a 1-DL, where all of the formulas are either a variable or its negation.

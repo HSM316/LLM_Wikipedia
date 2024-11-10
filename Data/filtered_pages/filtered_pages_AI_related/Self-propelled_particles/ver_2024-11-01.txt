@@ -1,0 +1,79 @@
+right|SPP models predict robust emergent behaviours occur in swarms independent of the type of animal that is in the swarm.
+
+Self-propelled particles (SPP), also referred to as self-driven particles, are terms used by physicists to describe autonomous agents, which convert energy from the environment into directed or persistent random walk. Natural systems which have inspired the study and design of these particles include walking, swimming or flying animals. Other biological systems include bacteria, cells, algae and other micro-organisms. Generally, self-propelled particles often refer to artificial systems such as robots or specifically designed particles such as swimming Janus colloids, bimetallic nanorods, nanomotors and walking grains. In the case of directed propulsion, which is driven by a chemical gradient, this is referred to as chemotaxis, observed in biological systems, e.g. bacteria quorum sensing and ant pheromone detection, and in synthetic systems, e.g. enzyme molecule chemotaxis and enzyme powered hard and soft particles.
+
+Overview
+Self-propelled particles interact with each other, which can lead to the emergence of collective behaviours. These collective behaviours mimic the self-organization observed with the flocking of birds, the swarming of bugs, the formation of sheep herds, etc.
+
+To understand the ubiquity of such phenomena, physicists have developed a number of self-propelled particles models. These models predict that self-propelled particles share certain properties at the group level, regardless of the type of animals (or artificial particles) in the swarm.  It has become a challenge in theoretical physics to find minimal statistical models that capture these behaviours.
+
+ Examples 
+
+ Biological systems 
+Most animals can be seen as SPP: they find energy in their food and exhibit various locomotion strategies, from flying to crawling. The most prominent examples of collective behaviours in these systems are fish schools, birds flocks, sheep herds, human crowds. At a smaller scale, cells and bacteria can also be treated as SPP. These biological systems can propel themselves based on the presence of chemoattractants.  At even smaller scale, molecular motors transform ATP energy into directional motion. Recent work has shown that enzyme molecules will also propel themselves. Further, it has been shown that they will preferentially move towards a region of higher substrate concentration, a phenomenon that has been developed into a purification technique to isolate live enzymes. Additionally, microparticles or vesicles can become self-propelled when they are functionalized with enzymes. The catalytic reactions of the enzymes direct the particles or vesicles based on corresponding substrate gradients.
+
+ Artificial systems 
+An example of a SPP: a gold-platinum nanorod which undergoes self-propulsion in hydrogen peroxide due to self-electrophoretic forces.|400x400px
+
+There is a distinction between wet and dry systems. In the first case the particles "swim" in a surrounding fluid; in the second case the particles  "walk" on a substrate.
+
+Active colloidal particles, dubbed nanomotors, are the prototypical example of wet SPP. Janus particles are colloidal particles with two different sides, having different physical or chemical properties. This symmetry breaking allows, by properly tuning the environment (typically the surrounding solution), for the motion of the Janus particle. For instance, the two sides of the Janus particle can induce a local gradient of, temperature, electric field, or concentration of chemical species. This induces motion of the Janus particle along the gradient through, respectively, thermophoresis, electrophoresis or diffusiophoresis. Because the Janus particles consume energy from their environment (catalysis of chemical reactions, light absorption, etc.), the resulting motion constitutes an irreversible process and the particles are out of equilibrium.
+ The first example of an artificial SPP on the nano or micron scale was a gold-platinum bimetallic nanorod developed by Sen and Mallouk. In a solution of hydrogen peroxide, this "nanomotor" would exhibit a catalytic oxidation-reduction reaction, thereby inducing a fluid flow along the surface through self-diffusiophoresis. A similar system used a copper-platinum rod in a bromine solution. 
+ Another Janus SPP was developed by coating half of a polystyrene bead with platinum. These were used to direct the motion of catalytic motors when they were close to a solid surface. These systems were able to move the active colloids using geometric constraints.
+ Another example of a Janus SPP is an organometallic motor using a gold-silica microsphere. Grubb's catalyst was tethered to the silica half of the particle and in solution of monomer would drive a catalytic polymerization. The resulting concentration gradient across the surface would propel the motor in solution.
+Another example of an artificial SPP are platinum spinner microparticles that have controllable rotations based on their shape and symmetry.
+Another example is biphasic Janus oil droplets which shows self propelled motion. 
+Several other examples are described in the nanomotor-specific page.
+
+Walking grains are a typical realization of dry SPP: The grains are milli-metric disks sitting on a vertically vibrating plate, which serves as the source of energy and momentum. The disks have two different contacts ("feet") with the plate, a hard needle-like foot in the front and a large soft rubber foot in the back. When shaken, the disks move in a preferential direction defined by the polar (head-tail) symmetry of the contacts.  This together with the vibrational noise result in a persistent random walk.
+
+ Symmetry breaking 
+Symmetry breaking is a necessary condition for SPPs, as there must be a preferential direction for moving. However, the symmetry breaking may not come solely from the structure itself but from its interaction with electromagnetic fields, in particular when taken into account retardation effects. This can be used for the phototactic motion of even highly symmetrical nanoparticles. In 2021, it was experimentally shown that completely symmetric particles (spherical microswimmers in this case) experience a net thermophoretic force when illuminated from a given direction.
+
+Swirlons
+In 2020, researchers from the University of Leicester reported a hitherto unrecognised state of self-propelled particles — which they called a "swirlonic state". The swirlonic state consists of "swirlons", formed by groups of self-propelled particles orbiting a common centre of mass. These quasi-particles demonstrate a surprising behaviour: In response to an external load they move with a constant velocity proportional to the applied force, just as objects in viscous media. Swirlons attract each other and coalesce forming a larger, joint swirlon. The coalescence is an extremely slow, decelerating process, resulting in a rarified state of immobile quasi-particles. In addition to the swirlonic state, gaseous, liquid and solid states were observed, depending on the inter-particle and self-driving forces. In contrast to molecular systems, liquid and gaseous states of self-propelled particles do not coexist. 50px Material was copied from this source, which is available under a Creative Commons Attribution 4.0 International License.Swirlonic Super Particles: Physicists Baffled by a Novel State of Matter SciTechDaily, 11 February 2021.
+
+ Typical collective behaviour 
+Typical collective motion generally includes the formation of self-assembled structures, such as clusters and organized assemblies.
+
+The prominent and most spectacular emergent large scale behaviour observed in assemblies of SPP is directed collective motion. In that case all particles move in the same direction. On top of that, spatial structures can emerge such as bands, vortices, asters, moving clusters.
+
+Another class of large scale behaviour, which does not imply directed motion is either the spontaneous formation of clusters or the separation in a gas-like and a liquid-like phase, an unexpected phenomenon when the SPP have purely repulsive interaction. This phase separation has been called Motility Induced Phase Separation (MIPS).
+
+ Examples of modelling 
+The modeling of SPP was introduced in 1995 by Tamás Vicsek et al. as a special case of the Boids model introduced in 1986 by Reynolds. In that case the SPP are point particles, which move with a constant speed. and adopt (at each time increment) the average direction of motion of the other particles in their local neighborhood up to some added noise. convergence proofs for the SPP model.
+Simulations demonstrate that a suitable "nearest neighbour rule" eventually results in all the particles swarming together or moving in the same direction. This emerges, even though there is no centralised coordination, and even though the neighbours for each particle constantly change over time (see the interactive simulation in the box on the right).
+
+Since then a number of models have been proposed, ranging from the simple active Brownian particle to detailed and specialized models aiming at describing specific systems and situations. Among the important ingredients in these models, one can list 
+ Self-propulsion: in the absence of interaction, the SPP speed converges to a prescribed constant value
+ Body interactions: the particles can be considered as points (no body interaction) like in the Vicsek model. Alternatively, one can include an interaction potential, either attractive or repulsive.  This potential can be isotropic or not to describe spherical or elongated particles.
+ Body orientation:  for those particles with a body-fixed axis, one can include additional degrees of freedom to describe the orientation of the body. The coupling of this body axis with the velocity is an additional option.
+ Aligning interaction rules: in the spirit of the Vicsek model, neighboring particles align their velocities. Another possibility is that they align their orientations.
+One can also include effective influences of the surrounding; for instance the nominal velocity of the SPP can be set to depend on the local density, in order to take into account crowding effects.
+
+Self-propelled particles can also be modeled using on-lattice models, which offer the advantage of being simple and efficient to simulate, and in some cases, may be easier to analyze mathematically. On-lattice models such as BIO-LGCA models have been used to study physical aspects of self-propelled particle systems (such as phase transitions and pattern-forming potential) as well as specific questions related to real active matter systems (for example, identifying the underlying biological processes involved in tumor invasion).
+
+Some applications to real systems
+left|Locust nymph
+
+Marching locusts
+Young desert locusts are solitary and wingless nymphs. If food is short they can gather together and start occupying neighbouring areas, recruiting more locusts. Eventually they can become a marching army extending over many kilometres. This can be the prelude to the development of the vast flying adult locust swarms which devastate vegetation on a continental scale.
+
+One of the key predictions of the SPP model is that as the population density of a group increases, an abrupt transition occurs from individuals moving in relatively disordered and independent ways within the group to the group moving as a highly aligned whole. Thus, in the case of young desert locusts, a trigger point should occur which turns disorganised and dispersed locusts into a coordinated marching army. When the critical population density is reached, the insects should start marching together in a stable way and in the same direction.
+
+In 2006, a group of researchers examined how this model held up in the laboratory. Locusts were placed in a circular arena, and their movements were tracked with computer software. At low densities, below 18 locusts per square metre, the locusts mill about in a disordered way. At intermediate densities, they start falling into line and marching together, punctuated by abrupt but coordinated changes in direction. However, when densities reached a critical value at about 74 locusts/m2, the locusts ceased making rapid and spontaneous changes in direction, and instead marched steadily in the same direction for the full eight hours of the experiment.
+
+This confirmed the behaviour predicted by the SPP models.
+
+In the field, according to the Food and Agriculture Organization of the United Nations, the average density of marching bands is 50 locusts/m2 (50 million locusts/km2), with a typical range from 20 to 120 locusts/m2. The research findings discussed above demonstrate the dynamic instability that is present at the lower locust densities typical in the field, where marching groups randomly switch direction without any external perturbation. Understanding this phenomenon, together with the switch to fully coordinated marching at higher densities, is essential if the swarming of desert locusts is to be controlled.
+
+Bird landings
+right|Flocks of birds can abruptly change their direction in unison, and then, just as suddenly, make a unanimous group decision to land
+Swarming animals, such as ants, bees, fish and birds, are often observed suddenly switching from one state to another. For example, birds abruptly switch from a flying state to a landing state. Or fish switch from schooling in one direction to schooling in another direction. Such state switches can occur with astonishing speed and synchronicity, as though all the members in the group made a unanimous decision at the same moment. Phenomena like these have long puzzled researchers.
+
+In 2010, Bhattacharya and Vicsek used an SPP model to analyse what is happening here. As a paradigm, they considered how flying birds arrive at a collective decision to make a sudden and synchronised change to land. The birds, such as the starlings in the image on the right, have no decision-making leader, yet the flock know exactly how to land in a unified way. The need for the group to land overrides deviating intentions by individual birds. The particle model found that the collective shift to landing depends on perturbations that apply to the individual birds, such as where the birds are in the flock. It is behaviour that can be compared with the way that sand avalanches, if it is piled up, before the point at which symmetric and carefully placed grains would avalanche, because the fluctuations become increasingly non-linear.
+
+"Our main motivation was to better understand something which is puzzling and out there in nature, especially in cases involving the stopping or starting of a collective behavioural pattern in a group of people or animals ... We propose a simple model for a system whose members have the tendency to follow the others both in space and in their state of mind concerning a decision about stopping an activity. This is a very general model, which can be applied to similar situations." The model could also be applied to a swarm of unmanned drones, to initiate the desired motion in a crowd of people, or to interpreting group patterns when stock market shares are bought or sold.
+
+Other examples
+SPP models have been applied in many other areas, such as schooling fish, robotic swarms, molecular motors, the development of human stampedes and the evolution of human trails in urban green spaces. SPP in Stokes flow, such as Janus particles, are often modeled by the squirmer model.

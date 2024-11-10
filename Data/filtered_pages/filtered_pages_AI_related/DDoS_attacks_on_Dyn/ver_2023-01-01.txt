@@ -1,0 +1,100 @@
+On October 21, 2016, three consecutive distributed denial-of-service attacks were launched against the Domain Name System (DNS) provider Dyn. The attack caused major Internet platforms and services to be unavailable to large swathes of users in Europe and North America. The groups Anonymous and New World Hackers claimed responsibility for the attack, but scant evidence was provided.
+
+As a DNS provider, Dyn provides to end-users the service of mapping an Internet domain name—when, for instance, entered into a web browser—to its corresponding IP address. The distributed denial-of-service (DDoS) attack was accomplished through numerous DNS lookup requests from tens of millions of IP addresses. The activities are believed to have been executed through a botnet consisting of many Internet-connected devices—such as printers, IP cameras, residential gateways and baby monitors—that had been infected with the Mirai malware.
+
+ Affected services 
+Services affected by the attack included:
+
+ Airbnb
+ Amazon.com
+ Ancestry.com
+ The A.V. Club
+ BBC
+ The Boston Globe
+ Box
+ Business Insider
+ CNN
+ Comcast
+ CrunchBase
+ DirecTV
+ The Elder Scrolls Online
+ Electronic Arts
+ Etsy
+ Evergreen ILS
+ FiveThirtyEight
+ Fox News
+ The Guardian
+ GitHub
+ Grubhub
+ HBO
+ Heroku
+ HostGator
+ iHeartRadio
+ Imgur
+ Indiegogo
+ Mashable
+ National Hockey League
+ Netflix
+ The New York Times
+ Overstock.com
+ PayPal
+ Pinterest
+ Pixlr
+ PlayStation Network
+ Qualtrics
+ Quora
+ Reddit
+ Roblox
+ Ruby Lane
+ RuneScape
+ SaneBox
+ Seamless
+ Second Life
+ Shopify
+ Slack
+ SoundCloud
+ Squarespace
+ Spotify
+ Starbucks
+ Storify
+ Swedish Civil Contingencies AgencyJoel Westerholm. "Så sänktes Twitter och Regeringen.se i attacken", Sveriges Radio, 24 October 2016. Retrieved 30 October 2016.
+ Swedish Government
+ Tumblr
+ Twilio
+ Twitter
+ Verizon Communications
+ Visa
+ Vox Media
+ Walgreens
+ The Wall Street Journal
+ Wikia
+ Wired
+ Wix.com
+ WWE Network
+ Xbox Live
+ Yammer
+ Yelp
+ Zillow
+
+Investigation
+right|White House spokesperson Josh Earnest responds on October 21, 2016, the day of the attack
+The US Department of Homeland Security started an investigation into the attacks, according to a White House source. No group of hackers claimed responsibility during or in the immediate aftermath of the attack. Dyn's chief strategist said in an interview that the assaults on the company's servers were very complex and unlike everyday DDoS attacks. Barbara Simons, a member of the advisory board of the United States Election Assistance Commission, said such attacks could affect electronic voting for overseas military or civilians.
+
+Dyn disclosed that, according to business risk intelligence firm FlashPoint and Akamai Technologies, the attack was a botnet coordinated through numerous Internet of Things-enabled (IoT) devices, including cameras, residential gateways, and baby monitors, that had been infected with Mirai malware. The attribution of the attack to the Mirai botnet had been previously reported by BackConnect Inc., another security firm. Dyn stated that they were receiving malicious requests from tens of millions of IP addresses. Mirai is designed to brute-force the security on an IoT device, allowing it to be controlled remotely.
+
+Cybersecurity investigator Brian Krebs noted that the source code for Mirai had been released onto the Internet in an open-source manner some weeks prior, which made the investigation of the perpetrator more difficult.
+
+On 25 October 2016, US President Obama stated that the investigators still had no idea who carried out the cyberattack.CNN, 25 October 2016, Obama: We have no idea who carried out huge cyberattack
+
+On 13 December 2017, the Justice Department announced that three men (Paras Jha, 21, Josiah White, 20, and Dalton Norman, 21) had entered guilty pleas in cybercrime cases relating to the Mirai and clickfraud botnets.Justice Department, 13 December 2017, Justice Department Announces Charges And Guilty Pleas In Three Computer Crime Cases Involving Significant Cyber Attacks
+
+Perpetrators
+In correspondence with the website Politico, hacktivist groups SpainSquad, Anonymous, and New World Hackers claimed responsibility for the attack in retaliation against Ecuador's rescinding Internet access to WikiLeaks founder Julian Assange, at their embassy in London, where he had been granted asylum. This claim has yet to be confirmed. WikiLeaks alluded to the attack on Twitter, tweeting "Mr. Assange is still alive and WikiLeaks is still publishing. We ask supporters to stop taking down the US internet. You proved your point." New World Hackers has claimed responsibility in the past for similar attacks targeting sites like BBC and ESPN.com.
+
+On October 26, FlashPoint stated that the attack was most likely done by script kiddies.
+
+A November 17, 2016, a Forbes article reported that the attack was likely carried out by "an angry gamer".
+
+A September 20, 2018, a WeLiveSecurity article stated that its three creators meant it as a way of gaining an advantage in fierce competition surrounding the computer game Minecraft – by preventing players from using competitors’ servers and driving them to their own servers in order to ultimately make money off them.
+
+On December 9, 2020, one of the perpetrators pleaded guilty to taking part in the attack. The perpetrator's name was withheld due to his or her age.

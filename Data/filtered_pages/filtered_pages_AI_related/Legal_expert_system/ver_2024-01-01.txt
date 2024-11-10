@@ -1,0 +1,104 @@
+A legal expert system is a domain-specific expert system that uses artificial intelligence to emulate the decision-making abilities of a human expert in the field of law. Legal expert systems employ a rule base or knowledge base and an inference engine to accumulate, reference and produce expert knowledge on specific subjects within the legal domain.
+
+ Purpose 
+
+It has been suggested that legal expert systems could help to manage the rapid expansion of legal information and decisions that began to intensify in the late 1960s.   Many of the first legal expert systems were created in the 1970s  and 1980s.
+
+Lawyers were originally identified as primary target users of legal expert systems.   Potential motivations for this work included:
+
+ speedier delivery of legal advice;
+ reduced time spent in repetitive, labour intensive legal tasks;
+ development of knowledge management techniques that were not dependent on staff;
+ reduced overhead and labour costs and higher profitability for law firms; and
+ reduced fees for clients.
+
+Some early development work was oriented toward the creation of automated judges.
+
+One of the first use cases was the encoding of the British Nationality Act at Imperial College carried out under the supervision of Marek Sergot and Robert Kowalski.
+Lance Elliot wrote: "The British Nationality Act was passed in 1981 and shortly thereafter was used as a means of showcasing the efficacy of using Artificial Intelligence (AI) techniques and technologies, doing so to explore how the at-the-time newly enacted statutory law might be encoded into a computerized logic-based formalization."
+
+The authors’ seminal article, “The British Nationality Act as a Logic Program,” published in 1986 in the Communications of the ACM journal, is one of the first and best-known works in computational law, and one of the most widely-cited papers in the field.
+
+In 2021, the Inaugural CodeX Prize was awarded to Robert Kowalski, Fariba Sadri and Marek Sergot in acknowledgment of their groundbreaking work on the application of logic programming to the formalization and analysis of the British Nationality Act.
+
+Later work on legal expert systems has identified potential benefits to non-lawyers as a means to increase access to legal knowledge.
+
+Legal expert systems can also support administrative processes, facilitating decision making processes, automating rule-based analyses  and exchanging information directly with citizen-users.
+
+ Types 
+
+ Architectural variations 
+Rule-based expert systems rely on a model of deductive reasoning that utilizes "if A, then B" rules. In a rule-based legal expert system, information is represented in the form of deductive rules within the knowledge base.
+
+Case-based reasoning models, which store and manipulate examples or cases, hold the potential to emulate an analogical reasoning process thought to be well-suited for the legal domain. This model effectively draws on known experiences our outcomes for similar problems.
+
+A neural net relies on a computer model that mimics that structure of a human brain, and operates in a very similar way to the case-based reasoning model.  This expert system model is capable of recognizing and classifying patterns within the realm of legal knowledge and dealing with imprecise inputs.
+
+Fuzzy logic models attempt to create 'fuzzy' concepts or objects that can then be converted into quantitative terms or rules that are indexed and retrieved by the system. In the legal domain, fuzzy logic can be used for rule-based and case-based reasoning models.
+
+ Theoretical variations 
+While some legal expert system architects have adopted a very practical approach, employing scientific modes of reasoning within a given set of rules or cases, others have opted for a broader philosophical approach inspired by jurisprudential reasoning modes emanating from established legal theoreticians. 
+
+ Functional variations 
+Some legal expert systems aim to arrive at a particular conclusion in law, while others are designed to predict a particular outcome. An example of a predictive system is one that predicts the outcome of judicial decisions, the value of a case, or the outcome of litigation.
+
+ Reception 
+Many forms of legal expert systems have become widely used and accepted by both the legal community and the users of legal services.Ambrogi, Robert. "Latest legal victory has LegalZoom poised for growth." ABA Journal. American Bar Association, 1 Aug. 2014. Web. 17 June 2017. <http://www.abajournal.com/magazine/article/latest_legal_victory_has_legalzoom_poised_for_growth>.
+
+ Challenges 
+
+ Domain-related problems 
+The inherent complexity of law as a discipline raises immediate challenges for legal expert system knowledge engineers. Legal matters often involve interrelated facts and issues, which further compound the complexity.
+
+Factual uncertainty may also arise when there are disputed versions of factual representations that must be input into an expert system to begin the reasoning process.
+
+ Computerized problem solving 
+The limitations of most computerized problem solving techniques inhibit the success of many expert systems in the legal domain. Expert systems typically rely on deductive reasoning models that have difficulty according degrees of weight to certain principles of law or importance to previously decided cases that may or may not influence a decision in an immediate case or context.
+
+ Representation of legal knowledge 
+Expert legal knowledge can be difficult to represent or formalize within the structure of an expert system. For knowledge engineers, challenges include:
+ Open texture: Law is rarely applied in an exact way to specific facts, and exact outcomes are rarely a certainty. Statutes may be interpreted according to different linguistic interpretations, reliance on precedent cases or other contextual factors including a particular judge's conception of fairness.
+ The balancing of reasons: Many arguments involve considerations or reasons that are not easily represented in a logical way. For instance, many constitutional legal issues are said to balance independently well-established considerations for state interests against individual rights.  Such balancing may draw on extra-legal considerations that would be difficult to represent logically in an expert system.
+ Indeterminacy of legal reasoning: In the adversarial arena of law, it is common to have two strong arguments on a single point. Determining the 'right' answer may depend on a majority vote among expert judges, as in the case of an appeal.
+
+ Time and cost effectiveness 
+Creating a functioning expert system requires significant investments in software architecture, subject matter expertise and knowledge engineering. Faced with these challenges, many system architects restrict the domain in terms of subject matter and jurisdiction. The consequence of this approach is the creation of narrowly focused and geographically restricted legal expert systems that are difficult to justify on a cost-benefit basis.
+
+Current applications of AI in the legal field utilize machines to review documents, particularly when a high level of completeness and confidence in the quality of document analysis is depended upon, such as in instances of litigation and where due diligence play a role.Donahue L, A Primer on Using Artificial Intelligence in the Legal Profession https://jolt.law.harvard.edu/digest/a-primer-on-using-artificial-intelligence-in-the-legal-profession. Among the numerically most quantifiable advantages of AI in the legal field are the time and money saving impact by freeing lawyers from having to spend inordinate amounts of their valuable time on routine tasks, aiding in setting free lawyers’ creative energy by reducing stress. This in turn increases the rate of case load reduction by accomplishing better results in less time, which unlocks potential additional revenue per unit of time spend on a case. The cost of setting up and maintaining AI systems in law is more than offset by the attained savings through increased efficacy; unbalanced cost can be assigned to clients.
+
+ Lack of correctness in results  or decisions 
+Legal expert systems may lead non-expert users to incorrect or inaccurate results and decisions. This problem could be compounded by the fact that users may rely heavily on the correctness or trustworthiness of results or decisions generated by these systems.
+
+ Examples 
+ASHSD-II is a hybrid legal expert system that blends rule-based and case-based reasoning models in the area of matrimonial property disputes under English law.
+
+CHIRON is a hybrid legal expert system that blends rule-based and case-based reasoning models to support tax planning activities under United States tax law and codes.
+
+JUDGE is a rule-based legal expert system that deals with sentencing in the criminal legal domain for offences relating to murder, assault and manslaughter. Alt URL . Also .
+
+Legislate is a knowledge graph powered contract management platform which applies legal rules to generate lawyer-approved contracts.
+
+The Latent Damage Project is a rule-based legal expert system that deals with limitation periods under the (UK) Latent Damage Act 1986 in relation to the domains of tort, contract and product liability law.
+
+Split-Up is a rule-based legal expert system that assists in the division of marital assets according to the (Australia) Family Law Act (1975).
+
+SHYSTER is a case-based legal expert system that can also function as a hybrid through its ability to link with rule-based models. It was designed to accommodate multiple legal domains, including aspects of Australian copyright law, contract law, personal property and administrative law.
+
+TAXMAN is a rule-based system that could perform a basic form of legal reasoning by classifying cases under a particular category of statutory rules in the area of law concerning corporate reorganization.
+
+ Controversies 
+There may be a lack of consensus over what distinguishes a legal expert system from a knowledge-based system (also called an intelligent knowledge-based system). While legal expert systems are held to function at the level of a human legal expert, knowledge-based systems may depend on the ongoing assistance of a human expert.  True legal expert systems typically focus on a narrow domain of expertise as opposed to a wider and less specific domain as in the case of most knowledge-based systems.
+
+Legal expert systems represent potentially disruptive technologies for the traditional, bespoke delivery of legal services. Accordingly, established legal practitioners may consider them a threat to historical business practices.
+
+Arguments have been made that a failure to take into consideration various theoretical approaches to legal decision making will produce expert systems that fail to reflect the true nature of decision making.  Meanwhile, some legal expert system architects contend that because many lawyers have proficient legal reasoning skills without a sound base in legal theory, the same should hold true for legal expert systems.
+
+Because legal expert systems apply precision and scientific rigor to the act of legal decision-making, they may be seen as a challenge to the more disorganized and less precise dynamics of traditional jurisprudential modes of legal reasoning. Some commentators also contend that the true nature of legal practice does not necessarily depend on analyses of legal rules or principles; decisions are based instead on an expectation of what a human adjudicator would decide for a given case.
+
+ Recent developments 
+
+Since 2013, there have been significant developments in legal expert systems. Professor Tanina Rostain of Georgetown Law Center teaches a course in designing legal expert systems.Centers & Institutes | Georgetown Law  Open-source platforms like Docassemble and companies such as Neota Logic, Logic Programming Associates, Berkely Bridge, Oracle and Checkbox have begun to offer artificial intelligence and machine learning-based legal expert systems.https://lawyerist.com/first-look-docassemble/, "First Look: Docassemble", Lawyerist, February 2, 2017.https://prismlegal.com/automating-legal-advice-ai-and-expert-systems/ Ron Friedman, "Automating Legal Advice: AI and Expert Systems", Prism Legal, 2016.
+
+ No Code 
+
+More recently, the world of legal expert systems has collided with the world of low-code no-code products. In its article entitled 'No Code and Lawyers', the NoCode Journal mentions tools such as Neota Logic, VisiRule, Berkeley Bridge, BRYTER and Josef as all being used within the legal sector for a variety of purposes including Self-Service Legal and Policy Advice, Document Drafting, Document Automation, New Business Intake and Analysis, Expert Decisioning, Business Process Automation and other use cases.

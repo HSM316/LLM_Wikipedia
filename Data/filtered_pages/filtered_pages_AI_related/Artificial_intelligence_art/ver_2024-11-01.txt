@@ -1,0 +1,140 @@
+An image generated with DALL-E 2 based on the text prompt "1960's art of cow getting abducted by UFO in midwest"
+Artificial intelligence art is visual artwork created through the use of an artificial intelligence (AI) program.   
+
+Artists began to create artificial intelligence art in the mid to late 20th century, when the discipline was founded. Throughout its history, artificial intelligence art has raised many philosophical concerns related to the human mind, artificial beings, and what can be considered art in a human–AI collaboration. Since the 20th century, artists have used AI to create art, some of which has been exhibited in museums and won awards.
+
+During the AI boom of the early 2020s, text-to-image models such as Midjourney, DALL-E, and Stable Diffusion became widely available to the public, allowing non-artists to quickly generate imagery with little effort. Commentary about AI art in the 2020s has often focused on issues related to copyright, deception, defamation, and its impact on more traditional artists, including technological unemployment.
+
+ History 
+
+ Early history 
+Maillardet's automaton drawing a picture
+The concept of automated art dates back at least to the automata of ancient Greek civilization, where inventors such as Daedalus and Hero of Alexandria were described as having designed machines capable of writing text, generating sounds, and playing music. The tradition of creative automatons has flourished throughout history, such as Maillardet's automaton, created around 1800 and capable of creating multiple drawings and poems stored in its "cams," the brass disks that hold memory.
+
+In 1950, with the publication of Alan Turing's paper Computing Machinery and Intelligence, there was a shift from defining intelligence in regards to machines in abstract terms to evaluating whether a machine can mimic human behavior and responses convincingly. Shortly after, the academic discipline of artificial intelligence was founded at a research workshop at Dartmouth College in 1956 and has experienced several waves of advancement and optimism in the decades since. Since its founding, researchers in the field have raised philosophical and ethical arguments about the nature of the human mind and the consequences of creating artificial beings with human-like intelligence; these issues have previously been explored by myth, fiction, and philosophy since antiquity.
+Karl Sims' Galápagos installation allowed visitors to evolve 3D animated forms
+
+ 1950s to 2000s: Early implementations 
+Example of Electric Sheep by Scott DravesSince the founding of AI in the 1950s, artists and researchers have used artificial intelligence to create artistic works. These works were sometimes referred to as algorithmic art, computer art, digital art, or new media.
+
+One of the first significant AI art systems is AARON, developed by Harold Cohen beginning in the late 1960s at the University of California at San Diego. AARON uses a symbolic rule-based approach to generate technical images in the era of GOFAI programming, and it was developed by Cohen with the goal of being able to code the act of drawing. In its earliest form, AARON created abstract black-and-white drawings which would later be finished by Cohen painting them. Throughout the years, he also began to develop a way for AARON to paint as well, using special brushes and dyes that were chosen by the program itself without mediation from Cohen. After years of work, AARON was exhibited in 1972 at the Los Angeles County Museum of Art. From 1973 to 1975, Cohen refined AARON during a residency at the Artificial Intelligence Laboratory at Stanford University. In 2024, the Whitney Museum of American Art exhibited AI art from throughout Cohen's career, including re-created versions of his early robotic drawing machines.
+
+Karl Sims has exhibited art created with artificial life since the 1980s. He received an M.S. in computer graphics from the MIT Media Lab in 1987 and was artist-in-residence from 1990 to 1996 at the supercomputer manufacturer and artificial intelligence company Thinking Machines. In both 1991 and 1992, Sims won the Golden Nica award at Prix Ars Electronica for his 3D AI animated videos using artificial evolution. In 1997, Sims created the interactive installation Galápagos for the NTT InterCommunication Center in Tokyo. In this installation, viewers help evolve 3D animated creatures by selecting which ones will be allowed to live and produce new, mutated offspring. Furthermore, Sims received an Emmy Award in 2019 for outstanding achievement in engineering development.
+
+Eric Millikin has been creating animated films using artificial intelligence since the 1980s, and began posting art on the internet using CompuServe in the early 1980s. 
+
+In 1999, Scott Draves and a team of several engineers created and released Electric Sheep as a free software screensaver. Electric Sheep is a volunteer computing project for animating and evolving fractal flames, which are in turn distributed to the networked computers, which display them as a screensaver. The screensaver used AI to create an infinite animation by learning from its audience. In 2001, Draves won the Fundacion Telefonica Life 4.0 prize for Electric Sheep.
+
+ 2010s: Deep learning 
+During the deep learning era, there are mainly these types of designs for generative art: autoregressive models, diffusion models, GANs, normalizing flows.Edmond de Belamy, created with a generative adversarial network in 2018
+
+In 2014, Ian Goodfellow and colleagues at Université de Montréal developed the generative adversarial network (GAN), a type of deep neural network capable of learning to mimic the statistical distribution of input data such as images. The GAN uses a "generator" to create new images and a "discriminator" to decide which created images are considered successful. Unlike previous algorithmic art that followed hand-coded rules, generative adversarial networks could learn a specific aesthetic by analyzing a dataset of example images.
+
+In 2015, a team at Google released DeepDream, a program that uses a convolutional neural network to find and enhance patterns in images via algorithmic pareidolia. The process creates deliberately over-processed images with a dream-like appearance reminiscent of a psychedelic experience.
+
+In 2017, a conditional GAN learned to generate 1000 image classes of ImageNet.
+
+Autoregressive models were used for image generation, such as PixelRNN (2016), which autoregressively generates one pixel after another with a recurrent neural network. Immediately after the Transformer architecture was proposed in Attention Is All You Need (2018), it was used for autoregressive generation of images, but without text conditioning.
+
+In 2018, an auction sale of artificial intelligence art was held at Christie's Auction House in New York where the AI artwork Edmond de Belamy (a pun on Goodfellow's name) sold for , which was almost 45 times higher than its estimate of –10,000. The artwork was created by Obvious, a Paris-based collective. The website Artbreeder, launched in 2018, uses the models StyleGAN and BigGAN to allow users to generate and modify images such as faces, landscapes, and paintings.
+
+In 2019, Stephanie Dinkins won the Creative Capital award for her creation of an evolving artificial intelligence based on the "interests and culture(s) of people of color." Also in 2019, Sougwen Chung won the Lumen Prize for her performances with a robotic arm that uses AI to attempt to draw in a manner similar to Chung.
+
+ 2020s 
+Still from Eric Millikin's The Dance of the Nain Rouge, with subtitles
+Example of an image made with VQGAN-CLIP (NightCafe Studio)
+In the 2020s, text-to-image models, which generate images based on prompts, became widely used.
+
+In 2021, using the influential large language generative pre-trained transformer models that are used in GPT-2 and GPT-3, OpenAI released a series of images created with the text-to-image AI model DALL-E 1. It was an autoregressive generative model with essentially the same architecture as GPT-3.
+
+Later in 2021, EleutherAI released the open source VQGAN-CLIP based on OpenAI's CLIP model.
+
+Diffusion models were proposed in 2015, but they only became better than GANs in early 2021. Latent diffusion model was published in December 2021, and became the basis for the later Stable Diffusion (August 2022).
+
+In 2022, Midjourney was released, followed by Google Brain's Imagen and Parti, which were announced in May 2022, Microsoft's NUWA-Infinity, and the source-available Stable Diffusion, which was released in August 2022. DALL-E 2, a successor to DALL-E, was beta-tested and released. Unlike DALL-E 1, it was a diffusion model. Stability AI has a Stable Diffusion web interface called DreamStudio, plugins for Krita, Photoshop, Blender, and GIMP, and the Automatic1111 web-based open source user interface. Stable Diffusion's main pre-trained model is shared on the Hugging Face Hub.
+
+In 2023, Eric Millikin released The Dance of the Nain Rouge, a documentary film created using AI deepfake technology about the Detroit folklore legend of the Nain Rouge. The film is described as "an experimental decolonial Detroit demonology deepfake dream dance documentary." It was awarded the "Best Innovative Technologies Award" ("Premio Migliori Tecnologie Innovative") at the 2024 Pisa Robot Film Festival in Italy and "Best Animation Film" at the 2024 Absurd Film Festival in Italy.
+
+Examples of text-to-video model models of the mid-2020s are Runway's Gen-2, Google's VideoPoet, and OpenAI's Sora (unreleased as of October 2024).
+
+ Tools and processes 
+ Imagery 
+Image made with Stable Diffusion
+There are many tools available to the artist when working with diffusion models. They can define both positive and negative prompts, but they are also afforded a choice in using (or omitting the use of) VAEs, LorAs, hypernetworks, ipadapter, and embeddings/textual inversions. Variables, including CFG, seed, steps, sampler, scheduler, denoise, upscaler, and encoder, are sometimes available for adjustment. Additional influence can be exerted during pre-inference by means of noise manipulation, while traditional post-processing techniques are frequently used post-inference. Artists can also train their own models. 
+
+In addition, procedural "rule-based" generation of images using mathematical patterns, algorithms that simulate brush strokes and other painted effects, and deep learning algorithms such as generative adversarial networks (GANs) and transformers have been developed. Several companies have released apps and websites that allow one to forego all the options mentioned entirely while solely focusing on the positive prompt. There also exist programs which transform photos into art-like images in the style of well-known sets of paintings.
+
+There are many options, ranging from simple consumer-facing mobile apps to Jupyter notebooks and webUIs that require powerful GPUs to run effectively. Additional functionalities include "textual inversion," which refers to enabling the use of user-provided concepts (like an object or a style) learned from a few images. Novel art can then be generated from the associated word(s) (the text that has been assigned to the learned, often abstract, concept) and model extensions or fine-tuning (such as DreamBooth).
+
+ Impact and applications 
+AI has the potential for a societal transformation, which may include enabling the expansion of noncommercial niche genres (such as cyberpunk derivatives like solarpunk) by amateurs, novel entertainment, fast prototyping, increasing art-making accessibility, and artistic output per effort and/or expenses and/or time—e.g., via generating drafts, draft-refinitions, and image components (inpainting). Generated images are sometimes used as sketches, low-cost experiments, inspiration, or illustrations of proof-of-concept-stage ideas. Additional functionalities or improvements may also relate to post-generation manual editing (i.e., polishing), such as subsequent tweaking with an image editor.
+
+ Prompt engineering and sharing 
+
+Prompts for some text-to-image models can also include images and keywords and configurable parameters, such as artistic style, which is often used via keyphrases like "in the style of [name of an artist]" in the prompt and/or selection of a broad aesthetic/art style. There are platforms for sharing, trading, searching, forking/refining, and/or collaborating on prompts for generating specific imagery from image generators. Prompts are often shared along with images on image-sharing websites such as Reddit and AI art-dedicated websites. A prompt is not the complete input needed for the generation of an image; additional inputs that determine the generated image include the output resolution, random seed, and random sampling parameters.
+
+ Related terminology 
+Synthetic media, which includes AI art, was described in 2022 as a major technology-driven trend that will affect business in the coming years. Synthography is a proposed term for the practice of generating images that are similar to photographs using AI.
+
+ Impact 
+
+ Copyright 
+
+Legal scholars, artists, and media corporations have considered the legal and ethical implications of artificial intelligence art since the 20th century. Some artists use AI art to critique and explore the ethics of using gathered data to produce new artwork.
+
+In 1985, intellectual property law professor Pamela Samuelson argued that US copyright should allocate algorithmically generated artworks to the user of the computer program. A 2019 Florida Law Review article presented three perspectives on the issue. In the first, artificial intelligence itself would become the copyright owner; to do this, Section 101 of the US Copyright Act would need to be amended to define "author" as a natural person or a computer. In the second, following Samuelson's argument, the user, programmer, or artificial intelligence company would be the copyright owner. This would be an expansion of the "work for hire" doctrine, under which ownership of a copyright is transferred to the "employer." In the third situation, copyright assignments would never take place, and such works would be in the public domain, as copyright assignments require an act of authorship.
+
+In 2022, coinciding with the rising availability of consumer-grade AI image generation services, popular discussion renewed over the legality and ethics of AI-generated art. A particular topic is the inclusion of copyrighted artwork and images in AI training datasets, with artists objecting to commercial AI products using their works without consent, credit, or financial compensation. In September 2022, Reema Selhi, of the Design and Artists Copyright Society, stated that "there are no safeguards for artists to be able to identify works in databases that are being used and opt out." Some have claimed that images generated with these models can bear resemblance to extant artwork, sometimes including the remains of the original artist's signature. In December 2022, users of the portfolio platform ArtStation staged an online protest against non-consensual use of their artwork within datasets; this resulted in opt-out services, such as "Have I Been Trained?" increasing in profile, as well as some online art platforms promising to offer their own opt-out options. According to the US Copyright Office, artificial intelligence programs are unable to hold copyright, a decision upheld at the Federal District level as of August 2023 followed the reasoning from the monkey selfie copyright dispute.
+
+In January 2023, three artists—Sarah Andersen, Kelly McKernan, and Karla Ortiz—filed a copyright infringement lawsuit against Stability AI, Midjourney, and DeviantArt, claiming that it is legally required to obtain the consent of artists before training neural nets on their work and that these companies infringed on the rights of millions of artists by doing so on five billion images scraped from the web. In July 2023, U.S. District Judge William Orrick was inclined to dismiss most of the lawsuits filed by Andersen, McKernan, and Ortiz, but allowed them to file a new complaint. Also in 2023, Stability AI was sued by Getty Images for using its images in the training data. A tool built by Simon Willison allowed people to search 0.5% of the training data for Stable Diffusion V1.1, i.e., 12 million of the 2.3 billion instances from LAION 2B. Artist Karen Hallion discovered that her copyrighted images were used as training data without their consent.
+
+In March 2024, Tennessee enacted the ELVIS Act, which prohibits the use of AI to mimic a musician's voice without permission. A month later in that year, Adam Schiff introduced the Generative AI Copyright Disclosure Act which, if passed, would require that AI companies to submit copyrighted works in their datasets to the Register of Copyrights before releasing new generative AI systems.
+
+Deception
+As with other types of photo manipulation since the early 19th century, some people in the early 21st century have been concerned that AI could be used to create content that is misleading and can be made to damage a person's reputation, such as deepfakes. Artist Sarah Andersen, who previously had her art copied and edited to depict Neo-Nazi beliefs, stated that the spread of hate speech online can be worsened by the use of image generators. Some also generate images or videos for the purpose of catfishing.
+
+AI systems have the ability to create deepfake content, which is often viewed as harmful and offensive. The creation of deepfakes poses a risk to individuals who have not consented to it. This mainly refers to revenge porn, where sexually explicit material is disseminated to humiliate or harm another person. AI-generated child pornography has been deemed a potential danger to society due to its unlawful nature.
+
+To mitigate some deceptions, there has been a tool that tries to detect images that were generated by Dall-E.After winning the 2023 "Creative" "Open competition" Sony World Photography Awards, Boris Eldagsen stated that his entry was actually created with artificial intelligence. Photographer Feroz Khan commented to the BBC that Eldagsen had "clearly shown that even experienced photographers and art experts can be fooled". Smaller contests have been affected as well; in 2023, a contest run by author Mark Lawrence as Self-Published Fantasy Blog-Off was cancelled after the winning entry was allegedly exposed to be a collage of images generated with Midjourney.
+
+In May 2023, on social media sites such as Reddit and Twitter, attention was given to a Midjourney-generated image of Pope Francis wearing a white puffer coat. Additionally, an AI-generated image of an attack on the Pentagon went viral as part of a hoax news story on Twitter.
+
+In the days before March 2023 indictment of Donald Trump as part of the Stormy Daniels–Donald Trump scandal, several AI-generated images allegedly depicting Trump's arrest went viral online. On March 20th, British journalist Eliot Higgins generated various images of Donald Trump being arrested or imprisoned using Midjourney v5 and posted them on Twitter; two images of Trump struggling against arresting officers went viral under the mistaken impression that they were genuine, accruing more than 5 million views in three days. According to Higgins, the images were not meant to mislead, but he was banned from using Midjourney services as a result. As of April 2024, the tweet had garnered more than 6.8 million views.
+
+In February 2024, the paper Cellular functions of spermatogonial stem cells in relation to JAK/STAT signaling pathway was published using AI-generated images. It was later retracted from Frontiers in Cell and Developmental Biology because the paper "does not meet the standards".
+
+Income and employment stability
+
+Théâtre D'opéra Spatial, an image generated with Midjourney which won a digital art competition in 2022
+As generative AI image software such as Stable Diffusion and DALL-E continue to advance, the potential problems and concerns that these systems pose for creativity and artistry have risen. In 2022, artists working in various media raised concerns about the impact that generative artificial intelligence could have on their ability to earn money, particularly if AI-based images started replacing artists working in the illustration and design industries. In August 2022, digital artist R. J. Palmer stated that "I could easily envision a scenario where using AI, a single artist or art director could take the place of 5-10 entry level artists... I have seen a lot of self-published authors and such say how great it will be that they don’t have to hire an artist." Scholars Jiang et al. state that "Leaders of companies like Open AI and Stability AI have openly stated that they expect generative AI systems to replace creatives imminently." A 2022 case study found that AI-produced images created by technology like DALL-E caused some traditional artists to be concerned about losing work, while other artists thought the technology can help them work more efficiently.
+
+AI-based images have become more commonplace in art markets and search engines because AI-based text-to-image systems are trained from pre-existing artistic images, sometimes without the original artist's consent, allowing the software to mimic specific artists' styles. For example, Polish digital artist Greg Rutkowski has stated that it is more difficult to search for his work online because many of the images in the results are AI-generated specifically to mimic his style. Furthermore, some training databases on which AI systems are based are not accessible to the public.
+
+The ability of AI-based art software to mimic or forge artistic style also raises concerns of malice or greed. Works of AI-generated art, such as Théâtre D'opéra Spatial, a text-to-image AI illustration that won the grand prize in the August 2022 digital art competition at the Colorado State Fair, have begun to overwhelm art contests and other submission forums meant for small artists. The Netflix short film The Dog & the Boy, released in January 2023, received backlash online for its use of artificial intelligence art to create the film's background artwork.
+
+AI art has sometimes been deemed to be able to replace traditional stock images. In 2023, Shutterstock announced a beta test of an AI tool that can regenerate partial content of other Shutterstock's images. Getty Images and Nvidia have partnered with the launch of Generative AI by iStock, a model trained on Getty’s library and iStock’s photo library using Nvidia’s Picasso model.
+
+ Power usage 
+In this 1923 comic, H. T. Webster humorously imagines the life of a cartoonist in 2023, when machines powered by electricity can produce and execute ideas for cartoons.
+Researchers from Hugging Face and Carnegie Mellon University reported in a 2023 paper that generating one thousand 1024×1024 images using Stable Diffusion's XL 1.0 base model requires 11.49 kWh of energy and generates  of carbon dioxide, which is roughly equivalent to driving an average gas-powered car a distance of . Comparing 88 different models, the paper concluded that image-generation models used on average around 2.9kWh of energy per 1,000 inferences.
+
+ Reception 
+
+ Bias 
+Another major concern raised about AI-generated images and art is sampling bias within model training data leading towards discriminatory output from AI art models. In 2023, University of Washington researchers found evidence of racial bias within the Stable Diffusion model, with images of a "person" corresponding most frequently with images of males from Europe or North America.
+
+In 2024, Google's chatbot Gemini's AI image generator was criticized for perceived racial bias, with claims that Gemini deliberately underrepresented white people in its results. Users reported that it generated images of white historical figures like the Founding Fathers, Nazi soldiers, and Vikings as other races, and that it refused to process prompts such as "happy white people" and "ideal nuclear family". Google later apologized for "missing the mark" and took Gemini's image generator offline for updates.
+
+This prompted discussions about the ethical implications of representing historical figures through a contemporary lens, leading critics to argue that these outputs could mislead audiences regarding actual historical contexts.
+
+ Analysis of existing art using AI 
+In addition to the creation of original art, research methods that use AI have been generated to quantitatively analyze digital art collections. This has been made possible due to the large-scale digitization of artwork in the past few decades. According to CETINIC and SHE (2022), using artificial intelligence to analyse already-existing art collections can provide new perspectives on the development of artistic styles and the identification of artistic influences.
+
+Two computational methods, close reading and distant viewing, are the typical approaches used to analyze digitized art. Close reading focuses on specific visual aspects of one piece. Some tasks performed by machines in close reading methods include computational artist authentication and analysis of brushstrokes or texture properties. In contrast, through distant viewing methods, the similarity across an entire collection for a specific feature can be statistically visualized. Common tasks relating to this method include automatic classification, object detection, multimodal tasks, knowledge discovery in art history, and computational aesthetics. Synthetic images can also be used to train AI algorithms for art authentication and to detect forgeries.
+
+Researchers have also introduced models that predict emotional responses to art such as ArtEmis, a large-scale dataset with machine learning models that contain emotional reactions to visual art as well as predictions of emotion from images or text.
+
+ Other forms of art 
+Some prototype cooking robots can dynamically taste.
+
+There is also AI-assisted writing beyond copy editing (such as helping with writer's block, inspiration, or rewriting segments). Generative AI has been used in video game production beyond imagery, especially for level design (e.g., for custom maps) and creating new content (e.g., quests or dialogue) or interactive stories in video games. 

@@ -1,0 +1,14 @@
+Almost all of Nevada is in the Pacific Time Zone (UTC -8). The few exceptions that exist all observe Mountain Time (UTC -7) and are close to the borders of Idaho or Utah. Other than these minor exceptions, Nevada is the only non coastal state to be entirely on Pacific Time, most of Idaho uses Mountain Time, and Arizona is officially on Mountain Time except for the 3/4 of the year when Daylight Saving Time is in effect, which they don't observe (other than the Navajo Nation).
+
+Mountain Time is officially observed close to the border to Utah in:
+ West Wendover, making Elko County, Nevada one of the few counties in the US that is split between two time zones.
+
+Mountain Time is also unofficially observed in the following Idaho border areas:
+ Jackpot for the convenience of tourists from Idaho
+ Owyhee and the rest of the Duck Valley Indian Reservation
+ Mountain City because of its proximity to Owyhee
+ Jarbidge due to its proximity to Owyhee
+
+IANA time zone database
+The zones for Nevada  as given by zone.tab of the IANA time zone database, columns marked * are from the zone.tab:ftp://ftp.iana.org/tz/data/northamerica
+ c.c.* coordinates* TZ* comments* UTC offset UTC offset DST Note  

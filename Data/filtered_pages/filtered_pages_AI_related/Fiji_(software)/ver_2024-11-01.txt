@@ -1,0 +1,40 @@
+250px|Screenshot of Fiji in Windows 11
+FijiPrimary reference: Fiji was presented publicly for the first time on the ImageJ User and Developer Conference in November 2008. is an open source image processing package based on ImageJ2.
+
+Fiji's main purpose is to provide a distribution of ImageJ2 with many bundled plugins. Fiji features an integrated updating system and aims to provide users with a coherent menu structure, extensive documentation in the form of detailed algorithm descriptions and tutorials, and the ability to avoid the need to install multiple components from different sources.
+
+Fiji is also targeted at developers, through the use of a version control system, an issue tracker, dedicated development channels, and a rapid-prototyping infrastructure in the form of a script editor which supports BeanShell, Jython, JRuby, Clojure, Groovy, JavaScript, and other scripting languages, as well as just-in-time Java development.
+
+Plugins
+Many plugins exist for ImageJ, that have a wide range of applications, but also a wide range of quality.Compare the presentations at the 2nd ImageJ User and Developer Conference  in November 2008 and the 3rd ImageJ and User Developer Conference in October 2010.
+
+Further, some plugins require specific versions of ImageJ, specific versions of third-party libraries, or additional Java components such as the Java compiler or Java 3D.
+
+One of Fiji's principal aims is to make the installation of ImageJ, Java, Java 3D, the plugins, and further convenient components, as easy as possible. As a consequence, Fiji enjoys more and more active users.Compare with the Fiji Usage Map
+
+Audience
+
+While Fiji was originally intended for neuroscientists (and continues to be so), it accumulated enough functionality to attract scientists from a variety of fields, such as cell biology, parasitology, genetics, life sciences in general, materials science, etc. As stated on the official website, the primary focus is "life sciences", although Fiji provides many tools helping with scientific image analysis in general.The Fiji Wiki, Retrieved 2012-11-01.
+
+Fiji is most popular in the life sciences community, where the 3D Viewer helps visualizing data obtained through light microscopy, and for which Fiji provides registration, segmentation, and other advanced image processing algorithms.
+
+The Fiji component TrakEM2 was successfully used and enhanced to analyze neuronal lineages in larval Drosophila brains.
+
+Fiji was prominently featured in Nature Methods review supplement on visualization.
+
+Development
+Fiji is fully open source. Its sources live in a public Git repository.
+
+Fiji was accepted as an organization into the Google Summer of Code 2009, and completed two projects.
+
+The scripting framework, which supports JavaScript, Jython, JRuby, Clojure, BeanShell, and other languages, is an integral part of the development of Fiji; many developers prototype their plugins in one of the mentioned scripting languages, and gradually turn the prototypes into proper Java code. To this end, as one of the aforementioned Google Summer of Code projects, a script editor was added with syntax highlighting and in-place code execution.
+
+The scripting framework is included in the Fiji releases, so that advanced users can use such scripts in their common workflow.
+
+The development benefits from occasional hackathons, where life scientists with computational background meet and improve their respective plugins of interest.
+
+Script editor
+The script editor in Fiji supports rapid prototyping of scripts and ImageJ plugins, making Fiji a powerful tool to develop new image processing algorithms and explore new image processing techniques with ImageJ.Scripting in Fiji (Fiji Is Just ImageJ) at 3rd User and Developer Conference  in October 2010Albert Cardona's crash course Jython scripting with Fiji.
+
+Supported platforms
+Fiji runs on Windows, Linux, and Mac OS X, Intel 32-bit or 64-bit, with limited support for MacOSX/PPC.

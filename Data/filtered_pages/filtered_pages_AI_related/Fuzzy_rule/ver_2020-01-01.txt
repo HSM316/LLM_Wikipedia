@@ -1,0 +1,50 @@
+Fuzzy rules are used within fuzzy logic systems to infer an output based on input variables. Modus ponens and modus tollens are the most important rules of inference.  A modus ponens rule is in the form
+Premise: x is A
+Implication: IF x is A THEN y is B
+Consequent: y is B
+
+In crisp logic, the premise x is A can only be true or false. However, in a fuzzy rule, the premise x is A and the consequent y is B can be true to a degree, instead of entirely true or entirely false. This is achieved by representing the linguistic variables A and B using fuzzy sets. In a fuzzy rule, modus ponens is extended to generalised modus ponens:.
+
+Premise: x is A*
+Implication: IF x is A THEN y is B
+Consequent: y is B*
+
+The key difference is that the premise x is A can be only partially true. As a result, the consequent y is B is also partially true. Truth is represented as a real number between 0 and 1, where 0 is false and 1 is true.
+
+ Comparison between Boolean and fuzzy logic rules 
+As an example, consider a rule used to control a three-speed fan. A binary IF-THEN statement may be
+
+IF   temperature  30
+THEN  fan speed is 3
+
+The disadvantage of this rule is that it uses a strict temperature as a threshold, but the user may want the fan to still function at this speed when temperature = 29.9. A fuzzy IF-THEN statement may be
+IF   temperature is hot
+THEN  fan speed is fast
+
+where hot and fast are described using fuzzy sets.
+
+ Fuzzy rule connectors 
+Rules can connect multiple variables through fuzzy set operations using t-norms and t-conorms.
+
+T-norms are used as an AND connector. For example,
+
+IF   temperature is hot AND humidity is high
+THEN  fan speed is fast
+
+A degree of truth is assigned to temperature is hot and to humidity is high. The result of a t-norm operation on these two degrees is used as the degree of truth that fan speed is fast.
+
+T-conorms are used as an OR connector.  For example,
+
+IF   temperature is hot OR humidity is high
+THEN  fan speed is fast
+
+The result of a t-conorm operation on these two degrees is used as the degree of truth that fan speed is fast.
+
+The complement of a fuzzy set is used as a negator. For example,
+
+IF   temperature is NOT hot
+THEN  fan speed is slow
+
+The fuzzy set not hot is the complement of hot. The degree of truth assigned to temperature is not hot is used as the degree of truth that fan speed is slow.
+
+T-conorms are less commonly used as rules can be represented by AND and OR connectors exclusively.

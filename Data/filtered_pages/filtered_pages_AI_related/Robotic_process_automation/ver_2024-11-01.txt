@@ -1,0 +1,77 @@
+Robotic process automation (RPA) is a form of business process automation that is based on software robots (bots) or artificial intelligence (AI) agents. RPA should not be confused with artificial intelligence as it is based on automotive technology following a predefined workflow.  It is sometimes referred to as software robotics (not to be confused with robot software).
+
+In traditional workflow automation tools, a software developer produces a list of actions to automate a task and interface to the back end system using internal application programming interfaces (APIs) or dedicated scripting language. In contrast, RPA systems develop the action list by watching the user perform that task in the application's graphical user interface (GUI), and then perform the automation by repeating those tasks directly in the GUI. This can lower the barrier to the use of automation in products that might not otherwise feature APIs for this purpose.
+
+RPA tools have strong technical similarities to graphical user interface testing tools. These tools also automate interactions with the GUI, and often do so by repeating a set of demonstration actions performed by a user. RPA tools differ from such systems in that they allow data to be handled in and between multiple applications, for instance, receiving email containing an invoice, extracting the data, and then typing that into a bookkeeping system.
+
+Historic evolution
+
+The typical benefits of robotic automation include reduced cost; increased speed, accuracy, and consistency; improved quality and scalability of production. Automation can also provide extra security, especially for sensitive data and financial services.
+
+As a form of automation, the concept has been around for a long time in the form of screen scraping, which can be traced back to early forms of malware. However, RPA is much more extensible, consisting of API integration into other enterprise applications, connectors into ITSM systems, terminal services and even some types of AI (e.g. machine learning) services such as image recognition. It is considered to be a significant technological evolution in the sense that new software platforms are emerging which are sufficiently mature, resilient, scalable and reliable to make this approach viable for use in large enterprises (who would otherwise be reluctant due to perceived risks to quality and reputation).
+
+A principal barrier to the adoption of self-service is often technological: it may not always be feasible or economically viable to retrofit new interfaces onto existing systems. Moreover, organisations may wish to layer a variable and configurable set of process rules on top of the system interfaces which may vary according to market offerings and the type of customer. This only adds to the cost and complexity of the technological implementation. Robotic automation software provides a pragmatic means of deploying new services in this situation, where the robots simply mimic the behaviour of humans to perform the back-end transcription or processing. The relative affordability of this approach arises from the fact that no new IT transformation or investment is required; instead the software robots simply leverage greater use out of existing IT assets.
+
+Use
+
+The hosting of RPA services also aligns with the metaphor of a software robot, with each robotic instance having its own virtual workstation, much like a human worker. The robot uses keyboard and mouse controls to take actions and execute automations. Normally all of these actions take place in a virtual environment and not on screen; the robot does not need a physical screen to operate, rather it interprets the screen display electronically. The scalability of modern solutions based on architectures such as these owes much to the advent of virtualization technology, without which the scalability of large deployments would be limited by the available capacity to manage physical hardware and by the associated costs. The implementation of RPA in business enterprises has shown dramatic cost savings when compared to traditional non-RPA solutions.http://www.kpmg-institutes.com/content/dam/kpmg/sharedservicesoutsourcinginstitute/pdf/2015/robotics-improve-legacy-sourcing.pdf 
+
+There are however several risks with RPA. Criticism includes risks of stifling innovation and creating a more complex maintenance environment of existing software that now needs to consider the use of graphical user interfaces in a way they weren't intended to be used.
+
+Impact on employment
+
+According to Harvard Business Review, most operations groups adopting RPA have promised their employees that automation would not result in layoffs. Instead, workers have been redeployed to do more interesting work. One academic study highlighted that knowledge workers did not feel threatened by automation: they embraced it and viewed the robots as team-mates. The same study highlighted that, rather than resulting in a lower "headcount", the technology was deployed in such a way as to achieve more work and greater productivity with the same number of people.
+
+Conversely, however, some analysts proffer that RPA represents a threat to the business process outsourcing (BPO) industry. The thesis behind this notion is that RPA will enable enterprises to "repatriate" processes from offshore locations into local data centers, with the benefit of this new technology. The effect, if true, will be to create high-value jobs for skilled process designers in onshore locations (and within the associated supply chain of IT hardware, data center management, etc.) but to decrease the available opportunity to low-skilled workers offshore. On the other hand, this discussion appears to be healthy ground for debate as another academic study was at pains to counter the so-called "myth" that RPA will bring back many jobs from offshore.
+
+RPA actual use
+ Banking and finance process automation
+ Mortgage and lending processes
+ Customer care automation
+ eCommerce merchandising operations
+ Social media marketing
+ Optical character recognition applications
+ Data extraction process
+ Fixed automation process
+
+Impact on society
+Academic studies project that RPA, among other technological trends, is expected to drive a new wave of productivity and efficiency gains in the global labour market. Although not directly attributable to RPA alone, Oxford University conjectures that up to 35% of all jobs might be automated by 2035.
+
+There are geographic implications to the trend in robotic automation. In the example above where an offshored process is "repatriated" under the control of the client organization (or even displaced by a business process outsourcer) from an offshore location to a data centre, the impact will be a deficit in economic activity to the offshore location and an economic benefit to the originating economy. On this basis, developed economies – with skills and technological infrastructure to develop and support a robotic automation capability – can be expected to achieve a net benefit from the trend.
+
+In a TEDx talk hosted by University College London (UCL), entrepreneur David Moss explains that digital labour in the form of RPA is likely to revolutionize the cost model of the services industry by driving the price of products and services down, while simultaneously improving the quality of outcomes and creating increased opportunity for the personalization of services.
+
+In a separate TEDx in 2019 talk, Japanese business executive, and former CIO of Barclays bank, Koichi Hasegawa noted that digital robots can be a positive effect on society if we start using a robot with empathy to help every person. He provides a case study of the Japanese insurance companies – Sompo Japan and Aioi – both of whom introduced bots to speed up the process of insurance pay-outs in past massive disaster incidents.
+
+Meanwhile, Professor Willcocks, author of the LSE paper cited above, speaks of increased job satisfaction and intellectual stimulation, characterising the technology as having the ability to "take the robot out of the human", a reference to the notion that robots will take over the mundane and repetitive portions of people's daily workload, leaving them to be used in more interpersonal roles or to concentrate on the remaining, more meaningful, portions of their day.
+
+It was also found in a 2021 study observing the effects of robotization in Europe that, the gender pay gap increased at a rate of .18% for every 1% increase in robotization of a given industry.
+
+ Unassisted RPA 
+Unassisted RPA, or RPAAI, is the next generation of RPA related technologies. Technological advancements around artificial intelligence allow a process to be run on a computer without needing input from a user.
+
+ Hyperautomation 
+
+Hyperautomation is the application of advanced technologies like RPA, artificial intelligence, machine learning (ML) and process mining to augment workers and automate processes in ways that are significantly more impactful than traditional automation capabilities. Hyperautomation is the combination of technologies that allow faster application authorship (like low-code and no-code) with automation technologies that coordinate different worker types (i.e. human and artificial) for intelligent and strategic workflow optimization.
+
+Gartner's report notes that this trend was kicked off with robotic process automation (RPA). The report notes that, "RPA alone is not hyperautomation. Hyperautomation requires a combination of tools to help support replicating pieces of where the human is involved in a task."
+
+ Outsourcing 
+Back office clerical processes outsourced by large organisations - particularly those sent offshore - tend to be simple and transactional in nature, requiring little (if any) analysis or subjective judgement. This would seem to make an ideal starting point for organizations beginning to adopt robotic automation for the back office. Whether client organisations choose to take outsourced processes back "in house" from their business process outsourcing (BPO) providers, thus representing a threat to the future of the BPO business, or whether the BPOs implement such automations on their clients' behalf may well depend on a number of factors.
+
+Conversely however, a BPO provider may seek to effect some form of client lock-in by means of automation. By removing cost from a business operation, where the BPO provider is considered to be the owner of the intellectual property and physical implementation of a robotic automation solution (perhaps in terms of hardware, ownership of software licences, etc.), the provider can make it very difficult for the client to take a process back "in house" or elect a new BPO provider. This effect occurs as the associated cost savings made through automation would - temporarily at least - have to be reintroduced to the business whilst the technical solution is reimplemented in the new operational context.
+
+The geographically agnostic nature of software means that new business opportunities may arise for those organisations that have a political or regulatory impediment to offshoring or outsourcing. A robotised automation can be hosted in a data centre in any jurisdiction and this has two major consequences for BPO providers. Firstly, for example, a sovereign government may not be willing or legally able to outsource the processing of tax affairs and security administration. On this basis, if robots are compared to a human workforce, this creates a genuinely new opportunity for a "third sourcing" option, after the choices of onshore vs. offshore. Secondly, and conversely, BPO providers have previously relocated outsourced operations to different political and geographic territories in response to changing wage inflation and new labor arbitrage opportunities elsewhere. By contrast, a data centre solution would seem to offer a fixed and predictable cost base that, if sufficiently low in cost on a robot vs. human basis,  would seem to eliminate any potential need or desire to continually relocate operational bases.
+
+Limitations of robotic process automation
+While robotic process automation has many benefits including cost efficiency and consistency in performance, it also has some limitations. Current RPA solutions demand continual technical support to handle system changes, therefore it lacks the ability to autonomously adapt to new conditions. Because of this limitation, the system sometimes needs manual reconfiguration, which in turn has an effect on efficiency.
+
+The difference between RPA and AI
+RPA is based on automotive technology following a predefined workflow, and artificial intelligence is data-driven and focuses on processing information to make predictions. Therefore there is a distinct difference between how the two systems operate. AI aims to mimic human intelligence, whereas RPA is focused on reproducing tasks that are typically human-directed. Moreover, RPA could also be explained as virtual robots that take over routinized human work, it can identify data by interpreting the underlying tags. RPA, therefore, is based on machine learning, whereas AI utilizes self-learning technologies.
+
+ Examples 
+ Voice recognition and digital dictation software linked to join up business processes for straight through processing without manual intervention
+ Specialised remote infrastructure management software featuring automated investigation and resolution of problems, using robots for the first line IT support
+Chatbots used by internet retailers and service providers to service customer requests for information. Also used by companies to service employee requests for information from internal databases
+ Presentation layer automation software, increasingly used by business process outsourcers to displace human labor
+ Interactive voice response (IVR) systems incorporating intelligent interaction with callers

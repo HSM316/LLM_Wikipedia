@@ -1,0 +1,7 @@
+The term high-performance fuzzy computing (HPFC) refers to
+those technologies able to exploit supercomputers and computer clusters
+to perform high performance fuzzy logic computations.
+Thus HPFC is just a special case of the much more general high-performance computing.
+In the specific case of fuzzy logic, however, there exist more traditional ways to achieve high performance, that could be considered HPFC but in a broader sense, like the
+hardware implementations on DSP or FPGA.
+More recently, another alternative has emerged: fuzzy computing on GPU.

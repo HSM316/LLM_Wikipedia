@@ -1,0 +1,131 @@
+The SARL programming language is a modular agent-oriented programming language. It aims at providing the fundamental abstractions for dealing with concurrency, distribution, interaction, decentralization, reactivity, autonomy and dynamic reconfiguration.Rodriguez, S., Gaud, N., & Galland, S. (2014). SARL: a general-purpose agent-oriented programming language. In The 2014 IEEE/WIC/ACM International Conference on Intelligent Agent Technology. Warsaw, Poland: IEEE Computer Society Press.
+
+SARL is platform-independent and agent’s architecture-agnostic. It provides a set of agent-oriented first-class abstractions directly at the language level (see the section on the concepts). Nevertheless, it supports the integration and the mapping of concepts provided by other agent-oriented metamodels. SARL itself exploits this extension mechanism for defining its own extensions (organizational, event-driven, etc.).
+
+An important feature of the SARL programming language is its native support for "holonic multiagent systems," and "recursive agents"
+(also called "holons").
+
+ Overview 
+
+The metamodel of SARL is based on four main concepts: Agent, Capacity, Space and Skill.
+The core metamodel of SARL is presented in Figure 1, and the main concepts are colored in light blue.
+Each of them are detailed in the following sections, as well as the corresponding piece of SARL code to illustrate their practical use.
+
+center|800x400px|Figure 1: The concepts of the SARL programming language.
+
+In SARL, a Multiagent System (MAS) is a collection of Agents interacting together in shared distributed Spaces.
+Each agent has a collection of Capacities describing what it is able to perform, its personal competences.Rodriguez S., Gaud N., Hilaire V., Galland S., & Koukam K. (2006). An analysis and design concept for self-organization in holonic multi-agent systems. In the International Workshop on Engineering Self-Organizing Applications (ESOA’06), pages 62–75. Springer-Verlag.Cossentino M., Gaud N., Hilaire V., Galland S. & Koukam K. 2010. ASPECS: an agent-oriented software process for engineering complex systems - how to design agent societies under a holonic perspective. In Int. Journal on Autonomous Agents and Multi-Agent Systems, 2(2):260–304, March 2010. doi: 10.1007/s10458-009-9099-4.
+Each Capacity may then be realized/implemented by various Skills.
+For understanding the relationship between the concepts of Capacity and Skill, a parallel can be drawn with concepts of Interface and their implementation classes in object-oriented languages.
+To implement specific architectures (like BDI, reasoning, reactive, hybrid, etc.) developers should develop their own capacities and skills providing the agents with new exploitable features.
+
+Despite its open nature, SARL imposes some fundamental principles to be respected by the various Virtual Machines (VM) that wants to support it. First of all, the implementation of Space must be fully distributed and the execution layer must be abstracted from agents. SARL encourages a massively parallel execution of Agents and Behaviors. SARL is fully interoperable with Java to easily reuse all the contributions provided by the Java community, but also to facilitate the integration and evolution of legacy systems. One of the key principles governing SARL consists in not imposing a predefined way for Agents to interact within a Space. Similarly, the way to identify agents is dependent on the type of Space considered. This allows to define different types of interaction mechanisms and models on Spaces.
+
+The metamodel and the syntax of the SARL programming language have been inspired by the languages like Scala, Clojure, and Ruby.
+The SARL tools have been developed on top of Xtext, that enables to easily build domain-specific languages that are directly integrated into the Eclipse framework. The complete definition of the SARL syntax is available on GitHub.
+
+ Concepts 
+
+The SARL programming language is based on an agent-oriented metamodel based on the following concepts.
+
+ Emotional software agents 
+
+An agent is an autonomous entity having a set of skills to realize the capacities it exhibits. An agent has a set of built-in capacities considered essential to respect the commonly accepted competences of agents, such autonomy, reactivity, proactivity and social capacities. Among these built-in capacities (BIC), is the "behaviors" capacity that determines its global conduct. An agent has also a default behavior directly described within its definition.
+
+A Behavior maps a collection of perceptions represented by Events to a sequence of Actions. An Event is the specification of some occurrence in a Space that may potentially trigger effects by a listener (e.g. agent, behavior, etc.).
+
+These  language does not imposes a specific agent’s control loop.
+The programmer is free to implement any control or authority protocol for their own application scenario, except for the initialization and destruction events.
+Indeed, when agents are created, the virtual machine that is executing the emotional software program is in charge of creating the agent instances, and installing the skills associated to the built-in capacities into the agent.
+Then, when the agent is ready to begin its execution, it fires the Initialize event.
+When the agent has decided to stop its own execution, the virtual machine fires the Destroy event to enable the agent to release any resource it may still hold.
+
+ Capacity and Skill 
+
+An Action is a specification of a transformation of a part of the designed system or its environment.
+This transformation guarantees resulting properties if the system before the transformation satisfies a set of constraints.
+An action is defined in terms of pre- and post-conditions.
+
+A Capacity is the specification of a collection of actions.
+This specification makes no assumptions about its implementation.
+It could be used to specify what an agent can do, what a behavior requires for its execution.
+
+A Skill is a possible implementation of a capacity fulfilling all the constraints of this specification.
+An agent can dynamically evolve by learning/acquiring new Capacities, but it can also dynamically change the Skill associated to a given capacity.
+Acquiring new capacities also enables an agent to get access to new behaviors requiring these capacities.
+This provides agents with a self-adaptation mechanism that allow them to dynamically change their architecture according to their current needs and goals.
+
+ Context and Space 
+
+A Context defines the perimeter/boundary of a sub-system, and gathers a collection of Spaces.
+In each context, there is at least one particular Space called Default Space to which all agents in this context belong.
+This ensures the existence of a common shared Space to all agents in the same context.
+Each agent can then create specific public or private spaces to achieve its personal goals.
+Since their creation, agents are incorporated into a context called the Default Context.
+The notion of Context makes complete sense when agents are considered composed or holonic (see below).
+
+A Space is the support of the interaction between agents respecting the rules defined in a Space Specification. A Space Specification defines the rules (including action and perception) for interacting within a given set of Spaces respecting this specification.
+
+ Recursive Agent or Emotional software agent 
+
+Agents can be composed of other agents to define hierarchical multiagent systems. Each agent defines its own Context, called the Inner Context, and it is part of one or more External Contexts.
+
+ Examples 
+ Hello, World! 
+package helloworld
+import io.sarl.core.Initialize
+agent HelloWorldAgent {
+        on Initialize {	
+             println("Hello, World!")
+        }
+}	
+ Exchanging messages between two agents 
+
+For illustrating the syntax of the SARL language, the Ping-Pong scheme is coded below.
+The agent A is sending a message PING to the agent B for determining if it is still alive.
+The agent B is replying with a PONG message.
+
+First, the two messages must be defined as events (without attribute):
+    event PING
+    event PONG
+
+The agent A is defined with    
+    agent A {
+        uses DefaultContextInteraction, Logging
+        on Initialize {
+            emit(new Ping)
+        }
+        on Pong {
+            println("Agent " + occurrence.source + " is alive.")
+        }
+    }
+
+In the previous code, the keyword  enables the agent to use previously-defined capacities: the capacity to interact with other agents inside the default context (DefaultContextInteraction), and the capacity to log messages (Logging).
+The  keyword permits to define the actions when an occurrence of the specified event is received by the agent A.
+When the agent A receives the Initialize event, it emits a Ping event to all the existing agents.
+When the agent A receives the Pong event, it logs a message with the identity of the event's emitter inside.
+
+The agent B is defined with    
+    agent B {
+        uses DefaultContextInteraction, Logging
+        on Ping {
+            println("Agent " + occurrence.source + " wants to know if I'm alive.)
+            emit(new Pong, Scopes        addresses(occurrence.source))
+        }
+    }
+
+When the agent B receives the Ping message, it logs a message and reply with a Pong message.
+For avoiding a broadcast of the Pong message, the receiver of this message is restricted with the scope corresponding to the address of the Ping's emitter.
+
+ Janus Platform: a SARL Run-time Environment 
+
+SARL language specifies a set of concepts and their relations.
+However, the SARL language does not impose a particular execution infrastructure for being platform-independent.
+
+Nevertheless, the Janus Project provides the infrastructure for running SARL agents.
+Janus is an open-source multi-agent platform fully implemented in Java 1.7.
+It implements all required infrastructure to execute a MAS programmed in the SARL language.
+The major assumption made at the SARL language level are supported by this run-time environment: fully distributed, parallel execution of agent’s behaviors.
+Additionally, the Janus platform provides the tools for helping the programmer to deploy its MAS with the automatic discovery of Janus kernels, for instance.
+
+Technically, the Janus platform follows the best practices in current software development, such as Inversion of Control, and profits from new technologies like Distributed Data Structures (In-Memory Data Grid like Hazelcast).

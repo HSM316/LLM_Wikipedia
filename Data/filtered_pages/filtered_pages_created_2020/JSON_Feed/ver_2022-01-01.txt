@@ -1,0 +1,68 @@
+JSON Feed is a Web feed file format for Web syndication in JSON instead of XML as used by RSS and Atom.
+
+A range of software libraries and web frameworks support content syndication via JSON Feed. Supporting clients include NetNewsWire, NewsBlur, ReadKit and Reeder.
+
+Notable publishers include NPR.
+
+ Example 
+This is an example feed using the 1.1 Specification. More details can be found on the website including other optional properties like expired and hubs. Custom objects may also be used by publishers, but feed readers that do not understand it must ignore it.{
+  "version": "https://jsonfeed.org/version/1.1",
+  "title": "My Example Feed",
+  "home_page_url": "https://example.org/",
+  "feed_url": "https://example.org/feed.json",
+  "description": "Optional to provide more detail beyond the title.",
+  "user_comment": "Optional and should be ignored by feed readers.",
+  "next_url": "https://example.org/feed-pagination.json?x=unique_next_url",
+  "icon": "https://example.org/favicon-timeline-512x512.png",
+  "favicon": "https://example.org/favicon-sourcelist-64x64.png",
+  "authors": [
+    {
+      "name": "Optional Author",
+      "url": "https://example.org/authors/optional-author",
+      "avatar": "https://example.org/authors/optional-author/avatar-512x512.png"
+    }
+  ],
+  "language": "en-US",
+  "items": [
+    {
+      "id": "2",
+      "content_text": "This is a second item.",
+      "url": "https://example.org/second-item",
+      "language": "es-mx",
+      "attachments": [
+        {
+          "url": "https://example.org/second-item/audio.ogg",
+          "mime_type": "audio/ogg",
+          "title": "Optional Title",
+          "size_in_bytes": 31415927,
+          "duration_in_seconds": 1800
+        }
+      ]
+    },
+    {
+      "id": "required-unique-string-that-does-not-change: number, guid, url, etc.",
+      "url": "https://example.org/initial-post",
+      "external_url": "https://en.wikipedia.org/w/index.php?title=JSON_Feed",
+      "title": "Optional Title",
+      "content_html": "<p>Optional content for the feed reader. You may also use content_text or both at the same time.</p>",
+      "content_text": "Optional text for simple feeds.",
+      "summary": "Optional summary of the item.",
+      "image": "https://example.org/initial-post/main-img.png",
+      "banner_image": "https://example.org/initial-post/details-banner.png",
+      "date_published": "2021-10-25T19:30:00-01:00",
+      "date_modified": "2021-10-26T19:45:00-01:00",
+      "authors": [
+        {
+          "name": "Optional Author",
+          "url": "https://example.org/authors/optional-author",
+          "avatar": "https://example.org/authors/optional-author/avatar-512x512.png"
+        }
+      ],
+      "tags": [
+        "Optional Tag",
+        "Example"
+      ],
+      "language": "en-US"
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+Project Debater is an IBM artificial intelligence project, designed to participate in a full live debate with expert human debaters. It follows on from the Watson project which played Jeopardy!
+
+ Development 
+Project Debater was developed at IBM's lab in Haifa, Israel. The project was proposed by Noam Slonim in 2011 as the IBM Research next Grand Challenge, following Deep Blue and the victory of Watson in Jeopardy! It was exposed for the first time in a closed media event at June 18, 2018, in San Francisco, under the leadership of Ranit Aharonov and Slonim, both from the IBM Research lab in Haifa, Israel. The AI technology debated two human debaters, Noa Ovadia, who was the 2016 Israeli debate champion and Dan Zafrir. The two debated on the topics "We should subsidize space exploration" and "Should we increase the use of telemedicine."
+
+A demonstration of Project Debater also aired on the Discovery Channel in June 2018 debating the question of whether sports gambling should be legalized.Discovery Channel. Progress in AI Research. June 2018. .
+
+ Live Debate 
+On February 11, 2019, Project Debater was revealed to the world in a live debate in San Francisco. Nonpartisan media group Intelligence Squared U.S. Debates hosted the debate which was moderated by journalist John Donvan. The debate took place between Project Debater and Harish Natarajan, who holds the world record in number of debate competition victories. The motion was “We should subsidize preschools.”
+
+ That's Debatable Television Show 
+Project Debater was featured in a television series called “That’s Debatable” presented by Intelligence Squared U.S. Debates and Bloomberg Media. For each episode of “That’s Debatable,” Project Debater provided insight into three distinct debate topics on the redistribution of wealth, modern monetary theory, and a US-China space race. More than 5,000 arguments were submitted online from around the world across the three topics, which were then analyzed and distilled into key points that were highlighted on the television show and discussed by human debaters.
+
+ Artificial Intelligence Capabilities 
+To develop Project Debater, the IBM Research team had to endow the system with the following AI capabilities:
+
+ Data-driven speech writing and delivery: Project Debater is the first demonstration of a computer that can digest massive corpora, and given a short description of a controversial topic, write a well-structured speech, and deliver it with clarity and purpose, while even incorporating humor where appropriate.
+ Listening comprehension: the ability to identify the key concepts and claims hidden within long continuous spoken language.
+ Four minutes of persuasive speech: the guarantee of producing four minutes of persuasive speech.
+ Modeling human dilemmas: modeling the world of human controversy and dilemmas in a unique knowledge representation, enabling the system to suggest principled arguments as needed.
+
+An article on the project was published in Nature in March 2021.

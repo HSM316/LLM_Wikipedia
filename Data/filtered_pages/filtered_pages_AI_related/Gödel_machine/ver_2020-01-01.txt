@@ -1,0 +1,81 @@
+A Gödel machine is a hypothetical self-improving computer program that solves problems in an optimal way. It uses a recursive self-improvement protocol in which it rewrites its own code when it can prove the new code provides a better strategy. The machine was invented by Jürgen Schmidhuber (first proposed in 2003), but is named after Kurt Gödel who inspired the mathematical theories.
+
+The Gödel machine is often discussed when dealing with issues of meta-learning, also known as "learning to learn." Applications include automating human design decisions and transfer of knowledge between multiple related tasks, and may lead to design of more robust and general learning architectures. Though theoretically possible, no full implementation has been created.
+
+The Gödel machine is often compared with Marcus Hutter's AIXItl, another formal specification for an artificial general intelligence. Schmidhuber points out that the Gödel machine could start out by implementing AIXItl as its initial sub-program, and self-modify after it finds proof that another algorithm for its search code will be better.
+
+Limitations
+
+Traditional problems solved by a computer only require one input and provide some output. Computers of this sort had their initial algorithm hardwired. This doesn't take into account the dynamic natural environment, and thus was a goal for the Gödel machine to overcome.
+
+The Gödel machine has limitations of its own, however. Any formal system that encompasses arithmetic is either flawed or allows for unprovable but true statements. Hence even a Gödel machine with unlimited computational resources must ignore those self-improvements whose effectiveness it cannot prove.
+
+Variables of interest
+
+There are three variables that are particularly useful in the run time of the Gödel machine.
+
+ At some time , the variable  will have the binary equivalent of . This is incremented steadily throughout the run time of the machine.
+
+ Any input meant for the Gödel machine from the natural environment is stored in variable . It is likely the case that  will hold different values for different values of variable .
+
+ The outputs of the Gödel machine are stored in variable , where  would be the output bit-string at some time .
+
+At any given time , where , the goal is to maximize future success or utility. A typical utility function follows the pattern :
+
+ 
+
+where  is a real-valued reward input (encoded within ) at time ,  denotes the
+conditional expectation operator with respect to some possibly unknown distribution  from a
+set  of possible distributions ( reflects whatever is known about the possibly probabilistic reactions of the environment), and the above-mentioned  is a function of state  which uniquely identifies the current cycle . Note that we take into account the possibility of extending the expected lifespan through appropriate actions .
+
+Instructions used by proof techniques
+
+The nature of the six proof-modifying instructions below makes it impossible
+to insert an incorrect theorem into proof, thus trivializing proof verification.
+
+get-axiom(n)
+
+Appends the n-th axiom as a theorem to the current theorem sequence. Below is the initial axiom scheme:
+
+ Hardware Axioms formally specify how components of the machine could change from one cycle to the next.
+ Reward Axioms define the computational cost of hardware instruction and the physical cost of output actions. Related Axioms also define the lifetime of the Gödel machine as scalar quantities representing all rewards/costs.
+ Environment Axioms restrict the way new inputs x are produced from the environment, based on previous sequences of inputs y.
+ Uncertainty Axioms/String Manipulation Axioms are standard axioms for arithmetic, calculus, probability theory, and string manipulation that allow for the construction of proofs related to future variable values within the Gödel machine.
+ Initial State Axioms contain information about how to reconstruct parts or all of the initial state.
+ Utility Axioms describe the overall goal in the form of utility function u.
+
+apply-rule(k, m, n)
+
+Takes in the index k of an inference rule (such as Modus tollens, Modus ponens), and attempts to apply it to the two previously proved theorems m and n. The resulting theorem is then added to the proof.
+
+delete-theorem(m)
+
+Deletes the theorem stored at index m in the current proof. This helps to mitigate storage constraints caused by redundant and unnecessary theorems. Deleted theorems can no longer be referenced by the above apply-rule function.
+
+set-switchprog(m, n)
+
+Replaces switchprog S pm:n, provided it is a non-empty substring of S p.
+
+check()
+
+Verifies whether the goal of the proof search has been reached. A target theorem states that given the current axiomatized utility function u (Item 1f), the utility of a switch from p to the current switchprog would be higher than the utility of continuing the execution of p (which would keep searching for alternative switchprogs). This is demonstrated in the following description of the decoded check() function for the Gödel Machine:
+
+ 
+
+state2theorem(m, n)
+
+Takes in two arguments, m and n, and attempts to convert the contents of Sm:n into a theorem.
+
+Example applications
+
+Time-limited NP-hard optimization
+
+The initial input to the Gödel machine is the representation of a connected graph with a large number of nodes linked by edges of various lengths. Within given time T it should find a cyclic path connecting all nodes. The only real-valued reward will occur at time T. It equals 1 divided by the length of the best path found so far (0 if none was found). There are no other inputs. The by-product of maximizing expected reward is to find the shortest path findable within the limited time, given the initial bias.
+
+Fast theorem proving
+
+Prove or disprove as quickly as possible that all even integer > 2 are the sum of two primes (Goldbach’s conjecture). The reward is 1/t, where t is the time required to produce and verify the first such proof.
+
+Maximizing expected reward with bounded resources
+
+A cognitive robot that needs at least 1 liter of gasoline per hour interacts with a partially unknown environment, trying to find hidden, limited gasoline depots to occasionally refuel its tank. It is rewarded in proportion to its lifetime, and dies after at most 100 years or as soon as its tank is empty or it falls off a cliff, and so on. The probabilistic environmental reactions are initially unknown but assumed to be sampled from the axiomatized Speed Prior, according to which hard-to-compute environmental reactions are unlikely. This permits a computable strategy for making near-optimal predictions. One by-product of maximizing expected reward is to maximize expected lifetime.

@@ -1,0 +1,48 @@
+Feature scaling is a method used to normalize the range of independent variables or features of data. In data processing, it is also known as data normalization and is generally performed during the data preprocessing step.
+
+Motivation
+Since the range of values of raw data varies widely, in some machine learning algorithms, objective functions will not work properly without normalization. For example, many classifiers calculate the distance between two points by the Euclidean distance. If one of the features has a broad range of values, the distance will be governed by this particular feature. Therefore, the range of all features should be normalized so that each feature contributes approximately proportionately to the final distance.
+
+Another reason why feature scaling is applied is that gradient descent converges much faster with feature scaling than without it.
+
+It's also important to apply feature scaling if regularization is used as part of the loss function (so that coefficients are penalized appropriately).
+
+Empirically, feature scaling can improve the convergence speed of stochastic gradient descent. In support vector machines, it can reduce the time to find support vectors. Feature scaling is also often used in applications involving distances and similarities between data points, such as clustering and similarity search. As an example, the K-means clustering algorithm is sensitive to feature scales.
+
+Methods
+
+Rescaling (min-max normalization)
+Also known as min-max scaling or min-max normalization, rescaling is the simplest method and consists in rescaling the range of features to scale the range in [0, 1] or [−1, 1]. Selecting the target range depends on the nature of the data. The general formula for a min-max of [0, 1] is given as:
+
+ 
+
+where  is an original value,  is the normalized value. For example, suppose that we have the students' weight data, and the students' weights span [160 pounds, 200 pounds]. To rescale this data, we first subtract 160 from each student's weight and divide the result by 40 (the difference between the maximum and minimum weights).
+
+To rescale a range between an arbitrary set of values [a, b], the formula becomes:
+
+ 
+
+where  are the min-max values.
+
+Mean normalization
+
+ 
+
+where  is an original value,  is the normalized value,  is the mean of that feature vector. There is another form of the means normalization which divides by the standard deviation which is also called standardization.
+
+Standardization (Z-score Normalization)
+
+277x277px|The effect of z-score normalization on k-means clustering. 4 gaussian clusters of points are generated, then squashed along the y-axis, and a  clustering was computed. Without normalization, the clusters were arranged along the x-axis, since it is the axis with most of variation. After normalization, the clusters are recovered as expected.
+In machine learning, we can handle various types of data, e.g. audio signals and pixel values for image data, and this data can include multiple dimensions. Feature standardization makes the values of each feature in the data have zero-mean (when subtracting the mean in the numerator) and unit-variance. This method is widely used for normalization in many machine learning algorithms (e.g., support vector machines, logistic regression, and artificial neural networks). The general method of calculation is to determine the distribution mean and standard deviation for each feature. Next we subtract the mean from each feature. Then we divide the values (mean is already subtracted) of each feature by its standard deviation.
+
+ 
+
+Where  is the original feature vector,  is the mean of that feature vector, and  is its standard deviation.
+
+ Robust Scaling 
+Robust scaling, also known as standardization using median and interquartile range (IQR), is designed to be robust to outliers. It scales features using the median and IQR as reference points instead of the mean and standard deviation:where  are the three quartiles (25th, 50th, 75th percentile) of the feature.
+
+ Unit vector normalization 
+Unit vector normalization regards each individual data point as a vector, and divide each by its vector norm, to obtain . Any vector norm can be used, but the most common ones are the L1 norm and the L2 norm.
+
+For example, if , then its Lp-normalized version is:

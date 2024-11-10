@@ -1,0 +1,41 @@
+The Bradley–Terry model is a probability model that can predict the outcome of a paired comparison. Given a pair of individuals  and  drawn from some population, it estimates the probability that the pairwise comparison  turns out true, as
+
+where  is a positive real-valued score assigned to individual . The comparison  can be read as " is preferred to ", " ranks higher than ", or " beats ", depending on the application.
+
+For example,  may represent the skill of a team in a sports tournament, estimated from the number of times  has won a match.  then represents the probability that  will win a match against . Another example used to explain the model's purpose is that of scoring products in a certain category by quality. While it's hard for a person to draft a direct ranking of (many) brands of wine, it may be feasible to compare a sample of pairs of wines and say, for each pair, which one is better. The Bradley–Terry model can then be used to derive a full ranking.
+
+ History and applications 
+The model is named after R. A. Bradley and M. E. Terry, who presented it in 1952, although it had already been studied by Zermelo in the 1920s.
+
+Real-world applications of the model include estimation of the influence of statistical journals, or ranking documents by relevance in machine-learned search engines.
+In the latter application,  may reflect that document  is more relevant to the user's query than document , so it should be displayed earlier in the results list. The individual  then express the relevance of the document, and can be estimated from the frequency with which users click particular "hits" when presented with a result list.
+
+ Definition 
+The Bradley–Terry model can be parametrized in various ways. One way to do so is to pick a single parameter per observation, leading to a model of  parameters .
+Another variant, in fact the version considered by Bradley and Terry, uses exponential score functions  so that
+
+or, using the logit (and disallowing ties),
+
+reducing the model to logistic regression on pairs of individuals.
+
+ Estimating the parameters 
+The following algorithm computes the parameters  of the basic version of the model from a sample of observations. Formally, it computes a maximum likelihood estimate, i.e., it maximizes the likelihood of the observed data. The algorithm dates back to the work of Zermelo.
+
+The observations required are the outcomes of previous comparisons, for example, pairs  where  beats . Summarizing these outcomes as , the number of times  has beaten , we obtain the log-likelihood of the parameter vector  as
+
+Denote the number of comparisons "won" by  as . Starting from an arbitrary vector , the algorithm iteratively performs the update
+
+for all . After computing all of the new parameters, they should be renormalized,
+
+This estimation procedure improves the log-likelihood in every iteration, and eventually converges to a unique maximum.
+
+ Worked Example of Iterated Procedure 
+Suppose there are 4 teams who have played a total of 22 games among themselves. Each team's wins are given in the rows of the table below and the opponents are given as the columns. For example, Team A has beat Team B twice and lost to team B three times; not played team C at all; won once and lost four times against team D. 
++ResultsABCDA -201B3 -50C03 -1D403 -
+We would like to compute the relative strengths of the teams; that is, we want to compute one parameter per team, with higher parameters indicating greater prowess. We initialize the 4 entries in the parameter vector  arbitrarily, for example, assigning the value 1 to each team: .
+
+Then, we normalize all the parameters by dividing them by  to get the estimated parameters .
+
+To get better estimates, we can repeat the process, using the new  values. For example,
+
+Repeating this for the remaining parameters and normalizing, we get . Repeating this process a total of 20 times will show rapid convergence to . This shows that Team D is the strongest, Team B is the second strongest, and Team A and Team C are nearly equal in strength, but less than Teams B and D. The Bradley-Terry model lets us extrapolate the relationship between all 4 teams, even though all teams haven't played each other.

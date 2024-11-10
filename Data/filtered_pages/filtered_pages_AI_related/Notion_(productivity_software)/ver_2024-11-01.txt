@@ -1,0 +1,72 @@
+Notion is a productivity and note-taking web application developed by Notion Labs, Inc. It is an online only organizational tool on many different operating systems, with options for both free and paid subscriptions. It is based in San Francisco, California, United States.
+
+ Software 
+Notion is a collaboration platform with Markdown and including kanban boards, tasks, wikis and databases. It is a workspace for notetaking, knowledge and data management, as well as project and task management. It has file management in a single workspace, allowing users to comment on ongoing projects, participate in discussions, and receive feedback. It can be accessed by cross-platform apps and by most web browsers.
+
+It includes a "clipper" for screenshotting content from webpages. It exists for users to schedule tasks, manage files, save documents, set reminders, keep agendas, and organize their work. LaTeX support allows writing and pasting equations in block or inline form.
+
+History
+Notion Labs, Inc. was created as a startup in San Francisco, California, founded in 2013 by Ivan Zhao, Chris Prucha, Jessica Lam, Simon Last, and Toby Schachman.
+
+In August 2016, Notion 1.0 was released on Product Hunt and was nominated for Golden Kitty 2016 in desktop product.
+
+In March 2018, Notion 2.0 was released. At that point, the company had fewer than 10 employees.
+
+In June 2018, an Android app was released.
+
+In September 2019, the company announced it had reached 1 million users. 
+
+In January 2020, Notion had $50 million in investments from Index Ventures and others. In April 2020, it was valued at two billion dollars.
+
+On September 7, 2021, Notion acquired Automate.io, a Hyderabad-based startup. In October of that year, a new round of funding led by Coatue Management and Sequoia Capital helped Notion raise $275 million. The investment valued Notion at $10 billion, and the company had 20 million users.
+
+In 2022, Notion launched the Notion Certified Program, an accreditation for users to expand their use of the platform. It also joined the Security First Initiative, a group of tech companies pledged to sharing security information with their customers.
+
+In June 2022, Notion acquired the calendar software Cron.
+
+In July 2022, Notion acquired FlowDash.
+
+In November 2022, Notion announced its official Japanese release.
+
+In February 2023, Notion released the "Notion AI" service that can be used on the workspace.
+
+In April 2023, Notion released multi-factor authentication for its users.
+
+In November 2023, Notion released 'Q&A', an AI feature allowing users to ask questions directly to AI and receive answers based on information stored in the workspace.
+
+On January 17, 2024, Notion released their second product 'Notion Calendar', a fully-featured calendar application with integrations to Notion pages and databases.
+
+On February 9, 2024, Notion acquired the email service Skiff.
+
+ Features 
+It uses AI and a library of free and fee-based templates, with the Notion AI functionality, users can write and improve content, summarize existing notes, daily standup, adjust the tone, translate or check text. Security features include Security Assertion Markup Language single sign-on and private team spaces for their Business and Enterprise tiers.
+
+Notion enables its users to integrate with more than 70 other SaaS tools, such as Slack, GitHub, GitLab, Zoom, Jira, Cisco Webex, Zapier, and Typeform.
+
+ Blocks
+Notion is made up of blocks (These blocks are similar to elements in HTML). This allows users to customize a page by adding and moving blocks in various ways. In June 2021, Notion released a synced block, which is a type that, when copied and pasted across different pages in a user's workspace, shows edits between them.
+
+ Databases 
+One of Notion's features is its databases. Databases are used for storing information and can hold any number of rows and columns. By default, each row will have two pre-populated properties: 'Name' and 'Tags'. Users can add more properties, such as date, checkbox, multi-select, URL, and more. When creating databases, users can choose to either create it 'inline', within an already existing page, or as its own page.
+
+ Templates 
+Notion users can make and use templates. Notion hosts its own template gallery, where users can browse through templates made by other Notion creators. However, not all of these templates are free to use. Some creators profit from selling Notion templates. Jason Ruiyi Chen, from Singapore, made $239,000 by selling his Notion templates to his Twitter audience. Thomas Frank, a YouTuber with 2.8 million subscribers as of February 2023, made $1 million in 2022.
+
+ Notion AI 
+Notion AI uses artificial intelligence, which enables prediction of some results, text generation and solving arithmetic. It will also work with other datasets in response to an input by the user of the AI. This AI can automate some tasks and assist the user to make a paragraph or outline from a line of text. Notion AI is an extra cost above the subscription. The service is powered by the API of Anthropic.
+
+ Notion Calendar 
+Notion Calendar integrates time management with the workspaces and databases within Notion. It allows you to see and manage your professional and personal events in one application, syncing with Google Calendar for consolidated scheduling. With Notion Calendar, you can link database entries to calendar events, enabling efficient planning and task tracking. To get started, users download the app, connect their calendar accounts, and can then integrate their Notion workspaces and databases for a unified view of tasks and schedules.
+
+ Notion Partnerships 
+Notion also offers different types of partnerships, with various focuses:
+
+ Technology Partner Program: Your product + Notion platform = new tools for Notion users.
+ Channel Partner Program: Support unique needs of Notion customers and grow your business.
+ Startup Partner Program: Offer your startup network free Notion access and resources.
+ Affiliate Partner Program: Refer Notion to friends and followers and earn unlimited rewards.
+
+Some of Notion's current partners include: Zoom, Slack, Github, Google Drive, AWS, Asana, Figma, and Typeform.
+
+ Pricing 
+Notion has a four tiered subscription model: Free, Plus, Business, and Enterprise. Users can also earn credit via referrals. As of May 2020, the company changed the Personal plan to allow unlimited blocks. Notion also offers a free student plan called "Notion for education".

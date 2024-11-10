@@ -1,0 +1,29 @@
+Data thinking is the generic mental pattern observed during the processes of picking a subject to start with, identifying its parts or components, organizing and describing them in an informative fashion that is relevant to what motivated and initiated the whole processes.
+
+In the context of new product development and innovation Data Thinking can be described as follows: Data Thinking is a framework to explore, design, develop and validate data-driven solutions and businesses with a user, data and future oriented focus. Data Thinking combines Data Science with Design Thinking and therefore, the focus of this approach does not lie only on data-analytics technologies and data collection but also on the design of use-centered solutions with high business potential. 
+
+The term was created by Mario Faria and Rogerio Panigassi in 2013 when they were writing a book about data science, data analytics, data management and how data practitioners were able to achieve their goals.
+
+ Major Phases of Data Thinking 
+Even though no standardized process for Data Thinking yet exists, the major phases of the process are similar in many publications and could be summarized as follows:
+
+ Clarification of the Strategic Context and definition of data-driven risks and opportunities focus areas 
+During this phase the broader context of digital strategy is analyzed. Before starting with a concrete data project, it is essential to understand how the new Data- and AI-driven Technologies are affecting the business landscape and the implications this has on the future of an organization. Trend Analysis / Technology Forecasting and Scenario Planning / Analysis as well as internal Data Capability assessments are the major techniques which are typically applied at this stage. 
+
+ Ideation/Exploration 
+The result of the earlier stage is a definition of the focus areas which are either most promising or are at the highest risks for or due to Data-Driven transformation. At the ideation/exploration phase the concrete use cases are defined for the selected focus areas. For the successful ideation it is important to combine information about organizational (business) goals, internal/external use needs, data and infrastructure needs as well as domain knowledge about latest Data-Driven technologies and trends.  
+
+Design Thinking principles in the context of Data Thinking can be interpreted as follows: when developing data-driven ideas, it is crucial to consider the intersection of technical feasibility, business impact and data availability. Typical instruments of Design Thinking (e.g. user research, personas, customer journey) are broadly applied on this stage. 
+
+But not only user, customer and strategic needs of an organization must be considered here. Data needs and data availability analysis as well as research on the AI-Technologies suitable for the data-based solution are essential prats of the successful development process. 
+
+To scope data and technological basement of the solution, practices from Cross-industry standard process for data mining (CRISP-DM)  are typically utilized on this stage.  
+
+ Prototyping / Proof of Concept 
+During the previous stages the major concept of the data-solution was developed. At the current step, the proof of concept is conducted to check its feasibility. This stage also exploits the prototype framework of Design Thinking and includes test, evaluation, iteration, and refinement. Prototyping design thinking principles are also combined during this phase with process models that are applied in Data Science projects (e.g. CRISP-DM). 
+
+ Measuring business impact 
+Not only solution feasibility, but also its profitability is proofed during the Data Thinking process. Cost-Benefits Analysis and Business Case Calculation are commonly applied during this step.
+
+ Implementation and Improvement 
+If the developed solution proves its feasibility and profitability during this phase, it will be implemented and operationalized. 

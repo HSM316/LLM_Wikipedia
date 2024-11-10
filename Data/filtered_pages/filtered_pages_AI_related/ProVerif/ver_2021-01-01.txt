@@ -1,0 +1,21 @@
+ProVerif is a software tool for automated reasoning about the security properties found in cryptographic protocols. The tool has been developed by Bruno Blanchet.
+
+Support is provided for cryptographic primitives including: symmetric & asymmetric cryptography; digital signatures; hash functions; bit-commitment; and signature proofs of knowledge. The tool is capable of evaluating reachability properties, correspondence assertions and observational equivalence. These reasoning capabilities are particularly useful to the computer security domain since they permit the analysis of secrecy and authentication properties. Emerging properties such as privacy, traceability and verifiability can also be considered. Protocol analysis is considered with respect to an unbounded number of sessions and an unbounded message space. The tool is capable of attack reconstruction: when a property cannot be proved, an execution trace which falsifies the desired property is constructed.
+
+Applicability of ProVerif
+ProVerif has been used in the following case studies, which include the security analysis of actual network protocols:
+ Abadi & Blanchet used correspondence assertions to verify the certified email protocol.
+ Abadi, Blanchet & Fournet analyse the Just Fast Keying protocol, which was one of the candidates to replace Internet Key Exchange (IKE) as the key exchange protocol in IPsec, by combining manual proofs with ProVerif proofs of correspondence and equivalence.
+ Blanchet & Chaudhuri studied the integrity of the Plutus file system on untrusted storage, using correspondence assertions, resulting in the discovery, and subsequent fixing, of weaknesses in the initial system.
+ Bhargavan et al. use ProVerif to analyse cryptographic protocol implementations written in the F Sharp (programming language); in particular the Transport Layer Security (TLS) protocol has been studied in this manner.
+ Chen & Ryan have evaluated authentication protocols found in the Trusted Platform Module (TPM), a widely deployed hardware chip, and discovered vulnerabilities.
+ Delaune, Kremer & Ryan and Backes, Hritcu & Maffei formalise and analyse privacy properties for electronic voting using observational equivalence.
+ Delaune, Ryan & Smyth and Backes, Maffei & Unruh analyse the anonymity properties of the trusted computing scheme Direct Anonymous Attestation (DAA) using observational equivalence.
+ Kusters & Truderung examine protocols with Diffie-Hellman exponentiation and XOR.
+ Smyth, Ryan, Kremer & Kourjieh formalise and analyse verifiability properties for electronic voting using reachability.
+ Google verified its transport layer protocol ALTS.
+
+Further examples can be found online: .
+
+Alternatives
+Alternative analysis tools include: AVISPA (for reachability and correspondence assertions), KISS (for static equivalence), YAPA (for static equivalence). CryptoVerif for verification of security against polynomial time adversaries in the computational model. The Tamarin Prover is a modern alternative to ProVerif, with excellent support for Diffie-Hellman equational reasoning, and verification of observational equivalence properties.

@@ -1,0 +1,270 @@
+Point set registration is the process of aligning two point sets. Here, the blue fish is being registered to the red fish.
+In computer vision, pattern recognition, and robotics, point-set registration, also known as point-cloud registration or scan matching, is the process of finding a spatial transformation (e.g., scaling, rotation and translation) that aligns two point clouds. The purpose of finding such a transformation includes merging multiple data sets into a globally consistent model (or coordinate frame), and mapping a new measurement to a known data set to identify features or to estimate its pose. Raw 3D point cloud data are typically obtained from Lidars and RGB-D cameras. 3D point clouds can also be generated from computer vision algorithms such as triangulation, bundle adjustment, and more recently, monocular image depth estimation using deep learning. For 2D point set registration used in image processing and feature-based image registration, a point set may be 2D pixel coordinates obtained by feature extraction from an image, for example corner detection. Point cloud registration has extensive applications in autonomous driving, motion estimation and 3D reconstruction, object detection and pose estimation, robotic manipulation, simultaneous localization and mapping (SLAM), panorama stitching, virtual and augmented reality, and medical imaging.
+
+As a special case, registration of two point sets that only differ by a 3D rotation (i.e., there is no scaling and translation), is called the Wahba Problem and also related to the orthogonal procrustes problem.
+
+ Formulation 
+right|Data from two 3D scans of the same environment need to be aligned using point set registration.
+right|Data from above, registered successfully using a variant of iterative closest point.
+The problem may be summarized as follows:
+Let  be two finite size point sets in a finite-dimensional real vector space , which contain  and  points respectively (e.g.,  recovers the typical case of when  and  are 3D point sets). The problem is to find a transformation to be applied to the moving "model" point set  such that the difference (typically defined in the sense of point-wise Euclidean distance) between  and the static "scene" set  is minimized. In other words, a mapping from  to  is desired which yields the best alignment between the transformed "model" set and the "scene" set. The mapping may consist of a rigid or non-rigid transformation. The transformation model may be written as , using which the transformed, registered model point set is:
+
+The output of a point set registration algorithm is therefore the optimal transformation  such that  is best aligned to , according to some defined notion of distance function :
+
+where  is used to denote the set of all possible transformations that the optimization tries to search for. The most popular choice of the distance function is to take the square of the Euclidean distance for every pair of points:
+
+where  denotes the vector 2-norm,  is the corresponding point in set  that attains the shortest distance to a given point  in set  after transformation. Minimizing such a function in rigid registration is equivalent to solving a least squares problem.
+
+Types of algorithms
+When the correspondences (i.e., ) are given before the optimization, for example, using feature matching techniques, then the optimization only needs to estimate the transformation. This type of registration is called correspondence-based registration. On the other hand, if the correspondences are unknown, then the optimization is required to jointly find out the correspondences and transformation together. This type of registration is called simultaneous pose and correspondence registration.
+
+ Rigid registration 
+Given two point sets, rigid registration yields a rigid transformation which maps one point set to the other. A rigid transformation is defined as a transformation that does not change the distance between any two points. Typically such a transformation consists of translation and rotation. In rare cases, the point set may also be mirrored. In robotics and computer vision, rigid registration has the most applications.
+
+ Non-rigid registration 
+Registered point cloud from a lidar mounted on a moving car.
+Given two point sets, non-rigid registration yields a non-rigid transformation which maps one point set to the other. Non-rigid transformations include affine transformations such as scaling and shear mapping. However, in the context of point set registration, non-rigid registration typically involves nonlinear transformation. If the eigenmodes of variation of the point set are known, the nonlinear transformation may be parametrized by the eigenvalues. A nonlinear transformation may also be parametrized as a thin plate spline.
+
+ Other types 
+Some approaches to point set registration use algorithms that solve the more general graph matching problem. However, the computational complexity of such methods tend to be high and they are limited to rigid registrations. 
+In this article, we will only consider algorithms for rigid registration, where the transformation is assumed to contain 3D rotations and translations (possibly also including a uniform scaling).
+
+The PCL (Point Cloud Library) is an open-source framework for n-dimensional point cloud and 3D geometry processing. It includes several point registration algorithms.
+
+ Correspondence-based registration 
+Correspondence-based methods assume the putative correspondences  are given for every point . Therefore, we arrive at a setting where both point sets  and  have  points and the correspondences  are given.
+
+ Outlier-free registration 
+In the simplest case, one can assume that all the correspondences are correct, meaning that the points  are generated as follows:where  is a uniform scaling factor (in many cases  is assumed),  is a proper 3D rotation matrix ( is the special orthogonal group of degree ),  is a 3D translation vector and  models the unknown additive noise (e.g., Gaussian noise). Specifically, if the noise  is assumed to follow a zero-mean isotropic Gaussian distribution with standard deviation , i.e., , then the following optimization can be shown to yield the maximum likelihood estimate for the unknown scale, rotation and translation:Note that when the scaling factor is 1 and the translation vector is zero, then the optimization recovers the formulation of the Wahba problem. Despite the non-convexity of the optimization () due to non-convexity of the set , seminal work by Berthold K.P. Horn showed that () actually admits a closed-form solution, by decoupling the estimation of scale, rotation and translation. Similar results were discovered by Arun et al. In addition, in order to find a unique transformation , at least  non-collinear points in each point set are required.
+
+More recently, Briales and Gonzalez-Jimenez have developed a semidefinite relaxation using Lagrangian duality, for the case where the model set  contains different 3D primitives such as points, lines and planes (which is the case when the model  is a 3D mesh). Interestingly, the semidefinite relaxation is empirically tight, i.e., a certifiably globally optimal solution can be extracted from the solution of the semidefinite relaxation.
+
+ Robust registration 
+The least squares formulation () is known to perform arbitrarily badly in the presence of outliers. An outlier correspondence is a pair of measurements  that departs from the generative model (). In this case, one can consider a different generative model as follows:where if the th pair  is an inlier, then it obeys the outlier-free model (), i.e.,  is obtained from  by a spatial transformation plus some small noise; however, if the th pair  is an outlier, then  can be any arbitrary vector . Since one does not know which correspondences are outliers beforehand, robust registration under the generative model () is of paramount importance for computer vision and robotics deployed in the real world, because current feature matching techniques tend to output highly corrupted correspondences where over  of the correspondences can be outliers.
+
+Next, we describe several common paradigms for robust registration.
+
+ Maximum consensus 
+Maximum consensus seeks to find the largest set of correspondences that are consistent with the generative model () for some choice of spatial transformation . Formally speaking, maximum consensus solves the following optimization:where  denotes the cardinality of the set . The constraint in () enforces that every pair of measurements in the inlier set  must have residuals smaller than a pre-defined threshold . Unfortunately, recent analyses have shown that globally solving problem (cb.4) is NP-Hard, and global algorithms typically have to resort to branch-and-bound (BnB) techniques that take exponential-time complexity in the worst case.
+
+Although solving consensus maximization exactly is hard, there exist efficient heuristics that perform quite well in practice. One of the most popular heuristics is the Random Sample Consensus (RANSAC) scheme. RANSAC is an iterative hypothesize-and-verify method. At each iteration, the method first randomly samples 3 out of the total number of  correspondences and computes a hypothesis  using Horn's method, then the method evaluates the constraints in () to count how many correspondences actually agree with such a hypothesis (i.e., it computes the residual  and compares it with the threshold  for each pair of measurements). The algorithm terminates either after it has found a consensus set that has enough correspondences, or after it has reached the total number of allowed iterations. RANSAC is highly efficient because the main computation of each iteration is carrying out the closed-form solution in Horn's method. However, RANSAC is non-deterministic and only works well in the low-outlier-ratio regime (e.g., below ), because its runtime grows exponentially with respect to the outlier ratio.
+
+To fill the gap between the fast but inexact RANSAC scheme and the exact but exhaustive BnB optimization, recent researches have developed deterministic approximate methods to solve consensus maximization.
+
+ Outlier removal 
+Outlier removal methods seek to pre-process the set of highly corrupted correspondences before estimating the spatial transformation. The motivation of outlier removal is to significantly reduce the number of outlier correspondences, while maintaining inlier correspondences, so that optimization over the transformation becomes easier and more efficient (e.g., RANSAC works poorly when the outlier ratio is above  but performs quite well when outlier ratio is below ).
+
+Parra et al. have proposed a method called Guaranteed Outlier Removal (GORE) that uses geometric constraints to prune outlier correspondences while guaranteeing to preserve inlier correspondences. GORE has been shown to be able to drastically reduce the outlier ratio, which can significantly boost the performance of consensus maximization using RANSAC or BnB. Yang and Carlone have proposed to build pairwise translation-and-rotation-invariant measurements (TRIMs) from the original set of measurements and embed TRIMs as the edges of a graph whose nodes are the 3D points. Since inliers are pairwise consistent in terms of the scale, they must form a clique within the graph. Therefore, using efficient algorithms for computing the maximum clique of a graph can find the inliers and effectively prune the outliers. The maximum clique based outlier removal method is also shown to be quite useful in real-world point set registration problems. Similar outlier removal ideas were also proposed by Parra et al..
+
+M-estimation
+M-estimation replaces the least squares objective function in () with a robust cost function that is less sensitive to outliers. Formally, M-estimation seeks to solve the following problem:where  represents the choice of the robust cost function. Note that choosing  recovers the least squares estimation in (). Popular robust cost functions include -norm loss, Huber loss, Geman-McClure loss and truncated least squares loss. M-estimation has been one of the most popular paradigms for robust estimation in robotics and computer vision. Because robust objective functions are typically non-convex (e.g., the truncated least squares loss v.s. the least squares loss), algorithms for solving the non-convex M-estimation are typically based on local optimization, where first an initial guess is provided, following by iterative refinements of the transformation to keep decreasing the objective function. Local optimization tends to work well when the initial guess is close to the global minimum, but it is also prone to get stuck in local minima if provided with poor initialization.
+
+ Graduated non-convexity 
+Graduated non-convexity (GNC) is a general-purpose framework for solving non-convex optimization problems without initialization. It has achieved success in early vision and machine learning applications. The key idea behind GNC is to solve the hard non-convex problem by starting from an easy convex problem. Specifically, for a given robust cost function , one can construct a surrogate function  with a hyper-parameter , tuning which can gradually increase the non-convexity of the surrogate function  until it converges to the target function . Therefore, at each level of the hyper-parameter , the following optimization is solved:Black and Rangarajan proved that the objective function of each optimization () can be dualized into a sum of weighted least squares and a so-called outlier process function on the weights that determine the confidence of the optimization in each pair of measurements. Using Black-Rangarajan duality and GNC tailored for the Geman-McClure function, Zhou et al. developed the fast global registration algorithm that is robust against about  outliers in the correspondences. More recently, Yang et al. showed that the joint use of GNC (tailored to the Geman-McClure function and the truncated least squares function) and Black-Rangarajan duality can lead to a general-purpose solver for robust registration problems, including point clouds and mesh registration.
+
+ Certifiably robust registration 
+Almost none of the robust registration algorithms mentioned above (except the BnB algorithm that runs in exponential-time in the worst case) comes with performance guarantees, which means that these algorithms can return completely incorrect estimates without notice. Therefore, these algorithms are undesirable for safety-critical applications like autonomous driving.
+
+Very recently, Yang et al. has developed the first certifiably robust registration algorithm, named Truncated least squares Estimation And SEmidefinite Relaxation (TEASER). For point cloud registration, TEASER not only outputs an estimate of the transformation, but also quantifies the optimality of the given estimate. TEASER adopts the following truncated least squares (TLS) estimator:which is obtained by choosing the TLS robust cost function , where is a pre-defined constant that determines the maximum allowed residuals to be considered inliers. The TLS objective function has the property that for inlier correspondences (), the usual least square penalty is applied; while for outlier correspondences (), no penalty is applied and the outliers are discarded. If the TLS optimization () is solved to global optimality, then it is equivalent to running Horn's method on only the inlier correspondences.
+
+However, solving () is quite challenging due to its combinatorial nature. TEASER solves () as follows : (i) It builds invariant measurements such that the estimation of scale, rotation and translation can be decoupled and solved separately, a strategy that is inspired by the original Horn's method; (ii) The same TLS estimation is applied for each of the three sub-problems, where the scale TLS problem can be solved exactly using an algorithm called adaptive voting, the rotation TLS problem can relaxed to a semidefinite program (SDP) where the relaxation is exact in practice, even with large amount of outliers; the translation TLS problem can solved using component-wise adaptive voting. A fast implementation leveraging GNC is open-sourced here. In practice, TEASER can tolerate more than  outlier correspondences and runs in milliseconds.
+
+In addition to developing TEASER, Yang et al. also prove that, under some mild conditions on the point cloud data, TEASER's estimated transformation has bounded errors from the ground-truth transformation.
+
+ Simultaneous pose and correspondence registration 
+
+ Iterative closest point 
+
+The iterative closest point (ICP) algorithm was introduced by Besl and McKay.
+The algorithm performs rigid registration in an iterative fashion by alternating in (i) given the transformation, finding the closest point in  for every point in ; and (ii) given the correspondences, finding the best rigid transformation by solving the least squares problem (). As such, it works best if the initial pose of  is sufficiently close to . In pseudocode, the basic algorithm is implemented as follows:
+
+ algorithm 
+     θ := θ0
+     while not registered:
+         
+         
+             
+             
+         θ := least_squares(X)
+     return θ
+
+Here, the function least_squares performs least squares optimization to minimize the distance in each of the  pairs, using the closed-form solutions by Horn and Arun.
+
+Because the cost function of registration depends on finding the closest point in  to every point in , it can change as the algorithm is running. As such, it is difficult to prove that ICP will in fact converge exactly to the local optimum. In fact, empirically, ICP and EM-ICP do not converge to the local minimum of the cost function. Nonetheless, because ICP is intuitive to understand and straightforward to implement, it remains the most commonly used point set registration algorithm. Many variants of ICP have been proposed, affecting all phases of the algorithm from the selection and matching of points to the minimization strategy.
+For example, the expectation maximization algorithm is applied to the ICP algorithm to form the EM-ICP method, and the Levenberg-Marquardt algorithm is applied to the ICP algorithm to form the LM-ICP method.
+
+ Robust point matching 
+Robust point matching (RPM) was introduced by Gold et al. The method performs registration using deterministic annealing and soft assignment of correspondences between point sets. Whereas in ICP the correspondence generated by the nearest-neighbour heuristic is binary, RPM uses a soft correspondence where the correspondence between any two points can be anywhere from 0 to 1, although it ultimately converges to either 0 or 1. The correspondences found in RPM is always one-to-one, which is not always the case in ICP. Let  be the th point in  and  be the th point in . The match matrix  is defined as such:
+
+The problem is then defined as: Given two point sets  and  find the Affine transformation  and the match matrix  that best relates them. Knowing the optimal transformation makes it easy to determine the match matrix, and vice versa. However, the RPM algorithm determines both simultaneously. The transformation may be decomposed into a translation vector and a transformation matrix:
+
+The matrix  in 2D is composed of four separate parameters , which are scale, rotation, and the vertical and horizontal shear components respectively. The cost function is then:
+
+subject to , , .  The  term biases the objective towards stronger correlation by decreasing the cost if the match matrix has more ones in it. The function  serves to regularize the Affine transformation by penalizing large values of the scale and shear components:
+
+for some regularization parameter .
+
+The RPM method optimizes the cost function using the Softassign algorithm. The 1D case will be derived here. Given a set of variables  where . A variable  is associated with each  such that . The goal is to find  that maximizes . This can be formulated as a continuous problem by introducing a control parameter . In the deterministic annealing method, the control parameter  is slowly increased as the algorithm runs. Let  be:
+
+this is known as the softmax function. As  increases, it approaches a binary value as desired in Equation (). The problem may now be generalized to the 2D case, where instead of maximizing , the following is maximized:
+
+where
+
+This is straightforward, except that now the constraints on  are doubly stochastic matrix constraints:  and . As such the denominator from Equation () cannot be expressed for the 2D case simply. To satisfy the constraints, it is possible to use a result due to Sinkhorn, which states that a doubly stochastic matrix is obtained from any square matrix with all positive entries by the iterative process of alternating row and column normalizations. Thus the algorithm is written as such:
+
+ 
+     
+     
+     
+     
+     
+         while  has not converged:
+             // update correspondence parameters by softassign
+             
+             
+             // apply Sinkhorn's method
+             
+                 
+                 
+                 
+                 
+             // update pose parameters by coordinate descent
+             update  using analytical solution
+             update  using analytical solution
+             update  using Newton's method
+         
+         
+     return  and 
+
+where the deterministic annealing control parameter  is initially set to  and increases by factor  until it reaches the maximum value . The summations in the normalization steps sum to  and  instead of just  and  because the constraints on  are inequalities. As such the th and th elements are slack variables.
+
+The algorithm can also be extended for point sets in 3D or higher dimensions. The constraints on the correspondence matrix  are the same in the 3D case as in the 2D case. Hence the structure of the algorithm remains unchanged, with the main difference being how the rotation and translation matrices are solved.
+
+ Thin plate spline robust point matching 
+right|Animation of 2D non-rigid registration of the green point set  to the magenta point set  corrupted with noisy outliers. The size of the blue circles is inversely related to the control parameter . The yellow lines indicate correspondence.
+
+The thin plate spline robust point matching (TPS-RPM) algorithm by Chui and Rangarajan augments the RPM method to perform non-rigid registration by parametrizing the transformation as a thin plate spline.
+However, because the thin plate spline parametrization only exists in three dimensions, the method cannot be extended to problems involving four or more dimensions.
+
+ Kernel correlation 
+The kernel correlation (KC) approach of point set registration was introduced by Tsin and Kanade.
+Compared with ICP, the KC algorithm is more robust against noisy data. Unlike ICP, where, for every model point, only the closest scene point is considered, here every scene point affects every model point. As such this is a multiply-linked registration algorithm. For some kernel function , the kernel correlation  of two points  is defined thus:
+
+The kernel function  chosen for point set registration is typically symmetric and non-negative kernel, similar to the ones used in the Parzen window density estimation. The Gaussian kernel typically used for its simplicity, although other ones like the Epanechnikov kernel and the tricube kernel may be substituted. The kernel correlation of an entire point set  is defined as the sum of the kernel correlations of every point in the set to every other point in the set:
+
+The logarithm of KC of a point set is proportional, within a constant factor, to the information entropy. Observe that the KC is a measure of a "compactness" of the point set—trivially, if all points in the point set were at the same location, the KC would evaluate to a large value. The cost function of the point set registration algorithm for some transformation parameter  is defined thus:
+
+Some algebraic manipulation yields:
+
+The expression is simplified by observing that  is independent of . Furthermore, assuming rigid registration,  is invariant when  is changed because the Euclidean distance between every pair of points stays the same under rigid transformation. So the above equation may be rewritten as:
+
+The kernel density estimates are defined as:
+
+The cost function can then be shown to be the correlation of the two kernel density estimates:
+
+Having established the cost function, the algorithm simply uses gradient descent to find the optimal transformation. It is computationally expensive to compute the cost function from scratch on every iteration, so a discrete version of the cost function Equation () is used. The kernel density estimates  can be evaluated at grid points and stored in a lookup table. Unlike the ICP and related methods, it is not necessary to find the nearest neighbour, which allows the KC algorithm to be comparatively simple in implementation.
+
+Compared to ICP and EM-ICP for noisy 2D and 3D point sets, the KC algorithm is less sensitive to noise and results in correct registration more often.
+
+ Gaussian mixture model 
+The kernel density estimates are sums of Gaussians and may therefore be represented as Gaussian mixture models (GMM). Jian and Vemuri use the GMM version of the KC registration algorithm to perform non-rigid registration parametrized by thin plate splines.
+
+ Coherent point drift 
+Rigid (with the addition of scaling) registration of a blue point set  to the red point set  using the Coherent Point Drift algorithm. Both point sets have been corrupted with removed points and random spurious outlier points.
+Affine registration of a blue point set  to the red point set  using the Coherent Point Drift algorithm.
+Non-rigid registration of a blue point set  to the red point set  using the Coherent Point Drift algorithm. Both point sets have been corrupted with removed points and random spurious outlier points.
+Coherent point drift (CPD) was introduced by Myronenko and Song.
+The algorithm takes a probabilistic approach to aligning point sets, similar to the GMM KC method. Unlike earlier approaches to non-rigid registration which assume a thin plate spline transformation model, CPD is agnostic with regard to the transformation model used. The point set  represents the Gaussian mixture model (GMM) centroids. When the two point sets are optimally aligned, the correspondence is the maximum of the GMM posterior probability for a given data point. To preserve the topological structure of the point sets, the GMM centroids are forced to move coherently as a group. The expectation maximization algorithm is used to optimize the cost function.
+
+Let there be  points in  and  points in . The GMM probability density function for a point  is:
+
+where, in  dimensions,  is the Gaussian distribution centered on point .
+
+The membership probabilities  is equal for all GMM components. The weight of the uniform distribution is denoted as . The mixture model is then:
+
+The GMM centroids are re-parametrized by a set of parameters  estimated by maximizing the likelihood. This is equivalent to minimizing the negative log-likelihood function:
+
+where it is assumed that the data is independent and identically distributed. The correspondence probability between two points  and  is defined as the posterior probability of the GMM centroid given the data point:
+
+The expectation maximization (EM) algorithm is used to find  and . The EM algorithm consists of two steps. First, in the E-step or estimation step, it guesses the values of parameters ("old" parameter values) and then uses Bayes' theorem to compute the posterior probability distributions  of mixture components. Second, in the M-step or maximization step, the "new" parameter values are then found by minimizing the expectation of the complete negative log-likelihood function, i.e. the cost function:
+
+Ignoring constants independent of  and , Equation () can be expressed thus:
+
+where
+
+with  only if . The posterior probabilities of GMM components computed using previous parameter values  is:
+
+Minimizing the cost function in Equation () necessarily decreases the negative log-likelihood function  in Equation () unless it is already at a local minimum. Thus, the algorithm can be expressed using the following pseudocode, where the point sets  and  are represented as  and  matrices  and  respectively:
+
+ 
+     
+     
+     
+     while not registered:
+         // E-step, compute 
+         
+             
+         // M-step, solve for optimal transformation
+         
+     return θ
+
+where the vector  is a column vector of ones. The solve function differs by the type of registration performed. For example, in rigid registration, the output is a scale , a rotation matrix , and a translation vector . The parameter  can be written as a tuple of these:
+
+which is initialized to one, the identity matrix, and a column vector of zeroes:
+
+The aligned point set is:
+
+The solve_rigid function for rigid registration can then be written as follows, with derivation of the algebra explained in Myronenko's 2010 paper.
+
+ 
+     
+     
+     
+     
+     
+     
+      
+      // diag(ξ)is the diagonal matrix formed from vector ξ
+     
+      //  is the trace of a matrix
+     
+     
+     
+
+For affine registration, where the goal is to find an affine transformation instead of a rigid one, the output is an affine transformation matrix  and a translation  such that the aligned point set is:
+
+The solve_affine function for rigid registration can then be written as follows, with derivation of the algebra explained in Myronenko's 2010 paper.
+
+ 
+     
+     
+     
+     
+     
+     
+     
+     
+     
+
+It is also possible to use CPD with non-rigid registration using a parametrization derived using calculus of variations.
+
+Sums of Gaussian distributions can be computed in linear time using the fast Gauss transform (FGT). Consequently, the time complexity of CPD is , which is asymptotically much faster than  methods.
+
+ Bayesian coherent point drift (BCPD) 
+A variant of coherent point drift, called Bayesian coherent point drift (BCPD), was derived through a Bayesian formulation of point set registration.
+
+BCPD has several advantages over CPD, e.g., (1) nonrigid and rigid registrations can be performed in a single algorithm, (2) the algorithm can be accelerated regardless of the Gaussianity of a Gram matrix to define motion coherence, (3) the algorithm is more robust against outliers because of a more reasonable definition of an outlier distribution. Additionally, in the Bayesian formulation, motion coherence was introduced through a prior distribution of displacement vectors, providing a clear difference between tuning parameters that control motion coherence. BCPD was further accelerated by a method called BCPD++, which is a three-step procedure composed of (1) downsampling of point sets, (2) registration of downsampled point sets, and (3) interpolation of a deformation field.
+
+The method can register point sets composed of more than 10M points while maintaining its registration accuracy.
+
+ Coherent point drift with local surface geometry (LSG-CPD) 
+An variant of coherent point drift called CPD with Local Surface Geometry (LSG-CPD) for rigid point cloud registration. The method adaptively adds different levels of point-to-plane penalization on top of the point-to-point penalization based on the flatness of the local surface. This results in GMM components with anisotropic covariances, instead of the isotropic covariances in the original CPD. The anisotropic covariance matrix is modeled as:
+
+where
+
+ is the anisotropic covariance matrix of the m-th point in the target set;  is the normal vector corresponding to the same point;  is an identity matrix, serving as a regularizer, pulling the problem away from ill-posedness.  is penalization coefficient (a modified sigmoid function), which is set adaptively to add different levels of point-to-plane penalization depending on how flat the local surface is. This is realized by evaluating the surface variation  within the neighborhood of the m-th target point.  is the upper bound of the penalization.
+
+The point cloud registration is formulated as a maximum likelihood estimation (MLE) problem and solve it with the Expectation-Maximization (EM) algorithm. In the E step, the correspondence computation is recast into simple matrix manipulations and efficiently computed on a GPU. In the M step, an unconstrained optimization on a matrix Lie group is designed to efficiently update the rigid transformation of the registration. Taking advantage of the local geometric covariances, the method shows a superior performance in accuracy and robustness to noise and outliers, compared with the baseline CPD. An enhanced runtime performance is expected thanks to the GPU accelerated correspondence calculation. An implementation of the LSG-CPD is open-sourced here.
+
+ Sorting the Correspondence Space (SCS) 
+This algorithm was introduced in 2013 by H. Assalih to accommodate sonar image registration. These types of images tend to have high amounts of noise, so it is expected to have many outliers in the point sets to match. SCS delivers high robustness against outliers and can surpass ICP and CPD performance in the presence of outliers. SCS doesn't use iterative optimization in high dimensional space and is neither probabilistic nor spectral. SCS can match rigid and non-rigid transformations, and performs best when the target transformation is between three and six degrees of freedom.

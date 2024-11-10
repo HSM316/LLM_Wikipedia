@@ -1,0 +1,40 @@
+Matroid, Inc. is a computer vision company that offers a platform for creating computer vision models, called detectors, to search visual media for objects, persons, events, emotions, and actions. Matroid provides real-time notifications once the object of interest has been detected, as well as the ability to search past events.
+
+ History 
+Matroid was founded in 2016 by Reza Zadeh, a Stanford professor. Matroid raised $20M in a Series B round led by Energize Ventures to expand into manufacturing and industrial IOT. Previous investors New Enterprise Associates and Intel Capital joined Energize in the round. The new financing brought total funding to $33.5 million. 
+
+ Product 
+Once a detector has been trained using the Matroid GUI, it automatically finds the objects of interest in real-time video and archived footage. Users can explore detection information via reports, notifications, or a calendar interface to view events and identify trends. Matroid’s functionality is also exposed via a developer API.
+
+Supported hardware platforms:
+ On-cloud: www.matroid.com, allows for scaling based on workload
+ On-prem: contains the same functionality of www.matroid.com in a secure, offline environment for applications where data privacy and security are key concerns
+ On-device: runs on embedded devices such as cameras, sensors, etc.
+
+alt=|The 2020 Scaled Machine Learning Conference at the Computer History Museum.
+
+ Scaled Machine Learning Conference 
+Matroid annually holds a conference, Scaled Machine Learning, where technical speakers lead discussions about running and scaling machine learning algorithms, artificial intelligence, and computing platforms, such as GPUs, CPUs, TPUs, & the nascent AI chip industry.
+
+Past speakers include Turing Award Winners, creators of Keras, TensorFlow, PyTorch, Caffe, OpenAI, Kubernetes, Horovod, Allen Institute for AI, Apache Spark, Apache Arrow, MLPerf, Matroid, and others.
+
+ Announcements 
+ 2020 - Matroid raised $20M in a Series B round led by Energize Ventures. Previous investors NEA and Intel Capital joined in the round. The new financing brings total funding to $33.5M.
+ 2020 - Eagle Eye Networks and Matroid announce partnership to provide AI to Eagle Eye Cloud VMS customers.
+ 2018 - Matroid announced a partnership with HP for their on-prem platform. Matroid certified a selection of HP Z computers as Computer-Vision-Ready (CV-Ready) for monitoring video streams. 
+ 2018 - Oracle announced their software integration with Matroid to provide real-time and analytics based on people monitoring.
+
+ Awards 
+ 2019 - Matroid was selected by Gartner, Inc. as a “Cool Vendor” for Cool Vendors in AI Core Technologies.
+ 2016 - Matroid was awarded a Best Paper Award at KDD 2016.
+
+ Notable publications 
+
+ Diagnosing Glaucoma using 3D CNN 
+Together with Stanford Hospital and hospitals in Hong Kong, India, and Nepal, Matroid used computer vision in the field of Ophthalmology. The company created a model that learns to predict glaucoma from areas of the eye previously ignored during diagnosis, specifically the Lamina Cribrosa, as no established automated metrics existed for this region yet. Matroid is able to detect glaucoma on OCT scans of the eye, with an F1 score of 96% and similar AUC and accuracy.
+
+ FusionNet 3D Object Classification 
+FusionNet was released as a leading neural networks architecture at the Princeton ModelNet competition.  It is a fusion of three convolutional neural networks, one trained on pixel representation and two networks trained on voxelized objects. It exploits the strength of each component network in order to improve the classification performance. Each component network of FusionNet considers multiple views or orientations of each object before classifying it. While it is intuitive that one can get more information from multiple views of the object than a single view, it is not trivial to put the information together in order to enhance the accuracy. Matroid used information from 20 views for pixel representation and 60 CAD object orientations for voxel representation before predicting the object class. FusionNet outperformed the current leading submission on the Princeton ModelNet leaderboard in both the 10 class and the 40 class datasets.
+
+ TensorFlow for Deep Learning 
+Matroid released a book with co-author Bharath Ramsundar, TensorFlow for Deep Learning. It introduces the fundamentals of machine learning through TensorFlow and explains how to use TensorFlow to build systems capable of detecting objects in images, understanding human text, and predicting the properties of potential medicines.

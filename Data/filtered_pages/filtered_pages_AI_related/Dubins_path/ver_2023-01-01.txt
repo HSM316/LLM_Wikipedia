@@ -1,0 +1,16 @@
+In geometry, the term Dubins path typically refers to the shortest curve that connects two points in the two-dimensional Euclidean plane (i.e. x-y plane) with a constraint on the curvature of the path and with prescribed initial and terminal tangents to the path, and an assumption that the vehicle traveling the path can only travel forward. If the vehicle can also travel in reverse, then the path follows the Reeds–Shepp curve.
+
+In 1957, Lester Eli Dubins (1920–2010) proved using tools from analysis that any such path will consist of maximum curvature and/or straight line segments. In other words, the shortest path will be made by joining circular arcs of maximum curvature and straight lines.
+
+In 1974 Harold H. Johnson proved Dubins' result by applying Pontryagin's maximum principle. In particular, Harold H. Johnson presented necessary and sufficient conditions for a plane curve, which has bounded piecewise continuous curvature and prescribed initial and terminal points and directions, to have minimal length. In 1992 the same result was shown again using Pontryagin's maximum principle. More recently, a geometric curve-theoretic proof has been provided by J. Ayala, D. Kirszenblat and J. Hyam Rubinstein. A proof characterizing Dubins paths in homotopy classes has been given by J. Ayala.
+
+The Dubins path is commonly used in the fields of robotics and control theory as a way to plan paths for wheeled robots, airplanes and underwater vehicles. There are simple geometric and analytical methods to compute the optimal path.
+
+For example, in the case of a wheeled robot, a simple kinematic car model (also known as Dubins' car) for the systems is:
+
+where  is the car's position,  is the heading, the car is moving at a constant speed , and the turn rate control  is bounded. In this case the maximum turning rate corresponds to some minimum turning radius (and equivalently maximum curvature). The prescribed initial and terminal tangents correspond to initial and terminal headings. The Dubins' path gives the shortest path joining two oriented points that is feasible for the wheeled-robot model.
+
+The optimal path type can be described using an analogy with cars of making a 'right turn (R)' , 'left turn (L)' or driving 'straight (S).' An optimal path will always be at least one of the six types: RSR, RSL, LSR, LSL, RLR, LRL. For example, consider that for some given initial and final positions and tangents, the optimal path is shown to be of the type 'RSR.' Then this corresponds to a right-turn arc (R) followed by a straight line segment (S) followed by another right-turn arc (R). Moving along each segment in this sequence for the appropriate length will form the shortest curve that joins a starting point A to a terminal point B with the desired tangents at each endpoint and that does not exceed the given curvature. 
+
+Dubins Interval Problem
+Dubins interval problem is a key variant of the Dubins path problem, where an interval of heading directions are specified at the initial and terminal points. The tangent direction of the path at initial and final points are constrained to lie within the specified intervals. One could solve this using geometrical analysis, or using Pontryagin's minimum principle.

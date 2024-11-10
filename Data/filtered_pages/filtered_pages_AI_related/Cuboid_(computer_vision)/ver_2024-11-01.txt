@@ -1,0 +1,21 @@
+In computer vision, the term cuboid is used to describe a small spatiotemporal volume extracted for purposes of behavior recognition. The cuboid is regarded as a basic geometric primitive type and is used to depict three-dimensional objects within a three dimensional representation of a flat, two dimensional image.
+
+ Production 
+Cuboids can be produced from both two-dimensional and three-dimensional images.
+
+One method used to produce cuboids utilizes scene understanding (SUN) primitive databases, which are collections of pictures that already contain cuboids. By sorting through SUN primitive databases with machine learning tools, computers observe the conditions in which cuboids are produced in images from SUN primitive databases and can learn to produce cuboids from other images.
+
+RGB-D images, which are RGB images that also record the depth of each pixel, are occasionally used to produce cuboids because computers no longer need to determine the depth of an object, as they typically do because depth is already recorded.
+
+Cuboid production is sensitive to changes in color and illumination, blockage, and background clutter. This means that it is difficult for computers to produce cuboids of objects that are multicolored, irregularly illuminated, or partially covered, or if there are many objects in the background. This is partially due to the fact that algorithms for producing cuboids are still relatively simple.
+
+ Usage 
+Cuboids are created for point cloud-based three-dimensional maps and can be utilized in various situations such as augmented reality, the automated control of cars, drones, and robots, and object detection.
+
+Cuboids allow for software to identify a scene through geometric descriptions in an “object-agnostic” fashion.
+
+Interest points, locations within images that are identified by a computer as essential to identifying the image, created from two-dimensional images can be used with cuboids for image matching, identifying a room or scene, and instance recognition. Interest points created from three dimensional images can be used with cuboids to recognize activities. This is possible because interest points aid software to focus on only the most important aspects of the images.
+
+RGB-D images and SLAM systems are used together in RGB-D SLAM systems, which are employed by Computer-aided design systems to generate point cloud-based three-dimensional maps.
+
+Most industrial multi-axis machining tools use computer-aided manufacturing and subsequently work in cuboid work spaces.

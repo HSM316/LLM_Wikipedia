@@ -1,0 +1,19 @@
+Mongoose OS is an Internet of Things (IoT) Firmware Development Framework available under Apache License Version 2.0. It supports low power, connected microcontrollers such as: ESP32, ESP8266, TI CC3200, TI CC3220, STM32 (STM32L4, STM32F4, STM32F7 series). Its purpose is to be a complete environment for prototyping, development and managing connected devices.
+
+It is designed to reduce the time and costs associated with IoT projects.
+
+Mongoose OS serves as the gap between Arduino firmware suitable for prototyping and bare-metal microcontrollers' native SDKs.
+
+It is developed by Cesanta Software Ltd., a company based in Dublin (Ireland), and is dual licensed.
+
+ Features 
+ User friendly Over the Air (OTA) updating of embedded ICs.
+ Secure connectivity and crypto support
+ Integrated Mongoose Web Server
+ Programming in either JavaScript (integrated mJS engine) or C.
+ Integration with private and public clouds: AWS IoT, Microsoft Azure IoT, Google IoT Core, IBM Watson IoT, Mosquitto, HiveMQ, etc.
+
+ License 
+Mongoose OS is Open Source and dual-licensed:
+ Mongoose OS Community Edition - Apache License Version 2.0
+ Mongoose OS Enterprise Edition - Commercial License

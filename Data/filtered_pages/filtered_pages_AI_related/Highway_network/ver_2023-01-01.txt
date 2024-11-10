@@ -1,0 +1,15 @@
+In machine learning, the Highway Network was the first working very deep feedforward neural network with hundreds of layers, much deeper than previous artificial neural networks.
+It uses skip connections modulated by learned gating mechanisms to regulate information flow, inspired by Long Short-Term Memory (LSTM) recurrent neural networks.
+The advantage of a Highway Network over the common deep neural networks is that it solves or partially prevents the vanishing gradient problem, thus leading to easier to optimize neural networks.
+The gating mechanisms facilitate information flow across many layers ("information highways").
+
+Highway Networks have been used as part of text sequence labeling and speech recognition tasks.
+An open-gated or gateless Highway Network variant called Residual neural network was used to win the ImageNet 2015 competition. This has become the most cited neural network of the 21st century.
+
+ Model 
+The model has two gates in addition to the H(WH, x) gate: the transform gate T(WT, x) and the carry gate C(WC, x). Those two last gates are non-linear transfer functions (by convention Sigmoid function). The H(WH, x) function can be any desired transfer function.
+
+The carry gate is defined as C(WC, x) = 1 - T(WT, x). While the transform gate is just a gate with a sigmoid transfer function.
+
+ Structure 
+The structure of a hidden layer follows the equation:

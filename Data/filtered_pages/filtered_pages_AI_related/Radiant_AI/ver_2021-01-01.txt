@@ -1,0 +1,10 @@
+The Radiant AI is a technology developed by Bethesda Softworks for The Elder Scrolls video games. It allows non-player characters (NPCs) to make choices and engage in behaviors more complex than in past titles. The technology was developed for The Elder Scrolls IV: Oblivion and expanded in The Elder Scrolls V: Skyrim; it is also used in Fallout 3, Fallout: New Vegas and Fallout 4, also published by Bethesda.
+
+Technology
+The Radiant AI technology, as it evolved in its iteration developed for Skyrim, comprises two parts:
+
+Radiant AI
+The Radiant AI system deals with NPC interactions and behavior. It allows non-player characters to dynamically react to and interact with the world around them. General goals, such as "Eat in this location at 2pm" are given to NPCs, and NPCs are left to determine how to achieve them. The absence of individual scripting for each character allows for the construction of a world on a much larger scale than other games had developed, and aids in the creation of what Todd Howard described as an "organic feel" for the game.
+
+Radiant Story
+The Radiant Story system deals with how the game itself reacts to the player behavior, such as the creation of new dynamic quests. Dynamically generated quests are placed by the game in locations the player hasn't visited yet and are related to earlier adventures.

@@ -1,0 +1,24 @@
+The enterprise interoperability framework is used as a guideline for collecting and structuring knowledge/solution for enterprise interoperability. The framework defines the domain and sub-domains for interoperability research and development in order to identify a set of pieces of knowledge for solving enterprise interoperability problems by removing barriers to interoperability.
+
+Existing interoperability frameworks
+
+Some existing works on interoperability have been carried out to define interoperability framework or reference models, in particular, the LISI reference model, European Interoperability Framework (EIF), IDEAS interoperability framework, ATHENA interoperability framework, and E-Health Interoperability Framework. These existing approaches constitute the basis for the enterprise interoperability framework.
+
+The necessity to elaborate the enterprise interoperability framework has been discussed in. Existing interoperability frameworks do not explicitly address barriers to interoperability, which is a basic assumption of this research; they are not aimed at structuring interoperability knowledge with respect to their ability to remove various barriers.
+
+The enterprise Interoperability framework has three basic dimensions:
+
+ Interoperability concerns defined the content (or aspect) of interoperation that may take place at various levels of the enterprise. In the domain of Enterprise Interoperability, the following four interoperability concerns are identified: data, service, process, and business. Interoperability concerns: data, service, process, and business
+ Interoperability barriers: Interoperability barrier is a fundamental concept in defining the interoperability domain. Many interoperability issues are specific to particular application domains. These can be things like support for particular attributes, or particular access control regimes. Nevertheless, general barriers and problems of interoperability can be identified; and most of them being already addressed, Consequently, the objective is to identify common barriers to interoperability. By the term ‘barrier’ we mean an ‘incompatibility’ or ‘mismatch’ which obstructs the sharing and exchanging of information. Three categories of barriers are identified: conceptual, technological and organisational.
+ Interoperability approaches represents the different ways in which barriers can be removed (integrated, unified, and federated) 
+ Basic Approaches to Develop Interoperability
+
+The framework with its three basic dimensions is shown.
+Enterprise interoperability framework
+
+ Use 
+The Enterprise Interoperability Framework allows to:
+ Capture and structure interoperability knowledge/solutions in the framework through a barrier-driven approach 
+ Provide support to enterprise interoperability engineers and industry end users to carry out their interoperability projects.
+
+The enterprise interoperability framework not only aims at structuring concepts, defining research domain and capturing knowledge, but also at helping industries to solve their interoperability problems. When carrying out an interoperability project involving two particular enterprises, interoperability concerns and interoperability barriers between the two enterprises will be identified first and mapped to this Enterprise Interoperability Framework. Using the framework, existing interoperability degree can be characterised and targeted interoperability degree can be defined as the objective to meet. Then knowledge/solutions associated to the barriers and concerns can be searched in the framework, and solutions found will be proposed to users for possible adaptation and/or combination with other solutions to remove the identified barriers so that the required interoperability can be established.

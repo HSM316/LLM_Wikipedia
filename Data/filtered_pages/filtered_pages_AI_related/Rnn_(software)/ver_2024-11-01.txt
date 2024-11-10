@@ -1,0 +1,49 @@
+rnn is an open-source machine learning framework that implements recurrent neural network architectures, such as LSTM and GRU, natively in the R programming language, that has been downloaded over 100,000 times (from the RStudio servers alone).
+
+The rnn package is distributed through the Comprehensive R Archive Network under the open-source GPL v3 license.
+
+ Workflow 
+Demonstration of RNN package
+The below example from the rnn documentation show how to train a recurrent neural network to solve the problem of bit-by-bit binary addition.
+
+> # install the rnn package, including the dependency sigmoid
+> install.packages('rnn')
+
+> # load the rnn package
+> library(rnn)
+
+> # create input data 
+> X1 = sample(0:127, 10000, replace=TRUE)
+> X2 = sample(0:127, 10000, replace=TRUE)
+
+> # create output data
+> Y <- X1 + X2
+
+> # convert from decimal to binary notation 
+> X1 <- int2bin(X1, length=8)
+> X2 <- int2bin(X2, length=8)
+> Y  <- int2bin(Y,  length=8)
+
+> # move input data into single tensor
+> X <- array( c(X1,X2), dim=c(dim(X1),2) )
+
+> # train the model
+> model <- trainr(Y=Y,
++                 X=X,
++                 learningrate   =  1,
++                 hidden_dim     = 16  )
+Trained epoch: 1 - Learning rate: 1
+Epoch error: 0.839787019539748
+
+ sigmoid 
+The sigmoid functions and derivatives used in the package were originally included in the package, from version 0.8.0 onwards, these were released in a separate R package sigmoid, with the intention to enable more general use. The sigmoid package is a dependency of the rnn package and therefore automatically installed with it.
+
+ Reception 
+With the release of version 0.3.0 in April 2016 the use in production and research environments became more widespread. The package was reviewed several months later on the R blog The Beginner Programmer as "R provides a simple and very user friendly package named rnn for working with recurrent neural networks.", which further increased usage.
+
+The book Neural Networks in R by Balaji Venkateswaran and Giuseppe Ciaburro uses rnn to demonstrate recurrent neural networks to R users. It is also used in the r-exercises.com course "Neural network exercises".
+
+The RStudio CRAN mirror download logs
+ show that the package is downloaded on average about 2,000 per month from those servers
+, with a total of over 100,000 downloads since the first release, according to RDocumentation.org, this puts the package in the 15th percentile of most popular R packages
+.

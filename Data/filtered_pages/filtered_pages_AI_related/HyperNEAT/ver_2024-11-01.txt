@@ -1,0 +1,13 @@
+Querying the CPPN to determine the connection weight between two neurons as a function of their position in space. Note sometimes the distance between them is also passed as an argument. 
+
+Hypercube-based NEAT, or HyperNEAT, is a generative encoding that evolves artificial neural networks (ANNs) with the principles of the widely used NeuroEvolution of Augmented Topologies (NEAT) algorithm developed by Kenneth Stanley. It is a novel technique for evolving large-scale neural networks using the geometric regularities of the task domain. It uses Compositional Pattern Producing Networks  (CPPNs), which are used to generate the images for Picbreeder.org  and shapes for EndlessForms.com . HyperNEAT has recently been extended to also evolve plastic ANNs  and to evolve the location of every neuron in the network.
+
+ Applications to date 
+
+ Multi-agent learning
+ Checkers board evaluationJ. Gauci and K. O. Stanley, “A case study on the critical role of geometric regularity in machine learning,” in AAAI (D. Fox and C. P. Gomes, eds.), pp. 628–633, AAAI Press, 2008.
+ Controlling Legged RobotsYosinski J, Clune J, Hidalgo D, Nguyen S, Cristobal Zagal J, Lipson H (2011) Evolving Robot Gaits in Hardware: the HyperNEAT Generative Encoding Vs. Parameter Optimization. Proceedings of the European Conference on Artificial Life. (pdf)Lee S, Yosinski J, Glette K, Lipson H, Clune J (2013) Evolving gaits for physical robots with the HyperNEAT generative encoding: the benefits of simulation. Applications of Evolutionary Computing. Springer. pdfvideo
+ Comparing Generative vs. Direct Encodings
+ Investigating the Evolution of Modular Neural Networks
+ Evolving Objects that can be 3D-printed
+ Evolving the Neural Geometry and Plasticity of an ANN

@@ -1,0 +1,40 @@
+Tensor Processing Unit (TPU) is an AI accelerator application-specific integrated circuit (ASIC) developed by Google specifically for neural network machine learning, particularly using Google's own TensorFlow software. Google began using TPUs internally in 2015, and in 2018 made them available for third party use, both as part of its cloud infrastructure and by offering a smaller version of the chip for sale.
+
+Overview
+The tensor processing unit was announced in May 2016 at Google I/O, when the company said that the TPU had already been used inside their data centers for over a year. The chip has been specifically designed for Google's TensorFlow framework, a symbolic math library which is used for machine learning applications such as neural networks."TensorFlow: Open source machine learning" "It is machine learning software being used for various kinds of perceptual and language understanding tasks" — Jeffrey Dean, minute 0:47 / 2:17 from Youtube clip However, as of 2017 Google still used CPUs and GPUs for other types of machine learning. Other AI accelerator designs are appearing from other vendors also and are aimed at embedded and robotics markets.
+
+Google's TPUs are proprietary. Some models are commercially available, and on February 12, 2018, The New York Times reported that Google "would allow other companies to buy access to those chips through its cloud-computing service."  Google has said that they were used in the AlphaGo versus Lee Sedol series of man-machine Go games, as well as in the AlphaZero system, which produced Chess, Shogi and Go playing programs from the game rules alone and went on to beat the leading programs in those games. Google has also used TPUs for Google Street View text processing and was able to find all the text in the Street View database in less than five days. In Google Photos, an individual TPU can process over 100 million photos a day. It is also used in RankBrain which Google uses to provide search results.
+
+Compared to a graphics processing unit, it is designed for a high volume of low precision computation (e.g. as little as 8-bit precision) with more input/output operations per joule, without hardware for rasterisation/texture mapping. The TPU ASICs are mounted in a heatsink assembly, which can fit in a hard drive slot within a data center rack, according to Norman Jouppi. Different types of processors are suited for different types of machine learning models, TPUs are well suited for CNNs while GPUs have benefits for some fully-connected neural networks, and CPUs can have advantages for RNNs.
+
+Google provides third parties access to TPUs through its Cloud TPU service as part of the Google Cloud Platform and through its notebook-based services Kaggle and Colaboratory.
+
+Productshttps://conferences.computer.org/iscapub/pdfs/ISCA2021-4ghucdBnCWYB7ES2Pe4YdT/333300a001/333300a001.pdf
+
+   TPUv1  TPUv2  TPUv3  TPUv4Stay tuned, more information on TPU v4 is coming soon,  Retrieved 2020-08-06.  Edge v1 Date Introduced   2016  2017  2018  2021  2018 Process Node  28 nm  16 nm 16 nm  7 nm  Die Size (mm2)  331  < 625  < 700  < 400  On chip memory (MiB)  28  32  32  144  Clock Speed (MHz)  700  700  940  1050  Memory (GB)  8GB DDR3 16GB HBM 32GB HBM  8GB  TDP(W)  75  280  450  175  2 TOPS (Tera Operations Per Second)  23  45  90    4
+
+First generation TPU
+The first-generation TPU is an 8-bit matrix multiplication engine, driven with CISC instructions by the host processor across a PCIe 3.0 bus. It is manufactured on a 28 nm process with a die size ≤ 331 mm2. The clock speed is 700 MHz and it has a thermal design power of 28–40 W. It has 28 MiB of on chip memory, and 4 MiB of 32-bit accumulators taking the results of a 256×256 systolic array of 8-bit multipliers. Within the TPU package is 8 GiB of dual-channel 2133 MHz DDR3 SDRAM offering 34 GB/s of bandwidth. Instructions transfer data to or from the host, perform matrix multiplications or convolutions, and apply activation functions.
+
+Second generation TPU
+The second-generation TPU was announced in May 2017. Google stated the first-generation TPU design was limited by memory bandwidth and using 16 GB of High Bandwidth Memory in the second-generation design increased bandwidth to 600 GB/s and performance to 45 teraFLOPS. The TPUs are then arranged into four-chip modules with a performance of 180 teraFLOPS. Then 64 of these modules are assembled into 256-chip pods with 11.5 petaFLOPS of performance. Notably, while the first-generation TPUs were limited to integers, the second-generation TPUs can also calculate in floating point. This makes the second-generation TPUs useful for both training and inference of machine learning models. Google has stated these second-generation TPUs will be available on the Google Compute Engine for use in TensorFlow applications.
+
+ Third generation TPU
+The third-generation TPU was announced on May 8, 2018. Google announced that processors themselves are twice as powerful as the second-generation TPUs, and would be deployed in pods with four times as many chips as the preceding generation. This results in an 8-fold increase in performance per pod (with up to 1,024 chips per pod) compared to the second-generation TPU deployment.
+
+ Fourth generation TPU 
+On May 18, 2021, Google CEO Sundar Pichai spoke about TPU v4 Tensor Processing Units during his keynote at the Google I/O virtual conference. TPU v4 improved performance by more than 2x over TPU v3 chips. Pichai said "A single v4 pod contains 4,096 v4 chips, and each pod has 10x the interconnect bandwidth per chip at scale, compared to any other networking technology.”https://www.hpcwire.com/2021/05/20/google-launches-tpu-v4-ai-chips/ Retrieved June 7, 2021.
+
+Edge TPU
+In July 2018, Google announced the Edge TPU. The Edge TPU is Google's purpose-built ASIC chip designed to run machine learning (ML) models for edge computing, meaning it is much smaller and consumes far less power compared to the TPUs hosted in Google datacenters (also known as Cloud TPUs). In January 2019, Google made the Edge TPU available to developers with a line of products under the Coral brand. The Edge TPU is capable of 4 trillion operations per second while using 2W.
+
+The product offerings include a single board computer (SBC), a system on module (SoM), a USB accessory, a mini PCI-e card, and an M.2 card. The SBC Coral Dev Board and Coral SoM both run Mendel Linux OS – a derivative of Debian. The USB, PCI-e, and M.2 products function as add-ons to existing computer systems, and support Debian-based Linux systems on x86-64 and ARM64 hosts (including Raspberry Pi).
+
+The machine learning runtime used to execute models on the Edge TPU is based on TensorFlow Lite. The Edge TPU is only capable of accelerating forward-pass operations, which means it's primarily useful for performing inferences (although it is possible to perform lightweight transfer learning on the Edge TPU). The Edge TPU also only supports 8-bit math, meaning that for a network to be compatible with the Edge TPU, it needs to either be trained using the TensorFlow quantization-aware training technique, or since late 2019 it's also possible to use post-training quantization.
+
+On November 12, 2019, Asus announced a pair of single-board computer (SBCs) featuring the Edge TPU. The Asus Tinker Edge T and Tinker Edge R Board designed for IoT and edge AI. The SBCs officially support Android and Debian operating systems. ASUS has also demonstrated a mini PC called Asus PN60T featuring the Edge TPU.
+
+On January 2, 2020, Google announced the Coral Accelerator Module and Coral Dev Board Mini, to be demonstrated at CES 2020 later the same month. The Coral Accelerator Module is a multi-chip module featuring the Edge TPU, PCIe and USB interfaces for easier integration. The Coral Dev Board Mini is a smaller SBC featuring the Coral Accelerator Module and MediaTek 8167s SoC.
+
+ Pixel Neural Core 
+On October 15, 2019, Google announced the Pixel 4 smartphone, which contains an Edge TPU called the Pixel Neural Core.

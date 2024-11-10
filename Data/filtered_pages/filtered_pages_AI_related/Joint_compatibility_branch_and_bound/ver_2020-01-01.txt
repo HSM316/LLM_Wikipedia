@@ -1,0 +1,1 @@
+Joint compatibility branch and bound (JCBB) is an algorithm in computer vision and robotics commonly used for data association in simultaneous localization and mapping. JCBB measures the joint compatibility of a set of pairings that successfully rejects spurious matchings and is hence known to robust in complex environments.

@@ -1,0 +1,85 @@
+Vectra AI, Inc. applies artificial intelligence that detects and responds to hidden cyberattackers inside cloud, data center and enterprise networks. 
+
+The company’s Cognito platform is designed to detect cyberattacker behaviors in these infrastructures and allow security analysts to conduct incident investigations and hunt for hidden threats using security-enriched metadata. 
+
+To augment the Cognito platform, Vectra threat researchers identify and investigate cyberattacks, vulnerabilities and malicious behaviors that are unknown to the world. With data sets from this research, data scientists develop the machine learning algorithms and behavioral analysis that drive the Cognito platform.
+
+Investors in Vectra include Khosla Ventures, TCV, Accel Partners, IA Ventures, AME Cloud Ventures, DAG Ventures, Wipro Ventures, Atlantic Bridge, the Ireland Strategic Investment Fund, Nissho Electronics, and Silver Lake. 
+
+ History 
+
+Vectra was founded in 2010 as TraceVector LLC in New York City and was incorporated in 2012 under the name Vectra Networks. The company is headquartered in San Jose, Calif., with facilities in Austin, Texas, Boston, Mass., Ireland, Switzerland, Germany, the United Kingdom and France.
+
+Vectra’s team includes threat researchers, white hats, data scientists, security engineers, and user interface designers.
+
+Key executives are Hitesh Sheth, president and chief executive officer; Jennifer Geisler, chief marketing officer; Oliver Tavakoli, chief technology officer; Howie Shohet, chief financial officer; Jodi Sutton, vice president of business operations;Kevin Kennedy, vice president of product management; Jason Kehl, vice president of engineering; Aaron Bean, vice president of human resources; and Marc Gemassmer, chief revenue officer
+
+Board members include Hitesh Sheth, president and CEO of Vectra; Bruce Armstrong, operating partner, Kholsa Ventures; Kevin Dillon, co-founder and managing partner of Atlantic Bridge; Charles Giancarlo, CEO of Pure Storage; Brad Gillespie, general partner at IA Ventures; Tim McAdam, general partner TCV; Jim Messina, founder and CEO of the Messina Group; and Eric Wolford, venture partner at Accel Partners.
+
+ Products 
+
+The Cognito platform from Vectra provides continuous, automated threat surveillance to expose hidden and unknown cyberattackers that actively spread inside networks.
+
+Cognito analyzes network traffic in private data centers, public clouds and enterprise environments to detect hidden cyberattacker behaviors. The Cognito platform identifies and prioritizes all threat detections based on severity and certainty scores, which empowers IT security teams to prevent data loss by quickly mitigating the most serious attacks first.
+
+Threat behaviors and cyberattack techniques detected by Cognito include botnet command-and-control communications, botnet monetization, internal reconnaissance, lateral movement, and data theft, or exfiltration.
+
+Vectra offers three applications on the Cognito platform to address use cases:
+ Cognito Stream delivers enterprise-scale network metadata enriched with security insights in Zeek format to data lakes and security information and event management (SIEM) applications without the complexity, constant tuning and scale limitation of open-source Zeek. 
+
+ Cognito Recall gives security analysts a logical starting point to perform AI-assisted threat hunting and conclusive incident investigations. 
+
+ Cognito Detect automates the real-time detection of hidden attackers in cloud and data center workloads and user and internet-of-things devices.
+
+Using AI for incident detection and triage in its security operations center has helped one Vectra customer – Texas A&M University System – resolve an incident in 10 to 20 minutes, rather than hours or days.
+
+ Technology 
+
+Vectra AI combines data science, machine learning and network behavioral analysis technologies to identify patterns that characterize malicious behavior within a network.
+
+Cognito uses artificial intelligence, including supervised learning, unsupervised machine learning, and deep learning techniques, to detect and respond to advanced cyberattacks. Remediation actions are taken with security information and event management (SIEMs), firewalls, endpoint security enforcement, network access control, and orchestration, which are integrated with Cognito via an application programming interface.
+ 
+Vectra was issued ten U.S. patents for advanced cyber security analytics capabilities automated by AI:
+ 10050985 
+ 9930053 
+ 9847968 
+ 10033752 
+ 9853988 
+ 9807110 
+ 9900336 
+ EP3221793 
+ 9237164 
+ 9407647 
+ 9565208 
+ 9602533
+ 9628512
+
+ Attacker Behavior Industry Reports  
+
+Vectra publishes Attacker Behavior Industry Reports, which provide an analysis of active and persistent attacker behaviors inside the enterprise networks of Vectra customers. The reports examine a wide range of cyberattack detections and trends from 300+ Vectra customers from nine different industries. The reports span all strategic phases of the attack lifecycle.
+
+ "90% of organisations deploying Remote Desktop Protocol (RDP) exhibited RDP attacker behaviour."
+
+ "The most significant ransomware threat — in which hackers steal your data and hold it for ransom — is malicious encryption of shared network files in cloud service providers."
+
+ "Attackers are actively infiltrating energy organizations and utilities for reconnaissance purposes.”
+
+ "Sixty percent of cryptomining detections in a Vectra study occurred on higher-education networks."
+
+ "Sophisticated cyber-attackers are using hidden tunnels to spy on financial firms and pilfer sensitive data and personally-identifiable information (PII) - and they're doing it at a higher rate than in other industries."
+
+ Awards and Honors 
+Vectra and its customers have received industry recognition, including: 
+
+ 2020 Cyber Defense Magazine Infosec Awards - Next Gen Category for "Cloud Security" and "Artificial Intelligence and Machine Learning"
+2019 Deloitte 2019 Technology Fast 500 winners
+ 2019 computing Security Excellence Awards: Enterprise Threat Detection (Finalist) and Most Innovative AI/ML Security Solution (Finalist)
+ 2019 The Hot 150 Cybersecurity Companies
+ 2019 Stratus Awards for Cloud Computing
+ 2019 SC Awards Europe: Highly Commented for Best Use of Machine Learning, Best Behavior Analytics and Enterprise Threat Detection
+ 2019 American Business Association Stevie Awards: Best Artificial Intelligence and Machine Learning Solution
+ 2019 The Software Report: Top 25 Women Leaders in Cybersecurity
+ 2019 Red Herring Top 100 Global Winner
+ 2019 Artificial Intelligence Excellence Awards: Vectra Cognito Platform and Chief Technology Officer Oliver Tavakoli
+ 2019 CRN Security 100
+ 2018 Gartner Magic Quadrant for Intrusion Detection and Prevention Systems

@@ -1,0 +1,8 @@
+Stochastic semantic analysis is an approach used in computer science as a semantic component of natural language understanding.
+
+Stochastic models generally use the definition of segments of words as basic semantic units for the semantic models, and in some cases involve a two layered approach.Language Understanding Using Two-Level Stochastic Models by F. Pla, et al, 2001, Springer Lecture Notes in Computer Science 
+
+Example applications have a wide range. In machine translation, it has been applied to the translation of spontaneous conversational speech among different languages.W. Minkera, M. Gavaldàb and A. Waibel Stochastically-based semantic analysis for machine translation in Computer Speech & Language Volume 13, Issue 2, April 1999, Pages 177-194 In the area of spoken language understanding the fact that spoken sentences often do not follow the grammar of a language and involve self-corrections, repetitions, and other irregularities, the use of stochastic semantic has been suggested as a natural fit to achieve robustness to deal with noise due to the spontaneous nature of spoken language.<ref>R. De Mori et al, Spoken language understanding  in IEEE Signal Processing Magazine, May 2008 Volume: 25 Issue: 3, pages 50 - 58 ISSN 1053-5888</ref>
+
+References
+ Stochastically-based semantic analysis'' by Wolfgang Minker, Alex Waibel, Joseph Mariani 1999 

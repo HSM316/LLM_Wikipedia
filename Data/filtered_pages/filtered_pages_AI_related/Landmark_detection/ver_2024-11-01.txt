@@ -1,0 +1,26 @@
+In computer science, landmark detection is the process of finding significant landmarks in an image.  This originally referred to finding landmarks for navigational purposes – for instance, in robot vision or creating maps from satellite images.  Methods used in navigation have been extended to other fields, notably in facial recognition where it is used to identify key points on a face.  It also has important applications in medicine, identifying anatomical landmarks in medical images.
+
+ Applications 
+ Navigation 
+ Facial landmarks 
+Finding facial landmarks is an important step in facial identification of people in an image.  Facial landmarks can also be used to extract information about mood and intention of the person.Wu & Ji, p. 115.  Methods used fall in to three categories: holistic methods, constrained local model methods, and regression-based methods.Wu & Ji, p. 116.
+
+Holistic methods are pre-programmed with statistical information on face shape and landmark location coefficients.  The classic holistic method is the active appearance model (AAM) introduced in 1998.Wu & Ji, p. 116.  Since then there has been a number of extensions and improvements to the method.  These are largely improvements to the fitting algorithm and can be classified into two groups: analytical fitting methods, and learning-based fitting methods.Wu & Ji, p. 117.  Analytical methods apply nonlinear optimization methods such as the Gauss–Newton algorithm.  This algorithm is very slow but better ones have been proposed such as the project out inverse compositional (POIC) algorithm and the simultaneous inverse compositional (SIC) algorithm.Wu & Ji, p. 118.  Learning-based fitting methods use machine learning techniques to predict the facial coefficients.  These can use linear regression, nonlinear regression and other fitting methods.Wu & Ji, p. 118.  In general, the analytic fitting methods are more accurate and do not need training, while the learning-based fitting methods are faster, but need to be trained.Wu & Ji, p. 119.  Other extensions to the basic AAM method analyse wavelets in the image rather than pixel intensity.  This helps with fitting unseen parts of the face which basic AAM finds troublesome.Wu & Ji, p. 119.
+
+Medical images 
+ Cephalometry 
+ Fashion 
+The purpose of landmark detection in fashion images is for classification purposes.  This aids in the retrieval of images with specified features from a database or general search.  An example of a fashion landmark is the location of the hemline of a dress.  Fashion landmark detection is particularly difficult due to the extreme deformation that can occur in clothing.Zhang, Zhang & Du, p. 1.
+
+Some classical methods of feature detection such as scale-invariant feature transform have been used in the past.  However, it is now more common to use deep learning methods.  This has been helped along enormously by the publication of a number of large fashion datasets that can be used for training.Zhang, Zhang & Du, p. 1.  These methods include regression-based models, constraint-based models, and attentive models.Zhang, Zhang & Du, pp. 1–4.  The particular problems of fashion landmark detection (deformation) have led to pose estimation models which detect and take into account the pose of the model wearing the clothes.Zhang, Zhang & Du, p. 2.
+
+ Methods 
+There are several algorithms for locating landmarks in images. Nowadays the task usually is solved using Artificial Neural Networks and especially Deep Learning algorithms, but evolutionary algorithms such as particle swarm optimization can also be useful to perform this task.
+
+ Deep Learning 
+Deep learning has had a significant impact on autonomous facial landmark detection by enabling more accurate and efficient detection of landmarks in real-world photos.Wu & Ji With traditional computer vision techniques, detecting facial landmarks could be challenging due to variations in lighting, head position, and occlusion, but Convolutional Neural Networks (CNNs), have revolutionized landmark detection by allowing computers to learn the features from large datasets of images. By training a CNN on a dataset of images with labeled facial landmarks, the algorithm can learn to detect these landmarks in new images with high accuracy even when they appear in different lighting conditions, at different angles, or in partially occluded views.
+
+In particular, solutions based on this approach have achieved  real-time efficiency on mobile devices' GPUs and found its usage within augmented reality applications. 
+
+ Evolutionary algorithm 
+Evolutionary algorithms at the training stage try to learn the method of correct determination of landmarks. This phase is an iterative process and, accordingly, is performed in several iterations. As a result of the completion of the last iteration, a system will be obtained that can correctly determine the landmark with a certain accuracy. In the particle swarm optimization method, there are particles that search for landmarks, and each of them uses a certain formula in each iteration to optimize landmark detection.

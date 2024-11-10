@@ -1,0 +1,15 @@
+OpenIO offered object storage for a wide range of high-performance applications. OpenIO was founded in 2015 by Laurent Denel (CEO), Jean-François Smigielski (CTO) and five other co-founders; it leveraged open source software, developed since 2006, based on a grid technology that enabled dynamic behaviour and supported heterogenous hardware. In October 2017 OpenIO was completed a $5 million funding rounds. In July 2020 OpenIO had been acquired by OVH and withdrawn from the market to become the core technology of OVHcloud object storage offering.
+
+Software
+OpenIO is a software-defined object store that supports S3 and can be deployed on-premises, cloud-hosted or at the edge, on any hardware mix. It has been designed from the beginning for performance and cost-efficiency at any scale, and it has been optimized for Big Data, HPC and AI.
+
+OpenIO stores objects within a flat structure within a massively distributed directory with indirections, which allows the data query path to be independent of the number of nodes and the performance not to be affected by the growth of capacity. Servers are organized as a grid of nodes massively distributed, where each node takes part in directory and storage services, which ensures that there is no single point of failure and that new nodes are automatically discovered and immediately available without the need to rebalance data.
+
+The software is built on top of a technology that ensures optimal data placement based on real-time metrics and allows the addition or removal of storage devices with automatic performance and load impact optimization. For data protection OpenIO has synchronous and asynchronous replication with multiple copies, and an erasure coding implementation based on Reed-Solomon that can be deployed in one data center or geo-distributed or stretched clusters.
+
+The software has a feature that catches all events that occur in the cluster and can pass them up in the stack or to applications running on OpenIO nodes. This enables event-driven computing directly into the storage infrastructure.
+
+The open source code is available on Github and it is licensed under AGPL3 for server code and LGPL3 for client code.
+
+ Performance 
+OpenIO claimed in 2019 to have reached 1.372 Tbps write speed (171 GB/s) on a cluster of 350 physical machines. The benchmark scenario, conducted under production conditions with standard hardware (commodity servers with 7200 rpm HDDs), consisted in backing up a 38 PB Hadoop datalake via the DistCp command. This level of performance marked, according to analysts, the arrival of a new generation of object storage technologies oriented toward high performance and hyper-scalability.

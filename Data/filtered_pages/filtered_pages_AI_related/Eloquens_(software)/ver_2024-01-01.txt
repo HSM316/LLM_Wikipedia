@@ -1,0 +1,8 @@
+Eloquens™ is a text-to-speech software, whose first version was released in 1993 by CSELT. It was the first commercial speech synthesis software able to speak Italian.
+
+ Description 
+It was the first commercial product of the research center CSELT in the field of voice technology. It was built with diphone-technology aimed to reach a high computational efficiency. As a result, the produced voice is still "robotic", but more natural than the previous generation voice implemented in MUSA by CSELT itself. In the past, ELOQUENS was applied to automatically read timetables in the Italian train stations1997 IEEE International Conference on Acoustics, Speech, and Signal Processing: April 21-24, 1997, Munich, Germany. (1997). United States: IEEE Computer Society Press: p. 1147 and some telephone services provided by Telecom Italia, e.g. the automated address book service.
+
+In 1997 Eloquens was also used as a building block (synthezer module) in dialogue systems.
+
+Nowadays, it is released as freeware: it is nowadays typically used in spoken comments in many YouTube videos.

@@ -1,0 +1,22 @@
+In computer security, a weird machine is a computational artifact where additional code execution can happen outside the original specification of the program. It is closely related to the concept of weird instructions, which are the building blocks of an exploit based on crafted input data. 
+
+The concept of weird machine is a theoretical framework to understand the existence of exploits for security vulnerabilities. Exploits exist empirically, but were not studied from a theoretical perspective prior to the emergence of the framework of weird machines.
+
+ Theory 
+
+From a theoretical perspective, the emergence of weird machines becomes clear when one considers software as a way to restrict the number of reachable states and state transitions of a computer: The general-purpose CPU is, through software, specialized to simulate a finite-state machine (with potentially very large state space). Many states the CPU could be in are excluded, and certain state transitions are ruled out - for example those that violate the software's security requirements. When the system is somehow moved into a state that "makes no sense" when viewed from the perspective of the intended finite-state machine (through memory corruption, hardware failure, or other programming mistakes), the software will keep transforming the broken state into new broken states, triggered by further user input. A new computational device arises: The weird machine which can reach different states of the CPU than the programmer anticipated, and which does so in reaction to inputs.
+
+ Applications  
+
+The functionality of the weird machine is invoked through unexpected inputs.
+While expected, valid input activates the normal, intended functionality in a computer program, input that was unexpected by the program developer may activate unintended functionality. The weird machine consists of this unintended functionality that can be programmed with selected inputs in an exploit.
+
+In a classical attack taking advantage of a stack buffer overflow, the input given to a vulnerable program is crafted and delivered so that it itself becomes executed as program code. However, if the data areas of the program memory have been protected so that they cannot be executed directly like this, the input may instead take the form of pointers into pieces of existing program code that then become executed in an unexpected order to generate the functionality of the exploit. These snippets of code that are used by the exploit are referred to as gadgets in the context of return-oriented programming.
+
+Through interpretation of data as code, weird machine functionality that is by definition outside the original program specification can be reached also by proof-carrying code (PCC), which has been formally proven to function in a certain specific way. This disparity is essentially caused by a disconnect between formal abstract modelling of a computer program and its real-world instance, which can be influenced by events that are not captured in the original abstraction, such as memory errors or power outages.
+
+Weird machine behaviors are observed even in hardware. For instance, it has been shown that one can do computation with only MOV instructions in x86.
+
+ Mitigation 
+
+Two central categories of mitigation to the problems caused by weird machine functionality include input validation within the software and protecting against problems arising from the platform on which the program runs, such as memory errors. Input validation aims to limit the scope and forms of unexpected inputs e.g. through whitelists of allowed inputs, so that the software program itself would not end up in an unexpected state by interpreting the data internally. Equally importantly, secure programming practices such as protecting against buffer overflows make it less likely that input data becomes interpreted in unintended ways by lower layers, such as the hardware on which the program is executed.

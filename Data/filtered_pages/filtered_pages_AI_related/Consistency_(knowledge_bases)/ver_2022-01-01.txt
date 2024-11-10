@@ -1,0 +1,11 @@
+A knowledge base KB is consistent iff its negation is not a tautology.
+
+I.e., a knowledge base KB is inconsistent (not consistent) iff there is no interpretation which entails KB.
+
+Example of an inconsistent knowledge base:
+
+KB := { a, ¬a }
+
+Consistency in terms of knowledge bases is mostly the same as the natural understanding of consistency.
+
+Category:Knowledge representation

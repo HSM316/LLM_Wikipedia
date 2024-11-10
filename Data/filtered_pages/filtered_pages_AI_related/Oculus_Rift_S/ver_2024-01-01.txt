@@ -1,0 +1,52 @@
+Oculus Rift S is a discontinued virtual reality headset co-developed by Lenovo Technologies and Oculus VR. Announced in March 2019 and released that May, it is a successor to the original Oculus Rift CV1 model, with noted changes including a new "inside-out" positional tracking system with cameras embedded inside the headset unit (similarly to its sister device, the Oculus Quest), a higher-resolution display, and a new "halo" head strap.
+
+The Rift S received mixed reviews, with critics praising improvements in comfort and ease of setup due to the halo strap and new tracking system, but characterizing the Rift S as being only an incremental upgrade over the CV1, and noting regressions such as a lower refresh rate, and the lack of hardware adjustment for inter pupillary distance (IPD).
+
+The Rift S was discontinued in June 2021.
+
+ Development 
+In June 2015, Oculus VR co-founder Palmer Luckey revealed that Oculus was already working on a successor to the original Rift and planned to release it in around 2–3 years from the original Rift release. The headset would feature higher resolution screens and inside-out tracking, and would enable room scale experiences.
+
+In October 2018, Oculus VR co-founder and former CEO until 2016 Brendan Iribe left Oculus VR, allegedly due to both parts having "fundamentally different views on the future of Oculus that grew deeper over time." Iribe wanted to deliver comfortable VR experience competitive on the high-end market while Oculus leadership aimed to lower the VR gaming entry barrier. Mark Zuckerberg, CEO of Oculus parent company Facebook, Inc., repeatedly stated that Oculus' goal is to bring a billion users into VR. Iribe was said to be overseeing the development of the second generation Oculus Rift, which was canceled the week prior to his departure.
+
+ Hardware 
+
+ Display 
+Rift S used a single fast-switch LCD panel with a resolution of 2560×1440 and an 80 Hz refresh rate, down from the CV1's 90 Hz.
+
+Also, compared to the original Rift, the Rift S uses "next generation" lens technology, introduced in the Oculus Go, which almost entirely eliminated god rays. The field of view was 115º, compared to 110º on the Rift CV1. The headset features software-only inter pupillary distance (IPD) adjustment, because it uses a single screen instead of dual displays.
+
+ Audio 
+As opposed to earphones attached to the strap as on the CV1, built-in audio on the Rift S uses speakers embedded in the headset itself, positioned slightly above the user's ears.
+
+ Oculus Insight 
+The Rift S uses the same "Oculus Insight" inside-out tracking system used by the Oculus Quest, whereby five cameras built into the headset (two on the front, one on either side, and one looking directly upwards) track infrared diodes in the controllers, as well as input from the accelerometers in the headset and controllers, and a prediction engine, are used to spatially track the headset and controller (removing the need for external sensors mounted in the play area). The Rift S contains an additional fifth camera over the Quest's four to improve compatibility with existing Oculus Rift software.
+
+Passthrough+ is provided as a safety feature, which displays output from the cameras in monoscopic black and white when the player exits their designated boundaries. Passthrough+ also makes use of "Asynchronous SpaceWarp" to produce a comfortable experience with minimal depth disparity or performance impact.
+
+ Halo headband 
+Rift S features a halo headband which, according to Oculus, had a better weight distribution, better light blocking, and was supposed to be more comfortable in comparison to that of the Rift CV1. The headset was co-developed with Lenovo, incorporating their experience in the VR and AR space and feedback from the Lenovo Legion gaming community. The device has a knob at the rear of the band which brought the device forward and backward. The top strap was there to make it snug on the wearer's head, while a button underneath the right side of the headset is used to release the headset from its support, allowing it to be adjusted to be closer or farther from the user's eyes. The device lacks physical adjustment for inter-pupillary distance (IPD), but this setting was supported in software.
+
+ Controllers 
+The second-generation Oculus Touch controllers included with the Oculus Rift S
+Oculus Rift S uses the same second generation Oculus Touch controllers used in the Oculus Quest. The controllers are similar to the ones used by the original Oculus Rift, except with the tracking ring on the top (to be seen by the headset's built-in cameras) instead of being on the bottom (to be seen by the external Constellation cameras).
+
+On April 12, 2019, Nate Mitchell, co-founder of Oculus VR and head of VR product at Facebook, explained via Twitter that "some 'easter egg' labels meant for prototypes accidentally made it onto the internal hardware for tens of thousands of [Oculus Quest and Rift S] Touch controllers." The messages on final production hardware say 'This Space For Rent' and 'The Masons Were Here,' while a few development kits contained 'Big Brother is Watching' and 'Hi iFixit! We See You!'
+
+ Software 
+
+All existing and future Oculus Rift-compatible software are supported by the Rift S. The Oculus storefront also supports cross-buys between Oculus Quest and PC for games released on both platforms
+
+ Release 
+Oculus Rift S was announced during GDC 2019 on March 20, with shipments starting on May 21 the same year.  At launch, it shared the same US$399 price point as the CV1.
+
+On September 16, 2020, Facebook announced the upcoming discontinuation of the Rift S in favor of the Oculus Quest 2, with sales ending in spring 2021. In December 2020, Facebook discounted the Rift S to US$300.
+
+In April 2021, production of the Rift S was discontinued. In an email sent to UploadVR, a Facebook representative stated that "stock of the headset would no longer be replenished moving forward." That June, the Rift S section in the Oculus website was updated and was no longer being sold.
+
+ Reception 
+The Rift S received mixed reviews. The Verge felt that the Insight system was "easily a match for the old Rift tracking cameras" and helped make setup less complicated, and that its halo strap was more comfortable than that of the Oculus Quest, but felt that some of its other changes were downgrades over the previous model and Quest — including replacing its headphones with directional speakers, the lack of hardware IPD adjustment, and a screen whose resolution only slightly higher than the Rift CV1, but lower than the Oculus Quest.
+
+TechRadar characterized the Rift S as being an incremental upgrade over the CV1, similarly praising its "elegantly simple" tracking system, but noting only marginal hardware updates, and regressions such as its directional speakers, a tighter fit and no hardware IPD, and its lower refresh rate. Coming from a CV1, the reviewer also noted that the Rift S was also the first headset to make them feel nauseous, although citing possible factors such as the lower refresh rate or Fallout 4 VR being a SteamVR game that was not fully optimized for the Oculus platform. It was argued that the Rift S "does very little to appeal to those that have already invested in the Oculus ecosystem", and that "the future of Oculus VR, if it is ever to have mainstream appeal from a consumer perspective, looks to sit then with the Oculus Quest, whose freedom of movement does stand the chance of being truly transformational, given the right software."
+
+Oculus co-founder Palmer Luckey criticized the lack of hardware IPD, stating that the software-only adjustment was not comparable in any way to an actual physical IPD adjustment mechanism. He estimated that about 30% of the population — including himself — would not be able to use the Rift S comfortably. In comparison, the original Rift CV1 was designed to support any IPD between the 5th and 95th percentile (58mm and 72mm, respectively), making the device comfortable for 90% of the population.

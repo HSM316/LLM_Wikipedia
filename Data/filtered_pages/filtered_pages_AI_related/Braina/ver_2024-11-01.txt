@@ -1,0 +1,18 @@
+Braina is a virtual assistant and speech-to-text dictation application for Microsoft Windows developed by Brainasoft. Braina uses natural language interface, speech synthesis, and speech recognition technology to interact with its users and allows them to use natural language sentences to perform various tasks on a computer. The name Braina is a short form of "Brain Artificial".
+
+Braina is marketed as a Microsoft Copilot alternative. It provides a voice interface for several locally run and cloud large language models, including GPT-4o, Gemini 1.5 Pro, Anthropic's Claude Sonnet and Opus, Meta's Llama 3, and Mistral, while attempting to improve data privacy. Braina also allows responses from its in-house large language models like Braina Swift and Braina Pinnacle. It has an "Artificial Brain" feature that provides persistent memory support for supported LLMs.
+
+ Features 
+Braina provides is able to carry out various tasks on a computer, including automation. Braina can take commands inputted through typing or through dictation to store reminders, find information online, perform mathematical operations, open files, generate images from text, transcribe speech, and control open windows or programs. Braina adapts to user behavior over time with a goal of better anticipating needs.
+
+ Speech-to-text dictation 
+Braina Pro can type spoken words into an active window at the location of a user's cursor. Its speech recognition technology supports more than 100 languages and dialects and is able to isolate the recognition of a user's voice from disturbing environmental factors such as background noise, other human voices, or external devices. Braina can also be taught to dictate uncommon legal, medical, and scientific terms. Users can also teach Braina uncommon names and vocabulary. Users can edit or correct dictated text without using a keyboard or mouse by giving built-in voice commands.
+
+ Text-to-speech 
+Braina can read aloud selected texts, such as e-books.
+
+ Custom commands and automation  
+Braina can automate computer tasks. It lets users create custom voice commands to perform tasks such as opening files, programs, websites, or emails, as well as executing keyboard or mouse macros.
+
+ Transcription 
+Braina can transcribe media file formats such as WAV, MP3, and MP4 into text.

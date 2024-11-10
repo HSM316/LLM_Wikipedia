@@ -1,0 +1,29 @@
+A vision processing unit (VPU) is (as of 2023) an emerging class of microprocessor; it is a specific type of AI accelerator, designed to accelerate machine vision tasks.
+
+ Overview 
+Vision processing units are distinct from graphics processing units (which are specialised for video encoding and decoding) in their suitability for running machine vision algorithms such as CNN (convolutional neural networks), SIFT (scale-invariant feature transform) and similar.
+
+They may include direct interfaces to take data from cameras (bypassing any off chip buffers), and have a greater emphasis on on-chip dataflow between many parallel execution units with scratchpad memory, like a manycore DSP. But, like video processing units, they may have a focus on low precision fixed point arithmetic for image processing.
+
+ Contrast with GPUs 
+They are distinct from GPUs, which contain specialised hardware for rasterization and texture mapping (for 3D graphics), and whose memory architecture is optimised for manipulating bitmap images in off-chip memory (reading textures, and modifying frame buffers, with random access patterns). VPUs are optimized for performance per watt, while GPUs mainly focus on absolute performance.
+
+Target markets are robotics, the internet of things (IoT), new classes of digital cameras for virtual reality and augmented reality, smart cameras, and integrating machine vision acceleration into smartphones and other mobile devices.
+
+ Examples 
+ Movidius Myriad X, which is the third-generation vision processing unit in the Myriad VPU line from Intel Corporation.
+ Movidius Myriad 2, which finds use in Google Project Tango, Google Clips and DJI drones
+Pixel Visual Core (PVC), which is a fully programmable Image, Vision and AI processor for mobile devices
+ Microsoft HoloLens, which includes an accelerator referred to as a holographic processing unit (complementary to its CPU and GPU), aimed at interpreting camera inputs, to accelerate environment tracking and vision for augmented reality applications.
+ Eyeriss, a design from MIT intended for running convolutional neural networks.
+ NeuFlow, a design by Yann LeCun (implemented in FPGA) for accelerating convolutions, using a dataflow architecture.
+ Mobileye EyeQ, by Mobileye
+ Programmable Vision Accelerator (PVA), a 7-way VLIW Vision Processor designed by Nvidia.
+
+ Broader category 
+
+Some processors are not described as VPUs, but are equally applicable to machine vision tasks.  These may form a broader category of AI accelerators (to which VPUs may also belong), however as of 2016 there is no consensus on the name:
+
+ IBM TrueNorth, a neuromorphic processor aimed at similar sensor data pattern recognition and intelligence tasks, including video/audio.
+ Qualcomm Zeroth Neural processing unit, another entry in the emerging class of sensor/AI oriented chips.
+ All models of Intel Meteor Lake processors have a Versatile Processor Unit (VPU) built-in for accelerating inference for computer vision and deep learning.

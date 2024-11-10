@@ -1,0 +1,47 @@
+Roborace is a competition with autonomously driving, electrically powered vehicles. It aims to be the first global championship for autonomous cars. As of September 2017, the official CEO is 2016–17 Formula E champion, Lucas Di Grassi. The series tested their technology and race formats at FIA Formula E Championship events during 2016-2018. In 2019 they announced Season Alpha, which would be the first time multiple independent teams would compete against each other.
+
+All teams will utilize the same chassis and powertrain, but will have to develop their own real-time computing algorithms and artificial intelligence technologies.
+
+Car
+
+Robocar
+A show car of the Robocar on display at the 2017 Berlin ePrix.
+One of the Nvidia Roborace cars in Munich
+The world's first purpose-built autonomous racing car, Robocar, was designed by Daniel Simon, who previously worked on vehicles for movies such as Tron: Legacy and Oblivion, as well as designing the livery for the 2011 HRT Formula One car. Michelin is the official tyre supplier, and the internal computing processors (Drive PX 2) are Nvidia.
+
+The chassis itself is shaped like a teardrop, improving aerodynamic efficiency. The car weighs around 1350 kg and is  long and  wide. It has four electric motors, each with a power of 135 kW producing over 500 hp combined, and utilizes a 840V battery. For navigation, it relies on a mixture of optical systems, radars, lidars and ultrasonic sensors. The vehicle has been demonstrated at speeds of almost .
+
+DevBot
+Another Robocar on display at the 2017 New York City ePrix
+Development of the Robocar started in early 2016, with a first outing of a test vehicle, the so-called DevBot, following in the summer of the same year. The test car consisted of the same internal units (battery, motor, electronics) used in the Robocar, but were placed in the chassis of a Ginetta LMP3 car without an engine cover in order to provide better cooling and access.
+
+DevBot saw its first public outing at the Formula E pre-season tests in Donington Park in August 2016. After battery issues in Hong Kong caused the development team to abandon their demonstration run, the DevBot successfully drove twelve laps around the Moulay El Hassan Formula E circuit in Marrakesh. Other test tracks included Michelin's testing ground in Ladoux and the Silverstone Stowe Circuit.
+
+During testing ahead of the 2017 Buenos Aires ePrix, two DevBot cars raced against each other autonomously, resulting in one of the vehicles crashing on a corner. 
+
+During the 2018 Formula E season, Roborace pitched pro-drifter Ryan Tuerck against a DevBot at the Rome ePrix.https://www.engadget.com/2018/05/14/roborace-self-driving-car-versus-human/ At the Berlin ePrix, Roborace held the Human + Machine Challenge, the first race for combined teams of human drivers and AIs using a pair of Devbots.
+
+ DevBot 2.0 
+DevBot 2.0 competing in Season Alpha
+An upgraded version of DevBot was announced in late 2018, and after private testing made its public debut in 2019 at the inaugural Season Alpha event. DevBot 2.0 uses the same technology as both Robocar and DevBot, with the main changes being a conversion to being driven on the rear axle only, a lower position for the driver for safety reasons and a bespoke composite bodywork.
+
+Seasons
+Testing
+2016–17 Formula E season
+Roborace appeared at a number of Formula E events during the 2016–17 Formula E season. However, in this period only test drives with two different DevBots took place. Within the framework of the 2017 Buenos Aires ePrix both DevBot vehicles drove against each other on a race track for the first time. There were also DevBot demonstrations at the 2016 Marrakesh ePrix, 2017 Berlin ePrix, 2017 New York City ePrix and 2017 Montreal ePrix.
+
+At the 2017 Paris ePrix, the developers also let a Robocar onto the track for the first time, even though the vehicle only drove the track at walking speed.
+
+2017–18 Formula E season
+At the start of the 2017/18 Formula E season, the Roborace developers once again tested the DevBot during a public time trial between the Roborace CI and the TV presenter Nicki Shields at the 2017 Hong Kong ePrix. As part of a similar time trial at the 2018 Rome ePrix, drift professional Ryan Tuerck also tested the DevBot.
+
+The Human + Machine Challenge was created for the Formula E race on the Berlin ePrix. A team of doctoral students from the Technical University Munich (TUM) and the University of Pisa programmed the software for the Devbot to drive autonomously around the circuit in Berlin. Afterwards both teams in combination with a human driver competed in a public time trial. The vehicle of the team of the Technical University Munich finished the Human + Machine Challenge with an average lap time of 91.59 seconds, almost four seconds faster than that of the University Pisa with 95.36 seconds and thus won the Challenge.
+
+At the Goodwood Festival of Speed, Robocar became the first ever fully autonomous race car to complete the Goodwood Hill Climb. The vehicle completed the first official autonomous run on 13 July 2018 within the framework of the event.
+
+Season Alpha (2019)
+Season Alpha will take place at various locations in Europe and North America with the aim of testing several competition formats using the new DevBot 2.0. The first event was held at the Monteblanco circuit in Spain, and featured the first race between two fully autonomous cars. The events are not broadcast live but recorded and released on YouTube as short episodes. Two teams are initially competing: Arrival and Technical University of Munich.
+
+List of episodes
+
+ Episode Date Title Location Teams 1 29 May 2019 The Road To Autonomous Overtaking  Circuito Monteblanco, Spain  TU München Team Arrival 2 18 June 2019 Coding Challenges with Autonomous Overtaking 3 26 July 2019 First-Ever Autonomous Race

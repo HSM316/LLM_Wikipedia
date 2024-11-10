@@ -1,0 +1,46 @@
+Pose estimation in a motion capture system|thumb
+3D pose estimation is a process of predicting the transformation of an object from a user-defined reference pose, given an image or a 3D scan.  It arises in computer vision or robotics where the pose or transformation of an object can be used for alignment of a Computer-Aided Design models, identification, grasping, or manipulation of the object.
+
+From an uncalibrated 2D camera
+It is possible to estimate the 3D rotation and translation of a 3D object from a single 2D photo, if an approximate 3D model of the object is known and the corresponding points in the 2D image are known. A common technique for solving this has recently been "POSIT", where the 3D pose is estimated directly from the 3D model points and the 2D image points, and corrects the errors iteratively until a good estimate is found from a single image. Most implementations of POSIT only work on non-coplanar points (in other words, it won't work with flat objects or planes).
+
+Another approach is to register a 3D CAD model over the photograph of a known object by optimizing a suitable distance measure with respect to the pose parameters.
+The distance measure is computed between the object in the photograph and the 3D CAD model projection at a given pose.
+Perspective projection or orthogonal projection is possible depending on the pose representation used.
+This approach is appropriate for applications where a 3D CAD model of a known object (or object category) is available.
+
+From a calibrated 2D camera
+Given a 2D image of an object, and the camera that is calibrated with respect to a world coordinate system, it is also possible to find the pose which gives the 3D object in its object coordinate system. This works as follows.
+
+ Extracting 3D from 2D 
+Starting with a 2D image, image points are extracted which correspond to corners in an image.  The projection rays from the image points are reconstructed from the 2D points so that the 3D points, which must be incident with the reconstructed rays, can be determined.
+
+Pseudocode
+The algorithm for determining pose estimation is based on the iterative closest point algorithm. The main idea is to determine the correspondences between 2D image features and points on the 3D model curve.  
+
+ (a) Reconstruct projection rays from the image points
+ (b) Estimate the nearest point of each projection ray to a point on the 3D contour
+ (c) Estimate the pose of the contour with the use of this correspondence set
+ (d) goto (b)
+
+The above algorithm does not account for images containing an object that is partially occluded.  The following algorithm assumes that all contours are rigidly coupled, meaning the pose of one contour defines the pose of another contour.
+
+ (a) Reconstruct projection rays from the image points
+ (b) For each projection ray R:
+      (c) For each 3D contour:
+           (c1) Estimate the nearest point P1 of ray R to a point on the contour
+           (c2) if (n == 1) choose P1 as actual P for the point-line correspondence
+           (c3) else compare P1 with P:
+                    if dist(P1, R) is smaller than dist(P, R) then
+                        choose P1 as new P
+ (d) Use (P, R) as correspondence set.
+ (e) Estimate pose with this correspondence set
+ (f) Transform contours, goto (b)
+
+ Estimating pose through comparison 
+Systems exist which use a database of an object at different rotations and translations to compare an input image against to estimate pose.  These systems accuracy is limited to situations which are represented in their database of images, however the goal is to recognize a pose, rather than determine it.
+
+Software
+ posest, a GPL C/C++ library for 6DoF pose estimation from 3D-2D correspondences.
+ diffgeom2pose, fast Matlab solver for 6DoF pose estimation from only two 3D-2D correspondences of points with directions (vectors), or points at curves (point-tangents). The points can be SIFT attributed with feature directions.
+ MINUS: C++ package for (relative) pose estimation of three views. Includes cases of three corresponding points with lines at these points (as in feature positions and orientations, or curve points with tangents), and also for three corresponding points and one line correspondence.

@@ -1,0 +1,11 @@
+Flux is an open-source machine-learning software library and ecosystem written in Julia. Its current stable release is v. It has a layer-stacking-based interface for simpler models, and has a strong support on interoperability with other Julia packages instead of a monolithic design. For example, GPU support is implemented transparently by CuArrays.jl. This is in contrast to some other machine learning frameworks which are implemented in other languages with Julia bindings, such as TensorFlow.jl (the unofficial wrapper, now deprecated), and thus are more limited by the functionality present in the underlying implementation, which is often in C or C++. Flux joined NumFOCUS as an affiliated project in December of 2021.
+
+Flux's focus on interoperability has enabled, for example, support for Neural Differential Equations, by fusing Flux.jl and DifferentialEquations.jl into DiffEqFlux.jl.
+
+Flux supports recurrent and convolutional networks. It is also capable of differentiable programming through its source-to-source automatic differentiation package, Zygote.jl.
+
+Julia is a popular language in machine-learning and Flux.jl is its most highly regarded machine-learning repository (Lux.jl is another more recent, that shares a lot of code with Flux.jl). A demonstration compiling Julia code to run in Google's tensor processing unit (TPU) received praise from Google Brain AI lead Jeff Dean.
+
+Flux has been used as a framework to build neural networks that work with homomorphic encrypted data without ever decrypting it. This kind of application is envisioned to be central for privacy to future API using machine-learning models.
+
+Flux.jl is an intermediate representation for running high level programs on CUDA hardware. It was the predecessor to CUDAnative.jl which is also a GPU programming language.

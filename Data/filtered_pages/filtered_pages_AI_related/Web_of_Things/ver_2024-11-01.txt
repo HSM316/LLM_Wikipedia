@@ -1,0 +1,41 @@
+Web of Things (WoT) describes a set of standards by the World Wide Web Consortium (W3C) for the interoperability of different Internet of things (IoT) platforms and application domains.
+
+ Building blocks 
+The four WoT building blocks provide a way to implement systems that conform with the WoT architecture.
+
+ Thing Description (TD) 
+The key component of WoT building blocks is the WoT Thing Description. A Thing Description describes a virtual or a physical device (Thing). It defines an information model of a Thing based on semantic vocabulary and a serialization based on JSON. TD can be considered as the main entry point for a Thing, like an index.html page for a website. TDs foster interoperability by providing both human and machine-readable (and understandable) metadata about a Thing, such as a title, ID, descriptions, etc. A Thing Description also describes all available actions, events, and properties of a Thing, as well as all available security mechanisms to access them. TDs are highly flexible in order to guarantee interoperability. In addition to the standard functionality, it defines a mechanism to extend the functionality (through the Context Extension Framework).
+
+ Binding Templates 
+IoT uses a large variety of protocols to interact with Things since there does not exist a suitable protocol. One of the main challenges for the Web of Things is to handle the variety of protocols and interaction mechanisms. This problem is tackled through the Binding Templates. WoT Binding Templates provide a collection of communication metadata blueprints to support various IoT solutions. A Binding Template is created only once and then can be reused in any Thing Description.
+
+ Scripting API 
+The WoT Scripting API is an optional building block of the Web of Things. It eases IoT application development by providing an ECMAScript-based application API in a similar manner to how web browsers provide an API for web applications. By having a universal application runtime system, Scripting API solves the problem of heterogeneity of IoT systems. It also enables creating of reusable scripts to implement the device logic, which significantly improves the portability of the application modules.
+
+The current reference implementation of the WoT scripting API is an open-source project called node-wot, which is developed by the Eclipse Thingweb project.
+
+ Security and Privacy Guidelines 
+In WoT architecture, security is relevant to all aspects of the architecture. Specification of each WoT building block contains several considerations regarding the security and privacy of that particular block. Security is supported by certain explicit features, such as public metadata in Thing Descriptions and separation of concerns in the design of Scripting API. There is also a specification called WoT Security and Privacy Guidelines, guiding a variety of security and privacy related concerns.
+
+ History 
+Connecting objects to the Web arguably started around the year 2000. In 2002, a peer-reviewed paper presented the Cooltown project. This project explored the use of URLs to address and HTTP interact with physical objects such as public screens or printers.
+
+Following this early work, the growing interest in and implementation of the Internet of things started to raise some questions about the application layer of the IoT. While most of the work in the IoT space focused on network protocols, there was a need to think about the convergence of data from IoT devices. Researchers and practitioners started envisioning the IoT as a system where data from various devices could be consumed by Web applications to create new use cases.
+
+The idea of the Web as an application layer for the IoT started to emerge in 2007. Several researchers started working in parallel to these concepts. Amongst them, Dominique Guinard and Vlad Trifa started the Web of Things online community and published the first WoT manifesto, advocating the use of Web standards (REST, Lightweight semantics, etc.) to build the application layer of the IoT. The manifesto was published together with an implementation on the Sun SPOT platform. At the same time, Dave Raggett from W3C started talking about a Web of Things at various W3C and IoT events. Erik Wilde published "Putting Things to REST", a self-published concept paper looking at utilizing REST to sense and control physical objects. Early mentions of the Web of Things as a term also appeared in a paper by Vlad Stirbu et al.
+
+From 2007 onwards, Trifa, Guinard, Wilde and other researchers tried publishing their ideas and concepts at peer-reviewed conferences but their work was rejected by Wireless Sensor Networks research community on the basis that Internet and Web protocols were too verbose and limited in the context of real-world devices, preferring to focus on optimization of memory and computation usage, wireless bandwidth, or very short duty cycles.
+ 
+However, a number of researchers in the WSN community started considering these ideas more seriously. In early 2009, several respected WSN researchers such as David Culler, Jonathan Hui, Adam Dunkels and Yazar Dogan evaluated the use of Internet and Web protocols for low-power sensor nodes and showed the feasibility of the approach.
+
+Following this, Guinard and Trifa presented their end-to-end implementation of the concepts and presented it in a peer-reviewed publication accepted at the World Wide Web conference in 2009. Building on this implementation and uniting efforts, a RESTful architecture for things was proposed in 2010 by Guinard, Trifa and Wilde. Guinard, Trifa and Wilde ran the first International Workshop in 2010 on the Web of Things and has been an annual occurrence since. These workshops morphed into a growing community of researchers and practitioners could discuss the latest findings and ideas on the Web of Things .
+
+In 2011, two of the first PhD thesis on the Web of Things were presented at ETH Zurich: Building Blocks for a Participatory Web of Things: Devices, Infrastructures, and Programming Frameworks from Vlad Trifa and A Web of Things Application Architecture – Integrating the Real-World into the Web from Dominique Guinard. Building on this work, Simon Mayer emphasized the importance of REST's uniform interface, and in particular the HATEOAS principle, in his PhD thesis.
+
+In 2014, the W3C showed an increased interest on the Web of Things and organized the W3C Workshop on the Web of Things, under the lead of Dave Raggett together with Siemens and the COMPOSE European project. This workshop leads to the creation of the Web of Things Interest Group at W3C and the submission of the Web Thing Model.
+
+The same year, Siemens announced the creation of a research group dedicated to the Web of Things. In October 2014, Google also announced its interest in these ideas by launching the Physical Web GitHub project.
+
+The Web of Things Interest Group identified the required set of standards needed for the Web of Things in February 2017. The Working Group has started working on four deliverables called WoT Architecture, 
+WoT Thing Description,
+WoT Scripting API, and WoT Binding Templates.

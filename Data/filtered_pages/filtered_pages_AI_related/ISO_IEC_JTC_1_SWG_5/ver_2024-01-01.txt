@@ -1,0 +1,49 @@
+Note: This special working group has been disbanded. The work begun in ISO/IEC/JTC 1/SWG 5 on Internet of Things standardization gaps will be continued in ISO/IEC JTC 1/WG 10. 
+
+ISO/IEC JTC 1/SWG 5 Internet of Things (IoT) is a standardization special working group (SWG) of the Joint Technical Committee ISO/IEC JTC 1 of the International Organization for Standardization (ISO) and the International Electrotechnical Commission (IEC), which develops and facilitates the development of standards for Internet of Things (IoT). ISO/IEC JTC 1/SWG 5 was established in 2012 at the 27th plenary meeting of ISO/IEC JTC 1 in Jeju. The special working group was established as a result of growing interest in the field of IoT by other standards organizations. The international secretariat of ISO/IEC JTC 1/SWG 5 is the Korean Agency for Technology and Standards (KATS), located in the Republic of Korea.
+
+Terms of reference
+The terms of reference of ISO/IEC JTC 1/SWG 5 are:
+ Identify market requirements and standardization gaps for IoT
+ Encourage JTC 1 SCs and WGs to address the need for ISO/IEC standards for IoT
+ Facilitate cooperation across JTC 1 entities
+ Promote JTC 1 developed standards for IoT and encourage them to be recognized and utilized by industry and other standards setting organizations
+ Facilitate the coordination of JTC 1 IoT activities with IEC, ISO, ITU, and other organizations that are developing standards for IoT
+ Periodically report results and recommendations to ISO/IEC JTC 1/SWG 3 on Planning
+ Provide a written report of activities and recommendations to JTC 1 in advance of each JTC 1 plenary
+ Study IoT Reference Architectures/Frameworks and provide a study report. This study report should be written so it could be referenced in a possible JTC 1 New Work Item Proposal on IoT. The report shall be made available to JTC 1 no later than the 2014 JTC 1 Plenary.
+The purpose of ISO/IEC JTC 1/SWG 5 is not to develop or publish IoT related standards, but to coordinate with ISO/IEC JTC 1 subcommittees, working groups, and special working groups and with other standards organizations to help better identify and convey the needs and gaps in the IoT world.
+
+Structure
+ISO/IEC JTC 1/SWG 5 is made up of four Ad Hoc groups, each of which carries out specific tasks in relation to IoT. The four Ad Hoc groups of ISO/IEC JTC 1/SWG 5 are:
+ Ad Hoc Group Working Area Ad Hoc Group 1  Common understanding of IoT including IoT mind map and stakeholders Ad Hoc Group 2  Identifying market requirements Ad Hoc Group 3  Standardization gaps and roadmap for IoT Ad Hoc Group 4  Study of IoT Reference Architectures/Frameworks
+
+Collaborations
+ISO/IEC JTC 1/SWG 5 works in close collaboration with a number of other organizations or subcommittees, both internal and external to ISO or IEC, in order to avoid conflicting or duplicative work. Organizations internal to ISO or IEC that collaborate with or are in liaison to ISO/IEC JTC 1/SWG 5 include:
+ ISO/IEC JTC 1/SWG-A, Accessibility
+ ISO/IEC JTC 1/WG 7, Sensor Networks
+ ISO/IEC JTC 1/SC 7, Software and systems engineering
+ ISO/IEC JTC 1/SC 31, Automatic identification and data capture techniques
+ ISO/IEC JTC 1/SC 35, User interfaces
+ ISO/IEC JTC 1/SC 36, Information technology for learning, education and training
+ ISO/IEC JTC 1/SC 39, Sustainability for and by Information Technology
+ ISO/TC 8/SC 11, Intermodal and short sea shipping
+ ISO/TC 122, Packaging
+ ISO/TC 163, Thermal performance and energy use in the built environment
+
+Some organizations external to ISO or IEC that collaborate with or are in liaison to ISO/IEC JTC 1/SWG 5 include:
+ IEEE-SA IoT Steering Committee
+ ITU-T JCA-IoT
+ Raising the Floor – International; Building a Global Public Inclusive Infrastructure (GPII)
+ GS1
+ Object Management Group (OMG)
+ Open Geospatial Consortium (OGC)
+
+Member countries
+
+The members of ISO/IEC JTC 1/SWG 5 are: Austria, Belgium, Canada, China, France, Germany, Japan, Republic of Korea, Russia, Singapore, South Africa, Switzerland, the United Kingdom, and the United States.
+
+Documents and current work
+ISO/IEC JTC 1/SWG 5 does not develop or facilitate the development of standards, but consolidates the standardization activity, for IoT, of multiple groups, both internal and external to ISO and IEC. The special working group also identifies current and future trends, needs, and gaps in IoT. The result of the special working group’s IoT collection of data is a number of documents, including the IoT mind map and a collection of definitions for the IoT, M2M, and CPS. Both of these documents were produced by ISO/IEC JTC 1/SWG 5’s Ad Hoc Group 1, and are meant to provide a better understanding of what is meant by IoT. The mind map visually describes the technologies related to, and application domains, requirements, and stakeholders of, IoT. Standardization related to IoT is not included in the mind map, as that area of work is covered by Ad Hoc Group 3.  The definition list provides a list of collected definitions from various standards-setting organizations divided into four categories: Internet of Things (IoT), Machine to Machine Communications (M2M), Machine Type Communications (MTC), and Cyber Physical Systems (CPS). Ad Hoc Group 2 is working on collecting data on the market requirements for IoT and will soon develop a document describing these market requirements, which will be presented  based on a pre-determined template. Ad Hoc Group 3 is developing a document that will identify standardization gaps within IoT, as well as a standards roadmap, both of which will take into account the inputs of relevant stakeholders. Ad Hoc Group 4 is studying IoT Reference Architectures/Frameworks which includes collecting, comparing and summarizing of existing IoT Architectures/Frameworks. This study leads to a report to JTC 1 Plenary 2014.
+
+At the 29th meeting of ISO/IEC JTC 1 in November 2014, a resolution was adopted to dissolve ISO/IEC JTC 1/SWG 5 given the establishment of ISO/IEC JTC 1/WG 10 on Internet of Things. All relevant documents were transferred from the ISO/IEC JTC 1/SWG 5 Secretariat to the ISO/IEC JTC 1/WG 10 Convenor for archiving.

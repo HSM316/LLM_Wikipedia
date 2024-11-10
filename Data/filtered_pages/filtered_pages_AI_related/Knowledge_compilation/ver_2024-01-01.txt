@@ -1,0 +1,25 @@
+Knowledge compilation is a family of approaches for addressing the intractability of
+a number of artificial intelligence problems.
+
+A propositional model is compiled in an off-line phase in order to support some queries in polynomial time. Many ways of compiling a propositional models exist.Adnan Darwiche, Pierre Marquis, "A Knowledge Compilation Map", Journal of Artificial Intelligence Research 17 (2002) 229-264
+
+Different compiled representations have different properties.
+The three main properties are:
+ The compactness of the representation
+ The queries that are supported in polynomial time
+ The transformations of the representations that can be performed in polynomial time
+
+ Classes of representations 
+
+Some examples of diagram classes include OBDDs, FBDDs, and non-deterministic OBDDs, as well as MDD.
+
+Some examples of formula classes include DNF and CNF.
+
+Examples of circuit classes include NNF, DNNF, d-DNNF, and SDD.
+
+ Knowledge compilers 
+
+ c2d: supports compilation to d-DNNF
+ d4: supports compilation to d-DNNF
+ miniC2D: supports compilation to SDD
+ KCBox: supports compilation to OBDD, OBDD[AND], and CCDD

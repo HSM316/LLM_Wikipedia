@@ -1,0 +1,66 @@
+Industrial artificial intelligence, or industrial AI, usually refers to the application of artificial intelligence to industry and business. Unlike general artificial intelligence which is a frontier research discipline to build computerized systems that perform tasks requiring human intelligence, industrial AI is more concerned with the application of such technologies to address industrial pain-points for customer value creation, productivity improvement, cost reduction, site optimization, predictive analysis  and insight discovery.
+
+Artificial intelligence and machine learning  have become key enablers to leverage data in production in recent years due to a number of different factors: More affordable sensors and the automated process of data acquisition; More powerful computation capability of computers to perform more complex tasks at a faster speed with lower cost; Faster connectivity infrastructure and more accessible cloud services for data management and computing power outsourcing.
+
+ Categories 
+Possible applications of industrial AI and machine learning in the production domain can be divided into seven application areas:
+
+ Market & Trend Analysis
+ Machinery & Equipment
+ Intralogistics
+ Production Process
+ Supply Chain
+ Building
+ Product
+
+653x653px|Taxonomy of application areas and application scenarios for machine learning and artificial intelligence in production
+Each application area can be further divided into specific application scenarios that describe concrete AI/ML scenarios in production. While some application areas have a direct connection to production processes, others cover production adjacent fields like logistics or the factory building.
+
+An example from the application scenario Process Design & Innovation are collaborative robots. Collaborative robotic arms are able to learn the motion and path demonstrated by human operators and perform the same task.  Predictive and preventive maintenance through data-driven machine learning are exemplary application scenarios from the Machinery & Equipment application area.
+
+ Challenges 
+In contrast to entirely virtual systems, in which ML applications are already widespread today, real-world production processes are characterized by the interaction between the virtual and the physical world. Data is recorded using sensors and processed on computational entities and, if desired, actions and decisions are translated back into the physical world via actuators or by human operators. This poses major challenges for the application of ML in production engineering systems. These challenges are attributable to the encounter of process, data and model characteristics: The production domain's high reliability requirements, high risk and loss potential, the multitude of heterogeneous data sources and the non-transparency of ML model functionality impede a faster adoption of ML in real-world production processes.
+left|641x641px|The challenges for ML applications in production engineering result from the encounter of process, data and ML model characteristics
+In particular, production data comprises a variety of different modalities, semantics and quality. Furthermore, production systems are dynamic, uncertain and complex, and engineering and manufacturing problems are data-rich but information-sparse. Besides that, due the variety of use cases and data characteristics, problem-specific data sets are required, which are difficult to acquire, hindering both practitioners and academic researchers in this domain.
+
+ Process and Industry Characteristics 
+The domain of production engineering can be considered as a rather conservative industry when it comes to the adoption of advanced technology and their integration into existing processes. This is due to high demands on reliability of the production systems resulting from the potentially high economic harm of reduced process effectiveness due to e.g., additional unplanned downtime or insufficient product qualities. In addition, the specifics of machining equipment and products prevent area-wide adoptions across a variety of processes. Besides the technical reasons, the reluctant adoption of ML is fueled by a lack of IT and data science expertise across the domain.
+
+ Data Characteristics 
+The data collected in production processes mainly stem from frequently sampling sensors to estimate the state of a product, a process, or the environment in the real world. Sensor readings are susceptible to noise and represent only an estimate of the reality under uncertainty. Production data typically comprises multiple distributed data sources resulting in various data modalities (e.g., images from visual quality control systems, time-series sensor readings, or cross-sectional job and product information). The inconsistencies in data acquisition lead to low signal-to-noise ratios, low data quality and great effort in data integration, cleaning and management. In addition, as a result from mechanical and chemical wear of production equipment, process data is subject to various forms of data drifts.
+
+ Machine Learning Model Characteristics 
+ML models are considered as black-box systems given their complexity and intransparency of input-output relation. This reduces the comprehensibility of the system behavior and thus also the acceptance by plant operators. Due to the lack of transparency and the stochasticity of these models, no deterministic proof of functional correctness can be achieved complicating the certification of production equipment. Given their inherent unrestricted prediction behavior, ML models are vulnerable against erroneous or manipulated data further risking the reliability of the production system because of lacking robustness and safety. In addition to high development and deployment costs, the data drifts cause high maintenance costs, which is disadvantageous compared to purely deterministic programs.
+
+ Standard processes for data science in production 
+The development of ML applications – starting with the identification and selection of the use case and ending with the deployment and maintenance of the application – follows dedicated phases that can be organized in standard process models. The process models assist in structuring the development process and defining requirements that must be met in each phase to enter the next phase. The standard processes can be classified into generic and domain-specific ones. Generic standard processes (e.g., CRISP-DM, ASUM-DM, KDD, SEMMA, or Team Data Science Process) describe a generally valid methodology and are thus independent of individual domains. Domain-specific processes on the other hand consider specific peculiarities and challenges of special application areas.
+
+The Machine Learning Pipeline in Production is a domain-specific data science methodology that is inspired by the CRISP-DM model and was specifically designed to be applied in fields of engineering and production technology. To address the core challenges of ML in engineering – process, data, and model characteristics – the methodology especially focuses on use-case assessment, achieving a common data and process understanding data integration, data preprocessing of real-world production data and the deployment and certification of real-world ML applications.
+center|645x645px|Machine Learning Pipeline in Production
+
+ Industrial data sources 
+The foundation of most artificial intelligence and machine learning applications in industrial settings are comprehensive datasets from the respective fields. Those datasets act as the basis for training the employed models. In other domains, like computer vision, speech recognition or language models, extensive reference datasets (e.g. ImageNet, Librispeech, The People's Speech) and data scraped from the open internet are frequently used for this purpose. Such datasets rarely exist in the industrial context because of high confidentiality requirements  and high specificity of the data. Industrial applications of artificial intelligence are therefore often faced with the problem of data availability.
+
+For these reasons, existing open datasets applicable to industrial applications, often originate from public institutions like governmental agencies or universities  and data analysis competitions hosted by companies. In addition to this, data sharing platforms exist. However, most of these platforms have no industrial focus and offer limited filtering abilities regarding industrial data sources.
+
+ Artificial intelligence for business education 
+Artificial intelligence for business education refers to the academic programs offered by universities that integrate artificial intelligence (AI) with business management principles. These programs aim to prepare students for the increasing role of AI in business, equipping them with the skills necessary to apply AI technologies to areas such as predictive analytics, supply chain optimization, and decision-making. AI for business education programs are offered at both undergraduate and graduate levels by several universities globally.
+
+ Academic Programs 
+Bachelor in Artificial Intelligence for Business (BAIB), Bachelor in Computer Science and Artificial Intelligence (BCSAI), Master of Science in Artificial Intelligence in Business (MS-AIB) – These are new programs that are still in their first cohorts and have yet to prove themselves in the industry. The undergraduate degrees are often offered in conjuction with a BBA as a 5-year double degree program, the undergraduate degrees are going through the acreditation processes in their respective countries.
+
+Programs that combine AI with business studies vary by institution and degree level. Below are some notable examples:
+
+The Bachelor in Artificial Intelligence for Business (BAIB) - This program, started by Esade focuses on the integration of AI and machine learning with core business disciplines such as management, marketing, and finance. The Esade Business School is a highly regarded institution for its business inovation, sustainability focus and future-proof outlook. During the BBA+BAIB, students are trained to apply AI in business environments to improve efficiency, innovation, and decision-making.
+
+Bachelor in Computer Science and Artificial Intelligence (BCSAI) – Offered along with a BBA by IE University, the BCSAI combines foundational studies in computer science with a specialization in artificial intelligence. The program also provides a strong grounding in business principles, preparing graduates to create AI solutions for business problems and drive technological innovation in the business world.
+
+Master in Artificial Intelligence for Business (MS-AIB) – Arizona State University (ASU) offers a graduate-level program focused on AI applications in business environments. This degree explores advanced topics such as AI-driven decision-making, big data analysis, and the ethical implications of AI in business. The program is designed for professionals seeking to leverage AI technologies to transform business practices and improve efficiency.
+
+ Curriculum Structure 
+These programs typically include a combination of AI and business courses. Core subjects often cover topics such as machine learning, data science, business strategy, and financial management. The programs aim to give students a broad understanding of AI applications within a business environment, while also allowing them to specialize in areas such as supply chain management, marketing analytics, and AI-driven innovation.
+
+In addition to technical courses, many programs include practical training, such as internships, real-world AI projects, and industry case studies. This helps students gain practical experience in applying AI tools and techniques to solve business challenges.
+
+ Accreditation 
+Many universities offering these degrees hold accreditation from recognized educational bodies, ensuring that their programs meet rigorous academic and industry standards. For example, ESADE and IE University are both accredited by institutions such as EQUIS and AACSB, which evaluate the quality of business education programs. Similarly, Arizona State University holds accreditation for its graduate programs in business and technology.

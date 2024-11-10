@@ -1,0 +1,41 @@
+InciWeb is an interagency all-risk incident web information management system provided by the United States Forest Service released in 2004.. Alexa Internet.  It was originally developed for wildland fire emergencies, but can be also used for other emergency incidents (natural disasters, such as earthquakes, floods, hurricanes, and tornadoes).About Us, National Geographic Area Coordination Centers (GACC).
+
+Introduction
+300px|right| InciWeb photo of the 2015 North Fire in California
+It was developed with two primary missions:
+
+ 1. Provide the public a single source of incident related information 
+ 2. Provide a standardized reporting tool for the Public Affairs communityAbout this Site. InciWeb. Retrieved 2009-08-30.
+
+Official announcements include evacuations, road closures, news releases, maps, photographs, and basic info and current situation about the incident.
+
+Incident information can be accessed by:
+ web browser at http://inciweb.nwcg.gov
+ Twitterinciweb on Twitter
+ RSS web feed
+
+Technical 
+The original application was hosted at the United States Forest Service - Wildland Fire Training and Conference Center, at McClellan Airfield, California, comprising three servers:
+Database server
+Administrative server
+Load balancer for the public content which routes traffic to a pool of eight servers.
+
+Web traffic averages 2 million plus hits daily during the fire season with the ability to handle 3.5 million hits.
+
+The servers were moved to the National information Technology Center (NITC),Enterprise IT Solutions: About NITC. Office of the Chief Information Officer, United States Department of Agriculture. Kansas City, Missouri on July 16, 2008, along with the release of version 2.0;Public home page for InciWeb. MyFireCommunity.Net - Neighborhood. The professional collaboration site for wildland fire practitioners. the current version is 2.2.
+
+Availability issues
+InciWeb was having technical difficulties due to the high volume of Internet users trying to access the site during the September–October 2006 Day Fire Case Study , Emergencity. and the Summer 2008 California wildfires.InciWeb Problems Are Bull…. June–July 2008. W.I.S.E. Fire Tracking, Western Institute for Study of the Environment. Retrieved 2009-09-02.
+
+Participating agencies
+United States Forest Service
+Bureau of Land Management
+Bureau of Indian Affairs
+Fish and Wildlife Service
+National Park Service
+National Oceanic & Atmospheric Administration
+Department of the Interior Office of Aircraft Services
+National Association of State Foresters
+United States Fire Administration
+
+These same agencies are also in the National Interagency Fire Center.

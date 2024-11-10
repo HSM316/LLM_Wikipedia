@@ -1,0 +1,65 @@
+The Winograd Schema Challenge (WSC) is a test of machine intelligence proposed by Hector Levesque, a computer scientist at the University of Toronto. Designed to be an improvement on the Turing test, it is a multiple-choice test that employs questions of a very specific structure: they are instances of what are called Winograd Schemas, named after Terry Winograd, a professor of computer science at Stanford University.
+
+On the surface, Winograd Schema questions simply require the resolution of anaphora: the machine must identify the antecedent of an ambiguous pronoun in a statement. This makes it a task of natural language processing, but Levesque argues that for Winograd Schemas, the task requires the use of knowledge and commonsense reasoning.
+
+Nuance Communications announced in July 2014 that it would sponsor an annual WSC competition, with a prize of $25,000 for the best system that could match human performance. However, the prize is no longer offered.
+
+ History 
+The Winograd Schema Challenge was proposed in the spirit of the Turing Test. Proposed by Alan Turing in 1950, the Turing Test plays a central role in the philosophy of artificial intelligence. Turing proposed that instead of debating what intelligence is, the science of AI should be concerned with demonstrating intelligent behavior, which can be tested. But the exact nature of the test Turing proposed has come under scrutiny, especially since an AI chat bot named Eugene was claimed to pass it in 2014. The Winograd Schema Challenge was proposed in part to ameliorate the problems that came to light with the nature of the programs that performed well on the test.
+
+Turing's original proposal was what he called the Imitation Game, which involves free-flowing, unrestricted conversations in English between human judges and computer programs over a text-only channel (such as teletype). In general, the machine passes the test if interrogators are not able to tell the difference between it and a human in a five-minute conversation.
+
+ Eugene Goostman 
+
+On June 7, 2014, a computer program named Eugene Goostman was declared to be the first AI to have passed the Turing Test in a competition held by the University of Reading in England. In the competition Eugene was able to convince 33% of judges that they were talking with a 13-year-old Ukrainian boy. The supposed victory of a machine that thinks aroused controversies about the Turing Test. Critics claimed that Eugene passed the test simply by fooling the judge and taking advantages of its purported identity. For example, it could easily skip some key questions by joking around and changing subjects. However, the judge would forgive its mistakes because Eugene identified as a teenager who spoke English as his second language.
+
+ Weaknesses of the Turing Test 
+
+The performance of Eugene Goostman exhibited some of the Turing Test's problems. Levesque identifies several major issues, summarized as follows:
+ Deception: The machine is forced to construct a false identity, which is not part of intelligence.
+ Conversation: A lot of interaction may qualify as "legitimate conversation"—jokes, clever asides, points of order—without requiring intelligent reasoning.
+ Evaluation: Humans make mistakes and judges often would disagree on the results.
+
+ Winograd schemas 
+The key factor in the WSC is the special format of its questions, which are derived from Winograd Schemas. Questions of this form may be tailored to require knowledge and commonsense reasoning in a variety of domains. They must also be carefully written not to betray their answers by selectional restrictions or statistical information about the words in the sentence.
+
+ Origin 
+The first cited example of a Winograd Schema (and the reason for their namesake) is due to Terry Winograd:
+
+The choices of "feared" and "advocated" turn the schema into its two instances:
+
+The question is whether the pronoun "they" refers to the city councilmen or the demonstrators, and switching between the two instances of the schema changes the answer. The answer is immediate for a human reader, but proves difficult to emulate in machines. Levesque argues that knowledge plays a central role in these problems: the answer to this schema has to do with our understanding of the typical relationships between and behavior of councilmen and demonstrators.
+
+Since the original proposition of the Winograd Schema Challenge, Ernest Davis, a professor at New York University, has compiled a list of over 140 Winograd Schemas from various sources as examples of the kinds of questions that should appear on the Winograd Schema Challenge.
+
+ Formal Description 
+A Winograd Schema Challenge question consists of three parts:
+ A sentence or brief discourse that contains the following:
+ Two noun phrases of the same semantic class (male, female, inanimate, or group of objects/people),
+ An ambiguous pronoun that may refer to either of the above noun phrases, and
+ A special word and alternate word, such that if the special word is replaced with the alternate word, the natural resolution of the pronoun changes.
+ A question asking the identity of the ambiguous pronoun, and
+ Two answer choices corresponding to the noun phrases in question.
+
+A machine will be given the problem in a standardized form which includes the answer choices, thus making it a binary decision problem.
+
+ Advantages 
+The Winograd Schema Challenge has the following purported advantages:
+ Knowledge and commonsense reasoning are required to solve them.
+ Winograd Schemas of varying difficulty may be designed, involving anything from simple cause-and-effect relationships to complex narratives of events.
+ They may be constructed to test reasoning ability in specific domains (e.g., social/psychological or spatial reasoning).
+ There is no need for human judges.
+
+ Pitfalls 
+One difficulty with the Winograd Schema Challenge is the development of the questions. They need to be carefully tailored to ensure that they require commonsense reasoning to solve. For example, Levesque gives the following example of a so-called Winograd Schema that is "too easy":
+
+The answer to this question can be determined on the basis of  selectional restrictions: in any situation, pills do not get pregnant, women do; women cannot be carcinogenic, but pills can. Thus this answer could be derived without the use of reasoning, or any understanding of the sentences' meaning—all that is necessary is data on the selectional restrictions of pregnant and carcinogenic.
+
+ Events 
+In 2016 and 2018, Nuance Communications sponsored an annual competition, offering a grand prize of $25,000. However, the prize is no longer offered.
+
+The Twelfth International Symposium on the Logical Formalizations of Commonsense Reasoning was held on March 23–25, 2015 at the AAAI Spring Symposium Series at Stanford University, with a special focus on the Winograd Schema Challenge. The organizing committee included Leora Morgenstern (Leidos), Theodore Patkos (The Foundation for Research & Technology Hellas), and Robert Sloan (University of Illinois at Chicago).
+
+The 2016 Winograd Schema Challenge was run on July 11, 2016 at IJCAI-16. There were four contestants. The first round of the contest was to solve PDPs — pronoun disambiguation problems, adapted from literary sources, not constructed as pairs of sentences. The highest score achieved was 58% correct, by Quan Liu et al, of the University of Science and Technology, China. Hence, by the rules of that challenge, no prizes were awarded, and the challenge did not proceed to the second round.  The organizing committee in 2016 was Leora Morgenstern, Ernest Davis, and Charles Ortiz.
+
+A version of the Winograd Schema Challenge is one part of the GLUE (General Language Understanding Evaluation) benchmark collection of challenges in automated natural language understanding.

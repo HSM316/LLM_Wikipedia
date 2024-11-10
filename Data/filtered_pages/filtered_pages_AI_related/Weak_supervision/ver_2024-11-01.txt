@@ -1,0 +1,85 @@
+Weak supervision is a paradigm in machine learning, the relevance and notability of which increased with the advent of large language models due to large amount of data required to train them.  It is characterized by using a combination of a small amount of human-labeled data (exclusively used in more expensive and time-consuming supervised learning paradigm), followed by a large amount of unlabeled data (used exclusively in unsupervised learning paradigm). In other words, the desired output values are provided only for a subset of the training data. The remaining data is unlabeled or imprecisely labeled. Intuitively, it can be seen as an exam and labeled data as sample problems that the teacher solves for the class as an aid in solving another set of problems. In the transductive setting, these unsolved problems act as exam questions. In the inductive setting, they become practice problems of the sort that will make up the exam. Technically, it could be viewed as performing clustering and then labeling the clusters with the labeled data, pushing the decision boundary away from high-density regions, or learning an underlying one-dimensional manifold where the data reside.
+
+ Problem 
+left|300px|Tendency for a task to employ supervised vs. unsupervised methods. Task names straddling circle boundaries is intentional. It shows that the classical division of imaginative tasks (left) employing unsupervised methods is blurred in today's learning schemes.
+
+The acquisition of labeled data for a learning problem often requires a skilled human agent (e.g. to transcribe an audio segment) or a physical experiment (e.g. determining the 3D structure of a protein or determining whether there is oil at a particular location). The cost associated with the labeling process thus may render large, fully labeled training sets infeasible, whereas acquisition of unlabeled data is relatively inexpensive. In such situations, semi-supervised learning can be of great practical value. Semi-supervised learning is also of theoretical interest in machine learning and as a model for human learning.
+
+ Technique 
+
+left|194px|An example of the influence of unlabeled data in semi-supervised learning. The top panel shows a decision boundary we might adopt after seeing only one positive (white circle) and one negative (black circle) example. The bottom panel shows a decision boundary we might adopt if, in addition to the two labeled examples, we were given a collection of unlabeled data (gray circles).
+
+More formally, semi-supervised learning assumes a set of  independently identically distributed examples  with corresponding labels  and  unlabeled examples  are processed. Semi-supervised learning combines this information to surpass the classification performance that can be obtained either by discarding the unlabeled data and doing supervised learning or by discarding the labels and doing unsupervised learning.
+
+Semi-supervised learning may refer to either transductive learning or inductive learning. The goal of transductive learning is to infer the correct labels for the given unlabeled data  only. The goal of inductive learning is to infer the correct mapping from  to .
+
+It is unnecessary (and, according to Vapnik's principle, imprudent) to perform transductive learning by way of inferring a classification rule over the entire input space; however, in practice, algorithms formally designed for transduction or induction are often used interchangeably.
+
+ Assumptions 
+In order to make any use of unlabeled data, some relationship to the underlying distribution of data must exist. Semi-supervised learning algorithms make use of at least one of the following assumptions:
+
+ Continuity / smoothness assumption 
+Points that are close to each other are more likely to share a label. This is also generally assumed in supervised learning and yields a preference for geometrically simple decision boundaries. In the case of semi-supervised learning, the smoothness assumption additionally yields a preference for decision boundaries in low-density regions, so few points are close to each other but in different classes.Chawla, N., Bowyer, K., Hall, L.O., & Kegelmeyer, W.P. (2002). SMOTE: Synthetic Minority Over-sampling Technique. ArXiv, abs/1106.1813.
+
+ Cluster assumption 
+The data tend to form discrete clusters, and points in the same cluster are more likely to share a label (although data that shares a label may spread across multiple clusters). This is a special case of the smoothness assumption and gives rise to feature learning with clustering algorithms.
+
+ Manifold assumption 
+
+The data lie approximately on a manifold of much lower dimension than the input space. In this case learning the manifold using both the labeled and unlabeled data can avoid the curse of dimensionality. Then learning can proceed using distances and densities defined on the manifold.
+
+The manifold assumption is practical when high-dimensional data are generated by some process that may be hard to model directly, but which has only a few degrees of freedom. For instance, human voice is controlled by a few vocal folds, and images of various facial expressions are controlled by a few muscles. In these cases, it is better to consider distances and smoothness in the natural space of the generating problem, rather than in the space of all possible acoustic waves or images, respectively.
+
+ History 
+The heuristic approach of self-training (also known as self-learning or self-labeling) is historically the oldest approach to semi-supervised learning, with examples of applications starting in the 1960s.
+
+The transductive learning framework was formally introduced by Vladimir Vapnik in the 1970s. cited in  Interest in inductive learning using generative models also began in the 1970s. A probably approximately correct learning bound for semi-supervised learning of a Gaussian mixture was demonstrated by Ratsaby and Venkatesh in 1995. in . Cited in 
+
+ Methods 
+
+ Generative models 
+Generative approaches to statistical learning first seek to estimate , the distribution of data points belonging to each class. The probability  that a given point  has label  is then proportional to  by Bayes' rule. Semi-supervised learning with generative models can be viewed either as an extension of supervised learning (classification plus information about ) or as an extension of unsupervised learning (clustering plus some labels).
+
+Generative models assume that the distributions take some particular form  parameterized by the vector . If these assumptions are incorrect, the unlabeled data may actually decrease the accuracy of the solution relative to what would have been obtained from labeled data alone. In:  
+However, if the assumptions are correct, then the unlabeled data necessarily improves performance.
+
+The unlabeled data are distributed according to a mixture of individual-class distributions. In order to learn the mixture distribution from the unlabeled data, it must be identifiable, that is, different parameters must yield different summed distributions. Gaussian mixture distributions are identifiable and commonly used for generative models.
+
+The parameterized joint distribution can be written as  by using the chain rule. Each parameter vector  is associated with a decision function . 
+The parameter is then chosen based on fit to both the labeled and unlabeled data, weighted by :
+
+Zhu, Xiaojin. Semi-Supervised Learning University of Wisconsin-Madison.
+
+ Low-density separation 
+Another major class of methods attempts to place boundaries in regions with few data points (labeled or unlabeled). One of the most commonly used algorithms is the transductive support vector machine, or TSVM (which, despite its name, may be used for inductive learning as well). Whereas support vector machines for supervised learning seek a decision boundary with maximal margin over the labeled data, the goal of TSVM is a labeling of the unlabeled data such that the decision boundary has maximal margin over all of the data. In addition to the standard hinge loss  for labeled data, a loss function  is introduced over the unlabeled data by letting . TSVM then selects  from a reproducing kernel Hilbert space  by minimizing the regularized empirical risk:
+
+An exact solution is intractable due to the non-convex term , so research focuses on useful approximations.
+
+Other approaches that implement low-density separation include Gaussian process models, information regularization, and entropy minimization (of which TSVM is a special case).
+
+ Laplacian regularization 
+
+Laplacian regularization has been historically approached through graph-Laplacian.
+Graph-based methods for semi-supervised learning use a graph representation of the data, with a node for each labeled and unlabeled example. The graph may be constructed using domain knowledge or similarity of examples; two common methods are to connect each data point to its  nearest neighbors or to examples within some distance . The weight  of an edge between  and  is then set to .
+
+Within the framework of manifold regularization,M. Belkin, P. Niyogi, V. Sindhwani. On Manifold Regularization. AISTATS 2005. the graph serves as a proxy for the manifold. A term is added to the standard Tikhonov regularization problem to enforce smoothness of the solution relative to the manifold (in the intrinsic space of the problem) as well as relative to the ambient input space. The minimization problem becomes
+
+where  is a reproducing kernel Hilbert space and  is the manifold on which the data lie. The regularization parameters  and  control smoothness in the ambient and intrinsic spaces respectively. The graph is used to approximate the intrinsic regularization term. Defining the graph Laplacian  where  and  is the vector , we have
+
+.
+
+The graph-based approach to Laplacian regularization is to put in relation with finite difference method.
+
+The Laplacian can also be used to extend the supervised learning algorithms: regularized least squares and support vector machines (SVM) to semi-supervised versions Laplacian regularized least squares and Laplacian SVM.
+
+ Heuristic approaches 
+Some methods for semi-supervised learning are not intrinsically geared to learning from both unlabeled and labeled data, but instead make use of unlabeled data within a supervised learning framework. For instance, the labeled and unlabeled examples  may inform a choice of representation, distance metric, or kernel for the data in an unsupervised first step. Then supervised learning proceeds from only the labeled examples. In this vein, some methods learn a low-dimensional representation using the supervised data and then apply either low-density separation or graph-based methods to the learned representation. Iteratively refining the representation and then performing semi-supervised learning on said representation may further improve performance.
+
+Self-training is a wrapper method for semi-supervised learning. First a supervised learning algorithm is trained based on the labeled data only. This classifier is then applied to the unlabeled data to generate more labeled examples as input for the supervised learning algorithm. Generally only the labels the classifier is most confident in are added at each step. In natural language processing, a common self-training algorithm is the Yarowsky algorithm for problems like word sense disambiguation, accent restoration, and spelling correction.
+
+Co-training is an extension of self-training in which multiple classifiers are trained on different (ideally disjoint) sets of features and generate labeled examples for one another.
+
+ In human cognition 
+Human responses to formal semi-supervised learning problems have yielded varying conclusions about the degree of influence of the unlabeled data. More natural learning problems may also be viewed as instances of semi-supervised learning. Much of human concept learning involves a small amount of direct instruction (e.g. parental labeling of objects during childhood) combined with large amounts of unlabeled experience (e.g. observation of objects without naming or counting them, or at least without feedback).
+
+Human infants are sensitive to the structure of unlabeled natural categories such as images of dogs and cats or male and female faces. Infants and children take into account not only unlabeled examples, but the sampling process from which labeled examples arise.

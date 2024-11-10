@@ -1,0 +1,9 @@
+The phosphotransferases system (PTS-GFL) superfamily is a superfamily of phosphotransferase enzymes that facilitate the transport of glucose, glucitol (G), fructose (F) and lactose (L). Classification has been established through phylogenic analysis and bioinformatics.
+
+The bacterial phosphoenolpyruvate:sugar phosphotransferase system (PTS) transports and phosphorylates its sugar substrates in a single energy-coupled step.  This transport process is dependent on several cytoplasmic phosphoryl transfer proteins - Enzyme I (I), HPr, Enzyme IIA (IIA), and Enzyme IIB (IIB)) as well as the integral membrane sugar permease (IIC).  The PTS Enzyme II complexes are derived from independently evolving 4 PTS Enzyme II complex superfamilies, that include the (1) Glucose (Glc),(2) Mannose (Man), (3) Ascorbate-Galactitol (Asc-Gat) and (4) Dihydroxyacetone (Dha) superfamilies.
+
+The four families that make up the PTS-GFL superfamily include:
+ 4.A.1 – The PTS Glucose-Glucoside (Glc) Family
+ 4.A.2 – The PTS Fructose-Mannitol (Fru) Family
+ 4.A.3 – The PTS Lactose-N,N'-Diacetylchitobiose-β-glucoside (Lac) Family
+ 4.A.4 – The PTS Glucitol (Gut) Family

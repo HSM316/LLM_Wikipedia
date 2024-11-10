@@ -1,0 +1,63 @@
+Amazon Rekognition is a cloud-based software as a service (SaaS) computer vision platform that was launched in 2016. It has been sold to, and used by, a number of United States government agencies, including U.S. Immigration and Customs Enforcement (ICE) and Orlando, Florida police, as well as private entities.
+
+ Capabilities 
+Rekognition provides a number of computer vision capabilities, which can be divided into two categories: Algorithms that are pre-trained on data collected by Amazon or its partners, and algorithms that a user can train on a custom dataset.
+
+As of July 2019, Rekognition provides the following computer vision capabilities.
+
+ Pre-trained algorithms 
+
+ Celebrity recognition in images
+ Facial attribute detection in images, including gender, age range, emotions (e.g. happy, calm, disgusted), whether the face has a beard or mustache, whether the face has eyeglasses or sunglasses, whether the eyes are open, whether the mouth is open, whether the person is smiling, and the location of several markers such as the pupils and jaw line.
+ People Pathing enables tracking of people through a video. An advertised use-case of this capability is to track sports players for post-game analysis.
+ Text detection and classification in images
+ Unsafe visual content detection
+
+ Algorithms that a user can train on a custom dataset 
+
+ SearchFaces enables users to import a database of images with pre-labeled faces, to train a machine learning model on this database, and to expose the model as a cloud service with an API. Then, the user can post new images to the API and receive information about the faces in the image. The API can be used to expose a number of capabilities, including identifying faces of known people, comparing faces, and finding similar faces in a database.
+ Face-based user verification
+
+ History and use 
+
+2017
+In late 2017, the Washington County, Oregon Sheriff's Office began using Rekognition to identify suspects' faces. Rekognition was marketed as a general-purpose computer vision tool, and an engineer working for Washington County decided to use the tool for facial analysis of suspects. Rekognition was offered to the department for free, and Washington County became the first US law enforcement agency known to use Rekognition. In 2018, the agency logged over 1,000 facial searches. The county, according to the Washington Post, by 2019 was paying about $7 a month for all of its searches. The relationship was unknown to the public until May 2018. In 2018, Rekognition was also used to help identify celebrities during a royal wedding telecast.
+
+2018
+In April 2018, it was reported that FamilySearch was using Rekognition to enable their users to "see which of their ancestors they most resemble based on family photographs". In early 2018, the FBI also began using it as a pilot program for analyzing video surveillance.
+
+In May 2018, it was reported by the ACLU that Orlando, Florida was running a pilot using Rekognition for facial analysis in law enforcement, with that pilot ending in July 2019. After the report, on June 22, 2018, Gizmodo reported that Amazon workers had written a letter to CEO Jeff Bezos requesting he cease selling Rekognition to US law enforcement, particularly ICE and Homeland Security. A letter was also sent to Bezos by the ACLU. On June 26, 2018, it was reported that the Orlando police force had ceased using Rekognition after their trial contract expired, reserving the right to use it in the future. The Orlando Police Department said that they had "never gotten to the point to test images" due to old infrastructure and low bandwidth.
+
+In July 2018, the ACLU released a test showing that Rekognition had falsely matched 28 members of Congress with mugshot photos, particularly Congresspeople of color. 25 House members afterwards sent a letter to Bezos, expressing concern about Rekognition. Amazon responded saying the Rekognition test had generated 80 percent confidence, while it recommended law enforcement only use matches rated at 99 percent confidence. The Washington Post states that Oregon instead has officers pick a "best of five" result, instead of adhering to the recommendation.
+
+In September 2018, it was reported that Mapillary was using Rekognition to read the text on parking signs (e.g. no stopping, no parking, or specific parking hours) in cities.
+
+In October 2018, it was reported that Amazon had earlier that year pitched Rekognition to U.S. Immigration and Customs Enforcement agency. Amazon defended government use of Rekognition.
+ 
+On December 1, 2018, it was reported that 8 Democratic lawmakers had said in a letter that Amazon had "failed to provide sufficient answers" about Rekognition, writing that they had "serious concerns that this type of product has significant accuracy issues, places disproportionate burdens on communities of color, and could stifle Americans' willingness to exercise their First Amendment rights in public."
+
+2019
+In January 2019, MIT researchers published a peer-reviewed study asserting that Rekognition had more difficulty in identifying dark-skinned females than competitors such as IBM and Microsoft. In the study, Rekognition misidentified darker-skinned women as men 31% of the time, but made no mistakes for light-skinned men. Amazon called the report "misinterpreted results" of the research with an improper "default confidence threshold."
+
+In January 2019, Amazon's shareholders "urged Amazon to stop selling Rekognition software to law enforcement agencies." Amazon in response defended its use of Rekognition, but supported new federal oversight and guidelines to "make sure facial recognition technology cannot be used to discriminate." In February 2019, it was reported that Amazon was collaborating with the National Institute of Standards and Technology (NIST) on developing standardized tests to improve accuracy and remove bias with facial recognition.
+
+In March 2019, an open letter regarding Rekognition was sent by a group of prominent AI researchers to Amazon, criticizing its sale to law enforcement with around 50 signatures.
+
+In April 2019, Amazon was told by the Securities and Exchange Commission that they had to vote on two shareholder proposals seeking to limit Rekognition. Amazon argued that the proposals were an "insignificant public policy issue for the Company" not related to Amazon's ordinary business, but their appeal was denied. The vote was set for May. The first proposal was tabled by shareholders. On May 24, 2019, 2.4% of shareholders voted to stop selling Rekognition to government agencies, while a second proposal calling for a study into Rekognition and civil rights had 27.5% support.
+ 
+In August 2019, the ACLU again used Rekognition on members of government, with 26 of 120 lawmakers in California flagged as matches to mugshots. Amazon stated the ACLU was "misusing" the software in the tests, by not dismissing results that did not meet Amazon's recommended accuracy threshold of 99%. By August 2019, there had been protests against ICE's use of Rekognition to surveil immigrants.
+
+In March 2019, Amazon announced a Rekognition update that would improve emotional detection, and in August 2019, "fear" was added to emotions that Rekognition could detect.
+
+2020
+In June 2020, Amazon announced it was implementing a one-year moratorium on police use of Rekognition, in response to the George Floyd protests.
+
+ 2024 
+The Department of Justice disclosed that the FBI is initiating the use of Amazon Rekognition. The DOJ's AI inventory revealed the FBI's "Project Tyr" aims to customize Rekognition to identify nudity, weapons, explosives, and other information from lawfully acquired media. 
+
+ Controversy regarding facial analysis 
+
+ Racial and gender bias 
+In 2018, MIT researchers Joy Buolamwini and Timnit Gebru published a study called Gender Shades. In this study, a set of images was collected, and faces in the images were labeled with face position, gender, and skin tone information. The images were run through SaaS facial recognition platforms from Face++, IBM, and Microsoft. In all three of these platforms, the classifiers performed best on male faces (with error rates on female faces being 8.1% to 20.6% higher than error rates on male faces), and they performed worst on dark female faces (with error rates ranging from 20.8% to 30.4%). The authors hypothesized that this discrepancy is due principally to Megvii, IBM, and Microsoft having more light males than dark females in their training data, i.e. dataset bias.
+
+In January 2019, researchers Inioluwa Deborah Raji and Joy Buolamwini published a follow-up paper that ran the experiment again a year later, on the latest versions same three SaaS facial recognition platforms, plus two additional platforms: Kairos, and Amazon Rekognition. While the systems' overall error-rates improved over the previous year, all five of the systems again performed better on male faces than on dark female faces.

@@ -1,0 +1,21 @@
+A data pack (or fact pack) is a pre-made database that can be fed to a software, such as software agents, game, Internet bots or chatterbots, to teach information and facts, which it can later look up. In other words, a data pack can be used to feed minor updates into a system.
+
+ Introduction 
+Common data packs may include abbreviations, acronyms, dictionaries, lexicons and technical data, such as country codes, RFCs, filename extensions, TCP and UDP port numbers, country calling codes, and so on.
+
+Data packs may come in formats of CSV and SQL that can easily be parsed or imported into a database management system.
+
+The database may consist of a key-value pair, like an association list.
+
+Data packs are commonly used within the video game industry to provide minor updates within their games. When a user downloads an update for a game they will be downloading loads of data packs which will contain updates for the game such as minor bug fixes or additional content. An example of a data pack used to update a game can be found on the references.
+
+ Example 
+ Country  Capital Denmark  Copenhagen England  London Finland  Helsinki Example  Example France  Paris Germany  Berlin Italy  Rome Norway  Oslo Russia  Moscow Spain  Madrid Sweden  Stockholm
+
+SELECT capital FROM countries WHERE country='Sweden'
+
+ Data pack 
+A data pack DataPack Definition is similar to a data packet it contains loads of information (data) and stores it within a pack where the data can be compressed to reduce its file size. Only certain programs can read a data pack therefore when the data is packed it is vital to know whether the receiving program is able to unpack the data. An example of data packs which are able to effective deliver information can be found on the reference page.
+
+ Mobile data packs 
+When you refer to the word data pack it can come in many forms such as a mobile data pack. A mobile data pack refers to an add-on which can enable you to boost the amount of data which you can use on your mobile phone. The rate at which you use your data can also be monitored, so you know how much data you have left. Mobile data is a service which provides a similar service to Wi-Fi and allows you to connect to the Internet. So the purpose of a data pack is to increase the amount of data that your mobile has access to. An example of a mobile data pack can be found on the references.

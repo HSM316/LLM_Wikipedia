@@ -1,0 +1,40 @@
+The freight technology sector, also known as FreightTech, refers to software companies and technologies which assist in supply chain management and the movement of freight. In the five years following 2014, investment in FreightTech companies grew from $118 million to $3 billion per year.
+
+ Disruption of traditional logistics and supply chain management 
+The shipping and logistics industry has long been viewed as conservative and slow-to-change, in part due to complex relationships within global shipping and transportation networks, difficult documentation and customs requirements, lack of transparency among involved parties, and obstacles to adapting quickly to sudden economic changes.
+
+Recent developments in freight technology are working to modernize and simplify freight transport. According to a report from the U.S. Department of Transportation, intelligent freight technologies have multifaceted benefits in shipping and logistics. These include increased operational flexibility and efficiency due to better planning and schedule adherence, better utilization of people and equipment, reduction of non-productive waiting times, shorter processing times, and increased shipper confidence.
+
+Transactional application programming interfaces (API) and distributed ledger technology are expanding in the shipping and logistics sector to reduce extensive paperwork, monitor conditions and location of freight and goods in transport and make this information available to involved parties, and increase transparency across the supply chain.
+
+ Truck freight 
+
+The first steps to digitization in trucking came in the form of digital freight exchanges such as Teleroute and TIMOCOM.  Greater efficiency in trucking is being achieved through intelligent freight technology such as automated interfaces that can help truckers and regulatory bodies reduce stops at weigh stations and time spent at border checkpoints. This improves schedule adherence, reduces administrative burdens, and increases fuel efficiency by minimizing time spent idling. Mobile tracking programs can also reduce theft and loss of cargo by recording instances where trailer doors are opened outside of approved areas (geo-fences) and alerting authorities. Growing automation of quoting and booking of truckload shipments and increased automation of matching trucks with appropriate loads in a timely manner is also working to maximize efficiency for shippers and consumers.
+
+Due to the relatively short life cycle of three to four years for commercial trucks, implementation of new interfaces and freight technologies has progressed more quickly in trucking than in other sectors. Compared with other modes of transport such as aviation and rail, however, driverless technologies for road transport have lagged behind due to road environments being more complex than separated spaces for rail and air transport.
+
+ Air freight 
+
+Freight technology in air cargo is already critically important in cold chain management for sensitive goods such as agricultural products, vaccines, and medications. Monitoring in the form of data loggers can record temperature, light, humidity, and GPS location to show whether goods have been improperly cooled, handled, or tampered with. It is estimated that billions of dollars in revenue are lost by cargo companies annually due to dispute resolution for shipment delays and lost and damaged goods.
+
+The world’s first blockchain-based system for streamlining air cargo costing, billing, and reconciliation was announced at the 2019 IATA World Cargo Symposium.
+
+ Rail freight 
+
+The Freight Technology Group, responsible for identifying relevant technologies for the freight sector in the UK, has identified three key technical innovations already in use in rail freight. These include timetable advisory systems which allow drivers to track train progress against timetables via software hosted on tablets, freight collaborative decision-making systems which offer real-time information on arrivals of freight services, and mobile consisting applications which reduce the amount of information sent manually to relevant parties and authorities by collecting information and transmitting it directly.
+
+However, advancements in rail freight technology have progressed more slowly than in other sectors due to the decades-long life cycles of locomotives and railcars and the lack of power supply in freight cars.
+
+A $10 billion upgrade to the North American rail system was mandated by Congress to include automated safety overrides after a 2008 commuter train accident, laying the groundwork for autonomous rails in the United States.
+
+In 2019, mining group Rio Tinto launched the world’s first autonomous heavy-haul freight railway trains in Western Australia to deliver ore from mines to ports.
+
+ Sea freight 
+
+The growing number of smart ports around the world are increasing capacity and efficiency for shippers, ports, and freight forwarding partners, such as trucking carriers. Reductions in labour and machinery costs can be seen at ports thanks to improvements in automated and semi-automated cranes, which reduce the need for yard transfer vehicles.
+
+In 2018, shipping conglomerate Maersk partnered with IBM to create TradeLens, a platform for sharing and streamlining shipping information across shipping partners, businesses, and different authorities. By 2019, the platform covered nearly half of the world’s shipments of cargo containers.
+
+ Intermodal freight 
+
+Freight that is shipped using multiple modes of transport is called intermodal freight. Freight technology plays a pivotal role in intermodal freight transport by streamlining communication, documentation, and dispute resolution across various industry players as cargo changes hands. Freight technology offers a way to increase transparency across industry players at each step of the supply chain. Smart contracts, for example, can use information collected by data loggers, such as temperature data on cold chain shipments, to resolve or dispute a contract depending on whether the agreed upon terms of shipping have been followed.

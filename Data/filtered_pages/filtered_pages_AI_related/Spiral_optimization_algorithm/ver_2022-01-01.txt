@@ -1,0 +1,50 @@
+The spiral shares the global (blue) and intensive (red) behavior
+In mathematics, the spiral optimization (SPO) algorithm is a metaheuristic inspired by spiral phenomena in nature. 
+
+The first SPO algorithm was proposed for two-dimensional unconstrained optimization
+based on two-dimensional spiral models. This was extended to n-dimensional problems by generalizing the two-dimensional spiral model to an n-dimensional spiral model.
+There are effective settings for the SPO algorithm: the periodic descent direction setting
+and the convergence setting.
+
+ Metaphor 
+The motivation for focusing on spiral phenomena was due to the insight that the dynamics that generate logarithmic spirals share the diversification and intensification behavior. The diversification behavior can work for a global search (exploration) and the intensification behavior enables an intensive search around a current found good solution (exploitation).
+
+ Algorithm 
+Spiral Optimization (SPO) algorithm
+The SPO algorithm is a multipoint search algorithm that has no objective function gradient, which uses multiple spiral models that can be described as deterministic dynamical systems. As search points follow logarithmic 
+spiral trajectories towards the common center, defined as the current best point, better solutions can be found and the common center can be updated.
+
+The general SPO algorithm for a minimization problem under the maximum iteration  (termination criterion) is as follows:
+
+ 0) Set the number of search points  and the maximum iteration number .
+ 1) Place the initial search points  and determine the center , ,and then set .
+ 2) Decide the step rate  by a rule.
+ 3) Update the search points: 
+ 4) Update the center:  where .
+ 5) Set . If  is satisfied then terminate and output . Otherwise, return to Step 2).
+
+ Setting 
+The search performance depends on setting the composite rotation matrix , the step rate , and the initial points . 
+The following settings are new and effective.
+
+ Setting 1 (Periodic Descent Direction Setting) 
+This setting is an effective setting for high dimensional problems under the maximum iteration . The conditions on  and  together ensure that the spiral models generate descent directions periodically. The condition of  works to utilize the periodic descent directions under the search termination .
+
+ Set  as follows: where  is the  identity matrix and  is the  zero vector.
+ Place the initial points   at random to satisfy the following condition:
+
+where . Note that this condition is almost all satisfied by a random placing and thus no check is actually fine.
+ Set  at Step 2) as follows: where a sufficiently small  such as  or .
+
+ Setting 2 (Convergence Setting) 
+This setting ensures that the SPO algorithm converges to a stationary point under the maximum iteration . The settings of  and the initial points  are the same with the above Setting 1. The setting of  is as follows.
+ Set  at Step 2) as follows: where  is an iteration when the center is newly updated at Step 4) and  such as . Thus we have to add the following rules about  to the Algorithm:  
+•(Step 1) .
+•(Step 4) If  then .
+
+ Future works 
+ The algorithms with the above settings are deterministic. Thus, incorporating some random operations make this algorithm powerful for global optimization. Cruz-Duarte et al.Cruz-Duarte, J. M., Martin-Diaz, I., Munoz-Minjares, J. U., Sanchez-Galindo, L. A., Avina-Cervantes, J. G., Garcia-Perez, A., & Correa-Cely, C. R. (2017). Primary study on the stochastic spiral optimization algorithm. 2017 IEEE International Autumn Meeting on Power, Electronics and Computing (ROPEC), 1–6. https://doi.org/10.1109/ROPEC.2017.8261609  demonstrated it by including stochastic disturbances in spiral searching trajectories. However, this door remains open to further studies.
+ To find an appropriate balance between diversification and intensification spirals depending on the target problem class (including ) is important to enhance the performance.
+
+ Extended works 
+Many extended studies have been conducted on the SPO due to its simple structure and concept; these studies have helped improve its global search performance and proposed novel applications.

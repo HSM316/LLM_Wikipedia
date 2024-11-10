@@ -1,0 +1,24 @@
+500px|A 3D selfie in 1:20 scale printed by Shapeways using gypsum-based printing, from models reconstructed by Madurodam from 2D pictures of patrons taken at its Fantasitron photo booth.|alt=|center
+
+Fantasitron 3D photo booth at Madurodam
+
+3D body scanning is an applicationParker, C.J., Gill, S. and Hayes, S.G. (2017), "3D Body Scanning has Suitable Reliability: An Anthropometric Investigation for Garment Construction", in D'Apuzzo, N. (Ed.), Proceedings of 3DBODY.TECH 2017 – 8th International Conference and Exhibition on 3D Body Scanning and Processing Technologies, Montreal QC, Canada, 11–12 Oct. 2017, Hometrica Consulting – Dr. Nicola D'Apuzzo, Ascona, Switzerland, pp. 298–305. of various technologies such as structured-light 3D scanner, 3D depth sensing, stereoscopic vision and others for ergonomic and anthropometric investigation of the human form as a point-cloud. The technology and practice within research has found 3D body scanning measurement extraction methodologies to be comparable to traditional anthropometric measurement techniques.Simmons, K.P. and Istook, C.L. (2003), 'Body measurement techniques: Comparing 3D body-scanning and anthropometric methods for apparel applications ', Journal of Fashion Marketing and Management: An International Journal, MCB UP Ltd, Vol. 7 No. 3, pp. 306–332.Bougourd, J.P., Dekker, L., Grant Ross, P. and Ward, J.P. (2000), 'A Comparison of Women's Sizing by 3D Electronic Scanning and Traditional Anthropometry', Journal of The Textile Institute, Vol. 91 No. 2, pp. 163–173.
+
+Applications
+While the technology is still developing in its application, the technology has regularly been applied in the areas of:
+ Adapted performance sportswear
+ Fashion design (e.g. garments, accessories)
+ 3D printed figurines (3D selfies)
+ 3D morphometric evaluation (i.e. for weight-loss purposes)
+ Ergonomic body measurement
+ 3D body measurement
+ Body shape classification
+ Comparison of changes in body positions 
+
+However, despite the potential for the technology to have an impact in made-to-measure and mass customisation of items with ergonomic properties, 3D body scanning has yet to reach an early adopter or early majority stage of innovation diffusion. This in part due to the lack of ergonomic theory relating to how to identify key landmarks on the body morphology. The suitability of 3D body scanning is also context dependent as the measurements taken and the precision of the machine  are highly relative to the task in hand rather than being an absolute. Additionally, a key limitation of 3D body scanning has been the upfront cost of the equipment and the required skills by which to collect data and apply it to scientific and technical fields. However, the utilization of depth cameras on recent smartphones helps reduce the cost of 3D scans. One example of this is the recent free face scan app available on the Apple App Store. For detailed investigation of the changes of the body dimensions a high speed (4D) scanning systems were developed by 3dMD and Instituto de Biomemechanics de Valencia (IBV). Scanning of moving humans with clothing at high resolution (usually 10–60 Hz) is technically possible, as reported multiple times by Chris Lane, Alfredo Ballester and Yordan Kyosev, but the analysis and application of this data seems to be challenging. Main worldwide events for scientific exchange in the area of 3D and 4D body scanning are the annual 3DBody.Tech Conference and Clothing-Body-Interaction conference 
+
+Scanning protocol
+Although the process has been established for a considerable amount of time with international conferences held annually for industry and academics (e.g. the International Conference and Exhibition on 3D Body Scanning Technologies), the protocol and process of how to scan individuals is yet to be universally formalised.Chi, L. and Kennon, R. (2006), 'Body scanning of dynamic posture', International Journal of Clothing Science and Technology, Vol. 18 No. 3, pp. 166–178. However, earlier research 
+has proposed a standardised protocol of body scanning based on research and practice that demonstrates how non-standardised protocol and posture significantly influences body measurements;Mckinnon, L. and Istook, C. L. (2002), "Body scanning: The effects of subject respiration and foot positioning on the data integrity of scanned measurements", Journal of Fashion Marketing and Management, Vol. 6 No. 2, pp. 103–121. including the hip.
+
+The standard scanning protocol, however, produces no measurements that fail to meet the precision of manual measurement methods or ISO 20685:2010ISO 20685:2010 tolerances. But through consecutive scanning and a free algorithm called GRYPHON, 97.5% of measurements meet ISO 20685:2010; a precision increase of 327%.

@@ -1,0 +1,52 @@
+Inception is a family of convolutional neural network (CNN) for computer vision, introduced by researchers at Google in 2014 as GoogLeNet (later renamed Inception v1). The series was historically important as an early CNN that separates the stem (data ingest), body (data processing), and head (prediction), an architectural design that persists in all modern CNN.
+Inception-v3 model.
+
+ Version history 
+
+ Inception v1 
+377x377px|GoogLeNet architecture.
+In 2014, a team at Google developed the GoogLeNet architecture, an instance of which won the ImageNet Large-Scale Visual Recognition Challenge 2014 (ILSVRC14).Official repo of Inception V1 on Kaggle, published by Google.
+
+The name came from the LeNet of 1998, since both LeNet and GoogLeNet are CNNs. They also called it "Inception" after a "we need to go deeper" internet meme, a phrase from Inception (2010) the film. Because later, more versions were released, the original Inception architecture was renamed again as "Inception v1".
+
+The models and the code were released under Apache 2.0 license on GitHub.An individual Inception module. On the left is a standard module, and on the right is a dimension-reduced module.
+A single Inception dimension-reduced module.
+The Inception v1 architecture is a deep CNN composed of 22 layers. Most of these layers were "Inception modules". The original paper stated that Inception modules are a "logical culmination" of Network in Network and (Arora et al, 2014).
+
+Since Inception v1 is deep, it suffered from the vanishing gradient problem. The team solved it by using two "auxiliary classifiers", which are linear-softmax classifiers inserted at 1/3-deep and 2/3-deep within the network, and the loss function is a weighted sum of all three:
+
+These were removed after training was complete. This was later solved by the ResNet architecture.
+
+The architecture consists of three parts stacked on top of one another:
+
+ The stem (data ingestion): The first few convolutional layers perform data preprocessing to downscale images to a smaller size.
+ The body (data processing): The next many Inception modules perform the bulk of data processing.
+ The head (prediction): The final fully-connected layer and softmax produces a probability distribution for image classification.
+
+This structure is used in most modern CNN architectures.
+
+ Inception v2 
+Inception v2 was released in 2015, in a paper that is more famous for proposing batch normalization.Official repo of Inception V2 on Kaggle, published by Google. It had 13.6 million parameters.
+
+It improves on Inception v1 by adding batch normalization, and removing dropout and local response normalization which they found became unnecessary when batch normalization is used. 
+
+ Inception v3 
+Inception v3 was released in 2016.Official repo of Inception V3 on Kaggle, published by Google. It improves on Inception v2 by using factorized convolutions. 
+
+As an example, a single 5×5 convolution can be factored into 3×3 stacked on top of another 3×3. Both has a receptive field of size 5×5. The 5×5 convolution kernel has 25 parameters, compared to just 18 in the factorized version. Thus, the 5×5 convolution is strictly more powerful than the factorized version. However, this power is not necessarily needed. Empirically, the research team found that factorized convolutions help.
+
+It also uses a form of dimension-reduction by concatenating the output from a convolutional layer and a pooling layer. As an example, a tensor of size  can be downscaled by a convolution with stride 2 to , and by maxpooling with pool size  to . These are then concatenated to .
+
+Other than this, it also removed the lowest auxiliary classifier during training. They found that the auxiliary head worked as a form of regularization. 
+
+They also proposed label-smoothing regularization in classification. For an image with label , instead of making the model to predict the probability distribution , they made the model predict the smoothed distribution  where  is the total number of classes. 
+
+ Inception v4 
+In 2017, the team released Inception v4, Inception ResNet v1, and Inception ResNet v2.
+
+Inception v4 is an incremental update with even more factorized convolutions, and other complications that were empirically found to improve benchmarks.
+
+Inception ResNet v1 and v2 are both modifications of Inception v4, where residual connections are added to each Inception module, inspired by the ResNet architecture.
+
+ Xception 
+Xception ("Extreme Inception") was published in 2017. It is a linear stack of depthwise separable convolution layers with residual connections. The design was proposed on the hypothesis that in a CNN, the cross-channels correlations and spatial correlations in the feature maps can be entirely decoupled.

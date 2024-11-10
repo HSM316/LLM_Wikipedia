@@ -1,0 +1,29 @@
+DADiSP (Data Analysis and Display, pronounced day-disp) is a numerical computing environment developed by DSP Development Corporation which allows one to display and manipulate data series, matrices and images with an interface similar to a spreadsheet. DADiSP is used in the study of signal processing, numerical analysis, statistical and physiological data processing.
+
+ Interface 
+
+DADiSP is designed to perform technical data analysis in a spreadsheet like environment. However, unlike a typical business spreadsheet that operates on a table of cells each of which contain single scalar values, a DADiSP Worksheet consists of multiple interrelated windows where each window contains an entire series or multi-column matrix. A window not only stores the data, but also displays the data in several interactive forms, including 2D graphs, XYZ plots, 3D surfaces, images and numeric tables. Like a traditional spreadsheet, the windows are linked such that a change to the data in one window automatically updates all dependent windows both numerically and graphically.
+Users manipulate data primarily through windows. A DADiSP window is normally referred to by the letter "W" followed by a window number, as in "W1". For example, the formula W1: 1..3 assigns the series values {1, 2, 3} to "W1". The formula W2: W1*W1 sets a second window to compute the square of each value in "W1" such that "W2" will contain the series {1, 4, 9}. If the values of "W1" change to {3, 5, 2, 4}, the values of "W2" automatically update to {9, 25, 4, 16}.
+
+ Programming language 
+
+DADiSP includes a series based programming language called SPL (Series Processing Language) used to implement custom algorithms. SPL has a C/C++ like syntax and is incrementally compiled into intermediate bytecode, which is executed by a virtual machine. SPL supports both standard variables assigned with = and "hot" variables assigned with :=. For example, the statement A = 1..3 assigns the series {1, 2, 3} to the standard variable "A". The square of the values can be assigned with B = A * A. Variable "B" contains the series {1, 4, 9}. If "A" changes, "B" does not change because "B" preserves the values as assigned without regard to the future state of "A". However, the statement A := 1..3 creates a "hot" variable. A hot variable is analogous to a window, except hot variables do not display their data. The assignment B := A * A computes the square of the values of "A" as before, but now if "A" changes, "B" automatically updates. Setting A = {3, 5, 2, 4} causes "B" to automatically update with {9, 25, 4, 16}.
+
+ History 
+
+DADiSP was originally developed in the early 1980s as part of a research project at MIT to explore the aerodynamics of Formula One racing cars. The original goal of the project was to enable researchers to quickly explore data analysis algorithms without the need for traditional programming.
+
+ Version history 
+
+ DADiSP 6.7 B02, Jan 2017
+ DADiSP 6.7 B01, Oct 2015
+ DADiSP 6.5 B05, Dec 2012
+ DADiSP 6.5, May 2010 
+ DADiSP 6.0, Sep 2002
+ DADiSP 5.0, Oct 2000
+ DADiSP 4.1, Dec 1997
+ DADiSP 4.0, Jul 1995
+ DADiSP 3.01, Feb 1993
+ DADiSP 2.0, Feb 1992
+ DADiSP 1.05, May 1989
+ DADiSP 1.03, Apr 1987

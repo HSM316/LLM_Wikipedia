@@ -1,0 +1,81 @@
+In the field of statistical learning theory, matrix regularization generalizes notions of vector regularization to cases where the object to be learned is a matrix. The purpose of regularization is to enforce conditions, for example sparsity or smoothness, that can produce stable predictive functions. For example, in the more common vector framework, Tikhonov regularization optimizes over
+
+to find a vector  that is a stable solution to the regression problem. When the system is described by a matrix rather than a vector, this problem  can be written as
+
+where the vector norm enforcing a regularization penalty on  has been extended to a matrix norm on .
+
+Matrix regularization has applications in matrix completion, multivariate regression, and multi-task learning. Ideas of feature and group selection can also be extended to matrices, and these can be generalized to the nonparametric case of multiple kernel learning.
+
+ Basic definition 
+
+Consider a matrix  to be learned from a set of examples, , where  goes from  to , and  goes from  to . Let each input matrix  be , and let  be of size . A general model for the output  can be posed as
+
+where the inner product is the Frobenius inner product. For different applications the matrices  will have different forms, but for each of these the optimization problem to infer  can be written as
+
+where  defines the empirical error for a given , and  is a matrix regularization penalty. The function  is typically chosen to be convex and is often selected to enforce sparsity (using -norms) and/or smoothness (using -norms). Finally,  is in the space of matrices  with Frobenius inner product .
+
+ General applications 
+
+ Matrix completion 
+
+In the problem of matrix completion, the matrix  takes the form
+
+where  and  are the canonical basis in  and . In this case the role of the Frobenius inner product is to select individual elements  from the matrix . Thus, the output  is a sampling of entries from the matrix .
+
+The problem of reconstructing  from a small set of sampled entries is possible only under certain restrictions on the matrix, and these restrictions can be enforced by a regularization function. For example, it might be assumed that  is low-rank, in which case the regularization penalty can take the form of a nuclear norm.
+
+where , with  from  to , are the singular values of .
+
+ Multivariate regression 
+
+Models used in multivariate regression are parameterized by a matrix of coefficients. In the Frobenius inner product above, each matrix  is
+
+such that the output of the inner product is the dot product of one row of the input with one column of the coefficient matrix. The familiar form of such models is
+
+Many of the vector norms used in single variable regression can be extended to the multivariate case. One example is the squared Frobenius norm, which can be viewed as an -norm acting either entrywise, or on the singular values of the matrix:
+
+In the multivariate case the effect of regularizing with the Frobenius norm is the same as the vector case; very complex models will have larger norms, and, thus, will be penalized more.
+
+ Multi-task learning 
+
+The setup for multi-task learning is almost the same as the setup for multivariate regression. The primary difference is that the input variables are also indexed by task (columns of ). The representation with the Frobenius inner product is then
+
+The role of matrix regularization in this setting can be the same as in multivariate regression, but matrix norms can also be used to couple learning problems across tasks. In particular, note that for the optimization problem
+
+the solutions corresponding to each column of  are decoupled. That is, the same solution can be found by solving the joint problem, or by solving an isolated regression problem for each column. The problems can be coupled by adding an additional regularization penalty on the covariance of solutions
+
+where  models the relationship between tasks. This scheme can be used to both enforce similarity of solutions across tasks, and to learn the specific structure of task similarity by alternating between optimizations of  and . When the relationship between tasks is known to lie on a graph, the Laplacian matrix of the graph can be used to couple the learning problems.
+
+ Spectral regularization 
+
+Regularization by spectral filtering has been used to find stable solutions to problems such as those discussed above by addressing ill-posed matrix inversions (see for example  Filter function for Tikhonov regularization). In many cases the regularization function acts on the input (or kernel) to ensure a bounded inverse by eliminating small singular values, but it can also be useful to have spectral norms that act on the matrix that is to be learned.
+
+There are a number of matrix norms that act on the singular values of the matrix. Frequently used examples include the Schatten p-norms, with p = 1 or 2. For example, matrix regularization with a Schatten 1-norm, also called the nuclear norm, can be used to enforce sparsity in the spectrum of a matrix. This has been used in the context of matrix completion when the matrix in question is believed to have a restricted rank. In this case the optimization problem becomes:
+
+Spectral Regularization is also used to enforce a reduced rank coefficient matrix in multivariate regression. In this setting, a reduced rank coefficient matrix can be found by keeping just the top  singular values, but this can be extended to keep any reduced set of singular values and vectors.
+
+ Structured sparsity 
+
+Sparse optimization has become the focus of much research interest as a way to find solutions that depend on a small number of variables (see e.g. the  Lasso method). In principle, entry-wise sparsity can be enforced by penalizing the entry-wise -norm of the matrix, but the -norm is not convex. In practice this can be implemented by convex relaxation to the -norm. While entry-wise regularization with an -norm will find solutions with a small number of nonzero elements, applying an -norm to different groups of variables can enforce structure in the sparsity of solutions.
+
+The most straightforward example of structured sparsity uses the  norm with  and :
+
+For example, the  norm is used in multi-task learning to group features across tasks, such that all the elements in a given row of the coefficient matrix can be forced to zero as a group. The grouping effect is achieved by taking the -norm of each row, and then taking the total penalty to be the sum of these row-wise norms. This regularization results in rows that will tend to be all zeros, or dense. The same type of regularization can be used to enforce sparsity column-wise by taking the -norms of each column.
+
+More generally, the  norm can be applied to arbitrary groups of variables:
+
+where the index  is across groups of variables, and  indicates the cardinality of group .
+
+Algorithms for solving these group sparsity problems extend the more well-known Lasso and group Lasso methods by allowing overlapping groups, for example, and have been implemented via matching pursuit: and proximal gradient methods. By writing the proximal gradient with respect to a given coefficient, , it can be seen that this norm enforces a group-wise soft threshold
+
+where  is the indicator function for group norms .
+
+Thus, using  norms it is straightforward to enforce structure in the sparsity of a matrix either row-wise, column-wise, or in arbitrary blocks. By enforcing group norms on blocks in multivariate or multi-task regression, for example, it is possible to find groups of input and output variables, such that defined subsets of output variables (columns in the matrix ) will depend on the same sparse set of input variables.
+
+ Multiple kernel selection 
+
+The ideas of structured sparsity and feature selection can be extended to the nonparametric case of multiple kernel learning. This can be useful when there are multiple types of input data (color and texture, for example) with different appropriate kernels for each, or when the appropriate kernel is unknown. If there are two kernels, for example, with feature maps  and  that lie in corresponding reproducing kernel Hilbert spaces , then a larger space, , can be created as the sum of two spaces:
+
+assuming linear independence in  and . In this case the -norm is again the sum of norms:
+
+Thus, by choosing a matrix regularization function as this type of norm, it is possible to find a solution that is sparse in terms of which kernels are used, but dense in the coefficient of each used kernel. Multiple kernel learning can also be used as a form of nonlinear variable selection, or as a model aggregation technique (e.g. by taking the sum of squared norms and relaxing sparsity constraints). For example, each kernel can be taken to be the Gaussian kernel with a different width.

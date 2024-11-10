@@ -1,0 +1,69 @@
+The sample complexity of a machine learning algorithm represents the number of training-samples that it needs in order to successfully learn a target function.
+
+More precisely, the sample complexity is the number of training-samples that we need to supply to the algorithm, so that the function returned by the algorithm is within an arbitrarily small error of the best possible function, with probability arbitrarily close to 1.
+
+There are two variants of sample complexity:
+ The weak variant fixes a particular input-output distribution;
+ The strong variant takes the worst-case sample complexity over all input-output distributions.
+
+The No free lunch theorem, discussed below, proves that, in general, the strong sample complexity is infinite, i.e. that there is no algorithm that can learn the globally-optimal target function using a finite number of training samples.
+
+However, if we are only interested in a particular class of target functions (e.g, only linear functions) then the sample complexity is finite, and it depends linearly on the VC dimension on the class of target functions.
+
+Definition
+Let  be a space which we call the input space, and  be a space which we call the output space, and let  denote the product . For example, in the setting of binary classification,  is typically a finite-dimensional vector space and  is the set .
+
+Fix a hypothesis space  of functions . A learning algorithm over  is a computable map from  to . In other words, it is an algorithm that takes as input a finite sequence of training samples and outputs a function from  to . Typical learning algorithms include empirical risk minimization, without or with Tikhonov regularization.
+
+Fix a loss function , for example, the square loss , where . For a given distribution  on , the expected risk of a hypothesis (a function)  is
+
+In our setting, we have , where  is a learning algorithm and  is a sequence of vectors which are all drawn independently from . Define the optimal riskSet , for each . Note that  is a random variable and depends on the random variable , which is drawn from the distribution . The algorithm  is called consistent if  probabilistically converges to . In other words, for all , there exists a positive integer , such that, for all , we have
+
+The sample complexity of  is then the minimum  for which this holds, as a function of , and . We write the sample complexity as  to emphasize that this value of  depends on , and . If  is not consistent, then we set . If there exists an algorithm for which  is finite, then we say that the hypothesis space  is learnable.
+
+In others words, the sample complexity  defines the rate of consistency of the algorithm: given a desired accuracy  and confidence , one needs to sample  data points to guarantee that the risk of the output function is within  of the best possible, with probability at least  .
+
+In probably approximately correct (PAC) learning, one is concerned with whether the sample complexity is polynomial, that is, whether  is bounded by a polynomial in  and . If  is polynomial for some learning algorithm, then one says that the hypothesis space   is PAC-learnable. Note that this is a stronger notion than being learnable.
+
+Unrestricted hypothesis space: infinite sample complexity
+
+One can ask whether there exists a learning algorithm so that the sample complexity is finite in the strong sense, that is, there is a bound on the number of samples needed so that the algorithm can learn any distribution over the input-output space with a specified target error. More formally, one asks whether there exists a learning algorithm , such that, for all , there exists a positive integer  such that for all , we have
+
+where , with  as above. The No Free Lunch Theorem says that without restrictions on the hypothesis space , this is not the case, i.e., there always exist "bad" distributions for which the sample complexity is arbitrarily large.
+
+Thus, in order to make statements about the rate of convergence of the quantity
+
+one must either
+constrain the space of probability distributions , e.g. via a parametric approach, or
+constrain the space of hypotheses , as in distribution-free approaches.
+
+Restricted hypothesis space: finite sample-complexity
+The latter approach leads to concepts such as VC dimension and Rademacher complexity which control the complexity of the space . A smaller hypothesis space introduces more bias into the inference process, meaning that  may be greater than the best possible risk in a larger space. However, by restricting the complexity of the hypothesis space it becomes possible for an algorithm to produce more uniformly consistent functions. This trade-off leads to the concept of regularization.
+
+It is a theorem from VC theory that the following three statements are equivalent for a hypothesis space :
+  is PAC-learnable.
+ The VC dimension of  is finite.
+  is a uniform Glivenko-Cantelli class.
+This gives a way to prove that certain hypothesis spaces are PAC learnable, and by extension, learnable.
+
+ An example of a PAC-learnable hypothesis space 
+, and let  be the space of affine functions on , that is, functions of the form  for some . This is the linear classification with offset learning problem. Now, note that four coplanar points in a square cannot be shattered by any affine function, since no affine function can be positive on two diagonally opposite vertices and negative on the remaining two. Thus, the VC dimension of  is , so it is finite. It follows by the above characterization of PAC-learnable classes that  is PAC-learnable, and by extension, learnable.
+
+ Sample-complexity bounds 
+
+Suppose  is a class of binary functions (functions to ). Then,  is -PAC-learnable with a sample of size:
+
+where  is the VC dimension of .
+Moreover, any -PAC-learning algorithm for  must have sample-complexity:
+
+Thus, the sample-complexity is a linear function of the VC dimension of the hypothesis space.
+
+Suppose  is a class of real-valued functions with range in . Then,  is -PAC-learnable with a sample of size:
+
+where  is Pollard's pseudo-dimension of .
+
+Other Settings
+In addition to the supervised learning setting, sample complexity is relevant to semi-supervised learning problems including active learning, where the algorithm can ask for labels to specifically chosen inputs in order to reduce the cost of obtaining many labels. The concept of sample complexity also shows up in reinforcement learning, online learning, and unsupervised algorithms, e.g. for dictionary learning.
+
+Efficiency in robotics
+A high sample complexity means, that many calculations are needed for running a Monte Carlo tree search. Its equal to a model free brute force search in the state space. In contrast, a high efficiency algorithm has a low sample complexity. Possible techniques for reducing the sample complexity are metric learning and model based reinforcement learning.

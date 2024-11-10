@@ -1,0 +1,67 @@
+H3K36me3 is an epigenetic modification to the DNA packaging protein Histone H3. It is a mark that indicates the tri-methylation at the 36th lysine residue of the histone H3 protein and often associated with gene bodies.
+
+There are diverse modifications at H3K36 and have many important biological processes. H3K36 has different acetylation and methylation states with no similarity to each other.
+
+Nomenclature
+
+H3K36me3 indicates trimethylation of lysine 36 on histone H3 protein subunit:
+
+Abbr.MeaningH3H3 family of histonesKstandard abbreviation for lysine36position of amino acid residue
+(counting from N-terminus)memethyl group3number of methyl groups added
+
+Lysine Methylation
+
+Methylation-lysine
+
+This diagram shows the progressive methylation of a lysine residue. The tri-methylation denotes the methylation present in H3K36me3.
+
+Understanding histone modifications
+
+The genomic DNA of eukaryotic cells is wrapped around special protein molecules known as Histones. The complexes formed by the looping of the DNA are known as chromatin. The basic structural unit of chromatin is the nucleosome: this consists of the core octamer of histones (H2A, H2B, H3 and H4) as well as a linker histone and about 180 base pairs of DNA. These core histones are rich in lysine and arginine residues. The carboxyl (C) terminal end of these histones contribute to histone-histone interactions, as well as histone-DNA interactions. The amino (N) terminal charged tails are the site of the post-translational modifications, such as the one seen in H3K36me3.
+
+Mechanism and function of modification
+
+Binding proteins
+
+H3K36me3 can bind chromodomain proteins such as MSL3 hMRG15 and scEaf3. It can bind PWWP proteins such as BRPF1 DNMT3A, HDGF2 and Tudor domains such as PHF19 and PHF1.
+
+DNA repair
+
+H3K36me3 is required for homologous recombinational repair of DNA damage such as double-strand breaks.  The trimethylation is catalyzed by SETD2 methyltransferase.
+
+Other roles
+
+H3K36me3 acts as a mark for HDACs to bind and deacetylate the histone which would prevent run-away transcription.  It is associated with both facultative and constitutive heterochromatin.
+
+Relationship with other modifications
+
+H3K36me3 might define exons. Nucleosomes in the exons have more histone modifications such as H3K79, H4K20, and especially H3K36me3.
+
+Epigenetic implications
+
+The post-translational modification of histone tails by either histone modifying complexes or chromatin remodelling complexes are interpreted by the cell and lead to complex, combinatorial transcriptional output. It is thought that a Histone code dictates the expression of genes by a complex interaction between the histones in a particular region. The current understanding and interpretation of histones comes from two large scale projects: ENCODE and the Epigenomic roadmap. The purpose of the epigenomic study was to investigate epigenetic changes across the entire genome. This led to chromatin states which define genomic regions by grouping the interactions of different proteins and/or histone modifications together.
+Chromatin states were investigated in Drosophila cells by looking at the binding location of proteins in the genome. Use of ChIP-sequencing revealed regions in the genome characterised by different banding. Different developmental stages were profiled in Drosophila as well, an emphasis was placed on histone modification relevance. A look in to the data obtained led to the definition of chromatin states based on histone modifications. Certain modifications were mapped and enrichment was seen to localize in certain genomic regions. Five core histone modifications were found with each respective one being linked to various cell functions.
+ H3K4me3-promoters
+ H3K4me1- primed enhancers
+ H3K36me3-gene bodies
+ H3K27me3-polycomb repression
+ H3K9me3-heterochromatin
+
+The human genome was annotated with chromatin states. These annotated states can be used as new ways to annotate a genome independently of the underlying genome sequence. This independence from the DNA sequence enforces the epigenetic nature of histone modifications. Chromatin states are also useful in identifying regulatory elements that have no defined sequence, such as enhancers. This additional level of annotation allows for a deeper understanding of cell specific gene regulation.
+
+Clinical significance
+
+This histone methylation is responsible for maintaining gene expression stability. It is important throughout aging and has an impact on longevity. Genes that change their expression during aging have much lower levels of H3K36me3 in their gene bodies.
+
+There is reduced levels of H3K36me3 and H3K79me2 at the upstream GAA region of the FXN, indicative of a defect
+of transcription elongation in Friedreich's ataxia.
+
+Methods
+
+The histone mark H3K36me3 can be detected in a variety of ways:
+
+1. Chromatin Immunoprecipitation Sequencing (ChIP-sequencing) measures the amount of DNA enrichment once bound to a targeted protein and immunoprecipitated. It results in good optimization and is used in vivo to reveal DNA-protein binding occurring in cells. ChIP-Seq can be used to identify and quantify various DNA fragments for different histone modifications along a genomic region.
+
+2. Micrococcal Nuclease sequencing (MNase-seq) is used to investigate regions that are bound by well positioned nucleosomes. Use of the micrococcal nuclease enzyme is employed to identify nucleosome positioning. Well positioned nucleosomes are seen to have enrichment of sequences.
+
+3. Assay for transposase accessible chromatin sequencing  (ATAC-seq) is used to look in to regions that are nucleosome free (open chromatin). It uses hyperactive Tn5 transposon to highlight nucleosome localisation.

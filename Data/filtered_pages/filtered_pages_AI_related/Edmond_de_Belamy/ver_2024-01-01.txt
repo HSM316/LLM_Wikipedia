@@ -1,0 +1,13 @@
+Edmond de Belamy is a generative adversarial network (GAN) portrait painting constructed in 2018 by Paris-based arts-collective Obvious. Printed on canvas, the work belongs to a series of generative images called La Famille de Belamy. The name Belamy is a tribute to Ian Goodfellow, inventor of GANs; In French "bel ami" means "good friend" so it is a translated pun of Goodfellow. It achieved widespread notoriety after Christie's announced its intention to auction the piece as the first artwork created using artificial intelligence to be featured in a Christie's auction. It surpassed pre-auction estimates which valued it at $7,000 to $10,000, instead selling for $432,500.
+
+The piece is a portrait of a somewhat-blurry man. It is a print on canvas measuring 27  x 27  in (700 x 700 mm.) set within a gilded wood frame. The image was created by an algorithm that referenced 15,000 portraits from various periods.
+
+It is signed at the bottom right with , which is part of the algorithm code that produced it. The algorithm was trained on a set of 15,000 portraits from online art encyclopedia WikiArt, spanning the 14th to the 19th century.
+
+The organization that produced it is called Obvious. It is a collective comprising three people, Pierre Fautrel, Hugo Caselles-Dupré and Gauthier Vernier, who are based in Paris, France.
+
+The piece has been criticized because it was created using a generative adversarial network (GAN) software package based on prior research by others and implemented by Robbie Barrat, an AI artist who was not affiliated with Obvious, leading to allegations that Obvious contributed minimally to the final work product. Posts on the project's issue tracker show Obvious members requesting that Barrat provide support and custom features.
+
+The piece has also been placed within a tradition, dating back to Duchamp's Bicycle Wheel of 1913 and Tinguely's Méta-matics of the late 1950s, of works calling into question the basis of the modern art market, and highlighting the comic aspects of technology.
+
+Research has used Edmond de Belamy to show how anthropomorphizing AI can affect allocations of responsibility and credit to artists.

@@ -1,0 +1,5 @@
+The Circuit Value Problem (or Circuit Evaluation Problem) is the computational problem of computing the output of a given Boolean circuit on a given input.
+
+The problem is complete for P under uniform AC reductions. The Boolean Formula Value Problem (or Boolean Formula Evaluation Problem) is the special case of the problem when the circuit is a tree. The Boolean Formula Value Problem is complete for NC.
+
+The problem is closely related to the Boolean Satisfiability Problem which is complete for NP and its complement Propositional Tautologihood Problem which is complete for co-NP.

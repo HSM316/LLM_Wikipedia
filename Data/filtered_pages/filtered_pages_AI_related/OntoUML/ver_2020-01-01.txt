@@ -1,0 +1,13 @@
+OntoUML is a ontologically well-founded language for Ontology-driven Conceptual Modeling. OntoUML is built as a UML extension based on the Unified Foundational Ontology (UFO). The foundations of UFO and OntoUML can be traced back to Giancarlo Guizzardi's Ph.D. thesis "Ontological foundations for structural conceptual models". In his work, he proposed a novel foundational ontology for conceptual modeling (UFO) and employed it to evaluate and re-design a fragment of the UML 2.0 metamodel for the purposes of conceptual modeling and domain ontology engineering.
+
+OntoUML has been adopted by many academic, corporate and governmental institutions worldwideTowards ontological foundations for conceptual modeling: The unified foundational ontology (UFO) story for the development of conceptual models in a variety of domains. It has also been considered as a candidate for addressing the OMG SIMF (Semantic Information Model Federation) Request for Proposal, as is explicitly recognized as the foundations for the “Data Modeling Guide (DMG)Data Model Guide For An Enterprise Logical Data Model (ELDM)” initiative. Finally, some of the foundational theories underlying OntoUML have also influenced other popular conceptual modeling languages such as ORM 2.0.
+
+ Supporting tools 
+
+In 2006, Guizzardi co-founded the  Ontology & Conceptual Modeling Research Group (NEMO) located at the Federal University of Espírito Santo (UFES) in Vitória city, state of Espírito Santo, Brazil. Since then, NEMO has been responsible for most of the developments in OntoUML. These include tool support to the language both as extensions of UML production-grade tools to support OntoUML (e.g., the MDG for Enterprise Architect), as well as a standalone tool called the OntoUML Lightweight Editor (OLED) for the development, verification, validation, anti-pattern detection and rectification, verbalization and implementation of domain ontologies.
+
+A number of publications of NEMO about ontologies and OntoUML can be found in:
+
+In 2016 a group of former students from NEMO founded Menthor, a startup aiming at providing ontology engineering-related products and services. Among these products, they offer the Menthor Editor, an open-source ontology engineering tool for dealing with OntoUML models. It also includes OntoUML syntax validation, Alloy simulation,[2][3] Anti-Pattern verification,[4] and MDA transformations from OntoUML to OWL,[5][6] SBVR and Natural Language (Brazilian Portuguese). Menthor Editor is derived from OLED.
+
+Recently, as an initiative championed by the Czech Technical University, in Czech Republic, an OntoUML portal has been launched in:.

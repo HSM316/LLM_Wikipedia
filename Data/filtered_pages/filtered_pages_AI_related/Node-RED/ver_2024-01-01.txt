@@ -1,0 +1,23 @@
+Node-RED is a flow-based, low-code development tool for visual programming developed originally by IBM for wiring together hardware devices, APIs and online services as part of the Internet of Things.
+
+Node-RED provides a web browser-based flow editor, which can be used to create JavaScript functions. Elements of applications can be saved or shared for re-use. The runtime is built on Node.js. The flows created in Node-RED are stored using JSON. Since version 0.14, MQTT nodes can make properly configured TLS connections.
+
+In 2016, IBM contributed Node-RED as an open source OpenJS Foundation project.
+ Node-RED projects 
+
++NameDescriptionNode-REDA visual tool for wiring the Internet of ThingsNode-RED DashboardA dashboard UI for Node-REDNode generatorCommand line tool to generate Node-RED node modules from several various sources, including Open API document and function node's source. Node-RED Command Line ToolCommand-line tool allows you to remotely administer a Node-RED instance.
+
+ Flows 
+Node-RED Flow refers to the connection and sequencing of various input, output, and processing nodes within the Node-RED platform. Each node within a flow performs a unique and specific task. When data is transmitted to a node, the node processes it according to its designated function, before passing it on to the subsequent node in the flow. This system allows for the controlled execution and regulation of a wide range of operations, offering significant flexibility in creating real-time applications. Node-RED flows represent the main mechanism of this visual programming tool.
+
+center|frameless|707x707px|Node-RED Flow
+
+ Adoption 
+
+Node-RED has gained significant traction in the Industrial Internet of Things (IIoT) and edge computing sectors. Node-RED's open-source nature and large community have led to the creation of over 4000 connectors supporting a wide range of data sources and protocols such as Modbus, OPC-UA, Siemens S7, and MQTT. Several PLC and IoT vendors have adopted Node-RED as a standard.
+
+ Community survey 
+The 2023 Node-RED Community Survey provided valuable insights into the usage patterns, preferences, and feedback from 780 individuals who are part of the Node-RED community. The survey, conducted in March 2023, revealed that Node-RED's usage extends beyond DIY home automation, with a growing trend towards professional use in a variety of industries. Over half of the respondents have been using Node-RED for over two years, indicating a well-established community. Notably, the most common messaging technologies used in conjunction with Node-RED are MQTT and HTTP, while InfluxDB emerged as the most popular database within the community. The survey also shed light on perceived barriers to adoption, pointing towards the perception of Node-RED as a proof of concept tool and the lack of certain key features. Despite these challenges, the survey highlighted a high level of satisfaction within the community, with over two-thirds of respondents rating Node-RED a 5 out of 5.
+
+ Commercial offerings 
+FlowFuse (former known as FlowForge) is an open-core company investing in Node-RED. Nick O’Leary, co-creator of Node-RED is FlowFuse co-founder and CTO. FlowFuse adds to Node-RED collaborative development, management of remote deployments, support for DevOps delivery pipelines and the ability to host Node-RED applications on FlowFuse Cloud. FlowFuse is the DevOps platform for Node-RED application development and delivery.

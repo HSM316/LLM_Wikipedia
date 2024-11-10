@@ -1,0 +1,14 @@
+UMBEL (Upper Mapping and Binding Exchange Layer) is a logically organized knowledge graph of 34,000 concepts and entity types that can be used in information science for relating information from disparate sources to one another. It was retired at the end of 2019. UMBEL was first released in July 2008. Version 1.00 was released in February 2011.See the  release announcement. Its current release is version 1.50.See http://umbel.org/resources/news/new-major-upgrade-of-umbel-released-version-1.50/
+
+The grounding of this information occurs by common reference to the permanent URIs for the UMBEL concepts; the connections within the UMBEL upper ontology enable concepts from sources at different levels of abstraction or specificity to be logically related. Since UMBEL is an open-source extract of the OpenCyc knowledge base, it can also take advantage of the reasoning capabilities within Cyc.
+
+UMBEL has two means to promote the semantic interoperability of information:. It is:
+
+ An ontology of about 35,000 reference concepts, designed to provide common mapping points for relating different ontologies or schema to one another, and
+ A vocabulary for aiding that ontology mapping, including expressions of likelihood relationships distinct from exact identity or equivalence. This vocabulary is also designed for interoperable domain ontologies.
+
+400px|Diagram showing Linking Open Data datasets.  UMBEL is near the hub, below and to the right of the central DBpedia.
+
+UMBEL is written in the Semantic Web languages of SKOS and OWL 2. It is a class structure used in Linked Data, along with OpenCyc, YAGO, and the DBpedia ontology. Besides data integration, UMBEL has been used to aid concept search, concept definitions, query ranking, ontology integration, and ontology consistency checking. It has also been used to build large ontologies and for online question answering systems.
+
+Including OpenCyc, UMBEL has about 65,000 formal mappings to DBpedia, PROTON, GeoNames, and schema.org, and provides linkages to more than 2 million Wikipedia pages (English version). All of its reference concepts and mappings are organized under a hierarchy of 31 different "super types",See Annex G in the UMBEL specifications. which are mostly disjoint from one another. Each of these "super types" has its own typology of entity classes to provide flexible tie-ins for external content. 90% of UMBEL is contained in these entity classes.

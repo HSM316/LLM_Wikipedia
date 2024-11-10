@@ -1,0 +1,74 @@
+Google Brain was a deep learning artificial intelligence research team that served as the sole AI branch of Google before being incorporated under the newer umbrella of Google AI, a research division at Google dedicated to artificial intelligence. Formed in 2011, it combined open-ended machine learning research with information systems and large-scale computing resources. It created tools such as TensorFlow, which allow neural networks to be used by the public, and multiple internal AI research projects, and aimed to create research opportunities in machine learning and natural language processing. It was merged into former Google sister company DeepMind to form Google DeepMind in April 2023.
+
+History
+The Google Brain project began in 2011 as a part-time research collaboration between Google fellow Jeff Dean and Google Researcher Greg Corrado. Google Brain started as a Google X project and became so successful that it was graduated back to Google: Astro Teller has said that Google Brain paid for the entire cost of Google X.
+
+In June 2012, the New York Times reported that a cluster of 16,000 processors in 1,000 computers dedicated to mimicking some aspects of human brain activity had successfully trained itself to recognize a cat based on 10 million digital images taken from YouTube videos. The story was also covered by National Public Radio.
+
+In March 2013, Google hired Geoffrey Hinton, a leading researcher in the deep learning field, and acquired the company DNNResearch Inc. headed by Hinton. Hinton said that he would be dividing his future time between his university research and his work at Google.
+
+In April 2023, Google Brain merged with Google sister company DeepMind to form Google DeepMind, as part of the company's continued efforts to accelerate work on AI.
+
+Team and location
+Google Brain was initially established by Google Fellow Jeff Dean and visiting Stanford professor Andrew Ng. In 2014, the team included Jeff Dean, Quoc Le, Ilya Sutskever, Alex Krizhevsky, Samy Bengio, and Vincent Vanhoucke. In 2017, team members included Anelia Angelova, Samy Bengio, Greg Corrado, George Dahl, Michael Isard, Anjuli Kannan, Hugo Larochelle, Chris Olah, Salih Edneer, Benoit Steiner, Vincent Vanhoucke, Vijay Vasudevan, and Fernanda Viegas. Chris Lattner, who created Apple's programming language Swift and then ran Tesla's autonomy team for six months, joined Google Brain's team in August 2017. Lattner left the team in January 2020 and joined SiFive.
+
+, Google Brain was led by Jeff Dean, Geoffrey Hinton, and Zoubin Ghahramani. Other members include Katherine Heller, Pi-Chuan Chang, Ian Simon, Jean-Philippe Vert, Nevena Lazic, Anelia Angelova, Lukasz Kaiser, Carrie Jun Cai, Eric Breck, Ruoming Pang, Carlos Riquelme, Hugo Larochelle, and David Ha. Samy Bengio left the team in April 2021, and Zoubin Ghahramani took on his responsibilities.
+
+Google Research includes Google Brain and is based in Mountain View, California. It also has satellite groups in Accra, Amsterdam, Atlanta,  Beijing, Berlin, Cambridge (Massachusetts), Israel, Los Angeles, London, Montreal, Munich, New York City, Paris, Pittsburgh, Princeton, San Francisco, Seattle, Tokyo, Toronto, and Zürich.
+
+Projects
+Artificial-intelligence-devised encryption system
+In October 2016, Google Brain designed an experiment to determine that neural networks are capable of learning secure symmetric encryption. In this experiment, three neural networks were created: Alice, Bob and Eve. Adhering to the idea of a generative adversarial network (GAN), the goal of the experiment was for Alice to send an encrypted message to Bob that Bob could decrypt, but the adversary, Eve, could not. Alice and Bob maintained an advantage over Eve, in that they shared a key used for encryption and decryption. In doing so, Google Brain demonstrated the capability of neural networks to learn secure encryption.
+
+Image enhancement
+In February 2017, Google Brain determined a probabilistic method for converting pictures with 8x8 resolution to a resolution of 32x32. The method built upon an already existing probabilistic model called pixelCNN to generate pixel translations.
+
+The proposed software utilizes two neural networks to make approximations for the pixel makeup of translated images. The first network, known as the "conditioning network," downsizes high-resolution images to 8x8 and attempts to create mappings from the original 8x8 image to these higher-resolution ones. The other network, known as the "prior network," uses the mappings from the previous network to add more detail to the original image. The resulting translated image is not the same image in higher resolution, but rather a 32x32 resolution estimation based on other existing high-resolution images. Google Brain's results indicate the possibility for neural networks to enhance images.
+
+ Google Translate 
+The Google Brain team contributed to the Google Translate project by employing a new deep learning system that combines artificial neural networks with vast databases of multilingual texts. In September 2016, Google Neural Machine Translation (GNMT) was launched, an end-to-end learning framework, able to learn from a large number of examples. Previously, Google Translate's Phrase-Based Machine Translation (PBMT) approach would statistically analyze word by word and try to match corresponding words in other languages without considering the surrounding phrases in the sentence. But rather than choosing a replacement for each individual word in the desired language, GNMT evaluates word segments in the context of the rest of the sentence to choose more accurate replacements. Compared to older PBMT models, the GNMT model scored a 24% improvement in similarity to human translation, with a 60% reduction in errors. The GNMT has also shown significant improvement for notoriously difficult translations, like Chinese to English.
+
+While the introduction of the GNMT has increased the quality of Google Translate's translations for the pilot languages, it was very difficult to create such improvements for all of its 103 languages. Addressing this problem, the Google Brain Team was able to develop a Multilingual GNMT system, which extended the previous one by enabling translations between multiple languages. Furthermore, it allows for Zero-Shot Translations, which are translations between two languages that the system has never explicitly seen before. Google announced that Google Translate can now also translate without transcribing, using neural networks. This means that it is possible to translate speech in one language directly into text in another language, without first transcribing it to text. 
+
+According to the Researchers at Google Brain, this intermediate step can be avoided using neural networks. In order for the system to learn this, they exposed it to many hours of Spanish audio together with the corresponding English text. The different layers of neural networks, replicating the human brain, were able to link the corresponding parts and subsequently manipulate the audio waveform until it was transformed to English text. Another drawback of the GNMT model is that it causes the time of translation to increase exponentially with the number of words in the sentence. This caused the Google Brain Team to add 2000 more processors to ensure the new translation process would still be fast and reliable.
+
+ Robotics 
+Aiming to improve traditional robotics control algorithms where new skills of a robot need to be hand-programmed, robotics researchers at Google Brain are developing machine learning techniques to allow robots to learn new skills on their own. They also attempt to develop ways for information sharing between robots so that robots can learn from each other during their learning process, also known as cloud robotics. As a result, Google has launched the Google Cloud Robotics Platform for developers in 2019, an effort to combine robotics, AI, and the cloud to enable efficient robotic automation through cloud-connected collaborative robots.
+
+Robotics research at Google Brain has focused mostly on improving and applying deep learning algorithms to enable robots to complete tasks by learning from experience, simulation, human demonstrations, and/or visual representations. For example, Google Brain researchers showed that robots can learn to pick and throw rigid objects into selected boxes by experimenting in an environment without being pre-programmed to do so. In another research, researchers trained robots to learn behaviors such as pouring liquid from a cup; robots learned from videos of human demonstrations recorded from multiple viewpoints.
+
+Google Brain researchers have collaborated with other companies and academic institutions on robotics research. In 2016, the Google Brain Team collaborated with researchers at X in a research on learning hand-eye coordination for robotic grasping. Their method allowed real-time robot control for grasping novel objects with self-correction. In 2020, researchers from Google Brain, Intel AI Lab, and UC Berkeley created an AI model for robots to learn surgery-related tasks such as suturing from training with surgery videos.
+
+ Interactive Speaker Recognition with Reinforcement Learning 
+In 2020, Google Brain Team and University of Lille presented a model for automatic speaker recognition which they called Interactive Speaker Recognition. The ISR module recognizes a speaker from a given list of speakers only by requesting a few user specific words. The model can be altered to choose speech segments in the context of Text-To-Speech Training. It can also prevent malicious voice generators from accessing the data.
+
+ TensorFlow 
+
+TensorFlow is an open source software library powered by Google Brain that allows anyone to utilize machine learning by providing the tools to train one's own neural network. The tool has been used to develop software using deep learning models that farmers use to reduce the amount of manual labor required to sort their yield, by training it with a data set of human-sorted images.
+
+ Magenta 
+Magenta is a project that uses Google Brain to create new information in the form of art and music rather than classify and sort existing data. TensorFlow was updated with a suite of tools for users to guide the neural network to create images and music. However, the team from Valdosta State University found that the AI struggles to perfectly replicate human intention in artistry, similar to the issues faced in translation.
+
+ Medical applications 
+The image sorting capabilities of Google Brain have been used to help detect certain medical conditions by seeking out patterns that human doctors may not notice to provide an earlier diagnosis. During screening for breast cancer, this method was found to have one quarter the false positive rate of human pathologists, who require more time to look over each photo and cannot spend their entire focus on this one task. Due to the neural network's very specific training for a single task, it cannot identify other afflictions present in a photo that a human could easily spot.
+
+ Transformer 
+The transformer deep learning architecture was invented by Google Brain researchers in 2017, and explained in the scientific paper Attention Is All You Need. Google owns a patent on this widely used architecture, but hasn't enforced it.
+
+Text-to-image model
+Google Brain announced in 2022 that it created two different types of text-to-image models called Imagen and Parti that compete with OpenAI's DALL-E.
+
+Later in 2022, the project was extended to text-to-video.
+
+ Other Google products 
+The Google Brain projects' technology is currently used in various other Google products such as the Android Operating System's speech recognition system, photo search for Google Photos, smart reply in Gmail, and video recommendations in YouTube.
+
+Reception
+Google Brain has received coverage in Wired, NPR, and Big Think. These articles have contained interviews with key team members Ray Kurzweil and Andrew Ng, and focus on explanations of the project's goals and applications.
+
+ Controversies 
+In December 2020, AI ethicist Timnit Gebru left Google. While the exact nature of her quitting or being fired is disputed, the cause of the departure was her refusal to retract a paper entitled "On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?" and a related ultimatum she made, setting conditions to be met otherwise she would leave. This paper explored potential risks of the growth of AI such as Google Brain, including environmental impact, biases in training data, and the ability to deceive the public. The request to retract the paper was made by Megan Kacholia, vice president of Google Brain. As of April 2021, nearly 7000 current or former Google employees and industry supporters have signed an open letter accusing Google of "research censorship" and condemning Gebru's treatment at the company.
+
+In February 2021, Google fired one of the leaders of the company's AI ethics team, Margaret Mitchell. The company's statement alleged that Mitchell had broken company policy by using automated tools to find support for Gebru. In the same month, engineers outside the ethics team began to quit, citing the termination of Gebru as their reason for leaving. In April 2021, Google Brain co-founder Samy Bengio announced his resignation from the company. Despite being Gebru's manager, Bengio was not notified before her termination, and he posted online in support of both her and Mitchell. While Bengio's announcement focused on personal growth as his reason for leaving, anonymous sources indicated to Reuters that the turmoil within the AI ethics team played a role in his considerations.
+
+In March 2022, Google fired AI researcher Satrajit Chatterjee after he questioned the findings of a paper published in Nature, by Google's AI team members, Anna Goldie and Azalia Mirhoseini. This paper reported good results from the use of AI techniques (in particular reinforcement learning) for the placement problem for integrated circuits. However, this result is quite controversial, as the paper does not contain head-to-head comparisons to existing placers, and is difficult to replicate due to proprietary content. At least one initially favorable commentary has been retracted upon further review, and the paper is under investigation by Nature.

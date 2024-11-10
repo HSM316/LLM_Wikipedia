@@ -1,0 +1,31 @@
+The Vicsek model is a mathematical model used to describe active matter. One motivation of the study of active matter by physicists is the rich phenomenology associated to this field. Collective motion and swarming are among the most studied phenomena. Within the huge number of models that have been developed to catch such behavior from a microscopic description, the most famous is the model introduced by Tamás Vicsek et al. in 1995.
+
+Physicists have a great interest in this model as it is minimal and describes a kind of universality. It consists in point-like self-propelled particles that evolve at constant speed and align their velocity with their neighbours' one in presence of noise. Such a model shows collective motion at high density of particles or low noise on the alignment.
+
+ Model (mathematical description) 
+
+As this model aims at being minimal, it assumes that flocking is due to the combination of any kind of self propulsion and of effective alignment.Since velocities of each particle is a  constant, the net momentum of the system is not conserved during collisions.
+
+An individual  is described by its position   and the angle defining the direction of its velocity   at time . The discrete time evolution of one particle is set by two equations: 
+
+ At each time step , each agent aligns with its neighbours within a given distance  with an uncertainty due to a noise :
+ 
+ The particle then moves at constant speed   in the new direction:
+ 
+
+In these equations,  denotes the average direction of the velocities of particles (including particle ) within a circle of radius  surrounding particle . The average normalized velocity acts as the order parameter for this system, and  is given by .
+
+The whole model is controlled by three parameters: the density of particles, the amplitude of the noise on the alignment and the ratio of the travel distance  to the interaction range  . From these two simple iteration rules, various continuous theories have been elaborated such as the Toner Tu theory which describes the system at the hydrodynamic level.
+An Enskog-like kinetic theory, which is valid at arbitrary particle density, has been developed. This theory quantitatively describes the formation of steep density waves, also called invasion waves, near the transition to collective motion.
+
+ Phenomenology 
+
+This model shows a phase transition from a disordered motion to large-scale ordered motion. At large noise or low density, particles are on average not aligned, and they can be described as a disordered gas. At low noise and large density, particles are globally aligned and move in the same direction (collective motion). This state is interpreted as an ordered liquid. The transition between these two phases is not continuous, indeed the phase diagram of the system exhibits a first order phase transition with a microphase separation. In the co-existence region, finite-size liquid bands emerge in a gas environment and move along their transverse direction. Recently, a new phase has been discovered: a polar ordered Cross sea phase of density waves with inherently selected crossing angle. This spontaneous organization of particles epitomizes collective motion.
+
+ Extensions 
+
+Since its appearance in 1995 this model has been very popular within the physics community; many scientists have worked on and extended it. For example, one can extract several universality classes from simple symmetry arguments concerning the motion of the particles and their alignment.
+
+Moreover, in real systems, many parameters can be included in order to give a more realistic description, for example attraction and repulsion between agents (finite-size particles), chemotaxis (biological systems), memory, non-identical particles, the surrounding liquid.
+
+A simpler theory, the Active Ising model, has been developed to facilitate the analysis of the Vicsek model.

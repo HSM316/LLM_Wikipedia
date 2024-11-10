@@ -1,0 +1,45 @@
+In the Semantic Web and in knowledge representation, a metaclass is a class whose instances can themselves be classes. Similar to their role in programming languages, metaclasses in Semantic Web languages can have properties otherwise applicable only to individuals, while retaining the same class's ability to be classified in a concept hierarchy.  This enables knowledge about instances of those metaclasses to be inferred by semantic reasoners using statements made in the metaclass.  Metaclasses thus enhance the expressivity of knowledge representations in a way that can be intuitive for users. While classes are suitable to represent a population of individuals, metaclasses can, as one of their feature, be used to represent the conceptual dimension of an ontology.  Metaclasses are supported in the ontology language OWL and the data-modeling vocabulary RDFS.  
+
+Metaclasses are often modeled by setting them as the object of claims involving rdf:type and rdfs:subClassOf—built-in properties commonly referred to as instance of and subclass of.  Instance of entails that the subject of the claim is an instance, i.e. an individual that is a member of a class.  Subclass of entails that the subject is a class.  In the context of instance of and subclass of, the key difference between metaclasses and ordinary classes is that metaclasses are the object of instance of claims used on a class, while ordinary classes are not objects of such claims. (e.g. in a claim Bob instance of Human, Bob is the subject and an Instance, while the object, Human, is an ordinary class; but a further claim that Human instance of Animal species makes "Animal species" a metaclass because it has a member, "Human", that is also a Class).
+
+OWL 2 DL supports metaclasses by a feature called punning, in which one entity is interpreted as two different types of thing—a class and an individual—depending on its syntactic context.  For example, through punning, an ontology could have a concept hierarchy such as Harry the eagle instance of golden eagle, golden eagle subclass of bird, and golden eagle instance of species.  In this case, the punned entity would be golden eagle, because it is represented as a class (second claim) and an instance (third claim); whereas the metaclass would be species, as it has an instance that is a class.  Punning also enables other properties that would otherwise be applicable only to ordinary instances to be used directly on classes, for example "golden eagle conservation status least concern."
+
+Having arisen from the fields of knowledge representation, description logic and formal ontology, Semantic Web languages have a closer relationship to philosophical ontology than do conventional programming languages such as Java or Python. Accordingly, the nature of metaclasses is informed by philosophical notions such as abstract objects, the abstract and concrete, and type-token distinction.  Metaclasses permit concepts to be construed as tokens of other concepts while retaining their ontological status as types.  This enables types to be enumerated over, while preserving the ability to inherit from types.  For example, metaclasses could allow a machine reasoner to infer from a human-friendly ontology how many elements are in the periodic table, or, given that number of protons is a property of chemical element and isotopes are a subclass of elements, how many protons exist in the isotope hydrogen-2.
+
+Metaclasses are sometime organized by levels, in a similar way to the simple Theory of types where classes that are not metaclasses are assigned the first level, classes of classes in the first level are in the second level, classes of classes in the second level on the next and so on.
+
+ Examples 
+Following the type-token distinction, real world objects such as Abraham Lincoln or the planet Mars are regrouped into classes of similar objects.  Abraham Lincoln is said to be an instance of human, and Mars is an instance of planet. This is a kind of is-a relationship.  Metaclasses are class of classes, such as for example the nuclide concept. In chemistry, atoms are often classified as elements and, more specifically, isotopes.  The glass of water one last drank has many hydrogen atoms, each of which is an instance of hydrogen.  Hydrogen itself, a class of atoms, is an instance of nuclide.  Nuclide is a class of classes, hence a metaclass.
+
+ Implementations 
+
+ RDF and RDFS 
+In RDF, the  property is used to state that a resource is an instance of a class.  This enables metaclasses to be easily created by using  in a chain-like fashion. For example, in the two triples
+
+Harry the eagle rdf:type golden eagle
+golden eagle rdf:type species
+
+the resource  is a metaclass, because  is used as a class in the first statement and the class  is said to be an instance of the class  in the second statement.
+
+RDF also provides  as a way to create properties beyond those defined in the built-in vocabulary.  Properties can be used directly on metaclasses, for example "", where  is a property defined via  and  is a metaclass per the preceding example above.
+
+RDFS, an extension of RDF, introduced  and  and enriched how vocabularies can classify concepts.  Whereas  enables vocabularies to represent instantiation, the property  enables vocabularies to represent subsumption.  RDFS thus makes it possible for vocabularies to represent taxonomies, also known as subsumption hierarchies or concept hierarchies, which is an important addition to the type–token distinction made possible by RDF.
+
+Notably, the resource  is an instance of itself, demonstrating both the use of metaclasses in the language's internal implementation and a reflexive usage of . RDFS is its own metamodel
+
+ OWL 
+
+In some OWL flavors like OWL1-DL, entities can be either classes or instances, but cannot be both. This limitations forbids metaclasses and metamodeling. This is not the case in the OWL1 full flavor, but this allows the model to be computationally undecidable.
+In OWL2, metaclasses can implemented with punning, that is a way to treat classes as if they were individuals. Other approaches have also been proposed and used to check the properties of ontologies at a meta level.
+
+ Punning 
+OWL 2 supports metaclasses through a feature called punning.  In metaclasses implemented by punning, the same subject is interpreted as two fundamentally different types of thing—a class and an individual—depending on its syntactic context.  This is similar to a pun in natural language, where different senses of the same word are emphasized to illustrate a point.  Unlike in natural language, where puns are typically used for comedic or rhetorical effect, the  main goal of punning in Semantic Web technologies is to make concepts easier to represent, closer to how they are discussed in everyday speech or academic literature.
+
+ Protégé 
+
+In the ontology editor Protégé, metaclasses are templates for other classes who are their instances. §6.1 summary of the RDFS model
+
+ Metaclass classification 
+an example of ontology with a first metaclass order: the classification of some chemical atoms
+
+Some ontologies like the Cyc AI project ontology classifies classes and meta-classes themselves in their ontologies. Classes are divided into "fixed order classes" and "variable order classes". In the case of the former, an order is attributed for metaclasses by measuring the distance to individuals with respect to the number of "instance of" triples that are necessary to find an individual. Classes that are not metaclasses are classes of individuals, so their order is "1". Metaclasses that are classes of first order classes' order is "2", and so on. Variable order metaclasses, on the other hand, can have instances, one example of variable order metaclass is the class of all fixed order classes.

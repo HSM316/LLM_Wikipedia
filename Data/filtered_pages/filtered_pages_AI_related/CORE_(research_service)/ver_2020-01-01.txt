@@ -1,0 +1,30 @@
+CORE (COnnecting REpositories) is a service provided by the Knowledge Media Institute, based at The Open University, United Kingdom. The goal of the project is to aggregate all open access content distributed across different systems, such as repositories and open access journals, enrich this content using text mining and data mining, and provide free access to it through a set of services. The CORE project also aims to promote open access to scholarly outputs. CORE works closely with digital libraries and institutional repositories.
+
+Based on the open access fundamental principles, as they were described in the Budapest Open Access Initiative, the open access content not only must be openly available to download and read, but it must also allow its reuse, both by humans and machines. As a result, there was a need to exploit the content reuse, which could be made possible with the implementation of a technical infrastructure. Thus the CORE project started with the goal of connecting metadata and full-text outputs offering, via the content aggregation, value-added services, and opening new opportunities in the research process.
+
+Currently there are existing commercial academic search systems, such as Google Scholar, which provide search and access level services, but do not support programmable machine access to the content, for example with the use of an API or data dumps. This limits the further reuse of the open access content, for example, with regards to text and data mining. Taking into consideration that there are three access levels to content: 1. access at the granularity of papers, 2. analytical access and granularity of collections and 3. programmable machine access to data the programmable machine access is the main feature that distinguishes CORE from Google Scholar and Microsoft Academic Search.
+
+History
+The first version of CORE was created in 2011 by Petr Knoth with the aim to make it easier to access and text mine very large amounts of research publications. The value of the aggregation was first demonstrated by developing a content recommendation system for research papers, following the ideas of literature-based discovery introduced by Don R. Swanson. Since its start, CORE has received financial support from a range of funders including Jisc and the European Commission. Although CORE aggregates from across the world, it has the status of the UK's national aggregator of open access content, aggregating metadata and full-text outputs from both UK publishers' databases as well as institutional and subject repositories. The service operates as a one step search tool for UK's open access research outputs, facilitating easy discoverability, use and reuse. The importance of the service has been widely recognised by Jisc, which suggested that CORE should preserve the required resources to sustain its operation and explore an international sustainability model.
+CORE is now one of the Repository Shared Services projects, along with Sherpa Services, IRUS-UK, Jisc Publications Router and OpenDOAR.
+
+Programmable access to CORE data
+CORE data can be accessed through an API or downloaded as a pre-processed and semantically enriched data dump.
+
+Searching CORE
+CORE provides searchable access to a collection of over 125 million open access harvested research outputs. All outputs can be accessed and downloaded free of cost and have limited re-use restrictions. One can search the CORE content using a faceted search. CORE also provides a cross-repository content recommendation system based on full-texts. The collection of the harvested outputs is available either by looking at the latest additions or by browsing the collection at the date of harvesting.
+The CORE search engine has been selected as one of the top 10 search engines for open access research, facilitating access to academic papers. CORE ranks second among the most useful databases of searching electronic thesis and dissertations (ETDs).
+
+Analytical use of CORE data
+The availability of data aggregated and enriched by CORE provides opportunities for the development of new analytical services for research literature. These can be used, for example, to monitor growth and trends in research, validate compliance with open access mandates and to develop new automatic metrics for evaluating research excellence.
+
+Applications
+CORE offers eight applications:
+CORE API, provides an access point for those who want to develop applications making use of CORE's large collection of Open Access content.
+CORE Dataset, enables the accessibility of the data aggregated from repositories by CORE and allows their further manipulation.
+CORE Recommender, can link the institutional repository with the CORE service and it will recommend semantically related resources.
+CORE Repository Dashboard, is a tool designed specifically for repository managers or research output administrators. The aim of the Repository Dashboard is to provide control over the aggregated content and help in the management and validation of the repository collections and services.
+CORE Analytics Dashboard, helps institutions to understand and monitor the impact of their research.
+ CORE Search, enables users to search and access research papers via a faceted search interface.
+ CORE Publisher Connector, is a software providing seamless access to Gold and Hybrid Gold Open Access articles aggregated from non-standard systems of major publishers. Data is exposed via the ResourceSync protocol.
+ CORE SDKs, provide seamless access to our content for programmers. The CORE SDK R is freely available and it is mainly community led. The aim is to maximise the productivity and data analysis, prototyping and effortless migration.

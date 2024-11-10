@@ -1,0 +1,19 @@
+Artisto is a video processing application with art and movie effects filters based on neural network algorithms created in 2016 by Mail.ru Group machine learning specialists.
+
+At the moment the application can process videos up to 10 seconds long and offers users 21 filters, including those based on the works of famous artists (e.g. Blue Dream — Pablo Picasso), theme-based (Rio-2016 — related to the 2016 Summer Olympics in Rio de Janeiro) and others. The app works with both pre-recorded videos and videos recorded with the application.
+
+History
+Information on the application first appeared on Mail.ru Group Vice President Anna Artamonova's FB page on July 29, 2016. At the moment of posting there was only an Android version available. According to Anna, the application's first version only took eight days to develop. On July 31 the application was added to the AppStore for free download.
+
+From this moment and continuing on into the present, Artisto has been the world’s first app that uses neural networks for editing short videos, processing them in the style of famous artworks or any other source image. Prisma (app) application developers promise to deliver similar functionality at any moment.
+
+The application soon won recognition and started to attract the attention of both international brands (e.g. Korean auto manufacturer Kia Motors) and popular singers and musicians.
+
+According to the independent App Annie analysis system, within the first two weeks on the market the application made it onto TOP download lists in nine countries.
+
+ Technology 
+The idea of transferring styles from the works by famous artists to images was first mentioned in September 2015 after the publication of Leon Gatys's article "A Neural Algorithm of Artistic Style", where he described the algorithm in detail. The major shortcoming of this algorithm is its slow performance, which is up to dozens of seconds depending on the algorithm's settings.
+
+In March 2016, Russian researcher Dmitry Ulyanov's article was published, where he invented a way to improve the generation of stylized pictures using additional neuron generator network training. With this approach, stylized images can be generated within just dozens of milliseconds. Seventeen days after Ulyanov's article, Justin Johnson published an article containing an identical idea, the only difference being the structure of the generator network.
+
+The Artisto application was developed using these open-source technologies, which Mail.ru Group's machine learning specialists improved for faster video processing and better quality.

@@ -1,0 +1,9 @@
+Pfinder is a computer vision system which detects features in video images in order to recognize human figures and their movements and gestures.  Pfinder was designed by Wren, et al. of the MIT Media Laboratory in 1997.  As described by its authors, Pfinder is a "real-time system for tracking people and interpreting their behavior".  The system improves upon previous works by not only identifying the boundaries of a person in the image, but also analyzing the regions inside the boundaries and relating them to the known structure of the human body.  As an example, Pfinder can track a person's head and hands, and can determine the pose of the body and recognize gestures.
+
+ Limitations 
+ Pfinder does not cope with multi-modal backgrounds, in which a histogram of the pixel intensity contains more than one distinct peak.
+ While it can handle small or gradual changes in lighting, it does not react well to large, sudden lighting changes.  When there are large lighting changes, the system mistakenly labels them as a part of the foreground, and therefore tries to incorporate them into the human figure model.
+ Pfinder is not able to handle multiple people in the same image well.  While the blobs representing each person would be detected, the system would attempt to analyze them as one distinct human figure.
+
+ Applications 
+ Pfinder has been applied to the recognition of American Sign Language

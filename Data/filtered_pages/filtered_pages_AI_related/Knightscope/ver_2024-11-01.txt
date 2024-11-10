@@ -1,0 +1,65 @@
+Knightscope, Inc. is an American security camera and robotics company headquartered in Mountain View, California. Knightscope designs, builds and deploys robots called Autonomous Data Robots (ADRs) for use in monitoring people in malls, parking lots, neighborhoods and other public areas. Knightscope robots are fully autonomous using self-driving technology and are designed to alert police and security of incidents through sensors that detect weapons, read license plates and detect other suspicious activities.
+
+Knightscope was founded in 2013, its founders stated that they were motivated to create autonomous security robots following the Sandy Hook School Shooting in 2012. Knightscope shipped their first robot in 2015. The company has four models of robots, designed for indoor, outdoor, and all terrain uses, as well as a model for stationary use. After several years of operation and several rounds of fundraising, primarily through equity crowdfunding, the company became public and launched an initial public offering (IPO) on January 27, 2022.
+
+Knightscope is the most well known maker of fully autonomous security robots. Users of Knightscope robots have generally reported lower crime rates in the areas the robots were deployed, attributed mostly to physical deterrence by the robot's presence. Knightscope autonomous robots have raised concerns from critics over privacy and job displacement.
+
+ History 
+300px|A Knightscope robot and a police car at a gas station, San Francisco, 2018
+
+Knightscope was co-founded in 2013 by William Santana Li and Stacy Stephens. Li was previously an executive at Ford, and Stacy Stephens was a former police officer in Dallas, Texas. The founders stated that they decided to create security robots after the Sandy Hook shooting in 2012. 
+
+Knightscope says they hope the ADRs will help security and law enforcement personnel detect trouble while preventing and minimizing public injuries and fatalities. Knightscope robots first shipped in 2015.
+
+In 2017, Knightscope raised $20 million and indicated that they were seeking a partnership with Allied Universal. As of 2017, companies that have been confirmed as clients of Knightscope include Microsoft, Uber, Juniper Networks, the Sacramento Kings, LaGuardia Airport and NBC Universal.
+
+In March 2021, Knightscope won second place in the "Power of Passengers Challenge" security contest hosted by NASA and the TSA, winning a $20,000 grant. In May 2021, Knightscope announced that it had raised an additional $21.91 million through StartEngine, a private equity crowdfunding company.  
+
+In December 2021, the company filed the paperwork for an initial public offering. Knightscope listed on the NASDAQ under the ticker symbol "KSCP" on January 27, 2022. It was unique in its IPO offering in that it offered its pre-IPO to its equity crowdfunding retail investors first, rather than large investment firms as is typically done in pre-IPOs. Knightscope is notable among public companies due to the fact that a significant portion of its seed funding came from equity crowdfunding, rather than venture capital.
+
+In October 2022, Knightscope acquired CASE Emergency systems, a maker of blue light security communicators commonly used in parks and college campuses.
+
+ Models 
+300px|(left to right): K3 Indoor, K5 Outdoor, K1 Stationary and K7 Multi-Terrain Autonomous Data Machines
+Knightscope has four different robot models: the K1, K3, K5 and K7. Clients are charged an hourly rate of $7 for each machine they use — a price designed to compete with the minimum wage in various states. Besides being autonomous, robot features include the ability to read license plates, run thermal scans, detect hidden weapons, and identify the faces of wanted people.
+
+ K5 
+The K5 model is a bullet-shaped robot that stands about 5 feet tall. It has twin panels of lights about two-thirds of the way up its body. There is also a small silver-colored flag of the United States on the left side of its body. The K5 patrols and charges autonomously and detects crime using a variety of sensors including a video camera, thermal imaging sensors, a laser range finder, radar, air quality sensors, and a detector for suspicious wireless signals.
+
+During its autonomous patrol, if the K5 detects abnormal noise and temperature change, or known criminals, it will alert the guards. The software package with which a user can respond to such alerts is called the Knightscope Security Operations Center.
+
+ Mobility 
+The K5 moves at 1 to 3 miles per hour. It uses mapping software to create a geo-fenced perimeter that makes it stay within one area. The K5 creates a point cloud to show a 3D image of the surroundings in the geo-fenced area. The K5 also uses an ultrasonic sensor to detect objects in surroundings and movements of its wheels.
+
+ K1, K3 and K7 
+In 2016, one year after the release of the K5, Knightscope announced a K3 robot with a focus on indoor environments. K1 and K7 follow-up models were both launched in 2018. The K1 is a stationary scanner designed for entrances and exits to buildings and can detect weapons in a crowd. It won the Security Today New Product of the Year award. The K7 is a larger all-terrain unit with four wheels.
+
+ Reception 
+
+ Results 
+Knightscope autonomous machines are designed to supplement human security teams by alerting them to suspicious activity, rather than directly intervening. Clients who have used Knightscope robots have generally reported lower crime rates in the areas the robots patrolled, primarily through deterrence rather than increased arrests. The Las Vegas Police Department reported that an apartment complex with a high crime rate that leased a Knightscope robot saw a significant drop in 911 calls after the robot was deployed. A Las Vegas police official stated he was unsure if this was attributed directly to the robot. The apartment manager, however,  stated the robot did directly deter crime, on top of assisting with solving vandalism reports. 
+
+A security official from Pechanga Resort Casino, which has deployed Knightscope robots, stated that he was unsure if the robots have reduced crime at the casino, but that they have been useful in identifying people the casino has blacklisted, and that footage the robots provided prevented a civil lawsuit against the casino. An animal shelter that rented a Knightscope robot for a month reported lower rates of vandalism and fewer car break-ins during its deployment. 
+
+Interviewees from the city of Huntington Park, which deployed a Knightscope robot at a public park, reported a greater sense of security among the public, and a mild increase in tourism due to public interest in the robot in the area the robot was deployed, in addition to lower crime rates. Police officials from the city of Huntington Park noted a drop in crime and an increase in arrests in the area the Knightscope robot was deployed, and directly attributed this to the robot's presence. 
+
+Vanderbilt University law professor Christopher Slobogin described Knightscope robots as "panvasive" because they are more noticeable than traditional security cameras and can thus be perceived as more intrusive. Cornell University computer science professor Ross Knepper argues that the mysterious nature of Knightscope robots adds value to their use as a physical deterrent to crime, arguing that potential offenders are unsure about the robots' features and capabilities and thus refrain from committing crimes with them in the vicinity.
+
+ Job displacement concerns 
+Although designed to work in tandem with security personnel, Knightscope units have raised concerns about the displacement of private security guards. Knightscope robots are slightly more expensive than a typical unarmed security guard on an annual basis, but can operate 24 hours on a single charge, taking up three 8-hour shifts, thus costing a fraction of the price of round the clock security guards.
+
+ Privacy 
+The possibility of a K5 being used in public places has led to concerns with privacy. The K5 can take pictures and videos of people without any notification. It can also monitor conversations and social media feeds. Some do not trust the K5's ability to recognize the actual suspects. Jeramie Scott, a national security fellow at the Electronic Privacy Information Center (EPIC) said, “Automated surveillance, facial recognition and license plate recognition in public makes us all suspects.” 
+
+The center's President, Marc Rotenberg stated that “Once you enter public space and collect images and sound recordings, you have entered another realm. This is the kind of pervasive surveillance that has put people on edge.” Rotenberg stated that these are very similar privacy concerns as those with CCTV and Google mapping cars. In response to concerns over privacy, Knightscope CEO William Li stated that crime is generally a bigger concern for people than privacy, stating that "I'll tell you what puts people on edge, getting shot at."
+
+ Incidents 
+In July 2016, a Knightscope K5 which was deployed at the Stanford Shopping Center in Palo Alto, CA collided with a 16-month-old toddler, bruising the child's leg and running over the child's foot. The Stanford Shopping center responded by docking all of its K5 units, suspending any further activity by the robots until the incident could be investigated. Knightscope responded, calling the incident an "accident", and issued a formal apology to the family of the child.
+
+In April 2017, a 41-year-old Mountain View man was arrested in connection with an alleged parking-lot altercation with a K5, also at the Stanford Shopping Center. The man was allegedly drunk and attacked the robot, he was then arrested by police with footage from the security robot showing the chain of events.
+
+In July 2017, a Knightscope K5 ADM at the Washington Harbour development in Washington D.C. slipped on a loose brick surface and fell into a water fountain. Knightscope officials stated this was due to an error in the self-driving algorithm which they planned to fix.
+
+In December 2017, the San Francisco SPCA rented a Knightscope K5 robot to patrol the area next to their animal shelter, including the public sidewalk where homeless people were encamped. A spokesperson of SPCA stated that the robot was effective at significantly reducing vandalism and petty crime in the area; however, amid accusations that SPCA was using the robot to deter nearby homeless encampments, the SPCA discontinued the contract. An SPCA spokesperson denied that the purpose of the robot was to deter homeless encampments, but stated that the robot's presence did, however, reduce the presence of homeless encampments in the area.
+
+In October 2019 a woman attempted to report a fight in a Huntington Park, California park using the K5's emergency alert button, only for it to reportedly tell the woman to "step out of the way." The Huntington Park Chief of Police stated that alert features were not yet hooked up to the police department at the time, as the feature was still under development.

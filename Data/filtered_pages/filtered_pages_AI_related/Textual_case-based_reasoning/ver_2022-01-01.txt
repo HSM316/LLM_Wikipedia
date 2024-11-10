@@ -1,0 +1,9 @@
+Textual case-based reasoning (TCBR) is a subtopic of case-based reasoning, in short CBR, a popular area in artificial intelligence. CBR suggests the ways to use past experiences to solve future similar problems, requiring that past experiences be structured in a form similar to attribute-value pairs. This leads to the investigation of textual descriptions for knowledge exploration whose output will be, in turn, used to solve similar problems.
+
+ Subareas 
+Textual case-base reasoning research has focused on:
+
+ measuring similarity between textual cases
+ mapping texts into structured case representations
+ adapting textual cases for reuse
+ automatically generating representations.

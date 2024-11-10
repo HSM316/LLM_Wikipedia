@@ -1,0 +1,29 @@
+Replit (), formerly Repl.it, is a San Francisco-based start-up and an online integrated development environment (IDE). Replit being Software as a service (SaaS) allows users to create online projects (called Repls, not to be confused with REPLs) and write code in many supported languages. Its features include collaborative coding, syntax highlighting, code completion, debugging, hosting, unit testing, version control, package management, code generation via artificial intelligence, and more. Replit has a global community where programmers can talk, learn, and collaborate. Replit is also used at schools through Replit Teams for Education, a product to assist in teaching programming in the classroom.
+
+ History 
+Replit was co-founded by programmers Amjad Masad, Faris Masad, and designer Haya Odeh in 2016. Once listed as a co-founder alongside Masad, Max Shawabkeh left the venture early on. Its name comes from the acronym REPL, which stands for "read–evaluate–print loop".
+
+Before creating Replit, Amjad Masad worked in engineering roles at Yahoo and Facebook, where he built development tools. He also helped found Codecademy. Masad had come up with the idea for Replit over a decade before its creation.
+
+In 2009, Amjad Masad tried to write every programming language in Python, but it was not practical. He saw great leaps in browser and web technologies and he was inspired by the web capabilities of Google Docs. He thought of the idea of being able to write and share code all in a web browser. He spent two years creating an open-source product with Haya Odeh called "pyRepl". This product allowed him to compile languages into Python. It powered Udacity and Codecademy's tutorials. After becoming an early employee of Codecademy, this project was put off until years later, when he and Odeh decided to revive the project of a programming environment in a browser.
+
+As Replit was taking shape, Masad and Odeh wanted to have "a real environment and not something emulated in the browser." The focus was first directed at the education market, and then later towards professional developers.
+
+Since March 2021, "replit.com" has been the default domain name for the web service replacing the older "repl.it". This change was attributed to Masad's preference that people pronounce the website's name as  instead of . Another reason cited by Masad was issues with the ".it" TLD, such as renewal restrictions.
+
+Replit originally was only a REPL. However, the Ace editor was eventually implemented, allowing for editing of programs as well. In 2017, Replit switched to the Monaco code editor, the same editor used in Visual Studio Code. Due to issues with mobile support, the code editor was switched to CodeMirror over 2021 - 2022. This decision was met with backlash and criticism from the Replit community, which eventually calmed down after bugs and major issues were addressed.
+
+ Features 
+Replit is an online integrated development environment (IDE) that can be used with a variety of programming languages, including JavaScript, Python, Go, C++, Node.js, Rust, and any other language available with the Nix packager. It uses the CodeMirror 6 editor component, the same editor component employed by other major websites such as CodePen.
+
+Replit's key feature is collaborative coding, the ability to share a Repl with one or many other users and see real-time edits across files, message each other, and debug code together. Using a shared compute engine, code can be run and displayed the same to multiple users in a Repl. Replit's IDE also has live chatting and in-line threads which allows users to discuss around the code. Through Replit's global community, users can share projects, ask for help, learn from tutorials, and use templates.
+
+Replit supported over 50 programming languages, but as of February 23, 2022, Replit uses NixOS on all Repls meaning users have access to the entire NixOS package database and can use any programming language within. New Repls can be created through official language templates or through a user's custom Nix configuration. Users can configure anything from the Language Server Protocol to debugger support for a Repl.
+
+Repl environments, called Workspaces, have many tools to make development easier. Replit has built-in source control via Git on all Repls. Using a graphical user interface in the menu tab, a user can switch branches, push files, and revert code. Replit can also pull a user's code from a GitHub repository and link the Repl to their GitHub repository, a feature called Repl from Repo. Some Repls also have debugger and unit testing support. Replit uses the Debugger Adapter Protocol to provide debugging services in Java, Python, Node.js and C++ for all users connected to a Repl. Replit also has zero-setup unit testing in several languages. Repls also have secrets management, allowing users to hide values from others who see the Repl publicly.
+
+Users could also import projects from Glitch, which provides a similar service to Replit. Though it is unknown if this feature is still officially supported, as of July 2022 it is functional.
+
+Replit also has web hosting services, providing free HTTPS for static websites and servers on a user's special subdomain. Users can connect their websites to a domain they own via the Custom Domains tool. A user can keep their website always running through the Always On feature.
+
+Hacker plan is the paid version of Replit and it allows users to 5 boosted repls (faster and more memory), 5 always on repls (which allow near 24/7 hosting), more storage space, and various extra features not available in the free tier.

@@ -1,0 +1,15 @@
+In image registration, inverse consistency measures the consistency of mappings between images produced by a registration algorithm. The inverse consistency error, introduced by Christiansen and Johnson in 2001, quantifies the distance between the composition of the mappings from each image to the other, produced by the registration procedure, and the identity function, and is used as a regularisation constraint in the loss function of many registration algorithms to enforce consistent mappings.Christiansen and Johnson (2001)Bhatia et al. (2004)Johnson and Christensen (2002)Arganda-Carreras et al. (2006) Inverse consistency is necessary for good image registration but it is not sufficient, since a mapping can be perfectly consistent but not register the images at all.Rohlfing (2012)
+
+ Definition 
+
+Image registration is the process of establishing a common coordinate system between two images, and given two images
+
+registering a source image  to a target image  consists of determining a transformation  that maps points from the target space to the source space.The transformation goes in this direction in order to allow resampling the source image in target space. An ideal registration algorithm should not be sensitive to which image in the pair is used as source or target, and the registration operator should be antisymmetric such that the mappings
+
+produced when registering  to  and  to  respectively should be the inverse of each other, i.e.  and  or, equivalently,  and , where  denotes the function composition operator.Bender and Tomé (2009)Leow et al. (2005)
+
+Real algorithms are not perfect, and when swapping the role of source and target image in a registration problem the so obtained transformations are not the inverse of each other. Inverse consistency can be enforced by adding to the loss function of the registration a symmetric regularisation term that penalises inconsistent transformationsChristiansen and Johnson (2001)
+
+Inverse consistency can be used as a quality metric to evaluate image registration results. The inverse consistency error () measures the distance between the composition of the two transforms and the identity function, and it can be formulated in terms of both average () or maximum () over a region of interest  of the image:Beg and Khan (2007)
+
+While inverse consistency is a necessary property of good registration algorithms, inverse consistency error alone is not a sufficient metric to evaluate the quality of image registration results, since a perfectly consistent mapping, with no other constraint, may be not even close to correctly register a pair of images.

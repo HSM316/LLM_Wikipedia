@@ -1,0 +1,11 @@
+Behavior informatics (BI) is the informatics of behaviors so as to obtain behavior intelligence and behavior insights.
+
+Different from applied behavior analysis  from the psychological perspective, BI builds computational theories, systems and tools to qualitatively and quantitatively model, represent, analyze, and manage behaviors of individuals, groups and/or organizations .
+
+BI is built on classic study of behavioral science, including behavior modeling, applied behavior analysis, behavior analysis, behavioral economics, and organizational behavior. Typical BI tasks consist of individual and group behavior formation, representation, computational modeling, analysis, learning, simulation, and understanding of behavior impact, utility, non-occurring behaviors etc. for behavior intervention and management.
+
+ Behavior analytics 
+Behavior informatics covers behavior analytics which focuses on analysis and learning of behavioral data.
+
+ Behavior 
+From an Informatics perspective, a behavior consists of four key elements: actors (behavioral subjects and objects), operations (actions, activities) and interactions (relationships), and their properties. A behavior can be represented as a behavior vector, all behaviors of an actor or an actor group can be represented as behavior sequences and multi-dimensional behavior matrix.

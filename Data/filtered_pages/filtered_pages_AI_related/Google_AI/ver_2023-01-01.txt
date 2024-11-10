@@ -1,0 +1,10 @@
+Google AI is a division of Google dedicated to artificial intelligence. It was announced at Google I/O 2017 by CEO Sundar Pichai.
+
+Projects
+ Serving cloud-based TPUs (tensor processing units) in order to develop machine learning software.
+ Development of TensorFlow.
+ The TPU research cloud provides free access to a cluster of cloud TPUs to researchers engaged in open-source machine learning research.
+ Portal to over 5500 (as of September 2019) research publications by Google staff.
+ Magenta: a deep learning research team exploring the role of machine learning as a tool in the creative process. The team has released many open source projects allowing artists and musicians to extend their processes using AI.
+Sycamore: a new 54-qubit programmable quantum processor.
+LaMDA: a family of conversational neural language models

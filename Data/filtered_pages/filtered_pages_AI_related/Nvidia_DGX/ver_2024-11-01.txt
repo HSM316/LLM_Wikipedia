@@ -1,0 +1,96 @@
+The Nvidia DGX (Deep GPU Xceleration) represents a series of servers and workstations designed by Nvidia, primarily geared towards enhancing deep learning applications through the use of general-purpose computing on graphics processing units (GPGPU). These systems typically come in a rackmount format featuring high-performance x86 server CPUs on the motherboard.
+
+The core feature of a DGX system is its inclusion of 4 to 8 Nvidia Tesla GPU modules, which are housed on an independent system board. These GPUs can be connected either via a version of the SXM socket or a PCIe x16 slot, facilitating flexible integration within the system architecture. To manage the substantial thermal output, DGX units are equipped with heatsinks and fans designed to maintain optimal operating temperatures.
+
+This framework makes DGX units suitable for computational tasks associated with artificial intelligence and machine learning models.
+
+ Models 
+ Pascal - Volta 
+ DGX-1 
+DGX-1 servers feature 8 GPUs based on the Pascal or Volta daughter cards with 128 GB of total HBM2 memory, connected by an NVLink mesh network. The DGX-1 was announced on the 6th of April in 2016. All models are based on a dual socket configuration of Intel Xeon E5 CPUs, and are equipped with the following features.
+
+ 512 GB of DDR4-2133
+ Dual 10 Gb networking
+ 4 x 1.92 TB SSDs
+ 3200W of combined power supply capability
+ 3U Rackmount Chassis
+
+The product line is intended to bridge the gap between GPUs and AI accelerators using specific features for deep learning workloads. 
+The initial Pascal based DGX-1 delivered 170 teraflops of half precision processing, while the Volta-based upgrade increased this to 960 teraflops.
+
+The DGX-1 was first available in only the Pascal based configuration, with the first generation SXM socket. The later revision of the DGX-1 offered support for first generation Volta cards via the SXM-2 socket. Nvidia offered upgrade kits that allowed users with a Pascal based DGX-1 to upgrade to a Volta based DGX-1.Volta architecture whitepaper nvidia.comUse Guide nvidia.com
+
+ The Pascal base DGX-1 has two variants, one with a 16 core Intel Xeon E5-2698 V3, and one with a 20 core E5-2698 V4. Pricing for the variant equipped with an E5-2698 V4 is unavailable, the Pascal based DGX-1 with an E5-2698 V3 was priced at launch at $129,000
+ The Volta based DGX-1 is equipped with an E5-2698 V4 and was priced at launch at $149,000.
+
+ DGX Station 
+Designed as a turnkey deskside AI supercomputer, the DGX Station is a tower computer that can function completely independently without typical datacenter infrastructure such as cooling, redundant power, or 19 inch racks.
+
+The DGX station was first available with the following specifications.
+
+ Four Volta-based Tesla V100 accelerators, each with 16 GB of HBM2 memory
+ 480 TFLOPS FP16
+ Single Intel Xeon E5-2698 v4
+ 256 GB DDR4
+ 4x 1.92 TB SSDs
+ Dual 10 Gb Ethernet
+
+The DGX station is water-cooled to better manage the heat of almost 1500W of total system components, this allows it to keep a noise range under 35 dB under load.Supercomputer datasheet nvidia.com This, among other features, made this system a compelling purchase for customers without the infrastructure to run rackmount DGX systems, which can be loud, output a lot of heat, and take up a large area. This was Nvidia's first venture into bringing high performance computing deskside, which has since remained a prominent marketing strategy for Nvidia.
+
+ DGX-2 
+The successor of the Nvidia DGX-1 is the Nvidia DGX-2, which uses sixteen Volta-based V100 32 GB (second generation) cards in a single unit. It was announced on 27 March in 2018. The DGX-2 delivers 2 Petaflops with 512 GB of shared memory for tackling massive datasets and uses NVSwitch for high-bandwidth internal communication. DGX-2 has a total of 512 GB of HBM2 memory, a total of 1.5 TB of DDR4. Also present are eight 100 Gb/sec InfiniBand cards and 30.72 TB of SSD storage, all enclosed within a massive 10U rackmount chassis and drawing up to 10 kW under maximum load. The initial price for the DGX-2 was $399,000.
+
+The DGX-2 differs from other DGX models in that it contains two separate GPU daughterboards, each with eight GPUs. These boards are connected by an NVSwitch system that allows for full bandwidth communication across all GPUs in the system, without additional latency between boards.
+
+A higher performance variant of the DGX-2, the DGX-2H, was offered as well. The DGX-2H replaced the DGX-2's dual Intel Xeon Platinum 8168's with upgraded dual Intel Xeon Platinum 8174's. This upgrade does not increase core count per system, as both CPUs are 24 cores, nor does it enable any new functions of the system, but it does increase the base frequency of the CPUs from 2.7 GHz to 3.1 GHz.DGX2 User Guide nvidia.com
+
+ Ampere 
+ DGX A100 Server 
+Announced and released on May 14, 2020. The DGX A100 was the 3rd generation of DGX server, including 8 Ampere-based A100 accelerators. Also included is 15 TB of PCIe gen 4 NVMe storage, 1 TB of RAM, and eight Mellanox-powered 200 GB/s HDR InfiniBand ConnectX-6 NICs. The DGX A100 is in a much smaller enclosure than its predecessor, the DGX-2, taking up only 6 Rack units.
+
+The DGX A100 also moved to a 64 core AMD EPYC 7742 CPU, the first DGX server to not be built with an Intel Xeon CPU. The initial price for the DGX A100 Server was $199,000.
+
+ DGX Station A100 
+As the successor to the original DGX Station, the DGX Station A100, aims to fill the same niche as the DGX station in being a quiet, efficient, turnkey cluster-in-a-box solution that can be purchased, leased, or rented by smaller companies or individuals who want to utilize machine learning. It follows many of the design choices of the original DGX station, such as the tower orientation, single socket CPU mainboard, a new refrigerant-based cooling system, and a reduced number of accelerators compared to the corresponding rackmount DGX A100 of the same generation. The price for the DGX Station A100 320G is $149,000 and $99,000 for the 160G model, Nvidia also offers Station rental at ~$9000 USD per month through partners in the US (rentacomputer.com) and Europe (iRent IT Systems) to help reduce the costs of implementing these systems at a small scale.
+
+The DGX Station A100 comes with two different configurations of the built in A100.
+
+ Four Ampere-based A100 accelerators, configured with 40 GB (HBM) or 80 GB (HBM2e) memory,thus giving a total of 160 GB or 320 GB resulting either in DGX Station A100 variants 160G or 320G.
+ 2.5 PFLOPS FP16
+ Single 64 Core AMD EPYC 7742
+ 512 GB DDR4
+ 1 x 1.92 TB NVMe OS drive
+ 1 x 7.68 TB U.2 NVMe Drive
+ Dual port 10 Gb Ethernet
+ Single port 1 Gb BMC port
+
+ Hopper 
+ DGX H100 Server 
+Announced March 22, 2022 and planned for release in Q3 2022, The DGX H100 is the 4th generation of DGX servers, built with 8 Hopper-based H100 accelerators, for a total of 32 PFLOPs of FP8 AI compute and 640 GB of HBM3 Memory, an upgrade over the DGX A100s 640GB HBM2 memory. This upgrade also increases VRAM bandwidth to 3 TB/s. The DGX H100 increases the rackmount size to 8U to accommodate the 700W TDP of each H100 SXM card. The DGX H100 also has two 1.92 TB SSDs for Operating System storage, and 30.72 TB of Solid state storage for application data.
+
+One more notable addition is the presence of two Nvidia Bluefield 3 DPUs, and the upgrade to 400 Gb/s InfiniBand via Mellanox ConnectX-7 NICs, double the bandwidth of the DGX A100. The DGX H100 uses new 'Cedar Fever' cards, each with four ConnectX-7 400 GB/s controllers, and two cards per system. This gives the DGX H100 3.2 Tb/s of fabric bandwidth across Infiniband.
+
+The DGX H100 has two Xeon Platinum 8480C Scalable CPUs (Codenamed Sapphire Rapids) and 2 Terabytes of System Memory.
+
+The DGX H100 was priced at £379,000 or ~$482,000 USD at release.
+
+ DGX GH200 
+Announced May 2023, the DGX GH200 connects 32 Nvidia Hopper Superchips into a singular superchip, that consists totally of 256 H100 GPUs, 32 Grace Neoverse V2 72-core CPUs, 32 OSFT single-port ConnectX-7 VPI of with 400 Gb/s InfiniBand and 16 dual-port BlueField-3 VPI with 200 Gb/s of Mellanox   . Nvidia DGX GH200 is designed to handle terabyte-class models for massive recommender systems, generative AI, and graph analytics, offering 19.5 TB of shared memory with linear scalability for giant AI models.
+
+ DGX Helios 
+Announced May 2023, the DGX Helios supercomputer features 4 DGX GH200 systems. Each is interconnected with Nvidia Quantum-2 InfiniBand networking to supercharge data throughput for training large AI models. Helios includes 1,024 H100 GPUs.
+
+ Blackwell 
+ DGX GB200 
+Announced March 2024, GB200 NVL72 connects 36 Grace Neoverse V2 72-core CPUs and 72 B100 GPUs in a rack-scale design. The GB200 NVL72 is a liquid-cooled, rack-scale solution that boasts a 72-GPU NVLink domain that acts as a single massive GPU . Nvidia DGX GB200 offers 13.5 TB HBM3e of shared memory with linear scalability for giant AI models, less than its predecessor DGX GH200.
+
+ DGX SuperPod 
+The DGX Superpod is a high performance turnkey supercomputer solution provided by Nvidia using DGX hardware. This system combines DGX compute nodes with fast storage and high bandwidth networking to provide a solution to high demand machine learning workloads. The Selene Supercomputer, at the Argonne National Laboratory, is one example of a DGX SuperPod based system.
+
+Selene, built from 280 DGX A100 nodes, ranked 5th on the Top500 list for most powerful supercomputers at the time of its completion, and has continued to remain high in performance. This same integration is available to any customer with minimal effort on their behalf, and the new Hopper based SuperPod can scale to 32 DGX H100 nodes, for a total of 256 H100 GPUs and 64 x86 CPUs. This gives the complete SuperPod 20 TB of HBM3 memory, 70.4 TB/s of bisection bandwidth, and up to 1 ExaFLOP of FP8 AI compute. These SuperPods can then be further joined to create larger supercomputers.
+
+Eos supercomputer, designed, built, and operated by Nvidia, was constructed of 18 H100 based SuperPods, totaling 576 DGX H100 systems, 500 Quantum-2 InfiniBand switches, and 360 NVLink Switches, that allow Eos to deliver 18 EFLOPs of FP8 compute, and 9 EFLOPs of FP16 compute, making Eos the 5th fastest AI supercomputer in the world, according to TOP500 (November 2023 edition).
+
+As Nvidia does not produce any storage devices or systems, Nvidia SuperPods rely on partners to provide high performance storage. Current storage partners for Nvidia Superpods are Dell EMC, DDN, HPE, IBM, NetApp, Pavilion Data, and VAST Data.
+
+ Accelerators 

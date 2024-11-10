@@ -1,0 +1,50 @@
+Vowpal Wabbit (VW) is an open-source fast online interactive machine learning system library and program developed originally at Yahoo! Research, and currently at Microsoft Research. It was started and is led by John Langford. Vowpal Wabbit's interactive learning support is particularly notable including Contextual Bandits, Active Learning, and forms of guided Reinforcement Learning. Vowpal Wabbit provides an efficient scalable out-of-core implementation with support for a number of machine learning reductions, importance weighting, and a selection of different loss functions and optimization algorithms.
+
+Notable features
+The VW program supports:
+
+ Multiple supervised (and semi-supervised) learning problems:
+ Classification (both binary and multi-class)
+ Regression
+ Active learning (partially labeled data) for both regression and classification
+ Multiple learning algorithms (model-types / representations)
+ OLS regression
+ Matrix factorization (sparse matrix SVD)
+ Single layer neural net (with user specified hidden layer node count)
+ Searn (Search and Learn)
+ Latent Dirichlet Allocation (LDA)
+ Stagewise polynomial approximation
+ Recommend top-K out of N
+ One-against-all (OAA) and cost-sensitive OAA reduction for multi-class
+ Weighted all pairs
+ Contextual-bandit (with multiple exploration/exploitation strategies)
+ Multiple loss functions:
+ squared error
+ quantile
+ hinge
+ logistic
+ poisson
+ Multiple optimization algorithms
+ Stochastic gradient descent (SGD)
+ BFGS
+ Conjugate gradient
+ Regularization (L1 norm, L2 norm, & elastic net regularization)
+ Flexible input - input features may be:
+ Binary
+ Numerical
+ Categorical (via flexible feature-naming and the hash trick)
+ Can deal with missing values/sparse-features
+ Other features
+ On the fly generation of feature interactions (quadratic and cubic)
+ On the fly generation of N-grams with optional skips (useful for word/language data-sets)
+ Automatic test-set holdout and early termination on multiple passes
+ bootstrapping
+ User settable online learning progress report + auditing of the model
+ Hyperparameter optimization
+
+Scalability
+Vowpal wabbit has been used to learn a tera-feature (1012) data-set on 1000 nodes in one hour. Its scalability is aided by several factors:
+ Out-of-core online learning: no need to load all data into memory
+ The hashing trick: feature identities are converted to a weight index via a hash (uses 32-bit MurmurHash3)
+ Exploiting multi-core CPUs: parsing of input and learning are done in separate threads.   
+ Compiled C++ code

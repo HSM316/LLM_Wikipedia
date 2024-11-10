@@ -1,0 +1,29 @@
+In machine learning and statistics, the learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. Since it influences to what extent newly acquired information overrides old information, it metaphorically represents the speed at which a machine learning model "learns". In the adaptive control literature, the learning rate is commonly referred to as gain.
+
+In setting a learning rate, there is a trade-off between the rate of convergence and overshooting. While the descent direction is usually determined from the gradient of the loss function, the learning rate determines how big a step is taken in that direction. A too high learning rate will make the learning jump over minima but a too low learning rate will either take too long to converge or get stuck in an undesirable local minimum.
+
+In order to achieve faster convergence, prevent oscillations and getting stuck in undesirable local minima the learning rate is often varied during training either in accordance to a learning rate schedule or by using an adaptive learning rate. The learning rate and its adjustments may also differ per parameter, in which case it is a diagonal matrix that can be interpreted as an approximation to the inverse of the Hessian matrix in Newton's method. The learning rate is related to the step length determined by inexact line search in quasi-Newton methods and related optimization algorithms. 
+
+When conducting line searches, mini-batch sub-sampling (MBSS) affect the characteristics of the loss function along which the learning rate needs to be resolved. Static MBSS keeps the mini-batch fixed along a search direction, resulting in a smooth loss function along the search direction. Dynamic MBSS updates the mini-batch at every function evaluation, resulting in a point-wise discontinuous loss function along the search direction. Line searches that adaptively resolve learning rates for static MBSS loss functions include the parabolic approximation line (PAL) search. Line searches that adaptively resolve learning rates for dynamic MBSS loss functions include probabilistic line searches, gradient-only line searches (GOLS) and quadratic approximations.
+
+ Learning rate schedule 
+Initial rate can be left as system default or can be selected using a range of techniques. A learning rate schedule changes the learning rate during learning and is most often changed between epochs/iterations. This is mainly done with two parameters: decay and momentum . There are many different learning rate schedules but the most common are time-based, step-based and exponential.
+
+Decay serves to settle the learning in a nice place and avoid oscillations, a situation that may arise when a too high constant learning rate makes the learning jump back and forth over a minimum, and is controlled by a hyperparameter.
+
+Momentum is analogous to a ball rolling down a hill; we want the ball to settle at the lowest point of the hill (corresponding to the lowest error). Momentum both speeds up the learning (increasing the learning rate) when the error cost gradient is heading in the same direction for a long time and also avoids local minima by 'rolling over' small bumps. Momentum is controlled by a hyper parameter analogous to a ball's mass which must be chosen manually—too high and the ball will roll over minima which we wish to find, too low and it will not fulfil its purpose. The formula for factoring in the momentum is more complex than for decay but is most often built in with deep learning libraries such as Keras.
+
+Time-based learning schedules alter the learning rate depending on the learning rate of the previous time iteration. Factoring in the decay the mathematical formula for the learning rate is:
+
+where  is the learning rate,  is a decay parameter and  is the iteration step.
+
+Step-based learning schedules changes the learning rate according to some pre defined steps. The decay application formula is here defined as:
+
+where  is the learning rate at iteration ,  is the initial learning rate,  is how much the learning rate should change at each drop (0.5 corresponds to a halving) and  corresponds to the droprate, or how often the rate should be dropped (10 corresponds to a drop every 10 iterations). The floor function () here drops the value of its input to 0 for all values smaller than 1.
+
+Exponential learning schedules are similar to step-based but instead of steps a decreasing exponential function is used. The mathematical formula for factoring in the decay is:
+
+where  is a decay parameter.
+
+Adaptive learning rate
+The issue with learning rate schedules is that they all depend on hyperparameters that must be manually chosen for each given learning session and may vary greatly depending on the problem at hand or the model used. To combat this there are many different types of adaptive gradient descent algorithms such as Adagrad, Adadelta, RMSprop, and Adam which are generally built into deep learning libraries such as Keras.

@@ -1,0 +1,47 @@
+Screenshot of a Moral Machine dilemma
+Moral Machine is an online platform, developed by Iyad Rahwan's Scalable Cooperation group at the Massachusetts Institute of Technology, that generates moral dilemmas and collects information on the decisions that people make between two destructive outcomes. The platform is the idea of Iyad Rahwan and social psychologists Azim Shariff and Jean-François Bonnefon, who conceived of the idea ahead of the publication of their article about the ethics of self-driving cars. The key contributors to building the platform were MIT Media Lab graduate students Edmond Awad and Sohan Dsouza.
+
+The presented scenarios are often variations of the trolley problem, and the information collected would be used for further research regarding the decisions that machine intelligence must make in the future. For example, as artificial intelligence plays an increasingly significant role in autonomous driving technology, research projects like Moral Machine help to find solutions for challenging life-and-death decisions that will face self-driving vehicles.
+
+Moral Machine was active from January 2016 to July 2020. The Moral Machine continues to be available on their website for people to experience.
+
+ The experiment 
+The Moral Machine was an ambitious project; it was the first attempt at using such an experimental design to test a large number of humans in over 200 countries worldwide. The study was approved by the Institute Review Board (IRB) at Massachusetts Institute of Technology (MIT). 
+
+The setup of the experiment asks the viewer to make a decision on a single scenario in which a self-driving car is about to hit pedestrians. The user can decide to have the car either swerve to avoid hitting the pedestrians or keep going straight to preserve the lives it is transporting.
+
+Participants can complete as many scenarios as they want to, however the scenarios themselves are generated in groups of thirteen. Within this thirteen, a single scenario is entirely random while the other twelve are generated from a space in a database of 26 million different possibilities. They are chosen with two dilemmas focused on each of six dimensions of moral preferences: character gender, character age, character physical fitness, character social status, character species, and character number.
+
+The experiment setup remains the same throughout multiple scenarios but each scenario tests a different set of factors. Most notably, the characters involved in the scenario are different in each one. Characters may include ones such as: Stroller, girl, boy, pregnant, Male Doctor, Female Doctor, Female Athlete, Executive Female, Male Athlete, Executive Male, Large Woman, Large Man, homeless, old man, old woman, dog, criminal, and a cat.
+
+Through these different characters researchers were able to understand how a wide variety of people will judge scenarios based on those involved.
+
+ Analysis 
+The Moral Machine collected 40 million moral decisions from 4 million participants in 233 countries, analysis of which revealed trends within individual countries and humanity as a whole. It tested for nine factors: preference for sparing humans versus pets, passengers versus pedestrians, men versus women, young versus elderly, fit versus overweight, higher versus lower social status, jaywalkers versus law abiders, larger versus smaller groups, and inaction (i.e. staying on course) versus swerving.
+
+Globally, participants favored human lives over lives of animals like dogs and cats. They preferred to spare more lives if possible, and younger lives as opposed to older. Babies were most often spared with cats being the least spared. In terms of gender variations, people tended to spare men over women for doctors and the elderly. All countries generally shared the preference to spare pedestrians over passengers and law-abiders over criminals.
+
+Participants from less wealthy countries showed a higher tendency of sparing pedestrians who crossed illegally compared to those from more wealthy and developed countries. This is most likely due to their experience living in a society where individuals are more likely to deviate from rules due to less stringent enforcement of laws.  Countries of higher economic inequality overwhelmingly prefer to save wealthier individuals over poorer ones. 
+
+ Cultural differences 
+Researchers subdivided 130 countries with similar results into three ‘cultural clusters’.
+North America and European countries with significant Christian populations had a higher preference for inaction on the part of the driver and thus had less of a preference for sparing pedestrians as compared to other clusters.
+East Asian and Islamic countries, together constituting the second cluster, did not have as much preference to spare younger humans compared to the other two clusters and had a higher preference for sparing law-abiding humans.
+Latin America and Francophone countries had a higher preference for sparing women, the young, the fit, and those of higher status, but a lower preference for sparing humans over pets or other animals.
+
+Individualistic cultures tended to spare larger groups, and collectivist cultures had a stronger preference for sparing the lives of older people. For instance, China ranked far below the world average for preference to spare the younger over elderly, while the average respondent from the US exhibited a much higher tendency to save younger lives and larger groups.
+
+ Applications of the data 
+The findings from the moral machine can help decision makers when designing self-driving automotive systems. Designers must make sure that these vehicles are able to solve problems on the road that aligns with the moral values of humans around it. 
+
+This is a challenge because of the complex nature of humans who may all make different decisions based on their personal values. However, by collecting a large amount of decisions from humans all over the world, researchers can begin to understand patterns in the context of a particular culture, community, and people.
+
+ Other features 
+The Moral Machine was deployed in June 2016. In October 2016, a feature was added that offered users the option to fill a survey about their demographics, political views, and religious beliefs. Between November 2016 and March 2017, the website was progressively translated into nine languages in addition to English (Arabic, Chinese, French, German, Japanese, Korean, Portuguese, Russian, and Spanish).
+
+Overall, the Moral Machine offers four different modes (see Supplementary Information), with  the focus being on the data-gathering feature of the website, called the Judge mode. 
+
+This means that the Moral Machine, in addition to providing their own scenarios for users to judge, also invites users to create their own scenarios to be submitted and approved so that other people may also judge those scenarios. Data is also open sourced for anyone to explore via an interactive map that is featured on the Moral Machine website.
+
+ In the literature 
+Studies and research on the Moral Machine have taken a wide variety of approaches. However, theological examinations of the topic are still scarce where two bodies of work that examine such perspective currently exist in this regard: One is Buddhist while the other is Christian. 

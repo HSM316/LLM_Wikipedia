@@ -1,0 +1,44 @@
+In statistical learning theory, a learnable function class is a set of functions for which an algorithm can be devised to asymptotically minimize the expected risk, uniformly over all probability distributions. The concept of learnable classes are closely related to regularization in machine learning, and provides large sample justifications for certain learning algorithms.
+
+ Definition 
+
+ Background 
+
+Let  be the sample space, where  are the labels and  are the covariates (predictors).  is a collection of mappings (functions) under consideration to link  to .  is a pre-given loss function (usually non-negative). Given a probability distribution  on , define the expected risk  to be:
+
+The general goal in statistical learning is to find the function in  that minimizes the expected risk. That is, to find solutions to the following problem:
+
+But in practice the distribution  is unknown, and any learning task can only be based on finite samples. Thus we seek instead to find an algorithm that asymptotically minimizes the empirical risk, i.e., to find a sequence of functions  that satisfies
+
+One usual algorithm to find such a sequence is through empirical risk minimization.
+
+ Learnable function class 
+We can make the condition given in the above equation stronger by requiring that the convergence is uniform for all probability distributions. That is:
+
+The intuition behind the more strict requirement is as such: the rate at which sequence  converges to the minimizer of the expected risk can be very different for different . Because in real world the true distribution  is always unknown, we would want to select a sequence that performs well under all cases.
+
+However, by the no free lunch theorem, such a sequence that satisfies () does not exist if  is too complex. This means we need to be careful and not allow too "many" functions in  if we want () to be a meaningful requirement. Specifically, function classes that ensure the existence of a sequence  that satisfies () are known as learnable classes.
+
+It is worth noting that at least for supervised classification and regression problems, if a function class is learnable, then the empirical risk minimization automatically satisfies (). Thus in these settings not only do we know that the problem posed by () is solvable, we also immediately have an algorithm that gives the solution.
+
+ Interpretations 
+If the true relationship between  and  is , then by selecting the appropriate loss function,  can always be expressed as the minimizer of the expected loss across all possible functions. That is,
+
+Here we let  be the collection of all possible functions mapping  onto .  can be interpreted as the actual data generating mechanism. However, the no free lunch theorem tells us that in practice, with finite samples we cannot hope to search for the expected risk minimizer over . Thus we often consider a subset of , , to carry out searches on. By doing so, we risk that  might not be an element of . This tradeoff can be mathematically expressed as
+
+In the above decomposition, part  does not depend on the data and is non-stochastic. It describes how far away our assumptions () are from the truth ().  will be strictly greater than 0 if we make assumptions that are too strong ( too small). On the other hand, failing to put enough restrictions on  will cause it to be not learnable, and part  will not stochastically converge to 0. This is the well-known overfitting problem in statistics and machine learning literature.
+
+ Example: Tikhonov regularization 
+A good example where learnable classes are used is the so-called Tikhonov regularization in reproducing kernel Hilbert space (RKHS). Specifically, let  be an RKHS, and  be the norm on  given by its inner product. It is shown in  that  is a learnable class for any finite, positive . The empirical minimization algorithm to the dual form of this problem is
+
+This was first introduced by Tikhonov to solve ill-posed problems. Many statistical learning algorithms can be expressed in such a form (for example, the well-known ridge regression).
+
+The tradeoff between  and  in () is geometrically more intuitive with Tikhonov regularization in RKHS. We can consider a sequence of , which are essentially balls in   with centers at 0. As  gets larger,  gets closer to the entire space, and  is likely to become smaller. However we will also suffer smaller convergence rates in . The way to choose an optimal  in finite sample settings is usually through cross-validation.
+
+ Relationship to empirical process theory 
+
+Part  in () is closely linked to empirical process theory in statistics, where the empirical risk  are known as empirical processes. In this field, the function class  that satisfies the stochastic convergence
+
+are known as uniform Glivenko–Cantelli classes. It has been shown that under certain regularity conditions, learnable classes and uniformly Glivenko-Cantelli classes are equivalent. Interplay between  and  in statistics literature is often known as the bias-variance tradeoff.
+
+However, note that in  the authors gave an example of stochastic convex optimization for General Setting of Learning where learnability is not equivalent with uniform convergence.

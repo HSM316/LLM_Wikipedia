@@ -1,0 +1,48 @@
+right|400px|Superellipsoid collection with exponent parameters, created using POV-Ray. Here, e = 2/r, and n = 2/t (equivalently, r = 2/e and t = 2/n).
+
+In mathematics, a superellipsoid (or super-ellipsoid) is a solid whose horizontal sections are superellipses (Lamé curves) with the same exponent r, and whose vertical sections through the center are superellipses with the same exponent t.
+
+Superellipsoids as computer graphics primitives were popularized by Alan H. Barr (who used the name "superquadrics" to refer to both superellipsoids and supertoroids).Barr, A.H. (January 1981), Superquadrics and Angle-Preserving Transformations. IEEE_CGA vol. 1 no. 1, pp. 11–23Barr, A.H. (1992), Rigid Physically Based Superquadrics. Chapter III.8 of Graphics Gems III, edited by D. Kirk, pp. 137–159 However, while some superellipsoids are superquadrics, neither family is contained in the other.
+
+ Special cases 
+A handful of notable mathematical figures can arise as special cases of superellipsoids given the correct set of values, which are depicted in the above graphic:
+
+ Cylinder
+ Sphere
+ Steinmetz solid
+ Bicone
+ Regular octahedron
+ Cube, as a limiting case where the exponents tend to infinity
+
+Piet Hein's supereggs are also special cases of superellipsoids.
+
+ Formulas 
+
+ Basic shape 
+The basic superellipsoid is defined by the implicit inequality
+
+The parameters r and t are positive real numbers that control the amount of flattening at the tips and at the equator.  Note that the formula becomes a special case of the superquadric's equation if (and only if) t = r.
+
+Any "parallel of latitude" of the superellipsoid (a horizontal section at any constant z between -1 and +1) is a Lamé curve with exponent r, scaled by :
+
+ 
+
+Any "meridian of longitude" (a section by any vertical plane through the origin) is a Lamé curve with exponent t, stretched horizontally by a factor w that depends on the sectioning plane.  Namely, if x = u cos θ and y = u sin θ, for a fixed θ, then
+
+ 
+
+where
+
+In particular, if r is 2, the horizontal cross-sections are circles, and the horizontal stretching w of the vertical sections is 1 for all planes.  In that case, the superellipsoid is a solid of revolution, obtained by rotating the Lamé curve with exponent t around the vertical axis.
+
+The basic shape above extends from −1 to +1 along each coordinate axis. The general superellipsoid is obtained by scaling the basic shape along each axis by factors A, B, C, the semi-diameters of the resulting solid.  The implicit inequality is
+
+Setting r = 2, t = 2.5, A = B = 3, C = 4 one obtains Piet Hein's superegg.
+
+The general superellipsoid has a parametric representation in terms of surface parameters -π/2 < v < π/2, -π < u < π.
+
+where the auxiliary functions are
+
+and the sign function sgn(x) is 
+
+The volume inside this surface can be expressed in terms of beta functions (and Gamma functions, because β(m,n) = Γ(m)Γ(n) / Γ(m + n) ), as:

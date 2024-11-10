@@ -1,0 +1,7 @@
+The Center for Human-Compatible Artificial Intelligence (CHAI) is a research center at the University of California, Berkeley focusing on advanced artificial intelligence (AI) safety methods.  The center was founded in 2016 by a group of academics led by Berkeley computer science professor and AI expert Stuart J. Russell. Russell is known for co-authoring the widely used AI textbook Artificial Intelligence: A Modern Approach.
+
+CHAI's faculty membership includes Russell, Pieter Abbeel and Anca Dragan from Berkeley, Bart Selman and Joseph Halpern from Cornell, Michael Wellman and Satinder Singh Baveja from the University of Michigan, and Tom Griffiths and Tania Lombrozo from Princeton. In 2016, the Open Philanthropy Project (OpenPhil) recommended that Good Ventures provide CHAI support of $5,555,550 over five years. CHAI has since received additional grants from OpenPhil and Good Ventures of over $12,000,000, including for collaborations with the World Economic Forum and Global AI Council.
+
+ Research 
+
+CHAI's approach to AI safety research focuses on value alignment strategies, particularly inverse reinforcement learning, in which the AI infers human values from observing human behavior.  It has also worked on modeling human-machine interaction in scenarios where intelligent machines have an "off-switch" that they are capable of overriding.

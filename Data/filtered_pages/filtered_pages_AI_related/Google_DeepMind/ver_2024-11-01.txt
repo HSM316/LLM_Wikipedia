@@ -1,0 +1,171 @@
+DeepMind Technologies Limited, also known by its trade name Google DeepMind,  is a British-American artificial intelligence research laboratory which serves as a subsidiary of Google. Founded in the UK in 2010, it was acquired by Google in 2014 and merged with Google AI's Google Brain division to become Google DeepMind in April 2023. The company is based in London, with research centres in Canada, France, Germany, and the United States.
+
+DeepMind introduced neural Turing machines (neural networks that can access external memory like a conventional Turing machine), resulting in a computer that loosely resembles short-term memory in the human brain.Best of 2014: Google's Secretive DeepMind Startup Unveils a "Neural Turing Machine" , MIT Technology Review
+
+DeepMind has created neural network models to play video games and board games. It made headlines in 2016 after its AlphaGo program beat a human professional Go player Lee Sedol, a world champion, in a five-game match, which was the subject of a documentary film. A more general program, AlphaZero, beat the most powerful programs playing go, chess and shogi (Japanese chess) after a few days of play against itself using reinforcement learning.
+
+In 2020, DeepMind made significant advances in the problem of protein folding with AlphaFold. In July 2022, it was announced that over 200 million predicted protein structures, representing virtually all known proteins, would be released on the AlphaFold database. AlphaFold's database of predictions achieved state of the art records on benchmark tests for protein folding algorithms, although each individual prediction still requires confirmation by experimental tests. AlphaFold3 was released in May 2024, making structural predictions for the interaction of proteins with various molecules. It achieved new standards on various benchmarks, raising the state of the art accuracies from 28 and 52 percent to 65 and 76 percent.
+
+ History 
+
+The start-up was founded by Demis Hassabis, Shane Legg and Mustafa Suleyman in November 2010. Hassabis and Legg first met at the Gatsby Computational Neuroscience Unit at University College London (UCL).
+
+Demis Hassabis has said that the start-up began working on artificial intelligence technology by teaching it how to play old games from the seventies and eighties, which are relatively primitive compared to the ones that are available today. Some of those games included Breakout, Pong, and Space Invaders. AI was introduced to one game at a time, without any prior knowledge of its rules. After spending some time on learning the game, AI would eventually become an expert in it. "The cognitive processes which the AI goes through are said to be very like those of a human who had never seen the game would use to understand and attempt to master it." The goal of the founders is to create a general-purpose AI that can be useful and effective for almost anything.
+
+Major venture capital firms Horizons Ventures and Founders Fund invested in the company, as well as entrepreneurs Scott Banister, Peter Thiel, and Elon Musk. Jaan Tallinn was an early investor and an adviser to the company. On 26 January 2014, Google confirmed its acquisition of DeepMind for a price reportedly ranging between $400 million and $650 million. and that it had agreed to take over DeepMind Technologies. The sale to Google took place after Facebook reportedly ended negotiations with DeepMind Technologies in 2013. The company was afterwards renamed Google DeepMind and kept that name for about two years.
+
+In 2014, DeepMind received the "Company of the Year" award from Cambridge Computer Laboratory.
+
+In September 2015, DeepMind and the Royal Free NHS Trust signed their initial information sharing agreement to co-develop a clinical task management app, Streams.
+
+After Google's acquisition the company established an artificial intelligence ethics board. The ethics board for AI research remains a mystery, with both Google and DeepMind declining to reveal who sits on the board. DeepMind has opened a new unit called DeepMind Ethics and Society and focused on the ethical and societal questions raised by artificial intelligence featuring prominent philosopher Nick Bostrom as advisor. In October 2017, DeepMind launched a new research team to investigate AI ethics.
+
+In December 2019, co-founder Suleyman announced he would be leaving DeepMind to join Google, working in a policy role.Madhumita Murgia, "DeepMind co-founder leaves for policy role at Google", Financial Times, 5 December 2019 In March 2024, Microsoft appointed him as the EVP and CEO of its newly created consumer AI unit, Microsoft AI.
+
+In April 2023, DeepMind merged with Google AI's Google Brain division to form Google DeepMind, as part of the company's continued efforts to accelerate work on AI in response to OpenAI's ChatGPT. This marked the end of a years-long struggle from DeepMind executives to secure greater autonomy from Google.
+
+ Products and technologies 
+Google Research released a paper in 2016 regarding AI safety and avoiding undesirable behaviour during the AI learning process. In 2017 DeepMind released GridWorld, an open-source testbed for evaluating whether an algorithm learns to disable its kill switch or otherwise exhibits certain undesirable behaviours.
+
+In July 2018, researchers from DeepMind trained one of its systems to play the computer game Quake III Arena."DeepMind AI's new trick is playing 'Quake III Arena' like a human". Engadget. 3 July 2018.
+
+As of 2020, DeepMind has published over a thousand papers, including thirteen papers that were accepted by Nature or Science. DeepMind received media attention during the AlphaGo period; according to a LexisNexis search, 1842 published news stories mentioned DeepMind in 2016, declining to 1363 in 2019.
+
+Games
+Unlike earlier AIs, such as IBM's Deep Blue or Watson, which were developed for a pre-defined purpose and only function within that scope, DeepMind's initial algorithms were intended to be general. They used reinforcement learning, an algorithm that learns from experience using only raw pixels as data input. Their initial approach used deep Q-learning with a convolutional neural network. They tested the system on video games, notably early arcade games, such as Space Invaders or Breakout. Without altering the code, the same AI was able to play certain games more efficiently than any human ever could.
+
+In 2013, DeepMind published research on an AI system that surpassed human abilities in games such as Pong, Breakout and Enduro, while surpassing state of the art performance on Seaquest, Beamrider, and Q*bert. This work reportedly led to the company's acquisition by Google. DeepMind's AI had been applied to video games made in the 1970s and 1980s; work was ongoing for more complex 3D games such as Quake, which first appeared in the 1990s.
+
+In 2020, DeepMind published Agent57, an AI Agent which surpasses human level performance on all 57 games of the Atari 2600 suite. In July 2022, DeepMind announced the development of DeepNash, a model-free multi-agent reinforcement learning system capable of playing the board game Stratego at the level of a human expert.
+
+ AlphaGo and successors 
+
+In October 2015, a computer Go program called AlphaGo, developed by DeepMind, beat the European Go champion Fan Hui, a 2 dan (out of 9 dan possible) professional, five to zero. This was the first time an artificial intelligence (AI) defeated a professional Go player. Previously, computers were only known to have played Go at "amateur" level. Go is considered much more difficult for computers to win compared to other games like chess, due to the much larger number of possibilities, making it prohibitively difficult for traditional AI methods such as brute-force.
+
+In March 2016 it beat Lee Sedol, one of the highest ranked players in the world, with a score of 4 to 1 in a five-game match. In the 2017 Future of Go Summit, AlphaGo won a three-game match with Ke Jie, who had been the world's highest-ranked player for two years. In 2017, an improved version, AlphaGo Zero, defeated AlphaGo in a hundred out of a hundred games. Later that year, AlphaZero, a modified version of AlphaGo Zero, gained superhuman abilities at chess and shogi. In 2019, DeepMind released a new model named MuZero that mastered the domains of Go, chess, shogi, and Atari 2600 games without human data, domain knowledge, or known rules.
+
+AlphaGo technology was developed based on deep reinforcement learning, making it different from the AI technologies then on the market. The data fed into the AlphaGo algorithm consisted of various moves based on historical tournament data. The number of moves was increased gradually until over 30 million of them were processed. The aim was to have the system mimic the human player, as represented by the input data, and eventually become better. It played against itself and learned from the outcomes; thus, it learned to improve itself over the time and increased its winning rate as a result.
+
+AlphaGo used two deep neural networks: a policy network to evaluate move probabilities and a value network to assess positions. The policy network trained via supervised learning, and was subsequently refined by policy-gradient reinforcement learning. The value network learned to predict winners of games played by the policy network against itself. After training, these networks employed a lookahead Monte Carlo tree search, using the policy network to identify candidate high-probability moves, while the value network (in conjunction with Monte Carlo rollouts using a fast rollout policy) evaluated tree positions.
+
+In contrast, AlphaGo Zero was trained without being fed data of human-played games. Instead it generated its own data, playing millions of games against itself. It used a single neural network, rather than separate policy and value networks. Its simplified tree search relied upon this neural network to evaluate positions and sample moves. A new reinforcement learning algorithm incorporated lookahead search inside the training loop. AlphaGo Zero employed around 15 people and millions in computing resources. Ultimately, it needed much less computing power than AlphaGo, running on four specialized AI processors (Google TPUs), instead of AlphaGo's 48. It also required less training time, being able to beat its predecessor after just three days, compared with months required for the original AlphaGo. Similarly, AlphaZero also learned via self-play.
+
+Researchers applied MuZero to solve the real world challenge of video compression with a set number of bits with respect to Internet traffic on sites such as YouTube, Twitch, and Google Meet. The goal of MuZero is to optimally compress the video so the quality of the video is maintained with a reduction in data. The final result using MuZero was a 6.28% average reduction in bitrate.
+
+ AlphaStar 
+
+In 2016, Hassabis discussed the game StarCraft as a future challenge, since it requires strategic thinking and handling imperfect information.
+
+In January 2019, DeepMind introduced AlphaStar, a program playing the real-time strategy game StarCraft II. AlphaStar used reinforcement learning based on replays from human players, and then played against itself to enhance its skills. At the time of the presentation, AlphaStar had knowledge equivalent to 200 years of playing time. It won 10 consecutive matches against two professional players, although it had the unfair advantage of being able to see the entire field, unlike a human player who has to move the camera manually. A preliminary version in which that advantage was fixed lost a subsequent match.
+
+In July 2019, AlphaStar began playing against random humans on the public 1v1 European multiplayer ladder. Unlike the first iteration of AlphaStar, which played only Protoss v. Protoss, this one played as all of the game's races, and had earlier unfair advantages fixed. By October 2019, AlphaStar had reached Grandmaster level on the StarCraft II ladder on all three StarCraft races, becoming the first AI to reach the top league of a widely popular esport without any game restrictions.
+
+ Protein folding 
+
+In 2016, DeepMind turned its artificial intelligence to protein folding, a long-standing problem in molecular biology. In December 2018, DeepMind's AlphaFold won the 13th Critical Assessment of Techniques for Protein Structure Prediction (CASP) by successfully predicting the most accurate structure for 25 out of 43 proteins. "This is a lighthouse project, our first major investment in terms of people and resources into a fundamental, very important, real-world scientific problem," Hassabis said to The Guardian. In 2020, in the 14th CASP, AlphaFold's predictions achieved an accuracy score regarded as comparable with lab techniques. Dr Andriy Kryshtafovych, one of the panel of scientific adjudicators, described the achievement as "truly remarkable", and said the problem of predicting how proteins fold had been "largely solved".
+
+In July 2021, the open-source RoseTTAFold and AlphaFold2 were released to allow scientists to run their own versions of the tools. A week later DeepMind announced that AlphaFold had completed its prediction of nearly all human proteins as well as the entire proteomes of 20 other widely studied organisms. The structures were released on the AlphaFold Protein Structure Database. In July 2022, it was announced that the predictions of over 200 million proteins, representing virtually all known proteins, would be released on the AlphaFold database.
+
+The most recent update, AlphaFold3, was released in May 2024, predicting the interactions of proteins with DNA, RNA, and various other molecules. In a particular benchmark test on the problem of DNA interactions, AlphaFold3's attained an accuracy of 65%, significantly improving the previous state of the art of 28%.
+
+In October 2024, Hassabis and John Jumper received half of the 2024 Nobel Prize in Chemistry jointly for protein structure prediction, citing AlphaFold2 achievement.
+
+Language models
+In 2016, DeepMind introduced WaveNet, a text-to-speech system. It was originally too computationally intensive for use in consumer products, but in late 2017 it became ready for use in consumer applications such as Google Assistant. In 2018 Google launched a commercial text-to-speech product, Cloud Text-to-Speech, based on WaveNet. In 2018, DeepMind introduced a more efficient model called WaveRNN co-developed with Google AI. In 2020 WaveNetEQ, a packet loss concealment method based on a WaveRNN architecture, was presented. In 2019, Google started to roll WaveRNN with WavenetEQ out to Google Duo users.
+
+Released in May 2022, Gato is a polyvalent multimodal model. It was trained on 604 tasks, such as image captioning, dialogue, or stacking blocks. On 450 of these tasks, Gato outperformed human experts at least half of the time, according to DeepMind. Unlike models like MuZero, Gato does not need to be retrained to switch from one task to the other.
+
+Sparrow is an artificial intelligence-powered chatbot developed by DeepMind to build safer machine learning systems by using a mix of human feedback and Google search suggestions.
+
+Chinchilla is a language model developed by DeepMind.
+
+DeepMind posted a blog post on 28 April 2022 on a single visual language model (VLM) named Flamingo that can accurately describe a picture of something with just a few training images.
+
+ AlphaCode 
+In 2022, DeepMind unveiled AlphaCode, an AI-powered coding engine that creates computer programs at a rate comparable to that of an average programmer, with the company testing the system against coding challenges created by Codeforces utilized in human competitive programming competitions. AlphaCode earned a rank equivalent to 54% of the median score on Codeforces after being trained on GitHub data and Codeforce problems and solutions. The program was required to come up with a unique solution and stopped from duplicating answers.
+
+Gemini
+
+Gemini is a multimodal large language model which was released on 6 December 2023. It is the successor of Google's LaMDA and PaLM 2 language models and sought to challenge OpenAI's GPT-4. Gemini comes in 3 sizes: Nano, Pro, and Ultra. Gemini is also the name of the chatbot that integrates Gemini (and which was previously called Bard).
+
+Gemma
+
+Gemma is a family of lightweight, open source, large language models which was released on 21 February 2024. It's available in two distinct sizes: a 7 billion parameter model optimized for GPU and TPU usage, and a 2 billion parameter model designed for CPU and on-device applications. Gemma models were trained on up to 6 trillion tokens of text, employing similar architectures, datasets, and training methodologies as the Gemini model family.
+
+SIMA
+In March 2024, DeepMind introduced Scalable Instructable Multiword Agent, or SIMA, an AI agent capable of understanding and following natural language instructions to complete tasks across various 3D virtual environments. Trained on nine video games from eight studios and four research environments, SIMA demonstrated adaptability to new tasks and settings without requiring access to game source code or APIs. The agent comprises pre-trained computer vision and language models fine-tuned on gaming data, with language being crucial for understanding and completing given tasks as instructed. DeepMind's research aimed to develop more helpful AI agents by translating advanced AI capabilities into real-world actions through a language interface.
+
+ Video model 
+In May 2024, a multimodal video generation model called Veo was announced at Google I/O 2024. Google claimed that it could generate 1080p videos beyond a minute long. , the model is in limited testing.
+
+Robotics
+Released in June 2023, RoboCat is an AI model that can control robotic arms. The model can adapt to new models of robotic arms, and to new types of tasks.
+
+ Sports 
+DeepMind researchers have applied machine learning models to the sport of football, often referred to as soccer in North America, modelling the behaviour of football players, including the goalkeeper, defenders, and strikers during different scenarios such as penalty kicks. The researchers used heat maps and cluster analysis to organize players based on their tendency to behave a certain way during the game when confronted with a decision on how to score or prevent the other team from scoring. 
+
+The researchers mention that machine learning models could be used to democratize the football industry by automatically selecting interesting video clips of the game that serve as highlights. This can be done by searching videos for certain events, which is possible because video analysis is an established field of machine learning. This is also possible because of extensive sports analytics based on data including annotated passes or shots, sensors that capture data about the players movements many times over the course of a game, and game theory models.
+
+ Archaeology 
+Google has unveiled a new archaeology document program, named Ithaca after the Greek island in Homer's Odyssey. This deep neural network helps researchers restore the empty text of damaged Greek documents, and to identify their date and geographical origin. The work builds on another text analysis network that DeepMind released in 2019, named Pythia. Ithaca achieves 62% accuracy in restoring damaged texts and 71% location accuracy, and has a dating precision of 30 years. The authors claimed that the use of Ithaca by "expert historians" raised the accuracy of their work from 25 to 72 percent. However, Eleanor Dickey noted that this test was actually only made of students, saying that it wasn't clear how helpful Ithaca would be to "genuinely qualified editors". 
+
+The team is working on extending the model to other ancient languages, including Demotic, Akkadian, Hebrew, and Mayan.
+
+Materials science
+In November 2023, Google DeepMind announced an Open Source Graph Network for Materials Exploration (GNoME). The tool proposes millions of materials previously unknown to chemistry, including several hundred thousand stable crystalline structures, of which 736 had been experimentally produced by the Massachusetts Institute of Technology, at the time of the release. However, according to Anthony Cheetham, GNoME did not make "a useful, practical contribution to the experimental materials scientists." A review article by Cheetham and Ram Seshadri were unable to identify any "strikingly novel" materials found by GNoME, with most being minor variants of already-known materials.
+
+ Mathematics 
+AlphaTensor
+In October 2022, DeepMind released AlphaTensor, which used reinforcement learning techniques similar to those in AlphaGo, to find novel algorithms for matrix multiplication. In the special case of multiplying two 4×4 matrices with integer entries, where only the evenness or oddness of the entries is recorded, AlphaTensor found an algorithm requiring only 47 distinct multiplications; the previous optimum, known since 1969, was the more general Strassen algorithm, using 49 multiplications. Computer scientist Josh Alman described AlphaTensor as "a proof of concept for something that could become a breakthrough," while Vassilevska Williams called it "a little overhyped" despite also acknowledging its basis in reinforcement learning as "something completely different" from previous approaches.
+
+AlphaGeometry
+
+AlphaGeometry is a neuro-symbolic AI that was able to solve 25 out of 30 geometry problems of the International Mathematical Olympiad, a performance comparable to that of a gold medalist.
+
+Traditional geometry programs are symbolic engines that rely exclusively on human-coded rules to generate rigorous proofs, which makes them lack flexibility in unusual situations. AlphaGeometry combines such a symbolic engine with a specialized large language model trained on synthetic data of geometrical proofs. When the symbolic engine doesn't manage to find a formal and rigorous proof on its own, it solicits the large language model, which suggests a geometrical construct to move forward. However, it is unclear how applicable this method is to other domains of mathematics or reasoning, because symbolic engines rely on domain-specific rules and because of the need for synthetic data.
+
+AlphaProof
+AlphaProof is an AI model, which couples a pre-trained language model with the AlphaZero reinforcement learning algorithm. AlphaZero has previously taught itself how to master games. The pre-trained language model used in this combination is the fine-tuning of a Gemini model to automatically translate natural language problem statements into formal statements, creating a large library of formal problems of varying difficulty. For this purpose, mathematical statements are defined in the formal language Lean. At the 2024 International Mathematical Olympiad, AlphaProof together with an adapted version of AlphaGeometry have reached the same level of solving problems in the combined categories as a silver medalist in that competition for the first time.
+
+ AlphaDev 
+
+In June 2023, Deepmind announced that AlphaDev, which searches for improved computer science algorithms using reinforcement learning, discovered a more efficient way of coding a sorting algorithm and a hashing algorithm. The new sorting algorithm was 70% faster for shorter sequences and 1.7% faster for sequences exceeding 250,000 elements, and the new hashing algorithm was 30% faster in some cases. The sorting algorithm was accepted into the C++ Standard Library sorting algorithms, and was the first change to those algorithms in more than a decade and the first update to involve an algorithm discovered using AI. The hashing algorithm was released to an opensource library. 18 June 2024. Google estimates that these two algorithms are used trillions of times every day.
+
+ Miscellaneous contributions to Google 
+Google has stated that DeepMind algorithms have greatly increased the efficiency of cooling its data centers by automatically balancing the cost of hardware failures against the cost of cooling. 20 July 2016. In addition, DeepMind (alongside other Alphabet AI researchers) assists Google Play's personalized app recommendations. DeepMind has also collaborated with the Android team at Google for the creation of two new features which were made available to people with devices running Android Pie, the ninth installment of Google's mobile operating system. These features, Adaptive Battery and Adaptive Brightness, use machine learning to conserve energy and make devices running the operating system easier to use. It is the first time DeepMind has used these techniques on such a small scale, with typical machine learning applications requiring orders of magnitude more computing power. 8 May 2018.
+
+ DeepMind Health 
+In July 2016, a collaboration between DeepMind and Moorfields Eye Hospital was announced to develop AI applications for healthcare. DeepMind would be applied to the analysis of anonymised eye scans, searching for early signs of diseases leading to blindness.
+
+In August 2016, a research programme with University College London Hospital was announced with the aim of developing an algorithm that can automatically differentiate between healthy and cancerous tissues in head and neck areas.
+
+There are also projects with the Royal Free London NHS Foundation Trust and Imperial College Healthcare NHS Trust to develop new clinical mobile apps linked to electronic patient records. Staff at the Royal Free Hospital were reported as saying in December 2017 that access to patient data through the app had saved a 'huge amount of time' and made a 'phenomenal' difference to the management of patients with acute kidney injury. Test result data is sent to staff's mobile phones and alerts them to changes in the patient's condition. It also enables staff to see if someone else has responded, and to show patients their results in visual form.
+
+In November 2017, DeepMind announced a research partnership with the Cancer Research UK Centre at Imperial College London with the goal of improving breast cancer detection by applying machine learning to mammography. Additionally, in February 2018, DeepMind announced it was working with the U.S. Department of Veterans Affairs in an attempt to use machine learning to predict the onset of acute kidney injury in patients, and also more broadly the general deterioration of patients during a hospital stay so that doctors and nurses can more quickly treat patients in need.
+
+DeepMind developed an app called Streams, which sends alerts to doctors about patients at risk of acute kidney injury. On 13 November 2018, DeepMind announced that its health division and the Streams app would be absorbed into Google Health. Privacy advocates said the announcement betrayed patient trust and appeared to contradict previous statements by DeepMind that patient data would not be connected to Google accounts or services. A spokesman for DeepMind said that patient data would still be kept separate from Google services or projects.
+
+ NHS data-sharing controversy 
+In April 2016, New Scientist obtained a copy of a data sharing agreement between DeepMind and the Royal Free London NHS Foundation Trust. The latter operates three London hospitals where an estimated 1.6 million patients are treated annually. The agreement shows DeepMind Health had access to admissions, discharge and transfer data, accident and emergency, pathology and radiology, and critical care at these hospitals. This included personal details such as whether patients had been diagnosed with HIV, suffered from depression or had ever undergone an abortion in order to conduct research to seek better outcomes in various health conditions.
+
+A complaint was filed to the Information Commissioner's Office (ICO), arguing that the data should be pseudonymised and encrypted. In May 2016, New Scientist published a further article claiming that the project had failed to secure approval from the Confidentiality Advisory Group of the Medicines and Healthcare products Regulatory Agency.
+
+In 2017, the ICO concluded a year-long investigation that focused on how the Royal Free NHS Foundation Trust tested the app, Streams, in late 2015 and 2016. The ICO found that the Royal Free failed to comply with the Data Protection Act when it provided patient details to DeepMind, and found several shortcomings in how the data was handled, including that patients were not adequately informed that their data would be used as part of the test. DeepMind published its thoughts on the investigation in July 2017, saying "we need to do better" and highlighting several activities and initiatives they had initiated for transparency, oversight and engagement. This included developing a patient and public involvement strategy and being transparent in its partnerships.
+
+In May 2017, Sky News published a leaked letter from the National Data Guardian, Dame Fiona Caldicott, revealing that in her "considered opinion" the data-sharing agreement between DeepMind and the Royal Free took place on an "inappropriate legal basis". The Information Commissioner's Office ruled in July 2017 that the Royal Free hospital failed to comply with the Data Protection Act when it handed over personal data of 1.6 million patients to DeepMind.
+
+ DeepMind Ethics and Society 
+In October 2017, DeepMind announced a new research unit, DeepMind Ethics & Society. Their goal is to fund external research of the following themes: privacy, transparency, and fairness; economic impacts; governance and accountability; managing AI risk; AI morality and values; and how AI can address the world's challenges. As a result, the team hopes to further understand the ethical implications of AI and aid society to seeing AI can be beneficial.
+
+This new subdivision of DeepMind is a completely separate unit from the partnership of leading companies using AI, academia, civil society organizations and nonprofits of the name Partnership on Artificial Intelligence to Benefit People and Society of which DeepMind is also a part. The DeepMind Ethics and Society board is also distinct from the mooted AI Ethics Board that Google originally agreed to form when acquiring DeepMind.
+
+ Habermas machine 
+
+In 2024, Google Deepmind published the results of an experiment where they trained two large language models to help identify and present areas of overlap among a few thousand group members they had recruited online using techiques like sortition to get a representative sample of participants. The project is named in honor of Jürgen Habermas. In one experiment, the participants rated the summaries by the AI higher than the human moderator 56% of the time. 
+
+DeepMind Professors of machine learning
+DeepMind sponsors three chairs of machine learning:
+
+ At the University of Cambridge, held by Neil Lawrence, in the Department of Computer Science and Technology,
+ At the University of Oxford, held by Michael Bronstein, in the Department of Computer Science, and
+ At the University College London, held by Marc Deisenroth, in the Department of Computer Science.

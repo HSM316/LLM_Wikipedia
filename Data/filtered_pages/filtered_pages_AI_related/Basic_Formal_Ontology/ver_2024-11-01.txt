@@ -1,0 +1,17 @@
+431x431px|BFO 2.0
+
+Basic Formal Ontology (BFO) is a top-level ontology developed by Barry Smith and his associates for the purposes of promoting interoperability among domain ontologies built in its terms through a process of downward population.  A guide to building BFO-conformant domain ontologies was published by MIT Press in 2015.
+
+The ontology arose against the background of research in ontologies in the domain of geospatial information science by David Mark, Pierre Grenon, Achille Varzi and others, with a special role for the study of vagueness and of the ways sharp boundaries in the geospatial and other domains are created by fiat.
+
+BFO has passed through four major releases, documented here. The current revision was released in 2020, and this forms the basis of the standard , which was released by the Joint Committee of the International Standards Organization and International Electrotechnical Commission in 2021.
+
+The structure of BFO is based on a division of entities into two disjoint categories of continuant and occurrent, the former consists of objects and spatial regions, the latter contains processes conceived as extended through (or spanning) time. BFO thereby seeks to consolidate both time and space within a single framework.
+
+Applications
+
+BFO has been adopted as a foundational ontology by over 450 ontology projects, principally in the areas of biomedical ontology,Open Biomedical Ontologies Foundry (OBO). security and defense (intelligence) ontology,Peter Morosoff, Ron Rudnicki, Jason Bryant, Robert Farrell and Barry Smith, "Joint Doctrine Ontology: A Benchmark for Military Information Systems Interoperability", in Semantic Technology for Intelligence, Defense and Security (STIDS). CEUR vol. 1325. pp. 2-9 (2015). and industry ontologies.Industrial Ontologies Foundry Example applications of BFO can be seen in the Ontology for Biomedical Investigations (OBI).
+
+In 2021, the standard ISO/IEC 21838-2:2021 Information Technology — Top-level Ontologies (TLO) — Part 2: Basic Formal Ontology (BFO) was published by the Joint Technical Committee of the International Standards Organization and the International Electrotechnical Commission. ISO/IEC 21838 is a multi-part standard. Part 1 of the standard specifies the requirements that must be met if an ontology is to be classified as a top-level ontology by the standard.
+
+In January 2024, BFO and the Common Core Ontologies (CCO), a suite of BFO-extension ontologies, were adopted as the  “baseline standards for formal DOD and IC ontology” development work in the DOD and Intelligence Community. A memorandum to this effect was signed by the chief data officers of the DOD, the Office of the Director of National Intelligence and the Chief Digital and Artificial Intelligence Office.https://www.buffalo.edu/news/releases/2024/02/department-of-defense-ontology.html. DOD, Intelligence Community adopt resource developed by UB ontologists

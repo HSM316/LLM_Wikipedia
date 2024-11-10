@@ -1,0 +1,23 @@
+WolframAlpha ( ) is an answer engine developed by Wolfram Research. It answers factual queries by computing answers from externally sourced data.
+
+WolframAlpha was released on May 18, 2009 and is based on Wolfram's earlier product Wolfram Mathematica, a technical computing platform. WolframAlpha gathers data from academic and commercial websites such as the CIA's The World Factbook, the United States Geological Survey, a Cornell University Library publication called All About Birds, Chambers Biographical Dictionary, Dow Jones, the Catalogue of Life, CrunchBase, Best Buy, and the FAA to answer queries. A Spanish version was launched in 2022.
+
+ Technology 
+ Overview 
+Users submit queries and computation requests via a text field. WolframAlpha then computes answers and relevant visualizations from a knowledge base of curated, structured data that come from other sites and books. It is able to respond to particularly phrased natural language fact-based questions. It displays its "Input interpretation" of such a question, using standardized phrases. Mathematical symbolism can also be parsed by the engine, which responds with numerical and statistical results.
+
+ Development 
+WolframAlpha is written in the Wolfram Language, a general multi-paradigm programming language, and implemented in Mathematica, that is proprietary and not commonly used by developers.
+
+ Usage 
+WolframAlpha was used to power some searches in the Microsoft Bing and DuckDuckGo search engines but is no longer used to provide search results. For factual question answering, WolframAlpha was formerly used by Apple's Siri and Amazon Alexa for math and science queries but is no longer operational within those services. WolframAlpha data types became available beginning in July 2020 with Microsoft Excel, but the Microsoft-Wolfram partnership ended nearly two years later, in 2022, in favor of Microsoft Power Query data types. WolframAlpha functionality in Microsoft Excel will be over in June 2023.
+
+ History 
+Launch preparations began on May 15, 2009 at 7 p.m. CDT and were broadcast live on Justin.tv. The plan was to publicly launch the service a few hours later. However, there were issues due to extreme load. The service was officially launched on May 18, 2009, receiving mixed reviews. In 2009, WolframAlpha advocates pointed to its potential, some even stating that how it determines results is more important than current usefulness. WolframAlpha was initially launched as free, but later WolframAlpha attempted monetizing the service by launching an iOS application with a cost of $50, while the website itself was free. That plan was abandoned after criticism.
+
+On February 8, 2012, WolframAlpha Pro was released, offering users additional features for a monthly subscription fee.
+
+WolframAlpha is used by some high-school and college students to cheat on math homework, though the company says the service helps students understand math with its problem-solving capabilities.
+
+ Copyright claims 
+InfoWorld published an article warning readers of the potential implications of giving an automated website proprietary rights to the data it generates. Free software advocate Richard Stallman also opposes the idea of recognizing the site as a copyright holder and suspects that Wolfram would not be able to make this case under existing copyright law. 

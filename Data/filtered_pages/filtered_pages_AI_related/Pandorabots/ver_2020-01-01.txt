@@ -1,0 +1,9 @@
+Pandorabots, Inc. is an artificial intelligence company that runs a web service for building and deploying chatbots. The Pandorabots Platform is "one of the oldest and largest chatbot hosting services in the world." Clients can create "AI-driven virtual agents" to hold human-like text or voice chats with consumers.Bluestein, Adam. "Robots: Coming to an office near you", Chicago Tribune, 18 June 2015. Retrieved on 3 December 2015. Pandorabots implements and supports development of the AIML open standardWallace, Richard. "The elements of AIML style." Alice AI Foundation (2003). and makes portions of its code accessible for free under licenses like the GPL or via open APIs.
+
+According to its website, as of May 2019, 250,000+ registered developers have used the platform to create 300,000+ chatbots, logging over sixty billion conversational interactions with end-users.
+
+ Technology and Products 
+Pandorabots provides API access to its chatbot hosting platform, and offers the following SDKs on Github: Java, Ruby, Go, PHP, Python, and Node.js. The platform is written in Allegro Common LISP. Notable chatbots include A.L.I.C.E. (Alicebot): a three time Loebner-winner, open-source base personality bot, and inspiration for the movie Her; and Mitsuku.
+
+ Use Cases 
+Common use cases include advertising, virtual assistance, e-learning, entertainment and education. Chatbots built and hosted with Pandorabots appear in messaging and native apps, the web, games, social networks, and connected devices. Academics and universities use the platform for teaching and research.

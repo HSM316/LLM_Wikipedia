@@ -1,0 +1,78 @@
+right|upright=1.1|Example of Multi-Agent Path Finding in a grid environment.
+
+The problem of Multi-Agent Pathfinding (MAPF) is an instance of multi-agent planning and consists in the computation of collision-free paths for a group of agents from their location to an assigned target. It is an optimization problem, since the aim is to find those paths that optimize a given objective function, usually defined as the number of time steps until all agents reach their goal cells. MAPF is the multi-agent generalization of the pathfinding problem, and it is closely related to the shortest path problem in the context of graph theory.
+
+Several algorithms have been proposed to solve the MAPF problem. Due to its complexity, it happens that optimal approaches are infeasible on big environments and with a high number of agents. However, given the applications in which MAPF is involved such as automated warehouses and airport management, it is important to reach a trade-off between the efficiency of the solution and its effectiveness.
+
+ Problem Formalization 
+The elements of a classical MAPF   problem are the following:
+
+ a set  of  agents;
+ an undirected graph , where  is the node set, and  is the edge set. The nodes represent the possible locations of the agents, while the arcs are the possible connections between such positions;
+ a map  that associates each agent with its starting point;
+ a map  that associates each agent with its target point.
+
+It is assumed that time is discrete, and that each agent can perform one action at each time step. There are two possible types of actions: the wait action, in which the agent remains in its node, and the move action, that allows the agent to move to an adjacent node. An action is formalized as a function , meaning that  represents the action of moving from  to  if  is adjacent to  and different than , or to stay in node  if .
+
+The agents perform sequences of actions to go from their starting point to their target location. A sequence of action performed by agent  is denoted by  and is called a plan. If agent  starts from its location  and arrives to its target location  performing plan , then  is called single-agent plan for agent . A valid solution for the MAPF problem is a set of  single-agent plans (one for each agent), such that the plans do not collide one another. Once an agent has reached its target, it can either remain in the target location or disappear.
+
+ Types of Collisions 
+In order to have a valid solution for a MAPF problem, it is necessary that the single-agent plans of the  agents do not collide one another. Given plan , the expression  denotes the position of agent  after having performed  steps of plan . It is possible to distinguish five different types of collisions between two plans  and .
+
+right|upright=2|Types of conflicts: (a) is an edge conflict, (b) a vertex conflict, (c) a following conflict, (d) a cycle conflict, and (e) a swapping conflict.
+
+ Vertex conflict: there is a vertex conflict between plans  and  when the two agents occupy the same location at the same time. Formally, a vertex conflict happens when . 
+ Edge conflict: an edge conflict occurs whenever two agents cross the same edge in the same direction at the same time, that is  and . If vertex conflicts are not allowed, then edge conflicts cannot exist.
+ Following conflict: a following conflict happens when at a certain time step an agent occupies a location that was occupied by another agent in the previous time step. Mathematically, a following conflict is described as .
+ Cycle conflict: a cycle conflict happens whenever a set of agents (at least three) move as if they are spinning in a cycle. It means that each agent takes the position that was previously occupied by the other agent one step-ahead in the cycle. If following conflicts are forbidden, then cycle conflicts cannot happen.
+ Swapping conflict: a swapping conflict is the case in which two agents exchange their position, passing on the same edge at the same time in two different directions. It is expressed as  and .
+
+When formalizing a MAPF problem, it is possible to decide which conflicts are allowed and which are forbidden. A unified standard about permitted and denied conflicts does not exist, however vertex and edge conflicts are usually not allowed.
+
+ Objective Functions 
+When computing single-agent plans, the aim is to maximize a user-defined objective function. There is not a standard objective function to adopt, however the most common are:
+
+ flowtime: this measure is obtained by summing the time steps employed by each agent to reach their target location. Formally, it is equal to , where the plans  are single-agent plans without collisions;
+ makespan: the number of time steps necessary so that all the agents complete theirs tasks, defined as , where  are part of a valid solution;
+ maximization of reached targets given a deadline: the aim is to find a valid solution that maximizes the number of agents that reach their target given a time deadline.
+
+ Algorithms 
+Several algorithms have been proposed to solve the MAPF problem. The issue is that it is NP-hard to find optimal makespan or flow-time solutions, also when considering planar graphs, or graphs similar to grids. For what concerns bounded suboptimal solutions, it is shown that it is NP-hard to find a makespan-optimal solution with a factor of suboptimality smaller than . Optimal MAPF solvers return high quality solutions, but their efficiency is low. Instead, bounded-suboptimal and suboptimal solvers are more efficient, but their solutions are less effective. Also machine learning approaches have been proposed to solve the MAPF problem.
+
+ Prioritized Planning 
+One possible approach to face the computational complexity is prioritized planning. It consists in decoupling the MAPF problem into  single-agent pathfinding problems.
+
+The first step is to assign to each agent a unique number  that corresponds to the priority given to the agent. Then, following the priority order, for each agent a plan is computed to reach the target location. When planning, agents have to avoid collisions with paths of other agents with a higher priority that have already computed their plans.
+
+Finding a solution for the MAPF problem in such setting corresponds to the shortest path problem in a time-expansion graph. A time-expansion graph is a graph that takes into account the passing of time. Each node is composed by two entries , where  is the node name and  is the time step. Each node  is linked to the nodes  such that  is adjacent to  and  is not occupied at time step .
+
+The drawback of prioritized planning is that, even if it is a sound approach (it returns valid solutions), it is neither optimal nor complete. This means that it is not assured that the algorithm will return a solution and, even in that case, the solution may not be optimal.
+
+ Optimal MAPF Solvers 
+It is possible to distinguish four different categories of optimal MAPF solvers:
+ Extensions of A*: algorithms in this category employ modified versions of the A* approach.
+ Increasing Cost Tree Search: a novel formalization of the MAPF problem is proposed, that comprehends an increasing search tree and the corresponding algorithm. The algorithm is composed by two levels and relies on the assumption that a valid solution for the MAPF problem is composed by a set of solutions for the single agents.
+ Conflict-Based Search: this algorithm computes paths as when solving single-agent pathfinding problems, and then it adds constraints in an incremental way in order to avoid collisions.
+ Constraints programming: with this kind of approach, MAPF problems are transformed into a set of constraints and then solved using specific constraint solvers such as SAT and Mixed Integer Programming (MIP) solvers.
+
+ Bounded Suboptimal MAPF Solvers 
+Bounded suboptimal algorithms offer a trade-off between the optimality and the cost of the solution. They are said to be bounded by a certain factor because they return solutions with a cost at most equal to the optimal solution cost times the factor. MAPF bounded suboptimal solvers can be divided following the same categorization presented for optimal MAPF solvers.
+
+ Variations 
+The way in which MAPF problems are defined allows to change various aspects, for example the fact of being in a grid environment or the assumption that time is discrete. This section reports some variations of the classical MAPF problem.
+
+ Anonymous MAPF 
+It is a version of MAPF in which there is a set of target locations but agents are not assigned a specific target. It does not matter whether the agent that reaches the target, the important thing is that targets are completed. A slight modification of this version is the one in which agents are divided into groups and each group has to perform a set of targets.
+
+ Multi-Agent Pick-up and Delivery
+MAPF problem is not able to capture some aspects relative to real world applications. For example, in automated warehouses it happens that robots have to complete several tasks one after the other. For this reason, an extended MAPF version is proposed, called Multi-Agent Pick-up and Delivery (MAPD). In a MAPD setting, agents have to complete a stream of tasks, where each task is composed by a pick-up a location and a delivery location. When planning for the completion of a task, the path has to start from the current position of the robot and to end in the delivery position of the task, passing through the pick-up point. MAPD is considered a "lifelong" version of MAPF in which tasks arrive incrementally.
+
+ Beyond Classical MAPF 
+The assumptions that the agents are in a grid environment, that their speed is constant and that time is discrete are simplifying hypotheses. Many works take into account the kinematic constraints of agents, such as velocity and orientation, or go past the assumption that the weights of the arcs are all equal to 1. Other works focus on eliminating the discrete time assumptions and that the duration of actions is exactly equal to one time step. Another assumption that does not reflect reality is that agents occupy exactly one cell of the environment in which they are: some studies have been conducted to overcome this hypothesis. It is interesting to note that the shape and geometry of agents may introduce new types of conflicts, since agents may crash with one another even if they are not completely overlapped.
+
+ Applications 
+MAPF can be applied in several real case scenarios:
+ Automated warehouses: warehouse logistics represents the main industrial application of MAPF. It has been shown that automation in warehouses manages to increase the productivity level.
+ Airport operations: MAPF algorithms can be employed in crowded airports to coordinate towing vehicles that transport aircraft. Being able to optimize this kind of problems provides also a benefit to the environment.
+ Autonomous mobile service robots: service robots are automated agents that perform dangerous and repetitive tasks for humans in a non-industrial environment. Their main goal is to help human beings.  
+ Video games: the usefulness of MAPF in such settings can be found when the player has to move a team of agents in a congested video game environment.

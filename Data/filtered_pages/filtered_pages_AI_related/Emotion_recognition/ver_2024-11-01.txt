@@ -1,0 +1,78 @@
+Emotion recognition is the process of identifying human emotion.  People vary widely in their accuracy at recognizing the emotions of others.  Use of technology to help people with emotion recognition is a relatively nascent research area.  Generally, the technology works best if it uses multiple modalities in context.  To date, the most work has been conducted on automating the recognition of facial expressions from video, spoken expressions from audio, written expressions from text, and physiology as measured by wearables.
+
+Human
+
+Humans show a great deal of variability in their abilities to recognize emotion. A key point to keep in mind when learning about automated emotion recognition is that there are several sources of "ground truth", or truth about what the real emotion is.  Suppose we are trying to recognize the emotions of Alex.  One source is "what would most people say that Alex is feeling?"  In this case, the 'truth' may not correspond to what Alex feels, but may correspond to what most people would say it looks like Alex feels.  For example, Alex may actually feel sad, but he puts on a big smile and then most people say he looks happy.  If an automated method achieves the same results as a group of observers it may be considered accurate, even if it does not actually measure what Alex truly feels.  Another source of 'truth' is to ask Alex what he truly feels.  This works if Alex has a good sense of his internal state, and wants to tell you what it is, and is capable of putting it accurately into words or a number.  However, some people are alexithymic and do not have a good sense of their internal feelings, or they are not able to communicate them accurately with words and numbers.  In general, getting to the truth of what emotion is actually present can take some work, can vary depending on the criteria that are selected, and will usually involve maintaining some level of uncertainty.
+
+Automatic
+Decades of scientific research have been conducted developing and evaluating methods for automated emotion recognition. There is now an extensive literature proposing and evaluating hundreds of different kinds of methods, leveraging techniques from multiple areas, such as signal processing, machine learning, computer vision, and speech processing. Different methodologies and techniques may be employed to interpret emotion such as Bayesian networks.Miyakoshi, Yoshihiro, and Shohei Kato. "Facial Emotion Detection Considering Partial Occlusion Of Face Using Baysian Network". Computers and Informatics (2011): 96–101.
+, Gaussian Mixture modelsHari Krishna Vydana, P. Phani Kumar, K. Sri Rama Krishna and Anil Kumar Vuppala. "Improved emotion recognition using GMM-UBMs". 2015 International Conference on Signal Processing and Communication Engineering Systems and Hidden Markov ModelsB. Schuller, G. Rigoll M. Lang. "Hidden Markov model-based speech emotion recognition". ICME '03. Proceedings. 2003 International Conference on Multimedia and Expo, 2003. and deep neural networks.
+
+Approaches
+
+The accuracy of emotion recognition is usually improved when it combines the analysis of human expressions from multimodal forms such as texts, physiology, audio, or video. Different emotion types are detected through the integration of information from facial expressions, body movement and gestures, and speech.  The technology is said to contribute in the emergence of the so-called emotional or emotive Internet.
+
+The existing approaches in emotion recognition to classify certain emotion types can be generally classified into three main categories: knowledge-based techniques, statistical methods, and hybrid approaches.
+
+Knowledge-based techniques
+
+Knowledge-based techniques (sometimes referred to as lexicon-based techniques), utilize domain knowledge and the semantic and syntactic characteristics of text and potentially spoken language in order to detect certain emotion types. In this approach, it is common to use knowledge-based resources during the emotion classification process such as WordNet, SenticNet, ConceptNet, and EmotiNet, to name a few. One of the advantages of this approach is the accessibility and economy brought about by the large availability of such knowledge-based resources. A limitation of this technique on the other hand, is its inability to handle concept nuances and complex linguistic rules.
+
+Knowledge-based techniques can be mainly classified into two categories: dictionary-based and corpus-based approaches. Dictionary-based approaches find opinion or emotion seed words in a dictionary and search for their synonyms and antonyms to expand the initial list of opinions or emotions. Corpus-based approaches on the other hand, start with a seed list of opinion or emotion words, and expand the database by finding other words with context-specific characteristics in a large corpus. While corpus-based approaches take into account context, their performance still vary in different domains since a word in one domain can have a different orientation in another domain.
+
+Statistical methods
+
+Statistical methods commonly involve the use of different supervised machine learning algorithms in which a large set of annotated data is fed into the algorithms for the system to learn and predict the appropriate emotion types.  Machine learning algorithms generally provide more reasonable classification accuracy compared to other approaches, but one of the challenges in achieving good results in the classification process, is the need to have a sufficiently large training set.
+
+Some of the most commonly used machine learning algorithms include Support Vector Machines (SVM), Naive Bayes, and Maximum Entropy. Deep learning, which is under the unsupervised family of machine learning, is also widely employed in emotion recognition. Well-known deep learning algorithms include different architectures of Artificial Neural Network (ANN) such as Convolutional Neural Network (CNN), Long Short-term Memory (LSTM), and Extreme Learning Machine (ELM). The popularity of deep learning approaches in the domain of emotion recognition may be mainly attributed to its success in related applications such as in computer vision, speech recognition, and Natural Language Processing (NLP).
+
+Hybrid approaches
+
+Hybrid approaches in emotion recognition are essentially a combination of knowledge-based techniques and statistical methods, which exploit complementary characteristics from both techniques. Some of the works that have applied an ensemble of knowledge-driven linguistic elements and statistical methods include sentic computing and iFeel, both of which have adopted the concept-level knowledge-based resource SenticNet. The role of such knowledge-based resources in the implementation of hybrid approaches is highly important in the emotion classification process. Since hybrid techniques gain from the benefits offered by both knowledge-based and statistical approaches, they tend to have better classification performance as opposed to employing knowledge-based or statistical methods independently. A downside of using hybrid techniques however, is the computational complexity during the classification process.
+
+Datasets
+
+Data is an integral part of the existing approaches in emotion recognition and in most cases it is a challenge to obtain annotated data that is necessary to train machine learning algorithms. For the task of classifying different emotion types from multimodal sources in the form of texts, audio, videos or physiological signals, the following datasets are available:
+
+HUMAINE: provides natural clips with emotion words and context labels in multiple modalities
+Belfast database: provides clips with a wide range of emotions from TV programs and interview recordings
+SEMAINE: provides audiovisual recordings between a person and a virtual agent and contains emotion annotations such as angry, happy, fear, disgust, sadness, contempt, and amusement
+IEMOCAP: provides recordings of dyadic sessions between actors and contains emotion annotations such as happiness, anger, sadness, frustration, and neutral state
+eNTERFACE: provides audiovisual recordings of subjects from seven nationalities and contains emotion annotations such as happiness, anger, sadness, surprise, disgust, and fear
+DEAP: provides electroencephalography (EEG), electrocardiography (ECG), and face video recordings, as well as emotion annotations in terms of valence, arousal, and dominance of people watching film clips
+DREAMER: provides electroencephalography (EEG) and electrocardiography (ECG) recordings, as well as emotion annotations in terms of valence, dominance of people watching film clips
+MELD: is a multiparty conversational dataset where each utterance is labeled with emotion and sentiment. MELD provides conversations in video format and hence suitable for multimodal emotion recognition and sentiment analysis. MELD is useful for multimodal sentiment analysis and emotion recognition, dialogue systems and emotion recognition in conversations.
+MuSe: provides audiovisual recordings of natural interactions between a person and an object. It has discrete and continuous emotion annotations in terms of valence, arousal and trustworthiness as well as speech topics useful for multimodal sentiment analysis and emotion recognition.
+UIT-VSMEC: is a standard Vietnamese Social Media Emotion Corpus (UIT-VSMEC) with about 6,927 human-annotated sentences with six emotion labels, contributing to emotion recognition research in Vietnamese which is a low-resource language in Natural Language Processing (NLP).
+BED: provides valence and arousal of people watching images. It also includes electroencephalography (EEG) recordings of people exposed to various stimuli (SSVEP, resting with eyes closed, resting with eyes open, cognitive tasks) for the task of EEG-based biometrics.
+
+Applications
+
+Emotion recognition is used in society for a variety of reasons.  Affectiva, which spun out of MIT, provides artificial intelligence software that makes it more efficient to do tasks previously done manually by people, mainly to gather facial expression and vocal expression information related to specific contexts where viewers have consented to share this information.  For example, instead of filling out a lengthy survey about how you feel at each point watching an educational video or advertisement, you can consent to have a camera watch your face and listen to what you say, and note during which parts of the experience you show expressions such as boredom, interest, confusion, or smiling.  (Note that this does not imply it is reading your innermost feelings—it only reads what you express outwardly.)  Other uses by Affectiva include helping children with autism, helping people who are blind to read facial expressions, helping robots interact more intelligently with people, and monitoring signs of attention while driving in an effort to enhance driver safety.
+
+Academic research increasingly uses emotion recognition as a method to study social science questions around elections, protests, and democracy. Several studies focus on the facial expressions of political candidates on social media and find that politicians tend to express happiness. However, this research finds that computer vision tools such as Amazon Rekognition are only accurate for happiness and are mostly reliable as 'happy detectors'. Researchers examining protests, where negative affect such as anger is expected, have therefore developed their own models to more accurately study expressions of negativity and violence in democratic processes.
+
+A patent  filed by Snapchat in 2015 describes a method of extracting data about crowds at public events by performing algorithmic emotion recognition on users' geotagged selfies.
+
+Emotient was a startup company which applied emotion recognition to reading frowns, smiles, and other expressions on faces, namely artificial intelligence to predict "attitudes and actions based on facial expressions".  Apple bought Emotient in 2016 and uses emotion recognition technology to enhance the emotional intelligence of its products.
+
+nViso provides real-time emotion recognition for web and mobile applications through a real-time API. Visage Technologies AB offers emotion estimation as a part of their Visage SDK for marketing and scientific research and similar purposes.
+
+Eyeris is an emotion recognition company that works with embedded system manufacturers including car makers and social robotic companies on integrating its face analytics and emotion recognition software; as well as with video content creators to help them measure the perceived effectiveness of their short and long form video creative.
+
+Many products also exist to aggregate information from emotions communicated online, including via "like" button presses and via counts of positive and negative phrases in text and affect recognition is increasingly used in some kinds of games and virtual reality, both for educational purposes and to give players more natural control over their social avatars.
+
+Subfields
+Emotion recognition is probably to gain the best outcome if applying multiple modalities by combining different objects, including text (conversation), audio, video, and physiology to detect emotions.
+
+Emotion recognition in text
+Text data is a favorable research object for emotion recognition when it is free and available everywhere in human life. Compare to other types of data, the storage of text data is lighter and easy to compress to the best performance due to the frequent repetition of words and characters in languages. Emotions can be extracted from two essential text forms: written texts and conversations (dialogues).Shivhare, S. N., & Khethawat, S. (2012). Emotion detection from text. arXiv preprint  For written texts, many scholars focus on working with sentence level to extract "words/phrases" representing emotions.Ezhilarasi, R., & Minu, R. I. (2012). Automatic emotion recognition and classification. Procedia Engineering, 38, 21-26.Krcadinac, U., Pasquier, P., Jovanovic, J., & Devedzic, V. (2013). Synesketch: An open source library for sentence-based emotion recognition. IEEE Transactions on Affective Computing, 4(3), 312-325.
+
+Emotion recognition in audio
+Different from emotion recognition in text, vocal signals are used for the recognition to extract emotions from audio.Schmitt, M., Ringeval, F., & Schuller, B. W. (2016, September). At the Border of Acoustics and Linguistics: Bag-of-Audio-Words for the Recognition of Emotions in Speech. In Interspeech (pp. 495-499).
+
+Emotion recognition in video
+Video data is a combination of audio data, image data and sometimes texts (in case of subtitlesDhall, A., Goecke, R., Lucey, S., & Gedeon, T. (2012). Collecting large, richly annotated facial-expression databases from movies. IEEE multimedia, (3), 34-41.).
+
+Emotion recognition in conversation
+Emotion recognition in conversation (ERC) extracts opinions between participants from massive conversational data in social platforms, such as Facebook, Twitter, YouTube, and others.Poria, S., Majumder, N., Mihalcea, R., & Hovy, E. (2019). Emotion recognition in conversation: Research challenges, datasets, and recent advances. IEEE Access, 7, 100943-100953. ERC can take input data like text, audio, video or a combination form to detect several emotions such as fear, lust, pain, and pleasure.
