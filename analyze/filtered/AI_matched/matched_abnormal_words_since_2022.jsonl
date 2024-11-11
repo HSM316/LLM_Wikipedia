@@ -1,0 +1,460 @@
+{
+    "Word": "annex",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 0.94,
+        "2024-01-01": 7.27,
+        "2024-11-01": 7.18
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Battle_of_Shopian": 0.96
+        },
+        "2023-01-01": {
+            "Battle_of_Shopian": 0.94
+        },
+        "2024-01-01": {
+            "Offerman_Building": 6.36,
+            "Battle_of_Shopian": 0.91
+        },
+        "2024-11-01": {
+            "Offerman_Building": 6.28,
+            "Battle_of_Shopian": 0.9
+        }
+    }
+}
+{
+    "Word": "basement",
+    "Time Frequencies": {
+        "2022-01-01": 2.88,
+        "2023-01-01": 2.83,
+        "2024-01-01": 16.36,
+        "2024-11-01": 16.15
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Lansdowne_Club": 0.96,
+            "Trump_Plaza_(New_York_City)": 0.96,
+            "Wehrmacht_prison_Anklam": 0.96
+        },
+        "2023-01-01": {
+            "Lansdowne_Club": 0.94,
+            "Trump_Plaza_(New_York_City)": 0.94,
+            "Wehrmacht_prison_Anklam": 0.94
+        },
+        "2024-01-01": {
+            "Offerman_Building": 13.63,
+            "Lansdowne_Club": 0.91,
+            "Trump_Plaza_(New_York_City)": 0.91,
+            "Wehrmacht_prison_Anklam": 0.91
+        },
+        "2024-11-01": {
+            "Offerman_Building": 13.46,
+            "Lansdowne_Club": 0.9,
+            "Trump_Plaza_(New_York_City)": 0.9,
+            "Wehrmacht_prison_Anklam": 0.9
+        }
+    }
+}
+{
+    "Word": "resistant",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 0.94,
+        "2024-01-01": 1.82,
+        "2024-11-01": 5.38
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Chemical_protective_clothing": 0.96
+        },
+        "2023-01-01": {
+            "Chemical_protective_clothing": 0.94
+        },
+        "2024-01-01": {
+            "Agriculture_in_the_United_Kingdom": 0.91,
+            "Chemical_protective_clothing": 0.91
+        },
+        "2024-11-01": {
+            "Chemical_protective_clothing": 4.49,
+            "Agriculture_in_the_United_Kingdom": 0.9
+        }
+    }
+}
+{
+    "Word": "grades",
+    "Time Frequencies": {
+        "2022-01-01": 1.92,
+        "2023-01-01": 1.89,
+        "2024-01-01": 10.0,
+        "2024-11-01": 9.87
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Ask_Foy": 0.96,
+            "Napa_Valley_College": 0.96
+        },
+        "2023-01-01": {
+            "Ask_Foy": 0.94,
+            "Napa_Valley_College": 0.94
+        },
+        "2024-01-01": {
+            "Agriculture_in_the_United_Kingdom": 8.18,
+            "Ask_Foy": 0.91,
+            "Napa_Valley_College": 0.91
+        },
+        "2024-11-01": {
+            "Agriculture_in_the_United_Kingdom": 8.08,
+            "Ask_Foy": 0.9,
+            "Napa_Valley_College": 0.9
+        }
+    }
+}
+{
+    "Word": "exchanges",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 1.89,
+        "2024-01-01": 1.82,
+        "2024-11-01": 4.49
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Banco_Convention_of_1905": 0.96
+        },
+        "2023-01-01": {
+            "Banco_Convention_of_1905": 0.94,
+            "Jarrod_Bowen": 0.94
+        },
+        "2024-01-01": {
+            "Banco_Convention_of_1905": 0.91,
+            "Jarrod_Bowen": 0.91
+        },
+        "2024-11-01": {
+            "Azerbaijan_State_Pedagogical_University": 2.69,
+            "Banco_Convention_of_1905": 0.9,
+            "Jarrod_Bowen": 0.9
+        }
+    }
+}
+{
+    "Word": "arbitration",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 5.66,
+        "2024-01-01": 4.54,
+        "2024-11-01": 4.49
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Pierre_Aycelin_de_Montaigut": 0.96
+        },
+        "2023-01-01": {
+            "Sexual_harassment_in_the_workplace_in_the_United_States": 4.71,
+            "Pierre_Aycelin_de_Montaigut": 0.94
+        },
+        "2024-01-01": {
+            "Sexual_harassment_in_the_workplace_in_the_United_States": 3.64,
+            "Pierre_Aycelin_de_Montaigut": 0.91
+        },
+        "2024-11-01": {
+            "Sexual_harassment_in_the_workplace_in_the_United_States": 3.59,
+            "Pierre_Aycelin_de_Montaigut": 0.9
+        }
+    }
+}
+{
+    "Word": "lease",
+    "Time Frequencies": {
+        "2022-01-01": 3.84,
+        "2023-01-01": 3.77,
+        "2024-01-01": 15.45,
+        "2024-11-01": 15.25
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Trump_Plaza_(New_York_City)": 1.92,
+            "Norwegian_Air_Argentina": 0.96,
+            "Trump_National_Golf_Club_Westchester": 0.96
+        },
+        "2023-01-01": {
+            "Trump_Plaza_(New_York_City)": 1.89,
+            "Norwegian_Air_Argentina": 0.94,
+            "Trump_National_Golf_Club_Westchester": 0.94
+        },
+        "2024-01-01": {
+            "Offerman_Building": 10.91,
+            "Trump_Plaza_(New_York_City)": 1.82,
+            "Agriculture_in_the_United_Kingdom": 0.91,
+            "Norwegian_Air_Argentina": 0.91,
+            "Trump_National_Golf_Club_Westchester": 0.91
+        },
+        "2024-11-01": {
+            "Offerman_Building": 10.77,
+            "Trump_Plaza_(New_York_City)": 1.79,
+            "Agriculture_in_the_United_Kingdom": 0.9,
+            "Norwegian_Air_Argentina": 0.9,
+            "Trump_National_Golf_Club_Westchester": 0.9
+        }
+    }
+}
+{
+    "Word": "gt",
+    "Time Frequencies": {
+        "2022-01-01": 9.59,
+        "2023-01-01": 24.52,
+        "2024-01-01": 27.27,
+        "2024-11-01": 35.89
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Daniel_Serra": 6.71,
+            "Sven_Müller_(racing_driver)": 2.88
+        },
+        "2023-01-01": {
+            "Sven_Müller_(racing_driver)": 17.92,
+            "Daniel_Serra": 6.6
+        },
+        "2024-01-01": {
+            "Sven_Müller_(racing_driver)": 20.91,
+            "Daniel_Serra": 6.36
+        },
+        "2024-11-01": {
+            "Sven_Müller_(racing_driver)": 29.61,
+            "Daniel_Serra": 6.28
+        }
+    }
+}
+{
+    "Word": "zoo",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 1.89,
+        "2024-01-01": 3.64,
+        "2024-11-01": 3.59
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Return_of_the_Beverly_Hillbillies": 0.96
+        },
+        "2023-01-01": {
+            "Hank_Aaron_State_Trail": 0.94,
+            "Return_of_the_Beverly_Hillbillies": 0.94
+        },
+        "2024-01-01": {
+            "Hank_Aaron_State_Trail": 2.73,
+            "Return_of_the_Beverly_Hillbillies": 0.91
+        },
+        "2024-11-01": {
+            "Hank_Aaron_State_Trail": 2.69,
+            "Return_of_the_Beverly_Hillbillies": 0.9
+        }
+    }
+}
+{
+    "Word": "dns",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 0.94,
+        "2024-01-01": 3.64,
+        "2024-11-01": 3.59
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Williams_FW37": 0.96
+        },
+        "2023-01-01": {
+            "Williams_FW37": 0.94
+        },
+        "2024-01-01": {
+            "Hope_Bender": 2.73,
+            "Williams_FW37": 0.91
+        },
+        "2024-11-01": {
+            "Hope_Bender": 2.69,
+            "Williams_FW37": 0.9
+        }
+    }
+}
+{
+    "Word": "custody",
+    "Time Frequencies": {
+        "2022-01-01": 0.96,
+        "2023-01-01": 0.94,
+        "2024-01-01": 0.91,
+        "2024-11-01": 3.59
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Léa_Drucker": 0.96
+        },
+        "2023-01-01": {
+            "Léa_Drucker": 0.94
+        },
+        "2024-01-01": {
+            "Léa_Drucker": 0.91
+        },
+        "2024-11-01": {
+            "Léa_Drucker": 3.59
+        }
+    }
+}
+{
+    "Word": "gloves",
+    "Time Frequencies": {
+        "2022-01-01": 6.71,
+        "2023-01-01": 6.6,
+        "2024-01-01": 6.36,
+        "2024-11-01": 24.23
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Chemical_protective_clothing": 5.75,
+            "Noctis_Lucis_Caelum": 0.96
+        },
+        "2023-01-01": {
+            "Chemical_protective_clothing": 5.66,
+            "Noctis_Lucis_Caelum": 0.94
+        },
+        "2024-01-01": {
+            "Chemical_protective_clothing": 5.45,
+            "Noctis_Lucis_Caelum": 0.91
+        },
+        "2024-11-01": {
+            "Chemical_protective_clothing": 23.33,
+            "Noctis_Lucis_Caelum": 0.9
+        }
+    }
+}
+{
+    "Word": "floors",
+    "Time Frequencies": {
+        "2022-01-01": 6.71,
+        "2023-01-01": 6.6,
+        "2024-01-01": 23.63,
+        "2024-11-01": 23.33
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Bell_Telephone_Building_(St._Louis,_Missouri)": 1.92,
+            "Business-_and_Agricultural_Bank_of_Jutland": 1.92,
+            "Belgrade_pagoda": 0.96,
+            "Museum_of_the_Siderurgy": 0.96,
+            "Trump_Plaza_(New_York_City)": 0.96
+        },
+        "2023-01-01": {
+            "Bell_Telephone_Building_(St._Louis,_Missouri)": 1.89,
+            "Business-_and_Agricultural_Bank_of_Jutland": 1.89,
+            "Belgrade_pagoda": 0.94,
+            "Museum_of_the_Siderurgy": 0.94,
+            "Trump_Plaza_(New_York_City)": 0.94
+        },
+        "2024-01-01": {
+            "Offerman_Building": 17.27,
+            "Bell_Telephone_Building_(St._Louis,_Missouri)": 1.82,
+            "Business-_and_Agricultural_Bank_of_Jutland": 1.82,
+            "Belgrade_pagoda": 0.91,
+            "Museum_of_the_Siderurgy": 0.91
+        },
+        "2024-11-01": {
+            "Offerman_Building": 17.05,
+            "Bell_Telephone_Building_(St._Louis,_Missouri)": 1.79,
+            "Business-_and_Agricultural_Bank_of_Jutland": 1.79,
+            "Belgrade_pagoda": 0.9,
+            "Museum_of_the_Siderurgy": 0.9
+        }
+    }
+}
+{
+    "Word": "maps",
+    "Time Frequencies": {
+        "2022-01-01": 4.8,
+        "2023-01-01": 6.6,
+        "2024-01-01": 17.27,
+        "2024-11-01": 16.15
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Redistricting_in_Virginia": 2.88,
+            "Banco_Convention_of_1905": 0.96,
+            "InciWeb": 0.96
+        },
+        "2023-01-01": {
+            "Redistricting_in_Virginia": 2.83,
+            "Tennessee_State_Route_276": 1.89,
+            "Banco_Convention_of_1905": 0.94,
+            "InciWeb": 0.94
+        },
+        "2024-01-01": {
+            "Agriculture_in_the_United_Kingdom": 12.72,
+            "Redistricting_in_Virginia": 2.73,
+            "Banco_Convention_of_1905": 0.91,
+            "InciWeb": 0.91
+        },
+        "2024-11-01": {
+            "Agriculture_in_the_United_Kingdom": 10.77,
+            "Redistricting_in_Virginia": 3.59,
+            "Banco_Convention_of_1905": 0.9,
+            "InciWeb": 0.9
+        }
+    }
+}
+{
+    "Word": "nissan",
+    "Time Frequencies": {
+        "2022-01-01": 2.88,
+        "2023-01-01": 2.83,
+        "2024-01-01": 9.09,
+        "2024-11-01": 8.97
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "Petromin_Corporation": 1.92,
+            "Nautilus_Entertainment_Design": 0.96
+        },
+        "2023-01-01": {
+            "Petromin_Corporation": 1.89,
+            "Nautilus_Entertainment_Design": 0.94
+        },
+        "2024-01-01": {
+            "Petromin_Corporation": 8.18,
+            "Nautilus_Entertainment_Design": 0.91
+        },
+        "2024-11-01": {
+            "Petromin_Corporation": 8.08,
+            "Nautilus_Entertainment_Design": 0.9
+        }
+    }
+}
+{
+    "Word": "maple",
+    "Time Frequencies": {
+        "2022-01-01": 2.88,
+        "2023-01-01": 3.77,
+        "2024-01-01": 8.18,
+        "2024-11-01": 8.97
+    },
+    "Top 5 Page Frequencies": {
+        "2022-01-01": {
+            "1953–54_Toronto_Maple_Leafs_season": 1.92,
+            "MLS_on_TSN": 0.96
+        },
+        "2023-01-01": {
+            "Conor_Timmins": 1.89,
+            "1953–54_Toronto_Maple_Leafs_season": 0.94,
+            "MLS_on_TSN": 0.94
+        },
+        "2024-01-01": {
+            "Conor_Timmins": 5.45,
+            "1953–54_Toronto_Maple_Leafs_season": 0.91,
+            "Lynn_Allen": 0.91,
+            "MLS_on_TSN": 0.91
+        },
+        "2024-11-01": {
+            "Conor_Timmins": 6.28,
+            "1953–54_Toronto_Maple_Leafs_season": 0.9,
+            "Lynn_Allen": 0.9,
+            "MLS_on_TSN": 0.9
+        }
+    }
+}
