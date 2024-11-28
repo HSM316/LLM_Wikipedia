@@ -1,0 +1,915 @@
+{
+    "Word": "usr",
+    "Time Frequencies": {
+        "2020-01-01": 6.0,
+        "2021-01-01": 5.8,
+        "2022-01-01": 5.67,
+        "2023-01-01": 16.59,
+        "2024-01-01": 24.46,
+        "2024-11-01": 24.16
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Anatol_E._Baconsky": 5.0,
+            "Magda_Cârneci": 1.0
+        },
+        "2021-01-01": {
+            "Anatol_E._Baconsky": 4.84,
+            "Magda_Cârneci": 0.97
+        },
+        "2022-01-01": {
+            "Anatol_E._Baconsky": 4.72,
+            "Magda_Cârneci": 0.94
+        },
+        "2023-01-01": {
+            "Dimitrie_Stelaru": 6.45,
+            "Anatol_E._Baconsky": 4.61,
+            "Ion_Vinea": 3.69,
+            "Magda_Cârneci": 0.92,
+            "Marcia_Grostein": 0.92
+        },
+        "2024-01-01": {
+            "Dimitrie_Stelaru": 6.34,
+            "Mihu_Dragomir": 5.44,
+            "Anatol_E._Baconsky": 4.53,
+            "Ion_Biberi": 3.62,
+            "Ion_Vinea": 3.62
+        },
+        "2024-11-01": {
+            "Dimitrie_Stelaru": 6.26,
+            "Mihu_Dragomir": 5.37,
+            "Anatol_E._Baconsky": 4.47,
+            "Ion_Biberi": 3.58,
+            "Ion_Vinea": 3.58
+        }
+    }
+}
+
+{
+    "Word": "usps",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.89,
+        "2023-01-01": 2.77,
+        "2024-01-01": 3.62,
+        "2024-11-01": 3.58
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Ivan_Cash": 1.0
+        },
+        "2021-01-01": {
+            "Ivan_Cash": 0.97
+        },
+        "2022-01-01": {
+            "Ivan_Cash": 0.94,
+            "Label_228": 0.94
+        },
+        "2023-01-01": {
+            "Ivan_Cash": 0.92,
+            "Label_228": 0.92,
+            "United_States_post_office_murals": 0.92
+        },
+        "2024-01-01": {
+            "Label_228": 1.81,
+            "Ivan_Cash": 0.91,
+            "United_States_post_office_murals": 0.91
+        },
+        "2024-11-01": {
+            "Label_228": 1.79,
+            "Ivan_Cash": 0.89,
+            "United_States_post_office_murals": 0.89
+        }
+    }
+}
+
+{
+    "Word": "isbn",
+    "Time Frequencies": {
+        "2020-01-01": 92.0,
+        "2021-01-01": 84.13,
+        "2022-01-01": 227.55,
+        "2023-01-01": 296.84,
+        "2024-01-01": 305.33,
+        "2024-11-01": 317.62
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Gary_Russell_Libby": 10.0,
+            "Adhesive_bonding": 4.0,
+            "Junk_Jet": 4.0,
+            "Max_Bruinsma": 4.0,
+            "Charlotte_Klonk": 3.0
+        },
+        "2021-01-01": {
+            "Gary_Russell_Libby": 9.67,
+            "Natalia_Polenova": 8.7,
+            "Junk_Jet": 3.87,
+            "Charlotte_Klonk": 2.9,
+            "Stephan_von_Huene": 2.9
+        },
+        "2022-01-01": {
+            "Yana_Milev": 56.65,
+            "Gary_Russell_Libby": 9.44,
+            "Galit_Eilat": 8.5,
+            "Natalia_Polenova": 8.5,
+            "Dominique_Moulon": 6.61
+        },
+        "2023-01-01": {
+            "Yana_Milev": 54.39,
+            "Gary_Russell_Libby": 9.22,
+            "Antanas_Andrijauskas": 8.3,
+            "Natalia_Polenova": 8.3,
+            "Sean_Lynch_(artist)": 8.3
+        },
+        "2024-01-01": {
+            "Yana_Milev": 53.46,
+            "Gary_Russell_Libby": 9.06,
+            "Antanas_Andrijauskas": 8.15,
+            "Natalia_Polenova": 8.15,
+            "Sean_Lynch_(artist)": 8.15
+        },
+        "2024-11-01": {
+            "Yana_Milev": 52.79,
+            "Antanas_Andrijauskas": 8.05,
+            "Natalia_Polenova": 8.05,
+            "Sean_Lynch_(artist)": 8.05,
+            "Dominique_Moulon": 7.16
+        }
+    }
+}
+
+{
+    "Word": "ht",
+    "Time Frequencies": {
+        "2020-01-01": 8.0,
+        "2021-01-01": 7.74,
+        "2022-01-01": 6.61,
+        "2023-01-01": 6.45,
+        "2024-01-01": 19.03,
+        "2024-11-01": 19.68
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Anne_Barlow": 1.0,
+            "Dennis_Eichhorn": 1.0,
+            "Emerson_Burkhart": 1.0,
+            "Federal_furniture": 1.0,
+            "Geschlechterkampf": 1.0
+        },
+        "2021-01-01": {
+            "Anne_Barlow": 0.97,
+            "Dennis_Eichhorn": 0.97,
+            "Emerson_Burkhart": 0.97,
+            "Federal_furniture": 0.97,
+            "Geschlechterkampf": 0.97
+        },
+        "2022-01-01": {
+            "Anne_Barlow": 0.94,
+            "Dennis_Eichhorn": 0.94,
+            "Federal_furniture": 0.94,
+            "Geschlechterkampf": 0.94,
+            "Murnaghan–Nakayama_rule": 0.94
+        },
+        "2023-01-01": {
+            "Anne_Barlow": 0.92,
+            "Dennis_Eichhorn": 0.92,
+            "Federal_furniture": 0.92,
+            "Geschlechterkampf": 0.92,
+            "Murnaghan–Nakayama_rule": 0.92
+        },
+        "2024-01-01": {
+            "Boston_Camera_Club": 14.5,
+            "Anne_Barlow": 0.91,
+            "Dennis_Eichhorn": 0.91,
+            "Federal_furniture": 0.91,
+            "Murnaghan–Nakayama_rule": 0.91
+        },
+        "2024-11-01": {
+            "Boston_Camera_Club": 14.32,
+            "Anne_Barlow": 0.89,
+            "Arslan_Tash_amulets": 0.89,
+            "Dennis_Eichhorn": 0.89,
+            "Federal_furniture": 0.89
+        }
+    }
+}
+
+{
+    "Word": "zus",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 4.72,
+        "2023-01-01": 4.61,
+        "2024-01-01": 5.44,
+        "2024-11-01": 5.37
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Géza_Fodor_(philosopher)": 1.0,
+            "International_Architecture_Biennale_Rotterdam": 1.0
+        },
+        "2021-01-01": {
+            "Géza_Fodor_(philosopher)": 0.97,
+            "International_Architecture_Biennale_Rotterdam": 0.97
+        },
+        "2022-01-01": {
+            "Yana_Milev": 2.83,
+            "Géza_Fodor_(philosopher)": 0.94,
+            "International_Architecture_Biennale_Rotterdam": 0.94
+        },
+        "2023-01-01": {
+            "Yana_Milev": 2.77,
+            "Géza_Fodor_(philosopher)": 0.92,
+            "International_Architecture_Biennale_Rotterdam": 0.92
+        },
+        "2024-01-01": {
+            "Yana_Milev": 2.72,
+            "Architecture_of_Poland": 0.91,
+            "Géza_Fodor_(philosopher)": 0.91,
+            "International_Architecture_Biennale_Rotterdam": 0.91
+        },
+        "2024-11-01": {
+            "Yana_Milev": 2.68,
+            "Architecture_of_Poland": 0.89,
+            "Géza_Fodor_(philosopher)": 0.89,
+            "International_Architecture_Biennale_Rotterdam": 0.89
+        }
+    }
+}
+
+{
+    "Word": "conf",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 3.78,
+        "2023-01-01": 4.61,
+        "2024-01-01": 4.53,
+        "2024-11-01": 5.37
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Media_monitoring": 1.0,
+            "PlayPower": 1.0
+        },
+        "2021-01-01": {
+            "Beatie_Wolfe": 0.97,
+            "Media_monitoring": 0.97,
+            "PlayPower": 0.97
+        },
+        "2022-01-01": {
+            "Beatie_Wolfe": 0.94,
+            "Bruno_Lohse": 0.94,
+            "Media_monitoring": 0.94,
+            "PlayPower": 0.94
+        },
+        "2023-01-01": {
+            "Beatie_Wolfe": 0.92,
+            "Bruno_Lohse": 0.92,
+            "Jeffrey_F._Hamburger": 0.92,
+            "Media_monitoring": 0.92,
+            "PlayPower": 0.92
+        },
+        "2024-01-01": {
+            "Beatie_Wolfe": 0.91,
+            "Bruno_Lohse": 0.91,
+            "Jeffrey_F._Hamburger": 0.91,
+            "Media_monitoring": 0.91,
+            "PlayPower": 0.91
+        },
+        "2024-11-01": {
+            "Beatie_Wolfe": 0.89,
+            "Bruno_Lohse": 0.89,
+            "Evan_Bacon": 0.89,
+            "Jeffrey_F._Hamburger": 0.89,
+            "Media_monitoring": 0.89
+        }
+    }
+}
+
+{
+    "Word": "vaccine",
+    "Time Frequencies": {
+        "2020-01-01": 5.0,
+        "2021-01-01": 5.8,
+        "2022-01-01": 11.33,
+        "2023-01-01": 14.75,
+        "2024-01-01": 13.59,
+        "2024-11-01": 13.42
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "History_of_propaganda": 2.0,
+            "Alexandru_Slătineanu": 1.0,
+            "Preston_is_My_Paris": 1.0,
+            "Royal_Army_Medical_College": 1.0
+        },
+        "2021-01-01": {
+            "History_of_propaganda": 1.93,
+            "Alexandru_Slătineanu": 0.97,
+            "Preston_is_My_Paris": 0.97,
+            "Royal_Army_Medical_College": 0.97,
+            "They_Are_Billions": 0.97
+        },
+        "2022-01-01": {
+            "History_of_propaganda": 1.89,
+            "Step_and_repeat": 1.89,
+            "Alexandru_Slătineanu": 0.94,
+            "Fahmi_Reza": 0.94,
+            "Healin'_Good_Pretty_Cure": 0.94
+        },
+        "2023-01-01": {
+            "Arma_3": 3.69,
+            "History_of_propaganda": 1.84,
+            "Alexandru_Slătineanu": 0.92,
+            "Fahmi_Reza": 0.92,
+            "Healin'_Good_Pretty_Cure": 0.92
+        },
+        "2024-01-01": {
+            "Arma_3": 2.72,
+            "History_of_propaganda": 1.81,
+            "Alexandru_Slătineanu": 0.91,
+            "Fahmi_Reza": 0.91,
+            "Healin'_Good_Pretty_Cure": 0.91
+        },
+        "2024-11-01": {
+            "Arma_3": 2.68,
+            "History_of_propaganda": 1.79,
+            "Alexandru_Slătineanu": 0.89,
+            "Fahmi_Reza": 0.89,
+            "Healin'_Good_Pretty_Cure": 0.89
+        }
+    }
+}
+
+{
+    "Word": "soa",
+    "Time Frequencies": {
+        "2020-01-01": 5.0,
+        "2021-01-01": 4.84,
+        "2022-01-01": 4.72,
+        "2023-01-01": 4.61,
+        "2024-01-01": 4.53,
+        "2024-11-01": 13.42
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "History_of_business_architecture": 3.0,
+            "Australian_Classification_Board": 1.0,
+            "Frederick_Clifford_Dixon": 1.0
+        },
+        "2021-01-01": {
+            "History_of_business_architecture": 2.9,
+            "Australian_Classification_Board": 0.97,
+            "Frederick_Clifford_Dixon": 0.97
+        },
+        "2022-01-01": {
+            "History_of_business_architecture": 2.83,
+            "Australian_Classification_Board": 0.94,
+            "Frederick_Clifford_Dixon": 0.94
+        },
+        "2023-01-01": {
+            "History_of_business_architecture": 2.77,
+            "Australian_Classification_Board": 0.92,
+            "Frederick_Clifford_Dixon": 0.92
+        },
+        "2024-01-01": {
+            "History_of_business_architecture": 2.72,
+            "Australian_Classification_Board": 0.91,
+            "Frederick_Clifford_Dixon": 0.91
+        },
+        "2024-11-01": {
+            "Sense_of_agency": 8.95,
+            "History_of_business_architecture": 2.68,
+            "Australian_Classification_Board": 0.89,
+            "Frederick_Clifford_Dixon": 0.89
+        }
+    }
+}
+
+{
+    "Word": "shopper",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 5.8,
+        "2022-01-01": 5.67,
+        "2023-01-01": 6.45,
+        "2024-01-01": 8.15,
+        "2024-11-01": 8.05
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Peter_Marino": 1.0,
+            "Sausage_Party": 1.0,
+            "Tobacco_and_art": 1.0
+        },
+        "2021-01-01": {
+            "Sausage_Party": 3.87,
+            "Peter_Marino": 0.97,
+            "Tobacco_and_art": 0.97
+        },
+        "2022-01-01": {
+            "Sausage_Party": 3.78,
+            "Peter_Marino": 0.94,
+            "Tobacco_and_art": 0.94
+        },
+        "2023-01-01": {
+            "Sausage_Party": 3.69,
+            "Jewelers_of_America": 0.92,
+            "Peter_Marino": 0.92,
+            "Tobacco_and_art": 0.92
+        },
+        "2024-01-01": {
+            "Sausage_Party": 5.44,
+            "Jewelers_of_America": 0.91,
+            "Peter_Marino": 0.91,
+            "Tobacco_and_art": 0.91
+        },
+        "2024-11-01": {
+            "Sausage_Party": 5.37,
+            "Jewelers_of_America": 0.89,
+            "Peter_Marino": 0.89,
+            "Tobacco_and_art": 0.89
+        }
+    }
+}
+
+{
+    "Word": "toner",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.89,
+        "2023-01-01": 1.84,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.68
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Tullio_DeSantis": 1.0
+        },
+        "2021-01-01": {
+            "Tullio_DeSantis": 0.97
+        },
+        "2022-01-01": {
+            "Cycolor": 0.94,
+            "Tullio_DeSantis": 0.94
+        },
+        "2023-01-01": {
+            "Cycolor": 0.92,
+            "Tullio_DeSantis": 0.92
+        },
+        "2024-01-01": {
+            "Cycolor": 0.91,
+            "Spider-Man__Across_the_Spider-Verse": 0.91,
+            "Tullio_DeSantis": 0.91
+        },
+        "2024-11-01": {
+            "Cycolor": 0.89,
+            "Spider-Man__Across_the_Spider-Verse": 0.89,
+            "Tullio_DeSantis": 0.89
+        }
+    }
+}
+
+{
+    "Word": "cst",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.83,
+        "2023-01-01": 2.77,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.68
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Deepak_Shimkhada": 1.0
+        },
+        "2021-01-01": {
+            "Architecture_of_Mumbai": 1.93,
+            "Deepak_Shimkhada": 0.97
+        },
+        "2022-01-01": {
+            "Architecture_of_Mumbai": 1.89,
+            "Deepak_Shimkhada": 0.94
+        },
+        "2023-01-01": {
+            "Architecture_of_Mumbai": 1.84,
+            "Deepak_Shimkhada": 0.92
+        },
+        "2024-01-01": {
+            "Architecture_of_Mumbai": 1.81,
+            "Deepak_Shimkhada": 0.91
+        },
+        "2024-11-01": {
+            "Architecture_of_Mumbai": 1.79,
+            "Deepak_Shimkhada": 0.89
+        }
+    }
+}
+
+{
+    "Word": "betting",
+    "Time Frequencies": {
+        "2020-01-01": 6.0,
+        "2021-01-01": 8.7,
+        "2022-01-01": 13.22,
+        "2023-01-01": 11.98,
+        "2024-01-01": 14.5,
+        "2024-11-01": 15.21
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 2.0,
+            "Game+": 1.0,
+            "Good-Bye_(manga)": 1.0,
+            "Le_Bal_(arts_centre)": 1.0,
+            "Russian_Neoclassical_Revival": 1.0
+        },
+        "2021-01-01": {
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 1.93,
+            "Aristide_Blank": 0.97,
+            "Game+": 0.97,
+            "Good-Bye_(manga)": 0.97,
+            "History_of_Grand_Central_Terminal": 0.97
+        },
+        "2022-01-01": {
+            "Esther_Schipper": 3.78,
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 1.89,
+            "Aristide_Blank": 0.94,
+            "Game+": 0.94,
+            "Good-Bye_(manga)": 0.94
+        },
+        "2023-01-01": {
+            "Esther_Schipper": 2.77,
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 1.84,
+            "Aristide_Blank": 0.92,
+            "Game+": 0.92,
+            "Good-Bye_(manga)": 0.92
+        },
+        "2024-01-01": {
+            "Esther_Schipper": 2.72,
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 1.81,
+            "Antonio_Escohotado": 0.91,
+            "Aristide_Blank": 0.91,
+            "Cake_(2019_TV_series)": 0.91
+        },
+        "2024-11-01": {
+            "Convention_on_the_Manipulation_of_Sports_Competitions": 1.79,
+            "Dante_or_Die_Theatre": 1.79,
+            "Antonio_Escohotado": 0.89,
+            "Aristide_Blank": 0.89,
+            "Bill_Perkins_(businessman)": 0.89
+        }
+    }
+}
+
+{
+    "Word": "ent",
+    "Time Frequencies": {
+        "2020-01-01": 7.0,
+        "2021-01-01": 6.77,
+        "2022-01-01": 6.61,
+        "2023-01-01": 13.83,
+        "2024-01-01": 18.12,
+        "2024-11-01": 19.68
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "A_Weaver_on_the_Horizon": 2.0,
+            "Brown_Bag_Software_v._Symantec_Corp": 2.0,
+            "Copyright_protection_for_fictional_characters": 1.0,
+            "Heaven's_Lost_Property": 1.0,
+            "Italian_Rococo_art": 1.0
+        },
+        "2021-01-01": {
+            "A_Weaver_on_the_Horizon": 1.93,
+            "Brown_Bag_Software_v._Symantec_Corp": 1.93,
+            "Copyright_protection_for_fictional_characters": 0.97,
+            "Heaven's_Lost_Property": 0.97,
+            "Italian_Rococo_art": 0.97
+        },
+        "2022-01-01": {
+            "A_Weaver_on_the_Horizon": 1.89,
+            "Brown_Bag_Software_v._Symantec_Corp": 1.89,
+            "Copyright_protection_for_fictional_characters": 0.94,
+            "Heaven's_Lost_Property": 0.94,
+            "Yana_Milev": 0.94
+        },
+        "2023-01-01": {
+            "Libby_Heaney": 7.37,
+            "A_Weaver_on_the_Horizon": 1.84,
+            "Brown_Bag_Software_v._Symantec_Corp": 1.84,
+            "Copyright_protection_for_fictional_characters": 0.92,
+            "Heaven's_Lost_Property": 0.92
+        },
+        "2024-01-01": {
+            "Libby_Heaney": 9.97,
+            "A_Weaver_on_the_Horizon": 1.81,
+            "Brown_Bag_Software_v._Symantec_Corp": 1.81,
+            "Amira_Gad": 0.91,
+            "Biruchiy_contemporary_art_project": 0.91
+        },
+        "2024-11-01": {
+            "Libby_Heaney": 10.74,
+            "A_Weaver_on_the_Horizon": 1.79,
+            "Brown_Bag_Software_v._Symantec_Corp": 1.79,
+            "Amira_Gad": 0.89,
+            "Biruchiy_contemporary_art_project": 0.89
+        }
+    }
+}
+
+{
+    "Word": "temp",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 4.84,
+        "2022-01-01": 3.78,
+        "2023-01-01": 6.45,
+        "2024-01-01": 5.44,
+        "2024-11-01": 7.16
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Elizabeth_Dee": 1.0,
+            "Jill_Freedman": 1.0,
+            "Re__Cutie_Honey": 1.0
+        },
+        "2021-01-01": {
+            "Chemical_coloring_of_metals": 0.97,
+            "Elizabeth_Dee": 0.97,
+            "Pandyan_art_and_architecture": 0.97,
+            "Re__Cutie_Honey": 0.97,
+            "Sibton_Abbey": 0.97
+        },
+        "2022-01-01": {
+            "Chemical_coloring_of_metals": 0.94,
+            "Elizabeth_Dee": 0.94,
+            "Re__Cutie_Honey": 0.94,
+            "Sibton_Abbey": 0.94
+        },
+        "2023-01-01": {
+            "Chemical_coloring_of_metals": 0.92,
+            "Elizabeth_Dee": 0.92,
+            "Joël_Andrianomearisoa": 0.92,
+            "Re__Cutie_Honey": 0.92,
+            "Sibton_Abbey": 0.92
+        },
+        "2024-01-01": {
+            "Chemical_coloring_of_metals": 0.91,
+            "Elizabeth_Dee": 0.91,
+            "Joël_Andrianomearisoa": 0.91,
+            "Re__Cutie_Honey": 0.91,
+            "Sibton_Abbey": 0.91
+        },
+        "2024-11-01": {
+            "Electrochemical_coloring_of_metals": 1.79,
+            "Chemical_coloring_of_metals": 0.89,
+            "Elizabeth_Dee": 0.89,
+            "Joël_Andrianomearisoa": 0.89,
+            "Re__Cutie_Honey": 0.89
+        }
+    }
+}
+
+{
+    "Word": "nudist",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 5.67,
+        "2023-01-01": 5.53,
+        "2024-01-01": 7.25,
+        "2024-11-01": 7.16
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Kill_la_Kill": 2.0,
+            "Nude_photography_(art)": 1.0
+        },
+        "2021-01-01": {
+            "Kill_la_Kill": 1.93,
+            "Nude_photography_(art)": 0.97
+        },
+        "2022-01-01": {
+            "Kill_la_Kill": 4.72,
+            "Nude_photography_(art)": 0.94
+        },
+        "2023-01-01": {
+            "Kill_la_Kill": 4.61,
+            "Nude_photography_(art)": 0.92
+        },
+        "2024-01-01": {
+            "Kill_la_Kill": 4.53,
+            "Brinton_Collection": 0.91,
+            "Nude_photography_(art)": 0.91,
+            "Paint_and_sip": 0.91
+        },
+        "2024-11-01": {
+            "Kill_la_Kill": 4.47,
+            "Brinton_Collection": 0.89,
+            "Nude_photography_(art)": 0.89,
+            "Paint_and_sip": 0.89
+        }
+    }
+}
+
+{
+    "Word": "finals",
+    "Time Frequencies": {
+        "2020-01-01": 12.0,
+        "2021-01-01": 15.47,
+        "2022-01-01": 12.27,
+        "2023-01-01": 23.05,
+        "2024-01-01": 25.37,
+        "2024-11-01": 26.84
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 1.0,
+            "Co_Rentmeester": 1.0,
+            "FIFA_19": 1.0,
+            "Girls_of_the_Wild's": 1.0,
+            "Gretta_Taylor": 1.0
+        },
+        "2021-01-01": {
+            "Talking_Tom_&_Friends": 2.9,
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 0.97,
+            "Co_Rentmeester": 0.97,
+            "FIFA_19": 0.97,
+            "Girls_of_the_Wild's": 0.97
+        },
+        "2022-01-01": {
+            "FIFA_12": 1.89,
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 0.94,
+            "Co_Rentmeester": 0.94,
+            "FIFA_19": 0.94,
+            "Girls_of_the_Wild's": 0.94
+        },
+        "2023-01-01": {
+            "Deadly_Class": 11.06,
+            "FIFA_12": 1.84,
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 0.92,
+            "Co_Rentmeester": 0.92,
+            "Girls_of_the_Wild's": 0.92
+        },
+        "2024-01-01": {
+            "Deadly_Class": 13.59,
+            "FIFA_12": 1.81,
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 0.91,
+            "Co_Rentmeester": 0.91,
+            "FIFA_17": 0.91
+        },
+        "2024-11-01": {
+            "Deadly_Class": 14.32,
+            "FIFA_12": 1.79,
+            "2014_FIFA_World_Cup_Brazil_(video_game)": 0.89,
+            "Co_Rentmeester": 0.89,
+            "Drone_art": 0.89
+        }
+    }
+}
+
+{
+    "Word": "asus",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 1.89,
+        "2023-01-01": 2.77,
+        "2024-01-01": 3.62,
+        "2024-11-01": 4.47
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "PenTile_matrix_family": 2.0
+        },
+        "2021-01-01": {
+            "PenTile_matrix_family": 1.93
+        },
+        "2022-01-01": {
+            "PenTile_matrix_family": 1.89
+        },
+        "2023-01-01": {
+            "PenTile_matrix_family": 1.84,
+            "IAcademy": 0.92
+        },
+        "2024-01-01": {
+            "IAcademy": 1.81,
+            "PenTile_matrix_family": 1.81
+        },
+        "2024-11-01": {
+            "IAcademy": 1.79,
+            "PenTile_matrix_family": 1.79,
+            "Afocal_photography": 0.89
+        }
+    }
+}
+
+{
+    "Word": "payday",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 4.72,
+        "2023-01-01": 5.53,
+        "2024-01-01": 5.44,
+        "2024-11-01": 6.26
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "1000_Crore_Club": 1.0,
+            "Copyright_lawsuits_by_Superman's_creators": 1.0,
+            "Khans_of_Bollywood": 1.0
+        },
+        "2021-01-01": {
+            "1000_Crore_Club": 0.97,
+            "Copyright_lawsuits_by_Superman's_creators": 0.97,
+            "Khans_of_Bollywood": 0.97
+        },
+        "2022-01-01": {
+            "Dead_by_Daylight": 1.89,
+            "1000_Crore_Club": 0.94,
+            "Copyright_lawsuits_by_Superman's_creators": 0.94,
+            "Khans_of_Bollywood": 0.94
+        },
+        "2023-01-01": {
+            "Dead_by_Daylight": 1.84,
+            "1000_Crore_Club": 0.92,
+            "Copyright_lawsuits_by_Superman's_creators": 0.92,
+            "Dismaland": 0.92,
+            "Khans_of_Bollywood": 0.92
+        },
+        "2024-01-01": {
+            "Dead_by_Daylight": 1.81,
+            "1000_Crore_Club": 0.91,
+            "Copyright_lawsuits_by_Superman's_creators": 0.91,
+            "Dismaland": 0.91,
+            "Khans_of_Bollywood": 0.91
+        },
+        "2024-11-01": {
+            "Dead_by_Daylight": 2.68,
+            "1000_Crore_Club": 0.89,
+            "Copyright_lawsuits_by_Superman's_creators": 0.89,
+            "Dismaland": 0.89,
+            "Khans_of_Bollywood": 0.89
+        }
+    }
+}
+
+{
+    "Word": "lows",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 3.78,
+        "2023-01-01": 3.69,
+        "2024-01-01": 5.44,
+        "2024-11-01": 6.26
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Dump_months": 1.0,
+            "Olena_Golub": 1.0,
+            "Philippe_Ségalot": 1.0
+        },
+        "2021-01-01": {
+            "American_National_Exhibition": 0.97,
+            "Dump_months": 0.97,
+            "Olena_Golub": 0.97,
+            "Philippe_Ségalot": 0.97
+        },
+        "2022-01-01": {
+            "American_National_Exhibition": 0.94,
+            "Dump_months": 0.94,
+            "Olena_Golub": 0.94,
+            "Philippe_Ségalot": 0.94
+        },
+        "2023-01-01": {
+            "American_National_Exhibition": 0.92,
+            "Dump_months": 0.92,
+            "Olena_Golub": 0.92,
+            "Philippe_Ségalot": 0.92
+        },
+        "2024-01-01": {
+            "American_National_Exhibition": 0.91,
+            "Dante_or_Die_Theatre": 0.91,
+            "Dump_months": 0.91,
+            "Olena_Golub": 0.91,
+            "Pace_(narrative)": 0.91
+        },
+        "2024-11-01": {
+            "American_National_Exhibition": 0.89,
+            "Dante_or_Die_Theatre": 0.89,
+            "Dump_months": 0.89,
+            "Euthanasia_Coaster": 0.89,
+            "Olena_Golub": 0.89
+        }
+    }
+}
+

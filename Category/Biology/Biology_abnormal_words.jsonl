@@ -1,0 +1,1105 @@
+{
+    "Word": "headset",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.92,
+        "2022-01-01": 1.86,
+        "2023-01-01": 2.73,
+        "2024-01-01": 23.18,
+        "2024-11-01": 26.44
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Elevated_plus_maze": 1.0,
+            "Online_speech_therapy": 1.0
+        },
+        "2021-01-01": {
+            "Elevated_plus_maze": 0.96,
+            "Online_speech_therapy": 0.96
+        },
+        "2022-01-01": {
+            "Elevated_plus_maze": 0.93,
+            "Online_speech_therapy": 0.93
+        },
+        "2023-01-01": {
+            "Detective_Pikachu_(film)": 0.91,
+            "Elevated_plus_maze": 0.91,
+            "Online_speech_therapy": 0.91
+        },
+        "2024-01-01": {
+            "Virtuality_(product)": 18.73,
+            "Mind-controlled_wheelchair": 1.78,
+            "Detective_Pikachu_(film)": 0.89,
+            "Elevated_plus_maze": 0.89,
+            "Online_speech_therapy": 0.89
+        },
+        "2024-11-01": {
+            "Virtuality_(product)": 22.03,
+            "Mind-controlled_wheelchair": 1.76,
+            "Detective_Pikachu_(film)": 0.88,
+            "Elevated_plus_maze": 0.88,
+            "Online_speech_therapy": 0.88
+        }
+    }
+}
+
+{
+    "Word": "playlist",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.96,
+        "2022-01-01": 1.86,
+        "2023-01-01": 1.82,
+        "2024-01-01": 3.57,
+        "2024-11-01": 4.41
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "The_Zookeeper's_Wife_(film)": 1.0
+        },
+        "2021-01-01": {
+            "The_Zookeeper's_Wife_(film)": 0.96
+        },
+        "2022-01-01": {
+            "Music_therapy_for_Alzheimer's_disease": 0.93,
+            "The_Zookeeper's_Wife_(film)": 0.93
+        },
+        "2023-01-01": {
+            "Music_therapy_for_Alzheimer's_disease": 0.91,
+            "The_Zookeeper's_Wife_(film)": 0.91
+        },
+        "2024-01-01": {
+            "Guardians_of_the_Galaxy_Vol._3": 1.78,
+            "Music_therapy_for_Alzheimer's_disease": 0.89,
+            "The_Zookeeper's_Wife_(film)": 0.89
+        },
+        "2024-11-01": {
+            "Guardians_of_the_Galaxy_Vol._3": 1.76,
+            "Music_therapy_for_Alzheimer's_disease": 0.88,
+            "The_Zookeeper's_Wife_(film)": 0.88,
+            "Wicked_(2024_film)": 0.88
+        }
+    }
+}
+
+{
+    "Word": "tvs",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 2.88,
+        "2022-01-01": 3.72,
+        "2023-01-01": 3.64,
+        "2024-01-01": 4.46,
+        "2024-11-01": 4.41
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Screen_time": 1.0
+        },
+        "2021-01-01": {
+            "Screen_time": 2.88
+        },
+        "2022-01-01": {
+            "Screen_time": 2.79,
+            "Far_Cry_3__Blood_Dragon": 0.93
+        },
+        "2023-01-01": {
+            "Screen_time": 2.73,
+            "Far_Cry_3__Blood_Dragon": 0.91
+        },
+        "2024-01-01": {
+            "Screen_time": 2.68,
+            "Far_Cry_3__Blood_Dragon": 0.89,
+            "List_of_ecoregions_in_North_America_(CEC)": 0.89
+        },
+        "2024-11-01": {
+            "Screen_time": 2.64,
+            "Far_Cry_3__Blood_Dragon": 0.88,
+            "List_of_ecoregions_in_North_America_(CEC)": 0.88
+        }
+    }
+}
+
+{
+    "Word": "bookmarks",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 1.92,
+        "2022-01-01": 0.93,
+        "2023-01-01": 0.91,
+        "2024-01-01": 0.89,
+        "2024-11-01": 4.41
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Manolis_Kellis": 1.0
+        },
+        "2021-01-01": {
+            "Exotic_felids_as_pets": 0.96,
+            "Manolis_Kellis": 0.96
+        },
+        "2022-01-01": {
+            "Manolis_Kellis": 0.93
+        },
+        "2023-01-01": {
+            "Manolis_Kellis": 0.91
+        },
+        "2024-01-01": {
+            "Manolis_Kellis": 0.89
+        },
+        "2024-11-01": {
+            "Drive_Your_Plow_Over_the_Bones_of_the_Dead": 0.88,
+            "Manolis_Kellis": 0.88,
+            "Nation_(novel)": 0.88,
+            "The_Sixth_Extinction__An_Unnatural_History": 0.88,
+            "Thinking,_Fast_and_Slow": 0.88
+        }
+    }
+}
+
+{
+    "Word": "soa",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 0.96,
+        "2022-01-01": 0.93,
+        "2023-01-01": 0.91,
+        "2024-01-01": 0.89,
+        "2024-11-01": 9.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Sucrose_octaacetate": 2.0,
+            "Domesticated_plants_and_animals_of_Austronesia": 1.0
+        },
+        "2021-01-01": {
+            "Domesticated_plants_and_animals_of_Austronesia": 0.96
+        },
+        "2022-01-01": {
+            "Domesticated_plants_and_animals_of_Austronesia": 0.93
+        },
+        "2023-01-01": {
+            "Domesticated_plants_and_animals_of_Austronesia": 0.91
+        },
+        "2024-01-01": {
+            "Domesticated_plants_and_animals_of_Austronesia": 0.89
+        },
+        "2024-11-01": {
+            "Sense_of_agency": 8.81,
+            "Domesticated_plants_and_animals_of_Austronesia": 0.88
+        }
+    }
+}
+
+{
+    "Word": "decor",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.0,
+        "2022-01-01": 0.0,
+        "2023-01-01": 0.0,
+        "2024-01-01": 1.78,
+        "2024-11-01": 3.52
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Bioactive_terrarium": 1.0
+        },
+        "2021-01-01": {},
+        "2022-01-01": {},
+        "2023-01-01": {},
+        "2024-01-01": {
+            "Christmas_plants": 0.89,
+            "MycoWorks": 0.89
+        },
+        "2024-11-01": {
+            "Christmas_plants": 0.88,
+            "Hamster_cage": 0.88,
+            "MycoWorks": 0.88,
+            "Shōjo_Tsubaki": 0.88
+        }
+    }
+}
+
+{
+    "Word": "bmw",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 3.84,
+        "2022-01-01": 4.65,
+        "2023-01-01": 3.64,
+        "2024-01-01": 3.57,
+        "2024-11-01": 3.52
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "The_Art_of_Racing_in_the_Rain": 1.0
+        },
+        "2021-01-01": {
+            "Biomedical_waste": 2.88,
+            "The_Art_of_Racing_in_the_Rain": 0.96
+        },
+        "2022-01-01": {
+            "Biomedical_waste": 2.79,
+            "Plant_for_Pakistan": 0.93,
+            "The_Art_of_Racing_in_the_Rain": 0.93
+        },
+        "2023-01-01": {
+            "Biomedical_waste": 1.82,
+            "Plant_for_Pakistan": 0.91,
+            "The_Art_of_Racing_in_the_Rain": 0.91
+        },
+        "2024-01-01": {
+            "Biomedical_waste": 1.78,
+            "Plant_for_Pakistan": 0.89,
+            "The_Art_of_Racing_in_the_Rain": 0.89
+        },
+        "2024-11-01": {
+            "Biomedical_waste": 1.76,
+            "Plant_for_Pakistan": 0.88,
+            "The_Art_of_Racing_in_the_Rain": 0.88
+        }
+    }
+}
+
+{
+    "Word": "isbn",
+    "Time Frequencies": {
+        "2020-01-01": 19.0,
+        "2021-01-01": 17.28,
+        "2022-01-01": 42.78,
+        "2023-01-01": 48.19,
+        "2024-01-01": 48.15,
+        "2024-11-01": 59.04
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Night_hag": 2.0,
+            "Advances_in_Microbial_Physiology": 1.0,
+            "Bokkeveld_Group": 1.0,
+            "Bryan_Alwyn_Barlow": 1.0,
+            "Codex_on_the_Flight_of_Birds": 1.0
+        },
+        "2021-01-01": {
+            "Night_hag": 1.92,
+            "Advances_in_Microbial_Physiology": 0.96,
+            "Beronda_Montgomery": 0.96,
+            "Bokkeveld_Group": 0.96,
+            "Codex_on_the_Flight_of_Birds": 0.96
+        },
+        "2022-01-01": {
+            "European_Centre_for_Nature_Conservation": 16.74,
+            "Amir_Kassam": 2.79,
+            "Catherina_Becker": 1.86,
+            "Night_hag": 1.86,
+            "Advances_in_Microbial_Physiology": 0.93
+        },
+        "2023-01-01": {
+            "European_Centre_for_Nature_Conservation": 16.37,
+            "Catherina_Becker": 1.82,
+            "Gallery_forest": 1.82,
+            "Night_hag": 1.82,
+            "X-Men_Misfits": 1.82
+        },
+        "2024-01-01": {
+            "European_Centre_for_Nature_Conservation": 16.05,
+            "Ming_Veevers-Carter": 6.24,
+            "Gallery_forest": 1.78,
+            "Night_hag": 1.78,
+            "X-Men_Misfits": 1.78
+        },
+        "2024-11-01": {
+            "European_Centre_for_Nature_Conservation": 15.86,
+            "Ming_Veevers-Carter": 6.17,
+            "Animal_welfare_in_Nazi_Germany": 2.64,
+            "Penile-vaginal_intercourse": 2.64,
+            "Gallery_forest": 1.76
+        }
+    }
+}
+
+{
+    "Word": "ro",
+    "Time Frequencies": {
+        "2020-01-01": 24.0,
+        "2021-01-01": 66.23,
+        "2022-01-01": 66.03,
+        "2023-01-01": 63.65,
+        "2024-01-01": 65.99,
+        "2024-11-01": 61.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Anti-SSA_Ro_autoantibodies": 5.0,
+            "Begging_in_animals": 1.0,
+            "Decree_770": 1.0,
+            "Domesticated_plants_and_animals_of_Austronesia": 1.0,
+            "Frogs_in_captivity": 1.0
+        },
+        "2021-01-01": {
+            "Anti-SSA_Ro_autoantibodies": 41.27,
+            "Timeline_of_pterosaur_research": 1.92,
+            "Begging_in_animals": 0.96,
+            "BioCompute_Object": 0.96,
+            "Domesticated_plants_and_animals_of_Austronesia": 0.96
+        },
+        "2022-01-01": {
+            "Anti-SSA_Ro_autoantibodies": 39.99,
+            "Timeline_of_pterosaur_research": 1.86,
+            "Begging_in_animals": 0.93,
+            "BioCompute_Object": 0.93,
+            "Domesticated_plants_and_animals_of_Austronesia": 0.93
+        },
+        "2023-01-01": {
+            "Anti-SSA_Ro_autoantibodies": 39.1,
+            "Timeline_of_pterosaur_research": 1.82,
+            "Begging_in_animals": 0.91,
+            "BioCompute_Object": 0.91,
+            "Domesticated_plants_and_animals_of_Austronesia": 0.91
+        },
+        "2024-01-01": {
+            "Anti-SSA_Ro_autoantibodies": 36.56,
+            "Undifferentiated_connective_tissue_disease": 3.57,
+            "Antisynthetase_syndrome": 1.78,
+            "Timeline_of_pterosaur_research": 1.78,
+            "Begging_in_animals": 0.89
+        },
+        "2024-11-01": {
+            "Anti-SSA_Ro_autoantibodies": 36.13,
+            "Antisynthetase_syndrome": 1.76,
+            "Timeline_of_pterosaur_research": 1.76,
+            "Begging_in_animals": 0.88,
+            "BioCompute_Object": 0.88
+        }
+    }
+}
+
+{
+    "Word": "wicked",
+    "Time Frequencies": {
+        "2020-01-01": 23.0,
+        "2021-01-01": 27.83,
+        "2022-01-01": 27.9,
+        "2023-01-01": 30.91,
+        "2024-01-01": 39.24,
+        "2024-11-01": 60.8
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Wicked_(2024_film)": 7.0,
+            "History_of_tuberculosis": 2.0,
+            "Traian_Herseni": 2.0,
+            "Anglo-Saxon_settlement_of_Britain": 1.0,
+            "Biocentrism_(ethics)": 1.0
+        },
+        "2021-01-01": {
+            "Wicked_(2024_film)": 8.64,
+            "Bedford_Research_Foundation": 1.92,
+            "History_of_tuberculosis": 1.92,
+            "Traian_Herseni": 1.92,
+            "Anglo-Saxon_settlement_of_Britain": 0.96
+        },
+        "2022-01-01": {
+            "Wicked_(2024_film)": 9.3,
+            "Bedford_Research_Foundation": 1.86,
+            "History_of_tuberculosis": 1.86,
+            "Traian_Herseni": 1.86,
+            "Anglo-Saxon_settlement_of_Britain": 0.93
+        },
+        "2023-01-01": {
+            "Wicked_(2024_film)": 14.55,
+            "Bedford_Research_Foundation": 1.82,
+            "Traian_Herseni": 1.82,
+            "Anglo-Saxon_settlement_of_Britain": 0.91,
+            "Biocentrism_(ethics)": 0.91
+        },
+        "2024-01-01": {
+            "Wicked_(2024_film)": 23.18,
+            "Bedford_Research_Foundation": 1.78,
+            "Traian_Herseni": 1.78,
+            "Anglo-Saxon_settlement_of_Britain": 0.89,
+            "Biocentrism_(ethics)": 0.89
+        },
+        "2024-11-01": {
+            "Wicked_(2024_film)": 46.7,
+            "Bedford_Research_Foundation": 1.76,
+            "Traian_Herseni": 1.76,
+            "Biocentrism_(ethics)": 0.88,
+            "Catholic_Church_and_health_care": 0.88
+        }
+    }
+}
+
+{
+    "Word": "nuke",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.92,
+        "2022-01-01": 1.86,
+        "2023-01-01": 1.82,
+        "2024-01-01": 5.35,
+        "2024-11-01": 5.29
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Capture_the_Flag_(film)": 1.0,
+            "Fukushima_nuclear_accident_cleanup": 1.0
+        },
+        "2021-01-01": {
+            "Capture_the_Flag_(film)": 0.96,
+            "Fukushima_nuclear_accident_cleanup": 0.96
+        },
+        "2022-01-01": {
+            "Capture_the_Flag_(film)": 0.93,
+            "Fukushima_nuclear_accident_cleanup": 0.93
+        },
+        "2023-01-01": {
+            "Capture_the_Flag_(film)": 0.91,
+            "Fukushima_nuclear_accident_cleanup": 0.91
+        },
+        "2024-01-01": {
+            "Cyberpunk_2077": 3.57,
+            "Capture_the_Flag_(film)": 0.89,
+            "Fukushima_nuclear_accident_cleanup": 0.89
+        },
+        "2024-11-01": {
+            "Cyberpunk_2077": 3.52,
+            "Capture_the_Flag_(film)": 0.88,
+            "Fukushima_nuclear_accident_cleanup": 0.88
+        }
+    }
+}
+
+{
+    "Word": "tions",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.92,
+        "2022-01-01": 3.72,
+        "2023-01-01": 3.64,
+        "2024-01-01": 3.57,
+        "2024-11-01": 3.52
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Jean_Bouillon": 1.0,
+            "Population_balance_equation": 1.0
+        },
+        "2021-01-01": {
+            "Jean_Bouillon": 0.96,
+            "Population_balance_equation": 0.96
+        },
+        "2022-01-01": {
+            "Excerebration": 0.93,
+            "Jean_Bouillon": 0.93,
+            "Klaus_F._Riegel": 0.93,
+            "Population_balance_equation": 0.93
+        },
+        "2023-01-01": {
+            "Excerebration": 0.91,
+            "Jean_Bouillon": 0.91,
+            "Klaus_F._Riegel": 0.91,
+            "Population_balance_equation": 0.91
+        },
+        "2024-01-01": {
+            "Excerebration": 0.89,
+            "Jean_Bouillon": 0.89,
+            "Klaus_F._Riegel": 0.89,
+            "Population_balance_equation": 0.89
+        },
+        "2024-11-01": {
+            "Excerebration": 0.88,
+            "Jean_Bouillon": 0.88,
+            "Klaus_F._Riegel": 0.88,
+            "Population_balance_equation": 0.88
+        }
+    }
+}
+
+{
+    "Word": "dns",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.0,
+        "2022-01-01": 0.93,
+        "2023-01-01": 0.91,
+        "2024-01-01": 0.89,
+        "2024-11-01": 2.64
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Tan_Tin_Wee": 1.0
+        },
+        "2021-01-01": {},
+        "2022-01-01": {
+            "Dual_circadian_oscillator_model": 0.93
+        },
+        "2023-01-01": {
+            "Dual_circadian_oscillator_model": 0.91
+        },
+        "2024-01-01": {
+            "Dual_circadian_oscillator_model": 0.89
+        },
+        "2024-11-01": {
+            "Birbal_Sahni_Institute_of_Palaeosciences": 1.76,
+            "Dual_circadian_oscillator_model": 0.88
+        }
+    }
+}
+
+{
+    "Word": "slideshow",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.0,
+        "2022-01-01": 1.86,
+        "2023-01-01": 1.82,
+        "2024-01-01": 1.78,
+        "2024-11-01": 2.64
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Insect_farming": 1.0
+        },
+        "2021-01-01": {},
+        "2022-01-01": {
+            "Far_Cry_3__Blood_Dragon": 0.93,
+            "Mother_Pigeon": 0.93
+        },
+        "2023-01-01": {
+            "Far_Cry_3__Blood_Dragon": 0.91,
+            "Mother_Pigeon": 0.91
+        },
+        "2024-01-01": {
+            "Far_Cry_3__Blood_Dragon": 0.89,
+            "Mother_Pigeon": 0.89
+        },
+        "2024-11-01": {
+            "Far_Cry_3__Blood_Dragon": 0.88,
+            "Mother_Pigeon": 0.88,
+            "Naftalan_oil": 0.88
+        }
+    }
+}
+
+{
+    "Word": "lingerie",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.96,
+        "2022-01-01": 2.79,
+        "2023-01-01": 2.73,
+        "2024-01-01": 2.68,
+        "2024-11-01": 2.64
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Lawnmower_Dog": 1.0
+        },
+        "2021-01-01": {
+            "Lawnmower_Dog": 0.96
+        },
+        "2022-01-01": {
+            "The_Platonic_Permutation": 1.86,
+            "Lawnmower_Dog": 0.93
+        },
+        "2023-01-01": {
+            "The_Platonic_Permutation": 1.82,
+            "Lawnmower_Dog": 0.91
+        },
+        "2024-01-01": {
+            "The_Platonic_Permutation": 1.78,
+            "Lawnmower_Dog": 0.89
+        },
+        "2024-11-01": {
+            "The_Platonic_Permutation": 1.76,
+            "Lawnmower_Dog": 0.88
+        }
+    }
+}
+
+{
+    "Word": "nude",
+    "Time Frequencies": {
+        "2020-01-01": 5.0,
+        "2021-01-01": 4.8,
+        "2022-01-01": 6.51,
+        "2023-01-01": 10.0,
+        "2024-01-01": 9.81,
+        "2024-11-01": 11.46
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 2.0,
+            "Central_Institute_for_Experimental_Animals": 1.0,
+            "NOG_mouse": 1.0,
+            "Parthanatos": 1.0
+        },
+        "2021-01-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 1.92,
+            "Central_Institute_for_Experimental_Animals": 0.96,
+            "Humanized_mouse": 0.96,
+            "NOG_mouse": 0.96
+        },
+        "2022-01-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 1.86,
+            "Central_Institute_for_Experimental_Animals": 0.93,
+            "Cerebrospinal_fluid_leak": 0.93,
+            "Humanized_mouse": 0.93,
+            "Mike_Berridge": 0.93
+        },
+        "2023-01-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 1.82,
+            "Bess_Mensendieck": 1.82,
+            "Central_Institute_for_Experimental_Animals": 0.91,
+            "Cerebrospinal_fluid_leak": 0.91,
+            "CKLF_like_MARVEL_transmembrane_domain_containing_7": 0.91
+        },
+        "2024-01-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 1.78,
+            "Bess_Mensendieck": 1.78,
+            "Central_Institute_for_Experimental_Animals": 0.89,
+            "Cerebrospinal_fluid_leak": 0.89,
+            "CKLF_like_MARVEL_transmembrane_domain_containing_7": 0.89
+        },
+        "2024-11-01": {
+            "20-Hydroxyeicosatetraenoic_acid": 1.76,
+            "Bess_Mensendieck": 1.76,
+            "Humanized_mouse": 1.76,
+            "CAMSAP2": 0.88,
+            "Central_Institute_for_Experimental_Animals": 0.88
+        }
+    }
+}
+
+{
+    "Word": "cisco",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 3.84,
+        "2022-01-01": 3.72,
+        "2023-01-01": 3.64,
+        "2024-01-01": 4.46,
+        "2024-11-01": 4.41
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Sleepio": 2.0
+        },
+        "2021-01-01": {
+            "Sleepio": 1.92,
+            "Wildlife_of_Canada": 1.92
+        },
+        "2022-01-01": {
+            "Sleepio": 1.86,
+            "Wildlife_of_Canada": 1.86
+        },
+        "2023-01-01": {
+            "Sleepio": 1.82,
+            "Wildlife_of_Canada": 1.82
+        },
+        "2024-01-01": {
+            "Sleepio": 1.78,
+            "Wildlife_of_Canada": 1.78,
+            "Paleobiota_of_the_Morrison_Formation": 0.89
+        },
+        "2024-11-01": {
+            "Sleepio": 1.76,
+            "Wildlife_of_Canada": 1.76,
+            "Paleobiota_of_the_Morrison_Formation": 0.88
+        }
+    }
+}
+
+{
+    "Word": "nudity",
+    "Time Frequencies": {
+        "2020-01-01": 7.0,
+        "2021-01-01": 11.52,
+        "2022-01-01": 12.09,
+        "2023-01-01": 15.46,
+        "2024-01-01": 16.94,
+        "2024-11-01": 14.98
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Piranha_3D": 2.0,
+            "Blade_Runner_2049": 1.0,
+            "Cyberpunk_2077": 1.0,
+            "Drakengard_3": 1.0,
+            "Ham's_Redemption": 1.0
+        },
+        "2021-01-01": {
+            "Blade_Runner_2049": 1.92,
+            "Piranha_3D": 1.92,
+            "Cyberpunk_2077": 0.96,
+            "Drakengard_3": 0.96,
+            "Ham's_Redemption": 0.96
+        },
+        "2022-01-01": {
+            "Blade_Runner_2049": 1.86,
+            "Cyberpunk_2077": 1.86,
+            "Piranha_3D": 1.86,
+            "Drakengard_3": 0.93,
+            "Ham's_Redemption": 0.93
+        },
+        "2023-01-01": {
+            "Babylon_(2022_film)": 1.82,
+            "Blade_Runner_2049": 1.82,
+            "Cyberpunk_2077": 1.82,
+            "Piranha_3D": 1.82,
+            "Bess_Mensendieck": 0.91
+        },
+        "2024-01-01": {
+            "Cyberpunk_2077": 2.68,
+            "Babylon_(2022_film)": 1.78,
+            "Blade_Runner_2049": 1.78,
+            "The_Human_Animal_(TV_series)": 1.78,
+            "Bess_Mensendieck": 0.89
+        },
+        "2024-11-01": {
+            "Cyberpunk_2077": 2.64,
+            "Babylon_(2022_film)": 1.76,
+            "Blade_Runner_2049": 1.76,
+            "Bess_Mensendieck": 0.88,
+            "Drakengard_3": 0.88
+        }
+    }
+}
+
+{
+    "Word": "bargain",
+    "Time Frequencies": {
+        "2020-01-01": 5.0,
+        "2021-01-01": 5.76,
+        "2022-01-01": 6.51,
+        "2023-01-01": 6.36,
+        "2024-01-01": 10.7,
+        "2024-11-01": 10.57
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "1985_Austrian_diethylene_glycol_wine_scandal": 1.0,
+            "Abu_Kabir_Forensic_Institute": 1.0,
+            "Prototype_2": 1.0,
+            "Royal_College_of_Speech_and_Language_Therapists": 1.0,
+            "United_States_v._One_Tyrannosaurus_Bataar_Skeleton": 1.0
+        },
+        "2021-01-01": {
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.96,
+            "Abu_Kabir_Forensic_Institute": 0.96,
+            "Costly_signaling_theory_in_evolutionary_psychology": 0.96,
+            "Prototype_2": 0.96,
+            "Royal_College_of_Speech_and_Language_Therapists": 0.96
+        },
+        "2022-01-01": {
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.93,
+            "Abu_Kabir_Forensic_Institute": 0.93,
+            "Costly_signaling_theory_in_evolutionary_psychology": 0.93,
+            "Emily_(cow)": 0.93,
+            "Prototype_2": 0.93
+        },
+        "2023-01-01": {
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.91,
+            "Abu_Kabir_Forensic_Institute": 0.91,
+            "Costly_signaling_theory_in_evolutionary_psychology": 0.91,
+            "Emily_(cow)": 0.91,
+            "Prototype_2": 0.91
+        },
+        "2024-01-01": {
+            "JBS_S.A": 4.46,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.89,
+            "Abu_Kabir_Forensic_Institute": 0.89,
+            "Costly_signaling_theory_in_evolutionary_psychology": 0.89,
+            "Emily_(cow)": 0.89
+        },
+        "2024-11-01": {
+            "JBS_S.A": 4.41,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.88,
+            "Abu_Kabir_Forensic_Institute": 0.88,
+            "Costly_signaling_theory_in_evolutionary_psychology": 0.88,
+            "Emily_(cow)": 0.88
+        }
+    }
+}
+
+{
+    "Word": "stickers",
+    "Time Frequencies": {
+        "2020-01-01": 12.0,
+        "2021-01-01": 12.48,
+        "2022-01-01": 12.09,
+        "2023-01-01": 11.82,
+        "2024-01-01": 24.97,
+        "2024-11-01": 24.67
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Discount_sticker": 3.0,
+            "Cyberpunk_2077": 2.0,
+            "Lepidoptera_migration": 1.0,
+            "Microbial_mat": 1.0,
+            "Skylanders__Giants": 1.0
+        },
+        "2021-01-01": {
+            "Discount_sticker": 2.88,
+            "Cyberpunk_2077": 1.92,
+            "Lepidoptera_migration": 0.96,
+            "Microbial_mat": 0.96,
+            "Skylanders__Giants": 0.96
+        },
+        "2022-01-01": {
+            "Discount_sticker": 2.79,
+            "Cyberpunk_2077": 1.86,
+            "Lepidoptera_migration": 0.93,
+            "Microbial_mat": 0.93,
+            "Skylanders__Giants": 0.93
+        },
+        "2023-01-01": {
+            "Discount_sticker": 2.73,
+            "Cyberpunk_2077": 1.82,
+            "Lepidoptera_migration": 0.91,
+            "Microbial_mat": 0.91,
+            "Skylanders__Giants": 0.91
+        },
+        "2024-01-01": {
+            "Discount_sticker": 15.16,
+            "Cyberpunk_2077": 1.78,
+            "Lepidoptera_migration": 0.89,
+            "Microbial_mat": 0.89,
+            "Oleg_Orlov": 0.89
+        },
+        "2024-11-01": {
+            "Discount_sticker": 14.98,
+            "Cyberpunk_2077": 1.76,
+            "Lepidoptera_migration": 0.88,
+            "Microbial_mat": 0.88,
+            "Oleg_Orlov": 0.88
+        }
+    }
+}
+
+{
+    "Word": "sip",
+    "Time Frequencies": {
+        "2020-01-01": 13.0,
+        "2021-01-01": 26.87,
+        "2022-01-01": 26.97,
+        "2023-01-01": 26.37,
+        "2024-01-01": 25.86,
+        "2024-11-01": 25.56
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Antimicrobial_surface": 2.0,
+            "Stable-isotope_probing": 2.0,
+            "Food_history": 1.0,
+            "Irish_Medicines_Formulary": 1.0,
+            "List_of_patient-reported_quality_of_life_surveys": 1.0
+        },
+        "2021-01-01": {
+            "RopB_transcriptional_regulator": 14.4,
+            "Antimicrobial_surface": 1.92,
+            "Stable-isotope_probing": 1.92,
+            "Food_history": 0.96,
+            "Irish_Medicines_Formulary": 0.96
+        },
+        "2022-01-01": {
+            "RopB_transcriptional_regulator": 13.95,
+            "Stable-isotope_probing": 2.79,
+            "Antimicrobial_surface": 1.86,
+            "Aroma_of_wine": 0.93,
+            "Food_history": 0.93
+        },
+        "2023-01-01": {
+            "RopB_transcriptional_regulator": 13.64,
+            "Stable-isotope_probing": 2.73,
+            "Antimicrobial_surface": 1.82,
+            "Aroma_of_wine": 0.91,
+            "Food_history": 0.91
+        },
+        "2024-01-01": {
+            "RopB_transcriptional_regulator": 13.38,
+            "Stable-isotope_probing": 2.68,
+            "Antimicrobial_surface": 1.78,
+            "Aroma_of_wine": 0.89,
+            "Food_history": 0.89
+        },
+        "2024-11-01": {
+            "RopB_transcriptional_regulator": 13.22,
+            "Stable-isotope_probing": 2.64,
+            "Antimicrobial_surface": 1.76,
+            "Aroma_of_wine": 0.88,
+            "Food_history": 0.88
+        }
+    }
+}
+
+{
+    "Word": "sticker",
+    "Time Frequencies": {
+        "2020-01-01": 10.0,
+        "2021-01-01": 13.44,
+        "2022-01-01": 13.02,
+        "2023-01-01": 13.64,
+        "2024-01-01": 19.62,
+        "2024-11-01": 20.27
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Skylanders__Trap_Team": 2.0,
+            "Biomedical_waste": 1.0,
+            "Genetically_modified_food_in_Oceania": 1.0,
+            "Low-flush_toilet": 1.0,
+            "Monarch_butterfly_migration": 1.0
+        },
+        "2021-01-01": {
+            "Bala_(2019_film)": 1.92,
+            "Skylanders__Trap_Team": 1.92,
+            "Watching-eye_effect": 1.92,
+            "Biomedical_waste": 0.96,
+            "Genetically_modified_food_in_Oceania": 0.96
+        },
+        "2022-01-01": {
+            "Bala_(2019_film)": 1.86,
+            "Skylanders__Trap_Team": 1.86,
+            "Watching-eye_effect": 1.86,
+            "Biomedical_waste": 0.93,
+            "Genetically_modified_food_in_Oceania": 0.93
+        },
+        "2023-01-01": {
+            "Bala_(2019_film)": 1.82,
+            "Skylanders__Trap_Team": 1.82,
+            "Watching-eye_effect": 1.82,
+            "Biomedical_waste": 0.91,
+            "Genetically_modified_food_in_Oceania": 0.91
+        },
+        "2024-01-01": {
+            "Discount_sticker": 6.24,
+            "Bala_(2019_film)": 1.78,
+            "Skylanders__Trap_Team": 1.78,
+            "Watching-eye_effect": 1.78,
+            "Biomedical_waste": 0.89
+        },
+        "2024-11-01": {
+            "Discount_sticker": 6.17,
+            "Bala_(2019_film)": 1.76,
+            "Skylanders__Trap_Team": 1.76,
+            "Watching-eye_effect": 1.76,
+            "Biomedical_waste": 0.88
+        }
+    }
+}
+
+{
+    "Word": "screenshots",
+    "Time Frequencies": {
+        "2020-01-01": 10.0,
+        "2021-01-01": 9.6,
+        "2022-01-01": 9.3,
+        "2023-01-01": 9.09,
+        "2024-01-01": 8.92,
+        "2024-11-01": 20.27
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 4.0,
+            "Assassin's_Creed_Syndicate": 1.0,
+            "Bloodborne": 1.0,
+            "Dactyl_Joust": 1.0,
+            "Far_Cry_3__Blood_Dragon": 1.0
+        },
+        "2021-01-01": {
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 3.84,
+            "Assassin's_Creed_Syndicate": 0.96,
+            "Bloodborne": 0.96,
+            "Dactyl_Joust": 0.96,
+            "Far_Cry_3__Blood_Dragon": 0.96
+        },
+        "2022-01-01": {
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 3.72,
+            "Super_Mario_Odyssey": 1.86,
+            "Assassin's_Creed_Syndicate": 0.93,
+            "Bloodborne": 0.93,
+            "Dactyl_Joust": 0.93
+        },
+        "2023-01-01": {
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 3.64,
+            "Super_Mario_Odyssey": 1.82,
+            "Assassin's_Creed_Syndicate": 0.91,
+            "Bloodborne": 0.91,
+            "Dactyl_Joust": 0.91
+        },
+        "2024-01-01": {
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 3.57,
+            "Super_Mario_Odyssey": 1.78,
+            "Assassin's_Creed_Syndicate": 0.89,
+            "Bloodborne": 0.89,
+            "Dactyl_Joust": 0.89
+        },
+        "2024-11-01": {
+            "List_of_Marvel_Comics_characters__B": 7.05,
+            "Metal_Gear_Solid_V__The_Phantom_Pain": 3.52,
+            "List_of_Marvel_Comics_characters__Z": 1.76,
+            "Super_Mario_Odyssey": 1.76,
+            "Assassin's_Creed_Syndicate": 0.88
+        }
+    }
+}
+
+{
+    "Word": "broker",
+    "Time Frequencies": {
+        "2020-01-01": 21.0,
+        "2021-01-01": 44.15,
+        "2022-01-01": 42.78,
+        "2023-01-01": 41.82,
+        "2024-01-01": 41.91,
+        "2024-11-01": 42.3
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Honest_broker": 6.0,
+            "Body_broker": 2.0,
+            "Cyborg_data_mining": 2.0,
+            "Organ_futures": 2.0,
+            "Biodiversity_offsetting": 1.0
+        },
+        "2021-01-01": {
+            "Liara_T'Soni": 23.04,
+            "Honest_broker": 5.76,
+            "Body_broker": 1.92,
+            "Cyborg_data_mining": 1.92,
+            "Organ_futures": 1.92
+        },
+        "2022-01-01": {
+            "Liara_T'Soni": 21.39,
+            "Honest_broker": 5.58,
+            "Body_broker": 1.86,
+            "Cyborg_data_mining": 1.86,
+            "Organ_futures": 1.86
+        },
+        "2023-01-01": {
+            "Liara_T'Soni": 20.91,
+            "Honest_broker": 5.46,
+            "Body_broker": 1.82,
+            "Cyborg_data_mining": 1.82,
+            "Organ_futures": 1.82
+        },
+        "2024-01-01": {
+            "Liara_T'Soni": 20.51,
+            "Honest_broker": 5.35,
+            "Body_broker": 1.78,
+            "Cyborg_data_mining": 1.78,
+            "Organ_futures": 1.78
+        },
+        "2024-11-01": {
+            "Liara_T'Soni": 20.27,
+            "Honest_broker": 5.29,
+            "Biodiversity_offsetting": 1.76,
+            "Body_broker": 1.76,
+            "Cyborg_data_mining": 1.76
+        }
+    }
+}
+

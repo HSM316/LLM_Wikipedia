@@ -4,3 +4,5 @@
   - **Art_growth_rate.csv** contains growth rate data for all entries from January 1, 2020, to November 1, 2024, sorted in descending order.
   - **Art_key_words.csv** contains data for key words.
   - **Art_origin_pages.jsonl** contains all unfiltered page titles.
+  - **Art_abnormal_words** analyzes words with a growth rate exceeding 100% and displays their top 5 articles with the highest frequency each year (if available).
+

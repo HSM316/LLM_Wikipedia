@@ -1,0 +1,1897 @@
+{
+    "Word": "jimmy",
+    "Time Frequencies": {
+        "2020-01-01": 65.0,
+        "2021-01-01": 105.35,
+        "2022-01-01": 191.05,
+        "2023-01-01": 345.04,
+        "2024-01-01": 340.37,
+        "2024-11-01": 348.16
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 22.0,
+            "United_States_grain_embargo_against_the_Soviet_Union": 4.0,
+            "List_of_doping_cases_in_cycling": 3.0,
+            "Agent_Orange_Act_of_1991": 2.0,
+            "Exploding_watermelon_stunt": 2.0
+        },
+        "2021-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 64.75,
+            "United_States_grain_embargo_against_the_Soviet_Union": 3.87,
+            "List_of_doping_cases_in_cycling": 2.9,
+            "Agent_Orange_Act_of_1991": 1.93,
+            "Exploding_watermelon_stunt": 1.93
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 149.64,
+            "United_States_grain_embargo_against_the_Soviet_Union": 3.76,
+            "List_of_doping_cases_in_cycling": 2.82,
+            "Agent_Orange_Act_of_1991": 1.88,
+            "Exploding_watermelon_stunt": 1.88
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 301.68,
+            "List_of_doping_cases_in_cycling": 2.77,
+            "United_States_grain_embargo_against_the_Soviet_Union": 2.77,
+            "Agent_Orange_Act_of_1991": 1.85,
+            "Exploding_watermelon_stunt": 1.85
+        },
+        "2024-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 295.89,
+            "Agent_Orange_Act_of_1991": 2.72,
+            "List_of_doping_cases_in_cycling": 2.72,
+            "Master_distiller": 2.72,
+            "United_States_grain_embargo_against_the_Soviet_Union": 2.72
+        },
+        "2024-11-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 305.2,
+            "Agent_Orange_Act_of_1991": 2.69,
+            "List_of_doping_cases_in_cycling": 2.69,
+            "Master_distiller": 2.69,
+            "United_States_grain_embargo_against_the_Soviet_Union": 2.69
+        }
+    }
+}
+
+{
+    "Word": "nintendo",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.82,
+        "2023-01-01": 3.69,
+        "2024-01-01": 2.72,
+        "2024-11-01": 4.48
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Bias_against_left-handed_people": 1.0
+        },
+        "2021-01-01": {
+            "Hungrybox": 1.93,
+            "Bias_against_left-handed_people": 0.97
+        },
+        "2022-01-01": {
+            "Hungrybox": 1.88,
+            "Bias_against_left-handed_people": 0.94
+        },
+        "2023-01-01": {
+            "Hungrybox": 1.85,
+            "Alec_Holland": 0.92,
+            "Bias_against_left-handed_people": 0.92
+        },
+        "2024-01-01": {
+            "Hungrybox": 1.82,
+            "Bias_against_left-handed_people": 0.91
+        },
+        "2024-11-01": {
+            "Hungrybox": 1.79,
+            "Klefki": 1.79,
+            "Bias_against_left-handed_people": 0.9
+        }
+    }
+}
+
+{
+    "Word": "aud",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.88,
+        "2023-01-01": 1.85,
+        "2024-01-01": 2.72,
+        "2024-11-01": 4.48
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "French_fry_vending_machine": 1.0
+        },
+        "2021-01-01": {
+            "French_fry_vending_machine": 0.97
+        },
+        "2022-01-01": {
+            "French_fry_vending_machine": 0.94,
+            "Greenhouse_gas_emissions_by_Australia": 0.94
+        },
+        "2023-01-01": {
+            "French_fry_vending_machine": 0.92,
+            "Greenhouse_gas_emissions_by_Australia": 0.92
+        },
+        "2024-01-01": {
+            "French_fry_vending_machine": 0.91,
+            "Greenhouse_gas_emissions_by_Australia": 0.91,
+            "The_Ocean_Cleanup": 0.91
+        },
+        "2024-11-01": {
+            "Alcohol_(drug)": 1.79,
+            "French_fry_vending_machine": 0.9,
+            "Greenhouse_gas_emissions_by_Australia": 0.9,
+            "The_Ocean_Cleanup": 0.9
+        }
+    }
+}
+
+{
+    "Word": "shortcuts",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 1.88,
+        "2023-01-01": 3.69,
+        "2024-01-01": 3.63,
+        "2024-11-01": 3.58
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Food_choice": 1.0
+        },
+        "2021-01-01": {
+            "Food_choice": 0.97,
+            "Quantum_thermodynamics": 0.97
+        },
+        "2022-01-01": {
+            "Food_choice": 0.94,
+            "Quantum_thermodynamics": 0.94
+        },
+        "2023-01-01": {
+            "Bias_against_left-handed_people": 1.85,
+            "Food_choice": 0.92,
+            "Quantum_thermodynamics": 0.92
+        },
+        "2024-01-01": {
+            "Bias_against_left-handed_people": 1.82,
+            "Food_choice": 0.91,
+            "Quantum_thermodynamics": 0.91
+        },
+        "2024-11-01": {
+            "Bias_against_left-handed_people": 1.79,
+            "Food_choice": 0.9,
+            "Quantum_thermodynamics": 0.9
+        }
+    }
+}
+
+{
+    "Word": "minolta",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 0.94,
+        "2023-01-01": 0.92,
+        "2024-01-01": 0.91,
+        "2024-11-01": 3.58
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Plant_tissue_test": 1.0
+        },
+        "2021-01-01": {
+            "Plant_tissue_test": 0.97
+        },
+        "2022-01-01": {
+            "Plant_tissue_test": 0.94
+        },
+        "2023-01-01": {
+            "Plant_tissue_test": 0.92
+        },
+        "2024-01-01": {
+            "Plant_tissue_test": 0.91
+        },
+        "2024-11-01": {
+            "Specim": 1.79,
+            "Low-dispersion_glass": 0.9,
+            "Plant_tissue_test": 0.9
+        }
+    }
+}
+
+{
+    "Word": "ncaa",
+    "Time Frequencies": {
+        "2020-01-01": 4.0,
+        "2021-01-01": 4.83,
+        "2022-01-01": 13.18,
+        "2023-01-01": 12.92,
+        "2024-01-01": 12.71,
+        "2024-11-01": 12.53
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "William_Lofland_Dudley": 2.0,
+            "Melanie_Sanford": 1.0,
+            "Nina_Roscher": 1.0
+        },
+        "2021-01-01": {
+            "William_Lofland_Dudley": 1.93,
+            "Lovisa_Selander": 0.97,
+            "Melanie_Sanford": 0.97,
+            "Nina_Roscher": 0.97
+        },
+        "2022-01-01": {
+            "Lovisa_Selander": 9.41,
+            "William_Lofland_Dudley": 1.88,
+            "Melanie_Sanford": 0.94,
+            "Nina_Roscher": 0.94
+        },
+        "2023-01-01": {
+            "Lovisa_Selander": 9.23,
+            "William_Lofland_Dudley": 1.85,
+            "Melanie_Sanford": 0.92,
+            "Nina_Roscher": 0.92
+        },
+        "2024-01-01": {
+            "Lovisa_Selander": 9.08,
+            "William_Lofland_Dudley": 1.82,
+            "Melanie_Sanford": 0.91,
+            "Nina_Roscher": 0.91
+        },
+        "2024-11-01": {
+            "Lovisa_Selander": 8.95,
+            "William_Lofland_Dudley": 1.79,
+            "Melanie_Sanford": 0.9,
+            "Nina_Roscher": 0.9
+        }
+    }
+}
+
+{
+    "Word": "mesa",
+    "Time Frequencies": {
+        "2020-01-01": 20.0,
+        "2021-01-01": 28.03,
+        "2022-01-01": 47.06,
+        "2023-01-01": 62.74,
+        "2024-01-01": 63.54,
+        "2024-11-01": 62.65
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Bleach_balloon": 4.0,
+            "Uranium_mining_and_the_Navajo_people": 3.0,
+            "Morris_Tanenbaum": 2.0,
+            "ACS_Award_for_Encouraging_Disadvantaged_Students_into_Careers_in_the_Chemical_Sciences": 1.0,
+            "Bonnie_Brae_Lemon": 1.0
+        },
+        "2021-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 6.77,
+            "Bleach_balloon": 3.87,
+            "Uranium_mining_and_the_Navajo_people": 3.87,
+            "Morris_Tanenbaum": 1.93,
+            "Bonnie_Brae_Lemon": 0.97
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 26.35,
+            "Bleach_balloon": 3.76,
+            "Uranium_mining_and_the_Navajo_people": 3.76,
+            "Morris_Tanenbaum": 1.88,
+            "Bonnie_Brae_Lemon": 0.94
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 40.59,
+            "Bleach_balloon": 3.69,
+            "Uranium_mining_and_the_Navajo_people": 3.69,
+            "Morris_Tanenbaum": 1.85,
+            "Bonnie_Brae_Lemon": 0.92
+        },
+        "2024-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 40.84,
+            "Bleach_balloon": 3.63,
+            "Uranium_mining_and_the_Navajo_people": 3.63,
+            "Morris_Tanenbaum": 1.82,
+            "Bonnie_Brae_Lemon": 0.91
+        },
+        "2024-11-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 41.17,
+            "Bleach_balloon": 3.58,
+            "Uranium_mining_and_the_Navajo_people": 3.58,
+            "Morris_Tanenbaum": 1.79,
+            "Bonnie_Brae_Lemon": 0.9
+        }
+    }
+}
+
+{
+    "Word": "chuck",
+    "Time Frequencies": {
+        "2020-01-01": 44.0,
+        "2021-01-01": 70.55,
+        "2022-01-01": 113.88,
+        "2023-01-01": 142.08,
+        "2024-01-01": 137.96,
+        "2024-11-01": 136.94
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 10.0,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 4.0,
+            "Blue_John_(mineral)": 3.0,
+            "Double_seam": 3.0,
+            "Bar_stock": 2.0
+        },
+        "2021-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 34.79,
+            "Blue_John_(mineral)": 2.9,
+            "Double_seam": 2.9,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 2.9,
+            "Anodic_bonding": 1.93
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 77.17,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.76,
+            "Blue_John_(mineral)": 2.82,
+            "Double_seam": 2.82,
+            "Anodic_bonding": 1.88
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 105.17,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.69,
+            "Blue_John_(mineral)": 2.77,
+            "Double_seam": 2.77,
+            "Anodic_bonding": 1.85
+        },
+        "2024-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 102.56,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.63,
+            "Blue_John_(mineral)": 2.72,
+            "Double_seam": 2.72,
+            "Anodic_bonding": 1.82
+        },
+        "2024-11-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 102.93,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.58,
+            "Blue_John_(mineral)": 2.69,
+            "Double_seam": 2.69,
+            "Anodic_bonding": 1.79
+        }
+    }
+}
+
+{
+    "Word": "stickers",
+    "Time Frequencies": {
+        "2020-01-01": 7.0,
+        "2021-01-01": 8.7,
+        "2022-01-01": 9.41,
+        "2023-01-01": 8.3,
+        "2024-01-01": 20.88,
+        "2024-11-01": 20.59
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Discount_sticker": 3.0,
+            "Carbon_pricing_in_Canada": 1.0,
+            "Evil_Queen_(Disney)": 1.0,
+            "Tree_Trunks_(Adventure_Time)": 1.0,
+            "Tyson_Looney_Tunes_Meals": 1.0
+        },
+        "2021-01-01": {
+            "Discount_sticker": 2.9,
+            "Carbon_pricing_in_Canada": 1.93,
+            "Evil_Queen_(Disney)": 0.97,
+            "List_of_dumplings": 0.97,
+            "Tree_Trunks_(Adventure_Time)": 0.97
+        },
+        "2022-01-01": {
+            "Discount_sticker": 2.82,
+            "Carbon_pricing_in_Canada": 1.88,
+            "Evil_Queen_(Disney)": 0.94,
+            "Herlock_Sholmes_(Ace_Attorney)": 0.94,
+            "List_of_dumplings": 0.94
+        },
+        "2023-01-01": {
+            "Discount_sticker": 2.77,
+            "Carbon_pricing_in_Canada": 1.85,
+            "Evil_Queen_(Disney)": 0.92,
+            "Herlock_Sholmes_(Ace_Attorney)": 0.92,
+            "Tree_Trunks_(Adventure_Time)": 0.92
+        },
+        "2024-01-01": {
+            "Discount_sticker": 15.43,
+            "Carbon_pricing_in_Canada": 1.82,
+            "Evil_Queen_(Disney)": 0.91,
+            "Herlock_Sholmes_(Ace_Attorney)": 0.91,
+            "Tree_Trunks_(Adventure_Time)": 0.91
+        },
+        "2024-11-01": {
+            "Discount_sticker": 15.22,
+            "Carbon_pricing_in_Canada": 1.79,
+            "Evil_Queen_(Disney)": 0.9,
+            "Herlock_Sholmes_(Ace_Attorney)": 0.9,
+            "Tree_Trunks_(Adventure_Time)": 0.9
+        }
+    }
+}
+
+{
+    "Word": "subscribe",
+    "Time Frequencies": {
+        "2020-01-01": 4.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 4.71,
+        "2023-01-01": 4.61,
+        "2024-01-01": 12.71,
+        "2024-11-01": 11.64
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "2018_Australian_strawberry_contamination": 1.0,
+            "Collaborative_Computing_Project_for_NMR": 1.0,
+            "Royal_Gold_Cup": 1.0,
+            "Together_for_Sustainability": 1.0
+        },
+        "2021-01-01": {
+            "2018_Australian_strawberry_contamination": 0.97,
+            "Collaborative_Computing_Project_for_NMR": 0.97,
+            "Royal_Gold_Cup": 0.97,
+            "Together_for_Sustainability": 0.97
+        },
+        "2022-01-01": {
+            "2018_Australian_strawberry_contamination": 0.94,
+            "Collaborative_Computing_Project_for_NMR": 0.94,
+            "Quantitative_storytelling": 0.94,
+            "Royal_Gold_Cup": 0.94,
+            "Together_for_Sustainability": 0.94
+        },
+        "2023-01-01": {
+            "2018_Australian_strawberry_contamination": 0.92,
+            "Collaborative_Computing_Project_for_NMR": 0.92,
+            "Quantitative_storytelling": 0.92,
+            "Royal_Gold_Cup": 0.92,
+            "Together_for_Sustainability": 0.92
+        },
+        "2024-01-01": {
+            "Annual_Review_of_Materials_Research": 1.82,
+            "2018_Australian_strawberry_contamination": 0.91,
+            "Annual_Review_of_Analytical_Chemistry": 0.91,
+            "Annual_Review_of_Biochemistry": 0.91,
+            "Annual_Review_of_Chemical_and_Biomolecular_Engineering": 0.91
+        },
+        "2024-11-01": {
+            "2018_Australian_strawberry_contamination": 0.9,
+            "Annual_Review_of_Analytical_Chemistry": 0.9,
+            "Annual_Review_of_Biochemistry": 0.9,
+            "Annual_Review_of_Chemical_and_Biomolecular_Engineering": 0.9,
+            "Annual_Review_of_Condensed_Matter_Physics": 0.9
+        }
+    }
+}
+
+{
+    "Word": "nokia",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 0.94,
+        "2023-01-01": 2.77,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Hong_Byung-hee": 1.0
+        },
+        "2021-01-01": {
+            "Hong_Byung-hee": 0.97
+        },
+        "2022-01-01": {
+            "Hong_Byung-hee": 0.94
+        },
+        "2023-01-01": {
+            "AMOLED": 1.85,
+            "Hong_Byung-hee": 0.92
+        },
+        "2024-01-01": {
+            "AMOLED": 1.82,
+            "Hong_Byung-hee": 0.91
+        },
+        "2024-11-01": {
+            "AMOLED": 1.79,
+            "Hong_Byung-hee": 0.9
+        }
+    }
+}
+
+{
+    "Word": "paxil",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 1.88,
+        "2023-01-01": 1.85,
+        "2024-01-01": 1.82,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Klaus_Schmiegel": 1.0
+        },
+        "2021-01-01": {
+            "Klaus_Schmiegel": 0.97,
+            "Me-too_drug": 0.97
+        },
+        "2022-01-01": {
+            "Klaus_Schmiegel": 0.94,
+            "Me-too_drug": 0.94
+        },
+        "2023-01-01": {
+            "Klaus_Schmiegel": 0.92,
+            "Me-too_drug": 0.92
+        },
+        "2024-01-01": {
+            "Klaus_Schmiegel": 0.91,
+            "Me-too_drug": 0.91
+        },
+        "2024-11-01": {
+            "Klaus_Schmiegel": 0.9,
+            "List_of_investigational_antidepressants": 0.9,
+            "Me-too_drug": 0.9
+        }
+    }
+}
+
+{
+    "Word": "locator",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.88,
+        "2023-01-01": 1.85,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Pipe_recovery_operations": 1.0
+        },
+        "2021-01-01": {
+            "Pipe_recovery_operations": 0.97
+        },
+        "2022-01-01": {
+            "Donald_A._Dahlstrom": 0.94,
+            "Pipe_recovery_operations": 0.94
+        },
+        "2023-01-01": {
+            "Donald_A._Dahlstrom": 0.92,
+            "Pipe_recovery_operations": 0.92
+        },
+        "2024-01-01": {
+            "2013_Boeing_787_Dreamliner_grounding": 0.91,
+            "Donald_A._Dahlstrom": 0.91,
+            "Pipe_recovery_operations": 0.91
+        },
+        "2024-11-01": {
+            "2013_Boeing_787_Dreamliner_grounding": 0.9,
+            "Donald_A._Dahlstrom": 0.9,
+            "Pipe_recovery_operations": 0.9
+        }
+    }
+}
+
+{
+    "Word": "wifi",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 2.82,
+        "2023-01-01": 2.77,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Robotic_vacuum_cleaner": 1.0
+        },
+        "2021-01-01": {
+            "National_Hellenic_Research_Foundation": 0.97,
+            "Robotic_vacuum_cleaner": 0.97
+        },
+        "2022-01-01": {
+            "Robotic_vacuum_cleaner": 1.88,
+            "National_Hellenic_Research_Foundation": 0.94
+        },
+        "2023-01-01": {
+            "Robotic_vacuum_cleaner": 1.85,
+            "National_Hellenic_Research_Foundation": 0.92
+        },
+        "2024-01-01": {
+            "Robotic_vacuum_cleaner": 1.82,
+            "National_Hellenic_Research_Foundation": 0.91
+        },
+        "2024-11-01": {
+            "Robotic_vacuum_cleaner": 1.79,
+            "National_Hellenic_Research_Foundation": 0.9
+        }
+    }
+}
+
+{
+    "Word": "bargains",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.82,
+        "2023-01-01": 2.77,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.0
+        },
+        "2021-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.93,
+            "Plantation_Reserve": 0.97
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.88,
+            "Plantation_Reserve": 0.94
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.85,
+            "Plantation_Reserve": 0.92
+        },
+        "2024-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.82,
+            "Plantation_Reserve": 0.91
+        },
+        "2024-11-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.79,
+            "Plantation_Reserve": 0.9
+        }
+    }
+}
+
+{
+    "Word": "malpractice",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 2.82,
+        "2023-01-01": 2.77,
+        "2024-01-01": 2.72,
+        "2024-11-01": 2.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "History_of_medicine_in_Cyprus": 1.0
+        },
+        "2021-01-01": {
+            "History_of_medicine_in_Cyprus": 0.97
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.88,
+            "History_of_medicine_in_Cyprus": 0.94
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.85,
+            "History_of_medicine_in_Cyprus": 0.92
+        },
+        "2024-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.82,
+            "History_of_medicine_in_Cyprus": 0.91
+        },
+        "2024-11-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.79,
+            "History_of_medicine_in_Cyprus": 0.9
+        }
+    }
+}
+
+{
+    "Word": "bookstore",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 5.65,
+        "2023-01-01": 5.54,
+        "2024-01-01": 5.45,
+        "2024-11-01": 5.37
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 1.0,
+            "Neon_Museum,_Warsaw": 1.0
+        },
+        "2021-01-01": {
+            "Gloria_Long_Anderson": 0.97,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 0.97,
+            "Neon_Museum,_Warsaw": 0.97
+        },
+        "2022-01-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.76,
+            "Gloria_Long_Anderson": 0.94,
+            "Neon_Museum,_Warsaw": 0.94
+        },
+        "2023-01-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.69,
+            "Gloria_Long_Anderson": 0.92,
+            "Neon_Museum,_Warsaw": 0.92
+        },
+        "2024-01-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.63,
+            "Gloria_Long_Anderson": 0.91,
+            "Neon_Museum,_Warsaw": 0.91
+        },
+        "2024-11-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 3.58,
+            "Gloria_Long_Anderson": 0.9,
+            "Neon_Museum,_Warsaw": 0.9
+        }
+    }
+}
+
+{
+    "Word": "puppy",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 3.76,
+        "2023-01-01": 4.61,
+        "2024-01-01": 3.63,
+        "2024-11-01": 5.37
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_types_of_mill": 1.0,
+            "Waltham_Petcare_Science_Institute": 1.0
+        },
+        "2021-01-01": {
+            "Eating_live_animals": 0.97,
+            "Ebba_Lund": 0.97,
+            "List_of_types_of_mill": 0.97,
+            "Waltham_Petcare_Science_Institute": 0.97
+        },
+        "2022-01-01": {
+            "Eating_live_animals": 0.94,
+            "Ebba_Lund": 0.94,
+            "List_of_types_of_mill": 0.94,
+            "Waltham_Petcare_Science_Institute": 0.94
+        },
+        "2023-01-01": {
+            "Eating_live_animals": 0.92,
+            "Ebba_Lund": 0.92,
+            "Henric_Streitman": 0.92,
+            "List_of_types_of_mill": 0.92,
+            "Waltham_Petcare_Science_Institute": 0.92
+        },
+        "2024-01-01": {
+            "Ebba_Lund": 0.91,
+            "Henric_Streitman": 0.91,
+            "List_of_types_of_mill": 0.91,
+            "Waltham_Petcare_Science_Institute": 0.91
+        },
+        "2024-11-01": {
+            "Ebba_Lund": 0.9,
+            "Henric_Streitman": 0.9,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 0.9,
+            "List_of_types_of_mill": 0.9,
+            "Low-dispersion_glass": 0.9
+        }
+    }
+}
+
+{
+    "Word": "tournaments",
+    "Time Frequencies": {
+        "2020-01-01": 9.0,
+        "2021-01-01": 32.86,
+        "2022-01-01": 28.23,
+        "2023-01-01": 23.06,
+        "2024-01-01": 22.69,
+        "2024-11-01": 23.27
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Hungrybox": 6.0,
+            "Dunstable_Swan_Jewel": 2.0,
+            "Coalite": 1.0
+        },
+        "2021-01-01": {
+            "Hungrybox": 29.96,
+            "Dunstable_Swan_Jewel": 1.93,
+            "Coalite": 0.97
+        },
+        "2022-01-01": {
+            "Hungrybox": 25.41,
+            "Dunstable_Swan_Jewel": 1.88,
+            "Coalite": 0.94
+        },
+        "2023-01-01": {
+            "Hungrybox": 20.3,
+            "Dunstable_Swan_Jewel": 1.85,
+            "Coalite": 0.92
+        },
+        "2024-01-01": {
+            "Hungrybox": 19.97,
+            "Dunstable_Swan_Jewel": 1.82,
+            "Coalite": 0.91
+        },
+        "2024-11-01": {
+            "Hungrybox": 20.59,
+            "Dunstable_Swan_Jewel": 1.79,
+            "Coalite": 0.9
+        }
+    }
+}
+
+{
+    "Word": "singles",
+    "Time Frequencies": {
+        "2020-01-01": 15.0,
+        "2021-01-01": 35.76,
+        "2022-01-01": 35.76,
+        "2023-01-01": 34.14,
+        "2024-01-01": 34.49,
+        "2024-11-01": 36.7
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Coupe_des_Mousquetaires": 3.0,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 2.0,
+            "Hungrybox": 2.0,
+            "Pheromone_party": 2.0,
+            "Abraham_Quintanilla": 1.0
+        },
+        "2021-01-01": {
+            "Hungrybox": 19.33,
+            "Coupe_des_Mousquetaires": 2.9,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 1.93,
+            "Pheromone_party": 1.93,
+            "Abraham_Quintanilla": 0.97
+        },
+        "2022-01-01": {
+            "Hungrybox": 20.7,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 1.88,
+            "Coupe_des_Mousquetaires": 1.88,
+            "Pheromone_party": 1.88,
+            "Abraham_Quintanilla": 0.94
+        },
+        "2023-01-01": {
+            "Hungrybox": 19.37,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 1.85,
+            "Coupe_des_Mousquetaires": 1.85,
+            "Pheromone_party": 1.85,
+            "Abraham_Quintanilla": 0.92
+        },
+        "2024-01-01": {
+            "Hungrybox": 19.97,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 1.82,
+            "Coupe_des_Mousquetaires": 1.82,
+            "Pheromone_party": 1.82,
+            "Abraham_Quintanilla": 0.91
+        },
+        "2024-11-01": {
+            "Hungrybox": 19.69,
+            "A_Rock_Star_Bucks_a_Coffee_Shop": 1.79,
+            "Coupe_des_Mousquetaires": 1.79,
+            "Pheromone_party": 1.79,
+            "Philip_B._Hawk": 1.79
+        }
+    }
+}
+
+{
+    "Word": "tvs",
+    "Time Frequencies": {
+        "2020-01-01": 3.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 4.71,
+        "2023-01-01": 4.61,
+        "2024-01-01": 7.26,
+        "2024-11-01": 7.16
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 1.0,
+            "Light_valve": 1.0,
+            "Pseudo_palladium": 1.0
+        },
+        "2021-01-01": {
+            "AMOLED": 0.97,
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 0.97,
+            "Light_valve": 0.97,
+            "Pseudo_palladium": 0.97
+        },
+        "2022-01-01": {
+            "AMOLED": 0.94,
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 0.94,
+            "Filters_in_topology": 0.94,
+            "Light_valve": 0.94,
+            "Pseudo_palladium": 0.94
+        },
+        "2023-01-01": {
+            "AMOLED": 0.92,
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 0.92,
+            "Filters_in_topology": 0.92,
+            "Light_valve": 0.92,
+            "Pseudo_palladium": 0.92
+        },
+        "2024-01-01": {
+            "Jerry_Woodall": 1.82,
+            "AMOLED": 0.91,
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 0.91,
+            "Filters_in_topology": 0.91,
+            "Light_valve": 0.91
+        },
+        "2024-11-01": {
+            "Jerry_Woodall": 1.79,
+            "AMOLED": 0.9,
+            "Electronics_and_semiconductor_manufacturing_industry_in_India": 0.9,
+            "Filters_in_topology": 0.9,
+            "Light_valve": 0.9
+        }
+    }
+}
+
+{
+    "Word": "isbn",
+    "Time Frequencies": {
+        "2020-01-01": 21.0,
+        "2021-01-01": 23.2,
+        "2022-01-01": 26.35,
+        "2023-01-01": 37.83,
+        "2024-01-01": 43.57,
+        "2024-11-01": 50.12
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "K·p_perturbation_theory": 2.0,
+            "Alice_Whitley": 1.0,
+            "Blessed_salt": 1.0,
+            "Boris_Revut": 1.0,
+            "Calochortus_amabilis": 1.0
+        },
+        "2021-01-01": {
+            "K·p_perturbation_theory": 1.93,
+            "Alice_Whitley": 0.97,
+            "Blessed_salt": 0.97,
+            "Boris_Revut": 0.97,
+            "Calochortus_amabilis": 0.97
+        },
+        "2022-01-01": {
+            "Otto_C.C._Lin": 3.76,
+            "K·p_perturbation_theory": 1.88,
+            "Blessed_salt": 0.94,
+            "Boris_Revut": 0.94,
+            "Calochortus_amabilis": 0.94
+        },
+        "2023-01-01": {
+            "Otto_C.C._Lin": 3.69,
+            "Superconducting_wire": 2.77,
+            "ECW_model": 1.85,
+            "Acid_strength": 0.92,
+            "Almond_Blossoms": 0.92
+        },
+        "2024-01-01": {
+            "Otto_C.C._Lin": 3.63,
+            "Superconducting_wire": 2.72,
+            "ECW_model": 1.82,
+            "Acid_strength": 0.91,
+            "Almond_Blossoms": 0.91
+        },
+        "2024-11-01": {
+            "Otto_C.C._Lin": 3.58,
+            "Elias_Gyftopoulos": 2.69,
+            "ECW_model": 1.79,
+            "Evil_Queen_(Disney)": 1.79,
+            "Superconducting_wire": 1.79
+        }
+    }
+}
+
+{
+    "Word": "payable",
+    "Time Frequencies": {
+        "2020-01-01": 5.0,
+        "2021-01-01": 11.6,
+        "2022-01-01": 12.23,
+        "2023-01-01": 11.99,
+        "2024-01-01": 11.8,
+        "2024-11-01": 11.64
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Ecopass": 1.0,
+            "FDA_Food_Safety_Modernization_Act": 1.0,
+            "Gold_points": 1.0,
+            "Quartz_Roasting_Pits_Complex": 1.0,
+            "The_Wine_Society": 1.0
+        },
+        "2021-01-01": {
+            "Royal_Gold": 6.77,
+            "Ecopass": 0.97,
+            "FDA_Food_Safety_Modernization_Act": 0.97,
+            "Gold_points": 0.97,
+            "Quartz_Roasting_Pits_Complex": 0.97
+        },
+        "2022-01-01": {
+            "Royal_Gold": 6.59,
+            "Ecopass": 0.94,
+            "FDA_Food_Safety_Modernization_Act": 0.94,
+            "Gold_Clause_Cases": 0.94,
+            "Gold_points": 0.94
+        },
+        "2023-01-01": {
+            "Royal_Gold": 6.46,
+            "Ecopass": 0.92,
+            "FDA_Food_Safety_Modernization_Act": 0.92,
+            "Gold_Clause_Cases": 0.92,
+            "Gold_points": 0.92
+        },
+        "2024-01-01": {
+            "Royal_Gold": 6.35,
+            "Ecopass": 0.91,
+            "FDA_Food_Safety_Modernization_Act": 0.91,
+            "Gold_Clause_Cases": 0.91,
+            "Gold_points": 0.91
+        },
+        "2024-11-01": {
+            "Royal_Gold": 6.27,
+            "Ecopass": 0.9,
+            "FDA_Food_Safety_Modernization_Act": 0.9,
+            "Gold_Clause_Cases": 0.9,
+            "Gold_points": 0.9
+        }
+    }
+}
+
+{
+    "Word": "espn",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 3.76,
+        "2023-01-01": 3.69,
+        "2024-01-01": 3.63,
+        "2024-11-01": 4.48
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "GW501516": 1.0,
+            "Nick_Piantanida": 1.0
+        },
+        "2021-01-01": {
+            "Hungrybox": 1.93,
+            "GW501516": 0.97,
+            "Nick_Piantanida": 0.97
+        },
+        "2022-01-01": {
+            "Hungrybox": 1.88,
+            "GW501516": 0.94,
+            "Nick_Piantanida": 0.94
+        },
+        "2023-01-01": {
+            "Hungrybox": 1.85,
+            "GW501516": 0.92,
+            "Nick_Piantanida": 0.92
+        },
+        "2024-01-01": {
+            "Hungrybox": 1.82,
+            "GW501516": 0.91,
+            "Nick_Piantanida": 0.91
+        },
+        "2024-11-01": {
+            "Hungrybox": 1.79,
+            "Enobosarm": 0.9,
+            "GW501516": 0.9,
+            "Nick_Piantanida": 0.9
+        }
+    }
+}
+
+{
+    "Word": "bitch",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 0.94,
+        "2023-01-01": 0.92,
+        "2024-01-01": 0.91,
+        "2024-11-01": 4.48
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Angie_Turner_King": 1.0,
+            "Evil_Queen_(Disney)": 1.0
+        },
+        "2021-01-01": {
+            "Evil_Queen_(Disney)": 0.97
+        },
+        "2022-01-01": {
+            "Evil_Queen_(Disney)": 0.94
+        },
+        "2023-01-01": {
+            "Evil_Queen_(Disney)": 0.92
+        },
+        "2024-01-01": {
+            "Evil_Queen_(Disney)": 0.91
+        },
+        "2024-11-01": {
+            "Catherine_Weaver": 3.58,
+            "Evil_Queen_(Disney)": 0.9
+        }
+    }
+}
+
+{
+    "Word": "booking",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 2.82,
+        "2023-01-01": 3.69,
+        "2024-01-01": 3.63,
+        "2024-11-01": 4.48
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "2009_Gujarat_alcohol_poisonings": 1.0,
+            "John_Thomas_Dunn_(chemist)": 1.0
+        },
+        "2021-01-01": {
+            "2009_Gujarat_alcohol_poisonings": 0.97,
+            "John_Thomas_Dunn_(chemist)": 0.97
+        },
+        "2022-01-01": {
+            "2009_Gujarat_alcohol_poisonings": 0.94,
+            "Geoffrey_E._Coates": 0.94,
+            "John_Thomas_Dunn_(chemist)": 0.94
+        },
+        "2023-01-01": {
+            "2009_Gujarat_alcohol_poisonings": 0.92,
+            "Geoffrey_E._Coates": 0.92,
+            "John_Thomas_Dunn_(chemist)": 0.92,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 0.92
+        },
+        "2024-01-01": {
+            "2009_Gujarat_alcohol_poisonings": 0.91,
+            "Geoffrey_E._Coates": 0.91,
+            "John_Thomas_Dunn_(chemist)": 0.91,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 0.91
+        },
+        "2024-11-01": {
+            "2009_Gujarat_alcohol_poisonings": 0.9,
+            "Geoffrey_E._Coates": 0.9,
+            "John_Thomas_Dunn_(chemist)": 0.9,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 0.9,
+            "Pujol_(restaurant)": 0.9
+        }
+    }
+}
+
+{
+    "Word": "keyboard",
+    "Time Frequencies": {
+        "2020-01-01": 4.0,
+        "2021-01-01": 3.87,
+        "2022-01-01": 3.76,
+        "2023-01-01": 6.46,
+        "2024-01-01": 8.17,
+        "2024-11-01": 8.95
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Bias_against_left-handed_people": 1.0,
+            "Kvevri": 1.0,
+            "List_of_MOSFET_applications": 1.0,
+            "Summat's_Brewin'": 1.0
+        },
+        "2021-01-01": {
+            "Bias_against_left-handed_people": 0.97,
+            "Kvevri": 0.97,
+            "List_of_MOSFET_applications": 0.97,
+            "Summat's_Brewin'": 0.97
+        },
+        "2022-01-01": {
+            "Bias_against_left-handed_people": 0.94,
+            "Kvevri": 0.94,
+            "List_of_MOSFET_applications": 0.94,
+            "Summat's_Brewin'": 0.94
+        },
+        "2023-01-01": {
+            "Bias_against_left-handed_people": 3.69,
+            "Kvevri": 0.92,
+            "List_of_MOSFET_applications": 0.92,
+            "Summat's_Brewin'": 0.92
+        },
+        "2024-01-01": {
+            "Bias_against_left-handed_people": 6.35,
+            "Kvevri": 0.91,
+            "Summat's_Brewin'": 0.91
+        },
+        "2024-11-01": {
+            "Bias_against_left-handed_people": 6.27,
+            "Kvevri": 0.9,
+            "Specim": 0.9,
+            "Summat's_Brewin'": 0.9
+        }
+    }
+}
+
+{
+    "Word": "copied",
+    "Time Frequencies": {
+        "2020-01-01": 61.0,
+        "2021-01-01": 93.75,
+        "2022-01-01": 107.29,
+        "2023-01-01": 121.78,
+        "2024-01-01": 127.07,
+        "2024-11-01": 136.04
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Chinese_export_silver": 3.0,
+            "De_materia_medica": 2.0,
+            "Epigenetic_regulation_of_transposable_elements_in_the_plant_kingdom": 2.0,
+            "Variant_surface_glycoprotein": 2.0,
+            "154CM": 1.0
+        },
+        "2021-01-01": {
+            "Marine_biogeochemical_cycles": 7.73,
+            "Particulate_organic_matter": 5.8,
+            "Chinese_export_silver": 2.9,
+            "Vildagliptin_metformin": 2.9,
+            "De_materia_medica": 1.93
+        },
+        "2022-01-01": {
+            "Marine_biogeochemical_cycles": 7.53,
+            "Particulate_organic_matter": 5.65,
+            "Chinese_export_silver": 2.82,
+            "N-Acylethanolamine": 2.82,
+            "Vildagliptin_metformin": 2.82
+        },
+        "2023-01-01": {
+            "Marine_biogeochemical_cycles": 7.38,
+            "WASH": 6.46,
+            "Particulate_organic_matter": 5.54,
+            "Chinese_export_silver": 2.77,
+            "N-Acylethanolamine": 2.77
+        },
+        "2024-01-01": {
+            "Marine_biogeochemical_cycles": 7.26,
+            "WASH": 6.35,
+            "Particulate_organic_matter": 5.45,
+            "Chinese_export_silver": 2.72,
+            "N-Acylethanolamine": 2.72
+        },
+        "2024-11-01": {
+            "WASH": 8.95,
+            "Marine_biogeochemical_cycles": 7.16,
+            "Particulate_organic_matter": 5.37,
+            "Chinese_export_silver": 2.69,
+            "Marine_heatwave": 2.69
+        }
+    }
+}
+
+{
+    "Word": "celebrity",
+    "Time Frequencies": {
+        "2020-01-01": 25.0,
+        "2021-01-01": 65.72,
+        "2022-01-01": 66.82,
+        "2023-01-01": 65.5,
+        "2024-01-01": 55.37,
+        "2024-11-01": 55.49
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Eating_live_animals": 2.0,
+            "Lillian_Richard": 2.0,
+            "Marie_Rose_sauce": 2.0,
+            "Applications_of_the_Stirling_engine": 1.0,
+            "Bacon_ice_cream": 1.0
+        },
+        "2021-01-01": {
+            "Celebrity_tomato": 39.63,
+            "Eating_live_animals": 3.87,
+            "Marie_Rose_sauce": 1.93,
+            "Vani_Hari": 1.93,
+            "Applications_of_the_Stirling_engine": 0.97
+        },
+        "2022-01-01": {
+            "Celebrity_tomato": 38.59,
+            "Eating_live_animals": 3.76,
+            "Marie_Rose_sauce": 1.88,
+            "Vani_Hari": 1.88,
+            "Applications_of_the_Stirling_engine": 0.94
+        },
+        "2023-01-01": {
+            "Celebrity_tomato": 37.83,
+            "Eating_live_animals": 3.69,
+            "Marie_Rose_sauce": 1.85,
+            "Vani_Hari": 1.85,
+            "Applications_of_the_Stirling_engine": 0.92
+        },
+        "2024-01-01": {
+            "Celebrity_tomato": 29.04,
+            "Eating_live_animals": 3.63,
+            "Vani_Hari": 1.82,
+            "Applications_of_the_Stirling_engine": 0.91,
+            "Bacon_ice_cream": 0.91
+        },
+        "2024-11-01": {
+            "Celebrity_tomato": 28.64,
+            "Eating_live_animals": 3.58,
+            "Horrible_Histories_(2015_TV_series)": 1.79,
+            "Vani_Hari": 1.79,
+            "Applications_of_the_Stirling_engine": 0.9
+        }
+    }
+}
+
+{
+    "Word": "copyright",
+    "Time Frequencies": {
+        "2020-01-01": 40.0,
+        "2021-01-01": 41.56,
+        "2022-01-01": 46.12,
+        "2023-01-01": 57.2,
+        "2024-01-01": 68.07,
+        "2024-11-01": 87.71
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Calochortus_amabilis": 7.0,
+            "Stochastic_empirical_loading_and_dilution_model": 2.0,
+            "Vladimir_Grachev": 2.0,
+            "3D_food_printing": 1.0,
+            "Abraham_Cressy_Morrison": 1.0
+        },
+        "2021-01-01": {
+            "Calochortus_amabilis": 6.77,
+            "3D_food_printing": 1.93,
+            "Stochastic_empirical_loading_and_dilution_model": 1.93,
+            "Vladimir_Grachev": 1.93,
+            "Wilfrid_Sanderson": 1.93
+        },
+        "2022-01-01": {
+            "Calochortus_amabilis": 6.59,
+            "3D_food_printing": 1.88,
+            "Herlock_Sholmes_(Ace_Attorney)": 1.88,
+            "Stochastic_empirical_loading_and_dilution_model": 1.88,
+            "Vladimir_Grachev": 1.88
+        },
+        "2023-01-01": {
+            "Calochortus_amabilis": 6.46,
+            "3D_food_printing": 1.85,
+            "Daridorexant": 1.85,
+            "Herlock_Sholmes_(Ace_Attorney)": 1.85,
+            "Lasmiditan": 1.85
+        },
+        "2024-01-01": {
+            "Calochortus_amabilis": 6.35,
+            "Journal_of_Catalysis": 3.63,
+            "3D_food_printing": 1.82,
+            "Daridorexant": 1.82,
+            "Disappearing_polymorph": 1.82
+        },
+        "2024-11-01": {
+            "Calochortus_amabilis": 6.27,
+            "Journal_of_Catalysis": 3.58,
+            "Vildagliptin_metformin": 2.69,
+            "3D_food_printing": 1.79,
+            "Daridorexant": 1.79
+        }
+    }
+}
+
+{
+    "Word": "bargain",
+    "Time Frequencies": {
+        "2020-01-01": 9.0,
+        "2021-01-01": 11.6,
+        "2022-01-01": 11.29,
+        "2023-01-01": 15.68,
+        "2024-01-01": 19.97,
+        "2024-11-01": 19.69
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_Septimus_Heap_characters": 2.0,
+            "NLRB_v._Sands_Manufacturing_Co": 2.0,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 1.0,
+            "An_Album_of_Fluid_Motion": 1.0,
+            "El_Caracol,_Ecatepec": 1.0
+        },
+        "2021-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.93,
+            "List_of_Septimus_Heap_characters": 1.93,
+            "NLRB_v._Sands_Manufacturing_Co": 1.93,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.97,
+            "An_Album_of_Fluid_Motion": 0.97
+        },
+        "2022-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 1.88,
+            "List_of_Septimus_Heap_characters": 1.88,
+            "NLRB_v._Sands_Manufacturing_Co": 1.88,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.94,
+            "An_Album_of_Fluid_Motion": 0.94
+        },
+        "2023-01-01": {
+            "List_of_characters_in_the_Breaking_Bad_franchise": 4.61,
+            "List_of_Septimus_Heap_characters": 1.85,
+            "NLRB_v._Sands_Manufacturing_Co": 1.85,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.92,
+            "An_Album_of_Fluid_Motion": 0.92
+        },
+        "2024-01-01": {
+            "JBS_S.A": 4.54,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 4.54,
+            "List_of_Septimus_Heap_characters": 1.82,
+            "NLRB_v._Sands_Manufacturing_Co": 1.82,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.91
+        },
+        "2024-11-01": {
+            "JBS_S.A": 4.48,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 4.48,
+            "List_of_Septimus_Heap_characters": 1.79,
+            "NLRB_v._Sands_Manufacturing_Co": 1.79,
+            "1985_Austrian_diethylene_glycol_wine_scandal": 0.9
+        }
+    }
+}
+
+{
+    "Word": "te",
+    "Time Frequencies": {
+        "2020-01-01": 228.0,
+        "2021-01-01": 225.19,
+        "2022-01-01": 223.05,
+        "2023-01-01": 238.03,
+        "2024-01-01": 233.27,
+        "2024-11-01": 407.23
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "List_of_Chablis_crus": 12.0,
+            "Hydrogen_ditelluride": 11.0,
+            "Thermal_copper_pillar_bump": 10.0,
+            "Co-fermentation": 5.0,
+            "Susceptibility_weighted_imaging": 5.0
+        },
+        "2021-01-01": {
+            "List_of_Chablis_crus": 11.6,
+            "Hydrogen_ditelluride": 10.63,
+            "Thermal_copper_pillar_bump": 9.66,
+            "Co-fermentation": 4.83,
+            "Susceptibility_weighted_imaging": 4.83
+        },
+        "2022-01-01": {
+            "List_of_Chablis_crus": 11.29,
+            "Thermal_copper_pillar_bump": 9.41,
+            "Hydrogen_ditelluride": 6.59,
+            "Co-fermentation": 4.71,
+            "Susceptibility_weighted_imaging": 4.71
+        },
+        "2023-01-01": {
+            "List_of_Chablis_crus": 11.07,
+            "Thermal_copper_pillar_bump": 9.23,
+            "Hydrogen_ditelluride": 6.46,
+            "Co-fermentation": 4.61,
+            "Susceptibility_weighted_imaging": 4.61
+        },
+        "2024-01-01": {
+            "List_of_Chablis_crus": 10.89,
+            "Thermal_copper_pillar_bump": 9.08,
+            "Tellurium_compounds": 5.45,
+            "Co-fermentation": 4.54,
+            "Susceptibility_weighted_imaging": 4.54
+        },
+        "2024-11-01": {
+            "Lists_of_metalloids": 172.74,
+            "List_of_Chablis_crus": 10.74,
+            "Thermal_copper_pillar_bump": 8.95,
+            "Tellurium_compounds": 5.37,
+            "Co-fermentation": 4.48
+        }
+    }
+}
+
+{
+    "Word": "porsche",
+    "Time Frequencies": {
+        "2020-01-01": 11.0,
+        "2021-01-01": 12.56,
+        "2022-01-01": 16.94,
+        "2023-01-01": 18.45,
+        "2024-01-01": 26.32,
+        "2024-11-01": 23.27
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Diesel_emissions_scandal": 5.0,
+            "Volkswagen_emissions_scandal": 5.0,
+            "Eco-costs_value_ratio": 1.0
+        },
+        "2021-01-01": {
+            "Diesel_emissions_scandal": 4.83,
+            "Volkswagen_emissions_scandal": 4.83,
+            "Plug-in_electric_vehicle_fire_incidents": 1.93,
+            "Eco-costs_value_ratio": 0.97
+        },
+        "2022-01-01": {
+            "Plug-in_electric_vehicle_fire_incidents": 5.65,
+            "Diesel_emissions_scandal": 4.71,
+            "Volkswagen_emissions_scandal": 4.71,
+            "Eco-costs_value_ratio": 0.94,
+            "Electrofuel": 0.94
+        },
+        "2023-01-01": {
+            "Plug-in_electric_vehicle_fire_incidents": 5.54,
+            "Diesel_emissions_scandal": 4.61,
+            "Volkswagen_emissions_scandal": 4.61,
+            "Lithium–silicon_battery": 1.85,
+            "Eco-costs_value_ratio": 0.92
+        },
+        "2024-01-01": {
+            "Electrofuel": 8.17,
+            "Plug-in_electric_vehicle_fire_incidents": 5.45,
+            "Diesel_emissions_scandal": 4.54,
+            "Volkswagen_emissions_scandal": 4.54,
+            "Lithium–silicon_battery": 1.82
+        },
+        "2024-11-01": {
+            "Plug-in_electric_vehicle_fire_incidents": 5.37,
+            "Diesel_emissions_scandal": 4.48,
+            "Volkswagen_emissions_scandal": 4.48,
+            "Electrically_assisted_turbocharger": 2.69,
+            "Electrofuel": 2.69
+        }
+    }
+}
+
+{
+    "Word": "messaging",
+    "Time Frequencies": {
+        "2020-01-01": 6.0,
+        "2021-01-01": 7.73,
+        "2022-01-01": 5.65,
+        "2023-01-01": 5.54,
+        "2024-01-01": 11.8,
+        "2024-11-01": 12.53
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "2008_US_beef_protest_in_South_Korea": 1.0,
+            "Heated_tobacco_product": 1.0,
+            "Internet_Digital_DIOS": 1.0,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 1.0,
+            "Meldonium": 1.0
+        },
+        "2021-01-01": {
+            "2008_US_beef_protest_in_South_Korea": 0.97,
+            "CDO_Foodsphere": 0.97,
+            "Heated_tobacco_product": 0.97,
+            "Internet_Digital_DIOS": 0.97,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 0.97
+        },
+        "2022-01-01": {
+            "2008_US_beef_protest_in_South_Korea": 0.94,
+            "CDO_Foodsphere": 0.94,
+            "Internet_Digital_DIOS": 0.94,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 0.94,
+            "National_Atmospheric_Deposition_Program": 0.94
+        },
+        "2023-01-01": {
+            "2008_US_beef_protest_in_South_Korea": 0.92,
+            "CDO_Foodsphere": 0.92,
+            "Internet_Digital_DIOS": 0.92,
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 0.92,
+            "National_Atmospheric_Deposition_Program": 0.92
+        },
+        "2024-01-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 7.26,
+            "2008_US_beef_protest_in_South_Korea": 0.91,
+            "CDO_Foodsphere": 0.91,
+            "Internet_Digital_DIOS": 0.91,
+            "National_Atmospheric_Deposition_Program": 0.91
+        },
+        "2024-11-01": {
+            "List_of_characters_in_mythology_novels_by_Rick_Riordan": 7.16,
+            "2008_US_beef_protest_in_South_Korea": 0.9,
+            "Alcohol_(drug)": 0.9,
+            "CDO_Foodsphere": 0.9,
+            "Internet_Digital_DIOS": 0.9
+        }
+    }
+}
+
+{
+    "Word": "shaved",
+    "Time Frequencies": {
+        "2020-01-01": 22.0,
+        "2021-01-01": 22.23,
+        "2022-01-01": 21.65,
+        "2023-01-01": 47.05,
+        "2024-01-01": 46.29,
+        "2024-11-01": 45.65
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Samalamig": 5.0,
+            "Beth_Kane": 2.0,
+            "Lafleur_(brand)": 2.0,
+            "O-aew": 2.0,
+            "Tapioca_pearl": 2.0
+        },
+        "2021-01-01": {
+            "Samalamig": 4.83,
+            "Beth_Kane": 1.93,
+            "Lafleur_(brand)": 1.93,
+            "O-aew": 1.93,
+            "Tapioca_pearl": 1.93
+        },
+        "2022-01-01": {
+            "Samalamig": 4.71,
+            "Beth_Kane": 1.88,
+            "Lafleur_(brand)": 1.88,
+            "O-aew": 1.88,
+            "Tapioca_pearl": 1.88
+        },
+        "2023-01-01": {
+            "Namkhaeng_sai": 25.83,
+            "Samalamig": 4.61,
+            "Beth_Kane": 1.85,
+            "Lafleur_(brand)": 1.85,
+            "O-aew": 1.85
+        },
+        "2024-01-01": {
+            "Namkhaeng_sai": 25.41,
+            "Samalamig": 4.54,
+            "Beth_Kane": 1.82,
+            "Lafleur_(brand)": 1.82,
+            "O-aew": 1.82
+        },
+        "2024-11-01": {
+            "Namkhaeng_sai": 25.06,
+            "Samalamig": 4.48,
+            "Beth_Kane": 1.79,
+            "Lafleur_(brand)": 1.79,
+            "O-aew": 1.79
+        }
+    }
+}
+
+{
+    "Word": "banking",
+    "Time Frequencies": {
+        "2020-01-01": 85.0,
+        "2021-01-01": 83.12,
+        "2022-01-01": 84.7,
+        "2023-01-01": 102.41,
+        "2024-01-01": 102.56,
+        "2024-11-01": 174.53
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Conservation_banking": 12.0,
+            "Biodiversity_banking": 11.0,
+            "Mohamed_M._Atalla": 6.0,
+            "Biodiversity_offsetting": 4.0,
+            "Delhi_Food_Banking_Network": 3.0
+        },
+        "2021-01-01": {
+            "Conservation_banking": 11.6,
+            "Biodiversity_banking": 10.63,
+            "Mohamed_M._Atalla": 4.83,
+            "Biodiversity_offsetting": 3.87,
+            "Feeding_Hong_Kong": 2.9
+        },
+        "2022-01-01": {
+            "Conservation_banking": 11.29,
+            "Biodiversity_banking": 10.35,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 5.65,
+            "Mohamed_M._Atalla": 4.71,
+            "Biodiversity_offsetting": 2.82
+        },
+        "2023-01-01": {
+            "European_banking_crisis_of_1931": 13.84,
+            "Conservation_banking": 11.07,
+            "Biodiversity_banking": 10.15,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 8.3,
+            "Mohamed_M._Atalla": 4.61
+        },
+        "2024-01-01": {
+            "European_banking_crisis_of_1931": 13.61,
+            "Conservation_banking": 10.89,
+            "Biodiversity_banking": 9.98,
+            "List_of_characters_in_the_Breaking_Bad_franchise": 8.17,
+            "Mohamed_M._Atalla": 4.54
+        },
+        "2024-11-01": {
+            "Biodiversity_banking": 40.28,
+            "Mitigation_banking": 36.7,
+            "European_banking_crisis_of_1931": 13.43,
+            "Biodiversity_offsetting": 11.64,
+            "Conservation_banking": 10.74
+        }
+    }
+}
+
+{
+    "Word": "sb",
+    "Time Frequencies": {
+        "2020-01-01": 135.0,
+        "2021-01-01": 135.31,
+        "2022-01-01": 125.17,
+        "2023-01-01": 122.7,
+        "2024-01-01": 120.72,
+        "2024-11-01": 272.98
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Antimony_tetroxide": 5.0,
+            "Bismuth_antimonide": 5.0,
+            "California_Green_Chemistry_Initiative": 5.0,
+            "Discovery_and_development_of_TRPV1_antagonists": 5.0,
+            "Petronas_Fertiliser_Kedah": 4.0
+        },
+        "2021-01-01": {
+            "Antimony_tetroxide": 4.83,
+            "Bismuth_antimonide": 4.83,
+            "California_Green_Chemistry_Initiative": 4.83,
+            "Discovery_and_development_of_TRPV1_antagonists": 4.83,
+            "Petronas_Fertiliser_Kedah": 3.87
+        },
+        "2022-01-01": {
+            "Antimony_tetroxide": 4.71,
+            "California_Green_Chemistry_Initiative": 4.71,
+            "Discovery_and_development_of_TRPV1_antagonists": 4.71,
+            "Petronas_Fertiliser_Kedah": 3.76,
+            "Stem_cell_laws_and_policy_in_the_United_States": 3.76
+        },
+        "2023-01-01": {
+            "Antimony_tetroxide": 4.61,
+            "California_Green_Chemistry_Initiative": 4.61,
+            "Discovery_and_development_of_TRPV1_antagonists": 4.61,
+            "Petronas_Fertiliser_Kedah": 3.69,
+            "Stem_cell_laws_and_policy_in_the_United_States": 3.69
+        },
+        "2024-01-01": {
+            "Antimony_tetroxide": 4.54,
+            "California_Green_Chemistry_Initiative": 4.54,
+            "Discovery_and_development_of_TRPV1_antagonists": 4.54,
+            "Petronas_Fertiliser_Kedah": 3.63,
+            "Stem_cell_laws_and_policy_in_the_United_States": 3.63
+        },
+        "2024-11-01": {
+            "Lists_of_metalloids": 154.84,
+            "Antimony_tetroxide": 4.48,
+            "California_Green_Chemistry_Initiative": 4.48,
+            "Discovery_and_development_of_TRPV1_antagonists": 4.48,
+            "Petronas_Fertiliser_Kedah": 3.58
+        }
+    }
+}
+
+{
+    "Word": "crm",
+    "Time Frequencies": {
+        "2020-01-01": 8.0,
+        "2021-01-01": 15.46,
+        "2022-01-01": 17.88,
+        "2023-01-01": 17.53,
+        "2024-01-01": 16.34,
+        "2024-11-01": 16.11
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Canadian_Reference_Materials": 2.0,
+            "Enhancer-FACS-seq": 2.0,
+            "Centre_for_Regenerative_Medicine": 1.0,
+            "List_of_mass_spectrometry_acronyms": 1.0,
+            "Network_synthesis_filters": 1.0
+        },
+        "2021-01-01": {
+            "Centre_for_Regenerative_Medicine": 8.7,
+            "Canadian_Reference_Materials": 1.93,
+            "Enhancer-FACS-seq": 1.93,
+            "List_of_mass_spectrometry_acronyms": 0.97,
+            "Network_synthesis_filters": 0.97
+        },
+        "2022-01-01": {
+            "Centre_for_Regenerative_Medicine": 9.41,
+            "Canadian_Reference_Materials": 1.88,
+            "Enhancer-FACS-seq": 1.88,
+            "Vadimezan": 1.88,
+            "List_of_mass_spectrometry_acronyms": 0.94
+        },
+        "2023-01-01": {
+            "Centre_for_Regenerative_Medicine": 9.23,
+            "Canadian_Reference_Materials": 1.85,
+            "Enhancer-FACS-seq": 1.85,
+            "Vadimezan": 1.85,
+            "List_of_mass_spectrometry_acronyms": 0.92
+        },
+        "2024-01-01": {
+            "Centre_for_Regenerative_Medicine": 8.17,
+            "Canadian_Reference_Materials": 1.82,
+            "Enhancer-FACS-seq": 1.82,
+            "Vadimezan": 1.82,
+            "List_of_mass_spectrometry_acronyms": 0.91
+        },
+        "2024-11-01": {
+            "Centre_for_Regenerative_Medicine": 8.06,
+            "Canadian_Reference_Materials": 1.79,
+            "Enhancer-FACS-seq": 1.79,
+            "Vadimezan": 1.79,
+            "List_of_mass_spectrometry_acronyms": 0.9
+        }
+    }
+}
+
+{
+    "Word": "licking",
+    "Time Frequencies": {
+        "2020-01-01": 4.0,
+        "2021-01-01": 4.83,
+        "2022-01-01": 6.59,
+        "2023-01-01": 8.3,
+        "2024-01-01": 8.17,
+        "2024-11-01": 8.06
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Dolph_Aluck_Smokehouse": 2.0,
+            "Catnip": 1.0,
+            "Sherbet_(powder)": 1.0
+        },
+        "2021-01-01": {
+            "Dolph_Aluck_Smokehouse": 1.93,
+            "Catnip": 0.97,
+            "Sherbet_(powder)": 0.97,
+            "Sucrose_octaacetate": 0.97
+        },
+        "2022-01-01": {
+            "Dolph_Aluck_Smokehouse": 1.88,
+            "Catnip": 0.94,
+            "Himalayan_salt": 0.94,
+            "Plug-in_electric_vehicle_fire_incidents": 0.94,
+            "Sherbet_(powder)": 0.94
+        },
+        "2023-01-01": {
+            "Dolph_Aluck_Smokehouse": 1.85,
+            "List_of_food_contamination_incidents": 1.85,
+            "Catnip": 0.92,
+            "Himalayan_salt": 0.92,
+            "Plug-in_electric_vehicle_fire_incidents": 0.92
+        },
+        "2024-01-01": {
+            "Dolph_Aluck_Smokehouse": 1.82,
+            "List_of_food_contamination_incidents": 1.82,
+            "Catnip": 0.91,
+            "Himalayan_salt": 0.91,
+            "Plug-in_electric_vehicle_fire_incidents": 0.91
+        },
+        "2024-11-01": {
+            "Dolph_Aluck_Smokehouse": 1.79,
+            "List_of_food_contamination_incidents": 1.79,
+            "Catnip": 0.9,
+            "Himalayan_salt": 0.9,
+            "Plug-in_electric_vehicle_fire_incidents": 0.9
+        }
+    }
+}
+
