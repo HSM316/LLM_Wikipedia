@@ -1,7 +1,0 @@
-Intelligent Word Recognition, or IWR, is the recognition of unconstrained handwritten words. IWR recognizes entire handwritten words or phrases instead of character-by-character, like its predecessor, optical character recognition (OCR). IWR technology matches handwritten or printed words to a user-defined dictionary, significantly reducing character errors encountered in typical character-based recognition engines.  
-
-New technology on the market utilizes IWR, OCR, and ICR together, which opens many doors for the processing of documents, either constrained (hand printed or machine printed) or unconstrained (freeform cursive). IWR also eliminates a large percentage of the manual data entry of handwritten documents that, in the past, could only be keyed by a human, creating an automated workflow.
-
-When cursive handwriting is in play, for each word analyzed, the system breaks down the words into a sequence of graphemes, or subparts of letters. These various curves, shapes and lines make up letters and IWR considers these various shape and groupings in order to calculate a confidence value associated with the word in question.
-
-IWR is not meant to replace ICR and OCR engines which work well with printed data; however, IWR reduces the number of character errors associated with these engines, and it is ideal for processing real-world documents that contain mostly freeform, hard-to-recognize data, inherently unsuitable for them.

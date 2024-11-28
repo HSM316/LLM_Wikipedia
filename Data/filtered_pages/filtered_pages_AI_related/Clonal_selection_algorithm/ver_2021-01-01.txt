@@ -1,6 +1,0 @@
-In artificial immune systems, clonal selection algorithms are a class of algorithms inspired by the clonal selection theory of acquired immunity that explains how B and T lymphocytes improve their response to antigens over time called affinity maturation. These algorithms focus on the Darwinian attributes of the theory where selection is inspired by the affinity of antigen-antibody interactions, reproduction is inspired by cell division, and variation is inspired by somatic hypermutation. Clonal selection algorithms are most commonly applied to optimization and pattern recognition domains, some of which resemble parallel hill climbing and the genetic algorithm without the recombination operator.
-
- Techniques 
-CLONALG: The CLONal selection ALGorithm
-AIRS: The Artificial Immune Recognition System
-BCA: The B-Cell Algorithm

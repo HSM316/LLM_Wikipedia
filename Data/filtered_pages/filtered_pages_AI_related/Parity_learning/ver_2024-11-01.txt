@@ -1,6 +1,0 @@
-Parity learning is a problem in machine learning. An algorithm that solves this problem must find a function ƒ, given some samples (x, ƒ(x)) and the assurance that ƒ computes the parity of bits at some fixed locations. The samples are generated using some distribution over the input. The problem is easy to solve using Gaussian elimination provided that a sufficient number of samples (from a distribution which is not too skewed) are provided to the algorithm.
-
-  Noisy version ("Learning Parity with Noise") 
-In Learning Parity with Noise (LPN), the samples may contain some error. Instead of samples (x, ƒ(x)), the algorithm is provided with (x, y), where for random boolean 
-
-The noisy version of the parity learning problem is conjectured to be hard and is widely used in cryptography. 

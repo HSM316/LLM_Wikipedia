@@ -1,5 +1,0 @@
-right|Mocolo screenshot
-Mocolo is a proprietary video analysis server for Microsoft Windows, mostly used in interactive environments. 
-It monitors video streams, finds interactions (presences or movements) and sends analysis results to a list of client applications in form of Open Sound Control (OSC) packets.
-Key features: lightweight performance, capability to analyze several video sources at the same time, connectivity toward any OSC capable application.
-Mocolo makes use of small amounts of CPU time and no use of the GPU, leaving enough resources for other client applications running on the same machine.

@@ -1,7 +1,0 @@
-Accord.NET is a framework for scientific computing in .NET. The source code of the project is available under the terms of the Gnu Lesser Public License, version 2.1.
-
-The framework comprises a set of libraries that are available in source code as well as via executable installers and NuGet packages. The main areas covered include numerical linear algebra, numerical optimization, statistics, machine learning, artificial neural networks, signal and image processing, and support libraries (such as graph plotting and visualization).Greg Duncan. Portable Image and Video processing with help from AForge.NET and Accord.NET.  Channel 9, November 2014.  Web extractAccord project on Open Hub.  Web extract The project was originally created to extend the capabilities of the  AForge.NET Framework, but has since incorporated AForge.NET inside itself. Newer releases have united both frameworks under the Accord.NET name.
-
-The Accord.NET Framework has been featured in multiple books such as Mastering.NET Machine Learning by PACKT publishing and F# for Machine Learning Applications, featured in QCON San Francisco, and currently accumulates more than 1,500 forks in GitHubAccord.NET Framework project on GitHub.
-
-Multiple scientific publications have been published with the use of the framework.

@@ -1,9 +1,0 @@
-Zeroth is a platform for brain-inspired computing from Qualcomm. It is based around a  (NPU) AI accelerator chip and a software API to interact with the platform. It makes a form of machine learning known as deep learning available to mobile devices. It is used for image and sound processing, including speech recognition. The software operates locally rather than as a cloud application.
-
-Mobile chip maker Qualcomm announced in March 2015, that it would bundle the software with its next major mobile device chip, the Snapdragon 820 processor.
-
- Applications 
-
-Qualcomm demonstrated that the system could recognize human faces and gestures that it had seen before and detect and then search for different types of photo scenes.
-
-Another potential application is to extend battery life by analyzing phone usage and powering down all or part of its capabilities without affecting the user experience.

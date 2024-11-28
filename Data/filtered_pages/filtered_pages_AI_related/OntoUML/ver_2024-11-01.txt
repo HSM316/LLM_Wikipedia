@@ -1,7 +1,0 @@
-OntoUML is an ontologically a language for Ontology-driven Conceptual Modeling. OntoUML is built as a UML extension based on the Unified Foundational Ontology (UFO). The foundations of UFO and OntoUML can be traced back to Giancarlo Guizzardi's Ph.D. thesis "Ontological foundations for structural conceptual models". In his work, he proposed a novel foundational ontology for conceptual modeling (UFO) and employed it to evaluate and re-design a fragment of the UML 2.0 metamodel for the purposes of conceptual modeling and domain ontology engineering.
-
- Supporting tools 
-
-In 2006, Guizzardi co-founded the  Ontology & Conceptual Modeling Research Group (NEMO) located at the Federal University of Espírito Santo (UFES) in Vitória city, state of Espírito Santo, Brazil. Since then, NEMO has been responsible for most of the developments in OntoUML. 
-
-Several papers about ontologies and OntoUML have been authored by members of the NEMO group.

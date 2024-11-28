@@ -1,7 +1,0 @@
-Learning curve showing training score and cross validation score
-
-A learning curve shows the validation and training score of an estimator for varying numbers of training samples. It is a tool to find out how much a machine learning model benefits from adding more training data and whether the estimator suffers more from a variance error or a bias error. If both the validation score and the training score converge to a value that is too low with increasing size of the training set, it will not benefit much from more training data.
-
-The machine learning curve is useful for many purposes including comparing different algorithms,  choosing model parameters during design, adjusting optimization to improve convergence, and determining the amount of data used for training.
-
-In the machine learning domain, there are two connotations of learning curves differing in the x-axis of the curves, with experience of the model graphed either as the number of training examples used for learning or the number of iterations used in training the model.

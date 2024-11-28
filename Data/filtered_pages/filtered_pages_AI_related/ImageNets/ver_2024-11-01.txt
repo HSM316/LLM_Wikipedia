@@ -1,9 +1,0 @@
-thumbnail|right|ImageNet Designer
-
-ImageNets is an open source framework for rapid prototyping of machine vision algorithms, developed by the Institute of Automation.
-
- Description 
-ImageNets is an open source and platform independent (Windows & Linux) framework for rapid prototyping of machine vision algorithms. With the GUI ImageNet Designer, no programming knowledge is required to perform operations on images. A configured ImageNet can be loaded and executed from C++ code without the need for loading the ImageNet Designer GUI to achieve higher execution performance.
-
- History 
-ImageNets was developed by the Institute of Automation, University of Bremen, Germany. The software was first publicly released in 2010. Originally, ImageNets was developed for the Care-Providing Robot FRIEND but it can be used for a wide range of computer vision applications.

@@ -1,6 +1,0 @@
-The Mind's Eye is a video analysis research project using artificial intelligence. It is funded by the Defense Advanced Research Projects Agency.
-
-Twelve research teams have been contracted by DARPA for the Mind's Eye: Carnegie Mellon University, Jet Propulsion Laboratory/Caltech, Massachusetts Institute of Technology, SRI International, TNO (Netherlands), and the University of California, Berkeley
-
-Mission
-"The Mind's Eye program seeks to develop in machines a capability that exists only in animals: visual intelligence. This program pursues the capability to learn generally applicable and generative representations of action between objects in a scene directly from visual inputs, and then reason over those learned representations. A key distinction between this research and the state of the art in machine vision is that the latter has made continual progress in recognizing a wide range of objects and their properties - what might be thought of as the nouns in the description of a scene. The focus of Mind's Eye is to add the perceptual and cognitive underpinnings for recognizing and reasoning about the verbs in those scenes, enabling a more complete narrative of action in the visual experience."

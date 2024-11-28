@@ -1,7 +1,0 @@
-LIBSVM and LIBLINEAR are two popular open source machine learning libraries, both developed at the National Taiwan University and both written in C++ though with a C API. LIBSVM implements the Sequential minimal optimization (SMO) algorithm for kernelized support vector machines (SVMs), supporting classification and regression.
-LIBLINEAR implements linear SVMs and logistic regression models trained using a coordinate descent algorithm.
-
-The SVM learning code from both libraries is often reused in other open source machine learning toolkits, including GATE, KNIME, Orange and scikit-learn.
-Bindings and ports exist for programming languages such as Java, MATLAB, R, and Python.
-
-Both libraries are free software released under the 3-clause BSD license.

@@ -1,9 +1,0 @@
-Proactive learning is a generalization of active learning designed to relax unrealistic assumptions and thereby reach practical applications.
-
-"Active learning seeks to select the most informative unlabeled instances and ask an omniscient oracle for their labels, so as to retrain a learning algorithm maximizing accuracy. However, the oracle is assumed to be infallible (never wrong), indefatigable (always answers), individual (only one oracle), and insensitive to costs (always free or always charges the same)."Donmez, P., Carbonell, J.G.: Proactive Learning: Cost-Sensitive Active Learning with Multiple Imperfect Oracles, in Proceedings of the 17th ACM Conference on Information and Knowledge Management (CIKM '08), Napa Valley 2008. https://www.cs.cmu.edu/~pinard/Papers/cikm0613-donmez.pdf
-
-"In real life, it is possible and more general to have multiple sources of information with differing reliabilities or areas of expertise. Active learning also assumes that the single oracle is perfect, always providing a correct answer when requested. In reality, though, an "oracle" (if we generalize the term to mean any source of expert information) may be incorrect (fallible) 
-with a probability that should be a function of the difficulty of the question. Moreover, an oracle may be reluctant – it may refuse to answer if it is too uncertain or too busy. Finally, active learning presumes the oracle is either free or charges uniform cost in label elicitation.
-Such an assumption is naive since cost is likely to be regulated by difficulty (amount of work required to formulate an answer) or other factors."
-
-Proactive learning relaxes all four of these assumptions, relying on a decision-theoretic approach to jointly select the optimal oracle and instance, by casting the problem as a utility optimization problem subject to a budget constraint.

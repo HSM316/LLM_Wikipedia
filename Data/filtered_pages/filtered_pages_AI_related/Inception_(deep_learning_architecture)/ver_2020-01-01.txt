@@ -1,5 +1,0 @@
- 
- 
- 
-
-Inceptionv3 is the name of a data set sometimes used in a Convolutional_neural_network for assisting in Image_analysis and Object_detection, and got its start as a module for GoogLeNet. Just as ImageNet can be thought of as a database of classified visual objects, Inception helps classification of objects in the world of Computer_vision. One such use is in Life Sciences, where it aids in the research of Leakumia. As referenced at DeepDream it was "codenamed 'Inception' after the film of the same name".

@@ -1,6 +1,0 @@
-ADS-AC is an experimental open source program which implements Absolutely Dynamic System (ADS), a proposed mechanism for artificial consciousness (AC).
-
-This article is not about a claim, but about a software that does things in a certain way. Whether it's the right way can be decided by the user.
-
-Implementation
-ADS-AC uses a system of "points" or "nodes" connected by "links" to create a structure of "knots". The nodes have no properties other than their links to other nodes in order to maintain their absolute dynamicity.
