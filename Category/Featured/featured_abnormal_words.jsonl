@@ -2,11 +2,11 @@
     "Word": "msg",
     "Time Frequencies": {
         "2020-01-01": 3.0,
-        "2021-01-01": 21.17,
-        "2022-01-01": 17.75,
-        "2023-01-01": 13.71,
-        "2024-01-01": 43.93,
-        "2024-11-01": 43.46
+        "2021-01-01": 13.53,
+        "2022-01-01": 12.28,
+        "2023-01-01": 8.36,
+        "2024-01-01": 39.39,
+        "2024-11-01": 39.07
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -15,39 +15,39 @@
             "William_Y._Slack": 1.0
         },
         "2021-01-01": {
-            "4th_Missouri_Infantry_Regiment_(Confederate)": 7.7,
-            "Battle_of_Glasgow,_Missouri": 2.89,
-            "Battle_of_Marais_des_Cygnes": 2.89,
-            "Second_Battle_of_Newtonia": 2.89,
-            "Battle_of_Little_Blue_River": 1.92
+            "Battle_of_Glasgow,_Missouri": 2.9,
+            "Battle_of_Marais_des_Cygnes": 2.9,
+            "Second_Battle_of_Newtonia": 2.9,
+            "Battle_of_Little_Blue_River": 1.93,
+            "New_Jersey_Devils": 0.97
         },
         "2022-01-01": {
-            "4th_Missouri_Infantry_Regiment_(Confederate)": 5.61,
-            "Battle_of_Glasgow,_Missouri": 2.8,
-            "Battle_of_Marais_des_Cygnes": 2.8,
-            "Battle_of_Little_Blue_River": 1.87,
-            "Second_Battle_of_Newtonia": 1.87
+            "Battle_of_Glasgow,_Missouri": 2.83,
+            "Battle_of_Marais_des_Cygnes": 2.83,
+            "Battle_of_Little_Blue_River": 1.89,
+            "Second_Battle_of_Newtonia": 1.89,
+            "New_Jersey_Devils": 0.94
         },
         "2023-01-01": {
-            "4th_Missouri_Infantry_Regiment_(Confederate)": 5.48,
-            "Battle_of_Marais_des_Cygnes": 2.74,
-            "Battle_of_Little_Blue_River": 1.83,
-            "Second_Battle_of_Newtonia": 1.83,
-            "New_wave_of_British_heavy_metal": 0.91
+            "Battle_of_Marais_des_Cygnes": 2.79,
+            "Battle_of_Little_Blue_River": 1.86,
+            "Second_Battle_of_Newtonia": 1.86,
+            "New_wave_of_British_heavy_metal": 0.93,
+            "William_Y._Slack": 0.93
         },
         "2024-01-01": {
-            "William_Y._Slack": 17.03,
-            "John_Bullock_Clark": 14.34,
-            "4th_Missouri_Infantry_Regiment_(Confederate)": 5.38,
-            "Battle_of_Marais_des_Cygnes": 2.69,
-            "Battle_of_Little_Blue_River": 1.79
+            "William_Y._Slack": 17.4,
+            "John_Bullock_Clark": 14.65,
+            "Battle_of_Marais_des_Cygnes": 2.75,
+            "Battle_of_Little_Blue_River": 1.83,
+            "Second_Battle_of_Newtonia": 1.83
         },
         "2024-11-01": {
-            "William_Y._Slack": 16.85,
-            "John_Bullock_Clark": 14.19,
-            "4th_Missouri_Infantry_Regiment_(Confederate)": 5.32,
-            "Battle_of_Marais_des_Cygnes": 2.66,
-            "Battle_of_Little_Blue_River": 1.77
+            "William_Y._Slack": 17.26,
+            "John_Bullock_Clark": 14.54,
+            "Battle_of_Marais_des_Cygnes": 2.73,
+            "Battle_of_Little_Blue_River": 1.82,
+            "Second_Battle_of_Newtonia": 1.82
         }
     }
 }
@@ -56,83 +56,44 @@
     "Word": "pmid",
     "Time Frequencies": {
         "2020-01-01": 1.0,
-        "2021-01-01": 1.92,
-        "2022-01-01": 2.8,
-        "2023-01-01": 5.48,
-        "2024-01-01": 7.17,
-        "2024-11-01": 7.98
+        "2021-01-01": 1.93,
+        "2022-01-01": 2.83,
+        "2023-01-01": 5.58,
+        "2024-01-01": 7.33,
+        "2024-11-01": 8.18
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
             "Yttrium": 1.0
         },
         "2021-01-01": {
-            "Prostate_cancer": 0.96,
-            "Yttrium": 0.96
+            "Prostate_cancer": 0.97,
+            "Yttrium": 0.97
         },
         "2022-01-01": {
-            "Evolution": 1.87,
+            "Evolution": 1.89,
+            "Yttrium": 0.94
+        },
+        "2023-01-01": {
+            "Evolution": 1.86,
+            "Common_toad": 0.93,
+            "Prostate_cancer": 0.93,
+            "Thylacine": 0.93,
             "Yttrium": 0.93
         },
-        "2023-01-01": {
+        "2024-01-01": {
             "Evolution": 1.83,
-            "Common_toad": 0.91,
-            "Prostate_cancer": 0.91,
-            "Thylacine": 0.91,
-            "Yttrium": 0.91
-        },
-        "2024-01-01": {
-            "Evolution": 1.79,
-            "Virus": 1.79,
-            "Japanese_fire-bellied_newt": 0.9,
-            "Nicotinamide_adenine_dinucleotide": 0.9,
-            "Thylacine": 0.9
+            "Virus": 1.83,
+            "Japanese_fire-bellied_newt": 0.92,
+            "Nicotinamide_adenine_dinucleotide": 0.92,
+            "Thylacine": 0.92
         },
         "2024-11-01": {
-            "Amphibian": 1.77,
-            "Evolution": 1.77,
-            "Geography_of_Ireland": 0.89,
-            "Japanese_fire-bellied_newt": 0.89,
-            "Nicotinamide_adenine_dinucleotide": 0.89
-        }
-    }
-}
-
-{
-    "Word": "bookmarks",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 1.87,
-        "2023-01-01": 1.83,
-        "2024-01-01": 1.79,
-        "2024-11-01": 6.21
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "The_Magdalen_Reading": 1.0
-        },
-        "2021-01-01": {
-            "The_Magdalen_Reading": 0.96
-        },
-        "2022-01-01": {
-            "Shadow_of_the_Colossus": 0.93,
-            "The_Magdalen_Reading": 0.93
-        },
-        "2023-01-01": {
-            "Shadow_of_the_Colossus": 0.91,
-            "The_Magdalen_Reading": 0.91
-        },
-        "2024-01-01": {
-            "Shadow_of_the_Colossus": 0.9,
-            "The_Magdalen_Reading": 0.9
-        },
-        "2024-11-01": {
-            "Secretum_(British_Museum)": 1.77,
-            "Fun_Home": 0.89,
-            "Jonathan_Strange_&_Mr_Norrell": 0.89,
-            "Shadow_of_the_Colossus": 0.89,
-            "The_Magdalen_Reading": 0.89
+            "Amphibian": 1.82,
+            "Evolution": 1.82,
+            "Geography_of_Ireland": 0.91,
+            "Japanese_fire-bellied_newt": 0.91,
+            "Nicotinamide_adenine_dinucleotide": 0.91
         }
     }
 }
@@ -141,43 +102,82 @@
     "Word": "refinance",
     "Time Frequencies": {
         "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 1.87,
-        "2023-01-01": 4.57,
-        "2024-01-01": 6.28,
-        "2024-11-01": 6.21
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.89,
+        "2023-01-01": 4.65,
+        "2024-01-01": 6.41,
+        "2024-11-01": 6.36
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
             "Frank_Borman": 1.0
         },
         "2021-01-01": {
-            "Frank_Borman": 0.96
+            "Frank_Borman": 0.97
         },
         "2022-01-01": {
-            "Frank_Borman": 0.93,
-            "The_Empire_Strikes_Back": 0.93
+            "Frank_Borman": 0.94,
+            "The_Empire_Strikes_Back": 0.94
         },
         "2023-01-01": {
-            "1_Wall_Street": 0.91,
-            "55_Wall_Street": 0.91,
-            "Frank_Borman": 0.91,
-            "James_A._Garfield": 0.91,
-            "The_Empire_Strikes_Back": 0.91
+            "1_Wall_Street": 0.93,
+            "55_Wall_Street": 0.93,
+            "Frank_Borman": 0.93,
+            "James_A._Garfield": 0.93,
+            "The_Empire_Strikes_Back": 0.93
         },
         "2024-01-01": {
-            "1_Wall_Street": 0.9,
-            "55_Wall_Street": 0.9,
-            "CBS_Building": 0.9,
-            "Frank_Borman": 0.9,
-            "James_A._Garfield": 0.9
+            "1_Wall_Street": 0.92,
+            "55_Wall_Street": 0.92,
+            "CBS_Building": 0.92,
+            "Frank_Borman": 0.92,
+            "James_A._Garfield": 0.92
         },
         "2024-11-01": {
-            "1_Wall_Street": 0.89,
-            "55_Wall_Street": 0.89,
-            "CBS_Building": 0.89,
-            "Frank_Borman": 0.89,
-            "James_A._Garfield": 0.89
+            "1_Wall_Street": 0.91,
+            "55_Wall_Street": 0.91,
+            "CBS_Building": 0.91,
+            "Frank_Borman": 0.91,
+            "James_A._Garfield": 0.91
+        }
+    }
+}
+
+{
+    "Word": "bookmarks",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 1.89,
+        "2023-01-01": 1.86,
+        "2024-01-01": 1.83,
+        "2024-11-01": 6.36
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "The_Magdalen_Reading": 1.0
+        },
+        "2021-01-01": {
+            "The_Magdalen_Reading": 0.97
+        },
+        "2022-01-01": {
+            "Shadow_of_the_Colossus": 0.94,
+            "The_Magdalen_Reading": 0.94
+        },
+        "2023-01-01": {
+            "Shadow_of_the_Colossus": 0.93,
+            "The_Magdalen_Reading": 0.93
+        },
+        "2024-01-01": {
+            "Shadow_of_the_Colossus": 0.92,
+            "The_Magdalen_Reading": 0.92
+        },
+        "2024-11-01": {
+            "Secretum_(British_Museum)": 1.82,
+            "Fun_Home": 0.91,
+            "Jonathan_Strange_&_Mr_Norrell": 0.91,
+            "Shadow_of_the_Colossus": 0.91,
+            "The_Magdalen_Reading": 0.91
         }
     }
 }
@@ -186,36 +186,36 @@
     "Word": "womens",
     "Time Frequencies": {
         "2020-01-01": 1.0,
-        "2021-01-01": 3.85,
-        "2022-01-01": 4.67,
-        "2023-01-01": 5.48,
-        "2024-01-01": 5.38,
-        "2024-11-01": 5.32
+        "2021-01-01": 3.87,
+        "2022-01-01": 4.72,
+        "2023-01-01": 5.58,
+        "2024-01-01": 5.5,
+        "2024-11-01": 5.45
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
             "Susi_Kentikian": 1.0
         },
         "2021-01-01": {
-            "Daisy_Pearce": 1.92,
-            "Minneapolis": 0.96,
-            "Susi_Kentikian": 0.96
+            "Daisy_Pearce": 1.93,
+            "Minneapolis": 0.97,
+            "Susi_Kentikian": 0.97
         },
         "2022-01-01": {
-            "Daisy_Pearce": 3.74,
-            "Susi_Kentikian": 0.93
+            "Daisy_Pearce": 3.78,
+            "Susi_Kentikian": 0.94
         },
         "2023-01-01": {
-            "Daisy_Pearce": 4.57,
-            "Susi_Kentikian": 0.91
+            "Daisy_Pearce": 4.65,
+            "Susi_Kentikian": 0.93
         },
         "2024-01-01": {
-            "Daisy_Pearce": 4.48,
-            "Susi_Kentikian": 0.9
+            "Daisy_Pearce": 4.58,
+            "Susi_Kentikian": 0.92
         },
         "2024-11-01": {
-            "Daisy_Pearce": 4.43,
-            "Susi_Kentikian": 0.89
+            "Daisy_Pearce": 4.54,
+            "Susi_Kentikian": 0.91
         }
     }
 }
@@ -224,11 +224,11 @@
     "Word": "panties",
     "Time Frequencies": {
         "2020-01-01": 8.0,
-        "2021-01-01": 23.09,
-        "2022-01-01": 30.83,
-        "2023-01-01": 31.08,
-        "2024-01-01": 30.48,
-        "2024-11-01": 30.16
+        "2021-01-01": 23.2,
+        "2022-01-01": 31.18,
+        "2023-01-01": 31.6,
+        "2024-01-01": 31.14,
+        "2024-11-01": 30.89
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -239,75 +239,39 @@
             "Ho_Ho_Ho_(album)": 1.0
         },
         "2021-01-01": {
-            "No_Panties": 18.28,
-            "The_Great_American_Bash_(2005)": 1.92,
-            "A_Contract_with_God": 0.96,
-            "Ho_Ho_Ho_(album)": 0.96,
-            "Lost_in_Translation_(film)": 0.96
+            "No_Panties": 18.37,
+            "The_Great_American_Bash_(2005)": 1.93,
+            "A_Contract_with_God": 0.97,
+            "Ho_Ho_Ho_(album)": 0.97,
+            "Lost_in_Translation_(film)": 0.97
         },
         "2022-01-01": {
-            "No_Panties": 26.16,
-            "The_Great_American_Bash_(2005)": 1.87,
+            "No_Panties": 26.45,
+            "The_Great_American_Bash_(2005)": 1.89,
+            "A_Contract_with_God": 0.94,
+            "Ho_Ho_Ho_(album)": 0.94,
+            "Lost_in_Translation_(film)": 0.94
+        },
+        "2023-01-01": {
+            "No_Panties": 26.95,
+            "The_Great_American_Bash_(2005)": 1.86,
             "A_Contract_with_God": 0.93,
             "Ho_Ho_Ho_(album)": 0.93,
             "Lost_in_Translation_(film)": 0.93
         },
-        "2023-01-01": {
-            "No_Panties": 26.51,
+        "2024-01-01": {
+            "No_Panties": 26.56,
             "The_Great_American_Bash_(2005)": 1.83,
+            "A_Contract_with_God": 0.92,
+            "Ho_Ho_Ho_(album)": 0.92,
+            "Lost_in_Translation_(film)": 0.92
+        },
+        "2024-11-01": {
+            "No_Panties": 26.35,
+            "The_Great_American_Bash_(2005)": 1.82,
             "A_Contract_with_God": 0.91,
             "Ho_Ho_Ho_(album)": 0.91,
             "Lost_in_Translation_(film)": 0.91
-        },
-        "2024-01-01": {
-            "No_Panties": 26.0,
-            "The_Great_American_Bash_(2005)": 1.79,
-            "A_Contract_with_God": 0.9,
-            "Ho_Ho_Ho_(album)": 0.9,
-            "Lost_in_Translation_(film)": 0.9
-        },
-        "2024-11-01": {
-            "No_Panties": 25.72,
-            "The_Great_American_Bash_(2005)": 1.77,
-            "A_Contract_with_God": 0.89,
-            "Ho_Ho_Ho_(album)": 0.89,
-            "Lost_in_Translation_(film)": 0.89
-        }
-    }
-}
-
-{
-    "Word": "ctrl",
-    "Time Frequencies": {
-        "2020-01-01": 2.0,
-        "2021-01-01": 1.92,
-        "2022-01-01": 1.87,
-        "2023-01-01": 1.83,
-        "2024-01-01": 7.17,
-        "2024-11-01": 7.1
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Open_Arms_(SZA_song)": 2.0
-        },
-        "2021-01-01": {
-            "Open_Arms_(SZA_song)": 1.92
-        },
-        "2022-01-01": {
-            "Open_Arms_(SZA_song)": 1.87
-        },
-        "2023-01-01": {
-            "Open_Arms_(SZA_song)": 1.83
-        },
-        "2024-01-01": {
-            "Open_Arms_(SZA_song)": 4.48,
-            "Smoking_on_My_Ex_Pack": 1.79,
-            "Ghost_in_the_Machine_(song)": 0.9
-        },
-        "2024-11-01": {
-            "Open_Arms_(SZA_song)": 4.43,
-            "Smoking_on_My_Ex_Pack": 1.77,
-            "Ghost_in_the_Machine_(song)": 0.89
         }
     }
 }
@@ -316,11 +280,11 @@
     "Word": "eg",
     "Time Frequencies": {
         "2020-01-01": 2.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 2.8,
-        "2023-01-01": 5.48,
-        "2024-01-01": 7.17,
-        "2024-11-01": 7.1
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.83,
+        "2023-01-01": 5.58,
+        "2024-01-01": 7.33,
+        "2024-11-01": 7.27
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -328,75 +292,33 @@
             "St_Cuthbert_Gospel": 1.0
         },
         "2021-01-01": {
-            "Cat's_Eye_Nebula": 0.96,
-            "Confirmation_bias": 0.96,
-            "St_Cuthbert_Gospel": 0.96
+            "Cat's_Eye_Nebula": 0.97,
+            "Confirmation_bias": 0.97,
+            "St_Cuthbert_Gospel": 0.97
         },
         "2022-01-01": {
-            "Acetic_acid": 0.93,
+            "Acetic_acid": 0.94,
+            "Cat's_Eye_Nebula": 0.94,
+            "St_Cuthbert_Gospel": 0.94
+        },
+        "2023-01-01": {
+            "Subarachnoid_hemorrhage": 3.72,
             "Cat's_Eye_Nebula": 0.93,
             "St_Cuthbert_Gospel": 0.93
         },
-        "2023-01-01": {
+        "2024-01-01": {
             "Subarachnoid_hemorrhage": 3.66,
+            "Cat's_Eye_Nebula": 0.92,
+            "Hepatorenal_syndrome": 0.92,
+            "House_of_Plantagenet": 0.92,
+            "St_Cuthbert_Gospel": 0.92
+        },
+        "2024-11-01": {
+            "Subarachnoid_hemorrhage": 3.63,
             "Cat's_Eye_Nebula": 0.91,
+            "Hepatorenal_syndrome": 0.91,
+            "House_of_Plantagenet": 0.91,
             "St_Cuthbert_Gospel": 0.91
-        },
-        "2024-01-01": {
-            "Subarachnoid_hemorrhage": 3.59,
-            "Cat's_Eye_Nebula": 0.9,
-            "Hepatorenal_syndrome": 0.9,
-            "House_of_Plantagenet": 0.9,
-            "St_Cuthbert_Gospel": 0.9
-        },
-        "2024-11-01": {
-            "Subarachnoid_hemorrhage": 3.55,
-            "Cat's_Eye_Nebula": 0.89,
-            "Hepatorenal_syndrome": 0.89,
-            "House_of_Plantagenet": 0.89,
-            "St_Cuthbert_Gospel": 0.89
-        }
-    }
-}
-
-{
-    "Word": "pmc",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 1.87,
-        "2023-01-01": 2.74,
-        "2024-01-01": 2.69,
-        "2024-11-01": 3.55
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "The_Overlook_(Alexander_McQueen_collection)": 1.0
-        },
-        "2021-01-01": {
-            "Golden_jackal": 0.96,
-            "Mosasaurus": 0.96,
-            "The_Overlook_(Alexander_McQueen_collection)": 0.96
-        },
-        "2022-01-01": {
-            "Golden_jackal": 0.93,
-            "The_Overlook_(Alexander_McQueen_collection)": 0.93
-        },
-        "2023-01-01": {
-            "Golden_jackal": 0.91,
-            "The_Overlook_(Alexander_McQueen_collection)": 0.91,
-            "Thylacine": 0.91
-        },
-        "2024-01-01": {
-            "Golden_jackal": 0.9,
-            "The_Overlook_(Alexander_McQueen_collection)": 0.9,
-            "Thylacine": 0.9
-        },
-        "2024-11-01": {
-            "Geography_of_Ireland": 0.89,
-            "Golden_jackal": 0.89,
-            "Mosasaurus": 0.89,
-            "Thylacine": 0.89
         }
     }
 }
@@ -405,11 +327,11 @@
     "Word": "checkout",
     "Time Frequencies": {
         "2020-01-01": 5.0,
-        "2021-01-01": 11.55,
-        "2022-01-01": 14.95,
-        "2023-01-01": 17.37,
-        "2024-01-01": 17.03,
-        "2024-11-01": 16.85
+        "2021-01-01": 11.6,
+        "2022-01-01": 15.12,
+        "2023-01-01": 17.66,
+        "2024-01-01": 17.4,
+        "2024-11-01": 17.26
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -419,95 +341,39 @@
             "Charles_Duke": 1.0
         },
         "2021-01-01": {
-            "Apollo_15": 1.92,
-            "Apollo_9": 1.92,
-            "John_Young_(astronaut)": 1.92,
-            "Apollo_11": 0.96,
-            "Apollo_13": 0.96
+            "Apollo_15": 1.93,
+            "Apollo_9": 1.93,
+            "John_Young_(astronaut)": 1.93,
+            "Apollo_11": 0.97,
+            "Apollo_13": 0.97
         },
         "2022-01-01": {
-            "Apollo_15": 1.87,
-            "Apollo_4": 1.87,
-            "Apollo_9": 1.87,
-            "John_Young_(astronaut)": 1.87,
-            "Apollo_11": 0.93
+            "Apollo_15": 1.89,
+            "Apollo_4": 1.89,
+            "Apollo_9": 1.89,
+            "John_Young_(astronaut)": 1.89,
+            "Apollo_11": 0.94
         },
         "2023-01-01": {
+            "Anna_Lee_Fisher": 1.86,
+            "Apollo_15": 1.86,
+            "Apollo_4": 1.86,
+            "Apollo_9": 1.86,
+            "John_Young_(astronaut)": 1.86
+        },
+        "2024-01-01": {
             "Anna_Lee_Fisher": 1.83,
             "Apollo_15": 1.83,
             "Apollo_4": 1.83,
             "Apollo_9": 1.83,
             "John_Young_(astronaut)": 1.83
         },
-        "2024-01-01": {
-            "Anna_Lee_Fisher": 1.79,
-            "Apollo_15": 1.79,
-            "Apollo_4": 1.79,
-            "Apollo_9": 1.79,
-            "John_Young_(astronaut)": 1.79
-        },
         "2024-11-01": {
-            "Anna_Lee_Fisher": 1.77,
-            "Apollo_15": 1.77,
-            "Apollo_4": 1.77,
-            "Apollo_9": 1.77,
-            "John_Young_(astronaut)": 1.77
-        }
-    }
-}
-
-{
-    "Word": "mf",
-    "Time Frequencies": {
-        "2020-01-01": 9.0,
-        "2021-01-01": 25.02,
-        "2022-01-01": 33.63,
-        "2023-01-01": 37.48,
-        "2024-01-01": 27.79,
-        "2024-11-01": 30.16
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Ice_core": 4.0,
-            "1920–21_Burnley_F.C._season": 2.0,
-            "2003–04_Arsenal_F.C._season": 1.0,
-            "Godsmack": 1.0,
-            "Star": 1.0
-        },
-        "2021-01-01": {
-            "2020_Seattle_Sounders_FC_season": 14.43,
-            "Ice_core": 3.85,
-            "1920–21_Burnley_F.C._season": 1.92,
-            "1959–60_Burnley_F.C._season": 0.96,
-            "2003–04_Arsenal_F.C._season": 0.96
-        },
-        "2022-01-01": {
-            "2020_Seattle_Sounders_FC_season": 14.01,
-            "Ice_core": 3.74,
-            "1920–21_Burnley_F.C._season": 1.87,
-            "The_Ecstatic": 1.87,
-            "1959–60_Burnley_F.C._season": 0.93
-        },
-        "2023-01-01": {
-            "2020_Seattle_Sounders_FC_season": 13.71,
-            "Ice_core": 3.66,
-            "The_Ecstatic": 1.83,
-            "1959–60_Burnley_F.C._season": 0.91,
-            "1973–74_Gillingham_F.C._season": 0.91
-        },
-        "2024-01-01": {
-            "Ice_core": 3.59,
-            "The_Ecstatic": 1.79,
-            "1959–60_Burnley_F.C._season": 0.9,
-            "1973–74_Gillingham_F.C._season": 0.9,
-            "1981–82_Gillingham_F.C._season": 0.9
-        },
-        "2024-11-01": {
-            "Ice_core": 3.55,
-            "The_Ecstatic": 1.77,
-            "1959–60_Burnley_F.C._season": 0.89,
-            "1973–74_Gillingham_F.C._season": 0.89,
-            "1981–82_Gillingham_F.C._season": 0.89
+            "Anna_Lee_Fisher": 1.82,
+            "Apollo_15": 1.82,
+            "Apollo_4": 1.82,
+            "Apollo_9": 1.82,
+            "John_Young_(astronaut)": 1.82
         }
     }
 }
@@ -516,11 +382,11 @@
     "Word": "jd",
     "Time Frequencies": {
         "2020-01-01": 2.0,
-        "2021-01-01": 4.81,
-        "2022-01-01": 6.54,
-        "2023-01-01": 6.4,
-        "2024-01-01": 6.28,
-        "2024-11-01": 7.98
+        "2021-01-01": 4.83,
+        "2022-01-01": 6.61,
+        "2023-01-01": 6.51,
+        "2024-01-01": 6.41,
+        "2024-11-01": 8.18
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -528,38 +394,38 @@
             "Hubble_Space_Telescope": 1.0
         },
         "2021-01-01": {
-            "Complete_blood_count": 1.92,
-            "Baby_Driver": 0.96,
-            "Hubble_Space_Telescope": 0.96,
-            "Paleocene": 0.96
+            "Complete_blood_count": 1.93,
+            "Baby_Driver": 0.97,
+            "Hubble_Space_Telescope": 0.97,
+            "Paleocene": 0.97
         },
         "2022-01-01": {
-            "Complete_blood_count": 1.87,
+            "Complete_blood_count": 1.89,
+            "Baby_Driver": 0.94,
+            "Harvey_Milk": 0.94,
+            "Hubble_Space_Telescope": 0.94,
+            "Mitt_Romney": 0.94
+        },
+        "2023-01-01": {
+            "Complete_blood_count": 1.86,
             "Baby_Driver": 0.93,
             "Harvey_Milk": 0.93,
             "Hubble_Space_Telescope": 0.93,
-            "Mitt_Romney": 0.93
-        },
-        "2023-01-01": {
-            "Complete_blood_count": 1.83,
-            "Baby_Driver": 0.91,
-            "Harvey_Milk": 0.91,
-            "Hubble_Space_Telescope": 0.91,
-            "Paleocene": 0.91
+            "Paleocene": 0.93
         },
         "2024-01-01": {
-            "Complete_blood_count": 1.79,
-            "Baby_Driver": 0.9,
-            "Harvey_Milk": 0.9,
-            "Hubble_Space_Telescope": 0.9,
-            "Paleocene": 0.9
+            "Complete_blood_count": 1.83,
+            "Baby_Driver": 0.92,
+            "Harvey_Milk": 0.92,
+            "Hubble_Space_Telescope": 0.92,
+            "Paleocene": 0.92
         },
         "2024-11-01": {
-            "Complete_blood_count": 1.77,
-            "Amy_Adams": 0.89,
-            "Baby_Driver": 0.89,
-            "Harvey_Milk": 0.89,
-            "Hubble_Space_Telescope": 0.89
+            "Complete_blood_count": 1.82,
+            "Amy_Adams": 0.91,
+            "Baby_Driver": 0.91,
+            "Harvey_Milk": 0.91,
+            "Hubble_Space_Telescope": 0.91
         }
     }
 }
@@ -568,11 +434,11 @@
     "Word": "porno",
     "Time Frequencies": {
         "2020-01-01": 2.0,
-        "2021-01-01": 1.92,
-        "2022-01-01": 1.87,
-        "2023-01-01": 4.57,
-        "2024-01-01": 6.28,
-        "2024-11-01": 6.21
+        "2021-01-01": 1.93,
+        "2022-01-01": 1.89,
+        "2023-01-01": 4.65,
+        "2024-01-01": 6.41,
+        "2024-11-01": 6.36
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -580,75 +446,29 @@
             "Mantis": 1.0
         },
         "2021-01-01": {
-            "Alice_in_Chains": 0.96,
-            "Mantis": 0.96
+            "Alice_in_Chains": 0.97,
+            "Mantis": 0.97
         },
         "2022-01-01": {
+            "Alice_in_Chains": 0.94,
+            "Mantis": 0.94
+        },
+        "2023-01-01": {
+            "Branded_to_Kill": 2.79,
             "Alice_in_Chains": 0.93,
             "Mantis": 0.93
         },
-        "2023-01-01": {
-            "Branded_to_Kill": 2.74,
+        "2024-01-01": {
+            "Branded_to_Kill": 2.75,
+            "Angel_Aquino": 1.83,
+            "Alice_in_Chains": 0.92,
+            "Mantis": 0.92
+        },
+        "2024-11-01": {
+            "Branded_to_Kill": 2.73,
+            "Angel_Aquino": 1.82,
             "Alice_in_Chains": 0.91,
             "Mantis": 0.91
-        },
-        "2024-01-01": {
-            "Branded_to_Kill": 2.69,
-            "Angel_Aquino": 1.79,
-            "Alice_in_Chains": 0.9,
-            "Mantis": 0.9
-        },
-        "2024-11-01": {
-            "Branded_to_Kill": 2.66,
-            "Angel_Aquino": 1.77,
-            "Alice_in_Chains": 0.89,
-            "Mantis": 0.89
-        }
-    }
-}
-
-{
-    "Word": "leu",
-    "Time Frequencies": {
-        "2020-01-01": 2.0,
-        "2021-01-01": 1.92,
-        "2022-01-01": 6.54,
-        "2023-01-01": 6.4,
-        "2024-01-01": 6.28,
-        "2024-11-01": 6.21
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Hamlet": 1.0,
-            "William_Brill_(RAAF_officer)": 1.0
-        },
-        "2021-01-01": {
-            "Hamlet": 0.96,
-            "William_Brill_(RAAF_officer)": 0.96
-        },
-        "2022-01-01": {
-            "Cyclone_Berguitta": 3.74,
-            "Cyclone_Dumazile": 0.93,
-            "Hamlet": 0.93,
-            "William_Brill_(RAAF_officer)": 0.93
-        },
-        "2023-01-01": {
-            "Cyclone_Berguitta": 3.66,
-            "Cyclone_Dumazile": 0.91,
-            "Hamlet": 0.91,
-            "William_Brill_(RAAF_officer)": 0.91
-        },
-        "2024-01-01": {
-            "Cyclone_Berguitta": 3.59,
-            "Cyclone_Dumazile": 0.9,
-            "Hamlet": 0.9,
-            "William_Brill_(RAAF_officer)": 0.9
-        },
-        "2024-11-01": {
-            "Cyclone_Berguitta": 3.55,
-            "Cyclone_Dumazile": 0.89,
-            "Hamlet": 0.89,
-            "William_Brill_(RAAF_officer)": 0.89
         }
     }
 }
@@ -656,12 +476,12 @@
 {
     "Word": "header",
     "Time Frequencies": {
-        "2020-01-01": 68.0,
-        "2021-01-01": 125.1,
-        "2022-01-01": 190.59,
-        "2023-01-01": 189.2,
-        "2024-01-01": 194.55,
-        "2024-11-01": 194.24
+        "2020-01-01": 67.0,
+        "2021-01-01": 124.7,
+        "2022-01-01": 191.78,
+        "2023-01-01": 188.65,
+        "2024-01-01": 196.01,
+        "2024-11-01": 196.25
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -672,95 +492,363 @@
             "MLS_Cup_2019": 3.0
         },
         "2021-01-01": {
-            "1978_FA_Cup_final": 8.66,
-            "2006_Football_League_Championship_play-off_final": 6.74,
-            "1999_FIFA_Women's_World_Cup": 5.77,
-            "1927_FA_Cup_final": 4.81,
-            "1997_Football_League_First_Division_play-off_final": 4.81
+            "1978_FA_Cup_final": 8.7,
+            "2006_Football_League_Championship_play-off_final": 6.77,
+            "1999_FIFA_Women's_World_Cup": 5.8,
+            "1927_FA_Cup_final": 4.83,
+            "1997_Football_League_First_Division_play-off_final": 4.83
         },
         "2022-01-01": {
-            "UEFA_Euro_2004_final": 9.34,
-            "1978_FA_Cup_final": 8.41,
-            "UEFA_Euro_2016_final": 8.41,
-            "2006_Football_League_Championship_play-off_final": 6.54,
-            "2014_FIFA_World_Cup_final": 6.54
+            "UEFA_Euro_2004_final": 9.45,
+            "1978_FA_Cup_final": 8.5,
+            "UEFA_Euro_2016_final": 8.5,
+            "2006_Football_League_Championship_play-off_final": 6.61,
+            "2014_FIFA_World_Cup_final": 6.61
         },
         "2023-01-01": {
-            "UEFA_Euro_2004_final": 9.14,
-            "1978_FA_Cup_final": 8.23,
-            "UEFA_Euro_2016_final": 8.23,
-            "2006_Football_League_Championship_play-off_final": 6.4,
-            "2014_FIFA_World_Cup_final": 6.4
+            "UEFA_Euro_2004_final": 9.29,
+            "1978_FA_Cup_final": 8.36,
+            "UEFA_Euro_2016_final": 8.36,
+            "2006_Football_League_Championship_play-off_final": 6.51,
+            "2014_FIFA_World_Cup_final": 6.51
         },
         "2024-01-01": {
-            "UEFA_Euro_2004_final": 8.97,
-            "1978_FA_Cup_final": 8.07,
-            "UEFA_Euro_2016_final": 8.07,
-            "2006_Football_League_Championship_play-off_final": 6.28,
-            "2014_FIFA_World_Cup_final": 6.28
+            "UEFA_Euro_2004_final": 9.16,
+            "1978_FA_Cup_final": 8.24,
+            "UEFA_Euro_2016_final": 8.24,
+            "2006_Football_League_Championship_play-off_final": 6.41,
+            "2014_FIFA_World_Cup_final": 6.41
         },
         "2024-11-01": {
-            "UEFA_Euro_2004_final": 8.87,
-            "1978_FA_Cup_final": 7.98,
-            "UEFA_Euro_2016_final": 7.98,
-            "2006_Football_League_Championship_play-off_final": 6.21,
-            "2014_FIFA_World_Cup_final": 6.21
+            "UEFA_Euro_2004_final": 9.09,
+            "1978_FA_Cup_final": 8.18,
+            "UEFA_Euro_2016_final": 8.18,
+            "2006_Football_League_Championship_play-off_final": 6.36,
+            "2014_FIFA_World_Cup_final": 6.36
         }
     }
 }
 
 {
-    "Word": "blogger",
+    "Word": "chem",
     "Time Frequencies": {
-        "2020-01-01": 5.0,
-        "2021-01-01": 5.77,
-        "2022-01-01": 10.28,
-        "2023-01-01": 10.97,
-        "2024-01-01": 12.55,
-        "2024-11-01": 14.19
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 3.78,
+        "2023-01-01": 2.79,
+        "2024-01-01": 2.75,
+        "2024-11-01": 2.73
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
-            "Pierre_Boulez": 1.0,
-            "The_Beatles": 1.0,
-            "The_Legend_of_Bhagat_Singh": 1.0,
-            "The_Political_Cesspool": 1.0,
-            "Todd_Manning": 1.0
+            "Phan_Xích_Long": 1.0
         },
         "2021-01-01": {
-            "Groundhog_Day_(film)": 0.96,
-            "Pierre_Boulez": 0.96,
-            "The_Beatles": 0.96,
-            "The_Legend_of_Bhagat_Singh": 0.96,
-            "The_Political_Cesspool": 0.96
+            "Phan_Xích_Long": 0.97
         },
         "2022-01-01": {
-            "Marie_Sophie_Hingst": 2.8,
-            "Baby_Boy_(Beyoncé_song)": 0.93,
-            "Groundhog_Day_(film)": 0.93,
-            "Pierre_Boulez": 0.93,
-            "Speechless_(Michael_Jackson_song)": 0.93
+            "Periodic_table": 1.89,
+            "Metabolism": 0.94,
+            "Phan_Xích_Long": 0.94
         },
         "2023-01-01": {
-            "Marie_Sophie_Hingst": 2.74,
-            "Baby_Boy_(Beyoncé_song)": 0.91,
-            "Groundhog_Day_(film)": 0.91,
-            "Pierre_Boulez": 0.91,
-            "Speechless_(Michael_Jackson_song)": 0.91
+            "Periodic_table": 1.86,
+            "Phan_Xích_Long": 0.93
         },
         "2024-01-01": {
-            "Marie_Sophie_Hingst": 5.38,
-            "Baby_Boy_(Beyoncé_song)": 0.9,
-            "Groundhog_Day_(film)": 0.9,
-            "Speechless_(Michael_Jackson_song)": 0.9,
-            "The_Beatles": 0.9
+            "Periodic_table": 1.83,
+            "Phan_Xích_Long": 0.92
         },
         "2024-11-01": {
-            "Marie_Sophie_Hingst": 5.32,
-            "Baby_Boy_(Beyoncé_song)": 0.89,
-            "Groundhog_Day_(film)": 0.89,
-            "Liza_Soberano": 0.89,
-            "Raynald_of_Châtillon": 0.89
+            "Periodic_table": 1.82,
+            "Phan_Xích_Long": 0.91
+        }
+    }
+}
+
+{
+    "Word": "headers",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 2.83,
+        "2023-01-01": 2.79,
+        "2024-01-01": 2.75,
+        "2024-11-01": 2.73
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Literary_Hall": 1.0
+        },
+        "2021-01-01": {
+            "Iwan_Roberts": 0.97,
+            "Literary_Hall": 0.97
+        },
+        "2022-01-01": {
+            "1987_Football_League_Third_Division_play-off_final": 0.94,
+            "Iwan_Roberts": 0.94,
+            "Literary_Hall": 0.94
+        },
+        "2023-01-01": {
+            "1987_Football_League_Third_Division_play-off_final": 0.93,
+            "Iwan_Roberts": 0.93,
+            "Literary_Hall": 0.93
+        },
+        "2024-01-01": {
+            "1987_Football_League_Third_Division_play-off_final": 0.92,
+            "Iwan_Roberts": 0.92,
+            "Literary_Hall": 0.92
+        },
+        "2024-11-01": {
+            "1987_Football_League_Third_Division_play-off_final": 0.91,
+            "Iwan_Roberts": 0.91,
+            "Literary_Hall": 0.91
+        }
+    }
+}
+
+{
+    "Word": "leu",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 1.93,
+        "2022-01-01": 5.67,
+        "2023-01-01": 5.58,
+        "2024-01-01": 5.5,
+        "2024-11-01": 5.45
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Hamlet": 1.0,
+            "William_Brill_(RAAF_officer)": 1.0
+        },
+        "2021-01-01": {
+            "Hamlet": 0.97,
+            "William_Brill_(RAAF_officer)": 0.97
+        },
+        "2022-01-01": {
+            "Cyclone_Berguitta": 3.78,
+            "Hamlet": 0.94,
+            "William_Brill_(RAAF_officer)": 0.94
+        },
+        "2023-01-01": {
+            "Cyclone_Berguitta": 3.72,
+            "Hamlet": 0.93,
+            "William_Brill_(RAAF_officer)": 0.93
+        },
+        "2024-01-01": {
+            "Cyclone_Berguitta": 3.66,
+            "Hamlet": 0.92,
+            "William_Brill_(RAAF_officer)": 0.92
+        },
+        "2024-11-01": {
+            "Cyclone_Berguitta": 3.63,
+            "Hamlet": 0.91,
+            "William_Brill_(RAAF_officer)": 0.91
+        }
+    }
+}
+
+{
+    "Word": "boobs",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 0.94,
+        "2023-01-01": 0.93,
+        "2024-01-01": 2.75,
+        "2024-11-01": 2.73
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "A_Quiet_Night_In": 1.0
+        },
+        "2021-01-01": {
+            "A_Quiet_Night_In": 0.97
+        },
+        "2022-01-01": {
+            "A_Quiet_Night_In": 0.94
+        },
+        "2023-01-01": {
+            "A_Quiet_Night_In": 0.93
+        },
+        "2024-01-01": {
+            "Asimov's_Science_Fiction": 1.83,
+            "A_Quiet_Night_In": 0.92
+        },
+        "2024-11-01": {
+            "Asimov's_Science_Fiction": 1.82,
+            "A_Quiet_Night_In": 0.91
+        }
+    }
+}
+
+{
+    "Word": "cashiers",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.83,
+        "2023-01-01": 4.65,
+        "2024-01-01": 5.5,
+        "2024-11-01": 5.45
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Birmingham_campaign": 1.0,
+            "Peace_dollar": 1.0
+        },
+        "2021-01-01": {
+            "55_Wall_Street": 0.97,
+            "Birmingham_campaign": 0.97,
+            "Peace_dollar": 0.97
+        },
+        "2022-01-01": {
+            "55_Wall_Street": 0.94,
+            "Birmingham_campaign": 0.94,
+            "Peace_dollar": 0.94
+        },
+        "2023-01-01": {
+            "55_Wall_Street": 0.93,
+            "Alexander_Hamilton_U.S._Custom_House": 0.93,
+            "Birmingham_campaign": 0.93,
+            "Double_florin": 0.93,
+            "Peace_dollar": 0.93
+        },
+        "2024-01-01": {
+            "Alexander_Hamilton_U.S._Custom_House": 1.83,
+            "55_Wall_Street": 0.92,
+            "Birmingham_campaign": 0.92,
+            "Double_florin": 0.92,
+            "Peace_dollar": 0.92
+        },
+        "2024-11-01": {
+            "Alexander_Hamilton_U.S._Custom_House": 1.82,
+            "55_Wall_Street": 0.91,
+            "Birmingham_campaign": 0.91,
+            "Double_florin": 0.91,
+            "Peace_dollar": 0.91
+        }
+    }
+}
+
+{
+    "Word": "mens",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 1.89,
+        "2023-01-01": 1.86,
+        "2024-01-01": 2.75,
+        "2024-11-01": 2.73
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Johannes_Kepler": 1.0
+        },
+        "2021-01-01": {
+            "Johannes_Kepler": 0.97,
+            "Loveday_(1458)": 0.97,
+            "Margate_F.C": 0.97
+        },
+        "2022-01-01": {
+            "Halifax_Explosion": 0.94,
+            "Loveday_(1458)": 0.94
+        },
+        "2023-01-01": {
+            "Halifax_Explosion": 0.93,
+            "Loveday_(1458)": 0.93
+        },
+        "2024-01-01": {
+            "Loveday_(1458)": 0.92,
+            "Nuremberg_trials": 0.92,
+            "William_III_of_England": 0.92
+        },
+        "2024-11-01": {
+            "Loveday_(1458)": 0.91,
+            "Nuremberg_trials": 0.91,
+            "William_III_of_England": 0.91
+        }
+    }
+}
+
+{
+    "Word": "hwy",
+    "Time Frequencies": {
+        "2020-01-01": 2.0,
+        "2021-01-01": 2.9,
+        "2022-01-01": 4.72,
+        "2023-01-01": 4.65,
+        "2024-01-01": 4.58,
+        "2024-11-01": 5.45
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "U.S._Route_101": 1.0,
+            "Winnipeg": 1.0
+        },
+        "2021-01-01": {
+            "Ontario_Highway_401": 0.97,
+            "U.S._Route_101": 0.97,
+            "Winnipeg": 0.97
+        },
+        "2022-01-01": {
+            "Great_Eastern_Highway": 1.89,
+            "Ontario_Highway_401": 0.94,
+            "U.S._Route_101": 0.94,
+            "Winnipeg": 0.94
+        },
+        "2023-01-01": {
+            "Great_Eastern_Highway": 1.86,
+            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.93,
+            "Ontario_Highway_401": 0.93,
+            "Winnipeg": 0.93
+        },
+        "2024-01-01": {
+            "Great_Eastern_Highway": 1.83,
+            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.92,
+            "Ontario_Highway_401": 0.92,
+            "Winnipeg": 0.92
+        },
+        "2024-11-01": {
+            "Great_Eastern_Highway": 1.82,
+            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.91,
+            "Ontario_Highway_401": 0.91,
+            "Queen_Elizabeth_Way": 0.91,
+            "Winnipeg": 0.91
+        }
+    }
+}
+
+{
+    "Word": "qld",
+    "Time Frequencies": {
+        "2020-01-01": 1.0,
+        "2021-01-01": 0.97,
+        "2022-01-01": 0.94,
+        "2023-01-01": 0.93,
+        "2024-01-01": 0.92,
+        "2024-11-01": 1.82
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Australia": 1.0
+        },
+        "2021-01-01": {
+            "Australia": 0.97
+        },
+        "2022-01-01": {
+            "Australia": 0.94
+        },
+        "2023-01-01": {
+            "Australia": 0.93
+        },
+        "2024-01-01": {
+            "Australia": 0.92
+        },
+        "2024-11-01": {
+            "Australia": 0.91,
+            "Australian_Competition_and_Consumer_Commission_v_Baxter_Healthcare_Pty_Ltd": 0.91
         }
     }
 }
@@ -769,11 +857,11 @@
     "Word": "css",
     "Time Frequencies": {
         "2020-01-01": 10.0,
-        "2021-01-01": 9.62,
-        "2022-01-01": 12.15,
-        "2023-01-01": 14.62,
-        "2024-01-01": 26.0,
-        "2024-11-01": 25.72
+        "2021-01-01": 9.67,
+        "2022-01-01": 12.28,
+        "2023-01-01": 14.87,
+        "2024-01-01": 26.56,
+        "2024-11-01": 26.35
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -784,39 +872,39 @@
             "John_C._Breckinridge": 1.0
         },
         "2021-01-01": {
-            "Boshin_War": 1.92,
-            "Sentence_spacing": 1.92,
-            "Briarcliff_Manor,_New_York": 0.96,
-            "CSS_Baltic": 0.96,
-            "John_C._Breckinridge": 0.96
+            "Boshin_War": 1.93,
+            "Sentence_spacing": 1.93,
+            "Briarcliff_Manor,_New_York": 0.97,
+            "CSS_Baltic": 0.97,
+            "John_C._Breckinridge": 0.97
         },
         "2022-01-01": {
-            "Battle_of_St._Charles": 2.8,
-            "Boshin_War": 1.87,
-            "Sentence_spacing": 1.87,
-            "Briarcliff_Manor,_New_York": 0.93,
-            "CSS_Baltic": 0.93
+            "Battle_of_St._Charles": 2.83,
+            "Boshin_War": 1.89,
+            "Sentence_spacing": 1.89,
+            "Briarcliff_Manor,_New_York": 0.94,
+            "CSS_Baltic": 0.94
         },
         "2023-01-01": {
-            "CSS_Baltic": 3.66,
-            "Battle_of_St._Charles": 2.74,
-            "Boshin_War": 1.83,
-            "Briarcliff_Manor,_New_York": 0.91,
-            "John_C._Breckinridge": 0.91
+            "CSS_Baltic": 3.72,
+            "Battle_of_St._Charles": 2.79,
+            "Boshin_War": 1.86,
+            "Briarcliff_Manor,_New_York": 0.93,
+            "John_C._Breckinridge": 0.93
         },
         "2024-01-01": {
-            "Battle_of_Plum_Point_Bend": 11.65,
-            "CSS_Baltic": 3.59,
-            "Battle_of_St._Charles": 2.69,
-            "Boshin_War": 1.79,
-            "Briarcliff_Manor,_New_York": 0.9
+            "Battle_of_Plum_Point_Bend": 11.91,
+            "CSS_Baltic": 3.66,
+            "Battle_of_St._Charles": 2.75,
+            "Boshin_War": 1.83,
+            "Briarcliff_Manor,_New_York": 0.92
         },
         "2024-11-01": {
-            "Battle_of_Plum_Point_Bend": 11.53,
-            "CSS_Baltic": 3.55,
-            "Battle_of_St._Charles": 2.66,
-            "Boshin_War": 1.77,
-            "Briarcliff_Manor,_New_York": 0.89
+            "Battle_of_Plum_Point_Bend": 11.81,
+            "CSS_Baltic": 3.63,
+            "Battle_of_St._Charles": 2.73,
+            "Boshin_War": 1.82,
+            "Briarcliff_Manor,_New_York": 0.91
         }
     }
 }
@@ -825,11 +913,11 @@
     "Word": "ur",
     "Time Frequencies": {
         "2020-01-01": 99.0,
-        "2021-01-01": 178.99,
-        "2022-01-01": 184.05,
-        "2023-01-01": 182.81,
-        "2024-01-01": 182.89,
-        "2024-11-01": 158.76
+        "2021-01-01": 179.8,
+        "2022-01-01": 186.12,
+        "2023-01-01": 185.86,
+        "2024-01-01": 185.93,
+        "2024-11-01": 161.72
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -840,446 +928,39 @@
             "James_Whiteside_McCay": 3.0
         },
         "2021-01-01": {
-            "Ur-Quan": 69.28,
-            "Icelandic_Phallological_Museum": 25.98,
-            "The_Elder_Scrolls_III__Morrowind": 15.4,
-            "Greece_runestones": 12.51,
-            "Sennacherib": 10.59
+            "Ur-Quan": 69.6,
+            "Icelandic_Phallological_Museum": 26.1,
+            "The_Elder_Scrolls_III__Morrowind": 15.47,
+            "Greece_runestones": 12.57,
+            "Sennacherib": 10.63
         },
         "2022-01-01": {
-            "Ur-Quan": 74.74,
-            "Icelandic_Phallological_Museum": 25.23,
-            "The_Elder_Scrolls_III__Morrowind": 14.95,
-            "Greece_runestones": 12.15,
-            "Sennacherib": 9.34
+            "Ur-Quan": 75.58,
+            "Icelandic_Phallological_Museum": 25.51,
+            "The_Elder_Scrolls_III__Morrowind": 15.12,
+            "Greece_runestones": 12.28,
+            "Sennacherib": 9.45
         },
         "2023-01-01": {
-            "Ur-Quan": 73.12,
-            "Icelandic_Phallological_Museum": 24.68,
-            "The_Elder_Scrolls_III__Morrowind": 14.62,
-            "Greece_runestones": 11.88,
-            "Sennacherib": 11.88
+            "Ur-Quan": 74.35,
+            "Icelandic_Phallological_Museum": 25.09,
+            "The_Elder_Scrolls_III__Morrowind": 14.87,
+            "Greece_runestones": 12.08,
+            "Sennacherib": 12.08
         },
         "2024-01-01": {
-            "Ur-Quan": 71.72,
-            "Icelandic_Phallological_Museum": 24.21,
-            "The_Elder_Scrolls_III__Morrowind": 14.34,
-            "Sennacherib": 13.45,
-            "Greece_runestones": 11.65
+            "Ur-Quan": 73.27,
+            "Icelandic_Phallological_Museum": 24.73,
+            "The_Elder_Scrolls_III__Morrowind": 14.65,
+            "Sennacherib": 13.74,
+            "Greece_runestones": 11.91
         },
         "2024-11-01": {
-            "Ur-Quan": 61.2,
-            "Icelandic_Phallological_Museum": 23.95,
-            "The_Elder_Scrolls_III__Morrowind": 14.19,
-            "Sennacherib": 13.3,
-            "Hamlet": 6.21
-        }
-    }
-}
-
-{
-    "Word": "hwy",
-    "Time Frequencies": {
-        "2020-01-01": 2.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 4.67,
-        "2023-01-01": 4.57,
-        "2024-01-01": 4.48,
-        "2024-11-01": 5.32
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "U.S._Route_101": 1.0,
-            "Winnipeg": 1.0
-        },
-        "2021-01-01": {
-            "Ontario_Highway_401": 0.96,
-            "U.S._Route_101": 0.96,
-            "Winnipeg": 0.96
-        },
-        "2022-01-01": {
-            "Great_Eastern_Highway": 1.87,
-            "Ontario_Highway_401": 0.93,
-            "U.S._Route_101": 0.93,
-            "Winnipeg": 0.93
-        },
-        "2023-01-01": {
-            "Great_Eastern_Highway": 1.83,
-            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.91,
-            "Ontario_Highway_401": 0.91,
-            "Winnipeg": 0.91
-        },
-        "2024-01-01": {
-            "Great_Eastern_Highway": 1.79,
-            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.9,
-            "Ontario_Highway_401": 0.9,
-            "Winnipeg": 0.9
-        },
-        "2024-11-01": {
-            "Great_Eastern_Highway": 1.77,
-            "Cry_Me_a_River_(Justin_Timberlake_song)": 0.89,
-            "Ontario_Highway_401": 0.89,
-            "Queen_Elizabeth_Way": 0.89,
-            "Winnipeg": 0.89
-        }
-    }
-}
-
-{
-    "Word": "cashiers",
-    "Time Frequencies": {
-        "2020-01-01": 2.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 2.8,
-        "2023-01-01": 4.57,
-        "2024-01-01": 5.38,
-        "2024-11-01": 5.32
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Birmingham_campaign": 1.0,
-            "Peace_dollar": 1.0
-        },
-        "2021-01-01": {
-            "55_Wall_Street": 0.96,
-            "Birmingham_campaign": 0.96,
-            "Peace_dollar": 0.96
-        },
-        "2022-01-01": {
-            "55_Wall_Street": 0.93,
-            "Birmingham_campaign": 0.93,
-            "Peace_dollar": 0.93
-        },
-        "2023-01-01": {
-            "55_Wall_Street": 0.91,
-            "Alexander_Hamilton_U.S._Custom_House": 0.91,
-            "Birmingham_campaign": 0.91,
-            "Double_florin": 0.91,
-            "Peace_dollar": 0.91
-        },
-        "2024-01-01": {
-            "Alexander_Hamilton_U.S._Custom_House": 1.79,
-            "55_Wall_Street": 0.9,
-            "Birmingham_campaign": 0.9,
-            "Double_florin": 0.9,
-            "Peace_dollar": 0.9
-        },
-        "2024-11-01": {
-            "Alexander_Hamilton_U.S._Custom_House": 1.77,
-            "55_Wall_Street": 0.89,
-            "Birmingham_campaign": 0.89,
-            "Double_florin": 0.89,
-            "Peace_dollar": 0.89
-        }
-    }
-}
-
-{
-    "Word": "boobs",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 0.93,
-        "2023-01-01": 0.91,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "A_Quiet_Night_In": 1.0
-        },
-        "2021-01-01": {
-            "A_Quiet_Night_In": 0.96
-        },
-        "2022-01-01": {
-            "A_Quiet_Night_In": 0.93
-        },
-        "2023-01-01": {
-            "A_Quiet_Night_In": 0.91
-        },
-        "2024-01-01": {
-            "Asimov's_Science_Fiction": 1.79,
-            "A_Quiet_Night_In": 0.9
-        },
-        "2024-11-01": {
-            "Asimov's_Science_Fiction": 1.77,
-            "A_Quiet_Night_In": 0.89
-        }
-    }
-}
-
-{
-    "Word": "fwd",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 0.93,
-        "2023-01-01": 0.91,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Jennifer_Lawrence": 1.0
-        },
-        "2021-01-01": {
-            "Jennifer_Lawrence": 0.96
-        },
-        "2022-01-01": {
-            "Jennifer_Lawrence": 0.93
-        },
-        "2023-01-01": {
-            "Jennifer_Lawrence": 0.91
-        },
-        "2024-01-01": {
-            "Feather_(song)": 1.79,
-            "Jennifer_Lawrence": 0.9
-        },
-        "2024-11-01": {
-            "Feather_(song)": 1.77,
-            "Jennifer_Lawrence": 0.89
-        }
-    }
-}
-
-{
-    "Word": "chem",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 3.74,
-        "2023-01-01": 2.74,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Phan_Xích_Long": 1.0
-        },
-        "2021-01-01": {
-            "Phan_Xích_Long": 0.96
-        },
-        "2022-01-01": {
-            "Periodic_table": 1.87,
-            "Metabolism": 0.93,
-            "Phan_Xích_Long": 0.93
-        },
-        "2023-01-01": {
-            "Periodic_table": 1.83,
-            "Phan_Xích_Long": 0.91
-        },
-        "2024-01-01": {
-            "Periodic_table": 1.79,
-            "Phan_Xích_Long": 0.9
-        },
-        "2024-11-01": {
-            "Periodic_table": 1.77,
-            "Phan_Xích_Long": 0.89
-        }
-    }
-}
-
-{
-    "Word": "mambo",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 0.93,
-        "2023-01-01": 2.74,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Xerochrysum_bracteatum": 1.0
-        },
-        "2021-01-01": {
-            "Xerochrysum_bracteatum": 0.96
-        },
-        "2022-01-01": {
-            "Xerochrysum_bracteatum": 0.93
-        },
-        "2023-01-01": {
-            "Takin'_It_Back": 1.83,
-            "Xerochrysum_bracteatum": 0.91
-        },
-        "2024-01-01": {
-            "Takin'_It_Back": 1.79,
-            "Xerochrysum_bracteatum": 0.9
-        },
-        "2024-11-01": {
-            "Takin'_It_Back": 1.77,
-            "Xerochrysum_bracteatum": 0.89
-        }
-    }
-}
-
-{
-    "Word": "mens",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 1.87,
-        "2023-01-01": 1.83,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Johannes_Kepler": 1.0
-        },
-        "2021-01-01": {
-            "Johannes_Kepler": 0.96,
-            "Loveday_(1458)": 0.96,
-            "Margate_F.C": 0.96
-        },
-        "2022-01-01": {
-            "Halifax_Explosion": 0.93,
-            "Loveday_(1458)": 0.93
-        },
-        "2023-01-01": {
-            "Halifax_Explosion": 0.91,
-            "Loveday_(1458)": 0.91
-        },
-        "2024-01-01": {
-            "Loveday_(1458)": 0.9,
-            "Nuremberg_trials": 0.9,
-            "William_III_of_England": 0.9
-        },
-        "2024-11-01": {
-            "Loveday_(1458)": 0.89,
-            "Nuremberg_trials": 0.89,
-            "William_III_of_England": 0.89
-        }
-    }
-}
-
-{
-    "Word": "qld",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 0.96,
-        "2022-01-01": 0.93,
-        "2023-01-01": 0.91,
-        "2024-01-01": 0.9,
-        "2024-11-01": 1.77
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Australia": 1.0
-        },
-        "2021-01-01": {
-            "Australia": 0.96
-        },
-        "2022-01-01": {
-            "Australia": 0.93
-        },
-        "2023-01-01": {
-            "Australia": 0.91
-        },
-        "2024-01-01": {
-            "Australia": 0.9
-        },
-        "2024-11-01": {
-            "Australia": 0.89,
-            "Australian_Competition_and_Consumer_Commission_v_Baxter_Healthcare_Pty_Ltd": 0.89
-        }
-    }
-}
-
-{
-    "Word": "headers",
-    "Time Frequencies": {
-        "2020-01-01": 1.0,
-        "2021-01-01": 1.92,
-        "2022-01-01": 2.8,
-        "2023-01-01": 2.74,
-        "2024-01-01": 2.69,
-        "2024-11-01": 2.66
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Literary_Hall": 1.0
-        },
-        "2021-01-01": {
-            "Iwan_Roberts": 0.96,
-            "Literary_Hall": 0.96
-        },
-        "2022-01-01": {
-            "1987_Football_League_Third_Division_play-off_final": 0.93,
-            "Iwan_Roberts": 0.93,
-            "Literary_Hall": 0.93
-        },
-        "2023-01-01": {
-            "1987_Football_League_Third_Division_play-off_final": 0.91,
-            "Iwan_Roberts": 0.91,
-            "Literary_Hall": 0.91
-        },
-        "2024-01-01": {
-            "1987_Football_League_Third_Division_play-off_final": 0.9,
-            "Iwan_Roberts": 0.9,
-            "Literary_Hall": 0.9
-        },
-        "2024-11-01": {
-            "1987_Football_League_Third_Division_play-off_final": 0.89,
-            "Iwan_Roberts": 0.89,
-            "Literary_Hall": 0.89
-        }
-    }
-}
-
-{
-    "Word": "gif",
-    "Time Frequencies": {
-        "2020-01-01": 10.0,
-        "2021-01-01": 11.55,
-        "2022-01-01": 24.29,
-        "2023-01-01": 25.59,
-        "2024-01-01": 25.1,
-        "2024-11-01": 25.72
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Pronunciation_of_GIF": 6.0,
-            "1896_Summer_Olympics": 1.0,
-            "Edward_VIII": 1.0,
-            "Sonic_X-treme": 1.0,
-            "Wallis_Simpson": 1.0
-        },
-        "2021-01-01": {
-            "Pronunciation_of_GIF": 5.77,
-            "1896_Summer_Olympics": 0.96,
-            "Edward_VIII": 0.96,
-            "Islands__Non-Places": 0.96,
-            "Sonic_X-treme": 0.96
-        },
-        "2022-01-01": {
-            "Pronunciation_of_GIF": 16.82,
-            "Islands__Non-Places": 1.87,
-            "1896_Summer_Olympics": 0.93,
-            "Cai_Lun": 0.93,
-            "Edward_VIII": 0.93
-        },
-        "2023-01-01": {
-            "Pronunciation_of_GIF": 16.45,
-            "Islands__Non-Places": 1.83,
-            "1896_Summer_Olympics": 0.91,
-            "Cai_Lun": 0.91,
-            "Edward_VIII": 0.91
-        },
-        "2024-01-01": {
-            "Pronunciation_of_GIF": 15.24,
-            "Islands__Non-Places": 1.79,
-            "1896_Summer_Olympics": 0.9,
-            "Cai_Lun": 0.9,
-            "Edward_VIII": 0.9
-        },
-        "2024-11-01": {
-            "Pronunciation_of_GIF": 15.96,
-            "Islands__Non-Places": 1.77,
-            "1896_Summer_Olympics": 0.89,
-            "Cai_Lun": 0.89,
-            "Edward_VIII": 0.89
+            "Ur-Quan": 62.69,
+            "Icelandic_Phallological_Museum": 24.53,
+            "The_Elder_Scrolls_III__Morrowind": 14.54,
+            "Sennacherib": 13.63,
+            "Hamlet": 6.36
         }
     }
 }
@@ -1288,11 +969,11 @@
     "Word": "sl",
     "Time Frequencies": {
         "2020-01-01": 9.0,
-        "2021-01-01": 6.74,
-        "2022-01-01": 9.34,
-        "2023-01-01": 11.88,
-        "2024-01-01": 11.65,
-        "2024-11-01": 19.51
+        "2021-01-01": 6.77,
+        "2022-01-01": 9.45,
+        "2023-01-01": 12.08,
+        "2024-01-01": 11.91,
+        "2024-11-01": 19.99
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1303,95 +984,39 @@
             "Rhyolite,_Nevada": 1.0
         },
         "2021-01-01": {
-            "Adele_Spitzeder": 1.92,
-            "Complete_blood_count": 0.96,
-            "Court_of_Chancery": 0.96,
-            "Influenza": 0.96,
-            "Rhyolite,_Nevada": 0.96
+            "Adele_Spitzeder": 1.93,
+            "Complete_blood_count": 0.97,
+            "Court_of_Chancery": 0.97,
+            "Influenza": 0.97,
+            "Rhyolite,_Nevada": 0.97
         },
         "2022-01-01": {
-            "Operation_Berlin_(Atlantic)": 3.74,
-            "Adele_Spitzeder": 1.87,
-            "Complete_blood_count": 0.93,
-            "Court_of_Chancery": 0.93,
-            "Rhyolite,_Nevada": 0.93
+            "Operation_Berlin_(Atlantic)": 3.78,
+            "Adele_Spitzeder": 1.89,
+            "Complete_blood_count": 0.94,
+            "Court_of_Chancery": 0.94,
+            "Rhyolite,_Nevada": 0.94
         },
         "2023-01-01": {
-            "Operation_Berlin_(Atlantic)": 4.57,
+            "Operation_Berlin_(Atlantic)": 4.65,
+            "270_Park_Avenue_(1960–2021)": 1.86,
+            "Adele_Spitzeder": 1.86,
+            "Complete_blood_count": 0.93,
+            "Court_of_Chancery": 0.93
+        },
+        "2024-01-01": {
+            "Operation_Berlin_(Atlantic)": 4.58,
             "270_Park_Avenue_(1960–2021)": 1.83,
             "Adele_Spitzeder": 1.83,
-            "Complete_blood_count": 0.91,
-            "Court_of_Chancery": 0.91
-        },
-        "2024-01-01": {
-            "Operation_Berlin_(Atlantic)": 4.48,
-            "270_Park_Avenue_(1960–2021)": 1.79,
-            "Adele_Spitzeder": 1.79,
-            "Complete_blood_count": 0.9,
-            "Court_of_Chancery": 0.9
+            "Complete_blood_count": 0.92,
+            "Court_of_Chancery": 0.92
         },
         "2024-11-01": {
-            "Operation_Berlin_(Atlantic)": 4.43,
-            "Colorado_River": 3.55,
-            "German_battleship_Bismarck": 3.55,
-            "270_Park_Avenue_(1960–2021)": 1.77,
-            "Adele_Spitzeder": 1.77
-        }
-    }
-}
-
-{
-    "Word": "df",
-    "Time Frequencies": {
-        "2020-01-01": 13.0,
-        "2021-01-01": 28.87,
-        "2022-01-01": 36.44,
-        "2023-01-01": 41.13,
-        "2024-01-01": 29.59,
-        "2024-11-01": 31.93
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Hubble_Space_Telescope": 5.0,
-            "1920–21_Burnley_F.C._season": 2.0,
-            "...And_Justice_for_All_(album)": 1.0,
-            "1920–21_Cardiff_City_F.C._season": 1.0,
-            "1921–22_Cardiff_City_F.C._season": 1.0
-        },
-        "2021-01-01": {
-            "2020_Seattle_Sounders_FC_season": 16.36,
-            "Hubble_Space_Telescope": 4.81,
-            "1920–21_Burnley_F.C._season": 1.92,
-            "1920–21_Cardiff_City_F.C._season": 0.96,
-            "1921–22_Cardiff_City_F.C._season": 0.96
-        },
-        "2022-01-01": {
-            "2020_Seattle_Sounders_FC_season": 15.88,
-            "Hubble_Space_Telescope": 4.67,
-            "1920–21_Burnley_F.C._season": 1.87,
-            "1920–21_Cardiff_City_F.C._season": 0.93,
-            "1921–22_Cardiff_City_F.C._season": 0.93
-        },
-        "2023-01-01": {
-            "2020_Seattle_Sounders_FC_season": 15.54,
-            "Hubble_Space_Telescope": 4.57,
-            "1920–21_Cardiff_City_F.C._season": 0.91,
-            "1921–22_Cardiff_City_F.C._season": 0.91,
-            "1959–60_Burnley_F.C._season": 0.91
-        },
-        "2024-01-01": {
-            "Hubble_Space_Telescope": 4.48,
-            "1920–21_Cardiff_City_F.C._season": 0.9,
-            "1921–22_Cardiff_City_F.C._season": 0.9,
-            "1959–60_Burnley_F.C._season": 0.9,
-            "1973–74_Gillingham_F.C._season": 0.9
-        },
-        "2024-11-01": {
-            "Hubble_Space_Telescope": 4.43,
-            "1920–21_Cardiff_City_F.C._season": 0.89,
-            "1921–22_Cardiff_City_F.C._season": 0.89,
-            "1959–60_Burnley_F.C._season": 0.89,
-            "1973–74_Gillingham_F.C._season": 0.89
+            "Operation_Berlin_(Atlantic)": 4.54,
+            "Colorado_River": 3.63,
+            "German_battleship_Bismarck": 3.63,
+            "270_Park_Avenue_(1960–2021)": 1.82,
+            "Adele_Spitzeder": 1.82
         }
     }
 }
@@ -1400,11 +1025,11 @@
     "Word": "ns",
     "Time Frequencies": {
         "2020-01-01": 276.0,
-        "2021-01-01": 271.37,
-        "2022-01-01": 296.16,
-        "2023-01-01": 287.01,
-        "2024-01-01": 281.51,
-        "2024-11-01": 276.72
+        "2021-01-01": 272.6,
+        "2022-01-01": 298.54,
+        "2023-01-01": 289.95,
+        "2024-01-01": 285.77,
+        "2024-11-01": 281.66
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1415,91 +1040,39 @@
             "Jules_Massenet": 5.0
         },
         "2021-01-01": {
-            "Camille_Saint-Saëns": 155.89,
-            "Gabriel_Fauré": 20.21,
-            "André_Messager": 12.51,
-            "Piano_music_of_Gabriel_Fauré": 7.7,
-            "A_and_B_Loop": 6.74
+            "Camille_Saint-Saëns": 156.6,
+            "Gabriel_Fauré": 20.3,
+            "André_Messager": 12.57,
+            "Piano_music_of_Gabriel_Fauré": 7.73,
+            "A_and_B_Loop": 6.77
         },
         "2022-01-01": {
-            "Camille_Saint-Saëns": 154.15,
-            "Fakhr_al-Din_II": 29.9,
-            "Gabriel_Fauré": 19.62,
-            "André_Messager": 12.15,
-            "Piano_music_of_Gabriel_Fauré": 7.47
+            "Camille_Saint-Saëns": 155.88,
+            "Fakhr_al-Din_II": 30.23,
+            "Gabriel_Fauré": 19.84,
+            "André_Messager": 12.28,
+            "Piano_music_of_Gabriel_Fauré": 7.56
         },
         "2023-01-01": {
-            "Camille_Saint-Saëns": 149.9,
-            "Fakhr_al-Din_II": 29.25,
-            "Gabriel_Fauré": 19.19,
-            "André_Messager": 11.88,
-            "Piano_music_of_Gabriel_Fauré": 7.31
+            "Camille_Saint-Saëns": 152.41,
+            "Fakhr_al-Din_II": 29.74,
+            "Gabriel_Fauré": 19.52,
+            "André_Messager": 12.08,
+            "Piano_music_of_Gabriel_Fauré": 7.43
         },
         "2024-01-01": {
-            "Camille_Saint-Saëns": 147.03,
-            "Fakhr_al-Din_II": 28.69,
-            "Gabriel_Fauré": 18.83,
-            "André_Messager": 11.65,
-            "Piano_music_of_Gabriel_Fauré": 7.17
+            "Camille_Saint-Saëns": 150.21,
+            "Fakhr_al-Din_II": 29.31,
+            "Gabriel_Fauré": 19.23,
+            "André_Messager": 11.91,
+            "Piano_music_of_Gabriel_Fauré": 7.33
         },
         "2024-11-01": {
-            "Camille_Saint-Saëns": 145.46,
-            "Fakhr_al-Din_II": 28.38,
-            "Gabriel_Fauré": 18.63,
-            "André_Messager": 11.53,
-            "Piano_music_of_Gabriel_Fauré": 7.1
-        }
-    }
-}
-
-{
-    "Word": "bdsm",
-    "Time Frequencies": {
-        "2020-01-01": 3.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 4.67,
-        "2023-01-01": 6.4,
-        "2024-01-01": 7.17,
-        "2024-11-01": 7.1
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Jill_Valentine": 1.0,
-            "Maggie_Gyllenhaal": 1.0,
-            "S&M_(song)": 1.0
-        },
-        "2021-01-01": {
-            "Jill_Valentine": 0.96,
-            "Maggie_Gyllenhaal": 0.96,
-            "S&M_(song)": 0.96
-        },
-        "2022-01-01": {
-            "Gurl.com": 0.93,
-            "Jill_Valentine": 0.93,
-            "Maggie_Gyllenhaal": 0.93,
-            "S&M_(song)": 0.93,
-            "San_Junipero": 0.93
-        },
-        "2023-01-01": {
-            "Alejandro_(song)": 1.83,
-            "Gurl.com": 0.91,
-            "Jill_Valentine": 0.91,
-            "Maggie_Gyllenhaal": 0.91,
-            "S&M_(song)": 0.91
-        },
-        "2024-01-01": {
-            "Alejandro_(song)": 1.79,
-            "Dark_Archives": 0.9,
-            "Gurl.com": 0.9,
-            "Jill_Valentine": 0.9,
-            "Maggie_Gyllenhaal": 0.9
-        },
-        "2024-11-01": {
-            "Alejandro_(song)": 1.77,
-            "Dark_Archives": 0.89,
-            "Gurl.com": 0.89,
-            "Jill_Valentine": 0.89,
-            "Maggie_Gyllenhaal": 0.89
+            "Camille_Saint-Saëns": 149.0,
+            "Fakhr_al-Din_II": 29.07,
+            "Gabriel_Fauré": 19.08,
+            "André_Messager": 11.81,
+            "Piano_music_of_Gabriel_Fauré": 7.27
         }
     }
 }
@@ -1508,11 +1081,11 @@
     "Word": "img",
     "Time Frequencies": {
         "2020-01-01": 11.0,
-        "2021-01-01": 10.59,
-        "2022-01-01": 25.23,
-        "2023-01-01": 25.59,
-        "2024-01-01": 25.1,
-        "2024-11-01": 24.83
+        "2021-01-01": 10.63,
+        "2022-01-01": 25.51,
+        "2023-01-01": 26.02,
+        "2024-01-01": 25.65,
+        "2024-11-01": 25.44
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1523,39 +1096,39 @@
             "Pierre_Monteux": 1.0
         },
         "2021-01-01": {
-            "Death_of_Kevin_Gately": 3.85,
-            "Daniel_Sedin": 0.96,
-            "Dominik_Hašek": 0.96,
-            "Henrik_Sedin": 0.96,
-            "Pierre_Monteux": 0.96
+            "Death_of_Kevin_Gately": 3.87,
+            "Daniel_Sedin": 0.97,
+            "Dominik_Hašek": 0.97,
+            "Henrik_Sedin": 0.97,
+            "Pierre_Monteux": 0.97
         },
         "2022-01-01": {
-            "Death_of_Kevin_Gately": 17.75,
+            "Death_of_Kevin_Gately": 17.95,
+            "Daniel_Sedin": 0.94,
+            "Dominik_Hašek": 0.94,
+            "Henrik_Sedin": 0.94,
+            "Pierre_Monteux": 0.94
+        },
+        "2023-01-01": {
+            "Death_of_Kevin_Gately": 17.66,
             "Daniel_Sedin": 0.93,
             "Dominik_Hašek": 0.93,
             "Henrik_Sedin": 0.93,
             "Pierre_Monteux": 0.93
         },
-        "2023-01-01": {
-            "Death_of_Kevin_Gately": 17.37,
+        "2024-01-01": {
+            "Death_of_Kevin_Gately": 17.4,
+            "Daniel_Sedin": 0.92,
+            "Dominik_Hašek": 0.92,
+            "Henrik_Sedin": 0.92,
+            "Pierre_Monteux": 0.92
+        },
+        "2024-11-01": {
+            "Death_of_Kevin_Gately": 17.26,
             "Daniel_Sedin": 0.91,
             "Dominik_Hašek": 0.91,
             "Henrik_Sedin": 0.91,
             "Pierre_Monteux": 0.91
-        },
-        "2024-01-01": {
-            "Death_of_Kevin_Gately": 17.03,
-            "Daniel_Sedin": 0.9,
-            "Dominik_Hašek": 0.9,
-            "Henrik_Sedin": 0.9,
-            "Pierre_Monteux": 0.9
-        },
-        "2024-11-01": {
-            "Death_of_Kevin_Gately": 16.85,
-            "Daniel_Sedin": 0.89,
-            "Dominik_Hašek": 0.89,
-            "Henrik_Sedin": 0.89,
-            "Pierre_Monteux": 0.89
         }
     }
 }
@@ -1564,11 +1137,11 @@
     "Word": "pix",
     "Time Frequencies": {
         "2020-01-01": 2.0,
-        "2021-01-01": 2.89,
-        "2022-01-01": 2.8,
-        "2023-01-01": 4.57,
-        "2024-01-01": 3.59,
-        "2024-11-01": 4.43
+        "2021-01-01": 2.9,
+        "2022-01-01": 2.83,
+        "2023-01-01": 4.65,
+        "2024-01-01": 3.66,
+        "2024-11-01": 4.54
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1576,31 +1149,31 @@
             "His_Majesty's_Theatre,_London": 1.0
         },
         "2021-01-01": {
-            "Beth_Hamedrash_Hagodol": 0.96,
-            "His_Majesty's_Theatre,_London": 0.96,
-            "Namco": 0.96
+            "Beth_Hamedrash_Hagodol": 0.97,
+            "His_Majesty's_Theatre,_London": 0.97,
+            "Namco": 0.97
         },
         "2022-01-01": {
+            "Beth_Hamedrash_Hagodol": 0.94,
+            "His_Majesty's_Theatre,_London": 0.94,
+            "Namco": 0.94
+        },
+        "2023-01-01": {
+            "RKO_Pictures": 1.86,
             "Beth_Hamedrash_Hagodol": 0.93,
             "His_Majesty's_Theatre,_London": 0.93,
             "Namco": 0.93
         },
-        "2023-01-01": {
-            "RKO_Pictures": 1.83,
-            "Beth_Hamedrash_Hagodol": 0.91,
-            "His_Majesty's_Theatre,_London": 0.91,
-            "Namco": 0.91
-        },
         "2024-01-01": {
-            "RKO_Pictures": 1.79,
-            "Beth_Hamedrash_Hagodol": 0.9,
-            "Namco": 0.9
+            "RKO_Pictures": 1.83,
+            "Beth_Hamedrash_Hagodol": 0.92,
+            "Namco": 0.92
         },
         "2024-11-01": {
-            "RKO_Pictures": 1.77,
-            "Beth_Hamedrash_Hagodol": 0.89,
-            "George_Town,_Penang": 0.89,
-            "Namco": 0.89
+            "RKO_Pictures": 1.82,
+            "Beth_Hamedrash_Hagodol": 0.91,
+            "George_Town,_Penang": 0.91,
+            "Namco": 0.91
         }
     }
 }
@@ -1609,11 +1182,11 @@
     "Word": "acm",
     "Time Frequencies": {
         "2020-01-01": 5.0,
-        "2021-01-01": 6.74,
-        "2022-01-01": 9.34,
-        "2023-01-01": 10.05,
-        "2024-01-01": 10.76,
-        "2024-11-01": 10.64
+        "2021-01-01": 6.77,
+        "2022-01-01": 9.45,
+        "2023-01-01": 10.22,
+        "2024-01-01": 10.99,
+        "2024-11-01": 10.9
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1624,261 +1197,39 @@
             "Parallel_computing": 1.0
         },
         "2021-01-01": {
-            "Donkey_Kong_Country": 1.92,
-            "2007_United_States_Air_Force_nuclear_weapons_incident": 0.96,
-            "AC_Monza": 0.96,
-            "Logic": 0.96,
-            "Manchester_Mark_1": 0.96
+            "Donkey_Kong_Country": 1.93,
+            "2007_United_States_Air_Force_nuclear_weapons_incident": 0.97,
+            "AC_Monza": 0.97,
+            "Logic": 0.97,
+            "Manchester_Mark_1": 0.97
         },
         "2022-01-01": {
-            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.87,
-            "Donkey_Kong_Country": 1.87,
-            "Fearless_(Taylor_Swift_album)": 1.87,
-            "AC_Monza": 0.93,
-            "Donkey_Kong_Land": 0.93
+            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.89,
+            "Donkey_Kong_Country": 1.89,
+            "Fearless_(Taylor_Swift_album)": 1.89,
+            "AC_Monza": 0.94,
+            "Donkey_Kong_Land": 0.94
         },
         "2023-01-01": {
-            "Donkey_Kong_Country": 2.74,
+            "Donkey_Kong_Country": 2.79,
+            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.86,
+            "Donkey_Kong_Land": 1.86,
+            "Fearless_(Taylor_Swift_album)": 1.86,
+            "Manchester_Mark_1": 0.93
+        },
+        "2024-01-01": {
+            "Donkey_Kong_Country": 2.75,
             "2007_United_States_Air_Force_nuclear_weapons_incident": 1.83,
             "Donkey_Kong_Land": 1.83,
             "Fearless_(Taylor_Swift_album)": 1.83,
-            "Manchester_Mark_1": 0.91
-        },
-        "2024-01-01": {
-            "Donkey_Kong_Country": 2.69,
-            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.79,
-            "Donkey_Kong_Land": 1.79,
-            "Fearless_(Taylor_Swift_album)": 1.79,
-            "AC_Monza": 0.9
+            "AC_Monza": 0.92
         },
         "2024-11-01": {
-            "Donkey_Kong_Country": 2.66,
-            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.77,
-            "Donkey_Kong_Land": 1.77,
-            "Fearless_(Taylor_Swift_album)": 1.77,
-            "AC_Monza": 0.89
-        }
-    }
-}
-
-{
-    "Word": "frames",
-    "Time Frequencies": {
-        "2020-01-01": 647.0,
-        "2021-01-01": 955.55,
-        "2022-01-01": 1194.92,
-        "2023-01-01": 1297.92,
-        "2024-01-01": 1351.96,
-        "2024-11-01": 1340.14
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "2019_World_Snooker_Championship": 66.0,
-            "2018_World_Snooker_Championship": 43.0,
-            "1985_World_Snooker_Championship": 31.0,
-            "2019_Tour_Championship": 27.0,
-            "2016_World_Snooker_Championship": 23.0
-        },
-        "2021-01-01": {
-            "2020_World_Snooker_Championship": 84.68,
-            "2019_World_Snooker_Championship": 63.51,
-            "2018_World_Snooker_Championship": 41.38,
-            "1985_World_Snooker_Championship": 31.76,
-            "1984_World_Snooker_Championship": 30.79
-        },
-        "2022-01-01": {
-            "2020_World_Snooker_Championship": 80.35,
-            "2021_World_Snooker_Championship": 69.14,
-            "2019_World_Snooker_Championship": 61.66,
-            "2018_World_Snooker_Championship": 40.17,
-            "1987_World_Snooker_Championship": 36.44
-        },
-        "2023-01-01": {
-            "2020_World_Snooker_Championship": 78.61,
-            "2021_World_Snooker_Championship": 66.72,
-            "2019_World_Snooker_Championship": 60.33,
-            "2022_World_Snooker_Championship": 47.53,
-            "2018_World_Snooker_Championship": 39.3
-        },
-        "2024-01-01": {
-            "2020_World_Snooker_Championship": 77.1,
-            "2023_World_Snooker_Championship": 67.24,
-            "2021_World_Snooker_Championship": 65.45,
-            "2019_World_Snooker_Championship": 59.17,
-            "2022_World_Snooker_Championship": 46.62
-        },
-        "2024-11-01": {
-            "2020_World_Snooker_Championship": 76.28,
-            "2023_World_Snooker_Championship": 67.41,
-            "2021_World_Snooker_Championship": 64.75,
-            "2019_World_Snooker_Championship": 58.54,
-            "2022_World_Snooker_Championship": 46.12
-        }
-    }
-}
-
-{
-    "Word": "medicaid",
-    "Time Frequencies": {
-        "2020-01-01": 18.0,
-        "2021-01-01": 17.32,
-        "2022-01-01": 16.82,
-        "2023-01-01": 16.45,
-        "2024-01-01": 37.65,
-        "2024-11-01": 37.25
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Mitt_Romney": 3.0,
-            "Paul_E._Patton": 3.0,
-            "2020_Missouri_Amendment_2": 2.0,
-            "Birth_control_movement_in_the_United_States": 2.0,
-            "Richard_Nixon": 2.0
-        },
-        "2021-01-01": {
-            "Mitt_Romney": 2.89,
-            "Paul_E._Patton": 2.89,
-            "2020_Missouri_Amendment_2": 1.92,
-            "Birth_control_movement_in_the_United_States": 1.92,
-            "Richard_Nixon": 1.92
-        },
-        "2022-01-01": {
-            "Mitt_Romney": 2.8,
-            "Paul_E._Patton": 2.8,
-            "2020_Missouri_Amendment_2": 1.87,
-            "Birth_control_movement_in_the_United_States": 1.87,
-            "Richard_Nixon": 1.87
-        },
-        "2023-01-01": {
-            "Mitt_Romney": 2.74,
-            "Paul_E._Patton": 2.74,
-            "2020_Missouri_Amendment_2": 1.83,
-            "Birth_control_movement_in_the_United_States": 1.83,
-            "Richard_Nixon": 1.83
-        },
-        "2024-01-01": {
-            "2020_Missouri_Amendment_2": 24.21,
-            "Mitt_Romney": 2.69,
-            "Paul_E._Patton": 2.69,
-            "Birth_control_movement_in_the_United_States": 1.79,
-            "Richard_Nixon": 1.79
-        },
-        "2024-11-01": {
-            "2020_Missouri_Amendment_2": 23.95,
-            "Mitt_Romney": 2.66,
-            "Paul_E._Patton": 2.66,
-            "Birth_control_movement_in_the_United_States": 1.77,
-            "Richard_Nixon": 1.77
-        }
-    }
-}
-
-{
-    "Word": "hb",
-    "Time Frequencies": {
-        "2020-01-01": 9.0,
-        "2021-01-01": 8.66,
-        "2022-01-01": 8.41,
-        "2023-01-01": 13.71,
-        "2024-01-01": 17.93,
-        "2024-11-01": 18.63
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "Penda_of_Mercia": 2.0,
-            "1920–21_Cardiff_City_F.C._season": 1.0,
-            "1921–22_Cardiff_City_F.C._season": 1.0,
-            "1940_Mandatory_Palestine_v_Lebanon_football_match": 1.0,
-            "D._Djajakusuma": 1.0
-        },
-        "2021-01-01": {
-            "Penda_of_Mercia": 1.92,
-            "1920–21_Cardiff_City_F.C._season": 0.96,
-            "1921–22_Cardiff_City_F.C._season": 0.96,
-            "D._Djajakusuma": 0.96,
-            "Holkham_National_Nature_Reserve": 0.96
-        },
-        "2022-01-01": {
-            "Penda_of_Mercia": 1.87,
-            "1920–21_Cardiff_City_F.C._season": 0.93,
-            "1921–22_Cardiff_City_F.C._season": 0.93,
-            "D._Djajakusuma": 0.93,
-            "Holkham_National_Nature_Reserve": 0.93
-        },
-        "2023-01-01": {
-            "1920–21_Burnley_F.C._season": 1.83,
-            "Penda_of_Mercia": 1.83,
-            "1905–06_New_Brompton_F.C._season": 0.91,
-            "1920–21_Cardiff_City_F.C._season": 0.91,
-            "1920–21_Gillingham_F.C._season": 0.91
-        },
-        "2024-01-01": {
-            "1920–21_Burnley_F.C._season": 1.79,
-            "Penda_of_Mercia": 1.79,
-            "1894–95_New_Brompton_F.C._season": 0.9,
-            "1905–06_New_Brompton_F.C._season": 0.9,
-            "1906–07_New_Brompton_F.C._season": 0.9
-        },
-        "2024-11-01": {
-            "1920–21_Burnley_F.C._season": 1.77,
-            "Penda_of_Mercia": 1.77,
-            "1894–95_New_Brompton_F.C._season": 0.89,
-            "1905–06_New_Brompton_F.C._season": 0.89,
-            "1906–07_New_Brompton_F.C._season": 0.89
-        }
-    }
-}
-
-{
-    "Word": "invoice",
-    "Time Frequencies": {
-        "2020-01-01": 3.0,
-        "2021-01-01": 5.77,
-        "2022-01-01": 6.54,
-        "2023-01-01": 5.48,
-        "2024-01-01": 6.28,
-        "2024-11-01": 6.21
-    },
-    "Top 5 Page Frequencies": {
-        "2020-01-01": {
-            "1984_Rajneeshee_bioterror_attack": 1.0,
-            "Happy_Chandler": 1.0,
-            "Neal_Dow": 1.0
-        },
-        "2021-01-01": {
-            "1984_Rajneeshee_bioterror_attack": 0.96,
-            "Ann_Cook_(cookery_book_writer)": 0.96,
-            "Apollo_13": 0.96,
-            "Happy_Chandler": 0.96,
-            "Neal_Dow": 0.96
-        },
-        "2022-01-01": {
-            "1984_Rajneeshee_bioterror_attack": 0.93,
-            "Ann_Cook_(cookery_book_writer)": 0.93,
-            "Apollo_13": 0.93,
-            "Happy_Chandler": 0.93,
-            "Levantine_Arabic": 0.93
-        },
-        "2023-01-01": {
-            "1984_Rajneeshee_bioterror_attack": 0.91,
-            "Ann_Cook_(cookery_book_writer)": 0.91,
-            "Apollo_13": 0.91,
-            "Happy_Chandler": 0.91,
-            "Neal_Dow": 0.91
-        },
-        "2024-01-01": {
-            "1984_Rajneeshee_bioterror_attack": 0.9,
-            "Ann_Cook_(cookery_book_writer)": 0.9,
-            "Apollo_13": 0.9,
-            "Happy_Chandler": 0.9,
-            "Neal_Dow": 0.9
-        },
-        "2024-11-01": {
-            "1984_Rajneeshee_bioterror_attack": 0.89,
-            "Ann_Cook_(cookery_book_writer)": 0.89,
-            "Apollo_13": 0.89,
-            "Happy_Chandler": 0.89,
-            "Neal_Dow": 0.89
+            "Donkey_Kong_Country": 2.73,
+            "2007_United_States_Air_Force_nuclear_weapons_incident": 1.82,
+            "Donkey_Kong_Land": 1.82,
+            "Fearless_(Taylor_Swift_album)": 1.82,
+            "AC_Monza": 0.91
         }
     }
 }
@@ -1887,11 +1238,11 @@
     "Word": "tobago",
     "Time Frequencies": {
         "2020-01-01": 38.0,
-        "2021-01-01": 45.23,
-        "2022-01-01": 77.54,
-        "2023-01-01": 81.35,
-        "2024-01-01": 78.89,
-        "2024-11-01": 78.05
+        "2021-01-01": 45.43,
+        "2022-01-01": 78.41,
+        "2023-01-01": 82.71,
+        "2024-01-01": 79.69,
+        "2024-11-01": 79.05
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
@@ -1902,151 +1253,197 @@
             "Somerset_County_Cricket_Club_in_2009": 2.0
         },
         "2021-01-01": {
-            "National_Union_of_Freedom_Fighters": 10.59,
-            "Pitfour_estate": 4.81,
-            "Hurricane_Lenny": 1.92,
-            "Learie_Constantine": 1.92,
-            "Phallus_indusiatus": 1.92
+            "National_Union_of_Freedom_Fighters": 10.63,
+            "Pitfour_estate": 4.83,
+            "Hurricane_Lenny": 1.93,
+            "Learie_Constantine": 1.93,
+            "Phallus_indusiatus": 1.93
         },
         "2022-01-01": {
-            "Learie_Constantine": 34.57,
-            "National_Union_of_Freedom_Fighters": 12.15,
-            "Pitfour_estate": 4.67,
-            "Hurricane_Lenny": 1.87,
-            "Phallus_indusiatus": 1.87
+            "Learie_Constantine": 34.96,
+            "National_Union_of_Freedom_Fighters": 12.28,
+            "Pitfour_estate": 4.72,
+            "Hurricane_Lenny": 1.89,
+            "Phallus_indusiatus": 1.89
         },
         "2023-01-01": {
-            "Learie_Constantine": 33.82,
-            "National_Union_of_Freedom_Fighters": 11.88,
-            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.4,
-            "Pitfour_estate": 4.57,
+            "Learie_Constantine": 34.38,
+            "National_Union_of_Freedom_Fighters": 12.08,
+            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.51,
+            "Pitfour_estate": 4.65,
+            "Hurricane_Lenny": 1.86
+        },
+        "2024-01-01": {
+            "Learie_Constantine": 32.97,
+            "National_Union_of_Freedom_Fighters": 11.91,
+            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.41,
+            "Pitfour_estate": 4.58,
             "Hurricane_Lenny": 1.83
         },
-        "2024-01-01": {
-            "Learie_Constantine": 32.27,
-            "National_Union_of_Freedom_Fighters": 11.65,
-            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.28,
-            "Pitfour_estate": 4.48,
-            "Hurricane_Lenny": 1.79
-        },
         "2024-11-01": {
-            "Learie_Constantine": 31.93,
-            "National_Union_of_Freedom_Fighters": 11.53,
-            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.21,
-            "Pitfour_estate": 4.43,
-            "Hurricane_Lenny": 1.77
+            "Learie_Constantine": 32.71,
+            "National_Union_of_Freedom_Fighters": 11.81,
+            "Effects_of_Hurricane_Ivan_in_the_Lesser_Antilles_and_South_America": 6.36,
+            "Pitfour_estate": 4.54,
+            "Hurricane_Lenny": 1.82
         }
     }
 }
 
 {
-    "Word": "erotica",
+    "Word": "vcr",
     "Time Frequencies": {
-        "2020-01-01": 17.0,
-        "2021-01-01": 16.36,
-        "2022-01-01": 16.82,
-        "2023-01-01": 16.45,
-        "2024-01-01": 34.96,
-        "2024-11-01": 34.59
+        "2020-01-01": 4.0,
+        "2021-01-01": 7.73,
+        "2022-01-01": 9.45,
+        "2023-01-01": 8.36,
+        "2024-01-01": 8.24,
+        "2024-11-01": 8.18
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
-            "Harris's_List_of_Covent_Garden_Ladies": 2.0,
-            "Private_Case": 2.0,
-            "Western_Chalukya_literature_in_Kannada": 2.0,
-            "Ann_Bannon": 1.0,
-            "Cragside": 1.0
+            "Xx_(The_xx_album)": 3.0,
+            "32X": 1.0
         },
         "2021-01-01": {
-            "Harris's_List_of_Covent_Garden_Ladies": 1.92,
-            "Private_Case": 1.92,
-            "Western_Chalukya_literature_in_Kannada": 1.92,
-            "Ann_Bannon": 0.96,
-            "Cragside": 0.96
+            "Xx_(The_xx_album)": 2.9,
+            "Trading_Places": 1.93,
+            "32X": 0.97,
+            "Irritator": 0.97,
+            "Raiders_of_the_Lost_Ark": 0.97
         },
         "2022-01-01": {
-            "Harris's_List_of_Covent_Garden_Ladies": 1.87,
-            "Private_Case": 1.87,
-            "Western_Chalukya_literature_in_Kannada": 1.87,
-            "Ann_Bannon": 0.93,
-            "Cragside": 0.93
+            "Xx_(The_xx_album)": 2.83,
+            "Trading_Places": 1.89,
+            "32X": 0.94,
+            "IMac_G3": 0.94,
+            "Irritator": 0.94
         },
         "2023-01-01": {
-            "Harris's_List_of_Covent_Garden_Ladies": 1.83,
-            "Private_Case": 1.83,
-            "Western_Chalukya_literature_in_Kannada": 1.83,
-            "Ann_Bannon": 0.91,
-            "Cragside": 0.91
+            "Xx_(The_xx_album)": 2.79,
+            "Trading_Places": 1.86,
+            "32X": 0.93,
+            "Irritator": 0.93,
+            "Raiders_of_the_Lost_Ark": 0.93
         },
         "2024-01-01": {
-            "Private_Case": 17.93,
-            "Harris's_List_of_Covent_Garden_Ladies": 1.79,
-            "Jack_the_Ripper_Stalks_His_Victims": 1.79,
-            "Western_Chalukya_literature_in_Kannada": 1.79,
-            "Ann_Bannon": 0.9
+            "Xx_(The_xx_album)": 2.75,
+            "Trading_Places": 1.83,
+            "32X": 0.92,
+            "Irritator": 0.92,
+            "Raiders_of_the_Lost_Ark": 0.92
         },
         "2024-11-01": {
-            "Private_Case": 17.74,
-            "Harris's_List_of_Covent_Garden_Ladies": 1.77,
-            "Jack_the_Ripper_Stalks_His_Victims": 1.77,
-            "Western_Chalukya_literature_in_Kannada": 1.77,
-            "Ann_Bannon": 0.89
+            "Xx_(The_xx_album)": 2.73,
+            "Trading_Places": 1.82,
+            "32X": 0.91,
+            "Irritator": 0.91,
+            "Raiders_of_the_Lost_Ark": 0.91
         }
     }
 }
 
 {
-    "Word": "fw",
+    "Word": "gif",
     "Time Frequencies": {
-        "2020-01-01": 19.0,
-        "2021-01-01": 28.87,
-        "2022-01-01": 37.37,
-        "2023-01-01": 46.62,
-        "2024-01-01": 45.72,
-        "2024-11-01": 49.67
+        "2020-01-01": 4.0,
+        "2021-01-01": 4.83,
+        "2022-01-01": 5.67,
+        "2023-01-01": 7.43,
+        "2024-01-01": 8.24,
+        "2024-11-01": 8.18
     },
     "Top 5 Page Frequencies": {
         "2020-01-01": {
-            "Black_Friday_(1945)": 5.0,
-            "1920–21_Burnley_F.C._season": 2.0,
-            "1920–21_Cardiff_City_F.C._season": 1.0,
-            "1921–22_Cardiff_City_F.C._season": 1.0,
-            "1940_Mandatory_Palestine_v_Lebanon_football_match": 1.0
+            "1896_Summer_Olympics": 1.0,
+            "Edward_VIII": 1.0,
+            "Sonic_X-treme": 1.0,
+            "Wallis_Simpson": 1.0
         },
         "2021-01-01": {
-            "2020_Seattle_Sounders_FC_season": 9.62,
-            "Black_Friday_(1945)": 5.77,
-            "1920–21_Burnley_F.C._season": 1.92,
-            "1920–21_Cardiff_City_F.C._season": 0.96,
-            "1921–22_Cardiff_City_F.C._season": 0.96
+            "1896_Summer_Olympics": 0.97,
+            "Edward_VIII": 0.97,
+            "Sonic_X-treme": 0.97,
+            "TRAPPIST-1": 0.97,
+            "Wallis_Simpson": 0.97
         },
         "2022-01-01": {
-            "2020_Seattle_Sounders_FC_season": 9.34,
-            "Black_Friday_(1945)": 5.61,
-            "1920–21_Burnley_F.C._season": 1.87,
-            "1920–21_Cardiff_City_F.C._season": 0.93,
-            "1921–22_Cardiff_City_F.C._season": 0.93
+            "1896_Summer_Olympics": 0.94,
+            "Cai_Lun": 0.94,
+            "Edward_VIII": 0.94,
+            "No_(Meghan_Trainor_song)": 0.94,
+            "Sonic_X-treme": 0.94
         },
         "2023-01-01": {
-            "2020_Seattle_Sounders_FC_season": 9.14,
-            "Black_Friday_(1945)": 5.48,
-            "1920–21_Burnley_F.C._season": 1.83,
-            "1905–06_New_Brompton_F.C._season": 0.91,
-            "1920–21_Cardiff_City_F.C._season": 0.91
+            "1896_Summer_Olympics": 0.93,
+            "Cai_Lun": 0.93,
+            "Edward_VIII": 0.93,
+            "Katana_Zero": 0.93,
+            "No_(Meghan_Trainor_song)": 0.93
         },
         "2024-01-01": {
-            "Black_Friday_(1945)": 5.38,
-            "1920–21_Burnley_F.C._season": 1.79,
-            "1894–95_New_Brompton_F.C._season": 0.9,
-            "1905–06_New_Brompton_F.C._season": 0.9,
-            "1906–07_New_Brompton_F.C._season": 0.9
+            "1896_Summer_Olympics": 0.92,
+            "Cai_Lun": 0.92,
+            "Edward_VIII": 0.92,
+            "Katana_Zero": 0.92,
+            "No_(Meghan_Trainor_song)": 0.92
         },
         "2024-11-01": {
-            "Black_Friday_(1945)": 5.32,
-            "1920–21_Burnley_F.C._season": 1.77,
-            "1894–95_New_Brompton_F.C._season": 0.89,
-            "1905–06_New_Brompton_F.C._season": 0.89,
-            "1906–07_New_Brompton_F.C._season": 0.89
+            "1896_Summer_Olympics": 0.91,
+            "Cai_Lun": 0.91,
+            "Edward_VIII": 0.91,
+            "Katana_Zero": 0.91,
+            "No_(Meghan_Trainor_song)": 0.91
+        }
+    }
+}
+
+{
+    "Word": "squirt",
+    "Time Frequencies": {
+        "2020-01-01": 4.0,
+        "2021-01-01": 5.8,
+        "2022-01-01": 5.67,
+        "2023-01-01": 7.43,
+        "2024-01-01": 7.33,
+        "2024-11-01": 7.27
+    },
+    "Top 5 Page Frequencies": {
+        "2020-01-01": {
+            "Nike-X": 2.0,
+            "It's_That_Man_Again": 1.0,
+            "Stonewall_riots": 1.0
+        },
+        "2021-01-01": {
+            "It's_That_Man_Again": 1.93,
+            "Nike-X": 1.93,
+            "Scorpion": 1.93
+        },
+        "2022-01-01": {
+            "It's_That_Man_Again": 1.89,
+            "Nike-X": 1.89,
+            "Scorpion": 1.89
+        },
+        "2023-01-01": {
+            "It's_That_Man_Again": 1.86,
+            "Nike-X": 1.86,
+            "Scorpion": 1.86,
+            "Blue_whale": 0.93,
+            "Stonewall_riots": 0.93
+        },
+        "2024-01-01": {
+            "It's_That_Man_Again": 1.83,
+            "Nike-X": 1.83,
+            "Scorpion": 1.83,
+            "Blue_whale": 0.92,
+            "Stonewall_riots": 0.92
+        },
+        "2024-11-01": {
+            "It's_That_Man_Again": 1.82,
+            "Nike-X": 1.82,
+            "Scorpion": 1.82,
+            "Blue_whale": 0.91,
+            "Stonewall_riots": 0.91
         }
     }
 }
