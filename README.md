@@ -1,6 +1,6 @@
 .  
 ├── LLM_Impact  
-│   ├── Clean.py                    // Cleaning Wikipedia pages into plain text  
+│   ├── Clean.py                      // Cleaning Wikipedia pages into plain text  
 │   ├── Clean_First.py              // Extract the first part of a Wikipedia page and clean it into plain text  
 │   ├── Estimation_Diff.py          // Estimate LLM impact using different combinations of words based on different categories  
 │   ├── Estimation_Result           // LLM impact estimation results  
