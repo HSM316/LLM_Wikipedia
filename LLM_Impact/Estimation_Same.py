@@ -2,13 +2,15 @@ import json
 import pandas as pd
 import os
 
-categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "GA", "simple", "Featured"]
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
 kind = "First"
 years = ["2020-01-01", "2021-01-01", "2022-01-01", "2023-01-01", "2024-01-01", "2025-01-01"]
 
-
+# word combination used to estimate LLM impact
 words_file = "LLM_Impact/Estimation_Result/simple_First_eta/same/words.jsonl"
+# change rate after LLM Simulation
 r_values_file = "LLM_Impact/Word_Frequency/Simulation/f_simple_r_First.csv"
+# estimation result
 output_dir = f"LLM_Impact/Estimation_Result/simple_First_eta/same/{kind}/"
 
 def load_r_values(filepath):
@@ -33,8 +35,11 @@ def calculate_eta(I, r_dict, f_dict, years):
         numerator, denominator = 0.0, 0.0
         for word in I:
             if word in r_dict and word in f_dict:
+                # f_d represents the frequency of word in the current corpus
                 f_d = f_dict[word]["f_values"].get(year, 0.0)
+                # f_star represents the one if LLMs do not affect Wikipedia pages
                 f_star = f_dict[word]["f_star"] 
+                # r_i represents the frequency change rate
                 r_i = r_dict[word]
 
                 numerator += (f_d - f_star) * f_star * r_i
@@ -52,6 +57,7 @@ def main():
     r_dict = load_r_values(r_values_file) 
 
     for category in categories:
+        # the frequency of word in target corpus
         f_values_file = f"LLM_Impact/Word_Frequency/f_{kind}/f_{category}_{kind}.csv"
         output_file = f"{output_dir}{category}_eta_{kind}.jsonl"
         

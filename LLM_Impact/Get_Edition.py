@@ -12,10 +12,10 @@ headers = {
     'User-Agent': 'MyWikipediaScraper/1.0 (myemail@example.com)'
 }
 
-FAILED_TITLES_FILE = "Featured_failed.jsonl"
-REVIDS_CSV_FILE = "Featured_revids.csv"
-INPUT_JSONL_FILE = r'D:\WIKIPEDIA\Depth\Featured_titles.jsonl'
-OUTPUT_FOLDER = r"D:\Category\Featured\Featured_pages"
+FAILED_TITLES_FILE = "INPUT YOUR PATH TO FAILED TITLES"
+REVIDS_CSV_FILE = "INPUT YOUR PATH TO STORE REVID"
+INPUT_JSONL_FILE = 'INPUT YOUR PATH TO STORE TITLES'
+OUTPUT_FOLDER = "INPUT YOUR PATH TO STORE WIKIPEDIA PAGES"
 
 
 def fetch_url(url, params, max_retries=3):

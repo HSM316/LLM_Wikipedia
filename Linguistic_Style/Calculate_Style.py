@@ -193,9 +193,9 @@ def process_jsonl_file(jsonl_path, output_dir):
                 writer.writeheader()
                 writer.writerows(results)
 
-categories = ["Bio"]
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
 for category in categories:
     process_jsonl_file(
-        jsonl_path=f"D:/Dataset/{category}_First.jsonl",
-        output_dir=f"D:/Metrics/{category}/First"
+        jsonl_path=f"INPUT YOUR JSONL PATH",
+        output_dir=f"INPUT YOUR PATH"
     )

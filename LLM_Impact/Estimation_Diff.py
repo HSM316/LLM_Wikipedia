@@ -2,13 +2,14 @@ import json
 import pandas as pd
 import os
 
-categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "GA", "simple", "Featured"]
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
 
 kind = "First"
 
-
-r_values_file = r"D:\WIKIPEDIA\new_Impact\f_simple_r_Full.csv"
-output_dir = f"D:/WIKIPEDIA/new_Impact/simple_Full_eta/different/{kind}/" 
+# change rate after LLM Simulation
+r_values_file = "LLM_Impact/Word_Frequency/Simulation/f_simple_r_First.csv"
+# estimation result
+output_dir = f"LLM_Impact/Estimation_Result/simple_First_eta/different/{kind}/" 
 
 def load_r_values(filepath):
     df = pd.read_csv(filepath)
@@ -27,14 +28,16 @@ def load_f_values(filepath):
     return f_dict
 
 def calculate_eta(I, r_dict, f_dict, years):
-    effects = {}
     results = []
     for year in years:
         numerator, denominator = 0.0, 0.0
         for word in I:
             if word in r_dict and word in f_dict:
+                # f_d represents the frequency of word in the current corpus
                 f_d = f_dict[word]["f_values"].get(year, 0.0)
+                # f_star represents the one if LLMs do not affect Wikipedia pages
                 f_star = f_dict[word]["f_star"]
+                # r_i represents the frequency change rate
                 r_i = r_dict[word]
 
                 numerator += (f_d - f_star) * f_star * r_i
@@ -57,18 +60,16 @@ def main():
 
 
     for category in categories:
-        words_file = f"D:/WIKIPEDIA/new_Impact/simple_Full_eta/different/{kind}/words/{category}_{kind}_words.jsonl"
-
+        # # word combination used to estimate LLM impact, different categories have different words
+        words_file = f"LLM_Impact/Estimation_Result/simple_First_eta/different/{kind}/words/{category}_{kind}_words.jsonl"
+        # the frequency of word in target corpus
         f_values_file = f"D:/WIKIPEDIA/Impact/f_{kind}/f_{category}_{kind}.csv"
         output_file = f"{output_dir}{category}_eta_{kind}.jsonl"
-        
-
+    
         f_dict = load_f_values(f_values_file)
-
 
         if os.path.exists(output_file):
             os.remove(output_file)
-
 
         with open(words_file, 'r', encoding='utf-8') as file:
             for line in file:

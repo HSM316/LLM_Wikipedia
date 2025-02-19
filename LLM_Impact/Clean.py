@@ -5,8 +5,8 @@ from rich.progress import Progress
 
 END_SECTIONS = ["References", "See also", "Further reading", "External links", "Notes", "Footnotes"]
 
-input_dir = r'D:\Category\simple\simple_pages'
-output_dir = r'D:\Category\simple\simple_clean'
+input_dir = 'INPUT YOUR PATH'
+output_dir = 'INPUT YOUR PATH'
 
 def remove_tables(text):
     wikicode = mwparserfromhell.parse(text)
@@ -69,12 +69,9 @@ def process_file(file_path, folder_name):
         with open(file_path, 'r', encoding='ISO-8859-1') as file:
             text = file.read()
 
-
         text = text.encode('ISO-8859-1').decode('utf-8', errors='ignore')
 
-
         cleaned_text = clean_text_with_mwparser(text)
-
 
         output_page_folder = os.path.join(output_dir, folder_name)
         os.makedirs(output_page_folder, exist_ok=True)

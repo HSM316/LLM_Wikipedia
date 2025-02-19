@@ -80,6 +80,6 @@ def process_jsonl_file(jsonl_path, output_dir):
             writer.writeheader()
             writer.writerows(results)
             
-jsonl_path = r"D:\Metrics\LLM\wiki_style.jsonl"
-output_dir = "D:/Metrics/LLM"
+jsonl_path = "INPUT YOUR JSONL PATH"
+output_dir = "INPUT YOUR PATH"
 process_jsonl_file(jsonl_path, output_dir)

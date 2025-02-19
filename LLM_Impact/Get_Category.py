@@ -94,6 +94,6 @@ def scrape_multiple_categories(categories, depths):
         print(f"Titles saved to {output_file}")
 
 # Example usage
-categories = ["Sports"]  # Specify multiple categories
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
 scrape_depths = [5]  # Corresponding depths for each category
 scrape_multiple_categories(categories, scrape_depths)

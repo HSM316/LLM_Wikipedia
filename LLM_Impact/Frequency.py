@@ -134,6 +134,7 @@ def analyze_word_growth(root_dir, output_file, word_list_file, total_words_file,
     for word in word_frequencies:
         freq_2020 = word_frequencies[word].get("2020-01-01", 0)
         freq_2021 = word_frequencies[word].get("2021-01-01", 0)
+        # the way to estimate f_star
         f_star = (freq_2020 + freq_2021) / 2  
         word_frequencies[word]["f_star"] = round(f_star, 8)
 
@@ -163,12 +164,13 @@ def process_multiple_categories(categories, root_dir_template, output_dir_templa
         print(f"Processing category: {category}")
         analyze_word_growth(root_directory, output_file_path, word_list_file, total_words_file_path, process_revised, jsonl_file)
 
-categories = ['Featured']  
-root_dir_template = "D:/Category/{category}/{category}_Full"
-output_dir_template = "D:/WIKIPEDIA/Impact/f_Full/f_{category}_Full.csv"
-total_words_dir_template = "D:/WIKIPEDIA/Impact/total_words/Full/total_{category}_Full.csv"
-word_list_file = "D:/WIKIPEDIA/unigram_freq.csv"
+
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
+root_dir_template = "INPUT YOUR CORPUS PATH"
+output_dir_template = "LLM_Impact/Word_Frequency/f_Full/f_{category}_Full.csv"
+total_words_dir_template = "LLM_Impact/Word_Frequency/Total_Words/Full/total_{category}_Full.csv"
+word_list_file = "LLM_Impact/unigram_freq.csv"
 
 process_revised = False  
-jsonl_file = "D:\WIKIPEDIA\dataset\Featured_impact_titles.jsonl"
+jsonl_file = "None"
 process_multiple_categories(categories, root_dir_template, output_dir_template, word_list_file, total_words_dir_template, process_revised, jsonl_file)

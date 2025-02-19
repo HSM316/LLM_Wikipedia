@@ -75,14 +75,14 @@ def save_to_csv(data, csv_file, months):
             writer.writerow(row)
 
 
-categories = ["Phy", "Chem"]
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
 
 start_date = "20200101"
 end_date = "20250101"
 
 for category in categories:
-    jsonl_file = f'D:/WIKIPEDIA/Depth/add/{category}_titles.jsonl'  
-    csv_file = f'D:/WIKIPEDIA/Depth/{category}_pageviews.csv' 
+    jsonl_file = f'FILE THAT STORE TARGET TITLES'  
+    csv_file = f'LLM_Impact/Page_Views/{category}_pageviews.csv' 
 
     titles = read_titles_from_jsonl(jsonl_file)
 
