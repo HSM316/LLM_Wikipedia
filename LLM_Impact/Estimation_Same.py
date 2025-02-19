@@ -3,14 +3,13 @@ import pandas as pd
 import os
 
 categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "GA", "simple", "Featured"]
-
 kind = "First"
 years = ["2020-01-01", "2021-01-01", "2022-01-01", "2023-01-01", "2024-01-01", "2025-01-01"]
 
 
-words_file = r"D:\WIKIPEDIA\new_Impact\simple_First_eta\same\words_2.jsonl"
-r_values_file = r"D:\WIKIPEDIA\new_Impact\f_simple_r_First.csv"
-output_dir = f"D:/WIKIPEDIA/new_Impact/simple_First_eta/same/{kind}_2/"
+words_file = "LLM_Impact/Estimation_Result/simple_First_eta/same/words.jsonl"
+r_values_file = "LLM_Impact/Word_Frequency/Simulation/f_simple_r_First.csv"
+output_dir = f"LLM_Impact/Estimation_Result/simple_First_eta/same/{kind}/"
 
 def load_r_values(filepath):
     df = pd.read_csv(filepath)
@@ -53,7 +52,7 @@ def main():
     r_dict = load_r_values(r_values_file) 
 
     for category in categories:
-        f_values_file = f"D:/WIKIPEDIA/Impact/f_{kind}/f_{category}_{kind}.csv"
+        f_values_file = f"LLM_Impact/Word_Frequency/f_{kind}/f_{category}_{kind}.csv"
         output_file = f"{output_dir}{category}_eta_{kind}.jsonl"
         
         f_dict = load_f_values(f_values_file)
