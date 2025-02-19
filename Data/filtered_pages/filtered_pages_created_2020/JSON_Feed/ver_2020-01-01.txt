@@ -1,3 +1,0 @@
-JSON Feed is a file format for Web syndication in JSON instead of XML as used by RSS and Atom.
-
-A range of software libraries and web frameworks support content syndication via JSON Feed. Supporting clients include NetNewsWire and Reeder.
