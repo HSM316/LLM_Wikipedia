@@ -1,0 +1,6 @@
+Year,Direct Ask,Ask with knowledge base,Ask with knowledge base(GPT revised),Ask with knowledge base(Gemini revised),Ask with full content,Ask with full content(GPT content),Ask with full content(Gemini content),Quesion number
+2020,67.53%,82.90%,82.54%,76.29%,93.75%,91.45%,85.70%,348
+2021,65.01%,81.95%,82.40%,75.22%,94.21%,93.87%,83.83%,453
+2022,73.98%,86.20%,85.94%,79.07%,94.85%,94.08%,84.80%,393
+2023,70.42%,82.63%,83.39%,78.64%,92.72%,92.55%,85.27%,426
+2024,62.50%,80.00%,75.83%,75.94%,93.65%,93.33%,85.00%,240
