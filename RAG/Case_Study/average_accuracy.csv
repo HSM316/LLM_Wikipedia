@@ -1,0 +1,5 @@
+Questioning,Direct Ask,Ask with knowledge base,Ask with knowledge base(GPT revised),Ask with knowledge base(Gemini revised),Ask with full content,Ask with full content(GPT content),Ask with full content(Gemini content)
+Qustion GPT-4o-mini with GPT Questions,0.74346,0.86312,0.8668799999999999,0.8175999999999999,0.95898,0.95548,0.8805
+Qustion GPT-4o-mini with Gemini Questions,0.6727400000000001,0.82528,0.81816,0.7672399999999999,0.9355800000000001,0.92852,0.8320400000000001
+Qustion GPT-3.5 with GPT Questions,0.6611,0.7849199999999998,0.7801400000000001,0.7498800000000001,0.8820399999999999,0.8892800000000001,0.8576600000000001
+Qustion GPT-3.5 with Gemini Questions,0.59866,0.73078,0.7236,0.67758,0.79342,0.8019399999999999,0.76698
