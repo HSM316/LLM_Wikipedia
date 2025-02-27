@@ -33,8 +33,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 ## Page View
 
-<img src="figures/pageviews.png" style="width: 80%; height: auto;">
-<p align="center">
+<div align="center">
+    <img src="figures/pageviews.png" style="width: 60%; height: auto;">
+</div>
 
 <div>
   <p><strong><em>Finding 1: </em></strong>In the second half of 2024, there was a slight decline in page views across some scientific categories, and its connection to the use of LLMs requires further investigation.</p>
@@ -49,9 +50,10 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 </pre>
 
 ## Word Frequency
+<div align="center">
+<img src="figures/Impact.png">
+</div>
 
-<img src="figures/Impact_First.png" style="display: inline-block; width: 40%; margin-right: 5%;">
-<img src="figures/Impact_Full.png" style="display: inline-block; width: 40%;">
 
 <div>
   <p><strong><em>Finding 2: </em></strong>While the estimation results vary, the influence of LLMs on Wikipedia is likely to become more significant over time. In some categories, the impact has exceeded 2%.</p>
@@ -87,8 +89,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 Beyond word frequency, we investigate the current and future impact of LLMs on Wikipedia from more linguistic perspectives. In this section, we examine the evolutions in Wikipedia content at **_Word_**, **_Sentence_**, and **_Paragraph_** levels, by comparing the texts before and after LLM processing under the same standards.
 
+<div align="center">
 <img src="figures/Linguistic.png">
-<p align="center">
+</div>
 
 <pre>
 ├── Calculate_Readability.py     // Get Page Views  
@@ -113,12 +116,13 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 
 
 ## RAG
-
+<div align="center">
 <img src="figures/RAG.png">
-<p align="center">
+</div>
 
+<div align="center">
 <img src="figures/Heatmap.png">
-<p align="center">
+</div>
 
 <div>
   <p><strong><em>Finding 5: </em></strong>The results suggest that LLM-generated content performs less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.</p>
