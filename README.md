@@ -111,6 +111,77 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
   <p><strong><em>Finding 4: </em></strong>The impact of LLMs on the benchmark could not only inflate the translation scores across different languages but also distort the comparison of translation abilities between models, making it fail to truly reflect their translation effectiveness.</p>
 </div>
 
+<pre>
+For the code
+├── benchmark_build
+    ├── basebench.py             // Extract information from csv as benchmark (with repeated information)
+    ├── createbasebench.py       // Extract information from csv as benchmark
+    ├── createbench2.py          // Select the desired language
+    ├── infbench.py              // Use GPT to construct llm_influence_benchmark
+├── translate_and_evaluation 
+    ├── facebook_bleu
+        ├── nllb.py              // Translate
+        ├── evalzh.py            // Evaluate translation results for each sentence (intermediate result)
+        ... ...(evalxx.py)       // Same as above
+        ├── eval_bleu.py         // Evaluate the overall translation results
+    ├── facebook_chrf
+        ... ...
+    ├── facebook_comet
+        ... ...
+    ├── googlet5
+        ├── t5-small.py          // Translate
+        ... ...
+    ├── Helsinki-NLP_bleu
+        ├── opus-mt-en-zh.py     // Translate
+        ... ...(opus-mt-en-xx.py)// Same as above
+        ... ...
+    ├── Helsinki-NLP_chrf
+        ... ...
+    ├── Helsinki-NLP_comet
+        ... ...
+</pre>
+
+<pre>
+For the data
+├── datasets
+    ├── origin_benchmark.json                   // Origin Benchmark   
+    ├── gpt_llm_influenced_benchmark.json       // GPT Influenced Benchmark
+    ├── error_sentences.txt                     // Error Sentence when translating
+    ├── null_sentences.txt                      // Null result when translating
+├── Helsinki-NLP 
+    ├── translate_result
+        ├── zh_translated_output.json           // Translate result
+        ├── ... ...(xx_translated_output.json)  // Same as above
+    ├── bleu_scores   
+        ├── bleu_scores_zh.csv                  // Intermediate result
+        ├── ... ...(bleu_scores_xx.csv)         // Same as above
+    ├── chrf_scores
+        ├── ... ...
+    ├── comet_scores
+        ├── ... ...
+    ├── Helsinki-NLP_score.csv                  // Final analyze result
+├── Facebook-NLLB
+    ├── translate_result
+        ├── ... ...
+    ├── bleu_scores   
+        ├── ... ...
+    ├── chrf_scores
+        ├── ... ...
+    ├── comet_scores
+        ├── ... ...
+    ├── Facebook-nllb_score.csv                 // Final analyze result
+├── Google-t5
+    ├── translate_result
+        ├── ... ...
+    ├── bleu_scores   
+        ├── ... ...
+    ├── chrf_scores
+        ├── ... ...
+    ├── comet_scores
+        ├── ... ...
+    ├── Google-t5_score.csv                    // Final analyze result
+</pre>
+
 
 ## RAG
 
@@ -123,6 +194,67 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 <div>
   <p><strong><em>Finding 5: </em></strong>The results suggest that LLM-generated content performs less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.</p>
 </div>
+
+<pre>
+For the code
+├── ask1.py             // Direct ask
+├── ask2.py             // Direct ask (One-time)
+├── ask3.py             // Ask with Konwledge Base
+├── ask4.py             // Ask with Full Content
+├── getm.py             // Merge questions and sources
+├── getqa.py            // Get questions and answers
+├── getrate.py          // Calculate the accuracy
+├── getraten.py         // Calculate the accuracy (Null as 0.25)
+├── kb.py               // Build Konwledge Base
+├── GPT_QGen.py         // Generate questions (GPT)
+├── Gemini_QGen.py      // Generate questions (Gemini)
+</pre>
+
+<pre>
+For the data
+├── 4omini(gpt_questions)
+    ├── 2020
+        ├── questions2020.json                       // The Questions of 2020
+        ├── answers2020.json                         // Answers to 2020 Questions
+        ├── search_results_2020.json                 // The Konwledge Base of 2020
+        ├── search_results_GPT_2020.json             // The Konwledge Base of 2020 (GPT revised articles)
+        ├── search_results_Gemini_2020.json          // The Konwledge Base of 2020 (Gemini revised articles)
+        ├── merged_2020.json                         // Merge results from questions and sources
+        ├── merged_GPT_2020.json                     // Merge results from questions and sources (GPT revised articles)
+        ├── merged_Gemini_2020.json                  // Merge results from questions and sources (Gemini revised articles)
+        ├── questions2020_gptoutput.txt              // Results of direct questioning (raw output)
+        ├── questions2020_gptoutput.json             // Results of direct questioning
+        ├── search_results_2020_gptoutput.txt        // Results using the knowledge base (raw output)
+        ├── search_results_2020_gptoutput.json       // Results using the knowledge base
+        ├── search_results_GPT_2020_gptoutput.txt    // Results using the knowledge base (GPT revised articles) (raw output)
+        ├── search_results_GPT_2020_gptoutput.json   // Results using the knowledge base (GPT revised articles)
+        ├── search_results_Gemini_2020_gptoutput.txt // Results using the knowledge base (Gemini revised articles) (raw output)
+        ├── search_results_Gemini_2020_gptoutput.json// Results using the knowledge base (Gemini revised articles)
+        ├── merged_results_2020_gptoutput.txt        // Results using the full content (raw output)
+        ├── merged_results_2020_gptoutput.json       // Results using the full content
+        ├── merged_results_GPT_2020_gptoutput.txt    // Results using the full content (GPT revised articles) (raw output)
+        ├── merged_results_GPT_2020_gptoutput.json   // Results using the full content (GPT revised articles)
+        ├── merged_results_Gemini_2020_gptoutput.txt // Results using the full content (Gemini revised articles) (raw output)
+        ├── merged_results_Gemini_2020_gptoutput.json// Results using the full content (Gemini revised articles)
+    ├── 2021
+        ├── ... ...
+    ├── 2022
+        ├── ... ...
+    ├── 2023
+        ├── ... ...
+    ├── 2024
+        ├── ... ...
+    ├── rate.csv                                      // Rate
+    ├── raten.csv                                     // Rate (Null as 0.25)
+    ├── table.csv                                     // Table for rate
+    ├── tablen.csv                                    // Table for rate (Null as 0.25)
+├── 4omini(gemini_questions) 
+    ├── ... ...
+├── 3.5(gpt_questions)
+    ├── ... ...
+├── 3.5(gemini_questions)
+    ├── ... ...
+</pre>
 
 ## Citation
 
