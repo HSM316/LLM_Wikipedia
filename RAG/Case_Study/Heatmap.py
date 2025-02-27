@@ -9,6 +9,9 @@ def load_and_extract_data(file_path):
     # Extract the 'Questioning' column as row labels
     questioning = df['Questioning'].values
     
+    # Process the 'Questioning' column to split Q and A into two lines
+    questioning = [q.replace("A:", "\nA:") for q in questioning]
+    
     # Extract the percentage columns and convert to float
     data = df.iloc[:, 1:].values * 100  # Convert to percentage if needed
     
@@ -36,10 +39,13 @@ plt.xticks(np.arange(data.shape[1]), [
     "Full (Original)", 
     "Full (GPT)", 
     "Full (Gemini)"
-], fontsize=17, rotation = 45)
+], fontsize=17, rotation=45, ha='right')  # Align labels with the right side
+
+# Adjust the padding to shift labels slightly to the left
+plt.gca().tick_params(axis='x')  # You can adjust this value to move it left or right
 
 plt.yticks(np.arange(len(questioning)), questioning, fontsize=17)
-
+plt.gca().tick_params(axis='y', pad=13)
 # Title for the plot
 plt.title(custom_title, fontsize=20, pad=17)
 
