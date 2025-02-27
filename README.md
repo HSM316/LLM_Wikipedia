@@ -33,7 +33,7 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 ## Page View
 
-<img src="figures/pageviews.png">
+<img src="figures/pageviews.png" style="width: 80%; height: auto;">
 <p align="center">
 
 <div>
@@ -50,8 +50,8 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 ## Word Frequency
 
-<img src="figures/Impact_First.png" style="display: inline-block; width: 45%; margin-right: 5%;">
-<img src="figures/Impact_Full.png" style="display: inline-block; width: 45%;">
+<img src="figures/Impact_First.png" style="display: inline-block; width: 40%; margin-right: 5%;">
+<img src="figures/Impact_Full.png" style="display: inline-block; width: 40%;">
 
 <div>
   <p><strong><em>Finding 2: </em></strong>While the estimation results vary, the influence of LLMs on Wikipedia is likely to become more significant over time. In some categories, the impact has exceeded 2%.</p>
