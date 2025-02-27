@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/github/commit-activity/m/HSM316/LLM_Wikipedia?style=flat-square&color=5D6D7E" alt="GitHub commit activity" />
 <img src="https://img.shields.io/github/languages/top/HSM316/LLM_Wikipedia?style=flat-square&color=5D6D7E" alt="GitHub top language" />
 
-<img src="figures/Pipeline.png">
+<img src="figures/pipeline.png" style="width: 60%; height: auto;">
 <p align="center">
 
 </p>
@@ -33,6 +33,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 ## Page View
 
+<img src="figures/pageviews.png">
+<p align="center">
+
 <div>
   <p><strong><em>Finding 1: </em></strong>In the second half of 2024, there was a slight decline in page views across some scientific categories, and its connection to the use of LLMs requires further investigation.</p>
 </div>
@@ -46,6 +49,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 </pre>
 
 ## Word Frequency
+
+<img src="figures/Impact_First.png" style="display: inline-block; width: 45%; margin-right: 5%;">
+<img src="figures/Impact_Full.png" style="display: inline-block; width: 45%;">
 
 <div>
   <p><strong><em>Finding 2: </em></strong>While the estimation results vary, the influence of LLMs on Wikipedia is likely to become more significant over time. In some categories, the impact has exceeded 2%.</p>
@@ -79,6 +85,22 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 ## Linguistic Style
 
+Beyond word frequency, we investigate the current and future impact of LLMs on Wikipedia from more linguistic perspectives. In this section, we examine the evolutions in Wikipedia content at **_Word_**, **_Sentence_**, and **_Paragraph_** levels, by comparing the texts before and after LLM processing under the same standards.
+
+<img src="figures/Linguistic.png">
+<p align="center">
+
+<pre>
+├── Calculate_Readability.py     // Get Page Views  
+├── Calculate_Style.py           // Monthly page view data for the Art category from January 2020 to January 2025.
+└── Metrics
+    ├── First                    // Result of the first section of Wikipedia pages
+        ├── R_Art_First.csv      // Paragraph level metrics for Art category
+        ├── S_Art_First.csv      // Word and Sentence level metrics for Art category
+        ... ...
+    └── Full
+</pre>
+
 <div>
   <p><strong><em>Finding 3: </em></strong>The trends in several linguistic metrics of these Wikipedia pages do indeed show a closer step to the characteristics of LLM outputs, although this is merely a correlation and does not necessarily imply causality.</p>
 </div>
@@ -93,6 +115,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 ## RAG
 
 <img src="figures/RAG.png">
+<p align="center">
+
+<img src="figures/Heatmap.png">
 <p align="center">
 
 <div>
