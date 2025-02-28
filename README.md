@@ -18,11 +18,21 @@
 - [Word Frequency](#words-frequency)
 - [Linguistic Style](#linguistic-style)
 - [Machine Translation](#machine-translation)
+  - [Code](#code)
+  - [Data](#data)
 - [RAG](#rag)
+  - [Code](#code)
+  - [Data](#data)
 - [Citation](#citation)
 
 ## Data Collection
 We collect articles from the following categories: *Art*, *Biology*, *Computer Science (CS)*, *Chemistry*, *Mathematics*, *Philosophy*, *Physics*, *Sports*. Then we scrape the Wikipedia page versions from 2020 to 2025 (more accurately, the version on January 1 of each year).
+
+| Category      | Art    | Bio    | Chem   | CS     | Math   | Philo  | Phy    | Sports |
+|---------------|--------|--------|--------|--------|--------|--------|--------|--------|
+| Crawl Depth   | 4      | 4      | 5      | 5      | 5      | 5      | 5      | 4      |
+| Number of Pages | 57,028 | 44,617 | 53,282 | 59,097 | 47,004 | 33,596 | 40,986 | 53,900 |
+
 
 <pre>
 ├── Get_Category.py             // Get the title of a Wikipedia page for a given category  
@@ -37,9 +47,8 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
     <img src="figures/pageviews.png" style="width: 60%; height: auto;">
 </div>
 
-<div>
-  <p><strong><em>Finding 1: </em></strong>In the second half of 2024, there was a slight decline in page views across some scientific categories, and its connection to the use of LLMs requires further investigation.</p>
-</div>
+> [!IMPORTANT]
+> In the second half of 2024, there was a slight decline in page views across some scientific categories, and its connection to the use of LLMs requires further investigation.
 
 
 <pre>
@@ -55,9 +64,9 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 </div>
 
 
-<div>
-  <p><strong><em>Finding 2: </em></strong>While the estimation results vary, the influence of LLMs on Wikipedia is likely to become more significant over time. In some categories, the impact has exceeded 2%.</p>
-</div>
+> [!IMPORTANT]
+> While the estimation results vary, the influence of LLMs on Wikipedia is likely to become more significant over time. In some categories, the impact has exceeded 2%.
+
 
 
 <pre>
@@ -93,6 +102,9 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 <img src="figures/Linguistic.png">
 </div>
 
+> [!IMPORTANT]
+> The trends in several linguistic metrics of these Wikipedia pages do indeed show a closer step to the characteristics of LLM outputs, although this is merely a correlation and does not necessarily imply causality.
+
 <pre>
 ├── Calculate_Readability.py     // Get Page Views  
 ├── Calculate_Style.py           // Monthly page view data for the Art category from January 2020 to January 2025.
@@ -104,29 +116,32 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
     └── Full
 </pre>
 
-<div>
-  <p><strong><em>Finding 3: </em></strong>The trends in several linguistic metrics of these Wikipedia pages do indeed show a closer step to the characteristics of LLM outputs, although this is merely a correlation and does not necessarily imply causality.</p>
-</div>
+
+
 
 ## Machine Translation
 
-<div>
-  <p><strong><em>Finding 4: </em></strong>The impact of LLMs on the benchmark could not only inflate the translation scores across different languages but also distort the comparison of translation abilities between models, making it fail to truly reflect their translation effectiveness.</p>
+> [!IMPORTANT]
+> The impact of LLMs on the benchmark could not only inflate the translation scores across different languages but also distort the comparison of translation abilities between models, making it fail to truly reflect their translation effectiveness.
+
+<div align="center">
+<img src="figures/ML.png">
 </div>
 
+### Code
+
 <pre>
-For the code
 ├── benchmark_build
     ├── basebench.py             // Extract information from csv as benchmark (with repeated information)
     ├── createbasebench.py       // Extract information from csv as benchmark
     ├── createbench2.py          // Select the desired language
-    ├── infbench.py              // Use GPT to construct llm_influence_benchmark
-├── translate_and_evaluation 
+    └── infbench.py              // Use GPT to construct llm_influence_benchmark
+└── translate_and_evaluation 
     ├── facebook_bleu
         ├── nllb.py              // Translate
         ├── evalzh.py            // Evaluate translation results for each sentence (intermediate result)
         ... ...(evalxx.py)       // Same as above
-        ├── eval_bleu.py         // Evaluate the overall translation results
+        └── eval_bleu.py         // Evaluate the overall translation results
     ├── facebook_chrf
         ... ...
     ├── facebook_comet
@@ -140,49 +155,49 @@ For the code
         ... ...
     ├── Helsinki-NLP_chrf
         ... ...
-    ├── Helsinki-NLP_comet
+    └── Helsinki-NLP_comet
         ... ...
 </pre>
 
+### Data
 <pre>
-For the data
 ├── datasets
     ├── origin_benchmark.json                   // Origin Benchmark   
     ├── gpt_llm_influenced_benchmark.json       // GPT Influenced Benchmark
     ├── error_sentences.txt                     // Error Sentence when translating
-    ├── null_sentences.txt                      // Null result when translating
+    └── null_sentences.txt                      // Null result when translating
 ├── Helsinki-NLP 
     ├── translate_result
         ├── zh_translated_output.json           // Translate result
-        ├── ... ...(xx_translated_output.json)  // Same as above
+        └── ... ...(xx_translated_output.json)  // Same as above
     ├── bleu_scores   
         ├── bleu_scores_zh.csv                  // Intermediate result
-        ├── ... ...(bleu_scores_xx.csv)         // Same as above
+        └── ... ...(bleu_scores_xx.csv)         // Same as above
     ├── chrf_scores
-        ├── ... ...
+        └── ... ...
     ├── comet_scores
-        ├── ... ...
-    ├── Helsinki-NLP_score.csv                  // Final analyze result
+        └── ... ...
+    └── Helsinki-NLP_score.csv                  // Final analyze result
 ├── Facebook-NLLB
     ├── translate_result
-        ├── ... ...
+        └──... ...
     ├── bleu_scores   
-        ├── ... ...
+        └── ... ...
     ├── chrf_scores
-        ├── ... ...
+        └── ... ...
     ├── comet_scores
-        ├── ... ...
-    ├── Facebook-nllb_score.csv                 // Final analyze result
-├── Google-t5
+        └── ... ...
+    └── Facebook-nllb_score.csv                 // Final analyze result
+└── Google-t5
     ├── translate_result
-        ├── ... ...
+        └── ... ...
     ├── bleu_scores   
-        ├── ... ...
+        └── ... ...
     ├── chrf_scores
-        ├── ... ...
+        └── ... ...
     ├── comet_scores
-        ├── ... ...
-    ├── Google-t5_score.csv                    // Final analyze result
+        └── ... ...
+    └── Google-t5_score.csv                    // Final analyze result
 </pre>
 
 
@@ -195,12 +210,11 @@ For the data
 <img src="figures/Heatmap.png">
 </div>
 
-<div>
-  <p><strong><em>Finding 5: </em></strong>The results suggest that LLM-generated content performs less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.</p>
-</div>
+> [!IMPORTANT]
+> The results suggest that LLM-generated content performs less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.
 
+### Code
 <pre>
-For the code
 ├── ask1.py             // Direct ask
 ├── ask2.py             // Direct ask (One-time)
 ├── ask3.py             // Ask with Konwledge Base
@@ -211,11 +225,11 @@ For the code
 ├── getraten.py         // Calculate the accuracy (Null as 0.25)
 ├── kb.py               // Build Konwledge Base
 ├── GPT_QGen.py         // Generate questions (GPT)
-├── Gemini_QGen.py      // Generate questions (Gemini)
+└── Gemini_QGen.py      // Generate questions (Gemini)
 </pre>
 
+### Data
 <pre>
-For the data
 ├── 4omini(gpt_questions)
     ├── 2020
         ├── questions2020.json                       // The Questions of 2020
@@ -239,25 +253,25 @@ For the data
         ├── merged_results_GPT_2020_gptoutput.txt    // Results using the full content (GPT revised articles) (raw output)
         ├── merged_results_GPT_2020_gptoutput.json   // Results using the full content (GPT revised articles)
         ├── merged_results_Gemini_2020_gptoutput.txt // Results using the full content (Gemini revised articles) (raw output)
-        ├── merged_results_Gemini_2020_gptoutput.json// Results using the full content (Gemini revised articles)
+        └── merged_results_Gemini_2020_gptoutput.json// Results using the full content (Gemini revised articles)
     ├── 2021
-        ├── ... ...
+        └── ... ...
     ├── 2022
-        ├── ... ...
+        └── ... ...
     ├── 2023
-        ├── ... ...
+        └── ... ...
     ├── 2024
-        ├── ... ...
+        └── ... ...
     ├── rate.csv                                      // Rate
     ├── raten.csv                                     // Rate (Null as 0.25)
     ├── table.csv                                     // Table for rate
-    ├── tablen.csv                                    // Table for rate (Null as 0.25)
+    └── tablen.csv                                    // Table for rate (Null as 0.25)
 ├── 4omini(gemini_questions) 
-    ├── ... ...
+    └── ... ...
 ├── 3.5(gpt_questions)
-    ├── ... ...
-├── 3.5(gemini_questions)
-    ├── ... ...
+    └── ... ...
+└── 3.5(gemini_questions)
+    └── ... ...
 </pre>
 
 ## Citation
