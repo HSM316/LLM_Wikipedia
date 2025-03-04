@@ -103,7 +103,7 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 </div>
 
 > [!IMPORTANT]
-> The trends in several linguistic metrics of these Wikipedia pages do indeed show a closer step to the characteristics of LLM outputs, although this is merely a correlation and does not necessarily imply causality.
+> The trends in several linguistic metrics of these Wikipedia pages show a slight move towards the characteristics of LLM outputs, although some remain unchanged or even move in the opposite direction.
 
 <pre>
 ├── Calculate_Readability.py     // Get Page Views  
@@ -211,7 +211,7 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 </div>
 
 > [!IMPORTANT]
-> The results suggest that LLM-generated content performs less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.
+> The results suggest that LLM-processed content could perform less effectively in RAG systems compared to human-created texts. If such content has impacted high-quality communities like Wikipedia, it raises concerns about the potential decline in information quality in knowledge bases.
 
 ### Code
 <pre>
