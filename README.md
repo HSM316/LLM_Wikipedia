@@ -105,6 +105,11 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 > [!IMPORTANT]
 > The trends of changes in Wikipedia articles are largely consistent with the preferences of LLMs under most metrics.
 
+<div align="center">
+<img src="figures/Metrics.png" style="width: 50%; height: auto;">
+</div>
+
+
 <pre>
 ├── Calculate_Readability.py     // Get Page Views  
 ├── Calculate_Style.py           // Monthly page view data for the Art category from January 2020 to January 2025.
