@@ -103,7 +103,7 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 </div>
 
 > [!IMPORTANT]
-> The trends in several linguistic metrics of these Wikipedia pages show a slight move towards the characteristics of LLM outputs, although some remain unchanged or even move in the opposite direction.
+> The trends of changes in Wikipedia articles are largely consistent with the preferences of LLMs under most metrics.
 
 <pre>
 ├── Calculate_Readability.py     // Get Page Views  
