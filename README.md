@@ -53,9 +53,10 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 
 <pre>
 ├── Get_Page_Views.py           // Get Page Views  
-├── Art_pageviews.csv           // Monthly page view data for the Art category from January 2020 to January 2025.
-... ...
-└── Sports_pageviews.csv        // Monthly page view data for the Sports category from January 2020 to January 2025.
+├── Standard.py                 // Normalize data based on a 30-day month
+├── IHS.py                      // Compute average Page Views using either Mean or IHS transformation.
+├── pageviews_mean.csv          
+└── pageviews_ihs.csv           
 </pre>
 
 ## Word Frequency
@@ -111,8 +112,8 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 
 
 <pre>
-├── Calculate_Readability.py     // Get Page Views  
-├── Calculate_Style.py           // Monthly page view data for the Art category from January 2020 to January 2025.
+├── Calculate_Readability.py     // Get Paragraph Metrics
+├── Calculate_Style.py           // Get Word and Sentence Metrics
 └── Metrics
     ├── First                    // Result of the first section of Wikipedia pages
         ├── R_Art_First.csv      // Paragraph level metrics for Art category
