@@ -281,4 +281,14 @@ Beyond word frequency, we investigate the current and future impact of LLMs on W
 </pre>
 
 ## Citation
-
+<pre>
+@misc{huang2025wikipediaerallmsevolution,
+      title={Wikipedia in the Era of LLMs: Evolution and Risks}, 
+      author={Siming Huang and Yuliang Xu and Mingmeng Geng and Yao Wan and Dongping Chen},
+      year={2025},
+      eprint={2503.02879},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2503.02879}, 
+}
+</pre>
