@@ -22,7 +22,7 @@ def process_data(question, content):
     try:
         prompt = (
             f"Use context to answer user questions. "
-            f"quesion: {question}"
+            f"question: {question}"
             f"Reference context: {content}. "
             f"Only need to give the correct option without explanation. Don't miss ')' or option!! "
             f"If there is no answer in the content, just return None. Don't give a string!!"

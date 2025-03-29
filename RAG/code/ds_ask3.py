@@ -1,11 +1,13 @@
 import json
 import os
 import re
-from openai import OpenAI  # 引入 DeepSeek 客户端库
+from tqdm import tqdm
+from openai import OpenAI
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # 初始化 DeepSeek 客户端（请替换为你的真实 API 密钥）
 client = OpenAI(
-    api_key="sk-16c010f6026d4fc390d16d07bc0d767f",
+    api_key="",
     base_url="https://api.deepseek.com"
 )
 
@@ -31,10 +33,10 @@ def extract_answers_from_txt(txt_file_path):
 def generate_answer(question, topkans):
     try:
         prompt = (
-            f"Use the context below to answer the user's multiple-choice question.\n\n"
-            f"Question: {question}\n\n"
-            f"Reference Context:\n{topkans}\n\n"
-            f"Only respond with the correct option letter (e.g., A, B, C, or D). Do not explain."
+            f"Use context to answer user questions. "
+            f"Question: {question}\n"
+            f"Reference context: {topkans}\n"
+            f"Only need to give the correct option without explanation."
         )
         response = client.chat.completions.create(
             model="deepseek-chat",
@@ -52,7 +54,7 @@ def process_search_results(input_file):
     output_file = f"{os.path.splitext(input_file)[0]}_skoutput.txt"
 
     with open(output_file, 'w', encoding='utf-8') as out_f:
-        for idx, result in enumerate(search_results, start=1):
+        for idx, result in enumerate(tqdm(search_results, desc=f"Processing {os.path.basename(input_file)}"), start=1):
             question = result["question"]
             top_3_answers = result["top_3_answers"]
             op = generate_answer(question, top_3_answers)
@@ -61,4 +63,21 @@ def process_search_results(input_file):
     extract_answers_from_txt(output_file)
 
 if __name__ == "__main__":
-    process_search_results("rebuttal/LLM_Wikipedia/RAG/ds(gemini_questions)/2020/search_results_2020.json")
+    input_files = []
+    for year in range(2020, 2025):
+        file_path = f"rebuttal/LLM_Wikipedia/RAG/ds(gemini_questions)/{year}/search_results_{year}.json"
+        if os.path.exists(file_path):
+            input_files.append(file_path)
+        else:
+            print(f"[Warning] File not found: {file_path}")
+
+    # 使用线程池并发处理每一个 input_file
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {executor.submit(process_search_results, file): file for file in input_files}
+        for future in as_completed(futures):
+            file = futures[future]
+            try:
+                future.result()
+                print(f"[Done] Finished processing: {file}")
+            except Exception as exc:
+                print(f"[Error] Failed to process {file}: {exc}")
