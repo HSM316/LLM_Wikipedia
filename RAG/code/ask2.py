@@ -2,7 +2,7 @@ import json
 import os
 import re
 import openai
-client = openai.OpenAI(api_key="client = openai.OpenAI(api_key="<input_your_token>") ")
+client = openai.OpenAI(api_key="client = openai.OpenAI(api_key="<input_your_token>") ") # type: ignore
 def extract_answers_from_txt(txt_file_path):
     with open(txt_file_path, 'r', encoding='utf-8') as file:
         lines = file.readlines()
