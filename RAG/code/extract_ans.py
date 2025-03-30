@@ -1,30 +1,38 @@
-import json
+import os
 import re
+import json
+from glob import glob
 
-# 读取 txt 文件内容
-with open("rebuttal/LLM_Wikipedia/RAG/ds(gemini_questions)/2020/search_results_Gemini_2020_skoutput.txt", "r", encoding="utf-8") as f:
-    text = f.read()
+# q类型和年份
+q_list = ['gpt', 'gemini']
+years = [str(y) for y in range(2020, 2025)]
 
-# 正则表达式：匹配 answer<number>: 后跟内容（支持跨多行）
+# 正则匹配 answer<number>: 的答案内容（支持多行）
 pattern = re.compile(r"answer(\d+):\s*(.*?)(?=\nanswer\d+:|\Z)", re.DOTALL)
 
-# 提取答案
-answers = {}
-for match in pattern.finditer(text):
-    num = match.group(1)
-    raw_answer = match.group(2).strip()
-    
-    # 查找是否有 A)/B)/C)/D) 开头
-    option_match = re.match(r"([A-D])\)", raw_answer)
-    if option_match:
-        answer_letter = option_match.group(1)
-    else:
-        answer_letter = None  # 没有选项时设置为 null
+for q in q_list:
+    for year in years:
+        folder_path = f"rebuttal/LLM_Wikipedia/RAG/ds({q}_questions)/{year}"
+        txt_files = glob(os.path.join(folder_path, "*skoutput.txt"))
 
-    answers[f"answer{num}"] = answer_letter
+        for txt_file in txt_files:
+            with open(txt_file, "r", encoding="utf-8") as f:
+                text = f.read()
 
-# 写入 JSON 文件
-with open("answers.json", "w", encoding="utf-8") as f:
-    json.dump(answers, f, indent=2, ensure_ascii=False)
+            answers = {}
+            for match in pattern.finditer(text):
+                num = match.group(1)
+                raw_answer = match.group(2).strip()
 
-print("已保存为 answers.json")
+                # 判断是否以 A)/B)/C)/D) 开头
+                option_match = re.match(r"([A-D])\)", raw_answer)
+                answer_letter = option_match.group(1) if option_match else None
+
+                answers[f"answer{num}"] = answer_letter
+
+            # 保存为 JSON 文件（同名，后缀变为 .json）
+            json_path = txt_file.replace(".txt", ".json")
+            with open(json_path, "w", encoding="utf-8") as f:
+                json.dump(answers, f, indent=2, ensure_ascii=False)
+
+            print(f"处理文件: {txt_file}，提取答案数量: {len(answers)}")
