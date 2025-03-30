@@ -65,7 +65,7 @@ def process_search_results(input_file):
 if __name__ == "__main__":
     input_files = []
     for year in range(2020, 2025):
-        file_path = f"rebuttal/LLM_Wikipedia/RAG/ds(gemini_questions)/{year}/search_results_{year}.json"
+        file_path = f"rebuttal/LLM_Wikipedia/RAG/ds(gpt_questions)/{year}/search_results_GPT_{year}.json"
         if os.path.exists(file_path):
             input_files.append(file_path)
         else:
