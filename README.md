@@ -44,7 +44,7 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 ## Page View
 
 <div align="center">
-    <img src="figures/pageviews.png" style="width: 60%; height: auto;">
+    <img src="figures/daily_views_ihs.png">
 </div>
 
 > [!IMPORTANT]
