@@ -5,7 +5,7 @@
 <img src="https://img.shields.io/github/commit-activity/m/HSM316/LLM_Wikipedia?style=flat-square&color=5D6D7E" alt="GitHub commit activity" />
 <img src="https://img.shields.io/github/languages/top/HSM316/LLM_Wikipedia?style=flat-square&color=5D6D7E" alt="GitHub top language" />
 
-<img src="figures/Pipeline.png" style="width: 60%; height: auto;">
+<img src="figures/Pipeline.png" style="width: 80%; height: auto;">
 <p align="center">
 
 </p>
@@ -44,7 +44,7 @@ We collect articles from the following categories: *Art*, *Biology*, *Computer S
 ## Page View
 
 <div align="center">
-    <img src="figures/daily_views_ihs.png">
+    <img src="figures/daily_views_ihs.png" style="width: 60%; height: auto;">
 </div>
 
 > [!IMPORTANT]
