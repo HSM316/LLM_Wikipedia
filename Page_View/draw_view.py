@@ -1,82 +1,106 @@
-import pandas as pd 
+import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import transforms
 
-selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philosophy', 'Phy', 'Sports']
-use_ihs_transform = False
+# === 配置 ===
+# selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philo', 'Phy', 'Sports', 'Featured', 'simple']
+# selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philo', 'Phy', 'Sports']
+selected_categories = ['de', 'en', 'es', 'fr']
+use_ihs_transform = True          # 平滑后再进行 IHS 变换
+rolling_window_days = 7           # 滑动窗口大小
 
-def inverse_hyperbolic_sine(x):
+def inverse_hyperbolic_sine(x: np.ndarray) -> np.ndarray:
     return np.log(x + np.sqrt(x**2 + 1))
 
-# 读取数据
-df = pd.read_csv('Page_View/daily_avg_pageviews.csv')
-df['Date'] = pd.to_datetime(df['Date'].astype(str).str.slice(0, 8), format='%Y%m%d')
+# 月份缩写 + 句点格式化
+MON_ABBR = {
+    'Jan': 'Jan.', 'Feb': 'Feb.', 'Mar': 'Mar.', 'Apr': 'Apr.',
+    'May': 'May',  'Jun': 'Jun.', 'Jul': 'Jul.', 'Aug': 'Aug.',
+    'Sep': 'Sep.', 'Oct': 'Oct.', 'Nov': 'Nov.', 'Dec': 'Dec.'
+}
+def fmt_long(dt):
+    """返回 'Jan. 1, 2020' 这种格式"""
+    mon = MON_ABBR[dt.strftime('%b')]
+    return f"{mon} {dt.day}, {dt.year}"
 
-# 配色
+# === 读取数据 ===
+df = pd.read_csv('Page_View/multi_pageviews.csv')
+df['Date'] = pd.to_datetime(df['Date'].astype(str).str.slice(0, 8), format='%Y%m%d')
+df = df.sort_values('Date').reset_index(drop=True)
+
+# === 配色 ===
 color_map = {
-    'Art': '#1f77b4', 'Bio': '#ff7f0e', 'Chem': '#2ca02c', 'CS': '#d62728',
-    'Featured': '#9467bd', 'Math': '#8c564b', 'Philosophy': '#e377c2',
-    'Phy': '#7f7f7f', 'simple': '#bcbd22', 'Sports': '#17becf'
+    # 'Art': '#1f77b4', 'Bio': '#ff7f0e', 'Chem': '#2ca02c', 'CS': '#d62728',
+    # 'Featured': '#9467bd', 'Math': '#8c564b', 'Philo': '#e377c2',
+    # 'Phy': '#7f7f7f', 'simple': '#bcbd22', 'Sports': '#17becf'
 }
 
-# 筛选类别列
-category_cols = df.columns[1:]
+# === 筛选类别列 ===
+category_cols = [c for c in df.columns if c != 'Date']
 if selected_categories:
     category_cols = [col for col in category_cols if col in selected_categories]
 
-# 应用 IHS 变换
+# 确保数值型
 for col in category_cols:
     df[col] = pd.to_numeric(df[col], errors='coerce')
-    if use_ihs_transform:
-        df[col] = df[col].apply(lambda x: inverse_hyperbolic_sine(x) if pd.notna(x) else np.nan)
 
-start_date = df['Date'].min()
-end_date = df['Date'].max()
+# === 7 天滑动均值（右对齐，min_periods=7 确保第 7 天才开始有值）===
+smooth_df = df.copy()
+smooth_df[category_cols] = df[category_cols].rolling(window=rolling_window_days, min_periods=rolling_window_days).mean()
 
-# 调整为单栏论文图像尺寸（3.5 英寸宽）
-fig, ax = plt.subplots(figsize=(3.5, 3.2))  # 适合单栏图，约为 8.9cm × 5.1cm
+# === 平滑后再做 IHS 变换（可选）===
+plot_df = smooth_df.copy()
+if use_ihs_transform:
+    plot_df[category_cols] = inverse_hyperbolic_sine(plot_df[category_cols].to_numpy())
 
+start_date = plot_df['Date'].min()
+end_date = plot_df['Date'].max()
+
+# === 画图（单栏尺寸）===
+fig, ax = plt.subplots(figsize=(12, 4))
 ax.set_facecolor('white')
-ax.yaxis.grid(True, linestyle='--', linewidth=0.3, color='gray')
-ax.xaxis.grid(True, linestyle='--', linewidth=0.3, color='gray')
+ax.yaxis.grid(True, linestyle='--', linewidth=0.3, color='gray', alpha=0.8)
+ax.xaxis.grid(True, linestyle='--', linewidth=0.3, color='gray', alpha=0.8)
 
-# 画图
+# 画每个类别（平滑后/可选 IHS 后）
 for col in category_cols:
-    ax.plot(df['Date'], df[col], label=col, linewidth=0.8, color=color_map.get(col, None))
+    ax.plot(plot_df['Date'], plot_df[col], label=col, linewidth=1.3, color=color_map.get(col, None))
 
-title_type = "IHS-Transformed" if use_ihs_transform else "Average"
-ax.set_title(f'{title_type} Pageviews', fontsize=8, pad=25)
-ax.set_ylabel(f'{title_type} Pageviews', fontsize=7)
-
+title_suffix = ' (IHS)' if use_ihs_transform else ''
+ax.set_title('Average Pageviews', fontsize=9, pad=5)
+ax.set_ylabel(f'Pageviews{title_suffix}', fontsize=8)
 ax.tick_params(axis='both', labelsize=6)
 
-# 控制x轴标签（每年一个，加终点）
-years = pd.date_range(start='2020-01-01', end='2025-01-01', freq='YS')
+# ===== X轴刻度：每年1月1日 + 终点，统一格式为 'Jan. 1, 2020' =====
+years = pd.date_range(start='2018-01-01', end='2025-01-01', freq='YS')
 xticks = list(years) + [end_date]
-# xtick_labels = [d.strftime('%Y') for d in years] + [f'{end_date.strftime("%m-%d")}']
-xtick_labels = [d.strftime('%Y%m%d') for d in years] + [f'{end_date.strftime("%Y%m%d")}']
+xtick_labels = [fmt_long(d) for d in years] + [fmt_long(end_date)]
 ax.set_xticks(xticks)
-ax.set_xticklabels(xtick_labels, fontsize=6)
+ax.set_xticklabels(xtick_labels, fontsize=8)
 
-# 调整最后一个标签位置
+# 调整最后一个标签位置（保持你原来的视觉微调）
 for label in ax.get_xticklabels():
-    if label.get_text() == f'{end_date.strftime("%Y%m%d")}':
-        label.set_transform(label.get_transform() +
-                            transforms.ScaledTranslation(-0.25, 2, fig.dpi_scale_trans))
+    if label.get_text() == fmt_long(end_date):
+        label.set_transform(label.get_transform() + transforms.ScaledTranslation(-0.4, 2.6, fig.dpi_scale_trans))
 
+# 终点辅助线
 ax.axvline(x=end_date, color='red', linestyle='--', linewidth=0.6)
 
-# 图例设置
+# 图例
 ax.legend(
     loc='upper center',
-    bbox_to_anchor=(0.5, 1.16),
-    ncol=4,
-    fontsize=5.5,
+    bbox_to_anchor=(0.09, 0.999),
+    ncol=2,
+    fontsize=7.5,
     handlelength=1.0,
     columnspacing=0.8
 )
 
 plt.tight_layout(rect=[0, 0, 1, 0.92])
-plt.savefig("daily_views_avg_main.pdf", dpi=300, bbox_inches='tight')
+
+# 动态命名导出文件
+suffix = '_ihs' if use_ihs_transform else ''
+outname = f"daily_views_multi{suffix}.pdf"
+plt.savefig(outname, dpi=300, bbox_inches='tight')
 plt.close()

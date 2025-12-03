@@ -3,15 +3,15 @@ import pandas as pd
 import os
 
 categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
-kind = "First"
+kind = "Full"
 years = ["2020-01-01", "2021-01-01", "2022-01-01", "2023-01-01", "2024-01-01", "2025-01-01"]
 
 # word combination used to estimate LLM impact
-words_file = "LLM_Impact/Estimation_Result/simple_First_eta/same/words.jsonl"
+words_file = "Word_Frequency/Estimation_Result/Featured_First_eta/same/words_3.5_origin.jsonl"
 # change rate after LLM Simulation
-r_values_file = "LLM_Impact/Word_Frequency/Simulation/f_simple_r_First.csv"
+r_values_file = "Word_Frequency/Frequency/Simulation/f_Featured_3.5.csv"
 # estimation result
-output_dir = f"LLM_Impact/Estimation_Result/simple_First_eta/same/{kind}/"
+output_dir = f"Word_Frequency/Estimation_Result/Featured_First_eta/same/{kind}/GPT3.5/"
 
 def load_r_values(filepath):
     df = pd.read_csv(filepath)
@@ -58,7 +58,7 @@ def main():
 
     for category in categories:
         # the frequency of word in target corpus
-        f_values_file = f"LLM_Impact/Word_Frequency/f_{kind}/f_{category}_{kind}.csv"
+        f_values_file = f"Word_Frequency/Frequency/f_{kind}/f_{category}_{kind}.csv"
         output_file = f"{output_dir}{category}_eta_{kind}.jsonl"
         
         f_dict = load_f_values(f_values_file)
