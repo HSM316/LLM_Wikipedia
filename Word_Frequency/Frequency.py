@@ -3,6 +3,10 @@ import re
 import json
 from collections import defaultdict
 
+# ============================================================
+# 1. 加载 top words
+# ============================================================
+
 def load_top_words(file_path):
     top_words_set = set()
     top_words_list = []
@@ -17,160 +21,147 @@ def load_top_words(file_path):
             top_words_set.add(word.lower())
     return top_words_list, top_words_set
 
-def read_file(file_path, encodings=("utf-8", "ISO-8859-1")):
-    for encoding in encodings:
-        try:
-            with open(file_path, 'r', encoding=encoding) as file:
-                return file.read()
-        except Exception:
-            continue
-    raise ValueError(f"{file_path}")
 
-def load_jsonl(jsonl_file):
-    folder_titles = set()
+# ============================================================
+# 2. 处理 JSONL 文件（替代旧 txt 逻辑）
+# ============================================================
+
+def process_jsonl(jsonl_path, time_point,
+                  top_words_set, word_page_counts, total_words_per_time):
+
     try:
-        with open(jsonl_file, 'r', encoding='utf-8') as f:
+        with open(jsonl_path, "r", encoding="utf-8") as f:
             for line in f:
-                data = json.loads(line.strip())
-                folder_titles.add(data.get("title", "").lower())
+                data = json.loads(line)
+
+                title = data.get("title", "").lower()
+                content = data.get("cleaned_content", "").lower()
+
+                if not content:
+                    continue
+
+                words = re.findall(r'\b[a-zA-Z]+\b', content)
+
+                word_counts = defaultdict(int)
+                for w in words:
+                    if w in top_words_set:
+                        word_counts[w] += 1
+
+                total_words_per_time[time_point] += sum(word_counts.values())
+
+                for w, cnt in word_counts.items():
+                    word_page_counts[w][time_point][title] = cnt
+
     except Exception as e:
-        print(f"Error reading jsonl file {jsonl_file}: {e}")
-    return folder_titles
+        print(f"Error processing {jsonl_path}: {e}")
 
-def calculate_frequency(total_count, current_total_words):
-    if current_total_words == 0:
-        return 0
-    return total_count / current_total_words
 
-def analyze_word_growth(root_dir, output_file, word_list_file, total_words_file, process_revised=False, jsonl_file=None):
-    TIME_POINTS = [
-        ("2020", "01-01"), 
-        ("2021", "01-01"), 
-        ("2022", "01-01"), 
-        ("2023", "01-01"), 
-        ("2024", "01-01"), 
-        ("2025", "01-01")
-    ]
+# ============================================================
+# 3. 核心统计流程（纯 JSONL）
+# ============================================================
+
+def analyze_word_growth(category, pages_dir, output_file, total_words_file, word_list_file):
+
+    # 2018-2025 年
+    YEARS = list(range(2018, 2026))
+    TIME_POINTS = [f"{year}-01-01" for year in YEARS]
+
+    # 加载 top words
     top_words_list, top_words_set = load_top_words(word_list_file)
 
-    if jsonl_file:
-        folder_titles_to_process = load_jsonl(jsonl_file)
-    else:
-        folder_titles_to_process = None
+    # 初始化结构
+    word_page_counts = {w: defaultdict(lambda: defaultdict(int)) for w in top_words_list}
+    total_words_per_time = defaultdict(int)
 
-    word_page_counts = {word: defaultdict(lambda: defaultdict(int)) for word in top_words_list}
-    total_words_per_time_point = defaultdict(int) 
+    # ============================================================
+    # 遍历 Wikipedia/Pages 下属于当前类别的所有年份 JSONL
+    # 文件格式必须是：Category_YYYY_clean.jsonl
+    # ============================================================
 
-    for folder_name in os.listdir(root_dir):
-        folder_path = os.path.join(root_dir, folder_name)
+    for year in YEARS:
+        filename = f"{category}_{year}.jsonl"
+        file_path = os.path.join(pages_dir, filename)
 
-        if os.path.isdir(folder_path):
-            if folder_titles_to_process and folder_name.lower() not in folder_titles_to_process:
-                continue
-
-            for year, date in TIME_POINTS:
-                time_point = f"{year}-{date}"
-                file_name = f"ver_{time_point}.txt"
-                file_path = os.path.join(folder_path, file_name)
-
-                if os.path.isfile(file_path):
-                    try:
-                        content = read_file(file_path).lower() 
-
-                        words_in_file = re.findall(r'\b[a-zA-Z]+\b', content)
-
-                        word_counts = defaultdict(int)
-                        for word in words_in_file:
-                            if word in top_words_set:
-                                word_counts[word] += 1
-                        total_words_per_time_point[time_point] += sum(word_counts.values())
-
-                        for word, count in word_counts.items():
-                            word_page_counts[word][time_point][folder_name] = count
-
-                    except Exception as e:
-                        print(f"Error reading {file_path}: {e}")
-            
-            if process_revised:
-                revised_file_name = "ver_revised.txt"
-                revised_file_path = os.path.join(folder_path, revised_file_name)
-                if os.path.isfile(revised_file_path):
-                    try:
-
-                        content = read_file(revised_file_path).lower() 
-                        words_in_file = re.findall(r'\b[a-zA-Z]+\b', content)
-
-                        word_counts = defaultdict(int)
-                        for word in words_in_file:
-                            if word in top_words_set: 
-                                word_counts[word] += 1
-                        total_words_per_time_point["revised"] += sum(word_counts.values())
-
-                        for word, count in word_counts.items():
-                            word_page_counts[word]["revised"][folder_name] = count
-
-                    except Exception as e:
-                        print(f"Error reading {revised_file_path}: {e}")
+        if os.path.isfile(file_path):
+            print(f"[{category}] Processing {filename}")
+            process_jsonl(file_path, f"{year}-01-01",
+                          top_words_set, word_page_counts, total_words_per_time)
         else:
-            print("error: " + folder_path)
-    
+            print(f"[{category}] Missing: {filename}")
+
+    # ============================================================
+    # 计算频率
+    # ============================================================
+
     word_frequencies = {}
-    for word in top_words_set:
-        word_frequencies[word] = {}
 
-        for year, date in TIME_POINTS:
-            time_point = f"{year}-{date}"
-            current_total_words = total_words_per_time_point[time_point] if time_point != "revised" else total_words_per_time_point["revised"]
+    for w in top_words_list:
+        word_frequencies[w] = {}
+        for year in YEARS:
+            tp = f"{year}-01-01"
+            total = total_words_per_time[tp]
+            count = sum(word_page_counts[w][tp].values())
+            freq = count / total if total > 0 else 0
+            word_frequencies[w][tp] = round(freq, 8)
 
-            total_count = sum(word_page_counts[word][time_point].values())
-            frequency = calculate_frequency(total_count, current_total_words)
-            word_frequencies[word][time_point] = round(frequency, 8)
-        
-        if process_revised:
-            total_count = sum(word_page_counts[word]["revised"].values())
-            frequency = calculate_frequency(total_count, total_words_per_time_point["revised"])
-            word_frequencies[word]["revised"] = round(frequency, 8)
-    
-    for word in word_frequencies:
-        freq_2020 = word_frequencies[word].get("2020-01-01", 0)
-        freq_2021 = word_frequencies[word].get("2021-01-01", 0)
-        # the way to estimate f_star
-        f_star = (freq_2020 + freq_2021) / 2  
-        word_frequencies[word]["f_star"] = round(f_star, 8)
+        # f*
+        f2018 = word_frequencies[w]["2018-01-01"]
+        f2019 = word_frequencies[w]["2019-01-01"]
+        word_frequencies[w]["f_star"] = round((f2018 + f2019) / 2, 8)
+
+    # ============================================================
+    # 输出 CSV
+    # ============================================================
 
     with open(output_file, 'w', encoding='utf-8') as f:
-        headers = ["Word"] + [f"{year}-{date}" for year, date in TIME_POINTS] + (["revised"] if process_revised else []) + ["f_star"]
+        headers = ["Word"] + TIME_POINTS + ["f_star"]
         f.write(",".join(headers) + "\n")
 
-        for word in top_words_list:
-            row = [word] + [word_frequencies[word].get(f"{year}-{date}", 0) for year, date in TIME_POINTS]
-            if process_revised:
-                row.append(word_frequencies[word].get("revised", 0))
-            row.append(word_frequencies[word].get("f_star", 0))
-            row = [str(value) for value in row]
-            f.write(",".join(row) + "\n")
+        for w in top_words_list:
+            row = [w] + [word_frequencies[w][tp] for tp in TIME_POINTS] + [word_frequencies[w]["f_star"]]
+            f.write(",".join(map(str, row)) + "\n")
 
+    # 输出 total words
     with open(total_words_file, 'w', encoding='utf-8') as f:
         f.write("Time Point,Total Words\n")
-        for time_point, total_words in total_words_per_time_point.items():
-            f.write(f"{time_point},{total_words}\n")
+        for tp in TIME_POINTS:
+            f.write(f"{tp},{total_words_per_time[tp]}\n")
 
-def process_multiple_categories(categories, root_dir_template, output_dir_template, word_list_file, total_words_dir_template, process_revised=False, jsonl_file=None):
+
+# ============================================================
+# 4. 多类别入口（统一入口）
+# ============================================================
+
+def process_all_categories(categories, pages_dir,
+                           output_dir_template, total_words_template,
+                           word_list_file):
+
     for category in categories:
-        root_directory = root_dir_template.format(category=category)
-        output_file_path = output_dir_template.format(category=category)
-        total_words_file_path = total_words_dir_template.format(category=category)
-        
-        print(f"Processing category: {category}")
-        analyze_word_growth(root_directory, output_file_path, word_list_file, total_words_file_path, process_revised, jsonl_file)
+        output_file = output_dir_template.format(category=category)
+        total_words_file = total_words_template.format(category=category)
+
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        os.makedirs(os.path.dirname(total_words_file), exist_ok=True)
+
+        print(f"\n==== Category: {category} ====")
+        analyze_word_growth(category, pages_dir,
+                            output_file, total_words_file,
+                            word_list_file)
 
 
-categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports", "simple", "Featured"]
-root_dir_template = "INPUT YOUR CORPUS PATH"
-output_dir_template = "LLM_Impact/Word_Frequency/f_Full/f_{category}_Full.csv"
-total_words_dir_template = "LLM_Impact/Word_Frequency/Total_Words/Full/total_{category}_Full.csv"
-word_list_file = "LLM_Impact/unigram_freq.csv"
+# ============================================================
+# 5. 主入口
+# ============================================================
 
-process_revised = False  
-jsonl_file = "None"
-process_multiple_categories(categories, root_dir_template, output_dir_template, word_list_file, total_words_dir_template, process_revised, jsonl_file)
+categories = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports"]
+
+pages_dir = "Wikipedia/clean_First"
+
+output_dir_template = "LLM_Wikipedia/Word_Frequency/Frequency/First/f_{category}_First.csv"
+total_words_template = "LLM_Impact/Word_Frequency/Total_Words/First/total_{category}_First_1.csv"
+
+word_list_file = "LLM_Wikipedia/Word_Frequency/unigram_freq.csv"
+
+process_all_categories(categories, pages_dir,
+                       output_dir_template, total_words_template,
+                       word_list_file)

@@ -35,20 +35,24 @@ def save_to_jsonl(results, output_file):
             f.write('\n')
 
 def main():
-    r_file = 'LLM_Impact/Word_Frequency/Simulation/f_simple_r_First.csv'
+    simulation = "simple"
+    r_file = f'LLM_Wikipedia/Word_Frequency/Frequency/Simulation/f_{simulation}.csv'
     # The kind of pages you want to analyze: First or Full
     kind = 'First'
+    strategy = "diff"
 
-    categories = ['Art', 'Bio', 'Chem', 'CS', 'Math', 'Phy','Philosophy', 'Sports', 'simple', 'Featured']
+    categories = ['Art', 'Bio', 'Chem', 'CS', 'Math', 'Phy','Philosophy', 'Sports']
 
     f_thresholds = [2000, 2500, 3000, 3500, 4000, 4500, 5000] 
-    r_thresholds = [0.07, 0.09, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21, 0.23, 0.25, 0.27] 
+    r_thresholds = [0.11, 0.13, 0.15, 0.17, 0.19, 0.21, 0.23, 0.25, 0.27] 
+    # f_thresholds = [5000, 7000, 9000, 11000, 13000, 15000] 
+    # r_thresholds = [0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21]  
 
     # Get different word combination
-    output_dir = f'LLM_Impact/Estimation_Result/simple_First_eta/different/{kind}/words/'
+    output_dir = f'LLM_Wikipedia/Word_Frequency/Estimation_Result/{simulation}_eta/{strategy}/{kind}/words/'
 
     for category in categories:
-        f_file = f'LLM_Impact/Word_Frequency/f_{kind}/f_{category}_{kind}.csv'
+        f_file = f'LLM_Wikipedia/Word_Frequency/Frequency/f_{kind}/f_{category}_{kind}.csv'
         output_file = f'{output_dir}{category}_{kind}_words.jsonl'
 
         results = []

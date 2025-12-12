@@ -1,12 +1,16 @@
-import os 
+import os
+import json
 import mwparserfromhell
 import re
 from rich.progress import Progress
 
 END_SECTIONS = ["References", "See also", "Further reading", "External links", "Notes", "Footnotes"]
 
-input_dir = 'INPUT YOUR PATH'
-output_dir = 'INPUT YOUR PATH'
+input_dir = "Wikipedia/Pages"
+output_dir = "Wikipedia/clean_Pages"
+
+
+# ------------------------ 清洗函数 ------------------------ #
 
 def remove_tables(text):
     wikicode = mwparserfromhell.parse(text)
@@ -14,7 +18,6 @@ def remove_tables(text):
     for table in tables:
         text = text.replace(table, "")
     return text
-
 
 def remove_nested_tags(text):
     stack = []
@@ -25,81 +28,105 @@ def remove_nested_tags(text):
             i += 2
         elif text[i:i+2] == ']]' and stack:
             start = stack.pop()
-            if text[start:].lower().startswith('[[image:') or text[start:].lower().startswith('[[file:') or text[start:].lower().startswith('[[category:'):
+            # remove image/file/category
+            low = text[start:].lower()
+            if low.startswith('[[image:') or low.startswith('[[file:') or low.startswith('[[category:'):
                 text = text[:start] + text[i+2:]
                 i = start
             else:
                 i += 2
         else:
             i += 1
-
     return text
 
 def remove_section_titles(text):
-
     return re.sub(r'={2,}\s*.*?\s*={2,}', '', text)
 
-
 def truncate_at_section(text, sections):
-
     wikicode = mwparserfromhell.parse(text)
-    earliest_position = len(str(wikicode))
-    for section_title in sections:
-        sections_found = wikicode.get_sections(matches=section_title, include_headings=True)
-        if sections_found:
-            section_position = str(wikicode).find(str(sections_found[0]))
-            if 0 <= section_position < earliest_position:
-                earliest_position = section_position
-    return str(wikicode)[:earliest_position]
+    s = str(wikicode)
+    earliest = len(s)
 
+    for sec in sections:
+        found = wikicode.get_sections(matches=sec, include_headings=True)
+        if found:
+            pos = s.find(str(found[0]))
+            if 0 <= pos < earliest:
+                earliest = pos
+
+    return s[:earliest]
 
 def clean_text_with_mwparser(text, end_sections=None):
     if end_sections is None:
         end_sections = END_SECTIONS
-    text = truncate_at_section(text, end_sections) 
-    text = remove_tables(text) 
-    text = remove_section_titles(text) 
+    text = truncate_at_section(text, end_sections)
+    text = remove_tables(text)
+    text = remove_section_titles(text)
     text = remove_nested_tags(text)
     return mwparserfromhell.parse(text).strip_code()
 
 
-def process_file(file_path, folder_name):
+# ------------------------ 工具函数 ------------------------ #
 
-    try:
-        with open(file_path, 'r', encoding='ISO-8859-1') as file:
-            text = file.read()
-
-        text = text.encode('ISO-8859-1').decode('utf-8', errors='ignore')
-
-        cleaned_text = clean_text_with_mwparser(text)
-
-        output_page_folder = os.path.join(output_dir, folder_name)
-        os.makedirs(output_page_folder, exist_ok=True)
-        output_file_path = os.path.join(output_page_folder, os.path.basename(file_path))
-        with open(output_file_path, "w", encoding="utf-8") as output_file:
-            output_file.write(cleaned_text)
-
-    except Exception as e:
-        print(f"Error processing file {file_path}: {e}")
+def count_lines(file_path):
+    with open(file_path, 'r', encoding='utf-8') as f:
+        return sum(1 for _ in f)
 
 
-def process_folder(folder_name):
+# ------------------------ 主处理函数 ------------------------ #
 
-    folder_path = os.path.join(input_dir, folder_name)
-    if os.path.isdir(folder_path):
-        for file_name in os.listdir(folder_path):
-            if file_name.endswith(".txt"):
-                file_path = os.path.join(folder_path, file_name)
-                process_file(file_path, folder_name)
+def process_jsonl_file(input_file_path, output_file_path):
+    total = count_lines(input_file_path)
+
+    with open(input_file_path, "r", encoding="utf-8") as fin, \
+         open(output_file_path, "w", encoding="utf-8") as fout, \
+         Progress() as progress:
+
+        task = progress.add_task(f"[cyan]Processing {os.path.basename(input_file_path)}...", total=total)
+
+        for line in fin:
+            try:
+                item = json.loads(line)
+                title = item.get("title", "")
+                content = item.get("content", "")
+
+                cleaned = clean_text_with_mwparser(content)
+
+                out = {"title": title, "cleaned_content": cleaned}
+                fout.write(json.dumps(out, ensure_ascii=False) + "\n")
+
+            except Exception as e:
+                print(f"Error processing line in {input_file_path}: {e}")
+
+            progress.update(task, advance=1)
 
 
-folders = os.listdir(input_dir)
+# ------------------------ 批量扫描 input_dir ------------------------ #
 
-with Progress() as progress:
-    task = progress.add_task("[cyan]Processing folders...", total=len(folders))
-    
-    for folder in folders:
-        process_folder(folder)
-        progress.update(task, advance=1) 
+def main():
 
-print("All files have been processed and saved.")
+    files = [
+        f for f in os.listdir(input_dir)
+        if (f.endswith("2018.jsonl") or f.endswith("2019.jsonl"))
+    ]
+
+    if not files:
+        print("No files ending with 2018.jsonl or 2019.jsonl found.")
+        return
+
+    os.makedirs(output_dir, exist_ok=True)
+
+    for fname in files:
+        input_path = os.path.join(input_dir, fname)
+
+        # 输出：在文件名后加 _clean
+        name, ext = os.path.splitext(fname)
+        output_path = os.path.join(output_dir, f"{name}_clean.jsonl")
+
+        process_jsonl_file(input_path, output_path)
+
+    print("All JSONL files processed.")
+
+
+if __name__ == "__main__":
+    main()

@@ -11,8 +11,8 @@ import threading
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ===== 配置 =====
-# CATEGORIES = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports"]
-CATEGORIES = ["Featured"]
+CATEGORIES = ["Art", "Bio", "Chem", "CS", "Phy", "Math", "Philosophy", "Sports"]
+# CATEGORIES = ["de"]
 
 START_DATE = "20180101"
 END_DATE   = "20251101"
@@ -24,7 +24,7 @@ REQUESTS_PER_SEC   = 16        # 全局请求速率上限（所有线程合计�
 BATCH_WRITE_SIZE   = 200      # 收集到多少条再批量写一次 CSV
 
 # 每个类别处理总数上限（包含已处理+新处理）
-MAX_PER_CATEGORY = 58000
+MAX_PER_CATEGORY = 60000
 
 # ===== 日期工具（按天）=====
 def parse_day(day_str: str) -> datetime:
@@ -172,8 +172,8 @@ def main():
     days, start_ts, end_ts = generate_days(START_DATE, END_DATE)
 
     for category in CATEGORIES:
-        jsonl_file = f"Data_Collection/titles/{category}_titles.jsonl"
-        csv_file   = f"Data_Collection/page_view/{category}_pageviews_daily.csv"
+        jsonl_file = f"Wikipedia/Titles/{category}_titles.jsonl"
+        csv_file   = f"Wikipedia/PageViews/{category}_pageviews.csv"
 
         titles = read_titles_from_jsonl(jsonl_file)
         if not titles:

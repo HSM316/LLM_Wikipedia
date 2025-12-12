@@ -4,10 +4,9 @@ import numpy as np
 from matplotlib import transforms
 
 # === 配置 ===
-# selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philo', 'Phy', 'Sports', 'Featured', 'simple']
-# selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philo', 'Phy', 'Sports']
-selected_categories = ['de', 'en', 'es', 'fr']
-use_ihs_transform = True          # 平滑后再进行 IHS 变换
+selected_categories = ['Art', 'Bio', 'Chem', 'CS','Math', 'Philosophy', 'Phy', 'Sports']
+# selected_categories = ['de', 'en', 'es', 'fr']
+use_ihs_transform = False          # 平滑后再进行 IHS 变换
 rolling_window_days = 7           # 滑动窗口大小
 
 def inverse_hyperbolic_sine(x: np.ndarray) -> np.ndarray:
@@ -25,16 +24,24 @@ def fmt_long(dt):
     return f"{mon} {dt.day}, {dt.year}"
 
 # === 读取数据 ===
-df = pd.read_csv('Page_View/multi_pageviews.csv')
+df = pd.read_csv('LLM_Wikipedia/Page_View/pageviews.csv')
 df['Date'] = pd.to_datetime(df['Date'].astype(str).str.slice(0, 8), format='%Y%m%d')
 df = df.sort_values('Date').reset_index(drop=True)
 
 # === 配色 ===
 color_map = {
-    # 'Art': '#1f77b4', 'Bio': '#ff7f0e', 'Chem': '#2ca02c', 'CS': '#d62728',
-    # 'Featured': '#9467bd', 'Math': '#8c564b', 'Philo': '#e377c2',
-    # 'Phy': '#7f7f7f', 'simple': '#bcbd22', 'Sports': '#17becf'
+    'Art': '#1f77b4', 'Bio': '#ff7f0e', 'Chem': '#2ca02c', 'CS': '#d62728',
+    'Featured': '#9467bd', 'Math': '#8c564b', 'Philosophy': '#e377c2',
+    'Phy': '#7f7f7f', 'simple': '#bcbd22', 'Sports': '#17becf'
 }
+
+# color_map = {
+#     'de': '#1f77b4',  # 蓝
+#     'en': '#ff7f0e',  # 橙
+#     'es': '#2ca02c',  # 绿
+#     'fr': '#d62728',  # 红
+# }
+
 
 # === 筛选类别列 ===
 category_cols = [c for c in df.columns if c != 'Date']
@@ -67,8 +74,9 @@ ax.xaxis.grid(True, linestyle='--', linewidth=0.3, color='gray', alpha=0.8)
 for col in category_cols:
     ax.plot(plot_df['Date'], plot_df[col], label=col, linewidth=1.3, color=color_map.get(col, None))
 
-title_suffix = ' (IHS)' if use_ihs_transform else ''
-ax.set_title('Average Pageviews', fontsize=9, pad=5)
+title_suffix = ' (IHS)' if use_ihs_transform else ' (Mean)'
+# ax.set_title('Pageviews Across Different Categories in English Wikipedia', fontsize=10, pad=7)
+# ax.set_title('Pageviews Across Wikipedia of Different Languages', fontsize=10, pad=7)
 ax.set_ylabel(f'Pageviews{title_suffix}', fontsize=8)
 ax.tick_params(axis='both', labelsize=6)
 
@@ -82,17 +90,17 @@ ax.set_xticklabels(xtick_labels, fontsize=8)
 # 调整最后一个标签位置（保持你原来的视觉微调）
 for label in ax.get_xticklabels():
     if label.get_text() == fmt_long(end_date):
-        label.set_transform(label.get_transform() + transforms.ScaledTranslation(-0.4, 2.6, fig.dpi_scale_trans))
+        label.set_transform(label.get_transform() + transforms.ScaledTranslation(0, 0, fig.dpi_scale_trans))
 
 # 终点辅助线
-ax.axvline(x=end_date, color='red', linestyle='--', linewidth=0.6)
+# ax.axvline(x=end_date, color='red', linestyle='--', linewidth=0.6)
 
 # 图例
 ax.legend(
     loc='upper center',
-    bbox_to_anchor=(0.09, 0.999),
+    bbox_to_anchor=(0.09, 1),
     ncol=2,
-    fontsize=7.5,
+    fontsize=10,
     handlelength=1.0,
     columnspacing=0.8
 )
@@ -101,6 +109,6 @@ plt.tight_layout(rect=[0, 0, 1, 0.92])
 
 # 动态命名导出文件
 suffix = '_ihs' if use_ihs_transform else ''
-outname = f"daily_views_multi{suffix}.pdf"
+outname = f"LLM_Wikipedia/Page_View/daily_views_{suffix}.pdf"
 plt.savefig(outname, dpi=300, bbox_inches='tight')
 plt.close()

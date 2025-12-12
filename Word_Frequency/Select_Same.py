@@ -36,8 +36,9 @@ def save_to_jsonl(results, output_file):
             f.write('\n')
 
 def main():
+    simulation = 'simple'
     # Ground file sticks to the frequency limitation
-    ground_file = 'Word_Frequency/Frequency/Simulation/f_Featured_3.5.csv'
+    ground_file = f'LLM_Wikipedia/Word_Frequency/Frequency/Simulation/f_{simulation}.csv'
 
     # r file sticks to the change rate limitation
     # You can change the file based on different simulation result
@@ -45,13 +46,13 @@ def main():
 
     # Since we use the same word combination to estimate different categories
     r_file = ground_file
-    output_file = 'Word_Frequency/Estimation_Result/Featured_First_eta/same/words_3.5_origin.jsonl'
+    output_file = f'LLM_Wikipedia/Word_Frequency/Estimation_Result/{simulation}_eta/same/words.jsonl'
 
 
-    # f_thresholds = [5000, 7000, 9000, 11000, 13000, 15000, 17000, 19000] 
-    # r_thresholds = [0.31, 0.33, 0.35, 0.37, 0.39, 0.41, 0.43, 0.45]  
-    f_thresholds = [5000, 7000, 9000, 11000, 13000, 15000] 
-    r_thresholds = [0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21]  
+    f_thresholds = [1000, 3000, 5000, 7000, 9000, 11000, 13000] 
+    r_thresholds = [0.07, 0.09, 0.11, 0.13, 0.15, 0.17, 0.19, 0.21, 0.23, 0.25, 0.27, 0.29]  
+    # f_thresholds = [5000, 7000, 9000, 11000, 13000, 15000] 
+    # r_thresholds = [0.14, 0.15, 0.16, 0.17, 0.18, 0.19, 0.20, 0.21]  
 
     results = []
 

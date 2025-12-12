@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 
 # input_dir = "Data_Collection/page_view_new"
-input_dir = "Data_Collection/multi_view"
-output_csv = "Page_View/multi_pageviews.csv"
+input_dir = "Wikipedia/PageViews"
+output_csv = "LLM_Wikipedia/Page_View/page_view/pageviews.csv"
 
-# desired_cols = ['Art','Bio','Chem','CS','Phy','Math','Philosophy','Sports', 'Featured', 'simple']
-desired_cols = ['de', 'en', 'es', 'fr']
-csv_files = [f for f in os.listdir(input_dir) if f.endswith("_pageviews_daily.csv")]
+desired_cols = ['Art','Bio','Chem','CS','Phy','Math','Philosophy','Sports']
+# desired_cols = ['de', 'en', 'es', 'fr']
+csv_files = [f for f in os.listdir(input_dir) if f.endswith("_pageviews.csv")]
 
 cat_series = {}  # {category: Series(index=Date(str), values=mean)}
 

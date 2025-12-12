@@ -20,117 +20,82 @@ HEADERS = {
 #   单标题爬取函数（子进程执行）
 # ------------------------------- #
 def fetch_single_title(args):
-    """子进程：爬取单个 title 的目标 revision"""
     title, target_dt = args
 
     url = "https://en.wikipedia.org/w/api.php"
+
+    # 关键优化：使用 rvstart / rvend 直接缩小时间窗口
     params = {
         "action": "query",
         "prop": "revisions",
         "titles": title,
-        "rvlimit": "max",
-        "rvdir": "older",
         "rvslots": "main",
         "rvprop": "ids|timestamp|content",
+        "rvdir": "older",
+        "rvstart": target_dt.strftime("%Y-%m-%dT%H:%M:%SZ"),
+        "rvlimit": 1,
         "format": "json"
     }
 
-    continue_token = None
-    revid = None
-    content = None
-
-    # API 请求函数（减少代码复制）
-    def fetch_url(url, params, max_retries=3):
-        for attempt in range(max_retries):
-            try:
-                resp = requests.get(url, headers=HEADERS, params=params, timeout=10)
-                if resp.status_code == 200:
-                    return resp
-            except Exception:
-                pass
-
-            if attempt < max_retries - 1:
-                time.sleep(random.uniform(1, 2))
-        return None
-
     try:
-        while True:
-            if continue_token:
-                params["rvcontinue"] = continue_token
+        resp = requests.get(url, headers=HEADERS, params=params, timeout=10)
+        if resp.status_code != 200:
+            return {"title": title, "error": "API failed"}
 
-            resp = fetch_url(url, params)
-            if not resp:
-                return {"title": title, "error": "API request failed"}
+        data = resp.json()
+        pages = data.get("query", {}).get("pages", {})
 
-            data = resp.json()
-            pages = data.get("query", {}).get("pages", {})
+        for pid, page in pages.items():
+            if "missing" in page:
+                return {"title": title, "error": "Missing page"}
 
-            for pid, page in pages.items():
-                if "redirect" in page:
-                    return {"title": title, "error": "Redirect page"}
+            if "revisions" not in page:
+                return {"title": title, "error": "No revision found"}
 
-                for r in page.get("revisions", []):
-                    r_time = datetime.strptime(r["timestamp"], "%Y-%m-%dT%H:%M:%SZ")
-
-                    if r_time <= target_dt:
-                        revid = r["revid"]
-                        content = r["slots"]["main"].get("*", "")
-                        break
-
-                if revid:
-                    break
-
-            if revid:
-                break
-
-            if "continue" in data:
-                continue_token = data["continue"]["rvcontinue"]
-            else:
-                break
-
-        if not revid:
-            return {"title": title, "error": "No revision before target date"}
-
-        return {"title": title, "revid": revid, "content": content}
+            r = page["revisions"][0]
+            return {
+                "title": title,
+                "revid": r["revid"],
+                "content": r["slots"]["main"].get("*", "")
+            }
 
     except Exception as e:
         return {"title": title, "error": str(e)}
 
 
 
+
 # ------------------------------- #
-#       主函数：并行+进度条
+#   单类别爬取（内部使用）
 # ------------------------------- #
-def crawl_year(category: str, year: int, workers=8):
+def crawl_single_category(category_file, year, workers=8):
+    category = category_file.replace("_titles.jsonl", "")
 
-    input_path = f"Data_Collection/titles/{category}_titles.jsonl"
-    output_file = f"{category}_{year}.jsonl"
-    failed_file = f"{category}_failed_{year}.jsonl"
+    titles_path = f"Wikipedia/Titles1/{category_file}"
+    output_file = f"Wikipedia/Pages/{category}_{year}.jsonl"
+    failed_file = f"Wikipedia/Pages/{category}_failed_{year}.jsonl"
 
-    # Convert year
-    target_timestamp = f"{year}-01-01T00:00:00Z"
-    target_dt = datetime.strptime(target_timestamp, "%Y-%m-%dT%H:%M:%SZ")
+    target_dt = datetime.strptime(f"{year}-01-01T00:00:00Z", "%Y-%m-%dT%H:%M:%SZ")
 
-    # Load titles
     titles = [
         json.loads(line)["title"]
-        for line in open(input_path, "r", encoding="utf-8")
+        for line in open(titles_path, "r", encoding="utf-8")
     ]
 
-    # Load done titles
-    done = {
-        json.loads(line)["title"]
-        for line in open(output_file, "a+", encoding="utf-8")
-    }
+    done = set()
+    if os.path.exists(output_file):
+        done = {
+            json.loads(line)["title"]
+            for line in open(output_file, "r", encoding="utf-8")
+        }
 
-    # Real pending list
     pending = [t for t in titles if t not in done]
 
     fout = open(output_file, "a", encoding="utf-8")
     ffail = open(failed_file, "a", encoding="utf-8")
 
     with Progress(
-        TextColumn("[progress.description]{task.description}"),
+        TextColumn(f"[progress.description]{category} ({year})"),
         BarColumn(),
         "[progress.percentage]{task.percentage:>3.0f}%",
         "•",
@@ -140,15 +105,9 @@ def crawl_year(category: str, year: int, workers=8):
         refresh_per_second=2,
     ) as progress:
 
-        task = progress.add_task(
-            f"Crawling {category} ({year})...",
-            total=len(titles)
-        )
-
-        # 已完成（含 resume）
+        task = progress.add_task("Crawling...", total=len(titles))
         progress.update(task, advance=len(done))
 
-        # 并行处理
         with ProcessPoolExecutor(max_workers=workers) as executor:
             future_map = {
                 executor.submit(fetch_single_title, (title, target_dt)): title
@@ -172,13 +131,18 @@ def crawl_year(category: str, year: int, workers=8):
 
 
 # ------------------------------- #
-#             CLI
+#   主函数：自动读取所有标题文件
 # ------------------------------- #
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--category", type=str, required=True)
     parser.add_argument("--year", type=int, required=True)
     parser.add_argument("--workers", type=int, default=8)
     args = parser.parse_args()
 
-    crawl_year(args.category, args.year, args.workers)
+    titles_dir = "Wikipedia/Titles1"
+    title_files = [f for f in os.listdir(titles_dir) if f.endswith("_titles.jsonl")]
+
+    print(f"Detected categories: {title_files}")
+
+    for file in title_files:
+        crawl_single_category(file, args.year, args.workers)

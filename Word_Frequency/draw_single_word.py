@@ -3,9 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # === 配置 ===
-base_dir = "Word_Frequency/Frequency/f_First"   # 根目录
+base_dir = "LLM_Wikipedia/Word_Frequency/Frequency/f_First"   # 根目录
 categories = ["Art", "Bio", "Chem", "CS", "Math", "Philosophy", "Phy", "Sports"]
-target_word = "crucial"                          # 想要画的单词
+target_word = "capabilities"                          # 想要画的单词
 per_k = 1000                                     # 转为每千词
 
 # （可选）自定义学科显示名，保持图例顺序
@@ -27,7 +27,7 @@ plt.rcParams.update({
 # === 读取并绘图（用面向对象接口，方便把标题移到框内） ===
 fig, ax = plt.subplots(figsize=(8, 6))
 
-year_cols = ["2020-01-01", "2021-01-01", "2022-01-01",
+year_cols = ["2018-01-01", "2019-01-01", "2020-01-01", "2021-01-01", "2022-01-01",
              "2023-01-01", "2024-01-01", "2025-01-01"]
 x_years = [c[:4] for c in year_cols]
 
@@ -70,5 +70,5 @@ ax.legend(ncol=4, frameon=True, loc="upper left", bbox_to_anchor=(0.05, 1.20))
 ax.grid(alpha=0.3, linestyle='--', linewidth=0.7)
 
 fig.tight_layout()
-fig.savefig("crucial.pdf", bbox_inches='tight')
+fig.savefig(f"LLM_Wikipedia/Word_Frequency/{target_word}.pdf", bbox_inches='tight')
 plt.show()
